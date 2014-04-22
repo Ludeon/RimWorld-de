@@ -11,7 +11,7 @@
   <SaveGameButton>Speichern</SaveGameButton>
   <OverwriteButton>Überschreiben</OverwriteButton>
   <LoadGameButton>Laden</LoadGameButton>
-  <ConfirmDelete>Willst du wirklich {0} löschen?</ConfirmDelete>
+  <ConfirmDelete>Willst du {0} wirklich löschen?</ConfirmDelete>
   <DeleteThisSavegame>Lösche diesen Spielstand.</DeleteThisSavegame>
   <SavedAs>Speichern als {0}.</SavedAs>
   <NeedAName>Bitte einen Namen eingeben.</NeedAName>
@@ -19,16 +19,21 @@
 
 
   
+  <!-- Colony naming-->
   <NameColonyMessage>Jeder weiß, dass ihr nicht lange hier sein wollt. Trotzdem schlägt {0} vor der Kolonie einen Namen zu geben.\n\nWie soll sie heißen?</NameColonyMessage>
   <ColonyGainsName>Die Kolonie heißt nun {0}.</ColonyGainsName>
   <ColonyNameIsInvalid>Dieser Koloniename ist ungültig.</ColonyNameIsInvalid>
 
-  <ZoneGainsName>Die Zone heißt nun {0}.</ZoneGainsName>
+  <!-- Zone naming -->
+  <ZoneGainsName>Die Zone heißt jetzt {0}.</ZoneGainsName>
   <ZoneNameIsInvalid>Bitte gib einen gültigen Namen ein.</ZoneNameIsInvalid>
 
+  <!-- Save game incompatible warning -->
+  <SaveGameIncompatibleWarningText>Version mismatch: Map was saved with game version {0}, we are running version {1}.\n\n Loading this save will probably cause bugs and crashes.</SaveGameIncompatibleWarningText>
+  <SaveGameIncompatibleWarningTitle>Save game incompatibility</SaveGameIncompatibleWarningTitle>
   
-  <!-- Res change dialog -->
-  <ConfirmResolutionChange>Du hast die Auflösung geändert. Funktioniert die neue problemlos?\n\nAutomatisches Zurücksetzen in {0}...</ConfirmResolutionChange>
+  <!-- Resolution change dialog -->
+  <ConfirmResolutionChange>Du hast die Auflösung geändert. Funktioniert die Neue problemlos?\n\nAutomatisches Zurücksetzen in {0}...</ConfirmResolutionChange>
   <ResolutionKeep>Behalten</ResolutionKeep>
   <ResolutionRevert>Zurücksetzen</ResolutionRevert>
   
@@ -64,11 +69,13 @@
   <DoXTimes>Mache X Mal</DoXTimes>
   <DoUntilYouHaveX>Mache bis du X hast</DoUntilYouHaveX>
   <DoForever>Mache für immer</DoForever>
+  <BillRepeatTargetCountShort>Bis {0}</BillRepeatTargetCountShort>
 
   
   <!-- Trade -->
   <TradeGoodsNearBeaconLesson>Um Objekte oder Silber zu orbitalen Händlern zu senden, musst du einen ORBITAL TRADE BEACON im Freien bauen und ein Lager in der Nähe platzieren.</TradeGoodsNearBeaconLesson>
   <YourTradeableSilver>Dein handelbares Silber: {0}</YourTradeableSilver>
+  <YourTradeableSilverTip>Du kannst nur mit Silber handeln, dass nahe dem Orbitalen Signalfeuer und nicht unter einem Dach ist.</YourTradeableSilverTip>
  
   <!-- Comms -->
   <SocialSkillIs>Soziale Fähigkeit: {0}</SocialSkillIs>

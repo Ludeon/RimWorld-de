@@ -32,15 +32,27 @@
 	<ShootingCover>Deckung</ShootingCover>
 	<CoverThingBlocksPercentOfShots>{0} stoppt {1}</CoverThingBlocksPercentOfShots>
 	<NoCoverLower>keine Deckung</NoCoverLower>
+	<!-- Status levels -->
+  <Loyalty>Loyalität</Loyalty>
+  <LoyaltyTip>Loyalität repräsentiert den Glauben einer Person an die Kolonie. Wenn sie zu weit abfällt, kann die Person aufgeben, unvernünftig werden oder durchdrehen.\n\nLoyalität ist gleich der Freude oder Angst - Was immer höher ist.</LoyaltyTip>
+  <Happiness>Freude</Happiness>
+  <HappinessTip>Freude erhält man, in dem physische oder psychiche Wünsche erfüllt werden.</HappinessTip>
+  <Fear>Angst</Fear>
+  <FearTip>Angst repräsentiert, wie stark eine Person von ihrer Umgebung eingeschüchtert ist.\n\nSie steigt, wenn man Drohungen, Gewalt und die Darstellung von Macht erfährt.</FearTip>
+  <Food>Food</Food>
+  <FoodTip>Food is how satisfied someone is with their meals.\n\nFood resets when someone eats. After a while, it will begin falling until they eat again. At zero food, a person will take starvation damage.</FoodTip>
+  <Rest>Rest</Rest>
+  <RestTip>Rest is how much quality relaxation and sleep a person gets.\n\nIt rises to a maximum when someone sleeps in a bed. Outside of bed, it falls over time.</RestTip>
+  <Environment>Environment</Environment>
+  <EnvironmentTip>Environment reflects how pleasing a person finds their surroundings.\n\nEnvironment is high when people are in spacious rooms with beautiful decorations. It is poor when their surroundings are ugly.</EnvironmentTip>
+  <Openness>Openness</Openness>
   
   
   <!-- Thoughts -->
-  <Loyalty>Loyalität</Loyalty>
-  <Happiness>Freude</Happiness>
-  <Fear>Angst</Fear>
   <ThoughtExpiresIn>Läuft ab in: {0}</ThoughtExpiresIn>
   <ThoughtStartsExpiringIn>Ablauf fängt in {0} an</ThoughtStartsExpiringIn>
   <ThoughtFinishesExpiringIn>Ablauf hört in {0} auf</ThoughtFinishesExpiringIn>
+  <MentalBreakThreshold>Mental break threshold</MentalBreakThreshold>
   
   <!--Effectiveness-->
   <EffectivenessFull>Voll</EffectivenessFull>
@@ -91,8 +103,12 @@
   
   	<!-- Power readout -->
 	<PowerNotConnected>Stromversorgung fehlt.</PowerNotConnected>
-	<PowerConnectedRate>Verbundene Stromrate: {0}W</PowerConnectedRate>
-	<PowerConnectedStored>Verbundener Strom gespeichert: {0}Wd</PowerConnectedStored>
+	<PowerConnectedRate>Verbundene Leistungsrate: {0}W</PowerConnectedRate>
+	<PowerConnectedStored>Verbundene, gespeicherte Leistung: {0}Wd</PowerConnectedStored>
+  	<PowerNeeded>Leistung benötigt</PowerNeeded>
+  	<PowerOutput>Erzeugte Leistung</PowerOutput>
+  	<PowerBatteryStored>Gespeichert</PowerBatteryStored>
+  	<PowerBatteryEfficiency>Effizienz</PowerBatteryEfficiency>
   
   	<!--Rotting-->
 	<RotStateFresh>Frisch</RotStateFresh>
@@ -149,4 +165,8 @@
   <Burning>Brennt</Burning>
   <FireSizeLower>feuergröße {0}</FireSizeLower>
   
+  <!-- Map conditions (eclipse, solar flare, etc )-->
+  <MapConditionsTip>Spezielle Umstände beeinflussen gerade die Umgebung.</MapConditionsTip>
+  <SolarFlare>Sonnenerruption</SolarFlare>
+  <Eclipse>Sonnenfinsternis</Eclipse>
 </LanguageData>
