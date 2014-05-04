@@ -63,14 +63,24 @@
   <ClockTime>Uhrzeit</ClockTime>
   <ClockTip>Die aktuelle Uhrzeit und die Anzahl der Tage seit du hier gelandet bist.</ClockTip>
   
-  <!-- Inspector -->
+  <!-- Pawn info readout -->
   <Health>Gesundheit</Health>
+  <PawnMainDescWithFactionGendered>{0}, {1} der {2}</PawnMainDescWithFactionGendered>
+  <PawnMainDescGendered>{0}, {1}</PawnMainDescGendered>
+  <PawnMainDescWithFactionGenderless>{0} der {1}</PawnMainDescWithFactionGenderless>
+  <PawnMainDescGenderless>{0}</PawnMainDescGenderless>
   <Faction>Fraktion</Faction>
   <Equipped>Ausgerüstet</Equipped>
   <EquippedNothing>Nichts</EquippedNothing>
   <Incapacitated>Bewustlos</Incapacitated>
   <InRestraints>Gefesselt(langsamer)</InRestraints>
-  <SelectNextInSquareTip>Wählt den nächsten Gegenstand im gleichen Feld aus.\n\nDu kann das auch machen, indem du langsam auf das gleiche Feld klickst.</SelectNextInSquareTip>
+  <Carrying>Trägt etwas</Carrying>
+  <SanityDazedWander>Gebrochen: Läuft verwirrt herum</SanityDazedWander>
+  <SanityGiveUpExit>Gebrochen: Gibt auf und geht</SanityGiveUpExit>
+  <SanityPanicFlee>Gebrochen: Flieht panisch</SanityPanicFlee>
+  <SanityPsychotic>Gebrochen: Läuft amok</SanityPsychotic>
+  <!-- Inspector general stuff -->
+  <SelectNextInSquareTip>Wählt den nächsten Gegenstand im gleichen Feld aus.\n\nEs geht auch, indem du doppelt, ohne Doppelklick, auf das gleiche Feld klickst.</SelectNextInSquareTip>
   
     <!-- ITab titles -->
   <TabBills>Aufgaben</TabBills>
@@ -113,8 +123,7 @@
 	<RotStateRotting>Verrottet</RotStateRotting>
 	<RotStateDessicated>Ausgetrocknet</RotStateDessicated>
 
-  <!-- Tooltip -->
-  <Carrying>Trägt etwas</Carrying>
+  <!-- Shooting tooltip -->
   <ShotBy>Abgeschossen von {0}</ShotBy>
   <CannotHit>Kann das Ziel nicht treffen.</CannotHit>
 
@@ -137,7 +146,7 @@
   <HarvestableIn>Kann nach {0} Wachstum geerntet werden.</HarvestableIn>
   <FullyGrownIn>Ist nach {0} Wachstum voll ausgewachsen.</FullyGrownIn>
   <ReadyToHarvest>Bereit zum Ernten.</ReadyToHarvest>
-  <Mature>Reif.</Mature>
+  <Mature>Ausgewachsen.</Mature>
   
     <!-- Zones -->
   <Zone>Zone</Zone>
