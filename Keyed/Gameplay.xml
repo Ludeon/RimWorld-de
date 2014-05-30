@@ -21,6 +21,7 @@
 	<ReportHauling>Trage {0}.</ReportHauling>
 
 	<!-- Shooting report -->
+        <WeaponMissRadius>Waffenstreuung</WeaponMissRadius>
 	<RangeSlashSkill>Reichweite/Fähigkeit</RangeSlashSkill>
 	<RangeSlashEquipment>Reichweite/Ausrüstung</RangeSlashEquipment>
 	<Darkness>Dunkelheit</Darkness>
@@ -32,11 +33,11 @@
 	<NoCoverLower>keine Deckung</NoCoverLower>
 	<!-- Status levels -->
   <Loyalty>Loyalität</Loyalty>
-  <LoyaltyTip>Loyalität repräsentiert den Glauben einer Person an die Kolonie. Wenn sie zu weit abfällt, kann die Person aufgeben, unvernünftig werden oder durchdrehen.\n\nLoyalität ist gleich der Freude oder Angst - Was immer höher ist.</LoyaltyTip>
+  <LoyaltyTip>Loyalität repräsentiert den Glauben an die Kolonie. Wenn sie zu weit abfällt, kann die Person aufgeben, unvernünftig werden oder durchdrehen.\n\nLoyalität entspricht der Freude oder der Angst - Was immer höher ist.</LoyaltyTip>
   <Happiness>Freude</Happiness>
   <HappinessTip>Freude erhält man, in dem physische oder psychiche Wünsche erfüllt werden.</HappinessTip>
   <Fear>Angst</Fear>
-  <FearTip>Angst repräsentiert, wie stark eine Person von ihrer Umgebung eingeschüchtert ist.\n\nSie steigt, wenn man Drohungen, Gewalt und die Darstellung von Macht erfährt.</FearTip>
+  <FearTip>Angst repräsentiert, wie stark eine Person von ihrer Umgebung eingeschüchtert ist.\n\nSie steigt, wenn sie Drohungen, Gewalt und die Darstellung von Macht miterlebt.</FearTip>
   <Food>Essen</Food>
   <FoodTip>Essen repräsentiert, wie zufrieden jemand mit seinen Mahlzeiten ist.\n\nEssen wird zurückgesetzt, wenn jemand isst. Nach einer Weile fängt es wieder an zu fallen, bis wieder gegessen wird. Wenn Essen bei 0 angekommen ist, bekommt die Person Schaden da sie verhungert.</FoodTip>
   <Rest>Erholung</Rest>
@@ -120,11 +121,11 @@
   
   	<!--Rotting-->
 	<RotStateFresh>Frisch</RotStateFresh>
-	<RotStateRotting>Verrottet</RotStateRotting>
+	<RotStateRotting>Verrottend</RotStateRotting>
 	<RotStateDessicated>Ausgetrocknet</RotStateDessicated>
 
   <!-- Shooting tooltip -->
-  <ShotBy>Abgeschossen von {0}</ShotBy>
+  <ShotBy>Angeschossen von {0}</ShotBy>
   <CannotHit>Kann das Ziel nicht treffen.</CannotHit>
 
   <!-- Storage priority labels -->
@@ -143,8 +144,8 @@
   <PercentGrowth>{0}% gewachsen</PercentGrowth>
   <Growing>Wächst</Growing>
   <NotGrowingNow>Wächst nicht. (Es muss {0} sein.)</NotGrowingNow>
-  <HarvestableIn>Kann nach {0} Wachstum geerntet werden.</HarvestableIn>
-  <FullyGrownIn>Ist nach {0} Wachstum voll ausgewachsen.</FullyGrownIn>
+  <HarvestableIn>Kann in {0} geerntet werden.</HarvestableIn>
+  <FullyGrownIn>Ist in {0} voll ausgewachsen.</FullyGrownIn>
   <ReadyToHarvest>Bereit zum Ernten.</ReadyToHarvest>
   <Mature>Ausgewachsen.</Mature>
   
@@ -170,10 +171,8 @@
   <Fire>Feuer</Fire>
   <FireOn>Feuer auf {0}</FireOn>
   <Burning>Brennt</Burning>
-  <FireSizeLower>feuergröße {0}</FireSizeLower>
+  <FireSizeLower>Feuergröße {0}</FireSizeLower>
   
   <!-- Map conditions (eclipse, solar flare, etc )-->
   <MapConditionsTip>Spezielle Umstände beeinflussen gerade die Umgebung.</MapConditionsTip>
-  <!--<SolarFlare>Sonnenerruption</SolarFlare>
-  <Eclipse>Sonnenfinsternis</Eclipse>-->
 </LanguageData>
