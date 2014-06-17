@@ -4,6 +4,7 @@
   <!-- Various -->
   <WorkLeft>Restliche Arbeit</WorkLeft>
   <Contents>Inhalt</Contents>
+  <ContainedResources>Gesicherte Rohstoffe</ContainedResources>
   <ForPrisonerUse>Für Gefangene</ForPrisonerUse>
   <ForColonistUse>Für Kolonisten</ForColonistUse>
   <Owner>Besitzer</Owner>
@@ -16,14 +17,15 @@
   <PawnEffectiveness>Effektivität</PawnEffectiveness>
   <FilthOnFeet>Dreck an den Füßen:</FilthOnFeet>
   <NotEnoughStoredLower>zu wenig vorhanden</NotEnoughStoredLower>
+  <NothingLower>nichts</NothingLower>
 
 	<!-- Job reports -->
 	<ReportHaulingTo>Trage {0} zu {1}.</ReportHaulingTo>
 	<ReportHauling>Trage {0}.</ReportHauling>
 
 	<!-- Shooting report -->
-        <WeaponMissRadius>Waffenstreuung</WeaponMissRadius>
-	<RangeSlashSkill>Reichweite/Fähigkeit</RangeSlashSkill>
+    	<ShootReportSkill>Können</ShootReportSkill>
+	<ShootReportWeapon>Waffe</ShootReportWeapon>
 	<RangeSlashEquipment>Reichweite/Ausrüstung</RangeSlashEquipment>
 	<Darkness>Dunkelheit</Darkness>
 	<TargetProne>Ziel-Anfälligkeit</TargetProne>
@@ -32,13 +34,10 @@
 	<ShootingCover>Deckung</ShootingCover>
 	<CoverThingBlocksPercentOfShots>{0} stoppt {1}</CoverThingBlocksPercentOfShots>
 	<NoCoverLower>keine Deckung</NoCoverLower>
+	
 	<!-- Status levels -->
-  <Loyalty>Loyalität</Loyalty>
-  <LoyaltyTip>Loyalität repräsentiert den Glauben an die Kolonie. Wenn sie zu weit abfällt, kann die Person aufgeben, unvernünftig werden oder durchdrehen.\n\nLoyalität entspricht der Freude oder der Angst - Was immer höher ist.</LoyaltyTip>
-  <Happiness>Freude</Happiness>
-  <HappinessTip>Freude erhält man, in dem physische oder psychiche Wünsche erfüllt werden.</HappinessTip>
-  <Fear>Angst</Fear>
-  <FearTip>Angst repräsentiert, wie stark eine Person von ihrer Umgebung eingeschüchtert ist.\n\nSie steigt, wenn sie Drohungen, Gewalt und die Darstellung von Macht miterlebt.</FearTip>
+    <Mood>Stimmung</Mood>
+  <MoodTip>Die Stimmung wird erhalten, indem physische und psychische Wünsche erfüllt werden.\n\nWenn die Stimmung einer Person zu niedrig fällt, kann sie einen Nervenzusammenbruch erleiden.</MoodTip>
   <Food>Essen</Food>
   <FoodTip>Essen repräsentiert, wie zufrieden jemand mit seinen Mahlzeiten ist.\n\nEssen wird zurückgesetzt, wenn jemand isst. Nach einer Weile fängt es wieder an zu fallen, bis wieder gegessen wird. Wenn Essen bei 0 angekommen ist, bekommt die Person Schaden da sie verhungert.</FoodTip>
   <Rest>Erholung</Rest>
@@ -59,11 +58,6 @@
   <EffectivenessReduced>Reduziert</EffectivenessReduced>
   <EffectivenessImpaired>Beeinträchtig</EffectivenessImpaired>
   <EffectivenessIncapacitated>Bewusstlos</EffectivenessIncapacitated>
-
-  <!-- Time indicator-->
-  <ClockDay>Tag</ClockDay>
-  <ClockTime>Uhrzeit</ClockTime>
-  <ClockTip>Die aktuelle Uhrzeit und die Anzahl der Tage seit du hier gelandet bist.</ClockTip>
   
   <!-- Pawn info readout -->
   <Health>Gesundheit</Health>
@@ -81,8 +75,10 @@
   <SanityGiveUpExit>Zusammenbruch: Gibt auf und geht</SanityGiveUpExit>
   <SanityPanicFlee>Zusammenbruch: Flieht panisch</SanityPanicFlee>
   <SanityPsychotic>Zusammenbruch: Läuft amok</SanityPsychotic>
+  
   <!-- Inspector general stuff -->
   <SelectNextInSquareTip>Wählt den nächsten Gegenstand im gleichen Feld aus.\n\nSchnellwahl: {0}\nEs geht auch, indem du doppelt, ohne Doppelklick, auf das gleiche Feld klickst.</SelectNextInSquareTip>
+  <DefInfoTip>Zeige Informationen über dieses Objekt.</DefInfoTip>
   
     <!-- ITab titles -->
   <TabBills>Aufgaben</TabBills>
@@ -90,6 +86,7 @@
   <TabCharacter>Charakter</TabCharacter>
   <TabNeeds>Status</TabNeeds>
   <TabPrisoner>Gefängnis</TabPrisoner>
+  <TabGear>Inventar</TabGear>
   <TabThoughts>Gedanken</TabThoughts>
   <TabStorage>Lager</TabStorage>
   
@@ -107,6 +104,14 @@
 	<PrisonerMildBeating>Leichte Schläge</PrisonerMildBeating>
 	<PrisonerViciousBeating>Brutale Schläge</PrisonerViciousBeating>
 	<PrisonerExecution>Exekution</PrisonerExecution>
+	<Equipment>Ausrüstung</Equipment>
+	<Apparel>Aussehen</Apparel>
+	<Inventory>Inventar</Inventory>
+	<ThingInfo>Information</ThingInfo>
+	<DropThing>Fallen lassen</DropThing>
+	<TotalModifiers>Gesammt Modifizierer</TotalModifiers>
+	<DamageAbsorption>Schadenabsorption</DamageAbsorption>
+	<MoveSpeed>Laufgeschwindigkeit</MoveSpeed>
   
   	<!-- like 'Blood of John' -->
 	<OfLower>von</OfLower>
@@ -155,7 +160,6 @@
   <GrowingZone>Anbauzone</GrowingZone>
   <Stockpile>Lagerzone</Stockpile>
   <DumpingStockpile>Abfallzone</DumpingStockpile>
-  <SellingStockpile>Verkaufszone</SellingStockpile>
   <Priority>Priorität</Priority>
   
   <!-- General time stuff -->
@@ -167,6 +171,8 @@
   
   <!-- Buttons -->
   <ZoneVisibilityToggleButton>Schalte die Sichtbarkeit der Zonen um.</ZoneVisibilityToggleButton>
+  <AutoHomeRegionToggleButton>Schalte das automatische Hinzufügen der Heimzonen um neue Konstruktionen ein/aus.</AutoHomeRegionToggleButton>
+
   
   <!-- Fire -->
   <Fire>Feuer</Fire>
@@ -176,4 +182,27 @@
   
   <!-- Map conditions (eclipse, solar flare, etc )-->
   <MapConditionsTip>Spezielle Umstände beeinflussen gerade die Umgebung.</MapConditionsTip>
+  
+    <!-- Building placement restricters -->
+  <MustPlaceUnroofed>Cannot be placed under a roof.</MustPlaceUnroofed>
+  <MustPlaceHeadOnShipBeam>Must place with head attached to ship structural beam.</MustPlaceHeadOnShipBeam>
+  <MustPlaceNextToHopperAccepter>Must be placed next to something that needs a hopper.</MustPlaceNextToHopperAccepter>
+  <MustPlaceOnSteamGeyser>Must be placed directly on a steam geyser.</MustPlaceOnSteamGeyser>
+  
+  <!-- Longsleep pod -->
+  <PodContains>Contains</PodContains>
+
+  <!-- Ship launch report -->
+  <ShipReportCannotLaunch>Cannot launch.</ShipReportCannotLaunch>
+  <ShipReportCanLaunch>Ready for launch.</ShipReportCanLaunch>
+  <ShipReportMissingPart>Missing critical component</ShipReportMissingPart>
+  <ShipReportNoFullPods>No full longsleep pods</ShipReportNoFullPods>
+
+  <!-- Game over -->
+  <GameOverEveryoneDead>Alle sind fort oder tot. Die Geschichte ist zu Ende.\n\nVielleicht findet jemand anderes einen Nutzen für die restlichen Ruinen.</GameOverEveryoneDead>
+  <GameOverShipLaunched>Du bist mit dem Schiff gestartet! Diese Kolonisten sind entkommen:\n\n{0}\nDiese Kolonisten wurden zurückgelassen:\n\n{1}\nDeine Schiffs-KI wird versuchen das Schiff an einen sicheren Ort zu bringen. Sie kann dich hier im System an einem besseren Ort abliefern. Oder sie unternimmt eine Jahrhunderte lange Reise zu einem anderen Stern. Vielleicht entscheidet sie sich auch, ein paar tausend Jahre unter dem Eis eines Asteroiden auf eine bessere Epoche zu warten.\n\nWenn Du wieder erwachst, wirst du es erfahren..</GameOverShipLaunched>
+  <GameOverKeepPlaying>Weiterspielen</GameOverKeepPlaying>
+  <GameOverMainMenu>Hauptmenü</GameOverMainMenu>
+  
+  
 </LanguageData>
