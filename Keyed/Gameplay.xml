@@ -7,6 +7,7 @@
   <ContainedResources>Gesicherte Rohstoffe</ContainedResources>
   <ForPrisonerUse>Für Gefangene</ForPrisonerUse>
   <ForColonistUse>Für Kolonisten</ForColonistUse>
+  <MedicalBed>Krankenbett</MedicalBed>
   <Owner>Besitzer</Owner>
   <Nobody>Niemand</Nobody>
   <Unowned>Frei</Unowned>
@@ -17,6 +18,9 @@
   <FilthOnFeet>Dreck an den Füßen:</FilthOnFeet>
   <NotEnoughStoredLower>zu wenig vorhanden</NotEnoughStoredLower>
   <NothingLower>nichts</NothingLower>
+  <Adapted>Angepasst</Adapted>
+  <Headshot>Kopfschuss</Headshot>
+  <FreshMissingBodyPart>frisch</FreshMissingBodyPart>
   
     <!-- Turrets -->
   <GunInstalled>Installiert</GunInstalled>
@@ -80,6 +84,21 @@
   <SanityPanicFlee>Zusammenbruch: Flieht panisch</SanityPanicFlee>
   <SanityPsychotic>Zusammenbruch: Läuft amok</SanityPsychotic>
   
+  <!-- Body and activities condition -->
+  <None>Ohne</None>
+  <VeryPoor>Sehr schwach</VeryPoor>
+  <Poor>Schwach</Poor>
+  <Weakened>Geschwächt</Weakened>
+  <GoodCondition>Normal</GoodCondition>
+  <SeriouslyImpaired>Stark beeinträchtigt</SeriouslyImpaired>
+  <Impaired>Beeinträchtigt</Impaired>
+  <SlightlyImpaired>Leicht beeinträchtigt</SlightlyImpaired>
+  <NoPain>Ohne</NoPain>
+  <LittlePain>Leicht</LittlePain>
+  <MediumPain>Mittel</MediumPain>
+  <SeverePain>Stark</SeverePain>
+  <ExtremePain>Extrem</ExtremePain>
+  
   <!-- Inspector general stuff -->
   <SelectNextInSquareTip>Wählt den nächsten Gegenstand im gleichen Feld aus.\n\nSchnellwahl: {0}\nEs geht auch, indem du doppelt, ohne Doppelklick, auf das gleiche Feld klickst.</SelectNextInSquareTip>
   <DefInfoTip>Zeige Informationen über dieses Objekt.</DefInfoTip>
@@ -88,11 +107,11 @@
   <TabBills>Aufgaben</TabBills>
   <TabGrowing>Anbauen</TabGrowing>
   <TabCharacter>Charakter</TabCharacter>
-  <TabNeeds>Status</TabNeeds>
   <TabPrisoner>Gefängnis</TabPrisoner>
   <TabGear>Inventar</TabGear>
   <TabThoughts>Gedanken</TabThoughts>
   <TabStorage>Lager</TabStorage>
+  <TabHealth>Gesundheit</TabHealth>
   
   	<!-- ITabs -->
 	<AddBill>Aufgabe hinzufügen</AddBill>
@@ -116,6 +135,21 @@
 	<TotalModifiers>Gesamt Modifikation</TotalModifiers>
 	<DamageAbsorption>Schadenabsorption</DamageAbsorption>
 	<MoveSpeed>Laufgeschwindigkeit</MoveSpeed>
+	<Efficiency>Effizienz</Efficiency>
+	<MissingBodyPart>Verloren</MissingBodyPart>
+	<DestroyedBodyPart>Zerstört</DestroyedBodyPart>
+	<ShatteredBodyPart>Zerbrochen</ShatteredBodyPart>
+	<Healthy>Gesund</Healthy>
+	<InPain>Hat Schmerzen</InPain>
+	<PainLevel>Schmerz</PainLevel>
+	<Dead>Tot</Dead>
+	<Unconscious>Bewußtlos</Unconscious>
+	<PainShock>Schock</PainShock>
+	<NoInjuries>(keine Verletzungen)</NoInjuries>
+	<WholeBody>Ganzer Körper</WholeBody>
+	<RenameColonist>Kolonisten umbenennen</RenameColonist>
+	<DataProcessing>Datenverarbeitung</DataProcessing>
+	<Communication>Kommunikation</Communication>
   
   	<!-- like 'Blood of John' -->
 	<OfLower>von</OfLower>
@@ -154,6 +188,7 @@
   <PercentGrowth>{0}% gewachsen</PercentGrowth>
   <Growing>Wächst</Growing>
   <NotGrowingNow>Wächst nicht. (Es muss {0} sein.)</NotGrowingNow>
+  <NotGrowingNowNight>Wächst nicht. (Nacht).</NotGrowingNowNight>
   <FullyGrownIn>Ist in {0} voll ausgewachsen.</FullyGrownIn>
   <ReadyToHarvest>Bereit zum Ernten.</ReadyToHarvest>
   <Mature>Ausgewachsen.</Mature>
@@ -203,7 +238,7 @@
 
   <!-- Game over -->
   <GameOverEveryoneDead>Alle sind tot oder fort. Diese Geschichte ist zu Ende.\n\nVielleicht findet jemand anderes einen Nutzen für die noch stehenden Ruinen.</GameOverEveryoneDead>
-  <GameOverShipLaunched>Dein Raumschiff ist gestartet und hat die folgenden Kolonisten mitgenommen:\n\n{0}\nFolgende Kolonisten mussten zurückgelassen werden:\n\n{1}\nDeine Schiffs-KI wird versuchen das Raumschiff an einen sicheren Ort zu bringen. Vielleicht findet sie hier im System einen besseren Ort für euch. Oder sie unternimmt eine Jahrhunderte lange Reise zu einem anderen Stern. Es kann aber auch sein, dass sie sich entscheidet ein paar tausend Jahre, unter dem Eis eines Asteroiden, auf eine bessere Epoche zu warten.\n\nDu wirst es erfahren, wenn du wieder erwachst..</GameOverShipLaunched>
+  <GameOverShipLaunched>Dein Raumschiff ist gestartet und hat die folgenden Kolonisten mitgenommen:\n\n{0}\nFolgende Kolonisten mussten zurückgelassen werden:\n\n{1}\nDeine Schiffs-KI wird versuchen das Raumschiff an einen sicheren Ort zu bringen. Vielleicht findet sie hier im System einen besseren Ort für euch. Oder sie unternimmt eine Jahrhunderte lange Reise zu einem anderen Stern. Es kann aber auch sein, dass sie sich entscheidet ein paar tausend Jahre, unter dem Eis eines Asteroiden, auf eine bessere Geschichtsperiode zu warten.\n\nDu wirst es erfahren, wenn du wieder erwachst..</GameOverShipLaunched>
   <GameOverKeepPlaying>Weiterspielen</GameOverKeepPlaying>
   <GameOverMainMenu>Hauptmenü</GameOverMainMenu>
   
