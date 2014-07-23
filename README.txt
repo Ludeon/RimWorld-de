@@ -1,8 +1,16 @@
-RimWorld_de
-===========
+RimWorld de-DE
+==============
 
-A German translation for RimWorld.
+The german translation of RimWorld.
 
 See this page for license info:
 
 http://ludeon.com/forums/index.php?topic=2933.0
+
+
+
+Official Translators:
+---------------------
+- TheEisbaer
+- Haplo
+
