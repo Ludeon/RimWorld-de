@@ -23,7 +23,7 @@
 	<Burn.solidTreatedLabel>schlecht geschient</Burn.solidTreatedLabel>
 	
 	<Crush.label>Quetschung</Crush.label>
-	<Crush.oldLabel>Alte Quetschung</Crush.oldLabel>
+	<Crush.oldLabel>Narbe</Crush.oldLabel>
 	<Crush.destroyedLabel>zerquetscht</Crush.destroyedLabel>
 	<Crush.treatedWellLabel>verbunden</Crush.treatedWellLabel>
 	<Crush.treatedLabel>schlecht verbunden</Crush.treatedLabel>
@@ -33,7 +33,7 @@
 	<Crush.solidTreatedLabel>schlecht geschient</Crush.solidTreatedLabel>
 	
 	<Crack.label>Bruch</Crack.label>
-	<Crack.oldLabel>Alter Bruch</Crack.oldLabel>
+	<Crack.oldLabel>Narbe</Crack.oldLabel>
 	<Crack.destroyedLabel>zerschmettert</Crack.destroyedLabel>
 	<Crack.treatedWellLabel>gerichtet</Crack.treatedWellLabel>
 	<Crack.treatedLabel>schlecht gerichtet</Crack.treatedLabel>
@@ -52,6 +52,17 @@
 	<Cut.innerTreatedLabel>schlecht genäht</Cut.innerTreatedLabel>
 	<Cut.solidTreatedWellLabel>geschient</Cut.solidTreatedWellLabel>
 	<Cut.solidTreatedLabel>schlecht geschient</Cut.solidTreatedLabel>
+	
+	<SurgicalCut.label>Chirogischer Schnitt</SurgicalCut.label>
+	<SurgicalCut.oldLabel>Alte Schnittwunde</SurgicalCut.oldLabel>
+	<SurgicalCut.destroyedLabel>abgeschnitten</SurgicalCut.destroyedLabel>
+	<SurgicalCut.destroyedOutLabel>rausgeschnitten</SurgicalCut.destroyedOutLabel>
+	<SurgicalCut.treatedWellLabel>verbunden</SurgicalCut.treatedWellLabel>
+	<SurgicalCut.treatedLabel>schlecht verbunden</SurgicalCut.treatedLabel>
+	<SurgicalCut.innerTreatedWellLabel>genäht</SurgicalCut.innerTreatedWellLabel>
+	<SurgicalCut.innerTreatedLabel>schlecht genäht</SurgicalCut.innerTreatedLabel>
+	<SurgicalCut.solidTreatedWellLabel>geschient</SurgicalCut.solidTreatedWellLabel>
+	<SurgicalCut.solidTreatedLabel>schlecht geschient</SurgicalCut.solidTreatedLabel>
 	
 	<Scratch.label>Kratzer</Scratch.label>
 	<Scratch.oldLabel>Alte Kratzwunde</Scratch.oldLabel>
@@ -118,6 +129,156 @@
 	<Bruise.innerTreatedLabel>schlecht genäht</Bruise.innerTreatedLabel>
 	<Bruise.solidTreatedWellLabel>geschient</Bruise.solidTreatedWellLabel>
 	<Bruise.solidTreatedLabel>schlecht geschient</Bruise.solidTreatedLabel>
+	
+	<!-- Missing body part -->
+	<MissingBodyPart.label>fehlendes Körperteil</MissingBodyPart.label>
+	
+	<!-- Diseases -->
+	<Euthanasia.label>Sterbehilfe</Euthanasia.label>
+	
+	<ShutDown.label>Abschaltung</ShutDown.label>
+	
+	<WoundInfection.label>Infizierte Wunde</WoundInfection.label>
+	<rep>
+		<path>WoundInfection.disease.severityStages[0].label</path>
+		<trans>gering</trans>
+	</rep>
+	<rep>
+		<path>WoundInfection.disease.severityStages[1].label</path>
+		<trans>größer</trans>
+	</rep>
+	<rep>
+		<path>WoundInfection.disease.severityStages[2].label</path>
+		<trans>extrem</trans>
+	</rep>
+	<rep>
+		<path>WoundInfection.disease.severityStages[3].label</path>
+		<trans>extrem</trans>
+	</rep>
+	<rep>
+		<path>WoundInfection.disease.severityStages[4].label</path>
+		<trans>extrem</trans>
+	</rep>
+	
+	<BadBack.label>Rückenprobleme</BadBack.label>
+	
+	<Cataract.label>Grauer Star</Cataract.label>
+	
+	<Anesthetic.label>Betäubung</Anesthetic.label>
+	
+	<Concussion.label>Gehirnerschütterung</Concussion.label>
+	
+	<Flu.label>Grippe</Flu.label>
+	<rep>
+		<path>Flu.disease.severityStages[0].label</path>
+		<trans>gering</trans>
+	</rep>
+	<rep>
+		<path>Flu.disease.severityStages[1].label</path>
+		<trans>gering</trans>
+	</rep>
+	<rep>
+		<path>Flu.disease.severityStages[2].label</path>
+		<trans>größer</trans>
+	</rep>
+	<rep>
+		<path>Flu.disease.severityStages[3].label</path>
+		<trans>extrem</trans>
+	</rep>
+	<rep>
+		<path>Flu.disease.severityStages[4].label</path>
+		<trans>extrem</trans>
+	</rep>
+	
+	<Plague.label>Pest</Plague.label>
+	<rep>
+		<path>Plague.disease.severityStages[0].label</path>
+		<trans>gering</trans>
+	</rep>
+	<rep>
+		<path>Plague.disease.severityStages[1].label</path>
+		<trans>gering</trans>
+	</rep>
+	<rep>
+		<path>Plague.disease.severityStages[2].label</path>
+		<trans>größer</trans>
+	</rep>
+	<rep>
+		<path>Plague.disease.severityStages[3].label</path>
+		<trans>extrem</trans>
+	</rep>
+	<rep>
+		<path>Plague.disease.severityStages[4].label</path>
+		<trans>extrem</trans>
+	</rep>
+	<rep>
+		<path>Plague.disease.severityStages[5].label</path>
+		<trans>extrem</trans>
+	</rep>
+	
+	<Malaria.label>Malaria</Malaria.label>
+	<rep>
+		<path>Malaria.disease.severityStages[0].label</path>
+		<trans>gering</trans>
+	</rep>
+	<rep>
+		<path>Malaria.disease.severityStages[1].label</path>
+		<trans>gering</trans>
+	</rep>
+	<rep>
+		<path>Malaria.disease.severityStages[2].label</path>
+		<trans>größer</trans>
+	</rep>
+	<rep>
+		<path>Malaria.disease.severityStages[3].label</path>
+		<trans>extrem</trans>
+	</rep>
+	<rep>
+		<path>Malaria.disease.severityStages[4].label</path>
+		<trans>extrem</trans>
+	</rep>
+	
+	<SleepingSickness.label>Schlafkrankheit</SleepingSickness.label>
+	<rep>
+		<path>SleepingSickness.disease.severityStages[0].label</path>
+		<trans>gering</trans>
+	</rep>
+	<rep>
+		<path>SleepingSickness.disease.severityStages[1].label</path>
+		<trans>gering</trans>
+	</rep>
+	<rep>
+		<path>SleepingSickness.disease.severityStages[2].label</path>
+		<trans>gering</trans>
+	</rep>
+	<rep>
+		<path>SleepingSickness.disease.severityStages[3].label</path>
+		<trans>größer</trans>
+	</rep>
+	<rep>
+		<path>SleepingSickness.disease.severityStages[4].label</path>
+		<trans>extrem</trans>
+	</rep>
+	<rep>
+		<path>SleepingSickness.disease.severityStages[5].label</path>
+		<trans>extrem</trans>
+	</rep>
+	<rep>
+		<path>SleepingSickness.disease.severityStages[6].label</path>
+		<trans>extrem</trans>
+	</rep>
+	
+	<!-- Added body parts -->
+	
+	<PegLeg.label>Holzbein</PegLeg.label>
+	<Denture.label>Zahnprothese</Denture.label>
+	<SimpleProstheticLeg.label>Einfache Beinprothese</SimpleProstheticLeg.label>
+	<SimpleProstheticArm.label>Einfache Armprothese</SimpleProstheticArm.label>
+	<BionicEye.label>Bionisches Auge</BionicEye.label>
+	<BionicArm.label>Bionischer Arm</BionicArm.label>
+	<BionicLeg.label>Bionisches Bein</BionicLeg.label>
+	<PowerClaw.label>Power Kralle</PowerClaw.label>
+	<ScytherKnifeProtrusion.label>Sense Messerauswuchs</ScytherKnifeProtrusion.label>
 	
 	
 	<!-- nonlocal injuries -->
