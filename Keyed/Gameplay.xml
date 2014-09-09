@@ -14,13 +14,16 @@
   <DeadTime>Tot seit {0}</DeadTime>
   <WalkSpeed>Laufgeschwindigkeit {0}</WalkSpeed>
   <DyingLower>stirbt</DyingLower>
-  <PawnEffectiveness>Effektivität</PawnEffectiveness>
   <FilthOnFeet>Dreck an den Füßen:</FilthOnFeet>
   <NotEnoughStoredLower>zu wenig vorhanden</NotEnoughStoredLower>
   <NothingLower>nichts</NothingLower>
   <Adapted>Angepasst</Adapted>
   <Headshot>Kopfschuss</Headshot>
   <FreshMissingBodyPart>frisch</FreshMissingBodyPart>
+  <UntreatedLower>unbehandelt</UntreatedLower>
+  <RecoveringDiseaseLower>Erholung</RecoveringDiseaseLower>
+  <InjuryRequiresTreatment>Benötigt Behandlung zum Verheilen</InjuryRequiresTreatment>
+  <NextTreatmentAfter>Nächste Behandlung nach {0} Tagen</NextTreatmentAfter>
   
     <!-- Turrets -->
   <GunInstalled>Installiert</GunInstalled>
@@ -32,7 +35,8 @@
 	<ReportHauling>Trage {0}.</ReportHauling>
 
 	<!-- Shooting report -->
-    	<ShootReportSkill>Können</ShootReportSkill>
+  <WeaponMissRadius>Weapon miss radius</WeaponMissRadius>
+    <ShootReportShooterAbility>Schütze</ShootReportShooterAbility>
 	<ShootReportWeapon>Waffe</ShootReportWeapon>
 	<RangeSlashEquipment>Reichweite/Ausrüstung</RangeSlashEquipment>
 	<Darkness>Dunkelheit</Darkness>
@@ -61,12 +65,6 @@
   <ThoughtFinishesExpiringIn>Ablauf hört in {0} auf</ThoughtFinishesExpiringIn>
   <MentalBreakThreshold>Schwelle zum Nervenzusammenbruch</MentalBreakThreshold>
   
-  <!--Effectiveness-->
-  <EffectivenessFull>Voll</EffectivenessFull>
-  <EffectivenessReduced>Reduziert</EffectivenessReduced>
-  <EffectivenessImpaired>Beeinträchtig</EffectivenessImpaired>
-  <EffectivenessIncapacitated>Bewusstlos</EffectivenessIncapacitated>
-  
   <!-- Pawn info readout -->
   <Health>Körper</Health>
   <PawnMainDescWithFactionGendered>{0}, {1} der {2}</PawnMainDescWithFactionGendered>
@@ -90,6 +88,7 @@
   <Poor>Schlecht</Poor>
   <Weakened>Reduziert</Weakened>
   <GoodCondition>Ok</GoodCondition>
+  <Enhanced>Verbessert</Enhanced>
   <SeriouslyImpaired>Schwer Verletzt</SeriouslyImpaired>
   <Impaired>Verletzt</Impaired>
   <SlightlyImpaired>Leicht Verletzt</SlightlyImpaired>
@@ -112,6 +111,9 @@
   <TabThoughts>Gedanken</TabThoughts>
   <TabStorage>Lager</TabStorage>
   <TabHealth>Körper</TabHealth>
+  <TabRace>Rasse</TabRace>
+  <TabBasics>Grundl.</TabBasics>
+  <TabStats>Status</TabStats>
   
   	<!-- ITabs -->
 	<AddBill>Aufgabe hinzufügen</AddBill>
@@ -136,22 +138,33 @@
 	<DropThing>Fallen lassen</DropThing>
 	<TotalModifiers>Gesamt Modifikation</TotalModifiers>
 	<DamageAbsorption>Schadensabsorption</DamageAbsorption>
+	<DamageDeflection>Schadensabwehr</DamageDeflection>
 	<MoveSpeed>Laufgeschwindigkeit</MoveSpeed>
 	<Efficiency>Effizienz</Efficiency>
 	<MissingBodyPart>Verloren</MissingBodyPart>
 	<DestroyedBodyPart>Zerstört</DestroyedBodyPart>
 	<ShatteredBodyPart>Zerbrochen</ShatteredBodyPart>
+    <RemovedBodyPart>Entfernt</RemovedBodyPart>
 	<Healthy>Gesund</Healthy>
 	<InPain>Hat Schmerzen</InPain>
 	<PainLevel>Schmerzen</PainLevel>
 	<Dead>Tot</Dead>
 	<Unconscious>Bewußtlos</Unconscious>
 	<PainShock>Schock</PainShock>
+	<Injured>Verletzt</Injured>
 	<NoInjuries>(Keine Verletzungen)</NoInjuries>
 	<WholeBody>Ganzer Körper</WholeBody>
 	<RenameColonist>Kolonisten umbenennen</RenameColonist>
 	<DataProcessing>Datenverarbeitung</DataProcessing>
 	<Communication>Kommunikation</Communication>
+	<AffectsLower>beeinflusst</AffectsLower>
+	<BleedingRate>Blutungsstärke</BleedingRate>
+	<HealthOverview>Übersicht</HealthOverview>
+	<MedicalOperationsShort>Operationen ({0})</MedicalOperationsShort>
+	<MedicalOperationsMechanoidsShort>Modifikationen ({0})</MedicalOperationsMechanoidsShort>
+	<MedicalOperations>Medizinische Operationen</MedicalOperations>
+	<Amputate>Amputiere</Amputate>
+	<Harvest>Entnehme</Harvest>
   
   	<!-- like 'Blood of John' -->
 	<OfLower>von</OfLower>
@@ -194,6 +207,7 @@
   <FullyGrownIn>Ist in {0} voll ausgewachsen.</FullyGrownIn>
   <ReadyToHarvest>Bereit zum Ernten.</ReadyToHarvest>
   <Mature>Ausgewachsen.</Mature>
+  <SeedLabel>{0} Samen</SeedLabel>
   
     <!-- Zones -->
   <Zone>Zone</Zone>
@@ -223,6 +237,9 @@
   <!-- Map conditions (eclipse, solar flare, etc )-->
   <MapConditionsTip>Spezielle Umstände beeinflussen gerade die Umgebung.</MapConditionsTip>
   
+  <!-- Building placement -->
+  <NoStuffsToBuildWith>Du hast kein Material um das zu bauen.</NoStuffsToBuildWith>
+
     <!-- Building placement restricters -->
   <MustPlaceUnroofed>Kann nicht unter einem Dach plaziert werden.</MustPlaceUnroofed>
   <MustPlaceHeadOnShipBeam>Muss mit dem Kopf an einem strukturellen Träger des Raumschiffes befestigt werden.</MustPlaceHeadOnShipBeam>
@@ -238,6 +255,10 @@
   <ShipReportMissingPart>Kritische Komponente fehlt.</ShipReportMissingPart>
   <ShipReportNoFullPods>Keine der Kryoschlafkapseln ist in Benutzung.</ShipReportNoFullPods>
 
+  <!-- Neurotrainer -->
+  <UseNeurotrainer>Benutze Neurotrainer zum Lernen von {0}</UseNeurotrainer>
+  <NeurotrainerUsed>{0} benutzte {1} Neurotrainer um von Level {2} auf Level {3} aufzusteigen.</NeurotrainerUsed>
+  
   <!-- Game over -->
   <GameOverEveryoneDead>Alle sind tot oder fort. Diese Geschichte ist zu Ende.\n\nVielleicht findet jemand anderes einen Nutzen für die noch stehenden Ruinen.</GameOverEveryoneDead>
   <GameOverShipLaunched>Dein Raumschiff ist gestartet und hat die folgenden Kolonisten mitgenommen:\n\n{0}\nFolgende Kolonisten mussten zurückgelassen werden:\n\n{1}\nDeine Schiffs-KI wird versuchen das Raumschiff an einen sicheren Ort zu bringen. Vielleicht findet sie hier im System einen besseren Ort für euch. Oder sie unternimmt eine Jahrhunderte lange Reise zu einem anderen Stern. Es kann aber auch sein, dass sie sich entscheidet ein paar tausend Jahre, unter dem Eis eines Asteroiden, auf eine bessere Geschichtsperiode zu warten.\n\nDu wirst es erfahren, wenn du wieder erwachst..</GameOverShipLaunched>
