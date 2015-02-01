@@ -35,6 +35,9 @@
   <DropThing>Fallen lassen</DropThing>
   <RenameColonist>Kolonist umbenennen</RenameColonist>
   <UnknownLower>unbekannt</UnknownLower>
+  <On>An</On>
+  <Off>Aus</Off>
+  <PowerSwitch_Power>Strom</PowerSwitch_Power>
   
   <!-- Snow -->
   <SnowNone>Kein Schnee</SnowNone>
@@ -47,6 +50,8 @@
   <GunInstalled>Installiert</GunInstalled>
   <MinimumRange>Minimale Reichweite</MinimumRange>
   <CanFireIn>Kann schießen in</CanFireIn>
+  <ShellLoaded>Geschoss geladen</ShellLoaded>
+  <ShellNotLoaded>Nicht geladen</ShellNotLoaded>
 
 	<!-- Job reports -->
 	<ReportHaulingTo>Trägt {0} zu {1}.</ReportHaulingTo>
@@ -101,10 +106,6 @@
     <Incapacitated>Bewustlos</Incapacitated>
     <InRestraints>Gefesselt (verlangsamt)</InRestraints>
     <Carrying>Trägt</Carrying>
-    <SanityDazedWander>Zusammenbruch: Läuft verwirrt herum</SanityDazedWander>
-    <SanityGiveUpExit>Zusammenbruch: Gibt auf und flieht</SanityGiveUpExit>
-    <SanityPanicFlee>Zusammenbruch: Flieht panisch</SanityPanicFlee>
-    <SanityPsychotic>Zusammenbruch: Läuft Amok</SanityPsychotic>
   
     <!-- Inspector general stuff -->
     <SelectNextInSquareTip>Wählt den nächsten Gegenstand im gleichen Feld aus.\n\nSchnellwahl: {0}\nEs geht auch, indem du doppelt, ohne Doppelklick, auf das gleiche Feld klickst.</SelectNextInSquareTip>
@@ -129,6 +130,7 @@
   
 	<!-- Temperature readout -->
 	<Indoors>Innen</Indoors>
+	<IndoorsUnroofed>Kein Dach</IndoorsUnroofed>
 	<Outdoors>Aussen</Outdoors>
   
   	<!--Rotting-->
@@ -171,7 +173,8 @@
   <OutdoorGrowingPeriod>Wachstumsperiode: {0}</OutdoorGrowingPeriod>
   <NoGrowingPeriod>Niemals</NoGrowingPeriod>
   <GrowYearRound>Ganzjährig</GrowYearRound>
-  <CannotGrowTooCold>Kann nicht wachsen - zu kalt.</CannotGrowTooCold>
+  <GrowSeasonHereNow>Anbausaison hat begonnen.</GrowSeasonHereNow>
+  <CannotGrowTooCold>Kann nicht wachsen - Kalte Jahreszeit.</CannotGrowTooCold>
   
     <!-- Zones -->
   <Zone>Zone</Zone>
@@ -186,6 +189,7 @@
   
   <!-- Buttons -->
   <ZoneVisibilityToggleButton>Schalte die Sichtbarkeit der Zonen ein/aus.</ZoneVisibilityToggleButton>
+  <ShowBeautyToggleButton>Schalte die Anzeige des Aussehens ein/aus.\n\nZeigt die Schönheit der Welt, wie sie ein Kolonist sehen würde, wenn er an der Position des Mauszeigers stehen würde.</ShowBeautyToggleButton>
   <AutoHomeRegionToggleButton>Schalte das automatische Hinzufügen der Heimzonen bei neuen Konstruktionen ein/aus.</AutoHomeRegionToggleButton>
   <CategorizedResourceReadoutToggleButton>Schalte die kategorisierte Rohstoffanzeige ein/aus.</CategorizedResourceReadoutToggleButton>
   
@@ -243,6 +247,15 @@
   <Quality>Qualität</Quality>
   <QualityDescription>Die Qualität eines Gegenstandes sagt aus, wie gut es hergestellt wurde.</QualityDescription>
   <QualityIs>Güte: {0}</QualityIs>
+    
+  <!-- Mood descriptions -->
+  <Mood_Broken>zusammengebrochen</Mood_Broken>
+  <Mood_AboutToBreak>nahe Zusammenbruch</Mood_AboutToBreak>
+  <Mood_OnEdge>gereizt</Mood_OnEdge>
+  <Mood_Stressed>gestresst</Mood_Stressed>
+  <Mood_Neutral>neutral</Mood_Neutral>
+	<Mood_Content>zufrieden</Mood_Content>
+  <Mood_Happy>glücklich</Mood_Happy>
   
   <!-- Game over -->
   <GameOverEveryoneDead>Alle sind tot oder fort. Diese Geschichte ist zu Ende.\n\nVielleicht findet jemand anderes einen Nutzen für die noch stehenden Ruinen.</GameOverEveryoneDead>

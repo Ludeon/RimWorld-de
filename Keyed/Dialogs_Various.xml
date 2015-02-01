@@ -28,8 +28,9 @@
   <PawnGainsName>Der Kolonist hört jetzt auf den Spitznamen {0}.</PawnGainsName>
   
   <!-- Save game incompatible warning -->
-    <SaveGameIncompatibleWarningText>Falsche Version: Die Karte wurde mit der RimWorld Version {0} gespeichert, du spielst aber gerade mit der Version {1}.\n\n Das Laden dieses Spielstandes wird sehr wahrscheinlich Fehler verursachen oder das Spiel sogar abstürzen lassen.</SaveGameIncompatibleWarningText>
-  <SaveGameIncompatibleWarningTitle>Der Spielstand ist Inkompatibel</SaveGameIncompatibleWarningTitle>
+  <VersionMismatch>Version mismatch</VersionMismatch>
+    <SaveGameIncompatibleWarningText>Warnung: Die Karte wurde mit der Rimworld Version {0} gespeichert, du spielst aber gerade mit der Version {1}.\n\n Das Laden dieses Spielstandes wird sehr wahrscheinlich Fehler verursachen oder das Spiel sogar abstürzen lassen.</SaveGameIncompatibleWarningText>
+  <WorldFileVersionMismatch>Warnung: Diese Welt wurde mit der Rimworld Version {0} erzeugt, du spielst aber gerade mit der Version {1}.\n\n Das Laden dieser Welt wird sehr wahrscheinlich Fehler verursachen oder das Spiel sogar abstürzen lassen. Wir empfehlen eine komplett neue Welt zu generieren.</WorldFileVersionMismatch>
   
   <!-- Resolution change dialog -->
   <ConfirmResolutionChange>Du hast die Bildschirm Einstellungen geändert. Sollen die Änderungen behalten werden?\n\nAutomatisches Zurücksetzen in {0}...</ConfirmResolutionChange>
@@ -67,7 +68,8 @@
   <RepeatCount>Wiederholen: {0}</RepeatCount>
   <Forever>Für immer</Forever>
   <IngredientSearchRadius>Zutaten-Such-Radius</IngredientSearchRadius>
-  <TargetCount>Produziere, bis du {0} hast</TargetCount>
+  <CurrentlyHave>Aktuell vorhanden</CurrentlyHave>
+  <CountingProducts>Zähle</CountingProducts>
   <Infinite>Unendlich</Infinite>
   
   <RecipeCannotHaveTargetCount>(Das Rezept kann keine maximale Anzahl haben, da es mehrere oder unvorhersehbare Produkte enthält)</RecipeCannotHaveTargetCount>
@@ -75,7 +77,8 @@
   <WorkAmount>Arbeitsaufwand</WorkAmount>
   <MinimumSkills>Minimale Fähigkeiten:</MinimumSkills>
   <BillRequires>Benötigt {0} {1}</BillRequires>
-  <BillRequiresMayVary>(Anzahl kann bei Gegenständen mit Nicht-Standard-Werten, wie z.B. Gold, variieren.)</BillRequiresMayVary>
+  <BillRequiresMayVary>Hinweis: Zutaten mit geringem Volumen, wie z.B. Gold, benötigen 20x so viel.</BillRequiresMayVary>
+  <ThisIsSmallVolume>Dieses ist eine Zutat mit geringem Volumen. Das bedeutet, dass jede 'Einheit' nur 1/20 des Volumens einer normalen Zutat hat. Damit das gleiche Zutatenvolumen erreicht wird, brauchst du also 20x mehr als gewöhnlich.</ThisIsSmallVolume>
   <UsableIngredients>brauchbare Zutaten</UsableIngredients>
   <DoXTimes>Mache X Mal</DoXTimes>
   <DoUntilYouHaveX>Mache bis du X hast</DoUntilYouHaveX>
