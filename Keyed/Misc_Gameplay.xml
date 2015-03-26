@@ -23,9 +23,9 @@
   <UntreatedLower>unbehandelt</UntreatedLower>
   <DevelopedImmunityLower>wurde immun</DevelopedImmunityLower>
   <InjuryRequiresTreatment>Kann ohne Behandlung nicht verheilen</InjuryRequiresTreatment>
-  <NextTreatmentAfter>Nächste Behandlung in {0} Tagen</NextTreatmentAfter>
+  <NextTreatmentIn>Nächste Behandlung in {0}</NextTreatmentIn>
   <MissingMedicalBillIngredient>keine {0}</MissingMedicalBillIngredient>
-  <ImmunityDevelopmentProgress>Fortschritt der Immunisierung</ImmunityDevelopmentProgress>
+  <Immunity>Immunität</Immunity>
   <Race>Rasse</Race>
   <Description>Beschreibung</Description>
   <Equipment>Ausrüstung</Equipment>
@@ -38,6 +38,8 @@
   <On>An</On>
   <Off>Aus</Off>
   <PowerSwitch_Power>Strom</PowerSwitch_Power>
+  <AreaLower>Gebiet</AreaLower>
+  <FunTolerances>Spaß Toleranzen</FunTolerances>
   
   <!-- Control -->
   <CannotOrderNonControlled>Kann unkontrolierten Einheiten nichts befehlen.</CannotOrderNonControlled>
@@ -80,17 +82,6 @@
     <!-- Generated recipes -->
     <RecipeMake>Stell {0} her</RecipeMake>
     <RecipeMakeJobString>Stelle {0} her.</RecipeMakeJobString>
-	
-	<!-- Status levels -->
-    <Mood>Stimmung</Mood>
-    <MoodTip>Die Stimmung wird verbessert, indem physische und psychische Wünsche erfüllt werden.\n\nWenn die Stimmung einer Person zu niedrig wird, kann sie einen Nervenzusammenbruch erleiden.</MoodTip>
-    <Food>Nahrung</Food>
-    <FoodTip>Nahrung repräsentiert, wie gut genährt eine Kreatur ist.\n\nWenn die Nahrung bei 0 ankommt, gibt es kontinuierlichen Schaden, da sie verhungert.</FoodTip>
-    <Rest>Erholung</Rest>
-    <RestTip>Erholung repräsentiert die Qualität der Entspannung und des Schlafes der Person.\n\nSie steigt zum Maximum, wenn jemand in einem Bett schläft. Außerhalb des Bettes fällt sie nach einer Weile.</RestTip>
-    <Environment>Umgebung</Environment>
-    <EnvironmentTip>Umgebung repräsentiert, wie angenehm die Person ihre Umgebung findet.\n\nUmgebung ist hoch, wenn die Person in einem geräumigen Zimmer mit schöner Dekoration ist. Es ist niedrig, wenn die Umgebung häßlich ist.</EnvironmentTip>
-    <Openness>Offenheit</Openness>
   
   
     <!-- Thoughts -->
@@ -166,11 +157,11 @@
   <Ingredients>Zutaten</Ingredients>
 
   <!-- Plants -->
-  <PercentGrowth>{0}% gewachsen</PercentGrowth>
-  <Growing>Wächst</Growing>
-  <NotGrowingNow>Wächst nicht. (Es muss {0} sein.)</NotGrowingNow>
-  <NotGrowingNowResting>Wächst nicht. (ruhend).</NotGrowingNowResting>
+  <PercentGrowth>{0}% gewachsen</GrowthRate>
+  <GrowthRate>Wachstumsrate</GrowthRate>
   <FullyGrownIn>Ist in {0} ausgewachsen.</FullyGrownIn>
+  <PlantNeedsLightLevel>Benötigte Lichtstärke</PlantNeedsLightLevel>
+  <PlantResting>Ruht</PlantResting>
   <OutOfIdealTemperatureRange>Außerhalb des optimalen Temperaturbereiches (wächst mit {0}% der normalen Geschwindigkeit)</OutOfIdealTemperatureRange>
   <OutOfIdealTemperatureRangeNotGrowing>Außerhalb des optimalen Temperaturbereiches (wächst nicht)</OutOfIdealTemperatureRangeNotGrowing>
   <ReadyToHarvest>Bereit zum Ernten.</ReadyToHarvest>
@@ -268,6 +259,15 @@
   <GameOverShipLaunched>Dein Raumschiff ist gestartet und hat die folgenden Kolonisten mitgenommen:\n\n{0}\nFolgende Kolonisten mussten zurückgelassen werden:\n\n{1}\nDeine Schiffs-KI wird versuchen das Raumschiff an einen sicheren Ort zu bringen.\n Vielleicht findet sie hier im System einen blühenden Planeten für euch. Oder sie unternimmt eine Jahrhunderte andauernde Reise zu einem anderen Stern. Es kann aber auch sein, dass sie sich entscheidet ein paar tausend Jahre unter dem Eis eines Asteroiden darauf zu warten, dass hier jemand eine neue Glitzerwelt aufbaut.\n\nDu wirst es erfahren, wenn du wieder erwachst..</GameOverShipLaunched>
   <GameOverKeepPlaying>Weiterspielen</GameOverKeepPlaying>
   <GameOverMainMenu>Hauptmenü</GameOverMainMenu>
+  
+  <!-- Generic lifespan -->
+  <LifespanExpiry>Verdirbt in:</LifespanExpiry>
+
+  <!-- JobDriver reports -->
+  <WatchingSunrise>Beobachtet Sonnenaufgang</WatchingSunrise>
+  <CloudWatching>Schaut Wolken zu</CloudWatching>
+  <WatchingSunset>Beobachtet Sonnenuntergang</WatchingSunset>
+  <Stargazing>Schaut Sternenhimmel an</Stargazing>
   
   
 </LanguageData>
