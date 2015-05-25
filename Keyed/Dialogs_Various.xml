@@ -14,7 +14,11 @@
   <SavedAs>Spiel als {0} gespeichert.</SavedAs>
   <NeedAName>Bitte einen Namen eingeben.</NeedAName>
   <LoadingLongEvent>Lade...</LoadingLongEvent>
-
+  <SaveIsFromDifferentGameVersion>Dies ist die Version {0}, aber der Spielstand ist von {1}. Das sind zwei komplett unterschiedliche Versionen.\n\nDen Spielstand zu laden wird sehr wahrscheinlich nicht funktionieren.</SaveIsFromDifferentGameVersion>
+  <SaveIsFromDifferentGameBuild>Dies ist die Version {0}, aber der Spielstand ist von {1}. Das ist ein unterschiedlicher Build.\n\nDiese Daten zu laden sollte eigentlich funktionieren.</SaveIsFromDifferentGameBuild>
+  <SaveIsFromThisGameBuild>Der Spielstand wurde mit der gleichen Version erstellt und sollte ohne Probleme funktionieren.</SaveIsFromThisGameBuild>
+  <SaveIsUnknownFormat>Die Spielstandsdaten sind in einem unbekannten Format und können garantiert nicht richtig geladen werden.</SaveIsUnknownFormat>
+  
   <!-- Colony naming-->
   <NameColonyMessage>Jeder weiß, dass ihr nicht lange hier bleiben wollt. Aber {0} ist der Meinung, dass die Kolonie trotzdem einen Namen bekommen sollte.\n\nWie soll sie heißen?</NameColonyMessage>
   <ColonyGainsName>Die Kolonie heißt jetzt {0}.</ColonyGainsName>
@@ -29,8 +33,10 @@
   
   <!-- Save game incompatible warning -->
   <VersionMismatch>Version mismatch</VersionMismatch>
-    <SaveGameIncompatibleWarningText>Warnung: Die Karte wurde mit der Rimworld Version {0} gespeichert, du spielst aber gerade mit der Version {1}.\n\n Das Laden dieses Spielstandes wird sehr wahrscheinlich Fehler verursachen oder das Spiel sogar abstürzen lassen.</SaveGameIncompatibleWarningText>
-  <WorldFileVersionMismatch>Warnung: Diese Welt wurde mit der Rimworld Version {0} erzeugt, du spielst aber gerade mit der Version {1}.\n\n Das Laden dieser Welt wird sehr wahrscheinlich Fehler verursachen oder das Spiel sogar abstürzen lassen. Wir empfehlen, eine komplett neue Welt zu generieren.</WorldFileVersionMismatch>
+    <SaveGameIncompatibleWarningText>Die Karte wurde mit der Rimworld Version {0} gespeichert, du spielst aber gerade mit der Version {1}.\n\n Das Laden dieses Spielstandes kann Fehler verursachen oder das Spiel sogar abstürzen lassen.</SaveGameIncompatibleWarningText>
+  <WorldFileVersionMismatch>Diese Welt wurde mit der Rimworld Version {0} erzeugt, du spielst aber gerade mit der Version {1}.\n\n Das Laden dieser Welt kann Fehler verursachen oder das Spiel sogar abstürzen lassen. Du solltest besser eine komplett neue Welt generieren.</WorldFileVersionMismatch>
+  <ModsMismatchWarningTitle>Geänderte Modifikationen</ModsMismatchWarningTitle>
+  <ModsMismatchWarningText>Die Karte wurde mit einem anderen Satz aktiver Modifikationen gespeichert. Das kann vielleicht Probleme verursachen, je nachdem, was genau diese Mods machen.\n\nDie Karte wurde mit den folgenden Modifikationen gespeichert (in dieser Reichenfolge):\n\n{0}\n\nDerzeit sind diese aktiv:\n\n{1}</ModsMismatchWarningText>
   
   <!-- Resolution change dialog -->
   <ConfirmResolutionChange>Du hast die Bildschirmeinstellungen geändert. Sollen die Änderungen behalten werden?\n\nAutomatisches Zurücksetzen in {0}...</ConfirmResolutionChange>
@@ -95,6 +101,7 @@
   <Accuracy>Genauigkeit</Accuracy>
   <BurstShotCount>Schüsse pro Salve</BurstShotCount>
   <WarmupTime>Aufwärmzeit</WarmupTime>
+  <MeleeWarmupTime>Nahkampfvorbereitungszeit</MeleeWarmupTime>
   <CooldownTime>Abkühlzeit</CooldownTime>
   <BurstShotFireRate>Schussfrequenz</BurstShotFireRate>
   <Range>Reichweite</Range>
