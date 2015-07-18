@@ -40,16 +40,27 @@
   <PowerSwitch_Power>Strom</PowerSwitch_Power>
   <JoyTolerances>Toleranzen Vergnügen</JoyTolerances>
   <BrokenLetterLabel>Zusammenbruch</BrokenLetterLabel>
+  <MilkFullness>Milchfülle</MilkFullness>
+  <EggProgress>Fortschritt Ei</EggProgress>
+  <Fertilized>Befruchtet</Fertilized>
   
     <!--TextMotes-->
   <Headshot>Kopfschuss</Headshot>
   <TextMoteTreatedPoorly>Schlecht behandelt\n{0} Chance</TextMoteTreatedPoorly>
   <TextMoteTreatedWell>Gut behandelt\n{0} Chance</TextMoteTreatedWell>
+  <HarvestFailed>Ernte\nfehlgeschlagen</HarvestFailed>
+  <TextMote_TameFail>Zähmung fehlgeschlagen\n{0} Chance</TextMote_TameFail>
+  <TextMote_TameSuccess>Gezähmt!\n{0} Chance</TextMote_TameSuccess>
   
   <!-- Areas -->
+  <Home>Heimat</Home>
+  <NoRoof>Kein Dach</NoRoof>
+  <SnowClear>Schnee räumen</SnowClear>
   <AreaDefaultLabel>Gebiet {0}</AreaDefaultLabel>
+  <AreaAnimalDefaultLabel>Tiergebiet {0}</AreaAnimalDefaultLabel>
   <NoAreaAllowed>Unbegrenzt</NoAreaAllowed>
   <NewArea>Neues Gebiet</NewArea>
+  <NewAreaAnimal>Neues Tiergebiet</NewAreaAnimal>
   <InvertArea>Invertieren</InvertArea>
   
   <!-- Control -->
@@ -111,11 +122,9 @@
   <MentalBreakThresholdSoft>Schwelle zum leichten Nervenzusammenbruch</MentalBreakThresholdSoft>
   
     <!-- Pawn info readout -->
-    <hitPoints>Trefferpunkte</hitPoints>
-    <PawnMainDescWithFactionGendered>{1} der {2}, {0}</PawnMainDescWithFactionGendered>
     <PawnMainDescGendered>{1}, {0}</PawnMainDescGendered>
-    <PawnMainDescWithFactionGenderless>{0} der {1}</PawnMainDescWithFactionGenderless>
-    <PawnMainDescGenderless>{0}</PawnMainDescGenderless>
+    <PawnMainDescFactionedWrap>{0} der {1}</PawnMainDescFactionedWrap>
+    <PawnMainDescLifestageWrap>{1} {0}</PawnMainDescLifestageWrap>
     <Faction>Fraktion</Faction>
     <Equipped>Ausgerüstet</Equipped>
     <EquippedNothing>Nichts</EquippedNothing>
@@ -212,8 +221,10 @@
   <!-- Buttons -->
   <ZoneVisibilityToggleButton>Schalte die Sichtbarkeit der Zonen ein/aus.</ZoneVisibilityToggleButton>
   <ShowBeautyToggleButton>Schalte das Aussehen ein/aus.\n\nZeigt das Aussehen der Welt in Zahlen, wie ein Kolonist es sehen würde, wenn er an der Position des Mauszeigers steht.</ShowBeautyToggleButton>
+  <ShowRoomStatsToggleButton>Schalte die Raumstatusanzeige ein/aus.\n\nZeigt verschiedene Werte des Raumes unter dem Mauszeiger an.</ShowRoomStatsToggleButton>
   <AutoHomeAreaToggleButton>Schalte das automatische Erweitern des Heimgebietes bei neuen Konstruktionen ein/aus.</AutoHomeAreaToggleButton>
   <CategorizedResourceReadoutToggleButton>Schalte die kategorisierte Rohstoffanzeige ein/aus.</CategorizedResourceReadoutToggleButton>
+  <ShowAnimalNamesToggleButton>Schalte die Anzeige von Tiernamen ein/aus.</ShowAnimalNamesToggleButton>
   
   <!-- Fire -->
   <Fire>Feuer</Fire>
@@ -255,6 +266,9 @@
   <UseNeurotrainer>Benutze Neurotrainer zum Lernen von {0}</UseNeurotrainer>
   <NeurotrainerUsed>{0} benutzte einen Neurotrainer für {1} um von Level {2} auf Level {3} aufzusteigen.</NeurotrainerUsed>
   
+  <!-- Artifact -->
+  <UseArtifact>Aktiviere</UseArtifact>
+  
   <!-- Minification -->
   <Installed>Installiert</Installed>
   <NotInstalled>Nicht installiert</NotInstalled>
@@ -294,5 +308,8 @@
   <TrapArmed>Scharf</TrapArmed>
   <TrapNotArmed>Ausgelöst</TrapNotArmed>
   <TrapRearmingCost>Reaktivierungskosten: {0}</TrapRearmingCost>
+  
+  <!-- Passive equipment -->
+  <InactivePassiveEquipment>inaktiv</InactivePassiveEquipment>
   
 </LanguageData>
