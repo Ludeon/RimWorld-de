@@ -7,7 +7,28 @@
 
   <!-- Recovered from errors caused by mods -->
   <RecoveredFromErrorsDialogTitle>Wiederhergestellt von inkompatiblen oder beschädigten Mod-Fehlern</RecoveredFromErrorsDialogTitle>
-  <RecoveredFromErrorsText>Es sieht so aus, als wenn von den aktiven Mods einige Fehler verursachen.\n\nSie waren inkompatible zueinander, erstellt für eine andere RimWorld-Version oder beschädigt.\n\nAlle Mods wurden deaktiviert, können aber im Mod-Dialog wieder aktiviert werden.</RecoveredFromErrorsText>
+  <RecoveredFromErrorsText>Es sieht so aus, als wenn von den aktiven Mods einige Fehler verursachen.\n\nSie waren inkompatibel zueinander, erstellt für eine andere RimWorld-Version oder beschädigt.\n\nAlle Mods wurden deaktiviert, können aber im Mod-Dialog wieder aktiviert werden.</RecoveredFromErrorsText>
+  
+  <!-- Errors during loading -->
+  <ErrorWhileLoadingAssetsTitle>Fehler beim Laden der Komponenten</ErrorWhileLoadingAssetsTitle>
+  <ErrorWhileLoadingAssets>Beim Laden der Spielkomponenten ist ein Fehler aufgetreten. Siehe in das Logfile um zusätzliche Informationen zu erhalten.</ErrorWhileLoadingAssets>
+  <ErrorWhileLoadingAssets_ModsInfo>Das Spiel läuft aktuell mit Modifikationen - Eventuell sind sie die Ursache des Problems.</ErrorWhileLoadingAssets_ModsInfo>
+  <ErrorWhileGeneratingMapTitle>Fehler beim Erzeugen der Karte</ErrorWhileGeneratingMapTitle>
+  <ErrorWhileGeneratingMap>Beim Generieren einer neuen Karte ist ein Fehler aufgetreten. Siehe in das Logfile um zusätzliche Informationen zu erhalten.</ErrorWhileGeneratingMap>
+  <ErrorWhileLoadingMapTitle>Fehler beim Laden der Karte</ErrorWhileLoadingMapTitle>
+  <ErrorWhileLoadingMap>Beim Laden der Karte ist ein Fehler aufgetreten. Siehe in das Logfile um zusätzliche Informationen zu erhalten.</ErrorWhileLoadingMap>
+  
+  <!-- Long events -->
+  <InitializingInterface>Initialisiere Oberfläche</InitializingInterface>
+  <UnloadingUnusedAssets>Entferne unbenutzte Komponenten</UnloadingUnusedAssets>
+  <LoadingAllActiveMods>Lade alle aktiven Modifikationen</LoadingAllActiveMods>
+  <LoadingDefs>Lade Defs</LoadingDefs>
+  <LoadingAssets>Lade Komponenten</LoadingAssets>
+  <Initializing>Initialisiere</Initializing>
+  <LoadingWorld>Lade Welt</LoadingWorld>
+  <LoadingMap>Lade Karte</LoadingMap>
+  <InitializingMap>Initialisiere Karte</InitializingMap>
+  <SpawningAllObjects>Erzeuge Objekte</SpawningAllObjects>
   
   <!-- Save/load -->
   <SaveGameButton>Speichern</SaveGameButton>
@@ -17,7 +38,9 @@
   <DeleteThisSavegame>Lösche diesen Spielstand.</DeleteThisSavegame>
   <SavedAs>Spiel als {0} gespeichert.</SavedAs>
   <NeedAName>Bitte einen Namen eingeben.</NeedAName>
-  <LoadingLongEvent>Lade...</LoadingLongEvent>
+  <LoadingLongEvent>Lade</LoadingLongEvent>
+  <SavingLongEvent>Speichere</SavingLongEvent>
+  <PermadeathModeSaveSuffix>(Hardcore)</PermadeathModeSaveSuffix>
   <SaveIsFromDifferentGameVersion>Dies ist die Version {0}, aber der Spielstand ist von {1}. Das sind zwei komplett unterschiedliche Versionen.\n\nDen Spielstand zu laden wird sehr wahrscheinlich nicht funktionieren.</SaveIsFromDifferentGameVersion>
   <SaveIsFromDifferentGameBuild>Dies ist die Version {0}, aber der Spielstand ist von {1}. Das ist ein unterschiedlicher Build.\n\nDiese Daten zu laden sollte eigentlich funktionieren.</SaveIsFromDifferentGameBuild>
   <SaveIsFromThisGameBuild>Der Spielstand wurde mit der gleichen Version erstellt und sollte ohne Probleme funktionieren.</SaveIsFromThisGameBuild>
@@ -55,10 +78,14 @@
   <Unresearched>Unerforscht</Unresearched>
   <Finished>Abgeschlossen</Finished>
   <InProgress>Wird erforscht</InProgress>
-   <ResearchMenuWithoutBench>Solange du keinen LABORTISCH gebaut hast, werden deine Kolonisten nicht in der Lage sein, etwas zu erforschen.\n\nTrotzdem kannst du dir die Möglichkeiten ansehen und schon einmal ein Projekt auswählen.</ResearchMenuWithoutBench>
+  <Locked>Gesperrt</Locked>
+  <ResearchMenuWithoutBench>Solange du keinen LABORTISCH gebaut hast, werden deine Kolonisten nicht in der Lage sein, etwas zu erforschen.\n\nTrotzdem kannst du dir die Möglichkeiten für ein Projekt schon einmal ansehen.</ResearchMenuWithoutBench>
+  <ResearchPrerequisites>Forschungsvoraussetzungen</ResearchPrerequisites>
+  <RequiredResearchBench>Benötigt Labortisch</RequiredResearchBench>
+  <RequiredResearchBenchFacilities>Benötigt Laborausstattung</RequiredResearchBenchFacilities>  
 
   <!-- Advanced game start options -->
-  <MapTemperatureDangerWarning>Warnung: Du wirst in einer winterlichen Umgebung landen. Es wird hart bis nahezu unmöglich, hier zu überleben. Wenn du nicht vorhast, dich einer extremen Herausforderung zu stellen, wähle einen anderen Landeplatz oder einen wärmeren Monat.</MapTemperatureDangerWarning>  
+  <MapTemperatureDangerWarning>Warnung: Du wirst in einer winterlichen Umgebung landen. Es wird hart bis nahezu unmöglich hier zu überleben. Wenn du nicht vorhast dich einer extremen Herausforderung zu stellen, wähle einen anderen Landeplatz oder einen wärmeren Monat.</MapTemperatureDangerWarning>  
   <MapSizePerformanceWarning>Warnung: Die Leistung kann auf größeren Karten schlechter werden, wenn der Rechner die Leistung nicht aufbringen kann.\n\nKartengröße Riesig ist ungetestet, aber wird sich mit hoher Wahrscheinlichkeit nicht gut spielen lassen.</MapSizePerformanceWarning>
   <MapSize>Kartengröße</MapSize>
   <MapSizeDesc>{0}x{0} ({1} Felder)</MapSizeDesc>
@@ -66,8 +93,10 @@
   <MapSizeMedium>Mittel</MapSizeMedium>
   <MapSizeLarge>Groß</MapSizeLarge>
   <MapSizeExtreme>Riesig</MapSizeExtreme>
-  <MapStartMonth>Starte im Monat</MapStartMonth>
-  <MapStartMonthDefault>Auto</MapStartMonthDefault>
+  <MapStartSeason>Startjahreszeit:</MapStartSeason>
+  <MapStartSeasonDefault>Auto</MapStartSeasonDefault>
+  <PermadeathMode>Hardcore Modus</PermadeathMode>
+  <PermadeathModeInfo>Im Hardcore Modus gibt es nur einen Spielstand und es kann nur beim Beenden des Spiels gespeichert werden. Das Spiel neu laden um einen Fehler zu korrigieren gibt es nicht. Und wenn deine Kolonie stirbt, war es das.\n\nDies ist der Modus in dem RimWorld gespielt werden soll. Bei dem jede dramaturgische Änderung ihre volle, nachhaltige Wirkung entfalten kann. Sei sie nun tragisch oder hoffnungsvoll.</PermadeathModeInfo>
 
   
   <!-- Bill config -->
@@ -132,19 +161,23 @@
   <MoodChange>Stimmungsschwankung</MoodChange>
   <Wildness>Wildheit</Wildness>
   <WildnessExplanation>Wildere Tiere sind von natur aus schwieriger zu zähmen, trainieren oder auch nur mit ihnen umzugehen.</WildnessExplanation>
+  <AnimalFilthRate>Tierverschmutzungsrate</AnimalFilthRate>
+  <AnimalFilthRateExplanation>Tiere erzeugen Schmutz wenn sie über konstruierten Boden laufen. Dieses gibt die durchschnittliche Anzahl an Dreck pro {0} Zellen an, über die die Kreatur läuft\n\nGrößere und weniger Haustier-Ähnliche Tiere verursachen mehr Schmutz.</AnimalFilthRateExplanation>
+  <TimeRecordsCategory>Zeit</TimeRecordsCategory>
+  <MiscRecordsCategory>Versch.</MiscRecordsCategory>
  
   <!-- Trade -->
-  <DragToTrade>Zum handeln\nZahl ziehen</DragToTrade>
+  <DragToTrade>Zum Handeln\ndie Zahl ziehen</DragToTrade>
   <BuyPriceDesc>Zu diesem Preis kannst du das kaufen.</BuyPriceDesc>
   <SellPriceDesc>Zu diesen Preis kannst du das verkaufen.</SellPriceDesc>
   <PriceTypeDesc>Der Preis dieses Gegenstandes ist {0}.</PriceTypeDesc>
-  <ColonyCount>Anzahl dieser Gegenstände, die die Kolonie zum Handeln hat.\n\nDu kannst nur mit orbitalen Händlern interagieren, wenn die zu handelnden Waren im Freien und im angezeigten Bereich eines orbitalen Funkfeuers gelagert werden.</ColonyCount>
+  <ColonyCount>Anzahl dieser Gegenstände, die die Kolonie zum Handeln hat.\n\nDu kannst nur mit orbitalen Händlern interagieren, wenn die zu handelnden Waren im angezeigten Bereich eines orbitalen Funkfeuers gelagert werden.</ColonyCount>
   <TraderCount>Anzahl dieser Gegenstände, die der Händler zum Handeln hat.</TraderCount>
   <AcceptButton>Annehmen</AcceptButton>
   <ResetButton>Reset</ResetButton>
   <CancelButton>Abbruch</CancelButton>
   <YourTradeableSilver>Dein handelbares Silber: {0}</YourTradeableSilver>
-  <YourTradeableSilverTip>Du kannst nur mit Silber handeln, dass im Freien und in Reichweite des orbitalen Funkfeuers ist.</YourTradeableSilverTip>
+  <YourTradeableSilverTip>Du kannst nur mit Silber handeln, das in Reichweite des orbitalen Funkfeuers ist.</YourTradeableSilverTip>
   <TraderHasNoMore>Händler hat nichts mehr.</TraderHasNoMore>
   <ColonyHasNoMore>Nichts mehr zum Verkaufen.</ColonyHasNoMore>
   <TraderWillNotTrade>Der Händler ist nicht bereit, hiermit zu handeln.</TraderWillNotTrade>

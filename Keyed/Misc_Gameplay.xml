@@ -9,6 +9,7 @@
   <ForColonistUse>Für Kolonisten</ForColonistUse>
   <MedicalBed>Krankenbett</MedicalBed>
   <Owner>Besitzer</Owner>
+  <Owners>Besitzer</Owners>
   <AssignedColonist>Zugewiesener Kolonist</AssignedColonist>
   <Nobody>Niemand</Nobody>
   <Unowned>Frei</Unowned>
@@ -40,13 +41,19 @@
   <Off>Aus</Off>
   <PowerSwitch_Power>Strom</PowerSwitch_Power>
   <JoyTolerances>Toleranzen Vergnügen</JoyTolerances>
-  <BrokenLetterLabel>Zusammenbruch</BrokenLetterLabel>
+  <MentalStateLetterLabel>Geistiger Zustand</MentalStateLetterLabel>
   <MilkFullness>Milchfüllung</MilkFullness>
   <WoolGrowth>Wachstum Wolle</WoolGrowth>
   <EggProgress>Fortschritt Ei</EggProgress>
   <Fertilized>Befruchtet</Fertilized>
   <ProgressStoppedUntilFertilized>Fortschritt gestoppt, wartet auf Befruchtung</ProgressStoppedUntilFertilized>
   <SkillTooLow>benötigt {0} auf Level {2}, hat {1}</SkillTooLow>
+  <EggDamagedEmbryo>Geschädigter Embryo</EggDamagedEmbryo>
+  <CorpsePercentMissing>Fehlende Körperteile</CorpsePercentMissing>
+  <HiveReproducesIn>Erweitert sich in</HiveReproducesIn>
+  <BrokenDown>Defekt</BrokenDown>
+  <BondBrackets>(verbunden)</BondBrackets>
+  <Fuel>Kraftstoff</Fuel>
   
     <!--TextMotes-->
   <Headshot>Kopfschuss</Headshot>
@@ -60,6 +67,7 @@
   <TextMote_TameSuccess>Gezähmt!\n{0} Chance</TextMote_TameSuccess>
   <TextMote_TrainFail>Training erfolglos: {0}\n{1} Chance</TextMote_TrainFail>
   <TextMote_TrainSuccess>Training erfolgreich: {0}\n{1} Chance</TextMote_TrainSuccess>
+  <TextMote_FixBrokenDownBuildingFail>Reparatur\nfehlgeschlagen</TextMote_FixBrokenDownBuildingFail>
   
   <!-- Areas -->
   <Home>Heimat</Home>
@@ -105,6 +113,7 @@
     <DeliveringFood>Bringt Essen zu {0}.</DeliveringFood>
     <UsingVerb>Benutzt {0} an {1}.</UsingVerb>
     <AreaLower>Gebiet</AreaLower>
+    <ReportCowering>Kauernd.</ReportCowering>
 	
 	<!-- Shooting report -->
 	<WeaponMissRadius>Waffenstreuung</WeaponMissRadius>
@@ -145,6 +154,10 @@
     <!-- Inspector general stuff -->
     <SelectNextInSquareTip>Wählt den nächsten Gegenstand im gleichen Feld aus.\n\nSchnellwahl: {0}\nEs geht auch, indem du zweimal auf das gleiche Feld klickst, kein Doppelklick!</SelectNextInSquareTip>
     <DefInfoTip>Zeige Informationen zu diesem Objekt.</DefInfoTip>
+  
+  <!-- Hostility response -->
+  <HostilityReponseTip>Ändere wie auf Gegner reagiert wird, solange der Kolonist nicht kommandiert wird.</HostilityReponseTip>
+  <HostilityResponseCurrentMode>Aktueller Modus</HostilityResponseCurrentMode>
   
   	<!-- like 'Blood of John' -->
 	<OfLower>von</OfLower>
@@ -190,6 +203,7 @@
   <CurrentlyRefrigerated>Gekühlt (verdirbt in {0})</CurrentlyRefrigerated>
   <NotRefrigerated>Ungekühlt (verdirbt in {0})</NotRefrigerated>
   <OverADecade>über ein Jahrzehnt</OverADecade>
+  <LessThanADay>weniger als ein Tag</LessThanADay>
 
   <!-- Meal -->
   <Ingredients>Zutaten</Ingredients>
@@ -205,7 +219,7 @@
   <ReadyToHarvest>Bereit zum Ernten.</ReadyToHarvest>
   <Mature>Ausgewachsen.</Mature>
   <SeedLabel>{0} Samen</SeedLabel>
-  <OutdoorGrowingPeriod>Wachstumsperiode: {0}</OutdoorGrowingPeriod>
+  <OutdoorGrowingPeriod>Wachstumsperiode:\n{0}</OutdoorGrowingPeriod>
   <NoGrowingPeriod>Niemals</NoGrowingPeriod>
   <GrowYearRound>Ganzjährig</GrowYearRound>
   <GrowSeasonHereNow>Anbausaison hat begonnen.</GrowSeasonHereNow>
@@ -279,6 +293,9 @@
   <!-- Artifact -->
   <UseArtifact>Aktiviere</UseArtifact>
   
+  <!-- Firefoam popper -->
+  <TriggerFirefoamPopper>Löschschaumwerfer auslösen</TriggerFirefoamPopper>
+  
   <!-- Minification -->
   <Installed>Installiert</Installed>
   <NotInstalled>Nicht installiert</NotInstalled>
@@ -297,7 +314,7 @@
   <QualityIs>Qualität: {0}</QualityIs>
     
   <!-- Mood descriptions -->
-  <Mood_Broken>Kollaps</Mood_Broken>
+  <Mood_MentalState>Geistiger Zustand</Mood_MentalState>
   <Mood_AboutToBreak>nahe Kollaps</Mood_AboutToBreak>
   <Mood_OnEdge>gereizt</Mood_OnEdge>
   <Mood_Stressed>gestresst</Mood_Stressed>
@@ -321,5 +338,11 @@
   
   <!-- Facilities -->
   <InactiveFacility>inaktiv</InactiveFacility>
+  
+  <!-- Hediffs growth modes -->
+  <DiseaseGrowthModeChanged_Growing>{0}'s {1} wächst.</DiseaseGrowthModeChanged_Growing>
+  <DiseaseGrowthModeChanged_Stable>{0}'s {1} ist stabil.</DiseaseGrowthModeChanged_Stable>
+  <DiseaseGrowthModeChanged_Remission>{0}'s {1} ist am Abklingen.</DiseaseGrowthModeChanged_Remission>
+
   
 </LanguageData>

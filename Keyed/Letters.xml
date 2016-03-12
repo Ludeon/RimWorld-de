@@ -33,8 +33,8 @@
   <BirthdayBiologicalAgeInjuries>{0} hat das biologische Alter von {1} Jahren erreicht.\n\nFolgende altersbedingte Krankheiten wurden bei {0} festgestellt:\n{2}</BirthdayBiologicalAgeInjuries>
 
   <LetterLabelNewDisease>Krankheit</LetterLabelNewDisease>
-  <NewDisease>{0} ist an {1} erkrankt.\nStelle sicher, dass du ein Krankenbett und einen Arzt hast. Sorge dafür, dass {0} eine vernünftige Behandlung bekommt und so viel Zeit wie möglich im Bett verbringt, um sich schnell zu erholen.</NewDisease>
-  <NewPartDisease>{0} hat eine Infektion im {1} bekommen.\nStelle sicher, dass du ein Krankenbett und einen Arzt hast. Sorge dafür, dass {0} eine vernünftige Behandlung bekommt und so viel Zeit wie möglich im Bett verbringt, um sich schnell zu erholen.</NewPartDisease>
+  <NewDisease>{0} ist an {1} erkrankt.\nStelle sicher, dass du ein Krankenbett und einen Arzt hast. Sorge dafür, dass {2} eine vernünftige Behandlung bekommt und so viel Zeit wie möglich im Bett verbringt, um sich schnell zu erholen.</NewDisease>
+  <NewPartDisease>{0} hat eine Infektion im {1} bekommen.\nStelle sicher, dass du ein Krankenbett und einen Arzt hast. Sorge dafür, dass {2} eine vernünftige Behandlung bekommt und so viel Zeit wie möglich im Bett verbringt, um sich schnell zu erholen.</NewPartDisease>
   
   <LetterLabelAncientShrineWarning>Antiker Schrein</LetterLabelAncientShrineWarning>
   <AncientShrineWarning>Als {0} sich der antiken Wand nähert, überkommt HIM eine unheilvolle Vorahnung. HECAP ist sich nicht sicher, warum, aber HE spürt, dass sich in dieser verstaubten Ruine eine große Gefahr verbergen könnte.</AncientShrineWarning>
@@ -49,13 +49,57 @@
   <LetterFriendlyTrapSprungLabel>{0} löst Falle aus</LetterFriendlyTrapSprungLabel>
   <LetterFriendlyTrapSprung>{0} hat versehentlich eine Falle ausgelöst und wurde verletzt.</LetterFriendlyTrapSprung>
 
-  <LetterHealthComplications>{0} hat {1} entwickelt, aufgrund Komplikationen bei {2}.</LetterHealthComplications>
+  <LetterHealthComplications>{0} hat eine Krankheit bekommen: {1}\n\nDieses ist eine Begleiterscheinung aufgrund von Komplikationen bei {2}.</LetterHealthComplications>
   <LetterHealthComplicationsLabel>{0} {1}</LetterHealthComplicationsLabel>
+  
+  <LetterHediffFromRandomHediffGiver>{0} hat eine Krankheit bekommen: {1}.</LetterHediffFromRandomHediffGiver>
+  <LetterHediffFromRandomHediffGiverLabel>{0} {1}</LetterHediffFromRandomHediffGiverLabel>
+  
+  <LetterLeadersDeathLabel>Anführers Tod</LetterLeadersDeathLabel>
+  <LetterLeadersDeath>Anführer {0} der Fraktion {1} ist gestorben. Als Nachfolger wurde {2} bestimmt.</LetterLeadersDeath>
+  
+  <!-- Family -->
+  <LetterLabelNoticedFamilyMembers>Familie</LetterLabelNoticedFamilyMembers>
+  <LetterFamilyMembersRaidEnemy>In der Gruppe von {0} sind Familienangehörige deiner Kolonisten oder Gefangenen.\n\nBeachte aber, dass sie, auch wenn sie miteinander verwandt sind, aufgrund der schlechten Beziehungen zwischen ihren Fraktionen trotzdem gegeneinander Kämpfen werden.\n\nDie Familienmitglieder sind:</LetterFamilyMembersRaidEnemy>
+  <LetterFamilyMembersRaidFriendly>In der befreundeten Besuchergruppe der {0} sind Familienangehörige deiner Kolonisten oder Gefangenen:</LetterFamilyMembersRaidFriendly>
+  <LetterFamilyMembersNeutralGroup>In der Besuchergruppe der {0} sind Familienangehörige deiner Kolonisten oder Gefangenen:</LetterFamilyMembersNeutralGroup>
+  <LetterFamilyMembersTraderShipSlaves>Der orbitale Händler verkäuft Familienangehörige deiner Kolonisten oder Gefangenen:</LetterFamilyMembersTraderShipSlaves>
+  
+  <FamilyLetterAppendedSuffix>(Familie)</FamilyLetterAppendedSuffix>
+  <FamilyLetterAppendedTextColonist>NAME ist ein Familienmitglied eines Kolonisten. HECAP ist {0}'s {1}.</FamilyLetterAppendedTextColonist>
+  <FamilyLetterAppendedTextPrisoner>NAME ist ein Familienmitglied eines Gefangenen. HECAP ist {0}'s {1}.</FamilyLetterAppendedTextPrisoner>
+  
+  <!-- Attempt romance / propose interaction -->
+  <LetterLabelAffair>Verhältnis</LetterLabelAffair>
+  <LetterAffair>{0}, mit {1} verheiratet, hat ein Verhältnis mit {2}.</LetterAffair>
+  <LetterLabelNewLovers>Neue Liebhaber</LetterLabelNewLovers>
+  <LetterNewLovers>{0} und {1} haben sich gefunden und sind jetzt Geliebte.</LetterNewLovers>
+  <LetterNoLongerLovers>{0} und {1} haben ihre Beziehung beendet.</LetterNoLongerLovers>
+  <LetterLabelAcceptedProposal>Hochzeit steht an!</LetterLabelAcceptedProposal>
+  <LetterLabelRejectedProposal>Antrag abgelehnt</LetterLabelRejectedProposal>
+  <LetterAcceptedProposal>{1} hat den Heiratsantrag von {0} angenommen.\n\nIrgendwann in den kommenden Tagen oder Jahreszeiten werden sie ihre Hochzeitszeremonie abhalten und alle Kolonisten dazu einladen. Überleg die einen Hochzeitsplatz aufzustellen wenn du kontrollieren willst, wo die Zeremonie stattfindet.</LetterAcceptedProposal>
+  <LetterRejectedProposal>{1} hat den Heiratsantrag von {0} abgelehnt. {0} wird deswegen unglücklich sein.</LetterRejectedProposal>
   
   <!-- Generalized letter labels -->
   <LetterLabelRelationsChangeGood>Ruf (positiv)</LetterLabelRelationsChangeGood>
   <LetterLabelRelationsChangeBad>Ruf (negativ)</LetterLabelRelationsChangeBad>
   <LetterLabelShortCircuit>Zzztt...</LetterLabelShortCircuit>
   <LetterLabelMentalBreakdown>Nervenzusammenbruch</LetterLabelMentalBreakdown>
+  
+  
+  <!-- Bonded animals -->
+  <LetterLabelBondedAnimalDied>Verbundenes Tier gestorben</LetterLabelBondedAnimalDied>
+  <LetterBondedAnimalDied>{0}, verbunden mit {1}, ist gestorben. Das wird die Laune von {1} beeinflussen.</LetterBondedAnimalDied>
+  <LetterNamedBondedAnimalDied>{0} benannt {1}, verbunden mit {2}, ist gestorben. Das wird die Laune von {2} beeinflussen.</LetterNamedBondedAnimalDied>
+  <LetterBondedAnimalDiedMulti>{0} ist gestorben. Es wird die Laune der folgenden Leute beeinflussen:\n\n{1}</LetterBondedAnimalDiedMulti>
+  <LetterNamedBondedAnimalDiedMulti>{0} benannt {1} ist gestorben. Es wird die Laune der folgenden Leute beeinflussen:\n\n{2}</LetterNamedBondedAnimalDiedMulti>
+
+  <!-- Prison break -->
+  <LetterLabelPrisonBreak>Gefängnisausbruch</LetterLabelPrisonBreak>
+  <LetterPrisonBreak>Gefangene haben einen Ausbruchsversuch gestartet! Irgendwie haben sie es geschafft das Türschloss zu knacken und sind jetzt auf ihrem Weg in die Freiheit. Sie können Waffen suchen, kämpfen oder versuchen zu fliehen. Diese Gefangenen sind beteiligt:\n\n{0}\n\nGefangene versuchen eher einen Ausbruch, wenn sie unglücklich, zahlreich und gesund sind.</LetterPrisonBreak>
+  
+  <!-- Party -->
+  <LetterLabelNewParty>Party</LetterLabelNewParty>
+  <LetterNewParty>{0} schmeißt eine Party! Jeder der dort hingeht verbessert seine Laune und soziale Energie, und bekommt einen anhaltenden Stimmungsboost.</LetterNewParty>
   
 </LanguageData>
