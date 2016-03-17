@@ -1,33 +1,32 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
 
   <CommandForbiddenDesc>Verboten - Kolonisten werden hiermit nicht interagieren.</CommandForbiddenDesc>
   <CommandNotForbiddenDesc>Nicht Verboten - Kolonisten werden vielleicht hiermit interagieren.</CommandNotForbiddenDesc>
-	
+
   <!-- Power -->
   <CommandTogglePowerLabel>Ein/Aus</CommandTogglePowerLabel>
   <CommandTogglePowerDesc>Ein-/Ausschalten.</CommandTogglePowerDesc>
   
   <CommandDesignateTogglePowerLabel>Strom ein/aus</CommandDesignateTogglePowerLabel>
   <CommandDesignateTogglePowerDesc>Veranlasse, dass bei diesem Gegenstand die Stromversorgung umgeschaltet wird. Ein Kolonist wird bald kommen und den Schalter umlegen.</CommandDesignateTogglePowerDesc>
-  
-  <CommandTryReconnectLabel>Neu verbinden</CommandTryReconnectLabel>
-  <CommandTryReconnectDesc>Versuche, auf ein anderes Stromnetz innerhalb meiner Reichweite zu wechseln. Das ist nützlich, wenn ich an einem stromlosen Netz bin, aber ein stromführendes in der Nähe ist.</CommandTryReconnectDesc>
 
+  <CommandTryReconnectLabel>Neu verbinden</CommandTryReconnectLabel>
+  <CommandTryReconnectDesc>Versuche, das Objekt mit einem anderen Stromnetz innerhalb seiner Reichweite zu verbinden. Das ist z. B. nützlich, wenn man das Objekt, das gerade mit einem inaktiven Stromnetz verbunden ist, mit einem aktiven Stromnetz verbinden will.</CommandTryReconnectDesc>
 
   <CommandGatherSpotToggleLabel>Sammelpunkt</CommandGatherSpotToggleLabel>
   <CommandGatherSpotToggleDescActive>Aktiv - Kolonisten werden sich bei diesem Objekt versammeln.</CommandGatherSpotToggleDescActive>
   <CommandGatherSpotToggleDescInactive>Inaktiv - Kolonisten werden sich nicht bei diesem Objekt versammeln.</CommandGatherSpotToggleDescInactive>
-  
+
   <!-- Drafting -->
-  <CommandDraftLabel>Waffe ziehen</CommandDraftLabel>
-  <CommandUndraftLabel>Waffe wegstecken</CommandUndraftLabel>
-  <CommandToggleDraftDesc>Schalte Militärdienst ein/aus.\n\nKolonisten mit gezogener Waffe können schießen. Sie werden jedoch nicht arbeiten, essen oder Pause machen.</CommandToggleDraftDesc>
+
+  <CommandDraftLabel>Kampfmodus</CommandDraftLabel>
+  <CommandUndraftLabel>Kampfmodus beenden</CommandUndraftLabel>
+  <CommandToggleDraftDesc>Schaltet den Kampfmodus ein/aus.\n\nKolonisten im Kampfmodus können direkt gesteuert werden. Sie werden jedoch nicht arbeiten, essen oder Pause machen.</CommandToggleDraftDesc>
   <IsIncapped>{0} ist arbeitsunfähig.</IsIncapped>
 
   <CommandCancelConstructionLabel>Abbrechen</CommandCancelConstructionLabel>
   <CommandCancelConstructionDesc>Konstruktion abbrechen.</CommandCancelConstructionDesc>
-
 
   <CommandGetOutOfBedLabel>Steh auf</CommandGetOutOfBedLabel>
   <CommandGetOutOfBedDesc>Stehe auf und verlasse das aktuelle Bett.</CommandGetOutOfBedDesc>
@@ -44,15 +43,13 @@
   <CommandBedSetForColonistsLabel>Kolonisten</CommandBedSetForColonistsLabel>
   <CommandBedSetForColonistsDesc>Markiere alle Betten in dem Raum als Kolonistenbetten.</CommandBedSetForColonistsDesc>
   <CommandBedSetAsMedicalLabel>Krankenbett</CommandBedSetAsMedicalLabel>
-  <CommandBedSetAsMedicalDesc> Deklariere dieses Bett für den medizinischen Gebrauch.</CommandBedSetAsMedicalDesc>
+  <CommandBedSetAsMedicalDesc>Deklariere dieses Bett für den medizinischen Gebrauch.</CommandBedSetAsMedicalDesc>
   <CommandBedSetAsNonMedicalLabel>Kein Krankenbett</CommandBedSetAsNonMedicalLabel>
   <CommandBedSetAsNonMedicalDesc> Gibt dieses Bett für den nicht-medizinischen Gebrauch frei.</CommandBedSetAsNonMedicalDesc>
   <TurningOnPrisonerBedWarning>Das Einschalten des Gefängnis-Modus betrifft den kompletten Raum. (Kolonisten und Gefangene können nicht im selben Raum schlafen.)\n\nDiese Leute verlieren ihre Betten:</TurningOnPrisonerBedWarning>
   <TurningOffPrisonerBedWarning>Das Ausschalten des Gefängnis-Modus betrifft den kompletten Raum. (Kolonisten und Gefangene können nicht im selben Raum schlafen.)\n\nDiese Leute verlieren ihre Betten:</TurningOffPrisonerBedWarning>
   <AreYouSure>Bist du sicher, dass du das machen willst?</AreYouSure>
 
-  
-  
   <CommandDetonateLabel>Detonation</CommandDetonateLabel>
   <CommandDetonateDesc>Starte Countdown zur Detonation.</CommandDetonateDesc>
 
@@ -82,58 +79,65 @@
   <CommandStopForceAttack>Beende erzw. Angriff</CommandStopForceAttack>
   <CommandStopForceAttackDesc>Beendet den erzwungenen Angriff und erlaubt dem Geschütz, Ziele nach eigenem Ermessen anzugreifen.</CommandStopForceAttackDesc>
   <CommandStopAttackFailNotForceAttacking>Aktuell kein erzwungener Angriff aktiv.</CommandStopAttackFailNotForceAttacking>
-  <MessageTargetBeyondMaximumRange>Ziel ist außerhalb der maximalen Reichweite.</MessageTargetBeyondMaximumRange>
-  <MessageTargetBelowMinimumRange>Ziel ist näher als die minimale Reichweite.</MessageTargetBelowMinimumRange>
-  
-    <!-- Ship computer core -->
+  <MessageTargetBeyondMaximumRange>Ziel ist zu weit weg.</MessageTargetBeyondMaximumRange>
+  <MessageTargetBelowMinimumRange>Ziel ist zu nah.</MessageTargetBelowMinimumRange>
+
+  <!-- Ship computer core -->
+
   <CommandShipLaunch>Schiff starten</CommandShipLaunch>
   <CommandShipLaunchDesc>Beginne die Startsequenz des Raumschiffes mit der aktuellen Konfiguration.</CommandShipLaunchDesc>
   <CommandShipLaunchReport>Zeige Statusbericht</CommandShipLaunchReport>
   <CommandShipLaunchReportDesc>Zeige den Statusbericht des Schiffes.</CommandShipLaunchReportDesc>
 
   <!-- Pod -->
+
   <CommandPodEject>Schläfer auswerfen</CommandPodEject>
   <CommandPodEjectDesc>Wecke die Kryoschläfer und wirf sie aus der Kapsel aus.</CommandPodEjectDesc>
   <CommandPodEjectFailEmpty>Enthält niemanden.</CommandPodEjectFailEmpty>
-  
+
   <!-- Door -->
+
   <CommandToggleDoorForbid>Durchgang verboten</CommandToggleDoorForbid>
-  <CommandToggleDoorForbidDesc>Wenn eine Tür verboten ist, werden deine Kolonisten und Verbündete nicht durch sie hindurch gehen. Dieses hat aber keinerlei Einfluss auf Gegner und Tiere.</CommandToggleDoorForbidDesc>
+  <CommandToggleDoorForbidDesc>Wenn das Benutzen einer Tür verboten ist, werden deine Kolonisten und Verbündete nicht durch sie hindurch gehen. Gegner und Tiere ignorieren diesen Befehl.</CommandToggleDoorForbidDesc>
   <CommandToggleDoorHoldOpen>Offen halten</CommandToggleDoorHoldOpen>
   <CommandToggleDoorHoldOpenDesc>Wenn aktiv, werden deine Kolonisten die Tür nicht schließen, nachdem sie hindurchgegangen sind.</CommandToggleDoorHoldOpenDesc>
 
   <!-- Temperature control -->
+
   <CommandResetTemp>Zurücksetzen</CommandResetTemp>
-  <CommandResetTempDesc>Setze die Ziel- auf Raumtemperatur zurück.</CommandResetTempDesc>
+  <CommandResetTempDesc>Setze die Zieltemperatur auf Raumtemperatur zurück.</CommandResetTempDesc>
   <CommandRaiseTempDesc>Erhöhe die Zieltemperatur.</CommandRaiseTempDesc>
   <CommandLowerTempDesc>Verringere die Zieltemperatur.</CommandLowerTempDesc>
 
   <!-- Install/reinstall -->
+
   <CommandInstall>Installiere</CommandInstall>
   <CommandInstallDesc>Dieser Gegenstand ist gerade für Transport oder Einlagerung verpackt. Benutze diesen Befehl, um ihn am Zielort aufzubauen.</CommandInstallDesc>
   <CommandReinstall>Neu installieren bei...</CommandReinstall>
   <CommandReinstallDesc>Bestimme, dass dieser Gegenstand abgebaut und wo anders wieder aufgebaut werden soll.</CommandReinstallDesc>
 
   <!-- Trade beacon -->
+
   <CommandMakeBeaconStockpileDesc>Erzeugt ein Lager um dieses Gebäude, das der Erfassungsreichweite des Funkfeuers entspricht.</CommandMakeBeaconStockpileDesc>
   <CommandMakeBeaconStockpileLabel>Erzeuge Lager</CommandMakeBeaconStockpileLabel>
-  
-  
+
   <!-- Sun lamp -->
+
   <CommandSunLampMakeGrowingZoneDesc>Erzeuge eine Anbauzone um dieses Gebäude, die der Reichweite des Lichtes entspricht.</CommandSunLampMakeGrowingZoneDesc>
   <CommandSunLampMakeGrowingZoneLabel>Erzeuge Anbauzone</CommandSunLampMakeGrowingZoneLabel>
-  
+
   <!-- Trap -->
+
   <CommandAutoRearm>Auto Reaktivieren</CommandAutoRearm>
-  <CommandAutoRearmDesc>Wenn Auto-Reaktivieren an ist, wird die Falle nach dem Auslösen automatisch zum Reaktivieren markiert.</CommandAutoRearmDesc>
-  
+  <CommandAutoRearmDesc>Wenn aktiviert, wird die Falle nach dem Auslösen automatisch zum Reaktivieren markiert.</CommandAutoRearmDesc>
+
   <!-- Animal control -->
+
   <CommandReleaseAnimalsLabel>Lass Tiere frei</CommandReleaseAnimalsLabel>
-  <CommandReleaseAnimalsDesc>Solange dieses EIN ist, werden Tiere, die einen Meister haben, los geschickt, um entferntere Ziele anzugreifen. Wenn es AUS ist, bleiben sie in der Nähe ihres Meisters und verteidigen diesen.</CommandReleaseAnimalsDesc>
+  <CommandReleaseAnimalsDesc>Wenn aktiviert, werden Tiere, die einen Meister haben, los geschickt, um entferntere Ziele anzugreifen. Wenn deaktiviert, bleiben sie in der Nähe ihres Meisters und verteidigen ihn.</CommandReleaseAnimalsDesc>
   
   <!-- Squad attack -->
   <CommandSquadAttack>Angriff</CommandSquadAttack>
   <CommandSquadAttackDesc>Befehle den ausgewählten Kolonisten ein definiertes Ziel anzugreifen.</CommandSquadAttackDesc>
 
-  
 </LanguageData>

@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
 
   <Confirm>Bestätigen</Confirm>
@@ -6,8 +6,9 @@
   <OK>OK</OK>
 
   <!-- Recovered from errors caused by mods -->
-  <RecoveredFromErrorsDialogTitle>Wiederhergestellt von inkompatiblen oder beschädigten Mod-Fehlern</RecoveredFromErrorsDialogTitle>
-  <RecoveredFromErrorsText>Es sieht so aus, als wenn von den aktiven Mods einige Fehler verursachen.\n\nSie waren inkompatibel zueinander, erstellt für eine andere RimWorld-Version oder beschädigt.\n\nAlle Mods wurden deaktiviert, können aber im Mod-Dialog wieder aktiviert werden.</RecoveredFromErrorsText>
+
+  <RecoveredFromErrorsDialogTitle>Spiel aufgrund von Fehlern durch inkompatiblen oder korrupten Mods wiederhergestellt</RecoveredFromErrorsDialogTitle>
+  <RecoveredFromErrorsText>Es sieht so aus, als wenn von den aktiven Mods einige Fehler verursachen.\n\nSie waren inkompatible zueinander, erstellt für eine andere RimWorld-Version oder beschädigt.\n\nAlle Mods wurden deaktiviert, können aber im Mod-Dialog wieder aktiviert werden.</RecoveredFromErrorsText>
   
   <!-- Errors during loading -->
   <ErrorWhileLoadingAssetsTitle>Fehler beim Laden der Komponenten</ErrorWhileLoadingAssetsTitle>
@@ -29,50 +30,57 @@
   <LoadingMap>Lade Karte</LoadingMap>
   <InitializingMap>Initialisiere Karte</InitializingMap>
   <SpawningAllThings>Erzeuge Gegenstände</SpawningAllThings>
-  
+
   <!-- Save/load -->
+
   <SaveGameButton>Speichern</SaveGameButton>
   <OverwriteButton>Überschreiben</OverwriteButton>
   <LoadGameButton>Laden</LoadGameButton>
-  <ConfirmDelete>Willst du {0} wirklich löschen?</ConfirmDelete>
+  <ConfirmDelete>Willst du '{0}' wirklich löschen?</ConfirmDelete>
   <DeleteThisSavegame>Lösche diesen Spielstand.</DeleteThisSavegame>
-  <SavedAs>Spiel als {0} gespeichert.</SavedAs>
+  <SavedAs>Spiel als '{0}' gespeichert.</SavedAs>
   <NeedAName>Bitte einen Namen eingeben.</NeedAName>
   <LoadingLongEvent>Lade</LoadingLongEvent>
   <SavingLongEvent>Speichere</SavingLongEvent>
   <PermadeathModeSaveSuffix>(Hardcore)</PermadeathModeSaveSuffix>
-  <SaveIsFromDifferentGameVersion>Dies ist die Version {0}, aber der Spielstand ist von {1}. Das sind zwei komplett unterschiedliche Versionen.\n\nDen Spielstand zu laden wird sehr wahrscheinlich nicht funktionieren.</SaveIsFromDifferentGameVersion>
-  <SaveIsFromDifferentGameBuild>Dies ist die Version {0}, aber der Spielstand ist von {1}. Das ist ein unterschiedlicher Build.\n\nDiese Daten zu laden sollte eigentlich funktionieren.</SaveIsFromDifferentGameBuild>
+  <SaveIsFromDifferentGameVersion>Die aktuelle Version {0} weicht von der benutzten Version {1} des Spielstands ab.\n\nDer Versuch, diesen Spielstand zu laden, kann zu unerwarteten Ergebnissen führen.</SaveIsFromDifferentGameVersion>
+  <SaveIsFromDifferentGameBuild>Die aktuelle Version {0} weicht nur geringfügig von der benutzten Version {1} des Spielstands ab.\n\nDer Versuch, diesen Spielstand zu laden, sollte ohne Probleme funktionieren.</SaveIsFromDifferentGameBuild>
   <SaveIsFromThisGameBuild>Der Spielstand wurde mit der gleichen Version erstellt und sollte ohne Probleme funktionieren.</SaveIsFromThisGameBuild>
-  <SaveIsUnknownFormat>Die Spielstandsdaten sind in einem unbekannten Format und können garantiert nicht richtig geladen werden.</SaveIsUnknownFormat>
-  <ProblemSavingFile>Beim Speichern der Datei {0} ist ein Fehler aufgetreten:\n\n{1}</ProblemSavingFile>
-  
+  <SaveIsUnknownFormat>Der Spielstand ist in einem unbekannten Format. Es besteht die Gefahr, der Spielstand nicht richtig geladen werden kann.</SaveIsUnknownFormat>
+  <ProblemSavingFile>Beim Speichern der Datei '{0}' ist ein Fehler aufgetreten:\n\n{1}</ProblemSavingFile>
+
   <!-- Colony naming-->
-  <NameColonyMessage>Es sieht so aus, als würdet ihr eine Weile bleiben. {0} ist der Meinung, dass die Kolonie einen Namen bekommen sollte.\n\nWie soll sie heißen?</NameColonyMessage>
-  <ColonyGainsName>Die Kolonie heißt jetzt {0}.</ColonyGainsName>
+
+  <NameColonyMessage>Es sieht so aus, als würdet ihr eine Weile bleiben. {0} ist der Meinung, dass die Kolonie einen Namen verdient hat.\n\nWie soll sie heißen?</NameColonyMessage>
+  <ColonyGainsName>Die Kolonie heißt jetzt '{0}'.</ColonyGainsName>
   <ColonyNameIsInvalid>Dieser Koloniename ist ungültig.</ColonyNameIsInvalid>
 
   <!-- Renaming -->
+
   <NameIsInvalid>Bitte gib einen gültigen Namen ein.</NameIsInvalid>
   <NameIsInUse>Dieser Name ist schon vergeben.</NameIsInUse>
-  <ZoneGainsName>Die Zone heißt jetzt {0}.</ZoneGainsName>
-  
+  <ZoneGainsName>Die Zone heißt jetzt '{0}'.</ZoneGainsName>
+
   <!-- Pawn naming -->
-  <PawnGainsName>Der Kolonist hört jetzt auf den Spitznamen {0}.</PawnGainsName>
-  
+
+  <PawnGainsName>Der Kolonist hört jetzt auf den Spitznamen '{0}'.</PawnGainsName>
+
   <!-- Save game incompatible warning -->
-  <VersionMismatch>Version mismatch</VersionMismatch>
-    <SaveGameIncompatibleWarningText>Die Karte wurde mit der Rimworld Version {0} gespeichert, du spielst aber gerade mit der Version {1}.\n\n Das Laden dieses Spielstandes kann Fehler verursachen oder das Spiel sogar abstürzen lassen.</SaveGameIncompatibleWarningText>
-  <WorldFileVersionMismatch>Diese Welt wurde mit der Rimworld Version {0} erzeugt, du spielst aber gerade mit der Version {1}.\n\n Das Laden dieser Welt kann Fehler verursachen oder das Spiel sogar abstürzen lassen. Du solltest besser eine komplett neue Welt generieren.</WorldFileVersionMismatch>
-  <ModsMismatchWarningTitle>Geänderte Modifikationen</ModsMismatchWarningTitle>
-  <ModsMismatchWarningText>Die Karte wurde mit einem anderen Satz aktiver Modifikationen (Mods) gespeichert. Das kann evtl. Probleme verursachen, je nachdem, was genau diese Mods machen.\n\nDie Karte wurde mit den folgenden Modifikationen gespeichert (in dieser Reichenfolge):\n\n{0}\n\nDerzeit sind diese aktiv:\n\n{1}</ModsMismatchWarningText>
-  
+
+  <VersionMismatch>Versionskonflikt</VersionMismatch>
+  <SaveGameIncompatibleWarningText>Die Karte basiert auf der Spielversion {0}\nAktuell läuft die Spielversion {1}\n\nDas Laden dieser Karte kann Fehler oder Abstürze verursachen.</SaveGameIncompatibleWarningText>
+  <WorldFileVersionMismatch>Die Welt basiert auf der Spielversion {0}\nAktuell läuft die Spielversion {1}\n\nDas Laden dieser Welt kann Fehler oder Abstürze verursachen. Es ist ratsam, eine komplett neue Welt zu generieren.</WorldFileVersionMismatch>
+  <ModsMismatchWarningTitle>Modifikationskonflikt</ModsMismatchWarningTitle>
+  <ModsMismatchWarningText>Die zuletzt verwendeten Mods auf diese Karte unterscheiden sich von den gerade laufenden Mods. Das kann evtl. Probleme verursachen, je nachdem, was genau diese Mods machen.\n\nDie Karte benutzte zuletzt folgende Mods (in dieser Reichenfolge):\n\n{0}\n\nDerzeit sind diese aktiv:\n\n{1}</ModsMismatchWarningText>
+
   <!-- Resolution change dialog -->
-  <ConfirmResolutionChange>Du hast die Bildschirmeinstellungen geändert. Sollen die Änderungen behalten werden?\n\nAutomatisches Zurücksetzen in {0}...</ConfirmResolutionChange>
+
+  <ConfirmResolutionChange>Du hast deine Bildschirmeinstellungen geändert. Sollen die Änderungen beibehalten werden?\n\nAutomatisches Zurücksetzen in {0}...</ConfirmResolutionChange>
   <ResolutionKeep>Behalten</ResolutionKeep>
   <ResolutionRevert>Zurücksetzen</ResolutionRevert>
-  
+
   <!-- Research -->
+
   <Research>Forschung</Research>
   <Researched>Erforscht</Researched>
   <Unresearched>Unerforscht</Unresearched>
@@ -85,8 +93,9 @@
   <RequiredResearchBenchFacilities>Benötigt Laborausstattung</RequiredResearchBenchFacilities>  
 
   <!-- Advanced game start options -->
-  <MapTemperatureDangerWarning>Warnung: Du wirst in einer winterlichen Umgebung landen. Es wird hart bis nahezu unmöglich hier zu überleben. Wenn du nicht vorhast dich einer extremen Herausforderung zu stellen, wähle einen anderen Landeplatz oder einen wärmeren Monat.</MapTemperatureDangerWarning>  
-  <MapSizePerformanceWarning>Warnung: Die Leistung kann auf größeren Karten schlechter werden, wenn der Rechner die Leistung nicht aufbringen kann.\n\nKartengröße Riesig ist ungetestet, aber wird sich mit hoher Wahrscheinlichkeit nicht gut spielen lassen.</MapSizePerformanceWarning>
+
+  <MapTemperatureDangerWarning>Warnung: Du wirst in einer winterlichen Umgebung landen. Es wird hart bis nahezu unmöglich, hier zu überleben. Wenn du nicht vorhast, dich einer extremen Herausforderung zu stellen, wähle einen anderen Landeplatz oder einen wärmeren Monat.</MapTemperatureDangerWarning>  
+  <MapSizePerformanceWarning>Warnung: Je größer die Karte, desto schlechter die Performance. Die Kartengröße 'Riesig' ist sehr wahrscheinlich nicht gut spielbar.</MapSizePerformanceWarning>
   <MapSize>Kartengröße</MapSize>
   <MapSizeDesc>{0}x{0} ({1} Felder)</MapSizeDesc>
   <MapSizeSmall>Klein</MapSizeSmall>
@@ -106,40 +115,40 @@
   <RepeatCount>Wiederholen: {0}</RepeatCount>
   <Forever>Für immer</Forever>
   <Details>Details</Details>
-  <IngredientSearchRadius>Zutaten Radius</IngredientSearchRadius>
+  <IngredientSearchRadius>Materialsuchradius</IngredientSearchRadius>
   <CurrentlyHave>Aktuell vorhanden</CurrentlyHave>
   <CountingProducts>Zähle</CountingProducts>
   <Infinite>Unendlich</Infinite>
-  <MinimumSkillLevel>Qualifikation mind. {0}</MinimumSkillLevel>
-  
-  <RecipeCannotHaveTargetCount>(Das Rezept kann keine maximale Anzahl haben, da es mehrere oder unvorhersehbare Produkte enthält)</RecipeCannotHaveTargetCount>
+  <MinimumSkillLevel>{0}-Minimalstufe</MinimumSkillLevel>
 
+  <RecipeCannotHaveTargetCount>Diese Aufgabe produziert mehrere oder unvorhersehbare Endprodukte.</RecipeCannotHaveTargetCount>
   <WorkAmount>Arbeitsaufwand</WorkAmount>
-  <MinimumSkills>Minimale Fähigkeiten:</MinimumSkills>
+  <MinimumSkills>Minimal benötigte Fähigkeiten:</MinimumSkills>
   <BillRequires>Benötigt {0} {1}</BillRequires>
   <BillRequiresNutrition>Benötigt {0} Nahrung</BillRequiresNutrition>
-  <BillRequiresMayVary>Hinweis: Zutaten mit geringem Volumen, wie z.B. Gold, benötigen 20x so viel.</BillRequiresMayVary>
-  <ThisIsSmallVolume>Dies ist eine Zutat mit geringem Volumen. Das bedeutet, dass jede 'Einheit' nur 1/20 des Volumens einer normalen Zutat hat. Damit das gleiche Zutatenvolumen erreicht wird, brauchst du also 20x mehr Ressourcen als gewöhnlich.</ThisIsSmallVolume>
-  <UsableIngredients>brauchbare Zutaten</UsableIngredients>
-  <DoXTimes>Produziere X Mal</DoXTimes>
+  <BillRequiresMayVary>Hinweis: Materialien mit geringem Volumen wie Gold benötigen 20-mal so viel.</BillRequiresMayVary>
+  <ThisIsSmallVolume>Dieses Material hat ein geringes Volumen. Das heißt, dass jede 'Einheit' nur 1/20 des Volumens eines normalen Materials hat. Für den gleichen Materialbedarf brauchst du also 20-mal mehr Ressourcen als gewöhnlich.</ThisIsSmallVolume>
+  <UsableIngredients>Materialien</UsableIngredients>
+  <DoXTimes>Produziere X-mal</DoXTimes>
   <DoUntilYouHaveX>Produziere, bis du X hast</DoUntilYouHaveX>
   <DoForever>Produziere für immer</DoForever>
   <BillRepeatTargetCountShort>Bis {0}</BillRepeatTargetCountShort>
   <BillStoreMode_DropOnFloor>Auf den Boden legen</BillStoreMode_DropOnFloor>
   <BillStoreMode_BestStockpile>Zum besten Lager tragen</BillStoreMode_BestStockpile>
   <BillStoreMode_NearestStockpileAnyPriority>Zum nächsten Lager tragen</BillStoreMode_NearestStockpileAnyPriority>
-  
-    <!-- Info card -->
+
+  <!-- Info card -->
+
   <Damage>Schaden</Damage>
   <Accuracy>Genauigkeit</Accuracy>
   <BurstShotCount>Schüsse pro Salve</BurstShotCount>
   <WarmupTime>Aufwärmzeit</WarmupTime>
   <MeleeWarmupTime>Nahkampfvorbereitungszeit</MeleeWarmupTime>
-  <CooldownTime>Abkühlzeit</CooldownTime>
+  <CooldownTime>Abklingzeit</CooldownTime>
   <BurstShotFireRate>Schussfrequenz</BurstShotFireRate>
   <Range>Reichweite</Range>
   <GrowsWild>Wächst in Wildnis</GrowsWild>
-  <Harvestable>Erntbar</Harvestable>
+  <Harvestable>Kann geerntet werden</Harvestable>
   <LimitedLifespan>Begrenzte Lebensdauer</LimitedLifespan>
   <GrowingTime>Wachstumsdauer</GrowingTime>
   <GrowingTimeDesc>Pflanzen wachsen nur zu einem bestimmten Teil des Tages und nur, wenn es hell ist. Diese Statistik misst die Zeit des Wachstums, die die Pflanze benötigt, um voll ausgewachsen zu sein. Die tatsächliche Wachstumszeit wird normalerweise ca. doppelt so lange sein. Niedrige Temperaturen sorgen auch für ein verlangsamtes Wachstum.</GrowingTimeDesc>
@@ -165,14 +174,15 @@
   <AnimalFilthRateExplanation>Tiere erzeugen Schmutz wenn sie über konstruierten Boden laufen. Dieses gibt die durchschnittliche Anzahl an Dreck pro {0} Zellen an, über die die Kreatur läuft\n\nGrößere und weniger Haustier-Ähnliche Tiere verursachen mehr Schmutz.</AnimalFilthRateExplanation>
   <TimeRecordsCategory>Zeit</TimeRecordsCategory>
   <MiscRecordsCategory>Versch.</MiscRecordsCategory>
- 
+
   <!-- Trade -->
-  <DragToTrade>Zum Handeln\ndie Zahl ziehen</DragToTrade>
-  <BuyPriceDesc>Zu diesem Preis kannst du das kaufen.</BuyPriceDesc>
-  <SellPriceDesc>Zu diesen Preis kannst du das verkaufen.</SellPriceDesc>
-  <PriceTypeDesc>Der Preis dieses Gegenstandes ist {0}.</PriceTypeDesc>
-  <ColonyCount>Anzahl dieser Gegenstände, die die Kolonie zum Handeln hat.\n\nDu kannst nur mit orbitalen Händlern interagieren, wenn die zu handelnden Waren im angezeigten Bereich eines orbitalen Funkfeuers gelagert werden.</ColonyCount>
-  <TraderCount>Anzahl dieser Gegenstände, die der Händler zum Handeln hat.</TraderCount>
+
+  <DragToTrade>Zum handeln\nZahl ziehen</DragToTrade>
+  <BuyPriceDesc>Der Geldbetrag, den du zahlen musst, um diese Ware zu kaufen.</BuyPriceDesc>
+  <SellPriceDesc>Der Geldbetrag, den du bekommst, wenn du diese Ware verkaufst.</SellPriceDesc>
+  <PriceTypeDesc>Der Preis dieser Ware ist {0}.</PriceTypeDesc>
+  <ColonyCount>Anzahl dieser Gegenstände, die die Kolonie zum Handeln hat.\n\nDu kannst nur mit orbitalen Händlern interagieren, wenn die zu handelnden Waren im Freien und im angezeigten Bereich eines orbitalen Funkfeuers gelagert werden.</ColonyCount>
+  <TraderCount>Wieviel von dieser Ware der Händler hat.</TraderCount>
   <AcceptButton>Annehmen</AcceptButton>
   <ResetButton>Reset</ResetButton>
   <CancelButton>Abbruch</CancelButton>
@@ -180,33 +190,36 @@
   <YourTradeableSilverTip>Du kannst nur mit Silber handeln, das in Reichweite des orbitalen Funkfeuers ist.</YourTradeableSilverTip>
   <TraderHasNoMore>Händler hat nichts mehr.</TraderHasNoMore>
   <ColonyHasNoMore>Nichts mehr zum Verkaufen.</ColonyHasNoMore>
-  <TraderWillNotTrade>Der Händler ist nicht bereit, hiermit zu handeln.</TraderWillNotTrade>
-  <NegotiatorTalkingImpaired>Dein Unterhändler {0} kann aufgrund der niedrigen Gesundheit nicht richtig sprechen.\n\nDas wird die erhandelten Preise beeinflussen.\n\nVielleicht solltest Du einen gesünderen Unterhändler auswählen?</NegotiatorTalkingImpaired>
+  <TraderWillNotTrade>Der Händler ist nicht bereit, mit dieser Ware zu handeln.</TraderWillNotTrade>
+  <NegotiatorTalkingImpaired>Dein Unterhändler {0} kann aufgrund seiner niedrigen Gesundheit nicht richtig sprechen.\n\nDas wird Einfluss auf den Handelspreis haben.\n\nEs ist ratsam, einen gesünderen Unterhändler sprechen zu lassen.</NegotiatorTalkingImpaired>
   <ConfirmTraderShortFunds>Der Händler hat zu wenig Silber, um den ganzen Wert der Waren abzudecken. Trotzdem weitermachen?</ConfirmTraderShortFunds>
-  <SortBy>Sortieren</SortBy>
-  
-  
+  <SortBy>Sortieren:</SortBy>
+
   <!-- Comms -->
+
   <SocialSkillIs>Soziale Fähigkeit: {0}</SocialSkillIs>
-  
+
   <!--Research-->
+
   <ResearchFinished>Forschung abgeschlossen: {0}</ResearchFinished>
   <ResearchScreen>Forschungsmenü</ResearchScreen>
-  
+
   <!--HistoryUpload-->
+
   <HistoryUploadMessage>Möchtest Du die Informationen deines Spielverlaufs auf den RimWorld-Server hochladen, damit die Entwickler das Spiel verbessern können? Wenn Du dem zustimmst, werden die Daten Deines Spiels alle {0} Tage (bzw. zu seltenen Ereignissen, wie z.B. dem Ende des Spiels) hochgeladen. Die Einstellungen können in den Optionen noch geändert werden.</HistoryUploadMessage>
   <HistoryUploadMessagePlayerName>Die Spieldaten werden anonym versendet, aber Du kannst auch Deinen Namen hinzufügen.</HistoryUploadMessagePlayerName>
   <HistoryUploadYes>Die Spieldaten immer hochladen</HistoryUploadYes>
   <HistoryUploadNo>Die Spieldaten nie hochladen</HistoryUploadNo>
   <HistoryUploadYesOnce>Nur diesmal hochladen</HistoryUploadYesOnce>
   <HistoryUploadNoOnce>Dieses Mal nicht, aber frag mich später noch einmal.</HistoryUploadNoOnce>
-  
+
   <!-- Outfit management -->
-  <Outfit>Ausstattung</Outfit>
-  <SelectOutfit>Wähle Outfit...</SelectOutfit>
+
+  <Outfit>Outfit</Outfit>
+  <SelectOutfit>Outfit auswählen...</SelectOutfit>
   <NewOutfit>Neues Outfit</NewOutfit>
   <DeleteOutfit>Outfit löschen...</DeleteOutfit>
   <OutfitInUse>Outfit wird von {0} benutzt.</OutfitInUse>
   <NoOutfitSelected>Kein Outfit ausgewählt</NoOutfitSelected>
-  
+
 </LanguageData>
