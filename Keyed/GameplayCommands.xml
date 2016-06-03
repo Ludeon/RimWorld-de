@@ -25,7 +25,10 @@
   <CommandUndraftLabel>Kampfmodus beenden</CommandUndraftLabel>
   <CommandToggleDraftDesc>Schaltet den Kampfmodus ein/aus.\n\nKolonisten im Kampfmodus können direkt gesteuert werden. Sie werden jedoch nicht arbeiten, essen oder Pause machen.</CommandToggleDraftDesc>
   <IsIncapped>{0} ist arbeitsunfähig.</IsIncapped>
-
+  
+  <CommandClearPrioritizedWork>Lösche priorisierte Arbeiten</CommandClearPrioritizedWork>
+  <CommandClearPrioritizedWorkDesc>Lösche alle Arbeiten die du priorisiert hast. Der Charakter wird mit seinen normalen Aktivitäten weitermachen.</CommandClearPrioritizedWorkDesc>
+  
   <CommandCancelConstructionLabel>Abbrechen</CommandCancelConstructionLabel>
   <CommandCancelConstructionDesc>Konstruktion abbrechen.</CommandCancelConstructionDesc>
 
@@ -41,12 +44,8 @@
   <CommandBedSetForPrisonersLabel>Gefangene</CommandBedSetForPrisonersLabel>
   <CommandBedSetForPrisonersDesc>Markiere alle Betten in dem Raum als Gefängnisbetten.</CommandBedSetForPrisonersDesc>
   <CommandBedSetForPrisonersFailOutdoors>Betten im Freien können nicht als Gefängnisbetten deklariert werden.</CommandBedSetForPrisonersFailOutdoors>
-  <CommandBedSetForColonistsLabel>Kolonisten</CommandBedSetForColonistsLabel>
-  <CommandBedSetForColonistsDesc>Markiere alle Betten in dem Raum als Kolonistenbetten.</CommandBedSetForColonistsDesc>
   <CommandBedSetAsMedicalLabel>Krankenbett</CommandBedSetAsMedicalLabel>
   <CommandBedSetAsMedicalDesc>Deklariere dieses Bett für den medizinischen Gebrauch.</CommandBedSetAsMedicalDesc>
-  <CommandBedSetAsNonMedicalLabel>Kein Krankenbett</CommandBedSetAsNonMedicalLabel>
-  <CommandBedSetAsNonMedicalDesc> Gibt dieses Bett für den nicht-medizinischen Gebrauch frei.</CommandBedSetAsNonMedicalDesc>
   <TurningOnPrisonerBedWarning>Das Einschalten des Gefängnis-Modus betrifft den kompletten Raum. (Kolonisten und Gefangene können nicht im selben Raum schlafen.)\n\nDiese Leute verlieren ihre Betten:</TurningOnPrisonerBedWarning>
   <TurningOffPrisonerBedWarning>Das Ausschalten des Gefängnis-Modus betrifft den kompletten Raum. (Kolonisten und Gefangene können nicht im selben Raum schlafen.)\n\nDiese Leute verlieren ihre Betten:</TurningOffPrisonerBedWarning>
   <AreYouSure>Bist du sicher, dass du das machen willst?</AreYouSure>
@@ -142,4 +141,14 @@
   <CommandSquadAttack>Angriff</CommandSquadAttack>
   <CommandSquadAttackDesc>Befehle den ausgewählten Kolonisten ein definiertes Ziel anzugreifen.</CommandSquadAttackDesc>
 
+  <!-- Hold fire -->
+  <CommandHoldFire>Feuer einstellen</CommandHoldFire>
+  <CommandHoldFireDesc>Beende alle laufenden Angriffe.</CommandHoldFireDesc>
+  
+  <!-- Select plant to grow -->
+  <CommandSelectPlantToGrowMulti>Wähle Pflanze zum anpflanzen</CommandSelectPlantToGrowMulti>
+  <CommandSelectPlantToGrow>Pflanze: {0}</CommandSelectPlantToGrow>
+  <CommandSelectPlantToGrowDesc>Definiert, welche Pflanze hier angebaut werden soll.</CommandSelectPlantToGrowDesc>
+  
+  
 </LanguageData>

@@ -36,8 +36,8 @@
   <!-- Save/load -->
 
   <SaveGameButton>Speichern</SaveGameButton>
-  <OverwriteButton>Überschreiben</OverwriteButton>
   <LoadGameButton>Laden</LoadGameButton>
+  <OverwriteButton>Überschreiben</OverwriteButton>
   <ConfirmDelete>Willst du '{0}' wirklich löschen?</ConfirmDelete>
   <DeleteThisSavegame>Lösche diesen Spielstand.</DeleteThisSavegame>
   <SavedAs>Spiel als '{0}' gespeichert.</SavedAs>
@@ -50,12 +50,13 @@
   <SaveIsFromThisGameBuild>Der Spielstand wurde mit der gleichen Version erstellt und sollte ohne Probleme funktionieren.</SaveIsFromThisGameBuild>
   <SaveIsUnknownFormat>Der Spielstand ist in einem unbekannten Format. Es besteht die Gefahr, der Spielstand nicht richtig geladen werden kann.</SaveIsUnknownFormat>
   <ProblemSavingFile>Beim Speichern der Datei '{0}' ist ein Fehler aufgetreten:\n\n{1}</ProblemSavingFile>
+  <LoadAnyway>Trotzdem laden</LoadAnyway>
 
   <!-- Colony naming -->
 
-  <NameColonyMessage>Es sieht so aus, als würdet ihr eine Weile bleiben. {0} ist der Meinung, dass die Kolonie einen Namen verdient hat.\n\nWie soll sie heißen?</NameColonyMessage>
-  <ColonyGainsName>Die Kolonie heißt jetzt '{0}'.</ColonyGainsName>
-  <ColonyNameIsInvalid>Dieser Koloniename ist ungültig.</ColonyNameIsInvalid>
+  <NameColonyMessage>Da es so aussieht als würdet ihr eine Weile bleiben, schlägt {0} vor der Gemeinschaft einen Namen zu geben.\n\nWie soll sie heißen?</NameColonyMessage>
+  <ColonyGainsName>Eure Gemeinschaft heißt jetzt '{0}'.</ColonyGainsName>
+  <ColonyNameIsInvalid>Dieser Name ist ungültig.</ColonyNameIsInvalid>
 
   <!-- Renaming -->
 
@@ -70,10 +71,13 @@
   <!-- Save game incompatible warning -->
 
   <VersionMismatch>Versionskonflikt</VersionMismatch>
-  <SaveGameIncompatibleWarningText>Die Karte basiert auf der Spielversion {0}\nAktuell läuft die Spielversion {1}\n\nDas Laden dieser Karte kann Fehler oder Abstürze verursachen.</SaveGameIncompatibleWarningText>
+  <SaveGameIncompatibleWarningText>Dieses Spiel basiert auf der Version {0}\nAktuell läuft die Spielversion {1}\n\nDas Laden dieser Karte kann Fehler oder Abstürze verursachen.</SaveGameIncompatibleWarningText>
   <WorldFileVersionMismatch>Die Welt basiert auf der Spielversion {0}\nAktuell läuft die Spielversion {1}\n\nDas Laden dieser Welt kann Fehler oder Abstürze verursachen. Es ist ratsam, eine komplett neue Welt zu generieren.</WorldFileVersionMismatch>
+  <FileIncompatibleWarning>Diese Datei wurde mit der Version {0} gespeichert.\nAktuell läuft die Spielversion {1}\n\nDas Laden dieses Spielstandes kann Fehler oder Abstürze verursachen.</FileIncompatibleWarning>
   <ModsMismatchWarningTitle>Modifikationskonflikt</ModsMismatchWarningTitle>
-  <ModsMismatchWarningText>Die zuletzt verwendeten Mods auf diese Karte unterscheiden sich von den gerade laufenden Mods. Das kann evtl. Probleme verursachen, je nachdem, was genau diese Mods machen.\n\nDie Karte benutzte zuletzt folgende Mods (in dieser Reichenfolge):\n\n{0}\n\nDerzeit sind diese aktiv:\n\n{1}</ModsMismatchWarningText>
+  <ModsMismatchWarningText>Die zuletzt verwendeten Mods auf diesem Spiel unterscheiden sich von den aktuell aktiven Mods. Je nachdem was diese Mods machen, kann das zu Problemen führen.\n\nDieses Spiel verwendete zuletzt die folgenden Mods (in dieser Reichenfolge):\n\n{0}\n\nDerzeit sind aber diese aktiv:\n\n{1}</ModsMismatchWarningText>
+  <WorldFileModsMismatchWarningText>Die zuletzt verwendeten Mods auf dieser Welt unterscheiden sich von den aktuell aktiven Mods. Je nachdem was diese Mods machen, kann das zu Problemen führen.\n\nDieses Welt wurde mit den folgenden Mods gespeichert (in dieser Reichenfolge):\n\n{0}\n\nDerzeit sind aber diese aktiv:\n\n{1}</WorldFileModsMismatchWarningText>
+
 
   <!-- Resolution change dialog -->
 
@@ -155,7 +159,10 @@
   <GrowingTime>Wachstumsdauer</GrowingTime>
   <GrowingTimeDesc>Pflanzen wachsen nur zu einem bestimmten Teil des Tages und nur, wenn es hell ist. Diese Statistik misst die Zeit des Wachstums, die die Pflanze benötigt, um voll ausgewachsen zu sein. Die tatsächliche Wachstumszeit wird normalerweise ca. doppelt so lange sein. Niedrige Temperaturen sorgen auch für ein verlangsamtes Wachstum.</GrowingTimeDesc>
   <Days>Tage</Days>
+  <MinGrowingSkillToSow>Minimal benötigte Erfahrung zum Anpflanzen</MinGrowingSkillToSow>
   <FertilityRequirement>Benötigte Fruchtbarkeit</FertilityRequirement>
+  <SoilFertilitySensitivityGrowthRate>Fruchtbarkeit des Bodens (Wachstumsrate)</SoilFertilitySensitivityGrowthRate>
+  <SoilFertilitySensitivityPlantChance>Fruchtbarkeit des Bodens (Anpflanz Chance)</SoilFertilitySensitivityPlantChance>
   <LightRequirement>Benötigte Helligkeit</LightRequirement>
   <Attributes>Attribute</Attributes>
   <LifeSpan>Lebensdauer</LifeSpan>
@@ -168,6 +175,7 @@
   <RecruitDifficulty>Anwerbschwierigkeit</RecruitDifficulty>
   <MarketValue>Grundpreis</MarketValue>
   <Covers>Verdeckt</Covers>
+  <MedicineXpGainFactor>Erfahrungseinfluss</MedicineXpGainFactor>
   <BodyPartEfficiency>Effektivität des Körperteils</BodyPartEfficiency>
   <MoodChange>Stimmungsschwankung</MoodChange>
   <Wildness>Wildheit</Wildness>
@@ -224,4 +232,8 @@
   <OutfitInUse>Outfit wird von {0} benutzt.</OutfitInUse>
   <NoOutfitSelected>Kein Outfit ausgewählt</NoOutfitSelected>
 
+  <!-- Growing -->
+  <NoGrowerCanPlant>{0} benötigt zum Anpflanzen eine Fähigkeit von {1} als Gärtner.\n\nKeiner deiner nicht-bewußtlosen Gärtner hat diese Fähigkeiten, weswegen diese Pflanze nicht angebaut wird.</NoGrowerCanPlant>
+
+  
 </LanguageData>
