@@ -16,6 +16,7 @@
   <Unowned>Frei</Unowned>
   <DeadTime>Tot seit {0}</DeadTime>
   <WalkSpeed>Laufgeschwindigkeit {0}</WalkSpeed>
+  <FertShort>fruchtb.</FertShort>
   <DyingLower>stirbt</DyingLower>
   <FilthOnFeet>Dreck an den Füßen:</FilthOnFeet>
   <NotEnoughStoredLower>zu wenig vorhanden</NotEnoughStoredLower>
@@ -42,7 +43,7 @@
   <Off>Aus</Off>
   <PowerSwitch_Power>Strom</PowerSwitch_Power>
   <JoyTolerances>Toleranzen Vergnügen</JoyTolerances>
-  <MentalStateLetterLabel>Geistiger Zustand</MentalStateLetterLabel>
+  <MentalBreakLetterLabel>Zusammenbruch</MentalBreakLetterLabel>
   <MilkFullness>Milchfüllung</MilkFullness>
   <WoolGrowth>Wachstum Wolle</WoolGrowth>
   <EggProgress>Fortschritt Ei</EggProgress>
@@ -55,6 +56,10 @@
   <BrokenDown>Defekt</BrokenDown>
   <BondBrackets>(verbunden)</BondBrackets>
   <Fuel>Kraftstoff</Fuel>
+  <Enemies>Gegner</Enemies>
+  <TimePassed>verstrichene Zeit</TimePassed>
+  <CurrentRadius>aktueller Radius</CurrentRadius>
+  <Permanent>permanent</Permanent>
 
   <!-- TextMotes -->
 
@@ -65,11 +70,13 @@
   <TextMote_TreatSuccess>Erfolgreich behandelt\n{0} Chance</TextMote_TreatSuccess>
   <TextMote_TreatFailed>Behandlung fehlgeschlagen\n{0} Chance</TextMote_TreatFailed>
   <HarvestFailed>Ernte\nfehlgeschlagen</HarvestFailed>
+  <TextMote_RecruitFail>Anwerbung fehlgeschlagen!\n{0} Chance</TextMote_RecruitFail>
   <TextMote_TameFail>Zähmung fehlgeschlagen\n{0} Chance</TextMote_TameFail>
   <TextMote_TameSuccess>Gezähmt!\n{0} Chance</TextMote_TameSuccess>
   <TextMote_TrainFail>Training erfolglos: {0}\n{1} Chance</TextMote_TrainFail>
   <TextMote_TrainSuccess>Training erfolgreich: {0}\n{1} Chance</TextMote_TrainSuccess>
   <TextMote_FixBrokenDownBuildingFail>Reparatur\nfehlgeschlagen</TextMote_FixBrokenDownBuildingFail>
+  <TextMote_ConstructionFail>Konstruktion\nfehlgeschlagen</TextMote_ConstructionFail>
 
   <!-- Areas -->
 
@@ -108,19 +115,25 @@
 
   <!-- Job reports -->
 
-  <ReportHaulingTo>Trägt {0} zu {1}.</ReportHaulingTo>
-  <ReportHauling>Trägt {0}.</ReportHauling>
-  <ReportSleeping>Schläft.</ReportSleeping>
-  <ReportResting>Ruht sich aus.</ReportResting>
-  <WatchingSunrise>Beobachtet Sonnenaufgang</WatchingSunrise>
-  <CloudWatching>Schaut den Wolken zu</CloudWatching>
-  <WatchingSunset>Beobachtet Sonnenuntergang</WatchingSunset>
-  <Stargazing>Beobachtet Sternenhimmel</Stargazing>
-  <WatchingEclipse>Beobachtet die Sonnenfinsternis</WatchingEclipse>
-  <DeliveringFood>Bringt Essen zu {0}.</DeliveringFood>
-  <UsingVerb>Benutzt {0} an {1}.</UsingVerb>
+  <ReportHaulingTo>trägt {0} zu {1}.</ReportHaulingTo>
+  <ReportHauling>trägt {0}.</ReportHauling>
+  <ReportSleeping>schläft.</ReportSleeping>
+  <ReportResting>ruht sich aus.</ReportResting>
+  <WatchingSunrise>beobachtet Sonnenaufgang</WatchingSunrise>
+  <CloudWatching>schaut den Wolken zu</CloudWatching>
+  <WatchingSunset>beobachtet Sonnenuntergang</WatchingSunset>
+  <Stargazing>beobachtet Sternenhimmel</Stargazing>
+  <WatchingEclipse>beobachtet die Sonnenfinsternis</WatchingEclipse>
+  <UsingVerb>benutzt {0} an {1}.</UsingVerb>
   <AreaLower>Gebiet</AreaLower>
-  <ReportCowering>Kauernd.</ReportCowering>
+  <ReportCowering>kauernd.</ReportCowering>
+  <ReportStanding>stehend.</ReportStanding>
+  <ReportExtinguishingFire>löscht Feuer.</ReportExtinguishingFire>
+  <ReportExtinguishingFireOn>löscht Feuer von {0}.</ReportExtinguishingFireOn>
+  
+  <!-- Lord job reports -->
+  <LordReportAttendingMarriageCeremony>Nimmt an Hochzeitszeremonie teil</LordReportAttendingMarriageCeremony>
+  <LordReportAttendingParty>Feiert auf Party</LordReportAttendingParty>
 
   <!-- Shooting report -->
 
@@ -129,12 +142,13 @@
   <ShootReportWeapon>Waffe</ShootReportWeapon>
   <RangeSlashEquipment>Reichweite/Ausrüstung</RangeSlashEquipment>
   <Darkness>Dunkelheit</Darkness>
-  <TargetProne>Zielanfälligkeit</TargetProne>
+  <TargetProne>Ziel liegt</TargetProne>
   <TargetSize>Zielgröße</TargetSize>
   <Weather>Wetter</Weather>
   <ShootingCover>Deckung</ShootingCover>
   <CoverThingBlocksPercentOfShots>{0} stoppt {1}</CoverThingBlocksPercentOfShots>
   <NoCoverLower>keine Deckung</NoCoverLower>
+  <Execution>Exekution</Execution>
 
   <!-- Generated recipes -->
 
@@ -188,8 +202,8 @@
 
   <TargetTemperature>Zieltemperatur</TargetTemperature>
   <PowerConsumptionMode>Aktueller Stromverbrauch</PowerConsumptionMode>
-  <PowerConsumptionHigh>Hoch</PowerConsumptionHigh>
-  <PowerConsumptionLow>Niedrig</PowerConsumptionLow>
+  <PowerConsumptionHigh>hoch</PowerConsumptionHigh>
+  <PowerConsumptionLow>niedrig</PowerConsumptionLow>
 
   <!-- Temperature readout -->
 
@@ -207,15 +221,6 @@
 
   <ShotBy>Angeschossen von {0}</ShotBy>
   <CannotHit>Kann das Ziel nicht treffen.</CannotHit>
-
-  <!-- Storage priority labels -->
-
-  <StoragePriorityUnstored>Nicht lagern</StoragePriorityUnstored>
-  <StoragePriorityLow>Niedrig</StoragePriorityLow>
-  <StoragePriorityNormal>Normal</StoragePriorityNormal>
-  <StoragePriorityPreferred>Bevorzugt</StoragePriorityPreferred>
-  <StoragePriorityImportant>Wichtig</StoragePriorityImportant>
-  <StoragePriorityCritical>Kritisch</StoragePriorityCritical>
 
   <!-- Rotting -->
 
@@ -272,6 +277,7 @@
   <ZoneVisibilityToggleButton>Schalte die Sichtbarkeit der Zonen ein/aus.</ZoneVisibilityToggleButton>
   <ShowBeautyToggleButton>Schalte das Aussehen ein/aus.\n\nZeigt das Aussehen der Welt in Zahlen, wie ein Kolonist es sehen würde, wenn er an der Position des Mauszeigers steht.</ShowBeautyToggleButton>
   <ShowRoomStatsToggleButton>Schalte die Raumstatusanzeige ein/aus.\n\nZeigt verschiedene Werte des Raumes unter dem Mauszeiger an.</ShowRoomStatsToggleButton>
+  <ShowColonistBarToggleButton>Schalte die Kolonistenanzeige ein/aus.\n\nZeigt Bilder und den Grundzustand aller Kolonisten am oberen Bildschirmrand an.</ShowColonistBarToggleButton>
   <AutoHomeAreaToggleButton>Schalte das automatische Erweitern des Heimgebietes bei neuen Konstruktionen ein/aus.</AutoHomeAreaToggleButton>
   <CategorizedResourceReadoutToggleButton>Schalte die kategorisierte Rohstoffanzeige ein/aus.</CategorizedResourceReadoutToggleButton>
   <ShowAnimalNamesToggleButton>Schalte die Anzeige der Tiernamen bei benannten zahmen Tieren ein/aus.</ShowAnimalNamesToggleButton>
@@ -286,7 +292,9 @@
   <!-- Map conditions (eclipse, solar flare, etc ) -->
 
   <MapConditionsTip>Spezielle Umstände beeinflussen gerade die Umgebung.</MapConditionsTip>
-
+  <TimeLeft>verbleibende Zeit</TimeLeft>
+  <ImpactDate>Datum des Einschlages</ImpactDate>
+  
   <!-- Building placement -->
 
   <NoStuffsToBuildWith>Du hast kein Material, um das zu bauen.</NoStuffsToBuildWith>
@@ -309,7 +317,6 @@
   <!-- Cryptosleep casket -->
 
   <CasketContains>Enthält</CasketContains>
-  <CasketUnknownContents>Unbekannt</CasketUnknownContents>
   <CasketWarning>Warnung!\n\nNAME ist dein letzter verfügbarer Kolonist! Wenn du HIM in die Kapsel steigen lässt, kannst du evtl. nicht weiterspielen.\nBist du dir sicher, dass du fortfahren willst?</CasketWarning>
 
   <!-- Ship launch report -->
@@ -321,16 +328,7 @@
 
   <!-- Neurotrainer -->
 
-  <UseNeurotrainer>Benutze Neurotrainer zum Lernen von {0}</UseNeurotrainer>
   <NeurotrainerUsed>{0} benutzte einen Neurotrainer für {1} um von Level {2} auf Level {3} aufzusteigen.</NeurotrainerUsed>
-
-  <!-- Artifact -->
-
-  <UseArtifact>Aktiviere</UseArtifact>
-
-  <!-- Firefoam popper -->
-
-  <TriggerFirefoamPopper>Löschschaumwerfer auslösen</TriggerFirefoamPopper>
 
   <!-- Minification -->
 
@@ -367,6 +365,7 @@
 
   <GameOverEveryoneDead>Alle sind tot oder fort. Diese Geschichte ist zu Ende.\n\nVielleicht findet jemand anderes einen Nutzen für die noch stehenden Ruinen.</GameOverEveryoneDead>
   <GameOverShipLaunched>Dein Raumschiff ist gestartet und hat die folgenden Kolonisten mitgenommen:\n\n{0}\nFolgende Kolonisten wurden zurückgelassen:\n\n{1}\nDeine Schiffs-KI wird versuchen, das Raumschiff an einen sicheren Ort zu bringen.\n Vielleicht findet sie hier im System einen blühenden Planeten für euch oder sie unternimmt eine Jahrhunderte andauernde Reise zu einem anderen Stern. Es kann aber auch sein, dass sie sich dafür entscheidet, ein paar tausend Jahre unter dem Eis eines Asteroiden darauf zu warten, dass hier jemand eine neue Glitzerwelt aufbaut.\n\nDu wirst es erfahren, wenn du wieder erwachst.</GameOverShipLaunched>
+  <GameOverPlanetkillerImpact>Mit einer Geschwindigkeit nahe der Lichtgeschwindigkeit schlägt der Planetenkiller in die Oberfläche ein und entwickelt dabei eine Sprengkraft, die mehreren Billionen Wasserstoffbomben entspricht. Wie ein Wasserballon, der von einer Gewehrkugel durchschlagen wird, verflüssigt sich diese Welt aufgrund des Einschlages und spritzt seine geschmolzene Oberfläche in alle Richtungen ins All.\n\nEin Teil von {0} ist jetzt ein kleiner Asteroidengürtel. Der Rest ist eine geschmolzene, radioaktive Höllenlandschaft, die ständig von mehrere Kilometer hohen Erdbebenwellen erschüttert wird.\n\nDu hast nicht überlebt.</GameOverPlanetkillerImpact>
   <GameOverKeepPlaying>Weiterspielen</GameOverKeepPlaying>
   <GameOverMainMenu>Hauptmenü</GameOverMainMenu>
 
@@ -390,4 +389,24 @@
   <DiseaseGrowthModeChanged_Stable>{0}'s {1} ist stabil.</DiseaseGrowthModeChanged_Stable>
   <DiseaseGrowthModeChanged_Remission>{0}'s {1} ist am Abklingen.</DiseaseGrowthModeChanged_Remission>
 
+  
+  <!-- Marriage spot -->
+  <MarriageSpotUsable>Ist verwendbar.</MarriageSpotUsable>
+  <MarriageSpotNotUsable>Nicht verwendbar: {0}.</MarriageSpotNotUsable>
+  <MarriageSpotNotStandable>blockiert</MarriageSpotNotStandable>
+  <MarriageSpotDangerous>zu gefährlich für {0}</MarriageSpotDangerous>
+  <MarriageSpotForbidden>für {0} verboten</MarriageSpotForbidden>
+  <MarriageSpotReserved>reserviert</MarriageSpotReserved>
+  <MarriageSpotUnreachable>{0} kann es nicht erreichen</MarriageSpotUnreachable>
+  <MarriageSpotInPrisonCell>im Gefängnis</MarriageSpotInPrisonCell>
+  <NotEnjoyableOutsideTemperature>Temperatur ist unangenehm</NotEnjoyableOutsideTemperature>
+  
+  <!-- Colonist bar -->
+  <ActivityIconMedicalRest>Med. Bettruhe</ActivityIconMedicalRest>
+  <ActivityIconSleeping>Schlafend</ActivityIconSleeping>
+  <ActivityIconFleeing>Flüchtend</ActivityIconFleeing>
+  <ActivityIconAttacking>Kämpfend</ActivityIconAttacking>
+  <ActivityIconIdle>Untätig</ActivityIconIdle>
+  <ActivityIconBurning>Brennend</ActivityIconBurning>
+  
 </LanguageData>

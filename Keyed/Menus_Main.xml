@@ -6,8 +6,9 @@
   <CreateWorld>Welt erstellen</CreateWorld>
   <NewColony>Neue Kolonie gründen</NewColony>
   <BackToGame>Zurück zum Spiel</BackToGame>
+  <ReviewScenario>Überprüfe Szenario</ReviewScenario>
   <Save>Speichern</Save>
-  <Load>Kolonie laden</Load>
+  <LoadGame>Spiel laden</LoadGame>
   <Options>Optionen</Options>
   <Mods>Mods</Mods>
   <Credits>Credits</Credits>
@@ -51,7 +52,7 @@
 
   <GenerateWorld>Welt generieren</GenerateWorld>
 
-  <!-- Mods screen -->
+  <!-- Mods config -->
 
   <OpenSteamWorkshop>Öffne Steam Workshop</OpenSteamWorkshop>
   <GetModsFromForum>Hole Mods vom Forum</GetModsFromForum>
@@ -66,9 +67,32 @@
   <UpdateOnSteamWorkshop>Aktualisiere im Steam Workshop</UpdateOnSteamWorkshop>
   <UploadAlreadyInProgress>Upload läuft bereits.</UploadAlreadyInProgress>
   <WorkshopSubmissionFailed>Übertragung zum Workshop fehlgeschlagen.\n\nUrsache: {0}</WorkshopSubmissionFailed>
-  <YouAgreeToSteamWorkshopLegal>Wenn du diese Mod überträgst, akzeptierst du automatisch die Geschäftsbedingungen des Steam Workshops. Für mehr Informationen hier klicken.</YouAgreeToSteamWorkshopLegal>
   <WorkshopUploadSucceeded>Übertragung von {0} war erfolgreich.</WorkshopUploadSucceeded>
-  <DownloadingMod>Lade {0}</DownloadingMod>
+  <Downloading>Lade</Downloading>
+  <Source>Quelle</Source>
+  <ModTargetVersion>Erstellt für Version: {0}</ModTargetVersion>
+  <ModNotMadeForThisVersion>Diese Mod ist nicht für die aktuelle Version von RimWorld erstellt worden und wird wahrscheinlich nicht richtig funktionieren.</ModNotMadeForThisVersion>
+  <MessageModNeedsWellFormattedTargetVersion>Die Mod benötigt eine gut formatierte Ziel-Version in der Datei About.xml. Sie sollte in etwa so aussehen: &lt;targetVersion&gt;{0}&lt;/targetVersion&gt;.</MessageModNeedsWellFormattedTargetVersion>
+  
+  <!--=========== Select scenario =============-->
+  <ChooseScenario>Szenario auswählen</ChooseScenario>
+  <ScenariosCustom>Anpassen</ScenariosCustom>
+  <ScenariosSteamWorkshop>Steam Workshop</ScenariosSteamWorkshop>
+  <ScenarioEditor>Szenario Editor</ScenarioEditor>
+  <Delete>Löschen</Delete>
+  
+  <!--============ Scenario editor ===============-->
+  <Seed>Seed</Seed>
+  <Load>Laden</Load>
+  <EditMode>Editier Modus</EditMode>
+  <Summary>Zusammenfassung</Summary>
+  <AddPart>Eintrag hinzufügen</AddPart>
+  <TextFieldsMustBeFilled>Alle Textfelder müssen ausgefüllt sein.</TextFieldsMustBeFilled>
+  <ConfirmSteamWorkshopUpload>Bist du dir sicher, dass du das in den Steam Workshop hochladen willst?\n\nDu musst die Geschäftsbedingungen des Steam Workshops akzeptieren. Die Geschäftsbedingungen findest du hier:\n\nhttp://steamcommunity.com/sharedfiles/workshoplegalagreement</ConfirmSteamWorkshopUpload>
+  <Incompatible>Inkompatibel</Incompatible>
+  <TooMany>Zu viele (max {0}): </TooMany>
+  <CanBeUpdatedOnWorkshop>Da du der Author bist, kann das im Workshop aktualisiert werden.</CanBeUpdatedOnWorkshop>
+  
 
   <!-- Select storyteller -->
 
@@ -97,9 +121,9 @@
   <Terrain>Landschaft</Terrain>
   <Elevation>Höhe</Elevation>
   <Fertility>Fruchtbarkeit</Fertility>
-  <AvgTemp>Mitteltemp.</AvgTemp>
-  <AvgJanTemp>Mitteltemp. (Jan): {0}</AvgJanTemp>
-  <AvgJulTemp>Mitteltemp. (Jul): {0}</AvgJulTemp>
+  <AvgTemp>Durchschn.Temp.</AvgTemp>
+  <AvgWinterTemp>Mitteltemp. (Winter): {0}</AvgWinterTemp>
+  <AvgSummerTemp>Mitteltemp. (Sommer): {0}</AvgSummerTemp>
   <Rainfall>Niederschlag</Rainfall>
   <HasCoast0>Nördliche Küste</HasCoast0>
   <HasCoast1>Östliche Küste</HasCoast1>
