@@ -20,6 +20,10 @@
   <ErrorWhileLoadingMapTitle>Fehler beim Laden der Karte</ErrorWhileLoadingMapTitle>
   <ErrorWhileLoadingMap>Beim Laden der Karte ist ein Fehler aufgetreten. Siehe in das Logfile um zusätzliche Informationen zu erhalten.</ErrorWhileLoadingMap>
 
+  <!-- Missing Steam -->
+  
+  <SteamClientMissing>Cann die Steam API nicht initialisieren. Mögliche Ursachen:\n\n-Steam läuft nicht.\n-Wurde außerhalb von Stema gestartet, ohne dass eine steam_appid.txt vorhanden ist.\n-Wurden mit unterschiedlichen Berechtigungen zum Steam-Client gestartet (z.B. "als Administrator").\n\nDiese Steam Version des Spieles benötigt Steam und wird jetzt beendet.</SteamClientMissing>
+  
   <!-- Long events -->
 
   <InitializingInterface>Initialisiere Oberfläche</InitializingInterface>
@@ -49,7 +53,7 @@
   <SaveIsFromDifferentGameBuild>Die aktuelle Version {0} weicht nur geringfügig von der benutzten Version {1} des Spielstands ab.\n\nDer Versuch, diesen Spielstand zu laden, sollte ohne Probleme funktionieren.</SaveIsFromDifferentGameBuild>
   <SaveIsFromThisGameBuild>Der Spielstand wurde mit der gleichen Version erstellt und sollte ohne Probleme funktionieren.</SaveIsFromThisGameBuild>
   <SaveIsUnknownFormat>Der Spielstand ist in einem unbekannten Format. Es besteht die Gefahr, der Spielstand nicht richtig geladen werden kann.</SaveIsUnknownFormat>
-  <ProblemSavingFile>Beim Speichern der Datei '{0}' ist ein Fehler aufgetreten:\n\n{1}</ProblemSavingFile>
+  <ProblemSavingFile>Beim Speichern der Datei '{0}' ist ein Fehler aufgetreten:\n\n{1}\n\nSchaue im Error Log nach, um mehr Informationen zu erhalten.</ProblemSavingFile>
   <LoadAnyway>Trotzdem laden</LoadAnyway>
 
   <!-- Colony naming -->
@@ -125,7 +129,7 @@
   <CurrentlyHave>Aktuell vorhanden</CurrentlyHave>
   <CountingProducts>Zähle</CountingProducts>
   <Infinite>Unendlich</Infinite>
-  <MinimumSkillLevel>{0}-Minimalstufe</MinimumSkillLevel>
+  <AllowedSkillRange>Erlaubte Stufe {0}:</AllowedSkillRange>
 
   <RecipeCannotHaveTargetCount>Diese Aufgabe produziert mehrere oder unvorhersehbare Endprodukte.</RecipeCannotHaveTargetCount>
   <WorkAmount>Arbeitsaufwand</WorkAmount>
@@ -187,7 +191,7 @@
 
   <!-- Trade -->
 
-  <DragToTrade>Zum handeln\nZahl ziehen</DragToTrade>
+  <PositiveBuysNegativeSells>Positiv bedeutet kaufen.\nNegative Zahlen verkaufen.</PositiveBuysNegativeSells>
   <BuyPriceDesc>Der Geldbetrag, den du zahlen musst, um diese Ware zu kaufen.</BuyPriceDesc>
   <SellPriceDesc>Der Geldbetrag, den du bekommst, wenn du diese Ware verkaufst.</SellPriceDesc>
   <PriceTypeDesc>Der Preis dieser Ware ist {0}.</PriceTypeDesc>
