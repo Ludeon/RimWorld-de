@@ -4,10 +4,9 @@ RimWorld German
 This is the german translation data for RimWorld.
 
 See this page for license info:
+
 http://ludeon.com/forums/index.php?topic=2933.0
 
-See this page for the forum discussion:
-https://ludeon.com/forums/index.php?topic=3945.0
 
 
 Official Translators:
