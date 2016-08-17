@@ -6,18 +6,18 @@
   <OK>OK</OK>
 
   <!-- Game updated to new version -->
-  <GameUpdatedToNewVersionInitial>RimWorld wurde von Version {0} zu Version {1} aktualisiert.\n\nDadurch kann es sein, dass Mods und Speicherstände nicht mehr funktionieren.</GameUpdatedToNewVersionInitial>
-  <GameUpdatedToNewVersionNonSteam>Da dies die DRM-freie Version ist, kannst du das Spiel in zwei verschiedenen Ordnern installieren, und die alte und neue Version spielen.</GameUpdatedToNewVersionNonSteam>
-  <GameUpdatedToNewVersionSteam>Wenn du auf der alten Version weiterspielen möchtest, kannst du dies mit dem Steam 'Beta'-Feature machen.\n\n  1. In deiner Steam Bibliothek, klicke mit der rechten Maustaste auf 'RimWorld'.\n  2. Klicke auf Eigenschaften.\n  3. Klicke auf den 'Betas'-Reiter.\n  4. Wähle die Version die du möchtest.\n\nAlte Versionen werden letztendlich gelöscht - wir wollen dir nur ermöglichen ein laufendes Spiel zuende zu spielen.</GameUpdatedToNewVersionSteam>
   
+  <GameUpdatedToNewVersionInitial>RimWorld wurde von Version {0} zur Version {1} aktualisiert.\n\nHierdurch kann es passieren, dass Mods und Spielstände nicht mehr funktionieren.</GameUpdatedToNewVersionInitial>
+  <GameUpdatedToNewVersionNonSteam>Da dieses die DRM-freie Version ist, kannst du das Spiel in zwei verschiedenen Ordnern installieren, und so die alte und neue Version spielen.</GameUpdatedToNewVersionNonSteam>
+  <GameUpdatedToNewVersionSteam>Wenn du auf der alten Version weiterspielen möchtest, kannst du dies mit den 'Betas'-Feature von Steam machen.\n\n  1. In deiner Steam Bibliothek, klicke mit der rechten Maustaste auf 'RimWorld'.\n  2. Klicke auf Eigenschaften.\n  3. Klicke auf den Reiter 'Betas'.\n  4. Wähle die Version die du möchtest.\n\nAlte Versionen werden letztendlich gelöscht - wir wollen dir nur ermöglichen ein laufendes Spiel zuende zu spielen.</GameUpdatedToNewVersionSteam>
   
   <!-- Recovered from errors caused by mods -->
-
+  
   <RecoveredFromErrorsDialogTitle>Spiel aufgrund von Fehlern durch inkompatiblen oder korrupten Mods wiederhergestellt</RecoveredFromErrorsDialogTitle>
   <RecoveredFromErrorsText>Es sieht so aus, als wenn von den aktiven Mods einige Fehler verursachen.\n\nSie waren inkompatible zueinander, erstellt für eine andere RimWorld-Version oder beschädigt.\n\nAlle Mods wurden deaktiviert, können aber im Mod-Dialog wieder aktiviert werden.</RecoveredFromErrorsText>
 
   <!-- Errors during loading -->
-
+  
   <ErrorWhileLoadingAssetsTitle>Fehler beim Laden der Komponenten</ErrorWhileLoadingAssetsTitle>
   <ErrorWhileLoadingAssets>Beim Laden der Spielkomponenten ist ein Fehler aufgetreten. Siehe in das Logfile um zusätzliche Informationen zu erhalten.</ErrorWhileLoadingAssets>
   <ErrorWhileLoadingAssets_ModsInfo>Das Spiel läuft aktuell mit Modifikationen - Eventuell sind sie die Ursache des Problems.</ErrorWhileLoadingAssets_ModsInfo>
@@ -28,11 +28,12 @@
 
   
    <!-- Unloaded mod with an assembly -->
-  <ModWithAssemblyWasUnloaded>Das Spiel konnte eine Modifikation nicht ganz entladen, es kann sein das mancher Code von Mods nocht aktiv ist.\n\nEs wird empfohlen, dass du das Spiel neustartest damit die Mods sauber geladen werden.</ModWithAssemblyWasUnloaded>
+   
+  <ModWithAssemblyWasUnloaded>Das Spiel kann den Code von Modifikation nicht ganz entladen, weswegen es passieren kann, dass Mod-Code noch aktiv ist.\n\nEs wird empfohlen das Spiel neu zu starten, damit die Mods alle sauber geladen werden.</ModWithAssemblyWasUnloaded>
   
   <!-- Missing Steam -->
   
-  <SteamClientMissing>Cann die Steam API nicht initialisieren. Mögliche Ursachen:\n\n-Steam läuft nicht.\n-Wurde außerhalb von Stema gestartet, ohne dass eine steam_appid.txt vorhanden ist.\n-Wurden mit unterschiedlichen Berechtigungen zum Steam-Client gestartet (z.B. "als Administrator").\n\nDiese Steam Version des Spieles benötigt Steam und wird jetzt beendet.</SteamClientMissing>
+  <SteamClientMissing>Cann die Steam API nicht initialisieren. Mögliche Ursachen:\n\n-Steam läuft nicht.\n-Wurde außerhalb von Stema gestartet, ohne dass eine steam_appid.txt vorhanden ist.\n-Wurden mit unterschiedlichen Berechtigungen zum Steam-Client gestartet (z.B. "als Administrator").\n\nIn den meissten Fällen hilft es, den Computer neu zu starten um dieses Problem zu beheben.\n\nDiese Steam Version des Spieles benötigt Steam und wird jetzt beendet.</SteamClientMissing>
   
   <!-- Long events -->
 
@@ -189,6 +190,8 @@
   <RecruitDifficulty>Anwerbschwierigkeit</RecruitDifficulty>
   <MarketValue>Grundpreis</MarketValue>
   <Covers>Verdeckt</Covers>
+  <CoverEffectiveness>Effektivität der Deckung</CoverEffectiveness>
+  <CoverEffectivenessExplanation>Wie effektiv dieses Objekt in einem Kampf als Deckung benutzt werden kann. Eine höhere Prozentzahl fängt mehr Schüsse ab.</CoverEffectivenessExplanation>
   <MedicineXpGainFactor>Erfahrungseinfluss</MedicineXpGainFactor>
   <BodyPartEfficiency>Effektivität des Körperteils</BodyPartEfficiency>
   <MoodChange>Stimmungsschwankung</MoodChange>
@@ -198,9 +201,10 @@
   <AnimalFilthRateExplanation>Tiere erzeugen Schmutz wenn sie über konstruierten Boden laufen. Dieses gibt die durchschnittliche Anzahl an Dreck pro {0} Zellen an, über die die Kreatur läuft\n\nGrößere und weniger Haustier-Ähnliche Tiere verursachen mehr Schmutz.</AnimalFilthRateExplanation>
   <TimeRecordsCategory>Zeit</TimeRecordsCategory>
   <MiscRecordsCategory>Versch.</MiscRecordsCategory>
+  <Addictiveness>Suchtgefahr</Addictiveness>
 
   <!-- Trade -->
-
+  
   <PositiveBuysNegativeSells>Positiv bedeutet kaufen.\nNegative Zahlen verkaufen.</PositiveBuysNegativeSells>
   <BuyPriceDesc>Der Geldbetrag, den du zahlen musst, um diese Ware zu kaufen.</BuyPriceDesc>
   <SellPriceDesc>Der Geldbetrag, den du bekommst, wenn du diese Ware verkaufst.</SellPriceDesc>
@@ -210,6 +214,7 @@
   <AcceptButton>Annehmen</AcceptButton>
   <ResetButton>Reset</ResetButton>
   <CancelButton>Abbruch</CancelButton>
+  <CloseButton>Schließen</CloseButton>
   <YourTradeableSilver>Dein handelbares Silber: {0}</YourTradeableSilver>
   <YourTradeableSilverTip>Du kannst nur mit Silber handeln, das in Reichweite des orbitalen Funkfeuers ist.</YourTradeableSilverTip>
   <TraderHasNoMore>Händler hat nichts mehr.</TraderHasNoMore>
@@ -220,16 +225,16 @@
   <SortBy>Sortieren:</SortBy>
 
   <!-- Comms -->
-
+  
   <SocialSkillIs>Soziale Fähigkeit: {0}</SocialSkillIs>
 
   <!-- Research -->
-
+  
   <ResearchFinished>Forschung abgeschlossen: {0}</ResearchFinished>
   <ResearchScreen>Forschungsmenü</ResearchScreen>
 
   <!-- HistoryUpload -->
-
+  
   <HistoryUploadMessage>Möchtest Du die Informationen deines Spielverlaufs auf den RimWorld-Server hochladen, damit die Entwickler das Spiel verbessern können? Wenn Du dem zustimmst, werden die Daten Deines Spiels alle {0} Tage (bzw. zu seltenen Ereignissen, wie z.B. dem Ende des Spiels) hochgeladen. Die Einstellungen können in den Optionen noch geändert werden.</HistoryUploadMessage>
   <HistoryUploadMessagePlayerName>Die Spieldaten werden anonym versendet, aber Du kannst auch Deinen Namen hinzufügen.</HistoryUploadMessagePlayerName>
   <HistoryUploadYes>Die Spieldaten immer hochladen</HistoryUploadYes>
@@ -238,7 +243,7 @@
   <HistoryUploadNoOnce>Dieses Mal nicht, aber frag mich später noch einmal.</HistoryUploadNoOnce>
 
   <!-- Outfit management -->
-
+  
   <Outfit>Outfit</Outfit>
   <SelectOutfit>Outfit auswählen...</SelectOutfit>
   <NewOutfit>Neues Outfit</NewOutfit>
@@ -246,7 +251,36 @@
   <OutfitInUse>Outfit wird von {0} benutzt.</OutfitInUse>
   <NoOutfitSelected>Kein Outfit ausgewählt</NoOutfitSelected>
 
+  <!-- Drug policy management -->
+  
+  <DrugPolicy>Drogen Richtlinien</DrugPolicy>
+  <SelectDrugPolicy>Wähle Richtlinie...</SelectDrugPolicy>
+  <NewDrugPolicy>Neue Richtlinie</NewDrugPolicy>
+  <DeleteDrugPolicy>Entferne Richtlinie...</DeleteDrugPolicy>
+  <DrugPolicyInUse>Drogenrichtlinie wird von {0} verwendet.</DrugPolicyInUse>
+  <NoDrugs>Keine Drogen</NoDrugs>
+  <OneDrinkPerDay>Ein Drink pro Tag</OneDrinkPerDay>
+  <NoDrugPolicySelected>Keine Drogenrichtlinie ausgewählt</NoDrugPolicySelected>
+  <AddDrug>Droge Hinzufügen...</AddDrug>
+  <DrugColumnLabel>Droge</DrugColumnLabel>
+  <FrequencyColumnLabel>Häufigkeit</FrequencyColumnLabel>
+  <MoodThresholdColumnLabel>Nur wenn Stimmung kleiner</MoodThresholdColumnLabel>
+  <JoyThresholdColumnLabel>Nur wenn Freude kleiner</JoyThresholdColumnLabel>
+  <TakeToInventoryColumnLabel>Ins Inventar nehmen</TakeToInventoryColumnLabel>
+  <NoDrugsBrackets>(keine Drogen)</NoDrugsBrackets>
+  <EveryDay>Jeden Tag</EveryDay>
+  <TimesPerDay>{0} mal pro Tag</TimesPerDay>
+  <EveryDays>Alle {0} Tage</EveryDays>
+  <NoDrugUseRequirement>Alle</NoDrugUseRequirement>
+  <DeleteDrugTooltip>Diese Droge entfernen.</DeleteDrugTooltip>
+  <DrugNameColumnDesc>Der Name einer Droge.</DrugNameColumnDesc>
+  <FrequencyColumnDesc>Wie oft ein Kolonist versuchen soll diese Droge einzunehmen.</FrequencyColumnDesc>
+  <MoodThresholdColumnDesc>Der Kolonist wird diese Droge nur nehmen, wenn seine Stimmung unter diesem Schwellenwert liegt.</MoodThresholdColumnDesc>
+  <JoyThresholdColumnDesc>Der Kolonist wird diese Droge nur nehmen, wenn seine Freude unter diesem Schwellenwert liegt.</JoyThresholdColumnDesc>
+  <TakeToInventoryColumnDesc>Eine zusätzliche Menge an Drogen die aufgenommen wird, um zu verhindern, dass man jedes Mal wieder zum Drogen-Lager laufen muss.</TakeToInventoryColumnDesc>
+  
   <!-- Growing -->
+  
   <NoGrowerCanPlant>{0} benötigt zum Anpflanzen eine Fähigkeit von {1} als Gärtner.\n\nKeiner deiner nicht-bewußtlosen Gärtner hat diese Fähigkeiten, weswegen diese Pflanze nicht angebaut wird.</NoGrowerCanPlant>
 
   
