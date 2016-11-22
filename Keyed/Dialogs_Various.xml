@@ -45,8 +45,9 @@
   <Initializing>Initialisiere</Initializing>
   <LoadingWorld>Lade Welt</LoadingWorld>
   <LoadingMap>Lade Karte</LoadingMap>
-  <InitializingMap>Initialisiere Karte</InitializingMap>
+  <InitializingGame>Initialisiere Karte</InitializingGame>
   <SpawningAllThings>Erzeuge Gegenstände</SpawningAllThings>
+  <SpawningColonists>Erzeuge Kolonisten</SpawningColonists>
 
   <!-- Save/load -->
 
@@ -67,12 +68,20 @@
   <ProblemSavingFile>Beim Speichern der Datei '{0}' ist ein Fehler aufgetreten:\n\n{1}\n\nSchaue im Error Log nach, um mehr Informationen zu erhalten.</ProblemSavingFile>
   <LoadAnyway>Trotzdem laden</LoadAnyway>
 
-  <!-- Colony naming -->
+  <!-- Player faction naming -->
+  <NamePlayerFactionMessage>{0} ist der Meinung, dass ihr dieser Gemeinschaft einen Namen geben sollt.\n\nWie soll sie heißen?</NamePlayerFactionMessage>
+  <PlayerFactionGainsName>Die Gemeinschaft heißt jetzt {0}.</PlayerFactionGainsName>
+  <PlayerFactionNameIsInvalid>Dieser Name ist ungültig.</PlayerFactionNameIsInvalid>
 
-  <NameColonyMessage>Da es so aussieht als würdet ihr eine Weile bleiben, schlägt {0} vor der Gemeinschaft einen Namen zu geben.\n\nWie soll sie heißen?</NameColonyMessage>
-  <ColonyGainsName>Eure Gemeinschaft heißt jetzt '{0}'.</ColonyGainsName>
-  <ColonyNameIsInvalid>Dieser Name ist ungültig.</ColonyNameIsInvalid>
+  <!-- Player faction base naming -->
+  <NamePlayerFactionBaseMessage>Da es so aussieht als würdet ihr eine Weile bleiben, schlägt {0} vor der Gemeinschaft einen Namen zu geben.\n\nWie soll sie heißen?</NamePlayerFactionBaseMessage>
+  <PlayerFactionBaseGainsName>Eure Gemeinschaft heißt jetzt {0}.</PlayerFactionBaseGainsName>
+  <PlayerFactionBaseNameIsInvalid>Dieser Name ist ungültig.</PlayerFactionBaseNameIsInvalid>
 
+  <!-- Player faction and faction base naming -->
+  <NamePlayerFactionBaseMessage_NameFactionContinuation>Da es so aussieht als würdet ihr eine Weile bleiben, schlägt {0} vor auch dem Ort einen Namen zu geben.\n\nWie soll er heißen?</NamePlayerFactionBaseMessage_NameFactionContinuation>
+  <PlayerFactionAndBaseGainsName>Eure Gemeinschaft heißt jetzt {0} und dieser Ort wird {1} genannt.</PlayerFactionAndBaseGainsName>
+  
   <!-- Renaming -->
 
   <NameIsInvalid>Bitte gib einen gültigen Namen ein.</NameIsInvalid>
@@ -176,8 +185,7 @@
   <Days>Tage</Days>
   <MinGrowingSkillToSow>Minimal benötigte Erfahrung zum Anpflanzen</MinGrowingSkillToSow>
   <FertilityRequirement>Benötigte Fruchtbarkeit</FertilityRequirement>
-  <SoilFertilitySensitivityGrowthRate>Fruchtbarkeit des Bodens (Wachstumsrate)</SoilFertilitySensitivityGrowthRate>
-  <SoilFertilitySensitivityPlantChance>Fruchtbarkeit des Bodens (Anpflanz Chance)</SoilFertilitySensitivityPlantChance>
+  <FertilitySensitivity>Empfängliche Fruchtbarkeit</FertilitySensitivity>
   <LightRequirement>Benötigte Helligkeit</LightRequirement>
   <Attributes>Attribute</Attributes>
   <LifeSpan>Lebensdauer</LifeSpan>
@@ -187,6 +195,7 @@
   <WalkSpeedProperty>Laufgeschwindigkeit</WalkSpeedProperty>
   <MinFoodQuality>Min. Essensqualität</MinFoodQuality>
   <Diet>Nahrung</Diet>
+<BodySize>Körpergröße</BodySize>
   <RecruitDifficulty>Anwerbschwierigkeit</RecruitDifficulty>
   <MarketValue>Grundpreis</MarketValue>
   <Covers>Verdeckt</Covers>
