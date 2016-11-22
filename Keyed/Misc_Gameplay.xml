@@ -23,9 +23,9 @@
   <NothingLower>nichts</NothingLower>
   <Adapted>Angepasst</Adapted>
   <FreshMissingBodyPart>frisch</FreshMissingBodyPart>
-
+  <UntreatedLower>unbehandelt</UntreatedLower>
   <DevelopedImmunityLower>wurde immun</DevelopedImmunityLower>
-  <NeedsTendingNow>Kann ohne Behandlung nicht verheilen</NeedsTendingNow>
+  <InjuryRequiresTreatment>Kann ohne Behandlung nicht verheilen</InjuryRequiresTreatment>
   <NextTreatmentIn>Nächste Behandlung in {0}</NextTreatmentIn>
   <MissingMedicalBillIngredient>keine {0}</MissingMedicalBillIngredient>
   <Immunity>Immunität</Immunity>
@@ -49,69 +49,21 @@
   <Fertilized>Befruchtet</Fertilized>
   <ProgressStoppedUntilFertilized>Fortschritt gestoppt, wartet auf Befruchtung</ProgressStoppedUntilFertilized>
   <SkillTooLow>benötigt {0} auf Level {2}, hat {1}</SkillTooLow>
-  <Freezing>Friert</Freezing>
-  <Overheating>Überhizzt</Overheating>
-  <RuinedByTemperature>Zerstört durch Temperatur.</RuinedByTemperature>
+  <EggDamagedEmbryo>Geschädigter Embryo</EggDamagedEmbryo>
   <CorpsePercentMissing>Fehlende Körperteile</CorpsePercentMissing>
   <HiveReproducesIn>Erweitert sich in</HiveReproducesIn>
   <BrokenDown>Defekt</BrokenDown>
   <BondBrackets>(verbunden)</BondBrackets>
   <Fuel>Kraftstoff</Fuel>
-  <FuelLevelGizmoLabel>Kraftstoffstand</FuelLevelGizmoLabel>
-  <SetTargetFuelLevel>Stelle Ziel-Kraftstoffstand auf {0}</SetTargetFuelLevel>
-  <SetPodLauncherTargetFuelLevel>Stelle Ziel-Kraftstoffstand auf {0}\nMax Distanz: {1} tiles</SetPodLauncherTargetFuelLevel>
-  <ConfiguredTargetFuelLevel>Ziel-Kraftstoffstand: {0}</ConfiguredTargetFuelLevel>
-
   <Enemies>Gegner</Enemies>
   <TimePassed>verstrichene Zeit</TimePassed>
   <CurrentRadius>aktueller Radius</CurrentRadius>
   <RadiusExpandsIn>Radius erweitert sich in</RadiusExpandsIn>
   <Permanent>permanent</Permanent>
-  
-  <CaravanResting>Pausiert</CaravanResting>
-  <CaravanEstimatedTimeToDestination>Voraussichtliche Ankunftszeit: {0}</CaravanEstimatedTimeToDestination>
-  <CaravanImmobilizedByMass>Immobilisiert: zu viel Gewicht.</CaravanImmobilizedByMass>
-  <CaravanOutOfFood>Keine Nahrung.</CaravanOutOfFood>
-  <CaravanDaysOfFood>Nahrungsvorrat: {0}</CaravanDaysOfFood>
-	<CaravanMemberMentalBreak>Angehalten weil: {0} hat einen Zusammenbruch.</CaravanMemberMentalBreak>
-	<AllCaravanMembersDowned>Angehalten weil: jeder ist bewusstlost.</AllCaravanMembersDowned>
-	<CaravanTraveling>Reist</CaravanTraveling>
-	<CaravanWaiting>Wartet</CaravanWaiting>
-	<CaravanHoursPerTile>h/Feld</CaravanHoursPerTile>
-	<CaravanBaseMovementTime>Basisbewegungszeit</CaravanBaseMovementTime>
-	<CurrentTileMovementTime>Momentane Bewegungszeit</CurrentTileMovementTime>
-	
-  
   <Temperature>Temperatur</Temperature>
   <BadTemperature>Ungünstige Temperatur</BadTemperature>
   <IdealFermentingTemperature>Ideale Fermentierungstemperatur</IdealFermentingTemperature>
   <DrugEffectMultiplier>{0} Effekt-Multiplikator</DrugEffectMultiplier>
-  
-  
-  <CaravanVisiting>Besucht {0}</CaravanVisiting>
-	<CaravanEntering>Betritt {0}</CaravanEntering>
-	<CaravanAttacking>Attackiert {0}</CaravanAttacking>
-	<WasWornByCorpse>Wurde von einer Leiche getragen.</WasWornByCorpse>
-	<DeterioratingDueToBeingUnroofed>Verottet da es unüberdacht ist.</DeterioratingDueToBeingUnroofed>
-  <Map>Karte</Map>
-  <ForceExitAndRemoveMapCountdown>{0} Stunden bis zur Abreise</ForceExitAndRemoveMapCountdown>
-  <ForceExitAndRemoveMapCountdownTip>Deine Kolonisten formen automatisch eine Karawane und verlassen dieses Areal nach {0} Stunden.</ForceExitAndRemoveMapCountdownTip>
-	<Room>Raum</Room>
-	<BeautyHere>Schönheit hier</BeautyHere>
-	<NoPower>Kein Stromg</NoPower>
-	<WorkSpeedPenalty>Arbeitsgeschwindigkeitsstrafe</WorkSpeedPenalty>
-  <DisabledCommand>DEAKTIVIERT</DisabledCommand>
-  <ReadyForLaunch>Startbereit.</ReadyForLaunch>
-  <NotReadyForLaunch>Nicht startbereit.</NotReadyForLaunch>
-  <NotAllInGroupConnectedToFuelingPort>Keine Betankungsöffnung</NotAllInGroupConnectedToFuelingPort>
-  <NotAllFuelingPortSourcesInGroupHaveAnyFuel>Kein Kraftstoff</NotAllFuelingPortSourcesInGroupHaveAnyFuel>
-  <TransportPodInGroupHasSomethingLeftToLoad>Ladevorgang läuft</TransportPodInGroupHasSomethingLeftToLoad>
-  <TransportPodDestinationBeyondMaximumRange>Außerhalb maximaler Reichweite</TransportPodDestinationBeyondMaximumRange>
-  <TransportPodNotEnoughFuel>Nicht genug Kraftstoff</TransportPodNotEnoughFuel>
-  <FactionBaseTrader>{0} von {1}</FactionBaseTrader>
-
-  
-  
   
     <!-- Fermentation barrel -->
 	
@@ -125,6 +77,9 @@
   <!-- TextMotes -->
 
   <Headshot>Kopfschuss</Headshot>
+  <TreatQuality>Behandlungsqualität {0}</TreatQuality>
+  <PoorResult>schlechtes Ergebnis</PoorResult>
+  <GoodResult>gutes Ergebnis</GoodResult>
   <TextMote_TreatSuccess>Erfolgreich behandelt\n{0} Chance</TextMote_TreatSuccess>
   <TextMote_TreatFailed>Behandlung fehlgeschlagen\n{0} Chance</TextMote_TreatFailed>
   <HarvestFailed>Ernte\nfehlgeschlagen</HarvestFailed>
@@ -213,9 +168,6 @@
 
   <RecipeMake>Stell {0} her</RecipeMake>
   <RecipeMakeJobString>Stelle {0} her.</RecipeMakeJobString>
-  <RecipeAdminister>verwalte {0}</RecipeAdminister>
-	<RecipeAdministerJobString>Verwaltet {0}.</RecipeAdministerJobString>
-
 
   <!-- Thoughts -->
 
@@ -234,11 +186,7 @@
   <Faction>Fraktion</Faction>
   <Equipped>Ausgerüstet</Equipped>
   <EquippedNothing>Nichts</EquippedNothing>
-  <Dead>Tod</Dead>
-	<Unconscious>Bewusstlos</Unconscious>
-	<PainShock>In Schock durch Schmerz</PainShock>
-	
-  <Incapacitated>Unfähig</Incapacitated>
+  <Incapacitated>Bewusstlos</Incapacitated>
   <InRestraints>Gefesselt (verlangsamt)</InRestraints>
   <Carrying>Trägt</Carrying>
 
@@ -312,7 +260,8 @@
   <OutOfIdealTemperatureRangeNotGrowing>Außerhalb der optimalen Temperatur. Kein Wachstum.</OutOfIdealTemperatureRangeNotGrowing>
   <ReadyToHarvest>Bereit zum Ernten.</ReadyToHarvest>
   <Mature>Ausgewachsen.</Mature>
-  <OutdoorGrowingPeriod>Wachstumsperiode</OutdoorGrowingPeriod>
+  <SeedLabel>{0} Samen</SeedLabel>
+  <OutdoorGrowingPeriod>Wachstumsperiode:\n{0}</OutdoorGrowingPeriod>
   <NoGrowingPeriod>Niemals</NoGrowingPeriod>
   <GrowYearRound>Ganzjährig</GrowYearRound>
   <GrowSeasonHereNow>Anbausaison hat begonnen.</GrowSeasonHereNow>
@@ -341,16 +290,14 @@
   <!-- Buttons -->
 
   <ZoneVisibilityToggleButton>Schalte die Sichtbarkeit der Zonen ein/aus.</ZoneVisibilityToggleButton>
-  <ShowEnvironmentToggleButton>Schalte das Umgebungsanzeige ein/aus.\n\nZeigt das Aussehen der Welt in Zahlen, wie ein Kolonist es sehen würde, wenn er an der Position des Mauszeigers steht.</ShowEnvironmentToggleButton>
+  <ShowBeautyToggleButton>Schalte das Aussehen ein/aus.\n\nZeigt das Aussehen der Welt in Zahlen, wie ein Kolonist es sehen würde, wenn er an der Position des Mauszeigers steht.</ShowBeautyToggleButton>
+  <ShowRoomStatsToggleButton>Schalte die Raumstatusanzeige ein/aus.\n\nZeigt verschiedene Werte des Raumes unter dem Mauszeiger an.</ShowRoomStatsToggleButton>
   <ShowColonistBarToggleButton>Schalte die Kolonistenanzeige ein/aus.\n\nZeigt Bilder und den Grundzustand aller Kolonisten am oberen Bildschirmrand an.</ShowColonistBarToggleButton>
   <AutoHomeAreaToggleButton>Schalte das automatische Erweitern des Heimgebietes bei neuen Konstruktionen ein/aus.</AutoHomeAreaToggleButton>
   <CategorizedResourceReadoutToggleButton>Schalte die kategorisierte Rohstoffanzeige ein/aus.</CategorizedResourceReadoutToggleButton>
   <ShowAnimalNamesToggleButton>Schalte die Anzeige der Tiernamen bei benannten zahmen Tieren ein/aus.</ShowAnimalNamesToggleButton>
  <ShowLearningHelperWhenEmptyToggleButton>Schalte den Lernhelfer ein/aus, wenn er leer ist.\n\nDer Lernhelfer ist immer sichbar sobald etwas gelernt werden kann. Diese Einstlellung schaltet den Lernhelfer aus, wenn keine Aufgabe aktiv ist.</ShowLearningHelperWhenEmptyToggleButton>
   <ShowRoofOverlayToggleButton>Schalte die Markierung von Dächern ein/aus.</ShowRoofOverlayToggleButton>
-<LockNorthUpToggleButton>Verriegeln Sie die Drehung der Kamera, so dass der Nordpol immer oben ist..</LockNorthUpToggleButton>
-	<UsePlanetDayNightSystemToggleButton>Umschalten der Tag/Nacht-Beleuchtung.</UsePlanetDayNightSystemToggleButton>
-	<ExpandingIconsToggleButton>Schaltet die Anzeige von erweiterten Symbolen anstelle der regulären Symbole für entfernte Objekte um.</ExpandingIconsToggleButton>
 
   <!-- Fire -->
 
@@ -370,8 +317,7 @@
   <NoStuffsToBuildWith>Du hast kein Material, um das zu bauen.</NoStuffsToBuildWith>
 
   <!-- Building placement restricters -->
-<WillGetWorkSpeedPenalty>{0} wird eine Arbeitsgeschwindigkeitsstrafe bekommen</WillGetWorkSpeedPenalty>
-	
+
   <MustPlaceUnroofed>Kann nicht unter einem Dach platziert werden.</MustPlaceUnroofed>
   <MustPlaceHeadOnShipBeam>Muss mit dem Kopf an einem strukturellen Träger des Raumschiffes befestigt werden.</MustPlaceHeadOnShipBeam>
   <MustPlaceNextToHopperAccepter>Muss neben etwas platziert werden, das einen Trichter benötigt.</MustPlaceNextToHopperAccepter>
@@ -379,8 +325,7 @@
   <MustPlaceCoolerWithFreeSpaces>Beide Seiten der Kühlung (heiß und kalt) müssen frei sein.</MustPlaceCoolerWithFreeSpaces>
   <MustPlaceVentWithFreeSpaces>Beide Seiten müssen frei sein, damit Luft durchströmen kann.</MustPlaceVentWithFreeSpaces>
   <MustPlaceAdjacentStandable>Zum Platzieren darf keine Seite blockiert sein.</MustPlaceAdjacentStandable>
-<MustPlaceNearFuelingPort>Muss neben der Tanköffnung eines Pod-Launchers platziert werden.</MustPlaceNearFuelingPort>
-	
+
   <!-- Wind Turbine -->
 
   <WindTurbine_WindPathIsBlockedBy>Blockiert durch</WindTurbine_WindPathIsBlockedBy>
@@ -495,7 +440,5 @@
   <AlreadyLearned>Bereits gelernt</AlreadyLearned>
   <Filter>Filter</Filter>	
   
-  	<!-- Compass -->
-	<CompassTip>Zeigt Richtung Norden. Klicke um die Kamera nach Norden auszurichten.</CompassTip>
-
+  
 </LanguageData>

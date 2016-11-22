@@ -31,20 +31,9 @@
   <WorldGenerate>Generieren</WorldGenerate>
   <WorldSaveAndFinish>Speichern</WorldSaveAndFinish>
   <Reset>Zurücksetzen</Reset>
-  
-  <PlanetCoverage>Abdeckung des Planeten</PlanetCoverage>
-  <PlanetRainfall>Gesamter Niederschlag</PlanetRainfall>
-  <PlanetTemperature>Gesamte Temperatur</PlanetTemperature>
-  <PlanetRainfall_Low>Niedrig</PlanetRainfall_Low>
-  <PlanetRainfall_Normal>Normal</PlanetRainfall_Normal>
-  <PlanetRainfall_High>Hoch</PlanetRainfall_High>
-  <PlanetTemperature_Low>Niedrig</PlanetTemperature_Low>
-  <PlanetTemperature_Normal>Normal</PlanetTemperature_Normal>
-  <PlanetTemperature_High>Hoch</PlanetTemperature_High>
-  
+  <WorldSize>Größe</WorldSize>
   <WorldSeed>Seed</WorldSeed>
   <RandomizeSeed>Zufälliger Seed</RandomizeSeed>
-<PlanetCoverageTip>Der Planet hat immer denselben Durchmesse, da er jedoch viel größer ist, als man zum Spielen braucht, generieren wir nicht die ganze Oberfläche da es sehr lange dauern kann. Dies ist Prozentsatz zu dem die Oberfläche des Planeten generiert wird.</PlanetCoverageTip>
 
   <!-- Select world -->
 
@@ -123,18 +112,22 @@
   <SelectSite>Weiter</SelectSite>
   <MustSelectLandingSite>Bitte einen Landeplatz auswählen.</MustSelectLandingSite>
   <CannotLandBiome>Du kannst in dieser Biosphäre nicht landen: {0}</CannotLandBiome>
+  <WorldRenderMode>Ansicht</WorldRenderMode>
+  <WorldRenderModeFull>Alles</WorldRenderModeFull>
+  <WorldRenderModeTemperature>Temperatur</WorldRenderModeTemperature>
+  <WorldRenderModeElevation>Höhen</WorldRenderModeElevation>
+  <WorldRenderModeFertility>Fruchtbarkeit</WorldRenderModeFertility>
+  <WorldRenderModeRainfall>Niederschlag</WorldRenderModeRainfall>
+  <WorldRenderModeBiomes>Biosphären</WorldRenderModeBiomes>
   <BiomeNotImplemented>Biosphäre nicht verfügbar</BiomeNotImplemented>
-   <CannotLandImpassableMountains>Du kannst nicht auf unpassierbaren Bergen landen.</CannotLandImpassableMountains>
-  
-  
   <BaseAlreadyThere>{0} haben hier bereits eine Basis.</BaseAlreadyThere>
   <Biome>Biosphäre</Biome>
   <Terrain>Landschaft</Terrain>
   <Elevation>Höhe</Elevation>
   <Fertility>Fruchtbarkeit</Fertility>
-  <AvgTemp>Durchschnittliche Temperatur</AvgTemp>
-  <AvgWinterTemp>Wintertemperatur</AvgWinterTemp>
-  <AvgSummerTemp>Sommertemperatur</AvgSummerTemp>
+  <AvgTemp>Durchschn.Temp.</AvgTemp>
+  <AvgWinterTemp>Mitteltemp. (Winter): {0}</AvgWinterTemp>
+  <AvgSummerTemp>Mitteltemp. (Sommer): {0}</AvgSummerTemp>
   <Rainfall>Niederschlag</Rainfall>
   <HasCoast0>Nördliche Küste</HasCoast0>
   <HasCoast1>Östliche Küste</HasCoast1>
@@ -142,10 +135,6 @@
   <HasCoast3>Westliche Küste</HasCoast3>
   <FactionBase>Basis einer Fraktion</FactionBase>
   <StoneTypesHere>Felsarten</StoneTypesHere>
-<TimeZone>Zeitzone</TimeZone>
-	<MovementTimeNow>Momentane Bewegungszeit</MovementTimeNow>
-	<MovementTimeSummer>Sommer Bewegungszeit</MovementTimeSummer>
-	<MovementTimeWinter>Winter Bewegungszeit</MovementTimeWinter>
 
   <!-- Character chooser -->
 
@@ -184,12 +173,5 @@
 
   <GeneratingWorld>Generiere Welt</GeneratingWorld>
   <GeneratingMap>Generiere Karte</GeneratingMap>
-   <GeneratingMapForNewEncounter>Generiere Karte für neue Begegnung</GeneratingMapForNewEncounter>
 
-  
-
-  <Quit>Beenden</Quit>
-  <Ignore>Ignorieren</Ignore>
-  
-  
 </LanguageData>
