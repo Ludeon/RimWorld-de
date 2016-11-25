@@ -49,14 +49,17 @@
   <LetterFriendlyTrapSprungLabel>{0} löst Falle aus</LetterFriendlyTrapSprungLabel>
   <LetterFriendlyTrapSprung>{0} hat versehentlich eine Falle ausgelöst und wurde verletzt.</LetterFriendlyTrapSprung>
 
-  <LetterHealthComplications>{0} hat eine Krankheit bekommen: {1}\n\nDieses ist eine Begleiterscheinung aufgrund von Komplikationen bei {2}.</LetterHealthComplications>
-  <LetterHealthComplicationsLabel>{0} {1}</LetterHealthComplicationsLabel>
+  <LetterHealthComplications>{0} hat eine Krankheit bekommen:\n\n  {1}\n\nDieses wurde verursacht von:\n\n  {2}.</LetterHealthComplications>
+  <LetterHealthComplicationsLabel>{0}: {1}</LetterHealthComplicationsLabel>
 
   <LetterHediffFromRandomHediffGiver>{0} hat eine Krankheit bekommen: {1}.</LetterHediffFromRandomHediffGiver>
-  <LetterHediffFromRandomHediffGiverLabel>{0} {1}</LetterHediffFromRandomHediffGiverLabel>
+  <LetterHediffFromRandomHediffGiverLabel>{0}: {1}</LetterHediffFromRandomHediffGiverLabel>
 
-  <LetterLeadersDeathLabel>Anführers Tod</LetterLeadersDeathLabel>
-  <LetterLeadersDeath>Anführer {0} der Fraktion {1} ist gestorben. Als Nachfolger wurde {2} bestimmt.</LetterLeadersDeath>
+  <LetterLeadersDeathLabel>{1} starb: {0}</LetterLeadersDeathLabel>
+  <LetterLeadersDeath>{0}, {3} von {1} ist gestorben.\n\nNeuer {3} ist {2}.</LetterLeadersDeath>
+  
+	<LetterLeaderChangedLabel>Neuer {1}: {0}</LetterLeaderChangedLabel>
+	<LetterLeaderChanged>{0} ist nicht länger {3} von {1}.\n\nNeuer {3} ist {2}.</LetterLeaderChanged>
   
   <MentalBreakLetterLabel>Zusammenbruch</MentalBreakLetterLabel>
   <MentalBreakReason>Die Ursache, die das Fass überlaufen ließ war: {0}.</MentalBreakReason>
@@ -68,7 +71,9 @@
   <LetterRelatedPawnsRaidFriendly>In der befreundeten Besuchergruppe der {0} sind Verwandte deiner Kolonisten oder Gefangenen:</LetterRelatedPawnsRaidFriendly>
   <LetterRelatedPawnsNeutralGroup>In der angekommenen Besuchergruppe sind Verwandte deiner Kolonisten oder Gefangenen:</LetterRelatedPawnsNeutralGroup>
   <LetterRelatedPawnsTradeShip>Der orbitale Händler bietet Verwandte deiner Kolonisten oder Gefangenen an:</LetterRelatedPawnsTradeShip>
-
+  <LetterRelatedPawnsTradingWithFactionBase>Die Fraktionsbasis bietet Verwandte deiner Kolonisten oder Gefangenen an:</LetterRelatedPawnsTradingWithFactionBase>
+  <LetterRelatedPawnsTradingWithOtherCaravan>Die Karavane bietet Verwandte deiner Kolonisten oder Gefangenen an:</LetterRelatedPawnsTradingWithOtherCaravan>
+  
   <RelationshipAppendedLetterSuffix>(Verwandschaft)</RelationshipAppendedLetterSuffix>
   <RelationshipAppendedLetterTextColonist>NAME ist ein Verwandter eines Kolonisten. HECAP ist {0}'s {1}.</RelationshipAppendedLetterTextColonist>
   <RelationshipAppendedLetterTextPrisoner>NAME ist ein Verwandter eines Gefangenen. HECAP ist {0}'s {1}.</RelationshipAppendedLetterTextPrisoner>

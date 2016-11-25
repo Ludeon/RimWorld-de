@@ -33,7 +33,7 @@
   
   <!-- Missing Steam -->
   
-  <SteamClientMissing>Kann die Steam API nicht initialisieren. Mögliche Ursachen:\n\n-Steam läuft nicht.\n-Wurde außerhalb von Stema gestartet, ohne dass eine steam_appid.txt vorhanden ist.\n-Wurden mit unterschiedlichen Berechtigungen zum Steam-Client gestartet (z.B. "als Administrator").\n\nIn den meissten Fällen hilft es, den Computer neu zu starten um dieses Problem zu beheben.\n\nDiese Steam Version des Spieles benötigt Steam und wird jetzt beendet.</SteamClientMissing>
+  <SteamClientMissing>Kann die Steam API nicht initialisieren. Mögliche Ursachen:\n\n-Steam läuft nicht.\n-Wurde außerhalb von Stema gestartet, ohne dass eine steam_appid.txt vorhanden ist.\n-Wurden mit unterschiedlichen Berechtigungen zum Steam-Client gestartet (z.B. "als Administrator").\n\nIn den meissten Fällen hilft es, den Computer neu zu starten um dieses Problem zu beheben.\n\nDu kannst trotzdem spielen, aber es werden keine Steam Statistiken gespeichert und Steam-Funktionen stehen nicht zur Verfügung..</SteamClientMissing>
   
   <!-- Long events -->
 
@@ -45,7 +45,7 @@
   <Initializing>Initialisiere</Initializing>
   <LoadingWorld>Lade Welt</LoadingWorld>
   <LoadingMap>Lade Karte</LoadingMap>
-  <InitializingGame>Initialisiere Karte</InitializingGame>
+  <InitializingGame>Initialisiere Spiel</InitializingGame>
   <SpawningAllThings>Erzeuge Gegenstände</SpawningAllThings>
   <SpawningColonists>Erzeuge Kolonisten</SpawningColonists>
 
@@ -232,7 +232,66 @@
   <NegotiatorTalkingImpaired>Dein Unterhändler {0} kann aufgrund seiner niedrigen Gesundheit nicht richtig sprechen.\n\nDas wird Einfluss auf den Handelspreis haben.\n\nEs ist ratsam, einen gesünderen Unterhändler sprechen zu lassen.</NegotiatorTalkingImpaired>
   <ConfirmTraderShortFunds>Der Händler hat zu wenig Silber, um den ganzen Wert der Waren abzudecken. Trotzdem weitermachen?</ConfirmTraderShortFunds>
   <SortBy>Sortieren:</SortBy>
-
+	<TraderTypePrice>trader type</TraderTypePrice>
+	<Selling>selling</Selling>
+	<Buying>buying</Buying>
+	<ItemSellPriceFactor>item sell price multiplier</ItemSellPriceFactor>
+	<DifficultyLevel>difficulty level</DifficultyLevel>
+	<PostCurve>global post-process curve</PostCurve>
+	<YourNegotiatorBonus>Your negotiator bonus</YourNegotiatorBonus>
+	<TradeWithFactionBaseBonus>Trading with faction base bonus</TradeWithFactionBaseBonus>
+	<minimum>minimum</minimum>
+	<FinalPrice>Final price</FinalPrice>
+  
+  <!-- Form caravan -->
+  <FormCaravan>Erstelle Karavane</FormCaravan>
+  <FormCaravanColonyThingCountTip>Anzahl dieser Gegenstände, die die Kolonie der Karavane bereitstellen kann.</FormCaravanColonyThingCountTip>
+  <CaravanPawnsTab>Personen</CaravanPawnsTab>
+  <CaravanItemsTab>Vorräte</CaravanItemsTab>
+  <CaravanConfigTab>Konfiguration</CaravanConfigTab>
+  <CaravanMustHaveAtLeastOneColonist>Du musst mindestens einen nicht bewußtlosen Kolonisten zuweisen.</CaravanMustHaveAtLeastOneColonist>
+  <CaravanCouldNotFindExitSpot>Kann keinen gültigen Weg zum Verlassen finden.</CaravanCouldNotFindExitSpot>
+  <CaravanCouldNotFindReachableExitSpot>Warnung: Einige der zugewiesenen Kolonisten können den Ort zum Verlassen des Gebietes nicht erreichen.</CaravanCouldNotFindReachableExitSpot>
+  <CaravanPawnIsUnreachable>{0} ist für keinen der zugewiesenen Kolonisten erreichbar.</CaravanPawnIsUnreachable>
+  <CaravanItemIsUnreachableSingle>Keiner der zugewisenen Kolonisten kann {0} erreichen.</CaravanItemIsUnreachableSingle>
+  <CaravanItemIsUnreachableMulti>Keiner der zugewisenen Kolonisten kann {0}x {1}.</CaravanItemIsUnreachableMulti>
+  <TooBigCaravanMassUsage>Die Karavane kann so viel nicht transportieren.</TooBigCaravanMassUsage>
+  <CaravanMassUsageTooltip>Aktuelles Gewicht und Gesamtgewicht.\n\nDas aktuelle Gewicht beinhaltet die zugewiesenen Vorräte und die Ausrüstung der Kolonisten.\n\nDu kannst die Karavane nicht losschicken, wenn das aktuelle Gewicht das maximale Gesamtgewicht überschreitet.</CaravanMassUsageTooltip>
+  <MassUsageInfo>{0} / {1} kg</MassUsageInfo>
+  <DaysWorthOfFoodInfo>Nahrung für {0} Tag(e)</DaysWorthOfFoodInfo>
+  <DaysWorthOfFoodTooltip>Eine geschätzte Anzahl an Tagen, bevor der Karavane die Nahrung ausgeht.\n\nDies berücksichtigt sowohl das Essen der Menschen wie auch der Tiere und zeigt den schlimmst möglichen Fall. Das bedeutet, dass nach dieser Anzahl von Tagen mindestens eine Person oder ein Tier keine Nahrung mehr hat.</DaysWorthOfFoodTooltip>
+  <DaysWorthOfFoodWarningDialog>Deine Karavane hat nur Essen für {0} Tage und wird sehr schnell sehr hungrig werden.\n\nBist du sicher, dass du die Karavane losschicken willst?</DaysWorthOfFoodWarningDialog>
+  <DaysWorthOfFoodWarningDialog_NoFood>Deine Karavane hat kein Essen und wird sehr schnell sehr hungrig werden.\n\nBist du sicher, dass du die Karavane losschicken willst?</DaysWorthOfFoodWarningDialog_NoFood>
+  <NoExitDirectionForCaravanChosen>Du musst für die Karavane eine Richtung zum Verlassen auswählen.</NoExitDirectionForCaravanChosen>
+  <NoCaravanExitDirectionAvailable>(Verlassen in keiner Richtung möglich)</NoCaravanExitDirectionAvailable>
+  <ExitDirection>Abmarschrichtung</ExitDirection>
+  <ItemWeightTip>Gewicht dieses Gegenstandes.</ItemWeightTip>
+  <MassCapacity>Maximales Gewicht</MassCapacity>
+  <Mass>Gewicht</Mass>
+  <EquipmentAndApparelMass>Gewicht Kleidung / Ausrüstung</EquipmentAndApparelMass>
+  <InventoryMass>Gewicht Inventar</InventoryMass>
+  <CaravanFormationProcessStarted>Deine Kolonisten werden jetzt die zugewiesenen Gegenstände einsammeln und das Gebiet so schnell wie möglich verlassen.</CaravanFormationProcessStarted>
+  <ReformCaravan>Karavane neu formieren</ReformCaravan>
+  
+  <!-- Split caravan -->
+  <SplitCaravan>Karavane teilen</SplitCaravan>
+  <SourceCaravanMustHaveAtLeastOneColonist>Du must mindestens einen nicht bewußtlosen Kolonisten zurücklassen.</SourceCaravanMustHaveAtLeastOneColonist>
+  <CaravanSplitSourceLabel>Aktuell</CaravanSplitSourceLabel>
+  <CaravanSplitDestLabel>Neu</CaravanSplitDestLabel>
+  <SplitCaravanThingCountTip>Anzahl dieser Gegenstände, die die Karavane an die neue Karavane übergeben kann.</SplitCaravanThingCountTip>
+  <SplitCaravanMassUsageTooltip>Aktuelles Gewicht und maximales Gesamtgewicht.</SplitCaravanMassUsageTooltip>
+  
+  <!-- Load transporters -->
+  <LoadTransporters>Beladung {0}</LoadTransporters>
+  <LoadTransportersPawnsTab>Personen und Tiere</LoadTransportersPawnsTab>
+  <LoadTransportersItemsTab>Gegenstände</LoadTransportersItemsTab>
+  <TooBigTransportersMassUsage>Die zugewiesenen Personen und Tiere sind zu schwer für die Transportkapsel.</TooBigTransportersMassUsage>
+  <CantSendEmptyTransportPods>Du kannst keine leeren Transportkapseln versenden.</CantSendEmptyTransportPods>
+  <PawnCantReachTransporters>{0} kann die Transportkapseln nicht erreichen.</PawnCantReachTransporters>
+  <TransporterItemIsUnreachableSingle>Es existiert kein Weg zwischen {0} und den Transportkapseln.</TransporterItemIsUnreachableSingle>
+  <TransporterItemIsUnreachableMulti>Es existiert kein Weg zwischen {0}x {1} und den Transportkapseln.</TransporterItemIsUnreachableMulti>
+  <TransportersMassUsageTooltip>Aktuelles Gewicht und maximales Gesamtgewicht.\n\nDu kannst die Transportkapseln nicht verschicken wenn das aktuelle Gewicht das maximale Gesamtgewicht überschreitet.</TransportersMassUsageTooltip>
+  
   <!-- Comms -->
   
   <SocialSkillIs>Soziale Fähigkeit: {0}</SocialSkillIs>
@@ -291,12 +350,27 @@
   <MoodThresholdColumnDesc>Der Kolonist wird diese Droge nur nehmen, wenn seine Stimmung unter diesem Schwellenwert liegt.</MoodThresholdColumnDesc>
   <JoyThresholdColumnDesc>Der Kolonist wird diese Droge nur nehmen, wenn seine Freude unter diesem Schwellenwert liegt.</JoyThresholdColumnDesc>
   <TakeToInventoryColumnDesc>Eine zusätzliche Menge an Drogen die aufgenommen wird, um zu verhindern, dass man jedes Mal wieder zum Drogen-Lager laufen muss.</TakeToInventoryColumnDesc>
-  <DrugUsageTipForJoy>Zum Spaß\n\nDroge ist zum Befriedigen von Spaßmangel, sozialen Bedarf oder einer Sucht einzunehmen.\n\nAber beachte, dass manche Charakter mit bestimmten Eigenschaften, oder bei einem Nervenzusammenbruch dieses Verbot evtl. ignorieren.</DrugUsageTipForJoy>
+  <DrugUsageTipForAddiction>Für Abhängigkeiten\n\nBenutze diese Droge um den schon vorhandenen Sucht-Bedarf zu decken.\n\nAber beachte, dass manche Charakter mit bestimmten Eigenschaften, oder bei einem Nervenzusammenbruch dieses Verbot evtl. ignorieren.</DrugUsageTipForAddiction>
+  <DrugUsageTipForJoy>Zum Spaß\n\nDroge kann zum Spaß haben oder aus sozialen Gründen eingenommen werden.\n\nAber beachte, dass manche Charakter mit bestimmten Eigenschaften, oder bei einem Nervenzusammenbruch dieses Verbot evtl. ignorieren.</DrugUsageTipForJoy>
   <DrugUsageTipScheduled>Geplant\n\nDroge wird nach einem bestimmten Plan eingenommen.\n\nErlaubt es ebenfalls Drogen für die Befriedigung von Spaß, sozialen Bedarf oder einer Sucht einzunehmen.</DrugUsageTipScheduled>
   
   <!-- Growing -->
   
   <NoGrowerCanPlant>{0} benötigt zum Anpflanzen eine Fähigkeit von {1} als Gärtner.\n\nKeiner deiner nicht-bewußtlosen Gärtner hat diese Fähigkeiten, weswegen diese Pflanze nicht angebaut wird.</NoGrowerCanPlant>
 
+
+  <!-- Abandon home -->
+  <ConfirmAbandonHomeWithColonyPawns>Einige deiner Kolonisten oder Tiere sind in diesem Gebiet. Bist du sicher, dass du es aufgeben willst?\n\nDie folgenden Personen und Tiere werden zurückgelassen:\n\n{0}</ConfirmAbandonHomeWithColonyPawns>
+  
+  <!-- Move caravan and leave prisoners and animals behind -->
+  <ConfirmLeavePrisonersOrAnimalsBehind>Es sind noch immer einige Gefangene oder Tiere in diesem Gebiet und das ist die einzige Karavane denen sie sich aktuell anschließen können.\n\nWenn du deine Karavane losschickst werden sie das Gebiet nicht verlassen können bis du zurückkehrst. Die Gefangenen werden versuchen zu entkommen und während die Tiere auf deine Rückkehr warten werden.\n\nWenn du dich entschließt zu warten, werden sie sich der Karavane so bald wie möglich anschließen.\n\nBist du sicher, dass du die Karavane losschicken willst?</ConfirmLeavePrisonersOrAnimalsBehind>
+  
+  <!-- Abandon pawn -->
+  <ConfirmAbandonPawnDialog>Möchtest Du {0} wirklich aufgeben?</ConfirmAbandonPawnDialog>
+  <ConfirmAbandonPawnDialog_LeftToDie>{0} wird sehr wahrscheinlich sterben.</ConfirmAbandonPawnDialog_LeftToDie>
+  <ConfirmAbandonPawnDialog_EquipmentAndApparel>{0} wird die folgenden Gegenstände mitnehmen:</ConfirmAbandonPawnDialog_EquipmentAndApparel>
+  <ConfirmAbandonPawnDialog_AllColonistsThoughts>Alle Kolonisten werden diese Erinnerungen bekommen:</ConfirmAbandonPawnDialog_AllColonistsThoughts>
+  <ConfirmAbandonPawnDialog_IndividualThoughts>Das Aufgeben von {0} generiert bei den folgenden Personen die folgenden Gedanken:</ConfirmAbandonPawnDialog_IndividualThoughts>
+  
   
 </LanguageData>

@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
 
+  <!-- Forbid -->
+  <CommandForbid>Verbieten</CommandForbid>
   <CommandForbiddenDesc>Verboten - Kolonisten werden hiermit nicht interagieren.</CommandForbiddenDesc>
   <CommandNotForbiddenDesc>Nicht Verboten - Kolonisten werden vielleicht hiermit interagieren.</CommandNotForbiddenDesc>
 
@@ -25,6 +27,9 @@
   <CommandUndraftLabel>Kampfmodus beenden</CommandUndraftLabel>
   <CommandToggleDraftDesc>Schaltet den Kampfmodus ein/aus.\n\nKolonisten im Kampfmodus können direkt gesteuert werden. Sie werden jedoch nicht arbeiten, essen oder Pause machen.</CommandToggleDraftDesc>
   <IsIncapped>{0} kann nicht laufen.</IsIncapped>
+  
+	<CommandAllowFiringLabel>Erlaube schießen</CommandAllowFiringLabel>
+	<CommandAllowFiringDesc>Wechsle Schießbefehl ein/aus.\n\nWenn deaktiviert wird dieser Charakter nicht automatisch auf ferne Ziele schießen. Dieser Befehl hat keinen Einfluß auf den Nahkampf.</CommandAllowFiringDesc>
   
   <CommandClearPrioritizedWork>Lösche priorisierte Arbeiten</CommandClearPrioritizedWork>
   <CommandClearPrioritizedWorkDesc>Lösche alle Arbeiten die du priorisiert hast. Der Charakter wird mit seinen normalen Aktivitäten weitermachen.</CommandClearPrioritizedWorkDesc>
@@ -153,5 +158,87 @@
    <!-- Build copy -->
   <CommandBuildCopy>Kopie bauen</CommandBuildCopy>
   <CommandBuildCopyDesc>Baue eine Kopie von diesem Gebäude.</CommandBuildCopyDesc>
+  
+
+  
+  <!-- Form caravan -->
+  <CommandFormCaravan>Erstelle Karavane</CommandFormCaravan>
+  <CommandFormCaravanDesc>Formiert eine Gruppe Kolonisten um in neue Gebiete zu reisen. Die kolonisten werden die zugewiesenen Vorräte und Tiere einsammeln, das aktuelle Gebiet verlassen und auf weitere Befehle warten.</CommandFormCaravanDesc>
+  
+  <!-- Reform caravan -->
+  <CommandReformCaravan>Reformiere Karavane</CommandReformCaravan>
+  <CommandReformCaravanDesc>Reformiert eine Gruppe Kolonisten. Die Kolonisten werden das aktuelle Gebiet verlassen und auf weitere Befehle warten.</CommandReformCaravanDesc>
+  <CommandReformCaravanFailHostilePawns>Es sind noch immer Gegner im Gebiet.</CommandReformCaravanFailHostilePawns>
+  
+  <!-- Split caravan -->
+  <CommandSplitCaravan>Teilen</CommandSplitCaravan>
+  <CommandSplitCaravanDesc>Teile diese Karavane in zwei Karavanen auf. Die Karavanen können später wieder zu einer großen Karavane zusammengefügt werden solange sie nahe beieinander sind.</CommandSplitCaravanDesc>
+  
+  <!-- Merge caravan -->
+  <CommandMergeCaravans>Verschmelzen</CommandMergeCaravans>
+  <CommandMergeCaravansDesc>Füge die ausgewählten Karavanen zusammen.</CommandMergeCaravansDesc>
+  
+  <!-- Settle -->
+  <CommandSettle>Besiedeln</CommandSettle>
+  <CommandSettleDesc>Besiedele dieses Gebiet. Deine kolonisten werden das Gebiet betreten und Du kannst anfangen hier ein neues zu Hause aufzubauen.</CommandSettleDesc>
+  <CommandSettleFailOtherWorldObjectsHere>Deine Karavane muss das einzige Objekt auf dieser Kachel sein damit das Gebiet besiedelt werden kann.</CommandSettleFailOtherWorldObjectsHere>
+  <CommandSettleFailAlreadyHaveBase>Deine Fraktion kann nur eine Basis haben.</CommandSettleFailAlreadyHaveBase>
+  <CommandSettleFailReachedMaximumNumberOfBases>Maximale Anzahl an Kolonien erreicht.</CommandSettleFailReachedMaximumNumberOfBases>
+  
+  <!-- Abandon home -->
+  <CommandAbandonHome>Aufgeben</CommandAbandonHome>
+  <CommandAbandonHomeDesc>Gib dieses Gebiet auf. Das Gebiet wird unzugänglich und du wirst nie wieder hier her zurückkehren können. Nachdem du deine Heimatbasis aufgegeben hast, kannst du eine deiner Karavanen anweisen, ein neues Gebiet zu besiedeln.</CommandAbandonHomeDesc>
+  <CommandAbandonHomeFailAllColonistsThere>All deine Kolonisten sind dort.</CommandAbandonHomeFailAllColonistsThere>
+  
+  <!-- Cancel forming caravan -->
+  <CommandCancelFormingCaravan>Karavane erstellen abbrechen</CommandCancelFormingCaravan>
+  <CommandCancelFormingCaravanDesc>Brich den Prozess zum Erstellen der Karavane ab.</CommandCancelFormingCaravanDesc>
+  
+  <!-- Show map -->
+  <CommandShowMap>Vergrößern</CommandShowMap>
+  <CommandShowMapDesc>Vergrößere diesen Ort.</CommandShowMapDesc>
+  
+  <!-- Trade -->
+  <CommandTrade>Handeln</CommandTrade>
+  <CommandTradeDesc>Handele mit dieser Fraktion.</CommandTradeDesc>
+  <CommandTradeFailNoNegotiator>Da ist kein Händler der bei Bewußtsein ist bzw. keinen Nervenzusammenbruch hat.</CommandTradeFailNoNegotiator>
+  
+  <!-- Take off -->
+  <CommandTakeOff>Abflug</CommandTakeOff>
+  <CommandTakeOffDesc>Gehe an Bord des Schiffes und entkomm diesem Planeten.</CommandTakeOffDesc>
+  <CommandTakeOffConfirmation>Bist du sicher, dass du mit dem Raumschiff starten willst?\n\nAlle in diesem Gebiet entkommen dem Planeten. Alle anderen bleiben zurück.</CommandTakeOffConfirmation>
+  
+  <!-- Set target fuel level -->
+  <CommandSetTargetFuelLevel>Ziel Kraftstofflevel setzen</CommandSetTargetFuelLevel>
+  <CommandSetTargetFuelLevelDesc>Setze den Ziel Kraftstofflevel. Kolonisten werden versuchen es bis zu diesem Level aufzufüllen.</CommandSetTargetFuelLevelDesc>
+  
+  <!-- Cancel load -->
+  <CommandCancelLoad>Beladung abbrechen</CommandCancelLoad>
+  <CommandCancelLoadDesc>Brich den Beladevorgang ab und wirf die aktuelle Ladung aus.</CommandCancelLoadDesc>
+  
+  <!-- Launch group -->
+  <CommandLaunchGroup>Gruppe starten</CommandLaunchGroup>
+  <CommandLaunchGroupDesc>Initiiert die Ziel-Prozedur zum Starten einer Gruppe von Transportkapseln. Der nächste Schritt ist das Auswählen des Ziels. Die Kapseln werden zusammen abfliegen und auch zusammen landen.</CommandLaunchGroupDesc>
+  <CommandLaunchGroupFailNotConnectedToFuelingPort>Einige Transportkapseln in dieser Gruppe sind nicht an eine Abschussrampe angeschlossen.</CommandLaunchGroupFailNotConnectedToFuelingPort>
+  <CommandLaunchGroupFailNoFuel>Einige Transportkapseln in dieser Gruppe haben keinen Treibstoff.</CommandLaunchGroupFailNoFuel>
+  <CommandLaunchGroupFailLoadingInProgress>Der Beladungsprozess ist noch nicht abgeschlossen (Muss noch beladen werden: {0}).</CommandLaunchGroupFailLoadingInProgress>
+  
+  <!-- Load transporter -->
+  <CommandLoadTransporter>Erstelle Abschuss Gruppe</CommandLoadTransporter>
+  <CommandLoadTransporterDesc>Definiert die ausgewählten Transporter als eine Abschuss-Gruppe. Öffnet den Beladungsdialog, so dass du asuwählen kannst, welche Personen, Gegenstände oder Tiere geladen werden sollen.</CommandLoadTransporterDesc>
+  <CommandLoadTransporterFailNotConnectedToFuelingPort>Die Transportkapsel ist nicht an eine Abschussrampe angeschlossen.</CommandLoadTransporterFailNotConnectedToFuelingPort>
+  <CommandLoadTransporterFailNoFuel>Die Abschussrampe hat keinen Treibstoff.</CommandLoadTransporterFailNoFuel>
+  
+  <!-- Select previous transporter -->
+  <CommandSelectPreviousTransporter>Wähle vorherige in Gruppe</CommandSelectPreviousTransporter>
+  <CommandSelectPreviousTransporterDesc>Wähle vorherige Transportkapsel in dieser Abschuss-Gruppe.</CommandSelectPreviousTransporterDesc>
+  
+  <!-- Select all transporters -->
+  <CommandSelectAllTransporters>Wähle Gruppe</CommandSelectAllTransporters>
+  <CommandSelectAllTransportersDesc>Wähle alle Transportkapseln dieser Abschuss-Gruppe.</CommandSelectAllTransportersDesc>
+  
+  <!-- Select next transporter -->
+  <CommandSelectNextTransporter>Wähle nächste in Gruppe</CommandSelectNextTransporter>
+  <CommandSelectNextTransporterDesc>Wähle nächste Transportkapsel in dieser Abschuss-Gruppe.</CommandSelectNextTransporterDesc>
   
 </LanguageData>
