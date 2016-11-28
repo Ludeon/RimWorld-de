@@ -25,7 +25,7 @@
 	<FreshMissingBodyPart>frisch</FreshMissingBodyPart>
 
 	<DevelopedImmunityLower>wurde immun</DevelopedImmunityLower>
-	<NeedsTendingNow>Kann ohne Behandlung nicht verheilen</NeedsTendingNow>
+	<NeedsTendingNow>Behandlung ist jetzt notwendig</NeedsTendingNow>
 	<NextTreatmentIn>Nächste Behandlung in {0}</NextTreatmentIn>
 	<MissingMedicalBillIngredient>keine {0}</MissingMedicalBillIngredient>
 	<Immunity>Immunität</Immunity>
@@ -49,8 +49,8 @@
 	<Fertilized>Befruchtet</Fertilized>
 	<ProgressStoppedUntilFertilized>Fortschritt gestoppt, wartet auf Befruchtung</ProgressStoppedUntilFertilized>
 	<SkillTooLow>benötigt {0} auf Level {2}, hat {1}</SkillTooLow>
-	<Freezing>Friert</Freezing>
-	<Overheating>Überhizzt</Overheating>
+	<Freezing>Gefriert</Freezing>
+	<Overheating>Überhitzt</Overheating>
 	<RuinedByTemperature>Zerstört durch Temperatur.</RuinedByTemperature>
 	<CorpsePercentMissing>Fehlende Körperteile</CorpsePercentMissing>
 	<HiveReproducesIn>Erweitert sich in</HiveReproducesIn>
@@ -59,35 +59,29 @@
 	<Fuel>Kraftstoff</Fuel>
 	<FuelLevelGizmoLabel>Kraftstoffstand</FuelLevelGizmoLabel>
 	<SetTargetFuelLevel>Stelle Ziel-Kraftstoffstand auf {0}</SetTargetFuelLevel>
-	<SetPodLauncherTargetFuelLevel>Stelle Ziel-Kraftstoffstand auf {0}\nMax Distanz: {1} tiles</SetPodLauncherTargetFuelLevel>
+	<SetPodLauncherTargetFuelLevel>Stelle Ziel-Kraftstoffstand auf {0}\nMax Distanz: {1} Felder</SetPodLauncherTargetFuelLevel>
 	<ConfiguredTargetFuelLevel>Ziel-Kraftstoffstand: {0}</ConfiguredTargetFuelLevel>
-
 	<Enemies>Gegner</Enemies>
 	<TimePassed>verstrichene Zeit</TimePassed>
 	<CurrentRadius>aktueller Radius</CurrentRadius>
 	<RadiusExpandsIn>Radius erweitert sich in</RadiusExpandsIn>
 	<Permanent>permanent</Permanent>
-
 	<CaravanResting>Pausiert</CaravanResting>
 	<CaravanEstimatedTimeToDestination>Voraussichtliche Ankunftszeit: {0}</CaravanEstimatedTimeToDestination>
-	<CaravanImmobilizedByMass>Immobilisiert: zu viel Gewicht.</CaravanImmobilizedByMass>
+	<CaravanImmobilizedByMass>Bewegungsunfähig: Zu viel Gewicht.</CaravanImmobilizedByMass>
 	<CaravanOutOfFood>Keine Nahrung.</CaravanOutOfFood>
 	<CaravanDaysOfFood>Nahrungsvorrat: {0}</CaravanDaysOfFood>
-	<CaravanMemberMentalBreak>Angehalten weil: {0} hat einen Zusammenbruch.</CaravanMemberMentalBreak>
-	<AllCaravanMembersDowned>Angehalten weil: jeder ist bewusstlost.</AllCaravanMembersDowned>
-	<CaravanTraveling>Reist</CaravanTraveling>
+	<CaravanMemberMentalBreak>Angehalten: {0} hat einen Zusammenbruch.</CaravanMemberMentalBreak>
+	<AllCaravanMembersDowned>Angehalten: Alle sind bewusstlos.</AllCaravanMembersDowned>
+	<CaravanTraveling>Unterwegs</CaravanTraveling>
 	<CaravanWaiting>Wartet</CaravanWaiting>
 	<CaravanHoursPerTile>h/Feld</CaravanHoursPerTile>
 	<CaravanBaseMovementTime>Basisbewegungszeit</CaravanBaseMovementTime>
 	<CurrentTileMovementTime>Momentane Bewegungszeit</CurrentTileMovementTime>
-
-
 	<Temperature>Temperatur</Temperature>
 	<BadTemperature>Ungünstige Temperatur</BadTemperature>
 	<IdealFermentingTemperature>Ideale Fermentierungstemperatur</IdealFermentingTemperature>
 	<DrugEffectMultiplier>{0} Effekt-Multiplikator</DrugEffectMultiplier>
-
-
 	<CaravanVisiting>Besucht {0}</CaravanVisiting>
 	<CaravanEntering>Betritt {0}</CaravanEntering>
 	<CaravanAttacking>Attackiert {0}</CaravanAttacking>
@@ -99,7 +93,7 @@
 	<Room>Raum</Room>
 	<BeautyHere>Schönheit hier</BeautyHere>
 	<NoPower>Kein Strom</NoPower>
-	<WorkSpeedPenalty>Arbeitsgeschwindigkeitsstrafe</WorkSpeedPenalty>
+	<WorkSpeedPenalty>Reduzierte Arbeitsgeschwindigkeit</WorkSpeedPenalty>
 	<DisabledCommand>DEAKTIVIERT</DisabledCommand>
 	<ReadyForLaunch>Startbereit.</ReadyForLaunch>
 	<NotReadyForLaunch>Nicht startbereit.</NotReadyForLaunch>
@@ -110,16 +104,13 @@
 	<TransportPodNotEnoughFuel>Nicht genug Kraftstoff</TransportPodNotEnoughFuel>
 	<FactionBaseTrader>{0} von {1}</FactionBaseTrader>
 
-
-
-
 	<!-- Fermentation barrel -->
 
 	<ContainsWort>Enthält {0} / {1} Würze.</ContainsWort>
 	<ContainsBeer>Enthält {0} / {1} Bier.</ContainsBeer>
 	<Fermented>Fermentiert</Fermented>
-	<FermentationProgress>Fortschritt: {0} (abgeschlossen in etwa {1}).</FermentationProgress>
-	<FermentationBarrelOutOfIdealTemperature>Nicht ideale Temperatur. Fermentierungsmultiplikator: {0}</FermentationBarrelOutOfIdealTemperature>
+	<FermentationProgress>Fortschritt: {0} (verbleibend {1}).</FermentationProgress>
+	<FermentationBarrelOutOfIdealTemperature>Außerhalb der Idealtemperatur. Fermentierungsgeschwindigkeit: {0}</FermentationBarrelOutOfIdealTemperature>
 
 
 	<!-- TextMotes -->
@@ -339,7 +330,7 @@
 	<Undiscovered>Unentdeckt</Undiscovered>
 
 	<!-- Buttons -->
-
+	<ShowLearningHelperWhenEmptyToggleButton>Schalte die Sichtbarkeit der Lernhilfe ein/aus, wenn sie leer ist.\n\nDie Lernhilfe ist immer sichtbar, wenn es ein aktives Lernkonzept gibt. Diese Umschaltung lässt sie verschwinden solange kein Konzept aktiv ist.</ShowLearningHelperWhenEmptyToggleButton>
 	<ZoneVisibilityToggleButton>Schalte die Sichtbarkeit der Zonen ein/aus.</ZoneVisibilityToggleButton>
 	<ShowEnvironmentToggleButton>Schalte das Umgebungsanzeige ein/aus.\n\nZeigt das Aussehen der Welt in Zahlen, wie ein Kolonist es sehen würde, wenn er an der Position des Mauszeigers steht.</ShowEnvironmentToggleButton>
 	<ShowColonistBarToggleButton>Schalte die Kolonistenanzeige ein/aus.\n\nZeigt Bilder und den Grundzustand aller Kolonisten am oberen Bildschirmrand an.</ShowColonistBarToggleButton>
@@ -438,6 +429,8 @@
 	<GameOverEveryoneDead>Alle sind tot oder fort. Diese Geschichte ist zu Ende.\n\nVielleicht findet jemand anderes einen Nutzen für die noch stehenden Ruinen.</GameOverEveryoneDead>
 	<GameOverShipLaunched>Dein Raumschiff ist gestartet und hat die folgenden Kolonisten mitgenommen:\n\n{0}\nFolgende Kolonisten wurden zurückgelassen:\n\n{1}\nDeine Schiffs-KI wird versuchen, das Raumschiff an einen sicheren Ort zu bringen.\n Vielleicht findet sie hier im System einen blühenden Planeten für euch oder sie unternimmt eine Jahrhunderte andauernde Reise zu einem anderen Stern. Es kann aber auch sein, dass sie sich dafür entscheidet, ein paar tausend Jahre unter dem Eis eines Asteroiden darauf zu warten, dass hier jemand eine neue Glitzerwelt aufbaut.\n\nDu wirst es erfahren, wenn du wieder erwachst.</GameOverShipLaunched>
 	<GameOverPlanetkillerImpact>Mit einer Geschwindigkeit nahe der Lichtgeschwindigkeit schlägt der Planetenkiller in die Oberfläche ein und entwickelt dabei eine Sprengkraft, die mehreren Billionen Wasserstoffbomben entspricht. Wie ein Wasserballon, der von einer Gewehrkugel durchschlagen wird, verflüssigt sich diese Welt aufgrund des Einschlages und spritzt seine geschmolzene Oberfläche in alle Richtungen ins All.\n\nEin Teil von {0} ist jetzt ein kleiner Asteroidengürtel. Der Rest ist eine geschmolzene, radioaktive Höllenlandschaft, die ständig von mehrere Kilometer hohen Erdbebenwellen erschüttert wird.\n\nDu hast nicht überlebt.</GameOverPlanetkillerImpact>
+	<GameOverArrivedAtJourneyDestination>Als du an Bord des Raumschiffes gehst, wirst du von der Besatzung mit offenen Armen empfangen. Sie scheinen froh darüber zu sein, dass noch jemand mit ihnen mitfliegen wird.\n\nFolgende Kolonisten entkamen:\n\n{0}\nFolgende Kolonisten wurden zurückgelassen:\n\n{1}\nEure Schiffs-KI wird versuchen, das Raumschiff an einen sicheren Ort zu bringen.\n Vielleicht findet sie hier im System einen blühenden Planeten für euch oder sie unternimmt eine Jahrhunderte andauernde Reise zu einem anderen Stern. Es kann aber auch sein, dass sie sich dafür entscheidet, ein paar tausend Jahre unter dem Eis eines Asteroiden darauf zu warten, dass hier jemand eine neue Glitzerwelt aufbaut.\n\nAls du in die Kryoschlafkapsel steigst zögerst du einen Moment und fühlst dich etwas unsicher, ob du diesen Leuten vetrauen kannst oder nicht..\n\nDu wirst es erfahren, wenn du wieder aufwachst.</GameOverArrivedAtJourneyDestination>
+
 	<GameOverKeepPlaying>Weiterspielen</GameOverKeepPlaying>
 	<GameOverMainMenu>Hauptmenü</GameOverMainMenu>
 
