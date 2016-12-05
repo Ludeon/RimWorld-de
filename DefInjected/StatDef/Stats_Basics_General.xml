@@ -4,8 +4,13 @@
   <MaxHitPoints.label>Max. Haltbarkeit</MaxHitPoints.label>
   <MaxHitPoints.description>Die maximale Haltbarkeit eines Objekts. Dieser Wert gibt an, wieviel Schaden es verkraftet kann, bevor es zerstört wird.</MaxHitPoints.description>
 
+  <Mass.label>Gewicht</Mass.label>
+  <Mass.description>Das Gewicht eines Objektes.</Mass.description>
+  <Mass.formatString>{0} kg</Mass.formatString>
+  
   <MarketValue.label>Marktwert</MarketValue.label>
   <MarketValue.description>Der Marktwert eines Objekts. Der tatsächliche Handelspreis wird durch Beziehungsstatus und Verhandlungsgeschick beeinflusst.</MarketValue.description>
+  <MarketValue.formatString>€{0}</MarketValue.formatString>
 
   <SellPriceFactor.label>Verkaufswertmultiplikator</SellPriceFactor.label>
   <SellPriceFactor.description>Ein Multiplikator des Preises, zu dem du Objekte verkaufen kannst.</SellPriceFactor.description>
@@ -13,12 +18,16 @@
   <Flammability.label>Brennbarkeit</Flammability.label>
   <Flammability.description>Wie schnell das Objekt Feuer fängt und verbrennt.</Flammability.description>
 
-  <WorkToMake.label>Arbeitsschritte</WorkToMake.label>
-  <WorkToMake.description>Die maximalen Arbeitsschritte zum Herstellen dieses Objekts, sofern alle Materialien und Werkzeuge vorhanden sind.</WorkToMake.description>
+  <WorkToMake.label>Arbeitsaufwand</WorkToMake.label>
+  <WorkToMake.description>Der Mindest-Aufwand zum Herstellen dieses Objekts, sofern alle Materialien und Werkzeuge vorhanden sind.</WorkToMake.description>
+
+  <WorkToBuild.label>Aufbauaufwand</WorkToBuild.label>
+  <WorkToBuild.description>Der Mindest-Aufwand zum Herstellen dieser Struktur, sofern alle Materialien und Werkzeuge vorhanden sind.</WorkToBuild.description>
 
   <DeteriorationRate.label>Verfallsrate</DeteriorationRate.label>
   <DeteriorationRate.description>Wie schnell dieses Objekt im Freien, besonders bei Regen, seine Haltbarkeit verliert.</DeteriorationRate.description>
-
+  <DeteriorationRate.formatString>{0} / Tag</DeteriorationRate.formatString>
+  
   <Beauty.label>Attraktivität</Beauty.label>
   <Beauty.description>Wie sehr man es genießt, dieses Objekt um sich zu haben oder zu bestaunen.</Beauty.description>
 
