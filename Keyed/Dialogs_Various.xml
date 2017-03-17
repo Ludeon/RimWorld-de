@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
 
 	<Confirm>Bestätigen</Confirm>
@@ -8,8 +8,10 @@
 	<!-- Game updated to new version -->
 
 	<GameUpdatedToNewVersionInitial>RimWorld wurde von Version {0} zur Version {1} aktualisiert.\n\nHierdurch kann es passieren, dass Mods und Spielstände nicht mehr funktionieren.</GameUpdatedToNewVersionInitial>
+	<GameUpdatedToNewVersionSavesIncompatible>Das kann dazu führen, dass Spielstände und Mods von der alten Version nicht mehr funktionieren.</GameUpdatedToNewVersionSavesIncompatible>
+	<GameUpdatedToNewVersionSavesCompatible>Spielstände von der vorhergehenden Version sollten kompatibel sein, aber einige Mods können evtl. nicht mehr funktionieren.</GameUpdatedToNewVersionSavesCompatible>
 	<GameUpdatedToNewVersionNonSteam>Da dieses die DRM-freie Version ist, kannst du das Spiel in zwei verschiedenen Ordnern installieren, und so die alte und neue Version spielen.</GameUpdatedToNewVersionNonSteam>
-	<GameUpdatedToNewVersionSteam>Wenn du auf der alten Version weiterspielen möchtest, kannst du dies mit den 'Betas'-Feature von Steam machen.\n\n  1. In deiner Steam Bibliothek, klicke mit der rechten Maustaste auf 'RimWorld'.\n  2. Klicke auf Eigenschaften.\n  3. Klicke auf den Reiter 'Betas'.\n  4. Wähle die Version, die du möchtest.\n\nAlte Versionen werden letztendlich gelöscht - wir wollen dir nur ermöglichen, ein laufendes Spiel zu Ende zu spielen.\n\nBeachte: Wenn Mod-Autoren ihre Mods auf die neue Version aktualisieren, werden sie wahrscheinlich mit einer alten Version nicht mehr funktionieren. Wenn du mit Mod spielen willst, solltest die automatische Aktualisierung ausschalten.</GameUpdatedToNewVersionSteam>
+	<GameUpdatedToNewVersionSteam>Wenn du auf der alten Version weiterspielen möchtest, kannst du dies mit den 'Betas'-Feature von Steam machen.\n\n  1. In deiner Steam Bibliothek, klicke mit der rechten Maustaste auf 'RimWorld'.\n  2. Klicke auf Eigenschaften.\n  3. Klicke auf den Reiter 'Betas'.\n  4. Wähle die Version die du möchtest.\n\nAlte Versionen werden letztendlich gelöscht - wir wollen dir nur ermöglichen ein laufendes Spiel zuende zu spielen.\n\nBeachte: Wenn Mod-Autoren ihre Mods auf die neue Version aktualisieren, werden sie wahrscheinlich mit einer alten Version nicht mehr funktionieren. Wenn du mit Mod spielen willst, solltest die automatische Aktualisierung ausschalten.</GameUpdatedToNewVersionSteam>
 
 	<!-- Recovered from errors caused by mods -->
 
@@ -19,12 +21,12 @@
 	<!-- Errors during loading -->
 
 	<ErrorWhileLoadingAssetsTitle>Fehler beim Laden der Komponenten</ErrorWhileLoadingAssetsTitle>
-	<ErrorWhileLoadingAssets>Beim Laden der Spielkomponenten ist ein Fehler aufgetreten. Schau in die Log-Datei, um zusätzliche Informationen zu erhalten.</ErrorWhileLoadingAssets>
+	<ErrorWhileLoadingAssets>Beim Laden der Spielkomponenten ist ein Fehler aufgetreten. Siehe in das Logfile um zusätzliche Informationen zu erhalten.</ErrorWhileLoadingAssets>
 	<ErrorWhileLoadingAssets_ModsInfo>Das Spiel läuft aktuell mit Modifikationen - Eventuell sind sie die Ursache des Problems.</ErrorWhileLoadingAssets_ModsInfo>
 	<ErrorWhileGeneratingMapTitle>Fehler beim Erzeugen der Karte</ErrorWhileGeneratingMapTitle>
-	<ErrorWhileGeneratingMap>Beim Generieren einer neuen Karte ist ein Fehler aufgetreten. Schau in die Log-Datei, um zusätzliche Informationen zu erhalten.</ErrorWhileGeneratingMap>
+	<ErrorWhileGeneratingMap>Beim Generieren einer neuen Karte ist ein Fehler aufgetreten. Siehe in das Logfile um zusätzliche Informationen zu erhalten.</ErrorWhileGeneratingMap>
 	<ErrorWhileLoadingMapTitle>Fehler beim Laden der Karte</ErrorWhileLoadingMapTitle>
-	<ErrorWhileLoadingMap>Beim Laden der Karte ist ein Fehler aufgetreten. Schau in die Log-Datei, um zusätzliche Informationen zu erhalten.</ErrorWhileLoadingMap>
+	<ErrorWhileLoadingMap>Beim Laden der Karte ist ein Fehler aufgetreten. Siehe in das Logfile um zusätzliche Informationen zu erhalten.</ErrorWhileLoadingMap>
 
 
 	<!-- Unloaded mod with an assembly -->
@@ -33,7 +35,7 @@
 
 	<!-- Missing Steam -->
 
-	<SteamClientMissing>Kann die Steam API nicht initialisieren. Mögliche Ursachen:\n\n-Steam läuft nicht.\n-Wurde außerhalb von Stema gestartet, ohne dass eine steam_appid.txt vorhanden ist.\n-Wurden mit unterschiedlichen Berechtigungen zum Steam-Client gestartet (z. B. "als Administrator").\n\nIn den meisten Fällen hilft es, den Computer neu zu starten, um dieses Problem zu beheben.\n\nDu kannst trotzdem spielen, aber es werden keine Steam Statistiken gespeichert und Steam-Funktionen stehen nicht zur Verfügung..</SteamClientMissing>
+	<SteamClientMissing>Kann die Steam API nicht initialisieren. Mögliche Ursachen:\n\n-Steam läuft nicht.\n-Wurde außerhalb von Stema gestartet, ohne dass eine steam_appid.txt vorhanden ist.\n-Wurden mit unterschiedlichen Berechtigungen zum Steam-Client gestartet (z.B. "als Administrator").\n\nIn den meissten Fällen hilft es, den Computer neu zu starten um dieses Problem zu beheben.\n\nDu kannst trotzdem spielen, aber es werden keine Steam Statistiken gespeichert und Steam-Funktionen stehen nicht zur Verfügung..</SteamClientMissing>
 
 	<!-- Long events -->
 
@@ -64,7 +66,7 @@
 	<SaveIsFromDifferentGameVersion>Die aktuelle Version {0} weicht von der benutzten Version {1} des Spielstands ab.\n\nDer Versuch, diesen Spielstand zu laden, kann zu unerwarteten Ergebnissen führen.</SaveIsFromDifferentGameVersion>
 	<SaveIsFromDifferentGameBuild>Die aktuelle Version {0} weicht nur geringfügig von der benutzten Version {1} des Spielstands ab.\n\nDer Versuch, diesen Spielstand zu laden, sollte ohne Probleme funktionieren.</SaveIsFromDifferentGameBuild>
 	<SaveIsFromThisGameBuild>Der Spielstand wurde mit der gleichen Version erstellt und sollte ohne Probleme funktionieren.</SaveIsFromThisGameBuild>
-	<SaveIsUnknownFormat>Der Spielstand ist in einem unbekannten Format. Es besteht die Gefahr, dass der Spielstand nicht richtig geladen werden kann.</SaveIsUnknownFormat>
+	<SaveIsUnknownFormat>Der Spielstand ist in einem unbekannten Format. Es besteht die Gefahr, der Spielstand nicht richtig geladen werden kann.</SaveIsUnknownFormat>
 	<ProblemSavingFile>Beim Speichern der Datei '{0}' ist ein Fehler aufgetreten:\n\n{1}\n\nSchaue im Error Log nach, um mehr Informationen zu erhalten.</ProblemSavingFile>
 	<LoadAnyway>Trotzdem laden</LoadAnyway>
 
@@ -74,12 +76,12 @@
 	<PlayerFactionNameIsInvalid>Dieser Name ist ungültig.</PlayerFactionNameIsInvalid>
 
 	<!-- Player faction base naming -->
-	<NamePlayerFactionBaseMessage>Da es so aussieht, als würdet ihr eine Weile bleiben, schlägt {0} vor, der Gemeinschaft einen Namen zu geben.\n\nWie soll sie heißen?</NamePlayerFactionBaseMessage>
+	<NamePlayerFactionBaseMessage>Da es so aussieht als würdet ihr eine Weile bleiben, schlägt {0} vor der Gemeinschaft einen Namen zu geben.\n\nWie soll sie heißen?</NamePlayerFactionBaseMessage>
 	<PlayerFactionBaseGainsName>Eure Gemeinschaft heißt jetzt {0}.</PlayerFactionBaseGainsName>
 	<PlayerFactionBaseNameIsInvalid>Dieser Name ist ungültig.</PlayerFactionBaseNameIsInvalid>
 
 	<!-- Player faction and faction base naming -->
-	<NamePlayerFactionBaseMessage_NameFactionContinuation>Da es so aussieht, als würdet ihr eine Weile bleiben, schlägt {0} vor, auch dem Ort einen Namen zu geben.\n\nWie soll er heißen?</NamePlayerFactionBaseMessage_NameFactionContinuation>
+	<NamePlayerFactionBaseMessage_NameFactionContinuation>Da es so aussieht als würdet ihr eine Weile bleiben, schlägt {0} vor auch dem Ort einen Namen zu geben.\n\nWie soll er heißen?</NamePlayerFactionBaseMessage_NameFactionContinuation>
 	<PlayerFactionAndBaseGainsName>Eure Gemeinschaft heißt jetzt {0} und dieser Ort wird {1} genannt.</PlayerFactionAndBaseGainsName>
 
 	<!-- Renaming -->
@@ -99,7 +101,7 @@
 	<WorldFileVersionMismatch>Die Welt basiert auf der Spielversion {0}\nAktuell läuft die Spielversion {1}\n\nDas Laden dieser Welt kann Fehler oder Abstürze verursachen. Es ist ratsam, eine komplett neue Welt zu generieren.</WorldFileVersionMismatch>
 	<FileIncompatibleWarning>Diese Datei wurde mit der Version {0} gespeichert.\nAktuell läuft die Spielversion {1}\n\nDas Laden dieses Spielstandes kann Fehler oder Abstürze verursachen.</FileIncompatibleWarning>
 	<ModsMismatchWarningTitle>Modifikationskonflikt</ModsMismatchWarningTitle>
-	<ModsMismatchWarningText>Die verwendeten Mods in diesem Spielstand unterscheiden sich von den aktuell aktiven Mods. Je nachdem, was diese Mods machen, kann das zu Problemen führen.\n\nDieses Spiel verwendete zuletzt die folgenden Mods (in dieser Reichenfolge):\n\n{0}\n\nDerzeit sind aber diese aktiv:\n\n{1}</ModsMismatchWarningText>
+	<ModsMismatchWarningText>Die verwendeten Mods in diesem Spielstand unterscheiden sich von den aktuell aktiven Mods. Je nachdem was diese Mods machen, kann das zu Problemen führen.\n\nDieses Spiel verwendete zuletzt die folgenden Mods (in dieser Reichenfolge):\n\n{0}\n\nDerzeit sind aber diese aktiv:\n\n{1}</ModsMismatchWarningText>
 
 
 
@@ -134,8 +136,8 @@
 	<MapSizeExtreme>Riesig</MapSizeExtreme>
 	<MapStartSeason>Startjahreszeit:</MapStartSeason>
 	<MapStartSeasonDefault>Auto</MapStartSeasonDefault>
-	<PermadeathMode>Hardcore-Modus</PermadeathMode>
-	<PermadeathModeInfo>Im Hardcore-Modus wird der aktuelle Spielstand nur gespeichert, wenn man das Spiel beendet. Das Spiel kann nicht neugeladen werden, um eventuelle Fehler rückgängig zu machen. Wenn deine Kolonie stirbt, ist das Spiel vorbei.\n\nSo sollte RimWorld gespielt werden, wenn man dramatische Wendungen - egal ob hoffnungsvoll oder tragisch  - in voller Intensität erfahren möchte.</PermadeathModeInfo>
+	<PermadeathMode>Hardcore Modus</PermadeathMode>
+	<PermadeathModeInfo>Im Hardcore Modus gibt es nur einen Spielstand bei dem nur beim Beenden des Spiels gespeichert werden kann. Hierbei ist es nicht möglich das Spiel einfach neu zu laden um einen Fehler zu korrigieren. Und wenn deine Kolonie stirbt, war es das.\n\nDies ist der Modus in dem RimWorld gespielt werden soll. Bei dem jede dramaturgische Wendung - sei sie nun hoffnungsvoll oder auch tragisch  - bis zur maximalen Wirkung ausgespielt werden kann.</PermadeathModeInfo>
 
 	<!-- Bill config -->
 
@@ -156,8 +158,8 @@
 	<MinimumSkills>Minimal benötigte Fähigkeiten:</MinimumSkills>
 	<BillRequires>Benötigt {0} {1}</BillRequires>
 	<BillRequiresNutrition>Benötigt {0} Nahrung</BillRequiresNutrition>
-	<BillRequiresMayVary>Hinweis: Materialien mit geringem Volumen wie Gold benötigen 20-mal so viel.</BillRequiresMayVary>
-	<ThisIsSmallVolume>Dieses Material hat ein geringes Volumen. Das heißt, dass jede 'Einheit' nur 1/20 des Volumens eines normalen Materials hat. Für den gleichen Materialbedarf brauchst du also 20-mal mehr Ressourcen als gewöhnlich.</ThisIsSmallVolume>
+	<BillRequiresMayVary>Hinweis: Materialien mit geringem Volumen wie Gold benötigen {0}-mal so viel.</BillRequiresMayVary>
+	<ThisIsSmallVolume>Dieses Material hat ein geringes Volumen. Das heißt, dass jede 'Einheit' nur 1/{0} des Volumens eines normalen Materials hat. Für den gleichen Materialbedarf brauchst du also {0}-mal mehr Ressourcen als gewöhnlich.</ThisIsSmallVolume>
 	<UsableIngredients>Materialien</UsableIngredients>
 	<DoXTimes>Produziere X-mal</DoXTimes>
 	<DoUntilYouHaveX>Produziere, bis du X hast</DoUntilYouHaveX>
@@ -166,6 +168,11 @@
 	<BillStoreMode_DropOnFloor>Auf den Boden legen</BillStoreMode_DropOnFloor>
 	<BillStoreMode_BestStockpile>Zum besten Lager tragen</BillStoreMode_BestStockpile>
 	<BillStoreMode_NearestStockpileAnyPriority>Zum nächsten Lager tragen</BillStoreMode_NearestStockpileAnyPriority>
+
+	<PauseWhenSatisfied>Pausiere wenn zutrifft</PauseWhenSatisfied>
+	<UnpauseWhenYouHave>Weiter bei</UnpauseWhenYouHave>
+	<Paused>Pausiert</Paused>
+	<Unpause>Weiter</Unpause>
 
 	<!-- Info card -->
 
@@ -202,17 +209,16 @@
 	<CoverEffectiveness>Effektivität der Deckung</CoverEffectiveness>
 	<CoverEffectivenessExplanation>Wie effektiv dieses Objekt in einem Kampf als Deckung benutzt werden kann. Eine höhere Prozentzahl fängt mehr Schüsse ab.</CoverEffectivenessExplanation>
 	<MedicineXpGainFactor>Erfahrungseinfluss</MedicineXpGainFactor>
-	<BodyPartEfficiency>Effektivität des Körperteils</BodyPartEfficiency>
 	<MoodChange>Stimmungsschwankung</MoodChange>
 	<Wildness>Wildheit</Wildness>
 	<WildnessExplanation>Wildere Tiere sind von Natur aus schwieriger zu zähmen, trainieren oder auch nur mit ihnen umzugehen.</WildnessExplanation>
 	<AnimalFilthRate>Tierverschmutzungsrate</AnimalFilthRate>
-	<AnimalFilthRateExplanation>Tiere erzeugen Schmutz, wenn sie über konstruierten Boden laufen. Dieses gibt die durchschnittliche Anzahl an Dreck pro {0} Zellen an, über die die Kreatur läuft\n\nGrößere und weniger Haustier-Ähnliche Tiere verursachen mehr Schmutz.</AnimalFilthRateExplanation>
+	<AnimalFilthRateExplanation>Tiere erzeugen Schmutz wenn sie über konstruierten Boden laufen. Dieses gibt die durchschnittliche Anzahl an Dreck pro {0} Zellen an, über die die Kreatur läuft\n\nGrößere und weniger Haustier-Ähnliche Tiere verursachen mehr Schmutz.</AnimalFilthRateExplanation>
 	<TimeRecordsCategory>Zeit</TimeRecordsCategory>
 	<MiscRecordsCategory>Versch.</MiscRecordsCategory>
 	<Addictiveness>Suchtgefahr</Addictiveness>
 	<PackAnimal>Lasttier</PackAnimal>
-	<PackAnimalExplanation>Ob ein Tier geeignet ist, in einer Karawane zum Transport schwerer Lasten über große Entfernungen hinweg eingesetzt zu werden.</PackAnimalExplanation>
+	<PackAnimalExplanation>Ob ein Tier geeignet ist in einer Karavane zum Transport schwerer Lasten über große Entfernungen hinweg eingesetzt zu werden.</PackAnimalExplanation>
 
 	<!-- Trade -->
 
@@ -231,6 +237,7 @@
 	<TraderHasNoMore>Händler hat nichts mehr.</TraderHasNoMore>
 	<ColonyHasNoMore>Nichts mehr zum Verkaufen.</ColonyHasNoMore>
 	<TraderWillNotTrade>Der Händler handelt mit dieser Ware nicht.</TraderWillNotTrade>
+	<Negotiator>Unterhändler</Negotiator>
 	<NegotiatorTalkingImpaired>Dein Unterhändler {0} kann aufgrund seiner niedrigen Gesundheit nicht richtig sprechen.\n\nDas wird Einfluss auf den Handelspreis haben.\n\nEs ist ratsam, einen gesünderen Unterhändler sprechen zu lassen.</NegotiatorTalkingImpaired>
 	<ConfirmTraderShortFunds>Der Händler hat zu wenig Silber, um den ganzen Wert der Waren abzudecken. Trotzdem weitermachen?</ConfirmTraderShortFunds>
 	<SortBy>Sortieren:</SortBy>
@@ -247,47 +254,53 @@
 	<TradeMassUsageTooltip>Das Gesamtgewicht und die Kapazität.</TradeMassUsageTooltip>
 
 	<!-- Form caravan -->
-	<FormCaravan>Erstelle Karawane</FormCaravan>
-	<FormCaravanColonyThingCountTip>Anzahl dieser Gegenstände, die die Kolonie der Karawane bereitstellen kann.</FormCaravanColonyThingCountTip>
+	<FormCaravan>Erstelle Karavane</FormCaravan>
+	<FormCaravanColonyThingCountTip>Anzahl dieser Gegenstände, die die Kolonie der Karavane bereitstellen kann.</FormCaravanColonyThingCountTip>
 	<PawnsTab>Personen und Tiere</PawnsTab>
 	<ItemsTab>Gegenstände</ItemsTab>
 	<CaravanConfigTab>Konfiguration</CaravanConfigTab>
-	<CaravanMustHaveAtLeastOneColonist>Du musst mindestens einen nicht bewusstlosen Kolonisten zuweisen.</CaravanMustHaveAtLeastOneColonist>
+	<CaravanMustHaveAtLeastOneColonist>Du musst mindestens einen nicht bewußtlosen Kolonisten zuweisen.</CaravanMustHaveAtLeastOneColonist>
 	<CaravanCouldNotFindExitSpot>Kann keinen gültigen Weg zum Verlassen finden.</CaravanCouldNotFindExitSpot>
 	<CaravanCouldNotFindReachableExitSpot>Warnung: Einige der zugewiesenen Kolonisten können den Ort zum Verlassen des Gebietes nicht erreichen.</CaravanCouldNotFindReachableExitSpot>
 	<CaravanPawnIsUnreachable>{0} ist für keinen der zugewiesenen Kolonisten erreichbar.</CaravanPawnIsUnreachable>
-	<CaravanItemIsUnreachableSingle>Keiner der zugewiesenen Kolonisten kann {0} erreichen.</CaravanItemIsUnreachableSingle>
-	<CaravanItemIsUnreachableMulti>Keiner der zugewiesenen Kolonisten kann {0}x {1}.</CaravanItemIsUnreachableMulti>
-	<TooBigCaravanMassUsage>Die Karawane kann so viel nicht transportieren.</TooBigCaravanMassUsage>
-	<CaravanMassUsageTooltip>Aktuelles Gewicht und Gesamtgewicht.\n\nDas aktuelle Gewicht beinhaltet die zugewiesenen Vorräte und die Ausrüstung der Kolonisten.\n\nDu kannst die Karawane nicht losschicken, wenn das aktuelle Gewicht das maximale Gesamtgewicht überschreitet.</CaravanMassUsageTooltip>
+	<CaravanItemIsUnreachableSingle>Keiner der zugewisenen Kolonisten kann {0} erreichen.</CaravanItemIsUnreachableSingle>
+	<CaravanItemIsUnreachableMulti>Keiner der zugewisenen Kolonisten kann {0}x {1}.</CaravanItemIsUnreachableMulti>
+	<TooBigCaravanMassUsage>Die Karavane kann so viel nicht transportieren.</TooBigCaravanMassUsage>
+	<CaravanMassUsageTooltip>Aktuelles Gewicht und Gesamtgewicht.\n\nDas aktuelle Gewicht beinhaltet die zugewiesenen Vorräte und die Ausrüstung der Kolonisten.\n\nDu kannst die Karavane nicht losschicken, wenn das aktuelle Gewicht das maximale Gesamtgewicht überschreitet.</CaravanMassUsageTooltip>
 	<MassUsageInfo>{0} / {1} kg</MassUsageInfo>
 	<DaysWorthOfFoodInfo>Nahrung für {0} Tag(e)</DaysWorthOfFoodInfo>
+	<DaysWorthOfFoodInfoRot>Nahrung für {0} Tag(e), verdirbt in {1} Tagen</DaysWorthOfFoodInfoRot>
 	<InfiniteDaysWorthOfFoodInfo>Nahrung wird nie ausgehen</InfiniteDaysWorthOfFoodInfo>
-	<DaysWorthOfFoodTooltip>Eine geschätzte Anzahl an Tagen, bevor der Karawane die Nahrung ausgeht.\n\nDies berücksichtigt sowohl das Essen der Menschen als auch Tiere und zeigt den schlimmst möglichen Fall. Das bedeutet, dass nach dieser Anzahl von Tagen mindestens eine Person oder ein Tier keine Nahrung mehr hat.</DaysWorthOfFoodTooltip>
-	<DaysWorthOfFoodWarningDialog>Deine Karawane hat nur Essen für {0} Tage und wird sehr schnell sehr hungrig werden.\n\nBist du sicher, dass du die Karawane losschicken willst?</DaysWorthOfFoodWarningDialog>
-	<DaysWorthOfFoodWarningDialog_NoFood>Deine Karawane hat kein Essen und wird sehr schnell sehr hungrig werden.\n\nBist du sicher, dass du die Karawane losschicken willst?</DaysWorthOfFoodWarningDialog_NoFood>
-	<NoExitDirectionForCaravanChosen>Du musst für die Karawane eine Richtung zum Verlassen auswählen.</NoExitDirectionForCaravanChosen>
+	<DaysWorthOfFoodTooltip>Eine geschätzte Anzahl an Tagen, bevor der Karavane die Nahrung ausgeht.\n\nDies berücksichtigt sowohl das Essen der Menschen wie auch der Tiere und zeigt den schlimmst möglichen Fall. Das bedeutet, dass nach dieser Anzahl von Tagen mindestens eine Person oder ein Tier keine Nahrung mehr hat.</DaysWorthOfFoodTooltip>
+	<DaysWorthOfFoodTooltip_CanEatLocalPlants>Basierend auf der derzeitigen Saison, Temperatur und Umgebung nehmen wir an, dass pflanzenfressende Tiere im Gebiet grasen können. Das kann sich aber jederzeit ändern.</DaysWorthOfFoodTooltip_CanEatLocalPlants>
+	<DaysWorthOfFoodTooltip_CantEatLocalPlants>Basierend auf der derzeitigen Saison, Temperatur und Umgebung nehmen wir an, dass pflanzenfressende Tiere im Gebiet NICHT grasen können. Das kann sich aber jederzeit ändern.</DaysWorthOfFoodTooltip_CantEatLocalPlants>
+	<DaysWorthOfFoodWarningDialog>Deine Karavane hat nur Essen für {0} Tage und wird sehr schnell sehr hungrig werden.\n\nBist du sicher, dass du die Karavane losschicken willst?</DaysWorthOfFoodWarningDialog>
+	<DaysWorthOfFoodWarningDialog_NoFood>Deine Karavane hat kein Essen und wird sehr schnell sehr hungrig werden.\n\nBist du sicher, dass du die Karavane losschicken willst?</DaysWorthOfFoodWarningDialog_NoFood>
+	<CaravanFoodWillRotSoonWarningDialog>Ein großer Teil des zugewiesenen Essens verdirbt bald.\n\nSoll die Karavane trotzdem erstellt werden?</CaravanFoodWillRotSoonWarningDialog>
+	<NoExitDirectionForCaravanChosen>Du musst für die Karavane eine Richtung zum Verlassen auswählen.</NoExitDirectionForCaravanChosen>
 	<NoCaravanExitDirectionAvailable>(Verlassen in keiner Richtung möglich)</NoCaravanExitDirectionAvailable>
 	<ExitDirection>Abmarschrichtung</ExitDirection>
 	<ExitDirectionRadioButtonLabel>{0} ({1} {2})</ExitDirectionRadioButtonLabel>
 	<ItemWeightTip>Gewicht dieses Gegenstandes.</ItemWeightTip>
 	<MarketValueTip>Marktwert</MarketValueTip>
+	<DaysUntilRotTip>Die Anzahl der Tage, bis dieser Gegenstand anfängt zu verrotten. Basierend auf der durchschnittlichen Temperatur in diesem Gebiet.</DaysUntilRotTip>
 	<MassCapacity>Maximales Gewicht</MassCapacity>
 	<Mass>Gewicht</Mass>
 	<EquipmentAndApparelMass>Gewicht Kleidung / Ausrüstung</EquipmentAndApparelMass>
 	<InventoryMass>Gewicht Inventar</InventoryMass>
 	<CaravanFormationProcessStarted>Deine Kolonisten werden jetzt die zugewiesenen Gegenstände einsammeln und das Gebiet so schnell wie möglich verlassen.</CaravanFormationProcessStarted>
-	<ReformCaravan>Karawane neu formieren</ReformCaravan>
+	<ReformCaravan>Karavane neu formieren</ReformCaravan>
 	<ColonistsSection>Kolonisten</ColonistsSection>
 	<PrisonersSection>Gefangene</PrisonersSection>
 	<AnimalsSection>Tiere</AnimalsSection>
+	<EstimatedTimeToDestinationButton>Geschätzte Zeit bis zum Ziel</EstimatedTimeToDestinationButton>
 
 	<!-- Split caravan -->
-	<SplitCaravan>Karawane teilen</SplitCaravan>
-	<SourceCaravanMustHaveAtLeastOneColonist>Du musst mindestens einen nicht bewusstlosen Kolonisten zurücklassen.</SourceCaravanMustHaveAtLeastOneColonist>
+	<SplitCaravan>Karavane teilen</SplitCaravan>
+	<SourceCaravanMustHaveAtLeastOneColonist>Du must mindestens einen nicht bewußtlosen Kolonisten zurücklassen.</SourceCaravanMustHaveAtLeastOneColonist>
 	<CaravanSplitSourceLabel>Aktuell</CaravanSplitSourceLabel>
 	<CaravanSplitDestLabel>Neu</CaravanSplitDestLabel>
-	<SplitCaravanThingCountTip>Anzahl dieser Gegenstände, die die Karawane an die neue Karawane übergeben kann.</SplitCaravanThingCountTip>
+	<SplitCaravanThingCountTip>Anzahl dieser Gegenstände, die die Karavane an die neue Karavane übergeben kann.</SplitCaravanThingCountTip>
 	<SplitCaravanMassUsageTooltip>Aktuelles Gewicht und maximales Gesamtgewicht.</SplitCaravanMassUsageTooltip>
 
 	<!-- Load transporters -->
@@ -297,7 +310,7 @@
 	<PawnCantReachTransporters>{0} kann die Transportkapseln nicht erreichen.</PawnCantReachTransporters>
 	<TransporterItemIsUnreachableSingle>Es existiert kein Weg zwischen {0} und den Transportkapseln.</TransporterItemIsUnreachableSingle>
 	<TransporterItemIsUnreachableMulti>Es existiert kein Weg zwischen {0}x {1} und den Transportkapseln.</TransporterItemIsUnreachableMulti>
-	<TransportersMassUsageTooltip>Aktuelles Gewicht und maximales Gesamtgewicht.\n\nDu kannst die Transportkapseln nicht verschicken, wenn das aktuelle Gewicht das maximale Gesamtgewicht überschreitet.</TransportersMassUsageTooltip>
+	<TransportersMassUsageTooltip>Aktuelles Gewicht und maximales Gesamtgewicht.\n\nDu kannst die Transportkapseln nicht verschicken wenn das aktuelle Gewicht das maximale Gesamtgewicht überschreitet.</TransportersMassUsageTooltip>
 
 	<!-- Comms -->
 
@@ -310,7 +323,7 @@
 
 	<!-- HistoryUpload -->
 
-	<HistoryUploadMessage>Möchtest Du die Informationen deines Spielverlaufs auf den RimWorld-Server hochladen, damit die Entwickler das Spiel verbessern können? Wenn Du dem zustimmst, werden die Daten Deines Spiels alle {0} Tage (bzw. zu seltenen Ereignissen, wie z. B. dem Ende des Spiels) hochgeladen. Die Einstellungen können in den Optionen noch geändert werden.</HistoryUploadMessage>
+	<HistoryUploadMessage>Möchtest Du die Informationen deines Spielverlaufs auf den RimWorld-Server hochladen, damit die Entwickler das Spiel verbessern können? Wenn Du dem zustimmst, werden die Daten Deines Spiels alle {0} Tage (bzw. zu seltenen Ereignissen, wie z.B. dem Ende des Spiels) hochgeladen. Die Einstellungen können in den Optionen noch geändert werden.</HistoryUploadMessage>
 	<HistoryUploadMessagePlayerName>Die Spieldaten werden anonym versendet, aber Du kannst auch Deinen Namen hinzufügen.</HistoryUploadMessagePlayerName>
 	<HistoryUploadYes>Die Spieldaten immer hochladen</HistoryUploadYes>
 	<HistoryUploadNo>Die Spieldaten nie hochladen</HistoryUploadNo>
@@ -353,24 +366,36 @@
 	<DeleteDrugTooltip>Diese Droge entfernen.</DeleteDrugTooltip>
 	<DrugNameColumnDesc>Der Name einer Droge.</DrugNameColumnDesc>
 	<DrugUsageColumnDesc>Wie die Droge verwendet werden darf.</DrugUsageColumnDesc>
-	<FrequencyColumnDesc>Wie oft ein Kolonist versuchen soll, diese Droge einzunehmen.</FrequencyColumnDesc>
+	<FrequencyColumnDesc>Wie oft ein Kolonist versuchen soll diese Droge einzunehmen.</FrequencyColumnDesc>
 	<MoodThresholdColumnDesc>Der Kolonist wird diese Droge nur nehmen, wenn seine Stimmung unter diesem Schwellenwert liegt.</MoodThresholdColumnDesc>
 	<JoyThresholdColumnDesc>Der Kolonist wird diese Droge nur nehmen, wenn seine Freude unter diesem Schwellenwert liegt.</JoyThresholdColumnDesc>
-	<TakeToInventoryColumnDesc>Eine zusätzliche Menge an Drogen, die aufgenommen wird, um zu verhindern, dass man jedes Mal wieder zum Drogen-Lager laufen muss.</TakeToInventoryColumnDesc>
-	<DrugUsageTipForAddiction>Für Abhängigkeiten\n\nBenutze diese Droge, um den schon vorhandenen Suchtbedarf zu decken.\n\nAber beachte, dass manche Charaktere mit bestimmten Eigenschaften, oder bei einem Nervenzusammenbruch dieses Verbot evtl. ignorieren.</DrugUsageTipForAddiction>
-	<DrugUsageTipForJoy>Zum Spaß\n\nDroge kann zum Spaß haben oder aus sozialen Gründen eingenommen werden.\n\nAber beachte, dass manche Charaktere mit bestimmten Eigenschaften, oder bei einem Nervenzusammenbruch dieses Verbot evtl. ignorieren.</DrugUsageTipForJoy>
-	<DrugUsageTipScheduled>Geplant\n\nDroge wird nach einem bestimmten Plan eingenommen.\n\nErlaubt es ebenfalls, Drogen für die Befriedigung von Spaß, sozialen Bedarf oder einer Sucht einzunehmen.</DrugUsageTipScheduled>
+	<TakeToInventoryColumnDesc>Eine zusätzliche Menge an Drogen die aufgenommen wird, um zu verhindern, dass man jedes Mal wieder zum Drogen-Lager laufen muss.</TakeToInventoryColumnDesc>
+	<DrugUsageTipForAddiction>Für Abhängigkeiten\n\nBenutze diese Droge um den schon vorhandenen Sucht-Bedarf zu decken.\n\nAber beachte, dass manche Charakter mit bestimmten Eigenschaften, oder bei einem Nervenzusammenbruch dieses Verbot evtl. ignorieren.</DrugUsageTipForAddiction>
+	<DrugUsageTipForJoy>Zum Spaß\n\nDroge kann zum Spaß haben oder aus sozialen Gründen eingenommen werden.\n\nAber beachte, dass manche Charakter mit bestimmten Eigenschaften, oder bei einem Nervenzusammenbruch dieses Verbot evtl. ignorieren.</DrugUsageTipForJoy>
+	<DrugUsageTipScheduled>Geplant\n\nDroge wird nach einem bestimmten Plan eingenommen.\n\nErlaubt es ebenfalls Drogen für die Befriedigung von Spaß, sozialen Bedarf oder einer Sucht einzunehmen.</DrugUsageTipScheduled>
+
+	<!-- Medical settings -->
+	<MedGroupDefaults>Standard</MedGroupDefaults>
+	<MedGroupColonist>Kolonist</MedGroupColonist>
+	<MedGroupImprisonedColonist>Gefangener Kolonist</MedGroupImprisonedColonist>
+	<MedGroupColonyAnimal>Tier der Kolonie</MedGroupColonyAnimal>
+	<MedGroupNeutralAnimal>Neutrales Tier</MedGroupNeutralAnimal>
+	<MedGroupNeutralFaction>Neutrale Fraktion</MedGroupNeutralFaction>
+	<MedGroupHostileFaction>Feindliche Fraktion</MedGroupHostileFaction>
 
 	<!-- Growing -->
 
-	<NoGrowerCanPlant>{0} benötigt zum Anpflanzen eine Fähigkeit von {1} als Gärtner.\n\nKeiner deiner nicht-bewusstlosen Gärtner hat diese Fähigkeiten, weswegen diese Pflanze nicht angebaut wird.</NoGrowerCanPlant>
+	<NoGrowerCanPlant>{0} benötigt zum Anpflanzen eine Fähigkeit von {1} als Gärtner.\n\nKeiner deiner nicht-bewußtlosen Gärtner hat diese Fähigkeiten, weswegen diese Pflanze nicht angebaut wird.</NoGrowerCanPlant>
 
 
 	<!-- Abandon home -->
 	<ConfirmAbandonHomeWithColonyPawns>Einige deiner Kolonisten oder Tiere sind in diesem Gebiet. Bist du sicher, dass du es aufgeben willst?\n\nDie folgenden Personen und Tiere werden zurückgelassen:\n\n{0}</ConfirmAbandonHomeWithColonyPawns>
+	<ConfirmAbandonHomeNegativeThoughts>Das Aufgeben von {0} wird bei den folgenden Personen folgende Gedanken verursachen:</ConfirmAbandonHomeNegativeThoughts>
+	<ConfirmAbandonHomeNegativeThoughts_Everyone>Alle:</ConfirmAbandonHomeNegativeThoughts_Everyone>
+
 
 	<!-- Move caravan and leave prisoners and animals behind -->
-	<ConfirmLeavePrisonersOrAnimalsBehind>Es sind noch immer einige Gefangene oder Tiere in diesem Gebiet und das ist die einzige Karawane, denen sie sich aktuell anschließen können.\n\nWenn du deine Karawane losschickst, werden sie das Gebiet nicht verlassen können bis du zurückkehrst. Die Gefangenen werden versuchen zu entkommen und während die Tiere auf deine Rückkehr warten werden.\n\nWenn du dich entschließt zu warten, werden sie sich der Karawane so bald wie möglich anschließen.\n\nBist du sicher, dass du die Karawane losschicken willst?</ConfirmLeavePrisonersOrAnimalsBehind>
+	<ConfirmLeavePrisonersOrAnimalsBehind>Es sind noch immer einige Gefangene oder Tiere in diesem Gebiet und das ist die einzige Karavane denen sie sich aktuell anschließen können.\n\nWenn du deine Karavane losschickst werden sie das Gebiet nicht verlassen können bis du zurückkehrst. Die Gefangenen werden versuchen zu entkommen und während die Tiere auf deine Rückkehr warten werden.\n\nWenn du dich entschließt zu warten, werden sie sich der Karavane so bald wie möglich anschließen.\n\nBist du sicher, dass du die Karavane losschicken willst?</ConfirmLeavePrisonersOrAnimalsBehind>
 
 	<!-- Abandon pawn -->
 	<ConfirmAbandonPawnDialog>Möchtest Du {0} wirklich aufgeben?</ConfirmAbandonPawnDialog>

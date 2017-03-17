@@ -17,7 +17,8 @@
 
 	<MessageVisitorsTakingWounded>{0} der Fraktion '{1}' nehmen einen verwundeten Gast mit.</MessageVisitorsTakingWounded>
 	<MessageVisitorsTrappedLeaving>{0} der Fraktion '{1}' wurden eingesperrt und graben sich jetzt frei, um zu entkommen.</MessageVisitorsTrappedLeaving>
-
+  <MessageVisitorsDangerousTemperature>{0} der Fraktion '{1}' verlassen das Gebiet aufgrund der gefährlichen Temperatur.</MessageVisitorsDangerousTemperature>
+ 
 	<MessageWornApparelDeterioratedAway>Die Ausrüstung {0} von {1} ist zerfallen.</MessageWornApparelDeterioratedAway>
 
 	<MessageSeasonBegun>{0} hat angefangen.</MessageSeasonBegun>
@@ -156,7 +157,7 @@
 
 	<MessageCaravanArrivedAtDestination>{0} ist am Ziel angekommen.</MessageCaravanArrivedAtDestination>
 
-	<MessageCaravanIsVisitingFaction>{0} ist bei den {1} angekommen.</MessageCaravanIsVisitingFaction>
+	<MessageCaravanIsVisitingSettlement>{0} ist bei den {1} angekommen.</MessageCaravanIsVisitingSettlement>
 
 	<MessageCaravanEnteredWorldObject>{0} ist bei {1} angekommen.</MessageCaravanEnteredWorldObject>
 
@@ -173,7 +174,9 @@
 	<MessageRescueeJoined>Da du HIM gerettet hast, schließt sich {0} deiner Gruppe an!</MessageRescueeJoined>
 
 	<MessageAttackedCaravanIsNowHostile>Wegen deinem Angriff auf die Karawane von {0} ist dir diese Fraktion jetzt feindlich gesinnt.</MessageAttackedCaravanIsNowHostile>
-
+  <MessageFactionPawnCrushed>{0} verloren Leute wegen einem eingestürztem Dach. Beziehung zur Fraktion: {1}</MessageFactionPawnCrushed>
+  <MessageFactionPawnLost>{0} hat {1} verloren. Beziehung zur Fraktion: {2}</MessageFactionPawnLost>
+  
 	<MessageTransporterUnreachable>Einige Transportkapseln können nicht erreicht werden.</MessageTransporterUnreachable>
 	<MessageTransportersNotAdjacent>Alle Abschussrampen der ausgewählten Transportkapseln müssen nebeneinander stehen.</MessageTransportersNotAdjacent>
 
@@ -184,7 +187,8 @@
 
 	<MessageTransportPodsArrived>Deine Transportkapseln sind angekommen.</MessageTransportPodsArrived>
 	<MessageTransportPodsArrivedAndLost>Deine Transportkapseln sind angekommen, aber da keine Kolonisten an Bord waren, ist der Inhalt verloren.</MessageTransportPodsArrivedAndLost>
-	<MessageTransportPodsArrived_BecameHostile>{0} ist dir jetzt feindlich gesinnt.</MessageTransportPodsArrived_BecameHostile>
+  <MessageTransportPodsArrivedAndAddedToCaravan>Deine Transportkapseln sind angekommen. Der Inhalt wurde der Karavane hinzugefügt.</MessageTransportPodsArrivedAndAddedToCaravan>
+ 	<MessageTransportPodsArrived_BecameHostile>{0} ist dir jetzt feindlich gesinnt.</MessageTransportPodsArrived_BecameHostile>
 
 	<MessageFailedToLoadTransportersBecauseColonistLost>Der Beladevorgang wurde abgebrochen, da ein Kolonist verloren ging.</MessageFailedToLoadTransportersBecauseColonistLost>
 
@@ -208,4 +212,17 @@
   
 	<MessageScreenResTooSmallForUIScale>Bei dieser Auflösung und UI-Skalierung wird das Spiel-Interface nicht auf den Bildschirm passen. Reduziere deine UI-Skalierung oder erhöhe die Auflösung.</MessageScreenResTooSmallForUIScale>
 
+	<MessageYouHaveToReformCaravanNow>Du musst deine jetzt neu Karavane bilden. Wer immer zurückgelassen wird, kann auf den kann nicht mehr zugegriffen werden.</MessageYouHaveToReformCaravanNow>
+	
+  <MessageDefendersAttacking>{0} der Fraktion '{1}' greifen {2} an.</MessageDefendersAttacking>
+
+  <MessageSelfTendUnsatisfied>{0} darf sich selbst verarzten, die Arbeit 'Behandeln' ist aber nicht aktiv.</MessageSelfTendUnsatisfied>
+  
+  <MessageCantAddWaypointBecauseImpassable>Diese Kachel ist unpassierbar.</MessageCantAddWaypointBecauseImpassable>
+  <MessageCantAddWaypointBecauseUnreachable>Es ist nicht möglich diese Kachel vom letzten Wegpunkt aus zu erreichen.</MessageCantAddWaypointBecauseUnreachable>
+  <MessageCantAddWaypointBecauseLimit>Du kannst nicht mehr als {0} Wegpunkte setzen.</MessageCantAddWaypointBecauseLimit>
+  <MessageCantRemoveWaypointBecauseFirst>Du kannst diesen Wegpunkt nicht entfernen.</MessageCantRemoveWaypointBecauseFirst>
+  
+  <MessageCantDoExecutionBecauseNoWardenCapableOfViolence>Keiner deiner Gefängniswärter ist fähig Gewalt anzuwenden. Die Hinrichtung kann nicht ausgeführt werden.</MessageCantDoExecutionBecauseNoWardenCapableOfViolence>
+ 
 </LanguageData>

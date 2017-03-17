@@ -48,7 +48,7 @@
 	<BuildingUnassign>Zuweisung aufheben</BuildingUnassign>
 	<CommandBedSetForPrisonersLabel>Gefangene</CommandBedSetForPrisonersLabel>
 	<CommandBedSetForPrisonersDesc>Markiere alle Betten in dem Raum als Gefängnisbetten.</CommandBedSetForPrisonersDesc>
-	<CommandBedSetForPrisonersFailOutdoors>Betten im Freien können nicht als Gefängnisbetten deklariert werden.</CommandBedSetForPrisonersFailOutdoors>
+	<CommandBedSetForPrisonersFailOutdoors>Nur Betten in geschlossenen Räumen können als Gefängnisbetten deklariert werden.</CommandBedSetForPrisonersFailOutdoors>
 	<CommandBedSetAsMedicalLabel>Krankenbett</CommandBedSetAsMedicalLabel>
 	<CommandBedSetAsMedicalDesc>Deklariere dieses Bett für den medizinischen Gebrauch.</CommandBedSetAsMedicalDesc>
 	<TurningOnPrisonerBedWarning>Das Einschalten des Gefängnis-Modus betrifft den kompletten Raum. (Kolonisten und Gefangene können nicht im selben Raum schlafen.)\n\nDiese Leute verlieren ihre Betten:</TurningOnPrisonerBedWarning>
@@ -184,6 +184,8 @@
 	<CommandSettleFailOtherWorldObjectsHere>Deine Karawane muss das einzige Objekt auf dieser Kachel sein, damit das Gebiet besiedelt werden kann.</CommandSettleFailOtherWorldObjectsHere>
 	<CommandSettleFailAlreadyHaveBase>Deine Fraktion kann nur eine Basis haben.</CommandSettleFailAlreadyHaveBase>
 	<CommandSettleFailReachedMaximumNumberOfBases>Maximale Anzahl an Kolonien erreicht.</CommandSettleFailReachedMaximumNumberOfBases>
+	<CommandSettleFailBiomeNotImplemented>Biom nicht verfügbar.</CommandSettleFailBiomeNotImplemented>
+	<CommandSettleFailFactionBaseAdjacent>Kolonien können nicht direkt nebeneinander sein.</CommandSettleFailFactionBaseAdjacent>
 
 	<!-- Abandon home -->
 	<CommandAbandonHome>Aufgeben</CommandAbandonHome>
@@ -215,7 +217,7 @@
 	<!-- Cancel load -->
 	<CommandCancelLoad>Beladung abbrechen</CommandCancelLoad>
 	<CommandCancelLoadDesc>Brich den Beladevorgang ab und wirf die aktuelle Ladung aus.</CommandCancelLoadDesc>
- 
+
 	<!-- Launch group -->
 	<CommandLaunchGroup>Gruppe starten</CommandLaunchGroup>
 	<CommandLaunchGroupDesc>Initiiert die Ziel-Prozedur zum Starten einer Gruppe von Transportkapseln. Der nächste Schritt ist das Auswählen des Ziels. Die Kapseln werden zusammen abfliegen und auch zusammen landen.</CommandLaunchGroupDesc>
@@ -242,5 +244,13 @@
 	<!-- Select next transporter -->
 	<CommandSelectNextTransporter>Wähle nächste in Gruppe</CommandSelectNextTransporter>
 	<CommandSelectNextTransporterDesc>Wähle nächste Transportkapsel in dieser Abschuss-Gruppe.</CommandSelectNextTransporterDesc>
+
+	<!-- Vent -->
+	<CommandDesignateOpenCloseVentLabel>Status Auf/Zu</CommandDesignateOpenCloseVentLabel>
+	<CommandDesignateOpenCloseVentDesc>Veranlasse, dass die Lüftung umgeschaltet wird. Ein Kolonist wird bald kommen und sie umstellen.</CommandDesignateOpenCloseVentDesc>
+
+	<!-- Remove waypoint -->
+	<CommandRemoveWaypointLabel>Entfernen</CommandRemoveWaypointLabel>
+	<CommandRemoveWaypointDesc>Entferne diesen Wegpunkt.</CommandRemoveWaypointDesc>
 
 </LanguageData>

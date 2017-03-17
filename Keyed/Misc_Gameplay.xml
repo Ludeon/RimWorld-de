@@ -2,7 +2,7 @@
 <LanguageData>
 
 	<!-- Various -->
-
+	<HitPointsBasic>Trefferpunkte</HitPointsBasic>
 	<WorkLeft>Verbleibende Arbeit</WorkLeft>
 	<Contents>Inhalt</Contents>
 	<ContainedResources>Gesicherte Rohstoffe</ContainedResources>
@@ -26,7 +26,7 @@
 
 	<DevelopedImmunityLower>wurde immun</DevelopedImmunityLower>
 	<NeedsTendingNow>Behandlung ist jetzt notwendig</NeedsTendingNow>
-	<NextTreatmentIn>Nächste Behandlung in {0}</NextTreatmentIn>
+	<NextTendIn>Nächste Behandlung in {0}</NextTendIn>
 	<MissingMedicalBillIngredient>keine {0}</MissingMedicalBillIngredient>
 	<Immunity>Immunität</Immunity>
 	<Race>Rasse</Race>
@@ -67,10 +67,11 @@
 	<RadiusExpandsIn>Radius erweitert sich in</RadiusExpandsIn>
 	<Permanent>permanent</Permanent>
 	<CaravanResting>Pausiert</CaravanResting>
-	<CaravanEstimatedTimeToDestination>Voraussichtliche Ankunftszeit: {0}</CaravanEstimatedTimeToDestination>
+	<CaravanEstimatedTimeToDestination>Voraussichtliche Ankunftszeit: {0} Tage</CaravanEstimatedTimeToDestination>
 	<CaravanImmobilizedByMass>Bewegungsunfähig: Zu viel Gewicht.</CaravanImmobilizedByMass>
 	<CaravanOutOfFood>Keine Nahrung.</CaravanOutOfFood>
 	<CaravanDaysOfFood>Nahrungsvorrat: {0}</CaravanDaysOfFood>
+	<CaravanDaysOfFoodRot>Nahrungsvorrat: {0}, verdirbt in {1} Tagen</CaravanDaysOfFoodRot>
 	<CaravanMemberMentalBreak>Angehalten: {0} hat einen Zusammenbruch.</CaravanMemberMentalBreak>
 	<AllCaravanMembersDowned>Angehalten: Alle sind bewusstlos.</AllCaravanMembersDowned>
 	<CaravanTraveling>Unterwegs</CaravanTraveling>
@@ -81,7 +82,7 @@
 	<Temperature>Temperatur</Temperature>
 	<BadTemperature>Ungünstige Temperatur</BadTemperature>
 	<IdealFermentingTemperature>Ideale Fermentierungstemperatur</IdealFermentingTemperature>
-	<DrugEffectMultiplier>{0} Effekt-Multiplikator</DrugEffectMultiplier>
+	<DrugEffectMultiplier>{0} Effekt-Multiplikator: {1}</DrugEffectMultiplier>
 	<CaravanVisiting>Besucht {0}</CaravanVisiting>
 	<CaravanEntering>Betritt {0}</CaravanEntering>
 	<CaravanAttacking>Attackiert {0}</CaravanAttacking>
@@ -103,7 +104,10 @@
 	<TransportPodInGroupHasSomethingLeftToLoad>Ladevorgang läuft</TransportPodInGroupHasSomethingLeftToLoad>
 	<TransportPodDestinationBeyondMaximumRange>Außerhalb maximaler Reichweite</TransportPodDestinationBeyondMaximumRange>
 	<TransportPodNotEnoughFuel>Nicht genug Kraftstoff</TransportPodNotEnoughFuel>
-	<FactionBaseTrader>{0} von {1}</FactionBaseTrader>
+	<SettlementTrader>{0} von {1}</SettlementTrader>
+	<RoomSurgerySuccessChanceFactor>Operationserfolgsfaktor des Raumes</RoomSurgerySuccessChanceFactor>
+	<RoomInfectionChanceFactor>Behandlungsinfektionsfaktor des Raumes</RoomInfectionChanceFactor>
+	<VentClosed>Geschlossen</VentClosed>
 
 	<!-- Fermentation barrel -->
 
@@ -119,7 +123,9 @@
 	<Headshot>Kopfschuss</Headshot>
 	<TextMote_TreatSuccess>Erfolgreich behandelt\n{0} Chance</TextMote_TreatSuccess>
 	<TextMote_TreatFailed>Behandlung fehlgeschlagen\n{0} Chance</TextMote_TreatFailed>
-	<HarvestFailed>Ernte\nfehlgeschlagen</HarvestFailed>
+	<TextMote_HarvestFailed>Ernte\nfehlgeschlagen</TextMote_HarvestFailed>
+	<TextMote_YieldWasted>Ertrag\nverloren</TextMote_YieldWasted>
+	<TextMote_ProductWasted>Produkt\nverloren</TextMote_ProductWasted>
 	<TextMote_RecruitFail>Anwerbung fehlgeschlagen!\n{0} Chance</TextMote_RecruitFail>
 	<TextMote_TameFail>Zähmung fehlgeschlagen\n{0} Chance</TextMote_TameFail>
 	<TextMote_TameSuccess>Gezähmt!\n{0} Chance</TextMote_TameSuccess>
@@ -127,6 +133,7 @@
 	<TextMote_TrainSuccess>Training erfolgreich: {0}\n{1} Chance</TextMote_TrainSuccess>
 	<TextMote_FixBrokenDownBuildingFail>Reparatur\nfehlgeschlagen</TextMote_FixBrokenDownBuildingFail>
 	<TextMote_ConstructionFail>Konstruktion\nfehlgeschlagen</TextMote_ConstructionFail>
+	<TextMote_Dodge>Ausgewichen</TextMote_Dodge>
 
 	<!-- Areas -->
 
@@ -185,6 +192,7 @@
 	<!-- Lord job reports -->
 	<LordReportAttendingMarriageCeremony>Nimmt an Hochzeitszeremonie teil</LordReportAttendingMarriageCeremony>
 	<LordReportAttendingParty>Feiert auf Party</LordReportAttendingParty>
+	<LordReportFormingCaravan>Stelle Karavane zusammen</LordReportFormingCaravan>
 
 	<!-- Shooting report -->
 
@@ -206,6 +214,8 @@
 	<RecipeMakeJobString>Stelle {0} her.</RecipeMakeJobString>
 	<RecipeAdminister>verwalte {0}</RecipeAdminister>
 	<RecipeAdministerJobString>Verwaltet {0}.</RecipeAdministerJobString>
+	<TeetotalerUnhappy>Abstinenzler wird unglücklich sein</TeetotalerUnhappy>
+	<ProsthophobeUnhappy>Prothesenphobiker wird unglücklich sein</ProsthophobeUnhappy>
 
 
 	<!-- Thoughts -->
@@ -228,10 +238,11 @@
 	<Dead>Tod</Dead>
 	<Unconscious>Bewusstlos</Unconscious>
 	<PainShock>In Schock durch Schmerz</PainShock>
-
+	<PainShockShort>Schmerzschock</PainShockShort>
 	<Incapacitated>Unfähig</Incapacitated>
 	<InRestraints>Gefesselt (verlangsamt)</InRestraints>
 	<Carrying>Trägt</Carrying>
+	<AffectedBy>Beeinflusst von:</AffectedBy>
 
 	<!-- Inspector general stuff -->
 
@@ -488,5 +499,19 @@
 
 	<!-- Compass -->
 	<CompassTip>Zeigt Richtung Norden. Klicke um die Kamera nach Norden auszurichten.</CompassTip>
+
+	<!-- Distance measure -->
+	<RoutePlannerButtonTip>Anklicken um den Planungsmodus zu aktivieren, wo du die Reise planen und die Entfernung zwischen den Wegpunkten berechnen kannst.</RoutePlannerButtonTip>
+	<RoutePlannerAddTwoOrMoreWaypoints>Noch zwei oder mehr Wegpunkte hinzufügen.</RoutePlannerAddTwoOrMoreWaypoints>
+	<RoutePlannerAddOneOrMoreWaypoints>Noch einen oder mehr Wegpunkte hinzufügen.</RoutePlannerAddOneOrMoreWaypoints>
+	<RoutePlannerEstTimeToFinalDest>Gesamte Reisezeit: {0}</RoutePlannerEstTimeToFinalDest>
+	<RoutePlannerUsingAverageTicksPerMoveWarning>Der Planungsmodus verwendet die Standard-Karavanengeschwindigkeit. Die tatsächliche Geschwindigkeit kann abweichen.</RoutePlannerUsingAverageTicksPerMoveWarning>
+	<RoutePlannerUsingTicksPerMoveOfCaravan>Kalkulation für: {0}</RoutePlannerUsingTicksPerMoveOfCaravan>
+	<RoutePlannerPressRMBToAddAndRemoveWaypoints>Rechte Maustaste: Wegpunkte hinzufügen/entfernen.</RoutePlannerPressRMBToAddAndRemoveWaypoints>
+	<RoutePlannerPressEscapeToExit>ESC: Planungsmodus beenden.</RoutePlannerPressEscapeToExit>
+	<RoutePlannerPressEscapeToReturnToCaravanFormationDialog>ESC: Zum Karavanen-Formierungsdialog zurückkehren.</RoutePlannerPressEscapeToReturnToCaravanFormationDialog>
+	<EstimatedTimeToThisWaypoint>Geschätzte Zeit zum Wegpunkt: {0}</EstimatedTimeToThisWaypoint>
+	<EstimatedTimeToThisWaypointFromPrevious>Geschätzte Zeit zwischen diesem und dem vorhergehenden Wegpunkt: {0}</EstimatedTimeToThisWaypointFromPrevious>
+
 
 </LanguageData>
