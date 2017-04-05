@@ -159,8 +159,6 @@
 	<CommandBuildCopy>Kopie bauen</CommandBuildCopy>
 	<CommandBuildCopyDesc>Baue eine Kopie von diesem Gebäude.</CommandBuildCopyDesc>
 
-
-
 	<!-- Form caravan -->
 	<CommandFormCaravan>Erstelle Karawane</CommandFormCaravan>
 	<CommandFormCaravanDesc>Formiert eine Gruppe Kolonisten, um in neue Gebiete zu reisen. Die Kolonisten werden die zugewiesenen Vorräte und Tiere einsammeln, das aktuelle Gebiet verlassen und auf weitere Befehle warten.</CommandFormCaravanDesc>
@@ -186,7 +184,9 @@
 	<CommandSettleFailReachedMaximumNumberOfBases>Maximale Anzahl an Kolonien erreicht.</CommandSettleFailReachedMaximumNumberOfBases>
 	<CommandSettleFailBiomeNotImplemented>Biom nicht verfügbar.</CommandSettleFailBiomeNotImplemented>
 	<CommandSettleFailFactionBaseAdjacent>Kolonien können nicht direkt nebeneinander sein.</CommandSettleFailFactionBaseAdjacent>
-
+  <CommandSettleFailNoColonists>Es ist niemand hier, der das Gebiet beanspruchen kann.</CommandSettleFailNoColonists>
+  <CommandSettleFailEnemies>Es sind Gegner im Gebiet.</CommandSettleFailEnemies>
+	
 	<!-- Abandon home -->
 	<CommandAbandonHome>Aufgeben</CommandAbandonHome>
 	<CommandAbandonHomeDesc>Gib dieses Gebiet auf. Das Gebiet wird unzugänglich und du wirst nie wieder hier her zurückkehren können. Nachdem du deine Heimatbasis aufgegeben hast, kannst du eine deiner Karawanen anweisen, ein neues Gebiet zu besiedeln.</CommandAbandonHomeDesc>
@@ -205,6 +205,12 @@
 	<CommandTradeDesc>Handele mit dieser Fraktion.</CommandTradeDesc>
 	<CommandTradeFailNoNegotiator>Da ist kein Händler, der bei Bewusstsein ist bzw. keinen Nervenzusammenbruch hat.</CommandTradeFailNoNegotiator>
 
+  <!-- Fulfill request -->
+  <CommandFulfillTradeOffer>Erfülle Handelsangebot</CommandFulfillTradeOffer>
+  <CommandFulfillTradeOfferDesc>Erfülle die Handelsanfrage der Siedlung und erhalte deine Belohnung.</CommandFulfillTradeOfferDesc>
+  <CommandFulfillTradeOfferFailInsufficient>Deine Karavane benötigt {0} um dieses Handelsangebot zu erfüllen.</CommandFulfillTradeOfferFailInsufficient>
+  <CommandFulfillTradeOfferConfirm>Biete {0} für {1}?</CommandFulfillTradeOfferConfirm>
+	
 	<!-- Take off -->
 	<CommandTakeOff>Abflug</CommandTakeOff>
 	<CommandTakeOffDesc>Gehe an Bord des Schiffes und entkomme diesem Planeten.</CommandTakeOffDesc>
