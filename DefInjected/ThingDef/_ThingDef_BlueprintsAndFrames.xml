@@ -81,10 +81,10 @@
 	<SunLamp_Frame.label>Künstl. Sonne (wird gebaut)</SunLamp_Frame.label>
 	<SunLamp_Frame.description>Beleuchtet eine Fläche so stark, dass Pflanzen wachsen können. Benötigt sehr viel Strom.</SunLamp_Frame.description>
 	<SunLamp_Blueprint_Install.label>Künstl. Sonne (Entwurf)</SunLamp_Blueprint_Install.label>
-	<EquipmentRack_Blueprint.label>Regal (Entwurf)</EquipmentRack_Blueprint.label>
-	<EquipmentRack_Frame.label>Regal (wird gebaut)</EquipmentRack_Frame.label>
-	<EquipmentRack_Frame.description>Hier gelagerte Ausrüstung verrottet nicht, auch nicht im Freien.</EquipmentRack_Frame.description>
-	<EquipmentRack_Blueprint_Install.label>Regal (Entwurf)</EquipmentRack_Blueprint_Install.label>
+	<Shelf_Blueprint.label>Regal (Entwurf)</Shelf_Blueprint.label>
+	<Shelf_Frame.label>Regal (wird gebaut)</Shelf_Frame.label>
+	<Shelf_Frame.description>Hier gelagerte Ausrüstung verrottet nicht, auch nicht im Freien.</Shelf_Frame.description>
+	<Shelf_Blueprint_Install.label>Regal (Entwurf)</Shelf_Blueprint_Install.label>
 	<HorseshoesPin_Blueprint.label>Hufeisen Stab (Entwurf)</HorseshoesPin_Blueprint.label>
 	<HorseshoesPin_Frame.label>Hufeisen Stab (wird gebaut)</HorseshoesPin_Frame.label>
 	<HorseshoesPin_Frame.description>Ein einfaches antikes Spiel, das mit ein paar Hufeisen und einem großen Stab gespielt wird. Die Spieler werfen ihre Hufeisen über eine festgelegte Entfernung und versuchen, dass es so nah wie möglich am Stab landet. Es entspannt und ist nebenbei noch gut für die Auge-Hand-Koordination.</HorseshoesPin_Frame.description>
@@ -105,6 +105,7 @@
 	<MegascreenTelevision_Blueprint_Install.label>Riesen Flachbild Fernseher (Entwurf)</MegascreenTelevision_Blueprint_Install.label>
 	<Telescope_Blueprint_Install.label>Teleskop (Entwurf)</Telescope_Blueprint_Install.label>
 	<OrbitalTradeBeacon_Blueprint.label>Orbitales Funkfeuer (Entwurf)</OrbitalTradeBeacon_Blueprint.label>
+	<OrbitalTradeBeacon_Blueprint_Install.label>Orbitales Funkfeuer (Entwurf)</OrbitalTradeBeacon_Blueprint_Install.label>
 	<OrbitalTradeBeacon_Frame.label>Orbitales Funkfeuer (wird gebaut)</OrbitalTradeBeacon_Frame.label>
 	<OrbitalTradeBeacon_Frame.description>Für orbitalen Handel benötigt.\nDu kannst nur Waren verkaufen, welche sich in der Lagerzone eines Funkfeuers befinden. Kann auch Innen platziert werden.</OrbitalTradeBeacon_Frame.description>
 	<CommsConsole_Blueprint.label>Funkanlage (Entwurf)</CommsConsole_Blueprint.label>
@@ -120,6 +121,9 @@
 	<GroundPenetratingScanner_Blueprint.label>Tiefen Scanner (Entwurf)</GroundPenetratingScanner_Blueprint.label>
 	<GroundPenetratingScanner_Frame.label>Tiefen Scanner (wird gebaut)</GroundPenetratingScanner_Frame.label>
 	<GroundPenetratingScanner_Frame.description>Ein in die Tiefe gerichtetes Radar, das zusätzlich mit Sonar und magnetischer Bildsensorik ausgestattet ist. Es erlaubt dir verborgene Rohstoffadern (aber nicht deren genaue Art) aufzuspüren. Hinweis: Verbraucht sehr viel Strom.</GroundPenetratingScanner_Frame.description>
+	<LongRangeMineralScanner_Blueprint.label>Langstrecken Mineralien Scanner (Entwurf)</LongRangeMineralScanner_Blueprint.label>
+	<LongRangeMineralScanner_Frame.label>Langstrecken Mineralien Scanner (wird gebaut)</LongRangeMineralScanner_Frame.label>
+	<LongRangeMineralScanner_Frame.description>Sucht automatisch in nahegelegenen Gebieten nach wertvollen Mineralien, wie z.B. Gold oder Jade (allerdings nicht in dem Gebiet, wo der Scanner aufgestellt wurde).\n\nDie Mineralien werden durchschnittlich einmal alle 30 Tage in einem Radius von 30 Kacheln aufgedeckt.\n\nMehr als einen Scanner im gleichen Gebiet zu bauen hat wenig bis keine Auswirkungen.</LongRangeMineralScanner_Frame.description>
 	<PodLauncher_Blueprint.label>Abschussrampe (Kapsel)(Entwurf)</PodLauncher_Blueprint.label>
 	<PodLauncher_Frame.label>Abschussrampe (Kapsel) (wird gebaut)</PodLauncher_Frame.label>
 	<PodLauncher_Frame.description>Eine Vorrichtung zum Betanken und Starten einer Kapsel. Abschussrampen können eine Gruppe von Kapseln gleichzeitig abschießen - müssen dafür jedoch nebeneinander gebaut werden.</PodLauncher_Frame.description>
@@ -153,6 +157,9 @@
 	<PartySpot_Blueprint.label>Partyplatz (Entwurf)</PartySpot_Blueprint.label>
 	<PartySpot_Frame.label>Partyplatz (wird gebaut)</PartySpot_Frame.label>
 	<PartySpot_Frame.description>Kennzeichnet einen Ort, an dem Partys abgehalten werden. Die Party findet um den Punkt herum statt.</PartySpot_Frame.description>
+	<CaravanPackingSpot_Blueprint.label>Karavanplatz (Entwurf)</CaravanPackingSpot_Blueprint.label>
+	<CaravanPackingSpot_Frame.label>Karavanplatz (wird gebaut)</CaravanPackingSpot_Frame.label>
+	<CaravanPackingSpot_Frame.description>Kennzeichnet einen Ort, an dem Karavanen zusammengestellt werden.</CaravanPackingSpot_Frame.description>
 	<GlowPod_Blueprint_Install.label>Leuchtkapsel (Entwurf)</GlowPod_Blueprint_Install.label>
 	<PowerConduit_Blueprint.label>Stromkabel (Entwurf)</PowerConduit_Blueprint.label>
 	<PowerConduit_Frame.label>Stromkabel (wird gebaut)</PowerConduit_Frame.label>
@@ -353,20 +360,35 @@
 	<CarpetDark_Blueprint.label>Grauer Teppich (Entwurf)</CarpetDark_Blueprint.label>
 	<CarpetDark_Frame.label>Grauer Teppich (wird gebaut)</CarpetDark_Frame.label>
 	<CarpetDark_Frame.description>Laufende Bodenarbeiten.</CarpetDark_Frame.description>
-	<TileSandstone_Blueprint.label>Sandstein Platte (Entwurf)</TileSandstone_Blueprint.label>
-	<TileSandstone_Frame.label>Sandstein Platte (wird gebaut)</TileSandstone_Frame.label>
+	<TileSandstone_Blueprint.label>Sandstein Fliese (Entwurf)</TileSandstone_Blueprint.label>
+	<TileSandstone_Frame.label>Sandstein Fliese (wird gebaut)</TileSandstone_Frame.label>
 	<TileSandstone_Frame.description>Laufende Bodenarbeiten.</TileSandstone_Frame.description>
-	<TileGranite_Blueprint.label>Granit Platte (Entwurf)</TileGranite_Blueprint.label>
-	<TileGranite_Frame.label>Granit Platte (wird gebaut)</TileGranite_Frame.label>
+	<TileGranite_Blueprint.label>Granit Fliese (Entwurf)</TileGranite_Blueprint.label>
+	<TileGranite_Frame.label>Granit Fliese (wird gebaut)</TileGranite_Frame.label>
 	<TileGranite_Frame.description>Laufende Bodenarbeiten.</TileGranite_Frame.description>
-	<TileLimestone_Blueprint.label>Kalkstein Platte (Entwurf)</TileLimestone_Blueprint.label>
-	<TileLimestone_Frame.label>Kalkstein Platte (wird gebaut)</TileLimestone_Frame.label>
+	<TileLimestone_Blueprint.label>Kalkstein Fliese (Entwurf)</TileLimestone_Blueprint.label>
+	<TileLimestone_Frame.label>Kalkstein Fliese (wird gebaut)</TileLimestone_Frame.label>
 	<TileLimestone_Frame.description>Laufende Bodenarbeiten.</TileLimestone_Frame.description>
-	<TileSlate_Blueprint.label>Schiefer Platte (Entwurf)</TileSlate_Blueprint.label>
-	<TileSlate_Frame.label>Schiefer Platte (wird gebaut)</TileSlate_Frame.label>
+	<TileSlate_Blueprint.label>Schiefer Fliese (Entwurf)</TileSlate_Blueprint.label>
+	<TileSlate_Frame.label>Schiefer Fliese (wird gebaut)</TileSlate_Frame.label>
 	<TileSlate_Frame.description>Laufende Bodenarbeiten.</TileSlate_Frame.description>
-	<TileMarble_Blueprint.label>Marmor Platte (Entwurf)</TileMarble_Blueprint.label>
-	<TileMarble_Frame.label>Marmor Platte (wird gebaut)</TileMarble_Frame.label>
+	<TileMarble_Blueprint.label>Marmor Fliese (Entwurf)</TileMarble_Blueprint.label>
+	<TileMarble_Frame.label>Marmor Fliese (wird gebaut)</TileMarble_Frame.label>
 	<TileMarble_Frame.description>Laufende Bodenarbeiten.</TileMarble_Frame.description>
+	<FlagstoneSandstone_Blueprint.label>Sandstein Platte (Entwurf)</FlagstoneSandstone_Blueprint.label>
+	<FlagstoneSandstone_Frame.label>Sandstein Platte (wird gebaut)</FlagstoneSandstone_Frame.label>
+	<FlagstoneSandstone_Frame.description>Laufende Bodenarbeiten.</FlagstoneSandstone_Frame.description>
+	<FlagstoneGranite_Blueprint.label>Granit Platte (Entwurf)</FlagstoneGranite_Blueprint.label>
+	<FlagstoneGranite_Frame.label>Granit Platte (wird gebaut)</FlagstoneGranite_Frame.label>
+	<FlagstoneGranite_Frame.description>Laufende Bodenarbeiten.</FlagstoneGranite_Frame.description>
+	<FlagstoneLimestone_Blueprint.label>Kalkstein Platte (Entwurf)</FlagstoneLimestone_Blueprint.label>
+	<FlagstoneLimestone_Frame.label>Kalkstein Platte (wird gebaut)</FlagstoneLimestone_Frame.label>
+	<FlagstoneLimestone_Frame.description>Laufende Bodenarbeiten.</FlagstoneLimestone_Frame.description>
+	<FlagstoneSlate_Blueprint.label>Schiefer Platte (Entwurf)</FlagstoneSlate_Blueprint.label>
+	<FlagstoneSlate_Frame.label>Schiefer Platte (wird gebaut)</FlagstoneSlate_Frame.label>
+	<FlagstoneSlate_Frame.description>Laufende Bodenarbeiten.</FlagstoneSlate_Frame.description>
+	<FlagstoneMarble_Blueprint.label>Marmor Platte (Entwurf)</FlagstoneMarble_Blueprint.label>
+	<FlagstoneMarble_Frame.label>Marmor Platte (wird gebaut)</FlagstoneMarble_Frame.label>
+	<FlagstoneMarble_Frame.description>Laufende Bodenarbeiten.</FlagstoneMarble_Frame.description>
 
 </LanguageData>
