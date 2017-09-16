@@ -54,6 +54,8 @@
 	<RuinedByTemperature>Ruiniert durch Temperatur.</RuinedByTemperature>
 	<CorpsePercentMissing>Fehlende Körperteile</CorpsePercentMissing>
 	<HiveReproducesIn>Erweitert sich in</HiveReproducesIn>
+	<DormantHiveNotReproducing>Ruhend: Erweitert sich nicht.</DormantHiveNotReproducing>
+	<NextSpawnedItemIn>Nächste(r) {0} in</NextSpawnedItemIn>
 	<BrokenDown>Defekt</BrokenDown>
 	<BondBrackets>(verbunden)</BondBrackets>
 	<Fuel>Kraftstoff</Fuel>
@@ -80,6 +82,7 @@
 	<CaravanHoursPerTile>h/Feld</CaravanHoursPerTile>
 	<CaravanBaseMovementTime>Basisbewegungszeit</CaravanBaseMovementTime>
 	<CurrentTileMovementTime>Momentane Bewegungszeit</CurrentTileMovementTime>
+	<StealthFactor>Heimlichkeit</StealthFactor>
 	<Temperature>Temperatur</Temperature>
 	<BadTemperature>Ungünstige Temperatur</BadTemperature>
 	<IdealFermentingTemperature>Ideale Fermentierungstemperatur</IdealFermentingTemperature>
@@ -124,6 +127,12 @@
 	<KnownSiteThreat>Bedrohung: {0}.</KnownSiteThreat>
 	<KnownSiteThreats>Bedrohungen: {0}.</KnownSiteThreats>
 	<KnownSiteThreatsNone>Bedrohungen: keine.</KnownSiteThreatsNone>
+	<SkillRequirements>Benötigte Fähigkeiten</SkillRequirements>
+	<Products>Erzeugnisse</Products>
+	<DeepDrillExhausted>Tiefenbohrer Rohstoffe erschöpft.</DeepDrillExhausted>
+	<Relationship>{0} von {1}</Relationship>
+	<Prisoner>Gefangener</Prisoner>
+	<Refugee>Flüchtling</Refugee>
 
 
 	<!-- Fermentation barrel -->
@@ -186,7 +195,7 @@
 	<GunInstalled>Installiert</GunInstalled>
 	<MinimumRange>Minimale Reichweite</MinimumRange>
 	<CanFireIn>Kann schießen in</CanFireIn>
-	<ShellLoaded>Geschoss geladen</ShellLoaded>
+	<ShellLoaded>Geschoss geladen: {0}</ShellLoaded>
 	<ShellNotLoaded>Nicht geladen</ShellNotLoaded>
 
 	<!-- Job reports -->
@@ -195,17 +204,19 @@
 	<ReportHauling>trägt {0}.</ReportHauling>
 	<ReportSleeping>schläft.</ReportSleeping>
 	<ReportResting>ruht sich aus.</ReportResting>
-	<WatchingSunrise>beobachtet Sonnenaufgang</WatchingSunrise>
-	<CloudWatching>schaut den Wolken zu</CloudWatching>
-	<WatchingSunset>beobachtet Sonnenuntergang</WatchingSunset>
-	<Stargazing>beobachtet Sternenhimmel</Stargazing>
-	<WatchingEclipse>beobachtet die Sonnenfinsternis</WatchingEclipse>
+	<WatchingSunrise>beobachtet Sonnenaufgang.</WatchingSunrise>
+	<CloudWatching>schaut den Wolken zu.</CloudWatching>
+	<WatchingSunset>beobachtet Sonnenuntergang.</WatchingSunset>
+	<Stargazing>beobachtet Sternenhimmel.</Stargazing>
+	<WatchingEclipse>beobachtet die Sonnenfinsternis.</WatchingEclipse>
+	<WatchingAurora>beobachtet die Aurora.</WatchingAurora>
 	<UsingVerb>benutzt {0} an {1}.</UsingVerb>
 	<AreaLower>Gebiet</AreaLower>
 	<ReportCowering>kauernd.</ReportCowering>
 	<ReportStanding>stehend.</ReportStanding>
 	<ReportExtinguishingFire>löscht Feuer.</ReportExtinguishingFire>
 	<ReportExtinguishingFireOn>löscht Feuer von {0}.</ReportExtinguishingFireOn>
+	<ReportDiggingUpCorpse>begräbt Leiche.</ReportDiggingUpCorpse>
 
 	<!-- Lord job reports -->
 	<LordReportAttendingMarriageCeremony>Nimmt an Hochzeitszeremonie teil</LordReportAttendingMarriageCeremony>
@@ -261,6 +272,7 @@
 	<InRestraints>Gefesselt (verlangsamt)</InRestraints>
 	<Carrying>Trägt</Carrying>
 	<AffectedBy>Beeinflusst von:</AffectedBy>
+	<Queued>Eingereiht</Queued>
 
 	<!-- Inspector general stuff -->
 
@@ -337,7 +349,9 @@
 	<GrowYearRound>Ganzjährig</GrowYearRound>
 	<GrowSeasonHereNow>Anbausaison hat begonnen.</GrowSeasonHereNow>
 	<CannotGrowBadSeasonTemperature>Kann nicht wachsen (jahreszeitbedingt ungünstige Temperatur).</CannotGrowBadSeasonTemperature>
-
+	<Blighted>Verdorben</Blighted>
+	<DyingBecauseExposedToLight>Stirbt da dem Licht ausgesetzt</DyingBecauseExposedToLight>
+	
 	<!-- Zones -->
 
 	<Zone>Zone</Zone>
@@ -369,8 +383,9 @@
 	<ShowRoofOverlayToggleButton>Schalte die Markierung von Dächern ein/aus.</ShowRoofOverlayToggleButton>
 	<LockNorthUpToggleButton>Verriegeln Sie die Drehung der Kamera, so dass der Nordpol immer oben ist..</LockNorthUpToggleButton>
 	<UsePlanetDayNightSystemToggleButton>Umschalten der Tag/Nacht-Beleuchtung.</UsePlanetDayNightSystemToggleButton>
-	<ExpandingIconsToggleButton>Schaltet die Anzeige von erweiterten Symbolen anstelle der regulären Symbole für entfernte Objekte um.</ExpandingIconsToggleButton>
-
+	<ShowExpandingIconsToggleButton>Schaltet die Anzeige von erweiterten Symbolen anstelle der regulären Symbole für entfernte Objekte um.</ShowExpandingIconsToggleButton>
+	<ShowWorldFeaturesToggleButton>Schaltet die Anzeige der Gebietsnamen um.</ShowWorldFeaturesToggleButton>
+	
 	<!-- Fire -->
 
 	<Fire>Feuer</Fire>
@@ -414,7 +429,15 @@
 	<ShipReportCannotLaunch>Kann nicht starten.</ShipReportCannotLaunch>
 	<ShipReportCanLaunch>Startbereit.</ShipReportCanLaunch>
 	<ShipReportMissingPart>Kritische Komponente fehlt.</ShipReportMissingPart>
+  <ShipReportMissingPartRequires>benötigt</ShipReportMissingPartRequires>
 	<ShipReportNoFullPods>Keine der Kryoschlafkapseln ist belegt.</ShipReportNoFullPods>
+<ShipReportHibernating>Komponenten im Tiefschlafmodus</ShipReportHibernating>
+  <ShipReportNotReady>Komponenten noch nicht bereit</ShipReportNotReady>
+  <HibernateWarning>Charlon Whitestone ist bereit die Aktivierungssequenz des Reaktors einzuleiten.\n\nEr warnt dich, dass die Startup-Prozedur 15 Tage dauern und die Energiesignatur über weite Entfernungen messbar sein wird. Diese Art von Energiesignatur deutet auf interstellare Raumflugfähigkeit hin und wird ganze Gruppen von verzweifelten Räubern und Schatzsuchern anlocken. Stelle sicher, dass deine Verteidigung steht bevor du die Systeme hochfährst.</HibernateWarning>
+
+  <HibernateCompleteLabel>Reaktor einsatzbereit</HibernateCompleteLabel>
+  <HibernateComplete>Charlon Whitestone hat die Tiefschlafwecksequenz des Reaktors beendet. Er ist jetzt bereit den Start einzleiten.</HibernateComplete>
+
 
 	<!-- Neurotrainer -->
 
@@ -536,5 +559,9 @@
 	<OutfitWorker>Arbeiter</OutfitWorker>
 	<OutfitSoldier>Soldat</OutfitSoldier>
 	<OutfitNudist>Nudist</OutfitNudist>
-
+	
+  <!-- Hibernatable -->
+  <HibernatableHibernating>Tiefschlafmodus</HibernatableHibernating>
+  <HibernatableStartingUp>System fährt hoch</HibernatableStartingUp>
+  
 </LanguageData>

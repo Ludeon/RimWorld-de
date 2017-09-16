@@ -29,6 +29,8 @@
 
 	<RecruitSuccess>{0} hat {1} erfolgreich angeworben ({2} Chance).</RecruitSuccess>
 	<RecruitFail>{0} konnte {1} nicht anwerben ({2} Chance).</RecruitFail>
+	
+	<RelatedPawnInvolvedInQuest>NAME ist {1} von {0}. Wenn NAME stirbt, wird {0} sehr lange um HIM trauern. Andererseits, wenn du es schaffst NAME zu retten, wird {0} sehr lange sehr glücklich sein.</RelatedPawnInvolvedInQuest>
 
 	<LetterLabelBirthday>Geburtstag</LetterLabelBirthday>
 	<BirthdayChronological>{0} hat heute HISen Geburtstag! Biologisch ist {1} {3} Jahre alt. Chronologisch wurde {1} {2}.\n\nHinweis: Das chronologische Alter ist das biologische Alter plus der verbrachten Zeit in einer Kryokapsel.</BirthdayChronological>
@@ -38,6 +40,10 @@
 	<NewDisease>{0} ist an {1} erkrankt.\nStelle sicher, dass Du ein Krankenbett und einen Arzt hast. Sorge dafür, dass {2} eine vernünftige Behandlung bekommt und so viel Zeit wie möglich im Bett verbringt, um sich schnell zu erholen.</NewDisease>
 	<NewPartDisease>{0} ist an {3} erkrankt. Die Infektion ist in HISem {1}.\nStelle sicher, dass Du ein Krankenbett und einen Arzt hast. Sorge dafür, dass {2} eine vernünftige Behandlung bekommt und so viel Zeit wie möglich im Bett verbringt, um sich schnell zu erholen.</NewPartDisease>
 
+	<PawnWasFormerlyColonist>{0} war früher aus deiner Fraktion.</PawnWasFormerlyColonist>
+	<PawnHasTheseRelationshipsWithColonists>{0} hat diese Beziehungen zu deinen Kolonisten:</PawnHasTheseRelationshipsWithColonists>
+	<PrisonerRescueTimeout>Das Lager wird nach {0} Tagen verschwinden. Wenn du diese Gelegenheit verpasst, wirst du vielleicht nie wieder etwas von {1} hören.</PrisonerRescueTimeout>
+	
 	<LetterLabelAncientShrineWarning>Antiker Schrein</LetterLabelAncientShrineWarning>
 	<AncientShrineWarning>Als {0} sich der antiken Wand nähert, überkommt HIM eine unheilvolle Vorahnung. HECAP ist sich nicht sicher, warum, aber HE spürt, dass sich in dieser verstaubten Ruine eine große Gefahr verbergen könnte.</AncientShrineWarning>
 
@@ -162,5 +168,32 @@
 	<LetterLabelFoundPreciousLump>Wertvolle Mineralien gefunden</LetterLabelFoundPreciousLump>
 	<LetterFoundPreciousLump>Dein Langstrecken Mineralienscanner hat einen Klumpen wertvoller Mineralien in der Nähe gefunden.\n\nWir wissen aber nicht wer oder was - wenn überhaupt - es bewacht.</LetterFoundPreciousLump>
 
+  
+  <!-- Sleeping mechanoids -->
+  <LetterLabelSleepingMechanoids>Schlafende Mechanoiden</LetterLabelSleepingMechanoids>
+  <LetterSleepingMechanoids>Ein paar feindliche Mechanoiden schlafen in diesem Gebiet.\n\nDie Mechanoiden können eventuell aufwachen wenn du in ihre Nähe kommst, also sei vorsichtig.</LetterSleepingMechanoids>
+
+  <!-- Ambush -->
+  <LetterLabelAmbushInExistingMap>Hinterhalt</LetterLabelAmbushInExistingMap>
+  <LetterAmbushInExistingMap>Deine {0} ist in einen Hinterhalt geraten!</LetterAmbushInExistingMap>
+
+  <!-- Peace talks -->
+  <LetterLabelPeaceTalks_Disaster>Friedensgespräche Katastrophe</LetterLabelPeaceTalks_Disaster>
+  <LetterPeaceTalks_Disaster>Die Friedensgespräche waren eine Katastrophe. Die Delegierten konnten kaum ihre einleitenden Grußworte vorbringen, als die Diskussion in Beleidigungen und Anschuldigungen zerbrach.\n\nNachdem deine Karavane früh wieder aufbrach, hatte sie {0} von {1} eingeholt und griff an!\n\nBeziehungen zu {1}: {2}.</LetterPeaceTalks_Disaster>
+  <LetterLabelPeaceTalks_Backfire>Friedensgespräche fehlgeschlagen</LetterLabelPeaceTalks_Backfire>
+  <LetterPeaceTalks_Backfire>Die Friedensgespräche have backfired. Trotz dass Freundlichkeiten ausgetauscht wurden, konnten die Delegierten keinerlei Fortschritt bei grundlegenden Problemen erziehlen, und mehrere Standpunkte wurden als Beleidigungen aufgefasst.\n\nBeziehungen zu {0}: {1}.</LetterPeaceTalks_Backfire>
+  <LetterLabelPeaceTalks_TalksFlounder>Friedensgespräche Stillstand</LetterLabelPeaceTalks_TalksFlounder>
+  <LetterPeaceTalks_TalksFlounder>Die Friedensgespräche sind nicht vorwärts gekommen. Die Delegierten konnten sich klar und deutlich und respektvoll verständigen, schafften es aber nicht irgendeinen Fortschritt bei den verschiedenen Problemen zu erreichen.\n\nDie Beziehungen zu {0} bleiben unverändert.</LetterPeaceTalks_TalksFlounder>
+  <LetterLabelPeaceTalks_Success>Friedensgespräche erfolgreich</LetterLabelPeaceTalks_Success>
+  <LetterPeaceTalks_Success>Die Friedensgespräche waren ein Erfolg. Die Delegierten haben ein neues einvernehmliches Verständnis bei mehreren grundlegenden Problemen erreicht.\n\nDie Beziehungen zu {0} haben sich um {1} verbessert.</LetterPeaceTalks_Success>
+  <LetterLabelPeaceTalks_Triumph>Friedensgespräche Triumph</LetterLabelPeaceTalks_Triumph>
+  <LetterPeaceTalks_Triumph>Die Friedensgespräche waren Triumphal! Die Delegierten haben sofort auf einer persönlichen Ebene zueinander gefunden und konnten die Standpunkte beider Seiten problemlos erkennen, so dass es eine Leichtigkeit war selbst bei den schwierigsten Problemen eine einvernehmliche Lösung zu finden.\n\nDie Beziehungen zu {0} haben sich um {1} verbessert.\n\nAls deine Karavane aufbrach hat {0} dir eine Geschenk angeboten: {2}.</LetterPeaceTalks_Triumph>
+  <PeaceTalksSocialXPGain>{0}, dein Unterhändler, hat {1} soziale Erfahrungen gesammelt.</PeaceTalksSocialXPGain>
+
+  <!-- Run wild mental break -->
+  <LetterRunWildMentalBreak>{0} hat sich dazu entschlossen deine Fraktion zu verlassen und mit den Tieren zu leben.</LetterRunWildMentalBreak>
+
+  <!-- Catatonic mental break -->
+  <LetterCatatonicMentalBreak>{0} hat einen katatonischen Zusammenbruch, der mehrere Tage andauern wird.</LetterCatatonicMentalBreak>
 
 </LanguageData>

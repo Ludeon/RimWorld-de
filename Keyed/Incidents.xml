@@ -7,8 +7,8 @@
 	<AnimalInsanityMultiple>Eine Art psychische Welle fegt über die Gegend. Die Kolonisten sind okay, aber...\n\nEs scheint so, als ob mehrere Tiere der Gattung {0} durchdrehen.</AnimalInsanityMultiple>
 
 	<LetterLabelCropBlight>Fäulnis</LetterLabelCropBlight>
-	<CropBlight>Eine mysteriöse Fäulnis hat deine Pflanzen befallen und einen Großteil deiner Ernte vernichtet.</CropBlight>
-
+	<LetterCropBlight>Ein Kolonist hat eine Fäulnis an deine Pflanzen entdeckt! Du solltest die befallenen Pflanzen herausschneiden oder verbrennen bevor die Fäulnis auf andere Pflanzen überspringt.</LetterCropBlight>
+	
 	<LetterLabelMiracleHeal>Wunder</LetterLabelMiracleHeal>
 	<MiracleHeal>{0} wurde auf wundersame Weise geheilt!</MiracleHeal>
 
@@ -106,7 +106,7 @@
 
 	<!-- Farm animals wander in -->
 
-	<LetterLabelFarmAnimalsWanderIn>{0}-Gruppe bleibt</LetterLabelFarmAnimalsWanderIn>
+	<LetterLabelFarmAnimalsWanderIn>{0} bleiben</LetterLabelFarmAnimalsWanderIn>
 	<LetterFarmAnimalsWanderIn>Eine Gruppe im Stich gelassener oder verirrter Tiere der Gattung {0} hat das Gebiet betreten.\n\nSie scheinen Menschen zu vertrauen und treten der Kolonie bei.</LetterFarmAnimalsWanderIn>
 
 	<!-- Thrumbo passes -->
@@ -130,8 +130,12 @@
 	<RansomDemand_Accept>Annehmen</RansomDemand_Accept>
 	<RansomDemand_Reject>Ablehnen</RansomDemand_Reject>
 
-	<!-- Journey -->
-	<JourneyOffer>Eine freundliche KI aus deiner Vergangenheit namens Charlon Whitestone hat dir eine Nachricht geschickt!\n\nEr erzählt dir, dass er ein Sternenschiff auf diesem Planeten versteckt hat, und gibt dir die Weltkoordinaten.\n\nWenn du zu diesem Schiff reist, wird Charlon dich aus dieser Rimwelt herausfliegen.</JourneyOffer>
+	<!-- Journey-related -->
+	<JourneyOffer>Eine freundliche KI aus deiner Vergangenheit namens Charlon Whitestone hat dir eine Nachricht geschickt!\n\nEr erzählt dir, dass er ein Raumschiff auf diesem Planeten versteckt hat und gibt dir die Koordinaten.\n\nDas Raumschiff ist aktuell im Tiefschlafmodus. Wenn du ankommst, musst du must es erst hochfahren und dann gegen angreifende Räuber verteidigen, die es stehlen wollen bis die Start-Sequenz abgeschlossen ist.\n\nWenn du zu diesem Schiff reist, wird Charlon dich aus dieser Rimwelt herausfliegen.</JourneyOffer>
+	<EscapeShipFoundLabel>Raumschiff gefunden</EscapeShipFoundLabel>
+	<EscapeShipFound>Du hast die Koordinaten erreicht, die Charlon Whitestone dir geschickt hat und hast das versteckte Raumschiff entdeckt.\n\nDer Reaktor des Schiffes ist noch immer im Tiefschlafmodus, so dass es noch nicht starten kann. Du kannst die Systeme hochfahren, indem du mit dem Computerkern interagierst.\n\nCharlon Whitestone warnt dich, dass die Startup-Prozedur 15 Tage dauern und die Energiesignatur über weite Strecken messbar sein wird. Diese Art von Energiesignatur deutet auf interstellare Raumflugfähigkeit hin und wird ganze Gruppen von verzweifelten Räubern und Schatzsuchern anlocken. Stelle sicher, dass deine Verteidigung steht bevor du die Systeme hochfährst.</EscapeShipFound>
+	<EscapeShipLostLabel>Raumschiff zerstört</EscapeShipLostLabel>
+	<EscapeShipLost>Charlon Whitestone schickt dir eine Nachricht.\n\nEr sieht, dass du die Kontrolle über das gelandete Schiff verloren hast. Um zu verhindern, dass es in die falschen Hände gelangt, ist er gezwungen den Selbstzerstörungsmechanismus des Schiffes zu aktivieren. Wo vor kurzem noch das Schiff war, ist jetzt nur noch ein riesiger Krater.\n\nDu musst einen anderen Weg finden um diesen Planeten verlassen zu können.</EscapeShipLost>
 
 	<!-- Caravan meeting -->
 	<CaravanMeetingTitle>Karawanentreffen von {0}</CaravanMeetingTitle>
@@ -139,7 +143,8 @@
 	<CaravanMeeting_Trade>Handeln</CaravanMeeting_Trade>
 	<CaravanMeeting_Attack>Angreifen</CaravanMeeting_Attack>
 	<CaravanMeeting_MoveOn>Weiterziehen</CaravanMeeting_MoveOn>
-
+	<CaravanMeeting_TradeIncapable>Niemand aus der Karavane kann handeln</CaravanMeeting_TradeIncapable>
+	
 	<!-- Caravan request -->
 	<LetterLabelCaravanRequest>Angefragte Karawane</LetterLabelCaravanRequest>
 	<LetterCaravanRequest>Eine nahe Siedlung, {0}, kontaktiert dich mit einer speziellen Handelsanfrage. Sie brauchen dringend:\n\n  {1}\n\nSie bieten das Folgende als Gegenleistung an:\n\n  {2}\n\nDiese Anfrage ist gültig bis: {3}\n\nWenn du das Angebot annehmen willst, sende eine Karawane mit den geforderten Vorräten. Du kannst dieses Angebot noch einmal einsehen, indem du {0} auf der Weltkarte auswählst.</LetterCaravanRequest>
@@ -159,9 +164,6 @@
 	<ItemStashQuestFeeDemand>{0} ist bereit uns den Ort des Verstecks zu nennen, wenn wir {1} Silber zahlen.</ItemStashQuestFeeDemand>
 	<ItemStashSitePart_Unknown>Unglücklicherweise hat {0} keine Ahnung, von wem oder was - wenn überhaupt - das Versteck bewacht wird.</ItemStashSitePart_Unknown>
 	<ItemStashSitePart_Nothing>{0} meint, dass das Versteck unbewacht ist.</ItemStashSitePart_Nothing>
-	<ItemStashSitePart_Outpost>{0} meint, dass ein gegnerischer Außenposten in der Nähe ist.</ItemStashSitePart_Outpost>
-	<ItemStashSitePart_Turrets>{0} meint, dass das Versteck von gegnerischen Geschützen geschützt wird.</ItemStashSitePart_Turrets>
-	<ItemStashSitePart_Manhunters>{0} meint, dass eine Gruppe menschenfressender Tiere in der Gegend ist.</ItemStashSitePart_Manhunters>
-
+	<ItemStashSitePart_Part>{0} meint, dass {1}.</ItemStashSitePart_Part>
 
 </LanguageData>

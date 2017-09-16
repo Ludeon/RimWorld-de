@@ -70,7 +70,9 @@
 	<SaveIsUnknownFormat>Der Spielstand ist in einem unbekannten Format. Es besteht die Gefahr, der Spielstand nicht richtig geladen werden kann.</SaveIsUnknownFormat>
 	<ProblemSavingFile>Beim Speichern der Datei '{0}' ist ein Fehler aufgetreten:\n\n{1}\n\nSchaue im Error Log nach, um mehr Informationen zu erhalten.</ProblemSavingFile>
 	<LoadAnyway>Trotzdem laden</LoadAnyway>
-
+	<ChangeLoadedMods>Lade Mod-Liste vom Spielstand</ChangeLoadedMods>
+	<MissingMods>Einige Mods sind nicht verfügbar und müssen installiert werden</MissingMods>
+	
 	<!-- Player faction naming -->
 	<NamePlayerFactionMessage>{0} ist der Meinung, dass ihr dieser Gemeinschaft einen Namen geben solltet.\n\nWie soll sie heißen?</NamePlayerFactionMessage>
 	<PlayerFactionGainsName>Die Gemeinschaft heißt jetzt {0}.</PlayerFactionGainsName>
@@ -162,13 +164,7 @@
 	<BillRequiresMayVary>Hinweis: Materialien mit geringem Volumen wie Gold benötigen {0}-mal so viel.</BillRequiresMayVary>
 	<ThisIsSmallVolume>Dieses Material hat ein geringes Volumen. Das heißt, dass jede 'Einheit' nur 1/{0} des Volumens eines normalen Materials hat. Für den gleichen Materialbedarf brauchst Du also {0}-mal mehr Ressourcen als gewöhnlich.</ThisIsSmallVolume>
 	<UsableIngredients>Materialien</UsableIngredients>
-	<DoXTimes>Produziere X-mal</DoXTimes>
-	<DoUntilYouHaveX>Produziere, bis Du X hast</DoUntilYouHaveX>
-	<DoForever>Produziere für immer</DoForever>
 	<BillRepeatTargetCountShort>Bis {0}</BillRepeatTargetCountShort>
-	<BillStoreMode_DropOnFloor>Auf den Boden legen</BillStoreMode_DropOnFloor>
-	<BillStoreMode_BestStockpile>Zum besten Lager tragen</BillStoreMode_BestStockpile>
-	<BillStoreMode_NearestStockpileAnyPriority>Zum nächsten Lager tragen</BillStoreMode_NearestStockpileAnyPriority>
 
 	<PauseWhenSatisfied>Pausiere wenn zutrifft</PauseWhenSatisfied>
 	<UnpauseWhenYouHave>Weiter bei</UnpauseWhenYouHave>
@@ -220,7 +216,15 @@
 	<Addictiveness>Suchtgefahr</Addictiveness>
 	<PackAnimal>Lasttier</PackAnimal>
 	<PackAnimalExplanation>Ob ein Tier geeignet ist in einer Karawane zum Transport schwerer Lasten über große Entfernungen hinweg eingesetzt zu werden.</PackAnimalExplanation>
+  <Skill>Fähigkeit</Skill>
+  <SurgerySuccessChanceFactor>Erfolgsmultiplikator</SurgerySuccessChanceFactor>
+  <SurgeryRequireBed>Benötigt Bett</SurgeryRequireBed>
+  <WorkSpeedStat>Arbeitsgeschwindigkeit beeinflusst durch</WorkSpeedStat>
+  <EfficiencyStat>Produktionsmenge beeinflusst durch</EfficiencyStat>
+  <ConstructionSkillRequired>Konstruktionsfähigkeit benötigt</ConstructionSkillRequired>
+  <ConstructionSkillRequiredExplanation>Benötigt diese Konstruktionsfähigkeit damit es erstellt werden kann.</ConstructionSkillRequiredExplanation>
 
+	
 	<!-- Trade -->
 
 	<PositiveBuysNegativeSells>Positive Zahl einkaufen.\nNegative Zahl verkaufen.</PositiveBuysNegativeSells>
@@ -276,9 +280,11 @@
 	<DaysWorthOfFoodTooltip>Eine geschätzte Anzahl an Tagen, bevor der Karawane die Nahrung ausgeht.\n\nDies berücksichtigt sowohl das Essen der Menschen wie auch der Tiere und zeigt den schlimmst möglichen Fall. Das bedeutet, dass nach dieser Anzahl von Tagen mindestens eine Person oder ein Tier keine Nahrung mehr hat.</DaysWorthOfFoodTooltip>
 	<DaysWorthOfFoodTooltip_CanEatLocalPlants>Basierend auf der derzeitigen Saison, Temperatur und Umgebung nehmen wir an, dass pflanzenfressende Tiere im Gebiet grasen können. Das kann sich aber jederzeit ändern.</DaysWorthOfFoodTooltip_CanEatLocalPlants>
 	<DaysWorthOfFoodTooltip_CantEatLocalPlants>Basierend auf der derzeitigen Saison, Temperatur und Umgebung nehmen wir an, dass pflanzenfressende Tiere im Gebiet NICHT grasen können. Das kann sich aber jederzeit ändern.</DaysWorthOfFoodTooltip_CantEatLocalPlants>
-	<DaysWorthOfFoodWarningDialog>Deine Karawane hat nur Essen für {0} Tage und wird sehr schnell sehr hungrig werden.\n\nBist du sicher, dass du die Karawane losschicken willst?</DaysWorthOfFoodWarningDialog>
-	<DaysWorthOfFoodWarningDialog_NoFood>Deine Karawane hat kein Essen und wird sehr schnell sehr hungrig werden.\n\nBist du sicher, dass du die Karawane losschicken willst?</DaysWorthOfFoodWarningDialog_NoFood>
-	<CaravanFoodWillRotSoonWarningDialog>Ein großer Teil des zugewiesenen Essens verdirbt bald.\n\nSoll die Karawane trotzdem erstellt werden?</CaravanFoodWillRotSoonWarningDialog>
+	<DaysWorthOfFoodWarningDialog>Deine Karawane hat nur Essen für {0} Tage und wird sehr schnell sehr hungrig werden.</DaysWorthOfFoodWarningDialog>
+	<DaysWorthOfFoodWarningDialog_NoFood>Deine Karawane hat kein Essen und wird sehr schnell sehr hungrig werden.</DaysWorthOfFoodWarningDialog_NoFood>
+	<CaravanFoodWillRotSoonWarningDialog>Ein großer Teil des zugewiesenen Essens verdirbt bald.</CaravanFoodWillRotSoonWarningDialog>
+  <CaravanIncapableOfSocial>Du hast niemanden in der Karavane, der diplomatische Gespräche führen bzw. Handeln kann.</CaravanIncapableOfSocial>
+  <CaravanAreYouSure>Bist du dir sicher, dass du diese Karavane erstellen willst?</CaravanAreYouSure>
 	<NoExitDirectionForCaravanChosen>Du musst für die Karawane eine Richtung zum Verlassen auswählen.</NoExitDirectionForCaravanChosen>
 	<NoCaravanExitDirectionAvailable>(Verlassen in keiner Richtung möglich)</NoCaravanExitDirectionAvailable>
 	<ExitDirection>Abmarschrichtung</ExitDirection>
@@ -296,7 +302,8 @@
 	<PrisonersSection>Gefangene</PrisonersSection>
 	<AnimalsSection>Tiere</AnimalsSection>
 	<EstimatedTimeToDestinationButton>Geschätzte Zeit bis zum Ziel</EstimatedTimeToDestinationButton>
-
+	<AbandonButton>Aufgeben</AbandonButton>
+	
 	<!-- Split caravan -->
 	<SplitCaravan>Karawane teilen</SplitCaravan>
 	<SourceCaravanMustHaveAtLeastOneColonist>Du must mindestens einen nicht bewußtlosen Kolonisten zurücklassen.</SourceCaravanMustHaveAtLeastOneColonist>
@@ -400,11 +407,14 @@
 	<ConfirmLeavePrisonersOrAnimalsBehind>Es sind noch immer einige Gefangene oder Tiere in diesem Gebiet und das ist die einzige Karawane denen sie sich aktuell anschließen können.\n\nWenn du deine Karawane losschickst werden sie das Gebiet nicht verlassen können bis du zurückkehrst. Die Gefangenen werden versuchen zu entkommen und während die Tiere auf deine Rückkehr warten werden.\n\nWenn du dich entschließt zu warten, werden sie sich der Karawane so bald wie möglich anschließen.\n\nBist du sicher, dass du die Karawane losschicken willst?</ConfirmLeavePrisonersOrAnimalsBehind>
 
 	<!-- Abandon pawn -->
-	<ConfirmAbandonPawnDialog>Möchtest Du {0} wirklich aufgeben?</ConfirmAbandonPawnDialog>
-	<ConfirmAbandonPawnDialog_LeftToDie>{0} wird sehr wahrscheinlich sterben.</ConfirmAbandonPawnDialog_LeftToDie>
-	<ConfirmAbandonPawnDialog_EquipmentAndApparel>{0} wird die folgenden Gegenstände mitnehmen:</ConfirmAbandonPawnDialog_EquipmentAndApparel>
-	<ConfirmAbandonPawnDialog_AllColonistsThoughts>Alle Kolonisten werden diese Erinnerungen bekommen:</ConfirmAbandonPawnDialog_AllColonistsThoughts>
-	<ConfirmAbandonPawnDialog_IndividualThoughts>Das Aufgeben von {0} generiert bei den folgenden Personen die folgenden Gedanken:</ConfirmAbandonPawnDialog_IndividualThoughts>
+	<ConfirmBanishPawnDialog>Möchtest Du {0} wirklich verbannen?</ConfirmBanishPawnDialog>
+	<ConfirmBanishPawnDialog_LeftToDie>{0} wird sehr wahrscheinlich sterben.</ConfirmBanishPawnDialog_LeftToDie>
+	<ConfirmBanishPawnDialog_Items>{0} wird die folgenden Gegenstände mitnehmen:</ConfirmBanishPawnDialog_Items>
+	<ConfirmBanishPawnDialog_AllColonistsThoughts>Alle Kolonisten werden diese Erinnerungen bekommen:</ConfirmBanishPawnDialog_AllColonistsThoughts>
+	<ConfirmBanishPawnDialog_IndividualThoughts>Das Verbannen von {0} generiert bei den folgenden Personen die folgenden Gedanken:</ConfirmBanishPawnDialog_IndividualThoughts>
 
+	<!-- Send transport pods which are not completely loaded -->
+	<ConfirmSendNotCompletelyLoadedPods>Die Transportkapseln sind noch nicht fertig beladen. {0} fehlt noch. Trotzdem starten?</ConfirmSendNotCompletelyLoadedPods>
+  
 
 </LanguageData>

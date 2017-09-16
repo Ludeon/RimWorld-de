@@ -81,6 +81,7 @@
 	<MessageMedicalOperationFailureMinor>{0} hat bei der Operation an {1} einen kleinen Fehler gemacht.</MessageMedicalOperationFailureMinor>
 	<MessageMedicalOperationFailureCatastrophic>{0} hat bei der Operation an {1} katastrophal versagt.</MessageMedicalOperationFailureCatastrophic>
 	<MessageMedicalOperationFailureRidiculous>{0} hat bei der Operation an {1} geradezu lächerlich versagt.</MessageMedicalOperationFailureRidiculous>
+	<MessageMedicalOperationFailureFatal>{0} hat bei der Operation an {1} einen fatalen Fehler aufgrund der besonderen Herausforderungen begangen: {2}</MessageMedicalOperationFailureFatal>
 
 	<MessageMedicalOperationWillAngerFaction>Diese Operation wird {0} verärgern.</MessageMedicalOperationWillAngerFaction>
 
@@ -136,6 +137,8 @@
 
 	<MessageNoLongerBingingOnDrug>{0} hat genug von {1}.</MessageNoLongerBingingOnDrug>
 
+  <MessageNoLongerOnTargetedInsultingSpree>{0} hat aufgehört {1} zu beleidigen.</MessageNoLongerOnTargetedInsultingSpree>
+
 	<MessageRottedAwayInStorage>{0} ist im Lager verdorben.</MessageRottedAwayInStorage>
 
 	<MessageFoodPoisoning>{0} hat eine Nahrungsmittelvergiftung bekommen. Ursache: {1}.</MessageFoodPoisoning>
@@ -150,7 +153,9 @@
 
 	<MessagePlantDiedOfCold>{0} ist erfroren.</MessagePlantDiedOfCold>
 	<MessagePlantDiedOfRot>{0} ist verrottet, da es nicht abgeerntet wurde.</MessagePlantDiedOfRot>
-
+	<MessagePlantDiedOfPoison>{0} ist aufgrund vom Gift eingegangen.</MessagePlantDiedOfPoison>
+	<MessagePlantDiedOfBlight>{0} ist aufgrund der Fäulnis eingegangen.</MessagePlantDiedOfBlight>
+  
 	<MessagePawnBeingBurned>{0} wurde von extrem heißer Luft verbrannt!</MessagePawnBeingBurned>
 
 	<MessageAccidentalOverdose>{0} gab sich versehentlich eine Überdosis von {1}!</MessageAccidentalOverdose>
@@ -199,7 +204,7 @@
 
 	<MessageReformedCaravan>Die Karawane wurde neu gebildet.</MessageReformedCaravan>
 
-	<MessageCantAbandonLastColonist>Du kannst den letzten Kolonisten nicht aufgeben.</MessageCantAbandonLastColonist>
+	<MessageCantBanishLastColonist>Du kannst den letzten Kolonisten nicht verbannen.</MessageCantBanishLastColonist>
 
 	<MessageCantEquipIncapableOfViolence>Kann nicht ausgerüstet werden: {0} verweigert Gewalt.</MessageCantEquipIncapableOfViolence>
 	<MessageCantEquipIncapableOfManipulation>Kann nicht ausrüsten: nicht möglich.</MessageCantEquipIncapableOfManipulation>
@@ -229,5 +234,32 @@
 	<MessageSiteCountdownBecauseNoMoreEnemies>Du hast alle Gegner besiegt. In {0} wird sich die Karawane automatisch regruppieren.</MessageSiteCountdownBecauseNoMoreEnemies>
 	<MessageSiteCountdownBecauseNoEnemiesInitially>In {0} wird sich die Karawane automatisch regruppieren. Du kannst sie auch sofort in der Welt-Ansicht regruppieren.</MessageSiteCountdownBecauseNoEnemiesInitially>
 
+	<MessageCantBanishDownedPawn>Kann {0} nicht verbannen, da HE nicht laufen kann.</MessageCantBanishDownedPawn>
+
+  <MessageSleepingPawnsWokenUp>{0} sind aufgewacht.</MessageSleepingPawnsWokenUp>
+
+  <MessageCompSpawnerSpawnedItem>Gegenstand hergestellt: {0}.</MessageCompSpawnerSpawnedItem>
+
+  <MessageHediffCuredByItem>Gesundheitszustand wiederhergestellt: {0}.</MessageHediffCuredByItem>
+  <MessageBodyPartCuredByItem>Körperteil wiederhergestellt: {0}.</MessageBodyPartCuredByItem>
+  <MessageResearchProjectFinishedByItem>Technologie erhalten: {0}.</MessageResearchProjectFinishedByItem>
+
+  <MessagePawnResurrected>{0} wurde wiederbelebt!</MessagePawnResurrected>
+
+  <MessageFailedToRescueRelative>Du hast {0} nicht gerettet. Das macht {1} traurig.</MessageFailedToRescueRelative>
+  <MessageRescuedRelative>Du hast {0} gerettet. Das macht {1} glücklich.</MessageRescuedRelative>
+
+  <MessagePrisonerRescued>Du hast NAME gerettet und HE ist der Kolonie beigetreten.</MessagePrisonerRescued>
+
+  <MessageTornadoLeftMap>Der Tornado hat das Gebiet verlassen.</MessageTornadoLeftMap>
+  <MessageTornadoDissipated>Der Tornado hat sich aufgelöst.</MessageTornadoDissipated>
+
+  <MessagePeaceTalksNoDiplomat>Kein fähiger Diplomat bei Bewußtsein.</MessagePeaceTalksNoDiplomat>
+
+  <MessageWarningCavePlantsExposedToLight>Warnung: {0} kann im Licht nicht überleben.</MessageWarningCavePlantsExposedToLight>
+
+  <MessageTargetedTantrumChangedTarget>{0} konnte {1} nicht erreichen, weswegen HE sich entschloss HISen Ärger an {2} auszulassen.</MessageTargetedTantrumChangedTarget>
+
+  <MessageTargetedInsultingSpreeChangedTarget>{0} konnte {1} nicht erreichen, weswegen HE sich entschloss HISen Ärger an {2} auszulassen.</MessageTargetedInsultingSpreeChangedTarget>
 
 </LanguageData>
