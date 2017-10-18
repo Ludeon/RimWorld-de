@@ -2,8 +2,8 @@
 <LanguageData>
 
 
-	<Combat_General.rulePack.rulesStrings.0>logentry->[action], [result]</Combat_General.rulePack.rulesStrings.0>
-	<Combat_General.rulePack.rulesStrings.1>logentry(p=0.2)->[action]</Combat_General.rulePack.rulesStrings.1>
+	<Combat_General.rulePack.rulesStrings.0>logentry->[action], [result].</Combat_General.rulePack.rulesStrings.0>
+	<Combat_General.rulePack.rulesStrings.1>logentry(p=0.2)->[action].</Combat_General.rulePack.rulesStrings.1>
 
 	<Combat_General.rulePack.rulesStrings.2>implement(implementOwnerType==weapon,p=2)->[initiator_possessive] [weapon_label]'s [tool_label]</Combat_General.rulePack.rulesStrings.2>
 	<Combat_General.rulePack.rulesStrings.3>implement(implementOwnerType==weapon,p=1)->[initiator_possessive] [weapon_label]</Combat_General.rulePack.rulesStrings.3>
@@ -92,8 +92,17 @@
 	<Combat_General.rulePack.rulesStrings.72>painevent->from the injury</Combat_General.rulePack.rulesStrings.72>
 	<Combat_General.rulePack.rulesStrings.73>painevent->from the wound</Combat_General.rulePack.rulesStrings.73>
 
-	<Combat_General.rulePack.rulesStrings.74>to->to</Combat_General.rulePack.rulesStrings.74>
-	<Combat_General.rulePack.rulesStrings.75>to->into</Combat_General.rulePack.rulesStrings.75>
+	<Combat_General.rulePack.rulesStrings.74>mortarshell->shell</Combat_General.rulePack.rulesStrings.74>
+	<Combat_General.rulePack.rulesStrings.75>mortarshell->shot</Combat_General.rulePack.rulesStrings.75>
+	<Combat_General.rulePack.rulesStrings.76>mortarshell->projectile</Combat_General.rulePack.rulesStrings.76>
+	<Combat_General.rulePack.rulesStrings.77>mortarshell->explosive</Combat_General.rulePack.rulesStrings.77>
+	<Combat_General.rulePack.rulesStrings.78>mortarshell->bomb</Combat_General.rulePack.rulesStrings.78>
+	<Combat_General.rulePack.rulesStrings.79>mortarshell(p=0.3)->ballistic shell</Combat_General.rulePack.rulesStrings.79>
+	<Combat_General.rulePack.rulesStrings.80>mortarshell(p=0.3)->ballistic shot</Combat_General.rulePack.rulesStrings.80>
+	<Combat_General.rulePack.rulesStrings.81>mortarshell(p=0.3)->ballistic projectile</Combat_General.rulePack.rulesStrings.81>
+
+	<Combat_General.rulePack.rulesStrings.82>to->to</Combat_General.rulePack.rulesStrings.82>
+	<Combat_General.rulePack.rulesStrings.83>to->into</Combat_General.rulePack.rulesStrings.83>
 
 
 
@@ -157,17 +166,17 @@
 
 
 
-	<Combat_Hit.rulePack.rulesStrings.0>logentry(p=0.3)->[initiator_nameShortDef] [maneuver_past] [recipient_nameShortDef] in the [recipient_part0_label]</Combat_Hit.rulePack.rulesStrings.0>
-	<Combat_Hit.rulePack.rulesStrings.1>logentry(p=0.1)->[initiator_nameShortDef] [maneuver_past] [recipient_nameShortDef] in the [recipient_part0_label] [flavortextadverb]</Combat_Hit.rulePack.rulesStrings.1>
-	<Combat_Hit.rulePack.rulesStrings.2>logentry(p=0.1)->[initiator_nameShortDef] [maneuver_past] [recipient_nameShortDef] in the [recipient_part0_label] [flavortextsituation]</Combat_Hit.rulePack.rulesStrings.2>
-	<Combat_Hit.rulePack.rulesStrings.3>logentry(p=0.1)->[initiator_nameShortDef] [maneuver_past] [recipient_nameShortDef] in the [recipient_part0_label], [flavortextconsequence]</Combat_Hit.rulePack.rulesStrings.3>
-	<Combat_Hit.rulePack.rulesStrings.4>logentry(p=0.4)->[initiator_nameShortDef], wielding [initiator_possessive] [weapon_label] [expertly], [flavortextadverb] [maneuver_past] [recipient_nameShortDef] in the [recipient_part0_label]</Combat_Hit.rulePack.rulesStrings.4>
+	<Combat_Hit.rulePack.rulesStrings.0>logentry(p=0.3)->[initiator_nameShortDef] [maneuver_past] [recipient_nameShortDef] in the [recipient_part0_label].</Combat_Hit.rulePack.rulesStrings.0>
+	<Combat_Hit.rulePack.rulesStrings.1>logentry(p=0.1)->[initiator_nameShortDef] [maneuver_past] [recipient_nameShortDef] in the [recipient_part0_label] [flavortextadverb].</Combat_Hit.rulePack.rulesStrings.1>
+	<Combat_Hit.rulePack.rulesStrings.2>logentry(p=0.1)->[initiator_nameShortDef] [maneuver_past] [recipient_nameShortDef] in the [recipient_part0_label] [flavortextsituation].</Combat_Hit.rulePack.rulesStrings.2>
+	<Combat_Hit.rulePack.rulesStrings.3>logentry(p=0.1)->[initiator_nameShortDef] [maneuver_past] [recipient_nameShortDef] in the [recipient_part0_label], [flavortextconsequence].</Combat_Hit.rulePack.rulesStrings.3>
+	<Combat_Hit.rulePack.rulesStrings.4>logentry(p=0.4)->[initiator_nameShortDef], wielding [initiator_possessive] [weapon_label] [expertly], [flavortextadverb] [maneuver_past] [recipient_nameShortDef] in the [recipient_part0_label].</Combat_Hit.rulePack.rulesStrings.4>
 
 	<!-- combined high priority, if we destroyed something -->
-	<Combat_Hit.rulePack.rulesStrings.5>logentry(p=0.3)->[initiator_nameShortDef] [destroyed_past] [recipient_nameShortDef]'s [destroyed_targets]</Combat_Hit.rulePack.rulesStrings.5>
-	<Combat_Hit.rulePack.rulesStrings.6>logentry(p=0.3)->[initiator_nameShortDef] [destroyed_past] [recipient_nameShortDef]'s [destroyed_targets] [destroyed_suffix]</Combat_Hit.rulePack.rulesStrings.6>
-	<Combat_Hit.rulePack.rulesStrings.7>logentry(p=0.3)->[initiator_nameShortDef] [destroyed_past] [recipient_nameShortDef]'s [destroyed_targets] [expertly]</Combat_Hit.rulePack.rulesStrings.7>
-	<Combat_Hit.rulePack.rulesStrings.8>logentry(p=0.3)->[initiator_nameShortDef] [destroyed_past] [recipient_nameShortDef]'s [destroyed_targets] with [implement]</Combat_Hit.rulePack.rulesStrings.8>
+	<Combat_Hit.rulePack.rulesStrings.5>logentry(p=0.3)->[initiator_nameShortDef] [destroyed_past] [recipient_nameShortDef]'s [destroyed_targets].</Combat_Hit.rulePack.rulesStrings.5>
+	<Combat_Hit.rulePack.rulesStrings.6>logentry(p=0.3)->[initiator_nameShortDef] [destroyed_past] [recipient_nameShortDef]'s [destroyed_targets] [destroyed_suffix].</Combat_Hit.rulePack.rulesStrings.6>
+	<Combat_Hit.rulePack.rulesStrings.7>logentry(p=0.3)->[initiator_nameShortDef] [destroyed_past] [recipient_nameShortDef]'s [destroyed_targets] [expertly].</Combat_Hit.rulePack.rulesStrings.7>
+	<Combat_Hit.rulePack.rulesStrings.8>logentry(p=0.3)->[initiator_nameShortDef] [destroyed_past] [recipient_nameShortDef]'s [destroyed_targets] with [implement].</Combat_Hit.rulePack.rulesStrings.8>
 
 	<Combat_Hit.rulePack.rulesStrings.9>result(p=1,recipient_part_damaged_count==0)->[destroyed_present] [recipient_possessive] [destroyed_targets]</Combat_Hit.rulePack.rulesStrings.9>
 	<Combat_Hit.rulePack.rulesStrings.10>result(p=1,recipient_part_destroyed_count==0)->[maneuverresult_present] [recipient_possessive] [damaged_targets]</Combat_Hit.rulePack.rulesStrings.10>
@@ -199,12 +208,12 @@
 
 
 
-	<Combat_Miss.rulePack.rulesStrings.0>logentry(p=0.2)->[recipient_nameShortDef] avoided [initiator_nameShortDef]'s [weapon_label] [maneuver_inf]</Combat_Miss.rulePack.rulesStrings.0>
-	<Combat_Miss.rulePack.rulesStrings.1>logentry(p=0.2)->[initiator_nameShortDef] missed [recipient_nameShortDef] with a [maneuver_inf] from [implement]</Combat_Miss.rulePack.rulesStrings.1>
+	<Combat_Miss.rulePack.rulesStrings.0>logentry(p=0.2)->[recipient_nameShortDef] avoided [initiator_nameShortDef]'s [weapon_label] [maneuver_inf].</Combat_Miss.rulePack.rulesStrings.0>
+	<Combat_Miss.rulePack.rulesStrings.1>logentry(p=0.2)->[initiator_nameShortDef] missed [recipient_nameShortDef] with a [maneuver_inf] from [implement].</Combat_Miss.rulePack.rulesStrings.1>
 
-	<Combat_Miss.rulePack.rulesStrings.2>logentry(p=0.2)->[initiator_nameShortDef] [failtype] while trying to [maneuver_inf] [recipient_nameShortDef] with [implement]</Combat_Miss.rulePack.rulesStrings.2>
-	<Combat_Miss.rulePack.rulesStrings.3>logentry(p=0.2)->[initiator_nameShortDef] [failtype] while trying to [maneuver_inf] [recipient_nameShortDef]</Combat_Miss.rulePack.rulesStrings.3>
-	<Combat_Miss.rulePack.rulesStrings.4>logentry(p=0.2)->[initiator_nameShortDef] [failtype]</Combat_Miss.rulePack.rulesStrings.4>
+	<Combat_Miss.rulePack.rulesStrings.2>logentry(p=0.2)->[initiator_nameShortDef] [failtype] while trying to [maneuver_inf] [recipient_nameShortDef] with [implement].</Combat_Miss.rulePack.rulesStrings.2>
+	<Combat_Miss.rulePack.rulesStrings.3>logentry(p=0.2)->[initiator_nameShortDef] [failtype] while trying to [maneuver_inf] [recipient_nameShortDef].</Combat_Miss.rulePack.rulesStrings.3>
+	<Combat_Miss.rulePack.rulesStrings.4>logentry(p=0.2)->[initiator_nameShortDef] [failtype].</Combat_Miss.rulePack.rulesStrings.4>
 
 	<Combat_Miss.rulePack.rulesStrings.5>failtype->stumbled</Combat_Miss.rulePack.rulesStrings.5>
 	<Combat_Miss.rulePack.rulesStrings.6>failtype->tripped</Combat_Miss.rulePack.rulesStrings.6>
@@ -222,7 +231,7 @@
 
 
 
-	<Combat_Dodge.rulePack.rulesStrings.0>logentry(p=0.2)->[recipient_nameShortDef] dodged [initiator_nameShortDef]'s [maneuver_inf] from [implement]</Combat_Dodge.rulePack.rulesStrings.0>
+	<Combat_Dodge.rulePack.rulesStrings.0>logentry(p=0.2)->[recipient_nameShortDef] dodged [initiator_nameShortDef]'s [maneuver_inf] from [implement].</Combat_Dodge.rulePack.rulesStrings.0>
 
 	<Combat_Dodge.rulePack.rulesStrings.1>result->but [recipient_nameShortDef] leapt out of the way</Combat_Dodge.rulePack.rulesStrings.1>
 	<Combat_Dodge.rulePack.rulesStrings.2>result->but was deceived by [recipient_nameShortDef]'s feint</Combat_Dodge.rulePack.rulesStrings.2>
@@ -245,12 +254,12 @@
 
 
 
-	<Combat_RangedFire.rulePack.rulesStrings.0>logentry->[initiator_definite] [shotat] [recipient_definite] with [initiator_possessive] [weapon_label]</Combat_RangedFire.rulePack.rulesStrings.0>
-	<Combat_RangedFire.rulePack.rulesStrings.1>logentry->[initiator_definite] [shot] [initiator_possessive] [weapon_label] at [recipient_definite]</Combat_RangedFire.rulePack.rulesStrings.1>
-	<Combat_RangedFire.rulePack.rulesStrings.2>logentry->[initiator_definite] [shotat] [recipient_definite]</Combat_RangedFire.rulePack.rulesStrings.2>
-	<Combat_RangedFire.rulePack.rulesStrings.3>logentry->[initiator_definite] [shot_a] [weapon_projectile_label] at [recipient_definite]</Combat_RangedFire.rulePack.rulesStrings.3>
-	<Combat_RangedFire.rulePack.rulesStrings.4>logentry(recipient_missing==True)->[initiator_definite] [shot_a] [weapon_projectile_label]</Combat_RangedFire.rulePack.rulesStrings.4>
-	<Combat_RangedFire.rulePack.rulesStrings.5>logentry(recipient_missing==True)->[initiator_definite] [shot] [initiator_possessive] [weapon_label]</Combat_RangedFire.rulePack.rulesStrings.5>
+	<Combat_RangedFire.rulePack.rulesStrings.0>logentry->[initiator_definite] [shotat] [recipient_definite] with [initiator_possessive] [weapon_label].</Combat_RangedFire.rulePack.rulesStrings.0>
+	<Combat_RangedFire.rulePack.rulesStrings.1>logentry->[initiator_definite] [shot] [initiator_possessive] [weapon_label] at [recipient_definite].</Combat_RangedFire.rulePack.rulesStrings.1>
+	<Combat_RangedFire.rulePack.rulesStrings.2>logentry->[initiator_definite] [shotat] [recipient_definite].</Combat_RangedFire.rulePack.rulesStrings.2>
+	<Combat_RangedFire.rulePack.rulesStrings.3>logentry->[initiator_definite] [shot_a] [weapon_projectile_label] at [recipient_definite].</Combat_RangedFire.rulePack.rulesStrings.3>
+	<Combat_RangedFire.rulePack.rulesStrings.4>logentry(recipient_missing==True)->[initiator_definite] [shot_a] [weapon_projectile_label].</Combat_RangedFire.rulePack.rulesStrings.4>
+	<Combat_RangedFire.rulePack.rulesStrings.5>logentry(recipient_missing==True)->[initiator_definite] [shot] [initiator_possessive] [weapon_label].</Combat_RangedFire.rulePack.rulesStrings.5>
 
 	<Combat_RangedFire.rulePack.rulesStrings.6>shot_a->[shotadverb] [shotverb] a</Combat_RangedFire.rulePack.rulesStrings.6>
 	<Combat_RangedFire.rulePack.rulesStrings.7>shot_a(p=2)->[shotverb] a</Combat_RangedFire.rulePack.rulesStrings.7>
@@ -291,32 +300,32 @@
 
 
 	<!-- various destroyed options; we allow these even if we could use hybrid, to cut down a bit on clutter -->
-	<Combat_RangedDamage.rulePack.rulesStrings.0>logentry->[initiator_definite]'s [weapon_projectile_label] [destroyed_past] [recipient_definite]'s [destroyed_targets]</Combat_RangedDamage.rulePack.rulesStrings.0>
-	<Combat_RangedDamage.rulePack.rulesStrings.1>logentry->[initiator_definite]'s [weapon_projectile_label] [destroyed_past] [recipient_definite]'s [destroyed_targets] [to] [destroyed_suffix]</Combat_RangedDamage.rulePack.rulesStrings.1>
-	<Combat_RangedDamage.rulePack.rulesStrings.2>logentry->[initiator_definite]'s [weapon_projectile_label] [destroyed_past] [recipient_definite]'s [destroyed_targets] [expertly]</Combat_RangedDamage.rulePack.rulesStrings.2>
-	<Combat_RangedDamage.rulePack.rulesStrings.3>logentry(p=2)->[initiator_definite]'s [weapon_projectile_label] [missed] [originalTarget_definite] and [destroyed_past] [recipient_definite]'s [destroyed_targets]</Combat_RangedDamage.rulePack.rulesStrings.3>
-	<Combat_RangedDamage.rulePack.rulesStrings.4>logentry(p=2)->[initiator_definite]'s [weapon_projectile_label] [missed] [originalTarget_definite], [destroyed_present] [recipient_definite]'s [destroyed_targets]</Combat_RangedDamage.rulePack.rulesStrings.4>
-	<Combat_RangedDamage.rulePack.rulesStrings.5>logentry->[recipient_definite]'s [destroyed_targets] was [destroyed_past] by [initiator_definite]'s [weapon_projectile_label]</Combat_RangedDamage.rulePack.rulesStrings.5>
-	<Combat_RangedDamage.rulePack.rulesStrings.6>logentry->[recipient_definite]'s [destroyed_targets] was [destroyed_past] by [initiator_definite]'s [expert] [weapon_projectile_label]</Combat_RangedDamage.rulePack.rulesStrings.6>
-	<Combat_RangedDamage.rulePack.rulesStrings.7>logentry->[recipient_definite]'s [destroyed_targets] was [destroyed_past] into [destroyed_suffix] by [initiator_definite]'s [weapon_projectile_label]</Combat_RangedDamage.rulePack.rulesStrings.7>
+	<Combat_RangedDamage.rulePack.rulesStrings.0>logentry->[initiator_definite]'s [weapon_projectile_label] [destroyed_past] [recipient_definite]'s [destroyed_targets].</Combat_RangedDamage.rulePack.rulesStrings.0>
+	<Combat_RangedDamage.rulePack.rulesStrings.1>logentry->[initiator_definite]'s [weapon_projectile_label] [destroyed_past] [recipient_definite]'s [destroyed_targets] [to] [destroyed_suffix].</Combat_RangedDamage.rulePack.rulesStrings.1>
+	<Combat_RangedDamage.rulePack.rulesStrings.2>logentry->[initiator_definite]'s [weapon_projectile_label] [destroyed_past] [recipient_definite]'s [destroyed_targets] [expertly].</Combat_RangedDamage.rulePack.rulesStrings.2>
+	<Combat_RangedDamage.rulePack.rulesStrings.3>logentry(p=2)->[initiator_definite]'s [weapon_projectile_label] [missed] [originalTarget_definite] and [destroyed_past] [recipient_definite]'s [destroyed_targets].</Combat_RangedDamage.rulePack.rulesStrings.3>
+	<Combat_RangedDamage.rulePack.rulesStrings.4>logentry(p=2)->[initiator_definite]'s [weapon_projectile_label] [missed] [originalTarget_definite], [destroyed_present] [recipient_definite]'s [destroyed_targets].</Combat_RangedDamage.rulePack.rulesStrings.4>
+	<Combat_RangedDamage.rulePack.rulesStrings.5>logentry->[recipient_definite]'s [destroyed_targets] was [destroyed_past] by [initiator_definite]'s [weapon_projectile_label].</Combat_RangedDamage.rulePack.rulesStrings.5>
+	<Combat_RangedDamage.rulePack.rulesStrings.6>logentry->[recipient_definite]'s [destroyed_targets] was [destroyed_past] by [initiator_definite]'s [expert] [weapon_projectile_label].</Combat_RangedDamage.rulePack.rulesStrings.6>
+	<Combat_RangedDamage.rulePack.rulesStrings.7>logentry->[recipient_definite]'s [destroyed_targets] was [destroyed_past] into [destroyed_suffix] by [initiator_definite]'s [weapon_projectile_label].</Combat_RangedDamage.rulePack.rulesStrings.7>
 
 	<!-- various damaged options; don't show if something was destroyed -->
-	<Combat_RangedDamage.rulePack.rulesStrings.8>logentry(recipient_partDestroyed_count==0)->[initiator_definite]'s [weapon_projectile_label] [damaged_past] [recipient_definite]'s [damaged_targets]</Combat_RangedDamage.rulePack.rulesStrings.8>
-	<Combat_RangedDamage.rulePack.rulesStrings.9>logentry(recipient_partDestroyed_count==0)->[initiator_definite]'s [weapon_projectile_label] [damaged_past] [recipient_definite]'s [damaged_targets] [expertly]</Combat_RangedDamage.rulePack.rulesStrings.9>
-	<Combat_RangedDamage.rulePack.rulesStrings.10>logentry(recipient_partDestroyed_count==0,p=2)->[initiator_definite]'s [weapon_projectile_label] [missed] [originalTarget_definite] and [damaged_past] [recipient_definite]'s [damaged_targets]</Combat_RangedDamage.rulePack.rulesStrings.10>
-	<Combat_RangedDamage.rulePack.rulesStrings.11>logentry(recipient_partDestroyed_count==0,p=2)->[initiator_definite]'s [weapon_projectile_label] [missed] [originalTarget_definite], [damaged_present] [recipient_definite]'s [damaged_targets]</Combat_RangedDamage.rulePack.rulesStrings.11>
-	<Combat_RangedDamage.rulePack.rulesStrings.12>logentry(recipient_partDestroyed_count==0)->[recipient_definite]'s [damaged_targets] was [damagedverb_past] by [initiator_definite]'s [weapon_projectile_label]</Combat_RangedDamage.rulePack.rulesStrings.12>
-	<Combat_RangedDamage.rulePack.rulesStrings.13>logentry(recipient_partDestroyed_count==0)->[recipient_definite]'s [damaged_targets] was [damagedverb_past] by [initiator_definite]'s [expert] [weapon_projectile_label]</Combat_RangedDamage.rulePack.rulesStrings.13>
+	<Combat_RangedDamage.rulePack.rulesStrings.8>logentry(recipient_partDestroyed_count==0)->[initiator_definite]'s [weapon_projectile_label] [damaged_past] [recipient_definite]'s [damaged_targets].</Combat_RangedDamage.rulePack.rulesStrings.8>
+	<Combat_RangedDamage.rulePack.rulesStrings.9>logentry(recipient_partDestroyed_count==0)->[initiator_definite]'s [weapon_projectile_label] [damaged_past] [recipient_definite]'s [damaged_targets] [expertly].</Combat_RangedDamage.rulePack.rulesStrings.9>
+	<Combat_RangedDamage.rulePack.rulesStrings.10>logentry(recipient_partDestroyed_count==0,p=2)->[initiator_definite]'s [weapon_projectile_label] [missed] [originalTarget_definite] and [damaged_past] [recipient_definite]'s [damaged_targets].</Combat_RangedDamage.rulePack.rulesStrings.10>
+	<Combat_RangedDamage.rulePack.rulesStrings.11>logentry(recipient_partDestroyed_count==0,p=2)->[initiator_definite]'s [weapon_projectile_label] [missed] [originalTarget_definite], [damaged_present] [recipient_definite]'s [damaged_targets].</Combat_RangedDamage.rulePack.rulesStrings.11>
+	<Combat_RangedDamage.rulePack.rulesStrings.12>logentry(recipient_partDestroyed_count==0)->[recipient_definite]'s [damaged_targets] was [damagedverb_past] by [initiator_definite]'s [weapon_projectile_label].</Combat_RangedDamage.rulePack.rulesStrings.12>
+	<Combat_RangedDamage.rulePack.rulesStrings.13>logentry(recipient_partDestroyed_count==0)->[recipient_definite]'s [damaged_targets] was [damagedverb_past] by [initiator_definite]'s [expert] [weapon_projectile_label].</Combat_RangedDamage.rulePack.rulesStrings.13>
 
 	<!-- damaged/destroyed hybrid -->
-	<Combat_RangedDamage.rulePack.rulesStrings.14>logentry(p=3)->[initiator_definite]'s [weapon_projectile_label] [destroyed_past] [recipient_definite]'s [destroyed_targets] and [damaged_past] [recipient_possessive] [damaged_targets]</Combat_RangedDamage.rulePack.rulesStrings.14>
-	<Combat_RangedDamage.rulePack.rulesStrings.15>logentry(p=6)->[initiator_definite]'s [weapon_projectile_label] [missed] [originalTarget_definite], [destroyed_present] [recipient_definite]'s [destroyed_targets] and [damaged_present] [recipient_possessive] [damaged_targets]</Combat_RangedDamage.rulePack.rulesStrings.15>
+	<Combat_RangedDamage.rulePack.rulesStrings.14>logentry(p=3)->[initiator_definite]'s [weapon_projectile_label] [destroyed_past] [recipient_definite]'s [destroyed_targets] and [damaged_past] [recipient_possessive] [damaged_targets].</Combat_RangedDamage.rulePack.rulesStrings.14>
+	<Combat_RangedDamage.rulePack.rulesStrings.15>logentry(p=6)->[initiator_definite]'s [weapon_projectile_label] [missed] [originalTarget_definite], [destroyed_present] [recipient_definite]'s [destroyed_targets] and [damaged_present] [recipient_possessive] [damaged_targets].</Combat_RangedDamage.rulePack.rulesStrings.15>
 
 	<!-- don't mention damage or destruction; uncommon, but intended as a fallback -->
-	<Combat_RangedDamage.rulePack.rulesStrings.16>logentry(p=0.2)->[initiator_definite] hit [recipient_definite] with a [weapon_projectile_label]</Combat_RangedDamage.rulePack.rulesStrings.16>
-	<Combat_RangedDamage.rulePack.rulesStrings.17>logentry(p=0.2)->[initiator_definite]'s [weapon_projectile_label] hit [recipient_definite]</Combat_RangedDamage.rulePack.rulesStrings.17>
-	<Combat_RangedDamage.rulePack.rulesStrings.18>logentry(p=0.4)->[initiator_definite] [missed] [originalTarget_definite] and hit [recipient_definite] with a [weapon_projectile_label]</Combat_RangedDamage.rulePack.rulesStrings.18>
-	<Combat_RangedDamage.rulePack.rulesStrings.19>logentry(p=0.4)->[initiator_definite]'s [weapon_projectile_label] [missed] [originalTarget_definite] and hit [recipient_definite]</Combat_RangedDamage.rulePack.rulesStrings.19>
+	<Combat_RangedDamage.rulePack.rulesStrings.16>logentry(p=0.2)->[initiator_definite] hit [recipient_definite] with a [weapon_projectile_label].</Combat_RangedDamage.rulePack.rulesStrings.16>
+	<Combat_RangedDamage.rulePack.rulesStrings.17>logentry(p=0.2)->[initiator_definite]'s [weapon_projectile_label] hit [recipient_definite].</Combat_RangedDamage.rulePack.rulesStrings.17>
+	<Combat_RangedDamage.rulePack.rulesStrings.18>logentry(p=0.4)->[initiator_definite] [missed] [originalTarget_definite] and hit [recipient_definite] with a [weapon_projectile_label].</Combat_RangedDamage.rulePack.rulesStrings.18>
+	<Combat_RangedDamage.rulePack.rulesStrings.19>logentry(p=0.4)->[initiator_definite]'s [weapon_projectile_label] [missed] [originalTarget_definite] and hit [recipient_definite].</Combat_RangedDamage.rulePack.rulesStrings.19>
 
 	<!-- fallback, also a little variety -->
 	<Combat_RangedDamage.rulePack.rulesStrings.20>weapon_projectile_label(p=0.05)->shot</Combat_RangedDamage.rulePack.rulesStrings.20>
@@ -370,10 +379,10 @@
 
 
 
-	<Combat_RangedMiss.rulePack.rulesStrings.0>logentry->[initiator_definite]'s [weapon_projectile_label] [missed]</Combat_RangedMiss.rulePack.rulesStrings.0>
+	<Combat_RangedMiss.rulePack.rulesStrings.0>logentry->[initiator_definite]'s [weapon_projectile_label] [missed].</Combat_RangedMiss.rulePack.rulesStrings.0>
 
-	<Combat_RangedMiss.rulePack.rulesStrings.1>logentry->[initiator_definite] missed [originalTarget_definite]</Combat_RangedMiss.rulePack.rulesStrings.1>
-	<Combat_RangedMiss.rulePack.rulesStrings.2>logentry->[originalTarget_definite] [avoidance], [initiator_definite]'s [weapon_projectile_label] [missing]</Combat_RangedMiss.rulePack.rulesStrings.2>
+	<Combat_RangedMiss.rulePack.rulesStrings.1>logentry->[initiator_definite] missed [originalTarget_definite].</Combat_RangedMiss.rulePack.rulesStrings.1>
+	<Combat_RangedMiss.rulePack.rulesStrings.2>logentry->[originalTarget_definite] [avoidance], [initiator_definite]'s [weapon_projectile_label] [missing].</Combat_RangedMiss.rulePack.rulesStrings.2>
 
 	<Combat_RangedMiss.rulePack.rulesStrings.3>missed(p=4)->missed</Combat_RangedMiss.rulePack.rulesStrings.3>
 	<Combat_RangedMiss.rulePack.rulesStrings.4>missed(p=2)->missed by a small margin</Combat_RangedMiss.rulePack.rulesStrings.4>
@@ -411,5 +420,45 @@
 	<Combat_RangedMiss.rulePack.rulesStrings.34>avoidance(p=0.3)->leaped behind the nearest piece of cover</Combat_RangedMiss.rulePack.rulesStrings.34>
 
 
+
+
+
+	<Combat_ExplosionImpact.rulePack.rulesStrings.0>prefix->The [blast] [fromof] [initiator_definite]'s [weapon_projectile_label]</Combat_ExplosionImpact.rulePack.rulesStrings.0>
+	<Combat_ExplosionImpact.rulePack.rulesStrings.1>prefix->The [blast] [fromof] [initiator_definite]'s [weapon_label]</Combat_ExplosionImpact.rulePack.rulesStrings.1>
+	<Combat_ExplosionImpact.rulePack.rulesStrings.2>prefix->The [blast] [fromof] [initiator_definite]'s [mortarshell]</Combat_ExplosionImpact.rulePack.rulesStrings.2>
+	<Combat_ExplosionImpact.rulePack.rulesStrings.3>prefix->The [blast] [fromof] [initiator_definite]'s [weapon_projectile_label]</Combat_ExplosionImpact.rulePack.rulesStrings.3>
+	<Combat_ExplosionImpact.rulePack.rulesStrings.4>prefix->The [blast] [fromof] [initiator_definite]'s [weapon_label]</Combat_ExplosionImpact.rulePack.rulesStrings.4>
+	<Combat_ExplosionImpact.rulePack.rulesStrings.5>prefix->The [blast] [fromof] [initiator_definite]'s [mortarshell]</Combat_ExplosionImpact.rulePack.rulesStrings.5>
+	<Combat_ExplosionImpact.rulePack.rulesStrings.6>prefix->[initiator_definite]'s [blast]</Combat_ExplosionImpact.rulePack.rulesStrings.6>
+	<Combat_ExplosionImpact.rulePack.rulesStrings.7>prefix->[initiator_definite]'s [weapon_projectile_label] [blast]</Combat_ExplosionImpact.rulePack.rulesStrings.7>
+	<Combat_ExplosionImpact.rulePack.rulesStrings.8>prefix->[initiator_definite]'s [mortarshell] [blast]</Combat_ExplosionImpact.rulePack.rulesStrings.8>
+	<Combat_ExplosionImpact.rulePack.rulesStrings.9>prefix->[initiator_definite]'s [weapon_label] [blast]</Combat_ExplosionImpact.rulePack.rulesStrings.9>
+	<Combat_ExplosionImpact.rulePack.rulesStrings.10>prefix->[initiator_definite]'s [weapon_projectile_label]</Combat_ExplosionImpact.rulePack.rulesStrings.10>
+	<Combat_ExplosionImpact.rulePack.rulesStrings.11>prefix->[initiator_definite]'s [mortarshell]</Combat_ExplosionImpact.rulePack.rulesStrings.11>
+	<Combat_ExplosionImpact.rulePack.rulesStrings.12>prefix->[initiator_definite]'s [weapon_label]</Combat_ExplosionImpact.rulePack.rulesStrings.12>
+
+	<Combat_ExplosionImpact.rulePack.rulesStrings.13>logentry->[prefix] [injured] [recipient_definite].</Combat_ExplosionImpact.rulePack.rulesStrings.13>
+
+	<Combat_ExplosionImpact.rulePack.rulesStrings.14>logentry->[prefix] [destroyed] [recipient_definite]'s [destroyed_targets].</Combat_ExplosionImpact.rulePack.rulesStrings.14>
+	<Combat_ExplosionImpact.rulePack.rulesStrings.15>logentry->[prefix] [destroyed] [recipient_definite]'s [destroyed_targets] [flavortextadverb].</Combat_ExplosionImpact.rulePack.rulesStrings.15>
+	<Combat_ExplosionImpact.rulePack.rulesStrings.16>logentry->[prefix] [flavortextadverb] [destroyed] [recipient_definite]'s [destroyed_targets].</Combat_ExplosionImpact.rulePack.rulesStrings.16>
+	<Combat_ExplosionImpact.rulePack.rulesStrings.17>logentry->[prefix] [destroyed] [recipient_definite]'s [destroyed_targets] and [damaged_past] [recipient_possessive] [damaged_targets].</Combat_ExplosionImpact.rulePack.rulesStrings.17>
+	<Combat_ExplosionImpact.rulePack.rulesStrings.18>logentry(recipient_part_destroyed_count==0)->[prefix] [damaged_past] [recipient_definite]'s [damaged_targets].</Combat_ExplosionImpact.rulePack.rulesStrings.18>
+	<Combat_ExplosionImpact.rulePack.rulesStrings.19>logentry(recipient_part_destroyed_count==0)->[prefix] [damaged_past] [recipient_definite]'s [damaged_targets] [flavortextadverb].</Combat_ExplosionImpact.rulePack.rulesStrings.19>
+	<Combat_ExplosionImpact.rulePack.rulesStrings.20>logentry(recipient_part_destroyed_count==0)->[prefix] [flavortextadverb] [damaged_past] [recipient_definite]'s [damaged_targets].</Combat_ExplosionImpact.rulePack.rulesStrings.20>
+
+	<Combat_ExplosionImpact.rulePack.rulesStrings.21>logentry->[recipient_definite] was [injured] by [initiator_definite].</Combat_ExplosionImpact.rulePack.rulesStrings.21>
+	<Combat_ExplosionImpact.rulePack.rulesStrings.22>logentry->[recipient_definite] was [injured] [flavortextadverb] by [initiator_definite].</Combat_ExplosionImpact.rulePack.rulesStrings.22>
+	<Combat_ExplosionImpact.rulePack.rulesStrings.23>logentry->[recipient_definite] was [injured].</Combat_ExplosionImpact.rulePack.rulesStrings.23>
+
+	<Combat_ExplosionImpact.rulePack.rulesStrings.24>blast->explosion</Combat_ExplosionImpact.rulePack.rulesStrings.24>
+	<Combat_ExplosionImpact.rulePack.rulesStrings.25>blast->blast</Combat_ExplosionImpact.rulePack.rulesStrings.25>
+	<Combat_ExplosionImpact.rulePack.rulesStrings.26>blast->shockwave</Combat_ExplosionImpact.rulePack.rulesStrings.26>
+	<Combat_ExplosionImpact.rulePack.rulesStrings.27>blast->detonation</Combat_ExplosionImpact.rulePack.rulesStrings.27>
+	<Combat_ExplosionImpact.rulePack.rulesStrings.28>blast->discharge</Combat_ExplosionImpact.rulePack.rulesStrings.28>
+	<Combat_ExplosionImpact.rulePack.rulesStrings.29>blast->impact</Combat_ExplosionImpact.rulePack.rulesStrings.29>
+
+	<Combat_ExplosionImpact.rulePack.rulesStrings.30>fromof->from</Combat_ExplosionImpact.rulePack.rulesStrings.30>
+	<Combat_ExplosionImpact.rulePack.rulesStrings.31>fromof->of</Combat_ExplosionImpact.rulePack.rulesStrings.31>
 
 </LanguageData>
