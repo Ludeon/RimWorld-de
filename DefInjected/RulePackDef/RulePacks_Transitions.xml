@@ -2,28 +2,115 @@
 <LanguageData>
 
 
-	<Transition_Downed.rulePack.rulesStrings.0>logentry->[subject_nameShortDef] [collapsed].</Transition_Downed.rulePack.rulesStrings.0>
+	<Transition_Include.rulePack.rulesStrings.0>duetoa->aufgrund von</Transition_Include.rulePack.rulesStrings.0>
+	<Transition_Include.rulePack.rulesStrings.1>duetoa(p=0.5)->wegen</Transition_Include.rulePack.rulesStrings.1>
+	<Transition_Include.rulePack.rulesStrings.2>duetoa(p=0.5)->verursacht durch</Transition_Include.rulePack.rulesStrings.2>
 
-	<Transition_Downed.rulePack.rulesStrings.1>collapsed->kollabierte</Transition_Downed.rulePack.rulesStrings.1>
-	<Transition_Downed.rulePack.rulesStrings.2>collapsed->fiel [helplessly] um</Transition_Downed.rulePack.rulesStrings.2>
-	<Transition_Downed.rulePack.rulesStrings.3>collapsed->brach [helplessly] zusammen</Transition_Downed.rulePack.rulesStrings.3>
-	<Transition_Downed.rulePack.rulesStrings.4>collapsed->fiel [helplessly] hin</Transition_Downed.rulePack.rulesStrings.4>
-	<Transition_Downed.rulePack.rulesStrings.5>collapsed->fiel [helplessly] in Ohnmacht</Transition_Downed.rulePack.rulesStrings.5>
-
-	<Transition_Downed.rulePack.rulesStrings.6>helplessly->hilflos</Transition_Downed.rulePack.rulesStrings.6>
-	<Transition_Downed.rulePack.rulesStrings.7>helplessly->bewusstlos</Transition_Downed.rulePack.rulesStrings.7>
-	<Transition_Downed.rulePack.rulesStrings.8>helplessly->erschöpft</Transition_Downed.rulePack.rulesStrings.8>
-	<Transition_Downed.rulePack.rulesStrings.9>helplessly->schwächlich</Transition_Downed.rulePack.rulesStrings.9>
-	<Transition_Downed.rulePack.rulesStrings.10>helplessly->kraftlos</Transition_Downed.rulePack.rulesStrings.10>
+	<Transition_Include.rulePack.rulesStrings.3>subject_definite->[subject_labelDefinite]</Transition_Include.rulePack.rulesStrings.3>
+	<Transition_Include.rulePack.rulesStrings.4>subject_definite->[subject_nameShortDef]</Transition_Include.rulePack.rulesStrings.4>
 
 
 	
-	
+	<Transition_Downed.rulePack.rulesStrings.0>logentry->[culpritHediff_labelNoun] lies [subject_definite] [collapsemeta].</Transition_Downed.rulePack.rulesStrings.0>
+	<Transition_Downed.rulePack.rulesStrings.1>logentry->[culpritHediff_labelNoun] in der [culpritHediff_target_label] lies [subject_definite] [collapsemeta].</Transition_Downed.rulePack.rulesStrings.1>
 
-	<Transition_Died.rulePack.rulesStrings.0>logentry->[subject_nameShortDef] starb.</Transition_Died.rulePack.rulesStrings.0>
-	<Transition_Died.rulePack.rulesStrings.1>logentry->[subject_nameShortDef] erlag den Verletzungen.</Transition_Died.rulePack.rulesStrings.1>
-	<Transition_Died.rulePack.rulesStrings.2>logentry->[subject_nameShortDef] verschied.</Transition_Died.rulePack.rulesStrings.2>
-	<Transition_Died.rulePack.rulesStrings.3>logentry->[subject_nameShortDef] kam ums Leben.</Transition_Died.rulePack.rulesStrings.3>
+	<Transition_Downed.rulePack.rulesStrings.2>logentry->[subject_definite] [collapsedmeta] [duetoa] [culpritHediff_labelNoun].</Transition_Downed.rulePack.rulesStrings.2>
+	<Transition_Downed.rulePack.rulesStrings.3>logentry->[subject_definite] [collapsedmeta] [duetoa] [culpritHediff_labelNoun] in der [culpritHediff_target_label].</Transition_Downed.rulePack.rulesStrings.3>
+	<Transition_Downed.rulePack.rulesStrings.4>logentry->[subject_definite] [collapsedmeta] [duetoa] [culpritHediff_labelNoun] in [subject_possessive] [culpritHediff_target_label].</Transition_Downed.rulePack.rulesStrings.4>
+
+	<Transition_Downed.rulePack.rulesStrings.5>logentry(p=0.1)->[subject_definite] [collapsedmeta].</Transition_Downed.rulePack.rulesStrings.5>
+
+	<Transition_Downed.rulePack.rulesStrings.6>collapse->kollabieren</Transition_Downed.rulePack.rulesStrings.6>
+	<Transition_Downed.rulePack.rulesStrings.7>collapse->zusammenbrechen</Transition_Downed.rulePack.rulesStrings.7>
+	<Transition_Downed.rulePack.rulesStrings.8>collapse->hinfallen</Transition_Downed.rulePack.rulesStrings.8>
+	<Transition_Downed.rulePack.rulesStrings.9>collapse(subject_flesh!=Mechanoid)->in Ohnmacht fallen</Transition_Downed.rulePack.rulesStrings.9>
+	<Transition_Downed.rulePack.rulesStrings.10>collapse(subject_flesh==Mechanoid)->einen Systemabsturz erleiden</Transition_Downed.rulePack.rulesStrings.10>
+	<Transition_Downed.rulePack.rulesStrings.11>collapse(subject_flesh==Mechanoid)->in einer Neustart-Schleife hängen</Transition_Downed.rulePack.rulesStrings.11>
+	<Transition_Downed.rulePack.rulesStrings.12>collapse(subject_flesh==Mechanoid)->einen Speicherfehler erlegen</Transition_Downed.rulePack.rulesStrings.12>
+
+	<Transition_Downed.rulePack.rulesStrings.13>collapsed->kollabiert</Transition_Downed.rulePack.rulesStrings.13>
+	<Transition_Downed.rulePack.rulesStrings.14>collapsed->zusammengebrochen</Transition_Downed.rulePack.rulesStrings.14>
+	<Transition_Downed.rulePack.rulesStrings.15>collapsed->hingefallen</Transition_Downed.rulePack.rulesStrings.15>
+	<Transition_Downed.rulePack.rulesStrings.16>collapsed(subject_flesh!=Mechanoid)->in Ohnmacht gefallen</Transition_Downed.rulePack.rulesStrings.16>
+	<Transition_Downed.rulePack.rulesStrings.17>collapsed(subject_flesh==Mechanoid)->einen Systemabsturz erlitten</Transition_Downed.rulePack.rulesStrings.17>
+	<Transition_Downed.rulePack.rulesStrings.18>collapsed(subject_flesh==Mechanoid)->in einer Neustart-Schleife hängengeblieben</Transition_Downed.rulePack.rulesStrings.18>
+	<Transition_Downed.rulePack.rulesStrings.19>collapsed(subject_flesh==Mechanoid)->einem Speicherfehler erlegen</Transition_Downed.rulePack.rulesStrings.19>
+
+	<Transition_Downed.rulePack.rulesStrings.20>helplessly->hilflos</Transition_Downed.rulePack.rulesStrings.20>
+	<Transition_Downed.rulePack.rulesStrings.21>helplessly(subject_flesh!=Mechanoid)->bewusstlos</Transition_Downed.rulePack.rulesStrings.21>
+	<Transition_Downed.rulePack.rulesStrings.22>helplessly(subject_flesh!=Mechanoid)->erschöpft</Transition_Downed.rulePack.rulesStrings.22>
+	<Transition_Downed.rulePack.rulesStrings.23>helplessly(subject_flesh!=Mechanoid)->schwächlich</Transition_Downed.rulePack.rulesStrings.23>
+	<Transition_Downed.rulePack.rulesStrings.24>helplessly(subject_flesh!=Mechanoid)->kraftlos</Transition_Downed.rulePack.rulesStrings.24>
+	<Transition_Downed.rulePack.rulesStrings.25>helplessly(subject_flesh==Mechanoid)->unkontrolliert</Transition_Downed.rulePack.rulesStrings.25>
+
+	<Transition_Downed.rulePack.rulesStrings.26>collapsemeta->[collapse]</Transition_Downed.rulePack.rulesStrings.26>
+	<Transition_Downed.rulePack.rulesStrings.27>collapsemeta(p=0.5)->[collapse] [helplessly]</Transition_Downed.rulePack.rulesStrings.27>
+
+	<Transition_Downed.rulePack.rulesStrings.28>collapsedmeta->ist [collapsed]</Transition_Downed.rulePack.rulesStrings.28>
+	<Transition_Downed.rulePack.rulesStrings.29>collapsedmeta(p=0.5)->ist [helplessly] [collapsed]</Transition_Downed.rulePack.rulesStrings.29>
+
+
+
+	<Transition_DiedInclude.rulePack.rulesStrings.0>logentry(p=1.5)->[culpritHediff_labelNoun] lies [subject_definite] [die].</Transition_DiedInclude.rulePack.rulesStrings.0>
+	<Transition_DiedInclude.rulePack.rulesStrings.1>logentry(p=1.5)->[culpritHediff_labelNoun] in the [culpritHediff_target_label] lies [subject_definite] [die].</Transition_DiedInclude.rulePack.rulesStrings.1>
+
+	<Transition_DiedInclude.rulePack.rulesStrings.2>logentry->[subject_definite] [died] [duetoa] [culpritHediff_labelNoun][flavorsuffix].</Transition_DiedInclude.rulePack.rulesStrings.2>
+	<Transition_DiedInclude.rulePack.rulesStrings.3>logentry->[subject_definite] [died] [duetoa] [culpritHediff_labelNoun] in der [culpritHediff_target_label][flavorsuffix].</Transition_DiedInclude.rulePack.rulesStrings.3>
+	<Transition_DiedInclude.rulePack.rulesStrings.4>logentry->[subject_definite] [died] [duetoa] [culpritHediff_labelNoun] in [subject_possessive]er [culpritHediff_target_label][flavorsuffix].</Transition_DiedInclude.rulePack.rulesStrings.4>
+
+	<Transition_DiedInclude.rulePack.rulesStrings.5>logentry->[subject_definite] [died].</Transition_DiedInclude.rulePack.rulesStrings.5>
+	<Transition_DiedInclude.rulePack.rulesStrings.6>logentry->[subject_definite] [died][flavorsuffix].</Transition_DiedInclude.rulePack.rulesStrings.6>
+
+
+
+	<Transition_Died.rulePack.rulesStrings.0>die(p=2)->sterben</Transition_Died.rulePack.rulesStrings.0>
+	<Transition_Died.rulePack.rulesStrings.1>die->verenden</Transition_Died.rulePack.rulesStrings.1>
+	<Transition_Died.rulePack.rulesStrings.2>die->verrecken</Transition_Died.rulePack.rulesStrings.2>
+	<Transition_Died.rulePack.rulesStrings.3>die(subject_flesh!=Mechanoid,p=0.5)->an [subject_possessive]en Verletzungen sterben</Transition_Died.rulePack.rulesStrings.3>
+	<Transition_Died.rulePack.rulesStrings.4>die(subject_flesh==Mechanoid,p=0.5)->abschalten</Transition_Died.rulePack.rulesStrings.4>
+	<Transition_Died.rulePack.rulesStrings.5>die(subject_flesh==Mechanoid,p=0.5)->aufhören zu funktionieren</Transition_Died.rulePack.rulesStrings.5>
+
+	<Transition_Died.rulePack.rulesStrings.6>died(p=2)->starb</Transition_Died.rulePack.rulesStrings.6>
+	<Transition_Died.rulePack.rulesStrings.7>died->erlag den Verletzungen</Transition_Died.rulePack.rulesStrings.7>
+	<Transition_Died.rulePack.rulesStrings.8>died(subject_flesh!=Mechanoid)->verschied</Transition_Died.rulePack.rulesStrings.8>
+	<Transition_Died.rulePack.rulesStrings.9>died(subject_flesh==Mechanoid)->schaltete sich ab</Transition_Died.rulePack.rulesStrings.9>
+	<Transition_Died.rulePack.rulesStrings.10>died(subject_flesh==Mechanoid)->hörte auf zu funktionieren</Transition_Died.rulePack.rulesStrings.10>
+
+
+
+	<Transition_DiedExplosive.rulePack.rulesStrings.0>die(p=3)->[flavor] explodieren</Transition_DiedExplosive.rulePack.rulesStrings.0>
+	<Transition_DiedExplosive.rulePack.rulesStrings.1>die(p=3)->explodieren[flavorsuffix]</Transition_DiedExplosive.rulePack.rulesStrings.1>
+	<Transition_DiedExplosive.rulePack.rulesStrings.2>die->[flavor] sprengen</Transition_DiedExplosive.rulePack.rulesStrings.2>
+	<Transition_DiedExplosive.rulePack.rulesStrings.3>die->sprengen[flavorsuffix]</Transition_DiedExplosive.rulePack.rulesStrings.3>
+	<Transition_DiedExplosive.rulePack.rulesStrings.4>die->zerbersten [flavor]</Transition_DiedExplosive.rulePack.rulesStrings.4>
+	<Transition_DiedExplosive.rulePack.rulesStrings.5>die->zerbersten[flavorsuffix]</Transition_DiedExplosive.rulePack.rulesStrings.5>
+
+	<Transition_DiedExplosive.rulePack.rulesStrings.6>died(p=3)->explodierte [flavor]</Transition_DiedExplosive.rulePack.rulesStrings.6>
+	<Transition_DiedExplosive.rulePack.rulesStrings.7>died->sprengte [flavor]</Transition_DiedExplosive.rulePack.rulesStrings.7>
+	<Transition_DiedExplosive.rulePack.rulesStrings.8>died->zerbarst [flavor]</Transition_DiedExplosive.rulePack.rulesStrings.8>
+
+	<Transition_DiedExplosive.rulePack.rulesStrings.9>flavor(p=0.2)->in einem chemischen [fireball]</Transition_DiedExplosive.rulePack.rulesStrings.9>
+	<Transition_DiedExplosive.rulePack.rulesStrings.10>flavor->in einem [color]en [fireball]</Transition_DiedExplosive.rulePack.rulesStrings.10>
+	<Transition_DiedExplosive.rulePack.rulesStrings.11>flavor->in einem [large]en [fireball]</Transition_DiedExplosive.rulePack.rulesStrings.11>
+	<Transition_DiedExplosive.rulePack.rulesStrings.12>flavor(p=4)->in einem [fireball]</Transition_DiedExplosive.rulePack.rulesStrings.12>
+	<Transition_DiedExplosive.rulePack.rulesStrings.13>flavor(p=4)-></Transition_DiedExplosive.rulePack.rulesStrings.13>
+
+	<Transition_DiedExplosive.rulePack.rulesStrings.14>flavorsuffix->, verteilte [pieces] [everywhere]</Transition_DiedExplosive.rulePack.rulesStrings.14>
+	<Transition_DiedExplosive.rulePack.rulesStrings.15>flavorsuffix(subject_flesh!=Mechanoid,p=2)->, verteilte [gore] [everywhere]</Transition_DiedExplosive.rulePack.rulesStrings.15>
+	<Transition_DiedExplosive.rulePack.rulesStrings.16>flavorsuffix(subject_flesh!=Mechanoid)->, ein kleiner Haufen [gore] bleibt übrig</Transition_DiedExplosive.rulePack.rulesStrings.16>
+	<Transition_DiedExplosive.rulePack.rulesStrings.17>flavorsuffix->, hinterläßt einen kleinen Krater</Transition_DiedExplosive.rulePack.rulesStrings.17>
+	<Transition_DiedExplosive.rulePack.rulesStrings.18>flavorsuffix(p=4)-></Transition_DiedExplosive.rulePack.rulesStrings.18>
+
+	<Transition_DiedExplosive.rulePack.rulesStrings.19>fireball(p=3)->Feuerball</Transition_DiedExplosive.rulePack.rulesStrings.19>
+	<Transition_DiedExplosive.rulePack.rulesStrings.20>fireball->Flammenball</Transition_DiedExplosive.rulePack.rulesStrings.20>
+	<Transition_DiedExplosive.rulePack.rulesStrings.21>fireball->Blitzgewitter</Transition_DiedExplosive.rulePack.rulesStrings.21>
+	<Transition_DiedExplosive.rulePack.rulesStrings.22>fireball->Feuersturm</Transition_DiedExplosive.rulePack.rulesStrings.22>
+
+	<Transition_DiedExplosive.rulePack.rulesStrings.23>pieces->Stücke</Transition_DiedExplosive.rulePack.rulesStrings.23>
+	<Transition_DiedExplosive.rulePack.rulesStrings.24>pieces->Teile</Transition_DiedExplosive.rulePack.rulesStrings.24>
+
+	<Transition_DiedExplosive.rulePack.rulesStrings.25>everywhere->überall</Transition_DiedExplosive.rulePack.rulesStrings.25>
+	<Transition_DiedExplosive.rulePack.rulesStrings.26>everywhere->nah und fern</Transition_DiedExplosive.rulePack.rulesStrings.26>
 
 
 
