@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
 
 	<!-- Various -->
@@ -7,11 +7,13 @@
 	<Contents>Inhalt</Contents>
 	<ContainedResources>Gesicherte Rohstoffe</ContainedResources>
 	<ForPrisonerUse>Für Gefangene</ForPrisonerUse>
+	<InPrisonCell>In Gefängniszelle: Für Gefangene</InPrisonCell>
 	<ForColonistUse>Für Kolonisten</ForColonistUse>
 	<MedicalBed>Krankenbett</MedicalBed>
 	<Owner>Besitzer</Owner>
 	<Owners>Besitzer</Owners>
 	<AssignedColonist>Zugewiesener Kolonist</AssignedColonist>
+	<DiedOn>Starb am {0}</DiedOn>
 	<Nobody>Niemand</Nobody>
 	<Unowned>Frei</Unowned>
 	<DeadTime>Tot seit {0}</DeadTime>
@@ -70,19 +72,25 @@
 	<Permanent>permanent</Permanent>
 	<CaravanResting>Pausiert</CaravanResting>
 	<CaravanEstimatedTimeToDestination>Voraussichtliche Ankunftszeit: {0} Tage</CaravanEstimatedTimeToDestination>
+	<CaravanEstimatedDaysToDestination>Voraussichtliche Ankunftszeit in Tagen: {0}</CaravanEstimatedDaysToDestination>
 	<CaravanImmobilizedByMass>Bewegungsunfähig: Zu viel Gewicht.</CaravanImmobilizedByMass>
 	<CaravanOutOfFood>Keine Nahrung.</CaravanOutOfFood>
 	<CaravanDaysOfFood>Nahrungsvorrat: {0}</CaravanDaysOfFood>
-	<CaravanDaysOfFoodRot>Nahrungsvorrat: {0}, verdirbt in {1} Tagen</CaravanDaysOfFoodRot>
-	<CaravanMemberMentalBreak>Angehalten: {0} hat einen Zusammenbruch.</CaravanMemberMentalBreak>
+	<CaravanDaysOfFoodRot>Nahrungsvorrat: {0} (verdirbt in {1} Tagen)</CaravanDaysOfFoodRot>
 	<AllCaravanMembersDowned>Angehalten: Alle sind bewusstlos.</AllCaravanMembersDowned>
 	<AllCaravanMembersMentalBreak>Angehalten: Alle haben einen Nervenzusammenbruch.</AllCaravanMembersMentalBreak>
+	<CaravanColonistsCount>{0} {1}</CaravanColonistsCount>
+	<CaravanAnimal>1 Tier</CaravanAnimal>
+	<CaravanAnimalsCount>{0} Tiere</CaravanAnimalsCount>
+	<CaravanPrisoner>1 Gefangener</CaravanPrisoner>
+	<CaravanPrisonersCount>{0} Gefangene</CaravanPrisonersCount>
+	<CaravanPawnsInMentalState>{0} mit Nervenzusammenbruch</CaravanPawnsInMentalState>
+	<CaravanPawnsDowned>{0} bewusstlos</CaravanPawnsDowned>
 	<CaravanTraveling>Unterwegs</CaravanTraveling>
+	<CaravanPaused>Pausiert</CaravanPaused>
 	<CaravanWaiting>Wartet</CaravanWaiting>
-	<CaravanHoursPerTile>h/Feld</CaravanHoursPerTile>
-	<CaravanBaseMovementTime>Basisbewegungszeit</CaravanBaseMovementTime>
 	<CurrentTileMovementTime>Momentane Bewegungszeit</CurrentTileMovementTime>
-	<StealthFactor>Heimlichkeit</StealthFactor>
+	<Visibility>Sichtbarkeit</Visibility>
 	<Temperature>Temperatur</Temperature>
 	<BadTemperature>Ungünstige Temperatur</BadTemperature>
 	<IdealFermentingTemperature>Ideale Fermentierungstemperatur</IdealFermentingTemperature>
@@ -92,10 +100,12 @@
 	<CaravanAttacking>Attackiert {0}</CaravanAttacking>
 	<WasWornByCorpse>Wurde von einer Leiche getragen.</WasWornByCorpse>
 	<WornByCorpseChar>T</WornByCorpseChar>
-	<DeterioratingDueToBeingUnroofed>Verrottet da es nicht überdacht ist.</DeterioratingDueToBeingUnroofed>
+	<DeterioratingUnroofed>nicht überdacht</DeterioratingUnroofed>
+	<DeterioratingOutdoors>im Freien</DeterioratingOutdoors>
+	<DeterioratingBecauseOf>Verrottet weil</DeterioratingBecauseOf>
 	<Map>Karte</Map>
 	<ForceExitAndRemoveMapCountdown>{0} bis Abreise</ForceExitAndRemoveMapCountdown>
-	<ForceExitAndRemoveMapCountdownTip>Deine Kolonisten bilden automatisch eine Karawane und verlassen dieses Gebiet in ca. {0}.</ForceExitAndRemoveMapCountdownTip>
+	<ForceExitAndRemoveMapCountdownTip>Deine Kolonisten bilden automatisch die Karawane und verlassen dieses Gebiet in ca. {0}.</ForceExitAndRemoveMapCountdownTip>
 	<Room>Raum</Room>
 	<BeautyHere>Schönheit hier</BeautyHere>
 	<NoPower>Kein Strom</NoPower>
@@ -109,8 +119,8 @@
 	<TransportPodDestinationBeyondMaximumRange>Außerhalb maximaler Reichweite</TransportPodDestinationBeyondMaximumRange>
 	<TransportPodNotEnoughFuel>Nicht genug Kraftstoff</TransportPodNotEnoughFuel>
 	<SettlementTrader>{0} von {1}</SettlementTrader>
-	<RoomSurgerySuccessChanceFactor>Operationserfolgsfaktor des Raumes</RoomSurgerySuccessChanceFactor>
-	<RoomInfectionChanceFactor>Behandlungsinfektionsfaktor des Raumes</RoomInfectionChanceFactor>
+	<RoomSurgerySuccessChanceFactor>Operationserfolgsfaktor vom Raum</RoomSurgerySuccessChanceFactor>
+	<RoomInfectionChanceFactor>Infektionsfaktor vom Raum</RoomInfectionChanceFactor>
 	<VentClosed>Geschlossen</VentClosed>
 	<WornBy>getragen von {0}</WornBy>
 	<EquippedBy>ausgerüstet von {0}</EquippedBy>
@@ -129,10 +139,22 @@
 	<KnownSiteThreatsNone>Bedrohungen: keine.</KnownSiteThreatsNone>
 	<SkillRequirements>Benötigte Fähigkeiten</SkillRequirements>
 	<Products>Erzeugnisse</Products>
-	<DeepDrillExhausted>Tiefenbohrer Rohstoffe erschöpft.</DeepDrillExhausted>
+	<DeepDrillExhausted>Tiefenbohrer Rohstoffe erschöpft, Bohrer wird automatisch verboten. Wieder erlauben um mit dem Abbau von {0} zu beginnen.</DeepDrillExhausted>
 	<Relationship>{0} von {1}</Relationship>
 	<Prisoner>Gefangener</Prisoner>
 	<Refugee>Flüchtling</Refugee>
+	<TileMovementDifficulty>Unpassierbarkeit der Landschaft</TileMovementDifficulty>
+	<Impassable>Unpassierbar</Impassable>
+	<CaravanMovementSpeedFull>Bewegungsgeschwindigkeit der Karavane</CaravanMovementSpeedFull>
+	<DownedLower>bewusstlos</DownedLower>
+	<AverageCaravanMemberMoveSpeed>Geschw. Person</AverageCaravanMemberMoveSpeed>
+	<MultiplierForCarriedMass>Faktor für transport. Masse: {0}</MultiplierForCarriedMass>
+	<FinalCaravanPawnsMovementSpeed>Geschw. Karavanenmitglieder</FinalCaravanPawnsMovementSpeed>
+	<FinalCaravanMovementSpeed>Endgültige Geschwindigkeit</FinalCaravanMovementSpeed>
+	<Winter>Winter</Winter>
+	<MovementDifficultyOffsetInWinter>{0} im Winter</MovementDifficultyOffsetInWinter>
+	<RangeTo>bis</RangeTo>
+	<NoDietCategoryLetter>Keine Nachricht</NoDietCategoryLetter>
 
 
 	<!-- Fermentation barrel -->
@@ -310,7 +332,8 @@
 
 	<Indoors>Innen</Indoors>
 	<IndoorsUnroofed>Kein Dach</IndoorsUnroofed>
-	<Outdoors>Außen</Outdoors>
+	<Outdoors>Im Freien</Outdoors>
+	<OutdoorsLower>im Freien</OutdoorsLower>
 
 	<!-- Rotting -->
 
@@ -353,7 +376,7 @@
 	<CannotGrowBadSeasonTemperature>Kann nicht wachsen (jahreszeitbedingt ungünstige Temperatur).</CannotGrowBadSeasonTemperature>
 	<Blighted>Verdorben</Blighted>
 	<DyingBecauseExposedToLight>Stirbt da dem Licht ausgesetzt</DyingBecauseExposedToLight>
-	
+
 	<!-- Zones -->
 
 	<Zone>Zone</Zone>
@@ -387,7 +410,7 @@
 	<UsePlanetDayNightSystemToggleButton>Umschalten der Tag/Nacht-Beleuchtung.</UsePlanetDayNightSystemToggleButton>
 	<ShowExpandingIconsToggleButton>Schaltet die Anzeige von erweiterten Symbolen anstelle der regulären Symbole für entfernte Objekte um.</ShowExpandingIconsToggleButton>
 	<ShowWorldFeaturesToggleButton>Schaltet die Anzeige der Gebietsnamen um.</ShowWorldFeaturesToggleButton>
-	
+
 	<!-- Fire -->
 
 	<Fire>Feuer</Fire>
@@ -431,14 +454,14 @@
 	<ShipReportCannotLaunch>Kann nicht starten.</ShipReportCannotLaunch>
 	<ShipReportCanLaunch>Startbereit.</ShipReportCanLaunch>
 	<ShipReportMissingPart>Kritische Komponente fehlt.</ShipReportMissingPart>
-  <ShipReportMissingPartRequires>benötigt</ShipReportMissingPartRequires>
+	<ShipReportMissingPartRequires>benötigt</ShipReportMissingPartRequires>
 	<ShipReportNoFullPods>Keine der Kryptoschlafkapseln ist belegt.</ShipReportNoFullPods>
-<ShipReportHibernating>Komponenten im Tiefschlafmodus</ShipReportHibernating>
-  <ShipReportNotReady>Komponenten noch nicht bereit</ShipReportNotReady>
-  <HibernateWarning>Charlon Whitestone ist bereit, die Aktivierungssequenz des Reaktors einzuleiten.\n\nEr warnt Dich, dass die Startup-Prozedur 15 Tage dauern kann und die Energiesignatur über weite Entfernungen messbar sein wird. Diese Art von Energiesignatur deutet auf interstellare Raumflugfähigkeit hin und wird ganze Gruppen von verzweifelten Räubern und Schatzsuchern anlocken. Stell sicher, dass Deine Verteidigung steht, bevor Du die Systeme hochfährst.</HibernateWarning>
+	<ShipReportHibernating>Komponenten im Tiefschlafmodus</ShipReportHibernating>
+	<ShipReportNotReady>Komponenten noch nicht bereit</ShipReportNotReady>
+	<HibernateWarning>Charlon Whitestone ist bereit, die Aktivierungssequenz des Reaktors einzuleiten.\n\nEr warnt Dich, dass die Startup-Prozedur 15 Tage dauern kann und die Energiesignatur über weite Entfernungen messbar sein wird. Diese Art von Energiesignatur deutet auf interstellare Raumflugfähigkeit hin und wird ganze Gruppen von verzweifelten Räubern und Schatzsuchern anlocken. Stell sicher, dass Deine Verteidigung steht, bevor Du die Systeme hochfährst.</HibernateWarning>
 
-  <HibernateCompleteLabel>Reaktor einsatzbereit</HibernateCompleteLabel>
-  <HibernateComplete>Charlon Whitestone hat die Tiefschlafwecksequenz des Reaktors beendet. Er ist jetzt bereit den Start einzuleiten.</HibernateComplete>
+	<HibernateCompleteLabel>Reaktor einsatzbereit</HibernateCompleteLabel>
+	<HibernateComplete>Charlon Whitestone hat die Tiefschlafwecksequenz des Reaktors beendet. Er ist jetzt bereit den Start einzuleiten.</HibernateComplete>
 
 
 	<!-- Neurotrainer -->
@@ -525,6 +548,7 @@
 	<ActivityIconAttacking>Kämpfend</ActivityIconAttacking>
 	<ActivityIconIdle>Untätig</ActivityIconIdle>
 	<ActivityIconBurning>Brennend</ActivityIconBurning>
+	<ActivityIconFormingCaravan>Bildet eine Karavane</ActivityIconFormingCaravan>
 
 	<!-- Maintainable -->
 	<DueForMaintenance>Wartung ist fällig.</DueForMaintenance>
@@ -543,7 +567,7 @@
 	<!-- Compass -->
 	<CompassTip>Zeigt Richtung Norden. Klicke um die Kamera nach Norden auszurichten.</CompassTip>
 
-	<!-- Distance measure -->
+	<!-- World route planner -->
 	<RoutePlannerButtonTip>Anklicken um den Planungsmodus zu aktivieren, wo Du die Reise planen und die Entfernung zwischen den Wegpunkten berechnen kannst.</RoutePlannerButtonTip>
 	<RoutePlannerAddTwoOrMoreWaypoints>Noch zwei oder mehr Wegpunkte hinzufügen.</RoutePlannerAddTwoOrMoreWaypoints>
 	<RoutePlannerAddOneOrMoreWaypoints>Noch einen oder mehr Wegpunkte hinzufügen.</RoutePlannerAddOneOrMoreWaypoints>
@@ -553,17 +577,19 @@
 	<RoutePlannerPressRMBToAddAndRemoveWaypoints>Rechte Maustaste: Wegpunkte hinzufügen/entfernen.</RoutePlannerPressRMBToAddAndRemoveWaypoints>
 	<RoutePlannerPressEscapeToExit>ESC: Planungsmodus beenden.</RoutePlannerPressEscapeToExit>
 	<RoutePlannerPressEscapeToReturnToCaravanFormationDialog>ESC: Zum Karawanen-Formierungsdialog zurückkehren.</RoutePlannerPressEscapeToReturnToCaravanFormationDialog>
-	<EstimatedTimeToThisWaypoint>Geschätzte Zeit zum Wegpunkt: {0}</EstimatedTimeToThisWaypoint>
-	<EstimatedTimeToThisWaypointFromPrevious>Geschätzte Zeit zwischen diesem und dem vorhergehenden Wegpunkt: {0}</EstimatedTimeToThisWaypointFromPrevious>
+	<EstimatedTimeToThisWaypoint>Geschätzte Reisezeit: {0}</EstimatedTimeToThisWaypoint>
+	<EstimatedTimeToThisWaypointFromPrevious>Geschätzte Reisezeit (vom letzten Wegpunkt): {0}</EstimatedTimeToThisWaypointFromPrevious>
+	<EstimatedTimeToTile>Geschätzte Reisezeit: {0}</EstimatedTimeToTile>
+	<ForagedFoodAmount>Menge der gesammelten Nahrung</ForagedFoodAmount>
 
 	<!-- Outfits -->
 	<OutfitAnything>Alles</OutfitAnything>
 	<OutfitWorker>Arbeiter</OutfitWorker>
 	<OutfitSoldier>Soldat</OutfitSoldier>
 	<OutfitNudist>Nudist</OutfitNudist>
-	
-  <!-- Hibernatable -->
-  <HibernatableHibernating>Tiefschlafmodus</HibernatableHibernating>
-  <HibernatableStartingUp>System fährt hoch</HibernatableStartingUp>
-  
+
+	<!-- Hibernatable -->
+	<HibernatableHibernating>Tiefschlafmodus</HibernatableHibernating>
+	<HibernatableStartingUp>System fährt hoch</HibernatableStartingUp>
+
 </LanguageData>

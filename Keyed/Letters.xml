@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
 
 	<JumpToLocation>Zum Ort springen</JumpToLocation>
@@ -15,6 +15,7 @@
 
 	<ColonyGoodwill>Ruf der Kolonie</ColonyGoodwill>
 	<Neutral>Neutral</Neutral>
+	<Death>Tod</Death>
 
 	<ShortCircuitRain>Der Regen hat bei dem Objekt '{0}' einen Kurzschluss verursacht und ein Feuer entfacht.</ShortCircuitRain>
 
@@ -29,8 +30,10 @@
 
 	<RecruitSuccess>{0} hat {1} erfolgreich angeworben ({2} Chance).</RecruitSuccess>
 	<RecruitFail>{0} konnte {1} nicht anwerben ({2} Chance).</RecruitFail>
-	
+
 	<RelatedPawnInvolvedInQuest>NAME ist {1} von {0}. Wenn NAME stirbt, wird {0} sehr lange um HIM trauern. Andererseits, wenn Du es schaffst NAME zu retten, wird {0} sehr lange sehr glücklich sein.</RelatedPawnInvolvedInQuest>
+	<DownedRefugee_CryingForHelp>Du hörst {0} um Hilfe rufen.</DownedRefugee_CryingForHelp>
+	<DownedRefugee_Radio>{0} kontaktiert dich über Funk. HECAP benötigt Hilfe.</DownedRefugee_Radio>
 
 	<LetterLabelBirthday>Geburtstag</LetterLabelBirthday>
 	<BirthdayChronological>{0} hat heute HISen Geburtstag! Biologisch ist {1} {3} Jahre alt. Chronologisch wurde {1} {2}.\n\nHinweis: Das chronologische Alter ist das biologische Alter plus der verbrachten Zeit in einer Kryptokapsel.</BirthdayChronological>
@@ -43,7 +46,7 @@
 	<PawnWasFormerlyColonist>{0} war früher aus Deiner Fraktion.</PawnWasFormerlyColonist>
 	<PawnHasTheseRelationshipsWithColonists>{0} hat diese Beziehungen zu Deinen Kolonisten:</PawnHasTheseRelationshipsWithColonists>
 	<PrisonerRescueTimeout>Das Lager wird nach {0} Tagen verschwinden. Wenn Du diese Gelegenheit verpasst, wirst Du vielleicht nie wieder etwas von {1} hören.</PrisonerRescueTimeout>
-	
+
 	<LetterLabelAncientShrineWarning>Antiker Schrein</LetterLabelAncientShrineWarning>
 	<AncientShrineWarning>Als {0} sich der antiken Wand nähert, überkommt HIM eine unheilvolle Vorahnung. HECAP ist sich nicht sicher, warum, aber HE spürt, dass sich in dieser verstaubten Ruine eine große Gefahr verbergen könnte.</AncientShrineWarning>
 
@@ -72,15 +75,22 @@
 	<MentalBreakLetterLabel>Zusammenbruch</MentalBreakLetterLabel>
 	<FinalStraw>Die Ursache, die das Fass überlaufen ließ war: {0}.</FinalStraw>
 
+	<ReadMore>Weiterlesen</ReadMore>
+	<LastEventsInLife>Die letzten Ereignisse im Leben von {0}:</LastEventsInLife>
+
 	<!-- Related pawns -->
 
 	<LetterLabelNoticedRelatedPawns>Verwandtschaft</LetterLabelNoticedRelatedPawns>
-	<LetterRelatedPawnsRaidEnemy>In der Gruppe von {0} sind Verwandte Deiner Kolonisten oder Gefangenen.\n\nBeachte aber, dass sie, auch wenn sie miteinander verwandt sind, aufgrund der schlechten Beziehungen zwischen ihren Fraktionen trotzdem gegeneinander Kämpfen werden.\n\nDiese Leute sind:</LetterRelatedPawnsRaidEnemy>
-	<LetterRelatedPawnsRaidFriendly>In der befreundeten Besuchergruppe der {0} sind Verwandte Deiner Kolonisten oder Gefangenen:</LetterRelatedPawnsRaidFriendly>
-	<LetterRelatedPawnsNeutralGroup>In der angekommenen Besuchergruppe sind Verwandte Deiner Kolonisten oder Gefangenen:</LetterRelatedPawnsNeutralGroup>
-	<LetterRelatedPawnsTradeShip>Der orbitale Händler bietet Verwandte Deiner Kolonisten oder Gefangenen an:</LetterRelatedPawnsTradeShip>
-	<LetterRelatedPawnsTradingWithSettlement>Die Siedlung bietet Verwandte Deiner Kolonisten oder Gefangenen an:</LetterRelatedPawnsTradingWithSettlement>
-	<LetterRelatedPawnsTradingWithOtherCaravan>Die Karawane bietet Verwandte Deiner Kolonisten oder Gefangenen an:</LetterRelatedPawnsTradingWithOtherCaravan>
+	<LetterRelatedPawnsRaidEnemy>In der Gruppe von {1} sind Verwandte deiner {0} oder Gefangenen.\n\nBeachte aber, dass sie, auch wenn sie miteinander verwandt sind, aufgrund der schlechten Beziehungen zwischen ihren Fraktionen trotzdem gegeneinander Kämpfen werden.\n\nDiese Leute sind:</LetterRelatedPawnsRaidEnemy>
+	<LetterRelatedPawnsRaidFriendly>In der befreundeten Besuchergruppe der {1} sind Verwandte deiner {0} oder Gefangenen:</LetterRelatedPawnsRaidFriendly>
+	<LetterRelatedPawnsNeutralGroup>In der angekommenen Besuchergruppe sind Verwandte deiner {0} oder Gefangenen:</LetterRelatedPawnsNeutralGroup>
+	<LetterRelatedPawnsTradeShip>Der orbitale Händler bietet Verwandte deiner {0} oder Gefangenen an:</LetterRelatedPawnsTradeShip>
+	<LetterRelatedPawnsTradingWithSettlement>Die Siedlung bietet Verwandte deiner {0} oder Gefangenen an:</LetterRelatedPawnsTradingWithSettlement>
+	<LetterRelatedPawnsTradingWithOtherCaravan>Die Karawane bietet Verwandte deiner {0} oder Gefangenen an:</LetterRelatedPawnsTradingWithOtherCaravan>
+	<LetterRelatedPawnsGroupGeneric>Es sind Verwandte deiner {0} oder Gefangenen in der Gruppe:</LetterRelatedPawnsGroupGeneric>
+	<LetterRelatedPawnsInMapWherePlayerLanded>Es sind Verwandte deiner {0} oder Gefangenen in dem Gebiet in dem Deine {0} gelandet sind.</LetterRelatedPawnsInMapWherePlayerLanded>
+	<LetterRelatedPawnsSettlement>Es sind Verwandte deiner {0} oder Gefangenen in dieser Siedlung:</LetterRelatedPawnsSettlement>
+	<LetterRelatedPawnsSite>Es sind Verwandte deiner {0} oder Gefangenen in diesem Gebiet:</LetterRelatedPawnsSite>
 
 	<RelationshipAppendedLetterSuffix>(Verwandtschaft)</RelationshipAppendedLetterSuffix>
 	<RelationshipAppendedLetterTextColonist>NAME ist ein Verwandter eines Kolonisten. HECAP ist {0}'s {1}.</RelationshipAppendedLetterTextColonist>
@@ -136,7 +146,8 @@
 
 	<!-- Formed caravan -->
 	<LetterLabelFormedCaravan>Karawane bereit</LetterLabelFormedCaravan>
-	<LetterFormedCaravan>Deine Karawane ist bereit aufzubrechen und erwartet weitere Befehle auf der Weltkarte.</LetterFormedCaravan>
+	<LetterFormedCaravan>Deine Karawane ist erstellt und reist jetzt auf der Weltkarte.</LetterFormedCaravan>
+	<LetterFormedCaravan_InitialOrders>Aktueller Befehl: {0}.</LetterFormedCaravan_InitialOrders>
 
 	<!-- Caravan destroyed -->
 	<LetterLabelAllCaravanColonistsDied>Karawane zerstört</LetterLabelAllCaravanColonistsDied>
@@ -168,32 +179,36 @@
 	<LetterLabelFoundPreciousLump>Wertvolle Mineralien gefunden</LetterLabelFoundPreciousLump>
 	<LetterFoundPreciousLump>Dein Langstrecken Mineralienscanner hat einen Klumpen wertvoller Mineralien in der Nähe gefunden.\n\nWir wissen aber nicht, wer oder was - wenn überhaupt - es bewacht.</LetterFoundPreciousLump>
 
-  
-  <!-- Sleeping mechanoids -->
-  <LetterLabelSleepingMechanoids>Schlafende Mechanoiden</LetterLabelSleepingMechanoids>
-  <LetterSleepingMechanoids>Ein paar feindliche Mechanoiden schlafen in diesem Gebiet.\n\nDie Mechanoiden können eventuell aufwachen, wenn Du in ihre Nähe kommst, also sei vorsichtig.</LetterSleepingMechanoids>
 
-  <!-- Ambush -->
-  <LetterLabelAmbushInExistingMap>Hinterhalt</LetterLabelAmbushInExistingMap>
-  <LetterAmbushInExistingMap>Deine {0} ist in einen Hinterhalt geraten!</LetterAmbushInExistingMap>
+	<!-- Sleeping mechanoids -->
+	<LetterLabelSleepingMechanoids>Schlafende Mechanoiden</LetterLabelSleepingMechanoids>
+	<LetterSleepingMechanoids>Ein paar feindliche Mechanoiden schlafen in diesem Gebiet.\n\nDie Mechanoiden können eventuell aufwachen, wenn Du in ihre Nähe kommst, also sei vorsichtig.</LetterSleepingMechanoids>
 
-  <!-- Peace talks -->
-  <LetterLabelPeaceTalks_Disaster>Friedensgespräche Katastrophe</LetterLabelPeaceTalks_Disaster>
-  <LetterPeaceTalks_Disaster>Die Friedensgespräche waren eine Katastrophe. Die Delegierten konnten kaum ihre einleitenden Grußworte vorbringen, als die Diskussion in Beleidigungen und Anschuldigungen zerbrach.\n\nNachdem Deine Karawane früh wieder aufgebrochen war, hatte sie {0} von {1} eingeholt und griff an!\n\nBeziehungen zu {1}: {2}.</LetterPeaceTalks_Disaster>
-  <LetterLabelPeaceTalks_Backfire>Friedensgespräche fehlgeschlagen</LetterLabelPeaceTalks_Backfire>
-  <LetterPeaceTalks_Backfire>Die Friedensgespräche sind gescheitert. Trotz dass Freundlichkeiten ausgetauscht wurden, konnten die Delegierten keinerlei Fortschritt bei grundlegenden Problemen erzielen, und mehrere Standpunkte wurden als Beleidigungen aufgefasst.\n\nBeziehungen zu {0}: {1}.</LetterPeaceTalks_Backfire>
-  <LetterLabelPeaceTalks_TalksFlounder>Friedensgespräche Stillstand</LetterLabelPeaceTalks_TalksFlounder>
-  <LetterPeaceTalks_TalksFlounder>Die Friedensgespräche sind nicht vorwärtsgekommen. Die Delegierten konnten sich klar und deutlich und respektvoll verständigen, schafften es aber nicht, irgendeinen Fortschritt bei den verschiedenen Problemen zu erreichen.\n\nDie Beziehungen zu {0} bleiben unverändert.</LetterPeaceTalks_TalksFlounder>
-  <LetterLabelPeaceTalks_Success>Friedensgespräche erfolgreich</LetterLabelPeaceTalks_Success>
-  <LetterPeaceTalks_Success>Die Friedensgespräche waren ein Erfolg. Die Delegierten haben ein neues einvernehmliches Verständnis bei mehreren grundlegenden Problemen erreicht.\n\nDie Beziehungen zu {0} haben sich um {1} verbessert.</LetterPeaceTalks_Success>
-  <LetterLabelPeaceTalks_Triumph>Friedensgespräche Triumph</LetterLabelPeaceTalks_Triumph>
-  <LetterPeaceTalks_Triumph>Die Friedensgespräche waren triumphal! Die Delegierten haben sofort auf einer persönlichen Ebene zueinander gefunden und konnten die Standpunkte beider Seiten problemlos erkennen, sodass es eine Leichtigkeit war, selbst bei den schwierigsten Problemen eine einvernehmliche Lösung zu finden.\n\nDie Beziehungen zu {0} haben sich um {1} verbessert.\n\nAls Deine Karawane aufbrach, hat {0} Dir ein Geschenk angeboten: {2}.</LetterPeaceTalks_Triumph>
-  <PeaceTalksSocialXPGain>Dein Unterhändler {0} hat {1} soziale Erfahrungspunkte gesammelt.</PeaceTalksSocialXPGain>
+	<!-- Ambush -->
+	<LetterLabelAmbushInExistingMap>Hinterhalt</LetterLabelAmbushInExistingMap>
+	<LetterAmbushInExistingMap>Deine {0} ist in einen Hinterhalt geraten!</LetterAmbushInExistingMap>
 
-  <!-- Run wild mental break -->
-  <LetterRunWildMentalBreak>{0} hat sich dazu entschlossen, Deine Fraktion zu verlassen und mit den Tieren zu leben.</LetterRunWildMentalBreak>
+	<!-- Peace talks -->
+	<LetterLabelPeaceTalks_Disaster>Friedensgespräche Katastrophe</LetterLabelPeaceTalks_Disaster>
+	<LetterPeaceTalks_Disaster>Die Friedensgespräche waren eine Katastrophe. Die Delegierten konnten kaum ihre einleitenden Grußworte vorbringen, als die Diskussion in Beleidigungen und Anschuldigungen zerbrach.\n\nNachdem Deine Karawane früh wieder aufgebrochen war, hatte sie {0} von {1} eingeholt und griff an!\n\nBeziehungen zu {1}: {2}.</LetterPeaceTalks_Disaster>
+	<LetterLabelPeaceTalks_Backfire>Friedensgespräche fehlgeschlagen</LetterLabelPeaceTalks_Backfire>
+	<LetterPeaceTalks_Backfire>Die Friedensgespräche sind gescheitert. Trotz dass Freundlichkeiten ausgetauscht wurden, konnten die Delegierten keinerlei Fortschritt bei grundlegenden Problemen erzielen, und mehrere Standpunkte wurden als Beleidigungen aufgefasst.\n\nBeziehungen zu {0}: {1}.</LetterPeaceTalks_Backfire>
+	<LetterLabelPeaceTalks_TalksFlounder>Friedensgespräche Stillstand</LetterLabelPeaceTalks_TalksFlounder>
+	<LetterPeaceTalks_TalksFlounder>Die Friedensgespräche sind nicht vorwärtsgekommen. Die Delegierten konnten sich klar und deutlich und respektvoll verständigen, schafften es aber nicht, irgendeinen Fortschritt bei den verschiedenen Problemen zu erreichen.\n\nDie Beziehungen zu {0} bleiben unverändert.</LetterPeaceTalks_TalksFlounder>
+	<LetterLabelPeaceTalks_Success>Friedensgespräche erfolgreich</LetterLabelPeaceTalks_Success>
+	<LetterPeaceTalks_Success>Die Friedensgespräche waren ein Erfolg. Die Delegierten haben ein neues einvernehmliches Verständnis bei mehreren grundlegenden Problemen erreicht.\n\nDie Beziehungen zu {0} haben sich um {1} verbessert.</LetterPeaceTalks_Success>
+	<LetterLabelPeaceTalks_Triumph>Friedensgespräche Triumph</LetterLabelPeaceTalks_Triumph>
+	<LetterPeaceTalks_Triumph>Die Friedensgespräche waren triumphal! Die Delegierten haben sofort auf einer persönlichen Ebene zueinander gefunden und konnten die Standpunkte beider Seiten problemlos erkennen, sodass es eine Leichtigkeit war, selbst bei den schwierigsten Problemen eine einvernehmliche Lösung zu finden.\n\nDie Beziehungen zu {0} haben sich um {1} verbessert.\n\nAls Deine Karawane aufbrach, hat {0} Dir ein Geschenk angeboten: {2}.</LetterPeaceTalks_Triumph>
+	<PeaceTalksSocialXPGain>Dein Unterhändler {0} hat {1} soziale Erfahrungspunkte gesammelt.</PeaceTalksSocialXPGain>
 
-  <!-- Catatonic mental break -->
-  <LetterCatatonicMentalBreak>{0} hat einen katatonischen Zusammenbruch, der mehrere Tage andauern wird.</LetterCatatonicMentalBreak>
+	<!-- Run wild mental break -->
+	<LetterRunWildMentalBreak>{0} hat sich dazu entschlossen, Deine Fraktion zu verlassen und mit den Tieren zu leben.</LetterRunWildMentalBreak>
 
+	<!-- Catatonic mental break -->
+	<LetterCatatonicMentalBreak>{0} hat einen katatonischen Zusammenbruch, der mehrere Tage andauern wird.</LetterCatatonicMentalBreak>
+
+  <LetterLabelAICoreOffer>KI Kern Angebot</LetterLabelAICoreOffer>
+  <LetterAICoreOffer>{0} von {1} kontaktiert dich mit einem Angebot zu folgender Information: \nDer Fundort eines KI Kerns, welchen du benötigst, wenn du ein Raumschiff bauen willst. Sie informieren dich, dass der Gegenstand sehr selten ist und normalerweise von ihren Besitzern sehr stark bewacht wird.\n\nRuf sie über die Funkanlage falls du interessiert bist.</LetterAICoreOffer>
+
+	
 </LanguageData>
