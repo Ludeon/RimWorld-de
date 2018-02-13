@@ -60,25 +60,25 @@
 	<Combat_MeleeIncludes.rulePack.rulesStrings.45>flavortextadverb->erbarmungslos</Combat_MeleeIncludes.rulePack.rulesStrings.45>
 	<Combat_MeleeIncludes.rulePack.rulesStrings.46>flavortextadverb->herzlos</Combat_MeleeIncludes.rulePack.rulesStrings.46>
 
-	<Combat_MeleeIncludes.rulePack.rulesStrings.47>flavortextsituation->in einer Explosion der Gedärme</Combat_MeleeIncludes.rulePack.rulesStrings.47>
-	<Combat_MeleeIncludes.rulePack.rulesStrings.48>flavortextsituation->hinterlässt eine üble Wunde</Combat_MeleeIncludes.rulePack.rulesStrings.48>
-	<Combat_MeleeIncludes.rulePack.rulesStrings.49>flavortextsituation->ohne jede Emotion</Combat_MeleeIncludes.rulePack.rulesStrings.49>
-	<Combat_MeleeIncludes.rulePack.rulesStrings.50>flavortextsituation->mit einem ausdruckslosen Gesicht</Combat_MeleeIncludes.rulePack.rulesStrings.50>
-	<Combat_MeleeIncludes.rulePack.rulesStrings.51>flavortextsituation->mit einem brutalen Gesichtsausdruck</Combat_MeleeIncludes.rulePack.rulesStrings.51>
-	<Combat_MeleeIncludes.rulePack.rulesStrings.52>flavortextsituation->mit einem [badassadjective] Ausdruck</Combat_MeleeIncludes.rulePack.rulesStrings.52>
-	<Combat_MeleeIncludes.rulePack.rulesStrings.53>flavortextsituation->mit einer Grimasse</Combat_MeleeIncludes.rulePack.rulesStrings.53>
-	<Combat_MeleeIncludes.rulePack.rulesStrings.54>flavortextsituation->mit einem Lachen auf den Lippen</Combat_MeleeIncludes.rulePack.rulesStrings.54>
-	<Combat_MeleeIncludes.rulePack.rulesStrings.55>flavortextsituation->mit einem Lächeln</Combat_MeleeIncludes.rulePack.rulesStrings.55>
+	<Combat_MeleeIncludes.rulePack.rulesStrings.47>flavortextsituation(recipient_flesh!=Mechanoid)->in einer Explosion der Gedärme</Combat_MeleeIncludes.rulePack.rulesStrings.47>
+	<Combat_MeleeIncludes.rulePack.rulesStrings.48>flavortextsituation(recipient_flesh==Mechanoid)->in einer Schrott-Explosion</Combat_MeleeIncludes.rulePack.rulesStrings.48>
+	<Combat_MeleeIncludes.rulePack.rulesStrings.49>flavortextsituation(p=0.4)->ohne jede Emotion</Combat_MeleeIncludes.rulePack.rulesStrings.49>
+	<Combat_MeleeIncludes.rulePack.rulesStrings.50>flavortextsituation(p=0.2,initiator_flesh==Normal)->mit einem ausdruckslosen Gesicht</Combat_MeleeIncludes.rulePack.rulesStrings.50>
+	<Combat_MeleeIncludes.rulePack.rulesStrings.51>flavortextsituation(p=0.2,initiator_flesh==Normal)->mit einem brutalen Gesichtsausdruck</Combat_MeleeIncludes.rulePack.rulesStrings.51>
+	<Combat_MeleeIncludes.rulePack.rulesStrings.52>flavortextsituation(p=0.2,initiator_flesh==Normal)->mit einem [badassadjective] Ausdruck</Combat_MeleeIncludes.rulePack.rulesStrings.52>
+	<Combat_MeleeIncludes.rulePack.rulesStrings.53>flavortextsituation(p=0.2,initiator_flesh==Normal)->mit einer Grimasse</Combat_MeleeIncludes.rulePack.rulesStrings.53>
+	<Combat_MeleeIncludes.rulePack.rulesStrings.54>flavortextsituation(p=0.2,initiator_flesh==Normal)->mit einem Lachen auf den Lippen</Combat_MeleeIncludes.rulePack.rulesStrings.54>
+	<Combat_MeleeIncludes.rulePack.rulesStrings.55>flavortextsituation(p=0.2,initiator_flesh==Normal)->mit einem Lächeln</Combat_MeleeIncludes.rulePack.rulesStrings.55>
 
 	<Combat_MeleeIncludes.rulePack.rulesStrings.56>flavortextconsequence->lässt [recipient_objective] [painevent] [wince]</Combat_MeleeIncludes.rulePack.rulesStrings.56>
 	<Combat_MeleeIncludes.rulePack.rulesStrings.57>flavortextconsequence(p=0.2)->wirft [recipient_objective] aus dem Gleichgewicht</Combat_MeleeIncludes.rulePack.rulesStrings.57>
 
-	<Combat_MeleeIncludes.rulePack.rulesStrings.58>wince->zusammenzucken</Combat_MeleeIncludes.rulePack.rulesStrings.58>
-	<Combat_MeleeIncludes.rulePack.rulesStrings.59>wince->eine Grimasse schneiden</Combat_MeleeIncludes.rulePack.rulesStrings.59>
-	<Combat_MeleeIncludes.rulePack.rulesStrings.60>wince->erschaudern</Combat_MeleeIncludes.rulePack.rulesStrings.60>
-	<Combat_MeleeIncludes.rulePack.rulesStrings.61>wince->stöhnen</Combat_MeleeIncludes.rulePack.rulesStrings.61>
-	<Combat_MeleeIncludes.rulePack.rulesStrings.62>wince->schreien</Combat_MeleeIncludes.rulePack.rulesStrings.62>
-	<Combat_MeleeIncludes.rulePack.rulesStrings.63>wince->aufschreien</Combat_MeleeIncludes.rulePack.rulesStrings.63>
+	<Combat_MeleeIncludes.rulePack.rulesStrings.58>wince(recipient_flesh==Normal)->zusammenzucken</Combat_MeleeIncludes.rulePack.rulesStrings.58>
+	<Combat_MeleeIncludes.rulePack.rulesStrings.59>wince(recipient_flesh==Normal)->eine Grimasse schneiden</Combat_MeleeIncludes.rulePack.rulesStrings.59>
+	<Combat_MeleeIncludes.rulePack.rulesStrings.60>wince(recipient_flesh==Normal)->erschaudern</Combat_MeleeIncludes.rulePack.rulesStrings.60>
+	<Combat_MeleeIncludes.rulePack.rulesStrings.61>wince(recipient_flesh==Normal)->stöhnen</Combat_MeleeIncludes.rulePack.rulesStrings.61>
+	<Combat_MeleeIncludes.rulePack.rulesStrings.62>wince(recipient_flesh!=Mechanoid)->schreien</Combat_MeleeIncludes.rulePack.rulesStrings.62>
+	<Combat_MeleeIncludes.rulePack.rulesStrings.63>wince(recipient_flesh!=Mechanoid)->aufschreien</Combat_MeleeIncludes.rulePack.rulesStrings.63>
 	<Combat_MeleeIncludes.rulePack.rulesStrings.64>wince->zucken</Combat_MeleeIncludes.rulePack.rulesStrings.64>
 	<Combat_MeleeIncludes.rulePack.rulesStrings.65>wince->stolpern</Combat_MeleeIncludes.rulePack.rulesStrings.65>
 
@@ -86,9 +86,9 @@
 	<Combat_MeleeIncludes.rulePack.rulesStrings.67>painstate->wegen der</Combat_MeleeIncludes.rulePack.rulesStrings.67>
 	<Combat_MeleeIncludes.rulePack.rulesStrings.68>painstate->aufgrund der</Combat_MeleeIncludes.rulePack.rulesStrings.68>
 
-	<Combat_MeleeIncludes.rulePack.rulesStrings.69>painevent->[painstate] Schmerzen</Combat_MeleeIncludes.rulePack.rulesStrings.69>
-	<Combat_MeleeIncludes.rulePack.rulesStrings.70>painevent->[painstate] starken Schmerzen</Combat_MeleeIncludes.rulePack.rulesStrings.70>
-	<Combat_MeleeIncludes.rulePack.rulesStrings.71>painevent->[painstate] Qual</Combat_MeleeIncludes.rulePack.rulesStrings.71>
+	<Combat_MeleeIncludes.rulePack.rulesStrings.69>painevent(recipient_flesh!=Mechanoid)->[painstate] Schmerzen</Combat_MeleeIncludes.rulePack.rulesStrings.69>
+	<Combat_MeleeIncludes.rulePack.rulesStrings.70>painevent(recipient_flesh!=Mechanoid)->[painstate] starken Schmerzen</Combat_MeleeIncludes.rulePack.rulesStrings.70>
+	<Combat_MeleeIncludes.rulePack.rulesStrings.71>painevent(recipient_flesh==Normal)->[painstate] Qual</Combat_MeleeIncludes.rulePack.rulesStrings.71>
 	<Combat_MeleeIncludes.rulePack.rulesStrings.72>painevent->aufgrund der Verletzung</Combat_MeleeIncludes.rulePack.rulesStrings.72>
 	<Combat_MeleeIncludes.rulePack.rulesStrings.73>painevent->wegen der Wunde</Combat_MeleeIncludes.rulePack.rulesStrings.73>
 
@@ -170,21 +170,22 @@
 	<Combat_Hit.rulePack.rulesStrings.1>logentry(p=0.1)->[initiator_nameShortDef] [damaged_past] [recipient_nameShortDef] in der [recipient_part0_label] [flavortextadverb].</Combat_Hit.rulePack.rulesStrings.1>
 	<Combat_Hit.rulePack.rulesStrings.2>logentry(p=0.1)->[initiator_nameShortDef] [damaged_past] [recipient_nameShortDef] in der [recipient_part0_label] [flavortextsituation].</Combat_Hit.rulePack.rulesStrings.2>
 	<Combat_Hit.rulePack.rulesStrings.3>logentry(p=0.1)->[initiator_nameShortDef] [damaged_past] [recipient_nameShortDef] in der [recipient_part0_label], [flavortextconsequence].</Combat_Hit.rulePack.rulesStrings.3>
-	<Combat_Hit.rulePack.rulesStrings.4>logentry(p=0.4)->[initiator_nameShortDef], trägt [initiator_possessive] [weapon_label] [expertly], [flavortextadverb] [damaged_past] [recipient_nameShortDef] in der [recipient_part0_label].</Combat_Hit.rulePack.rulesStrings.4>
+	<Combat_Hit.rulePack.rulesStrings.4>logentry(p=0.07)->[initiator_definite], trägt [initiator_possessive] [weapon_label] [expertly], [damaged_past] [recipient_definite] in der [recipient_part0_label].</Combat_Hit.rulePack.rulesStrings.4>
+	<Combat_Hit.rulePack.rulesStrings.5>logentry(p=0.05)->[initiator_nameShortDef], trägt [initiator_possessive] [weapon_label] [expertly], [flavortextadverb] [damaged_past] [recipient_nameShortDef] in der [recipient_part0_label].</Combat_Hit.rulePack.rulesStrings.5>
 
 	<!-- combined high priority, if we destroyed something -->
-	<Combat_Hit.rulePack.rulesStrings.5>logentry(p=0.3)->[initiator_nameShortDef] [destroyed_past] [destroyed_targets] von [recipient_nameShortDef].</Combat_Hit.rulePack.rulesStrings.5>
-	<Combat_Hit.rulePack.rulesStrings.6>logentry(p=0.3)->[initiator_nameShortDef] [destroyed_past] [destroyed_targets] von [recipient_nameShortDef] [destroyed_suffix].</Combat_Hit.rulePack.rulesStrings.6>
-	<Combat_Hit.rulePack.rulesStrings.7>logentry(p=0.3)->[initiator_nameShortDef] [destroyed_past] [destroyed_targets] von [recipient_nameShortDef] [expertly].</Combat_Hit.rulePack.rulesStrings.7>
-	<Combat_Hit.rulePack.rulesStrings.8>logentry(p=0.3)->[initiator_nameShortDef] [destroyed_past] [destroyed_targets] von [recipient_nameShortDef] mit [implement].</Combat_Hit.rulePack.rulesStrings.8>
+	<Combat_Hit.rulePack.rulesStrings.6>logentry(p=0.3)->[initiator_nameShortDef] [destroyed_past] [destroyed_targets] von [recipient_nameShortDef].</Combat_Hit.rulePack.rulesStrings.6>
+	<Combat_Hit.rulePack.rulesStrings.7>logentry(p=0.3)->[initiator_nameShortDef] [destroyed_past] [destroyed_targets] von [recipient_nameShortDef] [destroyed_suffix].</Combat_Hit.rulePack.rulesStrings.7>
+	<Combat_Hit.rulePack.rulesStrings.8>logentry(p=0.3)->[initiator_nameShortDef] [destroyed_past] [destroyed_targets] von [recipient_nameShortDef] [expertly].</Combat_Hit.rulePack.rulesStrings.8>
+	<Combat_Hit.rulePack.rulesStrings.9>logentry(p=0.3)->[initiator_nameShortDef] [destroyed_past] [destroyed_targets] von [recipient_nameShortDef] mit [implement].</Combat_Hit.rulePack.rulesStrings.9>
 
-	<Combat_Hit.rulePack.rulesStrings.9>result(p=1,recipient_part_damaged_count==0)->[destroyed_present] [recipient_possessive] [destroyed_targets]</Combat_Hit.rulePack.rulesStrings.9>
-	<Combat_Hit.rulePack.rulesStrings.10>result(p=1,recipient_part_destroyed_count==0)->[damaged_present] [recipient_possessive] [damaged_targets]</Combat_Hit.rulePack.rulesStrings.10>
-	<Combat_Hit.rulePack.rulesStrings.11>result(p=1)->[destroyed_present] [recipient_possessive] [destroyed_targets] und [damaged_present] [recipient_possessive] [damaged_targets]</Combat_Hit.rulePack.rulesStrings.11>
-	<Combat_Hit.rulePack.rulesStrings.12>action(p=0.3)->[initiator_nameShortDef] [damaged_present] [recipient_nameShortDef] mit [implement]</Combat_Hit.rulePack.rulesStrings.12>
-	<Combat_Hit.rulePack.rulesStrings.13>action(p=0.3)->[initiator_nameShortDef] benutzt [implement] um [damaged_inf] [recipient_nameShortDef]</Combat_Hit.rulePack.rulesStrings.13>
-	<Combat_Hit.rulePack.rulesStrings.14>action->[initiator_nameShortDef] [damaged_past] [recipient_nameShortDef] mit [implement]</Combat_Hit.rulePack.rulesStrings.14>
-	<Combat_Hit.rulePack.rulesStrings.15>action(p=0.6)->[initiator_definite] [damaged_past] [recipient_definite]</Combat_Hit.rulePack.rulesStrings.15>
+	<Combat_Hit.rulePack.rulesStrings.10>result(p=1,recipient_part_damaged_count==0)->[destroyed_present] [recipient_possessive] [destroyed_targets]</Combat_Hit.rulePack.rulesStrings.10>
+	<Combat_Hit.rulePack.rulesStrings.11>result(p=1,recipient_part_destroyed_count==0)->[damaged_present] [recipient_possessive] [damaged_targets]</Combat_Hit.rulePack.rulesStrings.11>
+	<Combat_Hit.rulePack.rulesStrings.12>result(p=1)->[destroyed_present] [recipient_possessive] [destroyed_targets] und [damaged_present] [recipient_possessive] [damaged_targets]</Combat_Hit.rulePack.rulesStrings.12>
+	<Combat_Hit.rulePack.rulesStrings.13>action(p=0.3)->[initiator_nameShortDef] [damaged_present] [recipient_nameShortDef] mit [implement]</Combat_Hit.rulePack.rulesStrings.13>
+	<Combat_Hit.rulePack.rulesStrings.14>action(p=0.3)->[initiator_nameShortDef] benutzt [implement] um [damaged_inf] [recipient_nameShortDef]</Combat_Hit.rulePack.rulesStrings.14>
+	<Combat_Hit.rulePack.rulesStrings.15>action->[initiator_nameShortDef] [damaged_past] [recipient_nameShortDef] mit [implement]</Combat_Hit.rulePack.rulesStrings.15>
+	<Combat_Hit.rulePack.rulesStrings.16>action(p=0.6)->[initiator_definite] [damaged_past] [recipient_definite]</Combat_Hit.rulePack.rulesStrings.16>
 
 
 
@@ -233,22 +234,9 @@
 
 	<Combat_Dodge.rulePack.rulesStrings.0>logentry(p=0.2)->[recipient_nameShortDef] wich [initiator_nameShortDef]'s [damaged_inf] mit [implement] aus.</Combat_Dodge.rulePack.rulesStrings.0>
 
-	<Combat_Dodge.rulePack.rulesStrings.1>result->aber [recipient_nameShortDef] sprang aus dem Weg</Combat_Dodge.rulePack.rulesStrings.1>
+	<Combat_Dodge.rulePack.rulesStrings.1>result->aber [recipient_nameShortDef] sprang aus zur Seite</Combat_Dodge.rulePack.rulesStrings.1>
 	<Combat_Dodge.rulePack.rulesStrings.2>result->aber wurde von der Finte von [recipient_nameShortDef] getäuscht</Combat_Dodge.rulePack.rulesStrings.2>
 	<Combat_Dodge.rulePack.rulesStrings.3>result->aber dem Angriff wurde geschickt ausgewichen</Combat_Dodge.rulePack.rulesStrings.3>
-
-
-
-
-
-	<Combat_RangedIncludes.rulePack.rulesStrings.0>initiator_definite->[initiator_labelDefinite]</Combat_RangedIncludes.rulePack.rulesStrings.0>
-	<Combat_RangedIncludes.rulePack.rulesStrings.1>initiator_definite->[initiator_nameShortDef]</Combat_RangedIncludes.rulePack.rulesStrings.1>
-
-	<Combat_RangedIncludes.rulePack.rulesStrings.2>recipient_definite->[recipient_labelDefinite]</Combat_RangedIncludes.rulePack.rulesStrings.2>
-	<Combat_RangedIncludes.rulePack.rulesStrings.3>recipient_definite->[recipient_nameShortDef]</Combat_RangedIncludes.rulePack.rulesStrings.3>
-
-	<Combat_RangedIncludes.rulePack.rulesStrings.4>originalTarget_definite->[originalTarget_labelDefinite]</Combat_RangedIncludes.rulePack.rulesStrings.4>
-	<Combat_RangedIncludes.rulePack.rulesStrings.5>originalTarget_definite->[originalTarget_nameShortDef]</Combat_RangedIncludes.rulePack.rulesStrings.5>
 
 
 
