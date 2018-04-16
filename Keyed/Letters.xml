@@ -8,10 +8,10 @@
 	<LetterLabelFirstSummerWarning>Sommer</LetterLabelFirstSummerWarning>
 	<FirstSummerWarning>Der Sommer hat begonnen! Aber der Winter naht.\n\nDeine Ernte wird der Winterkälte nicht lange standhalten können. Stell sicher, Nahrung für mehrere Monate einzulagern, solange Du noch kannst.\n\nDu kannst einen begehbaren Kühlraum bauen, um die Haltbarkeit der Nahrung zu erhöhen.\n\nFür Deine Kolonisten kannst Du dicke Kleidung, wie z. B. Parkas, kaufen, stehlen oder herstellen, um sie vor der Kälte zu schützen.</FirstSummerWarning>
 
-	<RelationsBrokenDown>Die Beziehung zur Fraktion '{0}' hat sich verschlechtert. Sie sind nun Deine Feinde.</RelationsBrokenDown>
-	<RelationsWarmed>Die Beziehung zur Fraktion '{0}' hat sich verbessert. Sie sind nicht mehr Deine Feinde.</RelationsWarmed>
-
-	<RelationsBrokenCapture>Die Fraktion '{1}' sind nun Deine Feinde, weil Du {0} gefangen hast.</RelationsBrokenCapture>
+	<LetterRelationsChange_Hostile>Die Beziehungen zur Fraktion '{0}' haben sich verschlechtert. Sie sind jetzt deine Feinde.\n\nSie werden regelmäßig Angriffe auf deine Kolonie und Karavanen starten und sich weigern mit dir zu handeln. Wenn du die Beziehungen verbessern willst, kannst du ihnen noch immer Geschenke mit einer Karavane oder Transportkapsel zukommen lassen.\n\nDas passierte, da dein Ruf ({1}) unter {2} gefallen ist. Um wieder neutral zu werden, muss dein Ruf wieder auf {3} ansteigen.</LetterRelationsChange_Hostile>
+	<LetterRelationsChange_NeutralFromHostile>Die Beziehungen zur Fraktion '{0}' haben sich verbessert. Sie sehen dich jetzt als neutrale Fraktion an und werden dich nicht mehr angreifen.\n\nDas passierte, da dein Ruf ({1}) über den Wert {2} angestiegen ist. Wenn das Ruf unter {3} fällt, wird {0} wieder feindlich werden. Wenn es über {4} steigt, werden sie deine Verbündeten und kämpfen für dich.</LetterRelationsChange_NeutralFromHostile>
+	<LetterRelationsChange_NeutralFromAlly>Die Beziehungen zur Fraktion '{0}' haben sich verschlechtert. Sie sehen dich jetzt nur noch als neutrale Fraktion anstatt eines Verbündeten an.\n\nObwohl sie weiterhin friedlich mit dir interagieren werden, werden sie keine weiteren Kämpfer zu deiner Unterstützung schicken.\n\nDas passierte, da dein Ruf ({1}) unter den Wert von {2} gefallen ist. Wenn das Ruf unter {3} fällt, wird {0} dir gegenüber Feindlich werden. Wenn das Ruf über {4} steigt, sehen sie dich wieder als ihren Verbündeten an.</LetterRelationsChange_NeutralFromAlly>
+	<LetterRelationsChange_Ally>Die Beziehungen zur Fraktion '{0}' haben sich verbessert. Sie sehen dich jetzt als ihren Verbündeten an.\n\nVerbündete kommen dir ab und zu zur Hilfe wenn du angegriffen wirst. Du kannst sie auch jederzeit um Hilfe bitte, das kostet dich allerdings etwas Ruf.\n\nIhr wurdet Verbündete, da dein Ruf ({1}) über {2} gestiegen ist. Wenn das Ruf unter {3} fällt, wirst du nur noch als neutrale Fraktion angesehen.</LetterRelationsChange_Ally>
 
 	<ColonyGoodwill>Ruf der Kolonie</ColonyGoodwill>
 	<Neutral>Neutral</Neutral>
@@ -42,6 +42,8 @@
 	<LetterLabelNewDisease>Krankheit</LetterLabelNewDisease>
 	<NewDisease>{0} ist an {1} erkrankt.\nStelle sicher, dass Du ein Krankenbett und einen Arzt hast. Sorge dafür, dass {2} eine vernünftige Behandlung bekommt und so viel Zeit wie möglich im Bett verbringt, um sich schnell zu erholen.</NewDisease>
 	<NewPartDisease>{0} ist an {3} erkrankt. Die Infektion ist in HISem {1}.\nStelle sicher, dass Du ein Krankenbett und einen Arzt hast. Sorge dafür, dass {2} eine vernünftige Behandlung bekommt und so viel Zeit wie möglich im Bett verbringt, um sich schnell zu erholen.</NewPartDisease>
+	<NewDiseaseAnimal>{0} ist an {1} erkrankt.</NewDiseaseAnimal>
+	<NewPartDiseaseAnimal>{0} ist an {3} in HISem {1} erkrankt.</NewPartDiseaseAnimal>
 
 	<PawnWasFormerlyColonist>{0} war früher aus Deiner Fraktion.</PawnWasFormerlyColonist>
 	<PawnHasTheseRelationshipsWithColonists>{0} hat diese Beziehungen zu Deinen Kolonisten:</PawnHasTheseRelationshipsWithColonists>
@@ -73,7 +75,8 @@
 	<LetterLeaderChanged>{0} ist nicht länger {3} von {1}.\n\nNeuer {3} ist {2}.</LetterLeaderChanged>
 
 	<MentalBreakLetterLabel>Zusammenbruch</MentalBreakLetterLabel>
-	<FinalStraw>Die Ursache, die das Fass überlaufen ließ war: {0}.</FinalStraw>
+	<FinalStraw>Die Ursache, die das Fass überlaufen ließ war: {0}</FinalStraw>
+	<LastFactionRelationsEvent>Das letzte Ereignis war</LastFactionRelationsEvent>
 
 	<ReadMore>Weiterlesen</ReadMore>
 	<LastEventsInLife>Die letzten Ereignisse im Leben von {0}:</LastEventsInLife>
@@ -111,8 +114,10 @@
 
 	<!-- Generalized letter labels -->
 
-	<LetterLabelRelationsChangeGood>Ruf (positiv)</LetterLabelRelationsChangeGood>
-	<LetterLabelRelationsChangeBad>Ruf (negativ)</LetterLabelRelationsChangeBad>
+	<LetterLabelRelationsChange_Hostile>Feindlich: {0}</LetterLabelRelationsChange_Hostile>
+	<LetterLabelRelationsChange_Ally>Verbündet: {0}</LetterLabelRelationsChange_Ally>
+	<LetterLabelRelationsChange_NeutralFromHostile>Feindlich, jetzt neutral: {0}</LetterLabelRelationsChange_NeutralFromHostile>
+	<LetterLabelRelationsChange_NeutralFromAlly>Verbündet, jetzt neutral: {0}</LetterLabelRelationsChange_NeutralFromAlly>
 	<LetterLabelShortCircuit>Zzztt...</LetterLabelShortCircuit>
 	<LetterLabelMentalBreakdown>Nervenzusammenbruch</LetterLabelMentalBreakdown>
 
@@ -144,14 +149,9 @@
 	<LetterLabelDrugBinge>{0}-Exzess</LetterLabelDrugBinge>
 	<LetterDrugBinge>{0} gibt sich die Droge {1}.</LetterDrugBinge>
 
-	<!-- Formed caravan -->
-	<LetterLabelFormedCaravan>Karawane bereit</LetterLabelFormedCaravan>
-	<LetterFormedCaravan>Deine Karawane ist erstellt und reist jetzt auf der Weltkarte.</LetterFormedCaravan>
-	<LetterFormedCaravan_InitialOrders>Aktueller Befehl: {0}.</LetterFormedCaravan_InitialOrders>
-
 	<!-- Caravan destroyed -->
 	<LetterLabelAllCaravanColonistsDied>Karawane zerstört</LetterLabelAllCaravanColonistsDied>
-	<LetterAllCaravanColonistsDied>Alle Mitglieder Deiner Karawane sind gestorben.</LetterAllCaravanColonistsDied>
+	<LetterAllCaravanColonistsDied>Alle Mitglieder von {0} sind gestorben.</LetterAllCaravanColonistsDied>
 
 	<!-- Caravan entered ambush map -->
 	<LetterLabelCaravanEnteredAmbushMap>Karawane ist beim Hinterhalt angekommen</LetterLabelCaravanEnteredAmbushMap>
@@ -160,16 +160,15 @@
 	<!-- Caravan entered enemy base -->
 	<LetterLabelCaravanEnteredEnemyBase>Angriff hat begonnen</LetterLabelCaravanEnteredEnemyBase>
 	<LetterCaravanEnteredEnemyBase>{0} ist bei {1} angekommen und bereit für den Angriff.</LetterCaravanEnteredEnemyBase>
-	<LetterCaravanEnteredEnemyBaseBecameHostile>{0} ist bei {1} angekommen und bereit für den Angriff.\n\nAufgrund Deiner feindlichen Ankunft ist Dir {2} jetzt feindlich gesinnt.</LetterCaravanEnteredEnemyBaseBecameHostile>
+
+	<!-- Transport pods landed in enemy base -->
+	<LetterLabelTransportPodsLandedInEnemyBase>Angriff hat begonnen</LetterLabelTransportPodsLandedInEnemyBase>
+	<LetterTransportPodsLandedInEnemyBase>Deine Transportkapseln sind bei {0} angekommen.</LetterTransportPodsLandedInEnemyBase>
 
 	<!-- Faction base defeated -->
-	<LetterLabelFactionBaseDefeated>Außenposten zerstört</LetterLabelFactionBaseDefeated>
-	<LetterFactionBaseDefeated>Der gegnerische Außenposten {0} wurde zerstört.\n\nDu hast jetzt {1} Stunden, um brauchbare Gegenstände einzusammeln, bevor sich Deine Leute wieder sammeln und ihre Karawane regruppieren.</LetterFactionBaseDefeated>
+	<LetterLabelFactionBaseDefeated>Basis zerstört</LetterLabelFactionBaseDefeated>
+	<LetterFactionBaseDefeated>Die gegnerische Basis {0} wurde zerstört.\n\nIn {1} wird die Karawane automatisch wieder aufbrechen. \nDu kannst die Karawane auch jetzt schon aufbrechen lassen, indem du auf der Weltkarte die zerstörte Basis markierst und die Option "Karavane zusammenstellen" auswählst.</LetterFactionBaseDefeated>
 	<LetterFactionBaseDefeated_FactionDestroyed>Das war die letzte Basis von {0}. Das bedeutet, dass es diese Fraktion nicht mehr gibt.</LetterFactionBaseDefeated_FactionDestroyed>
-
-	<!-- Pawns lost due to map countdown -->
-	<LetterLabelPawnsLostDueToMapCountdown>Zurückgelassen</LetterLabelPawnsLostDueToMapCountdown>
-	<LetterPawnsLostDueToMapCountdown>Einige Deiner Tiere oder Gefangenen wurden in der Wildnis zurückgelassen:\n\n{0}</LetterPawnsLostDueToMapCountdown>
 
 	<!-- Quest completed -->
 	<LetterLabelDefeatAllEnemiesQuestCompleted>Aufgabe abgeschlossen</LetterLabelDefeatAllEnemiesQuestCompleted>
@@ -202,13 +201,39 @@
 	<PeaceTalksSocialXPGain>Dein Unterhändler {0} hat {1} soziale Erfahrungspunkte gesammelt.</PeaceTalksSocialXPGain>
 
 	<!-- Run wild mental break -->
-	<LetterRunWildMentalBreak>{0} hat sich dazu entschlossen, Deine Fraktion zu verlassen und mit den Tieren zu leben.</LetterRunWildMentalBreak>
+	<LetterRunWildMentalBreak>{0} hat genug von der Zivilisation.\n\nHECAP hat erkannt, dass wilde Tiere immer frei sind. Aus diesem Grund hat HE sich entschieden deine Fraktion zu verlassen und bei den wilden Tieren zu leben.\n\nDu kannst versuchen HIM zu zähmen um HIM wieder zurück zu bekommen.</LetterRunWildMentalBreak>
 
 	<!-- Catatonic mental break -->
-	<LetterCatatonicMentalBreak>{0} hat einen katatonischen Zusammenbruch, der mehrere Tage andauern wird.</LetterCatatonicMentalBreak>
+	<LetterCatatonicMentalBreak>{0} hat einen kompletten Nervenzusammenbruch und ist in einem katatonischen Zustand. HECAP wird sich in ein paar Tagen davon erholen.</LetterCatatonicMentalBreak>
 
-  <LetterLabelAICoreOffer>KI Kern Angebot</LetterLabelAICoreOffer>
-  <LetterAICoreOffer>{0} von {1} kontaktiert dich mit einem Angebot zu folgender Information: \nDer Fundort eines KI Kerns, welchen du benötigst, wenn du ein Raumschiff bauen willst. Sie informieren dich, dass der Gegenstand sehr selten ist und normalerweise von ihren Besitzern sehr stark bewacht wird.\n\nRuf sie über die Funkanlage falls du interessiert bist.</LetterAICoreOffer>
+	<LetterLabelAICoreOffer>KI Kern Angebot</LetterLabelAICoreOffer>
+	<LetterAICoreOffer>{0} von {1} kontaktiert dich mit einem Angebot zu folgender Information: \nDer Fundort eines KI Kerns, welchen du benötigst, wenn du ein Raumschiff bauen willst. Sie informieren dich, dass der Gegenstand sehr selten ist und normalerweise von ihren Besitzern sehr stark bewacht wird.\n\nRuf sie über die Funkanlage falls du interessiert bist.</LetterAICoreOffer>
 
-	
+
+	<LetterCraftedLegendaryLabel>Legendäre Arbeit</LetterCraftedLegendaryLabel>
+	<LetterCraftedLegendaryMessage>{0} hat {1} hergestellt.\n\nNachricht von diesem wertvollen Artifakt wird um die Welt gehen.</LetterCraftedLegendaryMessage>
+
+	<!-- Pawns lost because map closed -->
+	<LetterLabelPawnsLostBecauseMapClosed>Karawane verloren</LetterLabelPawnsLostBecauseMapClosed>
+	<LetterPawnsLostBecauseMapClosed>Deine Karawane ging verloren. Die folgenden Personen und Tiere sind mit ihr verloren gegangen</LetterPawnsLostBecauseMapClosed>
+
+	<!-- Hibernate complete -->
+	<LetterLabelHibernateComplete>Reaktor einsatzbereit</LetterLabelHibernateComplete>
+	<LetterHibernateComplete>Charlon Whitestone hat die Sequenz zum Hochfahren des Reaktors abgeschlossen. Er ist jetzt bereit einen Start zu versorgen.</LetterHibernateComplete>
+	<LetterHibernateCompleteStandalone>Die Sequenz zum Hochfahren des Reaktors ist abgeschlossen. Er ist jetzt bereit einen Start zu versorgen.</LetterHibernateCompleteStandalone>
+
+	<!-- Visitors gave gift -->
+	<LetterLabelVisitorsGaveGift>Geschenk</LetterLabelVisitorsGaveGift>
+	<LetterVisitorsGaveGift>Da es euch nicht so gut geht, helfen wir ein wenig aus.</LetterVisitorsGaveGift>
+
+	<!-- Faction base proximity -->
+	<LetterLabelFactionBaseProximity>Nähe zur Basis einer Fraktion</LetterLabelFactionBaseProximity>
+	<LetterFactionBaseProximity>Da du so nahe an {0} bist, sieht {1} das als Übergriff auf ihr Land an.\n\nFür das letzte Quadrum hat sich dein Ruf bei ihnen um {2} verschlechtert.</LetterFactionBaseProximity>
+
+	<!-- Caravans battlefield victory -->
+	<LetterLabelCaravansBattlefieldVictory>Karawanenkampf gewonnen</LetterLabelCaravansBattlefieldVictory>
+	<LetterCaravansBattlefieldVictory>Deine Karawane hat den Kampf gewonnen.\n\nDie Karawane wird sich in {0} automatisch neu formieren. \nDu kannst die Karawane auch jetzt schon aufbrechen lassen, indem du auf der Weltkarte die zerstörte Basis markierst und die Option "Karavane zusammenstellen" auswählst.</LetterCaravansBattlefieldVictory>
+
+
+
 </LanguageData>

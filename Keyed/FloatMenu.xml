@@ -32,6 +32,7 @@
 	<NotInHomeArea>nicht in Heimgebiet</NotInHomeArea>
 	<BurningLower>brennt</BurningLower>
 	<NoEmptyPlaceLower>kein freier, erreichbarer Lagerplatz</NoEmptyPlaceLower>
+	<NoMergeTarget>Kein Stapel zum Hinzufügen verfügbar</NoMergeTarget>
 	<AlreadyFilledLower>bereits aufgefüllt</AlreadyFilledLower>
 	<MissingMaterials>kein Material</MissingMaterials>
 	<MissingSkill>Fertigkeit zu gering</MissingSkill>
@@ -136,10 +137,11 @@
 	<EnterMap>Betritt {0}</EnterMap>
 	<VisitSettlement>Besuche {0}</VisitSettlement>
 	<VisitPeaceTalks>Besuche {0}</VisitPeaceTalks>
-	<VisitSite>Besuche {0}</VisitSite>
 	<VisitEscapeShip>Besuche {0}</VisitEscapeShip>
-	<AttackSite>Greife {0} an</AttackSite>
 	<AttackSettlement>Greife {0} an</AttackSettlement>
+	<ApproachSite>Kontaktiere {0}</ApproachSite>
+	<ApproachingSite>Kontaktiere {0}</ApproachingSite>
+	<OfferGifts>Biete Geschenke</OfferGifts>
 
 	<!-- Specific thing interactions -->
 
@@ -154,13 +156,16 @@
 
 	<CannotMissingHealthActivities>Nicht priorisiert ausführbar (kann nicht {0})</CannotMissingHealthActivities>
 
+
 	<CannotGenericAlreadyAm>{0} erfolgt bereits bei {1}</CannotGenericAlreadyAm>
 
 	<CannotPrioritizeWorkTypeDisabled>Nicht priorisiert ausführbar (kann nie ein {0} sein)</CannotPrioritizeWorkTypeDisabled>
 
 	<CannotPrioritizeWorkGiverDisabled>Nicht priorisiert ausführbar (wird nicht {0})</CannotPrioritizeWorkGiverDisabled>
+	<WillNever>wird nicht {0}</WillNever>
 
 	<CannotPrioritizeNotAssignedToWorkType>Nicht priorisiert ausführbar (ist kein {0})</CannotPrioritizeNotAssignedToWorkType>
+	<NotAssigned>nicht zugewiesen</NotAssigned>
 
 	<CannotPrioritizeResearch>Nicht priorisiert ausführbar (Forschung erfolgt langfristig)</CannotPrioritizeResearch>
 
@@ -173,6 +178,8 @@
 
 	<DropAtEdge>Lande am Rand</DropAtEdge>
 	<DropInCenter>Lande in Mitte</DropInCenter>
+	<AttackAndDropAtEdge>Angriff auf {0}: Im Randgebiet landen</AttackAndDropAtEdge>
+	<AttackAndDropInCenter>Angriff auf {0}: Im Zentrum landen</AttackAndDropInCenter>
 
 	<VomitingLower>übergibt sich</VomitingLower>
 	<NotInterruptibleLower>kann nicht unterbrochen werden</NotInterruptibleLower>
@@ -186,5 +193,12 @@
 	<ForbidAllItems>Verbiete alle Gegenstände</ForbidAllItems>
 	<UnforbidAllItems>Erlaube alle Gegenstände</UnforbidAllItems>
 	<RearmAllTraps>Alle Fallen reaktivieren</RearmAllTraps>
+
+	<!-- Transport pods -->
+	<LandInExistingMap>Zoome heran und wähle einen Landeplatz in {0}</LandInExistingMap>
+	<TransportPodsContentsWillBeLost>Der Inhalt geht verloren</TransportPodsContentsWillBeLost>
+	<FormCaravanHere>Erstelle hier eine Karavane</FormCaravanHere>
+	<GiveToCaravan>Gib an {0}</GiveToCaravan>
+	<GiveGiftViaTransportPods>Gib als Geschenk an {0} ({1})</GiveGiftViaTransportPods>
 
 </LanguageData>

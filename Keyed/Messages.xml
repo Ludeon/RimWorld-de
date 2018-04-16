@@ -35,7 +35,7 @@
 
 	<MessageOutOfNearbyShellsFor>{0} hat keine verfügbaren Geschosse für {1} in der Nähe gefunden.</MessageOutOfNearbyShellsFor>
 
-	<MessageAnimalsGoPsychoHunted>Achtung: {0} werden oft angreifen, wenn sie verletzt werden.</MessageAnimalsGoPsychoHunted>
+	<MessageAnimalsGoPsychoHunted>Achtung: {0} werden oft angreifen, wenn sie verletzt werden.({1} Chance bei Gewehrreichweite, höher wenn näher)</MessageAnimalsGoPsychoHunted>
 	<MessageAnimalManhuntsOnTameFailed>Warnung: {0} können angreifen, wenn das Zähmen fehlschlägt ({1} Chance).</MessageAnimalManhuntsOnTameFailed>
 
 	<LetterLabelMessageRecruitSuccess>Neuer Rekrut</LetterLabelMessageRecruitSuccess>
@@ -57,7 +57,7 @@
 	<MessageMustDesignateHuntable>Muss jagdbaren Tieren zugewiesen sein.</MessageMustDesignateHuntable>
 	<MessageMustDesignateTameable>Muss zähmbaren Tieren zugewiesen sein.</MessageMustDesignateTameable>
 	<MessageMustDesignateClaimable>Muss aufgegebenen künstlichen Strukturen zugewiesen sein.</MessageMustDesignateClaimable>
-	<MessageMustDesignateSmoothableFloor>Muss rauem Steinboden zugewiesen sein.</MessageMustDesignateSmoothableFloor>
+	<MessageMustDesignateSmoothableSurface>Muss rauer Steinoberfläche zugewiesen sein.</MessageMustDesignateSmoothableSurface>
 
 	<MessageNothingCanRemoveThickRoofs>Höhlendecken können nicht entfernt werden.</MessageNothingCanRemoveThickRoofs>
 	<MessageAlreadyInStorage>Das ist bereits im Lager und wird bei Bedarf in ein anderes mit höherer Priorität verlegt werden.</MessageAlreadyInStorage>
@@ -87,8 +87,6 @@
 	<MessageMedicalOperationFailureFatal>{0} hat bei der Operation an {1} einen fatalen Fehler aufgrund der besonderen Herausforderungen begangen: {2}</MessageMedicalOperationFailureFatal>
 
 	<MessageMedicalOperationWillAngerFaction>Diese Operation wird {0} verärgern.</MessageMedicalOperationWillAngerFaction>
-
-	<MessagePawnExitMapRelationsGain>Die Beziehung zur Fraktion '{1}' hat sich um {2} verbessert, da {0} die Karte im gesunden Zustand verlassen hat.</MessagePawnExitMapRelationsGain>
 
 	<MessageMiscarriedStarvation>{0} hatte aufgrund des Hungers eine Fehlgeburt.</MessageMiscarriedStarvation>
 	<MessageMiscarriedPoorHealth>{0} hatte aufgrund der schlechten Gesundheit eine Fehlgeburt.</MessageMiscarriedPoorHealth>
@@ -173,20 +171,15 @@
 	<MessageCaravanEnteredWorldObject>{0} ist bei {1} angekommen.</MessageCaravanEnteredWorldObject>
 
 	<MessagePawnLeftMapAndCreatedCaravan>{0} hat das Gebiet verlassen und eine Karawane gebildet.</MessagePawnLeftMapAndCreatedCaravan>
+	<MessagePawnLeftMapAndCreatedCaravan_AnimalsWantToJoin>Deine Tiere schließen sich ihr an.</MessagePawnLeftMapAndCreatedCaravan_AnimalsWantToJoin>
 
 	<MessageSettledInExistingMap>Du hast erfolgreich eine neue Siedlung gegründet.</MessageSettledInExistingMap>
-
-	<MessageAmbushVictory>Sieg! In {0} werden Deine Kolonisten automatisch eine neue Karawane bilden. Du kannst sie auch sofort in der Welt-Ansicht neu bilden.</MessageAmbushVictory>
 
 	<MessageAutomaticallyReformedCaravan>Deine Kolonisten haben eine neue Karawane gebildet und sind bereit zum Aufbruch.</MessageAutomaticallyReformedCaravan>
 
 	<MessageOldWoundHealed>Aufgrund von {0}, wurde {1} HISe {2} geheilt.</MessageOldWoundHealed>
 
 	<MessageRescueeJoined>Da Du {0} gerettet hast, schließt HE sich Deiner Gruppe an!</MessageRescueeJoined>
-
-	<MessageAttackedCaravanIsNowHostile>Aufgrund Deines Angriffs auf die Karawane von {0} ist Dir diese Fraktion jetzt feindlich gesinnt.</MessageAttackedCaravanIsNowHostile>
-	<MessageFactionPawnCrushed>{0} verloren Leute wegen einem eingestürztem Dach. Beziehung zur Fraktion: {1}</MessageFactionPawnCrushed>
-	<MessageFactionPawnLost>{0} hat {1} verloren. Beziehung zur Fraktion: {2}</MessageFactionPawnLost>
 
 	<MessageTransporterUnreachable>Einige Transportkapseln können nicht erreicht werden.</MessageTransporterUnreachable>
 	<MessageTransportersNotAdjacent>Alle Abschussrampen der ausgewählten Transportkapseln müssen nebeneinander stehen.</MessageTransportersNotAdjacent>
@@ -198,8 +191,7 @@
 
 	<MessageTransportPodsArrived>Deine Transportkapseln sind angekommen.</MessageTransportPodsArrived>
 	<MessageTransportPodsArrivedAndLost>Deine Transportkapseln sind angekommen, aber da keine Kolonisten an Bord waren, ist der Inhalt verloren.</MessageTransportPodsArrivedAndLost>
-	<MessageTransportPodsArrivedAndAddedToCaravan>Deine Transportkapseln sind angekommen. Der Inhalt wurde der Karawane hinzugefügt.</MessageTransportPodsArrivedAndAddedToCaravan>
-	<MessageTransportPodsArrived_BecameHostile>{0} ist Dir jetzt feindlich gesinnt.</MessageTransportPodsArrived_BecameHostile>
+	<MessageTransportPodsArrivedAndAddedToCaravan>Deine Transportkapseln sind angekommen. Der Inhalt wurde {0} hinzugefügt.</MessageTransportPodsArrivedAndAddedToCaravan>
 
 	<MessageFailedToLoadTransportersBecauseColonistLost>Der Beladevorgang wurde abgebrochen, da ein Kolonist verloren ging.</MessageFailedToLoadTransportersBecauseColonistLost>
 
@@ -217,7 +209,7 @@
 
 	<MessageSlaughteringBondedAnimal>Da es HIS Haustier ist, wird das Schlachten von {0} {1} unglücklich machen.</MessageSlaughteringBondedAnimal>
 
-	<MessageCaravanRunOutOfFood>{0} hat keine Nahrung mehr ({1}).</MessageCaravanRunOutOfFood>
+	<MessageCaravanRanOutOfFood>{0} hat keine Nahrung mehr ({1}).</MessageCaravanRanOutOfFood>
 
 	<MessageSelectOwnBaseToFormCaravan>Um eine Karawane zu formieren, wähle Deine Kolonie aus.</MessageSelectOwnBaseToFormCaravan>
 
@@ -278,5 +270,44 @@
 	<MessageCaravanFormedWithCustomAction>Karawane erstellt. Befehle: {0}.</MessageCaravanFormedWithCustomAction>
 
 	<MessageBlockedHediff>{0} blockiert {1} auf: {2}.</MessageBlockedHediff>
+
+	<MessageCraftedMasterwork>{0} hat {1} hergestellt.</MessageCraftedMasterwork>
+
+	<MessagePlayerTriedToLeaveMapViaExitGrid>Um das Gebiet zu verlassen, verwende 'Erstelle Karawane' in der Weltkarte.</MessagePlayerTriedToLeaveMapViaExitGrid>
+
+	<MessageGoodwillChanged>Beziehungen zu {0} haben sich von {1} zu {2} geändert.</MessageGoodwillChanged>
+	<MessageGoodwillChangedWithReason>Beziehungen zu {0} haben sich von {1} zu {2}({3}) geändert.</MessageGoodwillChangedWithReason>
+	<GoodwillChangedReason_AttackedPawn>griff {0} an</GoodwillChangedReason_AttackedPawn>
+	<GoodwillChangedReason_UsedItem>verwendete {0} auf {1}</GoodwillChangedReason_UsedItem>
+	<GoodwillChangedReason_RemovedBodyPart>erntete {0}</GoodwillChangedReason_RemovedBodyPart>
+	<GoodwillChangedReason_CapturedPawn>fing {0}</GoodwillChangedReason_CapturedPawn>
+	<GoodwillChangedReason_PawnCrushed>{0} erschlug</GoodwillChangedReason_PawnCrushed>
+	<GoodwillChangedReason_PawnDied>{0} starb</GoodwillChangedReason_PawnDied>
+	<GoodwillChangedReason_Traded>handelte</GoodwillChangedReason_Traded>
+	<GoodwillChangedReason_AttackedCaravan>griff eine Karawane an</GoodwillChangedReason_AttackedCaravan>
+	<GoodwillChangedReason_NaturallyOverTime>naürliche Tendenz um im Laufe der Zeit {0} zu erreichen</GoodwillChangedReason_NaturallyOverTime>
+	<GoodwillChangedReason_ExitedMapHealthy>{0} hat das Gebiet gesund verlassen</GoodwillChangedReason_ExitedMapHealthy>
+	<GoodwillChangedReason_Tended>versorgte {0}</GoodwillChangedReason_Tended>
+	<GoodwillChangedReason_ReceivedGift>empfing ein Geschenk</GoodwillChangedReason_ReceivedGift>
+	<GoodwillChangedReason_FulfilledTradeRequest>hat ein Handelsangebot erfüllt</GoodwillChangedReason_FulfilledTradeRequest>
+
+	<MessageGiftGivenButNotAppreciated>{0} nahmen das Geschenk an, würdigen es aber nicht.</MessageGiftGivenButNotAppreciated>
+
+	<MessageCantGiveGiftBecauseCantCarryEncumbered>Die Karawane ist schon überladen und kann nicht noch mehr transportieren.</MessageCantGiveGiftBecauseCantCarryEncumbered>
+	<MessageCantGiveGiftBecauseCantCarry>Die Karawane kann so viel nicht transportieren. Die Geschenke wiegen {0} aber die Karawane kann nur noch {1} aufnehmen.</MessageCantGiveGiftBecauseCantCarry>
+
+	<MessageFormedCaravan>{0} ist erstellt und reist jetzt auf der Weltkarte.</MessageFormedCaravan>
+	<MessageFormedCaravan_InitialOrders>Anfängliche Befehle</MessageFormedCaravan_InitialOrders>
+
+	<MessageBillValidationStoreZoneDeleted>{1}'s "{0}" kann nicht zu einem entfernten Lager {2} liefern.</MessageBillValidationStoreZoneDeleted>
+	<MessageBillValidationStoreZoneUnavailable>{1}'s "{0}" kann nicht zu einem nicht verfügbarem Lager {2} liefern.</MessageBillValidationStoreZoneUnavailable>
+	<MessageBillValidationPawnUnavailable>{0} kann nicht mehr an "{1}" bei {2} arbeiten. Die Beschränkung wurde entfernt.</MessageBillValidationPawnUnavailable>
+	<MessageBillValidationIncludeZoneDeleted>{1}'s "{0}" kann die Anzahl der Gegenstände in einem entfernten Lager {2} nicht zählen.</MessageBillValidationIncludeZoneDeleted>
+	<MessageBillValidationIncludeZoneUnavailable>{1}'s "{0}" kann die Anzahl der Gegenstände in einem nicht verfügbaren Lager {2} nicht zählen.</MessageBillValidationIncludeZoneUnavailable>
+
+	<MessageAnimalReturnedWild>Da die Zähmung nicht mehr erneuert wurde, ist {0} wieder verwildert.</MessageAnimalReturnedWild>
+	<MessageAnimalLostSkill>Aufgrund fehlendem Erhaltungstraining, hat {0} eine Fähigkeit verloren: {1}</MessageAnimalLostSkill>
+
+	<MessageTranslationReportSaved>Übersetzungsreport wurde erstellt in {0}</MessageTranslationReportSaved>
 
 </LanguageData>

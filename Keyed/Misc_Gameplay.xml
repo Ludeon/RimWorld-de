@@ -28,7 +28,10 @@
 
 	<DevelopedImmunityLower>wurde immun</DevelopedImmunityLower>
 	<NeedsTendingNow>Behandlung ist jetzt notwendig</NeedsTendingNow>
+	<CanTendNow>Kann jetzt behandelt werden</CanTendNow>
+	<TreatmentExpiresIn>Behandlung erlischt in {0}</TreatmentExpiresIn>
 	<NextTendIn>Nächste Behandlung in {0}</NextTendIn>
+	<TendQuality>Behandlungsqualität</TendQuality>
 	<MissingMedicalBillIngredient>keine {0}</MissingMedicalBillIngredient>
 	<Immunity>Immunität</Immunity>
 	<Race>Rasse</Race>
@@ -39,6 +42,7 @@
 	<ThingInfo>Information</ThingInfo>
 	<DropThing>Fallen lassen</DropThing>
 	<Rename>Umbenennen</Rename>
+	<RenameAnimal>Tier umbenennen</RenameAnimal>
 	<RenameColonist>Kolonist umbenennen</RenameColonist>
 	<UnknownLower>unbekannt</UnknownLower>
 	<On>An</On>
@@ -98,8 +102,9 @@
 	<CaravanVisiting>Besucht {0}</CaravanVisiting>
 	<CaravanEntering>Betritt {0}</CaravanEntering>
 	<CaravanAttacking>Attackiert {0}</CaravanAttacking>
-	<WasWornByCorpse>Wurde von einer Leiche getragen.</WasWornByCorpse>
-	<WornByCorpseChar>T</WornByCorpseChar>
+	<CaravanOfferingGifts>Bietet Geschenke an {0}.</CaravanOfferingGifts>
+	<WasWornByCorpse>Verunreinigt da von einer Leiche getragen.</WasWornByCorpse>
+	<WornByCorpseChar>V</WornByCorpseChar>
 	<DeterioratingUnroofed>nicht überdacht</DeterioratingUnroofed>
 	<DeterioratingOutdoors>im Freien</DeterioratingOutdoors>
 	<DeterioratingBecauseOf>Verrottet weil</DeterioratingBecauseOf>
@@ -127,19 +132,18 @@
 	<QuestTargetDestroyInspectString>{0} will das zerstört sehen.\n    Belohnung: {1}.</QuestTargetDestroyInspectString>
 	<WorldObjectTimeout>Verbleibende Zeit: {0}</WorldObjectTimeout>
 	<LongRangeMineralScannerEfficiency>Effizienz: {0}</LongRangeMineralScannerEfficiency>
-	<ItemStashContents>Beinhaltet: {0}.</ItemStashContents>
-	<SomeItemStashContents>Ein Teil des Inhalts: {0}.</SomeItemStashContents>
+	<ItemStashContents>Beinhaltet: {0}</ItemStashContents>
+	<SomeItemStashContents>Ein Teil des Inhalts: {0}</SomeItemStashContents>
 	<ClickToSortByThisColumn>Klick um nach dieser Spalte zu sortieren.</ClickToSortByThisColumn>
 	<WorkPriorityShiftClickTip>Umschalt + Klick: Erhöhe Priorität\nUmschalt + Rechtsklick: Reduziere Priorität</WorkPriorityShiftClickTip>
 	<WorkPriorityShiftClickEnableDisableTip>Umschalt + Klick: Aktiviere Alle\nUmschalt + Rechtsklick: Deaktiviere Alle</WorkPriorityShiftClickEnableDisableTip>
 	<AllowedAreaShiftClickTip>Umschalt + Klick: Alle auf Heimat setzen\nUmschalt + Rechtsklick: Alle auf Unbegrenzt setzen</AllowedAreaShiftClickTip>
 	<CheckboxShiftClickTip>Umschalt + Klick: Alle Auswählen\nUmschalt + Rechtsklick: Alle Abwählen</CheckboxShiftClickTip>
-	<KnownSiteThreat>Bedrohung: {0}.</KnownSiteThreat>
-	<KnownSiteThreats>Bedrohungen: {0}.</KnownSiteThreats>
-	<KnownSiteThreatsNone>Bedrohungen: keine.</KnownSiteThreatsNone>
+	<KnownSiteThreat>Bedrohung: {0}</KnownSiteThreat>
+	<KnownSiteThreats>Bedrohungen: {0}</KnownSiteThreats>
+	<KnownSiteThreatsNone>Bedrohungen: Ohne</KnownSiteThreatsNone>
 	<SkillRequirements>Benötigte Fähigkeiten</SkillRequirements>
 	<Products>Erzeugnisse</Products>
-	<DeepDrillExhausted>Tiefenbohrer Rohstoffe erschöpft, Bohrer wird automatisch verboten. Wieder erlauben um mit dem Abbau von {0} zu beginnen.</DeepDrillExhausted>
 	<Relationship>{0} von {1}</Relationship>
 	<Prisoner>Gefangener</Prisoner>
 	<Refugee>Flüchtling</Refugee>
@@ -155,6 +159,14 @@
 	<MovementDifficultyOffsetInWinter>{0} im Winter</MovementDifficultyOffsetInWinter>
 	<RangeTo>bis</RangeTo>
 	<NoDietCategoryLetter>Keine Nachricht</NoDietCategoryLetter>
+	<ExpiresIn>Läuft ab in</ExpiresIn>
+	<CaravanLeaderCaravanName>Karawane von {0}</CaravanLeaderCaravanName>
+	<Reason>Grund</Reason>
+	<RelationsWith>Beziehungen mit {0}</RelationsWith>
+	<capturedBy>gefangen von {0}</capturedBy>
+	<yourCaravan>deine Karawane</yourCaravan>
+	<CreatureWildness>{0} Wildheit</CreatureWildness>
+	<CreatureTrainability>{0} Trainierbarkeit</CreatureTrainability>
 
 
 	<!-- Fermentation barrel -->
@@ -191,10 +203,8 @@
 	<NoRoof>Kein Dach</NoRoof>
 	<SnowClear>Schnee räumen</SnowClear>
 	<AreaDefaultLabel>Gebiet {0}</AreaDefaultLabel>
-	<AreaAnimalDefaultLabel>Tiergebiet {0}</AreaAnimalDefaultLabel>
 	<NoAreaAllowed>Unbegrenzt</NoAreaAllowed>
 	<NewArea>Neues Gebiet</NewArea>
-	<NewAreaAnimal>Neues Tiergebiet</NewAreaAnimal>
 	<InvertArea>Invertieren</InvertArea>
 
 	<!-- Control -->
@@ -333,7 +343,6 @@
 	<Indoors>Innen</Indoors>
 	<IndoorsUnroofed>Kein Dach</IndoorsUnroofed>
 	<Outdoors>Im Freien</Outdoors>
-	<OutdoorsLower>im Freien</OutdoorsLower>
 
 	<!-- Rotting -->
 
@@ -345,6 +354,7 @@
 
 	<ShotBy>{0}'s Trefferchance</ShotBy>
 	<CannotHit>Kann das Ziel nicht treffen.</CannotHit>
+	<ManhunterPerHit>Menschenjäger-Chance pro Treffer</ManhunterPerHit>
 
 	<!-- Rotting -->
 
@@ -400,9 +410,11 @@
 	<!-- Buttons -->
 	<ShowLearningHelperWhenEmptyToggleButton>Schalte die Sichtbarkeit der Lernhilfe ein/aus, wenn sie leer ist.\n\nDie Lernhilfe ist immer sichtbar, wenn es ein aktives Lernkonzept gibt. Diese Einstellung lässt sie verschwinden, solange keine Aufgabe aktiv ist.</ShowLearningHelperWhenEmptyToggleButton>
 	<ZoneVisibilityToggleButton>Schalte die Sichtbarkeit der Zonen ein/aus.</ZoneVisibilityToggleButton>
-	<ShowEnvironmentToggleButton>Schalte die Umgebungsanzeige ein/aus.\n\nZeigt das Aussehen der Welt in Zahlen, wie ein Kolonist es sehen würde, wenn er an der Position des Mauszeigers steht.</ShowEnvironmentToggleButton>
+	<ShowBeautyToggleButton>Schalte die Aussehensanzeige ein/aus.\n\nZeigt das Aussehen der Welt in Zahlen, wie ein Kolonist es sehen würde, wenn er an der Position des Mauszeigers steht.</ShowBeautyToggleButton>
+	<ShowRoomStatsToggleButton>Schalte die Raum Statusanzeige ein/aus.\n\nZeigt die Statusanzeige des Raumes auf den der Mauszeiger zeigt.</ShowRoomStatsToggleButton>
 	<ShowColonistBarToggleButton>Schalte die Kolonistenanzeige ein/aus.\n\nZeigt Bilder und den Grundzustand aller Kolonisten am oberen Bildschirmrand an.</ShowColonistBarToggleButton>
 	<AutoHomeAreaToggleButton>Schalte das automatische Erweitern des Heimgebietes bei neuen Konstruktionen ein/aus.</AutoHomeAreaToggleButton>
+	<AutoRebuildButton>Schalte das automatische wiederaufbauen von zerstörten Strukturen ein/aus.</AutoRebuildButton>
 	<CategorizedResourceReadoutToggleButton>Schalte die kategorisierte Rohstoffanzeige ein/aus.</CategorizedResourceReadoutToggleButton>
 	<ShowAnimalNamesToggleButton>Schalte die Anzeige der Tiernamen bei benannten zahmen Tieren ein/aus.</ShowAnimalNamesToggleButton>
 	<ShowRoofOverlayToggleButton>Schalte die Markierung von Dächern ein/aus.</ShowRoofOverlayToggleButton>
@@ -438,6 +450,7 @@
 	<MustPlaceVentWithFreeSpaces>Beide Seiten müssen frei sein, damit die Luft hindurchströmen kann.</MustPlaceVentWithFreeSpaces>
 	<MustPlaceAdjacentStandable>Beim Platzieren darf keine Seite blockiert sein.</MustPlaceAdjacentStandable>
 	<MustPlaceNearFuelingPort>Muss am Tankstutzen einer Abschussrampe platziert werden.</MustPlaceNearFuelingPort>
+	<MustPlaceOnDrillable>Muss auf abbaubaren Rohstoffen plaziert werden.</MustPlaceOnDrillable>
 
 	<!-- Wind Turbine -->
 
@@ -458,10 +471,11 @@
 	<ShipReportNoFullPods>Keine der Kryptoschlafkapseln ist belegt.</ShipReportNoFullPods>
 	<ShipReportHibernating>Komponenten im Tiefschlafmodus</ShipReportHibernating>
 	<ShipReportNotReady>Komponenten noch nicht bereit</ShipReportNotReady>
-	<HibernateWarning>Charlon Whitestone ist bereit, die Aktivierungssequenz des Reaktors einzuleiten.\n\nEr warnt Dich, dass die Startup-Prozedur 15 Tage dauern kann und die Energiesignatur über weite Entfernungen messbar sein wird. Diese Art von Energiesignatur deutet auf interstellare Raumflugfähigkeit hin und wird ganze Gruppen von verzweifelten Räubern und Schatzsuchern anlocken. Stell sicher, dass Deine Verteidigung steht, bevor Du die Systeme hochfährst.</HibernateWarning>
+	<HibernateWarning>Charlon Whitestone ist bereit, die Aktivierungssequenz des Reaktors einzuleiten.\n\nEr warnt Dich, dass die Startup-Prozedur 15 Tage dauern kann und die Energiesignatur über weite Entfernungen messbar sein wird. \nDiese Art von Energiesignatur deutet auf interstellare Raumflugfähigkeit hin und wird ganze Gruppen von verzweifelten Räubern und Schatzsuchern anlocken. \nStell sicher, dass Deine Verteidigung steht, bevor Du die Systeme hochfährst.</HibernateWarning>
 
-	<HibernateCompleteLabel>Reaktor einsatzbereit</HibernateCompleteLabel>
-	<HibernateComplete>Charlon Whitestone hat die Tiefschlafwecksequenz des Reaktors beendet. Er ist jetzt bereit den Start einzuleiten.</HibernateComplete>
+	<HibernateWarningStandalone>Der Reaktor ist bereit hochgefahren zu werden.\n\nDie Startup-Prozedur kann 15 Tage dauern und die Energiesignatur wird über weite Entfernungen messbar sein. \nDiese Art von Energiesignatur deutet auf interstellare Raumflugfähigkeit hin und wird ganze Gruppen von verzweifelten Räubern und Schatzsuchern anlocken. \nStell sicher, dass Deine Verteidigung steht, bevor Du die Systeme hochfährst.</HibernateWarningStandalone>
+	<HibernateWarningPacifist>Charlon Whitestone ist bereit, die Aktivierungssequenz des Reaktors einzuleiten. Er warnt dich, dass die Startup-Prozedur 15 Tage dauern kann.</HibernateWarningPacifist>
+	<HibernateWarningStandalonePacifist>Der Reaktor ist bereit hochgefahren zu werden. Der Prozess wird ca 15 Tage dauern.</HibernateWarningStandalonePacifist>
 
 
 	<!-- Neurotrainer -->
@@ -557,6 +571,9 @@
 	<!-- Deep drill -->
 	<ProgressToNextLump>Mit dem nächsten Klumpen weitermachen</ProgressToNextLump>
 	<ResourceBelow>Rohstoffe unterhalb</ResourceBelow>
+	<DeepDrillNoResources>Keine Rohstoffe unter Gebäude.</DeepDrillNoResources>
+	<DeepDrillExhausted>Die Rohstoffe des Tiefenbohrers sind erschöpt, die Arbeit am Bohrer wird automatisch verboten. Wieder erlauben um mit dem Abbau von {0} zu beginnen.</DeepDrillExhausted>
+	<DeepDrillExhaustedNoFallback>Die Rohstoffe des Tiefenbohrers sind erschöpt.</DeepDrillExhaustedNoFallback>
 
 	<!-- Learning helper -->
 	<LearningHelper>Lernhelfer</LearningHelper>
@@ -591,5 +608,9 @@
 	<!-- Hibernatable -->
 	<HibernatableHibernating>Tiefschlafmodus</HibernatableHibernating>
 	<HibernatableStartingUp>System fährt hoch</HibernatableStartingUp>
+
+	<!-- Transport pods -->
+	<ClickToSeeAvailableOrders_WorldObject>{0}: Zeige verfügbare Aufträge...</ClickToSeeAvailableOrders_WorldObject>
+	<ClickToSeeAvailableOrders_Empty>Zeige verfügbare Aufträge...</ClickToSeeAvailableOrders_Empty>
 
 </LanguageData>
