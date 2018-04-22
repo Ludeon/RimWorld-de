@@ -289,7 +289,34 @@
 
 
 
+	<Combat_RangedFire_Thrown.rulePack.rulesStrings.0>logentry->[initiator_definite] [threw] [initiator_possessive] [weapon_projectile_label] auf [recipient_definite].</Combat_RangedFire_Thrown.rulePack.rulesStrings.0>
+	<Combat_RangedFire_Thrown.rulePack.rulesStrings.1>logentry->[initiator_definite] [threw_a] [weapon_projectile_label] auf [recipient_definite].</Combat_RangedFire_Thrown.rulePack.rulesStrings.1>
+	<Combat_RangedFire_Thrown.rulePack.rulesStrings.2>logentry(recipient_missing==True)->[initiator_definite] [threw] [initiator_possessive] [weapon_projectile_label].</Combat_RangedFire_Thrown.rulePack.rulesStrings.2>
+	<Combat_RangedFire_Thrown.rulePack.rulesStrings.3>logentry(recipient_missing==True)->[initiator_definite] [threw_a] [weapon_projectile_label].</Combat_RangedFire_Thrown.rulePack.rulesStrings.3>
 
+	<Combat_RangedFire_Thrown.rulePack.rulesStrings.4>threw_a->[threwadverb] [threwverb] ein</Combat_RangedFire_Thrown.rulePack.rulesStrings.4>
+	<Combat_RangedFire_Thrown.rulePack.rulesStrings.5>threw_a(p=2)->[threwverb] ein</Combat_RangedFire_Thrown.rulePack.rulesStrings.5>
+
+	<Combat_RangedFire_Thrown.rulePack.rulesStrings.6>threw(p=2)->[threwverb]</Combat_RangedFire_Thrown.rulePack.rulesStrings.6>
+	<Combat_RangedFire_Thrown.rulePack.rulesStrings.7>threw->[threwadverb] [threwverb]</Combat_RangedFire_Thrown.rulePack.rulesStrings.7>
+
+	<Combat_RangedFire_Thrown.rulePack.rulesStrings.8>threwverb->warf</Combat_RangedFire_Thrown.rulePack.rulesStrings.8>
+	<Combat_RangedFire_Thrown.rulePack.rulesStrings.9>threwverb->schleuderte</Combat_RangedFire_Thrown.rulePack.rulesStrings.9>
+	<Combat_RangedFire_Thrown.rulePack.rulesStrings.10>threwverb->schmiss</Combat_RangedFire_Thrown.rulePack.rulesStrings.10>
+
+	<Combat_RangedFire_Thrown.rulePack.rulesStrings.11>threwadverb->sorgfältig</Combat_RangedFire_Thrown.rulePack.rulesStrings.11>
+	<Combat_RangedFire_Thrown.rulePack.rulesStrings.12>threwadverb->schnell</Combat_RangedFire_Thrown.rulePack.rulesStrings.12>
+	<Combat_RangedFire_Thrown.rulePack.rulesStrings.13>threwadverb->genau</Combat_RangedFire_Thrown.rulePack.rulesStrings.13>
+	<Combat_RangedFire_Thrown.rulePack.rulesStrings.14>threwadverb->absichtlich</Combat_RangedFire_Thrown.rulePack.rulesStrings.14>
+	<Combat_RangedFire_Thrown.rulePack.rulesStrings.15>threwadverb(initiator_flesh!=Mechanoid)->vorsichtig</Combat_RangedFire_Thrown.rulePack.rulesStrings.15>
+	<Combat_RangedFire_Thrown.rulePack.rulesStrings.16>threwadverb->präzise</Combat_RangedFire_Thrown.rulePack.rulesStrings.16>
+	<Combat_RangedFire_Thrown.rulePack.rulesStrings.17>threwadverb(initiator_flesh!=Mechanoid)->vosichtig</Combat_RangedFire_Thrown.rulePack.rulesStrings.17>
+
+	<Combat_RangedFire_Thrown.rulePack.rulesStrings.18>threwadjective->sorgfältig</Combat_RangedFire_Thrown.rulePack.rulesStrings.18>
+	<Combat_RangedFire_Thrown.rulePack.rulesStrings.19>threwadjective->schnell</Combat_RangedFire_Thrown.rulePack.rulesStrings.19>
+	<Combat_RangedFire_Thrown.rulePack.rulesStrings.20>threwadjective->absichtlich</Combat_RangedFire_Thrown.rulePack.rulesStrings.20>
+	<Combat_RangedFire_Thrown.rulePack.rulesStrings.21>threwadjective->präzise</Combat_RangedFire_Thrown.rulePack.rulesStrings.21>
+	<Combat_RangedFire_Thrown.rulePack.rulesStrings.22>threwadjective(initiator_flesh!=Mechanoid)->vosichtig</Combat_RangedFire_Thrown.rulePack.rulesStrings.22>
 
 
 
@@ -379,33 +406,32 @@
 	<Combat_RangedMiss.rulePack.rulesStrings.7>missed->flog weit übers Ziel</Combat_RangedMiss.rulePack.rulesStrings.7>
 	<Combat_RangedMiss.rulePack.rulesStrings.8>missed->flog hoch in die Luft</Combat_RangedMiss.rulePack.rulesStrings.8>
 	<Combat_RangedMiss.rulePack.rulesStrings.9>missed->grub sich in den Boden</Combat_RangedMiss.rulePack.rulesStrings.9>
-	<Combat_RangedMiss.rulePack.rulesStrings.10>missed->prallte von der Deckung von [originalTarget_definite] ab</Combat_RangedMiss.rulePack.rulesStrings.10>
-	<Combat_RangedMiss.rulePack.rulesStrings.11>missed->prallte vom Boden ab und ging verloren</Combat_RangedMiss.rulePack.rulesStrings.11>
-	<Combat_RangedMiss.rulePack.rulesStrings.12>missed->schlug ein Loch in den Boden</Combat_RangedMiss.rulePack.rulesStrings.12>
-	<Combat_RangedMiss.rulePack.rulesStrings.13>missed(p=0.2)->verfehlte [originalTarget_definite] um wenige Millimeter</Combat_RangedMiss.rulePack.rulesStrings.13>
-	<Combat_RangedMiss.rulePack.rulesStrings.14>missed->verfehlte [originalTarget_definite] um einige Zentimeter</Combat_RangedMiss.rulePack.rulesStrings.14>
-	<Combat_RangedMiss.rulePack.rulesStrings.15>missed->verfehlte [originalTarget_definite] um einen guten Meter</Combat_RangedMiss.rulePack.rulesStrings.15>
-	<Combat_RangedMiss.rulePack.rulesStrings.16>missed->wurde aus der Flugbahn geweht</Combat_RangedMiss.rulePack.rulesStrings.16>
+	<Combat_RangedMiss.rulePack.rulesStrings.10>missed->prallte vom Boden ab und ging verloren</Combat_RangedMiss.rulePack.rulesStrings.10>
+	<Combat_RangedMiss.rulePack.rulesStrings.11>missed->schlug ein Loch in den Boden</Combat_RangedMiss.rulePack.rulesStrings.11>
+	<Combat_RangedMiss.rulePack.rulesStrings.12>missed(p=0.2)->verfehlte [originalTarget_definite] um wenige Millimeter</Combat_RangedMiss.rulePack.rulesStrings.12>
+	<Combat_RangedMiss.rulePack.rulesStrings.13>missed->verfehlte [originalTarget_definite] um einige Zentimeter</Combat_RangedMiss.rulePack.rulesStrings.13>
+	<Combat_RangedMiss.rulePack.rulesStrings.14>missed->verfehlte [originalTarget_definite] um einen guten Meter</Combat_RangedMiss.rulePack.rulesStrings.14>
+	<Combat_RangedMiss.rulePack.rulesStrings.15>missed->wurde aus der Flugbahn geweht</Combat_RangedMiss.rulePack.rulesStrings.15>
 
-	<Combat_RangedMiss.rulePack.rulesStrings.17>missing->verfehlte</Combat_RangedMiss.rulePack.rulesStrings.17>
-	<Combat_RangedMiss.rulePack.rulesStrings.18>missing->verfehlte ganz knapp</Combat_RangedMiss.rulePack.rulesStrings.18>
-	<Combat_RangedMiss.rulePack.rulesStrings.19>missing->ging weit daneben</Combat_RangedMiss.rulePack.rulesStrings.19>
-	<Combat_RangedMiss.rulePack.rulesStrings.20>missing->ging daneben</Combat_RangedMiss.rulePack.rulesStrings.20>
-	<Combat_RangedMiss.rulePack.rulesStrings.21>missing->flog weit übers Ziel</Combat_RangedMiss.rulePack.rulesStrings.21>
-	<Combat_RangedMiss.rulePack.rulesStrings.22>missing->flog hoch in die Luft</Combat_RangedMiss.rulePack.rulesStrings.22>
-	<Combat_RangedMiss.rulePack.rulesStrings.23>missing->grub sich in den Boden</Combat_RangedMiss.rulePack.rulesStrings.23>
-	<Combat_RangedMiss.rulePack.rulesStrings.24>missing->prallte vom Boden ab und ist verloren</Combat_RangedMiss.rulePack.rulesStrings.24>
-	<Combat_RangedMiss.rulePack.rulesStrings.25>missing->schlug ein Loch in den Boden</Combat_RangedMiss.rulePack.rulesStrings.25>
-	<Combat_RangedMiss.rulePack.rulesStrings.26>missing(p=0.2)->verfehlte [originalTarget_definite] um wenige Millimeter</Combat_RangedMiss.rulePack.rulesStrings.26>
-	<Combat_RangedMiss.rulePack.rulesStrings.27>missing->verfehlte [originalTarget_definite] um einige Zentimeter</Combat_RangedMiss.rulePack.rulesStrings.27>
-	<Combat_RangedMiss.rulePack.rulesStrings.28>missing->verfehlte [originalTarget_definite] um einen guten Meter</Combat_RangedMiss.rulePack.rulesStrings.28>
-	<Combat_RangedMiss.rulePack.rulesStrings.29>missing->wurde aus der Bahn geweht</Combat_RangedMiss.rulePack.rulesStrings.29>
+	<Combat_RangedMiss.rulePack.rulesStrings.16>missing->verfehlte</Combat_RangedMiss.rulePack.rulesStrings.16>
+	<Combat_RangedMiss.rulePack.rulesStrings.17>missing->verfehlte ganz knapp</Combat_RangedMiss.rulePack.rulesStrings.17>
+	<Combat_RangedMiss.rulePack.rulesStrings.18>missing->ging weit daneben</Combat_RangedMiss.rulePack.rulesStrings.18>
+	<Combat_RangedMiss.rulePack.rulesStrings.19>missing->ging daneben</Combat_RangedMiss.rulePack.rulesStrings.19>
+	<Combat_RangedMiss.rulePack.rulesStrings.20>missing->flog weit übers Ziel</Combat_RangedMiss.rulePack.rulesStrings.20>
+	<Combat_RangedMiss.rulePack.rulesStrings.21>missing->flog hoch in die Luft</Combat_RangedMiss.rulePack.rulesStrings.21>
+	<Combat_RangedMiss.rulePack.rulesStrings.22>missing->grub sich in den Boden</Combat_RangedMiss.rulePack.rulesStrings.22>
+	<Combat_RangedMiss.rulePack.rulesStrings.23>missing->prallte vom Boden ab und ist verloren</Combat_RangedMiss.rulePack.rulesStrings.23>
+	<Combat_RangedMiss.rulePack.rulesStrings.24>missing->schlug ein Loch in den Boden</Combat_RangedMiss.rulePack.rulesStrings.24>
+	<Combat_RangedMiss.rulePack.rulesStrings.25>missing(p=0.2)->verfehlte [originalTarget_definite] um wenige Millimeter</Combat_RangedMiss.rulePack.rulesStrings.25>
+	<Combat_RangedMiss.rulePack.rulesStrings.26>missing->verfehlte [originalTarget_definite] um einige Zentimeter</Combat_RangedMiss.rulePack.rulesStrings.26>
+	<Combat_RangedMiss.rulePack.rulesStrings.27>missing->verfehlte [originalTarget_definite] um einen guten Meter</Combat_RangedMiss.rulePack.rulesStrings.27>
+	<Combat_RangedMiss.rulePack.rulesStrings.28>missing->wurde aus der Bahn geweht</Combat_RangedMiss.rulePack.rulesStrings.28>
 
-	<Combat_RangedMiss.rulePack.rulesStrings.30>avoidance(originalTarget_mobile==True)->sprang in der letzten Sekunde zur Seite</Combat_RangedMiss.rulePack.rulesStrings.30>
-	<Combat_RangedMiss.rulePack.rulesStrings.31>avoidance(originalTarget_mobile==True)->stolperte beim Versuch zu entkommen</Combat_RangedMiss.rulePack.rulesStrings.31>
-	<Combat_RangedMiss.rulePack.rulesStrings.32>avoidance(originalTarget_mobile==True)->warf sich selbst zu Boden</Combat_RangedMiss.rulePack.rulesStrings.32>
-	<Combat_RangedMiss.rulePack.rulesStrings.33>avoidance(originalTarget_mobile==True,p=0.3)->duckte sich hinter die nächstmögliche Deckung</Combat_RangedMiss.rulePack.rulesStrings.33>
-	<Combat_RangedMiss.rulePack.rulesStrings.34>avoidance(originalTarget_mobile==True,p=0.3)->sprang hinter die nächstmögliche Deckung</Combat_RangedMiss.rulePack.rulesStrings.34>
+	<Combat_RangedMiss.rulePack.rulesStrings.29>avoidance(originalTarget_mobile==True)->sprang in der letzten Sekunde zur Seite</Combat_RangedMiss.rulePack.rulesStrings.29>
+	<Combat_RangedMiss.rulePack.rulesStrings.30>avoidance(originalTarget_mobile==True)->stolperte beim Versuch zu entkommen</Combat_RangedMiss.rulePack.rulesStrings.30>
+	<Combat_RangedMiss.rulePack.rulesStrings.31>avoidance(originalTarget_mobile==True)->warf sich selbst zu Boden</Combat_RangedMiss.rulePack.rulesStrings.31>
+	<Combat_RangedMiss.rulePack.rulesStrings.32>avoidance(originalTarget_mobile==True,p=0.3)->duckte sich hinter [cover_definite]</Combat_RangedMiss.rulePack.rulesStrings.32>
+	<Combat_RangedMiss.rulePack.rulesStrings.33>avoidance(originalTarget_mobile==True,p=0.3)->sprang hinter [cover_definite]</Combat_RangedMiss.rulePack.rulesStrings.33>
 
 
 
