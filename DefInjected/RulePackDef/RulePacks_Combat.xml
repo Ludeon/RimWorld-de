@@ -97,16 +97,19 @@
 
 	<Combat_MeleeDamageIncludes.rulePack.rulesStrings.14>flavortextsituation(recipient_flesh!=Mechanoid)->in einer Explosion der Gedärme</Combat_MeleeDamageIncludes.rulePack.rulesStrings.14>
 	<Combat_MeleeDamageIncludes.rulePack.rulesStrings.15>flavortextsituation(recipient_flesh==Mechanoid)->in einer Schrott-Explosion</Combat_MeleeDamageIncludes.rulePack.rulesStrings.15>
-	<Combat_MeleeDamageIncludes.rulePack.rulesStrings.16>flavortextsituation(p=0.4)->ohne jede Emotion</Combat_MeleeDamageIncludes.rulePack.rulesStrings.16>
-	<Combat_MeleeDamageIncludes.rulePack.rulesStrings.17>flavortextsituation(p=0.2,initiator_flesh==Normal)->mit einem ausdruckslosen Gesicht</Combat_MeleeDamageIncludes.rulePack.rulesStrings.17>
+	<Combat_MeleeDamageIncludes.rulePack.rulesStrings.16>flavortextsituation->ohne jede Emotion</Combat_MeleeDamageIncludes.rulePack.rulesStrings.16>
+	<Combat_MeleeDamageIncludes.rulePack.rulesStrings.17>flavortextsituation(p=0.4)->mit einem ausdruckslosen Gesicht</Combat_MeleeDamageIncludes.rulePack.rulesStrings.17>
 	<Combat_MeleeDamageIncludes.rulePack.rulesStrings.18>flavortextsituation(p=0.2,initiator_flesh==Normal)->mit einem brutalen Gesichtsausdruck</Combat_MeleeDamageIncludes.rulePack.rulesStrings.18>
 	<Combat_MeleeDamageIncludes.rulePack.rulesStrings.19>flavortextsituation(p=0.2,initiator_flesh==Normal)->mit einem [badassadjective] Ausdruck</Combat_MeleeDamageIncludes.rulePack.rulesStrings.19>
 	<Combat_MeleeDamageIncludes.rulePack.rulesStrings.20>flavortextsituation(p=0.2,initiator_flesh==Normal)->mit einer Grimasse</Combat_MeleeDamageIncludes.rulePack.rulesStrings.20>
 	<Combat_MeleeDamageIncludes.rulePack.rulesStrings.21>flavortextsituation(p=0.2,initiator_flesh==Normal)->mit einem Lachen auf den Lippen</Combat_MeleeDamageIncludes.rulePack.rulesStrings.21>
 	<Combat_MeleeDamageIncludes.rulePack.rulesStrings.22>flavortextsituation(p=0.2,initiator_flesh==Normal)->mit einem Lächeln</Combat_MeleeDamageIncludes.rulePack.rulesStrings.22>
 
-	<Combat_MeleeDamageIncludes.rulePack.rulesStrings.23>flavortextconsequence->lässt [recipient_objective] [painevent] [wince]</Combat_MeleeDamageIncludes.rulePack.rulesStrings.23>
-	<Combat_MeleeDamageIncludes.rulePack.rulesStrings.24>flavortextconsequence(p=0.2)->wirft [recipient_objective] aus dem Gleichgewicht</Combat_MeleeDamageIncludes.rulePack.rulesStrings.24>
+	<Combat_MeleeDamageIncludes.rulePack.rulesStrings.23>flavortextconsequence(recipient_flesh!=Mechanoid)->hinterlässt eine hässliche Wunde</Combat_MeleeDamageIncludes.rulePack.rulesStrings.23>
+	<Combat_MeleeDamageIncludes.rulePack.rulesStrings.24>flavortextconsequence->hinterlässt eine schreckliche Wunde</Combat_MeleeDamageIncludes.rulePack.rulesStrings.24>
+
+	<Combat_MeleeDamageIncludes.rulePack.rulesStrings.25>flavortextconsequence->lässt [recipient_objective] [painevent] [wince]</Combat_MeleeDamageIncludes.rulePack.rulesStrings.25>
+	<Combat_MeleeDamageIncludes.rulePack.rulesStrings.26>flavortextconsequence(p=0.2)->wirft [recipient_objective] aus dem Gleichgewicht</Combat_MeleeDamageIncludes.rulePack.rulesStrings.26>
 
 
 
@@ -170,19 +173,19 @@
 
 
 
-        <Combat_DeflectIncludes.rulePack.rulesStrings.0>scraped_present->streift</Combat_DeflectIncludes.rulePack.rulesStrings.0>
-        <Combat_DeflectIncludes.rulePack.rulesStrings.1>scraped_present->prallt ab</Combat_DeflectIncludes.rulePack.rulesStrings.1>
-        <Combat_DeflectIncludes.rulePack.rulesStrings.2>scraped_present->streift</Combat_DeflectIncludes.rulePack.rulesStrings.2>
-        <Combat_DeflectIncludes.rulePack.rulesStrings.3>scraped_present->prallt ab</Combat_DeflectIncludes.rulePack.rulesStrings.3>
-        <Combat_DeflectIncludes.rulePack.rulesStrings.4>scraped_present->berührt</Combat_DeflectIncludes.rulePack.rulesStrings.4>
-        <Combat_DeflectIncludes.rulePack.rulesStrings.5>scraped_present->gleitet</Combat_DeflectIncludes.rulePack.rulesStrings.5>
+	<Combat_DeflectIncludes.rulePack.rulesStrings.0>scraped_present->streift</Combat_DeflectIncludes.rulePack.rulesStrings.0>
+	<Combat_DeflectIncludes.rulePack.rulesStrings.1>scraped_present->prallt ab</Combat_DeflectIncludes.rulePack.rulesStrings.1>
+	<Combat_DeflectIncludes.rulePack.rulesStrings.2>scraped_present->streift</Combat_DeflectIncludes.rulePack.rulesStrings.2>
+	<Combat_DeflectIncludes.rulePack.rulesStrings.3>scraped_present->prallt ab</Combat_DeflectIncludes.rulePack.rulesStrings.3>
+	<Combat_DeflectIncludes.rulePack.rulesStrings.4>scraped_present->berührt</Combat_DeflectIncludes.rulePack.rulesStrings.4>
+	<Combat_DeflectIncludes.rulePack.rulesStrings.5>scraped_present->gleitet</Combat_DeflectIncludes.rulePack.rulesStrings.5>
 
-        <Combat_DeflectIncludes.rulePack.rulesStrings.6>scraped_past->striff</Combat_DeflectIncludes.rulePack.rulesStrings.6>
-        <Combat_DeflectIncludes.rulePack.rulesStrings.7>scraped_past->prallte ab</Combat_DeflectIncludes.rulePack.rulesStrings.7>
-        <Combat_DeflectIncludes.rulePack.rulesStrings.8>scraped_past->streifte</Combat_DeflectIncludes.rulePack.rulesStrings.8>
-        <Combat_DeflectIncludes.rulePack.rulesStrings.9>scraped_past->prallte ab</Combat_DeflectIncludes.rulePack.rulesStrings.9>
-        <Combat_DeflectIncludes.rulePack.rulesStrings.10>scraped_past->berührte</Combat_DeflectIncludes.rulePack.rulesStrings.10>
-        <Combat_DeflectIncludes.rulePack.rulesStrings.11>scraped_past->glitt</Combat_DeflectIncludes.rulePack.rulesStrings.11>
+	<Combat_DeflectIncludes.rulePack.rulesStrings.6>scraped_past->striff</Combat_DeflectIncludes.rulePack.rulesStrings.6>
+	<Combat_DeflectIncludes.rulePack.rulesStrings.7>scraped_past->prallte ab</Combat_DeflectIncludes.rulePack.rulesStrings.7>
+	<Combat_DeflectIncludes.rulePack.rulesStrings.8>scraped_past->streifte</Combat_DeflectIncludes.rulePack.rulesStrings.8>
+	<Combat_DeflectIncludes.rulePack.rulesStrings.9>scraped_past->prallte ab</Combat_DeflectIncludes.rulePack.rulesStrings.9>
+	<Combat_DeflectIncludes.rulePack.rulesStrings.10>scraped_past->berührte</Combat_DeflectIncludes.rulePack.rulesStrings.10>
+	<Combat_DeflectIncludes.rulePack.rulesStrings.11>scraped_past->glitt</Combat_DeflectIncludes.rulePack.rulesStrings.11>
 
 
 
@@ -213,52 +216,56 @@
 
 
 
-        <Combat_Deflect.rulePack.rulesStrings.0>logentry(p=1)->[initiator_definite] [damaged_past] [at] [recipient_definite] in the [recipient_part0_label] [deflectedresult].</Combat_Deflect.rulePack.rulesStrings.0>
-        <Combat_Deflect.rulePack.rulesStrings.1>logentry(p=0.3)->[initiator_definite], wielding [initiator_possessive] [weapon_label] [expertly], [damaged_past] [recipient_definite] in the [recipient_part0_label] [deflectedresult].</Combat_Deflect.rulePack.rulesStrings.1>
+	<Combat_Deflect.rulePack.rulesStrings.0>logentry(p=1)->[initiator_definite] [damaged_past] [at] [recipient_definite] in the [recipient_part0_label] [deflectedresult].</Combat_Deflect.rulePack.rulesStrings.0>
+	<Combat_Deflect.rulePack.rulesStrings.1>logentry(p=0.3)->[initiator_definite], wielding [initiator_possessive] [weapon_label] [expertly], [damaged_past] [recipient_definite] in the [recipient_part0_label] [deflectedresult].</Combat_Deflect.rulePack.rulesStrings.1>
 
-        <Combat_Deflect.rulePack.rulesStrings.2>logentry(p=0.3)->[initiator_definite] hit [recipient_definite] with a [damaged_inf] from [implement] [deflectedresult].</Combat_Deflect.rulePack.rulesStrings.2>
-        <Combat_Deflect.rulePack.rulesStrings.3>logentry(p=0.3)->[initiator_definite] used [implement] to [damaged_inf] [recipient_definite] [deflectedresult].</Combat_Deflect.rulePack.rulesStrings.3>
-        <Combat_Deflect.rulePack.rulesStrings.4>logentry(p=0.6)->[initiator_definite] [damaged_past] [at] [recipient_definite] with [implement] [deflectedresult].</Combat_Deflect.rulePack.rulesStrings.4>
-        <Combat_Deflect.rulePack.rulesStrings.5>logentry(p=0.6)->[initiator_definite] [damaged_past] [at] [recipient_definite] [deflectedresult].</Combat_Deflect.rulePack.rulesStrings.5>
+	<Combat_Deflect.rulePack.rulesStrings.2>logentry(p=0.3)->[initiator_definite] hit [recipient_definite] with a [damaged_inf] from [implement] [deflectedresult].</Combat_Deflect.rulePack.rulesStrings.2>
+	<Combat_Deflect.rulePack.rulesStrings.3>logentry(p=0.3)->[initiator_definite] used [implement] to [damaged_inf] [recipient_definite] [deflectedresult].</Combat_Deflect.rulePack.rulesStrings.3>
+	<Combat_Deflect.rulePack.rulesStrings.4>logentry(p=0.6)->[initiator_definite] [damaged_past] [at] [recipient_definite] with [implement] [deflectedresult].</Combat_Deflect.rulePack.rulesStrings.4>
+	<Combat_Deflect.rulePack.rulesStrings.5>logentry(p=0.6)->[initiator_definite] [damaged_past] [at] [recipient_definite] [deflectedresult].</Combat_Deflect.rulePack.rulesStrings.5>
 
-        <Combat_Deflect.rulePack.rulesStrings.6>at-></Combat_Deflect.rulePack.rulesStrings.6>
-        <Combat_Deflect.rulePack.rulesStrings.7>at->at</Combat_Deflect.rulePack.rulesStrings.7>
-        
-        <Combat_Deflect.rulePack.rulesStrings.8>deflectedresult-> [deflectedadverb]</Combat_Deflect.rulePack.rulesStrings.8>
-        <Combat_Deflect.rulePack.rulesStrings.9>deflectedresult->, [deflectedconsequence]</Combat_Deflect.rulePack.rulesStrings.9>
+	<Combat_Deflect.rulePack.rulesStrings.6>at-></Combat_Deflect.rulePack.rulesStrings.6>
+	<Combat_Deflect.rulePack.rulesStrings.7>at->at</Combat_Deflect.rulePack.rulesStrings.7>
 
-        <Combat_Deflect.rulePack.rulesStrings.10>deflectedadverb_opt(p=4)-></Combat_Deflect.rulePack.rulesStrings.10>
-        <Combat_Deflect.rulePack.rulesStrings.11>deflectedadverb_opt->[deflectedadverb]</Combat_Deflect.rulePack.rulesStrings.11>
-        
-        <Combat_Deflect.rulePack.rulesStrings.12>deflectedadverb->harmlessly</Combat_Deflect.rulePack.rulesStrings.12>
-        <Combat_Deflect.rulePack.rulesStrings.13>deflectedadverb->uselessly</Combat_Deflect.rulePack.rulesStrings.13>
-        
-        <Combat_Deflect.rulePack.rulesStrings.14>deflectedconsequence->but the [tool_label] [scraped_past] off [deflectedadverb_opt]</Combat_Deflect.rulePack.rulesStrings.14>
-        <Combat_Deflect.rulePack.rulesStrings.15>deflectedconsequence->[scraped_present] off [recipient_possessive] armor [deflectedadverb_opt]</Combat_Deflect.rulePack.rulesStrings.15>
+	<Combat_Deflect.rulePack.rulesStrings.8>deflectedresult-> [deflectedadverb]</Combat_Deflect.rulePack.rulesStrings.8>
+	<Combat_Deflect.rulePack.rulesStrings.9>deflectedresult->, [deflectedconsequence]</Combat_Deflect.rulePack.rulesStrings.9>
 
-        <Combat_Deflect.rulePack.rulesStrings.16>scraped_present->scraping</Combat_Deflect.rulePack.rulesStrings.16>
-        <Combat_Deflect.rulePack.rulesStrings.17>scraped_present->sliding</Combat_Deflect.rulePack.rulesStrings.17>
+	<Combat_Deflect.rulePack.rulesStrings.10>deflectedadverb_opt(p=4)-></Combat_Deflect.rulePack.rulesStrings.10>
+	<Combat_Deflect.rulePack.rulesStrings.11>deflectedadverb_opt->[deflectedadverb]</Combat_Deflect.rulePack.rulesStrings.11>
 
-        <Combat_Deflect.rulePack.rulesStrings.18>scraped_past->scraped</Combat_Deflect.rulePack.rulesStrings.18>
-        <Combat_Deflect.rulePack.rulesStrings.19>scraped_past->slid</Combat_Deflect.rulePack.rulesStrings.19>
+	<Combat_Deflect.rulePack.rulesStrings.12>deflectedadverb->harmlessly</Combat_Deflect.rulePack.rulesStrings.12>
+	<Combat_Deflect.rulePack.rulesStrings.13>deflectedadverb->uselessly</Combat_Deflect.rulePack.rulesStrings.13>
 
+	<Combat_Deflect.rulePack.rulesStrings.14>deflectedconsequence->but the [tool_label] [scraped_past] off [deflectedadverb_opt]</Combat_Deflect.rulePack.rulesStrings.14>
+	<Combat_Deflect.rulePack.rulesStrings.15>deflectedconsequence->[scraped_present] off [recipient_possessive] armor [deflectedadverb_opt]</Combat_Deflect.rulePack.rulesStrings.15>
 
+	<Combat_Deflect.rulePack.rulesStrings.16>scraped_present->scraping</Combat_Deflect.rulePack.rulesStrings.16>
+	<Combat_Deflect.rulePack.rulesStrings.17>scraped_present->sliding</Combat_Deflect.rulePack.rulesStrings.17>
+
+	<Combat_Deflect.rulePack.rulesStrings.18>scraped_past->scraped</Combat_Deflect.rulePack.rulesStrings.18>
+	<Combat_Deflect.rulePack.rulesStrings.19>scraped_past->slid</Combat_Deflect.rulePack.rulesStrings.19>
 
 
 
-	<Combat_FailIncludes.rulePack.rulesStrings.0>action->[initiator_nameShortDef] [tried] [recipient_nameShortDef] mit [implement] zu [damaged_inf]</Combat_FailIncludes.rulePack.rulesStrings.0>
-	<Combat_FailIncludes.rulePack.rulesStrings.1>action->[initiator_nameShortDef] [tried] mit [implement] [recipient_nameShortDef] zu [damaged_inf]</Combat_FailIncludes.rulePack.rulesStrings.1>
-	<Combat_FailIncludes.rulePack.rulesStrings.2>action->[initiator_nameShortDef] schlägt [initiator_possessive] [weapon_label] auf [recipient_nameShortDef]</Combat_FailIncludes.rulePack.rulesStrings.2>
-	<Combat_FailIncludes.rulePack.rulesStrings.3>action(p=0.3)->[initiator_nameShortDef] [genericattackverb] in Richtung [recipient_nameShortDef] mit [implement]</Combat_FailIncludes.rulePack.rulesStrings.3>
-	<Combat_FailIncludes.rulePack.rulesStrings.4>action(p=0.3)->[initiator_nameShortDef] [genericattackverb] auf [recipient_nameShortDef] mit [implement]</Combat_FailIncludes.rulePack.rulesStrings.4>
-	<Combat_FailIncludes.rulePack.rulesStrings.5>action(p=0.3)->[initiator_nameShortDef] [genericattackverb] mit [implement]</Combat_FailIncludes.rulePack.rulesStrings.5>
 
-	<Combat_FailIncludes.rulePack.rulesStrings.6>genericattackverb->schlägt</Combat_FailIncludes.rulePack.rulesStrings.6>
-	<Combat_FailIncludes.rulePack.rulesStrings.7>genericattackverb->drischt</Combat_FailIncludes.rulePack.rulesStrings.7>
-	<Combat_FailIncludes.rulePack.rulesStrings.8>genericattackverb->prügelt</Combat_FailIncludes.rulePack.rulesStrings.8>
 
-	<Combat_FailIncludes.rulePack.rulesStrings.9>tried->versucht</Combat_FailIncludes.rulePack.rulesStrings.9>
-	<Combat_FailIncludes.rulePack.rulesStrings.10>tried->verfehlt</Combat_FailIncludes.rulePack.rulesStrings.10>
+	<Combat_FailIncludes.rulePack.rulesStrings.0>action->[initiator_nameShortDef] [tried] [recipient_nameShortDef] zu [damaged_inf]</Combat_FailIncludes.rulePack.rulesStrings.0>
+	<Combat_FailIncludes.rulePack.rulesStrings.1>action->[initiator_nameShortDef] [tried] [recipient_nameShortDef] mit [implement] zu [damaged_inf]</Combat_FailIncludes.rulePack.rulesStrings.1>
+	<Combat_FailIncludes.rulePack.rulesStrings.2>action->[initiator_nameShortDef] [tried] mit [implement] [recipient_nameShortDef] zu [damaged_inf]</Combat_FailIncludes.rulePack.rulesStrings.2>
+	<Combat_FailIncludes.rulePack.rulesStrings.3>action->[initiator_nameShortDef] schlägt [initiator_possessive] [weapon_label] [towardsat] [recipient_nameShortDef]</Combat_FailIncludes.rulePack.rulesStrings.3>
+	<Combat_FailIncludes.rulePack.rulesStrings.4>action(p=0.3)->[initiator_nameShortDef] [genericattackverb] [towardsat] [recipient_nameShortDef] mit [implement]</Combat_FailIncludes.rulePack.rulesStrings.4>
+	<Combat_FailIncludes.rulePack.rulesStrings.5>action(p=0.3)->[initiator_nameShortDef] [genericattackverb] [towardsat] [recipient_nameShortDef] mit [implement]</Combat_FailIncludes.rulePack.rulesStrings.5>
+	<Combat_FailIncludes.rulePack.rulesStrings.6>action(p=0.3)->[initiator_nameShortDef] [genericattackverb] mit [implement]</Combat_FailIncludes.rulePack.rulesStrings.6>
+
+	<Combat_FailIncludes.rulePack.rulesStrings.7>towardsat->in Richtung</Combat_FailIncludes.rulePack.rulesStrings.7>
+	<Combat_FailIncludes.rulePack.rulesStrings.8>towardsat->auf</Combat_FailIncludes.rulePack.rulesStrings.8>
+
+	<Combat_FailIncludes.rulePack.rulesStrings.9>genericattackverb->schlägt</Combat_FailIncludes.rulePack.rulesStrings.9>
+	<Combat_FailIncludes.rulePack.rulesStrings.10>genericattackverb->drischt</Combat_FailIncludes.rulePack.rulesStrings.10>
+	<Combat_FailIncludes.rulePack.rulesStrings.11>genericattackverb->prügelt</Combat_FailIncludes.rulePack.rulesStrings.11>
+
+	<Combat_FailIncludes.rulePack.rulesStrings.12>tried->versucht</Combat_FailIncludes.rulePack.rulesStrings.12>
+	<Combat_FailIncludes.rulePack.rulesStrings.13>tried->verfehlt</Combat_FailIncludes.rulePack.rulesStrings.13>
 
 
 
@@ -288,10 +295,11 @@
 
 
 	<Combat_Dodge.rulePack.rulesStrings.0>logentry(p=0.2)->[recipient_nameShortDef] wich [initiator_nameShortDef]'s [damaged_inf] mit [implement] aus.</Combat_Dodge.rulePack.rulesStrings.0>
+	<Combat_Dodge.rulePack.rulesStrings.1>logentry(p=0.2)->[recipient_nameShortDef] wich [initiator_nameShortDef]'s [damaged_inf] aus.</Combat_Dodge.rulePack.rulesStrings.1>
 
-	<Combat_Dodge.rulePack.rulesStrings.1>result->aber [recipient_nameShortDef] sprang aus zur Seite</Combat_Dodge.rulePack.rulesStrings.1>
-	<Combat_Dodge.rulePack.rulesStrings.2>result->aber wurde von der Finte von [recipient_nameShortDef] getäuscht</Combat_Dodge.rulePack.rulesStrings.2>
-	<Combat_Dodge.rulePack.rulesStrings.3>result->aber dem Angriff wurde geschickt ausgewichen</Combat_Dodge.rulePack.rulesStrings.3>
+	<Combat_Dodge.rulePack.rulesStrings.2>result->aber [recipient_nameShortDef] sprang aus zur Seite</Combat_Dodge.rulePack.rulesStrings.2>
+	<Combat_Dodge.rulePack.rulesStrings.3>result->aber wurde von der Finte von [recipient_nameShortDef] getäuscht</Combat_Dodge.rulePack.rulesStrings.3>
+	<Combat_Dodge.rulePack.rulesStrings.4>result->aber dem Angriff wurde geschickt ausgewichen</Combat_Dodge.rulePack.rulesStrings.4>
 
 
 
@@ -452,40 +460,40 @@
 
 
 
-        <Combat_RangedDeflect.rulePack.rulesStrings.0>logentry->[initiator_definite]'s [weapon_projectile_label] [damaged_past] [recipient_definite][damaged_target] [deflectedresult].</Combat_RangedDeflect.rulePack.rulesStrings.0>
-        <Combat_RangedDeflect.rulePack.rulesStrings.1>logentry(p=2)->[initiator_definite]'s [weapon_projectile_label] [missed] [originalTarget_definite] und [damaged_past] [recipient_definite][damaged_target_possessive_opt] [deflectedresult].</Combat_RangedDeflect.rulePack.rulesStrings.1>
-        <Combat_RangedDeflect.rulePack.rulesStrings.2>logentry->[recipient_definite][damaged_target_possessive_opt] wurde [damaged_past] von [initiator_definite]'s [weapon_projectile_label] [deflectedresult].</Combat_RangedDeflect.rulePack.rulesStrings.2>
+	<Combat_RangedDeflect.rulePack.rulesStrings.0>logentry->[initiator_definite]'s [weapon_projectile_label] [damaged_past] [recipient_definite][damaged_target] [deflectedresult].</Combat_RangedDeflect.rulePack.rulesStrings.0>
+	<Combat_RangedDeflect.rulePack.rulesStrings.1>logentry(p=2)->[initiator_definite]'s [weapon_projectile_label] [missed] [originalTarget_definite] und [damaged_past] [recipient_definite][damaged_target_possessive_opt] [deflectedresult].</Combat_RangedDeflect.rulePack.rulesStrings.1>
+	<Combat_RangedDeflect.rulePack.rulesStrings.2>logentry->[recipient_definite][damaged_target_possessive_opt] wurde [damaged_past] von [initiator_definite]'s [weapon_projectile_label] [deflectedresult].</Combat_RangedDeflect.rulePack.rulesStrings.2>
 
-        <Combat_RangedDeflect.rulePack.rulesStrings.3>logentry(p=0.2)->[initiator_definite] traf [recipient_definite][damaged_target_possessive_opt] mit [weapon_projectile_label] [deflectedresult].</Combat_RangedDeflect.rulePack.rulesStrings.3>
-        <Combat_RangedDeflect.rulePack.rulesStrings.4>logentry(p=0.2)->[initiator_definite]'s [weapon_projectile_label] traf [recipient_definite][damaged_target_possessive_opt] [deflectedresult].</Combat_RangedDeflect.rulePack.rulesStrings.4>
-        <Combat_RangedDeflect.rulePack.rulesStrings.5>logentry(p=0.4)->[initiator_definite] [missed] [originalTarget_definite] und traf [recipient_definite][damaged_target_possessive_opt] mit [weapon_projectile_label] [deflectedresult].</Combat_RangedDeflect.rulePack.rulesStrings.5>
-        <Combat_RangedDeflect.rulePack.rulesStrings.6>logentry(p=0.4)->[initiator_definite]'s [weapon_projectile_label] [missed] [originalTarget_definite] und traf [recipient_definite][damaged_target_possessive_opt] [deflectedresult].</Combat_RangedDeflect.rulePack.rulesStrings.6>
-        <Combat_RangedDeflect.rulePack.rulesStrings.7>logentry(p=0.2)->[initiator_definite] traf [recipient_definite][damaged_target_possessive_opt] mit [weapon_projectile_label], das für [originalTarget_definite] bestimmt war [deflectedresult].</Combat_RangedDeflect.rulePack.rulesStrings.7>
+	<Combat_RangedDeflect.rulePack.rulesStrings.3>logentry(p=0.2)->[initiator_definite] traf [recipient_definite][damaged_target_possessive_opt] mit [weapon_projectile_label] [deflectedresult].</Combat_RangedDeflect.rulePack.rulesStrings.3>
+	<Combat_RangedDeflect.rulePack.rulesStrings.4>logentry(p=0.2)->[initiator_definite]'s [weapon_projectile_label] traf [recipient_definite][damaged_target_possessive_opt] [deflectedresult].</Combat_RangedDeflect.rulePack.rulesStrings.4>
+	<Combat_RangedDeflect.rulePack.rulesStrings.5>logentry(p=0.4)->[initiator_definite] [missed] [originalTarget_definite] und traf [recipient_definite][damaged_target_possessive_opt] mit [weapon_projectile_label] [deflectedresult].</Combat_RangedDeflect.rulePack.rulesStrings.5>
+	<Combat_RangedDeflect.rulePack.rulesStrings.6>logentry(p=0.4)->[initiator_definite]'s [weapon_projectile_label] [missed] [originalTarget_definite] und traf [recipient_definite][damaged_target_possessive_opt] [deflectedresult].</Combat_RangedDeflect.rulePack.rulesStrings.6>
+	<Combat_RangedDeflect.rulePack.rulesStrings.7>logentry(p=0.2)->[initiator_definite] traf [recipient_definite][damaged_target_possessive_opt] mit [weapon_projectile_label], das für [originalTarget_definite] bestimmt war [deflectedresult].</Combat_RangedDeflect.rulePack.rulesStrings.7>
 
-        <!-- fallback, also a little variety -->
-        <Combat_RangedDeflect.rulePack.rulesStrings.8>weapon_projectile_label(p=0.05)->schoss</Combat_RangedDeflect.rulePack.rulesStrings.8>
+	<!-- fallback, also a little variety -->
+	<Combat_RangedDeflect.rulePack.rulesStrings.8>weapon_projectile_label(p=0.05)->schoss</Combat_RangedDeflect.rulePack.rulesStrings.8>
 
-        <Combat_RangedDeflect.rulePack.rulesStrings.9>damaged_target_possessive_opt-></Combat_RangedDeflect.rulePack.rulesStrings.9>
-        <Combat_RangedDeflect.rulePack.rulesStrings.10>damaged_target_possessive_opt(recipient_part_damaged0_outside==True)->'s [recipient_part_damaged0_label]</Combat_RangedDeflect.rulePack.rulesStrings.10>
+	<Combat_RangedDeflect.rulePack.rulesStrings.9>damaged_target_possessive_opt-></Combat_RangedDeflect.rulePack.rulesStrings.9>
+	<Combat_RangedDeflect.rulePack.rulesStrings.10>damaged_target_possessive_opt(recipient_part_damaged0_outside==True)->'s [recipient_part_damaged0_label]</Combat_RangedDeflect.rulePack.rulesStrings.10>
 
-        <Combat_RangedDeflect.rulePack.rulesStrings.11>deflectedresult-> [deflectedadverb]</Combat_RangedDeflect.rulePack.rulesStrings.11>
-        <Combat_RangedDeflect.rulePack.rulesStrings.12>deflectedresult->, [deflectedconsequence]</Combat_RangedDeflect.rulePack.rulesStrings.12>
+	<Combat_RangedDeflect.rulePack.rulesStrings.11>deflectedresult-> [deflectedadverb]</Combat_RangedDeflect.rulePack.rulesStrings.11>
+	<Combat_RangedDeflect.rulePack.rulesStrings.12>deflectedresult->, [deflectedconsequence]</Combat_RangedDeflect.rulePack.rulesStrings.12>
 
-        <Combat_RangedDeflect.rulePack.rulesStrings.13>deflectedadverb_opt(p=4)-></Combat_RangedDeflect.rulePack.rulesStrings.13>
-        <Combat_RangedDeflect.rulePack.rulesStrings.14>deflectedadverb_opt->[deflectedadverb]</Combat_RangedDeflect.rulePack.rulesStrings.14>
+	<Combat_RangedDeflect.rulePack.rulesStrings.13>deflectedadverb_opt(p=4)-></Combat_RangedDeflect.rulePack.rulesStrings.13>
+	<Combat_RangedDeflect.rulePack.rulesStrings.14>deflectedadverb_opt->[deflectedadverb]</Combat_RangedDeflect.rulePack.rulesStrings.14>
 
-        <Combat_RangedDeflect.rulePack.rulesStrings.15>deflectedadverb->harmlos</Combat_RangedDeflect.rulePack.rulesStrings.15>
-        <Combat_RangedDeflect.rulePack.rulesStrings.16>deflectedadverb->unbrauchbar</Combat_RangedDeflect.rulePack.rulesStrings.16>
+	<Combat_RangedDeflect.rulePack.rulesStrings.15>deflectedadverb->harmlos</Combat_RangedDeflect.rulePack.rulesStrings.15>
+	<Combat_RangedDeflect.rulePack.rulesStrings.16>deflectedadverb->unbrauchbar</Combat_RangedDeflect.rulePack.rulesStrings.16>
 
-        <Combat_RangedDeflect.rulePack.rulesStrings.17>deflectedconsequence->aber es [scraped_past] [deflectedadverb_opt] von der Rüstung ab</Combat_RangedDeflect.rulePack.rulesStrings.17>
-        <Combat_RangedDeflect.rulePack.rulesStrings.18>deflectedconsequence->[scraped_present] [deflectedadverb_opt] von [recipient_possessive] Rüstung ab</Combat_RangedDeflect.rulePack.rulesStrings.18>
+	<Combat_RangedDeflect.rulePack.rulesStrings.17>deflectedconsequence->aber es [scraped_past] [deflectedadverb_opt] von der Rüstung ab</Combat_RangedDeflect.rulePack.rulesStrings.17>
+	<Combat_RangedDeflect.rulePack.rulesStrings.18>deflectedconsequence->[scraped_present] [deflectedadverb_opt] von [recipient_possessive] Rüstung ab</Combat_RangedDeflect.rulePack.rulesStrings.18>
 
-        <Combat_RangedDeflect.rulePack.rulesStrings.19>scraped_past->prallte</Combat_RangedDeflect.rulePack.rulesStrings.19>
+	<Combat_RangedDeflect.rulePack.rulesStrings.19>scraped_past->prallte</Combat_RangedDeflect.rulePack.rulesStrings.19>
 
-        <Combat_RangedDeflect.rulePack.rulesStrings.20>scraped_present->prallt</Combat_RangedDeflect.rulePack.rulesStrings.20>
-      
-        <Combat_RangedDeflect.rulePack.rulesStrings.21>missed->verfehlt</Combat_RangedDeflect.rulePack.rulesStrings.21>
-        <Combat_RangedDeflect.rulePack.rulesStrings.22>missed->verfehlt knapp</Combat_RangedDeflect.rulePack.rulesStrings.22>	
+	<Combat_RangedDeflect.rulePack.rulesStrings.20>scraped_present->prallt</Combat_RangedDeflect.rulePack.rulesStrings.20>
+
+	<Combat_RangedDeflect.rulePack.rulesStrings.21>missed->verfehlt</Combat_RangedDeflect.rulePack.rulesStrings.21>
+	<Combat_RangedDeflect.rulePack.rulesStrings.22>missed->verfehlt knapp</Combat_RangedDeflect.rulePack.rulesStrings.22>	
 
 
 
