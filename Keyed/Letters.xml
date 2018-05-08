@@ -32,8 +32,6 @@
 	<RecruitFail>{0} konnte {1} nicht anwerben ({2} Chance).</RecruitFail>
 
 	<RelatedPawnInvolvedInQuest>NAME ist {1} von {0}. Wenn NAME stirbt, wird {0} sehr lange um HIM trauern. Andererseits, wenn Du es schaffst NAME zu retten, wird {0} sehr lange sehr glücklich sein.</RelatedPawnInvolvedInQuest>
-	<DownedRefugee_CryingForHelp>Du hörst {0} um Hilfe rufen.</DownedRefugee_CryingForHelp>
-	<DownedRefugee_Radio>{0} kontaktiert dich über Funk. HECAP benötigt Hilfe.</DownedRefugee_Radio>
 
 	<LetterLabelBirthday>Geburtstag</LetterLabelBirthday>
 	<BirthdayChronological>{0} hat heute HISen Geburtstag! Biologisch ist {1} {3} Jahre alt. Chronologisch wurde {1} {2}.\n\nHinweis: Das chronologische Alter ist das biologische Alter plus der verbrachten Zeit in einer Kryptokapsel.</BirthdayChronological>
@@ -123,11 +121,9 @@
 
 	<!-- Bonded animals -->
 
-	<LetterLabelBondedAnimalDied>Verbundenes Tier gestorben</LetterLabelBondedAnimalDied>
-	<LetterBondedAnimalDied>{0}, verbunden mit {1}, ist gestorben. Das wird die Laune von {1} beeinflussen.</LetterBondedAnimalDied>
-	<LetterNamedBondedAnimalDied>{0} benannt {1}, verbunden mit {2}, ist gestorben. Das wird die Laune von {2} beeinflussen.</LetterNamedBondedAnimalDied>
-	<LetterBondedAnimalDiedMulti>{0} ist gestorben. Es wird die Laune der folgenden Leute beeinflussen:\n\n{1}</LetterBondedAnimalDiedMulti>
-	<LetterNamedBondedAnimalDiedMulti>{0} benannt {1} ist gestorben. Es wird die Laune der folgenden Leute beeinflussen:\n\n{2}</LetterNamedBondedAnimalDiedMulti>
+	<LetterLabelSuffixBondedAnimalDied>Haustier</LetterLabelSuffixBondedAnimalDied>
+	<LetterPartBondedAnimalDied>{0} war mit {1} verbunden. Das wird die Stimmung von {1} beeinflussen.</LetterPartBondedAnimalDied>
+	<LetterPartBondedAnimalDiedMulti>Es wird die Stimmung der folgenden Personen beeinflussen:\n\n{0}</LetterPartBondedAnimalDiedMulti>
 
 	<!-- Prison break -->
 
@@ -214,8 +210,10 @@
 	<LetterCraftedLegendaryMessage>{0} hat {1} hergestellt.\n\nNachricht von diesem wertvollen Artifakt wird um die Welt gehen.</LetterCraftedLegendaryMessage>
 
 	<!-- Pawns lost because map closed -->
-	<LetterLabelPawnsLostBecauseMapClosed>Karawane verloren</LetterLabelPawnsLostBecauseMapClosed>
-	<LetterPawnsLostBecauseMapClosed>Deine Karawane ging verloren. Die folgenden Personen und Tiere sind mit ihr verloren gegangen</LetterPawnsLostBecauseMapClosed>
+	<LetterLabelPawnsLostBecauseMapClosed_Caravan>Karawane verloren</LetterLabelPawnsLostBecauseMapClosed_Caravan>
+	<LetterPawnsLostBecauseMapClosed_Caravan>Deine Karawane ging verloren. Die folgenden Personen und Tiere sind mit ihr verloren gegangen</LetterPawnsLostBecauseMapClosed_Caravan>
+	<LetterLabelPawnsLostBecauseMapClosed_Home>Bewohner aufgegeben</LetterLabelPawnsLostBecauseMapClosed_Home>
+	<LetterPawnsLostBecauseMapClosed_Home>Die folgenden Personen und Tiere wurden aufgegeben</LetterPawnsLostBecauseMapClosed_Home>
 
 	<!-- Hibernate complete -->
 	<LetterLabelHibernateComplete>Reaktor einsatzbereit</LetterLabelHibernateComplete>
@@ -232,8 +230,11 @@
 
 	<!-- Caravans battlefield victory -->
 	<LetterLabelCaravansBattlefieldVictory>Karawanenkampf gewonnen</LetterLabelCaravansBattlefieldVictory>
-	<LetterCaravansBattlefieldVictory>Deine Karawane hat den Kampf gewonnen.\n\nDie Karawane wird sich in {0} automatisch neu formieren. \nDu kannst die Karawane auch jetzt schon aufbrechen lassen, indem Du auf der Weltkarte die zerstörte Basis markierst und die Option "Karawane zusammenstellen" auswählst.</LetterCaravansBattlefieldVictory>
+	<LetterCaravansBattlefieldVictory>Deine Karawane hat den Kampf gewonnen.\n\nDie Karawane wird sich in {0} automatisch neu formieren. \nDu kannst die Karawane auch jetzt schon aufbrechen lassen, indem Du auf der Weltkarte die zerstörte Basis markierst und die Option "Karawane erstellen" auswählst.</LetterCaravansBattlefieldVictory>
 
+  <!-- Rescue quest -->
+  <LetterLabelRescueQuestFinished>Geretteter tritt bei</LetterLabelRescueQuestFinished>
+  <LetterRescueQuestFinished>Du hast NAME gerettet und HE tritt Deiner Gruppe bei.\n\nDu kannst HIM mitnehmen, indem Du auf der Weltkarte dieses Gebiet markierst und die Option "Karawane reformieren" auswählst.</LetterRescueQuestFinished>
 
 
 </LanguageData>
