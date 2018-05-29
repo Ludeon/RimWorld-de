@@ -35,7 +35,9 @@
 	<NoMergeTarget>Kein Stapel zum Hinzufügen verfügbar</NoMergeTarget>
 	<AlreadyFilledLower>bereits aufgefüllt</AlreadyFilledLower>
 	<MissingMaterials>kein Material</MissingMaterials>
-	<MissingSkill>Fertigkeit zu gering</MissingSkill>
+	<UnderRequiredSkill>unter benötigter Fähigkeit {0}</UnderRequiredSkill>
+	<UnderAllowedSkill>unter erlaubter Fähigkeit {0}</UnderAllowedSkill>
+	<AboveAllowedSkill>über erlaubter Fähigkeit {0}</AboveAllowedSkill>
 	<MissingRequiredSkillLevel>Benötigte Fertigkeit zu gering</MissingRequiredSkillLevel>
 	<AnimalInteractedTooRecently>Mit dem Tier wurde erst vor kurzem interagiert</AnimalInteractedTooRecently>
 	<NoUsableFood>kein geeignetes Essen verfügbar</NoUsableFood>
@@ -155,6 +157,7 @@
 	<!-- e.g. Cannot VERB OBJECT, Cannot repair wall, Cannot haul metal, etc. -->
 
 	<CannotGenericWork>Kann {1} nicht {0}</CannotGenericWork>
+	<CannotGenericWorkCustom>Kann nicht {0}</CannotGenericWorkCustom>
 
 	<!-- e.g. Already GERUND OBJECt, Already repairing wall, already hauling metal, etc -->
 
@@ -173,8 +176,9 @@
 
 	<CannotPrioritizeResearch>Nicht priorisiert ausführbar (Forschung erfolgt langfristig)</CannotPrioritizeResearch>
 
-	<CannotPrioritizeForbidden>Nicht priorisiert ausführbar ({0} verboten)</CannotPrioritizeForbidden>
-	<CannotPrioritizeForbiddenOutsideAllowedArea>Nicht priorisiert ausführbar ({0} ist außerhalb der erlaubten Zone)</CannotPrioritizeForbiddenOutsideAllowedArea>
+	<CannotPrioritizeForbidden>Nicht priorisiert ausführbar ({0} ist verboten)</CannotPrioritizeForbidden>
+	<CannotPrioritizeCellForbidden>Nicht priorisiert ausführbar (verboten)</CannotPrioritizeCellForbidden>
+	<CannotPrioritizeForbiddenOutsideAllowedArea>Außerhalb der erlaubten Zone</CannotPrioritizeForbiddenOutsideAllowedArea>
 
 	<!-- e.g. Prioritize GERUND OBJECT, Prioritize repairing wall, prioritize hauling metal, etc -->
 
