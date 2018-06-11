@@ -4,75 +4,101 @@
 	<!-- Random social interactions -->
 
 	<Chitchat.label>Plaudern</Chitchat.label>
-	<Chitchat.logRulesInitiator.rulesStrings.0>logentry->Plauderte nett mit [other_nameShortIndef]. [result]</Chitchat.logRulesInitiator.rulesStrings.0>
-	<Chitchat.logRulesInitiator.rulesStrings.1>result(p=8)-></Chitchat.logRulesInitiator.rulesStrings.1>
-	<Chitchat.logRulesInitiator.rulesStrings.2>result->Ich ging [emotion] weiter.</Chitchat.logRulesInitiator.rulesStrings.2>
-	<Chitchat.logRulesInitiator.rulesStrings.3>result->Wir sollten öfters miteinander plaudern.</Chitchat.logRulesInitiator.rulesStrings.3>
-	<Chitchat.logRulesInitiator.rulesStrings.4>result->Ich habe keine Ahnung, um was es ging.</Chitchat.logRulesInitiator.rulesStrings.4>
-	<Chitchat.logRulesInitiator.rulesStrings.5>emotion->glücklich</Chitchat.logRulesInitiator.rulesStrings.5>
-	<Chitchat.logRulesInitiator.rulesStrings.6>emotion->nachdenklich</Chitchat.logRulesInitiator.rulesStrings.6>
-	<Chitchat.logRulesInitiator.rulesStrings.7>emotion->lächelnd</Chitchat.logRulesInitiator.rulesStrings.7>
-	<Chitchat.logRulesInitiator.rulesStrings.8>emotion->fröhlich</Chitchat.logRulesInitiator.rulesStrings.8>
+	<Chitchat.logRulesInitiator.rulesStrings.0>r_logentry->[INITIATOR_nameIndef] und [RECIPIENT_nameIndef] [talkedabout] [TalkTopic_light].</Chitchat.logRulesInitiator.rulesStrings.0>
+	<Chitchat.logRulesInitiator.rulesStrings.1>r_logentry->[INITIATOR_nameIndef] und [RECIPIENT_nameIndef] [talkedabout] [TalkTopic_light].</Chitchat.logRulesInitiator.rulesStrings.1>
+
+	<Chitchat.logRulesInitiator.rulesStrings.2>talkedabout(p=4)->unterhielten sich über</Chitchat.logRulesInitiator.rulesStrings.2>
+	<Chitchat.logRulesInitiator.rulesStrings.3>talkedabout->wechselten ein paar Worte über</Chitchat.logRulesInitiator.rulesStrings.3>
+	<Chitchat.logRulesInitiator.rulesStrings.4>talkedabout->sprachen über</Chitchat.logRulesInitiator.rulesStrings.4>
+	<Chitchat.logRulesInitiator.rulesStrings.5>talkedabout->quatschten über</Chitchat.logRulesInitiator.rulesStrings.5>
+	<Chitchat.logRulesInitiator.rulesStrings.6>talkedabout->redeten über</Chitchat.logRulesInitiator.rulesStrings.6>
+	<Chitchat.logRulesInitiator.rulesStrings.7>talkedabout->scherzten über</Chitchat.logRulesInitiator.rulesStrings.7>
+	<Chitchat.logRulesInitiator.rulesStrings.8>talkedabout->witzelten über</Chitchat.logRulesInitiator.rulesStrings.8>
+
 
 
 	<DeepTalk.label>Tiefgründiges Gespräch</DeepTalk.label>
-	<DeepTalk.logRulesInitiator.rulesStrings.0>logentry->Hatte ein tiefgründiges Gespräch mit [other_nameShortIndef]. [result]</DeepTalk.logRulesInitiator.rulesStrings.0>
-	<DeepTalk.logRulesInitiator.rulesStrings.1>result(p=8)-></DeepTalk.logRulesInitiator.rulesStrings.1>
-	<DeepTalk.logRulesInitiator.rulesStrings.2>result->Ich ging [emotion] weiter.</DeepTalk.logRulesInitiator.rulesStrings.2>
-	<DeepTalk.logRulesInitiator.rulesStrings.3>result->Wir sollten wieder einmal miteinander reden.</DeepTalk.logRulesInitiator.rulesStrings.3>
-	<DeepTalk.logRulesInitiator.rulesStrings.4>result->Ich denke wir verstehen uns sehr gut.</DeepTalk.logRulesInitiator.rulesStrings.4>
-	<DeepTalk.logRulesInitiator.rulesStrings.5>result(p=0.5)->Es ist schon eine ganze Weile her seitdem ich mich mit jemanden so gut verstanden habe.</DeepTalk.logRulesInitiator.rulesStrings.5>
-	<DeepTalk.logRulesInitiator.rulesStrings.6>emotion->glücklich</DeepTalk.logRulesInitiator.rulesStrings.6>
-	<DeepTalk.logRulesInitiator.rulesStrings.7>emotion->nachdenklich</DeepTalk.logRulesInitiator.rulesStrings.7>
-	<DeepTalk.logRulesInitiator.rulesStrings.8>emotion->lächelnd</DeepTalk.logRulesInitiator.rulesStrings.8>
-	<DeepTalk.logRulesInitiator.rulesStrings.9>emotion->fröhlich</DeepTalk.logRulesInitiator.rulesStrings.9>
+	<DeepTalk.logRulesInitiator.rulesStrings.0>r_logentry->[INITIATOR_nameIndef] und [RECIPIENT_nameIndef] [talkedabout] [subject].</DeepTalk.logRulesInitiator.rulesStrings.0>
+	<DeepTalk.logRulesInitiator.rulesStrings.1>r_logentry->[INITIATOR_nameIndef] und [RECIPIENT_nameIndef] [talkedabout] [subject].</DeepTalk.logRulesInitiator.rulesStrings.1>
+
+	<DeepTalk.logRulesInitiator.rulesStrings.2>talkedabout->sprachen über ihre Gedanken zu [subject]</DeepTalk.logRulesInitiator.rulesStrings.2>
+	<DeepTalk.logRulesInitiator.rulesStrings.3>talkedabout->tauschten ihre Gedanken über [subject] aus</DeepTalk.logRulesInitiator.rulesStrings.3>
+	<DeepTalk.logRulesInitiator.rulesStrings.4>talkedabout->tauschten Ideen über [subject] aus</DeepTalk.logRulesInitiator.rulesStrings.4>
+	<DeepTalk.logRulesInitiator.rulesStrings.5>talkedabout->teilten ihre Ansichten zu [subject]</DeepTalk.logRulesInitiator.rulesStrings.5>
+	<DeepTalk.logRulesInitiator.rulesStrings.6>talkedabout->teilten ihre Hoffnungen zu [subject]</DeepTalk.logRulesInitiator.rulesStrings.6>
+	<DeepTalk.logRulesInitiator.rulesStrings.7>talkedabout->diskutierten das Thema [subject]</DeepTalk.logRulesInitiator.rulesStrings.7>
+	<DeepTalk.logRulesInitiator.rulesStrings.8>talkedabout->hatten eine tiefgründige Unterhaltung über [subject]</DeepTalk.logRulesInitiator.rulesStrings.8>
+	<DeepTalk.logRulesInitiator.rulesStrings.9>talkedabout->sprachen leise über [subject]</DeepTalk.logRulesInitiator.rulesStrings.9>
+	<DeepTalk.logRulesInitiator.rulesStrings.10>talkedabout->sprachen tiefgründig über [subject]</DeepTalk.logRulesInitiator.rulesStrings.10>
+	<DeepTalk.logRulesInitiator.rulesStrings.11>talkedabout->kamen sich über das Thema [subject] näher</DeepTalk.logRulesInitiator.rulesStrings.11>
+
+	<DeepTalk.logRulesInitiator.rulesStrings.12>subject(p=2)->[TalkTopic_heavy]</DeepTalk.logRulesInitiator.rulesStrings.12>
+	<DeepTalk.logRulesInitiator.rulesStrings.13>subject->[TalkTopic_light]</DeepTalk.logRulesInitiator.rulesStrings.13>
+
 
 
 	<Slight.label>Herablassung</Slight.label>
-	<Slight.logRulesInitiator.rulesStrings.0>logentry->Hat [other_nameShortIndef] gekränkt. [result]</Slight.logRulesInitiator.rulesStrings.0>
-	<Slight.logRulesInitiator.rulesStrings.1>result(p=8)-></Slight.logRulesInitiator.rulesStrings.1>
-	<Slight.logRulesInitiator.rulesStrings.2>result->[other_pronoun] hat es verdient.</Slight.logRulesInitiator.rulesStrings.2>
-	<Slight.logRulesInitiator.rulesStrings.3>result->Ich mag [other_objective] einfach nicht.</Slight.logRulesInitiator.rulesStrings.3>
-	<Slight.logRulesInitiator.rulesStrings.4>result->Morgen habe ich es schon vergessen.</Slight.logRulesInitiator.rulesStrings.4>
+	<Slight.logRulesInitiator.rulesStrings.0>r_logentry->[INITIATOR_nameIndef] [madefunof] [PersonalCharacteristic] von [target].</Slight.logRulesInitiator.rulesStrings.0>
 
-	<Slight.logRulesRecipient.rulesStrings.0>logentry->Wurde von [other_nameShortIndef] gekränkt. [result]</Slight.logRulesRecipient.rulesStrings.0>
-	<Slight.logRulesRecipient.rulesStrings.1>result(p=8)-></Slight.logRulesRecipient.rulesStrings.1>
-	<Slight.logRulesRecipient.rulesStrings.2>result->Was habe ich [other_objective] je getan?</Slight.logRulesRecipient.rulesStrings.2>
-	<Slight.logRulesRecipient.rulesStrings.3>result->Was auch immer.</Slight.logRulesRecipient.rulesStrings.3>
-	<Slight.logRulesRecipient.rulesStrings.4>result->[other_pronoun] muss damit aufhören.</Slight.logRulesRecipient.rulesStrings.4>
-	<Slight.logRulesRecipient.rulesStrings.5>result(p=0.2)->Ich werde dafür sorgen, dass [other_objective] damit aufhört.</Slight.logRulesRecipient.rulesStrings.5>
+	<Slight.logRulesInitiator.rulesStrings.1>target(p=4)->[RECIPIENT_nameIndef]</Slight.logRulesInitiator.rulesStrings.1>
+	<Slight.logRulesInitiator.rulesStrings.2>target->[Family] von [RECIPIENT_nameIndef]</Slight.logRulesInitiator.rulesStrings.2>
+
+	<Slight.logRulesInitiator.rulesStrings.3>madefunof->machte sich lustig über</Slight.logRulesInitiator.rulesStrings.3>
+	<Slight.logRulesInitiator.rulesStrings.4>madefunof->beleidigte</Slight.logRulesInitiator.rulesStrings.4>
+	<Slight.logRulesInitiator.rulesStrings.5>madefunof->beleidigte unterschwellig</Slight.logRulesInitiator.rulesStrings.5>
+	<Slight.logRulesInitiator.rulesStrings.6>madefunof->entwürdigte</Slight.logRulesInitiator.rulesStrings.6>
+	<Slight.logRulesInitiator.rulesStrings.7>madefunof->redete schlecht über</Slight.logRulesInitiator.rulesStrings.7>
+	<Slight.logRulesInitiator.rulesStrings.8>madefunof->redete negativ über</Slight.logRulesInitiator.rulesStrings.8>
+	<Slight.logRulesInitiator.rulesStrings.9>madefunof->lachte über</Slight.logRulesInitiator.rulesStrings.9>
+	<Slight.logRulesInitiator.rulesStrings.10>madefunof->kicherte über</Slight.logRulesInitiator.rulesStrings.10>
+	<Slight.logRulesInitiator.rulesStrings.11>madefunof->deutete nagative Sachen an über</Slight.logRulesInitiator.rulesStrings.11>
+	<Slight.logRulesInitiator.rulesStrings.12>madefunof->redete schlecht über</Slight.logRulesInitiator.rulesStrings.12>
+	<Slight.logRulesInitiator.rulesStrings.13>madefunof->machte eine herablassende Bemerkung über</Slight.logRulesInitiator.rulesStrings.13>
+	<Slight.logRulesInitiator.rulesStrings.14>madefunof->hat ein zweifelhaftes Kompliment gegeben über</Slight.logRulesInitiator.rulesStrings.14>
+
 
 
 	<Insult.label>Beleidigung</Insult.label>
-	<Insult.logRulesInitiator.rulesStrings.0>logentry->Hat [other_nameShortIndef] beleidigt. [result]</Insult.logRulesInitiator.rulesStrings.0>
-	<Insult.logRulesInitiator.rulesStrings.1>result(p=8)-></Insult.logRulesInitiator.rulesStrings.1>
-	<Insult.logRulesInitiator.rulesStrings.2>result->[other_pronoun] hat es verdient.</Insult.logRulesInitiator.rulesStrings.2>
-	<Insult.logRulesInitiator.rulesStrings.3>result->[other_pronoun]ist so ein A....</Insult.logRulesInitiator.rulesStrings.3>
-	<Insult.logRulesInitiator.rulesStrings.4>result->Ich wünschte [other_objective] würde die Kolonie verlassen.</Insult.logRulesInitiator.rulesStrings.4>
-	<Insult.logRulesInitiator.rulesStrings.5>result->Sie machen mich so wütend!</Insult.logRulesInitiator.rulesStrings.5>
+	<Insult.logRulesInitiator.rulesStrings.0>r_logentry(p=3)->[INITIATOR_nameIndef] [insulted] die [PersonalCharacteristic] von [target].</Insult.logRulesInitiator.rulesStrings.0>
+	<Insult.logRulesInitiator.rulesStrings.1>r_logentry->[INITIATOR_nameIndef] verglich [target] mit [insultcomparison].</Insult.logRulesInitiator.rulesStrings.1>
+	<Insult.logRulesInitiator.rulesStrings.2>r_logentry->[INITIATOR_nameIndef] nannte [target] [insultcomparison].</Insult.logRulesInitiator.rulesStrings.2>
 
-	<Insult.logRulesRecipient.rulesStrings.0>logentry->Wurde von [other_nameShortIndef] beleidigt. [result]</Insult.logRulesRecipient.rulesStrings.0>
-	<Insult.logRulesRecipient.rulesStrings.1>result(p=8)-></Insult.logRulesRecipient.rulesStrings.1>
-	<Insult.logRulesRecipient.rulesStrings.2>result->Was habe ich [other_objective] je getan?</Insult.logRulesRecipient.rulesStrings.2>
-	<Insult.logRulesRecipient.rulesStrings.3>result->Ich wünschte [other_objective] würde einfach von mir weg bleiben.</Insult.logRulesRecipient.rulesStrings.3>
-	<Insult.logRulesRecipient.rulesStrings.4>result->[other_objective] ist einfach nur nervig.</Insult.logRulesRecipient.rulesStrings.4>
-	<Insult.logRulesRecipient.rulesStrings.5>result->[other_pronoun] muss damit aufhören.</Insult.logRulesRecipient.rulesStrings.5>
-	<Insult.logRulesRecipient.rulesStrings.6>result(p=0.2)->Ich werde dafür sorgen, dass [other_objective] damit aufhört.</Insult.logRulesRecipient.rulesStrings.6>
+	<Insult.logRulesInitiator.rulesStrings.3>target(p=4)->[RECIPIENT_nameIndef]</Insult.logRulesInitiator.rulesStrings.3>
+	<Insult.logRulesInitiator.rulesStrings.4>target->[Family] von [RECIPIENT_nameIndef]</Insult.logRulesInitiator.rulesStrings.4>
+
+	<Insult.logRulesInitiator.rulesStrings.5>insulted(p=3)->beleidigte</Insult.logRulesInitiator.rulesStrings.5>
+	<Insult.logRulesInitiator.rulesStrings.6>insulted->beleidigte öffentlich</Insult.logRulesInitiator.rulesStrings.6>
+	<Insult.logRulesInitiator.rulesStrings.7>insulted->beleidigte lauthals</Insult.logRulesInitiator.rulesStrings.7>
+	<Insult.logRulesInitiator.rulesStrings.8>insulted->beleidigte schamlos</Insult.logRulesInitiator.rulesStrings.8>
+	<Insult.logRulesInitiator.rulesStrings.9>insulted->beleidigte direkt</Insult.logRulesInitiator.rulesStrings.9>
+	<Insult.logRulesInitiator.rulesStrings.10>insulted->beleidigte bösartig</Insult.logRulesInitiator.rulesStrings.10>
+	<Insult.logRulesInitiator.rulesStrings.11>insulted->beleidigte respektlos</Insult.logRulesInitiator.rulesStrings.11>
+	<Insult.logRulesInitiator.rulesStrings.12>insulted->verleumdete</Insult.logRulesInitiator.rulesStrings.12>
+	<Insult.logRulesInitiator.rulesStrings.13>insulted->schimpfte hemmungslos über</Insult.logRulesInitiator.rulesStrings.13>
+	<Insult.logRulesInitiator.rulesStrings.14>insulted->verspottete</Insult.logRulesInitiator.rulesStrings.14>
+
+	<Insult.logRulesInitiator.rulesStrings.15>insultcomparison(p=2)->[Animal]</Insult.logRulesInitiator.rulesStrings.15>
+	<Insult.logRulesInitiator.rulesStrings.16>insultcomparison->[Enemy]</Insult.logRulesInitiator.rulesStrings.16>
 
 
+	
 	<KindWords.label>Nette Worte</KindWords.label>
-	<KindWords.logRulesInitiator.rulesStrings.0>logentry->Hat [other_nameShortIndef] aufgemuntert. [result]</KindWords.logRulesInitiator.rulesStrings.0>
-	<KindWords.logRulesInitiator.rulesStrings.1>result(p=8)-></KindWords.logRulesInitiator.rulesStrings.1>
-	<KindWords.logRulesInitiator.rulesStrings.2>result->Mit [other_pronoun] zu reden ist der Höhepunkt meines Tages.</KindWords.logRulesInitiator.rulesStrings.2>
-	<KindWords.logRulesInitiator.rulesStrings.3>result->[other_pronoun] hat mir in sehr geholfen.</KindWords.logRulesInitiator.rulesStrings.3>
-	<KindWords.logRulesInitiator.rulesStrings.4>result->[other_pronoun] ist einfach eine wunderbare Person.</KindWords.logRulesInitiator.rulesStrings.4>
-	<KindWords.logRulesInitiator.rulesStrings.5>result->Ich bin froh, dass [other_pronoun] hier ist.</KindWords.logRulesInitiator.rulesStrings.5>
+	<KindWords.logRulesInitiator.rulesStrings.0>r_logentry->[INITIATOR_nameIndef] [complimented] die [PersonalCharacteristic] von [RECIPIENT_nameIndef].</KindWords.logRulesInitiator.rulesStrings.0>
 
-	<KindWords.logRulesRecipient.rulesStrings.0>logentry->Wurde von [other_nameShortIndef] aufgemuntert. [result]</KindWords.logRulesRecipient.rulesStrings.0>
-	<KindWords.logRulesRecipient.rulesStrings.1>result(p=8)-></KindWords.logRulesRecipient.rulesStrings.1>
-	<KindWords.logRulesRecipient.rulesStrings.2>result->Mit [other_pronoun] zu reden ist der Höhepunkt meines Tages.</KindWords.logRulesRecipient.rulesStrings.2>
-	<KindWords.logRulesRecipient.rulesStrings.3>result->[other_pronoun] hat mir in sehr geholfen.</KindWords.logRulesRecipient.rulesStrings.3>
-	<KindWords.logRulesRecipient.rulesStrings.4>result->[other_pronoun] ist einfach eine wunderbare Person.</KindWords.logRulesRecipient.rulesStrings.4>
-	<KindWords.logRulesRecipient.rulesStrings.5>result->Ich bin froh, dass [other_pronoun] hier ist.</KindWords.logRulesRecipient.rulesStrings.5>
+	<KindWords.logRulesInitiator.rulesStrings.1>complimented(p=3)->bewunderte</KindWords.logRulesInitiator.rulesStrings.1>
+	<KindWords.logRulesInitiator.rulesStrings.2>complimented->lobte</KindWords.logRulesInitiator.rulesStrings.2>
+	<KindWords.logRulesInitiator.rulesStrings.3>complimented->kommentierte</KindWords.logRulesInitiator.rulesStrings.3>
+	<KindWords.logRulesInitiator.rulesStrings.4>complimented->pries</KindWords.logRulesInitiator.rulesStrings.4>
+	<KindWords.logRulesInitiator.rulesStrings.5>complimented->applaudierte</KindWords.logRulesInitiator.rulesStrings.5>
+	<KindWords.logRulesInitiator.rulesStrings.6>complimented->feierte</KindWords.logRulesInitiator.rulesStrings.6>
+	<KindWords.logRulesInitiator.rulesStrings.7>complimented->lobte</KindWords.logRulesInitiator.rulesStrings.7>
+	<KindWords.logRulesInitiator.rulesStrings.8>complimented->sprach nett über</KindWords.logRulesInitiator.rulesStrings.8>
+	<KindWords.logRulesInitiator.rulesStrings.9>complimented->redete nett über</KindWords.logRulesInitiator.rulesStrings.9>
+	<KindWords.logRulesInitiator.rulesStrings.10>complimented->hat nette Worte gesagt über</KindWords.logRulesInitiator.rulesStrings.10>
+	<KindWords.logRulesInitiator.rulesStrings.11>complimented->redete positiv über</KindWords.logRulesInitiator.rulesStrings.11>
+	<KindWords.logRulesInitiator.rulesStrings.12>complimented->drückte Anerkennung aus über</KindWords.logRulesInitiator.rulesStrings.12>
+	<KindWords.logRulesInitiator.rulesStrings.13>complimented->sagte nur Gutes über</KindWords.logRulesInitiator.rulesStrings.13>
 
+	
+	
 </LanguageData>
