@@ -31,24 +31,24 @@
 	<RecruitSuccess>{0} hat {1} erfolgreich angeworben ({2} Chance).</RecruitSuccess>
 	<RecruitFail>{0} konnte {1} nicht anwerben ({2} Chance).</RecruitFail>
 
-	<RelatedPawnInvolvedInQuest>NAME ist {1} von {0}. Wenn NAME stirbt, wird {0} sehr lange um HIM trauern. Andererseits, wenn Du es schaffst NAME zu retten, wird {0} sehr lange sehr glücklich sein.</RelatedPawnInvolvedInQuest>
+	<RelatedPawnInvolvedInQuest>[PAWN_nameDef] ist {1} von {0}. Wenn [PAWN_nameDef] stirbt, wird {0} sehr lange um [PAWN_objective] trauern. Andererseits, wenn Du es schaffst [PAWN_nameDef] zu retten, wird {0} sehr lange sehr glücklich sein.</RelatedPawnInvolvedInQuest>
 
 	<LetterLabelBirthday>Geburtstag</LetterLabelBirthday>
-	<BirthdayChronological>{0} hat heute HISen Geburtstag! Biologisch ist {1} {3} Jahre alt. Chronologisch wurde {1} {2}.\n\nHinweis: Das chronologische Alter ist das biologische Alter plus der verbrachten Zeit in einer Kryptokapsel.</BirthdayChronological>
+	<BirthdayChronological>{0} hat heute [PAWN_possessive]en Geburtstag! Biologisch ist {1} {3} Jahre alt. Chronologisch wurde {1} {2}.\n\nHinweis: Das chronologische Alter ist das biologische Alter plus der verbrachten Zeit in einer Kryptokapsel.</BirthdayChronological>
 	<BirthdayBiologicalAgeInjuries>{0} hat das biologische Alter von {1} Jahren erreicht.\n\nFolgende altersbedingte Krankheiten wurden bei {0} festgestellt:\n{2}</BirthdayBiologicalAgeInjuries>
 
 	<LetterLabelNewDisease>Krankheit</LetterLabelNewDisease>
 	<NewDisease>{0} ist an {1} erkrankt.\nStelle sicher, dass Du ein Krankenbett und einen Arzt hast. Sorge dafür, dass {2} eine vernünftige Behandlung bekommt und so viel Zeit wie möglich im Bett verbringt, um sich schnell zu erholen.</NewDisease>
-	<NewPartDisease>{0} ist an {3} erkrankt. Die Infektion ist in HISem {1}.\nStelle sicher, dass Du ein Krankenbett und einen Arzt hast. Sorge dafür, dass {2} eine vernünftige Behandlung bekommt und so viel Zeit wie möglich im Bett verbringt, um sich schnell zu erholen.</NewPartDisease>
+	<NewPartDisease>{0} ist an {3} erkrankt. Die Infektion ist in [PAWN_possessive]em {1}.\nStelle sicher, dass Du ein Krankenbett und einen Arzt hast. Sorge dafür, dass {2} eine vernünftige Behandlung bekommt und so viel Zeit wie möglich im Bett verbringt, um sich schnell zu erholen.</NewPartDisease>
 	<NewDiseaseAnimal>{0} ist an {1} erkrankt.</NewDiseaseAnimal>
-	<NewPartDiseaseAnimal>{0} ist an {3} in HISem {1} erkrankt.</NewPartDiseaseAnimal>
+	<NewPartDiseaseAnimal>{0} ist an {3} in [PAWN_possessive]em {1} erkrankt.</NewPartDiseaseAnimal>
 
 	<PawnWasFormerlyColonist>{0} war früher aus Deiner Fraktion.</PawnWasFormerlyColonist>
 	<PawnHasTheseRelationshipsWithColonists>{0} hat diese Beziehungen zu Deinen Kolonisten:</PawnHasTheseRelationshipsWithColonists>
 	<PrisonerRescueTimeout>Das Lager wird nach {0} Tagen verschwinden. Wenn Du diese Gelegenheit verpasst, wirst Du vielleicht nie wieder etwas von {1} hören.</PrisonerRescueTimeout>
 
 	<LetterLabelAncientShrineWarning>Antiker Schrein</LetterLabelAncientShrineWarning>
-	<AncientShrineWarning>Als {0} sich der antiken Wand nähert, überkommt HIM eine unheilvolle Vorahnung. HECAP ist sich nicht sicher, warum, aber HE spürt, dass sich in dieser verstaubten Ruine eine große Gefahr verbergen könnte.</AncientShrineWarning>
+	<AncientShrineWarning>Als {0} sich der antiken Wand nähert, überkommt [PAWN_objective] eine unheilvolle Vorahnung. [PAWN_pronoun] ist sich nicht sicher, warum, aber [PAWN_pronoun] spürt, dass sich in dieser verstaubten Ruine eine große Gefahr verbergen könnte.</AncientShrineWarning>
 
 	<StruckMineable>Wir sind auf {0} gestoßen!</StruckMineable>
 
@@ -94,8 +94,8 @@
 	<LetterRelatedPawnsSite>Es sind Verwandte Deiner {0} oder Gefangenen in diesem Gebiet:</LetterRelatedPawnsSite>
 
 	<RelationshipAppendedLetterSuffix>(Verwandtschaft)</RelationshipAppendedLetterSuffix>
-	<RelationshipAppendedLetterTextColonist>NAME ist ein Verwandter eines Kolonisten. HECAP ist {0}'s {1}.</RelationshipAppendedLetterTextColonist>
-	<RelationshipAppendedLetterTextPrisoner>NAME ist ein Verwandter eines Gefangenen. HECAP ist {0}'s {1}.</RelationshipAppendedLetterTextPrisoner>
+	<RelationshipAppendedLetterTextColonist>[PAWN_nameDef] ist ein Verwandter eines Kolonisten. [PAWN_pronoun] ist {0}'s {1}.</RelationshipAppendedLetterTextColonist>
+	<RelationshipAppendedLetterTextPrisoner>[PAWN_nameDef] ist ein Verwandter eines Gefangenen. [PAWN_pronoun] ist {0}'s {1}.</RelationshipAppendedLetterTextPrisoner>
 
 	<!-- Attempt romance / propose interaction -->
 
@@ -138,7 +138,7 @@
 	<!-- Newly addicted -->
 
 	<LetterLabelNewlyAddicted>{0} süchtig</LetterLabelNewlyAddicted>
-	<LetterNewlyAddicted>{0} wurde süchtig nach {1}.\n\nHECAP benötigt jetzt {1}, sichtbar in HIS Reiter 'Bedürfnisse'. HECAP wird die Droge automatisch zu sich nehmen, um seinen Bedarf zu befriedigen. Wenn HE nichts einnehmen kann, wird HE Entzugserscheinungen bekommen.</LetterNewlyAddicted>
+	<LetterNewlyAddicted>{0} wurde süchtig nach {1}.\n\n[PAWN_pronoun] benötigt jetzt {1}, sichtbar in [PAWN_possessive] Reiter 'Bedürfnisse'. [PAWN_pronoun] wird die Droge automatisch zu sich nehmen, um seinen Bedarf zu befriedigen. Wenn [PAWN_pronoun] nichts einnehmen kann, wird [PAWN_pronoun] Entzugserscheinungen bekommen.</LetterNewlyAddicted>
 
 	<!-- Drug binge -->
 
@@ -192,10 +192,10 @@
 	<PeaceTalksSocialXPGain>Dein Unterhändler {0} hat {1} soziale Erfahrungspunkte gesammelt.</PeaceTalksSocialXPGain>
 
 	<!-- Run wild mental break -->
-	<LetterRunWildMentalBreak>{0} hat genug von der Zivilisation.\n\nHECAP hat erkannt, dass wilde Tiere immer frei sind. Aus diesem Grund hat HE sich entschieden Deine Fraktion zu verlassen und bei den wilden Tieren zu leben.\n\nDu kannst versuchen HIM zu zähmen um HIM wieder zurück zu bekommen.</LetterRunWildMentalBreak>
+	<LetterRunWildMentalBreak>{0} hat genug von der Zivilisation.\n\n[PAWN_pronoun] hat erkannt, dass wilde Tiere immer frei sind. Aus diesem Grund hat [PAWN_pronoun] sich entschieden Deine Fraktion zu verlassen und bei den wilden Tieren zu leben.\n\nDu kannst versuchen [PAWN_objective] zu zähmen um [PAWN_objective] wieder zurück zu bekommen.</LetterRunWildMentalBreak>
 
 	<!-- Catatonic mental break -->
-	<LetterCatatonicMentalBreak>{0} hat einen kompletten Nervenzusammenbruch und ist in einem katatonischen Zustand. HECAP wird sich in ein paar Tagen davon erholen.</LetterCatatonicMentalBreak>
+	<LetterCatatonicMentalBreak>{0} hat einen kompletten Nervenzusammenbruch und ist in einem katatonischen Zustand. [PAWN_pronoun] wird sich in ein paar Tagen davon erholen.</LetterCatatonicMentalBreak>
 
 	<LetterLabelAICoreOffer>KI Kern Angebot</LetterLabelAICoreOffer>
 	<LetterAICoreOffer>{0} von {1} kontaktiert dich mit einem Angebot zu folgender Information: \nDer Fundort eines KI-Kerns, welchen Du benötigst, wenn Du ein Raumschiff bauen willst. Sie informieren Dich, dass der Gegenstand sehr selten ist und normalerweise von ihren Besitzern sehr stark bewacht wird.\n\nRuf sie über die Funkanlage falls Du interessiert bist.</LetterAICoreOffer>
@@ -229,7 +229,7 @@
 
   <!-- Rescue quest -->
   <LetterLabelRescueQuestFinished>Geretteter tritt bei</LetterLabelRescueQuestFinished>
-  <LetterRescueQuestFinished>Du hast NAME gerettet und HE tritt Deiner Gruppe bei.\n\nDu kannst HIM mitnehmen, indem Du auf der Weltkarte dieses Gebiet markierst und die Option "Karawane reformieren" auswählst.</LetterRescueQuestFinished>
+  <LetterRescueQuestFinished>Du hast [PAWN_nameDef] gerettet und [PAWN_pronoun] tritt Deiner Gruppe bei.\n\nDu kannst [PAWN_objective] mitnehmen, indem Du auf der Weltkarte dieses Gebiet markierst und die Option "Karawane reformieren" auswählst.</LetterRescueQuestFinished>
 
   <!-- Player entered site (generic label) -->
   <LetterLabelPlayerEnteredNewSiteGeneric>Ort erreicht</LetterLabelPlayerEnteredNewSiteGeneric>
