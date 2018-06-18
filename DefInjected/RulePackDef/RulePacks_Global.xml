@@ -6,7 +6,7 @@
 		<li>Trans->für</li>
 		<li>Trans->von</li>
 		<li>Trans->mit</li>
-		<li>Character(p=6)->[Person]</li>
+		<li>Character(p=6)->[PersonJob]</li>
 		<li>Character(p=4)->[Animal]</li>
 		<li>Character(p=3)->[Enemy]</li>
 		<li>Character->[Mechanoid]</li>
@@ -35,6 +35,21 @@
 		<li>Shape->Stern</li>
 		<li>Shape->Kreis</li>
 		<li>Shape->Ellipse</li>
+		<li>AdjectiveAny->[AdjectiveBadass]</li>
+		<li>AdjectiveAny->[AdjectiveAngsty]</li>
+		<li>AdjectiveAny->[AdjectiveFriendly]</li>
+		<li>AdjectiveAny->[AdjectiveNatural]</li>
+		<li>ConceptAny->[ConceptPositive]</li>
+		<li>ConceptAny->[ConceptBadass]</li>
+		<li>ConceptAny->[ConceptAngsty]</li>
+	</GlobalUtility.rulePack.rulesStrings>
+
+
+
+	<TalkTopicsUtility.rulePack.rulesStrings>
+		<li>TalkTopicAny->[TalkTopicLight]</li>
+		<li>TalkTopicAny->[TalkTopicHeavy]</li>
+
 		<li>TalkTopic_light->[Vegetable]</li>
 		<li>TalkTopic_light->[Vegetable] essen</li>
 		<li>TalkTopic_light->kochen mit [Vegetable]</li>
@@ -53,15 +68,14 @@
 		<li>TalkTopic_light->[TerrainFeature]</li>
 		<li>TalkTopic_light->[NaturalObject]</li>
 		<li>TalkTopic_light->[TreeType]</li>
-		<li>TalkTopic_light->[Person]</li>
-		<li>TalkTopic_light->freundliche [Person]</li>
-		<li>TalkTopic_light->feindliche [Person]</li>
+		<li>TalkTopic_light->[PersonJob]</li>
+		<li>TalkTopic_light->freundliche [PersonJob]</li>
+		<li>TalkTopic_light->feindliche [PersonJob]</li>
 		<li>TalkTopic_light->[Enemy]</li>
 		<li>TalkTopic_light->[Enemy] bekämpfen</li>
 		<li>TalkTopic_light->[Apparel]</li>
 		<li>TalkTopic_light->[Apparel] tragen</li>
 		<li>TalkTopic_light->[Apparel] herstellen</li>
-
-	</GlobalUtility.rulePack.rulesStrings>
+	</TalkTopicsUtility.rulePack.rulesStrings>
 
 </LanguageData>
