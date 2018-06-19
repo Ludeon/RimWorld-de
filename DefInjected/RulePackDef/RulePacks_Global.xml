@@ -49,7 +49,14 @@
 	<TalkTopicsUtility.rulePack.rulesStrings>
 		<li>TalkTopicAny->[TalkTopicLight]</li>
 		<li>TalkTopicAny->[TalkTopicHeavy]</li>
+		
+        <li>TalkTopicHeavy->[talktopicheavyfile]</li>
+        <li>TalkTopicHeavy(p=0.08)->die Verbindung zwischen [talktopicheavyfile] und [talktopicheavyfile]</li>
+        <li>TalkTopicHeavy(p=0.08)->die Verbindungen zwischen [talktopicheavyfile] und [talktopicheavyfile]</li>
+        <li>TalkTopicHeavy(p=0.08)->die Beziehungen zwischen [talktopicheavyfile] und [talktopicheavyfile]</li>
 
+        <li>TalkTopicLight(p=25)->[talktopiclightfile]</li>
+		
 		<li>TalkTopic_light->[Vegetable]</li>
 		<li>TalkTopic_light->[Vegetable] essen</li>
 		<li>TalkTopic_light->kochen mit [Vegetable]</li>

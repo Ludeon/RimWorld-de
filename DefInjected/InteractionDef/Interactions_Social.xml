@@ -7,6 +7,7 @@
 	<Chitchat.logRulesInitiator.rulesStrings>
 		<li>r_logentry->[INITIATOR_nameIndef] und [RECIPIENT_nameIndef] [talkedabout] [TalkTopicLight].</li>
 		<li>r_logentry->[INITIATOR_nameIndef] und [RECIPIENT_nameIndef] [talkedabout] [TalkTopicLight].</li>
+        <li>r_logentry(p=0.8)->[INITIATOR_nameIndef] [commentedabout] [TalkTopicLight] mit [RECIPIENT_nameIndef].</li>
 
 		<li>talkedabout(p=4)->unterhielten sich über</li>
 		<li>talkedabout->wechselten ein paar Worte über</li>
@@ -15,6 +16,12 @@
 		<li>talkedabout->redeten über</li>
 		<li>talkedabout->scherzten über</li>
 		<li>talkedabout->witzelten über</li>
+		
+        <li>commentedabout->sagte etwas über</li>
+        <li>commentedabout->sprach ein Wort über</li>
+        <li>commentedabout->gab einen Kommentar über</li>
+        <li>commentedabout->redete über</li>
+        <li>commentedabout->erzählte einen Witz über</li>
 	</Chitchat.logRulesInitiator.rulesStrings>
 
 
@@ -35,8 +42,7 @@
 		<li>talkedabout->sprachen tiefgründig über [subject]</li>
 		<li>talkedabout->kamen sich über das Thema [subject] näher</li>
 
-		<li>subject(p=2)->[TalkTopicHeavy]</li>
-		<li>subject->[TalkTopicLight]</li>
+        <li>subject->[TalkTopicHeavy]</li>
 	</DeepTalk.logRulesInitiator.rulesStrings>
 
 
