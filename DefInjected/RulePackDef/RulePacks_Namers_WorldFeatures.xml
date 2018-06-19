@@ -3,9 +3,9 @@
 
 	<WorldFeatureNamerCommon.rulePack.rulesStrings>
 		<li>r_name->[metaprefix] [standardname]</li>
-		<li>r_name(p=0.05)->[storyname] [suffix]</li>
+		<li>r_name(p=0.05)->[storyname] [terrain_word]</li>
 
-		<li>standardname->[narrative_name] [suffix]</li>
+		<li>standardname->[narrative_name] [terrain_word]</li>
 
 		<li>metaprefix(p=10)-></li>
 		<li>metaprefix->[Direction]</li>
@@ -24,11 +24,11 @@
         <li>narrative_name->[AdjectiveNatural][BodyPart]</li>
         <li>narrative_name->[Animal]</li>
         <li>narrative_name->[Color]</li>
-        <li>narrative_name->[Color]-[Animal]</li>
+        <li>narrative_name->[Color]e-[Animal]</li>
         <li>narrative_name->[AdjectiveNatural]e [Animal]</li>
-        <li>narrative_name->[Animal][BodyPart]</li>
+        <li>narrative_name->[Animal]-[BodyPart]</li>
         <li>narrative_name->[Color]e [Animal]</li>
-        <li>narrative_name->[AdjectiveNatural] [Animal]</li>
+        <li>narrative_name->[AdjectiveNatural]e [Animal]</li>
         <li>narrative_name->[Animal] [BodyPart]</li>
 
         <li>storyname(p=50)->[subject]'s [maybe_basic_adjective] [story_result]</li>
@@ -85,7 +85,7 @@
 
 
 	<NamerMountainRange.rulePack.rulesStrings>
-		<li>standardname(p=0.2)->[narrative_name] Berg</li>
+		<li>standardname(p=0.2)->[narrative_name] Berge</li>
 		<li>terrain_word(p=5)->Berge</li>
 		<li>terrain_word(p=2)->Steine</li>
 		<li>terrain_word->Alpen</li>
@@ -96,7 +96,7 @@
 	
 
 	<NamerArchipelago.rulePack.rulesStrings>
-		<li>standardname(p=0.2)->Insel [narrative_name]</li>
+		<li>standardname(p=0.2)->[narrative_name] Inseln</li>
 		<li>terrain_word(p=4)->Inseln</li>
 		<li>terrain_word(p=3)->Insel</li>
 		<li>terrain_word(p=3)->Archipel</li>
@@ -111,21 +111,21 @@
 
 	
 	<NamerIsland.rulePack.rulesStrings>
-		<li>standardname(p=0.2)->Insel [narrative_name]</li>
+		<li>standardname(p=0.2)->[narrative_name] Inseln</li>
 		<li>terrain_word(p=4)->Inseln</li>
 		<li>terrain_word(p=2)->Insel</li>
 		<li>terrain_word->Riff</li>
 		<li>terrain_word->Atoll</li>
 		<li>terrain_word->Felsen</li>
 		<li>terrain_word->Inselchen</li>
-		<li>terrain_word->Spitze</li>
+		<li>terrain_word->Archipel</li>
 	</NamerIsland.rulePack.rulesStrings>
 
 
 	
 	<NamerPeninsula.rulePack.rulesStrings>
-		<li>standardname(p=0.2)->[narrative_name] Spitze</li>
-		<li>standardname(p=0.2)->Kap [narrative_name]</li>
+		<li>standardname(p=0.1)->[narrative_name] Spitze</li>
+		<li>standardname(p=0.3)->Kap [narrative_name]</li>
 		<li>terrain_word(p=5)->Halbinsel</li>
 		<li>terrain_word(p=2)->Horn</li>
 		<li>terrain_word->Kap</li>
@@ -152,8 +152,8 @@
 		<li>terrain_word->See</li>
         <li>terrain_word->Teich</li>
         <li>terrain_word->Basin</li>
-        <li>terrain_word->Reservoir</li>
-        <li>terrain_word(p=0.3)->Pfütze</li>
+        <li>terrain_word->Becken</li>
+        <li>terrain_word(p=0.3)->Basin</li>
         <li>terrain_word(p=0.3)->Lagune</li>
         <li>terrain_word(p=0.3)->Loch</li>
 	</NamerLake.rulePack.rulesStrings>
@@ -163,7 +163,7 @@
 	<NamerSea.rulePack.rulesStrings>
 		<li>standardname(p=0.1)->[narrative_name]-Meer</li>
 		<li>terrain_word(p=6)->Meer</li>
-		<li>terrain_word->Ozean</li>
+		<li>terrain_word(p=0.5)->Ozean</li>
 		<li>terrain_word->See</li>
 	</NamerSea.rulePack.rulesStrings>
 
@@ -215,15 +215,15 @@
 		<li>terrain_word->Plateau</li>
 		<li>terrain_word->Ebene</li>
 		<li>terrain_word->Becken</li>
-		<li>terrain_word->wastes</li>
-		<li>terrain_word->wasteland</li>
-		<li>terrain_word->barrens</li>
+		<li>terrain_word->Ödland</li>
+		<li>terrain_word->Dürre</li>
+		<li>terrain_word->Leere</li>
 	</NamerDesert.rulePack.rulesStrings>
 
 	
 
 	<NamerSwamp.rulePack.rulesStrings>
-		<li>standardname(p=0.1)->Moor [narrative_name]</li>
+		<li>standardname(p=0.1)->[narrative_name] Moor</li>
         <li>standardname(p=0.3)->[swamp_adjective]e [narrative_name]</li>
 
         <li>swamp_adjective->nass</li>
@@ -272,7 +272,7 @@
 		<li>terrain_word(p=6)->Wald</li>
 		<li>terrain_word->Hain</li>
 		<li>terrain_word->Waldland</li>
-		<li>terrain_word->Taiga</li>
+		<li>terrain_word->Wälder</li>
 	</NamerForest.rulePack.rulesStrings>
 
 
@@ -282,7 +282,7 @@
 		<li>terrain_word(p=3)->Taiga</li>
 		<li>terrain_word->Hain</li>
 		<li>terrain_word->Waldland</li>
-		<li>terrain_word->Wald</li>
+		<li>terrain_word->Wälder</li>
 		<li>terrain_word->Holz</li>
 		<li>terrain_word->Dickicht</li>
 	</NamerBorealForest.rulePack.rulesStrings>
@@ -304,10 +304,10 @@
 
 	<NamerIceSheet.rulePack.rulesStrings>
 		<li>terrain_word->Scholle</li>
-        <li>terrain_word->Leere</li>
-        <li>terrain_word(p=0.5)->Bereich</li>
+        <li>terrain_word->Eis</li>
+        <li>terrain_word(p=0.5)->Eisfeld</li>
         <li>terrain_word(p=0.3)->Feld</li>
-        <li>terrain_word(p=0.3)->Spanne</li>
+        <li>terrain_word(p=0.3)->Leere</li>
         <li>terrain_word(p=0.3)->Feld</li>
         <li>terrain_word(p=0.3)->Ausdehnung</li>
         <li>terrain_word(p=0.3)->Gebiet</li>
