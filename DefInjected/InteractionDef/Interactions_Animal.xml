@@ -3,10 +3,10 @@
 
 	<AnimalChat.label>Tiergespräch</AnimalChat.label>
 	<AnimalChat.logRulesInitiator.rulesStrings>
-		<li>r_logentry(p=5)->[INITIATOR_nameIndef] [tamed] [RECIPIENT_nameIndef].</li>
-		<li>r_logentry->[INITIATOR_nameIndef] saß bei [RECIPIENT_nameIndef] und redete mit sich selbst über [TalkTopicAny].</li>
-		<li>r_logentry->[INITIATOR_nameIndef] näherte sich [RECIPIENT_nameIndef] und sprach leise mit sich selbst über [TalkTopicAny].</li>
-		<li>r_logentry->[INITIATOR_nameIndef] kam nahe zu [RECIPIENT_nameIndef] während [INITIATOR_objective] mit sich selbst über [TalkTopicAny] redete.</li>
+		<li>r_logentry(p=5)->[INITIATOR_nameDef] [tamed] [RECIPIENT_nameDef].</li>
+		<li>r_logentry->[INITIATOR_nameDef] saß bei [RECIPIENT_nameDef] und redete mit sich selbst über [TalkTopicAny].</li>
+		<li>r_logentry->[INITIATOR_nameDef] näherte sich [RECIPIENT_nameDef] und sprach leise mit sich selbst über [TalkTopicAny].</li>
+		<li>r_logentry->[INITIATOR_nameDef] kam nahe zu [RECIPIENT_nameDef] während [INITIATOR_objective] mit sich selbst über [TalkTopicAny] redete.</li>
 
 		<li>tamed->machte beruhigende Laute in Richtung</li>
 		<li>tamed->machte langsame, freundliche Gesten in Richtung</li>
@@ -32,36 +32,36 @@
 
 	<TameAttempt.label>Zähmversuch</TameAttempt.label>
 	<TameAttempt.logRulesInitiator.rulesStrings>
-		<li>r_logentry->[INITIATOR_nameIndef] versuchte [RECIPIENT_nameIndef] zu zähmen.</li>
-		<li>r_logentry->[INITIATOR_nameIndef] versuchte [RECIPIENT_nameIndef] unter Kontrolle zu bringen.</li>
-		<li>r_logentry->[INITIATOR_nameIndef] versuchte [RECIPIENT_nameIndef] ein Halsband anzulegen.</li>
-		<li>r_logentry->[INITIATOR_nameIndef] forderte Gehorsam von [RECIPIENT_nameIndef].</li>
-		<li>r_logentry->[INITIATOR_nameIndef] rief [RECIPIENT_nameIndef] zu sich.</li>
-		<li>r_logentry->[INITIATOR_nameIndef] versuchte, dass [RECIPIENT_nameIndef] still sitzen blieb.</li>
-		<li>r_logentry->[INITIATOR_nameIndef] ergriff [RECIPIENT_nameIndef] und brüllte ein Kommando.</li>
-		<li>r_logentry->[INITIATOR_nameIndef] versuchte [RECIPIENT_nameIndef] still zu halten.</li>
-		<li>r_logentry->[INITIATOR_nameIndef] rief ein Befehl zu [RECIPIENT_nameIndef].</li>
-		<li>r_logentry->[INITIATOR_nameIndef] schlug [RECIPIENT_nameIndef] um seine Dominanz zu zeigen.</li>
-		<li>r_logentry->[INITIATOR_nameIndef] dirigierte [RECIPIENT_nameIndef] zurück zur Gemeinschaft.</li>
-		<li>r_logentry->[INITIATOR_nameIndef] rief [RECIPIENT_nameIndef] zurück zur Gemeinschaft zu kommen.</li>
-		<li>r_logentry->[INITIATOR_nameIndef] griff auf ein verletzbares Körperteil von [RECIPIENT_nameIndef] und forderte Gehorsam ein.</li>
-		<li>r_logentry->[INITIATOR_nameIndef] zeigte auf den Boden und forderte dass [RECIPIENT_nameIndef] herkommt.</li>
-		<li>r_logentry->[INITIATOR_nameIndef] gab [RECIPIENT_nameIndef] ein erstes Kommando.</li>
+		<li>r_logentry->[INITIATOR_nameDef] versuchte [RECIPIENT_nameDef] zu zähmen.</li>
+		<li>r_logentry->[INITIATOR_nameDef] versuchte [RECIPIENT_nameDef] unter Kontrolle zu bringen.</li>
+		<li>r_logentry->[INITIATOR_nameDef] versuchte [RECIPIENT_nameDef] ein Halsband anzulegen.</li>
+		<li>r_logentry->[INITIATOR_nameDef] forderte Gehorsam von [RECIPIENT_nameDef].</li>
+		<li>r_logentry->[INITIATOR_nameDef] rief [RECIPIENT_nameDef] zu sich.</li>
+		<li>r_logentry->[INITIATOR_nameDef] versuchte, dass [RECIPIENT_nameDef] still sitzen blieb.</li>
+		<li>r_logentry->[INITIATOR_nameDef] ergriff [RECIPIENT_nameDef] und brüllte ein Kommando.</li>
+		<li>r_logentry->[INITIATOR_nameDef] versuchte [RECIPIENT_nameDef] still zu halten.</li>
+		<li>r_logentry->[INITIATOR_nameDef] rief ein Befehl zu [RECIPIENT_nameDef].</li>
+		<li>r_logentry->[INITIATOR_nameDef] schlug [RECIPIENT_nameDef] um seine Dominanz zu zeigen.</li>
+		<li>r_logentry->[INITIATOR_nameDef] dirigierte [RECIPIENT_nameDef] zurück zur Gemeinschaft.</li>
+		<li>r_logentry->[INITIATOR_nameDef] rief [RECIPIENT_nameDef] zurück zur Gemeinschaft zu kommen.</li>
+		<li>r_logentry->[INITIATOR_nameDef] griff auf ein verletzbares Körperteil von [RECIPIENT_nameDef] und forderte Gehorsam ein.</li>
+		<li>r_logentry->[INITIATOR_nameDef] zeigte auf den Boden und forderte dass [RECIPIENT_nameDef] herkommt.</li>
+		<li>r_logentry->[INITIATOR_nameDef] gab [RECIPIENT_nameDef] ein erstes Kommando.</li>
 	</TameAttempt.logRulesInitiator.rulesStrings>
 
 
 
 	<TrainAttempt.label>Trainierversuch</TrainAttempt.label>
 	<TrainAttempt.logRulesInitiator.rulesStrings>
-		<li>r_logentry->[INITIATOR_nameIndef] [trained].</li>
+		<li>r_logentry->[INITIATOR_nameDef] [trained].</li>
 
-		<li>trained(p=2)->[tried] [RECIPIENT_nameIndef] zu trainieren</li>
-		<li>trained->[tried] [RECIPIENT_nameIndef] einen neuen Trick beizubringen</li>
-		<li>trained->[tried] [RECIPIENT_nameIndef] zu disziplinieren</li>
-		<li>trained->[tried] [RECIPIENT_nameIndef] zu instuieren</li>
-		<li>trained->[tried] [RECIPIENT_nameIndef] dazu zu bringen eine neue Fähigkeit zu lernen</li>
-		<li>trained->demonstrierte eine neue Fähigkeit für [RECIPIENT_nameIndef]</li>
-		<li>trained->ermutigte [RECIPIENT_nameIndef] eine neue Reaktion zu erlernen</li>
+		<li>trained(p=2)->[tried] [RECIPIENT_nameDef] zu trainieren</li>
+		<li>trained->[tried] [RECIPIENT_nameDef] einen neuen Trick beizubringen</li>
+		<li>trained->[tried] [RECIPIENT_nameDef] zu disziplinieren</li>
+		<li>trained->[tried] [RECIPIENT_nameDef] zu instuieren</li>
+		<li>trained->[tried] [RECIPIENT_nameDef] dazu zu bringen eine neue Fähigkeit zu lernen</li>
+		<li>trained->demonstrierte eine neue Fähigkeit für [RECIPIENT_nameDef]</li>
+		<li>trained->ermutigte [RECIPIENT_nameDef] eine neue Reaktion zu erlernen</li>
 
 		<li>tried->probierte</li>
 		<li>tried->versuchte</li>
@@ -71,8 +71,8 @@
 
 	<Nuzzle.label>Beschnüffelung</Nuzzle.label>
 	<Nuzzle.logRulesInitiator.rulesStrings>
-		<li>r_logentry(p=2)->[INITIATOR_nameIndef] [nuzzled] [nuzzleadverb] [RECIPIENT_nameIndef].</li>
-		<li>r_logentry->[INITIATOR_nameIndef] rieb [INITIATOR_possessive] Nase [nuzzleadverb] gegen [rubbedpart] von [RECIPIENT_nameIndef].</li>
+		<li>r_logentry(p=2)->[INITIATOR_nameDef] [nuzzled] [nuzzleadverb] [RECIPIENT_nameDef].</li>
+		<li>r_logentry->[INITIATOR_nameDef] rieb [INITIATOR_possessive] Nase [nuzzleadverb] gegen [rubbedpart] von [RECIPIENT_nameDef].</li>
 
 		<li>nuzzled(p=2)->beschnupperte</li>
 		<li>nuzzled->schmiegte sich an</li>

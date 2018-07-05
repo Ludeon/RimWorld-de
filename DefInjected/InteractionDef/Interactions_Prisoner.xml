@@ -3,13 +3,13 @@
 
 	<BuildRapport.label>Kennenlernen</BuildRapport.label>
 	<BuildRapport.logRulesInitiator.rulesStrings>
-		<li>r_logentry->[INITIATOR_nameIndef] erzählte [RECIPIENT_nameIndef] [toldastoryabout] [subject].</li>
-		<li>r_logentry->[INITIATOR_nameIndef] erzählte [RECIPIENT_nameIndef] über [subject].</li>
-		<li>r_logentry->[INITIATOR_nameIndef] beschrieb [subject] zu [RECIPIENT_nameIndef].</li>
-		<li>r_logentry->[INITIATOR_nameIndef] ermunterte [RECIPIENT_nameIndef] [talkabout] [subject].</li>
-		<li>r_logentry->[INITIATOR_nameIndef] gab [RECIPIENT_nameIndef] eine Chance [talkabout] [subject].</li>
-		<li>r_logentry->[INITIATOR_nameIndef] zeigte Interesse an [PersonalCharacteristic] von [RECIPIENT_nameIndef].</li>
-		<li>r_logentry->[INITIATOR_nameIndef] fragte [RECIPIENT_nameIndef] über [RECIPIENT_possessive]e [PersonalCharacteristic].</li>
+		<li>r_logentry->[INITIATOR_nameDef] erzählte [RECIPIENT_nameDef] [toldastoryabout] [subject].</li>
+		<li>r_logentry->[INITIATOR_nameDef] erzählte [RECIPIENT_nameDef] über [subject].</li>
+		<li>r_logentry->[INITIATOR_nameDef] beschrieb [subject] zu [RECIPIENT_nameDef].</li>
+		<li>r_logentry->[INITIATOR_nameDef] ermunterte [RECIPIENT_nameDef] [talkabout] [subject].</li>
+		<li>r_logentry->[INITIATOR_nameDef] gab [RECIPIENT_nameDef] eine Chance [talkabout] [subject].</li>
+		<li>r_logentry->[INITIATOR_nameDef] zeigte Interesse an [PersonalCharacteristic] von [RECIPIENT_nameDef].</li>
+		<li>r_logentry->[INITIATOR_nameDef] fragte [RECIPIENT_nameDef] über [RECIPIENT_possessive]e [PersonalCharacteristic].</li>
 
 		<li>toldastoryabout(p=2)->eine Geschichte über</li>
 		<li>toldastoryabout->eine witzige Geschichte über</li>
@@ -46,8 +46,8 @@
 
 	<RecruitAttempt.label>Anwerbungsgespräch</RecruitAttempt.label>
 	<RecruitAttempt.logRulesInitiator.rulesStrings>
-		<li>r_logentry->[INITIATOR_nameIndef] versuchte [RECIPIENT_nameIndef] anzuwerben.</li>
-		<li>r_logentry->[INITIATOR_nameIndef] versprach [goodthing] für [RECIPIENT_nameIndef] und fragte ob [RECIPIENT_pronoun] mitmachen will.</li>
+		<li>r_logentry->[INITIATOR_nameDef] versuchte [RECIPIENT_nameDef] anzuwerben.</li>
+		<li>r_logentry->[INITIATOR_nameDef] versprach [goodthing] für [RECIPIENT_nameDef] und fragte ob [RECIPIENT_pronoun] mitmachen will.</li>
 
 		<li>goodthing(p=15)->[ConceptPositive]</li>
 		<li>goodthing->[Vegetable], frisch und kostenlos</li>
@@ -57,10 +57,10 @@
 
 	<SparkJailbreak.label>Funke zum Gefängnisausbruch</SparkJailbreak.label>
 	<SparkJailbreak.logRulesInitiator.rulesStrings>
-		<li>r_logentry->[INITIATOR_nameIndef] sprach über die Freude der [freedom] und zeigte wie man entkommen kann.</li>
-		<li>r_logentry->[INITIATOR_nameIndef] sprach darüber wie schön [TerrainFeature] ist und bot Freiheit an.</li>
-		<li>r_logentry->[INITIATOR_nameIndef] zeigte [RECIPIENT_nameIndef] wie man entkommen kann und versprach die [freedom].</li>
-		<li>r_logentry->[INITIATOR_nameIndef] erzählte [RECIPIENT_nameIndef] wie lasch die Sicherheit ist und drängte darauf zu fliehen.</li>
+		<li>r_logentry->[INITIATOR_nameDef] sprach über die Freude der [freedom] und zeigte wie man entkommen kann.</li>
+		<li>r_logentry->[INITIATOR_nameDef] sprach darüber wie schön [TerrainFeature] ist und bot Freiheit an.</li>
+		<li>r_logentry->[INITIATOR_nameDef] zeigte [RECIPIENT_nameDef] wie man entkommen kann und versprach die [freedom].</li>
+		<li>r_logentry->[INITIATOR_nameDef] erzählte [RECIPIENT_nameDef] wie lasch die Sicherheit ist und drängte darauf zu fliehen.</li>
 
 		<li>freedom->Freiheit</li>
 		<li>freedom->Möglichkeit</li>

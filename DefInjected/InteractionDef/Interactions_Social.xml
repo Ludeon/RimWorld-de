@@ -5,9 +5,9 @@
 
 	<Chitchat.label>Plaudern</Chitchat.label>
 	<Chitchat.logRulesInitiator.rulesStrings>
-		<li>r_logentry->[INITIATOR_nameIndef] und [RECIPIENT_nameIndef] [talkedabout] [TalkTopicLight].</li>
-		<li>r_logentry->[INITIATOR_nameIndef] und [RECIPIENT_nameIndef] [talkedabout] [TalkTopicLight].</li>
-        <li>r_logentry(p=0.8)->[INITIATOR_nameIndef] [commentedabout] [TalkTopicLight] mit [RECIPIENT_nameIndef].</li>
+		<li>r_logentry->[INITIATOR_nameDef] und [RECIPIENT_nameDef] [talkedabout] [TalkTopicLight].</li>
+		<li>r_logentry->[INITIATOR_nameDef] und [RECIPIENT_nameDef] [talkedabout] [TalkTopicLight].</li>
+        <li>r_logentry(p=0.8)->[INITIATOR_nameDef] [commentedabout] [TalkTopicLight] mit [RECIPIENT_nameDef].</li>
 
 		<li>talkedabout(p=4)->unterhielten sich über</li>
 		<li>talkedabout->wechselten ein paar Worte über</li>
@@ -28,8 +28,8 @@
 
 	<DeepTalk.label>Tiefgründiges Gespräch</DeepTalk.label>
 	<DeepTalk.logRulesInitiator.rulesStrings>
-		<li>r_logentry->[INITIATOR_nameIndef] und [RECIPIENT_nameIndef] [talkedabout] [subject].</li>
-		<li>r_logentry->[INITIATOR_nameIndef] und [RECIPIENT_nameIndef] [talkedabout] [subject].</li>
+		<li>r_logentry->[INITIATOR_nameDef] und [RECIPIENT_nameDef] [talkedabout] [subject].</li>
+		<li>r_logentry->[INITIATOR_nameDef] und [RECIPIENT_nameDef] [talkedabout] [subject].</li>
 
 		<li>talkedabout->sprachen über ihre Gedanken zu [subject]</li>
 		<li>talkedabout->tauschten ihre Gedanken über [subject] aus</li>
@@ -49,10 +49,10 @@
 
 	<Slight.label>Herablassung</Slight.label>
 	<Slight.logRulesInitiator.rulesStrings>
-		<li>r_logentry->[INITIATOR_nameIndef] [madefunof] [PersonalCharacteristic] von [target].</li>
+		<li>r_logentry->[INITIATOR_nameDef] [madefunof] [PersonalCharacteristic] von [target].</li>
 
-		<li>target(p=4)->[RECIPIENT_nameIndef]</li>
-		<li>target->[PersonFamily] von [RECIPIENT_nameIndef]</li>
+		<li>target(p=4)->[RECIPIENT_nameDef]</li>
+		<li>target->[PersonFamily] von [RECIPIENT_nameDef]</li>
 
 		<li>madefunof->machte sich lustig über</li>
 		<li>madefunof->beleidigte</li>
@@ -72,12 +72,12 @@
 
 	<Insult.label>Beleidigung</Insult.label>
 	<Insult.logRulesInitiator.rulesStrings>
-		<li>r_logentry(p=3)->[INITIATOR_nameIndef] [insulted] die [PersonalCharacteristic] von [target].</li>
-		<li>r_logentry->[INITIATOR_nameIndef] verglich [target] mit [insultcomparison].</li>
-		<li>r_logentry->[INITIATOR_nameIndef] nannte [target] [insultcomparison].</li>
+		<li>r_logentry(p=3)->[INITIATOR_nameDef] [insulted] die [PersonalCharacteristic] von [target].</li>
+		<li>r_logentry->[INITIATOR_nameDef] verglich [target] mit [insultcomparison].</li>
+		<li>r_logentry->[INITIATOR_nameDef] nannte [target] [insultcomparison].</li>
 
-		<li>target(p=4)->[RECIPIENT_nameIndef]</li>
-		<li>target->[PersonFamily] von [RECIPIENT_nameIndef]</li>
+		<li>target(p=4)->[RECIPIENT_nameDef]</li>
+		<li>target->[PersonFamily] von [RECIPIENT_nameDef]</li>
 
 		<li>insulted(p=3)->beleidigte</li>
 		<li>insulted->beleidigte öffentlich</li>
@@ -98,7 +98,7 @@
 
 	<KindWords.label>Nette Worte</KindWords.label>
 	<KindWords.logRulesInitiator.rulesStrings>
-		<li>r_logentry->[INITIATOR_nameIndef] [complimented] die [PersonalCharacteristic] von [RECIPIENT_nameIndef].</li>
+		<li>r_logentry->[INITIATOR_nameDef] [complimented] die [PersonalCharacteristic] von [RECIPIENT_nameDef].</li>
 
 		<li>complimented(p=3)->bewunderte</li>
 		<li>complimented->lobte</li>
