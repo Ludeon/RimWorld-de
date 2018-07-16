@@ -18,18 +18,18 @@
 		<li>implement(IMPLEMENTOWNER_type==hediff,p=1)->[INITIATOR_possessive]em [WEAPON_label]</li>
 		<li>implement(IMPLEMENTOWNER_type==hediff,p=1)->[INITIATOR_possessive]e [TOOL_label]</li>
 
-		<li>adjective_bodypart->harten</li>
-		<li>adjective_bodypart->starken</li>
-		<li>adjective_bodypart->kraftvollen</li>
-		<li>adjective_bodypart->kräftigen</li>
-		<li>adjective_bodypart->mächtigen</li>
-		<li>adjective_bodypart->schroffen</li>
-		<li>adjective_bodypart->starken</li>
-		<li>adjective_bodypart->robusten</li>
-		<li>adjective_bodypart->soliden</li>
-		<li>adjective_bodypart->zähen</li>
-		<li>adjective_bodypart->unnachgiebigen</li>
-		<li>adjective_bodypart->festen</li>
+		<li>adjective_bodypart->harter</li>
+		<li>adjective_bodypart->starker</li>
+		<li>adjective_bodypart->kraftvoller</li>
+		<li>adjective_bodypart->kräftiger</li>
+		<li>adjective_bodypart->mächtiger</li>
+		<li>adjective_bodypart->schroffer</li>
+		<li>adjective_bodypart->starker</li>
+		<li>adjective_bodypart->robuster</li>
+		<li>adjective_bodypart->solider</li>
+		<li>adjective_bodypart->zäher</li>
+		<li>adjective_bodypart->unnachgiebiger</li>
+		<li>adjective_bodypart->fester</li>
 
 		<li>targetlist(RECIPIENT_part_count==1)->[RECIPIENT_part0_label]</li>
 		<li>targetlist(RECIPIENT_part_count==2)->[RECIPIENT_part0_label] und [RECIPIENT_part1_label]</li>
@@ -45,14 +45,14 @@
 		<li>destroyed(p=0.5)->ruiniert</li>
 		<li>destroyed(p=0.5)->zertrümmert</li>
 
-		<li>wince(recipient_flesh==Normal)->zusammenzucken</li>
-		<li>wince(recipient_flesh==Normal)->eine Grimasse schneiden</li>
-		<li>wince(recipient_flesh==Normal)->erschaudern</li>
-		<li>wince(recipient_flesh==Normal)->stöhnen</li>
-		<li>wince(recipient_flesh!=Mechanoid)->schreien</li>
-		<li>wince(recipient_flesh!=Mechanoid)->aufschreien</li>
-		<li>wince->zucken</li>
-		<li>wince->stolpern</li>
+		<li>wince(recipient_flesh==Normal)->zusammenzuckend</li>
+		<li>wince(recipient_flesh==Normal)->eine Grimasse schneidend</li>
+		<li>wince(recipient_flesh==Normal)->erschaudernd</li>
+		<li>wince(recipient_flesh==Normal)->stöhnend</li>
+		<li>wince(recipient_flesh!=Mechanoid)->schreiend</li>
+		<li>wince(recipient_flesh!=Mechanoid)->aufschreiend</li>
+		<li>wince->zuckend</li>
+		<li>wince->stolpernd</li>
 
 		<li>painstate->vor</li>
 		<li>painstate->wegen der</li>
