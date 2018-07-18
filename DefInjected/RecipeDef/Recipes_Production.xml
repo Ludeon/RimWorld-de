@@ -1,40 +1,67 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
-	<Make_StoneBlocksAny.label>Alle Steinblöcke herstellen</Make_StoneBlocksAny.label>
-	<Make_StoneBlocksAny.description>Verarbeite Felsbrocken zu nutzbaren Steinblöcken.</Make_StoneBlocksAny.description>
-	<Make_StoneBlocksAny.jobString>Verarbeitet Felsbrocken.</Make_StoneBlocksAny.jobString>
-
-	<ExtractMetalFromSlag.label>Schlacke einschmelzen</ExtractMetalFromSlag.label>
-	<ExtractMetalFromSlag.description>Benutze Wärme und starke Elektromagnete, um nützliches Metall aus Schlackebrocken zu extrahieren.</ExtractMetalFromSlag.description>
-	<ExtractMetalFromSlag.jobString>Verarbeitet Schlackebrocken zu Metall.</ExtractMetalFromSlag.jobString>
-
-	<SmeltWeapon.label>Waffe einschmelzen</SmeltWeapon.label>
-	<SmeltWeapon.description>Benutzt Wärme und starke Elektromagnete, um Waffen in Metall einzuschmelzen.</SmeltWeapon.description>
-	<SmeltWeapon.jobString>Verarbeitet Waffe zu Metall.</SmeltWeapon.jobString>
-
-	<DestroyWeapon.label>Waffe zerstören</DestroyWeapon.label>
-	<DestroyWeapon.description>Verwende Wärme, um nicht benötigte Waffen zu zerstören. Dieser Prozess ist schneller als Einschmelzen und funktioniert auch bei nicht schmelzbaren Waffen, erzeugt aber keine Rohstoffe.</DestroyWeapon.description>
-	<DestroyWeapon.jobString>Zerstört Waffe.</DestroyWeapon.jobString>
-
-	<Make_ChemfuelFromWood.label>Stelle Kraftstoff her (Holz)</Make_ChemfuelFromWood.label>
-	<Make_ChemfuelFromWood.description>Raffiniere Kraftstoff durch das Extrahieren und Kondensieren von Holzgas aus Holz.</Make_ChemfuelFromWood.description>
-	<Make_ChemfuelFromWood.jobString>Raffiniere Kraftstoff</Make_ChemfuelFromWood.jobString>
-
-	<Make_ChemfuelFromOrganics.label>Stelle Kraftstoff her (organisch)</Make_ChemfuelFromOrganics.label>
-	<Make_ChemfuelFromOrganics.description>Raffiniere Kraftstoff, indem Biodiesel aus organischer Materie extrahiert wird.</Make_ChemfuelFromOrganics.description>
-	<Make_ChemfuelFromOrganics.jobString>Raffiniere Kraftstoff</Make_ChemfuelFromOrganics.jobString>
-
-	<Make_ComponentIndustrial.label>Produziere Bauteil</Make_ComponentIndustrial.label>
-	<Make_ComponentIndustrial.description>Produziere ein Bauteil.</Make_ComponentIndustrial.description>
-	<Make_ComponentIndustrial.jobString>Produziert Bauteil.</Make_ComponentIndustrial.jobString>
-
-	<Make_ComponentSpacer.label>Produziere Hightech-Bauteil</Make_ComponentSpacer.label>
-	<Make_ComponentSpacer.description>Produziere ein Hightech-Bauteil.</Make_ComponentSpacer.description>
-	<Make_ComponentSpacer.jobString>Produziert Hightech-Bauteil.</Make_ComponentSpacer.jobString>
-
-	<Make_Patchleather.label>Produziere Flickenleder</Make_Patchleather.label>
-	<Make_Patchleather.description>Kombiniere mehrere Lederarten um ein schwaches Flickenleder herzustellen.</Make_Patchleather.description>
-	<Make_Patchleather.jobString>Produziert Flickenleder.</Make_Patchleather.jobString>
-
+  
+  <!-- EN: Destroying weapon. -->
+  <DestroyWeapon.jobString>Zerstört Waffe.</DestroyWeapon.jobString>
+  <!-- EN: destroy weapon -->
+  <DestroyWeapon.label>Waffe zerstören</DestroyWeapon.label>
+  <!-- EN: Use heat to destroy unwanted weapons. This process is faster than smelting, and works on non-smeltable items, but yields no resources. -->
+  <DestroyWeapon.description>Verwende Wärme, um nicht benötigte Waffen zu zerstören. Dieser Prozess ist schneller als Einschmelzen und funktioniert auch bei nicht schmelzbaren Waffen, erzeugt aber keine Rohstoffe.</DestroyWeapon.description>
+  
+  <!-- EN: Smelting metal from slag. -->
+  <ExtractMetalFromSlag.jobString>Verarbeitet Schlackebrocken zu Metall.</ExtractMetalFromSlag.jobString>
+  <!-- EN: smelt metal from slag -->
+  <ExtractMetalFromSlag.label>Schlacke einschmelzen</ExtractMetalFromSlag.label>
+  <!-- EN: Use heat and strong electromagnets to extract useful metal from slag chunks. -->
+  <ExtractMetalFromSlag.description>Benutze Wärme und starke Elektromagnete, um nützliches Metall aus Schlackebrocken zu extrahieren.</ExtractMetalFromSlag.description>
+  
+  <!-- EN: Refining chemfuel from organics. -->
+  <Make_ChemfuelFromOrganics.jobString>Raffiniere Kraftstoff</Make_ChemfuelFromOrganics.jobString>
+  <!-- EN: make chemfuel from organics -->
+  <Make_ChemfuelFromOrganics.label>Stelle Kraftstoff her (organisch)</Make_ChemfuelFromOrganics.label>
+  <!-- EN: Make a batch of chemfuel by extracting biofuel from organic feedstocks. -->
+  <Make_ChemfuelFromOrganics.description>Raffiniere Kraftstoff, indem Biodiesel aus organischer Materie extrahiert wird.</Make_ChemfuelFromOrganics.description>
+  
+  <!-- EN: Refining chemfuel from wood. -->
+  <Make_ChemfuelFromWood.jobString>Raffiniere Kraftstoff</Make_ChemfuelFromWood.jobString>
+  <!-- EN: make chemfuel from wood -->
+  <Make_ChemfuelFromWood.label>Stelle Kraftstoff her (Holz)</Make_ChemfuelFromWood.label>
+  <!-- EN: Make a batch of chemfuel by extracting and condensing wood gas from logs. -->
+  <Make_ChemfuelFromWood.description>Raffiniere Kraftstoff durch das Extrahieren und Kondensieren von Holzgas aus Holz.</Make_ChemfuelFromWood.description>
+  
+  <!-- EN: Making component. -->
+  <Make_ComponentIndustrial.jobString>Produziert Bauteil.</Make_ComponentIndustrial.jobString>
+  <!-- EN: make component -->
+  <Make_ComponentIndustrial.label>Produziere Bauteil</Make_ComponentIndustrial.label>
+  <!-- EN: Make a component. -->
+  <Make_ComponentIndustrial.description>Produziere ein Bauteil.</Make_ComponentIndustrial.description>
+  
+  <!-- EN: Making advanced component. -->
+  <Make_ComponentSpacer.jobString>Produziert Hightech-Bauteil.</Make_ComponentSpacer.jobString>
+  <!-- EN: make advanced component -->
+  <Make_ComponentSpacer.label>Produziere Hightech-Bauteil</Make_ComponentSpacer.label>
+  <!-- EN: Make an advanced component. -->
+  <Make_ComponentSpacer.description>Produziere ein Hightech-Bauteil.</Make_ComponentSpacer.description>
+  
+  <!-- EN: Making patchleather. -->
+  <Make_Patchleather.jobString>Produziert Flickenleder.</Make_Patchleather.jobString>
+  <!-- EN: make patchleather -->
+  <Make_Patchleather.label>Produziere Flickenleder</Make_Patchleather.label>
+  <!-- EN: Combine various types of leather to create weak patchleather. -->
+  <Make_Patchleather.description>Kombiniere mehrere Lederarten um ein schwaches Flickenleder herzustellen.</Make_Patchleather.description>
+  
+  <!-- EN: Cutting stone blocks from chunk. -->
+  <Make_StoneBlocksAny.jobString>Verarbeitet Felsbrocken.</Make_StoneBlocksAny.jobString>
+  <!-- EN: make any stone blocks -->
+  <Make_StoneBlocksAny.label>Alle Steinblöcke herstellen</Make_StoneBlocksAny.label>
+  <!-- EN: Cut rock chunks into usable stone blocks. -->
+  <Make_StoneBlocksAny.description>Verarbeite Felsbrocken zu nutzbaren Steinblöcken.</Make_StoneBlocksAny.description>
+  
+  <!-- EN: Smelting weapon. -->
+  <SmeltWeapon.jobString>Verarbeitet Waffe zu Metall.</SmeltWeapon.jobString>
+  <!-- EN: smelt weapon -->
+  <SmeltWeapon.label>Waffe einschmelzen</SmeltWeapon.label>
+  <!-- EN: Use heat and strong electromagnets to break down weapons into useful resources. -->
+  <SmeltWeapon.description>Benutzt Wärme und starke Elektromagnete, um Waffen in Metall einzuschmelzen.</SmeltWeapon.description>
+  
 </LanguageData>

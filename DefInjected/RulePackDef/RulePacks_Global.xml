@@ -1,88 +1,182 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
-	<GlobalUtility.rulePack.rulesStrings>
-	    <li>Trans->aus</li>
-		<li>Trans->für</li>
-		<li>Trans->von</li>
-		<li>Trans->mit</li>
-		<li>Character(p=6)->[PersonJob]</li>
-		<li>Character(p=4)->[Animal]</li>
-		<li>Character(p=3)->[Enemy]</li>
-		<li>Character->[Mechanoid]</li>
-		<li>Quantity_adjphrase->zwei</li>
-		<li>Quantity_adjphrase->drei</li>
-		<li>Quantity_adjphrase->vier</li>
-		<li>Quantity_adjphrase->fünf</li>
-		<li>Quantity_adjphrase->sex</li>
-		<li>Quantity_adjphrase->sieben</li>
-		<li>Quantity_adjphrase->acht</li>
-		<li>Quantity_adjphrase->neun</li>
-		<li>Quantity_adjphrase->zehn</li>
-		<li>Quantity_adjphrase->einige</li>
-		<li>Quantity_adjphrase->eine Gruppe</li>
-		<li>Quantity_adjphrase->eine große Gruppe</li>
-		<li>Quantity_adjphrase->dutzende</li>
-		<li>Quantity_adjphrase->hunderte</li>
-		<li>Quantity_adjphrase->tausend</li>
-		<li>Quantity_adjphrase->tausende</li>
-		<li>Shape->Dreieck</li>
-		<li>Shape->Quadrat</li>
-		<li>Shape->Rechteck</li>
-		<li>Shape->Kegel</li>
-		<li>Shape->Linie</li>
-		<li>Shape->Herz</li>
-		<li>Shape->Stern</li>
-		<li>Shape->Kreis</li>
-		<li>Shape->Ellipse</li>
-		<li>AdjectiveAny->[AdjectiveBadass]</li>
-		<li>AdjectiveAny->[AdjectiveAngsty]</li>
-		<li>AdjectiveAny->[AdjectiveFriendly]</li>
-		<li>AdjectiveAny->[AdjectiveNatural]</li>
-		<li>ConceptAny->[ConceptPositive]</li>
-		<li>ConceptAny->[ConceptBadass]</li>
-		<li>ConceptAny->[ConceptAngsty]</li>
-	</GlobalUtility.rulePack.rulesStrings>
-
-
-
-	<TalkTopicsUtility.rulePack.rulesStrings>
-		<li>TalkTopicAny->[TalkTopicLight]</li>
-		<li>TalkTopicAny->[TalkTopicHeavy]</li>
-		
-        <li>TalkTopicHeavy->[talktopicheavyfile]</li>
-        <li>TalkTopicHeavy(p=0.08)->die Verbindung zwischen [talktopicheavyfile] und [talktopicheavyfile]</li>
-        <li>TalkTopicHeavy(p=0.08)->die Verbindungen zwischen [talktopicheavyfile] und [talktopicheavyfile]</li>
-        <li>TalkTopicHeavy(p=0.08)->die Beziehungen zwischen [talktopicheavyfile] und [talktopicheavyfile]</li>
-
-        <li>TalkTopicLight(p=25)->[talktopiclightfile]</li>
-		
-		<li>TalkTopic_light->[Vegetable]</li>
-		<li>TalkTopic_light->[Vegetable] essen</li>
-		<li>TalkTopic_light->kochen mit [Vegetable]</li>
-		<li>TalkTopic_light->[Game]</li>
-		<li>TalkTopic_light->[Game] spielen</li>
-		<li>TalkTopic_light->[Game] üben</li>
-		<li>TalkTopic_light->[Game] lernen</li>
-		<li>TalkTopic_light->[Animal]</li>
-		<li>TalkTopic_light->[Animal] trainieren</li>
-		<li>TalkTopic_light->[Animal] zähmen</li>
-		<li>TalkTopic_light->mit [Animal] kämpfen</li>
-		<li>TalkTopic_light->[Animal] wird verrückt</li>
-		<li>TalkTopic_light->[Weapon]</li>
-		<li>TalkTopic_light->[Weapon] verwenden</li>
-		<li>TalkTopic_light->mit [Weapon] üben</li>
-		<li>TalkTopic_light->[TerrainFeature]</li>
-		<li>TalkTopic_light->[NaturalObject]</li>
-		<li>TalkTopic_light->[TreeType]</li>
-		<li>TalkTopic_light->[PersonJob]</li>
-		<li>TalkTopic_light->freundliche [PersonJob]</li>
-		<li>TalkTopic_light->feindliche [PersonJob]</li>
-		<li>TalkTopic_light->[Enemy]</li>
-		<li>TalkTopic_light->[Enemy] bekämpfen</li>
-		<li>TalkTopic_light->[Apparel]</li>
-		<li>TalkTopic_light->[Apparel] tragen</li>
-		<li>TalkTopic_light->[Apparel] herstellen</li>
-	</TalkTopicsUtility.rulePack.rulesStrings>
-
+  
+  <!-- EN:
+    <li>Trans->of</li>
+    <li>Trans->for</li>
+    <li>Trans->by</li>
+    <li>Trans->with</li>
+    <li>Character(p=6)->[PersonJob]</li>
+    <li>Character(p=4)->[Animal]</li>
+    <li>Character(p=3)->[Enemy]</li>
+    <li>Character->[Mechanoid]</li>
+    <li>Quantity_adjphrase->two</li>
+    <li>Quantity_adjphrase->three</li>
+    <li>Quantity_adjphrase->four</li>
+    <li>Quantity_adjphrase->five</li>
+    <li>Quantity_adjphrase->six</li>
+    <li>Quantity_adjphrase->seven</li>
+    <li>Quantity_adjphrase->eight</li>
+    <li>Quantity_adjphrase->nine</li>
+    <li>Quantity_adjphrase->ten</li>
+    <li>Quantity_adjphrase->several</li>
+    <li>Quantity_adjphrase->a group of</li>
+    <li>Quantity_adjphrase->a large group of</li>
+    <li>Quantity_adjphrase->dozens of</li>
+    <li>Quantity_adjphrase->hundreds of</li>
+    <li>Quantity_adjphrase->a thousand</li>
+    <li>Quantity_adjphrase->thousands of</li>
+    <li>Shape->triangle</li>
+    <li>Shape->square</li>
+    <li>Shape->rectangle</li>
+    <li>Shape->cone</li>
+    <li>Shape->line</li>
+    <li>Shape->heart</li>
+    <li>Shape->star</li>
+    <li>Shape->circle</li>
+    <li>Shape->ellipse</li>
+    <li>AdjectiveAny->[AdjectiveBadass]</li>
+    <li>AdjectiveAny->[AdjectiveAngsty]</li>
+    <li>AdjectiveAny->[AdjectiveFriendly]</li>
+    <li>AdjectiveAny->[AdjectiveNatural]</li>
+    <li>ConceptAny->[ConceptPositive]</li>
+    <li>ConceptAny->[ConceptBadass]</li>
+    <li>ConceptAny->[ConceptAngsty]</li>
+    <li>PersonalCharacteristic(p=0.15)->genitals</li>
+    <li>PersonalCharacteristic(p=0.15)->pubic hair</li>
+    <li>PersonalCharacteristic(p=0.15)->body hair</li>
+    <li>PersonalCharacteristic(p=0.15)->toilet habits</li>
+    <li>PersonalCharacteristic(p=0.15)->sexual prowess</li>
+    <li>PersonalCharacteristic(p=0.15)->sexual preferences</li>
+    <li>PersonalCharacteristic(p=0.15)->sexual experience</li>
+  -->
+  <GlobalUtility.rulePack.rulesStrings>
+    <li>Trans->aus</li>
+    <li>Trans->für</li>
+    <li>Trans->von</li>
+    <li>Trans->mit</li>
+    <li>Character(p=6)->[PersonJob]</li>
+    <li>Character(p=4)->[Animal]</li>
+    <li>Character(p=3)->[Enemy]</li>
+    <li>Character->[Mechanoid]</li>
+    <li>Quantity_adjphrase->zwei</li>
+    <li>Quantity_adjphrase->drei</li>
+    <li>Quantity_adjphrase->vier</li>
+    <li>Quantity_adjphrase->fünf</li>
+    <li>Quantity_adjphrase->sex</li>
+    <li>Quantity_adjphrase->sieben</li>
+    <li>Quantity_adjphrase->acht</li>
+    <li>Quantity_adjphrase->neun</li>
+    <li>Quantity_adjphrase->zehn</li>
+    <li>Quantity_adjphrase->einige</li>
+    <li>Quantity_adjphrase->eine Gruppe</li>
+    <li>Quantity_adjphrase->eine große Gruppe</li>
+    <li>Quantity_adjphrase->dutzende</li>
+    <li>Quantity_adjphrase->hunderte</li>
+    <li>Quantity_adjphrase->tausend</li>
+    <li>Quantity_adjphrase->tausende</li>
+    <li>Shape->Dreieck</li>
+    <li>Shape->Quadrat</li>
+    <li>Shape->Rechteck</li>
+    <li>Shape->Kegel</li>
+    <li>Shape->Linie</li>
+    <li>Shape->Herz</li>
+    <li>Shape->Stern</li>
+    <li>Shape->Kreis</li>
+    <li>Shape->Ellipse</li>
+    <li>AdjectiveAny->[AdjectiveBadass]</li>
+    <li>AdjectiveAny->[AdjectiveAngsty]</li>
+    <li>AdjectiveAny->[AdjectiveFriendly]</li>
+    <li>AdjectiveAny->[AdjectiveNatural]</li>
+    <li>ConceptAny->[ConceptPositive]</li>
+    <li>ConceptAny->[ConceptBadass]</li>
+    <li>ConceptAny->[ConceptAngsty]</li>
+    <li>PersonalCharacteristic(p=0.15)->Geschlechtsteil</li>
+    <li>PersonalCharacteristic(p=0.15)->Schambehaarung</li>
+    <li>PersonalCharacteristic(p=0.15)->Körperbehaarung</li>
+    <li>PersonalCharacteristic(p=0.15)->Toilettengewohnheiten</li>
+    <li>PersonalCharacteristic(p=0.15)->sexuelle Fähigkeiten</li>
+    <li>PersonalCharacteristic(p=0.15)->sexuelle Vorlieben</li>
+    <li>PersonalCharacteristic(p=0.15)->sexuelle Erfahrung</li>
+  </GlobalUtility.rulePack.rulesStrings>
+  
+  <!-- EN:
+    <li>TalkTopicAny->[TalkTopicLight]</li>
+    <li>TalkTopicAny->[TalkTopicHeavy]</li>
+    <li>TalkTopicHeavy->[talktopicheavyfile]</li>
+    <li>TalkTopicHeavy(p=0.08)->the link between [talktopicheavyfile] and [talktopicheavyfile]</li>
+    <li>TalkTopicHeavy(p=0.08)->the connection between [talktopicheavyfile] and [talktopicheavyfile]</li>
+    <li>TalkTopicHeavy(p=0.08)->the relationship between [talktopicheavyfile] and [talktopicheavyfile]</li>
+    <li>TalkTopicLight(p=25)->[talktopiclightfile]</li>
+    <li>TalkTopicLight->[Vegetable]s</li>
+    <li>TalkTopicLight->eating [Vegetable]s</li>
+    <li>TalkTopicLight->cooking with [Vegetable]s</li>
+    <li>TalkTopicLight->[Game]</li>
+    <li>TalkTopicLight->playing [Game]</li>
+    <li>TalkTopicLight->practicing [Game]</li>
+    <li>TalkTopicLight->learning [Game]</li>
+    <li>TalkTopicLight->[Animal]s</li>
+    <li>TalkTopicLight->training [Animal]s</li>
+    <li>TalkTopicLight->taming [Animal]s</li>
+    <li>TalkTopicLight->fighting [Animal]s</li>
+    <li>TalkTopicLight->crazy [Animal]s</li>
+    <li>TalkTopicLight->[Weapon]s</li>
+    <li>TalkTopicLight->using [Weapon]s</li>
+    <li>TalkTopicLight->practicing with [Weapon]s</li>
+    <li>TalkTopicLight->[TerrainFeature]s</li>
+    <li>TalkTopicLight->[NaturalObject]s</li>
+    <li>TalkTopicLight->[TreeType] trees</li>
+    <li>TalkTopicLight->[PersonJob]s</li>
+    <li>TalkTopicLight->friendly [PersonJob]s</li>
+    <li>TalkTopicLight->hostile [PersonJob]s</li>
+    <li>TalkTopicLight->[Enemy]s</li>
+    <li>TalkTopicLight->fighting [Enemy]s</li>
+    <li>TalkTopicLight->[Apparel]s</li>
+    <li>TalkTopicLight->wearing [Apparel]s</li>
+    <li>TalkTopicLight->making [Apparel]s</li>
+    <li>talktopicheavyfile(p=0.15)->sex</li>
+    <li>talktopicheavyfile(p=0.15)->seduction</li>
+    <li>talktopicheavyfile(p=0.15)->animal sexuality</li>
+    <li>talktopicheavyfile(p=0.15)->sexual fetishes</li>
+  -->
+  <TalkTopicsUtility.rulePack.rulesStrings>
+    <li>TalkTopicAny->[TalkTopicLight]</li>
+    <li>TalkTopicAny->[TalkTopicHeavy]</li>
+    <li>TalkTopicHeavy->[talktopicheavyfile]</li>
+    <li>TalkTopicHeavy(p=0.08)->die Verbindung zwischen [talktopicheavyfile] und [talktopicheavyfile]</li>
+    <li>TalkTopicHeavy(p=0.08)->die Verbindungen zwischen [talktopicheavyfile] und [talktopicheavyfile]</li>
+    <li>TalkTopicHeavy(p=0.08)->die Beziehungen zwischen [talktopicheavyfile] und [talktopicheavyfile]</li>
+    <li>TalkTopicLight(p=25)->[talktopiclightfile]</li>
+    <li>TalkTopic_light->[Vegetable]</li>
+    <li>TalkTopic_light->[Vegetable] essen</li>
+    <li>TalkTopic_light->kochen mit [Vegetable]</li>
+    <li>TalkTopic_light->[Game]</li>
+    <li>TalkTopic_light->[Game] spielen</li>
+    <li>TalkTopic_light->[Game] üben</li>
+    <li>TalkTopic_light->[Game] lernen</li>
+    <li>TalkTopic_light->[Animal]</li>
+    <li>TalkTopic_light->[Animal] trainieren</li>
+    <li>TalkTopic_light->[Animal] zähmen</li>
+    <li>TalkTopic_light->mit [Animal] kämpfen</li>
+    <li>TalkTopic_light->[Animal] wird verrückt</li>
+    <li>TalkTopic_light->[Weapon]</li>
+    <li>TalkTopic_light->[Weapon] verwenden</li>
+    <li>TalkTopic_light->mit [Weapon] üben</li>
+    <li>TalkTopic_light->[TerrainFeature]</li>
+    <li>TalkTopic_light->[NaturalObject]</li>
+    <li>TalkTopic_light->[TreeType]</li>
+    <li>TalkTopic_light->[PersonJob]</li>
+    <li>TalkTopic_light->freundliche [PersonJob]</li>
+    <li>TalkTopic_light->feindliche [PersonJob]</li>
+    <li>TalkTopic_light->[Enemy]</li>
+    <li>TalkTopic_light->[Enemy] bekämpfen</li>
+    <li>TalkTopic_light->[Apparel]</li>
+    <li>TalkTopic_light->[Apparel] tragen</li>
+    <li>TalkTopic_light->[Apparel] herstellen</li>
+    <li>talktopicheavyfile(p=0.15)->Sex</li>
+    <li>talktopicheavyfile(p=0.15)->Verführung</li>
+    <li>talktopicheavyfile(p=0.15)->Tierische Sexualität</li>
+    <li>talktopicheavyfile(p=0.15)->sexuelle Fetische</li>
+  </TalkTopicsUtility.rulePack.rulesStrings>
+  
 </LanguageData>
