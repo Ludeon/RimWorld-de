@@ -13,6 +13,8 @@ Official Translators:
 ---------------------
 - Haplo
 - TheEisbaer
+- TeiXeR
+- Ragnar-F
 
 If you want to be added to the list of translators, there is just one rule:
 You have to help with the translations over at least two major releases.
