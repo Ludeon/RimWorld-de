@@ -10,10 +10,10 @@
     <li>r_logentry->[INITIATOR_nameDef] told [RECIPIENT_nameDef] that it would be best to see other people.</li>
   -->
   <Breakup.logRulesInitiator.rulesStrings>
-    <li>r_logentry->[INITIATOR_nameDef] fragte [OTHER_nameDef] nach einer Auszeit.</li>
-    <li>r_logentry->[INITIATOR_nameDef] erklärte [OTHER_nameDef], dass etwas Abstand notwendig ist.</li>
-    <li>r_logentry->[INITIATOR_nameDef] sagte [OTHER_nameDef], dass das nicht funktioniert.</li>
-    <li>r_logentry->[INITIATOR_nameDef] erklärte [OTHER_nameDef], dass es besser ist, wenn sie andere Leute sehen.</li>
+    <li>r_logentry->[INITIATOR_nameDef] fragte [RECIPIENT_nameDef] nach einer Auszeit.</li>
+    <li>r_logentry->[INITIATOR_nameDef] erklärte [RECIPIENT_nameDef], dass etwas Abstand notwendig ist.</li>
+    <li>r_logentry->[INITIATOR_nameDef] sagte [RECIPIENT_nameDef], dass das nicht funktioniert.</li>
+    <li>r_logentry->[INITIATOR_nameDef] erklärte [RECIPIENT_nameDef], dass es besser ist, wenn sie andere Leute sehen.</li>
   </Breakup.logRulesInitiator.rulesStrings>
   
   <!-- EN: marriage proposal -->
@@ -24,9 +24,9 @@
     <li>r_logentry->[INITIATOR_nameDef] told [RECIPIENT_nameDef] that [INITIATOR_pronoun] wants to spend [INITIATOR_possessive] life with [RECIPIENT_objective].</li>
   -->
   <MarriageProposal.logRulesInitiator.rulesStrings>
-    <li>r_logentry->[INITIATOR_nameDef] hat [OTHER_nameDef] einen Heiratsantrag gemacht.</li>
-    <li>r_logentry->[INITIATOR_nameDef] hat [OTHER_nameDef] die lebenslange Treue geschworen.</li>
-    <li>r_logentry->[INITIATOR_nameDef] kniete nieder und erklärte [OTHER_nameDef], dass [INITIATOR_pronoun] den Rest [INITIATOR_possessive]es Lebens mit [OTHER_objective] verbringen will.</li>
+    <li>r_logentry->[INITIATOR_nameDef] hat [RECIPIENT_nameDef] einen Heiratsantrag gemacht.</li>
+    <li>r_logentry->[INITIATOR_nameDef] hat [RECIPIENT_nameDef] die lebenslange Treue geschworen.</li>
+    <li>r_logentry->[INITIATOR_nameDef] kniete nieder und erklärte [RECIPIENT_nameDef], dass [INITIATOR_pronoun] den Rest [INITIATOR_possessive]es Lebens mit [RECIPIENT_objective] verbringen will.</li>
   </MarriageProposal.logRulesInitiator.rulesStrings>
   
   <!-- EN: romance attempt -->
@@ -94,24 +94,24 @@
     <li>romantic_noun(p=2)->[NaturalObject]</li>
   -->
   <RomanceAttempt.logRulesInitiator.rulesStrings>
-    <li>r_logentry->[INITIATOR_nameDef] [wooed] [OTHER_nameDef] durch [wootactic].</li>
+    <li>r_logentry->[INITIATOR_nameDef] [wooed] [RECIPIENT_nameDef] durch [wootactic].</li>
     <li>wooed->versuchte einen Flirt mit</li>
     <li>wooed->flirtete mit</li>
     <li>wooed->umwarb</li>
     <li>wooed->romantisierte</li>
-    <li>wooed->zeigte [OTHER_possessive]e Liebe für</li>
+    <li>wooed->zeigte [RECIPIENT_possessive]e Liebe für</li>
     <li>wooed->umgarnte</li>
     <li>wooed->umlockte</li>
     <li>wooed->bezauberte</li>
     <li>wooed->umwarb</li>
-    <li>wootactic(p=4)->[complimenting] [OTHER_possessive] [PersonalCharacteristic]</li>
+    <li>wootactic(p=4)->[complimenting] [RECIPIENT_possessive] [PersonalCharacteristic]</li>
     <li>wootactic->das Erzählen einer Geschichte über [TalkTopicAny]</li>
     <li>wootactic->das Erzählen einer Fabel über [TalkTopicAny]</li>
     <li>wootactic->witzeln über [TalkTopicAny]</li>
-    <li>wootactic->das Beschreiben [OTHER_possessive]er Beobachtung von [TalkTopicAny]</li>
+    <li>wootactic->das Beschreiben [RECIPIENT_possessive]er Beobachtung von [TalkTopicAny]</li>
     <li>wootactic(p=2)->[boasting] [INITIATOR_possessive]er [PersonalCharacteristic]</li>
-    <li>wootactic->den Vergleich von [OTHER_objective] zur [romantic_adj][romantic_noun]</li>
-    <li>wootactic->das Beschreiben von [OTHER_objective] als [romantic_adj][romantic_noun]</li>
+    <li>wootactic->den Vergleich von [RECIPIENT_objective] zur [romantic_adj][romantic_noun]</li>
+    <li>wootactic->das Beschreiben von [RECIPIENT_objective] als [romantic_adj][romantic_noun]</li>
     <li>boasting->prahlen mit</li>
     <li>boasting->erwähnen</li>
     <li>boasting->positives Implizieren</li>

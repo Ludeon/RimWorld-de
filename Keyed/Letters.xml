@@ -30,7 +30,7 @@
   <Death>Tod</Death>
 
   <!-- EN: A {1_label} has short-circuited in the rain and started a fire. -->
-  <ShortCircuitRain>Der Regen hat bei dem Objekt '{0}' einen Kurzschluss verursacht und ein Feuer entfacht.</ShortCircuitRain>
+  <ShortCircuitRain>Der Regen hat bei dem Objekt '{1_label}' einen Kurzschluss verursacht und ein Feuer entfacht.</ShortCircuitRain>
 
   <!-- EN: Area revealed -->
   <LetterLabelAreaRevealed>Gebiet freigelegt</LetterLabelAreaRevealed>
@@ -54,37 +54,37 @@
   <RecruitFail>{0} konnte {1} nicht anwerben ({2} Chance).</RecruitFail>
 
   <!-- EN: {PAWN_nameDef} is {RELATIVE_labelShort}'s {1}. If {PAWN_nameDef} dies, {RELATIVE_labelShort} will suffer from long-lasting grief. However, if you manage to rescue {PAWN_nameDef}, {RELATIVE_labelShort} will be very happy for a long time. -->
-  <RelatedPawnInvolvedInQuest>[PAWN_nameDef] ist {1} von {0}. Wenn [PAWN_nameDef] stirbt, wird {0} sehr lange um [PAWN_objective] trauern. Andererseits, wenn Du es schaffst [PAWN_nameDef] zu retten, wird {0} sehr lange sehr glücklich sein.</RelatedPawnInvolvedInQuest>
+  <RelatedPawnInvolvedInQuest>{PAWN_nameDef} ist {RELATIVE_labelShort}'s {1}. Wenn {PAWN_nameDef} stirbt, wird {RELATIVE_labelShort} sehr lange um {PAWN_objective} trauern. Andererseits, wenn Du es schaffst {PAWN_nameDef} zu retten, wird {RELATIVE_labelShort} sehr lange sehr glücklich sein.</RelatedPawnInvolvedInQuest>
 
   <!-- EN: Birthday -->
   <LetterLabelBirthday>Geburtstag</LetterLabelBirthday>
   <!-- EN: It's {0}'s chronological birthday today! Biologically, {1} is {3} years old.\n\nChronologically, {1} just turned {2}.\n\nNote that since people don't age while in cryptosleep, chronological birthday is separate from biological birthday. -->
-  <BirthdayChronological>{0} hat heute [PAWN_possessive]en Geburtstag! Biologisch ist {1} {3} Jahre alt. Chronologisch wurde {1} {2}.\n\nHinweis: Das chronologische Alter ist das biologische Alter plus der verbrachten Zeit in einer Kryptokapsel.</BirthdayChronological>
+  <BirthdayChronological>{0} hat heute {PAWN_possessive}en Geburtstag! Biologisch ist {1} {3} Jahre alt. Chronologisch wurde {1} {2}.\n\nHinweis: Das chronologische Alter ist das biologische Alter plus der verbrachten Zeit in einer Kryptokapsel.</BirthdayChronological>
   <!-- EN: {0_nameFull} has reached the biological age of {1}.\n\nUnfortunately, {0_nameFull} has gained the following diseases due to aging:\n{2} -->
-  <BirthdayBiologicalAgeInjuries>{0} hat das biologische Alter von {1} Jahren erreicht.\n\nFolgende altersbedingte Krankheiten wurden bei {0} festgestellt:\n{2}</BirthdayBiologicalAgeInjuries>
+  <BirthdayBiologicalAgeInjuries>{0_nameFull} hat das biologische Alter von {1} Jahren erreicht.\n\nFolgende altersbedingte Krankheiten wurden bei {0_nameFull} festgestellt:\n{2}</BirthdayBiologicalAgeInjuries>
 
   <!-- EN: Disease -->
   <LetterLabelNewDisease>Krankheit</LetterLabelNewDisease>
   <!-- EN: {PAWN} has gotten sick from {1}.\n\nEnsure you have a medical bed and a doctor. Make sure that {PAWN_definite} gets proper treatment and spends as much time in bed as possible. -->
-  <NewDisease>{0} ist an {1} erkrankt.\nStelle sicher, dass Du ein Krankenbett und einen Arzt hast. Sorge dafür, dass {2} eine vernünftige Behandlung bekommt und so viel Zeit wie möglich im Bett verbringt, um sich schnell zu erholen.</NewDisease>
+  <NewDisease>{PAWN} ist an {1} erkrankt.\nStelle sicher, dass Du ein Krankenbett und einen Arzt hast. Sorge dafür, dass {PAWN_definite} eine vernünftige Behandlung bekommt und so viel Zeit wie möglich im Bett verbringt, um sich schnell zu erholen.</NewDisease>
   <!-- EN: {PAWN} has gotten sick from {3}. The infection is in {PAWN_possessive} {1}.\n\nEnsure you have a medical bed and a doctor. Make sure that {PAWN_definite} gets proper treatment and spends as much time in bed as possible. -->
-  <NewPartDisease>{0} ist an {3} erkrankt. Die Infektion ist in [PAWN_possessive]em {1}.\nStelle sicher, dass Du ein Krankenbett und einen Arzt hast. Sorge dafür, dass {2} eine vernünftige Behandlung bekommt und so viel Zeit wie möglich im Bett verbringt, um sich schnell zu erholen.</NewPartDisease>
+  <NewPartDisease>{PAWN} ist an {3} erkrankt. Die Infektion ist in {PAWN_possessive}em {1}.\nStelle sicher, dass Du ein Krankenbett und einen Arzt hast. Sorge dafür, dass {PAWN_definite} eine vernünftige Behandlung bekommt und so viel Zeit wie möglich im Bett verbringt, um sich schnell zu erholen.</NewPartDisease>
   <!-- EN: {PAWN_labelShort} has developed an illness: {1} -->
-  <NewDiseaseAnimal>{0} ist an {1} erkrankt.</NewDiseaseAnimal>
+  <NewDiseaseAnimal>{PAWN_labelShort} ist an {1} erkrankt.</NewDiseaseAnimal>
   <!-- EN: {PAWN_labelShort} has developed an illness: {3} in {PAWN_possessive} {1} -->
-  <NewPartDiseaseAnimal>{0} ist an {3} in [PAWN_possessive]em {1} erkrankt.</NewPartDiseaseAnimal>
+  <NewPartDiseaseAnimal>{PAWN_labelShort} ist an {3} in {PAWN_possessive}em {1} erkrankt.</NewPartDiseaseAnimal>
 
   <!-- EN: {1_labelShort} was formerly part of your faction. -->
-  <PawnWasFormerlyColonist>{0} war früher aus Deiner Fraktion.</PawnWasFormerlyColonist>
+  <PawnWasFormerlyColonist>{1_labelShort} ist ein ehemaliges Mitglied Deiner Fraktion.</PawnWasFormerlyColonist>
   <!-- EN: {1_labelShort} has these relationships with your colonists: -->
-  <PawnHasTheseRelationshipsWithColonists>{0} hat diese Beziehungen zu Deinen Kolonisten:</PawnHasTheseRelationshipsWithColonists>
+  <PawnHasTheseRelationshipsWithColonists>{1_labelShort} hat folgende Beziehungen zu Deinen Kolonisten:</PawnHasTheseRelationshipsWithColonists>
   <!-- EN: The camp will disappear after {0} days. If you miss this opportunity, you may never hear from {PRISONER_labelShort} again. -->
-  <PrisonerRescueTimeout>Das Lager wird nach {0} Tagen verschwinden. Wenn Du diese Gelegenheit verpasst, wirst Du vielleicht nie wieder etwas von {1} hören.</PrisonerRescueTimeout>
+  <PrisonerRescueTimeout>Das Lager wird in {0} Tagen verschwinden. Wenn Du diese Gelegenheit verpasst, wirst Du vielleicht nie wieder etwas von {PRISONER_labelShort} hören.</PrisonerRescueTimeout>
 
   <!-- EN: Ancient danger -->
   <LetterLabelAncientShrineWarning>Antiker Schrein</LetterLabelAncientShrineWarning>
   <!-- EN: As {0} draws near the ancient wall, a sense of foreboding overcomes {PAWN_objective}. {PAWN_pronoun} isn't sure why, but {PAWN_pronoun} feels that this dusty structure may contain great danger. -->
-  <AncientShrineWarning>Als {0} sich der antiken Wand nähert, überkommt [PAWN_objective] eine unheilvolle Vorahnung. [PAWN_pronoun] ist sich nicht sicher, warum, aber [PAWN_pronoun] spürt, dass sich in dieser verstaubten Ruine eine große Gefahr verbergen könnte.</AncientShrineWarning>
+  <AncientShrineWarning>Als {0} sich der antiken Wand nähert, überkommt {PAWN_objective} eine unheilvolle Vorahnung. {PAWN_pronoun} ist sich nicht sicher, warum, aber {PAWN_pronoun} spürt, dass in dieser verstaubten Ruine eine große Gefahr lauern könnte.</AncientShrineWarning>
 
   <!-- EN: We have struck {0}! -->
   <StruckMineable>Wir sind auf {0} gestoßen!</StruckMineable>
@@ -92,36 +92,36 @@
   <!-- EN: {0} revenge -->
   <LetterLabelAnimalManhunterRevenge>{0} rächt sich</LetterLabelAnimalManhunterRevenge>
   <!-- EN: {1_indefinite} is attacking after being harmed!\n\nIt will hunt any humanoid it can reach. It will calm down when it goes to sleep. -->
-  <AnimalManhunterFromDamage>[PAWN_indefinite] wurde verletzt und greift jetzt an!\n\nEs wird jeden Menschen jagen, den es erreichen kann. Beruhigen wird es sich erst, wenn es einschläft.</AnimalManhunterFromDamage>
+  <AnimalManhunterFromDamage>{1_indefinite} wurde verletzt und greift jetzt an!\n\nEs wird jeden Menschen jagen, den es erreichen kann. Beruhigen wird es sich erst, wenn es einschläft.</AnimalManhunterFromDamage>
   <!-- EN: {1_indefinite} is attacking due to a botched taming attempt! -->
-  <AnimalManhunterFromTaming>[PAWN_indefinite] greift aufgrund eines verbockten Zähmversuches an!</AnimalManhunterFromTaming>
+  <AnimalManhunterFromTaming>{1_indefinite} greift aufgrund eines verbockten Zähmversuches an!</AnimalManhunterFromTaming>
   <!-- EN: Other {1_kindBasePlural} nearby have also become enraged! -->
-  <AnimalManhunterOthers>Weitere nahe stehende {0} sind auch aggressiv geworden!</AnimalManhunterOthers>
+  <AnimalManhunterOthers>Weitere nahe stehende {1_kindBasePlural} sind auch aggressiv geworden!</AnimalManhunterOthers>
 
   <!-- EN: {1_labelShort} hit trap -->
-  <LetterFriendlyTrapSprungLabel>{0} löst Falle aus</LetterFriendlyTrapSprungLabel>
+  <LetterFriendlyTrapSprungLabel>{1_labelShort} löst Falle aus</LetterFriendlyTrapSprungLabel>
   <!-- EN: {1_labelShort} has accidentally sprung a trap and taken damage from it. -->
-  <LetterFriendlyTrapSprung>{0} hat versehentlich eine Falle ausgelöst und wurde verletzt.</LetterFriendlyTrapSprung>
+  <LetterFriendlyTrapSprung>{1_labelShort} hat versehentlich eine Falle ausgelöst und wurde verletzt.</LetterFriendlyTrapSprung>
 
   <!-- EN: {PAWN_labelShort} has developed a health condition:\n\n  {1}\n\nThis was caused by:\n\n  {2} -->
-  <LetterHealthComplications>{0} hat eine Krankheit bekommen:\n\n  {1}\n\nDiese wurde verursacht von:\n\n  {2}.</LetterHealthComplications>
+  <LetterHealthComplications>{PAWN_labelShort} hat eine Krankheit bekommen:\n\n  {1}\n\nDiese wurde verursacht von:\n\n  {2}.</LetterHealthComplications>
   <!-- EN: {PAWN_labelShort}: {1} -->
-  <LetterHealthComplicationsLabel>{0}: {1}</LetterHealthComplicationsLabel>
+  <LetterHealthComplicationsLabel>{PAWN_labelShort}: {1}</LetterHealthComplicationsLabel>
   
   <!-- EN: {PAWN_labelShort} has developed a health condition: {1}. -->
-  <LetterHediffFromRandomHediffGiver>{0} hat eine Krankheit bekommen: {1}.</LetterHediffFromRandomHediffGiver>
+  <LetterHediffFromRandomHediffGiver>{PAWN_labelShort} hat eine Krankheit bekommen: {1}.</LetterHediffFromRandomHediffGiver>
   <!-- EN: {PAWN_labelShort}: {1} -->
-  <LetterHediffFromRandomHediffGiverLabel>{0}: {1}</LetterHediffFromRandomHediffGiverLabel>
+  <LetterHediffFromRandomHediffGiverLabel>{PAWN_labelShort}: {1}</LetterHediffFromRandomHediffGiverLabel>
   
   <!-- EN: {1} died: {0} -->
   <LetterLeadersDeathLabel>{1} starb: {0}</LetterLeadersDeathLabel>
   <!-- EN: {OLDLEADER_nameFull}, {3} of {1}, has died.\n\nThe new {3} is {NEWLEADER_nameFull}. -->
-  <LetterLeadersDeath>{0}, {3} von {1} ist gestorben.\n\nNeuer {3} ist {2}.</LetterLeadersDeath>
+  <LetterLeadersDeath>{OLDLEADER_nameFull}, {3} von der Fraktion '{1}', ist gestorben.\n\nNeuer {3} ist {NEWLEADER_nameFull}.</LetterLeadersDeath>
 
   <!-- EN: New {1}: {0} -->
   <LetterLeaderChangedLabel>Neuer {1}: {0}</LetterLeaderChangedLabel>
   <!-- EN: {OLDLEADER_nameFull} is no longer {3} of {1}.\n\nThe new {3} is {NEWLEADER_nameFull}. -->
-  <LetterLeaderChanged>{0} ist nicht länger {3} von {1}.\n\nNeuer {3} ist {2}.</LetterLeaderChanged>
+  <LetterLeaderChanged>{OLDLEADER_nameFull} ist nicht länger {3} von der Fraktion '{1}'.\n\nNeuer {3} ist {NEWLEADER_nameFull}.</LetterLeaderChanged>
   
   <!-- EN: The final straw was: {0} -->
   <FinalStraw>Die Ursache, die das Fass überlaufen ließ war: {0}</FinalStraw>
@@ -131,7 +131,7 @@
   <!-- EN: Read more -->
   <ReadMore>Weiterlesen</ReadMore>
   <!-- EN: The last events in {PAWN_definite}'s life -->
-  <LastEventsInLife>Die letzten Ereignisse im Leben von {0}:</LastEventsInLife>
+  <LastEventsInLife>Die letzten Ereignisse im Leben von {PAWN_definite}:</LastEventsInLife>
   
   <!-- Related pawns -->
   <!-- EN: Relationship -->
@@ -160,19 +160,19 @@
   <!-- EN: (relationship) -->
   <RelationshipAppendedLetterSuffix>(Verwandtschaft)</RelationshipAppendedLetterSuffix>
   <!-- EN: {PAWN_nameDef} has a relationship with a colonist. {PAWN_pronoun} is {RELATIVE_labelShort}'s {1}. -->
-  <RelationshipAppendedLetterTextColonist>[PAWN_nameDef] ist ein Verwandter eines Kolonisten. [PAWN_pronoun] ist {0}'s {1}.</RelationshipAppendedLetterTextColonist>
+  <RelationshipAppendedLetterTextColonist>{PAWN_nameDef} hat eine Beziehung zu einem Kolonisten. {PAWN_pronoun} ist {RELATIVE_labelShort}'s {1}.</RelationshipAppendedLetterTextColonist>
   <!-- EN: {PAWN_nameDef} has a relationship with one of your prisoners. {PAWN_pronoun} is {RELATIVE_labelShort}'s {1}. -->
-  <RelationshipAppendedLetterTextPrisoner>[PAWN_nameDef] ist ein Verwandter eines Gefangenen. [PAWN_pronoun] ist {0}'s {1}.</RelationshipAppendedLetterTextPrisoner>
+  <RelationshipAppendedLetterTextPrisoner>{PAWN_nameDef} hat eine Beziehung zu einem Gefangenen. {PAWN_pronoun} ist {RELATIVE_labelShort}'s {1}.</RelationshipAppendedLetterTextPrisoner>
   
   <!-- Attempt romance / propose interaction -->
   <!-- EN: Affair -->
   <LetterLabelAffair>Verhältnis</LetterLabelAffair>
   <!-- EN: {PAWN1_labelShort}, married to {SPOUSE_labelShort}, has begun an affair with {PAWN2_labelShort}. -->
-  <LetterAffair>{0}, mit {1} verheiratet, hat ein Verhältnis mit {2}.</LetterAffair>
+  <LetterAffair>{PAWN1_labelShort}, mit {SPOUSE_labelShort} verheiratet, hat ein Verhältnis mit {PAWN2_labelShort} begonnen.</LetterAffair>
   <!-- EN: New lovers -->
   <LetterLabelNewLovers>Neue Liebhaber</LetterLabelNewLovers>
   <!-- EN: {PAWN1_labelShort} and {PAWN2_labelShort} are no longer in a relationship. -->
-  <LetterNoLongerLovers>{0} und {1} haben ihre Beziehung beendet.</LetterNoLongerLovers>
+  <LetterNoLongerLovers>{PAWN1_labelShort} und {PAWN2_labelShort} haben ihre Beziehung beendet.</LetterNoLongerLovers>
   <!-- EN: Breakup -->
   <LetterLabelBreakup>Trennung</LetterLabelBreakup>
   <!-- EN: Marriage is on! -->
@@ -182,7 +182,7 @@
   <!-- EN: At some point in the coming days or quadrums, they will have their marriage ceremony and invite all the colonists. Consider placing a marriage spot if you want to control where the ceremony occurs. -->
   <LetterAcceptedProposal>Irgendwann in den kommenden Tagen oder Jahreszeiten werden sie ihre Hochzeitszeremonie abhalten und alle Kolonisten dazu einladen. Überlege Dir, einen Hochzeitsplatz aufzustellen, wenn Du kontrollieren willst, wo die Zeremonie stattfindet.</LetterAcceptedProposal>
   <!-- EN: {INITIATOR_nameFull} is going to be unhappy about this. -->
-  <LetterRejectedProposal>{0} wird ziemlich unglücklich sein.</LetterRejectedProposal>
+  <LetterRejectedProposal>{INITIATOR_nameFull} wird ziemlich unglücklich sein.</LetterRejectedProposal>
   
   <!-- Generalized letter labels -->
   <!-- EN: Hostile: {0} -->
@@ -202,7 +202,7 @@
   <!-- EN: bonded animal -->
   <LetterLabelSuffixBondedAnimalDied>Haustier</LetterLabelSuffixBondedAnimalDied>
   <!-- EN: {ANIMAL_definite} was bonded to {HUMAN_labelShort}. It will affect {HUMAN_labelShort}'s mood. -->
-  <LetterPartBondedAnimalDied>{0} war mit {1} verbunden. Das wird die Stimmung von {1} beeinflussen.</LetterPartBondedAnimalDied>
+  <LetterPartBondedAnimalDied>{ANIMAL_definite} war an {HUMAN_labelShort} gebunden. Das wird die Stimmung von {HUMAN_labelShort} beeinflussen.</LetterPartBondedAnimalDied>
   <!-- EN: It will affect mood of the following people:\n\n{0} -->
   <LetterPartBondedAnimalDiedMulti>Es wird die Stimmung der folgenden Personen beeinflussen:\n\n{0}</LetterPartBondedAnimalDiedMulti>
 
@@ -216,19 +216,19 @@
   <!-- EN: Party -->
   <LetterLabelNewParty>Party</LetterLabelNewParty>
   <!-- EN: {1_labelShort} is throwing a party! Everyone who goes will gain recreation and social energy, and a lasting positive mood boost. -->
-  <LetterNewParty>{0} schmeißt eine Party! Jeder, der dort hingeht, erholt sich, verbessert seine soziale Energie, und bekommt zusätzlich noch einen anhaltenden Stimmungsboost.</LetterNewParty>
+  <LetterNewParty>{1_labelShort} schmeißt eine Party! Jeder, der dort hingeht, erholt sich, verbessert seine soziale Energie, und bekommt zusätzlich noch einen anhaltenden Stimmungsboost.</LetterNewParty>
 
   <!-- Newly addicted -->
   <!-- EN: {0} addiction -->
   <LetterLabelNewlyAddicted>{0} süchtig</LetterLabelNewlyAddicted>
   <!-- EN: {PAWN_labelShort} has developed an addiction to {1}.\n\n{PAWN_pronoun} now has a need for {1}, visible on {PAWN_possessive} Needs tab. {PAWN_pronoun} will automatically consume the drug to fulfil {PAWN_possessive} need. If {PAWN_pronoun} cannot get any {1}, {PAWN_pronoun} will go into withdrawal. -->
-  <LetterNewlyAddicted>{0} wurde süchtig nach {1}.\n\n[PAWN_pronoun] benötigt jetzt {1}, sichtbar in [PAWN_possessive] Reiter 'Bedürfnisse'. [PAWN_pronoun] wird die Droge automatisch zu sich nehmen, um seinen Bedarf zu befriedigen. Wenn [PAWN_pronoun] nichts einnehmen kann, wird [PAWN_pronoun] Entzugserscheinungen bekommen.</LetterNewlyAddicted>
+  <LetterNewlyAddicted>{PAWN_labelShort} wurde süchtig nach {1}.\n\n{PAWN_pronoun} benötigt jetzt {1}, sichtbar in {PAWN_possessive}em Reiter 'Bedürfnisse'. {PAWN_pronoun} wird die Droge automatisch zu sich nehmen, um {PAWN_possessive}e Bedürfnisse zu befriedigen. Wenn {PAWN_pronoun} nichts einnehmen kann, wird {PAWN_pronoun} Entzugserscheinungen bekommen.</LetterNewlyAddicted>
   
   <!-- Drug binge -->
   <!-- EN: {0} binge -->
   <LetterLabelDrugBinge>{0}-Exzess</LetterLabelDrugBinge>
   <!-- EN: {2_label} is binging on {1}. -->
-  <LetterDrugBinge>{0} gibt sich die Droge {1}.</LetterDrugBinge>
+  <LetterDrugBinge>{2_label} gibt sich die Droge {1}.</LetterDrugBinge>
   
   <!-- Caravan destroyed -->
   <!-- EN: Caravan destroyed -->
@@ -240,7 +240,7 @@
   <!-- EN: Caravan arrived at {0_label} -->
   <LetterLabelCaravanEnteredMap>Karawane bei {0_label} angekommen.</LetterLabelCaravanEnteredMap>
   <!-- EN: {0} has arrived at {1_definite}. -->
-  <LetterCaravanEnteredMap>Karawane bei {1_definit} angekommen.</LetterCaravanEnteredMap>
+  <LetterCaravanEnteredMap>{0} bei {1_definite} angekommen.</LetterCaravanEnteredMap>
   
   <!-- Caravan entered enemy base -->
   <!-- EN: Attack begun -->
@@ -272,7 +272,7 @@
   <!-- EN: Precious minerals found -->
   <LetterLabelFoundPreciousLump>Wertvolle Mineralien gefunden</LetterLabelFoundPreciousLump>
   <!-- EN: Using your long-range mineral scanner, {WORKER_labelShort} has found a lump of {0} nearby.\n\nUnfortunately, it won't last - others will mine it first in {1} days if we don't.\n\n{2}. -->
-  <LetterFoundPreciousLump>Beim Einsatz des Langstrecken-Mineralienscanners hat {3} einen Brocken {0} in der Nähe gefunden.\n\nUnglücklicherweise bleibt es nicht - Andere werden es in {1} Tagen abgebaut haben, wenn wir uns nicht drum kümmern.\n\n{2}.</LetterFoundPreciousLump>
+  <LetterFoundPreciousLump>Beim Einsatz des Langstrecken-Mineralienscanners hat {WORKER_labelShort} einen Brocken {0} in der Nähe gefunden.\n\nUnglücklicherweise bleibt es nicht - Andere werden es in {1} Tagen abgebaut haben, wenn wir uns nicht drum kümmern.\n\n{2}.</LetterFoundPreciousLump>
   
   <!-- Ambush -->
   <!-- EN: Ambush -->
@@ -302,25 +302,25 @@
   <!-- EN: The talks were a great triumph! Delegates connected quickly on a personal level and came to truly see each others' perspective on the most difficult issues of the day.\n\nRelations with {0} have improved by {1}.\n\nAs your caravan departed, {0} offered you a gift:\n\n{2} -->
   <LetterPeaceTalks_Triumph>Die Friedensgespräche waren triumphal! Die Delegierten haben sofort auf einer persönlichen Ebene zueinander gefunden und konnten die Standpunkte beider Seiten problemlos erkennen, sodass es eine Leichtigkeit war, selbst bei den schwierigsten Problemen eine einvernehmliche Lösung zu finden.\n\nDie Beziehungen zu {0} haben sich um {1} verbessert.\n\nAls Deine Karawane aufbrach, hat {0} Dir ein Geschenk angeboten:\n\n{2}.</LetterPeaceTalks_Triumph>
   <!-- EN: {PAWN_labelShort}, your negotiator, has gained {1} social experience. -->
-  <PeaceTalksSocialXPGain>Dein Unterhändler {0} hat {1} soziale Erfahrungspunkte gesammelt.</PeaceTalksSocialXPGain>
+  <PeaceTalksSocialXPGain>Dein Unterhändler {PAWN_labelShort} hat {1} soziale Erfahrungspunkte gesammelt.</PeaceTalksSocialXPGain>
 
   <!-- Run wild mental break -->
   <!-- EN: {0} is fed up with civilization.\n\n{0_pronoun} realized that wild creatures are always free. So, {0_pronoun} has decided to leave your faction and live with the animals.\n\nYou can attempt to tame {0_objective} to get {0_objective} back. -->
-  <LetterRunWildMentalBreak>{0} hat genug von der Zivilisation.\n\n[PAWN_pronoun] hat erkannt, dass wilde Tiere immer frei sind. Aus diesem Grund hat [PAWN_pronoun] sich entschieden Deine Fraktion zu verlassen und bei den wilden Tieren zu leben.\n\nDu kannst versuchen [PAWN_objective] zu zähmen um [PAWN_objective] wieder zurück zu bekommen.</LetterRunWildMentalBreak>
+  <LetterRunWildMentalBreak>{0} hat genug von der Zivilisation.\n\n{0_pronoun} hat erkannt, dass wilde Tiere immer frei sind. Aus diesem Grund hat {0_pronoun} beschlossen, Deine Fraktion zu verlassen und bei den wilden Tieren zu leben.\n\nDu kannst versuchen {0_objective} zu zähmen, um {0_objective} wieder zurück zu bekommen.</LetterRunWildMentalBreak>
 
   <!-- Catatonic mental break -->
   <!-- EN: {0} has suffered a total mental breakdown and entered a catatonic state. {0_pronoun} will recover in several days. -->
-  <LetterCatatonicMentalBreak>{0} hat einen kompletten Nervenzusammenbruch und ist in einem katatonischen Zustand. [PAWN_pronoun] wird sich in ein paar Tagen davon erholen.</LetterCatatonicMentalBreak>
+  <LetterCatatonicMentalBreak>{0} hat einen kompletten Nervenzusammenbruch und ist in einem katatonischen Zustand. {0_pronoun} wird sich in ein paar Tagen wieder erholen.</LetterCatatonicMentalBreak>
 
   <!-- EN: AI Core Offer -->
   <LetterLabelAICoreOffer>KI Kern Angebot</LetterLabelAICoreOffer>
   <!-- EN: {PAWN_definite} of {1} contacts you with an offer of information: the location of an AI persona core, which you'll need in order to build a spaceship. They inform you that this item is quite rare and usually its owners have it under heavy guard.\n\nCall them with your comms console if you're interested. -->
-  <LetterAICoreOffer>{0} von {1} kontaktiert dich mit einem Angebot zu folgender Information: \nDer Fundort eines KI-Kerns, welchen Du benötigst, wenn Du ein Raumschiff bauen willst. Sie informieren Dich, dass der Gegenstand sehr selten ist und normalerweise von ihren Besitzern sehr stark bewacht wird.\n\nRuf sie über die Funkanlage falls Du interessiert bist.</LetterAICoreOffer>
+  <LetterAICoreOffer>{PAWN_definite} von der Fraktion '{1}' kontaktiert Dich mit einem Angebot zu folgender Information: \nDer Fundort eines KI-Kerns, welchen Du benötigst, wenn Du ein Raumschiff bauen willst. Sie informieren Dich, dass der Gegenstand sehr selten ist und normalerweise von ihren Besitzern sehr stark bewacht wird.\n\nRuf sie über die Funkanlage, falls Du interessiert bist.</LetterAICoreOffer>
 
   <!-- EN: Legendary Work -->
   <LetterCraftedLegendaryLabel>Legendäre Arbeit</LetterCraftedLegendaryLabel>
   <!-- EN: {WORKER_labelShort} has created a {CRAFTED_labelShort}.\n\nNews of this valuable artifact will spread across the world. -->
-  <LetterCraftedLegendaryMessage>{0} hat {1} hergestellt.\n\nNachricht von diesem wertvollen Artifakt wird um die Welt gehen.</LetterCraftedLegendaryMessage>
+  <LetterCraftedLegendaryMessage>{WORKER_labelShort} hat {CRAFTED_labelShort} hergestellt.\n\nDie Nachricht über dieses wertvolle Artefakt wird um die Welt gehen.</LetterCraftedLegendaryMessage>
 
   <!-- Pawns lost because map closed -->
   <!-- EN: Caravan lost -->
@@ -344,7 +344,7 @@
   <!-- EN: Gift from {0} -->
   <LetterLabelVisitorsGaveGift>Geschenk von {0}</LetterLabelVisitorsGaveGift>
   <!-- EN: {0} from {PAWN_factionName} have left a gift:\n\n{1} -->
-  <LetterVisitorsGaveGift>{0} von [PAWN_factionName] haben ein Geschenk hier gelassen:\n\n{1}</LetterVisitorsGaveGift>
+  <LetterVisitorsGaveGift>{0} von der Fraktion '{PAWN_factionName}' haben ein Geschenk da gelassen:\n\n{1}</LetterVisitorsGaveGift>
 
   <!-- Faction base proximity -->
   <!-- EN: Faction base proximity -->
@@ -362,13 +362,13 @@
   <!-- EN: Rescuee joins -->
   <LetterLabelRescueQuestFinished>Geretteter tritt bei</LetterLabelRescueQuestFinished>
   <!-- EN: You have rescued {PAWN_nameDef} and {PAWN_pronoun} has joined your group.\n\nYou can take {PAWN_objective} with you by reforming the caravan in the World screen by selecting this area and choosing the "Reform caravan" option. -->
-  <LetterRescueQuestFinished>Du hast [PAWN_nameDef] gerettet und [PAWN_pronoun] tritt Deiner Gruppe bei.\n\nDu kannst [PAWN_objective] mitnehmen, indem Du auf der Weltkarte dieses Gebiet markierst und die Option "Karawane reformieren" auswählst.</LetterRescueQuestFinished>
+  <LetterRescueQuestFinished>Du hast {PAWN_nameDef} gerettet. {PAWN_pronoun} beschließt, Deiner Gruppe beizutreten.\n\nDu kannst {PAWN_objective} mitnehmen, indem Du auf der Weltkarte dieses Gebiet markierst und die Option "Karawane reformieren" auswählst.</LetterRescueQuestFinished>
 
   <!-- Predator hunting colonist -->
   <!-- EN: {PREDATOR_labelShort} hunting {PREY_definite} -->
-  <LetterLabelPredatorHuntingColonist>{0} jagt {1}</LetterLabelPredatorHuntingColonist>
+  <LetterLabelPredatorHuntingColonist>{PREDATOR_labelShort} jagt {PREY_definite}</LetterLabelPredatorHuntingColonist>
   <!-- EN: {PREDATOR} is hunting {PREY_definite} for food! -->
-  <LetterPredatorHuntingColonist>{0} macht jagt auf {1} und will [PAWN_objective] fressen. Du solltest {1} verteidigen oder in Sicherheit bringen.</LetterPredatorHuntingColonist>
+  <LetterPredatorHuntingColonist>{PREDATOR} macht jagt auf {PREY_definite} und will {PREY_objective} fressen. Du solltest {PREY_objective} verteidigen oder in Sicherheit bringen.</LetterPredatorHuntingColonist>
 
   <!-- Disease -->
   <!-- EN: {0} blocked {1} on: {2}. -->
@@ -376,7 +376,7 @@
   <!-- EN: Disease ({0}) -->
   <LetterLabelTraitDisease>Krankheit ({0})</LetterLabelTraitDisease>
   <!-- EN: {PAWN_label} has gotten sick from {1}.\n\nEnsure you have a medical bed and a doctor. Make sure that {PAWN_pronoun} gets proper treatment and spends as much time in bed as possible. -->
-  <LetterTraitDisease>{0} ist an {1} erkrankt.\n\nStelle sicher, dass Du ein Krankenbett und einen Arzt hast. Stelle sicher, dass [PAWN_pronoun] versorgt wird und so viel Zeit wie möglich im Bett verbringt.</LetterTraitDisease>
+  <LetterTraitDisease>{PAWN_label} ist an {1} erkrankt.\n\nStelle sicher, dass Du ein Krankenbett und einen Arzt hast. Stelle sicher, dass {PAWN_pronoun} versorgt wird und so viel Zeit wie möglich im Bett verbringt.</LetterTraitDisease>
 
   <!-- UNUSED -->
   <LetterLabelCaravanEnteredAmbushMap>Karawane ist beim Hinterhalt angekommen</LetterLabelCaravanEnteredAmbushMap>

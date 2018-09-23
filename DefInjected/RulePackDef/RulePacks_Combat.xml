@@ -502,12 +502,12 @@
     <li>r_logentry->[WEAPON_projectile_label] von [INITIATOR_definite] [destroyed_past] [destroyed_targets] von [RECIPIENT_definite] [to] [destroyed_suffix].</li>
     <li>r_logentry->[WEAPON_projectile_label] von [INITIATOR_definite] [destroyed_past] [destroyed_targets] von [RECIPIENT_definite] [expertly].</li>
     <!-- various damaged options; don't show if something was destroyed -->
-    <li>r_logentry(RECIPIENT_partDestroyed_count==0)->[WEAPON_projectile_label] von [INITIATOR_definite] [damaged_past] [RECIPIENT_definite]'s [damaged_targets].</li>
-    <li>r_logentry(RECIPIENT_partDestroyed_count==0)->[WEAPON_projectile_label] von [INITIATOR_definite] [damaged_past] [RECIPIENT_definite]'s [damaged_targets] [expertly].</li>
-    <li>r_logentry(RECIPIENT_partDestroyed_count==0,p=2)->[WEAPON_projectile_label] von [INITIATOR_definite] [missed] [ORIGINALTARGET_definite] und [damaged_past] [RECIPIENT_definite]'s [damaged_targets].</li>
-    <li>r_logentry(RECIPIENT_partDestroyed_count==0,p=2)->[WEAPON_projectile_label] von [INITIATOR_definite] [missed] [ORIGINALTARGET_definite], [damaged_present] [RECIPIENT_definite]'s [damaged_targets].</li>
-    <li>r_logentry(RECIPIENT_partDestroyed_count==0)->[WEAPON_projectile_label] von [INITIATOR_definite] [damaged_past] [RECIPIENT_definite]'s [damaged_targets].</li>
-    <li>r_logentry(RECIPIENT_partDestroyed_count==0)->[WEAPON_projectile_label] von [INITIATOR_definite] [damaged_past] [RECIPIENT_definite]'s [damaged_targets] [expertly].</li>
+    <li>r_logentry(recipient_part_destroyed_count==0)->[WEAPON_projectile_label] von [INITIATOR_definite] [damaged_past] [RECIPIENT_definite]'s [damaged_targets].</li>
+    <li>r_logentry(recipient_part_destroyed_count==0)->[WEAPON_projectile_label] von [INITIATOR_definite] [damaged_past] [RECIPIENT_definite]'s [damaged_targets] [expertly].</li>
+    <li>r_logentry(recipient_part_destroyed_count==0,p=2)->[WEAPON_projectile_label] von [INITIATOR_definite] [missed] [ORIGINALTARGET_definite] und [damaged_past] [RECIPIENT_definite]'s [damaged_targets].</li>
+    <li>r_logentry(recipient_part_destroyed_count==0,p=2)->[WEAPON_projectile_label] von [INITIATOR_definite] [missed] [ORIGINALTARGET_definite], [damaged_present] [RECIPIENT_definite]'s [damaged_targets].</li>
+    <li>r_logentry(recipient_part_destroyed_count==0)->[WEAPON_projectile_label] von [INITIATOR_definite] [damaged_past] [RECIPIENT_definite]'s [damaged_targets].</li>
+    <li>r_logentry(recipient_part_destroyed_count==0)->[WEAPON_projectile_label] von [INITIATOR_definite] [damaged_past] [RECIPIENT_definite]'s [damaged_targets] [expertly].</li>
     <!-- damaged/destroyed hybrid -->
     <li>r_logentry(p=3)->[WEAPON_projectile_label] von [INITIATOR_definite] [destroyed_past] [destroyed_targets] von [RECIPIENT_definite] und [damaged_past] [RECIPIENT_possessive] [damaged_targets].</li>
     <li>r_logentry(p=6)->[WEAPON_projectile_label] von [INITIATOR_definite] [missed] [ORIGINALTARGET_definite], [destroyed_present] [destroyed_targets] von [RECIPIENT_definite] und [damaged_present] [RECIPIENT_possessive] [damaged_targets].</li>
