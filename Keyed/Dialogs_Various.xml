@@ -149,7 +149,7 @@
   <ZoneGainsName>Die Zone heißt jetzt '{0}'.</ZoneGainsName>
   
   <!-- Pawn naming -->
-  <!-- EN: This person's nickname is now {0}. [PAWN_possessive] title is {1}. -->
+  <!-- EN: This person's nickname is now {0}. {PAWN_possessive} title is {PAWN_title}. -->
   <PawnGainsName>Diese Person hört jetzt auf den Spitznamen '{0}'. [PAWN_possessive]e Bezeichnung ist {1}.</PawnGainsName>
   <!-- EN: The animal's name is now {0}. -->
   <AnimalGainsName>Das Tier hört jetzt auf den Namen '{0}'.</AnimalGainsName>
@@ -426,7 +426,7 @@
   <NuzzleIntervalExplanation>Der Durchschnitt, wie häufig ein Tier freundliche Kolonisten beschnüffelt.\n\nBeschnüffeln ist ein Verhalten vieler Tierarten, wobei das Tier seine Nase oder Schnauze an einem Freund als Zeichen der Zuneigung reibt. Die meissten Menschen finden das süß und es wird sie eine Zeit lang in eine guten Laune versetzen.</NuzzleIntervalExplanation>
   <!-- EN: Revenge chance on harm -->
   <HarmedRevengeChance>Wahrscheinlichkeit der Rache bei Verletzung</HarmedRevengeChance>
-  <!-- EN: The chance this creature seeks revenge upon being harmed by an attacker at rifle range.\n\nThis chance increases if the attacker is closer. If attacked at very close range, the chance is three times greater.\n\nThis chance is applied each time damage is taken, so slower-firing, higher-damage weapons are less likely to trigger it.\n\nTo minimize the chance of a creature seeing revenge, attack it from rifle range with a slow-firing weapon. -->
+  <!-- EN: The chance this creature seeks revenge upon being harmed by an attacker at rifle range.\n\nThis chance increases if the attacker is closer. If attacked at very close range, the chance is three times greater.\n\nThis chance is applied each time damage is taken, so slower-firing, higher-damage weapons are less likely to trigger it.\n\nTo minimize the chance of a creature seeking revenge, attack it from rifle range with a slow-firing weapon. -->
   <HarmedRevengeChanceExplanation>Die Wahrscheinlichkeit, dass diese Kreatur sich rächen wird, wenn sie von einem Angreifer in Gewehrreichweite verletzt wird.\n\nDiese Chance ist noch größer, je näher der Angreifer ist. Wenn es im Nahkampf angegriffen wird, ist die Wahrscheinlichkeit drei mal höher.\n\nDiese Wahrscheinlichkeit wird jedes Mal überprüft, wenn Schaden genommen wird, daher werden langsam-schießende Waffen mit einem größeren Schaden das seltener auslösen.\n\nUm die Wahrscheinlichkeit zu minimieren, greif die Kreatur aus der Ferne mit einer langsam schießenden Waffe an.</HarmedRevengeChanceExplanation>
   <!-- EN: Revenge chance on tame fail -->
   <TameFailedRevengeChance>Wahrscheinlichkeit der Rache bei fehlgeschlagenen Zähmungsversuch</TameFailedRevengeChance>
@@ -468,9 +468,9 @@
   <TraderWillNotTrade>Der Händler kauft diese Ware nicht.</TraderWillNotTrade>
   <!-- EN: Negotiator -->
   <Negotiator>Unterhändler</Negotiator>
-  <!-- EN: Your negotiator {0} cannot talk properly because of poor health. -->
+  <!-- EN: Your negotiator {1_labelShort} cannot talk properly because of poor health. -->
   <NegotiatorTalkingImpaired>Dein Unterhändler {0} kann aufgrund seiner niedrigen Gesundheit nicht richtig sprechen.</NegotiatorTalkingImpaired>
-  <!-- EN: Your negotiator {0} cannot hear properly because of poor health. -->
+  <!-- EN: Your negotiator {1_labelShort} cannot hear properly because of poor health. -->
   <NegotiatorHearingImpaired>Dein Unterhändler {0} kann aufgrund seiner niedrigen Gesundheit nicht richtig hören.</NegotiatorHearingImpaired>
   <!-- EN: This will affect trade prices.\n\nConsider using a healthier negotiator. -->
   <NegotiatorCapacityImpaired>Das wird Einfluss auf den Handelspreis haben.\n\nÜberlege eventuell einen gesünderen Unterhändler zu schicken.</NegotiatorCapacityImpaired>
@@ -526,7 +526,7 @@
   <CaravanCouldNotFindPackingSpot>Kann keinen gültigen Ort zum Packen finden. Stelle sicher, dass die gewählte Route zum Verlassen des Gebietes ({0}) erreichbar ist.</CaravanCouldNotFindPackingSpot>
   <!-- EN: Warning: Some of the assigned colonists are unable to reach the exit location ({0}). -->
   <CaravanCouldNotFindReachableExitSpot>Warnung: Einige der zugewiesenen Kolonisten können den Ort zum Verlassen des Gebietes ({0}) nicht erreichen.</CaravanCouldNotFindReachableExitSpot>
-  <!-- EN: {0} is unreachable by any of the assigned colonists. -->
+  <!-- EN: {1_labelShort} is unreachable by any of the assigned colonists. -->
   <CaravanPawnIsUnreachable>{0} ist für keinen der zugewiesenen Kolonisten erreichbar.</CaravanPawnIsUnreachable>
   <!-- EN: None of the assigned colonists are able to reach the {0}. -->
   <CaravanItemIsUnreachableSingle>Keiner der zugewiesenen Kolonisten kann {0} erreichen.</CaravanItemIsUnreachableSingle>
@@ -546,7 +546,7 @@
   <InfiniteDaysWorthOfFoodInfo>Unbegrenzt</InfiniteDaysWorthOfFoodInfo>
   <!-- EN: The approximate number of days before at least one person or animal will be out of food. Different species have different diets, so one may run out of food before others. This value is calculated more accurately after the route is chosen.\n\nAffected by:\n  - Carried food type and amount\n  - Caravan members and their diets\n  - Foraging rate\n  - Whether animals can graze\n  - Time until food rots\n  - Hot weather rots food faster -->
   <DaysWorthOfFoodTooltip>Eine geschätzte Anzahl an Tagen, bevor mindestens einem Tier oder einer Person die Nahrung ausgeht.\n\nUnterschiedliche Arten haben eine unterschiedliche Diät, weswegen es vorkommen kann, dass einer Art die Nahrung früher ausgeht. Dieser Wert wird genauer berechnet, wenn eine Route gewählt wurde.</DaysWorthOfFoodTooltip>
-  <!-- EN: \n(only the first waypoint is taken into account) -->
+  <!-- EN: (only the first waypoint is taken into account) -->
   <DaysWorthOfFoodTooltip_OnlyFirstWaypoint>\n(Es wird nur der erste Wegpunkt berücksichtigt)</DaysWorthOfFoodTooltip_OnlyFirstWaypoint>
   <!-- EN: Your caravan only has {0} days worth of food and will become hungry quickly. -->
   <DaysWorthOfFoodWarningDialog>Deine Karawane hat nur Essen für {0} Tage und wird schnell hungrig werden.</DaysWorthOfFoodWarningDialog>
@@ -652,7 +652,7 @@
   <TooBigTransportersMassUsage>Die zugewiesenen Personen und Tiere sind zu schwer für die Transportkapsel.</TooBigTransportersMassUsage>
   <!-- EN: You can't send empty transport pods. -->
   <CantSendEmptyTransportPods>Du kannst keine leeren Transportkapseln versenden.</CantSendEmptyTransportPods>
-  <!-- EN: {0} can't reach the transport pods. -->
+  <!-- EN: {1_labelShort} can't reach the transport pods. -->
   <PawnCantReachTransporters>{0} kann die Transportkapseln nicht erreichen.</PawnCantReachTransporters>
   <!-- EN: There is no path between the transport pods and the {0}. -->
   <TransporterItemIsUnreachableSingle>Es existiert kein Weg zwischen {0} und den Transportkapseln.</TransporterItemIsUnreachableSingle>
@@ -708,6 +708,8 @@
   <DeleteDrugPolicy>Entferne Richtlinie...</DeleteDrugPolicy>
   <!-- EN: Drugs policy is in use by {0}. -->
   <DrugPolicyInUse>Drogenrichtlinie wird von {0} verwendet.</DrugPolicyInUse>
+  <!-- EN: Food restriction is in use by {0}. -->
+  <FoodRestrictionInUse>TODO</FoodRestrictionInUse>
   <!-- EN: Social drugs -->
   <SocialDrugs>Soziale Drogen</SocialDrugs>
   <!-- EN: No drugs -->
@@ -763,6 +765,30 @@
   <!-- EN: Scheduled\n\nUse this drug on a defined schedule, when specific conditions are met. -->
   <DrugUsageTipScheduled>Geplant\n\nDroge wird nach einem bestimmten Plan eingenommen.\n\nErlaubt es ebenfalls Drogen für die Befriedigung von Spaß, sozialen Bedarf oder einer Sucht einzunehmen.</DrugUsageTipScheduled>
 
+  <!-- Food restriction management -->
+  <!-- EN: Food restriction -->
+  <FoodRestriction>TODO</FoodRestriction>
+  <!-- EN: Lavish -->
+  <FoodRestrictionLavish>TODO</FoodRestrictionLavish>
+  <!-- EN: Fine -->
+  <FoodRestrictionFine>TODO</FoodRestrictionFine>
+  <!-- EN: Simple -->
+  <FoodRestrictionSimple>TODO</FoodRestrictionSimple>
+  <!-- EN: Paste -->
+  <FoodRestrictionPaste>TODO</FoodRestrictionPaste>
+  <!-- EN: Raw -->
+  <FoodRestrictionRaw>TODO</FoodRestrictionRaw>
+  <!-- EN: Nothing -->
+  <FoodRestrictionNothing>TODO</FoodRestrictionNothing>
+  <!-- EN: Select food restriction -->
+  <SelectFoodRestriction>TODO</SelectFoodRestriction>
+  <!-- EN: New food restriction -->
+  <NewFoodRestriction>TODO</NewFoodRestriction>
+  <!-- EN: Delete food restriction -->
+  <DeleteFoodRestriction>TODO</DeleteFoodRestriction>
+  <!-- EN: No food restriction selected -->
+  <NoFoodRestrictionSelected>TODO</NoFoodRestrictionSelected>
+
   <!-- Medical settings -->
   <!-- EN: Defaults -->
   <MedGroupDefaults>Standard</MedGroupDefaults>
@@ -796,19 +822,19 @@
   <ConfirmMoveAutoJoinableCaravan>Einige Tiere oder Gefangene versuchen noch, die Karawane zu erreichen. Wenn Du sie bewegst, geht das nicht mehr.\n\nTiere, Gefangene und bewusstlose Kolonisten, die in einem Gebiet ohne nicht-bewusstlose Kolonisten zurückgelassen werden, gelten als aufgegeben und können von Gegnern gefangen genommen werden.\n\nBist Du sicher, dass Du die Karawane losschicken willst?</ConfirmMoveAutoJoinableCaravan>
   
   <!-- Abandon pawn -->
-  <!-- EN: Do you really want to banish {0}? -->
+  <!-- EN: Do you really want to banish {1_label}? -->
   <ConfirmBanishPawnDialog>Möchtest Du {0} wirklich verbannen?</ConfirmBanishPawnDialog>
-  <!-- EN: {0} will most likely die. -->
+  <!-- EN: {1_labelShort} will most likely die. -->
   <ConfirmBanishPawnDialog_LeftToDie>{0} wird sehr wahrscheinlich sterben.</ConfirmBanishPawnDialog_LeftToDie>
-  <!-- EN: {0} will take the following items with [PAWN_objective]: -->
+  <!-- EN: {1_labelShort} will take the following items with {1_objective}: -->
   <ConfirmBanishPawnDialog_Items>{0} wird die folgenden Gegenstände mitnehmen:</ConfirmBanishPawnDialog_Items>
   <!-- EN: All colonists will get the following thoughts: -->
   <ConfirmBanishPawnDialog_AllColonistsThoughts>Alle Kolonisten werden diese Erinnerungen bekommen:</ConfirmBanishPawnDialog_AllColonistsThoughts>
-  <!-- EN: Banishing {0} will cause the following people to get the following thoughts: -->
+  <!-- EN: Banishing {1_labelShort} will cause the following people to get the following thoughts: -->
   <ConfirmBanishPawnDialog_IndividualThoughts>Das Verbannen von {0} generiert bei den folgenden Personen die folgenden Gedanken:</ConfirmBanishPawnDialog_IndividualThoughts>
 
   <!-- Send transport pods which are not completely loaded -->
-  <!-- EN: Pod group isn't completely loaded. {0} is missing. Launch anyway? -->
+  <!-- EN: Pod group isn't completely loaded. {1_labelShort} is missing. Launch anyway? -->
   <ConfirmSendNotCompletelyLoadedPods>Die Transportkapseln sind noch nicht fertig beladen. {0} fehlt noch. Trotzdem starten?</ConfirmSendNotCompletelyLoadedPods>
 
   <!-- Settle near a faction base -->
