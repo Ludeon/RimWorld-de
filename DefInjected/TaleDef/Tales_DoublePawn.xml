@@ -2,7 +2,7 @@
 <LanguageData>
   
   <!-- EN: person captured -->
-  <Captured.label>Person gefangen</Captured.label>
+  <Captured.label>Person gefangen genommen</Captured.label>
   <!-- EN:
     <li>tale_noun->[CAPTURER_nameDef] capturing [PRISONER_nameDef]</li>
     <li>tale_noun->[PRISONER_nameDef] being captured by [CAPTURER_nameDef]</li>
@@ -29,19 +29,19 @@
     <li>desc_sentence->[CAPTURER_nameDef] is kicking [PRISONER_nameDef] for no obvious reason.</li>
   -->
   <Captured.rulePack.rulesStrings>
-    <li>tale_noun->[CAPTURER_nameDef] fängt [PRISONER_nameDef]</li>
-    <li>tale_noun->[PRISONER_nameDef] wird von [CAPTURER_nameDef] gefangen</li>
-    <li>tale_noun->der Gefangennahme von [PRISONER_nameDef]</li>
-    <li>image->der Gefangennahme von [PRISONER_nameFull] durch [CAPTURER_nameFull] [circumstance_group]</li>
-    <li>image->[CAPTURER_nameFull] beim Fesseln der Hände von [PRISONER_nameFull] [circumstance_group]</li>
-    <li>image->[CAPTURER_nameFull] beim Einfangen von [PRISONER_nameFull]. Eine Hand ist zum Schlag erhoben</li>
-    <li>circumstance_phrase->während [PRISONER_pronoun] sich auf dem Boden krümmt</li>
-    <li>circumstance_phrase->während [PRISONER_pronoun] sich vor Schmerz krümmt</li>
+    <li>tale_noun->[CAPTURER_nameDef] [PRISONER_nameDef] gefangen nahm</li>
+    <li>tale_noun->[PRISONER_nameDef] von [CAPTURER_nameDef] gefangen genommen wurde</li>
+    <li>tale_noun->[PRISONER_nameDef] gefangen genommen wurde</li>
+    <li>image->[CAPTURER_nameFull], wie [CAPTURER_pronoun] [circumstance_group] [PRISONER_nameFull] gefangen nimmt</li>
+    <li>image->[CAPTURER_nameFull], wie [CAPTURER_pronoun] [circumstance_group] die Hände von [PRISONER_nameFull] fesselt</li>
+    <li>image->[CAPTURER_nameFull], wie [CAPTURER_pronoun] [circumstance_group]  [PRISONER_nameFull] schlägt und [PRISONER_objective] gefangen nimmt</li>
+    <li>circumstance_phrase->, während [PRISONER_nameDef] sich auf dem Boden wälzt,</li>
+    <li>circumstance_phrase->, während [PRISONER_nameDef] sich vor Schmerz krümmt,</li>
     <li>circumstance_phrase->mit professioneller Effizienz</li>
-    <li>circumstance_phrase->mit ruppigen und amateurhaften Bewegungen</li>
-    <li>circumstance_phrase->und offensichtlich mit unnötiger Gewalt</li>
-    <li>circumstance_phrase->und mit unverhohlener Freude</li>
-    <li>circumstance_phrase->mit einem dominanten Lachen</li>
+    <li>circumstance_phrase->ruppig und amateurhaft</li>
+    <li>circumstance_phrase->mit sichtlich übertriebener Gewalt</li>
+    <li>circumstance_phrase->mit unverhohlener Freude</li>
+    <li>circumstance_phrase->mit einem dominanten Lächeln</li>
     <li>desc_sentence->[CAPTURER_nameDef] sieht [PRISONER_nameDef] dominierend in die Augen.</li>
     <li>desc_sentence->[PRISONER_nameDef] ist verletzt und scheint Schmerzen zu haben.</li>
     <li>desc_sentence->[PRISONER_nameDef] sieht [PRISONER_possessive]em Schicksal resigniert entgegen.</li>
@@ -55,7 +55,7 @@
   </Captured.rulePack.rulesStrings>
   
   <!-- EN: defeated hostile leader -->
-  <DefeatedHostileFactionLeader.label>besiegte feindlichen Anführer</DefeatedHostileFactionLeader.label>
+  <DefeatedHostileFactionLeader.label>feindlichen Anführer besiegt</DefeatedHostileFactionLeader.label>
   
   <!-- EN: surgery performed -->
   <DidSurgery.label>Operation durchgeführt</DidSurgery.label>
@@ -76,15 +76,15 @@
     <li>desc_sentence->[PATIENT_nameDef] is shaking and writhing.</li>
   -->
   <DidSurgery.rulePack.rulesStrings>
-    <li>tale_noun->[SURGEON_nameDef] operiert [PATIENT_nameDef]</li>
-    <li>tale_noun->[SURGEON_nameDef] operiert an [PATIENT_nameDef]</li>
-    <li>tale_noun->[PATIENT_nameDef]'s Operation</li>
-    <li>image->[SURGEON_nameDef], wie [SURGEON_pronoun] [PATIENT_nameFull] [circumstance_group] mit einem Anästhetikum betäubt</li>
-    <li>image->[SURGEON_nameDef] während der Operation [circumstance_group], wobei [SURGEON_pronoun] bis zum Ellenbogen in [PATIENT_nameFull] steckt</li>
-    <li>image->[SURGEON_nameDef], wie [SURGEON_pronoun] während der Operation [circumstance_group] in [PATIENT_nameFull] herumschneidet</li>
-    <li>circumstance_phrase->während [PATIENT_pronoun] vor Angst zittert</li>
-    <li>circumstance_phrase->während sich das Blut zu [SURGEON_possessive]en Füßen sammelt</li>
-    <li>circumstance_phrase->umgeben von beängstigend aussehendem Operationswerkzeug</li>
+    <li>tale_noun->[SURGEON_nameDef] [PATIENT_nameDef] operierte</li>
+    <li>tale_noun->[SURGEON_nameDef] eine medizinische Operation an [PATIENT_nameDef] durchführte</li>
+    <li>tale_noun->[PATIENT_nameDef] operiert wurde</li>
+    <li>image->[SURGEON_nameDef], wie [SURGEON_pronoun] [PATIENT_nameFull] [circumstance_group] in Narkose versetzt</li>
+    <li>image->[SURGEON_nameDef], wie [SURGEON_pronoun] in [PATIENT_nameFull] [circumstance_group] ellenbogentief eindringt</li>
+    <li>image->[SURGEON_nameDef], wie [SURGEON_pronoun] an [PATIENT_nameFull] [circumstance_group] herumschneidet</li>
+    <li>circumstance_phrase->, während [PATIENT_pronoun] vor Angst zittert,</li>
+    <li>circumstance_phrase->, während sich das Blut zu [SURGEON_possessive]en Füßen sammelt,</li>
+    <li>circumstance_phrase->, während [PATIENT_pronoun] von bedrohlich aussehenden chirurgischen Werkzeugen umgeben ist,</li>
     <li>circumstance_phrase->mit improvisierten Werkzeugen</li>
     <li>desc_sentence->[SURGEON_nameDef] schwitzt sehr stark.</li>
     <li>desc_sentence->[SURGEON_nameDef] scheint sich sehr auf seine Arbeit zu konzentrieren.</li>
@@ -124,33 +124,33 @@
     <li>desc_sentence->[PRISONER_nameDef] looks defiant.</li>
   -->
   <ExecutedPrisoner.rulePack.rulesStrings>
-    <li>tale_noun->[executioner] exekutiert [PRISONER_nameDef]</li>
-    <li>tale_noun->[PRISONER_nameDef] wird von [EXECUTIONER_nameDef] exekutiert</li>
-    <li>tale_noun->der Hinrichtung von [PRISONER_nameDef]</li>
+    <li>tale_noun->[executioner] [PRISONER_nameDef] exekutierte</li>
+    <li>tale_noun->[PRISONER_nameDef] von [EXECUTIONER_nameDef] exekutiert wurde</li>
+    <li>tale_noun->[PRISONER_nameDef] hingerichtet wurde</li>
     <li>image->[EXECUTIONER_nameFull], wie [EXECUTIONER_pronoun] [PRISONER_nameFull] [circumstance_group] hinrichtet</li>
     <li>image->[EXECUTIONER_nameFull], wie [EXECUTIONER_pronoun] [PRISONER_nameFull] [circumstance_group] tötet</li>
-    <li>image->[EXECUTIONER_nameFull] bei den [circumstance_group] Vorbereitungen der Hinrichtung von [PRISONER_nameFull]</li>
-    <li>image->[EXECUTIONER_nameFull] beim Betreten einer Gefängniszelle, auf dem Weg [PRISONER_nameFull] [circumstance_group] hinzurichten</li>
-    <li>circumstance_phrase->während [PRISONER_pronoun] sich auf dem Boden windet</li>
-    <li>circumstance_phrase->während [PRISONER_pronoun] sich vor Schmerzen krümmt</li>
-    <li>circumstance_phrase->während [PRISONER_pronoun] vor Angst schreit</li>
+    <li>image->[EXECUTIONER_nameFull], wie [EXECUTIONER_pronoun] sich auf die Exekution von [PRISONER_nameFull] [circumstance_group] vorbereitet</li>
+    <li>image->[EXECUTIONER_nameFull], wie [EXECUTIONER_pronoun] eine Gefängniszelle betritt, um [PRISONER_nameFull] [circumstance_group] hinzurichten</li>
+    <li>circumstance_phrase->, während [PRISONER_pronoun] sich auf dem Boden windet,</li>
+    <li>circumstance_phrase->, während [PRISONER_pronoun] sich vor Schmerzen krümmt,</li>
+    <li>circumstance_phrase->, während [PRISONER_pronoun] vor Angst schreit,</li>
     <li>circumstance_phrase->sehr professionell</li>
     <li>circumstance_phrase->in grober und amateurhafter Art</li>
     <li>circumstance_phrase->mit übermäßiger Gewalt</li>
     <li>circumstance_phrase->mit offensichtlichem Vergnügen</li>
     <li>circumstance_phrase->mit einem dominanten Lächeln im Gesicht</li>
-    <li>circumstance_phrase->mit Tränen in [EXECUTIONER_possessive] Augen</li>
+    <li>circumstance_phrase->mit Tränen in den Augen</li>
     <li>circumstance_phrase->absolut emotionslos</li>
-    <li>circumstance_phrase->während [EXECUTIONER_pronoun] unnötige Schmerzen verursacht</li>
-    <li>circumstance_phrase->während [EXECUTIONER_pronoun] an etwas anderes denkt</li>
+    <li>circumstance_phrase->übertrieben</li>
+    <li>circumstance_phrase->gedankenverloren</li>
     <li>circumstance_phrase->für das allgemeine Wohl</li>
-    <li>desc_sentence->[EXECUTIONER_nameFull] schwitzt stark.</li>
-    <li>desc_sentence->[EXECUTIONER_nameFull] sabbert ein bisschen.</li>
-    <li>desc_sentence->[EXECUTIONER_nameFull] hat Blut auf [EXECUTIONER_possessive] Gesicht verschmiert.</li>
+    <li>desc_sentence->[EXECUTIONER_nameDef] schwitzt stark.</li>
+    <li>desc_sentence->[EXECUTIONER_nameDef] sabbert ein bisschen.</li>
+    <li>desc_sentence->[EXECUTIONER_nameDef] hat Blut auf [EXECUTIONER_possessive]em Gesicht verschmiert.</li>
     <li>desc_sentence->[PRISONER_nameDef] zittert und windet sich.</li>
     <li>desc_sentence->[PRISONER_nameDef] scheint endgültig aufgegeben zu haben.</li>
-    <li>desc_sentence->[PRISONER_nameDef] hat [PRISONER_possessive] Augen geschlossen und scheint zu einer höheren Macht zu beten.</li>
-    <li>desc_sentence->[PRISONER_nameDef] schaut trotzig.</li>
+    <li>desc_sentence->[PRISONER_nameDef] hat [PRISONER_possessive]e Augen geschlossen und scheint zu einer höheren Macht zu beten.</li>
+    <li>desc_sentence->[PRISONER_nameDef] schaut [PRISONER_possessive]en Henker trotzig an.</li>
   </ExecutedPrisoner.rulePack.rulesStrings>
   
   <!-- EN: animal hunted -->
@@ -170,18 +170,18 @@
     <li>desc_sentence->[PREY_nameDef] is looking around as though [PREY_pronoun] senses that something is wrong.</li>
   -->
   <Hunted.rulePack.rulesStrings>
-    <li>tale_noun->[HUNTER_nameDef] jagt [PREY_nameDef]</li>
-    <li>tale_noun->[PREY_nameDef] wird von [HUNTER_nameDef] gejagt</li>
-    <li>tale_noun->[HUNTER_nameDef]'s erfolgreicher Jagd</li>
-    <li>image->[PREY_nameFull], wie es von [HUNTER_nameFull] gejagt wird, [circumstance_group]</li>
-    <li>image->[HUNTER_nameFull], wie [HUNTER_pronoun] sich langsam an [PREY_nameFull] heranpirscht</li>
-    <li>image->[HUNTER_nameFull] [circumstance_group] bei der Jagd auf [PREY_nameFull]</li>
+    <li>tale_noun->[HUNTER_nameDef] Jagd auf [PREY_nameDef] machte</li>
+    <li>tale_noun->[PREY_nameDef] von [HUNTER_nameDef] gejagt wurde</li>
+    <li>tale_noun->[HUNTER_nameDef] erfolgreich auf Jagd war</li>
+    <li>image->[PREY_nameFull], wie [PREY_pronoun] von [HUNTER_nameFull] gejagt wird, [circumstance_group]</li>
+    <li>image->[HUNTER_nameFull], wie [HUNTER_pronoun] sich langsam an [PREY_nameFull] heranpirscht, [circumstance_group]</li>
+    <li>image->[HUNTER_nameFull], wie [HUNTER_pronoun] Jagd auf [PREY_nameFull] macht, [circumstance_group]</li>
     <li>circumstance_phrase->während [PREY_nameDef] ruhig und entspannt ist</li>
     <li>circumstance_phrase->während [PREY_nameDef] umherwandert</li>
     <li>circumstance_phrase->während [PREY_nameDef] frisst</li>
     <li>desc_sentence->[PREY_nameDef] scheint nichts zu bemerken.</li>
-    <li>desc_sentence->[HUNTER_nameDef] greift entschieden nach [HUNTER_possessive]er Waffe.</li>
-    <li>desc_sentence->[PREY_nameDef] sieht sich ängstlich um, als wenn [PREY_pronoun] wittert, dass irgendetwas nicht stimmt.</li>
+    <li>desc_sentence->[HUNTER_nameDef] hält [HUNTER_possessive]e Waffe fest umklammert.</li>
+    <li>desc_sentence->[PREY_nameDef] sieht sich ängstlich um, als ob [PREY_pronoun] spürt, dass etwas nicht stimmt.</li>
   </Hunted.rulePack.rulesStrings>
   
   <!-- EN: colonist kidnapped -->
@@ -208,22 +208,22 @@
     <li>desc_sentence->[VICTIM_nameDef] appears to be badly wounded.</li>
   -->
   <KidnappedColonist.rulePack.rulesStrings>
-    <li>tale_noun->[KIDNAPPER_nameDef] entführt [VICTIM_nameDef]</li>
-    <li>tale_noun->[VICTIM_nameDef] wird von [KIDNAPPER_nameDef] entführt</li>
-    <li>tale_noun->der Entführung von [VICTIM_nameDef]</li>
-    <li>image->[KIDNAPPER_nameFull] beim Wegtragen von [VICTIM_nameFull] [circumstance_group] zur Fraktion '[KIDNAPPER_factionName]'</li>
-    <li>image->[KIDNAPPER_nameFull] der '[KIDNAPPER_factionName]', beim Entführen von [VICTIM_nameFull] [circumstance_group]</li>
-    <li>image->[KIDNAPPER_nameFull] beim Entführen von [VICTIM_nameFull] [circumstance_group]</li>
-    <li>circumstance_phrase->wobei [VICTIM_pronoun] sich vor Schmerz windet</li>
+    <li>tale_noun->[KIDNAPPER_nameDef] [VICTIM_nameDef] entführte</li>
+    <li>tale_noun->[VICTIM_nameDef] von [KIDNAPPER_nameDef] entführt wurde</li>
+    <li>tale_noun->[VICTIM_nameDef] entführt wurde</li>
+    <li>image->[KIDNAPPER_nameFull], wie [KIDNAPPER_pronoun] [circumstance_group] [VICTIM_nameFull] zur Fraktion '[KIDNAPPER_factionName]' trägt</li>
+    <li>image->[KIDNAPPER_nameFull] aus der Fraktion '[KIDNAPPER_factionName]', wie [KIDNAPPER_pronoun] [circumstance_group] [VICTIM_nameFull] entführt</li>
+    <li>image->[KIDNAPPER_nameFull], wie [KIDNAPPER_pronoun] [circumstance_group] [VICTIM_nameFull] entführt</li>
+    <li>circumstance_phrase->, während [VICTIM_nameDef] sich vor Schmerz windet,</li>
     <li>circumstance_phrase->sehr professionell</li>
-    <li>circumstance_phrase->in grober und amateurhafter Art und Weise</li>
+    <li>circumstance_phrase->ruppig und amateurhaft</li>
     <li>circumstance_phrase->mit übermäßiger Gewalt</li>
     <li>circumstance_phrase->mit offensichtlichem Vergnügen</li>
     <li>circumstance_phrase->mit einem dominanten Lächeln</li>
-    <li>circumstance_phrase->und ist voller Dreck und Blut</li>
+    <li>circumstance_phrase->dreckig und blutverschmiert</li>
     <li>desc_sentence->[VICTIM_nameDef] scheint endgültig aufgegeben zu haben.</li>
     <li>desc_sentence->[VICTIM_nameDef] hat [VICTIM_possessive]e Augen geschlossen und scheint zu einer höheren Macht zu beten.</li>
-    <li>desc_sentence->[VICTIM_nameDef] schaut trotzig.</li>
+    <li>desc_sentence->[VICTIM_nameDef] schaut [VICTIM_possessive]en Entführer trotzig an.</li>
     <li>desc_sentence->[VICTIM_nameDef] schreit vor Wut und Angst.</li>
     <li>desc_sentence->[VICTIM_nameDef] sieht erschöpft und gebrochen aus.</li>
     <li>desc_sentence->[VICTIM_nameDef] scheint schwer verletzt zu sein.</li>
@@ -260,29 +260,29 @@
     <li>desc_sentence->[KILLER_nameDef] looks triumphant.</li>
   -->
   <KilledBy.rulePack.rulesStrings>
-    <li>tale_noun->[KILLER_nameDef] ermordet [VICTIM_nameDef]</li>
-    <li>tale_noun->[VICTIM_nameDef]'s Mord</li>
-    <li>tale_noun->der Mord an [VICTIM_nameDef] durch [KILLER_nameDef]</li>
-    <li>tale_noun->der Mord an [VICTIM_nameDef]</li>
-    <li>image->der Ermordung [VICTIM_nameFull]s [circumstance_group] durch [KILLER_nameFull]</li>
+    <li>tale_noun->[KILLER_nameDef] [VICTIM_nameDef] tötete</li>
+    <li>tale_noun->[VICTIM_nameDef] von [KILLER_nameDef] getötet wurde</li>
+    <li>tale_noun->[KILLER_nameDef] [VICTIM_nameDef] ermordete</li>
+    <li>tale_noun->[VICTIM_nameDef] getötet wurde</li>
+    <li>image->[VICTIM_nameFull], wie [VICTIM_pronoun] von [KILLER_nameFull] [circumstance_group] getötet wird</li>
     <li>image->[KILLER_nameFull], wie [KILLER_pronoun] [circumstance_group] [VICTIM_nameFull] tötet</li>
     <li>image->[KILLER_nameFull], wie [KILLER_pronoun] [circumstance_group] das Leben von [VICTIM_nameFull] beendet</li>
-    <li>image->der Ermordung [VICTIM_nameFull]s durch [KILLER_nameFull] [circumstance_group]</li>
-    <li>image->[VICTIM_nameFull], wie [VICTIM_pronoun] [circumstance_group] umgebracht wird</li>
-    <li>circumstance_phrase->ohne jedes Mitleid</li>
-    <li>circumstance_phrase->mit kalter Präzision</li>
+    <li>image->[KILLER_nameFull], wie [KILLER_pronoun] [circumstance_group] [VICTIM_nameFull] brutal ermordet</li>
+    <li>image->[VICTIM_nameFull], wie [VICTIM_pronoun] [circumstance_group] getötet wird</li>
+    <li>circumstance_phrase->scheinbar ohne Reue</li>
+    <li>circumstance_phrase->mit kalter Effizienz</li>
     <li>circumstance_phrase->mit leidenschaftlicher Wut</li>
-    <li>circumstance_phrase->mit schnellen und effektiven Bewegungen</li>
-    <li>circumstance_phrase->ohne jeden Ausdruck von Emotionen</li>
+    <li>circumstance_phrase->mit schnellen, effektiven Bewegungen</li>
+    <li>circumstance_phrase->ohne Emotion und Ausdruck</li>
     <li>circumstance_phrase->aus purer Notwendigkeit</li>
-    <li>circumstance_phrase->in einer feigen und halbherzigen Art</li>
-    <li>desc_sentence->In einem symbolischen Ausdruck dieses Ereignisses geht im Hintergrund die Sonne unter.</li>
-    <li>desc_sentence->[Quantity_adjphrase] [Animal]en schauen zu.</li>
+    <li>circumstance_phrase->auf einer feigen, halbherzigen Weise</li>
+    <li>desc_sentence->Die Sonne geht hinter einer symbolischen Darstellung des Geschehens unter.</li>
+    <li>desc_sentence->[Quantity_adjphrase] [Animal] schauen zu.</li>
     <li>desc_sentence->Ein [PersonJob] schaut [side_position] lautlos zu.</li>
     <li>desc_sentence->Eine Blutlache bildet sich um den Körper von [VICTIM_nameDef].</li>
-    <li>desc_sentence->Die Augen von [VICTIM_nameDef] sind in einer realistischen leblosen Art dargestellt.</li>
-    <li>desc_sentence->[KILLER_nameDef] fletscht [killer_possessive] Zähne.</li>
-    <li>desc_sentence->[KILLER_nameDef] scheint zufriedengestellt zu sein.</li>
+    <li>desc_sentence->Die leblosen Augen von [VICTIM_nameDef] sind auf realistische Weise dargestellt.</li>
+    <li>desc_sentence->[KILLER_nameDef] fletscht [killer_possessive]e Zähne.</li>
+    <li>desc_sentence->[KILLER_nameDef] scheint zufrieden zu sein.</li>
     <li>desc_sentence->[KILLER_nameDef] sieht betrübt über das aus, was [KILLER_pronoun] hier macht.</li>
     <li>desc_sentence->[KILLER_nameDef] scheint zufrieden mit der Situation zu sein.</li>
     <li>desc_sentence->[KILLER_nameDef] sieht triumphierend aus.</li>
@@ -295,7 +295,7 @@
   <KilledColonyAnimal.label>Tier der Kolonie getötet</KilledColonyAnimal.label>
   
   <!-- EN: person recruited -->
-  <Recruited.label>Person angeworben</Recruited.label>
+  <Recruited.label>Person rekrutiert</Recruited.label>
   <!-- EN:
     <li>tale_noun->[RECRUITER_nameDef] recruiting [JOINER_nameDef]</li>
     <li>tale_noun->[JOINER_nameDef] being recruited by [RECRUITER_nameDef]</li>
@@ -314,13 +314,15 @@
     <li>desc_sentence->[JOINER_nameDef] looks hopeful.</li>
   -->
   <Recruited.rulePack.rulesStrings>
-    <li>tale_noun->der Anwerbung von [JOINER_nameDef]</li>
-    <li>image->der Rekrutierung von [JOINER_nameFull] [circumstance_group] durch [RECRUITER_nameFull]</li>
-    <li>image->[RECRUITER_nameFull], wie [RECRUITER_pronoun] [JOINER_nameFull] [circumstance_group] als neuen Kolonisten willkommen heißt</li>
-    <li>image->[RECRUITER_nameFull] [circumstance_group], wie [RECRUITER_pronoun] mit [JOINER_nameFull] über die Kolonie redet</li>
+    <li>tale_noun->[RECRUITER_nameDef] [JOINER_nameDef] rekrutierte</li>
+    <li>tale_noun->[JOINER_nameDef] von [RECRUITER_nameDef] rekrutiert wurde</li>
+    <li>tale_noun->[JOINER_nameDef] rekrutiert wurde</li>
+    <li>image->[RECRUITER_nameFull], wie [RECRUITER_pronoun] [circumstance_group] [JOINER_nameFull] rekrutierte</li>
+    <li>image->[RECRUITER_nameFull], wie [RECRUITER_pronoun] [circumstance_group] [JOINER_nameFull] als neuen Kolonisten willkommen heißt</li>
+    <li>image->[RECRUITER_nameFull], wie [RECRUITER_pronoun] [circumstance_group] [JOINER_nameFull] überzeugt, der Kolonie beizutreten</li>
     <li>circumstance_phrase->mit offensichtlichem Wohlwollen</li>
     <li>circumstance_phrase->mit einem herzhaften Handschlag</li>
-    <li>circumstance_phrase->mit lächelnden Gesichtern umher</li>
+    <li>circumstance_phrase->mit lächelnden Gesichtern drumherum</li>
     <li>circumstance_phrase->vor der ganzen Kolonie</li>
     <li>circumstance_phrase->in einer Gefängniszelle</li>
     <li>desc_sentence->[JOINER_nameDef] nickt verständnisvoll.</li>
@@ -354,26 +356,26 @@
     <li>desc_sentence->An air of hopelessness pervades the situation.</li>
   -->
   <SoldPrisoner.rulePack.rulesStrings>
-    <li>tale_noun->dem Verkauf von [PRISONER_nameDef] an einen Händler</li>
-    <li>tale_noun->[SELLER_nameDef] verkäuft [PRISONER_nameDef] in die Sklaverei</li>
-    <li>tale_noun->[PRISONER_nameDef] wird von [SELLER_nameDef] in die Sklaverei verkauft</li>
+    <li>tale_noun->[PRISONER_nameDef] an einen Händler verkauft wurde</li>
+    <li>tale_noun->[SELLER_nameDef] [PRISONER_nameDef] als Sklave verkaufte</li>
+    <li>tale_noun->[PRISONER_nameDef] von [SELLER_nameDef] als Sklave verkauft wurde</li>
     <li>image->[TRADER_nameFull], wie [TRADER_pronoun] [PRISONER_nameDef] von [SELLER_nameFull] abkauft, [circumstance_group]</li>
     <li>image->[SELLER_nameFull], wie [SELLER_pronoun] [PRISONER_nameDef] an [TRADER_nameFull] verkauft, [circumstance_group]</li>
-    <li>circumstance_phrase->während die anderen Kolonisten missbilligend drein schauen</li>
-    <li>circumstance_phrase->wobei [SELLER_nameDef] das Geld zählt</li>
+    <li>circumstance_phrase->während die anderen Kolonisten missbilligend zuschauen</li>
+    <li>circumstance_phrase->während [SELLER_nameDef] das Geld zählt</li>
     <li>circumstance_phrase->während [PRISONER_nameDef] klagend stöhnt</li>
-    <li>circumstance_phrase->zum Ärger von [PRISONER_nameDef]</li>
+    <li>circumstance_phrase->während [PRISONER_nameDef] sich ärgert</li>
     <li>desc_sentence->[TRADER_nameDef] lächelt teuflisch.</li>
     <li>desc_sentence->[SELLER_nameDef] lacht gehässig.</li>
-    <li>desc_sentence->[SELLER_nameDef] reicht [PRISONER_nameDef] widerwillig an den Händler.</li>
-    <li>desc_sentence->[PRISONER_nameDef] starrt widerspenstig an [PRISONER_possessive] neuen Meister.</li>
-    <li>desc_sentence->[TRADER_nameDef] zerrt [PRISONER_nameDef] an [PRISONER_possessive] Ketten weg.</li>
+    <li>desc_sentence->[SELLER_nameDef] überreicht widerwillig [PRISONER_nameDef] an den Händler.</li>
+    <li>desc_sentence->[PRISONER_nameDef] starrt trotzig auf [PRISONER_possessive]en neuen Meister.</li>
+    <li>desc_sentence->[TRADER_nameDef] zerrt an den Ketten von [PRISONER_nameDef].</li>
     <li>desc_sentence->[PRISONER_nameDef] starrt böse auf [SELLER_nameDef] und plant [PRISONER_possessive] Rache.</li>
     <li>desc_sentence->[PRISONER_nameDef] weint.</li>
     <li>desc_sentence->[PRISONER_nameDef] spuckt in das Gesicht von [SELLER_nameDef].</li>
     <li>desc_sentence->[PRISONER_nameDef] versinkt im Boden.</li>
-    <li>desc_sentence->[SELLER_nameDef] gibt die Ketten von [PRISONER_nameDef] energisch in [TRADER_nameDef]'s Hände.</li>
-    <li>desc_sentence->Ein Gefühl der Hoffnungslosigkeit umspielt die Situation.</li>
+    <li>desc_sentence->[SELLER_nameDef] drückt die Ketten von [PRISONER_nameDef] in [TRADER_nameDef]'s Hände.</li>
+    <li>desc_sentence->Ein Hauch von Hoffnungslosigkeit prägt das Geschehen.</li>
   </SoldPrisoner.rulePack.rulesStrings>
   
   <!-- EN: animal tamed -->
@@ -396,25 +398,25 @@
     <li>desc_sentence->[TAMER_nameDef] is projecting a powerful sense of love towards [ANIMAL_nameDef].</li>
   -->
   <TamedAnimal.rulePack.rulesStrings>
-    <li>tale_noun->der Zähmung von [ANIMAL_nameDef] durch [TAMER_nameDef]</li>
-    <li>tale_noun->[TAMER_nameDef]'s Zähmung von [ANIMAL_nameDef]</li>
-    <li>image->[TAMER_nameFull] beim [circumstance_group] zähmen von [ANIMAL_nameFull]</li>
-    <li>image->[TAMER_nameFull], wie [TAMER_pronoun] [ANIMAL_nameFull] [circumstance_group] ein wenig Nahrung anbietet</li>
-    <li>image->[TAMER_nameFull], wie [TAMER_pronoun] [circumstance_group] sanft auf einem scheuen [ANIMAL_nameFull] einflüstert</li>
-    <li>image->[TAMER_nameFull] beim [circumstance_group] beruhigen eines wilden [ANIMAL_nameFull]</li>
+    <li>tale_noun->[ANIMAL_nameDef] von [TAMER_nameDef] gezähmt wurde</li>
+    <li>tale_noun->[TAMER_nameDef] [ANIMAL_nameDef] zähmte</li>
+    <li>image->[TAMER_nameFull], wie [TAMER_pronoun] [circumstance_group] [ANIMAL_nameFull] zähmt</li>
+    <li>image->[TAMER_nameFull], wie [TAMER_pronoun] [circumstance_group] [ANIMAL_nameFull] einen Leckerbissen anbietet</li>
+    <li>image->[TAMER_nameFull], wie [TAMER_pronoun] [circumstance_group] [ANIMAL_nameFull] sanft zuflüstert</li>
+    <li>image->[TAMER_nameFull], wie [TAMER_pronoun] [circumstance_group] [ANIMAL_nameFull] beruhigt</li>
     <li>circumstance_phrase->sanft und vorsichtig</li>
     <li>circumstance_phrase->mit einem Lächeln</li>
     <li>circumstance_phrase->erschöpft, aber glücklich</li>
     <li>desc_sentence->[ANIMAL_nameDef] verhält sich aggressiv.</li>
-    <li>desc_sentence->[ANIMAL_nameDef] schaut schläfrig und trunken vor Liebe drein.</li>
+    <li>desc_sentence->[ANIMAL_nameDef] sieht schläfrig und benebelt von der Liebe aus.</li>
     <li>desc_sentence->[ANIMAL_nameDef] scheint in einer Art hypnotischem Zustand zu sein.</li>
     <li>desc_sentence->[ANIMAL_nameDef] sieht ängstlich aber interessiert aus.</li>
-    <li>desc_sentence->[ANIMAL_nameDef] sieht fasziniert aus.</li>
-    <li>desc_sentence->[TAMER_nameDef] generiert eine starke Aura der Liebe in Richtung [ANIMAL_nameDef].</li>
+    <li>desc_sentence->[ANIMAL_nameDef] scheint beeindruckt zu sein.</li>
+    <li>desc_sentence->[TAMER_nameDef] projiziert ein starkes Gefühl der Liebe auf [ANIMAL_nameDef].</li>
   </TamedAnimal.rulePack.rulesStrings>
   
   <!-- EN: traded with someone -->
-  <TradedWith.label>Gehandelt</TradedWith.label>
+  <TradedWith.label>Mit jemandem gehandelt</TradedWith.label>
   <!-- EN:
     <li>tale_noun->a trade between [SELLER_nameFull] and [BUYER_nameFull]</li>
     <li>image->[BUYER_nameFull] buying goods from [SELLER_nameFull] [circumstance_group]</li>
@@ -431,12 +433,12 @@
     <li>desc_sentence->[BUYER_nameDef] is taking [BUYER_possessive] goods.</li>
   -->
   <TradedWith.rulePack.rulesStrings>
-    <li>tale_noun->ein Handel zwischen [SELLER_nameFull] und [BUYER_nameFull]</li>
-    <li>image->, wie [BUYER_nameFull] Ware von [SELLER_nameFull] [circumstance_group] kauft.</li>
-    <li>image->[SELLER_nameFull] beim Verkaufen von Ware an [BUYER_nameFull] [circumstance_group].</li>
-    <li>circumstance_phrase->mit gieriger Absicht</li>
-    <li>circumstance_phrase->während [SELLER_nameDef] [BUYER_shortNameDef] angrinst</li>
-    <li>desc_sentence->[BUYER_nameDef] untersucht die Ware von [SELLER_nameDef].</li>
+    <li>tale_noun->ein Handel zwischen [SELLER_nameFull] und [BUYER_nameFull] stattfand</li>
+    <li>image->[BUYER_nameFull], wie [BUYER_pronoun] [circumstance_group] Waren von [SELLER_nameFull] kauft</li>
+    <li>image->[SELLER_nameFull], wie [SELLER_pronoun] [circumstance_group] Waren an [BUYER_nameFull] verkauft</li>
+    <li>circumstance_phrase->mit gierigem Blick</li>
+    <li>circumstance_phrase->, während [BUYER_shortNameDef] von [SELLER_nameDef] angegrinst wird,</li>
+    <li>desc_sentence->[BUYER_nameDef] untersucht die Waren von [SELLER_nameDef].</li>
     <li>desc_sentence->[SELLER_nameDef] betrachtet einen Gegenstand.</li>
     <li>desc_sentence->[SELLER_nameDef] fängt an zu feilschen.</li>
     <li>desc_sentence->[BUYER_nameDef] diskutiert mit [SELLER_nameDef].</li>
@@ -483,38 +485,38 @@
     <li>desc_sentence->[TRAINER_nameDef] is morphing into [ANIMAL_ShortDefinite].</li>
   -->
   <TrainedAnimal.rulePack.rulesStrings>
-    <li>tale_noun->[TRAINER_nameDef] trainiert [ANIMAL_nameDef]</li>
-    <li>tale_noun->dem Training von [ANIMAL_nameDef]</li>
-    <li>tale_noun->dem Training von [ANIMAL_nameDef] durch [TRAINER_nameDef]</li>
-    <li>image->[TRAINER_nameFull], wie [TRAINER_pronoun] [ANIMAL_nameFull] in [TRAINABLE_label] [train_syn], [circumstance_group]</li>
-    <li>image->[TRAINER_nameFull], wie [TRAINER_pronoun] [TRAINABLE_label] an [ANIMAL_nameFull] lehrt, [circumstance_group]</li>
-    <li>image->[TRAINER_nameFull] beim Lehren von [TRAINABLE_label] an [ANIMAL_nameFull], [circumstance_group]</li>
+    <li>tale_noun->[TRAINER_nameDef] [ANIMAL_nameDef] trainierte</li>
+    <li>tale_noun->[ANIMAL_nameDef] trainiert wurde</li>
+    <li>tale_noun->[ANIMAL_nameDef] von [TRAINER_nameDef] trainiert wurde</li>
+    <li>image->[TRAINER_nameFull], wie [TRAINER_pronoun] mit [ANIMAL_nameFull] '[TRAINABLE_label]' trainiert, [circumstance_group]</li>
+    <li>image->[TRAINER_nameFull], wie [TRAINER_pronoun] [ANIMAL_nameFull] '[TRAINABLE_label]' beibringt, [circumstance_group]</li>
+    <li>image->[TRAINER_nameFull], wie [TRAINER_pronoun] '[TRAINABLE_label]' mit [ANIMAL_nameFull] übt, [circumstance_group]</li>
     <li>train_syn->trainiert</li>
     <li>train_syn->drillt</li>
     <li>train_syn->weist</li>
     <li>train_syn->führt</li>
     <li>train_syn->erzieht</li>
     <li>circumstance_phrase->während andere zuschauen</li>
-    <li>circumstance_phrase->während wilde [Animal]s angeekelt zuschauen</li>
+    <li>circumstance_phrase->während wilde [Animal] angeekelt zuschauen</li>
     <li>circumstance_phrase->während [ANIMAL_nameDef] an die einfacheren Tage zurückdenkt, als [ANIMAL_pronoun] noch ein wildes Tier war</li>
     <li>circumstance_phrase->während [TRAINER_nameDef] daran denkt, was es wohl zu Mittag geben wird</li>
-    <li>circumstance_phrase->während die anderen Kolonisten richtige Arbeit erledigen</li>
+    <li>circumstance_phrase->während die anderen Kolonisten tatsächlich arbeiten</li>
     <li>desc_sentence->[TRAINER_nameDef] sieht zufrieden aus.</li>
     <li>desc_sentence->[TRAINER_nameDef] lächelt.</li>
     <li>desc_sentence->[TRAINER_nameDef] sieht gelangweilt aus.</li>
-    <li>desc_sentence->[TRAINER_nameDef] schwingt drohend [TRAINER_possessive] Faust.</li>
-    <li>desc_sentence->[TRAINER_nameDef] zeigt Konzentrationsfalten auf [TRAINER_possessive]r Stirn.</li>
+    <li>desc_sentence->[TRAINER_nameDef] schwingt drohend [TRAINER_possessive]e Faust.</li>
+    <li>desc_sentence->[TRAINER_nameDef] zeigt Konzentrationsfalten auf [TRAINER_possessive]er Stirn.</li>
     <li>desc_sentence->[ANIMAL_nameDef] sieht verwirrt aus.</li>
-    <li>desc_sentence->[ANIMAL_nameDef] hat eine Waffe in [ANIMAL_possessive] Maul.</li>
+    <li>desc_sentence->[ANIMAL_nameDef] hat eine Waffe in [ANIMAL_possessive]em Maul.</li>
     <li>desc_sentence->[ANIMAL_nameDef] grunzt vor Anstrengung.</li>
     <li>desc_sentence->[TRAINER_nameDef] schüttelt frustriert [TRAINER_possessive]en Kopf.</li>
     <li>desc_sentence->[ANIMAL_nameDef] zittert vor Angst.</li>
     <li>desc_sentence->[ANIMAL_nameDef] scheint sich in eine [vegetable] zu verwandeln.</li>
-    <li>desc_sentence->[ANIMAL_nameDef] ist als ein Werkzeughaufen dargestellt.</li>
-    <li>desc_sentence->[ANIMAL_nameDef] ist halb [Color] und halb [Color].</li>
+    <li>desc_sentence->[ANIMAL_nameDef] wird als ein Haufen Elektrowerkzeuge dargestellt.</li>
+    <li>desc_sentence->[ANIMAL_nameDef] ist teilweise [Color] und [Color].</li>
     <li>desc_sentence->[ANIMAL_nameDef] ist voller Schuppen.</li>
-    <li>desc_sentence->[TRAINER_nameDef] ist mit [quantity] Armen dargestellt.</li>
-    <li>desc_sentence->[TRAINER_nameDef] verwandelt sich in ein [ANIMAL_ShortDefinite].</li>
+    <li>desc_sentence->[TRAINER_nameDef] wird mit [quantity] Armen dargestellt.</li>
+    <li>desc_sentence->[TRAINER_nameDef] verwandelt sich in [ANIMAL_ShortDefinite].</li>
   </TrainedAnimal.rulePack.rulesStrings>
   
 </LanguageData>
