@@ -48,8 +48,19 @@
     <li>Color->Words/Nouns/Colors</li>
     <li>ColorBadass->Words/Nouns/Colors_Badass</li>
     <li>Vegetable->Words/Nouns/Vegetables</li>
+    <li>VegetableSingular->Words/Nouns/Vegetables_Singular</li>
+    <li>VegetableSingularFem->Words/Nouns/Vegetables_Singular_Feminine</li>
+    <li>VegetableSingularMas->Words/Nouns/Vegetables_Singular_Masculine</li>
+    <li>VegetablePlural->Words/Nouns/Vegetables_Plural</li>
+    <li>VegetablePluralDat->Words/Nouns/Vegetables_Plural_Dative</li>
     <li>Game->Words/Nouns/Games</li>
     <li>Animal->Words/Nouns/Animals</li>
+    <li>AnimalSingular->Words/Nouns/Animals_Singular</li>
+    <li>AnimalSingularFem->Words/Nouns/Animals_Singular_Feminine</li>
+    <li>AnimalSingularMas->Words/Nouns/Animals_Singular_Masculine</li>
+    <li>AnimalSingularNeu->Words/Nouns/Animals_Singular_Neuter</li>
+    <li>AnimalPlural->Words/Nouns/Animals_Plural</li>
+    <li>AnimalPluralDat->Words/Nouns/Animals_Plural_Dative</li>
     <li>AnimalBadass->Words/Nouns/Animals_Badass</li>
     <li>AnimalGroup->Words/Nouns/AnimalGroups</li>
     <li>Weapon->Words/Nouns/Weapons</li>
@@ -76,10 +87,6 @@
     <li>AdjectiveNatural->Words/Adjectives/Natural</li>
     <li>VerbFriendly->Words/Verbs/Friendly</li>
     <li>PersonalCharacteristic->Words/Nouns/PersonalCharacteristics</li>
-    <li>VegetableSingular->Words/Nouns/Vegetables_Singular</li>
-    <li>VegetableSingularFem->Words/Nouns/Vegetables_Singular_Feminine</li>
-    <li>VegetableSingularMas->Words/Nouns/Vegetables_Singular_Masculine</li>
-    <li>VegetablePlural->Words/Nouns/Vegetables_Plural</li>
   </GlobalUtility.rulePack.rulesFiles>
   <!-- EN:
     <li>Trans->of</li>
@@ -227,32 +234,32 @@
     <li>TalkTopicHeavy(p=0.08)->die Verbindungen zwischen [talktopicheavyfile] und [talktopicheavyfile]</li>
     <li>TalkTopicHeavy(p=0.08)->die Beziehungen zwischen [talktopicheavyfile] und [talktopicheavyfile]</li>
     <li>TalkTopicLight(p=25)->[talktopiclightfile]</li>
-    <li>TalkTopic_light->[VegetablePlural]</li>
-    <li>TalkTopic_light->[VegetablePlural] essen</li>
-    <li>TalkTopic_light->kochen mit [VegetablePlural]</li>
-    <li>TalkTopic_light->[Game]</li>
-    <li>TalkTopic_light->[Game] spielen</li>
-    <li>TalkTopic_light->[Game] üben</li>
-    <li>TalkTopic_light->[Game] lernen</li>
-    <li>TalkTopic_light->[Animal]</li>
-    <li>TalkTopic_light->[Animal] trainieren</li>
-    <li>TalkTopic_light->[Animal] zähmen</li>
-    <li>TalkTopic_light->mit [Animal] kämpfen</li>
-    <li>TalkTopic_light->[Animal] wird verrückt</li>
-    <li>TalkTopic_light->[Weapon]</li>
-    <li>TalkTopic_light->[Weapon] verwenden</li>
-    <li>TalkTopic_light->mit [Weapon] üben</li>
-    <li>TalkTopic_light->[TerrainFeature]</li>
-    <li>TalkTopic_light->[NaturalObject]</li>
-    <li>TalkTopic_light->[TreeType]nbäume</li>
-    <li>TalkTopic_light->[PersonJob]</li>
-    <li>TalkTopic_light->freundliche [PersonJob]</li>
-    <li>TalkTopic_light->feindliche [PersonJob]</li>
-    <li>TalkTopic_light->[Enemy]</li>
-    <li>TalkTopic_light->[Enemy] bekämpfen</li>
-    <li>TalkTopic_light->[Apparel]</li>
-    <li>TalkTopic_light->[Apparel] tragen</li>
-    <li>TalkTopic_light->[Apparel] herstellen</li>
+    <li>TalkTopicLight->[VegetablePlural]</li>
+    <li>TalkTopicLight->das Essen von [VegetablePluralDat]</li>
+    <li>TalkTopicLight->das Kochen mit [VegetablePluralDat]</li>
+    <li>TalkTopicLight->[Game]</li>
+    <li>TalkTopicLight->das Spielen von [Game]</li>
+    <li>TalkTopicLight->das Üben von [Game]</li>
+    <li>TalkTopicLight->das Lernen von [Game]</li>
+    <li>TalkTopicLight->[AnimalPlural]</li>
+    <li>TalkTopicLight->das Trainieren von [AnimalPluralDat]</li>
+    <li>TalkTopicLight->das Zähmen von [AnimalPluralDat]</li>
+    <li>TalkTopicLight->das Kämpfen mit [AnimalPluralDat]</li>
+    <li>TalkTopicLight->verrückte [AnimalPlural]</li>
+    <li>TalkTopicLight->[Weapon]</li>
+    <li>TalkTopicLight->das Verwenden von [Weapon]</li>
+    <li>TalkTopicLight->das Üben mit [Weapon]</li>
+    <li>TalkTopicLight->[TerrainFeature]</li>
+    <li>TalkTopicLight->[NaturalObject]</li>
+    <li>TalkTopicLight->[TreeType]nbäume</li>
+    <li>TalkTopicLight->[PersonJob]</li>
+    <li>TalkTopicLight->freundliche [PersonJob]</li>
+    <li>TalkTopicLight->feindliche [PersonJob]</li>
+    <li>TalkTopicLight->[Enemy]</li>
+    <li>TalkTopicLight->das Bekämpfen von [Enemy]</li>
+    <li>TalkTopicLight->[Apparel]</li>
+    <li>TalkTopicLight->das Tragen von [Apparel]</li>
+    <li>TalkTopicLight->die Herstellung von [Apparel]</li>
     <li>talktopicheavyfile(p=0.15)->Sex</li>
     <li>talktopicheavyfile(p=0.15)->Verführung</li>
     <li>talktopicheavyfile(p=0.15)->Tierische Sexualität</li>
