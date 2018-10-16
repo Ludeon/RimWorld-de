@@ -23,7 +23,7 @@
   <Chitchat.logRulesInitiator.rulesStrings>
     <li>r_logentry->[INITIATOR_nameDef] und [RECIPIENT_nameDef] [talkedabout] [TalkTopicLight].</li>
     <li>r_logentry->[INITIATOR_nameDef] und [RECIPIENT_nameDef] [talkedabout] [TalkTopicLight].</li>
-    <li>r_logentry(p=0.8)->[INITIATOR_nameDef] [commentedabout] [TalkTopicLight] mit [RECIPIENT_nameDef].</li>
+    <li>r_logentry(p=0.8)->[INITIATOR_nameDef] [commentedabout] [TalkTopicLight]	.</li>
     <li>talkedabout(p=4)->unterhielten sich über</li>
     <li>talkedabout->wechselten ein paar Worte über</li>
     <li>talkedabout->sprachen über</li>
@@ -31,11 +31,11 @@
     <li>talkedabout->redeten über</li>
     <li>talkedabout->scherzten über</li>
     <li>talkedabout->witzelten über</li>
-    <li>commentedabout->sagte etwas über</li>
-    <li>commentedabout->sprach ein Wort über</li>
-    <li>commentedabout->gab einen Kommentar über</li>
-    <li>commentedabout->redete über</li>
-    <li>commentedabout->erzählte einen Witz über</li>
+    <li>commentedabout->sagte [RECIPIENT_nameDef] etwas über</li>
+    <li>commentedabout->sprach mit [RECIPIENT_nameDef] ein Wort über</li>
+    <li>commentedabout->gab zu [RECIPIENT_nameDef] einen Kommentar ab über</li>
+    <li>commentedabout->redete mit [RECIPIENT_nameDef] über</li>
+    <li>commentedabout->erzählte [RECIPIENT_nameDef] einen Witz über</li>
   </Chitchat.logRulesInitiator.rulesStrings>
   
   <!-- EN: deep talk -->
@@ -58,16 +58,16 @@
   <DeepTalk.logRulesInitiator.rulesStrings>
     <li>r_logentry->[INITIATOR_nameDef] und [RECIPIENT_nameDef] [talkedabout] [subject].</li>
     <li>r_logentry->[INITIATOR_nameDef] und [RECIPIENT_nameDef] [talkedabout] [subject].</li>
-    <li>talkedabout->sprachen über ihre Gedanken zu [subject]</li>
-    <li>talkedabout->tauschten ihre Gedanken über [subject] aus</li>
-    <li>talkedabout->tauschten Ideen über [subject] aus</li>
-    <li>talkedabout->teilten ihre Ansichten zu [subject]</li>
-    <li>talkedabout->teilten ihre Hoffnungen zu [subject]</li>
-    <li>talkedabout->diskutierten das Thema [subject]</li>
-    <li>talkedabout->hatten eine tiefgründige Unterhaltung über [subject]</li>
-    <li>talkedabout->sprachen leise über [subject]</li>
-    <li>talkedabout->sprachen tiefgründig über [subject]</li>
-    <li>talkedabout->kamen sich über das Thema [subject] näher</li>
+    <li>talkedabout->sprachen über ihre Gedanken zu</li>
+    <li>talkedabout->tauschten ihre Gedanken aus über</li>
+    <li>talkedabout->tauschten Ideen aus über</li>
+    <li>talkedabout->teilten ihre Ansichten zu</li>
+    <li>talkedabout->teilten ihre Hoffnungen zu</li>
+    <li>talkedabout->diskutierten das Thema</li>
+    <li>talkedabout->hatten eine tiefgründige Unterhaltung über</li>
+    <li>talkedabout->sprachen leise über</li>
+    <li>talkedabout->sprachen tiefgründig über</li>
+    <li>talkedabout->kamen sich näher über das Thema</li>
     <li>subject->[TalkTopicHeavy]</li>
   </DeepTalk.logRulesInitiator.rulesStrings>
   
