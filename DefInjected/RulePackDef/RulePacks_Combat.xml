@@ -224,7 +224,7 @@
     <li>result(p=1,RECIPIENT_part_destroyed_count==0)->[damaged_present] [RECIPIENT_possessive] [damaged_targets]</li>
     <li>result(p=1)->[destroyed_present] [RECIPIENT_possessive] [destroyed_targets] und [damaged_present] [RECIPIENT_possessive] [damaged_targets]</li>
     <li>action(p=0.3)->[INITIATOR_definite] [damaged_present] [RECIPIENT_definite] mit [implement]</li>
-    <li>action(p=0.3)->[INITIATOR_definite] benutzt [implement] um [damaged_inf] [RECIPIENT_definite]</li>
+    <li>action(p=0.3)->[INITIATOR_definite] benutzte [implement] um [RECIPIENT_definite] zu [damaged_inf]</li>
     <li>action->[INITIATOR_definite] [damaged_past] [RECIPIENT_definite] mit [implement]</li>
     <li>action(p=0.6)->[INITIATOR_definite] [damaged_past] [RECIPIENT_definite]</li>
   </Combat_Hit.rulePack.rulesStrings>
@@ -414,10 +414,10 @@
     <li>result(initiator_flesh!=Mechanoid)->but hesitated at the last second</li>
   -->
   <Combat_Miss.rulePack.rulesStrings>
-    <li>r_logentry(p=0.2)->[RECIPIENT_definite] weicht [INITIATOR_definite]'s [WEAPON_label] [damaged_inf] aus.</li>
-    <li>r_logentry(p=0.2)->[INITIATOR_definite] verfehlt [RECIPIENT_definite] mit [damaged_inf] von [implement].</li>
-    <li>r_logentry(p=0.2)->[INITIATOR_definite] [failtype] beim Versuch [RECIPIENT_definite] mit [implement] zu [damaged_inf].</li>
-    <li>r_logentry(p=0.2)->[INITIATOR_definite] [failtype] beim Versuch [RECIPIENT_definite] zu [damaged_inf].</li>
+    <li>r_logentry(p=0.2)->[RECIPIENT_definite] wich [INITIATOR_definite]'s [WEAPON_label] [damaged_inf] aus.</li>
+    <li>r_logentry(p=0.2)->[INITIATOR_definite] verfehlte [RECIPIENT_definite] mit [damaged_inf] von [implement].</li>
+    <li>r_logentry(p=0.2)->[INITIATOR_definite] [failtype] beim Versuch, [RECIPIENT_definite] mit [implement] zu [damaged_inf].</li>
+    <li>r_logentry(p=0.2)->[INITIATOR_definite] [failtype] beim Versuch, [RECIPIENT_definite] zu [damaged_inf].</li>
     <li>r_logentry(p=0.2)->[INITIATOR_definite] [failtype].</li>
     <li>failtype->strauchelte</li>
     <li>failtype->stolperte</li>
@@ -554,8 +554,8 @@
     <li>damaged_suffix(recipient_flesh!=Mechanoid)->mit sichtbarem Fleisch</li>
     <li>to->in</li>
     <li>to->in</li>
-    <li>missed->verfehlt</li>
-    <li>missed->verfehlt knapp</li>
+    <li>missed->verfehlte</li>
+    <li>missed->verfehlte knapp</li>
   </Combat_RangedDamage.rulePack.rulesStrings>
   
   <!-- EN:
@@ -606,8 +606,8 @@
     <li>deflected_consequence->[scraped_present] [adverb_deflected_opt] von [RECIPIENT_possessive] Rüstung ab</li>
     <li>scraped_past->prallte</li>
     <li>scraped_present->prallt</li>
-    <li>missed->verfehlt</li>
-    <li>missed->verfehlt knapp</li>
+    <li>missed->verfehlte</li>
+    <li>missed->verfehlte knapp</li>
   </Combat_RangedDeflect.rulePack.rulesStrings>
   
   <!-- EN:
