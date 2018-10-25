@@ -141,7 +141,7 @@
     <li>r_logentry(RECIPIENT_part_destroyed_count==0)->[prefix] [damaged_past] [destroyed_targets] von [RECIPIENT_label] [adverb_flavortext].</li>
     <li>r_logentry(RECIPIENT_part_destroyed_count==0)->[prefix] [adverb_flavortext] [damaged_past] [destroyed_targets] von [RECIPIENT_label].</li>
     <li>r_logentry->[RECIPIENT_label] wurde [damaged_past] durch [INITIATOR_label].</li>
-    <li>r_logentry->[RECIPIENT_label] wurde [damaged_past] [adverb_flavortext] durch [INITIATOR_label].</li>
+    <li>r_logentry->[RECIPIENT_label] wurde [adverb_flavortext] [damaged_past] durch [INITIATOR_label].</li>
     <li>r_logentry->[RECIPIENT_label] wurde [damaged_past].</li>
     <!-- final fallbacks -->
     <li>r_logentry(p=0.001)->[RECIPIENT_label] wurde von einer Explosion erfasst.</li>
@@ -182,11 +182,11 @@
     <li>action(p=0.3)->[INITIATOR_label] [verb_genericattack] mit [implement]</li>
     <li>towardsat->in Richtung</li>
     <li>towardsat->auf</li>
-    <li>verb_genericattack->schlägt</li>
-    <li>verb_genericattack->drischt</li>
-    <li>verb_genericattack->prügelt</li>
-    <li>tried->versucht</li>
-    <li>tried->verfehlt</li>
+    <li>verb_genericattack->schlug</li>
+    <li>verb_genericattack->drosch</li>
+    <li>verb_genericattack->prügelte</li>
+    <li>tried->versuchte</li>
+    <li>tried->verfehlte</li>
   </Combat_FailIncludes.rulePack.rulesStrings>
   
   <!-- EN:
@@ -217,8 +217,8 @@
     <li>r_logentry(p=0.05)->[INITIATOR_label], trägt [INITIATOR_possessive] [WEAPON_label] [expertly], [adverb_flavortext] [damaged_past] [RECIPIENT_label] in der [RECIPIENT_part0_label].</li>
     <!-- combined high priority, if we destroyed something -->
     <li>r_logentry(p=0.3)->[INITIATOR_label] [destroyed_past] [destroyed_targets] von [RECIPIENT_label].</li>
-    <li>r_logentry(p=0.3)->[INITIATOR_label] [destroyed_past] [destroyed_targets] von [RECIPIENT_label] [destroyed_suffix].</li>
-    <li>r_logentry(p=0.3)->[INITIATOR_label] [destroyed_past] [destroyed_targets] von [RECIPIENT_label] [expertly].</li>
+    <li>r_logentry(p=0.3)->[INITIATOR_label] [destroyed_past] [destroyed_targets] von [RECIPIENT_label] in [destroyed_suffix].</li>
+    <li>r_logentry(p=0.3)->[INITIATOR_label] [destroyed_past] [expertly] [destroyed_targets] von [RECIPIENT_label].</li>
     <li>r_logentry(p=0.3)->[INITIATOR_label] [destroyed_past] [destroyed_targets] von [RECIPIENT_label] mit [implement].</li>
     <li>result(p=1,RECIPIENT_part_damaged_count==0)->[destroyed_present] [RECIPIENT_possessive] [destroyed_targets]</li>
     <li>result(p=1,RECIPIENT_part_destroyed_count==0)->[damaged_present] [RECIPIENT_possessive] [damaged_targets]</li>
@@ -278,7 +278,7 @@
     <li>flavortext_situation->ohne jede Emotion</li>
     <li>flavortext_situation(p=0.4)->mit einem ausdruckslosen Gesicht</li>
     <li>flavortext_situation(p=0.2,initiator_flesh==Normal)->mit einem brutalen Gesichtsausdruck</li>
-    <li>flavortext_situation(p=0.2,initiator_flesh==Normal)->mit einem [AdjectiveBadass] Ausdruck</li>
+    <li>flavortext_situation(p=0.2,initiator_flesh==Normal)->mit einem [AdjectiveBadass]en Ausdruck</li>
     <li>flavortext_situation(p=0.2,initiator_flesh==Normal)->mit einer Grimasse</li>
     <li>flavortext_situation(p=0.2,initiator_flesh==Normal)->mit einem Lachen auf den Lippen</li>
     <li>flavortext_situation(p=0.2,initiator_flesh==Normal)->mit einem Lächeln</li>
@@ -535,7 +535,7 @@
     <li>destroyed_present->schlägt durch</li>
     <li>destroyed_suffix->Stücke</li>
     <li>destroyed_suffix->kleine Teile</li>
-    <li>destroyed_suffix->ein feiner Nebel</li>
+    <li>destroyed_suffix->feinen Nebel</li>
     <li>destroyed_suffix->Fragmente</li>
     <li>destroyed_suffix(p=0.5)->ein löchriges Chaos</li>
     <li>destroyed_suffix(recipient_flesh!=Mechanoid,p=0.2)->Hackfleisch</li>
