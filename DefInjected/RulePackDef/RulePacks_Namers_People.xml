@@ -11,11 +11,13 @@
   -->
   <NamerPersonTribal.rulePack.rulesStrings>
     <li>r_name(p=2)->[WordTribal] [WordTribal]</li>
-    <li>r_name->[WordTribal] '[AnimalBadass]' [WordTribal]</li>
-    <li>r_name->[Color]e [WordTribal]</li>
-    <li>r_name->[WordTribal] [Animal]</li>
-    <li>r_name->[Animal] [WordTribal]</li>
-    <li>r_name->[Color]e [Animal]</li>
+    <li>r_name->[WordTribal] '[AnimalBadassSingular]' [WordTribal]</li>
+    <li>r_name->[Color]er [WordTribal]</li>
+    <li>r_name->[WordTribal] [AnimalSingular]</li>
+    <li>r_name->[AnimalSingular] [WordTribal]</li>
+    <li>r_name(p=0.5)->[Color]er [AnimalSingularMas]</li>
+    <li>r_name(p=0.5)->[Color]e [AnimalSingularFem]</li>
+    <li>r_name(p=0.5)->[Color]es [AnimalSingularNeu]</li>
   </NamerPersonTribal.rulePack.rulesStrings>
   
 </LanguageData>
