@@ -58,7 +58,8 @@
     <li>r_art_name(p=0.5)->[maybe_a_Neu] [maybe_adjective_Neu] [AnimalSingularNeu]</li>
     <li>r_art_name->[maybe_a_Fem] [maybe_adjective_Fem] [Gore]</li>
     <li>r_art_name->[maybe_a_Mas] [maybe_adjective_Mas] [NaturalObject]</li>
-    <li>r_art_name->[maybe_a_Fem] [maybe_adjective_Fem] [PersonFamily]</li>
+    <li>r_art_name(p=0.5)->[maybe_a_Fem] [maybe_adjective_Fem] [PersonFamilyFem]</li>
+    <li>r_art_name(p=0.5)->[maybe_a_Mas] [maybe_adjective_Mas] [PersonFamilyMas]</li>
     <li>r_art_name->[maybe_a_Mas] [maybe_adjective_Mas] [EnemySingular]</li>
     <!-- Numeric -->
     <li>r_art_name(p=2)->[Artwork] Nr. [art_name_numeric]</li>
