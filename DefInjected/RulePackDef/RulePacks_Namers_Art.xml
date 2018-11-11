@@ -125,8 +125,12 @@
     <!-- General -->
     <li>r_art_name->[ConceptBadass]</li>
     <li>r_art_name->Die [AnimalBadass]</li>
-    <li>r_art_name->[AdjectiveBadass] [AnimalBadass]</li>
-    <li>r_art_name->[ColorBadass] [AnimalBadass]</li>
+    <li>r_art_name(p=0.3)->[AdjectiveBadass]e [AnimalBadassSingularFem]</li>
+    <li>r_art_name(p=0.5)->[AdjectiveBadass]er [AnimalBadassSingularMas]</li>
+    <li>r_art_name(p=0.2)->[AdjectiveBadass]es [AnimalBadassSingularNeu]</li>
+    <li>r_art_name(p=0.3)->[ColorBadass]e [AnimalBadassSingularFem]</li>
+    <li>r_art_name(p=0.5)->[ColorBadass]er [AnimalBadassSingularMas]</li>
+    <li>r_art_name(p=0.2)->[ColorBadass]es [AnimalBadassSingularNeu]</li>
     <li>r_art_name->[ConceptBadass] [ColorBadass]</li>
     <!-- Person. High probability; if we can use these we want to -->
     <li>r_art_name(p=3)->[ConceptBadass] von [ANYPAWN_nameIndef]</li>
