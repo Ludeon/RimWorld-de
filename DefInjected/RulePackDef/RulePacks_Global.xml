@@ -106,6 +106,7 @@
     <li>AdjectiveNatural->Words/Adjectives/Natural</li>
     <li>VerbFriendly->Words/Verbs/Friendly</li>
     <li>PersonalCharacteristic->Words/Nouns/PersonalCharacteristics</li>
+    <li>talktopicheavyfileDat->Words/Nouns/TalkTopics_Heavy_Dative</li>
   </GlobalUtility.rulePack.rulesFiles>
   <!-- EN:
     <li>Trans->of</li>
@@ -262,9 +263,9 @@
     <li>TalkTopicAny->[TalkTopicLight]</li>
     <li>TalkTopicAny->[TalkTopicHeavy]</li>
     <li>TalkTopicHeavy->'[talktopicheavyfile]'</li>
-    <li>TalkTopicHeavy(p=0.08)->Verbindungen zwischen '[talktopicheavyfile]' und '[talktopicheavyfile]'</li>
-    <li>TalkTopicHeavy(p=0.08)->Zusammenhänge zwischen '[talktopicheavyfile]' und '[talktopicheavyfile]'</li>
-    <li>TalkTopicHeavy(p=0.08)->Bezüge zwischen '[talktopicheavyfile]' und '[talktopicheavyfile]'</li>
+    <li>TalkTopicHeavy(p=0.08)->'Verbindungen zwischen [talktopicheavyfileDat] und [talktopicheavyfileDat]'</li>
+    <li>TalkTopicHeavy(p=0.08)->'Zusammenhänge zwischen [talktopicheavyfileDat] und [talktopicheavyfileDat]'</li>
+    <li>TalkTopicHeavy(p=0.08)->'Bezüge zwischen [talktopicheavyfileDat] und [talktopicheavyfileDat]'</li>
     <li>TalkTopicLight(p=25)->[talktopiclightfile]</li>
     <li>TalkTopicLight->[VegetablePlural]</li>
     <li>TalkTopicLight->das Essen von [VegetablePluralDat]</li>
