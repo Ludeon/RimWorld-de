@@ -50,7 +50,9 @@
     <li>image->einem [desc_pawn] [Character], der eine [VegetableSingularFem] isst</li>
     <li>image->[Quantity_adjphrase] [PersonJobPlural] und [PersonJobPlural], die gemeinsam [VegetablePlural] essen</li>
     <li>image->der kleinen, [desc_pawn] Berühmtheit [NamePerson]</li>
-    <li>image->einem [desc_pawn] [Character], der ein [Apparel] trägt</li>
+    <li>image(p=0.5)->einem [desc_pawn] [Character], der eine [ApparelSingularFem] trägt</li>
+    <li>image(p=0.5)->einem [desc_pawn] [Character], der einen [ApparelSingularMas] trägt</li>
+    <li>image(p=0.2)->einem [desc_pawn] [Character], der ein [ApparelSingularNeu] trägt</li>
     <!-- terrain -->
     <li>image->einer [Community]</li>
     <li>image->einem [TerrainFeature]</li>
@@ -60,7 +62,9 @@
     <li>image->einem [NaturalObject]</li>
     <li>image->[Quantity_adjphrase] [WeaponPlural]</li>
     <li>image->[Quantity_adjphrase] [VegetablePlural]</li>
-    <li>image->einem leeren [Apparel]</li>
+    <li>image(p=0.5)->einer leeren [ApparelSingularFem]</li>
+    <li>image(p=0.5)->einem leeren [ApparelSingularMas]</li>
+    <li>image(p=0.2)->einem leeren [ApparelSingularNeu]</li>
     <!-- abstract -->
     <li>image->einem [ShapeMas]</li>
     <li>image->einer [ShapeFem]</li>
