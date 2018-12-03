@@ -231,11 +231,13 @@
     <li>artextra_clause->ein [PAWN_adj] [Character] [idles] [side_position]</li>
     <li>artextra_clause->[Quantity_adjphrase] [CharacterPlural] erscheinen [side_position]</li>
     <li>artextra_clause->[Quantity_adjphrase] [PAWN_adj]e [CharacterPlural] erscheinen [side_position]</li>
-    <li>artextra_clause->ein [Animal] [idles] [side_position]</li>
+    <li>artextra_clause(p=0.5)->eine [AnimalSingularFem] [idles] [side_position]</li>
+    <li>artextra_clause(p=0.5)->ein [AnimalSingularMas] [idles] [side_position]</li>
+    <li>artextra_clause(p=0.5)->ein [AnimalSingularNeu] [idles] [side_position]</li>
     <!-- One-offs -->
     <li>artextra_clause->wenn man die Augen zusammenkneift, offenbart die [composition]e Komposition des Bildes einen Umriss, der [subimageany] darstellen soll</li>
     <li>artextra_clause->das [emotional_expression]e Gesicht einer [PAWN_adj] [PersonJob] wacht über allem</li>
-    <li>artextra_clause->eine [PAWN_adj] [PersonJob] wacht [emotional_expression] über allem</li>
+    <li>artextra_clause->ein [PAWN_adj]er [PersonJob] wacht [emotional_expression] über allem</li>
     <li>artextra_clause->das Gesicht der [PAWN_adj] [PersonJob] wacht über allem</li>
     <li>artextra_clause->das ganze Bild ist aus einer sorgfältigen Zusammenstellung von [subimagepluralDat] erstellt worden</li>
     <li>subimageany->[subimagesingle]</li>
