@@ -78,6 +78,7 @@
     <li>TreeType->Words/Nouns/TreeTypes</li>
     <li>PersonJob->Words/Nouns/People_Jobs</li>
     <li>PersonJobPlural->Words/Nouns/People_Jobs_Plural</li>
+    <li>PersonJobPluralDat->Words/Nouns/People_Jobs_Plural_Dative</li>
     <li>PersonFamily->Words/Nouns/People_Family</li>
     <li>PersonFamilyFem->Words/Nouns/People_Family_Feminine</li>
     <li>PersonFamilyMas->Words/Nouns/People_Family_Masculine</li>
@@ -100,6 +101,7 @@
     <li>GoreSingularNeu->Words/Nouns/Gore_Singular_Neuter</li>
     <li>Mechanoid->Words/Nouns/Mechanoid</li>
     <li>MechanoidPlural->Words/Nouns/Mechanoid_Plural</li>
+    <li>MechanoidPluralDat->Words/Nouns/Mechanoid_Plural_Dative</li>
     <li>ConceptPositive->Words/Nouns/Concepts_Positive</li>
     <li>ConceptBadass->Words/Nouns/Concepts_Badass</li>
     <li>ConceptAngsty->Words/Nouns/Concepts_Angsty</li>
@@ -176,6 +178,10 @@
     <li>CharacterPlural(p=4)->[AnimalPlural]</li>
     <li>CharacterPlural(p=3)->[EnemyPluralWithoutThe]</li>
     <li>CharacterPlural->[MechanoidPlural]</li>
+    <li>CharacterPluralDat(p=6)->[PersonJobPluralDat]</li>
+    <li>CharacterPluralDat(p=4)->[AnimalPluralDat]</li>
+    <li>CharacterPluralDat(p=3)->[EnemyPluralDat]</li>
+    <li>CharacterPluralDat->[MechanoidPluralDat]</li>
     <li>Quantity_adjphrase->zwei</li>
     <li>Quantity_adjphrase->drei</li>
     <li>Quantity_adjphrase->vier</li>
