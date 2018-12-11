@@ -94,40 +94,40 @@
     <li>romantic_noun(p=2)->[NaturalObject]</li>
   -->
   <RomanceAttempt.logRulesInitiator.rulesStrings>
-    <li>r_logentry->[INITIATOR_nameDef] [wooed] [RECIPIENT_nameDef] durch [wootactic].</li>
-    <li>wooed->versuchte einen Flirt mit</li>
-    <li>wooed->flirtete mit</li>
-    <li>wooed->umwarb</li>
-    <li>wooed->romantisierte</li>
-    <li>wooed->zeigte [RECIPIENT_possessive]e Liebe für</li>
-    <li>wooed->umgarnte</li>
-    <li>wooed->umlockte</li>
-    <li>wooed->bezauberte</li>
-    <li>wooed->umwarb</li>
-    <li>wootactic(p=4)->[complimenting] [RECIPIENT_possessive] [PersonalCharacteristic]</li>
+    <li>r_logentry->[INITIATOR_nameDef] [wooed] durch [wootactic].</li>
+    <li>wooed->versuchte einen Flirt mit [RECIPIENT_nameDef]</li>
+    <li>wooed->flirtete mit [RECIPIENT_nameDef]</li>
+    <li>wooed->umwarb [RECIPIENT_nameDef]</li>
+    <li>wooed->romantisierte [RECIPIENT_nameDef]</li>
+    <li>wooed->zeigte [INITIATOR_possessive]e Liebe für [RECIPIENT_nameDef]</li>
+    <li>wooed->umgarnte [RECIPIENT_nameDef]</li>
+    <li>wooed->umlockte [RECIPIENT_nameDef]</li>
+    <li>wooed->bezauberte [RECIPIENT_nameDef]</li>
+    <li>wooed->machte [RECIPIENT_nameDef] den Hof</li>
+    <li>wootactic(p=4)->[complimenting]</li>
     <li>wootactic->das Erzählen einer Geschichte über [TalkTopicAny]</li>
     <li>wootactic->das Erzählen einer Fabel über [TalkTopicAny]</li>
-    <li>wootactic->witzeln über [TalkTopicAny]</li>
-    <li>wootactic->das Beschreiben [RECIPIENT_possessive]er Beobachtung von [TalkTopicAny]</li>
-    <li>wootactic(p=2)->[boasting] [INITIATOR_possessive]er [PersonalCharacteristic]</li>
-    <li>wootactic->den Vergleich von [RECIPIENT_objective] zur [romantic_adj][romantic_noun]</li>
-    <li>wootactic->das Beschreiben von [RECIPIENT_objective] als [romantic_adj][romantic_noun]</li>
-    <li>boasting->prahlen mit</li>
-    <li>boasting->erwähnen</li>
-    <li>boasting->positives Implizieren</li>
-    <li>boasting->übertreiben</li>
-    <li>boasting->reden über</li>
-    <li>boasting->Aufmerksamkeit lenken auf</li>
-    <li>complimenting(p=3)->komplimentieren</li>
-    <li>complimenting->subtil komplimentieren</li>
-    <li>complimenting->loben</li>
-    <li>complimenting->kommentieren</li>
-    <li>complimenting->positives Erwähnen von</li>
-    <li>complimenting(p=2)->spielerisches Necken von</li>
-    <li>complimenting->scherzhaftes Drücken von</li>
-    <li>complimenting->scherzhaftes Beinahe-komplimentieren</li>
-    <li>complimenting->schelmisch fragen nach</li>
-    <li>complimenting->einen vergnügten Scherz über</li>
+    <li>wootactic->das Witzeln über [TalkTopicAny]</li>
+    <li>wootactic->das Beschreiben [INITIATOR_possessive]er Beobachtungen zum Thema [TalkTopicAny]</li>
+    <li>wootactic(p=2)->[boasting]</li>
+    <li>wootactic->den Vergleich von [RECIPIENT_nameDef] zur [romantic_adj][romantic_noun]</li>
+    <li>wootactic->das Beschreiben von [RECIPIENT_nameDef] als [romantic_adj][romantic_noun]</li>
+    <li>boasting->das Prahlen über [INITIATOR_possessive]e [PersonalCharacteristic]</li>
+    <li>boasting->das Erwähnen [INITIATOR_possessive]er [PersonalCharacteristicGen]</li>
+    <li>boasting->positives Implizieren [INITIATOR_possessive]er [PersonalCharacteristicGen]</li>
+    <li>boasting->Übertreiben [INITIATOR_possessive]er [PersonalCharacteristicGen]</li>
+    <li>boasting->das Reden über [INITIATOR_possessive]e [PersonalCharacteristic]</li>
+    <li>boasting->das Lenken der Aufmerksamkeit auf [INITIATOR_possessive]e [PersonalCharacteristic]</li>
+    <li>complimenting(p=3)->das Komplimentieren [RECIPIENT_possessive]er [PersonalCharacteristicGen]</li>
+    <li>complimenting->subtiles Komplimentieren [RECIPIENT_possessive]er [PersonalCharacteristicGen]</li>
+    <li>complimenting->Loben [RECIPIENT_possessive]er [PersonalCharacteristicGen]</li>
+    <li>complimenting->das Kommentieren [RECIPIENT_possessive]er [PersonalCharacteristicGen]</li>
+    <li>complimenting->positives Erwähnen [RECIPIENT_possessive]er [PersonalCharacteristicGen]</li>
+    <li>complimenting(p=2)->spielerisches Necken [RECIPIENT_possessive]er [PersonalCharacteristicGen]</li>
+    <li>complimenting->eine scherzhafte Anspielung auf [RECIPIENT_possessive]e [PersonalCharacteristic]</li>
+    <li>complimenting->scherzhaftes Beinahe-komplimentieren [RECIPIENT_possessive]er [PersonalCharacteristicGen]</li>
+    <li>complimenting->schelmisches Fragen nach [RECIPIENT_possessive]er [PersonalCharacteristicGen]</li>
+    <li>complimenting->einen vergnügten Scherz über [RECIPIENT_possessive]e [PersonalCharacteristic]</li>
     <li>romantic_adj->wunderschön</li>
     <li>romantic_adj->leuchtend</li>
     <li>romantic_adj->glühend</li>
