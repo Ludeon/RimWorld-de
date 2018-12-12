@@ -107,25 +107,27 @@
     <li>wootactic(p=4)->[complimenting]</li>
     <li>wootactic->das Erzählen einer Geschichte über [TalkTopicAny]</li>
     <li>wootactic->das Erzählen einer Fabel über [TalkTopicAny]</li>
-    <li>wootactic->das Witzeln über [TalkTopicAny]</li>
+    <li>wootactic->Witze über [TalkTopicAny]</li>
     <li>wootactic->das Beschreiben [INITIATOR_possessive]er Beobachtungen zum Thema [TalkTopicAny]</li>
     <li>wootactic(p=2)->[boasting]</li>
-    <li>wootactic->den Vergleich von [RECIPIENT_nameDef] zur [romantic_adj][romantic_noun]</li>
-    <li>wootactic->das Beschreiben von [RECIPIENT_nameDef] als [romantic_adj][romantic_noun]</li>
+    <li>wootactic(p=0.5)->den Vergleich von [RECIPIENT_nameDef] mit einer [romantic_adj]en [romantic_noun_Fem]</li>
+    <li>wootactic(p=0.5)->den Vergleich von [RECIPIENT_nameDef] mit einem [romantic_adj]en [romantic_noun_Mas_Neu]</li>
+    <li>wootactic(p=0.5)->das Gleichsetzen von [RECIPIENT_nameDef] mit einer [romantic_adj]en [romantic_noun_Fem]</li>
+    <li>wootactic(p=0.5)->das Gleichsetzen von [RECIPIENT_nameDef] mit einem [romantic_adj]en [romantic_noun_Mas_Neu]</li>
     <li>boasting->das Prahlen über [INITIATOR_possessive]e [PersonalCharacteristic]</li>
     <li>boasting->das Erwähnen [INITIATOR_possessive]er [PersonalCharacteristicGen]</li>
     <li>boasting->positives Implizieren [INITIATOR_possessive]er [PersonalCharacteristicGen]</li>
     <li>boasting->Übertreiben [INITIATOR_possessive]er [PersonalCharacteristicGen]</li>
     <li>boasting->das Reden über [INITIATOR_possessive]e [PersonalCharacteristic]</li>
     <li>boasting->das Lenken der Aufmerksamkeit auf [INITIATOR_possessive]e [PersonalCharacteristic]</li>
-    <li>complimenting(p=3)->das Komplimentieren [RECIPIENT_possessive]er [PersonalCharacteristicGen]</li>
-    <li>complimenting->subtiles Komplimentieren [RECIPIENT_possessive]er [PersonalCharacteristicGen]</li>
+    <li>complimenting(p=3)->Komplimente über [RECIPIENT_possessive]e [PersonalCharacteristic]</li>
+    <li>complimenting->subtile Komplimente über [RECIPIENT_possessive]e [PersonalCharacteristic]</li>
     <li>complimenting->Loben [RECIPIENT_possessive]er [PersonalCharacteristicGen]</li>
     <li>complimenting->das Kommentieren [RECIPIENT_possessive]er [PersonalCharacteristicGen]</li>
     <li>complimenting->positives Erwähnen [RECIPIENT_possessive]er [PersonalCharacteristicGen]</li>
     <li>complimenting(p=2)->spielerisches Necken [RECIPIENT_possessive]er [PersonalCharacteristicGen]</li>
     <li>complimenting->eine scherzhafte Anspielung auf [RECIPIENT_possessive]e [PersonalCharacteristic]</li>
-    <li>complimenting->scherzhaftes Beinahe-komplimentieren [RECIPIENT_possessive]er [PersonalCharacteristicGen]</li>
+    <li>complimenting->scherzhafte Beinahe-Komplimente über [RECIPIENT_possessive]e [PersonalCharacteristic]</li>
     <li>complimenting->schelmisches Fragen nach [RECIPIENT_possessive]er [PersonalCharacteristicGen]</li>
     <li>complimenting->einen vergnügten Scherz über [RECIPIENT_possessive]e [PersonalCharacteristic]</li>
     <li>romantic_adj->wunderschön</li>
@@ -143,17 +145,20 @@
     <li>romantic_adj->lieblich</li>
     <li>romantic_adj->wunderbar</li>
     <li>romantic_adj(p=3)->[AdjectiveBadass]</li>
-    <li>romantic_noun->e Blume</li>
-    <li>romantic_noun->er Frühling</li>
-    <li>romantic_noun->er Fluss</li>
-    <li>romantic_noun->er Stern</li>
-    <li>romantic_noun->er Mond</li>
-    <li>romantic_noun->e Sonne</li>
-    <li>romantic_noun->es Haus</li>
-    <li>romantic_noun->e Aurora</li>
-    <li>romantic_noun->e [TreeType]</li>
-    <li>romantic_noun(p=2)->e [TerrainFeature]</li>
-    <li>romantic_noun(p=2)->e [NaturalObject]</li>
+    <li>romantic_noun_Fem->Blume</li>
+    <li>romantic_noun_Fem->Sonne</li>
+    <li>romantic_noun_Fem->Aurora</li>
+    <li>romantic_noun_Fem->Sternschnuppe</li>
+    <li>romantic_noun_Fem->Oase</li>
+    <li>romantic_noun_Fem->[TreeType]</li>
+    <li>romantic_noun_Mas_Neu->Frühling</li>
+    <li>romantic_noun_Mas_Neu->Fluss</li>
+    <li>romantic_noun_Mas_Neu->Stern</li>
+    <li>romantic_noun_Mas_Neu->Mond</li>
+    <li>romantic_noun_Mas_Neu->Haus</li>
+    <li>romantic_noun_Mas_Neu->Engel</li>
+    <li>romantic_noun->[TerrainFeature]</li>
+    <li>romantic_noun->[NaturalObject]</li>
   </RomanceAttempt.logRulesInitiator.rulesStrings>
   
 </LanguageData>
