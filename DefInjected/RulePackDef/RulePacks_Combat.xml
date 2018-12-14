@@ -26,8 +26,8 @@
   <Combat_Deflect.rulePack.rulesStrings>
     <li>r_logentry(p=1)->[INITIATOR_label] [damaged_past] [at] [RECIPIENT_label] in den [RECIPIENT_part0_label] [deflected_result].</li>
     <li>r_logentry(p=0.3)->[INITIATOR_label], [INITIATOR_possessive] [WEAPON_label] [expertly] tragend, [damaged_past] [RECIPIENT_label] in the [RECIPIENT_part0_label] [deflected_result].</li>
-    <li>r_logentry(p=0.3)->[INITIATOR_label] traf [RECIPIENT_label] mit einer [damaged_inf] von [implement] [deflected_result].</li>
-    <li>r_logentry(p=0.3)->[INITIATOR_label] nutzte [implement] um [RECIPIENT_label] zu [damaged_inf] [deflected_result].</li>
+    <li>r_logentry(p=0.3)->[INITIATOR_label] traf [RECIPIENT_label] mit [implement] [deflected_result].</li>
+    <li>r_logentry(p=0.3)->[INITIATOR_label] versuchte mit [implement] [RECIPIENT_label] zu [damaged_inf] [deflected_result].</li>
     <li>r_logentry(p=0.6)->[INITIATOR_label] [damaged_past] [at] [RECIPIENT_label] mit [implement] [deflected_result].</li>
     <li>r_logentry(p=0.6)->[INITIATOR_label] [damaged_past] [at] [RECIPIENT_label] [deflected_result].</li>
     <li>at-></li>
@@ -39,7 +39,7 @@
     <li>adverb_deflected->harmlos</li>
     <li>adverb_deflected->nutzlos</li>
     <li>deflected_consequence->aber das [TOOL_label] [scraped_past] [adverb_deflected_opt] ab</li>
-    <li>deflected_consequence->[scraped_present] [adverb_deflected_opt] von [RECIPIENT_possessive] Rüstung ab</li>
+    <li>deflected_consequence->[scraped_present] [adverb_deflected_opt] von [RECIPIENT_possessive]er Rüstung ab</li>
     <li>scraped_present->gleitet</li>
     <li>scraped_present->rutscht</li>
     <li>scraped_past->glitt</li>
@@ -83,9 +83,9 @@
     <li>result->but the attack was cleverly avoided</li>
   -->
   <Combat_Dodge.rulePack.rulesStrings>
-    <li>r_logentry(p=0.2)->[RECIPIENT_label] wich [INITIATOR_label]'s [damaged_inf] mit [implement] aus.</li>
-    <li>r_logentry(p=0.2)->[RECIPIENT_label] wich [INITIATOR_label]'s [damaged_inf] aus.</li>
-    <li>result->aber [RECIPIENT_label] sprang aus zur Seite</li>
+    <li>r_logentry(p=0.2)->[RECIPIENT_label] wich [INITIATOR_label]'s Angriff mit [implement] aus.</li>
+    <li>r_logentry(p=0.2)->[RECIPIENT_label] wich [INITIATOR_label]'s Attacke aus.</li>
+    <li>result->aber [RECIPIENT_label] sprang zur Seite</li>
     <li>result->aber wurde von der Finte von [RECIPIENT_label] getäuscht</li>
     <li>result->aber dem Angriff wurde geschickt ausgewichen</li>
   </Combat_Dodge.rulePack.rulesStrings>
@@ -414,8 +414,8 @@
     <li>result(initiator_flesh!=Mechanoid)->but hesitated at the last second</li>
   -->
   <Combat_Miss.rulePack.rulesStrings>
-    <li>r_logentry(p=0.2)->[RECIPIENT_label] wich [INITIATOR_label]'s [WEAPON_label] [damaged_inf] aus.</li>
-    <li>r_logentry(p=0.2)->[INITIATOR_label] verfehlte [RECIPIENT_label] mit [damaged_inf] von [implement].</li>
+    <li>r_logentry(p=0.2)->[RECIPIENT_label] wich [INITIATOR_label]'s [WEAPON_label]-Attacke aus.</li>
+    <li>r_logentry(p=0.2)->[INITIATOR_label] verfehlte [RECIPIENT_label] mit [implement].</li>
     <li>r_logentry(p=0.2)->[INITIATOR_label] [failtype] beim Versuch, [RECIPIENT_label] mit [implement] zu [damaged_inf].</li>
     <li>r_logentry(p=0.2)->[INITIATOR_label] [failtype] beim Versuch, [RECIPIENT_label] zu [damaged_inf].</li>
     <li>r_logentry(p=0.2)->[INITIATOR_label] [failtype].</li>
@@ -603,7 +603,7 @@
     <li>adverb_deflected->harmlos</li>
     <li>adverb_deflected->unbrauchbar</li>
     <li>deflected_consequence->aber es [scraped_past] [adverb_deflected_opt] von der Rüstung ab</li>
-    <li>deflected_consequence->[scraped_present] [adverb_deflected_opt] von [RECIPIENT_possessive] Rüstung ab</li>
+    <li>deflected_consequence->[scraped_present] [adverb_deflected_opt] von der Rüstung von [RECIPIENT_label] ab</li>
     <li>scraped_past->prallte</li>
     <li>scraped_present->prallt</li>
     <li>missed->verfehlte</li>
