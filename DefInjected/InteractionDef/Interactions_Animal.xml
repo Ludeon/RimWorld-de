@@ -29,9 +29,9 @@
   -->
   <AnimalChat.logRulesInitiator.rulesStrings>
     <li>r_logentry(p=5)->[INITIATOR_nameDef] [tamed] [RECIPIENT_nameDef].</li>
-    <li>r_logentry->[INITIATOR_nameDef] saß bei [RECIPIENT_nameDef] und redete mit sich selbst über [TalkTopicAny].</li>
-    <li>r_logentry->[INITIATOR_nameDef] näherte sich [RECIPIENT_nameDef] und sprach leise mit sich selbst über [TalkTopicAny].</li>
-    <li>r_logentry->[INITIATOR_nameDef] kam nahe zu [RECIPIENT_nameDef] während [INITIATOR_objective] mit sich selbst über [TalkTopicAny] redete.</li>
+    <li>r_logentry->[INITIATOR_nameDef] saß bei [RECIPIENT_nameDef] und redete mit sich selbst über [TalkTopicAnyAcc].</li>
+    <li>r_logentry->[INITIATOR_nameDef] näherte sich [RECIPIENT_nameDef] und sprach leise mit sich selbst über [TalkTopicAnyAcc].</li>
+    <li>r_logentry->[INITIATOR_nameDef] kam nahe zu [RECIPIENT_nameDef], während [INITIATOR_pronoun] mit sich selbst über [TalkTopicAnyAcc] redete.</li>
     <li>tamed->machte beruhigende Laute in Richtung</li>
     <li>tamed->machte langsame, freundliche Gesten in Richtung</li>
     <li>tamed->machte beruhigende Geräusche zu</li>
@@ -49,7 +49,7 @@
     <li>tamed->berührte entschlossen aber sanft</li>
     <li>tamed->zeigte sich entspannt gegenüber</li>
     <li>tamed->saß geduldig nahe</li>
-    <li>tamed->flüsterte eine Geschichte über [TalkTopicAny] zu</li>
+    <li>tamed->flüsterte eine Geschichte über [TalkTopicAnyAcc] zu</li>
   </AnimalChat.logRulesInitiator.rulesStrings>
   
   <!-- EN: nuzzle -->
@@ -82,7 +82,7 @@
   -->
   <Nuzzle.logRulesInitiator.rulesStrings>
     <li>r_logentry(p=2)->[INITIATOR_nameDef] [nuzzled] [nuzzleadverb] [RECIPIENT_nameDef].</li>
-    <li>r_logentry->[INITIATOR_nameDef] rieb [INITIATOR_possessive] Nase [nuzzleadverb] gegen [rubbedpart] von [RECIPIENT_nameDef].</li>
+    <li>r_logentry->[INITIATOR_nameDef] rieb [INITIATOR_possessive]e Nase [nuzzleadverb] gegen [rubbedpart] von [RECIPIENT_nameDef].</li>
     <li>nuzzled(p=2)->beschnupperte</li>
     <li>nuzzled->schmiegte sich an</li>
     <li>nuzzleadverb(p=4)-></li>

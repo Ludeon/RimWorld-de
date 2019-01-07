@@ -116,7 +116,10 @@
     <li>VerbFriendly->Words/Verbs/Friendly</li>
     <li>PersonalCharacteristic->Words/Nouns/PersonalCharacteristics</li>
     <li>PersonalCharacteristicGen->Words/Nouns/PersonalCharacteristics_Genitive</li>
+    <li>PersonalCharacteristicDat->Words/Nouns/PersonalCharacteristics_Dative</li>
+    <li>TalkTopicLightAcc->Words/Nouns/TalkTopics_Light_Accusative</li>
     <li>talktopicheavyfileDat->Words/Nouns/TalkTopics_Heavy_Dative</li>
+    <li>talktopicheavyfileAcc->Words/Nouns/TalkTopics_Heavy_Accusative</li>
   </GlobalUtility.rulePack.rulesFiles>
   <!-- EN:
     <li>Trans->of</li>
@@ -292,10 +295,17 @@
   <TalkTopicsUtility.rulePack.rulesStrings>
     <li>TalkTopicAny->[TalkTopicLight]</li>
     <li>TalkTopicAny->[TalkTopicHeavy]</li>
-    <li>TalkTopicHeavy->'[talktopicheavyfile]'</li>
-    <li>TalkTopicHeavy(p=0.08)->'Verbindungen zwischen [talktopicheavyfileDat] und [talktopicheavyfileDat]'</li>
-    <li>TalkTopicHeavy(p=0.08)->'Zusammenhänge zwischen [talktopicheavyfileDat] und [talktopicheavyfileDat]'</li>
-    <li>TalkTopicHeavy(p=0.08)->'Bezüge zwischen [talktopicheavyfileDat] und [talktopicheavyfileDat]'</li>
+    <li>TalkTopicHeavy->[talktopicheavyfile]</li>
+    <li>TalkTopicHeavy(p=0.08)->Verbindungen zwischen [talktopicheavyfileDat] und [talktopicheavyfileDat]</li>
+    <li>TalkTopicHeavy(p=0.08)->Zusammenhänge zwischen [talktopicheavyfileDat] und [talktopicheavyfileDat]</li>
+    <li>TalkTopicHeavy(p=0.08)->Bezüge zwischen [talktopicheavyfileDat] und [talktopicheavyfileDat]</li>
+
+    <li>TalkTopicAnyAcc->[TalkTopicLightAcc]</li>
+    <li>TalkTopicAnyAcc->[TalkTopicHeavyAcc]</li>
+    <li>TalkTopicHeavyAcc->[talktopicheavyfileAcc]</li>
+    <li>TalkTopicHeavyAcc(p=0.08)->die Verbindungen zwischen [talktopicheavyfileDat] und [talktopicheavyfileDat]</li>
+    <li>TalkTopicHeavyAcc(p=0.08)->die Zusammenhänge zwischen [talktopicheavyfileDat] und [talktopicheavyfileDat]</li>
+    <li>TalkTopicHeavyAcc(p=0.08)->die Bezüge zwischen [talktopicheavyfileDat] und [talktopicheavyfileDat]</li>
     <li>TalkTopicLight(p=25)->[talktopiclightfile]</li>
     <li>TalkTopicLight->[VegetablePlural]</li>
     <li>TalkTopicLight->das Essen von [VegetablePluralDat]</li>
