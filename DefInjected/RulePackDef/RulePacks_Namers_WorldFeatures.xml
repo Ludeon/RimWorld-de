@@ -247,23 +247,30 @@
     <li>terrain_word->expanse</li>
   -->
   <NamerOcean.rulePack.rulesStrings>
-    <li>standardname(p=0.4)->[ocean_adjective]e [narrative_name]</li>
-    <li>ocean_adjective->blau</li>
-    <li>ocean_adjective->weiß</li>
-    <li>ocean_adjective->grau</li>
+    <li>r_name->[ocean_adjective]e [ocean_Fem]</li>
+    <li>r_name->[ocean_adjective]er [ocean_Mas]</li>
+    <li>r_name->[ocean_adjective]es [ocean_Neu]</li>
+    <li>r_name->[ocean_noun] der [AnimalPlural]</li>
+    <li>r_name->[WordTribal]-[ocean_noun]</li>
+    <li>ocean_adjective->[Color]</li>
+    <li>ocean_adjective->[AdjectiveNatural]</li>
     <li>ocean_adjective->klar</li>
     <li>ocean_adjective->windig</li>
-    <li>ocean_adjective->stürmig</li>
+    <li>ocean_adjective->stürmisch</li>
     <li>ocean_adjective->ruhig</li>
-    <li>ocean_adjective->breite</li>
+    <li>ocean_adjective->breit</li>
     <li>ocean_adjective->endlos</li>
     <li>ocean_adjective->flach</li>
     <li>ocean_adjective->still</li>
     <li>ocean_adjective->unruhig</li>
     <li>ocean_adjective->sanft</li>
-    <li>terrain_word(p=6)->Ozean</li>
-    <li>terrain_word(p=3)->Meer</li>
-    <li>terrain_word->Leere</li>
+    <li>ocean_noun->[ocean_Fem]</li>
+    <li>ocean_noun->[ocean_Mas]</li>
+    <li>ocean_noun->[ocean_Neu]</li>
+    <li>ocean_Fem->Leere</li>
+    <li>ocean_Mas->Ozean</li>
+    <li>ocean_Neu->Meer</li>
+
   </NamerOcean.rulePack.rulesStrings>
   
   <!-- EN:
@@ -489,11 +496,10 @@
     <li>basic_adjective->alt</li>
     <li>narrative_name(p=12)->[WordTribal]</li>
     <li>narrative_name(p=12)->[PlaceOutlander]</li>
-    <li>narrative_name->[Color][NaturalObject]</li>
+    <li>narrative_name->[Color]-[NaturalObject]</li>
     <li>narrative_name->[AdjectiveNatural][BodyPart]</li>
     <li>narrative_name->[Animal]</li>
-    <li>narrative_name->[Color]</li>
-    <li>narrative_name->[Color]e-[Animal]</li>
+    <li>narrative_name->[Color]-[Animal]</li>
     <li>narrative_name->[AdjectiveNatural]e [Animal]</li>
     <li>narrative_name->[Animal]-[BodyPart]</li>
     <li>narrative_name->[Color]e [Animal]</li>
