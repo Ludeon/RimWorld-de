@@ -23,7 +23,7 @@
     <li>terrain_word->Felsen</li>
     <li>terrain_word->Inselchen</li>
     <li>terrain_word->Spitzen</li>
-    <li>terrain_word->Kette</li>
+    <li>terrain_word->Inselkette</li>
   </NamerArchipelago.rulePack.rulesStrings>
   
   <!-- EN:
@@ -161,7 +161,6 @@
     <li>terrain_word(p=0.5)->Eisfeld</li>
     <li>terrain_word(p=0.3)->Feld</li>
     <li>terrain_word(p=0.3)->Leere</li>
-    <li>terrain_word(p=0.3)->Feld</li>
     <li>terrain_word(p=0.3)->Ausdehnung</li>
     <li>terrain_word(p=0.3)->Gebiet</li>
   </NamerIceSheet.rulePack.rulesStrings>
@@ -205,7 +204,6 @@
     <li>terrain_word->Teich</li>
     <li>terrain_word->Basin</li>
     <li>terrain_word->Becken</li>
-    <li>terrain_word(p=0.3)->Basin</li>
     <li>terrain_word(p=0.3)->Lagune</li>
     <li>terrain_word(p=0.3)->Loch</li>
   </NamerLake.rulePack.rulesStrings>
@@ -247,10 +245,11 @@
     <li>terrain_word->expanse</li>
   -->
   <NamerOcean.rulePack.rulesStrings>
-    <li>r_name->[ocean_adjective]e [ocean_Fem]</li>
+    <li>r_name(p=0.5)->[ocean_adjective]e [ocean_Fem]</li>
     <li>r_name->[ocean_adjective]er [ocean_Mas]</li>
     <li>r_name->[ocean_adjective]es [ocean_Neu]</li>
     <li>r_name->[ocean_noun] der [AnimalPlural]</li>
+    <li>r_name->[ocean_noun] der [story_result]</li>
     <li>r_name->[WordTribal]-[ocean_noun]</li>
     <li>ocean_adjective->[Color]</li>
     <li>ocean_adjective->[AdjectiveNatural]</li>
@@ -264,7 +263,7 @@
     <li>ocean_adjective->still</li>
     <li>ocean_adjective->unruhig</li>
     <li>ocean_adjective->sanft</li>
-    <li>ocean_noun->[ocean_Fem]</li>
+    <li>ocean_noun(p=0.5)->[ocean_Fem]</li>
     <li>ocean_noun->[ocean_Mas]</li>
     <li>ocean_noun->[ocean_Neu]</li>
     <li>ocean_Fem->Leere</li>
@@ -332,7 +331,7 @@
     <li>swamp_adjective->erstickend</li>
     <li>swamp_adjective->verrottet</li>
     <li>swamp_adjective->verrottend</li>
-    <li>swamp_adjective->verwachsend</li>
+    <li>swamp_adjective->verwachsen</li>
     <li>swamp_adjective->verwirrt</li>
     <li>swamp_adjective->verstörend</li>
     <li>swamp_adjective->dornig</li>
@@ -488,7 +487,6 @@
     <li>metaprefix->[Direction]</li>
     <li>metaprefix->[basic_adjective]e</li>
     <li>basic_adjective->groß</li>
-    <li>basic_adjective->groß</li>
     <li>basic_adjective->klein</li>
     <li>basic_adjective->grandios</li>
     <li>basic_adjective->neu</li>
@@ -518,38 +516,35 @@
     <li>story_result->Verrücktheit</li>
     <li>story_result->Fehler</li>
     <li>story_result->Schuld</li>
-    <li>story_result->Fehltritt</li>
+    <li>story_result->Sühne</li>
+    <li>story_result->Fehltritte</li>
     <li>story_result->Wahnvorstellung</li>
-    <li>story_result->Schlaraffenland</li>
     <li>story_result->Freude</li>
     <li>story_result->Wunder</li>
     <li>story_result->Schatztruhe</li>
     <li>story_result->Belohnung</li>
     <li>story_result->Entlohnung</li>
     <li>story_result->Ehre</li>
-    <li>story_result->Schatztruhe</li>
+    <li>story_result->Schätze</li>
     <li>story_result->Trophäe</li>
     <li>story_result->Verblendung</li>
     <li>story_result->Arroganz</li>
     <li>story_result->Flagge</li>
     <li>story_result->Niederlage</li>
-    <li>story_result->Schuld</li>
     <li>story_result->Gefälle</li>
     <li>story_result->Zerstörung</li>
-    <li>story_result->Kataklysmus</li>
-    <li>story_result->Ruine</li>
-    <li>story_result->Zerstörung</li>
+    <li>story_result->Kataklysmen</li>
+    <li>story_result->Ruinen</li>
     <li>story_result->Verderbnis</li>
     <li>story_result->Vernichtung</li>
     <li>story_result->Wiedergeburt</li>
     <li>story_result->Ruhe</li>
-    <li>story_result->Seidenstraße</li>
     <li>story_result->Endung</li>
     <li>story_result->Täuschung</li>
     <li>story_result->List</li>
-    <li>story_result->Täuschung</li>
+    <li>story_result->Tücke</li>
     <li>story_result->Illusion</li>
-    <li>story_result->Heuchlerei</li>
+    <li>story_result->Heuchelei</li>
   </WorldFeatureNamerCommon.rulePack.rulesStrings>
   
 </LanguageData>
