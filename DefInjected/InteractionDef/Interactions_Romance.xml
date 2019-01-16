@@ -94,7 +94,7 @@
     <li>romantic_noun(p=2)->[NaturalObject]</li>
   -->
   <RomanceAttempt.logRulesInitiator.rulesStrings>
-    <li>r_logentry->[INITIATOR_nameDef] [wooed] durch [wootactic].</li>
+    <li>r_logentry->[INITIATOR_nameDef] [wooed] [wootactic].</li>
     <li>wooed->versuchte einen Flirt mit [RECIPIENT_nameDef]</li>
     <li>wooed->flirtete mit [RECIPIENT_nameDef]</li>
     <li>wooed->umwarb [RECIPIENT_nameDef]</li>
@@ -105,31 +105,31 @@
     <li>wooed->bezauberte [RECIPIENT_nameDef]</li>
     <li>wooed->machte [RECIPIENT_nameDef] den Hof</li>
     <li>wootactic(p=4)->[complimenting]</li>
-    <li>wootactic->das Erzählen einer Geschichte über [TalkTopicAnyAcc]</li>
-    <li>wootactic->das Erzählen einer Fabel über [TalkTopicAnyAcc]</li>
-    <li>wootactic->Witze über [TalkTopicAnyAcc]</li>
-    <li>wootactic->das Beschreiben [INITIATOR_possessive]er Beobachtungen zum Thema '[TalkTopicHeavy]'</li>
+    <li>wootactic->indem [INITIATOR_pronoun] eine Geschichte über [TalkTopicAnyAcc] erzählte</li>
+    <li>wootactic->indem [INITIATOR_pronoun] eine Fabel über [TalkTopicAnyAcc] erzählte</li>
+    <li>wootactic->indem [INITIATOR_pronoun] Witze über [TalkTopicAnyAcc] erzählte</li>
+    <li>wootactic->indem [INITIATOR_pronoun] [INITIATOR_possessive]e Beobachtungen zum Thema '[TalkTopicHeavy]' beschrieb</li>
     <li>wootactic(p=2)->[boasting]</li>
-    <li>wootactic(p=0.5)->den Vergleich von [RECIPIENT_nameDef] mit einer [romantic_adj]en [romantic_noun_Fem]</li>
-    <li>wootactic(p=0.5)->den Vergleich von [RECIPIENT_nameDef] mit einem [romantic_adj]en [romantic_noun_Mas_Neu]</li>
-    <li>wootactic(p=0.5)->das Gleichsetzen von [RECIPIENT_nameDef] mit einer [romantic_adj]en [romantic_noun_Fem]</li>
-    <li>wootactic(p=0.5)->das Gleichsetzen von [RECIPIENT_nameDef] mit einem [romantic_adj]en [romantic_noun_Mas_Neu]</li>
-    <li>boasting->das Prahlen über [INITIATOR_possessive]e [PersonalCharacteristic]</li>
-    <li>boasting->das Erwähnen [INITIATOR_possessive]er [PersonalCharacteristicGen]</li>
-    <li>boasting->positives Implizieren [INITIATOR_possessive]er [PersonalCharacteristicGen]</li>
-    <li>boasting->Übertreiben [INITIATOR_possessive]er [PersonalCharacteristicGen]</li>
-    <li>boasting->das Reden über [INITIATOR_possessive]e [PersonalCharacteristic]</li>
-    <li>boasting->das Lenken der Aufmerksamkeit auf [INITIATOR_possessive]e [PersonalCharacteristic]</li>
-    <li>complimenting(p=3)->Komplimente über [RECIPIENT_possessive]e [PersonalCharacteristic]</li>
-    <li>complimenting->subtile Komplimente über [RECIPIENT_possessive]e [PersonalCharacteristic]</li>
-    <li>complimenting->Loben [RECIPIENT_possessive]er [PersonalCharacteristicGen]</li>
-    <li>complimenting->das Kommentieren [RECIPIENT_possessive]er [PersonalCharacteristicGen]</li>
-    <li>complimenting->positives Erwähnen [RECIPIENT_possessive]er [PersonalCharacteristicGen]</li>
-    <li>complimenting(p=2)->spielerisches Necken [RECIPIENT_possessive]er [PersonalCharacteristicGen]</li>
-    <li>complimenting->eine scherzhafte Anspielung auf [RECIPIENT_possessive]e [PersonalCharacteristic]</li>
-    <li>complimenting->scherzhafte Beinahe-Komplimente über [RECIPIENT_possessive]e [PersonalCharacteristic]</li>
-    <li>complimenting->schelmisches Fragen nach [RECIPIENT_possessive]er [PersonalCharacteristicGen]</li>
-    <li>complimenting->einen vergnügten Scherz über [RECIPIENT_possessive]e [PersonalCharacteristic]</li>
+    <li>wootactic(p=0.5)->indem [INITIATOR_pronoun] [RECIPIENT_objective] mit einer [romantic_adj]en [romantic_noun_Fem] verglich</li>
+    <li>wootactic(p=0.5)->indem [INITIATOR_pronoun] [RECIPIENT_objective] mit einem [romantic_adj]en [romantic_noun_Mas_Neu] verglich</li>
+    <li>wootactic(p=0.5)->indem [INITIATOR_pronoun] [RECIPIENT_objective] mit einer [romantic_adj]en [romantic_noun_Fem] gleichsetzte</li>
+    <li>wootactic(p=0.5)->indem [INITIATOR_pronoun] [RECIPIENT_objective] mit einem [romantic_adj]en [romantic_noun_Mas_Neu] gleichsetzte</li>
+    <li>boasting->indem [INITIATOR_pronoun] mit [INITIATOR_possessive]er [PersonalCharacteristicGen] prahlte</li>
+    <li>boasting->indem [INITIATOR_pronoun] [INITIATOR_possessive]e [PersonalCharacteristic] erwähnte</li>
+    <li>boasting->durch positives Implizieren [INITIATOR_possessive]er [PersonalCharacteristicGen]</li>
+    <li>boasting->durch Übertreiben [INITIATOR_possessive]er [PersonalCharacteristicGen]</li>
+    <li>boasting->indem [INITIATOR_pronoun] über [INITIATOR_possessive]e [PersonalCharacteristic] redete</li>
+    <li>boasting->indem [INITIATOR_pronoun] [RECIPIENT_possessive]e Aufmerksamkeit auf [INITIATOR_possessive]e [PersonalCharacteristic] lenkte</li>
+    <li>complimenting(p=3)->durch Komplimente über [RECIPIENT_possessive]e [PersonalCharacteristic]</li>
+    <li>complimenting->durch subtile Komplimente über [RECIPIENT_possessive]e [PersonalCharacteristic]</li>
+    <li>complimenting->indem [INITIATOR_pronoun] [RECIPIENT_possessive]e [PersonalCharacteristic] lobte</li>
+    <li>complimenting->indem [INITIATOR_pronoun] [RECIPIENT_possessive]e [PersonalCharacteristic] kommentierte</li>
+    <li>complimenting->indem [INITIATOR_pronoun] [RECIPIENT_possessive]e [PersonalCharacteristic] positiv erwähnte</li>
+    <li>complimenting(p=2)->durch spielerisches Necken [RECIPIENT_possessive]er [PersonalCharacteristicGen]</li>
+    <li>complimenting->indem [INITIATOR_pronoun] eine scherzhafte Anspielung auf [RECIPIENT_possessive]e [PersonalCharacteristic] machte</li>
+    <li>complimenting->durch scherzhafte Beinahe-Komplimente über [RECIPIENT_possessive]e [PersonalCharacteristic]</li>
+    <li>complimenting->indem [INITIATOR_pronoun] schelmisch nach [RECIPIENT_possessive]er [PersonalCharacteristicGen] fragte</li>
+    <li>complimenting->indem [INITIATOR_pronoun] einen vergnügten Scherz über [RECIPIENT_possessive]e [PersonalCharacteristic] machte</li>
     <li>romantic_adj->wunderschön</li>
     <li>romantic_adj->leuchtend</li>
     <li>romantic_adj->glühend</li>
@@ -139,7 +139,7 @@
     <li>romantic_adj->atemberaubend</li>
     <li>romantic_adj->bezaubernd</li>
     <li>romantic_adj->umwerfend</li>
-    <li>romantic_adj->delikat</li>
+    <li>romantic_adj->fabelhaft</li>
     <li>romantic_adj->schön</li>
     <li>romantic_adj->großartig</li>
     <li>romantic_adj->lieblich</li>
