@@ -14,16 +14,23 @@
     <li>terrain_word->chain</li>
   -->
   <NamerArchipelago.rulePack.rulesStrings>
-    <li>standardname(p=0.2)->[narrative_name] Inseln</li>
-    <li>terrain_word(p=4)->Inseln</li>
-    <li>terrain_word(p=3)->Insel</li>
-    <li>terrain_word(p=3)->Archipel</li>
-    <li>terrain_word->Riff</li>
-    <li>terrain_word->Atoll</li>
-    <li>terrain_word->Felsen</li>
-    <li>terrain_word->Inselchen</li>
-    <li>terrain_word->Spitzen</li>
-    <li>terrain_word->Inselkette</li>
+    <li>r_name->[archipelago_adjective]e [archipelago_Fem]</li>
+    <li>r_name->[archipelago_adjective]er [archipelago_Mas]</li>
+    <li>r_name(p=0.5)->[archipelago_adjective]es [archipelago_Neu]</li>
+    <li>r_name->[archipelago_noun] der [AnimalPlural]</li>
+    <li>r_name->[archipelago_noun] der [story_result]</li>
+    <li>r_name->[WordTribal]-[archipelago_noun]</li>
+    <li>r_name->[NamePerson]-[archipelago_noun]</li>
+    <li>archipelago_adjective->[Color]</li>
+    <li>archipelago_adjective->[AdjectiveNatural]</li>
+    <li>archipelago_noun(p=2)->[archipelago_Fem]</li>
+    <li>archipelago_noun(p=2)->[archipelago_Mas]</li>
+    <li>archipelago_noun->[archipelago_Neu]</li>
+    <li>archipelago_Fem(p=2)->Inseln</li>
+    <li>archipelago_Fem->Felsen</li>
+    <li>archipelago_Mas->Archipel</li>
+    <li>archipelago_Neu->Riff</li>
+    <li>archipelago_Neu->Atoll</li>
   </NamerArchipelago.rulePack.rulesStrings>
   
   <!-- EN:
@@ -41,7 +48,7 @@
     <li>terrain_word(p=4)->Savanne</li>
     <li>terrain_word(p=2)->Plateau</li>
     <li>terrain_word(p=2)->Gebüsch</li>
-    <li>terrain_word->Wüste</li>
+    <li>terrain_word->Steppe</li>
     <li>terrain_word->Busch</li>
     <li>terrain_word->Gebüsch</li>
     <li>terrain_word->Ödland</li>
