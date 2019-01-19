@@ -349,22 +349,22 @@
     <li>implement(IMPLEMENTOWNER_type==weapon,p=1)->[TOOL_label] der Waffe '[WEAPON_label]'</li>
     <li>implement(IMPLEMENTOWNER_type==weapon,p=0.5)->der Waffe '[WEAPON_label]'</li>
     <li>implement(IMPLEMENTOWNER_type==bodypart,p=2)->[TOOL_label]</li>
-    <li>implement(IMPLEMENTOWNER_type==bodypart,p=1)->[adjective_bodypart] [TOOL_label]</li>
+    <li>implement(IMPLEMENTOWNER_type==bodypart,p=1)->[TOOL_label] ([adjective_bodypart])</li>
     <li>implement(IMPLEMENTOWNER_type==hediff,p=2)->[TOOL_label] [INITIATOR_possessive]er Waffe '[WEAPON_label]'</li>
     <li>implement(IMPLEMENTOWNER_type==hediff,p=1)->[INITIATOR_possessive]er Waffe '[WEAPON_label]'</li>
     <li>implement(IMPLEMENTOWNER_type==hediff,p=1)->[INITIATOR_possessive]er/[INITIATOR_possessive]em [TOOL_label]</li>
-    <li>adjective_bodypart->harter/hartem</li>
-    <li>adjective_bodypart->starker/starkem</li>
-    <li>adjective_bodypart->kraftvoller/kraftvollem</li>
-    <li>adjective_bodypart->kräftiger/kräftigem</li>
-    <li>adjective_bodypart->mächtiger/mächtigem</li>
-    <li>adjective_bodypart->schroffer/schroffem</li>
-    <li>adjective_bodypart->starker/starkem</li>
-    <li>adjective_bodypart->robuster/robustem</li>
-    <li>adjective_bodypart->solider/solidem</li>
-    <li>adjective_bodypart->zäher/zähem</li>
-    <li>adjective_bodypart->unnachgiebiger/unnachgiebigem</li>
-    <li>adjective_bodypart->fester/festem</li>
+    <li>adjective_bodypart->hart</li>
+    <li>adjective_bodypart->stark</li>
+    <li>adjective_bodypart->kraftvoll</li>
+    <li>adjective_bodypart->kräftig</li>
+    <li>adjective_bodypart->mächtig</li>
+    <li>adjective_bodypart->schroff</li>
+    <li>adjective_bodypart->stark</li>
+    <li>adjective_bodypart->robust</li>
+    <li>adjective_bodypart->solid</li>
+    <li>adjective_bodypart->zäh</li>
+    <li>adjective_bodypart->unnachgiebig</li>
+    <li>adjective_bodypart->fest</li>
     <li>targetlist(RECIPIENT_part_count==1)->[RECIPIENT_part0_label]</li>
     <li>targetlist(RECIPIENT_part_count==2)->[RECIPIENT_part0_label] und [RECIPIENT_part1_label]</li>
     <li>targetlist(RECIPIENT_part_count==3)->[RECIPIENT_part0_label], [RECIPIENT_part1_label] und [RECIPIENT_part2_label]</li>
