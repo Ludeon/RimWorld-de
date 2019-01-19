@@ -94,40 +94,37 @@
     <li>romantic_noun(p=2)->[NaturalObject]</li>
   -->
   <RomanceAttempt.logRulesInitiator.rulesStrings>
-    <li>r_logentry->[INITIATOR_nameDef] [wooed] [wootactic].</li>
-    <li>wooed->versuchte einen Flirt mit [RECIPIENT_nameDef]</li>
+    <li>r_logentry->[INITIATOR_nameDef] [wooed], [wootactic].</li>
     <li>wooed->flirtete mit [RECIPIENT_nameDef]</li>
+    <li>wooed->versuchte [RECIPIENT_nameDef] zu verführen</li>
+    <li>wooed->versuchte die Gunst von [RECIPIENT_nameDef] zu erlangen</li>
+    <li>wooed->versuchte [RECIPIENT_nameDef] zu verzücken</li>
+    <li>wooed->versuchte [RECIPIENT_nameDef] zu bezaubern</li>
     <li>wooed->umwarb [RECIPIENT_nameDef]</li>
-    <li>wooed->romantisierte [RECIPIENT_nameDef]</li>
-    <li>wooed->zeigte [INITIATOR_possessive]e Liebe für [RECIPIENT_nameDef]</li>
     <li>wooed->umgarnte [RECIPIENT_nameDef]</li>
-    <li>wooed->umlockte [RECIPIENT_nameDef]</li>
-    <li>wooed->bezauberte [RECIPIENT_nameDef]</li>
     <li>wooed->machte [RECIPIENT_nameDef] den Hof</li>
-    <li>wootactic(p=4)->[complimenting]</li>
     <li>wootactic->indem [INITIATOR_pronoun] eine Geschichte über [TalkTopicAnyAcc] erzählte</li>
     <li>wootactic->indem [INITIATOR_pronoun] eine Fabel über [TalkTopicAnyAcc] erzählte</li>
     <li>wootactic->indem [INITIATOR_pronoun] Witze über [TalkTopicAnyAcc] erzählte</li>
     <li>wootactic->indem [INITIATOR_pronoun] [INITIATOR_possessive]e Beobachtungen zum Thema '[TalkTopicHeavy]' beschrieb</li>
-    <li>wootactic(p=2)->[boasting]</li>
     <li>wootactic(p=0.5)->indem [INITIATOR_pronoun] [RECIPIENT_objective] mit einer [romantic_adj]en [romantic_noun_Fem] verglich</li>
     <li>wootactic(p=0.5)->indem [INITIATOR_pronoun] [RECIPIENT_objective] mit einem [romantic_adj]en [romantic_noun_Mas_Neu] verglich</li>
     <li>wootactic(p=0.5)->indem [INITIATOR_pronoun] [RECIPIENT_objective] mit einer [romantic_adj]en [romantic_noun_Fem] gleichsetzte</li>
     <li>wootactic(p=0.5)->indem [INITIATOR_pronoun] [RECIPIENT_objective] mit einem [romantic_adj]en [romantic_noun_Mas_Neu] gleichsetzte</li>
+    <li>wootactic(p=2)->[boasting]</li>
     <li>boasting->indem [INITIATOR_pronoun] mit [INITIATOR_possessive]er [PersonalCharacteristicGen] prahlte</li>
-    <li>boasting->indem [INITIATOR_pronoun] [INITIATOR_possessive]e [PersonalCharacteristic] erwähnte</li>
-    <li>boasting->durch positives Implizieren [INITIATOR_possessive]er [PersonalCharacteristicGen]</li>
-    <li>boasting->durch Übertreiben [INITIATOR_possessive]er [PersonalCharacteristicGen]</li>
+    <li>boasting->indem [INITIATOR_pronoun] [INITIATOR_possessive]e [PersonalCharacteristic] positiv erwähnte</li>
+    <li>boasting->indem er mit [INITIATOR_possessive]er [PersonalCharacteristicGen] angab</li>
     <li>boasting->indem [INITIATOR_pronoun] über [INITIATOR_possessive]e [PersonalCharacteristic] redete</li>
     <li>boasting->indem [INITIATOR_pronoun] [RECIPIENT_possessive]e Aufmerksamkeit auf [INITIATOR_possessive]e [PersonalCharacteristic] lenkte</li>
-    <li>complimenting(p=3)->durch Komplimente über [RECIPIENT_possessive]e [PersonalCharacteristic]</li>
-    <li>complimenting->durch subtile Komplimente über [RECIPIENT_possessive]e [PersonalCharacteristic]</li>
+    <li>wootactic(p=4)->[complimenting]</li>
+    <li>complimenting(p=3)->indem [INITIATOR_pronoun] Komplimente über [RECIPIENT_possessive]e [PersonalCharacteristic] machte</li>
+    <li>complimenting->indem [INITIATOR_pronoun] subtile Komplimente über [RECIPIENT_possessive]e [PersonalCharacteristic] machte</li>
     <li>complimenting->indem [INITIATOR_pronoun] [RECIPIENT_possessive]e [PersonalCharacteristic] lobte</li>
-    <li>complimenting->indem [INITIATOR_pronoun] [RECIPIENT_possessive]e [PersonalCharacteristic] kommentierte</li>
-    <li>complimenting->indem [INITIATOR_pronoun] [RECIPIENT_possessive]e [PersonalCharacteristic] positiv erwähnte</li>
-    <li>complimenting(p=2)->durch spielerisches Necken [RECIPIENT_possessive]er [PersonalCharacteristicGen]</li>
+    <li>complimenting->indem [INITIATOR_pronoun] positiv [RECIPIENT_possessive]e [PersonalCharacteristic] kommentierte</li>
+    <li>complimenting->indem [INITIATOR_pronoun] positiv [RECIPIENT_possessive]e [PersonalCharacteristic] erwähnte</li>
+    <li>complimenting->indem [INITIATOR_pronoun] [RECIPIENT_pronoun] scherzhaft wegen [RECIPIENT_possessive]er [PersonalCharacteristicGen] neckte</li>
     <li>complimenting->indem [INITIATOR_pronoun] eine scherzhafte Anspielung auf [RECIPIENT_possessive]e [PersonalCharacteristic] machte</li>
-    <li>complimenting->durch scherzhafte Beinahe-Komplimente über [RECIPIENT_possessive]e [PersonalCharacteristic]</li>
     <li>complimenting->indem [INITIATOR_pronoun] schelmisch nach [RECIPIENT_possessive]er [PersonalCharacteristicGen] fragte</li>
     <li>complimenting->indem [INITIATOR_pronoun] einen vergnügten Scherz über [RECIPIENT_possessive]e [PersonalCharacteristic] machte</li>
     <li>romantic_adj->wunderschön</li>
