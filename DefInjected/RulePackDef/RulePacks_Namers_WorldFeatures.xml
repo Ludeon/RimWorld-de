@@ -14,9 +14,9 @@
     <li>terrain_word->chain</li>
   -->
   <NamerArchipelago.rulePack.rulesStrings>
-    <li>r_name->[archipelago_adjective]e [archipelago_Fem]</li>
-    <li>r_name->[archipelago_adjective]er [archipelago_Mas]</li>
-    <li>r_name(p=0.5)->[archipelago_adjective]es [archipelago_Neu]</li>
+    <li>r_name->[archipelago_adjective]e [archipelago_Fem] [maybe_extra]</li>
+    <li>r_name->[archipelago_adjective]er [archipelago_Mas] [maybe_extra]</li>
+    <li>r_name(p=0.5)->[archipelago_adjective]es [archipelago_Neu] [maybe_extra]</li>
     <li>r_name->[archipelago_noun] der [AnimalPlural]</li>
     <li>r_name->[archipelago_noun] der [story_result]</li>
     <li>r_name->[WordTribal]-[archipelago_noun]</li>
@@ -252,9 +252,9 @@
     <li>terrain_word->expanse</li>
   -->
   <NamerOcean.rulePack.rulesStrings>
-    <li>r_name(p=0.5)->[ocean_adjective]e [ocean_Fem]</li>
-    <li>r_name->[ocean_adjective]er [ocean_Mas]</li>
-    <li>r_name->[ocean_adjective]es [ocean_Neu]</li>
+    <li>r_name(p=0.5)->[ocean_adjective]e [ocean_Fem] [maybe_extra]</li>
+    <li>r_name->[ocean_adjective]er [ocean_Mas] [maybe_extra]</li>
+    <li>r_name->[ocean_adjective]es [ocean_Neu] [maybe_extra]</li>
     <li>r_name->[ocean_noun] der [AnimalPlural]</li>
     <li>r_name->[ocean_noun] der [story_result]</li>
     <li>r_name->[WordTribal]-[ocean_noun]</li>
@@ -519,6 +519,10 @@
     <li>subject->[Animal]</li>
     <li>subject->[WordTribal]</li>
     <li>subject->[PlaceOutlander]</li>
+    <li>maybe_extra(p=10)-></li>
+    <li>maybe_extra->der [AnimalPlural]</li>
+    <li>maybe_extra->der [EnemyPlural]</li>
+    <li>maybe_extra->der [story_result]</li>
     <li>story_result->Torheit</li>
     <li>story_result->Verfehlung</li>
     <li>story_result->Verrücktheit</li>
@@ -534,7 +538,7 @@
     <li>story_result->Entlohnung</li>
     <li>story_result->Ehre</li>
     <li>story_result->Schätze</li>
-    <li>story_result->Trophäe</li>
+    <li>story_result->Trophäen</li>
     <li>story_result->Verblendung</li>
     <li>story_result->Arroganz</li>
     <li>story_result->Flagge</li>
