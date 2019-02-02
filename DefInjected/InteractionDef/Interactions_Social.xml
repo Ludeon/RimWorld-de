@@ -96,7 +96,7 @@
   <Insult.logRulesInitiator.rulesStrings>
     <li>r_logentry(p=3)->[INITIATOR_nameDef] [insulted] die [PersonalCharacteristic] von [target].</li>
     <li>r_logentry->[INITIATOR_nameDef] verglich [target] mit [insultcomparison].</li>
-    <li>r_logentry->[INITIATOR_nameDef] nannte [target] [insultcomparison].</li>
+    <li>r_logentry->[INITIATOR_nameDef] nannte [target] [insult].</li>
     <li>target(p=4)->[RECIPIENT_nameDef]</li>
     <li>target->[PersonFamily] von [RECIPIENT_nameDef]</li>
     <li>insulted(p=3)->beleidigte</li>
@@ -109,8 +109,12 @@
     <li>insulted->verleumdete</li>
     <li>insulted->schimpfte hemmungslos über</li>
     <li>insulted->verspottete</li>
-    <li>insultcomparison(p=2)->[Animal]</li>
-    <li>insultcomparison->[Enemy]</li>
+    <li>insultcomparison->einer [AnimalSingularFem]</li>
+    <li>insultcomparison->einem [AnimalSingularMas]</li>
+    <li>insultcomparison->einem [AnimalSingularNeu]</li>
+    <li>insultcomparison->einem [EnemySingularDat]</li>
+    <li>insult->'[AnimalSingular]'</li>
+    <li>insult->einen [EnemySingular]</li>
   </Insult.logRulesInitiator.rulesStrings>
   
   <!-- EN: kind words -->
