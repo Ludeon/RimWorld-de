@@ -23,9 +23,9 @@
     <li>r_name->[NamePerson]-[archipelago_noun]</li>
     <li>archipelago_adjective->[Color]</li>
     <li>archipelago_adjective->[AdjectiveNatural]</li>
-    <li>archipelago_noun(p=2)->[archipelago_Fem]</li>
-    <li>archipelago_noun(p=2)->[archipelago_Mas]</li>
-    <li>archipelago_noun->[archipelago_Neu]</li>
+    <li>archipelago_noun->[archipelago_Fem]</li>
+    <li>archipelago_noun->[archipelago_Mas]</li>
+    <li>archipelago_noun(p=0.5)->[archipelago_Neu]</li>
     <li>archipelago_Fem(p=2)->Inseln</li>
     <li>archipelago_Fem->Felsen</li>
     <li>archipelago_Mas->Archipel</li>
@@ -44,14 +44,24 @@
     <li>terrain_word->barrens</li>
   -->
   <NamerAridShrubland.rulePack.rulesStrings>
-    <li>terrain_word(p=4)->Buschland</li>
-    <li>terrain_word(p=4)->Savanne</li>
-    <li>terrain_word(p=2)->Plateau</li>
-    <li>terrain_word(p=2)->Gebüsch</li>
-    <li>terrain_word->Steppe</li>
-    <li>terrain_word->Busch</li>
-    <li>terrain_word->Gebüsch</li>
-    <li>terrain_word->Ödland</li>
+    <li>r_name->[aridShrubland_adjective]e [aridShrubland_Fem] [maybe_extra]</li>
+    <li>r_name(p=0.5)->[aridShrubland_adjective]er [aridShrubland_Mas] [maybe_extra]</li>
+    <li>r_name->[aridShrubland_adjective]es [aridShrubland_Neu] [maybe_extra]</li>
+    <li>r_name->[aridShrubland_noun] der [AnimalPlural]</li>
+    <li>r_name->[aridShrubland_noun] der [story_result]</li>
+    <li>r_name->[WordTribal]-[aridShrubland_noun]</li>
+    <li>r_name->[NamePerson]-[aridShrubland_noun]</li>
+    <li>aridShrubland_adjective->[Color]</li>
+    <li>aridShrubland_adjective->[AdjectiveNatural]</li>
+    <li>aridShrubland_noun->[aridShrubland_Fem]</li>
+    <li>aridShrubland_noun(p=0.5)->[aridShrubland_Mas]</li>
+    <li>aridShrubland_noun->[aridShrubland_Neu]</li>
+    <li>aridShrubland_Fem(p=2)->Savanne</li>
+    <li>aridShrubland_Fem->Steppe</li>
+    <li>aridShrubland_Mas->Busch</li>
+    <li>aridShrubland_Neu(p=2)->Buschland</li>
+    <li>aridShrubland_Neu->Plateau</li>
+    <li>aridShrubland_Neu->Gebüsch</li>
   </NamerAridShrubland.rulePack.rulesStrings>
   
   <!-- EN:
@@ -68,7 +78,6 @@
     <li>terrain_word->Fjord</li>
     <li>terrain_word->Golf</li>
     <li>terrain_word->Ankerplatz</li>
-    <li>terrain_word->Bucht</li>
   </NamerBay.rulePack.rulesStrings>
   
   <!-- EN:
@@ -533,7 +542,6 @@
     <li>story_result->Wahnvorstellung</li>
     <li>story_result->Freude</li>
     <li>story_result->Wunder</li>
-    <li>story_result->Schatztruhe</li>
     <li>story_result->Belohnung</li>
     <li>story_result->Entlohnung</li>
     <li>story_result->Ehre</li>
@@ -551,7 +559,6 @@
     <li>story_result->Vernichtung</li>
     <li>story_result->Wiedergeburt</li>
     <li>story_result->Ruhe</li>
-    <li>story_result->Endung</li>
     <li>story_result->Täuschung</li>
     <li>story_result->List</li>
     <li>story_result->Tücke</li>
