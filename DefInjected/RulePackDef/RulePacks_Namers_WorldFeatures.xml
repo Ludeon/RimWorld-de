@@ -73,11 +73,20 @@
     <li>terrain_word->cove</li>
   -->
   <NamerBay.rulePack.rulesStrings>
-    <li>standardname(p=0.2)->Golf von [narrative_name]</li>
-    <li>terrain_word(p=6)->Bucht</li>
-    <li>terrain_word->Fjord</li>
-    <li>terrain_word->Golf</li>
-    <li>terrain_word->Ankerplatz</li>
+    <li>r_name(p=3)->[Bay_adjective]e [Bay_Fem] [maybe_extra]</li>
+    <li>r_name->[Bay_adjective]er [Bay_Mas] [maybe_extra]</li>
+    <li>r_name->[Bay_noun] der [AnimalPlural]</li>
+    <li>r_name->[Bay_noun] der [story_result]</li>
+    <li>r_name->[WordTribal]-[Bay_noun]</li>
+    <li>r_name->[NamePerson]-[Bay_noun]</li>
+    <li>Bay_adjective->[Color]</li>
+    <li>Bay_adjective->[AdjectiveNatural]</li>
+    <li>Bay_noun(p=3)->[Bay_Fem]</li>
+    <li>Bay_noun->[Bay_Mas]</li>
+    <li>Bay_Fem->Bucht</li>
+    <li>Bay_Mas(p=3)->Golf</li>
+    <li>Bay_Mas->Fjord</li>
+    <li>Bay_Mas->Ankerplatz</li>
   </NamerBay.rulePack.rulesStrings>
   
   <!-- EN:
