@@ -32,14 +32,19 @@
     <li>image->einem Netzwerk aus [Color]en Farben, das den Himmel beleuchtet [circumstance_phrase]</li>
     <li>image->einem Verbund aus [Color]en, geschwungenen Lichtbögen mit [Color]en Schattierungen, der den Himmel beleuchtet [circumstance_phrase]</li>
     <li>image->einer Mischung aus tanzenden, [Color]en Farben, die den Himmel beleuchtet [circumstance_group]</li>
-    <li>circumstance_phrase->und ein [TerrainFeature] erhellt</li>
-    <li>circumstance_phrase->und ein [TerrainFeature] erhellt</li>
+    <li>circumstance_phrase(p=0.5)->und eine [TerrainFeatureFem] erhellt</li>
+    <li>circumstance_phrase(p=0.5)->und einen [TerrainFeatureMas] erhellt</li>
+    <li>circumstance_phrase(p=0.5)->und ein [TerrainFeatureNeu] erhellt</li>
     <li>circumstance_phrase->und über der [Community] hinweggleitet</li>
-    <li>circumstance_phrase->und ein [TerrainFeature] und ein [TerrainFeature] umschließt</li>
+    <li>circumstance_phrase(p=0.5)->und eine [TerrainFeatureFem] umschließt</li>
+    <li>circumstance_phrase(p=0.5)->und einen [TerrainFeatureMas] umschließt</li>
+    <li>circumstance_phrase(p=0.5)->und ein [TerrainFeatureNeu] umschließt</li>
     <li>desc_sentence->Darunter spielt [PAWN_nameDef] [Game] mit einem [AdjectiveFriendly]en Gesichtsausdruck.</li>
     <li>desc_sentence->[PAWN_nameDef] beobachtet die Szene mit ehrfürchtigem Blick.</li>
     <li>desc_sentence->[Quantity_adjphrase] [PersonJobPlural] schauen von unten zu.</li>
-    <li>desc_sentence->[PAWN_nameDef] sitzt neben einem [TerrainFeature] und schaut in den Himmel.</li>
+    <li>desc_sentence(p=0.5)->[PAWN_nameDef] sitzt neben einer [TerrainFeatureFem] und schaut in den Himmel.</li>
+    <li>desc_sentence(p=0.5)->[PAWN_nameDef] sitzt neben einem [TerrainFeatureMas] und schaut in den Himmel.</li>
+    <li>desc_sentence(p=0.5)->[PAWN_nameDef] sitzt neben einem [TerrainFeatureNeu] und schaut in den Himmel.</li>
     <li>desc_sentence->[Quantity_adjphrase] [AnimalPlural] wandern friedlich umher.</li>
     <li>desc_sentence->Es ist kein [EnemySingular] in Sicht.</li>
   </Aurora.rulePack.rulesStrings>
@@ -81,7 +86,9 @@
     <li>circumstance_phrase->mit einem [AdjectiveBadass]en Ausdruck</li>
     <li>circumstance_phrase->, während [PAWN_pronoun] [PAWN_possessive]e Waffe schwingt,</li>
     <li>circumstance_phrase->schweißgebadet</li>
-    <li>desc_sentence->[Quantity_adjphrase] entfernte Gestalten nähern sich von einem [TerrainFeature] aus.</li>
+    <li>desc_sentence(p=0.5)->[Quantity_adjphrase] entfernte Gestalten nähern sich von einer [TerrainFeatureFem] aus.</li>
+    <li>desc_sentence(p=0.5)->[Quantity_adjphrase] entfernte Gestalten nähern sich von einem [TerrainFeatureMas] aus.</li>
+    <li>desc_sentence(p=0.5)->[Quantity_adjphrase] entfernte Gestalten nähern sich von einem [TerrainFeatureNeu] aus.</li>
     <li>desc_sentence->[Quantity_adjphrase] [EnemyPluralWithoutThe] sind in der Ferne zu sehen.</li>
     <li>desc_sentence->[PAWN_nameDef] ist praktisch umzingelt von [EnemyPluralDat].</li>
     <li>desc_sentence->[PAWN_nameDef] wird mit einem [EnemySingularDat] konfrontiert.</li>
