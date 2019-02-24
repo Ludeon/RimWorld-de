@@ -11,13 +11,15 @@
     <li>nearnameinitial->[Direction] [PlaceOutlander]</li>
   -->
   <NamerFactionOutlander.rulePack.rulesStrings>
-    <li>r_name(p=3)->[nearnameinitial]</li>
-    <li>r_name->[nearnameinitial] [political_union_outlander]</li>
-    <li>r_name->[nearnameinitial] [political_adjective] [political_union_outlander]</li>
-    <li>r_name->[political_union_outlander] von [nearnameinitial]</li>
-    <li>r_name->[political_adjective] [political_union_outlander] von [nearnameinitial]</li>
-    <li>nearnameinitial(p=3)->[PlaceOutlander]</li>
-    <li>nearnameinitial->[Direction] [PlaceOutlander]</li>
+    <li>r_name->[Direction] [PlaceOutlander]</li>
+    <li>r_name->[maybe_direction][PlaceOutlander]-[political_union_outlander]</li>
+    <li>r_name->[political_adjective] [PlaceOutlander]-[political_union_outlander]</li>
+    <li>r_name->[maybe_direction][political_union_outlander] [of] [PlaceOutlander]</li>
+    <li>r_name->[political_adjective] [political_union_outlander] [of] [PlaceOutlander]</li>
+    <li>maybe_direction(p=2)-></li>
+    <li>maybe_direction->[Direction] </li>
+    <li>of->von</li>
+    <li>of->der</li>
   </NamerFactionOutlander.rulePack.rulesStrings>
   
   <!-- EN:
@@ -89,12 +91,14 @@
     <li>r_name->The [WordTribal] of the [TerrainFeature]</li>
   -->
   <NamerFactionTribal.rulePack.rulesStrings>
-    <li>r_name->[tribalworld] [political_union_tribal]</li>
-    <li>r_name->[tribalworld] [political_union_tribal]</li>
-    <li>r_name->[Color]e [TerrainFeature] [political_union_tribal]</li>
+    <li>r_name->[tribalworld]-[political_union_tribal]</li>
+    <li>r_name->[tribalworld]-[political_union_tribal]</li>
+    <li>r_name->[Color]e [TerrainFeature]-[political_union_tribal]</li>
     <li>r_name->[political_union_tribal] von [WordTribal]</li>
     <li>r_name->Die [Color]en [AnimalPlural] von [WordTribal]</li>
-    <li>r_name->Die [WordTribal] vom [TerrainFeature]</li>
+    <li>r_name->Die [WordTribal] der [TerrainFeatureFem]</li>
+    <li>r_name->Die [WordTribal] vom [TerrainFeatureMas]</li>
+    <li>r_name->Die [WordTribal] vom [TerrainFeatureNeu]</li>
   </NamerFactionTribal.rulePack.rulesStrings>
   
   <!-- EN:
@@ -171,18 +175,18 @@
     <li>topicalnoun->[VegetableSingular]</li>
     <li>topicalnoun->[Game]</li>
     <li>topicalnoun->[BodyPart]</li>
-    <li>townname_combo->[topicalnoun] [TerrainFeature]</li>
-    <li>townname_combo->[topicalnoun] [Community]</li>
+    <li>townname_combo->[topicalnoun]-[TerrainFeature]</li>
+    <li>townname_combo->[topicalnoun]-[Community]</li>
     <li>townname_combo->[TerrainFeature] der [topicalnoun]</li>
     <li>townname_combo->[topicalnoun]'s [Community]</li>
     <li>townname_combo(p=2)->[concept_positive]'s [TerrainFeature]</li>
-    <li>townname_combo(p=2)->[concept_positive] [TerrainFeature]</li>
-    <li>townname_combo(p=2)->[concept_positive] [Community]</li>
+    <li>townname_combo(p=2)->[TerrainFeature] der [concept_positive]</li>
+    <li>townname_combo(p=2)->[Community] der [concept_positive]</li>
     <li>townname_combo(p=3)->[TerrainFeature] der [CharacterPlural]</li>
     <li>townname_combo(p=3)->[Community] der [CharacterPlural]</li>
-    <li>townname_near->[nearnameinitial]-am-[TerrainFeature]</li>
-    <li>townname_near->[nearnameinitial]-ob-der-[TerrainFeature]</li>
-    <li>townname_near->[nearnameinitial]-an-der-[TerrainFeature]</li>
+    <li>townname_near->[nearnameinitial] am [TerrainFeatureMas]</li>
+    <li>townname_near->[nearnameinitial] am [TerrainFeatureNeu]</li>
+    <li>townname_near->[nearnameinitial] an der [TerrainFeatureFem]</li>
     <li>nearnameinitial->[townname_wordgen]</li>
     <li>nearnameinitial->[Community]</li>
     <li>townname_wordgen(p=2)->[SylE][SylE]</li>
@@ -309,9 +313,11 @@
   -->
   <NamerSettlementTribal.rulePack.rulesStrings>
     <li>r_name(p=2)->[WordTribal]</li>
-    <li>r_name->[Color] [WordTribal]</li>
-    <li>r_name->[Color] [TerrainFeature]</li>
-    <li>r_name->[WordTribal] [TerrainFeature]</li>
+    <li>r_name->[Color]e [WordTribal]</li>
+    <li>r_name->[Color]e [TerrainFeatureFem]</li>
+    <li>r_name->[Color]er [TerrainFeatureMas]</li>
+    <li>r_name->[Color]es [TerrainFeatureNeu]</li>
+    <li>r_name->[WordTribal]-[TerrainFeature]</li>
   </NamerSettlementTribal.rulePack.rulesStrings>
   
 </LanguageData>
