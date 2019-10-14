@@ -42,33 +42,27 @@
   <BuildRapport.logRulesInitiator.rulesStrings>
     <li>r_logentry->[INITIATOR_nameDef] erzählte [RECIPIENT_nameDef] [toldastoryabout] [subject].</li>
     <li>r_logentry->[INITIATOR_nameDef] erzählte [RECIPIENT_nameDef] über [subject].</li>
-    <li>r_logentry->[INITIATOR_nameDef] beschrieb [subject] zu [RECIPIENT_nameDef].</li>
-    <li>r_logentry->[INITIATOR_nameDef] ermunterte [RECIPIENT_nameDef] [talkabout].</li>
-    <li>r_logentry->[INITIATOR_nameDef] gab [RECIPIENT_nameDef] eine Chance [talkabout].</li>
+    <li>r_logentry->[INITIATOR_nameDef] ermunterte [RECIPIENT_nameDef], [talkabout].</li>
+    <li>r_logentry->[INITIATOR_nameDef] gab [RECIPIENT_nameDef] eine Chance, [talkabout].</li>
     <li>r_logentry->[INITIATOR_nameDef] zeigte Interesse an [PersonalCharacteristicDat] von [RECIPIENT_nameDef].</li>
     <li>r_logentry->[INITIATOR_nameDef] fragte [RECIPIENT_nameDef] über [RECIPIENT_possessive]e [PersonalCharacteristic] aus.</li>
     <li>toldastoryabout(p=2)->eine Geschichte über</li>
     <li>toldastoryabout->eine witzige Geschichte über</li>
     <li>toldastoryabout->eine berührende Geschichte über</li>
     <li>toldastoryabout->eine alte Geschichte über</li>
-    <li>toldastoryabout->eine Familiengeschichte über</li>
-    <li>toldastoryabout->eine Kindheitsgeschichte über</li>
     <li>toldastoryabout->eine Anekdote über</li>
-    <li>talkabout->zum Reden über [subject]</li>
-    <li>talkabout->zur Diskussion über [subject]</li>
+    <li>talkabout->über [subject] zu reden</li>
+    <li>talkabout->über [subject] zu diskutieren</li>
     <li>talkabout->Fragen über [subject] zu stellen</li>
     <li>talkabout->über [subject] nachzudenken</li>
-    <li>talkabout->zur Aussprache über [subject]</li>
+    <li>talkabout->sich über [subject] auszusprechen</li>
     <li>subject->die Kolonie</li>
     <li>subject->die Gemeinschaft</li>
-    <li>subject->den Beitritt zur Kolonie</li>
-    <li>subject->das Wechseln des Teams</li>
-    <li>subject->die Freunde, die man findet</li>
+    <li>subject->den Beitritt in die Kolonie</li>
+    <li>subject->die Zukunft der Kolonie</li>
     <li>subject->das Treffen von neuen Leuten</li>
-    <li>subject->das Überdenken [RECIPIENT_possessive]er Loyalitäten</li>
-    <li>subject->die Gesundheit</li>
-    <li>subject->die Zukunft</li>
-    <li>subject->das Loslassen</li>
+    <li>subject->das Kennenlernen neuer Freunde</li>
+    <li>subject->das Loslassen alter Freundschaften</li>
     <li>subject(p=4)->[ConceptPositive]</li>
     <li>subject(p=2)->[INITIATOR_possessive]e [PersonalCharacteristic]</li>
     <li>subject(p=8)->[TalkTopicLightAcc]</li>
@@ -83,9 +77,9 @@
     <li>goodthing->free, fresh [Vegetable]s</li>
   -->
   <RecruitAttempt.logRulesInitiator.rulesStrings>
-    <li>r_logentry->[INITIATOR_nameDef] versuchte [RECIPIENT_nameDef] anzuwerben.</li>
+    <li>r_logentry->[INITIATOR_nameDef] versuchte, [RECIPIENT_nameDef] anzuwerben.</li>
     <li>r_logentry->[INITIATOR_nameDef] versuchte, [RECIPIENT_nameDef] für die Kolonie zu gewinnen.</li>
-    <li>r_logentry->[INITIATOR_nameDef] versprach [RECIPIENT_nameDef] [goodthing] und fragte, ob [RECIPIENT_pronoun] der Kolonie beitreten will.</li>
+    <li>r_logentry(p=2)->[INITIATOR_nameDef] versprach [RECIPIENT_nameDef] [goodthing] und fragte, ob [RECIPIENT_pronoun] der Kolonie beitreten will.</li>
     <li>goodthing(p=10)->[ConceptPositive]</li>
     <li>goodthing->frische, kostenlose [VegetablePlural]</li>
     <li>goodthing->alles, was [RECIPIENT_pronoun] begehrt,</li>
