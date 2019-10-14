@@ -53,7 +53,7 @@
     <li>toldastoryabout->eine alte Geschichte über</li>
     <li>toldastoryabout->eine Familiengeschichte über</li>
     <li>toldastoryabout->eine Kindheitsgeschichte über</li>
-    <li>toldastoryabout->eine Anektote über</li>
+    <li>toldastoryabout->eine Anekdote über</li>
     <li>talkabout->zum Reden über [subject]</li>
     <li>talkabout->zur Diskussion über [subject]</li>
     <li>talkabout->Fragen über [subject] zu stellen</li>
@@ -84,9 +84,12 @@
   -->
   <RecruitAttempt.logRulesInitiator.rulesStrings>
     <li>r_logentry->[INITIATOR_nameDef] versuchte [RECIPIENT_nameDef] anzuwerben.</li>
-    <li>r_logentry->[INITIATOR_nameDef] versprach [RECIPIENT_nameDef] [goodthing] und fragte, ob [RECIPIENT_pronoun] mitmachen will.</li>
-    <li>goodthing(p=15)->[ConceptPositive]</li>
+    <li>r_logentry->[INITIATOR_nameDef] versuchte, [RECIPIENT_nameDef] für die Kolonie zu gewinnen.</li>
+    <li>r_logentry->[INITIATOR_nameDef] versprach [RECIPIENT_nameDef] [goodthing] und fragte, ob [RECIPIENT_pronoun] der Kolonie beitreten will.</li>
+    <li>goodthing(p=10)->[ConceptPositive]</li>
     <li>goodthing->frische, kostenlose [VegetablePlural]</li>
+    <li>goodthing->alles, was [RECIPIENT_pronoun] begehrt,</li>
+    <li>goodthing->das Blaue vom Himmel</li>
   </RecruitAttempt.logRulesInitiator.rulesStrings>
   
   <!-- EN: spark jailbreak -->
