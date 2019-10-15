@@ -512,11 +512,11 @@
     <li>r_logentry(p=3)->[WEAPON_projectile_label] von [INITIATOR_label] [destroyed_past] [destroyed_targets] von [RECIPIENT_label] und [damaged_past] [RECIPIENT_possessive] [damaged_targets].</li>
     <li>r_logentry(p=6)->[WEAPON_projectile_label] von [INITIATOR_label] [missed] [ORIGINALTARGET_label], [destroyed_present] [destroyed_targets] von [RECIPIENT_label] und [damaged_present] [RECIPIENT_possessive] [damaged_targets].</li>
     <!-- don't mention damage or destruction; uncommon, but intended as a fallback -->
-    <li>r_logentry(p=0.2)->[INITIATOR_label] traf [RECIPIENT_label] mit einer [WEAPON_projectile_label].</li>
+    <li>r_logentry(p=0.2)->[INITIATOR_label] traf [RECIPIENT_label] mit: [WEAPON_projectile_label].</li>
     <li>r_logentry(p=0.2)->[WEAPON_projectile_label] von [INITIATOR_label] traf [RECIPIENT_label].</li>
-    <li>r_logentry(p=0.4)->[INITIATOR_label] [missed] [ORIGINALTARGET_label] und traf [RECIPIENT_label] mit einer [WEAPON_projectile_label].</li>
+    <li>r_logentry(p=0.4)->[INITIATOR_label] [missed] [ORIGINALTARGET_label] und traf [RECIPIENT_label] mit: [WEAPON_projectile_label].</li>
     <li>r_logentry(p=0.4)->[WEAPON_projectile_label] von [INITIATOR_label] [missed] [ORIGINALTARGET_label] und traf [RECIPIENT_label].</li>
-    <li>r_logentry(p=0.2)->[INITIATOR_label] traf [RECIPIENT_label] mit einer [WEAPON_projectile_label], die für [ORIGINALTARGET_label] bestimmt war.</li>
+    <li>r_logentry(p=0.2)->[INITIATOR_label] traf [RECIPIENT_label] mit: [WEAPON_projectile_label]. Das Geschoss war allerdings für [ORIGINALTARGET_label] bestimmt.</li>
     <!-- fallback, also a little variety -->
     <li>WEAPON_projectile_label(p=0.05)->Schuss</li>
     <li>destroyed_past->zerschlug</li>
