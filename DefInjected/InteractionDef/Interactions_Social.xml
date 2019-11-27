@@ -94,11 +94,12 @@
     <li>insultcomparison->[Enemy]</li>
   -->
   <Insult.logRulesInitiator.rulesStrings>
-    <li>r_logentry(p=3)->[INITIATOR_nameDef] [insulted] die [PersonalCharacteristic] von [target].</li>
+    <li>r_logentry(p=3)->[INITIATOR_nameDef] [insulted] die [PersonalCharacteristic] von [RECIPIENT_nameDef].</li>
     <li>r_logentry->[INITIATOR_nameDef] verglich [target] mit [insultcomparison].</li>
     <li>r_logentry->[INITIATOR_nameDef] nannte [target] [insult].</li>
     <li>target(p=4)->[RECIPIENT_nameDef]</li>
-    <li>target->[PersonFamily] von [RECIPIENT_nameDef]</li>
+    <li>target(p=0.5)->die [PersonFamilyFem] von [RECIPIENT_nameDef]</li>
+    <li>target(p=0.5)->den [PersonFamilyMasAcc] von [RECIPIENT_nameDef]</li>
     <li>insulted(p=3)->beleidigte</li>
     <li>insulted->beleidigte öffentlich</li>
     <li>insulted->beleidigte lauthals</li>
