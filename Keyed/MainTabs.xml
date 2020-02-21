@@ -22,14 +22,30 @@
   <EmergencyWorkMarker>N</EmergencyWorkMarker>
   <!-- EN: Warning: The average of relevant skills is very low. -->
   <SelectedWorkTypeWithVeryBadSkill>Warnung: Der Durchschnitt der relevanten Fähigkeiten ist sehr niedrig.</SelectedWorkTypeWithVeryBadSkill>
+  <!-- EN: Priority 1 is done first. Priority 4 is done last. -->
+  <PriorityOneDoneFirst>Priorität 1 ist zuerst fertig. Priorität 4 ist zuletzt fertig.</PriorityOneDoneFirst>
+  <!-- EN: Will not do -->
+  <Priority0>Geht nicht</Priority0>
+  <!-- EN: Top priority -->
+  <Priority1>Höchste Priorität</Priority1>
+  <!-- EN: High priority -->
+  <Priority2>Hohe Priorität</Priority2>
+  <!-- EN: Normal priority -->
+  <Priority3>Normale Priorität</Priority3>
+  <!-- EN: Low priority -->
+  <Priority4>Geringe Priorität</Priority4>
   
   <!-- Assign tab -->
   <!-- EN: Manage outfits -->
   <ManageOutfits>Outfits verwalten</ManageOutfits>
+  <!-- EN: Unchangeable -->
+  <Unchangeable>Unveränderlich</Unchangeable>
   <!-- EN: Clr. forced -->
   <ClearForcedApparel>Erzw. \nlöschen</ClearForcedApparel>
   <!-- EN: forced -->
   <ApparelForcedLower>erzwungen</ApparelForcedLower>
+  <!-- EN: locked -->
+  <ApparelLockedLower>gesperrt</ApparelLockedLower>
   <!-- EN: Forced apparel -->
   <ForcedApparel>Erzwungene Kleidung</ForcedApparel>
   <!-- EN: Edit... -->
@@ -58,6 +74,8 @@
   <!-- Wildlife tab -->
   <!-- EN: This creature is a predator. When hungry, it will hunt smaller creatures - possibly including people. -->
   <IsPredator>Diese Kreatur ist ein Raubtier. Wenn es hungrig ist, wird es kleinere Tiere jagen - eventuell auch Menschen.</IsPredator>
+  <!-- EN: This creature is currently in mental state: {0} -->
+  <IsInMentalState>Diese Kreatur befindet sich derzeit in einem psychischen Zustand: {0}</IsInMentalState>
   
   <!-- Factions tab -->
   <!-- EN: Hostile -->
@@ -68,6 +86,8 @@
   <DefeatedLower>besiegt</DefeatedLower>
   <!-- EN: Enemy of {0} -->
   <HostileTo>Feindlich zu {0}</HostileTo>
+  <!-- EN: Enemy of:  -->
+  <EnemyOf>Feind von:</EnemyOf>
   <!-- EN: Current goodwill and relations status with this faction. -->
   <CurrentGoodwillTip>Aktueller Ruf und Beziehungsstatus zu dieser Fraktion.</CurrentGoodwillTip>
   <!-- EN: This faction is permanently hostile. They will raid your settlements and caravans. Relations with them will never improve for any reason. -->
@@ -148,13 +168,101 @@
   <ColonistsLaunched>Mit Raumschiff gestartete Kolonisten</ColonistsLaunched>
 
   <!-- Research tab -->
-  <!-- EN: project tech level -->
-  <ProjectTechLevel>Projekt-Techstufe</ProjectTechLevel>
-  <!-- EN: your tech level -->
-  <YourTechLevel>Deine Techstufe</YourTechLevel>
-  <!-- EN: cost multiplier -->
-  <ResearchCostMultiplier>Kostenmultiplikator</ResearchCostMultiplier>
+  <!-- EN: Research -->
+  <Research>Forschung</Research>
+  <!-- EN: Researched -->
+  <Researched>Erforscht</Researched>
+  <!-- EN: Unresearched -->
+  <Unresearched>Unerforscht</Unresearched>
+  <!-- EN: Finished -->
+  <Finished>Fertig</Finished>
+  <!-- EN: In Progress -->
+  <InProgress>Forschung aktiv</InProgress>
+  <!-- EN: Locked -->
+  <Locked>Gesperrt</Locked>
+  <!-- EN: Research prerequisites -->
+  <ResearchPrerequisites>Benötigt Forschung</ResearchPrerequisites>
+  <!-- EN: Techprints required {0} / {1} -->
+  <ResearchTechprintRequirement>Techprints benötigt {0} / {1}</ResearchTechprintRequirement>
+  <!-- EN: Insufficient techprints applied ({0} / {1}) -->
+  <InsufficientTechprintsApplied>Zu wenig Techprints angewendet ({0} / {1})</InsufficientTechprintsApplied>
+  <!-- EN: Prerequisite(s) not completed -->
+  <PrerequisitesNotCompleted>Voraussetzung(en) nicht erfüllt</PrerequisitesNotCompleted>
+  <!-- EN: Required research bench -->
+  <RequiredResearchBench>Benötigt Labortisch</RequiredResearchBench>
+  <!-- EN: Required research bench facilities -->
+  <RequiredResearchBenchFacilities>Benötigt Laborausstattung</RequiredResearchBenchFacilities>
   <!-- EN: Project base cost {0} becomes {1} for you because of your tech level. -->
   <ResearchCostComparison>Projekt-Basiskosten von {0} ändern sich wegen Deiner Techstufe auf {1}.</ResearchCostComparison>
+  <!-- EN: Techprints are available from these factions via trade and quests: -->
+  <ResearchTechprintsFromFactions>Techprints können von folgenden Fraktionen via Handel und Quests erworben werden:</ResearchTechprintsFromFactions>
+  <!-- EN: Your faction tech level is {0}, but this project's tech level is {1}. Research speed will be multiplied by {2}. -->
+  <TechLevelTooLow>Die Techstufe deiner Fraktion liegt bei {0}, aber die Techstufe dieses Projekts liegt bei {1}. Die Forschungsgeschwindigkeit wird um {2} multipliziert.</TechLevelTooLow>
+
+  <!-- Quests tab -->
+  <!-- EN: Available -->
+  <AvailableQuests>Verfügbar</AvailableQuests>
+  <!-- EN: Active -->
+  <ActiveQuests>Aktiv</ActiveQuests>
+  <!-- EN: Historical -->
+  <HistoricalQuests>Historisch</HistoricalQuests>
+  <!-- EN: no quest selected -->
+  <NoQuestSelected>keine Quest ausgwählt</NoQuestSelected>
+  <!-- EN: Appeared {0} days ago -->
+  <AppearedDaysAgo>Erschien vor {0} Tagen</AppearedDaysAgo>
+  <!-- EN: Appeared on {0} -->
+  <AppearedOn>Erschien am {0}</AppearedOn>
+  <!-- EN: Accepted {0} ago -->
+  <AcceptedAgo>Wurde angenommen vor {0}</AcceptedAgo>
+  <!-- EN: Accepted on {0} -->
+  <AcceptedOn>Wurde angenommen am {0}</AcceptedOn>
+  <!-- EN: Accepted {0} ago by {1} -->
+  <AcceptedAgoBy>Wurde angenommen vor {0} von {1}</AcceptedAgoBy>
+  <!-- EN: Accepted on {0} by {1} -->
+  <AcceptedOnBy>Wurde angenommen am {0} von {1}</AcceptedOnBy>
+  <!-- EN: Expires in {0} -->
+  <QuestExpiresIn>Läuft ab in {0}</QuestExpiresIn>
+  <!-- EN: Expires on {0} -->
+  <QuestExpiresOn>Läuft ab am {0}</QuestExpiresOn>
+  <!-- EN: Shuttle arrives in {0} -->
+  <ShuttleArrivesIn>Shuttle trifft ein in {0}</ShuttleArrivesIn>
+  <!-- EN: Shuttle arrives on {0} -->
+  <ShuttleArrivesOn>Shuttle trifft ein am {0}</ShuttleArrivesOn>
+  <!-- EN: Shuttle departs in {0} -->
+  <ShuttleDepartsIn>Shuttle fliegt ab in {0}</ShuttleDepartsIn>
+  <!-- EN: Shuttle departs on {0} -->
+  <ShuttleDepartsOn>Shuttle fliegt ab am {0}</ShuttleDepartsOn>
+  <!-- EN: Finished {0} ago -->
+  <QuestFinishedAgo>Abgeschlossen vor {0}</QuestFinishedAgo>
+  <!-- EN: Accept quest -->
+  <AcceptQuest>Quest annehmen</AcceptQuest>
+  <!-- EN: Accept with {0_labelShort} -->
+  <AcceptWith>Annehmen mit {0_labelShort}</AcceptWith>
+  <!-- EN: The offer expired. -->
+  <QuestOutcomeInfo_OfferExpired>Das Angebot ist abgelaufen.</QuestOutcomeInfo_OfferExpired>
+  <!-- EN: You completed this quest. -->
+  <QuestOutcomeInfo_UnknownOrSuccess>Du hast diese Quest abgeschlossen.</QuestOutcomeInfo_UnknownOrSuccess>
+  <!-- EN: You failed this quest. -->
+  <QuestOutcomeInfo_Failed>Diese Quest ist fehlgeschlagen.</QuestOutcomeInfo_Failed>
+  <!-- EN: Jump to {0} -->
+  <JumpToTargetCustom>Springe zu {0}</JumpToTargetCustom>
+  <!-- EN: Challenge rating. This is a general rating for how difficult the quest will be relative to your current strength. More challenging quests give greater rewards.\n\n1: Normal\n2: Hard\n3: Extreme\n4: Ultimate -->
+  <QuestChallengeRatingTip>Herausforderungseinstufung. Dies ist eine allgemeine Einstufung, die angibt, wie schwierig die Quest im Verhältnis zu deiner aktuellen Stärke sein wird. Schwierigere Quests sind mit größeren Belohnungen verbunden.\n\n1: Normal\n2: Hart\n3: Extrem\n4: Ultimativ</QuestChallengeRatingTip>
+  <!-- EN: To accept this quest, you need -->
+  <QuestAcceptanceRequirementsDescription>Um diese Quest anzunehmen, benötigst du</QuestAcceptanceRequirementsDescription>
+  <!-- EN: free bedrooms that satisfy the title requirements of -->
+  <QuestBedroomRequirementsUnsatisfied>freie Schlafräume, die die Titelanforderungen von folgender Person zufriedenstellen:</QuestBedroomRequirementsUnsatisfied>
+  <!-- EN: a free bedroom that satisfies the title requirements of -->
+  <QuestBedroomRequirementsUnsatisfiedSingle>ein freien Schlafraum, die die Titelanforderungen von folgender Person zufriedenstellen:</QuestBedroomRequirementsUnsatisfiedSingle>
+  <!-- EN: a colonist with the title of {0}. -->
+  <QuestNoColonistWithTitle>ein Kolonist mit dem {0}-Titel.</QuestNoColonistWithTitle>
+  <!-- EN: Accept {FACTION_royalFavorLabel} -->
+  <AcceptRoyalFavor>{FACTION_royalFavorLabel} annehmen</AcceptRoyalFavor>
+  <!-- EN: Whether you wish to be rewarded with {FACTION_royalFavorLabel} from {FACTION_name}.\n\nIf this is disabled, {FACTION_name} will offer other types of rewards instead.\n\nThis setting only affects newly-arriving quests. -->
+  <AcceptRoyalFavorDesc>Ob du mit {FACTION_royalFavorLabel} von {FACTION_name} belohnt werden möchtest.\n\nWenn dies deaktiviert ist, bietet {FACTION_name} stattdessen andere Arten von Belohnungen an.\n\nDiese Einstellung betrifft nur neu erscheinende Quests.</AcceptRoyalFavorDesc>
+  <!-- EN: You are currently opting in to receive {FACTION_royalFavorLabel}. -->
+  <RoyalFavorOn>Du entscheidest dich derzeit für den Erhalt von {FACTION_royalFavorLabel}.</RoyalFavorOn>
+  <!-- EN: You are currently opting out of receiving {FACTION_royalFavorLabel}. -->
+  <RoyalFavorOff>Du entscheidest dich derzeit gegen den Erhalt von {FACTION_royalFavorLabel}.</RoyalFavorOff>
   
 </LanguageData>

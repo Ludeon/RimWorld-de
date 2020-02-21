@@ -196,10 +196,12 @@
   <IdenticalThingExists>Hier ist bereits ein identischer Gegenstand.</IdenticalThingExists>
   <!-- EN: Identical blueprint already exists here. -->
   <IdenticalBlueprintExists>Dieser Plan besteht bereits.</IdenticalBlueprintExists>
-  <!-- EN: The terrain here cannot support this. -->
-  <TerrainCannotSupport>Dieser Boden ist zu instabil.</TerrainCannotSupport>
-  <!-- EN: {0_label} requires terrain that can support: {1_label} -->
+  <!-- EN: {0_label} cannot be built on this terrain. -->
+  <TerrainCannotSupport>{0_label} kann nicht auf diesem Boden gebaut werden.</TerrainCannotSupport>
+  <!-- EN: {0_label} requires terrain that supports: {1_label} -->
   <TerrainCannotSupport_TerrainAffordance>{0_label} benötigt einen stabilen Boden für {1_label}.</TerrainCannotSupport_TerrainAffordance>
+  <!-- EN: {0_label} (when made of {2_label}) requires terrain that supports: {1_label} -->
+  <TerrainCannotSupport_TerrainAffordanceFromStuff>{0_label} (bestehend aus {2_label}) benötigt einen stabilen Boden für {1_label}.</TerrainCannotSupport_TerrainAffordanceFromStuff>
   <!-- EN: Space already occupied. -->
   <SpaceAlreadyOccupied>Ein Objekt dieser Art befindet sich bereits an dieser Stelle.</SpaceAlreadyOccupied>
   <!-- EN: Space being smoothed. -->
@@ -208,6 +210,12 @@
   <TerrainMustBeRemovable>Kann nur auf Boden angewandt werden, der entfernt werden kann.</TerrainMustBeRemovable>
   <!-- EN: The waterwheel must be on moving water. -->
   <MustBeOnMovingWater>Das Wasserrad muss auf bewegtem Wasser gebaut werden.</MustBeOnMovingWater>
+  <!-- EN: Interaction spot will overlap with the interaction spot of {1_labelShort}. -->
+  <InteractionSpotWillOverlap>Interaktionspunkt wird sich mit dem Interaktionspunkt von {1_labelShort} überschneiden.</InteractionSpotWillOverlap>
+  <!-- EN: Interaction spot overlaps with the interaction spot of {1_labelShort}. -->
+  <InteractionSpotOverlaps>Interaktionspunkt überschneidet sich mit dem Interaktionspunkt von {1_labelShort}.</InteractionSpotOverlaps>
+  <!-- EN: Monument markers can't be placed directly adjacent to any building. -->
+  <MonumentAdjacentToBuilding>Denkmalmarkierungen können nicht direkt neben einem Gebäude platziert werden.</MonumentAdjacentToBuilding>
   
   <!-- Mouse attachments -->
   <!-- EN: Expand {0} or\nCreate new {1} -->
@@ -221,8 +229,12 @@
   <!-- EN: Construction needed -->
   <ConstructionNeeded>Konstruktion benötigt</ConstructionNeeded>
   <!-- EN: None of your {0} have this skill. -->
-  <NoColonistWithConstructionSkillTip>Keiner Deiner {0} hat diese Fähigkeit.</NoColonistWithConstructionSkillTip>
+  <NoColonistWithSkillTip>Keiner deiner {0} hat diese Fähigkeit.</NoColonistWithSkillTip>
+  <!-- EN: {0} needed -->
+  <SkillNeededForConstructing>{0} benötigt</SkillNeededForConstructing>
+  <!-- EN: None of your {0} have all skills required. -->
+  <NoColonistWithAllSkillsForConstructing>Keiner deiner {0} verfügt über alle erforderlichen Fähigkeiten.</NoColonistWithAllSkillsForConstructing>
   <!-- EN: All of your {0} who have this skill are not assigned to {1}. -->
-  <AllColonistsWithConstructionSkillHaveDisaledConstructingTip>Von Deinen {0}, die diese Fähigkeit haben, ist niemand für {1} zugewiesen.</AllColonistsWithConstructionSkillHaveDisaledConstructingTip>
+  <AllColonistsWithSkillHaveDisabledConstructingTip>Von deinen {0}, die diese Fähigkeit haben, ist niemand für {1} zugewiesen.</AllColonistsWithSkillHaveDisabledConstructingTip>
 
 </LanguageData>

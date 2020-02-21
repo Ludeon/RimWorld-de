@@ -10,10 +10,11 @@
   <!-- EN: Some sort of psychic wave has swept over the landscape. Your colonists are okay, but...\n\nIt seems many of the {0} in the area have been driven insane. -->
   <AnimalInsanityMultiple>Eine Art psychische Welle fegt über die Gegend. Die Kolonisten sind okay, aber...\n\nEs scheint so, als ob mehrere {0} durchdrehen.</AnimalInsanityMultiple>
 
-  <!-- EN: Blight -->
-  <LetterLabelCropBlight>Fäulnis</LetterLabelCropBlight>
-  <!-- EN: A colonist has noticed blight on your crops! You should cut or burn the blighted plants before the blight spreads. -->
-  <LetterCropBlight>Ein Kolonist hat Pflanzenfäule entdeckt! Du solltest die befallenen Pflanzen herausschneiden oder verbrennen, bevor die Krankheit weitere Pflanzen befällt.</LetterCropBlight>
+  <!-- EN: Blight: {PLANTDEF_labelPlural} -->
+  <LetterLabelCropBlight>Fäulnis: {PLANTDEF_labelPlural}</LetterLabelCropBlight>
+  <!-- EN: Blight has been discovered on the {PLANTDEF_labelPlural}!
+\nYou should cut or burn the affected plants before the blight spreads. -->
+  <LetterCropBlight>Es wurde eine Fäulnis bei den {PLANTDEF_labelPlural} entdeckt!\n\nDu solltest die befallenen Pflanzen herausschneiden oder verbrennen, bevor die Fäulnis weitere Pflanzen befällt.</LetterCropBlight>
 
   <!-- EN: Miracle -->
   <LetterLabelMiracleHeal>Wunder</LetterLabelMiracleHeal>
@@ -57,8 +58,12 @@
   <!-- EN: That really is a huge explosion. Wow. -->
   <ShortCircuitWasHuge>Diese Explosion war wirklich massiv. Wow.</ShortCircuitWasHuge>
 
-  <!-- EN: A trade ship is passing nearby.\n\nThey are known as {0}. They are a {1}. -->
-  <TraderArrival>Ein Handelsschiff ist in der Nähe eingetroffen.\n\nSie sind unter dem Namen '{0}' bekannt. Sie sind {1}.</TraderArrival>
+  <!-- EN: A trade ship is passing nearby.\n\nThey are known as {0}. They are a {1}.\n\n{2} -->
+  <TraderArrival>Ein Handelsschiff ist in der Nähe eingetroffen.\n\nSie sind unter dem Namen '{0}' bekannt. Sie sind {1}.\n\n{2}</TraderArrival>
+  <!-- EN: They're affiliated with {FACTION_name}. -->
+  <TraderArrivalFromFaction>Sie sind mit der Fraktion '{FACTION_name}' verbündet.</TraderArrivalFromFaction>
+  <!-- EN: They are not affiliated with any faction. -->
+  <TraderArrivalNoFaction>Sie sind mit keiner einzigen Fraktion verbündet.</TraderArrivalNoFaction>
 
   <!-- EN: A {PAWN_title} from {1} is passing by. {PAWN_pronoun} is named {PAWN_nameFull}. -->
   <SingleTravelerPassing>Ein {PAWN_title} der Fraktion '{1}' befindet sich auf der Durchreise. {PAWN_pronoun} heißt {PAWN_nameFull}.</SingleTravelerPassing>
@@ -90,12 +95,16 @@
   <ManhunterPackArrived>Menschenjagende {0} sind im Gebiet angekommen. Sie ziehen in der Region umher, stets auf der Suche nach menschlichem Fleisch.\n\nSie werden keine Türen angreifen, außer sie sehen jemanden dahinter verschwinden. Versteck Dich vor ihnen und Du bist sicher. Auch deaktivierte Geschütztürme werden von ihnen nicht angegriffen, weswegen es ratsam ist, sie auszuschalten.\n\nDie {0} werden die Gegend in ein oder zwei Tagen wieder verlassen. Du kannst Dich vor ihnen verstecken und in Sicherheit ausharren, oder gegen sie kämpfen.</ManhunterPackArrived>
   
   <!-- Crashed ship part-->
-  <!-- EN: The ancient structure has emitted a psychic pulse that has driven nearby animals mad. -->
-  <MessageAnimalInsanityPulse>Die antike Struktur hat einen psychischen Impuls ausgesendet, der Tiere in der Nähe verrückt macht.</MessageAnimalInsanityPulse>
+  <!-- EN: The {SOURCE_label} has emitted a psychic pulse that has driven nearby animals mad. -->
+  <MessageAnimalInsanityPulse>Die {SOURCE_label} hat einen psychischen Impuls ausgesendet, der Tiere in der Nähe verrückt macht.</MessageAnimalInsanityPulse>
   <!-- EN: The crashed ship part has emitted a focused psychic pulse that has driven colonist {0} insane. -->
   <LetterShipPartDroveColonistInsane>Das abgestürzte Schiffsteil hat einen gebündelten psychischen Impuls ausgesendet, der den Kolonisten {0} durchdrehen lässt.</LetterShipPartDroveColonistInsane>
   <!-- EN: Awoke {0} days ago -->
   <AwokeDaysAgo>Erwachte vor {0} Tagen</AwokeDaysAgo>
+  <!-- EN: Activated {0} days ago -->
+  <ActivatedDaysAgo>Aktiviert vor {0} Tagen</ActivatedDaysAgo>
+  <!-- EN: Opened {0} days ago -->
+  <OpenedDaysAgo>Geöffnet vor {0} Tagen</OpenedDaysAgo>
   <!-- EN: Psychic drone level: {0} -->
   <PsychicDroneLevel>Stärke des psychischen Brummens: {0}</PsychicDroneLevel>
   <!-- EN: Drone intensifies -->
@@ -109,35 +118,12 @@
   <!-- EN: {0} has been revealed as an agent of your enemy {1}.\n\nThey are attempting to escape now. -->
   <LetterAgentRevealed>{0} wurde als Agent der gegnerischen Fraktion '{1}' entlarvt.\n\nEr versucht, zu entkommen.</LetterAgentRevealed>
 
-  <!-- Distant psychic drone -->
-  <!-- EN: Psychic drone -->
-  <LetterLabelPsychicDrone>Psych. Brummen</LetterLabelPsychicDrone>
-  <!-- EN: Every colonist of the {0} gender winces in pain!\n\nSome distant engine of hatred is stirring. It is projecting a powerful psychic drone over this entire region, on a frequency that only seems to affect the {0} gender. For a few days, some people's mood will be quite a bit worse.\n\nThe drone level is {1}. -->
-  <LetterIncidentPsychicDrone>Ein starker Schmerz hämmert im Kopf Deiner {0}en Kolonisten!\n\nEine weit entfernte Maschine des Hasses rührt sich. Sie sendet ein starkes psychisches Summen über die gesamte Region, auf einer Frequenz, die scheinbar nur das {0}e Geschlecht erfasst. Die Stimmung einiger Kolonisten wird sich über die nächsten Tage deutlich verschlechtern.\n\nDie Stärke des psychischen Summens ist {1}.</LetterIncidentPsychicDrone>
-
-  <!-- EN: Psychic soothe -->
-  <LetterLabelPsychicSoothe>Psych. Beruhigung</LetterLabelPsychicSoothe>
-  <!-- EN: Every colonist of the {0} gender smiles with contentment!\n\nSome distant engine of happiness is stirring. It is projecting a powerful psychic drone over this entire region, on a frequency that only seems to affect the {0} gender. For a few days, some people's mood will be quite a bit better. -->
-  <LetterIncidentPsychicSoothe>Deine {0}en Kolonisten lächeln zufrieden!\n\nEine weit entfernte Maschine des Glücks rührt sich. Sie sendet ein starkes psychisches Summen über die gesamte Region, auf einer Frequenz, die scheinbar nur das {0}e Geschlecht erfasst. Die Stimmung einiger Kolonisten wird sich über die nächsten Tage deutlich verbessern.</LetterIncidentPsychicSoothe>
-
   <!-- Beavers -->
   <!-- EN: Beavers! -->
   <LetterLabelBeaversArrived>Biber!</LetterLabelBeaversArrived>
   <!-- EN: A group of hungry alphabeavers has just arrived.\n\nTry to eliminate them before they decimate every last source of wood in the region. -->
   <BeaversArrived>Eine Gruppe Alpha-Biber ist aufgetaucht.\n\nVersuche sie zu töten, bevor sie jeden einzelnen Baum in der Region vernichtet haben.</BeaversArrived>
   
-  <!-- Refugee chased -->
-  <!-- EN: Refugee chased at {0} -->
-  <RefugeeChasedTitle>Flüchtling gejagt bei {0}</RefugeeChasedTitle>
-  <!-- EN: {PAWN_titleIndef} named {PAWN_nameDef} calls you from nearby. {PAWN_pronoun} is being chased by {2} from {3}!\n\n{PAWN_pronoun} begs for safety and offers to join your colony. {PAWN_pronoun} tells you {PAWN_pronoun} is {4} years old, but there's no time to collect more information.\n\nBe warned - if you accept, you'll have to fight off the {2} on {PAWN_possessive} tail. Their group is composed of:\n\n{5} -->
-  <RefugeeChasedInitial>{PAWN_titleIndef} namens {PAWN_nameDef} kontaktiert Dich aus der Nähe. {PAWN_pronoun} wird gejagt von: {2} der Fraktion '{3}'!\n\n{PAWN_pronoun} fleht um Hilfe und bietet an, Deiner Kolonie beizutreten. {PAWN_pronoun} erzählt Dir, dass {PAWN_pronoun} {4} Jahre alt ist. Für mehr Informationen bleibt keine Zeit mehr.\n\nAber sei gewarnt - wenn Du annimmst, wirst Du gegen die verfolgenden {2} kämpfen müssen. Die Gruppe besteht aus:\n\n{5}</RefugeeChasedInitial>
-  <!-- EN: Offer safety -->
-  <RefugeeChasedInitial_Accept>Biete Zuflucht</RefugeeChasedInitial_Accept>
-  <!-- EN: Ignore the message -->
-  <RefugeeChasedInitial_Reject>Ignoriere Nachricht</RefugeeChasedInitial_Reject>
-  <!-- EN: {1_labelShort} screams in panic through the tinny speaker before you cut off the transmission. -->
-  <RefugeeChasedRejected>{1_labelShort} schreit panisch durch den blechernen Lautsprecher, bevor Du die Verbindung kappst.</RefugeeChasedRejected>
-
   <!-- Self-tame -->
   <!-- EN: {1_kind} self-tamed -->
   <LetterLabelAnimalSelfTame>{1_kind} wurde zahm</LetterLabelAnimalSelfTame>
@@ -163,9 +149,11 @@
   <!-- Trader caravan -->
   <!-- EN: {1} from {0} -->
   <LetterLabelTraderCaravanArrival>{1} von '{0}'</LetterLabelTraderCaravanArrival>
-  <!-- EN: A caravan from {0} is approaching. They are a {1}.\n\nThey will hang around the colony for a few days before leaving. You can attack them - but this will anger their faction! -->
-  <LetterTraderCaravanArrival>Eine Karawane der Fraktion '{0}' nähert sich. Sie sind {1}.\n\nSie werden ein paar Tage in der Kolonie verweilen, bevor sie weiterziehen. Du kannst sie auch angreifen - allerdings wird das ihre Fraktion verärgern!</LetterTraderCaravanArrival>
-  
+  <!-- EN: A caravan from {0} is approaching. They are a {1}. -->
+  <LetterTraderCaravanArrival>Eine Karawane der Fraktion '{0}' nähert sich. Sie sind {1}.</LetterTraderCaravanArrival>
+  <!-- EN: They will hang around the colony for some time before leaving. You can attack them - but this will anger their faction! -->
+  <LetterCaravanArrivalCommonWarning>Sie werden ein paar Tage in der Kolonie verweilen, bevor sie weiterziehen. Du kannst sie auch angreifen - allerdings wird das ihre Fraktion verärgern!</LetterCaravanArrivalCommonWarning>
+    
   <!-- Ransom demand -->
   <!-- EN: Ransom demand at {0} -->
   <RansomDemandTitle>Lösegeldforderung bei {0}</RansomDemandTitle>
@@ -177,16 +165,16 @@
   <RansomDemand_Reject>Ablehnen</RansomDemand_Reject>
   
   <!-- Journey-related -->
-  <!-- EN: A friendly AI from your past named Charlon Whitestone has sent you a message!\n\nHe reveals that he has a starship hidden on this planet, and sends you its world coordinates.\n\nThe starship is currently in deep hibernation mode. You'll have to start it up when you arrive, then defend it from raiders trying to steal it until the startup sequence completes.\n\nIf you can get the ship off the ground, Charlon will take you off this rimworld, to the stars. -->
-  <JourneyOffer>Eine freundliche KI aus Deiner Vergangenheit namens Charlon Whitestone hat Dir eine Nachricht geschickt!\n\nEr erzählt Dir, dass er ein Raumschiff auf diesem Planeten versteckt hat und gibt Dir die Koordinaten.\n\nDas Raumschiff ist aktuell im Tiefschlafmodus. Wenn Du ankommst, musst Du es erst hochfahren und es dann gegen angreifende Räuber verteidigen, die es stehlen wollen, bis die Startsequenz abgeschlossen ist.\n\nWenn Du zu diesem Schiff reist, wird Charlon Dich aus dieser Randwelt herausfliegen.</JourneyOffer>
   <!-- EN: Ship found -->
   <EscapeShipFoundLabel>Raumschiff gefunden</EscapeShipFoundLabel>
-  <!-- EN: You've reached the coordinates sent by Charlon Whitestone and discovered the hidden starship.\n\nThe ship's reactor is still in deep hibernation mode, so it can't fly yet. You can start it up by interacting with the computer core.\n\nCharlon Whitestone warns you that the startup process will take about 15 days, and the energy signature will be detectable from a long distance away. This sort of energy signature indicates interstellar flight capability, and will attract gangs of desperate raiders and swarms of deadly mechanoids.\n\nYou will be assaulted with an intensity you've never seen. Make sure your defenses are prepared first. -->
-  <EscapeShipFound>Du hast die Koordinaten erreicht, die Charlon Whitestone Dir geschickt hat und hast das versteckte Raumschiff entdeckt.\n\nDer Reaktor des Schiffes ist noch immer im Tiefschlafmodus, sodass es noch nicht starten kann. Du kannst die Systeme hochfahren, indem Du mit dem Computerkern interagierst.\n\nCharlon Whitestone warnt Dich, dass die Startup-Prozedur 15 Tage dauern kann und die Energiesignatur über weite Strecken messbar sein wird. Diese Art von Energiesignatur deutet auf interstellare Raumflugfähigkeit hin und wird ganze Gruppen von verzweifelten Räubern und Mechanoiden anlocken.\n\nDu wirst mit einer Stärke angegriffen, die Du bisher noch nicht gesehen hast. Stelle sicher, dass Deine Verteidigung steht, bevor Du die Systeme hochfährst.</EscapeShipFound>
+  <!-- EN: You've reached the coordinates sent by <Name>Charlon Whitestone</Name> and discovered the hidden starship.\n\nThe ship's reactor is still in deep hibernation mode, so it can't fly yet. You can start it up by interacting with the computer core.\n\n<Name>Charlon Whitestone</Name> warns you that the startup process will take about 15 days, and the energy signature will be detectable from a long distance away. This sort of energy signature indicates interstellar flight capability, and will attract gangs of desperate raiders and swarms of deadly mechanoids.\n\nYou will be assaulted with an intensity you've never seen. Make sure your defenses are prepared first. -->
+  <EscapeShipFound>Du hast die Koordinaten erreicht, die &lt;Name>Charlon Whitestone&lt;/Name> Dir geschickt hat und hast das versteckte Raumschiff entdeckt.\n\nDer Reaktor des Schiffes ist noch immer im Tiefschlafmodus, sodass es noch nicht starten kann. Du kannst die Systeme hochfahren, indem Du mit dem Computerkern interagierst.\n\n&lt;Name>Charlon Whitestone&lt;/Name> warnt Dich, dass die Startup-Prozedur 15 Tage dauern kann und die Energiesignatur über weite Strecken messbar sein wird. Diese Art von Energiesignatur deutet auf interstellare Raumflugfähigkeit hin und wird ganze Gruppen von verzweifelten Räubern und Mechanoiden anlocken.\n\nDu wirst mit einer Stärke angegriffen, die Du bisher noch nicht gesehen hast. Stelle sicher, dass Deine Verteidigung steht, bevor Du die Systeme hochfährst.</EscapeShipFound>
+  <!-- EN: You've reached the coordinates sent by <Name>Charlon Whitestone</Name> and discovered the hidden starship.\n\nThe ship's reactor is still in deep hibernation mode, so it can't fly yet. You can start it up by interacting with the computer core.\n\n<Name>Charlon Whitestone</Name> warns you that the startup process will take about 15 days. -->
+  <EscapeShipFoundPeaceful>Du hast die Koordinaten erreicht, die &lt;Name>Charlon Whitestone&lt;/Name> Dir geschickt hat und hast das versteckte Raumschiff entdeckt.\n\nDer Reaktor des Schiffes ist noch immer im Tiefschlafmodus, sodass es noch nicht starten kann. Du kannst die Systeme hochfahren, indem Du mit dem Computerkern interagierst.\n\n&lt;Name>Charlon Whitestone&lt;/Name> warnt Dich, dass die Startup-Prozedur 15 Tage dauern kann.</EscapeShipFoundPeaceful>
   <!-- EN: Ship destroyed -->
   <EscapeShipLostLabel>Raumschiff zerstört</EscapeShipLostLabel>
-  <!-- EN: Charlon Whitestone sends you a message.\n\nHe sees that you've lost control of the landed ship. To stop it falling into the wrong hands, he's been forced to trigger the ship's self-destruct mechanism. The ship is now a crater.\n\nYou'll need to find another way off this planet. -->
-  <EscapeShipLost>Charlon Whitestone schickt Dir eine Nachricht.\n\nEr sieht, dass Du die Kontrolle über das gelandete Schiff verloren hast. Um zu verhindern, dass es in die falschen Hände gelangt, ist er gezwungen den Selbstzerstörungsmechanismus des Schiffes zu aktivieren. Wo vor kurzem noch das Schiff war, ist jetzt nur noch ein riesiger Krater.\n\nDu musst einen anderen Weg finden, um diesen Planeten verlassen zu können.</EscapeShipLost>
+  <!-- EN: <Name>Charlon Whitestone</Name> sends you a message.\n\nHe sees that you've lost control of the landed ship. To stop it falling into the wrong hands, he's been forced to trigger the ship's self-destruct mechanism. The ship is now a crater.\n\nYou'll need to find another way off this planet. -->
+  <EscapeShipLost>&lt;Name>Charlon Whitestone&lt;/Name> schickt Dir eine Nachricht.\n\nEr sieht, dass Du die Kontrolle über das gelandete Schiff verloren hast. Um zu verhindern, dass es in die falschen Hände gelangt, ist er gezwungen den Selbstzerstörungsmechanismus des Schiffes zu aktivieren. Wo vor kurzem noch das Schiff war, ist jetzt nur noch ein riesiger Krater.\n\nDu musst einen anderen Weg finden, um diesen Planeten verlassen zu können.</EscapeShipLost>
 
   <!-- Caravan meeting -->
   <!-- EN: Caravan meeting by {0} -->
@@ -201,14 +189,16 @@
   <CaravanMeeting_MoveOn>Weiterziehen</CaravanMeeting_MoveOn>
   <!-- EN: no caravan members capable of trading -->
   <CaravanMeeting_TradeIncapable>Niemand aus der Karawane kann handeln</CaravanMeeting_TradeIncapable>
+  <!-- EN: need a trader with the title of {0} from {1_name} -->
+  <CaravanMeeting_NoPermit>brauchen einen Händler mit dem Titel {0} von {1_Name}</CaravanMeeting_NoPermit>
   
   <!-- Caravan request -->
   <!-- EN: Caravan request -->
   <LetterLabelCaravanRequest>Angefragte Karawane</LetterLabelCaravanRequest>
   <!-- EN: A nearby settlement, {0}, contacts you with a special trade request. They would like to purchase:\n\n  {1} (worth {2})\n\nIn return, they offer:\n\n  {3} (worth {4})\n\nThis request expires after: {5}\n\nIf you want to make the trade, send a caravan with the requested supplies. The estimated travel time is {6}. You can review this offer by selecting {0} on the world map. -->
   <LetterCaravanRequest>Eine nahe Siedlung, {0}, kontaktiert Dich mit einer speziellen Handelsanfrage. Sie brauchen dringend:\n\n  {1} (Wert {2})\n\nSie bieten Folgendes als Gegenleistung an:\n\n  {3} (Wert {4})\n\nDiese Anfrage ist gültig für: {5}\n\nWenn Du das Angebot annehmen willst, sende eine Karawane mit den geforderten Vorräten. Die geschätzte Reisezeit liegt bei {6}. Du kannst dieses Angebot noch einmal einsehen, indem Du {0} auf der Weltkarte auswählst.</LetterCaravanRequest>
-  <!-- EN: Requesting: {0} ({3}), Reward: {1} ({4}) ({2} left) -->
-  <CaravanRequestInfo>Benötigt: {0} ({3}), Belohnung: {1} ({4}) ({2} übrig)</CaravanRequestInfo>
+  <!-- EN: Requesting: {0} ({2}) ({1} left) -->
+  <CaravanRequestInfo>Benötigt: {0} ({2}) ({1} übrig)</CaravanRequestInfo>
   <!-- EN: normal quality or better -->
   <NormalQualityOrBetter>normale oder bessere Qualität</NormalQualityOrBetter>
   <!-- EN: not tainted -->
@@ -226,12 +216,30 @@
 
   <!-- Site no longer hostile -->
   <!-- EN: Quest no longer available -->
-  <LetterLabelSiteNoLongerHostile>Aufgabe nicht mehr verfügbar</LetterLabelSiteNoLongerHostile>
+  <LetterLabelSiteNoLongerHostile>Quest nicht mehr verfügbar</LetterLabelSiteNoLongerHostile>
   <!-- EN: Quests no longer available -->
-  <LetterLabelSiteNoLongerHostileMulti>Aufgaben nicht mehr verfügbar</LetterLabelSiteNoLongerHostileMulti>
+  <LetterLabelSiteNoLongerHostileMulti>Quests nicht mehr verfügbar</LetterLabelSiteNoLongerHostileMulti>
   <!-- EN: Because you are no longer hostile with {0}, the {1} site is no longer available. -->
   <LetterSiteNoLongerHostile>Da {0} nicht mehr Deine Feinde sind, ist {1} nicht mehr verfügbar.</LetterSiteNoLongerHostile>
   <!-- EN: Because you are no longer hostile with {0}, the following sites are no longer available -->
   <LetterSiteNoLongerHostileMulti>Da {0} nicht mehr Deine Feinde sind, sind die folgenden Aufgaben nicht mehr verfügbar</LetterSiteNoLongerHostileMulti>
+
+  <!-- Quest asker faction hostile -->
+  <!-- EN: Quest failed -->
+  <LetterLabelQuestAskerFactionHostile>Quest fehlgeschlagen</LetterLabelQuestAskerFactionHostile>
+  <!-- EN: The quest is now incompletable because {FACTION_name} is hostile. -->
+  <LetterQuestAskerFactionHostile>Die Quest kann nicht mehr abgeschlossen werden, weil die Fraktion '{FACTION_name}' feindlich gesinnt ist.</LetterQuestAskerFactionHostile>
+
+  <!-- Quest asker captured -->
+  <!-- EN: Quest failed -->
+  <LetterLabelQuestAskerCaptured>Quest fehlgeschlagen</LetterLabelQuestAskerCaptured>
+  <!-- EN: The quest is now incompletable because {SUBJECT_definite} has been captured. -->
+  <LetterQuestAskerCaptured>Die Quest kann nicht mehr abgeschlossen werden, weil {SUBJECT_definite} gefangen genommen wurde.</LetterQuestAskerCaptured>
+
+  <!-- Quest asker died -->
+  <!-- EN: Quest failed -->
+  <LetterLabelQuestAskerDied>Quest fehlgeschlagen</LetterLabelQuestAskerDied>
+  <!-- EN: The quest is now incompletable because {SUBJECT_definite} has died. -->
+  <LetterQuestAskerDied>Die Quest kann nicht mehr abgeschlossen werden, weil {SUBJECT_definite} gestorben ist.</LetterQuestAskerDied>
 
 </LanguageData>

@@ -19,8 +19,8 @@
   <GameUpdatedToNewVersionSavesCompatible>Spielstände der vorhergehenden Version sollten kompatibel sein, aber einige Mods können eventuell nicht mehr funktionieren.</GameUpdatedToNewVersionSavesCompatible>
   <!-- EN: Since this is a DRM-free copy, you can install the game twice in two different folders, to be able to play both old and new versions. -->
   <GameUpdatedToNewVersionNonSteam>Da dieses die DRM-freie Version ist, kannst Du das Spiel in zwei verschiedenen Ordnern installieren, und so die alte und neue Version spielen.</GameUpdatedToNewVersionNonSteam>
-  <!-- EN: If you wish to continue with the old version, you can opt in using Steam's "Betas" feature.\n\n  1. In the Steam library, right-click RimWorld.\n  2. Click Properties.\n  3. Click the Betas tab.\n  4. Select the version you want from the drop-down menu.\n\nOld versions will be likely removed from this list eventually - we just didn't want to cut off games in progress.\n\nNote that if mod authors update their mods for a new game version, they'll probably stop working on an old version. You may want to turn off automatic updates to prevent this. -->
-  <GameUpdatedToNewVersionSteam>Wenn Du auf der alten Version weiterspielen möchtest, kannst Du dies mit den 'Betas'-Feature von Steam machen.\n\n  1. Schau in Deiner Steam-Bibliothek und klicke mit der rechten Maustaste auf 'RimWorld'.\n  2. Klicke auf Eigenschaften.\n  3. Klicke auf den Reiter 'Betas'.\n  4. Wähle die Version, die Du möchtest.\n\nAlte Versionen werden letztendlich gelöscht - wir wollen Dir nur ermöglichen ein laufendes Spiel zu Ende zu spielen.\n\nBeachte: Wenn Mod-Autoren ihre Mods auf die neue Version aktualisieren, werden sie wahrscheinlich mit einer alten Version nicht mehr funktionieren. Wenn Du mit Mod spielen willst, solltest die automatische Aktualisierung ausschalten.</GameUpdatedToNewVersionSteam>
+  <!-- EN: If you wish to continue with the old version, you can opt in using Steam's "Betas" feature.\n\n  1. In the Steam library, right-click RimWorld.\n  2. Click Properties.\n  3. Click the Betas tab.\n  4. Select the version you want from the drop-down menu. -->
+  <GameUpdatedToNewVersionSteam>Wenn Du auf der alten Version weiterspielen möchtest, kannst Du dies mit den 'Betas'-Feature von Steam machen.\n\n  1. Schau in Deiner Steam-Bibliothek und klicke mit der rechten Maustaste auf 'RimWorld'.\n  2. Klicke auf Eigenschaften.\n  3. Klicke auf den Reiter 'Betas'.\n  4. Wähle die Version, die Du möchtest.</GameUpdatedToNewVersionSteam>
   
   <!-- Recovered from errors caused by mods -->
   <!-- EN: Recovered from incompatible or corrupted mods errors -->
@@ -117,6 +117,14 @@
   <ChangeLoadedMods>Lade Mod-Liste \nvom Spielstand</ChangeLoadedMods>
   <!-- EN: Some mods are unavailable, and need to be installed -->
   <MissingMods>Einige Mods sind nicht verfügbar und müssen installiert werden</MissingMods>
+  <!-- EN: Official content -->
+  <OfficialContent>Offizieller Inhalt</OfficialContent>
+  <!-- EN: Active -->
+  <ContentActive>Aktiv</ContentActive>
+  <!-- EN: Installed, but not active -->
+  <ContentInstalledButNotActive>Installiert, aber nicht aktiv</ContentInstalledButNotActive>
+  <!-- EN: Not installed -->
+  <ContentNotInstalled>Nicht installiert</ContentNotInstalled>
   
   <!-- Player faction naming -->
   <!-- EN: Since it looks like you'll be here for a while, {0} thinks that you should give your faction a name. What should your faction be called? -->
@@ -179,28 +187,6 @@
   <!-- Confirm permanently disable dev mode -->
   <!-- EN: Do you really want to permanently disable development mode on this computer?\n\nThis option is for people who want a pure play experience without the temptation to use development tools to gain advantage in normal play.\n\nDevelopment mode can be re-enabled, but doing so requires manually editing configuration files. You'll need to search the Internet to find out how. -->
   <ConfirmPermanentlyDisableDevMode>Willst Du den Entwicklungsmodus auf diesem Computer wirklich permanent deaktivieren?\n\nDiese Option ist für Leute, die das pure Spielvergnügen haben wollen, ohne die Versuchungen der Entwiklungswerkzeuge sich selber Vorteile zu verschaffen.\n\nDer Entwicklungsmodus kann reaktiviert werden, das muss aber durch eine manuelle Änderung im Konfigurationsfile passieren. Du musst im Internet nachforschen, wie man das macht.</ConfirmPermanentlyDisableDevMode>
-
-  <!-- Research -->
-  <!-- EN: Research -->
-  <Research>Forschung</Research>
-  <!-- EN: Researched -->
-  <Researched>Erforscht</Researched>
-  <!-- EN: Unresearched -->
-  <Unresearched>Unerforscht</Unresearched>
-  <!-- EN: Finished -->
-  <Finished>Fertig</Finished>
-  <!-- EN: In Progress -->
-  <InProgress>Forschung aktiv</InProgress>
-  <!-- EN: Locked -->
-  <Locked>Gesperrt</Locked>
-  <!-- EN: Until you build a RESEARCH BENCH, your colonists will not actually be able to do research.\n\nHowever, you can still look at research projects now. -->
-  <ResearchMenuWithoutBench>Solange Du keinen LABORTISCH gebaut hast, werden Deine Kolonisten nicht in der Lage sein, etwas zu erforschen.\n\nTrotzdem kannst Du Dir die Möglichkeiten für ein Projekt schon einmal ansehen.</ResearchMenuWithoutBench>
-  <!-- EN: Research prerequisites -->
-  <ResearchPrerequisites>Benötigt Forschung</ResearchPrerequisites>
-  <!-- EN: Required research bench -->
-  <RequiredResearchBench>Benötigt Labortisch</RequiredResearchBench>
-  <!-- EN: Required research bench facilities -->
-  <RequiredResearchBenchFacilities>Benötigt Laborausstattung</RequiredResearchBenchFacilities>
   
   <!-- Advanced game start options -->
   <!-- EN: Warning: You will be landing in a frozen environment. It may be hard or nearly impossible to survive. If you are not intending to face an extreme challenge, choose a different site or season. -->
@@ -312,14 +298,16 @@
   <MeleeWarmupTime>Nahkampfvorbereitungszeit</MeleeWarmupTime>
   <!-- EN: Cooldown -->
   <CooldownTime>Abklingzeit</CooldownTime>
+  <!-- EN: Disarmed -->
+  <DisarmedTime>Entschärft</DisarmedTime>
   <!-- EN: Fire rate -->
   <BurstShotFireRate>Schussfrequenz</BurstShotFireRate>
   <!-- EN: Range -->
   <Range>Reichweite</Range>
   <!-- EN: Stopping power -->
   <StoppingPower>Mannstoppwirkung</StoppingPower>
-  <!-- EN: Hits from this weapon will stagger targets, slowing their movement for several seconds. Targets with a body size larger than the stopping power will be unaffected. -->
-  <StoppingPowerExplanation>Treffer von dieser Waffe werden das Ziel straucheln lassen, wodurch die Bewegungsgeschwindigkeit für einige Sekunden reduziert ist. Ziele, bei denen die Körpergröße größer als die Mannstoppwirkung ist, werden nicht beeinflusst.</StoppingPowerExplanation>
+  <!-- EN: Hits from this weapon will stagger targets, slowing their movement for several seconds.\n\nTargets with a body size larger than the stopping power will be unaffected. -->
+  <StoppingPowerExplanation>Treffer von dieser Waffe werden das Ziel straucheln lassen, wodurch die Bewegungsgeschwindigkeit für einige Sekunden reduziert ist.\n\nZiele, bei denen die Körpergröße größer als die Mannstoppwirkung ist, werden nicht beeinflusst.</StoppingPowerExplanation>
   <!-- EN: Direct hit chance -->
   <DirectHitChance>Chance auf einen direkten Treffer</DirectHitChance>
   <!-- EN: Miss radius -->
@@ -338,8 +326,8 @@
   <MinGrowthTemperature>Min. Wachstumstemperatur</MinGrowthTemperature>
   <!-- EN: Max growth temperature -->
   <MaxGrowthTemperature>Max. Wachstumstemperatur</MaxGrowthTemperature>
-  <!-- EN: Plants only grow for part of the day, and only when lit. This statistic measures the time the plant needs to spend actually growing to reach full size. The actual real growing time will generally be about twice as long. Low temperatures also slow plant growth. -->
-  <GrowingTimeDesc>Pflanzen wachsen nur zu einem bestimmten Teil des Tages und nur, wenn es hell ist. Diese Statistik misst die Zeit des Wachstums, die die Pflanze benötigt, um voll ausgewachsen zu sein. Die tatsächliche Wachstumszeit wird normalerweise ca. doppelt so lange sein. Niedrige Temperaturen sorgen auch für ein verlangsamtes Wachstum.</GrowingTimeDesc>
+  <!-- EN: Plants only grow for part of the day, and only when lit.\n\nThis statistic measures the time the plant needs to spend actually growing to reach full size.\nThe actual real growing time will generally be about twice as long.\nLow temperatures also slow plant growth. -->
+  <GrowingTimeDesc>Pflanzen wachsen nur zu einem bestimmten Teil des Tages und nur, wenn es hell ist.\n\nDiese Statistik misst die Zeit des Wachstums, die die Pflanze benötigt, um voll ausgewachsen zu sein.\nDie tatsächliche Wachstumszeit wird normalerweise ca. doppelt so lange sein.\nNiedrige Temperaturen sorgen auch für ein verlangsamtes Wachstum.</GrowingTimeDesc>
   <!-- EN: days -->
   <Days>Tage</Days>
   <!-- EN: Minimum growing skill to sow -->
@@ -366,6 +354,8 @@
   <MinFoodQuality>Min. Essensqualität</MinFoodQuality>
   <!-- EN: Diet -->
   <Diet>Nahrung</Diet>
+  <!-- EN: Nutrition need per day -->
+  <NutritationEatenPerDay>Nährstoffbedarf pro Tag</NutritationEatenPerDay>
   <!-- EN: Leather type -->
   <LeatherType>Lederart</LeatherType>
   <!-- EN: Body size -->
@@ -376,12 +366,14 @@
   <MarketValue>Grundpreis</MarketValue>
   <!-- EN: Covers -->
   <Covers>Verdeckt</Covers>
+  <!-- EN: Created at -->
+  <CreatedAt>Erstellt bei</CreatedAt>
   <!-- EN: Layer -->
   <Layer>Ebene</Layer>
   <!-- EN: Cover effectiveness -->
   <CoverEffectiveness>Effektivität der Deckung</CoverEffectiveness>
-  <!-- EN: How effective this is when used as cover in a gunfight. Higher percentages will block more shots. -->
-  <CoverEffectivenessExplanation>Wie effektiv dieses Objekt in einem Kampf als Deckung benutzt werden kann. Eine höhere Prozentzahl fängt mehr Schüsse ab.</CoverEffectivenessExplanation>
+  <!-- EN: How effective this is when used as cover in a gunfight.\n\nHigher percentages will block more shots. -->
+  <CoverEffectivenessExplanation>Wie effektiv dieses Objekt in einem Kampf als Deckung benutzt werden kann.\n\nEine höhere Prozentzahl fängt mehr Schüsse ab.</CoverEffectivenessExplanation>
   <!-- EN: Experience gain factor -->
   <MedicineXpGainFactor>Erfahrungseinfluss</MedicineXpGainFactor>
   <!-- EN: Mood change -->
@@ -396,8 +388,8 @@
   <TamenessWillNotDecay>Die Zähmung wird nicht abgebaut.</TamenessWillNotDecay>
   <!-- EN: Animal filth rate -->
   <AnimalFilthRate>Tierverschmutzungsrate</AnimalFilthRate>
-  <!-- EN: Animals produce filth when moving around on constructed floors. This is the average amount of such filth produced per {0} cells walked by this creature.\n\nLarger or less pet-like animals produce more filth. -->
-  <AnimalFilthRateExplanation>Tiere erzeugen Schmutz, wenn sie über konstruierte Böden laufen. Dieses gibt die durchschnittliche Anzahl an Dreck pro {0} Zellen an, über die die Kreatur läuft.\n\nGrößere und weniger Haustier-ähnliche Tiere verursachen mehr Schmutz.</AnimalFilthRateExplanation>
+  <!-- EN: Animals produce filth when moving around on constructed floors.\n\nThis is the average amount of such filth produced per {0} cells walked by this creature.\n\nLarger or less pet-like animals produce more filth. -->
+  <AnimalFilthRateExplanation>Tiere erzeugen Schmutz, wenn sie über konstruierte Böden laufen.\n\nDieses gibt die durchschnittliche Anzahl an Dreck pro {0} Zellen an, über die die Kreatur läuft.\n\nGrößere und weniger Haustier-ähnliche Tiere verursachen mehr Schmutz.</AnimalFilthRateExplanation>
   <!-- EN: Time -->
   <TimeRecordsCategory>Zeit</TimeRecordsCategory>
   <!-- EN: Misc -->
@@ -412,22 +404,24 @@
   <Skill>Fähigkeit</Skill>
   <!-- EN: Success rate multiplier -->
   <SurgerySuccessChanceFactor>Erfolgsmultiplikator</SurgerySuccessChanceFactor>
+  <!-- EN: Death chance on fail -->
+  <SurgeryDeathOnFailChance>Chance zu Sterben bei Misserfolg</SurgeryDeathOnFailChance>
   <!-- EN: Work speed governed by -->
   <WorkSpeedStat>Arbeitsgeschw. beeinflusst durch</WorkSpeedStat>
   <!-- EN: Output quantity governed by -->
   <EfficiencyStat>Produktionsmenge beeinflusst durch</EfficiencyStat>
-  <!-- EN: Construction skill required -->
-  <ConstructionSkillRequired>Konstruktionsfähigkeit benötigt</ConstructionSkillRequired>
-  <!-- EN: Requires this level of Construction in order to build. -->
-  <ConstructionSkillRequiredExplanation>Benötigt diese Konstruktionsfähigkeit, damit es erstellt werden kann.</ConstructionSkillRequiredExplanation>
+  <!-- EN: {0} skill required -->
+  <SkillRequiredToBuild>Fähigkeit '{0}' benötigt</SkillRequiredToBuild>
+  <!-- EN: Requires this level of {0} in order to build. -->
+  <SkillRequiredToBuildExplanation>Benötigt diese Stufe der Fähigkeit '{0}', damit es gebaut werden kann.</SkillRequiredToBuildExplanation>
   <!-- EN: Nuzzle interval -->
   <NuzzleInterval>Beschnüffel-Intervall</NuzzleInterval>
-  <!-- EN: How often an animal will nuzzle friendly colonists, on average.\n\nNuzzling is a behavior shared by many animal species, where the animal presses its nose or muzzle against a friend as a sign of affection. Most humans find this cute and it will leave them in a good mood for a period of time. -->
-  <NuzzleIntervalExplanation>Der Durchschnitt, wie häufig ein Tier freundliche Kolonisten beschnüffelt.\n\nBeschnüffeln ist ein Verhalten vieler Tierarten, wobei das Tier seine Nase oder Schnauze an einem Freund als Zeichen der Zuneigung reibt. Die meisten Menschen finden das süß und es wird sie eine Zeit lang in gute Laune versetzen.</NuzzleIntervalExplanation>
+  <!-- EN: How often an animal will nuzzle friendly colonists, on average.\n\nNuzzling is a behavior shared by many animal species, where the animal presses its nose or muzzle against a friend as a sign of affection.\nMost humans find this cute and it will leave them in a good mood for a period of time. -->
+  <NuzzleIntervalExplanation>Der Durchschnitt, wie häufig ein Tier freundliche Kolonisten beschnüffelt.\n\nBeschnüffeln ist ein Verhalten vieler Tierarten, wobei das Tier seine Nase oder Schnauze an einem Freund als Zeichen der Zuneigung reibt.\nDie meisten Menschen finden das süß und es wird sie eine Zeit lang in gute Laune versetzen.</NuzzleIntervalExplanation>
   <!-- EN: Revenge chance on harm -->
   <HarmedRevengeChance>Wahrsch. der Rache bei Verletzung</HarmedRevengeChance>
-  <!-- EN: The chance this creature seeks revenge upon being harmed by an attacker at rifle range.\n\nThis chance increases if the attacker is closer. If attacked at very close range, the chance is three times greater.\n\nThis chance is applied each time damage is taken, so slower-firing, higher-damage weapons are less likely to trigger it.\n\nTo minimize the chance of a creature seeking revenge, attack it from rifle range with a slow-firing weapon. -->
-  <HarmedRevengeChanceExplanation>Die Wahrscheinlichkeit, dass diese Kreatur sich rächen wird, wenn sie von einem Angreifer in Gewehrreichweite verletzt wird.\n\nDiese Chance ist noch größer, je näher der Angreifer ist. Wenn es im Nahkampf angegriffen wird, ist die Wahrscheinlichkeit dreimal höher.\n\nDiese Wahrscheinlichkeit wird jedes Mal überprüft, wenn Schaden genommen wird, daher werden langsam schießende Waffen mit einem größeren Schaden das seltener auslösen.\n\nUm die Chance auf Rache zu minimieren, ist es ratsam, eine Kreatur aus sicherer Entfernung mit einer langsam schießenden Waffe anzugreifen.</HarmedRevengeChanceExplanation>
+  <!-- EN: The chance this creature seeks revenge upon being harmed by an attacker at rifle range.\n\nThis chance increases if the attacker is closer. If attacked at very close range, the chance is three times greater.\nThis chance is applied each time damage is taken, so slower-firing, higher-damage weapons are less likely to trigger it.\nTo minimize the chance of a creature seeking revenge, attack it from rifle range with a slow-firing weapon. -->
+  <HarmedRevengeChanceExplanation>Die Wahrscheinlichkeit, dass diese Kreatur sich rächen wird, wenn sie von einem Angreifer in Gewehrreichweite verletzt wird.\n\nDiese Chance ist noch größer, je näher der Angreifer ist. Wenn es im Nahkampf angegriffen wird, ist die Wahrscheinlichkeit dreimal höher.\nDiese Wahrscheinlichkeit wird jedes Mal überprüft, wenn Schaden genommen wird, daher werden langsam schießende Waffen mit einem größeren Schaden das seltener auslösen.\nUm die Chance auf Rache zu minimieren, ist es ratsam, eine Kreatur aus sicherer Entfernung mit einer langsam schießenden Waffe anzugreifen.</HarmedRevengeChanceExplanation>
   <!-- EN: Revenge chance on tame fail -->
   <TameFailedRevengeChance>Wahrsch. der Rache bei fehlgeschlagenem Zähmversuch</TameFailedRevengeChance>
   <!-- EN: Terrain requirement -->
@@ -446,7 +440,21 @@
   <ShotsBeforeRearmExplanation>Wie viele Schüsse dieser Geschützturm abfeuern kann, bevor er wiederbewaffnet werden muss.</ShotsBeforeRearmExplanation>
   <!-- EN: Power consumption -->
   <PowerConsumption>Stromverbrauch</PowerConsumption>
-
+  <!-- EN: Target -->
+  <Target>Ziel</Target>
+  <!-- EN: Human -->
+  <TargetHuman>Mensch</TargetHuman>
+  <!-- EN: Animal -->
+  <TargetAnimal>Tier</TargetAnimal>
+  <!-- EN: Self -->
+  <TargetSelf>Selbst</TargetSelf>
+  <!-- EN: Ground -->
+  <TargetGround>Boden</TargetGround>
+  <!-- EN: Click to learn more. -->
+  <ClickToLearnMore>Klicke hier, um mehr zu erfahren.</ClickToLearnMore>
+  <!-- EN: Click to view factions. -->
+  <ClickToViewFactions>Klicke hier, um die Fraktionen anzuzeigen.</ClickToViewFactions>
+  
   <!-- Trade -->
   <!-- EN: Positive numbers buy.\nNegative numbers sell. -->
   <PositiveBuysNegativeSells>Positive Zahl einkaufen.\nNegative Zahl verkaufen.</PositiveBuysNegativeSells>
@@ -480,6 +488,8 @@
   <TraderWillNotTrade>Der Händler kauft diese Ware nicht.</TraderWillNotTrade>
   <!-- EN: Negotiator -->
   <Negotiator>Unterhändler</Negotiator>
+  <!-- EN: Negotiator: {0} (+{1}) -->
+  <NegotiatorTradeDialogInfo>Unterhändler: {0} (+{1})</NegotiatorTradeDialogInfo>
   <!-- EN: Your negotiator {1_labelShort} cannot talk properly because of poor health. -->
   <NegotiatorTalkingImpaired>Dein Unterhändler {1_labelShort} kann aufgrund seiner niedrigen Gesundheit nicht richtig sprechen.</NegotiatorTalkingImpaired>
   <!-- EN: Your negotiator {1_labelShort} cannot hear properly because of poor health. -->
@@ -518,6 +528,12 @@
   <!-- Sellable items -->
   <!-- EN: Things this trader will buy -->
   <SellableItemsTitle>Gegenstände, die dieser Händler kaufen würde</SellableItemsTitle>
+  <!-- EN: Never visited - stock unknown -->
+  <TraderNotVisitedYet>Nie besucht - Bestand unbekannt</TraderNotVisitedYet>
+  <!-- EN: Restocked since your last visit -->
+  <TraderRestockedSinceLastVisit>Seit deinem letzten Besuch aufgefüllt</TraderRestockedSinceLastVisit>
+  <!-- EN: Next restock: {0} days -->
+  <NextTraderRestock>Nächste Auffüllung in {0} Tagen</NextTraderRestock>
   <!-- EN: Creatures -->
   <PawnsTabShort>Kreaturen</PawnsTabShort>
   
@@ -556,8 +572,8 @@
   <DaysWorthOfFoodInfoRot>verdirbt in {0}</DaysWorthOfFoodInfoRot>
   <!-- EN: Unlimited -->
   <InfiniteDaysWorthOfFoodInfo>Unbegrenzt</InfiniteDaysWorthOfFoodInfo>
-  <!-- EN: The approximate number of days before at least one person or animal will be out of food. Different species have different diets, so one may run out of food before others. This value is calculated more accurately after the route is chosen.\n\nAffected by:\n  - Carried food type and amount\n  - Caravan members and their diets\n  - Foraging rate\n  - Whether animals can graze\n  - Time until food rots\n  - Hot weather rots food faster -->
-  <DaysWorthOfFoodTooltip>Eine geschätzte Anzahl an Tagen, bevor mindestens einem Tier oder einer Person die Nahrung ausgeht.\n\nUnterschiedliche Arten haben eine unterschiedliche Diät, weswegen es vorkommen kann, dass einer Art die Nahrung früher ausgeht. Dieser Wert wird genauer berechnet, wenn eine Route gewählt wurde.</DaysWorthOfFoodTooltip>
+  <!-- EN: The approximate number of days before at least one person or animal will be out of food. Different species have different diets, so one may run out of food before others. This value is calculated more accurately after the route is chosen.\n\nAffected by:\n  - Current pawn inventory\n  - Carried food type and amount\n  - Caravan members and their diets\n  - Foraging rate\n  - Whether animals can graze\n  - Time until food rots\n  - Hot weather rots food faster -->
+  <DaysWorthOfFoodTooltip>Die ungefähre Anzahl von Tagen, bevor mindestens einer Person oder einem Tier die Nahrung ausgeht. Verschiedene Spezies haben unterschiedliche Essgewohnheiten, so dass einem die Nahrung vor anderen ausgehen kann. Dieser Wert wird genauer berechnet, nachdem die Route gewählt wurde.\n\nBeeinflusst von:\n  - Aktuelles Inventar der Lebewesen\n  - Art und Menge der mitgeführten Lebensmittel\n  - Karawanenmitglieder und ihre Diäten\n  - Nahrungssuchrate\n  - Ob Tiere weiden können\n  - Zeit bis zum Verrotten der Lebensmittel\n  - Heißes Wetter lässt Lebensmittel schneller verrotten</DaysWorthOfFoodTooltip>
   <!-- EN: (only the first waypoint is taken into account) -->
   <DaysWorthOfFoodTooltip_OnlyFirstWaypoint>(Es wird nur der erste Wegpunkt berücksichtigt)</DaysWorthOfFoodTooltip_OnlyFirstWaypoint>
   <!-- EN: Your caravan only has {0} days worth of food and will become hungry quickly. -->
@@ -590,8 +606,8 @@
   <AnimalCanGrazeTip>Dieses Tier kann unterwegs auf Wiesen grasen anstatt mitgeführtes Essen zu benötigen. Allerdings ist Grasen nur in einigen Biomen und Termperaturbereichen möglich.</AnimalCanGrazeTip>
   <!-- EN: Nutrition foraged per day. The actual amount foraged is also affected by biome forageability.\n\n{0} -->
   <NutritionForagedPerDayTip>Gefundene Nahrung pro Tag. Der tatsächlich gesammelte Nährwert ist unter anderem von den Nahrungsmöglichkeiten der Landschaft abhängig.\n\n{0}</NutritionForagedPerDayTip>
-  <!-- EN: Nutrition eaten per day. For reference, simple meals have {0} nutrition.\n\nCan eat: {2}\n\nLegend:\n{1}. -->
-  <NutritionEatenPerDayTip>Gegessene Nahrung pro Tag. Zur Referenz: Einfache Mahlzeiten haben einen Nährwert von {0}.\n\nKann essen: {2}\n\nLegende:\n{1}.</NutritionEatenPerDayTip>
+  <!-- EN: Nutrition eaten per day. For reference, simple meals have {0} nutrition.\n\nCan eat: {2}\n\nLegend:\n{1} -->
+  <NutritionEatenPerDayTip>Gegessene Nahrung pro Tag. Zur Referenz: Einfache Mahlzeiten haben einen Nährwert von {0}.\n\nKann essen: {2}\n\nLegende:\n{1}</NutritionEatenPerDayTip>
   <!-- EN: Mass carried -->
   <MassCarriedSimple>Transportierte Masse</MassCarriedSimple>
   <!-- EN: Mass capacity -->
@@ -657,19 +673,33 @@
   <!-- EN: How many of this item the caravan has ready to give to the new caravan. -->
   <SplitCaravanThingCountTip>Anzahl dieser Gegenstände, die die Karawane an die neue Karawane übergeben kann.</SplitCaravanThingCountTip>
   
+  <!-- Caravan misc -->
+  <!-- EN: Are you sure you want to attack {0}?\n\nThis will make {1} hostile to you, and they will eventually start raiding your colony! -->
+  <ConfirmAttackFriendlyFaction>Bist du sicher, dass du {0} angreifen willst?\n\nDiese Aktion wird {1} zu Feinden machen und kann zu Überfällen auf deine Kolonie führen!</ConfirmAttackFriendlyFaction>
+  
   <!-- Load transporters -->
   <!-- EN: Load {0} -->
   <LoadTransporters>Beladung {0}</LoadTransporters>
   <!-- EN: The assigned people and items are too heavy for the transport pods. -->
   <TooBigTransportersMassUsage>Die zugewiesenen Personen und Tiere sind zu schwer für die Transportkapsel.</TooBigTransportersMassUsage>
+  <!-- EN: The assigned people and items are too heavy for the shuttle. -->
+  <TooBigTransporterSingleMassUsage>Die zugewiesenen Personen und Gegenstände sind zu schwer für den Shuttle.</TooBigTransporterSingleMassUsage>
   <!-- EN: You can't send empty transport pods. -->
   <CantSendEmptyTransportPods>Du kannst keine leeren Transportkapseln versenden.</CantSendEmptyTransportPods>
+  <!-- EN: You can't send empty shuttle. -->
+  <CantSendEmptyTransporterSingle>Du kannst kein leeres Shuttle losschicken.</CantSendEmptyTransporterSingle>
   <!-- EN: {1_labelShort} can't reach the transport pods. -->
   <PawnCantReachTransporters>{1_labelShort} kann die Transportkapseln nicht erreichen.</PawnCantReachTransporters>
+  <!-- EN: {1_labelShort} can't reach the shuttle. -->
+  <PawnCantReachTransporterSingle>{1_labelShort} kann den Shuttle nicht erreichen.</PawnCantReachTransporterSingle>
   <!-- EN: There is no path between the transport pods and the {0}. -->
   <TransporterItemIsUnreachableSingle>Es existiert kein Weg zwischen {0} und den Transportkapseln.</TransporterItemIsUnreachableSingle>
+  <!-- EN: There is no path between the shuttle and the {0}. -->
+  <TransporterSingleItemIsUnreachableSingle>Es existiert kein Weg zwischen {0} und dem Shuttle.</TransporterSingleItemIsUnreachableSingle>
   <!-- EN: There is no path between the transport pods and {0}x {1}. -->
   <TransporterItemIsUnreachableMulti>Es existiert kein Weg zwischen {0}x {1} und den Transportkapseln.</TransporterItemIsUnreachableMulti>
+  <!-- EN: There is no path between the shuttle and {0}x {1}. -->
+  <TransporterSingleItemIsUnreachableMulti>Es existiert kein Weg zwischen {0}x {1} und dem Shuttle.</TransporterSingleItemIsUnreachableMulti>
   
   <!-- Comms -->
   <!-- EN: Social skill: {0} -->
@@ -863,4 +893,26 @@
   <!-- EN: The caravan will be immobile if you send the pods to an empty tile. Continue anyway? -->
   <TransportersCaravanWillBeImmobile>Die Karawane wird sich nicht bewegen können, wenn Du die Kapseln auf ein leeres Feld schickst. Trotzdem fortfahren?</TransportersCaravanWillBeImmobile>
 
+  <!-- Confirm cancel monument marker -->
+  <!-- EN: Do you really want to remove this monument marker? -->
+  <ConfirmCancelMonumentMarker>Willst du diese Denkmalmarkierung wirklich entfernen?</ConfirmCancelMonumentMarker>
+
+  <!-- Abilities -->
+  <!-- EN: Line of sight required -->
+  <AbilityRequiresLOS>Freie Sicht erforderlich</AbilityRequiresLOS>
+  <!-- EN: Entropy gain  -->
+  <AbilityEntropyGain>Entropie-Gewinn</AbilityEntropyGain>
+  <!-- EN: Effect duration -->
+  <AbilityDuration>Wirkungsdauer</AbilityDuration>
+  <!-- EN: Effect radius -->
+  <AbilityEffectRadius>Wirkungsradius</AbilityEffectRadius>
+  <!-- EN: Casting time -->
+  <AbilityCastingTime>Wirkzeit</AbilityCastingTime>
+  <!-- EN: No line of sight to target. -->
+  <AbilityCannotHitTarget>Keine freie Sicht auf das Ziel.</AbilityCannotHitTarget>
+  <!-- EN: {0} must target an empty area. -->
+  <AbilityOccupiedCells>{0} muss einen leeren Bereich anvisieren.</AbilityOccupiedCells>
+  <!-- EN: {0} must target a walkable area. -->
+  <AbilityUnwalkable>{0} muss einen begehbaren Bereich anvisieren.</AbilityUnwalkable>
+  
 </LanguageData>

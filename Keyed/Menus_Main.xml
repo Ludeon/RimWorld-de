@@ -16,6 +16,8 @@
   <LoadGame>Spiel laden</LoadGame>
   <!-- EN: Options -->
   <Options>Optionen</Options>
+  <!-- EN: Mod -->
+  <Mod>Mod</Mod>
   <!-- EN: Mods -->
   <Mods>Mods</Mods>
   <!-- EN: Save translation report -->
@@ -82,6 +84,8 @@
   <PlanetRainfall>Niederschlag</PlanetRainfall>
   <!-- EN: Overall temperature -->
   <PlanetTemperature>Temperatur</PlanetTemperature>
+  <!-- EN: Population -->
+  <PlanetPopulation>Population</PlanetPopulation>
   <!-- EN: Low -->
   <PlanetRainfall_Low>Wenig</PlanetRainfall_Low>
   <!-- EN: Normal -->
@@ -94,6 +98,12 @@
   <PlanetTemperature_Normal>Normal</PlanetTemperature_Normal>
   <!-- EN: High -->
   <PlanetTemperature_High>Heiß</PlanetTemperature_High>
+  <!-- EN: Sparse -->
+  <PlanetPopulation_Low>Spärlich</PlanetPopulation_Low>
+  <!-- EN: Normal -->
+  <PlanetPopulation_Normal>Normal</PlanetPopulation_Normal>
+  <!-- EN: Crowded -->
+  <PlanetPopulation_High>Überfüllt</PlanetPopulation_High>
   <!-- EN: Seed -->
   <WorldSeed>Seed</WorldSeed>
   <!-- EN: Randomize seed -->
@@ -138,6 +148,8 @@
   <ConfirmDisableCoreMod>Bist Du sicher, dass Du den Kern (Core) deaktivieren willst? Das Spiel wird nicht funktionieren, solange Du keine andere Modifikation hast, die ALLE Kernfunktionen ersetzt.\n\nHinweis: Andere Mods können die Kern-Defs überschreiben, wenn sie den gleichen Def-Namen benutzen.</ConfirmDisableCoreMod>
   <!-- EN: Are you sure you want to delete all the content for {0}? -->
   <ConfirmDeleteMod>Bist Du sicher, dass Du alle Daten von {0} löschen willst?</ConfirmDeleteMod>
+  <!-- EN: Auto-sort mods -->
+  <ResolveModOrder>Mods auto-sortieren</ResolveModOrder>
   <!-- EN: Unsubscribe -->
   <Unsubscribe>Abo beenden</Unsubscribe>
   <!-- EN: Are you sure you want to unsubscribe from {0}? -->
@@ -158,19 +170,63 @@
   <WorkshopUploadSucceeded>Übertragung von {0} war erfolgreich.</WorkshopUploadSucceeded>
   <!-- EN: Downloading -->
   <Downloading>Lade</Downloading>
+  <!-- EN: Display fulfilled requirements -->
+  <ModDisplayFulfilledRequirements>Erfüllte Anforderungen anzeigen</ModDisplayFulfilledRequirements>
+  <!-- EN: Click to select. -->
+  <ModClickToSelect>Klicke zum Auswählen.</ModClickToSelect>
+  <!-- EN: Click to go to website. -->
+  <ModClickToGoToWebsite>Klicke hier, um auf die Webseite zu gelangen.</ModClickToGoToWebsite>
   <!-- EN: Source -->
   <Source>Quelle</Source>
-  <!-- EN: For version(s): {0} -->
-  <ModTargetVersion>Erstellt für Version(en): {0}</ModTargetVersion>
+  <!-- EN: For game version(s) -->
+  <ModTargetVersion>Für Spielversion(en)</ModTargetVersion>
+  <!-- EN: ID -->
+  <ModPackageId>ID</ModPackageId>
+  <!-- EN: This must be loaded before: {0}. -->
+  <ModMustLoadBefore>Dies muss vorher geladen werden: {0}.</ModMustLoadBefore>
+  <!-- EN: This must be loaded after: {0}. -->
+  <ModMustLoadAfter>Dies muss danach geladen werden: {0}.</ModMustLoadAfter>
+  <!-- EN: Depends on: {0} -->
+  <ModDependsOn>Abhängig von: {0}</ModDependsOn>
+  <!-- EN: Incompatible with: {0} -->
+  <ModIncompatibleWith>Nicht kompatibel mit: {0}</ModIncompatibleWith>
+  <!-- EN: This mod is incompatible with: {0}. -->
+  <ModIncompatibleWithTip>Dieser Mod ist nicht kompatibel mit: {0}.</ModIncompatibleWithTip>
+  <!-- EN: This mod is loading in the wrong order relative to another mod. Use the 'auto-sort' button, or re-order the mods manually. -->
+  <ModOrderingWarning>Dieser Mod wird in der falschen Reihenfolge relativ zu einem anderen Mod geladen. Benutze die Schaltfläche 'Auto-Sortieren' oder sortiere die Mods manuell neu.</ModOrderingWarning>
+  <!-- EN: Another active mod uses the same ID: {0}. -->
+  <ModWithSameIdAlreadyActive>Ein anderer aktiver Mod verwendet die gleiche ID: {0}.</ModWithSameIdAlreadyActive>
+  <!-- EN: There is a cyclic mod dependency starting with {0}. -->
+  <ModCyclicDependency>Es besteht eine zyklische Mod-Abhängigkeit, die mit {0} beginnt.</ModCyclicDependency>
+  <!-- EN: This requires following mods to work: {0}. -->
+  <ModUnsatisfiedDependency>Dies erfordert folgende Mods, um zu funktionieren: {0}.</ModUnsatisfiedDependency>
   <!-- EN: This mod was not made for this version of RimWorld, and will probably not work correctly. -->
   <ModNotMadeForThisVersion>Diese Mod ist nicht für die aktuelle Version von RimWorld erstellt worden und wird wahrscheinlich nicht richtig funktionieren.</ModNotMadeForThisVersion>
   <!-- EN: This mod was made for a newer version of RimWorld than this, and will probably not work correctly. -->
   <ModNotMadeForThisVersion_Newer>Diese Mod wurde für eine neuere Version von RimWorld entwickelt und wird wahrscheinlich nicht richtig funktionieren.</ModNotMadeForThisVersion_Newer>
   <!-- EN: Mod needs properly formatted supported version information in About.xml. Like this: <supportedVersions><li>{0}</li></supportedVersions> - <targetVersion> is deprecated. Check log for further information. -->
   <MessageModNeedsWellFormattedTargetVersion>Mod benötigt korrekt formatierte unterstützte Versionsinformationen in About.xml. Ungefähr wie folgt: &lt;supportedVersions>&lt;li>{0}&lt;/li>&lt;/supportedVersions> - &lt;targetVersion> ist veraltet. Weitere Informationen findest Du im Log.</MessageModNeedsWellFormattedTargetVersion>
+  <!-- EN: Mod needs a unique, properly formatted packageId in About.xml. It must must meet following requirements:\n\n  - Alphanumeric characters and dot only.\n  - No spaces.\n  - At least one dot.\n  - No repeated dots in a row, or starting or ending with a dot.\n  - 60 characters or less.\n  - Cannot contain word "Ludeon".\n\nFor example:\n<packageId>AuthorName.ModName</packageId>\n<packageId>AuthorName.ModName.Specific</packageId> -->
+  <MessageModNeedsWellFormattedPackageId>Mod benötigt eine eindeutige, korrekt formatierte Paket-ID in About.xml. Sie muss folgende Anforderungen erfüllen:\n\n  - Nur alphanumerische Zeichen und Punkt.\n  - Keine Leerzeichen.\n  - Mindestens ein Punkt.\n  - Keine sich wiederholenden, direkt angrenzenden Punkte oder mit einem Punkt beginnen oder enden.\n  - 60 Zeichen oder weniger.\n  - Darf das Wort "Ludeon" nicht enthalten.\n\nZum Beispiel:\n&lt;packageId>AuthorName.ModName&lt;/packageId>\n&lt;packageId>AuthorName.ModName.Specific&lt;/packageId></MessageModNeedsWellFormattedPackageId>
+  <!-- EN: This mod has issues in LoadFolders.xml, that you need to resolve before uploading: -->
+  <ModHadLoadFolderIssues>Dieser Mod hat Probleme in LoadFolders.xml, die vor dem Hochladen behoben werden müssen:</ModHadLoadFolderIssues>
+  <!-- EN: Folder {0} specified for version {1} doesn't exist. -->
+  <ModLoadFolderDoesntExist>Der für Version {1} angegebene Ordner {0} existiert nicht.</ModLoadFolderDoesntExist>
+  <!-- EN: Malformed version string '{0}'. Correct format is Major.Minor (e.g. 1.1) -->
+  <ModLoadFolderMalformedVersion>Fehlerhafte Versionszeichenkette '{0}'. Das korrekte Format ist Major.Minor (z. B. 1.1)</ModLoadFolderMalformedVersion>
+  <!-- EN: The list of load folders for version {0} is empty. -->
+  <ModLoadFolderListEmpty>Die Liste der zu ladenden Ordner für Version {0} ist leer.</ModLoadFolderListEmpty>
+  <!-- EN: Version {0} lists the same folder more than once: {1}. -->
+  <ModLoadFolderRepeatingFolder>Version {0} listet denselben Ordner mehr als einmal auf: {1}.</ModLoadFolderRepeatingFolder>
+  <!-- EN: Invalid version order: {0} should come before {1}. -->
+  <ModLoadFolderOutOfOrder>Ungültige Versionsreihenfolge: {0} sollte vor {1} stehen.</ModLoadFolderOutOfOrder>
+  <!-- EN: Invalid version order: 'default' should be defined first. -->
+  <ModLoadFolderOutOfOrderDefault>Ungültige Versionsreihenfolge: 'default' sollte zuerst definiert sein.</ModLoadFolderOutOfOrderDefault>
+  <!-- EN: Version {0} is defined in load folders, but is not listed in 'supportedVersions' of mod's About.xml. -->
+  <ModLoadFolderDefinesUnsupportedGameVersion>Version {0} ist in den zu ladenden Ordnern definiert, aber nicht in 'supportedVersions' in About.xml der Mod aufgeführt.</ModLoadFolderDefinesUnsupportedGameVersion>
   <!-- EN: Drag to reorder -->
   <DragToReorder>Ziehe, um die Reihenfolge zu ändern</DragToReorder>
-  
+
   <!-- Select scenario -->
   <!-- EN: Choose scenario -->
   <ChooseScenario>Szenario auswählen</ChooseScenario>
@@ -316,10 +372,26 @@
   <Randomize>Zufällig</Randomize>
   <!-- EN: age {0} -->
   <AgeIndicator>Alter {0}</AgeIndicator>
+  <!-- EN: {PAWN_race}, age {PAWN_ageFull} -->
+  <PawnSummary>{PAWN_race}, Alter {PAWN_ageFull}</PawnSummary>
+  <!-- EN: {PAWN_gender} {PAWN_race}, age {PAWN_ageFull} -->
+  <PawnSummaryWithGender>{PAWN_gender} {PAWN_race}, Alter {PAWN_ageFull}</PawnSummaryWithGender>
   <!-- EN: Backstory -->
   <Backstory>Hintergrund</Backstory>
   <!-- EN: Incapable of -->
   <IncapableOf>Verweigert</IncapableOf>
+  <!-- EN: Abilities -->
+  <Abilities>Fähigkeiten</Abilities>
+  <!-- EN: Caused by backstory: {0} -->
+  <IncapableOfTooltipBackstory>Verursacht durch Hintergrundgeschichte: {0}</IncapableOfTooltipBackstory>
+  <!-- EN: Caused by title: {0} -->
+  <IncapableOfTooltipTitle>Verursacht durch Titel: {0}</IncapableOfTooltipTitle>
+  <!-- EN: Caused by trait: {0} -->
+  <IncapableOfTooltipTrait>Verursacht durch Eigenschaft: {0}</IncapableOfTooltipTrait>
+  <!-- EN: Caused by: {0} -->
+  <IncapableOfTooltipHediff>Verursacht durch: {0}</IncapableOfTooltipHediff>
+  <!-- EN: Disabled work types: -->
+  <IncapableOfTooltipWorkTypes>Deaktivierte Arbeitsplätze:</IncapableOfTooltipWorkTypes>
   <!-- EN: Traits -->
   <Traits>Eigenschaften</Traits>
   <!-- EN: Permanent mood effect -->
@@ -387,8 +459,7 @@
   <!-- EN: Generating map for new encounter -->
   <GeneratingMapForNewEncounter>Generiere Karte für neue Begegnung</GeneratingMapForNewEncounter>
 
-  <!-- UNUSED -->
-  <SelectLandingSite>Region zum Landen auswählen</SelectLandingSite>
-  <MustSelectLandingSite>Bitte einen Landeplatz auswählen.</MustSelectLandingSite>
+  <!-- EN: Click for more info -->
+  <ClickForMoreInfo>Klicke für mehr Informationen</ClickForMoreInfo>
 
 </LanguageData>

@@ -3,8 +3,8 @@
   
   <!-- EN: beauty -->
   <Beauty.label>Attraktivität</Beauty.label>
-  <!-- EN: How enjoyable an object is to look at. Beautiful objects fulfill characters' need for beauty. -->
-  <Beauty.description>Wie sehr man es genießt, dieses Objekt um sich zu haben oder zu bestaunen. Attraktive Objekte füllen den Bedarf an Schönheit einer Person.</Beauty.description>
+  <!-- EN: How enjoyable an object is to look at.\n\nBeautiful objects fulfill characters' need for beauty. -->
+  <Beauty.description>Wie sehr man es genießt, dieses Objekt um sich zu haben oder zu bestaunen.\n\nAttraktive Objekte füllen den Bedarf an Schönheit einer Person.</Beauty.description>
   
   <!-- EN: cleanliness -->
   <Cleanliness.label>Sauberkeit</Cleanliness.label>
@@ -13,13 +13,13 @@
   
   <!-- EN: comfort -->
   <Comfort.label>Komfort</Comfort.label>
-  <!-- EN: How comfortable an object is to sit or lay on. Using comfortable objects fulfills a character's need for comfort. -->
-  <Comfort.description>Wie bequem es ist, auf diesem Objekt zu liegen oder zu sitzen. Bequeme Objekte füllen den Bedarf an Komfort einer Person.</Comfort.description>
+  <!-- EN: How comfortable an object is to sit or lay on.\n\nUsing comfortable objects fulfills a character's need for comfort. -->
+  <Comfort.description>Wie bequem es ist, auf diesem Objekt zu liegen oder zu sitzen.\n\nBequeme Objekte füllen den Bedarf an Komfort einer Person.</Comfort.description>
   
   <!-- EN: deterioration rate -->
   <DeteriorationRate.label>Verfallsrate</DeteriorationRate.label>
-  <!-- EN: The rate at which this item deteriorates when left outside, in average hit points of damage per day. Deterioration rate is also affected by things like weather, roofs, toxic fallout, or being left in shallow water. -->
-  <DeteriorationRate.description>Wie schnell ein Objekt im Freien seine Haltbarkeit verliert, in durchschnittlichem Schadenspunkten pro Tag. Die Verfallsrate wird weiterhin von äußeren Einflüssen wie z.B. dem Wetter, einem Dach, giftigem Niederschlag und dem im Wasser liegen beeinflusst.</DeteriorationRate.description>
+  <!-- EN: The rate at which this item deteriorates when left outside, in average hit points of damage per day.\n\nDeterioration rate is also affected by things like weather, roofs, toxic fallout, or being left in shallow water. -->
+  <DeteriorationRate.description>Wie schnell ein Objekt im Freien seine Haltbarkeit verliert, in durchschnittlichem Schadenspunkten pro Tag.\n\nDie Verfallsrate wird weiterhin von äußeren Einflüssen wie z.B. dem Wetter, einem Dach, giftigem Niederschlag und dem im Wasser liegen beeinflusst.</DeteriorationRate.description>
   <!-- EN: {0} / day -->
   <DeteriorationRate.formatString>{0} / Tag</DeteriorationRate.formatString>
   
@@ -32,11 +32,13 @@
   <FoodPoisonChanceFixedHuman.label>Lebensmittelvergiftungschance</FoodPoisonChanceFixedHuman.label>
   <!-- EN: The chance this food will cause food poisoning. -->
   <FoodPoisonChanceFixedHuman.description>Wie hoch die Wahrscheinlichkeit ist, dass dieses Essen eine Lebensmittelvergiftung verursacht.</FoodPoisonChanceFixedHuman.description>
+  <!-- EN: food poison chance (food stat) -->
+  <FoodPoisonChanceFixedHuman.labelForFullStatList>Lebensmittelvergiftungschance (Lebensmitteleigenschaft)</FoodPoisonChanceFixedHuman.labelForFullStatList>
   
   <!-- EN: market value -->
   <MarketValue.label>Marktwert</MarketValue.label>
-  <!-- EN: The market value of an object. The actual trade price will be adjusted by negotiation skill, relationship status, and other contextual factors. -->
-  <MarketValue.description>Der Marktwert eines Objekts. Der tatsächliche Handelspreis wird durch Beziehungsstatus und Verhandlungsgeschick beeinflusst.</MarketValue.description>
+  <!-- EN: The market value of an object.\n\nThe actual trade price will be adjusted by negotiation skill, relationship status, and other contextual factors. -->
+  <MarketValue.description>Der Marktwert eines Objekts.\n\nDer tatsächliche Handelspreis wird durch Beziehungsstatus und Verhandlungsgeschick beeinflusst.</MarketValue.description>
   <!-- EN: ${0} -->
   <MarketValue.formatString>€{0}</MarketValue.formatString>
   
@@ -49,13 +51,18 @@
   
   <!-- EN: max hit points -->
   <MaxHitPoints.label>Max. Haltbarkeit</MaxHitPoints.label>
-  <!-- EN: The maximum hit points of an object. This represents how much damage it can take before being destroyed. -->
-  <MaxHitPoints.description>Die maximale Haltbarkeit eines Objekts. Dieser Wert gibt an, wie viel Schaden es verkraften kann, bevor es zerstört wird.</MaxHitPoints.description>
+  <!-- EN: The maximum hit points of an object.\n\nThis represents how much damage it can take before being destroyed. -->
+  <MaxHitPoints.description>Die maximale Haltbarkeit eines Objekts.\n\nDieser Wert gibt an, wie viel Schaden es verkraften kann, bevor es zerstört wird.</MaxHitPoints.description>
   
   <!-- EN: nutrition -->
   <Nutrition.label>Nährwert</Nutrition.label>
   <!-- EN: How nutritious this food is. -->
   <Nutrition.description>Wie nahhaft dieses Essen ist.</Nutrition.description>
+  
+  <!-- EN: royal favor value -->
+  <RoyalFavorValue.label>Höhe königlicher Gunst</RoyalFavorValue.label>
+  <!-- EN: The amount of royal favor your trader will earn for giving this to a tribute collector. -->
+  <RoyalFavorValue.description>Die Höhe der königlichen Gunst, die dein Händler erhält, wenn er dieses Objekt einem Tributeintreiber überreicht.</RoyalFavorValue.description>
   
   <!-- EN: sell price multiplier -->
   <SellPriceFactor.label>Verkaufswertmultiplikator</SellPriceFactor.label>
@@ -64,8 +71,10 @@
   
   <!-- EN: shooting accuracy -->
   <ShootingAccuracyTurret.label>Fernkampfgenauigkeit</ShootingAccuracyTurret.label>
-  <!-- EN: Base chance to not miss per cell of shot distance. Chance to hit is also affected by many other factors. A hit chance explanation for any shot can be seen by selecting a shooter and mousing over a target. -->
-  <ShootingAccuracyTurret.description>Die Chance pro Zelle, beim Fernkampf nicht zu verfehlen. Die Trefferchance ist abhängig von mehreren Faktoren. Die detaillierte Auflistung kann angesehen werden, indem man den Schützen auswählt und danach den Mauszeiger über das Ziel hält.</ShootingAccuracyTurret.description>
+  <!-- EN: Base chance to not miss per cell of shot distance.\n\nChance to hit is also affected by many other factors. A hit chance explanation for any shot can be seen by selecting a shooter and mousing over a target. -->
+  <ShootingAccuracyTurret.description>Die Chance pro Zelle, beim Fernkampf nicht zu verfehlen.\n\nDie Trefferchance ist abhängig von mehreren Faktoren. Die detaillierte Auflistung kann angesehen werden, indem man den Schützen auswählt und danach den Mauszeiger über das Ziel hält.</ShootingAccuracyTurret.description>
+  <!-- EN: shooting accuracy (turrets) -->
+  <ShootingAccuracyTurret.labelForFullStatList>Fernkampfgenauigkeit (Geschütztürme)</ShootingAccuracyTurret.labelForFullStatList>
   
   <!-- EN: work to make -->
   <WorkToMake.label>Arbeitsaufwand</WorkToMake.label>

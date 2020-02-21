@@ -3,8 +3,8 @@
   
   <!-- EN: butchery efficiency -->
   <ButcheryFleshEfficiency.label>Schlachteffizienz</ButcheryFleshEfficiency.label>
-  <!-- EN: The amount of meat produced when butchering flesh creatures. The actual amount is also related to the creature's size. -->
-  <ButcheryFleshEfficiency.description>Wie viel Fleisch das Individuum aus der geschlachteten Kreatur gewinnen kann. Die tatsächliche Menge ist auch von der Größe der Kreatur abhängig.</ButcheryFleshEfficiency.description>
+  <!-- EN: The amount of meat produced when butchering flesh creatures.\n\nThe actual amount is also related to the creature's size. -->
+  <ButcheryFleshEfficiency.description>Wie viel Fleisch das Individuum aus der geschlachteten Kreatur gewinnen kann.\n\nDie tatsächliche Menge ist auch von der Größe der Kreatur abhängig.</ButcheryFleshEfficiency.description>
   
   <!-- EN: butchery speed -->
   <ButcheryFleshSpeed.label>Schlachtgeschwindigkeit</ButcheryFleshSpeed.label>
@@ -13,8 +13,8 @@
   
   <!-- EN: mechanoid disassembly efficiency -->
   <ButcheryMechanoidEfficiency.label>Demontageeffizienz</ButcheryMechanoidEfficiency.label>
-  <!-- EN: The amount of materials yielded when this person disassembles a dead mechanoid. The actual amount is also related to the mechanoid's size. -->
-  <ButcheryMechanoidEfficiency.description>Wie viel Material das Individuum aus einem Mechanoiden gewinnen kann. Die tatsächliche Menge ist auch von der Größe des Mechanoiden abhängig.</ButcheryMechanoidEfficiency.description>
+  <!-- EN: The amount of materials yielded when this person disassembles a dead mechanoid.\n\nThe actual amount is also related to the mechanoid's size. -->
+  <ButcheryMechanoidEfficiency.description>Wie viel Material das Individuum aus einem Mechanoiden gewinnen kann.\n\nDie tatsächliche Menge ist auch von der Größe des Mechanoiden abhängig.</ButcheryMechanoidEfficiency.description>
   
   <!-- EN: mechanoid disassembly speed -->
   <ButcheryMechanoidSpeed.label>Demontagegeschwindigkeit</ButcheryMechanoidSpeed.label>
@@ -38,32 +38,19 @@
   
   <!-- EN: food poison chance -->
   <FoodPoisonChance.label>Lebensmittelvergiftungschance</FoodPoisonChance.label>
-  <!-- EN: The probability that this character will inadvertently poison a meal they cook. Food poison temporarily debilitates anyone it strikes. -->
-  <FoodPoisonChance.description>Wie häufig das Individuum versehentlich seine zubereiteten Mahlzeiten vergiftet. Eine Lebensmittelvergiftung schwächt jeden den sie trifft.</FoodPoisonChance.description>
+  <!-- EN: The probability that this character will inadvertently poison a meal they cook.\n\nAnyone who eats a food-poisoned meal will be temporarily debilitated with pain, weakness, and vomiting. -->
+  <FoodPoisonChance.description>Wie häufig das Individuum versehentlich seine zubereiteten Mahlzeiten vergiftet.\n\nJeder, der eine vergiftete Mahlzeit zu sich nimmt, muss vorübergehend mit Schmerzen, Kraftlosigkeit und Erbrechen rechnen.</FoodPoisonChance.description>
+  <!-- EN: food poison chance (chance to poison a meal) -->
+  <FoodPoisonChance.labelForFullStatList>Lebensmittelvergiftungschance (Chance, eine Mahlzeit zu vergiften)</FoodPoisonChance.labelForFullStatList>
   
-  <!-- EN: sculpting speed -->
-  <SculptingSpeed.label>Bildhaugeschwindigkeit</SculptingSpeed.label>
-  <!-- EN: The speed at which this person creates sculptures.\n\nThis stat only affects how fast sculptures are produced, not their quality. Quality is determined by the sculptor's artistic skill. -->
-  <SculptingSpeed.description>Wie schnell das Individuum Skulpturen anfertigen kann.\n\nDieser Wert beeinflusst die Arbeitsgeschwindigkeit, nicht aber die Qualität. Qualität ist abhängig von der Kunstfähigkeit der Person.</SculptingSpeed.description>
+  <!-- EN: general labor speed -->
+  <GeneralLaborSpeed.label>Allgemeine Arbeitsgeschwindigkeit</GeneralLaborSpeed.label>
+  <!-- EN: The speed at which this person carries out general labor like making stone blocks, making chemfuel at a refinery, burning items, tailoring clothes, creating art, smithing armor and weapons or smelting slag. This stat applies both to activities that involve no skill, as well as those where the skill affects the quality of the product instead of the speed of production. -->
+  <GeneralLaborSpeed.description>Wie schnell diese Person allgemeine Arbeiten verrichtet, wie z. B. Steinblöcken herstellen, Kraftstoff in einer Raffinerie herstellen, Gegenstände verbrennen, Kleidung nähen, Kunstwerke schaffen, Rüstungen und Waffen schmieden oder Schlacke schmelzen. Dieser Wert gilt sowohl für Aktivitäten, die keine Fähigkeiten erfordern, als auch für solche, wo die Fähigkeiten die Produktqualität anstelle der Produktionsgeschwindigkeit beeinflussen.</GeneralLaborSpeed.description>
   
   <!-- EN: smelting speed -->
   <SmeltingSpeed.label>Schmelzgeschwindigkeit</SmeltingSpeed.label>
   <!-- EN: The speed at which this person smelts things.\n\nSince smelting is dumb labor, smelting speed is not affected by any skill. -->
   <SmeltingSpeed.description>Wie schnell das Individuum etwas einschmelzen kann.\n\nDa dies nur ungelernte Arbeitskräfte benötigt, ist die Arbeitsgeschwindigkeit unabhängig von irgendwelchen Fähigkeiten.</SmeltingSpeed.description>
-  
-  <!-- EN: smithing speed -->
-  <SmithingSpeed.label>Schmiedegeschwindigkeit</SmithingSpeed.label>
-  <!-- EN: Speed at which this person crafts weapons, machinery, and ammunition.\n\nThis stat only affects how fast items are produced, not their quality. Quality is determined by the crafter's skill. -->
-  <SmithingSpeed.description>Wie schnell das Individuum Waffen, Maschinen und Munition schmieden kann.\n\nDieser Wert beeinflusst die Arbeitsgeschwindigkeit, nicht aber die Qualität. Qualität ist abhängig von der Schmiedefähigkeit der Person.</SmithingSpeed.description>
-  
-  <!-- EN: tailoring speed -->
-  <TailoringSpeed.label>Nähgeschwindigkeit</TailoringSpeed.label>
-  <!-- EN: The speed at which this person makes clothes.\n\nThis stat only affects how fast clothes are produced, not their quality. Quality is determined by the tailor's crafting skill. -->
-  <TailoringSpeed.description>Wie schnell das Individuum Kleidungen nähen kann.\n\nDieser Wert beeinflusst die Arbeitsgeschwindigkeit, nicht aber die Qualität. Qualität ist abhängig von der Nähfähigkeit der Person.</TailoringSpeed.description>
-  
-  <!-- EN: unskilled labor speed -->
-  <UnskilledLaborSpeed.label>Hilfsarbeitsgeschwindigkeit</UnskilledLaborSpeed.label>
-  <!-- EN: The speed at which this person carries out unskilled labor like making stone blocks, making chemfuel at a refinery or burning items. -->
-  <UnskilledLaborSpeed.description>Wie schnell diese Person Hilfsarbeiten ausführt, wie z.B. Steinblöcke oder Kraftstoff herstellen, oder Gegenstände verbrennen.</UnskilledLaborSpeed.description>
   
 </LanguageData>

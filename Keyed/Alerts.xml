@@ -18,7 +18,7 @@
   <BreakRiskExtremeDesc>Die folgenden Kolonisten sind sehr stark gestresst und könnten jeden Moment einen extremen (und potenziell gewalttätigen) Nervenzusammenbruch erleiden:\n\n{0}</BreakRiskExtremeDesc>
   <!-- EN: Check these colonists' Needs tab to see what's bothering them.\n\nTo make colonists feel better, you can do things like make them fancy meals, give them more recreation hours per day and nicer recreation objects, place them in beautiful environments, have them drink and smoke, and much more. -->
   <BreakRiskDescEnding>Überprüfe ihre Wünsche, um herauszufinden, was sie stört.\n\nDamit die Kolonisten sich besser fühlen, kannst Du ihnen üppige Mahlzeiten oder mehr Zeit zum Entspannen geben. Du kannst sie in einer schönen Umgebung unterbringen oder ihnen etwas zu trinken oder zu rauchen geben, und vieles mehr.</BreakRiskDescEnding>
-  
+
   <!-- EN: Colonist needs rescue -->
   <ColonistNeedsRescue>Bewusstloser Kolonist</ColonistNeedsRescue>
   <!-- EN: Colonists need rescue -->
@@ -62,6 +62,11 @@
   <NeedColonistBeds>Betten benötigt</NeedColonistBeds>
   <!-- EN: You have more colonists than you have colonist beds. Someone will lack a place to sleep.\n\nEither make more beds, or change a prisoner bed to a colonist bed.\n\nIf you have no resources, sleeping spots are free and can be placed instantly. -->
   <NeedColonistBedsDesc>Du hast mehr Kolonisten als Betten. Einige haben keinen Schlafplatz.\n\nBaue mehr Betten oder ändere Gefängnisbetten in Betten für Kolonisten um.</NeedColonistBedsDesc>
+  
+  <!-- EN: Colonist left unburied -->
+  <AlertColonistLeftUnburied>Kolonist noch nicht beerdigt</AlertColonistLeftUnburied>
+  <!-- EN: A colonist is left unburied.\n\nThis may negatively affects your colonists mood. -->
+  <AlertColonistLeftUnburiedDesc>Ein Kolonist wurde noch nicht beerdigt.\n\nDies kann sich negativ auf die Stimmungslage deiner Kolonisten auswirken.</AlertColonistLeftUnburiedDesc>
 
   <!-- EN: Hunter lacks ranged weapon -->
   <HunterLacksWeapon>Jäger ohne Fernkampfwaffe</HunterLacksWeapon>
@@ -70,13 +75,13 @@
 
   <!-- EN: Tattered apparel -->
   <AlertTatteredApparel>Zerrissene Kleidung</AlertTatteredApparel>
-  <!-- EN: These colonists are wearing tattered apparel, which is making them sad:\n\n{0}\nGet them some apparel that isn't so badly damaged.\n\nYou can tailor apparel at a tailoring table, or buy it from traders. -->
-  <AlertTatteredApparelDesc>Die folgenden Kolonisten tragen zerrissene Kleidung, was sie unzufrieden macht:\n\n{0}\nGib ihnen Kleidung, die nicht ganz so stark beschädigt ist.\n\nDu kannst Kleidung am Schneidertisch herstellen, oder auch von Händlern kaufen.</AlertTatteredApparelDesc>
+  <!-- EN: These colonists are wearing tattered apparel, which is making them sad:\n\n{0}\nGet them some apparel that isn't so badly damaged.\n\nYou can tailor apparel at a crafting spot or tailoring table, or buy it from traders. -->
+  <AlertTatteredApparelDesc>Die folgenden Kolonisten tragen zerrissene Kleidung, was sie unzufrieden macht:\n\n{0}\nGib ihnen Kleidung, die nicht ganz so stark beschädigt ist.\n\nDu kannst Kleidung am Arbeitsplatz oder Schneidertisch herstellen, oder auch von Händlern kaufen.</AlertTatteredApparelDesc>
 
   <!-- EN: Unhappy nudity -->
   <AlertUnhappyNudity>Nacktheit</AlertUnhappyNudity>
-  <!-- EN: These colonists are nude and not happy about it:\n\n{0}\nGet them some clothes.\n\nYou can tailor apparel at a tailoring table, or buy it from traders. -->
-  <AlertUnhappyNudityDesc>Die folgenden Kolonisten sind nackt und unzufrieden:\n\n{0}\nGib ihnen etwas Kleidung.\n\nDu kannst Kleidung am Schneidertisch schneidern oder neue Kleidung von Händlern kaufen.</AlertUnhappyNudityDesc>
+  <!-- EN: These colonists are nude and not happy about it:\n\n{0}\nGet them some clothes.\n\nYou can tailor apparel at a crafting spot or tailoring table, or buy it from traders. -->
+  <AlertUnhappyNudityDesc>Die folgenden Kolonisten sind nackt und unzufrieden:\n\n{0}\nGib ihnen etwas Kleidung.\n\nDu kannst Kleidung am Arbeitsplatz oder Schneidertisch schneidern oder neue Kleidung von Händlern kaufen.</AlertUnhappyNudityDesc>
 
   <!-- EN: Starvation -->
   <Starvation>Hunger</Starvation>
@@ -140,26 +145,31 @@
   <NeedResearchProject>Keine Forschung</NeedResearchProject>
   <!-- EN: You have the equipment to do research but have not selected a project.\n\nOpen the research menu and select a project. -->
   <NeedResearchProjectDesc>Du hast die Ausrüstung zum Forschen, aber kein Forschungsprojekt.\n\nÖffne das Forschungsmenü und wähle eines aus.</NeedResearchProjectDesc>
-  
+
   <!-- EN: {0} colonists idle -->
   <ColonistsIdle>{0} Kolonisten untätig</ColonistsIdle>
   <!-- EN: These colonists are wandering idly:\n\n{0}\nYou should probably find them something productive to do. -->
-  <ColonistsIdleDesc>Die folgenden Kolonisten laufen untätig herum:\n\n{0}\nDu solltest ihnen eine Arbeit zuweisen.</ColonistsIdleDesc>
+  <ColonistsIdleDesc>Folgende Kolonisten laufen untätig herum:\n\n{0}\nDu solltest ihnen eine Arbeit zuweisen.</ColonistsIdleDesc>
+  
+  <!-- EN: Caravan idle -->
+  <CaravanIdle>Karawane untätig</CaravanIdle>
+  <!-- EN: These caravans are waiting for you to set their next destination:\n\n{0} -->
+  <CaravanIdleDesc>Folgende Karawanen warten darauf, dass du ihnen ihr nächstes Ziel zuweist:\n\n{0}</CaravanIdleDesc>
 
   <!-- EN: Colonist needs treatment -->
   <ColonistNeedsTreatment>Behandlung benötigt</ColonistNeedsTreatment>
   <!-- EN: These colonists need medical treatment. Without it, they may die of their wounds, or their wounds may become permanent.\n\n{0}\nTreat them by sending them to a medical bed.\n\n(First, assign a medical bed by selecting it and toggling it into a medical bed. Then, select the wounded colonists and right-click on the medical bed to make them a patient.) -->
-  <ColonistNeedsTreatmentDesc>Die folgenden Kolonisten benötigen medizinische Behandlung. Ohne diese können sie an ihren Verletzungen sterben oder bekommen bleibende Schäden.\n\n{0}\nBehandle sie, indem Du sie in ein Krankenbett schickst.\n\n(Definiere zuerst ein Krankenbett, indem Du ein Bett anwählst und es in ein Krankenbett umwandelst. Wähle danach den verwundeten Kolonisten aus und rechtsklicke auf das Krankenbett, um ihn zum Patienten zu machen.)</ColonistNeedsTreatmentDesc>
+  <ColonistNeedsTreatmentDesc>Folgende Kolonisten benötigen medizinische Behandlung. Ohne diese können sie an ihren Verletzungen sterben oder bekommen bleibende Schäden.\n\n{0}\nBehandle sie, indem Du sie in ein Krankenbett schickst.\n\n(Definiere zuerst ein Krankenbett, indem Du ein Bett anwählst und es in ein Krankenbett umwandelst. Wähle danach den verwundeten Kolonisten aus und rechtsklicke auf das Krankenbett, um ihn zum Patienten zu machen.)</ColonistNeedsTreatmentDesc>
 
   <!-- EN: Hypothermia -->
   <AlertHypothermia>Hypothermie</AlertHypothermia>
-  <!-- EN: These colonists are suffering from hypothermia.\n\n{0}\nMake sure their clothing is appropriate for the season and that indoor spaces are properly heated. -->
-  <AlertHypothermiaDesc>Die folgenden Kolonisten leiden an Unterkühlung.\n\n{0}\nStelle sicher, dass sie entsprechend der Jahreszeit gekleidet und Innenräume gut geheizt sind.</AlertHypothermiaDesc>
+  <!-- EN: These colonists are suffering from hypothermia:\n\n{0}\nMake sure their clothing is appropriate for the season and that indoor spaces are properly heated. -->
+  <AlertHypothermiaDesc>Folgende Kolonisten leiden an Unterkühlung:\n\n{0}\nStelle sicher, dass sie entsprechend der Jahreszeit gekleidet und Innenräume gut geheizt sind.</AlertHypothermiaDesc>
   
   <!-- EN: {0} patients await medical operation -->
   <PatientsAwaitingMedicalOperation>{0} Patient(en) warten auf ihre Operation</PatientsAwaitingMedicalOperation>
   <!-- EN: These patients await medical operation:\n\n{0}\nMake sure you have all necessary medical tools and a free doctor available. -->
-  <PatientsAwaitingMedicalOperationDesc>Diese Patienten warten auf einen chirurgischen Eingriff:\n\n{0}\nStelle sicher, dass Du das benötigte medizinische Material sowie einen Arzt zur Verfügung stehen hast.</PatientsAwaitingMedicalOperationDesc>
+  <PatientsAwaitingMedicalOperationDesc>Folgende Patienten warten auf einen chirurgischen Eingriff:\n\n{0}\nStelle sicher, dass Du das benötigte medizinische Material sowie einen Arzt zur Verfügung stehen hast.</PatientsAwaitingMedicalOperationDesc>
 
   <!-- EN: Fire! -->
   <FireInHomeArea>Feuer!</FireInHomeArea>
@@ -191,10 +201,48 @@
   <NeedWarmClothesDesc1All>Alle Deine Kolonisten werden in der kalten Jahreszeit keine warme Kleidung haben.</NeedWarmClothesDesc1All>
   <!-- EN: The outdoor temperature is going to reach {0}.\n\nYou can tailor warm clothes at the tailoring bench, or buy them from traders. -->
   <NeedWarmClothesDesc2>Die Außentemperatur wird {0} erreichen.\n\nDu kannst warme Kleidung am Schneidertisch herstellen oder von Händlern kaufen.</NeedWarmClothesDesc2>
-  
+
   <!-- EN: Immobile caravan -->
   <ImmobileCaravan>Unbewegliche Karawane</ImmobileCaravan>
   <!-- EN: One of your caravans is immobile because it carries too much.\n\nYou can make the caravan mobile again by abandoning some items in the ITEMS tab. -->
   <ImmobileCaravanDesc>Eine Deiner Karawanen kann sich nicht bewegen, da sie zu viel transportiert.\n\nDu kannst sie wieder mobil machen, indem Du einige Gegenstände über den GEGENSTÄNDE-Tab entfernst.</ImmobileCaravanDesc>
+
+  <!-- EN: Building unusable due to roof -->
+  <BuildingCantBeUsedRoofed>Gebäude durch Dach unbenutzbar</BuildingCantBeUsedRoofed>
+  <!-- EN: One or more of your buildings can only be used if not roofed, but there is a roof over it. The building(s) won't be usable until you remove the roof. -->
+  <BuildingCantBeUsedRoofedDesc>Eines oder mehrere deiner Gebäude können nicht genutzt werden, weil sie überdacht sind. Entferne das Dach, um sie nutzbar zu machen.</BuildingCantBeUsedRoofedDesc>
+
+  <!-- EN: Heatstroke -->
+  <AlertHeatstroke>Hitzeschlag</AlertHeatstroke>
+  <!-- EN: The following people are suffering from heatstroke:\n\n{0}\nGet them to a cooler area. You can cool down rooms with passive coolers or electrical coolers. Deep underground spaces are also naturally cool, if separated from the outdoors by a door. -->
+  <AlertHeatstrokeDesc>Folgende Personen leiden an einem Hitzeschlag:\n\n{0}\nBringe sie in einen kühleren Bereich. Du kannst Räume mit passiver oder elektrischer Kühlung kühlen. Tiefe unterirdische Räume bieten ebenfalls eine natürliche Kühlung, sofern sie durch eine Tür von der Außenwelt abgeschirmt sind.</AlertHeatstrokeDesc>
+
+  <!-- EN: Guest unhappy -->
+  <QuestPartMoodBelowThreshold>Gast unglücklich</QuestPartMoodBelowThreshold>
+  <!-- EN: The quest {0} requires you to keep this person in a good mood. However, their mood is poor. Take some action to make them feel better:\n\n{1} -->
+  <QuestPartMoodBelowThresholdDesc>Die Quest '{0}' erfordert, dass du folgende Personen bei guter Laune hältst. Ihre Laune ist jedoch miserabel. Ergreife Maßnahmen, um ihre Laune zu heben:\n\n{1}</QuestPartMoodBelowThresholdDesc>
   
+  <!-- EN: Shuttle leaving in {0} -->
+  <QuestPartShuttleLeaveDelay>Shuttle verlässt uns in {0}</QuestPartShuttleLeaveDelay>
+  <!-- EN: The shuttle will leave in {1}. The quest {0} requires you to load the following people or items onto the shuttle before it leaves:\n\n{2} -->
+  <QuestPartShuttleLeaveDelayDesc>Das Shuttle verlässt uns in {1}. Die Quest '{0}' erfordert, dass du folgende Personen oder Gegenstände auf das Shuttle lädst, bevor es wegfliegt:\n\n{2}</QuestPartShuttleLeaveDelayDesc>
+
+  <!-- EN: Monument will be destroyed -->
+  <DisallowedBuildingInsideMonument>Denkmal wird zerstört</DisallowedBuildingInsideMonument>
+  <!-- EN: You've built a disallowed building inside one of your monuments. The monument will be considered destroyed in {0}. -->
+  <DisallowedBuildingInsideMonumentDesc>Du hast in einem deiner Denkmäler ein verbotenes Gebäude gebaut. Das Denkmal wird in {0} zerstört werden.</DisallowedBuildingInsideMonumentDesc>
+
+  <!-- EN: Countdown activator {0} -->
+  <ActivatorCountdown>Countdown-Aktivator {0}</ActivatorCountdown>
+  <!-- EN: There is a countdown activator ticking down, preparing to awaken nearby mechanoids. -->
+  <ActivatorCountdownDesc>Ein Countdown-Aktivator tickt herunter und bereitet sich darauf vor, nahegelegene Mechanoiden zu wecken.</ActivatorCountdownDesc>
+  <!-- EN: {0} countdown activators -->
+  <ActivatorCountdownMultiple>{0} Countdown-Aktivatoren</ActivatorCountdownMultiple>
+  <!-- EN: There are {0} countdown activators ticking down, preparing to awaken nearby mechanoids. -->
+  <ActivatorCountdownDescMultiple>{0} Countdown-Aktivatoren ticken herunter und bereiten sich darauf vor, nahegelegene Mechanoiden zu erwecken.</ActivatorCountdownDescMultiple>
+
+  <!-- EN: Quest expires in {0} -->
+  <QuestExpiresSoon>Quest läuft in {0} ab</QuestExpiresSoon>
+  <!-- EN: The quest '{0}' will expire in {1}. -->
+  <QuestExpiresSoonDesc>Die Quest '{0}' wird in {1} ablaufen.</QuestExpiresSoonDesc>
 </LanguageData>
