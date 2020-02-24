@@ -59,7 +59,7 @@
   <!-- EN: Plant -->
   <PlantVerb>Pflanzen</PlantVerb>
   <!-- EN: Copied bill cannot be pasted here. -->
-  <ClipboardBillNotAvailableHere>Die kopierte Aufgabe kann hier nicht eingefügt werden.</ClipboardBillNotAvailableHere>
+  <ClipboardBillNotAvailableHere>Kopiertes Rezept kann hier nicht eingefügt werden.</ClipboardBillNotAvailableHere>
   <!-- EN: Move up -->
   <ReorderBillUpTip>Aufwärts</ReorderBillUpTip>
   <!-- EN: Move down -->
@@ -81,23 +81,23 @@
   <!-- EN: Recruitment difficulty -->
   <RecruitmentDifficulty>Schwierigkeit der Anwerbung</RecruitmentDifficulty>
   <!-- EN: Recruitment chance -->
-  <RecruitmentChance>Anwerbungschance</RecruitmentChance>
+  <RecruitmentChance>Chance der Anwerbung</RecruitmentChance>
   <!-- EN: Recruit difficulty factor: {0}\nMood factor: {1}\nCombined base chance: {2} -->
-  <RecruitmentChanceExplanation>Faktor Anwerbeschwierigkeit: {0}\nFaktor durch Laune: {1}\nKombinierte Grundchance: {2}</RecruitmentChanceExplanation>
+  <RecruitmentChanceExplanation>Schwierigkeitsfaktor der Anwerbung: {0}\nStimmungsfaktor: {1}\nKombinierte Grundchance: {2}</RecruitmentChanceExplanation>
   <!-- EN: \n- - - - - - - - - -\nLast recruitment attempt\nRecruiter: {3}\nNegotiation ability factor: {4}\nOpinion factor: {5} ({6})\nFinal chance for {3}: {7} -->
-  <RecruitmentChanceWithLastRecruiterExplanationPart>\n----------------\nLetzter Anwerbeversuch\nAnwerber: {3}\nFaktor Verhandlungsqualität: {4}\nFaktor Meinung: {5} ({6})\nEndgültige Chance für {3}: {7}</RecruitmentChanceWithLastRecruiterExplanationPart>
+  <RecruitmentChanceWithLastRecruiterExplanationPart>\n- - - - - - - - - -\nLetzter Anwerbungsversuch\nAnwerber: {3}\nVerhandlungsfähigkeitsfaktor: {4}\nMeinungsfaktor: {5} ({6})\nFinale Chance für {3}: {7}</RecruitmentChanceWithLastRecruiterExplanationPart>
   <!-- EN: \nResistance reduction: {0} -->
   <RecruitmentLastRecruiterResistanceReduceExplanationPart>\nWiderstandsreduzierung: {0}</RecruitmentLastRecruiterResistanceReduceExplanationPart>
   <!-- EN: Relations gain on release -->
-  <PrisonerReleasePotentialRelationGains>Verbesserung der Beziehungen bei Freilassung</PrisonerReleasePotentialRelationGains>
+  <PrisonerReleasePotentialRelationGains>Beziehungsgewinn bei Freilassung</PrisonerReleasePotentialRelationGains>
   <!-- EN: The faction relations improvement you will get from the prisoner's faction if you release them. This is affected by the prisoner's health and mental condition. -->
-  <PrisonerReleaseRelationGainsDesc>Die Verbesserung der Beziehung, die Du erhälst, wenn Du den Gefangenen freiläßt. Sie wird beinflusst durch die Gesundheit und den geistigen Zustand des Gefangenen.</PrisonerReleaseRelationGainsDesc>
+  <PrisonerReleaseRelationGainsDesc>Die Verbesserung der Fraktionsbeziehungen, die du von der Fraktion des Gefangenen bekommst, wenn du ihn freilässt. Diese wird durch die Gesundheit und den psychischen Zustand des Gefangenen beeinflusst.</PrisonerReleaseRelationGainsDesc>
   <!-- EN: Prison break interval -->
   <PrisonBreakMTBDays>Gefängnisausbruchsintervall</PrisonBreakMTBDays>
   <!-- EN: The mean number of days of time awake between prison break attempts. Affected by mood, mobility and time since the last prison break.\n\nThis number ignores time spent sleeping, so the actual average prison break interval will usually be longer. -->
-  <PrisonBreakMTBDaysDescription>Die durchschnittliche Anzahl Tage zwischen Ausbruchsversuchen. Beeinflusst durch: Laune, Bewegung und Zeit seit dem letzten Ausbruchsversuch.\n\nDie Anzahl ignoriert Schlafzeit, von daher wird der durchschnittliche Ausbruchsintervall tatsächlich länger sein.</PrisonBreakMTBDaysDescription>
+  <PrisonBreakMTBDaysDescription>Die durchschnittliche Anzahl der Tage, die zwischen den Versuchen eines Gefängnisausbruchs liegen (während der Wachphase). Beeinflusst durch Stimmung, Mobilität und Zeit seit dem letzten Gefängnisausbruch.\n\nDiese Zahl ignoriert die mit Schlafen verbrachte Zeit, so dass das tatsächliche durchschnittliche Intervall zwischen den Gefängnisausbrüchen üblicherweise länger ist.</PrisonBreakMTBDaysDescription>
   <!-- EN: Slave price -->
-  <SlavePrice>Sklaven-Preis</SlavePrice>
+  <SlavePrice>Sklavenpreis</SlavePrice>
   <!-- EN: Gets food -->
   <GetsFood>Bekommt Essen</GetsFood>
   <!-- EN: Doctors care -->
@@ -183,13 +183,13 @@
   
   <!-- Medical - Body and activities condition -->
   <!-- EN: None -->
-  <None>Keine</None>
+  <None>Nein</None>
   <!-- EN: Very poor -->
-  <VeryPoor>Sehr schlecht</VeryPoor>
+  <VeryPoor>Kaum</VeryPoor>
   <!-- EN: Poor -->
   <Poor>Schlecht</Poor>
   <!-- EN: Weakened -->
-  <Weakened>Geschwächt</Weakened>
+  <Weakened>Reduziert</Weakened>
   <!-- EN: OK -->
   <GoodCondition>Ok</GoodCondition>
   <!-- EN: Enhanced -->
@@ -215,7 +215,7 @@
   <!-- EN: Trainability -->
   <Trainability>Trainierbarkeit</Trainability>
   <!-- EN: Requires {0} trainability. -->
-  <CannotTrainNotSmartEnough>Benötigte Trainierbarkeit: {0}</CannotTrainNotSmartEnough>
+  <CannotTrainNotSmartEnough>Benötigte Trainierbarkeit: {0_label}.</CannotTrainNotSmartEnough>
   <!-- EN: {1_labelShort} is too small to train this. -->
   <CannotTrainTooSmall>{1_labelShort} ist zu klein, um das zu lernen.</CannotTrainTooSmall>
 
@@ -228,7 +228,7 @@
   <!-- EN: Kidnapped -->
   <Kidnapped>Entführt</Kidnapped>
   <!-- EN: Lent to {FACTION_name}, returns in {1} -->
-  <Lent>An {FACTION_name} ausgeliehen, kommt in {1} zurück</Lent>
+  <Lent>Ausgeliehen an {FACTION_name}, Rückkehr in {1}</Lent>
   <!-- EN: Missing -->
   <Missing>Vermisst</Missing>
   <!-- EN: Slave -->
@@ -246,17 +246,17 @@
   
   <!-- Gear tab -->
   <!-- EN: Overall armor -->
-  <OverallArmor>Rüstungswert</OverallArmor>
+  <OverallArmor>Gesamtrüstung</OverallArmor>
   <!-- EN: Mass carried: {0} / {1} kg -->
   <MassCarried>Gewicht: {0} / {1} kg</MassCarried>
   <!-- EN: Comfortable temperature range -->
-  <ComfyTemperatureRange>Angenehmer Temperaturbereich</ComfyTemperatureRange>
+  <ComfyTemperatureRange>Wohlfühltemperaturbereich</ComfyTemperatureRange>
   <!-- EN: Blunt -->
-  <ArmorBlunt>Stumpf</ArmorBlunt>
+  <ArmorBlunt>Wucht</ArmorBlunt>
   <!-- EN: Sharp -->
-  <ArmorSharp>Scharf</ArmorSharp>
+  <ArmorSharp>Stich</ArmorSharp>
   <!-- EN: Heat -->
-  <ArmorHeat>Heiß</ArmorHeat>
+  <ArmorHeat>Hitze</ArmorHeat>
   
   <!-- Log tab -->
   <!-- EN: Show all -->
@@ -310,16 +310,16 @@
   <!-- EN: Remove {{0}}x {0} -->
   <RemoveSliderText>Entferne {{0}}x {0}</RemoveSliderText>
   <!-- EN: Contained items -->
-  <ContainedItems>Beinhaltete Gegenstände</ContainedItems>
+  <ContainedItems>Enthaltene Gegenstände</ContainedItems>
   <!-- EN: Do you really want to remove {0}? -->
-  <ConfirmRemoveItemDialog>Willst Du {0} wirklich entfernen?</ConfirmRemoveItemDialog>
+  <ConfirmRemoveItemDialog>Willst du {0} wirklich entfernen?</ConfirmRemoveItemDialog>
   
   <!-- Quests tab -->
   <!-- EN: Dismiss this quest and move it to the historical tab.\n\nThe quest can be un-dismissed at any time. Its effects and expiry times will proceed as normal. You won't recieve notifications about dismissed quests. -->
-  <DismissQuest>Lehne diese Quest ab und verschieb sie in den Historischen Reiter.\n\nDie Ablehnung der Quest kann jederzeit zurückgenommen werden. Ihre Auswirkungen und Ablaufzeit werden normal weiterlaufen und Du wirst keine mehr Nachrichten über diese Quest bekommen.</DismissQuest>
+  <DismissQuest>Verwirf diese Quest und verschiebe sie in den Historisch-Tab.\n\nDie Quest kann jederzeit wieder aufgenommen werden. Ihre Auswirkungen und Ablaufzeiten verlaufen normal. Du wirst keine Benachrichtigungen über verworfene Quests erhalten.</DismissQuest>
   <!-- EN: Un-dismiss this quest.\n\nThe quest will be returned to the available or active tab, and notifications will be re-enabled. -->
-  <UnDismissQuest>Ablehnung der Quest zurücknehmen.\n\nDie Quest wird in den verfügbaren bzw. aktiven Reiter verschoben, Nachrichten werden wieder aktiviert.</UnDismissQuest>
+  <UnDismissQuest>Nimm diese Quest wieder auf.\n\nDie Quest wird in den Verfügbar- oder Aktiv-Tab zurückgeschoben, und die Benachrichtigungen werden wieder aktiviert.</UnDismissQuest>
   <!-- EN: This quest is here because it was dismissed.\n\nYou can un-dismiss it until it expires. -->
-  <QuestDismissed>Diese Quest ist hier, da sie abgelehnt wurde.\n\nDu kannst die Ablehnung zurücknehmen, bis sie endgültig abgelaufen ist.</QuestDismissed>
+  <QuestDismissed>Diese Quest ist hier, weil sie verworfen wurde.\n\nDu kannst sie bis zum Ablauf der Frist wieder aufnehmen.</QuestDismissed>
 
 </LanguageData>

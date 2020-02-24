@@ -7,7 +7,7 @@
   <!-- EN: {0} from {1} are beginning their assault. -->
   <MessageRaidersBeginningAssault>{0} der Fraktion '{1}' starten ihren Angriff.</MessageRaidersBeginningAssault>
   <!-- EN: {0} from {1} have detected you and begun their assault early. -->
-  <MessageRaidersDetectedEarlyAssault>{0} der Fraktion '{1}' haben Dich gesehen und greifen an.</MessageRaidersDetectedEarlyAssault>
+  <MessageRaidersDetectedEarlyAssault>{0} der Fraktion '{1}' haben dich gesehen und greifen an.</MessageRaidersDetectedEarlyAssault>
   <!-- EN: {0} from {1} have decided to kidnap who they can and leave. -->
   <MessageRaidersKidnapping>{0} der Fraktion '{1}' haben sich entschieden, jeden in der Nähe zu entführen und das Gebiet zu verlassen.</MessageRaidersKidnapping>
   <!-- EN: {0} from {1} have decided to steal what they can and leave. -->
@@ -35,7 +35,7 @@
   <!-- EN: {0} worn by {1_nameFull} deteriorated away to nothing. -->
   <MessageWornApparelDeterioratedAway>Die Ausrüstung {0} von {1_nameFull} ist zerfallen.</MessageWornApparelDeterioratedAway>
   <!-- EN: {0} has deteriorated away in storage. -->
-  <MessageDeterioratedAway>{0} ist im Lager verfallen.</MessageDeterioratedAway>
+  <MessageDeterioratedAway>{0} ist im Lager zerfallen.</MessageDeterioratedAway>
 
   <!-- EN: {0} has begun. -->
   <MessageSeasonBegun>{0} hat angefangen.</MessageSeasonBegun>
@@ -62,7 +62,7 @@
   <MessageOutOfNearbyShellsFor>{PAWN_labelShort} hat keine verfügbaren Geschosse für {GUN_label} in der Nähe gefunden.</MessageOutOfNearbyShellsFor>
 
   <!-- EN: Warning: {ANIMAL_kindBasePlural} have a {1} base chance to attack when harmed. Chance depends on range and hunter stealth stat. -->
-  <MessageAnimalsGoPsychoHunted>Achtung: {ANIMAL_kindBasePlural} haben eine {1} Chance, anzugreifen, wenn ein Jäger sie in Gewehrreichweite verletzt. Die Chance ist höher, je näher der Jäger dran ist, und niedriger, je höher dessen Tarnfähigkeit ist.</MessageAnimalsGoPsychoHunted>
+  <MessageAnimalsGoPsychoHunted>Achtung: {ANIMAL_kindBasePlural} haben eine grundsätzliche Chance von {1}, anzugreifen, wenn sie verletzt werden. Die Höhe der Chance variiert je nach Reichweite und Tarnfähigkeit des Jägers.</MessageAnimalsGoPsychoHunted>
   <!-- EN: Warning: {ANIMAL_kindBasePlural} may attack upon failed taming attempts ({1} chance). -->
   <MessageAnimalManhuntsOnTameFailed>Warnung: {ANIMAL_kindBasePlural} können angreifen, wenn das Zähmen fehlschlägt ({1} Chance).</MessageAnimalManhuntsOnTameFailed>
   
@@ -73,7 +73,7 @@
   <!-- EN: {RECRUITER_labelShort} successfully tamed {1} ({2} chance). -->
   <MessageTameSuccess>{RECRUITER_labelShort} hat erfolgreich das Tier ({RECRUITEE_kind}) gezähmt ({2} Chance).</MessageTameSuccess>
   <!-- EN: {RECRUITER_labelShort} successfully tamed {1} ({2} chance). It is now called {RECRUITEE_nameFull}. -->
-  <MessageTameAndNameSuccess>{RECRUITER_labelShort} hat erfolgreich das Tier ({RECRUITEE_kind}) gezähmt ({2} Chance) und nannte es '{RECRUITEE_nameFull}'.</MessageTameAndNameSuccess>
+  <MessageTameAndNameSuccess>{RECRUITER_labelShort} hat erfolgreich das Tier ({RECRUITEE_kind}) gezähmt ({2} Chance). Es heißt nun '{RECRUITEE_nameFull}'.</MessageTameAndNameSuccess>
 
   <!-- EN: The colony cannot afford this deal. -->
   <MessageColonyCannotAfford>Die Kolonie kann sich diesen Handel nicht leisten.</MessageColonyCannotAfford>
@@ -157,13 +157,13 @@
   <MessageGaveBirth>{0} hat ein Junges zur Welt gebracht.</MessageGaveBirth>
   
   <!-- EN: {PAWN_labelShort} won't be able to use the psychic amplifier while {PAWN_pronoun} has zero psychic sensitivity. -->
-  <MessagePsychicAmplifierNoSensitivity>{PAWN_labelShort} wird den psychischen Verstärker nicht verwenden, solange {PAWN_pronoun} psychisch unsensibel ist.</MessagePsychicAmplifierNoSensitivity>
+  <MessagePsychicAmplifierNoSensitivity>{PAWN_labelShort} wird nicht in der Lage sein, den psychischen Verstärker zu benutzen, wenn er eine psychische Sensibilität von Null hat.</MessagePsychicAmplifierNoSensitivity>
   <!-- EN: {PAWN_labelShort} has lost a {1} implant level due to {2}. -->
-  <MessageLostImplantLevelFromHediff>{PAWN_labelShort} hat einen {1} Implantat-Level aufgrund von {2} verloren.</MessageLostImplantLevelFromHediff>
+  <MessageLostImplantLevelFromHediff>{PAWN_labelShort} hat {1} Implantatsstufen durch {2} verloren.</MessageLostImplantLevelFromHediff>
   <!-- EN: {PAWN_labelShort} has suffered {1} points of brain damage due to {2}. -->
-  <MessageReceivedBrainDamageFromHediff>{PAWN_labelShort} hat einen Gehirnschaden von {1} Punkten aufgrund von {2} erlitten.</MessageReceivedBrainDamageFromHediff>
+  <MessageReceivedBrainDamageFromHediff>{PAWN_labelShort} hat {1} Hirnschadenspunkte durch {2} erlitten.</MessageReceivedBrainDamageFromHediff>
   <!-- EN: {PAWN_labelShort} has exceeded the safe limit of psychic entropy. -->
-  <MessageWentOverPsychicEntropyLimit>{PAWN_labelShort} hat den sicheren Bereich der psyschischen Entropie überschritten.</MessageWentOverPsychicEntropyLimit>
+  <MessageWentOverPsychicEntropyLimit>{PAWN_labelShort} hat den psychischen Entropiegrenzwert überschritten.</MessageWentOverPsychicEntropyLimit>
 
   <!-- EN: {NAMER_nameFull} has named {1} {NAMEE_nameFull} after being nuzzled. -->
   <MessageNuzzledPawnGaveNameTo>{NAMER_nameFull} benannte '{1}' in '{NAMEE_nameFull}' um, nachdem es gehätschelt wurde.</MessageNuzzledPawnGaveNameTo>
@@ -292,7 +292,7 @@
   <MessagePermanentWoundHealed>{PAWN_labelShort}'s {2} ist verheilt. Ursache: {0}</MessagePermanentWoundHealed>
   
   <!-- EN: [PAWN_nameDef] has recovered and decided to leave. -->
-  <MessageRescueeDidntJoin>[PAWN_nameDef] hat sich erholt und ist entschlossen zu gehen.</MessageRescueeDidntJoin>
+  <MessageRescueeDidntJoin>[PAWN_nameDef] hat sich erholt und beschlossen, zu gehen.</MessageRescueeDidntJoin>
   
   <!-- EN: Some transport pods are unreachable. -->
   <MessageTransporterUnreachable>Einige Transportkapseln können nicht erreicht werden.</MessageTransporterUnreachable>
@@ -302,14 +302,14 @@
   <!-- EN: The loading process has been canceled because one of the transport pods has been destroyed. -->
   <MessageTransportersLoadCanceled_TransporterDestroyed>Der Beladevorgang wurde abgebrochen, da eine der Transportkapseln zerstört wurde.</MessageTransportersLoadCanceled_TransporterDestroyed>
   <!-- EN: The loading process has been canceled because the shuttle has been destroyed. -->
-  <MessageTransporterSingleLoadCanceled_TransporterDestroyed>Der Beladevorgang wurde abgebrochen, da das Schuttle zerstört wurde.</MessageTransporterSingleLoadCanceled_TransporterDestroyed>
+  <MessageTransporterSingleLoadCanceled_TransporterDestroyed>Der Beladungsvorgang wurde abgebrochen, weil das Shuttle zerstört wurde.</MessageTransporterSingleLoadCanceled_TransporterDestroyed>
   <!-- EN: The loading process has been canceled because one of the pod launchers has been destroyed. -->
   <MessageTransportersLoadCanceled_FuelingPortGiverDeSpawned>Der Beladevorgang wurde abgebrochen, da eine der Abschussrampen zerstört wurde.</MessageTransportersLoadCanceled_FuelingPortGiverDeSpawned>
   
   <!-- EN: Assigned items and people will now be loaded into the transport pods. -->
-  <MessageTransportersLoadingProcessStarted>Die zugewiesenen Gegenstände und Personen werden jetzt in die Transportkapseln geladen.</MessageTransportersLoadingProcessStarted>
+  <MessageTransportersLoadingProcessStarted>Zugewiesene Gegenstände und Kolonisten werden jetzt in die Transportkapseln geladen.</MessageTransportersLoadingProcessStarted>
   <!-- EN: Assigned items and people will now be loaded into the shuttle. -->
-  <MessageTransporterSingleLoadingProcessStarted>Die zugewiesenen Gegenstände und Personen werden jetzt in das Shuttle geladen.</MessageTransporterSingleLoadingProcessStarted>
+  <MessageTransporterSingleLoadingProcessStarted>Zugewiesene Gegenstände und Kolonisten werden jetzt in den Shuttle geladen.</MessageTransporterSingleLoadingProcessStarted>
   
   <!-- EN: Your transport pods have arrived. -->
   <MessageTransportPodsArrived>Deine Transportkapseln sind angekommen.</MessageTransportPodsArrived>
@@ -319,9 +319,9 @@
   <MessageTransportPodsArrivedAndAddedToCaravan>Deine Transportkapseln sind angekommen. Der Inhalt wurde {0} hinzugefügt.</MessageTransportPodsArrivedAndAddedToCaravan>
   
   <!-- EN: Transport pod loading complete. Launch when ready. -->
-  <MessageFinishedLoadingTransporters>Die Transportkapsel ist fertig beladen. Start sobald bereit.</MessageFinishedLoadingTransporters>
+  <MessageFinishedLoadingTransporters>Transportkapseln wurden beladen und sind startbereit.</MessageFinishedLoadingTransporters>
   <!-- EN: Shuttle is loaded with required cargo and can launch when ready. -->
-  <MessageFinishedLoadingTransporterSingle>Das Shuttle ist mit der benötigten Fracht beladen und kann jederzeit abheben.</MessageFinishedLoadingTransporterSingle>
+  <MessageFinishedLoadingTransporterSingle>Shuttle wurde mit der erforderlichen Fracht beladen und ist startbereit.</MessageFinishedLoadingTransporterSingle>
 
   <!-- EN: Your {1} can't finish loading the transport pods because some items or people became unavailable ({2_labelShort}). -->
   <MessageCantLoadMoreIntoTransporters>{1} kann die Transportkapsel nicht vollständig befüllen, da einige Personen oder Gegenstände nicht mehr verfügbar sind ({2_labelShort}).</MessageCantLoadMoreIntoTransporters>
@@ -338,17 +338,17 @@
   <MessageCantBanishLastColonist>Du kannst den letzten Kolonisten nicht verbannen.</MessageCantBanishLastColonist>
 
   <!-- EN: Cannot equip: {0}. -->
-  <MessageCantEquipCustom>Kann nicht ausrüsten: {0}.</MessageCantEquipCustom>
+  <MessageCantEquipCustom>Kann nicht ausgerüstet werden: {0}</MessageCantEquipCustom>
   <!-- EN: Cannot equip: {1_labelShort} is incapable of violence. -->
   <MessageCantEquipIncapableOfViolence>Kann nicht ausgerüstet werden: {1_labelShort} verweigert Gewalt.</MessageCantEquipIncapableOfViolence>
   <!-- EN: Cannot equip: Incapable. -->
-  <MessageCantEquipIncapableOfManipulation>Kann nicht ausrüsten: Nicht möglich.</MessageCantEquipIncapableOfManipulation>
+  <MessageCantEquipIncapableOfManipulation>Kann nicht ausgerüstet werden: Unmöglich.</MessageCantEquipIncapableOfManipulation>
   <!-- EN: Cannot wear: {1_labelShort} is missing required body parts. -->
-  <MessageCantWearApparelMissingBodyParts>Kann nicht tragen: {1_labelShort} hat die notwendigen Körperteile nicht.</MessageCantWearApparelMissingBodyParts>
+  <MessageCantWearApparelMissingBodyParts>Kann nicht getragen werden: {1_labelShort} fehlen die erforderlichen Körperteile.</MessageCantWearApparelMissingBodyParts>
   <!-- EN: This person refuses to remove this. -->
-  <MessageCantUnequipLockedApparel>Diese Person weigert sich das zu entfernen.</MessageCantUnequipLockedApparel>
+  <MessageCantUnequipLockedApparel>Diese Person weigert sich, dies zu entfernen.</MessageCantUnequipLockedApparel>
   <!-- EN: Cannot wear: This would replace apparel {1_labelShort} refues to remove. -->
-  <MessageWouldReplaceLockedApparel>Kann nicht tragen: Es würde Kleidung ersetzen, die {1_labelShort} nicht entfernen will.</MessageWouldReplaceLockedApparel>
+  <MessageWouldReplaceLockedApparel>Kann nicht getragen werden: Dies würde die Kleidung ersetzen, die {1_labelShort} sich weigert zu entfernen.</MessageWouldReplaceLockedApparel>
   
   <!-- EN: Because they are bonded, slaughtering {DESIGNATED_labelShort} will make {BONDED_labelShort} unhappy. -->
   <MessageSlaughteringBondedAnimal>Da es {BONDED_possessive} Haustier ist, wird das Schlachten von {DESIGNATED_labelShort} {BONDED_labelShort} unglücklich machen.</MessageSlaughteringBondedAnimal>
@@ -356,23 +356,23 @@
   <!-- EN: {0} has run out of food ({PAWN_label}). -->
   <MessageCaravanRanOutOfFood>{0} hat keine Nahrung mehr ({PAWN_label}).</MessageCaravanRanOutOfFood>
   <!-- EN: {PAWN_definite}'s corpse has been picked up by the caravan. It is heavy and may immobilize the caravan, but can be left behind in the caravan items tab. -->
-  <MessageCaravanDeathCorpseAddedToInventory>Die Leiche von {PAWN_definite} wurde von der Karawane aufgenommen. Sie ist schwer und kann die Karawane bewegungsunfähig machen, aber über den Gegenstandsreiter der Karawane kann sie auch zurückgelassen werden.</MessageCaravanDeathCorpseAddedToInventory>
+  <MessageCaravanDeathCorpseAddedToInventory>{PAWN_definite}'s Leiche wurde von der Karawane eingesammelt. Sie ist schwer und kann die Karawane lahmlegen, allerdings kann sie im Karawanengegenstände-Tab zurückgelassen werden.</MessageCaravanDeathCorpseAddedToInventory>
 
   <!-- EN: To form a caravan, select your own colony or a site where you have people. -->
-  <MessageSelectOwnBaseToFormCaravan>Um eine Karawane zu formieren, wähle Deine Kolonie aus.</MessageSelectOwnBaseToFormCaravan>
+  <MessageSelectOwnBaseToFormCaravan>Um eine Karawane zu formieren, wähle deine Kolonie aus.</MessageSelectOwnBaseToFormCaravan>
 
   <!-- EN: At this resolution and UI scale, the game interface would not fit on-screen. Please reduce UI scale or increase resolution. -->
-  <MessageScreenResTooSmallForUIScale>Bei dieser Auflösung und UI-Skalierung wird das Spiel-Interface nicht auf den Bildschirm passen. Reduziere Deine UI-Skalierung oder erhöhe die Auflösung.</MessageScreenResTooSmallForUIScale>
+  <MessageScreenResTooSmallForUIScale>Bei dieser Auflösung und UI-Skalierung wird das Spiel-Interface nicht auf den Bildschirm passen. Reduziere deine UI-Skalierung oder erhöhe die Auflösung.</MessageScreenResTooSmallForUIScale>
   
   <!-- EN: You have to reform the caravan now. Everyone left behind will be abandoned. -->
-  <MessageYouHaveToReformCaravanNow>Du musst Deine Karawane jetzt neu bilden. Auf Zurückgelassene kann nicht mehr zugegriffen werden.</MessageYouHaveToReformCaravanNow>
+  <MessageYouHaveToReformCaravanNow>Du musst deine Karawane jetzt neu bilden. Auf Zurückgelassene kann nicht mehr zugegriffen werden.</MessageYouHaveToReformCaravanNow>
   
   <!-- EN: {0} from {1} are attacking your {2}. -->
-  <MessageDefendersAttacking>{0} der Fraktion '{1}' greifen Deine {2} an.</MessageDefendersAttacking>
+  <MessageDefendersAttacking>{0} der Fraktion '{1}' greifen {2} an.</MessageDefendersAttacking>
   <!-- EN: Mechanoids have been assembled and are attacking. -->
-  <MessageMechanoidsAssembled>Mechanoiden haben sich gesammelt und greifen an.</MessageMechanoidsAssembled>
+  <MessageMechanoidsAssembled>Mechanoiden wurden zusammengebaut und greifen an.</MessageMechanoidsAssembled>
   <!-- EN: Mech drop beacon has summoned reinforcements in drop pods nearby. -->
-  <MessageMechanoidsReinforcementsDrop>Mechanoiden-Funkfeuer hat Nachschub mit Transportkapseln in der Nähe angefordert.</MessageMechanoidsReinforcementsDrop>
+  <MessageMechanoidsReinforcementsDrop>Ein Mech-Abwurf-Signalgerät hat in der Nähe Landungskapseln mit neuen Mechanoiden herbeigerufen.</MessageMechanoidsReinforcementsDrop>
 
   <!-- EN: To self-tend, {1_labelShort} must also be assigned to Doctor work. -->
   <MessageSelfTendUnsatisfied>Zum Selber-Verarzten muss {1_labelShort} die Arbeit 'Behandeln' zugewiesen sein.</MessageSelfTendUnsatisfied>
@@ -389,7 +389,7 @@
   <MessageCantRemoveWaypointBecauseFirst>Du kannst diesen Wegpunkt nicht entfernen.</MessageCantRemoveWaypointBecauseFirst>
   
   <!-- EN: None of your wardens is capable of violence. The execution won't be performed. -->
-  <MessageCantDoExecutionBecauseNoWardenCapableOfViolence>Keiner Deiner Gefängniswärter ist fähig Gewalt anzuwenden. Die Hinrichtung kann nicht ausgeführt werden.</MessageCantDoExecutionBecauseNoWardenCapableOfViolence>
+  <MessageCantDoExecutionBecauseNoWardenCapableOfViolence>Keiner deiner Gefängniswärter ist fähig Gewalt anzuwenden. Die Hinrichtung kann nicht ausgeführt werden.</MessageCantDoExecutionBecauseNoWardenCapableOfViolence>
   
   <!-- EN: You have defeated all enemies. In {0}, the caravan will automatically be reformed. -->
   <MessageSiteCountdownBecauseNoMoreEnemies>Du hast alle Gegner besiegt. In {0} wird sich die Karawane automatisch regruppieren.</MessageSiteCountdownBecauseNoMoreEnemies>
@@ -402,7 +402,7 @@
   <!-- EN: {0} have woken up. -->
   <MessageSleepingPawnsWokenUp>{0} sind aufgewacht.</MessageSleepingPawnsWokenUp>
   <!-- EN: Mech cluster buildings have been defeated. -->
-  <MessageMechClusterDefeated>Die Gebäude des Mech-Verbundes wurden besiegt.</MessageMechClusterDefeated>
+  <MessageMechClusterDefeated>Mech-Cluster-Gebäude wurden zerstört.</MessageMechClusterDefeated>
 
   <!-- EN: Item produced: {0}. -->
   <MessageCompSpawnerSpawnedItem>Gegenstand hergestellt: {0}.</MessageCompSpawnerSpawnedItem>
@@ -468,7 +468,7 @@
   <!-- EN: harvested {0} -->
   <GoodwillChangedReason_RemovedBodyPart>erntete {0}</GoodwillChangedReason_RemovedBodyPart>
   <!-- EN: downgraded {0} -->
-  <GoodwillChangedReason_DowngradedImplant>{0} herabgestuft</GoodwillChangedReason_DowngradedImplant>
+  <GoodwillChangedReason_DowngradedImplant>hat {0} herabgestuft</GoodwillChangedReason_DowngradedImplant>
   <!-- EN: needlessly installed {0} -->
   <GoodwillChangedReason_NeedlesslyInstalledWorseBodyPart>unnötigerweise installiert {0}</GoodwillChangedReason_NeedlesslyInstalledWorseBodyPart>
   <!-- EN: captured {1_labelShort} -->
@@ -494,11 +494,11 @@
   <!-- EN: finished a quest -->
   <GoodwillChangedReason_FinishedQuest>hat eine Quest abgeschlossen</GoodwillChangedReason_FinishedQuest>
   <!-- EN: {PAWN_labelShort} used {CULPRIT} -->
-  <GoodwillChangedReason_UsedForbiddenThing>{PAWN_labelShort} verwendete {CULPRIT}</GoodwillChangedReason_UsedForbiddenThing>
+  <GoodwillChangedReason_UsedForbiddenThing>{PAWN_labelShort} hat {CULPRIT} verwendet</GoodwillChangedReason_UsedForbiddenThing>
   <!-- EN: sold {0_labelShort} -->
-  <GoodwillChangedReason_SoldPawn>verkaufte {0_labelShort}</GoodwillChangedReason_SoldPawn>
+  <GoodwillChangedReason_SoldPawn>hat {0_labelShort} verkauft</GoodwillChangedReason_SoldPawn>
   <!-- EN: euthanized {PAWN_labelShort} -->
-  <GoodwillChangedReason_EuthanizedPawn>{PAWN_labelShort} eingeschläfert</GoodwillChangedReason_EuthanizedPawn>
+  <GoodwillChangedReason_EuthanizedPawn>hat {PAWN_labelShort} eingeschläfert</GoodwillChangedReason_EuthanizedPawn>
 
   <!-- EN: {0} accept your gift but they don't appreciate it. -->
   <MessageGiftGivenButNotAppreciated>{0} nahmen das Geschenk an, würdigen es aber nicht.</MessageGiftGivenButNotAppreciated>
@@ -538,13 +538,13 @@
   <MessageCaravanArrivalActionNoLongerValid>{0} konnte das Ziel nicht erreichen.</MessageCaravanArrivalActionNoLongerValid>
 
   <!-- EN: You can't re-enter for another {0} days. -->
-  <MessageEnterCooldownBlocksEntering>Du kannst für die nächsten {0} Tage nicht wieder eintreten.</MessageEnterCooldownBlocksEntering>
+  <MessageEnterCooldownBlocksEntering>Du kannst dies erst in {0} Tagen wieder betreten.</MessageEnterCooldownBlocksEntering>
 
   <!-- EN: {0_labelShort} can now freely use "{1}". -->
-  <MessagePermitCooldownFinished>{0_labelShort} kann jetzt problemlos '{1}' verwenden.</MessagePermitCooldownFinished>
+  <MessagePermitCooldownFinished>{0_labelShort} kann nun ungehindert "{1}" verwenden.</MessagePermitCooldownFinished>
 
   <!-- EN: {PREDATOR} is hunting {PREY_definite} ({PREY_kindBase}) for food! -->
-  <MessagePredatorHuntingPlayerAnimal>Ein {PREDATOR_label} macht Jagd auf {PREY_definite} ({PREY_kindBase})!</MessagePredatorHuntingPlayerAnimal>
+  <MessagePredatorHuntingPlayerAnimal>Ein {PREDATOR_label} macht Jagd auf {PREY_definite}!</MessagePredatorHuntingPlayerAnimal>
 
   <!-- EN: Prisoner {PRISONER_labelShort}'s resistance has been broken by {WARDEN_labelShort}. -->
   <MessagePrisonerResistanceBroken>{WARDEN_labelShort} hat den Widerstand von {PRISONER_labelShort} gebrochen.</MessagePrisonerResistanceBroken>
@@ -552,13 +552,13 @@
   <MessagePrisonerResistanceBroken_RecruitAttempsWillBegin>Anwerbungsversuche können jetzt erfolgen.</MessagePrisonerResistanceBroken_RecruitAttempsWillBegin>
 
   <!-- EN: Another mod with the package ID {0} is already active. Deactivate {1} before trying to activate this. -->
-  <MessageModWithPackageIdAlreadyEnabled>Es ist bereits eine Mod mit der ID {0} aktiv. Deaktiviere {1} bevor Du diesen Mod aktivierst.</MessageModWithPackageIdAlreadyEnabled>
+  <MessageModWithPackageIdAlreadyEnabled>Ein anderer Mod mit der Paket-ID {0} ist bereits aktiv. Deaktiviere {1}, bevor du versuchst, diesen zu aktivieren.</MessageModWithPackageIdAlreadyEnabled>
   <!-- EN: Disable all mods before using this tool. -->
-  <MessageDisableModsBeforeCleaningTranslationFiles>Deaktiviere alle Modifikationen, bevor Du dieses Werkzeug verwendest.</MessageDisableModsBeforeCleaningTranslationFiles>
+  <MessageDisableModsBeforeCleaningTranslationFiles>Deaktiviere alle Modifikationen bevor du dieses Werkzeug verwendest.</MessageDisableModsBeforeCleaningTranslationFiles>
   <!-- EN: Unpack and then delete all compressed translation files for this language before using this tool. -->
-  <MessageUnpackBeforeCleaningTranslationFiles>Entpacke und lösche alle gepackten Übersetzungsdateien dieser Sprache, bevor Du dieses Tool benutzt.</MessageUnpackBeforeCleaningTranslationFiles>
+  <MessageUnpackBeforeCleaningTranslationFiles>Entpacke alle komprimierten Übersetzungsdateien dieser Sprache und lösche sie danach, bevor du dieses Tool benutzt.</MessageUnpackBeforeCleaningTranslationFiles>
   <!-- EN: Done. Affected folders: {0} -->
-  <MessageTranslationFilesCleanupDone>Erledigt. Bereinigte Verzeichnisse: {0}</MessageTranslationFilesCleanupDone>
+  <MessageTranslationFilesCleanupDone>Erledigt. Betroffene Ordner: {0}</MessageTranslationFilesCleanupDone>
 
   <!-- EN: One of the translation files ({0}) couldn't be loaded. All XML parsing errors must be resolved first. -->
   <MessageCantCleanupTranslationFilesBeucaseOfXmlError>Eine Übersetzungsdatei ({0}) konnte nicht geladen werden. Zuerst müssen alle XML-Parsing-Fehler behoben werden.</MessageCantCleanupTranslationFilesBeucaseOfXmlError>
@@ -570,36 +570,36 @@
   <MessageCantShootInMelee>Kann im Nahkampf nicht schießen.</MessageCantShootInMelee>
 
   <!-- EN: None of your {0} can accept this quest now. -->
-  <MessageNoColonistCanAcceptQuest>Niemand Deiner {0} kann diese Quest aktuell annehmen.</MessageNoColonistCanAcceptQuest>
+  <MessageNoColonistCanAcceptQuest>Keiner deiner {0} kann diese Quest jetzt annehmen.</MessageNoColonistCanAcceptQuest>
   <!-- EN: Cannot accept this quest. -->
   <MessageCannotAcceptQuest>Kann diese Quest nicht annehmen.</MessageCannotAcceptQuest>
   <!-- EN: {0_definite} has accepted a quest: {1} -->
   <MessageQuestAccepted>{0_definite} hat eine Quest angenommen: {1}</MessageQuestAccepted>
   <!-- EN: {0} is leaving. -->
-  <MessagePawnLeaving>{0} geht.</MessagePawnLeaving>
+  <MessagePawnLeaving>{0} geht weg.</MessagePawnLeaving>
   <!-- EN: {0} are leaving. -->
-  <MessagePawnsLeaving>{0} gehen.</MessagePawnsLeaving>
+  <MessagePawnsLeaving>{0} gehen weg.</MessagePawnsLeaving>
 
   <!-- EN: Warning: {0_label} can't be moved once installed. -->
-  <MessageThingInstalledPermanently>Warnung: Sobald {0_label} installiert ist, kann es nicht mehr bewegt werden.</MessageThingInstalledPermanently>
+  <MessageThingInstalledPermanently>Warnung: {0_label} kann nach verschoben werden, nachdem es installiert wurde.</MessageThingInstalledPermanently>
 
   <!-- EN: The monument has been destroyed because you've built a disallowed building inside. -->
-  <MessageMonumentDestroyedBecauseOfDisallowedBuilding>Das Monument wurde zerstört, da Du ein nicht erlaubtes Gebäude hineingebaut hast.</MessageMonumentDestroyedBecauseOfDisallowedBuilding>
+  <MessageMonumentDestroyedBecauseOfDisallowedBuilding>Das Denkmal wurde zerstört, weil du im Inneren ein verbotenes Bauwerk errichtet hast.</MessageMonumentDestroyedBecauseOfDisallowedBuilding>
 
   <!-- EN: Cannot apply: No reachable, un-reserved research bench available. -->
-  <MessageNoResearchBenchForTechprint>Kann nicht angewandt werden: Kein erreichbares und nicht-reserviertes Forschungslabor verfügbar.</MessageNoResearchBenchForTechprint>
+  <MessageNoResearchBenchForTechprint>Kein erreichbarer, unbesetzter Labortisch verfügbar.</MessageNoResearchBenchForTechprint>
 
   <!-- EN: No valid destination found for {0} -->
   <NoValidDestinationFound>Kein gültiges Ziel für {0} gefunden</NoValidDestinationFound>
   
   <!-- Research -->
   <!-- EN: Warning: Research will not begin until you build a research bench. -->
-  <MessageResearchMenuWithoutBench>Warnung: Es wird nicht geforscht, solange kein Forschungslabor errichtet ist.</MessageResearchMenuWithoutBench>
+  <MessageResearchMenuWithoutBench>Warnung: Die Forschung wird erst begonnen, wenn du einen Labortisch gebaut hast.</MessageResearchMenuWithoutBench>
 
   <!-- EN: {0_indefinite} has triggered a proximity activator. -->
-  <MessageActivatorProximityTriggered>{0_indefinite} hat einen Näherungsaktivator ausgelöst.</MessageActivatorProximityTriggered>
+  <MessageActivatorProximityTriggered>{0_indefinite} hat einen Näherungsschalter ausgelöst.</MessageActivatorProximityTriggered>
 
   <!-- EN: {0_label} is currently hidden. -->
-  <MessageCannotSelectInvisibleStat>{0_label} ist aktuell versteckt.</MessageCannotSelectInvisibleStat>
+  <MessageCannotSelectInvisibleStat>{0_label} ist derzeit versteckt.</MessageCannotSelectInvisibleStat>
 
 </LanguageData>

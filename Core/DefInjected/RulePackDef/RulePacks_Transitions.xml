@@ -16,17 +16,18 @@
     <li>died(SUBJECT_flesh==Mechanoid)->lost power</li>
   -->
   <Transition_Died.rulePack.rulesStrings>
-    <li>die(p=2)->sterben</li>
-    <li>die->verenden</li>
-    <li>die->verrecken</li>
-    <li>die(subject_flesh!=Mechanoid,p=0.5)->an [SUBJECT_possessive]en Verletzungen sterben</li>
-    <li>die(subject_flesh==Mechanoid,p=0.5)->abschalten</li>
-    <li>die(subject_flesh==Mechanoid,p=0.5)->aufhören zu funktionieren</li>
-    <li>died(p=2)->starb</li>
-    <li>died->erlag den Verletzungen</li>
+    <li>die(SUBJECT_flesh!=Mechanoid,p=2)->sterben</li>
+    <li>die(SUBJECT_flesh!=Mechanoid)->verenden</li>
+    <li>die(SUBJECT_flesh!=Mechanoid)->verrecken</li>
+    <li>die(subject_flesh==Mechanoid)->abschalten</li>
+    <li>die(subject_flesh==Mechanoid)->aufhören zu funktionieren</li>
+    <li>die(SUBJECT_flesh==Mechanoid)->Energie verlieren</li>
+    <li>died(SUBJECT_flesh!=Mechanoid,p=2)->starb</li>
+    <li>died(SUBJECT_flesh!=Mechanoid)->erlag den Verletzungen</li>
     <li>died(subject_flesh!=Mechanoid)->verschied</li>
     <li>died(subject_flesh==Mechanoid)->schaltete sich ab</li>
     <li>died(subject_flesh==Mechanoid)->hörte auf zu funktionieren</li>
+    <li>died(SUBJECT_flesh==Mechanoid)->verlor Energie</li>
   </Transition_Died.rulePack.rulesStrings>
   
   <!-- EN:
@@ -74,8 +75,8 @@
     <li>flavor(p=4)->in einem [fireball]</li>
     <li>flavor(p=4)-></li>
     <li>flavorsuffix->und verteilte [everywhere] [pieces]</li>
-    <li>flavorsuffix(subject_flesh!=Mechanoid,p=2)->und verteilte [everywhere] [Gore]</li>
-    <li>flavorsuffix(subject_flesh!=Mechanoid)->, nur ein kleiner Haufen [Gore] bleibt zurück</li>
+    <li>flavorsuffix(SUBJECT_flesh!=Mechanoid,p=2)->und verteilte [everywhere] [Gore]</li>
+    <li>flavorsuffix(SUBJECT_flesh!=Mechanoid)->, nur ein kleiner Haufen [Gore] bleibt zurück</li>
     <li>flavorsuffix->, es hinterlässt einen kleinen Krater</li>
     <li>flavorsuffix(p=4)-></li>
     <li>fireball(p=3)->Feuerball</li>
@@ -144,20 +145,19 @@
     <li>collapse->kollabieren</li>
     <li>collapse->zusammenbrechen</li>
     <li>collapse->hinfallen</li>
-    <li>collapse(SUBJECT_flesh!=Mechanoid)->in Ohnmacht fallen</li>
+    <li>collapse(SUBJECT_flesh!=Mechanoid)->zerdrücken</li>
     <li>collapse(SUBJECT_flesh==Mechanoid)->einen Systemabsturz erleiden</li>
-    <li>collapse(SUBJECT_flesh==Mechanoid)->in einer Neustart-Schleife hängen</li>
-    <li>collapse(SUBJECT_flesh==Mechanoid)->einen Speicherfehler erlegen</li>
+    <li>collapse(SUBJECT_flesh==Mechanoid)->herunterfahren</li>
+    <li>collapse(SUBJECT_flesh==Mechanoid)->Hauptenergie verlieren</li>
     <li>collapsed->kollabiert</li>
     <li>collapsed->zusammengebrochen</li>
     <li>collapsed->hingefallen</li>
-    <li>collapsed(SUBJECT_flesh!=Mechanoid)->in Ohnmacht gefallen</li>
+    <li>collapsed(SUBJECT_flesh!=Mechanoid)->zerdrückt</li>
     <li>collapsed(SUBJECT_flesh==Mechanoid)->einen Systemabsturz erlitten</li>
-    <li>collapsed(SUBJECT_flesh==Mechanoid)->in einer Neustart-Schleife hängengeblieben</li>
-    <li>collapsed(SUBJECT_flesh==Mechanoid)->einem Speicherfehler erlegen</li>
+    <li>collapsed(SUBJECT_flesh==Mechanoid)->heruntergefahren</li>
+    <li>collapsed(SUBJECT_flesh==Mechanoid)->Hauptenergie verloren</li>
     <li>helplessly->hilflos</li>
     <li>helplessly(SUBJECT_flesh!=Mechanoid)->bewusstlos</li>
-    <li>helplessly(SUBJECT_flesh!=Mechanoid)->erschöpft</li>
     <li>helplessly(SUBJECT_flesh!=Mechanoid)->schwächlich</li>
     <li>helplessly(SUBJECT_flesh!=Mechanoid)->kraftlos</li>
     <li>helplessly(SUBJECT_flesh==Mechanoid)->unkontrolliert</li>
