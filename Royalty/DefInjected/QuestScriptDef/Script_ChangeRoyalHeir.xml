@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN:
+    <li>questDescription->\nIn order to consecrate making [titleHeir_nameFull] the heir of [titleHolder_nameFull]'s title, you must build a monument.\n\nThe monument will be [monumentSize] in size and will require these resources (total value [monumentRequiredResourcesMarketValue_money]):\n\n[monumentRequiredResources]\n\nFailing to finish the monument within 20 days is considered to profane the ritual. Your relations with [asker_factionName] will fall by 25, and the heir will not be changed.</li>
+  -->
+  <ChangeRoyalHeir.questDescriptionRules.rulesStrings>
+    <li>questDescription->\nUm abzusegnen, dass [titleHeir_nameFull] der Erbe von [titleHolder_nameFull]'s Titel wird, musst Du ein Monument errichten.\n\nDas Monument wird eine Größe von [monumentSize] haben und wird die folgenden Ressourcen benötigen (Gesamtwert [monumentRequiredResourcesMarketValue_money]):\n\n[monumentRequiredResources]\n\nSollte es Dir nicht gelingen, das Monument innerhalb von 20 Tagen zu errichten, wird dies als Entweihung des Rituals angesehen. Deine Ruf bei der Fraktion '[asker_factionName]' wird um 25 Punkte sinken, und die Erbschaft bleibt unverändert.</li>
+  </ChangeRoyalHeir.questDescriptionRules.rulesStrings>
+  <!-- EN:
+    <li>questName->[titleHeir_nameDef]'s inheritance</li>
+  -->
+  <ChangeRoyalHeir.questNameRules.rulesStrings>
+    <li>[titleHeir_nameDef]'s Erbe</li>
+  </ChangeRoyalHeir.questNameRules.rulesStrings>
+  <!-- EN: Time left: {0} -->
+  <ChangeRoyalHeir.root.nodes.Delay.inspectString.slateRef>Verbleibende Zeit: {0}</ChangeRoyalHeir.root.nodes.Delay.inspectString.slateRef>
+  <!-- EN: [titleHolder_nameDef]'s heir change failed -->
+  <ChangeRoyalHeir.root.nodes.Delay.node.nodes.Letter.label.slateRef>[titleHolder_nameDef]'s Erbwechsel fehlgeschlagen</ChangeRoyalHeir.root.nodes.Delay.node.nodes.Letter.label.slateRef>
+  <!-- EN: [asker_nameDef] is offended that you promised to consecrate the new inheritance, but did not build the monument within the prescribed time.\n\nYou lost 25 goodwill with [asker_faction_name]. -->
+  <ChangeRoyalHeir.root.nodes.Delay.node.nodes.Letter.text.slateRef>[asker_nameDef] ist beleidigt, dass Du zwar versprochen hast, die neue Erbschaft abzusegnen, es aber nicht geschafft hast, das Monument in der vorgegebenen Zeit zu errichten.\n\nDu hast 25 Ruf bei der Fraktion '[asker_faction_name]' verloren.</ChangeRoyalHeir.root.nodes.Delay.node.nodes.Letter.text.slateRef>
+  <!-- EN: Title holder died: {SUBJECT_definite} -->
+  <ChangeRoyalHeir.root.nodes.titleHolderDestroyed.node.nodes.Letter.label.slateRef>Titelträger ist gestorben: {SUBJECT_definite}</ChangeRoyalHeir.root.nodes.titleHolderDestroyed.node.nodes.Letter.label.slateRef>
+  <!-- EN: {SUBJECT_definite}, whose heir was in the process of being changed, has died. -->
+  <ChangeRoyalHeir.root.nodes.titleHolderDestroyed.node.nodes.Letter.text.slateRef>{SUBJECT_definite}, {SUBJECT_gender ? dessen : deren} Erbe im Prozess war, geändert zu werden, ist gestorben.</ChangeRoyalHeir.root.nodes.titleHolderDestroyed.node.nodes.Letter.text.slateRef>
+  <!-- EN: Designated heir died: {SUBJECT_definite} -->
+  <ChangeRoyalHeir.root.nodes.titleHeirDestroyed.node.nodes.Letter.label.slateRef>Ernannter Erbe ist gestorben: {SUBJECT_definite}</ChangeRoyalHeir.root.nodes.titleHeirDestroyed.node.nodes.Letter.label.slateRef>
+  <!-- EN: {SUBJECT_definite}, who was supposed to become heir to a title, has died. -->
+  <ChangeRoyalHeir.root.nodes.titleHeirDestroyed.node.nodes.Letter.text.slateRef>{SUBJECT_definite}, {SUBJECT_gender ? der : die} {SUBJECT_gender ? Erbe : Erbin} eines Titels werden sollte, ist gestorben.</ChangeRoyalHeir.root.nodes.titleHeirDestroyed.node.nodes.Letter.text.slateRef>
+  
+</LanguageData>

@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN:
+    <li>questDescription->[asker_nameFull], a [asker_royalTitleInCurrentFaction] of [asker_faction_name] is calling from nearby. [asker_pronoun] is being followed by an angry [animalKindDef_label]! [asker_pronoun] says [asker_pronoun] only wanted to see the landscape on a quick walk, and never expected such a deadly threat.\n\n[asker_nameDef] wants you to keep [asker_objective] safe at [map_definite] for a few hours until [asker_possessive] shuttle can come pick [asker_objective] up. [asker_pronoun] promises not to be offended by your body odors or lack of manners.\n\n[asker_pronoun] will bestow [royalFavorReward] [asker_faction_royalFavorLabel] on whoever accepts this quest. This is enough favor to receive the royal title of Yeoman, and all benefits that come with it - including a psychic amplifier that gives psychic abilities.\n\nBe warned - those with titles tend to become haughty and needy.</li>
+  -->
+  <Intro_Wimp.questDescriptionRules.rulesStrings>
+    <li>questDescription->[asker_nameFull], [asker_royalTitleInCurrentFaction] der Fraktion '[asker_faction_name]' kontaktiert Dich aus der Nähe. [asker_pronoun] wird von einem wütenden Tier ([animalKindDef_label]) verfolgt! [asker_pronoun] sagt, [asker_pronoun] wollte sich bei einem gemütlichen Spaziergang nur die Landschaft anschauen, hätte aber nie mit einer solch tödlichen Gefahr gerechnet.\n\n[asker_nameDef] möchte, dass Du [asker_objective] für ein paar Stunden in [map_definite] beschützt, bis [asker_possessive] Shuttle kommt und [asker_objective] abholt. [asker_pronoun] verspricht, sich nicht an Deinen Körpergerüchen oder Deinem Mangel an Manieren zu stören.\n\n[asker_pronoun] schenkt dafür demjenigen [royalFavorReward] [asker_faction_royalFavorLabel], der diese Quest annimmt. Dies reicht aus, um den königlichen Titel eines Freibauers, und alle Privilegien, die damit einher gehen, zu erhalten – einschließlich eines Psychischen Verstärkers, der psychische Fähigkeiten verleiht.\n\nSei jedoch gewarnt – Titelinhaber neigen dazu, arrogant und eitel zu werden.</li>
+  </Intro_Wimp.questDescriptionRules.rulesStrings>
+  <!-- EN:
+    <li>questName->the [adjAny] [asker_royalTitleInCurrentFaction]</li>
+    <li>adjAny->wimpy</li>
+    <li>adjAny->cowardly</li>
+    <li>adjAny->fearful</li>
+    <li>adjAny->anxious</li>
+    <li>adjAny->cowering</li>
+    <li>adjAny->craven</li>
+    <li>adjAny->fainthearted</li>
+    <li>adjAny->frightened</li>
+    <li>adjAny->gutless</li>
+    <li>adjAny->jittery</li>
+    <li>adjAny->soft</li>
+    <li>adjAny->spineless</li>
+    <li>adjAny->timid</li>
+  -->
+  <Intro_Wimp.questNameRules.rulesStrings>
+    <li>questName->Der [adjAny] [asker_royalTitleInCurrentFaction]</li>
+    <li>adjAny->feige</li>
+    <li>adjAny->ängstliche</li>
+    <li>adjAny->nervöse</li>
+    <li>adjAny->scheue</li>
+    <li>adjAny->zaghafte</li>
+    <li>adjAny->mutlose</li>
+    <li>adjAny->schreckhafte</li>
+    <li>adjAny->furchtsame</li>
+    <li>adjAny->weiche</li>
+    <li>adjAny->rückgratlose</li>
+    <li>adjAny->zittrige</li>
+  </Intro_Wimp.questNameRules.rulesStrings>
+  <!-- EN: [animalKindDef_label] arrived -->
+  <Intro_Wimp.root.nodes.Delay.node.elseNode.nodes.PawnsArrive.customLetterLabel.slateRef>[animalKindDef_label] ist angekommen</Intro_Wimp.root.nodes.Delay.node.elseNode.nodes.PawnsArrive.customLetterLabel.slateRef>
+  <!-- EN: The "deadly" [animalKindDef_label] that [asker_nameDef] was fleeing has arrived.\n\nIt turned out to be quite gentle and not aggressive at all. -->
+  <Intro_Wimp.root.nodes.Delay.node.elseNode.nodes.PawnsArrive.customLetterText.slateRef>Das "tödliche" Tier ([animalKindDef_label]), vor dem [asker_nameDef] geflohen war, ist angekommen.\n\nEs stellt sich heraus, dass es sehr zahm und überhaupt nicht aggressiv ist.</Intro_Wimp.root.nodes.Delay.node.elseNode.nodes.PawnsArrive.customLetterText.slateRef>
+  <!-- EN: Angry [animalKindDef_label] -->
+  <Intro_Wimp.root.nodes.Delay.node.node.customLetterLabel.slateRef>Wütendes Tier ([animalKindDef_label])</Intro_Wimp.root.nodes.Delay.node.node.customLetterLabel.slateRef>
+  <!-- EN: The angry [animalKindDef_label] has come to get [asker_nameFull].\n\nWhile it is weak, it does appear to be highly motivated. -->
+  <Intro_Wimp.root.nodes.Delay.node.node.customLetterText.slateRef>Das wütende Tier ([animalKindDef_label]) ist gekommen, um sich [asker_nameFull] zu holen.\n\nObwohl es sehr schwächlich wirkt, scheint es doch überaus motiviert zu sein.</Intro_Wimp.root.nodes.Delay.node.node.customLetterText.slateRef>
+  <!-- EN: Should depart on shuttle -->
+  <Intro_Wimp.root.nodes.ShuttleDelay.node.nodes.InspectString.inspectString.slateRef>Soll mit dem Shuttle wegfliegen</Intro_Wimp.root.nodes.ShuttleDelay.node.nodes.InspectString.inspectString.slateRef>
+  <!-- EN: Shuttle arrived -->
+  <Intro_Wimp.root.nodes.ShuttleDelay.node.nodes.Letter.label.slateRef>Shuttle ist angekommen</Intro_Wimp.root.nodes.ShuttleDelay.node.nodes.Letter.label.slateRef>
+  <!-- EN: The shuttle has arrived to collect [asker_nameDef]. -->
+  <Intro_Wimp.root.nodes.ShuttleDelay.node.nodes.Letter.text.slateRef>Das Shuttle ist angekommen, um [asker_nameDef] abzuholen.</Intro_Wimp.root.nodes.ShuttleDelay.node.nodes.Letter.text.slateRef>
+  <!-- EN: Guest died: {SUBJECT_definite} -->
+  <Intro_Wimp.root.nodes.askerDestroyed.node.nodes.Letter.label.slateRef>Gast gestorben: {SUBJECT_definite}</Intro_Wimp.root.nodes.askerDestroyed.node.nodes.Letter.label.slateRef>
+  <!-- EN: {SUBJECT_definite}, who you were charged to protect, has died. [failLetterEndingCommon] -->
+  <Intro_Wimp.root.nodes.askerDestroyed.node.nodes.Letter.text.slateRef>{SUBJECT_definite} – die Person, die Du beschützen solltest – ist gestorben. [failLetterEndingCommon]</Intro_Wimp.root.nodes.askerDestroyed.node.nodes.Letter.text.slateRef>
+  <!-- EN: Unauthorized surgery: {SUBJECT_definite} -->
+  <Intro_Wimp.root.nodes.askerSurgeryViolation.node.nodes.Letter.label.slateRef>Unauthorisierte Operation: {SUBJECT_definite}</Intro_Wimp.root.nodes.askerSurgeryViolation.node.nodes.Letter.label.slateRef>
+  <!-- EN: Unauthorized, violating surgery has been performed on {SUBJECT_definite}, who you were charged to protect. Because of this violation, [asker_pronoun] will now attempt to leave. [failLetterEndingCommon] -->
+  <Intro_Wimp.root.nodes.askerSurgeryViolation.node.nodes.Letter.text.slateRef>Es wurde eine unauthorisierte, verwerfliche Operation an {SUBJECT_definite} – der Person, die Du beschützen solltest – durchgeführt. Aufgrund dieses Verstoßes, wird [asker_pronoun] nun die Kolonie verlassen. [failLetterEndingCommon]</Intro_Wimp.root.nodes.askerSurgeryViolation.node.nodes.Letter.text.slateRef>
+  <!-- EN: Captured: {SUBJECT_definite} -->
+  <Intro_Wimp.root.nodes.askerArrested.node.nodes.Letter.label.slateRef>Gefangen genommen: {SUBJECT_definite}</Intro_Wimp.root.nodes.askerArrested.node.nodes.Letter.label.slateRef>
+  <!-- EN: {SUBJECT_definite}, who you were charged to host, has been arrested. [failLetterEndingCommon] -->
+  <Intro_Wimp.root.nodes.askerArrested.node.nodes.Letter.text.slateRef>{SUBJECT_definite} – die Person, die Du bewirten solltest – wurde gefangen genommen. [failLetterEndingCommon]</Intro_Wimp.root.nodes.askerArrested.node.nodes.Letter.text.slateRef>
+  <!-- EN: Guest lost: {SUBJECT_definite} -->
+  <Intro_Wimp.root.nodes.askerLeftMap.node.nodes.Letter.label.slateRef>Gast verloren: {SUBJECT_definite}</Intro_Wimp.root.nodes.askerLeftMap.node.nodes.Letter.label.slateRef>
+  <!-- EN: {SUBJECT_definite}, who you were charged to protect, has left the designated settlement. [failLetterEndingCommon] -->
+  <Intro_Wimp.root.nodes.askerLeftMap.node.nodes.Letter.text.slateRef>{SUBJECT_definite} – die Person, die Du bewirten solltest – hat die Kolonie verlassen. [failLetterEndingCommon]</Intro_Wimp.root.nodes.askerLeftMap.node.nodes.Letter.text.slateRef>
+  <!-- EN: Shuttle destroyed -->
+  <Intro_Wimp.root.nodes.shuttleDestroyed.node.nodes.Letter.label.slateRef>Shuttle wurde zerstört</Intro_Wimp.root.nodes.shuttleDestroyed.node.nodes.Letter.label.slateRef>
+  <!-- EN: The shuttle sent to collect [asker_nameDef] has been destroyed. [asker_pronoun] will now leave on foot. [failLetterEndingCommon] -->
+  <Intro_Wimp.root.nodes.shuttleDestroyed.node.nodes.Letter.text.slateRef>Das Shuttle, das [asker_nameDef] abholen sollte, wurde zerstört. [asker_pronoun] wird die Kolonie nun zu Fuß verlassen. [failLetterEndingCommon]</Intro_Wimp.root.nodes.shuttleDestroyed.node.nodes.Letter.text.slateRef>
+  <!-- EN: Quest failed: [resolvedQuestName] -->
+  <Intro_Wimp.root.nodes.shuttleSentUnsatisfied.node.nodes.Letter.label.slateRef>Quest fehlgeschlagen: '[resolvedQuestName]'</Intro_Wimp.root.nodes.shuttleSentUnsatisfied.node.nodes.Letter.label.slateRef>
+  <!-- EN: The shuttle sent to collect [asker_nameDef] has departed without [asker_objective]. [asker_pronoun] will now leave on foot. [failLetterEndingCommon] -->
+  <Intro_Wimp.root.nodes.shuttleSentUnsatisfied.node.nodes.Letter.text.slateRef>Das Shuttle, das [asker_nameDef] abholen sollte, ist ohne [asker_objective] abgeflogen. [asker_pronoun] wird die Kolonie nun zu Fuß verlassen. [failLetterEndingCommon]</Intro_Wimp.root.nodes.shuttleSentUnsatisfied.node.nodes.Letter.text.slateRef>
+  
+</LanguageData>

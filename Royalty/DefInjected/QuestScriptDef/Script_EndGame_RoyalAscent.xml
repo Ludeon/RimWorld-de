@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN:
+    <li>questDescription->[intro][asker_nameFull], [asker_faction_leaderTitle] of [asker_faction_name], will perform a customary visit with any Count of [asker_possessive] domain upon request. Invite [asker_objective], satisfy [asker_possessive] royal needs for [shuttleDelayTicks_duration], and all of you can ride the shuttle to the Imperial flotilla. You may then join the Imperial court, or escape to a new life among the stars.\n\nEarning the title of Count means completing quests to earn [asker_faction_royalFavorLabel] with [asker_faction_name]. It may take years to finally achieve the title of Count.\n\nDuring [asker_possessive] visit, you must keep [asker_nameDef]'s mood above [lodgersMoodThreshold_percent]. This means providing royal perquisites like a lavish bedroom.[threatsInfo]\n\n[asker_nameDef] will bring four of [asker_possessive] personal guards and place them under your command. You must house these guards, but [asker_nameDef] will not complain if they are killed or unhappy.\n\nYou must keep the visitors at [map_definite] and not send them anywhere else. If you fail this quest or migrate, you will have another chance at it later.</li>
+    <li>intro(sameQuestsCount==0)->You have learned of a way to escape this planet!\n\n</li>
+    <li>intro(sameQuestsCount>=1)->You have been given another chance at royal ascent.\n\n</li>
+    <li>threatsInfo(allowViolentQuests==true,priority=1)->\n\nOthers will take the opportunity to try to kill the [asker_faction_leaderTitle], and will attack with great intensity. Be prepared to defend.</li>
+    <li>threatsInfo-></li>
+  -->
+  <EndGame_RoyalAscent.questDescriptionRules.rulesStrings>
+    <li>questDescription->[intro][asker_nameFull], [asker_faction_leaderTitle] der Fraktion '[asker_faction_name]', wird – auf Deinen Wunsch hin – einen handelsüblichen Besuch durchführen, zusammen mit einem beliebigen Grafen [asker_possessive]es Herrschaftsbereichs. Lade [asker_objective] sein, befriedige [asker_possessive]e adligen Wünsche für [shuttleDelayTicks_duration], und ihr bekommt alle die Erlaubnis, in das Shuttle zur Imperialen Flottille zu steigen . Dir wird gestattet, Dich dem Imperialen Hof anzuschließen oder in ein neues Leben in den Sternen aufzubrechen.\n\nDen Titel eines Grafen zu erhalten. bedeutet, Quests abzuschließen, um sich [asker_faction_royalFavorLabel] bei der Fraktion '[asker_faction_name]' zu verdienen. Es könnte Jahre dauern, endlich den Titel eines Grafen zu erlangen.\n\nWährend [asker_possessive]es Besuches, musst Du [asker_nameDef]'s Stimmung über einem Wert von [lodgersMoodThreshold_percent] halten. Das bedeutet, besondere Annehmlichkeiten zur Verfügung zu stellen, z.B. ein üppig eingerichtetes Schlafzimmer, das einem Adligen gerecht wird.[threatsInfo]\n\n[asker_nameDef] wird vier Leute [asker_possessive]er persönlichen Leibgarde mitbringen und sie unter Dein Kommando stellen. Du musst diese Wachen bewirten, but [asker_nameDef] wird es nichts ausmachen, sollten sie sterben oder unglücklich werden.\n\nDu musst die Besucher bei [map_definite] behalten und darfst sie nicht woanders hinschicken. Wenn diese Quest scheitert, oder Du den Ort verlässt, wirst Du zu einem späteren Zeitpunkt erneut eine Gelegenheit für diese Aufgabe erhalten.</li>
+    <li>intro(sameQuestsCount==0)->Du hast von einem Weg erfahren, diesen Planeten zu verlassen!\n\n</li>
+    <li>intro(sameQuestsCount>=1)->Dir wurde eine weitere Gelegenheit für einen Adligen Aufstieg gegeben.\n\n</li>
+    <li>threatsInfo(allowViolentQuests==true,priority=1)->\n\nAndere werden die Gelegenheit nutzen, um [asker_faction_leaderTitle] zu töten, und werden mit aller Kraft zuschlagen. Bereite Dich auf die Verteidigung vor.</li>
+    <li>threatsInfo-></li>
+  </EndGame_RoyalAscent.questDescriptionRules.rulesStrings>
+  <!-- EN:
+    <li>questName(sameQuestsCount==0)->Royal Ascent</li>
+    <li>questName(sameQuestsCount>=1)->Royal [titleEnd]</li>
+    <li>titleEnd->Ascension</li>
+    <li>titleEnd->Ascendance</li>
+    <li>titleEnd->Visitor</li>
+    <li>titleEnd->Guest</li>
+    <li>titleEnd->Host</li>
+    <li>titleEnd->Victory</li>
+  -->
+  <EndGame_RoyalAscent.questNameRules.rulesStrings>
+    <li>questName(sameQuestsCount==0)->Adliger Aufstieg</li>
+    <li>questName(sameQuestsCount>=1)->Adlig[titleEnd]</li>
+    <li>titleEnd->e Beförderung</li>
+    <li>titleEnd->e Vormachtstellung</li>
+    <li>titleEnd->er Besucher</li>
+    <li>titleEnd->er Gast</li>
+    <li>titleEnd->er Gastgeber</li>
+    <li>titleEnd->er Sieg</li>
+  </EndGame_RoyalAscent.questNameRules.rulesStrings>
+  <!-- EN: [asker_faction_leaderTitle] arrived -->
+  <EndGame_RoyalAscent.root.nodes.DropPods.customLetterLabel.slateRef>[asker_faction_leaderTitle] ist angekommen</EndGame_RoyalAscent.root.nodes.DropPods.customLetterLabel.slateRef>
+  <!-- EN: [asker_nameDef], [asker_faction_leaderTitle] of [asker_faction_name], has arrived.\n\nProtect [asker_objective] and satisfy [asker_possessive] royal needs until the shuttle arrives in [shuttleDelayTicks_duration].\n\nAll of you can accompany the [asker_faction_leaderTitle] on the shuttle and travel to the Imperial flotilla to begin a new life. -->
+  <EndGame_RoyalAscent.root.nodes.DropPods.customLetterText.slateRef>[asker_nameDef], [asker_faction_leaderTitle] der Fraktion '[asker_faction_name]', ist angekommen.\n\nBeschütze [asker_objective] und befriedige [asker_possessive]e adligen Bedürfnisse, bis das Shuttle bald ([shuttleDelayTicks_duration]) eintrifft.\n\nIhr alle könnt [asker_faction_leaderTitle] auf das Shuttle begleiten und zusammen zu der Imperialen Flottille fliegen, um ein neues Leben zu beginnen.</EndGame_RoyalAscent.root.nodes.DropPods.customLetterText.slateRef>
+  <!-- EN: Should depart on shuttle -->
+  <EndGame_RoyalAscent.root.nodes.ShuttleDelay.node.nodes.InspectString.inspectString.slateRef>Soll mit dem Shuttle wegfliegen</EndGame_RoyalAscent.root.nodes.ShuttleDelay.node.nodes.InspectString.inspectString.slateRef>
+  <!-- EN: Shuttle arrived -->
+  <EndGame_RoyalAscent.root.nodes.ShuttleDelay.node.nodes.Letter.label.slateRef>Shuttle ist angekommen</EndGame_RoyalAscent.root.nodes.ShuttleDelay.node.nodes.Letter.label.slateRef>
+  <!-- EN: The shuttle has arrived to collect [asker_bestRoyalTitleDef].\n\nAll of you can accompany the [asker_faction_leaderTitle] on the shuttle and travel to the Imperial flotilla to begin a new life. -->
+  <EndGame_RoyalAscent.root.nodes.ShuttleDelay.node.nodes.Letter.text.slateRef>Das Shuttle ist angekommen, um [asker_bestRoyalTitleDef] abzuholen.\n\nIhr alle könnt den [asker_faction_leaderTitle] im Shuttle begleiten und zur Imperialen Flottille reisen, um dort ein neues Leben zu beginnen.</EndGame_RoyalAscent.root.nodes.ShuttleDelay.node.nodes.Letter.text.slateRef>
+  <!-- EN: The high stellarch will now welcome you into the Imperial flotilla as an honored noble party.\n\nYou might stay in the Imperial court and jockey for political power. Perhaps you'll avoid the drama and focus on enjoying ultratech luxuries. Or, you might even buy a ship and set a course for your long-lost home.\n\nThe choice is up to you. -->
+  <EndGame_RoyalAscent.root.nodes.ShuttleDelay.node.nodes.EndGame.endingText.slateRef>Der Oberste Stellarch wird Dich jetzt in der Imperialen Flottille als geehrte Adelsgäste willkommen heißen.\n\nDu wirst vielleicht am Imperialen Hof bleiben und die Spielchen um politische Macht spielen. Vielleicht vermeidest Du auch das ganze Drama und stürzt Dich statt dessen in den Ultratech-Luxus. Oder vielleicht käufst Du Dir auch einfach ein eigenes Schiff und setzt Kurs Richtung Deiner lange verloren geglaubten Heimat.\n\nDie Wahl liegt ganz bei Dir.</EndGame_RoyalAscent.root.nodes.ShuttleDelay.node.nodes.EndGame.endingText.slateRef>
+  <!-- EN: You've escaped on the Imperial shuttle! -->
+  <EndGame_RoyalAscent.root.nodes.ShuttleDelay.node.nodes.EndGame.introText.slateRef>Du bist mit dem Imperialen Shuttle entkommen!</EndGame_RoyalAscent.root.nodes.ShuttleDelay.node.nodes.EndGame.introText.slateRef>
+  <!-- EN: {SUBJECT_bestRoyalTitle} unhappy -->
+  <EndGame_RoyalAscent.root.nodes.MoodBelow.node.nodes.Letter.label.slateRef>{SUBJECT_bestRoyalTitle} unglücklich</EndGame_RoyalAscent.root.nodes.MoodBelow.node.nodes.Letter.label.slateRef>
+  <!-- EN: {SUBJECT_definite}, who you were charged to protect and keep happy, has been below the minimum mood of [lodgersMoodThreshold] too long. [failLetterEndingCommon] -->
+  <EndGame_RoyalAscent.root.nodes.MoodBelow.node.nodes.Letter.text.slateRef>{SUBJECT_definite} – die Person, die Du beschützen und glücklich halten solltest – war für zu lange Zeit unter dem minimalen Stimmungswert von [lodgersMoodThreshold]. [failLetterEndingCommon]</EndGame_RoyalAscent.root.nodes.MoodBelow.node.nodes.Letter.text.slateRef>
+  <!-- EN: Guest died: {SUBJECT_definite} -->
+  <EndGame_RoyalAscent.root.nodes.askerDestroyed.node.nodes.Letter.label.slateRef>Gast gestorben: {SUBJECT_definite}</EndGame_RoyalAscent.root.nodes.askerDestroyed.node.nodes.Letter.label.slateRef>
+  <!-- EN: {SUBJECT_definite}, who you were charged to protect, has died. [failLetterEndingCommon] -->
+  <EndGame_RoyalAscent.root.nodes.askerDestroyed.node.nodes.Letter.text.slateRef>{SUBJECT_definite} – die Person, die Du beschützen solltest – ist gestorben. [failLetterEndingCommon]</EndGame_RoyalAscent.root.nodes.askerDestroyed.node.nodes.Letter.text.slateRef>
+  <!-- EN: Guest captured: {SUBJECT_definite} -->
+  <EndGame_RoyalAscent.root.nodes.lodgersArrested.node.nodes.Letter.label.slateRef>Gast gefangen genommen: {SUBJECT_definite}</EndGame_RoyalAscent.root.nodes.lodgersArrested.node.nodes.Letter.label.slateRef>
+  <!-- EN: {SUBJECT_definite}, who you were charged to protect, has been arrested. [failLetterEndingCommon] -->
+  <EndGame_RoyalAscent.root.nodes.lodgersArrested.node.nodes.Letter.text.slateRef>{SUBJECT_definite} – die Person, die Du beschützen solltest – wurde gefangen genommen. [failLetterEndingCommon]</EndGame_RoyalAscent.root.nodes.lodgersArrested.node.nodes.Letter.text.slateRef>
+  <!-- EN: Unauthorized surgery: {SUBJECT_definite} -->
+  <EndGame_RoyalAscent.root.nodes.lodgersSurgeryViolation.node.nodes.Letter.label.slateRef>Unauthorisierte Operation: {SUBJECT_definite}</EndGame_RoyalAscent.root.nodes.lodgersSurgeryViolation.node.nodes.Letter.label.slateRef>
+  <!-- EN: Unauthorized, violating surgery has been performed on {SUBJECT_definite}, who you were charged to protect. [failLetterEndingCommon] -->
+  <EndGame_RoyalAscent.root.nodes.lodgersSurgeryViolation.node.nodes.Letter.text.slateRef>Es wurde eine unauthorisierte, verwerfliche Operation an {SUBJECT_definite} – der Person, die Du beschützen solltest – durchgeführt. [failLetterEndingCommon]</EndGame_RoyalAscent.root.nodes.lodgersSurgeryViolation.node.nodes.Letter.text.slateRef>
+  <!-- EN: Guest lost: {SUBJECT_definite} -->
+  <EndGame_RoyalAscent.root.nodes.askerLeftMap.node.nodes.Letter.label.slateRef>Gast verloren: {SUBJECT_definite}</EndGame_RoyalAscent.root.nodes.askerLeftMap.node.nodes.Letter.label.slateRef>
+  <!-- EN: {SUBJECT_definite}, who you were charged to protect, has left the assigned settlement. [failLetterEndingCommon] -->
+  <EndGame_RoyalAscent.root.nodes.askerLeftMap.node.nodes.Letter.text.slateRef>{SUBJECT_definite} – die Person, die Du beschützen solltest – hat die Kolonie verlassen. [failLetterEndingCommon]</EndGame_RoyalAscent.root.nodes.askerLeftMap.node.nodes.Letter.text.slateRef>
+  <!-- EN: Shuttle destroyed -->
+  <EndGame_RoyalAscent.root.nodes.shuttleDestroyed.node.nodes.Letter.label.slateRef>Shuttle wurde zerstört</EndGame_RoyalAscent.root.nodes.shuttleDestroyed.node.nodes.Letter.label.slateRef>
+  <!-- EN: The shuttle sent to collect [asker_bestRoyalTitleDef] has been destroyed. [failLetterEndingCommon] -->
+  <EndGame_RoyalAscent.root.nodes.shuttleDestroyed.node.nodes.Letter.text.slateRef>Das Shuttle, das [asker_bestRoyalTitleDef] abholen sollte, wurde zerstört. [failLetterEndingCommon]</EndGame_RoyalAscent.root.nodes.shuttleDestroyed.node.nodes.Letter.text.slateRef>
+  <!-- EN: Quest failed: [resolvedQuestName] -->
+  <EndGame_RoyalAscent.root.nodes.shuttleSentUnsatisfied.node.nodes.Letter.label.slateRef>Quest fehlgeschlagen: '[resolvedQuestName]'</EndGame_RoyalAscent.root.nodes.shuttleSentUnsatisfied.node.nodes.Letter.label.slateRef>
+  <!-- EN: The shuttle sent to collect [asker_bestRoyalTitleDef] has departed without [asker_objective]. [asker_pronoun] will now leave on foot. [failLetterEndingCommon] -->
+  <EndGame_RoyalAscent.root.nodes.shuttleSentUnsatisfied.node.nodes.Letter.text.slateRef>Das Shuttle, das gesandt wurde, um [asker_bestRoyalTitleDef] abzuholen, ist ohne [asker_objective] abgeflogen. [asker_pronoun] wird die Kolonie nun zu Fuß verlassen. [failLetterEndingCommon]</EndGame_RoyalAscent.root.nodes.shuttleSentUnsatisfied.node.nodes.Letter.text.slateRef>
+  
+</LanguageData>
