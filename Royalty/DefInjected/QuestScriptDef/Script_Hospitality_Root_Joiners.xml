@@ -59,8 +59,8 @@
   <Hospitality_Joiners.questDescriptionRules.rulesStrings>
     <li>lodgersDef(lodgersCount==1)->[lodgers0_nameDef]</li>
     <li>lodgersDef(lodgersCount>=2)->die Gäste</li>
-    <li>joinerEnding->Es wird dir möglich sein, [lodgersDef] genauso wie Deine eigenen Kolonisten zu steuern.[specialNeedsExplanation]</li>
-    <li>specialNeedsExplanation(asker_royalInCurrentFaction==True,priority=1)-> Du wirst auf jegliche speziellen königlichen Wünsche eingehen müssen, welche Deine Gäste haben könnten.</li>
+    <li>joinerEnding->Es wird dir möglich sein, [lodgersDef] genauso wie deine eigenen Kolonisten zu steuern.[specialNeedsExplanation]</li>
+    <li>specialNeedsExplanation(asker_royalInCurrentFaction==True,priority=1)-> Du wirst auf jegliche speziellen königlichen Wünsche eingehen müssen, welche deine Gäste haben könnten.</li>
     <li>specialNeedsExplanation-></li>
     <li>questDescription(askerIsNull==true,lodgersCount==1)->Ein(e) [lodgers0_title] namens [lodgers0_nameFull] möchte, dass du für [shuttleDelayTicks_duration] in [map_definite] auf [lodgers0_objective] aufpasst. [allLodgerInfo][threatsInfo1]\n\n[commonDescEnding] [joinerEnding]</li>
     <li>threatsInfo1(generateThreats==true,allowedThreats==Raids,enemyFaction!=Mechanoid)->\n\n[lodgers0_nameDef] wurde kürzlich dabei erwischt, wie [lodgers0_pronoun] [wrongAct]. Als Rache werden [enemyFaction_pawnsPlural] kommen, um [lodgers0_objective] zu jagen, solange [lodgers0_pronoun] bei dir ist. [enemyGroupsParagraph]</li>
