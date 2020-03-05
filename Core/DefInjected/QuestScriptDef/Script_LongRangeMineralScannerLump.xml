@@ -5,7 +5,7 @@
     <li>questDescription->Using your long-range mineral scanner, [worker_definite] has found a lump of [targetMineable_label] nearby.\n\nUnfortunately, it won't last - others will mine it first in [timeoutTicks_duration] if we don't.\n\n[allSitePartsDescriptionsExceptFirst]</li>
   -->
   <LongRangeMineralScannerLump.questDescriptionRules.rulesStrings>
-    <li>questDescription->Beim Einsatz des Scanners für entfernte Mineralien hat [worker_definite] eine große Ansammlung von [targetMineable_label] in der Nähe gefunden.\n\nAllerdings wird es nicht für immer da sein - Andere werden in [timeoutTicks_duration] abbauen, wenn wir es nicht machen.\n\n[allSitePartsDescriptionsExceptFirst]</li>
+    <li>questDescription->Beim Einsatz des Scanners für entfernte Mineralien hat [worker_definite] ein großes [targetMineable_label]vorkommen in der Nähe gefunden.\n\nAllerdings wird es nicht für immer da sein - Andere werden es in [timeoutTicks_duration]n abbauen, wenn wir nichts unternehmen.\n\n[allSitePartsDescriptionsExceptFirst]</li>
   </LongRangeMineralScannerLump.questDescriptionRules.rulesStrings>
   <!-- EN:
     <li>questName->The [subName]</li>
@@ -31,15 +31,13 @@
     <li>questName->Die [adj]en [subjPlu]</li>
     <li>questName->[adj]es [subjNeu]</li>
     <li>questName->Das [adj]e [subjNeu]</li>
-    <li>questName->[adj]er [subjMas]</li>
-    <li>questName->Der [adj]e [subjMas]</li>
     <li>subjPlu->Ressourcen</li>
     <li>subjPlu->Mineralien</li>
     <li>subjPlu->Erze</li>
     <li>subjPlu->Gesteine</li>
     <li>subjNeu->Reichtum</li>
     <li>subjNeu->Abbauprojekt</li>
-    <li>subjMas->Brocken</li>
+    <li>subjNeu->Vorkommen</li>
     <li>adj->Enfernt</li>
     <li>adj->Fern</li>
     <li>adj->Weit Entfernt</li>
@@ -52,6 +50,6 @@
   <!-- EN: Quest expired: [resolvedQuestName] -->
   <LongRangeMineralScannerLump.root.nodes.WorldObjectTimeout.node.nodes.Letter.label.slateRef>Quest abgelaufen: [resolvedQuestName]</LongRangeMineralScannerLump.root.nodes.WorldObjectTimeout.node.nodes.Letter.label.slateRef>
   <!-- EN: Others have mined the lump of [targetMineable_label]. The quest [resolvedQuestName] has expired. -->
-  <LongRangeMineralScannerLump.root.nodes.WorldObjectTimeout.node.nodes.Letter.text.slateRef>Die Rohstoffader [targetMineable_label] wurde abgebaut. Die Quest [resolvedQuestName] ist abgelaufen.</LongRangeMineralScannerLump.root.nodes.WorldObjectTimeout.node.nodes.Letter.text.slateRef>
+  <LongRangeMineralScannerLump.root.nodes.WorldObjectTimeout.node.nodes.Letter.text.slateRef>Andere haben das [targetMineable_label]vorkommen abgebaut. Die Quest [resolvedQuestName] ist abgelaufen.</LongRangeMineralScannerLump.root.nodes.WorldObjectTimeout.node.nodes.Letter.text.slateRef>
   
 </LanguageData>
