@@ -81,7 +81,7 @@
   <!-- EN: Equipment -->
   <Equipment>Ausrüstung</Equipment>
   <!-- EN: Apparel -->
-  <Apparel>Aussehen</Apparel>
+  <Apparel>Kleidung</Apparel>
   <!-- EN: Inventory -->
   <Inventory>Inventar</Inventory>
   <!-- EN: Information -->
@@ -193,7 +193,7 @@
   <!-- EN: {0} prisoners -->
   <CaravanPrisonersCount>{0} Gefangene</CaravanPrisonersCount>
   <!-- EN: {0} in mental state -->
-  <CaravanPawnsInMentalState>{0} mit Nervenzusammenbruch</CaravanPawnsInMentalState>
+  <CaravanPawnsInMentalState>{0} übergeschnappt</CaravanPawnsInMentalState>
   <!-- EN: {0} downed -->
   <CaravanPawnsDowned>{0} bewusstlos</CaravanPawnsDowned>
   <!-- EN: Traveling. -->
@@ -671,11 +671,11 @@
   <!-- EN: Finishes expiring in: {0} -->
   <ThoughtFinishesExpiringIn>Noch {0}, bis dies vergeht</ThoughtFinishesExpiringIn>
   <!-- EN: Extreme break threshold -->
-  <MentalBreakThresholdExtreme>Schwelle zum extremen Nervenzusammenbruch</MentalBreakThresholdExtreme>
+  <MentalBreakThresholdExtreme>Extremer Zusammenbruch bei</MentalBreakThresholdExtreme>
   <!-- EN: Major break threshold -->
-  <MentalBreakThresholdMajor>Schwelle zum schweren Nervenzusammenbruch</MentalBreakThresholdMajor>
+  <MentalBreakThresholdMajor>Schwerer Zusammenbruch bei</MentalBreakThresholdMajor>
   <!-- EN: Minor break threshold -->
-  <MentalBreakThresholdMinor>Schwelle zum leichten Nervenzusammenbruch</MentalBreakThresholdMinor>
+  <MentalBreakThresholdMinor>Leichter Zusammenbruch bei</MentalBreakThresholdMinor>
 
   <!-- Pawn info readout -->
   <!-- EN: {PAWN_gender} {1} -->
@@ -815,9 +815,9 @@
   <!-- EN: Resting -->
   <PlantResting>Ruht</PlantResting>
   <!-- EN: Non-ideal temperature. Temperature growth multiplier: {0}% -->
-  <OutOfIdealTemperatureRange>Außerhalb der optimalen Temperatur. Wachstumsmodifikator: {0}%</OutOfIdealTemperatureRange>
+  <OutOfIdealTemperatureRange>Ungünstige Temperatur. Wachstumsmodifikator: {0}%</OutOfIdealTemperatureRange>
   <!-- EN: Non-ideal temperature. Not growing. -->
-  <OutOfIdealTemperatureRangeNotGrowing>Außerhalb der optimalen Temperatur. Kein Wachstum.</OutOfIdealTemperatureRangeNotGrowing>
+  <OutOfIdealTemperatureRangeNotGrowing>Ungünstige Temperatur. Kein Wachstum.</OutOfIdealTemperatureRangeNotGrowing>
   <!-- EN: Ready to harvest. -->
   <ReadyToHarvest>Bereit zum Ernten.</ReadyToHarvest>
   <!-- EN: Mature. -->
@@ -891,13 +891,13 @@
   <!-- EN: Toggle visibility of terrain affordance.\n\nThis relates to what kinds of building can be constructed at each location.\n\nFor example, some types of ground only accept light or medium buildings, but not heavy ones. Bridges can only be built on water. -->
   <ShowTerrainAffordanceOverlayToggleButton>Schalte die Geländebeschaffenheitsanzeige ein/aus.\n\nDiese zeigt, welche Arten von Konstruktionen an den einzelnen Standorten errichtet werden können.\n\nEinige Bodentypen akzeptieren beispielsweise nur leichte oder mittlere, aber keine schweren Konstruktionen. Brücken können nur auf dem Wasser gebaut werden.</ShowTerrainAffordanceOverlayToggleButton>
   <!-- EN: Lock the rotation of the camera so the north pole is always up. -->
-  <LockNorthUpToggleButton>Verriegle die Drehung der Kamera, sodass der Nordpol immer oben ist.</LockNorthUpToggleButton>
+  <LockNorthUpToggleButton>Sperre die Kameradrehung, damit der Nordpol immer oben ist.</LockNorthUpToggleButton>
   <!-- EN: Toggle day/night lighting on the planet view. -->
-  <UsePlanetDayNightSystemToggleButton>Schalte die Tag/Nacht-Beleuchtung auf der Planetenansicht um.</UsePlanetDayNightSystemToggleButton>
+  <UsePlanetDayNightSystemToggleButton>Schalte die Tag/Nacht-Beleuchtung auf der Planetenansicht ein/aus.</UsePlanetDayNightSystemToggleButton>
   <!-- EN: Toggle displaying expanding icons instead of the regular icons for distant objects. -->
-  <ShowExpandingIconsToggleButton>Schaltet die Anzeige von erweiterten Symbolen anstelle der regulären Symbole für entfernte Objekte um.</ShowExpandingIconsToggleButton>
+  <ShowExpandingIconsToggleButton>Schalte die Symbole für entfernte Objekte ein/aus.</ShowExpandingIconsToggleButton>
   <!-- EN: Toggle visibility of names of landforms. -->
-  <ShowWorldFeaturesToggleButton>Schaltet die Anzeige der Gebietsnamen um.</ShowWorldFeaturesToggleButton>
+  <ShowWorldFeaturesToggleButton>Schalte die Namen der Landformationen ein/aus.</ShowWorldFeaturesToggleButton>
 
   <!-- Fire -->
   <!-- EN: fire on {1_label} -->
@@ -997,7 +997,7 @@
   <!-- EN: A one-use super-dose of mechanites which trains a specific skill.\n\nThe dose is administered through the orbit of the eye. Once released into the brain, the mechanites quickly improve the subject's skills in a specific area, transmuting themselves into neural tissue as needed. -->
   <SkillNeurotrainerDescription>Eine einmalige Superdosis von Mechaniten, die eine bestimmte Fähigkeit trainieren.\n\nDie Dosis wird über die Augenhöhle verabreicht. Sobald sie im Gehirn freigesetzt wird, wandeln sich die Mechaniten bei Bedarf in Nervengewebe um und verbessern dabei eine bestimmte Fähigkeit des Subjekts.</SkillNeurotrainerDescription>
   <!-- EN: {USER_labelShort} used {1} neurotrainer to go from level {2} to level {3}. -->
-  <SkillNeurotrainerUsed>{USER_labelShort} hat einen {1}-Neurotrainer benutzt, um von Stufe {2} auf Stufe {3} zu wechseln.</SkillNeurotrainerUsed>
+  <SkillNeurotrainerUsed>{USER_labelShort} hat einen Neurotrainer benutzt, um die Fähigkeit '{1}' von Stufe {2} auf Stufe {3} zu erhöhen.</SkillNeurotrainerUsed>
 
   <!-- Minification -->
   <!-- EN: Installed -->
@@ -1015,7 +1015,7 @@
   <!-- EN: Unfinished {0} -->
   <UnfinishedItem>{0} (unfertig)</UnfinishedItem>
   <!-- EN: Unfinished {0} {1} -->
-  <UnfinishedItemWithStuff>{0} {1} (unfertig)</UnfinishedItemWithStuff>
+  <UnfinishedItemWithStuff>{1} aus {1} (unfertig)</UnfinishedItemWithStuff>
 
   <!-- Quality -->
   <!-- EN: Quality -->
@@ -1243,7 +1243,7 @@
 
   <!-- Biocoded weapons -->
   <!-- EN: biocoded {0} -->
-  <Biocoded>biokodierte {0}</Biocoded>
+  <Biocoded>{0} (biokodiert)</Biocoded>
   <!-- EN: Biocoding: {0} -->
   <CodedFor>Biokodierung: {0}</CodedFor>
   <!-- EN: biocoded -->
