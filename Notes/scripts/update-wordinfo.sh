@@ -6,6 +6,7 @@
 # Mainly to make the script more readable
 
 # Removes BOMs, comments and blank lines from the stream
+# with the intended side effect of auto-converting CRLF to LF
 clean() { sed -e 's/\xEF\xBB\xBF/\n/' | grep -av '^//' | grep -avE '^[[:space:]]*$' ; }
 
 # Removes the file lines passed as the first parameter from the stream
@@ -49,21 +50,26 @@ cat */DefInjected/{PawnKind,Faction,Thing,WorldObject}Def/*.xml | extract_tag_co
 # Add labelMale* into WordInfo/Gender/Male.txt
 cat */WordInfo/Gender/Male.txt > $WORKDIR/all_males.txt
 cat */DefInjected/{PawnKind,Faction,Thing,WorldObject}Def/*.xml | extract_tag_male_content >> $WORKDIR/all_males.txt
-cat $WORKDIR/all_males.txt | to_lowercase | unique > Core/WordInfo/Gender/Male.txt
+cat $WORKDIR/all_males.txt | to_lowercase | clean | unique > Core/WordInfo/Gender/Male.txt
 
 # Add labelFemale* into WordInfo/Gender/Female.txt
 cat */WordInfo/Gender/Female.txt > $WORKDIR/all_females.txt
 cat */DefInjected/{PawnKind,Faction,Thing,WorldObject}Def/*.xml | extract_tag_female_content >> $WORKDIR/all_females.txt
-cat $WORKDIR/all_females.txt | to_lowercase | unique > Core/WordInfo/Gender/Female.txt
+cat $WORKDIR/all_females.txt | to_lowercase | clean | unique > Core/WordInfo/Gender/Female.txt
+
+# Clean up WordInfo/Gender/{Neuter,Plural}.txt
+for GENDER in Neuter Plural; do
+  cat */WordInfo/Gender/$GENDER.txt | to_lowercase | clean | unique > Core/WordInfo/Gender/$GENDER.txt
+done
 
 # List of words already classified
-cat Core/WordInfo/Gender/{Male,Female}.txt | unique > $WORKDIR/wordinfo
+cat Core/WordInfo/Gender/{Male,Female,Neuter,Plural}.txt | unique > $WORKDIR/wordinfo
 
 # Add new words into WordInfo/Gender/new_words.txt
 exclude $WORKDIR/wordinfo < $WORKDIR/all | unique > Core/WordInfo/Gender/new_words.txt
 
-# Removes obsolete words from WordInfo/Gender/{Male,Female}.txt files
-for GENDER in Male Female; do
+# Removes obsolete words from WordInfo/Gender/{Male,Female,Neuter,Plural}.txt files
+for GENDER in Male Female Neuter Plural; do
   intersect $WORKDIR/all < Core/WordInfo/Gender/$GENDER.txt > $WORKDIR/$GENDER.txt
   mv $WORKDIR/$GENDER.txt Core/WordInfo/Gender/$GENDER.txt
 done
