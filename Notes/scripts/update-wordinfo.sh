@@ -41,7 +41,7 @@ WORKDIR=$(mktemp -d)
 trap "rm -rf $WORKDIR" EXIT
 
 # Force the language for tools that take it into account
-export LANG=fr_FR.UTF-8 LC_ALL=fr_FR.UTF-8
+export LANG=de_DE.UTF-8 LC_ALL=de_DE.UTF-8
 
 # List of all words coming from XML
 cat */DefInjected/{PawnKind,Faction,Thing,WorldObject}Def/*.xml | extract_tag_content | to_lowercase | unique > $WORKDIR/all
