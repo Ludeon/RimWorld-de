@@ -8,10 +8,10 @@
     <li>groupsOf->[numGroupsOf] [enemyFaction_pawnsPlural]</li>
   -->
   <ThreatReward_Raid_MiscReward.questDescriptionRules.rulesStrings>
-    <li>questDescription(asker_factionLeader==True)->[asker_nameFull], [asker_faction_leaderTitle] der Fraktion '[asker_faction_name]', möchte, dass du [asker_objective] dabei unterstützt, [asker_possessive] Karawanen zu sichern. Die Karawane wird in der Nähe ([map_definite]) von [numGroupsOf] [enemyFaction_pawnsPlural] der Fraktion '[enemyFaction_name]' gejagt. [asker_nameDef] will dir Transportkapseln mit Gütern schicken, um die [enemyFaction_pawnsPlural] von der Karawane wegzulocken - dafür aber in deine Richtung.\n\n[pawnKindsParagraph]\n\nDie Kapseln beinhalten Folgendes (Gesamtwert [itemsReward_totalMarketValue_money]):\n\n[itemsReward_items]\n\n[helpersParagraph]Akzeptierst du diese Anfrage, werden die [enemyFaction_pawnsPlural] bald ([firstRaidDelayTicks_duration]) bei dir auftauchen. [allRewardsDescriptionsExceptItems]</li>
-    <li>questDescription(asker_royalInCurrentFaction==True)->[asker_nameFull], [asker_royalTitleInCurrentFaction] der Fraktion '[asker_faction_name]', hat eine Anfrage für dich.\n\n[groupsOf] der Fraktion '[enemyFaction_name]' haben in letzter Zeit [asker_possessive]e Karawanen in der Umgebung belästigt. [asker_nameDef] möchte, dass du ihnen eine Herausforderung schickst, um sie damit zu dir zu locken, sie anzugreifen und letztendlich selbst zu vernichten.\n\n[pawnKindsParagraph]\n\n[helpersParagraph]Akzeptierst du diese Anfrage, werden die [enemyFaction_pawnsPlural] bald ([firstRaidDelayTicks_duration]) bei dir auftauchen. [allRewardsDescriptions]</li>
+    <li>questDescription(asker_factionLeader==True)->[asker_nameFull], [asker_faction_leaderTitle] der Fraktion '[asker_faction_name]', benötigt Hilfe dabei, eine [asker_possessive]er Karawanen zu retten. [numGroupsOf] der Fraktion '[enemyFaction_name]' sind hinter der Karawane nahe [map_definite] her. [asker_nameDef] möchte, dass du den Verfolgern ein Signal sendest, um sie von der Karawane weg und in deine Richtung zu locken.\n\n[pawnKindsParagraph]\n\nAls Belohnung wird [allRewardsDescriptions]\n\n[helpersParagraph]Es wird [firstRaidDelayTicks_duration] dauern, bis die [enemyFaction_pawnsPlural] bei dir eintreffen.</li>
+    <li>questDescription(asker_royalInCurrentFaction==True)->[asker_nameFull], [asker_royalTitleInCurrentFaction] der Fraktion '[asker_faction_name]', hat ein dringliches Anliegen.\n\n[groupsOf] der Fraktion '[enemyFaction_name]' schikanieren [asker_possessive]e Karawanen in der Nähe. [asker_nameDef] möchte, dass du sie zum Kampf herausforderst, um sie von den Karawanen wegzulocken.\n\n[pawnKindsParagraph]\n\n[helpersParagraph]Es wird [firstRaidDelayTicks_duration] dauern, bis die [enemyFaction_pawnsPlural] bei dir eintreffen. Es wird [allRewardsDescriptions]</li>
     <li>groupsOf(raidCount==1,priority=1)->[enemyFaction_pawnsPlural]</li>
-    <li>groupsOf->[numGroupsOf] [enemyFaction_pawnsPlural]</li>
+    <li>groupsOf->[numGroupsOf]</li>
   </ThreatReward_Raid_MiscReward.questDescriptionRules.rulesStrings>
   <!-- EN:
     <li>questName->[enemyFaction_pawnsPlural] of Fortune</li>
@@ -37,9 +37,9 @@
     <li>questName(p=0.5)->Preis des [violence_Neu]s</li>
     <li>questName(reward==royalFavor)->[enemyFaction_pawnsPlural] der Gunst</li>
     <li>questName(reward==royalFavor)->[violence] der Gunst</li>
-    <li>violence->violence_Fem</li>
-    <li>violence->violence_Mas</li>
-    <li>violence(p=0.5)->violence_Neu</li>
+    <li>violence->[violence_Fem]</li>
+    <li>violence->[violence_Mas]</li>
+    <li>violence(p=0.5)->[violence_Neu]</li>
     <li>violence_Fem->Gewalt</li>
     <li>violence_Fem->Schlacht</li>
     <li>violence_Mas->Kampf</li>

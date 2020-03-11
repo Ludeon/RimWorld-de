@@ -2,9 +2,9 @@
 <LanguageData>
 
   <!-- EN: Mad {ANIMAL_labelShort} -->
-  <LetterLabelAnimalInsanitySingle>Verrücktes Tier ({ANIMAL_labelShort})</LetterLabelAnimalInsanitySingle>
+  <LetterLabelAnimalInsanitySingle>{0_gender ? Verrückter : Verrückte : Verrücktes} {ANIMAL_labelShort}</LetterLabelAnimalInsanitySingle>
   <!-- EN: A local {ANIMAL_label} has gone mad. It will attack everyone it sees. -->
-  <AnimalInsanitySingle>Ein hiesiges Tier ({ANIMAL_label}) ist verrückt geworden. Es wird jeden in Sichtweite angreifen.</AnimalInsanitySingle>
+  <AnimalInsanitySingle>{0_gender ? Ein : Eine} {0_gender ? hiesiger : hiesige : hiesiges} {ANIMAL_label} ist verrückt geworden. {0_pronoun} wird jeden in Sichtweite angreifen.</AnimalInsanitySingle>
   <!-- EN: Mad {0} -->
   <LetterLabelAnimalInsanityMultiple>Verrückte {0}</LetterLabelAnimalInsanityMultiple>
   <!-- EN: Some sort of psychic wave has swept over the landscape. Your colonists are okay, but...\n\nIt seems many of the {0} in the area have been driven insane. -->
@@ -38,7 +38,7 @@
   <!-- EN: {PAWN_nameDef} is from your enemy {PAWN_factionName}. You can capture {PAWN_objective} for recruitment or slavery purposes. -->
   <RefugeePodCrash_Hostile>{PAWN_nameDef} gehört zu der feindlichen Fraktion '{PAWN_factionName}'. Du kannst {PAWN_objective} einsperren, um {PAWN_objective} zu rekrutieren oder zu versklaven.</RefugeePodCrash_Hostile>
   <!-- EN: {PAWN_nameDef} is from {PAWN_factionName}. If you rescue {PAWN_objective}, {PAWN_pronoun} may join freely. Otherwise, {PAWN_pronoun} will return home and spread goodwill between your factions.\n\nYou can also capture {PAWN_objective} for recruitment or slavery purposes, but this will anger {PAWN_possessive} faction. -->
-  <RefugeePodCrash_NonHostile>[PAWN_nameDef] ist von der Fraktion '[PAWN_factionName]'. Wenn du {PAWN_objective} rettest, wird {PAWN_pronoun} vielleicht freiwillig deiner Gemeinschaft beitreten. Ansonsten wird {PAWN_pronoun} nach Hause zurückkehren und deinen Ruf zu {PAWN_possessive}er Fraktion verbessern.\n\nDu kannst {PAWN_objective} auch einfangen, aber das wird {PAWN_possessive}e Fraktion verärgern.</RefugeePodCrash_NonHostile>
+  <RefugeePodCrash_NonHostile>{PAWN_nameDef} ist von der Fraktion '[PAWN_factionName]'. Wenn du {PAWN_objective} rettest, wird {PAWN_pronoun} vielleicht freiwillig deiner Gemeinschaft beitreten. Ansonsten wird {PAWN_pronoun} nach Hause zurückkehren und deinen Ruf zu {PAWN_possessive}er Fraktion verbessern.\n\nDu kannst {PAWN_objective} auch einfangen, aber das wird {PAWN_possessive}e Fraktion verärgern.</RefugeePodCrash_NonHostile>
 
   <!-- EN: Cargo pods -->
   <LetterLabelCargoPodCrash>Vorratskapsel</LetterLabelCargoPodCrash>
@@ -66,7 +66,7 @@
   <TraderArrivalNoFaction>Sie sind mit keiner einzigen Fraktion verbündet.</TraderArrivalNoFaction>
 
   <!-- EN: A {PAWN_title} from {1} is passing by. {PAWN_pronoun} is named {PAWN_nameFull}. -->
-  <SingleTravelerPassing>Ein {PAWN_title} der Fraktion '{1}' befindet sich auf der Durchreise. {PAWN_pronoun} heißt {PAWN_nameFull}.</SingleTravelerPassing>
+  <SingleTravelerPassing>{PAWN_titleIndef} der Fraktion '{1}' befindet sich auf der Durchreise. {PAWN_pronoun} heißt {PAWN_nameFull}.</SingleTravelerPassing>
   <!-- EN: A group of travelers from {0} are passing by. -->
   <GroupTravelersPassing>Reisende der Fraktion '{0}' befinden sich auf der Durchreise.</GroupTravelersPassing>
 
@@ -92,11 +92,11 @@
   <!-- EN: Manhunter pack -->
   <LetterLabelManhunterPackArrived>Menschenjagendes Rudel</LetterLabelManhunterPackArrived>
   <!-- EN: A pack of man-hunting {0} have entered the area. They will roam the region, hunting for humanoid flesh.\n\nThey won't attack doors unless they see someone go through the door. Hide inside and you'll be safe. They also won't attack turrets that are powered down, so turn your turrets off to save them.\n\nThe {0} will leave the area in one or two days. You can hide and wait them out, or fight them. -->
-  <ManhunterPackArrived>Menschenjagende {0} sind im Gebiet angekommen. Sie ziehen in der Region umher, stets auf der Suche nach menschlichem Fleisch.\n\nSie werden keine Türen angreifen, außer sie sehen jemanden dahinter verschwinden. Versteck dich vor ihnen und du bist sicher. Auch deaktivierte Geschütztürme werden von ihnen nicht angegriffen, weswegen es ratsam ist, sie auszuschalten.\n\nDie {0} werden die Gegend in ein oder zwei Tagen wieder verlassen. Du kannst dich vor ihnen verstecken und in Sicherheit ausharren, oder gegen sie kämpfen.</ManhunterPackArrived>
+  <ManhunterPackArrived>Es sind menschenjagende {0} in das Gebiet eingedrungen. Sie werden die Region durchstreifen und jeden Menschen in Sichtweite angreifen, um ihren Hunger nach menschlichem Fleisch zu stillen.\n\nSie werden keine Türen angreifen, es sei denn, sie sehen jemanden durch die Tür gehen. Solange du dich drinnen versteckst, solltest du sicher sein. Außerdem werden sie keine Geschütztürme angreifen, die ausgeschaltet sind.\n\nDie {0} werden die Gegend in ein oder zwei Tagen wieder verlassen. Du kannst dich verstecken und abwarten, oder gegen sie kämpfen.</ManhunterPackArrived>
   
   <!-- Crashed ship part-->
   <!-- EN: The {SOURCE_label} has emitted a psychic pulse that has driven nearby animals mad. -->
-  <MessageAnimalInsanityPulse>Die {SOURCE_label} hat einen psychischen Impuls ausgesendet, der Tiere in der Nähe verrückt macht.</MessageAnimalInsanityPulse>
+  <MessageAnimalInsanityPulse>{SOURCE_definite} hat einen psychischen Impuls ausgesendet, der Tiere in der Nähe verrückt macht.</MessageAnimalInsanityPulse>
   <!-- EN: The crashed ship part has emitted a focused psychic pulse that has driven colonist {0} insane. -->
   <LetterShipPartDroveColonistInsane>Das abgestürzte Schiffsteil hat einen gebündelten psychischen Impuls ausgesendet, der den Kolonisten {0} durchdrehen lässt.</LetterShipPartDroveColonistInsane>
   <!-- EN: Awoke {0} days ago -->
@@ -116,7 +116,7 @@
   <!-- EN: Agent -->
   <LetterLabelAgentRevealed>Agent</LetterLabelAgentRevealed>
   <!-- EN: {0} has been revealed as an agent of your enemy {1}.\n\nThey are attempting to escape now. -->
-  <LetterAgentRevealed>{0} wurde als Agent der gegnerischen Fraktion '{1}' entlarvt.\n\nEr versucht, zu entkommen.</LetterAgentRevealed>
+  <LetterAgentRevealed>{0} wurde als Agent der gegnerischen Fraktion '{1}' entlarvt.\n\n{0_pronoun} versucht, zu entkommen.</LetterAgentRevealed>
 
   <!-- Beavers -->
   <!-- EN: Beavers! -->
@@ -126,13 +126,13 @@
   
   <!-- Self-tame -->
   <!-- EN: {1_kind} self-tamed -->
-  <LetterLabelAnimalSelfTame>{1_kind} wurde zahm</LetterLabelAnimalSelfTame>
+  <LetterLabelAnimalSelfTame>{1_kindBaseIndef} wurde zahm</LetterLabelAnimalSelfTame>
   <!-- EN: {0} has become tame. -->
-  <LetterAnimalSelfTame>Ein Tier ({ANIMAL_kind}) wurde zahm.</LetterAnimalSelfTame>
+  <LetterAnimalSelfTame>{ANIMAL_kindBaseIndef} wurde zahm.</LetterAnimalSelfTame>
   <!-- EN: {0} has become tame. It is now designated {ANIMAL_nameFull}. -->
-  <LetterAnimalSelfTameAndNameNumerical>Ein Tier ({ANIMAL_kind}) wurde zahm. Es wird '{ANIMAL_nameFull}' genannt.</LetterAnimalSelfTameAndNameNumerical>
+  <LetterAnimalSelfTameAndNameNumerical>{ANIMAL_kindBaseIndef} wurde zahm. Das Tier trägt nun den Namen '{ANIMAL_nameFull}'.</LetterAnimalSelfTameAndNameNumerical>
   <!-- EN: {0} has become tame. Colonists have decided to name it {ANIMAL_nameFull}. -->
-  <LetterAnimalSelfTameAndName>Ein Tier ({ANIMAL_kind}) wurde zahm. Deine Kolonisten haben sich entschieden, es '{ANIMAL_nameFull}' zu nennen.</LetterAnimalSelfTameAndName>
+  <LetterAnimalSelfTameAndName>{ANIMAL_kindBaseIndef} wurde zahm. Deine Kolonisten nennen das Tier '{ANIMAL_nameFull}'.</LetterAnimalSelfTameAndName>
 
   <!-- Farm animals wander in -->
   <!-- EN: {0} join -->
