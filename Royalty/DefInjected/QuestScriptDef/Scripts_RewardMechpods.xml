@@ -11,10 +11,9 @@
   <ThreatReward_MechPods_MiscReward.questDescriptionRules.rulesStrings>
     <li>dangersDescription(priority=1)->\n\nDie Kapseln beinhalten folgende Gefahren:\n\n[allThreats]</li>
     <li>dangersDescription-></li>
-    <li>questDescription(asker_factionLeader==True)->[asker_nameDef], [asker_faction_leaderTitle] der Fraktion '[asker_faction_name]', hat eine Anfrage für dich. [commonMainPart]</li>
-    <li>questDescription(asker_factionLeader==True)->[asker_nameDef], [asker_faction_leaderTitle] der Fraktion '[asker_faction_name]', hat eine Anfrage für dich. [commonMainPart]</li>
-    <li>questDescription(asker_royalInCurrentFaction==True)->[asker_nameDef], [asker_royalTitleInCurrentFaction] der Fraktion '[asker_faction_name]',  hat eine Anfrage für dich. [commonMainPart]</li>
-    <li>commonMainPart->Ein Mechanoidenschwarm attackiert seit geraumer Zeit [asker_possessive]e Siedlungen. [asker_pronoun] möchte, dass du den Mechs ein Signal zur Ablenkung sendest, während [asker_pronoun] deren Kolonie säubert. Falls du dies tust, wird eine Mechanoidengruppe bei [map_definite] landen.[dangersDescription]\n\nDie Mech-Gruppe wird anfangs im Ruhemodus sein. Sie könnte einen Countdown haben, der sie aktiviert, oder könnte so lange in Ruhe verbleiben, bis sie gestört wird.\n\n[helpersParagraph]Als Belohnung wird [allRewardsDescriptions]</li>
+    <li>questDescription(asker_factionLeader==True)->[asker_nameDef], [asker_faction_leaderTitle] der Fraktion '[asker_faction_name]', hat ein dringliches Anliegen. [commonMainPart]</li>
+    <li>questDescription(asker_royalInCurrentFaction==True)->[asker_nameDef], [asker_royalTitleInCurrentFaction] der Fraktion '[asker_faction_name]', hat ein dringliches Anliegen. [commonMainPart]</li>
+    <li>commonMainPart->Ein mechanoider Schwarm attackiert seit geraumer Zeit [asker_possessive]e Siedlungen. [asker_pronoun] möchte, dass du den Mechs ein Signal sendest, um sie zu dir zu locken, während [asker_pronoun] das Nest säubert. Falls du dies tust, wird ein mechanoider Cluster in [map_definite] landen.[dangersDescription]\n\nDer mechanoide Cluster ist zunächst inaktiv. Er könnte aktiv werden, wenn er angegriffen wird, oder bis ein Timer abgelaufen ist oder ein Näherungssensor ausgelöst wird.\n\n[helpersParagraph]Als Belohnung wird [allRewardsDescriptions]</li>
   </ThreatReward_MechPods_MiscReward.questDescriptionRules.rulesStrings>
   <!-- EN:
     <li>questName->[menace] cluster</li>
@@ -32,19 +31,19 @@
     <li>menace->fear</li>
   -->
   <ThreatReward_MechPods_MiscReward.questNameRules.rulesStrings>
-    <li>questName->[menace] der Schwärme</li>
-    <li>questName->[menace] der Kapseln</li>
+    <li>questName->Die [menace]en Schwärme</li>
+    <li>questName->Die [menace]en Kapseln</li>
     <li>questName->[nameBased]</li>
     <li>nameBased->[asker_nameDef]'s Mechs</li>
     <li>nameBased->[asker_nameDef]'s Mechanoiden</li>
     <li>nameBased->[asker_nameDef]'s Mech-Cluster</li>
-    <li>nameBased->[asker_nameDef]'s Mechanoiden-[menace]</li>
-    <li>menace->Bedrohung</li>
-    <li>menace->Gefahr</li>
-    <li>menace->Sorge</li>
-    <li>menace->Terror</li>
-    <li>menace->Furcht</li>
-    <li>menace->Panik</li>
+    <li>nameBased->[asker_nameDef]'s [menace]e Mechanoiden</li>
+    <li>menace->unheilig</li>
+    <li>menace->bedrohlich</li>
+    <li>menace->verflucht</li>
+    <li>menace->gefährlich</li>
+    <li>menace->schrecklich</li>
+    <li>menace->fürchterlich</li>
   </ThreatReward_MechPods_MiscReward.questNameRules.rulesStrings>
   
 </LanguageData>

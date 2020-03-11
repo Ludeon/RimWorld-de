@@ -411,7 +411,7 @@
   <!-- EN: Radius expand rate -->
   <RadiusExpandRate>Radiusausdehnungsrate</RadiusExpandRate>
   <!-- EN: View: {0} -->
-  <ViewHyperlink>Anschauen: {0}</ViewHyperlink>
+  <ViewHyperlink>Mehr über: {0}</ViewHyperlink>
   <!-- EN: Detonates in {0} days -->
   <DetonationCountdown>Detoniert in {0} Tagen</DetonationCountdown>
   <!-- EN: Large explosion if damaged -->
@@ -1013,9 +1013,9 @@
 
   <!-- Unfinished thing -->
   <!-- EN: Unfinished {0} -->
-  <UnfinishedItem>{0} (unfertig)</UnfinishedItem>
+  <UnfinishedItem>{0_gender ? unfertiger : unfertige : unfertiges} {0}</UnfinishedItem>
   <!-- EN: Unfinished {0} {1} -->
-  <UnfinishedItemWithStuff>{1} aus {1} (unfertig)</UnfinishedItemWithStuff>
+  <UnfinishedItemWithStuff>{1_gender ? unfertiger : unfertige : unfertiges} {1} aus {0}</UnfinishedItemWithStuff>
 
   <!-- Quality -->
   <!-- EN: Quality -->
@@ -1219,19 +1219,19 @@
 
   <!-- Rewards -->
   <!-- EN: a {0_age}-year-old {0_title} named {0_nameDef} will arrive in a transport pod {0_relationInfoInParentheses} -->
-  <Reward_Pawn_DropPod>wird ein {0_age}-jähriger {0_title} namens {0_nameDef} mit einer Transportkapsel eintreffen {0_relationInfoInParentheses}</Reward_Pawn_DropPod>
+  <Reward_Pawn_DropPod>{0_titleIndef} namens {0_nameDef} ({0_age} Jahre alt) mit einer Transportkapsel eintreffen {0_relationInfoInParentheses}</Reward_Pawn_DropPod>
   <!-- EN: a {0_age}-year-old {0_title} named {0_nameDef} will arrive and join you {0_relationInfoInParentheses} -->
-  <Reward_Pawn_WalkIn>wird ein {0_age}-jähriger {0_title} namens {0_nameDef} eintreffen und sich dir anschließen {0_relationInfoInParentheses}</Reward_Pawn_WalkIn>
+  <Reward_Pawn_WalkIn>{0_titleIndef} namens {0_nameDef} ({0_age} Jahre alt) eintreffen und deiner Kolonie beitreten {0_relationInfoInParentheses}</Reward_Pawn_WalkIn>
   <!-- EN: a {0_age}-year-old {0_title} named {0_nameDef} will join you {0_relationInfoInParentheses} -->
-  <Reward_Pawn_Caravan>wird ein {0_age}-jähriger {0_title} namens {0_nameDef} sich dir anschließen {0_relationInfoInParentheses}</Reward_Pawn_Caravan>
+  <Reward_Pawn_Caravan>{0_titleIndef} namens {0_nameDef} ({0_age} Jahre alt) deiner Kolonie beitreten {0_relationInfoInParentheses}</Reward_Pawn_Caravan>
   <!-- EN: transport pods with the following resources will arrive (total value {1}):
 \n{0} -->
-  <Reward_Items>werden Transportkapseln mit den folgenden Ressourcen eintreffen (Gesamtwert {1}):\n\n{0}</Reward_Items>
+  <Reward_Items>dir Folgendes via Transportkapseln zugesendet (Gesamtwert {1}):\n\n{0}</Reward_Items>
   <!-- EN: you will receive (total value {1}):
 \n{0} -->
-  <Reward_Items_Caravan>wirst du Folgendes bekommen (Gesamtwert {1}):\n\n{0}</Reward_Items_Caravan>
+  <Reward_Items_Caravan>dir Folgendes überreicht (Gesamtwert {1}):\n\n{0}</Reward_Items_Caravan>
   <!-- EN: your faction relations with {0_name} will improve by {1} -->
-  <Reward_Goodwill>wird sich deine Beziehung zur Fraktion '{0_name}' um {1} verbessern</Reward_Goodwill>
+  <Reward_Goodwill>deine Beziehung zur Fraktion '{0_name}' um {1} verbessert</Reward_Goodwill>
   
   <!-- Bladelink -->
   <!-- EN: Bonded to: {0} -->

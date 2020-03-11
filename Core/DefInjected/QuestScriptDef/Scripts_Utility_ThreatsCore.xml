@@ -29,14 +29,14 @@
     <li>threatDescription->a mech cluster will land at [map_definite] containing:\n\n[allThreats]</li>
   -->
   <Util_MechCluster.questDescriptionRules.rulesStrings>
-    <li>threatDescription->wird ein Mech-Cluster bei [map_definite] landen. Er besteht aus:\n\n[allThreats]</li>
+    <li>threatDescription->ein Mech-Cluster in [map_definite] landen. Er besteht aus:\n\n[allThreats]</li>
   </Util_MechCluster.questDescriptionRules.rulesStrings>
   
   <!-- EN:
     <li>threatDescription->[enemyFaction_pawnsPlural] from [enemyFaction_name] will attack you. Their group is composed of:\n\n[raidPawnKinds]\n\n[raidArrivalModeInfo]</li>
   -->
   <Util_Raid.questDescriptionRules.rulesStrings>
-    <li>threatDescription->werden [enemyFaction_pawnsPlural] der Fraktion '[enemyFaction_name]' dich angreifen. Ihre Gruppe besteht aus:\n\n[raidPawnKinds]\n\n[raidArrivalModeInfo]</li>
+    <li>threatDescription->dich [enemyFaction_pawnsPlural] der Fraktion '[enemyFaction_name]' angreifen. Die Gruppe besteht aus:\n\n[raidPawnKinds]\n\n[raidArrivalModeInfo]</li>
   </Util_Raid.questDescriptionRules.rulesStrings>
   
   <!-- EN:
@@ -50,14 +50,14 @@
     <li>numGroupsOf(raidCount>=4)->[raidCount] groups of</li>
   -->
   <Util_RaidDelayRepeatable.questDescriptionRules.rulesStrings>
-    <li>pawnKindsParagraph(raidCount==1)->Die Gruppe [enemyFaction_pawnsPlural] besteht aus: \n\n[raid0/raidPawnKinds]\n\n[raid0/raidArrivalModeInfo]</li>
-    <li>pawnKindsParagraph(raidCount==2)->Die erste Gruppe [enemyFaction_pawnsPlural] besteht aus: \n\n[raid0/raidPawnKinds]\n\nDie zweite, ähnlich große Gruppe wird kurz darauf folgen.</li>
-    <li>pawnKindsParagraph(raidCount==3)->Die erste Gruppe [enemyFaction_pawnsPlural] besteht aus: \n\n[raid0/raidPawnKinds]\n\nZwei ähnlich große Gruppen folgen kurz darauf.</li>
-    <li>pawnKindsParagraph(raidCount>=4)->Die erste Gruppe [enemyFaction_pawnsPlural] besteht aus: \n\n[raid0/raidPawnKinds]\n\n[raidCountMinusOne] ähnlich große Gruppen folgen kurz darauf.</li>
-    <li>numGroupsOf(raidCount==1)-></li>
-    <li>numGroupsOf(raidCount==2)->zwei Gruppen von</li>
-    <li>numGroupsOf(raidCount==3)->drei Gruppen von</li>
-    <li>numGroupsOf(raidCount>=4)->[raidCount] Gruppen von</li>
+    <li>pawnKindsParagraph(raidCount==1)->Die [enemyFaction_pawnsPlural]gruppe besteht aus: \n\n[raid0/raidPawnKinds]\n\n[raid0/raidArrivalModeInfo]</li>
+    <li>pawnKindsParagraph(raidCount==2)->Die erste [enemyFaction_pawnsPlural]gruppe besteht aus: \n\n[raid0/raidPawnKinds]\n\nKurz danach wird eine weitere Gruppe ähnlicher Größe eintreffen.</li>
+    <li>pawnKindsParagraph(raidCount==3)->Die erste [enemyFaction_pawnsPlural]gruppe besteht aus: \n\n[raid0/raidPawnKinds]\n\nKurz danach werden zwei weitere Gruppen ähnlicher Größe eintreffen.</li>
+    <li>pawnKindsParagraph(raidCount>=4)->Die erste [enemyFaction_pawnsPlural]gruppe besteht aus: \n\n[raid0/raidPawnKinds]\n\nKurz danach werden [raidCountMinusOne] weitere Gruppen ähnlicher Größe eintreffen.</li>
+    <li>numGroupsOf(raidCount==1)->[enemyFaction_pawnsPlural]</li>
+    <li>numGroupsOf(raidCount==2)->zwei [enemyFaction_pawnsPlural]gruppen</li>
+    <li>numGroupsOf(raidCount==3)->drei [enemyFaction_pawnsPlural]gruppen</li>
+    <li>numGroupsOf(raidCount>=4)->[raidCount] [enemyFaction_pawnsPlural]gruppen</li>
   </Util_RaidDelayRepeatable.questDescriptionRules.rulesStrings>
   
 </LanguageData>

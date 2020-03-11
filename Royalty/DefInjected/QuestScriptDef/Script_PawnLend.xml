@@ -12,7 +12,7 @@
     <li>colonistCountToLend(colonistsToLendCount>1)->[colonistsToLendCount] colonists</li>
   -->
   <PawnLend.questDescriptionRules.rulesStrings>
-    <li>questDescription(asker_factionLeader==True)->[asker_faction_leaderTitle] [asker_nameFull] der Fraktion '[asker_faction_name]' braucht eine helfende Hand, um [dutyDescription]. [asker_pronoun] fragt, ob du der Fraktion '[asker_faction_name]' für [lendForDays] Tage [colonistCountToLend] leihen könntest.\n\nNach [lendForDays] Tagen werden alle geliehenen Kolonisten wieder via Transportkapseln zu dir zurückgebracht.\n\nSolltest du dies annehmen, wird ein Shuttle ankommen, um [colonistCountToLend] mitzunehmen. Wenn es mit [colonistHimThem] zusammen losfliegt, [allRewardsDescriptions]</li>
+    <li>questDescription(asker_factionLeader==True)->[asker_faction_leaderTitle] [asker_nameFull] der Fraktion '[asker_faction_name]' braucht eine helfende Hand, um [dutyDescription]. [asker_pronoun] fragt, ob du der Fraktion '[asker_faction_name]' für [lendForDays] Tage [colonistCountToLend] leihen könntest.\n\nNach [lendForDays] Tagen werden alle geliehenen Kolonisten wieder via Transportkapseln zu dir zurückgebracht.\n\nSolltest du dies annehmen, wird ein Shuttle ankommen, um [colonistCountToLend] mitzunehmen. Wenn es mit [colonistHimThem] an Bord abhebt, wird [allRewardsDescriptions]</li>
     <li>dutyDescription->die Ernte einzufahren</li>
     <li>dutyDescription->eine Siedlung zu verstärken</li>
     <li>dutyDescription->eine Siedlung aufzubauen</li>
@@ -23,7 +23,7 @@
     <li>disease->Seuche</li>
     <li>disease->Malaria</li>
     <li>disease->Infektion</li>
-    <li>questDescription(asker_royalInCurrentFaction==True)->[asker_royalTitleInCurrentFaction] [asker_nameFull] der Fraktion '[asker_faction_name]' möchte ein wenig mehr Leben in [asker_possessive]en Hof bringen, indem [asker_pronoun] dort ein paar [entertainerDescription] zur Schau stellt. [asker_pronoun] fragt, ob du der Fraktion '[asker_faction_name]' für [lendForDays] Tage [colonistCountToLend] leihen könntest. Nach [lendForDays] Tagen werden alle geliehenen Kolonisten wieder via Transportkapseln zu dir zurückgebracht.\n\nSolltest du dies annehmen, wird ein Shuttle ankommen, um [colonistCountToLend] mitzunehmen. Wenn es mit [colonistHimThem] zusammen losfliegt, [allRewardsDescriptions]</li>
+    <li>questDescription(asker_royalInCurrentFaction==True)->[asker_royalTitleInCurrentFaction] [asker_nameFull] der Fraktion '[asker_faction_name]' möchte ein wenig mehr Leben in [asker_possessive]en Hof bringen, indem [asker_pronoun] dort ein paar [entertainerDescription] zur Schau stellt. [asker_pronoun] fragt, ob du der Fraktion '[asker_faction_name]' für [lendForDays] Tage [colonistCountToLend] leihen könntest. Nach [lendForDays] Tagen werden alle geliehenen Kolonisten wieder via Transportkapseln zu dir zurückgebracht.\n\nSolltest du dies annehmen, wird ein Shuttle ankommen, um [colonistCountToLend] mitzunehmen. Wenn es mit [colonistHimThem] an Bord abhebt, wird [allRewardsDescriptions]</li>
     <li>entertainerDescription->echte, abgehärtete Oberflächenbewohner</li>
     <li>entertainerDescription->alberne Hofnarren</li>
     <li>entertainerDescription->Diener mit fremdländischen Akzenten</li>
@@ -42,14 +42,16 @@
     <li>worker->Worker</li>
   -->
   <PawnLend.questNameRules.rulesStrings>
-    <li>questName->[workers]-Auslagerung</li>
+    <li>questName->[workers]auslagerung</li>
     <li>questName->[workers]-Outsourcing</li>
-    <li>questName->Vertrags-[workers]</li>
-    <li>questName->Hilfs-[workers]</li>
-    <li>questName->[workers]-Verleih</li>
+    <li>questName->Vertrags[workersLower]</li>
+    <li>questName->Hilfs[workersLower]</li>
+    <li>questName->[workers]verleih</li>
     <li>questName->[workers] zu verleihen</li>
     <li>workers->Kolonisten</li>
     <li>workers->Arbeiter</li>
+    <li>workersLower->kolonisten</li>
+    <li>workersLower->arbeiter</li>
   </PawnLend.questNameRules.rulesStrings>
   <!-- EN: gather the harvest -->
   <PawnLend.root.nodes.RandomNode.nodes.Sequence-0.nodes.GetRandomElement.options.0.slateRef>die Ernte einzufahren</PawnLend.root.nodes.RandomNode.nodes.Sequence-0.nodes.GetRandomElement.options.0.slateRef>

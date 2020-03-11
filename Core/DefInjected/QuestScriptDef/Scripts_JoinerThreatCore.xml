@@ -5,7 +5,7 @@
     <li>questDescription->A [joiner_age]-year-old [joiner_title] named [joiner_nameDef] is calling from nearby. [joiner_pronoun] is being chased by [enemyFaction_pawnsPlural] from [enemyFaction_name]!\n\n[joiner_pronoun] begs for safety and offers to join you at [map_definite].[joiner_relationInfo]\n\nIf you accept, you'll have to fight off the [enemyFaction_pawnsPluralDef] on [joiner_possessive] tail. The group of [enemyFaction_pawnsPlural] is composed of: \n\n[raid/raidPawnKinds]\n\n[joiner_nameDef] is too frantic to offer more information.</li>
   -->
   <ThreatReward_Raid_Joiner.questDescriptionRules.rulesStrings>
-    <li>questDescription->Ein [joiner_title] namens [joiner_nameDef] ([joiner_age] Jahre alt) kontaktiert dich aus der Nähe ([map_definite]). [joiner_pronoun] wird gejagt von: [enemyFaction_pawnsPlural] der Fraktion '[enemyFaction_name]'!\n\n[joiner_pronoun] fleht um Hilfe und bietet an, deiner Kolonie beizutreten.[joiner_relationInfo]\n\nWenn du annimmst, wirst du gegen die verfolgenden [enemyFaction_pawnsPluralDef] kämpfen müssen. Die Gruppe von [enemyFaction_pawnsPlural] besteht aus:\n\n[raid/raidPawnKinds]\n\n[joiner_nameDef] ist zu hektisch und kann keine weiteren Informationen geben.</li>
+    <li>questDescription->[joiner_titleIndef] namens [joiner_nameDef] ([joiner_age] Jahre alt) kontaktiert dich aus der Nähe. [enemyFaction_pawnsPlural] der Fraktion '[enemyFaction_name]' machen Jagd auf [joiner_objective]!\n\n[joiner_pronoun] fleht um Hilfe und bietet an, sich dir in [map_definite] anzuschließen.[joiner_relationInfo]\n\nWenn du annimmst, wirst du gegen die Verfolger kämpfen müssen. Die [enemyFaction_pawnsPlural]gruppe besteht aus:\n\n[raid/raidPawnKinds]\n\n[joiner_nameDef] ist zu aufgeregt, um mehr Informationen preiszugeben.</li>
   </ThreatReward_Raid_Joiner.questDescriptionRules.rulesStrings>
   <!-- EN:
     <li>questName->Saving [runnerIndef]</li>
@@ -22,18 +22,20 @@
     <li>runnerIndef->a Refugee</li>
   -->
   <ThreatReward_Raid_Joiner.questNameRules.rulesStrings>
-    <li>questName->Rettet [runnerIndef]</li>
-    <li>questName->Die Rettung von [runnerIndef]</li>
-    <li>questName->Hilf [runnerIndef]</li>
-    <li>questName->Akzeptiere [runnerIndef]</li>
-    <li>questName->[enemyFaction_pawnsPlural] jagen [runnerIndef]</li>
+    <li>questName->Rette den Flüchtling</li>
+    <li>questName->Rette [joiner_nameIndef]</li>
+    <li>questName->Flüchtlingsrettung</li>
+    <li>questName->[joiner_nameIndef]'s Rettung</li>
+    <li>questName->Hilf dem Flüchtling</li>
+    <li>questName->Hilf [joiner_nameIndef]</li>
+    <li>questName->Befreie den Flüchtling</li>
+    <li>questName->Befreie [joiner_nameIndef]</li>
     <li>questName->[runnerIndef] auf der Flucht</li>
-    <li>questName->[runnerIndef] Sucht ein Zuhause</li>
-    <li>questName->[runnerIndef] gejagt von [enemyFaction_pawnsPlural]</li>
+    <li>questName->[runnerIndef] sucht ein Zuhause</li>
     <li>questName->[runnerIndef] vs. [enemyFaction_pawnsPlural]</li>
     <li>runnerIndef->[joiner_titleIndef]</li>
     <li>runnerIndef->[joiner_nameIndef]</li>
-    <li>runnerIndef->Flüchtling</li>
+    <li>runnerIndef->Ein Flüchtling</li>
   </ThreatReward_Raid_Joiner.questNameRules.rulesStrings>
   <!-- EN: {BASELABEL} chasing [../joiner_nameDef] -->
   <ThreatReward_Raid_Joiner.root.nodes.Delay-0.node.parms.customLetterLabel.value.slateRef>{BASELABEL} verfolgen [../joiner_nameDef]</ThreatReward_Raid_Joiner.root.nodes.Delay-0.node.parms.customLetterLabel.value.slateRef>
