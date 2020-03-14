@@ -58,7 +58,7 @@
     <li>minMoodInfo(priority=1,lodgersCount==1)->Du musst [lodgers0_possessive]e Stimmung über [lodgersMoodThreshold_percent] halten.</li>
     <li>minMoodInfo(priority=1,lodgersCount>=2)->Du musst die Stimmung der [lodgersLabelPlural] über [lodgersMoodThreshold_percent] halten.</li>
     <li>minMoodInfo-></li>
-    <li>enemyGroupsParagraph->Überfälle werden ungefähr einmal alle [threatsIntervalTicks_duration] auftreten. Die Stärke der Überfälle wird vergleichbar sein mit:\n\n[threatExample]</li>
+    <li>enemyGroupsParagraph->Überfälle werden ungefähr einmal alle [threatsIntervalTicks_duration] auftreten. Die Stärke der Überfälle wird vergleichbar sein mit Folgendem:\n\n[threatExample]</li>
     <li>commonDescEnding->[helpersParagraph][shuttleWillComeParagraph]\n\n[mustKeepOnMapParagraph]</li>
     <li>shuttleWillComeParagraph(lodgersCount==1)->Es dauert genau [shuttleDelayTicks_duration], bis ein Shuttle eintrifft, um [lodgers0_nameDef] abzuholen. Falls [lodgers0_nameDef] es lebendig auf das Shuttle schafft, wird [allRewardsDescriptions]</li>
     <li>shuttleWillComeParagraph(lodgersCount>=2)->Es dauert genau [shuttleDelayTicks_duration], bis ein Shuttle eintrifft, um die [lodgersLabelPlural] abzuholen. Falls sie es lebendig auf das Shuttle schaffen, wird [allRewardsDescriptions]</li>
@@ -68,6 +68,9 @@
     <li>threatsInfoMechClustersMultiPrisoners->Die Gefangenen haben [recently] [mechViolation], und sind seitdem im Fadenkreuz eines im Orbit befindlichen Mechanoidenschwarms. Solange die Gefangenen anwesend sind, werden regelmäßig mechanoide Kampf-Cluster in [map_definite] landen.</li>
     <li>threatsInfoMechRaidsSingleHuman->[lodgers0_nameDef] hat [recently] [mechViolation], und ist seitdem im Fadenkreuz eines Mechanoidennestes. Solange [lodgers0_nameDef] anwesend ist, werden regelmäßig Überfälle durch Mechanoiden stattfinden.</li>
     <li>threatsInfoMechRaidsMultiHuman->Sie haben [recently] [mechViolation], und sind seitdem im Fadenkreuz eines Mechanoidennestes. Solange sie anwesend sind, werden regelmäßig Überfälle durch Mechanoiden stattfinden.</li>
+    <li>recently->kürzlich</li>
+    <li>recently->vor Kurzem</li>
+    <li>recently->unlängst</li>
     <li>mechViolation->– wie auch immer – eine Maschinen-Persona verärgert</li>
     <li>mechViolation->schlimme Dinge mit einem antiken Supercomputer-Terminal angestellt</li>
     <li>mechViolation->ein menschliches Kind getötet, das einem Archotech sehr viel bedeutet hat</li>
@@ -80,9 +83,13 @@
     <li>remainingWillNowLeave(lodgersCount>=2)->Alle verbleibenden [lodgersLabelPlural] werden dich nun verlassen.</li>
     <li>failLetterEndingCommon(askerIsNull==true,priority=1)->Die Quest '[resolvedQuestName]' ist gescheitert.</li>
     <li>failLetterEndingCommon->Die Quest '[resolvedQuestName]' ist gescheitert.\n\nDein Ruf bei der Fraktion '[asker_faction_name]' hat sich um [goodwillPenalty] verringert.</li>
-    <li>recently->kürzlich</li>
-    <li>recently->vor Kurzem</li>
-    <li>recently->unlängst</li>
+    <li>inappropriate(p=4)-></li>
+    <li>inappropriate->unangemessene </li>
+    <li>inappropriate->ungebührliche </li>
+    <li>inappropriate->verbotene </li>
+    <li>affair->Affäre</li>
+    <li>affair->Liaison</li>
+    <li>affair->Liebschaft</li>
   </QuestHospitalityCommon.rulePack.rulesStrings>
   
 </LanguageData>
