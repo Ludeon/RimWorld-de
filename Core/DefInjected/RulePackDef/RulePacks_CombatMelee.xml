@@ -102,7 +102,7 @@
     <li>r_logentry(p=0.05)->[INITIATOR_label], trägt [INITIATOR_possessive] [WEAPON_label] [expertly], [adverb_flavortext] [damaged_past] [RECIPIENT_label] in der [RECIPIENT_part0_label].</li>
     <!-- combined high priority, if we destroyed something -->
     <li>r_logentry(p=1,recipient_part_count==0)->[INITIATOR_definite] [damaged_past] [RECIPIENT_definite] mit [implement].</li>
-    <li>r_logentry(p=0.4,recipient_part_count==0)->[INITIATOR_definite] [skillAdv] [damaged_past] [RECIPIENT_definite] mit [implement].</li>
+    <li>r_logentry(p=0.4,recipient_part_count==0)->[INITIATOR_definite] [damaged_past] [skillAdv] [RECIPIENT_definite] mit [implement].</li>
     <li>r_logentry(p=0.3)->[INITIATOR_label] [destroyed_past] [destroyed_targets] von [RECIPIENT_label].</li>
     <li>r_logentry(p=0.3)->[INITIATOR_label] [destroyed_past] [destroyed_targets] von [RECIPIENT_label] in [destroyed_suffix].</li>
     <li>r_logentry(p=0.3)->[INITIATOR_label] [destroyed_past] [expertly] [destroyed_targets] von [RECIPIENT_label].</li>
