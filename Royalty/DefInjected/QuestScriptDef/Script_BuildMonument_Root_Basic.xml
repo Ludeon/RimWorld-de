@@ -2,10 +2,14 @@
 <LanguageData>
   
   <!-- EN:
-    <li>commonEnding->The monument is [monumentSize] in size and will require these resources (total value [monumentRequiredResourcesMarketValue_money]):\n\n[monumentRequiredResources]\n\nConstruction must be completed within [constructionTimeoutTicks_duration] of accepting the task. Upon completion, [allRewardsDescriptions]</li>
+    <li>commonEnding->The monument is [monumentSize] in size and will require these resources (total value [monumentRequiredResourcesMarketValue_money]):\n\n[monumentRequiredResources]\n\nConstruction must be completed within [constructionTimeoutTicks_duration] of accepting the task. Upon completion, [allRewardsDescriptions][dontDestroyMonument]</li>
+    <li>dontDestroyMonument(priority=-10)-></li>
+    <li>dontDestroyMonument->\n\nIf you destroy the monument within 15 days of construction, your relations with [asker_factionName] will fall by 10. text_todo</li>
   -->
   <BuildMonument_Basic.questDescriptionRules.rulesStrings>
-    <li>commonEnding->Das Monument hat eine Größe von [monumentSize] und benötigt folgende Ressourcen (Gesamtwert [monumentRequiredResourcesMarketValue_money]):\n\n[monumentRequiredResources]\n\nFalls du die Quest annimmst, musst du das Monument innerhalb von [constructionTimeoutTicks_duration] fertigstellen. Nach der Fertigstellung wird [allRewardsDescriptions]</li>
+    <li>commonEnding->Das Monument hat eine Größe von [monumentSize] und benötigt folgende Ressourcen (Gesamtwert [monumentRequiredResourcesMarketValue_money]):\n\n[monumentRequiredResources]\n\nFalls du die Quest annimmst, musst du das Monument innerhalb von [constructionTimeoutTicks_duration] fertigstellen. Nach der Fertigstellung wird [allRewardsDescriptions][dontDestroyMonument]</li>
+    <li>dontDestroyMonument(priority=-10)-></li>
+    <li>dontDestroyMonument->\n\nWenn du das Denkmal nach dessen Errichtung innerhalb von 15 Tagen zerstörst, verschlechtern sich deine Beziehungen zu der Fraktion '[asker_factionName]' um 10 Rufpunkte.</li>
   </BuildMonument_Basic.questDescriptionRules.rulesStrings>
   
 </LanguageData>

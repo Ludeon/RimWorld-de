@@ -2,10 +2,10 @@
 <LanguageData>
   
   <!-- EN:
-    <li>questDescription->\nIn order to consecrate making [titleHeir_nameFull] the heir of [titleHolder_nameFull]'s title, you must build a monument.\n\nThe monument will be [monumentSize] in size and will require these resources (total value [monumentRequiredResourcesMarketValue_money]):\n\n[monumentRequiredResources]\n\nFailing to finish the monument within 20 days is considered to profane the ritual. Your relations with [asker_factionName] will fall by 25, and the heir will not be changed.</li>
+    <li>questDescription->\nIn order to consecrate making [titleHeir_nameFull] the heir of [titleHolder_nameFull]'s title, you must build a monument.\n\nThe monument will be [monumentSize] in size and will require these resources (total value [monumentRequiredResourcesMarketValue_money]):\n\n[monumentRequiredResources]\n\nFailing to finish the monument within 20 days is considered to profane the ritual. Your relations with [asker_factionName] will fall by 25, and the heir will not be changed.\n\nIf you destroy the monument within 15 days of construction, your relations with [asker_factionName] will fall by 10. text_todo</li>
   -->
   <ChangeRoyalHeir.questDescriptionRules.rulesStrings>
-    <li>questDescription->\nUm abzusegnen, dass [titleHeir_nameFull] der Erbe von [titleHolder_nameFull]'s Titel wird, musst du ein Monument errichten.\n\nDas Monument wird eine Größe von [monumentSize] haben und wird die folgenden Ressourcen benötigen (Gesamtwert [monumentRequiredResourcesMarketValue_money]):\n\n[monumentRequiredResources]\n\nSollte es dir nicht gelingen, das Monument innerhalb von 20 Tagen zu errichten, wird dies als Entweihung des Rituals angesehen. Dein Ruf bei der Fraktion '[asker_factionName]' wird um 25 Punkte sinken, und die Erbschaft bleibt unverändert.</li>
+    <li>questDescription->\nUm abzusegnen, dass [titleHeir_nameFull] der Erbe von [titleHolder_nameFull]'s Titel wird, musst du ein Monument errichten.\n\nDas Monument wird eine Größe von [monumentSize] haben und wird die folgenden Ressourcen benötigen (Gesamtwert [monumentRequiredResourcesMarketValue_money]):\n\n[monumentRequiredResources]\n\nSollte es dir nicht gelingen, das Monument innerhalb von 20 Tagen zu errichten, wird dies als Entweihung des Rituals angesehen. Dein Ruf bei der Fraktion '[asker_factionName]' wird um 25 Punkte sinken, und die Erbschaft bleibt unverändert.\n\nWenn du das Denkmal nach dessen Errichtung innerhalb von 15 Tagen zerstörst, verschlechtern sich deine Beziehungen zu der Fraktion '[asker_factionName]' um 10 Rufpunkte.</li>
   </ChangeRoyalHeir.questDescriptionRules.rulesStrings>
   <!-- EN:
     <li>questName->[titleHeir_nameDef]'s inheritance</li>
@@ -27,5 +27,19 @@
   <ChangeRoyalHeir.root.nodes.titleHeirDestroyed.node.nodes.Letter.label.slateRef>Ernannter Erbe ist gestorben: {SUBJECT_definite}</ChangeRoyalHeir.root.nodes.titleHeirDestroyed.node.nodes.Letter.label.slateRef>
   <!-- EN: {SUBJECT_definite}, who was supposed to become heir to a title, has died. -->
   <ChangeRoyalHeir.root.nodes.titleHeirDestroyed.node.nodes.Letter.text.slateRef>{SUBJECT_definite}, {SUBJECT_gender ? der : die} {SUBJECT_gender ? Erbe : Erbin} eines Titels werden sollte, ist gestorben.</ChangeRoyalHeir.root.nodes.titleHeirDestroyed.node.nodes.Letter.text.slateRef>
+  <!-- EN: Monument destroyed -->
+  <ChangeRoyalHeir.root.nodes.monumentMarkerMonumentDestroyed.node.nodes.Letter.label.slateRef>Denkmal zerstörst</ChangeRoyalHeir.root.nodes.monumentMarkerMonumentDestroyed.node.nodes.Letter.label.slateRef>
+  <!-- EN: [asker_nameDef] is offended that you promised to consecrate the new inheritance, but did destroy the monument after completing it.\n\nYou lost 10 goodwill with [asker_faction_name]. text_todo -->
+  <ChangeRoyalHeir.root.nodes.monumentMarkerMonumentDestroyed.node.nodes.Letter.text.slateRef>[asker_nameDef] ist empört, dass du zwar versprochen hast, die neue Erbschaft abzusegnen, aber das Denkmal nach dessen Fertigstellung zerstört hast.\n\nDu hast 10 Rufpunkte bei der Fraktion '[asker_faction_name]' verloren.</ChangeRoyalHeir.root.nodes.monumentMarkerMonumentDestroyed.node.nodes.Letter.text.slateRef>
+  <!-- EN: New heir: [titleHeir_nameDef] text_todo -->
+  <ChangeRoyalHeir.root.nodes.monumentMarkerMonumentCompleted.node.nodes.Letter.label.slateRef>Neuer Erbe: [titleHeir_nameDef]</ChangeRoyalHeir.root.nodes.monumentMarkerMonumentCompleted.node.nodes.Letter.label.slateRef>
+  <!-- EN: [titleHeir_nameDef] is the new heir of [titleHolder_nameDef]. text_todo -->
+  <ChangeRoyalHeir.root.nodes.monumentMarkerMonumentCompleted.node.nodes.Letter.text.slateRef>[titleHeir_nameDef] ist der neue Erbe von [titleHolder_nameDef].</ChangeRoyalHeir.root.nodes.monumentMarkerMonumentCompleted.node.nodes.Letter.text.slateRef>
+  <!-- EN: Do not destroy the monument for {0} -->
+  <ChangeRoyalHeir.root.nodes.monumentMarkerMonumentCompleted.node.nodes.Delay.expiryInfoPart.slateRef>Du darfst das Denkmal in den nächsten {0} nicht zerstören</ChangeRoyalHeir.root.nodes.monumentMarkerMonumentCompleted.node.nodes.Delay.expiryInfoPart.slateRef>
+  <!-- EN: Do not destroy the monument for {0} -->
+  <ChangeRoyalHeir.root.nodes.monumentMarkerMonumentCompleted.node.nodes.Delay.expiryInfoPartTip.slateRef>Du darfst das Denkmal in den nächsten {0} nicht zerstören</ChangeRoyalHeir.root.nodes.monumentMarkerMonumentCompleted.node.nodes.Delay.expiryInfoPartTip.slateRef>
+  <!-- EN: Keep monument {0} -->
+  <ChangeRoyalHeir.root.nodes.monumentMarkerMonumentCompleted.node.nodes.Delay.inspectString.slateRef>Erhalte das Denkmal {0}</ChangeRoyalHeir.root.nodes.monumentMarkerMonumentCompleted.node.nodes.Delay.inspectString.slateRef>
   
 </LanguageData>
