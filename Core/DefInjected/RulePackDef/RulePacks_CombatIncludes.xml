@@ -149,15 +149,16 @@
   <Combat_MeleeIncludes.rulePack.rulesStrings>
     <li>r_logentry->[action], [result].</li>
     <li>r_logentry(priority=-10)->[action].</li>
-    <li>implement(IMPLEMENTOWNER_type==weapon,p=2)->[TOOL_label] [INITIATOR_possessive]er Waffe '[WEAPON_label]'</li>
+    <li>implement(IMPLEMENTOWNER_type==weapon,p=2)->d[em_Werkzeug] [INITIATOR_possessive]er Waffe '[WEAPON_label]'</li>
     <li>implement(IMPLEMENTOWNER_type==weapon,p=1)->[INITIATOR_possessive]er Waffe '[WEAPON_label]'</li>
-    <li>implement(IMPLEMENTOWNER_type==weapon,p=1)->[TOOL_label] der Waffe '[WEAPON_label]'</li>
+    <li>implement(IMPLEMENTOWNER_type==weapon,p=1)->d[em_Werkzeug] der Waffe '[WEAPON_label]'</li>
     <li>implement(IMPLEMENTOWNER_type==weapon,p=0.5)->der Waffe '[WEAPON_label]'</li>
-    <li>implement(IMPLEMENTOWNER_type==bodypart,p=2)->[TOOL_label]</li>
-    <li>implement(IMPLEMENTOWNER_type==bodypart,p=1)->[TOOL_label]</li>
-    <li>implement(IMPLEMENTOWNER_type==hediff,p=2)->[TOOL_label] [INITIATOR_possessive]er Waffe '[WEAPON_label]'</li>
+    <li>implement(IMPLEMENTOWNER_type==bodypart,p=2)->[INITIATOR_possessive][em_Werkzeug]</li>
+    <li>implement(IMPLEMENTOWNER_type==hediff,p=2)->d[em_Werkzeug] [INITIATOR_possessive]er Waffe '[WEAPON_label]'</li>
     <li>implement(IMPLEMENTOWNER_type==hediff,p=1)->[INITIATOR_possessive]er Waffe '[WEAPON_label]'</li>
-    <li>implement(IMPLEMENTOWNER_type==hediff,p=1)->[INITIATOR_possessive]er/[INITIATOR_possessive]em [TOOL_label]</li>
+    <li>implement(IMPLEMENTOWNER_type==hediff,p=1)->[INITIATOR_possessive][em_Werkzeug]</li>
+    <li>em_Werkzeug(TOOL_gender!=Female)->em [TOOL_label]</li>
+    <li>em_Werkzeug(TOOL_gender==Female)->er [TOOL_label]</li>
     <li>adjective_bodypart->hart</li>
     <li>adjective_bodypart->stark</li>
     <li>adjective_bodypart->kraftvoll</li>
