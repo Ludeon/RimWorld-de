@@ -223,11 +223,14 @@
     <li>topicalnoun->[VegetableSingular]</li>
     <li>topicalnoun->[Game]</li>
     <li>topicalnoun->[BodyPart]</li>
+    <li>topicalnounCon->[TerrainFeatureCon]</li>
+    <li>topicalnounCon->[VegetableCon]</li>
+    <li>topicalnounCon->[WeaponCon]</li>
     <li>townname_combo->[topicalnoun]-[TerrainFeature]</li>
     <li>townname_combo->[topicalnoun]-[Community]</li>
-    <li>townname_combo->[TerrainFeature] der [topicalnoun]</li>
+    <li>townname_combo->[TerrainFeature] der [AnimalPlural]</li>
     <li>townname_combo->[topicalnoun]'s [Community]</li>
-    <li>townname_combo(p=2)->[concept_positive]'s [TerrainFeature]</li>
+    <li>townname_combo(p=2)->[NamePerson]'s [TerrainFeature]</li>
     <li>townname_combo(p=2)->[TerrainFeature] der [concept_positive]</li>
     <li>townname_combo(p=2)->[Community] der [concept_positive]</li>
     <li>townname_combo(p=3)->[TerrainFeature] der [CharacterPlural]</li>
@@ -241,8 +244,7 @@
     <li>townname_wordgen(p=2)->[SylE][SylE][SylE]</li>
     <li>townname_wordgen(p=2)->[SylE][townend]</li>
     <li>townname_wordgen(p=2)->[SylE][SylE][townend]</li>
-    <li>townname_wordgen->[TerrainFeature][townend]</li>
-    <li>townname_wordgen->[topicalnoun][townend]</li>
+    <li>townname_wordgen->[topicalnounCon][townend]</li>
     <li>townend->burg</li>
     <li>townend->en</li>
     <li>townend->grad</li>
@@ -266,6 +268,7 @@
     <li>townend->berg</li>
     <li>townend->werder</li>
     <li>townend->eln</li>
+    <li>townend->nest</li>
   </NamerSettlementOutlander.rulePack.rulesStrings>
   
   <!-- EN:
