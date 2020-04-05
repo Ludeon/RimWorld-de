@@ -19,15 +19,17 @@
     <li>die(SUBJECT_flesh!=Mechanoid,p=2)->sterben</li>
     <li>die(SUBJECT_flesh!=Mechanoid)->verenden</li>
     <li>die(SUBJECT_flesh!=Mechanoid)->verrecken</li>
-    <li>die(subject_flesh==Mechanoid)->abschalten</li>
-    <li>die(subject_flesh==Mechanoid)->aufhören zu funktionieren</li>
-    <li>die(SUBJECT_flesh==Mechanoid)->Energie verlieren</li>
+    <li>die(SUBJECT_flesh==Mechanoid)->abschalten</li>
+    <li>die(SUBJECT_flesh==Mechanoid)->aufhören zu funktionieren</li>
+    <li>die(SUBJECT_flesh==Mechanoid)->ausfallen</li>
     <li>died(SUBJECT_flesh!=Mechanoid,p=2)->starb</li>
     <li>died(SUBJECT_flesh!=Mechanoid)->erlag den Verletzungen</li>
-    <li>died(subject_flesh!=Mechanoid)->verschied</li>
-    <li>died(subject_flesh==Mechanoid)->schaltete sich ab</li>
-    <li>died(subject_flesh==Mechanoid)->hörte auf zu funktionieren</li>
-    <li>died(SUBJECT_flesh==Mechanoid)->verlor Energie</li>
+    <li>died(SUBJECT_flesh!=Mechanoid)->verschied</li>
+    <li>died(SUBJECT_flesh==Mechanoid)->schaltete sich ab</li>
+    <li>died(SUBJECT_flesh==Mechanoid)->hörte auf zu funktionieren</li>
+    <li>died(SUBJECT_flesh==Mechanoid)->fiel aus</li>
+    <li>zumTod(SUBJECT_flesh!=Mechanoid)->zum Tod</li>
+    <li>zumTod(SUBJECT_flesh==Mechanoid)->zur Abschaltung</li>
   </Transition_Died.rulePack.rulesStrings>
   
   <!-- EN:
@@ -61,32 +63,20 @@
   -->
   <Transition_DiedExplosive.rulePack.rulesStrings>
     <li>die(p=3)->[flavor] explodieren</li>
-    <li>die(p=3)->explodieren[flavorsuffix]</li>
-    <li>die->[flavor] explodieren</li>
-    <li>die->explodieren[flavorsuffix]</li>
-    <li>die->zerbersten [flavor]</li>
-    <li>die->zerbersten[flavorsuffix]</li>
+    <li>die(p=3)->explodieren [flavorsuffix]</li>
+    <li>die->[flavor] zerbersten</li>
+    <li>die->zerbersten [flavorsuffix]</li>
     <li>died(p=3)->explodierte [flavor]</li>
-    <li>died->explodierte [flavor]</li>
     <li>died->zerbarst [flavor]</li>
-    <li>flavor(p=0.2)->in einem chemischen [fireball]</li>
-    <li>flavor->in einem [Color]en [fireball]</li>
-    <li>flavor->in einem [AdjectiveLarge]en [fireball]</li>
-    <li>flavor(p=4)->in einem [fireball]</li>
-    <li>flavor(p=4)-></li>
-    <li>flavorsuffix->und verteilte [everywhere] [pieces]</li>
-    <li>flavorsuffix(SUBJECT_flesh!=Mechanoid,p=2)->und verteilte [everywhere] [Gore]</li>
-    <li>flavorsuffix(SUBJECT_flesh!=Mechanoid)->, nur ein kleiner Haufen [Gore] bleibt zurück</li>
-    <li>flavorsuffix->, es hinterlässt einen kleinen Krater</li>
+    <li>flavor->in tausend [pieces]</li>
+    <li>flavor-></li>
+    <li>flavorsuffix(SUBJECT_flesh!=Mechanoid,p=2)->, dabei flogen [Gore] in alle Himmelsrichtungen</li>
+    <li>flavorsuffix(SUBJECT_flesh!=Mechanoid)->, was einen kleinen Haufen voller [Gore] hinterließ</li>
+    <li>flavorsuffix->, was einen kleinen Krater hinterließ</li>
     <li>flavorsuffix(p=4)-></li>
-    <li>fireball(p=3)->Feuerball</li>
-    <li>fireball->Flammenball</li>
-    <li>fireball->Blitzgewitter</li>
-    <li>fireball->Feuersturm</li>
     <li>pieces->Stücke</li>
     <li>pieces->Teile</li>
-    <li>everywhere->überall</li>
-    <li>everywhere->nah und fern</li>
+    <li>pieces->Fragmente</li>
   </Transition_DiedExplosive.rulePack.rulesStrings>
   
   <!-- EN:
@@ -99,11 +89,13 @@
   -->
   <Transition_DiedInclude.rulePack.rulesStrings>
     <li>r_logentry(p=1.5)->[CULPRITHEDIFF_labelNoun] ließ [SUBJECT_label] [die].</li>
+    <li>r_logentry(p=1.5)->[CULPRITHEDIFF_labelNoun] führte [zumTod] von [SUBJECT_label].</li>
+    <li>r_logentry(p=1.5,SUBJECT_flesh!=Mechanoid)->[CULPRITHEDIFF_labelNoun] kostete [SUBJECT_label] das Leben.</li>
     <li>r_logentry(p=1.5)->[CULPRITHEDIFF_labelNounPretty] ließ [SUBJECT_label] [die].</li>
-    <li>r_logentry->[SUBJECT_label] [died] [duetoa] [CULPRITHEDIFF_labelNoun] [flavorsuffix].</li>
-    <li>r_logentry->[SUBJECT_label] [died] [duetoa] [CULPRITHEDIFF_labelNounPretty] [flavorsuffix].</li>
+    <li>r_logentry(p=1.5)->[CULPRITHEDIFF_labelNounPretty] führte [zumTod] von [SUBJECT_label].</li>
+    <li>r_logentry(p=1.5,SUBJECT_flesh!=Mechanoid)->[CULPRITHEDIFF_labelNounPretty] kostete [SUBJECT_label] das Leben.</li>
     <li>r_logentry->[SUBJECT_label] [died].</li>
-    <li>r_logentry->[SUBJECT_label] [died][flavorsuffix].</li>
+    <li>r_logentry->[SUBJECT_label] [died] [flavorsuffix].</li>
   </Transition_DiedInclude.rulePack.rulesStrings>
   
   <!-- EN:
@@ -137,34 +129,31 @@
     <li>collapsedmeta(p=0.5)->[collapsed] [helplessly]</li>
   -->
   <Transition_Downed.rulePack.rulesStrings>
-    <li>r_logentry->[CULPRITHEDIFF_labelNoun] ließ [SUBJECT_label] [collapsemeta].</li>
-    <li>r_logentry->[CULPRITHEDIFF_labelNounPretty] ließ [SUBJECT_label] [collapsemeta].</li>
-    <li>r_logentry->[SUBJECT_label] [collapsedmeta] [duetoa] [CULPRITHEDIFF_labelNoun].</li>
-    <li>r_logentry->[SUBJECT_label] [collapsedmeta] [duetoa] [CULPRITHEDIFF_labelNounPretty].</li>
-    <li>r_logentry(p=0.1)->[SUBJECT_label] [collapsedmeta].</li>
+    <li>r_logentry->[CULPRITHEDIFF_labelNoun] ließ [SUBJECT_label] [helplessly] [collapse].</li>
+    <li>r_logentry(p=0.5)->[CULPRITHEDIFF_labelNoun] löste bei [SUBJECT_label] einen Kollaps aus.</li>
+    <li>r_logentry->[CULPRITHEDIFF_labelNounPretty] ließ [SUBJECT_label] [helplessly] [collapse].</li>
+    <li>r_logentry(p=0.5)->[CULPRITHEDIFF_labelNounPretty] löste bei [SUBJECT_label] einen Kollaps aus.</li>
+    <li>r_logentry(p=0.1)->[SUBJECT_label] [collapsed].</li>
     <li>collapse->kollabieren</li>
     <li>collapse->zusammenbrechen</li>
     <li>collapse->hinfallen</li>
-    <li>collapse(SUBJECT_flesh!=Mechanoid)->zerdrücken</li>
-    <li>collapse(SUBJECT_flesh==Mechanoid)->einen Systemabsturz erleiden</li>
-    <li>collapse(SUBJECT_flesh==Mechanoid)->herunterfahren</li>
-    <li>collapse(SUBJECT_flesh==Mechanoid)->Hauptenergie verlieren</li>
-    <li>collapsed->kollabiert</li>
-    <li>collapsed->zusammengebrochen</li>
-    <li>collapsed->hingefallen</li>
-    <li>collapsed(SUBJECT_flesh!=Mechanoid)->zerdrückt</li>
-    <li>collapsed(SUBJECT_flesh==Mechanoid)->einen Systemabsturz erlitten</li>
-    <li>collapsed(SUBJECT_flesh==Mechanoid)->heruntergefahren</li>
-    <li>collapsed(SUBJECT_flesh==Mechanoid)->Hauptenergie verloren</li>
+    <li>collapse(SUBJECT_flesh!=Mechanoid)->das Bewusstsein verlieren</li>
+    <li>collapse(SUBJECT_flesh==Mechanoid)->abstürzen</li>
+    <li>collapse(SUBJECT_flesh==Mechanoid)->zum Stillstand kommen</li>
+    <li>collapse(SUBJECT_flesh==Mechanoid)->außer Betrieb gehen</li>
+    <li>collapsed->kollabierte [helplessly]</li>
+    <li>collapsed->brach [helplessly] zusammen</li>
+    <li>collapsed->fiel [helplessly] hin</li>
+    <li>collapsed(SUBJECT_flesh!=Mechanoid)->verlor [helplessly] das Bewusstsein</li>
+    <li>collapsed(SUBJECT_flesh==Mechanoid)->stürzte [helplessly]  ab</li>
+    <li>collapsed(SUBJECT_flesh==Mechanoid)->kam [helplessly] zum Stillstand</li>
+    <li>collapsed(SUBJECT_flesh==Mechanoid)->ging [helplessly] außer Betrieb</li>
+    <li>helplessly(p=1.5)-></li>
     <li>helplessly->hilflos</li>
-    <li>helplessly(SUBJECT_flesh!=Mechanoid)->bewusstlos</li>
-    <li>helplessly(SUBJECT_flesh!=Mechanoid)->schwächlich</li>
+    <li>helplessly(SUBJECT_flesh!=Mechanoid)->unbewusst</li>
+    <li>helplessly(SUBJECT_flesh!=Mechanoid)->völlig</li>
     <li>helplessly(SUBJECT_flesh!=Mechanoid)->kraftlos</li>
     <li>helplessly(SUBJECT_flesh==Mechanoid)->unkontrolliert</li>
-    <li>collapsemeta->[collapse]</li>
-    <li>collapsemeta(p=0.5)->[helplessly] [collapse]</li>
-    <li>collapsedmeta->ist [collapsed]</li>
-    <li>collapsedmeta(p=0.5)->ist [helplessly] [collapsed]</li>
   </Transition_Downed.rulePack.rulesStrings>
   
   <!-- EN:

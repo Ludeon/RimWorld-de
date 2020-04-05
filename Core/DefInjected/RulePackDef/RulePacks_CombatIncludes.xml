@@ -47,10 +47,10 @@
     <li>tried->attempted</li>
   -->
   <Combat_FailIncludes.rulePack.rulesStrings>
-    <li>action->[INITIATOR_label] [tried] [RECIPIENT_label] zu [damaged_inf]</li>
-    <li>action->[INITIATOR_label] [tried] [RECIPIENT_label] mit [implement] zu [damaged_inf]</li>
-    <li>action->[INITIATOR_label] [tried] mit [implement] [RECIPIENT_label] zu [damaged_inf]</li>
-    <li>action->[INITIATOR_label] schlägt [INITIATOR_possessive] [WEAPON_label] [towardsat] [RECIPIENT_label]</li>
+    <li>action->[INITIATOR_label] [tried], [RECIPIENT_label] zu [damaged_inf]</li>
+    <li>action->[INITIATOR_label] [tried], [RECIPIENT_label] mit [implement] zu [damaged_inf]</li>
+    <li>action->[INITIATOR_label] [tried], mit [implement] [RECIPIENT_label] zu [damaged_inf]</li>
+    <li>action->[INITIATOR_label] schlug [INITIATOR_possessive] [WEAPON_label] [towardsat] [RECIPIENT_label]</li>
     <li>action(p=0.3)->[INITIATOR_label] [verb_genericattack] [towardsat] [RECIPIENT_label] mit [implement]</li>
     <li>action(p=0.3)->[INITIATOR_label] [verb_genericattack] [towardsat] [RECIPIENT_label] mit [implement]</li>
     <li>action(p=0.3)->[INITIATOR_label] [verb_genericattack] mit [implement]</li>
@@ -60,7 +60,7 @@
     <li>verb_genericattack->drosch</li>
     <li>verb_genericattack->prügelte</li>
     <li>tried->versuchte</li>
-    <li>tried->verfehlte</li>
+    <li>tried->bemühte sich</li>
   </Combat_FailIncludes.rulePack.rulesStrings>
   
   <!-- EN:
@@ -78,30 +78,20 @@
   -->
   <Combat_MeleeDamageIncludes.rulePack.rulesStrings>
     <li>result(p=0.5)->[damaged_present] [RECIPIENT_possessive] [targetlist]</li>
-    <li>result(p=0.1)->[damaged_present] [RECIPIENT_possessive] [targetlist] [adverb_flavortext]</li>
-    <li>result(p=0.1)->[damaged_present] [RECIPIENT_possessive] [targetlist] [flavortext_situation]</li>
+    <li>result(p=0.1)->[damaged_present] [RECIPIENT_possessive] [targetlist] [strikeAdv]</li>
     <li>result(p=0.1)->[damaged_present] [RECIPIENT_possessive] [targetlist] und [flavortext_consequence]</li>
-    <li>adverb_flavortext->schmerzhaft</li>
-    <li>adverb_flavortext->brutal</li>
-    <li>adverb_flavortext->entsetzlich</li>
-    <li>adverb_flavortext->qualvoll</li>
-    <li>adverb_flavortext->heftig</li>
-    <li>adverb_flavortext->schonungslos</li>
-    <li>adverb_flavortext->wild</li>
-    <li>adverb_flavortext->brutal</li>
-    <li>adverb_flavortext->erbarmungslos</li>
-    <li>adverb_flavortext->herzlos</li>
-    <li>flavortext_situation(recipient_flesh!=Mechanoid)->in einer Explosion der Gedärme</li>
-    <li>flavortext_situation(recipient_flesh==Mechanoid)->in einer Schrott-Explosion</li>
-    <li>flavortext_situation->ohne jede Emotion</li>
-    <li>flavortext_situation(p=0.4)->mit einem ausdruckslosen Gesicht</li>
-    <li>flavortext_situation(p=0.2,initiator_flesh==Normal)->mit einem brutalen Gesichtsausdruck</li>
-    <li>flavortext_situation(p=0.2,initiator_flesh==Normal)->mit einem [AdjectiveBadass]en Ausdruck</li>
-    <li>flavortext_situation(p=0.2,initiator_flesh==Normal)->mit einer Grimasse</li>
-    <li>flavortext_situation(p=0.2,initiator_flesh==Normal)->mit einem Lachen auf den Lippen</li>
-    <li>flavortext_situation(p=0.2,initiator_flesh==Normal)->mit einem Lächeln</li>
+    <li>strikeAdv->schmerzhaft</li>
+    <li>strikeAdv->brutal</li>
+    <li>strikeAdv->entsetzlich</li>
+    <li>strikeAdv->qualvoll</li>
+    <li>strikeAdv->heftig</li>
+    <li>strikeAdv->schonungslos</li>
+    <li>strikeAdv->wild</li>
+    <li>strikeAdv->brutal</li>
+    <li>strikeAdv->erbarmungslos</li>
+    <li>strikeAdv->herzlos</li>
     <li>flavortext_consequence(recipient_flesh!=Mechanoid)->hinterlässt eine hässliche Wunde</li>
-    <li>flavortext_consequence->hinterlässt eine schreckliche Wunde</li>
+    <li>flavortext_consequence->hat eine schreckliche Wunde hinterlassen</li>
     <li>flavortext_consequence->lässt [recipient_objective] [painevent] [wince]</li>
     <li>flavortext_consequence(p=0.2)->wirft [recipient_objective] aus dem Gleichgewicht</li>
   </Combat_MeleeDamageIncludes.rulePack.rulesStrings>
@@ -171,9 +161,9 @@
     <li>adjective_bodypart->zäh</li>
     <li>adjective_bodypart->unnachgiebig</li>
     <li>adjective_bodypart->fest</li>
-    <li>targetlist(RECIPIENT_part_count==1)->[RECIPIENT_part0_label]</li>
-    <li>targetlist(RECIPIENT_part_count==2)->[RECIPIENT_part0_label] und [RECIPIENT_part1_label]</li>
-    <li>targetlist(RECIPIENT_part_count==3)->[RECIPIENT_part0_label], [RECIPIENT_part1_label] und [RECIPIENT_part2_label]</li>
+    <li>targetlist(recipient_part_count==1)->[RECIPIENT_part0_label]</li>
+    <li>targetlist(recipient_part_count==2)->[RECIPIENT_part0_label] und [RECIPIENT_part1_label]</li>
+    <li>targetlist(recipient_part_count==3)->[RECIPIENT_part0_label], [RECIPIENT_part1_label] und [RECIPIENT_part2_label]</li>
     <li>targetlist->[RECIPIENT_part0_label], [RECIPIENT_part1_label], [RECIPIENT_part2_label] und [RECIPIENT_part3_label]</li>
     <!-- don't include constraint; this acts as a fallback for >=4-->
     <li>damaged_present(deflected!=True)->verwundet</li>
@@ -253,18 +243,16 @@
     <li>skillAdv(initiator_flesh==Mechanoid)->directly</li>
   -->
   <Combat_SkillIncludes.rulePack.rulesStrings>
-    <li>skillDescMelee->[wielding] [INITIATOR_possessive]e [WEAPON_label] [skillAdv]</li>
-    <li>skillDescMelee->[using] [implement] [skillAdv]</li>
-    <li>wielding(p=4)->trägt</li>
-    <li>wielding(p=3)->benutzt</li>
-    <li>wielding(p=2)->verwendet</li>
-    <li>wielding->schwingt</li>
-    <li>wielding->manipuliert</li>
-    <li>using(p=4)->using</li>
-    <li>using->driving</li>
-    <li>using->thrusting</li>
-    <li>using->utilizing</li>
-    <li>using->moving</li>
+    <li>skillDescMelee(INITIATOR_gender==Male)->der [INITIATOR_possessive]e Waffe '[WEAPON_label]' [skillAdv] [wielding]</li>
+    <li>skillDescMelee(INITIATOR_gender==Female)->die [INITIATOR_possessive]e Waffe '[WEAPON_label]' [skillAdv] [wielding]</li>
+    <li>skillDescMelee(INITIATOR_gender==Neuter)->das [INITIATOR_possessive]e Waffe '[WEAPON_label]' [skillAdv] [wielding]</li>
+    <li>skillDescMelee(INITIATOR_gender==Male)->der [skillAdv] von [implement] Gebrauch machte</li>
+    <li>skillDescMelee(INITIATOR_gender==Female)->die [skillAdv] von [implement] Gebrauch machte</li>
+    <li>skillDescMelee(INITIATOR_gender==Neuter)->das [skillAdv] von [implement] Gebrauch machte</li>
+    <li>wielding(p=4)->schwang</li>
+    <li>wielding(p=3)->benutzte</li>
+    <li>wielding(p=2)->führte</li>
+    <li>wielding->herumfuchtelte</li>
     <li>skillAdv(INITIATOR_skill&lt;=3)->ungeschickt</li>
     <li>skillAdv(INITIATOR_skill&lt;=3)->unpassend</li>
     <li>skillAdv(INITIATOR_skill&lt;=3)->wild</li>
@@ -287,7 +275,7 @@
     <li>skillAdv(INITIATOR_skill>=6,INITIATOR_skill&lt;=10)->geschickt</li>
     <li>skillAdv(INITIATOR_skill>=8)->professionell</li>
     <li>skillAdv(INITIATOR_skill>=8)->flink</li>
-    <li>skillAdv(INITIATOR_skill>=8)->treffend</li>
+    <li>skillAdv(INITIATOR_skill>=8)->vorzüglich</li>
     <li>skillAdv(INITIATOR_skill>=8)->klug</li>
     <li>skillAdv(INITIATOR_skill>=8)->gewandt</li>
     <li>skillAdv(INITIATOR_skill>=8)->fähig</li>
@@ -314,16 +302,14 @@
     <li>damaged_targets->[recipient_part_damaged0_label], [recipient_part_damaged1_label], [recipient_part_damaged2_label], and [recipient_part_damaged3_label]</li>
   -->
   <Combat_WoundIncludes.rulePack.rulesStrings>
-    <li>destroyed_targets(RECIPIENT_part_destroyed_count==1)->[RECIPIENT_part_destroyed0_label]</li>
-    <li>destroyed_targets(RECIPIENT_part_destroyed_count==2)->[RECIPIENT_part_destroyed0_label] und [RECIPIENT_part_destroyed1_label]</li>
-    <li>destroyed_targets(RECIPIENT_part_destroyed_count==3)->[RECIPIENT_part_destroyed0_label], [RECIPIENT_part_destroyed1_label] und [RECIPIENT_part_destroyed2_label]</li>
-    <li>destroyed_targets->[RECIPIENT_part_destroyed0_label], [RECIPIENT_part_destroyed1_label], [RECIPIENT_part_destroyed2_label] und [RECIPIENT_part_destroyed3_label]</li>
-    <!-- fallback for 4+ -->
-    <li>damaged_targets(RECIPIENT_part_damaged_count==1)->[RECIPIENT_part_damaged0_label]</li>
-    <li>damaged_targets(RECIPIENT_part_damaged_count==2)->[RECIPIENT_part_damaged0_label] und [RECIPIENT_part_damaged1_label]</li>
-    <li>damaged_targets(RECIPIENT_part_damaged_count==3)->[RECIPIENT_part_damaged0_label], [RECIPIENT_part_damaged1_label] und [RECIPIENT_part_damaged2_label]</li>
-    <li>damaged_targets->[RECIPIENT_part_damaged0_label], [RECIPIENT_part_damaged1_label], [RECIPIENT_part_damaged2_label] und [RECIPIENT_part_damaged3_label]</li>
-    <!-- fallback for 4+ -->
+    <li>destroyed_targets(recipient_part_destroyed_count==1)->[recipient_part_destroyed0_label]</li>
+    <li>destroyed_targets(recipient_part_destroyed_count==2)->[recipient_part_destroyed0_label] und [recipient_part_destroyed1_label]</li>
+    <li>destroyed_targets(recipient_part_destroyed_count==3)->[recipient_part_destroyed0_label], [recipient_part_destroyed1_label] und [recipient_part_destroyed2_label]</li>
+    <li>destroyed_targets->[recipient_part_destroyed0_label], [recipient_part_destroyed1_label], [recipient_part_destroyed2_label] und [recipient_part_destroyed3_label]</li>
+    <li>damaged_targets(recipient_part_damaged_count==1)->[recipient_part_damaged0_label]</li>
+    <li>damaged_targets(recipient_part_damaged_count==2)->[recipient_part_damaged0_label] und [recipient_part_damaged1_label]</li>
+    <li>damaged_targets(recipient_part_damaged_count==3)->[recipient_part_damaged0_label], [recipient_part_damaged1_label] und [recipient_part_damaged2_label]</li>
+    <li>damaged_targets->[recipient_part_damaged0_label], [recipient_part_damaged1_label], [recipient_part_damaged2_label] und [recipient_part_damaged3_label]</li>
     <li>expertly->meisterhaft</li>
     <li>expertly->fachkundig</li>
     <li>expertly->geschickt</li>
