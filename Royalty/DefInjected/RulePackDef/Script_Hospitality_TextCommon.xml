@@ -15,19 +15,26 @@
     <li>specialSkillsInfo(lodgersSpecialRequest==ExpertFighter,lodgersCount==1,priority=1)->[lodgers0_nameDef] is an expert fighter.</li>
     <li>specialSkillsInfo(lodgersSpecialRequest==ExpertFighter,lodgersCount>=2,priority=1)->the [lodgersLabelPlural] are expert fighters.</li>
     <li>specialSkillsInfo-></li>
-    <li>minMoodInfo(priority=1,lodgersCount==1)->You are required to keep [lodgers0_possessive] mood above [lodgersMoodThreshold_percent].</li>
-    <li>minMoodInfo(priority=1,lodgersCount>=2)->You are required to keep the [lodgersLabelPlural]' moods above [lodgersMoodThreshold_percent].</li>
+    <li>minMoodInfo(priority=1,lodgersCount==1)->You must keep [lodgers0_possessive] mood above [lodgersMoodThreshold_percent].</li>
+    <li>minMoodInfo(priority=1,lodgersCount>=2)->You must keep the [lodgersLabelPlural]' moods above [lodgersMoodThreshold_percent].</li>
     <li>minMoodInfo-></li>
     <li>commonDescEnding->[helpersParagraph][shuttleWillComeParagraph]\n\n[mustKeepOnMapParagraph]</li>
-    <li>enemyGroupsParagraph->Raids will arrive roughly once per [threatsIntervalTicks_duration]. The raids will be of similar size to this:\n\n[threatExample]</li>
+    <li>enemyGroupsParagraph->[threatDescriptionParagraph]</li>
+    <li>threatDescriptionParagraph(allowedThreats==Raids,threatCount==1)->There will be [threatCount] raid of roughly this size:\n\n[threatExample]</li>
+    <li>threatDescriptionParagraph(allowedThreats==Raids,threatCount>1)->There will be [threatCount] raids of roughly this size:\n\n[threatExample]</li>
+    <li>threatDescriptionParagraph(allowedThreats==MechClusters,threatCount==1,threatFactor==1)->A mech cluster will deploy nearby.</li>
+    <li>threatDescriptionParagraph(allowedThreats==MechClusters,threatCount==1,threatFactor==2)->A double-strength mech cluster will deploy nearby.</li>
+    <li>threatDescriptionParagraph(allowedThreats==MechClusters,threatCount==1,threatFactor==3)->A triple-strength mech cluster will deploy nearby.</li>
+    <li>threatDescriptionParagraph(allowedThreats==MechClusters,threatCount==2,threatFactor==2)->Two double-strength mech clusters will deploy nearby.</li>
+    <li>threatDescriptionParagraph(allowedThreats==MechClusters,threatCount==2,threatFactor==1)->Two mech clusters will deploy nearby.</li>
     <li>shuttleWillComeParagraph(lodgersCount==1)->After [shuttleDelayTicks_duration], a shuttle will arrive to collect [lodgers0_nameDef]. If you get [lodgers0_objective] onto the shuttle alive, [allRewardsDescriptions]</li>
     <li>shuttleWillComeParagraph(lodgersCount>=2)->After [shuttleDelayTicks_duration], a shuttle will arrive to collect the [lodgersLabelPlural]. If you get them onto the shuttle alive, [allRewardsDescriptions]</li>
     <li>mustKeepOnMapParagraph(lodgersCount==1)->You must keep [lodgers0_nameDef] at [map_definite] and not send [lodgers0_objective] anywhere else.</li>
     <li>mustKeepOnMapParagraph(lodgersCount>=2)->You must keep the [lodgersLabelPlural] at [map_definite] and not send them anywhere else.</li>
-    <li>threatsInfoMechClustersSingleHuman->[lodgers0_nameDef] recently [mechViolation], and has been targeted by an orbiting mechanoid swarm. It will drop mechanoid combat clusters on [map_definite] as long as [lodgers0_nameDef] is present.</li>
-    <li>threatsInfoMechClustersMultiPrisoners->The prisoners recently [mechViolation], and have been targeted by an orbiting mechanoid swarm. It will drop mechanoid combat clusters on [map_definite] as long as they are present.</li>
-    <li>threatsInfoMechRaidsSingleHuman->[lodgers0_nameDef] recently [mechViolation], and has been targeted by a mechanoid hive. It will send mechanoid raids as long as [lodgers0_nameDef] is present.</li>
-    <li>threatsInfoMechRaidsMultiHuman->They recently [mechViolation], and have been targeted by a mechanoid hive. It will send mechanoid raids as long as they are present.</li>
+    <li>threatsInfoMechClustersSingleHuman->[lodgers0_nameDef] recently [mechViolation], and has been targeted by an orbiting mechanoid swarm.</li>
+    <li>threatsInfoMechClustersMultiPrisoners->The prisoners recently [mechViolation], and have been targeted by an orbiting mechanoid swarm.</li>
+    <li>threatsInfoMechRaidsSingleHuman->[lodgers0_nameDef] recently [mechViolation], and has been targeted by a mechanoid hive.</li>
+    <li>threatsInfoMechRaidsMultiHuman->They recently [mechViolation], and have been targeted by a mechanoid hive.</li>
     <li>mechViolation->angered a machine persona somehow</li>
     <li>mechViolation->violated an ancient supercomputer terminal</li>
     <li>mechViolation->murdered a human child favored by an archotech</li>
@@ -58,16 +65,23 @@
     <li>minMoodInfo(priority=1,lodgersCount==1)->Du musst [lodgers0_possessive]e Stimmung über [lodgersMoodThreshold_percent] halten.</li>
     <li>minMoodInfo(priority=1,lodgersCount>=2)->Du musst die Stimmung der [lodgersLabelPlural] über [lodgersMoodThreshold_percent] halten.</li>
     <li>minMoodInfo-></li>
-    <li>enemyGroupsParagraph->Überfälle werden in einem zeitlichen Abstand von ungefähr [threatsIntervalTicks_duration] auftreten. Die Stärke der Überfälle wird vergleichbar sein mit Folgendem:\n\n[threatExample]</li>
     <li>commonDescEnding->[helpersParagraph][shuttleWillComeParagraph]\n\n[mustKeepOnMapParagraph]</li>
+    <li>enemyGroupsParagraph->[threatDescriptionParagraph]</li>
+    <li>threatDescriptionParagraph(allowedThreats==Raids,threatCount==1)->Es wird [threatCount] Überfall in folgender Größenordnung stattfinden:\n\n[threatExample]</li>
+    <li>threatDescriptionParagraph(allowedThreats==Raids,threatCount>1)->Es werden [threatCount] Überfalle in folgender Größenordnung stattfinden:\n\n[threatExample]</li>
+    <li>threatDescriptionParagraph(allowedThreats==MechClusters,threatCount==1,threatFactor==1)->Es wird ein Mech-Cluster in der Nähe landen.</li>
+    <li>threatDescriptionParagraph(allowedThreats==MechClusters,threatCount==1,threatFactor==2)->Es wird ein Mech-Cluster mit doppelter Stärke in der Nähe landen.</li>
+    <li>threatDescriptionParagraph(allowedThreats==MechClusters,threatCount==1,threatFactor==3)->Es wird ein Mech-Cluster mit dreifacher Stärke in der Nähe landen.</li>
+    <li>threatDescriptionParagraph(allowedThreats==MechClusters,threatCount==2,threatFactor==2)->Es werden zwei Mech-Cluster mit doppelter Stärke in der Nähe landen.</li>
+    <li>threatDescriptionParagraph(allowedThreats==MechClusters,threatCount==2,threatFactor==1)->Es werden zwei Mech-Cluster in der Nähe landen.</li>
     <li>shuttleWillComeParagraph(lodgersCount==1)->Nach [shuttleDelayTicks_duration] wird ein Shuttle eintreffen, um [lodgers0_nameDef] abzuholen. Falls [lodgers0_nameDef] es lebendig auf das Shuttle schafft, wird [allRewardsDescriptions]</li>
     <li>shuttleWillComeParagraph(lodgersCount>=2)->Nach [shuttleDelayTicks_duration] wird ein Shuttle eintreffen, um die [lodgersLabelPlural] abzuholen. Falls sie es lebendig auf das Shuttle schaffen, wird [allRewardsDescriptions]</li>
     <li>mustKeepOnMapParagraph(lodgersCount==1)->[lodgers0_nameDef] muss in [map_definite] bleiben und darf nicht weggeschickt werden.</li>
     <li>mustKeepOnMapParagraph(lodgersCount>=2)->Die [lodgersLabelPlural] müssen in [map_definite] bleiben und dürfen nicht weggeschickt werden.</li>
-    <li>threatsInfoMechClustersSingleHuman->[lodgers0_nameDef] hat [recently] [mechViolation], und ist seitdem im Fadenkreuz eines im Orbit befindlichen Mechanoidenschwarms. Solange [lodgers0_nameDef] anwesend ist, werden regelmäßig mechanoide Kampf-Cluster in [map_definite] landen.</li>
-    <li>threatsInfoMechClustersMultiPrisoners->Die Gefangenen haben [recently] [mechViolation], und sind seitdem im Fadenkreuz eines im Orbit befindlichen Mechanoidenschwarms. Solange die Gefangenen anwesend sind, werden regelmäßig mechanoide Kampf-Cluster in [map_definite] landen.</li>
-    <li>threatsInfoMechRaidsSingleHuman->[lodgers0_nameDef] hat [recently] [mechViolation], und ist seitdem im Fadenkreuz eines Mechanoidennestes. Solange [lodgers0_nameDef] anwesend ist, werden regelmäßig Überfälle durch Mechanoiden stattfinden.</li>
-    <li>threatsInfoMechRaidsMultiHuman->Sie haben [recently] [mechViolation], und sind seitdem im Fadenkreuz eines Mechanoidennestes. Solange sie anwesend sind, werden regelmäßig Überfälle durch Mechanoiden stattfinden.</li>
+    <li>threatsInfoMechClustersSingleHuman->[lodgers0_nameDef] hat [recently] [mechViolation], und ist seitdem im Fadenkreuz eines im Orbit befindlichen Mechanoidenschwarms.</li>
+    <li>threatsInfoMechClustersMultiPrisoners->Die Gefangenen haben [recently] [mechViolation], und sind seitdem im Fadenkreuz eines im Orbit befindlichen Mechanoidenschwarms.</li>
+    <li>threatsInfoMechRaidsSingleHuman->[lodgers0_nameDef] hat [recently] [mechViolation], und ist seitdem im Fadenkreuz eines Mechanoidennestes.</li>
+    <li>threatsInfoMechRaidsMultiHuman->Sie haben [recently] [mechViolation], und sind seitdem im Fadenkreuz eines Mechanoidennestes.</li>
     <li>recently->kürzlich</li>
     <li>recently->vor Kurzem</li>
     <li>recently->unlängst</li>
