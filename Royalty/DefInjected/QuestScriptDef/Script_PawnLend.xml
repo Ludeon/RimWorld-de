@@ -12,18 +12,18 @@
     <li>colonistCountToLend(colonistsToLendCount>1)->[colonistsToLendCount] colonists</li>
   -->
   <PawnLend.questDescriptionRules.rulesStrings>
-    <li>questDescription(asker_factionLeader==True)->[asker_faction_leaderTitle] [asker_nameFull] der Fraktion '[asker_faction_name]' braucht eine helfende Hand, um [dutyDescription]. [asker_pronoun] fragt, ob du der Fraktion '[asker_faction_name]' für [lendForDays] Tage [colonistCountToLend] leihen könntest.\n\nNach [lendForDays] Tagen werden alle geliehenen Kolonisten wieder zu dir zurückgebracht.\n\nSolltest du dies annehmen, wird ein Shuttle ankommen, um [colonistCountToLend] mitzunehmen. Wenn es mit [colonistHimThem] an Bord abhebt, wird [allRewardsDescriptions]</li>
+    <li>questDescription(asker_factionLeader==True)->[asker_faction_leaderTitle] [asker_nameFull] der Fraktion '[asker_faction_name]' braucht eine helfende Hand, um [dutyDescription]. [asker_pronoun] fragt, ob du der Fraktion '[asker_faction_name]' für [lendForDays] Tage [colonistCountToLend] leihen könntest.\n\nNach [lendForDays] Tagen werden alle geliehenen Kolonisten wieder zu dir zurückgebracht.\n\nSolltest du diese Quest annehmen, wird ein Shuttle kommen, um [colonistCountToLend] mitzunehmen. Wenn es mit [colonistHimThem] an Bord abhebt, wird [allRewardsDescriptions]</li>
     <li>dutyDescription->die Ernte einzufahren</li>
     <li>dutyDescription->eine Siedlung zu verstärken</li>
     <li>dutyDescription->eine Siedlung aufzubauen</li>
     <li>dutyDescription->nach Plünderern Ausschau zu halten</li>
     <li>dutyDescription->ein Hospital einzurichten</li>
-    <li>dutyDescription->den Ausbruch einer Krankheit ([disease]) einzudämmen</li>
-    <li>disease->Grippe</li>
-    <li>disease->Seuche</li>
-    <li>disease->Malaria</li>
-    <li>disease->Infektion</li>
-    <li>questDescription(asker_royalInCurrentFaction==True)->[asker_royalTitleInCurrentFaction] [asker_nameFull] der Fraktion '[asker_faction_name]' möchte ein wenig mehr Leben in [asker_possessive]en Hof bringen, indem [asker_pronoun] dort ein paar [entertainerDescription] zur Schau stellt. [asker_pronoun] fragt, ob du der Fraktion '[asker_faction_name]' für [lendForDays] Tage [colonistCountToLend] leihen könntest. Nach [lendForDays] Tagen werden alle geliehenen Kolonisten wieder zu dir zurückgebracht.\n\nSolltest du dies annehmen, wird ein Shuttle ankommen, um [colonistCountToLend] mitzunehmen. Wenn es mit [colonistHimThem] an Bord abhebt, wird [allRewardsDescriptions]</li>
+    <li>dutyDescription->den Ausbruch [disease] einzudämmen</li>
+    <li>disease->einer Grippe</li>
+    <li>disease->einer Seuche</li>
+    <li>disease->von Malaria</li>
+    <li>disease->einer Infektion</li>
+    <li>questDescription(asker_royalInCurrentFaction==True)->[asker_royalTitleInCurrentFaction] [asker_nameFull] der Fraktion '[asker_faction_name]' möchte ein wenig mehr Leben in [asker_possessive]en Hof bringen, indem [asker_pronoun] dort ein paar [entertainerDescription] zur Schau stellt. [asker_pronoun] fragt, ob du der Fraktion '[asker_faction_name]' für [lendForDays] Tage [colonistCountToLend] leihen könntest. Nach [lendForDays] Tagen werden alle geliehenen Kolonisten wieder zu dir zurückgebracht.\n\nSolltest du diese Quest annehmen, wird ein Shuttle kommen, um [colonistCountToLend] mitzunehmen. Wenn es mit [colonistHimThem] an Bord abhebt, wird [allRewardsDescriptions]</li>
     <li>entertainerDescription->echte, abgehärtete Oberflächenbewohner</li>
     <li>entertainerDescription->alberne Hofnarren</li>
     <li>entertainerDescription->Diener mit fremdländischen Akzenten</li>
@@ -32,6 +32,12 @@
     <li>colonistCountToLend(colonistsToLendCount>1)->[colonistsToLendCount] Kolonisten</li>
     <li>colonistHimThem(colonistsToLendCount==1)->ihm</li>
     <li>colonistHimThem(colonistsToLendCount>1)->ihnen</li>
+    <li>colonistIsAre(colonistsToLendCount==1)->ist</li>
+    <li>colonistIsAre(colonistsToLendCount>1)->sind</li>
+    <li>colonistHasHave(colonistsToLendCount==1)->hat</li>
+    <li>colonistHasHave(colonistsToLendCount>1)->haben</li>
+    <li>colonistWasWere(colonistsToLendCount==1)->wurde</li>
+    <li>colonistWasWere(colonistsToLendCount>1)->wurden</li>
   </PawnLend.questDescriptionRules.rulesStrings>
   <!-- EN:
     <li>questName->[worker] Outsourcing</li>
@@ -64,9 +70,9 @@
   <!-- EN: set up a hospital -->
   <PawnLend.root.nodes.RandomNode.nodes.Sequence-0.nodes.GetRandomElement.options.4.slateRef>ein Hospital einzurichten</PawnLend.root.nodes.RandomNode.nodes.Sequence-0.nodes.GetRandomElement.options.4.slateRef>
   <!-- EN: contain an outbreak of [disease] -->
-  <PawnLend.root.nodes.RandomNode.nodes.Sequence-0.nodes.GetRandomElement.options.5.slateRef>den Ausbruch einer Krankheit ([disease]) einzudämmen</PawnLend.root.nodes.RandomNode.nodes.Sequence-0.nodes.GetRandomElement.options.5.slateRef>
+  <PawnLend.root.nodes.RandomNode.nodes.Sequence-0.nodes.GetRandomElement.options.5.slateRef>den Ausbruch [disease] einzudämmen</PawnLend.root.nodes.RandomNode.nodes.Sequence-0.nodes.GetRandomElement.options.5.slateRef>
   <!-- EN: {PAWNS} have returned after helping [asker_nameFull] of [asker_faction_name] to [dutyDescription]. -->
-  <PawnLend.root.nodes.RandomNode.nodes.Sequence-0.nodes.Set.value.slateRef>{PAWNS} sind zurückgekehrt, nachdem sie [asker_nameFull] der Fraktion '[asker_faction_name]' geholfen haben, [dutyDescription].</PawnLend.root.nodes.RandomNode.nodes.Sequence-0.nodes.Set.value.slateRef>
+  <PawnLend.root.nodes.RandomNode.nodes.Sequence-0.nodes.Set.value.slateRef>{PAWNS} [colonistHasHave] [asker_nameFull] von der Fraktion '[asker_faction_name]' dabei geholfen, [dutyDescription], und [colonistIsAre] zurückgekehrt.</PawnLend.root.nodes.RandomNode.nodes.Sequence-0.nodes.Set.value.slateRef>
   <!-- EN: real hardy surface survivors -->
   <PawnLend.root.nodes.RandomNode.nodes.Sequence-1.nodes.GetRandomElement.options.0.slateRef>echte, abgehärtete Oberflächenbewohner</PawnLend.root.nodes.RandomNode.nodes.Sequence-1.nodes.GetRandomElement.options.0.slateRef>
   <!-- EN: goofy jesters -->
@@ -76,7 +82,7 @@
   <!-- EN: exotic human specimens -->
   <PawnLend.root.nodes.RandomNode.nodes.Sequence-1.nodes.GetRandomElement.options.3.slateRef>Exemplare exotischer Menschen</PawnLend.root.nodes.RandomNode.nodes.Sequence-1.nodes.GetRandomElement.options.3.slateRef>
   <!-- EN: {PAWNS} have returned after being shown off as [entertainerDescription] in the court of [asker_royalTitleInCurrentFaction] [asker_nameFull] of [asker_faction_name]. -->
-  <PawnLend.root.nodes.RandomNode.nodes.Sequence-1.nodes.Set.value.slateRef>{PAWNS} sind zurückgekehrt, nachdem sie als [entertainerDescription] im Hof von [asker_royalTitleInCurrentFaction] [asker_nameFull] der Fraktion '[asker_faction_name]' zur Schau gestellt wurden.</PawnLend.root.nodes.RandomNode.nodes.Sequence-1.nodes.Set.value.slateRef>
+  <PawnLend.root.nodes.RandomNode.nodes.Sequence-1.nodes.Set.value.slateRef>{PAWNS} [colonistWasWere] als [entertainerDescription] im Hof von [asker_royalTitleInCurrentFaction] [asker_nameFull] der Fraktion '[asker_faction_name]' zur Schau gestellt und [colonistIsAre] zurückgekehrt.</PawnLend.root.nodes.RandomNode.nodes.Sequence-1.nodes.Set.value.slateRef>
   <!-- EN: Shuttle arrived -->
   <PawnLend.root.nodes.ShuttleDelay.node.nodes.Letter.label.slateRef>Shuttle ist eingetroffen</PawnLend.root.nodes.ShuttleDelay.node.nodes.Letter.label.slateRef>
   <!-- EN: The shuttle has arrived to collect [colonistsToLendCount] of your colonists. -->
@@ -84,10 +90,10 @@
   <!-- EN: Shuttle destroyed -->
   <PawnLend.root.nodes.shuttleDestroyed.node.nodes.Letter.label.slateRef>Shuttle wurde zerstört</PawnLend.root.nodes.shuttleDestroyed.node.nodes.Letter.label.slateRef>
   <!-- EN: The shuttle sent to collect colonists has been destroyed. -->
-  <PawnLend.root.nodes.shuttleDestroyed.node.nodes.Letter.text.slateRef>Das Shuttle, dass deine Kolonisten mitnehmen sollte, wurde zerstört.</PawnLend.root.nodes.shuttleDestroyed.node.nodes.Letter.text.slateRef>
+  <PawnLend.root.nodes.shuttleDestroyed.node.nodes.Letter.text.slateRef>Das Shuttle, das deine Kolonisten mitnehmen sollte, wurde zerstört.</PawnLend.root.nodes.shuttleDestroyed.node.nodes.Letter.text.slateRef>
   <!-- EN: Colonists returned -->
   <PawnLend.root.nodes.ColonistsReturned.node.nodes.Letter.label.slateRef>Kolonisten zurückgekehrt</PawnLend.root.nodes.ColonistsReturned.node.nodes.Letter.label.slateRef>
   <!-- EN: $returnLetterText -->
-  <PawnLend.root.nodes.ColonistsReturned.node.nodes.Letter.text.slateRef>{PAWNS} sind zurückgekehrt, nachdem sie eine Zeit lang an die Fraktion '[asker_faction_name]' verliehen waren.</PawnLend.root.nodes.ColonistsReturned.node.nodes.Letter.text.slateRef>
+  <PawnLend.root.nodes.ColonistsReturned.node.nodes.Letter.text.slateRef>$returnLetterText</PawnLend.root.nodes.ColonistsReturned.node.nodes.Letter.text.slateRef>
   
 </LanguageData>
