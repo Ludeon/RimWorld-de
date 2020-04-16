@@ -2,17 +2,17 @@
 <LanguageData>
   
   <!-- EN:
-    <li>questDescription(asker_factionLeader==True)->[asker_faction_leaderTitle] [asker_nameFull] of [asker_faction_name] needs extra hands to help [dutyDescription]. [asker_pronoun] is asking you to lend [colonistCountToLend] to [asker_faction_name] for [lendForDays] days.\n\nAfter [lendForDays] days have passed, your colonists will be returned via drop pods.\n\nIf you accept, a shuttle will arrive to collect the [colonistCountToLend]. When it takes off with them on board, [allRewardsDescriptions]</li>
+    <li>questDescription(asker_factionLeader==True)->[asker_faction_leaderTitle] [asker_nameFull] of [asker_faction_name] needs extra hands to help [dutyDescription]. [asker_pronoun] is asking you to lend [colonistCountToLend] to [asker_faction_name] for [lendForDays] days.\n\nAfter [lendForDays] days have passed, your colonists will be returned.\n\nIf you accept, a shuttle will arrive to collect the [colonistCountToLend]. When it takes off with them on board, [allRewardsDescriptions]</li>
     <li>disease->flu</li>
     <li>disease->plague</li>
     <li>disease->malaria</li>
     <li>disease->infection</li>
-    <li>questDescription(asker_royalInCurrentFaction==True)->[asker_royalTitleInCurrentFaction] [asker_nameFull] of [asker_faction_name] wishes to add some life to [asker_possessive] court by showing off some [entertainerDescription]. [asker_pronoun] is asking you to lend [colonistCountToLend] to [asker_faction_name] for [lendForDays] days. After [lendForDays] days have passed, your colonists will be returned via drop pods.\n\nIf you accept, a shuttle will arrive to collect the [colonistCountToLend]. When it takes off with them on board, [allRewardsDescriptions]</li>
+    <li>questDescription(asker_royalInCurrentFaction==True)->[asker_royalTitleInCurrentFaction] [asker_nameFull] of [asker_faction_name] wishes to add some life to [asker_possessive] court by showing off some [entertainerDescription]. [asker_pronoun] is asking you to lend [colonistCountToLend] to [asker_faction_name] for [lendForDays] days. After [lendForDays] days have passed, your colonists will be returned.\n\nIf you accept, a shuttle will arrive to collect the [colonistCountToLend]. When it takes off with them on board, [allRewardsDescriptions]</li>
     <li>colonistCountToLend(colonistsToLendCount==1)->1 colonist</li>
     <li>colonistCountToLend(colonistsToLendCount>1)->[colonistsToLendCount] colonists</li>
   -->
   <PawnLend.questDescriptionRules.rulesStrings>
-    <li>questDescription(asker_factionLeader==True)->[asker_faction_leaderTitle] [asker_nameFull] der Fraktion '[asker_faction_name]' braucht eine helfende Hand, um [dutyDescription]. [asker_pronoun] fragt, ob du der Fraktion '[asker_faction_name]' für [lendForDays] Tage [colonistCountToLend] leihen könntest.\n\nNach [lendForDays] Tagen werden alle geliehenen Kolonisten wieder via Transportkapseln zu dir zurückgebracht.\n\nSolltest du dies annehmen, wird ein Shuttle ankommen, um [colonistCountToLend] mitzunehmen. Wenn es mit [colonistHimThem] an Bord abhebt, wird [allRewardsDescriptions]</li>
+    <li>questDescription(asker_factionLeader==True)->[asker_faction_leaderTitle] [asker_nameFull] der Fraktion '[asker_faction_name]' braucht eine helfende Hand, um [dutyDescription]. [asker_pronoun] fragt, ob du der Fraktion '[asker_faction_name]' für [lendForDays] Tage [colonistCountToLend] leihen könntest.\n\nNach [lendForDays] Tagen werden alle geliehenen Kolonisten wieder zu dir zurückgebracht.\n\nSolltest du dies annehmen, wird ein Shuttle ankommen, um [colonistCountToLend] mitzunehmen. Wenn es mit [colonistHimThem] an Bord abhebt, wird [allRewardsDescriptions]</li>
     <li>dutyDescription->die Ernte einzufahren</li>
     <li>dutyDescription->eine Siedlung zu verstärken</li>
     <li>dutyDescription->eine Siedlung aufzubauen</li>
@@ -23,7 +23,7 @@
     <li>disease->Seuche</li>
     <li>disease->Malaria</li>
     <li>disease->Infektion</li>
-    <li>questDescription(asker_royalInCurrentFaction==True)->[asker_royalTitleInCurrentFaction] [asker_nameFull] der Fraktion '[asker_faction_name]' möchte ein wenig mehr Leben in [asker_possessive]en Hof bringen, indem [asker_pronoun] dort ein paar [entertainerDescription] zur Schau stellt. [asker_pronoun] fragt, ob du der Fraktion '[asker_faction_name]' für [lendForDays] Tage [colonistCountToLend] leihen könntest. Nach [lendForDays] Tagen werden alle geliehenen Kolonisten wieder via Transportkapseln zu dir zurückgebracht.\n\nSolltest du dies annehmen, wird ein Shuttle ankommen, um [colonistCountToLend] mitzunehmen. Wenn es mit [colonistHimThem] an Bord abhebt, wird [allRewardsDescriptions]</li>
+    <li>questDescription(asker_royalInCurrentFaction==True)->[asker_royalTitleInCurrentFaction] [asker_nameFull] der Fraktion '[asker_faction_name]' möchte ein wenig mehr Leben in [asker_possessive]en Hof bringen, indem [asker_pronoun] dort ein paar [entertainerDescription] zur Schau stellt. [asker_pronoun] fragt, ob du der Fraktion '[asker_faction_name]' für [lendForDays] Tage [colonistCountToLend] leihen könntest. Nach [lendForDays] Tagen werden alle geliehenen Kolonisten wieder zu dir zurückgebracht.\n\nSolltest du dies annehmen, wird ein Shuttle ankommen, um [colonistCountToLend] mitzunehmen. Wenn es mit [colonistHimThem] an Bord abhebt, wird [allRewardsDescriptions]</li>
     <li>entertainerDescription->echte, abgehärtete Oberflächenbewohner</li>
     <li>entertainerDescription->alberne Hofnarren</li>
     <li>entertainerDescription->Diener mit fremdländischen Akzenten</li>

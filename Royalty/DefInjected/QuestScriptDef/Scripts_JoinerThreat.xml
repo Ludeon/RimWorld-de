@@ -16,9 +16,9 @@
     <li>hidingFrom(gameCondition==WeatherController)->a malfunctioning weather control satellite</li>
     <li>condDesc(gameCondition==WeatherController)->If [joiner_pronoun] comes to you, the weather will be [forcedWeather_label] for [gameConditionDuration_duration] until the satellite resets.</li>
     <li>hidingFrom(gameCondition==PsychicDrone)->a vengeful machine persona who [joiner_pronoun] recently offended</li>
-    <li>condDesc(gameCondition==PsychicDrone)->If [joiner_pronoun] comes to you, the machine mind will blast [map_definite] with a [psychicDroneGender]-tuned [psychicDroneLevel]-level psychic drone for [gameConditionDuration_duration], reducing mood of all [psychicDroneGender]s.</li>
+    <li>condDesc(gameCondition==PsychicDrone)->If [joiner_pronoun] comes to you, the machine mind will blast [map_definite] with a [psychicDroneLevel]-level psychic drone for [gameConditionDuration_duration], reducing mood of all [psychicDroneGender]s.</li>
     <li>hidingFrom(gameCondition==PsychicSuppression)->a stirring machine persona who [joiner_pronoun] recently awoke</li>
-    <li>condDesc(gameCondition==PsychicSuppression)->If [joiner_pronoun] comes to you, the persona will hit [map_definite] with [psychicSuppressorGender]-tuned psychic suppression waves for [gameConditionDuration_duration], reducing consciousness of all [psychicSuppressorGender]s.</li>
+    <li>condDesc(gameCondition==PsychicSuppression)->If [joiner_pronoun] comes to you, the persona will hit [map_definite] with psychic suppression waves for [gameConditionDuration_duration], reducing consciousness of all [psychicSuppressorGender]s.</li>
   -->
   <ThreatReward_GameCondition_Joiner.questDescriptionRules.rulesStrings>
     <li>questDescription->[joiner_titleIndef] namens [joiner_nameFull] ([joiner_age] Jahre alt) ruft nach Hilfe! [joiner_pronoun] versteckt sich vor [hidingFrom]. [joiner_pronoun] will fliehen und sich dir in [map_definite] anschließen. [joiner_relationInfo]\n\n[condDesc]\n\nUm unentdeckt zu bleiben, behauptet [joiner_nameDef], dass [joiner_pronoun] nicht in der Lage sei, dir mehr über sich selbst zu erzählen.</li>
@@ -37,7 +37,7 @@
     <li>hidingFrom(gameCondition==PsychicDrone)->einer rachsüchtigen Maschinen-Persona, die [joiner_pronoun] vor Kurzem erzürnt hat</li>
     <li>condDesc(gameCondition==PsychicDrone)->Wenn [joiner_pronoun] bei dir ankommt, wird die Maschine [map_definite] über einen Zeitraum von [gameConditionDuration_duration] mit einem [psychicDroneLevel]en psychischen Brummen bestrahlen, was die Stimmung aller [psychicDroneGender]en Personen reduzieren wird.</li>
     <li>hidingFrom(gameCondition==PsychicSuppression)->einer sich regenden Maschinen-Persona, die [joiner_pronoun] vor Kurzem aufgeweckt hat</li>
-    <li>condDesc(gameCondition==PsychicSuppression)->Wenn [joiner_pronoun] bei dir ankommt, wird die Persona [map_definite] über einen Zeitraum von [gameConditionDuration_duration] mit psychischen Unterdrückungswellen treffen, die sich auf das [psychicSuppressorGender]e Geschlecht auswirken. Die Folge ist ein reduziertes Bewusstsein aller [psychicSuppressorGender]en Personen vor Ort.</li>
+    <li>condDesc(gameCondition==PsychicSuppression)->Wenn [joiner_pronoun] bei dir ankommt, wird die Persona [map_definite] über einen Zeitraum von [gameConditionDuration_duration] mit psychischen Unterdrückungswellen beschießen, was das Bewusstsein aller [psychicSuppressorGender]en Personen reduzieren wird.</li>
   </ThreatReward_GameCondition_Joiner.questDescriptionRules.rulesStrings>
   <!-- EN:
     <li>questName->[joiner_nameDef]'s [gameCondition_label]</li>
@@ -51,10 +51,10 @@
   </ThreatReward_GameCondition_Joiner.questNameRules.rulesStrings>
   
   <!-- EN:
-    <li>questDescription->A [joiner_age]-year-old [joiner_title] named [joiner_nameDef] is calling from nearby. [joiner_pronoun] says giant insects are hunting [joiner_objective] after [joiner_pronoun] poisoned an underground colony and they soaked [joiner_objective] in threat pheromones!\n\n[joiner_pronoun] begs for safety and offers to join you at [map_definite].[joiner_relationInfo]\n\nIf you accept [joiner_nameDef], a [hivesCount]-hive infestation will begin in [infestationDelayTicks_duration].\n\n[joiner_nameDef] is too frantic to offer more information.</li>
+    <li>questDescription->A [joiner_age]-year-old [joiner_title] named [joiner_nameDef] is calling from nearby. [joiner_pronoun] says [joiner_pronoun] poisoned an underground insect colony, but now [joiner_pronoun] is soaked in insect pheromones and the bugs are hunting him!\n\n[joiner_pronoun] begs for safety and offers to join you at [map_definite].[joiner_relationInfo]\n\nIf you accept [joiner_nameDef], a [hivesCount]-hive infestation will begin in [infestationDelayTicks_duration].\n\n[joiner_nameDef] is too frantic to offer more information.</li>
   -->
   <ThreatReward_Infestation_Joiner.questDescriptionRules.rulesStrings>
-    <li>questDescription->[joiner_titleIndef] namens [joiner_nameDef] ([joiner_age] Jahre alt) kontaktiert dich aus der Nähe. [joiner_pronoun] berichtet, dass [joiner_pronoun] von riesigen Insekten gejagt wird, nachdem [joiner_pronoun] eine unterirdische Kolonie vergiftet hat und mit Alarmpheromonen durchtränkt wurde!\n\n[joiner_pronoun] fleht um Hilfe und bietet an, sich dir in [map_definite] anzuschließen.[joiner_relationInfo]\n\nWenn du [joiner_nameDef] bei dir aufnimmst, wird die Region über einen Zeitraum von [infestationDelayTicks_duration] von einer Plage bestehend aus [hivesCount] Insektenkolonien heimgesucht.\n\n[joiner_nameDef] ist zu aufgeregt, um mehr Informationen preiszugeben.</li>
+    <li>questDescription->[joiner_titleIndef] namens [joiner_nameDef] ([joiner_age] Jahre alt) kontaktiert dich aus der Nähe. [joiner_pronoun] berichtet, dass [joiner_pronoun] eine unterirdische Insektenkolonie vergiftet hat. Doch jetzt ist [joiner_pronoun] mit Pheromonen durchtränkt und die Insekten machen Jagd auf [joiner_objective]!\n\n[joiner_pronoun] fleht um Hilfe und bietet an, sich dir in [map_definite] anzuschließen.[joiner_relationInfo]\n\nWenn du [joiner_nameDef] bei dir aufnimmst, wird die Region über einen Zeitraum von [infestationDelayTicks_duration] von einer Plage bestehend aus [hivesCount] Insektenkolonien heimgesucht.\n\n[joiner_nameDef] ist zu aufgeregt, um mehr Informationen preiszugeben.</li>
   </ThreatReward_Infestation_Joiner.questDescriptionRules.rulesStrings>
   <!-- EN:
     <li>questName->[joiner_nameDef]'s infestation</li>
