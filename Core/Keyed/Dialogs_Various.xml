@@ -471,7 +471,7 @@
   <!-- EN: For this item, this price is {0}. -->
   <PriceTypeDesc>Der Preis dieser Ware ist {0}.</PriceTypeDesc>
   <!-- EN: How many of this item the colony has ready to trade.\n\nYou can only sell items to orbital traders if they are near an orbital trade beacon. -->
-  <ColonyCount>Anzahl der Gegenstände, die die Kolonie zum Handeln hat.\n\nDu kannst nur mit orbitalen Händlern interagieren, wenn die zu handelnde Ware im angezeigten Bereich eines orbitalen Funkfeuers gelagert wird.</ColonyCount>
+  <ColonyCount>Wie viel von dieser Ware die Kolonie für den Handel bereitstellt.\n\nEs können nur Waren, die in Reichweite eines orbitalen Handelssignals sind, an orbitale Händler verkauft werden.</ColonyCount>
   <!-- EN: How many of this item the trader has to trade. -->
   <TraderCount>Wie viel von dieser Ware der Händler hat.</TraderCount>
   <!-- EN: Accept -->
@@ -485,7 +485,7 @@
   <!-- EN: Your tradeable silver: {0} -->
   <YourTradeableSilver>Dein handelbares Silber: {0}</YourTradeableSilver>
   <!-- EN: You can only trade with silver that is near an orbital trade beacon and not under a roof. -->
-  <YourTradeableSilverTip>Du kannst nur mit Silber handeln, das in Reichweite des orbitalen Funkfeuers ist.</YourTradeableSilverTip>
+  <YourTradeableSilverTip>Du kannst nur mit Silber handeln, das in Reichweite des orbitalen Handelssignals ist.</YourTradeableSilverTip>
   <!-- EN: Trader has no more. -->
   <TraderHasNoMore>Händler hat nichts mehr.</TraderHasNoMore>
   <!-- EN: No more to sell. -->
@@ -531,17 +531,17 @@
   <!-- EN: Return to trade mode. -->
   <TradeModeTip>Zurück zum Handelsmodus.</TradeModeTip>
   <!-- EN: {FACTION_name} is not willing to send a caravan because {NEGOTIATOR_nameDef} lacks the required title of {TITLE}. -->
-  <TradeCaravanRequestDeniedDueTitle>Die Fraktion '{FACTION_name}' weigert sich, eine Karawane zu entsenden, weil {NEGOTIATOR_nameDef} den erforderlichen Titel {NEGOTIATOR_gender ? eines : einer} {TITLE}{NEGOTIATOR_gender ? s : } nicht hat.</TradeCaravanRequestDeniedDueTitle>
+  <TradeCaravanRequestDeniedDueTitle>Die Fraktion '{FACTION_name}' weigert sich, eine Karawane zu entsenden, weil {NEGOTIATOR_nameDef} {NEGOTIATOR_gender ? kein : keine} {TITLE} oder höher ist.</TradeCaravanRequestDeniedDueTitle>
 
   <!-- Sellable items -->
   <!-- EN: Things this trader will buy -->
-  <SellableItemsTitle>Gegenstände, die dieser Händler kaufen würde</SellableItemsTitle>
+  <SellableItemsTitle>Waren, die dieser Händler kaufen wird</SellableItemsTitle>
   <!-- EN: Never visited - stock unknown -->
-  <TraderNotVisitedYet>Nie besucht - Bestand unbekannt</TraderNotVisitedYet>
+  <TraderNotVisitedYet>Nie besucht - Lagerbestand unbekannt</TraderNotVisitedYet>
   <!-- EN: Restocked since your last visit -->
-  <TraderRestockedSinceLastVisit>Seit deinem letzten Besuch aufgefüllt</TraderRestockedSinceLastVisit>
+  <TraderRestockedSinceLastVisit>Seit deinem letzten Besuch aufgestockt</TraderRestockedSinceLastVisit>
   <!-- EN: Next restock: {0} days -->
-  <NextTraderRestock>Nächste Befüllung in {0} Tagen</NextTraderRestock>
+  <NextTraderRestock>Nächste Aufstockung in {0} Tagen</NextTraderRestock>
   <!-- EN: Creatures -->
   <PawnsTabShort>Kreaturen</PawnsTabShort>
   
@@ -687,11 +687,11 @@
   
   <!-- Load transporters -->
   <!-- EN: Load {0} -->
-  <LoadTransporters>Beladung {0}</LoadTransporters>
+  <LoadTransporters>{0} beladen</LoadTransporters>
   <!-- EN: The assigned people and items are too heavy for the transport pods. -->
-  <TooBigTransportersMassUsage>Die zugewiesenen Personen und Tiere sind zu schwer für die Transportkapseln.</TooBigTransportersMassUsage>
+  <TooBigTransportersMassUsage>Die zugewiesenen Personen und Waren sind zu schwer für die Transportkapseln.</TooBigTransportersMassUsage>
   <!-- EN: The assigned people and items are too heavy for the shuttle. -->
-  <TooBigTransporterSingleMassUsage>Die zugewiesenen Personen und Gegenstände sind zu schwer für das Shuttle.</TooBigTransporterSingleMassUsage>
+  <TooBigTransporterSingleMassUsage>Die zugewiesenen Personen und Waren sind zu schwer für das Shuttle.</TooBigTransporterSingleMassUsage>
   <!-- EN: You can't send empty transport pods. -->
   <CantSendEmptyTransportPods>Du kannst keine leeren Transportkapseln versenden.</CantSendEmptyTransportPods>
   <!-- EN: You can't send empty shuttle. -->
