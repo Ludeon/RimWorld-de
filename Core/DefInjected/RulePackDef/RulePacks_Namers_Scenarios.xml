@@ -6,6 +6,9 @@
   -->
   <NamerScenario.rulePack.rulesFiles>
     <li>story->Words/Nouns/Stories</li>
+    <li>storyFem->Words/Nouns/Stories_Fem</li>
+    <li>storyMas->Words/Nouns/Stories_Mas</li>
+    <li>storyNeu->Words/Nouns/Stories_Neu</li>
   </NamerScenario.rulePack.rulesFiles>
   <!-- EN:
     <li>r_name->[story] [Trans] the [Weapon]</li>
@@ -22,18 +25,56 @@
     <li>r_name->[story] [RomanNumeral]</li>
   -->
   <NamerScenario.rulePack.rulesStrings>
-    <li>r_name->[story] [Trans] [Weapon]</li>
-    <li>r_name->[story] [Trans] [Animal]</li>
-    <li>r_name->[story] [Trans] [TerrainFeature]</li>
-    <li>r_name->[story] [Trans] [PersonJob]</li>
-    <li>r_name->[story] [Trans] [ConceptAny]</li>
-    <li>r_name->[ConceptAny] [story]</li>
-    <li>r_name->[story] [Trans] der [Community]</li>
-    <li>r_name->eine [AdjectiveAny]e [story]</li>
-    <li>r_name->[story] [Trans] der [Game]</li>
-    <li>r_name->[story] in [Color] und [Color]</li>
-    <li>r_name->[Color]e [story]</li>
+    <li>r_name(p=0.1)->[story] des [ThemaMasGen]</li>
+    <li>r_name(p=0.1)->[story] der [ThemaFemGen]</li>
+    <li>r_name(p=0.1)->[story] des [ThemaNeuGen]</li>
+    <li>r_name(p=0.1)->[story] über den [ThemaMasDat]</li>
+    <li>r_name(p=0.1)->[story] über die [ThemaFemDat]</li>
+    <li>r_name(p=0.1)->[story] über das [ThemaNeuDat]</li>
+    <li>r_name(p=0.1)->[story] für den [ThemaMasDat]</li>
+    <li>r_name(p=0.1)->[story] für die [ThemaFemDat]</li>
+    <li>r_name(p=0.1)->[story] für das [ThemaNeuDat]</li>
+    <li>r_name(p=0.1)->[story] mit dem [ThemaMasDat]</li>
+    <li>r_name(p=0.1)->[story] mit der [ThemaFemDat]</li>
+    <li>r_name(p=0.1)->[story] mit dem [ThemaNeuDat]</li>
+    <li>r_name->ein [AdjectiveAny]er [storyMas]</li>
+    <li>r_name->eine [AdjectiveAny]e [storyFem]</li>
+    <li>r_name->ein [AdjectiveAny]es [storyNeu]</li>
+    <li>r_name->[Color]er [storyMas]</li>
+    <li>r_name->[Color]e [storyFem]</li>
+    <li>r_name->[Color]es [storyNeu]</li>
     <li>r_name->[story] [RomanNumeral]</li>
+    <!-- gender-specific -->
+    <li>ThemaMasGen->[WeaponMasGen]</li>
+    <li>ThemaMasGen->[AnimalMasGen]</li>
+    <li>ThemaMasGen->[TerrainFeatureMasGen]</li>
+    <li>ThemaMasGen->[ConceptAnyMasGen]</li>
+    <li>ThemaMasGen->[PersonJobGen]</li>
+    <li>ThemaFemGen->[WeaponFemGen]</li>
+    <li>ThemaFemGen->[AnimalFemGen]</li>
+    <li>ThemaFemGen->[TerrainFeatureFemGen]</li>
+    <li>ThemaFemGen->[ConceptAnyFemGen]</li>
+    <li>ThemaFemGen->[Community]</li>
+    <li>ThemaNeuGen->[WeaponNeuGen]</li>
+    <li>ThemaNeuGen->[AnimalNeuGen]</li>
+    <li>ThemaNeuGen->[TerrainFeatureNeuGen]</li>
+    <li>ThemaNeuGen->[ConceptAnyNeuGen]</li>
+    <li>ThemaNeuGen(p=0.2)->[Game]-Spiels</li>
+    <li>ThemaMasDat->[WeaponMasDat]</li>
+    <li>ThemaMasDat->[AnimalMasDat]</li>
+    <li>ThemaMasDat->[TerrainFeatureMasDat]</li>
+    <li>ThemaMasDat->[ConceptAnyMasDat]</li>
+    <li>ThemaMasDat->[PersonJobDat]</li>
+    <li>ThemaFemDat->[WeaponFemDat]</li>
+    <li>ThemaFemDat->[AnimalFemDat]</li>
+    <li>ThemaFemDat->[TerrainFeatureFemDat]</li>
+    <li>ThemaFemDat->[ConceptAnyFemDat]</li>
+    <li>ThemaFemDat->[Community]</li>
+    <li>ThemaNeuDat->[WeaponNeuDat]</li>
+    <li>ThemaNeuDat->[AnimalNeuDat]</li>
+    <li>ThemaNeuDat->[TerrainFeatureNeuDat]</li>
+    <li>ThemaNeuDat->[ConceptAnyNeuDat]</li>
+    <li>ThemaNeuDat(p=0.2)->[Game]-Spiel</li>
   </NamerScenario.rulePack.rulesStrings>
   
 </LanguageData>

@@ -24,7 +24,7 @@
     <li>image->[PAWN_nameFull], wie [PAWN_pronoun] herabfallenden Trümmern ausweicht [circumstance_group]</li>
     <li>image->[PAWN_nameFull], wie [PAWN_pronoun] knapp einem Höhleneinsturz entkommt [circumstance_group]</li>
     <li>image->[PAWN_nameFull], wie [PAWN_pronoun] knapp einem herabfallenden Dach entkommt [circumstance_group]</li>
-    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] dem sicheren Tod duch herabfallende Steine entkommt [circumstance_group]</li>
+    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] dem sicheren Tod durch herabfallende Steine entkommt [circumstance_group]</li>
     <li>circumstance_phrase->und hinter einem Vorhang aus Trümmern und Staub verschwindet</li>
     <li>circumstance_phrase->, das alles darunter pulverisieren würde</li>
     <li>circumstance_phrase->, das mit unglaublicher Kraft geschieht</li>
@@ -62,14 +62,16 @@
   <LaunchedShip.rulePack.rulesStrings>
     <li>tale_noun->[PAWN_nameDef] vom Planeten entkam</li>
     <li>tale_noun->[PAWN_nameDef] mit einem Raumschiff davonflog</li>
-    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] zu den Sternen gebracht gebracht wird</li>
+    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] zu den Sternen gebracht wird</li>
     <li>image->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] zum Himmel rast</li>
     <li>image->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] beschleunigt, um die Fluchtgeschwindigkeit zu erreichen</li>
     <li>image->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] eine Rakete steuert</li>
-    <li>circumstance_phrase->vor einem [TerrainFeature]</li>
+    <li>circumstance_phrase(p=0.33)->vor einer [TerrainFeatureFemDat]</li>
+    <li>circumstance_phrase(p=0.33)->vor einem [TerrainFeatureMasDat]</li>
+    <li>circumstance_phrase(p=0.33)->vor einem [TerrainFeatureNeuDat]</li>
     <li>circumstance_phrase->mit unglaublicher Kraft</li>
     <li>circumstance_phrase->in einer Wolke aus Staub und Geröll</li>
-    <li>circumstance_phrase->mit dramatisch brennenden Raketen</li>
+    <li>circumstance_phrase->mit dramatisch brennenden Düsen</li>
     <li>circumstance_phrase->auf einer präzisen Fluglinie</li>
     <li>desc_sentence->[PAWN_pronoun] konzentriert sich intensiv auf die Bedienelemente.</li>
     <li>desc_sentence->[PAWN_pronoun] hat die Augen geschlossen und sieht zuversichtlich aus.</li>
@@ -77,11 +79,15 @@
     <li>desc_sentence->[PAWN_pronoun] lächelt vor grenzenloser Begeisterung.</li>
     <li>desc_sentence->[PAWN_pronoun] scheint die Situation voll im Griff zu haben.</li>
     <li>desc_sentence->Es ist eine Flammenspur zu sehen, die aus der Rückseite des Schiffes austritt.</li>
-    <li>desc_sentence->Ein nahes [Animal] schaut erschrocken auf.</li>
-    <li>desc_sentence->Ein [Animal] flüchtet verängstigt vom Ort des Geschehens.</li>
-    <li>desc_sentence(p=0.5)->Eine [TerrainFeatureFem] ist im Hintergrund zu sehen.</li>
-    <li>desc_sentence(p=0.5)->Ein [TerrainFeatureMas] ist im Hintergrund zu sehen.</li>
-    <li>desc_sentence(p=0.5)->Ein [TerrainFeatureNeu] ist im Hintergrund zu sehen.</li>
+    <li>desc_sentence(p=0.33)->Ein naher [AnimalMas] schaut erschrocken auf.</li>
+    <li>desc_sentence(p=0.33)->Eine nahe [AnimalFem] schaut erschrocken auf.</li>
+    <li>desc_sentence(p=0.33)->Ein nahes [AnimalNeu] schaut erschrocken auf.</li>
+    <li>desc_sentence(p=0.33)->Ein [AnimalMas] flüchtet verängstigt vom Ort des Geschehens.</li>
+    <li>desc_sentence(p=0.33)->Eine [AnimalFem] flüchtet verängstigt vom Ort des Geschehens.</li>
+    <li>desc_sentence(p=0.33)->Ein [AnimalNeu] flüchtet verängstigt vom Ort des Geschehens.</li>
+    <li>desc_sentence(p=0.33)->Im Hintergrund ist eine [TerrainFeatureFem] zu sehen.</li>
+    <li>desc_sentence(p=0.33)->Im Hintergrund ist ein [TerrainFeatureMas] zu sehen.</li>
+    <li>desc_sentence(p=0.33)->Im Hintergrund ist ein [TerrainFeatureNeu] zu sehen.</li>
     <li>desc_sentence->Ein [PersonJob] beobachtet schweigend das Geschehen aus der Ferne.</li>
   </LaunchedShip.rulePack.rulesStrings>
   
@@ -146,7 +152,7 @@
     <li>desc_sentence->[target] scheint keine Gewissensbisse zu haben.</li>
     <li>desc_sentence->[target] ist von leidenschaftlicher Raserei erfüllt.</li>
     <li>desc_sentence->[target] zeigt keine Emotionen oder Gesichtsausdrücke.</li>
-    <li>desc_sentence->[target]'s Körper ist mit [Gore] bedeckt.</li>
+    <li>desc_sentence->[target]'s Körper ist mit [GoreDat] bedeckt.</li>
     <li>desc_sentence->[target] schreit wütend.</li>
     <li>desc_sentence->[target] ist offensichtlich verletzt.</li>
     <li>desc_sentence->[target]'s Augen leuchten [Color].</li>

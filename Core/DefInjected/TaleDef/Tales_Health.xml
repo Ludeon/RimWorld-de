@@ -67,7 +67,7 @@
     <li>circumstance_phrase->ohne Emotion und Ausdruck</li>
     <li>circumstance_phrase->aus düsteren Gründen</li>
     <li>circumstance_phrase->auf feige, halbherzige Weise</li>
-    <li>desc_sentence->[Quantity_adjphrase] [AnimalPlural] schauen zu.</li>
+    <li>desc_sentence->[Quantity_adjphrase] [Animals] schauen zu.</li>
     <li>desc_sentence->Ein [PersonJob] beobachtet heimlich [side_position].</li>
     <li>desc_sentence->[VICTIM_nameDef] sieht [AdjectiveAngsty] aus.</li>
     <li>desc_sentence->Die Augen von [VICTIM_nameDef] sind geschlossen.</li>
@@ -110,8 +110,8 @@
     <li>circumstance_phrase->geschwächt</li>
     <li>desc_sentence->[PAWN_nameDef]'s jüngstes Projekt ist in der Nähe, das [PAWN_pronoun] mit letzter Kraft fertig gestellt hat.</li>
     <li>desc_sentence->Eine wunderbare Konstruktion umgibt [PAWN_nameDef].</li>
-    <li>desc_sentence->[Quantity_adjphrase] [PersonJobPlural] sind dankbar für [PAWN_nameDef]'s heroischen Einsatz.</li>
-    <li>desc_sentence->[Quantity_adjphrase] [PersonJobPlural] liegen in einem ähnlichen Zustand daneben.</li>
+    <li>desc_sentence->[Quantity_adjphrase] [PersonJobs] sind dankbar für [PAWN_nameDef]'s heroischen Einsatz.</li>
+    <li>desc_sentence->[Quantity_adjphrase] [PersonJobs] liegen in einem ähnlichen Zustand daneben.</li>
     <li>desc_sentence->Die Szene spielt in einer neu errichteten [Community].</li>
   </Exhausted.rulePack.rulesStrings>
   
@@ -148,8 +148,8 @@
     <li>circumstance_phrase->das leicht [Color] leuchtet</li>
     <li>circumstance_phrase->das bereits versucht sich zu bewegen</li>
     <li>circumstance_phrase->das sich mit einem Ausdruck der Ruhe umsieht</li>
-    <li>desc_sentence->[Quantity_adjphrase] [AnimalPlural] schlafen friedlich in der Nähe.</li>
-    <li>desc_sentence->[Quantity_adjphrase] [PersonJobPlural] beobachten die Szene.</li>
+    <li>desc_sentence->[Quantity_adjphrase] [Animals] schlafen friedlich in der Nähe.</li>
+    <li>desc_sentence->[Quantity_adjphrase] [PersonJobs] beobachten die Szene.</li>
     <li>desc_sentence->Ein [PersonJob] beobachtet aus der Ferne.</li>
     <li>desc_sentence->Die Szene spielt in einer neu errichteten [Community].</li>
   </GaveBirth.rulePack.rulesStrings>
@@ -180,7 +180,9 @@
     <li>tale_noun->[PAWN_nameDef] ein Hitzeschlag bekam</li>
     <li>tale_noun->[PAWN_nameDef] überhitzte</li>
     <li>image->[PAWN_nameFull], wie [PAWN_pronoun] sich [circumstance_group] durch Sand schleppt</li>
-    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] Schutz im Schatten eines [TerrainFeature]s sucht</li>
+    <li>image(p=0.33)->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] Schutz im Schatten einer [TerrainFeatureFemGen] sucht</li>
+    <li>image(p=0.33)->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] Schutz im Schatten eines [TerrainFeatureMasGen] sucht</li>
+    <li>image(p=0.33)->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] Schutz im Schatten eines [TerrainFeatureNeuGen] sucht</li>
     <li>image->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] auf der Suche nach Wasser ist</li>
     <li>image->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] auf der Suche nach Schatten ist</li>
     <li>image->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] durch sonnengetrockneten Staub kriecht</li>
@@ -188,13 +190,13 @@
     <li>circumstance_phrase->schweißgebadet</li>
     <li>circumstance_phrase->mit gerissenen, trockenen Lippen</li>
     <li>circumstance_phrase->beim Erbrechen</li>
-    <li>desc_sentence->[Quantity_adjphrase] ausgestrocknete [Animal]-Kadaver liegen verstreut im Gebiet herum.</li>
+    <li>desc_sentence->[Quantity_adjphrase] ausgestrocknete Kadaver von [AnimalsDat] liegen verstreut im Gebiet herum.</li>
     <li>desc_sentence->Die Kleidung von [PAWN_nameDef] ist zerfetzt und zerrissen.</li>
     <li>desc_sentence->Eine gleißende Sonne strahlt am Horizont.</li>
     <li>desc_sentence->Die Szene spielt in einer glühend heißen Wüste.</li>
     <li>desc_sentence->Die Szene scheint sich im Inneren abzuspielen, neben einer Heizung.</li>
-    <li>desc_sentence->[Quantity_adjphrase] unbewegliche [AnimalPlural] begleiten die Szene.</li>
-    <li>desc_sentence->[Quantity_adjphrase] sterbende [AnimalPlural] liegen auf dem Boden.</li>
+    <li>desc_sentence->[Quantity_adjphrase] unbewegliche [Animals] begleiten die Szene.</li>
+    <li>desc_sentence->[Quantity_adjphrase] sterbende [Animals] liegen auf dem Boden.</li>
   </HeatstrokeRevealed.rulePack.rulesStrings>
   
   <!-- EN: hypothermia revealed -->
@@ -223,23 +225,25 @@
     <li>tale_noun->[PAWN_nameDef] eine Hypothermie bekam</li>
     <li>tale_noun->[PAWN_nameDef] sich zu Tode fror</li>
     <li>image->[PAWN_nameFull], wie [PAWN_pronoun] sich [circumstance_group] durch Schnee schleppt</li>
-    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] Schutz bei einem [TerrainFeature] sucht</li>
-    <li>image(p=0.5)->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] auf der Suche nach einer warmen [ApparelSingularFem] ist</li>
-    <li>image(p=0.5)->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] auf der Suche nach einem warmen [ApparelSingularMas] ist</li>
-    <li>image(p=0.2)->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] auf der Suche nach einem warmen [ApparelSingularNeu] ist</li>
+    <li>image(p=0.33)->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] Schutz bei einer [TerrainFeatureFemDat] sucht</li>
+    <li>image(p=0.33)->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] Schutz bei einem [TerrainFeatureMasDat] sucht</li>
+    <li>image(p=0.33)->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] Schutz bei einem [TerrainFeatureNeuDat] sucht</li>
+    <li>image(p=0.33)->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] auf der Suche nach einer warmen [ApparelFemDat] ist</li>
+    <li>image(p=0.33)->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] auf der Suche nach einem warmen [ApparelMasDat] ist</li>
+    <li>image(p=0.33)->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] auf der Suche nach einem warmen [ApparelNeuDat] ist</li>
     <li>image->[PAWN_nameFull], wie [PAWN_pronoun] sich [circumstance_group] neben einem Feuer hockt</li>
     <li>image->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] versucht ein Feuer zu entzünden</li>
     <li>circumstance_phrase->, während das Gesicht langsam blau anläuft,</li>
     <li>circumstance_phrase->bibbernd</li>
     <li>circumstance_phrase->fröstelnd</li>
     <li>circumstance_phrase->, während sich Wolken beim Ausatmen bilden,</li>
-    <li>desc_sentence->[Quantity_adjphrase] gefrorene [Animal]-Kadaver liegen verstreut im Gebiet herum.</li>
+    <li>desc_sentence->[Quantity_adjphrase] gefrorene Kadaver von [AnimalsDat] liegen verstreut im Gebiet herum.</li>
     <li>desc_sentence->Die Kleidung von [PAWN_nameDef] ist zerfetzt und zerrissen.</li>
     <li>desc_sentence->Ein kaltblauer Mond strahlt am Horizont.</li>
     <li>desc_sentence->Die Szene spielt in einem schneebedeckten [TreeType]nwald.</li>
     <li>desc_sentence->Die Szene scheint sich im Inneren eines Kühlraums abzuspielen.</li>
-    <li>desc_sentence->[Quantity_adjphrase] zitternde [AnimalPlural] begleiten die Szene.</li>
-    <li>desc_sentence->[Quantity_adjphrase] sterbende [AnimalPlural] liegen auf dem Boden.</li>
+    <li>desc_sentence->[Quantity_adjphrase] zitternde [Animals] begleiten die Szene.</li>
+    <li>desc_sentence->[Quantity_adjphrase] sterbende [Animals] liegen auf dem Boden.</li>
   </HypothermiaRevealed.rulePack.rulesStrings>
   
   <!-- EN: illness revealed -->
@@ -280,11 +284,11 @@
     <li>circumstance_phrase->beim Erbrechen</li>
     <li>circumstance_phrase->mit einem sichtbaren Ausschlag</li>
     <li>circumstance_phrase->während einer ärztlichen Behandlung</li>
-    <li>desc_sentence->[Quantity_adjphrase] mit Fliegen befallene [Animal]-Kadaver liegen verstreut im Gebiet herum.</li>
-    <li>desc_sentence->[Quantity_adjphrase] spiralförmige [Color]e [TerrainFeature] umgeben die Szene.</li>
-    <li>desc_sentence->[Quantity_adjphrase] [PersonJobPlural] sind mit derselben Krankheit befallen.</li>
+    <li>desc_sentence->[Quantity_adjphrase] fliegenbefallene Kadaver von [AnimalsDat] liegen verstreut im Gebiet herum.</li>
+    <li>desc_sentence->[Quantity_adjphrase] spiralförmige [Color]e [TerrainFeatures] umgeben die Szene.</li>
+    <li>desc_sentence->[Quantity_adjphrase] [PersonJobs] sind mit derselben Krankheit befallen.</li>
     <li>desc_sentence->Die Szene spielt in einem [TreeType]nwald.</li>
-    <li>desc_sentence->[Quantity_adjphrase] sterbende [AnimalPlural] liegen auf dem Boden.</li>
+    <li>desc_sentence->[Quantity_adjphrase] sterbende [Animals] liegen auf dem Boden.</li>
   </IllnessRevealed.rulePack.rulesStrings>
   
   <!-- EN: killed -->
@@ -342,7 +346,7 @@
     <li>circumstance_phrase->mit kalter Effizienz</li>
     <li>circumstance_phrase->mit schnellen, effizienten Bewegungen</li>
     <li>circumstance_phrase->ohne Emotion und Ausdruck</li>
-    <li>desc_sentence->[Quantity_adjphrase] [AnimalPlural] schauen zu.</li>
+    <li>desc_sentence->[Quantity_adjphrase] [Animals] schauen zu.</li>
     <li>desc_sentence->Ein [PersonJob] beobachtet heimlich [side_position].</li>
     <li>desc_sentence->[VICTIM_nameDef] sieht [AdjectiveAngsty] aus.</li>
     <li>desc_sentence->Die Augen von [VICTIM_nameDef] sind geschlossen.</li>
@@ -413,11 +417,11 @@
     <li>circumstance_phrase->aus großer Höhe</li>
     <li>circumstance_phrase->ohne Emotion und Ausdruck</li>
     <li>circumstance_phrase->auf feige, halbherzige Weise</li>
-    <li>desc_sentence->[Quantity_adjphrase] [AnimalPlural] schauen zu.</li>
+    <li>desc_sentence->[Quantity_adjphrase] [Animals] schauen zu.</li>
     <li>desc_sentence->Ein [PersonJob] beobachtet heimlich [side_position].</li>
     <li>desc_sentence->[VICTIM_nameDef] sieht [AdjectiveAngsty] aus.</li>
     <li>desc_sentence->Die Augen von [VICTIM_nameDef] sind geschlossen.</li>
-    <li>desc_sentence->[VICTIM_nameDef] ist von [Gore] bedeckt.</li>
+    <li>desc_sentence->[VICTIM_nameDef] ist mit [GoreDat] bedeckt.</li>
     <li>desc_sentence->[KILLER_nameDef] knirscht mit den Zähnen.</li>
     <li>desc_sentence->[KILLER_nameDef] scheint zufrieden zu sein.</li>
     <li>desc_sentence->[KILLER_nameDef] schaut gestresst auf das, was [KILLER_pronoun] tut.</li>
@@ -487,16 +491,18 @@
     <li>circumstance_phrase->ohne Emotion und Ausdruck</li>
     <li>circumstance_phrase->mit großem Heldentum</li>
     <li>circumstance_phrase->mit unglaublicher Stärke</li>
-    <li>desc_sentence->[Quantity_adjphrase] [AnimalPlural] schauen zu.</li>
+    <li>desc_sentence->[Quantity_adjphrase] [Animals] schauen zu.</li>
     <li>desc_sentence->Ein [PersonJob] beobachtet heimlich [side_position].</li>
     <li>desc_sentence->[VICTIM_nameDef] sieht [AdjectiveAngsty] aus.</li>
     <li>desc_sentence->Die Augen von [VICTIM_nameDef] sind geschlossen.</li>
-    <li>desc_sentence->[VICTIM_nameDef] ist von [Gore] bedeckt.</li>
-    <li>desc_sentence->[VICTIM_nameDef] und [KILLER_nameDef] sind von [Gore] bedeckt.</li>
+    <li>desc_sentence->[VICTIM_nameDef] ist mit [GoreDat] bedeckt.</li>
+    <li>desc_sentence->[VICTIM_nameDef] und [KILLER_nameDef] sind mit [GoreDat] bedeckt.</li>
     <li>desc_sentence->Der Kadaver von [VICTIM_nameDef] türmt sich über [KILLER_nameDef] auf.</li>
-    <li>desc_sentence->Der massive Kadaver von [VICTIM_nameDef] überdeckt ein [TerrainFeature].</li>
+    <li>desc_sentence(p=0.33)->Der massive Kadaver von [VICTIM_nameDef] überdeckt eine [TerrainFeatureFem].</li>
+    <li>desc_sentence(p=0.33)->Der massive Kadaver von [VICTIM_nameDef] überdeckt einen [TerrainFeatureMas].</li>
+    <li>desc_sentence(p=0.33)->Der massive Kadaver von [VICTIM_nameDef] überdeckt ein [TerrainFeatureNeu].</li>
     <li>desc_sentence->Die Augen von [VICTIM_nameDef] leuchten [Color].</li>
-    <li>desc_sentence->[KILLER_nameDef] ist von [Gore] bedeckt.</li>
+    <li>desc_sentence->[KILLER_nameDef] ist mit [GoreDat] bedeckt.</li>
     <li>desc_sentence->[KILLER_nameDef] knirscht mit den Zähnen.</li>
     <li>desc_sentence->[KILLER_nameDef] scheint zufrieden zu sein.</li>
     <li>desc_sentence->[KILLER_nameDef] freut sich über den Sieg.</li>
@@ -568,13 +574,13 @@
     <li>circumstance_phrase->mit schnellen, effizienten Bewegungen</li>
     <li>circumstance_phrase->ohne Emotion und Ausdruck</li>
     <li>circumstance_phrase->auf feige, halbherzige Weise</li>
-    <li>desc_sentence->[Quantity_adjphrase] [AnimalPlural] schauen zu.</li>
+    <li>desc_sentence->[Quantity_adjphrase] [Animals] schauen zu.</li>
     <li>desc_sentence->Ein [PersonJob] beobachtet heimlich [side_position].</li>
     <li>desc_sentence->[VICTIM_nameDef] sieht [AdjectiveAngsty] aus.</li>
     <li>desc_sentence->Die Augen von [VICTIM_nameDef] sind geschlossen.</li>
-    <li>desc_sentence->[VICTIM_nameDef] ist von [Gore] bedeckt.</li>
-    <li>desc_sentence->[VICTIM_nameDef] und [KILLER_nameDef] sind von [Gore] bedeckt.</li>
-    <li>desc_sentence->[KILLER_nameDef] ist von [Gore] bedeckt.</li>
+    <li>desc_sentence->[VICTIM_nameDef] ist mit [GoreDat] bedeckt.</li>
+    <li>desc_sentence->[VICTIM_nameDef] und [KILLER_nameDef] sind mit [GoreDat] bedeckt.</li>
+    <li>desc_sentence->[KILLER_nameDef] ist mit [GoreDat] bedeckt.</li>
     <li>desc_sentence->[KILLER_nameDef] knirscht mit den Zähnen.</li>
     <li>desc_sentence->[KILLER_nameDef] scheint zufrieden zu sein.</li>
     <li>desc_sentence->[KILLER_nameDef] schaut gestresst auf das, was [KILLER_pronoun] tut.</li>
@@ -618,10 +624,10 @@
     <li>circumstance_phrase->während sich eine Granate bogenförmig Richtung [VICTIM_nameFull] zubewegt</li>
     <li>circumstance_phrase->während [VICTIM_nameFull] ahnungslos herumläuft</li>
     <li>circumstance_phrase->während [VICTIM_nameFull] davon rennt</li>
-    <li>desc_sentence->[Quantity_adjphrase] [AnimalPlural] schauen zu.</li>
+    <li>desc_sentence->[Quantity_adjphrase] [Animals] schauen zu.</li>
     <li>desc_sentence->Ein [PersonJob] beobachtet heimlich [side_position].</li>
     <li>desc_sentence->[VICTIM_nameDef] sieht [AdjectiveAngsty] aus.</li>
-    <li>desc_sentence->[VICTIM_nameDef] ist von [Gore] bedeckt.</li>
+    <li>desc_sentence->[VICTIM_nameDef] ist mit [GoreDat] bedeckt.</li>
     <li>desc_sentence->[VICTIM_nameDef] ist von Explosionen umgeben.</li>
     <li>desc_sentence->[VICTIM_nameDef] ist von Kratern umgeben.</li>
     <li>desc_sentence->[KILLER_nameDef] scheint zufrieden zu sein.</li>
@@ -669,12 +675,12 @@
     <li>circumstance_phrase->mit gerissenen, trockenen Lippen</li>
     <li>circumstance_phrase->beim Erbrechen</li>
     <li>circumstance_phrase->mit einem sichtbaren Ausschlag</li>
-    <li>desc_sentence->[Quantity_adjphrase] verdrehte [Animal]-Kadaver liegen verstreut im Gebiet herum.</li>
+    <li>desc_sentence->[Quantity_adjphrase] verdrehte Kadaver von [AnimalsDat] liegen verstreut im Gebiet herum.</li>
     <li>desc_sentence->Die Kleidung von [PAWN_nameDef] fällt auseinander.</li>
     <li>desc_sentence->Der Himmel ist trüb und [Color].</li>
-    <li>desc_sentence->[Quantity_adjphrase] spiralförmige, [Color]e [TerrainFeaturePlural] umgeben die Szene.</li>
+    <li>desc_sentence->[Quantity_adjphrase] spiralförmige [Color]e [TerrainFeatures] umgeben die Szene.</li>
     <li>desc_sentence->Die Szene spielt in einem verwinkelten [TreeType]nwald.</li>
-    <li>desc_sentence->[Quantity_adjphrase] sterbende [AnimalPlural] liegen auf dem Boden.</li>
+    <li>desc_sentence->[Quantity_adjphrase] sterbende [Animals] liegen auf dem Boden.</li>
   </ToxicityRevealed.rulePack.rulesStrings>
   
   <!-- EN: wounded -->
@@ -750,10 +756,10 @@
     <li>circumstance_phrase->ohne Emotion und Ausdruck</li>
     <li>circumstance_phrase->aus düsteren Gründen</li>
     <li>circumstance_phrase->auf feige, halbherzige Weise</li>
-    <li>desc_sentence->[Quantity_adjphrase] [AnimalPlural] schauen zu.</li>
+    <li>desc_sentence->[Quantity_adjphrase] [Animals] schauen zu.</li>
     <li>desc_sentence->Ein [PersonJob] beobachtet heimlich [side_position].</li>
     <li>desc_sentence->Das Blut sammelt sich um den Körper von [VICTIM_nameDef].</li>
-    <li>desc_sentence->[VICTIM_nameDef] ist von [Gore] bedeckt.</li>
+    <li>desc_sentence->[VICTIM_nameDef] ist mit [GoreDat] bedeckt.</li>
     <li>desc_sentence->[VICTIM_nameDef] sieht [AdjectiveAngsty] aus.</li>
     <li>desc_sentence->[VICTIM_nameDef] windet sich vor Schmerz.</li>
     <li>desc_sentence->[VICTIM_nameDef] erleidet höllische Qualen.</li>

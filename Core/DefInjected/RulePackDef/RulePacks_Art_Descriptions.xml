@@ -217,45 +217,62 @@
     <li>artconjunction->, was parallel zu dieser Szene passiert</li>
     <!--=== artextra_clause ===-->
     <!-- Subimage included -->
-    <li>artextra_clause->die Darstellung ist umgeben von [subimagepluralDat]</li>
+    <li>artextra_clause->das Bild ist umgeben von [subimagepluralDat]</li>
     <li>artextra_clause->am Rand des Bildes sind [subimageplural]</li>
-    <li>artextra_clause->da ist [subimagesingle] [side_position]</li>
+    <li>artextra_clause->[side_position] ist [subimagesingle]</li>
     <li>artextra_clause->[subimageplural] sind im Hintergrund zu sehen</li>
     <li>artextra_clause->[subimagesingle] dominiert den unteren Teil des Bildes</li>
     <!-- Scene is near terrain -->
     <li>artextra_clause->die Szene spielt inmitten einer [Community]</li>
     <li>artextra_clause->die Szene scheint sich außerhalb einer [Community] abzuspielen</li>
-    <li>artextra_clause->die Szene spielt in einer [Community] nahe dem [TerrainFeature]</li>
+    <li>artextra_clause(p=0.33)->die Szene spielt sich in einer [Community] ab, die in der Nähe einer [TerrainFeatureFemGen] gebaut wurde</li>
+    <li>artextra_clause(p=0.33)->die Szene spielt sich in einer [Community] ab, die in der Nähe eines [TerrainFeatureMasGen] gebaut wurde</li>
+    <li>artextra_clause(p=0.33)->die Szene spielt sich in einer [Community] ab, die in der Nähe eines [TerrainFeatureNeuGen] gebaut wurde</li>
     <!-- Pawn in side position -->
     <li>artextra_clause->ein [Character] [idles] [side_position]</li>
     <li>artextra_clause->ein [PAWN_adj]er [Character] [idles] [side_position]</li>
-    <li>artextra_clause->[Quantity_adjphrase] [CharacterPlural] erscheinen [side_position]</li>
-    <li>artextra_clause->[Quantity_adjphrase] [PAWN_adj]e [CharacterPlural] erscheinen [side_position]</li>
-    <li>artextra_clause(p=0.5)->eine [AnimalSingularFem] [idles] [side_position]</li>
-    <li>artextra_clause(p=0.5)->ein [AnimalSingularMas] [idles] [side_position]</li>
-    <li>artextra_clause(p=0.5)->ein [AnimalSingularNeu] [idles] [side_position]</li>
+    <li>artextra_clause->[Quantity_adjphrase] [Characters] erscheinen [side_position]</li>
+    <li>artextra_clause->[Quantity_adjphrase] [PAWN_adj]e [Characters] erscheinen [side_position]</li>
+    <li>artextra_clause(p=0.33)->eine [AnimalFem] [idles] [side_position]</li>
+    <li>artextra_clause(p=0.33)->ein [AnimalMas] [idles] [side_position]</li>
+    <li>artextra_clause(p=0.33)->ein [AnimalNeu] [idles] [side_position]</li>
     <!-- One-offs -->
-    <li>artextra_clause->wenn man die Augen zusammenkneift, offenbart die [composition]e Komposition des Bildes einen Umriss, der [subimageany] darstellen soll</li>
+    <li>artextra_clause->wenn man die Augen zusammenkneift, offenbart die [composition]e Komposition des Bildes die Umrisse von [subimageanyDat]</li>
     <li>artextra_clause->das [emotional_expression]e Gesicht eines [PAWN_adj]en [PersonJobGen] wacht über allem</li>
     <li>artextra_clause->ein [PAWN_adj]er [PersonJob] wacht [emotional_expression] über allem</li>
     <li>artextra_clause->das Gesicht eines [PAWN_adj]en [PersonJobGen] wacht über allem</li>
-    <li>artextra_clause->das ganze Bild ist aus einer sorgfältigen Zusammenstellung von [subimagepluralDat] erstellt worden</li>
+    <li>artextra_clause->das Bild bekommt erst durch die geschickte Anordnung von [subimagepluralDat] seine gewollte Aussagekraft</li>
     <li>subimageany->[subimagesingle]</li>
     <li>subimageany->[subimageplural]</li>
-    <li>subimagesingle(p=4)->ein [Character]</li>
+    <li>subimageanyDat->[subimagesingleDat]</li>
+    <li>subimageanyDat->[subimagepluralDat]</li>
+    <li>subimagesingle(p=4)->ein [CharacterMas]</li>
+    <li>subimagesingle(p=4)->eine [CharacterFem]</li>
+    <li>subimagesingle(p=4)->ein [CharacterNeu]</li>
     <li>subimagesingle->eine [TerrainFeatureFem]</li>
     <li>subimagesingle->einen [TerrainFeatureMas]</li>
     <li>subimagesingle->ein [TerrainFeatureNeu]</li>
     <li>subimagesingle->eine [Community]</li>
     <li>subimagesingle->eine [TreeType]</li>
-    <li>subimagesingle->ein [VegetableSingularMas]</li>
-    <li>subimagesingle->eine [VegetableSingularFem]</li>
-    <li>subimagesingle->eine [AnimalGroup] von [AnimalPluralDat]</li>
-    <li>subimageplural(p=3)->[Quantity_adjphrase] [CharacterPlural]</li>
-    <li>subimageplural->[Quantity_adjphrase] [VegetablePlural]</li>
+    <li>subimagesingle(p=0.5)->ein [VegetableMas]</li>
+    <li>subimagesingle(p=0.5)->eine [VegetableFem]</li>
+    <li>subimagesingle->eine [AnimalGroup] von [AnimalsDat]</li>
+    <li>subimagesingleDat(p=4)->einem [CharacterMasDat]</li>
+    <li>subimagesingleDat(p=4)->einer [CharacterFemDat]</li>
+    <li>subimagesingleDat(p=4)->einem [CharacterNeuDat]</li>
+    <li>subimagesingleDat->einer [TerrainFeatureFemDat]</li>
+    <li>subimagesingleDat->einem [TerrainFeatureMasDat]</li>
+    <li>subimagesingleDat->einem [TerrainFeatureNeuDat]</li>
+    <li>subimagesingleDat->einer [Community]</li>
+    <li>subimagesingleDat->einer [TreeType]</li>
+    <li>subimagesingleDat(p=0.5)->einem [VegetableMas]</li>
+    <li>subimagesingleDat(p=0.5)->einer [VegetableFemDat]</li>
+    <li>subimagesingleDat->einer [AnimalGroup] von [AnimalsDat]</li>
+    <li>subimageplural(p=3)->[Quantity_adjphrase] [Characters]</li>
+    <li>subimageplural->[Quantity_adjphrase] [Vegetables]</li>
     <li>subimageplural->[Quantity_adjphrase] [ShapePlural]</li>
-    <li>subimagepluralDat(p=3)->[Quantity_adjphrase_Dat] [CharacterPluralDat]</li>
-    <li>subimagepluralDat->[Quantity_adjphrase_Dat] [VegetablePluralDat]</li>
+    <li>subimagepluralDat(p=3)->[Quantity_adjphrase_Dat] [CharactersDat]</li>
+    <li>subimagepluralDat->[Quantity_adjphrase_Dat] [VegetablesDat]</li>
     <li>subimagepluralDat->[Quantity_adjphrase_Dat] [ShapePluralDat]</li>
     <li>pawn_adj->tot</li>
     <li>pawn_adj->sterbend</li>
@@ -266,11 +283,11 @@
     <li>pawn_adj->verrückt</li>
     <li>pawn_adj->jung</li>
     <li>pawn_adj->alt</li>
-    <li>pawn_adj->[Gore]-bedeckt</li>
+    <li>pawn_adj->mit [GoreDat] bedeckt</li>
     <li>pawn_adj->dreckig</li>
     <li>pawn_adj->[Apparel]-tragend</li>
     <li>pawn_adj->[Weapon]-tragend</li>
-    <li>pawn_adj->[VegetableSingular]-essend</li>
+    <li>pawn_adj->[Vegetable]-essend</li>
     <li>emotional_expression->lachend</li>
     <li>emotional_expression->missbilligend</li>
     <li>emotional_expression->missmutig</li>
@@ -304,40 +321,39 @@
     <!--=== style_clause ===-->
     <li>style_clause(p=4)->das Bild [symbolizes]</li>
     <li>artextra_clause->[subimagesingle] [side_position] [symbolizes]</li>
-    <li>style_clause->diese Arbeit beinhaltet die Idee der [ConceptAny] und ist in einem [artstyle_adj]en Stil erstellt</li>
-    <li>style_clause->das Werk deutet das Konzept der [ConceptAny] an</li>
+    <li>style_clause(p=0.33)->diese Arbeit ist von der Idee der [ConceptAnyFemGen] geprägt und in einem [artstyle_adj]en Stil erstellt</li>
+    <li>style_clause(p=0.33)->diese Arbeit ist von der Idee des [ConceptAnyMasGen] geprägt und in einem [artstyle_adj]en Stil erstellt</li>
+    <li>style_clause(p=0.33)->diese Arbeit ist von der Idee des [ConceptAnyNeuGen] geprägt und in einem [artstyle_adj]en Stil erstellt</li>
     <li>style_clause->das Werk wurde in einem [artstyle_adj]en Stil erstellt</li>
     <li>style_clause->der [artstyle_adj]e Stil der zentralen Szene widerspricht der [artstyle_adj]en Darstellung des Hintergrundes</li>
     <li>style_clause->das Werk fühlt sich [artstyle_adj] an und hat eine [composition]e Struktur</li>
     <li>style_clause->die allgemeine Zusammenstellung ist [composition]</li>
-    <li>style_clause->der Stil ist [artstyle_adj] mit [artstyle_adj]en Elementen</li>
-    <li>style_clause->der Darstellung fehlt sowohl [ConceptAny] als auch [ConceptAny]</li>
-    <li>style_clause->die Darstellung schafft es irgendwie, sowohl [ConceptAny] als auch [ConceptAny] auszudrücken</li>
-    <li>style_clause->die [composition]e Struktur des Bildnisses scheint beinahe dem [artstyle_adj]en Stil zu widersprechen</li>
+    <li>style_clause->der Stil ist [artstyle_adj] und weist [artstyle_adj]e Elemente auf</li>
+    <li>style_clause->das Bild drückt in gewisser Weise sowohl [ConceptAny] als auch [ConceptAny] aus</li>
+    <li>style_clause->das Bild zeigt den Unterschied zwischen [ConceptAny] und [ConceptAny]</li>
+    <li>style_clause->die [composition]e Struktur des Bildes scheint beinahe dessen [artstyle_adj]en Stil zu widersprechen</li>
     <li>style_clause->die Abbildung wurde mit [Color]en und [Color]en Farbtönen schattiert</li>
-    <li>style_clause->beinahe jede Form dieses Bildnisses scheint [composition] zu sein</li>
+    <li>style_clause->beinahe jede Form in diesem Bild scheint [composition] zu sein</li>
     <li>symbolizes->symbolisiert [ConceptAny]</li>
     <li>symbolizes->scheint [ConceptAny] zu symbolisieren</li>
     <li>symbolizes->repräsentiert [ConceptAny]</li>
     <li>symbolizes->scheint [ConceptAny] zu repräsentieren</li>
     <li>symbolizes->scheint [ConceptAny] auszudrücken</li>
     <li>symbolizes->erinnert den Betrachter an [ConceptAny]</li>
-    <li>symbolizes->gibt das Gefühl der [ConceptAny] wieder</li>
-    <li>symbolizes->lässt den Betrachter über [ConceptAny] nachdenken</li>
-    <li>symbolizes->repräsentiert die [ConceptAny] des Künstlers</li>
-    <li>symbolizes->suggeriert das Konzept der [ConceptAny]</li>
-    <li>depicts->schildert</li>
-    <li>depicts(p=2)->handelt</li>
+    <li>symbolizes->vermittelt die Emotionen von [ConceptAny]</li>
+    <li>symbolizes->lässt den Betrachter an [ConceptAny] denken</li>
+    <li>symbolizes(p=0.33)->repräsentiert die [ConceptAnyFem] des Künstlers</li>
+    <li>symbolizes(p=0.33)->repräsentiert den [ConceptAnyMas] des Künstlers</li>
+    <li>symbolizes(p=0.33)->repräsentiert das [ConceptAnyNeu] des Künstlers</li>
+    <li>symbolizes(p=0.33)->suggeriert das Konzept der [ConceptAnyFemGen]</li>
+    <li>symbolizes(p=0.33)->suggeriert das Konzept des [ConceptAnyMasGen]</li>
+    <li>symbolizes(p=0.33)->suggeriert das Konzept des [ConceptAnyNeuGen]</li>
+    <li>depicts->handelt</li>
     <li>depicts->erzählt</li>
-    <li>depicts->verbildlicht die Erzählung</li>
-    <li>depicts->gleicht der Darstellung</li>
-    <li>depicts->ist geformt wie ein Bildnis</li>
     <li>depiction->Darstellung</li>
     <li>depiction->Abbildung</li>
-    <li>depiction->Porträtierung</li>
-    <li>depiction->Inschrift</li>
-    <li>depiction->Illustration</li>
     <li>depiction->Gravierung</li>
+    <li>depiction->Zeichnung</li>
     <li>composition->dreieckig</li>
     <li>composition->rechteckig</li>
     <li>composition->quadratisch</li>

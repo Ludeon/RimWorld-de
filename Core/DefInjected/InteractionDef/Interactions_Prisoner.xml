@@ -44,8 +44,14 @@
     <li>r_logentry->[INITIATOR_nameDef] erzählte [RECIPIENT_nameDef] etwas über [subject].</li>
     <li>r_logentry->[INITIATOR_nameDef] ermunterte [RECIPIENT_nameDef], [talkabout].</li>
     <li>r_logentry->[INITIATOR_nameDef] gab [RECIPIENT_nameDef] eine Chance, [talkabout].</li>
-    <li>r_logentry->[INITIATOR_nameDef] zeigte Interesse an [PersonalCharacteristicDat] von [RECIPIENT_nameDef].</li>
-    <li>r_logentry->[INITIATOR_nameDef] fragte [RECIPIENT_nameDef] über [RECIPIENT_possessive]e [PersonalCharacteristic] aus.</li>
+    <li>r_logentry(p=0.25)->[INITIATOR_nameDef] zeigte Interesse an den [PersonalCharacteristicsDat] von [RECIPIENT_nameDef].</li>
+    <li>r_logentry(p=0.25)->[INITIATOR_nameDef] zeigte Interesse am [PersonalCharacteristicMas] von [RECIPIENT_nameDef].</li>
+    <li>r_logentry(p=0.25)->[INITIATOR_nameDef] zeigte Interesse an der [PersonalCharacteristicFem] von [RECIPIENT_nameDef].</li>
+    <li>r_logentry(p=0.25)->[INITIATOR_nameDef] zeigte Interesse am [PersonalCharacteristicNeu] von [RECIPIENT_nameDef].</li>
+    <li>r_logentry(p=0.25)->[INITIATOR_nameDef] fragte [RECIPIENT_nameDef] über [RECIPIENT_possessive]e [PersonalCharacteristics] aus.</li>
+    <li>r_logentry(p=0.25)->[INITIATOR_nameDef] fragte [RECIPIENT_nameDef] über [RECIPIENT_possessive]en [PersonalCharacteristicMas] aus.</li>
+    <li>r_logentry(p=0.25)->[INITIATOR_nameDef] fragte [RECIPIENT_nameDef] über [RECIPIENT_possessive]e [PersonalCharacteristicFem] aus.</li>
+    <li>r_logentry(p=0.25)->[INITIATOR_nameDef] fragte [RECIPIENT_nameDef] über [RECIPIENT_possessive] [PersonalCharacteristicNeu] aus.</li>
     <li>toldastoryabout(p=2)->eine Geschichte über</li>
     <li>toldastoryabout->eine witzige Geschichte über</li>
     <li>toldastoryabout->eine berührende Geschichte über</li>
@@ -64,7 +70,10 @@
     <li>subject->das Kennenlernen neuer Freunde</li>
     <li>subject->das Loslassen alter Freundschaften</li>
     <li>subject(p=4)->[ConceptPositive]</li>
-    <li>subject(p=2)->[INITIATOR_possessive]e [PersonalCharacteristic]</li>
+    <li>subject(p=0.5)->[INITIATOR_possessive]e [PersonalCharacteristics]</li>
+    <li>subject(p=0.5)->[INITIATOR_possessive]en [PersonalCharacteristicMas]</li>
+    <li>subject(p=0.5)->[INITIATOR_possessive]e [PersonalCharacteristicFem]</li>
+    <li>subject(p=0.5)->[INITIATOR_possessive] [PersonalCharacteristicNeu]</li>
     <li>subject(p=8)->[TalkTopicLightAcc]</li>
   </BuildRapport.logRulesInitiator.rulesStrings>
   
@@ -81,7 +90,7 @@
     <li>r_logentry->[INITIATOR_nameDef] versuchte, [RECIPIENT_nameDef] für die Kolonie zu gewinnen.</li>
     <li>r_logentry(p=2)->[INITIATOR_nameDef] versprach [RECIPIENT_nameDef] [goodthing] und fragte, ob [RECIPIENT_pronoun] der Kolonie beitreten will.</li>
     <li>goodthing(p=10)->[ConceptPositive]</li>
-    <li>goodthing->frische, kostenlose [VegetablePlural]</li>
+    <li>goodthing->frische, kostenlose [Vegetables]</li>
     <li>goodthing->alles, was [RECIPIENT_pronoun] begehrt,</li>
     <li>goodthing->das Blaue vom Himmel</li>
   </RecruitAttempt.logRulesInitiator.rulesStrings>
@@ -100,7 +109,7 @@
   -->
   <SparkJailbreak.logRulesInitiator.rulesStrings>
     <li>r_logentry->[INITIATOR_nameDef] sprach über die Vorzüge der [freedom] und zeigte [RECIPIENT_nameDef], wie man [escape] könnte.</li>
-    <li>r_logentry->[INITIATOR_nameDef] sprach darüber, wie gern [INITIATOR_pronoun] wieder [TerrainFeaturePlural] sehen würde und bot [RECIPIENT_nameDef] die gemeinsame Flucht an.</li>
+    <li>r_logentry->[INITIATOR_nameDef] sprach darüber, wie gern [INITIATOR_pronoun] wieder [TerrainFeatures] sehen würde und bot [RECIPIENT_nameDef] die gemeinsame Flucht an.</li>
     <li>r_logentry->[INITIATOR_nameDef] zeigte [RECIPIENT_nameDef], wie man [escape] könnte, und versprach, bald die Heimat wiederzusehen.</li>
     <li>r_logentry->[INITIATOR_nameDef] erzählte [RECIPIENT_nameDef], wie lasch die Sicherheitsvorkehrungen sind, und überredete [RECIPIENT_objective] zur Flucht.</li>
     <li>freedom->Freiheit</li>

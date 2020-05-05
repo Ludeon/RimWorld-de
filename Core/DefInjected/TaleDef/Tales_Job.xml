@@ -33,9 +33,9 @@
     <li>circumstance_phrase->[AdjectiveFriendly] lächelnd</li>
     <li>circumstance_phrase->lautstark lachend</li>
     <li>circumstance_phrase->[AdjectiveFriendly]</li>
-    <li>desc_sentence->[Quantity_adjphrase] [PersonJobPlural] sind an dem Gespräch beteiligt.</li>
+    <li>desc_sentence->[Quantity_adjphrase] [PersonJobs] sind an dem Gespräch beteiligt.</li>
     <li>desc_sentence->Der Bereich ist mit [Color]er und [Color]er Farbe verziert.</li>
-    <li>desc_sentence->[Quantity_adjphrase] [AnimalPlural] spielen in der Nähe.</li>
+    <li>desc_sentence->[Quantity_adjphrase] [Animals] spielen in der Nähe.</li>
   </AttendedParty.rulePack.rulesStrings>
   
   <!-- EN: built snowman -->
@@ -61,7 +61,7 @@
     <li>tale_noun->[PAWN_nameDef] im Schnee spielte</li>
     <li>image->[PAWN_nameFull], wie [PAWN_pronoun] einen Schneeball formt, [circumstance_group]</li>
     <li>image->[PAWN_nameFull], wie [PAWN_pronoun] einen riesigen Ball aus Schnee auf dem Boden rollt, [circumstance_group]</li>
-    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] [VegetablePlural] zu einem menschlichen Gesicht formt, [circumstance_group]</li>
+    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] [Vegetables] zu einem menschlichen Gesicht formt, [circumstance_group]</li>
     <li>image->[PAWN_nameFull], wie [PAWN_pronoun] sich in den Schnee legt, [circumstance_group]</li>
     <li>circumstance_phrase->während [PAWN_pronoun] von [Quantity_adjphrase] Parkas umhüllt ist</li>
     <li>circumstance_phrase->während [PAWN_pronoun] von einem leichten Schneesturm überrascht wird</li>
@@ -69,8 +69,10 @@
     <li>circumstance_phrase->während [PAWN_possessive]e Freunde eine Schneemann-Familie bauen</li>
     <li>desc_sentence->Ein [Color]es Polarlicht schimmert am Horizont.</li>
     <li>desc_sentence->In der Ferne ist eine [Community] mit Schnee bedeckt.</li>
-    <li>desc_sentence->Ein [VegetableSingular]-Feld ist durch den Schnee kaum zu erkennen.</li>
-    <li>desc_sentence->Ein schneebedecktes [TerrainFeature] ist in der Ferne zu sehen.</li>
+    <li>desc_sentence->Ein [VegetableCon]feld ist durch den Schnee kaum zu erkennen.</li>
+    <li>desc_sentence(p=0.33)->Ein schneebedeckter [TerrainFeatureMas] ist in der Ferne zu sehen.</li>
+    <li>desc_sentence(p=0.33)->Eine schneebedeckte [TerrainFeatureFem] ist in der Ferne zu sehen.</li>
+    <li>desc_sentence(p=0.33)->Ein schneebedecktes [TerrainFeatureNeu] ist in der Ferne zu sehen.</li>
   </BuiltSnowman.rulePack.rulesStrings>
   
   <!-- EN: buried corpse -->
@@ -107,7 +109,9 @@
     <li>image->[DIGGER_nameFull], wie [DIGGER_pronoun] die Leiche von [CORPSE_nameFull] beerdigt [circumstance_group]</li>
     <li>circumstance_phrase->, mit einem [AdjectiveAngsty]en Gesichtsausdruck</li>
     <li>circumstance_phrase->und in Gedanken versunken ist</li>
-    <li>circumstance_phrase->, während [DIGGER_pronoun] auf einen weit entfernten [TerrainFeature] schaut</li>
+    <li>circumstance_phrase(p=0.33)->, während [DIGGER_pronoun] auf einen weit entfernten [TerrainFeatureMas] schaut</li>
+    <li>circumstance_phrase(p=0.33)->, während [DIGGER_pronoun] auf eine weit entfernte [TerrainFeatureFem] schaut</li>
+    <li>circumstance_phrase(p=0.33)->, während [DIGGER_pronoun] auf ein weit entferntes [TerrainFeatureNeu] schaut</li>
     <li>circumstance_phrase->und leise mit der Gedenkstätte spricht</li>
     <li>desc_sentence->Ein [Color]es Polarlicht schimmert am Horizont.</li>
     <li>desc_sentence->In der Ferne ist eine [Community] mit Schnee bedeckt.</li>
@@ -115,7 +119,7 @@
     <li>desc_sentence->Eine Geistererscheinung von [CORPSE_nameDef] beobachtet die Szene mit einem [AdjectiveAngsty]en Ausdruck.</li>
     <li>desc_sentence->Eine Geistererscheinung von [CORPSE_nameDef] steht neben [DIGGER_nameDef], mit einem [AdjectiveAngsty]en Ausdruck.</li>
     <li>desc_sentence->Eine Geistererscheinung von [CORPSE_nameDef] steht neben [DIGGER_nameDef], mit einem [AdjectiveFriendly]en Ausdruck.</li>
-    <li>desc_sentence->[Quantity_adjphrase] [AnimalPlural] rasten in der Nähe der Szene.</li>
+    <li>desc_sentence->[Quantity_adjphrase] [Animals] rasten in der Nähe der Szene.</li>
   </BuriedCorpse.rulePack.rulesStrings>
   
   <!-- EN: completed long construction project -->
@@ -151,8 +155,8 @@
     <li>desc_sentence->Das Bauprojekt '[OBJECT_label]' scheint sich über [PAWN_nameDef] aufzutürmen.</li>
     <li>desc_sentence->Das Bauprojekt '[OBJECT_label]' leuchtet leicht in [Color]er Farbe.</li>
     <li>desc_sentence->Das Bauprojekt '[OBJECT_label]' ist aufwendig gestaltet.</li>
-    <li>desc_sentence->[Quantity_adjphrase] [PersonJobPlural] bestaunen das Bauprojekt '[OBJECT_label]'.</li>
-    <li>desc_sentence->[Quantity_adjphrase] [PersonJobPlural] starren voller Ehrfurcht.</li>
+    <li>desc_sentence->[Quantity_adjphrase] [PersonJobs] bestaunen das Bauprojekt '[OBJECT_label]'.</li>
+    <li>desc_sentence->[Quantity_adjphrase] [PersonJobs] starren voller Ehrfurcht.</li>
   </CompletedLongConstructionProject.rulePack.rulesStrings>
   
   <!-- EN: completed long crafting project -->
@@ -188,8 +192,8 @@
     <li>desc_sentence->Das Handwerksprojekt '[OBJECT_label]' leuchtet leicht in [Color]er Farbe.</li>
     <li>desc_sentence->Das Handwerksprojekt '[OBJECT_label]' ist aufwendig gestaltet.</li>
     <li>desc_sentence->[PAWN_nameDef] hebt das Handwerksprojekt '[OBJECT_label]' scheinbar ohne Aufwand an.</li>
-    <li>desc_sentence->[Quantity_adjphrase] [PersonJobPlural] bestaunen das Handwerksprojekt.</li>
-    <li>desc_sentence->[Quantity_adjphrase] [PersonJobPlural] starren voller Ehrfurcht.</li>
+    <li>desc_sentence->[Quantity_adjphrase] [PersonJobs] bestaunen das Handwerksprojekt.</li>
+    <li>desc_sentence->[Quantity_adjphrase] [PersonJobs] starren voller Ehrfurcht.</li>
   </CompletedLongCraftingProject.rulePack.rulesStrings>
   
   <!-- EN: entered cryptosleep -->
@@ -219,10 +223,12 @@
     <li>image->[PAWN_nameFull], wie [PAWN_pronoun] durch die Glasscheibe einer Kryptoschlafkapsel auf eine Welt schaut, die [PAWN_pronoun] gleich verlassen wird, [circumstance_group]</li>
     <li>circumstance_phrase->, mit einem [AdjectiveAngsty]en Ausdruck</li>
     <li>circumstance_phrase->und in Gedanken versunken ist</li>
-    <li>circumstance_phrase->, während [DIGGER_pronoun] auf einen weit entfernten [TerrainFeature] schaut</li>
+    <li>circumstance_phrase(p=0.33)->, während [PAWN_pronoun] auf einen weit entfernten [TerrainFeatureMas] schaut</li>
+    <li>circumstance_phrase(p=0.33)->, während [PAWN_pronoun] auf eine weit entfernte [TerrainFeatureFem] schaut</li>
+    <li>circumstance_phrase(p=0.33)->, während [PAWN_pronoun] auf ein weit entferntes [TerrainFeatureNeu] schaut</li>
     <li>circumstance_phrase->und spricht leise mit sich selbst</li>
-    <li>desc_sentence->[Quantity_adjphrase] [AnimalPlural] rasten in der Nähe der Szene.</li>
-    <li>desc_sentence->[Quantity_adjphrase] [EnemyPluralWithoutThe] nähern sich dem Gebiet.</li>
+    <li>desc_sentence->[Quantity_adjphrase] [Animals] rasten in der Nähe der Szene.</li>
+    <li>desc_sentence->[Quantity_adjphrase] [Enemies] nähern sich dem Gebiet.</li>
     <li>desc_sentence->[PAWN_nameDef] strahlt Entschlossenheit aus.</li>
     <li>desc_sentence->[PAWN_nameDef] ist offensichtlich verwundet.</li>
     <li>desc_sentence->Ein [Color]es Polarlicht schimmert am Horizont.</li>
@@ -263,8 +269,8 @@
     <li>desc_sentence->Die Szene ist von [Quantity_adjphrase] gescheiterten Experimenten umgeben.</li>
     <li>desc_sentence->Die Szene ist von [Quantity_adjphrase] Büchern umgeben.</li>
     <li>desc_sentence->[PAWN_possessive]e Fähigkeiten spiegeln sich in der Arbeit wider.</li>
-    <li>desc_sentence->[Quantity_adjphrase] [PersonJobPlural] beobachten voller Erstaunen.</li>
-    <li>desc_sentence->[Quantity_adjphrase] [AnimalPlural] beobachten voller Erstaunen.</li>
+    <li>desc_sentence->[Quantity_adjphrase] [PersonJobs] beobachten voller Erstaunen.</li>
+    <li>desc_sentence->[Quantity_adjphrase] [Animals] beobachten voller Erstaunen.</li>
     <li>desc_sentence->[Quantity_adjphrase] ätherische Geister alter Meister beobachten von oben.</li>
   </GainedMasterSkillWithoutPassion.rulePack.rulesStrings>
   
@@ -306,8 +312,8 @@
     <li>desc_sentence->Das Subjekt ist umgeben von den Ergebnissen mehrerer fehlgeschlagener Experimente.</li>
     <li>desc_sentence->Das Subjekt ist umgeben von [Quantity_adjphrase_Dat] Büchern.</li>
     <li>desc_sentence->[PAWN_possessive]e Fähigkeiten spiegeln sich in der Arbeit wider.</li>
-    <li>desc_sentence->[Quantity_adjphrase] [PersonJobPlural] beobachten das Geschehen voller Erstaunen.</li>
-    <li>desc_sentence->[Quantity_adjphrase] [AnimalPlural] beobachten das Geschehen voller Erstaunen.</li>
+    <li>desc_sentence->[Quantity_adjphrase] [PersonJobs] beobachten das Geschehen voller Erstaunen.</li>
+    <li>desc_sentence->[Quantity_adjphrase] [Animals] beobachten das Geschehen voller Erstaunen.</li>
     <li>desc_sentence->[Quantity_adjphrase] ätherische Geister alter Meister beobachten das Geschehen von oben.</li>
   </GainedMasterSkillWithPassion.rulePack.rulesStrings>
   
@@ -342,10 +348,10 @@
     <li>circumstance_phrase->mit einem Lächeln</li>
     <li>circumstance_phrase->erschöpft aber glücklich</li>
     <li>circumstance_phrase->mit einer [AnimalGroup] im Hintergrund</li>
-    <li>desc_sentence->[HUMAN_nameDef] ist von unzähligen [AnimalPluralDat] umgeben.</li>
+    <li>desc_sentence->[HUMAN_nameDef] ist von unzähligen [AnimalsDat] umgeben.</li>
     <li>desc_sentence->[ANIMAL_nameDef] zieht weiter, um sich einer [AnimalGroup] anzuschließen.</li>
-    <li>desc_sentence->Die Szene ist gefüllt mit [AnimalPluralDat] und [AnimalPluralDat].</li>
-    <li>desc_sentence->Eine Reihe von unzähligen [AnimalPluralDat] wartet darauf, von [HUMAN_nameDef] gezähmt zu werden.</li>
+    <li>desc_sentence->Die Szene ist gefüllt mit [AnimalsDat] und [AnimalsDat].</li>
+    <li>desc_sentence->Eine Reihe von unzähligen [AnimalsDat] wartet darauf, von [HUMAN_nameDef] gezähmt zu werden.</li>
   </IncreasedMenagerie.rulePack.rulesStrings>
   
   <!-- EN: meditated -->
@@ -377,10 +383,10 @@
     <li>circumstance_phrase->und [VerbFriendly] lächelt</li>
     <li>circumstance_phrase->und sanft leuchtet</li>
     <li>circumstance_phrase->und von einer [Color]en Aura umgeben ist</li>
-    <li>desc_sentence->[Quantity_adjphrase] [PersonJobPlural] blicken auf [PAWN_objective].</li>
-    <li>desc_sentence->[PAWN_pronoun] ist von [Quantity_adjphrase_Dat] [AnimalPluralDat] umgeben.</li>
-    <li>desc_sentence->[Quantity_adjphrase] [AnimalPlural] rasten friedlich.</li>
-    <li>desc_sentence->[Quantity_adjphrase] [EnemyPluralWithoutThe] sind von der Szene in Ehrfurcht erstarrt.</li>
+    <li>desc_sentence->[Quantity_adjphrase] [PersonJobs] blicken auf [PAWN_objective].</li>
+    <li>desc_sentence->[PAWN_pronoun] ist von [Quantity_adjphrase_Dat] [AnimalsDat] umgeben.</li>
+    <li>desc_sentence->[Quantity_adjphrase] [Animals] rasten friedlich.</li>
+    <li>desc_sentence->[Quantity_adjphrase] [Enemies] sind von der Szene in Ehrfurcht erstarrt.</li>
   </Meditated.rulePack.rulesStrings>
   
   <!-- EN: mined valuable -->
@@ -417,10 +423,12 @@
     <li>circumstance_phrase->stolz lächelnd</li>
     <li>circumstance_phrase->mit einem zufriedenen Gesichtsausdruck</li>
     <li>desc_sentence->[Quantity_adjphrase] [ally] unterstützen [PAWN_objective].</li>
-    <li>desc_sentence->[Quantity_adjphrase] [AnimalPlural] durchstreifen das Gebiet.</li>
-    <li>desc_sentence->Es ist eine [Community] im Hintergrund zu sehen.</li>
-    <li>desc_sentence->[Quantity_adjphrase] weitere Adern sind in der Ferne sichtbar.</li>
-    <li>desc_sentence->Ein [TerrainFeature] ist in der Ferne sichtbar.</li>
+    <li>desc_sentence->[Quantity_adjphrase] [Animals] durchstreifen das Gebiet.</li>
+    <li>desc_sentence->Im Hintergrund befindet sich eine [Community].</li>
+    <li>desc_sentence->[Quantity_adjphrase] weitere Adern sind in der Ferne zu sehen.</li>
+    <li>desc_sentence(p=0.33)->Eine [TerrainFeatureFem] ist in der Ferne zu sehen.</li>
+    <li>desc_sentence(p=0.33)->Ein [TerrainFeatureMas] ist in der Ferne zu sehen.</li>
+    <li>desc_sentence(p=0.33)->Ein [TerrainFeatureNeu] ist in der Ferne zu sehen.</li>
     <li>desc_sentence->[PAWN_nameDef] ist verschwitzt und schmutzig von der Arbeit.</li>
   </MinedValuable.rulePack.rulesStrings>
   
@@ -470,9 +478,11 @@
     <li>circumstance_phrase->und Angst hat</li>
     <li>desc_sentence->Ein [Color]es Polarlicht schimmert am Horizont.</li>
     <li>desc_sentence->In der Ferne ist eine [Community] zu sehen.</li>
-    <li>desc_sentence->In der Ferne ist ein [TerrainFeature] zu sehen.</li>
-    <li>desc_sentence->[Quantity_adjphrase] [PersonJobPlural] spielen auch mit.</li>
-    <li>desc_sentence->[Quantity_adjphrase] [AnimalPlural] spielen in der Nähe.</li>
+    <li>desc_sentence(p=0.33)->In der Ferne ist eine [TerrainFeatureFem] zu sehen.</li>
+    <li>desc_sentence(p=0.33)->In der Ferne ist ein [TerrainFeatureMas] zu sehen.</li>
+    <li>desc_sentence(p=0.33)->In der Ferne ist ein [TerrainFeatureNeu] zu sehen.</li>
+    <li>desc_sentence->[Quantity_adjphrase] [PersonJobs] spielen auch mit.</li>
+    <li>desc_sentence->[Quantity_adjphrase] [Animals] spielen in der Nähe.</li>
     <li>desc_sentence->[PAWN_nameDef] strahlt in einer [Color]en Aura.</li>
     <li>desc_sentence->[PAWN_nameDef]'s Merkmale werden übertrieben dargestellt.</li>
     <li>desc_sentence->[PAWN_nameDef] ist der Höhepunkt der Szene.</li>
@@ -509,10 +519,10 @@
     <li>circumstance_phrase->und einen hoffnungsvollen Ausdruck hat</li>
     <li>circumstance_phrase->und sanft leuchtet</li>
     <li>circumstance_phrase->und von einer [Color]en Aura umgeben ist</li>
-    <li>desc_sentence->[Quantity_adjphrase] [PersonJobPlural] blicken auf [PAWN_objective].</li>
-    <li>desc_sentence->[PAWN_pronoun] ist von [Quantity_adjphrase_Dat] [AnimalPluralDat] umgeben.</li>
-    <li>desc_sentence->[Quantity_adjphrase] [AnimalPlural] rasten friedlich.</li>
-    <li>desc_sentence->[Quantity_adjphrase] [EnemyPluralWithoutThe] sind von der Szene in Ehrfurcht erstarrt.</li>
+    <li>desc_sentence->[Quantity_adjphrase] [PersonJobs] blicken auf [PAWN_objective].</li>
+    <li>desc_sentence->[PAWN_pronoun] ist von [Quantity_adjphrase_Dat] [AnimalsDat] umgeben.</li>
+    <li>desc_sentence->[Quantity_adjphrase] [Animals] rasten friedlich.</li>
+    <li>desc_sentence->[Quantity_adjphrase] [Enemies] sind von der Szene in Ehrfurcht erstarrt.</li>
   </Prayed.rulePack.rulesStrings>
   
   <!-- EN: put into cryptosleep -->
@@ -539,13 +549,15 @@
     <li>image->[CARRIER_nameFull], wie [CARRIER_pronoun] [SLEEPER_nameDef] in eine Kryptoschlafkapsel steckt [circumstance_group]</li>
     <li>image->[CARRIER_nameFull], wie [CARRIER_pronoun] eine leere Kryptoschlafkapsel für [SLEEPER_nameDef] öffnet [circumstance_group]</li>
     <li>image->[CARRIER_nameFull], wie [CARRIER_pronoun] [SLEEPER_nameDef] in einer Kryptoschlafkapsel versiegelt [circumstance_group]</li>
-    <li>image->[CARRIER_nameFull], wie [CARRIER_pronoun] davon läuft, während [SLEEPER_nameDef] durch die Glasscheibe einer Kryptoschlafkapsel schaut [circumstance_group]</li>
+    <li>image->[CARRIER_nameFull], wie [CARRIER_pronoun] gerade wegläuft, während [SLEEPER_nameDef] durch die Glasscheibe einer Kryptoschlafkapsel schaut [circumstance_group]</li>
     <li>circumstance_phrase(p=3)->und einen [AdjectiveAny]en Ausdruck hat</li>
     <li>circumstance_phrase->und in Gedanken versunken ist</li>
-    <li>circumstance_phrase->und auf einen weit entfernten [TerrainFeature] schaut</li>
+    <li>circumstance_phrase(p=0.33)->und auf einen weit entfernten [TerrainFeatureMas] schaut</li>
+    <li>circumstance_phrase(p=0.33)->und auf eine weit entfernte [TerrainFeatureFem] schaut</li>
+    <li>circumstance_phrase(p=0.33)->und auf ein weit entferntes [TerrainFeatureNeu] schaut</li>
     <li>circumstance_phrase->, mit sichtbarer Spannung zwischen den beiden</li>
-    <li>desc_sentence->[Quantity_adjphrase] [AnimalPlural] rasten in der Nähe der Szene.</li>
-    <li>desc_sentence->[Quantity_adjphrase] [EnemyPluralWithoutThe] nähern sich dem Gebiet.</li>
+    <li>desc_sentence->[Quantity_adjphrase] [Animals] rasten in der Nähe der Szene.</li>
+    <li>desc_sentence->[Quantity_adjphrase] [Enemies] nähern sich dem Gebiet.</li>
     <li>desc_sentence->[CARRIER_nameDef] strahlt Entschlossenheit aus.</li>
     <li>desc_sentence->[SLEEPER_nameDef] ist offensichtlich verwundet.</li>
     <li>desc_sentence->[SLEEPER_nameDef] sieht erschöpft aus.</li>
@@ -575,7 +587,7 @@
     <li>tale_noun->[TAKER_nameDef] [STRIPPED_nameDef] entkleidete</li>
     <li>image->[TAKER_nameFull], wie [TAKER_pronoun] [STRIPPED_nameFull] öffentlich und [circumstance_group] entkleidete</li>
     <li>image->[TAKER_nameFull], wie [TAKER_pronoun] [circumstance_group] die Kleidung von [STRIPPED_nameFull] auszog</li>
-    <li>image->[TAKER_nameFull], wie [TAKER_pronoun] [circumstance_group] mehrere [ApparelPlural] in den Händen hält, während [TAKER_pronoun] neben [STRIPPED_nameFull] steht, der/die völlig nackt ist</li>
+    <li>image->[TAKER_nameFull], wie [TAKER_pronoun] [circumstance_group] mehrere [Apparels] in den Händen hält, während [TAKER_pronoun] neben [STRIPPED_nameFull] steht, gänzlich nackt</li>
     <li>image->[TAKER_nameFull], wie [TAKER_pronoun] geduldig wartet, während [STRIPPED_nameFull] [circumstance_group] [STRIPPED_possessive]e Kleidung auszieht</li>
     <li>circumstance_phrase->mit gewisser Absicht</li>
     <li>circumstance_phrase->ohne einen Hauch von Scham</li>
@@ -584,7 +596,7 @@
     <li>circumstance_phrase->, während verwirrte Tiere zusehen,</li>
     <li>desc_sentence->[STRIPPED_nameDef] ist sichtlich erregt.</li>
     <li>desc_sentence->[STRIPPED_nameDef] ist mit unerklärlicher Nässe bedeckt.</li>
-    <li>desc_sentence->[STRIPPED_nameDef] atmet schwer ohne ersichtlichen Grund.</li>
+    <li>desc_sentence->[STRIPPED_nameDef] atmet schwer, ohne ersichtlichen Grund.</li>
     <li>desc_sentence->[STRIPPED_nameDef] krault einen Busch.</li>
     <li>desc_sentence->[STRIPPED_nameDef] hat nur einen [AdjectiveAngsty]en Ausdruck.</li>
   </Stripped.rulePack.rulesStrings>
@@ -621,7 +633,9 @@
     <li>image->[VISITOR_nameFull], wie [VISITOR_pronoun] sich das Kunstwerk auf dem Grabstein von [CORPSE_nameFull] anschaut [circumstance_group]</li>
     <li>circumstance_phrase->, mit einem [AdjectiveAngsty]en Ausdruck</li>
     <li>circumstance_phrase->und in Gedanken versunken ist</li>
-    <li>circumstance_phrase->, während [VISITOR_pronoun] auf einen weit entfernten [TerrainFeature] schaut</li>
+    <li>circumstance_phrase(p=0.33)->, während [VISITOR_pronoun] auf einen weit entfernten [TerrainFeatureMas] schaut</li>
+    <li>circumstance_phrase(p=0.33)->, während [VISITOR_pronoun] auf eine weit entfernte [TerrainFeatureFem] schaut</li>
+    <li>circumstance_phrase(p=0.33)->, während [VISITOR_pronoun] auf ein weit entferntes [TerrainFeatureNeu] schaut</li>
     <li>circumstance_phrase->und leise mit der Gedenkstätte spricht</li>
     <li>desc_sentence->Ein [Color]es Polarlicht schimmert am Horizont.</li>
     <li>desc_sentence->In der Ferne ist eine [Community] mit Schnee bedeckt.</li>
@@ -629,7 +643,7 @@
     <li>desc_sentence->Eine Geistererscheinung von [CORPSE_nameDef] steht neben [VISITOR_nameDef], mit einem [AdjectiveFriendly]en Ausdruck.</li>
     <li>desc_sentence->Eine Geistererscheinung von [CORPSE_nameDef] beobachtet die Szene mit einem [AdjectiveAngsty]en Ausdruck.</li>
     <li>desc_sentence->Eine Geistererscheinung von [CORPSE_nameDef] steht neben [VISITOR_nameDef], mit einem [AdjectiveAngsty]en Ausdruck.</li>
-    <li>desc_sentence->[Quantity_adjphrase] [AnimalPlural] rasten in der Nähe der Szene.</li>
+    <li>desc_sentence->[Quantity_adjphrase] [Animals] rasten in der Nähe der Szene.</li>
   </VisitedGrave.rulePack.rulesStrings>
   
 </LanguageData>

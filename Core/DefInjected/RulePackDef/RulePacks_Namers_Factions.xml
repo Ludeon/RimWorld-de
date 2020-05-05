@@ -115,32 +115,32 @@
     <li>r_name->[ConceptBadass] [groupname]</li>
   -->
   <NamerFactionPirate.rulePack.rulesStrings>
-    <li>r_name->Die [AnimalBadassPlural]</li>
-    <li>r_name->Die [AnimalBadassSingular]-Männer</li>
-    <li>r_name->Die [AnimalBadassPlural] der [ConceptBadass]</li>
-    <li>r_name->Die [PersonBadassPlural] der [ConceptBadass]</li>
-    <li>r_name->Die [PersonBadassPlural]</li>
-    <li>r_name->Die [EnemyPlural]</li>
+    <li>r_name->Die [AnimalBadasses]</li>
+    <li>r_name->Die [AnimalBadass]-Männer</li>
+    <li>r_name->Die [AnimalBadasses] der [ConceptBadass]</li>
+    <li>r_name->Die [PersonBadasses] der [ConceptBadass]</li>
+    <li>r_name->Die [PersonBadasses]</li>
+    <li>r_name->Die [Enemies]</li>
     <li>r_name->Die [WeaponCon]-Männer</li>
-    <li>r_name->Die [WeaponPlural]</li>
-    <li>r_name->Die [WeaponCon]-[AnimalBadassPlural]</li>
-    <li>r_name->Die [WeaponCon]-[EnemyPlural]</li>
-    <li>r_name->Die [ColorBadass]en [WeaponPlural]</li>
-    <li>r_name->Die [ColorBadass]en [AnimalBadassPlural]</li>
-    <li>r_name->Die [ColorBadass]en [PersonBadassPlural]</li>
-    <li>r_name->Die [ColorBadass]en [EnemyPlural]</li>
-    <li>r_name->Die [groupname] der [PersonBadassPlural]</li>
-    <li>r_name->Die [EnemySingularDat] [EnemyPlural]</li>
+    <li>r_name->Die [Weapons]</li>
+    <li>r_name->Die [WeaponCon]-[AnimalBadasses]</li>
+    <li>r_name->Die [WeaponCon]-[Enemies]</li>
+    <li>r_name->Die [ColorBadass]en [Weapons]</li>
+    <li>r_name->Die [ColorBadass]en [AnimalBadasses]</li>
+    <li>r_name->Die [ColorBadass]en [PersonBadasses]</li>
+    <li>r_name->Die [ColorBadass]en [Enemies]</li>
+    <li>r_name->Die [groupname] der [PersonBadasses]</li>
+    <li>r_name->Die [EnemyDat] [Enemies]</li>
     <li>r_name->Die [AdjectiveBadass]e [groupname]</li>
-    <li>r_name->Die [AdjectiveBadass]en [AnimalBadassPlural]</li>
-    <li>r_name->Die [AdjectiveBadass]en [EnemyPlural]</li>
-    <li>r_name->Die [AdjectiveBadass]en [PersonBadassPlural]</li>
+    <li>r_name->Die [AdjectiveBadass]en [AnimalBadasses]</li>
+    <li>r_name->Die [AdjectiveBadass]en [Enemies]</li>
+    <li>r_name->Die [AdjectiveBadass]en [PersonBadasses]</li>
     <li>r_name->Die [PersonAlly] der [ConceptBadass] </li>
     <li>r_name->Die [groupname] der [ConceptBadass]</li>
-    <li>r_name(p=0.4)->Die [Gore]-Fresser</li>
-    <li>r_name->[EnemyPluralWithoutThe] von [NamePerson]</li>
-    <li>r_name->[AnimalBadassPlural] von [NamePerson]</li>
-    <li>r_name->[WeaponPlural] von [NamePerson]</li>
+    <li>r_name(p=0.4)->Die [Gore]fresser</li>
+    <li>r_name->[Enemies] von [NamePerson]</li>
+    <li>r_name->[AnimalBadasses] von [NamePerson]</li>
+    <li>r_name->[Weapons] von [NamePerson]</li>
     <li>r_name->[WeaponCon]-[groupname]</li>
     <li>r_name->[Letter][Letter][Digit][Digit]</li>
   </NamerFactionPirate.rulePack.rulesStrings>
@@ -150,6 +150,9 @@
   -->
   <NamerFactionTribal.rulePack.rulesFiles>
     <li>political_union_tribal->Words/Nouns/PoliticalUnions_Tribal</li>
+    <li>political_union_tribal_mas->Words/Nouns/PoliticalUnions_Tribal_Mas</li>
+    <li>political_union_tribal_fem->Words/Nouns/PoliticalUnions_Tribal_Fem</li>
+    <li>political_union_tribal_neu->Words/Nouns/PoliticalUnions_Tribal_Neu</li>
   </NamerFactionTribal.rulePack.rulesFiles>
   <!-- EN:
     <li>r_name->[WordTribal] [political_union_tribal]</li>
@@ -161,12 +164,19 @@
   -->
   <NamerFactionTribal.rulePack.rulesStrings>
     <li>r_name->[WordTribal]-[political_union_tribal]</li>
-    <li>r_name->[Color]e [TerrainFeatureCon]-[political_union_tribal]</li>
-    <li>r_name->[political_union_tribal] von [WordTribal]</li>
-    <li>r_name->Die [Color]en [AnimalPlural] von [WordTribal]</li>
-    <li>r_name->Die [political_union_tribal] der [TerrainFeatureFem]</li>
-    <li>r_name->Die [political_union_tribal] vom [TerrainFeatureMas]</li>
-    <li>r_name->Die [political_union_tribal] vom [TerrainFeatureNeu]</li>
+    <li>r_name->[TribalUnion] der [WordTribal]</li>
+    <li>r_name(p=0.33)->[TribalUnion] der [ColorMaybe] [TerrainFeatureFemGen]</li>
+    <li>r_name(p=0.33)->[TribalUnion] des [ColorMaybe] [TerrainFeatureMasGen]</li>
+    <li>r_name(p=0.33)->[TribalUnion] des [ColorMaybe] [TerrainFeatureNeuGen]</li>
+    <li>r_name(p=0.33)->[TribalUnion] der [Color]en [AnimalFemGen]</li>
+    <li>r_name(p=0.33)->[TribalUnion] des [Color]en [AnimalMasGen]</li>
+    <li>r_name(p=0.33)->[TribalUnion] des [Color]en [AnimalNeuGen]</li>
+    <li>TribalUnion->[political_union_tribal]</li>
+    <li>TribalUnion(p=0.33)->Der [political_union_tribal_mas]</li>
+    <li>TribalUnion(p=0.33)->Die [political_union_tribal_fem]</li>
+    <li>TribalUnion(p=0.33)->Das [political_union_tribal_neu]</li>
+    <li>ColorMaybe-></li>
+    <li>ColorMaybe->[Color]en</li>
   </NamerFactionTribal.rulePack.rulesStrings>
   
   <!-- EN:
@@ -248,7 +258,7 @@
     <li>r_name(p=6)->[townname_fixed]</li>
     <li>r_name(p=4)->[townname_combo]</li>
     <li>r_name->[townname_near]</li>
-    <li>topicalnoun->[VegetableSingular]</li>
+    <li>topicalnoun->[Vegetable]</li>
     <li>topicalnoun->[Game]</li>
     <li>topicalnoun->[BodyPart]</li>
     <li>topicalnounCon->[TerrainFeatureCon]</li>
@@ -256,13 +266,13 @@
     <li>topicalnounCon->[WeaponCon]</li>
     <li>townname_combo->[topicalnoun]-[TerrainFeature]</li>
     <li>townname_combo->[topicalnoun]-[Community]</li>
-    <li>townname_combo->[TerrainFeature] der [AnimalPlural]</li>
+    <li>townname_combo->[TerrainFeature] der [Animals]</li>
     <li>townname_combo->[topicalnoun]'s [Community]</li>
     <li>townname_combo(p=2)->[NamePerson]'s [TerrainFeature]</li>
     <li>townname_combo(p=2)->[TerrainFeature] der [concept_positive]</li>
     <li>townname_combo(p=2)->[Community] der [concept_positive]</li>
-    <li>townname_combo(p=3)->[TerrainFeature] der [CharacterPlural]</li>
-    <li>townname_combo(p=3)->[Community] der [CharacterPlural]</li>
+    <li>townname_combo(p=3)->[TerrainFeature] der [Characters]</li>
+    <li>townname_combo(p=3)->[Community] der [Characters]</li>
     <li>townname_near->[nearnameinitial] am [TerrainFeatureMas]</li>
     <li>townname_near->[nearnameinitial] am [TerrainFeatureNeu]</li>
     <li>townname_near->[nearnameinitial] an der [TerrainFeatureFem]</li>
@@ -345,14 +355,14 @@
     <li>r_name(p=4)->[townname_combo]</li>
     <li>r_name->[townname_wordgen]</li>
     <li>townname_combo->[AnimalBadass] [geography]</li>
-    <li>townname_combo->[AnimalBadassPlural] vom [geography]</li>
+    <li>townname_combo->[AnimalBadasses] vom [geography]</li>
     <li>townname_combo->[ConceptBadass] [geography]</li>
     <li>townname_combo->[ConceptBadass] am [geography]</li>
-    <li>townname_combo->[PersonBadassPlural] [geography]</li>
-    <li>townname_combo->[PersonBadassPlural] vom [geography]</li>
-    <li>townname_combo->[EnemyPluralWithoutThe] vom [geography]</li>
-    <li>townname_combo->[EnemySingularDat] [geography]</li>
-    <li>townname_combo->[WeaponPlural] der [geography]</li>
+    <li>townname_combo->[PersonBadasses] [geography]</li>
+    <li>townname_combo->[PersonBadasses] vom [geography]</li>
+    <li>townname_combo->[Enemies] vom [geography]</li>
+    <li>townname_combo->[EnemyDat] [geography]</li>
+    <li>townname_combo->[Weapons] der [geography]</li>
     <li>townname_combo->[WeaponCon]-[geography]</li>
     <li>townname_combo->[ColorBadass] [geography]</li>
     <li>geography(p=2)->[TerrainFeature]</li>
@@ -391,12 +401,7 @@
     <li>r_name->[WordTribal] [TerrainFeature]</li>
   -->
   <NamerSettlementTribal.rulePack.rulesStrings>
-    <li>r_name(p=2)->[WordTribal]</li>
-    <li>r_name->[Color]e [WordTribal]</li>
-    <li>r_name->[Color]e [TerrainFeatureFem]</li>
-    <li>r_name->[Color]er [TerrainFeatureMas]</li>
-    <li>r_name->[Color]es [TerrainFeatureNeu]</li>
-    <li>r_name->[WordTribal]-[TerrainFeature]</li>
+    <li>r_name->[WordTribal]</li>
   </NamerSettlementTribal.rulePack.rulesStrings>
   
 </LanguageData>

@@ -42,7 +42,7 @@
     <li>eat_gerund->verschlingt</li>
     <li>eat_gerund->konsumiert</li>
     <li>circumstance_phrase->mit voller Absicht</li>
-    <li>circumstance_phrase->ohne Schamgefühl</li>
+    <li>circumstance_phrase->ohne jegliches Schamgefühl</li>
     <li>circumstance_phrase->mit einem beschämenden Blick</li>
     <li>circumstance_phrase->, während andere zuschauen,</li>
     <li>circumstance_phrase->genüsslich</li>
@@ -245,7 +245,9 @@
     <li>image->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] in einer Rettungskapsel zu Boden geht</li>
     <li>image->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] in einer Rettungskapsel auf die Erde trifft</li>
     <li>image->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] in einer Rettungskapsel fliegt</li>
-    <li>circumstance_phrase->direkt vor einem [TerrainFeature]</li>
+    <li>circumstance_phrase(p=0.33)->vor einer [TerrainFeatureFemDat]</li>
+    <li>circumstance_phrase(p=0.33)->vor einem [TerrainFeatureMasDat]</li>
+    <li>circumstance_phrase(p=0.33)->vor einem [TerrainFeatureNeuDat]</li>
     <li>circumstance_phrase->mit unglaublicher Wucht</li>
     <li>circumstance_phrase->in einer Wolke aus Staub und Geröll</li>
     <li>circumstance_phrase->mit dramatisch brennenden Bremsraketen</li>
@@ -257,9 +259,15 @@
     <li>desc_sentence->[PAWN_pronoun] scheint keine Ahnung zu haben, was [PAWN_pronoun] da macht.</li>
     <li>desc_sentence->[PAWN_pronoun] hat [PAWN_possessive]e Augen geschlossen und ist völlig hilflos im Sitz festgezurrt.</li>
     <li>desc_sentence->Es ist eine Flammenspur zu sehen, die aus der Rückseite der Kapsel austritt.</li>
-    <li>desc_sentence->Ein nahes [Animal] schaut erschrocken auf.</li>
-    <li>desc_sentence->Ein [Animal] flüchtet verängstigt vom Ort des Geschehens.</li>
-    <li>desc_sentence->Es ist ein [TerrainFeature] im Hintergrund zu sehen.</li>
+    <li>desc_sentence(p=0.33)->Ein naher [AnimalMas] schaut erschrocken auf.</li>
+    <li>desc_sentence(p=0.33)->Eine nahe [AnimalFem] schaut erschrocken auf.</li>
+    <li>desc_sentence(p=0.33)->Ein nahes [AnimalNeu] schaut erschrocken auf.</li>
+    <li>desc_sentence(p=0.33)->Ein [AnimalMas] flüchtet verängstigt vom Ort des Geschehens.</li>
+    <li>desc_sentence(p=0.33)->Eine [AnimalFem] flüchtet verängstigt vom Ort des Geschehens.</li>
+    <li>desc_sentence(p=0.33)->Ein [AnimalNeu] flüchtet verängstigt vom Ort des Geschehens.</li>
+    <li>desc_sentence(p=0.33)->Im Hintergrund ist eine [TerrainFeatureFem] zu sehen.</li>
+    <li>desc_sentence(p=0.33)->Im Hintergrund ist ein [TerrainFeatureMas] zu sehen.</li>
+    <li>desc_sentence(p=0.33)->Im Hintergrund ist ein [TerrainFeatureNeu] zu sehen.</li>
     <li>desc_sentence->Ein [PersonJob] beobachtet schweigend das Geschehen aus der Ferne.</li>
   </LandedInPod.rulePack.rulesStrings>
   
@@ -308,8 +316,10 @@
     <li>desc_sentence->[PAWN_pronoun] hat ein Teil [PAWN_possessive]er Kleidung verloren.</li>
     <li>desc_sentence->[PAWN_pronoun] schneidet eine unangenehme Grimasse.</li>
     <li>desc_sentence->[PAWN_pronoun] scheint verrückt zu lächeln.</li>
-    <li>desc_sentence->[PAWN_pronoun] ist mit dem knurrenden Gesicht eines [Animal] dargestellt.</li>
-    <li>desc_sentence->[PAWN_possessive] Kopf ist symbolisch von [AnimalPluralDat] umgeben.</li>
+    <li>desc_sentence(p=0.33)->[PAWN_pronoun] wird mit dem knurrenden Gesicht eines [AnimalMasGen] dargestellt.</li>
+    <li>desc_sentence(p=0.33)->[PAWN_pronoun] wird mit dem knurrenden Gesicht einer [AnimalFemGen] dargestellt.</li>
+    <li>desc_sentence(p=0.33)->[PAWN_pronoun] wird mit dem knurrenden Gesicht eines [AnimalNeuGen] dargestellt.</li>
+    <li>desc_sentence->[PAWN_possessive] Kopf ist symbolisch von [AnimalsDat] umgeben.</li>
     <li>desc_sentence->[PAWN_pronoun] hat ein mörderisches Glitzern in den Augen.</li>
     <li>desc_sentence->[PAWN_possessive] ganzer Körper scheint vor Hass zu beben.</li>
     <li>desc_sentence->[PAWN_possessive] Gesicht ist mit einem verdrehten Ausdruck von Glückseligkeit dargestellt.</li>
@@ -434,7 +444,9 @@
     <li>desc_sentence->[PAWN_pronoun] scheint trotz der Umstände lachen zu wollen.</li>
     <li>desc_sentence->[PAWN_pronoun] scheint nahezu kraflos zu sein, als wäre [PAWN_pronoun] durch das intensive Erbrechen völlig entleert.</li>
     <li>desc_sentence->[PAWN_pronoun] wurde künstlerisch von einer Aura der Abscheulichkeit umgeben.</li>
-    <li>desc_sentence->Im Hintergrund frisst ein [Animal] vom Erbrochenen.</li>
+    <li>desc_sentence(p=0.33)->Im Hintergrund frisst ein [AnimalMas] vom Erbrochenen.</li>
+    <li>desc_sentence(p=0.33)->Im Hintergrund frisst eine [AnimalFem] vom Erbrochenen.</li>
+    <li>desc_sentence(p=0.33)->Im Hintergrund frisst ein [AnimalNeu] vom Erbrochenen.</li>
   </Vomited.rulePack.rulesStrings>
   
   <!-- EN: walked naked -->
@@ -480,13 +492,13 @@
     <li>nude_action->herumspaziert</li>
     <li>nude_action->die Gegend erforscht</li>
     <li>circumstance_phrase->mit einer gewissen Absicht und</li>
-    <li>circumstance_phrase->ohne jedem Schamgefühl und</li>
+    <li>circumstance_phrase->ohne jegliches Schamgefühl und</li>
     <li>circumstance_phrase->, während andere zuschauen,</li>
     <li>circumstance_phrase->ohne ersichtlichen Grund und</li>
     <li>circumstance_phrase->, während verwirrte Tiere zusehen,</li>
     <li>desc_sentence->[PAWN_nameDef] ist sichtbar erregt.</li>
     <li>desc_sentence->[PAWN_nameDef] ist mit einer unerklärlichen Flüssigkeit bedeckt.</li>
-    <li>desc_sentence->[PAWN_nameDef] atmet schwer ohne ersichtlichen Grund.</li>
+    <li>desc_sentence->[PAWN_nameDef] atmet schwer, ohne ersichtlichen Grund.</li>
     <li>desc_sentence->[PAWN_nameDef] krault einen Busch.</li>
   </WalkedNaked.rulePack.rulesStrings>
   

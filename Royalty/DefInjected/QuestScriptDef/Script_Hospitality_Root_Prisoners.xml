@@ -52,7 +52,7 @@
     <li>threatsInfo2(generateThreats==true,threatType==Raids,enemyFaction==Mechanoid)->\n\nDie Gefangenen haben [recently] [mechViolation], und sind nun im Fadenkreuz eines Mechanoidennestes. Es [enemyGroupsParagraph]</li>
     <li>threatsInfo2(generateThreats==true,threatType==MechClusters)->\n\n[threatsInfoMechClustersMultiPrisoners] Es [enemyGroupsParagraph]</li>
     <li>threatsInfo2(generateThreats==false)-></li>
-    <li>questDescription(asker_factionLeader==True,lodgersCount==1)->[asker_nameFull], [asker_faction_leaderTitle] der Fraktion '[asker_faction_name]', möchte, dass du einen ganz speziellen Gefangenen für [asker_objective] aufbewahrst. Der Gefangene, ein [lodgers0_title] ([lodgers0_age] Jahre alt) namens [lodgers0_nameFull], hat kompromittierende Informationen über [asker_nameDef]'s [PersonalCharacteristic], und [asker_nameDef] möchte nicht, dass [lodgers0_pronoun] befreit wird. Du musst die Gefangenen nur über einen Zeitraum von [shuttleDelayTicks_duration] bei dir behalten, bis der Skandal sich gelegt hat. [allLodgerInfo][threatsInfo3]\n\n[commonDescEnding]</li>
+    <li>questDescription(asker_factionLeader==True,lodgersCount==1)->[asker_nameFull], [asker_faction_leaderTitle] der Fraktion '[asker_faction_name]', möchte, dass du einen ganz speziellen Gefangenen für [asker_objective] aufbewahrst. Der Gefangene, ein [lodgers0_title] ([lodgers0_age] Jahre alt) namens [lodgers0_nameFull], hat kompromittierende Informationen über [die_Dinge] von [asker_nameDef], und [asker_nameDef] möchte nicht, dass [lodgers0_pronoun] befreit wird. Du musst die Gefangenen nur über einen Zeitraum von [shuttleDelayTicks_duration] bei dir behalten, bis der Skandal sich gelegt hat. [allLodgerInfo][threatsInfo3]\n\n[commonDescEnding]</li>
     <li>threatsInfo3(generateThreats==true,threatType==Raids,enemyFaction!=Mechanoid)->\n\nUnglücklicherweise möchte die Fraktion '[enemyFaction_name]' an diese beschämenden Informationen kommen und wird Überfallkommandos schicken, um [lodgers0_nameDef] aus dem Gefängnis zu holen. Es [enemyGroupsParagraph]</li>
     <li>threatsInfo3(generateThreats==true,threatType==Raids,enemyFaction==Mechanoid)->\n\n[threatsInfoMechRaidsSingleHuman] Es [enemyGroupsParagraph]</li>
     <li>threatsInfo3(generateThreats==true,threatType==MechClusters)->\n\n[threatsInfoMechClustersSingleHuman] Es [enemyGroupsParagraph]</li>
@@ -72,6 +72,11 @@
     <li>threatsInfo6(generateThreats==true,threatType==Raids,enemyFaction==Mechanoid)->\n\nUnglücklicherweise haben [enemyFaction_pawnsPlural] der Fraktion '[enemyFaction_name]' den Bunker bewacht, aus dem die Gefangenen geholt wurden. Sie werden Mechanoiden schicken, um die verloren gegangenen Schläfer zur Strecke zu bringen. Es [enemyGroupsParagraph]</li>
     <li>threatsInfo6(generateThreats==true,threatType==MechClusters)->\n\n[threatsInfoMechClustersMultiPrisoners] Es [enemyGroupsParagraph]</li>
     <li>threatsInfo6(generateThreats==false)-></li>
+    <!-- gender-specific -->
+    <li>die_Dinge->die [PersonalCharacteristics]</li>
+    <li>die_Dinge->den [PersonalCharacteristicMas]</li>
+    <li>die_Dinge->die [PersonalCharacteristicFem]</li>
+    <li>die_Dinge->das [PersonalCharacteristicNeu]</li>
   </Hospitality_Prisoners.questDescriptionRules.rulesStrings>
   <!-- EN:
     <li>questName->Guarding for [asker_nameDef]</li>

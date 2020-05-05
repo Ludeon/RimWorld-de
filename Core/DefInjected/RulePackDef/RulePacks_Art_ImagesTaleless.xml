@@ -39,56 +39,82 @@
   -->
   <TalelessImages.rulePack.rulesStrings>
     <!-- pawns -->
-    <li>image->einem einsamen, [desc_pawn] [Character]</li>
-    <li>image(p=0.5)->einem einsamen, [desc_pawn] [Character] in der Nähe von einer [TerrainFeatureFem]</li>
-    <li>image(p=0.5)->einem einsamen, [desc_pawn] [Character] in der Nähe von einem [TerrainFeatureMas]</li>
-    <li>image(p=0.5)->einem einsamen, [desc_pawn] [Character] in der Nähe von einem [TerrainFeatureNeu]</li>
-    <li>image->einem einsamen, [desc_pawn] [Character] in der Nähe einer [Community]</li>
-    <li>image->einem [desc_pawn] [Character], der von [CharacterPluralDat] umstellt ist</li>
-    <li>image->[CharacterPlural], die [Game] spielen</li>
-    <li>image->einem [desc_pawn] [Character], der [Game] mit [Quantity_adjphrase_Dat] [CharacterPluralDat] spielt</li>
-    <li>image(p=0.5)->einem [desc_pawn] [Character], der eine [WeaponSingularFem] hält</li>
-    <li>image(p=0.5)->einem [desc_pawn] [Character], der einen [WeaponSingularMas] hält</li>
-    <li>image(p=0.5)->einem [desc_pawn] [Character], der ein [WeaponSingularNeu] hält</li>
-    <li>image->einem [desc_pawn] [Character], der einen [VegetableSingularMas] isst</li>
-    <li>image->einem [desc_pawn] [Character], der eine [VegetableSingularFem] isst</li>
-    <li>image->[Quantity_adjphrase_Dat] [PersonJobPluralDat] und [PersonJobPluralDat], die gemeinsam [VegetablePlural] essen</li>
-    <li>image->der kleinen, [desc_pawn] Berühmtheit [NamePerson]</li>
-    <li>image(p=0.5)->einem [desc_pawn] [Character], der eine [ApparelSingularFem] trägt</li>
-    <li>image(p=0.5)->einem [desc_pawn] [Character], der einen [ApparelSingularMas] trägt</li>
-    <li>image(p=0.2)->einem [desc_pawn] [Character], der ein [ApparelSingularNeu] trägt</li>
+    <li>image(p=0.33)->einem einsamen [CharacterMasDat], der [desc_pawn]</li>
+    <li>image(p=0.33)->einer einsamen [CharacterFemDat], die [desc_pawn]</li>
+    <li>image(p=0.33)->einem einsamen [CharacterNeuDat], das [desc_pawn]</li>
+    <li>image(p=0.33)->einem einsamen [CharacterMasDat], der in der Nähe [eines_Gebietes] [desc_pawn]</li>
+    <li>image(p=0.33)->einer einsamen [CharacterFemDat], die in der Nähe [eines_Gebietes] [desc_pawn]</li>
+    <li>image(p=0.33)->einem einsamen [CharacterNeuDat], das in der Nähe [eines_Gebietes] [desc_pawn]</li>
+    <li>image(p=0.33)->einem einsamen [CharacterMasDat], der in der Nähe einer [Community] [desc_pawn]</li>
+    <li>image(p=0.33)->einer einsamen [CharacterFemDat], die in der Nähe einer [Community] [desc_pawn]</li>
+    <li>image(p=0.33)->einem einsamen [CharacterNeuDat], das in der Nähe einer [Community] [desc_pawn]</li>
+    <li>image(p=0.33)->einem [CharacterMasDat], der [desc_pawn], während er von [CharactersDat] umstellt ist</li>
+    <li>image(p=0.33)->einer [CharacterFemDat], die [desc_pawn], während sie von [CharactersDat] umstellt ist</li>
+    <li>image(p=0.33)->einem [CharacterNeuDat], das [desc_pawn], während es von [CharactersDat] umstellt ist</li>
+    <li>image->[CharactersDat], die [Game] spielen</li>
+    <li>image(p=0.33)->einem [CharacterMasDat], der [desc_pawn], während er [Game] mit [Quantity_adjphrase_Dat] [CharactersDat] spielt</li>
+    <li>image(p=0.33)->einer [CharacterFemDat], die [desc_pawn], während sie [Game] mit [Quantity_adjphrase_Dat] [CharactersDat] spielt</li>
+    <li>image(p=0.33)->einem [CharacterNeuDat], das [desc_pawn], während es [Game] mit [Quantity_adjphrase_Dat] [CharactersDat] spielt</li>
+    <li>image(p=0.33)->einem [CharacterMasDat], der [desc_pawn], während er [eine_Waffe] hält</li>
+    <li>image(p=0.33)->einer [CharacterFemDat], die [desc_pawn], während sie [eine_Waffe] hält</li>
+    <li>image(p=0.33)->einem [CharacterNeuDat], das [desc_pawn], während es [eine_Waffe] hält</li>
+    <li>image(p=0.33)->einem [CharacterMasDat], der [desc_pawn], während er [Vegetables] isst</li>
+    <li>image(p=0.33)->einer [CharacterFemDat], die [desc_pawn], während sie [Vegetables] isst</li>
+    <li>image(p=0.33)->einem [CharacterNeuDat], das [desc_pawn], während es [Vegetables] isst</li>
+    <li>image->[Quantity_adjphrase_Dat] [PersonJobsDat] und [PersonJobsDat], die gemeinsam [Vegetables] essen</li>
+    <li>image->der kleinen Berühmtheit namens [NamePerson], die [desc_pawn]</li>
+    <li>image(p=0.33)->einem [CharacterMasDat], der [desc_pawn], während er [eine_Kleidung] trägt</li>
+    <li>image(p=0.33)->einer [CharacterFemDat], die [desc_pawn], während sie [eine_Kleidung] trägt</li>
+    <li>image(p=0.33)->einem [CharacterNeuDat], das [desc_pawn], während es [eine_Kleidung] trägt</li>
     <!-- terrain -->
     <li>image->einer [Community]</li>
-    <li>image->einem [TerrainFeature]</li>
+    <li>image(p=0.33)->einem [TerrainFeatureMas]</li>
+    <li>image(p=0.33)->einer [TerrainFeatureFem]</li>
+    <li>image(p=0.33)->einem [TerrainFeatureNeu]</li>
     <!-- objects -->
-    <li>image->einer [Weapon]</li>
+    <li>image(p=0.33)->einem [WeaponMas]</li>
+    <li>image(p=0.33)->einer [WeaponFem]</li>
+    <li>image(p=0.33)->einem [WeaponNeu]</li>
     <li>image->einer [TreeType]</li>
-    <li>image->einem [NaturalObject]</li>
-    <li>image->[Quantity_adjphrase_Dat] [WeaponPluralDat]</li>
-    <li>image->[Quantity_adjphrase_Dat] [VegetablePluralDat]</li>
-    <li>image(p=0.5)->einer leeren [ApparelSingularFem]</li>
-    <li>image(p=0.5)->einem leeren [ApparelSingularMas]</li>
-    <li>image(p=0.2)->einem leeren [ApparelSingularNeu]</li>
+    <li>image(p=0.33)->einem [NaturalObjectMas]</li>
+    <li>image(p=0.33)->einer [NaturalObjectFem]</li>
+    <li>image(p=0.33)->einem [NaturalObjectNeu]</li>
+    <li>image->[Quantity_adjphrase_Dat] [WeaponsDat]</li>
+    <li>image->[Quantity_adjphrase_Dat] [VegetablesDat]</li>
+    <li>image(p=0.33)->einem [ApparelMasDat]</li>
+    <li>image(p=0.33)->einer [ApparelFemDat]</li>
+    <li>image(p=0.33)->einem [ApparelNeuDat]</li>
     <!-- abstract -->
-    <li>image->einem [ShapeMas]</li>
-    <li>image->einer [ShapeFem]</li>
-    <li>image->einem von [ShapePluralDat] umgebenen [ShapeMas]</li>
-    <li>image->einer von [ShapePluralDat] umgebenen [ShapeFem]</li>
+    <li>image(p=0.33)->einem [ShapeMas]</li>
+    <li>image(p=0.33)->einer [ShapeFem]</li>
+    <li>image(p=0.33)->einem [ShapeNeu]</li>
+    <li>image(p=0.33)->einem [ShapeMas], der von [ShapePluralDat] umgeben ist</li>
+    <li>image(p=0.33)->einer [ShapeFem], die von [ShapePluralDat] umgeben ist</li>
+    <li>image(p=0.33)->einem [ShapeFem], das von [ShapePluralDat] umgeben ist</li>
     <li>image->einer abstrakten Darstellung von [ConceptAny]</li>
     <li>image->einer [AdjectiveAny]en, abstrakten Figur</li>
-    <li>desc_pawn(p=12)-></li>
-    <li>desc_pawn->durch die Luft fliegenden</li>
-    <li>desc_pawn->in der Luft schwebenden</li>
-    <li>desc_pawn->nach links bewegenden</li>
-    <li>desc_pawn->nach rechts bewegenden</li>
-    <li>desc_pawn->auf einem Tisch sitzenden</li>
-    <li>desc_pawn->hinter einem Fenster zu sehenden</li>
-    <li>desc_pawn->als Silhouette dargestellten</li>
-    <li>desc_pawn(p=0.5)->auf einer [AnimalSingularFem] reitenden</li>
-    <li>desc_pawn(p=0.5)->auf einem [AnimalSingularMas] reitenden</li>
-    <li>desc_pawn(p=0.5)->auf einem [AnimalSingularNeu] reitenden</li>
-    <li>desc_pawn->[AdjectiveAny] schauenden</li>
-    <li>desc_pawn->mit [Gore] bedeckten</li>
+    <li>desc_pawn->durch die Luft fliegt</li>
+    <li>desc_pawn->am Himmel schwebt</li>
+    <li>desc_pawn->nach links geht</li>
+    <li>desc_pawn->nach rechts geht</li>
+    <li>desc_pawn->auf einem Tisch sitzt</li>
+    <li>desc_pawn->in einem Spiegel blickt</li>
+    <li>desc_pawn->als Silhouette dargestellt wird</li>
+    <li>desc_pawn(p=0.33)->auf einem [AnimalMasDat] reitet</li>
+    <li>desc_pawn(p=0.33)->auf einer [AnimalFemDat] reitet</li>
+    <li>desc_pawn(p=0.33)->auf einem [AnimalNeuDat] reitet</li>
+    <li>desc_pawn->[AdjectiveAny] aussieht</li>
+    <li>desc_pawn->mit [GoreDat] bedeckt ist</li>
+    <!-- gender-specific -->
+    <li>eines_Gebietes->eines [TerrainFeatureMasGen]</li>
+    <li>eines_Gebietes->einer [TerrainFeatureFemGen]</li>
+    <li>eines_Gebietes->eines [TerrainFeatureNeuGen]</li>
+    <li>eine_Waffe->einen [WeaponMas]</li>
+    <li>eine_Waffe->eine [WeaponFem]</li>
+    <li>eine_Waffe->ein [WeaponNeu]</li>
+    <li>eine_Kleidung->einen [ApparelMas]</li>
+    <li>eine_Kleidung->eine [ApparelFem]</li>
+    <li>eine_Kleidung->ein [ApparelNeu]</li>
   </TalelessImages.rulePack.rulesStrings>
   
 </LanguageData>

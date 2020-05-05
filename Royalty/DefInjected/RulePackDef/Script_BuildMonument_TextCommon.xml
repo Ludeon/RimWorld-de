@@ -34,16 +34,22 @@
     <li>asker2(askerIsNull==true)->der Archotech</li>
     <li>asker2(asker_factionLeader==True)->[asker_nameDef]</li>
     <li>asker2(asker_royalInCurrentFaction==True)->der [asker_royalTitleInCurrentFaction]</li>
-    <li>buildReason(p=0.5)->um der [PersonalCharacteristic] [asker_possessive]es [PersonFamilyMasGen] zu gedenken</li>
-    <li>buildReason(p=0.5)->um der [PersonalCharacteristic] [asker_possessive]er [PersonFamilyFem] zu gedenken</li>
-    <li>buildReason->um [asker_possessive]er eigenen [PersonalCharacteristic] zu gedenken</li>
-    <li>buildReason->um die [PersonalCharacteristic] [asker_possessive]es Erzfeindes zu beleidigen</li>
-    <li>buildReason->um den Leuten das Gefühl der [AngstyFeeling] zu nehmen</li>
+    <li>buildReason(p=0.5)->um [den_Dingen] [asker_possessive]es [PersonFamilyMasGen] zu gedenken</li>
+    <li>buildReason(p=0.5)->um [den_Dingen] [asker_possessive]er [PersonFamilyFemGen] zu gedenken</li>
+    <li>buildReason(p=0.25)->um [asker_possessive]en eigenen [PersonalCharacteristicsDat] zu gedenken</li>
+    <li>buildReason(p=0.25)->um [asker_possessive]em eigenen [PersonalCharacteristicMas] zu gedenken</li>
+    <li>buildReason(p=0.25)->um [asker_possessive]er eigenen [PersonalCharacteristicFem] zu gedenken</li>
+    <li>buildReason(p=0.25)->um [asker_possessive]em eigenen [PersonalCharacteristicNeu] zu gedenken</li>
+    <li>buildReason(p=0.25)->um die [PersonalCharacteristics] [asker_possessive]es Erzfeindes zu beleidigen</li>
+    <li>buildReason(p=0.25)->um den [PersonalCharacteristicMas] [asker_possessive]es Erzfeindes zu beleidigen</li>
+    <li>buildReason(p=0.25)->um die [PersonalCharacteristicFem] [asker_possessive]es Erzfeindes zu beleidigen</li>
+    <li>buildReason(p=0.25)->um das [PersonalCharacteristicNeu] [asker_possessive]es Erzfeindes zu beleidigen</li>
+    <li>buildReason->um den Leuten die Angst vor [der_Angst] zu nehmen</li>
     <li>buildReason->um der Welt zu zeigen, wie [AdjectiveBadass] [asker_pronoun] ist</li>
     <li>buildReason->um [asker_possessive]en [asker_faction_pawnsPlural] zu gedenken, die im Kampf gefallen sind</li>
     <li>buildReason(p=0.5)->um [asker_possessive]en [PersonFamilyMasAcc] zu ehren</li>
-    <li>buildReason(p=0.5)->um [asker_possessive]e [PersonFamilyFem] zu ehren</li>
-    <li>buildReason->um die Arbeit aller [PersonJobPlural] dieser Welt zu ehren</li>
+    <li>buildReason(p=0.5)->um [asker_possessive]e [PersonFamilyFemAcc] zu ehren</li>
+    <li>buildReason->um die Arbeit aller [PersonJobs] dieser Welt zu ehren</li>
     <li>buildReason->um die Herrlichkeit [asker_possessive][glory] in alle Welt zu tragen</li>
     <li>glory->es Ruhms</li>
     <li>glory->er Kriegerehre</li>
@@ -52,17 +58,16 @@
     <li>glory->es großartigen Schiffes</li>
     <li>glory->es Reichtums</li>
     <li>glory->er Familie</li>
-    <li>AngstyFeeling->Traurigkeit</li>
-    <li>AngstyFeeling->Verzweiflung</li>
-    <li>AngstyFeeling->Depression</li>
-    <li>AngstyFeeling->Hilflosigkeit</li>
-    <li>AngstyFeeling->Leere</li>
-    <li>AngstyFeeling->Einsamkeit</li>
-    <li>AngstyFeeling->Trostlosigkeit</li>
-    <li>AngstyFeeling->Sinnlosigkeit</li>
-    <li>AngstyFeeling->Angst</li>
     <li>failLetterEndingCommon(askerIsNull==true,priority=1)->Die Quest '[resolvedQuestName]' ist fehlgeschlagen.</li>
     <li>failLetterEndingCommon->Die Quest '[resolvedQuestName]' ist fehlgeschlagen.\n\nDeine Beziehung zur Fraktion '[asker_faction_name]' hat sich um [goodwillPenalty] Rufpunkte verschlechtert.</li>
+    <!-- gender-specific -->
+    <li>den_Dingen->den [PersonalCharacteristicsDat]</li>
+    <li>den_Dingen->dem [PersonalCharacteristicMas]</li>
+    <li>den_Dingen->der [PersonalCharacteristicFem]</li>
+    <li>den_Dingen->dem [PersonalCharacteristicNeu]</li>
+    <li>der_Angst->dem [ConceptAngstyMas]</li>
+    <li>der_Angst->der [ConceptAngstyFem]</li>
+    <li>der_Angst->dem [ConceptAngstyNeu]</li>
   </QuestConstructionDescriptionCommon.rulePack.rulesStrings>
   
   <!-- EN:
