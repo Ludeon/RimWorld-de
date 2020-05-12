@@ -45,16 +45,16 @@ trap "rm -rf $WORKDIR" EXIT
 export LANG=de_DE.UTF-8 LC_ALL=de_DE.UTF-8
 
 # List of all words coming from XML
-cat */DefInjected/{PawnKind,Faction,Thing,WorldObject}Def/*.xml */Backstories/*.xml | extract_tag_content | to_lowercase | unique > $WORKDIR/all
+cat */DefInjected/{PawnKind,Faction,Thing,WorldObject,GameCondition}Def/*.xml */Backstories/*.xml | extract_tag_content | to_lowercase | unique > $WORKDIR/all
 
 # Add labelMale* into WordInfo/Gender/Male.txt
 cat */WordInfo/Gender/Male.txt > $WORKDIR/all_males.txt
-cat */DefInjected/{PawnKind,Faction,Thing,WorldObject}Def/*.xml */Backstories/*.xml | extract_tag_male_content >> $WORKDIR/all_males.txt
+cat */DefInjected/{PawnKind,Faction,Thing,WorldObject,GameCondition}Def/*.xml */Backstories/*.xml | extract_tag_male_content >> $WORKDIR/all_males.txt
 cat $WORKDIR/all_males.txt | to_lowercase | clean | unique > Core/WordInfo/Gender/Male.txt
 
 # Add labelFemale* into WordInfo/Gender/Female.txt
 cat */WordInfo/Gender/Female.txt > $WORKDIR/all_females.txt
-cat */DefInjected/{PawnKind,Faction,Thing,WorldObject}Def/*.xml */Backstories/*.xml | extract_tag_female_content >> $WORKDIR/all_females.txt
+cat */DefInjected/{PawnKind,Faction,Thing,WorldObject,GameCondition}Def/*.xml */Backstories/*.xml | extract_tag_female_content >> $WORKDIR/all_females.txt
 cat $WORKDIR/all_females.txt | to_lowercase | clean | unique > Core/WordInfo/Gender/Female.txt
 
 # Clean up WordInfo/Gender/{Neuter,Plural}.txt
