@@ -92,7 +92,7 @@
     <li>r_art_name->Der [ArtworkMas] [Trans] [ANYPAWN_nameIndef]</li>
     <li>r_art_name->Die [ArtworkFem] [Trans] [ANYPAWN_nameIndef]</li>
     <li>r_art_name->Das [ArtworkNeu] [Trans] [ANYPAWN_nameIndef]</li>
-    <li>r_art_name->[ANYPAWN_nameIndef] in [Color]</li>
+    <li>r_art_name->[ANYPAWN_nameIndef] in [ColorCap]</li>
     <li>r_art_name->[ANYPAWN_nameIndef]'s [PersonalCharacteristic]</li>
     <li>r_art_name->[ANYPAWN_nameIndef]'s [PersonalCharacteristics]</li>
     <li>r_art_name->Die [PersonalCharacteristics] [Trans] [ANYPAWN_nameIndef]</li>
@@ -152,24 +152,27 @@
   <NamerArtWeapon.rulePack.rulesStrings>
     <!-- General -->
     <li>r_art_name->[ConceptBadass]</li>
-    <li>r_art_name(p=0.3)->Die [AnimalBadassFem]</li>
-    <li>r_art_name(p=0.5)->Der [AnimalBadassMas]</li>
-    <li>r_art_name(p=0.2)->Das [AnimalBadassNeu]</li>
-    <li>r_art_name(p=0.3)->[AdjectiveBadass]e [AnimalBadassFem]</li>
-    <li>r_art_name(p=0.5)->[AdjectiveBadass]er [AnimalBadassMas]</li>
-    <li>r_art_name(p=0.2)->[AdjectiveBadass]es [AnimalBadassNeu]</li>
-    <li>r_art_name(p=0.3)->[ColorBadass]e [AnimalBadassFem]</li>
-    <li>r_art_name(p=0.5)->[ColorBadass]er [AnimalBadassMas]</li>
-    <li>r_art_name(p=0.2)->[ColorBadass]es [AnimalBadassNeu]</li>
-    <li>r_art_name->[ConceptBadass] [ColorBadass]</li>
+    <li>r_art_name(p=0.33)->Die [AnimalBadassFem]</li>
+    <li>r_art_name(p=0.33)->Der [AnimalBadassMas]</li>
+    <li>r_art_name(p=0.33)->Das [AnimalBadassNeu]</li>
+    <li>r_art_name(p=0.33)->[AdjectiveBadass]e [AnimalBadassFem]</li>
+    <li>r_art_name(p=0.33)->[AdjectiveBadass]er [AnimalBadassMas]</li>
+    <li>r_art_name(p=0.33)->[AdjectiveBadass]es [AnimalBadassNeu]</li>
+    <li>r_art_name(p=0.33)->[ColorBadass]e [AnimalBadassFem]</li>
+    <li>r_art_name(p=0.33)->[ColorBadass]er [AnimalBadassMas]</li>
+    <li>r_art_name(p=0.33)->[ColorBadass]es [AnimalBadassNeu]</li>
+    <li>r_art_name(p=0.33)->[ColorBadass]e [ConceptBadassFem]</li>
+    <li>r_art_name(p=0.33)->[ColorBadass]er [ConceptBadassMas]</li>
+    <li>r_art_name(p=0.33)->[ColorBadass]es [ConceptBadassNeu]</li>
     <!-- Person. High probability; if we can use these we want to -->
+    <li>r_art_name(p=3)->[ANYPAWN_nameIndef]'s [ConceptBadass]</li>
+    <li>r_art_name(p=3)->[ANYPAWN_nameIndef]'s [AnimalBadass]</li>
+    <li>r_art_name(p=3)->[ANYPAWN_nameIndef]'s [PersonBadass]</li>
+    <li>r_art_name(p=3)->[ANYPAWN_nameIndef]'s [PersonAlly]</li>
+    <li>r_art_name(p=3)->[ANYPAWN_nameIndef]'s [PersonFamily]</li>
     <li>r_art_name(p=3)->[ConceptBadass] von [ANYPAWN_nameIndef]</li>
-    <li>r_art_name(p=3)->[AnimalBadass] von [ANYPAWN_nameIndef]</li>
-    <li>r_art_name(p=3)->[PersonBadass] von [ANYPAWN_nameIndef]</li>
-    <li>r_art_name(p=3)->[PersonAlly] von [ANYPAWN_nameIndef]</li>
-    <li>r_art_name(p=3)->[PersonFamily] von [ANYPAWN_nameIndef]</li>
-    <li>r_art_name(p=3)->[ConceptBadass] von [ANYPAWN_nameIndef]</li>
-    <li>r_art_name(p=3)->[ColorBadass] [ANYPAWN_nameIndef]</li>
+    <li>r_art_name(p=1.5,ANYPAWN_gender==Male)->[ColorBadass]er [ANYPAWN_nameIndef]</li>
+    <li>r_art_name(p=1.5,ANYPAWN_gender==Female)->[ColorBadass]e [ANYPAWN_nameIndef]</li>
   </NamerArtWeapon.rulePack.rulesStrings>
   
 </LanguageData>

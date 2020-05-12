@@ -223,11 +223,15 @@
     <li>artextra_clause->[subimageplural] sind im Hintergrund zu sehen</li>
     <li>artextra_clause->[subimagesingle] dominiert den unteren Teil des Bildes</li>
     <!-- Scene is near terrain -->
-    <li>artextra_clause->die Szene spielt inmitten einer [Community]</li>
-    <li>artextra_clause->die Szene scheint sich außerhalb einer [Community] abzuspielen</li>
-    <li>artextra_clause(p=0.33)->die Szene spielt sich in einer [Community] ab, die in der Nähe einer [TerrainFeatureFemGen] gebaut wurde</li>
-    <li>artextra_clause(p=0.33)->die Szene spielt sich in einer [Community] ab, die in der Nähe eines [TerrainFeatureMasGen] gebaut wurde</li>
-    <li>artextra_clause(p=0.33)->die Szene spielt sich in einer [Community] ab, die in der Nähe eines [TerrainFeatureNeuGen] gebaut wurde</li>
+    <li>artextra_clause(p=0.33)->die Szene spielt inmitten eines [CommunityMasGen]</li>
+    <li>artextra_clause(p=0.33)->die Szene spielt inmitten einer [CommunityFemGen]</li>
+    <li>artextra_clause(p=0.33)->die Szene spielt inmitten eines [CommunityNeuGen]</li>
+    <li>artextra_clause(p=0.33)->die Szene scheint sich außerhalb eines [CommunityMasGen] abzuspielen</li>
+    <li>artextra_clause(p=0.33)->die Szene scheint sich außerhalb einer [CommunityFemGen] abzuspielen</li>
+    <li>artextra_clause(p=0.33)->die Szene scheint sich außerhalb eines [CommunityNeuGen] abzuspielen</li>
+    <li>artextra_clause(p=0.33)->die Szene spielt sich in einem [CommunityMasDat] ab, der in der Nähe [eines_Gebietes] gebaut wurde</li>
+    <li>artextra_clause(p=0.33)->die Szene spielt sich in einer [CommunityFemDat] ab, die in der Nähe [eines_Gebietes] gebaut wurde</li>
+    <li>artextra_clause(p=0.33)->die Szene spielt sich in einem [CommunityNeuDat] ab, das in der Nähe [eines_Gebietes] gebaut wurde</li>
     <!-- Pawn in side position -->
     <li>artextra_clause->ein [Character] [idles] [side_position]</li>
     <li>artextra_clause->ein [PAWN_adj]er [Character] [idles] [side_position]</li>
@@ -246,24 +250,28 @@
     <li>subimageany->[subimageplural]</li>
     <li>subimageanyDat->[subimagesingleDat]</li>
     <li>subimageanyDat->[subimagepluralDat]</li>
-    <li>subimagesingle(p=4)->ein [CharacterMas]</li>
-    <li>subimagesingle(p=4)->eine [CharacterFem]</li>
-    <li>subimagesingle(p=4)->ein [CharacterNeu]</li>
-    <li>subimagesingle->eine [TerrainFeatureFem]</li>
-    <li>subimagesingle->einen [TerrainFeatureMas]</li>
-    <li>subimagesingle->ein [TerrainFeatureNeu]</li>
-    <li>subimagesingle->eine [Community]</li>
+    <li>subimagesingle(p=1.33)->ein [CharacterMas]</li>
+    <li>subimagesingle(p=1.33)->eine [CharacterFem]</li>
+    <li>subimagesingle(p=1.33)->ein [CharacterNeu]</li>
+    <li>subimagesingle(p=0.33)->ein [TerrainFeatureMas]</li>
+    <li>subimagesingle(p=0.33)->eine [TerrainFeatureFem]</li>
+    <li>subimagesingle(p=0.33)->ein [TerrainFeatureNeu]</li>
+    <li>subimagesingle(p=0.33)->ein [CommunityMas]</li>
+    <li>subimagesingle(p=0.33)->eine [CommunityFem]</li>
+    <li>subimagesingle(p=0.33)->ein [CommunityNeu]</li>
     <li>subimagesingle->eine [TreeType]</li>
     <li>subimagesingle(p=0.5)->ein [VegetableMas]</li>
     <li>subimagesingle(p=0.5)->eine [VegetableFem]</li>
     <li>subimagesingle->eine [AnimalGroup] von [AnimalsDat]</li>
-    <li>subimagesingleDat(p=4)->einem [CharacterMasDat]</li>
-    <li>subimagesingleDat(p=4)->einer [CharacterFemDat]</li>
-    <li>subimagesingleDat(p=4)->einem [CharacterNeuDat]</li>
-    <li>subimagesingleDat->einer [TerrainFeatureFemDat]</li>
-    <li>subimagesingleDat->einem [TerrainFeatureMasDat]</li>
-    <li>subimagesingleDat->einem [TerrainFeatureNeuDat]</li>
-    <li>subimagesingleDat->einer [Community]</li>
+    <li>subimagesingleDat(p=1.33)->einem [CharacterMasDat]</li>
+    <li>subimagesingleDat(p=1.33)->einer [CharacterFemDat]</li>
+    <li>subimagesingleDat(p=1.33)->einem [CharacterNeuDat]</li>
+    <li>subimagesingleDat(p=0.33)->einem [TerrainFeatureMasDat]</li>
+    <li>subimagesingleDat(p=0.33)->einer [TerrainFeatureFemDat]</li>
+    <li>subimagesingleDat(p=0.33)->einem [TerrainFeatureNeuDat]</li>
+    <li>subimagesingleDat(p=0.33)->einem [CommunityMasDat]</li>
+    <li>subimagesingleDat(p=0.33)->einer [CommunityFemDat]</li>
+    <li>subimagesingleDat(p=0.33)->einem [CommunityNeuDat]</li>
     <li>subimagesingleDat->einer [TreeType]</li>
     <li>subimagesingleDat(p=0.5)->einem [VegetableMas]</li>
     <li>subimagesingleDat(p=0.5)->einer [VegetableFemDat]</li>
@@ -402,6 +410,10 @@
     <li>artstyle_adj->erotisch</li>
     <li>artstyle_adj->sinnlich</li>
     <li>artstyle_adj->herzlich</li>
+    <!-- gender-specific -->
+    <li>eines_Gebietes->eines [TerrainFeatureMasGen]</li>
+    <li>eines_Gebietes->einer [TerrainFeatureFemGen]</li>
+    <li>eines_Gebietes->eines [TerrainFeatureNeuGen]</li>
   </ArtDescriptionUtility_Global.rulePack.rulesStrings>
   
 </LanguageData>
