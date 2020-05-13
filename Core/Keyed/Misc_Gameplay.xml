@@ -362,6 +362,10 @@
   <CreatureWildness>{0} Wildheit</CreatureWildness>
   <!-- EN: {0} trainability -->
   <CreatureTrainability>{0} Trainierbarkeit</CreatureTrainability>
+  <!-- EN: Follow master while drafted -->
+  <CreatureFollowDrafted>Folge Meister im Kampfmodus</CreatureFollowDrafted>
+  <!-- EN: Follow master while doing field work -->
+  <CreatureFollowFieldwork>Folge Meister bei der Feldarbeit</CreatureFollowFieldwork>
   <!-- EN: {0} with {1} -->
   <ProximitySingleGoodwillChange>{0} mit {1}</ProximitySingleGoodwillChange>
   <!-- EN: You can't re-enter for another {0} days. -->
@@ -454,10 +458,16 @@
   <PsychicEntropyPainFocus>{0} Schmerzfokus</PsychicEntropyPainFocus>
   <!-- EN: radius {0} -->
   <ConditionCauserRadius>Radius {0}</ConditionCauserRadius>
+  <!-- EN: low psyfocus -->
+  <LowPsyfocus>wenig Psyfokus</LowPsyfocus>
   <!-- EN: {0} left -->
   <DurationLeft>läuft {0} ab</DurationLeft>
   <!-- EN: Any of -->
   <AnyOf>Beliebige Ressource aus</AnyOf>
+  <!-- EN: Goodwill -->
+  <Goodwill>Ruf</Goodwill>
+  <!-- EN: reducing resistance of {0_nameIndef} -->
+  <JobReport_ReduceResistance>Reduziert Widerstand von {0_nameIndef}.</JobReport_ReduceResistance>
 
   <!-- Scanning -->
   <!-- EN: User scanning speed -->
@@ -466,6 +476,12 @@
   <ScanAverageInterval>Zufallentdeckungsintervall</ScanAverageInterval>
   <!-- EN: Progress to guaranteed find -->
   <ScanningProgressToGuaranteedFind>Fortschritt bis zum garantierten Fund</ScanningProgressToGuaranteedFind>
+  
+  <!-- Meditation focus -->
+  <!-- EN: Meditation focus strength for {LASTUSER_labelShort} -->
+  <UserMeditationFocusStrength>Meditationsfokusstärke für {LASTUSER_labelShort}</UserMeditationFocusStrength>
+  <!-- EN: Focus effect impacted by -->
+  <MeditationFocusImpacted>Fokuseffekt ist beeinflusst durch</MeditationFocusImpacted>
 
   <!-- Fermentation barrel -->
   <!-- EN: Contains {0} / {1} wort. -->
@@ -928,6 +944,8 @@
   <SourceUnknown>Quelle unbekannt</SourceUnknown>
   <!-- EN: Click to jump to the source. -->
   <ClickToJumpToSource>Klicke hier, um zur Quelle zu springen.</ClickToJumpToSource>
+  <!-- EN: Click to jump to the flashstorm. -->
+  <ClickToJumpToFlashstorm>Klicke hier, um zum Blitzsturm zu springen.</ClickToJumpToFlashstorm>
   <!-- EN: Caused by quest: {0} -->
   <CausedByQuest>Verursacht durch Quest: {0}</CausedByQuest>
 
@@ -1216,8 +1234,12 @@
   <PawnTooltipWithPrimaryEquipNoDesc>{0}\n{1}\n{2}</PawnTooltipWithPrimaryEquipNoDesc>
   <!-- EN: {0}\n{1} -->
   <PawnTooltipNoDescNoPrimaryEquip>{0}\n{1}</PawnTooltipNoDescNoPrimaryEquip>
-  <!-- EN: Psychic entropy: {0}/{1}\nFall rate: {2}/{3}s({4}s until zero)\n\nPsychic entropy increases after performing a psycast.\nGoing over the safe limit can lead to long-term health consequences.\nWhenever entropy reaches zero, it leaves a psychic hangover behind. -->
-  <PawnTooltipPsychicEntropy>Psychische Entropie: {0}/{1}\nRückgangsrate: {2}/{3}s({4}s bis Null)\n\nDie psychische Entropie nimmt zu, wenn eine Psykraft gewirkt wird.\nDas Überschreiten des Grenzwertes kann zu langfristigen gesundheitlichen Schäden führen.\nJedes Mal, wenn die Entropie Null erreicht, hinterlässt sie einen psychischen Kater.</PawnTooltipPsychicEntropy>
+  <!-- EN: Psychic entropy: {0} / {1}\nFall rate: {2} / {3}s ({4}s until zero)\n\nPsyfocus: {5} -->
+  <PawnTooltipPsychicEntropyStats>Psychische Entropie: {0} / {1}\nRückgangsrate: {2} / {3}s ({4}s bis Null)\n\nPsyfokus: {5}</PawnTooltipPsychicEntropyStats>
+  <!-- EN: Max entropy multiplier: {0} -->
+  <PawnTooltipPsychicEntropyStatPsyfocusEntropyLimit>Max Entropiemultiplikator: {0}</PawnTooltipPsychicEntropyStatPsyfocusEntropyLimit>
+  <!-- EN: Psychic entropy increases after performing a psycast. Going over the safe limit can lead to long-term health consequences. Whenever entropy reaches zero, it leaves a psychic hangover behind. -->
+  <PawnTooltipPsychicEntropyDesc>Die psychische Entropie nimmt zu, wenn eine Psykraft gewirkt wird. Das Überschreiten des Grenzwertes kann zu langfristigen gesundheitlichen Schäden führen. Jedes Mal, wenn die Entropie Null erreicht, hinterlässt sie einen psychischen Kater.</PawnTooltipPsychicEntropyDesc>
   <!-- EN: Pain focuses the mind, and causes faster recovery from psychic entropy.\n\nPain level: {0}\nBonus to psychic entropy recovery: {1} -->
   <PawnTooltipPsychicEntropyPainFocus>Schmerz fokussiert den Geist und bewirkt, dass die psychische Entropie schneller überwunden wird.\n\nSchmerzniveau: {0}\n\nBonus auf Erholung von psychischer Entropie: {1}</PawnTooltipPsychicEntropyPainFocus>
   <!-- EN: Toggle psychic entropy limiter.\n\nGoing over your psychic entropy limit can cause serious health consequences, including long-term psychic breakdown, and even brain damage for significant overages. The higher over-limit the entropy is, the more dangerous the effects. -->
@@ -1242,6 +1264,12 @@
   <Reward_Items_Caravan>dir Folgendes überreicht (Gesamtwert {1}):\n\n{0}</Reward_Items_Caravan>
   <!-- EN: your faction relations with {0_name} will improve by {1} -->
   <Reward_Goodwill>deine Beziehung zur Fraktion '{0_name}' um {1} Rufpunkte verbessert</Reward_Goodwill>
+  <!-- EN: you will be taken to the stars -->
+  <Reward_PassageOffworld>du wirst in die Sterne geschickt</Reward_PassageOffworld>
+  <!-- EN: Passage offworld -->
+  <Reward_PassageOffworld_Label>Überfahrt von hier weg</Reward_PassageOffworld_Label>
+  <!-- EN: value {0} -->
+  <TotalValue>Wert {0}</TotalValue>
   
   <!-- Bladelink -->
   <!-- EN: Bonded to: {0} -->
@@ -1272,5 +1300,9 @@
   <!-- Condition causers -->
   <!-- EN: Affected gender -->
   <AffectedGender>Betroffenes Geschlecht</AffectedGender>
+
+  <!-- Hediff misc -->
+  <!-- EN: Caused by: {0} -->
+  <CausedByHediff>Verursacht durch: {0}</CausedByHediff>
   
 </LanguageData>
