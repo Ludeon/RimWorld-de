@@ -499,19 +499,23 @@
   <!-- EN: You have concluded the quest '{0}'. -->
   <LetterQuestCompletedConcluded>Du hast die Quest '{0}' beendet.</LetterQuestCompletedConcluded>
 
-  <!-- Quest Completed with average pawn mood -->
-  <!-- EN: You have successfully completed the quest '{0}'!\n\n{asker_nameDef} said {asker_pronoun} was willing to reward quality accomodation. {asker_nameDef}'s average mood was {averageMood} during {asker_possessive} stay, so your goodwill with {faction_name} has increased by {goodwill}. text_todo -->
-  <LetterQuestCompletedWithAvgPawnMoodGoodwillSuccess>Du hast die Quest '{0}' erfolgreich abgeschlossen!\n\n{asker_nameDef} sagte, dass {asker_pronoun} dich für eine qualitativ hochwertige Unterkunft belohnen würde. Die durchschnittliche Stimmung von {asker_nameDef} lag während {asker_possessive}es Aufenthalts bei {averageMood}, daher verbessert sich deine Beziehung zur Fraktion '{faction_name}' um {goodwill} Rufpunkte.</LetterQuestCompletedWithAvgPawnMoodGoodwillSuccess>
-  <!-- EN: You have successfully completed the quest '{0}'!\n\n{asker_nameDef} said {asker_pronoun} was willing to reward quality accomodation. The guests average mood was {averageMood} during their stay, so your goodwill with {faction_name} has increased by {goodwill}. text_todo -->
-  <LetterQuestCompletedWithAvgPawnMoodGoodwillPluralSuccess>Du hast die Quest '{0}' erfolgreich abgeschlossen!\n\n{asker_nameDef} sagte, dass {asker_pronoun} dich für eine qualitativ hochwertige Unterkunft belohnen würde. Die durchschnittliche Stimmung der Gäste lag während ihres Aufenthalts bei {averageMood}, daher verbessert sich deine Beziehung zur Fraktion '{faction_name}' um {goodwill} Rufpunkte.</LetterQuestCompletedWithAvgPawnMoodGoodwillPluralSuccess>
-  <!-- EN: You have successfully completed the quest '{0}'!\n\nWhile {asker_nameDef} was willing to reward quality accomodation, {asker_possessive} average mood was only {averageMood} during {asker_possessive} stay. You will receive no goodwill reward. text_todo -->
-  <LetterQuestCompletedWithoutAvgPawnMoodGoodwillSuccess>Du hast die Quest '{0}' erfolgreich abgeschlossen!\n\n{asker_nameDef} sagte, dass {asker_pronoun} dich für eine qualitativ hochwertige Unterkunft belohnen würde, allerdings lag {asker_possessive}e durchschnittliche Stimmung während {asker_possessive}es Aufenhalts nur bei {averageMood}. Du erhältst keine Rufpunkte.</LetterQuestCompletedWithoutAvgPawnMoodGoodwillSuccess>
-  <!-- EN: You have successfully completed the quest '{0}'!\n\nWhile {asker_nameDef} was willing to reward quality accomodation, the guests average mood was only {averageMood} during their stay. You will receive no goodwill reward. text_todo -->
-  <LetterQuestCompletedWithoutAvgPawnMoodGoodwillPluralSuccess>Du hast die Quest '{0}' erfolgreich abgeschlossen!\n\n{asker_nameDef} sagte, dass {asker_pronoun} dich für eine qualitativ hochwertige Unterkunft belohnen würde, allerdings lag die durchschnittliche Stimmung der Gäste während ihres Aufenhalts nur bei {averageMood}. Du erhältst keine Rufpunkte.</LetterQuestCompletedWithoutAvgPawnMoodGoodwillPluralSuccess>
+  <!-- Average pawn mood -->
+  <!-- EN: {asker_nameDef} said {asker_pronoun} was willing to reward quality accomodation. {pawnLabel} average mood was {averageMood} during {possessive} stay, so your goodwill with {faction_name} has increased by {goodwill}. -->
+  <LetterAveragePawnMoodSuccess>{asker_nameDef} sagte, dass {asker_pronoun} dich für eine qualitativ hochwertige Unterkunft belohnen würde. Die durchschnittliche Stimmung {pawnLabel} lag während {possessive}es Aufenthalts bei {averageMood}, daher verbessert sich deine Beziehung zur Fraktion '{faction_name}' um {goodwill} Rufpunkte.</LetterAveragePawnMoodSuccess>
+  <!-- EN: While {asker_nameDef} was willing to reward quality accomodation, {pawnLabel} average mood was only {averageMood} during {possessive} stay. You will receive no faction goodwill reward. -->
+  <LetterAveragePawnMoodFail>{asker_nameDef} sagte, dass {asker_pronoun} dich für eine qualitativ hochwertige Unterkunft belohnen würde, allerdings lag die durchschnittliche Stimmung {pawnLabel} während {possessive}es Aufenhalts nur bei {averageMood}. Du erhältst keine Rufpunkte.</LetterAveragePawnMoodFail>
+  <!-- EN: the guests -->
+  <LetterAveragePawnMoodPawnPluralLabel>der Gäste</LetterAveragePawnMoodPawnPluralLabel>
+  <!-- EN: {asker_nameDef}'s -->
+  <LetterAveragePawnMoodPawnLabel>von {asker_nameDef}</LetterAveragePawnMoodPawnLabel>
+  <!-- EN: their -->
+  <LetterAveragePawnMoodPossessivePlural>ihr</LetterAveragePawnMoodPossessivePlural>
+  <!-- EN: {asker_possessive} -->
+  <LetterAveragePawnMoodPossessive>{asker_possessive}</LetterAveragePawnMoodPossessive>
 
   <!-- Bladelink -->
-  <!-- EN: Bladelink bond: {PAWN_labelShort} -->
-  <LetterBladelinkWeaponBondedLabel>Bladelink-Bindung: {PAWN_labelShort}</LetterBladelinkWeaponBondedLabel>
+  <!-- EN: Persona bond: {PAWN_labelShort} -->
+  <LetterBladelinkWeaponBondedLabel>Persona-Bindung: {PAWN_labelShort}</LetterBladelinkWeaponBondedLabel>
   <!-- EN: {PAWN_labelShort} has established a bond with the persona of {WEAPON_labelShort}.
 \nFrom now on, {WEAPON_labelShort} will refuse to be wielded by anyone except {PAWN_labelShort}. -->
   <LetterBladelinkWeaponBonded>{PAWN_labelShort} hat eine Bindung mit der Persona von {WEAPON_labelShort} hergestellt.\n\nVon nun an wird {WEAPON_labelShort} sich weigern, von jemand anderem als {PAWN_labelShort} geführt zu werden.</LetterBladelinkWeaponBonded>
