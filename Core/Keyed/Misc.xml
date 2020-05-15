@@ -107,22 +107,22 @@
   <Unlocks>Schaltet frei</Unlocks>
 
   <!-- EN: {0} corpse -->
-  <CorpseLabel>{0} (Leiche)</CorpseLabel>
+  <CorpseLabel>{0_gender ? toter : tote : totes} {0}</CorpseLabel>
   <!-- EN: Dead body of a {0}. -->
-  <CorpseDesc>Toter Körper von {0}.</CorpseDesc>
+  <CorpseDesc>{0_gender ? Ein toter : Eine tote : Ein totes} {0}.</CorpseDesc>
   <!-- EN: {1_label} (dead) -->
-  <DeadLabel>{1_label} (tot)</DeadLabel>
+  <DeadLabel>{1_label} (Leiche)</DeadLabel>
 
   <!-- EN: rough {0} -->
-  <RoughStoneTerrainLabel>Rauer {0}</RoughStoneTerrainLabel>
+  <RoughStoneTerrainLabel>rauer {0}</RoughStoneTerrainLabel>
   <!-- EN: Rough, natural {0} ground. -->
   <RoughStoneTerrainDesc>Rauer, natürlicher Boden aus {0}.</RoughStoneTerrainDesc>
   <!-- EN: rough-hewn {0} -->
-  <RoughHewnStoneTerrainLabel>Grob behauener {0}</RoughHewnStoneTerrainLabel>
+  <RoughHewnStoneTerrainLabel>grob behauener {0}</RoughHewnStoneTerrainLabel>
   <!-- EN: Roughly cut natural {0} floor. -->
   <RoughHewnStoneTerrainDesc>Grob geschnittener Boden aus {0}.</RoughHewnStoneTerrainDesc>
   <!-- EN: smooth {0} -->
-  <SmoothStoneTerrainLabel>Glatter {0}</SmoothStoneTerrainLabel>
+  <SmoothStoneTerrainLabel>glatter {0}</SmoothStoneTerrainLabel>
   <!-- EN: Smoothed natural {0} floor. -->
   <SmoothStoneTerrainDesc>Geglätteter, natürlicher Boden aus {0}.</SmoothStoneTerrainDesc>
 
