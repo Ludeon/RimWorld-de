@@ -10,20 +10,43 @@
     <li>singleThingDescriptionOptional-></li>
   </OpportunitySite_BanditCamp.questDescriptionRules.rulesStrings>
   <!-- EN:
-    <li>questName->[asker_nameDef]'s Camp Bounty</li>
-    <li>questName->Camp of [enemyFaction_pawnsPlural]</li>
-    <li>questName->The Bandit Camp</li>
-    <li>questName->The Raider Camp</li>
-    <li>questName->Destroy the Camp</li>
-    <li>questName->Helping [asker_nameDef]</li>
+    <li>questName->The [bandit] [camp]</li>
+    <li>questName->[bandit] [camp]</li>
+    <li>questName->[asker_nameDef] and the [camp]</li>
+    <li>camp->Camp</li>
+    <li>camp->Outpost</li>
+    <li>camp->Lair</li>
+    <li>camp->Encampment</li>
+    <li>bandit->Bandit</li>
+    <li>bandit->Raider</li>
+    <li>bandit->Outlaw</li>
+    <li>bandit->Desperado</li>
+    <li>bandit->Fugitive</li>
+    <li>bandit->Marauder</li>
+    <li>bandit->Robber</li>
+    <li>bandit->Brigand</li>
   -->
   <OpportunitySite_BanditCamp.questNameRules.rulesStrings>
-    <li>questName->Lagerbelohnung von [asker_nameDef]</li>
-    <li>questName->Lager der [enemyFaction_pawnsPlural]</li>
-    <li>questName->Das Banditenlager</li>
-    <li>questName->Das Räuberlager</li>
-    <li>questName->Zerstöre das Lager</li>
-    <li>questName->Hilf [asker_nameDef]</li>
+    <li>questName->Der [bandit][camp_mas_low]</li>
+    <li>questName->Das [bandit][camp_neu_low]</li>
+    <li>questName->[bandit][camp_mas_low]</li>
+    <li>questName->[bandit][camp_neu_low]</li>
+    <li>questName->[asker_nameDef] und der [camp_mas]</li>
+    <li>questName->[asker_nameDef] und das [camp_neu]</li>
+    <li>camp_neu->Lager</li>
+    <li>camp_mas->Außenposten</li>
+    <li>camp_neu->Versteck</li>
+    <li>camp_neu_low->lager</li>
+    <li>camp_mas_low->außenposten</li>
+    <li>camp_neu_low->versteck</li>
+    <li>bandit->Banditen</li>
+    <li>bandit->Plünderer</li>
+    <li>bandit->Gesetzlosen</li>
+    <li>bandit->Schurken</li>
+    <li>bandit->Flüchtlings</li>
+    <li>bandit->Marodeur</li>
+    <li>bandit->Räuber</li>
+    <li>bandit->Gauner</li>
   </OpportunitySite_BanditCamp.questNameRules.rulesStrings>
   <!-- EN: Quest expired: [resolvedQuestName] -->
   <OpportunitySite_BanditCamp.LetterLabelQuestExpired.slateRef>Quest abgelaufen: [resolvedQuestName]</OpportunitySite_BanditCamp.LetterLabelQuestExpired.slateRef>
@@ -31,8 +54,8 @@
   <OpportunitySite_BanditCamp.LetterTextQuestExpired.slateRef>Das Banditenlager ist abgebaut und weitergezogen. Die Quest [resolvedQuestName] ist abgelaufen.</OpportunitySite_BanditCamp.LetterTextQuestExpired.slateRef>
   <!-- EN: Quest failed: [resolvedQuestName] -->
   <OpportunitySite_BanditCamp.LetterLabelQuestFailed.slateRef>Quest fehlgeschlagen: [resolvedQuestName]</OpportunitySite_BanditCamp.LetterLabelQuestFailed.slateRef>
-  <!-- EN: The bandit camp has packed up and moved on. -->
-  <OpportunitySite_BanditCamp.LetterTextQuestFailed.slateRef>Das Banditenlager ist abgebaut und weitergezogen.</OpportunitySite_BanditCamp.LetterTextQuestFailed.slateRef>
+  <!-- EN: After being discovered, the bandit camp has dispersed. The quest [resolvedQuestName] has ended. -->
+  <OpportunitySite_BanditCamp.LetterTextQuestFailed.slateRef>Das Banditenlager hat sich aufgelöst, nachdem es entdeckt wurde. Die Quest '[resolvedQuestName]' wurde beendet.</OpportunitySite_BanditCamp.LetterTextQuestFailed.slateRef>
   <!-- EN: Payment arrived -->
   <OpportunitySite_BanditCamp.LetterLabelPaymentArrived.slateRef>Bezahlung ist eingetroffen</OpportunitySite_BanditCamp.LetterLabelPaymentArrived.slateRef>
   <!-- EN: You have defeated the bandit camp!\n\nThe payment from [asker_faction_name] has arrived. -->

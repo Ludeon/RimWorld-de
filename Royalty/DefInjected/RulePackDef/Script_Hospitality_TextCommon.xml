@@ -8,14 +8,13 @@
     <li>lodgersLabelSingOrPluralDef(lodgersCount==1)->[lodgers0_nameDef]</li>
     <li>lodgersLabelSingOrPluralDef(lodgersCount>=2)->the [lodgersLabelPlural]</li>
     <li>healthInfo-></li>
-    <li>healthInfo(lodgersAreComatose==true,lodgersHaveBloodRot==false,lodgersCount==1,priority=1)->\n\n[lodgersLabelSingOrPluralDef] is in a coma and must be kept in bed.</li>
-    <li>healthInfo(lodgersAreComatose==true,lodgersHaveBloodRot==false,lodgersCount>=2,priority=1)->\n\n[lodgersLabelSingOrPluralDef] are comatose and need to be kept in bed.</li>
-    <li>healthInfo(lodgersHaveBloodRot==true,lodgersAreComatose==false,lodgersCount==1,priority=1)->\n\n[lodgersLabelSingOrPluralDef] is sick with blood rot.</li>
-    <li>healthInfo(lodgersHaveBloodRot==true,lodgersAreComatose==false,lodgersCount>=2,priority=1)->\n\n[lodgersLabelSingOrPluralDef] are sick with blood rot.</li>
-    <li>healthInfo(lodgersAreComatose==true,lodgersHaveBloodRot==true,lodgersCount==1,priority=1)->\n\n[lodgersLabelSingOrPluralDef] is in a coma and must be kept in bed. [lodgersLabelSingOrPluralDef] is also sick with blood rot.</li>
-    <li>healthInfo(lodgersAreComatose==true,lodgersHaveBloodRot==true,lodgersCount>=2,priority=1)->\n\n[lodgersLabelSingOrPluralDef] are comatose and need to be kept in bed. They are also sick with blood rot.</li>
+    <li>healthInfo(lodgersAreParalyzed==true,lodgersHaveBloodRot==true,priority=1)->\n\n[paralyzedInfo] [bloodRotInfo]</li>
+    <li>healthInfo(lodgersAreParalyzed==true,lodgersHaveBloodRot==false,priority=1)->\n\n[paralyzedInfo]</li>
+    <li>healthInfo(lodgersAreParalyzed==false,lodgersHaveBloodRot==true,priority=1)->\n\n[bloodRotInfo]</li>
+    <li>paralyzedInfo->[lodgersLabelSingOrPluralDef] [areIs] suffering from paralytic abasia and must be kept in bed.</li>
+    <li>bloodRotInfo->[lodgersLabelSingOrPluralDef] [areIs] sick with blood rot and will require daily treatment.</li>
     <li>minMoodInfo-></li>
-    <li>minMoodInfo(lodgersCountWithMoodThreshold>0,priority=1)->\n\nyou must keep [lodgersLabelSingOrPluralDef]'s mood above [lodgersMoodThreshold_percent].</li>
+    <li>minMoodInfo(lodgersCountWithMoodThreshold>0,priority=1)->\n\nyou must keep the mood of [lodgersLabelSingOrPluralDef] above [lodgersMoodThreshold_percent].</li>
     <li>workInfo-></li>
     <li>workInfo(lodgersWillNotWork==true,priority=1)->\n\n[lodgersLabelSingOrPluralDef] will not do any work.</li>
     <li>commonDescEnding->[helpersParagraph][shuttleWillComeParagraph]</li>
@@ -44,6 +43,8 @@
     <li>lodgersHasHave(lodgersCount>=2)->have</li>
     <li>lodgersObjective(lodgersCount==1)->[lodgers0_objective]</li>
     <li>lodgersObjective(lodgersCount>=2)->them</li>
+    <li>areIs(lodgersCount==1)->is</li>
+    <li>areIs(lodgersCount>=2)->are</li>
     <li>remainingWillNowLeave(lodgersCount==1)-></li>
     <li>remainingWillNowLeave(lodgersCount>=2)->Any remaining [lodgersLabelPlural] will now leave. </li>
     <li>failLetterEndingCommon(askerIsNull==true,priority=1)->You have failed the quest '[resolvedQuestName]'.</li>
@@ -58,12 +59,13 @@
     <li>lodgersLabelSingOrPluralDefDat(lodgersCount==1)->von [lodgers0_nameDef]</li>
     <li>lodgersLabelSingOrPluralDefDat(lodgersCount>=2)->der [lodgersLabelPlural]</li>
     <li>healthInfo-></li>
-    <li>healthInfo(lodgersAreComatose==true,lodgersHaveBloodRot==false,lodgersCount==1,priority=1)->\n\n[lodgersLabelSingOrPluralDef] ist komatös und muss im Bett bleiben.</li>
-    <li>healthInfo(lodgersAreComatose==true,lodgersHaveBloodRot==false,lodgersCount>=2,priority=1)->\n\n[lodgersLabelSingOrPluralDef] sind komatös und müssen im Bett bleiben.</li>
-    <li>healthInfo(lodgersHaveBloodRot==true,lodgersAreComatose==false,lodgersCount==1,priority=1)->\n\n[lodgersLabelSingOrPluralDef] ist an Blutfäule erkrankt.</li>
-    <li>healthInfo(lodgersHaveBloodRot==true,lodgersAreComatose==false,lodgersCount>=2,priority=1)->\n\n[lodgersLabelSingOrPluralDef] sind an Blutfäule erkrankt.</li>
-    <li>healthInfo(lodgersAreComatose==true,lodgersHaveBloodRot==true,lodgersCount==1,priority=1)->\n\n[lodgersLabelSingOrPluralDef] ist komatös und muss im Bett bleiben. [lodgersLabelSingOrPluralDef] ist zudem an Blutfäule erkrankt.</li>
-    <li>healthInfo(lodgersAreComatose==true,lodgersHaveBloodRot==true,lodgersCount>=2,priority=1)->\n\n[lodgersLabelSingOrPluralDef] sind komatös und müssen im Bett bleiben. Sie sind zudem an Blutfäule erkrankt.</li>
+    <li>healthInfo(lodgersAreParalyzed==true,lodgersHaveBloodRot==true,priority=1)->\n\n[paralyzedInfo] [bloodRotInfo]</li>
+    <li>healthInfo(lodgersAreParalyzed==true,lodgersHaveBloodRot==false,priority=1)->\n\n[paralyzedInfo]</li>
+    <li>healthInfo(lodgersAreParalyzed==false,lodgersHaveBloodRot==true,priority=1)->\n\n[bloodRotInfo]</li>
+    <li>paralyzedInfo(lodgersCount==1)->[lodgersLabelSingOrPluralDef] leidet an paralytischer Abasie und muss zu Bett gebracht werden.</li>
+    <li>paralyzedInfo(lodgersCount>=2)->[lodgersLabelSingOrPluralDef] leiden an paralytischer Abasie und müssen zu Bett gebracht werden.</li>
+    <li>bloodRotInfo(lodgersCount==1)->[lodgersLabelSingOrPluralDef] ist an Blutfäule erkrankt und muss täglich behandelt werden.</li>
+    <li>bloodRotInfo(lodgersCount>=2)->[lodgersLabelSingOrPluralDef] sind an Blutfäule erkrankt und müssen täglich behandelt werden.</li>
     <li>minMoodInfo-></li>
     <li>minMoodInfo(lodgersCountWithMoodThreshold>0,priority=1)->\n\ndu musst dafür sorgen, dass die Stimmung [lodgersLabelSingOrPluralDefDat] über [lodgersMoodThreshold_percent] bleibt.</li>
     <li>workInfo-></li>
