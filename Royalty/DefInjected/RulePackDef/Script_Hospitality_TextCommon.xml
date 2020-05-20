@@ -17,7 +17,7 @@
     <li>minMoodInfo(lodgersCountWithMoodThreshold>0,priority=1)->\n\nyou must keep the mood of [lodgersLabelSingOrPluralDef] above [lodgersMoodThreshold_percent].</li>
     <li>workInfo-></li>
     <li>workInfo(lodgersWillNotWork==true,priority=1)->\n\n[lodgersLabelSingOrPluralDef] will not do any work.</li>
-    <li>commonDescEnding->[helpersParagraph][shuttleWillComeParagraph]</li>
+    <li>commonDescEnding->[helpersParagraph]</li>
     <li>enemyGroupsParagraph->[threatDescriptionParagraph]</li>
     <li>threatDescriptionParagraph(threatType==Raids,threatCount==1,threatSize==1)->there will be a raid of roughly this size:\n\n[threatExample]</li>
     <li>threatDescriptionParagraph(threatType==Raids,threatCount==1,threatSize>1)->there will be a raid of strength [threatSize]x and roughly this size:\n\n[threatExample]</li>
@@ -27,8 +27,6 @@
     <li>threatDescriptionParagraph(threatType==MechClusters,threatCount==2,threatSize==1)->two mech clusters will deploy nearby.</li>
     <li>threatDescriptionParagraph(threatType==MechClusters,threatCount==1,threatSize>1)->a mech cluster of [threatSize]x size will deploy nearby.</li>
     <li>threatDescriptionParagraph(threatType==MechClusters,threatCount==2,threatSize>1)->two mech clusters of [threatSize]x size will deploy nearby.</li>
-    <li>shuttleWillComeParagraph(lodgersCount==1)->After [shuttleDelayTicks_duration], a shuttle will arrive to collect [lodgers0_nameDef].</li>
-    <li>shuttleWillComeParagraph(lodgersCount>=2)->After [shuttleDelayTicks_duration], a shuttle will arrive to collect the [lodgersLabelPlural].</li>
     <li>threatsInfoMechClustersSingleHuman->[lodgers0_nameDef] recently [mechViolation], and has been targeted by an orbiting mechanoid swarm.</li>
     <li>threatsInfoMechClustersMultiPrisoners->The prisoners recently [mechViolation], and have been targeted by an orbiting mechanoid swarm.</li>
     <li>threatsInfoMechRaidsSingleHuman->[lodgers0_nameDef] recently [mechViolation], and has been targeted by a mechanoid hive.</li>
@@ -71,7 +69,7 @@
     <li>workInfo-></li>
     <li>workInfo(lodgersWillNotWork==true,lodgersCount==1,priority=1)->\n\n[lodgersLabelSingOrPluralDef] verweigert jegliche Arbeit.</li>
     <li>workInfo(lodgersWillNotWork==true,lodgersCount>=2,priority=1)->\n\n[lodgersLabelSingOrPluralDef] verweigern jegliche Arbeit.</li>
-    <li>commonDescEnding->[helpersParagraph][shuttleWillComeParagraph]</li>
+    <li>commonDescEnding->[helpersParagraph]</li>
     <li>enemyGroupsParagraph->[threatDescriptionParagraph]</li>
     <li>threatDescriptionParagraph(threatType==Raids,threatCount==1,threatSize==1)->wird ein Überfall in folgender Größenordnung stattfinden:\n\n[threatExample]</li>
     <li>threatDescriptionParagraph(threatType==Raids,threatCount==1,threatSize>1)->wird ein Überfall mit [threatSize]-facher Stärke und in folgender Größenordnung stattfinden:\n\n[threatExample]</li>
@@ -81,8 +79,6 @@
     <li>threatDescriptionParagraph(threatType==MechClusters,threatCount==2,threatSize==1)->werden zwei Mech-Cluster in der Nähe landen.</li>
     <li>threatDescriptionParagraph(threatType==MechClusters,threatCount==1,threatSize>1)->wird ein Mech-Cluster von [threatSize]-facher Größe in der Nähe landen.</li>
     <li>threatDescriptionParagraph(threatType==MechClusters,threatCount==2,threatSize>1)->werden zwei Mech-Cluster von [threatSize]-facher Größe in der Nähe landen.</li>
-    <li>shuttleWillComeParagraph(lodgersCount==1)->Nach [shuttleDelayTicks_duration] wird ein Shuttle eintreffen, um [lodgers0_nameDef] abzuholen.</li>
-    <li>shuttleWillComeParagraph(lodgersCount>=2)->Nach [shuttleDelayTicks_duration] wird ein Shuttle eintreffen, um die [lodgersLabelPlural] abzuholen.</li>
     <li>threatsInfoMechClustersSingleHuman->[lodgers0_nameDef] hat [recently] [mechViolation], und ist seitdem im Fadenkreuz eines im Orbit befindlichen Mechanoidenschwarms.</li>
     <li>threatsInfoMechClustersMultiPrisoners->Die Gefangenen haben [recently] [mechViolation], und sind seitdem im Fadenkreuz eines im Orbit befindlichen Mechanoidenschwarms.</li>
     <li>threatsInfoMechRaidsSingleHuman->[lodgers0_nameDef] hat [recently] [mechViolation], und ist seitdem im Fadenkreuz eines Mechanoidennestes.</li>
