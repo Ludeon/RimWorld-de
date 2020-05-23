@@ -8,9 +8,9 @@
     <li>lodgersLabelSingOrPluralDef(lodgersCount==1)->[lodgers0_nameDef]</li>
     <li>lodgersLabelSingOrPluralDef(lodgersCount>=2)->the [lodgersLabelPlural]</li>
     <li>healthInfo-></li>
-    <li>healthInfo(lodgersAreParalyzed==true,lodgersHaveBloodRot==true,priority=1)->\n\n[paralyzedInfo]\n\n[bloodRotInfo]</li>
-    <li>healthInfo(lodgersAreParalyzed==true,lodgersHaveBloodRot==false,priority=1)->\n\n[paralyzedInfo]</li>
-    <li>healthInfo(lodgersAreParalyzed==false,lodgersHaveBloodRot==true,priority=1)->\n\n[bloodRotInfo]</li>
+    <li>healthInfo(lodgersHaveBloodRotAndParalysis==true,priority=1)->\n\n[paralyzedInfo]\n\n[bloodRotInfo]</li>
+    <li>healthInfo(lodgersAreParalyzed==true,priority=1)->\n\n[paralyzedInfo]</li>
+    <li>healthInfo(lodgersHaveBloodRot==true,priority=1)->\n\n[bloodRotInfo]</li>
     <li>paralyzedInfo->[lodgersLabelSingOrPluralDef] [areIs] suffering from paralytic abasia and must be kept in bed.</li>
     <li>bloodRotInfo->[lodgersLabelSingOrPluralDef] [areIs] sick with blood rot and will require daily treatment. The disease can be slowed with high-quality care and medicine, but generally cannot be cured outright. If the disease becomes severe [lodgersLabelSingOrPluralDef] will die, so ensure you have the necessary medical supplies.</li>
     <li>minMoodInfo-></li>
@@ -57,9 +57,9 @@
     <li>lodgersLabelSingOrPluralDefDat(lodgersCount==1)->von [lodgers0_nameDef]</li>
     <li>lodgersLabelSingOrPluralDefDat(lodgersCount>=2)->der [lodgersLabelPlural]</li>
     <li>healthInfo-></li>
-    <li>healthInfo(lodgersAreParalyzed==true,lodgersHaveBloodRot==true,priority=1)->\n\n[paralyzedInfo]\n\n[bloodRotInfo]</li>
-    <li>healthInfo(lodgersAreParalyzed==true,lodgersHaveBloodRot==false,priority=1)->\n\n[paralyzedInfo]</li>
-    <li>healthInfo(lodgersAreParalyzed==false,lodgersHaveBloodRot==true,priority=1)->\n\n[bloodRotInfo]</li>
+    <li>healthInfo(lodgersHaveBloodRotAndParalysis==true,priority=1)->\n\n[paralyzedInfo]\n\n[bloodRotInfo]</li>
+    <li>healthInfo(lodgersAreParalyzed==true,priority=1)->\n\n[paralyzedInfo]</li>
+    <li>healthInfo(lodgersHaveBloodRot==true,priority=1)->\n\n[bloodRotInfo]</li>
     <li>paralyzedInfo(lodgersCount==1)->[lodgersLabelSingOrPluralDef] leidet an paralytischer Abasie und muss zu Bett gebracht werden.</li>
     <li>paralyzedInfo(lodgersCount>=2)->[lodgersLabelSingOrPluralDef] leiden an paralytischer Abasie und müssen zu Bett gebracht werden.</li>
     <li>bloodRotInfo(lodgersCount==1)->[lodgersLabelSingOrPluralDef] ist an Blutfäule erkrankt und muss täglich behandelt werden. Die Erkrankung kann mit hochqualitativer Behandlung und Medizin zwar verlangsamt, aber grundsätzlich nicht ganz geheilt werden. Wenn die Erkrankung schwere Ausmaße annimmt, wird [lodgersLabelSingOrPluralDef] sterben, also vergewissere sich, dass du genügend Medizin vorrätig hast.</li>

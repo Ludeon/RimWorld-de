@@ -234,8 +234,6 @@
   <Stat_Thing_Surgery_SuccessChanceFactor_CantFail_Desc>Die Durchführung dieser Operation ist für den Patienten sicher.</Stat_Thing_Surgery_SuccessChanceFactor_CantFail_Desc>
   <!-- EN: The chance the patient will die upon failure of this surgery. -->
   <Stat_Thing_Surgery_DeathOnFailChance_Desc>Die Chance, dass der Patient bei einer fehlgeschlagenen Operation stirbt.</Stat_Thing_Surgery_DeathOnFailChance_Desc>
-  <!-- EN: The addictiveness of this drug. -->
-  <Stat_Thing_Drug_Addictiveness_Desc>Die Chance, dass diese Droge süchtig macht.</Stat_Thing_Drug_Addictiveness_Desc>
   <!-- EN: Total bleed factor -->
   <Stat_Hediff_TotalBleedFactor_Name>Gesamt-Blutungsfaktor</Stat_Hediff_TotalBleedFactor_Name>
   <!-- EN: A multiplier applied to the overall rate of blood loss. -->
@@ -288,5 +286,41 @@
   <Stat_Thing_Biocoded_Name>Biokodierung</Stat_Thing_Biocoded_Name>
   <!-- EN: This item has been coded to only accept a particular individual's bio-signature. -->
   <Stat_Thing_Biocoded_Desc>Dieses Objekt wurde kodiert und akzeptiert nur die Biosignatur einer bestimmten Person.</Stat_Thing_Biocoded_Desc>
+
+  <!-- Drugs -->
+  <!-- EN: The active chemical in this.\n\nIn some cases, the same chemical is present in multiple different drugs. These different drugs will satisfy the same addiction in different ways. -->
+  <Stat_Thing_Drug_Chemical_Desc>Die aktive Chemikalie in dieser Droge.\n\nEs gibt mehrere Arten von Drogen, die dieselbe Chemikalie enthalten. Sie befriedigen die gleiche Sucht auf unterschiedliche Weise.</Stat_Thing_Drug_Chemical_Desc>
+  <!-- EN: The intensity of high gained per dose of this drug. -->
+  <Stat_Thing_Drug_HighGainPerDose_Desc>Die Intensität des Rausches nach Einnahme einer Dosis von dieser Droge.</Stat_Thing_Drug_HighGainPerDose_Desc>
+  <!-- EN: How much this drug's high will decay each day. -->
+  <Stat_Thing_Drug_HighFallPerDay_Desc>Wie stark sich der Rausch dieser Droge pro Tag wieder verflüchtigt.</Stat_Thing_Drug_HighFallPerDay_Desc>
+  <!-- EN: How long this drug's high will last per dose.\n\nThis is calculated from the high gained per dose and the high fall rate. -->
+  <Stat_Thing_Drug_HighDurationPerDose_Desc>Wie lange der Rausch dieser Droge pro Dosis anhält.\n\nDieser Wert errechnet sich aus dem Rauschgewinn pro Dosis und der Rauschrückgangsrate.</Stat_Thing_Drug_HighDurationPerDose_Desc>
+  <!-- EN: How much a user's tolerance to the chemical will increase for each dose of this drug.\n\nThis can be different for different forms of the same chemical. -->
+  <Stat_Thing_Drug_ToleranceGainPerDose_Desc>Wie stark sich die Toleranz eines Konsumenten gegenüber der Chemikalie jedes Mal erhöht, wenn er diese Droge einnimmt.\n\nDieser Wert kann für Drogen mit selber Chemikalie unterschiedlich hoch sein.</Stat_Thing_Drug_ToleranceGainPerDose_Desc>
+  <!-- EN: How much a user's tolerance to the chemical will fall per day. -->
+  <Stat_Thing_Drug_ToleranceFallPerDay_Desc>Wie stark die Toleranz eines Konsumenten gegenüber der Chemikalie pro Tag sinkt.</Stat_Thing_Drug_ToleranceFallPerDay_Desc>
+  <!-- EN: The minimum tolerance required to become newly addicted to this drug.\n\nIf a user is below this tolerance level, they can't become newly addicted from taking a dose. -->
+  <Stat_Thing_Drug_MinToleranceForAddiction_Desc>Die minimale Toleranz, die erforderlich ist, um erneut von dieser Droge süchtig zu werden.\n\nWenn ein Konsument unter dieser Toleranzgrenze liegt, kann er nach Einnahme einer Dosis nicht erneut süchtig werden.</Stat_Thing_Drug_MinToleranceForAddiction_Desc>
+  <!-- EN: A user will never become addicted if they never take the drug more often than this.\n\nThis is calculated from the drug's minimum tolerance to addict, the tolerance gain per dose, and the rate of tolerance decay.\n\nNote that some drugs don't have a safe interval. Such drugs can addict on any dose, even the first one. -->
+  <Stat_Thing_Drug_SafeDoseInterval_Desc>Ein Konsument wird nie süchtig, wenn er die Droge nie öfter als wie hier angegeben einnimmt.\n\nDieser Wert errechnet sich aus der Mindesttoleranz für neue Sucht, dem Toleranzanstieg pro Dosis und der Toleranzrückgangsrate.\n\nBeachte, dass einige Drogen kein sicheres Intervall haben. Solche Drogen können schon nach der ersten Dosis süchtig machen.</Stat_Thing_Drug_SafeDoseInterval_Desc>
+  <!-- EN: The chance of a random overdose when taking this drug. Random overdoses can happen on any dose, whether it's a new user's first try or an experienced addict's hundredth hit. -->
+  <Stat_Thing_Drug_RandomODChance_Desc>Die Chance einer zufälligen Überdosierung nach Einnahme dieser Droge. Zufällige Überdosierungen können bei jeder Dosis auftreten, egal wie oft diese Droge bereits eingenommen wurde oder wie erfahren der Konsument ist.</Stat_Thing_Drug_RandomODChance_Desc>
+  <!-- EN: The chance of addiction per dose of this drug.\n\nIf the drug has a minimum tolerance to addict, the tolerance must be above that level for this to apply. If there is no minimum tolerance, any dose can cause an addiction. -->
+  <Stat_Thing_Drug_Addictiveness_Desc>Die Chance, dass eine Dosis dieser Droge süchtig macht.\n\nHat die Droge eine Mindesttoleranz für neue Sucht, wird man nur süchtig, wenn die Toleranz über diesem Wert liegt. Wenn es keine Mindesttoleranz gibt, kann jede Dosis eine Sucht verursachen.</Stat_Thing_Drug_Addictiveness_Desc>
+  <!-- EN: New addictions caused by this drug begin at this severity level.\n\nTaking more of the drug will increase addiction severity, while time will reduce it. -->
+  <Stat_Thing_Drug_AddictionSeverityInitial_Desc>Neue von dieser Droge verursachte Abhängigkeiten beginnen bei diesem Schweregrad.\n\nJe mehr von der Droge eingenommen wird, desto größer wird der Schweregrad der Abhängigkeit. Der Schweregrad sinkt aber wieder im Laufe der Zeit.</Stat_Thing_Drug_AddictionSeverityInitial_Desc>
+  <!-- EN: How long it takes to recover from an initial addiction to this drug.\n\nThis is be calculated from the new addiction severity divided by the rate of addiction recovery. An addiction which has been fed will take longer. -->
+  <Stat_Thing_Drug_AddictionRecoveryTime_Desc>Wie lange es dauert, sich von einer beginnenden Drogensucht zu erholen.\n\nDieser Wert errechnet sich aus dem anfänglichen Suchtschweregrad geteilt durch die Suchterholungsrate. Eine Sucht, die befriedigt wurde, dauert länger an.</Stat_Thing_Drug_AddictionRecoveryTime_Desc>
+  <!-- EN: How much severity is added to an existing addiction for each dose of this drug.\n\nAddiction severity cannot go above 100%. -->
+  <Stat_Thing_Drug_AddictionSeverityPerDose_Desc>Wie viel Schweregrad zu einer bestehenden Sucht hinzugefügt wird, nachdem eine Dosis dieser Droge eingenommen wurde.\n\nDer Schweregrad der Sucht kann nicht über 100% hinausgehen.</Stat_Thing_Drug_AddictionSeverityPerDose_Desc>
+  <!-- EN: How often an addict needs to take a dose of this drug to feed the addiction and prevent withdrawal.\n\nThis is calculated from the addiction need fall rate and the need fill per dose. -->
+  <Stat_Thing_Drug_AddictionNeedDoseInterval_Desc>Wie oft ein Süchtiger eine Dosis dieser Droge einnehmen muss, um die Sucht zu befriedigen und einen Entzug zu verhindern.\n\nDieser Wert errechnet sich aus der Suchtrückgangsrate und der Suchtbefriedigung pro Dosis.</Stat_Thing_Drug_AddictionNeedDoseInterval_Desc>
+  <!-- EN: How much each dose of this drug fills an addict's need for the chemical. -->
+  <Stat_Thing_Drug_AddictionNeedOffset_Desc>Wie viel jede Dosis dieser Droge die Chemikaliensucht eines Süchtigen befriedigt.</Stat_Thing_Drug_AddictionNeedOffset_Desc>
+  <!-- EN: How quickly an addict's need for the chemical will fall. -->
+  <Stat_Thing_Drug_AddictionNeedFallRate_Desc>Wie schnell die Chemikaliensucht eines Süchtigen zurückgeht.</Stat_Thing_Drug_AddictionNeedFallRate_Desc>
+  <!-- EN: The market value of drugs that must be consumed per day to support an addiction to this drug without going into withdrawal.\n\nThis value is calculated from the addict's chemical need per dose, the need fall rate, and the market value of this drug.\n\nNote that there may be other ways to get the same chemical with different costs. -->
+  <Stat_Thing_Drug_AddictionCost_Desc>Der Marktwert von Drogen, die pro Tag konsumiert werden müssen, um eine Sucht dieser Droge zu finanzieren, ohne in den Entzug zu gehen.\n\nDieser Wert errechnet sich aus der Suchtbefriedung pro Dosis, der Suchtrückgangsrate und dem Marktwert dieser Droge.\n\nBeachte, dass die Chemikalie auch über andere Wege bezogen werden kann - vielleicht sogar kostengünstiger.</Stat_Thing_Drug_AddictionCost_Desc>
 
 </LanguageData>
