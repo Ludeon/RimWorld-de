@@ -2,49 +2,34 @@
 <LanguageData>
   
   <!-- EN:
-    <li>questDescription->[asker_nameFull], a [asker_royalTitleInCurrentFaction] of [asker_faction_name] is calling from nearby. [asker_pronoun] is being followed by an angry [animalKindDef_label]! [asker_pronoun] says [asker_pronoun] only wanted to see the landscape on a quick walk, and never expected such a deadly threat.\n\n[asker_nameDef] wants you to keep [asker_objective] safe at [map_definite] for a few hours until [asker_possessive] shuttle can come pick [asker_objective] up. [asker_pronoun] promises not to be offended by your body odors or lack of manners.\n\n[asker_pronoun] will bestow [royalFavorReward] [asker_faction_royalFavorLabel] on whoever accepts this quest. This is enough favor to receive the royal title of Yeoman, and all benefits that come with it - including a psylink neuroformer.</li>
+    <li>questDescription->[asker_nameFull], a [asker_royalTitleInCurrentFaction] of [asker_faction_name] is calling from nearby. [asker_possessive] guards were killed in an ambush. [asker_pronoun] escaped, but is now being followed by a manhunting [animalKindDef_label].\n\n[asker_nameDef] wants you to keep [asker_objective] safe at [map_definite] for a few hours until [asker_possessive] shuttle can come pick [asker_objective] up.\n\n[asker_pronoun] will bestow [royalFavorReward] [asker_faction_royalFavorLabel] on whoever accepts this quest. This is enough favor to receive the royal title of Yeoman, and all benefits that come with it - including the first level of psychic powers.</li>
   -->
   <Intro_Wimp.questDescriptionRules.rulesStrings>
-    <li>questDescription->[asker_nameFull], [asker_royalTitleInCurrentFaction] der Fraktion '[asker_faction_name]', kontaktiert dich aus der Nähe. [animalKindDef_indefinite] ist wütend geworden und verfolgt [asker_objective] auf Schritt und Tritt! [asker_pronoun] sagt, dass [asker_pronoun] nur einen gemütlichen Spaziergang durch die Landschaft machen wollte, aber nicht mit einer solch tödlichen Bedrohung gerechnet hat.\n\n[asker_nameDef] möchte, dass du [asker_objective] für ein paar Stunden in [map_definite] beschützt, bis [asker_possessive] Shuttle kommt und [asker_objective] abholt. [asker_pronoun] verspricht, sich nicht an deinen Körpergerüchen oder deinem Mangel an Manieren zu stören.\n\n[asker_pronoun] wird demjenigen, der diese Quest annimmt, [royalFavorReward] [asker_faction_royalFavorLabel] gewähren. Dies ist genug Gunst, um den Adelstitel eines Freibauers und alle damit verbundenen Privilegien zu erhalten – einschließlich eines Psylink-Neuroformers.</li>
+    <li>questDescription->[asker_nameFull], [asker_royalTitleInCurrentFaction] der Fraktion '[asker_faction_name]', kontaktiert dich aus der Nähe. [asker_possessive]e Leibwächter kamen bei einem Hinterhalt ums Leben. [asker_pronoun] konnte zwar entkommen, aber [animalKindDef_indefinite] verfolgt [asker_objective] nun auf Schritt und Tritt!\n\n[asker_nameDef] möchte, dass du [asker_objective] für ein paar Stunden in [map_definite] beschützt, bis [asker_possessive] Shuttle kommt und [asker_objective] abholt.\n\n[asker_pronoun] wird demjenigen, der diese Quest annimmt, [royalFavorReward] [asker_faction_royalFavorLabel] gewähren. Dies ist genug Gunst, um den Adelstitel eines Freibauers und alle damit verbundenen Privilegien zu erhalten – einschließlich psychischer Kräfte der ersten Stufe.</li>
   </Intro_Wimp.questDescriptionRules.rulesStrings>
   <!-- EN:
     <li>questName->the [adjAny] [asker_royalTitleInCurrentFaction]</li>
-    <li>adjAny->wimpy</li>
-    <li>adjAny->cowardly</li>
-    <li>adjAny->fearful</li>
-    <li>adjAny->anxious</li>
-    <li>adjAny->cowering</li>
-    <li>adjAny->craven</li>
-    <li>adjAny->fainthearted</li>
-    <li>adjAny->frightened</li>
-    <li>adjAny->gutless</li>
-    <li>adjAny->jittery</li>
-    <li>adjAny->soft</li>
-    <li>adjAny->spineless</li>
-    <li>adjAny->timid</li>
+    <li>adjAny->hunted</li>
+    <li>adjAny->fleeing</li>
+    <li>adjAny->solitary</li>
+    <li>adjAny->ambushed</li>
   -->
   <Intro_Wimp.questNameRules.rulesStrings>
-    <li>questName->[adjAny] Adliger</li>
-    <li>adjAny->feiger</li>
-    <li>adjAny->ängstlicher</li>
-    <li>adjAny->nervöser</li>
-    <li>adjAny->scheuer</li>
-    <li>adjAny->zaghafter</li>
-    <li>adjAny->mutloser</li>
-    <li>adjAny->schreckhafter</li>
-    <li>adjAny->furchtsamer</li>
-    <li>adjAny->weicher</li>
-    <li>adjAny->rückgratloser</li>
-    <li>adjAny->zittriger</li>
+    <li>questName(asker_gender==Male)->der [adjAny]e [asker_royalTitleInCurrentFaction]</li>
+    <li>questName(asker_gender==Female)->die [adjAny]e [asker_royalTitleInCurrentFaction]</li>
+    <li>adjAny->gejagt</li>
+    <li>adjAny->fliehend</li>
+    <li>adjAny->einsam</li>
+    <li>adjAny->überrascht</li>
   </Intro_Wimp.questNameRules.rulesStrings>
   <!-- EN: [animalKindDef_label] arrived -->
   <Intro_Wimp.LetterLabelAnimalArrived.slateRef>[animalKindDef_label] ist eingetroffen</Intro_Wimp.LetterLabelAnimalArrived.slateRef>
-  <!-- EN: The "deadly" [animalKindDef_label] that [asker_nameDef] was fleeing has arrived.\n\nIt turned out to be quite gentle and not aggressive at all. -->
-  <Intro_Wimp.LetterTextAnimalArrived.slateRef>Das "tödliche" Tier, vor dem [asker_nameDef] geflohen war, ist eingetroffen.\n\nEs stellt sich aber heraus, dass [animalKindDef_definite] sehr zahm und überhaupt nicht aggressiv ist.</Intro_Wimp.LetterTextAnimalArrived.slateRef>
-  <!-- EN: Angry [animalKindDef_label] -->
-  <Intro_Wimp.LetterLabelAngryAnimal.slateRef>[animalKindDef_label] wütend auf Kolonist</Intro_Wimp.LetterLabelAngryAnimal.slateRef>
-  <!-- EN: The angry [animalKindDef_label] has come to get [asker_nameFull].\n\nWhile it is weak, it does appear to be highly motivated. -->
-  <Intro_Wimp.LetterTextAngryAnimal.slateRef>[animalKindDef_definite] ist eingetroffen und sehr wütend auf [asker_nameFull].\n\nDas Tier ist zwar schwach, aber es scheint hoch motiviert zu sein, [asker_objective] anzugreifen.</Intro_Wimp.LetterTextAngryAnimal.slateRef>
+  <!-- EN: The [animalKindDef_label] that [asker_nameDef] was fleeing has arrived.\n\nIt turned out to be quite gentle and not aggressive at all. -->
+  <Intro_Wimp.LetterTextAnimalArrived.slateRef>Das Tier, vor dem [asker_nameDef] geflohen war, ist eingetroffen. Es ist [animalKindDef_indefinite].\n\nDas Tier erweist sich als recht zahm und ist überhaupt nicht aggressiv.</Intro_Wimp.LetterTextAnimalArrived.slateRef>
+  <!-- EN: Manhunting [animalKindDef_label] -->
+  <Intro_Wimp.LetterLabelAngryAnimal.slateRef>[animalKindDef_label] macht Jagd auf Menschen</Intro_Wimp.LetterLabelAngryAnimal.slateRef>
+  <!-- EN: The [animalKindDef_label] which was following [asker_nameFull] has arrived in the area. -->
+  <Intro_Wimp.LetterTextAngryAnimal.slateRef>Das Tier, welches hinter [asker_nameFull] her war, ist im Gebiet eingetroffen. Es ist [animalKindDef_indefinite].</Intro_Wimp.LetterTextAngryAnimal.slateRef>
   <!-- EN: Should depart on shuttle -->
   <Intro_Wimp.InspectStringDepartShuttle.slateRef>Soll mit dem Shuttle wegfliegen</Intro_Wimp.InspectStringDepartShuttle.slateRef>
   <!-- EN: Shuttle arrived -->
