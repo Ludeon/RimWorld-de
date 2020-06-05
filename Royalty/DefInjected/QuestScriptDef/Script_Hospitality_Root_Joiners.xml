@@ -100,10 +100,10 @@
     <li>threatsInfo2(generateThreats==true,threatType==Raids,enemyFaction==Mechanoid)->\n\n[threatsInfoMechRaidsMultiHuman] Es [enemyGroupsParagraph]</li>
     <li>threatsInfo2(generateThreats==true,threatType==MechClusters)->\n\nDie Reisenden haben kürzlich [mechViolation], und sind seitdem im Fadenkreuz eines im Orbit befindlichen Mechanoidenschwarms. Es [enemyGroupsParagraph]</li>
     <li>threatsInfo2(generateThreats==false)-></li>
-    <li>questDescription(asker_factionLeader==True,lodgersCount==1,generateThreats==false,priority=1)->[asker_nameFull], [asker_faction_leaderTitle] der Fraktion '[asker_faction_name]' bittet dich um einen Gefallen. [asker_possessive] Freund [lodgers0_nameFull] ist interessiert daran, etwas über andere Kulturen zu lernen, und [asker_pronoun] möchte, dass du [lodgers0_objective] über einen Zeitraum von [shuttleDelayTicks_duration] in [map_definite] als Gast bei dir aufnimmst. [allLodgerInfo][goodwillForMood][commonDescEnding]\n\n[joinerEnding]</li>
-    <li>questDescription(asker_factionLeader==True,lodgersCount==1,generateThreats==true,threatType==Raids,enemyFaction!=Mechanoid,priority=1)->[asker_nameFull], [asker_faction_leaderTitle] der Fraktion '[asker_faction_name]' bittet dich um einen Gefallen. [asker_possessive] Freund, ein [lodgers0_title] namens [lodgers0_nameDef] ([lodgers0_age] Jahre alt), wurde dabei erwischt, wie [lodgers0_pronoun] fiese Beleidigungen über [die_Dinge] von [enemyFaction_leader_nameFull] schrieb. [asker_nameDef] bittet dich, über einen Zeitraum von [shuttleDelayTicks_duration] auf [lodgers0_nameDef] aufzupassen. So lange, bis [asker_pronoun] die Beziehung zu der Fraktion '[enemyFaction_name]' wieder ins Lot gebracht hat. Da [enemyFaction_leader_nameDef] der [enemyFaction_leaderTitle] der Fraktion '[enemyFaction_name]' ist, hat [enemyFaction_leader_pronoun] [enemyFaction_pawnsPlural]gruppen losgeschickt, um [lodgers0_nameDef] zu jagen.\n\nEs [threatDescriptionParagraph][allLodgerInfo][goodwillForMood][commonDescEnding]\n\n[joinerEnding]</li>
-    <li>questDescription(asker_factionLeader==True,lodgersCount==1,generateThreats==true,threatType==Raids,enemyFaction==Mechanoid,priority=1)->[asker_nameFull], [asker_faction_leaderTitle] der Fraktion '[asker_faction_name]' bittet dich um einen Gefallen. [asker_possessive] Freund, ein [lodgers0_age] Jahre alter [lodgers0_title] namens [lodgers0_nameDef], hat kürzlich [mechViolation]. [asker_nameDef] möchte, dass du über einen Zeitraum von [shuttleDelayTicks_duration] in [map_definite] auf sie aufpasst. So lange, bis [asker_pronoun] das Mechanoidennest besänftigen kann.\n\nEs [threatDescriptionParagraph][allLodgerInfo][goodwillForMood][commonDescEnding]\n\n[joinerEnding]</li>
-    <li>questDescription(asker_factionLeader==True,lodgersCount==1,generateThreats==true,threatType==MechClusters,priority=1)->[asker_nameFull], [asker_faction_leaderTitle] der Fraktion '[asker_faction_name]' bittet dich um einen Gefallen. [asker_possessive] Freund, ein [lodgers0_title] namens [lodgers0_nameDef] ([lodgers0_age] Jahre alt), hat küzlich [mechViolation]. [asker_nameDef] möchte, dass du über einen Zeitraum von [shuttleDelayTicks_duration] in [map_definite] auf [lodgers0_nameDef] aufpasst.\n\nEs [threatDescriptionParagraph][allLodgerInfo][goodwillForMood][commonDescEnding]\n\n[joinerEnding]</li>
+    <li>questDescription(asker_factionLeader==True,lodgersCount==1,generateThreats==false,priority=1)->[asker_nameFull], [asker_faction_leaderTitle] der Fraktion '[asker_faction_name]' bittet dich um einen Gefallen. [Sein_Freund] [lodgers0_nameFull] ist interessiert daran, etwas über andere Kulturen zu lernen, und [asker_pronoun] möchte, dass du [lodgers0_objective] über einen Zeitraum von [shuttleDelayTicks_duration] in [map_definite] als Gast bei dir aufnimmst. [allLodgerInfo][goodwillForMood][commonDescEnding]\n\n[joinerEnding]</li>
+    <li>questDescription(asker_factionLeader==True,lodgersCount==1,generateThreats==true,threatType==Raids,enemyFaction!=Mechanoid,priority=1)->[asker_nameFull], [asker_faction_leaderTitle] der Fraktion '[asker_faction_name]' bittet dich um einen Gefallen. [Sein_Freund], [ein_N_jaehriger] [lodgers0_title] namens [lodgers0_nameDef], wurde dabei erwischt, wie [lodgers0_pronoun] fiese Beleidigungen über [die_Dinge] von [enemyFaction_leader_nameFull] schrieb. [asker_nameDef] bittet dich, über einen Zeitraum von [shuttleDelayTicks_duration] auf [lodgers0_nameDef] aufzupassen. So lange, bis [asker_pronoun] die Beziehung zu der Fraktion '[enemyFaction_name]' wieder ins Lot gebracht hat. Da [enemyFaction_leader_nameDef] der [enemyFaction_leaderTitle] der Fraktion '[enemyFaction_name]' ist, hat [enemyFaction_leader_pronoun] [enemyFaction_pawnsPlural]gruppen losgeschickt, um [lodgers0_nameDef] zu jagen.\n\nEs [threatDescriptionParagraph][allLodgerInfo][goodwillForMood][commonDescEnding]\n\n[joinerEnding]</li>
+    <li>questDescription(asker_factionLeader==True,lodgersCount==1,generateThreats==true,threatType==Raids,enemyFaction==Mechanoid,priority=1)->[asker_nameFull], [asker_faction_leaderTitle] der Fraktion '[asker_faction_name]' bittet dich um einen Gefallen. [Sein_Freund], [ein_N_jaehriger] [lodgers0_title] namens [lodgers0_nameDef], hat kürzlich [mechViolation]. [asker_nameDef] möchte, dass du über einen Zeitraum von [shuttleDelayTicks_duration] in [map_definite] auf sie aufpasst. So lange, bis [asker_pronoun] das Mechanoidennest besänftigen kann.\n\nEs [threatDescriptionParagraph][allLodgerInfo][goodwillForMood][commonDescEnding]\n\n[joinerEnding]</li>
+    <li>questDescription(asker_factionLeader==True,lodgersCount==1,generateThreats==true,threatType==MechClusters,priority=1)->[asker_nameFull], [asker_faction_leaderTitle] der Fraktion '[asker_faction_name]' bittet dich um einen Gefallen. [Sein_Freund], [ein_N_jaehriger] [lodgers0_title] namens [lodgers0_nameDef], hat kürzlich [mechViolation]. [asker_nameDef] möchte, dass du über einen Zeitraum von [shuttleDelayTicks_duration] in [map_definite] auf [lodgers0_nameDef] aufpasst.\n\nEs [threatDescriptionParagraph][allLodgerInfo][goodwillForMood][commonDescEnding]\n\n[joinerEnding]</li>
     <li>questDescription(asker_factionLeader==True,lodgersCount>=2,generateThreats==false,priority=1)->[asker_nameFull], [asker_faction_leaderTitle] der Fraktion '[asker_faction_name]', rettete kürzlich [lodgersCount] [asker_faction_pawnsPlural] aus einem feindlichen Gefängnis. [asker_pronoun] möchte, dass du in [map_definite] auf sie aufpasst, bis [asker_pronoun] ein Shuttle entsenden kann, um sie abzuholen. Das Shuttle wird in [shuttleDelayTicks_duration] bei dir eintreffen. [allLodgerInfo][goodwillForMood][commonDescEnding]\n\n[joinerEnding]</li>
     <li>questDescription(asker_factionLeader==True,lodgersCount>=2,generateThreats==true,threatType==Raids,enemyFaction!=Mechanoid,priority=1)->[asker_nameFull], [asker_faction_leaderTitle] der Fraktion '[asker_faction_name]', befreite kürzlich [lodgersCount] [asker_faction_pawnsPlural] aus den Gefängnissen der Fraktion '[enemyFaction_name]'. [asker_nameDef] möchte, dass du über einen Zeitraum von [shuttleDelayTicks_duration] in [map_definite] auf sie aufpasst. So lange, bis [asker_pronoun] ein Shuttle senden kann, um sie aufzulesen. Die [asker_faction_pawnsPlural] haben geheime Informationen über [secretInfo] der Fraktion '[enemyFaction_name]', daher werden sie gejagt.\n\nEs [threatDescriptionParagraph][allLodgerInfo][goodwillForMood][commonDescEnding]\n\n[joinerEnding]</li>
     <li>questDescription(asker_factionLeader==True,lodgersCount>=2,generateThreats==true,threatType==Raids,enemyFaction==Mechanoid,priority=1)->[asker_nameFull], [asker_faction_leaderTitle] der Fraktion '[asker_faction_name]', befreite kürzlich [lodgersCount] [asker_faction_pawnsPlural] aus ihren Kryptoschlafkapseln. [asker_nameDef] möchte, dass du über einen Zeitraum von [shuttleDelayTicks_duration] in [map_definite] auf sie aufpasst. So lange, bis [asker_pronoun] ein Shuttle senden kann, um sie aufzulesen. Die [asker_faction_pawnsPlural] werden von Mechanoiden gejagt.\n\nEs [threatDescriptionParagraph][allLodgerInfo][goodwillForMood][commonDescEnding]\n\n[joinerEnding]</li>
@@ -132,6 +132,10 @@
     <li>die_Dinge->den [PersonalCharacteristicMas]</li>
     <li>die_Dinge->die [PersonalCharacteristicFem]</li>
     <li>die_Dinge->das [PersonalCharacteristicNeu]</li>
+    <li>Sein_Freund(lodgers0_gender==Male)->[asker_possessive] Freund</li>
+    <li>Sein_Freund(lodgers0_gender==Female)->[asker_possessive]e Freundin</li>
+    <li>ein_N_jaehriger(lodgers0_gender==Male)->ein [lodgers0_age]-jähriger</li>
+    <li>ein_N_jaehriger(lodgers0_gender==Female)->eine [lodgers0_age]-jährige</li>
   </Hospitality_Joiners.questDescriptionRules.rulesStrings>
   <!-- EN:
     <li>questName->shelter for [lodgerIndef]</li>
@@ -164,42 +168,68 @@
     <li>lodgerIndef(asker_royalInCurrentFaction==True,lodgersCount>=2)->aristocrats</li>
   -->
   <Hospitality_Joiners.questNameRules.rulesStrings>
-    <li>questName->Unterschlupf für [lodgerIndefAcc]</li>
-    <li>questName->Gastfreundschaft für [lodgerIndefAcc]</li>
-    <li>questName->Bewirtung für [lodgerIndefAcc]</li>
+    <li>questName->Unterschlupf für [lodgerIndef_Acc]</li>
+    <li>questName->Gastfreundschaft für [lodgerIndef_Acc]</li>
+    <li>questName->Bewirtung für [lodgerIndef_Acc]</li>
     <li>questName(lodgersCount==1)->[lodgerIndef] braucht Hilfe</li>
     <li>questName(lodgersCount>=2)->[lodgerIndef] brauchen Hilfe</li>
-    <li>questName(generateThreats==true,priority=1)->[lodgerIndefAcc] beschützen</li>
-    <li>questName(generateThreats==true,priority=1)->Sicherheit für [lodgerIndefAcc]</li>
-    <li>questName(generateThreats==true,priority=1)->Schutz für [lodgerIndefAcc]</li>
+    <li>questName(generateThreats==true,priority=1)->[lodgerIndef_Acc] beschützen</li>
+    <li>questName(generateThreats==true,priority=1)->Sicherheit für [lodgerIndef_Acc]</li>
+    <li>questName(generateThreats==true,priority=1)->Schutz für [lodgerIndef_Acc]</li>
     <li>questName(generateThreats==true,priority=1)->[lodgerIndef] in Schwierigkeiten</li>
     <li>questName(generateThreats==true,priority=1)->[lodgerIndef] in Gefahr</li>
     <li>questName(generateThreats==true,priority=1)->[lodgerIndef] unter Feindbeschuss</li>
     <li>questName(generateThreats==true,priority=1)->[lodgerIndef] im Fadenkreuz</li>
     <li>lodgerIndef(askerIsNull==true,lodgersCount==1)->[lodgers0_label]</li>
-    <li>lodgerIndef(askerIsNull==true,lodgersCount==1)->[lodgers0_title]</li>
+    <li>lodgerIndef(askerIsNull==true,lodgersCount==1,lodgers0_gender==Male)->ein [lodgers0_title]</li>
+    <li>lodgerIndef(askerIsNull==true,lodgersCount==1,lodgers0_gender==Female)->eine [lodgers0_title]</li>
     <li>lodgerIndef(askerIsNull==true,lodgersCount>=2)->Reisende</li>
     <li>lodgerIndef(asker_factionLeader==True,lodgersCount==1)->[lodgers0_label]</li>
-    <li>lodgerIndef(asker_factionLeader==True,lodgersCount==1)->[lodgers0_title]</li>
-    <li>lodgerIndef(asker_factionLeader==True,lodgersCount==1)->Freund</li>
-    <li>lodgerIndef(asker_factionLeader==True,lodgersCount==1)->Verbündeter</li>
+    <li>lodgerIndef(asker_factionLeader==True,lodgersCount==1,lodgers0_gender==Male)->ein [lodgers0_title]</li>
+    <li>lodgerIndef(asker_factionLeader==True,lodgersCount==1,lodgers0_gender==Female)->eine [lodgers0_title]</li>
+    <li>lodgerIndef(asker_factionLeader==True,lodgersCount==1,lodgers0_gender==Male)->ein Freund</li>
+    <li>lodgerIndef(asker_factionLeader==True,lodgersCount==1,lodgers0_gender==Female)->eine Freundin</li>
+    <li>lodgerIndef(asker_factionLeader==True,lodgersCount==1,lodgers0_gender==Male)->ein Verbündeter</li>
+    <li>lodgerIndef(asker_factionLeader==True,lodgersCount==1,lodgers0_gender==Female)->eine Verbündete</li>
     <li>lodgerIndef(asker_factionLeader==True,lodgersCount>=2)->Freunde</li>
     <li>lodgerIndef(asker_factionLeader==True,lodgersCount>=2)->Verbündete</li>
-    <li>lodgerIndef(asker_royalInCurrentFaction==True,lodgersCount==1,p=3)->[asker_royalTitleInCurrentFaction]</li>
+    <li>lodgerIndef(asker_royalInCurrentFaction==True,lodgersCount==1,p=3,asker_gender==Male)->ein [asker_royalTitleInCurrentFaction]</li>
+    <li>lodgerIndef(asker_royalInCurrentFaction==True,lodgersCount==1,p=3,asker_gender==Female)->eine [asker_royalTitleInCurrentFaction]</li>
     <li>lodgerIndef(asker_royalInCurrentFaction==True,lodgersCount==1)->[asker_label]</li>
-    <li>lodgerIndef(asker_royalInCurrentFaction==True,lodgersCount==1)->Fürstlicher</li>
-    <li>lodgerIndef(asker_royalInCurrentFaction==True,lodgersCount==1)->Adliger</li>
-    <li>lodgerIndef(asker_royalInCurrentFaction==True,lodgersCount==1)->Aristokrat</li>
+    <li>lodgerIndef(asker_royalInCurrentFaction==True,lodgersCount==1,asker_gender==Male)->ein Fürstlicher</li>
+    <li>lodgerIndef(asker_royalInCurrentFaction==True,lodgersCount==1,asker_gender==Female)->eine Fürstliche</li>
+    <li>lodgerIndef(asker_royalInCurrentFaction==True,lodgersCount==1,asker_gender==Male)->ein Adliger</li>
+    <li>lodgerIndef(asker_royalInCurrentFaction==True,lodgersCount==1,asker_gender==Female)->eine Adlige</li>
+    <li>lodgerIndef(asker_royalInCurrentFaction==True,lodgersCount==1,asker_gender==Male)->ein Aristokrat</li>
+    <li>lodgerIndef(asker_royalInCurrentFaction==True,lodgersCount==1,asker_gender==Female)->eine Aristokratin</li>
     <li>lodgerIndef(asker_royalInCurrentFaction==True,lodgersCount>=2)->Fürstliche</li>
     <li>lodgerIndef(asker_royalInCurrentFaction==True,lodgersCount>=2)->Adlige</li>
     <li>lodgerIndef(asker_royalInCurrentFaction==True,lodgersCount>=2)->Aristokraten</li>
-    <li>lodgerIndefAcc(asker_factionLeader==True,lodgersCount==1)->[lodgers0_label]</li>
-    <li>lodgerIndefAcc(asker_factionLeader==True,lodgersCount==1)->[lodgers0_title]</li>
-    <li>lodgerIndefAcc(asker_factionLeader==True,lodgersCount==1)->Freund</li>
-    <li>lodgerIndefAcc(asker_factionLeader==True,lodgersCount==1)->Verbündeten</li>
-    <li>lodgerIndefAcc(asker_royalInCurrentFaction==True,lodgersCount==1)->Fürstlichen</li>
-    <li>lodgerIndefAcc(asker_royalInCurrentFaction==True,lodgersCount==1)->Adligen</li>
-    <li>lodgerIndefAcc(asker_royalInCurrentFaction==True,lodgersCount==1)->Aristokraten</li>
+    <li>lodgerIndef_Acc(askerIsNull==true,lodgersCount==1)->[lodgers0_label]</li>
+    <li>lodgerIndef_Acc(askerIsNull==true,lodgersCount==1,lodgers0_gender==Male)->einen [lodgers0_title]</li>
+    <li>lodgerIndef_Acc(askerIsNull==true,lodgersCount==1,lodgers0_gender==Female)->eine [lodgers0_title]</li>
+    <li>lodgerIndef_Acc(askerIsNull==true,lodgersCount>=2)->Reisende</li>
+    <li>lodgerIndef_Acc(asker_factionLeader==True,lodgersCount==1)->[lodgers0_label]</li>
+    <li>lodgerIndef_Acc(asker_factionLeader==True,lodgersCount==1,lodgers0_gender==Male)->einen [lodgers0_title]</li>
+    <li>lodgerIndef_Acc(asker_factionLeader==True,lodgersCount==1,lodgers0_gender==Female)->eine [lodgers0_title]</li>
+    <li>lodgerIndef_Acc(asker_factionLeader==True,lodgersCount==1,lodgers0_gender==Male)->einen Freund</li>
+    <li>lodgerIndef_Acc(asker_factionLeader==True,lodgersCount==1,lodgers0_gender==Female)->eine Freundin</li>
+    <li>lodgerIndef_Acc(asker_factionLeader==True,lodgersCount==1,lodgers0_gender==Male)->einen Verbündeten</li>
+    <li>lodgerIndef_Acc(asker_factionLeader==True,lodgersCount==1,lodgers0_gender==Female)->eine Verbündete</li>
+    <li>lodgerIndef_Acc(asker_factionLeader==True,lodgersCount>=2)->Freunde</li>
+    <li>lodgerIndef_Acc(asker_factionLeader==True,lodgersCount>=2)->Verbündete</li>
+    <li>lodgerIndef_Acc(asker_royalInCurrentFaction==True,lodgersCount==1,p=3,asker_gender==Male)->einen [asker_royalTitleInCurrentFaction]</li>
+    <li>lodgerIndef_Acc(asker_royalInCurrentFaction==True,lodgersCount==1,p=3,asker_gender==Female)->eine [asker_royalTitleInCurrentFaction]</li>
+    <li>lodgerIndef_Acc(asker_royalInCurrentFaction==True,lodgersCount==1)->[asker_label]</li>
+    <li>lodgerIndef_Acc(asker_royalInCurrentFaction==True,lodgersCount==1,asker_gender==Male)->einen Fürstlichen</li>
+    <li>lodgerIndef_Acc(asker_royalInCurrentFaction==True,lodgersCount==1,asker_gender==Female)->eine Fürstliche</li>
+    <li>lodgerIndef_Acc(asker_royalInCurrentFaction==True,lodgersCount==1,asker_gender==Male)->einen Adligen</li>
+    <li>lodgerIndef_Acc(asker_royalInCurrentFaction==True,lodgersCount==1,asker_gender==Female)->eine Adlige</li>
+    <li>lodgerIndef_Acc(asker_royalInCurrentFaction==True,lodgersCount==1,asker_gender==Male)->einen Aristokraten</li>
+    <li>lodgerIndef_Acc(asker_royalInCurrentFaction==True,lodgersCount==1,asker_gender==Female)->eine Aristokratin</li>
+    <li>lodgerIndef_Acc(asker_royalInCurrentFaction==True,lodgersCount>=2)->Fürstliche</li>
+    <li>lodgerIndef_Acc(asker_royalInCurrentFaction==True,lodgersCount>=2)->Adlige</li>
+    <li>lodgerIndef_Acc(asker_royalInCurrentFaction==True,lodgersCount>=2)->Aristokraten</li>
   </Hospitality_Joiners.questNameRules.rulesStrings>
   
 </LanguageData>
