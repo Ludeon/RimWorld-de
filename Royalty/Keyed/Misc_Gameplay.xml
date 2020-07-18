@@ -2,12 +2,8 @@
 <LanguageData>
 
   <!-- Royalty and throne -->
-  <!-- EN: Appropriate for title: {0} -->
-  <ThroneTitleStature>Geeignet für Titel: {0}</ThroneTitleStature>
-  <!-- EN: Previous title satisfied: {0} -->
-  <ThronePrevTitleStature>Vorheriger Titel zufriedengestellt: {0}</ThronePrevTitleStature>
-  <!-- EN: Next title satisfied: {0} -->
-  <ThroneNextTitleStature>Nächster Titel zufriedengestellt: {0}</ThroneNextTitleStature>
+  <!-- EN: Satisfies title -->
+  <ThroneMaxSatisfiedTitle>Befriedigt Titel</ThroneMaxSatisfiedTitle>
   <!-- EN: ({0} impressiveness) -->
   <ThroneRoomImpressivenessInfo>({0} Eindruck)</ThroneRoomImpressivenessInfo>
   <!-- EN: Throne must be placed indoors. -->
@@ -22,8 +18,8 @@
   <!-- Generated neurotrainers -->
   <!-- EN: psytrainer ({0}) -->
   <PsycastNeurotrainerLabel>Psytrainer ({0})</PsycastNeurotrainerLabel>
-  <!-- EN: Use neurotrainer to learn {0} psycast -->
-  <PsycastNeurotrainerUseLabel>Benutze Neurotrainer, um die Psykraft '{0}' zu lernen</PsycastNeurotrainerUseLabel>
+  <!-- EN: Use psytrainer to learn {0} psycast -->
+  <PsycastNeurotrainerUseLabel>Benutze psychotrainer, um die Psykraft '{0}' zu lernen</PsycastNeurotrainerUseLabel>
   <!-- EN: A one-use super-dose of mechanites which trains a specific psycast.\n\nThe dose is administered through the orbit of the eye. Once released into the brain, the mechanites form knowledge of a specific psycast ability, transmuting themselves into neural tissue as needed. -->
   <PsycastNeurotrainerDescription>Eine einmalig verwendbare Superdosis von Mechaniten, die eine bestimmte Psykraft freischalten.\n\nDie Dosis wird über die Augenhöhlen verabreicht. Einmal im Gehirn freigesetzt, wandeln sich die Mechaniten bei Bedarf in Nervengewebe um und vermitteln dabei dem Subjekt das Wissen über eine Psykraft.</PsycastNeurotrainerDescription>
   <!-- EN: {USER_labelShort} used neurotrainer to learn the {1} psycast. -->
@@ -49,10 +45,9 @@
   <TooCloseToOtherBeacon>Zu dicht an einem anderen Leuchtsignal</TooCloseToOtherBeacon>
   
   <!-- Meditation -->
-
   <!-- EN: Psyfocus -->
   <Psyfocus>Psyfokus</Psyfocus>
-  <!-- EN: Psyfocus is a special type of mental structuring which is necessary to perform psycasts. Psyfocus dissipates over time, and must be built by regular meditation. Losing all psyfocus makes someone unable to perform psycasts, but has no other consequences.\n\nHigher levels of psyfocus permit higher-level psycasts, but also increase the rate of psyfocus dissipation. -->
+  <!-- EN: Psyfocus is a special type of mental structuring which is necessary to perform psycasts. Psyfocus dissipates over time, and must be built by regular meditation. Losing all psyfocus makes someone unable to perform psycasts, but has no other consequences.\n\nHigher levels of psyfocus permit higher-level psycasts, but also increase the rate of psyfocus dissipation -->
   <PsyfocusDesc>Psyfokus ist eine spezielle Art von mentaler Neustrukturierung, die zum Wirken von Psykräften notwendig ist. Psyfokus baut sich im Laufe der Zeit automatisch ab und muss durch regelmäßige Meditation erneuert werden. Der Verlust des gesamten Psyfokus bewirkt, dass keine Psykräfte mehr gewirkt werden können, hat aber sonst keine weiteren Folgen.\n\nJe höher der Psyfokus, desto mehr Psykräfte höherer Stufen können gewirkt werden und desto schneller baut sich der Psyfokus wieder ab.</PsyfocusDesc>
   <!-- EN: {0}-{1}% -->
   <PsyfocusLevelInfoRange>{0}-{1}%</PsyfocusLevelInfoRange>
@@ -64,6 +59,22 @@
   <UserMeditationFocusStrength>Meditationsfokusstärke für {LASTUSER_labelShort}</UserMeditationFocusStrength>
   <!-- EN: Focus effect impacted by -->
   <MeditationFocusImpacted>Fokuseffekt beeinflusst durch</MeditationFocusImpacted>
+  <!-- EN: {1} per nearby animus stone (max {0}) -->
+  <MeditationFocusPerAnimusStoneAbstract>TODO</MeditationFocusPerAnimusStoneAbstract>
+  <!-- EN: {2} per nearby animus stone ({0} / {1}) -->
+  <MeditationFocusPerAnimusStone>TODO</MeditationFocusPerAnimusStone>
+  <!-- EN: Max {1} per nearby sculpture depending on quality (max {0}) -->
+  <MeditationFocusPerSculptureAbstract>TODO</MeditationFocusPerSculptureAbstract>
+  <!-- EN: Max {2} per nearby sculpture depending on quality ({0} / {1}) -->
+  <MeditationFocusPerSculpture>TODO</MeditationFocusPerSculpture>
+  <!-- EN: Per nearby grave {1} if empty, {2} for human corpse (up to {0}) -->
+  <MeditationFocusPerGraveAbstract>TODO</MeditationFocusPerGraveAbstract>
+  <!-- EN: Per nearby grave {2} if empty, {3} for human corpse ({0} / {1}) -->
+  <MeditationFocusPerGrave>TODO</MeditationFocusPerGrave>
+  <!-- EN: {1} per nearby lit flame source (up to {0}) -->
+  <MeditationFocusPerFlameAbstract>TODO</MeditationFocusPerFlameAbstract>
+  <!-- EN: {2} per nearby lit flame source ({0} / {1}) -->
+  <MeditationFocusPerFlame>TODO</MeditationFocusPerFlame>
   <!-- EN: Psyfocus gain rate: {0}/d -->
   <PsyfocusPerDayOfMeditation>Psyfokuszunahmerate: {0}/d</PsyfocusPerDayOfMeditation>
   <!-- EN: Desired psyfocus -->
@@ -102,13 +113,15 @@
   <!-- EN: {ORGANIZER_labelShort}'s {1} stat -->
   <AbilitySpeechStatInfo>{ORGANIZER_labelShort}'s {1}</AbilitySpeechStatInfo>
 
-  <!-- EN: Progress to next {0}: {1} -->
-  <ProgressToNextSubplant>Fortschritt bis {0_gender ? zum : zur} nächsten {0}: {1}</ProgressToNextSubplant>
+  <!-- EN: Total meditation today: {0} (progress multiplier {1}) -->
+  <TotalMeditationToday>TODO</TotalMeditationToday>
+  <!-- EN: progress {0} -->
+  <ProgressToNextSubplant>Fortschritt {0}</ProgressToNextSubplant>
   <!-- EN: Begin linking ritual -->
   <BeginLinkingRitualFloatMenu>Beginne rituelle Bindung</BeginLinkingRitualFloatMenu>
   <!-- EN: Need {0} {1} here (have {2}) -->
   <BeginLinkingRitualNeedSubplants>{0}x {1} benötigt (nur {2} vorhanden)</BeginLinkingRitualNeedSubplants>
-  <!-- EN: Need {0} pyslink focus -->
+  <!-- EN: Need {0} psylink focus type -->
   <BeginLinkingRitualNeedFocus>{0}er Psylinkfokus benötigt</BeginLinkingRitualNeedFocus>
   <!-- EN: Need a free, reachable spot within 3 cells for linking -->
   <BeginLinkingRitualNeedLinkSpot>Freier, erreichbarer Platz von mindestens 3 Zellen benötigt</BeginLinkingRitualNeedLinkSpot>
@@ -116,4 +129,22 @@
   <LetterLabelLinkingRitualCompleted>Rituelle Bindung abgeschlossen</LetterLabelLinkingRitualCompleted>
   <!-- EN: {PAWN_labelShort} has completed the linking ritual with {LINKABLE_labelShort}.\n\n{PAWN_pronoun} now has an upgraded psylink, permitting the use of new psycasts. -->
   <LetterTextLinkingRitualCompleted>{PAWN_labelShort} hat die rituelle Bindung mit {LINKABLE_gender ? dem : der} {LINKABLE_labelShort} abgeschlossen.\n\n{PAWN_pronoun} verfügt nun über einen verbesserten Psylink und darf neue Psykräfte verwenden.</LetterTextLinkingRitualCompleted>
+
+  <!-- EN: Land shuttle here -->
+  <LandHere>TODO</LandHere>
+  <!-- EN: Destination is out of range. -->
+  <MessageShuttleDestinationIsTooFar>TODO</MessageShuttleDestinationIsTooFar>
+
+  <!-- EN: Do bestowing ceremony -->
+  <BeginCeremony>TODO</BeginCeremony>
+  <!-- EN: The bestower is offended that {PAWN_definite}'s throneroom does not satisfy the requirements of the title of {TITLE}. The bestowing ceremony has been cancelled. -->
+  <BestowingCeremonyThroneroomRequirementsNotSatisfied>TODO</BestowingCeremonyThroneroomRequirementsNotSatisfied>
+
+  <!-- EN: Not all required cargo is loaded yet! -->
+  <ShuttleRequiredItemsNotSatisfied>TODO</ShuttleRequiredItemsNotSatisfied>
+  <!-- UNUSED -->
+  <ThroneTitleStature>Geeignet für Titel: {0}</ThroneTitleStature>
+  <ThronePrevTitleStature>Vorheriger Titel zufriedengestellt: {0}</ThronePrevTitleStature>
+  <ThroneNextTitleStature>Nächster Titel zufriedengestellt: {0}</ThroneNextTitleStature>
+
 </LanguageData>

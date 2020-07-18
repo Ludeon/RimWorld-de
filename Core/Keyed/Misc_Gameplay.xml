@@ -176,8 +176,8 @@
   <UsingBedrolls>verwendet {0} Schlafsäcke</UsingBedrolls>
   <!-- EN: Est. time to destination: {0} days -->
   <CaravanEstimatedTimeToDestination>Voraussichtliche Ankunftszeit: {0} Tage</CaravanEstimatedTimeToDestination>
-  <!-- EN: Estimated days to arrive: {0} -->
-  <CaravanEstimatedDaysToDestination>Voraussichtliche Ankunftszeit in Tagen: {0}</CaravanEstimatedDaysToDestination>
+  <!-- EN: Route travel time: {0} days -->
+  <CaravanEstimatedDaysToDestination>Reisezeit der Route: {0} Tage</CaravanEstimatedDaysToDestination>
   <!-- EN: Immobilized: Too much weight. -->
   <CaravanImmobilizedByMass>Bewegungsunfähig: Zu viel Gewicht.</CaravanImmobilizedByMass>
   <!-- EN: Out of food. -->
@@ -246,10 +246,10 @@
   <DeterioratingBecauseOf>Verrottet weil</DeterioratingBecauseOf>
   <!-- EN: Map -->
   <Map>Karte</Map>
-  <!-- EN: {0} until leaving -->
-  <ForceExitAndRemoveMapCountdown>{0} bis Abreise</ForceExitAndRemoveMapCountdown>
-  <!-- EN: Your colonists will automatically reform the caravan and leave this area in {0}. -->
-  <ForceExitAndRemoveMapCountdownTip>Deine Kolonisten bilden automatisch die Karawane und verlassen dieses Gebiet in {0}.</ForceExitAndRemoveMapCountdownTip>
+  <!-- EN: {0} until enemies arrive -->
+  <CaravanDetectedRaidCountdown>TODO</CaravanDetectedRaidCountdown>
+  <!-- EN: Enemy reinforcements will arrive in this area in {0}. -->
+  <CaravanDetectedRaidCountdownTip>TODO</CaravanDetectedRaidCountdownTip>
   <!-- EN: Room -->
   <Room>Raum</Room>
   <!-- EN: Beauty here -->
@@ -368,8 +368,8 @@
   <CreatureFollowFieldwork>Folge Meister bei der Feldarbeit</CreatureFollowFieldwork>
   <!-- EN: {0} with {1} -->
   <ProximitySingleGoodwillChange>{0} mit {1}</ProximitySingleGoodwillChange>
-  <!-- EN: You can't re-enter for another {0} days. -->
-  <EnterCooldown>Du kannst dies erst in {0} Tagen wieder betreten.</EnterCooldown>
+  <!-- EN: Too dangerous to re-enter for {0}. -->
+  <EnterCooldown>Zu gefährlich. Kann erst in {0} Tagen wieder betreten werden.</EnterCooldown>
   <!-- EN: Caravan -->
   <Caravan>Karawane</Caravan>
   <!-- EN: there may be danger there. -->
@@ -378,8 +378,6 @@
   <PreciousLumpLabel>{0}vorkommen</PreciousLumpLabel>
   <!-- EN: no active research project -->
   <NoActiveResearchProjectToFinish>Kein aktives Forschungsprojekt</NoActiveResearchProjectToFinish>
-  <!-- EN: Cannot research: No research bench -->
-  <CannotResearchNoBench>Kann nicht forschen: Kein Labortisch</CannotResearchNoBench>
   <!-- EN: turret -->
   <Turret>Geschütz</Turret>
   <!-- EN: turrets -->
@@ -620,6 +618,8 @@
   <WatchingAurora>beobachtet das Polarlicht.</WatchingAurora>
   <!-- EN: using {0} on {1}. -->
   <UsingVerb>benutzt {0} an {1}.</UsingVerb>
+  <!-- EN: using {0}. -->
+  <UsingVerbNoTarget>verwendet {0}.</UsingVerbNoTarget>
   <!-- EN: area -->
   <AreaLower>Gebiet</AreaLower>
   <!-- EN: cowering. -->
@@ -722,8 +722,8 @@
   <Faction>Fraktion</Faction>
   <!-- EN: The faction {PAWN_labelShort} currently belongs to. -->
   <FactionDesc>Die Fraktion, der {PAWN_labelShort} derzeit angehört.</FactionDesc>
-  <!-- EN: The faction {PAWN_labelShort} originally belongs to. {PAWN_pronoun} will rejoin their home faction when they depart from their current faction. -->
-  <ExtraFactionDesc>Die Fraktion, der {PAWN_nameDef} ursprünglich angehört. {PAWN_pronoun} wird sich wieder ihrer Heimatfraktion anschließen, wenn sie aus ihrer derzeitigen Fraktion austreten.</ExtraFactionDesc>
+  <!-- EN: The faction {PAWN_labelShort} originally belongs to. -->
+  <ExtraFactionDesc>Die Fraktion, der {PAWN_nameDef} ursprünglich angehört.</ExtraFactionDesc>
   <!-- EN: Equipped -->
   <Equipped>Ausgerüstet</Equipped>
   <!-- EN: nothing -->
@@ -1020,10 +1020,10 @@
   <HibernateWarningStandalonePacifist>Der Reaktor ist bereit, hochgefahren zu werden. Der Prozess wird ca. 15 Tage dauern.</HibernateWarningStandalonePacifist>
 
   <!-- Neurotrainer -->
-  <!-- EN: neurotrainer ({0}) -->
-  <SkillNeurotrainerLabel>Neurotrainer ({0})</SkillNeurotrainerLabel>
-  <!-- EN: Use skill neurotrainer to learn {0} -->
-  <SkillNeurotrainerUseLabel>Benutze Neurotrainer, um die Fähigkeit '{0}' zu lernen</SkillNeurotrainerUseLabel>
+  <!-- EN: skilltrainer ({0}) -->
+  <SkillNeurotrainerLabel>Fähigkeitstrainer ({0})</SkillNeurotrainerLabel>
+  <!-- EN: Use skilltrainer to learn {0} -->
+  <SkillNeurotrainerUseLabel>Benutze Fähigkeitstrainer, um die Fähigkeit '{0}' zu lernen</SkillNeurotrainerUseLabel>
   <!-- EN: A one-use super-dose of mechanites which trains a specific skill.\n\nThe dose is administered through the orbit of the eye. Once released into the brain, the mechanites quickly improve the subject's skills in a specific area, transmuting themselves into neural tissue as needed. -->
   <SkillNeurotrainerDescription>Eine einmalig verwendbare Superdosis von Mechaniten, die eine bestimmte Fähigkeit trainieren.\n\nDie Dosis wird über die Augenhöhlen verabreicht. Einmal im Gehirn freigesetzt, wandeln sich die Mechaniten bei Bedarf in Nervengewebe um und verbessern dabei eine bestimmte Fähigkeit des Subjekts.</SkillNeurotrainerDescription>
   <!-- EN: {USER_labelShort} used {1} neurotrainer to go from level {2} to level {3}. -->
@@ -1163,6 +1163,10 @@
   <!-- EN: Deep drill resources exhausted. -->
   <DeepDrillExhaustedNoFallback>Die unterirdische Ressourcen sind erschöpft.</DeepDrillExhaustedNoFallback>
 
+  <!-- reloading ammo -->
+  <!-- EN: Remaining charges -->
+  <ChargesRemaining>Verbleibende Ladungen</ChargesRemaining>
+  
   <!-- Learning helper -->
   <!-- EN: Learning helper -->
   <LearningHelper>Hilfe</LearningHelper>
@@ -1274,6 +1278,18 @@
   <Reward_CampLoot>du kannst alles aus dem Lager mitnehmen</Reward_CampLoot>
   <!-- EN: Camp loot -->
   <Reward_CampLoot_Label>Beute des Lagers</Reward_CampLoot_Label>
+  <!-- EN: the visitors will work and fight for you -->
+  <Reward_VisitorsHelp>TODO</Reward_VisitorsHelp>
+  <!-- EN: Visitors' help -->
+  <Reward_VisitorsHelp_Label>TODO</Reward_VisitorsHelp_Label>
+  <!-- EN: New psylink level -->
+  <Reward_BestowingCeremony_Label>TODO</Reward_BestowingCeremony_Label>
+  <!-- EN: {PAWNNAME} gains psylink -->
+  <Reward_BestowingCeremony>TODO</Reward_BestowingCeremony>
+  <!-- EN: {TITLE} title -->
+  <Reward_Title_Label>TODO</Reward_Title_Label>
+  <!-- EN: {PAWNNAME} gains {TITLE} title from {FACTION} -->
+  <Reward_Title>TODO</Reward_Title>
   <!-- EN: value {0} -->
   <TotalValue>Wert {0}</TotalValue>
   
@@ -1284,6 +1300,12 @@
   <NotBonded>Noch nicht gebunden</NotBonded>
   <!-- EN: bonded to someone else -->
   <BladelinkBondedToSomeoneElse>an jemand anderen gebunden</BladelinkBondedToSomeoneElse>
+  <!-- EN: (existing bond) -->
+  <BladelinkAlreadyBonded>TODO</BladelinkAlreadyBonded>
+  <!-- EN: A person can only bond with one persona weapon at a time.\n\nTo equip and bond with {WEAPON_labelShort}, {PAWN_nameDef}'s currently bonded weapon {BONDEDWEAPON_labelShort} must first be destroyed. -->
+  <BladelinkAlreadyBondedDialog>TODO</BladelinkAlreadyBondedDialog>
+  <!-- EN: {PAWN_nameDef} is already bonded to {BONDEDWEAPON_labelShort} -->
+  <BladelinkAlreadyBondedMessage>TODO</BladelinkAlreadyBondedMessage>
 
   <!-- Biocoded weapons -->
   <!-- EN: biocoded {0} -->
@@ -1311,4 +1333,9 @@
   <!-- EN: Caused by: {0} -->
   <CausedByHediff>Verursacht durch: {0}</CausedByHediff>
   
+  <!-- UNUSED -->
+  <ForceExitAndRemoveMapCountdown>{0} bis Abreise</ForceExitAndRemoveMapCountdown>
+  <ForceExitAndRemoveMapCountdownTip>Deine Kolonisten bilden automatisch die Karawane und verlassen dieses Gebiet in {0}.</ForceExitAndRemoveMapCountdownTip>
+  <CannotResearchNoBench>Kann nicht forschen: Kein Labortisch</CannotResearchNoBench>
+
 </LanguageData>
