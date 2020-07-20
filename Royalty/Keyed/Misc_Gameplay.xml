@@ -60,21 +60,21 @@
   <!-- EN: Focus effect impacted by -->
   <MeditationFocusImpacted>Fokuseffekt beeinflusst durch</MeditationFocusImpacted>
   <!-- EN: {1} per nearby animus stone (max {0}) -->
-  <MeditationFocusPerAnimusStoneAbstract>TODO</MeditationFocusPerAnimusStoneAbstract>
+  <MeditationFocusPerAnimusStoneAbstract>{1} pro nahem Animusstein (max {0})</MeditationFocusPerAnimusStoneAbstract>
   <!-- EN: {2} per nearby animus stone ({0} / {1}) -->
-  <MeditationFocusPerAnimusStone>TODO</MeditationFocusPerAnimusStone>
+  <MeditationFocusPerAnimusStone>{2} pro nahem Animusstein ({0} / {1})</MeditationFocusPerAnimusStone>
   <!-- EN: Max {1} per nearby sculpture depending on quality (max {0}) -->
-  <MeditationFocusPerSculptureAbstract>TODO</MeditationFocusPerSculptureAbstract>
+  <MeditationFocusPerSculptureAbstract>Max {1} pro naher Skulptur, abhängig von der Qualität (max {0})</MeditationFocusPerSculptureAbstract>
   <!-- EN: Max {2} per nearby sculpture depending on quality ({0} / {1}) -->
-  <MeditationFocusPerSculpture>TODO</MeditationFocusPerSculpture>
+  <MeditationFocusPerSculpture>Max {2} pro naher Skulptur, abhängig von der Qualität ({0} / {1})</MeditationFocusPerSculpture>
   <!-- EN: Per nearby grave {1} if empty, {2} for human corpse (up to {0}) -->
-  <MeditationFocusPerGraveAbstract>TODO</MeditationFocusPerGraveAbstract>
+  <MeditationFocusPerGraveAbstract>Pro nahem Grab: {1} wenn leer, {2} für menschlicher Leiche (bis zu {0})</MeditationFocusPerGraveAbstract>
   <!-- EN: Per nearby grave {2} if empty, {3} for human corpse ({0} / {1}) -->
-  <MeditationFocusPerGrave>TODO</MeditationFocusPerGrave>
+  <MeditationFocusPerGrave>Pro nahem Grab: {2} wenn leer, {3} für menschlicher Leiche ({0} / {1})</MeditationFocusPerGrave>
   <!-- EN: {1} per nearby lit flame source (up to {0}) -->
-  <MeditationFocusPerFlameAbstract>TODO</MeditationFocusPerFlameAbstract>
+  <MeditationFocusPerFlameAbstract>{1} pro Flamme in der Nähe (bis zu {0})</MeditationFocusPerFlameAbstract>
   <!-- EN: {2} per nearby lit flame source ({0} / {1}) -->
-  <MeditationFocusPerFlame>TODO</MeditationFocusPerFlame>
+  <MeditationFocusPerFlame>{2} pro Flamme in der Nähe ({0} / {1})</MeditationFocusPerFlame>
   <!-- EN: Psyfocus gain rate: {0}/d -->
   <PsyfocusPerDayOfMeditation>Psyfokuszunahmerate: {0}/d</PsyfocusPerDayOfMeditation>
   <!-- EN: Desired psyfocus -->
@@ -114,7 +114,7 @@
   <AbilitySpeechStatInfo>{ORGANIZER_labelShort}'s {1}</AbilitySpeechStatInfo>
 
   <!-- EN: Total meditation today: {0} (progress multiplier {1}) -->
-  <TotalMeditationToday>TODO</TotalMeditationToday>
+  <TotalMeditationToday>Gesamte heutige Meditation: {0} (Multiplikator {1}) </TotalMeditationToday>
   <!-- EN: progress {0} -->
   <ProgressToNextSubplant>Fortschritt {0}</ProgressToNextSubplant>
   <!-- EN: Begin linking ritual -->
@@ -122,7 +122,7 @@
   <!-- EN: Need {0} {1} here (have {2}) -->
   <BeginLinkingRitualNeedSubplants>{0}x {1} benötigt (nur {2} vorhanden)</BeginLinkingRitualNeedSubplants>
   <!-- EN: Need {0} psylink focus type -->
-  <BeginLinkingRitualNeedFocus>{0}er Psylinkfokus benötigt</BeginLinkingRitualNeedFocus>
+  <BeginLinkingRitualNeedFocus>{0}er Psylinkfokus-Typ benötigt</BeginLinkingRitualNeedFocus>
   <!-- EN: Need a free, reachable spot within 3 cells for linking -->
   <BeginLinkingRitualNeedLinkSpot>Freier, erreichbarer Platz von mindestens 3 Zellen benötigt</BeginLinkingRitualNeedLinkSpot>
   <!-- EN: Linking ritual completed -->
@@ -131,20 +131,16 @@
   <LetterTextLinkingRitualCompleted>{PAWN_labelShort} hat die rituelle Bindung mit {LINKABLE_gender ? dem : der} {LINKABLE_labelShort} abgeschlossen.\n\n{PAWN_pronoun} verfügt nun über einen verbesserten Psylink und darf neue Psykräfte verwenden.</LetterTextLinkingRitualCompleted>
 
   <!-- EN: Land shuttle here -->
-  <LandHere>TODO</LandHere>
+  <LandHere>Shuttle hier landen lassen</LandHere>
   <!-- EN: Destination is out of range. -->
-  <MessageShuttleDestinationIsTooFar>TODO</MessageShuttleDestinationIsTooFar>
+  <MessageShuttleDestinationIsTooFar>Ziel ist außer Reichweite.</MessageShuttleDestinationIsTooFar>
 
   <!-- EN: Do bestowing ceremony -->
-  <BeginCeremony>TODO</BeginCeremony>
+  <BeginCeremony>Starte Verleihungszeremonie</BeginCeremony>
   <!-- EN: The bestower is offended that {PAWN_definite}'s throneroom does not satisfy the requirements of the title of {TITLE}. The bestowing ceremony has been cancelled. -->
-  <BestowingCeremonyThroneroomRequirementsNotSatisfied>TODO</BestowingCeremonyThroneroomRequirementsNotSatisfied>
+  <BestowingCeremonyThroneroomRequirementsNotSatisfied>Der Titelverleiher ist verärgert, dass der Thronsaal von {PAWN_definite} nicht dem Anspruch eines {TITLE} entspricht. Die Verleihungszeremonie wurde abgebrochen.</BestowingCeremonyThroneroomRequirementsNotSatisfied>
 
   <!-- EN: Not all required cargo is loaded yet! -->
-  <ShuttleRequiredItemsNotSatisfied>TODO</ShuttleRequiredItemsNotSatisfied>
-  <!-- UNUSED -->
-  <ThroneTitleStature>Geeignet für Titel: {0}</ThroneTitleStature>
-  <ThronePrevTitleStature>Vorheriger Titel zufriedengestellt: {0}</ThronePrevTitleStature>
-  <ThroneNextTitleStature>Nächster Titel zufriedengestellt: {0}</ThroneNextTitleStature>
+  <ShuttleRequiredItemsNotSatisfied>Notwendige Fracht noch nicht vollständig eingeladen!</ShuttleRequiredItemsNotSatisfied>
 
 </LanguageData>
