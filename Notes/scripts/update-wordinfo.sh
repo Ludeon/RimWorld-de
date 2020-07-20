@@ -20,7 +20,7 @@ unique() { sort --unique ; }
 
 # Extract the element's content used by the translation system from the stream
 extract_tag_content() {
-  grep -aE '(label|labelMale|labelMalePlural|labelFemale|labelFemalePlural|pawnSingular|pawnsPlural|title|titleFemale|titleShort|titleShortFemale)>' \
+  grep -aE '(label|labelMale|labelMalePlural|labelFemale|labelFemalePlural|pawnSingular|pawnsPlural|title|titleFemale|titleShort|titleShortFemale|chargeNoun)>' \
   | sed 's/^.*>\([^<]*\)<.*$/\1/' ;
 }
 extract_tag_male_content() { grep -aE '(labelMale|labelMalePlural)>' | sed 's/^.*>\([^<]*\)<.*$/\1/' ; }
