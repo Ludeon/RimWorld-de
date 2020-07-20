@@ -17,9 +17,11 @@
   <FirstSummerWarning>Der Sommer hat begonnen! Aber der Winter naht.\n\nDeine Ernte wird der Winterkälte nicht lange standhalten können. Stelle sicher, dass du genug Nahrungsmittel hast.\n\nDu kannst einen begehbaren Kühlraum bauen, um die Haltbarkeit der Nahrung zu erhöhen.\n\nFür deine Kolonisten kannst du dicke Kleidung, wie z.B. Parkas, kaufen, stehlen oder herstellen, um sie vor der Kälte zu schützen.</FirstSummerWarning>
 
   <!-- EN: Relations with {0} have broken down completely. They are now hostile to you. -->
-  <LetterRelationsChange_Hostile>Die Beziehung zur Fraktion '{0}' hat sich verschlechtert. Sie sind jetzt deine Feinde.</LetterRelationsChange_Hostile>  
+  <LetterRelationsChange_Hostile>Die Beziehung zur Fraktion '{0}' ist komplett zusammengebrochen. Sie sind jetzt deine Feinde.</LetterRelationsChange_Hostile>  
   <!-- EN: They will conduct periodic raids on your colony and caravans, and refuse to trade with you. If you want to improve relations, you can still offer them gifts using caravans or transport pods.\n\nThis happened because goodwill ({0}) has fallen below {1}. In order to restore neutral relations, goodwill must reach {2} again. -->
-  <LetterRelationsChange_HostileGoodwillDescription>Sie werden regelmäßig Angriffe auf deine Kolonie und Karawanen starten und sich weigern, mit dir zu handeln. Wenn du die Beziehungen verbessern willst, kannst du ihnen noch immer Geschenke mit einer Karawane oder Transportkapsel zukommen lassen.\n\nDas passierte, da dein Ruf ({0}) unter {1} gefallen ist. Um wieder neutral zu werden, muss dein Ruf wieder auf {2} ansteigen.</LetterRelationsChange_HostileGoodwillDescription>  
+  <LetterRelationsChange_HostileGoodwillDescription>Sie werden regelmäßig Angriffe auf deine Kolonie und Karawanen starten und sich weigern, mit dir zu handeln. Wenn du die Beziehungen verbessern willst, kannst du ihnen noch immer Geschenke mit einer Karawane oder Transportkapsel zukommen lassen.\n\nDas passierte, da dein Ruf ({1}) unter {2} gefallen ist. Um wieder neutral zu werden, muss dein Ruf wieder auf {3} ansteigen.</LetterRelationsChange_HostileGoodwillDescription>  
+  <!-- EN: Allies will sometimes arrive to help fight your enemies when you are under attack. You can also call them for help at any time, at a cost of goodwill.\n\nYou've become allies because your goodwill ({0}) has risen past {1}. If goodwill falls below {2}, relations will return to neutral. -->
+  <LetterRelationsChange_AllyGoodwillDescription>TODO</LetterRelationsChange_AllyGoodwillDescription>
 
   <!-- EN: Relations with {0} have warmed. They now consider you neutral and will no longer attack you. -->
   <LetterRelationsChange_NeutralFromHostile>Die Beziehung zur Fraktion '{0}' hat sich verbessert. Sie sehen dich jetzt als neutrale Fraktion an und werden dich nicht mehr angreifen.</LetterRelationsChange_NeutralFromHostile>
@@ -32,9 +34,9 @@
   <LetterRelationsChange_NeutralFromAllyGoodwillDescription>Obwohl sie weiterhin friedlich mit dir interagieren werden, werden sie keine weiteren Kämpfer zu deiner Unterstützung schicken.\n\nDas passierte, da dein Ruf ({1}) unter den Wert von {2} gefallen ist. Wenn der Ruf unter {3} fällt, wird die Fraktion '{0}' dir feindlich gesinnt sein. Wenn der Ruf über {4} steigt, sehen sie dich wieder als ihren Verbündeten an.</LetterRelationsChange_NeutralFromAllyGoodwillDescription>
   
   <!-- EN: Relations with {0} have become very close. They now consider you an ally. -->
-  <LetterRelationsChange_Ally>Die Beziehung zur Fraktion '{0}' hat sich verbessert. Sie sehen dich jetzt als ihren Verbündeten an.</LetterRelationsChange_Ally>
+  <LetterRelationsChange_Ally>Die Beziehung zur Fraktion '{0}' ist sehr eng geworden. Sie sehen dich jetzt als ihren Verbündeten an.</LetterRelationsChange_Ally>
   <!-- EN: Allies will sometimes arrive to help fight your enemies when you are under attack. You can also call them for help at any time, at a cost of goodwill.\n\nYou've become allies because your goodwill ({0}) has risen past {1}. If goodwill falls below {2}, relations will return to neutral. -->
-  <LetterRelationsChange_AllyGoodwillDescription>Verbündete kommen dir ab und zu zur Hilfe, wenn du angegriffen wirst. Du kannst sie auch jederzeit um Hilfe bitten, das kostet dich allerdings etwas Ruf.\n\nIhr wurdet Verbündete, da dein Ruf ({0}) über {1} gestiegen ist. Wenn der Ruf unter {2} fällt, wirst du nur noch als neutrale Fraktion angesehen.</LetterRelationsChange_AllyGoodwillDescription>
+  <LetterRelationsChange_AllyGoodwillDescription>Verbündete kommen dir ab und zu zur Hilfe, wenn du angegriffen wirst. Du kannst sie auch jederzeit um Hilfe bitten, das kostet dich allerdings etwas Ruf.\n\nIhr wurdet Verbündete, da dein Ruf ({1}) über {2} gestiegen ist. Wenn der Ruf unter {3} fällt, wirst du nur noch als neutrale Fraktion angesehen.</LetterRelationsChange_AllyGoodwillDescription>
 
   <!-- EN: goodwill -->
   <goodwill>Ruf</goodwill>
@@ -138,7 +140,7 @@
   <LetterLeaderChanged>{OLDLEADER_nameFull} ist nicht länger {1} der Fraktion '{0}'.</LetterLeaderChanged>
 
   <!-- EN: The new {0} is {NEWLEADER_nameFull}. -->
-  <LetterNewLeader>Neuer {0} ist {NEWLEADER_nameFull}.</LetterNewLeader>
+  <LetterNewLeader>{NEWLEADER_gender ? Neuer : Neue} {0} ist {NEWLEADER_nameFull}.</LetterNewLeader>
 
   <!-- EN: The final straw was: {0} -->
   <FinalStraw>Der auslösende Faktor war: {0}</FinalStraw>
@@ -282,15 +284,15 @@
   <!-- EN: Your transport pods have arrived at {0}. -->
   <LetterTransportPodsLandedInEnemyBase>Deine Transportkapseln sind bei {0} eingetroffen.</LetterTransportPodsLandedInEnemyBase>
   <!-- EN: The shuttle has arrived at {0}. -->
-  <LetterShuttleLandedInEnemyBase>Dein Shuttle ist bei {0} eingetroffen.</LetterShuttleLandedInEnemyBase>
+  <LetterShuttleLandedInEnemyBase>Das Shuttle ist bei {0} eingetroffen.</LetterShuttleLandedInEnemyBase>
 
   <!-- Faction base defeated -->
   <!-- EN: Base destroyed -->
   <LetterLabelFactionBaseDefeated>Basis zerstört</LetterLabelFactionBaseDefeated>
   <!-- EN: The enemy settlement {0} has been destroyed.\n\nIn {1}, your caravan will be attacked by enemies. They will begin sending forces to attack the caravan, unless it reforms and leaves. -->
-  <LetterFactionBaseDefeated>Die gegnerische Niederlassung {0} wurde zerstört.\n\nIn {1} wird die Karawane von Feinden angegriffen. Sie werden Verstärkungen schicken um deine Karawane anzugreifen, bis sie das Gebiet verlassen hat.</LetterFactionBaseDefeated>
+  <LetterFactionBaseDefeated>Die feindliche Siedlung {0} wurde zerstört.\n\nIn {1} wird deine Karawane von Feinden angegriffen werden. Sie werden damit beginnen, Truppen zu entsenden, um die Karawane anzugreifen, es sei denn, sie reformiert sich und zieht ab.</LetterFactionBaseDefeated>
   <!-- EN: Since this was their last settlement, {0} has been defeated. -->
-  <LetterFactionBaseDefeated_FactionDestroyed>Das war die letzte Niederlassung von '{0}'. Das bedeutet, dass es diese Fraktion nicht mehr gibt.</LetterFactionBaseDefeated_FactionDestroyed>
+  <LetterFactionBaseDefeated_FactionDestroyed>Da diese Siedlung die letzte war, ist {0} besiegt worden.</LetterFactionBaseDefeated_FactionDestroyed>
 
   <!-- Quest completed -->
   <!-- EN: Quest completed -->
@@ -426,7 +428,7 @@
 
   <!-- Surgery -->
   <!-- EN: Surgery failed on {PATIENT_labelShort} -->
-  <LetterLabelSurgeryFailed>Operation an {PATIENT_labelShort} ist fehlgeschlagen</LetterLabelSurgeryFailed>
+  <LetterLabelSurgeryFailed>Operation von {PATIENT_labelShort} fehlgeschlagen</LetterLabelSurgeryFailed>
   <!-- EN: {SURGEON_labelShort} has failed in a minor way while operating on {PATIENT_labelShort} ({RECIPE_label}). -->
   <MessageMedicalOperationFailureMinor>{SURGEON_labelShort} hat bei der Operation an {PATIENT_labelShort} einen kleinen Fehler gemacht ({RECIPE_label}).</MessageMedicalOperationFailureMinor> <!-- NewTemp rename to LetterTextOperationFailureMinor globally-->
   <!-- EN: {SURGEON_labelShort} has failed catastrophically while operating on {PATIENT_labelShort} ({RECIPE_label}). -->
@@ -541,8 +543,8 @@
   <LetterMechClusterArrived>Mechanoiden sind eingetroffen.</LetterMechClusterArrived>
 
   <!-- EN: Caravan detected -->
-  <LetterLabelSiteCountdownStarted>Karawane wurde entdeckt</LetterLabelSiteCountdownStarted>
+  <LetterLabelSiteCountdownStarted>Karawane entdeckt</LetterLabelSiteCountdownStarted>
   <!-- EN: Your caravan has been detected. In {0}, reinforcing {1} from {2} will begin arriving in the area.\n\nReform your caravan and begin moving to avoid the {1}. A timer counting down to their arrival is now visible. -->
-  <LetterTextSiteCountdownStarted>Deine Karawane wurde entdeckt. In {0} wird Verstärkung ({1}) von '{2}' im Gebiet eintreffen.\n\nReformiere deine Karawane und verlasse das Gebiet um {1} zu entgehen. Der Timer bis zur Ankunft ist jetzt sichtbar.</LetterTextSiteCountdownStarted>
+  <LetterTextSiteCountdownStarted>Deine Karawane wurde entdeckt. In {0} werden {1} der Fraktion '{2}' als Verstärkung in dem Gebiet eintreffen.\n\nReformiere deine Karawane und setze sie in Bewegung, um die {1} zu meiden. Ein Countdown zeigt, wann mit ihrer Ankunft zu rechnen ist.</LetterTextSiteCountdownStarted>
 
 </LanguageData>

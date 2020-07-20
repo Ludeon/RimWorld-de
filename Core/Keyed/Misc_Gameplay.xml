@@ -177,7 +177,7 @@
   <!-- EN: Est. time to destination: {0} days -->
   <CaravanEstimatedTimeToDestination>Voraussichtliche Ankunftszeit: {0} Tage</CaravanEstimatedTimeToDestination>
   <!-- EN: Route travel time: {0} days -->
-  <CaravanEstimatedDaysToDestination>Reisezeit der Route: {0} Tage</CaravanEstimatedDaysToDestination>
+  <CaravanEstimatedDaysToDestination>Reisezeit dieser Route: {0} Tage</CaravanEstimatedDaysToDestination>
   <!-- EN: Immobilized: Too much weight. -->
   <CaravanImmobilizedByMass>Bewegungsunfähig: Zu viel Gewicht.</CaravanImmobilizedByMass>
   <!-- EN: Out of food. -->
@@ -247,9 +247,9 @@
   <!-- EN: Map -->
   <Map>Karte</Map>
   <!-- EN: {0} until enemies arrive -->
-  <CaravanDetectedRaidCountdown>{0} bis Gegner eintreffen</CaravanDetectedRaidCountdown>
+  <CaravanDetectedRaidCountdown>Ankunft von Feinden in {0}</CaravanDetectedRaidCountdown>
   <!-- EN: Enemy reinforcements will arrive in this area in {0}. -->
-  <CaravanDetectedRaidCountdownTip>Gegnerische Verstärkung wird dieses Gebiet in {0} erreichen.</CaravanDetectedRaidCountdownTip>
+  <CaravanDetectedRaidCountdownTip>Feindliche Verstärkungen werden in {0} in diesem Gebiet eintreffen.</CaravanDetectedRaidCountdownTip>
   <!-- EN: Room -->
   <Room>Raum</Room>
   <!-- EN: Beauty here -->
@@ -369,7 +369,7 @@
   <!-- EN: {0} with {1} -->
   <ProximitySingleGoodwillChange>{0} mit {1}</ProximitySingleGoodwillChange>
   <!-- EN: Too dangerous to re-enter for {0}. -->
-  <EnterCooldown>Zu gefährlich. Kann erst in {0} Tagen wieder betreten werden.</EnterCooldown>
+  <EnterCooldown>Zu gefährlich. Kann erst in {0} wieder betreten werden.</EnterCooldown>
   <!-- EN: Caravan -->
   <Caravan>Karawane</Caravan>
   <!-- EN: there may be danger there. -->
@@ -619,7 +619,7 @@
   <!-- EN: using {0} on {1}. -->
   <UsingVerb>benutzt {0} an {1}.</UsingVerb>
   <!-- EN: using {0}. -->
-  <UsingVerbNoTarget>verwendet {0}.</UsingVerbNoTarget>
+  <UsingVerbNoTarget>benutzt {0}.</UsingVerbNoTarget>
   <!-- EN: area -->
   <AreaLower>Gebiet</AreaLower>
   <!-- EN: cowering. -->
@@ -1023,7 +1023,7 @@
   <!-- EN: skilltrainer ({0}) -->
   <SkillNeurotrainerLabel>Fähigkeitstrainer ({0})</SkillNeurotrainerLabel>
   <!-- EN: Use skilltrainer to learn {0} -->
-  <SkillNeurotrainerUseLabel>Benutze Fähigkeitstrainer, um die Fähigkeit '{0}' zu lernen</SkillNeurotrainerUseLabel>
+  <SkillNeurotrainerUseLabel>Benutze Fähigkeitstrainer, um '{0}' zu lernen</SkillNeurotrainerUseLabel>
   <!-- EN: A one-use super-dose of mechanites which trains a specific skill.\n\nThe dose is administered through the orbit of the eye. Once released into the brain, the mechanites quickly improve the subject's skills in a specific area, transmuting themselves into neural tissue as needed. -->
   <SkillNeurotrainerDescription>Eine einmalig verwendbare Superdosis von Mechaniten, die eine bestimmte Fähigkeit trainieren.\n\nDie Dosis wird über die Augenhöhlen verabreicht. Einmal im Gehirn freigesetzt, wandeln sich die Mechaniten bei Bedarf in Nervengewebe um und verbessern dabei eine bestimmte Fähigkeit des Subjekts.</SkillNeurotrainerDescription>
   <!-- EN: {USER_labelShort} used {1} neurotrainer to go from level {2} to level {3}. -->
@@ -1281,9 +1281,9 @@
   <!-- EN: the visitors will work and fight for you -->
   <Reward_VisitorsHelp>die Besucher werden für dich arbeiten und kämpfen</Reward_VisitorsHelp>
   <!-- EN: Visitors' help -->
-  <Reward_VisitorsHelp_Label>Hilfe der Besucher</Reward_VisitorsHelp_Label>
+  <Reward_VisitorsHelp_Label>Unterstützung der Besucher</Reward_VisitorsHelp_Label>
   <!-- EN: New psylink level -->
-  <Reward_BestowingCeremony_Label>Neuer Psylink Level</Reward_BestowingCeremony_Label>
+  <Reward_BestowingCeremony_Label>Neue Psylinkstufe</Reward_BestowingCeremony_Label>
   <!-- EN: {PAWNNAME} gains psylink -->
   <Reward_BestowingCeremony>{PAWNNAME} erhält Psylink</Reward_BestowingCeremony>
   <!-- EN: Shuttle loot -->
@@ -1291,9 +1291,9 @@
   <!-- EN: you can deconstruct and loot the shuttle -->
   <Reward_ShuttleLoot>du kannst das Shuttle plündern und zerlegen</Reward_ShuttleLoot>
   <!-- EN: {TITLE} title -->
-  <Reward_Title_Label>{TITLE}</Reward_Title_Label>
+  <Reward_Title_Label>{TITLE}-Titel</Reward_Title_Label>
   <!-- EN: {PAWNNAME} gains {TITLE} title from {FACTION} -->
-  <Reward_Title>{PAWNNAME} erhält den Titel {TITLE} von der Fraktion '{FACTION}'</Reward_Title>
+  <Reward_Title>{PAWNNAME} erhält den {TITLE}-Titel von der Fraktion '{FACTION}'</Reward_Title>
   <!-- EN: value {0} -->
   <TotalValue>Wert {0}</TotalValue>
   
@@ -1305,11 +1305,11 @@
   <!-- EN: bonded to someone else -->
   <BladelinkBondedToSomeoneElse>an jemand anderen gebunden</BladelinkBondedToSomeoneElse>
   <!-- EN: (existing bond) -->
-  <BladelinkAlreadyBonded>(vorhandener Verbund)</BladelinkAlreadyBonded>
+  <BladelinkAlreadyBonded>(bereits gebunden)</BladelinkAlreadyBonded>
   <!-- EN: A person can only bond with one persona weapon at a time.\n\nTo equip and bond with {WEAPON_labelShort}, {PAWN_nameDef}'s currently bonded weapon {BONDEDWEAPON_labelShort} must first be destroyed. -->
-  <BladelinkAlreadyBondedDialog>Eine Person kann nur mit einer Persona Waffe verbunden sein.\n\nUm {WEAPON_labelShort} auszurüsten und zu verbinden muss die derzeitig mit {PAWN_nameDef} verbundene Waffe {BONDEDWEAPON_labelShort} zerstört werden.</BladelinkAlreadyBondedDialog>
+  <BladelinkAlreadyBondedDialog>Eine Person kann sich immer nur mit einer Persona-Waffe verbinden.\n\Wenn {PAWN_nameDef} die Waffe '{WEAPON_labelShort}' ausrüsten und eine Bindung mit ihr eingehen soll, muss zuerst {PAWN_possessive}e derzeit gebundene Waffe '{BONDEDWEAPON_labelShort}' zerstört werden.</BladelinkAlreadyBondedDialog>
   <!-- EN: {PAWN_nameDef} is already bonded to {BONDEDWEAPON_labelShort} -->
-  <BladelinkAlreadyBondedMessage>{PAWN_nameDef} ist bereits mit {BONDEDWEAPON_labelShort} verbunden</BladelinkAlreadyBondedMessage>
+  <BladelinkAlreadyBondedMessage>{PAWN_nameDef} ist bereits an {BONDEDWEAPON_labelShort} gebunden</BladelinkAlreadyBondedMessage>
 
   <!-- Biocoded weapons -->
   <!-- EN: biocoded {0} -->

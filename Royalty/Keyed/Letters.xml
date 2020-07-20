@@ -8,7 +8,7 @@
   <LetterLabelGainedRoyalTitle>{TITLE}-Titel erhalten: {PAWN_labelShort}</LetterLabelGainedRoyalTitle>
 
   <!-- EN: Permit points awarded: {0}. -->
-  <PermitPointsAwarded>Berechtigungspunkte erhalten: {0}.</PermitPointsAwarded>
+  <PermitPointsAwarded>Bemächtigungspunkte erhalten: {0}</PermitPointsAwarded>
 
   <!-- EN: This title requires apparel of {1} quality or better. -->
   <LetterRoyalTitleApparelQualityRequirement>Dieser Titel erfordert Kleidung in {1}er Qualität oder besser.</LetterRoyalTitleApparelQualityRequirement>
@@ -113,9 +113,9 @@
   <!-- EN: It was remarkably inspiring, full of intensity and purpose. -->
   <LetterInspirationalSpeech>Sie war erstaunlich inspirierend, voller Intensität und Entschlossenheit.</LetterInspirationalSpeech>
   <!-- EN: The following people were particularly moved by the speech and are now inspired: -->
-  <LetterSpeechInspiredListeners>Die folgenden Personen waren von der Rede besonders ergriffen und sind jetzt inspiriert:</LetterSpeechInspiredListeners>
+  <LetterSpeechInspiredListeners>Die folgenden Personen fanden die Rede besonders bewegend und sind nun inspiriert:</LetterSpeechInspiredListeners>
   <!-- EN: Thanks to {SPEAKER_nameIndef}'s remarkable speech, {PAWN_nameIndef} has experienced an inspiration! -->
-  <LetterSpeechInspiration>Dank der außergewöhnlichen Rede von {SPEAKER_nameIndef} wurde {PAWN_nameIndef} inspiriert!</LetterSpeechInspiration>
+  <LetterSpeechInspiration>Dank der beeindruckenden Rede von {SPEAKER_nameIndef} hat {PAWN_nameIndef} eine Inspiration erfahren!</LetterSpeechInspiration>
   <!-- EN: Because the speech was interrupted after only {0} completed, it wasn't as effective. -->
   <LetterSpeechInterrupted>Da die Rede nach nur {0} unterbrochen wurde, war sie nicht sehr effektiv.</LetterSpeechInterrupted>
   <!-- EN: {ORGANIZER_bestRoyalTitleDef}'s speech was cancelled before reaching 50% completion. It had no effect. -->
@@ -149,7 +149,11 @@
   <!-- EN: {USER_labelShort} has gained a new level of psylink! {USER_pronoun} can now use psycasts of that higher level, but {USER_pronoun} needs to learn them first. -->
   <LetterPsylinkLevelGained_NotFirst>{USER_labelShort} hat eine neue Psylinkstufe erhalten! {USER_pronoun} kann nun Psykräfte entsprechend dieser Stufe wirken, doch zunächst müssen sie erlernt werden, sofern noch nicht geschehen.</LetterPsylinkLevelGained_NotFirst>
   <!-- EN: Upon gaining the new psylink level, {USER_labelShort} automatically learned these psycasts: {2} -->
-  <LetterPsylinkLevelGained_PsycastLearned>{USER_labelShort} hat durch Erreichen einer neuen Psylinkstufe automatisch folgende Psykraft erlernt: {2}.</LetterPsylinkLevelGained_PsycastLearned>
+  <LetterPsylinkLevelGained_PsycastLearned>{USER_labelShort} hat durch Erreichen einer neuen Psylinkstufe automatisch folgende Psykräfte erlernt: {2}</LetterPsylinkLevelGained_PsycastLearned>
+  
+  <!-- Abilities -->
+  <!-- EN: Thanks to {CASTER_nameIndef}'s psychic suggestion, {PAWN_nameIndef} has experienced an inspiration! -->
+  <LetterPsychicInspiration>Dank der psychischen Suggestion von {CASTER_nameIndef} hat {PAWN_nameIndef} eine Inspiration erfahren!</LetterPsychicInspiration>
   
   <!-- Abilities -->
   <!-- EN: Thanks to {CASTER_nameIndef}'s psychic suggestion, {PAWN_nameIndef} has experienced an inspiration! -->
@@ -157,11 +161,11 @@
 
   <!-- Join Offer -->
   <!-- EN: Join offer: {PAWN_nameDef} -->
-  <LetterJoinOfferLabel>Beitrittsgesuch: {PAWN_nameDef}</LetterJoinOfferLabel>
+  <LetterJoinOfferLabel>Beitrittsangebot: {PAWN_nameDef}</LetterJoinOfferLabel>
   <!-- EN: {PAWN_nameDef} wishes to join your faction. -->
   <LetterJoinOfferTitle>{PAWN_nameDef} möchte deiner Fraktion beitreten.</LetterJoinOfferTitle>
   <!-- EN: {PAWN_nameDef} believes that {PAWN_pronoun} is happy at {MAP_definite}. {PAWN_pronoun} wishes to join you permanently. -->
-  <LetterJoinOfferText>{PAWN_nameDef} ist der Meinung, dass {PAWN_pronoun} in {MAP_definite} glücklich sein wird. {PAWN_pronoun} möchte dauerhaft deiner Kolonie beitreten.</LetterJoinOfferText>
+  <LetterJoinOfferText>{PAWN_nameDef} glaubt, dass {PAWN_pronoun} in {MAP_definite} ein glückliches Leben haben wird. {PAWN_pronoun} möchte dauerhaft deiner Kolonie beitreten.</LetterJoinOfferText>
   <!-- EN: Accept -->
   <LetterJoinOfferAccept>Akzeptieren</LetterJoinOfferAccept>
 
@@ -170,7 +174,7 @@
   <!-- EN: {TARGET_definite} did not show up to the bestowing ceremony. The ceremony has been cancelled. -->
   <LetterTextBestowingCeremonyExpired>{TARGET_definite} ist nicht zur Verleihungszeremonie erschienen. Die Zeremonie wurde abgesagt.</LetterTextBestowingCeremonyExpired>
 
-  <!-- EN: Who should be credited with {0} for defeating the bandit camp? -->
-  <LetterTextHonorAward_BanditCamp>Wem soll der Sieg über das Banditenlager anerkannt werden und {0} erhalten?</LetterTextHonorAward_BanditCamp>
+  <!-- EN: Who should be credited with {0} for fulfilling the trade request? -->
+  <LetterTextHonorAward>Wem soll {0} für die Erfüllung des Handelsangebots gutgeschrieben werden?</LetterTextHonorAward>
 
 </LanguageData>

@@ -72,14 +72,14 @@
     <li>workInfo(lodgersWillNotWork==true,lodgersCount>=2,priority=1)->\n\n[lodgersLabelSingOrPluralDef] verweigern jegliche Arbeit.</li>
     <li>commonDescEnding->[helpersParagraph]</li>
     <li>enemyGroupsParagraph->[threatDescriptionParagraph]</li>
-    <li>threatDescriptionParagraph(threatType==Raids,threatCount==1,threatSize==1)->wird ein Überfall in folgender Größenordnung stattfinden:\n\n[threatExample]</li>
-    <li>threatDescriptionParagraph(threatType==Raids,threatCount==1,threatSize>1)->wird ein Überfall mit [threatSize]-facher Stärke und in folgender Größenordnung stattfinden:\n\n[threatExample]</li>
-    <li>threatDescriptionParagraph(threatType==Raids,threatCount>1,threatSize==1)->werden [threatCount] Überfalle in folgender Größenordnung stattfinden:\n\n[threatExample]</li>
-    <li>threatDescriptionParagraph(threatType==Raids,threatCount>1,threatSize>1)->werden [threatCount] Überfalle mit [threatSize]-facher Stärke und in folgender Größenordnung stattfinden:\n\n[threatExample]</li>
-    <li>threatDescriptionParagraph(threatType==MechClusters,threatCount==1,threatSize==1)->wird ein Mech-Cluster in der Nähe landen.</li>
-    <li>threatDescriptionParagraph(threatType==MechClusters,threatCount==2,threatSize==1)->werden zwei Mech-Cluster in der Nähe landen.</li>
-    <li>threatDescriptionParagraph(threatType==MechClusters,threatCount==1,threatSize>1)->wird ein Mech-Cluster von [threatSize]-facher Größe in der Nähe landen.</li>
-    <li>threatDescriptionParagraph(threatType==MechClusters,threatCount==2,threatSize>1)->werden zwei Mech-Cluster von [threatSize]-facher Größe in der Nähe landen.</li>
+    <li>threatDescriptionParagraph(threatType==Raids,threatCount==1,threatSize==1)->wird (*Threat)ein Überfall(/Threat) in folgender Größenordnung stattfinden:\n\n[threatExample]</li>
+    <li>threatDescriptionParagraph(threatType==Raids,threatCount==1,threatSize>1)->wird (*Threat)ein Überfall(/Threat) mit [threatSize]-facher Stärke und in folgender Größenordnung stattfinden:\n\n[threatExample]</li>
+    <li>threatDescriptionParagraph(threatType==Raids,threatCount>1,threatSize==1)->werden (*Threat)[threatCount] Überfalle(/Threat) in folgender Größenordnung stattfinden:\n\n[threatExample]</li>
+    <li>threatDescriptionParagraph(threatType==Raids,threatCount>1,threatSize>1)->werden (*Threat)[threatCount] Überfalle(/Threat) mit [threatSize]-facher Stärke und in folgender Größenordnung stattfinden:\n\n[threatExample]</li>
+    <li>threatDescriptionParagraph(threatType==MechClusters,threatCount==1,threatSize==1)->wird (*Threat)ein Mech-Cluster(/Threat) in der Nähe landen.</li>
+    <li>threatDescriptionParagraph(threatType==MechClusters,threatCount==2,threatSize==1)->werden (*Threat)zwei Mech-Cluster(/Threat) in der Nähe landen.</li>
+    <li>threatDescriptionParagraph(threatType==MechClusters,threatCount==1,threatSize>1)->wird (*Threat)ein Mech-Cluster(/Threat) von [threatSize]-facher Größe in der Nähe landen.</li>
+    <li>threatDescriptionParagraph(threatType==MechClusters,threatCount==2,threatSize>1)->werden (*Threat)zwei Mech-Cluster(/Threat) von [threatSize]-facher Größe in der Nähe landen.</li>
     <li>threatsInfoMechClustersSingleHuman->[lodgers0_nameDef] hat [recently] [mechViolation], und ist seitdem im Fadenkreuz eines im Orbit befindlichen Mechanoidenschwarms.</li>
     <li>threatsInfoMechClustersMultiPrisoners->Die Gefangenen haben [recently] [mechViolation], und sind seitdem im Fadenkreuz eines im Orbit befindlichen Mechanoidenschwarms.</li>
     <li>threatsInfoMechRaidsSingleHuman->[lodgers0_nameDef] hat [recently] [mechViolation], und ist seitdem im Fadenkreuz eines Mechanoidennestes.</li>
@@ -103,8 +103,9 @@
     <li>lodgersWill(lodgersCount>=2)->werden</li>
     <li>remainingWillNowLeave(lodgersCount==1)-></li>
     <li>remainingWillNowLeave(lodgersCount>=2)->Alle verbleibenden [lodgersLabelPlural] werden dich nun verlassen. </li>
-    <li>failLetterEndingCommon(askerIsNull==true,priority=1)->Die Quest '[resolvedQuestName]' ist fehlgeschlagen.</li>
-    <li>failLetterEndingCommon->Die Quest '[resolvedQuestName]' ist fehlgeschlagen.\n\nDeine Beziehung zur Fraktion '[asker_faction_name]' hat sich um [goodwillPenalty] Rufpunkte verschlechtert.</li>
+    <li>failLetterEndingQuest->Die Quest '[resolvedQuestName]' ist fehlgeschlagen.</li>
+    <li>failLetterEndingCommon(askerIsNull==true,priority=1)->[failLetterEndingQuest]</li>
+    <li>failLetterEndingCommon->[failLetterEndingQuest]\n\nDeine Beziehung zur Fraktion '[asker_faction_name]' hat sich um [goodwillPenalty] Rufpunkte verschlechtert.</li>
     <li>inappropriate(p=4)-></li>
     <li>inappropriate->unangemessene </li>
     <li>inappropriate->ungebührliche </li>
