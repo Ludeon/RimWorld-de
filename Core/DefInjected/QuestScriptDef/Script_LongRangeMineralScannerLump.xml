@@ -8,52 +8,51 @@
     <li>questDescription->Beim Einsatz des Scanners für entfernte Mineralien hat [worker_definite] ein großes [targetMineable_label]vorkommen in der Nähe gefunden.\n\nAllerdings wird es nicht für immer da sein - Andere werden es in [timeoutTicks_duration] abbauen, wenn wir nichts unternehmen.\n\n[worker_definite] hat herausgefunden, dass dort [allSitePartsDescriptionsExceptFirst]</li>
   </LongRangeMineralScannerLump.questDescriptionRules.rulesStrings>
   <!-- EN:
-    <li>questName->The [subName]</li>
-    <li>questName->[subName]</li>
-    <li>subName->[adj] Resources</li>
-    <li>subName->[adj] Minerals</li>
-    <li>subName->[adj] Ores</li>
-    <li>subName->[adj] Wealth</li>
-    <li>subName->[adj] Mineables</li>
-    <li>subName->[adj] Lump</li>
-    <li>subName->[adj] Mining Project</li>
-    <li>adj->Distant</li>
-    <li>adj->Far</li>
-    <li>adj->Long-Range</li>
-    <li>adj->Unknown</li>
-    <li>adj->Discovered</li>
-    <li>adj->Scanned</li>
-    <li>adj->Detected</li>
-    <li>adj->Found</li>
+    <li>questName->[lump] of [targetMineable_label]</li>
+    <li>questName->[targetMineable_label] [lump]</li>
+    <li>questName->The [targetMineable_label] [lump]</li>
+    <li>questName->[adj] [targetMineable_label]</li>
+    <li>questName->[targetMineable_label] [discovered]</li>
+    <li>lump->lump</li>
+    <li>lump->pile</li>
+    <li>lump->deposit</li>
+    <li>lump->seam</li>
+    <li>lump->chunk</li>
+    <li>lump->pile</li>
+    <li>adj->distant</li>
+    <li>adj->far</li>
+    <li>adj->unknown</li>
+    <li>adj->scanned</li>
+    <li>discovered->discovered</li>
+    <li>discovered->detected</li>
+    <li>discovered->found</li>
+    <li>discovered->scanned</li>
   -->
   <LongRangeMineralScannerLump.questNameRules.rulesStrings>
-    <li>questName->[adj]e [subjPlu]</li>
-    <li>questName->Die [adj]en [subjPlu]</li>
-    <li>questName->[adj]es [subjNeu]</li>
-    <li>questName->Das [adj]e [subjNeu]</li>
-    <li>questName(p=0.1)->[adj]er [subjMas]</li>
-    <li>questName(p=0.1)->Der [adj]e [subjMas]</li>
-    <li>questName(p=0.5)->[adj]es [targetMineable_label]vorkommen</li>
-    <li>subjPlu->Ressourcen</li>
-    <li>subjPlu->Mineralien</li>
-    <li>subjPlu->Erze</li>
-    <li>subjPlu->Gesteine</li>
-    <li>subjMas->Reichtum</li>
-    <li>subjMas->Wohlstand</li>
-    <li>subjNeu->Abbauprojekt</li>
-    <li>subjNeu->Vorkommen</li>
-    <li>subjNeu->Mineral</li>
-    <li>subjNeu->Erz</li>
-    <li>subjNeu->Gestein</li>
+    <li>questName->[targetMineable_label][lumpNeu]</li>
+    <li>questName(p=0.5)->[targetMineable_label][lumpMal]</li>
+    <li>questName->[targetMineable_label][lumpNeu] [discovered]</li>
+    <li>questName(p=0.5)->[targetMineable_label][lumpMal] [discovered]</li>
+    <li>questName->Das [targetMineable_label][lumpNeu]</li>
+    <li>questName(p=0.5)->Der [targetMineable_label][lumpMal]</li>
+    <li>questName->[adj]es [targetMineable_label][lumpNeu]</li>
+    <li>questName(p=0.5)->[adj]er [targetMineable_label][lumpMal]</li>
+    <li>questName->[adj]es [targetMineable_label][lumpNeu] [discovered]</li>
+    <li>questName(p=0.5)->[adj]er [targetMineable_label][lumpMal] [discovered]</li>
+    <li>questName->[targetMineable_label] [discovered]</li>
+    <li>lumpNeu(p=2)->vorkommen</li>
+    <li>lumpMal->haufen</li>
+    <li>lumpNeu->lager</li>
+    <li>lumpNeu->flöz</li>
+    <li>lumpMal->brocken</li>
     <li>adj->fern</li>
     <li>adj->weit entfernt</li>
-    <li>adj->verborgen</li>
     <li>adj->unbekannt</li>
-    <li>adj->entdeckt</li>
-    <li>adj->gescannt</li>
-    <li>adj->aufgespürt</li>
-    <li>adj->gefunden</li>
-    <li>adj->entlegen</li>
+    <li>adj->verborgen</li>
+    <li>discovered->entdeckt</li>
+    <li>discovered->aufgespürt</li>
+    <li>discovered->gefunden</li>
+    <li>discovered->lokalisiert</li>
   </LongRangeMineralScannerLump.questNameRules.rulesStrings>
   <!-- EN: Quest expired: [resolvedQuestName] -->
   <LongRangeMineralScannerLump.LetterLabelQuestExpired.slateRef>Quest abgelaufen: [resolvedQuestName]</LongRangeMineralScannerLump.LetterLabelQuestExpired.slateRef>
