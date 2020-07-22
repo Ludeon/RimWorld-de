@@ -5,11 +5,11 @@
   <Util_GenerateSite.root.singleSitePartRules.slateRef>
     <rulesStrings>
       <li>root(priority=1,sitePart==ClimateAdjuster)->(*Threat)ein Klimaregulator(/Threat) ist, der die regionale Temperatur um [temperatureOffset] verändert</li>
-      <li>root(priority=1,sitePart==PsychicDroner)->(*Threat)ein psychischer Brummer(/Threat) ist, der auf das [affectedGender]e Geschlecht eingestellt ist</li>
-      <li>root(priority=1,sitePart==PsychicSuppressor)->(*Threat)ein psychischer Unterdrücker(/Threat) ist, der auf das [affectedGender]e Geschlecht eingestellt ist</li>
-      <li>root(priority=1,sitePart==WeatherController)->(*Threat)ein Wetterkontrollgerät(/Threat) ist, das das Wetter der ganzen Region auf [weather_label] ändert</li>
+      <li>root(priority=1,sitePart==PsychicDroner)->(*Threat)ein psychischer Brummer(/Threat) ist, der das [affectedGender]e Geschlecht beeinflusst</li>
+      <li>root(priority=1,sitePart==PsychicSuppressor)->(*Threat)ein psychischer Unterdrücker(/Threat) ist, der das [affectedGender]e Geschlecht beeinflusst</li>
+      <li>root(priority=1,sitePart==WeatherController)->(*Threat)ein Wetterkontrollgerät(/Threat) ist, welches das Wetter der ganzen Region auf [weather_label] ändert</li>
       <li>root(priority=1,sitePart==SmokeSpewer)->(*Threat)ein Rauchgenerator(/Threat) ist, der die ganze Region mit Rauch überzieht</li>
-      <li>root(priority=1,sitePart==SunBlocker)->(*Threat)eine Sonnenblockiermaschine(/Threat) ist, die die ganze Region mit einem Schatten überdeckt</li>
+      <li>root(priority=1,sitePart==SunBlocker)->(*Threat)eine Sonnenblockiermaschine(/Threat) ist, welche die ganze Region mit einem Schatten überdeckt</li>
       <li>root(priority=1,sitePart==EMIDynamo)->(*Threat)ein EMI-Generator(/Threat) ist, der in der ganzen Region elektrische Geräte ausfallen lassen kann</li>
       <li>root(priority=1,sitePart==ToxicSpewer)->(*Threat)ein Giftgenerator(/Threat) ist, der die ganze Region mit Gift besprüht</li>
       <li>root(priority=1,sitePart==RaidSource)->ein militärischer Sammelpunkt ist, der von (*Threat)[enemiesCount] Gegnern ([enemiesLabel])(/Threat) bewacht wird, die deine Kolonie in regelmäßigen Abständen von [mtbDays] überfallen werden</li>
@@ -22,7 +22,7 @@
       <li>root(priority=1,sitePart==Turrets)->(*Threat)[threatsInfo](/Threat) das Gebiet verteidigen</li>
       <li>root(priority=1,sitePart==AmbushEdge)->(*Threat)eine feindliche Truppe(/Threat) einen Hinterhalt aufgebaut hat und jeden überfallen wird, der in die Nähe kommt</li>
       <li>root(priority=1,sitePart==AmbushHidden)->(*Threat)eine feindliche Truppe(/Threat) jeden überfallen wird, der in die Nähe kommt</li>
-      <li>root(priority=1,sitePart==MechCluster)->(*Threat)ein Cluster mit feindlichen mechanoiden Konstruktionen(/Threat) ist</li>
+      <li>root(priority=1,sitePart==MechCluster)->(*Threat)ein Cluster mit feindlichen mechanoiden Strukturen(/Threat) ist</li>
       <li>root(priority=1,sitePart==PossibleUnknownThreatMarker)->möglicherweise eine bisher (*Threat)unbekannte Bedrohung(/Threat) lauert</li>
       <li>root->ein [label] ist</li>
     </rulesStrings>
