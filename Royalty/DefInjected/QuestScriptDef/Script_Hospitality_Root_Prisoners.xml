@@ -52,7 +52,7 @@
     <li>threatsInfo2(generateThreats==true,threatType==Raids,enemyFaction==Mechanoid)->\n\nDie Gefangenen haben [recently] [mechViolation], und sind nun im Fadenkreuz eines Mechanoidennestes. Es [enemyGroupsParagraph]</li>
     <li>threatsInfo2(generateThreats==true,threatType==MechClusters)->\n\n[threatsInfoMechClustersMultiPrisoners] Es [enemyGroupsParagraph]</li>
     <li>threatsInfo2(generateThreats==false)-></li>
-    <li>questDescription(asker_factionLeader==True,lodgersCount==1)->[asker_nameFull], [asker_faction_leaderTitle] der Fraktion '[asker_faction_name]', möchte, dass du einen ganz speziellen Gefangenen für [asker_objective] aufbewahrst. Der [lodgers0_age]-jährige Gefangene, [lodgers0_titleIndef] namens [lodgers0_nameFull], hat kompromittierende Informationen über [die_Dinge] von [asker_nameDef], und [asker_nameDef] möchte nicht, dass [lodgers0_pronoun] befreit wird. Du musst den Gefangenen nur über einen Zeitraum von [shuttleDelayTicks_duration] bei dir behalten, bis der Skandal sich gelegt hat. [allLodgerInfo][threatsInfo3][commonDescEnding]</li>
+    <li>questDescription(asker_factionLeader==True,lodgersCount==1)->[asker_nameFull], [asker_faction_leaderTitle] der Fraktion '[asker_faction_name]', möchte, dass du [aSpecialPrisonerAcc] für [asker_objective] aufbewahrst. [The] [lodgers0_age]-jährige Gefangene, [lodgers0_titleIndef] namens [lodgers0_nameFull], hat kompromittierende Informationen über [die_Dinge] von [asker_nameDef], und [asker_nameDef] möchte nicht, dass [lodgers0_pronoun] befreit wird. Du musst [thePrisonerAcc] nur über einen Zeitraum von [shuttleDelayTicks_duration] bei dir behalten, bis der Skandal sich gelegt hat. [allLodgerInfo][threatsInfo3][commonDescEnding]</li>
     <li>threatsInfo3(generateThreats==true,threatType==Raids,enemyFaction!=Mechanoid)->\n\nUnglücklicherweise möchte die Fraktion '[enemyFaction_name]' an diese beschämenden Informationen kommen und wird Überfallkommandos schicken, um [lodgers0_nameDef] aus dem Gefängnis zu holen. Es [enemyGroupsParagraph]</li>
     <li>threatsInfo3(generateThreats==true,threatType==Raids,enemyFaction==Mechanoid)->\n\n[threatsInfoMechRaidsSingleHuman] Es [enemyGroupsParagraph]</li>
     <li>threatsInfo3(generateThreats==true,threatType==MechClusters)->\n\n[threatsInfoMechClustersSingleHuman] Es [enemyGroupsParagraph]</li>
@@ -77,6 +77,14 @@
     <li>die_Dinge->den [PersonalCharacteristicMas]</li>
     <li>die_Dinge->die [PersonalCharacteristicFem]</li>
     <li>die_Dinge->das [PersonalCharacteristicNeu]</li>
+    <li>The(lodgers0_gender!=Female)->Der</li>
+    <li>The(lodgers0_gender==Female)->Die</li>
+    <li>the(lodgers0_gender!=Female)->der</li>
+    <li>the(lodgers0_gender==Female)->die</li>
+    <li>thePrisonerAcc(lodgers0_gender!=Female)->den Gefangenen</li>
+    <li>thePrisonerAcc(lodgers0_gender==Female)->die Gefangene</li>
+    <li>aSpecialPrisonerAcc(lodgers0_gender!=Female)->einen ganz speziellen Gefangenen</li>
+    <li>aSpecialPrisonerAcc(lodgers0_gender==Female)->eine ganz spezielle Gefangene</li>
   </Hospitality_Prisoners.questDescriptionRules.rulesStrings>
   <!-- EN:
     <li>questName->Guarding for [asker_nameDef]</li>
