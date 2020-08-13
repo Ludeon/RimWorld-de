@@ -1,0 +1,96 @@
+name: Update WordInfo
+
+# Controls when the action will run. Triggers the workflow on push or pull request
+# events but only for the master branch
+on:
+  push:
+    branches: [ master ]
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: windows-2016
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+    - uses: actions/checkout@v2
+      
+    - name: Update WordInfo
+      run: |
+        # Update WordInfo
+
+        $PSDefaultParameterValues["*:Encoding"] = "UTF8"
+
+        # Create a temporary folder
+        $temp = New-Item "$env:temp\$([GUID]::NewGuid())" -ItemType "Directory"
+
+        # Paths of the XML files in which the words should be searched
+        $paths = @(
+        "*\DefInjected\PawnKindDef"
+        "*\DefInjected\FactionDef"
+        "*\DefInjected\ThingDef"
+        "*\DefInjected\WorldObjectDef"
+        "*\DefInjected\GameConditionDef"
+        "*\Backstories"
+        )
+
+        # Search words in the XML files and save them in different lists of words depending on their gender
+        foreach ($path in $paths)
+        {
+          # unknown gender
+          Get-Content -Path "$path/*" -Filter "*.xml" | Select-String -Pattern "<(.*(\.label|\.pawnSingular|title|titleShort|\.chargeNoun))>(.*?)</\1>" -All | ForEach-Object { $_.matches.groups[3].value.toLower() } >> "$temp/all_unknown.txt"
+
+          # male gender
+          Get-Content -Path "$path/*" -Filter "*.xml" | Select-String -Pattern "<(.*(labelMale))>(.*?)</\1>" -All | ForEach-Object { $_.matches.groups[3].value.toLower() } >> "$temp/all_males.txt"
+
+          # female gender
+          Get-Content -Path "$path/*" -Filter "*.xml" | Select-String -Pattern "<(.*(\.labelFemale|titleFemale|titleShortFemale))>(.*?)</\1>" -All | ForEach-Object { $_.matches.groups[3].value.toLower() } >> "$temp/all_females.txt"
+        }
+
+        # Save a list of all found words
+        Get-Content "$temp/all*.txt" | Sort-Object -Unique | Set-Content "$temp/all.txt"
+
+        # Merge found male words into the list of male words
+        Get-Content "$temp/all_males.txt", "Core/WordInfo/Gender/Male.txt" | Sort-Object -Unique | Set-Content "Core/WordInfo/Gender/Male.txt"
+
+        # Merge found female words into the list of female words
+        Get-Content "$temp/all_females.txt", "Core/WordInfo/Gender/Female.txt" | Sort-Object -Unique | Set-Content "Core/WordInfo/Gender/Female.txt"
+
+        # Sort the list of neuter words
+        Get-Content "Core/WordInfo/Gender/Neuter.txt" | Sort-Object -Unique | Set-Content "Core/WordInfo/Gender/Neuter.txt"
+
+        # Sort the list of plural words
+        Get-Content "Core/WordInfo/Gender/Plural.txt" | Sort-Object -Unique | Set-Content "Core/WordInfo/Gender/Plural.txt"
+
+        # Save a list of words already classified
+        Get-Content (Get-ChildItem -Path "Core/WordInfo/Gender/*" -Include "Male.txt", "Female.txt", "Neuter.txt", "Plural.txt") | Sort-Object -Unique | Set-Content "$temp/wordinfo.txt"
+
+        # Save a list of words not classified
+        $objects = @{
+          ReferenceObject  = (Get-Content -Path "$temp/wordinfo.txt")
+          DifferenceObject = (Get-Content -Path "$temp/all.txt")
+        }
+        Compare-Object @objects -PassThru | Where-Object { $_.SideIndicator -eq "=>" } > "Core/WordInfo/Gender/new_words.txt"
+
+        # Removes obsolete words from the lists
+        foreach ($gender in "Male", "Female", "Neuter", "Plural")
+        {
+          $objects = @{
+            ReferenceObject  = (Get-Content -Path "$temp/all.txt")
+            DifferenceObject = (Get-Content -Path "Core/WordInfo/Gender/$gender.txt")
+          }
+          Compare-Object @objects -IncludeEqual -ExcludeDifferent -PassThru > "Core/WordInfo/Gender/$gender.txt"
+        }
+
+        # Delete the temporary folder
+        Remove-Item -Recurse $temp
+
+    - name: Commit
+      run: |
+        git config user.name "github-actions"
+        git config user.email "github-actions@github.com"
+        git commit -a -m "Update WordInfo"
+        git push
