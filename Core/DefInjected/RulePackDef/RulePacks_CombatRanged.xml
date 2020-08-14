@@ -133,7 +133,7 @@
     <li>r_logentry(p=0.2)->[WEAPON_projectile_definite] von [INITIATOR_label] traf [RECIPIENT_label].</li>
     <li>r_logentry(p=0.4)->[INITIATOR_label] [missed] [ORIGINALTARGET_label] [knapp] und traf stattdessen [RECIPIENT_label] mit [einem] [WEAPON_projectile_label].</li>
     <li>r_logentry(p=0.4)->[WEAPON_projectile_definite] von [INITIATOR_label] [missed] [ORIGINALTARGET_label] [knapp] und traf stattdessen [RECIPIENT_label].</li>
-    <li>r_logentry(p=0.2)->[INITIATOR_label] traf [RECIPIENT_label] mit [einem] [WEAPON_projectile_label], [das] eigentlich für [ORIGINALTARGET_label] bestimmt war.</li>
+    <li>r_logentry(p=0.2)->[INITIATOR_label] traf [RECIPIENT_label] mit [einem] [WEAPON_projectile_label], obwohl [das] eigentlich für [ORIGINALTARGET_label] bestimmt war.</li>
     <li>WEAPON_projectile_label(p=0.05)->Schuss</li>
     <li>WEAPON_projectile_definite(p=0.05)->Der Schuss</li>
     <li>destroyed_past->zerschmetterte</li>
@@ -186,7 +186,7 @@
     <li>einem-></li>
     <!-- <li>einem(WEAPON_projectile_gender!=Female)->einem</li> -->
     <!-- <li>einem(WEAPON_projectile_gender==Female)->einer</li> -->
-    <li>das-></li>
+    <li>das->der Angriff</li>
     <!-- <li>das(WEAPON_projectile_gender==Male)->der</li> -->
     <!-- <li>das(WEAPON_projectile_gender==Female)->die</li> -->
     <!-- <li>das(WEAPON_projectile_gender==None)->das</li> -->
