@@ -34,16 +34,16 @@
     <li>asker2(askerIsNull==true)->der Archotech</li>
     <li>asker2(asker_factionLeader==True)->[asker_nameDef]</li>
     <li>asker2(asker_royalInCurrentFaction==True)->der [asker_royalTitleInCurrentFaction]</li>
-    <li>buildReason(p=0.5)->um [den_Dingen] [asker_possessive]es [PersonFamilyMasGen] zu gedenken</li>
-    <li>buildReason(p=0.5)->um [den_Dingen] [asker_possessive]er [PersonFamilyFemGen] zu gedenken</li>
-    <li>buildReason(p=0.25)->um [asker_possessive]en eigenen [PersonalCharacteristicsDat] zu gedenken</li>
-    <li>buildReason(p=0.25)->um [asker_possessive]em eigenen [PersonalCharacteristicMas] zu gedenken</li>
-    <li>buildReason(p=0.25)->um [asker_possessive]er eigenen [PersonalCharacteristicFem] zu gedenken</li>
-    <li>buildReason(p=0.25)->um [asker_possessive]em eigenen [PersonalCharacteristicNeu] zu gedenken</li>
-    <li>buildReason(p=0.25)->um die [PersonalCharacteristics] [asker_possessive]es Erzfeindes zu beleidigen</li>
-    <li>buildReason(p=0.25)->um den [PersonalCharacteristicMas] [asker_possessive]es Erzfeindes zu beleidigen</li>
-    <li>buildReason(p=0.25)->um die [PersonalCharacteristicFem] [asker_possessive]es Erzfeindes zu beleidigen</li>
-    <li>buildReason(p=0.25)->um das [PersonalCharacteristicNeu] [asker_possessive]es Erzfeindes zu beleidigen</li>
+    <li>buildReason(p=0.5)->um [den_Dingen] [asker_possessive]es [PersonFamilyMasGen] [to_honor]</li>
+    <li>buildReason(p=0.5)->um [den_Dingen] [asker_possessive]er [PersonFamilyFemGen] [to_honor]</li>
+    <li>buildReason(p=0.25)->um [asker_possessive]en eigenen [PersonalCharacteristicsDat] [to_honor]</li>
+    <li>buildReason(p=0.25)->um [asker_possessive]em eigenen [PersonalCharacteristicMas] [to_honor]</li>
+    <li>buildReason(p=0.25)->um [asker_possessive]er eigenen [PersonalCharacteristicFem] [to_honor]</li>
+    <li>buildReason(p=0.25)->um [asker_possessive]em eigenen [PersonalCharacteristicNeu] [to_honor]</li>
+    <li>buildReason(p=0.25)->um die [PersonalCharacteristics] [asker_possessive]es Erzfeindes [to_insult]</li>
+    <li>buildReason(p=0.25)->um den [PersonalCharacteristicMas] [asker_possessive]es Erzfeindes [to_insult]</li>
+    <li>buildReason(p=0.25)->um die [PersonalCharacteristicFem] [asker_possessive]es Erzfeindes [to_insult]</li>
+    <li>buildReason(p=0.25)->um das [PersonalCharacteristicNeu] [asker_possessive]es Erzfeindes [to_insult]</li>
     <li>buildReason->um den Leuten die Angst vor [der_Angst] zu nehmen</li>
     <li>buildReason->um der Welt zu zeigen, wie [AdjectiveBadass] [asker_pronoun] ist</li>
     <li>buildReason->um [asker_possessive]en [asker_faction_pawnsPlural] zu gedenken, die im Kampf gefallen sind</li>
@@ -58,6 +58,10 @@
     <li>glory->es großartigen Schiffes</li>
     <li>glory->es Reichtums</li>
     <li>glory->er Familie</li>
+    <li>to_honor->zu gedenken</li>
+    <li>to_honor->Respekt zu zollen</li>
+    <li>to_insult->zu beleidigen</li>
+    <li>to_insult->zu verspotten</li>
     <li>failLetterEndingCommon(askerIsNull==true,priority=1)->Die Quest '[resolvedQuestName]' ist fehlgeschlagen.</li>
     <li>failLetterEndingCommon->Die Quest '[resolvedQuestName]' ist fehlgeschlagen.\n\nDeine Beziehung zur Fraktion '[asker_faction_name]' hat sich um [goodwillPenalty] Rufpunkte verschlechtert.</li>
     <!-- gender-specific -->
