@@ -87,15 +87,15 @@
     <li>lodgerDiedLeaveMapLetterText->[letterIntroDeath]\n\n[decidedToLeave]</li>
     <li>lodgersAllDiedLetterLabel->Quest fehlgeschlagen</li>
     <li>lodgersAllDiedLetterText->{SUBJECT_definite}, der [lastOrNot] verzweifelte [faction_pawnSingular], der bei dir bleiben wollte, ist gestorben.\n\n[questOver]</li>
-    <li>letterIntroArrested->Du hast {SUBJECT_definite}, einen der verzweifelten [faction_pawnsPlural], der bei dir bleiben wollte, gefangen genommen.</li>
-    <li>lodgerArrestedMemoryThoughtLetterLabel->[lodgersLabel] gefangen genommen: Wut</li>
+    <li>letterIntroArrested->Du hast {SUBJECT_definite}, einen der verzweifelten [faction_pawnsPlural], der bei dir bleiben wollte, inhaftiert.</li>
+    <li>lodgerArrestedMemoryThoughtLetterLabel->[lodgersLabel] inhaftiert: Wut</li>
     <li>lodgerArrestedMemoryThoughtLetterText->[letterIntroArrested]\n\n[appalledButNoAction]</li>
-    <li>lodgerArrestedAttackPlayerLetterLabel->[lodgersLabel] gefangen genommen: Rache</li>
+    <li>lodgerArrestedAttackPlayerLetterLabel->[lodgersLabel] inhaftiert: Rache</li>
     <li>lodgerArrestedAttackPlayerLetterText->[letterIntroArrested]\n\n[turnedViolent]</li>
-    <li>lodgerArrestedLeaveMapLetterLabel->[lodgersLabel] gefangen genommen: Weggang</li>
+    <li>lodgerArrestedLeaveMapLetterLabel->[lodgersLabel] inhaftiert: Weggang</li>
     <li>lodgerArrestedLeaveMapLetterText->[letterIntroArrested]\n\n[decidedToLeave]</li>
     <li>lodgersAllArrestedLetterLabel->Quest fehlgeschlagen</li>
-    <li>lodgersAllArrestedLetterText->Du hast {SUBJECT_definite}, der [lastOrNot] verzweifelte [faction_pawnSingular], der bei dir bleiben wollte, gefangen genommen.\n\n[questOver]</li>
+    <li>lodgersAllArrestedLetterText->Du hast {SUBJECT_definite}, der [lastOrNot] verzweifelte [faction_pawnSingular], der bei dir bleiben wollte, inhaftiert.\n\n[questOver]</li>
     <li>letterIntroViolated->{SUBJECT_definite}, einer der verzweifelten [faction_pawnsPlural], der bei dir bleiben wollte, wurde durch einen chirurgischen Eingriff verletzt.</li>
     <li>lodgerViolatedMemoryThoughtLetterLabel->[lodgersLabel] verletzt: Wut</li>
     <li>lodgerViolatedMemoryThoughtLetterText->[letterIntroViolated]\n\n[appalledButNoAction]</li>
@@ -184,7 +184,7 @@
     <li>belohnt(lodgerCount>=2)->belohnen</li>
     <li>der(asker_gender!=Female)->der</li>
     <li>der(asker_gender==Female)->die</li>
-    <li>questDescription->[approachInfo] [claimInfo] [asker_nameDef] bittet dich um Erlaubnis, über einen Zeitraum von [questDurationTicks_duration] in [map_definite] zu bleiben, um sich auszuruhen und neu zu gruppieren.\n\nIm Gegenzug [offer] [lodgersPronoun] an, während dieser Zeit kostenlos zu arbeiten und zu kämpfen.\n\n[joinInfo] Vielleicht [belohnt] [lodgersPronoun] dich später auch dafür, dass du [lodgersObjectiveDat] geholfen hast - aber [lodgersPossessive]e wahren Absichten sind nicht bekannt.\n\n[travelerInfo] keiner Fraktion an. Wenn du möchtest, kannst du [lodgersObjectiveAcc] töten, gefangen nehmen, verkaufen oder [lodgersPossessive]e Organe entnehmen, ohne diplomatische Konsequenzen befürchten zu müssen.</li>
+    <li>questDescription->[approachInfo] [claimInfo] [asker_nameDef] bittet dich um Erlaubnis, über einen Zeitraum von [questDurationTicks_duration] in [map_definite] zu bleiben, um sich auszuruhen und neu zu gruppieren.\n\nIm Gegenzug [offer] [lodgersPronoun] an, während dieser Zeit kostenlos zu arbeiten und zu kämpfen.\n\n[joinInfo] Vielleicht [belohnt] [lodgersPronoun] dich später auch dafür, dass du [lodgersObjectiveDat] geholfen hast - aber [lodgersPossessive]e wahren Absichten sind nicht bekannt.\n\n[travelerInfo] keiner Fraktion an. Wenn du möchtest, kannst du [lodgersObjectiveAcc] töten, inhaftieren, verkaufen oder [lodgersPossessive]e Organe entnehmen, ohne diplomatische Konsequenzen befürchten zu müssen.</li>
     <li>approachInfo(lodgerCount==1)->Ein verzweifelter [faction_pawnSingular] namens [asker_nameDef] nähert sich.</li>
     <li>approachInfo(lodgerCount==2)->[asker_nameDef] und ein anderer verzweifelter [faction_pawnSingular] nähern sich.</li>
     <li>approachInfo(lodgerCount>=3)->[lodgerCount] verzweifelte [faction_pawnsPlural] nähern sich. Ihr Anführer heißt [asker_nameDef].</li>
@@ -243,8 +243,8 @@
     <li>questName(lodgerCount==1,asker_gender!=Female)->der [lodgerAdj]e [lodgerSingleMal]</li>
     <li>questName(lodgerCount==1,asker_gender==Female)->die [lodgerAdj]e [lodgerSingleFem]</li>
     <li>questName(p=2,lodgerCount>=2)->[lodgerAdj]e [lodgerPlural]</li>
-    <li>questName(lodgerCount>=2)->[asker_nameDef]'s [lodgerAdj]e [lodgerPlural]</li>
-    <li>questName(lodgerCount>=2)->[asker_nameDef]'s [lodgerPlural]</li>
+    <li>questName(lodgerCount>=2)->[asker_nameDef]s [lodgerAdj]e [lodgerPlural]</li>
+    <li>questName(lodgerCount>=2)->[asker_nameDef]s [lodgerPlural]</li>
     <li>lodgerAdj->müd</li>
     <li>lodgerAdj->verloren</li>
     <li>lodgerAdj->notleidend</li>

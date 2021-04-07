@@ -109,9 +109,9 @@
     <li>r_logentry(p=0.4)->[INITIATOR_label] [damaged_past] [RECIPIENT_label], dabei kam [dessen] [recipient_part0_label] zu Schaden. Dieser Angriff [flavortext_consequence].</li>
     <li>r_logentry(p=0.4)->[INITIATOR_label], [skillDescMelee], [damaged_past] [RECIPIENT_label], dabei kam [dessen] [recipient_part0_label] zu Schaden.</li>
     <li>r_logentry(p=0.2)->[INITIATOR_label], [skillDescMelee], [damaged_past] [RECIPIENT_label] [strikeAdv], dabei kam [dessen] [recipient_part0_label] zu Schaden.</li>
-    <li>r_logentry(p=0.4)->[INITIATOR_label] [destroyed_past] [RECIPIENT_label]'s [destroyed_targets].</li>
-    <li>r_logentry(p=0.4)->[INITIATOR_label] [destroyed_past] [RECIPIENT_label]'s [destroyed_targets] [destroyed_suffix].</li>
-    <li>r_logentry(p=0.4)->[INITIATOR_label] [destroyed_past] mit [implement] [RECIPIENT_label]'s [destroyed_targets].</li>
+    <li>r_logentry(p=0.4)->[INITIATOR_label] [destroyed_past] [RECIPIENT_label]s [destroyed_targets].</li>
+    <li>r_logentry(p=0.4)->[INITIATOR_label] [destroyed_past] [RECIPIENT_label]s [destroyed_targets] [destroyed_suffix].</li>
+    <li>r_logentry(p=0.4)->[INITIATOR_label] [destroyed_past] mit [implement] [RECIPIENT_label]s [destroyed_targets].</li>
     <li>r_logentry(p=1,recipient_part_count==0)->[INITIATOR_label] [damaged_past] [RECIPIENT_label] mit [implement].</li>
     <li>r_logentry(p=0.4,recipient_part_count==0)->[INITIATOR_label] [damaged_past] [RECIPIENT_label] [skillAdv] mit [implement].</li>
     <li>result(p=1,recipient_part_damaged_count==0,recipient_part_destroyed_count==1)->dabei wurde [dessen] [destroyed_targets] [was_destroyed]</li>
@@ -150,7 +150,7 @@
     <li>result(initiator_flesh!=Mechanoid)->but hesitated at the last second</li>
   -->
   <Combat_Miss.rulePack.rulesStrings>
-    <li>r_logentry(p=0.2)->[RECIPIENT_label] wich [INITIATOR_label]'s [WEAPON_label]-Attacke aus.</li>
+    <li>r_logentry(p=0.2)->[RECIPIENT_label] wich [INITIATOR_label]s [WEAPON_label]-Attacke aus.</li>
     <li>r_logentry(p=0.2)->[INITIATOR_label] verfehlte [RECIPIENT_label] mit [implement].</li>
     <li>r_logentry(p=0.2)->[INITIATOR_label] [failtype] bei dem Versuch, [RECIPIENT_label] mit [implement] zu [damaged_inf].</li>
     <li>r_logentry(p=0.2)->[INITIATOR_label] [failtype] bei dem Versuch, [RECIPIENT_label] zu [damaged_inf].</li>

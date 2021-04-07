@@ -34,17 +34,17 @@
     <li>fromof->of</li>
   -->
   <Combat_ExplosionImpact.rulePack.rulesStrings>
-    <li>prefix->[blast] von [INITIATOR_label]'s [WEAPON_projectile_label]</li>
-    <li>prefix->[blast] von [INITIATOR_label]'s [WEAPON_label]</li>
-    <li>prefix->[blast] von [INITIATOR_label]'s [WEAPON_projectile_label]</li>
-    <li>prefix->[blast] von [INITIATOR_label]'s [WEAPON_label]</li>
+    <li>prefix->[blast] von [INITIATOR_label]s [WEAPON_projectile_label]</li>
+    <li>prefix->[blast] von [INITIATOR_label]s [WEAPON_label]</li>
+    <li>prefix->[blast] von [INITIATOR_label]s [WEAPON_projectile_label]</li>
+    <li>prefix->[blast] von [INITIATOR_label]s [WEAPON_label]</li>
     <li>prefix->[blast] von [INITIATOR_label]</li>
     <li>r_logentry->[prefix] [injured] [RECIPIENT_label].</li>
-    <li>r_logentry->[prefix] [destroyed_past] [RECIPIENT_label]'s [destroyed_targets].</li>
-    <li>r_logentry->[prefix] [destroyed_past] [strikeAdv] [RECIPIENT_label]'s [destroyed_targets].</li>
-    <li>r_logentry->[prefix] [destroyed_past] [RECIPIENT_label]'s [destroyed_targets] und [damaged_past] [dessen] [damaged_targets].</li>
-    <li>r_logentry(recipient_part_destroyed_count==0)->[prefix] [damaged_past] [RECIPIENT_label]'s [destroyed_targets].</li>
-    <li>r_logentry(recipient_part_destroyed_count==0)->[prefix] [damaged_past] [strikeAdv] [RECIPIENT_label]'s [destroyed_targets].</li>
+    <li>r_logentry->[prefix] [destroyed_past] [RECIPIENT_label]s [destroyed_targets].</li>
+    <li>r_logentry->[prefix] [destroyed_past] [strikeAdv] [RECIPIENT_label]s [destroyed_targets].</li>
+    <li>r_logentry->[prefix] [destroyed_past] [RECIPIENT_label]s [destroyed_targets] und [damaged_past] [dessen] [damaged_targets].</li>
+    <li>r_logentry(recipient_part_destroyed_count==0)->[prefix] [damaged_past] [RECIPIENT_label]s [destroyed_targets].</li>
+    <li>r_logentry(recipient_part_destroyed_count==0)->[prefix] [damaged_past] [strikeAdv] [RECIPIENT_label]s [destroyed_targets].</li>
     <li>r_logentry->[RECIPIENT_label] wurde von [INITIATOR_label] [was_damaged].</li>
     <li>r_logentry->[RECIPIENT_label] wurde [strikeAdv] von [INITIATOR_label] [was_damaged].</li>
     <li>r_logentry->[RECIPIENT_label] wurde [was_damaged].</li>
@@ -116,19 +116,19 @@
     <li>missed->narrowly missed</li>
   -->
   <Combat_RangedDamage.rulePack.rulesStrings>
-    <li>r_logentry->[WEAPON_projectile_definite] von [INITIATOR_label] [destroyed_past] [RECIPIENT_label]'s [destroyed_targets].</li>
-    <li>r_logentry->[WEAPON_projectile_definite] von [INITIATOR_label] [destroyed_past] [RECIPIENT_label]'s [destroyed_targets] [destroyed_suffix].</li>
-    <li>r_logentry(p=2)->[WEAPON_projectile_definite] von [INITIATOR_label] [missed] [ORIGINALTARGET_label] [knapp] und [destroyed_past] stattdessen [RECIPIENT_label]'s [destroyed_targets].</li>
-    <li>r_logentry(recipient_part_destroyed_count==1)->[RECIPIENT_label]'s [destroyed_targets] wurde von [INITIATOR_label]'s [WEAPON_projectile_label] [was_destroyed].</li>
-    <li>r_logentry(recipient_part_destroyed_count>1)->[RECIPIENT_label]'s [destroyed_targets] wurden von [INITIATOR_label]'s [WEAPON_projectile_label] [was_destroyed].</li>
-    <li>r_logentry(recipient_part_destroyed_count==1)->[RECIPIENT_label]'s [destroyed_targets] wurde von [INITIATOR_label]'s [WEAPON_projectile_label] [destroyed_suffix] [was_destroyed].</li>
-    <li>r_logentry(recipient_part_destroyed_count>1)->[RECIPIENT_label]'s [destroyed_targets] wurden von [INITIATOR_label]'s [WEAPON_projectile_label] [destroyed_suffix] [was_destroyed].</li>
-    <li>r_logentry(recipient_part_destroyed_count==0)->[WEAPON_projectile_definite] von [INITIATOR_label] [damaged_past] [RECIPIENT_label]'s [damaged_targets].</li>
-    <li>r_logentry(recipient_part_destroyed_count==0,p=2)->[WEAPON_projectile_definite] von [INITIATOR_label] [missed] [ORIGINALTARGET_label] [knapp] und [damaged_past] stattdessen [RECIPIENT_label]'s [damaged_targets].</li>
-    <li>r_logentry(recipient_part_destroyed_count==0,recipient_part_damaged_count==1)->[RECIPIENT_label]'s [damaged_targets] wurde von [INITIATOR_label]'s [WEAPON_projectile_label] [was_damaged].</li>
-    <li>r_logentry(recipient_part_destroyed_count==0,recipient_part_damaged_count>1)->[RECIPIENT_label]'s [damaged_targets] wurden von [INITIATOR_label]'s [WEAPON_projectile_label] [was_damaged].</li>
-    <li>r_logentry(p=3)->[WEAPON_projectile_definite] von [INITIATOR_label] [destroyed_past] [RECIPIENT_label]'s [destroyed_targets] und [damaged_past] [dessen] [damaged_targets].</li>
-    <li>r_logentry(p=6)->[WEAPON_projectile_definite] von [INITIATOR_label] [missed] [ORIGINALTARGET_label] [knapp] und [destroyed_past] stattdessen [RECIPIENT_label]'s [destroyed_targets] und [damaged_past] [dessen] [damaged_targets].</li>
+    <li>r_logentry->[WEAPON_projectile_definite] von [INITIATOR_label] [destroyed_past] [RECIPIENT_label]s [destroyed_targets].</li>
+    <li>r_logentry->[WEAPON_projectile_definite] von [INITIATOR_label] [destroyed_past] [RECIPIENT_label]s [destroyed_targets] [destroyed_suffix].</li>
+    <li>r_logentry(p=2)->[WEAPON_projectile_definite] von [INITIATOR_label] [missed] [ORIGINALTARGET_label] [knapp] und [destroyed_past] stattdessen [RECIPIENT_label]s [destroyed_targets].</li>
+    <li>r_logentry(recipient_part_destroyed_count==1)->[RECIPIENT_label]s [destroyed_targets] wurde von [INITIATOR_label]s [WEAPON_projectile_label] [was_destroyed].</li>
+    <li>r_logentry(recipient_part_destroyed_count>1)->[RECIPIENT_label]s [destroyed_targets] wurden von [INITIATOR_label]s [WEAPON_projectile_label] [was_destroyed].</li>
+    <li>r_logentry(recipient_part_destroyed_count==1)->[RECIPIENT_label]s [destroyed_targets] wurde von [INITIATOR_label]s [WEAPON_projectile_label] [destroyed_suffix] [was_destroyed].</li>
+    <li>r_logentry(recipient_part_destroyed_count>1)->[RECIPIENT_label]s [destroyed_targets] wurden von [INITIATOR_label]s [WEAPON_projectile_label] [destroyed_suffix] [was_destroyed].</li>
+    <li>r_logentry(recipient_part_destroyed_count==0)->[WEAPON_projectile_definite] von [INITIATOR_label] [damaged_past] [RECIPIENT_label]s [damaged_targets].</li>
+    <li>r_logentry(recipient_part_destroyed_count==0,p=2)->[WEAPON_projectile_definite] von [INITIATOR_label] [missed] [ORIGINALTARGET_label] [knapp] und [damaged_past] stattdessen [RECIPIENT_label]s [damaged_targets].</li>
+    <li>r_logentry(recipient_part_destroyed_count==0,recipient_part_damaged_count==1)->[RECIPIENT_label]s [damaged_targets] wurde von [INITIATOR_label]s [WEAPON_projectile_label] [was_damaged].</li>
+    <li>r_logentry(recipient_part_destroyed_count==0,recipient_part_damaged_count>1)->[RECIPIENT_label]s [damaged_targets] wurden von [INITIATOR_label]s [WEAPON_projectile_label] [was_damaged].</li>
+    <li>r_logentry(p=3)->[WEAPON_projectile_definite] von [INITIATOR_label] [destroyed_past] [RECIPIENT_label]s [destroyed_targets] und [damaged_past] [dessen] [damaged_targets].</li>
+    <li>r_logentry(p=6)->[WEAPON_projectile_definite] von [INITIATOR_label] [missed] [ORIGINALTARGET_label] [knapp] und [destroyed_past] stattdessen [RECIPIENT_label]s [destroyed_targets] und [damaged_past] [dessen] [damaged_targets].</li>
     <li>r_logentry(p=0.2)->[INITIATOR_label] traf [RECIPIENT_label] mit [einem] [WEAPON_projectile_label].</li>
     <li>r_logentry(p=0.2)->[WEAPON_projectile_definite] von [INITIATOR_label] traf [RECIPIENT_label].</li>
     <li>r_logentry(p=0.4)->[INITIATOR_label] [missed] [ORIGINALTARGET_label] [knapp] und traf stattdessen [RECIPIENT_label] mit [einem] [WEAPON_projectile_label].</li>
@@ -220,7 +220,7 @@
   <Combat_RangedDeflect.rulePack.rulesStrings>
     <li>r_logentry->[WEAPON_projectile_definite] von [INITIATOR_label] [damaged_past] [RECIPIENT_label][damaged_target_possessive_opt] [deflected_result].</li>
     <li>r_logentry(p=2)->[WEAPON_projectile_definite] von [INITIATOR_label] [missed] [ORIGINALTARGET_label] [knapp] und [damaged_past] stattdessen [RECIPIENT_label][damaged_target_possessive_opt] [deflected_result].</li>
-    <li>r_logentry->[RECIPIENT_label][damaged_target_possessive_opt] wurde von [INITIATOR_label]'s [WEAPON_projectile_label] [was_damaged] [deflected_result].</li>
+    <li>r_logentry->[RECIPIENT_label][damaged_target_possessive_opt] wurde von [INITIATOR_label]s [WEAPON_projectile_label] [was_damaged] [deflected_result].</li>
     <li>r_logentry(p=0.2)->[INITIATOR_label] traf [RECIPIENT_label][damaged_target_possessive_opt] mit [einem] [WEAPON_projectile_label] [deflected_result].</li>
     <li>r_logentry(p=0.2)->[WEAPON_projectile_definite] von [INITIATOR_label] traf [RECIPIENT_label][damaged_target_possessive_opt] [deflected_result].</li>
     <li>r_logentry(p=0.4)->[INITIATOR_label] [missed] [ORIGINALTARGET_label] [knapp] und traf stattdessen [RECIPIENT_label][damaged_target_possessive_opt] mit [einem] [WEAPON_projectile_label] [deflected_result].</li>

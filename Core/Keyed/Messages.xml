@@ -126,7 +126,7 @@
   <MessageMustDesignateUnforbiddable>Funktioniert nur bei verbotenen Objekten.</MessageMustDesignateUnforbiddable>
 
   <!-- EN: {1_labelShort} has refused to be arrested! -->
-  <MessageRefusedArrest>{1_labelShort} hat sich der Gefangennahme widersetzt!</MessageRefusedArrest>
+  <MessageRefusedArrest>{1_labelShort} hat sich der Inhaftierung widersetzt!</MessageRefusedArrest>
   
   <!-- EN: There are no medical beds available. -->
   <MessageNoMedicalBeds>Es sind keine Krankenbetten verfügbar.</MessageNoMedicalBeds>
@@ -169,12 +169,12 @@
   <MessageNuzzledPawnGaveNameTo>{NAMER_nameFull} benannte '{1}' in '{NAMEE_nameFull}' um, nachdem es gehätschelt wurde.</MessageNuzzledPawnGaveNameTo>
 
   <!-- EN: No handler can tame {ANIMAL_kindBase} (requires level {1} in {2}, best handler {HANDLER_labelShort} has {4}). -->
-  <MessageNoHandlerSkilledEnough>Kein Tierpfleger kann {ANIMAL_kindBase} zähmen (benötigt Stufe {1} bei {2}, bester Pfleger {HANDLER_labelShort} hat {4}).</MessageNoHandlerSkilledEnough>
+  <MessageNoHandlerSkilledEnough>Kein Tierpfleger kann {ANIMAL_kindBase} zähmen (benötigt Stufe {1} in {2}, bester Pfleger {HANDLER_labelShort} hat {4}).</MessageNoHandlerSkilledEnough>
   
   <!-- EN: {EATEN_labelShort} has been eaten by {PREDATOR}. -->
-  <MessageEatenByPredator>{EATEN_labelShort} wurde von einem {PREDATOR_label} gefressen.</MessageEatenByPredator>
+  <MessageEatenByPredator>{PREDATOR_kindBaseIndef} hat {EATEN_labelShort} gefressen.</MessageEatenByPredator>
   <!-- EN: {PREY_labelShort} is being attacked by {PREDATOR}! -->
-  <MessageAttackedByPredator>{PREY_labelShort} wird von einem {PREDATOR_label} angegriffen!</MessageAttackedByPredator>
+  <MessageAttackedByPredator>{PREDATOR_kindBaseIndef} greift gerade {PREY_labelShort} an!</MessageAttackedByPredator>
   
   <!-- EN: A bug hive has reproduced itself. -->
   <MessageHiveReproduced>Eine Insektenkolonie hat sich vermehrt.</MessageHiveReproduced>
@@ -204,17 +204,17 @@
   <!-- EN: {HUMAN_labelShort} and {ANIMAL_labelShort} have formed a bond. -->
   <MessageNewBondRelation>{HUMAN_labelShort} und {ANIMAL_labelShort} haben ein individuelles Band geknüpft.</MessageNewBondRelation>
   <!-- EN: {HUMAN_labelShort} and {1} have formed a bond. {HUMAN_labelShort} has named {ANIMAL_objective} {ANIMAL_nameFull}. -->
-  <MessageNewBondRelationNewName>{HUMAN_labelShort} und {1} haben ein individuelles Band geknüpft. {HUMAN_labelShort} hat {ANIMAL_objective} '{ANIMAL_nameFull}' genannt.</MessageNewBondRelationNewName>
+  <MessageNewBondRelationNewName>{HUMAN_labelShort} und {1} haben ein individuelles Band geknüpft. {HUMAN_pronoun} nennt es {ANIMAL_nameFull}.</MessageNewBondRelationNewName>
   
   <!-- EN: {ANIMAL} has had a mental break because of {HUMAN_labelShort}'s death. -->
-  <MessageBondedAnimalMentalBreak>{ANIMAL} ist aufgrund des Todes von {HUMAN_labelShort} zusammengebrochen.</MessageBondedAnimalMentalBreak>
+  <MessageBondedAnimalMentalBreak>{ANIMAL_kindBaseIndef} hat einen Nervenzusammenbruch, weil {HUMAN_labelShort} gestorben ist.</MessageBondedAnimalMentalBreak>
   <!-- EN: {ANIMAL_kindIndef} named {ANIMAL_label} has had a mental break because of {HUMAN_labelShort}'s death. -->
-  <MessageNamedBondedAnimalMentalBreak>{ANIMAL_kindIndef} namens {ANIMAL_label} ist aufgrund des Todes von {HUMAN_labelShort} zusammengebrochen.</MessageNamedBondedAnimalMentalBreak>
+  <MessageNamedBondedAnimalMentalBreak>{ANIMAL_kindBaseIndef} namens {ANIMAL_label} hat einen Nervenzusammenbruch, weil {HUMAN_labelShort} gestorben ist.</MessageNamedBondedAnimalMentalBreak>
   <!-- EN: {0} animals have a mental break because of {HUMAN_labelShort}'s death. -->
-  <MessageBondedAnimalsMentalBreak>{0} Tiere haben aufgrund des Todes von {HUMAN_labelShort} einen Zusammenbruch.</MessageBondedAnimalsMentalBreak>
+  <MessageBondedAnimalsMentalBreak>{0} Tiere haben einen Nervenzusammenbruch, weil {HUMAN_labelShort} gestorben ist.</MessageBondedAnimalsMentalBreak>
   
   <!-- EN: {SURGEON_labelShort} has successfully removed {PATIENT_labelShort}'s {HEDIFF}. -->
-  <MessageSuccessfullyRemovedHediff>{SURGEON_labelShort} hat erfolgreich {PATIENT_labelShort}'s {HEDIFF} entfernt.</MessageSuccessfullyRemovedHediff>
+  <MessageSuccessfullyRemovedHediff>{SURGEON_labelShort} hat erfolgreich {PATIENT_labelShort}s {HEDIFF} entfernt.</MessageSuccessfullyRemovedHediff>
   
   <!-- EN: Chunks of a spacecraft have impacted nearby. You can deconstruct them to yield resources. -->
   <MessageShipChunkDrop>Teile eines Raumschiffs sind in der Nähe abgestürzt. Du kannst sie abreißen, um an Rohstoffe zu gelangen.</MessageShipChunkDrop>
@@ -356,7 +356,7 @@
   <!-- EN: {0} has run out of food ({PAWN_label}). -->
   <MessageCaravanRanOutOfFood>{0} hat keine Nahrung mehr ({PAWN_label}).</MessageCaravanRanOutOfFood>
   <!-- EN: {PAWN_definite}'s corpse has been picked up by the caravan. It is heavy and may immobilize the caravan, but can be left behind in the caravan items tab. -->
-  <MessageCaravanDeathCorpseAddedToInventory>{PAWN_definite}'s Leiche wurde von der Karawane eingesammelt. Sie ist schwer und kann die Karawane lahmlegen, allerdings kann sie im WAREN-Tab der Karawane zurückgelassen werden.</MessageCaravanDeathCorpseAddedToInventory>
+  <MessageCaravanDeathCorpseAddedToInventory>{PAWN_definite}s Leiche wurde von der Karawane eingesammelt. Sie ist schwer und kann die Karawane lahmlegen, allerdings kann sie im WAREN-Tab der Karawane zurückgelassen werden.</MessageCaravanDeathCorpseAddedToInventory>
 
   <!-- EN: To form a caravan, select your own colony or a site where you have people. -->
   <MessageSelectOwnBaseToFormCaravan>Um eine Karawane zu formieren, wähle deine Kolonie aus.</MessageSelectOwnBaseToFormCaravan>
@@ -377,9 +377,9 @@
   <MessageMechanoidsReinforcementsDrop>Eine Mech-Bake hat in der Nähe neue Mechanoiden herbeigerufen, die mit Abwurfkapseln eintreffen werden.</MessageMechanoidsReinforcementsDrop>
 
   <!-- EN: To self-tend, {1_labelShort} must also be assigned to Doctor work. -->
-  <MessageSelfTendUnsatisfied>Zum Selber-Verarzten muss {1_labelShort} die Arbeit 'Behandeln' zugewiesen sein.</MessageSelfTendUnsatisfied>
+  <MessageSelfTendUnsatisfied>Für die Selbstbehandlung muss {1_labelShort} als Arzt eingeteilt werden.</MessageSelfTendUnsatisfied>
   <!-- EN: {1_labelShort} is incapable of doing Doctor work, and so cannot ever self-tend. -->
-  <MessageCannotSelfTendEver>{1_labelShort} kann nicht 'Behandeln' und kann sich daher auch niemals selbst verarzten.</MessageCannotSelfTendEver>
+  <MessageCannotSelfTendEver>{1_labelShort} verweigert ärztliche Tätigkeiten und ist daher nicht in der Lage, sich selbst zu behandeln.</MessageCannotSelfTendEver>
   
   <!-- EN: This tile is impassable. -->
   <MessageCantAddWaypointBecauseImpassable>Diese Kachel ist unpassierbar.</MessageCantAddWaypointBecauseImpassable>
@@ -455,9 +455,9 @@
   <MessagePlayerTriedToLeaveMapViaExitGrid_CantReform>Du kannst die Karte momentan nicht verlassen.</MessagePlayerTriedToLeaveMapViaExitGrid_CantReform>
 
   <!-- EN: Relations with {0} have changed from {1} to {2}. -->
-  <MessageGoodwillChanged>Die Beziehung zur Fraktion '{0}' hat sich von {1} auf {2} geändert.</MessageGoodwillChanged>
+  <MessageGoodwillChanged>Dein Ruf bei der Fraktion '{0}' hat sich von {1} auf {2} geändert.</MessageGoodwillChanged>
   <!-- EN: Relations with {0} have changed from {1} to {2} ({3}). -->
-  <MessageGoodwillChangedWithReason>Die Beziehung zur Fraktion '{0}' hat sich von {1} auf {2} geändert ({3}).</MessageGoodwillChangedWithReason>
+  <MessageGoodwillChangedWithReason>Dein Ruf bei der Fraktion '{0}' hat sich von {1} auf {2} geändert ({3}).</MessageGoodwillChangedWithReason>
   <!-- EN: attacked {1_labelShort} -->
   <GoodwillChangedReason_AttackedPawn>{1_labelShort} angegriffen</GoodwillChangedReason_AttackedPawn>
   <!-- EN: used {ITEM_labelShort} on {TARGET_labelShort} -->
@@ -473,7 +473,7 @@
   <!-- EN: needlessly installed {0} -->
   <GoodwillChangedReason_NeedlesslyInstalledWorseBodyPart>{0} grundlos implantiert</GoodwillChangedReason_NeedlesslyInstalledWorseBodyPart>
   <!-- EN: captured {1_labelShort} -->
-  <GoodwillChangedReason_CapturedPawn>{1_labelShort} gefangen genommen</GoodwillChangedReason_CapturedPawn>
+  <GoodwillChangedReason_CapturedPawn>{1_labelShort} eingefangen</GoodwillChangedReason_CapturedPawn>
   <!-- EN: {1_labelShort} crushed -->
   <GoodwillChangedReason_PawnCrushed>{1_labelShort} wurde erschlagen</GoodwillChangedReason_PawnCrushed>
   <!-- EN: {1_labelShort} died -->
@@ -533,17 +533,17 @@
   <MessageFormedCaravan_Orders>Befehle</MessageFormedCaravan_Orders>
 
   <!-- EN: {1}'s "{0}" can no longer deliver to deleted stockpile {2}. -->
-  <MessageBillValidationStoreZoneDeleted>{1}'s "{0}" kann nicht länger an die gelöschte Lagerzone '{2}' liefern.</MessageBillValidationStoreZoneDeleted>
+  <MessageBillValidationStoreZoneDeleted>{1}s "{0}" kann nicht länger an die gelöschte Lagerzone '{2}' liefern.</MessageBillValidationStoreZoneDeleted>
   <!-- EN: {1}'s "{0}" can no longer deliver to unavailable stockpile {2}. -->
-  <MessageBillValidationStoreZoneUnavailable>{1}'s "{0}" kann nicht länger an die nicht-verfügbare Lagerzone '{2}' liefern.</MessageBillValidationStoreZoneUnavailable>
+  <MessageBillValidationStoreZoneUnavailable>{1}s "{0}" kann nicht länger an die nicht-verfügbare Lagerzone '{2}' liefern.</MessageBillValidationStoreZoneUnavailable>
   <!-- EN: {0} can no longer work on "{1}" at {2}. The restriction has been removed. -->
   <MessageBillValidationPawnUnavailable>{0} kann nicht länger an "{1}" bei {2} arbeiten. Die Beschränkung wurde entfernt.</MessageBillValidationPawnUnavailable>
   <!-- EN: {1}'s "{0}" can no longer count items in deleted stockpile {2}. -->
-  <MessageBillValidationIncludeZoneDeleted>{1}'s "{0}" kann nicht länger Waren in der gelöschten Lagerzone '{2}' zählen.</MessageBillValidationIncludeZoneDeleted>
+  <MessageBillValidationIncludeZoneDeleted>{1}s "{0}" kann nicht länger Waren in der gelöschten Lagerzone '{2}' zählen.</MessageBillValidationIncludeZoneDeleted>
   <!-- EN: {1}'s "{0}" can no longer count items in unavailable stockpile {2}. -->
-  <MessageBillValidationIncludeZoneUnavailable>{1}'s "{0}" kann nicht länger Waren in der nicht-verfügbaren Lagerzone '{2}' zählen.</MessageBillValidationIncludeZoneUnavailable>
+  <MessageBillValidationIncludeZoneUnavailable>{1}s "{0}" kann nicht länger Waren in der nicht-verfügbaren Lagerzone '{2}' zählen.</MessageBillValidationIncludeZoneUnavailable>
   <!-- EN: {1}'s "{0}" can no longer deliver all products to stockpile {2}. -->
-  <MessageBillValidationStoreZoneInsufficient>{1}'s "{0}" kann nicht länger alle Produkte zur Lagerzone '{2}' liefern.</MessageBillValidationStoreZoneInsufficient>
+  <MessageBillValidationStoreZoneInsufficient>{1}s "{0}" kann nicht länger alle Produkte zur Lagerzone '{2}' liefern.</MessageBillValidationStoreZoneInsufficient>
 
   <!-- EN: Because of a lack of taming maintenance, {1_labelShort} has returned to the wild. -->
   <MessageAnimalReturnedWild>Da die Zähmung nicht mehr erneuert wurde, ist {1_labelShort} wieder verwildert.</MessageAnimalReturnedWild>
@@ -563,7 +563,7 @@
   <MessagePermitCooldownFinished>{0_labelShort} kann nun ungehindert "{1}" verwenden.</MessagePermitCooldownFinished>
 
   <!-- EN: {PREDATOR} is hunting {PREY_definite} ({PREY_kindBase}) for food! -->
-  <MessagePredatorHuntingPlayerAnimal>Ein {PREDATOR_label} macht Jagd auf {PREY_definite}!</MessagePredatorHuntingPlayerAnimal>
+  <MessagePredatorHuntingPlayerAnimal>{PREDATOR_kindBaseIndef} ist hungrig und macht Jagd auf {PREY_definite} ({PREY_kindBase})!</MessagePredatorHuntingPlayerAnimal>
 
   <!-- EN: Prisoner {PRISONER_labelShort}'s resistance has been broken by {WARDEN_labelShort}. -->
   <MessagePrisonerResistanceBroken>{WARDEN_labelShort} hat den Widerstand von {PRISONER_labelShort} gebrochen.</MessagePrisonerResistanceBroken>
