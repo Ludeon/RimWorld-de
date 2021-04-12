@@ -68,21 +68,21 @@
   <RecruitFail>{0} konnte {1} nicht rekrutieren ({2} Chance).</RecruitFail>
 
   <!-- EN: {PAWN_nameDef} is {RELATIVE_labelShort}'s {1}. If {PAWN_nameDef} dies, {RELATIVE_labelShort} will suffer from long-lasting grief. However, if you manage to rescue {PAWN_nameDef}, {RELATIVE_labelShort} will be very happy for a long time. -->
-  <RelatedPawnInvolvedInQuest>{PAWN_nameDef} ist {RELATIVE_labelShort}'s {1}. Wenn {PAWN_nameDef} stirbt, wird {RELATIVE_labelShort} sehr lange um {PAWN_objective} trauern. Andererseits, wenn du es schaffst {PAWN_nameDef} zu retten, wird {RELATIVE_labelShort} sehr lange sehr glücklich sein.</RelatedPawnInvolvedInQuest>
+  <RelatedPawnInvolvedInQuest>{PAWN_nameDef} ist {RELATIVE_labelShort}s {1}. Wenn {PAWN_nameDef} stirbt, wird {RELATIVE_labelShort} sehr lange um {PAWN_objective} trauern. Andererseits, wenn du es schaffst {PAWN_nameDef} zu retten, wird {RELATIVE_labelShort} sehr lange sehr glücklich sein.</RelatedPawnInvolvedInQuest>
 
   <!-- EN: Birthday -->
   <LetterLabelBirthday>Geburtstag</LetterLabelBirthday>
   <!-- EN: It's {0}'s chronological birthday today! Biologically, {1} is {3} years old.\n\nChronologically, {1} just turned {2}.\n\nNote that since people don't age while in cryptosleep, chronological birthday is separate from biological birthday. -->
-  <BirthdayChronological>{0} hat heute {PAWN_possessive}en Geburtstag! Biologisch ist {1} {3} Jahre alt. Chronologisch wurde {1} {2}.\n\nHinweis: Das chronologische Alter ist das biologische Alter plus der verbrachten Zeit in einer Kryptokapsel.</BirthdayChronological>
+  <BirthdayChronological>{0} hat heute Geburtstag! Biologisch ist {1} {3} Jahre alt. Chronologisch wurde {1} {2}.\n\nHinweis: Das chronologische Alter ist das biologische Alter plus der verbrachten Zeit in einer Kryptokapsel.</BirthdayChronological>
   <!-- EN: {0_nameFull} has reached the biological age of {1}.\n\nUnfortunately, {0_nameFull} has gained the following diseases due to aging:\n{2} -->
-  <BirthdayBiologicalAgeInjuries>{0_nameFull} hat das biologische Alter von {1} Jahren erreicht.\n\nFolgende altersbedingte Krankheiten wurden bei {0_nameFull} festgestellt:\n{2}</BirthdayBiologicalAgeInjuries>
+  <BirthdayBiologicalAgeInjuries>{0_nameFull} hat das biologische Alter von {1} Jahren erreicht.\n\nFolgende altersbedingte Krankheiten wurden bei {0_gender ? ihm : ihr} festgestellt:\n{2}</BirthdayBiologicalAgeInjuries>
 
   <!-- EN: Disease -->
   <LetterLabelNewDisease>Krankheit</LetterLabelNewDisease>
   <!-- EN: {PAWN} has gotten sick from {1}.\n\nEnsure you have a medical bed and a doctor. Make sure that {PAWN_definite} gets proper treatment and spends as much time in bed as possible. -->
-  <NewDisease>{PAWN} ist an {1} erkrankt.\nStelle sicher, dass du ein Krankenbett und einen Arzt hast. Sorge dafür, dass {PAWN_definite} eine vernünftige Behandlung bekommt und so viel Zeit wie möglich im Bett verbringt, um schnell wieder gesund zu werden.</NewDisease>
+  <NewDisease>{PAWN} ist an {1} erkrankt.\n\nStelle sicher, dass du ein Krankenbett und einen Arzt hast. Sorge dafür, dass {PAWN_definite} eine vernünftige Behandlung bekommt und so viel Zeit wie möglich im Bett verbringt, um schnell wieder gesund zu werden.</NewDisease>
   <!-- EN: {PAWN} has gotten sick from {3}. The infection is in {PAWN_possessive} {1}.\n\nEnsure you have a medical bed and a doctor. Make sure that {PAWN_definite} gets proper treatment and spends as much time in bed as possible. -->
-  <NewPartDisease>{PAWN} ist an {3} erkrankt. Die Infektion trat in folgendem Körperteil auf: {1}.\nStelle sicher, dass du ein Krankenbett und einen Arzt hast. Sorge dafür, dass {PAWN_definite} eine vernünftige Behandlung bekommt und so viel Zeit wie möglich im Bett verbringt, um schnell wieder gesund zu werden.</NewPartDisease>
+  <NewPartDisease>{PAWN} ist an {3} erkrankt. Die Infektion trat in folgendem Körperteil auf: {1}.\n\nStelle sicher, dass du ein Krankenbett und einen Arzt hast. Sorge dafür, dass {PAWN_definite} eine vernünftige Behandlung bekommt und so viel Zeit wie möglich im Bett verbringt, um schnell wieder gesund zu werden.</NewPartDisease>
   <!-- EN: {PAWN_labelShort} has developed an illness: {1} -->
   <NewDiseaseAnimal>{PAWN_labelShort} ist an {1} erkrankt.</NewDiseaseAnimal>
   <!-- EN: {PAWN_labelShort} has developed an illness: {3} in {PAWN_possessive} {1} -->
@@ -118,12 +118,12 @@
   <LetterFriendlyTrapSprung>{1_labelShort} hat versehentlich eine Falle ausgelöst und wurde verletzt.</LetterFriendlyTrapSprung>
 
   <!-- EN: {PAWN_labelShort} has developed a health condition:\n\n  {1}\n\nThis was caused by:\n\n  {2} -->
-  <LetterHealthComplications>{PAWN_labelShort} hat eine Krankheit bekommen:\n\n  {1}\n\nDiese wurde verursacht von:\n\n  {2}.</LetterHealthComplications>
+  <LetterHealthComplications>{PAWN_labelShort} hat einen neuen Gesundheitszustand:\n\n  {1}\n\nDie Ursache dafür war:\n\n  {2}.</LetterHealthComplications>
   <!-- EN: {PAWN_labelShort}: {1} -->
   <LetterHealthComplicationsLabel>{PAWN_labelShort}: {1}</LetterHealthComplicationsLabel>
   
   <!-- EN: {PAWN_labelShort} has developed a health condition: {1}. -->
-  <LetterHediffFromRandomHediffGiver>{PAWN_labelShort} hat eine Krankheit bekommen: {1}.</LetterHediffFromRandomHediffGiver>
+  <LetterHediffFromRandomHediffGiver>{PAWN_labelShort} hat einen neuen Gesundheitszustand: {1}.</LetterHediffFromRandomHediffGiver>
   <!-- EN: {PAWN_labelShort}: {1} -->
   <LetterHediffFromRandomHediffGiverLabel>{PAWN_labelShort}: {1}</LetterHediffFromRandomHediffGiverLabel>
 
@@ -149,7 +149,7 @@
   <!-- EN: This happened because of: {0}. -->
   <MentalStateReason_Hediff>Dies geschah aufgrund von: {0}.</MentalStateReason_Hediff>
   <!-- EN: This happened because of {0_definite}'s death. -->
-  <MentalStateReason_BondedHumanDeath>Dies geschah, weil {0_definite} verstarb</MentalStateReason_BondedHumanDeath>
+  <MentalStateReason_BondedHumanDeath>Dies geschah, weil {0_definite} gestorben ist.</MentalStateReason_BondedHumanDeath>
   <!-- EN: The last event was -->
   <LastFactionRelationsEvent>Das letzte Ereignis war</LastFactionRelationsEvent>
 
@@ -192,7 +192,7 @@
   <!-- EN: {PAWN_nameDef} has a relationship with a colonist. {PAWN_pronoun} is {RELATIVE_labelShort}'s {1}. -->
   <RelationshipAppendedLetterTextColonist>{PAWN_nameDef} ist in irgendeiner Form verwandt mit einem Kolonisten. {PAWN_pronoun} ist {RELATIVE_labelShort}'s {1}.</RelationshipAppendedLetterTextColonist>
   <!-- EN: {PAWN_nameDef} has a relationship with one of your prisoners. {PAWN_pronoun} is {RELATIVE_labelShort}'s {1}. -->
-  <RelationshipAppendedLetterTextPrisoner>{PAWN_nameDef} ist in irgendeiner Form verwandt mit einem Gefangenen. {PAWN_pronoun} ist {RELATIVE_labelShort}'s {1}.</RelationshipAppendedLetterTextPrisoner>
+  <RelationshipAppendedLetterTextPrisoner>{PAWN_nameDef} ist in irgendeiner Form verwandt mit einem Gefangenen. {PAWN_pronoun} ist {RELATIVE_labelShort}s {1}.</RelationshipAppendedLetterTextPrisoner>
 
   <!-- Attempt romance / propose interaction -->
   <!-- EN: Affair -->
@@ -244,7 +244,7 @@
   <!-- EN: Prison break -->
   <LetterLabelPrisonBreak>Gefängnisausbruch</LetterLabelPrisonBreak>
   <!-- EN: Prisoners have staged a breakout! They've somehow defeated the door locks and are making their way out. They may seek weapons, fight, or try to escape. These prisoners are involved:\n\n{0}\n\nPrisoners are more likely to attempt breakout when they are numerous and healthy. -->
-  <LetterPrisonBreak>Gefangene haben einen Ausbruchsversuch gestartet! Irgendwie haben sie es geschafft das Türschloss zu knacken und sind jetzt auf dem Weg in die Freiheit. Sie können Waffen suchen, kämpfen oder versuchen zu fliehen. Diese Gefangenen sind beteiligt:\n\n{0}\n\nGefangene versuchen eher einen Ausbruch, wenn sie zahlreich und gesund sind.</LetterPrisonBreak>
+  <LetterPrisonBreak>Gefangene haben einen Ausbruchsversuch gestartet! Sie haben irgendwie die Türschlösser geknackt und bahnen sich ihren Weg nach draußen. Es kann passieren, dass sie nach Waffen suchen, kämpfen oder versuchen zu fliehen. Folgende Gefangenen sind daran beteiligt:\n\n{0}\n\nGefangene sind eher zu einem Ausbruchsversuch bereit, wenn viele von ihnen vorhanden und wohlauf sind.</LetterPrisonBreak>
 
   <!-- Newly addicted -->
   <!-- EN: {0} addiction -->
@@ -266,9 +266,9 @@
 
   <!-- Caravan entered map -->
   <!-- EN: Caravan arrived at {0_label} -->
-  <LetterLabelCaravanEnteredMap>Karawane bei {0_label} eingetroffen</LetterLabelCaravanEnteredMap>
+  <LetterLabelCaravanEnteredMap>Karawane in {0_label} eingetroffen</LetterLabelCaravanEnteredMap>
   <!-- EN: {0} has arrived at {1_definite}. -->
-  <LetterCaravanEnteredMap>{0} ist bei {1_label} eingetroffen.</LetterCaravanEnteredMap>
+  <LetterCaravanEnteredMap>{0} ist in {1_label} eingetroffen.</LetterCaravanEnteredMap>
 
   <!-- Caravan entered enemy base -->
   <!-- EN: Attack begun -->
@@ -296,7 +296,7 @@
   <!-- EN: Quest completed -->
   <LetterLabelDefeatAllEnemiesQuestCompleted>Quest abgeschlossen</LetterLabelDefeatAllEnemiesQuestCompleted>
   <!-- EN: You have defeated the enemy outpost!\n\nThe payment from {0} has arrived, and faction relations have improved by {1}. -->
-  <LetterDefeatAllEnemiesQuestCompleted>Du hast den gegnerischen Außenposten besiegt!\n\nDie Bezahlung von '{0}' ist eingetroffen und die Beziehung zur Fraktion hat sich um {1} verbessert.</LetterDefeatAllEnemiesQuestCompleted>
+  <LetterDefeatAllEnemiesQuestCompleted>Du hast den gegnerischen Außenposten besiegt!\n\nDie Bezahlung von '{0}' ist eingetroffen und der Ruf bei dieser Fraktion hat sich um {1} verbessert.</LetterDefeatAllEnemiesQuestCompleted>
 
   <!-- Long-range mineral scanner -->
   <!-- EN: Distant resource scanned -->
@@ -320,29 +320,29 @@
   <!-- EN: Peace talks disaster -->
   <LetterLabelPeaceTalks_Disaster>Friedensgespräche (Katastrophe)</LetterLabelPeaceTalks_Disaster>
   <!-- EN: The talks were a disaster. The delegates barely got past their initial greetings before the discussion broke down into insults and recriminations.\n\nAfter your caravan departed early, {0} from {1} caught up with it and attacked!\n\nRelations with {1}: {2}. -->
-  <LetterPeaceTalks_Disaster>Die Friedensgespräche waren eine Katastrophe. Die Delegierten konnten kaum ihre einleitenden Grußworte vorbringen, als die Diskussion in Beleidigungen und Anschuldigungen zerbrach.\n\nNachdem deine Karawane früh wieder aufgebrochen war, hatte sie {0} von {1} eingeholt und griff an!\n\nBeziehung zur Fraktion '{1}': {2}.</LetterPeaceTalks_Disaster>
+  <LetterPeaceTalks_Disaster>Die Friedensgespräche waren eine Katastrophe. Die Delegierten konnten kaum ihre einleitenden Grußworte vorbringen, als die Diskussion in Beleidigungen und Anschuldigungen zerbrach.\n\nNachdem deine Karawane früh wieder aufgebrochen war, hatte sie {0} von {1} eingeholt und griff an!\n\nRufstatus bei der Fraktion '{1}': {2}.</LetterPeaceTalks_Disaster>
   <!-- EN: Peace talks backfire -->
   <LetterLabelPeaceTalks_Backfire>Friedensgespräche (Fehlschlag)</LetterLabelPeaceTalks_Backfire>
   <!-- EN: The talks have backfired. Despite trading some pleasantries, the delegates made no progress on substantive issues, and multiple statements were interpreted as insults.\n\nRelations with {0}: {1}. -->
-  <LetterPeaceTalks_Backfire>Die Friedensgespräche sind fehlgeschlagen. Obwohl Freundlichkeiten ausgetauscht wurden, konnten die Delegierten keinerlei Fortschritte bei grundlegenden Problemen erzielen, und mehrere Standpunkte wurden als Beleidigungen aufgefasst.\n\nBeziehung zur Fraktion '{0}': {1}.</LetterPeaceTalks_Backfire>
+  <LetterPeaceTalks_Backfire>Die Friedensgespräche sind fehlgeschlagen. Obwohl Freundlichkeiten ausgetauscht wurden, konnten die Delegierten keinerlei Fortschritte bei grundlegenden Problemen erzielen, und mehrere Standpunkte wurden als Beleidigungen aufgefasst.\n\nRufstatus bei der Fraktion '{0}': {1}.</LetterPeaceTalks_Backfire>
   <!-- EN: Peace talks flounder -->
   <LetterLabelPeaceTalks_TalksFlounder>Friedensgespräche (Stillstand)</LetterLabelPeaceTalks_TalksFlounder>
   <!-- EN: The talks floundered. Delegates managed to communicate clearly and with basic respect, but were not able to make progress on any genuine issues.\n\nRelations with {0} remain unchanged. -->
-  <LetterPeaceTalks_TalksFlounder>Die Friedensgespräche sind nicht vorwärtsgekommen. Die Delegierten konnten sich klar und respektvoll verständigen, schafften es aber nicht, irgendeinen Fortschritt bei den verschiedenen Problemen zu erreichen.\n\nBeziehung zur Fraktion '{0}' bleibt unverändert.</LetterPeaceTalks_TalksFlounder>
+  <LetterPeaceTalks_TalksFlounder>Die Friedensgespräche sind nicht vorwärtsgekommen. Die Delegierten konnten sich klar und respektvoll verständigen, schafften es aber nicht, irgendeinen Fortschritt bei den verschiedenen Problemen zu erreichen.\n\nRufstatus bei der Fraktion '{0}' bleibt unverändert.</LetterPeaceTalks_TalksFlounder>
   <!-- EN: Peace talks success -->
   <LetterLabelPeaceTalks_Success>Friedensgespräche (Erfolg)</LetterLabelPeaceTalks_Success>
   <!-- EN: The talks were a success. The delegates reached new mutual understanding on several substantial issues.\n\nRelations with {0} have improved by {1}. -->
-  <LetterPeaceTalks_Success>Die Friedensgespräche waren ein Erfolg. Die Delegierten haben ein neues einvernehmliches Verständnis bei mehreren grundlegenden Problemen erreicht.\n\nDeine Beziehung zur Fraktion '{0}' hat sich um {1} Rufpunkte verbessert.</LetterPeaceTalks_Success>
+  <LetterPeaceTalks_Success>Die Friedensgespräche waren ein Erfolg. Die Delegierten haben ein neues einvernehmliches Verständnis bei mehreren grundlegenden Problemen erreicht.\n\nDein Ruf bei der Fraktion '{0}' hat sich um {1} Punkte verbessert.</LetterPeaceTalks_Success>
   <!-- EN: Peace talks triumph -->
   <LetterLabelPeaceTalks_Triumph>Friedensgespräche (Triumph)</LetterLabelPeaceTalks_Triumph>
   <!-- EN: The talks were a great triumph! Delegates connected quickly on a personal level and came to truly see each others' perspective on the most difficult issues of the day.\n\nRelations with {0} have improved by {1}.\n\nAs your caravan departed, {0} offered you a gift:\n\n{2} -->
-  <LetterPeaceTalks_Triumph>Die Friedensgespräche waren triumphal! Die Delegierten haben sofort auf einer persönlichen Ebene zueinander gefunden und konnten die Standpunkte beider Seiten problemlos erkennen, sodass es eine Leichtigkeit war, selbst bei den schwierigsten Problemen eine einvernehmliche Lösung zu finden.\n\nBeziehung zur Fraktion '{0}' hat sich um {1} Rufpunkte verbessert.\n\nAls deine Karawane aufbrach, hat {0} dir ein Geschenk angeboten:\n\n{2}.</LetterPeaceTalks_Triumph>
+  <LetterPeaceTalks_Triumph>Die Friedensgespräche waren triumphal! Die Delegierten haben sofort auf einer persönlichen Ebene zueinander gefunden und konnten die Standpunkte beider Seiten problemlos erkennen, sodass es eine Leichtigkeit war, selbst bei den schwierigsten Problemen eine einvernehmliche Lösung zu finden.\n\nDein Ruf bei der Fraktion '{0}' hat sich um {1} Punkte verbessert.\n\nAls deine Karawane aufbrach, hat {0} dir ein Geschenk angeboten:\n\n{2}.</LetterPeaceTalks_Triumph>
   <!-- EN: {PAWN_labelShort}, your negotiator, has gained {1} social experience. -->
   <PeaceTalksSocialXPGain>Dein Unterhändler {PAWN_labelShort} hat {1} soziale Erfahrungspunkte gesammelt.</PeaceTalksSocialXPGain>
 
   <!-- Run wild mental break -->
   <!-- EN: {0} is fed up with civilization.\n\n{PAWN_pronoun} realized that wild creatures are always free. So, {PAWN_pronoun} has decided to leave your faction and live with the animals.\n\nYou can attempt to tame or arrest {PAWN_objective} to get {PAWN_objective} back. -->
-  <LetterRunWildMentalBreak>{0} hat genug von der Zivilisation.\n\n{PAWN_pronoun} hat erkannt, dass wilde Tiere immer frei sind. Aus diesem Grund hat {PAWN_pronoun} beschlossen, deine Fraktion zu verlassen und bei den wilden Tieren zu leben.\n\nDu kannst versuchen {PAWN_objective} zu zähmen oder gefangen zu nehmen, um {PAWN_objective} wieder zurückzubekommen.</LetterRunWildMentalBreak>
+  <LetterRunWildMentalBreak>{0} hat genug von der Zivilisation.\n\n{PAWN_pronoun} hat erkannt, dass wilde Tiere immer frei sind. Aus diesem Grund hat {PAWN_pronoun} beschlossen, deine Fraktion zu verlassen und bei den wilden Tieren zu leben.\n\nDu kannst versuchen, {PAWN_objective} zu zähmen oder zu inhaftieren, um {PAWN_objective} wieder zurückzubekommen.</LetterRunWildMentalBreak>
 
   <!-- Catatonic mental break -->
   <!-- EN: {0} has suffered a total mental breakdown and entered a catatonic state. {PAWN_pronoun} will recover in several days. -->
@@ -396,7 +396,7 @@
   <!-- EN: Faction base proximity -->
   <LetterLabelFactionBaseProximity>Nähe zur Basis einer Fraktion</LetterLabelFactionBaseProximity>
   <!-- EN: Because you are so close to other factions, they feel you're encroaching on their territory.\n\nFor the last quadrum, faction relations have been reduced by: -->
-  <LetterFactionBaseProximity>Da du so nahe an anderen Fraktionen bist, sehen sie das als Übergriff auf ihr Land an.\n\nFür das letzte Quartal hat sich dein Ruf bei ihnen wie folgt verschlechtert:</LetterFactionBaseProximity>
+  <LetterFactionBaseProximity>Da du so nahe an anderen Fraktionen bist, sehen sie das als Übergriff auf ihr Land an.\n\nIm letzten Quartal hat sich dein Ruf bei ihnen wie folgt verschlechtert:</LetterFactionBaseProximity>
 
   <!-- Caravans battlefield victory -->
   <!-- EN: Caravan battle won -->
@@ -426,7 +426,7 @@
 
   <!-- Surgery -->
   <!-- EN: Surgery failed on {PATIENT_labelShort} -->
-  <LetterLabelSurgeryFailed>Operation von {PATIENT_labelShort} fehlgeschlagen</LetterLabelSurgeryFailed>
+  <LetterLabelSurgeryFailed>Operation an {PATIENT_labelShort} fehlgeschlagen</LetterLabelSurgeryFailed>
   <!-- EN: {SURGEON_labelShort} has failed in a minor way while operating on {PATIENT_labelShort} ({RECIPE_label}). -->
   <MessageMedicalOperationFailureMinor>{SURGEON_labelShort} hat bei der Operation an {PATIENT_labelShort} ({RECIPE_label}) einen kleinen Fehler gemacht.</MessageMedicalOperationFailureMinor> <!-- NewTemp rename to LetterTextOperationFailureMinor globally-->
   <!-- EN: {SURGEON_labelShort} has failed catastrophically while operating on {PATIENT_labelShort} ({RECIPE_label}). -->

@@ -34,11 +34,11 @@
   <!-- EN: {PAWN_titleIndef} named {PAWN_nameDef} is crashing in a transport pod nearby. If {PAWN_pronoun} survives the impact, {PAWN_pronoun} will be badly wounded. -->
   <RefugeePodCrash>{PAWN_titleIndef} namens {PAWN_nameDef} stürzt mit einer Transportkapsel in der Nähe ab. Sollte {PAWN_pronoun} den Aufschlag überleben, wird {PAWN_pronoun} vermutlich schwer verletzt sein.</RefugeePodCrash>
   <!-- EN: {PAWN_nameDef} is not affiliated with any faction. You can rescue {PAWN_objective} and hope {PAWN_pronoun} joins freely, or capture {PAWN_objective} for recruitment or slavery purposes. -->
-  <RefugeePodCrash_Factionless>{PAWN_nameDef} gehört zu keiner Fraktion. Du kannst {PAWN_objective} retten und hoffen, dass {PAWN_pronoun} freiwillig bleibt, oder {PAWN_objective} für Rekrutierungs- oder Sklavereizwecke gefangen nehmen.</RefugeePodCrash_Factionless>
+  <RefugeePodCrash_Factionless>{PAWN_nameDef} gehört zu keiner Fraktion. Du kannst {PAWN_objective} retten und hoffen, dass {PAWN_pronoun} sich dir freiwillig anschließt, oder {PAWN_objective} einfangen, um {PAWN_objective} zu rekrutieren oder zu versklaven.</RefugeePodCrash_Factionless>
   <!-- EN: {PAWN_nameDef} is from your enemy {PAWN_factionName}. You can capture {PAWN_objective} for recruitment or slavery purposes. -->
-  <RefugeePodCrash_Hostile>{PAWN_nameDef} gehört zu der feindlichen Fraktion '{PAWN_factionName}'. Du kannst {PAWN_objective} einsperren, um {PAWN_objective} zu rekrutieren oder zu versklaven.</RefugeePodCrash_Hostile>
+  <RefugeePodCrash_Hostile>{PAWN_nameDef} gehört zu der feindlichen Fraktion '{PAWN_factionName}'. Du kannst {PAWN_objective} einfangen, um {PAWN_objective} zu rekrutieren oder zu versklaven.</RefugeePodCrash_Hostile>
   <!-- EN: {PAWN_nameDef} is from {PAWN_factionName}. If you rescue {PAWN_objective}, {PAWN_pronoun} may join freely. Otherwise, {PAWN_pronoun} will return home and spread goodwill between your factions.\n\nYou can also capture {PAWN_objective} for recruitment or slavery purposes, but this will anger {PAWN_possessive} faction. -->
-  <RefugeePodCrash_NonHostile>{PAWN_nameDef} ist von der Fraktion '[PAWN_factionName]'. Wenn du {PAWN_objective} rettest, wird {PAWN_pronoun} vielleicht freiwillig deiner Gemeinschaft beitreten. Ansonsten wird {PAWN_pronoun} nach Hause zurückkehren und deinen Ruf bei {PAWN_possessive}er Fraktion verbessern.\n\nDu kannst {PAWN_objective} auch einfangen, aber das wird {PAWN_possessive}e Fraktion verärgern.</RefugeePodCrash_NonHostile>
+  <RefugeePodCrash_NonHostile>{PAWN_nameDef} ist von der Fraktion '{PAWN_factionName}'. Wenn du {PAWN_objective} rettest, besteht die Möglichkeit, dass {PAWN_pronoun} sich dir freiwillig anschließt. Ansonsten wird {PAWN_pronoun} nach Hause zurückkehren und deinen Ruf bei {PAWN_possessive}er Fraktion verbessern.\n\nDu kannst {PAWN_objective} auch einfangen, um {PAWN_objective} zu rekrutieren oder zu versklaven, aber das wird {PAWN_possessive}e Fraktion verärgern.</RefugeePodCrash_NonHostile>
 
   <!-- EN: Cargo pods -->
   <LetterLabelCargoPodCrash>Vorratskapsel</LetterLabelCargoPodCrash>
@@ -68,7 +68,7 @@
   <!-- EN: A {PAWN_title} from {1} is passing by. {PAWN_pronoun} is named {PAWN_nameFull}. -->
   <SingleTravelerPassing>{PAWN_titleIndef} der Fraktion '{1}' befindet sich auf der Durchreise. {PAWN_pronoun} heißt {PAWN_nameFull}.</SingleTravelerPassing>
   <!-- EN: A group of travelers from {0} are passing by. -->
-  <GroupTravelersPassing>Reisende der Fraktion '{0}' befinden sich auf der Durchreise.</GroupTravelersPassing>
+  <GroupTravelersPassing>Reisende der Fraktion '{0}' durchqueren das Gebiet.</GroupTravelersPassing>
 
   <!-- EN: Visitor -->
   <LetterLabelSingleVisitorArrives>Besucher</LetterLabelSingleVisitorArrives>
@@ -136,7 +136,7 @@
 
   <!-- Farm animals wander in -->
   <!-- EN: {0} join -->
-  <LetterLabelFarmAnimalsWanderIn>{0} bleiben</LetterLabelFarmAnimalsWanderIn>
+  <LetterLabelFarmAnimalsWanderIn>{0} schließen sich an</LetterLabelFarmAnimalsWanderIn>
   <!-- EN: A group of {0}, abandoned or lost, have wandered into the area.\n\nThey seem accustomed to human contact and are joining the colony. -->
   <LetterFarmAnimalsWanderIn>Eine Gruppe ausgesetzter oder verirrter {0} hat das Gebiet betreten.\n\nSie scheinen Menschen zu vertrauen und treten der Kolonie bei.</LetterFarmAnimalsWanderIn>
   
@@ -178,7 +178,7 @@
 
   <!-- Caravan meeting -->
   <!-- EN: Caravan meeting by {0} -->
-  <CaravanMeetingTitle>Karawanentreffen von {0}</CaravanMeetingTitle>
+  <CaravanMeetingTitle>Karawanentreffen mit {0}</CaravanMeetingTitle>
   <!-- EN: {0} has met peacefully with a caravan from {1}. The other caravan is composed of:\n\n{2} -->
   <CaravanMeeting>{0} hat sich friedlich mit einer Karawane der Fraktion '{1}' getroffen. Deren Karawane besteht aus:\n\n{2}</CaravanMeeting>
   <!-- EN: Trade -->
@@ -194,9 +194,9 @@
   
   <!-- Caravan request -->
   <!-- EN: Caravan request -->
-  <LetterLabelCaravanRequest>Angefragte Karawane</LetterLabelCaravanRequest>
+  <LetterLabelCaravanRequest>Karawanenanfrage</LetterLabelCaravanRequest>
   <!-- EN: A nearby settlement, {0}, contacts you with a special trade request. They would like to purchase:\n\n  {1} (worth {2})\n\nIn return, they offer:\n\n  {3} (worth {4})\n\nThis request expires after: {5}\n\nIf you want to make the trade, send a caravan with the requested supplies. The estimated travel time is {6}. You can review this offer by selecting {0} on the world map. -->
-  <LetterCaravanRequest>Eine nahe Siedlung, {0}, kontaktiert dich mit einer speziellen Handelsanfrage. Sie brauchen dringend:\n\n  {1} (Wert {2})\n\nSie bieten Folgendes als Gegenleistung an:\n\n  {3} (Wert {4})\n\nDiese Anfrage ist gültig für: {5}\n\nWenn du das Angebot annehmen willst, sende eine Karawane mit den geforderten Vorräten. Die geschätzte Reisezeit liegt bei {6}. Du kannst dieses Angebot noch einmal einsehen, indem du {0} auf der Weltkarte auswählst.</LetterCaravanRequest>
+  <LetterCaravanRequest>Eine nahe Siedlung, {0}, kontaktiert dich mit einer speziellen Handelsanfrage. Sie brauchen dringend:\n\n  {1} (Wert {2})\n\nSie bieten Folgendes als Gegenleistung an:\n\n  {3} (Wert {4})\n\nDiese Anfrage ist gültig für: {5}\n\nWenn du an diesem Handel interessiert bist, sende ihnen eine Karawane mit den geforderten Waren. Die geschätzte Reisezeit liegt bei {6}. Du kannst dieses Angebot noch einmal einsehen, indem du {0} auf der Weltkarte auswählst.</LetterCaravanRequest>
   <!-- EN: Requesting: {0} ({2}) ({1} left) -->
   <CaravanRequestInfo>Benötigt: {0} ({2}) ({1} übrig)</CaravanRequestInfo>
   <!-- EN: normal quality or better -->
@@ -206,11 +206,11 @@
 
   <!-- Caravan demand -->
   <!-- EN: Caravan demand by {0} -->
-  <CaravanDemandTitle>Wegezoll von {0}</CaravanDemandTitle>
+  <CaravanDemandTitle>Karawanenforderung von {0}</CaravanDemandTitle>
   <!-- EN: {0} has been ambushed by a group of {2} {4} from {1}. They will attack unless you give them:\n\n{3} -->
-  <CaravanDemand>{0} wurde von einer Gruppe {2} {4} von {1} aufgehalten. Sie werden angreifen, sofern du nicht den Wegezoll bezahlst:\n\n{3}</CaravanDemand>
+  <CaravanDemand>{0} wurde von einer Gruppe bestehend aus {2} Personen ({4}) von der Fraktion '{1}' aufgelauert. Sie werden angreifen, es sei denn du gibst ihnen:\n\n{3}</CaravanDemand>
   <!-- EN: Give and pass -->
-  <CaravanDemand_Give>Zahlen und weiter</CaravanDemand_Give>
+  <CaravanDemand_Give>Geben und weiterziehen</CaravanDemand_Give>
   <!-- EN: Refuse and fight -->
   <CaravanDemand_Fight>Ablehnen und kämpfen</CaravanDemand_Fight>
 
@@ -234,7 +234,7 @@
   <!-- EN: Quest failed -->
   <LetterLabelQuestAskerCaptured>Quest fehlgeschlagen</LetterLabelQuestAskerCaptured>
   <!-- EN: The quest is now incompletable because {SUBJECT_definite} has been captured. -->
-  <LetterQuestAskerCaptured>Die Quest kann nicht mehr abgeschlossen werden, weil {SUBJECT_definite} gefangen genommen wurde.</LetterQuestAskerCaptured>
+  <LetterQuestAskerCaptured>Die Quest kann nicht mehr abgeschlossen werden, weil {SUBJECT_definite} eingefangen wurde.</LetterQuestAskerCaptured>
 
   <!-- Quest asker died -->
   <!-- EN: Quest failed -->

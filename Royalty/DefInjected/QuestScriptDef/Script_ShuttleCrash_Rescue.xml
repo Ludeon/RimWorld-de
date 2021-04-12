@@ -76,7 +76,7 @@
   <ShuttleCrash_Rescue.questDescriptionRules.rulesStrings>
     <li>pawnLabelSingleOrPlural(civilians_count==1)->[pawnLabel]</li>
     <li>pawnLabelSingleOrPlural(civilians_count>=2)->[pawnLabelPlural]</li>
-    <li>questDescription->Ein Shuttle der Fraktion '[asker_faction_name]' ist beschädigt und sucht einen Landeplatz. Dessen [Kommandant] namens [asker_nameDef] will in [map_definite] landen.\n\n[enemyFaction_pawnsPlural] der Fraktion '[enemyFaction_name]' werden den Absturzort des Shuttles angreifen und versuchen, die Insassen zu töten. Du musst sie verteidigen.\n\nIn dem Shuttle befinden sich [asker_nameDef][andOtherCivilians] und [soldiers_count] Soldaten. [der] [Kommandant] [andCivilians] [muss] gerettet werden, aber die Soldaten sind entbehrlich.\n\nIn [rescueDelay_duration] wird ein Rettungs-Shuttle eintreffen, um die Überlebenden abzuholen. Du musst sie alle innerhalb von [leaveDelay_duration] an Bord bringen.</li>
+    <li>questDescription->Ein Shuttle der Fraktion '[asker_faction_name]' ist beschädigt und sucht einen Platz zum Landen. [asker_nameDef], [der] [Kommandant] des Shuttles, will in [map_definite] landen.\n\n[enemyFaction_pawnsPlural] der Fraktion '[enemyFaction_name]' werden den Absturzort des Shuttles angreifen und versuchen, die Insassen zu töten. Du musst sie verteidigen.\n\nIn dem Shuttle befinden sich [asker_nameDef][andOtherCivilians] und [soldiers_count] Soldaten. [der] [Kommandant] [andCivilians] [muss] gerettet werden, aber die Soldaten sind entbehrlich.\n\nIn [rescueDelay_duration] wird ein Rettungs-Shuttle eintreffen, um die Überlebenden abzuholen. Du musst sie alle innerhalb von [leaveDelay_duration] an Bord bringen.</li>
     <li>andOtherCivilians(civilians_count==1)-></li>
     <li>andOtherCivilians(civilians_count==2)->, ein weiterer [pawnLabel]</li>
     <li>andOtherCivilians(civilians_count>=3)->, [civilianCountMinusOne] weitere [pawnLabelSingleOrPlural]</li>
@@ -118,12 +118,12 @@
     <li>questName->[asker_faction_pawnsPlural][crash]</li>
     <li>questName(p=0.5)->[damaged]es [shuttleNeu]</li>
     <li>questName(p=0.5)->[damaged]er [shuttleMal]</li>
-    <li>questName(p=0.5)->[asker_nameDef]'s [damaged]es [shuttleNeu]</li>
-    <li>questName(p=0.5)->[asker_nameDef]'s [damaged]er [shuttleMal]</li>
+    <li>questName(p=0.5)->[asker_nameDef]s [damaged]es [shuttleNeu]</li>
+    <li>questName(p=0.5)->[asker_nameDef]s [damaged]er [shuttleMal]</li>
     <li>questName->Notlandung</li>
     <li>questName->erzwungene Landung</li>
-    <li>questName->[asker_nameDef]'s Notlandung</li>
-    <li>questName->[asker_nameDef]'s erzwungene Landung</li>
+    <li>questName->[asker_nameDef]s Notlandung</li>
+    <li>questName->[asker_nameDef]s erzwungene Landung</li>
     <li>shuttleNeu->Shuttle</li>
     <li>shuttleMal->Transporter</li>
     <li>shuttleNeu->Schiff</li>
