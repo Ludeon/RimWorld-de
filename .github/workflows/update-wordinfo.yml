@@ -3,6 +3,7 @@ name: Update WordInfo
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
 on:
+  workflow_dispatch:
   push:
     branches: [ master ]
 
@@ -11,7 +12,7 @@ jobs:
   # This workflow contains a single job called "build"
   build:
     # The type of runner that the job will run on
-    runs-on: windows-2016
+    runs-on: windows-latest
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -26,6 +27,9 @@ jobs:
 
         # Create a temporary folder
         $temp = New-Item "$env:temp\$([GUID]::NewGuid())" -ItemType "Directory"
+
+        # Create WordInfo/Gender folder
+        $main = New-Item "Core/WordInfo/Gender" -ItemType "Directory" -Force
 
         # Paths of the XML files in which the words should be searched
         $paths = @(
@@ -53,36 +57,51 @@ jobs:
         # Save a list of all found words
         Get-Content "$temp/all*.txt" | Sort-Object -Unique | Set-Content "$temp/all.txt"
 
+        # Create files
+        foreach ($fileName in "Male", "Female", "Neuter", "Plural", "new_words")
+        {
+          if (!(test-path "$main/$fileName.txt"))
+          {
+            New-Item -Path $main -Name "$fileName.txt"
+          }
+        }
+
         # Merge found male words into the list of male words
-        Get-Content "$temp/all_males.txt", "Core/WordInfo/Gender/Male.txt" | Sort-Object -Unique | Set-Content "Core/WordInfo/Gender/Male.txt"
+        Get-Content "$temp/all_males.txt", "$main/Male.txt" | Sort-Object -Unique | Set-Content "$main/Male.txt"
 
         # Merge found female words into the list of female words
-        Get-Content "$temp/all_females.txt", "Core/WordInfo/Gender/Female.txt" | Sort-Object -Unique | Set-Content "Core/WordInfo/Gender/Female.txt"
+        Get-Content "$temp/all_females.txt", "$main/Female.txt" | Sort-Object -Unique | Set-Content "$main/Female.txt"
 
         # Sort the list of neuter words
-        Get-Content "Core/WordInfo/Gender/Neuter.txt" | Sort-Object -Unique | Set-Content "Core/WordInfo/Gender/Neuter.txt"
+        Get-Content "$main/Neuter.txt" | Sort-Object -Unique | Set-Content "$main/Neuter.txt"
 
         # Sort the list of plural words
-        Get-Content "Core/WordInfo/Gender/Plural.txt" | Sort-Object -Unique | Set-Content "Core/WordInfo/Gender/Plural.txt"
+        Get-Content "$main/Plural.txt" | Sort-Object -Unique | Set-Content "$main/Plural.txt"
 
         # Save a list of words already classified
-        Get-Content (Get-ChildItem -Path "Core/WordInfo/Gender/*" -Include "Male.txt", "Female.txt", "Neuter.txt", "Plural.txt") | Sort-Object -Unique | Set-Content "$temp/wordinfo.txt"
+        Get-Content (Get-ChildItem -Path "$main/*" -Include "Male.txt", "Female.txt", "Neuter.txt", "Plural.txt") | Sort-Object -Unique | Set-Content "$temp/wordinfo.txt"
 
         # Save a list of words not classified
         $objects = @{
           ReferenceObject  = (Get-Content -Path "$temp/wordinfo.txt")
           DifferenceObject = (Get-Content -Path "$temp/all.txt")
         }
-        Compare-Object @objects -PassThru | Where-Object { $_.SideIndicator -eq "=>" } > "Core/WordInfo/Gender/new_words.txt"
+        if ($objects.ReferenceObject -and $objects.DifferenceObject)
+        {
+          Compare-Object @objects -PassThru | Where-Object { $_.SideIndicator -eq "=>" } > "$main/new_words.txt"
+        }
 
         # Removes obsolete words from the lists
         foreach ($gender in "Male", "Female", "Neuter", "Plural")
         {
           $objects = @{
             ReferenceObject  = (Get-Content -Path "$temp/all.txt")
-            DifferenceObject = (Get-Content -Path "Core/WordInfo/Gender/$gender.txt")
+            DifferenceObject = (Get-Content -Path "$main/$gender.txt")
           }
-          Compare-Object @objects -IncludeEqual -ExcludeDifferent -PassThru > "Core/WordInfo/Gender/$gender.txt"
+          if ($objects.ReferenceObject -and $objects.DifferenceObject)
+          {
+            Compare-Object @objects -IncludeEqual -ExcludeDifferent -PassThru > "$main/$gender.txt"
+          }
         }
 
         # Delete the temporary folder
@@ -92,5 +111,6 @@ jobs:
       run: |
         git config user.name "github-actions"
         git config user.email "github-actions@github.com"
+        git add -A
         git commit -a -m "Update WordInfo"
         git push
