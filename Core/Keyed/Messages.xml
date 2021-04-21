@@ -2,12 +2,12 @@
 <LanguageData>
 
   <!-- EN: Sieging {0} from {1} are assaulting the colony. -->
-  <MessageSiegersAssaulting>{0}-Belagerer der Fraktion '{1}' greifen die Kolonie an.</MessageSiegersAssaulting>
+  <MessageSiegersAssaulting>Belagernde {0} der Fraktion '{1}' greifen die Kolonie an.</MessageSiegersAssaulting>
 
   <!-- EN: {0} from {1} are beginning their assault. -->
   <MessageRaidersBeginningAssault>{0} der Fraktion '{1}' starten ihren Angriff.</MessageRaidersBeginningAssault>
   <!-- EN: {0} from {1} have detected you and begun their assault early. -->
-  <MessageRaidersDetectedEarlyAssault>{0} der Fraktion '{1}' haben dich gesehen und greifen an.</MessageRaidersDetectedEarlyAssault>
+  <MessageRaidersDetectedEarlyAssault>{0} der Fraktion '{1}' haben dich entdeckt und beginnen ihren Angriff frühzeitig.</MessageRaidersDetectedEarlyAssault>
   <!-- EN: {0} from {1} have decided to kidnap who they can and leave. -->
   <MessageRaidersKidnapping>{0} der Fraktion '{1}' haben sich entschieden, jeden in der Nähe zu entführen und das Gebiet zu verlassen.</MessageRaidersKidnapping>
   <!-- EN: {0} from {1} have decided to steal what they can and leave. -->
@@ -36,7 +36,7 @@
   <MessageVisitorsDangerousTemperature>{0} der Fraktion '{1}' verlassen das Gebiet aufgrund der gefährlichen Temperatur.</MessageVisitorsDangerousTemperature>
 
   <!-- EN: {0} worn by {1_nameFull} deteriorated away to nothing. -->
-  <MessageWornApparelDeterioratedAway>Die Ausrüstung {0} von {1_nameFull} ist zerfallen.</MessageWornApparelDeterioratedAway>
+  <MessageWornApparelDeterioratedAway>{0} von {1_nameFull} ist unwiederbringlich zerfallen.</MessageWornApparelDeterioratedAway>
   <!-- EN: {0} has deteriorated away in storage. -->
   <MessageDeterioratedAway>{0} ist im Lager zerfallen.</MessageDeterioratedAway>
 
@@ -44,7 +44,7 @@
   <MessageSeasonBegun>{0} hat angefangen.</MessageSeasonBegun>
 
   <!-- EN: {0} has left comms range. -->
-  <MessageShipHasLeftCommsRange>{0} ist jetzt außer Reichweite.</MessageShipHasLeftCommsRange>
+  <MessageShipHasLeftCommsRange>{0} ist jetzt außer Funkreichweite.</MessageShipHasLeftCommsRange>
 
   <!-- EN: You need a powered orbital trade beacon to trade with a ship. -->
   <MessageNeedBeaconToTradeWithShip>Du brauchst eine strombetriebene orbitale Handelsbake, um mit einem Raumschiff handeln zu können.</MessageNeedBeaconToTradeWithShip>
@@ -64,7 +64,7 @@
   <MessagePrisonerIsEscaping>Gefangener {1_labelShort} bricht aus.</MessagePrisonerIsEscaping>
 
   <!-- EN: {PAWN_labelShort} found no nearby unreserved shells for {GUN_label}. -->
-  <MessageOutOfNearbyShellsFor>{PAWN_labelShort} hat keine verfügbaren Geschosse für {GUN_label} in der Nähe gefunden.</MessageOutOfNearbyShellsFor>
+  <MessageOutOfNearbyShellsFor>{PAWN_labelShort} hat keine verfügbaren Granaten für {GUN_label} in der Nähe gefunden.</MessageOutOfNearbyShellsFor>
 
   <!-- EN: Warning: {ANIMAL_kindBasePlural} have a {1} base chance to attack when harmed. Chance depends on range and hunter stealth stat. -->
   <MessageAnimalsGoPsychoHunted>Warnung: {ANIMAL_kindBasePlural} können angreifen, wenn sie verletzt werden ({1} Chance). Die Chance variiert je nach Tarnfähigkeit des Jägers und Distanz.</MessageAnimalsGoPsychoHunted>
@@ -241,10 +241,10 @@
   <MessageRottedAwayInStorage>{1_label} ist im Lager verdorben.</MessageRottedAwayInStorage>
   
   <!-- EN: {PAWN_labelShort} has gotten food poisoning from: {FOOD_labelShort}. Cause: {2}. -->
-  <MessageFoodPoisoning>{PAWN_labelShort} hat eine Nahrungsmittelvergiftung bekommen von: {FOOD_labelShort}. Ursache: {2}.</MessageFoodPoisoning>
+  <MessageFoodPoisoning>{PAWN_labelShort} hat eine Lebensmittelvergiftung bekommen von: {FOOD_labelShort}. Ursache: {2}.</MessageFoodPoisoning>
   
   <!-- EN: {0} has been removed from the caravan. -->
-  <MessagePawnLostWhileFormingCaravan>{0} wurde von der Karawane entfernt.</MessagePawnLostWhileFormingCaravan>
+  <MessagePawnLostWhileFormingCaravan>{0} wurde aus der Karawane entfernt.</MessagePawnLostWhileFormingCaravan>
   <!-- EN: The caravan formation process has been terminated. -->
   <MessagePawnLostWhileFormingCaravan_AllLost>Die Formierung der Karawane wurde abgebrochen.</MessagePawnLostWhileFormingCaravan_AllLost>
   <!-- EN: The caravan formation process will continue when everyone recovers from their mental break. -->
@@ -342,7 +342,7 @@
   <!-- EN: Cannot equip: {1_labelShort} is incapable of violence. -->
   <MessageCantEquipIncapableOfViolence>Kann nicht ausgerüstet werden: {1_labelShort} verweigert Gewalt.</MessageCantEquipIncapableOfViolence>
   <!-- EN: Cannot equip: Incapable. -->
-  <MessageCantEquipIncapableOfManipulation>Kann nicht ausgerüstet werden: Unmöglich.</MessageCantEquipIncapableOfManipulation>
+  <MessageCantEquipIncapableOfManipulation>Kann nicht ausgerüstet werden: Handlungsunfähig.</MessageCantEquipIncapableOfManipulation>
   <!-- EN: Cannot wear: {1_labelShort} is missing required body parts. -->
   <MessageCantWearApparelMissingBodyParts>Kann nicht getragen werden: {1_labelShort} fehlen die erforderlichen Körperteile.</MessageCantWearApparelMissingBodyParts>
   <!-- EN: This person refuses to remove this. -->
@@ -382,9 +382,9 @@
   <MessageCannotSelfTendEver>{1_labelShort} verweigert ärztliche Tätigkeiten und ist daher nicht in der Lage, sich selbst zu behandeln.</MessageCannotSelfTendEver>
   
   <!-- EN: This tile is impassable. -->
-  <MessageCantAddWaypointBecauseImpassable>Diese Kachel ist unpassierbar.</MessageCantAddWaypointBecauseImpassable>
+  <MessageCantAddWaypointBecauseImpassable>Dieses Feld ist unpassierbar.</MessageCantAddWaypointBecauseImpassable>
   <!-- EN: It's not possible to reach this tile from the last waypoint. -->
-  <MessageCantAddWaypointBecauseUnreachable>Es ist nicht möglich, diese Kachel vom letzten Wegpunkt aus zu erreichen.</MessageCantAddWaypointBecauseUnreachable>
+  <MessageCantAddWaypointBecauseUnreachable>Es ist nicht möglich, dieses Feld vom letzten Wegpunkt aus zu erreichen.</MessageCantAddWaypointBecauseUnreachable>
   <!-- EN: You can't add more than {0} waypoints. -->
   <MessageCantAddWaypointBecauseLimit>Du kannst nicht mehr als {0} Wegpunkte setzen.</MessageCantAddWaypointBecauseLimit>
   <!-- EN: You can't remove this waypoint. -->
@@ -433,16 +433,16 @@
   <MessagePeaceTalksNoDiplomat>Kein fähiger Diplomat bei Bewusstsein.</MessagePeaceTalksNoDiplomat>
 
   <!-- EN: Warning: {0} cannot live when exposed to light. -->
-  <MessageWarningCavePlantsExposedToLight>Warnung: {0} kann im Licht nicht überleben.</MessageWarningCavePlantsExposedToLight>
+  <MessageWarningCavePlantsExposedToLight>Warnung: {0} verträgt keine Lichteinwirkung.</MessageWarningCavePlantsExposedToLight>
 
   <!-- EN: {PAWN_labelShort} couldn't reach {OLDTARGET_label} so {PAWN_pronoun} decided to redirect {PAWN_possessive} anger at {TARGET_label}. -->
-  <MessageTargetedTantrumChangedTarget>{PAWN_labelShort} konnte {OLDTARGET_label} nicht erreichen, weswegen {PAWN_pronoun} sich entschloss {PAWN_possessive}en Ärger an {TARGET_label} auszulassen.</MessageTargetedTantrumChangedTarget>
+  <MessageTargetedTantrumChangedTarget>{PAWN_labelShort} konnte {OLDTARGET_label} nicht erreichen, also beschließt {PAWN_pronoun}, {PAWN_possessive}e Wut an {TARGET_label} auszulassen.</MessageTargetedTantrumChangedTarget>
 
   <!-- EN: {PAWN_labelShort} couldn't reach {OLDTARGET_label} so {PAWN_pronoun} decided to redirect {PAWN_possessive} anger at {TARGET_label}. -->
-  <MessageTargetedInsultingSpreeChangedTarget>{PAWN_labelShort} konnte {OLDTARGET_label} nicht erreichen, weswegen {PAWN_pronoun} sich entschloss {PAWN_possessive}en Ärger an {TARGET_label} auszulassen.</MessageTargetedInsultingSpreeChangedTarget>
+  <MessageTargetedInsultingSpreeChangedTarget>{PAWN_labelShort} konnte {OLDTARGET_label} nicht erreichen, also beschließt {PAWN_pronoun}, {PAWN_possessive}e Wut an {TARGET_label} auszulassen.</MessageTargetedInsultingSpreeChangedTarget>
 
   <!-- EN: {PAWN_labelShort} has decided to redirect {PAWN_possessive} anger at {TARGET_label}. -->
-  <MessageMurderousRageChangedTarget>{PAWN_labelShort} hat sich entschlossen {PAWN_possessive}e Wut an {TARGET_label} auszulassen.</MessageMurderousRageChangedTarget>
+  <MessageMurderousRageChangedTarget>{PAWN_labelShort} beschließt, {PAWN_possessive}e Wut an {TARGET_label} auszulassen.</MessageMurderousRageChangedTarget>
 
   <!-- EN: {0} cannot grow underneath a roof. -->
   <MessagePlantIncompatibleWithRoof>{0} kann nicht unter einem Dach wachsen.</MessagePlantIncompatibleWithRoof>
