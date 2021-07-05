@@ -8,8 +8,8 @@
   <HigherPriority>höhere Priorität</HigherPriority>
   <!-- EN: lower priority -->
   <LowerPriority>niedrige Priorität</LowerPriority>
-  <!-- EN: Relevant skills: {0}\nAverage of relevant skills: {1} / {2} -->
-  <RelevantSkills>Relevante Fähigkeiten: {0}\nDurchschnitt aller relevanten Fähigkeiten: {1} / {2}</RelevantSkills>
+  <!-- EN: Relevant skills: {0}\nAverage of relevant skills: {1} -->
+  <RelevantSkills>Relevante Fähigkeiten: {0}\nDurchschnitt aller relevanten Fähigkeiten: {1}</RelevantSkills>
   <!-- EN: Click to jump to: -->
   <ClickToJumpTo>Zum Hinspringen, hier klicken:</ClickToJumpTo>
   <!-- EN: {1_labelShort} cannot do this kind of work. -->
@@ -22,6 +22,8 @@
   <EmergencyWorkMarker>N</EmergencyWorkMarker>
   <!-- EN: Warning: The average of relevant skills is very low. -->
   <SelectedWorkTypeWithVeryBadSkill>Warnung: Der Durchschnitt der relevanten Fähigkeiten ist sehr niedrig.</SelectedWorkTypeWithVeryBadSkill>
+  <!-- EN: Warning: This kind of work is opposed by {0_possessive} ideologion, so it may make this person unhappy. -->
+  <SelectedWorkTypeOpposedByIdeo>Warnung: Diese Arbeit widerspricht {0_possessive}en Ideologien, was zu schlechter Laune führen kann.</SelectedWorkTypeOpposedByIdeo>
   <!-- EN: Priority 1 is done first. Priority 4 is done last. -->
   <PriorityOneDoneFirst>Priorität 1 ist zuerst fertig. Priorität 4 ist zuletzt fertig.</PriorityOneDoneFirst>
   <!-- EN: Will not do -->
@@ -36,6 +38,12 @@
   <Priority4>Geringe Priorität</Priority4>
   <!-- EN: {0}\n\nThe faction {1_nameDef} currently belongs to.\n\nClick to view faction. -->
   <PawnFactionInfo>{0}\n\nDie Fraktion, der {1_nameDef} derzeit angehört.\n\nKlicke hier, um die Fraktion anzuzeigen.</PawnFactionInfo>
+  <!-- EN: Disabled by backstory: {0} -->
+  <WorkDisabledByBackstory>Durch Hintergrundgeschichte deaktiviert: {0}</WorkDisabledByBackstory>
+  <!-- EN: Disabled by trait: {0} -->
+  <WorkDisabledByTrait>Durch Merkmal deaktiviert: {0}</WorkDisabledByTrait>
+  <!-- EN: Disabled by quest: {0} -->
+  <WorkDisabledByQuest>Durch Quest deaktiviert: {0}</WorkDisabledByQuest>
   
   <!-- Assign tab -->
   <!-- EN: Manage outfits -->
@@ -84,16 +92,20 @@
   <Hostile>Feindlich</Hostile>
   <!-- EN: Ally -->
   <Ally>Verbündet</Ally>
+  <!-- EN: hostile -->
+  <HostileLower>feindlich</HostileLower>
+  <!-- EN: ally -->
+  <AllyLower>verbündet</AllyLower>
   <!-- EN: defeated -->
   <DefeatedLower>besiegt</DefeatedLower>
   <!-- EN: Enemy of {0} -->
   <HostileTo>Feindlich zu {0}</HostileTo>
   <!-- EN: Enemy of:  -->
   <EnemyOf>Feind von:</EnemyOf>
-  <!-- EN: Current goodwill and relations status with this faction. -->
-  <CurrentGoodwillTip>Aktueller Rufstatus bei dieser Fraktion.</CurrentGoodwillTip>
-  <!-- EN: Current relations with this faction. -->
-  <CurrentRelationTip>Aktueller Rufstatus bei dieser Fraktion.</CurrentRelationTip>
+  <!-- EN: Recent events -->
+  <RecentEvents>Kürzliche Ereignisse</RecentEvents>
+  <!-- EN: Ongoing events -->
+  <OngoingEvents>Laufende Ereignisse</OngoingEvents>
   <!-- EN: This faction is permanently hostile. They will raid your settlements and caravans. Relations with them will never improve for any reason. -->
   <CurrentGoodwillTip_PermanentEnemy>Diese Fraktion ist permanent feindlich. Sie werden deine Siedlungen und Karawanen überfallen. Dein Ruf bei ihnen wird sich niemals verbessern.</CurrentGoodwillTip_PermanentEnemy>
   <!-- EN: This faction is allied. They will send fighters to help you when they can. If relations fall below {0}, they will become neutral. -->
@@ -102,13 +114,7 @@
   <CurrentGoodwillTip_Neutral>Diese Fraktion ist neutral. Sie werden frei mit dir handeln und reden. Wenn der Ruf unter {0} fällt, werden sie feindlich. Wenn der Ruf über {1} steigt, werden sie verbündet und daran arbeiten, dir aktiv zu helfen.</CurrentGoodwillTip_Neutral>
   <!-- EN: This faction is hostile. They will raid your settlements and caravans. If relations rise above {0}, they will become neutral. -->
   <CurrentGoodwillTip_Hostile>Diese Fraktion ist feindlich. Sie werden deine Siedlungen und Karawanen überfallen. Wenn der Ruf über {0} steigt, werden sie neutral.</CurrentGoodwillTip_Hostile>
-  <!-- EN: This faction has a natural goodwill range from {0} to {1}. -->
-  <CurrentGoodwillTip_NaturalGoodwill>Diese Fraktion hat einen natürlichen Rufbereich von {0} bis {1}.</CurrentGoodwillTip_NaturalGoodwill>
-  <!-- EN: If goodwill is under {0}, it will rise by {1} per year. -->
-  <CurrentGoodwillTip_NaturalGoodwillRise>Wenn der Ruf unter {0} ist, wird er um {1} pro Jahr steigen.</CurrentGoodwillTip_NaturalGoodwillRise>
-  <!-- EN: If goodwill is over {0}, it will fall by {1} per year. -->
-  <CurrentGoodwillTip_NaturalGoodwillFall>Wenn der Ruf über {0} ist, wird er um {1} pro Jahr sinken.</CurrentGoodwillTip_NaturalGoodwillFall>
-  
+
   <!-- Social tab -->
   <!-- EN: Friend -->
   <Friend>Freund</Friend>
@@ -161,7 +167,7 @@
   <!-- EN: Colony wealth (items) (this map) -->
   <ThisMapColonyWealthItems>Reichtum der Kolonie (Gegenstände) (diese Karte)</ThisMapColonyWealthItems>
   <!-- EN: Colony wealth (buildings) (this map) -->
-  <ThisMapColonyWealthBuildings>Reichtum der Kolonie (Konstruktionen) (diese Karte)</ThisMapColonyWealthBuildings>
+  <ThisMapColonyWealthBuildings>Reichtum der Kolonie (Bauwerke) (diese Karte)</ThisMapColonyWealthBuildings>
   <!-- EN: Colony wealth (people and animals) (this map) -->
   <ThisMapColonyWealthColonistsAndTameAnimals>Reichtum der Kolonie (Personen und Tiere) (diese Karte)</ThisMapColonyWealthColonistsAndTameAnimals>
   <!-- EN: Major threats -->
@@ -208,6 +214,16 @@
   <TechLevelTooLow>Die Techstufe deiner Fraktion liegt bei '{0}', aber die Techstufe dieses Projekts liegt bei '{1}'. Die Forschungsdauer wird mit {2} multipliziert.</TechLevelTooLow>
   <!-- EN: Unlocked with -->
   <UnlockedWith>Freigeschaltet mit</UnlockedWith>
+  <!-- EN: {0} unlocks things which you cannot build because they require memes that none of your people believe -->
+  <ResearchProjectHasDefsWithMissingMemes>{0} schaltet Dinge frei, die du nicht bauen kannst, weil sie Glaubensgrundlagen erfordern, an die keiner deiner Leute glaubt</ResearchProjectHasDefsWithMissingMemes>
+
+  <!-- Factions tab -->
+  <!-- EN: Factions -->
+  <FactionsTab>Fraktionen</FactionsTab>
+  <!-- EN: No known factions -->
+  <NoFactions>Keine bekannten Fraktionen</NoFactions>
+  <!-- EN: Ideoligions -->
+  <IdeoligionsTab>Ideologien</IdeoligionsTab>
 
   <!-- Quests tab -->
   <!-- EN: Available -->
@@ -282,8 +298,8 @@
   <QuestBedroomRequirementsUnsatisfiedSingle>ein freies Schlafgemach zur Erfüllung der Titelansprüche von</QuestBedroomRequirementsUnsatisfiedSingle>
   <!-- EN: a throneroom that satisfies the requirements of {PAWN_definite}'s {TITLE} title -->
   <QuestThroneRoomRequirementsUnsatisfied>einen Thronsaal, der die Anforderungen des {TITLE}-Titels von {PAWN_definite} erfüllt</QuestThroneRoomRequirementsUnsatisfied>
-  <!-- EN: a throneroom that satisfies the requirements of {PAWN_definite}'s {TITLE} title -->
-  <QuestNoThroneRoom>einen Thronsaal, der die Anforderungen des {TITLE}-Titels von {PAWN_definite} erfüllt</QuestNoThroneRoom>
+  <!-- EN: assign a throne for {PAWN_definite} -->
+  <QuestNoThroneRoom>einen Thron, der {PAWN_definite} zugewiesen ist</QuestNoThroneRoom>
   <!-- EN: a colonist with the title of {0} -->
   <QuestNoColonistWithTitle>einen Kolonisten mit dem Titel {0}</QuestNoColonistWithTitle>
   <!-- EN: {PAWN_definite} to be in your home colony -->
@@ -299,23 +315,34 @@
   <!-- EN: Accept {FACTION_royalFavorLabel} -->
   <AcceptRoyalFavor>{FACTION_royalFavorLabel} akzeptieren</AcceptRoyalFavor>
   <!-- EN: Whether you wish to be rewarded with {FACTION_royalFavorLabel} from {FACTION_name}.\n\nIf this is disabled, {FACTION_name} will offer other types of rewards instead.\n\nThis setting only affects newly-arriving quests. -->
-  <AcceptRoyalFavorDesc>Ob du {FACTION_royalFavorLabel} von der Fraktion '{FACTION_name}' erhalten möchtest.\n\nWenn diese Einstellung deaktiviert ist, bietet dir die Fraktion '{FACTION_name}' stattdessen andere Arten von Belohnungen an.\n\nDiese Einstellung betrifft nur neu erscheinende Quests.</AcceptRoyalFavorDesc>
+  <AcceptRoyalFavorDesc>Ob du {FACTION_royalFavorLabel} von der Fraktion {FACTION_name} erhalten möchtest.\n\nWenn diese Einstellung deaktiviert ist, bietet dir die Fraktion {FACTION_name} stattdessen andere Arten von Belohnungen an.\n\nDiese Einstellung betrifft nur neu erscheinende Quests.</AcceptRoyalFavorDesc>
   <!-- EN: Accept goodwill -->
   <AcceptGoodwill>Rufpunkte akzeptieren</AcceptGoodwill>
   <!-- EN: Whether you wish to be rewarded via improved faction relations with {FACTION_name}.\n\nIf this is disabled, {FACTION_name} will offer other types of rewards instead.\n\nThis setting only affects newly-generated quests. -->
-  <AcceptGoodwillDesc>Ob du Rufpunkte erhalten möchtest, um die Beziehung zur Fraktion '{FACTION_name}' zu verbessern.\n\nWenn diese Einstellung deaktiviert ist, bietet dir die Fraktion '{FACTION_name}' stattdessen andere Arten von Belohnungen an.\n\nDiese Einstellung betrifft nur neu generierte Quests.</AcceptGoodwillDesc>
+  <AcceptGoodwillDesc>Ob du Rufpunkte erhalten möchtest, um die Beziehung zur Fraktion {FACTION_name} zu verbessern.\n\nWenn diese Einstellung deaktiviert ist, bietet dir die Fraktion {FACTION_name} stattdessen andere Arten von Belohnungen an.\n\nDiese Einstellung betrifft nur neu generierte Quests.</AcceptGoodwillDesc>
   <!-- EN: You are currently opting in to receive {FACTION_royalFavorLabel}. -->
   <RoyalFavorOn>Du bist momentan einverstanden, {FACTION_royalFavorLabel} zu erhalten.</RoyalFavorOn>
   <!-- EN: You are currently opting out of receiving {FACTION_royalFavorLabel}. -->
   <RoyalFavorOff>Du bist momentan dagegen, {FACTION_royalFavorLabel} zu erhalten.</RoyalFavorOff>
   <!-- EN: Your goodwill with {0_name} will improve by {1}.\n\nCurrent goodwill: {4} ({5}).\n\nGoodwill measures the general relationship between factions. If it falls below {2}, the faction becomes hostile and will raid your settlements and caravans. If it rises above {3}, the faction will become your ally and send fighters to help you when they can. Otherwise, the faction remains neutral and will trade and talk with you freely. -->
-  <GoodwillTip>Dein Ruf bei der Fraktion '{0_name}' wird sich um {1} Punkte verbessern.\n\nAktueller Ruf: {4} ({5}).\n\nDer Ruf gibt an, wie gut die allgemeine Beziehung zwischen den Fraktionen ist. Fällt er unter {2}, wird die Fraktion feindselig und überfällt deine Siedlungen und Karawanen. Steigt er über {3}, wird die Fraktion zu deinem Verbündeten und entsendet Kämpfer, um dir zu helfen, sofern möglich. Andernfalls bleibt die Fraktion neutral und ist offen für Handel und Gespräche.</GoodwillTip>
+  <GoodwillTip>Dein Ruf bei der Fraktion {0_name} wird sich um {1} Punkte verbessern.\n\nAktueller Ruf: {4} ({5}).\n\nDer Ruf gibt an, wie gut die allgemeine Beziehung zwischen den Fraktionen ist. Fällt er unter {2}, wird die Fraktion feindselig und überfällt deine Siedlungen und Karawanen. Steigt er über {3}, wird die Fraktion zu deinem Verbündeten und entsendet Kämpfer, um dir zu helfen, sofern möglich. Andernfalls bleibt die Fraktion neutral und ist offen für Handel und Gespräche.</GoodwillTip>
   <!-- EN: {0_labelShort} joins -->
   <PawnQuestReward>{0_labelShort} schließt sich an</PawnQuestReward>
   <!-- EN: Betrayal offer: {0} targets remain -->
   <QuestBetrayalOffer>Verratsangebot: {0} Ziele verbleiben</QuestBetrayalOffer>
   <!-- EN: {0} will grant you a reward for killing all members of the {1}. -->
-  <QuestBetrayalOfferTip>{0} wird dich für die Tötung aller Mitglieder der Fraktion '{1}' belohnen.</QuestBetrayalOfferTip>
+  <QuestBetrayalOfferTip>{0} wird dich für die Tötung aller Mitglieder der Fraktion {1} belohnen.</QuestBetrayalOfferTip>
+  <!-- EN: a colony wealth of at least {0} -->
+  <QuestRequiredPlayerWealth>einen Koloniewert von mindestens {0}</QuestRequiredPlayerWealth>
+  <!-- EN: allied to {0} -->
+  <QuestAlliedTo>verbündet mit {0}</QuestAlliedTo>
+  <!-- EN: hostile to {0} -->
+  <QuestHostileTo>verfeindet mit {0}</QuestHostileTo>
+  <!-- EN: neutral to {0} -->
+  <QuestNeutralTo>neutral zu {0}</QuestNeutralTo>
+  <!-- EN: studied {0_labelShort} -->
+  <QuestRequiredThingStudied>{0_labelShort} untersucht</QuestRequiredThingStudied>
+
   
   <!-- Health tab -->
   <!-- EN: Creates need -->

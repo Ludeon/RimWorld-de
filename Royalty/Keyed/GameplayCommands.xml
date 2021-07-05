@@ -19,6 +19,8 @@
   <CommandCallRoyalAidDesc>Fordere Hilfe mit einer speziellen Ermächtigung an.\n\nJede Art von Hilfe kann einmal kostenlos verwendet werden, danach dauert es eine Weile, bis sie wieder kostenlos ist. Du kannst Ehre investieren, um die Hilfe öfters zu verwenden.</CommandCallRoyalAidDesc>
   <!-- EN: Guests will not use their aid permits. -->
   <CommandCallRoyalAidLodger>Gäste haben keinen Zugriff auf Hilfsermächtigungen.</CommandCallRoyalAidLodger>
+  <!-- EN: Slaves cannot use their permits. -->
+  <CommandCallRoyalAidSlave>Sklaven können ihre Ermächtigungen nicht einsetzen.</CommandCallRoyalAidSlave>
   <!-- EN: Your relations with {FACTION_name} are hostile. -->
   <CommandCallRoyalAidFactionHostile>Deine Beziehung zur Fraktion '{FACTION_name}' ist feindselig.</CommandCallRoyalAidFactionHostile>
   <!-- EN: Free -->
@@ -42,7 +44,7 @@
 
   <!-- Abilities -->
   <!-- EN: Neural heat would overflow. Disable the neural heat limiter to cast. -->
-  <CommandPsycastWouldExceedEntropy>Neuralhitze würde das Maximum überschreiten. Deaktiviere den psychischen Neuralhitzebegrenzer, wenn du diese Kraft wirken willst.</CommandPsycastWouldExceedEntropy>
+  <CommandPsycastWouldExceedEntropy>Neuralhitze würde das Maximum überschreiten. Deaktiviere den Neuralhitzebegrenzer, wenn du diese Kraft wirken willst.</CommandPsycastWouldExceedEntropy>
   <!-- EN: {PSYCASTNAME} consumes {0} psyfocus but {CASTERNAME} only has {1}. -->
   <CommandPsycastNotEnoughPsyfocus>{PSYCASTNAME} verbraucht {0} Psyfokus, aber {CASTERNAME} hat nur {1}.</CommandPsycastNotEnoughPsyfocus>
   <!-- EN: {PSYCASTNAME} needs {0} psyfocus to stop {1}'s mental break but {CASTERNAME} only has {2} psyfocus. -->
@@ -50,7 +52,7 @@
   <!-- EN: level {0} psylink is required. -->
   <CommandPsycastHigherLevelPsylinkRequired>Psylink der Stufe {0} benötigt.</CommandPsycastHigherLevelPsylinkRequired>
   <!-- EN: Zero psychic sensitivity. -->
-  <CommandPsycastZeroPsychicSensitivity>Keine psychische Sensibilität</CommandPsycastZeroPsychicSensitivity>
+  <CommandPsycastZeroPsychicSensitivity>Keine mentale Sensibilität</CommandPsycastZeroPsychicSensitivity>
   <!-- EN: Ability user is unconscious. -->
   <CommandPsycastPawnIsUnconscious>Fähigkeitsnutzer ist bewusstlos.</CommandPsycastPawnIsUnconscious>
   <!-- EN: Need at least {0} psyfocus to cast this. -->
@@ -70,12 +72,17 @@
   <!-- EN: Build radius warning -->
   <CommandWarnInBuildingRadius>Warnen bei zu naher Bebauung</CommandWarnInBuildingRadius>
   <!-- EN: If enabled, this object will draw a red line to buildings you are placing using the architect menu, if they would interfere with meditation due to being too close.\n\nYou can turn this off if you don't intend to use this for meditation. -->
-  <CommandWarnInBuildingRadiusDesc>Wenn dies Option aktiviert ist, werden rote Linien zu Konstruktionen gezogen, wenn du versuchst, diese zu nah an diesem Objekt zu platzieren, was die Meditation stören würde.\n\nDu kannst diese Option ausschalten, wenn dieses Objekt nicht für meditative Zwecke verwendet wird.</CommandWarnInBuildingRadiusDesc>
+  <CommandWarnInBuildingRadiusDesc>Bei Aktivierung wird eine rote Linie angezeigt, wenn du in der Nähe dieses Objekts etwas via Architektmenü bauen willst, das die Meditation stören würde.\n\nDu kannst diese Option ausschalten, wenn dieses Objekt nicht für meditative Zwecke verwendet wird.</CommandWarnInBuildingRadiusDesc>
   
   <!-- Permits -->
   <!-- EN: Choose permit -->
   <ChooseRoyalPermit>Ermächtigung wählen</ChooseRoyalPermit>
   <!-- EN: Open the permit selection screen and choose a new permit. -->
   <ChooseRoyalPermit_Desc>Öffne das Ermächtigungsauswahlfenster und wähle eine neue Ermächtigung.</ChooseRoyalPermit_Desc>
+
+  <!-- EN: Leave bestowing ceremony -->
+  <CommandLeaveBestowingCeremony>Verleihungszeremonie verlassen</CommandLeaveBestowingCeremony>
+  <!-- EN: Stop participating in the bestowing ceremony. -->
+  <CommandLeaveBestowingCeremonyDesc>Beende die Teilnahme an der Verleihungszeremonie.</CommandLeaveBestowingCeremonyDesc>
   
 </LanguageData>

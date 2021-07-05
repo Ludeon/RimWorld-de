@@ -6,7 +6,7 @@
   <!-- EN: [lodgersLabelSingOrPluralDef] [lodgersHasHave] arrived. Protect [lodgersObjective] until the shuttle arrives in [shuttleDelayTicks_duration].[helpersArrivalLetterEnd] -->
   <Hospitality_Util_Worker.LetterTextLodgersArrived.value.slateRef>[lodgersLabelSingOrPluralDef] [lodgersIsAre] eingetroffen. Beschütze [lodgersObjective] in den nächsten [shuttleDelayTicks_duration], bis das Shuttle eintrifft.[helpersArrivalLetterEnd]</Hospitality_Util_Worker.LetterTextLodgersArrived.value.slateRef>
   <!-- EN: Should depart on shuttle -->
-  <Hospitality_Util_Worker.InspectStringDepartShuttle.slateRef>Soll mit dem Shuttle wegfliegen</Hospitality_Util_Worker.InspectStringDepartShuttle.slateRef>
+  <Hospitality_Util_Worker.InspectStringDepartShuttle.slateRef>Muss per Shuttle abreisen</Hospitality_Util_Worker.InspectStringDepartShuttle.slateRef>
   <!-- EN: Shuttle arrived -->
   <Hospitality_Util_Worker.LetterLabelShuttleArrived.slateRef>Shuttle ist eingetroffen</Hospitality_Util_Worker.LetterLabelShuttleArrived.slateRef>
   <!-- EN: The shuttle has arrived to collect [lodgersLabelSingOrPluralDef]. Be sure to have these people on the shuttle before it leaves in [shuttleLeaveDelayTicks_duration]:\n\n[lodgers] -->
@@ -23,6 +23,10 @@
   <Hospitality_Util_Worker.LabelLabelPrisonerRecruited.slateRef>Gefangenen rekrutiert: {SUBJECT_definite}</Hospitality_Util_Worker.LabelLabelPrisonerRecruited.slateRef>
   <!-- EN: You have recruited {SUBJECT_definite}, who you were charged to guard. [remainingWillNowLeave][failLetterEndingCommon] -->
   <Hospitality_Util_Worker.LabelTextPrisonerRecruited.slateRef>Du hast {SUBJECT_definite} rekrutiert, obwohl du {SUBJECT_objective} eigentlich bewachen solltest. [remainingWillNowLeave][failLetterEndingCommon]</Hospitality_Util_Worker.LabelTextPrisonerRecruited.slateRef>
+  <!-- EN: Prisoner enslaved: {SUBJECT_definite} -->
+  <Hospitality_Util_Worker.root.nodes.lodgersEnslaved.node.nodes.Letter.label.slateRef>Gefangenen versklavt: {SUBJECT_definite}</Hospitality_Util_Worker.root.nodes.lodgersEnslaved.node.nodes.Letter.label.slateRef>
+  <!-- EN: You have enslaved {SUBJECT_definite}, who you were charged to guard. [remainingWillNowLeave][failLetterEndingCommon] -->
+  <Hospitality_Util_Worker.root.nodes.lodgersEnslaved.node.nodes.Letter.text.slateRef>Du hast {SUBJECT_definite} versklavt, obwohl du {SUBJECT_objective} eigentlich bewachen solltest. [remainingWillNowLeave][failLetterEndingCommon]</Hospitality_Util_Worker.root.nodes.lodgersEnslaved.node.nodes.Letter.text.slateRef>
   <!-- EN: Unauthorized surgery: {SUBJECT_definite} -->
   <Hospitality_Util_Worker.LetterLabelUnauthorizedSurgery.slateRef>Nicht genehmigte Operation: {SUBJECT_definite}</Hospitality_Util_Worker.LetterLabelUnauthorizedSurgery.slateRef>
   <!-- EN: Unauthorized, violating surgery has been performed on [letterSubject]. [remainingWillNowLeave][failLetterEndingCommon] -->
@@ -42,15 +46,15 @@
   <!-- EN: Quest failed: [resolvedQuestName] -->
   <Hospitality_Util_Worker.LetterLabelAskerFactionHostile.slateRef>Quest fehlgeschlagen: [resolvedQuestName]</Hospitality_Util_Worker.LetterLabelAskerFactionHostile.slateRef>
   <!-- EN: [asker_faction_name] are now hostile towards you. [failLetterEndingQuest] -->
-  <Hospitality_Util_Worker.LetterTextAskerFactionHostile.slateRef>Ab sofort verhält sich die Fraktion '[asker_faction_name]' dir gegenüber feindselig. [failLetterEndingQuest]</Hospitality_Util_Worker.LetterTextAskerFactionHostile.slateRef>
+  <Hospitality_Util_Worker.LetterTextAskerFactionHostile.slateRef>Ab sofort verhält sich die Fraktion [asker_faction_name] dir gegenüber feindselig. [failLetterEndingQuest]</Hospitality_Util_Worker.LetterTextAskerFactionHostile.slateRef>
   <!-- EN: Shuttle destroyed -->
-  <Hospitality_Util_Worker.LetterLabelShuttleDestroyed.slateRef>Shuttle zerstört</Hospitality_Util_Worker.LetterLabelShuttleDestroyed.slateRef>
+  <Hospitality_Util_Worker.LetterLabelShuttleDestroyed.slateRef>Shuttle wurde zerstört</Hospitality_Util_Worker.LetterLabelShuttleDestroyed.slateRef>
   <!-- EN: The shuttle sent to collect [lodgersLabelSingOrPluralDef] has been destroyed. [lodgersLabelSingOrPluralDef] will now leave on foot. [failLetterEndingCommon] -->
   <Hospitality_Util_Worker.LetterTextShuttleDestroyed.slateRef>Das Shuttle, das [lodgersLabelSingOrPluralDef] abholen sollte, wurde zerstört. [lodgersLabelSingOrPluralDef] [lodgersWill] die Kolonie nun zu Fuß verlassen. [failLetterEndingCommon]</Hospitality_Util_Worker.LetterTextShuttleDestroyed.slateRef>
   <!-- EN: Quest completed -->
   <Hospitality_Util_Worker.LetterLabelGoodwillSuccessQuestCompleted.slateRef>Quest abgeschlossen</Hospitality_Util_Worker.LetterLabelGoodwillSuccessQuestCompleted.slateRef>
   <!-- EN: You have successfully completed the quest '[resolvedQuestName]'!\n\n[lodgersLabelSingOrPluralDef] said [lodgersPronoun] [lodgersWasWere] willing to reward quality accommodation. The average mood of [lodgersLabelSingOrPluralDef] was {AVERAGEMOOD} during [theirHisHer] stay, so your goodwill with [asker_faction_name] has increased by {GOODWILL} -->
-  <Hospitality_Util_Worker.LetterTextGoodwillSuccessQuestCompleted.slateRef>Du hast die Quest '[resolvedQuestName]' erfolgreich abgeschlossen!\n\n[lodgersLabelSingOrPluralDef] [sagte], dass [lodgersPronoun] dich für eine qualitativ hochwertige Unterkunft belohnen [wuerde]. Die durchschnittliche Stimmung [lodgersLabelSingOrPluralDefDat] lag während [theirHisHer]es Aufenthalts bei {AVERAGEMOOD}, daher verbessert sich dein Ruf bei der Fraktion '[asker_faction_name]' um {GOODWILL} Punkte.</Hospitality_Util_Worker.LetterTextGoodwillSuccessQuestCompleted.slateRef>
+  <Hospitality_Util_Worker.LetterTextGoodwillSuccessQuestCompleted.slateRef>Du hast die Quest '[resolvedQuestName]' erfolgreich abgeschlossen!\n\n[lodgersLabelSingOrPluralDef] [sagte], dass [lodgersPronoun] dich für eine qualitativ hochwertige Unterkunft belohnen [wuerde]. Die durchschnittliche Stimmung [lodgersLabelSingOrPluralDefDat] lag während [theirHisHer]es Aufenthalts bei {AVERAGEMOOD}, daher verbessert sich dein Ruf bei der Fraktion [asker_faction_name] um {GOODWILL} Punkte.</Hospitality_Util_Worker.LetterTextGoodwillSuccessQuestCompleted.slateRef>
   <!-- EN: Quest completed -->
   <Hospitality_Util_Worker.LetterLabelGoodwillFailedQuestCompleted.slateRef>Quest abgeschlossen</Hospitality_Util_Worker.LetterLabelGoodwillFailedQuestCompleted.slateRef>
   <!-- EN: You have successfully completed the quest '[resolvedQuestName]'!\n\nWhile [lodgersLabelSingOrPluralDef] [lodgersWasWere] willing to reward quality accommodation, [theirHisHer] average mood was only {AVERAGEMOOD} during [theirHisHer] stay. You will receive no faction goodwill reward. -->
@@ -61,8 +65,8 @@
   <Hospitality_Util_Worker.LetterTextQuestFailed.slateRef>Das Shuttle, das geschickt wurde, um [lodgersLabelSingOrPluralDef] abzuholen, ist davongeflogen. [lodgersLabelSingOrPluralDef] [lodgersWill] die Kolonie nun zu Fuß verlassen. [failLetterEndingCommon]</Hospitality_Util_Worker.LetterTextQuestFailed.slateRef>
   
   <!-- EN: Shuttle destroyed -->
-  <Util_ArriveByDropPodsOrShuttle.LetterLabelShuttleDestroyed.slateRef>Shuttle zerstört</Util_ArriveByDropPodsOrShuttle.LetterLabelShuttleDestroyed.slateRef>
+  <Util_ArriveByDropPodsOrShuttle.LetterLabelShuttleDestroyed.slateRef>Shuttle wurde zerstört</Util_ArriveByDropPodsOrShuttle.LetterLabelShuttleDestroyed.slateRef>
   <!-- EN: The shuttle sent to drop off [pawnsLabelDef] has been destroyed. You have failed the quest '[resolvedQuestName]'.\n\nYour relations with [asker_faction_name] have changed by [goodwillChangeOnShuttleDestroyed]. -->
-  <Util_ArriveByDropPodsOrShuttle.LetterTextShuttleDestroyed.slateRef>Das Shuttle, das [pawnsLabelDef] absetzen sollte, wurde zerstört. Die Quest '[resolvedQuestName]' ist fehlgeschlagen.\n\nDein Ruf bei der Fraktion '[asker_faction_name]' hat sich um [goodwillChangeOnShuttleDestroyed] Punkte geändert.</Util_ArriveByDropPodsOrShuttle.LetterTextShuttleDestroyed.slateRef>
+  <Util_ArriveByDropPodsOrShuttle.LetterTextShuttleDestroyed.slateRef>Das Shuttle, das [pawnsLabelDef] absetzen sollte, wurde zerstört. Die Quest '[resolvedQuestName]' ist fehlgeschlagen.\n\nDein Ruf bei der Fraktion [asker_faction_name] hat sich um [goodwillChangeOnShuttleDestroyed] Punkte geändert.</Util_ArriveByDropPodsOrShuttle.LetterTextShuttleDestroyed.slateRef>
   
 </LanguageData>

@@ -8,7 +8,7 @@
   <!-- EN: Mad {0} -->
   <LetterLabelAnimalInsanityMultiple>Verrückte {0}</LetterLabelAnimalInsanityMultiple>
   <!-- EN: Some sort of psychic wave has swept over the landscape. Your colonists are okay, but...\n\nIt seems many of the {0} in the area have been driven insane. -->
-  <AnimalInsanityMultiple>Eine Art psychische Welle fegt über die Gegend. Die Kolonisten sind okay, aber...\n\nEs scheint so, als ob mehrere {0} durchdrehen.</AnimalInsanityMultiple>
+  <AnimalInsanityMultiple>Eine Art übersinnliche Welle fegt über die Gegend. Die Kolonisten sind okay, aber...\n\nEs scheint so, als ob mehrere {0} durchdrehen.</AnimalInsanityMultiple>
 
   <!-- EN: Blight: {PLANTDEF_labelPlural} -->
   <LetterLabelCropBlight>Fäulnis: {PLANTDEF_labelPlural}</LetterLabelCropBlight>
@@ -32,13 +32,18 @@
   <!-- EN: Transport pod crash -->
   <LetterLabelRefugeePodCrash>Transportkapselabsturz</LetterLabelRefugeePodCrash>
   <!-- EN: {PAWN_titleIndef} named {PAWN_nameDef} is crashing in a transport pod nearby. If {PAWN_pronoun} survives the impact, {PAWN_pronoun} will be badly wounded. -->
-  <RefugeePodCrash>{PAWN_titleIndef} namens {PAWN_nameDef} stürzt mit einer Transportkapsel in der Nähe ab. Sollte {PAWN_pronoun} den Aufschlag überleben, wird {PAWN_pronoun} vermutlich schwer verletzt sein.</RefugeePodCrash>
+  <RefugeePodCrash>{PAWN_titleIndef} namens {PAWN_nameDef} stürzt mit einer Transportkapsel in der Nähe ab. Sollte {PAWN_pronoun} den Aufschlag überleben, wird {PAWN_pronoun} vermutlich schwer verletzt sein.</RefugeePodCrash>  
   <!-- EN: {PAWN_nameDef} is not affiliated with any faction. You can rescue {PAWN_objective} and hope {PAWN_pronoun} joins freely, or capture {PAWN_objective} for recruitment or slavery purposes. -->
   <RefugeePodCrash_Factionless>{PAWN_nameDef} gehört zu keiner Fraktion. Du kannst {PAWN_objective} retten und hoffen, dass {PAWN_pronoun} sich dir freiwillig anschließt, oder {PAWN_objective} einfangen, um {PAWN_objective} zu rekrutieren oder zu versklaven.</RefugeePodCrash_Factionless>
   <!-- EN: {PAWN_nameDef} is from your enemy {PAWN_factionName}. You can capture {PAWN_objective} for recruitment or slavery purposes. -->
-  <RefugeePodCrash_Hostile>{PAWN_nameDef} gehört zu der feindlichen Fraktion '{PAWN_factionName}'. Du kannst {PAWN_objective} einfangen, um {PAWN_objective} zu rekrutieren oder zu versklaven.</RefugeePodCrash_Hostile>
+  <RefugeePodCrash_Hostile>{PAWN_nameDef} gehört zu der feindlichen Fraktion {PAWN_factionName}. Du kannst {PAWN_objective} einfangen, um {PAWN_objective} zu rekrutieren oder zu versklaven.</RefugeePodCrash_Hostile>
   <!-- EN: {PAWN_nameDef} is from {PAWN_factionName}. If you rescue {PAWN_objective}, {PAWN_pronoun} may join freely. Otherwise, {PAWN_pronoun} will return home and spread goodwill between your factions.\n\nYou can also capture {PAWN_objective} for recruitment or slavery purposes, but this will anger {PAWN_possessive} faction. -->
-  <RefugeePodCrash_NonHostile>{PAWN_nameDef} ist von der Fraktion '{PAWN_factionName}'. Wenn du {PAWN_objective} rettest, besteht die Möglichkeit, dass {PAWN_pronoun} sich dir freiwillig anschließt. Ansonsten wird {PAWN_pronoun} nach Hause zurückkehren und deinen Ruf bei {PAWN_possessive}er Fraktion verbessern.\n\nDu kannst {PAWN_objective} auch einfangen, um {PAWN_objective} zu rekrutieren oder zu versklaven, aber das wird {PAWN_possessive}e Fraktion verärgern.</RefugeePodCrash_NonHostile>
+  <RefugeePodCrash_NonHostile>{PAWN_nameDef} ist von der Fraktion {PAWN_factionName}. Wenn du {PAWN_objective} rettest, besteht die Möglichkeit, dass {PAWN_pronoun} sich dir freiwillig anschließt. Ansonsten wird {PAWN_pronoun} nach Hause zurückkehren und deinen Ruf bei {PAWN_possessive}er Fraktion verbessern.\n\nDu kannst {PAWN_objective} auch einfangen, um {PAWN_objective} zu rekrutieren oder zu versklaven, aber das wird {PAWN_possessive}e Fraktion verärgern.</RefugeePodCrash_NonHostile>
+
+  <!-- EN: Wanderer joins: {PAWN_nameDef} -->
+  <LetterLabelWandererJoins>Wanderer tritt bei: {PAWN_nameDef}</LetterLabelWandererJoins>
+  <!-- EN: A {PAWN_title} named {PAWN_nameDef} has arrived and wants to join the colony.\n\n[PAWN_pronoun] is willing to contribute, but will not leave voluntarily, claiming to have nowhere else to go. You can choose to turn {PAWN_objective} down and send {PAWN_objective} away. However, your colonists will be disturbed at sending someone away in need. -->
+  <LetterWandererJoins>{PAWN_titleIndef} namens {PAWN_nameDef} ist eingetroffen und möchte der Kolonie beitreten.\n\n{PAWN_pronoun} ist bereit, uns zu helfen, wird aber nicht freiwillig gehen, da {PAWN_pronoun} behauptet, nirgendwo anders hin zu können. Du kannst {PAWN_objective} zurückweisen und wegschicken. Deine Kolonisten werden sich jedoch daran stören, dass du jemanden in Not wegschickst.</LetterWandererJoins>
 
   <!-- EN: Cargo pods -->
   <LetterLabelCargoPodCrash>Vorratskapsel</LetterLabelCargoPodCrash>
@@ -61,19 +66,19 @@
   <!-- EN: A trade ship is passing nearby.\n\nThey are known as {0}. They are a {1}.\n\n{2} -->
   <TraderArrival>Ein Handelsschiff ist in der Nähe eingetroffen.\n\nSie sind unter dem Namen '{0}' bekannt. Sie sind {1}.\n\n{2}</TraderArrival>
   <!-- EN: They're affiliated with {FACTION_name}. -->
-  <TraderArrivalFromFaction>Sie sind mit der Fraktion '{FACTION_name}' verbündet.</TraderArrivalFromFaction>
+  <TraderArrivalFromFaction>Sie sind mit der Fraktion {FACTION_name} verbündet.</TraderArrivalFromFaction>
   <!-- EN: They are not affiliated with any faction. -->
   <TraderArrivalNoFaction>Sie sind mit keiner einzigen Fraktion verbündet.</TraderArrivalNoFaction>
 
   <!-- EN: A {PAWN_title} from {1} is passing by. {PAWN_pronoun} is named {PAWN_nameFull}. -->
-  <SingleTravelerPassing>{PAWN_titleIndef} der Fraktion '{1}' befindet sich auf der Durchreise. {PAWN_pronoun} heißt {PAWN_nameFull}.</SingleTravelerPassing>
+  <SingleTravelerPassing>{PAWN_titleIndef} der Fraktion {1} befindet sich auf der Durchreise. {PAWN_pronoun} heißt {PAWN_nameFull}.</SingleTravelerPassing>
   <!-- EN: A group of travelers from {0} are passing by. -->
-  <GroupTravelersPassing>Reisende der Fraktion '{0}' durchqueren das Gebiet.</GroupTravelersPassing>
+  <GroupTravelersPassing>Reisende der Fraktion {0} durchqueren das Gebiet.</GroupTravelersPassing>
 
   <!-- EN: Visitor -->
   <LetterLabelSingleVisitorArrives>Besucher</LetterLabelSingleVisitorArrives>
   <!-- EN: {PAWN_titleIndef} from {1} is visiting the colony.\n\n{PAWN_pronoun} is named {PAWN_nameFull}.{3}{4} -->
-  <SingleVisitorArrives>{PAWN_titleIndef} der Fraktion '{1}' besucht die Kolonie.\n\n{PAWN_pronoun} heißt {PAWN_nameFull}.{3}{4}</SingleVisitorArrives>
+  <SingleVisitorArrives>{PAWN_titleIndef} der Fraktion {1} besucht die Kolonie.\n\n{PAWN_pronoun} heißt {PAWN_nameFull}.{3}{4}</SingleVisitorArrives>
   <!-- EN: {PAWN_pronoun} seems to have a few items to trade. -->
   <SingleVisitorArrivesTraderInfo>\n\n{PAWN_pronoun} scheint ein paar Waren zum Handeln dabeizuhaben.</SingleVisitorArrivesTraderInfo>
   <!-- EN: {PAWN_pronoun} is the leader of the faction. -->
@@ -81,13 +86,13 @@
   <!-- EN: Visitors -->
   <LetterLabelGroupVisitorsArrive>Besuchergruppe</LetterLabelGroupVisitorsArrive>
   <!-- EN: A group from {0} are visiting the colony.{1}{2} -->
-  <GroupVisitorsArrive>Eine Gruppe der Fraktion '{0}' besucht die Kolonie.{1}{2}</GroupVisitorsArrive>
+  <GroupVisitorsArrive>Eine Gruppe der Fraktion {0} besucht die Kolonie.{1}{2}</GroupVisitorsArrive>
   <!-- EN: They seem to have a few items to trade. -->
   <GroupVisitorsArriveTraderInfo>Sie scheinen ein paar Waren zum Handeln dabeizuhaben.</GroupVisitorsArriveTraderInfo>
   <!-- EN: One of the visitors - {1_labelShort}, is the leader of the faction. -->
   <GroupVisitorsArriveLeaderInfo>Einer der Besucher, {1_labelShort}, ist der Anführer der Fraktion.</GroupVisitorsArriveLeaderInfo>
   <!-- EN: Visitors from {0} are leaving. -->
-  <VisitorsLeaving>Die Besucher der Fraktion '{0}' verlassen die Kolonie.</VisitorsLeaving>
+  <VisitorsLeaving>Die Besucher der Fraktion {0} verlassen die Kolonie.</VisitorsLeaving>
 
   <!-- EN: Manhunter pack -->
   <LetterLabelManhunterPackArrived>Menschenjagendes Rudel</LetterLabelManhunterPackArrived>
@@ -96,9 +101,9 @@
   
   <!-- Crashed ship part-->
   <!-- EN: The {SOURCE_label} has emitted a psychic pulse that has driven nearby animals mad. -->
-  <MessageAnimalInsanityPulse>{SOURCE_definite} hat einen psychischen Impuls ausgesendet, der Tiere in der Nähe verrückt macht.</MessageAnimalInsanityPulse>
+  <MessageAnimalInsanityPulse>{SOURCE_definite} hat einen übersinnlichen Impuls ausgesendet, der Tiere in der Nähe verrückt macht.</MessageAnimalInsanityPulse>
   <!-- EN: The crashed ship part has emitted a focused psychic pulse that has driven colonist {0} insane. -->
-  <LetterShipPartDroveColonistInsane>Das abgestürzte Schiffsteil hat einen gebündelten psychischen Impuls ausgesendet, der den Kolonisten {0} durchdrehen lässt.</LetterShipPartDroveColonistInsane>
+  <LetterShipPartDroveColonistInsane>Das abgestürzte Schiffsteil hat einen gebündelten übersinnlichen Impuls ausgesendet, der den Kolonisten {0} durchdrehen lässt.</LetterShipPartDroveColonistInsane>
   <!-- EN: Awoke {0} days ago -->
   <AwokeDaysAgo>Erwachte vor {0} Tagen</AwokeDaysAgo>
   <!-- EN: Activated {0} days ago -->
@@ -106,17 +111,17 @@
   <!-- EN: Opened {0} days ago -->
   <OpenedDaysAgo>Geöffnet vor {0} Tagen</OpenedDaysAgo>
   <!-- EN: Psychic drone level: {0} -->
-  <PsychicDroneLevel>Stärke des psychischen Brummens: {0}</PsychicDroneLevel>
+  <PsychicDroneLevel>Stärke des übersinnlichen Brummens: {0}</PsychicDroneLevel>
   <!-- EN: Drone intensifies -->
   <LetterLabelPsychicDroneLevelIncreased>Brummen verstärkt</LetterLabelPsychicDroneLevelIncreased>
   <!-- EN: The crashed ship part is now emanating a more powerful kind of psychic drone. Every {0} humanlike in the area now feels more disturbed, terrified, and paranoid. -->
-  <LetterPsychicDroneLevelIncreased>Das abgestürzte Schiffsteil strahlt nun eine verstärkte Version des psychischen Brummens aus. Jedes menschliche Wesen {0}en Geschlechts in der Region fühlt sich jetzt noch gestörter, ängstlicher und paranoider.</LetterPsychicDroneLevelIncreased>
+  <LetterPsychicDroneLevelIncreased>Das abgestürzte Schiffsteil strahlt nun eine verstärkte Version des übersinnlichen Brummens aus. Jedes menschliche Wesen {0}en Geschlechts in der Region fühlt sich jetzt noch gestörter, ängstlicher und paranoider.</LetterPsychicDroneLevelIncreased>
   
   <!-- Agent revealed -->
   <!-- EN: Agent -->
   <LetterLabelAgentRevealed>Agent</LetterLabelAgentRevealed>
   <!-- EN: {0} has been revealed as an agent of your enemy {1}.\n\nThey are attempting to escape now. -->
-  <LetterAgentRevealed>{0} wurde als Agent der gegnerischen Fraktion '{1}' entlarvt.\n\n{0_pronoun} versucht, zu entkommen.</LetterAgentRevealed>
+  <LetterAgentRevealed>{0} wurde als Agent der gegnerischen Fraktion {1} entlarvt.\n\n{0_pronoun} versucht, zu entkommen.</LetterAgentRevealed>
 
   <!-- Beavers -->
   <!-- EN: Beavers! -->
@@ -150,7 +155,7 @@
   <!-- EN: {1} from {0} -->
   <LetterLabelTraderCaravanArrival>{1} von '{0}'</LetterLabelTraderCaravanArrival>
   <!-- EN: A caravan from {0} is approaching. They are a {1}. -->
-  <LetterTraderCaravanArrival>Eine Karawane der Fraktion '{0}' nähert sich. Sie sind {1}.</LetterTraderCaravanArrival>
+  <LetterTraderCaravanArrival>Eine Karawane der Fraktion {0} nähert sich. Es handelt sich um {1}.</LetterTraderCaravanArrival>
   <!-- EN: They will hang around the colony for some time before leaving. You can attack them - but this will anger their faction! -->
   <LetterCaravanArrivalCommonWarning>Sie werden ein paar Tage in der Kolonie verweilen, bevor sie weiterziehen. Du kannst sie auch angreifen - allerdings wird das ihre Fraktion verärgern!</LetterCaravanArrivalCommonWarning>
     
@@ -180,7 +185,7 @@
   <!-- EN: Caravan meeting by {0} -->
   <CaravanMeetingTitle>Karawanentreffen mit {0}</CaravanMeetingTitle>
   <!-- EN: {0} has met peacefully with a caravan from {1}. The other caravan is composed of:\n\n{2} -->
-  <CaravanMeeting>{0} hat sich friedlich mit einer Karawane der Fraktion '{1}' getroffen. Deren Karawane besteht aus:\n\n{2}</CaravanMeeting>
+  <CaravanMeeting>{0} hat sich friedlich mit einer Karawane der Fraktion {1} getroffen. Deren Karawane besteht aus:\n\n{2}</CaravanMeeting>
   <!-- EN: Trade -->
   <CaravanMeeting_Trade>Handeln</CaravanMeeting_Trade>
   <!-- EN: Attack -->
@@ -208,7 +213,7 @@
   <!-- EN: Caravan demand by {0} -->
   <CaravanDemandTitle>Karawanenforderung von {0}</CaravanDemandTitle>
   <!-- EN: {0} has been ambushed by a group of {2} {4} from {1}. They will attack unless you give them:\n\n{3} -->
-  <CaravanDemand>{0} wurde von einer Gruppe bestehend aus {2} Personen ({4}) von der Fraktion '{1}' aufgelauert. Sie werden angreifen, es sei denn du gibst ihnen:\n\n{3}</CaravanDemand>
+  <CaravanDemand>{0} wurde von einer Gruppe bestehend aus {2} Personen ({4}) von der Fraktion {1} aufgelauert. Sie werden angreifen, es sei denn du gibst ihnen:\n\n{3}</CaravanDemand>
   <!-- EN: Give and pass -->
   <CaravanDemand_Give>Geben und weiterziehen</CaravanDemand_Give>
   <!-- EN: Refuse and fight -->
@@ -228,7 +233,7 @@
   <!-- EN: Quest failed -->
   <LetterLabelQuestAskerFactionHostile>Quest fehlgeschlagen</LetterLabelQuestAskerFactionHostile>
   <!-- EN: The quest is now incompletable because {FACTION_name} is hostile. -->
-  <LetterQuestAskerFactionHostile>Die Quest kann nicht mehr abgeschlossen werden, weil die Fraktion '{FACTION_name}' feindlich gesinnt ist.</LetterQuestAskerFactionHostile>
+  <LetterQuestAskerFactionHostile>Die Quest kann nicht mehr abgeschlossen werden, weil die Fraktion {FACTION_name} feindlich gesinnt ist.</LetterQuestAskerFactionHostile>
 
   <!-- Quest asker captured -->
   <!-- EN: Quest failed -->

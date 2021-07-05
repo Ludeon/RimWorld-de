@@ -152,6 +152,10 @@
   <ConfirmDeleteMod>Bist du sicher, dass du alle Daten von {0} löschen willst?</ConfirmDeleteMod>
   <!-- EN: Auto-sort mods -->
   <ResolveModOrder>Mods auto-sortieren</ResolveModOrder>
+  <!-- EN: Cannot move {0}: It must be loaded after {1}. -->
+  <ModReorderConflict_MustLoadAfter>Kann {0} nicht verschieben: Es muss nach {1} geladen werden!</ModReorderConflict_MustLoadAfter>
+  <!-- EN: Cannot move {0}: It must be loaded before {1}. -->
+  <ModReorderConflict_MustLoadBefore>Kann {0} nicht verschieben: Es muss vor {1} geladen werden!</ModReorderConflict_MustLoadBefore>
   <!-- EN: Unsubscribe -->
   <Unsubscribe>Abo beenden</Unsubscribe>
   <!-- EN: Are you sure you want to unsubscribe from {0}? -->
@@ -430,25 +434,29 @@
   <Difficulty_AllowMortars_Label>Spieler darf Mörser bauen</Difficulty_AllowMortars_Label>
   <!-- EN: Player can build mortars.\n\nYou can still use captured mortars even if this is disabled. -->
   <Difficulty_AllowMortars_Info>Spieler darf Mörser bauen.\n\nDu kannst immer noch eingenommene Mörser verwenden, auch wenn diese Einstellung deaktiviert ist.</Difficulty_AllowMortars_Info>
+  <!-- EN: Classic mortars -->
+  <Difficulty_ClassicMortars_Label>Klassische Mörser</Difficulty_ClassicMortars_Label>
+  <!-- EN: Mortars will not require reinforced barrels to construct or reload, and are balanced for this ease of access. -->
+  <Difficulty_ClassicMortars_Info>Mörser benötigen keine verstärkten Läufe zum Errichten und Nachladen und sie sind entsprechend angepasst.</Difficulty_ClassicMortars_Info>
   
   <!-- EN: Adaptation -->
   <DifficultyAdaptationSection>Anpassung</DifficultyAdaptationSection>
-  <!-- EN: Damage adaptation growth -->
-  <Difficulty_AdaptationGrowthRateFactorOverZero_Label>Schadenanpassungszunahme</Difficulty_AdaptationGrowthRateFactorOverZero_Label>
-  <!-- EN: Adaptation means the storyteller makes the game more challenging over time as long as you are not taking losses. This is separate from the story effects of wealth and population.\n\nThis adjusts the rate of that challenge growth. -->
-  <Difficulty_AdaptationGrowthRateFactorOverZero_Info>Anpassung bedeutet, dass der Erzähler das Spiel mit der Zeit anspruchsvoller macht, solange du keine Verluste erleidest. Dies hat keinen Einfluss auf die Story-Effekte von Reichtum und Population.\n\nDiese Einstellung passt die Wachstumsrate dieser Herausforderung an.</Difficulty_AdaptationGrowthRateFactorOverZero_Info>
-  <!-- EN: Damage adaptation effect -->
-  <Difficulty_AdaptationEffectFactor_Label>Schadenanpassungseffekt</Difficulty_AdaptationEffectFactor_Label>
-  <!-- EN: Adaptation means the storyteller makes the game more challenging over time as long as you are not taking losses. This is separate from the story effects of wealth and population.\n\nThis adjusts the effect of that adaptation value on actual threats. -->
-  <Difficulty_AdaptationEffectFactor_Info>Anpassung bedeutet, dass der Erzähler das Spiel mit der Zeit anspruchsvoller macht, solange du keine Verluste erleidest. Dies hat keinen Einfluss auf die Story-Effekte von Reichtum und Population.\n\nDiese Einstellung passt den Effekt dieses Anpassungswertes auf tatsächliche Bedrohungen an.</Difficulty_AdaptationEffectFactor_Info>
+  <!-- EN: Adaptation growth rate -->
+  <Difficulty_AdaptationGrowthRateFactorOverZero_Label>Anpassungserhöhungsrate</Difficulty_AdaptationGrowthRateFactorOverZero_Label>
+  <!-- EN: Adaptation means the storyteller makes the game more challenging when you're doing well. An adaptation score grows over time, and is knocked down when you take damage.\n\nThis setting adjusts how fast the adaptation score grows over time. -->
+  <Difficulty_AdaptationGrowthRateFactorOverZero_Info>Anpassung bedeutet, dass der Erzähler das Spiel mit der Zeit anspruchsvoller macht, solange du keine Verluste erleidest. Der Anpassungswert wächst mit der Zeit und wird reduziert, wenn du Schaden erleidest.\n\nDiese Einstellung verändert die Wachstumsrate des Anpassungswertes.</Difficulty_AdaptationGrowthRateFactorOverZero_Info>
+  <!-- EN: Adaptation impact -->
+  <Difficulty_AdaptationEffectFactor_Label>Anpassungsauswirkung</Difficulty_AdaptationEffectFactor_Label>
+  <!-- EN: Adaptation means the storyteller makes the game more challenging when you're doing well. An adaptation score grows over time, and is knocked down when you take damage.\n\nThis setting adjusts how much the adaptation score affects the difficulty. -->
+  <Difficulty_AdaptationEffectFactor_Info>Anpassung bedeutet, dass der Erzähler das Spiel mit der Zeit anspruchsvoller macht, solange du keine Verluste erleidest. Der Anpassungswert wächst mit der Zeit und wird reduziert, wenn du Schaden erleidest.\n\nDiese Einstellung passt den Effekt des Anpassungswertes auf die tatsächliche Bedrohung an.</Difficulty_AdaptationEffectFactor_Info>
   <!-- EN: Wealth-independent progress mode -->
   <Difficulty_FixedWealthMode_Label>Reichtumsunabhängiger Fortschrittsmodus</Difficulty_FixedWealthMode_Label>
   <!-- EN: Play in a wealth-independent progress mode.\n\nIn normal mode, the storyteller scales threats according to colonist count, player wealth, and a variety of other factors. Wealth-independent mode removes the wealth factor and replaces it with a fixed progress curve based on time. The time is counted from the founding of each colony.\n\nThis is only recommended for those looking for a strict skill challenge. In wealth-independent mode, it may be nearly impossible to recover from serious losses unless you found a new settlement. It's also possible to get too far ahead of the curve and find the game too easy. -->
-  <Difficulty_FixedWealthMode_Info>Spiele in einem reichtumsunabhängigen Fortschrittsmodus. Im normalen Modus skaliert der Erzähler Bedrohungen nach Kolonistenanzahl, Spielerreichtum und einer Reihe anderer Faktoren. Der reichtumsunabhängige Fortschrittsmodus entfernt den Reichtumsfaktor und ersetzt ihn mit einer fixen Fortschrittskurve, die auf Zeit basiert. Die Zeit wird ab der Gründung jeder Kolonie gezählt.\n\nDiese Einstellung ist nur für Spieler empfohlen, die eine strikte Herausforderung ihres Könnens suchen. Im reichtumsunabhängigen Fortschrittsmodus ist es praktisch nahezu unmöglich, sich von ernsthaften Verlusten zu erholen, es sei denn, du hast eine neue Siedlung gegründet. Man kann der Kurve auch zu weit voraus sein und das Spiel entsprechend als zu einfach empfinden.</Difficulty_FixedWealthMode_Info>
+  <Difficulty_FixedWealthMode_Info>Spiele in einem reichtumsunabhängigen Fortschrittsmodus. Im normalen Modus skaliert der Erzähler Bedrohungen nach Kolonistenzahl, Spielerreichtum und einer Reihe anderer Faktoren. Der reichtumsunabhängige Fortschrittsmodus entfernt den Reichtumsfaktor und ersetzt ihn mit einer fixen Fortschrittskurve, die auf Zeit basiert. Die Zeit wird ab der Gründung jeder Kolonie gezählt.\n\nDiese Einstellung ist nur für Spieler empfohlen, die eine strikte Herausforderung ihres Könnens suchen. Im reichtumsunabhängigen Fortschrittsmodus ist es praktisch nahezu unmöglich, sich von ernsthaften Verlusten zu erholen, es sei denn, du hast eine neue Siedlung gegründet. Man kann der Kurve auch zu weit voraus sein und das Spiel entsprechend als zu einfach empfinden.</Difficulty_FixedWealthMode_Info>
   <!-- EN: Years until maximum threat -->
   <Difficulty_FixedWealthTimeFactor_Label>Jahre bis zur maximalen Bedrohung</Difficulty_FixedWealthTimeFactor_Label>
   <!-- EN: The number of game years until the wealth-independent mode reaches its maximum threat level.\n\nNote that the storyteller will still scale threats according to colonist count and a variety of other factors. -->
-  <Difficulty_FixedWealthTimeFactor_Info>Wie viele Spieljahre es dauert, bis der reichtumsunabhängige Modus seine maximale Bedrohungsstufe erreicht hat.\n\nBeachte, dass der Erzähler die Bedrohungen weiterhin nach der Kolonistenanzahl und einer Reihe anderer Faktoren skaliert.</Difficulty_FixedWealthTimeFactor_Info>
+  <Difficulty_FixedWealthTimeFactor_Info>Wie viele Spieljahre es dauert, bis der reichtumsunabhängige Modus seine maximale Bedrohungsstufe erreicht hat.\n\nBeachte, dass der Erzähler die Bedrohungen weiterhin nach der Kolonistenzahl und einer Reihe anderer Faktoren skaliert.</Difficulty_FixedWealthTimeFactor_Info>
 
   <!-- Site select -->
   <!-- EN: Select starting site -->
@@ -476,7 +484,7 @@
   <!-- EN: Biome -->
   <Biome>Biosphäre</Biome>
   <!-- EN: Terrain -->
-  <Terrain>Landschaft</Terrain>
+  <Terrain>Gelände</Terrain>
   <!-- EN: Road -->
   <Road>Straße</Road>
   <!-- EN: River -->
@@ -555,6 +563,8 @@
   <IncapableOfTooltipWorkTypes>Deaktivierte Arbeiten:</IncapableOfTooltipWorkTypes>
   <!-- EN: Caused by quest status: {0} -->
   <IncapableOfTooltipQuest>Verursacht durch Queststatus: {0}</IncapableOfTooltipQuest>
+  <!-- EN: Caused by role: {0} -->
+  <IncapableOfTooltipRole>Verursacht durch Rolle: {0}</IncapableOfTooltipRole>
   <!-- EN: Traits -->
   <Traits>Merkmale</Traits>
   <!-- EN: Permanent mood effect -->
@@ -573,6 +583,8 @@
   <Male>männlich</Male>
   <!-- EN: female -->
   <Female>weiblich</Female>
+  <!-- EN: male and female -->
+  <MaleAndFemale>männlich und weiblich</MaleAndFemale>
   <!-- EN: male -->
   <MaleAnimal>Männchen</MaleAnimal>
   <!-- EN: female -->
@@ -589,6 +601,8 @@
   <StartingPawnsSelected>Ausgewählt</StartingPawnsSelected>
   <!-- EN: Left behind -->
   <StartingPawnsLeftBehind>Zurückgelassen</StartingPawnsLeftBehind>
+  <!-- EN: This colonist is considered guilty. You can freely banish, execute or arrest them, and others won't be bothered.\n\nGuilt expires in -->
+  <GuiltyDesc>Dieser Kolonist wird als schuldig angesehen. Du kannst ihn jederzeit verbannen, exekutieren oder inhaftieren und niemand wird sich daran stören.\n\nNoch schuldig für</GuiltyDesc>
   
   <!-- Misc -->
   <!-- EN: Start -->
@@ -628,5 +642,27 @@
   <ClickForMoreInfo>Klicke für mehr Informationen</ClickForMoreInfo>
   <!-- EN: No more information is available. -->
   <NoMoreInfoAvailable>Keine weiteren Informationen verfügbar.</NoMoreInfoAvailable>
+
+  <!-- Factions -->
+  <!-- EN: Factions -->
+  <Factions>Fraktionen</Factions>
+  <!-- EN: Gameplay problems can occur with more than {0} factions. -->
+  <RecommendedFactionCount>Bei mehr als {0} Fraktionen kann es zu Problemen mit der Spielmechanik kommen.</RecommendedFactionCount>
+  <!-- EN: Maximum {0} visible factions allowed. -->
+  <TotalFactionsAllowed>Maximal {0} sichtbare Fraktionen erlaubt.</TotalFactionsAllowed>
+  <!-- EN: There can be no more than {0} {1}. -->
+  <MaxFactionsForType>Maximal {0} {1} erlaubt.</MaxFactionsForType>
+  <!-- EN: Restore defaults -->
+  <ResetFactionsToDefault>Standard wiederherstellen</ResetFactionsToDefault>
+  <!-- EN: Select the factions in the world. You can select up to {0} factions total. -->
+  <FactionSelectionDesc>Lege fest, welche Fraktionen die Welt bevölkern sollen. Du kannst insgesamt bis zu {0} Fraktionen auswählen.</FactionSelectionDesc>
+  <!-- EN: Disabling {0} means less quest variety and other reduced content. -->
+  <FactionDisabledContentWarning>Eine Welt ohne {0} reduziert die Questvielfalt und andere Inhalte.</FactionDisabledContentWarning>
+  <!-- EN: Disabling {0} means less spontaneous threat variety. -->
+  <InsectsDisabledContentWarning>Eine Welt ohne {0} reduziert die Vielfalt an spontanen Bedrohungen.</InsectsDisabledContentWarning>
+  <!-- EN: Disabling {0} means less quest and spontaneous threat variety. -->
+  <MechanoidsDisabledContentWarning>Eine Welt ohne {0} reduziert die Vielfalt an Quests und spontanen Bedrohungen.</MechanoidsDisabledContentWarning>
+  <!-- EN: Without other factions, raids, trading, and quests won't occur as normal. -->
+  <FactionsDisabledWarning>Ohne andere Fraktionen werden Überfälle, Handel und Aufgaben nicht wie gewohnt stattfinden.</FactionsDisabledWarning>
 
 </LanguageData>

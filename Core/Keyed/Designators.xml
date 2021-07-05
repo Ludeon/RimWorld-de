@@ -76,7 +76,7 @@
   <!-- EN: Expand home area -->
   <DesignatorAreaHomeExpand>Heimatgebiet erweitern</DesignatorAreaHomeExpand>
   <!-- EN: Colonists will repair buildings, clean floors, and extinguish fires only in the home area. -->
-  <DesignatorAreaHomeExpandDesc>Nur in diesem Gebiet können Konstruktionen repariert, Böden gesäubert oder Feuer gelöscht werden.</DesignatorAreaHomeExpandDesc>
+  <DesignatorAreaHomeExpandDesc>Nur in diesem Gebiet können Bauwerke repariert, Böden gesäubert oder Feuer gelöscht werden.</DesignatorAreaHomeExpandDesc>
   <!-- EN: Clear home area -->
   <DesignatorAreaHomeClear>Heimatgebiet verkleinern</DesignatorAreaHomeClear>
   <!-- EN: Removes a home area. Colonists will no longer clean, repair, or extinguish fires here. -->
@@ -116,6 +116,8 @@
   <DesignatorClearAreaAllowedDesc>Verkleinere ein Arbeitsgebiet.\n\nArbeitsgebiete sind definierte Bereiche, die du den Kolonisten zuweisen kannst. Kolonisten beschränken ihre Arbeit und Bedürfnisse nur auf dieses Gebiet.</DesignatorClearAreaAllowedDesc>
   <!-- EN: Manage areas... -->
   <ManageAreas>Gebiete verwalten...</ManageAreas>
+  <!-- EN: Manage auto-slaughter... -->
+  <ManageAutoSlaughter>Auto-Schlachtung verwalten...</ManageAutoSlaughter>
 
   <!-- EN: Create a zone where your colonists will try to grow a certain kind of plant. -->
   <DesignatorGrowingZoneDesc>Erstelle eine Zone, die deine Kolonisten zum Anbau einer bestimmten Pflanzenart nutzen werden.</DesignatorGrowingZoneDesc>
@@ -144,12 +146,12 @@
   <!-- EN: Remove floor -->
   <DesignatorRemoveFloor>Boden entfernen</DesignatorRemoveFloor>
   <!-- EN: Remove floors to reveal the terrain underneath. -->
-  <DesignatorRemoveFloorDesc>Entferne Böden, um das darunter liegende Gelände freizulegen.</DesignatorRemoveFloorDesc>
+  <DesignatorRemoveFloorDesc>Entferne Böden, um den natürlichen Boden freizulegen.</DesignatorRemoveFloorDesc>
 
   <!-- EN: Remove bridge -->
   <DesignatorRemoveBridge>Brücke entfernen</DesignatorRemoveBridge>
   <!-- EN: Remove bridges to reveal the terrain underneath. -->
-  <DesignatorRemoveBridgeDesc>Entferne Brücken, um das darunter liegende Gelände freizulegen.</DesignatorRemoveBridgeDesc>
+  <DesignatorRemoveBridgeDesc>Entferne Brücken, um den natürlichen Boden freizulegen.</DesignatorRemoveBridgeDesc>
 
   <!-- EN: Strip -->
   <DesignatorStrip>Entkleiden</DesignatorStrip>
@@ -171,6 +173,16 @@
   <!-- EN: Tame a wild animal. -->
   <DesignatorTameDesc>Markiere wilde Tiere, die gezähmt werden sollen.</DesignatorTameDesc>
 
+  <!-- EN: Release to wild -->
+  <DesignatorReleaseAnimalToWild>In die Wildnis entlassen</DesignatorReleaseAnimalToWild>
+  <!-- EN: Release an animal back into the wild. -->
+  <DesignatorReleaseAnimalToWildDesc>Entlasse ein Tier in die Wildnis.</DesignatorReleaseAnimalToWildDesc>
+
+  <!-- EN: Study -->
+  <DesignatorStudy>Untersuchen</DesignatorStudy>
+  <!-- EN: Study this object to learn more about it. -->
+  <DesignatorStudyDesc>Untersuche dieses Objekt, um mehr darüber zu erfahren.</DesignatorStudyDesc>
+
   <!-- Failure messages -->
   <!-- EN: Unchosen material -->
   <UnchosenStuff>Nicht ausgewähltes Material</UnchosenStuff>
@@ -189,7 +201,7 @@
   <!-- EN: {0} would block {1}'s interaction spot. -->
   <WouldBlockInteractionSpot>{0} würde den Interaktionspunkt von {1} blockieren.</WouldBlockInteractionSpot>
   <!-- EN: The terrain here is already {0}. -->
-  <TerrainIsAlready>Das Gelände hier ist bereits {0}.</TerrainIsAlready>
+  <TerrainIsAlready>Der Boden hier ist bereits {0}.</TerrainIsAlready>
   <!-- EN: The surface is already marked for smoothing. -->
   <SurfaceBeingSmoothed>Diese Oberfläche ist bereits zum Glätten markiert.</SurfaceBeingSmoothed>
   <!-- EN: Identical thing already exists here. -->
@@ -197,11 +209,11 @@
   <!-- EN: Identical blueprint already exists here. -->
   <IdenticalBlueprintExists>Hier ist bereits eine identische Blaupause.</IdenticalBlueprintExists>
   <!-- EN: {0_label} cannot be built on this terrain. -->
-  <TerrainCannotSupport>{0_label} kann nicht auf diesem Gelände gebaut werden.</TerrainCannotSupport>
+  <TerrainCannotSupport>{0_label} kann nicht auf diesem Boden gebaut werden.</TerrainCannotSupport>
   <!-- EN: {0_label} requires terrain that supports: {1_label} -->
-  <TerrainCannotSupport_TerrainAffordance>{0_label} benötigt ein Gelände, das Konstruktionen vom Gewichtstyp '{1_label}' tragen kann.</TerrainCannotSupport_TerrainAffordance>
+  <TerrainCannotSupport_TerrainAffordance>{0_label} benötigt einen Boden, der Bauwerke vom Gewichtstyp '{1_label}' tragen kann.</TerrainCannotSupport_TerrainAffordance>
   <!-- EN: {0_label} (when made of {2_label}) requires terrain that supports: {1_label} -->
-  <TerrainCannotSupport_TerrainAffordanceFromStuff>{0_label} (wenn bestehend aus {2_label}) benötigt ein Gelände, das Konstruktionen vom Gewichtstyp '{1_label}' tragen kann.</TerrainCannotSupport_TerrainAffordanceFromStuff>
+  <TerrainCannotSupport_TerrainAffordanceFromStuff>{0_label} (wenn bestehend aus {2_label}) benötigt einen Boden, der Bauwerke vom Gewichtstyp '{1_label}' tragen kann.</TerrainCannotSupport_TerrainAffordanceFromStuff>
   <!-- EN: Space already occupied. -->
   <SpaceAlreadyOccupied>Bauplatz ist bereits belegt.</SpaceAlreadyOccupied>
   <!-- EN: Space being smoothed. -->
@@ -241,6 +253,6 @@
   <!-- EN: None of your {0} have all skills required. -->
   <NoColonistWithAllSkillsForConstructing>Keiner deiner {0} verfügt über alle erforderlichen Fähigkeiten.</NoColonistWithAllSkillsForConstructing>
   <!-- EN: All of your {0} who have this skill are not assigned to {1}. -->
-  <AllColonistsWithSkillHaveDisabledConstructingTip>Von deinen {0}, die diese Fähigkeit haben, ist niemand für {1} zugewiesen.</AllColonistsWithSkillHaveDisabledConstructingTip>
+  <AllColonistsWithSkillHaveDisabledConstructingTip>Keiner deiner {0}, die diese Fähigkeit haben, ist für {1} zugewiesen.</AllColonistsWithSkillHaveDisabledConstructingTip>
 
 </LanguageData>

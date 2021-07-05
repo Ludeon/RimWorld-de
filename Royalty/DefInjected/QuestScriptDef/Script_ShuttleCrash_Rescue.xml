@@ -30,10 +30,10 @@
     <li>successLetterEndingCommon->Du hast die Quest '[resolvedQuestName]' erfolgreich abgeschlossen.</li>
     <li>goodwillSomeCiviliansLost->Es konnten nicht alle [pawnLabelPlural] der [asker_faction_pawnsPlural] gerettet werden. [goodwillNegativelyAffected]</li>
     <li>goodwillAllCiviliansLost->Es konnte kein einziger [pawnLabel] der [asker_faction_pawnsPlural] gerettet werden. [goodwillNegativelyAffected]</li>
-    <li>goodwillNegativelyAffected->Dies wirkt sich negativ auf die Rufpunkte aus, die du von der Fraktion '[asker_faction_name]' erhalten wirst.</li>
+    <li>goodwillNegativelyAffected->Dies wirkt sich negativ auf die Rufpunkte aus, die du von der Fraktion [asker_faction_name] erhalten wirst.</li>
     <li>commanderLandingDesc->[Kommandant] [asker_nameDef], [der] um die Landung [asker_possessive]es Shuttles in [map_definite] bat</li>
     <li>raidArrivedLetterLabel->Überfall: [enemyFaction_name]</li>
-    <li>raidArrivedLetterText->[enemyFaction_pawnsPlural] der Fraktion '[enemyFaction_name]' sind eingetroffen. Sie werden die [asker_faction_pawnsPlural] angreifen, die in [map_definite] abgestürzt sind.\n\nVerteidige die [asker_faction_pawnsPlural], bis ihr Rettungs-Shuttle in [rescueShuttleAfterRaidDelay_duration] eintrifft.</li>
+    <li>raidArrivedLetterText->[enemyFaction_pawnsPlural] der Fraktion [enemyFaction_name] sind eingetroffen. Sie werden die [asker_faction_pawnsPlural] angreifen, die in [map_definite] abgestürzt sind.\n\nVerteidige die [asker_faction_pawnsPlural], bis ihr Rettungs-Shuttle in [rescueShuttleAfterRaidDelay_duration] eintrifft.</li>
     <li>rescueShuttleArrivedLetterLabel->Rettungs-Shuttle eingetroffen</li>
     <li>rescueShuttleArrivedLetterText->Das Rettungs-Shuttle ist eingetroffen, um die abgestürzten [pawnLabelSingleOrPlural] abzuholen. Sorge dafür, dass folgende Personen an Bord sind, bevor das Shuttle in [rescueDelay_duration] abhebt:\n\n[civilians]</li>
     <li>questCompletedSuccessLetterLabel->Quest abgeschlossen: [resolvedQuestName]</li>
@@ -76,7 +76,7 @@
   <ShuttleCrash_Rescue.questDescriptionRules.rulesStrings>
     <li>pawnLabelSingleOrPlural(civilians_count==1)->[pawnLabel]</li>
     <li>pawnLabelSingleOrPlural(civilians_count>=2)->[pawnLabelPlural]</li>
-    <li>questDescription->Ein Shuttle der Fraktion '[asker_faction_name]' ist beschädigt und sucht einen Platz zum Landen. [asker_nameDef], [der] [Kommandant] des Shuttles, will in [map_definite] landen.\n\n[enemyFaction_pawnsPlural] der Fraktion '[enemyFaction_name]' werden den Absturzort des Shuttles angreifen und versuchen, die Insassen zu töten. Du musst sie verteidigen.\n\nIn dem Shuttle befinden sich [asker_nameDef][andOtherCivilians] und [soldiers_count] Soldaten. [der] [Kommandant] [andCivilians] [muss] gerettet werden, aber die Soldaten sind entbehrlich.\n\nIn [rescueDelay_duration] wird ein Rettungs-Shuttle eintreffen, um die Überlebenden abzuholen. Du musst sie alle innerhalb von [leaveDelay_duration] an Bord bringen.</li>
+    <li>questDescription->Ein Shuttle der Fraktion [asker_faction_name] ist beschädigt und sucht einen Platz zum Landen. [asker_nameDef], [der] [Kommandant] des Shuttles, will in [map_definite] landen.\n\n[enemyFaction_pawnsPlural] der Fraktion [enemyFaction_name] werden den Absturzort des Shuttles angreifen und versuchen, die Insassen zu töten. Du musst sie verteidigen.\n\nIn dem Shuttle befinden sich [asker_nameDef][andOtherCivilians] und [soldiers_count] Soldaten. [der] [Kommandant] [andCivilians] [muss] gerettet werden, aber die Soldaten sind entbehrlich.\n\nIn [rescueDelay_duration] wird ein Rettungs-Shuttle eintreffen, um die Überlebenden abzuholen. Du musst sie alle innerhalb von [leaveDelay_duration] an Bord bringen.</li>
     <li>andOtherCivilians(civilians_count==1)-></li>
     <li>andOtherCivilians(civilians_count==2)->, ein weiterer [pawnLabel]</li>
     <li>andOtherCivilians(civilians_count>=3)->, [civilianCountMinusOne] weitere [pawnLabelSingleOrPlural]</li>

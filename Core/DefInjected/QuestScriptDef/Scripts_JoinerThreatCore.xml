@@ -5,7 +5,7 @@
     <li>questDescription->A [joiner_age]-year-old [joiner_title] named [joiner_nameDef] is calling from nearby. [joiner_pronoun] is being chased by [enemyFaction_pawnsPlural] from [enemyFaction_name]!\n\n[joiner_pronoun] begs for safety and offers to join you at [map_definite].[joiner_relationInfo]\n\nIf you accept, you'll have to fight off the [enemyFaction_pawnsPluralDef] on [joiner_possessive] tail. The group of [enemyFaction_pawnsPlural] is composed of: \n\n[raid/raidPawnKinds]\n\n[joiner_nameDef] is too frantic to offer more information.</li>
   -->
   <ThreatReward_Raid_Joiner.questDescriptionRules.rulesStrings>
-    <li>questDescription->[ein_N_jaehriger] [joiner_title] namens [joiner_nameDef] kontaktiert dich aus der Nähe. [enemyFaction_pawnsPlural] der Fraktion '[enemyFaction_name]' machen Jagd auf [joiner_objective]!\n\n[joiner_pronoun] fleht um Hilfe und bietet an, sich dir in [map_definite] anzuschließen.[joiner_relationInfo]\n\nWenn du annimmst, wirst du gegen die Verfolger kämpfen müssen. Die [enemyFaction_pawnsPlural]gruppe besteht aus:\n\n[raid/raidPawnKinds]\n\n[joiner_nameDef] ist zu aufgeregt, um mehr Informationen preiszugeben.</li>
+    <li>questDescription->[ein_N_jaehriger] [joiner_title] namens [joiner_nameDef] kontaktiert dich aus der Nähe. [enemyFaction_pawnsPlural] der Fraktion [enemyFaction_name] machen Jagd auf [joiner_objective]!\n\n[joiner_pronoun] fleht um Hilfe und bietet an, sich dir in [map_definite] anzuschließen.[joiner_relationInfo]\n\nWenn du annimmst, wirst du gegen die Verfolger kämpfen müssen. Die [enemyFaction_pawnsPlural]gruppe besteht aus:\n\n[raid/raidPawnKinds]\n\n[joiner_nameDef] ist zu aufgeregt, um mehr Informationen preiszugeben.</li>
     <!-- gender-specific -->
     <li>ein_N_jaehriger(joiner_gender==Male)->ein [joiner_age]-jähriger</li>
     <li>ein_N_jaehriger(joiner_gender==Female)->eine [joiner_age]-jährige</li>
@@ -41,8 +41,8 @@
     <li>runnerIndef->Ein Flüchtling</li>
   </ThreatReward_Raid_Joiner.questNameRules.rulesStrings>
   <!-- EN: {BASELABEL} chasing [../joiner_nameDef] -->
-  <ThreatReward_Raid_Joiner.LetterLabelCashing.value.slateRef>{BASELABEL} verfolgen [../joiner_nameDef]</ThreatReward_Raid_Joiner.LetterLabelCashing.value.slateRef>
+  <ThreatReward_Raid_Joiner.root.nodes.Delay-0.node.parms.customLetterLabel.value.slateRef>{BASELABEL} verfolgen [../joiner_nameDef]</ThreatReward_Raid_Joiner.root.nodes.Delay-0.node.parms.customLetterLabel.value.slateRef>
   <!-- EN: {BASETEXT}\n              \nThe [enemyFaction_pawnsPlural] have come to get [../joiner_nameDef]. -->
-  <ThreatReward_Raid_Joiner.LetterTextCashing.value.slateRef>{BASETEXT}\n              \nDie [enemyFaction_pawnsPlural] sind hier, um [../joiner_nameDef] zu fangen.</ThreatReward_Raid_Joiner.LetterTextCashing.value.slateRef>
+  <ThreatReward_Raid_Joiner.root.nodes.Delay-0.node.parms.customLetterText.value.slateRef>{BASETEXT}\n              \nDie [enemyFaction_pawnsPlural] sind hier, um [../joiner_nameDef] zu fangen.</ThreatReward_Raid_Joiner.root.nodes.Delay-0.node.parms.customLetterText.value.slateRef>
   
 </LanguageData>

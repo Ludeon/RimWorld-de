@@ -43,6 +43,8 @@
   <CommandToggleDraftDesc>Schaltet den Kampfmodus ein/aus.\n\nKolonisten im Kampfmodus können direkt gesteuert werden. Sie werden jedoch nicht arbeiten, essen oder schlafen gehen.</CommandToggleDraftDesc>
   <!-- EN: {1_labelShort} cannot walk. -->
   <IsIncapped>{1_labelShort} kann nicht laufen.</IsIncapped>
+  <!-- EN: {0_labelShort} is participating in {1}. -->
+  <ParticipatingInRitual>{0_labelShort} nimmt an {1} teil.</ParticipatingInRitual>
 
   <!-- EN: Fire at will -->
   <CommandFireAtWillLabel>Schießen erlauben</CommandFireAtWillLabel>
@@ -98,6 +100,9 @@
   <TurningOffPrisonerBedWarning>Das Ausschalten des Gefängnismodus betrifft den kompletten Raum (da Kolonisten und Gefangene nicht im selben Raum schlafen können).\n\nFolgende Personen verlieren ihre Betten:</TurningOffPrisonerBedWarning>
   <!-- EN: Are you sure you want to do this? -->
   <AreYouSure>Bist du sicher, dass du das machen willst?</AreYouSure>
+  <!-- EN: Changing bed use affects the whole room (since prisoners, slaves and colonists cannot sleep in the same room).\n\nThese people will lose ownership of their beds: -->
+  <ChangingOwnerTypeBedWarning>Das Ändern der Bettdefinition hat Auswirkungen auf den ganzen Raum (da Gefangene, Sklaven und Kolonisten nicht im selben Raum schlafen können).\n\nFolgende Personen verlieren ihre Betten:</ChangingOwnerTypeBedWarning>
+
 
   <!-- EN: Detonate -->
   <CommandDetonateLabel>Detonation</CommandDetonateLabel>
@@ -133,8 +138,13 @@
 
   <!-- EN: Allow sowing -->
   <CommandAllowSow>Anbauen erlauben</CommandAllowSow>
-  <!-- EN: When disabled, colonists will never sow plants in this zone. They will still harvest. -->
-  <CommandAllowSowDesc>Wenn ausgeschaltet, werden Kolonisten in dieser Zone keine neuen Pflanzen anbauen. Ernten ist noch erlaubt.</CommandAllowSowDesc>
+  <!-- EN: When disabled, colonists will never sow new plants in this zone. They will still harvest. -->
+  <CommandAllowSowDesc>Wenn diese Option deaktiviert ist, werden Kolonisten in dieser Zone keine neuen Pflanzen anbauen. Sie dürfen aber weiterhin die Zone abernten.</CommandAllowSowDesc>
+
+  <!-- EN: Allow cutting -->
+  <CommandAllowCut>Entfernen erlauben</CommandAllowCut>
+  <!-- EN: When disabled, colonists will never cut plants in this zone. They will still sow new plants in spaces that are already empty, and harvest. -->
+  <CommandAllowCutDesc>Wenn diese Option deaktiviert ist, werden Kolonisten keine Pflanzen in dieser Zone entfernen. Sie dürfen aber weiterhin neue Pflanzen auf bereits leeren Flächen anbauen und die Zone abernten.</CommandAllowCutDesc>
 
   <!-- Artillery -->
   <!-- EN: Set forced target -->
@@ -212,13 +222,13 @@
   
   <!-- Trade beacon -->
   <!-- EN: Create a stockpile around this building exactly matching the shape of the beacon's launch radius. -->
-  <CommandMakeBeaconStockpileDesc>Erstelle eine Lagerzone um diese Konstruktion herum, deren Form der Erfassungsreichweite der Handelsbake entspricht.</CommandMakeBeaconStockpileDesc>
+  <CommandMakeBeaconStockpileDesc>Erstelle eine Lagerzone um dieses Bauwerk herum. Die Größe der Zone sollte mit der Erfassungsreichweite der Handelsbake übereinstimmen.</CommandMakeBeaconStockpileDesc>
   <!-- EN: Create stockpile -->
   <CommandMakeBeaconStockpileLabel>Lagerzone erstellen</CommandMakeBeaconStockpileLabel>
 
   <!-- Sun lamp -->
   <!-- EN: Create a growing zone around this building exactly matching the shape of the lamp's light radius. -->
-  <CommandSunLampMakeGrowingZoneDesc>Erstelle eine Anbauzone um diese Konstruktion herum, deren Form der Reichweite des Lichtes entspricht.</CommandSunLampMakeGrowingZoneDesc>
+  <CommandSunLampMakeGrowingZoneDesc>Erstelle eine Anbauzone um dieses Bauwerk herum. Die Größe der Zone sollte mit der Reichweite des Lichts übereinstimmen.</CommandSunLampMakeGrowingZoneDesc>
   <!-- EN: Create growing zone -->
   <CommandSunLampMakeGrowingZoneLabel>Anbauzone erstellen</CommandSunLampMakeGrowingZoneLabel>
 
@@ -229,7 +239,7 @@
   <CommandAutoRearmDesc>Wenn aktiviert, wird die Falle nach dem Auslösen automatisch erneuert.</CommandAutoRearmDesc>
   
   <!-- Animal control -->
-  <!-- EN: Release animals -->
+  <!-- EN: Animals attack -->
   <CommandReleaseAnimalsLabel>Tiere vorschicken</CommandReleaseAnimalsLabel>
   <!-- EN: While this is on, mastered animals are sent forth to attack distant targets. While it is off, they remain near and guard the master. -->
   <CommandReleaseAnimalsDesc>Bei Aktivierung werden Tiere, die ein Herrchen haben, losgeschickt, um ferne Ziele anzugreifen. Bei Deaktivierung bleiben sie in der Nähe und verteidigen ihr Herrchen.</CommandReleaseAnimalsDesc>
@@ -256,7 +266,7 @@
   
   <!-- reload -->
   <!-- EN: No {CHARGENOUN_plural} left. -->
-  <CommandReload_NoCharges>Keine {CHARGENOUN}en mehr.</CommandReload_NoCharges>
+  <CommandReload_NoCharges>Keine {CHARGENOUN_plural} mehr.</CommandReload_NoCharges>
   <!-- EN: Needs to be reloaded with {COUNT} {AMMO_label}. -->
   <CommandReload_NoAmmo>Muss mit {COUNT} {AMMO_label} nachgeladen werden.</CommandReload_NoAmmo>
   
@@ -276,7 +286,7 @@
   <!-- EN: Build copy -->
   <CommandBuildCopy>Kopie bauen</CommandBuildCopy>
   <!-- EN: Build a copy of this building. -->
-  <CommandBuildCopyDesc>Baue eine Kopie von dieser Konstruktion.</CommandBuildCopyDesc>
+  <CommandBuildCopyDesc>Baue eine Kopie von diesem Bauwerk.</CommandBuildCopyDesc>
 
   <!-- Form caravan -->
   <!-- EN: Form caravan -->
@@ -535,11 +545,36 @@
   <CommandOpenLinkedQuest>Zugehörige Quest öffnen</CommandOpenLinkedQuest>
   <!-- EN: Open linked quest in the quests tab. -->
   <CommandOpenLinkedQuestDesc>Öffne zugehörige Quest im Quests-Tab.</CommandOpenLinkedQuestDesc>
+
+  <!-- Carry -->
+  <!-- EN: Drop {0_nameDef} -->
+  <CommandDropPawn>Lass {0_nameDef} fallen</CommandDropPawn>
+  <!-- EN: Drop the person being carried. -->
+  <CommandDropPawnDesc>Lass die Person, die getragen wird fallen.</CommandDropPawnDesc>
   
   <!-- Take a drug -->
   <!-- EN: Take drug... -->
   <TakeDrug>Droge einnehmen...</TakeDrug>
   <!-- EN: Choose a drug from inventory to ingest immediately. -->
   <TakeDrugDesc>Wähle eine Droge aus dem Inventar, die sofort eingenommen werden soll.</TakeDrugDesc>
+
+  <!-- Build X -->
+  <!-- EN: Build {0} -->
+  <BuildThing>Baue {0}</BuildThing>
+
+  <!-- Rituals -->
+  <!-- EN: Leave {RITUAL_label} -->
+  <CommandLeaveRitual>Verlasse {RITUAL_label}</CommandLeaveRitual>
+  <!-- EN: Stop participating in the {RITUAL_labelDef}. The ritual will continue as long as it has at least one participant. -->
+  <CommandLeaveRitualDesc>Beende Teilnahme am Ritual {RITUAL_labelDef}. Das Ritual wird weitergehen, so lange noch mindestens ein Teilnehmer da ist.</CommandLeaveRitualDesc>
+  <!-- EN: This is the last participant in the {RITUAL_labelDef}. -->
+  <CommandLeaveLastParticipant>Dies ist der letzte Teilnehmer am Ritual {RITUAL_labelDef}.</CommandLeaveLastParticipant>
+
+  <!-- EN: Cancel {RITUAL_label} -->
+  <CommandCancelRitual>Beende {RITUAL_label}</CommandCancelRitual>
+  <!-- EN: End the {RITUAL_labelDef} immediately. Ritual obligation will remain. You can restart the ritual later. -->
+  <CommandCancelRitualDesc>Beende sofort das Ritual {RITUAL_labelDef}. Die Ritualverantwortung verbleibt. Du kannst es später neu starten.</CommandCancelRitualDesc>
+  <!-- EN: Are you sure you want to cancel {RITUAL_labelDef}? -->
+  <CommandCancelRitualConfirm>Bist du dir sicher, dass du {RITUAL_labelDef} abbrechen willst?</CommandCancelRitualConfirm>
   
 </LanguageData>

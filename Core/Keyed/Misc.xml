@@ -28,6 +28,8 @@
   <!-- ToCommaList() -->
   <!-- EN: {0} and {1} -->
   <ToCommaListAnd>{0} und {1}</ToCommaListAnd>
+  <!-- EN: {0} or {1} -->
+  <ToCommaListOr>{0} oder {1}</ToCommaListOr>
   
   <!-- General-use words -->
   <!-- EN: Yes -->
@@ -38,6 +40,8 @@
   <New>neu</New>
   <!-- EN: Gender -->
   <Gender>Geschlecht</Gender>
+  <!-- EN: Sex -->
+  <Sex>Geschlecht</Sex>
   <!-- EN: min -->
   <min>min</min>
   <!-- EN: max -->
@@ -84,6 +88,8 @@
   <Etc>usw.</Etc>
   <!-- EN: ${0} -->
   <MoneyFormat>{0}€</MoneyFormat>
+  <!-- EN: Factors -->
+  <Factors>Faktoren</Factors>
 
   <!-- Content generation-->
   
@@ -140,9 +146,9 @@
   <ThingMadeOfStuffLabel>{1} aus {0}</ThingMadeOfStuffLabel>
 
   <!-- EN: {PAWN_labelShort}'s {1} -->
-  <SomeonesRoom>{PAWN_labelShort}s {1}</SomeonesRoom>
+  <SomeonesRoom>{replace: {PAWN_labelShort}s; "s(/Name)s"-"s(/Name)'"; "ß(/Name)s"-"ß(/Name)'"; "z(/Name)s"-"z(/Name)'"; "x(/Name)s"-"x(/Name)'"; "ce(/Name)s"-"ce(/Name)'"} {1}</SomeonesRoom>
   <!-- EN: {PAWN1_labelShort} and {PAWN2_labelShort}'s {2} -->
-  <CouplesRoom>{PAWN1_labelShort} und {PAWN2_labelShort}s {2}</CouplesRoom>
+  <CouplesRoom>{replace: {PAWN1_labelShort}s; "s(/Name)s"-"s(/Name)'"; "ß(/Name)s"-"ß(/Name)'"; "z(/Name)s"-"z(/Name)'"; "x(/Name)s"-"x(/Name)'"; "ce(/Name)s"-"ce(/Name)'"} und {replace: {PAWN2_labelShort}s; "s(/Name)s"-"s(/Name)'"; "ß(/Name)s"-"ß(/Name)'"; "z(/Name)s"-"z(/Name)'"; "x(/Name)s"-"x(/Name)'"; "ce(/Name)s"-"ce(/Name)'"} {2}</CouplesRoom>
   
   <!-- EN: Important for this type of room. -->
   <StatRelatesToCurrentRoom>Wichtig für derartige Räume.</StatRelatesToCurrentRoom>
@@ -155,7 +161,7 @@
 
   <!-- History events -->
   <!-- EN: Colonist died -->
-  <ColonistDied>Kolonist verstarb</ColonistDied>
+  <ColonistDied>Kolonist gestorben</ColonistDied>
   
   <!-- Rotation -->
   <!-- EN: North -->
@@ -169,5 +175,9 @@
 
   <!-- EN: applying techprint ({0}) -->
   <ApplyingTechprint>Wende Techprint an ({0})</ApplyingTechprint>
+
+  <!-- Apparel Looks -->
+  <!-- EN: variant of -->
+  <VariantOf>Variante von</VariantOf>
   
 </LanguageData>

@@ -13,7 +13,7 @@
   <CannotUseNoPath>Kann nicht nutzen: Kein Weg</CannotUseNoPath>
   <!-- EN: Cannot use: Reserved -->
   <CannotUseReserved>Kann nicht nutzen: Reserviert</CannotUseReserved>
-  <!-- EN: Cannot use: full -->
+  <!-- EN: Cannot use: Full -->
   <CannotUseFull>Kann nicht nutzen: Voll</CannotUseFull>
   <!-- EN: leader {1_labelShort} is unavailable -->
   <LeaderUnavailable>Anführer {1_labelShort} ist nicht erreichbar</LeaderUnavailable>
@@ -35,8 +35,10 @@
   <IsIncapableOfViolenceLower>{1_labelShort} kann keine Gewalt anwenden</IsIncapableOfViolenceLower>
   <!-- EN: incapable of violence -->
   <IncapableOfViolenceLower>kann keine Gewalt anwenden</IncapableOfViolenceLower>
+  <!-- EN: {0_labelShort} is incapable of shooting -->
+  <IsIncapableOfShootingLower>{0_labelShort} kann nicht schießen</IsIncapableOfShootingLower>
   <!-- EN: {1_labelShort} is not drafted -->
-  <IsNotDraftedLower>{1_labelShort} nicht im Kampfmodus</IsNotDraftedLower>
+  <IsNotDraftedLower>{1_labelShort} ist nicht im Kampfmodus</IsNotDraftedLower>
   <!-- EN: cannot order characters you do not control -->
   <CannotOrderNonControlledLower>kann Nicht-Spieler-Charaktere nicht befehligen</CannotOrderNonControlledLower>
   <!-- EN: cannot attack self -->
@@ -59,7 +61,7 @@
   <!-- EN: forbidden -->
   <ForbiddenLower>verboten</ForbiddenLower>
   <!-- EN: outside allowed area -->
-  <ForbiddenOutsideAllowedAreaLower>außerhalb der erlaubten Zone</ForbiddenOutsideAllowedAreaLower>
+  <ForbiddenOutsideAllowedAreaLower>außerhalb des erlaubten Gebiets</ForbiddenOutsideAllowedAreaLower>
   <!-- EN: not in home area -->
   <NotInHomeArea>nicht in Heimatgebiet</NotInHomeArea>
   <!-- EN: burning -->
@@ -78,14 +80,16 @@
   <UnderAllowedSkill>unter erlaubter Stufe {0}</UnderAllowedSkill>
   <!-- EN: above allowed skill {0} -->
   <AboveAllowedSkill>über erlaubter Stufe {0}</AboveAllowedSkill>
+  <!-- EN: no reachable outside cell -->
+  <NoReachableOutsideCell>Kein Feld im Freien erreichbar</NoReachableOutsideCell>
   <!-- EN: missing required skill level -->
   <MissingRequiredSkillLevel>benötigte Fertigkeit zu gering</MissingRequiredSkillLevel>
   <!-- EN: animal interacted too recently -->
   <AnimalInteractedTooRecently>mit dem Tier wurde erst vor kurzem interagiert</AnimalInteractedTooRecently>
   <!-- EN: no usable food -->
-  <NoUsableFood>kein geeignetes Essen verfügbar</NoUsableFood>
+  <NoUsableFood>keine geeignete Nahrung verfügbar</NoUsableFood>
   <!-- EN: no food -->
-  <NoFood>kein Essen</NoFood>
+  <NoFood>keine Nahrung</NoFood>
   <!-- EN: below requirements of {0} -->
   <FoodBelowTitleRequirements>unterhalb der Anforderungen von {0}</FoodBelowTitleRequirements>
   <!-- EN: animals skill too low - need {0} -->
@@ -96,6 +100,20 @@
   <CantInteractAnimalAsleep>Tier schläft</CantInteractAnimalAsleep>
   <!-- EN: animal busy -->
   <CantInteractAnimalBusy>Tier ist beschäftigt</CantInteractAnimalBusy>
+  <!-- EN: no allowed reachable pens -->
+  <CantRopeAnimalNoUsableReachablePens>keine erlaubten Gehege erreichbar</CantRopeAnimalNoUsableReachablePens>
+  <!-- EN: no enclosed pens -->
+  <CantRopeAnimalNoEnclosedPens>keine umschlossenen Gehege</CantRopeAnimalNoEnclosedPens>
+  <!-- EN: no allowed pens -->
+  <CantRopeAnimalNoAllowedPens>keine erlaubten Gehege</CantRopeAnimalNoAllowedPens>
+  <!-- EN: no reachable pens -->
+  <CantRopeAnimalNoReachablePens>keine erlaubten Gehege erreichbar</CantRopeAnimalNoReachablePens>
+  <!-- EN: can't touch -->
+  <CantRopeAnimalCantTouch>Nicht erreichbar</CantRopeAnimalCantTouch>
+  <!-- EN: no space in pen -->
+  <CantRopeAnimalNoSpace>kein Platz im Gehege</CantRopeAnimalNoSpace>
+  <!-- EN: already in best pen -->
+  <CantRopeAnimalAlreadyInBestPen>Ist schon in bestem Gehege</CantRopeAnimalAlreadyInBestPen>
   <!-- EN: {0} skill too low -->
   <SkillTooLowForConstruction>Fähigkeit '{0}' zu niedrig</SkillTooLowForConstruction>
   <!-- EN: need components -->
@@ -140,12 +158,14 @@
   <UpgradeImplant>Steigere {0} auf Stufe {1}</UpgradeImplant>
   <!-- EN: violation of faction ally -->
   <SurgeryViolationFellowFactionMember>Verletzung eines Fraktionsverbündeten</SurgeryViolationFellowFactionMember>
+  <!-- EN: being carried by {0_labelShort} -->
+  <BeingCarriedBy>wird getragen von {0_labelShort}</BeingCarriedBy>
   
   <!-- EN: Consume {1_labelShort} -->
   <ConsumeThing>Konsumiere {1_labelShort}</ConsumeThing>
   
-  <!-- EN: Cannot go here: no path -->
-  <CannotGoNoPath>Kann hier nicht hin: kein Weg</CannotGoNoPath>
+  <!-- EN: Cannot go here: No path -->
+  <CannotGoNoPath>Kann hier nicht hin: Kein Weg</CannotGoNoPath>
   <!-- EN: Go here -->
   <GoHere>Gehe hier hin</GoHere>
   
@@ -155,6 +175,8 @@
   <TryToArrest>Versuche Inhaftierung von {1_label} ({2} Chance)</TryToArrest>
   <!-- EN: Cannot arrest -->
   <CannotArrest>Kann nicht inhaftieren</CannotArrest>
+  <!-- EN: {0} chance of arrest -->
+  <ArrestChance>{0} Inhaftierungschance</ArrestChance>
 
   <!-- EN: Capture {1_label} -->
   <Capture>Fange {1_label} ein</Capture>
@@ -180,6 +202,8 @@
   <CryptosleepCasketGuestsNotAllowed>Temporäre Fraktionsmitglieder nicht erlaubt.</CryptosleepCasketGuestsNotAllowed>
   <!-- EN: Hosted prisoners not allowed. -->
   <CryptosleepCasketGuestPrisonersNotAllowed>Aufgenommene Gefangene sind nicht erlaubt.</CryptosleepCasketGuestPrisonersNotAllowed>
+  <!-- EN: Already occupied -->
+  <CryptosleepCasketOccupied>Schon belegt</CryptosleepCasketOccupied>
   <!-- EN: No reachable, un-reserved, enclosed prisoner-marked bed in safe temperature. -->
   <NoPrisonerBed>Keine Gefängnisbetten verfügbar, die erreichbar, nicht reserviert und in sicherer Temperatur sind.</NoPrisonerBed>
   <!-- EN: No reachable, un-reserved non-prisoner bed in safe temperature. -->
@@ -243,7 +267,11 @@
   <!-- EN: Pick up {1_labelShort}... -->
   <PickUpSome>Hebe {1_labelShort} auf...</PickUpSome>
   <!-- EN: Pick up {1_labelShort} x{{0}} -->
-  <PickUpCount>Hebe {1_labelShort} auf x{{0}}</PickUpCount>
+  <PickUpCount>Hebe {1_labelShort} x{{0}} auf</PickUpCount>
+  <!-- EN: Cannot pick up {1_labelShort} -->
+  <CannotPickUpSome>Kann {1_labelShort} nicht aufheben</CannotPickUpSome>
+  <!-- EN: {0} {1} allowed -->
+  <MaxPickUpAllowed>{0} {1} erlaubt</MaxPickUpAllowed>
   
   <!-- EN: Cannot load {1_label} onto pack animal -->
   <CannotGiveToPackAnimal>Kann {1_label} nicht auf Lasttier laden</CannotGiveToPackAnimal>
@@ -286,12 +314,21 @@
   <CannotStrip>Kann {1_label} nicht entkleiden</CannotStrip>
   <!-- EN: Cannot drop {1_label} -->
   <CannotDrop>Kann {1_label} nicht ablegen</CannotDrop>
+  <!-- EN: Carry {0_label} -->
+  <Carry>Trage {0_label}</Carry>
+  <!-- EN: Cannot carry {0_label} -->
+  <CannotCarry>Kann {0_label} nicht tragen</CannotCarry>
   <!-- EN: temporary faction member -->
   <QuestRelated>temporäres Fraktionsmitglied</QuestRelated>
   <!-- EN: Cannot change outfits on temporary faction members -->
   <QuestRelated_Outfit>Kann Outfits von temporären Fraktionsmitgliedern nicht ändern</QuestRelated_Outfit>
   <!-- EN: would replace locked apparel -->
   <WouldReplaceLockedApparel>würde gesperrte Kleidung ersetzen</WouldReplaceLockedApparel>
+
+  <!-- EN: Cannot place {0_label} in {1_label} -->
+  <CannotPlaceIn>Kann {0_label} nicht in {1_label} legen</CannotPlaceIn>
+  <!-- EN: Place {0_label} in {1_label} -->
+  <PlaceIn>Lege {0_label} in {1_label}</PlaceIn>
 
   <!-- EN: Self-destruct here -->
   <SelfDestructHere>Hier selbstzerstören</SelfDestructHere>
@@ -349,7 +386,7 @@
   <!-- EN: Cannot {0} -->
   <CannotGenericWorkCustom>Kann nicht {0}</CannotGenericWorkCustom>
 
-  <!-- EN: Cannot prioritize: incapable of {0} -->
+  <!-- EN: Cannot prioritize: Incapable of {0} -->
   <CannotMissingHealthActivities>Nicht priorisierbar: {0} unmöglich</CannotMissingHealthActivities>
 
   <!-- e.g. Already GERUND OBJECT, Already repairing wall, already hauling metal, etc -->
@@ -358,28 +395,30 @@
   <!-- EN: Already {0} -->
   <CannotGenericAlreadyAmCustom>{0} erfolgt bereits</CannotGenericAlreadyAmCustom>
 
-  <!-- EN: Cannot prioritize: will never do {0} -->
-  <CannotPrioritizeWorkTypeDisabled>Nicht priorisierbar: will kein {0} sein</CannotPrioritizeWorkTypeDisabled>
-  <!-- EN: Cannot trade: lacking necessary title -->
-  <CannotTradeMissingTitleAbility>Kann nicht handeln: notwendiger Titel fehlt</CannotTradeMissingTitleAbility>
+  <!-- EN: Cannot prioritize: Will never do {0} -->
+  <CannotPrioritizeWorkTypeDisabled>Nicht priorisierbar: Will kein {0} sein</CannotPrioritizeWorkTypeDisabled>
+  <!-- EN: lacking necessary title -->
+  <MissingTitleAbility>notwendiger Titel fehlt</MissingTitleAbility>
 
-  <!-- EN: Cannot prioritize: will never {0} -->
-  <CannotPrioritizeWorkGiverDisabled>Nicht priorisierbar: will nicht {0}</CannotPrioritizeWorkGiverDisabled>
+  <!-- EN: Cannot prioritize: Will never {0} -->
+  <CannotPrioritizeWorkGiverDisabled>Nicht priorisierbar: Will nicht {0}</CannotPrioritizeWorkGiverDisabled>
   <!-- EN: will never {0} -->
   <WillNever>will nicht {0}</WillNever>
 
-  <!-- EN: Cannot prioritize: not assigned to {0} -->
-  <CannotPrioritizeNotAssignedToWorkType>Nicht priorisierbar: aktuell kein {0}</CannotPrioritizeNotAssignedToWorkType>
+  <!-- EN: Cannot prioritize: Not assigned to {0} -->
+  <CannotPrioritizeNotAssignedToWorkType>Nicht priorisierbar: Aktuell kein {0}</CannotPrioritizeNotAssignedToWorkType>
   <!-- EN: not assigned -->
   <NotAssigned>nicht zugewiesen</NotAssigned>
+  <!-- EN: not assigned to {0} -->
+  <NotAssignedToWorkType>nicht als {0} zugewiesen</NotAssignedToWorkType>
 
-  <!-- EN: Cannot prioritize: research is a long-term task -->
+  <!-- EN: Cannot prioritize: Research is a long-term task -->
   <CannotPrioritizeResearch>Nicht priorisierbar: Forschung erfolgt langfristig</CannotPrioritizeResearch>
 
   <!-- EN: Cannot prioritize: {1_label} is forbidden -->
   <CannotPrioritizeForbidden>Nicht priorisierbar: {1_label} ist verboten</CannotPrioritizeForbidden>
-  <!-- EN: Cannot prioritize: forbidden -->
-  <CannotPrioritizeCellForbidden>Nicht priorisierbar: verboten</CannotPrioritizeCellForbidden>
+  <!-- EN: Cannot prioritize: Forbidden -->
+  <CannotPrioritizeCellForbidden>Nicht priorisierbar: Verboten</CannotPrioritizeCellForbidden>
   <!-- EN: Outside allowed area -->
   <CannotPrioritizeForbiddenOutsideAllowedArea>Außerhalb des erlaubten Gebiets</CannotPrioritizeForbiddenOutsideAllowedArea>
 
@@ -430,6 +469,8 @@
   <GiveToCaravan>Gib an {0}</GiveToCaravan>
   <!-- EN: Give as a gift to {0} ({1}) -->
   <GiveGiftViaTransportPods>Gib als Geschenk an {0} ({1})</GiveGiftViaTransportPods>
+  <!-- EN: Not part of launch group -->
+  <NotPartOfLaunchGroup>Gehört nicht zur Startgruppe</NotPartOfLaunchGroup>
 
   <!-- Rescue quest -->
   <!-- EN: Free prisoner -->
@@ -442,5 +483,32 @@
 
   <!-- EN: Too dangerous -->
   <EnterCooldownBlocksEntering>Zu gefährlich</EnterCooldownBlocksEntering>
+
+  <!-- CommsConsole -->
+  <!-- EN: Nobody to call -->
+  <NoCommsTarget>Kann niemanden anfunken</NoCommsTarget>
+
+  <!-- EN: Invoke {0} -->
+  <Invoke>Beschwöre {0}</Invoke>
+  <!-- EN: Cannot invoke {0} -->
+  <CannotInvoke>Kann {0} nicht beschwören</CannotInvoke>
+  <!-- EN: power -->
+  <Power>Kraft</Power>
+  <!-- EN: already invoked -->
+  <AlreadyInvoked>schon beschworen</AlreadyInvoked>
+
+  <!-- EN: Tend {0} -->
+  <Tend>Pflege {0}</Tend>
+  <!-- EN: Cannot tend {0} -->
+  <CannotTend>Kann {0} nicht pflegen</CannotTend>
+  <!-- EN: {0} does not require tending -->
+  <TendingNotRequired>{0} benötigt keine Pflege</TendingNotRequired>
+  <!-- EN: without medicine -->
+  <WithoutMedicine>ohne Medizin</WithoutMedicine>
+
+  <!-- EN: Repair {0} -->
+  <RepairThing>Repariere {0}</RepairThing>
+  <!-- EN: Cannot repair {0} -->
+  <CannotRepair>Kann {0} nicht reparieren</CannotRepair>
   
 </LanguageData>

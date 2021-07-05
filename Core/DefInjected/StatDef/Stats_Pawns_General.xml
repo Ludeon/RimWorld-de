@@ -1,10 +1,20 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
   
+  <!-- EN: animals learning factor -->
+  <AnimalsLearningFactor.label>Lernfaktor für Tiere</AnimalsLearningFactor.label>
+  <!-- EN: A multiplier on the learning rate for animals skill. -->
+  <AnimalsLearningFactor.description>Ein Multiplikator auf die Lernrate der Tierfähigkeiten.</AnimalsLearningFactor.description>
+  
+  <!-- EN: caravan riding speed -->
+  <CaravanRidingSpeedFactor.label>Reitgeschwindigkeit der Karawane</CaravanRidingSpeedFactor.label>
+  <!-- EN: The multiplier applied to a person's movement speed when they ride this animal as part of a caravan. Animals can only be ridden in caravans. -->
+  <CaravanRidingSpeedFactor.description>Der Multiplikator, der auf die Bewegungsgeschwindigkeit einer Person angewendet wird, wenn sie dieses Tier als Teil einer Karawane reitet. Tiere können nur in Karawanen geritten werden.</CaravanRidingSpeedFactor.description>
+  
   <!-- EN: carrying capacity -->
   <CarryingCapacity.label>Transportkapazität</CarryingCapacity.label>
   <!-- EN: The amount of stuff this creature can carry in its hands, mouth, or other manipulators.\n\nThis is separate from the ability to carry cargo on long cross-world trips. -->
-  <CarryingCapacity.description>Wie viel diese Kreatur mit den Händen, dem Mund und so weiter tragen kann.\n\nDieser Wert hat keinen Einfluss auf die Fähigkeit, Fracht auf langen Reisen quer durch die Welt zu transportieren.</CarryingCapacity.description>
+  <CarryingCapacity.description>Wie viel diese Kreatur mit den Händen, dem Mund oder sonstigen Greifwerkzeugen tragen kann.\n\nDieser Wert hat keinen Einfluss auf die Fähigkeit, Fracht auf langen Reisen quer durch die Welt zu transportieren.</CarryingCapacity.description>
   
   <!-- EN: Maximum comfortable temperature -->
   <ComfyTemperatureMax.label>Maximale Wohlfühltemperatur</ComfyTemperatureMax.label>
@@ -20,6 +30,11 @@
   <EatingSpeed.label>Essgeschwindigkeit</EatingSpeed.label>
   <!-- EN: A multiplier on eating speed. -->
   <EatingSpeed.description>Ein Multiplikator auf die Essgeschwindigkeit.</EatingSpeed.description>
+  
+  <!-- EN: filth rate -->
+  <FilthRate.label>Verschmutzungsrate</FilthRate.label>
+  <!-- EN: How much filth this creature produces.\n\nIt's best to keep filth-producing animals outdoors or on straw matting where their filth won't be a problem. -->
+  <FilthRate.description>Wie viel Schmutz diese Kreatur produziert.\n\nEs ist am besten, Tiere, die Schmutz produzieren, draußen oder auf Stroh zu halten, wo Schmutz kein Problem darstellt.</FilthRate.description>
   
   <!-- EN: foraged food amount -->
   <ForagedNutritionPerDay.label>Nahrungssuchmenge</ForagedNutritionPerDay.label>
@@ -41,15 +56,20 @@
   <!-- EN: The speed at which this character gains immunity to diseases.\n\nIf this is too slow, the character will die from a disease before developing immunity. -->
   <ImmunityGainSpeed.description>Wie schnell diese Kreatur immun gegen eine Krankheit wird.\n\nWenn der Immunisierungsprozess zu lange dauert, stirbt sie an den Folgen der Krankheit.</ImmunityGainSpeed.description>
   
+  <!-- EN: injury healing factor -->
+  <InjuryHealingFactor.label>Wundheilungsfaktor</InjuryHealingFactor.label>
+  <!-- EN: The multiplier applied to a person's injury healing rate. -->
+  <InjuryHealingFactor.description>Ein Multiplikator, der auf die Wundheilungsrate einer Person angewendet wird.</InjuryHealingFactor.description>
+  
   <!-- EN: leather amount -->
   <LeatherAmount.label>Ledermenge</LeatherAmount.label>
-  <!-- EN: The amount of leather yielded when butchering this creature. -->
-  <LeatherAmount.description>Die Ledermenge, die man erhält, wenn man diese Kreatur schlachtet.</LeatherAmount.description>
+  <!-- EN: The amount of leather yielded when butchering this creature. This value is reduced if the creature is not slaughtered cleanly, or if it is wounded when killed. -->
+  <LeatherAmount.description>Die Ledermenge, die man erhält, wenn man diese Kreatur schlachtet. Dieser Wert ist reduziert, wenn die Kreatur unsauber geschlachtet oder beim Töten verwundet wurde.</LeatherAmount.description>
   
   <!-- EN: meat amount -->
   <MeatAmount.label>Fleischmenge</MeatAmount.label>
-  <!-- EN: The amount of meat yielded when butchering this creature. -->
-  <MeatAmount.description>Die Fleischmenge, die man erhält, wenn man diese Kreatur schlachtet.</MeatAmount.description>
+  <!-- EN: The amount of meat yielded when butchering this creature. This value is reduced if the creature is not slaughtered cleanly, or if it is wounded when killed. -->
+  <MeatAmount.description>Die Fleischmenge, die man erhält, wenn man diese Kreatur schlachtet. Dieser Wert ist reduziert, wenn die Kreatur unsauber geschlachtet oder beim Töten verwundet wurde.</MeatAmount.description>
   
   <!-- EN: mental break threshold -->
   <MentalBreakThreshold.label>Nervenzusammenbruchschwelle</MentalBreakThreshold.label>
@@ -74,9 +94,9 @@
   <PainShockThreshold.description>Die Höhe des Schmerzes, den eine Kreatur maximal aushalten kann, bevor sie bewegungsunfähig zu Boden fällt.</PainShockThreshold.description>
   
   <!-- EN: psychic sensitivity -->
-  <PsychicSensitivity.label>psychische Sensibilität</PsychicSensitivity.label>
+  <PsychicSensitivity.label>mentale Sensibilität</PsychicSensitivity.label>
   <!-- EN: More sensitive people suffer more from negative psychic effects, and benefit more from positive ones. Higher psychic sensitivity also increases neural heat limit. -->
-  <PsychicSensitivity.description>Je sensibler Kreaturen sind, desto mehr leiden sie unter negativen psychischen Effekten und desto mehr profitieren sie von positiven Effekten. Höhere psychische Sensibilität erhöht zudem das Neuralhitzelimit.</PsychicSensitivity.description>
+  <PsychicSensitivity.description>Je sensibler Kreaturen sind, desto mehr leiden sie unter negativen mentalen Effekten und desto mehr profitieren sie von positiven Effekten. Höhere mentale Sensibilität erhöht zudem das Neuralhitzelimit.</PsychicSensitivity.description>
   
   <!-- EN: rest rate multiplier -->
   <RestRateMultiplier.label>Erholungsratenmultiplikator</RestRateMultiplier.label>
