@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN:
+    <li>terminalHackedMessage->Terminal hacked. {COUNT} / [terminalCount] complete.</li>
+    <li>passengersIncapableOfHackingDialogLabel->[passengersSingularOrPlural] incapable of hacking.</li>
+    <li>passengersIncapableOfHackingDialogText->The shuttle for the quest '[resolvedQuestName]' has no passenger capable of hacking. You must send at least one person capable of hacking to investigate the ancient complex.</li>
+    <li>passengersSingularOrPlural(colonistCount==1)->passenger</li>
+    <li>passengersSingularOrPlural(colonistCount>=2)->passengers</li>
+  -->
+  <AncientComplex_Mission.questContentRules.rulesStrings>
+    <li>terminalHackedMessage->Terminal gehackt. {COUNT} / [terminalCount] abgeschlossen.</li>
+    <li>passengersIncapableOfHackingDialogLabel(colonistCount==1)->Passagier kann nicht hacken.</li>
+    <li>passengersIncapableOfHackingDialogLabel(colonistCount>=2)->Passagiere können nicht hacken.</li>
+    <li>passengersIncapableOfHackingDialogText->Das Shuttle für die Quest '[resolvedQuestName]' hat keinen Passagier, der hacken kann. Du musst mindestens eine Person entsenden, die hacken kann, um den antiken Komplex zu untersuchen.</li>
+    <li>passengersSingularOrPlural(colonistCount==1)->Passagier</li>
+    <li>passengersSingularOrPlural(colonistCount>=2)->Passagiere</li>
+  </AncientComplex_Mission.questContentRules.rulesStrings>
+  <!-- EN:
+    <li>complex->complex</li>
+    <li>complex->compound</li>
+    <li>complex->installation</li>
+    <li>complex->structure</li>
+    <li>complex->construction</li>
+    <li>investigation->investigation</li>
+    <li>investigation->examination</li>
+    <li>investigation->mission</li>
+    <li>investigation->excavation</li>
+    <li>investigation->hacking</li>
+  -->
+  <AncientComplex_Mission.questDescriptionAndNameRules.rulesStrings>
+    <li>complexMas->Komplex</li>
+    <li>complexNeu->Lager</li>
+    <li>complexFem->Anlage</li>
+    <li>complexFem->Struktur</li>
+    <li>complexFem->Konstruktion</li>
+    <li>complexMasGen->Komplexes</li>
+    <li>complexNeuGen->Lagers</li>
+    <li>complexFemGen->Anlage</li>
+    <li>complexFemGen->Struktur</li>
+    <li>complexFemGen->Konstruktion</li>
+    <li>complex->[complexMas]</li>
+    <li>complex->[complexFem]</li>
+    <li>complex->[complexNeu]</li>
+    <li>investigation->Untersuchung</li>
+    <li>investigation->Erkundung</li>
+    <li>investigation->Erforschung</li>
+    <li>investigation->Ausgrabung</li>
+    <li>investigation->Hacken</li>
+  </AncientComplex_Mission.questDescriptionAndNameRules.rulesStrings>
+  <!-- EN:
+    <li>questDescription->[asker_nameDef], [asker_faction_leaderTitle] of [asker_faction_name], has discovered an ancient complex a long distance away. [asker_pronoun] believes it contains information about the relic known as [relic_name].\n\n[asker_nameDef] can't spare people to look into it, but hopes you can help by supplying exactly [colonistCount] [colonistsSingularOrPlural] to carry out the investigation.\n\nThe complex contains unknown threats and is also being sought by [asker_nameDef]'s enemies, [enemyFaction_name].\n\n[asker_pronoun] will send a shuttle to pick up your colonists, bring them to the complex, and take them home afterward. They will be fed and tended to en-route.\n\nOnce you have landed, you must hack all terminals in the complex within [timeoutTicks_duration].</li>
+    <li>colonistsSingularOrPlural(colonistCount==1)->colonist</li>
+    <li>colonistsSingularOrPlural(colonistCount>=2)->colonists</li>
+  -->
+  <AncientComplex_Mission.questDescriptionRules.rulesStrings>
+    <li>questDescription->[asker_nameDef], [asker_faction_leaderTitle] der Fraktion [asker_faction_name], hat einen antiken Komplex in der Ferne entdeckt. [asker_pronoun] glaubt, dass der Komplex Informationen über die Reliquie [relic_name] enthält.\n\n[asker_nameDef] kann keine [asker_possessive]er Leute entbehren, um den Komplex zu untersuchen, aber [asker_pronoun] hofft, dass du [ihm] helfen kannst, indem du [ihm] genau [colonistCount] Kolonisten zur Verfügung stellst, [der] die Untersuchung durchführen [soll].\n\nDer Komplex enthält unbekannte Bedrohungen und wird zudem von [asker_nameDef]s Feinden, [enemyFaction_name], durchsucht.\n\n[asker_nameDef] wird ein Shuttle schicken, um deine Kolonisten abzuholen, sie zum Komplex zu bringen und sie danach wieder nach Hause zu bringen. Unterwegs bekommen sie Nahrung und werden medizinisch versorgt.\n\nSobald du gelandet bist, musst du innerhalb von [timeoutTicks_duration] alle Terminals des Komplexes hacken.</li>
+    <li>der(colonistCount==1)->der</li>
+    <li>der(colonistCount>=2)->die</li>
+    <li>soll(colonistCount==1)->soll</li>
+    <li>soll(colonistCount>=2)->sollen</li>
+    <li>ihm(asker_gender!=Female)->ihm</li>
+    <li>ihm(asker_gender==Female)->ihr</li>
+  </AncientComplex_Mission.questDescriptionRules.rulesStrings>
+  <!-- EN:
+    <li>questName->[missionAdj] [complex] [investigation]</li>
+    <li>missionAdj->hidden</li>
+    <li>missionAdj->covert</li>
+    <li>missionAdj->secret</li>
+  -->
+  <AncientComplex_Mission.questNameRules.rulesStrings>
+    <li>questName->[investigation] eines [missionAdj]en [complexMasGen]</li>
+    <li>questName->[investigation] einer [missionAdj]en [complexFemGen]</li>
+    <li>questName->[investigation] eines [missionAdj]en [complexNeuGen]</li>
+    <li>missionAdj->verborgen</li>
+    <li>missionAdj->versteckt</li>
+    <li>missionAdj->geheim</li>
+  </AncientComplex_Mission.questNameRules.rulesStrings>
+  
+</LanguageData>
