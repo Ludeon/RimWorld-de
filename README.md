@@ -24,10 +24,11 @@ Instruction for German Translators
 2. Wiederhole Schritt 1 im Pfad '..\Steam\SteamApps\Common\RimWorld\Data\Royalty\Languages', falls du die Erweiterung 'Royalty' besitzt.
 Wiederhole den Schritt 1 im Pfad '..\Steam\SteamApps\Common\RimWorld\Data\Ideology\Languages', falls du die Erweiterung 'Ideology' besitzt.
 3. Lade dir die aktuellsten Übersetzungsdateien von https://github.com/Ludeon/RimWorld-de herunter (Code -> Download ZIP) und entpacke die heruntergeladene zip-Datei.
-4. Kopiere den Inhalt vom darin enthaltenen Ordner 'Core' in den Windows-Pfad '..\Steam\SteamApps\Common\RimWorld\Data\Core\Languages\German (Deutsch)' (und, falls du eine der Erweiterungen besitzt, auch den Ordner 'Royalty' und/oder 'Ideology' in den entsprechenden Windows-Pfad). Ersetze (falls nötig) alle zuvor in 'German (Deutsch)' enthaltenen Dateien.
+4. Kopiere den Inhalt vom darin enthaltenen Ordner 'Core' in den Windows-Pfad '..\Steam\SteamApps\Common\RimWorld\Data\Core\Languages\German (Deutsch)' (und, falls du eine der Erweiterungen besitzt, auch den Inhalt der Ordner 'Royalty' und/oder 'Ideology' in den entsprechenden Windows-Pfad). Ersetze (falls nötig) alle zuvor in 'German (Deutsch)' enthaltenen Dateien.
 5. Lösche in allen Pfaden jeweils die Datei 'German (Deutsch).tar' (falls noch vorhanden).
 
-Am Ende müssen die Pfade so aussehen: 
+Am Ende müssen die Pfade so aussehen (am Beispiel von 'DefInjected'): 
+
 ..\Steam\steamapps\common\RimWorld\Data\Core\Languages\German (Deutsch)\DefInjected
 ..\Steam\steamapps\common\RimWorld\Data\Royalty\Languages\German (Deutsch)\DefInjected
 ..\Steam\steamapps\common\RimWorld\Data\Ideology\Languages\German (Deutsch)\DefInjected
