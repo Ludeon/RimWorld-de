@@ -20,10 +20,12 @@ If you've done that and want to be named, you're allowed to change the LanguageI
 
 Instruction for German Translators
 ----------------------------------
-1. Erstelle (falls noch nicht vorhanden) einen neuen Ordner namens 'German (Deutsch)' im Windows-Pfad '..\Steam\SteamApps\Common\RimWorld\Data\Core\Languages' (und, falls du die Erweiterung besitzt, auch im Pfad '..\Steam\SteamApps\Common\RimWorld\Data\Royalty\Languages').
-2. Lade dir die aktuellsten Übersetzunsdateien von https://github.com/Ludeon/RimWorld-de herunter (Clone or Download -> Download ZIP) und entpacke die heruntergeladene zip-Datei.
-3. Kopiere den darin enthaltenen Ordner 'Core' in den Windows-Pfad '..\Steam\SteamApps\Common\RimWorld\Data\Core\Languages\German (Deutsch)' (und, falls du die Erweiterung besitzt, auch den Ordner 'Royalty' in den Windows-Pfad '..\Steam\SteamApps\Common\RimWorld\Data\Royalty\Languages\German (Deutsch)'). Ersetze (falls nötig) alle zuvor darin enthaltenen Dateien.
-4. Lösche in beiden Pfaden jeweils die Datei 'German (Deutsch).tar' (falls noch vorhanden).
+1. Erstelle (falls noch nicht vorhanden) einen neuen Ordner namens 'German (Deutsch)' im Windows-Pfad '..\Steam\SteamApps\Common\RimWorld\Data\Core\Languages'.
+2. Wiederhole Schritt 1 im Pfad '..\Steam\SteamApps\Common\RimWorld\Data\Royalty\Languages', falls du die Erweiterung 'Royalty' besitzt.
+Wiederhole den Schritt 1 im Pfad '..\Steam\SteamApps\Common\RimWorld\Data\Ideology\Languages', falls du die Erweiterung 'Ideology' besitzt.
+3. Lade dir die aktuellsten Übersetzungsdateien von https://github.com/Ludeon/RimWorld-de herunter (Code -> Download ZIP) und entpacke die heruntergeladene zip-Datei.
+4. Kopiere den darin enthaltenen Ordner 'Core' in den Windows-Pfad '..\Steam\SteamApps\Common\RimWorld\Data\Core\Languages\German (Deutsch)' (und, falls du eine der Erweiterungen besitzt, auch den Ordner 'Royalty' und/oder 'Ideology' in den entsprechenden Windows-Pfad). Ersetze (falls nötig) alle zuvor in 'German (Deutsch)' enthaltenen Dateien.
+5. Lösche in allen Pfaden jeweils die Datei 'German (Deutsch).tar' (falls noch vorhanden).
 
 Grammar Resolving vs update-wordinfo.yml
 ----------------------------------------
