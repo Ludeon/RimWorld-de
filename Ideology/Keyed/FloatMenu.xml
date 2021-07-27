@@ -58,8 +58,14 @@
   <MaxPreceptCount>max {0}</MaxPreceptCount>
   <!-- EN: Set gender -->
   <SetTargetGender>Setze Geschlecht auf</SetTargetGender>
-  <!-- EN: incompatible -->
-  <FactionOrIdeoIncompatible>inkompatibel</FactionOrIdeoIncompatible>
+  <!-- EN: must be {0} faction -->
+  <RoleApparelRequirementIncompatibleFaction>{replace: {0}; "ein "-""}</RoleApparelRequirementIncompatibleFaction>
+  <!-- EN: tribal -->
+  <RoleApparelRequirementIncompatibleFaction_Allowed_Tribal>muss eine Stammesfraktion sein</RoleApparelRequirementIncompatibleFaction_Allowed_Tribal>
+  <!-- EN: non-tribal -->
+  <RoleApparelRequirementIncompatibleFaction_Disallowed_Tribal>darf keine Stammesfraktion sein</RoleApparelRequirementIncompatibleFaction_Disallowed_Tribal>
+  <!-- EN: requires any of these memes -->
+  <RoleApparelRequirementIncompatibleAnyMemeRequired>erfordert eine der Glaubensgrundlagen</RoleApparelRequirementIncompatibleAnyMemeRequired>
   <!-- EN: cannot be worn with assigned apparel -->
   <BodyPartAlreadyCovered>bereits belegt</BodyPartAlreadyCovered>
   <!-- EN: already assigned -->
@@ -126,6 +132,8 @@
   <EnterBiosculpterPod>Betritt Bioformerkapsel</EnterBiosculpterPod>
   <!-- EN: Biotuned to someone else. -->
   <BiosculpterBiotunedToAnother>Biologisch auf jemand anderen abgestimmt.</BiosculpterBiotunedToAnother>
+  <!-- EN: Must be {0} years old for age reversal. -->
+  <UnderMinBiosculpterAgeReversalAge>Muss für die Altersumkehr min. {0} Jahre alt sein.</UnderMinBiosculpterAgeReversalAge>
   <!-- EN: Carry {PAWN_label} to biosculpter pod ({CYCLE}) -->
   <CarryToBiosculpterPod>Trage {PAWN_label} zur Bioformerkapsel ({CYCLE})</CarryToBiosculpterPod>
   <!-- EN: Cannot carry to biosculpter pod -->
