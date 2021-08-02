@@ -223,23 +223,23 @@
   <QuestPartMoodBelowThresholdDesc>Die Quest '{0}' erfordert, dass du folgende Personen bei guter Laune hältst. Ihre Laune ist jedoch miserabel. Ergreife Maßnahmen, um ihre Laune zu heben:\n\n{1}</QuestPartMoodBelowThresholdDesc>
   
   <!-- EN: Shuttle leaving in {0} -->
-  <QuestPartShuttleLeaveDelay>Shuttle verlässt uns in {0}</QuestPartShuttleLeaveDelay>
+  <QuestPartShuttleLeaveDelay>Shuttle verlässt uns in {replace: {0}; "Tage"-"Tagen"; "Jahre"-"Jahren"}</QuestPartShuttleLeaveDelay>
   <!-- EN: The shuttle will leave in {1}. The quest {0} requires you to load the following people or items onto the shuttle before it leaves:\n\n{2} -->
-  <QuestPartShuttleLeaveDelayDesc>Das Shuttle verlässt uns in {1}. Die Quest '{0}' erfordert, dass du folgende Personen oder Waren auf das Shuttle lädst, bevor es wegfliegt:\n\n{2}</QuestPartShuttleLeaveDelayDesc>
+  <QuestPartShuttleLeaveDelayDesc>Das Shuttle verlässt uns in {replace: {1}; "Tage"-"Tagen"; "Jahre"-"Jahren"}. Die Quest '{0}' erfordert, dass du folgende Personen oder Waren auf das Shuttle lädst, bevor es wegfliegt:\n\n{2}</QuestPartShuttleLeaveDelayDesc>
   <!-- EN: The shuttle will leave in {0}. -->
-  <QuestPartShuttleLeaveDelayDescHidden>Das Shuttle verlässt uns in {0}.</QuestPartShuttleLeaveDelayDescHidden>
+  <QuestPartShuttleLeaveDelayDescHidden>Das Shuttle verlässt uns in {replace: {0}; "Tage"-"Tagen"; "Jahre"-"Jahren"}.</QuestPartShuttleLeaveDelayDescHidden>
 
   <!-- EN: Shuttle arriving in {0} -->
-  <QuestPartShuttleArriveDelay>Shuttle trifft in {0} ein</QuestPartShuttleArriveDelay>
+  <QuestPartShuttleArriveDelay>Shuttle trifft in {replace: {0}; "Tage"-"Tagen"; "Jahre"-"Jahren"} ein</QuestPartShuttleArriveDelay>
   <!-- EN: A shuttle will arrive in {1}. The quest {0} requires you to load the following people or items onto the shuttle before it leaves:\n\n{2} -->
-  <QuestPartShuttleArriveDelayDesc>Ein Shuttle wird in {1} eintreffen. Die Quest '{0}' erfordert, dass du folgende Personen oder Waren auf das Shuttle lädst, bevor es wegfliegt:\n\n{2}</QuestPartShuttleArriveDelayDesc>
+  <QuestPartShuttleArriveDelayDesc>Ein Shuttle wird in {replace: {1}; "Tage"-"Tagen"; "Jahre"-"Jahren"} eintreffen. Die Quest '{0}' erfordert, dass du folgende Personen oder Waren auf das Shuttle lädst, bevor es wegfliegt:\n\n{2}</QuestPartShuttleArriveDelayDesc>
   <!-- EN: A shuttle will arrive in {0}. -->
-  <QuestPartShuttleArriveDelayDescHidden>Ein Shuttle wird in {0} eintreffen.</QuestPartShuttleArriveDelayDescHidden>
+  <QuestPartShuttleArriveDelayDescHidden>Ein Shuttle wird in {replace: {0}; "Tage"-"Tagen"; "Jahre"-"Jahren"} eintreffen.</QuestPartShuttleArriveDelayDescHidden>
 
   <!-- EN: Monument will be destroyed -->
   <DisallowedBuildingInsideMonument>Denkmal wird zerstört</DisallowedBuildingInsideMonument>
   <!-- EN: You've built a disallowed building inside one of your monuments. The monument will be considered destroyed in {0}. -->
-  <DisallowedBuildingInsideMonumentDesc>Du hast in einem deiner Denkmäler ein verbotenes Bauwerk gebaut. In {0} wird das Denkmal so behandelt, als wäre es zerstört worden.</DisallowedBuildingInsideMonumentDesc>
+  <DisallowedBuildingInsideMonumentDesc>Du hast in einem deiner Denkmäler ein verbotenes Bauwerk gebaut. In {replace: {0}; "Tage"-"Tagen"; "Jahre"-"Jahren"} wird das Denkmal so behandelt, als wäre es zerstört worden.</DisallowedBuildingInsideMonumentDesc>
 
   <!-- EN: Countdown activator {0} -->
   <ActivatorCountdown>Countdown-Aktivator {0}</ActivatorCountdown>
@@ -251,9 +251,9 @@
   <ActivatorCountdownDescMultiple>{0} Countdown-Aktivatoren ticken herunter und bereiten sich darauf vor, nahegelegene Mechanoiden zu erwecken.</ActivatorCountdownDescMultiple>
 
   <!-- EN: Quest expires in {0} -->
-  <QuestExpiresSoon>Quest läuft in {0} ab</QuestExpiresSoon>
+  <QuestExpiresSoon>Quest läuft in {replace: {0}; "Tage"-"Tagen"; "Jahre"-"Jahren"} ab</QuestExpiresSoon>
   <!-- EN: The quest '{0}' will expire in {1}. -->
-  <QuestExpiresSoonDesc>Die Quest '{0}' wird in {1} ablaufen.</QuestExpiresSoonDesc>
+  <QuestExpiresSoonDesc>Die Quest '{0}' wird in {replace: {1}; "Tage"-"Tagen"; "Jahre"-"Jahren"} ablaufen.</QuestExpiresSoonDesc>
 
   <!-- EN: Animal filth -->
   <AlertAnimalFilth>Tierschmutz</AlertAnimalFilth>
@@ -289,11 +289,11 @@
   <AlertPennedAnimalHungryDesc>Einige der eingepferchten Tiere sind hungrig.\n\nWähle eine Gehegemarkierung aus und klicke auf den Tab 'Futter', um weitere Details zu sehen.\n\nGrasfressende Tiere benötigen eventuell ein größeres Gehege, um genügend Gras zu finden. Andere Tiere müssen eventuell mit Heu oder ähnlichem via Lagerplatz versorgt werden.\n\nFolgende eingepferchte Tiere sind hungrig:\n\n{0}</AlertPennedAnimalHungryDesc>
 
   <!-- EN: Raids arriving in {0} -->
-  <AlertTimedRaidsArrivingIn>Überfälle starten in {0}</AlertTimedRaidsArrivingIn>
+  <AlertTimedRaidsArrivingIn>Überfälle starten in {replace: {0}; "Tage"-"Tagen"; "Jahre"-"Jahren"}</AlertTimedRaidsArrivingIn>
   <!-- EN: Enemies have been attracted to the following sites and will start arriving in force soon.\n\n{0} -->
   <AlertTimedRaidsArrivingInDesc>Feinde wurden von den folgenden Orten angelockt und werden bald in Massen eintreffen.\n\n{0}</AlertTimedRaidsArrivingInDesc>
   <!-- EN: Arriving at {0} in {1} -->
-  <AlertTimedRaidsArrivingAt>Ankunft bei {0} in {1}</AlertTimedRaidsArrivingAt>
+  <AlertTimedRaidsArrivingAt>Ankunft bei {0} in {replace: {1}; "Tage"-"Tagen"; "Jahre"-"Jahren"}</AlertTimedRaidsArrivingAt>
 
   <!-- EN: Faction will become hostile if you stay -->
   <FactionWillBecomeHostileIfNotLeavingWithin>Fraktion wird feindlich, wenn du bleibst</FactionWillBecomeHostileIfNotLeavingWithin>

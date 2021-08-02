@@ -66,7 +66,7 @@
     <li>lodgersLabelSingularOrPlural(lodgerCount==1)->[lodgersLabel]</li>
     <li>lodgersLabelSingularOrPlural(lodgerCount>=2)->[lodgersLabelPlural]</li>
     <li>lodgersArriveLetterLabel->[lodgersLabelSingularOrPlural] eingetroffen</li>
-    <li>lodgersArriveLetterText->[lodgersSingularOrPluralDef] [areIs] eingetroffen. [lodgersPronoun] [wirdWerden] über einen Zeitraum von [questDurationTicks_duration] bei dir bleiben, um sich auszuruhen und neu zu gruppieren.</li>
+    <li>lodgersArriveLetterText->[lodgersSingularOrPluralDef] [areIs] eingetroffen. [lodgersPronoun] [wirdWerden] für [questDurationTicks_duration] bei dir bleiben, um sich auszuruhen und neu zu gruppieren.</li>
     <li>hasHave(lodgerCount==1)->hat</li>
     <li>hasHave(lodgerCount>=2)->haben</li>
     <li>wirdWerden(lodgerCount==1)->wird</li>
@@ -121,7 +121,7 @@
     <li>otherMembers(lodgerCount>=2)->und alle anderen Mitglieder der Fraktion [faction_name]</li>
     <li>lodgersLeavingLetterLabel(lodgerCount==1)->[lodgersLabelSingularOrPlural] verlässt das Gebiet</li>
     <li>lodgersLeavingLetterLabel(lodgerCount>=2)->[lodgersLabelSingularOrPlural] verlassen das Gebiet</li>
-    <li>lodgersLeavingLetterText->{FACTION_leaderNameDef} dankt dir, dass {FACTION_leaderPronoun} über einen Zeitraum von [questDurationTicks_duration] in [map_definite] bleiben durfte. {FACTION_leaderPronoun} zieht nun mit {FACTION_leaderPossessive}en Leuten weiter.\n\n{FACTION_leaderNameDef} sagt, dass {FACTION_leaderPronoun} nicht vergessen wird, was du getan hast.</li>
+    <li>lodgersLeavingLetterText->{FACTION_leaderNameDef} dankt dir, dass {FACTION_leaderPronoun} für [questDurationTicks_duration] in [map_definite] bleiben durfte. {FACTION_leaderPronoun} zieht nun mit {FACTION_leaderPossessive}en Leuten weiter.\n\n{FACTION_leaderNameDef} sagt, dass {FACTION_leaderPronoun} nicht vergessen wird, was du getan hast.</li>
   </Hospitality_Refugee.questContentRules.rulesStrings>
   <!-- EN:
     <li>lodgersLabel->refugee</li>
@@ -184,7 +184,7 @@
     <li>belohnt(lodgerCount>=2)->belohnen</li>
     <li>der(asker_gender!=Female)->der</li>
     <li>der(asker_gender==Female)->die</li>
-    <li>questDescription->[approachInfo] [claimInfo] [asker_nameDef] bittet dich um Erlaubnis, über einen Zeitraum von [questDurationTicks_duration] in [map_definite] zu bleiben, um sich auszuruhen und neu zu gruppieren.\n\nIm Gegenzug [offer] [lodgersPronoun] an, während dieser Zeit kostenlos zu arbeiten und zu kämpfen.\n\n[joinInfo] Vielleicht [belohnt] [lodgersPronoun] dich später auch dafür, dass du [lodgersObjectiveDat] geholfen hast - aber [lodgersPossessive]e wahren Absichten sind nicht bekannt.\n\n[travelerInfo] keiner Fraktion an. Wenn du möchtest, kannst du [lodgersObjectiveAcc] töten, inhaftieren, verkaufen oder [lodgersPossessive]e Organe entnehmen, ohne diplomatische Konsequenzen befürchten zu müssen.</li>
+    <li>questDescription->[approachInfo] [claimInfo] [asker_nameDef] bittet dich um Erlaubnis, für [questDurationTicks_duration] in [map_definite] zu bleiben, um sich auszuruhen und neu zu gruppieren.\n\nIm Gegenzug [offer] [lodgersPronoun] an, während dieser Zeit kostenlos zu arbeiten und zu kämpfen.\n\n[joinInfo] Vielleicht [belohnt] [lodgersPronoun] dich später auch dafür, dass du [lodgersObjectiveDat] geholfen hast - aber [lodgersPossessive]e wahren Absichten sind nicht bekannt.\n\n[travelerInfo] keiner Fraktion an. Wenn du möchtest, kannst du [lodgersObjectiveAcc] töten, inhaftieren, verkaufen oder [lodgersPossessive]e Organe entnehmen, ohne diplomatische Konsequenzen befürchten zu müssen.</li>
     <li>approachInfo(lodgerCount==1)->Ein verzweifelter [faction_pawnSingular] namens [asker_nameDef] nähert sich.</li>
     <li>approachInfo(lodgerCount==2)->[asker_nameDef] und ein anderer verzweifelter [faction_pawnSingular] nähern sich.</li>
     <li>approachInfo(lodgerCount>=3)->[lodgerCount] verzweifelte [faction_pawnsPlural] nähern sich. Ihr Anführer heißt [asker_nameDef].</li>

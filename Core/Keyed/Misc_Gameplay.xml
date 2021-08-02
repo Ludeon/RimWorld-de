@@ -31,7 +31,7 @@
   <!-- EN: Unowned -->
   <Unowned>Frei</Unowned>
   <!-- EN: Dead for {0} -->
-  <DeadTime>Tot seit {0}</DeadTime>
+  <DeadTime>Tot seit {replace: {0}; "Tage"-"Tagen"; "Jahre"-"Jahren"}</DeadTime>
   <!-- EN: walk speed {0} -->
   <WalkSpeed>Laufgeschwindigkeit {0}</WalkSpeed>
   <!-- EN: fert. -->
@@ -57,9 +57,9 @@
   <!-- EN: Can tend now -->
   <CanTendNow>Kann jetzt behandelt werden</CanTendNow>
   <!-- EN: Tending expires in {0} -->
-  <TreatmentExpiresIn>Behandlung erlischt in {0}</TreatmentExpiresIn>
+  <TreatmentExpiresIn>Behandlung erlischt in {replace: {0}; "Tage"-"Tagen"; "Jahre"-"Jahren"}</TreatmentExpiresIn>
   <!-- EN: Can be tended in {0} -->
-  <NextTendIn>Nächste Behandlung in {0}</NextTendIn>
+  <NextTendIn>Nächste Behandlung in {replace: {0}; "Tage"-"Tagen"; "Jahre"-"Jahren"}</NextTendIn>
   <!-- EN: Tend quality -->
   <TendQuality>Behandlungsqualität</TendQuality>
   <!-- EN: no {0} -->
@@ -257,9 +257,9 @@
   <!-- EN: Map -->
   <Map>Karte</Map>
   <!-- EN: {0} until enemies arrive -->
-  <CaravanDetectedRaidCountdown>Ankunft von Feinden in {0}</CaravanDetectedRaidCountdown>
+  <CaravanDetectedRaidCountdown>{0} bis Feinde kommen</CaravanDetectedRaidCountdown>
   <!-- EN: Enemy reinforcements will arrive in this area in {0}. -->
-  <CaravanDetectedRaidCountdownTip>Feindliche Verstärkungen werden in {0} in diesem Gebiet eintreffen.</CaravanDetectedRaidCountdownTip>
+  <CaravanDetectedRaidCountdownTip>Feindliche Verstärkungen werden in {replace: {0}; "Tage"-"Tagen"; "Jahre"-"Jahren"} in diesem Gebiet eintreffen.</CaravanDetectedRaidCountdownTip>
   <!-- EN: Room -->
   <Room>Raum</Room>
   <!-- EN: Beauty here -->
@@ -301,13 +301,13 @@
   <!-- EN: {0} wants this destroyed. -->
   <QuestTargetDestroyInspectStringShort>{0} will, dass dies zerstört wird.</QuestTargetDestroyInspectStringShort>
   <!-- EN: Departing on shuttle in {0} -->
-  <ShuttleDelayInspectString>Abreise mit dem Shuttle in {0}</ShuttleDelayInspectString>
+  <ShuttleDelayInspectString>Abreise mit dem Shuttle in {replace: {0}; "Tage"-"Tagen"; "Jahre"-"Jahren"}</ShuttleDelayInspectString>
   <!-- EN: Departing in {0} -->
-  <ShuttleLeaveDelayInspectString>Abreise in {0}</ShuttleLeaveDelayInspectString>
+  <ShuttleLeaveDelayInspectString>Abreise in {replace: {0}; "Tage"-"Tagen"; "Jahre"-"Jahren"}</ShuttleLeaveDelayInspectString>
   <!-- EN: Should depart on shuttle -->
   <ShouldDepartOnShuttleInspectString>Muss per Shuttle abreisen</ShouldDepartOnShuttleInspectString>
   <!-- EN: Time left: {0} -->
-  <WorldObjectTimeout>Verschwindet in: {0}</WorldObjectTimeout>
+  <WorldObjectTimeout>Verbleibende Zeit: {0}</WorldObjectTimeout>
   <!-- EN: Click to sort by this column. -->
   <ClickToSortByThisColumn>Klicke, um nach dieser Spalte zu sortieren.</ClickToSortByThisColumn>
   <!-- EN: Shift + click: Increase priority\nShift + right click: Decrease priority -->
@@ -385,7 +385,7 @@
   <!-- EN: {0} with {1} -->
   <ProximitySingleGoodwillChange>{0} mit {1}</ProximitySingleGoodwillChange>
   <!-- EN: Too dangerous to re-enter for {0}. -->
-  <EnterCooldown>Zu gefährlich. Kann erst in {0} wieder betreten werden.</EnterCooldown>
+  <EnterCooldown>Zu gefährlich. Kann erst in {replace: {0}; "Tage"-"Tagen"; "Jahre"-"Jahren"} wieder betreten werden.</EnterCooldown>
   <!-- EN: Caravan -->
   <Caravan>Karawane</Caravan>
   <!-- EN: there may be danger there. -->
@@ -445,9 +445,9 @@
   <!-- EN: Mech cluster -->
   <MechCluster>Mech-Cluster</MechCluster>
   <!-- EN: Spawning in {0} -->
-  <SpawningNextPawnIn>Spawnt in {0}</SpawningNextPawnIn>
+  <SpawningNextPawnIn>Spawnt in {replace: {0}; "Tage"-"Tagen"; "Jahre"-"Jahren"}</SpawningNextPawnIn>
   <!-- EN: {0} assembly completes in {1}. -->
-  <MechAssemblyCompleteIn>Zusammenbau von {0} in {1} fertiggestellt.</MechAssemblyCompleteIn>
+  <MechAssemblyCompleteIn>Zusammenbau von {0} in {replace: {1}; "Tage"-"Tagen"; "Jahre"-"Jahren"} fertiggestellt.</MechAssemblyCompleteIn>
   <!-- EN: Will assemble -->
   <MechAssemblyNextType>Wird zusammenbauen</MechAssemblyNextType>
   <!-- EN: produced -->
@@ -457,7 +457,7 @@
   <!-- EN: {0} killed -->
   <PawnsKilled>{0} getötet</PawnsKilled>
   <!-- EN: Sent {0}, will return in {1} -->
-  <PawnsLent>{0} entsandt, noch {1} bis zur Rückkehr</PawnsLent>
+  <PawnsLent>{0} entsandt, Rückkehr in {replace: {1}; "Tage"-"Tagen"; "Jahre"-"Jahren"}</PawnsLent>
   <!-- EN: Dormant -->
   <DormantCompInactive>Ruhend</DormantCompInactive>
   <!-- EN: Sealed -->
@@ -469,7 +469,7 @@
   <!-- EN: Initiates in -->
   <InitiatesIn>Beginnt in</InitiatesIn>
   <!-- EN: Activates in {0} -->
-  <SendSignalOnCountdownCompTime>Aktiviert sich in {0}</SendSignalOnCountdownCompTime>
+  <SendSignalOnCountdownCompTime>Aktiviert sich in {replace: {0}; "Tage"-"Tagen"; "Jahre"-"Jahren"}</SendSignalOnCountdownCompTime>
   <!-- EN: Neural heat -->
   <PsychicEntropy>Neuralhitze</PsychicEntropy>
   <!-- EN: Heat -->
@@ -481,7 +481,7 @@
   <!-- EN: low psyfocus -->
   <LowPsyfocus>wenig Psyfokus</LowPsyfocus>
   <!-- EN: {0} left -->
-  <DurationLeft>läuft in {0} ab</DurationLeft>
+  <DurationLeft>noch {0}</DurationLeft>
   <!-- EN: Any of -->
   <AnyOf>Beliebige Ressource aus</AnyOf>
   <!-- EN: Requires {0} trait -->
@@ -541,7 +541,7 @@
   <!-- EN: Fermented -->
   <Fermented>Gegoren</Fermented>
   <!-- EN: Progress: {0} ({1} left) -->
-  <FermentationProgress>Fortschritt: {0} (in {1} abgeschlossen).</FermentationProgress>
+  <FermentationProgress>Fortschritt: {0} (noch {1}).</FermentationProgress>
   <!-- EN: Non-ideal temperature. Fermentation speed: {0} -->
   <FermentationBarrelOutOfIdealTemperature>Ungünstige Temperatur. Gärungsgeschwindigkeit: {0}</FermentationBarrelOutOfIdealTemperature>
 
@@ -786,13 +786,13 @@
 
   <!-- Thoughts -->
   <!-- EN: Expires in: {0} -->
-  <ThoughtExpiresIn>Läuft in {0} ab</ThoughtExpiresIn>
+  <ThoughtExpiresIn>Läuft in {replace: {0}; "Tage"-"Tagen"; "Jahre"-"Jahren"} ab</ThoughtExpiresIn>
   <!-- EN: thought disabled by -->
   <ThoughtNullifiedBy>blockiert durch</ThoughtNullifiedBy>
   <!-- EN: Starts expiring in: {0} -->
-  <ThoughtStartsExpiringIn>Beginnt in {0} abzulaufen</ThoughtStartsExpiringIn>
+  <ThoughtStartsExpiringIn>Beginnt in {replace: {0}; "Tage"-"Tagen"; "Jahre"-"Jahren"} abzulaufen</ThoughtStartsExpiringIn>
   <!-- EN: Finishes expiring in: {0} -->
-  <ThoughtFinishesExpiringIn>Läuft nach spätestens {0} ab</ThoughtFinishesExpiringIn>
+  <ThoughtFinishesExpiringIn>Läuft nach spätestens {replace: {0}; "Tage"-"Tagen"; "Jahre"-"Jahren"} ab</ThoughtFinishesExpiringIn>
   <!-- EN: Extreme break threshold -->
   <MentalBreakThresholdExtreme>Extremer Zusammenbruch bei</MentalBreakThresholdExtreme>
   <!-- EN: Major break threshold -->
@@ -906,9 +906,9 @@
   <!-- EN: Frozen (won't spoil) -->
   <CurrentlyFrozen>Tiefgekühlt (verdirbt nicht)</CurrentlyFrozen>
   <!-- EN: Refrigerated (spoils in {0}) -->
-  <CurrentlyRefrigerated>Gekühlt (verdirbt in {0})</CurrentlyRefrigerated>
+  <CurrentlyRefrigerated>Gekühlt (verdirbt in {replace: {0}; "Tage"-"Tagen"; "Jahre"-"Jahren"})</CurrentlyRefrigerated>
   <!-- EN: Not refrigerated (spoils in {0}) -->
-  <NotRefrigerated>Ungekühlt (verdirbt in {0})</NotRefrigerated>
+  <NotRefrigerated>Ungekühlt (verdirbt in {replace: {0}; "Tage"-"Tagen"; "Jahre"-"Jahren"})</NotRefrigerated>
   <!-- EN: over a decade -->
   <OverADecade>über ein Jahrzehnt</OverADecade>
   <!-- EN: less than a day -->
@@ -934,7 +934,7 @@
   <!-- EN: Growth rate -->
   <GrowthRate>Wachstumsrate</GrowthRate>
   <!-- EN: Fully grown in {0} of growth. -->
-  <FullyGrownIn>Ist in {0} ausgewachsen.</FullyGrownIn>
+  <FullyGrownIn>Ist in {replace: {0}; "Tage"-"Tagen"; "Jahre"-"Jahren"} ausgewachsen.</FullyGrownIn>
   <!-- EN: Needs light level -->
   <PlantNeedsLightLevel>Benötigte Lichtstärke</PlantNeedsLightLevel>
   <!-- EN: Resting -->
@@ -1042,7 +1042,7 @@
   <!-- EN: Special conditions affecting the area right now. -->
   <GameConditionsTip>Spezielle Umstände beeinflussen gerade die Umgebung.</GameConditionsTip>
   <!-- EN: time left -->
-  <TimeLeft>Geschieht in</TimeLeft>
+  <TimeLeft>verbleibende Zeit</TimeLeft>
   <!-- EN: impact date -->
   <ImpactDate>Einschlagsdatum</ImpactDate>
   <!-- EN: Source unknown. -->
@@ -1483,7 +1483,7 @@
   <!-- EN: {0} has been completed. -->
   <RitualFinished>{0} wurde abgeschlossen.</RitualFinished>
   <!-- EN: ends in {0} -->
-  <RitualEndsIn>endet in {0}</RitualEndsIn>
+  <RitualEndsIn>endet in {replace: {0}; "Tage"-"Tagen"; "Jahre"-"Jahren"}</RitualEndsIn>
   <!-- EN: Organizers -->
   <Organizers>Organisatoren</Organizers>
   <!-- EN: Quality factors -->
@@ -1542,7 +1542,7 @@
   <!-- EN: {0} (out of {1}) -->
   <QualityOutOf>{0} (von {1})</QualityOutOf>
   <!-- EN: {0} is a date-specific ritual. You'll be able to start it in {1}, on the {2}. -->
-  <DateRitualNoObligation>{0} ist ein Ritual, das an einem bestimmten Datum stattfindet. Du kannst es in {1} starten, am {2}.</DateRitualNoObligation>
+  <DateRitualNoObligation>{0} ist ein Ritual, das an einem bestimmten Datum stattfindet. Du kannst es in {replace: {1}; "Tage"-"Tagen"; "Jahre"-"Jahren"} starten, am {2}.</DateRitualNoObligation>
 
   <!-- EN: Replace with -->
   <PreceptReplaceWith>Ersetze mit</PreceptReplaceWith>

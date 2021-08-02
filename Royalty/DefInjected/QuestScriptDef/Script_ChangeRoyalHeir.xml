@@ -5,7 +5,7 @@
     <li>questDescription->\nIn order to consecrate making [titleHeir_nameFull] the heir of [titleHolder_nameFull]'s title, you must build a monument.\n\nThe monument will be [monumentSize] in size and will require these resources (total value [monumentRequiredResourcesMarketValue_money]):\n\n[monumentRequiredResources]\n\nFailing to finish the monument within 20 days is considered to profane the ritual. Your relations with [asker_factionName] will fall by 25, and the heir will not be changed.\n\nIf the monument is destroyed within [keepMonumentTicks_duration] days after completion, your relations with [asker_factionName] will fall by [goodwillChangeIfMonumentDestroyed].</li>
   -->
   <ChangeRoyalHeir.questDescriptionRules.rulesStrings>
-    <li>questDescription->\nUm abzusegnen, dass [titleHeir_nameFull] der Erbe von [titleHolder_nameFull]s Titel wird, musst du ein Denkmal errichten.\n\nDas Denkmal wird eine Größe von [monumentSize] haben und wird die folgenden Ressourcen benötigen (Gesamtwert [monumentRequiredResourcesMarketValue_money]):\n\n[monumentRequiredResources]\n\nSollte es dir nicht gelingen, das Denkmal innerhalb von 20 Tagen zu errichten, wird dies als Entweihung des Rituals angesehen. Dein Ruf bei der Fraktion [asker_factionName] wird sich um 25 Punkte verschlechtern, und die Erbschaft bleibt unverändert.\n\nWenn das Denkmal nach dessen Fertigstellung innerhalb von [keepMonumentTicks_duration] zerstört wird, verschlechtert sich dein Ruf bei der Fraktion [asker_factionName] um [goodwillChangeIfMonumentDestroyed] Punkte.</li>
+    <li>questDescription->\nUm abzusegnen, dass [titleHeir_nameFull] der Erbe von [titleHolder_nameFull]s Titel wird, musst du ein Denkmal errichten.\n\nDas Denkmal wird eine Größe von [monumentSize] haben und wird die folgenden Ressourcen benötigen (Gesamtwert [monumentRequiredResourcesMarketValue_money]):\n\n[monumentRequiredResources]\n\nSollte es dir nicht gelingen, das Denkmal innerhalb von 20 Tagen zu errichten, wird dies als Entweihung des Rituals angesehen. Dein Ruf bei der Fraktion [asker_factionName] wird sich um 25 Punkte verschlechtern, und die Erbschaft bleibt unverändert.\n\nNach der Fertigstellung des Denkmals musst du [keepMonumentTicks_duration] lang darauf achten, dass es nicht zerstört wird, sonst verschlechtert sich dein Ruf bei der Fraktion [asker_factionName] um [goodwillChangeIfMonumentDestroyed] Punkte.</li>
   </ChangeRoyalHeir.questDescriptionRules.rulesStrings>
   <!-- EN:
     <li>questName->[titleHeir_nameDef]'s inheritance</li>
@@ -36,10 +36,10 @@
   <!-- EN: [titleHeir_nameDef] is the new heir of [titleHolder_nameDef]. -->
   <ChangeRoyalHeir.LetterTextNewHeir.slateRef>[titleHeir_nameDef] ist der neue Erbe von [titleHolder_nameDef].</ChangeRoyalHeir.LetterTextNewHeir.slateRef>
   <!-- EN: Do not destroy the monument for {0} -->
-  <ChangeRoyalHeir.DontDestroyMonumentForDays.slateRef>Du darfst das Denkmal in den nächsten {0} nicht zerstören</ChangeRoyalHeir.DontDestroyMonumentForDays.slateRef>
+  <ChangeRoyalHeir.DontDestroyMonumentForDays.slateRef>Du darfst das Denkmal in den nächsten {replace: {0}; "Tage"-"Tagen"; "Jahre"-"Jahren"} nicht zerstören</ChangeRoyalHeir.DontDestroyMonumentForDays.slateRef>
   <!-- EN: Do not destroy the monument for {0} -->
-  <ChangeRoyalHeir.DontDestroyMonumentForDaysTip.slateRef>Du darfst das Denkmal in den nächsten {0} nicht zerstören</ChangeRoyalHeir.DontDestroyMonumentForDaysTip.slateRef>
+  <ChangeRoyalHeir.DontDestroyMonumentForDaysTip.slateRef>Du darfst das Denkmal in den nächsten {replace: {0}; "Tage"-"Tagen"; "Jahre"-"Jahren"} nicht zerstören</ChangeRoyalHeir.DontDestroyMonumentForDaysTip.slateRef>
   <!-- EN: Keep monument {0} -->
-  <ChangeRoyalHeir.KeepMonument.slateRef>Erhalte das Denkmal über einen Zeitraum von {0}</ChangeRoyalHeir.KeepMonument.slateRef>
+  <ChangeRoyalHeir.KeepMonument.slateRef>Erhalte das Denkmal für {0}</ChangeRoyalHeir.KeepMonument.slateRef>
   
 </LanguageData>

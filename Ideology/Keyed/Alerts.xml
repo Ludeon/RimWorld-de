@@ -55,9 +55,9 @@
   <IdeoBuildingDisrespectedDesc>{0} erwartet, dass {1} in einem würdevollen Raum ist. Der Raum muss folgende Voraussetzungen erfüllen:\n{2}\n\nWenn die Voraussetzungen nicht erfüllt sind, werden folgende Gläubige unglücklich:\n{3}</IdeoBuildingDisrespectedDesc>
   
   <!-- EN: Raids arriving in {0} -->
-  <QuestPartRaidsDelay>Überfälle starten in {0}</QuestPartRaidsDelay>
+  <QuestPartRaidsDelay>Überfälle starten in {replace: {0}; "Tage"-"Tagen"; "Jahre"-"Jahren"}</QuestPartRaidsDelay>
   <!-- EN: Raids will start arriving in {0}.\n\nThe raiders will target the spacedrone and attempt to destroy it. Protect the spacedrone so your colonists can hack its computer and retrieve the data. -->
-  <QuestPartRaidsDelayDesc>Überfälle werden in {0} starten.\n\nDie Angreifer werden versuchen, die Weltraumdrohne zu zerstören. Verteidige die Drohne, damit deine Kolonisten den Computer hacken und die Daten abrufen können.</QuestPartRaidsDelayDesc>
+  <QuestPartRaidsDelayDesc>Überfälle werden in {replace: {0}; "Tage"-"Tagen"; "Jahre"-"Jahren"} starten.\n\nDie Angreifer werden versuchen, die Weltraumdrohne zu zerstören. Verteidige die Drohne, damit deine Kolonisten den Computer hacken und die Daten abrufen können.</QuestPartRaidsDelayDesc>
 
   <!-- EN: {0} role unfilled -->
   <IdeoRoleEmpty>Rolle unbesetzt: {0}</IdeoRoleEmpty>
@@ -67,9 +67,9 @@
   <IdeoRolesEmptyDesc>Die folgenden Rollen sind nicht besetzt:\n{0}\n\nDu kannst die Rollen im Sozial-Tab der jeweiligen Person zuweisen.\n\nWenn diese Rollen unbesetzt bleiben, werden folgende Leute unzufrieden</IdeoRolesEmptyDesc>
 
   <!-- EN: Security threats activated in {0} -->
-  <AncientAltarThreatsWaking>Sicherheitssysteme werden in {0} aktiviert</AncientAltarThreatsWaking>
+  <AncientAltarThreatsWaking>Sicherheitssysteme werden in {replace: {0}; "Tage"-"Tagen"; "Jahre"-"Jahren"} aktiviert</AncientAltarThreatsWaking>
   <!-- EN: Security threats will activate in {0}. They will attack any who may threaten the relic. -->
-  <AncientAltarThreatsWakingDesc>Sicherheitssysteme werden in {0} aktiviert. Sie werden jeden angreifen, der eine Gefahr für die Reliquie darstellt.</AncientAltarThreatsWakingDesc>
+  <AncientAltarThreatsWakingDesc>Sicherheitssysteme werden in {replace: {0}; "Tage"-"Tagen"; "Jahre"-"Jahren"} aktiviert. Sie werden jeden angreifen, der eine Gefahr für die Reliquie darstellt.</AncientAltarThreatsWakingDesc>
 
   <!-- EN: No recent slaughter -->
   <AlertNoRecentSlaughter>Letzte Schlachtung ewig her</AlertNoRecentSlaughter>
@@ -87,20 +87,20 @@
   <!-- EN: Opportunities expire after {0} days, and reoccur on the same day each year. -->
   <AlertRitualComingExtra>Datumsspezifische Rituale können mit einer Verspätung von maximal {0} Tagen durchgeführt werden, danach verfällt die Möglichkeit. Solche Rituale finden jedes Jahr am gleichen Tag statt.</AlertRitualComingExtra>
   <!-- EN: {0} on {1}, {2} left -->
-  <AlertRitualComingEntry>{0} am {1}, {2} verbleibend</AlertRitualComingEntry>
+  <AlertRitualComingEntry>{0} am {1}, noch {2}</AlertRitualComingEntry>
 
   <!-- EN: Age reversal demanded -->
   <AlertAgeReversalDemandNear>Altersumkehr verlangt</AlertAgeReversalDemandNear>
   <!-- EN: Because of their beliefs, some of your colonists demand regular age reversal treatments in a biosculpter pod. If they don't get the treatments, they will be displeased.\n\nThe following people demand age reversal treatment -->
   <AlertAgeReversalDemandDesc>Aufgrund ihrer Überzeugungen verlangen einige deiner Kolonisten regelmäßige Altersumkehrbehandlungen in einer Bioformerkapsel. Wenn sie die Behandlungen nicht bekommen, werden sie unglücklich sein.\n\nDie folgenden Personen verlangen eine Altersumkehrbehandlung</AlertAgeReversalDemandDesc>
   <!-- EN: {PAWN} joined {FACTION} recently, and wants to begin age reversal treatments in {DURATION}. -->
-  <AlertAgeReversalDemandDesc_Recruit>{PAWN} ist vor kurzem der Fraktion {FACTION} beigetreten und will in {DURATION} mit Altersumkehrbehandlungen beginnen.</AlertAgeReversalDemandDesc_Recruit>
+  <AlertAgeReversalDemandDesc_Recruit>{PAWN} ist vor kurzem der Fraktion {FACTION} beigetreten und will in {replace: {DURATION}; "Tage"-"Tagen"; "Jahre"-"Jahren"} mit Altersumkehrbehandlungen beginnen.</AlertAgeReversalDemandDesc_Recruit>
   <!-- EN: {PAWN} wants their next treatment in {DURATION}. -->
-  <AlertAgeReversalDemandDesc_Next>{PAWN} will {PAWN_possessive}e nächste Behandlung in {DURATION}.</AlertAgeReversalDemandDesc_Next>
+  <AlertAgeReversalDemandDesc_Next>{PAWN} will {PAWN_possessive}e nächste Behandlung in {replace: {DURATION}; "Tage"-"Tagen"; "Jahre"-"Jahren"}.</AlertAgeReversalDemandDesc_Next>
   <!-- EN: {PAWN} wants their first treatment in {DURATION}. -->
-  <AlertAgeReversalDemandDesc_Initial>{PAWN} will {PAWN_possessive}e erste Behandlung in {DURATION}.</AlertAgeReversalDemandDesc_Initial>
+  <AlertAgeReversalDemandDesc_Initial>{PAWN} will {PAWN_possessive}e erste Behandlung in {replace: {DURATION}; "Tage"-"Tagen"; "Jahre"-"Jahren"}.</AlertAgeReversalDemandDesc_Initial>
   <!-- EN: {PAWN}'s treatment is overdue by {DURATION}. -->
-  <AlertAgeReversalDemandDesc_Overdue>Die Behandlung von {PAWN} ist seit {DURATION} überfällig.</AlertAgeReversalDemandDesc_Overdue>
+  <AlertAgeReversalDemandDesc_Overdue>Die Behandlung von {PAWN} ist seit {replace: {DURATION}; "Tage"-"Tagen"; "Jahre"-"Jahren"} überfällig.</AlertAgeReversalDemandDesc_Overdue>
 
   <!-- EN: {PAWN_nameDef}'s belief in {IDEO_name} prevents {PAWN_objective} from eating the meat of {ANIMALS}. -->
   <AlertRoyalTitleNoVeneratedAnimalMeat>Die Ideologie von {PAWN_nameDef} ({IDEO_name}) hält {PAWN_objective} davon ab, Fleisch von folgenden Tieren zu essen: {ANIMALS}.</AlertRoyalTitleNoVeneratedAnimalMeat>
@@ -115,22 +115,22 @@
   <AlertConnectedPawnNotAssignedToPlantCuttingDesc>Du hast Gauralanbäume, die zum Stutzen vorgesehen sind, aber ihre Verbinder sind nicht für die Waldarbeit eingeteilt.\n\nDu solltest folgenden Personen für die Waldarbeit einteilen</AlertConnectedPawnNotAssignedToPlantCuttingDesc>
 
   <!-- EN: Fuel node explodes in {0} -->
-  <AlertFuelNodeIgniting>Tankknoten explodiert in {0}</AlertFuelNodeIgniting>
+  <AlertFuelNodeIgniting>Tankknoten explodiert in {replace: {0}; "Tage"-"Tagen"; "Jahre"-"Jahren"}</AlertFuelNodeIgniting>
   <!-- EN: A fuel node has ignited! It will melt down and explode very soon.\n\nGet away and be ready to fight or escape the fires. -->
   <AlertFuelNodeIgnitingDesc>Ein Tankknoten hat sich entzündet! Er wird in Kürze explodieren.\n\nEntferne dich von ihm und bereite dich darauf vor, die Brände zu löschen oder ihnen aus dem Weg zu gehen.</AlertFuelNodeIgnitingDesc>
 
   <!-- EN: Insects arriving in {0} -->
-  <AlertInfestationArriving>Insekten treffen in {0} ein</AlertInfestationArriving>
+  <AlertInfestationArriving>Insekten treffen in {replace: {0}; "Tage"-"Tagen"; "Jahre"-"Jahren"} ein</AlertInfestationArriving>
   <!-- EN: Giant insects have sensed your activity and are burrowing up from underground to attack. Infestations are about to begin. -->
   <AlertInfestationArrivingDesc>Riesige Insekten haben deine Aktivitäten wahrgenommen und graben sich aus dem Untergrund hoch, um dich anzugreifen. Eine Insektenplage wird bald beginnen.</AlertInfestationArrivingDesc>
 
   <!-- EN: {0_pawnsPlural} waking in {1} -->
-  <AlertHostilesWakingUp>{0_pawnsPlural} erwachen in {1} </AlertHostilesWakingUp>
+  <AlertHostilesWakingUp>{0_pawnsPlural} erwachen in {replace: {1}; "Tage"-"Tagen"; "Jahre"-"Jahren"}</AlertHostilesWakingUp>
   <!-- EN: One or more {0_pawnsPlural} are waking up.\n\nThey will attack if they find you. -->
   <AlertHostilesWakingUpDesc>Ein oder mehrere {0_pawnsPlural} wachen bald auf.\n\nSie werden dich angreifen, sobald sie dich entdecken.</AlertHostilesWakingUpDesc>
 
   <!-- EN: Cryptosleep caskets opening in {0} -->
-  <AlertCasketOpening>Kryptoschlafkapseln öffnen sich in {0}</AlertCasketOpening>
+  <AlertCasketOpening>Kryptoschlafkapseln öffnen sich in {replace: {0}; "Tage"-"Tagen"; "Jahre"-"Jahren"}</AlertCasketOpening>
   <!-- EN: Cryptosleep caskets containing unknown threats are opening soon. -->
   <AlertCasketOpeningDesc>Es werden sich bald Kryptoschlafkapseln öffnen, die unbekannte Bedrohungen enthalten.</AlertCasketOpeningDesc>
 

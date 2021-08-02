@@ -5,7 +5,7 @@
     <li>questDescription->[decreeIntro]\n\nYou must build a monument. It is [monumentSize] in size and will require these resources (total value [monumentRequiredResourcesMarketValue_money]):\n\n[monumentRequiredResources]\n\n[decreeThreatInfo]\n\nYou must keep the monument safe for [keepMonumentTicks_duration] after completion, otherwise [asker_nameDef] will be unhappy.</li>
   -->
   <Decree_BuildMonument.questDescriptionRules.rulesStrings>
-    <li>questDescription->[decreeIntro]\n\nDu musst ein Denkmal errichten. Es hat eine Größe von [monumentSize] und benötigt folgende Ressourcen (Gesamtwert [monumentRequiredResourcesMarketValue_money]):\n\n[monumentRequiredResources]\n\n[decreeThreatInfo]\n\nNach der Fertigstellung des Denkmals musst du in den nächsten [keepMonumentTicks_duration] darauf achten, dass es nicht zerstört wird, sonst wird [asker_nameDef] unglücklich darüber sein.</li>
+    <li>questDescription->[decreeIntro]\n\nDu musst ein Denkmal errichten. Es hat eine Größe von [monumentSize] und benötigt folgende Ressourcen (Gesamtwert [monumentRequiredResourcesMarketValue_money]):\n\n[monumentRequiredResources]\n\n[decreeThreatInfo]\n\nNach der Fertigstellung des Denkmals musst du [keepMonumentTicks_duration] lang darauf achten, dass es nicht zerstört wird, sonst wird [asker_nameDef] unglücklich darüber sein.</li>
   </Decree_BuildMonument.questDescriptionRules.rulesStrings>
   <!-- EN:
     <li>questName->monument decree</li>
@@ -20,17 +20,17 @@
   <!-- EN: Monument completed -->
   <Decree_BuildMonument.LetterLabelMonumentCompleted.slateRef>Denkmal fertiggestellt</Decree_BuildMonument.LetterLabelMonumentCompleted.slateRef>
   <!-- EN: You have completed construction of the monument.\n\nYou must keep it safe for [keepMonumentTicks_duration], otherwise [asker_nameDef] will be displeased. -->
-  <Decree_BuildMonument.LetterTextMonumentCompleted.slateRef>Du hast den Bau des Denkmals abgeschlossen.\n\nDu musst in den nächsten [keepMonumentTicks_duration] darauf achten, dass es nicht zerstört wird, sonst wird [asker_nameDef] unglücklich darüber sein.</Decree_BuildMonument.LetterTextMonumentCompleted.slateRef>
+  <Decree_BuildMonument.LetterTextMonumentCompleted.slateRef>Du hast den Bau des Denkmals abgeschlossen.\n\nDu musst [keepMonumentTicks_duration] lang darauf achten, dass es nicht zerstört wird, sonst wird [asker_nameDef] unglücklich darüber sein.</Decree_BuildMonument.LetterTextMonumentCompleted.slateRef>
   <!-- EN: Monument destroyed -->
   <Decree_BuildMonument.LetterLabelMonumentDestroyed.slateRef>Denkmal zerstört</Decree_BuildMonument.LetterLabelMonumentDestroyed.slateRef>
   <!-- EN: [asker_nameDef] is offended that you allowed the monument to be ruined so soon after completion.\n\n[asker_pronoun] will be unhappy about this. -->
   <Decree_BuildMonument.LetterTextMonumentDestroyed.slateRef>[asker_nameDef] ist empört, dass du zugelassen hast, dass das Denkmal unmittelbar nach dessen Fertigstellung verwüstet wurde.\n\n[asker_pronoun] wird darüber unglücklich sein.</Decree_BuildMonument.LetterTextMonumentDestroyed.slateRef>
   <!-- EN: Do not destroy the monument for {0} -->
-  <Decree_BuildMonument.DontDestroyMonumentForDays.slateRef>Du darfst das Denkmal in den nächsten {0} nicht zerstören</Decree_BuildMonument.DontDestroyMonumentForDays.slateRef>
+  <Decree_BuildMonument.DontDestroyMonumentForDays.slateRef>Du darfst das Denkmal in den nächsten {replace: {0}; "Tage"-"Tagen"; "Jahre"-"Jahren"} nicht zerstören</Decree_BuildMonument.DontDestroyMonumentForDays.slateRef>
   <!-- EN: Do not destroy the monument for {0} -->
-  <Decree_BuildMonument.DontDestroyMonumentForDaysTip.slateRef>Du darfst das Denkmal in den nächsten {0} nicht zerstören</Decree_BuildMonument.DontDestroyMonumentForDaysTip.slateRef>
+  <Decree_BuildMonument.DontDestroyMonumentForDaysTip.slateRef>Du darfst das Denkmal in den nächsten {replace: {0}; "Tage"-"Tagen"; "Jahre"-"Jahren"} nicht zerstören</Decree_BuildMonument.DontDestroyMonumentForDaysTip.slateRef>
   <!-- EN: Keep monument {0} -->
-  <Decree_BuildMonument.KeepMonument.slateRef>Erhalte das Denkmal über einen Zeitraum von {0}</Decree_BuildMonument.KeepMonument.slateRef>
+  <Decree_BuildMonument.KeepMonument.slateRef>Erhalte das Denkmal für {0}</Decree_BuildMonument.KeepMonument.slateRef>
   
   <!-- EN:
     <li>questDescription->[decreeIntro]\n\nYou must harvest [plantToHarvest_label] x[harvestItemCount].\n\nYou may need to plant and grow the [plantToHarvest_label] first.\n\n[decreeThreatInfo]</li>

@@ -89,8 +89,8 @@
     <li>manhunterArrivalLetterEnd(asker_royalInCurrentFaction==True,animalCount>=2)->These are the [animalKind_labelPlural] that killed the scouting party of the [asker_royalTitleInCurrentFaction] [asker_nameFull] of [asker_faction_name].</li>
   -->
   <ThreatReward_Manhunters_ItemPod.questDescriptionRules.rulesStrings>
-    <li>endSection(animalCount==1)->[helpersParagraph] [animalKindDef_definite] wird, sobald du diese Quest annimmst, in [manhuntersDelayTicks_duration] in [map_definite] eintreffen.</li>
-    <li>endSection(animalCount>=2)->[helpersParagraph] Die [animalKind_labelPlural] werden, sobald du diese Quest annimmst, in [manhuntersDelayTicks_duration] in [map_definite] eintreffen.</li>
+    <li>endSection(animalCount==1)->[helpersParagraph] [animalKindDef_definite] wird [manhuntersDelayTicks_duration], nachdem du die Quest angenommen hast, in [map_definite] eintreffen.</li>
+    <li>endSection(animalCount>=2)->[helpersParagraph] Die [animalKind_labelPlural] werden [manhuntersDelayTicks_duration], nachdem du die Quest angenommen hast, in [map_definite] eintreffen.</li>
     <li>questDescription(askerIsNull==true,animalCount==1)->Ein Händler kontaktiert dich und bittet um Hilfe. (*Threat)[animalKindDef_indefinite](/Threat) hat menschliches Fleisch gewittert und macht Jagd auf ihn! Du sollst ihm dabei helfen, die menschenjagende Bestie wegzulocken.[endSection]</li>
     <li>manhunterArrivalLetterEnd(askerIsNull==true,animalCount==1)->[animalKindDef_definite] war gerade dabei, einen Händler in der Nähe zu jagen.</li>
     <li>questDescription(askerIsNull==true,animalCount>=2)->Ein Händler kontaktiert dich und bittet um Hilfe. (*Threat)[animalCount] [animalKind_labelPlural](/Threat) haben menschliches Fleisch gewittert und machen Jagd auf ihn! Du sollst ihm dabei helfen, die menschenjagenden Bestien wegzulocken.[endSection]</li>

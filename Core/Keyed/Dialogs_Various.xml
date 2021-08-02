@@ -319,7 +319,7 @@
   <!-- EN: Charging -->
   <ChargingTime>Lädt sich auf</ChargingTime>
   <!-- EN: Next recharge (for {1}) in: {0}\nCharge cycle: {2} -->
-  <ChargingNext>Nächste Aufladung (für {1}) in: {0}\nAufladezyklus: {2}</ChargingNext>
+  <ChargingNext>Nächste Aufladung (für {1}) in: {replace: {0}; "Tage"-"Tagen"; "Jahre"-"Jahren"}\nAufladezyklus: {2}</ChargingNext>
   <!-- EN: Shut down -->
   <ShutDown>Heruntergefahren</ShutDown>
   <!-- EN: Fire rate -->
@@ -675,7 +675,7 @@
   <!-- EN: Days of food -->
   <DaysWorthOfFood>Tagesrationen an Nahrung</DaysWorthOfFood>
   <!-- EN: rot in {0} -->
-  <DaysWorthOfFoodInfoRot>verdirbt in {0}</DaysWorthOfFoodInfoRot>
+  <DaysWorthOfFoodInfoRot>verdirbt in {replace: {0}; "Tage"-"Tagen"; "Jahre"-"Jahren"}</DaysWorthOfFoodInfoRot>
   <!-- EN: Unlimited -->
   <InfiniteDaysWorthOfFoodInfo>Unbegrenzt</InfiniteDaysWorthOfFoodInfo>
   <!-- EN: The approximate number of days before at least one person or animal will be out of food. Different species have different diets, so one may run out of food before others. This value is calculated more accurately after the route is chosen.\n\nAffected by:\n  - Current pawn inventory\n  - Carried food type and amount\n  - Caravan members and their diets\n  - Foraging rate\n  - Whether animals can graze\n  - Time until food rots\n  - Hot weather rots food faster -->

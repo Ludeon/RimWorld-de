@@ -14,8 +14,8 @@
     <li>questDescription(asker_royalInCurrentFaction==True)->[asker_nameFull], [asker_royalTitleInCurrentFaction] der Fraktion [asker_faction_name], hat ein dringliches Anliegen.\n\n(*Threat)[groupsOf](/Threat) der Fraktion [enemyFaction_name] schikanieren [asker_possessive]e Karawanen in der Nähe. [asker_nameDef] möchte, dass du sie zum Kampf herausforderst, um sie von den Karawanen wegzulocken.[endingCommon]</li>
     <li>groupsOf(raidCount==1,priority=1)->[enemyFaction_pawnsPlural]</li>
     <li>groupsOf->[numGroupsOf]</li>
-    <li>endingCommon(helpersCount==0)->\n\n[pawnKindsParagraph]\n\nWenn du die Quest annimmst, werden die [enemyFaction_pawnsPlural] in [firstRaidDelayTicks_duration] bei dir eintreffen.</li>
-    <li>endingCommon(helpersCount>=1)->\n\n[pawnKindsParagraph][helpersParagraph]Wenn du die Quest annimmst, werden die [enemyFaction_pawnsPlural] in [firstRaidDelayTicks_duration] bei dir eintreffen.</li>
+    <li>endingCommon(helpersCount==0)->\n\n[pawnKindsParagraph]\n\nWenn du die Quest annimmst, werden die [enemyFaction_pawnsPlural] [firstRaidDelayTicks_duration] später bei dir eintreffen.</li>
+    <li>endingCommon(helpersCount>=1)->\n\n[pawnKindsParagraph][helpersParagraph]Wenn du die Quest annimmst, werden die [enemyFaction_pawnsPlural] [firstRaidDelayTicks_duration] später bei dir eintreffen.</li>
   </ThreatReward_Raid_MiscReward.questDescriptionRules.rulesStrings>
   <!-- EN:
     <li>questName->[enemyFaction_pawnsPlural] of Fortune</li>

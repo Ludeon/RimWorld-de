@@ -168,7 +168,7 @@
   <!-- EN: Already connected to {PAWN_nameDef} -->
   <RitualTargetConnectedGauranlenTree>Bereits mit {PAWN_nameDef} verbunden</RitualTargetConnectedGauranlenTree>
   <!-- EN: {TREE_definite} has had its connection torn recently. It can connect again in {1}. -->
-  <RitualTargetConnectionTornGauranlenTree>Die Verbindung des {TREE_label}es wurde vor kurzem gekappt. Er kann sich in {1} neu verbinden.</RitualTargetConnectionTornGauranlenTree>
+  <RitualTargetConnectionTornGauranlenTree>Die Verbindung des {TREE_label}es wurde vor kurzem gekappt. Er kann sich in {replace: {1}; "Tage"-"Tagen"; "Jahre"-"Jahren"} neu verbinden.</RitualTargetConnectionTornGauranlenTree>
   <!-- EN: You need {0} wood for each participant ({2} total). You have {1} wood. -->
   <RitualTargeWoodInfo>Du benötigst {0} Holz für alle Teilnehmer (insgesamt {2}). Du hast {1} Holz.</RitualTargeWoodInfo>
   <!-- EN: Accuse -->
@@ -413,7 +413,7 @@
   <!-- EN: The person this {TREE_label} is connected to. If the connected person dies, this {TREE_label} will be unable to connect to another for {DURATION}. -->
   <ConnectedPawnDesc>Die Person, mit der dieser {TREE_label} verbunden ist. Wenn die verbundene Person stirbt, kann sich dieser {TREE_label} für {DURATION} nicht mit einer anderen Person verbinden.</ConnectedPawnDesc>
   <!-- EN: Connection torn. Can connect in {0}. -->
-  <ConnectionTorn>Verbindung gekappt. Kann in {0} verbinden.</ConnectionTorn>
+  <ConnectionTorn>Verbindung gekappt. Kann in {replace: {0}; "Tage"-"Tagen"; "Jahre"-"Jahren"} verbinden.</ConnectionTorn>
   <!-- EN: {PAWN_nameDef} is too far away -->
   <ConnectedPawnAway>{PAWN_nameDef} ist zu weit weg</ConnectedPawnAway>
   <!-- EN: Planting {PLANT_definite} near artificial buildings will cause its connection strength to decay over time. Connection strength determines the maximum number of dryads {PLANT_definite} can support at once.\n\nAre you sure you wish to plant here? -->
@@ -453,7 +453,7 @@
   <!-- EN: Determines the currently created dryad caste. -->
   <GauranlenTreeModeDesc>Legt fest, welche Dryaden erzeugt werden sollen.</GauranlenTreeModeDesc>
   <!-- EN: Spawning {DRYAD_label} in {TIME} -->
-  <SpawningDryadIn>Erzeugt {DRYAD_label} in {TIME}</SpawningDryadIn>
+  <SpawningDryadIn>Erzeugt {DRYAD_label} in {replace: {TIME}; "Tage"-"Tagen"; "Jahre"-"Jahren"}</SpawningDryadIn>
   <!-- EN: Morphing {DRYAD_labelShort} into {TYPE_label}. -->
   <ChangingDryadIntoType>Transformiert {DRYAD_labelShort} in {TYPE_label}.</ChangingDryadIntoType>
   <!-- EN: {0} hours every day -->
@@ -461,7 +461,7 @@
   <!-- EN: {0} hours every other day -->
   <HoursEveryOtherDay>{0} Stunden jeden zweiten Tag</HoursEveryOtherDay>
   <!-- EN: {DRYAD_labelPlural} produce {RESOURCES} every {DURATION}. -->
-  <DryadProducesResourcesDesc>{DRYAD_labelPlural} produzieren {RESOURCES} im Abstand von {DURATION}.</DryadProducesResourcesDesc>
+  <DryadProducesResourcesDesc>{DRYAD_labelPlural} produzieren {RESOURCES} alle {DURATION}.</DryadProducesResourcesDesc>
   <!-- EN: {ANIMAL_nameDef} is connected to {MASTER_nameDef} through {ANIMAL_possessive} Gauranlen tree. {ANIMAL_possessive} master cannot be changed. -->
   <DryadCannotChangeMaster>{ANIMAL_nameDef} ist über einen Gauralanbaum mit {MASTER_nameDef} verbunden. Das Herrchen von diesem Tier kann nicht geändert werden.</DryadCannotChangeMaster>
   <!-- EN: Connection strength too low to create Gauranlen pod. -->

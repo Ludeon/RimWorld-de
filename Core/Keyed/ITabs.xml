@@ -119,7 +119,7 @@
   <!-- EN: Try to recruit -->
   <ShouldTryToRecruit>Versuchen zu Rekrutieren</ShouldTryToRecruit>
   <!-- EN: Considered guilty (expires in {0}) -->
-  <ConsideredGuilty>Als schuldig angesehen (läuft in {0} ab)</ConsideredGuilty>
+  <ConsideredGuilty>Als schuldig angesehen (läuft in {replace: {0}; "Tage"-"Tagen"; "Jahre"-"Jahren"} ab)</ConsideredGuilty>
   <!-- EN: Considered guilty -->
   <ConsideredGuiltyNoTimer>Als schuldig angesehen</ConsideredGuiltyNoTimer>
 
@@ -163,7 +163,7 @@
   <!-- EN: Bleeding -->
   <BleedingRate>Blutung</BleedingRate>
   <!-- EN: death in {0} -->
-  <TimeToDeath>Tod in {0}</TimeToDeath>
+  <TimeToDeath>Tod in {replace: {0}; "Tage"-"Tagen"; "Jahre"-"Jahren"}</TimeToDeath>
   <!-- EN: no immediate danger -->
   <WontBleedOutSoon>Keine unmittelbare Gefahr</WontBleedOutSoon>
   <!-- EN: Overview -->
@@ -197,7 +197,7 @@
   <!-- EN: {0} with self-tend enabled will automatically tend to themselves on the spot at {1} the normal efficiency. -->
   <SelfTendTip>{0} mit aktivierter Selbstbehandlung werden sich automatisch an Ort und Stelle selbst behandeln, allerdings nur mit {1} der normalen Effizienz.</SelfTendTip>
   <!-- EN: death in {0} -->
-  <DeathIn>Tod in {0}</DeathIn>
+  <DeathIn>Tod in {replace: {0}; "Tage"-"Tagen"; "Jahre"-"Jahren"}</DeathIn>
   
   <!-- Medical - Body and activities condition -->
   <!-- EN: None -->
@@ -246,7 +246,7 @@
   <!-- EN: Kidnapped -->
   <Kidnapped>Entführt</Kidnapped>
   <!-- EN: Lent to {FACTION_name}, returns in {1} -->
-  <Lent>Ausgeliehen an die Fraktion '{FACTION_name}', Rückkehr in {1}</Lent>
+  <Lent>Ausgeliehen an die Fraktion '{FACTION_name}', Rückkehr in {replace: {1}; "Tage"-"Tagen"; "Jahre"-"Jahren"}</Lent>
   <!-- EN: Missing -->
   <Missing>Vermisst</Missing>
   <!-- EN: Slave -->

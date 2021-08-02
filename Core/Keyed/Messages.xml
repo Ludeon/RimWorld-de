@@ -14,7 +14,7 @@
   <MessageRaidersStealing>{0} der Fraktion '{1}' haben sich entschieden, alles, was sie können, mitzunehmen und das Gebiet zu verlassen.</MessageRaidersStealing>
 
   <!-- EN: {0} from {1} have arrived and are attacking! More are on the way and will arrive in {2}. -->
-  <MessageCaravanDetectedRaidArrived>{0} der Fraktion '{1}' sind eingetroffen und greifen an! Weitere sind unterwegs und werden in {2} eintreffen.</MessageCaravanDetectedRaidArrived>
+  <MessageCaravanDetectedRaidArrived>{0} der Fraktion '{1}' sind eingetroffen und greifen an! Weitere sind unterwegs und werden in {replace: {2}; "Tage"-"Tagen"; "Jahre"-"Jahren"} eintreffen.</MessageCaravanDetectedRaidArrived>
 
   <!-- EN: {0} from {1} are leaving. -->
   <MessageRaidersLeaving>{0} der Fraktion '{1}' verlassen das Gebiet.</MessageRaidersLeaving>
@@ -569,7 +569,7 @@
   <MessageCaravanArrivalActionNoLongerValid>{0} konnte das Ziel nicht erreichen.</MessageCaravanArrivalActionNoLongerValid>
 
   <!-- EN: Too dangerous to re-enter for {0}. -->
-  <MessageEnterCooldownBlocksEntering>Zu gefährlich. Kann erst in {0} wieder betreten werden.</MessageEnterCooldownBlocksEntering>
+  <MessageEnterCooldownBlocksEntering>Zu gefährlich. Kann erst in {replace: {0}; "Tage"-"Tagen"; "Jahre"-"Jahren"} wieder betreten werden.</MessageEnterCooldownBlocksEntering>
 
   <!-- EN: {0_labelShort} can now freely use "{1}". -->
   <MessagePermitCooldownFinished>{0_labelShort} kann nun ungehindert "{1}" verwenden.</MessagePermitCooldownFinished>
