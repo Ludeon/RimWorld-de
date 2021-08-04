@@ -103,15 +103,19 @@
   <!-- EN: Execute -->
   <Execute>Hinrichten</Execute>
   <!-- EN: Execute guilty colonist\n\nIf you toggle this on, a warden will proceed to execute this person. -->
-  <ExecuteColonist>Richte schuldigen Kolonisten hin\n\nWenn du diesen Punkt aktivierst, wird ein Aufseher kommen und diese Person hinrichten.</ExecuteColonist> <!-- text_doto -->
+  <ExecuteColonist>Richte schuldigen Kolonisten hin\n\nWenn du diesen Punkt aktivierst, wird ein Aufseher kommen und diese Person hinrichten.</ExecuteColonist>
   <!-- EN: {0_labelShort} is now marked for execution. The next available warden will go execute {0_objective}. -->
   <MessageColonistMarkedForExecution>{0_labelShort} ist jetzt für die Hinrichtung markiert. Der nächste verfügbare Aufseher wird {0_objective} hinrichten.</MessageColonistMarkedForExecution>
   <!-- EN: {0} of {1} -->
   <TitleOfFaction>{0} von der Fraktion '{1}'</TitleOfFaction>
   <!-- EN: This action will make {PAWN_nameDef} lose {PAWN_possessive} {TITLE} title. You will receive no compensation for renouncing the title.\n\nThis will have the following effects:\n\n{EFFECTS} -->
   <RenounceTitleDescription>Diese Aktion wird dazu führen, dass {PAWN_nameDef} {PAWN_possessive}en Titel als {TITLE} verlieren wird. Du bekommst keine Entschädigung für den Verlust des Titels.\n\nDies hat folgende Auswirkungen:\n\n{EFFECTS}</RenounceTitleDescription>
-  <!-- EN: {PAWN_possessive} will lose these permissions -->
+  <!-- EN: {PAWN_pronoun} will lose these permissions -->
   <RenounceTitleWillLoosePermits>{PAWN_pronoun} wird folgende Befugnisse verlieren</RenounceTitleWillLoosePermits>
+  <!-- EN: {PAWN_nameDef} will lose {POINTS} unspent permit points with {FACTION_name}. -->
+  <RenounceTitleWillLosePermitPoints>{PAWN_nameDef} verliert {POINTS} unverbrauchte Ermächtigungspunkte bei der Fraktion {FACTION_name}.</RenounceTitleWillLosePermitPoints>
+  <!-- EN: {PAWN_pronoun} will keep all {PAWN_possessive} psylink levels and psycasts. -->
+  <RenounceTitleWillKeepPsylinkLevels>{PAWN_pronoun} wird {PAWN_possessive}e derzeitigen Psylinkstufen und mentalen Kräfte behalten.</RenounceTitleWillKeepPsylinkLevels>
   <!-- EN: unknown -->
   <UnknownLower>unbekannt</UnknownLower>
   <!-- EN: On -->
@@ -1141,6 +1145,8 @@
   <Installed>Montiert</Installed>
   <!-- EN: Not installed -->
   <NotInstalled>Nicht montiert</NotInstalled>
+  <!-- EN: Extracted tree will die in {time} unless replanted. -->
+  <MinifiedTreeWillDieIn>Der ausgegrabene Baum wird in {replace: {time}; "Tage"-"Tagen"; "Jahre"-"Jahren"} sterben, wenn er nicht wieder eingepflanzt wird.</MinifiedTreeWillDieIn>
 
   <!-- Art -->
   <!-- EN: Title -->
