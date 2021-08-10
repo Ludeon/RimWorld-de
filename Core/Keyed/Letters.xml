@@ -268,9 +268,9 @@
 
   <!-- Caravan entered map -->
   <!-- EN: Caravan arrived at {0_label} -->
-  <LetterLabelCaravanEnteredMap>Karawane in {0_label} eingetroffen</LetterLabelCaravanEnteredMap>
+  <LetterLabelCaravanEnteredMap>Karawane hat {lookup: {0_label}; Singular; 3} erreicht</LetterLabelCaravanEnteredMap>
   <!-- EN: {0} has arrived at {1_definite}. -->
-  <LetterCaravanEnteredMap>{0} ist in {1_label} eingetroffen.</LetterCaravanEnteredMap>
+  <LetterCaravanEnteredMap>{0} hat {lookup: {1_label}; Singular; 3} erreicht.</LetterCaravanEnteredMap>
 
   <!-- Caravan entered enemy base -->
   <!-- EN: Attack begun -->
@@ -290,7 +290,7 @@
   <!-- EN: Base destroyed -->
   <LetterLabelFactionBaseDefeated>Basis zerstört</LetterLabelFactionBaseDefeated>
   <!-- EN: The enemy settlement {0} has been destroyed.\n\nIn {1}, your caravan will be attacked by enemies. They will begin sending forces to attack the caravan, unless it reforms and leaves. -->
-  <LetterFactionBaseDefeated>Die feindliche Siedlung {0} wurde zerstört.\n\nIn {1} werden Feinde deine Karawane angreifen. Sie werden damit beginnen, Truppen zu entsenden, um die Karawane anzugreifen, es sei denn, die Karawane formiert sich neu und zieht ab.</LetterFactionBaseDefeated>
+  <LetterFactionBaseDefeated>Die feindliche Siedlung {0} wurde zerstört.\n\nIn {replace: {1}; "Tage"-"Tagen"; "Jahre"-"Jahren"} werden Feinde deine Karawane angreifen. Sie werden damit beginnen, Truppen zu entsenden, um die Karawane anzugreifen, es sei denn, die Karawane formiert sich neu und zieht ab.</LetterFactionBaseDefeated>
   <!-- EN: Since this was their last settlement, {0} has been defeated. -->
   <LetterFactionBaseDefeated_FactionDestroyed>Dies war ihre letzte Siedlung. Die Fraktion {0} wurde besiegt.</LetterFactionBaseDefeated_FactionDestroyed>
 
@@ -404,7 +404,7 @@
   <!-- EN: Caravan battle won -->
   <LetterLabelCaravansBattlefieldVictory>Karawanenkampf gewonnen</LetterLabelCaravansBattlefieldVictory>
   <!-- EN: Your caravan has won the battle.\n\nYou can reform the caravan now in the World screen by selecting the battlefield and choosing the "Reform caravan" option.\n\nThere's no need to collect items manually, the reform caravan tool can do it instantly.\n\nIn {0}, your caravan will be attacked by enemies. They will begin sending forces to attack the caravan, unless it reforms and leaves. -->
-  <LetterCaravansBattlefieldVictory>Deine Karawane hat den Kampf gewonnen.\n\nDu kannst die Karawane jetzt neu formieren, indem du auf der Weltkarte das Schlachtfeld markierst und die Option "Karawane neu formieren" auswählst.\n\nEs ist nicht notwendig, die Gegenstände manuell einzusammeln - das Karawane-Neu-Formieren-Tool kann das sofort erledigen.\n\nIn {0} werden Feinde deine Karawane angreifen. Sie werden damit beginnen, Truppen zu entsenden, um die Karawane anzugreifen, es sei denn, die Karawane formiert sich neu und zieht ab.</LetterCaravansBattlefieldVictory>
+  <LetterCaravansBattlefieldVictory>Deine Karawane hat den Kampf gewonnen.\n\nDu kannst die Karawane jetzt neu formieren, indem du auf der Weltkarte das Schlachtfeld markierst und die Option "Karawane neu formieren" auswählst.\n\nEs ist nicht notwendig, die Gegenstände manuell einzusammeln - das Karawane-Neu-Formieren-Tool kann das sofort erledigen.\n\nIn {replace: {0}; "Tage"-"Tagen"; "Jahre"-"Jahren"} werden Feinde deine Karawane angreifen. Sie werden damit beginnen, Truppen zu entsenden, um die Karawane anzugreifen, es sei denn, die Karawane formiert sich neu und zieht ab.</LetterCaravansBattlefieldVictory>
 
   <!-- Rescue quest -->
   <!-- EN: Rescuee joins -->
