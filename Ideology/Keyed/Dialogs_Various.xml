@@ -15,8 +15,8 @@
 
   <!-- EN: Choose the symbolic structure of your ideoligion. This only affects symbols - it does not affect gameplay. -->
   <ChooseStructureMemesInfo>Wähle die symbolische Struktur deiner Ideologie. Dies betrifft nur die Symbole - es hat keinen Einfluss auf das Spielgeschehen.</ChooseStructureMemesInfo>
-  <!-- EN: Choose {0}-{1} memes to form the foundational ideas of this ideoligion. Some of these have much more gameplay impact than others. -->
-  <ChooseNormalMemesInfo>Wähle {0} bis {1} Glaubensgrundlagen, um die fundamentalen Ideen dieser Ideologie zu formen. Einige dieser Glaubensgrundlagen haben mehr Einfluss auf das Spielgeschehen als andere.</ChooseNormalMemesInfo>
+  <!-- EN: Choose {0}-{1} memes to form the foundational ideas of this ideoligion. -->
+  <ChooseNormalMemesInfo>Wähle {0} bis {1} Glaubensgrundlagen, um die fundamentalen Ideen dieser Ideologie zu formen.</ChooseNormalMemesInfo>
   <!-- EN: Choose at least {0} meme. -->
   <NotEnoughMemes>Wähle mindestens {0} Glaubensgrundlage.</NotEnoughMemes>
   <!-- EN: Choose at most {0} memes. -->
@@ -25,12 +25,22 @@
   <ChooseStructureMeme>Wähle eine Struktur.</ChooseStructureMeme>
   <!-- EN: {0_label} and {1_label} are incompatible. -->
   <IncompatibleMemes>{0_label} und {1_label} sind inkompatibel.</IncompatibleMemes>
+  <!-- EN: Some of these have much more gameplay impact than others. -->
+  <SomeMemesHaveMoreImpact>Einige dieser Glaubensgrundlagen haben mehr Einfluss auf das Spielgeschehen als andere.</SomeMemesHaveMoreImpact>
+  <!-- EN: Choose one meme to form the initial idea of this ideoligion. You will add more memes as the ideoligion develops over time. -->
+  <ChooseNormalMemesFluidIdeoInfo>Wähle eine Glaubensgrundlage, um die Grundidee dieser Ideologie zu formen. Du wirst weitere Glaubensgrundlagen hinzufügen können, wenn sich die Ideologie nach und nach entwickelt.</ChooseNormalMemesFluidIdeoInfo>
+  <!-- EN: Choose a meme or remove a meme. -->
+  <ChooseOrRemoveMeme>Wähle oder entferne eine Glaubensgrundlage.</ChooseOrRemoveMeme>
+  <!-- EN: Reset changes -->
+  <ReformIdeoResetChanges>Änderungen zurücksetzen</ReformIdeoResetChanges>
 
   <!-- EN: {0} will re-randomize any precepts you have edited.\n\nDo you wish to continue? -->
   <ChangesRandomizePrecepts>{0} bewirkt, dass alle Gebote zufällig neu generiert werden, auch solche, die du bearbeitet hast.\n\nWillst du wirklich fortfahren?</ChangesRandomizePrecepts>
   
   <!-- EN: Room requirements -->
   <RoomRequirements>Raumanforderungen</RoomRequirements>
+  <!-- EN: The ideoligion you are loading has memes that are incompatible with a new fluid ideoligion and its memes will need to be chosen again (fluid ideoligions may only start with one low-impact meme). The following memes are incompatible:\n\n{0}\n\nWould you like to continue? -->
+  <ConfirmChangeMemesForFluidIdeo>Die Ideologie, die du versuchst zu laden, hat Glaubensgrundlagen, die mit einer neuen flexiblen Ideologie inkompatibel sind. Die Glaubensgrundlagen der Ideologie müssten daher neu ausgewählt werden (flexible Ideologien können nur mit einer Glaubensgrundlage beginnen, die eine geringe Auswirkung hat). Die folgenden Glaubensgrundlagen sind inkompatibel:\n\n{0}\n\nMöchtest du fortfahren?</ConfirmChangeMemesForFluidIdeo>
   
   <!-- EN: role -->
   <Role>Rolle</Role>
@@ -98,6 +108,25 @@
 
   <!-- EN: {PAWN_labelShort} was already counselled recently. -->
   <AbilityCantApplyAlreadyCounselled>{PAWN_labelShort} wurde bereits vor kurzem beraten.</AbilityCantApplyAlreadyCounselled>
+
+  <!-- EN: Reform... -->
+  <ReformIdeo>Reformieren...</ReformIdeo>
+  <!-- EN: Reform ideoligion -->
+  <ReformIdeoligion>Ideologie reformieren</ReformIdeoligion>
+  <!-- EN: Reform your ideoligion by changing its structure, memes or style. -->
+  <ReformIdeoligionDesc>Reformiere deine Ideologie durch Ändern ihrer Struktur, ihrer Glaubensgrundlagen oder ihres Stils.</ReformIdeoligionDesc>
+  <!-- EN: Change styles -->
+  <ReformIdeoChangeStyles>Stile ändern</ReformIdeoChangeStyles>
+  <!-- EN: Add or remove a meme -->
+  <ReformIdeoAddOrRemoveMeme>Glaubensgrundlage hinzufügen oder entfernen</ReformIdeoAddOrRemoveMeme>
+  <!-- EN: Add a meme -->
+  <ReformIdeoAddMeme>Glaubensgrundlage hinzufügen</ReformIdeoAddMeme>
+  <!-- EN: Choose one -->
+  <ReformIdeoChooseOneChange>Wähle eins aus</ReformIdeoChooseOneChange>
+  <!-- EN: Change structure -->
+  <ReformIdeoChangeStructure>Struktur ändern</ReformIdeoChangeStructure>
+  <!-- EN: Change any of the following -->
+  <ReformIdeoChangeAny>Ändere eins oder mehrere der folgenden Elemente</ReformIdeoChangeAny>
 
   <!-- Slavery -->
   <!-- EN: Slave -->
@@ -216,7 +245,7 @@
   <!-- EN: Required caste -->
   <RequiredStage>Erfordert die Kaste</RequiredStage>
   <!-- EN: Missing required memes -->
-  <MissingRequiredMemes>Glaubengrundlage(n) fehlt</MissingRequiredMemes>
+  <MissingRequiredMemes>Glaubensgrundlage(n) fehlt</MissingRequiredMemes>
   <!-- EN: Missing required caste -->
   <MissingRequiredCaste>Kaste fehlt</MissingRequiredCaste>
   <!-- EN: Already selected -->
@@ -239,6 +268,14 @@
   <ChoosePeopleDesc>Wähle bis zu {0} Personen.</ChoosePeopleDesc>
   <!-- EN: If you only select slaves, you will play them as colonists in the next colony. -->
   <ChooseOnlySlavesInfo>Wenn du nur Sklaven auswählst, wirst du sie als Kolonisten in der nächsten Kolonie spielen.</ChooseOnlySlavesInfo>
+  <!-- EN: Confirm decisions -->
+  <ConfirmDecisionsTitle>Entscheidungen bestätigen</ConfirmDecisionsTitle>
+  <!-- EN: The hibernating starship reported by the AI (*Name)Charlon Whitestone(/Name) will fly away by the time the new colony is established. It will no longer be possible to escape the planet by traveling to this ship. -->
+  <ShipEscapeWillEndDescription>Das Raumschiff, von dem die KI (*Name)Charlon Whitestone(/Name) berichtet hat, wird seinen Tiefschlafmodus verlassen und wegfliegen, wenn die neue Kolonie gegründet wird. Es wird nicht mehr möglich sein, mit diesem Schiff zu entkommen.</ShipEscapeWillEndDescription>
+  <!-- EN: The colony's purchasers will only allow you to take one relic. Any relic not selected will be left behind, including: -->
+  <RemoveEquippedRelicsDescription>Die Käufer der Kolonie gestatten dir nur die Mitnahme einer Reliquie. Jede nicht ausgewählte Reliquie wird zurückgelassen, einschließlich:</RemoveEquippedRelicsDescription>
+  <!-- EN: Would you like to proceed? -->
+  <WantToProceed>Möchtest du fortfahren?</WantToProceed>
   <!-- EN: Convert -->
   <ConvertToPlayerIdeoligion>Bekehren</ConvertToPlayerIdeoligion>
   <!-- EN: Revert -->
@@ -247,6 +284,8 @@
   <ExistingFollowerOfPlayerIdeoligion>Vorhandene Anhänger</ExistingFollowerOfPlayerIdeoligion>
   <!-- EN: You are abandoning a site that contains archotech structures which you have not yet fully studied.\n\nYou will be able to resettle here later, but your colony will be wiped away. -->
   <AbandonArchotechStructuresWarningDialog>Du gibst einen Ort auf, der Archotech-Strukturen enthält, die du noch nicht vollständig untersucht hast.\n\nDu kannst dich hier später wieder ansiedeln, aber deine jetzige Kolonie wird komplett verschwinden.</AbandonArchotechStructuresWarningDialog>
+  <!-- EN: {0} quantity that can be brought to the new colony.\n\nThe maximum allowed quantity is: {1} -->
+  <ItemQuantityTooltip>Die Menge an Gegenständen, die in die neue Kolonie gebracht werden kann.\n\nDie maximal erlaubte Menge ist: {1}</ItemQuantityTooltip>
 
   <!-- EN: Hacking this {0} will alert enemies and cause them to attack. Do really want to hack {0}? -->
   <ConfirmHackEnenyTerminal>Wenn du {0_gender ? diesen : diese : dieses} {lookup: {0}; Singular; 4} hackst, werden Feinde alarmiert, die dich angreifen werden. Willst du {0_gender ? den : die : das} {lookup: {0}; Singular; 4} wirklich hacken?</ConfirmHackEnenyTerminal>
