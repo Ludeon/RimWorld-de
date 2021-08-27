@@ -643,7 +643,7 @@
   <MessagePrisonerCannotEquipWeapon>{PAWN_nameDef} ist {PAWN_gender ? ein Gefangener : eine Gefangene}</MessagePrisonerCannotEquipWeapon>
 
   <!-- EN: Warning: {0_nameDef}'s beliefs oppose {1} work. {0_pronoun} may become unhappy. -->
-  <MessageIdeoOpposedWorkTypeSelected>Warnung: Der Glaube von {0_nameDef} widerspricht der Arbeit {1}. {0_pronoun} kann davon unglücklich werden.</MessageIdeoOpposedWorkTypeSelected>
+  <MessageIdeoOpposedWorkTypeSelected>Warnung: {replace: {0_nameDef}s; "s(/Name)s"-"s(/Name)'"; "ß(/Name)s"-"ß(/Name)'"; "z(/Name)s"-"z(/Name)'"; "x(/Name)s"-"x(/Name)'"; "ce(/Name)s"-"ce(/Name)'"} Glaube widerspricht der Arbeit {1}. {0_pronoun} kann davon unglücklich werden.</MessageIdeoOpposedWorkTypeSelected>
 
   <!-- EN: {0} is no longer assigned to {1_nameDef}. -->
   <MessageBedLostAssignment>{0} ist nicht länger für {1_nameDef} reserviert.</MessageBedLostAssignment>
