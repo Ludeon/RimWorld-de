@@ -24,13 +24,19 @@
   <!-- EN: What should your starting colonists believe? These beliefs affect gameplay and visuals. You’ll be able to recruit others to your beliefs, or take on their beliefs. -->
   <ChooseYourIdeoligionDesc>Woran sollen deine Startkolonisten glauben? Diese Glaubensvorstellungen beeinflussen das Spielgeschehen und die Optik. Du kannst andere zu deinem Glauben bekehren oder ihren Glauben übernehmen.</ChooseYourIdeoligionDesc>
   <!-- EN: Create custom -->
-  <CreateCustom>Benutzerdefiniert</CreateCustom>
+  <CreateCustom>Erstelle eigene Ideologie</CreateCustom>
+  <!-- EN: Delete custom -->
+  <DeleteCustom>Lösche eigene Ideologie</DeleteCustom>
   <!-- EN: Create new -->
   <CreateNew>Neu</CreateNew>
   <!-- EN: Load existing -->
   <LoadExisting>Lade existierende Ideologie</LoadExisting>
   <!-- EN: Create custom ideoligion -->
   <CreateCustomIdeoligion>Erstelle eine eigene Ideologie</CreateCustomIdeoligion>
+  <!-- EN: Custom ideoligion -->
+  <CustomIdeoligionSectionHeader>Eigene Ideologie</CustomIdeoligionSectionHeader>
+  <!-- EN: Faction ideoligions -->
+  <FactionIdeoligionSectionHeader>Fraktionsideologien</FactionIdeoligionSectionHeader>
   <!-- EN: Load saved ideoligion -->
   <LoadExistingIdeoligion>Lade eine gespeicherte Ideologie</LoadExistingIdeoligion>
   <!-- EN: Select an ideoligion for your faction on the left, or -->
@@ -142,6 +148,17 @@
   <!-- EN: quest -->
   <QuestLower>Quest</QuestLower>
 
+  <!-- EN: Could not load ideoligion -->
+  <UnableToLoadIdeoTitle>Ideologie konnte nicht geladen werden</UnableToLoadIdeoTitle>
+  <!-- EN: Could not load the selected ideoligion due to the requirements of the factions that will be following this ideoligion. The violated requirements are: -->
+  <UnableToLoadIdeoDescription>Die ausgewählte Ideologie konnte aufgrund der Anforderungen der Fraktionen, die dieser Ideologie folgen werden, nicht geladen werden. Folgende Anforderungen wurden nicht erfüllt:</UnableToLoadIdeoDescription>
+  <!-- EN: Meme {MEME} is not allowed for {FACTIONTYPE} factions -->
+  <UnableToLoadIdeoMemeNotAllowed>Glaubensgrundlage '{MEME}' ist verboten für Fraktionen des Typs '{FACTIONTYPE}'</UnableToLoadIdeoMemeNotAllowed>
+  <!-- EN: Meme {MEME} is required for {FACTIONTYPE} factions -->
+  <UnableToLoadIdeoMemeRequired>Glaubensgrundlage '{MEME}' ist notwendig für Fraktionen des Typs '{FACTIONTYPE}'</UnableToLoadIdeoMemeRequired>
+  <!-- EN: Precept {PRECEPT} is not allowed for non-player factions -->
+  <UnableToLoadIdeoPreceptNotAllowed>Gebot '{PRECEPT}' ist verboten für Nicht-Spieler-Fraktionen</UnableToLoadIdeoPreceptNotAllowed>
+
   <!-- EN: A grave containing {PAWN_labelShort}'s corpse. -->
   <RitualTargetGraveInfo>Ein Grab mit der Leiche von {PAWN_labelShort}.</RitualTargetGraveInfo>
   <!-- EN: An empty grave to mourn {PAWN_labelShort}'s passing. -->
@@ -156,6 +173,8 @@
   <RitualTargetGatherSpotInfo>Beliebiger Sammelplatz wie z.B. Tisch</RitualTargetGatherSpotInfo>
   <!-- EN: Altar or any ritual spot. -->
   <RitualTargetGatherAltarOrRitualSpotInfo>Altar oder beliebiger Ritualplatz.</RitualTargetGatherAltarOrRitualSpotInfo>
+  <!-- EN: Altar, ideogram or any ritual spot. -->
+  <RitualTargetGatherAltarIdeogramOrRitualSpotInfo>Altar, Ideogramm oder beliebiger Ritualplatz.</RitualTargetGatherAltarIdeogramOrRitualSpotInfo>
   <!-- EN: A lightball or ritual spot. Lightball and loudspeakers must be powered. -->
   <RitualTargetLightBallInfo>Eine Lichterkugel oder ein Ritualplatz. Lichterkugel und Lautsprecher müssen mit Strom versorgt werden.</RitualTargetLightBallInfo>
   <!-- EN: Lightball is not powered. -->
@@ -327,6 +346,8 @@
   <AbilityDisabled_IncapableOfWorkTag>{PAWN_nameDef} wird {1} nicht machen.</AbilityDisabled_IncapableOfWorkTag>
   <!-- EN: No reachable altar or ritual spot. -->
   <AbilityDisabledNoAltarOrRitualsSpot>Kein Altar oder Ritualplatz erreichbar.</AbilityDisabledNoAltarOrRitualsSpot>
+  <!-- EN: No reachable altar, ideogram or ritual spot. -->
+  <AbilityDisabledNoAltarIdeogramOrRitualsSpot>Kein Altar, Ideogramm oder Ritualplatz erreichbar.</AbilityDisabledNoAltarIdeogramOrRitualsSpot>
 
   <!-- EN: Will\n{0} to {1} -->
   <TextMote_WillReduced>Wille\n{0} auf {1}</TextMote_WillReduced>
@@ -570,8 +591,8 @@
   <!-- Bioscuplter pod -->
   <!-- EN: Cycle -->
   <BiosculpterPodCycleLabel>Zyklus</BiosculpterPodCycleLabel>
-  <!-- EN: loading nutrition -->
-  <BiosculpterPodCycleLabelLoading>mit Nahrung befüllen</BiosculpterPodCycleLabelLoading>
+  <!-- EN: loading ingredients -->
+  <BiosculpterPodCycleLabelLoading>mit Inhaltsstoffen befüllen</BiosculpterPodCycleLabelLoading>
   <!-- EN: ready -->
   <BiosculpterPodCycleLabelReady>bereit</BiosculpterPodCycleLabelReady>
   <!-- EN: Prepare {0} cycle -->
@@ -586,8 +607,10 @@
   <BiosculpterInteruptCycleDesc>Unterbrich den aktuellen Zyklus. Der Insasse wird herausgeworfen, ohne von den Effekten des Zyklus zu profitieren, und leidet kurzzeitig an der Bioformerkrankheit.</BiosculpterInteruptCycleDesc>
   <!-- EN: Warning: Age reversal cycle cannot be run while biosculpter is tuned to {PAWN_labelShort} because {PAWN_labelShort} is under {ADULTAGE} years old. -->
   <BiosculpterUnderageAgeReversalMessage>Warnung: Der Altersumkehrzyklus kann nicht durchgeführt werden, während die Bioformerkapsel auf {PAWN_labelShort} abgestimmt ist, da {PAWN_labelShort} unter {ADULTAGE} Jahre alt ist.</BiosculpterUnderageAgeReversalMessage>
-  <!-- EN: Once the biosculpter pod is filled with {NUTRITION} nutrition, select a colonist and right-click on the biosculpter pod or a downed person to start the cycle. -->
-  <BiosculpterLoadingStartedMessage>Sobald die Bioformerkapsel mit {NUTRITION} Nahrung gefüllt ist, kannst du einen Kolonisten auswählen und die Bioformerkapsel oder eine bewegungsunfähige Person rechtsklicken, um den Zyklus zu starten.</BiosculpterLoadingStartedMessage>
+  <!-- EN: Once the biosculpter pod is filled with {INGREDIENTS}, select a colonist and right-click on the biosculpter pod or a downed person to start the cycle. -->
+  <BiosculpterLoadingStartedMessage>Sobald die Bioformerkapsel mit {INGREDIENTS} gefüllt ist, kannst du einen Kolonisten auswählen und die Bioformerkapsel oder eine bewegungsunfähige Person rechtsklicken, um den Zyklus zu starten.</BiosculpterLoadingStartedMessage>
+  <!-- EN: {0} nutrition -->
+  <NumNutrition>{0} Nahrung</NumNutrition>
   <!-- EN: {PAWN_labelShort} was ejected from a biosculpter pod due to lack of power. -->
   <BiosculpterNoPowerEjectedMessage>{PAWN_labelShort} wurde mangels Stromversorgung aus einer Bioformerkapsel herausgeworfen.</BiosculpterNoPowerEjectedMessage>
   <!-- EN: {PAWN_labelShort} completed healing cycle. -->
@@ -606,5 +629,7 @@
   <HealingCycleOneWillHeal>Eines der folgenden Leiden wird geheilt</HealingCycleOneWillHeal>
   <!-- EN: Missing required research -->
   <MissingRequiredResearch>Benötigt die Forschung</MissingRequiredResearch>
+  <!-- EN: Requires -->
+  <BiosculpterRequiresIngredients>Benötigt</BiosculpterRequiresIngredients>
 
 </LanguageData>
