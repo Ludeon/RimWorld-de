@@ -9,12 +9,14 @@
   -->
   <OpportunitySite_DownedRefugee.questDescriptionRules.rulesStrings>
     <li>questDescription(askerIsNull==true)->[refugee_nameDef] kontaktiert dich und bittet um Hilfe. [refugee_pronoun] ist verwundet und kaum noch bei Bewusstsein.\n\n[refugee_nameDef] ist [ein_N_jaehriger] [refugee_title]. [refugee_pronoun] verspricht, sich dir anzuschließen, wenn du [refugee_objective] rettest.\n\n[refugee_nameDef] sagt, dass dort [allSitePartsDescriptionsExceptFirst][pawnInvolvedInQuestInfo]</li>
-    <li>questDescription(asker_factionLeader==True)->[asker_nameDef], [asker_faction_leaderTitle] der Fraktion [asker_faction_name], sagt, dass [asker_possessive] Freund auf einer Reise verwundet wurde. Das Opfer heißt [refugee_nameIndef] und ist [ein_N_jaehriger] [refugee_title].\n\n[asker_nameDef] erzählt dir, dass [asker_pronoun] niemanden entbehren kann, um [refugee_nameDef] zu retten, aber wenn du es zu [refugee_nameDef]s Position schaffst und [refugee_objective] rettest, wird [refugee_pronoun] sich dir anschließen.\n\n[asker_nameDef] sagt, dass dort [allSitePartsDescriptionsExceptFirst][pawnInvolvedInQuestInfo]</li>
+    <li>questDescription(asker_factionLeader==True)->[asker_nameDef], [asker_faction_leaderTitle] der Fraktion [asker_faction_name], sagt, dass [sein_Freund] auf einer Reise verwundet wurde. Das Opfer heißt [refugee_nameIndef] und ist [ein_N_jaehriger] [refugee_title].\n\n[asker_nameDef] erzählt dir, dass [asker_pronoun] niemanden entbehren kann, um [refugee_nameDef] zu retten, aber wenn du es zu [refugee_nameDef]s Position schaffst und [refugee_objective] rettest, wird [refugee_pronoun] sich dir anschließen.\n\n[asker_nameDef] sagt, dass dort [allSitePartsDescriptionsExceptFirst][pawnInvolvedInQuestInfo]</li>
     <li>pawnInvolvedInQuestInfo(priority=1)->[refugee_pawnInvolvedInQuestInfo]</li>
     <li>pawnInvolvedInQuestInfo-></li>
     <!-- gender-specific -->
     <li>ein_N_jaehriger(refugee_gender==Male)->ein [refugee_age]-jähriger</li>
     <li>ein_N_jaehriger(refugee_gender==Female)->eine [refugee_age]-jährige</li>
+    <li>sein_Freund(refugee_gender==Male)->[asker_possessive] Freund</li>
+    <li>sein_Freund(refugee_gender==Female)->[asker_possessive]e Freundin</li>
   </OpportunitySite_DownedRefugee.questDescriptionRules.rulesStrings>
   <!-- EN:
     <li>questName->Saving [refugee_nameDef]</li>
