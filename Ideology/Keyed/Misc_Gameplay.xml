@@ -597,22 +597,30 @@
   <BiosculpterPodCycleLabel>Zyklus</BiosculpterPodCycleLabel>
   <!-- EN: loading ingredients -->
   <BiosculpterPodCycleLabelLoading>mit Inhaltsstoffen befüllen</BiosculpterPodCycleLabelLoading>
-  <!-- EN: ready -->
-  <BiosculpterPodCycleLabelReady>bereit</BiosculpterPodCycleLabelReady>
-  <!-- EN: Prepare {0} cycle -->
-  <BiosculpterPodCycleCommand>{0} Zyklus vorbereiten</BiosculpterPodCycleCommand>
+  <!-- EN: (and biotuning) -->
+  <BiosculpterPodCycleWillBiotune>(und biologische Abstimmung)</BiosculpterPodCycleWillBiotune><!--text_todo-->
+  <!-- EN: Begin {0} cycle -->
+  <BiosculpterPodCycleCommand>{0} Zyklus starten</BiosculpterPodCycleCommand>
+  <!-- EN: Ready for cycle selection -->
+  <BiosculpterPodCycleSelection>Bereit für Zyklusauswahl</BiosculpterPodCycleSelection><!--text_todo-->
+  <!-- EN: Nutrition loaded, no power -->
+  <BiosculpterPodCycleSelectionNoPower>Nahrung geladen, kein Strom</BiosculpterPodCycleSelectionNoPower><!--text_todo-->
   <!-- EN: Ends in -->
   <BiosculpterCycleTimeRemaining>Endet in</BiosculpterCycleTimeRemaining>
+  <!-- EN: Paused: No power (interrupt in {TIME}) -->
+  <BiosculpterCycleNoPowerInterrupt>Pausiert: Kein Strom (Abbruch in {replace: {TIME}; "Tage"-"Tagen"; "Jahre"-"Jahren"})</BiosculpterCycleNoPowerInterrupt><!--text_todo-->
   <!-- EN: Biotuned to -->
   <BiosculpterBiotunedTo>Biologisch abgestimmt auf</BiosculpterBiotunedTo>
   <!-- EN: Interrupt cycle -->
   <BiosculpterInteruptCycle>Zyklus unterbrechen</BiosculpterInteruptCycle>
   <!-- EN: Interrupt the current cycle. The occupant will be ejected without benefiting from the effects of the cycle, and will suffer from short-term biosculpter sickness. -->
   <BiosculpterInteruptCycleDesc>Unterbrich den aktuellen Zyklus. Der Insasse wird herausgeworfen, ohne von den Effekten des Zyklus zu profitieren, und leidet kurzzeitig an der Bioformerkrankheit.</BiosculpterInteruptCycleDesc>
-  <!-- EN: Warning: Age reversal cycle cannot be run while biosculpter is tuned to {PAWN_labelShort} because {PAWN_labelShort} is under {ADULTAGE} years old. -->
-  <BiosculpterUnderageAgeReversalMessage>Warnung: Der Altersumkehrzyklus kann nicht durchgeführt werden, während die Bioformerkapsel auf {PAWN_labelShort} abgestimmt ist, da {PAWN_labelShort} unter {ADULTAGE} Jahre alt ist.</BiosculpterUnderageAgeReversalMessage>
-  <!-- EN: Once the biosculpter pod is filled with {INGREDIENTS}, select a colonist and right-click on the biosculpter pod or a downed person to start the cycle. -->
-  <BiosculpterLoadingStartedMessage>Sobald die Bioformerkapsel mit {INGREDIENTS} gefüllt ist, kannst du einen Kolonisten auswählen und die Bioformerkapsel oder eine bewegungsunfähige Person rechtsklicken, um den Zyklus zu starten.</BiosculpterLoadingStartedMessage>
+  <!-- EN: {PAWN_labelShort} will enter biosculpter and begin a {CYCLE} cycle. -->
+  <BiosculpterEnteringMessage>{PAWN_labelShort} wird den Bioformer betreten und einen {CYCLE}-Zyklus starten.</BiosculpterEnteringMessage><!--text_todo-->
+  <!-- EN: {PAWN_labelShort} will collect {INGREDIENTS}, and begin a {CYCLE} cycle. -->
+  <BiosculpterLoadingStartedMessage>{PAWN_labelShort} wird {INGREDIENTS} sammeln und einen {CYCLE}-Zyklus starten.</BiosculpterLoadingStartedMessage><!--text_todo-->
+  <!-- EN: {PAWN_labelShort} will collect {INGREDIENTS}, place {DOWNED_labelShort} inside the biosculpter, and begin a {CYCLE} cycle. -->
+  <BiosculpterCarryStartedMessage>{PAWN_labelShort} wird {INGREDIENTS} sammeln, {DOWNED_labelShort} in den Bioformer legen und einen {CYCLE}-Zyklus starten.</BiosculpterCarryStartedMessage><!--text_todo-->
   <!-- EN: {0} nutrition -->
   <NumNutrition>{0} Nahrung</NumNutrition>
   <!-- EN: {PAWN_labelShort} was ejected from a biosculpter pod due to lack of power. -->
@@ -623,10 +631,12 @@
   <BiosculpterHealCompletedWithCureMessage>{PAWN_labelShort} hat den Heilungszyklus abgeschlossen, außerdem wurde {PAWN_possessive} Leiden '{HEDIFF_label}' geheilt.</BiosculpterHealCompletedWithCureMessage>
   <!-- EN: {PAWN_labelShort} completed {PAWN_possessive} age reversal cycle. {PAWN_pronoun} expects the next age reversal in {DEADLINE} days. -->
   <BiosculpterAgeReversalCompletedMessage>{PAWN_labelShort} hat {PAWN_possessive}en Altersumkehrzyklus abgeschlossen. {PAWN_pronoun} erwartet die nächste Altersumkehr in {DEADLINE} Tagen.</BiosculpterAgeReversalCompletedMessage>
-  <!-- EN: {PAWN_labelShort} completed pleasure cycle. -->
-  <BiosculpterPleasureCompletedMessage>{PAWN_labelShort} hat den Vergnügungszyklus abgeschlossen.</BiosculpterPleasureCompletedMessage>
+  <!-- EN: {PAWN_labelShort}'s pleasure cycle is complete. -->
+  <BiosculpterPleasureCompletedMessage>{replace: {PAWN_labelShort}s; "s(/Name)s"-"s(/Name)'"; "ß(/Name)s"-"ß(/Name)'"; "z(/Name)s"-"z(/Name)'"; "x(/Name)s"-"x(/Name)'"; "ce(/Name)s"-"ce(/Name)'"} Vergnügungszyklus ist abgeschlossen.</BiosculpterPleasureCompletedMessage>
   <!-- EN: Cleanliness speed factor -->
-  <BiosculpterCleanlinessSpeedFactor>Sauberkeitsgeschwindigkeit</BiosculpterCleanlinessSpeedFactor>
+  <BiosculpterCleanlinessSpeedFactor>Sauberkeit-Geschwindigkeitsfaktor</BiosculpterCleanlinessSpeedFactor>
+  <!-- EN: Biotuned speed factor -->
+  <BiosculpterBiotunedSpeedFactor>Bioabstimmung-Geschwindigkeitsfaktor</BiosculpterBiotunedSpeedFactor><!--text_todo-->
   <!-- EN: These conditions will be healed -->
   <HealingCycleWillHeal>Folgende Leiden werden geheilt</HealingCycleWillHeal>
   <!-- EN: One of these conditions will be healed -->
