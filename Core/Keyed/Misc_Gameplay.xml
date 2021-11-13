@@ -259,7 +259,7 @@
   <!-- EN: outdoors -->
   <DeterioratingOutdoors>draußen</DeterioratingOutdoors>
   <!-- EN: Deteriorating because of -->
-  <DeterioratingBecauseOf>Verrottet weil</DeterioratingBecauseOf>
+  <DeterioratingBecauseOf>Zerfällt weil</DeterioratingBecauseOf>
   <!-- EN: Map -->
   <Map>Karte</Map>
   <!-- EN: {0} until enemies arrive -->
@@ -666,7 +666,7 @@
   <!-- EN: {1_labelShort} is not drafted. -->
   <IsNotDrafted>{1_labelShort} ist nicht im Kampfmodus.</IsNotDrafted>
   <!-- EN: {PAWN_nameDef} cannot use ranged weapons due to {PAWN_possessive} {APPAREL_label}. -->
-  <ApparelPreventsShooting>{PAWN_nameDef} kann wegen {PAWN_possessive}er {APPAREL_label} keine Fernkampfwaffe benutzen.</ApparelPreventsShooting>
+  <ApparelPreventsShooting>{replace: {PAWN_nameDef}s; "s(/Name)s"-"s(/Name)'"; "ß(/Name)s"-"ß(/Name)'"; "z(/Name)s"-"z(/Name)'"; "x(/Name)s"-"x(/Name)'"; "ce(/Name)s"-"ce(/Name)'"} {APPAREL_label} verhindert den Einsatz von Fernkampfwaffen.</ApparelPreventsShooting>
 
   <!-- Snow -->
   <!-- EN: No snow -->
@@ -724,7 +724,7 @@
   <!-- EN: watching the aurora. -->
   <WatchingAurora>beobachtet das Polarlicht.</WatchingAurora>
   <!-- EN: using {0} on {1}. -->
-  <UsingVerb>benutzt {0} an {1}.</UsingVerb>
+  <UsingVerb>benutzt {0} auf {1}.</UsingVerb>
   <!-- EN: using {0}. -->
   <UsingVerbNoTarget>benutzt {0}.</UsingVerbNoTarget>
   <!-- EN: area -->
@@ -1274,7 +1274,7 @@
   <!-- EN: Due for maintenance. -->
   <DueForMaintenance>Instandhaltung ist fällig.</DueForMaintenance>
   <!-- EN: Deteriorating due to lack of maintenance. -->
-  <DeterioratingDueToLackOfMaintenance>Verrottet aufgrund mangelnder Instandhaltung.</DeterioratingDueToLackOfMaintenance>
+  <DeterioratingDueToLackOfMaintenance>Zerfällt aufgrund mangelnder Instandhaltung.</DeterioratingDueToLackOfMaintenance>
 
   <!-- Deep drill -->
   <!-- EN: Progress to next lump -->
@@ -1282,13 +1282,13 @@
   <!-- EN: Resource below -->
   <ResourceBelow>Unterirdische Ressource</ResourceBelow>
   <!-- EN: Progress to next portion -->
-  <ProgressToNextPortion>Fortschritt bis zum nächsten Teilstück</ProgressToNextPortion>
+  <ProgressToNextPortion>Fortschritt bis zur nächsten Ausbeute</ProgressToNextPortion>
   <!-- EN: No resources below. -->
   <DeepDrillNoResources>Keine unterirdische Ressource.</DeepDrillNoResources>
   <!-- EN: Deep drill resources exhausted, drill automatically forbidden. Unforbid to begin mining of {0}. -->
-  <DeepDrillExhausted>Die unterirdischen Ressourcen sind erschöpft, die Arbeit am Bohrer wird automatisch verboten. Hebe das Verbot auf, um mit dem Abbau des {0}vorkommens zu beginnen.</DeepDrillExhausted>
+  <DeepDrillExhausted>Tiefenbohrer-Ressourcen sind erschöpft. Bohren wurde automatisch verboten. Hebe das Verbot auf, um künftig {0} zu fördern.</DeepDrillExhausted>
   <!-- EN: Deep drill resources exhausted. -->
-  <DeepDrillExhaustedNoFallback>Die unterirdischen Ressourcen sind erschöpft.</DeepDrillExhaustedNoFallback>
+  <DeepDrillExhaustedNoFallback>Tiefenbohrer-Ressourcen sind erschöpft.</DeepDrillExhaustedNoFallback>
 
   <!-- reloading ammo -->
   <!-- EN: Remaining charges -->
