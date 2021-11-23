@@ -20,6 +20,7 @@ jobs:
     - uses: actions/checkout@v2
       
     - name: Update WordInfo
+      shell: powershell # Forces the usage of PowerShell Desktop
       run: .\update-wordinfo.ps1
     - name: Commit
       run: |
