@@ -111,15 +111,19 @@
     <li>freedom->self-determination</li>
   -->
   <SparkJailbreak.logRulesInitiator.rulesStrings>
-    <li>r_logentry->[INITIATOR_nameDef] sprach über die Vorzüge der [freedom] und zeigte [RECIPIENT_nameDef], wie man [escape] könnte.</li>
-    <li>r_logentry->[INITIATOR_nameDef] sprach darüber, wie gern [INITIATOR_pronoun] wieder [TerrainFeatures] sehen würde und bot [RECIPIENT_nameDef] die gemeinsame Flucht an.</li>
-    <li>r_logentry->[INITIATOR_nameDef] zeigte [RECIPIENT_nameDef], wie man [escape] könnte, und versprach, bald die Heimat wiederzusehen.</li>
-    <li>r_logentry->[INITIATOR_nameDef] erzählte [RECIPIENT_nameDef], wie lasch die Sicherheitsvorkehrungen sind, und überredete [RECIPIENT_objective] zur Flucht.</li>
+    <li>r_logentry->[INITIATOR_nameDef] sprach über die Vorzüge von [freedom] und zeigte eine Möglichkeit zur Flucht auf.</li>
+    <li>r_logentry(p=0.33)->[INITIATOR_nameDef] sprach darüber, wie schön der [TerrainFeatureMas] ist, und bot [ihm] Freiheit an.</li>
+    <li>r_logentry(p=0.33)->[INITIATOR_nameDef] sprach darüber, wie schön die [TerrainFeatureFem] ist, und bot [ihm] Freiheit an.</li>
+    <li>r_logentry(p=0.33)->[INITIATOR_nameDef] sprach darüber, wie schön das [TerrainFeatureNeu] ist, und bot [ihm] Freiheit an.</li>
+    <li>r_logentry->[INITIATOR_nameDef] zeigte [RECIPIENT_nameDef] einen Fluchtweg und versprach [ihm] [freedom].</li>
+    <li>r_logentry->[INITIATOR_nameDef] erklärte [RECIPIENT_nameDef], dass die Sicherheitsvorkehrungen lasch sind, und ermutigte [RECIPIENT_objective] zur Flucht.</li>
     <li>freedom->Freiheit</li>
-    <li>freedom->Heimat</li>
+    <li>freedom->Chancen</li>
+    <li>freedom->Heimkehr</li>
     <li>freedom->Selbstbestimmung</li>
-    <li>escape->fliehen</li>
-    <li>escape->entkommen</li>
+    <!-- gender-specific -->
+    <li>ihm(RECIPIENT_gender!=Female)->ihm</li>
+    <li>ihm(RECIPIENT_gender==Female)->ihr</li>
   </SparkJailbreak.logRulesInitiator.rulesStrings>
   
 </LanguageData>
