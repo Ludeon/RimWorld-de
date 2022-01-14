@@ -76,7 +76,7 @@
   <ShuttleCrash_Rescue.questDescriptionRules.rulesStrings>
     <li>pawnLabelSingleOrPlural(civilians_count==1)->[pawnLabel]</li>
     <li>pawnLabelSingleOrPlural(civilians_count>=2)->[pawnLabelPlural]</li>
-    <li>questDescription->Ein Shuttle der Fraktion [asker_faction_name] ist beschädigt und sucht einen Platz zum Landen. [asker_nameDef], [der] [Kommandant] des Shuttles, will in [map_definite] landen.\n\n[enemyFaction_pawnsPlural] der Fraktion [enemyFaction_name] werden den Absturzort des Shuttles angreifen und versuchen, die Insassen zu töten. Du musst sie verteidigen.\n\nIn dem Shuttle befinden sich [asker_nameDef][andOtherCivilians] und [soldiers_count] Soldaten. [der] [Kommandant] [andCivilians] [muss] gerettet werden, aber die Soldaten sind entbehrlich.\n\n[rescueDelay_duration] später wird ein Rettungs-Shuttle eintreffen, um die Überlebenden abzuholen. Du hast [leaveDelay_duration] Zeit, alle an Bord zu bringen.</li>
+    <li>questDescription->Ein Shuttle der Fraktion [asker_faction_name] ist beschädigt und sucht einen sicheren Platz zum Landen. [asker_nameDef], [der] [Kommandant] des Shuttles, ist der festen Überzeugung, diesen in [map_definite] gefunden zu haben.\n\n[enemyFaction_pawnsPlural] der Fraktion [enemyFaction_name] werden den Absturzort des Shuttles angreifen und versuchen, die Insassen zu töten. Du musst sie verteidigen.\n\nIn dem Shuttle befinden sich [asker_nameDef][andOtherCivilians] und [soldiers_count] [Soldat]. [der] [Kommandant] [andCivilians] [muss] gerettet werden, aber [der_Soldat_ist] entbehrlich.\n\n[rescueDelay_duration] später wird ein Rettungs-Shuttle eintreffen, um die Überlebenden abzuholen. Du hast [leaveDelay_duration] Zeit, alle an Bord zu bringen.</li>
     <li>andOtherCivilians(civilians_count==1)-></li>
     <li>andOtherCivilians(civilians_count==2)->, ein weiterer [pawnLabel]</li>
     <li>andOtherCivilians(civilians_count>=3)->, [civilianCountMinusOne] weitere [pawnLabelSingleOrPlural]</li>
@@ -85,6 +85,10 @@
     <li>andCivilians(civilians_count>=3)->und die [pawnLabelPlural]</li>
     <li>muss(civilians_count==1)->muss</li>
     <li>muss(civilians_count>=2)->müssen</li>
+    <li>Soldat(soldiers_count==1)->[soldiers0_kind]</li>
+    <li>Soldat(soldiers_count>=2)->[soldiers0_kind]e</li>
+    <li>der_Soldat_ist(soldiers_count==1)->der [soldiers0_kind] ist</li>
+    <li>der_Soldat_ist(soldiers_count>=2)->die [soldiers0_kind]e sind</li>
     <!-- gender-specific -->
     <li>Kommandant(asker_gender==Male)->Kommandant</li>
     <li>Kommandant(asker_gender==Female)->Kommandantin</li>

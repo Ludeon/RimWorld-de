@@ -55,7 +55,7 @@
   <MessageConditionCauserDespawned>{0} wurde zerstört.</MessageConditionCauserDespawned>
   
   <!-- EN: Bill complete: {0}. -->
-  <MessageBillComplete>Aufgabe beendet: {0}.</MessageBillComplete>
+  <MessageBillComplete>Aufgabe erledigt: {0}.</MessageBillComplete>
 
   <!-- EN: {1_label} is fully healed. -->
   <MessageFullyHealed>{1_label} ist vollständig geheilt.</MessageFullyHealed>
@@ -116,19 +116,19 @@
   <!-- EN: Must designate abandoned artificial structures. -->
   <MessageMustDesignateClaimable>Funktioniert nur bei künstlichen Strukturen, die verlassen sind.</MessageMustDesignateClaimable>
   <!-- EN: You must defeat a mech cluster before you can deconstruct it. -->
-  <MessageMustDesignateDeconstructibleMechCluster>Du musst einen Mech-Cluster besiegen, bevor du ihn abreißen kannst.</MessageMustDesignateDeconstructibleMechCluster>
+  <MessageMustDesignateDeconstructibleMechCluster>Du musst den Mech-Cluster besiegen, bevor du es abreißen kannst.</MessageMustDesignateDeconstructibleMechCluster>
   <!-- EN: Must designate rough stone surfaces. -->
   <MessageMustDesignateSmoothableSurface>Funktioniert nur bei rauen Steinoberflächen.</MessageMustDesignateSmoothableSurface>
   <!-- EN: Nothing can remove thick roofs. -->
-  <MessageNothingCanRemoveThickRoofs>Höhlendecken können nicht entfernt werden.</MessageNothingCanRemoveThickRoofs>
+  <MessageNothingCanRemoveThickRoofs>Massive Höhlendecken können nicht abgerissen werden.</MessageNothingCanRemoveThickRoofs>
   <!-- EN: This is already in storage and will be moved to high-priority storage as necessary. -->
   <MessageAlreadyInStorage>Befindet sich bereits im Lager und wird bei Bedarf in ein anderes Lager mit höherer Priorität verlegt.</MessageAlreadyInStorage>
   <!-- EN: Must designate corpse or downed character with strippable apparel. -->
-  <MessageMustDesignateStrippable>Funktioniert nur bei Leichen oder zu Fall gebrachten Charakteren, die entkleidet werden können.</MessageMustDesignateStrippable>
+  <MessageMustDesignateStrippable>Funktioniert nur bei Leichen oder am Boden liegenden Charakteren, die entkleidet werden können.</MessageMustDesignateStrippable>
   <!-- EN: Must designate tame animal that belongs to the colony. -->
   <MessageMustDesignateSlaughterable>Funktioniert nur bei Tieren, die gezähmt sind und der Kolonie angehören.</MessageMustDesignateSlaughterable>
   <!-- EN: Must designate full graves or containers. -->
-  <MessageMustDesignateOpenable>Funktioniert nur bei vollen Gräbern und Behältern.</MessageMustDesignateOpenable>
+  <MessageMustDesignateOpenable>Funktioniert nur bei vollen Gräbern oder Behältern.</MessageMustDesignateOpenable>
   <!-- EN: Must designate unforbidden items. -->
   <MessageMustDesignateForbiddable>Funktioniert nur bei nicht-verbotenen Objekten.</MessageMustDesignateForbiddable>
   <!-- EN: Must designate forbidden items. -->
@@ -140,7 +140,7 @@
   <!-- EN: There are no medical beds available. -->
   <MessageNoMedicalBeds>Es sind keine Krankenbetten verfügbar.</MessageNoMedicalBeds>
   <!-- EN: There are no animal beds available. -->
-  <MessageNoAnimalBeds>Es fehlen Schlafmöglichkeiten für die Tiere.</MessageNoAnimalBeds>
+  <MessageNoAnimalBeds>Es sind keine Tierbetten verfügbar.</MessageNoAnimalBeds>
   <!-- EN: Operation requires {0} or better, but {PAWN_labelShort}'s current medical care mode is "{2}". -->
   <MessageTooLowMedCare>Operation benötigt {0} oder besser, aber der Pflegemodus von {PAWN_labelShort} steht auf "{2}".</MessageTooLowMedCare>
   
@@ -161,9 +161,9 @@
   <!-- EN: {PAWN_nameDef} is pregnant! -->
   <MessageAnimalIsPregnant>{PAWN_nameDef} ist trächtig!</MessageAnimalIsPregnant>
   <!-- EN: {0} has miscarried due to starvation. -->
-  <MessageMiscarriedStarvation>{0} hatte aufgrund des Hungers eine Fehlgeburt.</MessageMiscarriedStarvation>
+  <MessageMiscarriedStarvation>{0} hatte aufgrund von Hungersnot eine Fehlgeburt.</MessageMiscarriedStarvation>
   <!-- EN: {0} has miscarried due to poor health. -->
-  <MessageMiscarriedPoorHealth>{0} hatte aufgrund der schlechten Gesundheit eine Fehlgeburt.</MessageMiscarriedPoorHealth>
+  <MessageMiscarriedPoorHealth>{0} hatte aufgrund schlechter Gesundheit eine Fehlgeburt.</MessageMiscarriedPoorHealth>
   <!-- EN: {0} has given birth. -->
   <MessageGaveBirth>{0} hat ein Junges zur Welt gebracht.</MessageGaveBirth>
   
@@ -177,7 +177,7 @@
   <MessageWentOverPsychicEntropyLimit>{PAWN_labelShort} hat das normale Neuralhitzelimit überschritten.</MessageWentOverPsychicEntropyLimit>
 
   <!-- EN: No handler can tame {ANIMAL_kindBase} (requires level {1} in {2}, best handler {HANDLER_labelShort} has {4}). -->
-  <MessageNoHandlerSkilledEnough>Kein Tierpfleger kann {ANIMAL_kindBase} zähmen (benötigt Stufe {1} in {2}, bester Pfleger {HANDLER_labelShort} hat {4}).</MessageNoHandlerSkilledEnough>
+  <MessageNoHandlerSkilledEnough>Keiner deiner Tierpfleger kann {ANIMAL_kindBase} zähmen (benötigt Stufe {1} in {2}, bester Pfleger {HANDLER_labelShort} hat {4}).</MessageNoHandlerSkilledEnough>
   
   <!-- EN: {EATEN_labelShort} has been eaten by {PREDATOR}. -->
   <MessageEatenByPredator>{PREDATOR_kindBaseIndef} hat {EATEN_labelShort} gefressen.</MessageEatenByPredator>
@@ -228,7 +228,7 @@
   <MessageSuccessfullyRemovedHediff>{SURGEON_labelShort} hat erfolgreich {replace: {PATIENT_labelShort}s; "s(/Name)s"-"s(/Name)'"; "ß(/Name)s"-"ß(/Name)'"; "z(/Name)s"-"z(/Name)'"; "x(/Name)s"-"x(/Name)'"; "ce(/Name)s"-"ce(/Name)'"} {HEDIFF} entfernt.</MessageSuccessfullyRemovedHediff>
   
   <!-- EN: Chunks of a spacecraft have impacted nearby. You can deconstruct them to yield resources. -->
-  <MessageShipChunkDrop>Teile eines Raumschiffs sind in der Nähe abgestürzt. Du kannst sie abreißen, um an Rohstoffe zu gelangen.</MessageShipChunkDrop>
+  <MessageShipChunkDrop>Teile eines Raumschiffs sind in der Nähe abgestürzt. Du kannst sie abreißen, um Ressourcen zu erhalten.</MessageShipChunkDrop>
 
   <!-- EN: Some items cannot be traded because of:  -->
   <MessageCannotSellItemsReason>Einige Waren können nicht in den Handel einbezogen werden, weil: </MessageCannotSellItemsReason>
@@ -385,16 +385,16 @@
   <!-- EN: {0} from {1} are attacking your {2}. -->
   <MessageDefendersAttacking>{0} der Fraktion '{1}' greifen deine {2} an.</MessageDefendersAttacking>
   <!-- EN: Mechanoids have been assembled and will defend their cluster. -->
-  <MessageMechanoidsAssembled>Mechanoiden wurden zusammengesetzt und werden ihren Cluster verteidigen.</MessageMechanoidsAssembled>
+  <MessageMechanoidsAssembled>Mechanoiden wurden gebaut und werden ihren Cluster verteidigen.</MessageMechanoidsAssembled>
   <!-- EN: Remaining mechanoids to assemble -->
-  <MessageMechanoidsLeftToAssemble>Verbleibende Mechanoiden zum Zusammensetzen</MessageMechanoidsLeftToAssemble>
+  <MessageMechanoidsLeftToAssemble>Noch zu bauende Mechanoiden</MessageMechanoidsLeftToAssemble>
   <!-- EN: Mech drop beacon has summoned reinforcements in drop pods nearby. -->
-  <MessageMechanoidsReinforcementsDrop>Eine Mech-Bake hat in der Nähe neue Mechanoiden herbeigerufen, die mit Abwurfkapseln eintreffen werden.</MessageMechanoidsReinforcementsDrop>
+  <MessageMechanoidsReinforcementsDrop>Eine Mech-Bake hat in der Nähe neue Mechanoiden via Landungskapseln herbeigerufen.</MessageMechanoidsReinforcementsDrop>
 
   <!-- EN: To self-tend, {1_labelShort} must also be assigned to Doctor work. -->
   <MessageSelfTendUnsatisfied>Für die Selbstbehandlung muss {1_labelShort} als Arzt eingeteilt werden.</MessageSelfTendUnsatisfied>
   <!-- EN: {1_labelShort} is incapable of doing Doctor work, and so cannot ever self-tend. -->
-  <MessageCannotSelfTendEver>{1_labelShort} verweigert ärztliche Tätigkeiten und ist daher nicht in der Lage, sich selbst zu behandeln.</MessageCannotSelfTendEver>
+  <MessageCannotSelfTendEver>{1_labelShort} verweigert ärztliche Tätigkeiten und kann sich daher nicht selbst behandeln.</MessageCannotSelfTendEver>
   
   <!-- EN: This tile is impassable. -->
   <MessageCantAddWaypointBecauseImpassable>Dieses Feld ist unpassierbar.</MessageCantAddWaypointBecauseImpassable>
@@ -563,7 +563,7 @@
   <!-- EN: {1_labelShort} has been returned to the wild. -->
   <MessageAnimalReturnedWildReleased>{1_labelShort} wurde in die Wildnis entlassen.</MessageAnimalReturnedWildReleased>
   <!-- EN: Due to a lack of maintenance training, {ANIMAL_labelShort} has lost a skill: {1} -->
-  <MessageAnimalLostSkill>Aufgrund mangelnder Aufrechterhaltung des Trainings hat {ANIMAL_labelShort} die Fähigkeit '{1}' verloren.</MessageAnimalLostSkill>
+  <MessageAnimalLostSkill>Aufgrund mangelnder Aufrechterhaltung des Trainings hat {ANIMAL_labelShort} die {1}-Fähigkeit verloren.</MessageAnimalLostSkill>
 
   <!-- EN: Translation report written to {0} -->
   <MessageTranslationReportSaved>Übersetzungsreport wurde erstellt in {0}</MessageTranslationReportSaved>

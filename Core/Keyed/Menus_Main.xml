@@ -147,7 +147,7 @@
   <!-- EN: Show mods data location -->
   <ShowModsDataLocation>Mod-Daten-Standort anzeigen</ShowModsDataLocation>
   <!-- EN: Are you sure you want to disable the core mod? The game won't work at all unless you have another mod that replaces all the core functionality.\n\nRemember, other mods can override defs in the core mod by using the same defName. -->
-  <ConfirmDisableCoreMod>Das Spiel wird nur funktionieren, wenn du eine andere Mod hast, die alle Kernfunktionen ersetzt.\n\nDenke daran, dass andere Mods die Defs der Core-Mod überschreiben können, indem sie denselben DefName verwenden.</ConfirmDisableCoreMod>
+  <ConfirmDisableCoreMod>Bist du sicher, dass du die Core-Mod deaktivieren willst? Das Spiel wird nur funktionieren, wenn du eine andere Mod hast, die alle Core-Funktionen ersetzt.\n\nDenke daran, dass andere Mods die Defs der Core-Mod durch Verwenden desselben DefNamens überschreiben können.</ConfirmDisableCoreMod>
   <!-- EN: Are you sure you want to delete all the content for {0}? -->
   <ConfirmDeleteMod>Bist du sicher, dass du alle Daten von {0} löschen willst?</ConfirmDeleteMod>
   <!-- EN: Auto-sort mods -->
@@ -281,9 +281,9 @@
   <!-- EN: The AI Storyteller creates events like pirate raids, resource drops, or animal attacks. Their choices will affect the story of your colony. You can change these settings at any time. -->
   <HowStorytellersWork>Ein Erzähler generiert Ereignisse, wie z. B. Piratenüberfälle, Rohstoffabwürfe oder Tierangriffe. Seine Entscheidungen werden die Geschichte deiner Kolonie beeinflussen. Du kannst diese Einstellungen jederzeit ändern.</HowStorytellersWork>
   <!-- EN: Please choose a difficulty setting. -->
-  <MustChooseDifficulty>Bitte wähle eine Schwierigkeit aus.</MustChooseDifficulty>
+  <MustChooseDifficulty>Bitte wähle einen Schwierigkeitsgrad aus.</MustChooseDifficulty>
   <!-- EN: Difficulty -->
-  <Difficulty>Schwierigkeit</Difficulty>
+  <Difficulty>Schwierigkeitsgrad</Difficulty>
   <!-- EN: Commitment mode -->
   <CommitmentMode>Hardcore-Modus</CommitmentMode>
   <!-- EN: Reload anytime mode -->
@@ -355,11 +355,11 @@
   <!-- EN: Quest rewards -->
   <Difficulty_QuestRewardValueFactor_Label>Questbelohnungen</Difficulty_QuestRewardValueFactor_Label>
   <!-- EN: Adjust the value of rewards given for quests.\n\nNote: Quest reward value is also automatically scaled to compensate for threat scale. If you adjust this setting, you'll be adding an additional multiplier. -->
-  <Difficulty_QuestRewardValueFactor_Info>Passe die Wertigkeit der Belohnungen an, die für Quests angeboten werden.\n\nHinweis: Die Wertigkeit von Questbelohnungen wird zudem automatisch skaliert, um den Bedrohungsausmaß auszugleichen. Wenn du diese Einstellung anpasst, wirst du einen zusätzlichen Multiplikator hinzufügen.</Difficulty_QuestRewardValueFactor_Info>
+  <Difficulty_QuestRewardValueFactor_Info>Passe den Reichtum der Belohnungen an, die für Quests angeboten werden.\n\nHinweis: Dieser Wert wird zudem automatisch skaliert, um den Bedrohungsausmaß auszugleichen. Wenn du diese Einstellung anpasst, wirst du einen zusätzlichen Multiplikator hinzufügen.</Difficulty_QuestRewardValueFactor_Info>
   <!-- EN: Raid loot -->
-  <Difficulty_RaidLootPointsFactor_Label>Plünderungsbeute</Difficulty_RaidLootPointsFactor_Label>
+  <Difficulty_RaidLootPointsFactor_Label>Raider-Inventar</Difficulty_RaidLootPointsFactor_Label>
   <!-- EN: Adjust the value of loot carried by raiders.\n\nNote: Raid loot value is also automatically scaled to compensate for threat scale. If you adjust this setting, you'll be adding an additional multiplier. -->
-  <Difficulty_RaidLootPointsFactor_Info>Passe die Wertigkeit der Beute an, die von Plünderern getragen wird.\n\nHinweis: Der Plünderungsbeutewert wird zudem automatisch skaliert, um den Bedrohungsausmaß auszugleichen. Wenn du diese Einstellung anpasst, wirst du einen zusätzlichen Multiplikator hinzufügen.</Difficulty_RaidLootPointsFactor_Info>
+  <Difficulty_RaidLootPointsFactor_Info>Passe den Reichtum der Gegenstände an, die von Raidern mitgeführt werden.\n\nHinweis: Dieser Wert wird zudem automatisch skaliert, um den Bedrohungsausmaß auszugleichen. Wenn du diese Einstellung anpasst, wirst du einen zusätzlichen Multiplikator hinzufügen.</Difficulty_RaidLootPointsFactor_Info>
   <!-- EN: Turret rearm cost -->
   <Difficulty_MaintenanceCostFactor_Label>Neubewaffnungskosten für Geschütztürme</Difficulty_MaintenanceCostFactor_Label>
   <!-- EN: Adjust the cost of rearming turrets. -->
@@ -371,7 +371,7 @@
   <!-- EN: Enemy death on downed -->
   <Difficulty_EnemyDeathOnDownedChanceFactor_Label>Feind stirbt, wenn er zu Boden geht</Difficulty_EnemyDeathOnDownedChanceFactor_Label>
   <!-- EN: Adjust the extra chance that an enemy will immediately die when downed. This affects the chances to take prisoners, and thus colony population growth rates. -->
-  <Difficulty_EnemyDeathOnDownedChanceFactor_Info>Passe die zusätzliche Chance an, dass ein Feind sofort stirbt, wenn er zu Boden geht. Dies wirkt sich auf die Chancen aus, Gefangene zu machen, und damit auf die Populationswachstumsraten von Kolonien.</Difficulty_EnemyDeathOnDownedChanceFactor_Info>
+  <Difficulty_EnemyDeathOnDownedChanceFactor_Info>Passe die zusätzliche Chance an, dass ein Feind sofort stirbt, wenn er zu Boden geht. Dies wirkt sich auf die Chancen aus, Gefangene zu machen, und somit auf die Populationswachstumsraten von Kolonien.</Difficulty_EnemyDeathOnDownedChanceFactor_Info>
 
   <!-- EN: General -->
   <DifficultyGeneralSection>Allgemein</DifficultyGeneralSection>
@@ -418,7 +418,7 @@
   <!-- EN: Map generation natural hives -->
   <Difficulty_AllowCaveHives_Label>Kartengenerierung: Natürliche Insektenkolonien</Difficulty_AllowCaveHives_Label>
   <!-- EN: Dormant insect hives may spawn in natural caves.\n\nThis setting only applies to map generation and does not affect active insects that may tunnel in during play. -->
-  <Difficulty_AllowCaveHives_Info>Ruhende Insektenkolonien können in natürlichen Höhlen spawnen.\n\nDiese Einstellung gilt nur für die Kartengenerierung und hat keinen Einfluss auf aktive Insekten, die während des Spiels Tunnel graben und eindringen.</Difficulty_AllowCaveHives_Info>
+  <Difficulty_AllowCaveHives_Info>Inaktive Insektenkolonien können in natürlichen Höhlen spawnen.\n\nDiese Einstellung gilt nur für die Kartengenerierung und hat keinen Einfluss auf aktive Insekten, die sich während des Spiels an die Oberfläche graben.</Difficulty_AllowCaveHives_Info>
 
   <!-- EN: Player tools -->
   <DifficultyPlayerToolsSection>Spielerwerkzeuge</DifficultyPlayerToolsSection>
@@ -475,13 +475,13 @@
   <!-- EN: Please select a site. -->
   <MustSelectStartingSite>Bitte wähle einen Startplatz aus.</MustSelectStartingSite>
   <!-- EN: You cannot land on this biome: {0} -->
-  <CannotLandBiome>Du kannst in dieser Biosphäre nicht landen: {0}</CannotLandBiome>
+  <CannotLandBiome>Du kannst nicht auf diesem Biom landen: {0}</CannotLandBiome>
   <!-- EN: Biome not implemented -->
-  <BiomeNotImplemented>Biosphäre nicht verfügbar</BiomeNotImplemented>
+  <BiomeNotImplemented>Biom nicht implementiert</BiomeNotImplemented>
   <!-- EN: You cannot land on impassable mountains. -->
   <CannotLandImpassableMountains>Du kannst nicht auf unpassierbaren Bergen landen.</CannotLandImpassableMountains>
   <!-- EN: {0} already have a base there. -->
-  <BaseAlreadyThere>{0} haben hier bereits eine Basis.</BaseAlreadyThere>
+  <BaseAlreadyThere>Die Fraktion '{0}' hat hier bereits eine Basis.</BaseAlreadyThere>
   <!-- EN: You already have a base there. -->
   <YourBaseAlreadyThere>Du hast hier schon eine Basis.</YourBaseAlreadyThere>
   <!-- EN: This tile is occupied. -->
@@ -489,7 +489,7 @@
   <!-- EN: Settlements cannot be directly adjacent to each other. -->
   <FactionBaseAdjacent>Siedlungen können nicht direkt aneinander angrenzen.</FactionBaseAdjacent>
   <!-- EN: Biome -->
-  <Biome>Biosphäre</Biome>
+  <Biome>Biom</Biome>
   <!-- EN: Terrain -->
   <Terrain>Gelände</Terrain>
   <!-- EN: Road -->
@@ -505,7 +505,7 @@
   <!-- EN: Rainfall -->
   <Rainfall>Niederschlag</Rainfall>
   <!-- EN: Special features -->
-  <SpecialFeatures>Spezielle Eigenschaften</SpecialFeatures>
+  <SpecialFeatures>Besonderheiten</SpecialFeatures>
   <!-- EN: northern coast -->
   <HasCoast0>nördliche Küste</HasCoast0>
   <!-- EN: eastern coast -->
@@ -517,9 +517,9 @@
   <!-- EN: caves -->
   <HasCaves>Höhlen</HasCaves>
   <!-- EN: Faction base -->
-  <FactionBase>Basis einer Fraktion</FactionBase>
+  <FactionBase>Fraktionsbasis</FactionBase>
   <!-- EN: Stone types -->
-  <StoneTypesHere>Felsarten</StoneTypesHere>
+  <StoneTypesHere>Gesteinsarten</StoneTypesHere>
   <!-- EN: Time zone -->
   <TimeZone>Zeitzone</TimeZone>
   <!-- EN: Movement difficulty -->

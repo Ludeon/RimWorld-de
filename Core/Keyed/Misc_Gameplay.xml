@@ -11,13 +11,13 @@
   <!-- EN: Contained resources -->
   <ContainedResources>Eingelagerte Ressourcen</ContainedResources>
   <!-- EN: For prisoner use -->
-  <ForPrisonerUse>Für Gefangene</ForPrisonerUse>
+  <ForPrisonerUse>Beschränkt auf: Gefangene</ForPrisonerUse>
   <!-- EN: In prison cell: For prisoner use -->
-  <InPrisonCell>In Gefängniszelle: Für Gefangene</InPrisonCell>
+  <InPrisonCell>Beschränkt auf: Gefangene (aktuell im Haftraum)</InPrisonCell>
   <!-- EN: For colonist use -->
-  <ForColonistUse>Für Kolonisten</ForColonistUse>
+  <ForColonistUse>Beschränkt auf: Kolonisten</ForColonistUse>
   <!-- EN: Medical -->
-  <MedicalBed>Krankenbett</MedicalBed>
+  <MedicalBed>Für den medizinischen Gebrauch</MedicalBed>
   <!-- EN: Owner -->
   <Owner>Besitzer</Owner>
   <!-- EN: Owners -->
@@ -91,7 +91,7 @@
   <!-- EN: Drop -->
   <DropThing>Fallen lassen</DropThing>
   <!-- EN: Temporary faction members will not drop their items. -->
-  <DropThingLodger>Temporäre Fraktionsmitglieder werden ihre Gegenstände nicht fallen lassen.</DropThingLodger>
+  <DropThingLodger>Temporäre Fraktionsmitglieder werden ihre Sachen nicht ablegen.</DropThingLodger>
   <!-- EN: This person refuses to drop this. -->
   <DropThingLocked>Diese Person weigert sich, dies abzulegen.</DropThingLocked>
   <!-- EN: Rename -->
@@ -141,7 +141,7 @@
   <!-- EN: Hatches in -->
   <HatchesIn>Schlüpft in</HatchesIn>
   <!-- EN: need {0} level {2}, have {1} -->
-  <SkillTooLow>benötigt {0} auf Level {2}, hat {1}</SkillTooLow>
+  <SkillTooLow>benötigt {0} Stufe {2}, hat {1}</SkillTooLow>
   <!-- EN: Freezing -->
   <Freezing>Gefriert</Freezing>
   <!-- EN: Overheating -->
@@ -203,7 +203,7 @@
   <!-- EN: Days of food: {0} (rot in {1} days) -->
   <CaravanDaysOfFoodRot>Nahrungsvorrat: {0} (verdirbt in {1} Tagen)</CaravanDaysOfFoodRot>
   <!-- EN: Stopped because: Everyone is downed. -->
-  <AllCaravanMembersDowned>Angehalten: Alle liegen bewegungsunfähig am Boden.</AllCaravanMembersDowned>
+  <AllCaravanMembersDowned>Angehalten: Alle liegen am Boden.</AllCaravanMembersDowned>
   <!-- EN: Stopped because: Everyone is in a mental break. -->
   <AllCaravanMembersMentalBreak>Angehalten: Alle haben einen Nervenzusammenbruch.</AllCaravanMembersMentalBreak>
   <!-- EN: {0} {1} -->
@@ -315,7 +315,7 @@
   <!-- EN: Time left: {0} -->
   <WorldObjectTimeout>Verbleibende Zeit: {0}</WorldObjectTimeout>
   <!-- EN: Click to sort by this column. -->
-  <ClickToSortByThisColumn>Klicke, um nach dieser Spalte zu sortieren.</ClickToSortByThisColumn>
+  <ClickToSortByThisColumn>Klicke zum Sortieren nach dieser Spalte.</ClickToSortByThisColumn>
   <!-- EN: Shift + click: Increase priority\nShift + right click: Decrease priority -->
   <WorkPriorityShiftClickTip>Umschalt + Klick: Erhöhe Priorität\nUmschalt + Rechtsklick: Reduziere Priorität</WorkPriorityShiftClickTip>
   <!-- EN: Shift + click: Enable all\nShift + right click: Disable all -->
@@ -343,7 +343,7 @@
   <!-- EN: Caravan movement speed -->
   <CaravanMovementSpeedFull>Karawane-Reisegeschwindigkeit</CaravanMovementSpeedFull>
   <!-- EN: downed -->
-  <DownedLower>liegt bewegungsunfähig am Boden</DownedLower>
+  <DownedLower>liegt am Boden</DownedLower>
   <!-- EN: resting -->
   <Carried>ruht sich aus</Carried>
   <!-- EN: Rideable animals / people -->
@@ -455,9 +455,9 @@
   <!-- EN: Spawning in {0} -->
   <SpawningNextPawnIn>Spawnt in {replace: {0}; "Tage"-"Tagen"; "Jahre"-"Jahren"}</SpawningNextPawnIn>
   <!-- EN: {0} assembly completes in {1}. -->
-  <MechAssemblyCompleteIn>Zusammenbau von {0} in {replace: {1}; "Tage"-"Tagen"; "Jahre"-"Jahren"} fertiggestellt.</MechAssemblyCompleteIn>
+  <MechAssemblyCompleteIn>{0} wird gebaut und ist in {replace: {1}; "Tage"-"Tagen"; "Jahre"-"Jahren"} kampfbereit.</MechAssemblyCompleteIn>
   <!-- EN: Will assemble -->
-  <MechAssemblyNextType>Wird zusammenbauen</MechAssemblyNextType>
+  <MechAssemblyNextType>Baut als Nächstes</MechAssemblyNextType>
   <!-- EN: produced -->
   <ThingsProduced>produziert</ThingsProduced>
   <!-- EN: harvested -->
@@ -565,7 +565,7 @@
   <!-- EN: Treatment failed\n{0} chance -->
   <TextMote_TreatFailed>Behandlung fehlgeschlagen\n{0} Chance</TextMote_TreatFailed>
   <!-- EN: Harvest\nbotched -->
-  <TextMote_HarvestFailed>Ernte\nfehlgeschlagen</TextMote_HarvestFailed>
+  <TextMote_HarvestFailed>Ernte\nverbockt</TextMote_HarvestFailed>
   <!-- EN: Yield\nwasted -->
   <TextMote_YieldWasted>Ertrag\nverloren</TextMote_YieldWasted>
   <!-- EN: Product\nwasted -->
@@ -583,9 +583,9 @@
   <!-- EN: Trained: {0}\n{1} chance -->
   <TextMote_TrainSuccess>Training erfolgreich: {0}\n{1} Chance</TextMote_TrainSuccess>
   <!-- EN: Repair\nbotched -->
-  <TextMote_FixBrokenDownBuildingFail>Reparatur\nfehlgeschlagen</TextMote_FixBrokenDownBuildingFail>
+  <TextMote_FixBrokenDownBuildingFail>Reparatur\nverbockt</TextMote_FixBrokenDownBuildingFail>
   <!-- EN: Construction\nbotched -->
-  <TextMote_ConstructionFail>Konstruktion\nfehlgeschlagen</TextMote_ConstructionFail>
+  <TextMote_ConstructionFail>Konstruktion\nverbockt</TextMote_ConstructionFail>
   <!-- EN: Dodge -->
   <TextMote_Dodge>Ausgewichen</TextMote_Dodge>
   <!-- EN: Immune -->
@@ -912,7 +912,7 @@
   <!-- EN: Fresh -->
   <RotStateFresh>Frisch</RotStateFresh>
   <!-- EN: Rotting -->
-  <RotStateRotting>Am Verrotten</RotStateRotting>
+  <RotStateRotting>Verrottet</RotStateRotting>
   <!-- EN: Dessicated -->
   <RotStateDessicated>Skelettiert</RotStateDessicated>
   <!-- EN: Frozen (won't spoil) -->
@@ -970,7 +970,7 @@
   <!-- EN: Cannot grow (bad seasonal temperature). -->
   <CannotGrowBadSeasonTemperature>Kann nicht wachsen (jahreszeitbedingt ungünstige Temperatur).</CannotGrowBadSeasonTemperature>
   <!-- EN: Blighted -->
-  <Blighted>Verdorben</Blighted>
+  <Blighted>Befallen</Blighted>
   <!-- EN: Dying because exposed to light -->
   <DyingBecauseExposedToLight>Stirbt da dem Licht ausgesetzt</DyingBecauseExposedToLight>
   <!-- EN: Cut now -->
@@ -1130,13 +1130,13 @@
   <!-- EN: Component not yet ready -->
   <ShipReportNotReady>Komponente noch nicht bereit</ShipReportNotReady>
   <!-- EN: (*Name)Charlon Whitestone(/Name) is ready to begin the reactor's hibernation recovery sequence.\n\nHe warns you that the process will take about 15 days, and the energy signature will be detectable from a long distance away.\n\nThis sort of energy signature indicates interstellar flight capability, and will attract gangs of desperate raiders and swarms of deadly mechanoids.\n\nYou will be assaulted with an intensity you've never seen. Make sure your defenses are prepared first. -->
-  <HibernateWarning>(*Name)Charlon Whitestone(/Name) ist bereit, die Aktivierungssequenz des Reaktors einzuleiten.\n\nEr warnt dich, dass die Startup-Prozedur 15 Tage dauern kann und die Energiesignatur über weite Entfernungen messbar sein wird.\n\nDiese Art von Energiesignatur deutet auf interstellare Raumflugfähigkeit hin und wird ganze Gruppen von verzweifelten Räubern und Mechanoiden anlocken.\n\nDu wirst mit einer Stärke angegriffen, die du bisher noch nicht gesehen hast. Stelle sicher, dass deine Verteidigung steht, bevor du die Systeme hochfährst.</HibernateWarning>
+  <HibernateWarning>(*Name)Charlon Whitestone(/Name) ist bereit, die Sequenz zum Hochfahren des Reaktors einzuleiten.\n\nEr warnt dich, dass das Hochfahren etwa 15 Tage in Anspruch nimmt und die Energiesignatur schon aus großer Entfernung messbar sein wird.\n\nDiese Art von Energiesignatur deutet auf interstellare Flugtauglichkeit hin und wird sowohl verzweifelte Raider als auch tödliche Mechanoiden anlocken.\n\nDu wirst mit einer noch nie dagewesenen Intensität angegriffen werden. Sorge zuerst dafür, dass deine Verteidigung steht.</HibernateWarning>
   <!-- EN: The reactor is ready to power up.\n\nThe process will take about 15 days, and the energy signature will be detectable from a long distance away. This sort of energy signature indicates interstellar flight capability, and will attract gangs of desperate raiders and swarms of deadly mechanoids.\n\nYou will be assaulted with an intensity you've never seen. Make sure your defenses are prepared first. -->
-  <HibernateWarningStandalone>Der Reaktor ist bereit, hochgefahren zu werden.\n\nDie Startup-Prozedur wird ca. 15 Tage dauern, und die Energiesignatur wird über weite Entfernungen messbar sein.\n\nDiese Art von Energiesignatur deutet auf interstellare Raumflugfähigkeit hin und wird ganze Gruppen von verzweifelten Räubern sowie Mechanoiden anlocken.\n\nDu wirst mit einer Stärke angegriffen, die du bisher noch nicht gesehen hast. Stelle sicher, dass deine Verteidigung steht, bevor du die Systeme hochfährst.</HibernateWarningStandalone>
+  <HibernateWarningStandalone>Der Reaktor ist bereit, hochgefahren zu werden.\n\nDas Hochfahren nimmt etwa 15 Tage in Anspruch. Die Energiesignatur wird schon aus großer Entfernung messbar sein. Diese Art von Energiesignatur deutet auf interstellare Flugtauglichkeit hin und wird sowohl verzweifelte Raider als auch tödliche Mechanoiden anlocken.\n\nDu wirst mit einer noch nie dagewesenen Intensität angegriffen werden. Sorge zuerst dafür, dass deine Verteidigung steht.</HibernateWarningStandalone>
   <!-- EN: (*Name)Charlon Whitestone(/Name) is ready to begin the reactor's hibernation recovery sequence. He warns you that the process will take about 15 days. -->
-  <HibernateWarningPacifist>(*Name)Charlon Whitestone(/Name) ist bereit, die Aktivierungssequenz des Reaktors einzuleiten. Er warnt dich, dass die Startup-Prozedur 15 Tage dauern kann.</HibernateWarningPacifist>
+  <HibernateWarningPacifist>(*Name)Charlon Whitestone(/Name) ist bereit, die Sequenz zum Hochfahren des Reaktors einzuleiten. Er warnt dich, dass das Hochfahren etwa 15 Tage in Anspruch nimmt.</HibernateWarningPacifist>
   <!-- EN: The reactor is ready to power up. The process will take about 15 days. -->
-  <HibernateWarningStandalonePacifist>Der Reaktor ist bereit, hochgefahren zu werden. Der Prozess wird ca. 15 Tage dauern.</HibernateWarningStandalonePacifist>
+  <HibernateWarningStandalonePacifist>Der Reaktor ist bereit, hochgefahren zu werden. Das Hochfahren nimmt etwa 15 Tage in Anspruch.</HibernateWarningStandalonePacifist>
 
   <!-- Neurotrainer -->
   <!-- EN: skilltrainer ({0}) -->
@@ -1146,7 +1146,7 @@
   <!-- EN: A one-use super-dose of mechanites which trains a specific skill.\n\nThe dose is administered through the orbit of the eye. Once released into the brain, the mechanites quickly improve the subject's skills in a specific area, transmuting themselves into neural tissue as needed. -->
   <SkillNeurotrainerDescription>Eine einmalig verwendbare Superdosis von Mechaniten, die eine bestimmte Fähigkeit trainieren.\n\nDie Dosis wird über die Augenhöhlen verabreicht. Einmal im Gehirn freigesetzt, wandeln sich die Mechaniten bei Bedarf in Nervengewebe um und verbessern dabei eine bestimmte Fähigkeit des Subjekts.</SkillNeurotrainerDescription>
   <!-- EN: {USER_labelShort} used {1} neurotrainer to go from level {2} to level {3}. -->
-  <SkillNeurotrainerUsed>{USER_labelShort} hat einen Neurotrainer benutzt, um die Fähigkeit '{1}' von Stufe {2} auf Stufe {3} zu erhöhen.</SkillNeurotrainerUsed>
+  <SkillNeurotrainerUsed>{USER_labelShort} hat einen Neurotrainer benutzt, um {USER_possessive}e {1}-Fähigkeit von Stufe {2} auf Stufe {3} zu erhöhen.</SkillNeurotrainerUsed>
 
   <!-- Minification -->
   <!-- EN: Installed -->
@@ -1236,7 +1236,7 @@
 
   <!-- Marriage spot -->
   <!-- EN: Usable now. -->
-  <MarriageSpotUsable>Kann verwendet werden.</MarriageSpotUsable>
+  <MarriageSpotUsable>Kann jetzt verwendet werden.</MarriageSpotUsable>
   <!-- EN: Not usable: {0}. -->
   <MarriageSpotNotUsable>Kann nicht verwendet werden: {0}.</MarriageSpotNotUsable>
   <!-- EN: blocked -->
@@ -1248,25 +1248,25 @@
   <!-- EN: reserved -->
   <MarriageSpotReserved>reserviert</MarriageSpotReserved>
   <!-- EN: unreachable for {1_labelShort} -->
-  <MarriageSpotUnreachable>{1_labelShort} kann es nicht erreichen</MarriageSpotUnreachable>
+  <MarriageSpotUnreachable>nicht für {1_labelShort} erreichbar</MarriageSpotUnreachable>
   <!-- EN: in prison cell -->
-  <MarriageSpotInPrisonCell>im Gefängnis</MarriageSpotInPrisonCell>
+  <MarriageSpotInPrisonCell>im Haftraum</MarriageSpotInPrisonCell>
   <!-- EN: uncomfortable temperature -->
-  <NotEnjoyableOutsideTemperature>Temperatur ist unangenehm</NotEnjoyableOutsideTemperature>
+  <NotEnjoyableOutsideTemperature>unangenehme Temperatur</NotEnjoyableOutsideTemperature>
 
   <!-- Colonist bar -->
   <!-- EN: Medical rest -->
-  <ActivityIconMedicalRest>Med. Bettruhe</ActivityIconMedicalRest>
+  <ActivityIconMedicalRest>Liegt im Krankenbett</ActivityIconMedicalRest>
   <!-- EN: Sleeping -->
-  <ActivityIconSleeping>Schlafend</ActivityIconSleeping>
+  <ActivityIconSleeping>Schläft</ActivityIconSleeping>
   <!-- EN: Fleeing -->
-  <ActivityIconFleeing>Flüchtend</ActivityIconFleeing>
+  <ActivityIconFleeing>Flieht</ActivityIconFleeing>
   <!-- EN: Fighting -->
-  <ActivityIconAttacking>Kämpfend</ActivityIconAttacking>
+  <ActivityIconAttacking>Kämpft</ActivityIconAttacking>
   <!-- EN: Idle -->
   <ActivityIconIdle>Untätig</ActivityIconIdle>
   <!-- EN: Burning -->
-  <ActivityIconBurning>Brennend</ActivityIconBurning>
+  <ActivityIconBurning>Brennt</ActivityIconBurning>
   <!-- EN: Forming a caravan -->
   <ActivityIconFormingCaravan>Bildet eine Karawane</ActivityIconFormingCaravan>
 
@@ -1306,27 +1306,27 @@
 
   <!-- Compass -->
   <!-- EN: Shows the north direction. Click to rotate the camera so the north pole is up. -->
-  <CompassTip>Zeigt Richtung Norden. Klicke, um die Kamera nach Norden auszurichten.</CompassTip>
+  <CompassTip>Zeigt Richtung Norden. Klicke darauf, um die Kamera nach Norden auszurichten.</CompassTip>
 
   <!-- World route planner -->
   <!-- EN: Click to enter the planning mode where you can plan your journey and calculate distance between waypoints. -->
-  <RoutePlannerButtonTip>Anklicken, um den Planungsmodus zu aktivieren, wo du die Reise planen und die Entfernung zwischen den Wegpunkten berechnen kannst.</RoutePlannerButtonTip>
+  <RoutePlannerButtonTip>Klicke darauf, um den Planmodus zu aktivieren, mit dem du deine Reise planen und die Distanz zwischen den Wegpunkten berechnen kannst.</RoutePlannerButtonTip>
   <!-- EN: Add two or more waypoints. -->
-  <RoutePlannerAddTwoOrMoreWaypoints>Noch zwei oder mehr Wegpunkte hinzufügen.</RoutePlannerAddTwoOrMoreWaypoints>
+  <RoutePlannerAddTwoOrMoreWaypoints>Füge zwei oder mehr Wegpunkte hinzu.</RoutePlannerAddTwoOrMoreWaypoints>
   <!-- EN: Add one or more waypoints. -->
-  <RoutePlannerAddOneOrMoreWaypoints>Noch einen oder mehr Wegpunkte hinzufügen.</RoutePlannerAddOneOrMoreWaypoints>
+  <RoutePlannerAddOneOrMoreWaypoints>Füge einen oder mehr Wegpunkte hinzu.</RoutePlannerAddOneOrMoreWaypoints>
   <!-- EN: Total route time: {0} -->
   <RoutePlannerEstTimeToFinalDest>Gesamte Reisezeit: {0}</RoutePlannerEstTimeToFinalDest>
   <!-- EN: Planning mode uses the default caravan speed. Your speed may vary. -->
-  <RoutePlannerUsingAverageTicksPerMoveWarning>Hinweis: Standardwerte. Die tatsächliche Geschwindigkeit kann abweichen.</RoutePlannerUsingAverageTicksPerMoveWarning>
+  <RoutePlannerUsingAverageTicksPerMoveWarning>Planmodus nutzt Standard-Reisegeschw. Deine Geschw. kann abweichen.</RoutePlannerUsingAverageTicksPerMoveWarning>
   <!-- EN: Calculating for: {0} -->
   <RoutePlannerUsingTicksPerMoveOfCaravan>Kalkulation für: {0}</RoutePlannerUsingTicksPerMoveOfCaravan>
   <!-- EN: Right mouse button: Add/remove waypoints. -->
   <RoutePlannerPressRMBToAddAndRemoveWaypoints>Rechte Maustaste: Wegpunkte hinzufügen/entfernen.</RoutePlannerPressRMBToAddAndRemoveWaypoints>
   <!-- EN: ESC: Exit planning mode. -->
-  <RoutePlannerPressEscapeToExit>ESC: Planungsmodus beenden.</RoutePlannerPressEscapeToExit>
+  <RoutePlannerPressEscapeToExit>ESC: Planmodus beenden.</RoutePlannerPressEscapeToExit>
   <!-- EN: ESC: Return to the caravan formation dialog. -->
-  <RoutePlannerPressEscapeToReturnToCaravanFormationDialog>ESC: Zum Karawanen-Formierungsdialog zurückkehren.</RoutePlannerPressEscapeToReturnToCaravanFormationDialog>
+  <RoutePlannerPressEscapeToReturnToCaravanFormationDialog>ESC: Zurück zum "Karawane formieren"-Fenster.</RoutePlannerPressEscapeToReturnToCaravanFormationDialog>
   <!-- EN: Est. travel time: {0} -->
   <EstimatedTimeToWaypoint>Geschätzte Reisezeit: {0}</EstimatedTimeToWaypoint>
   <!-- EN: Est. travel time (from previous waypoint): {0} -->
@@ -1485,7 +1485,7 @@
   <Ritual>Ritual</Ritual>
 
   <!-- EN: Takes place at -->
-  <RitualTakesPlaceAt>Findet statt bei</RitualTakesPlaceAt>
+  <RitualTakesPlaceAt>Veranstaltungsort</RitualTakesPlaceAt>
   <!-- EN: Any {0} -->
   <RitualTargetThingDefsInfo>{0_gender ? Beliebiger : Beliebige : Beliebiges} {0}</RitualTargetThingDefsInfo>
   <!-- EN: Attending {0} -->
