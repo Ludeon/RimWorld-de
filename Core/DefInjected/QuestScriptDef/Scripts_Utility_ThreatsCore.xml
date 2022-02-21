@@ -7,12 +7,12 @@
       <li>root(priority=1,sitePart==ClimateAdjuster)->(*Threat)ein Klimaregulator(/Threat) ist, der die regionale Temperatur um [temperatureOffset] verändert</li>
       <li>root(priority=1,sitePart==PsychicDroner)->(*Threat)ein Psycho-Brummer(/Threat) ist, der das [affectedGender]e Geschlecht beeinflusst</li>
       <li>root(priority=1,sitePart==PsychicSuppressor)->(*Threat)ein Psycho-Unterdrücker(/Threat) ist, der das [affectedGender]e Geschlecht beeinflusst</li>
-      <li>root(priority=1,sitePart==WeatherController)->(*Threat)ein Wetterkontrollgerät(/Threat) ist, welches das Wetter der ganzen Region auf [weather_label] ändert</li>
+      <li>root(priority=1,sitePart==WeatherController)->(*Threat)ein Wettermanipulator(/Threat) ist, der das Wetter der ganzen Region auf [weather_label] ändert</li>
       <li>root(priority=1,sitePart==SmokeSpewer)->(*Threat)ein Rauchgenerator(/Threat) ist, der die ganze Region mit Rauch überzieht</li>
-      <li>root(priority=1,sitePart==SunBlocker)->(*Threat)eine Sonnenblockiermaschine(/Threat) ist, welche die ganze Region mit einem Schatten überdeckt</li>
-      <li>root(priority=1,sitePart==EMIDynamo)->(*Threat)ein EMI-Generator(/Threat) ist, der in der ganzen Region elektrische Geräte ausfallen lassen kann</li>
+      <li>root(priority=1,sitePart==SunBlocker)->(*Threat)ein Sonnenblocker(/Threat) ist, der die ganze Region mit einem Schatten überdeckt</li>
+      <li>root(priority=1,sitePart==EMIDynamo)->(*Threat)ein EMI-Generator(/Threat) ist, der in der ganzen Region elektrische Geräte lahmlegt</li>
       <li>root(priority=1,sitePart==ToxicSpewer)->(*Threat)ein Giftgenerator(/Threat) ist, der die ganze Region mit Gift besprüht</li>
-      <li>root(priority=1,sitePart==RaidSource)->ein militärischer Sammelpunkt ist, der von (*Threat)[enemiesCount] Gegnern ([enemiesLabel])(/Threat) bewacht wird, die deine Kolonie alle [mtbDays] überfallen werden</li>
+      <li>root(priority=1,sitePart==RaidSource)->ein militärischer Stützpunkt ist, der von (*Threat)[enemiesCount] Gegnern ([enemiesLabel])(/Threat) bewacht wird, die deine Kolonie alle [mtbDays] überfallen werden</li>
       <li>root(priority=1,sitePart==Outpost,enemiesCount==1)->ein gegnerischer Außenposten ist, der von (*Threat)[enemiesCount] Gegner ([enemiesLabel])(/Threat) bewacht wird</li>
       <li>root(priority=1,sitePart==Outpost,enemiesCount>1)->ein gegnerischer Außenposten ist, der von (*Threat)[enemiesCount] Gegnern ([enemiesLabel])(/Threat) bewacht wird</li>
       <li>root(priority=1,sitePart==BanditCamp,enemiesCount==1)->ein Banditenlager ist, das von (*Threat)[enemiesCount] Gegner ([enemiesLabel])(/Threat) bewacht wird</li>
