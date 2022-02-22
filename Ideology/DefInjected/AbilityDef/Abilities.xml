@@ -11,7 +11,7 @@
   <!-- EN: berserk trance -->
   <BerserkTrance.label>Berserkertrance</BerserkTrance.label>
   <!-- EN: The caster fills himself with anger over ideological grievances. This strengthens the body past normal limits, but also means losing control and attacking every enemy nearby in an unstoppable rage. The berserk state will last for 3 hours. -->
-  <BerserkTrance.description>Der Wirker füllt sich selbst mit Wut über ideologische Missstände. Diese Fähigkeit verleiht ihm übermenschliche Kräfte, führt aber auch dazu, dass er jegliche Selbstbeherrschung verliert und jeden Feind in der Nähe ohne Sinn und Verstand angreift. Der Berserkerzustand hält 3 Stunden lang an.</BerserkTrance.description>
+  <BerserkTrance.description>Der Wirker füllt sich selbst mit Wut über ideologische Missstände. Diese Fähigkeit verleiht ihm übermenschliche Kräfte, führt aber auch dazu, dass er jegliche Selbstbeherrschung verliert und alle Feinde in der Nähe ohne Sinn und Verstand angreift. Der Berserkerzustand hält 3 Stunden lang an.</BerserkTrance.description>
   
   <!-- EN: combat command -->
   <CombatCommand.label>Kampfbefehl</CombatCommand.label>
@@ -21,12 +21,12 @@
   <!-- EN: conversion ritual -->
   <ConversionRitual.label>Bekehrungsritual</ConversionRitual.label>
   <!-- EN: Try to persuade someone to adopt your beliefs. If it goes well, they will lose some certainty in their ideoligion and may convert. If it backfires, they will gain certainty in their old beliefs.\n\nTo start this ritual at a specific place, select a ritual spot or matching altar/ideogram. -->
-  <ConversionRitual.description>Versuche, jemanden zu überzeugen, deinen Glauben anzunehmen. Wenn es gut läuft, wird der Glaube des Ziels an dessen eigene Ideologie geschwächt und das Ziel ggf. bekehrt. Wenn es schiefläuft, wird der Glaube des Ziels an dessen eigene Ideologie gefestigt.\n\nUm dieses Ritual an einem bestimmten Ort starten zu lassen, wähle einen Ritualplatz oder einen passenden Altar/Ideogramm aus.</ConversionRitual.description>
+  <ConversionRitual.description>Versuche, eine Person zu überzeugen, deinen Glauben zu übernehmen. Wenn es gut läuft, wird der Glaube der Person an ihre eigene Ideologie reduziert und die Person ggf. bekehrt. Wenn es schiefläuft, wird der Glaube der Person an ihre eigene Ideologie erhöht.\n\nUm dieses Ritual an einem bestimmten Ort starten zu lassen, wähle einen Ritualplatz oder einen passenden Altar/Ideogramm aus.</ConversionRitual.description>
   
   <!-- EN: convert -->
   <Convert.label>Bekehren</Convert.label>
   <!-- EN: Attempt to convert someone to the speaker's ideoligion. This will reduce the target's certainty in their own beliefs. The certainty reduction depends on the speaker's negotiation ability. -->
-  <Convert.description>Versuche, jemanden zur Ideologie des Redners zu bekehren. Dies wird den Glauben des Ziels an dessen eigene Ideologie schwächen. Die Reduzierungsmenge ist abhängig von der Verhandlungsfähigkeit des Redners.</Convert.description>
+  <Convert.description>Reduziere den Glauben einer Person an ihre eigene Ideologie und versuche, sie zur Ideologie des Redners zu bekehren. Die Menge der Reduzierung hängt vom Verhandlungsgeschick des Redners ab.</Convert.description>
   <!-- EN: {INITIATOR_labelShort} failed to convert {RECIPIENT_labelShort}. {RECIPIENT_labelShort} was upset by the attempt, but {RECIPIENT_possessive} certainty fell from {CERTAINTYBEFORE} to {CERTAINTYAFTER}. -->
   <Convert.comps.CompAbilityEffect_Convert.failMessage>{INITIATOR_labelShort} konnte {RECIPIENT_labelShort} nicht bekehren. {RECIPIENT_labelShort} ist darüber verärgert, aber {RECIPIENT_possessive} Glaube fiel von {CERTAINTYBEFORE} auf {CERTAINTYAFTER}.</Convert.comps.CompAbilityEffect_Convert.failMessage>
   <!-- EN: {INITIATOR_labelShort} has converted {RECIPIENT_labelShort} to {IDEO}. -->
@@ -51,7 +51,7 @@
   <!-- EN: Immunity drive -->
   <ImmunityDrive.label>Immunisierungstrieb</ImmunityDrive.label>
   <!-- EN: Offer moral support that energizes the body, boosting someone's immunity gain for one day. -->
-  <ImmunityDrive.description>Stärke den Körper von jemandem durch moralische Unterstützung, was seine Immunisierung für einen Tag beschleunigt.</ImmunityDrive.description>
+  <ImmunityDrive.description>Stärke den Körper einer Person durch moralische Unterstützung, um ihre Immunisierung für einen Tag zu beschleunigen.</ImmunityDrive.description>
   
   <!-- EN: leader speech -->
   <LeaderSpeech.label>Führungsrede</LeaderSpeech.label>
@@ -81,7 +81,7 @@
   <!-- EN: reassure -->
   <Reassure.label>Glaube festigen</Reassure.label>
   <!-- EN: Increase someone's certainty in their own beliefs. The regained certainty is based on the speaker's negotiation ability. -->
-  <Reassure.description>Festigt den Glauben des Ziels an dessen eigene Ideologie. Der wiedererlangte Glaube ist abhängig von der Verhandlungsfähigkeit des Redners.</Reassure.description>
+  <Reassure.description>Erhöhe den Glauben einer Person an ihre eigene Ideologie. Die Menge der Erhöhung hängt vom Verhandlungsgeschick des Redners ab.</Reassure.description>
   <!-- EN: {INITIATOR_labelShort} has reassured {RECIPIENT_labelShort}, increasing {RECIPIENT_possessive} certainty in {IDEO} from {BEFORECERTAINTY} to {AFTERCERTAINTY}. -->
   <Reassure.comps.CompAbilityEffect_Reassure.successMessage>{INITIATOR_labelShort} hat {replace: {RECIPIENT_labelShort}s; "s(/Name)s"-"s(/Name)'"; "ß(/Name)s"-"ß(/Name)'"; "z(/Name)s"-"z(/Name)'"; "x(/Name)s"-"x(/Name)'"; "ce(/Name)s"-"ce(/Name)'"} Glauben an {RECIPIENT_possessive}e Ideologie '{IDEO}' von {BEFORECERTAINTY} auf {AFTERCERTAINTY} erhöht.</Reassure.comps.CompAbilityEffect_Reassure.successMessage>
   
@@ -93,7 +93,7 @@
   <!-- EN: trial -->
   <Trial.label>Gerichtsverfahren</Trial.label>
   <!-- EN: Charge someone with a terrible wrongdoing and initiate a trial where they will be either convicted or exonerated. If the target is convicted, they can be freely imprisoned, executed or banished without penalty. The chance of conviction depends on the social abilities of the accuser and accused. -->
-  <Trial.description>Beschuldige das Ziel einer schrecklichen Tat und leite ein Gerichtsverfahren ein, bei dem es entweder schuldig oder unschuldig gesprochen wird. Wenn das Ziel schuldig gesprochen wird, kann es ohne Konsequenzen inhaftiert, hingerichtet oder verbannt werden. Die Chance auf eine Verurteilung ist abhängig von den sozialen Fähigkeiten des Anklägers und des Angeklagten.</Trial.description>
+  <Trial.description>Erhebe Anklage gegen eine Person, die eine schlimme Tat begangen hat, und leite ein Gerichtsverfahren ein, bei dem sie entweder schuldig oder unschuldig gesprochen wird. Wenn die Person schuldig gesprochen wird, kann sie ohne Konsequenzen inhaftiert, hingerichtet oder verbannt werden. Die Chance auf eine Verurteilung ist abhängig von den sozialen Fähigkeiten des Anklägers und des Angeklagten.</Trial.description>
   
   <!-- EN: work drive -->
   <WorkDrive.label>Arbeitstrieb</WorkDrive.label>
