@@ -31,18 +31,26 @@
     <li>tale_noun->die Karawane von [PAWN_nameDef] erfolgreich verteidigt werden konnte</li>
     <li>tale_noun->die Karawane von [PAWN_nameDef] einen Hinterhalt vereiteln konnte</li>
     <li>image->[PAWN_nameFull], wie [PAWN_pronoun] einen Widerstand organisiert, während [circumstance_group]</li>
-    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] sich mit einer [Weapon] verteidigt, während [circumstance_group]</li>
-    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] sich mit [PAWN_possessive]er [Weapon] rächt, während [circumstance_group]</li>
+    <li>image(p=0.33)->[PAWN_nameFull], wie [PAWN_pronoun] sich mit einer [WeaponFem] verteidigt, während [circumstance_group]</li>
+    <li>image(p=0.33)->[PAWN_nameFull], wie [PAWN_pronoun] sich mit einem [WeaponMas] verteidigt, während [circumstance_group]</li>
+    <li>image(p=0.33)->[PAWN_nameFull], wie [PAWN_pronoun] sich mit einem [WeaponNeu] verteidigt, während [circumstance_group]</li>
+    <li>image(p=0.33)->[PAWN_nameFull], wie [PAWN_pronoun] sich mit [PAWN_possessive]er [WeaponFem] rächt, während [circumstance_group]</li>
+    <li>image(p=0.33)->[PAWN_nameFull], wie [PAWN_pronoun] sich mit [PAWN_possessive]em [WeaponMas] rächt, während [circumstance_group]</li>
+    <li>image(p=0.33)->[PAWN_nameFull], wie [PAWN_pronoun] sich mit [PAWN_possessive]em [WeaponNeu] rächt, während [circumstance_group]</li>
     <li>image->[PAWN_nameFull], wie [PAWN_pronoun] wie ein Fels in der Brandung dasteht, während [circumstance_group]</li>
     <li>image->[PAWN_nameFull], wie [PAWN_pronoun] einen [AdjectiveBadass]en Ausdruck hat, während [circumstance_group]</li>
     <li>image->[PAWN_nameFull], wie [PAWN_pronoun] einen [AdjectiveAngsty]en Ausdruck hat, während [circumstance_group]</li>
     <li>circumstance_phrase->[PAWN_pronoun] sich gegen die vorrückende Horde zur Wehr setzt</li>
     <li>circumstance_phrase->die Wagen kreisförmig aufgestellt werden</li>
     <li>circumstance_phrase->[PAWN_pronoun] [PAWN_possessive]e Leute zum Sieg führt</li>
-    <li>circumstance_phrase->[PAWN_pronoun] [PAWN_possessive]e [Weapon] schwingt</li>
+    <li>circumstance_phrase(p=0.33)->[PAWN_pronoun] [PAWN_possessive]e [WeaponFem] schwingt</li>
+    <li>circumstance_phrase(p=0.33)->[PAWN_pronoun] [PAWN_possessive]en [WeaponMas] schwingt</li>
+    <li>circumstance_phrase(p=0.33)->[PAWN_pronoun] [PAWN_possessive] [WeaponNeu] schwingt</li>
     <li>circumstance_phrase->[PAWN_pronoun] mit [GoreDat] bedeckt ist</li>
     <li>desc_sentence->[Quantity_adjphrase] [Enemies] rücken vor und schwingen ihre [Weapons].</li>
-    <li>desc_sentence->Ein riesiger [Enemy] rückt vor und schwingt eine [Weapon].</li>
+    <li>desc_sentence(p=0.33)->Ein riesiger [Enemy] rückt vor und schwingt eine [WeaponFem].</li>
+    <li>desc_sentence(p=0.33)->Ein riesiger [Enemy] rückt vor und schwingt einen [WeaponMas].</li>
+    <li>desc_sentence(p=0.33)->Ein riesiger [Enemy] rückt vor und schwingt ein [WeaponNeu].</li>
     <li>desc_sentence->[Quantity_adjphrase] [Enemies] greifen mit einem [AdjectiveBadass]en Blick in ihren Augen an.</li>
     <li>desc_sentence->[Quantity_adjphrase] [Enemies] greifen mit einem [AdjectiveAngsty]en Blick in ihren Augen an.</li>
     <li>desc_sentence->[Quantity_adjphrase] [Animals] greifen mit leuchtenden, [Color]en Augen an.</li>
