@@ -15,24 +15,21 @@ $paths = @(
 "*\DefInjected\ThingDef"
 "*\DefInjected\WorldObjectDef"
 "*\DefInjected\GameConditionDef"
-"*\Backstories"
+"*\DefInjected\BackstoryDef"
+"*\DefInjected\TerrainDef"
+"*\DefInjected\BodyDef"
+"*\DefInjected\BodyPartDef"
+"*\DefInjected\RoyalTitleDef"
 )
 
-# Search words in the XML files and save them in different lists of words depending on their gender
+# Search words in the XML files
 foreach ($path in $paths)
 {
-  # unknown gender
-  Get-Content -Path "$path/*" -Filter "*.xml" | Select-String -Pattern "<(.*(\.label|\.pawnSingular|title|\.chargeNoun))>(.*?)</\1>" -All | ForEach-Object { $_.matches.groups[3].value.toLower() } >> "$temp/all_unknown.txt"
-
-  # male gender
-  Get-Content -Path "$path/*" -Filter "*.xml" | Select-String -Pattern "<(.*(labelMale))>(.*?)</\1>" -All | ForEach-Object { $_.matches.groups[3].value.toLower() } >> "$temp/all_males.txt"
-
-  # female gender
-  Get-Content -Path "$path/*" -Filter "*.xml" | Select-String -Pattern "<(.*(\.labelFemale|titleFemale))>(.*?)</\1>" -All | ForEach-Object { $_.matches.groups[3].value.toLower() } >> "$temp/all_females.txt"
+  Get-Content -Path "$path/*" -Filter "*.xml" | Select-String -Pattern "<(.*(\.label|\.pawnSingular|title|titleFemale|\.chargeNoun|\.customLabel|\.labelMale|\.labelFemale))>(.*?)</\1>" -All | ForEach-Object { $_.matches.groups[3].value.toLower() } >> "$temp/all.txt"
 }
 
-# Save a list of all found words
-Get-Content "$temp/all*.txt" | Sort-Object -Unique | Set-Content "$temp/all.txt"
+# Sort the list of all found words
+Get-Content "$temp/all.txt" | Sort-Object -Unique | Set-Content "$temp/all.txt"
 
 # Create files
 foreach ($fileName in "Male", "Female", "Neuter", "Other", "new_words")
@@ -43,11 +40,11 @@ foreach ($fileName in "Male", "Female", "Neuter", "Other", "new_words")
   }
 }
 
-# Merge found male words into the list of male words
-Get-Content "$temp/all_males.txt", "$main/Male.txt" | Sort-Object -Unique | Set-Content "$main/Male.txt"
+# Sort the list of male words
+Get-Content "$main/Male.txt" | Sort-Object -Unique | Set-Content "$main/Male.txt"
 
-# Merge found female words into the list of female words
-Get-Content "$temp/all_females.txt", "$main/Female.txt" | Sort-Object -Unique | Set-Content "$main/Female.txt"
+# Sort the list of female words
+Get-Content "$main/Female.txt" | Sort-Object -Unique | Set-Content "$main/Female.txt"
 
 # Sort the list of neuter words
 Get-Content "$main/Neuter.txt" | Sort-Object -Unique | Set-Content "$main/Neuter.txt"

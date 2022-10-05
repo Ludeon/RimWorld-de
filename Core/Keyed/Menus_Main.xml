@@ -3,7 +3,7 @@
 
   <!-- Main menu -->
   <!-- EN: Tutorial -->
-  <Tutorial>Einführung</Tutorial>
+  <Tutorial>Tutorial</Tutorial>
   <!-- EN: New colony -->
   <NewColony>Neue Kolonie gründen</NewColony>
   <!-- EN: Back to game -->
@@ -23,13 +23,15 @@
   <!-- EN: Save translation report -->
   <SaveTranslationReport>Übersetzungsreport erstellen</SaveTranslationReport>
   <!-- EN: Generating translation report -->
-  <GeneratingTranslationReport>Erstelle Übersetzungsreport</GeneratingTranslationReport>
+  <GeneratingTranslationReport>Erstellt Übersetzungsreport</GeneratingTranslationReport>
   <!-- EN: Cleanup translation files -->
   <CleanupTranslationFiles>Übersetzungsdateien bereinigen</CleanupTranslationFiles>
   <!-- EN: Update translations files (TKey's) -->
-  <TranslationFilesTKeyUpdate>Übersetzungsdateien aktualisieren (TKey's)</TranslationFilesTKeyUpdate>
+  <TranslationFilesTKeyUpdate>Übersetzungsdateien aktualisieren (TKeys)</TranslationFilesTKeyUpdate>
   <!-- EN: Cleaning translation files -->
-  <CleaningTranslationFiles>Bereinige Übersetzungsdateien</CleaningTranslationFiles>
+  <CleaningTranslationFiles>Bereinigt Übersetzungsdateien</CleaningTranslationFiles>
+  <!-- EN: Dev quicktest -->
+  <DevQuickTest>Dev-Schnelltest</DevQuickTest>
   <!-- EN: Credits -->
   <Credits>Credits</Credits>
   <!-- EN: Quit to main menu -->
@@ -78,8 +80,8 @@
   <WorldGenerate>Generieren</WorldGenerate>
   <!-- EN: Save and finish -->
   <WorldSaveAndFinish>Speichern</WorldSaveAndFinish>
-  <!-- EN: Reset -->
-  <Reset>Zurücksetzen</Reset>
+  <!-- EN: Reset factions -->
+  <ResetFactions>Fraktion zurücksetzen</ResetFactions>
   <!-- EN: Globe coverage -->
   <PlanetCoverage>Planetare Abdeckung</PlanetCoverage>
   <!-- EN: Overall rainfall -->
@@ -151,17 +153,67 @@
   <!-- EN: Are you sure you want to delete all the content for {0}? -->
   <ConfirmDeleteMod>Bist du sicher, dass du alle Daten von {0} löschen willst?</ConfirmDeleteMod>
   <!-- EN: Auto-sort mods -->
-  <ResolveModOrder>Mods automatisch sortieren</ResolveModOrder>
+  <ResolveModOrder>Mods autom. sortieren</ResolveModOrder>
+  <!-- EN: Save and apply changes -->
+  <SaveModChanges>Speichern &amp; Anwenden</SaveModChanges>
+  <!-- EN: Mod changes have not been saved. Are you sure you want to continue? -->
+  <DiscardModChanges>Mod-Änderungen wurden noch nicht gespeichert. Bist du sicher, dass du fortfahren willst?</DiscardModChanges>
   <!-- EN: Cannot move {0}: It must be loaded after {1}. -->
   <ModReorderConflict_MustLoadAfter>Kann {0} nicht verschieben: Die Mod muss nach {1} geladen werden.</ModReorderConflict_MustLoadAfter>
   <!-- EN: Cannot move {0}: It must be loaded before {1}. -->
   <ModReorderConflict_MustLoadBefore>Kann {0} nicht verschieben: Die Mod muss vor {1} geladen werden.</ModReorderConflict_MustLoadBefore>
   <!-- EN: Unsubscribe -->
   <Unsubscribe>Abo beenden</Unsubscribe>
+  <!-- EN: Are you sure you want to unsubscribe? -->
+  <ConfirmUnsubscribe>Bist du sicher, dass du das Abo beenden willst?</ConfirmUnsubscribe>
   <!-- EN: Are you sure you want to unsubscribe from {0}? -->
-  <ConfirmUnsubscribe>Bist du sicher, dass du {0} deabonnieren willst?</ConfirmUnsubscribe>
+  <ConfirmUnsubscribeFrom>Bist du sicher, dass du {0} deabonnieren willst?</ConfirmUnsubscribeFrom>
+  <!-- EN: Are you sure you want to unsubscribe from:\n\n{0} -->
+  <ConfirmUnsubscribeFromMultiple>Bist du sicher, dass du die folgenden Mods deabonnieren willst?\n\n{0}</ConfirmUnsubscribeFromMultiple>
   <!-- EN: Author -->
   <Author>Autor</Author>
+  <!-- EN: Enabled -->
+  <Enabled>Aktiviert</Enabled>
+  <!-- EN: Disabled -->
+  <Disabled>Deaktiviert</Disabled>
+  <!-- EN: Enable -->
+  <Enable>Aktivieren</Enable>
+  <!-- EN: Disable -->
+  <Disable>Deaktivieren</Disable>
+  <!-- EN: Get mods from... -->
+  <GetMods>Mods beziehen aus...</GetMods>
+  <!-- EN: Unsubscribe from... -->
+  <UnsubscribeMultiple>Abo beenden bei...</UnsubscribeMultiple>
+  <!-- EN: Save / load list... -->
+  <SaveLoadList>Liste speichern/laden...</SaveLoadList>
+  <!-- EN: Save mod list -->
+  <SaveModList>Mod-Liste speichern</SaveModList>
+  <!-- EN: Load mod list -->
+  <LoadModList>Mod-Liste laden</LoadModList>
+  <!-- EN: Added mods -->
+  <AddedModsList>Hinzugefügte Mods</AddedModsList>
+  <!-- EN: Missing mods -->
+  <MissingModsList>Fehlende Mods</MissingModsList>
+  <!-- EN: Shared mods -->
+  <SharedModsList>Geteilte Mods</SharedModsList>
+  <!-- EN: Website -->
+  <ModWebsite>Webseite</ModWebsite>
+  <!-- EN: Open folder -->
+  <ModFolder>Ordner öffnen</ModFolder>
+  <!-- EN: Mod options -->
+  <ModOptions>Mod-Optionen</ModOptions>
+  <!-- EN: Workshop -->
+  <FromWorkshop>Workshop</FromWorkshop>
+  <!-- EN: Forum -->
+  <FromForum>Forum</FromForum>
+  <!-- EN: Advanced... -->
+  <MoreActions>Erweitert...</MoreActions>
+  <!-- EN: All selected mods -->
+  <AllSelectedMods>Alle ausgewählten Mods</AllSelectedMods>
+  <!-- EN: All disabled mods -->
+  <AllDisabledMods>Alle deaktivierten Mods</AllDisabledMods>
+  <!-- EN: All incompatible mods -->
+  <AllIncompatibleMods>Alle inkompatiblen Mods</AllIncompatibleMods>
   <!-- EN: Workshop page -->
   <WorkshopPage>Workshop-Seite</WorkshopPage>
   <!-- EN: Upload to Steam Workshop -->
@@ -176,16 +228,20 @@
   <WorkshopUploadSucceeded>{0} erfolgreich hochgeladen.</WorkshopUploadSucceeded>
   <!-- EN: Downloading -->
   <Downloading>Lade herunter</Downloading>
+  <!-- EN: Workshop ID -->
+  <WorkshopId>Workshop-ID</WorkshopId>
   <!-- EN: Display fulfilled requirements -->
   <ModDisplayFulfilledRequirements>Erfüllte Anforderungen anzeigen</ModDisplayFulfilledRequirements>
   <!-- EN: Click to select. -->
   <ModClickToSelect>Klicke zum Auswählen.</ModClickToSelect>
   <!-- EN: Click to go to website. -->
-  <ModClickToGoToWebsite>Klicke hier, um zur Webseite zu gelangen.</ModClickToGoToWebsite>
+  <ModClickToGoToWebsite>Klicke, um zur Webseite zu gelangen.</ModClickToGoToWebsite>
   <!-- EN: Source -->
   <Source>Quelle</Source>
-  <!-- EN: For game version(s) -->
-  <ModTargetVersion>Für Spielversion(en)</ModTargetVersion>
+  <!-- EN: Game versions -->
+  <ModTargetVersion>Spielversionen</ModTargetVersion>
+  <!-- EN: Mod version -->
+  <ModVersion>Mod-Version</ModVersion>
   <!-- EN: ID -->
   <ModPackageId>ID</ModPackageId>
   <!-- EN: This must be loaded before: {0}. -->
@@ -199,12 +255,12 @@
   <!-- EN: This mod is incompatible with: {0}. -->
   <ModIncompatibleWithTip>Diese Mod ist nicht kompatibel mit: {0}.</ModIncompatibleWithTip>
   <!-- EN: This mod is loading in the wrong order relative to another mod. Use the 'auto-sort' button, or re-order the mods manually. -->
-  <ModOrderingWarning>Diese Mod wird in der falschen Reihenfolge relativ zu einer anderen Mod geladen. Benutze die Schaltfläche 'Mods automatisch sortieren' oder ordne die Mods manuell neu an.</ModOrderingWarning>
+  <ModOrderingWarning>Diese Mod wird in falscher Reihenfolge relativ zu anderen Mods geladen. Benutze 'Mods autom. sortieren' oder ordne sie manuell.</ModOrderingWarning>
   <!-- EN: Another active mod uses the same ID: {0}. -->
   <ModWithSameIdAlreadyActive>Eine andere aktive Mod verwendet die gleiche ID: {0}.</ModWithSameIdAlreadyActive>
   <!-- EN: There is a cyclic mod dependency starting with {0}. -->
   <ModCyclicDependency>Es besteht eine zyklische Mod-Abhängigkeit, die mit {0} beginnt.</ModCyclicDependency>
-  <!-- EN: This requires following mods to work: {0}. -->
+  <!-- EN: This requires the following mods to work: {0}. -->
   <ModUnsatisfiedDependency>Diese Mod erfordert folgende Mods, um zu funktionieren: {0}.</ModUnsatisfiedDependency>
   <!-- EN: This mod was not made for this version of RimWorld, and will probably not work correctly. -->
   <ModNotMadeForThisVersion>Diese Mod wurde nicht für diese Version von RimWorld entwickelt und wird wahrscheinlich nicht richtig funktionieren.</ModNotMadeForThisVersion>
@@ -274,6 +330,8 @@
   <TooMany>Zu viele (max {0}): </TooMany>
   <!-- EN: Can be updated on Workshop, since you are the author. -->
   <CanBeUpdatedOnWorkshop>Da du der Autor bist, kann das im Workshop aktualisiert werden.</CanBeUpdatedOnWorkshop>
+  <!-- EN: This scenario has been edited.\n\nDo you want to save it before proceeding? -->
+  <ScenarioChangedSavePrompt>Dieses Szenario wurde bearbeitet.\n\nMöchtest du es speichern, bevor du fortfährst?</ScenarioChangedSavePrompt>
   
   <!-- Select storyteller -->
   <!-- EN: Choose AI Storyteller -->
@@ -291,7 +349,7 @@
   <!-- EN: Please choose commitment mode or reload anytime mode. -->
   <MustChoosePermadeath>Bitte wähle den Hardcore-Modus oder den Laden-Erlaubt-Modus aus.</MustChoosePermadeath>
   <!-- EN: You can save and load the game at any time.\n\nThis is a good choice if you're still learning the game, if it fits your personal playstyle, if you're using mods that may break your game, or if you intend to self-enforce commitment mode. -->
-  <ReloadAnytimeModeInfo>Du kannst das Spiel jederzeit speichern und laden.\n\nDas ist eine gute Wahl, wenn du gerade erst dabei bist das Spiel zu erlernen, wenn es deinem persönlichen Stil entspricht, du Modifikationen verwendest, die eventuell Fehler verursachen können oder wenn du dir den Hardcoremodus selbst auferlegen willst.</ReloadAnytimeModeInfo>
+  <ReloadAnytimeModeInfo>Du kannst das Spiel jederzeit speichern und laden.\n\nDieser Modus ist in folgenden Fällen empfehlenswert:\n\n- Du bist noch dabei, das Spiel zu lernen\n- Es passt zu deinem Spielstil\n- Du verwendest unsichere Mods\n- Du kannst dir den Hardcore-Modus selbst auferlegen</ReloadAnytimeModeInfo>
   <!-- EN: You can only save when quitting the game.\n\nSince RimWorld is a story generator, even losing all but one person is not the end of the game - it's part of the story. The game is designed to allow recovery after losses.\n\nPlaying out these terrible situations makes a story with both tragedy and triumph. It's the way RimWorld was designed to be played.\n\nThere's a reason Luke Skywalker didn't quit and reload when his family got killed - loss and recovery is dramatic. -->
   <PermadeathModeInfo>Du kannst nur speichern, wenn du das Spiel beendest.\n\nDa RimWorld ein Geschichten-Generator ist, wird man dazu animiert, sich von Verlusten zu erholen. Selbst wenn man bis auf eine Person alle verliert, ist das nicht das Ende des Spiels - Es ist Teil der Geschichte.\n\nDiese schrecklichen Situationen zu meistern, macht die Geschichte aus. Eine Geschichte der Tragödie und des Triumphs. RimWorld wurde für diese Art zu spielen entworfen.\n\nEs gibt einen Grund, warum Luke Skywalker nicht aufgegeben und neu geladen hat, als seine Familie getötet wurde - Verlust und Wiederaufbau ist dramatisch!</PermadeathModeInfo>
   <!-- EN: Storyteller and playstyle can be changed any time. -->
@@ -328,7 +386,7 @@
   <!-- EN: Extreme weather -->
   <Difficulty_AllowExtremeWeatherIncidents_Label>Extremes Wetter</Difficulty_AllowExtremeWeatherIncidents_Label>
   <!-- EN: Allow extreme weather incidents such as toxic fallout, volcanic winters and flashstorms. -->
-  <Difficulty_AllowExtremeWeatherIncidents_Info>Erlaube extreme Wetterereignisse wie giftige Niederschläge, vulkanische Winter und Blitzstürme.</Difficulty_AllowExtremeWeatherIncidents_Info>
+  <Difficulty_AllowExtremeWeatherIncidents_Info>Erlaube extreme Wetterereignisse wie giftige Fallouts, vulkanische Winter und Blitzstürme.</Difficulty_AllowExtremeWeatherIncidents_Info>
 
   <!-- EN: Economy -->
   <DifficultyEconomySection>Wirtschaft</DifficultyEconomySection>
@@ -347,7 +405,7 @@
   <!-- EN: Butchering yield -->
   <Difficulty_ButcherYieldFactor_Label>Schlachtertrag</Difficulty_ButcherYieldFactor_Label>
   <!-- EN: Adjust the amount of materials produced when butchering. This includes meat, leather, and yield from shredding mechanoids. -->
-  <Difficulty_ButcherYieldFactor_Info>Passe die Menge der Materialien an, die beim Schlachten von Kreaturen oder Zerkleinern von Mechanoiden anfallen. Mögliche Erträge sind zum Beispiel Fleisch und Leder.</Difficulty_ButcherYieldFactor_Info>
+  <Difficulty_ButcherYieldFactor_Info>Passe die Menge der Materialien an, die beim Schlachten von Kreaturen oder Zerlegen von Mechanoiden anfallen. Mögliche Erträge sind zum Beispiel Fleisch und Leder.</Difficulty_ButcherYieldFactor_Info>
   <!-- EN: Research speed -->
   <Difficulty_ResearchSpeedFactor_Label>Forschungsgeschwindigkeit</Difficulty_ResearchSpeedFactor_Label>
   <!-- EN: Adjust the speed of research. -->
@@ -419,6 +477,10 @@
   <Difficulty_AllowCaveHives_Label>Kartengenerierung: Natürliche Insektenkolonien</Difficulty_AllowCaveHives_Label>
   <!-- EN: Dormant insect hives may spawn in natural caves.\n\nThis setting only applies to map generation and does not affect active insects that may tunnel in during play. -->
   <Difficulty_AllowCaveHives_Info>Inaktive Insektenkolonien können in natürlichen Höhlen spawnen.\n\nDiese Einstellung gilt nur für die Kartengenerierung und hat keinen Einfluss auf aktive Insekten, die sich während des Spiels an die Oberfläche graben.</Difficulty_AllowCaveHives_Info>
+  <!-- EN: Add unwavering prisoners -->
+  <Difficulty_UnwaveringPrisoners_Label>Unbeugsame Gefangene hinzufügen</Difficulty_UnwaveringPrisoners_Label>
+  <!-- EN: This option adds additional capturable prisoners to the game who cannot be recruited due to unwavering loyalty.\n\nUnwavering prisoners are added on top of normal prisoners, so turning this off won't give more recruitable prisoner - it simply removes the unwavering ones.\n\nUnwavering prisoners can still be released for diplomatic gains, sold, enslaved, harvested for organs, or otherwise made use of. In general, they offer more options and resources, and make the game a bit richer and easier. -->
+  <Difficulty_UnwaveringPrisoners_Info>Diese Option erweitert das Spiel um zusätzliche Spielfiguren, die einfangbar, aber aufgrund ihrer absoluten Loyalität nicht rekrutierbar sind.\n\nUnbeugsame Gefangene werden zusätzlich zu den normalen Gefangenen hinzugefügt. Wenn man also diese Option ausschaltet, erhält man nicht mehr rekrutierbare Gefangene - es werden lediglich die Unbeugsamen entfernt.\n\nUnbeugsame Gefangene können immer noch freigelassen, verkauft, versklavt, zur Organentnahme genutzt oder anderweitig verwertet werden. Generell bieten sie mehr Möglichkeiten und Ressourcen und machen das Spiel ein wenig reicher und einfacher.</Difficulty_UnwaveringPrisoners_Info>
 
   <!-- EN: Player tools -->
   <DifficultyPlayerToolsSection>Spielerwerkzeuge</DifficultyPlayerToolsSection>
@@ -462,7 +524,7 @@
   <DifficultyIdeologySection>Ideology</DifficultyIdeologySection>
   <!-- EN: Low pop conversion boost -->
   <Difficulty_LowPopConversionBoost_Label>Bekehrungsboost bei geringer Population</Difficulty_LowPopConversionBoost_Label>
-  <!-- EN: With a single colonist of the player's starting ideoligion, conversion chance to his ideoligion is multiplied by this amount. Conversion attempts against them have their impact divided by that amount.\n\nWith two colonists of the player's starting ideoligion, the effect is halved.\n\nWith three or more colonists of the player's starting ideoligion, this has no effect. -->
+  <!-- EN: With a single colonist of the player's starting ideoligion, conversion chance to their ideoligion is multiplied by this amount. Conversion attempts against them have their impact divided by that amount.\n\nWith two colonists of the player's starting ideoligion, the effect is halved.\n\nWith three or more colonists of the player's starting ideoligion, this has no effect. -->
   <Difficulty_LowPopConversionBoost_Info>Wenn nur ein einziges Mitglied der Startideologie des Spielers vorhanden ist, wird die Bekehrungschance zu dessen Ideologie mit diesem Wert multipliziert. Bei Bekehrungsversuchen gegen das Mitglied wird die Wirkung um diesen Betrag dividiert.\n\nWenn zwei Mitglieder der Startideologie des Spielers vorhanden sind, wird der Effekt halbiert.\n\nWenn drei oder mehr Mitglieder der Startideologie des Spielers vorhanden sind, hat dies keinen Effekt.</Difficulty_LowPopConversionBoost_Info>
 
   <!-- Site select -->
@@ -500,6 +562,8 @@
   <Elevation>Höhe</Elevation>
   <!-- EN: Fertility -->
   <Fertility>Fruchtbarkeit</Fertility>
+  <!-- EN: fertility -->
+  <FertilityLower>Fruchtbarkeit</FertilityLower>
   <!-- EN: Average temperature -->
   <AvgTemp>Durchschnittstemperatur</AvgTemp>
   <!-- EN: Rainfall -->
@@ -534,10 +598,14 @@
   <Forageability>Nahrungsverfügbarkeit</Forageability>
   <!-- EN: None of the selected people can do the following jobs:\n\n{0}\n\nThis can make the game more difficult than usual. Are you sure you want to continue? -->
   <ConfirmRequiredWorkTypeDisabledForEveryone>Von den ausgewählten Personen kann niemand die folgenden Arbeiten erledigen:\n\n{0}\n\nDas kann das Spiel um einiges schwieriger machen. Bist du sicher, dass du fortfahren willst?</ConfirmRequiredWorkTypeDisabledForEveryone>
+  <!-- EN: temperature -->
+  <TemperatureLower>Temperatur</TemperatureLower>
+  <!-- EN: light -->
+  <LightLower>Licht</LightLower>
 
   <!-- Character chooser -->
   <!-- EN: Create characters -->
-  <CreateCharacters>Charakter erstellen</CreateCharacters>
+  <CreateCharacters>Charaktere erstellen</CreateCharacters>
   <!-- EN: The character's first name.\n\nThis is only displayed in certain menus. -->
   <FirstNameDesc>Der Vorname des Charakters.\n\nDieser Name wird nur in einigen Menüs angezeigt.</FirstNameDesc>
   <!-- EN: The character's short identifier.\n\nThis is displayed at all times. It can be the first or last name, or a completely separate nickname. -->
@@ -551,33 +619,35 @@
   <!-- EN: {PAWN_race}, age {PAWN_ageFull} -->
   <PawnSummary>{PAWN_race}, Alter {PAWN_ageFull}</PawnSummary>
   <!-- EN: {PAWN_gender} {PAWN_race}, age {PAWN_ageFull} -->
-  <PawnSummaryWithGender>{PAWN_gender} {PAWN_race}, Alter {PAWN_ageFull}</PawnSummaryWithGender>
+  <PawnSummaryWithGender>{PAWN_gender}, {PAWN_race}, Alter {PAWN_ageFull}</PawnSummaryWithGender>
   <!-- EN: Backstory -->
   <Backstory>Vorgeschichte</Backstory>
   <!-- EN: Incapable of -->
   <IncapableOf>Verweigert</IncapableOf>
   <!-- EN: Abilities -->
   <Abilities>Fähigkeiten</Abilities>
-  <!-- EN: Caused by backstory: {0} -->
-  <IncapableOfTooltipBackstory>Verursacht durch Vorgeschichte: {0}</IncapableOfTooltipBackstory>
-  <!-- EN: Caused by title: {0} -->
-  <IncapableOfTooltipTitle>Verursacht durch Titel: {0}</IncapableOfTooltipTitle>
-  <!-- EN: Caused by trait: {0} -->
-  <IncapableOfTooltipTrait>Verursacht durch Merkmal: {0}</IncapableOfTooltipTrait>
-  <!-- EN: Caused by: {0} -->
-  <IncapableOfTooltipHediff>Verursacht durch: {0}</IncapableOfTooltipHediff>
+  <!-- EN: Caused by -->
+  <IncapableOfTooltipHediff>Verursacht durch</IncapableOfTooltipHediff>
   <!-- EN: Disabled work types: -->
   <IncapableOfTooltipWorkTypes>Deaktivierte Arbeiten:</IncapableOfTooltipWorkTypes>
-  <!-- EN: Caused by quest status: {0} -->
-  <IncapableOfTooltipQuest>Verursacht durch Queststatus: {0}</IncapableOfTooltipQuest>
-  <!-- EN: Caused by role: {0} -->
-  <IncapableOfTooltipRole>Verursacht durch Rolle: {0}</IncapableOfTooltipRole>
+  <!-- EN: Caused by backstory -->
+  <IncapableOfTooltipBackstory>Verursacht durch Vorgeschichte</IncapableOfTooltipBackstory>
+  <!-- EN: Caused by title -->
+  <IncapableOfTooltipTitle>Verursacht durch Titel</IncapableOfTooltipTitle>
+  <!-- EN: Caused by trait -->
+  <IncapableOfTooltipTrait>Verursacht durch Merkmal</IncapableOfTooltipTrait>
+  <!-- EN: Caused by quest status -->
+  <IncapableOfTooltipQuest>Verursacht durch Queststatus</IncapableOfTooltipQuest>
+  <!-- EN: Caused by role -->
+  <IncapableOfTooltipRole>Verursacht durch Rolle</IncapableOfTooltipRole>
+  <!-- EN: Caused by gene -->
+  <IncapableOfTooltipGene>Verursacht durch Gen</IncapableOfTooltipGene>
   <!-- EN: Traits -->
   <Traits>Merkmale</Traits>
   <!-- EN: Permanent mood effect -->
   <PermanentMoodEffect>Permanenter Stimmungseffekt</PermanentMoodEffect>
   <!-- EN: Skills -->
-  <Skills>Fähigkeiten</Skills>
+  <Skills>Fertigkeiten</Skills>
   <!-- EN: none -->
   <NoneLower>Nichts</NoneLower>
   <!-- EN: Adulthood -->
@@ -602,8 +672,10 @@
   <Health>Gesundheit</Health>
   <!-- EN: Relations -->
   <Relations>Verwandtschaft</Relations>
+  <!-- EN: Possessions -->
+  <Possessions>Besitz</Possessions>
   <!-- EN: Team skills -->
-  <TeamSkills>Fähigkeiten des Teams</TeamSkills>
+  <TeamSkills>Team-Fertigkeiten</TeamSkills>
   <!-- EN: Selected -->
   <StartingPawnsSelected>Ausgewählt</StartingPawnsSelected>
   <!-- EN: Left behind -->
@@ -637,16 +709,16 @@
   
   <!-- Progress bar -->
   <!-- EN: Generating world -->
-  <GeneratingWorld>Generiere Welt</GeneratingWorld>
+  <GeneratingWorld>Generiert Welt</GeneratingWorld>
   <!-- EN: Generating planet -->
-  <GeneratingPlanet>Generiere Planet</GeneratingPlanet>
+  <GeneratingPlanet>Generiert Planet</GeneratingPlanet>
   <!-- EN: Generating map -->
-  <GeneratingMap>Generiere Karte</GeneratingMap>
+  <GeneratingMap>Generiert Karte</GeneratingMap>
   <!-- EN: Generating map for new encounter -->
-  <GeneratingMapForNewEncounter>Generiere Karte für neue Begegnung</GeneratingMapForNewEncounter>
+  <GeneratingMapForNewEncounter>Generiert Karte für neue Begegnung</GeneratingMapForNewEncounter>
 
-  <!-- EN: Click for more info -->
-  <ClickForMoreInfo>Klicke für mehr Informationen</ClickForMoreInfo>
+  <!-- EN: Click for more info. -->
+  <ClickForMoreInfo>Klicke für mehr Informationen.</ClickForMoreInfo>
   <!-- EN: No more information is available. -->
   <NoMoreInfoAvailable>Keine weiteren Informationen verfügbar.</NoMoreInfoAvailable>
 
@@ -655,12 +727,10 @@
   <Factions>Fraktionen</Factions>
   <!-- EN: Gameplay problems can occur with more than {0} factions. -->
   <RecommendedFactionCount>Bei mehr als {0} Fraktionen kann es zu Problemen mit der Spielmechanik kommen.</RecommendedFactionCount>
-  <!-- EN: Maximum {0} visible factions allowed. -->
-  <TotalFactionsAllowed>Maximal {0} sichtbare Fraktionen erlaubt.</TotalFactionsAllowed>
-  <!-- EN: There can be no more than {0} {1}. -->
-  <MaxFactionsForType>Maximal {0} {1} erlaubt.</MaxFactionsForType>
-  <!-- EN: Restore defaults -->
-  <ResetFactionsToDefault>Standard wiederherstellen</ResetFactionsToDefault>
+  <!-- EN: max {0} visible factions allowed -->
+  <TotalFactionsAllowed>max. {0} sichtbare Fraktionen erlaubt</TotalFactionsAllowed>
+  <!-- EN: max {0} -->
+  <MaxFactionsForType>max. {0}</MaxFactionsForType>
   <!-- EN: Select the factions in the world. You can select up to {0} factions total. -->
   <FactionSelectionDesc>Lege fest, welche Fraktionen die Welt bevölkern sollen. Du kannst insgesamt bis zu {0} Fraktionen auswählen.</FactionSelectionDesc>
   <!-- EN: Disabling {0} means less quest variety and other reduced content. -->

@@ -90,15 +90,18 @@
     <li>insultcomparison->[Enemy]</li>
   -->
   <Insult.logRulesInitiator.rulesStrings>
-    <li>r_logentry(p=1.33)->[INITIATOR_nameDef] [insulted] die [PersonalCharacteristics] von [RECIPIENT_nameDef].</li>
-    <li>r_logentry(p=1.33)->[INITIATOR_nameDef] [insulted] den [PersonalCharacteristicMas] von [RECIPIENT_nameDef].</li>
-    <li>r_logentry(p=1.33)->[INITIATOR_nameDef] [insulted] die [PersonalCharacteristicFem] von [RECIPIENT_nameDef].</li>
-    <li>r_logentry(p=1.33)->[INITIATOR_nameDef] [insulted] das [PersonalCharacteristicNeu] von [RECIPIENT_nameDef].</li>
-    <li>r_logentry->[INITIATOR_nameDef] verglich [target] mit [insultcomparison].</li>
-    <li>r_logentry->[INITIATOR_nameDef] bezeichnete [target] als [insult].</li>
-    <li>target(p=4)->[RECIPIENT_nameDef]</li>
-    <li>target(p=0.5)->die [PersonFamilyFemAcc] von [RECIPIENT_nameDef]</li>
-    <li>target(p=0.5)->den [PersonFamilyMasAcc] von [RECIPIENT_nameDef]</li>
+    <li>r_logentry->[INITIATOR_nameDef] [insulted] [RECIPIENT_nameDef_s] [PersonalCharacteristic].</li>
+    <li>r_logentry->[INITIATOR_nameDef] [insulted] [RECIPIENT_nameDef_s] [PersonalCharacteristics].</li>
+    <li>r_logentry->[INITIATOR_nameDef] [insulted] die [PersonalCharacteristics] von [targetDat].</li>
+    <li>r_logentry->[INITIATOR_nameDef] [insulted] den [PersonalCharacteristicMas] von [targetDat].</li>
+    <li>r_logentry->[INITIATOR_nameDef] [insulted] die [PersonalCharacteristicFem] von [targetDat].</li>
+    <li>r_logentry->[INITIATOR_nameDef] [insulted] das [PersonalCharacteristicNeu] von [targetDat].</li>
+    <li>r_logentry->[INITIATOR_nameDef] verglich [targetAcc] mit [insultcomparison].</li>
+    <li>r_logentry->[INITIATOR_nameDef] bezeichnete [targetAcc] als [insult].</li>
+    <li>targetDat(p=4)->[RECIPIENT_nameDef]</li>
+    <li>targetDat->[RECIPIENT_nameDef_s] [PersonFamilyDat]</li>
+    <li>targetAcc(p=4)->[RECIPIENT_nameDef]</li>
+    <li>targetAcc->[RECIPIENT_nameDef_s] [PersonFamilyAcc]</li>
     <li>insulted(p=3)->beleidigte</li>
     <li>insulted->beleidigte öffentlich</li>
     <li>insulted->beleidigte lauthals</li>
@@ -108,12 +111,13 @@
     <li>insulted->verleumdete</li>
     <li>insulted->schimpfte hemmungslos über</li>
     <li>insulted->verspottete</li>
-    <li>insultcomparison->einer [AnimalFem]</li>
-    <li>insultcomparison->einem [AnimalMas]</li>
-    <li>insultcomparison->einem [AnimalNeu]</li>
+    <li>insultcomparison(p=0.66)->einer [AnimalFemDat]</li>
+    <li>insultcomparison(p=0.66)->einem [AnimalMasDat]</li>
+    <li>insultcomparison(p=0.66)->einem [AnimalNeuDat]</li>
     <li>insultcomparison->einem [EnemyDat]</li>
     <li>insult->[Animal]</li>
     <li>insult->[Enemy]</li>
+    <li>RECIPIENT_nameDef_s->{replace: [RECIPIENT_nameDef]s; "s&lt;/color>s"-"s&lt;/color>'"; "ß&lt;/color>s"-"ß&lt;/color>'"; "z&lt;/color>s"-"z&lt;/color>'"; "x&lt;/color>s"-"x&lt;/color>'"; "ce&lt;/color>s"-"ce&lt;/color>'"}</li>
   </Insult.logRulesInitiator.rulesStrings>
   
   <!-- EN: kind words -->
@@ -135,21 +139,24 @@
     <li>complimented->said good things about</li>
   -->
   <KindWords.logRulesInitiator.rulesStrings>
+    <li>r_logentry->[INITIATOR_nameDef] [complimented] [RECIPIENT_nameDef_s] [PersonalCharacteristics].</li>
+    <li>r_logentry->[INITIATOR_nameDef] [complimented] [RECIPIENT_nameDef_s] [PersonalCharacteristic].</li>
     <li>r_logentry->[INITIATOR_nameDef] [complimented] die [PersonalCharacteristics] von [RECIPIENT_nameDef].</li>
     <li>r_logentry->[INITIATOR_nameDef] [complimented] den [PersonalCharacteristicMas] von [RECIPIENT_nameDef].</li>
     <li>r_logentry->[INITIATOR_nameDef] [complimented] die [PersonalCharacteristicFem] von [RECIPIENT_nameDef].</li>
     <li>r_logentry->[INITIATOR_nameDef] [complimented] das [PersonalCharacteristicNeu] von [RECIPIENT_nameDef].</li>
-    <li>complimented(p=3)->bewunderte</li>
-    <li>complimented->lobte</li>
+    <li>complimented(p=3)->lobte</li>
+    <li>complimented->bewunderte</li>
     <li>complimented->erwähnte lobend</li>
     <li>complimented->pries</li>
     <li>complimented->feierte</li>
-    <li>complimented->lobte</li>
+    <li>complimented->würdigte</li>
     <li>complimented->sprach nett über</li>
     <li>complimented->redete nett über</li>
     <li>complimented->sagte nette Worte über</li>
     <li>complimented->redete positiv über</li>
     <li>complimented->lobte anerkennend</li>
+    <li>RECIPIENT_nameDef_s->{replace: [RECIPIENT_nameDef]s; "s&lt;/color>s"-"s&lt;/color>'"; "ß&lt;/color>s"-"ß&lt;/color>'"; "z&lt;/color>s"-"z&lt;/color>'"; "x&lt;/color>s"-"x&lt;/color>'"; "ce&lt;/color>s"-"ce&lt;/color>'"}</li>
   </KindWords.logRulesInitiator.rulesStrings>
   
   <!-- EN: slight -->
@@ -172,12 +179,14 @@
     <li>madefunof->offered a backhanded compliment about</li>
   -->
   <Slight.logRulesInitiator.rulesStrings>
-    <li>r_logentry->[INITIATOR_nameDef] [madefunof] die [PersonalCharacteristics] von [target].</li>
-    <li>r_logentry->[INITIATOR_nameDef] [madefunof] den [PersonalCharacteristicMas] von [target].</li>
-    <li>r_logentry->[INITIATOR_nameDef] [madefunof] die [PersonalCharacteristicFem] von [target].</li>
-    <li>r_logentry->[INITIATOR_nameDef] [madefunof] das [PersonalCharacteristicNeu] von [target].</li>
-    <li>target(p=4)->[RECIPIENT_nameDef]</li>
-    <li>target->[RECIPIENT_nameDef]s [PersonFamily]</li>
+    <li>r_logentry->[INITIATOR_nameDef] [madefunof] [RECIPIENT_nameDef_s] [PersonalCharacteristic].</li>
+    <li>r_logentry->[INITIATOR_nameDef] [madefunof] [RECIPIENT_nameDef_s] [PersonalCharacteristics].</li>
+    <li>r_logentry->[INITIATOR_nameDef] [madefunof] die [PersonalCharacteristics] von [targetDat].</li>
+    <li>r_logentry->[INITIATOR_nameDef] [madefunof] den [PersonalCharacteristicMas] von [targetDat].</li>
+    <li>r_logentry->[INITIATOR_nameDef] [madefunof] die [PersonalCharacteristicFem] von [targetDat].</li>
+    <li>r_logentry->[INITIATOR_nameDef] [madefunof] das [PersonalCharacteristicNeu] von [targetDat].</li>
+    <li>targetDat(p=4)->[RECIPIENT_nameDef]</li>
+    <li>targetDat->[RECIPIENT_nameDef_s] [PersonFamilyDat]</li>
     <li>madefunof->machte sich lustig über</li>
     <li>madefunof->beleidigte</li>
     <li>madefunof->beleidigte unterschwellig</li>
@@ -189,6 +198,7 @@
     <li>madefunof->redete schlecht über</li>
     <li>madefunof->machte eine herablassende Bemerkung über</li>
     <li>madefunof->gab ein zweifelhaftes Kompliment ab über</li>
+    <li>RECIPIENT_nameDef_s->{replace: [RECIPIENT_nameDef]s; "s&lt;/color>s"-"s&lt;/color>'"; "ß&lt;/color>s"-"ß&lt;/color>'"; "z&lt;/color>s"-"z&lt;/color>'"; "x&lt;/color>s"-"x&lt;/color>'"; "ce&lt;/color>s"-"ce&lt;/color>'"}</li>
   </Slight.logRulesInitiator.rulesStrings>
   
 </LanguageData>

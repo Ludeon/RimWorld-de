@@ -5,24 +5,24 @@
     <li>questDescription->\nIn order to consecrate making [titleHeir_nameFull] the heir of [titleHolder_nameFull]'s title, you must build a monument.\n\nThe monument will be [monumentSize] in size and will require these resources (total value [monumentRequiredResourcesMarketValue_money]):\n\n[monumentRequiredResources]\n\nFailing to finish the monument within 20 days is considered to profane the ritual. Your relations with [asker_factionName] will fall by 25, and the heir will not be changed.\n\nIf the monument is destroyed within [keepMonumentTicks_duration] days after completion, your relations with [asker_factionName] will fall by [goodwillChangeIfMonumentDestroyed].</li>
   -->
   <ChangeRoyalHeir.questDescriptionRules.rulesStrings>
-    <li>questDescription->\nUm abzusegnen, dass [titleHeir_nameFull] der Erbe von [titleHolder_nameFull]s Titel wird, musst du ein Denkmal errichten.\n\nDas Denkmal wird eine Größe von [monumentSize] haben und wird die folgenden Ressourcen benötigen (Gesamtwert [monumentRequiredResourcesMarketValue_money]):\n\n[monumentRequiredResources]\n\nSollte es dir nicht gelingen, das Denkmal innerhalb von 20 Tagen zu errichten, wird dies als Entweihung des Rituals angesehen. Dein Ruf bei der Fraktion [asker_factionName] wird sich um 25 Punkte verschlechtern, und die Erbschaft bleibt unverändert.\n\nNach der Fertigstellung des Denkmals musst du [keepMonumentTicks_duration] lang darauf achten, dass es nicht zerstört wird, sonst verschlechtert sich dein Ruf bei der Fraktion [asker_factionName] um [goodwillChangeIfMonumentDestroyed] Punkte.</li>
+    <li>questDescription->\nUm [titleHeir_nameFull] {titleHeir_gender ? zum Erben : zur Erbin} des Titels von [titleHolder_nameFull] zu weihen, musst du ein Denkmal errichten.\n\nDas Denkmal wird eine Größe von [monumentSize] haben und die folgenden Ressourcen benötigen (Gesamtwert [monumentRequiredResourcesMarketValue_money]):\n\n[monumentRequiredResources]\n\nSollte es dir nicht gelingen, das Denkmal innerhalb von 20 Tagen zu errichten, wird dies als Entweihung des Rituals angesehen. Dein Ruf bei der Fraktion [asker_factionName] wird sich um 25 Punkte verschlechtern, und die Erbschaft bleibt unverändert.\n\nNach der Fertigstellung des Denkmals musst du [keepMonumentTicks_duration] lang darauf achten, dass es nicht zerstört wird, sonst verschlechtert sich dein Ruf bei der Fraktion [asker_factionName] um [goodwillChangeIfMonumentDestroyed] Punkte.</li>
   </ChangeRoyalHeir.questDescriptionRules.rulesStrings>
   <!-- EN:
     <li>questName->[titleHeir_nameDef]'s inheritance</li>
   -->
   <ChangeRoyalHeir.questNameRules.rulesStrings>
-    <li>[titleHeir_nameDef]s Erbe</li>
+    <li>questName->{replace: [titleHeir_nameDef]s; "s&lt;/color>s"-"s&lt;/color>'"; "ß&lt;/color>s"-"ß&lt;/color>'"; "z&lt;/color>s"-"z&lt;/color>'"; "x&lt;/color>s"-"x&lt;/color>'"; "ce&lt;/color>s"-"ce&lt;/color>'"} Erbe</li>
   </ChangeRoyalHeir.questNameRules.rulesStrings>
   <!-- EN: Time left: {0} -->
   <ChangeRoyalHeir.InspectStringTimeLeft.slateRef>Verbleibende Zeit: {0}</ChangeRoyalHeir.InspectStringTimeLeft.slateRef>
   <!-- EN: [titleHolder_nameDef]'s heir change failed -->
-  <ChangeRoyalHeir.LetterTextAskerOffended.slateRef>[titleHolder_nameDef]s Erbwechsel gescheitert</ChangeRoyalHeir.LetterTextAskerOffended.slateRef>
+  <ChangeRoyalHeir.LetterTextAskerOffended.slateRef>{replace: [titleHolder_nameDef]s; "s&lt;/color>s"-"s&lt;/color>'"; "ß&lt;/color>s"-"ß&lt;/color>'"; "z&lt;/color>s"-"z&lt;/color>'"; "x&lt;/color>s"-"x&lt;/color>'"; "ce&lt;/color>s"-"ce&lt;/color>'"} Erbwechsel gescheitert</ChangeRoyalHeir.LetterTextAskerOffended.slateRef>
   <!-- EN: [asker_nameDef] is offended that you promised to consecrate the new inheritance, but did not build the monument within the prescribed time.\n\nYou lost 25 goodwill with [asker_faction_name]. -->
   <ChangeRoyalHeir.LetterLabelAskerOffended.slateRef>[asker_nameDef] ist empört, dass du zwar versprochen hast, die neue Erbschaft abzusegnen, es aber nicht geschafft hast, das Denkmal in der vorgegebenen Zeit zu errichten.\n\nDu hast 25 Ruf bei der Fraktion [asker_faction_name] verloren.</ChangeRoyalHeir.LetterLabelAskerOffended.slateRef>
   <!-- EN: Title holder died: {SUBJECT_definite} -->
   <ChangeRoyalHeir.LetterLabelTitleHolderDied.slateRef>Titelträger ist gestorben: {SUBJECT_definite}</ChangeRoyalHeir.LetterLabelTitleHolderDied.slateRef>
   <!-- EN: {SUBJECT_definite}, whose heir was in the process of being changed, has died. -->
-  <ChangeRoyalHeir.LetterTextTitleHolderDied.slateRef>{SUBJECT_definite}, {SUBJECT_gender ? dessen : deren} Erbe im Prozess war, geändert zu werden, ist gestorben.</ChangeRoyalHeir.LetterTextTitleHolderDied.slateRef>
+  <ChangeRoyalHeir.LetterTextTitleHolderDied.slateRef>{SUBJECT_definite}, {SUBJECT_gender ? dessen : deren} Erbe geändert werden sollte, ist gestorben.</ChangeRoyalHeir.LetterTextTitleHolderDied.slateRef>
   <!-- EN: Designated heir died: {SUBJECT_definite} -->
   <ChangeRoyalHeir.LetterLabelDesignatedHeirDied.slateRef>Ernannter Erbe ist gestorben: {SUBJECT_definite}</ChangeRoyalHeir.LetterLabelDesignatedHeirDied.slateRef>
   <!-- EN: {SUBJECT_definite}, who was supposed to become heir to a title, has died. -->

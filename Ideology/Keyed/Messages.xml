@@ -8,9 +8,9 @@
   <!-- EN: {PRECEPT1} and {PRECEPT2} are incompatible. -->
   <MessageIdeoIncompatiblePrecepts>{PRECEPT1} und {PRECEPT2} sind nicht miteinander kompatibel.</MessageIdeoIncompatiblePrecepts>
   <!-- EN: {DESIREDAPPAREL} apparel desire overlaps with {ROLE} apparel requirement. -->
-  <MessageIdeoWarnRoleApparelOverlapsDesiredApparel>Bevorz. Kleidung kollidiert mit Pflichtkleidung des {lookup: {ROLE}; Singular; 2}.</MessageIdeoWarnRoleApparelOverlapsDesiredApparel>
+  <MessageIdeoWarnRoleApparelOverlapsDesiredApparel>Bevorz. Kleidung kollidiert mit Pflichtkleidung des {lookup: {ROLE}; decline; 5}.</MessageIdeoWarnRoleApparelOverlapsDesiredApparel>
   <!-- EN: {DESIREDAPPAREL} overlaps with {ROLE} apparel requirement ({ROLEAPPAREL}). This will make it impossible for {ROLE}s to wear the required and desired apparel together. -->
-  <DescriptionIdeoWarnRoleApparelOverlapsDesiredApparel>Bevorzugte Kleidung ({DESIREDAPPAREL}) überschneidet sich mit der Pflichtkleidung ({ROLEAPPAREL}) des {lookup: {ROLE}; Singular; 2}. Das bedeutet, dass der {lookup: {ROLE}; Singular; 1} die Pflichtkleidung und bevorzugte Kleidung nicht gleichzeitig tragen kann.</DescriptionIdeoWarnRoleApparelOverlapsDesiredApparel>
+  <DescriptionIdeoWarnRoleApparelOverlapsDesiredApparel>Bevorzugte Kleidung ({DESIREDAPPAREL}) überschneidet sich mit der Pflichtkleidung ({ROLEAPPAREL}) des {lookup: {ROLE}; decline; 5}. Das bedeutet, dass der {lookup: {ROLE}; decline; 4} die Pflichtkleidung und bevorzugte Kleidung nicht gleichzeitig tragen kann.</DescriptionIdeoWarnRoleApparelOverlapsDesiredApparel>
   <!-- EN: {PRECEPT} needs one of these buildings -->
   <MessageRitualMissingTarget>{PRECEPT} braucht eines dieser Bauwerke</MessageRitualMissingTarget>
   <!-- EN: {PRECEPT} needs an associated ritual. -->
@@ -30,13 +30,13 @@
   <!-- EN: {0_label} and {1_label} are incompatible with each other. -->
   <MessageIncompatibleMemes>{0_label} und {1_label} sind nicht miteinander kompatibel.</MessageIncompatibleMemes>
   <!-- EN: You need {0} to start the {1}. -->
-  <MessageNoRequiredRolePawnToBeginRitual>{replace: ^{0}; "^ein "-""} erforderlich, um das Ritual '{1}' zu starten.</MessageNoRequiredRolePawnToBeginRitual>
+  <MessageNoRequiredRolePawnToBeginRitual>{replace: ^{0}; "^ein "-""; "^"-""} erforderlich, um '{1}' zu starten.</MessageNoRequiredRolePawnToBeginRitual>
   <!-- EN: At least {0} spectator(s) are required to start the {1}. -->
-  <MessageNotEnoughSpectators>Mindestens {0} Zuschauer erforderlich, um das Ritual '{1}' zu starten.</MessageNotEnoughSpectators>
+  <MessageNotEnoughSpectators>Mindestens {0} Zuschauer erforderlich, um '{1}' zu starten.</MessageNotEnoughSpectators>
   <!-- EN: You must choose a role. -->
   <MessageRoleChangeChooseDifferentRole>Du musst eine Rolle auswählen.</MessageRoleChangeChooseDifferentRole>
   <!-- EN: Before starting the {1}, you must assign someone to the role of {0}. -->
-  <MessageNeedAssignedRoleToBeginRitual>Bevor das Ritual '{1}' gestartet werden kann, musst du jemandem die Rolle '{0}' zuweisen.</MessageNeedAssignedRoleToBeginRitual>
+  <MessageNeedAssignedRoleToBeginRitual>Bevor '{1}' gestartet werden kann, musst du jemandem die Rolle '{0}' zuweisen.</MessageNeedAssignedRoleToBeginRitual>
   <!-- EN: Need at least one {0} participating. -->
   <MessageNeedAtLeastOneParticipantOfIdeo>Mindestens 1 {0} muss teilnehmen.</MessageNeedAtLeastOneParticipantOfIdeo>
   
@@ -63,9 +63,9 @@
 
   <!-- Prisoner interactions -->
   <!-- EN: No warden is capable of this enslavement. -->
-  <MessageNoWardenCapableOfEnslavement>Keiner deiner Aufseher ist zu dieser Versklavung imstande.</MessageNoWardenCapableOfEnslavement>
+  <MessageNoWardenCapableOfEnslavement>Keiner deiner Wärter ist zu dieser Versklavung imstande.</MessageNoWardenCapableOfEnslavement>
   <!-- EN: You have no {MEMBERNAME} wardens to convert {PRISONER_nameDef}. {PRISONER_possessive} interaction mode has reverted to "No interaction". -->
-  <MessageNoWardenOfIdeo>Du hast keine {MEMBERNAME}-Aufseher, um {PRISONER_nameDef} zu bekehren. {PRISONER_possessive} Interaktionsmodus wurde auf 'Keine Interaktion' zurückgesetzt. </MessageNoWardenOfIdeo>
+  <MessageNoWardenOfIdeo>Du hast keine {MEMBERNAME}-Wärter, um {PRISONER_nameDef} zu bekehren. {PRISONER_possessive} Interaktionsmodus wurde auf 'Keine Interaktion' zurückgesetzt. </MessageNoWardenOfIdeo>
 
   <!-- Camps -->
   <!-- EN: You've detected a {CAMP_label} nearby controlled by {FACTION_name}. -->
@@ -103,8 +103,8 @@
   <!-- EN: Roles cannot have overlapping apparel requirements. -->
   <OverlappingRoleApparel>Rollen können keine sich überschneidenden Pflichtkleidungen haben.</OverlappingRoleApparel>
   
-  <!-- EN: {0_label} will self-destruct in {1}. -->
-  <SelfDestructCountdown>{0_label} wird sich in {replace: {1}; "Tage"-"Tagen"; "Jahre"-"Jahren"} selbst zerstören.</SelfDestructCountdown>
+  <!-- EN: {0} will self-destruct in {1}. -->
+  <SelfDestructCountdown>{0} wird sich in {replace: {1}; "Tage"-"Tagen"; "Jahre"-"Jahren"} selbst zerstören.</SelfDestructCountdown>
   <!-- EN: Precept name is too long (maximum {0} letters) -->
   <PreceptNameTooLong>Name ist zu lang (maximal {0} Buchstaben)</PreceptNameTooLong>
 

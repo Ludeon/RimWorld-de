@@ -18,7 +18,7 @@
     <li>animistBasis->Das Universum ist ein endloser Kreislauf von Schöpfung und Zerstörung, der von Geistern in weltlichen Objekten um uns herum gelenkt wird.</li>
     <li>animistBasis->Es existiert direkt neben unserem Universum ein Paralleluniversum mit Geistern. Jedes scheinbar unbelebte Objekt in unserem Universum hat jeweils einen belebten Geist aus dem anderen Universum.</li>
     <li>animistFact->Jeder Geist hat ein essentielles Merkmal und versucht, die Welt zu beeinflussen. Manchmal ist dieser Einfluss hilfreich, manchmal ist er schädlich.</li>
-    <li>animistProphecy->[itIsSaid], dass der Geist des großen [relic0_name] eines Tages dem Träger große Macht über alle Geister verleihen wird.</li>
+    <li>animistProphecy->[itIsSaid], dass der Geist der großen Reliquie [relic0_name] eines Tages dem Träger große Macht über alle Geister verleihen wird.</li>
     <li>animistProphecy->[itIsSaid], dass ein schlafender Reisender aus den Sternen auf die Erde stürzen wird und dass der Geist des Kraters ihn wecken wird, auf dass er den letzten Stamm wieder auf Kurs bringt.</li>
     <li>itIsSaid->Man sagt</li>
     <li>itIsSaid->Es ist überliefert</li>
@@ -87,9 +87,9 @@
     <li>setup->Eines Tages, während der Arbeit, überkam [founderName] eine tiefgreifende Offenbarung. [founder_pronoun] ließ [founder_possessive]e Werkzeuge fallen und begann, [founder_possessive]e Erkenntnis an die anderen Arbeiter weiterzugeben.</li>
     <li>setup->[founderName] saß zwanzig Jahre lang auf einer Parkbank, während [founder_pronoun] über unsere Welt nachdachte. Auf Basis [founder_possessive]er Erkenntnisse schrieb [founder_pronoun] unser Gründungsbuch.</li>
     <li>story(uses=1,priority=-10)->Die [adjective]en Anhänger hätten die wahre Natur [memeConceptGenDef] ohne die Lehren von [founderName] nie verstanden.</li>
-    <li>story(uses=1,priority=-10)->[founderName]s Rede bei [ritualName] inspirierte viele, ein [memeAdjective]es Leben zu führen.</li>
-    <li>story(uses=1,priority=-10)->Da keiner [founderName]s Wissen über [memeConceptAccDef] übertreffen konnte, wurde [founder_pronoun] zum [leaderTitle] der [adjective]en Anhänger ernannt.</li>
-    <li>story(uses=1,priority=-10)->[founderName] trug [relic0_thingDef_labelIndef] namens [relic0_name] überall mit sich herum, um andere daran zu erinnern, ein [memeAdjective]es Leben zu führen.</li>
+    <li>story(uses=1,priority=-10)->{replace: [founderName]'s; "s's"-"s'"; "ß's"-"ß'"; "z's"-"z'"; "x's"-"x'"; "ce's"-"ce'"; "'s"-"s"} Rede beim Ritual [ritualName] inspirierte viele, ein [memeAdjective]es Leben zu führen.</li>
+    <li>story(uses=1,priority=-10)->Da keiner {replace: [founderName]'s; "s's"-"s'"; "ß's"-"ß'"; "z's"-"z'"; "x's"-"x'"; "ce's"-"ce'"; "'s"-"s"} Wissen über [memeConceptAccDef] übertreffen konnte, wurde [founder_pronoun] zum [leaderTitle] der [adjective]en Anhänger ernannt.</li>
+    <li>story(uses=1,priority=-10)->[founderName] trug eine Reliquie namens [relic0_name] überall mit sich herum, um andere daran zu erinnern, ein [memeAdjective]es Leben zu führen.</li>
   </IdeologicalFounder.rules.rulesStrings>
   
   <!-- EN:
@@ -160,7 +160,7 @@
     <li>r_pattern->"[r_lessonIntro] [r_lesson]. [r_lessonReinforcement]"\n\n  - [lessonAttribution]</li>
     <li>lessonAttribution->[founder_nameFull]</li>
     <li>lessonAttribution(p=2)->&lt;i>[attributionSource_titleCase]&lt;/i> von [founder_nameFull]</li>
-    <li>lessonAttribution->[founder_nameFull]s Brief an [believer_nameFull]</li>
+    <li>lessonAttribution->ein Brief von [founder_nameFull] an [believer_nameFull]</li>
     <li>lessonAttribution->[founder_nameFull], aus der Grundsatzrede von [memeConference_titleCase]</li>
     <li>lessonAttribution->[founder_nameFull], auf [founder_possessive]em Sterbebett</li>
     <li>lessonAttribution->[founder_nameFull], kurz vor der Hinrichtung</li>
@@ -268,14 +268,14 @@
     <li>conflict->Ein böser [foeLeader] und [foeLeader_possessive]e [place_foeSoldiers_def] versklavten die Anhänger von [deity0_name].</li>
     <li>conflict->Dann kam der [place_foeLeader_def]. [foeLeader_possessive]e [place_foeSoldiers_def] töteten viele Anhänger von [deity0_name] mit [place_personalWeapons_dat].</li>
     <li>conflict->Eine Gruppe von [place_foeSoldiers_dat] erhob sich unter einem schrecklichen [place_foeLeader_dat]. Sie sperrten alle [adjective]e Anhänger in [place_community_acc_indef] ein.</li>
-    <li>conflict->Es herrschte Frieden, bis sich ein [foeLeader] und [foeLeader_possessive]e [place_foeSoldiers_def] gegen [deity0_name]s Herrschaft auflehnten. [adjective]e Anhänger waren gezwungen, sich in [place_community_dat_indef] zu verstecken.</li>
-    <li>founderJoin->Ein Held namens [founderName] versuchte, den [place_foeLeader_dat] zu ermorden. [founder_pronoun] scheiterte, aber [deity0_name] wurde Zeuge von [founderName]s Kampf und ernannte [founder_objective] zum Propheten des [adjective]en Glaubens.</li>
+    <li>conflict->Es herrschte Frieden, bis sich ein [foeLeader] und [foeLeader_possessive]e [place_foeSoldiers_def] gegen {replace: [deity0_name]s; "s&lt;/color>s"-"s&lt;/color>'"; "ß&lt;/color>s"-"ß&lt;/color>'"; "z&lt;/color>s"-"z&lt;/color>'"; "x&lt;/color>s"-"x&lt;/color>'"; "ce&lt;/color>s"-"ce&lt;/color>'"} Herrschaft auflehnten. [adjective]e Anhänger waren gezwungen, sich in [place_community_dat_indef] zu verstecken.</li>
+    <li>founderJoin->Ein Held namens [founderName] versuchte, den [place_foeLeader_dat] zu ermorden. [founder_pronoun] scheiterte, aber [deity0_name] wurde Zeuge von {replace: [founderName]'s; "s's"-"s'"; "ß's"-"ß'"; "z's"-"z'"; "x's"-"x'"; "ce's"-"ce'"; "'s"-"s"} Kampf und ernannte [founder_objective] zum Propheten des [adjective]en Glaubens.</li>
     <li>founderJoin->[deity0_name] erschien dem [place_job_dat] [founderName] [revelationAdverb] und sprach über [memeConceptAccDef].</li>
-    <li>founderJoin->[founderName] fand [revelationObject] in [deity0_name]s Stimme über [memeConceptAccDef] sprach.</li>
+    <li>founderJoin->[founderName] fand [revelationObject] in {replace: [deity0_name]s; "s&lt;/color>s"-"s&lt;/color>'"; "ß&lt;/color>s"-"ß&lt;/color>'"; "z&lt;/color>s"-"z&lt;/color>'"; "x&lt;/color>s"-"x&lt;/color>'"; "ce&lt;/color>s"-"ce&lt;/color>'"} Stimme über [memeConceptAccDef] sprach.</li>
     <li>founderJoin->Ein berühmter [place_job] namens [founderName] brachte die [adjective]en Anhänger zusammen und rekrutierte sogar einige der [place_foeSoldiers_def].</li>
     <li>founderJoin->Ein [place_job] namens [founderName] stand auf und sprach sich gegen den [place_foeLeader_dat] aus, daraufhin wurde [founderName] von [deity0_name] gesegnet.</li>
     <li>founderJoin->[deity0_name] beschloss, [place_name] als Mensch namens [founderName] aufzusuchen, um den [adjective]en Anhängern zu helfen.</li>
-    <li>founderJoin->Ein Held namens [founderName] tötete Hunderte von [place_foeSoldiers_dat] mit [place_personalWeapon_dat_indef], dabei wurde [founder_pronoun] von [deity0_name] per [relic0_name] gelenkt.</li>
+    <li>founderJoin->Ein Held namens [founderName] tötete Hunderte von [place_foeSoldiers_dat] mit [place_personalWeapon_dat_indef]. [deity0_name] lenkte [founder_objective], indem [deity0_pronoun] durch die Reliquie [relic0_name] sprach.</li>
     <li>victory->[founderName] versammelte die [adjective]en Anhänger in [place_community_dat_indef] und brachte ihnen die Weisheit von [deity0_name] bei.</li>
     <li>victory->[founderName] opferte sich selbst, um den [place_foeLeader_dat] zu töten.</li>
     <li>revelationAdverb->in einer Vision</li>
@@ -323,7 +323,7 @@
     <li>creation->[deity0_name] gebar den Menschen durch einen großen Zufall und betrachtete ihn mit einer gewissen Neugier.</li>
     <li>creation->Das Universum war leer. Dann, gelangweilt von der Ewigkeit, formte [deity0_name] Mann und Frau aus [bodilyOrigin].</li>
     <li>episode(uses=1)->Als [deity0_name] auf die Menschen blickte, sah [deity0_pronoun] ihre Unbeholfenheit und beschloss, über sie zu herrschen.</li>
-    <li>episode(uses=1)->Über große stellare Entfernungen hinweg hat der Wille von [deity0_name] das Leben der Menschheit vor der Leere bewahrt.</li>
+    <li>episode(uses=1)->Über große stellare Entfernungen hinweg hat {replace: [deity0_name]s; "s&lt;/color>s"-"s&lt;/color>'"; "ß&lt;/color>s"-"ß&lt;/color>'"; "z&lt;/color>s"-"z&lt;/color>'"; "x&lt;/color>s"-"x&lt;/color>'"; "ce&lt;/color>s"-"ce&lt;/color>'"} Wille das Leben der Menschheit vor der Leere bewahrt.</li>
     <li>episode(uses=1)->Obwohl viele Abenteurer gegen [deity0_objective] vorgingen, konnte [deity0_name] sie leicht aufhalten, denn [deity0_pronoun] war der [deity0_type].</li>
     <li>episode(uses=1)->Das Leiden der Menschheit bereitete [deity0_name] großen Kummer.</li>
     <li>materialOrigin->Lehm</li>

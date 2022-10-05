@@ -7,10 +7,12 @@
   <OnlyMembersCanBuild>Kann nur ein {0} bauen</OnlyMembersCanBuild>
   <!-- EN: {0} is already in progress. -->
   <CantStartRitualAlreadyInProgress>{0} ist schon in Arbeit.</CantStartRitualAlreadyInProgress>
+  <!-- EN: One or more participants can't join due to extreme temperature. -->
+  <CantJoinRitualInExtremeWeather>Ein oder mehrere Teilnehmer können aufgrund der extremen Temperatur nicht teilnehmen.</CantJoinRitualInExtremeWeather>
   <!-- EN: {0} is already participating in a ritual. -->
   <CantStartRitualTargetIsAlreadyInRitual>{0} ist bereits an einem Ritual beteiligt.</CantStartRitualTargetIsAlreadyInRitual>
   <!-- EN: You must assign the role of {0} in order to start this ritual. -->
-  <CantStartRitualRoleNotAssigned>Das Ritual kann erst gestartet werden, wenn du jemandem die Rolle '{0}' zuweist.</CantStartRitualRoleNotAssigned>
+  <CantStartRitualRoleNotAssigned>Kann erst gestartet werden, wenn du jemandem die Rolle '{0}' zuweist.</CantStartRitualRoleNotAssigned>
   <!-- EN: There is nobody to convert to {0}. You need a colonist, prisoner, or slave of a different ideoligion. -->
   <CantStartRitualNoConvertee>Es gibt niemanden, der zur Ideologie '{0}' bekehrt werden kann. Du benötigst einen Kolonisten, Gefangenen oder Sklaven, der an eine andere Ideologie glaubt.</CantStartRitualNoConvertee>
   <!-- EN: {PAWN_nameDef} cannot be {ROLE}. -->
@@ -19,8 +21,12 @@
   <CantStartRitualSelectedPawnMustBeMember>{PAWN_nameDef} muss ein {IDEO_memberName} sein.</CantStartRitualSelectedPawnMustBeMember>
   <!-- EN: {PAWN_nameDef} is psychically deaf. -->
   <CantStartRitualSelectedPawnPsychicallyDeaf>{PAWN_nameDef} ist mental taub.</CantStartRitualSelectedPawnPsychicallyDeaf>
-  <!-- EN: Not enough space. There must be a clear circle of radius {MINRADIUS}. -->
-  <CantStartNotEnoughSpaceDuel>Nicht genug Platz. Freier Kreis mit {MINRADIUS}-er Radius notwendig.</CantStartNotEnoughSpaceDuel>
+  <!-- EN: Not enough space for spectators. There must be a clear circle of radius {MINRADIUS}. At least {1} standable spots in that radius required. -->
+  <CantStartNotEnoughSpaceDuelSpectators>Nicht genug Platz für Zuschauer. Freier Kreis mit {MINRADIUS}-er Radius notwendig. Mindestens {1} Standplätze in diesem Radius erforderlich.</CantStartNotEnoughSpaceDuelSpectators>
+  <!-- EN: Not enough space for duelists. There must be a clear circle of radius {MINRADIUS}. At least {1} standable spots in that radius required. -->
+  <CantStartNotEnoughSpaceDuelDuelists>Nicht genug Platz für Duellanten. Freier Kreis mit {MINRADIUS}-er Radius notwendig. Mindestens {1} Standplätze in diesem Radius erforderlich.</CantStartNotEnoughSpaceDuelDuelists>
+  <!-- EN: Not enough space for speaker. There must be a clear circle of radius {MINRADIUS}. -->
+  <CantStartNotEnoughSpaceDuelSpeaker>Nicht genug Platz für Redner. Freier Kreis mit {MINRADIUS}-er Radius notwendig.</CantStartNotEnoughSpaceDuelSpeaker>
   <!-- EN: {0_labelShort} is a slave. Slaves don't get funerals. -->
   <CantStartFuneralForSlave>{0_labelShort} ist ein Sklave. Sklaven erhalten keine Beerdigungen.</CantStartFuneralForSlave>
   <!-- EN: Need a slave bed that is reachable, not reserved, and in safe temperature. -->
@@ -68,8 +74,6 @@
   <RoleApparelRequirementIncompatibleAnyMemeRequired>erfordert eine der Glaubensgrundlagen</RoleApparelRequirementIncompatibleAnyMemeRequired>
   <!-- EN: cannot be worn with assigned apparel -->
   <BodyPartAlreadyCovered>bereits belegt</BodyPartAlreadyCovered>
-  <!-- EN: already assigned -->
-  <AlreadyAssigned>bereits zugewiesen</AlreadyAssigned>
   <!-- EN: People are pleased when their apparel requirements are fulfilled, and unhappy when they are violated. -->
   <NoteRoleApparelRequirementEffects>Leute sind zufrieden, wenn ihre Kleidungsanforderungen erfüllt sind, und unglücklich, wenn nicht.</NoteRoleApparelRequirementEffects>
   <!-- EN: supercharge not ready -->
@@ -120,10 +124,10 @@
   <!-- EN: Install in reliquary -->
   <InstallInReliquary>Installiere in Reliquienschrein</InstallInReliquary>
   <!-- EN: no empty accessible reliquary -->
-  <NoEmptyReliquary>Kein freier, erreichbarer Reliquienschrein</NoEmptyReliquary>
+  <NoEmptyReliquary>kein freier, erreichbarer Reliquienschrein</NoEmptyReliquary>
 
   <!-- EN: No {MEMBERNAME} warden -->
-  <NoWardenOfIdeo>Kein {MEMBERNAME}-Aufseher</NoWardenOfIdeo>
+  <NoWardenOfIdeo>Kein {MEMBERNAME}-Wärter</NoWardenOfIdeo>
 
   <!-- EN: Remove current role -->
   <RemoveCurrentRole>Entferne aktuelle Rolle</RemoveCurrentRole>
@@ -149,7 +153,7 @@
   <!-- EN: Cannot start {0} cycle -->
   <BiosculpterCannotStartCycle>Kann {0}-Zyklus nicht starten</BiosculpterCannotStartCycle>
   <!-- EN: Cannot find cycle ingredients ({INGREDIENTS}) -->
-  <BiosculpterMissingIngredients>Kann keine Inhaltsstoffe für Zyklus finden ({INGREDIENTS})</BiosculpterMissingIngredients>
+  <BiosculpterMissingIngredients>Kann keine Zutaten für Zyklus finden ({INGREDIENTS})</BiosculpterMissingIngredients>
   <!-- EN: Nobody around can use this -->
   <BiosculpterNoEligiblePawns>Niemand hier kann das nutzen</BiosculpterNoEligiblePawns>
   <!-- EN: Biotuned to {PAWN_labelShort} and {PAWN_pronoun} isn't around -->
@@ -167,5 +171,5 @@
   <!-- EN: {PAWN_labelShort} already wants {PAWN_possessive} next treatment and will automatically begin one if this is enabled. -->
   <BiosculpterAutoAgeReversalDescriptionNow>{PAWN_labelShort} möchte bereits {PAWN_possessive}e nächste Behandlung und beginnt diese automatisch bei Aktivierung dieser Option.</BiosculpterAutoAgeReversalDescriptionNow>
   <!-- EN: Collecting ingredients for biosculpter cycle -->
-  <BiosculpterJobReportCollectIngredients>Sammelt Inhaltsstoffe für Bioformerzyklus</BiosculpterJobReportCollectIngredients>
+  <BiosculpterJobReportCollectIngredients>Sammelt Zutaten für Bioformerzyklus</BiosculpterJobReportCollectIngredients>
 </LanguageData>

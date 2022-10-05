@@ -8,15 +8,11 @@
     <li>pawnInvolvedInQuestInfo-></li>
   -->
   <OpportunitySite_DownedRefugee.questDescriptionRules.rulesStrings>
-    <li>questDescription(askerIsNull==true)->[refugee_nameDef] kontaktiert dich und bittet um Hilfe. [refugee_pronoun] ist verwundet und kaum noch bei Bewusstsein.\n\n[refugee_nameDef] ist [ein_N_jaehriger] [refugee_title]. [refugee_pronoun] verspricht, sich dir anzuschließen, wenn du [refugee_objective] rettest.\n\n[refugee_nameDef] sagt, dass dort [allSitePartsDescriptionsExceptFirst][pawnInvolvedInQuestInfo]</li>
-    <li>questDescription(asker_factionLeader==True)->[asker_nameDef], [asker_faction_leaderTitle] der Fraktion [asker_faction_name], sagt, dass [sein_Freund] auf einer Reise verwundet wurde. Das Opfer heißt [refugee_nameIndef] und ist [ein_N_jaehriger] [refugee_title].\n\n[asker_nameDef] erzählt dir, dass [asker_pronoun] niemanden entbehren kann, um [refugee_nameDef] zu retten, aber wenn du es zu [refugee_nameDef]s Position schaffst und [refugee_objective] rettest, wird [refugee_pronoun] sich dir anschließen.\n\n[asker_nameDef] sagt, dass dort [allSitePartsDescriptionsExceptFirst][pawnInvolvedInQuestInfo]</li>
+    <li>questDescription(askerIsNull==true)->[refugee_nameDef] kontaktiert dich und bittet um Hilfe. [refugee_pronoun] ist verwundet und kaum noch bei Bewusstsein.\n\n[refugee_nameDef] ist [a_N_year_old_refugee]. [refugee_pronoun] verspricht, sich dir anzuschließen, wenn du [refugee_objective] rettest.\n\n[refugee_nameDef] sagt, dass dort [allSitePartsDescriptionsExceptFirst][pawnInvolvedInQuestInfo]</li>
+    <li>questDescription(asker_factionLeader==True)->[asker_nameDef], [asker_faction_leaderTitle] der Fraktion [asker_faction_name], sagt, dass {refugee_gender ? [asker_possessive] Freund : [asker_possessive]e Freundin} auf einer Reise verwundet wurde. Das Opfer heißt [refugee_nameIndef] und ist [a_N_year_old_refugee].\n\n[asker_nameDef] erzählt dir, dass [asker_pronoun] niemanden entbehren kann, um [refugee_nameDef] zu retten, aber wenn du es zu {replace: [refugee_nameDef]s; "s&lt;/color>s"-"s&lt;/color>'"; "ß&lt;/color>s"-"ß&lt;/color>'"; "z&lt;/color>s"-"z&lt;/color>'"; "x&lt;/color>s"-"x&lt;/color>'"; "ce&lt;/color>s"-"ce&lt;/color>'"} Position schaffst und [refugee_objective] rettest, wird [refugee_pronoun] sich dir anschließen.\n\n[asker_nameDef] sagt, dass dort [allSitePartsDescriptionsExceptFirst][pawnInvolvedInQuestInfo]</li>
     <li>pawnInvolvedInQuestInfo(priority=1)->[refugee_pawnInvolvedInQuestInfo]</li>
     <li>pawnInvolvedInQuestInfo-></li>
-    <!-- gender-specific -->
-    <li>ein_N_jaehriger(refugee_gender==Male)->ein [refugee_age]-jähriger</li>
-    <li>ein_N_jaehriger(refugee_gender==Female)->eine [refugee_age]-jährige</li>
-    <li>sein_Freund(refugee_gender==Male)->[asker_possessive] Freund</li>
-    <li>sein_Freund(refugee_gender==Female)->[asker_possessive]e Freundin</li>
+    <li>a_N_year_old_refugee->{replace: ^[refugee_titleDef]; "^der "-"ein [refugee_age]-jähriger "; "^die "-"eine [refugee_age]-jährige "; "^das "-"ein [refugee_age]-jähriges "; "^"-""}</li>
   </OpportunitySite_DownedRefugee.questDescriptionRules.rulesStrings>
   <!-- EN:
     <li>questName->Saving [refugee_nameDef]</li>
@@ -25,14 +21,15 @@
     <li>questName->[refugee_nameDef]'s Salvation</li>
   -->
   <OpportunitySite_DownedRefugee.questNameRules.rulesStrings>
-    <li>questName->Rettet [refugee_nameDef]</li>
+    <li>questName->Die Bergung von [refugee_nameDef]</li>
     <li>questName->Die Rettung von [refugee_nameDef]</li>
-    <li>questName->Helft [refugee_nameDef]</li>
-    <li>questName->Rettung von [refugee_nameDef]</li>
+    <li>questName->[refugee_nameDef_s] Bergung</li>
+    <li>questName->[refugee_nameDef_s] Rettung</li>
+    <li>refugee_nameDef_s->{replace: [refugee_nameDef]s; "s&lt;/color>s"-"s&lt;/color>'"; "ß&lt;/color>s"-"ß&lt;/color>'"; "z&lt;/color>s"-"z&lt;/color>'"; "x&lt;/color>s"-"x&lt;/color>'"; "ce&lt;/color>s"-"ce&lt;/color>'"}</li>
   </OpportunitySite_DownedRefugee.questNameRules.rulesStrings>
   <!-- EN: Quest expired: [resolvedQuestName] -->
   <OpportunitySite_DownedRefugee.LetterLabelQuestExpired.slateRef>Quest abgelaufen: [resolvedQuestName]</OpportunitySite_DownedRefugee.LetterLabelQuestExpired.slateRef>
   <!-- EN: [refugee_nameDef]'s signal has been lost, and [refugee_pronoun] can no longer be rescued. The quest [resolvedQuestName] has expired. -->
-  <OpportunitySite_DownedRefugee.LetterTextQuestExpired.slateRef>Du hast das Signal von [refugee_nameDef] verloren, [refugee_pronoun] kann nicht mehr gerettet werden. Die Quest [resolvedQuestName] ist abgelaufen.</OpportunitySite_DownedRefugee.LetterTextQuestExpired.slateRef>
+  <OpportunitySite_DownedRefugee.LetterTextQuestExpired.slateRef>Du hast das Signal von [refugee_nameDef] verloren. [refugee_pronoun] kann nicht mehr gerettet werden. Die Quest [resolvedQuestName] ist abgelaufen.</OpportunitySite_DownedRefugee.LetterTextQuestExpired.slateRef>
   
 </LanguageData>

@@ -9,19 +9,19 @@
   <!-- EN: lower priority -->
   <LowerPriority>geringere Priorität</LowerPriority>
   <!-- EN: Relevant skills: {0}\nAverage of relevant skills: {1} -->
-  <RelevantSkills>Relevante Fähigkeiten: {0}\nDurchschnitt relevanter Fähigkeiten: {1}</RelevantSkills>
+  <RelevantSkills>Relevante Fertigkeiten: {0}\nDurchschnitt relevanter Fertigkeiten: {1}</RelevantSkills>
   <!-- EN: Click to jump to: -->
-  <ClickToJumpTo>Zum Hinspringen hier klicken:</ClickToJumpTo>
+  <ClickToJumpTo>Klicke zum Springen zu:</ClickToJumpTo>
   <!-- EN: {1_labelShort} cannot do this kind of work. -->
   <CannotDoThisWork>{1_labelShort} verweigert diese Art von Arbeit.</CannotDoThisWork>
   <!-- EN: (none) -->
   <NoneBrackets>(nichts)</NoneBrackets>
-  <!-- EN: This colonist is not able to do any work of this type because of his health condition. -->
+  <!-- EN: This colonist is not able to do any work of this type because of their health condition. -->
   <IncapableOfWorkTypeBecauseOfCapacities>Aufgrund seines Gesundheitszustandes kann der Kolonist diese Art von Arbeit nicht verrichten.</IncapableOfWorkTypeBecauseOfCapacities>
   <!-- EN: E -->
   <EmergencyWorkMarker>N</EmergencyWorkMarker>
   <!-- EN: Warning: The average of relevant skills is very low. -->
-  <SelectedWorkTypeWithVeryBadSkill>Warnung: Der Durchschnitt der relevanten Fähigkeiten ist sehr niedrig.</SelectedWorkTypeWithVeryBadSkill>
+  <SelectedWorkTypeWithVeryBadSkill>Warnung: Der Durchschnitt der relevanten Fertigkeiten ist sehr niedrig.</SelectedWorkTypeWithVeryBadSkill>
   <!-- EN: Priority 1 is done first. Priority 4 is done last. -->
   <PriorityOneDoneFirst>Priorität 1 wird zuerst erledigt. Priorität 4 wird zuletzt erledigt.</PriorityOneDoneFirst>
   <!-- EN: Will not do -->
@@ -35,13 +35,13 @@
   <!-- EN: Low priority -->
   <Priority4>Geringe Priorität</Priority4>
   <!-- EN: {0}\n\nThe faction {1_nameDef} currently belongs to.\n\nClick to view faction. -->
-  <PawnFactionInfo>{0}\n\nDie Fraktion, der {1_nameDef} derzeit angehört.\n\nKlicke hier, um die Fraktion anzuzeigen.</PawnFactionInfo>
-  <!-- EN: Disabled by backstory: {0} -->
-  <WorkDisabledByBackstory>Deaktiviert durch Vorgeschichte: {0}</WorkDisabledByBackstory>
-  <!-- EN: Disabled by trait: {0} -->
-  <WorkDisabledByTrait>Deaktiviert durch Merkmal: {0}</WorkDisabledByTrait>
-  <!-- EN: Disabled by quest: {0} -->
-  <WorkDisabledByQuest>Deaktiviert durch Quest: {0}</WorkDisabledByQuest>
+  <PawnFactionInfo>{0}\n\nDie Fraktion, der {1_nameDef} derzeit angehört.\n\nKlicke, um die Fraktion zu sehen.</PawnFactionInfo>
+  <!-- EN: Disabled by {0} backstory -->
+  <WorkDisabledByBackstory>Deaktiviert durch Vorgeschichte '{0}'</WorkDisabledByBackstory>
+  <!-- EN: Disabled by {0} trait -->
+  <WorkDisabledByTrait>Deaktiviert durch Merkmal '{0}'</WorkDisabledByTrait>
+  <!-- EN: Disabled by quest '{0}' -->
+  <WorkDisabledByQuest>Deaktiviert durch Quest '{0}'</WorkDisabledByQuest>
   
   <!-- Assign tab -->
   <!-- EN: Manage outfits -->
@@ -78,6 +78,10 @@
   <PregnantIconDesc>Trächtig ({0} / {1})</PregnantIconDesc>
   <!-- EN: Bonded to -->
   <BondedTo>Gebunden an</BondedTo>
+  <!-- EN: Sterilize animal. -->
+  <SterilizeAnimal>Sterilisiere das Tier.</SterilizeAnimal>
+  <!-- EN: Animal sterile. -->
+  <AnimalAlreadySterile>Tier ist bereits sterilisiert.</AnimalAlreadySterile>
   
   <!-- Wildlife tab -->
   <!-- EN: This creature is a predator. When hungry, it will hunt smaller creatures - possibly including people. -->
@@ -184,6 +188,8 @@
   <Research>Forschen</Research>
   <!-- EN: Study -->
   <Study>Analyse-Fortschritt</Study>
+  <!-- EN: Study {0} -->
+  <StudyThing>Analysiere {0}</StudyThing>
   <!-- EN: Unresearched -->
   <Unresearched>Unerforscht</Unresearched>
   <!-- EN: Finished -->
@@ -193,23 +199,25 @@
   <!-- EN: Locked -->
   <Locked>Gesperrt</Locked>
   <!-- EN: Research prerequisites -->
-  <ResearchPrerequisites>Benötigt die Forschungen</ResearchPrerequisites>
+  <ResearchPrerequisites>Forschungsvoraussetzung(en)</ResearchPrerequisites>
   <!-- EN: Techprints required {0} / {1} -->
   <ResearchTechprintRequirement>Techpläne benötigt {0} / {1}</ResearchTechprintRequirement>
   <!-- EN: Insufficient techprints applied ({0} / {1}) -->
-  <InsufficientTechprintsApplied>Zu wenig Techpläne angewendet ({0} / {1})</InsufficientTechprintsApplied>
+  <InsufficientTechprintsApplied>Zu wenig Techpläne benutzt ({0} / {1})</InsufficientTechprintsApplied>
   <!-- EN: Prerequisite(s) not completed -->
   <PrerequisitesNotCompleted>Voraussetzung(en) nicht erfüllt</PrerequisitesNotCompleted>
+  <!-- EN: Missing required research facilities -->
+  <MissingRequiredResearchFacilities>Erforderl. Forschertisch oder Gerät fehlt</MissingRequiredResearchFacilities>
   <!-- EN: Required research bench -->
-  <RequiredResearchBench>Benötigt den Labortisch</RequiredResearchBench>
+  <RequiredResearchBench>Benötigt den Forschertisch</RequiredResearchBench>
   <!-- EN: Required research bench facilities -->
-  <RequiredResearchBenchFacilities>Benötigt die Laborgeräte</RequiredResearchBenchFacilities>
+  <RequiredResearchBenchFacilities>Benötigt die Geräte</RequiredResearchBenchFacilities>
   <!-- EN: Project base cost {0} becomes {1} for you because of your tech level. -->
   <ResearchCostComparison>Projekt-Basiskosten von {0} ändern sich wegen deiner Techstufe auf {1}.</ResearchCostComparison>
   <!-- EN: Techprints are available from these factions via trade and quests: -->
-  <ResearchTechprintsFromFactions>Techpläne können von folgenden Fraktionen via Handel und Quests erworben werden:</ResearchTechprintsFromFactions>
+  <ResearchTechprintsFromFactions>Techpläne können von folgenden Fraktionen durch Handel und Quests erworben werden:</ResearchTechprintsFromFactions>
   <!-- EN: Your faction tech level is {0}, but this project's tech level is {1}. Research speed will be multiplied by {2}. -->
-  <TechLevelTooLow>Die Techstufe deiner Fraktion liegt bei '{0}', aber die Techstufe dieses Projekts liegt bei '{1}'. Die Forschungsdauer wird mit {2} multipliziert.</TechLevelTooLow>
+  <TechLevelTooLow>Die Tech-Stufe deiner Fraktion ist {0}, aber die Tech-Stufe dieses Projekts ist {1}. Die Forschungsgeschwindigkeit wird mit {2} multipliziert.</TechLevelTooLow>
   <!-- EN: Unlocked with -->
   <UnlockedWith>Freigeschaltet mit</UnlockedWith>
 
@@ -269,7 +277,7 @@
   <!-- EN: Accept for -->
   <AcceptQuestFor>Annehmen für</AcceptQuestFor>
   <!-- EN: Click to accept this quest for this reward. -->
-  <AcceptQuestForTip>Klicke hier, um die Quest für diese Belohnung anzunehmen.</AcceptQuestForTip>
+  <AcceptQuestForTip>Klicke, um diese Quest für diese Belohnung anzunehmen.</AcceptQuestForTip>
   <!-- EN: The offer expired. -->
   <QuestOutcomeInfo_OfferExpired>Das Angebot ist abgelaufen.</QuestOutcomeInfo_OfferExpired>
   <!-- EN: You completed this quest. -->
@@ -279,7 +287,7 @@
   <!-- EN: This quest became invalid before it was accepted. -->
   <QuestOutcomeInfo_Invalid>Diese Quest wurde ungültig, bevor sie angenommen wurde.</QuestOutcomeInfo_Invalid>
   <!-- EN: Jump to {0} -->
-  <JumpToTargetCustom>Springe zu {lookup: {0}; Singular; 3}</JumpToTargetCustom>
+  <JumpToTargetCustom>Springe zu {lookup: {0}; decline; 3}</JumpToTargetCustom>
   <!-- EN: Select hives -->
   <SelectHiveTargets>Insektenkolonien auswählen</SelectHiveTargets>
   <!-- EN: Challenge rating. This is a general rating for how difficult the quest will be relative to your current strength. More challenging quests give greater rewards.\n\n1: Normal\n2: Hard\n3: Extreme\n4: Ultimate -->
@@ -340,5 +348,9 @@
   <!-- Health tab -->
   <!-- EN: Creates need -->
   <CreatesNeed>Erzeugt Bedürfnis</CreatesNeed>
+
+  <!-- Misc -->
+  <!-- EN: Click to edit -->
+  <ClickToEdit>Klicke zum Bearbeiten</ClickToEdit>
 
 </LanguageData>

@@ -50,14 +50,16 @@
   <TabTransporterContents>Inhalt</TabTransporterContents>
   <!-- EN: Contents -->
   <TabCasketContents>Inhalt</TabCasketContents>
+  <!-- EN: Auto-cut -->
+  <TabWindTurbineAutoCut>Pfl. entf.</TabWindTurbineAutoCut>
   
   <!-- Bills tab  -->
   <!-- EN: Add bill -->
   <AddBill>Aufgabe hinzufügen</AddBill>
   <!-- EN: The recipe {0} requires the skills below. None of your colonists have these skills, so nobody will do this bill. -->
-  <RecipeRequiresSkills>Die Aufgabe '{0}' benötigt die unten aufgeführten Fähigkeiten. Keiner deiner Kolonisten hat diese Fähigkeiten, also wird niemand diese Aufgabe durchführen.</RecipeRequiresSkills>
+  <RecipeRequiresSkills>Die Aufgabe '{0}' benötigt die unten aufgeführten Fertigkeiten. Keiner deiner Kolonisten hat diese Fertigkeiten, also wird niemand diese Aufgabe durchführen.</RecipeRequiresSkills>
   <!-- EN: Min skill -->
-  <MinimumSkill>Min. Fähigkeit</MinimumSkill>
+  <MinimumSkill>Min. Fertigkeit</MinimumSkill>
   <!-- EN: SUSPENDED -->
   <SuspendedCaps>GESTOPPT</SuspendedCaps>
   <!-- EN: Worker: {1_labelShort} -->
@@ -85,9 +87,9 @@
   <!-- EN: Resistance -->
   <RecruitmentResistance>Widerstand</RecruitmentResistance>
   <!-- EN: How much doubt this prisoner has about joining your faction. When this reaches zero, they can be recruited. -->
-  <RecruitmentResistanceDesc>Wie stark ein Gefangener daran zweifelt, deiner Fraktion beizutreten. Wenn er 0 erreicht, kann die Anwerbung beginnen.</RecruitmentResistanceDesc>
+  <RecruitmentResistanceDesc>Wie stark ein Gefangener daran zweifelt, deiner Fraktion beizutreten. Wenn der Widerstand auf 0 ist, kann der Gefangene rekrutiert werden.</RecruitmentResistanceDesc>
   <!-- EN: {0} base resistance -->
-  <RecruitmentResistanceFromPawnKind>{0} Basiswiederstand</RecruitmentResistanceFromPawnKind>
+  <RecruitmentResistanceFromPawnKind>{0}-Grundwiderstand</RecruitmentResistanceFromPawnKind>
   <!-- EN: Relations gain on release -->
   <PrisonerReleasePotentialRelationGains>Rufgewinn bei Freilassung</PrisonerReleasePotentialRelationGains>
   <!-- EN: The faction goodwill you will get from the prisoner's faction if you release them. This is affected by the prisoner's identity, health, and mental condition. -->
@@ -119,9 +121,26 @@
   <!-- EN: Try to recruit -->
   <ShouldTryToRecruit>Versuchen zu Rekrutieren</ShouldTryToRecruit>
   <!-- EN: Considered guilty (expires in {0}) -->
-  <ConsideredGuilty>Als schuldig angesehen (läuft in {replace: {0}; "Tage"-"Tagen"; "Jahre"-"Jahren"} ab)</ConsideredGuilty>
+  <ConsideredGuilty>Noch schuldig für: {0}</ConsideredGuilty>
   <!-- EN: Considered guilty -->
   <ConsideredGuiltyNoTimer>Als schuldig angesehen</ConsideredGuiltyNoTimer>
+  <!-- EN: Last resistance reduction -->
+  <LastRecruitment>Letzte Widerstandsreduzierung</LastRecruitment>
+  <!-- EN: How much {0_nameDef}'s resistance was reduced by {1} when {0_pronoun} was last recruited. -->
+  <LastRecruitmentDescription>Wie stark {replace: {0_nameDef}s; "s(/Name)s"-"s(/Name)'"; "ß(/Name)s"-"ß(/Name)'"; "z(/Name)s"-"z(/Name)'"; "x(/Name)s"-"x(/Name)'"; "ce(/Name)s"-"ce(/Name)'"} Widerstand beim letzten Rekrutierungsversuch durch {1} reduziert wurde.</LastRecruitmentDescription>
+  <!-- EN: Opinion of recruiter -->
+  <OpinionOfRecruiter>Meinung des Rekrutierers</OpinionOfRecruiter>
+  <!-- EN: Recruiter negotiation ability -->
+  <RecruiterNegotiationAbility>Verhandlungsgeschick des Rekrutierers</RecruiterNegotiationAbility>
+  <!-- EN: Unwavering loyalty -->
+  <NonRecruitable>Absolut loyal</NonRecruitable>
+  <!-- EN: This prisoner is so unwaveringly loyal to their home that they refuse to be recruited entirely. -->
+  <NonRecruitableTip>Dieser Gefangene hat seiner Heimat absolute Treue geschworen und wird jegliche Rekrutierungsversuche abschmettern.</NonRecruitableTip>
+  <!-- EN: Their loyalty extends to their beliefs and they cannot be converted. -->
+  <NonRecruitableTipCannotConvert>Seine Loyalität bezieht sich auch auf seinen Glauben. Er kann nicht bekehrt werden.</NonRecruitableTipCannotConvert>
+
+
+
 
   <!-- Medical - general -->
   <!-- EN: Move speed -->
@@ -168,14 +187,14 @@
   <WontBleedOutSoon>Keine unmittelbare Gefahr</WontBleedOutSoon>
   <!-- EN: Overview -->
   <HealthOverview>Übersicht</HealthOverview>
-  <!-- EN: Operations ({0}) -->
-  <MedicalOperationsShort>Operationen ({0})</MedicalOperationsShort>
-  <!-- EN: Modifications ({0}) -->
-  <MedicalOperationsMechanoidsShort>Modifikationen ({0})</MedicalOperationsMechanoidsShort>
+  <!-- EN: Operations -->
+  <MedicalOperationsShort>Operationen</MedicalOperationsShort>
+  <!-- EN: Modifications -->
+  <MedicalOperationsMechanoidsShort>Modifikationen</MedicalOperationsMechanoidsShort>
   <!-- EN: Medical operations -->
   <MedicalOperations>Medizinische Operationen</MedicalOperations>
   <!-- EN: amputate -->
-  <Amputate>amputiere</Amputate>
+  <Amputate>Teil amputieren</Amputate>
   <!-- EN: harvest -->
   <HarvestOrgan>Organ entnehmen</HarvestOrgan>
   <!-- EN: remove -->
@@ -186,6 +205,8 @@
   <SocialInteractionsLower>soziale Interaktion</SocialInteractionsLower>
   <!-- EN: Hunger rate -->
   <HungerRate>Hungerrate</HungerRate>
+  <!-- EN: Food consumption -->
+  <FoodConsumption>Lebensmittelkonsum</FoodConsumption>
   <!-- EN: Tiredness -->
   <Tiredness>Erschöpfung</Tiredness>
   <!-- EN: Pain -->
@@ -241,8 +262,6 @@
   <TrainingNeedsPrerequisite>Benötigte Voraussetzung: {0}</TrainingNeedsPrerequisite>
   
   <!-- Social tab -->
-  <!-- EN: (no relationships) -->
-  <NoRelationships>(keine Beziehungen)</NoRelationships>
   <!-- EN: Kidnapped -->
   <Kidnapped>Entführt</Kidnapped>
   <!-- EN: Lent to {FACTION_name}, returns in {1} -->
@@ -253,10 +272,10 @@
   <Slave>Sklave</Slave>
   <!-- EN: Faction leader -->
   <FactionLeader>Fraktionsführer</FactionLeader>
-  <!-- EN: Opinion of {1_labelShort} -->
-  <OpinionOf>Meinung von {1_labelShort}</OpinionOf>
-  <!-- EN: {1_labelShort}'s opinion of me -->
-  <SomeonesOpinionOfMe>{replace: {1_labelShort}s; "s(/Name)s"-"s(/Name)'"; "ß(/Name)s"-"ß(/Name)'"; "z(/Name)s"-"z(/Name)'"; "x(/Name)s"-"x(/Name)'"; "ce(/Name)s"-"ce(/Name)'"} Meinung von mir</SomeonesOpinionOfMe>
+  <!-- EN: Opinion of {0} -->
+  <OpinionOf>Meinung von {0}</OpinionOf>
+  <!-- EN: {0}'s opinion of me -->
+  <SomeonesOpinionOfMe>{replace: {0}'s; "s's"-"s'"; "ß's"-"ß'"; "z's"-"z'"; "x's"-"x'"; "ce's"-"ce'"; "'s"-"s"} Meinung von mir</SomeonesOpinionOfMe>
   <!-- EN: I'm dead -->
   <IAmDead>Ich bin tot</IAmDead>
   <!-- EN: I'm a psychopath -->
@@ -398,7 +417,10 @@
 
   <!-- EN: Pen is not enclosed -->
   <AutocutUnenclosedPen>Gehege ist nicht umzäunt</AutocutUnenclosedPen>
-  <!-- EN: Pen is not enclosed now, so auto-cut won’t occur. -->
+  <!-- EN: Pen is not enclosed now, so auto-cut won't occur. -->
   <AutocutUnenclosedPenTip>Das Gehege ist nicht umzäunt; Pflanzen werden nicht automatisch entfernt.</AutocutUnenclosedPenTip>
+
+  <!-- EN: Auto-cut plants blocking wind turbine -->
+  <WindTurbineAutoCut_EnabledCheckbox>Blockierende Pflanzen auto-entfernen</WindTurbineAutoCut_EnabledCheckbox>
 
 </LanguageData>

@@ -6,7 +6,7 @@
     <li>questDescription(asker_factionLeader==True)->[asker_nameDef], [asker_faction_leaderTitle] of [asker_faction_name], has informed us of a collection of valuable items worth [itemStashContentsValue] not far from us. The collection consists of:\n\n[itemStashContents]\n\n[asker_label] says that [allSitePartsDescriptionsExceptFirst]</li>
   -->
   <OpportunitySite_ItemStash.questDescriptionRules.rulesStrings>
-    <li>questDescription(askerIsNull==true)->Wir haben geheime Funksprüche abgefangen, aus denen hervorgeht, dass nicht weit von [map_definite] wertvolle Waren mit einem Gesamtwert von [itemStashContentsValue] gelagert werden. Die Sammlung besteht aus:\n\n[itemStashContents]\n\nEs scheint, dass dort [allSitePartsDescriptionsExceptFirst]</li>
+    <li>questDescription(askerIsNull==true)->Wir haben geheime Funksprüche abgefangen, aus denen hervorgeht, dass nicht weit von [map_label] wertvolle Waren mit einem Gesamtwert von [itemStashContentsValue] gelagert werden. Die Sammlung besteht aus:\n\n[itemStashContents]\n\nEs scheint, dass dort [allSitePartsDescriptionsExceptFirst]</li>
     <li>questDescription(asker_factionLeader==True)->[asker_nameDef], [asker_faction_leaderTitle] der Fraktion [asker_faction_name], hat uns informiert, dass wertvolle Waren mit einem Gesamtwert von [itemStashContentsValue] in unserer Nähe gelagert werden. Die Sammlung besteht aus:\n\n[itemStashContents]\n\n[asker_label] sagt, dass dort [allSitePartsDescriptionsExceptFirst]</li>
   </OpportunitySite_ItemStash.questDescriptionRules.rulesStrings>
   <!-- EN:
@@ -23,7 +23,7 @@
     <li>treasure->Supplies</li>
   -->
   <OpportunitySite_ItemStash.questNameRules.rulesStrings>
-    <li>questName(priority=1)->[stash] von [asker_nameDef]</li>
+    <li>questName(priority=1)->{replace: [asker_nameDef]s; "s&lt;/color>s"-"s&lt;/color>'"; "ß&lt;/color>s"-"ß&lt;/color>'"; "z&lt;/color>s"-"z&lt;/color>'"; "x&lt;/color>s"-"x&lt;/color>'"; "ce&lt;/color>s"-"ce&lt;/color>'"} [stash] mit [treasure]</li>
     <li>questName->[stash] mit [treasure]</li>
     <li>stash->Versteck</li>
     <li>stash->Lager</li>

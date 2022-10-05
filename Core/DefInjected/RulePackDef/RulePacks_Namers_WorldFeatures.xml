@@ -625,15 +625,15 @@
     <li>narrative_name_mas->[AnimalCon]-[terrain_word_mas]</li>
     <li>narrative_name_fem->[AnimalCon]-[terrain_word_fem]</li>
     <li>narrative_name_neu->[AnimalCon]-[terrain_word_neu]</li>
-    <li>narrative_name_mas->[ColorCap]er [terrain_word_mas]</li>
-    <li>narrative_name_fem->[ColorCap]e [terrain_word_fem]</li>
-    <li>narrative_name_neu->[ColorCap]es [terrain_word_neu]</li>
+    <li>narrative_name_mas->[Color]er [terrain_word_mas]</li>
+    <li>narrative_name_fem->[Color]e [terrain_word_fem]</li>
+    <li>narrative_name_neu->[Color]es [terrain_word_neu]</li>
     <li>narrative_name_mas->[ColorCap][terrain_word_mas_low]</li>
     <li>narrative_name_fem->[ColorCap][terrain_word_fem_low]</li>
     <li>narrative_name_neu->[ColorCap][terrain_word_neu_low]</li>
-    <li>narrative_name_mas->[ColorCap]er [AnimalCon]-[terrain_word_mas]</li>
-    <li>narrative_name_fem->[ColorCap]e [AnimalCon]-[terrain_word_fem]</li>
-    <li>narrative_name_neu->[ColorCap]es [AnimalCon]-[terrain_word_neu]</li>
+    <li>narrative_name_mas->[Color]er [AnimalCon]-[terrain_word_mas]</li>
+    <li>narrative_name_fem->[Color]e [AnimalCon]-[terrain_word_fem]</li>
+    <li>narrative_name_neu->[Color]es [AnimalCon]-[terrain_word_neu]</li>
     <li>narrative_name_mas->[ColorCap][AnimalConLow]-[terrain_word_mas]</li>
     <li>narrative_name_fem->[ColorCap][AnimalConLow]-[terrain_word_fem]</li>
     <li>narrative_name_neu->[ColorCap][AnimalConLow]-[terrain_word_neu]</li>
@@ -646,27 +646,28 @@
     <li>storyname_mas(p=25)->[terrain_word_mas] [story_result]</li>
     <li>storyname_fem(p=25)->[terrain_word_fem] [story_result]</li>
     <li>storyname_neu(p=25)->[terrain_word_neu] [story_result]</li>
-    <li>storyname_mas(p=25)->[subject]s [terrain_word_mas] [story_result]</li>
-    <li>storyname_fem(p=25)->[subject]s [terrain_word_fem] [story_result]</li>
-    <li>storyname_neu(p=25)->[subject]s [terrain_word_neu] [story_result]</li>
+    <li>storyname_mas(p=25)->[subject_s] [terrain_word_mas] [story_result]</li>
+    <li>storyname_fem(p=25)->[subject_s] [terrain_word_fem] [story_result]</li>
+    <li>storyname_neu(p=25)->[subject_s] [terrain_word_neu] [story_result]</li>
     <li>storyname_mas(p=25)->[AnimalCon]-[terrain_word_mas] [story_result]</li>
     <li>storyname_fem(p=25)->[AnimalCon]-[terrain_word_fem] [story_result]</li>
     <li>storyname_neu(p=25)->[AnimalCon]-[terrain_word_neu] [story_result]</li>
-    <li>storyname_mas(p=2)->[subject]s [BodyPart]-[terrain_word_mas]</li>
-    <li>storyname_fem(p=2)->[subject]s [BodyPart]-[terrain_word_fem]</li>
-    <li>storyname_neu(p=2)->[subject]s [BodyPart]-[terrain_word_neu]</li>
+    <li>storyname_mas(p=2)->[subject_s] [BodyPart]-[terrain_word_mas]</li>
+    <li>storyname_fem(p=2)->[subject_s] [BodyPart]-[terrain_word_fem]</li>
+    <li>storyname_neu(p=2)->[subject_s] [BodyPart]-[terrain_word_neu]</li>
     <li>storyname_mas(p=2)->[AnimalCon][BodyPartConLow]-[terrain_word_mas]</li>
     <li>storyname_fem(p=2)->[AnimalCon][BodyPartConLow]-[terrain_word_fem]</li>
     <li>storyname_neu(p=2)->[AnimalCon][BodyPartConLow]-[terrain_word_neu]</li>
-    <li>storyname_mas->[subject]s [Gore]-[terrain_word_mas]</li>
-    <li>storyname_fem->[subject]s [Gore]-[terrain_word_fem]</li>
-    <li>storyname_neu->[subject]s [Gore]-[terrain_word_neu]</li>
+    <li>storyname_mas->[subject_s] [Gore]-[terrain_word_mas]</li>
+    <li>storyname_fem->[subject_s] [Gore]-[terrain_word_fem]</li>
+    <li>storyname_neu->[subject_s] [Gore]-[terrain_word_neu]</li>
     <li>storyname_mas->[AnimalCon][GoreLow]-[terrain_word_mas]</li>
     <li>storyname_fem->[AnimalCon][GoreLow]-[terrain_word_fem]</li>
     <li>storyname_neu->[AnimalCon][GoreLow]-[terrain_word_neu]</li>
     <li>subject(p=5)->[NamePerson]</li>
     <li>subject->[WordTribal]</li>
     <li>subject->[PlaceOutlander]</li>
+    <li>subject_s->{replace: [subject]'s; "s's"-"s'"; "ß's"-"ß'"; "z's"-"z'"; "x's"-"x'"; "ce's"-"ce'"; "'s"-"s"}</li>
     <li>story_result->der Freude</li>
     <li>story_result->der Furcht</li>
     <li>story_result->der Gefälle</li>

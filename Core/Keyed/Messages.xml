@@ -47,7 +47,7 @@
   <MessageShipHasLeftCommsRange>{0} ist jetzt außer Funkreichweite.</MessageShipHasLeftCommsRange>
 
   <!-- EN: You need a powered orbital trade beacon to trade with a ship. -->
-  <MessageNeedBeaconToTradeWithShip>Du brauchst eine strombetriebene Orbitalhandelsbake, um mit einem Raumschiff handeln zu können.</MessageNeedBeaconToTradeWithShip>
+  <MessageNeedBeaconToTradeWithShip>Du brauchst eine mit Strom versorgte Orbitalhandelsbake, um mit einem Raumschiff handeln zu können.</MessageNeedBeaconToTradeWithShip>
   <!-- EN: Caller must have the title of {0_label} or higher. -->
   <MessageNeedRoyalTitleToCallWithShip>Der Titel des Anrufers muss {0_label} oder höher sein.</MessageNeedRoyalTitleToCallWithShip>
 
@@ -66,7 +66,7 @@
   <!-- EN: {PAWN_labelShort} found no nearby unreserved shells for {GUN_label}. -->
   <MessageOutOfNearbyShellsFor>{PAWN_labelShort} konnte in der Nähe keine verfügbaren Granaten für {GUN_label} finden.</MessageOutOfNearbyShellsFor>
   <!-- EN: {PAWN_labelShort} found no nearby unreserved {FUEL} for {GUN_label}. -->
-  <MessageOutOfNearbyFuelFor>{PAWN_labelShort} konnte in der Nähe {FUEL_gender ? keinen verfügbaren : keine verfügbare : kein verfügbares} {lookup: {FUEL}; Singular; 4} für {GUN_label} finden.</MessageOutOfNearbyFuelFor>
+  <MessageOutOfNearbyFuelFor>{PAWN_labelShort} konnte in der Nähe {FUEL_gender ? keinen verfügbaren : keine verfügbare : kein verfügbares} {lookup: {FUEL}; decline; 3} für {GUN_label} finden.</MessageOutOfNearbyFuelFor>
 
   <!-- EN: Warning: {ANIMAL_kindBasePlural} have a {1} base chance to attack when harmed. Chance depends on range and hunter stealth stat. -->
   <MessageAnimalsGoPsychoHunted>Warnung: {ANIMAL_kindBasePlural} können angreifen, wenn sie verletzt werden ({1} Chance). Die Chance variiert je nach Tarnfähigkeit des Jägers und Distanz.</MessageAnimalsGoPsychoHunted>
@@ -113,8 +113,14 @@
   <MessageMustDesignateHuntable>Funktioniert nur bei Tieren, die gejagt werden können.</MessageMustDesignateHuntable>
   <!-- EN: Must designate tameable animals. -->
   <MessageMustDesignateTameable>Funktioniert nur bei Tieren, die gezähmt werden können.</MessageMustDesignateTameable>
-  <!-- EN: Must designate abandoned artificial structures. -->
-  <MessageMustDesignateClaimable>Funktioniert nur bei künstlichen Strukturen, die verlassen sind.</MessageMustDesignateClaimable>
+  <!-- EN: Must designate abandoned claimable structures or items. -->
+  <MessageMustDesignateClaimable>Funktioniert nur bei Strukturen oder Objekten, die verlassen und beanspruchbar sind.</MessageMustDesignateClaimable>
+  <!-- EN: Must designate paintable buildings not already painted {0_label}. -->
+  <MessageMustDesignatePaintableBuildings>Funktioniert nur bei streichbaren Bauwerken, die noch nicht die Farbe '{0_label}' haben.</MessageMustDesignatePaintableBuildings>
+  <!-- EN: Must designate paintable floors which are not already painted {0_label}. -->
+  <MessageMustDesignatePaintableFloors>Funktioniert nur bei streichbaren Böden, die noch nicht die Farbe '{0_label}' haben.</MessageMustDesignatePaintableFloors>
+  <!-- EN: Must designate painted buildings or floors. -->
+  <MessageMustDesignatePainted>Funktioniert nur bei gestrichenen Bauwerken oder Böden.</MessageMustDesignatePainted>
   <!-- EN: You must defeat a mech cluster before you can deconstruct it. -->
   <MessageMustDesignateDeconstructibleMechCluster>Du musst den Mech-Cluster besiegen, bevor du es abreißen kannst.</MessageMustDesignateDeconstructibleMechCluster>
   <!-- EN: Must designate rough stone surfaces. -->
@@ -133,6 +139,10 @@
   <MessageMustDesignateForbiddable>Funktioniert nur bei nicht-verbotenen Objekten.</MessageMustDesignateForbiddable>
   <!-- EN: Must designate forbidden items. -->
   <MessageMustDesignateUnforbiddable>Funktioniert nur bei verbotenen Objekten.</MessageMustDesignateUnforbiddable>
+  <!-- EN: Cannot claim {CLAIMABLE_labelShort} while there are combat-capable {THREAT_factionPawnsPlural} nearby. -->
+  <MessageCannotClaimWhenThreatsAreNear>{CLAIMABLE_labelShort} kann nicht in Besitz genommen werden, solange kampffähige {THREAT_factionPawnsPlural} in der Nähe sind.</MessageCannotClaimWhenThreatsAreNear>
+  <!-- EN: Cannot adopt {CLAIMABLE_labelShort} while there are combat-capable {THREAT_factionPawnsPlural} nearby. -->
+  <MessageCannotAdoptWhileThreatsAreNear>{CLAIMABLE_labelShort} kann nicht adoptiert werden, solange kampffähige {THREAT_factionPawnsPlural} in der Nähe sind.</MessageCannotAdoptWhileThreatsAreNear>
 
   <!-- EN: {1_labelShort} has refused to be arrested! -->
   <MessageRefusedArrest>{1_labelShort} hat sich der Inhaftierung widersetzt!</MessageRefusedArrest>
@@ -141,8 +151,8 @@
   <MessageNoMedicalBeds>Es sind keine Krankenbetten verfügbar.</MessageNoMedicalBeds>
   <!-- EN: There are no animal beds available. -->
   <MessageNoAnimalBeds>Es sind keine Tierbetten verfügbar.</MessageNoAnimalBeds>
-  <!-- EN: Operation requires {0} or better, but {PAWN_labelShort}'s current medical care mode is "{2}". -->
-  <MessageTooLowMedCare>Operation benötigt {0} oder besser, aber der Pflegemodus von {PAWN_labelShort} steht auf "{2}".</MessageTooLowMedCare>
+  <!-- EN: Warning: {PAWN_nameDef}'s medicine restriction ({RESTRICTIONLABEL}) prevents doing this operation. Consider changing {PAWN_possessive} medicine restriction. -->
+  <MessageWarningNoMedicineForRestriction>Warnung: {replace: {PAWN_nameDef}s; "s(/Name)s"-"s(/Name)'"; "ß(/Name)s"-"ß(/Name)'"; "z(/Name)s"-"z(/Name)'"; "x(/Name)s"-"x(/Name)'"; "ce(/Name)s"-"ce(/Name)'"} aktueller Pflegemodus ({RESTRICTIONLABEL}) verhindert diese Operation. Erwäge, {PAWN_possessive}en Pflegemodus zu ändern.</MessageWarningNoMedicineForRestriction>
   
   <!-- EN: {PAWN_labelShort} has died. Cause: {1}. -->
   <PawnDiedBecauseOf>{PAWN_labelShort} ist an {1} gestorben.</PawnDiedBecauseOf>
@@ -364,9 +374,9 @@
   <MessageWouldReplaceLockedApparel>Kann nicht getragen werden: Dies würde die Kleidung ersetzen, die {1_labelShort} sich weigert zu entfernen.</MessageWouldReplaceLockedApparel>
   
   <!-- EN: Because they are bonded, slaughtering {DESIGNATED_labelShort} will make {BONDED_labelShort} unhappy. -->
-  <MessageSlaughteringBondedAnimal>Da sie aneinander gebunden sind, wird {BONDED_labelShort} unglücklich, wenn {DESIGNATED_labelShort} geschlachtet wird.</MessageSlaughteringBondedAnimal>
+  <MessageSlaughteringBondedAnimal>Da sie aneinander gebunden sind, bekommt {BONDED_labelShort} schlechte Laune, wenn {DESIGNATED_labelShort} geschlachtet wird.</MessageSlaughteringBondedAnimal>
   <!-- EN: Because they are bonded, releasing {DESIGNATED_labelShort} will make {BONDED_labelShort} unhappy. -->
-  <MessageReleaseBondedAnimal>Da sie aneinander gebunden sind, wird {BONDED_labelShort} unglücklich, wenn {DESIGNATED_labelShort} in die Wildnis entlassen wird.</MessageReleaseBondedAnimal>
+  <MessageReleaseBondedAnimal>Da sie aneinander gebunden sind, bekommt {BONDED_labelShort} schlechte Laune, wenn {DESIGNATED_labelShort} in die Wildnis entlassen wird.</MessageReleaseBondedAnimal>
   
   <!-- EN: {0} has run out of food. -->
   <MessageCaravanRanOutOfFood>{0} hat keine Nahrung mehr.</MessageCaravanRanOutOfFood>
@@ -394,7 +404,7 @@
   <!-- EN: To self-tend, {1_labelShort} must also be assigned to Doctor work. -->
   <MessageSelfTendUnsatisfied>Für die Selbstbehandlung muss {1_labelShort} als Arzt eingeteilt werden.</MessageSelfTendUnsatisfied>
   <!-- EN: {1_labelShort} is incapable of doing Doctor work, and so cannot ever self-tend. -->
-  <MessageCannotSelfTendEver>{1_labelShort} verweigert ärztliche Tätigkeiten und kann sich daher nicht selbst behandeln.</MessageCannotSelfTendEver>
+  <MessageCannotSelfTendEver>{1_labelShort} verweigert Verarzten und kann sich daher nicht selbst behandeln.</MessageCannotSelfTendEver>
   
   <!-- EN: This tile is impassable. -->
   <MessageCantAddWaypointBecauseImpassable>Dieses Feld ist unpassierbar.</MessageCantAddWaypointBecauseImpassable>
@@ -406,7 +416,7 @@
   <MessageCantRemoveWaypointBecauseFirst>Du kannst diesen Wegpunkt nicht entfernen.</MessageCantRemoveWaypointBecauseFirst>
   
   <!-- EN: None of your wardens is capable of violence. The execution won't be performed. -->
-  <MessageCantDoExecutionBecauseNoWardenCapableOfViolence>Keiner deiner Gefängniswärter ist fähig Gewalt anzuwenden. Die Hinrichtung kann nicht ausgeführt werden.</MessageCantDoExecutionBecauseNoWardenCapableOfViolence>
+  <MessageCantDoExecutionBecauseNoWardenCapableOfViolence>Keiner deiner Wärter ist fähig Gewalt anzuwenden. Die Hinrichtung kann nicht ausgeführt werden.</MessageCantDoExecutionBecauseNoWardenCapableOfViolence>
   
   <!-- EN: Area is now safe. You can reform the caravan on the world map. -->
   <MessageCanReformCaravanNowNoMoreEnemies>Das Gebiet ist jetzt sicher. Du kannst deine Karawane auf der Weltkarte neu formieren.</MessageCanReformCaravanNowNoMoreEnemies>
@@ -546,24 +556,24 @@
   <MessageFormedCaravan_Orders>Befehle</MessageFormedCaravan_Orders>
 
   <!-- EN: {1}'s "{0}" can no longer deliver to deleted stockpile {2}. -->
-  <MessageBillValidationStoreZoneDeleted>{1}s "{0}" kann nicht länger an die gelöschte Lagerzone '{2}' liefern.</MessageBillValidationStoreZoneDeleted>
+  <MessageBillValidationStoreZoneDeleted>{2} wurde gelöscht. Einstellung 'Bringe zu {2}' für '{0}' ({1}) nicht länger möglich.</MessageBillValidationStoreZoneDeleted>
   <!-- EN: {1}'s "{0}" can no longer deliver to unavailable stockpile {2}. -->
-  <MessageBillValidationStoreZoneUnavailable>{1}s "{0}" kann nicht länger an die nicht-verfügbare Lagerzone '{2}' liefern.</MessageBillValidationStoreZoneUnavailable>
+  <MessageBillValidationStoreZoneUnavailable>{2} nicht verfügbar. Einstellung 'Bringe zu {2}' für '{0}' ({1}) nicht länger möglich.</MessageBillValidationStoreZoneUnavailable>
   <!-- EN: {0} can no longer work on "{1}" at {2}. The restriction has been removed. -->
-  <MessageBillValidationPawnUnavailable>{0} kann nicht länger an "{1}" bei {2} arbeiten. Die Beschränkung wurde entfernt.</MessageBillValidationPawnUnavailable>
+  <MessageBillValidationPawnUnavailable>{0} kann die Aufgabe '{1}' ({2}) nicht mehr erledigen. Beschränkung wurde aufgehoben.</MessageBillValidationPawnUnavailable>
   <!-- EN: {1}'s "{0}" can no longer count items in deleted stockpile {2}. -->
-  <MessageBillValidationIncludeZoneDeleted>{1}s "{0}" kann nicht länger Waren in der gelöschten Lagerzone '{2}' zählen.</MessageBillValidationIncludeZoneDeleted>
+  <MessageBillValidationIncludeZoneDeleted>{2} wurde gelöscht. Einstellung 'Suche in {2}' für '{0}' ({1}) nicht länger möglich.</MessageBillValidationIncludeZoneDeleted>
   <!-- EN: {1}'s "{0}" can no longer count items in unavailable stockpile {2}. -->
-  <MessageBillValidationIncludeZoneUnavailable>{1}s "{0}" kann nicht länger Waren in der nicht-verfügbaren Lagerzone '{2}' zählen.</MessageBillValidationIncludeZoneUnavailable>
+  <MessageBillValidationIncludeZoneUnavailable>{2} nicht verfügbar. Einstellung 'Suche in {2}' für '{0}' ({1}) nicht länger möglich.</MessageBillValidationIncludeZoneUnavailable>
   <!-- EN: {1}'s "{0}" can no longer deliver all products to stockpile {2}. -->
-  <MessageBillValidationStoreZoneInsufficient>{1}s "{0}" kann nicht länger alle Produkte zur Lagerzone '{2}' liefern.</MessageBillValidationStoreZoneInsufficient>
+  <MessageBillValidationStoreZoneInsufficient>Produkt wurde in {2} verboten. Einstellung 'Bringe zu {2}' für '{0}' ({1}) nicht länger möglich.</MessageBillValidationStoreZoneInsufficient>
 
   <!-- EN: Because of a lack of taming maintenance, {1_labelShort} has returned to the wild. -->
   <MessageAnimalReturnedWild>Aufgrund mangelnder Aufrechterhaltung der Zähmung ist {1_labelShort} verwildert.</MessageAnimalReturnedWild>
   <!-- EN: {1_labelShort} has been returned to the wild. -->
   <MessageAnimalReturnedWildReleased>{1_labelShort} wurde in die Wildnis entlassen.</MessageAnimalReturnedWildReleased>
   <!-- EN: Due to a lack of maintenance training, {ANIMAL_labelShort} has lost a skill: {1} -->
-  <MessageAnimalLostSkill>Aufgrund mangelnder Aufrechterhaltung des Trainings hat {ANIMAL_labelShort} die {1}-Fähigkeit verloren.</MessageAnimalLostSkill>
+  <MessageAnimalLostSkill>Aufgrund mangelnder Aufrechterhaltung des Trainings hat {ANIMAL_labelShort} die {1}-Fertigkeit verloren.</MessageAnimalLostSkill>
 
   <!-- EN: Translation report written to {0} -->
   <MessageTranslationReportSaved>Übersetzungsreport wurde erstellt in {0}</MessageTranslationReportSaved>
@@ -575,7 +585,7 @@
   <MessageEnterCooldownBlocksEntering>Zu gefährlich. Kann erst in {replace: {0}; "Tage"-"Tagen"; "Jahre"-"Jahren"} wieder betreten werden.</MessageEnterCooldownBlocksEntering>
 
   <!-- EN: {0_labelShort} can now freely use "{1}". -->
-  <MessagePermitCooldownFinished>{0_labelShort} kann nun ungehindert "{1}" verwenden.</MessagePermitCooldownFinished>
+  <MessagePermitCooldownFinished>{0_labelShort} kann die Ermächtigung '{1}' wieder kostenlos verwenden.</MessagePermitCooldownFinished>
 
   <!-- EN: {PREDATOR} is hunting {PREY_definite} ({PREY_kindBase}) for food! -->
   <MessagePredatorHuntingPlayerAnimal>{PREDATOR_kindBaseIndef} ist hungrig und macht Jagd auf {PREY_definite} ({PREY_kindBase})!</MessagePredatorHuntingPlayerAnimal>
@@ -621,7 +631,7 @@
   <MessageMonumentDestroyedBecauseOfDisallowedBuilding>Das Denkmal wurde zerstört, weil du im Inneren ein verbotenes Bauwerk errichtet hast.</MessageMonumentDestroyedBecauseOfDisallowedBuilding>
 
   <!-- EN: Cannot apply: No reachable, un-reserved research bench available. -->
-  <MessageNoResearchBenchForTechprint>Kein erreichbarer, unbesetzter Labortisch verfügbar.</MessageNoResearchBenchForTechprint>
+  <MessageNoResearchBenchForTechprint>Kein erreichbarer, unbesetzter Forschertisch verfügbar.</MessageNoResearchBenchForTechprint>
 
   <!-- EN: No valid destination found for {0} -->
   <NoValidDestinationFound>Kein gültiges Ziel für {0} gefunden</NoValidDestinationFound>
@@ -631,7 +641,7 @@
   
   <!-- Research -->
   <!-- EN: Warning: Research will not begin until you build a research bench. -->
-  <MessageResearchMenuWithoutBench>Warnung: Die Forschung wird erst begonnen, wenn du einen Labortisch gebaut hast.</MessageResearchMenuWithoutBench>
+  <MessageResearchMenuWithoutBench>Warnung: Die Forschung wird erst begonnen, wenn du einen Forschertisch gebaut hast.</MessageResearchMenuWithoutBench>
 
   <!-- EN: {0_indefinite} has triggered a proximity activator. -->
   <MessageActivatorProximityTriggered>{0_indefinite} hat einen Näherungsaktivator ausgelöst.</MessageActivatorProximityTriggered>
@@ -643,7 +653,7 @@
   <MessagePrisonerCannotEquipWeapon>{PAWN_nameDef} ist {PAWN_gender ? ein Gefangener : eine Gefangene}</MessagePrisonerCannotEquipWeapon>
 
   <!-- EN: Warning: {0_nameDef}'s beliefs oppose {1} work. {0_pronoun} may become unhappy. -->
-  <MessageIdeoOpposedWorkTypeSelected>Warnung: {replace: {0_nameDef}s; "s(/Name)s"-"s(/Name)'"; "ß(/Name)s"-"ß(/Name)'"; "z(/Name)s"-"z(/Name)'"; "x(/Name)s"-"x(/Name)'"; "ce(/Name)s"-"ce(/Name)'"} Glaube widerspricht der Arbeit {1}. {0_pronoun} kann davon unglücklich werden.</MessageIdeoOpposedWorkTypeSelected>
+  <MessageIdeoOpposedWorkTypeSelected>Warnung: {replace: {0_nameDef}s; "s(/Name)s"-"s(/Name)'"; "ß(/Name)s"-"ß(/Name)'"; "z(/Name)s"-"z(/Name)'"; "x(/Name)s"-"x(/Name)'"; "ce(/Name)s"-"ce(/Name)'"} Glaube widerspricht der Arbeit '{1}'. {0_pronoun} würde dadurch schlechte Laune bekommen.</MessageIdeoOpposedWorkTypeSelected>
 
   <!-- EN: {0} is no longer assigned to {1_nameDef}. -->
   <MessageBedLostAssignment>{0} ist nicht länger für {1_nameDef} reserviert.</MessageBedLostAssignment>
@@ -658,7 +668,7 @@
   <!-- EN: {0} has begun. -->
   <RitualBegun>{0} hat angefangen.</RitualBegun>
   <!-- EN: The maximum number of {0}s is {1}. -->
-  <MaxPawnsPerRole>Die maximale Anzahl an {lookup: {0}; Plural; 3} ist {1}.</MaxPawnsPerRole>
+  <MaxPawnsPerRole>Die maximale Anzahl an {lookup: {0}; plural; 3} ist {1}.</MaxPawnsPerRole>
   <!-- EN: Role of {0} is locked. -->
   <RoleIsLocked>Die Rolle '{0}' ist gesperrt.</RoleIsLocked>
   <!-- EN: You need at least one participant. -->
@@ -687,6 +697,8 @@
   <MessageRitualRoleMustBeAnimal>{0} muss ein Tier sein.</MessageRitualRoleMustBeAnimal>
   <!-- EN: {0} must be a human. -->
   <MessageRitualRoleMustBeHumanlike>{0} muss ein Mensch sein.</MessageRitualRoleMustBeHumanlike>
+  <!-- EN: {0} cannot be a baby. -->
+  <MessageRitualRoleCannotBeABaby>{0} darf kein Baby sein.</MessageRitualRoleCannotBeABaby>
   <!-- EN: No roles available for {0_labelShort}. -->
   <MessageRitualNoRolesAvailable>Keine Rollen für {0_labelShort} verfügbar.</MessageRitualNoRolesAvailable>
   <!-- EN: {0_labelShort} is not a member of any colony ideoligion. -->
@@ -695,10 +707,12 @@
   <MessageRitualRoleMustHaveEyes>{0} muss Augen haben</MessageRitualRoleMustHaveEyes>
   <!-- EN: {0_labelShort} does not require further scarification. -->
   <MessageRitualRoleMustRequireScarification>{0_labelShort} benötigt keine weitere Skarifizierung.</MessageRitualRoleMustRequireScarification>
+  <!-- EN: {0_labelShort} does not require blinding. -->
+  <MessageRitualRoleMustRequireBlinding>{0_labelShort} benötigt keine Blendung.</MessageRitualRoleMustRequireBlinding>
   <!-- EN: {0} must be a prisoner or slave. -->
   <MessageRitualRoleMustBePrisonerOrSlave>{0} muss ein Gefangener oder Sklave sein.</MessageRitualRoleMustBePrisonerOrSlave>
   <!-- EN: {0_labelShort} must be capable of fighting. -->
-  <MessageRitualRoleMustBeCapableOfFighting>{0_labelShort} muss in der Lage sein, als Kämpfer zu fungieren.</MessageRitualRoleMustBeCapableOfFighting>
+  <MessageRitualRoleMustBeCapableOfFighting>{0_labelShort} muss kämpfen können.</MessageRitualRoleMustBeCapableOfFighting>
   <!-- EN: this role cannot be played by someone else. -->
   <MessageRitualRoleCannotReplaceRequiredPawn>diese Rolle kann nicht von jemand anderem ausgeübt werden.</MessageRitualRoleCannotReplaceRequiredPawn>
   <!-- EN: {0_labelShort} cannot connect to a Gauranlen tree because {0_possessive} connection was recently torn. -->
@@ -706,9 +720,9 @@
   <!-- EN: {0_labelShort} has the same ideoligion as the converter. -->
   <MessageRitualRolePawnHasSameIdeo>{0_labelShort} hat die gleiche Ideologie wie der Bekehrer.</MessageRitualRolePawnHasSameIdeo>
   <!-- EN: {0_labelShort} must be capable of wardening. -->
-  <MessageRitualRoleMustBeCapableOfWardening>{0_labelShort} muss in der Lage sein, als Aufseher zu fungieren.</MessageRitualRoleMustBeCapableOfWardening>
+  <MessageRitualRoleMustBeCapableOfWardening>{0_labelShort} muss wärterbezogene Tätigkeiten ausüben können.</MessageRitualRoleMustBeCapableOfWardening>
   <!-- EN: {0} must be capable of {1}. -->
-  <MessageRitualRoleMustBeCapableOfGeneric>{0} muss in der Lage sein, als {1} zu fungieren.</MessageRitualRoleMustBeCapableOfGeneric>
+  <MessageRitualRoleMustBeCapableOfGeneric>{0} darf {1} nicht verweigern.</MessageRitualRoleMustBeCapableOfGeneric>
   <!-- EN: prisoners cannot {0}. -->
   <MessageRitualRoleMustNotBePrisonerToSpectate>Gefangene dürfen nicht {0}.</MessageRitualRoleMustNotBePrisonerToSpectate>
   <!-- EN: only {0} can {1}. -->
@@ -717,18 +731,26 @@
   <MessageRitualRoleMustHaveIdeoToDoRole>nur {0} kann die Rolle '{replace: ^{1}; "^ein "-""; "^eine "-""; "^"-""}' übernehmen.</MessageRitualRoleMustHaveIdeoToDoRole>
   <!-- EN: must be colonist for the {0} role. -->
   <MessageRitualRoleMustBeColonist>nur Kolonisten dürfen die Rolle '{0}' ausüben.</MessageRitualRoleMustBeColonist>
+  <!-- EN: {0_labelShort} won't attend due to extreme temperature in the ritual area. -->
+  <MessageRitualWontAttendExtremeTemperature>{0_labelShort} wird wegen der extremen Temperatur am Veranstaltungsort nicht teilnehmen.</MessageRitualWontAttendExtremeTemperature>
+  <!-- EN: must be colonist and not enslaved for the {0} role. -->
+  <MessageRitualRoleMustBeFreeColonist>muss für die Rolle '{0}' ein freier Kolonist sein.</MessageRitualRoleMustBeFreeColonist>
   <!-- EN: {0} must have an animal with min body size of {1}. -->
   <MessageRitualRoleMustHaveLargerBodySize>{0} muss ein Tier mit einer Mindestkörpergröße von {1} haben.</MessageRitualRoleMustHaveLargerBodySize>
   <!-- EN: {0_labelShort} is in a mental state. -->
   <MessageRitualPawnMentalState>{0_labelShort} ist übergeschnappt.</MessageRitualPawnMentalState>
   <!-- EN: {0_labelShort} is already {1}. -->
-  <MessageRitualPawnIsAlreadyBelievingIdeo>{0_labelShort} ist bereits {1}.</MessageRitualPawnIsAlreadyBelievingIdeo>
+  <MessageRitualPawnIsAlreadyBelievingIdeo>{0_labelShort} ist bereits {replace: ^{1}; "^ein "-""; "^eine "-""; "^"-""}.</MessageRitualPawnIsAlreadyBelievingIdeo>
   <!-- EN: {0_labelShort} cannot take any other role than spectator. -->
   <MessageRitualCannotAssignAnyRoleFromSpectating>{0_labelShort} darf keine andere Rolle als die des Zuschauers einnehmen.</MessageRitualCannotAssignAnyRoleFromSpectating>
   <!-- EN: {0} cannot be an imprisoned wild man/woman. -->
   <MessageRitualRoleMustNotBeImprisonedWildMan>{0} darf kein inhaftierter wilder Mensch sein.</MessageRitualRoleMustNotBeImprisonedWildMan>
   <!-- EN: {0} must be free. -->
   <MessageRitualRoleMustNotBeImprisoned>{0} darf nicht inhaftiert sein.</MessageRitualRoleMustNotBeImprisoned>
+  <!-- EN: {0} cannot be a child. -->
+  <MessageRitualRoleCannotBeChild>{0} darf kein Kind sein.</MessageRitualRoleCannotBeChild>
+  <!-- EN: {0} cannot be a baby. -->
+  <MessageRitualRoleCannotBeBaby>{0} darf kein Baby sein.</MessageRitualRoleCannotBeBaby>
 
   <!-- EN: You must select a site to continue. -->
   <MessagePlayerMustSelectTile>Du musst einen Ort auswählen, um fortzufahren.</MessagePlayerMustSelectTile>
@@ -748,5 +770,23 @@
 
   <!-- EN: Warning: {0} has been marked for cutting. -->
   <MessageWarningCutImportantPlant>Warnung: {0} wurde zum Entfernen markiert.</MessageWarningCutImportantPlant>
+
+  <!-- EN: {0_labelShort} is incapable of manipulation. -->
+  <MessageIncapableOfManipulation>{0_labelShort} kann nicht arbeiten.</MessageIncapableOfManipulation>
+
+  <!-- EN: {0_labelShort} activation canceled -->
+  <MessageActivationCanceled>Aktivierung von {0_labelShort} abgebrochen</MessageActivationCanceled>
+
+  <!-- EN: Nothing is currently buildable in category -->
+  <NothingAvailableInCategory>Momentan kann nichts gebaut werden in der Kategorie</NothingAvailableInCategory>
+
+  <!-- EN: Storage settings linked for {0} buildings. -->
+  <SettingsLinkedFor>Lagereinstellungen von {0} Bauwerken verknüpft.</SettingsLinkedFor>
+  <!-- EN: Storage settings unlinked for {0} buildings. -->
+  <SettingsUnlinkedFor>Lagereinstellungen von {0} Bauwerken getrennt.</SettingsUnlinkedFor>
+  <!-- EN: Storage settings copied to clipboard. -->
+  <StorageSettingsCopiedToClipboard>Lagereinstellungen in die Zwischenablage kopiert.</StorageSettingsCopiedToClipboard>
+  <!-- EN: Storage settings pasted from clipboard. -->
+  <StorageSettingsPastedFromClipboard>Lagereinstellungen aus der Zwischenablage eingefügt.</StorageSettingsPastedFromClipboard>
 
 </LanguageData>

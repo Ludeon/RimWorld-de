@@ -1,15 +1,29 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
-
+  
   <!-- Audiovisuals -->
   <!-- EN: Audiovisuals -->
   <Audiovisuals>Audio/Grafik</Audiovisuals>
+  <!-- EN: Master volume -->
+  <MasterVolume>Gesamtlautstärke</MasterVolume>
   <!-- EN: Game volume -->
   <GameVolume>Spiellautstärke</GameVolume>
   <!-- EN: Music volume -->
   <MusicVolume>Musiklautstärke</MusicVolume>
-  <!-- EN: Ambient volume -->
-  <AmbientVolume>Hintergrundlautstärke</AmbientVolume>
+  <!-- EN: Ambience volume -->
+  <AmbientVolume>Umgebungslautstärke</AmbientVolume>
+  <!-- EN: UI volume -->
+  <UIVolume>UI-Lautstärke</UIVolume>
+  <!-- EN: Affects all sounds. -->
+  <MasterVolumeTooltip>Ändert die Lautstärke aller Geräusche.</MasterVolumeTooltip>
+  <!-- EN: Affects all in world sounds, e.g. chopping trees, building walls. -->
+  <GameVolumeTooltip>Ändert die Lautstärke von Weltgeräuschen wie z. B. Bäume fällen und Wände errichten.</GameVolumeTooltip>
+  <!-- EN: Affects music. -->
+  <MusicVolumeTooltip>Ändert die Lautstärke der Musik.</MusicVolumeTooltip>
+  <!-- EN: Affects all ambient sounds, e.g. wind, insects. -->
+  <AmbientVolumeTooltip>Ändert die Lautstärke von Umgebungsgeräuschen wie z. B. Wind und Insekten.</AmbientVolumeTooltip>
+  <!-- EN: Affects all interface sounds, e.g. button clicks, messages. -->
+  <UIVolumeTooltip>Ändert die Lautstärke von Interface-Geräuschen wie z. B. Schaltflächen und Meldungen.</UIVolumeTooltip>
   <!-- EN: Anti-aliasing -->
   <Antialiasing>Anti-Aliasing</Antialiasing>
 
@@ -20,18 +34,20 @@
   <PauseOnLoad>Nach dem Laden pausieren</PauseOnLoad>
   <!-- EN: Pause on urgent letter -->
   <PauseOnUrgentLetter>Bei wichtigem Brief pausieren</PauseOnUrgentLetter>
-  <!-- EN: Pause on -->
-  <AutomaticPauseModeSetting>Pausieren bei</AutomaticPauseModeSetting>
-  <!-- EN: Custom cursor -->
-  <CustomCursor>Spielmauszeiger verwenden</CustomCursor>
-  <!-- EN: Hats shown only on game map -->
-  <HatsShownOnlyOnMap>Helme nur auf Spielkarte anzeigen</HatsShownOnlyOnMap>
+  <!-- EN: Pause on letter -->
+  <AutomaticPauseModeSetting>Pausieren bei Brief</AutomaticPauseModeSetting>
+  <!-- EN: Disable game-specific cursor -->
+  <CustomCursor>Spielmauszeiger deaktivieren</CustomCursor>
+  <!-- EN: Hide hats on UI -->
+  <HatsShownOnlyOnMap>Kopfbedeckungen in der UI verstecken</HatsShownOnlyOnMap>
   <!-- EN: UI scale -->
   <UIScale>UI-Skalierung</UIScale>
   <!-- EN: Keyboard configuration -->
   <KeyboardConfig>Tastenbelegungen konfigurieren</KeyboardConfig>
   <!-- EN: Controller configuration -->
   <ControllerConfig>Controller konfigurieren</ControllerConfig>
+  <!-- EN: Modify -->
+  <ModifyConfig>Ändern</ModifyConfig>
   <!-- EN: Choose language -->
   <ChooseLanguage>Sprache wählen</ChooseLanguage>
   <!-- EN: Reset learning helper -->
@@ -47,21 +63,29 @@
   <!-- EN: Auto-reset mods config on crash -->
   <ResetModsConfigOnCrash>Mods nach Absturz zurücksetzen</ResetModsConfigOnCrash>
   <!-- EN: Simulate not owning Royalty -->
-  <SimulateNotOwningRoyalty>'ohne Royalty' simulieren</SimulateNotOwningRoyalty>
+  <SimulateNotOwningRoyalty>Spiel ohne Royalty simulieren</SimulateNotOwningRoyalty>
   <!-- EN: Simulate not owning Ideology -->
-  <SimulateNotOwningIdeology>'ohne Ideology' simulieren</SimulateNotOwningIdeology>
+  <SimulateNotOwningIdeology>Spiel ohne Ideology simulieren</SimulateNotOwningIdeology>
+  <!-- EN: Simulate not owning Biotech -->
+  <SimulateNotOwningBiotech>Spiel ohne Biotech simulieren</SimulateNotOwningBiotech>
   <!-- EN: Verbose logging -->
   <LogVerbose>Ausführliches Logging</LogVerbose>
-  <!-- EN: Open save data folder -->
-  <OpenSaveGameDataFolder>Ordner mit Speicherständen öffnen</OpenSaveGameDataFolder>
-  <!-- EN: Show save data location -->
-  <ShowSaveGameDataLocation>Standort der Speicherstände zeigen</ShowSaveGameDataLocation>
-  <!-- EN: Open log file folder -->
-  <OpenLogFileFolder>Ordner mit Log-Dateien öffnen</OpenLogFileFolder>
-  <!-- EN: Show log file location -->
-  <ShowLogFileLocation>Standort der Log-Dateien zeigen</ShowLogFileLocation>
-  <!-- EN: Preferred player-created characters. These characters will be more likely to randomly appear during play: -->
-  <NamesYouWantToSee>Bevorzugte Charaktere, die von Spielern erstellt wurden. Diese Charaktere werden mit einer höheren Wahrscheinlichkeit zufällig im Spiel auftauchen:</NamesYouWantToSee>
+  <!-- EN: Save data folder -->
+  <SaveGameDataFolder>Ordner mit Speicherständen</SaveGameDataFolder>
+  <!-- EN: Save data location -->
+  <SaveGameDataLocation>Standort der Speicherstände</SaveGameDataLocation>
+  <!-- EN: Log file folder -->
+  <LogFileFolder>Ordner mit Log-Dateien</LogFileFolder>
+  <!-- EN: Log file location -->
+  <LogFileLocation>Standort der Log-Dateien</LogFileLocation>
+  <!-- EN: Open -->
+  <OpenFolder>Öffnen</OpenFolder>
+  <!-- EN: Show -->
+  <ShowFolder>Zeigen</ShowFolder>
+  <!-- EN: Preferred "Name in Game" characters -->
+  <NamesYouWantToSee>Bevorzugte "Name im Spiel"-Charaktere</NamesYouWantToSee>
+  <!-- EN: These characters will be more likely to appear randomly during play. -->
+  <NamesYouWantToSeeSubText>Diese Charaktere werden häufiger zufällig beim Spielen erscheinen.</NamesYouWantToSeeSubText>
   <!-- EN: Add name -->
   <AddName>Name hinzufügen</AddName>
   <!-- EN: Type the first name, nickname, or last name. -->
@@ -71,23 +95,25 @@
   <!-- EN: Storyteller settings -->
   <ChangeStoryteller>Erzähler-Einstellungen</ChangeStoryteller>
   <!-- EN: Autosave interval -->
-  <AutosaveInterval>Autosave-Intervall</AutosaveInterval>
-  <!-- EN: Temperature mode -->
+  <AutosaveInterval>Auto-Speichern-Intervall</AutosaveInterval>
+  <!-- EN: The number of in game days between each auto save. -->
+  <AutosaveIntervalTooltip>Die Anzahl der spielinternen Tage zwischen jeder automatischen Speicherung.</AutosaveIntervalTooltip>
+  <!-- EN: Temperature unit -->
   <TemperatureMode>Temperatureinheit</TemperatureMode>
   <!-- EN: Show realtime clock -->
   <ShowRealtimeClock>Echtzeituhr anzeigen</ShowRealtimeClock>
-  <!-- EN: Disable tiny fonts -->
-  <DisableTinyText>Kleine Schriften deaktivieren</DisableTinyText>
+  <!-- EN: Disable tiny font -->
+  <DisableTinyText>Kleine Schriftart deaktivieren</DisableTinyText>
   <!-- EN: Maximum number of colonies: {0} -->
   <MaxNumberOfPlayerSettlements>Maximale Anzahl von Kolonien: {0}</MaxNumberOfPlayerSettlements>
   <!-- EN: Map mouse drag sensitivity -->
-  <MapDragSensitivity>Karten-Mausziehempfindlichkeit</MapDragSensitivity>
+  <MapDragSensitivity>Kartenziehempfindlichkeit</MapDragSensitivity>
   <!-- EN: Plant wind sway -->
   <PlantWindSway>Pflanzenbewegung durch Wind</PlantWindSway>
   <!-- EN: Enable test map sizes -->
   <EnableTestMapSizes>Testkartengrößen aktivieren</EnableTestMapSizes>
   <!-- EN: Maximum autosave interval in permadeath mode is {0} day. -->
-  <MaxPermadeathAutosaveIntervalInfo>Maximales Autosave-Intervall im Hardcore-Modus ist {0} Tag.</MaxPermadeathAutosaveIntervalInfo>
+  <MaxPermadeathAutosaveIntervalInfo>Maximales Auto-Speichern-Intervall im Hardcore-Modus ist {0} Tag.</MaxPermadeathAutosaveIntervalInfo>
   <!-- EN: Mod Settings -->
   <ModSettings>Mod-Einstellungen</ModSettings>
   <!-- EN: Permanently disable development mode -->
@@ -96,12 +122,20 @@
   <TextureCompression>Texturkomprimierung</TextureCompression>
   <!-- EN: Turning off texture compression will use much more video memory, but makes textures look slightly better in detailed areas. Only turn this off if you know you have lots of extra video memory.\n\nNote that using certain mods will often consume much more video memory, so you may need to turn this on if you add certain mods. -->
   <TextureCompression_Tooltip>Ohne Texturkomprimierung verbraucht das Spiel viel mehr Grafikspeicher, aber die Texturen sehen in detaillierten Bereichen geringfügig besser aus. Schalte die Komprimierung nur aus, wenn deine Grafikhardware über reichlich Speicher verfügt.\n\nBeachte, dass die Verwendung bestimmter Mods den Speicherverbrauch erhöht; eventuell musst du für solche Mods die Komprimierung wieder einschalten.</TextureCompression_Tooltip>
+  <!-- EN: Smooth camera jumps -->
+  <SmoothCameraJumps>Sanfte Kamerasprünge</SmoothCameraJumps>
+  <!-- EN: When enabled, the camera will quickly pan when focusing on a new location. When disabled, the camera will jump instantly. -->
+  <SmoothCameraJumpsDesc>Bei Aktivierung schwenkt die Kamera schnell zu einer neuen Position. Bei Deaktivierung springt die Kamera sofort zu einer neuen Position.</SmoothCameraJumpsDesc>
 
   <!-- Resolution -->
   <!-- EN: Resolution -->
   <Resolution>Auflösung</Resolution>
   <!-- EN: Fullscreen -->
   <Fullscreen>Vollbild</Fullscreen>
+  <!-- EN: Borderless fullscreen -->
+  <BorderlessFullscreen>Randloser Vollbildmodus</BorderlessFullscreen>
+  <!-- EN: To run RimWorld in borderless fullscreen mode:\n\n1) Open Steam\n2) Go to the "Library" tab at the top\n3) Find RimWorld on the list and right-click it\n4) Choose "Properties..."\n5) Add "-popupwindow" without quotes to "Launch options" in the "General" tab\n6) Restart game\n7) If done correctly, you won't see this window\n\nHint: Use Windows Key + Shift + Left/Right to move the window between your monitors. -->
+  <BorderlessFullscreenInstructions>Um RimWorld im randlosen Vollbildmodus auszuführen:\n\n1. Öffne Steam\n2. Gehe oben auf den Reiter "Bibliothek"\n3. Finde RimWorld in der Liste und rechtsklicke es an\n4. Wähle "Eigenschaften" aus\n5. Füge "-popupwindow" zu den Startoptionen im Reiter "Allgemein" hinzu\n6. Starte das Spiel neu\n7. Wenn alles korrekt ist, wirst du dieses Fenster nicht mehr sehen\n\nTipp: Mit WIN+UMSCHALT+LINKS/RECHTS kannst du das Fenster auf deinen Monitoren hin und her schieben.</BorderlessFullscreenInstructions>
 
   <!-- Mods -->
   <!-- EN: Select mod... -->
@@ -110,14 +144,16 @@
   <NoConfigurableMods>Keine konfigurierbaren Mods geladen.</NoConfigurableMods>
   
   <!-- Options reset -->
-  <!-- EN: Restore to default settings -->
-  <RestoreToDefaultSettings>Auf Standardwerte zurücksetzen</RestoreToDefaultSettings>
-  <!-- EN: Your options have been reset. The game will now restart automatically. -->
-  <ResetAndRestart>Deine Einstellungen wurden zurückgesetzt. Das Spiel wird jetzt automatisch neu gestartet.</ResetAndRestart>
-  <!-- EN: All your settings will be reset to the default and the game will be restarted. All unsaved progress will be lost!\n\nContinue? -->
-  <ResetAndRestartConfirmationDialog>Alle Einstellungen werden auf die Standardwerte zurückgesetzt und das Spiel wird neu gestartet. Alle ungespeicherten Fortschritte gehen dabei verloren!\n\nFortfahren?</ResetAndRestartConfirmationDialog>
-  <!-- EN: Changing the texture compression option requires a restart. All unsaved progress will be lost!\n\nContinue? -->
-  <ChangedTextureCompressionRestart>Das Ändern der Texturkomprimierung erfordert einen Neustart. Alle ungespeicherten Fortschritte gehen dabei verloren!\n\nFortfahren?</ChangedTextureCompressionRestart>
+  <!-- EN: Restore all settings to default -->
+  <RestoreToDefaultSettingsLabel>Alle Standardwerte wiederherstellen</RestoreToDefaultSettingsLabel>
+  <!-- EN: Restore defaults -->
+  <RestoreToDefaultSettings>Zurücksetzen...</RestoreToDefaultSettings>
+  <!-- EN: All settings have been reset. The game will now restart automatically. -->
+  <ResetAndRestart>Alle Einstellungen wurden zurückgesetzt. Das Spiel wird jetzt automatisch neu gestartet.</ResetAndRestart>
+  <!-- EN: All settings will be reset to the default and the game will be restarted. Unsaved progress will be lost,\n\nContinue? -->
+  <ResetAndRestartConfirmationDialog>Alle Einstellungen werden auf die Standardwerte zurückgesetzt und das Spiel wird neu gestartet. Ungespeicherter Fortschritt geht dabei verloren,\n\nFortfahren?</ResetAndRestartConfirmationDialog>
+  <!-- EN: Changing texture compression settings requires a restart. Unsaved progress will be lost.\n\nContinue? -->
+  <ChangedTextureCompressionRestart>Das Ändern der Texturkomprimierung erfordert einen Neustart. Ungespeicherter Fortschritt geht dabei verloren,\n\nFortfahren?</ChangedTextureCompressionRestart>
   
   <!-- Background image -->
   <!-- EN: Menu background -->

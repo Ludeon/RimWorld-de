@@ -34,7 +34,7 @@
     <li>desc_sentence->[PURSUER_nameDef] und [ACCEPTER_nameDef] schauen sich tief in die Augen.</li>
     <li>desc_sentence->[PURSUER_nameDef] pustet [ACCEPTER_nameDef] leicht ins Ohr.</li>
     <li>desc_sentence->[PURSUER_nameDef] ist stilistisch mit [ACCEPTER_nameDef] verbunden.</li>
-    <li>desc_sentence->[PURSUER_nameDef] ist beinahe ein Spiegelbild von [ACCEPTER_nameDef].</li>
+    <li>desc_sentence->[PURSUER_nameDef] ist quasi ein Spiegelbild von [ACCEPTER_nameDef].</li>
     <li>desc_sentence->[PURSUER_nameDef] berührt [ACCEPTER_nameDef] forsch.</li>
   </BecameLover.rulePack.rulesStrings>
   
@@ -54,17 +54,19 @@
     <li>desc_sentence->[ANIMAL_nameDef] is responding positively.</li>
   -->
   <BondedWithAnimal.rulePack.rulesStrings>
-    <li>tale_noun->eine Bindung zwischen [HUMAN_nameDef] und [ANIMAL_nameDef] zustande kam</li>
-    <li>image->[HUMAN_nameFull], wie [HUMAN_pronoun] [circumstance_group] eine Bindung mit [ANIMAL_nameFull] eingeht</li>
-    <li>image->[HUMAN_nameFull], wie [HUMAN_pronoun] [circumstance_group] eine tiefe Bindung mit [ANIMAL_nameFull] eingeht</li>
-    <li>image->[HUMAN_nameFull], wie [HUMAN_pronoun] [circumstance_group] [HUMAN_possessive]e wahre Liebe zu [ANIMAL_nameFull] realisiert</li>
+    <li>tale_noun->eine Bindung zwischen [HUMAN_nameDef] und [ANIMAL_nameDefDat] zustande kam</li>
+    <li>image->[HUMAN_nameFull], wie [HUMAN_pronoun] [circumstance_group] eine Bindung mit [ANIMAL_nameIndefDat] eingeht</li>
+    <li>image->[HUMAN_nameFull], wie [HUMAN_pronoun] [circumstance_group] eine tiefe Bindung mit [ANIMAL_nameIndefDat] eingeht</li>
+    <li>image->[HUMAN_nameFull], wie [HUMAN_pronoun] [circumstance_group] [HUMAN_possessive]e wahre Liebe zu [ANIMAL_nameIndefDat] realisiert</li>
     <li>circumstance_phrase->, während andere Tiere zuschauen,</li>
-    <li>circumstance_phrase->, während [HUMAN_pronoun] in die Augen von [ANIMAL_nameDef] schaut,</li>
+    <li>circumstance_phrase->, während [HUMAN_pronoun] in die Augen des Tieres schaut,</li>
     <li>circumstance_phrase->zufrieden</li>
     <li>desc_sentence->[ANIMAL_nameDef] kuschelt sich an [HUMAN_nameDef].</li>
     <li>desc_sentence->[ANIMAL_nameDef] sieht schläfrig und benebelt von der Liebe aus.</li>
     <li>desc_sentence->[ANIMAL_nameDef] richtet sich majestätisch auf.</li>
     <li>desc_sentence->[ANIMAL_nameDef] reagiert positiv.</li>
+    <li>ANIMAL_nameDefDat->{replace: [ANIMAL_nameDef]; ">der "-">dem "; ">die "-">der "; ">das "-">dem "}</li>
+    <li>ANIMAL_nameIndefDat->{replace: [ANIMAL_nameDef]; ">der "-">einem "; ">die "-">einer "; ">das "-">einem "}</li>
   </BondedWithAnimal.rulePack.rulesStrings>
   
   <!-- EN: breakup -->
@@ -99,7 +101,7 @@
     <li>desc_sentence->[REJECTED_nameDef] sitzt vor Schock wie versteinert da.</li>
     <li>desc_sentence->[DUMPER_nameDef] ist stilistisch getrennt von [REJECTED_nameDef].</li>
     <li>desc_sentence->[REJECTED_nameDef] ist in einem wimmernden Haufen auf dem Boden zusammengebrochen.</li>
-    <li>desc_sentence->[REJECTED_nameDef] gestikuliert wütend mit [DUMPER_nameDef].</li>
+    <li>desc_sentence->[REJECTED_nameDef] gestikuliert wütend vor [DUMPER_nameDef].</li>
   </Breakup.rulePack.rulesStrings>
   
   <!-- EN: marriage -->
@@ -133,8 +135,8 @@
     <li>desc_sentence->[SPOUSE1_nameDef] und [SPOUSE2_nameDef] schauen sich tief in die Augen.</li>
     <li>desc_sentence->[SPOUSE1_nameDef] pustet [SPOUSE2_nameDef] leicht ins Ohr.</li>
     <li>desc_sentence->[SPOUSE1_nameDef] ist stilistisch mit [SPOUSE2_nameDef] verbunden.</li>
-    <li>desc_sentence->[SPOUSE1_nameDef] ist beinahe ein Spiegelbild von [SPOUSE2_nameDef].</li>
-    <li>desc_sentence->[SPOUSE1_nameDef] berührt [SPOUSE2_nameDef] besitzergreifend.</li>
+    <li>desc_sentence->[SPOUSE1_nameDef] ist quasi ein Spiegelbild von [SPOUSE2_nameDef].</li>
+    <li>desc_sentence->[SPOUSE1_nameDef] berührt [SPOUSE2_nameDef] forsch.</li>
   </Marriage.rulePack.rulesStrings>
   
 </LanguageData>

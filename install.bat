@@ -9,14 +9,17 @@ for /f "delims=" %%I in ('cscript /nologo /e:jscript "%~f0"') do (
 rd /q /s "%FLDR%\Core\Languages\German (Deutsch)"
 rd /q /s "%FLDR%\Royalty\Languages\German (Deutsch)"
 rd /q /s "%FLDR%\Ideology\Languages\German (Deutsch)"
+rd /q /s "%FLDR%\Biotech\Languages\German (Deutsch)"
 
 xcopy /s /i "Core" "%FLDR%\Core\Languages\German (Deutsch)"
 xcopy /s /i "Royalty" "%FLDR%\Royalty\Languages\German (Deutsch)"
 xcopy /s /i "Ideology" "%FLDR%\Ideology\Languages\German (Deutsch)"
+xcopy /s /i "Biotech" "%FLDR%\Biotech\Languages\German (Deutsch)"
 
 del "%FLDR%\Core\Languages\German (Deutsch).tar"
 del "%FLDR%\Royalty\Languages\German (Deutsch).tar"
 del "%FLDR%\Ideology\Languages\German (Deutsch).tar"
+del "%FLDR%\Biotech\Languages\German (Deutsch).tar"
 
 goto :EOF
 

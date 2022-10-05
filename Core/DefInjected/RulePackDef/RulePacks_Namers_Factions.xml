@@ -168,9 +168,9 @@
     <li>r_name(p=0.33)->Die [PersonAllies] der [ConceptBadassFemGen]</li>
     <li>r_name(p=0.33)->Die [PersonAllies] des [ConceptBadassNeuGen]</li>
     <li>r_name(p=0.4)->Die [Gore]fresser</li>
-    <li>r_name->[NamePerson]s [Enemies]</li>
-    <li>r_name->[NamePerson]s [AnimalBadasses]</li>
-    <li>r_name->[NamePerson]s [Weapons]</li>
+    <li>r_name->{replace: [NamePerson]'s; "s's"-"s'"; "ß's"-"ß'"; "z's"-"z'"; "x's"-"x'"; "ce's"-"ce'"; "'s"-"s"} [Enemies]</li>
+    <li>r_name->{replace: [NamePerson]'s; "s's"-"s'"; "ß's"-"ß'"; "z's"-"z'"; "x's"-"x'"; "ce's"-"ce'"; "'s"-"s"} [AnimalBadasses]</li>
+    <li>r_name->{replace: [NamePerson]'s; "s's"-"s'"; "ß's"-"ß'"; "z's"-"z'"; "x's"-"x'"; "ce's"-"ce'"; "'s"-"s"} [Weapons]</li>
     <li>r_name->[WeaponCon][groupname_low]</li>
   </NamerFactionPirate.rulePack.rulesStrings>
   

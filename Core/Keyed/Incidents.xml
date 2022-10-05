@@ -2,9 +2,9 @@
 <LanguageData>
 
   <!-- EN: Mad {ANIMAL_labelShort} -->
-  <LetterLabelAnimalInsanitySingle>{0_gender ? Verrückter : Verrückte : Verrücktes} {ANIMAL_labelShort}</LetterLabelAnimalInsanitySingle>
+  <LetterLabelAnimalInsanitySingle>{ANIMAL_genderResolved ? Verrückter : Verrückte : Verrücktes} {ANIMAL_labelShort}</LetterLabelAnimalInsanitySingle>
   <!-- EN: A local {ANIMAL_label} has gone mad. It will attack everyone it sees. -->
-  <AnimalInsanitySingle>{0_gender ? Ein : Eine} {0_gender ? hiesiger : hiesige : hiesiges} {ANIMAL_label} ist verrückt geworden. {0_pronoun} wird jeden in Sichtweite angreifen.</AnimalInsanitySingle>
+  <AnimalInsanitySingle>{ANIMAL_genderResolved ? Ein hiesiger : Eine hiesige : Ein hiesiges} {ANIMAL_label} ist verrückt geworden. {ANIMAL_genderResolved ? Er : Sie : Es} wird jeden in Sichtweite angreifen.</AnimalInsanitySingle>
   <!-- EN: Mad {0} -->
   <LetterLabelAnimalInsanityMultiple>Verrückte {0}</LetterLabelAnimalInsanityMultiple>
   <!-- EN: Some sort of psychic wave has swept over the landscape. Your colonists are okay, but...\n\nIt seems many of the {0} in the area have been driven insane. -->
@@ -14,7 +14,7 @@
   <LetterLabelCropBlight>Fäulnis: {PLANTDEF_labelPlural}</LetterLabelCropBlight>
   <!-- EN: Blight has been discovered on the {PLANTDEF_labelPlural}!
 \nYou should cut or burn the affected plants before the blight spreads. -->
-  <LetterCropBlight>Es wurde eine Fäulnis bei den {lookup: {PLANTDEF_label}; Plural; 3} entdeckt!\n\nDu solltest die befallenen Pflanzen entfernen oder verbrennen, bevor die Fäulnis weitere Pflanzen befällt.</LetterCropBlight>
+  <LetterCropBlight>Es wurde eine Fäulnis bei den {lookup: {PLANTDEF_label}; plural; 7} entdeckt!\n\nDu solltest die befallenen Pflanzen entfernen oder verbrennen, bevor die Fäulnis weitere Pflanzen befällt.</LetterCropBlight>
 
   <!-- EN: Miracle -->
   <LetterLabelMiracleHeal>Wunder</LetterLabelMiracleHeal>
@@ -32,7 +32,9 @@
   <!-- EN: Transport pod crash -->
   <LetterLabelRefugeePodCrash>Transportkapselabsturz</LetterLabelRefugeePodCrash>
   <!-- EN: {PAWN_titleIndef} named {PAWN_nameDef} is crashing in a transport pod nearby. If {PAWN_pronoun} survives the impact, {PAWN_pronoun} will be badly wounded. -->
-  <RefugeePodCrash>{PAWN_titleIndef} namens {PAWN_nameDef} stürzt mit einer Transportkapsel in der Nähe ab. Sollte {PAWN_pronoun} den Aufschlag überleben, wird {PAWN_pronoun} vermutlich schwer verletzt sein.</RefugeePodCrash>  
+  <RefugeePodCrash>{PAWN_titleIndef} namens {PAWN_nameDef} stürzt mit einer Transportkapsel in der Nähe ab. Sollte {PAWN_pronoun} den Aufschlag überleben, wird {PAWN_pronoun} vermutlich schwer verletzt sein.</RefugeePodCrash>
+  <!-- EN: {PAWN_nameDef} is a child of {AGE}. -->
+  <RefugeePodCrash_Child>{PAWN_nameDef} ist ein {AGE}-jähriges Kind.</RefugeePodCrash_Child>
   <!-- EN: {PAWN_nameDef} is not affiliated with any faction. You can rescue {PAWN_objective} and hope {PAWN_pronoun} joins freely, or capture {PAWN_objective} for recruitment or slavery purposes. -->
   <RefugeePodCrash_Factionless>{PAWN_nameDef} gehört zu keiner Fraktion. Du kannst {PAWN_objective} retten und hoffen, dass {PAWN_pronoun} sich dir freiwillig anschließt, oder {PAWN_objective} einfangen, um {PAWN_objective} zu rekrutieren oder zu versklaven.</RefugeePodCrash_Factionless>
   <!-- EN: {PAWN_nameDef} is from your enemy {PAWN_factionName}. You can capture {PAWN_objective} for recruitment or slavery purposes. -->
@@ -209,7 +211,7 @@
   <!-- EN: Caravan demand by {0} -->
   <CaravanDemandTitle>Karawanenforderung von {0}</CaravanDemandTitle>
   <!-- EN: {0} has been ambushed by a group of {2} {4} from {1}. They will attack unless you give them:\n\n{3} -->
-  <CaravanDemand>{0} wurde von einer Gruppe bestehend aus {2} Personen ({4}) von der Fraktion {1} aufgelauert. Sie werden angreifen, es sei denn du gibst ihnen:\n\n{3}</CaravanDemand>
+  <CaravanDemand>{0} wurde von einer {2}-köpfigen Gruppe {4} der Fraktion {1} aufgelauert. Sie werden angreifen, es sei denn du gibst ihnen:\n\n{3}</CaravanDemand>
   <!-- EN: Give and pass -->
   <CaravanDemand_Give>Geben und weiterziehen</CaravanDemand_Give>
   <!-- EN: Refuse and fight -->

@@ -5,9 +5,10 @@
     <li>RomanNumeral->Words/Misc/Numbers_SmallRoman</li>
     <li>Direction->Words/Adjectives/CompassDirections</li>
     <li>Letter->WordParts/CapitalLetters</li>
-    <li>SylB->WordParts/Syllables_Byzantinian</li>
     <li>SylE->WordParts/Syllables_English</li>
     <li>SylG->WordParts/Syllables_Galician</li>
+    <li>SylB->WordParts/Syllables_Byzantinian</li>
+    <li>SylP->WordParts/Syllables_Pig</li>
     <li>Color->Words/Nouns/Colors</li>
     <li>ColorBadass->Words/Nouns/Colors_Badass</li>
     <li>Vegetable->Words/Nouns/Vegetables</li>
@@ -44,12 +45,14 @@
     <li>RomanNumeral->Words/Misc/Numbers_SmallRoman</li>
     <li>Direction->Words/Adjectives/CompassDirections</li>
     <li>Letter->WordParts/CapitalLetters</li>
-    <li>SylB->WordParts/Syllables_Byzantinian</li>
-    <li>SylBCap->WordParts/Syllables_Byzantinian_Cap</li>
     <li>SylE->WordParts/Syllables_English</li>
     <li>SylECap->WordParts/Syllables_English_Cap</li>
     <li>SylG->WordParts/Syllables_Galician</li>
     <li>SylGCap->WordParts/Syllables_Galician_Cap</li>
+    <li>SylB->WordParts/Syllables_Byzantinian</li>
+    <li>SylBCap->WordParts/Syllables_Byzantinian_Cap</li>
+    <li>SylP->WordParts/Syllables_Pig</li>
+    <li>SylPCap->WordParts/Syllables_Pig_Cap</li>
     <li>Color->Words/Nouns/Colors</li>
     <li>ColorCap->Words/Nouns/Colors_Cap</li>
     <li>ColorBadass->Words/Nouns/Colors_Badass</li>
@@ -79,8 +82,11 @@
     <li>AnimalsDat->Words/Nouns/Animals_Plu_Dat</li>
     <li>AnimalBadass->Words/Nouns/Animals_Badass</li>
     <li>AnimalBadassFem->Words/Nouns/Animals_Badass_Fem</li>
+    <li>AnimalBadassFemDat->Words/Nouns/Animals_Badass_Fem</li>
     <li>AnimalBadassMas->Words/Nouns/Animals_Badass_Mas</li>
+    <li>AnimalBadassMasDat->Words/Nouns/Animals_Badass_Mas_Dat</li>
     <li>AnimalBadassNeu->Words/Nouns/Animals_Badass_Neu</li>
+    <li>AnimalBadassNeuDat->Words/Nouns/Animals_Badass_Neu</li>
     <li>AnimalBadassCon->Words/Nouns/Animals_Badass_Con</li>
     <li>AnimalBadasses->Words/Nouns/Animals_Badass_Plu</li>
     <li>AnimalBadassesLow->Words/Nouns/Animals_Badass_Plu_Low</li>
@@ -89,12 +95,15 @@
     <li>WeaponFem->Words/Nouns/Weapons_Fem</li>
     <li>WeaponFemDat->Words/Nouns/Weapons_Fem</li>
     <li>WeaponFemGen->Words/Nouns/Weapons_Fem</li>
+    <li>WeaponFemAcc->Words/Nouns/Weapons_Fem</li>
     <li>WeaponMas->Words/Nouns/Weapons_Mas</li>
     <li>WeaponMasDat->Words/Nouns/Weapons_Mas</li>
     <li>WeaponMasGen->Words/Nouns/Weapons_Mas_Gen</li>
+    <li>WeaponMasAcc->Words/Nouns/Weapons_Mas</li>
     <li>WeaponNeu->Words/Nouns/Weapons_Neu</li>
     <li>WeaponNeuDat->Words/Nouns/Weapons_Neu</li>
     <li>WeaponNeuGen->Words/Nouns/Weapons_Neu_Gen</li>
+    <li>WeaponNeuAcc->Words/Nouns/Weapons_Neu</li>
     <li>WeaponCon->Words/Nouns/Weapons_Con</li>
     <li>Weapons->Words/Nouns/Weapons_Plu</li>
     <li>WeaponsDat->Words/Nouns/Weapons_Plu_Dat</li>
@@ -126,6 +135,8 @@
     <li>PersonJobs->Words/Nouns/People_Jobs_Plu</li>
     <li>PersonJobsDat->Words/Nouns/People_Jobs_Plu_Dat</li>
     <li>PersonFamily->Words/Nouns/People_Family</li>
+    <li>PersonFamilyDat->Words/Nouns/People_Family_Dat</li>
+    <li>PersonFamilyAcc->Words/Nouns/People_Family_Acc</li>
     <li>PersonFamilyFem->Words/Nouns/People_Family_Fem</li>
     <li>PersonFamilyFemGen->Words/Nouns/People_Family_Fem</li>
     <li>PersonFamilyFemAcc->Words/Nouns/People_Family_Fem</li>
@@ -196,12 +207,11 @@
     <li>CommunityFem->Words/Nouns/Communities_Fem</li>
     <li>CommunityFemGen->Words/Nouns/Communities_Fem</li>
     <li>CommunityFemDat->Words/Nouns/Communities_Fem</li>
-    <li>CommunityMas->Words/Nouns/Communities_Mas</li>
-    <li>CommunityMasGen->Words/Nouns/Communities_Mas_Gen</li>
-    <li>CommunityMasDat->Words/Nouns/Communities_Mas</li>
+    <li>CommunityFemAcc->Words/Nouns/Communities_Fem</li>
     <li>CommunityNeu->Words/Nouns/Communities_Neu</li>
     <li>CommunityNeuGen->Words/Nouns/Communities_Neu_Gen</li>
     <li>CommunityNeuDat->Words/Nouns/Communities_Neu</li>
+    <li>CommunityNeuAcc->Words/Nouns/Communities_Neu</li>
     <li>BodyPart->Words/Nouns/Bodyparts</li>
     <li>BodyPartFem->Words/Nouns/Bodyparts_Fem</li>
     <li>BodyPartFemGen->Words/Nouns/Bodyparts_Fem</li>
@@ -397,6 +407,14 @@
     <li>PersonalCharacteristicsDat(p=0.15)->sexuellen Vorlieben</li>
     <li>PersonalCharacteristic(p=0.15)->Sexualerfahrung</li>
     <li>PersonalCharacteristicFem(p=0.15)->Sexualerfahrung</li>
+    <li>INITIATOR_nameIndefDat->{replace: ​[INITIATOR_definite]; ">der "-">einem "; ">die "-">einer "; ">das "-">einem "; "​der "-"einem "; "​die "-"einer "; "​das "-"einem "}</li>
+    <li>INITIATOR_nameDefDat->{replace: ​[INITIATOR_definite]; ">der "-">dem "; ">die "-">der "; ">das "-">dem "; "​der "-"dem "; "​die "-"der "; "​das "-"dem "}</li>
+    <li>INITIATOR_nameIndefAcc->{replace: ​[RECIPIENT_definite]; ">der "-">einem "; ">die "-">einer "; ">das "-">einem "; "​der "-"einem "; "​die "-"einer "; "​das "-"einem "}</li>
+    <li>INITIATOR_label_s->{replace: [INITIATOR_label]s; "s&lt;/color>s"-"s&lt;/color>'"; "ß&lt;/color>s"-"ß&lt;/color>'"; "z&lt;/color>s"-"z&lt;/color>'"; "x&lt;/color>s"-"x&lt;/color>'"; "ce&lt;/color>s"-"ce&lt;/color>'"}</li>
+    <li>RECIPIENT_nameIndefAcc->{replace: ​[RECIPIENT_definite]; ">der "-">einen "; ">die "-">eine "; ">das "-">ein "; "​der "-"einen "; "​die "-"eine "; "​das "-"ein "}</li>
+    <li>RECIPIENT_nameDefDat->{replace: ​[RECIPIENT_definite]; ">der "-">dem "; ">die "-">der "; ">das "-">dem "; "​der "-"dem "; "​die "-"der "; "​das "-"dem "}</li>
+    <li>RECIPIENT_nameDefAcc->{replace: ​[RECIPIENT_definite]; ">der "-">den "; "​der "-"den "}</li>
+    <li>RECIPIENT_label_s->{replace: [RECIPIENT_label]s; "s&lt;/color>s"-"s&lt;/color>'"; "ß&lt;/color>s"-"ß&lt;/color>'"; "z&lt;/color>s"-"z&lt;/color>'"; "x&lt;/color>s"-"x&lt;/color>'"; "ce&lt;/color>s"-"ce&lt;/color>'"}</li>
   </GlobalUtility.rulePack.rulesStrings>
   
   <!-- EN:

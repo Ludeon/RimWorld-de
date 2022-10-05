@@ -9,17 +9,17 @@
   <!-- EN: Cut plants -->
   <DesignatorCutPlants>Pflanzen entfernen</DesignatorCutPlants>
   <!-- EN: Marks plants to be cut and destroyed. The plant will be completely removed, and any food or resource yield will be harvested. -->
-  <DesignatorCutPlantsDesc>Markiere Pflanzen, die komplett entfernt werden sollen. Nahrung und Ressourcen werden gegebenenfalls geerntet.</DesignatorCutPlantsDesc>
+  <DesignatorCutPlantsDesc>Markiere Pflanzen, die komplett entfernt werden sollen. Nahrung und Ressourcen werden nach Möglichkeit geerntet.</DesignatorCutPlantsDesc>
 
   <!-- EN: Deconstruct -->
   <DesignatorDeconstruct>Abreißen</DesignatorDeconstruct>
   <!-- EN: Deconstruct this and reclaim part of its resources. -->
-  <DesignatorDeconstructDesc>Markiere Objekte, die abgerissen werden sollen. Du erhältst in der Regel einen Teil der Ressourcen zurück.</DesignatorDeconstructDesc>
+  <DesignatorDeconstructDesc>Reiße dieses Objekt ab und erhalte einen Teil der Ressourcen zurück.</DesignatorDeconstructDesc>
 
   <!-- EN: Uninstall -->
   <DesignatorUninstall>Demontieren</DesignatorUninstall>
   <!-- EN: Uninstall this so it can be moved, sold, or installed somewhere else. -->
-  <DesignatorUninstallDesc>Markiere Objekte, die demontiert werden sollen, um sie zu versetzen oder zu verkaufen.</DesignatorUninstallDesc>
+  <DesignatorUninstallDesc>Demontiere dieses Objekt, um es zu verkaufen oder woanders wieder zu montieren.</DesignatorUninstallDesc>
 
   <!-- EN: Extract tree -->
   <DesignatorExtractTree>Baum ausgraben</DesignatorExtractTree>
@@ -102,13 +102,13 @@
   <!-- EN: Colonists will ignore roofs in this area. -->
   <DesignatorAreaIgnoreRoofExpandDesc>Entferne einen Teil des Gebietes, das zum Bauen oder Abreißen von Dächern markiert ist.</DesignatorAreaIgnoreRoofExpandDesc>
 
-  <!-- EN: Expand snow clear area -->
+  <!-- EN: Snow removal area -->
   <DesignatorAreaSnowClearExpand>'Schnee räumen' erweitern</DesignatorAreaSnowClearExpand>
-  <!-- EN: Create a area which colonists will try to keep clear of snow. -->
+  <!-- EN: Create an area which colonists will try to keep clear of snow. -->
   <DesignatorAreaSnowClearExpandDesc>Erstelle ein Gebiet, den die Kolonisten möglichst schneefrei halten sollen.</DesignatorAreaSnowClearExpandDesc>
-  <!-- EN: Clear snow clear Area -->
+  <!-- EN: Clear snow removal area -->
   <DesignatorAreaSnowClearClear>'Schnee räumen' verkleinern</DesignatorAreaSnowClearClear>
-  <!-- EN: Removes a snow clearing area. Colonists will no longer try to keep this area clear of snow. -->
+  <!-- EN: Removes a snow removal area. Colonists will no longer try to keep this area clear of snow. -->
   <DesignatorAreaSnowClearClearDesc>Entferne ein Gebiet, das zum Schneeräumen markiert ist. Kolonisten werden hier nicht mehr versuchen, den Bereich schneefrei zu halten.</DesignatorAreaSnowClearClearDesc>
 
   <!-- EN: Expand allowed area -->
@@ -125,7 +125,7 @@
   <ManageAutoSlaughter>Auto-Schlachtung verwalten...</ManageAutoSlaughter>
 
   <!-- EN: Create a zone where your colonists will try to grow a certain kind of plant. -->
-  <DesignatorGrowingZoneDesc>Erstelle eine Zone, die deine Kolonisten zum Anbau einer bestimmten Pflanzenart nutzen werden.</DesignatorGrowingZoneDesc>
+  <DesignatorGrowingZoneDesc>Erstelle eine Zone, die deine Kolonisten zum Anbauen einer bestimmten Pflanzenart nutzen werden.</DesignatorGrowingZoneDesc>
 
   <!-- EN: Create a stockpile where your colonists will store resources.\nThis tool can also expand any existing stockpile. -->
   <DesignatorZoneCreateStorageResourcesDesc>Erstelle eine Zone, die deine Kolonisten zum Lagern von Ressourcen nutzen werden.\nDieser Befehl kann auch einen bereits vorhandenen Lagerplatz erweitern.</DesignatorZoneCreateStorageResourcesDesc>
@@ -187,6 +187,45 @@
   <DesignatorStudy>Analysieren</DesignatorStudy>
   <!-- EN: Study this object to learn more about it. -->
   <DesignatorStudyDesc>Analysiere dieses Objekt, um mehr darüber zu erfahren.</DesignatorStudyDesc>
+
+  <!-- EN: Paint building... -->
+  <DesignatorPaintBuilding>Bauwerk streichen...</DesignatorPaintBuilding>
+  <!-- EN: Designate walls and buildings to be painted using dye from tinctoria plants, which you can grow. Only certain buildings can be painted. -->
+  <DesignatorPaintBuildingDesc>Kennzeichne Wände und Bauwerke, die mit Farbstoff gestrichen werden sollen. Farbstoff wird aus der Tinktoriapflanze gewonnen, die du selbst auf deinen Feldern anbauen kannst. Es können nur bestimmte Bauwerke gestrichen werden.</DesignatorPaintBuildingDesc>
+  <!-- EN: Paint floor... -->
+  <DesignatorPaintFloor>Boden streichen...</DesignatorPaintFloor>
+  <!-- EN: Designate floors to be painted using dye from tinctoria plants, which you can grow. Only certain floors can be painted. -->
+  <DesignatorPaintFloorDesc>Kennzeichne Böden, die mit Farbstoff gestrichen werden sollen. Farbstoff wird aus der Tinktoriapflanze gewonnen, die du selbst auf deinen Feldern anbauen kannst. Es können nur bestimmte Böden gestrichen werden.</DesignatorPaintFloorDesc>
+
+  <!-- EN: Remove paint -->
+  <DesignatorRemovePaint>Anstrich entfernen</DesignatorRemovePaint>
+  <!-- EN: Remove paint from walls, buildings, and floors. -->
+  <DesignatorRemovePaintDesc>Entferne die aufgetragene Farbe von Wänden, Bauwerken und Böden.</DesignatorRemovePaintDesc>
+  <!-- EN: Remove floor paint -->
+  <DesignatorRemoveFloorPaint>Bodenfarbe entfernen</DesignatorRemoveFloorPaint> <!-- text_todo -->
+  <!-- EN: Remove paint from floors. -->
+  <DesignatorRemoveFloorPaintDesc>Entferne die aufgetragene Farbe von Böden.</DesignatorRemoveFloorPaintDesc> <!-- text_todo -->
+  <!-- EN: Paint -->
+  <Paint>Anstrichfarbe</Paint>
+  <!-- EN: Color -->
+  <Color>Farbe</Color>
+
+  <!-- EN: Color picker -->
+  <DesignatorEyedropper>Pipette</DesignatorEyedropper>
+  <!-- EN: Grab existing color -->
+  <GrabExistingColor>Farbe kopieren</GrabExistingColor>
+  <!-- EN: Grab a color from an existing building. -->
+  <DesignatorEyeDropperDesc_Paint>Kopiere die Farbe eines bestehenden Bauwerks.</DesignatorEyeDropperDesc_Paint>
+  <!-- EN: Grab a color from an existing carpet. -->
+  <DesignatorEyeDropperDesc_Carpet>Kopiere die Farbe eines bestehenden Teppichs.</DesignatorEyeDropperDesc_Carpet>
+  <!-- EN: Select a painted building. -->
+  <SelectAPaintedBuilding>Gestrichenes Bauwerk auswählen</SelectAPaintedBuilding>
+  <!-- EN: Select colored carpet. -->
+  <SelectColoredFloor>Gefärbten Teppich auswählen</SelectColoredFloor>
+  <!-- EN: Grab -->
+  <Grab>Kopieren</Grab>
+  <!-- EN: Grabbed color -->
+  <GrabbedColor>Kopierte Farbe</GrabbedColor>
 
   <!-- Failure messages -->
   <!-- EN: Unchosen material -->
@@ -254,12 +293,12 @@
   <!-- EN: Construction needed -->
   <ConstructionNeeded>Konstruktion benötigt</ConstructionNeeded>
   <!-- EN: None of your {0} have this skill. -->
-  <NoColonistWithSkillTip>Keiner deiner {0} hat diese Fähigkeit.</NoColonistWithSkillTip>
+  <NoColonistWithSkillTip>Keiner deiner {0} hat diese Fertigkeit.</NoColonistWithSkillTip>
   <!-- EN: {0} needed -->
   <SkillNeededForConstructing>{0} benötigt</SkillNeededForConstructing>
   <!-- EN: None of your {0} have all skills required. -->
-  <NoColonistWithAllSkillsForConstructing>Keiner deiner {0} verfügt über alle erforderlichen Fähigkeiten.</NoColonistWithAllSkillsForConstructing>
+  <NoColonistWithAllSkillsForConstructing>Keiner deiner {0} hat alle benötigten Fertigkeiten.</NoColonistWithAllSkillsForConstructing>
   <!-- EN: All of your {0} who have this skill are not assigned to {1}. -->
-  <AllColonistsWithSkillHaveDisabledConstructingTip>Keiner deiner {0}, die diese Fähigkeit haben, ist für {1} zugewiesen.</AllColonistsWithSkillHaveDisabledConstructingTip>
+  <AllColonistsWithSkillHaveDisabledConstructingTip>Keiner deiner {0} mit dieser Fertigkeit ist für {1} zugeteilt.</AllColonistsWithSkillHaveDisabledConstructingTip>
 
 </LanguageData>

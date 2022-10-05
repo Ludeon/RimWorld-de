@@ -9,7 +9,7 @@
   <!-- EN: Slave unsuppressed -->
   <SlavesUnsuppressedLabel>Sklave ist nicht unterdrückt</SlavesUnsuppressedLabel>
   <!-- EN: {0_nameDef}'s suppression level is dangerously low. There is a good chance {0_pronoun} will rebel.\n\nMake sure there is a colonist assigned to warden work. Wardens will suppress slaves periodically to stop them from rebelling. -->
-  <SlavesUnsuppressedDesc>Der Unterdrückungsgrad von {0_nameDef} ist gefährlich niedrig. Es besteht eine gute Chance, dass {0_pronoun} rebellieren wird.\n\nStelle sicher, dass ein Kolonist als Aufseher eingeteilt ist. Aufseher unterdrücken Sklaven in regelmäßigen Abständen, um sie vom Rebellieren abzuhalten.</SlavesUnsuppressedDesc>
+  <SlavesUnsuppressedDesc>Der Unterdrückungsgrad von {0_nameDef} ist gefährlich niedrig. Es besteht eine gute Chance, dass {0_pronoun} rebellieren wird.\n\nStelle sicher, dass ein Kolonist als Wärter zugeteilt ist. Wärter unterdrücken Sklaven in regelmäßigen Abständen, um sie vom Rebellieren abzuhalten.</SlavesUnsuppressedDesc>
   <!-- EN: Slave unattended -->
   <SlaveUnattendedLabel>Sklave ist unbeaufsichtigt</SlaveUnattendedLabel>
   <!-- EN: Slaves unattended -->
@@ -19,25 +19,25 @@
 
   <!-- EN: {0} opportunity -->
   <RitualOpportunity>{0} möglich</RitualOpportunity>
-  <!-- EN: {0} opportunity for -->
-  <RitualOpportunityFor>{0} möglich für</RitualOpportunityFor>
-  <!-- EN: Expires in -->
-  <RitualExpiresIn>Läuft ab in</RitualExpiresIn>
-  <!-- EN: Completing {RITUAL_labelDef} will have these effects -->
-  <RitualCompletionEffects>Der Abschluss des Rituals hat folgende Effekte</RitualCompletionEffects>
+  <!-- EN: {0} opportunity for {1} -->
+  <RitualOpportunityFor>{0} für {1} möglich</RitualOpportunityFor>
+  <!-- EN: Expires in {0}, on {1}. -->
+  <RitualExpiresIn>Läuft in {replace: {0}; "Tage"-"Tagen"; "Jahre"-"Jahren"} ab, am {1}.</RitualExpiresIn>
+  <!-- EN: To begin the ritual, select a {FOCUS} and click the 'Begin {RITUAL_label}' command. -->
+  <RitualSingleTargetDesc>Um das Ritual zu starten, musst du ein Fokusobjekt auswählen und auf 'Starte {RITUAL_label}' klicken. Folgendes Fokusobjekt kann verwendet werden: {FOCUS}.</RitualSingleTargetDesc>
+  <!-- EN: To begin the ritual, select one of the following and click the 'Begin {RITUAL_label}' command -->
+  <RitualMultiTargetDesc>Um das Ritual zu starten, musst du ein Fokusobjekt auswählen und auf 'Starte {RITUAL_label}' klicken. Folgende Fokusobjekte können verwendet werden</RitualMultiTargetDesc>
   <!-- EN: To begin the ritual, select a focus object and click the 'Begin {RITUAL_label}' command. The following are valid focus objects:\n{1} -->
-  <RitualTargetsExplanation>Um das Ritual zu beginnen, musst du ein Fokusobjekt auswählen und auf 'Starte {RITUAL_label}' klicken. Folgende Fokusobjekte können verwendet werden:\n{1}</RitualTargetsExplanation>
-  <!-- EN: Following roles have a part in {RITUAL_label}:\n{1} -->
-  <RitualRolesExplanation>Folgende Rollen nehmen teil:\n{1}</RitualRolesExplanation>
+  <RitualTargetsExplanation>Um das Ritual zu starten, musst du ein Fokusobjekt auswählen und auf 'Starte {RITUAL_label}' klicken. Folgende Fokusobjekte können verwendet werden:\n{1}</RitualTargetsExplanation>
   <!-- EN: Click to jump to targets -->
-  <RitualJumpToTargets>Klicken, um zu den Zielen zu springen</RitualJumpToTargets>
+  <RitualJumpToTargets>Klicke, um zu den Zielen zu springen</RitualJumpToTargets>
   <!-- EN: In order to perform {0} you need to fill these roles -->
-  <RitualUnfilledRoles>Für die Durchführung des Rituals '{0}' müssen folgende Rollen besetzt sein</RitualUnfilledRoles>
+  <RitualUnfilledRoles>Für die Durchführung von '{0}' müssen folgende Rollen besetzt sein</RitualUnfilledRoles>
 
   <!-- EN: {0} desired -->
   <IdeoBuildingMissing>{0} gewünscht</IdeoBuildingMissing>
   <!-- EN: {IDEO_name} requires that you have a {0} in your colony as long as {2} or higher.\n\n{0} is a variant of {BASEBUILDING_label}.{BUILDINGINFO}\n\nThis requirement is only active if {IDEO_name} is your faction's primary ideoligion, or there are {MINBELIEVERS} believers in your faction.{4}\n\nIf the requirement isn't met, these believers will become unhappy:\n{3} -->
-  <IdeoBuildingMissingDesc>Die Ideologie {IDEO_name} verlangt, dass du das Bauwerk {0} in deiner Kolonie hast, wenn die Erwartungen deiner Kolonisten{2} oder höher sind.\n\n{0} ist {BASEBUILDING_indefinite}.{BUILDINGINFO}\n\nDieser Wunsch ist nur aktiv, wenn {IDEO_name} die primäre Ideologie deiner Fraktion ist, oder {MINBELIEVERS} Gläubige in deiner Fraktion vorhanden sind.{4}\n\nWenn die Anforderungen nicht erfüllt sind, werden folgende Gläubige unglücklich:\n{3}</IdeoBuildingMissingDesc>
+  <IdeoBuildingMissingDesc>Die Ideologie {IDEO_name} verlangt, dass du das Bauwerk {0} in deiner Kolonie hast, wenn die Erwartungen deiner Kolonisten{2} oder höher sind.\n\n{0} ist {BASEBUILDING_indefinite}.{BUILDINGINFO}\n\nDieser Wunsch ist nur aktiv, wenn {IDEO_name} die primäre Ideologie deiner Fraktion ist, oder {MINBELIEVERS} Gläubige in deiner Fraktion vorhanden sind.{4}\n\nWenn die Anforderungen nicht erfüllt sind, bekommen folgende Gläubige schlechte Laune:\n{3}</IdeoBuildingMissingDesc>
   <!-- EN:  You can find it by opening the '{TABNAME}' tab of the architect menu. -->
   <IdeoBuildingArchitectTabDesc> Du findest das Bauwerk im Architekt-Menü unter '{TABNAME}'.</IdeoBuildingArchitectTabDesc>
   <!-- EN:  It can be created at:\n{0}. -->
@@ -50,7 +50,7 @@
   <!-- EN: {0} disrespected -->
   <IdeoBuildingDisrespected>{0} respektlos behandelt</IdeoBuildingDisrespected>
   <!-- EN: {0} requires that {1} be in a dignified room. These room requirements must be met:\n{2}\n\nIf the {1}'s room requirements are not met, these believers will become unhappy:\n{3} -->
-  <IdeoBuildingDisrespectedDesc>Die Ideologie '{0}' verlangt, dass sich das Bauwerk {1} in einem würdevollen Raum befindet. Folgende Raumanforderungen müssen erfüllt sein:\n{2}\n\nWenn die Anforderungen nicht erfüllt sind, werden folgende Gläubige unglücklich:\n{3}</IdeoBuildingDisrespectedDesc>
+  <IdeoBuildingDisrespectedDesc>Die Ideologie '{0}' verlangt, dass sich das Bauwerk {1} in einem würdevollen Raum befindet. Folgende Raumanforderungen müssen erfüllt sein:\n{2}\n\nWenn die Anforderungen nicht erfüllt sind, bekommen folgende Gläubige schlechte Laune:\n{3}</IdeoBuildingDisrespectedDesc>
   
   <!-- EN: Raids arriving in {0} -->
   <QuestPartRaidsDelay>Überfälle starten in {replace: {0}; "Tage"-"Tagen"; "Jahre"-"Jahren"}</QuestPartRaidsDelay>
@@ -62,7 +62,7 @@
   <!-- EN: {0} roles unfilled -->
   <IdeoRolesEmpty>Rollen unbesetzt: {0}</IdeoRolesEmpty>
   <!-- EN: These roles are not filled:\n{0}\n\nYou can assign someone a role on their Social tab. You can also select a ritual spot or an altar and click 'Begin role change'. \n\nIf these roles remain empty, the following people will be unhappy -->
-  <IdeoRolesEmptyDesc>Die folgenden Rollen sind nicht besetzt:\n{0}\n\nNutze den Sozial-Tab einer Person, um ihr eine Rolle zuzuweisen. Du kannst auch einen Ritualplatz oder Altar auswählen und auf 'Starte Rollenwechsel' klicken.\n\nWenn diese Rollen unbesetzt bleiben, werden folgende Leute unzufrieden</IdeoRolesEmptyDesc>
+  <IdeoRolesEmptyDesc>Die folgenden Rollen sind nicht besetzt:\n{0}\n\nNutze den Sozial-Tab einer Person, um ihr eine Rolle zuzuweisen. Du kannst auch einen Ritualplatz oder Altar auswählen und auf 'Starte Rollenwechsel' klicken.\n\nWenn diese Rollen unbesetzt bleiben, bekommen folgende Leute schlechte Laune</IdeoRolesEmptyDesc>
 
   <!-- EN: Security threats activated in {0} -->
   <AncientAltarThreatsWaking>Sicherheitssysteme werden in {replace: {0}; "Tage"-"Tagen"; "Jahre"-"Jahren"} aktiviert</AncientAltarThreatsWaking>
@@ -75,8 +75,8 @@
   <AlertRitualComingDesc>Folgende Rituale können bald durchgeführt werden</AlertRitualComingDesc>
   <!-- EN: Opportunities expire after {0} days, and reoccur on the same day each year. -->
   <AlertRitualComingExtra>Datumsspezifische Rituale können mit einer Verspätung von maximal {0} Tagen durchgeführt werden, danach verfällt die Möglichkeit. Solche Rituale finden jedes Jahr am gleichen Tag statt.</AlertRitualComingExtra>
-  <!-- EN: {0} on {1}, {2} left -->
-  <AlertRitualComingEntry>{0} am {1}, noch {2}</AlertRitualComingEntry>
+  <!-- EN: {0} on {1}, {2} before opportunity arises -->
+  <AlertRitualComingEntry>{0} am {1}, noch {2}, bevor sich die Gelegenheit ergibt</AlertRitualComingEntry>
 
   <!-- EN: Age reversal demanded -->
   <AlertAgeReversalDemandNear>Altersumkehr verlangt</AlertAgeReversalDemandNear>

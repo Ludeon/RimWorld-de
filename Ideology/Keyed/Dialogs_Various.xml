@@ -2,8 +2,6 @@
 <LanguageData>
 
   <!-- Misc -->
-  <!-- EN: add -->
-  <Add>hinzufügen</Add>
   <!-- EN: Trading animal products bonus -->
   <TradingAnimalProduceBonus>Handeltierproduktbonus</TradingAnimalProduceBonus>
   <!-- EN: Slaves -->
@@ -14,6 +12,10 @@
   <Date>Datum</Date>
   <!-- EN: The following development points will be awarded depending on the ritual outcome -->
   <RitualDevelopmentPointRewards>Je nach Ergebnis des Rituals werden die folgenden Entwicklungspunkte gewährt</RitualDevelopmentPointRewards>
+  <!-- EN: Use global style -->
+  <UseGlobalStyle>Nutze globalen Stil</UseGlobalStyle>
+  <!-- EN: No style variations available -->
+  <NoStylesAvailable>Keine Stilvariationen verfügbar</NoStylesAvailable>
 
   <!-- EN: Choose the symbolic structure of your ideoligion. This only affects symbols - it does not affect gameplay. -->
   <ChooseStructureMemesInfo>Wähle die symbolische Struktur deiner Ideologie. Diese Einstellung betrifft nur die Symbole - die Spielmechanik ist davon nicht betroffen.</ChooseStructureMemesInfo>
@@ -60,6 +62,8 @@
   <ChooseNewRole>Neue Rolle wählen</ChooseNewRole>
   <!-- EN: No role assigned -->
   <NoRoleAssigned>Keine Rolle zugewiesen</NoRoleAssigned>
+  <!-- EN: Children cannot take on roles -->
+  <ChildNoRoleAssigned>Kinder können keine Rollen übernehmen</ChildNoRoleAssigned>
   <!-- EN: Remove {0} role -->
   <RemoveRole>Entferne {0}</RemoveRole>
   <!-- EN: You're about to assign the role of {ROLE_labelDef} to {PAWN_labelShort}. -->
@@ -67,9 +71,9 @@
   <!-- EN: Are you sure? -->
   <ChooseRoleConfirmAssignPostfix>Bist du dir sicher?</ChooseRoleConfirmAssignPostfix>
   <!-- EN: {PAWN_labelShort} currently holds this role and will be unhappy to lose it. -->
-  <ChooseRoleConfirmAssignReplace>{PAWN_labelShort} hat derzeit diese Rolle inne und wird unglücklich, wenn {PAWN_pronoun} diese Rolle verlieren sollte.</ChooseRoleConfirmAssignReplace>
+  <ChooseRoleConfirmAssignReplace>{PAWN_labelShort} hat derzeit diese Rolle inne und bekommt schlechte Laune, wenn {PAWN_pronoun} diese Rolle verlieren sollte.</ChooseRoleConfirmAssignReplace>
   <!-- EN: {PAWN_labelShort} currently holds the role of {ROLE_label} and will be unhappy to lose it. -->
-  <ChooseRoleConfirmAssignHasOtherRole>{PAWN_labelShort} hat derzeit die Rolle '{ROLE_label}' inne und wird unglücklich, wenn {PAWN_pronoun} diese Rolle verlieren sollte.</ChooseRoleConfirmAssignHasOtherRole>
+  <ChooseRoleConfirmAssignHasOtherRole>{PAWN_labelShort} hat derzeit die Rolle '{ROLE_label}' inne und bekommt schlechte Laune, wenn {PAWN_pronoun} diese Rolle verlieren sollte.</ChooseRoleConfirmAssignHasOtherRole>
   <!-- EN: There can be only one leader. This will dismiss {PAWN_labelShort} from their {OTHERROLE_labelDef} role, which will make {PAWN_objective} upset. -->
   <ChooseRoleConfirmAssignReplaceLeader>Es kann nur einen Anführer geben. Diese Aktion wird {PAWN_labelShort} aus {PAWN_possessive}er Rolle als {OTHERROLE_label} entlassen, was {PAWN_objective} verärgern wird.</ChooseRoleConfirmAssignReplaceLeader>
   <!-- EN: You're about to dismiss {PAWN_labelShort} from the role of {ROLE_labelIndef}. This will upset {PAWN_objective}. -->
@@ -104,15 +108,15 @@
   <!-- EN: {PAWN_labelShort}'s conversion power -->
   <AbilityIdeoConvertBreakdownConversionPower>{replace: {PAWN_labelShort}s; "s(/Name)s"-"s(/Name)'"; "ß(/Name)s"-"ß(/Name)'"; "z(/Name)s"-"z(/Name)'"; "x(/Name)s"-"x(/Name)'"; "ce(/Name)s"-"ce(/Name)'"} Bekehrungsstärke</AbilityIdeoConvertBreakdownConversionPower>
   <!-- EN: {PAWN_labelShort}'s certainty loss factor from {IDEO_name} -->
-  <AbilityIdeoConvertBreakdownIdeoCertaintyReduction>{replace: {PAWN_labelShort}s; "s(/Name)s"-"s(/Name)'"; "ß(/Name)s"-"ß(/Name)'"; "z(/Name)s"-"z(/Name)'"; "x(/Name)s"-"x(/Name)'"; "ce(/Name)s"-"ce(/Name)'"} Glaubensverlustfaktor von '{IDEO_name}'</AbilityIdeoConvertBreakdownIdeoCertaintyReduction>
+  <AbilityIdeoConvertBreakdownIdeoCertaintyReduction>{replace: {PAWN_labelShort}s; "s(/Name)s"-"s(/Name)'"; "ß(/Name)s"-"ß(/Name)'"; "z(/Name)s"-"z(/Name)'"; "x(/Name)s"-"x(/Name)'"; "ce(/Name)s"-"ce(/Name)'"} Glaubensverlust-Faktor von {IDEO_name}</AbilityIdeoConvertBreakdownIdeoCertaintyReduction>
   <!-- EN: {PAWN_labelShort} is {ROLE_labelDef} -->
   <AbilityIdeoConvertBreakdownRole>{PAWN_labelShort} ist {ROLE_label}</AbilityIdeoConvertBreakdownRole>
   <!-- EN: Trait {TRAIT} -->
-  <AbilityIdeoConvertBreakdownTrait>Merkmal '{TRAIT}'</AbilityIdeoConvertBreakdownTrait>
+  <AbilityIdeoConvertBreakdownTrait>Merkmal: {TRAIT}</AbilityIdeoConvertBreakdownTrait>
   <!-- EN: {RELICCOUNT} installed relics on map -->
   <AbilityIdeoConvertBreakdownRelic>{RELICCOUNT} installierte Reliquien auf der Karte</AbilityIdeoConvertBreakdownRelic>
   <!-- EN: {PAWN_labelShort}'s social skill -->
-  <AbilityIdeoConvertBreakdownSocialSkill>{replace: {PAWN_labelShort}s; "s(/Name)s"-"s(/Name)'"; "ß(/Name)s"-"ß(/Name)'"; "z(/Name)s"-"z(/Name)'"; "x(/Name)s"-"x(/Name)'"; "ce(/Name)s"-"ce(/Name)'"} soziale Fähigkeit</AbilityIdeoConvertBreakdownSocialSkill>
+  <AbilityIdeoConvertBreakdownSocialSkill>{replace: {PAWN_labelShort}s; "s(/Name)s"-"s(/Name)'"; "ß(/Name)s"-"ß(/Name)'"; "z(/Name)s"-"z(/Name)'"; "x(/Name)s"-"x(/Name)'"; "ce(/Name)s"-"ce(/Name)'"} soziale Fertigkeit</AbilityIdeoConvertBreakdownSocialSkill>
   <!-- EN: {RECIPIENT_labelShort}'s opinion of {INITIATOR_labelShort} -->
   <AbilityIdeoConvertBreakdownOpinion>{replace: {RECIPIENT_labelShort}s; "s(/Name)s"-"s(/Name)'"; "ß(/Name)s"-"ß(/Name)'"; "z(/Name)s"-"z(/Name)'"; "x(/Name)s"-"x(/Name)'"; "ce(/Name)s"-"ce(/Name)'"} Meinung von {RECIPIENT_labelShort}</AbilityIdeoConvertBreakdownOpinion>
   <!-- EN: {PAWN_nameDef}'s ideoligion -->
@@ -163,7 +167,7 @@
   <!-- EN: Last human meat -->
   <LastHumanMeat>Menschenfleisch konsumiert</LastHumanMeat>
   <!-- EN: Because of {PAWN_possessive} belief in {IDEO_name}, {PAWN_nameDef} will become unhappy if {PAWN_pronoun} goes more than {DURATION} days without eating human meat. -->
-  <LastHumanMeatDesc>Aufgrund {PAWN_possessive}es Glaubens an die Ideologie '{IDEO_name}' wird {PAWN_nameDef} unzufrieden, wenn {PAWN_pronoun} mehr als {DURATION} Tage ohne Menschenfleisch auskommen muss.</LastHumanMeatDesc>
+  <LastHumanMeatDesc>Aufgrund {PAWN_possessive}es Glaubens an die Ideologie '{IDEO_name}' bekommt {PAWN_nameDef} schlechte Laune, wenn {PAWN_pronoun} mehr als {DURATION} Tage ohne Menschenfleisch auskommen muss.</LastHumanMeatDesc>
 
   <!-- EN: Executing {PAWN_labelShort} will negatively affect relations with {FACTION_name}. -->
   <ExectueNeutralFactionSlave>Die Hinrichtung von {PAWN_labelShort} wird die Beziehung zur Fraktion '{FACTION_name}' negativ beeinflussen.</ExectueNeutralFactionSlave>
@@ -176,8 +180,6 @@
   <!-- Style -->
   <!-- EN: Style -->
   <StylePawn>Style</StylePawn>
-  <!-- EN: Cancel -->
-  <Cancel>Abbrechen</Cancel>
   <!-- EN: hair -->
   <Hair>Frisur</Hair>
   <!-- EN: beard -->
@@ -236,14 +238,8 @@
   <EditAppearanceItems>Aussehen bearbeiten</EditAppearanceItems>
   <!-- EN: {0} in use -->
   <NumAvailable>{0} in Verwendung</NumAvailable>
-  <!-- EN: Expand all -->
-  <ExpandAllCategories>Alles ausklappen</ExpandAllCategories>
-  <!-- EN: Collapse all -->
-  <CollapseAllCategories>Alles einklappen</CollapseAllCategories>
   <!-- EN: Resets all style items to their default values. -->
   <ResetButtonDesc>Setze alle Style-Elemente auf ihre Standardwerte zurück.</ResetButtonDesc>
-  <!-- EN: Dye can be farmed from tinctoria or purchased from traders. -->
-  <TooltipDyeExplanation>Farbstoffe können von Tinktoria-Pflanzen geerntet oder von Händlern gekauft werden.</TooltipDyeExplanation>
 
   <!-- Ancient complex mission -->
   <!-- EN: Send shuttle anyway -->
@@ -312,7 +308,7 @@
   <SoldColonyDescription>Deine Kolonie wurde verkauft. Die Käufer warten auf deine Entscheidung, wo du als Nächstes landen willst.</SoldColonyDescription>
 
   <!-- EN: Hacking this {0} will alert enemies and cause them to attack. Do really want to hack {0}? -->
-  <ConfirmHackEnenyTerminal>Wenn du {0_gender ? diesen : diese : dieses} {lookup: {0}; Singular; 4} hackst, werden Feinde alarmiert, die dich angreifen werden. Willst du {0_gender ? den : die : das} {lookup: {0}; Singular; 4} wirklich hacken?</ConfirmHackEnenyTerminal>
+  <ConfirmHackEnenyTerminal>Wenn du {0_gender ? diesen : diese : dieses} {lookup: {0}; decline; 7} hackst, werden Feinde alarmiert, die dich angreifen werden. Willst du {0_gender ? den : die : das} {lookup: {0}; decline; 7} wirklich hacken?</ConfirmHackEnenyTerminal>
 
   <!-- EN: Relics -->
   <RelicsSection>Reliquien</RelicsSection>
@@ -326,4 +322,9 @@
   <FoodRestrictionCannibal>Kannibale</FoodRestrictionCannibal>
   <!-- EN: Insect meat -->
   <FoodRestrictionInsectMeat>Insektenfleisch</FoodRestrictionInsectMeat>
+
+  <!-- EN: Styles in use -->
+  <StylesInUse>Verwendete Stile</StylesInUse>
+  <!-- EN: Add a style. -->
+  <StyleCategoryAddDesc>Füge einen Stil hinzu.</StyleCategoryAddDesc>
 </LanguageData>

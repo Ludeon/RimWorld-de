@@ -45,6 +45,8 @@
   <CannotAttackSelf>kann nicht sich selbst angreifen</CannotAttackSelf>
   <!-- EN: cannot attack faction ally -->
   <CannotAttackSameFactionMember>kann Fraktionsverbündeten nicht angreifen</CannotAttackSameFactionMember>
+  <!-- EN: Incapable of firefighting. -->
+  <IncapableOfFirefighting>Verweigert Feuerwehr.</IncapableOfFirefighting>
 
   <!-- EN: Man {1_labelShort} -->
   <OrderManThing>Bemanne {1_labelShort}</OrderManThing>
@@ -74,8 +76,10 @@
   <NoMergeTarget>kein Stapel zum Hinzufügen verfügbar</NoMergeTarget>
   <!-- EN: already filled enough -->
   <AlreadyFilledLower>bereits genug aufgefüllt</AlreadyFilledLower>
-  <!-- EN: need material -->
-  <MissingMaterials>brauche Material</MissingMaterials>
+  <!-- EN: missing {0} -->
+  <MissingMaterials>brauche {0}</MissingMaterials>
+  <!-- EN: No medicine for restriction '{CATEGORY}'. -->
+  <NoMedicineMatchingCategory>Keine Medizin für Pflegemodus '{CATEGORY}'</NoMedicineMatchingCategory>
   <!-- EN: under required skill {0} -->
   <UnderRequiredSkill>unter Mindeststufe {0}</UnderRequiredSkill>
   <!-- EN: under allowed skill {0} -->
@@ -85,19 +89,23 @@
   <!-- EN: no reachable outside cell -->
   <NoReachableOutsideCell>keine Außenzelle erreichbar</NoReachableOutsideCell>
   <!-- EN: missing required skill level -->
-  <MissingRequiredSkillLevel>notwendige Fähigkeitsstufe fehlt</MissingRequiredSkillLevel>
+  <MissingRequiredSkillLevel>notwendige Fertigkeitsstufe fehlt</MissingRequiredSkillLevel>
   <!-- EN: animal interacted too recently -->
   <AnimalInteractedTooRecently>Tierinteraktion fand kürzlich statt</AnimalInteractedTooRecently>
+  <!-- EN: interacted with too recently -->
+  <PrisonerInteractedTooRecently>Interaktion fand kürzlich statt</PrisonerInteractedTooRecently>
   <!-- EN: no usable food -->
   <NoUsableFood>keine nutzbare Nahrung</NoUsableFood>
   <!-- EN: no food -->
   <NoFood>keine Nahrung</NoFood>
+  <!-- EN: no food matching restrictions -->
+  <NoFoodMatchingRestrictions>keine Nahrung gemäß Ernährungsplan</NoFoodMatchingRestrictions>
   <!-- EN: No {0_label} -->
   <NoIngredient>Brauche {0_label}</NoIngredient>
   <!-- EN: below requirements of {0} -->
   <FoodBelowTitleRequirements>unterhalb der Anforderungen von {0}</FoodBelowTitleRequirements>
   <!-- EN: animals skill too low - need {0} -->
-  <AnimalsSkillTooLow>Tiere-Fähigkeit zu niedrig - benötige {0}</AnimalsSkillTooLow>
+  <AnimalsSkillTooLow>Tiere-Fertigkeit zu niedrig - benötige {0}</AnimalsSkillTooLow>
   <!-- EN: animal downed -->
   <CantInteractAnimalDowned>Tier liegt am Boden</CantInteractAnimalDowned>
   <!-- EN: animal sleeping -->
@@ -121,7 +129,7 @@
   <!-- EN: already in best pen -->
   <CantRopeAnimalAlreadyInBestPen>bereits im besten Gehege</CantRopeAnimalAlreadyInBestPen>
   <!-- EN: {0} skill too low -->
-  <SkillTooLowForConstruction>{0}-Fähigkeit zu niedrig</SkillTooLowForConstruction>
+  <SkillTooLowForConstruction>{0}-Fertigkeit zu niedrig</SkillTooLowForConstruction>
   <!-- EN: need components -->
   <NoComponentsToRepair>benötige Bauteile</NoComponentsToRepair>
   <!-- EN: need {0} -->
@@ -141,7 +149,7 @@
   <!-- EN: not ready for surgery -->
   <NotSurgeryReady>nicht bereit für Operation</NotSurgeryReady>
   <!-- EN: skill incapable -->
-  <SkillDisabled>Fähigkeit gesperrt</SkillDisabled>
+  <SkillDisabled>Fertigkeit gesperrt</SkillDisabled>
   <!-- EN: too bright -->
   <CantSowCavePlantBecauseOfLight>zu hell</CantSowCavePlantBecauseOfLight>
   <!-- EN: unroofed -->
@@ -158,14 +166,22 @@
   <InstallImplantNotAllowedForNonColonists>kein Kolonist</InstallImplantNotAllowedForNonColonists>
   <!-- EN: already installed -->
   <InstallImplantAlreadyInstalled>bereits implantiert</InstallImplantAlreadyInstalled>
+  <!-- EN: requires an existing {0} -->
+  <InstallImplantHediffRequired>setzt {0} voraus</InstallImplantHediffRequired>
   <!-- EN: max level -->
   <InstallImplantAlreadyMaxLevel>Maximalstufe</InstallImplantAlreadyMaxLevel>
+  <!-- EN: psychically deaf -->
+  <InstallImplantPsychicallyDeaf>mental taub</InstallImplantPsychicallyDeaf>
   <!-- EN: Upgrade {0} to level {1} -->
   <UpgradeImplant>Steigere {0} auf Stufe {1}</UpgradeImplant>
   <!-- EN: violation of faction ally -->
   <SurgeryViolationFellowFactionMember>Verletzung eines Fraktionsverbündeten</SurgeryViolationFellowFactionMember>
   <!-- EN: being carried by {0_labelShort} -->
   <BeingCarriedBy>wird getragen von {0_labelShort}</BeingCarriedBy>
+  <!-- EN: full -->
+  <ContainerFull>voll</ContainerFull>
+  <!-- EN: already assigned -->
+  <AlreadyAssigned>bereits zugewiesen</AlreadyAssigned>
   
   <!-- EN: Consume {1_labelShort} -->
   <ConsumeThing>Konsumiere {1_labelShort}</ConsumeThing>
@@ -188,9 +204,15 @@
   <Capture>Fange {1_label} ein</Capture>
   <!-- EN: Cannot capture -->
   <CannotCapture>Kann nicht einfangen</CannotCapture>
+  <!-- EN: unwaveringly loyal -->
+  <Unrecruitable>absolut loyal</Unrecruitable>
 
   <!-- EN: Rescue {1_label} -->
   <Rescue>Rette {1_label}</Rescue>
+  <!-- EN: Put {1_label} somewhere safe -->
+  <PutSomewhereSafe>Lege {1_label} an einen sicheren Ort</PutSomewhereSafe>
+  <!-- EN: Taking {0_labelShort} to bed. -->
+  <TakingToBed>Bringt {0_labelShort} ins Bett.</TakingToBed>
   <!-- EN: Cannot rescue -->
   <CannotRescue>Kann nicht retten</CannotRescue>
 
@@ -231,6 +253,8 @@
   <Incapable>unfähig</Incapable>
   <!-- EN: incapable of {0} -->
   <IncapableOfCapacity>unfähig für {0}</IncapableOfCapacity>
+  <!-- EN: Must have {0_label} -->
+  <MustHaveHediff>muss {0_label} haben</MustHaveHediff>
 
   <!-- EN: min skill -->
   <MinSkill>Mindeststufe</MinSkill>
@@ -261,13 +285,15 @@
   <ReloadFull>Voll</ReloadFull>
   <!-- EN: Too few -->
   <ReloadNotEnough>Zu wenig</ReloadNotEnough>
+  <!-- EN: Cannot carry enough {AMMO_label} to reload 1 charge. -->
+  <ReloadCannotCarryEnough>Kann nicht genug {AMMO_label} tragen, um 1 Ladung nachzuladen.</ReloadCannotCarryEnough>
   
-  <!-- EN: Cannot pick up {1_label} -->
-  <CannotPickUp>Kann {1_label} nicht aufheben</CannotPickUp>
+  <!-- EN: Cannot pick up {1_labelShort} -->
+  <CannotPickUp>Kann {1_labelShort} nicht aufheben</CannotPickUp>
   <!-- EN: Cannot pick up {1_label} (all) -->
   <CannotPickUpAll>Kann {1_label} (alles) nicht aufheben</CannotPickUpAll>
-  <!-- EN: Pick up {1_label} -->
-  <PickUp>Hebe {1_label} auf</PickUp>
+  <!-- EN: Pick up {1_labelShort} x1 -->
+  <PickUpOne>Hebe {1_labelShort} x1 auf</PickUpOne>
   <!-- EN: Pick up {1_label} (all) -->
   <PickUpAll>Hebe {1_label} (alles) auf</PickUpAll>
   <!-- EN: Pick up {1_labelShort}... -->
@@ -347,7 +373,7 @@
   <!-- EN: not injured -->
   <NotInjured>nicht verletzt</NotInjured>
   <!-- EN: occupied by {0} -->
-  <SomeoneElseSleeping>belegt von {0}</SomeoneElseSleeping>
+  <SomeoneElseSleeping>Belegt von {0}</SomeoneElseSleeping>
   
   <!-- EN: Trade with {0} -->
   <TradeWith>Handle mit {0}</TradeWith>
@@ -360,23 +386,23 @@
   <CannotOpen>Kann {0_label} nicht öffnen</CannotOpen>
   
   <!-- EN: Enter {0} -->
-  <EnterMap>Betritt {lookup: {0}; Singular; 3}</EnterMap>
+  <EnterMap>Betritt {lookup: {0}; decline; 3}</EnterMap>
   <!-- EN: Visit {0} -->
-  <VisitSettlement>Besuche {lookup: {0}; Singular; 3}</VisitSettlement>
+  <VisitSettlement>Besuche {lookup: {0}; decline; 3}</VisitSettlement>
   <!-- EN: Visit {0} -->
-  <VisitPeaceTalks>Besuche {lookup: {0}; Singular; 3}</VisitPeaceTalks>
+  <VisitPeaceTalks>Besuche {lookup: {0}; decline; 3}</VisitPeaceTalks>
   <!-- EN: Visit {0} -->
-  <VisitEscapeShip>Besuche {lookup: {0}; Singular; 3}</VisitEscapeShip>
+  <VisitEscapeShip>Besuche {lookup: {0}; decline; 3}</VisitEscapeShip>
   <!-- EN: Attack {0} -->
-  <AttackSettlement>Greife {lookup: {0}; Singular; 3} an</AttackSettlement>
+  <AttackSettlement>Greife {lookup: {0}; decline; 3} an</AttackSettlement>
   <!-- EN: Approach {0} -->
-  <ApproachSite>Gehe zu {lookup: {0}; Singular; 3}</ApproachSite>
+  <ApproachSite>Gehe zu {lookup: {0}; decline; 3}</ApproachSite>
   <!-- EN: Approaching {0} -->
-  <ApproachingSite>Gehe zu {lookup: {0}; Singular; 3}</ApproachingSite>
+  <ApproachingSite>Gehe zu {lookup: {0}; decline; 3}</ApproachingSite>
   <!-- EN: Offer gifts -->
   <OfferGifts>Biete Geschenke an</OfferGifts>
   <!-- EN: Trade with {0} -->
-  <TradeWithSettlement>Handle mit {lookup: {0}; Singular; 3}</TradeWithSettlement>
+  <TradeWithSettlement>Handle mit {lookup: {0}; decline; 2}</TradeWithSettlement>
 
   <!-- Specific thing interactions -->
   <!-- EN: Enter cryptosleep casket -->
@@ -518,5 +544,14 @@
   <RepairThing>Repariere {0_label}</RepairThing>
   <!-- EN: Cannot repair {0} -->
   <CannotRepair>Kann {0_label} nicht reparieren</CannotRepair>
-  
+
+  <!-- EN: Cannot enter -->
+  <CannotEnter>Kann nicht betreten</CannotEnter>
+
+  <!-- Romance partner -->
+  <!-- EN: Cannot romance {0} -->
+  <CannotRomance>Kann {replace: {replace: {0}; "("-"nicht umwerben: "}; ")"-""}</CannotRomance>
+  <!-- EN: Romance {0} -->
+  <CanRomance>Umwirb {0}</CanRomance>
+
 </LanguageData>

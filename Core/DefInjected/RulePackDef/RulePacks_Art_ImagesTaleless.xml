@@ -67,7 +67,8 @@
     <li>image(p=0.33)->einer [CharacterFemDat], die [desc_pawn], während sie [eine_Kleidung] trägt</li>
     <li>image(p=0.33)->einem [CharacterNeuDat], das [desc_pawn], während es [eine_Kleidung] trägt</li>
     <!-- terrain -->
-    <li>image->einer [Community]</li>
+    <li>image(p=0.5)->einer [CommunityFem]</li>
+    <li>image(p=0.5)->einem [CommunityNeu]</li>
     <li>image(p=0.33)->einem [TerrainFeatureMas]</li>
     <li>image(p=0.33)->einer [TerrainFeatureFem]</li>
     <li>image(p=0.33)->einem [TerrainFeatureNeu]</li>
@@ -90,7 +91,7 @@
     <li>image(p=0.33)->einem [ShapeNeu]</li>
     <li>image(p=0.33)->einem [ShapeMas], der von [ShapePluralDat] umgeben ist</li>
     <li>image(p=0.33)->einer [ShapeFem], die von [ShapePluralDat] umgeben ist</li>
-    <li>image(p=0.33)->einem [ShapeFem], das von [ShapePluralDat] umgeben ist</li>
+    <li>image(p=0.33)->einem [ShapeNeu], das von [ShapePluralDat] umgeben ist</li>
     <li>image->einer abstrakten Darstellung von [ConceptAny]</li>
     <li>image->einer [AdjectiveAny]en, abstrakten Figur</li>
     <li>desc_pawn->durch die Luft fliegt</li>
@@ -109,7 +110,6 @@
     <li>eines_Gebietes->eines [TerrainFeatureMasGen]</li>
     <li>eines_Gebietes->einer [TerrainFeatureFemGen]</li>
     <li>eines_Gebietes->eines [TerrainFeatureNeuGen]</li>
-    <li>eines_Dorfes->eines [CommunityMasGen]</li>
     <li>eines_Dorfes->einer [CommunityFemGen]</li>
     <li>eines_Dorfes->eines [CommunityNeuGen]</li>
     <li>eine_Waffe->einen [WeaponMas]</li>

@@ -7,7 +7,7 @@
   <AimingDelayFactor.description>Wie lange es dauert, ein Ziel anzuvisieren, bevor geschossen werden kann.</AimingDelayFactor.description>
   
   <!-- EN: incoming damage multiplier -->
-  <IncomingDamageFactor.label>Eingehender-Schaden-Multiplikator</IncomingDamageFactor.label>
+  <IncomingDamageFactor.label>Eingehender-Schaden-Faktor</IncomingDamageFactor.label>
   <!-- EN: A multiplier on all incoming damage. -->
   <IncomingDamageFactor.description>Ein Multiplikator auf den eingehenden Schaden aus allen Quellen.</IncomingDamageFactor.description>
   
@@ -22,9 +22,9 @@
   <MeleeDodgeChance.description>Die Chance, einem Treffer auszuweichen, der sonst getroffen hätte.\n\nCharaktere weichen nicht aus, während sie mit einer Fernkampfwaffe zielen oder feuern.</MeleeDodgeChance.description>
   
   <!-- EN: melee DPS -->
-  <MeleeDPS.label>Nahkampf DPS</MeleeDPS.label>
+  <MeleeDPS.label>Nahkampfschaden pro Sekunde</MeleeDPS.label>
   <!-- EN: Average damage per second in melee combat.\n\nThis stat ignores target defenses like dodging and armor. -->
-  <MeleeDPS.description>Durchschnittlicher Nahkampfschaden pro Sekunde.\n\nAbwehrmaßnahmen des Ziels wie Ausweichen und Panzerung werden ignoriert.</MeleeDPS.description>
+  <MeleeDPS.description>Durchschnittlicher Nahkampfschaden pro Sekunde (DPS).\n\nAbwehrmaßnahmen des Ziels wie Ausweichen und Panzerung werden ignoriert.</MeleeDPS.description>
   
   <!-- EN: melee hit chance -->
   <MeleeHitChance.label>Nahkampftrefferchance</MeleeHitChance.label>
@@ -32,22 +32,42 @@
   <MeleeHitChance.description>Die Chance, das Ziel im Nahkampf zu treffen.\n\nDas Ziel kann immer noch ausweichen, selbst wenn wir getroffen hätten.</MeleeHitChance.description>
   
   <!-- EN: Mortar miss radius multiplier -->
-  <MortarMissRadiusFactor.label>Mörser-Verfehlradius-Multiplikator</MortarMissRadiusFactor.label>
+  <MortarMissRadiusFactor.label>Mörser-Verfehlradius-Faktor</MortarMissRadiusFactor.label>
   <!-- EN: A multiplier on the miss radius of a mortar used by this person. Smaller numbers means more accurate mortar shells. -->
   <MortarMissRadiusFactor.description>Ein Multiplikator auf den Verfehlradius eines Mörsers, der von dieser Person verwendet wird. Je kleiner die Zahl, desto genauer sind die Mörsergranaten.</MortarMissRadiusFactor.description>
   <!-- EN: Mortar miss radius multiplier -->
-  <MortarMissRadiusFactor.labelForFullStatList>Mörser-Verfehlradius-Multiplikator</MortarMissRadiusFactor.labelForFullStatList>
+  <MortarMissRadiusFactor.labelForFullStatList>Mörser-Verfehlradius-Faktor</MortarMissRadiusFactor.labelForFullStatList>
   
   <!-- EN: trap spring chance -->
   <PawnTrapSpringChance.label>Fallenauslösungschance</PawnTrapSpringChance.label>
   <!-- EN: Chance to spring a trap the character is unaware of. -->
   <PawnTrapSpringChance.description>Die Chance, dass die Falle von einer unachtsamen Kreatur ausgelöst wird.</PawnTrapSpringChance.description>
   
+  <!-- EN: accuracy factor (long) -->
+  <ShootingAccuracyFactor_Long.label>Genauigkeitsfaktor (lang)</ShootingAccuracyFactor_Long.label>
+  <!-- EN: A multiplier on accuracy at a distance of 40 cells or more. -->
+  <ShootingAccuracyFactor_Long.description>Ein Multiplikator auf die Genauigkeit bei einer Distanz von 40 Zellen oder mehr.</ShootingAccuracyFactor_Long.description>
+  
+  <!-- EN: accuracy factor (medium) -->
+  <ShootingAccuracyFactor_Medium.label>Genauigkeitsfaktor (mittel)</ShootingAccuracyFactor_Medium.label>
+  <!-- EN: A multiplier on accuracy at a distance of 25 cells. -->
+  <ShootingAccuracyFactor_Medium.description>Ein Multiplikator auf die Genauigkeit bei einer Distanz von 25 Zellen oder mehr.</ShootingAccuracyFactor_Medium.description>
+  
+  <!-- EN: accuracy factor (short) -->
+  <ShootingAccuracyFactor_Short.label>Genauigkeitsfaktor (kurz)</ShootingAccuracyFactor_Short.label>
+  <!-- EN: A multiplier on accuracy at a distance of 12 cells. -->
+  <ShootingAccuracyFactor_Short.description>Ein Multiplikator auf die Genauigkeit bei einer Distanz von 12 Zellen oder mehr.</ShootingAccuracyFactor_Short.description>
+  
+  <!-- EN: accuracy factor (close) -->
+  <ShootingAccuracyFactor_Touch.label>Genauigkeitsfaktor (nah)</ShootingAccuracyFactor_Touch.label>
+  <!-- EN: A multiplier on accuracy at a distance of 3 cells or less. -->
+  <ShootingAccuracyFactor_Touch.description>Ein Multiplikator auf die Genauigkeit bei einer Distanz von 3 Zellen oder mehr.</ShootingAccuracyFactor_Touch.description>
+  
   <!-- EN: shooting accuracy -->
   <ShootingAccuracyPawn.label>Fernkampfgenauigkeit</ShootingAccuracyPawn.label>
   <!-- EN: Base chance to not miss per cell of shot distance.\n\nChance to hit is also affected by many other factors.\n\nA hit chance explanation for any shot can be seen by selecting a shooter and mousing over a target. -->
   <ShootingAccuracyPawn.description>Grundlegende Trefferchance pro Zelle entlang der Schussbahn.\n\nDie Trefferchance ist noch von vielen anderen Faktoren abhängig.\n\nUm genauere Informationen zur Trefferchance zu erhalten, wähle einen Schützen aus und bewege den Mauszeiger auf das Ziel.</ShootingAccuracyPawn.description>
   <!-- EN: shooting accuracy (people) -->
-  <ShootingAccuracyPawn.labelForFullStatList>Fernkampfgenauigkeit (Personen)</ShootingAccuracyPawn.labelForFullStatList>
+  <ShootingAccuracyPawn.labelForFullStatList>Fernkampfgenauigkeit (Person)</ShootingAccuracyPawn.labelForFullStatList>
   
 </LanguageData>

@@ -32,18 +32,15 @@
     <li>deflecting->glancing</li>
   -->
   <Combat_Deflect.rulePack.rulesStrings>
-    <li>r_logentry(p=0.5)->[INITIATOR_label] [damaged_past] [RECIPIENT_label] in [damaged_targets] [deflected_result].</li>
-    <li>r_logentry(p=0.3)->[bodypart] [damaged_past] [RECIPIENT_label] [skillAdvMaybe] mit [implement] [deflected_result].</li>
-    <li>r_logentry(p=0.3)->[INITIATOR_label] [damaged_past] [RECIPIENT_label] [skillAdvMaybe] [deflected_result].</li>
-    <li>r_logentry(p=0.1)->[INITIATOR_label], [skillDescMelee], [damaged_past] [RECIPIENT_label] in [bodypart] [deflected_result].</li>
-    <li>r_logentry(p=0.1)->[INITIATOR_label] traf [RECIPIENT_label] mit [implement] [deflected_result].</li>
-    <li>r_logentry(p=0.1)->[INITIATOR_label] machte [skillAdvMaybe] von [implement] Gebrauch, um [RECIPIENT_label] zu [damaged_inf] [deflected_result].</li>
-    <li>bodypart(recipient_part0_gender!=Male)->[recipient_part0_definite]</li>
-    <li>bodypart(recipient_part0_gender==Male)->den [recipient_part0_label]</li>
+    <li>r_logentry(p=0.5)->[INITIATOR_definite] [damaged_past] [RECIPIENT_label_s] {replace: [recipient_part0_label]; "er "-"en "} [deflected_result].</li>
+    <li>r_logentry(p=0.3)->[INITIATOR_definite] [damaged_past] [RECIPIENT_nameDefAcc] [skillAdvMaybe] mit [implement_dat] [deflected_result].</li>
+    <li>r_logentry(p=0.3)->[INITIATOR_definite] [damaged_past] [RECIPIENT_nameDefAcc] [skillAdvMaybe] [deflected_result].</li>
+    <li>r_logentry(p=0.1)->[INITIATOR_definite], [skillDescMelee], [damaged_past] [RECIPIENT_label_s] {replace: [recipient_part0_label]; "er "-"en "} [deflected_result].</li>
+    <li>r_logentry(p=0.1)->[INITIATOR_definite] traf [RECIPIENT_nameDefAcc] mit [implement_dat] [deflected_result].</li>
+    <li>r_logentry(p=0.1)->[INITIATOR_definite] benutzte [skillAdvMaybe] [implement_acc], um [RECIPIENT_nameDefAcc] zu [damaged_inf] [deflected_result].</li>
     <li>skillAdvMaybe-></li>
     <li>skillAdvMaybe->[skillAdv]</li>
     <li>deflected_result->, aber [tool] [deflected]</li>
-    <li>deflected_result->, aber [tool] [deflecting]</li>
     <li>tool->[TOOL_definite]</li>
     <li>tool(TOOL_label==)->der Angriff</li>
     <li>harmlessly_opt(p=4)-></li>
@@ -51,17 +48,13 @@
     <li>harmlessly->völlig</li>
     <li>harmlessly->mühelos</li>
     <li>deflected->wurde [harmlessly_opt] abgewehrt</li>
+    <li>deflected->wurde [harmlessly_opt] von [RECIPIENT_possessive]er Rüstung abgewehrt</li>
     <li>deflected->schrammte [harmlessly_opt] vorbei</li>
+    <li>deflected->schrammte [harmlessly_opt] an [RECIPIENT_possessive]er Rüstung vorbei</li>
     <li>deflected->rutschte [harmlessly_opt] ab</li>
-    <li>deflected->blieb [harmlessly_opt] hängen</li>
+    <li>deflected->rutschte [harmlessly_opt] an [RECIPIENT_possessive]er Rüstung ab</li>
     <li>deflected->prallte [harmlessly_opt] ab</li>
-    <li>deflected->wurde [harmlessly_opt] in eine andere Richtung gelenkt</li>
-    <li>deflecting->wurde [harmlessly_opt] von [RECIPIENT_possessive]er Rüstung abgewehrt</li>
-    <li>deflecting->schrammte [harmlessly_opt] an [RECIPIENT_possessive]er Rüstung vorbei</li>
-    <li>deflecting->rutschte [harmlessly_opt] von [RECIPIENT_possessive]er Rüstung ab</li>
-    <li>deflecting->blieb [harmlessly_opt] hängen</li>
-    <li>deflecting->prallte [harmlessly_opt] von [RECIPIENT_possessive]er Rüstung ab</li>
-    <li>deflecting->wurde [harmlessly_opt] von [RECIPIENT_possessive]er Rüstung in eine andere Richtung gelenkt</li>
+    <li>deflected->prallte [harmlessly_opt] gegen [RECIPIENT_possessive]e Rüstung</li>
   </Combat_Deflect.rulePack.rulesStrings>
   
   <!-- EN:
@@ -74,11 +67,13 @@
     <li>result->but the attack was cleverly avoided</li>
   -->
   <Combat_Dodge.rulePack.rulesStrings>
-    <li>r_logentry(p=0.2)->[INITIATOR_label] attackierte mit [implement], aber [RECIPIENT_label] konnte diesen Angriff [skillAdvMaybe] ausweichen.</li>
-    <li>r_logentry(p=0.2)->[RECIPIENT_label] konnte den Angriff von [INITIATOR_label] ausweichen.</li>
-    <li>result->aber [RECIPIENT_label] sprang zur Seite</li>
-    <li>result->aber wurde durch eine Finte von [RECIPIENT_label] getäuscht</li>
-    <li>result->aber [RECIPIENT_label] konnte den Angriff geschickt ausweichen</li>
+    <li>r_logentry(p=0.5)->[RECIPIENT_definite] wich [skillAdvMaybe] [INITIATOR_label_s] [damaged_adj]e [WEAPON_label]-Attacke aus.</li>
+    <li>r_logentry(p=0.5)->[RECIPIENT_definite] wich [skillAdvMaybe] [INITIATOR_label_s] [damaged_type] aus.</li>
+    <li>skillAdvMaybe-></li>
+    <li>skillAdvMaybe->[skillAdv]</li>
+    <li>result->aber [RECIPIENT_definite] sprang zur Seite</li>
+    <li>result->aber wurde durch [RECIPIENT_label_s] Finte getäuscht</li>
+    <li>result->aber [RECIPIENT_definite] konnte den Angriff geschickt ausweichen</li>
   </Combat_Dodge.rulePack.rulesStrings>
   
   <!-- EN:
@@ -104,30 +99,26 @@
     <li>action(p=0.3)->[INITIATOR_definite] used [implement] [skillAdv] to [damaged_inf] [RECIPIENT_definite]</li>
   -->
   <Combat_Hit.rulePack.rulesStrings>
-    <li>r_logentry(p=1.0)->[INITIATOR_label] [damaged_past] [RECIPIENT_label], dabei kam [dessen] [recipient_part0_label] zu Schaden.</li>
-    <li>r_logentry(p=0.4)->[INITIATOR_label] [damaged_past] [RECIPIENT_label] [strikeAdv], dabei kam [dessen] [recipient_part0_label] zu Schaden.</li>
-    <li>r_logentry(p=0.4)->[INITIATOR_label] [damaged_past] [RECIPIENT_label], dabei kam [dessen] [recipient_part0_label] zu Schaden. Dieser Angriff [flavortext_consequence].</li>
-    <li>r_logentry(p=0.4)->[INITIATOR_label], [skillDescMelee], [damaged_past] [RECIPIENT_label], dabei kam [dessen] [recipient_part0_label] zu Schaden.</li>
-    <li>r_logentry(p=0.2)->[INITIATOR_label], [skillDescMelee], [damaged_past] [RECIPIENT_label] [strikeAdv], dabei kam [dessen] [recipient_part0_label] zu Schaden.</li>
-    <li>r_logentry(p=0.4)->[INITIATOR_label] [destroyed_past] [RECIPIENT_label]s [destroyed_targets].</li>
-    <li>r_logentry(p=0.4)->[INITIATOR_label] [destroyed_past] [RECIPIENT_label]s [destroyed_targets] [destroyed_suffix].</li>
-    <li>r_logentry(p=0.4)->[INITIATOR_label] [destroyed_past] mit [implement] [RECIPIENT_label]s [destroyed_targets].</li>
-    <li>r_logentry(p=1,recipient_part_count==0)->[INITIATOR_label] [damaged_past] [RECIPIENT_label] mit [implement].</li>
-    <li>r_logentry(p=0.4,recipient_part_count==0)->[INITIATOR_label] [damaged_past] [RECIPIENT_label] [skillAdv] mit [implement].</li>
-    <li>result(p=1,recipient_part_damaged_count==0,recipient_part_destroyed_count==1)->dabei wurde [dessen] [destroyed_targets] [was_destroyed]</li>
-    <li>result(p=1,recipient_part_damaged_count==0,recipient_part_destroyed_count>1)->dabei wurden [dessen] [destroyed_targets] [was_destroyed]</li>
-    <li>result(p=1,recipient_part_destroyed_count==0,recipient_part_damaged_count==1)->dabei wurde [dessen] [damaged_targets] [was_damaged]</li>
-    <li>result(p=1,recipient_part_destroyed_count==0,recipient_part_damaged_count>1)->dabei wurden [dessen] [damaged_targets] [was_damaged]</li>
-    <li>result(p=1)->dabei wurden [dessen] [destroyed_targets] [was_destroyed], sowie [dessen] [damaged_targets] [was_damaged]</li>
-    <li>action(p=1.0)->[INITIATOR_label] [damaged_past] [RECIPIENT_label] mit [implement]</li>
-    <li>action(p=0.3)->[INITIATOR_label] [damaged_past] [RECIPIENT_label]</li>
-    <li>action(p=0.3)->[INITIATOR_label], [skillDescMelee], [damaged_past] [RECIPIENT_label]</li>
-    <li>action(p=0.3)->[INITIATOR_label] traf [RECIPIENT_label] mit [implement]</li>
-    <li>action(p=0.3)->[INITIATOR_label], [skillDescMelee], traf [RECIPIENT_label] mit [implement]</li>
-    <li>action(p=0.3)->[INITIATOR_label] machte von [implement] Gebrauch, um [RECIPIENT_label] zu [damaged_inf]</li>
-    <li>action(p=0.3)->[INITIATOR_label] machte [skillAdv] von [implement] Gebrauch, um [RECIPIENT_label] zu [damaged_inf]</li>
-    <li>dessen(RECIPIENT_gender!=Female)->dessen</li>
-    <li>dessen(RECIPIENT_gender==Female)->deren</li>
+    <li>r_logentry(p=1.0)->[INITIATOR_definite] [damaged_past] [RECIPIENT_label_s] {replace: [recipient_part0_label]; "er "-"en "}.</li>
+    <li>r_logentry(p=0.4)->[INITIATOR_definite] [damaged_past] [strikeAdv] [RECIPIENT_label_s] {replace: [recipient_part0_label]; "er "-"en "}.</li>
+    <li>r_logentry(p=0.4)->[INITIATOR_definite] [damaged_past] [RECIPIENT_label_s] {replace: [recipient_part0_label]; "er "-"en "}, was [flavortext_consequence].</li>
+    <li>r_logentry(p=0.4)->[INITIATOR_definite], [skillDescMelee], [damaged_past] [RECIPIENT_label_s] {replace: [recipient_part0_label]; "er "-"en "}.</li>
+    <li>r_logentry(p=0.2)->[INITIATOR_definite], [skillDescMelee], [damaged_past] [strikeAdv] [RECIPIENT_label_s] {replace: [recipient_part0_label]; "er "-"en "}.</li>
+    <li>r_logentry(p=0.4)->[INITIATOR_definite] [destroyed_past] [RECIPIENT_label_s] [destroyed_targets_acc].</li>
+    <li>r_logentry(p=0.4)->[INITIATOR_definite] [destroyed_past] [RECIPIENT_label_s] [destroyed_targets_acc] [destroyed_suffix].</li>
+    <li>r_logentry(p=0.4)->[INITIATOR_definite] [destroyed_past] mit [implement] [RECIPIENT_label_s] [destroyed_targets_acc].</li>
+    <li>r_logentry(p=1,recipient_part_count==0)->[INITIATOR_definite] [damaged_past] [RECIPIENT_nameDefAcc] mit [implement].</li>
+    <li>r_logentry(p=0.4,recipient_part_count==0)->[INITIATOR_definite] [damaged_past] [RECIPIENT_nameDefAcc] [skillAdvMaybe] mit [implement].</li>
+    <li>result(p=1,recipient_part_damaged_count==0)->und [destroyed_past] dabei [recipient_part_destroyed0_possessive_acc] [destroyed_targets_acc]</li>
+    <li>result(p=1,recipient_part_destroyed_count==0)->und [damaged] dabei [recipient_part_damaged0_possessive_acc] [damaged_targets_acc]</li>
+    <li>result(p=1)->und [destroyed_past] dabei [recipient_part_destroyed0_possessive_acc] [destroyed_targets_acc], und [damaged] dabei [recipient_part_damaged0_possessive_acc] [damaged_targets_acc]</li>
+    <li>action(p=1.0)->[INITIATOR_definite] [damaged_past] [RECIPIENT_nameDefAcc] mit [implement_dat]</li>
+    <li>action(p=0.3)->[INITIATOR_definite] [damaged_past] [RECIPIENT_nameDefAcc]</li>
+    <li>action(p=0.3)->[INITIATOR_definite], [skillDescMelee], [damaged_past] [RECIPIENT_nameDefAcc]</li>
+    <li>action(p=0.3)->[INITIATOR_definite] benutzte [implement_acc], um [RECIPIENT_nameDefAcc] zu [damaged_inf]</li>
+    <li>action(p=0.3)->[INITIATOR_definite] benutzte [skillAdvMaybe] [implement_acc], um [RECIPIENT_nameDefAcc] zu [damaged_inf]</li>
+    <li>skillAdvMaybe-></li>
+    <li>skillAdvMaybe->[skillAdv]</li>
   </Combat_Hit.rulePack.rulesStrings>
   
   <!-- EN:
@@ -150,19 +141,20 @@
     <li>result(initiator_flesh!=Mechanoid)->but hesitated at the last second</li>
   -->
   <Combat_Miss.rulePack.rulesStrings>
-    <li>r_logentry(p=0.2)->[RECIPIENT_label] wich [INITIATOR_label]s [WEAPON_label]-Attacke aus.</li>
-    <li>r_logentry(p=0.2)->[INITIATOR_label] verfehlte [RECIPIENT_label] mit [implement].</li>
-    <li>r_logentry(p=0.2)->[INITIATOR_label] [failtype] bei dem Versuch, [RECIPIENT_label] mit [implement] zu [damaged_inf].</li>
-    <li>r_logentry(p=0.2)->[INITIATOR_label] [failtype] bei dem Versuch, [RECIPIENT_label] zu [damaged_inf].</li>
-    <li>r_logentry(p=0.2)->[INITIATOR_label] [failtype].</li>
+    <li>r_logentry(p=0.3)->[INITIATOR_definite] verfehlte [RECIPIENT_nameDefAcc] mit [implement_dat].</li>
+    <li>r_logentry(p=0.3)->[INITIATOR_definite] [failtype] bei dem Versuch, [RECIPIENT_nameDefAcc] mit [implement_dat] zu [damaged_inf].</li>
+    <li>r_logentry(p=0.3)->[INITIATOR_definite] [failtype] bei dem Versuch, [RECIPIENT_nameDefAcc] zu [damaged_inf].</li>
+    <li>r_logentry(p=0.3)->[INITIATOR_definite] versuchte, [RECIPIENT_nameDefAcc] [skillAdvMaybe] zu [damaged_inf], aber [failtype].</li>
+    <li>skillAdvMaybe-></li>
+    <li>skillAdvMaybe->[skillAdv]</li>
+    <li>failtype(p=5)->verfehlte</li>
     <li>failtype->strauchelte</li>
     <li>failtype->stolperte</li>
     <li>failtype->verriss</li>
     <li>failtype->verwackelte</li>
-    <li>failtype->verfehlte</li>
     <li>result->aber verfehlte</li>
     <li>result->aber traf nur die Luft</li>
-    <li>result->aber das ging weit daneben</li>
+    <li>result->was aber weit daneben ging</li>
     <li>result->aber stolperte im letzten Moment</li>
     <li>result->aber zögerte im letzten Moment</li>
   </Combat_Miss.rulePack.rulesStrings>

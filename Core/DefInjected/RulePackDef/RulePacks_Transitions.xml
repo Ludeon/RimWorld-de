@@ -88,14 +88,16 @@
     <li>r_logentry->[SUBJECT_definite] [died] [flavorsuffix].</li>
   -->
   <Transition_DiedInclude.rulePack.rulesStrings>
-    <li>r_logentry(p=1.5)->[CULPRITHEDIFF_labelNoun] ließ [SUBJECT_label] [die].</li>
-    <li>r_logentry(p=1.5)->[CULPRITHEDIFF_labelNoun] führte [zumTod] von [SUBJECT_label].</li>
-    <li>r_logentry(p=1.5,SUBJECT_flesh!=Mechanoid)->[CULPRITHEDIFF_labelNoun] kostete [SUBJECT_label] das Leben.</li>
-    <li>r_logentry(p=1.5)->[CULPRITHEDIFF_labelNounPretty] ließ [SUBJECT_label] [die].</li>
-    <li>r_logentry(p=1.5)->[CULPRITHEDIFF_labelNounPretty] führte [zumTod] von [SUBJECT_label].</li>
-    <li>r_logentry(p=1.5,SUBJECT_flesh!=Mechanoid)->[CULPRITHEDIFF_labelNounPretty] kostete [SUBJECT_label] das Leben.</li>
-    <li>r_logentry->[SUBJECT_label] [died].</li>
-    <li>r_logentry->[SUBJECT_label] [died] [flavorsuffix].</li>
+    <li>r_logentry(p=1.5)->[CULPRITHEDIFF_labelNoun] ließ [SUBJECT_nameDefAcc] [die].</li>
+    <li>r_logentry(p=1.5)->[CULPRITHEDIFF_labelNoun] führte [zumTod] von [SUBJECT_nameDefDat].</li>
+    <li>r_logentry(p=1.5,SUBJECT_flesh!=Mechanoid)->[CULPRITHEDIFF_labelNoun] kostete [SUBJECT_nameDefAcc] das Leben.</li>
+    <li>r_logentry(p=1.5)->[CULPRITHEDIFF_labelNounPretty] ließ [SUBJECT_nameDefAcc] [die].</li>
+    <li>r_logentry(p=1.5)->[CULPRITHEDIFF_labelNounPretty] führte [zumTod] von [SUBJECT_nameDefDat].</li>
+    <li>r_logentry(p=1.5,SUBJECT_flesh!=Mechanoid)->[CULPRITHEDIFF_labelNounPretty] kostete [SUBJECT_nameDefAcc] das Leben.</li>
+    <li>r_logentry->[SUBJECT_definite] [died].</li>
+    <li>r_logentry->[SUBJECT_definite] [died] [flavorsuffix].</li>
+    <li>SUBJECT_nameDefAcc->{replace: [SUBJECT_definite]; ">der "-">den "}</li>
+    <li>SUBJECT_nameDefDat->{replace: [SUBJECT_definite]; ">der "-">dem "; ">die "-">der "; ">das "-">dem "}</li>
   </Transition_DiedInclude.rulePack.rulesStrings>
   
   <!-- EN:
@@ -129,31 +131,30 @@
     <li>collapsedmeta(p=0.5)->[collapsed] [helplessly]</li>
   -->
   <Transition_Downed.rulePack.rulesStrings>
-    <li>r_logentry->[CULPRITHEDIFF_labelNoun] ließ [SUBJECT_label] [helplessly] [collapse].</li>
-    <li>r_logentry(p=0.5)->[CULPRITHEDIFF_labelNoun] löste bei [SUBJECT_label] einen Kollaps aus.</li>
-    <li>r_logentry->[CULPRITHEDIFF_labelNounPretty] ließ [SUBJECT_label] [helplessly] [collapse].</li>
-    <li>r_logentry(p=0.5)->[CULPRITHEDIFF_labelNounPretty] löste bei [SUBJECT_label] einen Kollaps aus.</li>
-    <li>r_logentry(p=0.1)->[SUBJECT_label] [collapsed].</li>
+    <li>r_logentry->[CULPRITHEDIFF_labelNoun] ließ [SUBJECT_nameDefAcc] [helplessly] [collapse].</li>
+    <li>r_logentry(p=0.5)->[CULPRITHEDIFF_labelNoun] löste bei [SUBJECT_nameDefDat] einen Kollaps aus.</li>
+    <li>r_logentry->[CULPRITHEDIFF_labelNounPretty] ließ [SUBJECT_nameDefAcc] [helplessly] [collapse].</li>
+    <li>r_logentry(p=0.5)->[CULPRITHEDIFF_labelNounPretty] löste bei [SUBJECT_nameDefDat] einen Kollaps aus.</li>
+    <li>r_logentry(p=0.1)->[SUBJECT_definite] [collapsed].</li>
     <li>collapse->kollabieren</li>
     <li>collapse->zusammenbrechen</li>
-    <li>collapse->hinfallen</li>
-    <li>collapse(SUBJECT_flesh!=Mechanoid)->zu Boden sacken</li>
+    <li>collapse->zu Boden sacken</li>
     <li>collapse(SUBJECT_flesh==Mechanoid)->abstürzen</li>
     <li>collapse(SUBJECT_flesh==Mechanoid)->zum Stillstand kommen</li>
     <li>collapse(SUBJECT_flesh==Mechanoid)->außer Betrieb gehen</li>
-    <li>collapsed->kollabierte [helplessly]</li>
+    <li>collapsed->kollabierte</li>
     <li>collapsed->brach [helplessly] zusammen</li>
-    <li>collapsed->fiel [helplessly] hin</li>
-    <li>collapsed(SUBJECT_flesh!=Mechanoid)->sackte [helplessly] zu Boden</li>
+    <li>collapsed->sackte [helplessly] zu Boden</li>
     <li>collapsed(SUBJECT_flesh==Mechanoid)->stürzte [helplessly] ab</li>
     <li>collapsed(SUBJECT_flesh==Mechanoid)->kam [helplessly] zum Stillstand</li>
     <li>collapsed(SUBJECT_flesh==Mechanoid)->ging [helplessly] außer Betrieb</li>
     <li>helplessly(p=1.5)-></li>
     <li>helplessly->hilflos</li>
     <li>helplessly(SUBJECT_flesh!=Mechanoid)->bewusstlos</li>
-    <li>helplessly(SUBJECT_flesh!=Mechanoid)->völlig</li>
     <li>helplessly(SUBJECT_flesh!=Mechanoid)->kraftlos</li>
     <li>helplessly(SUBJECT_flesh==Mechanoid)->unkontrolliert</li>
+    <li>SUBJECT_nameDefAcc->{replace: [SUBJECT_definite]; ">der "-">den "}</li>
+    <li>SUBJECT_nameDefDat->{replace: [SUBJECT_definite]; ">der "-">dem "; ">die "-">der "; ">das "-">dem "}</li>
   </Transition_Downed.rulePack.rulesStrings>
   
   <!-- EN:

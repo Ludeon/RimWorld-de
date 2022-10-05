@@ -24,6 +24,10 @@
   <Owners>Besitzer</Owners>
   <!-- EN: Assigned colonist -->
   <AssignedColonist>Zugewiesener Kolonist</AssignedColonist>
+  <!-- EN: Uncomfortable room temperature -->
+  <BedUncomfortableTemperature>Unangenehme Raumtemperatur</BedUncomfortableTemperature>
+  <!-- EN: Unsafe room temperature -->
+  <BedUnsafeTemperature>Gefährliche Raumtemperatur</BedUnsafeTemperature>
   <!-- EN: Died on the {0} -->
   <DiedOn>Starb am {0}</DiedOn>
   <!-- EN: Nobody -->
@@ -105,9 +109,9 @@
   <!-- EN: Execute -->
   <Execute>Hinrichten</Execute>
   <!-- EN: Execute guilty colonist\n\nIf you toggle this on, a warden will proceed to execute this person. -->
-  <ExecuteColonist>Richte schuldigen Kolonisten hin\n\nWenn du diesen Punkt aktivierst, wird ein Aufseher kommen und diese Person hinrichten.</ExecuteColonist>
+  <ExecuteColonist>Richte schuldigen Kolonisten hin\n\nWenn du diesen Punkt aktivierst, wird ein Wärter kommen und diese Person hinrichten.</ExecuteColonist>
   <!-- EN: {0_labelShort} is now marked for execution. The next available warden will go execute {0_objective}. -->
-  <MessageColonistMarkedForExecution>{0_labelShort} ist jetzt für die Hinrichtung markiert. Der nächste verfügbare Aufseher wird {0_objective} hinrichten.</MessageColonistMarkedForExecution>
+  <MessageColonistMarkedForExecution>{0_labelShort} ist jetzt für die Hinrichtung markiert. Der nächste verfügbare Wärter wird {0_objective} hinrichten.</MessageColonistMarkedForExecution>
   <!-- EN: {0} of {1} -->
   <TitleOfFaction>{0} von der Fraktion '{1}'</TitleOfFaction>
   <!-- EN: This action will make {PAWN_nameDef} lose {PAWN_possessive} {TITLE} title. You will receive no compensation for renouncing the title.\n\nThis will have the following effects:\n\n{EFFECTS} -->
@@ -187,9 +191,9 @@
   <!-- EN: Resting -->
   <CaravanResting>Rastet</CaravanResting>
   <!-- EN: using 1 bedroll -->
-  <UsingBedroll>verwendet 1 Schlafsack</UsingBedroll>
+  <UsingBedroll>nutzt 1 Schlafsack</UsingBedroll>
   <!-- EN: using {0} bedrolls -->
-  <UsingBedrolls>verwendet {0} Schlafsäcke</UsingBedrolls>
+  <UsingBedrolls>nutzt {0} Schlafsäcke</UsingBedrolls>
   <!-- EN: Est. time to destination: {0} days -->
   <CaravanEstimatedTimeToDestination>Voraussichtliche Ankunftszeit: {0} Tage</CaravanEstimatedTimeToDestination>
   <!-- EN: Route travel time: {0} days -->
@@ -219,9 +223,9 @@
   <!-- EN: {0} in mental state -->
   <CaravanPawnsInMentalState>{0} übergeschnappt</CaravanPawnsInMentalState>
   <!-- EN: {0} downed -->
-  <CaravanPawnsDowned>{0} liegt bewegungsunfähig am Boden</CaravanPawnsDowned>
+  <CaravanPawnsDowned>{0} bewegungsunfähig</CaravanPawnsDowned>
   <!-- EN: Traveling. -->
-  <CaravanTraveling>Unterwegs</CaravanTraveling>
+  <CaravanTraveling>Reist.</CaravanTraveling>
   <!-- EN: Waiting. -->
   <CaravanWaiting>Wartet.</CaravanWaiting>
   <!-- EN: Being carried due to illness -->
@@ -241,11 +245,11 @@
   <!-- EN: {0} effect multiplier: {1} -->
   <DrugEffectMultiplier>{0}-Wirkungsmultiplikator: {1}</DrugEffectMultiplier>
   <!-- EN: Visiting {0}. -->
-  <CaravanVisiting>Besucht {0}</CaravanVisiting>
+  <CaravanVisiting>Besucht {0}.</CaravanVisiting>
   <!-- EN: Entering {0}. -->
-  <CaravanEntering>Betritt {0}</CaravanEntering>
+  <CaravanEntering>Betritt {0}.</CaravanEntering>
   <!-- EN: Attacking {0}. -->
-  <CaravanAttacking>Attackiert {0}</CaravanAttacking>
+  <CaravanAttacking>Attackiert {0}.</CaravanAttacking>
   <!-- EN: Offering gifts to {0}. -->
   <CaravanOfferingGifts>Bietet Geschenke an {0}.</CaravanOfferingGifts>
   <!-- EN: Trading with {0} -->
@@ -258,8 +262,12 @@
   <DeterioratingUnroofed>nicht überdacht</DeterioratingUnroofed>
   <!-- EN: outdoors -->
   <DeterioratingOutdoors>draußen</DeterioratingOutdoors>
-  <!-- EN: Deteriorating because of -->
-  <DeterioratingBecauseOf>Zerfällt weil</DeterioratingBecauseOf>
+  <!-- EN: protected -->
+  <Protected>geschützt</Protected>
+  <!-- EN: Deteriorating -->
+  <DeterioratingBecauseOf>Zerfällt</DeterioratingBecauseOf>
+  <!-- EN: Will deteriorate in {0}. -->
+  <DeteriorateInDuration>Zerfällt in {replace: {0}; "Tage"-"Tagen"; "Jahre"-"Jahren"}.</DeteriorateInDuration>
   <!-- EN: Map -->
   <Map>Karte</Map>
   <!-- EN: {0} until enemies arrive -->
@@ -270,8 +278,8 @@
   <Room>Raum</Room>
   <!-- EN: Beauty here -->
   <BeautyHere>Attraktivität hier</BeautyHere>
-  <!-- EN: No power -->
-  <NoPower>Kein Strom</NoPower>
+  <!-- EN: no power -->
+  <NoPower>kein Strom</NoPower>
   <!-- EN: Work speed penalty -->
   <WorkSpeedPenalty>Reduzierte Arbeitsgeschwindigkeit</WorkSpeedPenalty>
   <!-- EN: Disabled -->
@@ -293,9 +301,9 @@
   <!-- EN: {0} of {1} -->
   <SettlementTrader>{0} von {1}</SettlementTrader>
   <!-- EN: Surgery success chance multiplier from room -->
-  <RoomSurgerySuccessChanceFactor>Operationserfolgschance-Multiplikator vom Raum</RoomSurgerySuccessChanceFactor>
+  <RoomSurgerySuccessChanceFactor>Operationserfolgschance-Faktor vom Raum</RoomSurgerySuccessChanceFactor>
   <!-- EN: Infection chance multiplier from room -->
-  <RoomInfectionChanceFactor>Infektionschance-Multiplikator vom Raum</RoomInfectionChanceFactor>
+  <RoomInfectionChanceFactor>Infektionschance-Faktor vom Raum</RoomInfectionChanceFactor>
   <!-- EN: Closed -->
   <VentClosed>Geschlossen</VentClosed>
   <!-- EN: worn by {1_labelShort} -->
@@ -307,7 +315,7 @@
   <!-- EN: {0} wants this destroyed. -->
   <QuestTargetDestroyInspectStringShort>{0} will, dass dies zerstört wird.</QuestTargetDestroyInspectStringShort>
   <!-- EN: Departing on shuttle in {0} -->
-  <ShuttleDelayInspectString>Abreise mit dem Shuttle in {replace: {0}; "Tage"-"Tagen"; "Jahre"-"Jahren"}</ShuttleDelayInspectString>
+  <ShuttleDelayInspectString>Shuttle-Abreise in {replace: {0}; "Tage"-"Tagen"; "Jahre"-"Jahren"}</ShuttleDelayInspectString>
   <!-- EN: Departing in {0} -->
   <ShuttleLeaveDelayInspectString>Abreise in {replace: {0}; "Tage"-"Tagen"; "Jahre"-"Jahren"}</ShuttleLeaveDelayInspectString>
   <!-- EN: Should depart on shuttle -->
@@ -327,9 +335,13 @@
   <!-- EN: {0} {1} -->
   <KnownSiteThreatEnemyCountAppend>{0} {1}</KnownSiteThreatEnemyCountAppend>
   <!-- EN: Skill Requirements -->
-  <SkillRequirements>Benötigte Fähigkeiten</SkillRequirements>
+  <SkillRequirements>Benötigte Fertigkeiten</SkillRequirements>
   <!-- EN: Products -->
   <Products>Erzeugnisse</Products>
+  <!-- EN: Requires -->
+  <Requires>Benötigt</Requires>
+  <!-- EN: {0}x any of -->
+  <NumAnyOf>{0}x irgendwas aus</NumAnyOf>
   <!-- EN: {0} of {1} -->
   <Relationship>{0} von {1}</Relationship>
   <!-- EN: Prisoner -->
@@ -351,13 +363,13 @@
   <!-- EN: Multiplier from ridden animals -->
   <MultiplierFromRiddenAnimals>Multiplikator von gerittenen Tieren</MultiplierFromRiddenAnimals>
   <!-- EN: Multiplier for carried mass: {0} -->
-  <MultiplierForCarriedMass>Multiplikator für Transportgewicht: {0}</MultiplierForCarriedMass>
+  <MultiplierForCarriedMass>Transportgewicht-Faktor: {0}</MultiplierForCarriedMass>
   <!-- EN: This animal is rideable. People in a caravan will ride the fastest available animals, improving the speed of the caravan as a whole. -->
   <RideableAnimalTip>Dieses Tier kann geritten werden. Die Personen in einer Karawane reiten auf den schnellsten verfügbaren Tieren und verbessern so die Geschwindigkeit der gesamten Karawane.</RideableAnimalTip>
   <!-- EN: This caravan can't move because it carries too much. -->
   <EncumberedCaravanTilesPerDayTip>Diese Karawane kann sich nicht bewegen, da sie zu schwer ist.</EncumberedCaravanTilesPerDayTip>
   <!-- EN: Caravan members speed -->
-  <FinalCaravanPawnsMovementSpeed>Geschw. Karawanenmitglieder</FinalCaravanPawnsMovementSpeed>
+  <FinalCaravanPawnsMovementSpeed>Mitglieder-Geschw.</FinalCaravanPawnsMovementSpeed>
   <!-- EN: Final speed -->
   <FinalCaravanMovementSpeed>Endgültige Geschwindigkeit</FinalCaravanMovementSpeed>
   <!-- EN: Winter -->
@@ -431,7 +443,7 @@
   <!-- EN: prisoners -->
   <PrisonersLower>Gefangene</PrisonersLower>
   <!-- EN: Click to view this quest in quests tab -->
-  <ClickToViewInQuestsTab>Klicke hier, um diese Quest im Quests-Tab anzuschauen</ClickToViewInQuestsTab>
+  <ClickToViewInQuestsTab>Klicke, um diese Quest im Quests-Tab zu sehen</ClickToViewInQuestsTab>
   <!-- EN: Mood -->
   <Mood>Stimmung</Mood>
   <!-- EN: Quest -->
@@ -448,8 +460,8 @@
   <ViewHyperlink>Mehr über: {0}</ViewHyperlink>
   <!-- EN: Detonates in {0} days -->
   <DetonationCountdown>Detoniert in {0} Tagen</DetonationCountdown>
-  <!-- EN: Large fire explosion if damaged -->
-  <ExplosionOnDamageWarning>Große Feuerexplosion bei Beschädigung</ExplosionOnDamageWarning>
+  <!-- EN: Large fire explosion if damaged. -->
+  <ExplosionOnDamageWarning>Große Feuerexplosion bei Beschädigung.</ExplosionOnDamageWarning>
   <!-- EN: Mech cluster -->
   <MechCluster>Mech-Cluster</MechCluster>
   <!-- EN: Spawning in {0} -->
@@ -530,6 +542,22 @@
   <ThoughtFoodEatenFood>Nahrung</ThoughtFoodEatenFood>
   <!-- EN: Ingredients -->
   <ThoughtFoodEatenIngredients>Zutaten</ThoughtFoodEatenIngredients>
+  <!-- EN: Shield pack -->
+  <ShieldInbuilt>Schildrucksack</ShieldInbuilt>
+  <!-- EN: Punctured - will explode soon. -->
+  <PuncturedWillExplode>Durchlöchert - wird bald explodieren.</PuncturedWillExplode>
+  <!-- EN: Click to open research window -->
+  <ClickToOpenResearchTab>Klicke zum Öffnen des Forschungsfensters</ClickToOpenResearchTab>
+  <!-- EN: Target belongs to another faction. -->
+  <TargetBelongsToNPCFaction>Ziel gehört zu einer anderen Fraktion.</TargetBelongsToNPCFaction>
+  <!-- EN: more -->
+  <MoreLower>weitere</MoreLower>
+  <!-- EN: Requires -->
+  <RequiredTechprintTip>Benötigt</RequiredTechprintTip>
+  <!-- EN: size -->
+  <Size>Größe</Size>
+  <!-- EN: cost -->
+  <Cost>Kosten</Cost>
 
   <!-- Scanning -->
   <!-- EN: User scanning speed -->
@@ -654,7 +682,50 @@
   <PenCapacityDesc>Kapazität {ANIMALDEF_label}</PenCapacityDesc>
   <!-- EN: Example animals -->
   <PenExampleAnimals>Beispieltiere</PenExampleAnimals>
+  <!-- EN: No exterior access - Animals cannot be moved in or out. -->
+  <NoExteriorAccess>Kein Zauntor o.Ä. - Tiere können weder rein noch raus.</NoExteriorAccess>
 
+  <!-- Cell Inspector -->
+  <!-- EN: Beauty -->
+  <Beauty_Label>Attraktivität</Beauty_Label>
+  <!-- EN: Zone -->
+  <Zone_Label>Zone</Zone_Label>
+  <!-- EN: Roof -->
+  <Roof_Label>Dach</Roof_Label>
+  <!-- EN: Terrain -->
+  <Terrain_Label>Boden</Terrain_Label>
+  <!-- EN: Snow -->
+  <Snow_Label>Schnee</Snow_Label>
+  <!-- EN: Walk speed -->
+  <WalkSpeed_Label>Laufgeschw.</WalkSpeed_Label>
+  <!-- EN: Fertility -->
+  <Fertility_Label>Fruchtbarkeit</Fertility_Label>
+  <!-- EN: Temperature -->
+  <Temperature_Label>Temperatur</Temperature_Label>
+  <!-- EN: Light level -->
+  <LightLevel_Label>Helligkeit</LightLevel_Label>
+  <!-- EN: Biome -->
+  <Biome_Label>Biom</Biome_Label>
+  <!-- EN: Hilliness -->
+  <Hilliness_Label>Hügeligkeit</Hilliness_Label>
+  <!-- EN: Road -->
+  <Road_Label>Straße</Road_Label>
+  <!-- EN: Movement difficulty -->
+  <MovementDifficulty_Label>Unwegsamkeit</MovementDifficulty_Label>
+  <!-- EN: Pollution -->
+  <Pollution_Label>Verseuchung</Pollution_Label>
+  
+  <!-- EN: Faction -->
+  <Faction_Label>Fraktion</Faction_Label>
+  <!-- EN: Relationship -->
+  <Relationship_Label>Beziehung</Relationship_Label>
+  <!-- EN: Colonists -->
+  <CaravanColonists_Label>Kolonisten</CaravanColonists_Label>
+  <!-- EN: Status -->
+  <CaravanStatus_Label>Status</CaravanStatus_Label>
+  <!-- EN: Time to destination -->
+  <CaravanTTD_Label>Ankunftszeit</CaravanTTD_Label>
+  
 
   <!-- Control -->
   <!-- EN: Cannot order characters you do not control. -->
@@ -669,16 +740,18 @@
   <ApparelPreventsShooting>{replace: {PAWN_nameDef}s; "s(/Name)s"-"s(/Name)'"; "ß(/Name)s"-"ß(/Name)'"; "z(/Name)s"-"z(/Name)'"; "x(/Name)s"-"x(/Name)'"; "ce(/Name)s"-"ce(/Name)'"} {APPAREL_label} verhindert den Einsatz von Fernkampfwaffen.</ApparelPreventsShooting>
 
   <!-- Snow -->
+  <!-- EN: Snow -->
+  <Snow>Schnee</Snow>
   <!-- EN: No snow -->
   <SnowNone>Kein Schnee</SnowNone>
-  <!-- EN: Snow (dusting) -->
-  <SnowDusting>Schnee (staubig)</SnowDusting>
-  <!-- EN: Snow (thin) -->
-  <SnowThin>Schnee (dünn)</SnowThin>
-  <!-- EN: Snow (medium) -->
-  <SnowMedium>Schnee (mittel)</SnowMedium>
-  <!-- EN: Snow (thick) -->
-  <SnowThick>Schnee (dick)</SnowThick>
+  <!-- EN: dusting -->
+  <SnowDusting>staubig</SnowDusting>
+  <!-- EN: thin -->
+  <SnowThin>dünn</SnowThin>
+  <!-- EN: medium -->
+  <SnowMedium>mittel</SnowMedium>
+  <!-- EN: thick -->
+  <SnowThick>dick</SnowThick>
 
   <!-- Turrets -->
   <!-- EN: Installed -->
@@ -695,6 +768,22 @@
   <ShellLoaded>Granate geladen: {1_label}</ShellLoaded>
   <!-- EN: Not loaded -->
   <ShellNotLoaded>Nicht geladen</ShellNotLoaded>
+  <!-- EN: Already active -->
+  <AlreadyActive>Bereits aktiv</AlreadyActive>
+  <!-- EN: Order activation -->
+  <OrderActivation>Aktivierung anordnen</OrderActivation>
+  <!-- EN: Order a colonist to activate {THING_definite}. -->
+  <OrderActivationDesc>Befehlige einen Kolonisten, {THING_label} zu aktivieren.</OrderActivationDesc>
+  <!-- EN: Must be activated by a colonist. -->
+  <MustBeActivatedByColonist>Muss von einem Kolonisten aktiviert werden.</MustBeActivatedByColonist>
+  <!-- EN: No nearby fire -->
+  <NoNearbyFire>Kein Brand in der Nähe</NoNearbyFire>
+  <!-- EN: No nearby fire. No fuel was used. -->
+  <NoNearbyFireNoFuelUsed>Kein Brand in der Nähe. Nichts verbraucht.</NoNearbyFireNoFuelUsed>
+  <!-- EN: Choose who should activate this. -->
+  <ChooseWhoShouldActivate>Wähle aus, wer das aktivieren soll.</ChooseWhoShouldActivate>
+  <!-- EN: No fuel -->
+  <NoFuel>Keine Munition mehr</NoFuel>
 
   <!-- Job reports -->
   <!-- EN: hauling {THING_label} to {DESTINATION}. -->
@@ -739,6 +828,10 @@
   <ReportExtinguishingFireOn>löscht Feuer von {TARGET_label}.</ReportExtinguishingFireOn>
   <!-- EN: digging up corpse. -->
   <ReportDiggingUpCorpse>gräbt Leiche aus.</ReportDiggingUpCorpse>
+  <!-- EN: being carried by {0_labelShort}. -->
+  <CarriedBy>wird von {0_labelShort} getragen.</CarriedBy> 
+  <!-- EN: inside {0_labelShort}. -->
+  <InContainer>befindet sich in {0_labelShort}.</InContainer> 
 
   <!-- Lord job reports -->
   <!-- EN: Attending marriage ceremony -->
@@ -784,7 +877,7 @@
   <!-- EN: make {0} -->
   <RecipeMake>{0} herstellen</RecipeMake>
   <!-- EN: Make {0}. -->
-  <RecipeMakeDescription>Stelle dieses Produkt her.</RecipeMakeDescription>
+  <RecipeMakeDescription>Stelle {replace: ^{0}; "^ein "-"1x "; "^eine "-"1x "; ", ein "-", 1x "; ", eine "-", 1x "; " und ein "-" und 1x "; " und eine "-" und 1x "; "^"-""} her.</RecipeMakeDescription>
   <!-- EN: Making {0}. -->
   <RecipeMakeJobString>Stellt {0} her.</RecipeMakeJobString>
   <!-- EN: administer {0} -->
@@ -816,15 +909,13 @@
   <!-- EN: {PAWN_gender} {1} -->
   <PawnMainDescGendered>{1}, {PAWN_gender}</PawnMainDescGendered>
   <!-- EN: {0} of {1} -->
-  <PawnMainDescFactionedWrap>{0}, {1}</PawnMainDescFactionedWrap>
+  <PawnMainDescFactionedWrap>{replace: {0}; "Männchen "-"Männchen, "; "Weibchen "-"Weibchen, "}, {1}</PawnMainDescFactionedWrap>
   <!-- EN: {0} in {1} -->
   <PawnTitleDescWrap>{0} in {1}</PawnTitleDescWrap>
   <!-- EN: {0} under {1} -->
   <PawnMainDescUnderFactionedWrap>{0}, in Obhut von {1}</PawnMainDescUnderFactionedWrap>
-  <!-- EN: {0} under {1}\nHome faction: {2} -->
-  <PawnMainDescTempFactionedWrap>{0}, in Obhut von {1}\nHeimatfraktion: {2}</PawnMainDescTempFactionedWrap>
   <!-- EN: {2_lifeStageAdjective} {0} -->
-  <PawnMainDescLifestageWrap>{2_lifeStageAdjective}{2_gender ? er : e : es} {0}</PawnMainDescLifestageWrap>
+  <PawnMainDescLifestageWrap>{2_lifeStage}, {0}</PawnMainDescLifestageWrap>
   <!-- EN: Faction -->
   <Faction>Fraktion</Faction>
   <!-- EN: The faction {PAWN_labelShort} currently belongs to. -->
@@ -857,6 +948,8 @@
   <State>Status</State>
   <!-- EN: stun -->
   <StunLower>betäubt</StunLower>
+  <!-- EN: Slowed by damage -->
+  <SlowedByDamage>Verlangsamt durch Schaden</SlowedByDamage>
 
   <!-- Inspector general stuff -->
   <!-- EN: Select next thing in same square.\n\n(*SectionTitle)Shortcut key:(/SectionTitle) {0}\n\nYou can also do this by slowly clicking the same square again. -->
@@ -907,8 +1000,8 @@
   <Indoors>Drinnen</Indoors>
   <!-- EN: Unroofed -->
   <IndoorsUnroofed>Kein Dach</IndoorsUnroofed>
-  <!-- EN: Outdoors -->
-  <Outdoors>Draußen</Outdoors>
+  <!-- EN: outdoors -->
+  <Outdoors>draußen</Outdoors>
 
   <!-- Rotting -->
   <!-- EN: Fresh -->
@@ -939,6 +1032,12 @@
   <!-- Meal -->
   <!-- EN: Ingredients -->
   <Ingredients>Zutaten</Ingredients>
+  <!-- EN: The ingredients used to make this meal. -->
+  <IngredientsDesc>Die Zutaten, mit denen diese Mahlzeit gekocht wird.</IngredientsDesc>
+  <!-- EN: Dietary type -->
+  <DietaryType>Ernährungsweise</DietaryType>
+  <!-- EN: The type of meal produced. Some people have preferences for specific types of meals. -->
+  <DietaryTypeDesc>Die Art der produzierten Mahlzeit. Manche Menschen haben Vorlieben für bestimmte Arten von Mahlzeiten.</DietaryTypeDesc>
   <!-- EN: only stacks with similar meals -->
   <OnlyStacksWithCompatibleMeals>nur stapelbar mit gleichen Zutaten</OnlyStacksWithCompatibleMeals>
 
@@ -961,6 +1060,10 @@
   <ReadyToHarvest>Bereit zum Ernten.</ReadyToHarvest>
   <!-- EN: Mature. -->
   <Mature>Ausgewachsen.</Mature>
+  <!-- EN: Average plant age -->
+  <AveragePlantAge>Pflanzen-Durchschnittsalter</AveragePlantAge>
+  <!-- EN: Oldest plant age -->
+  <OldestPlantAge>Alter der ältesten Pflanze</OldestPlantAge>
   <!-- EN: Growing period -->
   <OutdoorGrowingPeriod>Wachstumsperiode</OutdoorGrowingPeriod>
   <!-- EN: Never -->
@@ -981,6 +1084,10 @@
   <HarvestGerund>Ernten von</HarvestGerund>
   <!-- EN: cutting -->
   <CutGerund>Entfernen von</CutGerund>
+  <!-- EN: Cut all blight -->
+  <CutAllBlight>Alle Pflanzen mit Fäulnis entfernen</CutAllBlight>
+  <!-- EN: Mark all blighted plants to be destroyed. Blighted plants will not yield any food or resources and should be destroyed before the blight spreads. -->
+  <CutAllBlightDesc>Gib den Befehl, alle befallenen Pflanzen zu vernichten. Befallene Pflanzen liefern keine Nahrung oder Ressourcen und sollten vernichtet werden, bevor sich die Fäulnis weiter ausbreitet.</CutAllBlightDesc>
 
   <!-- Zones -->
   <!-- EN: Zone -->
@@ -1045,6 +1152,8 @@
   <ShowExpandingIconsToggleButton>Symbole anzeigen\n\nIm eingeschalteten Zustand werden wichtige Orte auf dem Planeten beim Rauszoomen als Symbole dargestellt.</ShowExpandingIconsToggleButton>
   <!-- EN: Toggle visibility of names of landforms. -->
   <ShowWorldFeaturesToggleButton>Landformbezeichnungen anzeigen\n\nIm eingeschalteten Zustand werden Bezeichnungen für Landformen angezeigt.</ShowWorldFeaturesToggleButton>
+  <!-- EN: Toggle heat overlay. This shows the air temperature in each room and outdoors.\n\nColonists will be unhappy if the temperature is too high or too low. Exposure to extreme temperatures can lead to hypothermia, frostbite, heatstroke, burns, and death. -->
+  <ShowTemperatureOverlayToggleButton>Wärme anzeigen\n\nIm eingeschalteten Zustand wird farblich angezeigt, wie hoch die Lufttemperatur in jedem Raum und im Freien ist.\n\nKolonisten bekommen schlechte Laune, wenn die Temperatur zu hoch oder zu niedrig ist. Extreme Temperaturen können zu Hypothermie, Erfrierungen, Hitzeschlag, Verbrennungen und Tod führen.</ShowTemperatureOverlayToggleButton>
 
   <!-- Fire -->
   <!-- EN: fire on {1_label} -->
@@ -1064,9 +1173,9 @@
   <!-- EN: Source unknown. -->
   <SourceUnknown>Quelle unbekannt</SourceUnknown>
   <!-- EN: Click to jump to the source. -->
-  <ClickToJumpToSource>Klicke hier, um zur Quelle zu springen.</ClickToJumpToSource>
+  <ClickToJumpToSource>Klicke, um zur Quelle zu springen.</ClickToJumpToSource>
   <!-- EN: Click to jump to the flashstorm. -->
-  <ClickToJumpToFlashstorm>Klicke hier, um zum Blitzsturm zu springen.</ClickToJumpToFlashstorm>
+  <ClickToJumpToFlashstorm>Klicke, um zum Blitzsturm zu springen.</ClickToJumpToFlashstorm>
   <!-- EN: Caused by quest: {0} -->
   <CausedByQuest>Verursacht durch Quest: {0}</CausedByQuest>
 
@@ -1144,13 +1253,13 @@
 
   <!-- Neurotrainer -->
   <!-- EN: skilltrainer ({0}) -->
-  <SkillNeurotrainerLabel>Fähigkeitstrainer ({0})</SkillNeurotrainerLabel>
+  <SkillNeurotrainerLabel>Fertigkeitstrainer ({0})</SkillNeurotrainerLabel>
   <!-- EN: Use skilltrainer to learn {0} -->
-  <SkillNeurotrainerUseLabel>Benutze Fähigkeitstrainer ({0})</SkillNeurotrainerUseLabel>
+  <SkillNeurotrainerUseLabel>Benutze Fertigkeitstrainer ({0})</SkillNeurotrainerUseLabel>
   <!-- EN: A one-use super-dose of mechanites which trains a specific skill.\n\nThe dose is administered through the orbit of the eye. Once released into the brain, the mechanites quickly improve the subject's skills in a specific area, transmuting themselves into neural tissue as needed. -->
-  <SkillNeurotrainerDescription>Eine einmalig verwendbare Superdosis von Mechaniten, die eine bestimmte Fähigkeit trainieren.\n\nDie Dosis wird über die Augenhöhlen verabreicht. Einmal im Gehirn freigesetzt, wandeln sich die Mechaniten bei Bedarf in Nervengewebe um und verbessern dabei eine bestimmte Fähigkeit des Subjekts.</SkillNeurotrainerDescription>
+  <SkillNeurotrainerDescription>Eine einmalig verwendbare Superdosis von Mechaniten, die eine bestimmte Fertigkeit trainieren.\n\nDie Dosis wird über die Augenhöhlen verabreicht. Einmal im Gehirn freigesetzt, wandeln sich die Mechaniten bei Bedarf in Nervengewebe um und verbessern dabei eine bestimmte Fertigkeit des Subjekts.</SkillNeurotrainerDescription>
   <!-- EN: {USER_labelShort} used {1} neurotrainer to go from level {2} to level {3}. -->
-  <SkillNeurotrainerUsed>{USER_labelShort} hat einen Neurotrainer benutzt, um {USER_possessive}e {1}-Fähigkeit von Stufe {2} auf Stufe {3} zu erhöhen.</SkillNeurotrainerUsed>
+  <SkillNeurotrainerUsed>{USER_labelShort} hat einen Neurotrainer benutzt, um {USER_possessive}e {1}-Fertigkeit von Stufe {2} auf Stufe {3} zu erhöhen.</SkillNeurotrainerUsed>
 
   <!-- Minification -->
   <!-- EN: Installed -->
@@ -1301,6 +1410,8 @@
   <!-- Learning helper -->
   <!-- EN: Learning helper -->
   <LearningHelper>Lernhilfe</LearningHelper>
+  <!-- EN: In-game tutor that aims to teach you information about topics relevant to your colony's current state -->
+  <LearningHelperTooltip>Spielinterne Lernhilfe, die dir Themen beibringen soll, je nach aktuellem Stand deiner Kolonie.</LearningHelperTooltip>
   <!-- EN: Mark as learned -->
   <MarkLearned>Verstanden</MarkLearned>
   <!-- EN: Already learned -->
@@ -1377,8 +1488,8 @@
   <PawnTooltipWithPrimaryEquipNoDesc>{0}\n{1}\n{2}</PawnTooltipWithPrimaryEquipNoDesc>
   <!-- EN: {0}\n{1} -->
   <PawnTooltipNoDescNoPrimaryEquip>{0}\n{1}</PawnTooltipNoDescNoPrimaryEquip>
-  <!-- EN: Neural heat: {0} / {1}\nFall rate: {2} / s ({3}s until zero) -->
-  <PawnTooltipPsychicEntropyStats>Neuralhitze: {0} / {1}\nRückgangsrate: {2} / s ({3}s bis Null)</PawnTooltipPsychicEntropyStats>
+  <!-- EN: Fall rate: {0} / s ({1}s until zero) -->
+  <PawnTooltipPsychicEntropyStats>Rückgangsrate: {0} / s ({1}s bis Null)</PawnTooltipPsychicEntropyStats>
   <!-- EN: Neural heat increases after using a psychic power. Surpassing the normal limit may cause a psychic breakdown lasting days.\n\nNeural heat dissipates naturally over time. This process can be accelerated by wearing eltex apparel or being in pain. -->
   <PawnTooltipPsychicEntropyDesc>Neuralhitze nimmt zu, wenn eine mentale Kraft gewirkt wird. Das Überschreiten des normalen Limits kann zu einem mentalen Zusammenbruch führen, der mehrere Tage anhält.\n\nNeuralhitze baut sich im Laufe der Zeit wieder automatisch ab. Dieser Prozess kann durch das Tragen von Eltex-Kleidung oder durch Schmerzen beschleunigt werden.</PawnTooltipPsychicEntropyDesc>
   <!-- EN: Pain boost\n\nPain focuses the mind and speeds up neural heat dissipation.\n\nPain level: {0}\nBonus to heat recovery: {1} -->
@@ -1387,18 +1498,18 @@
   <PawnTooltipPsychicEntropyLimit>Schalte den Neuralhitzebegrenzer ein/aus.\n\nDas Überschreiten des Hitzelimits kann zu einem mentalen Zusammenbruch führen, der mehrere Tage anhält, aber keine bleibenden Schäden hinterlässt.</PawnTooltipPsychicEntropyLimit>
   <!-- EN: Psyfocus: {0} -->
   <PawnTooltipPsyfocus>Psyfokus: {0}</PawnTooltipPsyfocus>
-
+  
   <!-- Pawn tooltip description -->
   <!-- EN: {0} {1} -->
   <PawnTooltipGenderAndKindLabel>{1}</PawnTooltipGenderAndKindLabel>
 
   <!-- Rewards -->
   <!-- EN: a {0_age}-year-old {0_title} named {0_nameDef} will arrive in a transport pod {0_relationInfoInParentheses} -->
-  <Reward_Pawn_DropPod>{0_gender ? ein {0_age}-jähriger : eine {0_age}-jährige} {0_title} namens {0_nameDef} mit einer Transportkapsel eintreffen {0_relationInfoInParentheses}</Reward_Pawn_DropPod>
+  <Reward_Pawn_DropPod>{replace: ^{0_titleDef}; "^der "-"ein {0_age}-jähriger "; "^die "-"eine {0_age}-jährige "; "^das "-"ein {0_age}-jähriges "; "^"-""} namens {0_nameDef} mit einer Transportkapsel eintreffen {0_relationInfoInParentheses}</Reward_Pawn_DropPod>
   <!-- EN: a {0_age}-year-old {0_title} named {0_nameDef} will arrive and join you {0_relationInfoInParentheses} -->
-  <Reward_Pawn_WalkIn>{0_gender ? ein {0_age}-jähriger : eine {0_age}-jährige} {0_title} namens {0_nameDef} eintreffen und deiner Kolonie beitreten {0_relationInfoInParentheses}</Reward_Pawn_WalkIn>
+  <Reward_Pawn_WalkIn>{replace: ^{0_titleDef}; "^der "-"ein {0_age}-jähriger "; "^die "-"eine {0_age}-jährige "; "^das "-"ein {0_age}-jähriges "; "^"-""} namens {0_nameDef} eintreffen und deiner Kolonie beitreten {0_relationInfoInParentheses}</Reward_Pawn_WalkIn>
   <!-- EN: a {0_age}-year-old {0_title} named {0_nameDef} will join you {0_relationInfoInParentheses} -->
-  <Reward_Pawn_Caravan>{0_gender ? ein {0_age}-jähriger : eine {0_age}-jährige} {0_title} namens {0_nameDef} deiner Kolonie beitreten {0_relationInfoInParentheses}</Reward_Pawn_Caravan>
+  <Reward_Pawn_Caravan>{replace: ^{0_titleDef}; "^der "-"ein {0_age}-jähriger "; "^die "-"eine {0_age}-jährige "; "^das "-"ein {0_age}-jähriges "; "^"-""} namens {0_nameDef} deiner Kolonie beitreten {0_relationInfoInParentheses}</Reward_Pawn_Caravan>
   <!-- EN: transport pods with the following resources will arrive (total value {1}):
 \n{0} -->
   <Reward_Items>dir Folgendes via Transportkapseln zugesendet (Gesamtwert {1}):\n\n{0}</Reward_Items>
@@ -1508,6 +1619,14 @@
   <RitualFinished>{0} wurde abgeschlossen.</RitualFinished>
   <!-- EN: ends in {0} -->
   <RitualEndsIn>endet in {replace: {0}; "Tage"-"Tagen"; "Jahre"-"Jahren"}</RitualEndsIn>
+  <!-- EN: Can start any time -->
+  <RitualStartAnyTime>Kann jederzeit starten</RitualStartAnyTime>
+  <!-- EN: Can start after event -->
+  <RitualStartEvent>Kann nach Ereignis starten</RitualStartEvent>
+  <!-- EN: Focus objects -->
+  <RitualFocusObjects>Fokusobjekte</RitualFocusObjects>
+  <!-- EN: Participating roles -->
+  <RitualParticipatingRoles>Teilnehmende Rollen</RitualParticipatingRoles>
   <!-- EN: Organizers -->
   <Organizers>Organisatoren</Organizers>
   <!-- EN: Quality factors -->
@@ -1537,9 +1656,9 @@
   <!-- EN: {0} progress -->
   <RitualOutcomeProgress>Ritualverlauf</RitualOutcomeProgress>
   <!-- EN: {0} quality depends on -->
-  <RitualOutcomeQualityAbstract>Die Qualität des Rituals ist abhängig von</RitualOutcomeQualityAbstract>
+  <RitualOutcomeQualityAbstract>Die Qualität ist abhängig von</RitualOutcomeQualityAbstract>
   <!-- EN: {0} total quality was {1}, determined by these factors -->
-  <RitualOutcomeQualitySpecific>Aufgrund der folgenden Faktoren lag die Qualität des Rituals bei {1}</RitualOutcomeQualitySpecific>
+  <RitualOutcomeQualitySpecific>Aufgrund der folgenden Faktoren lag die Qualität bei {1}</RitualOutcomeQualitySpecific>
   <!-- EN: Outcome chances at {0} quality -->
   <RitualOutcomeChances>Ergebnischancen bei {0}iger Qualität</RitualOutcomeChances>
   <!-- EN: Performed recently -->
@@ -1549,13 +1668,15 @@
   <!-- EN: Ritual ambience sound -->
   <RitualAmbienceSound>Ritualgeräusche</RitualAmbienceSound>
   <!-- EN: Total {0} quality is below {1}. Proceeding will most likely negatively impact your colony.\n\nAre you sure? -->
-  <RitualQualityLowWarning>Die Gesamtqualität des Rituals '{0}' liegt unter {1}. Wenn du fortfährst, wird das sehr wahrscheinlich negative Auswirkungen auf deine Kolonie haben.\n\nBist du dir sicher?</RitualQualityLowWarning>
+  <RitualQualityLowWarning>Die Gesamtqualität von '{0}' liegt unter {1}. Wenn du fortfährst, wird das sehr wahrscheinlich negative Auswirkungen auf deine Kolonie haben.\n\nBist du dir sicher?</RitualQualityLowWarning>
   <!-- EN: No reachable appropriate place to speak. -->
   <AbilitySpeechDisabledNoSpot>Kein angemessener Platz zum Reden erreichbar.</AbilitySpeechDisabledNoSpot>
   <!-- EN: {0_labelShort} is incapable of {1}. -->
   <AbilityDisabledNoCapacity>{0_labelShort} kann nicht {1}.</AbilityDisabledNoCapacity>
   <!-- EN: Everyone participating in the ritual gains {0} mood for {1} days. -->
   <RitualOutcomeExtraDesc_Mood>Jeder, der an dem Ritual teilgenommen hat, erhält {0} Stimmung für {1} Tage.</RitualOutcomeExtraDesc_Mood>
+  <!-- EN: This ritual has no quality offsets, so the best outcome is always expected -->
+  <RitualOutcomeNoQuality>Bei diesem Ritual gibt es keine qualitativen Abweichungen, weshalb immer das beste Ergebnis zu erwarten ist</RitualOutcomeNoQuality>
   
   <!-- EN: Choose who should participate in {RITUAL_labelDef}. -->
   <ChooseParticipants>Wähle, wer am Ritual '{RITUAL_label}' teilnehmen soll.</ChooseParticipants>
@@ -1589,6 +1710,10 @@
   <RitualPredictedOutcomeDescParticipantCount>Teilnehmer</RitualPredictedOutcomeDescParticipantCount>
   <!-- EN: {PAWN_labelShort}'s expectations -->
   <RitualPredictedOutcomeDescPawnExpectations>{replace: {PAWN_labelShort}s; "s(/Name)s"-"s(/Name)'"; "ß(/Name)s"-"ß(/Name)'"; "z(/Name)s"-"z(/Name)'"; "x(/Name)s"-"x(/Name)'"; "ce(/Name)s"-"ce(/Name)'"} Erwartungen</RitualPredictedOutcomeDescPawnExpectations>
+  <!-- EN: Loved one present -->
+  <RitualOutcomeLovedOnePresentLabel>Geliebte anwesend</RitualOutcomeLovedOnePresentLabel>
+  <!-- EN: Any person that {PAWN_labelShort} considers their friend or more. -->
+  <RitualOutcomeLovedOnePresentTip>Jede Person, die {PAWN_labelShort} als {PAWN_possessive}en Freund oder mehr betrachtet.</RitualOutcomeLovedOnePresentTip>
 
   <!-- EN: Any of these -->
   <RitualOutcomeLabelAnyOfThese>Eins von diesen</RitualOutcomeLabelAnyOfThese>
@@ -1607,7 +1732,7 @@
   <!-- EN: {0} quality -->
   <OutcomeBonusDesc_QualitySingleOffset>{0} Qualität</OutcomeBonusDesc_QualitySingleOffset>
   <!-- EN: {OUTCOMELABEL} {RITUALLABEL} -->
-  <OutcomeLetterLabel>{OUTCOMELABEL}es Ritual: {RITUALLABEL}</OutcomeLetterLabel>
+  <OutcomeLetterLabel>{lookup: {OUTCOMELABEL}es Ritual: {RITUALLABEL}; ritual}</OutcomeLetterLabel>
   <!-- EN: {0} max -->
   <MaxValue>{0} max</MaxValue>
 
@@ -1615,6 +1740,16 @@
   <ThingOf>{0} von</ThingOf>
   <!-- EN: {0} of {1} -->
   <ThingOfSource>{0} von {1}</ThingOfSource>
+  <!-- EN: {0} of {1} and {2} -->
+  <ThingOfTwoSources>{0} von {1} und {2}</ThingOfTwoSources>
+
+  <!-- Gas types -->
+  <!-- EN: blind smoke -->
+  <BlindSmoke>Blendrauch</BlindSmoke>
+  <!-- EN: tox gas -->
+  <ToxGas>Giftgas</ToxGas>
+  <!-- EN: rot stink -->
+  <RotStink>Faulgas</RotStink>
 
   <!-- Abilities -->
   <!-- EN: must be drafted. -->
@@ -1627,5 +1762,33 @@
   <AbilityReadyLabel>Fähigkeit bereit: {0}</AbilityReadyLabel>
   <!-- EN: {0_nameDef} is ready to use {1}. -->
   <AbilityReadyText>{0_nameDef} ist bereit, {1} zu verwenden.</AbilityReadyText>
+  <!-- EN: {0_labelShort} is participating in {1}. -->
+  <AbilityDisabledInRitual>{0_labelShort} nimmt gerade an '{1}' teil.</AbilityDisabledInRitual>
+  <!-- EN: Charges -->
+  <Charges>Ladungen</Charges>
+
+  <!-- EN: {0_nameDef} is in an aggressive mental state. -->
+  <PawnIsInMentalState>{0_nameDef} hat einen aggressiven Nervenzusammenbruch.</PawnIsInMentalState>
+
+  <!-- EN: Disabled work -->
+  <DisabledWorkLabel>Deaktivierte Arbeiten</DisabledWorkLabel>
+
+  <!-- Glowers -->
+  <!-- EN: change color -->
+  <GlowerChangeColor>Lichtfarbe ändern</GlowerChangeColor>
+  <!-- EN: Change the color of the light. -->
+  <GlowerChangeColorDescription>Ändere die Farbe des Lichts.</GlowerChangeColorDescription>
+  <!-- EN: You must research {0} to change light color. -->
+  <GlowerChangeColorNeedsResearch>Zum Ändern der Lichtfarbe muss zunächst '{0}' erforscht werden.</GlowerChangeColorNeedsResearch>
+
+  <!-- Shields -->
+  <!-- EN: A personal shield that will attempt to stop incoming projectiles or shrapnel. It prevents the wearer from firing out, and shuts down instantly if hit by an EMP. -->
+  <ShieldPersonalTip>Ein persönlicher Schild, der versucht, ankommende Projektile oder Sprengkörper zu stoppen. Er verhindert, dass der Benutzer rausschießen kann, und schaltet sich sofort ab, wenn er einem elektromagnetischen Impuls (EMP) ausgesetzt wird.</ShieldPersonalTip>
+
+  <!-- EN: {PAWN_nameDef} is so loyal to {PAWN_possessive} home that {PAWN_pronoun} will refuse to be recruited if taken prisoner. -->
+  <UnrecruitableDesc>{PAWN_nameDef} hat {PAWN_possessive}er Heimat absolute Treue geschworen und wird als {PAWN_gender ? Gefangener : Gefangene} jegliche Rekrutierungsversuche abschmettern.</UnrecruitableDesc>
+
+  <!-- EN: Random -->
+  <Random>Zufällig</Random>
 
 </LanguageData>

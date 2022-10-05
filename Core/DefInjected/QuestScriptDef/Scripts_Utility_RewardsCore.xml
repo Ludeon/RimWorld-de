@@ -7,22 +7,18 @@
     <li>joinerFactionInfo-></li>
   -->
   <Util_JoinerDropIn.questDescriptionRules.rulesStrings>
-    <li>rewardDescription->wird [ein_N_jaehriger] [joiner_title] namens [joiner_nameDef] mit einer Transportkapsel eintreffen.[joinerFactionInfo][joiner_relationInfo]</li>
+    <li>rewardDescription->wird [a_N_year_old_joiner] namens [joiner_nameDef] mit einer Transportkapsel eintreffen.[joinerFactionInfo][joiner_relationInfo]</li>
     <li>joinerFactionInfo(priority=1)-> [joiner_pronoun] ist ein Mitglied der Fraktion [joiner_factionName].</li>
     <li>joinerFactionInfo-></li>
-    <!-- gender-specific -->
-    <li>ein_N_jaehriger(joiner_gender==Male)->ein [joiner_age]-jähriger</li>
-    <li>ein_N_jaehriger(joiner_gender==Female)->eine [joiner_age]-jährige</li>
+    <li>a_N_year_old_joiner->{replace: ^[joiner_titleDef]; "^der "-"ein [joiner_age]-jähriger "; "^die "-"eine [joiner_age]-jährige "; "^das "-"ein [joiner_age]-jähriges "; "^"-""}</li>
   </Util_JoinerDropIn.questDescriptionRules.rulesStrings>
   
   <!-- EN:
     <li>rewardDescription->a [joiner_age]-year-old [joiner_title] named [joiner_nameDef] will arrive and join you. [joiner_relationInfo]</li>
   -->
   <Util_JoinerWalkIn.questDescriptionRules.rulesStrings>
-    <li>rewardDescription->wird [ein_N_jaehriger] [joiner_title] namens [joiner_nameDef] eintreffen und dir beitreten. [joiner_relationInfo]</li>
-    <!-- gender-specific -->
-    <li>ein_N_jaehriger(joiner_gender==Male)->ein [joiner_age]-jähriger</li>
-    <li>ein_N_jaehriger(joiner_gender==Female)->eine [joiner_age]-jährige</li>
+    <li>rewardDescription->wird [a_N_year_old_joiner] namens [joiner_nameDef] eintreffen und dir beitreten. [joiner_relationInfo]</li>
+    <li>a_N_year_old_joiner->{replace: ^[joiner_titleDef]; "^der "-"ein [joiner_age]-jähriger "; "^die "-"eine [joiner_age]-jährige "; "^das "-"ein [joiner_age]-jähriges "; "^"-""}</li>
   </Util_JoinerWalkIn.questDescriptionRules.rulesStrings>
   
   <!-- EN:

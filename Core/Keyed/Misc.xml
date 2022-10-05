@@ -2,9 +2,9 @@
 <LanguageData>
 
   <!-- EN: Autosaving -->
-  <Autosaving>Speichere</Autosaving>
+  <Autosaving>Speichert</Autosaving>
   <!-- EN: The three of you awake in your cryptosleep sarcophagi to the sound of sirens and ripping metal. You barely get to the escape pods before the ship is torn apart.\n\nSome time later, you land on this unknown rimworld.\n\nAs pieces of the shredded starship fall around you, you start making plans to survive. -->
-  <GameStartDialog>Der Krach von Sirenen und berstendem Metall hallt durch eure Ohren, als ihr aus eurem Kryptoschlaf erwacht. Trotz Explosionen und entweichender Atemluft schafft ihr es gerade noch, die Rettungskapseln zu erreichen und euch ins All zu katapultieren, bevor euer Raumschiff auseinanderbricht.\n\nEinige Zeit später landet ihr auf diesem unbekannten Planeten, am Rande der Galaxie.\n\nUm euch herum schlagen noch die letzten Trümmer des zerstörten Raumschiffes ein, als ihr damit beginnt, Pläne für euer Überleben zu schmieden.</GameStartDialog>
+  <GameStartDialog>Der Krach von Sirenen und berstendem Metall hallt durch eure Ohren, als ihr zu dritt aus eurem Kryptoschlaf erwacht. Trotz Explosionen und entweichender Atemluft schafft ihr es gerade noch, die Rettungskapseln zu erreichen und euch ins All zu katapultieren, bevor euer Raumschiff auseinanderbricht.\n\nEinige Zeit später landet ihr auf diesem unbekannten Planeten, am Rande der Galaxie.\n\nUm euch herum schlagen noch die letzten Trümmer des zerstörten Raumschiffes ein, als ihr damit beginnt, Pläne für euer Überleben zu schmieden.</GameStartDialog>
   <!-- EN: Colony -->
   <Colony>Kolonie</Colony>
   <!-- EN: You can only change language from the options screen on the main menu. -->
@@ -36,6 +36,8 @@
   <Yes>Ja</Yes>
   <!-- EN: No -->
   <No>Nein</No>
+  <!-- EN: No {0} -->
+  <NoSubject>{0_gender ? Kein : Keine} {0}</NoSubject>
   <!-- EN: new -->
   <New>neu</New>
   <!-- EN: Gender -->
@@ -85,11 +87,15 @@
   <!-- EN: Cause -->
   <Cause>Ursache</Cause>
   <!-- EN: etc -->
-  <Etc>usw.</Etc>
+  <Etc>usw</Etc>
   <!-- EN: ${0} -->
-  <MoneyFormat>{0}€</MoneyFormat>
+  <MoneyFormat>${0}</MoneyFormat>
   <!-- EN: Factors -->
   <Factors>Faktoren</Factors>
+  <!-- EN: Uses -->
+  <Uses>Anwendungen</Uses>
+  <!-- EN: Translation -->
+  <Translation>Übersetzung</Translation>
 
   <!-- Content generation-->
   
@@ -108,7 +114,7 @@
 \nThe physical form of techprints can range from scraps of paper with diagrams, all the way to advanced self-contained teaching machines. Regardless of form, they play the same role. They give your researchers the confidence that an idea is possible, and a rough idea of the designs used in more established societies.
 \nYour researchers need the foundational knowledge offered by techprints to know where to start on a given technology. Only after enough techprints have been applied can your researchers work out the fine details of how to make use of the technology in your particular situation.
 \nApplying techprints to a satisfied project fulfills half the remaining research progress. In addition, researchers always gain a boost to their intellectual skills when applying techprints, even on already-completed technologies. -->
-  <TechprintDesc>Ein Techplan für das Forschungsprojekt '{PROJECT_label}'.\n\nDie physische Form von Techplänen kann von Papierfetzen mit Diagrammen bis hin zu fortschrittlichen, eigenständigen Lehrmaschinen reichen. Unabhängig von der Form erfüllen sie die gleiche Aufgabe: Sie geben deinen Forschern die Gewissheit, dass eine Idee möglich ist, und vermitteln eine grobe Vorstellung davon, wie sie in höheren Gesellschaften umgesetzt wird.\n\nDeine Forscher brauchen das Grundwissen, das die Techpläne vermitteln, um den richtigen Ansatzpunkt für eine bestimmte Technologie zu finden. Erst wenn genügend Techpläne angewandt wurden, können deine Forscher die Feinheiten ausarbeiten, wie die Technologie in deiner speziellen Situation genutzt werden kann.\n\nDie Anwendung von Techplänen auf ein gesättigtes Projekt schließt die Hälfte des verbleibenden Forschungsfortschritts ab. Darüber hinaus erhalten die Forscher beim Anwenden von Techplänen immer einen Schub auf ihre intellektuellen Fähigkeiten, auch bei bereits abgeschlossenen Technologien.</TechprintDesc>
+  <TechprintDesc>Ein Techplan für das Forschungsprojekt '{PROJECT_label}'.\n\nDie physische Form von Techplänen kann von Papierfetzen mit Diagrammen bis hin zu fortschrittlichen, eigenständigen Lehrmaschinen reichen. Unabhängig von der Form erfüllen sie die gleiche Aufgabe: Sie geben deinen Forschern die Gewissheit, dass eine Idee möglich ist, und vermitteln eine grobe Vorstellung davon, wie sie in höheren Gesellschaften umgesetzt wird.\n\nDeine Forscher brauchen das Grundwissen, das die Techpläne vermitteln, um den richtigen Ansatzpunkt für eine bestimmte Technologie zu finden. Erst wenn genügend Techpläne angewandt wurden, können deine Forscher die Feinheiten ausarbeiten, wie die Technologie in deiner speziellen Situation genutzt werden kann.\n\nDie Anwendung von Techplänen auf ein gesättigtes Projekt schließt die Hälfte des verbleibenden Forschungsfortschritts ab. Darüber hinaus erhalten die Forscher beim Anwenden von Techplänen immer einen Schub auf ihre intellektuellen Fertigkeiten, auch bei bereits abgeschlossenen Technologien.</TechprintDesc>
   <!-- EN: Unlocks -->
   <Unlocks>Schaltet frei</Unlocks>
 
@@ -139,6 +145,12 @@
 
   <!-- EN: Unaffiliated -->
   <FactionUnaffiliated>Ungebunden</FactionUnaffiliated>
+
+  <!-- EN: Continue anyway? -->
+  <StillWishContinue>Trotzdem fortfahren?</StillWishContinue>
+  
+  <!-- EN: ba,bah,boo,buh,ga,gah,goo,nyah,na,nah,noo,woo,wah,wuh,ma,mah -->
+  <BabyTalk>ba,bah,boo,buh,ga,gah,goo,nyah,na,nah,noo,woo,wah,wuh,ma,mah</BabyTalk>
 
   <!-- For things made of stuff, e.g. "Stone bed" -->
   <!-- 0 is the stuffAdjective property under stuffProps and 1 is the label -->
@@ -179,5 +191,16 @@
   <!-- Apparel Looks -->
   <!-- EN: variant of -->
   <VariantOf>Variante von</VariantOf>
+  
+  <!-- Familial relationships -->
+  <!-- EN: born to {0} -->
+  <BornOfParents>{0}</BornOfParents>
+  <!-- EN: unknown parents -->
+  <ParentsUnknown>unbekannten Eltern</ParentsUnknown>
+  
+  <!-- Legal status -->
+  <!-- EN: colonist -->
+  <Colonist>Kolonist</Colonist>
+  
   
 </LanguageData>

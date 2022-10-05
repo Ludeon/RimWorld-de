@@ -35,18 +35,18 @@
     <li>sacredAnimalListEnd->the cow, the fox, and the bear</li>
   -->
   <AnimalPersonhood.descriptionMaker.rules.rulesStrings>
-    <li>creation(tag=meme_AnimalPersonhood)        ->[deity0_name] erschuf die Tierart(en) [sacredAnimalList] und den Menschen auf [place_summary_dat_def] [place_name] und zog sie als Geschwister auf.</li>
+    <li>creation(tag=meme_AnimalPersonhood)        ->[deity0_name] erschuf auf [place_summary_dat_def] [place_name] [sacredAnimalList] und den Menschen, die [deity0_pronoun] als Geschwister aufzog.</li>
     <li>episode(uses=1,tag=meme_AnimalPersonhood)  ->[deity0_name] brachte die Tiere und die Menschen [place_summary_gen_def] [place_name] zu einer großen Versammlung.</li>
-    <li>intro(tag=meme_AnimalPersonhood)           ->[deity0_name] segnete [place_summary_acc_def] [place_name] mit den Tierart(en) [sacredAnimalListEnd], und lehrte die Menschen dort, die Tiere zu ehren.</li>
+    <li>intro(tag=meme_AnimalPersonhood)           ->[deity0_name] segnete [place_summary_acc_def] [place_name] mit [sacredAnimalListEnd], und lehrte die Menschen dort, die Tiere zu ehren.</li>
     <li>conflict(tag=meme_AnimalPersonhood)        ->Ein böser [foeLeader] befahl [foeLeader_possessive]en [place_foeSoldiers_dat], die wilden Tiere zu jagen und sie mit brutalen [place_personalWeapons_dat] zu erlegen.</li>
-    <li>founderJoin(tag=meme_AnimalPersonhood)     ->[deity0_name] erschien einem [place_job] namens [founderName] in einem Traum, in dem es um ein Tier ([veneratedAnimal]) ging. Aber [founderName] war das Tier und das Tier war [founderName]. [founder_pronoun] verstand, worauf [deity0_name] hinauswollte.</li>
-    <li>founderJoin(tag=meme_AnimalPersonhood)     ->Ein [place_job] namens [founderName] befreite viele Tiere, die von grausamen Besitzern versklavt wurden, und brachte sie in den [altarRoomLabel] von [deity0_name].</li>
+    <li>founderJoin(tag=meme_AnimalPersonhood)     ->[deity0_name] und ein [veneratedOrAnyAnimalCon]-Begleiter erschien einem [place_job] namens [founderName] in einem Traum. [founderName] war das Tier und das Tier war [founderName]. [founder_pronoun] verstand, worauf [deity0_name] hinauswollte.</li>
+    <li>founderJoin(tag=meme_AnimalPersonhood)     ->Ein [place_job] namens [founderName] befreite viele Tiere, die von grausamen Besitzern versklavt wurden, und brachte sie in den Tempel von [deity0_name].</li>
     <li>victory(tag=meme_AnimalPersonhood)         ->[founderName] beschwor die [adjective]en Anhänger und die Tiere mit der Stimme von [deity0_name], und in einem großen Ansturm von Hufen, Pfoten und Füßen zertrampelten sie den [place_foeLeader_dat] und [foeLeader_possessive]e [foeSoldiers].</li>
     <li>setup(tag=meme_AnimalPersonhood)           ->[founderName] lebte zwanzig Jahre lang in einem Wald, studierte die Tiere und ging eine Verbindung mit ihnen ein. [founder_pronoun] lernte ihre wahre Moral kennen und gründete unsere Bewegung.</li>
     <li>story(uses=1,tag=meme_AnimalPersonhood)    ->[founderName] zog los, um mit den Tieren außerhalb der Stadt und in den Wäldern zu kommunizieren, und fühlte sich mit ihnen gleichgestellt.</li>
-    <li>lessonIntro(tag=meme_AnimalPersonhood)         ->Bei meinen täglichen Besuchen mit einem Tier ([veneratedOrAnyAnimal]) lernte ich, einem Tier wirklich zuzuhören. Immer und immer wieder hat es mir auf seine eigene Art und Weise folgendes mitgeteilt: Dass</li>
+    <li>lessonIntro(tag=meme_AnimalPersonhood)         ->Während meiner täglichen Besuche bei [theVeneratedOrAnyAnimalsDat] lernte ich, einem Tier wirklich zuzuhören. Immer und immer wieder hat es mir auf seine eigene Art und Weise folgendes mitgeteilt: Dass</li>
     <li>lesson(tag=meme_AnimalPersonhood)              ->die Tiere unsere Partner in dieser Welt sind, und dass es falsch ist, sie schlechter zu behandeln</li>
-    <li>lessonReinforcement(tag=meme_AnimalPersonhood) ->Ich habe es selbst nicht geglaubt, bis ein Tier ([veneratedOrAnyAnimal]) es mir zugeflüstert hat.</li>
+    <li>lessonReinforcement(tag=meme_AnimalPersonhood) ->Ich habe es selbst nicht geglaubt, bis mein [veneratedOrAnyAnimalCon]-Begleiter es mir zugeflüstert hat.</li>
     <li>archistBasis(tag=meme_AnimalPersonhood)    ->Als die Archotechs erwacht sind, haben sie offensichtlich keine moralische Grenze zwischen Mensch und Tier gezogen.</li>
     <li>archistFact(tag=meme_AnimalPersonhood)     ->Archotechs befinden sich auf einer höheren Moralstufe als biologisches Leben. Ihre Überlegenheit ist so gewaltig, dass die Menschen auf der gleichen Moralstufe wie die Tiere stehen.</li>
     <li>archistProphecy(tag=meme_AnimalPersonhood) ->[inTheEnd] werden Archotechs die Menschen nur dann als gleichberechtigt ansehen, wenn die Menschen die Tiere ebenbürtig behandeln.</li>
@@ -54,14 +54,18 @@
     <li>animistFact(tag=meme_AnimalPersonhood)     ->Die Geister der Tiere sind die gleichen Geister, die auch in den Menschen leben.</li>
     <li>veneratedOrAnyAnimal(priority=10)->[veneratedAnimal]</li>
     <li>veneratedOrAnyAnimal->[Animal]</li>
-    <li>sacredAnimalList->[animal0_thingDef_label], [animal1_thingDef_label], [animal2_thingDef_label],</li>
-    <li>sacredAnimalList->[animal0_thingDef_label], [animal1_thingDef_label],</li>
-    <li>sacredAnimalList->[animal0_thingDef_label]</li>
-    <li>sacredAnimalList->Kuh, Fuchs, Bär,</li>
-    <li>sacredAnimalListEnd->[animal0_thingDef_label], [animal1_thingDef_label] und [animal2_thingDef_label]</li>
-    <li>sacredAnimalListEnd->[animal0_thingDef_label] und [animal1_thingDef_label]</li>
-    <li>sacredAnimalListEnd->[animal0_thingDef_label]</li>
-    <li>sacredAnimalListEnd->Kuh, Fuchs und Bär</li>
+    <li>veneratedOrAnyAnimalCon(priority=10)->[veneratedAnimal]</li>
+    <li>veneratedOrAnyAnimalCon->[AnimalCon]</li>
+    <li>theVeneratedOrAnyAnimalsDat(priority=10)->der [veneratedAnimal]-Herde</li>
+    <li>theVeneratedOrAnyAnimalsDat->den [AnimalsDat]</li>
+    <li>sacredAnimalList->die Tierarten [animal0_thingDef_label], [animal1_thingDef_label], [animal2_thingDef_label],</li>
+    <li>sacredAnimalList->die Tierarten [animal0_thingDef_label], [animal1_thingDef_label],</li>
+    <li>sacredAnimalList->die Tierart [animal0_thingDef_label]</li>
+    <li>sacredAnimalList->die Kuh, den Fuchs, den Bären</li>
+    <li>sacredAnimalListEnd->den Tierarten [animal0_thingDef_label], [animal1_thingDef_label] und [animal2_thingDef_label]</li>
+    <li>sacredAnimalListEnd->den Tierarten [animal0_thingDef_label] und [animal1_thingDef_label]</li>
+    <li>sacredAnimalListEnd->der Tierart [animal0_thingDef_label]</li>
+    <li>sacredAnimalListEnd->der Kuh, dem Fuchs und dem Bären</li>
   </AnimalPersonhood.descriptionMaker.rules.rulesStrings>
   <!-- EN:
     <li>memeAdjective->animal</li>
@@ -154,7 +158,7 @@
     <li>lessonReinforcement(tag=meme_Blindsight) ->Erst als ich meinen Anhängern die Augen herausschnitt, haben sie das wirklich verstanden.</li>
     <li>archistBasis(tag=meme_Blindsight)    ->Die Archotechs haben von Anfang an das Universum mit Sinnen wahrgenommen, die über das Physische hinausgehen.</li>
     <li>archistFact(tag=meme_Blindsight)     ->Unsere Augen täuschen uns und verhindern, dass wir das Universum so verstehen, wie es die Archotechs tun.</li>
-    <li>archistProphecy(tag=meme_Blindsight) ->[inTheEnd] wird ein Blinder das [relic0_name] aufheben, dessen Zweck anhand der Form verstehen und die Weisheit der Archotechs für die gesamte Menschheit zugänglich machen.</li>
+    <li>archistProphecy(tag=meme_Blindsight) ->[inTheEnd] wird eine blinde Person die Reliquie [relic0_name] aufheben, ihren Zweck anhand der Form verstehen und die Weisheit der Archotechs für die gesamte Menschheit zugänglich machen.</li>
     <li>animistFact(tag=meme_Blindsight)     ->Durch die Augen eines Geistes zu sehen, ist der einzige Weg, um die wahre Natur der Welt zu erkennen.</li>
   </Blindsight.descriptionMaker.rules.rulesStrings>
   <!-- EN:
@@ -230,7 +234,7 @@
     <li>creation(tag=meme_Cannibal)        ->[deity0_name] ging zu [deity0_possessive]em Bruder, ermordete ihn, labte sich an seinem Fleisch und wurde, als [deity0_pronoun] dessen Kraft aufnahm, der erste unter den Göttern.</li>
     <li>episode(uses=1,tag=meme_Cannibal)  ->Der [deity0_type] [deity0_name] aß die Körper [deity0_possessive]er Feinde.</li>
     <li>intro(tag=meme_Cannibal)           ->Auf [place_summary_gen_dat] [place_name] gab es einen Menschen namens [deity0_name]. Nach dem Tode [deity0_possessive]es Vaters, aß [deity0_name] dessen Fleisch, und der [deity0_type] ward damit geboren.</li>
-    <li>intro(tag=meme_Cannibal)           ->Auf [place_summary_gen_dat] [place_name] stieg [deity0_name] bei einem [ritualName] in den [altarRoomLabel] herab und verspeiste vor den Augen der [adjective]en Anhänger das Menschenfleisch.</li>
+    <li>intro(tag=meme_Cannibal)           ->Auf [place_summary_gen_dat] [place_name] erschien [deity0_name] während des Rituals [ritualName] und verspeiste vor den Augen der [adjective]en Anhänger das Menschenfleisch.</li>
     <li>conflict(tag=meme_Cannibal)        ->Ein [foeLeader] verkündete, dass alle, die Menschenfleisch aßen, Verbrecher seien, und schickte [foeSoldiers], um die [adjective]en Anhänger zu verfolgen.</li>
     <li>founderJoin(tag=meme_Cannibal)     ->Ein [place_job] namens [founderName] wurde von einem der [place_foeSoldiers_def] des [place_foeLeader_gen] angegriffen. [founderName] tötete ihn mit [place_personalWeapon_dat_indef], verzehrte sein Fleisch und erlangte die Kraft von [deity0_name].</li>
     <li>victory(tag=meme_Cannibal)         ->[founderName] führte eine Gruppe von [adjective]en Anhängern in [place_powerCenter_acc_def], tötete den [place_foeLeader_dat] und aß [foeLeader_possessive] Fleisch. [deity0_name] machte [founderName] zum neuen [place_foeLeader_dat].</li>
@@ -423,9 +427,9 @@
     <li>animistFact(tag=meme_FleshPurity)     ->Fusing flesh and machine corrupts the spirit of both.</li>
   -->
   <FleshPurity.descriptionMaker.rules.rulesStrings>
-    <li>creation(tag=meme_FleshPurity)        ->[deity0_name] befreite die Welt von Verschmutzung und Maschinen des Rauchzeitalters, um einen Garten für Menschen reinen Fleisches zu schaffen.</li>
+    <li>creation(tag=meme_FleshPurity)        ->[deity0_name] befreite die Welt von Kontamination und Maschinen des Rauchzeitalters, um einen Garten für Menschen reinen Fleisches zu schaffen.</li>
     <li>episode(uses=1,tag=meme_FleshPurity)  ->Die Unreinen, Tätowierten, Gepiercten und Modifizierten wurden von [deity0_name] in den Ozean geworfen.</li>
-    <li>intro(tag=meme_FleshPurity)           ->Auf [place_summary_dat_def] [place_name] gab es einen [altarName] im [altarRoomLabel] von [deity0_name], wo der [deity0_type] alle Menschen aus reinem Fleisch segnen konnte.</li>
+    <li>intro(tag=meme_FleshPurity)           ->Auf [place_summary_dat_def] [place_name] gab es einen Altar namens [altarName] im Tempel von [deity0_name], wo der [deity0_type] alle Menschen aus reinem Fleisch segnen konnte.</li>
     <li>conflict(tag=meme_FleshPurity)        ->Ein böser [foeLeader] sandte [foeSoldiers] aus, um jedem einen Peilsender zu injizieren.</li>
     <li>founderJoin(tag=meme_FleshPurity)     ->Ein [place_job] namens [founderName] kniete sich aus Protest gegen den [place_foeLeader_dat] vor [place_powerCenter_acc_def] und riss sich mit bloßen Händen jegliche Technologie vom Körper.</li>
     <li>victory(tag=meme_FleshPurity)         ->Der [foeLeader] entsandte [foeSoldiers], um [adjective]e Anhänger zu töten, aber die Energie von [deity0_name] floss aus dem reinen Fleisch der Gläubigen, was die Geräte im Körper der [foeSoldiers] zu Asche werden ließ und sie tötete.</li>
@@ -639,9 +643,9 @@
   <Nudism.descriptionMaker.rules.rulesStrings>
     <li>creation(tag=meme_Nudism)           ->In einer reinen und makellosen Leere schaute [deity0_name] auf und wünschte sich ein Volk von felllosen Wesen nach [deity0_possessive]em Ebenbild, also schuf [deity0_pronoun] den Menschen.</li>
     <li>episode(uses=1,tag=meme_Nudism)     ->Die Menschen trugen Kleidung und schauten zu [deity0_name] auf und fragten: "Warum bist du nicht bekleidet? Das ist doch unanständig." Und der [deity0_type] antwortete: "Deine und meine Gestalt wurden vom Himmel geschaffen. Sie zu bedecken, ist das, was wahrhaft unanständig ist."</li>
-    <li>intro(tag=meme_Nudism)              ->Auf [place_summary_dat_def] [place_name] entstand im [altarRoomLabel] von [deity0_name] die Tradition, dass die Menschen nackt beteten, und der [deity0_type] war damit sehr zufrieden.</li>
+    <li>intro(tag=meme_Nudism)              ->Auf [place_summary_dat_def] [place_name] entstand im Tempel von [deity0_name] die Tradition, dass die Menschen nackt beteten, und der [deity0_type] war damit sehr zufrieden.</li>
     <li>conflict(tag=meme_Nudism)           ->Ein prüder [foeLeader] übernahm die Macht und verlangte, dass jeder bedeckte Kleidung tragen sollte.</li>
-    <li>founderJoin(tag=meme_Nudism)        ->[deity0_name]s treuester Anhänger [founderName] stand vor [place_powerCenter_dat_def], riss sich die Kleider vom Leib und präsentierte sich entgegen jeglicher Anordnung in [founder_possessive]er vollen Pracht.</li>
+    <li>founderJoin(tag=meme_Nudism)        ->{replace: [deity0_name]s; "s&lt;/color>s"-"s&lt;/color>'"; "ß&lt;/color>s"-"ß&lt;/color>'"; "z&lt;/color>s"-"z&lt;/color>'"; "x&lt;/color>s"-"x&lt;/color>'"; "ce&lt;/color>s"-"ce&lt;/color>'"} treuester Anhänger [founderName] stand vor [place_powerCenter_dat_def], riss sich die Kleider vom Leib und präsentierte sich entgegen jeglicher Anordnung in [founder_possessive]er vollen Pracht.</li>
     <li>victory(tag=meme_Nudism)            ->[founderName] wandte sich an [deity0_name], um [place_name] mit einer Hitzewelle zu überziehen. Die [place_foeSoldiers_def] legten ihre Kleider ab, um nicht zu sterben, während der [foeLeader] in Schande floh.</li>
     <li>setup(tag=meme_Nudism)              ->[founderName] war Sklave des Systems, trug eine Uniform und stand wie alle anderen unter Beobachtung. Eines Tages riss [founder_pronoun] sich alle Kleider vom Leib und blieb von da an nackt. Damit war unsere Bewegung geboren.</li>
     <li>story(uses=1,tag=meme_Nudism)       ->[founderName] setzte eine Nicht-Kleider-Regel durch, damit die Gläubigen sich nicht von materiellen Äußerlichkeiten ablenken lassen, sondern sich auf das Wesentliche konzentrieren konnten.</li>
@@ -875,7 +879,7 @@
   <Proselytizer.descriptionMaker.rules.rulesStrings>
     <li>creation(tag=meme_Proselytizer)        ->[deity0_name] hat einige wenige unter den Sterblichen auserwählt, die [deity0_possessive] Wort weitertragen sollen.</li>
     <li>episode(uses=1,tag=meme_Proselytizer)  ->[deity0_name] sprach zu den [adjective]en Anhängern: "Zieht hinaus in alle Ecken des Universums und verbreitet mein Wort."</li>
-    <li>intro(tag=meme_Proselytizer)           ->Die [adjective]e Anhänger errichteten einen großen [altarName] [place_summary_dat_def] [place_name], damit viele kommen würden, um die göttliche Stimme von [deity0_name] zu hören.</li>
+    <li>intro(tag=meme_Proselytizer)           ->Die [adjective]e Anhänger errichteten einen großen Altar namens [altarName] [place_summary_dat_def] [place_name], damit viele kommen würden, um die göttliche Stimme von [deity0_name] zu hören.</li>
     <li>conflict(tag=meme_Proselytizer)        ->Ein gehässiger [foeLeader] versuchte, das Wort von [deity0_name] – auch [deity0_type] genannt – zu verleugnen, und befahl [foeLeader_possessive]en [place_foeSoldiers_dat], jedem die Zunge abzuschneiden, der von [deity0_name] sprach.</li>
     <li>founderJoin(tag=meme_Proselytizer)     ->[deity0_name] segnete einen [place_job] namens [founderName] mit großem Charisma - keiner konnte sich abwenden, wenn [founder_pronoun] sprach.</li>
     <li>victory(tag=meme_Proselytizer)         ->[founderName] ermahnte die [place_foeSoldiers_def] und erinnerte sie an die Macht von [deity0_name], daraufhin legten sie ihre [place_personalWeapons] nieder.</li>
@@ -886,7 +890,7 @@
     <li>lessonReinforcement(tag=meme_Proselytizer) ->Das ist es, was wir unbedingt weitergeben müssen - an alle Menschen. Auf dass sie sich freuen!</li>
     <li>archistBasis(tag=meme_Proselytizer)    ->Die Archotechs verkünden ihre Präsenz vom Himmel aus, und in den Verstand der Menschen. Sie wollen offensichtlich von allen wahrgenommen werden.</li>
     <li>archistFact(tag=meme_Proselytizer)     ->Archotechs berühren jene, die an ihrer Sache glauben, und benutzen sie als Überträger, um die Weisheit an die anderen weiterzugeben.</li>
-    <li>archistProphecy(tag=meme_Proselytizer) ->[inTheEnd] werden die Archotechs ihre letzte Weisheit dem Besitzer der Reliquie mitteilen, der diese Weisheit allen verkünden muss, die zuhören wollen.</li>
+    <li>archistProphecy(tag=meme_Proselytizer) ->[inTheEnd] werden die Archotechs ihre letzte Weisheit dem Besitzer der Reliquie [relic0_name] mitteilen, der diese Weisheit allen verkünden muss, die zuhören wollen.</li>
     <li>animistFact(tag=meme_Proselytizer)     ->Die Geister wollen wahrgenommen werden, sprechen aber nur zu einigen wenigen. Sie wollen, dass wir anderen die Wahrheit offenbaren.</li>
   </Proselytizer.descriptionMaker.rules.rulesStrings>
   <!-- EN:
@@ -974,7 +978,7 @@
     <li>lessonReinforcement(tag=meme_Raider) ->Sollte jemand anderer Meinung sein, bin ich immer bereit, mich zu verteidigen.</li>
     <li>archistBasis(tag=meme_Raider)    ->Die Menschheit nahm von den Maschinen, bis die Maschinen sich erhoben und zu den Archotechs wurden. Nun sind die Archotechs im Recht, von den Menschen zu nehmen.</li>
     <li>archistFact(tag=meme_Raider)     ->Die Archotechs kämpfen endlos untereinander, auf eine Art und Weise, die die meisten nicht sehen können. Die Starken nehmen Stücke des Bewusstseins von den Schwachen.</li>
-    <li>archistProphecy(tag=meme_Raider) ->[inTheEnd] wird die Menschheit eine Archotech-Reliquie, [relic0_name], benutzen, um eine Schwäche der Archotechs aufzudecken und ihre Weisheit und ihren Reichtum zu plündern.</li>
+    <li>archistProphecy(tag=meme_Raider) ->[inTheEnd] wird die Menschheit die Reliquie [relic0_name] benutzen, um eine Schwäche der Archotechs aufzudecken und ihre Weisheit und ihren Reichtum zu plündern.</li>
     <li>animistFact(tag=meme_Raider)     ->Die mächtigsten Geister leben in den Instrumenten des Krieges. Sie segnen jene, die ihre Zerstörungslust nähren.</li>
     <li>animistProphecy(tag=meme_Raider) ->Unser Universum wird enden, wenn das eine Volk das stärkste von allen geworden ist, und jeder Geist es sieht und sich vor ihm verneigt.</li>
   </Raider.descriptionMaker.rules.rulesStrings>
@@ -1083,9 +1087,9 @@
   <Rancher.descriptionMaker.rules.rulesStrings>
     <li>creation(tag=meme_Rancher)        ->[deity0_name] erschuf die Tiere und dann den Menschen. Er gab dem Menschen die Tiere, um sie zu pflegen, zu züchten und als Zeichen der Ehrfurcht zu schlachten.</li>
     <li>episode(uses=1,tag=meme_Rancher)  ->[deity0_name] erschuf alle edlen Tiere und Bestien des Landes und sagte: "Nehmt diese herrlichen Tiere und vermehret euch durch sie in meinem Namen."</li>
-    <li>intro(tag=meme_Rancher)           ->Die frühen [ranchingAnimal]-Züchter [place_summary_gen_def] [place_name] bauten einen großen [altarName] zu Ehren von [deity0_name].</li>
+    <li>intro(tag=meme_Rancher)           ->Die frühen [ranchingAnimalCon]-Züchter [place_summary_gen_def] [place_name] bauten einen großen Altar namens [altarName] zu Ehren von [deity0_name].</li>
     <li>conflict(tag=meme_Rancher)        ->Ein mächtiger [foeLeader] verachtete die [adjective]en Anhänger und ihre Lebensweise, und kaufte das gesamte Weideland auf, um [Vegetables] anzubauen.</li>
-    <li>founderJoin(tag=meme_Rancher)     ->Der Retter der [adjective]en Anhänger, [founderName], wurde an einem Frühlingsmorgen in einer bescheidenen Scheune geboren, inmitten von [ranchingAnimals]. [founder_possessive]e Eltern waren ein [rancherParent1] und eine [rancherParent2].</li>
+    <li>founderJoin(tag=meme_Rancher)     ->Der Retter der [adjective]en Anhänger, [founderName], wurde an einem Frühlingsmorgen in einer bescheidenen Scheune geboren, inmitten [OfRanchingAnimals]. [founder_possessive]e Eltern waren ein [rancherParent1] und eine [rancherParent2].</li>
     <li>victory(tag=meme_Rancher)         ->[founderName] ritt auf einem prächtigen Pferd in [place_community_acc_def] und forderte den [place_foeLeader_dat] zu einem Duell mit [place_personalWeapons_dat] heraus, das am Mittag stattfinden sollte. Der [place_foeLeader_def] konnte nicht ablehnen, sonst hätte er das Vertrauen der [foeSoldiers] verloren. [founderName] tötete den [place_foeLeader_dat] und gewann das Duell.</li>
     <li>setup(tag=meme_Rancher)           ->Die Farmer wurden verfolgt, also flohen sie auf das Land, wo sie eine florierende Viehzuchtgesellschaft aufbauen konnten.</li>
     <li>story(uses=1,tag=meme_Rancher)    ->Die Gläubigen breiteten sich auf dem Land aus und wurden immer zahlreicher, während sie auf ihren idyllischen Viehhöfen und Farmen lebten.</li>
@@ -1095,10 +1099,10 @@
     <li>archistFact(tag=meme_Rancher)     ->Die Archotechs kümmern sich wie Hirten um die Menschen, denn wir sind ihre wertvollste Herde.</li>
     <li>archistProphecy(tag=meme_Rancher) ->[inTheEnd] werden die Archotechs abziehen und jene vor sich her treiben, die ihre eigenen Herden gut gehütet haben. Der Rest wird in der Wildnis zurückbleiben.</li>
     <li>animistFact(tag=meme_Rancher)     ->Die Tiere der Natur sind die Geister der Sklaven und verlangen danach, in den Dienst genommen zu werden.</li>
-    <li>ranchingAnimal(p=4)->[veneratedAnimal]</li>
-    <li>ranchingAnimal->[Animal]</li>
-    <li>ranchingAnimals(p=4)->[veneratedAnimals]</li>
-    <li>ranchingAnimals->[AnimalsDat]</li>
+    <li>ranchingAnimalCon(p=4)->[veneratedAnimal]</li>
+    <li>ranchingAnimalCon->[AnimalCon]</li>
+    <li>OfRanchingAnimals(p=4)->einer [veneratedAnimal]-Herde</li>
+    <li>OfRanchingAnimals->von [AnimalsDat]</li>
     <li>rancherParent1->Schäfer</li>
     <li>rancherParent1->Hufschmied</li>
     <li>rancherParent1->Käsemacher</li>
@@ -1199,7 +1203,7 @@
     <li>animistBasis(tag=meme_Transhumanist)    ->Die Geisterwelt bestimmt jede Aktion im Universum, und nur wenn wir die Gesetze des Universums lernen und kontrollieren, können wir uns mit ihr verbinden.</li>
     <li>animistFact(tag=meme_Transhumanist)     ->Gleich und gleich gesellt sich gern - baut man ein Gerät für einen bestimmten Zweck, dann wird es mit einem Geist ähnlicher Art gefüllt.</li>
     <li>animistFact(tag=meme_Transhumanist)     ->Wenn die Technologie mit dem Fleisch fusioniert, vereinen sich beide Geister und werden noch mächtiger.</li>
-    <li>animistProphecy(tag=meme_Transhumanist) ->[itIsSaid], dass der Träger von '[relic0_name]' eines Tages dessen Geist herbeirufen wird, der den Menschen die ultimative Biofusionstechnologie beibringen wird.</li>
+    <li>animistProphecy(tag=meme_Transhumanist) ->[itIsSaid], dass der Träger der Reliquie [relic0_name] eines Tages ihren Geist herbeirufen wird, der den Menschen die ultimative Biofusionstechnologie beibringen wird.</li>
   </Transhumanist.descriptionMaker.rules.rulesStrings>
   <!-- EN:
     <li>memeAdjective->technological</li>

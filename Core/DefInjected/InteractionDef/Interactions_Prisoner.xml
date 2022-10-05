@@ -43,6 +43,7 @@
     <li>r_logentry->[INITIATOR_nameDef] erzählte [RECIPIENT_nameDef] [toldastoryabout] [subject].</li>
     <li>r_logentry->[INITIATOR_nameDef] ermunterte [RECIPIENT_nameDef], [talkabout].</li>
     <li>r_logentry->[INITIATOR_nameDef] gab [RECIPIENT_nameDef] eine Chance, [talkabout].</li>
+    <li>r_logentry->[INITIATOR_nameDef] zeigte Interesse an {replace: [RECIPIENT_nameDef]s; "s&lt;/color>s"-"s&lt;/color>'"; "ß&lt;/color>s"-"ß&lt;/color>'"; "z&lt;/color>s"-"z&lt;/color>'"; "x&lt;/color>s"-"x&lt;/color>'"; "ce&lt;/color>s"-"ce&lt;/color>'"} [PersonalCharacteristicsDat].</li>
     <li>r_logentry(p=0.25)->[INITIATOR_nameDef] zeigte Interesse an den [PersonalCharacteristicsDat] von [RECIPIENT_nameDef].</li>
     <li>r_logentry(p=0.25)->[INITIATOR_nameDef] zeigte Interesse am [PersonalCharacteristicMas] von [RECIPIENT_nameDef].</li>
     <li>r_logentry(p=0.25)->[INITIATOR_nameDef] zeigte Interesse an der [PersonalCharacteristicFem] von [RECIPIENT_nameDef].</li>
@@ -112,18 +113,15 @@
   -->
   <SparkJailbreak.logRulesInitiator.rulesStrings>
     <li>r_logentry->[INITIATOR_nameDef] sprach über die Vorzüge von [freedom] und zeigte eine Möglichkeit zur Flucht auf.</li>
-    <li>r_logentry(p=0.33)->[INITIATOR_nameDef] sprach darüber, wie schön der [TerrainFeatureMas] ist, und bot [ihm] Freiheit an.</li>
-    <li>r_logentry(p=0.33)->[INITIATOR_nameDef] sprach darüber, wie schön die [TerrainFeatureFem] ist, und bot [ihm] Freiheit an.</li>
-    <li>r_logentry(p=0.33)->[INITIATOR_nameDef] sprach darüber, wie schön das [TerrainFeatureNeu] ist, und bot [ihm] Freiheit an.</li>
-    <li>r_logentry->[INITIATOR_nameDef] zeigte [RECIPIENT_nameDef] einen Fluchtweg und versprach [ihm] [freedom].</li>
+    <li>r_logentry(p=0.33)->[INITIATOR_nameDef] sprach darüber, wie schön der [TerrainFeatureMas] ist, und bot {RECIPIENT_gender ? ihm : ihr} Freiheit an.</li>
+    <li>r_logentry(p=0.33)->[INITIATOR_nameDef] sprach darüber, wie schön die [TerrainFeatureFem] ist, und bot {RECIPIENT_gender ? ihm : ihr} Freiheit an.</li>
+    <li>r_logentry(p=0.33)->[INITIATOR_nameDef] sprach darüber, wie schön das [TerrainFeatureNeu] ist, und bot {RECIPIENT_gender ? ihm : ihr} Freiheit an.</li>
+    <li>r_logentry->[INITIATOR_nameDef] zeigte [RECIPIENT_nameDef] einen Fluchtweg und versprach {RECIPIENT_gender ? ihm : ihr} [freedom].</li>
     <li>r_logentry->[INITIATOR_nameDef] erklärte [RECIPIENT_nameDef], dass die Sicherheitsvorkehrungen lasch sind, und ermutigte [RECIPIENT_objective] zur Flucht.</li>
     <li>freedom->Freiheit</li>
     <li>freedom->Chancen</li>
     <li>freedom->Heimkehr</li>
     <li>freedom->Selbstbestimmung</li>
-    <!-- gender-specific -->
-    <li>ihm(RECIPIENT_gender!=Female)->ihm</li>
-    <li>ihm(RECIPIENT_gender==Female)->ihr</li>
   </SparkJailbreak.logRulesInitiator.rulesStrings>
   
 </LanguageData>

@@ -7,9 +7,9 @@
   <!-- EN: Allow -->
   <CommandAllow>Erlauben</CommandAllow>
   <!-- EN: Forbidden: Your colonists are not allowed to interact with this. Click to allow. -->
-  <CommandForbiddenDesc>Verboten: Deine Kolonisten dürfen damit nicht interagieren. Klicke hier, um es ihnen zu erlauben.</CommandForbiddenDesc>
+  <CommandForbiddenDesc>Verboten: Deine Kolonisten dürfen damit nicht interagieren. Klicke zum Erlauben.</CommandForbiddenDesc>
   <!-- EN: Allowed: Your colonists are allowed to interact with this. Click to forbid. -->
-  <CommandNotForbiddenDesc>Erlaubt: Deine Kolonisten dürfen damit interagieren. Klicke hier, um es ihnen zu verbieten.</CommandNotForbiddenDesc>
+  <CommandNotForbiddenDesc>Erlaubt: Deine Kolonisten dürfen damit interagieren. Klicke zum Verbieten.</CommandNotForbiddenDesc>
 
   <!-- Power -->
   <!-- EN: Toggle power -->
@@ -44,7 +44,7 @@
   <!-- EN: {1_labelShort} cannot walk. -->
   <IsIncapped>{1_labelShort} kann nicht laufen.</IsIncapped>
   <!-- EN: {0_labelShort} is participating in {1}. -->
-  <ParticipatingInRitual>{0_labelShort} nimmt gerade an dem Ritual '{1}' teil.</ParticipatingInRitual>
+  <ParticipatingInRitual>{0_labelShort} nimmt gerade an '{1}' teil.</ParticipatingInRitual>
 
   <!-- EN: Fire at will -->
   <CommandFireAtWillLabel>Schießen erlauben</CommandFireAtWillLabel>
@@ -69,7 +69,7 @@
   <!-- EN: Set owner -->
   <CommandThingSetOwnerLabel>Besitzer wählen</CommandThingSetOwnerLabel>
   <!-- EN: Assign this bed to be owned by a specific {0}. -->
-  <CommandBedSetOwnerDesc>Weise dieses Bett einem bestimmten {lookup: {0}; Singular; 3} zu.</CommandBedSetOwnerDesc>
+  <CommandBedSetOwnerDesc>Weise dieses Bett einem bestimmten {lookup: {0}; decline; 2} zu.</CommandBedSetOwnerDesc>
   <!-- EN: Assign this throne to be owned by a specific colonist. -->
   <CommandThroneSetOwnerDesc>Weise diesen Thron einem bestimmten Kolonisten zu.</CommandThroneSetOwnerDesc>
   <!-- EN: Assign this meditation spot to be owned by a specific colonist. -->
@@ -128,13 +128,13 @@
 
   <!-- EN: Copy settings -->
   <CommandCopyZoneSettingsLabel>Einstellung kopieren</CommandCopyZoneSettingsLabel>
-  <!-- EN: Copy this zone's settings to the clipboard so you can paste them onto another zone. -->
-  <CommandCopyZoneSettingsDesc>Kopiere die Einstellungen dieser Zone in die Zwischenablage, um sie in eine andere Zone einzufügen.</CommandCopyZoneSettingsDesc>
+  <!-- EN: Copy this storage's settings to the clipboard so you can paste them onto another zone. -->
+  <CommandCopyZoneSettingsDesc>Kopiere die Einstellungen dieses Lagers in die Zwischenablage, um sie in einen anderen Lager einzufügen.</CommandCopyZoneSettingsDesc>
 
   <!-- EN: Paste settings -->
   <CommandPasteZoneSettingsLabel>Einstellung einfügen</CommandPasteZoneSettingsLabel>
-  <!-- EN: Overwrite this zone's settings with those previously copied to the clipboard. -->
-  <CommandPasteZoneSettingsDesc>Überschreibe die Einstellungen dieser Zone mit denen, die vorher in die Zwischenablage kopiert wurden.</CommandPasteZoneSettingsDesc>
+  <!-- EN: Overwrite this storage's settings with those previously copied to the clipboard. -->
+  <CommandPasteZoneSettingsDesc>Überschreibe die Einstellungen dieses Lagers mit den zuvor kopierten aus der Zwischenablage.</CommandPasteZoneSettingsDesc>
 
   <!-- EN: Allow sowing -->
   <CommandAllowSow>Anbauen erlauben</CommandAllowSow>
@@ -143,8 +143,13 @@
 
   <!-- EN: Allow cutting -->
   <CommandAllowCut>Entfernen erlauben</CommandAllowCut>
-  <!-- EN: When disabled, colonists will never cut plants in this zone. They will still sow new plants in spaces that are already empty, and harvest. -->
-  <CommandAllowCutDesc>Wenn diese Option deaktiviert ist, werden Kolonisten keine Pflanzen in dieser Zone entfernen. Sie dürfen aber weiterhin neue Pflanzen auf bereits leeren Zellen anbauen und die Zone abernten.</CommandAllowCutDesc>
+  <!-- EN: When disabled, colonists will never cut plants in this zone. They will still sow new plants in spaces that are already empty, and harvest plants matching the growing zone plant type. -->
+  <CommandAllowCutDesc>Wenn diese Option deaktiviert ist, werden Kolonisten keine Pflanzen in dieser Zone entfernen. Sie dürfen aber weiterhin neue Pflanzen auf bereits leeren Zellen anbauen und Pflanzen ernten, die dem Pflanzentyp der Anbauzone entsprechen.</CommandAllowCutDesc>
+  
+  <!-- EN: Select {0_label} -->
+  <CommandSelectStoredThing>{0_label} selektieren</CommandSelectStoredThing>
+  <!-- EN: Select the item stored in here. -->
+  <CommandSelectStoredThingDesc>Selektiere den hier gelagerten Gegenstand.</CommandSelectStoredThingDesc>
 
   <!-- Artillery -->
   <!-- EN: Set forced target -->
@@ -216,7 +221,7 @@
   <!-- EN: This item is currently packaged up for storage and transport. Use this command to install this item in a final location. -->
   <CommandInstallDesc>Dieses Objekt ist gerade für Lagerung und Transport verpackt. Benutze diesen Befehl, um es woanders wieder zu montieren.</CommandInstallDesc>
   <!-- EN: Reinstall at... -->
-  <CommandReinstall>Neu montieren bei...</CommandReinstall>
+  <CommandReinstall>Versetzen...</CommandReinstall>
   <!-- EN: Designate this item to be uninstalled and reinstalled somewhere else. -->
   <CommandReinstallDesc>Ordne an, dass dieses Objekt demontiert und woanders wieder montiert werden soll.</CommandReinstallDesc>
   <!-- EN: Replant -->
@@ -258,7 +263,7 @@
   
   <!-- Melee attack -->
   <!-- EN: Melee attack -->
-  <CommandMeleeAttack>Nahkampfangriff</CommandMeleeAttack>
+  <CommandMeleeAttack>Im Nahkampf angreifen</CommandMeleeAttack>
   <!-- EN: Order selected colonists to attack designated target using only fists and melee weapons. -->
   <CommandMeleeAttackDesc>Befiehl den ausgewählten Kolonisten, ein bestimmtes Ziel nur mit Fäusten und Nahkampfwaffen anzugreifen.</CommandMeleeAttackDesc>
 
@@ -271,6 +276,8 @@
   <!-- reload -->
   <!-- EN: No {CHARGENOUN_plural} left. -->
   <CommandReload_NoCharges>Keine {CHARGENOUN_plural} mehr.</CommandReload_NoCharges>
+  <!-- EN: {COOLDOWNGERUND} for {TIME}. -->
+  <CommandReload_Cooldown>{COOLDOWNGERUND} (noch {TIME}).</CommandReload_Cooldown>
   <!-- EN: Needs to be reloaded with {COUNT} {AMMO_label}. -->
   <CommandReload_NoAmmo>Muss mit {COUNT} {AMMO_label} nachgeladen werden.</CommandReload_NoAmmo>
   
@@ -297,6 +304,8 @@
   <CommandFormCaravan>Karawane formieren</CommandFormCaravan>
   <!-- EN: Form a group of colonists able to travel to new areas. The colonists will gather all the assigned supplies and accompanying animals, leave their current area, and await further orders. -->
   <CommandFormCaravanDesc>Formiere eine Gruppe von Kolonisten, die in neue Gebiete reisen sollen. Die Kolonisten werden die zugewiesenen Vorräte und Begleittiere einsammeln, ihr aktuelles Gebiet verlassen und auf weitere Befehle warten.</CommandFormCaravanDesc>
+  <!-- EN: This spot will be used as a meeting point for the caravan. All goods and animals will be brought here before leaving. -->
+  <CommandFormCaravanDescAtSpot>Dieser Platz wird als Treffpunkt für die Karawane genutzt. Alle Waren und Tiere werden vor der Abreise hierher gebracht.</CommandFormCaravanDescAtSpot>
   
   <!-- Reform caravan -->
   <!-- EN: Reform caravan -->
@@ -492,9 +501,9 @@
 
   <!-- Pause caravan -->
   <!-- EN: Rest -->
-  <CommandPauseCaravan>Campieren</CommandPauseCaravan>
+  <CommandPauseCaravan>Rasten</CommandPauseCaravan>
   <!-- EN: Start resting. This has the following benefits:\n\n  - People can interact socially\n  - Forage for food {0} times faster\n  - Visibility multiplied by {1} -->
-  <CommandToggleCaravanPauseDesc>Lass die Karawane hier rasten. Das hat die folgenden Vorteile:\n\n  - Leute können sozial miteinander interagieren\n  - Nahrungssuche ist {0}x schneller\n  - Sichtbarkeit multipliziert mit {1}</CommandToggleCaravanPauseDesc>
+  <CommandToggleCaravanPauseDesc>Lass die Karawane hier rasten. Dies hat folgende Vorteile:\n\n  - Leute können sozial interagieren\n  - Nahrungssuche ist {0}-mal schneller\n  - Sichtbarkeit multipliziert mit {1}</CommandToggleCaravanPauseDesc>
   
   <!-- Show sellable items -->
   <!-- EN: Show what will buy -->
@@ -552,10 +561,34 @@
 
   <!-- Carry -->
   <!-- EN: Drop {0_nameDef} -->
-  <CommandDropPawn>Lass {0_nameDef} fallen</CommandDropPawn>
+  <CommandDropPawn>Lege {0_nameDef} ab</CommandDropPawn>
   <!-- EN: Drop the person being carried. -->
-  <CommandDropPawnDesc>Lass die Person, die getragen wird fallen.</CommandDropPawnDesc>
-  
+  <CommandDropPawnDesc>Lege die getragene Person auf den Boden.</CommandDropPawnDesc>
+  <!-- EN: Select {0_nameDef} -->
+  <CommandSelectCarriedPawn>{0_nameDef} selektieren</CommandSelectCarriedPawn>
+  <!-- EN: Select the creature being carried. -->
+  <CommandSelectCarriedPawnDesc>Selektiere die getragene Kreatur.</CommandSelectCarriedPawnDesc>
+  <!-- EN: Select {0_label} -->
+  <CommandSelectCarriedThing>{0_label} selektieren</CommandSelectCarriedThing>
+  <!-- EN: Select the carried item. -->
+  <CommandSelectCarriedThingDesc>Selektiere den getragenen Gegenstand.</CommandSelectCarriedThingDesc>
+  <!-- EN: Select {0_label} -->
+  <CommandSelectContainerThing>{0_label} selektieren</CommandSelectContainerThing>
+  <!-- EN: Select the containing item. -->
+  <CommandSelectContainerThingDesc>Selektiere den Behälter.</CommandSelectContainerThingDesc>
+  <!-- EN: Select {0_nameDef} -->
+  <CommandSelectCarryingPawn>{0_nameDef} selektieren</CommandSelectCarryingPawn>
+  <!-- EN: Select the carrying creature. -->
+  <CommandSelectCarryingPawnDesc>Selektiere den Träger.</CommandSelectCarryingPawnDesc>
+  <!-- EN: Select {0_nameDef} -->
+  <CommandSelectContainedPawn>{0_nameDef} selektieren</CommandSelectContainedPawn>
+  <!-- EN: Select the contained creature. -->
+  <CommandSelectContainedPawnDesc>Selektiere die enthaltene Kreatur.</CommandSelectContainedPawnDesc>
+  <!-- EN: Select {0_label} -->
+  <CommandSelectContainedThing>{0_label} selektieren</CommandSelectContainedThing>
+  <!-- EN: Select the contained item. -->
+  <CommandSelectContainedThingDesc>Selektiere den enthaltenen Gegenstand.</CommandSelectContainedThingDesc>
+
   <!-- Take a drug -->
   <!-- EN: Take drug... -->
   <TakeDrug>Droge einnehmen...</TakeDrug>
@@ -572,13 +605,37 @@
   <!-- EN: Stop participating in the {RITUAL_labelDef}. The ritual will continue as long as it has at least one participant. -->
   <CommandLeaveRitualDesc>Beende die Teilnahme am Ritual '{RITUAL_label}'. Das Ritual läuft weiter, solange noch mindestens ein Teilnehmer vorhanden ist.</CommandLeaveRitualDesc>
   <!-- EN: This is the last participant in the {RITUAL_labelDef}. -->
-  <CommandLeaveLastParticipant>Diese Person ist der letzte Teilnehmer des Rituals '{RITUAL_label}'.</CommandLeaveLastParticipant>
+  <CommandLeaveLastParticipant>Diese Person ist der letzte Teilnehmer von '{RITUAL_label}'.</CommandLeaveLastParticipant>
 
   <!-- EN: Cancel {RITUAL_label} -->
   <CommandCancelRitual>{RITUAL_label} abbrechen</CommandCancelRitual>
   <!-- EN: End the {RITUAL_labelDef} immediately. Ritual obligation will remain. You can restart the ritual later. -->
-  <CommandCancelRitualDesc>Beende sofort das Ritual '{RITUAL_label}'. Die rituelle Verpflichtung bleibt bestehen. Du kannst das Ritual später erneut starten.</CommandCancelRitualDesc>
+  <CommandCancelRitualDesc>Beende '{RITUAL_label}' sofort. Die rituelle Verpflichtung bleibt bestehen. Du kannst das Ritual später erneut starten.</CommandCancelRitualDesc>
   <!-- EN: Are you sure you want to cancel {RITUAL_labelDef}? -->
-  <CommandCancelRitualConfirm>Bist du dir sicher, dass du das Ritual '{RITUAL_label}' abbrechen willst?</CommandCancelRitualConfirm>
+  <CommandCancelRitualConfirm>Bist du dir sicher, dass du '{RITUAL_label}' abbrechen willst?</CommandCancelRitualConfirm>
+
+  <!-- Storage linking -->
+  <!-- EN: Link settings -->
+  <LinkStorageSettings>Einstellung verknüpfen</LinkStorageSettings>
+  <!-- EN: Link storage settings for multiple selected buildings so that they share storage settings.\n\nThe group will start with the settings of whatever you selected first. -->
+  <LinkStorageSettingsDesc>Verknüpfe die Lagereinstellungen von zwei oder mehr selektierten Bauwerken. Dadurch teilen sie sich die gleichen Lagereinstellungen.\n\nDie Gruppe wird mit den Lagereinstellungen des zuerst selektierten Bauwerks erstellt.</LinkStorageSettingsDesc>
+  <!-- EN: You must select two or more buildings to link their storage settings. -->
+  <LinkStorageDisabledSelectTwo>Du musst zum Verknüpfen von Lagereinstellungen zwei oder mehr Bauwerke selektieren.</LinkStorageDisabledSelectTwo>
+  <!-- EN: Already linked. -->
+  <AlreadyLinked>Bereits verknüpft.</AlreadyLinked>
+  <!-- EN: Unlink settings -->
+  <UnlinkStorageSettings>Einstellung trennen</UnlinkStorageSettings>
+  <!-- EN: Unlink this from other buildings' storage settings so its settings can be set independently. -->
+  <UnlinkStorageSettingsDesc>Trenne dieses Bauwerk von den Lagereinstellungen anderer Bauwerke, damit dessen Einstellungen separat festgelegt werden können.</UnlinkStorageSettingsDesc>
+  <!-- EN: Linked storage settings -->
+  <LinkedStorageSettings>Verknüpfte Lagereinstellungen</LinkedStorageSettings>
+  <!-- EN: {0} buildings -->
+  <NumBuildings>{0} Bauwerke</NumBuildings>
+  <!-- EN: Stores -->
+  <StoresThings>Lagert</StoresThings>
+  <!-- EN: Select all linked -->
+  <SelectAllLinked>Alle verknüpften selektieren</SelectAllLinked>
+  <!-- EN: Select all storage buildings linked to this. -->
+  <SelectAllLinkedDesc>Selektiere alle Bauwerke, die mit diesem verknüpft sind.</SelectAllLinkedDesc>
   
 </LanguageData>

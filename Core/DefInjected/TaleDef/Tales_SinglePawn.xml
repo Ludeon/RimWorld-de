@@ -2,7 +2,7 @@
 <LanguageData>
   
   <!-- EN: raw humanlike meat eaten -->
-  <AteRawHumanlikeMeat.label>Rohes Menschenfleisch gegessen</AteRawHumanlikeMeat.label>
+  <AteRawHumanlikeMeat.label>rohes Menschenfleisch gegessen</AteRawHumanlikeMeat.label>
   <!-- EN:
     <li>tale_noun->[PAWN_nameDef]'s eating of human meat</li>
     <li>image->[PAWN_nameFull] [eat_gerund] the meat of a fellow humanoid [circumstance_group]</li>
@@ -41,8 +41,8 @@
     <li>eat_gerund->verzehrt</li>
     <li>eat_gerund->verschlingt</li>
     <li>eat_gerund->konsumiert</li>
-    <li>circumstance_phrase->mit voller Absicht</li>
-    <li>circumstance_phrase->ohne jegliches Schamgefühl</li>
+    <li>circumstance_phrase->absichtlich</li>
+    <li>circumstance_phrase->ohne einen Hauch von Scham</li>
     <li>circumstance_phrase->mit einem beschämenden Blick</li>
     <li>circumstance_phrase->, während andere zuschauen,</li>
     <li>circumstance_phrase->genüsslich</li>
@@ -57,7 +57,7 @@
   </AteRawHumanlikeMeat.rulePack.rulesStrings>
   
   <!-- EN: humanlike corpse butchered -->
-  <ButcheredHumanlikeCorpse.label>Menschliche Leiche geschlachtet</ButcheredHumanlikeCorpse.label>
+  <ButcheredHumanlikeCorpse.label>menschliche Leiche geschlachtet</ButcheredHumanlikeCorpse.label>
   
   <!-- EN: art crafted -->
   <CraftedArt.label>Kunstwerk erstellt</CraftedArt.label>
@@ -89,35 +89,47 @@
     <li>title_sentence->The title of [THING_definite], [THING_title], hangs in the background</li>
   -->
   <CraftedArt.rulePack.rulesStrings>
-    <li>tale_noun->[PAWN_nameDef] [THING_indefinite] kreierte</li>
-    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] [THING_indefinite] kreiert. [quality_sentence]. [title_sentence]</li>
-    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] [THING_indefinite] fertig stellt. [quality_sentence]. [title_sentence]</li>
-    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] [THING_indefinite] erschafft. [quality_sentence]. [title_sentence]</li>
-    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] [THING_indefinite] erstellt. [quality_sentence]. [title_sentence]</li>
+    <li>tale_noun->[PAWN_nameDef] [THING_indefiniteAcc] kreierte</li>
+    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] [THING_indefiniteAcc] kreiert. [quality_sentence]. [title_sentence]</li>
+    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] [THING_indefiniteAcc] fertigstellt. [quality_sentence]. [title_sentence]</li>
+    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] an [THING_indefiniteDat] arbeitet. [quality_sentence]. [title_sentence]</li>
     <li>circumstance_phrase->voll konzentriert</li>
     <li>circumstance_phrase->mit einem zufriedenen Gesichtsausdruck</li>
-    <li>circumstance_phrase->an [PAWN_possessive]em Arbeitsplatz</li>
+    <li>circumstance_phrase->an [PAWN_possessive]em Arbeitstisch</li>
     <li>circumstance_phrase->leidenschaftlich</li>
     <li>desc_sentence->Es liegen überall Werkzeuge herum.</li>
     <li>desc_sentence->[PAWN_pronoun] hat Kratzer und Narben von arbeitsbedingten Verletzungen.</li>
     <li>desc_sentence->[PAWN_pronoun] ist in Schweiß gebadet.</li>
-    <li>desc_sentence->Der Arbeitsplatz ist extrem gut organisiert, sodass alle Werkzeuge schnell gefunden werden können.</li>
+    <li>desc_sentence->Der Arbeitstisch ist extrem gut organisiert. Alle Werkzeuge liegen am richtigen Platz.</li>
     <li>desc_sentence->[PAWN_pronoun] wird übertrieben dargestellt, um [PAWN_objective] mächtiger wirken zu lassen.</li>
-    <li>desc_sentence->[THING_definite] wird übertrieben groß dargestellt, um dessen Bedeutung hervorzuheben.</li>
-    <li>desc_sentence->[THING_definite] kommt mit einem künstlerischen Glanz daher. Es ist nahezu engelsgleich.</li>
+    <li>desc_sentence->[THING_definiteTrue] wird übertrieben groß dargestellt, um dessen Bedeutung hervorzuheben.</li>
+    <li>desc_sentence->[THING_definiteTrue] kommt mit einem künstlerischen Glanz daher. Es ist nahezu engelsgleich.</li>
     <li>desc_sentence->[PAWN_nameDef] verschwindet in den Hintergrund, um [PAWN_possessive]e neueste Kreation hervorzuheben.</li>
     <li>desc_sentence->[Quantity_adjphrase] Zuschauer stehen um [PAWN_objective] herum.</li>
     <li>desc_sentence->Eine Menschenmenge jubelt im Hintergrund.</li>
-    <li>quality_sentence->[THING_definite] scheint von [THING_quality]er Qualität zu sein</li>
-    <li>quality_sentence->[THING_definite] ist von [THING_quality]er Qualität</li>
+    <li>quality_sentence->[THING_definiteTrue] scheint von [THING_quality]er Qualität zu sein</li>
+    <li>quality_sentence->[THING_definiteTrue] ist von [THING_quality]er Qualität</li>
     <li>quality_sentence->die Arbeit von [PAWN_nameDef] ist von [THING_quality]er Qualität</li>
-    <li>title_sentence->[THING_definite] hat von [PAWN_nameDef] den folgenden Titel erhalten: [THING_title]</li>
-    <li>title_sentence->[THING_definite] ist mit dem folgenden Titel versehen: [THING_title]</li>
-    <li>title_sentence->Der Titel von [THING_definite], [THING_title], hängt im Hintergrund</li>
+    <li>title_sentence->[THING_definiteTrue] hat von [PAWN_nameDef] den folgenden Titel erhalten: [THING_title]</li>
+    <li>title_sentence->[THING_definiteTrue] ist mit dem folgenden Titel versehen: [THING_title]</li>
+    <li>title_sentence->Der Titel von [THING_definiteDat], [THING_title], hängt im Hintergrund</li>
+    <li>THING_indefiniteDat->[a_dat] [thing_dat]</li>
+    <li>THING_indefiniteAcc->[a_acc] [thing_acc]</li>
+    <li>THING_definiteDat->[the_dat] [thing_dat]</li>
+    <li>THING_definiteAcc->[the_acc] [thing_acc]</li>
+    <li>THING_definiteTrue->[the] [thing_def]</li>
+    <li>a_dat->{replace: ^[THING_indefinite]; "^ein [THING_label]"-"einem"; "^eine [THING_label]"-"einer"; "^"-""}</li>
+    <li>a_acc->{replace: ^[THING_definite]; "^der [THING_label]"-"einen"; "^die [THING_label]"-"eine"; "^das [THING_label]"-"ein"; "^"-""}</li>
+    <li>the_dat->{replace: ^[THING_definite]; "^der [THING_label]"-"dem"; "^die [THING_label]"-"der"; "^das [THING_label]"-"dem"; "^"-""}</li>
+    <li>the_acc->{replace: ^[THING_definite]; "^der [THING_label]"-"den"; "^die [THING_label]"-"die"; "^das [THING_label]"-"das"; "^"-""}</li>
+    <li>the->{replace: ^[THING_definite]; "^der [THING_label]"-"der"; "^die [THING_label]"-"die"; "^das [THING_label]"-"das"; "^"-""}</li>
+    <li>thing_dat->{replace: [THING_label]; "er "-"en "; "e "-"en "; "es "-"en "}</li>
+    <li>thing_acc->{replace: [THING_label]; "er "-"en "}</li>
+    <li>thing_def->{replace: [THING_label]; "er "-"e "; "es "-"e "}</li>
   </CraftedArt.rulePack.rulesStrings>
   
   <!-- EN: drunk -->
-  <Drunk.label>Betrunken</Drunk.label>
+  <Drunk.label>betrunken</Drunk.label>
   <!-- EN:
     <li>tale_noun->[PAWN_nameDef]'s extreme drunkenness</li>
     <li>tale_noun->[PAWN_nameDef] getting extremely drunk</li>
@@ -177,7 +189,7 @@
     <li>desc_sentence->[PAWN_pronoun] ist fast bewusstlos, [PAWN_possessive]e Zunge hängt sabbernd aus dem Mund.</li>
     <li>desc_sentence->[PAWN_pronoun] scheint gleichzeitig glücklich und traurig zu sein.</li>
     <li>desc_sentence->[PAWN_possessive] Hemd ist voller Flecken vom Alkohol.</li>
-    <li>desc_sentence->Eine Spur weggeworfener Getränkeflaschen markiert [PAWN_possessive]en Weg.</li>
+    <li>desc_sentence->Eine Spur weggeworfener Flaschen markiert [PAWN_possessive]en Weg.</li>
     <li>desc_sentence->Da ist eine weiße Substanz auf [PAWN_possessive]er Hose.</li>
     <li>desc_sentence->[PAWN_pronoun] scheint einen Schuh verloren zu haben.</li>
     <li>desc_sentence->[PAWN_possessive] Haar ist komplett zerzaust.</li>
@@ -187,7 +199,7 @@
   <FinishedResearchProject.label>Forschungsprojekt abgeschlossen</FinishedResearchProject.label>
   <!-- EN:
     <li>tale_noun->[PAWN_nameDef] finishing research on [PROJECT_label]</li>
-    <li>image->[PAWN_nameFull] working on [PROJECT_label] research project [circumstance_group]</li>
+    <li>image->[PAWN_nameFull] working on the [PROJECT_label] research project [circumstance_group]</li>
     <li>image->[PAWN_nameFull] studying the secrets of [PROJECT_label] [circumstance_group]</li>
     <li>image->[PAWN_nameFull] researching [PROJECT_label] [circumstance_group]</li>
     <li>circumstance_phrase->with great intensity</li>
@@ -200,12 +212,12 @@
     <li>desc_sentence->[PAWN_nameDef] is staring at [PAWN_possessive] discovery with a sense of wonder.</li>
   -->
   <FinishedResearchProject.rulePack.rulesStrings>
-    <li>tale_noun->[PAWN_nameDef] das Forschungsprojekt '[PROJECT_label]' fertig stellte</li>
+    <li>tale_noun->[PAWN_nameDef] das Forschungsprojekt '[PROJECT_label]' fertigstellte</li>
     <li>image->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] an dem Forschungsprojekt '[PROJECT_label]' arbeitet</li>
     <li>image->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] die Geheimnisse des Forschungsprojekts '[PROJECT_label]' studiert</li>
     <li>image->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] das Projekt '[PROJECT_label]' erforscht</li>
     <li>circumstance_phrase->extrem konzentriert</li>
-    <li>circumstance_phrase->allein an [PAWN_possessive]em Forschungstisch</li>
+    <li>circumstance_phrase->allein an [PAWN_possessive]em Forschertisch</li>
     <li>circumstance_phrase->, während [PAWN_pronoun] Dokumente in [PAWN_possessive]er Hand hält,</li>
     <li>circumstance_phrase->mit einem Ausdruck freudiger Faszination</li>
     <li>desc_sentence->[PAWN_nameDef] schwitzt.</li>
@@ -215,7 +227,7 @@
   </FinishedResearchProject.rulePack.rulesStrings>
   
   <!-- EN: landed in pod -->
-  <LandedInPod.label>In einer Rettungskapsel gelandet</LandedInPod.label>
+  <LandedInPod.label>in einer Rettungskapsel gelandet</LandedInPod.label>
   <!-- EN:
     <li>tale_noun->[PAWN_nameDef]'s landing in a drop pod</li>
     <li>image->[PAWN_nameFull] landing in a drop pod [circumstance_group]</li>
@@ -299,19 +311,19 @@
     <li>desc_sentence->A single tear rolls down [PAWN_possessive] face.</li>
   -->
   <MentalStateBerserk.rulePack.rulesStrings>
-    <li>tale_noun->[PAWN_nameDef] Amok lief</li>
+    <li>tale_noun->[PAWN_nameDef] in einen Berserkerrausch verfiel.</li>
     <li>image->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] in rasende Wut verfällt</li>
-    <li>image->[PAWN_nameFull], als [PAWN_pronoun] [circumstance_group] durchdreht und gewalttätig wird</li>
+    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] durchdreht und gewalttätig wird</li>
     <li>image->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] mit einem irren Blick auf [PAWN_possessive]em Gesicht nach vorne stolpert</li>
     <li>circumstance_phrase->, während [PAWN_pronoun] versucht sich auszuziehen,</li>
     <li>circumstance_phrase->scheinbar ohne Grund</li>
     <li>circumstance_phrase->, während andere sich ängstlich verstecken,</li>
-    <li>circumstance_phrase->, während [PAWN_possessive] Freund flüchtet,</li>
-    <li>circumstance_phrase->aufgrund der Anspannung</li>
+    <li>circumstance_phrase->, während ein Freund flüchtet,</li>
+    <li>circumstance_phrase->vor lauter Stress</li>
     <li>circumstance_phrase->als letzten Ausweg</li>
-    <li>desc_sentence->Dabei schüttelt [PAWN_pronoun] sich vor unbändiger Wut.</li>
+    <li>desc_sentence->[PAWN_pronoun] schäumt vor unbändiger Wut.</li>
     <li>desc_sentence->[PAWN_possessive]e Zähne sind zu einem tödlichen Knurren gefletscht.</li>
-    <li>desc_sentence->[PAWN_possessive]e Augen sind tote Höhlen des Wahnsinns.</li>
+    <li>desc_sentence->In [PAWN_possessive]en Augen zeichnet sich Wahnsinn ab.</li>
     <li>desc_sentence->Spucke fliegt aus [PAWN_possessive]em Mund, als [PAWN_pronoun] [PAWN_possessive]e wahnsinnige Wut hinausschreit.</li>
     <li>desc_sentence->[PAWN_pronoun] hat ein Teil [PAWN_possessive]er Kleidung verloren.</li>
     <li>desc_sentence->[PAWN_pronoun] schneidet eine unangenehme Grimasse.</li>
@@ -322,7 +334,7 @@
     <li>desc_sentence->[PAWN_possessive] Kopf ist symbolisch von [AnimalsDat] umgeben.</li>
     <li>desc_sentence->[PAWN_pronoun] hat ein mörderisches Glitzern in den Augen.</li>
     <li>desc_sentence->[PAWN_possessive] ganzer Körper scheint vor Hass zu beben.</li>
-    <li>desc_sentence->[PAWN_possessive] Gesicht ist mit einem verdrehten Ausdruck von Glückseligkeit dargestellt.</li>
+    <li>desc_sentence->[PAWN_possessive] Gesicht ist von einem Ausdruck falscher Gelassenheit geprägt.</li>
     <li>desc_sentence->Eine einzelne Träne läuft über [PAWN_possessive] Gesicht.</li>
   </MentalStateBerserk.rulePack.rulesStrings>
   
@@ -351,20 +363,20 @@
   -->
   <MentalStateGaveUp.rulePack.rulesStrings>
     <li>tale_noun->[PAWN_nameDef] verzweifelt aufgab</li>
-    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] an dem Stress zerbricht und aufgibt</li>
+    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] aufgrund von Stress aufgibt</li>
     <li>image->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] zusammenbricht und unkontrolliert weint</li>
     <li>image->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] mit einem verlorenen Ausdruck auf [PAWN_possessive]em Gesicht durch die Gegend stolpert</li>
     <li>circumstance_phrase->, während [PAWN_pronoun] versucht sich auszuziehen,</li>
     <li>circumstance_phrase->scheinbar ohne Grund</li>
     <li>circumstance_phrase->, während andere ihr Mitgefühl aussprechen,</li>
-    <li>circumstance_phrase->, während einer [PAWN_possessive]er Freunde weint,</li>
-    <li>circumstance_phrase->aufgrund der Anspannung</li>
+    <li>circumstance_phrase->, während ein Freund weint,</li>
+    <li>circumstance_phrase->vor lauter Stress</li>
     <li>circumstance_phrase->als letzten Ausweg</li>
-    <li>desc_sentence->Auf [PAWN_possessive]em Gesicht fließen Tränen.</li>
+    <li>desc_sentence->{PAWN_gender ? Ihm : Ihr} laufen die Tränen über das Gesicht.</li>
     <li>desc_sentence->[PAWN_pronoun] lacht auf dem Tiefpunkt [PAWN_possessive]er Depression.</li>
-    <li>desc_sentence->[PAWN_nameDef] schaut Hilfe suchend gen Himmel.</li>
+    <li>desc_sentence->[PAWN_pronoun] blickt nach oben, darauf hoffend, dass {PAWN_gender ? ihm : ihr} eine höhere Macht hilft.</li>
     <li>desc_sentence->[PAWN_pronoun] zerreißt [PAWN_possessive]e eigene Kleidung.</li>
-    <li>desc_sentence->[PAWN_pronoun] scheint gar nicht mitzubekommen, was um [PAWN_objective] herum ist.</li>
+    <li>desc_sentence->[PAWN_pronoun] scheint gar nicht mitzubekommen, was um [PAWN_objective] herum geschieht.</li>
     <li>desc_sentence->[PAWN_pronoun] sieht traurig und glücklich zugleich aus.</li>
     <li>desc_sentence->[PAWN_pronoun] hat dunkle Flecken auf [PAWN_possessive]er Kleidung.</li>
     <li>desc_sentence->[PAWN_pronoun] scheint einen Schuh verloren zu haben.</li>
@@ -372,7 +384,7 @@
   </MentalStateGaveUp.rulePack.rulesStrings>
   
   <!-- EN: struck mineable -->
-  <StruckMineable.label>Auf abbaubares Gestein gestoßen</StruckMineable.label>
+  <StruckMineable.label>auf abbaubares Gestein gestoßen</StruckMineable.label>
   <!-- EN:
     <li>tale_noun->[PAWN_nameDef] striking [THING_label]</li>
     <li>image->[PAWN_nameFull] striking [THING_label] [circumstance_group]</li>
@@ -391,7 +403,7 @@
   -->
   <StruckMineable.rulePack.rulesStrings>
     <li>tale_noun->[PAWN_nameDef] auf [THING_label] stieß</li>
-    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] auf [THING_label] trifft</li>
+    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] auf [THING_label] stößt</li>
     <li>circumstance_phrase->während des Abbauens</li>
     <li>circumstance_phrase->beim Graben</li>
     <li>circumstance_phrase->beim Untertunneln</li>
@@ -399,7 +411,7 @@
     <li>circumstance_phrase->mit einem zufriedenen Ausdruck</li>
     <li>desc_sentence->[PAWN_nameDef] wischt sich den Schweiß von der Stirn.</li>
     <li>desc_sentence->[PAWN_nameDef] springt vor Freude in die Luft.</li>
-    <li>desc_sentence->[PAWN_nameDef] und ein Freund heben jeweils eine Hand, und schlagen sie auf die erhobene Hand des Gegenübers.</li>
+    <li>desc_sentence->[PAWN_nameDef] gibt einem Freund ein High-Five.</li>
     <li>desc_sentence->[PAWN_nameDef] schreit glücklich auf.</li>
     <li>desc_sentence->[PAWN_nameDef] lacht unkontrolliert.</li>
     <li>desc_sentence->[PAWN_nameDef] ist dreckig und verschwitzt von der Arbeit.</li>
@@ -430,27 +442,27 @@
   <Vomited.rulePack.rulesStrings>
     <li>tale_noun->[PAWN_nameDef] sich übergab</li>
     <li>image->[PAWN_nameFull], wie [PAWN_pronoun] sich [circumstance_group] auf den Boden übergibt</li>
-    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] nach [PAWN_possessive]em Kotzanfall in getrocknetem Erbrochenem steht und angeekelt drein schaut</li>
-    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] sich [circumstance_group] umdreht und auf den Boden kotzt</li>
-    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] sich hinkniet und [circumstance_group] auf den Boden kotzt</li>
+    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] angewidert [circumstance_group] schaut, während [PAWN_pronoun] mit getrockneter Kotze bedeckt ist</li>
+    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] sich [circumstance_group] nach vorne beugt und auf den Boden kotzt</li>
+    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] sich [circumstance_group] hinkniet und auf den Boden kotzt</li>
     <li>circumstance_phrase->unter Schmerzen</li>
     <li>circumstance_phrase->verschämt</li>
-    <li>circumstance_phrase->vor Zuschauern</li>
-    <li>desc_sentence->[PAWN_pronoun] scheint nicht mitzubekommen, was um [PAWN_objective] herum passiert.</li>
+    <li>circumstance_phrase->vor einem Publikum</li>
+    <li>desc_sentence->[PAWN_pronoun] scheint nicht mitzubekommen, was um [PAWN_objective] herum geschieht.</li>
     <li>desc_sentence->[PAWN_possessive] Gesicht scheint anzuschwellen.</li>
     <li>desc_sentence->[PAWN_pronoun] ist fast bewusstlos, [PAWN_possessive]e Zunge hängt sabbernd aus dem Mund.</li>
-    <li>desc_sentence->[PAWN_pronoun] zuckt heftig.</li>
-    <li>desc_sentence->[PAWN_pronoun] sieht beschämt aus.</li>
+    <li>desc_sentence->[PAWN_pronoun] hat heftige Zuckungen.</li>
+    <li>desc_sentence->[PAWN_pronoun] verzieht das Gesicht vor Scham.</li>
     <li>desc_sentence->[PAWN_pronoun] scheint trotz der Umstände lachen zu wollen.</li>
-    <li>desc_sentence->[PAWN_pronoun] scheint nahezu kraflos zu sein, als wäre [PAWN_pronoun] durch das intensive Erbrechen völlig entleert.</li>
-    <li>desc_sentence->[PAWN_pronoun] wurde künstlerisch von einer Aura der Abscheulichkeit umgeben.</li>
+    <li>desc_sentence->[PAWN_pronoun] ist am Ende [PAWN_possessive]er Kräfte, als wäre [PAWN_pronoun] durch das heftige Erbrechen völlig ausgelaugt.</li>
+    <li>desc_sentence->[PAWN_pronoun] ist von einem kunstvoll gestalteten Heiligenschein aus Kotze umgeben.</li>
     <li>desc_sentence(p=0.33)->Im Hintergrund frisst ein [AnimalMas] vom Erbrochenen.</li>
     <li>desc_sentence(p=0.33)->Im Hintergrund frisst eine [AnimalFem] vom Erbrochenen.</li>
     <li>desc_sentence(p=0.33)->Im Hintergrund frisst ein [AnimalNeu] vom Erbrochenen.</li>
   </Vomited.rulePack.rulesStrings>
   
   <!-- EN: walked naked -->
-  <WalkedNaked.label>Nackt herumgelaufen</WalkedNaked.label>
+  <WalkedNaked.label>nackt herumgelaufen</WalkedNaked.label>
   <!-- EN:
     <li>tale_noun->[PAWN_nameDef] walking around naked</li>
     <li>image->[PAWN_nameFull] [nude_action] while in a state of nature [circumstance_group]</li>
@@ -478,7 +490,6 @@
   -->
   <WalkedNaked.rulePack.rulesStrings>
     <li>tale_noun->[PAWN_nameDef] nackt herumlief</li>
-    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] wie Gott [PAWN_objective] schuf [nude_action]</li>
     <li>image->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] splitterfasernackt [nude_action]</li>
     <li>image->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] nackig [nude_action]</li>
     <li>image->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] unbekleidet [nude_action]</li>
@@ -491,11 +502,11 @@
     <li>nude_action->auf Zehenspitzen herumschleicht</li>
     <li>nude_action->herumspaziert</li>
     <li>nude_action->die Gegend erforscht</li>
-    <li>circumstance_phrase->mit einer gewissen Absicht und</li>
-    <li>circumstance_phrase->ohne jegliches Schamgefühl und</li>
-    <li>circumstance_phrase->, während andere zuschauen,</li>
-    <li>circumstance_phrase->ohne ersichtlichen Grund und</li>
-    <li>circumstance_phrase->, während verwirrte Tiere zusehen,</li>
+    <li>circumstance_phrase->absichtlich</li>
+    <li>circumstance_phrase->ohne einen Hauch von Scham</li>
+    <li>circumstance_phrase->, obwohl andere zuschauen,</li>
+    <li>circumstance_phrase->ohne ersichtlichen Grund</li>
+    <li>circumstance_phrase->in Gesellschaft von verwirrten Tieren</li>
     <li>desc_sentence->[PAWN_nameDef] ist sichtbar erregt.</li>
     <li>desc_sentence->[PAWN_nameDef] ist mit einer unerklärlichen Flüssigkeit bedeckt.</li>
     <li>desc_sentence->[PAWN_nameDef] atmet schwer, ohne ersichtlichen Grund.</li>
@@ -503,7 +514,7 @@
   </WalkedNaked.rulePack.rulesStrings>
   
   <!-- EN: on fire -->
-  <WasOnFire.label>Hat gebrannt</WasOnFire.label>
+  <WasOnFire.label>hat gebrannt</WasOnFire.label>
   <!-- EN:
     <li>tale_noun->[PAWN_nameDef] catching fire</li>
     <li>image->[PAWN_nameFull] frantically beating out a fire attached to [PAWN_possessive] body [circumstance_group]</li>
@@ -517,8 +528,8 @@
     <li>desc_sentence->[PAWN_possessive] eyes are wide with panic.</li>
     <li>desc_sentence->[PAWN_pronoun] seems to be barely conscious; [PAWN_possessive] eyes are lifeless.</li>
     <li>desc_sentence->[PAWN_possessive] mouth is open as [PAWN_pronoun] screams for help.</li>
-    <li>desc_sentence->The flames are about to envelope his head.</li>
-    <li>desc_sentence->A symbolic halo of fire surrounds his face.</li>
+    <li>desc_sentence->The flames are about to envelope [PAWN_possessive] head.</li>
+    <li>desc_sentence->A symbolic halo of fire surrounds [PAWN_possessive] face.</li>
     <li>desc_sentence->[PAWN_pronoun] is laughing maniacally.</li>
     <li>desc_sentence->[PAWN_pronoun] seems to be losing [PAWN_objective]self.</li>
     <li>desc_sentence->A plume of smoke is rising off [PAWN_objective].</li>
@@ -526,22 +537,22 @@
   -->
   <WasOnFire.rulePack.rulesStrings>
     <li>tale_noun->[PAWN_nameDef] Feuer fing</li>
-    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] verzweifelt versucht, das Feuer auf [PAWN_possessive]em Körper zu löschen</li>
-    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] von Flammen umhüllt ist</li>
-    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] am Boden kniet, die Arme schützend über die Augen gelegt, und versucht, die Flammen an [PAWN_possessive]em Körper zu ersticken</li>
-    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] brennend über den Boden rollt</li>
-    <li>circumstance_phrase->, während andere zuschauen,</li>
-    <li>circumstance_phrase->, während [PAWN_pronoun] nahezu nackt ist,</li>
-    <li>circumstance_phrase->mit gebündelter Intensität</li>
-    <li>desc_sentence->[PAWN_possessive] Fleisch ist offensichtlich verkohlt.</li>
-    <li>desc_sentence->[PAWN_possessive]e Augen sind panisch geweitet.</li>
+    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] verzweifelt versucht, das Feuer auf [PAWN_possessive]em Körper [circumstance_group] zu löschen</li>
+    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] von Flammen umhüllt wird</li>
+    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] kniet und versucht, die Flammen an [PAWN_possessive]em Körper [circumstance_group] zu ersticken</li>
+    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] über den Boden rollt, während [PAWN_pronoun] brennt</li>
+    <li>circumstance_phrase->in Gesellschaft anderer</li>
+    <li>circumstance_phrase->mit kaum noch Kleidung am Leib</li>
+    <li>circumstance_phrase->zielstrebig</li>
+    <li>desc_sentence->[PAWN_possessive] Fleisch ist sichtlich verkohlt.</li>
+    <li>desc_sentence->[PAWN_possessive]e Augen sind vor Panik geweitet.</li>
     <li>desc_sentence->[PAWN_pronoun] scheint kaum bei Bewusstsein zu sein; [PAWN_possessive]e Augen sind leblos.</li>
-    <li>desc_sentence->[PAWN_possessive] Mund ist weit geöffnet, als würde [PAWN_pronoun] noch immer um Hilfe schreien.</li>
-    <li>desc_sentence->Die Flammen sind dabei, [PAWN_possessive]en Kopf zu umhüllen.</li>
-    <li>desc_sentence->Eine Aura des Feuers umgibt [PAWN_possessive] Gesicht.</li>
+    <li>desc_sentence->[PAWN_possessive] Mund ist weit geöffnet, während [PAWN_pronoun] nach Hilfe schreit.</li>
+    <li>desc_sentence->Die Flammen sind kurz davor, [PAWN_possessive]en Kopf zu erfassen.</li>
+    <li>desc_sentence->Ein symbolischer Heiligenschein aus Feuer umgibt [PAWN_possessive] Gesicht.</li>
     <li>desc_sentence->[PAWN_pronoun] lacht wie verrückt.</li>
-    <li>desc_sentence->[PAWN_pronoun] scheint [PAWN_possessive]en Verstand zu verlieren.</li>
-    <li>desc_sentence->Eine Rauchwolke erhebt sich über [PAWN_possessive]em Körper.</li>
+    <li>desc_sentence->[PAWN_pronoun] scheint den Verstand zu verlieren.</li>
+    <li>desc_sentence->Eine Rauchwolke bildet sich über {PAWN_gender ? ihm : ihr}.</li>
     <li>desc_sentence->[PAWN_pronoun] wird kunstvoll als Leiche dargestellt.</li>
   </WasOnFire.rulePack.rulesStrings>
   

@@ -31,14 +31,13 @@
     <li>peaceTalks->Meeting</li>
   -->
   <OpportunitySite_PeaceTalks.questNameRules.rulesStrings>
-    <li>questName->[faction_leader_nameDef]s [peaceTalks]</li>
-    <li>questName->[peaceTalks] von [faction_leader_nameDef]</li>
+    <li>questName->{replace: [faction_leader_nameDef]s; "s&lt;/color>s"-"s&lt;/color>'"; "ß&lt;/color>s"-"ß&lt;/color>'"; "z&lt;/color>s"-"z&lt;/color>'"; "x&lt;/color>s"-"x&lt;/color>'"; "ce&lt;/color>s"-"ce&lt;/color>'"} [peaceTalks]</li>
     <li>questName->[peaceTalks] mit [faction_leader_nameDef]</li>
     <li>questName->Die [peaceTalks]</li>
     <li>questName->[peaceTalks]</li>
     <li>peaceTalks->Friedensgespräche</li>
-    <li>peaceTalks->Waffenstillstandsverhandlungen</li>
     <li>peaceTalks->Verhandlungen</li>
+    <li>peaceTalks->Unterredung</li>
   </OpportunitySite_PeaceTalks.questNameRules.rulesStrings>
   <!-- EN: Quest expired: [resolvedQuestName] -->
   <OpportunitySite_PeaceTalks.LetterLabelQuestExpired.slateRef>Quest abgelaufen: [resolvedQuestName]</OpportunitySite_PeaceTalks.LetterLabelQuestExpired.slateRef>

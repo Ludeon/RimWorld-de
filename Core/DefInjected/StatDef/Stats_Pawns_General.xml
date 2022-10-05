@@ -4,7 +4,10 @@
   <!-- EN: animals learning factor -->
   <AnimalsLearningFactor.label>Tiere-Lernrate-Faktor</AnimalsLearningFactor.label>
   <!-- EN: A multiplier on the learning rate for animals skill. -->
-  <AnimalsLearningFactor.description>Ein Multiplikator auf die Lernrate der Tiere-Fähigkeit.</AnimalsLearningFactor.description>
+  <AnimalsLearningFactor.description>Ein Multiplikator auf die Lernrate der Tiere-Fertigkeit.</AnimalsLearningFactor.description>
+  
+  <!-- EN: bed hunger rate multiplier -->
+  <BedHungerRateFactor.label>Bett-Hungerrate-Faktor</BedHungerRateFactor.label>
   
   <!-- EN: caravan riding speed -->
   <CaravanRidingSpeedFactor.label>Karawanenreitgeschwindigkeit</CaravanRidingSpeedFactor.label>
@@ -42,14 +45,9 @@
   <ForagedNutritionPerDay.description>Die Menge an Nahrung, die diese Person automatisch pro Tag findet, während sie mit der Karawane unterwegs ist.</ForagedNutritionPerDay.description>
   
   <!-- EN: global learning factor -->
-  <GlobalLearningFactor.label>Globale-Lernrate-Faktor</GlobalLearningFactor.label>
+  <GlobalLearningFactor.label>Global-Lernrate-Faktor</GlobalLearningFactor.label>
   <!-- EN: A multiplier on the learning rate for all skills. -->
-  <GlobalLearningFactor.description>Ein Multiplikator auf die Lernrate aller Fähigkeiten.</GlobalLearningFactor.description>
-  
-  <!-- EN: hunger rate multiplier -->
-  <HungerRateMultiplier.label>Hungerrate-Multiplikator</HungerRateMultiplier.label>
-  <!-- EN: A multiplier on how quickly a creature becomes hungry. -->
-  <HungerRateMultiplier.description>Ein Multiplikator darauf, wie schnell eine Kreatur hungrig wird.</HungerRateMultiplier.description>
+  <GlobalLearningFactor.description>Ein Multiplikator auf die Lernrate aller Fertigkeiten.</GlobalLearningFactor.description>
   
   <!-- EN: immunity gain speed -->
   <ImmunityGainSpeed.label>Immunisiergeschwindigkeit</ImmunityGainSpeed.label>
@@ -66,13 +64,32 @@
   <!-- EN: The amount of leather yielded when butchering this creature. This value is reduced if the creature is not slaughtered cleanly, or if it is wounded when killed. -->
   <LeatherAmount.description>Die Ledermenge, die man erhält, wenn man diese Kreatur schlachtet. Dieser Wert ist reduziert, wenn die Kreatur unsauber geschlachtet oder beim Töten verwundet wurde.</LeatherAmount.description>
   
+  <!-- EN: lifespan factor -->
+  <LifespanFactor.label>Lebensdauer-Faktor</LifespanFactor.label>
+  <!-- EN: Lifespan factor alters the effective lifespan of a creature by shortening or lengthening the time until they develop age-related diseases. A lifespan factor over 100% delays disease onset and increases overall lifespan, while a lifespan factor under 100% speeds up disease onset and reduces lifespan. -->
+  <LifespanFactor.description>Dieser Wert verändert die effektive Lebensdauer einer Kreatur, indem die Zeit bis zum Beginn altersbedingter Krankheiten verkürzt oder verlängert wird. Wenn dieser Wert über 100 Prozent liegt, wird der Beginn solcher Krankheiten verzögert und die Gesamtlebensdauer erhöht, während ein Faktor unter 100 Prozent den Beginn solcher Krankheiten beschleunigt und die Lebensdauer verkürzt.</LifespanFactor.description>
+  
+  <!-- EN: max nutrition -->
+  <MaxNutrition.label>max. Nahrung</MaxNutrition.label>
+  <!-- EN: The amount of nutrition needed to completely fill this creature's stomach. -->
+  <MaxNutrition.description>Die Menge an Nahrung, die benötigt wird, um den Magen dieser Kreatur vollständig zu füllen.</MaxNutrition.description>
+  
   <!-- EN: meat amount -->
   <MeatAmount.label>Fleischmenge</MeatAmount.label>
   <!-- EN: The amount of meat yielded when butchering this creature. This value is reduced if the creature is not slaughtered cleanly, or if it is wounded when killed. -->
   <MeatAmount.description>Die Fleischmenge, die man erhält, wenn man diese Kreatur schlachtet. Dieser Wert ist reduziert, wenn die Kreatur unsauber geschlachtet oder beim Töten verwundet wurde.</MeatAmount.description>
   
+  <!-- EN: meditation psyfocus gain -->
+  <MeditationFocusGain.label>Meditationspsyfokuszunahme</MeditationFocusGain.label>
+  <!-- EN: The amount of psyfocus a person gains per day of meditation, ignoring bonuses from focus objects. -->
+  <MeditationFocusGain.description>Die Menge an Psyfokus, die eine Person pro Meditationstag gewinnt, unabhängig von Fokusobjektbonussen.</MeditationFocusGain.description>
+  <!-- EN: {0} / day -->
+  <MeditationFocusGain.formatString>{0} / Tag</MeditationFocusGain.formatString>
+  <!-- EN: {0} / day -->
+  <MeditationFocusGain.formatStringUnfinalized>{0} / Tag</MeditationFocusGain.formatStringUnfinalized>
+  
   <!-- EN: mental break threshold -->
-  <MentalBreakThreshold.label>Nervenzusammenbruchschwelle</MentalBreakThreshold.label>
+  <MentalBreakThreshold.label>Nervenbelastungsgrenze</MentalBreakThreshold.label>
   <!-- EN: As long as someone's mood is below this level, they are in danger of having a mental break.\n\nThe severity of the mental break will depend on how far below the threshold they are. -->
   <MentalBreakThreshold.description>Solange die Stimmung der Person unter diesem Wert liegt, besteht die Gefahr, dass sie einen Nervenzusammenbruch erleidet.\n\nDie Intensität des Zusammenbruchs hängt davon ab, wie weit ihre Stimmung unter diesem Wert liegt.</MentalBreakThreshold.description>
   
@@ -93,19 +110,36 @@
   <!-- EN: The pain level at which this creature is downed from pain. -->
   <PainShockThreshold.description>Die Höhe des Schmerzes, den eine Kreatur maximal aushalten kann, bevor sie zu Boden geht.</PainShockThreshold.description>
   
+  <!-- EN: neural heat limit -->
+  <PsychicEntropyMax.label>Neuralhitzelimit</PsychicEntropyMax.label>
+  <!-- EN: The maximum amount of neural heat individual can tolerate safely. -->
+  <PsychicEntropyMax.description>Die maximale Menge an Neuralhitze, die die diese Kreatur gefahrlos verkraften kann.</PsychicEntropyMax.description>
+  
+  <!-- EN: neural heat recovery rate -->
+  <PsychicEntropyRecoveryRate.label>Neuralhitzerückgangsrate</PsychicEntropyRecoveryRate.label>
+  <!-- EN: The rate at which this person reduces neural heat. -->
+  <PsychicEntropyRecoveryRate.description>Wie schnell die Person ihre Neuralhitze wieder abbaut.</PsychicEntropyRecoveryRate.description>
+  <!-- EN: {0}/s -->
+  <PsychicEntropyRecoveryRate.formatString>{0}/s</PsychicEntropyRecoveryRate.formatString>
+  
   <!-- EN: psychic sensitivity -->
   <PsychicSensitivity.label>mentale Sensibilität</PsychicSensitivity.label>
   <!-- EN: More sensitive people suffer more from negative psychic effects, and benefit more from positive ones. Higher psychic sensitivity also increases neural heat limit. -->
   <PsychicSensitivity.description>Je sensibler Kreaturen sind, desto mehr leiden sie unter negativen mentalen Effekten und desto mehr profitieren sie von positiven Effekten. Höhere mentale Sensibilität erhöht zudem das Neuralhitzelimit.</PsychicSensitivity.description>
   
   <!-- EN: rest rate multiplier -->
-  <RestRateMultiplier.label>Erholungsrate-Multiplikator</RestRateMultiplier.label>
+  <RestRateMultiplier.label>Erholungsrate-Faktor</RestRateMultiplier.label>
   <!-- EN: A multiplier on how quickly a creature rests while sleeping. -->
   <RestRateMultiplier.description>Ein Multiplikator darauf, wie schnell sich eine Kreatur beim Schlafen erholt.</RestRateMultiplier.description>
   
-  <!-- EN: toxic sensitivity -->
-  <ToxicSensitivity.label>toxische Sensibilität</ToxicSensitivity.label>
-  <!-- EN: Multiplier on the impact of toxic buildup on this creature. -->
-  <ToxicSensitivity.description>Ein Multiplikator auf die Auswirkungen bei einer Vergiftung.</ToxicSensitivity.description>
+  <!-- EN: toxic environment resistance -->
+  <ToxicEnvironmentResistance.label>Giftresistenz (Umwelt)</ToxicEnvironmentResistance.label>
+  <!-- EN: How resistant this creature is to the effects of environmental toxins. This protects against toxic fallout and rot gas exposure, but not against direct attacks with venom or injected poison. -->
+  <ToxicEnvironmentResistance.description>Wie resistent diese Kreatur gegen die Auswirkungen von Umweltgiften ist. Diese Resistenz schützt vor giftigem Fallout und Faulgas-Belastung, aber nicht vor direkten Giftangriffen oder Giftinjektionen.</ToxicEnvironmentResistance.description>
+  
+  <!-- EN: toxic resistance -->
+  <ToxicResistance.label>Giftresistenz</ToxicResistance.label>
+  <!-- EN: How well this creature resists toxic buildup. -->
+  <ToxicResistance.description>Wie resistent diese Kreatur gegen eine Vergiftung ist.</ToxicResistance.description>
   
 </LanguageData>

@@ -5,8 +5,6 @@
   <CustomizeIdeoligion>Ideologie anpassen</CustomizeIdeoligion>
   <!-- EN: Choose your ideoligion -->
   <ChooseYourIdeoligion>Ideologie wählen</ChooseYourIdeoligion>
-  <!-- EN: Random -->
-  <Random>Zufällig</Random>
   <!-- EN: A random structure will be used for your ideoligion. -->
   <RandomStructureTip>Es wird eine zufällige Struktur für deine Ideologie verwendet.</RandomStructureTip>
   <!-- EN: A random style will be used for your ideoligion. -->
@@ -23,7 +21,7 @@
   <LoadSaved>Laden</LoadSaved>
   <!-- EN: Structure -->
   <Structure>Struktur</Structure>
-  <!-- EN: What should your starting colonists believe? These beliefs affect gameplay and visuals. You’ll be able to recruit others to your beliefs, or take on their beliefs. -->
+  <!-- EN: What should your starting colonists believe? These beliefs affect gameplay and visuals. You'll be able to recruit others to your beliefs, or take on their beliefs. -->
   <ChooseYourIdeoligionDesc>Woran sollen deine Startkolonisten glauben? Diese Glaubensvorstellungen beeinflussen die Spielmechanik und Optik. Du kannst andere zu deinem Glauben bekehren oder ihren Glauben übernehmen.</ChooseYourIdeoligionDesc>
   <!-- EN: Create custom -->
   <CreateCustom>Eigene Ideologie erstellen</CreateCustom>
@@ -101,8 +99,10 @@
   <Styles>Stile</Styles>
   <!-- EN: Chance to have precept -->
   <ChanceToHavePrecept>Chance, dass es folgendes Gebot hat</ChanceToHavePrecept>
-  <!-- EN: {PAWN_labelShort}'s favorite color. Having more than {PERCENTAGE} of {PAWN_possessive} apparel in this color, or the color of {PAWN_possessive} ideoligion, will make {PAWN_objective} slightly happier.\n\nYou can alter apparel colors at the styling station using tinctoria dye. -->
-  <FavoriteColorTooltip>Die Lieblingsfarbe von {PAWN_labelShort}. Wenn mehr als {PERCENTAGE} {PAWN_possessive}er Kleidung in dieser Farbe oder in der Farbe {PAWN_possessive}er Ideologie ist, wird {PAWN_pronoun} etwas glücklicher sein.\n\nDu kannst die Farbe der Kleidung an der Styling-Station ändern, sofern du über genug Tinktoriafarbstoff verfügst.</FavoriteColorTooltip>
+  <!-- EN: {PAWN_labelShort}'s favorite color. Having more than {PERCENTAGE} of {PAWN_possessive} apparel in this color{ORIDEO} will make {PAWN_objective} slightly happier.\n\nYou can alter apparel colors at the styling station using tinctoria dye. -->
+  <FavoriteColorTooltip>Die Lieblingsfarbe von {PAWN_labelShort}. Wenn mehr als {PERCENTAGE} {PAWN_possessive}er Kleidung in dieser Farbe{ORIDEO} ist, wird {PAWN_pronoun} etwas glücklicher sein.\n\nDu kannst die Farbe der Kleidung an der Styling-Station ändern, sofern du über genug Tinktoriafarbstoff verfügst.</FavoriteColorTooltip>
+  <!-- EN: , or the color of {PAWN_possessive} ideoligion, -->
+  <OrIdeoColor> oder in der Farbe {PAWN_possessive}er Ideologie</OrIdeoColor>
   <!-- EN: Set ideo color -->
   <SetIdeoColor>Ideologiefarbe verwenden</SetIdeoColor>
   <!-- EN: Set to favorite color -->
@@ -124,9 +124,9 @@
   <!-- EN: Everyone -->
   <Everyone>Jeder</Everyone>
   <!-- EN: Narrative -->
-  <Narrative>Geschichte</Narrative>
+  <Narrative>Erzählung</Narrative>
   <!-- EN: narrative -->
-  <NarrativeLower>Geschichte</NarrativeLower>
+  <NarrativeLower>Erzählung</NarrativeLower>
   <!-- EN: Precept name -->
   <PreceptName>Name</PreceptName>
   <!-- EN: precept name -->
@@ -153,6 +153,8 @@
   <MealKindMeat>Enthält Fleisch</MealKindMeat>
   <!-- EN: Acceptable food for everyone -->
   <MealKindAny>Akzeptable Nahrung für jede Ernährungsweise</MealKindAny>
+  <!-- EN: this outfit -->
+  <WearingDesiredApparelMulti>dieses Outfit</WearingDesiredApparelMulti>
 
   <!-- EN: Could not load ideoligion -->
   <UnableToLoadIdeoTitle>Ideologie konnte nicht geladen werden</UnableToLoadIdeoTitle>
@@ -165,16 +167,16 @@
   <!-- EN: Precept {PRECEPT} is not allowed for non-player factions -->
   <UnableToLoadIdeoPreceptNotAllowed>Gebot '{PRECEPT}' ist verboten für fremde Fraktionen</UnableToLoadIdeoPreceptNotAllowed>
 
-  <!-- EN: A grave containing {PAWN_labelShort}'s corpse. -->
-  <RitualTargetGraveInfo>Ein Grab mit der Leiche von {PAWN_labelShort}.</RitualTargetGraveInfo>
-  <!-- EN: An empty grave to mourn {PAWN_labelShort}'s passing. -->
-  <RitualTargetEmptyGraveInfo>Ein leeres Grab, um den Tod von {PAWN_labelShort} zu betrauern.</RitualTargetEmptyGraveInfo>
-  <!-- EN: A grave containing {IDEO_memberNameIndef}'s corpse -->
-  <RitualTargetGraveInfoAbstract>Ein Grab mit der Leiche eines {IDEO_adjective}en Anhängers.</RitualTargetGraveInfoAbstract>
-  <!-- EN: A grave containing a corpse. -->
-  <RitualTargetGraveInfoAbstractNoIdeo>Ein Grab, das eine Leiche enthält.</RitualTargetGraveInfoAbstractNoIdeo>
-  <!-- EN: An empty grave to mourn {IDEO_memberNameIndef}'s passing. -->
-  <RitualTargetEmptyGraveInfoAbstract>Ein leeres Grab, um den Tod eines {IDEO_adjective}en Anhängers zu betrauern.</RitualTargetEmptyGraveInfoAbstract>
+  <!-- EN: Grave containing {PAWN_labelShort}'s corpse -->
+  <RitualTargetGraveInfo>Grab mit der Leiche von {PAWN_labelShort}</RitualTargetGraveInfo>
+  <!-- EN: Empty grave to mourn {PAWN_labelShort}'s passing -->
+  <RitualTargetEmptyGraveInfo>Leeres Grab, um den Tod von {PAWN_labelShort} zu betrauern</RitualTargetEmptyGraveInfo>
+  <!-- EN: Grave containing {IDEO_memberNameIndef}'s corpse -->
+  <RitualTargetGraveInfoAbstract>Grab mit der Leiche eines {IDEO_adjective}en Anhängers</RitualTargetGraveInfoAbstract>
+  <!-- EN: Grave containing a corpse -->
+  <RitualTargetGraveInfoAbstractNoIdeo>Grab mit einer Leiche</RitualTargetGraveInfoAbstractNoIdeo>
+  <!-- EN: Empty grave to mourn {IDEO_memberNameIndef}'s passing -->
+  <RitualTargetEmptyGraveInfoAbstract>Leeres Grab, um den Tod eines {IDEO_adjective}en Anhängers zu betrauern</RitualTargetEmptyGraveInfoAbstract>
   <!-- EN: {PAWN_labelShort}'s body must be buried first -->
   <RitualTargetGraveInfoMustBeBuried>Der Körper von {PAWN_labelShort} muss zuerst begraben werden</RitualTargetGraveInfoMustBeBuried>
   <!-- EN: Any gathering spot, like a table -->
@@ -183,12 +185,10 @@
   <RitualTargetGatherAltarOrRitualSpotInfo>Altar oder beliebiger Ritualplatz.</RitualTargetGatherAltarOrRitualSpotInfo>
   <!-- EN: Altar, ideogram or any ritual spot. -->
   <RitualTargetGatherAltarIdeogramOrRitualSpotInfo>Altar, Ideogramm oder beliebiger Ritualplatz.</RitualTargetGatherAltarIdeogramOrRitualSpotInfo>
-  <!-- EN: A lightball or ritual spot. Lightball and loudspeakers must be powered. -->
-  <RitualTargetLightBallInfo>Eine Lichterkugel oder ein Ritualplatz. Lichterkugel und Lautsprecher müssen mit Strom versorgt werden.</RitualTargetLightBallInfo>
   <!-- EN: Lightball is not powered. -->
-  <RitualTargetLightBallIsNotPowered>Lichterkugel ist nicht am Stromnetz angeschlossen.</RitualTargetLightBallIsNotPowered>
+  <RitualTargetLightBallIsNotPowered>Lichterkugel wird nicht mit Strom versorgt.</RitualTargetLightBallIsNotPowered>
   <!-- EN: No powered speakers. -->
-  <RitualTargetNoPoweredSpeakers>Keine strombetriebenen Lautsprecher.</RitualTargetNoPoweredSpeakers>
+  <RitualTargetNoPoweredSpeakers>Keine mit Strom versorgten Lautsprecher.</RitualTargetNoPoweredSpeakers>
   <!-- EN: Campfire is not fueled. -->
   <RitualTargetCampfireNoFuel>Das Lagerfeuer hat keinen Brennstoff.</RitualTargetCampfireNoFuel>
   <!-- EN: Campfire must be unroofed. -->
@@ -197,26 +197,24 @@
   <RitualTargetNoDrum>Keine Trommel in der Nähe.</RitualTargetNoDrum>
   <!-- EN: Need at least {0} unroofed cells nearby. -->
   <RitualTargetNeedUnroofedCells>Es werden mindestens {0} Zellen ohne Dach in der Nähe benötigt.</RitualTargetNeedUnroofedCells>
-  <!-- EN: A lit campfire or ritual spot. -->
-  <RitualTargetCampfirePartyInfo>Ein brennendes Lagerfeuer oder ein Ritualplatz.</RitualTargetCampfirePartyInfo>
-  <!-- EN: A lit campfire or ritual spot. Spot must be unroofed with at least 25 unroofed cells in the area. -->
-  <RitualTargetCampfireSkylanternsInfo>Ein brennendes Lagerfeuer oder ein Ritualplatz. Der Platz muss im Freien sein und mindestens 25 Zellen ohne Dach haben.</RitualTargetCampfireSkylanternsInfo>
-  <!-- EN: An unconnected Gauranlen tree. -->
-  <RitualTargetUnconnectedGaruanlenTreeInfo>Ein unverbundener Gauralanbaum.</RitualTargetUnconnectedGaruanlenTreeInfo>
+  <!-- EN: a lit campfire -->
+  <RitualTargetCampfirePartyInfo>ein brennendes Lagerfeuer</RitualTargetCampfirePartyInfo>
+  <!-- EN: an unconnected Gauranlen tree -->
+  <RitualTargetUnconnectedGaruanlenTreeInfo>ein unverbundener Gauralanbaum</RitualTargetUnconnectedGaruanlenTreeInfo>
   <!-- EN: Already connected to {PAWN_nameDef} -->
   <RitualTargetConnectedGauranlenTree>Bereits mit {PAWN_nameDef} verbunden</RitualTargetConnectedGauranlenTree>
   <!-- EN: {TREE_definite} has had its connection torn recently. It can connect again in {1}. -->
   <RitualTargetConnectionTornGauranlenTree>Die Verbindung des {TREE_label}es wurde vor kurzem gekappt. Er kann sich in {replace: {1}; "Tage"-"Tagen"; "Jahre"-"Jahren"} neu verbinden.</RitualTargetConnectionTornGauranlenTree>
   <!-- EN: You need {0} wood for each participant ({2} total). You have {1} wood. -->
   <RitualTargeWoodInfo>Du benötigst {0} Holz pro Teilnehmer (insgesamt {2}). Du hast {1} Holz.</RitualTargeWoodInfo>
+  <!-- EN: {0} must be able to reach ritual target. -->
+  <RitualTargetUnreachable>{0} muss das Ritualziel erreichen können.</RitualTargetUnreachable>
   <!-- EN: Accuse -->
   <Accuse>Anklagen</Accuse>
   <!-- EN: {PAWN_labelShort} does not believe in ideoligious scarification and will not like being scarified. -->
   <RitualScarificationWarnNonScarificationIdeo>{PAWN_labelShort} glaubt nicht an die ideologische Skarifizierung und wird es nicht mögen, skarifiziert zu werden.</RitualScarificationWarnNonScarificationIdeo>
   <!-- EN: {PAWN_labelShort} is a wimp and will not like being scarified. -->
   <RitualScarificationWarnWimp>{PAWN_labelShort} ist ein Feigling und will nicht skarifiziert werden.</RitualScarificationWarnWimp>
-  <!-- EN: {PAWN_labelShort} does not believe in ideoligious blinding and will not like being blinded. -->
-  <RitualBlindingWarnNonBlindingIdeo>{PAWN_labelShort} glaubt nicht an die ideologische Blendung und wird es nicht mögen, geblendet zu werden.</RitualBlindingWarnNonBlindingIdeo>
   <!-- EN: {PAWN_labelShort} is a wimp and will not like being blinded. -->
   <RitualBlindingWarnWimp>{PAWN_labelShort} ist ein Feigling und will nicht geblendet werden.</RitualBlindingWarnWimp>
   <!-- EN: Scarification is expected for {IDEOMEMBERPLURAL} as long as there are fewer than {0} scarified {IDEOMEMBERPLURAL}. -->
@@ -239,6 +237,8 @@
   
   <!-- EN: Due to the quality of the ritual, your development points have increased by {2} (from {0} to {1}). -->
   <RitualOutcomeExtraDesc_DevelopmentPointsAwarded>Aufgrund der Qualität des Rituals haben sich deine Entwicklungspunkte um {2} erhöht (von {0} auf {1}).</RitualOutcomeExtraDesc_DevelopmentPointsAwarded>
+  <!-- EN: Can't award development points beyond {0}. -->
+  <RitualOutcomeExtraDesc_DevelopmentPointsAwardedCapped>Maximum von {0} Entwicklungspunkten erreicht.</RitualOutcomeExtraDesc_DevelopmentPointsAwardedCapped>
   <!-- EN: Due to the poor quality of the ritual, no development points were gained. -->
   <RitualOutcomeExtraDesc_NoDevelopmentPointsAwarded>Aufgrund der schlechten Qualität des Rituals gab es keine Entwicklungspunkte.</RitualOutcomeExtraDesc_NoDevelopmentPointsAwarded>
 
@@ -257,15 +257,15 @@
   <!-- EN: negative -->
   <RitualAttachedOutcomes_Negative>negativ</RitualAttachedOutcomes_Negative>
   <!-- EN: If the {0} is {1} -->
-  <RitualAttachedOutcomesInfo>Wenn das Ritual {1} ist</RitualAttachedOutcomesInfo>
+  <RitualAttachedOutcomesInfo>Wenn das Ergebnis {1} ist</RitualAttachedOutcomesInfo>
   <!-- EN: Upon any {0} outcome -->
   <RitualAttachedApplliesForOutcome>Bei {0}em Ergebnis</RitualAttachedApplliesForOutcome>
   <!-- EN: Upon any {0} outcome -->
   <RitualAttachedApplliesForOutcomes>Bei {0}em Ergebnis</RitualAttachedApplliesForOutcomes>
   <!-- EN: The commotion from the {0} has attracted some curious animals!\n\nThey seem accustomed to human contact and are joining the colony. -->
-  <RitualAttachedOutcome_FarmAnimalsWanderIn_Desc>Das Ritual '{0}' hat einige neugierige Tiere angelockt!\n\nSie sind offenbar an den Menschen gewöhnt und schließen sich der Kolonie an.</RitualAttachedOutcome_FarmAnimalsWanderIn_Desc>
+  <RitualAttachedOutcome_FarmAnimalsWanderIn_Desc>{0} hat einige neugierige Tiere angelockt!\n\nSie sind offenbar an den Menschen gewöhnt und schließen sich der Kolonie an.</RitualAttachedOutcome_FarmAnimalsWanderIn_Desc>
   <!-- EN: The {0} has induced a Gauranlen pod to sprout nearby. -->
-  <RitualAttachedOutcome_GauranlenTreePod_ExtraDesc>Das Ritual '{0}' hat dazu geführt, dass in der Nähe eine Gauralankapsel aufgekeimt ist.</RitualAttachedOutcome_GauranlenTreePod_ExtraDesc>
+  <RitualAttachedOutcome_GauranlenTreePod_ExtraDesc>{0} hat dazu geführt, dass in der Nähe eine Gauralankapsel aufgekeimt ist.</RitualAttachedOutcome_GauranlenTreePod_ExtraDesc>
   <!-- EN: Can't apply reward -->
   <RitualAttachedOutcomeCantApply>Belohnung nicht möglich</RitualAttachedOutcomeCantApply>
   <!-- EN: No valid spot -->
@@ -281,24 +281,12 @@
   <IdeoBuildingVariationOf>Dieses Bauwerk ist eine Variante von</IdeoBuildingVariationOf>
   <!-- EN: Minimum expectations -->
   <IdeoBuildingMinimumExpectations>Mindesterwartungen</IdeoBuildingMinimumExpectations>
-  <!-- EN: size -->
-  <Size>Größe</Size>
-  <!-- EN: cost -->
-  <Cost>Kosten</Cost>
   <!-- EN: optional -->
   <Optional>optional</Optional>
   <!-- EN: expectations -->
   <Expectations>Erwartungen</Expectations>
-  <!-- EN: Can start any time -->
-  <RitualStartAnyTime>Kann jederzeit starten</RitualStartAnyTime>
-  <!-- EN: Can start after event -->
-  <RitualStartEvent>Kann nach Ereignis starten</RitualStartEvent>
-  <!-- EN: Focus objects -->
-  <RitualFocusObjects>Fokusobjekte</RitualFocusObjects>
   <!-- EN: Repeating a ritual within {0} days reduces its quality. {1} days have passed since the last ritual, so the current quality reduction is {2}. This penalty will fall to zero {3} days from now. -->
   <RitualRepeatPenaltyTip>Die erneute Durchführung eines Rituals innerhalb von {0} Tagen reduziert dessen Qualität. Seit dem letzten Ritual sind {1} Tage vergangen, also beträgt die aktuelle Qualitätsminderung {2}. Dieser Malus wird in {3} Tagen auf Null fallen.</RitualRepeatPenaltyTip>
-  <!-- EN: Participating roles -->
-  <RitualParticipatingRoles>Teilnehmende Rollen</RitualParticipatingRoles>
   <!-- EN: For best quality, start the {0} at {1}. -->
   <RitualOutcomeCompTip_RitualTargetDefsPart1>Um die beste Qualität zu erhalten, sollte '{0}' an {1} gestartet werden.</RitualOutcomeCompTip_RitualTargetDefsPart1>
   <!-- EN: Currently, the {0} is being started at {1_labelShortIndef}. -->
@@ -307,6 +295,8 @@
   <RitualDevelopmentPoints>Entwicklungspunkte</RitualDevelopmentPoints>
   <!-- EN: Completing this ritual gives {0}-{1} development points depending on quality. -->
   <RitualDevelopmentPointsTip>Der Abschluss dieses Rituals gibt je nach Qualität {0}-{1} Entwicklungspunkte.</RitualDevelopmentPointsTip>
+  <!-- EN: {0} needs to be powered. -->
+  <RitualOutcomeBlockedNoPower>{0} muss mit Strom versorgt werden.</RitualOutcomeBlockedNoPower>
 
   <!-- EN: For slave use -->
   <ForSlaveUse>Beschränkt auf: Sklaven</ForSlaveUse>
@@ -335,9 +325,9 @@
   <RoleRequirementLabelSameIdeo>Muss {0} sein</RoleRequirementLabelSameIdeo>
   <!-- EN: Must be {0} -->
   <RoleRequirementLabelSupremeGender>Muss {0} sein</RoleRequirementLabelSupremeGender>
+  <!-- EN: Cannot be child -->
+  <RoleRequirementCannotBe>Darf kein Kind sein</RoleRequirementCannotBe>
 
-  <!-- EN: Disabled work -->
-  <RoleDisabledWorkLabel>Verweigerte Arbeit</RoleDisabledWorkLabel>
   <!-- EN: Abilities -->
   <RoleGrantedAbilitiesLabel>Fähigkeiten</RoleGrantedAbilitiesLabel>
   <!-- EN: Required apparel -->
@@ -345,7 +335,7 @@
   <!-- EN: Has role in rituals -->
   <RoleRitualsLabel>Hat eine Rolle bei den Ritualen</RoleRitualsLabel>
   <!-- EN: This role becomes active when your faction has {1} {0}. It becomes inactive when your faction has only {3} {2}. -->
-  <RoleBelieverCountDesc>Diese Rolle wird aktiv, wenn deine Fraktion {1} {0} hat. Sie wird inaktiv, sobald deine Fraktion nur noch {3} {2} hat.</RoleBelieverCountDesc>
+  <RoleBelieverCountDesc>Diese Rolle wird aktiv, wenn deine Fraktion {1} Anhänger dieser Ideologie hat. Sie wird inaktiv, sobald deine Fraktion nur noch {3} Anhänger dieser Ideologie hat.</RoleBelieverCountDesc>
   <!-- EN: Raised by {0} levels. -->
   <RoleExpectationOffset>Erhöht um {0} Stufen.</RoleExpectationOffset>
   <!-- EN: The {0} has higher expectations. -->
@@ -367,7 +357,7 @@
   <TextMote_WillReduced>Wille\n{0} auf {1}</TextMote_WillReduced>
 
   <!-- EN: Accepting this join offer is an act of charity. If you refuse, the following people will be unhappy due to their pro-charity beliefs:\n{0}\n\nAre you sure you want to reject this join offer? -->
-  <ConfirmationCharityJoiner>Die Annahme dieses Beitrittsangebots ist ein Akt der Barmherzigkeit. Wenn du ablehnst, werden die folgenden Leute aufgrund ihrer wohltätigen Überzeugungen unzufrieden:\n{0}\n\nBist du dir sicher, dass du dieses Angebot ablehnen willst?</ConfirmationCharityJoiner>
+  <ConfirmationCharityJoiner>Die Annahme dieses Beitrittsangebots ist ein Akt der Barmherzigkeit. Wenn du ablehnst, bekommen die folgenden Leute aufgrund ihrer wohltätigen Überzeugungen schlechte Laune:\n{0}\n\nBist du dir sicher, dass du dieses Angebot ablehnen willst?</ConfirmationCharityJoiner>
 
   <!-- EN: Believers in {0} ({1}) -->
   <BelieversIn>Gläubige von {0} ({1})</BelieversIn>
@@ -549,9 +539,9 @@
   <RechargeableReady>Bereit</RechargeableReady>
   
   <!-- EN: Skill -->
-  <RoleRequirementSkill>Fähigkeit</RoleRequirementSkill>
+  <RoleRequirementSkill>Fertigkeit</RoleRequirementSkill>
   <!-- EN: Any of skills -->
-  <RoleRequirementSkillAny>Eine der Fähigkeiten</RoleRequirementSkillAny>
+  <RoleRequirementSkillAny>Eine der Fertigkeiten</RoleRequirementSkillAny>
   <!-- EN: Won't use ranged weapons -->
   <RoleEffectWontUseRangedWeapons>Wird keine Fernkampfwaffen verwenden</RoleEffectWontUseRangedWeapons>
   <!-- EN: Won't use melee weapons -->
@@ -606,7 +596,7 @@
   <!-- EN: Cycle -->
   <BiosculpterPodCycleLabel>Zyklus</BiosculpterPodCycleLabel>
   <!-- EN: loading ingredients -->
-  <BiosculpterPodCycleLabelLoading>muss mit Inhaltsstoffen beladen werden</BiosculpterPodCycleLabelLoading>
+  <BiosculpterPodCycleLabelLoading>muss mit Zutaten beladen werden</BiosculpterPodCycleLabelLoading>
   <!-- EN: (and biotuning) -->
   <BiosculpterPodCycleWillBiotune>(und biologische Abstimmung)</BiosculpterPodCycleWillBiotune>
   <!-- EN: Begin {0} cycle -->
@@ -632,7 +622,7 @@
   <!-- EN: Interrupt cycle -->
   <BiosculpterInteruptCycle>Zyklus unterbrechen</BiosculpterInteruptCycle>
   <!-- EN: Interrupt the current cycle. The occupant will be ejected without benefiting from the effects of the cycle, and will suffer from short-term biosculpter sickness. -->
-  <BiosculpterInteruptCycleDesc>Unterbrich den aktuellen Zyklus. Der Insasse wird herausgeworfen, ohne von den Effekten des Zyklus zu profitieren, und leidet kurzzeitig an der Bioformerkrankheit.</BiosculpterInteruptCycleDesc>
+  <BiosculpterInteruptCycleDesc>Unterbrich den aktuellen Zyklus. Der Insasse wird ausgeworfen, ohne von den Effekten des Zyklus zu profitieren, und leidet kurzzeitig an der Bioformerkrankheit.</BiosculpterInteruptCycleDesc>
   <!-- EN: {PAWN_labelShort} will enter biosculpter and begin a {CYCLE} cycle. -->
   <BiosculpterEnteringMessage>{PAWN_labelShort} wird den Bioformer betreten und einen {CYCLE}-Zyklus starten.</BiosculpterEnteringMessage>
   <!-- EN: {PAWN_labelShort} will collect {INGREDIENTS}, and begin a {CYCLE} cycle. -->
@@ -642,13 +632,15 @@
   <!-- EN: {0} nutrition -->
   <NumNutrition>{0} Nahrung</NumNutrition>
   <!-- EN: {PAWN_labelShort} was ejected from a biosculpter pod due to lack of power. -->
-  <BiosculpterNoPowerEjectedMessage>{PAWN_labelShort} wurde mangels Stromversorgung aus einer Bioformerkapsel herausgeworfen.</BiosculpterNoPowerEjectedMessage>
+  <BiosculpterNoPowerEjectedMessage>{PAWN_labelShort} wurde mangels Stromversorgung aus einer Bioformerkapsel ausgeworfen.</BiosculpterNoPowerEjectedMessage>
   <!-- EN: {PAWN_labelShort} completed healing cycle. -->
   <BiosculpterHealCompletedMessage>{PAWN_labelShort} hat den Heilungszyklus abgeschlossen.</BiosculpterHealCompletedMessage>
   <!-- EN: {PAWN_labelShort} completed healing cycle, and {PAWN_possessive} {HEDIFF_label} was cured. -->
   <BiosculpterHealCompletedWithCureMessage>{PAWN_labelShort} hat den Heilungszyklus abgeschlossen, außerdem wurde {PAWN_possessive} Leiden '{HEDIFF_label}' geheilt.</BiosculpterHealCompletedWithCureMessage>
-  <!-- EN: {PAWN_labelShort} completed {PAWN_possessive} age reversal cycle. {PAWN_pronoun} expects the next age reversal in {DEADLINE} days. -->
-  <BiosculpterAgeReversalCompletedMessage>{PAWN_labelShort} hat {PAWN_possessive}en Altersumkehrzyklus abgeschlossen. {PAWN_pronoun} erwartet die nächste Altersumkehr in {DEADLINE} Tagen.</BiosculpterAgeReversalCompletedMessage>
+  <!-- EN: {PAWN_labelShort} completed {PAWN_possessive} age reversal cycle. -->
+  <BiosculpterAgeReversalCompletedMessage>{PAWN_labelShort} hat {PAWN_possessive}en Altersumkehrzyklus abgeschlossen.</BiosculpterAgeReversalCompletedMessage>
+  <!-- EN: {PAWN_pronoun} expects the next age reversal in {DEADLINE} days. -->
+  <AgeReversalExpectationDeadline>{PAWN_pronoun} erwartet die nächste Altersumkehr in {DEADLINE} Tagen.</AgeReversalExpectationDeadline>
   <!-- EN: {PAWN_labelShort}'s pleasure cycle is complete. -->
   <BiosculpterPleasureCompletedMessage>{replace: {PAWN_labelShort}s; "s(/Name)s"-"s(/Name)'"; "ß(/Name)s"-"ß(/Name)'"; "z(/Name)s"-"z(/Name)'"; "x(/Name)s"-"x(/Name)'"; "ce(/Name)s"-"ce(/Name)'"} Vergnügungszyklus ist abgeschlossen.</BiosculpterPleasureCompletedMessage>
   <!-- EN: Cleanliness speed factor -->
@@ -667,5 +659,12 @@
   <OnCompletionOfCycle>Nach Abschluss des {CYCLE}-Zyklus geschieht Folgendes</OnCompletionOfCycle>
   <!-- EN: {PAWN_nameDef} does not have any conditions that can be healed by a {CYCLE} cycle.\n\nDo you want to continue? -->
   <BiosculpterNoCoditionsToHeal>{PAWN_nameDef} hat keine Leiden, die mit einem {CYCLE}-Zyklus geheilt werden können.\n\nWillst du fortfahren?</BiosculpterNoCoditionsToHeal>
+
+  <!-- EN: basic -->
+  <Basic>Standard</Basic>
+  <!-- EN: Change the style this will be built in. This is purely visual and has no gameplay impact. -->
+  <ChangeStyleDesc>Ändere den Stil, in dem es gebaut werden soll. Dies ist rein visuell und hat keinen Einfluss auf die Spielmechanik.</ChangeStyleDesc>
+  <!-- EN: No available styles. -->
+  <ChangeStyleDisabledNoCategories>Keine verfügbaren Stile.</ChangeStyleDisabledNoCategories>
 
 </LanguageData>
