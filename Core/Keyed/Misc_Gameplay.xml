@@ -267,7 +267,7 @@
   <!-- EN: Deteriorating -->
   <DeterioratingBecauseOf>Zerfällt</DeterioratingBecauseOf>
   <!-- EN: Will deteriorate in {0}. -->
-  <DeteriorateInDuration>Zerfällt in {replace: {0}; "Tage"-"Tagen"; "Jahre"-"Jahren"}.</DeteriorateInDuration>
+  <DeteriorateInDuration>Zerfällt in (*DateTime){replace: {0}; "Tage"-"Tagen"; "Jahre"-"Jahren"}(/DateTime).</DeteriorateInDuration>
   <!-- EN: Map -->
   <Map>Karte</Map>
   <!-- EN: {0} until enemies arrive -->
@@ -891,13 +891,13 @@
 
   <!-- Thoughts -->
   <!-- EN: Expires in: {0} -->
-  <ThoughtExpiresIn>Läuft in {replace: {0}; "Tage"-"Tagen"; "Jahre"-"Jahren"} ab</ThoughtExpiresIn>
+  <ThoughtExpiresIn>Läuft in (*DateTime){replace: {0}; "Tage"-"Tagen"; "Jahre"-"Jahren"}(/DateTime) ab</ThoughtExpiresIn>
   <!-- EN: thought disabled by -->
   <ThoughtNullifiedBy>blockiert durch</ThoughtNullifiedBy>
   <!-- EN: Starts expiring in: {0} -->
-  <ThoughtStartsExpiringIn>Beginnt in {replace: {0}; "Tage"-"Tagen"; "Jahre"-"Jahren"} abzulaufen</ThoughtStartsExpiringIn>
+  <ThoughtStartsExpiringIn>Beginnt in (*DateTime){replace: {0}; "Tage"-"Tagen"; "Jahre"-"Jahren"}(/DateTime) abzulaufen</ThoughtStartsExpiringIn>
   <!-- EN: Finishes expiring in: {0} -->
-  <ThoughtFinishesExpiringIn>Läuft nach spätestens {replace: {0}; "Tage"-"Tagen"; "Jahre"-"Jahren"} ab</ThoughtFinishesExpiringIn>
+  <ThoughtFinishesExpiringIn>Läuft nach spätestens (*DateTime){replace: {0}; "Tage"-"Tagen"; "Jahre"-"Jahren"}(/DateTime) ab</ThoughtFinishesExpiringIn>
   <!-- EN: Extreme break threshold -->
   <MentalBreakThresholdExtreme>Extremer Zusammenbruch bei</MentalBreakThresholdExtreme>
   <!-- EN: Major break threshold -->
@@ -1689,7 +1689,7 @@
   <!-- EN: {0} (out of {1}) -->
   <QualityOutOf>{0} (von {1})</QualityOutOf>
   <!-- EN: {0} is a date-specific ritual. You'll be able to start it in {1}, on the {2}. -->
-  <DateRitualNoObligation>{0} ist ein Ritual, das an einem bestimmten Datum stattfindet. Du kannst es in {replace: {1}; "Tage"-"Tagen"; "Jahre"-"Jahren"} starten, am {2}.</DateRitualNoObligation>
+  <DateRitualNoObligation>{0} ist ein Ritual, das an einem bestimmten Datum stattfindet. Du kannst es in (*DateTime){replace: {1}; "Tage"-"Tagen"; "Jahre"-"Jahren"}(/DateTime) starten, am {2}.</DateRitualNoObligation>
 
   <!-- EN: Replace with -->
   <PreceptReplaceWith>Ersetze mit</PreceptReplaceWith>
@@ -1755,7 +1755,7 @@
   <!-- EN: must be drafted. -->
   <AbilityDisabledUndrafted>muss im Kampfmodus sein.</AbilityDisabledUndrafted>
   <!-- EN: ability on cooldown. It will be available in {0}. -->
-  <AbilityOnCooldown>Fähigkeit klingt gerade ab. Sie ist in {replace: {0}; "Tage"-"Tagen"; "Jahre"-"Jahren"} wieder einsatzbereit.</AbilityOnCooldown>
+  <AbilityOnCooldown>Fähigkeit klingt gerade ab. Sie ist in (*DateTime){replace: {0}; "Tage"-"Tagen"; "Jahre"-"Jahren"}(/DateTime) wieder einsatzbereit.</AbilityOnCooldown>
   <!-- EN: ability already queued. -->
   <AbilityAlreadyQueued>Fähigkeit bereits in der Warteschlange.</AbilityAlreadyQueued>
   <!-- EN: Ability ready: {0} -->

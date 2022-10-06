@@ -22,7 +22,7 @@
   <!-- EN: {0} opportunity for {1} -->
   <RitualOpportunityFor>{0} für {1} möglich</RitualOpportunityFor>
   <!-- EN: Expires in {0}, on {1}. -->
-  <RitualExpiresIn>Läuft in {replace: {0}; "Tage"-"Tagen"; "Jahre"-"Jahren"} ab, am {1}.</RitualExpiresIn>
+  <RitualExpiresIn>Läuft in (*DateTime){replace: {0}; "Tage"-"Tagen"; "Jahre"-"Jahren"}(/DateTime) ab, am {1}.</RitualExpiresIn>
   <!-- EN: To begin the ritual, select a {FOCUS} and click the 'Begin {RITUAL_label}' command. -->
   <RitualSingleTargetDesc>Um das Ritual zu starten, musst du ein Fokusobjekt auswählen und auf 'Starte {RITUAL_label}' klicken. Folgendes Fokusobjekt kann verwendet werden: {FOCUS}.</RitualSingleTargetDesc>
   <!-- EN: To begin the ritual, select one of the following and click the 'Begin {RITUAL_label}' command -->
@@ -55,7 +55,7 @@
   <!-- EN: Raids arriving in {0} -->
   <QuestPartRaidsDelay>Überfälle starten in {replace: {0}; "Tage"-"Tagen"; "Jahre"-"Jahren"}</QuestPartRaidsDelay>
   <!-- EN: Raids will start arriving in {0}.\n\nThe raiders will target the spacedrone and attempt to destroy it. Protect the spacedrone so your colonists can hack its computer and retrieve the data. -->
-  <QuestPartRaidsDelayDesc>Überfälle werden in {replace: {0}; "Tage"-"Tagen"; "Jahre"-"Jahren"} starten.\n\nDie Raider haben es auf die Weltraumdrohne abgesehen und werden versuchen, sie zu zerstören. Verteidige die Drohne, damit deine Kolonisten den Computer hacken und die Daten abrufen können.</QuestPartRaidsDelayDesc>
+  <QuestPartRaidsDelayDesc>Überfälle werden in (*DateTime){replace: {0}; "Tage"-"Tagen"; "Jahre"-"Jahren"}(/DateTime) starten.\n\nDie Raider haben es auf die Weltraumdrohne abgesehen und werden versuchen, sie zu zerstören. Verteidige die Drohne, damit deine Kolonisten den Computer hacken und die Daten abrufen können.</QuestPartRaidsDelayDesc>
 
   <!-- EN: {0} role unfilled -->
   <IdeoRoleEmpty>Rolle unbesetzt: {0}</IdeoRoleEmpty>
@@ -67,7 +67,7 @@
   <!-- EN: Security threats activated in {0} -->
   <AncientAltarThreatsWaking>Sicherheitssysteme werden in {replace: {0}; "Tage"-"Tagen"; "Jahre"-"Jahren"} aktiviert</AncientAltarThreatsWaking>
   <!-- EN: Security threats will activate in {0}. They will attack any who may threaten the relic. -->
-  <AncientAltarThreatsWakingDesc>Sicherheitssysteme werden in {replace: {0}; "Tage"-"Tagen"; "Jahre"-"Jahren"} aktiviert. Sie werden jeden angreifen, der eine Gefahr für die Reliquie darstellt.</AncientAltarThreatsWakingDesc>
+  <AncientAltarThreatsWakingDesc>Sicherheitssysteme werden in (*DateTime){replace: {0}; "Tage"-"Tagen"; "Jahre"-"Jahren"}(/DateTime) aktiviert. Sie werden jeden angreifen, der eine Gefahr für die Reliquie darstellt.</AncientAltarThreatsWakingDesc>
 
   <!-- EN: Ritual opportunity soon -->
   <AlertRitualComing>Ritual bald möglich</AlertRitualComing>
@@ -83,13 +83,13 @@
   <!-- EN: Because of their beliefs, some of your colonists demand regular age reversal treatments in a biosculpter pod. If they don't get the treatments, they will be displeased.\n\nThe following people demand age reversal treatment -->
   <AlertAgeReversalDemandDesc>Aufgrund ihrer Überzeugungen verlangen einige deiner Kolonisten regelmäßige Altersumkehrbehandlungen in einer Bioformerkapsel. Wenn sie die Behandlungen nicht bekommen, werden sie unglücklich sein.\n\nDie folgenden Personen verlangen eine Altersumkehrbehandlung</AlertAgeReversalDemandDesc>
   <!-- EN: {PAWN} joined {FACTION} recently, and wants to begin age reversal treatments in {DURATION}. -->
-  <AlertAgeReversalDemandDesc_Recruit>{PAWN} ist vor kurzem der Fraktion {FACTION} beigetreten und will in {replace: {DURATION}; "Tage"-"Tagen"; "Jahre"-"Jahren"} mit Altersumkehrbehandlungen beginnen.</AlertAgeReversalDemandDesc_Recruit>
+  <AlertAgeReversalDemandDesc_Recruit>{PAWN} ist vor kurzem der Fraktion {FACTION} beigetreten und will in (*DateTime){replace: {DURATION}; "Tage"-"Tagen"; "Jahre"-"Jahren"}(/DateTime) mit Altersumkehrbehandlungen beginnen.</AlertAgeReversalDemandDesc_Recruit>
   <!-- EN: {PAWN} wants their next treatment in {DURATION}. -->
-  <AlertAgeReversalDemandDesc_Next>{PAWN} will {PAWN_possessive}e nächste Behandlung in {replace: {DURATION}; "Tage"-"Tagen"; "Jahre"-"Jahren"}.</AlertAgeReversalDemandDesc_Next>
+  <AlertAgeReversalDemandDesc_Next>{PAWN} will {PAWN_possessive}e nächste Behandlung in (*DateTime){replace: {DURATION}; "Tage"-"Tagen"; "Jahre"-"Jahren"}(/DateTime).</AlertAgeReversalDemandDesc_Next>
   <!-- EN: {PAWN} wants their first treatment in {DURATION}. -->
-  <AlertAgeReversalDemandDesc_Initial>{PAWN} will {PAWN_possessive}e erste Behandlung in {replace: {DURATION}; "Tage"-"Tagen"; "Jahre"-"Jahren"}.</AlertAgeReversalDemandDesc_Initial>
+  <AlertAgeReversalDemandDesc_Initial>{PAWN} will {PAWN_possessive}e erste Behandlung in (*DateTime){replace: {DURATION}; "Tage"-"Tagen"; "Jahre"-"Jahren"}(/DateTime).</AlertAgeReversalDemandDesc_Initial>
   <!-- EN: {PAWN}'s treatment is overdue by {DURATION}. -->
-  <AlertAgeReversalDemandDesc_Overdue>Die Behandlung von {PAWN} ist seit {replace: {DURATION}; "Tage"-"Tagen"; "Jahre"-"Jahren"} überfällig.</AlertAgeReversalDemandDesc_Overdue>
+  <AlertAgeReversalDemandDesc_Overdue>Die Behandlung von {PAWN} ist seit (*DateTime){replace: {DURATION}; "Tage"-"Tagen"; "Jahre"-"Jahren"}(/DateTime) überfällig.</AlertAgeReversalDemandDesc_Overdue>
 
   <!-- EN: {PAWN_nameDef}'s belief in {IDEO_name} prevents {PAWN_objective} from eating the meat of {ANIMALS}. -->
   <AlertRoyalTitleNoVeneratedAnimalMeat>Die Ideologie von {PAWN_nameDef} ({IDEO_name}) hält {PAWN_objective} davon ab, Fleisch von folgenden Tieren zu essen: {ANIMALS}.</AlertRoyalTitleNoVeneratedAnimalMeat>
