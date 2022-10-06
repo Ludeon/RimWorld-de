@@ -43,7 +43,7 @@ Um diese Prozedur wieder rückgängig zu machen bzw. RimWorld wieder die standar
 
 1. Lösche in allen oben genannten Pfaden jeweils den Ordner 'German (Deutsch)'.
 2. Rechtsklicke in Steam auf RimWorld und klicke auf 'Eigenschaften'.
-3. Navigiere zu 'Lokale Dateien' und klicke auf 'Spieldateien auf Fehler überprüfen...', um die gelöschten TAR-Dateien wiederzuherstellen.
+3. Navigiere zu 'Lokale Dateien' und klicke auf 'Spieldateien auf Fehler überprüfen...', um die gelöschten TAR-Dateien wiederherzustellen.
 
 Grammar Resolving vs update-wordinfo.yml
 ----------------------------------------
