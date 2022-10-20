@@ -33,7 +33,7 @@ ODER (falls das nicht funktioniert)
     <Pfad-zu-RimWorld>\Data\Ideology\Languages\
     <Pfad-zu-RimWorld>\Data\Royalty\Languages\
     ```
-    &lt;Pfad-zu-RimWorld&gt; ist standardmäßig ```C:\Program Files\Steam\steamapps\common\RimWorld```
+    &lt;Pfad-zu-RimWorld&gt; ist standardmäßig ```C:\Programme (x86)\Steam\steamapps\common\RimWorld```
     
     Beachte, dass einige Ordner fehlen können. Core ist immer vorhanden. Der Rest ist abhängig davon, welche RimWorld-Erweiterungen du gekauft und installiert hast. 
 4. Kopiere den Inhalt vom im ZIP-Archiv enthaltenen Ordner 'Core' in ```<Pfad-zu-RimWorld>\Data\Core\Languages\German (Deutsch)```. Wiederhole das für die restlichen Erweiterungen, sofern nötig.
