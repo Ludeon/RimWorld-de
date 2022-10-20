@@ -6,25 +6,27 @@ setlocal
 for /f "delims=" %%I in ('cscript /nologo /e:jscript "%~f0"') do (
     set FLDR=%%I
 )
-rd /q /s "%FLDR%\Core\Languages\German (Deutsch)"
-rd /q /s "%FLDR%\Royalty\Languages\German (Deutsch)"
-rd /q /s "%FLDR%\Ideology\Languages\German (Deutsch)"
-rd /q /s "%FLDR%\Biotech\Languages\German (Deutsch)"
+if "%FLDR%"=="" (exit)
 
-xcopy /s /i "Core" "%FLDR%\Core\Languages\German (Deutsch)"
-xcopy /s /i "Royalty" "%FLDR%\Royalty\Languages\German (Deutsch)"
-xcopy /s /i "Ideology" "%FLDR%\Ideology\Languages\German (Deutsch)"
-xcopy /s /i "Biotech" "%FLDR%\Biotech\Languages\German (Deutsch)"
+rd /q /s "%FLDR%\Data\Core\Languages\German (Deutsch)"
+rd /q /s "%FLDR%\Data\Royalty\Languages\German (Deutsch)"
+rd /q /s "%FLDR%\Data\Ideology\Languages\German (Deutsch)"
+rd /q /s "%FLDR%\Data\Biotech\Languages\German (Deutsch)"
 
-del "%FLDR%\Core\Languages\German (Deutsch).tar"
-del "%FLDR%\Royalty\Languages\German (Deutsch).tar"
-del "%FLDR%\Ideology\Languages\German (Deutsch).tar"
-del "%FLDR%\Biotech\Languages\German (Deutsch).tar"
+xcopy /s /i "Core" "%FLDR%\Data\Core\Languages\German (Deutsch)"
+xcopy /s /i "Royalty" "%FLDR%\Data\Royalty\Languages\German (Deutsch)"
+xcopy /s /i "Ideology" "%FLDR%\Data\Ideology\Languages\German (Deutsch)"
+xcopy /s /i "Biotech" "%FLDR%\Data\Biotech\Languages\German (Deutsch)"
+
+del "%FLDR%\Data\Core\Languages\German (Deutsch).tar"
+del "%FLDR%\Data\Royalty\Languages\German (Deutsch).tar"
+del "%FLDR%\Data\Ideology\Languages\German (Deutsch).tar"
+del "%FLDR%\Data\Biotech\Languages\German (Deutsch).tar"
 
 goto :EOF
 
 :: JScript portion */
 
 var shl = new ActiveXObject("Shell.Application");
-var folder = shl.BrowseForFolder(0, "Choose the 'Data' folder in your RimWorld directory.\nWaehle den Ordner 'Data' in deinem RimWorld-Verzeichnis aus.", 0, 0x00);
+var folder = shl.BrowseForFolder(0, "W‰hle den RimWorld-Ordner aus. Standardm‰ﬂig:\nC:\\Programme (x86)\\Steam\\steamapps\\common\\RimWorld", 0, 0x11);
 WSH.Echo(folder ? folder.self.path : '');
