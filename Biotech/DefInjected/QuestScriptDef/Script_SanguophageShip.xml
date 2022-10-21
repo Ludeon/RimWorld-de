@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN:
+    <li>sanguophageShuttleCrashedLetterLabel->Crashed shuttle</li>
+    <li>sanguophageShuttleCrashedLetterText->A shuttle containing a sanguophage master and [thrallCount] thralls has crashed nearby. They will exit the crashed craft and prepare to fight.</li>
+    <li>reinforcementsArrivedLetterLabel->Thrall reinforcements</li>
+    <li>reinforcementsArrivedLetterText->Thralls are arriving in drop pods to reinforce the crashed sanguophage.</li>
+    <li>assaultBeginLetterLabel->Assault begun</li>
+    <li>assaultBeginLetterText->The hostile sanguophage master and [sanguophage_possessive] thralls have initiated an assault on the colony!</li>
+  -->
+  <SanguophageShip.questContentRules.rulesStrings>
+    <li>sanguophageShuttleCrashedLetterLabel->Abgestürztes Shuttle</li>
+    <li>sanguophageShuttleCrashedLetterText->Ein Shuttle mit {sanguophage_gender ? einem Sanguophagenmeister : einer Sanguophagenmeisterin} und [thrallCount] Leibeigenen ist in der Nähe abgestürzt. Sie werden aus dem abgestürzten Raumschiff aussteigen und sich auf den Kampf vorbereiten.</li>
+    <li>reinforcementsArrivedLetterLabel->Leibeigenen-Verstärkung</li>
+    <li>reinforcementsArrivedLetterText->Leibeigene treffen in Landungskapseln ein, um {sanguophage_gender ? dem abgestürzten Sanguophagen : der abgestürzten Sanguophagin} beizustehen.</li>
+    <li>assaultBeginLetterLabel->Angriff gestartet</li>
+    <li>assaultBeginLetterText->{sanguophage_gender ? Der feindliche Sanguophagenmeister : Die feindliche Sanguophagenmeisterin} und [sanguophage_possessive]e Leibeigenen starten den Angriff auf die Kolonie!</li>
+  </SanguophageShip.questContentRules.rulesStrings>
+  <!-- EN:
+    <li>questDescription->You have intercepted a distress signal! A hostile shuttle carrying a sanguophage master and [thrallCount] thralls is having trouble with its engines. You can use signals to draw it down to a crash near [map_definite].\n\nOnce the ship has crashed, you can fight the sanguophage and [sanguophage_possessive] minions. If you can capture the master, you can force [sanguophage_objective] to turn one of your colonists into a sanguophage.\n\n[sanguophageInfo]</li>
+    <li>sanguophageInfo->(*Gray)About sanguophages: Sanguophages are ageless, deathless super-humans powered by archotech-created archites in the bloodstream. They are beautiful and extremely intelligent. They can heal any injury, and never suffer from disease or poison. In combat, they can launch deadly spines and heal injured friends. The price is that sanguophages must consume hemogen derived from human blood to survive, and they must periodically deathrest for long periods. They're easily destroyed by fire, and slowed down by UV light.(/Gray)</li>
+  -->
+  <SanguophageShip.questDescriptionRules.rulesStrings>
+    <li>questDescription->Du hast ein Notsignal abgefangen! {sanguophage_gender ? Ein feindlicher Sanguophagenmeister : Eine feindliche Sanguophagenmeisterin} und [thrallCount] Leibeigene befinden sich an Bord eines Shuttles, das Probleme mit dem Antrieb hat. Du kannst dem Shuttle ein Signal senden, um es in der Nähe von [map_label] abstürzen zu lassen.\n\nSobald das Schiff abgestürzt ist, kannst du gegen {sanguophage_gender ? den Sanguophagen : die Sanguophagin} und [sanguophage_possessive]e Leibeigenen kämpfen. Solltest du in der Lage sein, {sanguophage_gender ? den Meister : die Meisterin} einzufangen, kannst du [sanguophage_objective] dazu zwingen, einen deiner Kolonisten zu einem Sanguophagen zu machen.\n\n[sanguophageInfo]</li>
+    <li>sanguophageInfo->(*Gray)Sanguophagen sind alterslose, unsterbliche Übermenschen, die von Architen im Blutkreislauf angetrieben werden. Sie sind wunderschön und äußerst intelligent. Sie können jede Verletzung heilen, werden nie krank und sind immun gegen Gift. Im Kampf können sie tödliche Stacheln abfeuern und verletzte Verbündete heilen. Dies hat aber einen hohen Preis: Zum einen müssen Sanguophagen das lebenswichtige Hämogen konsumieren, welches aus menschlichem Blut gewonnen wird, und zum anderen ihren Körper regelmäßig für längere Zeit in den sogenannten Todesschlaf versetzen. Sie sind äußerst feueranfällig und werden durch UV-Licht verlangsamt.(/Gray)</li>
+  </SanguophageShip.questDescriptionRules.rulesStrings>
+  <!-- EN:
+    <li>questName->[shipAdjective] [shipNoun]</li>
+    <li>shipAdjective->sanguophage</li>
+    <li>shipAdjective->bloodthirsty</li>
+    <li>shipAdjective->blood</li>
+    <li>shipAdjective->shadow</li>
+    <li>shipAdjective->dark</li>
+    <li>shipAdjective->crimson</li>
+    <li>shipAdjective->red</li>
+    <li>shipAdjective->scab</li>
+    <li>shipAdjective->hemic</li>
+    <li>shipAdjective->sanguine</li>
+    <li>shipNoun->ship</li>
+    <li>shipNoun->shuttle</li>
+    <li>shipNoun->craft</li>
+    <li>shipNoun->hulk</li>
+    <li>shipNoun->crash</li>
+    <li>shipNoun->wreck</li>
+  -->
+  <SanguophageShip.questNameRules.rulesStrings>
+    <li>questName(p=0.2)->[shipAdjective]er [shipNounMas]</li>
+    <li>questName(p=0.2)->[shipAdjective]e [shipNounFem]</li>
+    <li>questName(p=0.7)->[shipAdjective]es [shipNounNeu]</li>
+    <li>questName(p=0.7)->[shipNoun2]-[shipNoun]</li>
+    <li>shipNoun2->Sanguophagen</li>
+    <li>shipAdjective->blutdurstig</li>
+    <li>shipNoun2->Blut</li>
+    <li>shipAdjective->blutig</li>
+    <li>shipNoun2->Schatten</li>
+    <li>shipAdjective->dunkl</li>
+    <li>shipAdjective->blutrot</li>
+    <li>shipAdjective->rot</li>
+    <li>shipAdjective->unheilig</li>
+    <li>shipNounNeu->Schiff</li>
+    <li>shipNounNeu->Shuttle</li>
+    <li>shipNounNeu->Raumschiff</li>
+    <li>shipNounFem->Raumfähre</li>
+    <li>shipNounMas->Absturz</li>
+    <li>shipNounNeu->Wrack</li>
+    <li>shipNoun->[shipNounMas]</li>
+    <li>shipNoun->[shipNounFem]</li>
+    <li>shipNoun(p=3)->[shipNounNeu]</li>
+  </SanguophageShip.questNameRules.rulesStrings>
+  
+</LanguageData>

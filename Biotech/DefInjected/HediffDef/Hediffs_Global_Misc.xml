@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: infant illness -->
+  <InfantIllness.label>Kinderkrankheit</InfantIllness.label>
+  <!-- EN: Effects of various birth complications. If the baby can survive for 10 days, they will be strong enough to recover on their own.\n\nThe illness will wax and wane in strength over time, requiring different levels of tending and medicine to recover. -->
+  <InfantIllness.description>Die Folgen einiger Komplikationen bei der Geburt. Wenn das Baby 10 Tage überlebt, erholt es sich von selbst.\n\nDer Schweregrad der Krankheit wird mit der Zeit zu- und abnehmen. Für eine Genesung sind je nach Fall verschiedene Behandlungen und Medizin erforderlich.</InfantIllness.description>
+  <!-- EN: {PAWN_labelShort}'s infant illness went from {1} to {2}. -->
+  <InfantIllness.comps.HediffComp_RandomizeSeverityPhases.notifyMessage>{replace: {PAWN_labelShort}s; "s(/Name)s"-"s(/Name)'"; "ß(/Name)s"-"ß(/Name)'"; "z(/Name)s"-"z(/Name)'"; "x(/Name)s"-"x(/Name)'"; "ce(/Name)s"-"ce(/Name)'"} Kinderkrankheit hat sich von {replace: {1}^; "e^"-""} auf {replace: {2}^; "e^"-""} geändert.</InfantIllness.comps.HediffComp_RandomizeSeverityPhases.notifyMessage>
+  <!-- EN: that are life threatening without exceptional medical care and glitterworld medicine. -->
+  <InfantIllness.comps.HediffComp_RandomizeSeverityPhases.phases.0.descriptionExtra>die ohne erstklassige Behandlung und Glitzerweltmedizin lebensbedrohlich sind.</InfantIllness.comps.HediffComp_RandomizeSeverityPhases.phases.0.descriptionExtra>
+  <!-- EN: grave -->
+  <InfantIllness.comps.HediffComp_RandomizeSeverityPhases.phases.0.labelPrefix>ernste</InfantIllness.comps.HediffComp_RandomizeSeverityPhases.phases.0.labelPrefix>
+  <!-- EN: that are life threatening without good medical care and standard medicine. -->
+  <InfantIllness.comps.HediffComp_RandomizeSeverityPhases.phases.1.descriptionExtra>die ohne gute Behandlung und normale Medizin lebensbedrohlich sind.</InfantIllness.comps.HediffComp_RandomizeSeverityPhases.phases.1.descriptionExtra>
+  <!-- EN: bad -->
+  <InfantIllness.comps.HediffComp_RandomizeSeverityPhases.phases.1.labelPrefix>schlimme</InfantIllness.comps.HediffComp_RandomizeSeverityPhases.phases.1.labelPrefix>
+  <!-- EN: that can be life threatening without basic medicine and tending. -->
+  <InfantIllness.comps.HediffComp_RandomizeSeverityPhases.phases.2.descriptionExtra>die ohne grundlegende Medizin und Behandlung lebensbedrohlich sein können.</InfantIllness.comps.HediffComp_RandomizeSeverityPhases.phases.2.descriptionExtra>
+  <!-- EN: common -->
+  <InfantIllness.comps.HediffComp_RandomizeSeverityPhases.phases.2.labelPrefix>normale</InfantIllness.comps.HediffComp_RandomizeSeverityPhases.phases.2.labelPrefix>
+  <!-- EN: which make the baby slightly ill but, at this rate, they will recover on their own. -->
+  <InfantIllness.comps.HediffComp_RandomizeSeverityPhases.phases.3.descriptionExtra>die das Baby leicht krank machen, aber in diesem Tempo wird es sich von selbst erholen.</InfantIllness.comps.HediffComp_RandomizeSeverityPhases.phases.3.descriptionExtra>
+  <!-- EN: mild -->
+  <InfantIllness.comps.HediffComp_RandomizeSeverityPhases.phases.3.labelPrefix>milde</InfantIllness.comps.HediffComp_RandomizeSeverityPhases.phases.3.labelPrefix>
+  <!-- EN: Effects of various birth complications -->
+  <InfantIllness.descriptionShort>Die Folgen einiger Komplikationen bei der Geburt,</InfantIllness.descriptionShort>
+  <!-- EN: minor -->
+  <InfantIllness.stages.minor.label>leicht</InfantIllness.stages.minor.label>
+  <!-- EN: major -->
+  <InfantIllness.stages.major.label>schwer</InfantIllness.stages.major.label>
+  <!-- EN: extreme -->
+  <InfantIllness.stages.extreme-0.label>extrem</InfantIllness.stages.extreme-0.label>
+  <!-- EN: extreme -->
+  <InfantIllness.stages.extreme-1.label>extrem</InfantIllness.stages.extreme-1.label>
+  
+  <!-- EN: lactating -->
+  <Lactating.label>Laktation</Lactating.label>
+  <!-- EN: The condition of being able to breastfeed a baby. The breasts are actively producing and storing milk. The lactating state begins when a mother gives birth, and continues indefinitely as long as she breastfeeds a baby at least once every 10 days. -->
+  <Lactating.description>Der Zustand, mit dem ein Baby gestillt werden kann. Die Brüste produzieren und speichern ständig Milch. Die Laktation beginnt mit der Geburt und hält unbegrenzt an, solange die Mutter ein Baby mindestens einmal alle 10 Tage stillt.</Lactating.description>
+  <!-- EN: {0} is no longer lactating due to not breastfeeding for 10 days. -->
+  <Lactating.comps.HediffComp_MessageOnRemoval.message>{0} produziert keine Muttermilch mehr, weil sie 10 Tage lang nicht gestillt hat.</Lactating.comps.HediffComp_MessageOnRemoval.message>
+  <!-- EN: milk fullness {CHARGEFACTOR_percentage} -->
+  <Lactating.comps.HediffComp_Lactating.labelInBrackets>Milchfülle {CHARGEFACTOR_percentage}</Lactating.comps.HediffComp_Lactating.labelInBrackets>
+  <!-- EN: {0} is no longer lactating due to malnutrition. -->
+  <Lactating.comps.HediffComp_RemoveIfOtherHediff.message>{0} produziert aufgrund von Unterernährung keine Muttermilch mehr.</Lactating.comps.HediffComp_RemoveIfOtherHediff.message>
+  
+  <!-- EN: morning sickness -->
+  <MorningSickness.label>morgendliche Übelkeit</MorningSickness.label>
+  <!-- EN: This is a common side effect of pregnancy, and despite the name isn't limited to mornings. While this is ongoing, the person suffers from nausea, dizziness, and fuzzy thinking. -->
+  <MorningSickness.description>Dieser Zustand tritt häufig in der Schwangerschaft auf und ist, anders als der Name vermuten lässt, nicht auf den Morgen beschränkt. Während dieser Zeit leidet die Person unter Übelkeit, Schwindel und Benommenheit.</MorningSickness.description>
+  
+  <!-- EN: ovum extracted -->
+  <OvumExtracted.label>Eizelle entnommen</OvumExtracted.label>
+  <!-- EN: This woman recently underwent an ovum extraction procedure. No more ova can be extracted until some time has passed. -->
+  <OvumExtracted.description>Dieser Frau wurde vor kurzem eine Eizelle entnommen. Es dauert einige Zeit, bis ihr wieder Eizellen entnommen werden können.</OvumExtracted.description>
+  
+  <!-- EN: pollution stimulus -->
+  <PollutionStimulus.label>Verseuchungsreiz</PollutionStimulus.label>
+  <!-- EN: This creature has been energized by exposure to pollution.\n\nThe pollution-stimulus response was originally engineered to help giant insects in their role as anti-mechanoid bioweapons. However, the gene has since been used to help people function in polluted areas as well. -->
+  <PollutionStimulus.description>Diese Kreatur wurde durch den Kontakt mit Verseuchung energetisiert.\n\nDer Verseuchungsreiz wurde ursprünglich entwickelt, um Rieseninsekten in ihrer Rolle als Biowaffe gegen Mechanoiden zu unterstützen. Inzwischen wird das Gen aber auch verwendet, um Menschen in verseuchten Gebieten überlebensfähig zu machen.</PollutionStimulus.description>
+  <!-- EN: This creature has been energized by exposure to pollution. -->
+  <PollutionStimulus.descriptionShort>Diese Kreatur wurde durch den Kontakt mit Verseuchung energetisiert.</PollutionStimulus.descriptionShort>
+  <!-- EN: minor -->
+  <PollutionStimulus.stages.minor.label>leicht</PollutionStimulus.stages.minor.label>
+  <!-- EN: moderate -->
+  <PollutionStimulus.stages.moderate.label>mittel</PollutionStimulus.stages.moderate.label>
+  <!-- EN: maximum -->
+  <PollutionStimulus.stages.maximum.label>maximal</PollutionStimulus.stages.maximum.label>
+  
+  <!-- EN: postpartum exhaustion -->
+  <PostpartumExhaustion.label>postpartale Erschöpfung</PostpartumExhaustion.label>
+  <!-- EN: General after-effects of giving birth. This mother needs some time to physically recover. -->
+  <PostpartumExhaustion.description>Normale Nachwirkungen einer Geburt. Diese Mutter braucht etwas Zeit, um sich körperlich zu erholen.</PostpartumExhaustion.description>
+  
+  <!-- EN: labor (dilation) -->
+  <PregnancyLabor.label>Wehen (Eröffnung)</PregnancyLabor.label>
+  <!-- EN: The condition of being about to give birth. Labor moves through multiple stages with different levels of pain and contractions. Each labor is different, and pain can rise and fall unpredictably over time. Labor ends when the baby is born. -->
+  <PregnancyLabor.description>Ein Zustand, der auf eine anstehende Geburt hinweist. Die Wehen durchlaufen mehrere Phasen mit unterschiedlichen Schmerzstufen und Kontraktionen. Jede Wehe ist anders, und die Schmerzen können mit der Zeit unerwartet stärker oder schwächer werden. Die Wehen enden, wenn das Baby geboren ist.</PregnancyLabor.description>
+  <!-- EN: {PAWN_labelShort}'s labor went from {1} to {2}. -->
+  <PregnancyLabor.comps.HediffComp_RandomizeStageWithInterval.notifyMessage>{replace: {PAWN_labelShort}s; "s(/Name)s"-"s(/Name)'"; "ß(/Name)s"-"ß(/Name)'"; "z(/Name)s"-"z(/Name)'"; "x(/Name)s"-"x(/Name)'"; "ce(/Name)s"-"ce(/Name)'"} Wehen haben sich von {1} auf {2} geändert.</PregnancyLabor.comps.HediffComp_RandomizeStageWithInterval.notifyMessage>
+  <!-- EN: mild -->
+  <PregnancyLabor.stages.mild.label>mild</PregnancyLabor.stages.mild.label>
+  <!-- EN: intense -->
+  <PregnancyLabor.stages.intense.label>heftig</PregnancyLabor.stages.intense.label>
+  <!-- EN: debilitating -->
+  <PregnancyLabor.stages.debilitating.label>lähmend</PregnancyLabor.stages.debilitating.label>
+  
+  <!-- EN: labor (pushing) -->
+  <PregnancyLaborPushing.label>Wehen (Pressen)</PregnancyLaborPushing.label>
+  <!-- EN: The baby is descending the birth canal and the mother has a strong urge to push. The birth is imminent. -->
+  <PregnancyLaborPushing.description>Das Baby wird durch den Geburtskanal geschoben und die Mutter hat einen starken Drang zu pressen. Die Geburt steht unmittelbar bevor.</PregnancyLaborPushing.description>
+  
+  <!-- EN: pregnancy mood -->
+  <PregnancyMood.label>Stimmungsschwankung</PregnancyMood.label>
+  <!-- EN: This common side effect of pregnancy represents a rising and falling mood caused by unbalanced hormones. -->
+  <PregnancyMood.description>Dieser Zustand tritt häufig in der Schwangerschaft auf und bewirkt, dass die Stimmung willkürlich steigt und fällt. Die Ursache dafür sind Hormonschwankungen.</PregnancyMood.description>
+  
+  <!-- EN: pregnant -->
+  <PregnantHuman.label>schwanger</PregnantHuman.label>
+  <!-- EN: A baby growing inside a woman, preparing to be born. In humans, pregnancy lasts for 18 days and is divided into 3 trimesters. As the pregnancy grows it will reduce the mother's mobility. For some mothers, pregnancy may induce nausea or mood swings that can be hard to deal with. -->
+  <PregnantHuman.description>Ein Baby, das im Inneren einer Frau heranwächst und für die Geburt vorbereitet wird. Bei einem Menschen dauert die Schwangerschaft 18 Tage und ist in 3 Trimester unterteilt. Mit zunehmender Schwangerschaft wird die Mobilität der Mutter eingeschränkt. Bei manchen Müttern kann die Schwangerschaft zu Übelkeit oder Stimmungsschwankungen führen, die mitunter sehr belastend sein können.</PregnantHuman.description>
+  <!-- EN: {0_labelShort} pregnant -->
+  <PregnantHuman.comps.HediffComp_MessageAfterTicks.letterLabel>{0_labelShort} ist schwanger</PregnantHuman.comps.HediffComp_MessageAfterTicks.letterLabel>
+  <!-- EN: {0_labelShort} is pregnant! -->
+  <PregnantHuman.comps.HediffComp_MessageAfterTicks.letterText>{0_labelShort} ist schwanger!</PregnantHuman.comps.HediffComp_MessageAfterTicks.letterText>
+  <!-- EN: pregnancy -->
+  <PregnantHuman.labelNoun>Schwangerschaft</PregnantHuman.labelNoun>
+  <!-- EN: first trimester -->
+  <PregnantHuman.stages.first_trimester.label>erstes Trimester</PregnantHuman.stages.first_trimester.label>
+  <!-- EN: second trimester -->
+  <PregnantHuman.stages.second_trimester.label>zweites Trimester</PregnantHuman.stages.second_trimester.label>
+  <!-- EN: third trimester -->
+  <PregnantHuman.stages.third_trimester.label>drittes Trimester</PregnantHuman.stages.third_trimester.label>
+  
+  <!-- EN: stillborn -->
+  <Stillborn.label>Totgeburt</Stillborn.label>
+  <!-- EN: This baby died due to non-specific complications during pregnancy. -->
+  <Stillborn.description>Dieses Baby starb aufgrund von Komplikationen während der Schwangerschaft.</Stillborn.description>
+  
+</LanguageData>
