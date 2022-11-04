@@ -504,12 +504,12 @@
     <li>desc_sentence->[TRAINER_nameDef] is morphing into [ANIMAL_definite].</li>
   -->
   <TrainedAnimal.rulePack.rulesStrings>
-    <li>tale_noun->[TRAINER_nameDef] [ANIMAL_nameDef] trainierte</li>
+    <li>tale_noun->[TRAINER_nameDef] [ANIMAL_nameDefAcc] trainierte</li>
     <li>tale_noun->[ANIMAL_nameDef] trainiert wurde</li>
     <li>tale_noun->[ANIMAL_nameDef] von [TRAINER_nameDef] trainiert wurde</li>
-    <li>image->[TRAINER_nameFull], wie [TRAINER_pronoun] mit [ANIMAL_nameFull] '[TRAINABLE_label]' trainiert, [circumstance_group]</li>
-    <li>image->[TRAINER_nameFull], wie [TRAINER_pronoun] [ANIMAL_nameFull] '[TRAINABLE_label]' beibringt, [circumstance_group]</li>
-    <li>image->[TRAINER_nameFull], wie [TRAINER_pronoun] '[TRAINABLE_label]' mit [ANIMAL_nameFull] übt, [circumstance_group]</li>
+    <li>image->[TRAINER_nameFull], wie [TRAINER_pronoun] mit [ANIMAL_nameIndefDat] '[TRAINABLE_label]' trainiert, [circumstance_group]</li>
+    <li>image->[TRAINER_nameFull], wie [TRAINER_pronoun] [ANIMAL_nameIndefDat] '[TRAINABLE_label]' beibringt, [circumstance_group]</li>
+    <li>image->[TRAINER_nameFull], wie [TRAINER_pronoun] '[TRAINABLE_label]' mit [ANIMAL_nameIndefDat] übt, [circumstance_group]</li>
     <li>train_syn->trainiert</li>
     <li>train_syn->drillt</li>
     <li>train_syn->weist</li>
@@ -537,6 +537,8 @@
     <li>desc_sentence->[ANIMAL_nameDef] ist mit Schuppen bedeckt.</li>
     <li>desc_sentence->[TRAINER_nameDef] wird mit [Quantity_adjphrase_Dat] Armen dargestellt.</li>
     <li>desc_sentence->[TRAINER_nameDef] verwandelt sich in [ANIMAL_nameDef].</li>
+    <li>ANIMAL_nameDefAcc->{replace: [ANIMAL_nameDef]; ">der "-">den "}</li>
+    <li>ANIMAL_nameIndefDat->{replace: [ANIMAL_nameDef]; ">der "-">einem "; ">die "-">einer "; ">das "-">einem "}</li>
   </TrainedAnimal.rulePack.rulesStrings>
   
 </LanguageData>
