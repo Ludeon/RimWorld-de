@@ -51,8 +51,10 @@
   -->
   <ThreatReward_GameCondition_Joiner.questNameRules.rulesStrings>
     <li>questName->{replace: [joiner_nameDef]s; "s&lt;/color>s"-"s&lt;/color>'"; "ß&lt;/color>s"-"ß&lt;/color>'"; "z&lt;/color>s"-"z&lt;/color>'"; "x&lt;/color>s"-"x&lt;/color>'"; "ce&lt;/color>s"-"ce&lt;/color>'"} [gameCondition_label]</li>
-    <li>questName->[joiner_nameDef] und [gameCondition_label]</li>
-    <li>questName->[gameCondition_label] und [joiner_nameDef]</li>
+    <li>questName->[joiner_nameDef] und [the] [gameCondition_def]</li>
+    <li>questName->[the] [gameCondition_def] und [joiner_nameDef]</li>
+    <li>the->{replace: ^[gameCondition_definite]; "^der [gameCondition_label]"-"der"; "^die [gameCondition_label]"-"die"; "^das [gameCondition_label]"-"das"; "^"-""}</li>
+    <li>gameCondition_def->{replace: [gameCondition_label]; "er "-"e "; "es "-"e "}</li>
   </ThreatReward_GameCondition_Joiner.questNameRules.rulesStrings>
   
   <!-- EN:
