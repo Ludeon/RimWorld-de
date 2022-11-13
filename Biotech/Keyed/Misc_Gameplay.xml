@@ -26,7 +26,7 @@
   <!-- EN: {0} mechs -->
   <CaravanMechsCount>{0} Mechs</CaravanMechsCount>
   <!-- EN: {BOSS} with {APPAREL} -->
-  <BossWithApparel>{BOSS} mit {APPAREL}</BossWithApparel><!-- text_todo -->
+  <BossWithApparel>{BOSS} mit {APPAREL}</BossWithApparel>
 
   <!-- Job reports -->
   <!-- EN: removing {0}. -->
@@ -115,6 +115,8 @@
   <WaitingFor>Wartet auf</WaitingFor>
   <!-- EN: Uncontrolled -->
   <Uncontrolled>Unkontrolliert</Uncontrolled>
+  <!-- EN: incoming {0} -->
+  <BossgroupIncoming>{0} kommt</BossgroupIncoming><!-- text_todo -->
 
   <!-- Sanguophage -->
   <!-- EN: hemogen -->
@@ -168,7 +170,7 @@
   <!-- EN: {PAWN_nameDef} should deathrest soon to avoid exhaustion. -->
   <PawnShouldDeathrestNow>{PAWN_nameDef} braucht bald einen Todesschlaf, um Erschöpfung zu vermeiden.</PawnShouldDeathrestNow>
   <!-- EN: This determines whether {PAWN_nameDef} will automatically ingest hemogen packs when {PAWN_possessive} hemogen is below {MIN}.\n\nAutomatic ingestion is currently {ONOFF}. -->
-  <AutoTakeHemogenDesc>Legt fest, ob {PAWN_nameDef} automatisch Hämogenpakete konsumieren soll, wenn {PAWN_possessive} Hämogen unter {MIN} ist.\n\nAutomatischer Konsum ist derzeit {ONOFF}.</AutoTakeHemogenDesc><!-- text_todo -->
+  <AutoTakeHemogenDesc>Legt fest, ob {PAWN_nameDef} automatisch Hämogenpakete konsumieren soll, wenn {PAWN_possessive} Hämogen unter {MIN} ist.\n\nAutomatischer Konsum ist derzeit {ONOFF}.</AutoTakeHemogenDesc>
   <!-- EN: Consume hemogen below -->
   <ConsumeHemogenBelow>Konsumiere Hämogen unter</ConsumeHemogenBelow>
   <!-- EN: Never consume hemogen. -->
@@ -275,6 +277,10 @@
   <EjectAllDesc>Wirf alle enthaltenen Genpakete auf den Boden.</EjectAllDesc>
   <!-- EN: Genepacks stored -->
   <GenepacksStored>Gelagerte Genpakete</GenepacksStored>
+  <!-- EN: Auto-load -->
+  <GenepackAutoLoad>Automatisch lagern</GenepackAutoLoad><!-- text_todo -->
+  <!-- EN: If active, haulers will automatically store this genepack in a gene bank. -->
+  <GenepackAutoLoadDesc>Bei Aktivierung werden deine Träger dieses Genpaket automatisch in einer Genbank lagern.</GenepackAutoLoadDesc><!-- text_todo -->
   <!-- EN: Forced traits -->
   <ForcedTraits>Erzwungene Merkmale</ForcedTraits>
   <!-- EN: Suppressed traits -->
@@ -393,8 +399,8 @@
   <WaitingForPawn>Wartet auf {PAWN_nameDef}.</WaitingForPawn>
   <!-- EN: Extracting genes from {PAWN_nameDef}. -->
   <ExtractingXenogermFrom>Extrahiert Gene aus {PAWN_nameDef}.</ExtractingXenogermFrom>
-  <!-- EN: Extraction paused: No power -->
-  <ExtractionPausedNoPower>Extraktion pausiert: Kein Strom</ExtractionPausedNoPower>
+  <!-- EN: Extraction paused: No power (interrupt in {TIME}) -->
+  <ExtractionPausedNoPower>Extraktion pausiert: Kein Strom (Abbruch in {TIME})</ExtractionPausedNoPower><!-- text_todo -->
   <!-- EN: Last ingested {CHEMICAL_label} {DURATION} ago. -->
   <LastIngestedDurationAgo>Hat zuletzt vor (*DateTime){replace: {DURATION}; "Tage"-"Tagen"; "Jahre"-"Jahren"}(/DateTime) {CHEMICAL_label} zu sich genommen.</LastIngestedDurationAgo>
   <!-- EN: {NAME} xenogerm -->
@@ -604,7 +610,7 @@
   <!-- EN: Waiting for ingredients -->
   <SubcoreScannerWaitingForIngredients>Wartet auf Zutaten</SubcoreScannerWaitingForIngredients>
   <!-- EN: The following ingredients must be loaded first -->
-  <SubcoreScannerWaitingForIngredientsDesc>Zuerst müssen die folgenden Zutaten geladen werden</SubcoreScannerWaitingForIngredientsDesc> <!-- text_todo -->
+  <SubcoreScannerWaitingForIngredientsDesc>Zuerst müssen die folgenden Zutaten geladen werden</SubcoreScannerWaitingForIngredientsDesc>
   <!-- EN: Has {0} -->
   <SubcoreScannerPawnHasSickness>Hat {0}</SubcoreScannerPawnHasSickness>
   <!-- EN: Babies are not allowed -->
@@ -700,7 +706,7 @@
   <!-- EN: Fertilize -->
   <Fertilize>Befruchten</Fertilize>
   <!-- EN: Fertilize {0_label} -->
-  <FertilizeThing>Befruchte {0_label}</FertilizeThing><!-- text_todo -->
+  <FertilizeThing>Befruchte {0_label}</FertilizeThing>
   <!-- EN: Cannot fertilize -->
   <FertilizeCannotFloatOption>Kann nicht befruchten</FertilizeCannotFloatOption>
   <!-- EN: Choose a man to fertilize this ovum to create an embryo. The embryo can then be implanted in a mother to start a pregnancy, or in a growth vat. The biological parents of the resulting child will be the woman who provided the ovum and man who fertilized it. -->

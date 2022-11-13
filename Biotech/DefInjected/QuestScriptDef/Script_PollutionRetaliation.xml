@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN:
+    <li>retaliationLetterLabel->wastepack retaliation</li>
+    <li>retaliationLetterLabel(senderIsNull==False)->[sender_faction_pawnSingular] wastepack retaliation</li>
+    <li>retaliationLetterLabel(senderIsNull==False,sender_royalInCurrentFaction==False)->[sender_nameDef]'s wastepack retaliation</li>
+    <li>retaliationLetterText(senderIsNull==True)->Your pollution has not gone unnoticed, angered neighbours are bombarding your base with toxic wastepacks.\n\nIf not kept frozen, toxic wastepacks will dissolve over time, polluting nearby terrain.</li>
+    <li>retaliationLetterText(sender_royalInCurrentFaction==True)->[sender_nameFull], a [sender_royalTitleInCurrentFaction] of [sender_faction_name] is bombarding your base with toxic wastepacks. [sender_pronoun] claims that your reckless polluting has done harm to [sender_possessive] faction.\n\nIf not kept frozen, toxic wastepacks will dissolve over time, polluting nearby terrain.</li>
+    <li>retaliationLetterText(sender_factionLeader==True)->[sender_faction_leaderTitle] [sender_nameFull] of [sender_faction_name] is bombarding your base with toxic wastepacks. [sender_pronoun] claims that your reckless polluting has done harm to [sender_possessive] faction.\n\nIf not kept frozen, toxic wastepacks will dissolve over time, polluting nearby terrain.</li>
+  -->
+  <PollutionRetaliation.questContentRules.rulesStrings>
+    <li>retaliationLetterLabel->Vergeltung wegen Giftmüll</li>
+    <li>retaliationLetterLabel(senderIsNull==False)->[sender_faction_pawnsPlural] üben Rache wegen Giftmüll</li>
+    <li>retaliationLetterLabel(senderIsNull==False,sender_royalInCurrentFaction==False)->{replace: [sender_nameDef]s; "s&lt;/color>s"-"s&lt;/color>'"; "ß&lt;/color>s"-"ß&lt;/color>'"; "z&lt;/color>s"-"z&lt;/color>'"; "x&lt;/color>s"-"x&lt;/color>'"; "ce&lt;/color>s"-"ce&lt;/color>'"} Vergeltung wegen Giftmüll</li>
+    <li>retaliationLetterText(senderIsNull==True)->Deine Umweltsünden sind nicht unbemerkt geblieben. Verärgerte Nachbarn bombardieren deine Kolonie mit Giftmüllpaketen.\n\nWenn die Giftmüllpakete nicht tiefgekühlt gelagert werden, lösen sie sich mit der Zeit auf und verseuchen den umliegenden Boden.</li>
+    <li>retaliationLetterText(sender_royalInCurrentFaction==True)->[sender_nameFull], [sender_royalTitleInCurrentFaction] der Fraktion [sender_faction_name], bombardiert deine Kolonie mit Giftmüllpaketen. [sender_pronoun] behauptet, dass deine rücksichtslose Verseuchung [sender_possessive]er Fraktion Schaden zugefügt hat.\n\nWenn die Giftmüllpakete nicht tiefgekühlt gelagert werden, lösen sie sich mit der Zeit auf und verseuchen den umliegenden Boden.</li>
+    <li>retaliationLetterText(sender_factionLeader==True)->[sender_faction_leaderTitle] [sender_nameFull] der Fraktion [sender_faction_name] bombardiert deine Kolonie mit Giftmüllpaketen. [sender_pronoun] behauptet, dass deine rücksichtslose Verseuchung [sender_possessive]er Fraktion Schaden zugefügt hat.\n\nWenn die Giftmüllpakete nicht tiefgekühlt gelagert werden, lösen sie sich mit der Zeit auf und verseuchen den umliegenden Boden.</li>
+  </PollutionRetaliation.questContentRules.rulesStrings>
+  <!-- EN:
+    <li>questDescription->pollutionretaliation</li>
+  -->
+  <PollutionRetaliation.questDescriptionRules.rulesStrings>
+    <li>questDescription->pollutionretaliation</li>
+  </PollutionRetaliation.questDescriptionRules.rulesStrings>
+  <!-- EN:
+    <li>questDescription->pollutionretaliation</li>
+  -->
+  <PollutionRetaliation.questNameRules.rulesStrings>
+    <li>questDescription->pollutionretaliation</li>
+  </PollutionRetaliation.questNameRules.rulesStrings>
+  
+</LanguageData>
