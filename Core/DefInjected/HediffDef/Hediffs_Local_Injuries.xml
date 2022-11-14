@@ -20,7 +20,7 @@
   <!-- EN: a bite wound -->
   <Bite.labelNoun>eine Bisswunde</Bite.labelNoun>
   <!-- EN: {0} in the {1} -->
-  <Bite.labelNounPretty>eine Bisswunde ({1})</Bite.labelNounPretty>
+  <Bite.labelNounPretty>eine Bisswunde {1_gender ? am : an der} {replace: {1}; "er "-"en "; "e "-"en "; "es "-"en "}</Bite.labelNounPretty>
   
   <!-- EN: bruise -->
   <Bruise.label>Prellung</Bruise.label>
@@ -38,7 +38,7 @@
   <!-- EN: a bruise -->
   <Bruise.labelNoun>eine Prellung</Bruise.labelNoun>
   <!-- EN: {0} in the {1} -->
-  <Bruise.labelNounPretty>eine Prellung ({1})</Bruise.labelNounPretty>
+  <Bruise.labelNounPretty>eine Prellung {1_gender ? am : an der} {replace: {1}; "er "-"en "; "e "-"en "; "es "-"en "}</Bruise.labelNounPretty>
   
   <!-- EN: burn -->
   <Burn.label>Verbrennung</Burn.label>
@@ -59,7 +59,7 @@
   <!-- EN: a burn -->
   <Burn.labelNoun>eine Verbrennung</Burn.labelNoun>
   <!-- EN: {0} in the {1} -->
-  <Burn.labelNounPretty>eine Verbrennung ({1})</Burn.labelNounPretty>
+  <Burn.labelNounPretty>eine Verbrennung {1_gender ? am : an der} {replace: {1}; "er "-"en "; "e "-"en "; "es "-"en "}</Burn.labelNounPretty>
   
   <!-- EN: chemical burn -->
   <ChemicalBurn.label>Verätzung</ChemicalBurn.label>
@@ -74,7 +74,7 @@
   <!-- EN: a chemical burn -->
   <ChemicalBurn.labelNoun>eine Verätzung</ChemicalBurn.labelNoun>
   <!-- EN: {0} in the {1} -->
-  <ChemicalBurn.labelNounPretty>eine Verätzung ({1})</ChemicalBurn.labelNounPretty>
+  <ChemicalBurn.labelNounPretty>eine Verätzung {1_gender ? am : an der} {replace: {1}; "er "-"en "; "e "-"en "; "es "-"en "}</ChemicalBurn.labelNounPretty>
   
   <!-- EN: crack -->
   <Crack.label>Bruch</Crack.label>
@@ -93,7 +93,7 @@
   <!-- EN: a crack wound -->
   <Crack.labelNoun>ein Bruch</Crack.labelNoun>
   <!-- EN: {0} in the {1} -->
-  <Crack.labelNounPretty>ein Bruch ({1})</Crack.labelNounPretty>
+  <Crack.labelNounPretty>ein Bruch {1_gender ? am : an der} {replace: {1}; "er "-"en "; "e "-"en "; "es "-"en "}</Crack.labelNounPretty>
   
   <!-- EN: crush -->
   <Crush.label>Quetschung</Crush.label>
@@ -112,7 +112,7 @@
   <!-- EN: a crush wound -->
   <Crush.labelNoun>eine Quetschung</Crush.labelNoun>
   <!-- EN: {0} in the {1} -->
-  <Crush.labelNounPretty>eine Quetschung ({1})</Crush.labelNounPretty>
+  <Crush.labelNounPretty>eine Quetschung {1_gender ? am : an der} {replace: {1}; "er "-"en "; "e "-"en "; "es "-"en "}</Crush.labelNounPretty>
   
   <!-- EN: cut -->
   <Cut.label>Schnitt</Cut.label>
@@ -133,7 +133,7 @@
   <!-- EN: a cut -->
   <Cut.labelNoun>ein Schnitt</Cut.labelNoun>
   <!-- EN: {0} in the {1} -->
-  <Cut.labelNounPretty>ein Schnitt ({1})</Cut.labelNounPretty>
+  <Cut.labelNounPretty>ein Schnitt {1_gender ? am : an der} {replace: {1}; "er "-"en "; "e "-"en "; "es "-"en "}</Cut.labelNounPretty>
   
   <!-- EN: cut -->
   <ExecutionCut.label>Schnitt</ExecutionCut.label>
@@ -146,7 +146,7 @@
   <!-- EN: a cut -->
   <ExecutionCut.labelNoun>ein Schnitt</ExecutionCut.labelNoun>
   <!-- EN: {0} in the {1} -->
-  <ExecutionCut.labelNounPretty>ein Schnitt ({1})</ExecutionCut.labelNounPretty>
+  <ExecutionCut.labelNounPretty>ein Schnitt {1_gender ? am : an der} {replace: {1}; "er "-"en "; "e "-"en "; "es "-"en "}</ExecutionCut.labelNounPretty>
   
   <!-- EN: frostbite -->
   <Frostbite.label>Erfrierung</Frostbite.label>
@@ -164,7 +164,7 @@
   <Frostbite.injuryProps.destroyedLabel>Abgefroren</Frostbite.injuryProps.destroyedLabel>
   <Frostbite.labelNoun>eine Erfrierung</Frostbite.labelNoun>
   <!-- EN: {0} in the {1} -->
-  <Frostbite.labelNounPretty>eine Erfrierung ({1})</Frostbite.labelNounPretty>
+  <Frostbite.labelNounPretty>eine Erfrierung {1_gender ? am : an der} {replace: {1}; "er "-"en "; "e "-"en "; "es "-"en "}</Frostbite.labelNounPretty>
   
   <!-- EN: gunshot -->
   <Gunshot.label>Schuss</Gunshot.label>
@@ -187,7 +187,7 @@
   <!-- EN: a gunshot wound -->
   <Gunshot.labelNoun>eine Schusswunde</Gunshot.labelNoun>
   <!-- EN: {0} in the {1} -->
-  <Gunshot.labelNounPretty>eine Schusswunde ({1})</Gunshot.labelNounPretty>
+  <Gunshot.labelNounPretty>eine Schusswunde {1_gender ? am : an der} {replace: {1}; "er "-"en "; "e "-"en "; "es "-"en "}</Gunshot.labelNounPretty>
   
   <!-- EN: misc -->
   <Misc.label>Diverses</Misc.label>
@@ -206,7 +206,7 @@
   <!-- EN: an injury -->
   <Misc.labelNoun>eine Verletzung</Misc.labelNoun>
   <!-- EN: {0} in the {1} -->
-  <Misc.labelNounPretty>eine Verletzung ({1})</Misc.labelNounPretty>
+  <Misc.labelNounPretty>eine Verletzung {1_gender ? am : an der} {replace: {1}; "er "-"en "; "e "-"en "; "es "-"en "}</Misc.labelNounPretty>
   
   <!-- EN: missing body part -->
   <MissingBodyPart.label>fehlendes Körperteil</MissingBodyPart.label>
@@ -215,7 +215,7 @@
   <!-- EN: a missing body part -->
   <MissingBodyPart.labelNoun>ein fehlendes Körperteil</MissingBodyPart.labelNoun>
   <!-- EN: missing a {1} -->
-  <MissingBodyPart.labelNounPretty>ein fehlendes Körperteil ({1})</MissingBodyPart.labelNounPretty>
+  <MissingBodyPart.labelNounPretty>{1_gender ? ein fehlender : eine fehlende : ein fehlendes} {1}</MissingBodyPart.labelNounPretty>
   
   <!-- EN: scratch -->
   <Scratch.label>Kratzer</Scratch.label>
@@ -236,7 +236,7 @@
   <!-- EN: a scratch -->
   <Scratch.labelNoun>ein Kratzer</Scratch.labelNoun>
   <!-- EN: {0} in the {1} -->
-  <Scratch.labelNounPretty>ein Kratzer ({1})</Scratch.labelNounPretty>
+  <Scratch.labelNounPretty>ein Kratzer {1_gender ? am : an der} {replace: {1}; "er "-"en "; "e "-"en "; "es "-"en "}</Scratch.labelNounPretty>
   
   <!-- EN: shredded -->
   <Shredded.label>Explosion</Shredded.label>
@@ -257,7 +257,7 @@
   <!-- EN: a shredded wound -->
   <Shredded.labelNoun>eine Explosionswunde</Shredded.labelNoun>
   <!-- EN: {0} in the {1} -->
-  <Shredded.labelNounPretty>eine Explosionswunde ({1})</Shredded.labelNounPretty>
+  <Shredded.labelNounPretty>eine Explosionswunde {1_gender ? am : an der} {replace: {1}; "er "-"en "; "e "-"en "; "es "-"en "}</Shredded.labelNounPretty>
   
   <!-- EN: stab -->
   <Stab.label>Stich</Stab.label>
@@ -278,7 +278,7 @@
   <!-- EN: a stab wound -->
   <Stab.labelNoun>eine Stichwunde</Stab.labelNoun>
   <!-- EN: {0} in the {1} -->
-  <Stab.labelNounPretty>eine Stichwunde ({1})</Stab.labelNounPretty>
+  <Stab.labelNounPretty>eine Stichwunde {1_gender ? am : an der} {replace: {1}; "er "-"en "; "e "-"en "; "es "-"en "}</Stab.labelNounPretty>
   
   <!-- EN: surgical cut -->
   <SurgicalCut.label>chirurgischer Schnitt</SurgicalCut.label>
@@ -297,6 +297,6 @@
   <!-- EN: a surgical cut -->
   <SurgicalCut.labelNoun>ein chirurgischer Schnitt</SurgicalCut.labelNoun>
   <!-- EN: {0} in the {1} -->
-  <SurgicalCut.labelNounPretty>ein chirurgischer Schnitt ({1})</SurgicalCut.labelNounPretty>
+  <SurgicalCut.labelNounPretty>ein chirurgischer Schnitt {1_gender ? am : an der} {replace: {1}; "er "-"en "; "e "-"en "; "es "-"en "}</SurgicalCut.labelNounPretty>
   
 </LanguageData>
