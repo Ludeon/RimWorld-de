@@ -12,15 +12,19 @@
     <li>adj->universal</li>
   -->
   <DietyTypeMakerAbrahamic.rulePack.rulesStrings>
-    <li>r_deityType->Schöpfer [all]</li>
-    <li>r_deityType->[adj] Gott</li>
-    <li>all->des Alls</li>
+    <li>r_deityType->[god] [all]</li>
+    <li>r_deityType(gender!=Female)->[adj]er Gott</li>
+    <li>r_deityType(gender==Female)->[adj]e Göttin</li>
+    <li>god(gender!=Female)->Schöpfer</li>
+    <li>god(gender==Female)->Schöpferin</li>
+    <li>god(gender!=Female)->Gott</li>
+    <li>god(gender==Female)->Göttin</li>
     <li>all->von allem</li>
     <li>all->des Universums</li>
-    <li>adj->Allmächtiger</li>
-    <li>adj->Allgewaltiger</li>
-    <li>adj->Omnipotenter</li>
-    <li>adj->Universaler</li>
+    <li>adj->allmächtig</li>
+    <li>adj->allgewaltig</li>
+    <li>adj->omnipotent</li>
+    <li>adj->universal</li>
   </DietyTypeMakerAbrahamic.rulePack.rulesStrings>
   
   <!-- EN:
