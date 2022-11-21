@@ -93,8 +93,10 @@
     <li>memeConcept->Tiere</li>
     <li>memeConceptFem->Tiere</li>
     <li>memeConceptFemGen->Tiere</li>
-    <li>memeLeaderNoun->Bestie</li>
-    <li>memeLeaderNoun->Tier</li>
+    <li>memeLeaderNoun->|F|Bestie</li>
+    <li>memeLeaderNoun->|N|Tier</li>
+    <li>memeLeaderNounCon->bestie</li>
+    <li>memeLeaderNounCon->tier</li>
     <li>memeLeaderPrefix->Alpha</li>
     <li>memeMoralist->Flüsterer</li>
     <li>memeMoralist->Hirte</li>
@@ -180,9 +182,8 @@
     <li>memeMoralist->blindfolder</li>
   -->
   <Blindsight.generalRules.rulesStrings>
-    <li>memeAdjective(p=2)->blind</li>
-    <li>memeAdjective->seherisch</li>
-    <li>memeAdjective->weitsichtig</li>
+    <li>memeAdjective->blind</li>
+    <li>memeAdjective->visionär</li>
     <li>memeCreed->Sicht</li>
     <li>memeCreed->Kult</li>
     <li>memeCreedGender->e Sicht</li>
@@ -192,15 +193,19 @@
     <li>memeConcept->Sehen</li>
     <li>memeConcept->Sicht</li>
     <li>memeConcept->Wahrnehmung</li>
+    <li>memeConcept->Vision</li>
     <li>memeConceptFem->Blindheit</li>
     <li>memeConceptNeu->Sehen</li>
     <li>memeConceptFem->Sicht</li>
     <li>memeConceptFem->Wahrnehmung</li>
+    <li>memeConceptFem->Vision</li>
     <li>memeConceptFemGen->Blindheit</li>
     <li>memeConceptNeuGen->Sehens</li>
     <li>memeConceptFemGen->Sicht</li>
     <li>memeConceptFemGen->Wahrnehmung</li>
-    <li>memeLeaderNoun->Visionär</li>
+    <li>memeConceptFemGen->Vision</li>
+    <li>memeLeaderNoun->|M|Visionär</li>
+    <li>memeLeaderNounCon->visionär</li>
     <li>memeLeaderAdjective->blind</li>
     <li>memeMoralist->Seher</li>
     <li>memeMoralist->Blender</li>
@@ -292,11 +297,16 @@
     <li>memeConceptNeuGen->Fleisches</li>
     <li>memeConceptMasGen->Mordes</li>
     <li>memeConceptNeuGen->Essens</li>
-    <li>memeLeaderNoun->Fresser</li>
-    <li>memeLeaderNoun->Chefkoch</li>
-    <li>memeLeaderNoun->Bluttrinker</li>
-    <li>memeLeaderNoun->Zahn</li>
-    <li>memeLeaderNoun->Fleischreißer</li>
+    <li>memeLeaderNoun->|M|Fresser</li>
+    <li>memeLeaderNoun->|M|Chefkoch</li>
+    <li>memeLeaderNoun->|M|Blutschlürfer</li>
+    <li>memeLeaderNoun->|M|Zahn</li>
+    <li>memeLeaderNoun->|M|Fleischreißer</li>
+    <li>memeLeaderNounCon->fresser</li>
+    <li>memeLeaderNounCon->chefkoch</li>
+    <li>memeLeaderNounCon->blutschlürfer</li>
+    <li>memeLeaderNounCon->zahn</li>
+    <li>memeLeaderNounCon->fleischreißer</li>
     <li>memeMoralist->Vorkoster</li>
     <li>memeMoralist->Fleischkundiger</li>
   </Cannibal.generalRules.rulesStrings>
@@ -396,8 +406,10 @@
     <li>memeConceptFemGen->Dunkelheit</li>
     <li>memeConceptFemGen->Finsternis</li>
     <li>memeConceptFemGen->Schwärze</li>
-    <li>memeLeaderNoun->Verborgener</li>
-    <li>memeLeaderNoun->Lichtkiller</li>
+    <li>memeLeaderNoun->|M|Obskurator</li>
+    <li>memeLeaderNoun->|M|Verdunkler</li>
+    <li>memeLeaderNounCon->obskurator</li>
+    <li>memeLeaderNounCon->verdunkler</li>
     <li>memeLeaderAdjective->dunkl</li>
     <li>memeMoralist->Verdunkler</li>
     <li>memeMoralist->Schwärzer</li>
@@ -472,8 +484,10 @@
     <li>memeConceptNeuGen->Fleisches</li>
     <li>memeConceptFemGen->Reinheit</li>
     <li>memeConceptFemGen->Makellosigkeit</li>
-    <li>memeLeaderNoun->Wesen</li>
-    <li>memeLeaderNoun->Mensch</li>
+    <li>memeLeaderNoun->|N|Wesen</li>
+    <li>memeLeaderNoun->|M|Mensch</li>
+    <li>memeLeaderNounCon->wesen</li>
+    <li>memeLeaderNounCon->mensch</li>
     <li>memeMoralist->Läuterer</li>
   </FleshPurity.generalRules.rulesStrings>
   <!-- EN: purist -->
@@ -577,10 +591,14 @@
     <li>memeConceptFemGen->Träume</li>
     <li>memeHyphenPrefix->Drogen</li>
     <li>memeHyphenPrefix->Narko</li>
-    <li>memeLeaderNoun->Schläfer</li>
-    <li>memeLeaderNoun->Doper</li>
-    <li>memeLeaderNoun->Raucher</li>
-    <li>memeLeaderNoun->Chiller</li>
+    <li>memeLeaderNoun->|M|Schläfer</li>
+    <li>memeLeaderNoun->|M|Doper</li>
+    <li>memeLeaderNoun->|M|Raucher</li>
+    <li>memeLeaderNoun->|M|Chiller</li>
+    <li>memeLeaderNounCon->schläfer</li>
+    <li>memeLeaderNounCon->-Doper</li>
+    <li>memeLeaderNounCon->raucher</li>
+    <li>memeLeaderNounCon->-Chiller</li>
     <li>memeMoralist->Philosophierer</li>
     <li>memeMoralist->Abstrahierer</li>
     <li>memeMoralist->Lacher</li>
@@ -682,10 +700,14 @@
     <li>memeConceptFem->Haut</li>
     <li>memeConceptFemGen->Nacktheit</li>
     <li>memeConceptFemGen->Haut</li>
-    <li>memeLeaderNoun->Swinger</li>
-    <li>memeLeaderNoun->Nackedei</li>
-    <li>memeLeaderNoun->Grapscher</li>
-    <li>memeLeaderNoun->Spanner</li>
+    <li>memeLeaderNoun->|M|Swinger</li>
+    <li>memeLeaderNoun->|M|Nackedei</li>
+    <li>memeLeaderNoun->|M|Grapscher</li>
+    <li>memeLeaderNoun->|M|Spanner</li>
+    <li>memeLeaderNounCon->-Swinger</li>
+    <li>memeLeaderNounCon->nackedei</li>
+    <li>memeLeaderNounCon->grapscher</li>
+    <li>memeLeaderNounCon->spanner</li>
   </Nudism.generalRules.rulesStrings>
   <!-- EN: nudist -->
   <Nudism.symbolPacks.0.adjective>nudistisch</Nudism.symbolPacks.0.adjective>
@@ -804,12 +826,18 @@
     <li>memeConceptFemGen->Folter</li>
     <li>memeConceptNeuGen->Leidens</li>
     <li>memeConceptNeuGen->Blutes</li>
-    <li>memeLeaderNoun->Folterer</li>
-    <li>memeLeaderNoun->Agonisierer</li>
-    <li>memeLeaderNoun->Auspeitscher</li>
-    <li>memeLeaderNoun->Kettenmann</li>
-    <li>memeLeaderNoun->Peiniger</li>
-    <li>memeLeaderNoun->Aderlasser</li>
+    <li>memeLeaderNoun->|M|Folterer</li>
+    <li>memeLeaderNoun->|M|Agonisator</li>
+    <li>memeLeaderNoun->|M|Peitscher</li>
+    <li>memeLeaderNoun->|M|Kettenhalter</li>
+    <li>memeLeaderNoun->|M|Peiniger</li>
+    <li>memeLeaderNoun->|M|Aderlasser</li>
+    <li>memeLeaderNounCon->folterer</li>
+    <li>memeLeaderNounCon->agonisator</li>
+    <li>memeLeaderNounCon->peitscher</li>
+    <li>memeLeaderNounCon->kettenhalter</li>
+    <li>memeLeaderNounCon->peiniger</li>
+    <li>memeLeaderNounCon->aderlasser</li>
     <li>memeMoralist->Schmerzflüsterer</li>
     <li>memeMoralist->Leidenssprecher</li>
     <li>memeMoralist->Schmerzsprecher</li>
@@ -909,7 +937,8 @@
     <li>memeConcept->Wahrheit</li>
     <li>memeConceptFem->Wahrheit</li>
     <li>memeConceptFemGen->Wahrheit</li>
-    <li>memeLeaderNoun->Sprecher</li>
+    <li>memeLeaderNoun->|M|Sprecher</li>
+    <li>memeLeaderNounCon->sprecher</li>
     <li>memeMoralist->Bekehrer</li>
     <li>memeMoralist->Missionar</li>
   </Proselytizer.generalRules.rulesStrings>
@@ -1014,13 +1043,20 @@
     <li>memeConceptNeuGen->Raubens</li>
     <li>memeConceptFemGen->Piraterie</li>
     <li>memeConceptNeuGen->Überfallens</li>
-    <li>memeLeaderNoun->Boss</li>
-    <li>memeLeaderNoun->Kapitän</li>
-    <li>memeLeaderNoun->Chef</li>
-    <li>memeLeaderNoun->Aufpasser</li>
-    <li>memeLeaderNoun->Oberhaupt</li>
-    <li>memeLeaderNoun->Räuber</li>
-    <li>memeLeaderNoun->Raider</li>
+    <li>memeLeaderNoun->|M|Boss</li>
+    <li>memeLeaderNoun->|M|Kapitän</li>
+    <li>memeLeaderNoun->|M|Chef</li>
+    <li>memeLeaderNoun->|M|Aufseher</li>
+    <li>memeLeaderNoun->|M|Räuber</li>
+    <li>memeLeaderNoun->|M|Plünderer</li>
+    <li>memeLeaderNoun->|M|Raider</li>
+    <li>memeLeaderNounCon->boss</li>
+    <li>memeLeaderNounCon->kapitän</li>
+    <li>memeLeaderNounCon->chef</li>
+    <li>memeLeaderNounCon->aufseher</li>
+    <li>memeLeaderNounCon->räuber</li>
+    <li>memeLeaderNounCon->plünderer</li>
+    <li>memeLeaderNounCon->raider</li>
     <li>memeMoralist->Kaplan</li>
   </Raider.generalRules.rulesStrings>
   <!-- EN: raidist -->
@@ -1130,11 +1166,16 @@
     <li>memeConcept->Viehzucht</li>
     <li>memeConceptFem->Viehzucht</li>
     <li>memeConceptFemGen->Viehzucht</li>
-    <li>memeLeaderNoun->Viehzüchter</li>
-    <li>memeLeaderNoun->Hand</li>
-    <li>memeLeaderNoun->Cowboy</li>
-    <li>memeLeaderNoun->Hirte</li>
-    <li>memeLeaderNoun->Schäferhund</li>
+    <li>memeLeaderNoun->|M|Viehzüchter</li>
+    <li>memeLeaderNoun->|M|Knecht</li>
+    <li>memeLeaderNoun->|M|Cowboy</li>
+    <li>memeLeaderNoun->|M|Hirte</li>
+    <li>memeLeaderNoun->|M|Schäfer</li>
+    <li>memeLeaderNounCon->viehzüchter</li>
+    <li>memeLeaderNounCon->knecht</li>
+    <li>memeLeaderNounCon->-Cowboy</li>
+    <li>memeLeaderNounCon->hirte</li>
+    <li>memeLeaderNounCon->schäfer</li>
   </Rancher.generalRules.rulesStrings>
   <!-- EN: ranch -->
   <Rancher.symbolPacks.0.adjective>ranchistisch</Rancher.symbolPacks.0.adjective>
@@ -1263,9 +1304,12 @@
     <li>memeConceptFemGen->Technik</li>
     <li>memeConceptFemGen->Augmentierung</li>
     <li>memeConceptFemGen->Verbesserung</li>
-    <li>memeLeaderNoun->Haxor</li>
-    <li>memeLeaderNoun->Superuser</li>
-    <li>memeLeaderNoun->Verstärker</li>
+    <li>memeLeaderNoun->|M|Haxor</li>
+    <li>memeLeaderNoun->|M|Superuser</li>
+    <li>memeLeaderNoun->|M|Verstärker</li>
+    <li>memeLeaderNounCon->-Haxor</li>
+    <li>memeLeaderNounCon->-Superuser</li>
+    <li>memeLeaderNounCon->verstärker</li>
     <li>memeLeaderPrefix->Techno</li>
     <li>memeLeaderPrefix->Cyber</li>
     <li>memeMoralist->Monteur</li>
@@ -1409,9 +1453,12 @@
     <li>memeHyphenPrefix->Baum</li>
     <li>memeHyphenPrefix->Arbor</li>
     <li>memeHyphenPrefix->Zweig</li>
-    <li>memeLeaderNoun->Baumwächter</li>
-    <li>memeLeaderNoun->Arborist</li>
-    <li>memeLeaderNoun->Neodruide</li>
+    <li>memeLeaderNoun->|M|Baumwächter</li>
+    <li>memeLeaderNoun->|M|Arborist</li>
+    <li>memeLeaderNoun->|M|Druide</li>
+    <li>memeLeaderNounCon->baumwächter</li>
+    <li>memeLeaderNounCon->arborist</li>
+    <li>memeLeaderNounCon->druide</li>
     <li>memeLeaderAdjective->grün</li>
     <li>memeLeaderPrefix->Wurzel</li>
     <li>memeLeaderPrefix->Laubdach</li>
@@ -1513,9 +1560,12 @@
     <li>memeConceptNeuGen->Gesteins</li>
     <li>memeConceptFemGen->Tiefe</li>
     <li>memeConceptNeuGen->Eingrabens</li>
-    <li>memeLeaderNoun->Vorgräber</li>
-    <li>memeLeaderNoun->Tiefenecholot</li>
-    <li>memeLeaderNoun->Shaft</li>
+    <li>memeLeaderNoun->|M|Vorgräber</li>
+    <li>memeLeaderNoun->|N|Echolot</li>
+    <li>memeLeaderNoun->|M|Shaft</li>
+    <li>memeLeaderNounCon->vorgräber</li>
+    <li>memeLeaderNounCon->echolot</li>
+    <li>memeLeaderNounCon->-Shaft</li>
     <li>memeLeaderAdjective->tief</li>
     <li>memeMoralist->Wahrheitsgräber</li>
     <li>memeMoralist->Gedankengräber</li>

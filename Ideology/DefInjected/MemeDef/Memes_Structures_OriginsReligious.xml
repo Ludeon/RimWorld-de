@@ -26,9 +26,12 @@
     <li>r_ideoName(p=99)->[globalAdjective]er [packIdeoName]</li>
     <li>r_ideoName(p=99)->[memeAdjective]er [packIdeoName]</li>
     <li>r_ideoName(p=99)->[packIdeoName]</li>
-    <li>memeLeaderNoun->Bodhisattva</li>
-    <li>memeLeaderNoun->Sattva</li>
-    <li>memeLeaderNoun->Lama</li>
+    <li>memeLeaderNoun->|M|Bodhisattva</li>
+    <li>memeLeaderNoun->|M|Sattva</li>
+    <li>memeLeaderNoun->|M|Lama</li>
+    <li>memeLeaderNounCon->-Bodhisattva</li>
+    <li>memeLeaderNounCon->-Sattva</li>
+    <li>memeLeaderNounCon->-Lama</li>
     <li>memeLeaderAdjective->erleuchtet</li>
     <li>memeLeaderAdjective->weis</li>
     <li>memeLeaderAdjective->spirituell</li>
@@ -135,13 +138,20 @@
     <li>r_ideoName(p=99)->[globalAdjective]er [packIdeoName]</li>
     <li>r_ideoName(p=99)->[memeAdjective]er [packIdeoName]</li>
     <li>r_ideoName(p=99)->[packIdeoName]</li>
-    <li>memeLeaderNoun->Bischof</li>
-    <li>memeLeaderNoun->Kardinal</li>
-    <li>memeLeaderNoun->Papst</li>
-    <li>memeLeaderNoun->Pontifex</li>
-    <li>memeLeaderNoun->Legat</li>
-    <li>memeLeaderNoun->Nuntius</li>
-    <li>memeLeaderNoun->Divus</li>
+    <li>memeLeaderNoun->|M|Bischof</li>
+    <li>memeLeaderNoun->|M|Kardinal</li>
+    <li>memeLeaderNoun->|M|Papst</li>
+    <li>memeLeaderNoun->|M|Pontifex</li>
+    <li>memeLeaderNoun->|M|Legat</li>
+    <li>memeLeaderNoun->|M|Nuntius</li>
+    <li>memeLeaderNoun->|M|Divus</li>
+    <li>memeLeaderNounCon->bischof</li>
+    <li>memeLeaderNounCon->kardinal</li>
+    <li>memeLeaderNounCon->papst</li>
+    <li>memeLeaderNounCon->-Pontifex</li>
+    <li>memeLeaderNounCon->legat</li>
+    <li>memeLeaderNounCon->nuntius</li>
+    <li>memeLeaderNounCon->divus</li>
     <li>memeLeaderAdjective->heilig</li>
     <li>memeLeaderAdjective->göttlich</li>
     <li>memeLeaderAdjective->christlich</li>
@@ -333,16 +343,21 @@
     <li>r_ideoName(p=99)->[globalAdjective]er [packIdeoName]</li>
     <li>r_ideoName(p=99)->[memeAdjective]er [packIdeoName]</li>
     <li>r_ideoName(p=99)->[packIdeoName]</li>
-    <li>memeLeaderNoun->Mahatma</li>
-    <li>memeLeaderNoun->Ishvara</li>
-    <li>memeLeaderNoun->Yogi</li>
-    <li>memeLeaderNoun->Pandit</li>
-    <li>memeLeaderNoun->Avatar</li>
+    <li>memeLeaderNoun->|M|Mahatma</li>
+    <li>memeLeaderNoun->|M|Ishvara</li>
+    <li>memeLeaderNoun->|M|Yogi</li>
+    <li>memeLeaderNoun->|M|Pandit</li>
+    <li>memeLeaderNoun->|M|Avatar</li>
+    <li>memeLeaderNounCon->-Mahatma</li>
+    <li>memeLeaderNounCon->-Ishvara</li>
+    <li>memeLeaderNounCon->-Yogi</li>
+    <li>memeLeaderNounCon->-Pandit</li>
+    <li>memeLeaderNounCon->avatar</li>
     <li>memeLeaderAdjective->heilig</li>
     <li>memeLeaderAdjective->hinduistisch</li>
     <li>memeLeaderAdjective->indisch</li>
     <li>memeLeaderAdjective->yogisch</li>
-    <li>memeLeaderPrefix->Tirth</li>
+    <!-- <li>memeLeaderPrefix->Tirth</li> -->
     <li>memeMoralist(p=3)->Pujari</li>
     <li>memeMoralist->Purohit</li>
     <li>memeMoralist->Archaka</li>
@@ -464,13 +479,20 @@
     <li>r_ideoName(p=99)->[globalAdjective]er [packIdeoName]</li>
     <li>r_ideoName(p=99)->[memeAdjective]er [packIdeoName]</li>
     <li>r_ideoName(p=99)->[packIdeoName]</li>
-    <li>memeLeaderNoun->Mullah</li>
-    <li>memeLeaderNoun->Imam</li>
-    <li>memeLeaderNoun->Kalif</li>
-    <li>memeLeaderNoun->Mufti</li>
-    <li>memeLeaderNoun->Almamy</li>
-    <li>memeLeaderNoun->Kyai</li>
-    <li>memeLeaderNoun->Ajatollah</li>
+    <li>memeLeaderNoun->|M|Mullah</li>
+    <li>memeLeaderNoun->|M|Imam</li>
+    <li>memeLeaderNoun->|M|Kalif</li>
+    <li>memeLeaderNoun->|M|Mufti</li>
+    <li>memeLeaderNoun->|M|Almamy</li>
+    <li>memeLeaderNoun->|M|Kyai</li>
+    <li>memeLeaderNoun->|M|Ajatollah</li>
+    <li>memeLeaderNounCon->-Mullah</li>
+    <li>memeLeaderNounCon->-Imam</li>
+    <li>memeLeaderNounCon->-Kalif</li>
+    <li>memeLeaderNounCon->-Mufti</li>
+    <li>memeLeaderNounCon->-Almamy</li>
+    <li>memeLeaderNounCon->-Kyai</li>
+    <li>memeLeaderNounCon->-Ajatollah</li>
     <li>memeLeaderPrefix->Groß</li>
     <li>memeMoralist(p=4)->Imam</li>
     <li>memeMoralist->Qadi</li>
