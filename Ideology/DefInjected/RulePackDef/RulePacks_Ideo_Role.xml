@@ -130,9 +130,9 @@
     <li>r_roleName->[memeMoralist] [chosenTheme]</li>
     <li>r_roleName->[memeMoralist] von [keyDeity]</li>
     <li>r_roleName->[memeMoralist] [memeConceptGenDef]</li>
-    <li>r_roleName->[memeMoralist] des [chosenIdeoName]</li>
+    <li>r_roleName->[memeMoralist] {replace: des [chosenIdeoName]; "des |M|"-"des "; "des |F|"-"der "; "des |N|"-"des "}</li>
     <li>r_roleName->[chosenAdjective]er [memeMoralist]</li>
-    <!-- <li>r_roleName->[keyDeity]s [memeMoralist]</li> -->
+    <li>r_roleName->{replace: [keyDeity]'s; "s's"-"s'"; "ß's"-"ß'"; "z's"-"z'"; "x's"-"x'"; "ce's"-"ce'"; "'s"-"s"} [memeMoralist]</li>
     <!-- gender-specific -->
     <li>memeConceptGenDef->des [memeConceptMasGen]</li>
     <li>memeConceptGenDef->der [memeConceptFemGen]</li>

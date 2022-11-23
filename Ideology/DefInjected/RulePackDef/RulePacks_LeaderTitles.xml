@@ -13,7 +13,7 @@
   <LeaderTitleMaker_Corunan.rulePack.rulesStrings>
     <li>memeLeaderNoun(priority=1)->[cultureLeaderNoun]</li>
     <li>memeLeaderNounCon(priority=1)->[cultureLeaderNounCon]</li>
-    <li>cultureLeaderTitle->[cultureLeaderAdjective]{replace: [cultureLeaderNoun]; "|M|"-"er "; "|F|"-"e "; "|N|"-"es "}</li>
+    <li>cultureLeaderTitle->[cultureLeaderAdjective]{replace: er [cultureLeaderNoun]; "er |M|"-"er "; "er |F|"-"e "; "er |N|"-"es "}</li>
     <li>cultureLeaderTitle->[cultureLeaderPrefix][cultureLeaderNounCon]</li>
     <li>cultureLeaderAdjective->erst</li>
     <li>cultureLeaderAdjective->oberst</li>
@@ -73,8 +73,8 @@
     <li>r_leaderTitle(p=1)->[memeLeaderAdjective][cultureLeaderTitleWithAdj]</li>
     <li>r_leaderTitle(p=1)->[memeLeaderPrefix][cultureLeaderNounCon]</li>
     <li>r_leaderTitle(p=1)->[cultureLeaderTitle]</li>
-    <li>memeLeaderTitleWithAdj->{replace: [memeLeaderNoun]; "|M|"-"er "; "|F|"-"e "; "|N|"-"es "}</li>
-    <li>cultureLeaderTitleWithAdj->{replace: [cultureLeaderNoun]; "|M|"-"er "; "|F|"-"e "; "|N|"-"es "}</li>
+    <li>memeLeaderTitleWithAdj->{replace: er [memeLeaderNoun]; "er |M|"-"er "; "er |F|"-"e "; "er |N|"-"es "}</li>
+    <li>cultureLeaderTitleWithAdj->{replace: er [cultureLeaderNoun]; "er |M|"-"er "; "er |F|"-"e "; "er |N|"-"es "}</li>
   </LeaderTitleMaker_GlobalStructure.rulePack.rulesStrings>
   
   <!-- EN:
@@ -92,7 +92,7 @@
   <LeaderTitleMaker_Kriminul.rulePack.rulesStrings>
     <li>memeLeaderNoun(priority=1)->[cultureLeaderNoun]</li>
     <li>memeLeaderNounCon(priority=1)->[cultureLeaderNounCon]</li>
-    <li>cultureLeaderTitle->[cultureLeaderAdjective]{replace: [cultureLeaderNoun]; "|M|"-"er "; "|F|"-"e "; "|N|"-"es "}</li>
+    <li>cultureLeaderTitle->[cultureLeaderAdjective]{replace: er [cultureLeaderNoun]; "er |M|"-"er "; "er |F|"-"e "; "er |N|"-"es "}</li>
     <li>cultureLeaderTitle->[cultureLeaderPrefix][cultureLeaderNounCon]</li>
     <li>cultureLeaderAdjective->erst</li>
     <li>cultureLeaderAdjective->oberst</li>
@@ -122,7 +122,7 @@
     <li>cultureLeaderNoun->steersman</li>
   -->
   <LeaderTitleMaker_Rustican.rulePack.rulesStrings>
-    <li>cultureLeaderTitle->[cultureLeaderAdjective]{replace: [cultureLeaderNoun]; "|M|"-"er "; "|F|"-"e "; "|N|"-"es "}</li>
+    <li>cultureLeaderTitle->[cultureLeaderAdjective]{replace: er [cultureLeaderNoun]; "er |M|"-"er "; "er |F|"-"e "; "er |N|"-"es "}</li>
     <li>cultureLeaderTitle->[cultureLeaderPrefix][cultureLeaderNounCon]</li>
     <li>cultureLeaderAdjective->oberst</li>
     <li>cultureLeaderAdjective->erst</li>

@@ -23,9 +23,9 @@
     <li>memeMoralist->monk</li>
   -->
   <Structure_OriginBuddhist.generalRules.rulesStrings>
-    <li>r_ideoName(p=99)->[globalAdjective]er [packIdeoName]</li>
-    <li>r_ideoName(p=99)->[memeAdjective]er [packIdeoName]</li>
-    <li>r_ideoName(p=99)->[packIdeoName]</li>
+    <li>r_ideoName(p=99)->[globalAdjective]{replace: er [packIdeoName]; "er |M|"-"er "; "er |F|"-"e "; "er |N|"-"es "}</li>
+    <li>r_ideoName(p=99)->[memeAdjective]{replace: er [packIdeoName]; "er |M|"-"er "; "er |F|"-"e "; "er |N|"-"es "}</li>
+    <li>r_ideoName(p=99)->{replace: [packIdeoName]; "|M|"-""; "|F|"-""; "|N|"-""}</li>
     <li>memeLeaderNoun->|M|Bodhisattva</li>
     <li>memeLeaderNoun->|M|Sattva</li>
     <li>memeLeaderNoun->|M|Lama</li>
@@ -44,7 +44,7 @@
   <!-- EN: Buddhist -->
   <Structure_OriginBuddhist.symbolPacks.0.adjective>buddhistisch</Structure_OriginBuddhist.symbolPacks.0.adjective>
   <!-- EN: Buddhism -->
-  <Structure_OriginBuddhist.symbolPacks.0.ideoName>Buddhismus</Structure_OriginBuddhist.symbolPacks.0.ideoName>
+  <Structure_OriginBuddhist.symbolPacks.0.ideoName>|M|Buddhismus</Structure_OriginBuddhist.symbolPacks.0.ideoName>
   <!-- EN: Buddhist -->
   <Structure_OriginBuddhist.symbolPacks.0.member>Buddhist</Structure_OriginBuddhist.symbolPacks.0.member>
   <!-- EN: Buddha -->
@@ -52,55 +52,55 @@
   <!-- EN: Theric -->
   <Structure_OriginBuddhist.symbolPacks.1.adjective>therisch</Structure_OriginBuddhist.symbolPacks.1.adjective>
   <!-- EN: Theravada -->
-  <Structure_OriginBuddhist.symbolPacks.1.ideoName>Theravada</Structure_OriginBuddhist.symbolPacks.1.ideoName>
+  <Structure_OriginBuddhist.symbolPacks.1.ideoName>|N|Theravada</Structure_OriginBuddhist.symbolPacks.1.ideoName>
   <!-- EN: Therist -->
   <Structure_OriginBuddhist.symbolPacks.1.member>Therist</Structure_OriginBuddhist.symbolPacks.1.member>
   <!-- EN: Mahic -->
   <Structure_OriginBuddhist.symbolPacks.2.adjective>mahisch</Structure_OriginBuddhist.symbolPacks.2.adjective>
   <!-- EN: Mahayana -->
-  <Structure_OriginBuddhist.symbolPacks.2.ideoName>Mahayana</Structure_OriginBuddhist.symbolPacks.2.ideoName>
+  <Structure_OriginBuddhist.symbolPacks.2.ideoName>|N|Mahayana</Structure_OriginBuddhist.symbolPacks.2.ideoName>
   <!-- EN: Mahist -->
   <Structure_OriginBuddhist.symbolPacks.2.member>Mahist</Structure_OriginBuddhist.symbolPacks.2.member>
   <!-- EN: Vajric -->
   <Structure_OriginBuddhist.symbolPacks.3.adjective>vajrisch</Structure_OriginBuddhist.symbolPacks.3.adjective>
   <!-- EN: Vajrayana -->
-  <Structure_OriginBuddhist.symbolPacks.3.ideoName>Vajrayana</Structure_OriginBuddhist.symbolPacks.3.ideoName>
+  <Structure_OriginBuddhist.symbolPacks.3.ideoName>|N|Vajrayana</Structure_OriginBuddhist.symbolPacks.3.ideoName>
   <!-- EN: Vajrist -->
   <Structure_OriginBuddhist.symbolPacks.3.member>Vajrist</Structure_OriginBuddhist.symbolPacks.3.member>
   <!-- EN: Zen -->
   <Structure_OriginBuddhist.symbolPacks.4.adjective>zenisch</Structure_OriginBuddhist.symbolPacks.4.adjective>
   <!-- EN: Zen -->
-  <Structure_OriginBuddhist.symbolPacks.4.ideoName>Zen</Structure_OriginBuddhist.symbolPacks.4.ideoName>
+  <Structure_OriginBuddhist.symbolPacks.4.ideoName>|N|Zen</Structure_OriginBuddhist.symbolPacks.4.ideoName>
   <!-- EN: Zenist -->
   <Structure_OriginBuddhist.symbolPacks.4.member>Zenist</Structure_OriginBuddhist.symbolPacks.4.member>
   <!-- EN: Seonic -->
   <Structure_OriginBuddhist.symbolPacks.5.adjective>seonisch</Structure_OriginBuddhist.symbolPacks.5.adjective>
   <!-- EN: Seon -->
-  <Structure_OriginBuddhist.symbolPacks.5.ideoName>Seon</Structure_OriginBuddhist.symbolPacks.5.ideoName>
+  <Structure_OriginBuddhist.symbolPacks.5.ideoName>|N|Seon</Structure_OriginBuddhist.symbolPacks.5.ideoName>
   <!-- EN: Seonist -->
   <Structure_OriginBuddhist.symbolPacks.5.member>Seonist</Structure_OriginBuddhist.symbolPacks.5.member>
   <!-- EN: Ekist -->
   <Structure_OriginBuddhist.symbolPacks.6.adjective>ekistisch</Structure_OriginBuddhist.symbolPacks.6.adjective>
   <!-- EN: Ekayana -->
-  <Structure_OriginBuddhist.symbolPacks.6.ideoName>Ekayana</Structure_OriginBuddhist.symbolPacks.6.ideoName>
+  <Structure_OriginBuddhist.symbolPacks.6.ideoName>|N|Ekayana</Structure_OriginBuddhist.symbolPacks.6.ideoName>
   <!-- EN: Ekist -->
   <Structure_OriginBuddhist.symbolPacks.6.member>Ekist</Structure_OriginBuddhist.symbolPacks.6.member>
   <!-- EN: Navic -->
   <Structure_OriginBuddhist.symbolPacks.7.adjective>navisch</Structure_OriginBuddhist.symbolPacks.7.adjective>
   <!-- EN: Navayana -->
-  <Structure_OriginBuddhist.symbolPacks.7.ideoName>Navayana</Structure_OriginBuddhist.symbolPacks.7.ideoName>
+  <Structure_OriginBuddhist.symbolPacks.7.ideoName>|N|Navayana</Structure_OriginBuddhist.symbolPacks.7.ideoName>
   <!-- EN: Navist -->
   <Structure_OriginBuddhist.symbolPacks.7.member>Navist</Structure_OriginBuddhist.symbolPacks.7.member>
   <!-- EN: Tantric -->
   <Structure_OriginBuddhist.symbolPacks.8.adjective>tantrisch</Structure_OriginBuddhist.symbolPacks.8.adjective>
   <!-- EN: Tantrayana -->
-  <Structure_OriginBuddhist.symbolPacks.8.ideoName>Tantrayana</Structure_OriginBuddhist.symbolPacks.8.ideoName>
+  <Structure_OriginBuddhist.symbolPacks.8.ideoName>|N|Tantrayana</Structure_OriginBuddhist.symbolPacks.8.ideoName>
   <!-- EN: Tantran -->
   <Structure_OriginBuddhist.symbolPacks.8.member>Tantranist</Structure_OriginBuddhist.symbolPacks.8.member>
   <!-- EN: Gelugist -->
   <Structure_OriginBuddhist.symbolPacks.9.adjective>gelugistisch</Structure_OriginBuddhist.symbolPacks.9.adjective>
   <!-- EN: Gelug -->
-  <Structure_OriginBuddhist.symbolPacks.9.ideoName>Gelug</Structure_OriginBuddhist.symbolPacks.9.ideoName>
+  <Structure_OriginBuddhist.symbolPacks.9.ideoName>|N|Gelug</Structure_OriginBuddhist.symbolPacks.9.ideoName>
   <!-- EN: Gelugist -->
   <Structure_OriginBuddhist.symbolPacks.9.member>Gelugist</Structure_OriginBuddhist.symbolPacks.9.member>
   <!-- EN: pagoda -->
@@ -135,9 +135,9 @@
     <li>memeMoralist->abbot</li>
   -->
   <Structure_OriginChristian.generalRules.rulesStrings>
-    <li>r_ideoName(p=99)->[globalAdjective]er [packIdeoName]</li>
-    <li>r_ideoName(p=99)->[memeAdjective]er [packIdeoName]</li>
-    <li>r_ideoName(p=99)->[packIdeoName]</li>
+    <li>r_ideoName(p=99)->[globalAdjective]{replace: er [packIdeoName]; "er |M|"-"er "; "er |F|"-"e "; "er |N|"-"es "}</li>
+    <li>r_ideoName(p=99)->[memeAdjective]{replace: er [packIdeoName]; "er |M|"-"er "; "er |F|"-"e "; "er |N|"-"es "}</li>
+    <li>r_ideoName(p=99)->{replace: [packIdeoName]; "|M|"-""; "|F|"-""; "|N|"-""}</li>
     <li>memeLeaderNoun->|M|Bischof</li>
     <li>memeLeaderNoun->|M|Kardinal</li>
     <li>memeLeaderNoun->|M|Papst</li>
@@ -167,85 +167,85 @@
   <!-- EN: Christian -->
   <Structure_OriginChristian.symbolPacks.0.adjective>christlich</Structure_OriginChristian.symbolPacks.0.adjective>
   <!-- EN: Christianity -->
-  <Structure_OriginChristian.symbolPacks.0.ideoName>Christentum</Structure_OriginChristian.symbolPacks.0.ideoName>
+  <Structure_OriginChristian.symbolPacks.0.ideoName>|N|Christentum</Structure_OriginChristian.symbolPacks.0.ideoName>
   <!-- EN: Christian -->
   <Structure_OriginChristian.symbolPacks.0.member>Christ</Structure_OriginChristian.symbolPacks.0.member>
   <!-- EN: Catholic -->
   <Structure_OriginChristian.symbolPacks.1.adjective>katholisch</Structure_OriginChristian.symbolPacks.1.adjective>
   <!-- EN: Catholicism -->
-  <Structure_OriginChristian.symbolPacks.1.ideoName>Katholizismus</Structure_OriginChristian.symbolPacks.1.ideoName>
+  <Structure_OriginChristian.symbolPacks.1.ideoName>|M|Katholizismus</Structure_OriginChristian.symbolPacks.1.ideoName>
   <!-- EN: Catholic -->
   <Structure_OriginChristian.symbolPacks.1.member>Katholik</Structure_OriginChristian.symbolPacks.1.member>
   <!-- EN: Protestant -->
   <Structure_OriginChristian.symbolPacks.2.adjective>protestantisch</Structure_OriginChristian.symbolPacks.2.adjective>
   <!-- EN: Protestantism -->
-  <Structure_OriginChristian.symbolPacks.2.ideoName>Protestantismus</Structure_OriginChristian.symbolPacks.2.ideoName>
+  <Structure_OriginChristian.symbolPacks.2.ideoName>|M|Protestantismus</Structure_OriginChristian.symbolPacks.2.ideoName>
   <!-- EN: Protestant -->
   <Structure_OriginChristian.symbolPacks.2.member>Protestant</Structure_OriginChristian.symbolPacks.2.member>
   <!-- EN: Orthodox -->
   <Structure_OriginChristian.symbolPacks.3.adjective>orthodoxisch</Structure_OriginChristian.symbolPacks.3.adjective>
   <!-- EN: Orthodoxy -->
-  <Structure_OriginChristian.symbolPacks.3.ideoName>Orthodoxismus</Structure_OriginChristian.symbolPacks.3.ideoName>
+  <Structure_OriginChristian.symbolPacks.3.ideoName>|F|Orthodoxie</Structure_OriginChristian.symbolPacks.3.ideoName>
   <!-- EN: Orthodoxist -->
   <Structure_OriginChristian.symbolPacks.3.member>Orthodoxist</Structure_OriginChristian.symbolPacks.3.member>
   <!-- EN: Nestorian -->
   <Structure_OriginChristian.symbolPacks.4.adjective>nestorianisch</Structure_OriginChristian.symbolPacks.4.adjective>
   <!-- EN: Nestorianism -->
-  <Structure_OriginChristian.symbolPacks.4.ideoName>Nestorianismus</Structure_OriginChristian.symbolPacks.4.ideoName>
+  <Structure_OriginChristian.symbolPacks.4.ideoName>|M|Nestorianismus</Structure_OriginChristian.symbolPacks.4.ideoName>
   <!-- EN: Nestorian -->
   <Structure_OriginChristian.symbolPacks.4.member>Nestorist</Structure_OriginChristian.symbolPacks.4.member>
   <!-- EN: Anglican -->
   <Structure_OriginChristian.symbolPacks.5.adjective>anglikanisch</Structure_OriginChristian.symbolPacks.5.adjective>
   <!-- EN: Anglicanism -->
-  <Structure_OriginChristian.symbolPacks.5.ideoName>Anglikanismus</Structure_OriginChristian.symbolPacks.5.ideoName>
+  <Structure_OriginChristian.symbolPacks.5.ideoName>|M|Anglikanismus</Structure_OriginChristian.symbolPacks.5.ideoName>
   <!-- EN: Anglican -->
   <Structure_OriginChristian.symbolPacks.5.member>Anglikist</Structure_OriginChristian.symbolPacks.5.member>
   <!-- EN: Baptist -->
   <Structure_OriginChristian.symbolPacks.6.adjective>baptistisch</Structure_OriginChristian.symbolPacks.6.adjective>
   <!-- EN: Baptism -->
-  <Structure_OriginChristian.symbolPacks.6.ideoName>Baptismus</Structure_OriginChristian.symbolPacks.6.ideoName>
+  <Structure_OriginChristian.symbolPacks.6.ideoName>|M|Baptismus</Structure_OriginChristian.symbolPacks.6.ideoName>
   <!-- EN: Baptist -->
   <Structure_OriginChristian.symbolPacks.6.member>Baptist</Structure_OriginChristian.symbolPacks.6.member>
   <!-- EN: Anabaptist -->
   <Structure_OriginChristian.symbolPacks.7.adjective>anabaptistisch</Structure_OriginChristian.symbolPacks.7.adjective>
   <!-- EN: Anabaptism -->
-  <Structure_OriginChristian.symbolPacks.7.ideoName>Anabaptismus</Structure_OriginChristian.symbolPacks.7.ideoName>
+  <Structure_OriginChristian.symbolPacks.7.ideoName>|M|Anabaptismus</Structure_OriginChristian.symbolPacks.7.ideoName>
   <!-- EN: Anabaptist -->
   <Structure_OriginChristian.symbolPacks.7.member>Anabaptist</Structure_OriginChristian.symbolPacks.7.member>
   <!-- EN: Calvinist -->
   <Structure_OriginChristian.symbolPacks.8.adjective>calvinistisch</Structure_OriginChristian.symbolPacks.8.adjective>
   <!-- EN: Calvinism -->
-  <Structure_OriginChristian.symbolPacks.8.ideoName>Calvinismus</Structure_OriginChristian.symbolPacks.8.ideoName>
+  <Structure_OriginChristian.symbolPacks.8.ideoName>|M|Calvinismus</Structure_OriginChristian.symbolPacks.8.ideoName>
   <!-- EN: Calvinist -->
   <Structure_OriginChristian.symbolPacks.8.member>Calvinist</Structure_OriginChristian.symbolPacks.8.member>
   <!-- EN: Lutheran -->
   <Structure_OriginChristian.symbolPacks.9.adjective>lutheranisch</Structure_OriginChristian.symbolPacks.9.adjective>
   <!-- EN: Lutheranism -->
-  <Structure_OriginChristian.symbolPacks.9.ideoName>Lutheranismus</Structure_OriginChristian.symbolPacks.9.ideoName>
+  <Structure_OriginChristian.symbolPacks.9.ideoName>|M|Lutheranismus</Structure_OriginChristian.symbolPacks.9.ideoName>
   <!-- EN: Lutheran -->
   <Structure_OriginChristian.symbolPacks.9.member>Lutherist</Structure_OriginChristian.symbolPacks.9.member>
   <!-- EN: Adventist -->
   <Structure_OriginChristian.symbolPacks.10.adjective>adventistisch</Structure_OriginChristian.symbolPacks.10.adjective>
   <!-- EN: Adventism -->
-  <Structure_OriginChristian.symbolPacks.10.ideoName>Adventismus</Structure_OriginChristian.symbolPacks.10.ideoName>
+  <Structure_OriginChristian.symbolPacks.10.ideoName>|M|Adventismus</Structure_OriginChristian.symbolPacks.10.ideoName>
   <!-- EN: Adventist -->
   <Structure_OriginChristian.symbolPacks.10.member>Adventist</Structure_OriginChristian.symbolPacks.10.member>
   <!-- EN: Methodist -->
   <Structure_OriginChristian.symbolPacks.11.adjective>methodistisch</Structure_OriginChristian.symbolPacks.11.adjective>
   <!-- EN: Methodism -->
-  <Structure_OriginChristian.symbolPacks.11.ideoName>Methodismus</Structure_OriginChristian.symbolPacks.11.ideoName>
+  <Structure_OriginChristian.symbolPacks.11.ideoName>|M|Methodismus</Structure_OriginChristian.symbolPacks.11.ideoName>
   <!-- EN: Methodist -->
   <Structure_OriginChristian.symbolPacks.11.member>Methodist</Structure_OriginChristian.symbolPacks.11.member>
   <!-- EN: Mormon -->
   <Structure_OriginChristian.symbolPacks.12.adjective>mormonisch</Structure_OriginChristian.symbolPacks.12.adjective>
   <!-- EN: Mormonism -->
-  <Structure_OriginChristian.symbolPacks.12.ideoName>Mormonismus</Structure_OriginChristian.symbolPacks.12.ideoName>
+  <Structure_OriginChristian.symbolPacks.12.ideoName>|M|Mormonismus</Structure_OriginChristian.symbolPacks.12.ideoName>
   <!-- EN: Mormon -->
   <Structure_OriginChristian.symbolPacks.12.member>Mormon</Structure_OriginChristian.symbolPacks.12.member>
   <!-- EN: Theonomic -->
   <Structure_OriginChristian.symbolPacks.13.adjective>theonomisch</Structure_OriginChristian.symbolPacks.13.adjective>
   <!-- EN: Theonomy -->
-  <Structure_OriginChristian.symbolPacks.13.ideoName>Theonomismus</Structure_OriginChristian.symbolPacks.13.ideoName>
+  <Structure_OriginChristian.symbolPacks.13.ideoName>|F|Theonomie</Structure_OriginChristian.symbolPacks.13.ideoName>
   <!-- EN: Theonomist -->
   <Structure_OriginChristian.symbolPacks.13.member>Theonomist</Structure_OriginChristian.symbolPacks.13.member>
   <!-- EN: church -->
@@ -340,9 +340,9 @@
     <li>memeMoralist->brahmin</li>
   -->
   <Structure_OriginHindu.generalRules.rulesStrings>
-    <li>r_ideoName(p=99)->[globalAdjective]er [packIdeoName]</li>
-    <li>r_ideoName(p=99)->[memeAdjective]er [packIdeoName]</li>
-    <li>r_ideoName(p=99)->[packIdeoName]</li>
+    <li>r_ideoName(p=99)->[globalAdjective]{replace: er [packIdeoName]; "er |M|"-"er "; "er |F|"-"e "; "er |N|"-"es "}</li>
+    <li>r_ideoName(p=99)->[memeAdjective]{replace: er [packIdeoName]; "er |M|"-"er "; "er |F|"-"e "; "er |N|"-"es "}</li>
+    <li>r_ideoName(p=99)->{replace: [packIdeoName]; "|M|"-""; "|F|"-""; "|N|"-""}</li>
     <li>memeLeaderNoun->|M|Mahatma</li>
     <li>memeLeaderNoun->|M|Ishvara</li>
     <li>memeLeaderNoun->|M|Yogi</li>
@@ -366,85 +366,85 @@
   <!-- EN: Hindu -->
   <Structure_OriginHindu.symbolPacks.0.adjective>hinduistisch</Structure_OriginHindu.symbolPacks.0.adjective>
   <!-- EN: Hinduism -->
-  <Structure_OriginHindu.symbolPacks.0.ideoName>Hinduismus</Structure_OriginHindu.symbolPacks.0.ideoName>
+  <Structure_OriginHindu.symbolPacks.0.ideoName>|M|Hinduismus</Structure_OriginHindu.symbolPacks.0.ideoName>
   <!-- EN: Hindu -->
   <Structure_OriginHindu.symbolPacks.0.member>Hinduist</Structure_OriginHindu.symbolPacks.0.member>
   <!-- EN: Indu -->
   <Structure_OriginHindu.symbolPacks.1.adjective>induistisch</Structure_OriginHindu.symbolPacks.1.adjective>
   <!-- EN: Induism -->
-  <Structure_OriginHindu.symbolPacks.1.ideoName>Induismus</Structure_OriginHindu.symbolPacks.1.ideoName>
+  <Structure_OriginHindu.symbolPacks.1.ideoName>|M|Induismus</Structure_OriginHindu.symbolPacks.1.ideoName>
   <!-- EN: Indu -->
   <Structure_OriginHindu.symbolPacks.1.member>Induist</Structure_OriginHindu.symbolPacks.1.member>
   <!-- EN: Sindu -->
   <Structure_OriginHindu.symbolPacks.2.adjective>sinduistisch</Structure_OriginHindu.symbolPacks.2.adjective>
   <!-- EN: Sinduism -->
-  <Structure_OriginHindu.symbolPacks.2.ideoName>Sinduismus</Structure_OriginHindu.symbolPacks.2.ideoName>
+  <Structure_OriginHindu.symbolPacks.2.ideoName>|M|Sinduismus</Structure_OriginHindu.symbolPacks.2.ideoName>
   <!-- EN: Sindu -->
   <Structure_OriginHindu.symbolPacks.2.member>Sinduist</Structure_OriginHindu.symbolPacks.2.member>
   <!-- EN: Tantric -->
   <Structure_OriginHindu.symbolPacks.3.adjective>tantrisch</Structure_OriginHindu.symbolPacks.3.adjective>
   <!-- EN: Tantra -->
-  <Structure_OriginHindu.symbolPacks.3.ideoName>Tantra</Structure_OriginHindu.symbolPacks.3.ideoName>
+  <Structure_OriginHindu.symbolPacks.3.ideoName>|N|Tantra</Structure_OriginHindu.symbolPacks.3.ideoName>
   <!-- EN: Tantran -->
   <Structure_OriginHindu.symbolPacks.3.member>Tantraist</Structure_OriginHindu.symbolPacks.3.member>
   <!-- EN: Vedic -->
   <Structure_OriginHindu.symbolPacks.4.adjective>vedisch</Structure_OriginHindu.symbolPacks.4.adjective>
   <!-- EN: Vedism -->
-  <Structure_OriginHindu.symbolPacks.4.ideoName>Vedismus</Structure_OriginHindu.symbolPacks.4.ideoName>
+  <Structure_OriginHindu.symbolPacks.4.ideoName>|M|Vedismus</Structure_OriginHindu.symbolPacks.4.ideoName>
   <!-- EN: Vedi -->
   <Structure_OriginHindu.symbolPacks.4.member>Vedist</Structure_OriginHindu.symbolPacks.4.member>
   <!-- EN: Dharmic -->
   <Structure_OriginHindu.symbolPacks.5.adjective>dharmisch</Structure_OriginHindu.symbolPacks.5.adjective>
   <!-- EN: Dharmism -->
-  <Structure_OriginHindu.symbolPacks.5.ideoName>Dharmismus</Structure_OriginHindu.symbolPacks.5.ideoName>
+  <Structure_OriginHindu.symbolPacks.5.ideoName>|M|Dharmismus</Structure_OriginHindu.symbolPacks.5.ideoName>
   <!-- EN: Dharmi -->
   <Structure_OriginHindu.symbolPacks.5.member>Dharmist</Structure_OriginHindu.symbolPacks.5.member>
   <!-- EN: Vaishmayan -->
   <Structure_OriginHindu.symbolPacks.6.adjective>vaishmayanisch</Structure_OriginHindu.symbolPacks.6.adjective>
   <!-- EN: Vaishmaya -->
-  <Structure_OriginHindu.symbolPacks.6.ideoName>Vaishmaya</Structure_OriginHindu.symbolPacks.6.ideoName>
+  <Structure_OriginHindu.symbolPacks.6.ideoName>|N|Vaishmaya</Structure_OriginHindu.symbolPacks.6.ideoName>
   <!-- EN: Vaishnava -->
   <Structure_OriginHindu.symbolPacks.6.member>Vaishnavaist</Structure_OriginHindu.symbolPacks.6.member>
   <!-- EN: Shaivan -->
   <Structure_OriginHindu.symbolPacks.7.adjective>shaivanisch</Structure_OriginHindu.symbolPacks.7.adjective>
   <!-- EN: Shaivmaya -->
-  <Structure_OriginHindu.symbolPacks.7.ideoName>Shaivmaya</Structure_OriginHindu.symbolPacks.7.ideoName>
+  <Structure_OriginHindu.symbolPacks.7.ideoName>|N|Shaivmaya</Structure_OriginHindu.symbolPacks.7.ideoName>
   <!-- EN: Shaiva -->
   <Structure_OriginHindu.symbolPacks.7.member>Shaivaist</Structure_OriginHindu.symbolPacks.7.member>
   <!-- EN: Yogic -->
   <Structure_OriginHindu.symbolPacks.8.adjective>yogisch</Structure_OriginHindu.symbolPacks.8.adjective>
   <!-- EN: Yoga -->
-  <Structure_OriginHindu.symbolPacks.8.ideoName>Yoga</Structure_OriginHindu.symbolPacks.8.ideoName>
+  <Structure_OriginHindu.symbolPacks.8.ideoName>|N|Yoga</Structure_OriginHindu.symbolPacks.8.ideoName>
   <!-- EN: Yogi -->
   <Structure_OriginHindu.symbolPacks.8.member>Yogist</Structure_OriginHindu.symbolPacks.8.member>
   <!-- EN: Nyayan -->
   <Structure_OriginHindu.symbolPacks.9.adjective>nayanisch</Structure_OriginHindu.symbolPacks.9.adjective>
   <!-- EN: Nyaya -->
-  <Structure_OriginHindu.symbolPacks.9.ideoName>Nyaya</Structure_OriginHindu.symbolPacks.9.ideoName>
+  <Structure_OriginHindu.symbolPacks.9.ideoName>|N|Nyaya</Structure_OriginHindu.symbolPacks.9.ideoName>
   <!-- EN: Nyava -->
   <Structure_OriginHindu.symbolPacks.9.member>Nyavaist</Structure_OriginHindu.symbolPacks.9.member>
   <!-- EN: Vaisesikan -->
   <Structure_OriginHindu.symbolPacks.10.adjective>vaisesikanisch</Structure_OriginHindu.symbolPacks.10.adjective>
   <!-- EN: Vaisesika -->
-  <Structure_OriginHindu.symbolPacks.10.ideoName>Vaisesika</Structure_OriginHindu.symbolPacks.10.ideoName>
+  <Structure_OriginHindu.symbolPacks.10.ideoName>|N|Vaisesika</Structure_OriginHindu.symbolPacks.10.ideoName>
   <!-- EN: Vaisesikaya -->
   <Structure_OriginHindu.symbolPacks.10.member>Vaisesikayaist</Structure_OriginHindu.symbolPacks.10.member>
   <!-- EN: Samkhyan -->
   <Structure_OriginHindu.symbolPacks.11.adjective>samkhyanisch</Structure_OriginHindu.symbolPacks.11.adjective>
   <!-- EN: Samkhya -->
-  <Structure_OriginHindu.symbolPacks.11.ideoName>Samkhya</Structure_OriginHindu.symbolPacks.11.ideoName>
+  <Structure_OriginHindu.symbolPacks.11.ideoName>|N|Samkhya</Structure_OriginHindu.symbolPacks.11.ideoName>
   <!-- EN: Samkhyan -->
   <Structure_OriginHindu.symbolPacks.11.member>Samkhyaist</Structure_OriginHindu.symbolPacks.11.member>
   <!-- EN: Mimamsan -->
   <Structure_OriginHindu.symbolPacks.12.adjective>mimamsanisch</Structure_OriginHindu.symbolPacks.12.adjective>
   <!-- EN: Mimamsa -->
-  <Structure_OriginHindu.symbolPacks.12.ideoName>Mimamsa</Structure_OriginHindu.symbolPacks.12.ideoName>
+  <Structure_OriginHindu.symbolPacks.12.ideoName>|N|Mimamsa</Structure_OriginHindu.symbolPacks.12.ideoName>
   <!-- EN: Mimamsan -->
   <Structure_OriginHindu.symbolPacks.12.member>Mimamsaist</Structure_OriginHindu.symbolPacks.12.member>
   <!-- EN: Vedantan -->
   <Structure_OriginHindu.symbolPacks.13.adjective>vedantanisch</Structure_OriginHindu.symbolPacks.13.adjective>
   <!-- EN: Vedanta -->
-  <Structure_OriginHindu.symbolPacks.13.ideoName>Vedanta</Structure_OriginHindu.symbolPacks.13.ideoName>
+  <Structure_OriginHindu.symbolPacks.13.ideoName>|N|Vedanta</Structure_OriginHindu.symbolPacks.13.ideoName>
   <!-- EN: Vedantan -->
   <Structure_OriginHindu.symbolPacks.13.member>Vedantaist</Structure_OriginHindu.symbolPacks.13.member>
   <!-- EN: shrine -->
@@ -476,9 +476,9 @@
     <li>memeMoralist->cleric</li>
   -->
   <Structure_OriginIslamic.generalRules.rulesStrings>
-    <li>r_ideoName(p=99)->[globalAdjective]er [packIdeoName]</li>
-    <li>r_ideoName(p=99)->[memeAdjective]er [packIdeoName]</li>
-    <li>r_ideoName(p=99)->[packIdeoName]</li>
+    <li>r_ideoName(p=99)->[globalAdjective]{replace: er [packIdeoName]; "er |M|"-"er "; "er |F|"-"e "; "er |N|"-"es "}</li>
+    <li>r_ideoName(p=99)->[memeAdjective]{replace: er [packIdeoName]; "er |M|"-"er "; "er |F|"-"e "; "er |N|"-"es "}</li>
+    <li>r_ideoName(p=99)->{replace: [packIdeoName]; "|M|"-""; "|F|"-""; "|N|"-""}</li>
     <li>memeLeaderNoun->|M|Mullah</li>
     <li>memeLeaderNoun->|M|Imam</li>
     <li>memeLeaderNoun->|M|Kalif</li>
@@ -505,91 +505,91 @@
   <!-- EN: Islamic -->
   <Structure_OriginIslamic.symbolPacks.0.adjective>islamisch</Structure_OriginIslamic.symbolPacks.0.adjective>
   <!-- EN: Islam -->
-  <Structure_OriginIslamic.symbolPacks.0.ideoName>Islam</Structure_OriginIslamic.symbolPacks.0.ideoName>
+  <Structure_OriginIslamic.symbolPacks.0.ideoName>|M|Islam</Structure_OriginIslamic.symbolPacks.0.ideoName>
   <!-- EN: Muslim -->
   <Structure_OriginIslamic.symbolPacks.0.member>Muslim</Structure_OriginIslamic.symbolPacks.0.member>
   <!-- EN: Islamist -->
   <Structure_OriginIslamic.symbolPacks.1.adjective>islamistisch</Structure_OriginIslamic.symbolPacks.1.adjective>
   <!-- EN: Islamism -->
-  <Structure_OriginIslamic.symbolPacks.1.ideoName>Islamismus</Structure_OriginIslamic.symbolPacks.1.ideoName>
+  <Structure_OriginIslamic.symbolPacks.1.ideoName>|M|Islamismus</Structure_OriginIslamic.symbolPacks.1.ideoName>
   <!-- EN: Islamist -->
   <Structure_OriginIslamic.symbolPacks.1.member>Islamist</Structure_OriginIslamic.symbolPacks.1.member>
   <!-- EN: Shiite -->
   <Structure_OriginIslamic.symbolPacks.2.adjective>shiitisch</Structure_OriginIslamic.symbolPacks.2.adjective>
   <!-- EN: Shiism -->
-  <Structure_OriginIslamic.symbolPacks.2.ideoName>Shiismus</Structure_OriginIslamic.symbolPacks.2.ideoName>
+  <Structure_OriginIslamic.symbolPacks.2.ideoName>|M|Shiismus</Structure_OriginIslamic.symbolPacks.2.ideoName>
   <!-- EN: Shiite -->
   <Structure_OriginIslamic.symbolPacks.2.member>Shiit</Structure_OriginIslamic.symbolPacks.2.member>
   <!-- EN: Sunni -->
   <Structure_OriginIslamic.symbolPacks.3.adjective>sunnisch</Structure_OriginIslamic.symbolPacks.3.adjective>
   <!-- EN: Sunnism -->
-  <Structure_OriginIslamic.symbolPacks.3.ideoName>Sunnismus</Structure_OriginIslamic.symbolPacks.3.ideoName>
+  <Structure_OriginIslamic.symbolPacks.3.ideoName>|M|Sunnismus</Structure_OriginIslamic.symbolPacks.3.ideoName>
   <!-- EN: Sunni -->
   <Structure_OriginIslamic.symbolPacks.3.member>Sunnist</Structure_OriginIslamic.symbolPacks.3.member>
   <!-- EN: Ibadi -->
   <Structure_OriginIslamic.symbolPacks.4.adjective>ibadisch</Structure_OriginIslamic.symbolPacks.4.adjective>
   <!-- EN: Ibadism -->
-  <Structure_OriginIslamic.symbolPacks.4.ideoName>Ibadismus</Structure_OriginIslamic.symbolPacks.4.ideoName>
+  <Structure_OriginIslamic.symbolPacks.4.ideoName>|M|Ibadismus</Structure_OriginIslamic.symbolPacks.4.ideoName>
   <!-- EN: Ibadi -->
   <Structure_OriginIslamic.symbolPacks.4.member>Ibadist</Structure_OriginIslamic.symbolPacks.4.member>
   <!-- EN: Ismaili -->
   <Structure_OriginIslamic.symbolPacks.5.adjective>ismailisch</Structure_OriginIslamic.symbolPacks.5.adjective>
   <!-- EN: Ismailism -->
-  <Structure_OriginIslamic.symbolPacks.5.ideoName>Ismailismus</Structure_OriginIslamic.symbolPacks.5.ideoName>
+  <Structure_OriginIslamic.symbolPacks.5.ideoName>|M|Ismailismus</Structure_OriginIslamic.symbolPacks.5.ideoName>
   <!-- EN: Ismaili -->
   <Structure_OriginIslamic.symbolPacks.5.member>Ismailist</Structure_OriginIslamic.symbolPacks.5.member>
   <!-- EN: Mustalic -->
   <Structure_OriginIslamic.symbolPacks.6.adjective>mustalisch</Structure_OriginIslamic.symbolPacks.6.adjective>
   <!-- EN: Mustalism -->
-  <Structure_OriginIslamic.symbolPacks.6.ideoName>Mustalismus</Structure_OriginIslamic.symbolPacks.6.ideoName>
+  <Structure_OriginIslamic.symbolPacks.6.ideoName>|M|Mustalismus</Structure_OriginIslamic.symbolPacks.6.ideoName>
   <!-- EN: Mustali -->
   <Structure_OriginIslamic.symbolPacks.6.member>Mustalist</Structure_OriginIslamic.symbolPacks.6.member>
   <!-- EN: Tayyibic -->
   <Structure_OriginIslamic.symbolPacks.7.adjective>tayyibisch</Structure_OriginIslamic.symbolPacks.7.adjective>
   <!-- EN: Tayyibism -->
-  <Structure_OriginIslamic.symbolPacks.7.ideoName>Tayyibismus</Structure_OriginIslamic.symbolPacks.7.ideoName>
+  <Structure_OriginIslamic.symbolPacks.7.ideoName>|M|Tayyibismus</Structure_OriginIslamic.symbolPacks.7.ideoName>
   <!-- EN: Tayyibist -->
   <Structure_OriginIslamic.symbolPacks.7.member>Tayyibist</Structure_OriginIslamic.symbolPacks.7.member>
   <!-- EN: Nizalist -->
   <Structure_OriginIslamic.symbolPacks.8.adjective>nizalistisch</Structure_OriginIslamic.symbolPacks.8.adjective>
   <!-- EN: Nizalism -->
-  <Structure_OriginIslamic.symbolPacks.8.ideoName>Nizalismus</Structure_OriginIslamic.symbolPacks.8.ideoName>
+  <Structure_OriginIslamic.symbolPacks.8.ideoName>|M|Nizalismus</Structure_OriginIslamic.symbolPacks.8.ideoName>
   <!-- EN: Nizalist -->
   <Structure_OriginIslamic.symbolPacks.8.member>Nizalist</Structure_OriginIslamic.symbolPacks.8.member>
   <!-- EN: Surfrist -->
   <Structure_OriginIslamic.symbolPacks.9.adjective>sufristisch</Structure_OriginIslamic.symbolPacks.9.adjective>
   <!-- EN: Sufrism -->
-  <Structure_OriginIslamic.symbolPacks.9.ideoName>Sufrismus</Structure_OriginIslamic.symbolPacks.9.ideoName>
+  <Structure_OriginIslamic.symbolPacks.9.ideoName>|M|Sufrismus</Structure_OriginIslamic.symbolPacks.9.ideoName>
   <!-- EN: Surfist -->
   <Structure_OriginIslamic.symbolPacks.9.member>Sufrist</Structure_OriginIslamic.symbolPacks.9.member>
   <!-- EN: Qadirist -->
   <Structure_OriginIslamic.symbolPacks.10.adjective>qadiristisch</Structure_OriginIslamic.symbolPacks.10.adjective>
   <!-- EN: Qadirism -->
-  <Structure_OriginIslamic.symbolPacks.10.ideoName>Qadirismus</Structure_OriginIslamic.symbolPacks.10.ideoName>
+  <Structure_OriginIslamic.symbolPacks.10.ideoName>|M|Qadirismus</Structure_OriginIslamic.symbolPacks.10.ideoName>
   <!-- EN: Qadirist -->
   <Structure_OriginIslamic.symbolPacks.10.member>Qadirist</Structure_OriginIslamic.symbolPacks.10.member>
   <!-- EN: Zahirist -->
   <Structure_OriginIslamic.symbolPacks.11.adjective>zahiristisch</Structure_OriginIslamic.symbolPacks.11.adjective>
   <!-- EN: Zahirism -->
-  <Structure_OriginIslamic.symbolPacks.11.ideoName>Zahirismus</Structure_OriginIslamic.symbolPacks.11.ideoName>
+  <Structure_OriginIslamic.symbolPacks.11.ideoName>|M|Zahirismus</Structure_OriginIslamic.symbolPacks.11.ideoName>
   <!-- EN: Zahirist -->
   <Structure_OriginIslamic.symbolPacks.11.member>Zahirist</Structure_OriginIslamic.symbolPacks.11.member>
   <!-- EN: Azraqi -->
   <Structure_OriginIslamic.symbolPacks.12.adjective>azraqisch</Structure_OriginIslamic.symbolPacks.12.adjective>
   <!-- EN: Azraqism -->
-  <Structure_OriginIslamic.symbolPacks.12.ideoName>Azraqismus</Structure_OriginIslamic.symbolPacks.12.ideoName>
+  <Structure_OriginIslamic.symbolPacks.12.ideoName>|M|Azraqismus</Structure_OriginIslamic.symbolPacks.12.ideoName>
   <!-- EN: Azraqi -->
   <Structure_OriginIslamic.symbolPacks.12.member>Azraqist</Structure_OriginIslamic.symbolPacks.12.member>
   <!-- EN: Wahhabi -->
   <Structure_OriginIslamic.symbolPacks.13.adjective>wahhabisch</Structure_OriginIslamic.symbolPacks.13.adjective>
   <!-- EN: Wahhabism -->
-  <Structure_OriginIslamic.symbolPacks.13.ideoName>Wahhabismus</Structure_OriginIslamic.symbolPacks.13.ideoName>
+  <Structure_OriginIslamic.symbolPacks.13.ideoName>|M|Wahhabismus</Structure_OriginIslamic.symbolPacks.13.ideoName>
   <!-- EN: Wahhabi -->
   <Structure_OriginIslamic.symbolPacks.13.member>Wahhabist</Structure_OriginIslamic.symbolPacks.13.member>
   <!-- EN: Caliphic -->
   <Structure_OriginIslamic.symbolPacks.14.adjective>kalifisch</Structure_OriginIslamic.symbolPacks.14.adjective>
   <!-- EN: Caliphate -->
-  <Structure_OriginIslamic.symbolPacks.14.ideoName>Kalifat</Structure_OriginIslamic.symbolPacks.14.ideoName>
+  <Structure_OriginIslamic.symbolPacks.14.ideoName>|M|Kalifat</Structure_OriginIslamic.symbolPacks.14.ideoName>
   <!-- EN: Caliphist -->
   <Structure_OriginIslamic.symbolPacks.14.member>Kalifist</Structure_OriginIslamic.symbolPacks.14.member>
   <!-- EN: mosque -->
