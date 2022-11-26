@@ -135,21 +135,23 @@
     <!-- Dativ -->
     <li>implement_dat(IMPLEMENTOWNER_type==weapon,p=1)->[his_dat] [weapon_dat]</li>
     <li>implement_dat(IMPLEMENTOWNER_type==weapon,p=0.5)->[the_dat] [weapon_dat]</li>
-    <li>implement_dat(IMPLEMENTOWNER_type==bodypart,p=2)->[INITIATOR_possessive]{TOOL_gender ? em  : er} [TOOL_label]</li>
+    <li>implement_dat(IMPLEMENTOWNER_type==bodypart,p=2)->[INITIATOR_possessive]{TOOL_gender ? em  : er} [tool_dat]</li>
     <li>implement_dat(IMPLEMENTOWNER_type==hediff,p=1)->[his_dat] [weapon_dat]</li>
-    <li>implement_dat(IMPLEMENTOWNER_type==hediff,p=1)->[INITIATOR_possessive]{TOOL_gender ? em  : er} [TOOL_label]</li>
+    <li>implement_dat(IMPLEMENTOWNER_type==hediff,p=1)->[INITIATOR_possessive]{TOOL_gender ? em  : er} [tool_dat]</li>
     <li>his_dat->[INITIATOR_possessive]{replace: ^[WEAPON_indefinite]; "^ein [WEAPON_label]"-"em"; "^eine [WEAPON_label]"-"er"; "^"-""}</li>
     <li>the_dat->{replace: ^[WEAPON_indefinite]; "^ein [WEAPON_label]"-"dem"; "^eine [WEAPON_label]"-"der"; "^"-""}</li>
     <li>weapon_dat->{replace: [WEAPON_label]; "er "-"en "; "e "-"en "; "es "-"en "}</li>
+    <li>tool_dat->{replace: [TOOL_label]; "er "-"en "; "e "-"en "; "es "-"en "}</li>
     <!-- Akkusativ -->
     <li>implement_acc(IMPLEMENTOWNER_type==weapon,p=1)->[his_acc] [weapon_acc]</li>
     <li>implement_acc(IMPLEMENTOWNER_type==weapon,p=0.5)->[the_acc] [weapon_acc]</li>
-    <li>implement_acc(IMPLEMENTOWNER_type==bodypart,p=2)->[INITIATOR_possessive]{TOOL_gender ? en : e : } [TOOL_label]</li>
+    <li>implement_acc(IMPLEMENTOWNER_type==bodypart,p=2)->[INITIATOR_possessive]{TOOL_gender ? en : e : } [tool_acc]</li>
     <li>implement_acc(IMPLEMENTOWNER_type==hediff,p=1)->[his_acc] [weapon_acc]</li>
-    <li>implement_acc(IMPLEMENTOWNER_type==hediff,p=1)->[INITIATOR_possessive]{TOOL_gender ? en : e : } [TOOL_label]</li>
+    <li>implement_acc(IMPLEMENTOWNER_type==hediff,p=1)->[INITIATOR_possessive]{TOOL_gender ? en : e : } [tool_acc]</li>
     <li>his_acc->[INITIATOR_possessive]{replace: ^[WEAPON_definite]; "^der [WEAPON_label]"-"en"; "^die [WEAPON_label]"-"e"; "^das [WEAPON_label]"-""; "^"-""}</li>
     <li>the_acc->{replace: ^[WEAPON_definite]; "^der [WEAPON_label]"-"den"; "^die [WEAPON_label]"-"die"; "^das [WEAPON_label]"-"das"; "^"-""}</li>
     <li>weapon_acc->{replace: [WEAPON_label]; "er "-"en "; "e "-"en "; "es "-"en "}</li>
+    <li>tool_acc->{replace: [TOOL_label]; "er "-"en "; "e "-"en "; "es "-"en "}</li>
     <li>adjective_bodypart->hart</li>
     <li>adjective_bodypart->stark</li>
     <li>adjective_bodypart->kraftvoll</li>
