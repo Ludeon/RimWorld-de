@@ -13,9 +13,12 @@
     <li>bossDefeatedLetterLabel->[escortees0_label] besiegt: [reward_label]</li>
     <li>bossDefeatedStudyChipLetterText->[defeated][study][manufacture]</li>
     <li>bossDefeatedLetterText->[defeated][manufacture]</li>
-    <li>defeated->Der Boss [escortees0_label] wurde besiegt und hat {replace: ^[reward_definite]; "^der "-"einen "; "^die "-"eine "; "^das "; "ein "; "^"-""} fallen gelassen!</li>
+    <li>defeated->[Der] feindliche [escortees0_label] wurde besiegt und hat {replace: ^[reward_definite]; "^der "-"einen "; "^die "-"eine "; "^das "; "ein "; "^"-""} fallen gelassen!</li>
     <li>manufacture->\n\nDer Chip kann auch zur Herstellung fortschrittlicher Mechanoiden verwendet werden.</li>
     <li>study->\n\n[reward_definite] kann analysiert werden. Wähle einen Mechanitor aus und mache einen Rechtsklick auf den Chip. Die Analyse hilft, höhere Stufen der Mechtech-Forschung freizuschalten.</li>
+    <li>Der(escortees0_genderResolved==Male)->Der</li>
+    <li>Der(escortees0_genderResolved==Female)->Die</li>
+    <li>Der(escortees0_genderResolved==Neuter)->Das</li>
   </Bossgroup.questContentRules.rulesStrings>
   <!-- EN:
     <li>questDescription->bossgroup</li>
