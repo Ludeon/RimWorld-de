@@ -21,10 +21,10 @@
   <CollapseDodged.rulePack.rulesStrings>
     <li>tale_noun->[PAWN_nameDef] einen Höhleneinsturz überlebte</li>
     <li>tale_noun->[PAWN_nameDef] fast von herabfallenden Trümmern zerquetscht wurde</li>
-    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] herabfallenden Trümmern ausweicht [circumstance_group]</li>
-    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] knapp einem Höhleneinsturz entkommt [circumstance_group]</li>
-    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] knapp einem herabfallenden Dach entkommt [circumstance_group]</li>
-    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] knapp dem sicheren Tod durch herabfallende Steine entkommt [circumstance_group]</li>
+    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] herabfallenden Trümmern ausweicht [circumstance_group]</li>
+    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] knapp einem Höhleneinsturz entkommt [circumstance_group]</li>
+    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] knapp einem herabfallenden Dach entkommt [circumstance_group]</li>
+    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] knapp dem sicheren Tod durch herabfallende Steine entkommt [circumstance_group]</li>
     <li>circumstance_phrase->und hinter einem Vorhang aus Trümmern und Staub verschwindet</li>
     <li>circumstance_phrase->, was alles darunter pulverisieren würde</li>
     <li>circumstance_phrase->, was mit unglaublicher Kraft geschieht</li>
@@ -32,6 +32,7 @@
     <li>desc_sentence->[PAWN_pronoun] scheint verängstigt zu sein.</li>
     <li>desc_sentence->[PAWN_pronoun] ist zerkratzt und blutet.</li>
     <li>desc_sentence->[PAWN_pronoun] hat das Gleichgewicht verloren.</li>
+    <li>PAWN_nameFullIndefDat->{replace: [PAWN_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
   </CollapseDodged.rulePack.rulesStrings>
   
   <!-- EN: launched ship -->
@@ -62,10 +63,10 @@
   <LaunchedShip.rulePack.rulesStrings>
     <li>tale_noun->[PAWN_nameDef] vom Planeten entkam</li>
     <li>tale_noun->[PAWN_nameDef] mit einem Raumschiff davonflog</li>
-    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] zu den Sternen gebracht wird</li>
-    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] zum Himmel rast</li>
-    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] beschleunigt, um die Fluchtgeschwindigkeit zu erreichen</li>
-    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] eine Rakete steuert</li>
+    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] zu den Sternen gebracht wird</li>
+    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] zum Himmel rast</li>
+    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] beschleunigt, um die Fluchtgeschwindigkeit zu erreichen</li>
+    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] eine Rakete steuert</li>
     <li>circumstance_phrase(p=0.33)->vor einer [TerrainFeatureFemDat]</li>
     <li>circumstance_phrase(p=0.33)->vor einem [TerrainFeatureMasDat]</li>
     <li>circumstance_phrase(p=0.33)->vor einem [TerrainFeatureNeuDat]</li>
@@ -89,6 +90,7 @@
     <li>desc_sentence(p=0.33)->Im Hintergrund ist ein [TerrainFeatureMas] zu sehen.</li>
     <li>desc_sentence(p=0.33)->Im Hintergrund ist ein [TerrainFeatureNeu] zu sehen.</li>
     <li>desc_sentence->Ein [PersonJob] beobachtet schweigend das Geschehen aus der Ferne.</li>
+    <li>PAWN_nameFullIndefDat->{replace: [PAWN_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
   </LaunchedShip.rulePack.rulesStrings>
   
   <!-- EN: social fight -->

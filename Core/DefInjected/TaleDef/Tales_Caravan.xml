@@ -28,18 +28,18 @@
     <li>desc_sentence->[Quantity_adjphrase] [Animal]s flee the area.</li>
   -->
   <CaravanAmbushDefeated.rulePack.rulesStrings>
-    <li>tale_noun->{replace: [PAWN_nameDef]s; "s&lt;/color>s"-"s&lt;/color>'"; "ß&lt;/color>s"-"ß&lt;/color>'"; "z&lt;/color>s"-"z&lt;/color>'"; "x&lt;/color>s"-"x&lt;/color>'"; "ce&lt;/color>s"-"ce&lt;/color>'"} Karawane erfolgreich verteidigt werden konnte</li>
-    <li>tale_noun->{replace: [PAWN_nameDef]s; "s&lt;/color>s"-"s&lt;/color>'"; "ß&lt;/color>s"-"ß&lt;/color>'"; "z&lt;/color>s"-"z&lt;/color>'"; "x&lt;/color>s"-"x&lt;/color>'"; "ce&lt;/color>s"-"ce&lt;/color>'"} Karawane einen Hinterhalt vereiteln konnte</li>
-    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] einen Widerstand organisiert, während [circumstance_group]</li>
-    <li>image(p=0.33)->[PAWN_nameFull], wie [PAWN_pronoun] sich mit einer [WeaponFem] verteidigt, während [circumstance_group]</li>
-    <li>image(p=0.33)->[PAWN_nameFull], wie [PAWN_pronoun] sich mit einem [WeaponMas] verteidigt, während [circumstance_group]</li>
-    <li>image(p=0.33)->[PAWN_nameFull], wie [PAWN_pronoun] sich mit einem [WeaponNeu] verteidigt, während [circumstance_group]</li>
-    <li>image(p=0.33)->[PAWN_nameFull], wie [PAWN_pronoun] sich mit [PAWN_possessive]er [WeaponFem] rächt, während [circumstance_group]</li>
-    <li>image(p=0.33)->[PAWN_nameFull], wie [PAWN_pronoun] sich mit [PAWN_possessive]em [WeaponMas] rächt, während [circumstance_group]</li>
-    <li>image(p=0.33)->[PAWN_nameFull], wie [PAWN_pronoun] sich mit [PAWN_possessive]em [WeaponNeu] rächt, während [circumstance_group]</li>
-    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] trotzig dasteht, während [circumstance_group]</li>
-    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] einen [AdjectiveBadass]en Ausdruck hat, während [circumstance_group]</li>
-    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] einen [AdjectiveAngsty]en Ausdruck hat, während [circumstance_group]</li>
+    <li>tale_noun->[PAWN_label_s] Karawane erfolgreich verteidigt werden konnte</li>
+    <li>tale_noun->[PAWN_label_s] Karawane einen Hinterhalt vereiteln konnte</li>
+    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] einen Widerstand organisiert, während [circumstance_group]</li>
+    <li>image(p=0.33)->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] sich mit einer [WeaponFem] verteidigt, während [circumstance_group]</li>
+    <li>image(p=0.33)->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] sich mit einem [WeaponMas] verteidigt, während [circumstance_group]</li>
+    <li>image(p=0.33)->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] sich mit einem [WeaponNeu] verteidigt, während [circumstance_group]</li>
+    <li>image(p=0.33)->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] sich mit [PAWN_possessive]er [WeaponFem] rächt, während [circumstance_group]</li>
+    <li>image(p=0.33)->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] sich mit [PAWN_possessive]em [WeaponMas] rächt, während [circumstance_group]</li>
+    <li>image(p=0.33)->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] sich mit [PAWN_possessive]em [WeaponNeu] rächt, während [circumstance_group]</li>
+    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] trotzig dasteht, während [circumstance_group]</li>
+    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] einen [AdjectiveBadass]en Ausdruck hat, während [circumstance_group]</li>
+    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] einen [AdjectiveAngsty]en Ausdruck hat, während [circumstance_group]</li>
     <li>circumstance_phrase->[PAWN_pronoun] sich gegen die vorrückende Horde zur Wehr setzt</li>
     <li>circumstance_phrase->die Wagen kreisförmig aufgestellt werden</li>
     <li>circumstance_phrase->[PAWN_pronoun] [PAWN_possessive]e Leute zum Sieg führt</li>
@@ -58,6 +58,8 @@
     <li>desc_sentence->Der Boden ist mit [GoreDat] überzogen.</li>
     <li>desc_sentence->[Quantity_adjphrase] [PersonJobs] fliehen aus dem Gebiet.</li>
     <li>desc_sentence->[Quantity_adjphrase] [Animals] fliehen aus dem Gebiet.</li>
+    <li>PAWN_label_s->{replace: [PAWN_label]s; "s&lt;/color>s"-"s&lt;/color>'"; "ß&lt;/color>s"-"ß&lt;/color>'"; "z&lt;/color>s"-"z&lt;/color>'"; "x&lt;/color>s"-"x&lt;/color>'"; "ce&lt;/color>s"-"ce&lt;/color>'"}</li>
+    <li>PAWN_nameFullIndefDat->{replace: [PAWN_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
   </CaravanAmbushDefeated.rulePack.rulesStrings>
   
   <!-- EN: caravan assault successful -->
@@ -82,12 +84,12 @@
     <li>desc_sentence->[Quantity_adjphrase] [Animal]s flee the area.</li>
   -->
   <CaravanAssaultSuccessful.rulePack.rulesStrings>
-    <li>tale_noun->{replace: [PAWN_nameDef]s; "s&lt;/color>s"-"s&lt;/color>'"; "ß&lt;/color>s"-"ß&lt;/color>'"; "z&lt;/color>s"-"z&lt;/color>'"; "x&lt;/color>s"-"x&lt;/color>'"; "ce&lt;/color>s"-"ce&lt;/color>'"} Karawane einen feindlichen Stützpunkt besiegte</li>
-    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] auf einen [EnemyDat] zurennt</li>
-    <li>image(p=0.33)->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] eine [WeaponFem] schwingt</li>
-    <li>image(p=0.33)->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] einen [WeaponMas] schwingt</li>
-    <li>image(p=0.33)->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] ein [WeaponNeu] schwingt</li>
-    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] trotzig dasteht</li>
+    <li>tale_noun->[PAWN_label_s] Karawane einen feindlichen Stützpunkt besiegte</li>
+    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] auf einen [EnemyDat] zurennt</li>
+    <li>image(p=0.33)->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] eine [WeaponFem] schwingt</li>
+    <li>image(p=0.33)->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] einen [WeaponMas] schwingt</li>
+    <li>image(p=0.33)->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] ein [WeaponNeu] schwingt</li>
+    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] trotzig dasteht</li>
     <li>circumstance_phrase->mit einem [AdjectiveBadass]en Ausdruck</li>
     <li>circumstance_phrase->mit einem [AdjectiveAngsty]en Ausdruck</li>
     <li>circumstance_phrase->siegestrunken</li>
@@ -102,6 +104,8 @@
     <li>desc_sentence->Der Boden ist mit [GoreDat] überzogen.</li>
     <li>desc_sentence->[Quantity_adjphrase] [PersonJobs] fliehen aus dem Gebiet.</li>
     <li>desc_sentence->[Quantity_adjphrase] [Animals] fliehen aus dem Gebiet.</li>
+    <li>PAWN_label_s->{replace: [PAWN_label]s; "s&lt;/color>s"-"s&lt;/color>'"; "ß&lt;/color>s"-"ß&lt;/color>'"; "z&lt;/color>s"-"z&lt;/color>'"; "x&lt;/color>s"-"x&lt;/color>'"; "ce&lt;/color>s"-"ce&lt;/color>'"}</li>
+    <li>PAWN_nameFullIndefDat->{replace: [PAWN_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
   </CaravanAssaultSuccessful.rulePack.rulesStrings>
   
   <!-- EN: caravan fled -->
@@ -133,24 +137,26 @@
     <li>tale_noun->[PAWN_nameDef_s] Karawane der Gefahr entkam</li>
     <li>tale_noun->[PAWN_nameDef_s] Karawane nur knapp der Gefahr entkam</li>
     <li>tale_noun->[PAWN_nameDef_s] Karawane von Feinden vertrieben wurde</li>
-    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] verzweifelt wegläuft [circumstance_group]</li>
-    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] wegrennt [circumstance_group]</li>
-    <li>image(p=0.33)->[PAWN_nameFull], wie [PAWN_pronoun] sich hinter einer [TerrainFeatureFemDat] versteckt [circumstance_group]</li>
-    <li>image(p=0.33)->[PAWN_nameFull], wie [PAWN_pronoun] sich hinter einem [TerrainFeatureMasDat] versteckt [circumstance_group]</li>
-    <li>image(p=0.33)->[PAWN_nameFull], wie [PAWN_pronoun] sich hinter einem [TerrainFeatureNeuDat] versteckt [circumstance_group]</li>
-    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] flüchtet [circumstance_group]</li>
-    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] lässig davonläuft [circumstance_group]</li>
+    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] verzweifelt wegläuft [circumstance_group]</li>
+    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] wegrennt [circumstance_group]</li>
+    <li>image(p=0.33)->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] sich hinter einer [TerrainFeatureFemDat] versteckt [circumstance_group]</li>
+    <li>image(p=0.33)->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] sich hinter einem [TerrainFeatureMasDat] versteckt [circumstance_group]</li>
+    <li>image(p=0.33)->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] sich hinter einem [TerrainFeatureNeuDat] versteckt [circumstance_group]</li>
+    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] flüchtet [circumstance_group]</li>
+    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] lässig davonläuft [circumstance_group]</li>
     <li>circumstance_phrase->, während [PAWN_pronoun] von [Quantity_adjphrase_Dat] [EnemiesDat] verfolgt wird</li>
     <li>circumstance_phrase->, während [PAWN_pronoun] von [Quantity_adjphrase_Dat] [EnemiesDat] gesucht wird</li>
     <li>circumstance_phrase->, um [Quantity_adjphrase_Dat] [EnemiesDat] zu entkommen</li>
     <li>circumstance_phrase->, um [Quantity_adjphrase_Dat] feindlichen [AnimalsDat] zu entkommen</li>
     <li>circumstance_phrase->, um einem [AdjectiveLarge]en [EnemyDat] zu entkommen</li>
-    <li>desc_sentence->Die Verfolger von [PAWN_nameDef] schwingen ihre [Weapons].</li>
-    <li>desc_sentence->Die Verfolger von [PAWN_nameDef] sind von [Color]em Rauch umhüllt.</li>
-    <li>desc_sentence->Die Verfolger von [PAWN_nameDef] haben einen [AdjectiveAngsty]en Ausdruck.</li>
+    <li>desc_sentence->Die Verfolger von [PAWN_nameDefDat] schwingen ihre [Weapons].</li>
+    <li>desc_sentence->Die Verfolger von [PAWN_nameDefDat] sind von [Color]em Rauch umhüllt.</li>
+    <li>desc_sentence->Die Verfolger von [PAWN_nameDefDat] haben einen [AdjectiveAngsty]en Ausdruck.</li>
     <li>desc_sentence->[PAWN_nameDef] schwitzt.</li>
     <li>desc_sentence->[PAWN_nameDef] schnappt nach Luft.</li>
-    <li>PAWN_nameDef_s->{replace: [PAWN_nameDef]s; "s&lt;/color>s"-"s&lt;/color>'"; "ß&lt;/color>s"-"ß&lt;/color>'"; "z&lt;/color>s"-"z&lt;/color>'"; "x&lt;/color>s"-"x&lt;/color>'"; "ce&lt;/color>s"-"ce&lt;/color>'"}</li>
+    <li>PAWN_nameDef_s->{replace: [PAWN_label]s; "s&lt;/color>s"-"s&lt;/color>'"; "ß&lt;/color>s"-"ß&lt;/color>'"; "z&lt;/color>s"-"z&lt;/color>'"; "x&lt;/color>s"-"x&lt;/color>'"; "ce&lt;/color>s"-"ce&lt;/color>'"}</li>
+    <li>PAWN_nameFullIndefDat->{replace: [PAWN_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
+    <li>PAWN_nameDefDat->{replace: [PAWN_nameIndef]; ">ein "-">dem "; ">eine "-">der "}</li>
   </CaravanFled.rulePack.rulesStrings>
   
   <!-- EN: caravan formed -->
@@ -177,10 +183,10 @@
   <CaravanFormed.rulePack.rulesStrings>
     <li>tale_noun->[PAWN_nameDef] sich auf den Weg ins Abenteuer machte</li>
     <li>tale_noun->[PAWN_nameDef] eine Karawane erstellte</li>
-    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] zielgerichtet voranschreitet [circumstance_group]</li>
-    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] zum Horizont schaut [circumstance_group]</li>
-    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] Vorräte für eine Reise einpackt [circumstance_group]</li>
-    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] eine Reise plant [circumstance_group]</li>
+    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] zielgerichtet voranschreitet [circumstance_group]</li>
+    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] zum Horizont schaut [circumstance_group]</li>
+    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] Vorräte für eine Reise einpackt [circumstance_group]</li>
+    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] eine Reise plant [circumstance_group]</li>
     <li>circumstance_phrase->und sich auf einen Kampf vorbereitet</li>
     <li>circumstance_phrase->und sich auf das Überleben in der Wildnis vorbereitet</li>
     <li>circumstance_phrase->und sich auf eine Erkundung vorbereitet</li>
@@ -194,6 +200,7 @@
     <li>desc_sentence(p=0.33)->Ein [TerrainFeatureNeu] ist in der Ferne zu sehen.</li>
     <li>desc_sentence->[Quantity_adjphrase] [PersonJobs] beobachten das Geschehen aus der Ferne.</li>
     <li>desc_sentence->[Quantity_adjphrase] [Animals] wandern friedlich umher.</li>
+    <li>PAWN_nameFullIndefDat->{replace: [PAWN_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
   </CaravanFormed.rulePack.rulesStrings>
   
   <!-- EN: caravan remote mining -->
@@ -218,12 +225,12 @@
     <li>desc_sentence->[PAWN_nameDef] is sweaty and dirty from work.</li>
   -->
   <CaravanRemoteMining.rulePack.rulesStrings>
-    <li>tale_noun->{replace: [PAWN_nameDef]s; "s&lt;/color>s"-"s&lt;/color>'"; "ß&lt;/color>s"-"ß&lt;/color>'"; "z&lt;/color>s"-"z&lt;/color>'"; "x&lt;/color>s"-"x&lt;/color>'"; "ce&lt;/color>s"-"ce&lt;/color>'"} Karawane eine reiche [MATERIAL_label]-Ader in einem fremden Land abbaute</li>
-    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] das Gestein eines [MATERIAL_label]vorkommens mit Bergbauwerkzeugen bearbeitet</li>
-    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] den Brocken eines [MATERIAL_label]vorkommens in der Hand hält</li>
-    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] sich [circumstance_group] an einer Wand aus [MATERIAL_label] lehnt</li>
-    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] ein Bergbauteam für ein reiches [MATERIAL_label]vorkommen koordiniert</li>
-    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] ein [MATERIAL_label]vorkommen sorgfältig begutachtet</li>
+    <li>tale_noun->[PAWN_label_s] Karawane eine reiche [MATERIAL_label]-Ader in einem fremden Land abbaute</li>
+    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] das Gestein eines [MATERIAL_label]vorkommens mit Bergbauwerkzeugen bearbeitet</li>
+    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] den Brocken eines [MATERIAL_label]vorkommens in der Hand hält</li>
+    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] sich [circumstance_group] an einer Wand aus [MATERIAL_label] lehnt</li>
+    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] ein Bergbauteam für ein reiches [MATERIAL_label]vorkommen koordiniert</li>
+    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] ein [MATERIAL_label]vorkommen sorgfältig begutachtet</li>
     <li>circumstance_phrase->schweißgebadet</li>
     <li>circumstance_phrase->mit einem [AdjectiveFriendly]en Ausdruck</li>
     <li>circumstance_phrase->stolz lächelnd</li>
@@ -237,6 +244,8 @@
     <li>desc_sentence(p=0.33)->Ein [TerrainFeatureMas] ist in der Ferne zu sehen.</li>
     <li>desc_sentence(p=0.33)->Ein [TerrainFeatureNeu] ist in der Ferne zu sehen.</li>
     <li>desc_sentence->[PAWN_nameDef] ist verschwitzt und schmutzig von der Arbeit.</li>
+    <li>PAWN_label_s->{replace: [PAWN_label]s; "s&lt;/color>s"-"s&lt;/color>'"; "ß&lt;/color>s"-"ß&lt;/color>'"; "z&lt;/color>s"-"z&lt;/color>'"; "x&lt;/color>s"-"x&lt;/color>'"; "ce&lt;/color>s"-"ce&lt;/color>'"}</li>
+    <li>PAWN_nameFullIndefDat->{replace: [PAWN_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
   </CaravanRemoteMining.rulePack.rulesStrings>
   
 </LanguageData>

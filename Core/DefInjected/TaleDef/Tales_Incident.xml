@@ -24,10 +24,10 @@
     <li>desc_sentence->There is no [Enemy] in sight.</li>
   -->
   <Aurora.rulePack.rulesStrings>
-    <li>tale_noun(p=0.5)->über der [CommunityFemDat] von [PAWN_nameDef] ein Polarlicht erschien</li>
-    <li>tale_noun(p=0.5)->über dem [CommunityNeuDat] von [PAWN_nameDef] ein Polarlicht erschien</li>
-    <li>tale_noun(p=0.5)->über der [CommunityFemDat] von [PAWN_nameDef] Polarlichter zu sehen waren</li>
-    <li>tale_noun(p=0.5)->über dem [CommunityNeuDat] von [PAWN_nameDef] Polarlichter zu sehen waren</li>
+    <li>tale_noun(p=0.5)->über der [CommunityFemDat] von [PAWN_nameDefDat] ein Polarlicht erschien</li>
+    <li>tale_noun(p=0.5)->über dem [CommunityNeuDat] von [PAWN_nameDefDat] ein Polarlicht erschien</li>
+    <li>tale_noun(p=0.5)->über der [CommunityFemDat] von [PAWN_nameDefDat] Polarlichter zu sehen waren</li>
+    <li>tale_noun(p=0.5)->über dem [CommunityNeuDat] von [PAWN_nameDefDat] Polarlichter zu sehen waren</li>
     <li>tale_noun->[PAWN_label_s] [Community] von einem Polarlicht erhellt wurde</li>
     <li>image->einem Himmel, der in [Color]er und [Color]er Farbe leuchtet [circumstance_phrase]</li>
     <li>image->einem wunderschönen Muster aus [Color]en Farben, das im Himmel erstrahlt [circumstance_phrase]</li>
@@ -51,6 +51,7 @@
     <li>desc_sentence->[Quantity_adjphrase] [Animals] wandern friedlich umher.</li>
     <li>desc_sentence->Weit und breit ist kein [Enemy] zu sehen.</li>
     <li>PAWN_label_s->{replace: [PAWN_label]s; "s&lt;/color>s"-"s&lt;/color>'"; "ß&lt;/color>s"-"ß&lt;/color>'"; "z&lt;/color>s"-"z&lt;/color>'"; "x&lt;/color>s"-"x&lt;/color>'"; "ce&lt;/color>s"-"ce&lt;/color>'"}</li>
+    <li>PAWN_nameDefDat->{replace: [PAWN_nameIndef]; ">ein "-">dem "; ">eine "-">der "}</li>
   </Aurora.rulePack.rulesStrings>
   
   <!-- EN: caravan ambushed -->
@@ -77,15 +78,15 @@
     <li>desc_sentence->In the distance, a [PersonJob] observes.</li>
   -->
   <CaravanAmbushedByHumanlike.rulePack.rulesStrings>
-    <li>tale_noun->die Karawane von [PAWN_nameDef] in einen Hinterhalt gelockt wurde</li>
-    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] sich [circumstance_group] vor Angst in die Hosen macht</li>
-    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] versucht einen Verbündeten zu beschützen</li>
-    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] zum Angriff übergeht</li>
-    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] den Feind angreift</li>
-    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] lautstark herumschreit</li>
-    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] um sein Leben rennt</li>
-    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] sich [circumstance_group] mit einem Gegner anlegt</li>
-    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] sich [circumstance_group] selbst schützt</li>
+    <li>tale_noun->die Karawane von [PAWN_nameDefDat] in einen Hinterhalt gelockt wurde</li>
+    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] sich [circumstance_group] vor Angst in die Hosen macht</li>
+    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] versucht, einen Verbündeten zu beschützen</li>
+    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] zum Angriff übergeht</li>
+    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] den Feind angreift</li>
+    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] lautstark herumschreit</li>
+    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] um sein Leben rennt</li>
+    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] sich [circumstance_group] mit einem Gegner anlegt</li>
+    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] sich [circumstance_group] selbst schützt</li>
     <li>circumstance_phrase->mit einem [AdjectiveBadass]en Ausdruck</li>
     <li>circumstance_phrase->mit einem [AdjectiveBadass]en Ausdruck</li>
     <li>circumstance_phrase->, während [PAWN_pronoun] [PAWN_possessive]e Waffe schwingt,</li>
@@ -98,6 +99,8 @@
     <li>desc_sentence->[PAWN_nameDef] wird mit einem [EnemyDat] konfrontiert.</li>
     <li>desc_sentence->[Quantity_adjphrase] [Animals] fliehen panisch aus dem Konfliktbereich.</li>
     <li>desc_sentence->In der Ferne beobachtet ein [PersonJob] das Geschehen.</li>
+    <li>PAWN_nameFullIndefDat->{replace: [PAWN_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
+    <li>PAWN_nameDefDat->{replace: [PAWN_nameIndef]; ">ein "-">dem "; ">eine "-">der "}</li>
   </CaravanAmbushedByHumanlike.rulePack.rulesStrings>
   
   <!-- EN: caravan ambushed by manhunter -->
@@ -122,13 +125,13 @@
     <li>desc_sentence->In the distance, a [PersonJob] observes.</li>
   -->
   <CaravanAmbushedByManhunter.rulePack.rulesStrings>
-    <li>tale_noun->die Karawane von [PAWN_nameDef] in einen Hinterhalt gelockt wurde</li>
-    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] sich [circumstance_group] vor Angst in die Hosen macht</li>
-    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] versucht einen Verbündeten zu beschützen</li>
-    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] zum Angriff übergeht</li>
-    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] den Feind angreift</li>
-    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] lautstark herumschreit</li>
-    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] um sein Leben rennt</li>
+    <li>tale_noun->die Karawane von [PAWN_nameDefDat] in einen Hinterhalt gelockt wurde</li>
+    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] sich [circumstance_group] vor Angst in die Hosen macht</li>
+    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] versucht, einen Verbündeten zu beschützen</li>
+    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] zum Angriff übergeht</li>
+    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] den Feind angreift</li>
+    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] lautstark herumschreit</li>
+    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] um sein Leben rennt</li>
     <li>circumstance_phrase->mit einem [AdjectiveBadass]en Ausdruck</li>
     <li>circumstance_phrase->mit einem [AdjectiveBadass]en Ausdruck</li>
     <li>circumstance_phrase->, während [PAWN_pronoun] [PAWN_possessive]e Waffe schwingt,</li>
@@ -141,6 +144,8 @@
     <li>desc_sentence->Der Boden ist übersät mit [GoreDat].</li>
     <li>desc_sentence->[Quantity_adjphrase] [Animals] fliehen panisch aus dem Konfliktbereich.</li>
     <li>desc_sentence->In der Ferne beobachtet ein [PersonJob] das Geschehen.</li>
+    <li>PAWN_nameFullIndefDat->{replace: [PAWN_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
+    <li>PAWN_nameDefDat->{replace: [PAWN_nameIndef]; ">ein "-">dem "; ">eine "-">der "}</li>
   </CaravanAmbushedByManhunter.rulePack.rulesStrings>
   
   <!-- EN: caravan demand -->
@@ -170,16 +175,16 @@
     <li>action->taunting [PAWN_nameDef]</li>
   -->
   <CaravanDemand.rulePack.rulesStrings>
-    <li>tale_noun->die Karawane von [PAWN_nameDef] zur Zahlung aufgefordert wurde</li>
-    <li>tale_noun->die Karawane von [PAWN_nameDef] bedroht wurde</li>
-    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] sich [circumstance_group] vor Angst in die Hosen macht</li>
-    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] lautstark herumschreit</li>
-    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] darüber nachdenkt</li>
-    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] [PAWN_possessive]e Peiniger anstarrt</li>
-    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] von einem [PersonJob] bedroht wird</li>
-    <li>image(p=0.33)->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] einen [WeaponMasAcc] schwingt</li>
-    <li>image(p=0.33)->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] eine [WeaponFemAcc] schwingt</li>
-    <li>image(p=0.33)->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] ein [WeaponNeuAcc] schwingt</li>
+    <li>tale_noun->die Karawane von [PAWN_nameDefDat] zu einer Zahlung aufgefordert wurde</li>
+    <li>tale_noun->die Karawane von [PAWN_nameDefDat] bedroht wurde</li>
+    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] sich [circumstance_group] vor Angst in die Hosen macht</li>
+    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] lautstark herumschreit</li>
+    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] darüber nachdenkt</li>
+    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] [PAWN_possessive]e Peiniger anstarrt</li>
+    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] von einem [PersonJob] bedroht wird</li>
+    <li>image(p=0.33)->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] einen [WeaponMasAcc] schwingt</li>
+    <li>image(p=0.33)->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] eine [WeaponFemAcc] schwingt</li>
+    <li>image(p=0.33)->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] ein [WeaponNeuAcc] schwingt</li>
     <li>circumstance_phrase->mit einem [AdjectiveBadass]en Ausdruck</li>
     <li>circumstance_phrase->mit einem [AdjectiveAngsty]en Ausdruck</li>
     <li>circumstance_phrase->, während andere es sehen,</li>
@@ -197,7 +202,10 @@
     <li>action->halten nach Gefahren Ausschau</li>
     <li>action->überwachen die Geißeln</li>
     <li>action->warten auf eine Entscheidung</li>
-    <li>action->verhöhnen [PAWN_nameDef]</li>
+    <li>action->verhöhnen [PAWN_nameDefAcc]</li>
+    <li>PAWN_nameFullIndefDat->{replace: [PAWN_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
+    <li>PAWN_nameDefDat->{replace: [PAWN_nameIndef]; ">ein "-">dem "; ">eine "-">der "}</li>
+    <li>PAWN_nameDefAcc->{replace: [PAWN_nameDef]; ">der "-">den "}</li>
   </CaravanDemand.rulePack.rulesStrings>
   
   <!-- EN: caravan meeting -->
@@ -228,14 +236,14 @@
     <li>event->talking hesitantly</li>
   -->
   <CaravanMeeting.rulePack.rulesStrings>
-    <li>tale_noun->sich die Karawane von [PAWN_nameDef] mit anderen traf</li>
-    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] einen [PersonJob] begrüßt</li>
-    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] einen [PersonJob] inspiziert</li>
-    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] nach einem [PersonJob] ruft</li>
-    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] auf einen [PersonJob] zugeht</li>
-    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] sich [circumstance_group] leise mit einer Person unterhält</li>
-    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] lautstark herumschreit</li>
-    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] [Game] mit einem [PersonJob] spielt</li>
+    <li>tale_noun->sich die Karawane von [PAWN_nameDefDat] mit anderen traf</li>
+    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] einen [PersonJob] begrüßt</li>
+    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] einen [PersonJob] inspiziert</li>
+    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] nach einem [PersonJob] ruft</li>
+    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] auf einen [PersonJob] zugeht</li>
+    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] sich [circumstance_group] leise mit einer Person unterhält</li>
+    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] lautstark herumschreit</li>
+    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] [Game] mit einem [PersonJob] spielt</li>
     <li>circumstance_phrase->mit einem [AdjectiveFriendly]en Ausdruck</li>
     <li>circumstance_phrase->mit einem [AdjectiveFriendly]en Ausdruck</li>
     <li>circumstance_phrase->völlig unbekümmert</li>
@@ -255,6 +263,8 @@
     <li>event->diskutieren über die jüngsten Ereignisse</li>
     <li>event->erwecken alte Freundschaften wieder zum Leben</li>
     <li>event->reden zögerlich miteinander</li>
+    <li>PAWN_nameFullIndefDat->{replace: [PAWN_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
+    <li>PAWN_nameDefDat->{replace: [PAWN_nameIndef]; ">ein "-">dem "; ">eine "-">der "}</li>
   </CaravanMeeting.rulePack.rulesStrings>
   
   <!-- EN: eclipse -->
@@ -277,8 +287,8 @@
     <li>desc_sentence->There is no [Enemy] in sight.</li>
   -->
   <Eclipse.rulePack.rulesStrings>
-    <li>tale_noun->eine Sonnenfinsternis über der [CommunityFemDat] von [PAWN_nameDef] stattfand</li>
-    <li>tale_noun->eine Sonnenfinsternis über dem [CommunityNeuDat] von [PAWN_nameDef] stattfand</li>
+    <li>tale_noun->eine Sonnenfinsternis über der [CommunityFemDat] von [PAWN_nameDefDat] stattfand</li>
+    <li>tale_noun->eine Sonnenfinsternis über dem [CommunityNeuDat] von [PAWN_nameDefDat] stattfand</li>
     <li>image->einem unnatürlich dunklen Himmel, [circumstance_phrase]</li>
     <li>image->einem dämmrigen Himmel, [circumstance_phrase]</li>
     <li>image->einem von Sonnenlicht umringten Mond, [circumstance_phrase]</li>
@@ -297,6 +307,7 @@
     <li>desc_sentence(p=0.33)->[PAWN_nameDef] sitzt neben einem [TerrainFeatureNeuDat] und schaut in den Himmel.</li>
     <li>desc_sentence->Eine Gruppe von Zuschauern starrt friedlich in den Himmel.</li>
     <li>desc_sentence->Weit und breit ist kein [Enemy] zu sehen.</li>
+    <li>PAWN_nameDefDat->{replace: [PAWN_nameIndef]; ">ein "-">dem "; ">eine "-">der "}</li>
   </Eclipse.rulePack.rulesStrings>
   
   <!-- EN: journey offer -->
@@ -332,14 +343,14 @@
   -->
   <EndGame_ShipEscape.rulePack.rulesStrings>
     <li>tale_noun->[PAWN_nameDef] eine Nachricht von einem alten Freund erhielt</li>
-    <li>tale_noun(p=0.5)->sich eine Chance für die [CommunityFem] von [PAWN_nameDef] ergab</li>
-    <li>tale_noun(p=0.5)->sich eine Chance für das [CommunityNeu] von [PAWN_nameDef] ergab</li>
-    <li>image->[PAWN_nameDef], wie [PAWN_pronoun] gerade einen Brief öffnet, den [delivery_method] überbrachte, während [circumstance_group]</li>
-    <li>image->[PAWN_nameDef], wie [PAWN_pronoun] gerade einen Datenkristall verwendet, der von [delivery_method] überbrachte wurde, während [circumstance_group]</li>
-    <li>image->[PAWN_nameDef], wie [PAWN_pronoun] gerade eine Schriftrolle öffnet, die von [delivery_method] überbrachte wurde, während [circumstance_group]</li>
-    <li>image->[PAWN_nameDef], wie [PAWN_pronoun] gerade eine Übertragung von [transmission_source] empfängt, während [circumstance_group]</li>
-    <li>image->[PAWN_nameDef], wie [PAWN_pronoun] gerade eine Nachricht von [transmission_source] erhält, während [circumstance_group]</li>
-    <li>image->[PAWN_nameDef], wie [PAWN_pronoun] gerade eine Nachricht von [transmission_source] entziffert, während [circumstance_group]</li>
+    <li>tale_noun(p=0.5)->sich eine Chance für die [CommunityFem] von [PAWN_nameDefDat] ergab</li>
+    <li>tale_noun(p=0.5)->sich eine Chance für das [CommunityNeu] von [PAWN_nameDefDat] ergab</li>
+    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] gerade einen Brief öffnet, den [delivery_method] überbrachte, während [circumstance_group]</li>
+    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] gerade einen Datenkristall verwendet, der von [delivery_method] überbrachte wurde, während [circumstance_group]</li>
+    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] gerade eine Schriftrolle öffnet, die von [delivery_method] überbrachte wurde, während [circumstance_group]</li>
+    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] gerade eine Übertragung von [transmission_source] empfängt, während [circumstance_group]</li>
+    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] gerade eine Nachricht von [transmission_source] erhält, während [circumstance_group]</li>
+    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] gerade eine Nachricht von [transmission_source] entziffert, während [circumstance_group]</li>
     <li>delivery_method(p=0.33)->einem [AnimalMasDat]</li>
     <li>delivery_method(p=0.33)->einer [AnimalFemDat]</li>
     <li>delivery_method(p=0.33)->einem [AnimalNeuDat]</li>
@@ -370,6 +381,8 @@
     <li>desc_sentence(p=0.5)->Eine [CommunityFem] ist in der Ferne zu sehen.</li>
     <li>desc_sentence(p=0.5)->Ein [CommunityNeu] ist in der Ferne zu sehen.</li>
     <li>desc_sentence->Ein Raumschiff ist in der Ferne zu sehen.</li>
+    <li>PAWN_nameFullIndefDat->{replace: [PAWN_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
+    <li>PAWN_nameDefDat->{replace: [PAWN_nameIndef]; ">ein "-">dem "; ">eine "-">der "}</li>
   </EndGame_ShipEscape.rulePack.rulesStrings>
   
   <!-- EN: flashstorm -->
@@ -397,8 +410,8 @@
     <li>desc_sentence->All animal life has left the area.</li>
   -->
   <Flashstorm.rulePack.rulesStrings>
-    <li>tale_noun(p=0.5)->ein Blitzsturm die [CommunityFem] von [PAWN_nameDef] bedrohte</li>
-    <li>tale_noun(p=0.5)->ein Blitzsturm das [CommunityNeu] von [PAWN_nameDef] bedrohte</li>
+    <li>tale_noun(p=0.5)->ein Blitzsturm die [CommunityFem] von [PAWN_nameDefDat] bedrohte</li>
+    <li>tale_noun(p=0.5)->ein Blitzsturm das [CommunityNeu] von [PAWN_nameDefDat] bedrohte</li>
     <li>tale_noun->[PAWN_label_s] [Community] von einem tödlichen Blitzsturm heimgesucht wurde</li>
     <li>image->[Quantity_adjphrase_Dat] Blitzschlägen, die [circumstance_phrase_plu]</li>
     <li>image->[behavior] Flammenwand, die [circumstance_phrase]</li>
@@ -429,6 +442,7 @@
     <li>desc_sentence->[Quantity_adjphrase] [Animals] fliehen aus dem Gebiet.</li>
     <li>desc_sentence->Die gesamte Tierwelt hat das Gebiet verlassen.</li>
     <li>PAWN_label_s->{replace: [PAWN_label]s; "s&lt;/color>s"-"s&lt;/color>'"; "ß&lt;/color>s"-"ß&lt;/color>'"; "z&lt;/color>s"-"z&lt;/color>'"; "x&lt;/color>s"-"x&lt;/color>'"; "ce&lt;/color>s"-"ce&lt;/color>'"}</li>
+    <li>PAWN_nameDefDat->{replace: [PAWN_nameIndef]; ">ein "-">dem "; ">eine "-">der "}</li>
   </Flashstorm.rulePack.rulesStrings>
   
   <!-- EN: infestation -->
@@ -598,10 +612,10 @@
     <li>desc_sentence->The surroundings are muted and dull.</li>
   -->
   <MeteoriteImpact.rulePack.rulesStrings>
-    <li>tale_noun->ein Meteorit in der Nähe der [CommunityFemGen] von [PAWN_nameDef] herunterfiel</li>
-    <li>tale_noun->ein Meteorit in der Nähe des [CommunityNeuGen] von [PAWN_nameDef] herunterfiel</li>
-    <li>tale_noun->ein Meteorit in der Nähe der [CommunityFemGen] von [PAWN_nameDef] einschlug</li>
-    <li>tale_noun->ein Meteorit in der Nähe des [CommunityNeuGen] von [PAWN_nameDef] einschlug</li>
+    <li>tale_noun->ein Meteorit in der Nähe der [CommunityFemGen] von [PAWN_nameDefDat] herunterfiel</li>
+    <li>tale_noun->ein Meteorit in der Nähe des [CommunityNeuGen] von [PAWN_nameDefDat] herunterfiel</li>
+    <li>tale_noun->ein Meteorit in der Nähe der [CommunityFemGen] von [PAWN_nameDefDat] einschlug</li>
+    <li>tale_noun->ein Meteorit in der Nähe des [CommunityNeuGen] von [PAWN_nameDefDat] einschlug</li>
     <li>image->einem [AdjectiveLarge]en Brocken mit [Color]em Schweif [airborne_circumstance]</li>
     <li>image->einem hell leuchtenden Fleck [airborne_circumstance]</li>
     <li>image->einem [AdjectiveLarge]en, [Color]en Feuerball [airborne_circumstance]</li>
@@ -625,6 +639,7 @@
     <li>desc_sentence->[Quantity_adjphrase] Gestalten bereiten Werkzeuge und Ausrüstungen vor.</li>
     <li>desc_sentence->[Quantity_adjphrase] [Animals] laufen unsicher herum.</li>
     <li>desc_sentence->Die Umgebung ist schlicht und langweilig.</li>
+    <li>PAWN_nameDefDat->{replace: [PAWN_nameIndef]; ">ein "-">dem "; ">eine "-">der "}</li>
   </MeteoriteImpact.rulePack.rulesStrings>
   
   <!-- EN: raid -->
@@ -661,12 +676,12 @@
     <li>defender_circumstance->flexing [PAWN_possessive] muscles</li>
   -->
   <Raid.rulePack.rulesStrings>
-    <li>tale_noun->ein Überfall auf die [CommunityFem] von [PAWN_nameDef] verübt wurde</li>
-    <li>tale_noun->ein Überfall auf das [CommunityNeu] von [PAWN_nameDef] verübt wurde</li>
-    <li>tale_noun->die [CommunityFem] von [PAWN_nameDef] überfallen wurde</li>
-    <li>tale_noun->das [CommunityNeu] von [PAWN_nameDef] überfallen wurde</li>
-    <li>tale_noun->[Enemies] die [CommunityFem] von [PAWN_nameDef] angriffen</li>
-    <li>tale_noun->[Enemies] das [CommunityNeu] von [PAWN_nameDef] angriffen</li>
+    <li>tale_noun->ein Überfall auf die [CommunityFem] von [PAWN_nameDefDat] verübt wurde</li>
+    <li>tale_noun->ein Überfall auf das [CommunityNeu] von [PAWN_nameDefDat] verübt wurde</li>
+    <li>tale_noun->die [CommunityFem] von [PAWN_nameDefDat] überfallen wurde</li>
+    <li>tale_noun->das [CommunityNeu] von [PAWN_nameDefDat] überfallen wurde</li>
+    <li>tale_noun->[Enemies] die [CommunityFem] von [PAWN_nameDefDat] angriffen</li>
+    <li>tale_noun->[Enemies] das [CommunityNeu] von [PAWN_nameDefDat] angriffen</li>
     <li>image->[Quantity_adjphrase_Dat] [EnemiesDat], die [circumstance_phrase_plu]</li>
     <li>image->einer Armee, die [circumstance_phrase]</li>
     <li>image->einer überwältigenden Streitmacht, die [circumstance_phrase]</li>
@@ -709,6 +724,7 @@
     <li>defender_circumstance->[PAWN_pronoun] [Color] leuchtet</li>
     <li>defender_circumstance->[PAWN_pronoun] trotzig [PAWN_possessive]e Faust erhebt</li>
     <li>defender_circumstance->[PAWN_pronoun] [PAWN_possessive]e Muskeln anspannt</li>
+    <li>PAWN_nameDefDat->{replace: [PAWN_nameIndef]; ">ein "-">dem "; ">eine "-">der "}</li>
   </Raid.rulePack.rulesStrings>
   
   <!-- EN: ship part crash -->
@@ -746,27 +762,37 @@
     <li>defender_circumstance->flexing [PAWN_possessive] muscles</li>
   -->
   <ShipPartCrash.rulePack.rulesStrings>
-    <li>tale_noun->ein antikes Schiffsteil in der Nähe der [CommunityFemGen] von [PAWN_nameDef] abstürzte</li>
-    <li>tale_noun->ein antikes Schiffsteil in der Nähe des [CommunityNeuGen] von [PAWN_nameDef] abstürzte</li>
-    <li>tale_noun->ein antikes Schiffsteil in der Nähe der [CommunityFemGen] von [PAWN_nameDef] landete</li>
-    <li>tale_noun->ein antikes Schiffsteil in der Nähe des [CommunityNeuGen] von [PAWN_nameDef] landete</li>
-    <li>tale_noun->ein beschädigtes Schiffsteil in der Nähe der [CommunityFemGen] von [PAWN_nameDef] landete</li>
-    <li>tale_noun->ein beschädigtes Schiffsteil in der Nähe des [CommunityNeuGen] von [PAWN_nameDef] landete</li>
-    <li>image->einem Schwarm von [MechanoidDat] [circumstance_phrase]</li>
-    <li>image->einer Armee von [MechanoidDat] [circumstance_phrase]</li>
-    <li>image->[Quantity_adjphrase_Dat] [MechanoidDat] [circumstance_phrase]</li>
-    <li>image->einem [AdjectiveLarge]en [MechanoidDat] [circumstance_phrase]</li>
-    <li>image->[Quantity_adjphrase_Dat] Silhouetten von [MechanoidDat] [circumstance_phrase]</li>
-    <li>image->[Quantity_adjphrase_Dat] [MechanoidDat] mit leuchtenden, [Color]en Sensoren [circumstance_phrase]</li>
-    <li>circumstance_phrase(p=0.33)->über einen [TerrainFeatureMas] vorrücken</li>
-    <li>circumstance_phrase(p=0.33)->über eine [TerrainFeatureFem] vorrücken</li>
-    <li>circumstance_phrase(p=0.33)->über ein [TerrainFeatureNeu] vorrücken</li>
-    <li>circumstance_phrase(p=0.5)->eine [CommunityFem] komplett umzingeln</li>
-    <li>circumstance_phrase(p=0.5)->ein [CommunityNeu] komplett umzingeln</li>
-    <li>circumstance_phrase->[Quantity_adjphrase] [PersonJobs] angreifen</li>
-    <li>circumstance_phrase->[Quantity_adjphrase] [Animals] abschlachten</li>
-    <li>circumstance_phrase->, bedeckt mit [GoreDat]</li>
-    <li>circumstance_phrase->, verbeult und funkensprühend</li>
+    <li>tale_noun->ein antikes Schiffsteil in der Nähe der [CommunityFemGen] von [PAWN_nameDefDat] abstürzte</li>
+    <li>tale_noun->ein antikes Schiffsteil in der Nähe des [CommunityNeuGen] von [PAWN_nameDefDat] abstürzte</li>
+    <li>tale_noun->ein antikes Schiffsteil in der Nähe der [CommunityFemGen] von [PAWN_nameDefDat] landete</li>
+    <li>tale_noun->ein antikes Schiffsteil in der Nähe des [CommunityNeuGen] von [PAWN_nameDefDat] landete</li>
+    <li>tale_noun->ein beschädigtes Schiffsteil in der Nähe der [CommunityFemGen] von [PAWN_nameDefDat] landete</li>
+    <li>tale_noun->ein beschädigtes Schiffsteil in der Nähe des [CommunityNeuGen] von [PAWN_nameDefDat] landete</li>
+    <li>image->einem Schwarm von [MechanoidsDat], die [circumstance_phrase_plu]</li>
+    <li>image->einer Armee von [MechanoidsDat], die [circumstance_phrase_plu]</li>
+    <li>image->[Quantity_adjphrase_Dat] [MechanoidsDat], die [circumstance_phrase_plu]</li>
+    <li>image(p=0.5)->einem [AdjectiveLarge]en [MechanoidMasDat], der [circumstance_phrase]</li>
+    <li>image(p=0.5)->einer [AdjectiveLarge]en [MechanoidFemDat], die [circumstance_phrase]</li>
+    <li>image->[Quantity_adjphrase_Dat] Silhouetten von [MechanoidsDat], die [circumstance_phrase_plu]</li>
+    <li>image->[Quantity_adjphrase_Dat] [MechanoidsDat] mit leuchtenden [Color]en Sensoren, die [circumstance_phrase_plu]</li>
+    <li>circumstance_phrase(p=0.33)->über einen [TerrainFeatureMas] vorrückt</li>
+    <li>circumstance_phrase(p=0.33)->über eine [TerrainFeatureFem] vorrückt</li>
+    <li>circumstance_phrase(p=0.33)->über ein [TerrainFeatureNeu] vorrückt</li>
+    <li>circumstance_phrase(p=0.5)->eine [CommunityFem] komplett umzingelt</li>
+    <li>circumstance_phrase(p=0.5)->ein [CommunityNeu] komplett umzingelt</li>
+    <li>circumstance_phrase->[Quantity_adjphrase] [PersonJobs] angreift</li>
+    <li>circumstance_phrase->[Quantity_adjphrase] [Animals] abschlachtet</li>
+    <li>circumstance_phrase->mit [GoreDat] bedeckt ist</li>
+    <li>circumstance_phrase->verbeult ist und Funken sprüht</li>
+    <li>circumstance_phrase_plu(p=0.33)->über einen [TerrainFeatureMas] vorrücken</li>
+    <li>circumstance_phrase_plu(p=0.33)->über eine [TerrainFeatureFem] vorrücken</li>
+    <li>circumstance_phrase_plu(p=0.33)->über ein [TerrainFeatureNeu] vorrücken</li>
+    <li>circumstance_phrase_plu(p=0.5)->eine [CommunityFem] komplett umzingeln</li>
+    <li>circumstance_phrase_plu(p=0.5)->ein [CommunityNeu] komplett umzingeln</li>
+    <li>circumstance_phrase_plu->[Quantity_adjphrase] [PersonJobs] angreifen</li>
+    <li>circumstance_phrase_plu->[Quantity_adjphrase] [Animals] abschlachten</li>
+    <li>circumstance_phrase_plu->mit [GoreDat] bedeckt sind</li>
+    <li>circumstance_phrase_plu->verbeult sind und Funken sprühen</li>
     <li>desc_sentence->[PAWN_nameDef] organisiert einen Widerstand, während [defender_circumstance].</li>
     <li>desc_sentence(p=0.33)->[PAWN_nameDef] verteidigt sich mit einem [WeaponMasDat], während [defender_circumstance].</li>
     <li>desc_sentence(p=0.33)->[PAWN_nameDef] verteidigt sich mit einer [WeaponFemDat], während [defender_circumstance].</li>
@@ -786,6 +812,7 @@
     <li>defender_circumstance->[PAWN_pronoun] [Color] leuchtet</li>
     <li>defender_circumstance->[PAWN_pronoun] trotzig [PAWN_possessive]e Faust erhebt</li>
     <li>defender_circumstance->[PAWN_pronoun] [PAWN_possessive]e Muskeln anspannt</li>
+    <li>PAWN_nameDefDat->{replace: [PAWN_nameIndef]; ">ein "-">dem "; ">eine "-">der "}</li>
   </ShipPartCrash.rulePack.rulesStrings>
   
   <!-- EN: tornado -->
@@ -813,8 +840,8 @@
     <li>desc_sentence->All animal life has left the area.</li>
   -->
   <Tornado.rulePack.rulesStrings>
-    <li>tale_noun(p=0.5)->ein Tornado in der Nähe der [CommunityFemGen] von [PAWN_nameDef] auftauchte</li>
-    <li>tale_noun(p=0.5)->ein Tornado in der Nähe des [CommunityNeuGen] von [PAWN_nameDef] auftauchte</li>
+    <li>tale_noun(p=0.5)->ein Tornado in der Nähe der [CommunityFemGen] von [PAWN_nameDefDat] auftauchte</li>
+    <li>tale_noun(p=0.5)->ein Tornado in der Nähe des [CommunityNeuGen] von [PAWN_nameDefDat] auftauchte</li>
     <li>tale_noun->[PAWN_label_s] [Community] von einem Tornado heimgesucht wurde</li>
     <li>image->[behavior] Kegel umherwirbelnder Luft, der [circumstance_phrase]</li>
     <li>image->[behavior] Tornado, der [circumstance_phrase]</li>
@@ -841,6 +868,7 @@
     <li>desc_sentence->[Quantity_adjphrase] [Animals] fliehen aus dem Gebiet.</li>
     <li>desc_sentence->Die gesamte Tierwelt hat das Gebiet verlassen.</li>
     <li>PAWN_label_s->{replace: [PAWN_label]s; "s&lt;/color>s"-"s&lt;/color>'"; "ß&lt;/color>s"-"ß&lt;/color>'"; "z&lt;/color>s"-"z&lt;/color>'"; "x&lt;/color>s"-"x&lt;/color>'"; "ce&lt;/color>s"-"ce&lt;/color>'"}</li>
+    <li>PAWN_nameDefDat->{replace: [PAWN_nameIndef]; ">ein "-">dem "; ">eine "-">der "}</li>
   </Tornado.rulePack.rulesStrings>
   
   <!-- EN: tornado -->
@@ -925,10 +953,10 @@
     <li>desc_sentence->[Quantity_adjphrase] [Animal]s mill around uncertainly.</li>
   -->
   <ToxicFallout.rulePack.rulesStrings>
-    <li>tale_noun->ein giftiger Fallout die [CommunityFemAcc] von [PAWN_label] bedrohte</li>
-    <li>tale_noun->ein giftiger Fallout das [CommunityNeuAcc] von [PAWN_label] bedrohte</li>
-    <li>tale_noun->die Atmosphäre in der Nähe der [CommunityFemGen] von [PAWN_label] giftig wurde</li>
-    <li>tale_noun->die Atmosphäre in der Nähe des [CommunityNeuGen] von [PAWN_label] giftig wurde</li>
+    <li>tale_noun->ein giftiger Fallout die [CommunityFemAcc] von [PAWN_nameDefDat] bedrohte</li>
+    <li>tale_noun->ein giftiger Fallout das [CommunityNeuAcc] von [PAWN_nameDefDat] bedrohte</li>
+    <li>tale_noun->die Atmosphäre in der Nähe der [CommunityFemGen] von [PAWN_nameDefDat] giftig wurde</li>
+    <li>tale_noun->die Atmosphäre in der Nähe des [CommunityNeuGen] von [PAWN_nameDefDat] giftig wurde</li>
     <li>image->einem bedrohlichen Himmel, [circumstance_group]</li>
     <li>image->einer stickig werdenden Luft, [circumstance_group]</li>
     <li>image->dem schwach leuchtenden Boden, [circumstance_group]</li>
@@ -947,6 +975,7 @@
     <li>desc_sentence->[Quantity_adjphrase] tote [Animals] liegen auf dem Boden.</li>
     <li>desc_sentence->[Quantity_adjphrase] sterbende [Animals] liegen auf dem Boden.</li>
     <li>desc_sentence->[Quantity_adjphrase] [Animals] laufen unsicher herum.</li>
+    <li>PAWN_nameDefDat->{replace: [PAWN_nameIndef]; ">ein "-">dem "; ">eine "-">der "}</li>
   </ToxicFallout.rulePack.rulesStrings>
   
   <!-- EN: volcanic winter -->
@@ -970,8 +999,8 @@
     <li>desc_sentence->[Quantity_adjphrase] [Animal]s mill around uncertainly.</li>
   -->
   <VolcanicWinter.rulePack.rulesStrings>
-    <li>tale_noun->ein vulkanischer Winter bei der [CommunityFemDat] von [PAWN_nameDef] begann</li>
-    <li>tale_noun->ein vulkanischer Winter beim [CommunityNeuDat] von [PAWN_nameDef] begann</li>
+    <li>tale_noun->ein vulkanischer Winter bei der [CommunityFemDat] von [PAWN_nameDefDat] begann</li>
+    <li>tale_noun->ein vulkanischer Winter beim [CommunityNeuDat] von [PAWN_nameDefDat] begann</li>
     <li>image->einem dunklen und kalten Himmel, [circumstance_group]</li>
     <li>image->einer aschegefüllten Luft, [circumstance_group]</li>
     <li>image(p=0.33)->einem frostbedeckten kargen [TerrainFeatureMasDat], [circumstance_group]</li>
@@ -991,6 +1020,7 @@
     <li>desc_sentence->[Quantity_adjphrase] zitternde [Animals] begleiten die Szene.</li>
     <li>desc_sentence->[Quantity_adjphrase] sterbende [Animals] liegen auf dem Boden.</li>
     <li>desc_sentence->[Quantity_adjphrase] [Animals] laufen unsicher herum.</li>
+    <li>PAWN_nameDefDat->{replace: [PAWN_nameIndef]; ">ein "-">dem "; ">eine "-">der "}</li>
   </VolcanicWinter.rulePack.rulesStrings>
   
 </LanguageData>

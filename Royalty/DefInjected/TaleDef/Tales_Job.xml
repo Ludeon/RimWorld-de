@@ -17,14 +17,16 @@
   <AttendedConcert.rulePack.rulesStrings>
     <li>tale_noun->[ATTENDER_nameDef] [ORGANIZER_nameDef_s] Konzert beiwohnte</li>
     <li>tale_noun->[ATTENDER_nameDef] [ORGANIZER_nameDef_s] Auftritt zuhörte</li>
-    <li>image->[ATTENDER_nameFull], wie [ATTENDER_pronoun] ruhig zuhört [circumstance_group]</li>
-    <li>image->[ATTENDER_nameFull], wie [ATTENDER_pronoun] den Auftritt von [ORGANIZER_nameFull] genießt [circumstance_group]</li>
-    <li>image->[ATTENDER_nameFull], wie [ATTENDER_pronoun] zu der Musik wippt [circumstance_group]</li>
-    <li>image->[ATTENDER_nameFull], wie [ATTENDER_pronoun] sich in der Musik verliert [circumstance_group]</li>
+    <li>image->[ATTENDER_nameFullIndefDat], wie [ATTENDER_pronoun] ruhig zuhört [circumstance_group]</li>
+    <li>image->[ATTENDER_nameFullIndefDat], wie [ATTENDER_pronoun] den Auftritt von [ORGANIZER_nameFullIndefDat] genießt [circumstance_group]</li>
+    <li>image->[ATTENDER_nameFullIndefDat], wie [ATTENDER_pronoun] zu der Musik wippt [circumstance_group]</li>
+    <li>image->[ATTENDER_nameFullIndefDat], wie [ATTENDER_pronoun] sich in der Musik verliert [circumstance_group]</li>
     <li>circumstance_phrase->, während [ATTENDER_pronoun] klatscht</li>
     <li>desc_sentence->[Quantity_adjphrase] [PersonJobs] tanzen mit.</li>
     <li>desc_sentence->[Quantity_adjphrase] [Animals] hören aufmerksam zu.</li>
-    <li>ORGANIZER_nameDef_s->{replace: [ORGANIZER_nameDef]s; "s&lt;/color>s"-"s&lt;/color>'"; "ß&lt;/color>s"-"ß&lt;/color>'"; "z&lt;/color>s"-"z&lt;/color>'"; "x&lt;/color>s"-"x&lt;/color>'"; "ce&lt;/color>s"-"ce&lt;/color>'"}</li>
+    <li>ATTENDER_nameFullIndefDat->{replace: [ATTENDER_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
+    <li>ORGANIZER_nameDef_s->{replace: [ORGANIZER_label]s; "s&lt;/color>s"-"s&lt;/color>'"; "ß&lt;/color>s"-"ß&lt;/color>'"; "z&lt;/color>s"-"z&lt;/color>'"; "x&lt;/color>s"-"x&lt;/color>'"; "ce&lt;/color>s"-"ce&lt;/color>'"}</li>
+    <li>ORGANIZER_nameFullIndefDat->{replace: [ORGANIZER_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
   </AttendedConcert.rulePack.rulesStrings>
   
   <!-- EN: held concert -->
@@ -41,15 +43,16 @@
   -->
   <HeldConcert.rulePack.rulesStrings>
     <li>tale_noun->[ORGANIZER_nameDef] ein Konzert abhielt</li>
-    <li>image->[ORGANIZER_nameFull], wie [ORGANIZER_pronoun] [circumstance_group] [ORGANIZER_possessive] berühmtes Lied spielt</li>
-    <li>image->[ORGANIZER_nameFull], wie [ORGANIZER_pronoun] die Menge zum Mitsingen einlädt</li>
-    <li>image->[ORGANIZER_nameFull], wie [ORGANIZER_pronoun] ein inspirierendes Lied spielt</li>
-    <li>image->[ORGANIZER_nameFull], wie [ORGANIZER_pronoun] [circumstance_group] ein kompliziertes Stück aufführt</li>
+    <li>image->[ORGANIZER_nameFullIndefDat], wie [ORGANIZER_pronoun] [circumstance_group] [ORGANIZER_possessive] berühmtes Lied spielt</li>
+    <li>image->[ORGANIZER_nameFullIndefDat], wie [ORGANIZER_pronoun] die Menge zum Mitsingen einlädt</li>
+    <li>image->[ORGANIZER_nameFullIndefDat], wie [ORGANIZER_pronoun] ein inspirierendes Lied spielt</li>
+    <li>image->[ORGANIZER_nameFullIndefDat], wie [ORGANIZER_pronoun] [circumstance_group] ein kompliziertes Stück aufführt</li>
     <li>circumstance_phrase->konzentriert</li>
     <li>circumstance_phrase->euphorisch</li>
     <li>circumstance_phrase->leidenschaftlich</li>
     <li>desc_sentence->[Quantity_adjphrase] [PersonJobs] verfolgen gebannt den Auftritt.</li>
     <li>desc_sentence->[Quantity_adjphrase] [Animals] hören aufmerksam zu.</li>
+    <li>ORGANIZER_nameFullIndefDat->{replace: [ORGANIZER_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
   </HeldConcert.rulePack.rulesStrings>
   
 </LanguageData>

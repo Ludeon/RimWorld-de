@@ -22,20 +22,24 @@
   -->
   <BecameLover.rulePack.rulesStrings>
     <li>tale_noun->[PURSUER_nameDef] und [ACCEPTER_nameDef] ein Liebespaar wurden</li>
-    <li>image->[PURSUER_nameFull], wie [PURSUER_pronoun] [circumstance_group] süße Nichtigkeiten in das Ohr von [ACCEPTER_nameFull] flüstert</li>
-    <li>image->[PURSUER_nameFull], wie [PURSUER_pronoun] [circumstance_group] Händchen mit [ACCEPTER_nameFull] hält</li>
-    <li>image->[PURSUER_nameFull], wie [PURSUER_pronoun] [circumstance_group] mit [ACCEPTER_nameFull] herumlungert</li>
-    <li>image->[PURSUER_nameFull], wie [PURSUER_pronoun] sich [circumstance_group] mit [ACCEPTER_nameFull] leidenschaftlich küsst</li>
+    <li>image->[PURSUER_nameFullIndefDat], wie [PURSUER_pronoun] [circumstance_group] süße Nichtigkeiten in das Ohr von [ACCEPTER_nameFullIndefDat] flüstert</li>
+    <li>image->[PURSUER_nameFullIndefDat], wie [PURSUER_pronoun] [circumstance_group] Händchen mit [ACCEPTER_nameFullIndefDat] hält</li>
+    <li>image->[PURSUER_nameFullIndefDat], wie [PURSUER_pronoun] [circumstance_group] mit [ACCEPTER_nameFullIndefDat] herumlungert</li>
+    <li>image->[PURSUER_nameFullIndefDat], wie [PURSUER_pronoun] sich [circumstance_group] mit [ACCEPTER_nameFullIndefDat] leidenschaftlich küsst</li>
     <li>circumstance_phrase->in einem unrealistisch großem Bett</li>
     <li>circumstance_phrase->unter der Bettdecke</li>
     <li>circumstance_phrase->mit nur wenigen sichtbaren Kleidungsstücken</li>
     <li>circumstance_phrase->schweißgebadet</li>
-    <li>desc_sentence->[PURSUER_nameDef] kuschelt sich an [ACCEPTER_nameDef].</li>
+    <li>desc_sentence->[PURSUER_nameDef] kuschelt sich an [ACCEPTER_nameDefAcc].</li>
     <li>desc_sentence->[PURSUER_nameDef] und [ACCEPTER_nameDef] schauen sich tief in die Augen.</li>
-    <li>desc_sentence->[PURSUER_nameDef] pustet [ACCEPTER_nameDef] leicht ins Ohr.</li>
-    <li>desc_sentence->[PURSUER_nameDef] ist stilistisch mit [ACCEPTER_nameDef] verbunden.</li>
-    <li>desc_sentence->[PURSUER_nameDef] ist quasi ein Spiegelbild von [ACCEPTER_nameDef].</li>
-    <li>desc_sentence->[PURSUER_nameDef] berührt [ACCEPTER_nameDef] forsch.</li>
+    <li>desc_sentence->[PURSUER_nameDef] pustet [ACCEPTER_nameDefDat] leicht ins Ohr.</li>
+    <li>desc_sentence->[PURSUER_nameDef] ist stilistisch mit [ACCEPTER_nameDefDat] verbunden.</li>
+    <li>desc_sentence->[PURSUER_nameDef] ist quasi ein Spiegelbild von [ACCEPTER_nameDefDat].</li>
+    <li>desc_sentence->[PURSUER_nameDef] berührt [ACCEPTER_nameDefAcc] forsch.</li>
+    <li>PURSUER_nameFullIndefDat->{replace: [PURSUER_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
+    <li>ACCEPTER_nameFullIndefDat->{replace: [ACCEPTER_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
+    <li>ACCEPTER_nameDefDat->{replace: [ACCEPTER_nameIndef]; ">ein "-">dem "; ">eine "-">der "}</li>
+    <li>ACCEPTER_nameDefAcc->{replace: [ACCEPTER_nameDef]; ">der "-">den "}</li>
   </BecameLover.rulePack.rulesStrings>
   
   <!-- EN: bond developed -->
@@ -54,19 +58,22 @@
     <li>desc_sentence->[ANIMAL_nameDef] is responding positively.</li>
   -->
   <BondedWithAnimal.rulePack.rulesStrings>
-    <li>tale_noun->eine Bindung zwischen [HUMAN_nameDef] und [ANIMAL_nameDefDat] zustande kam</li>
-    <li>image->[HUMAN_nameFull], wie [HUMAN_pronoun] [circumstance_group] eine Bindung mit [ANIMAL_nameIndefDat] eingeht</li>
-    <li>image->[HUMAN_nameFull], wie [HUMAN_pronoun] [circumstance_group] eine tiefe Bindung mit [ANIMAL_nameIndefDat] eingeht</li>
-    <li>image->[HUMAN_nameFull], wie [HUMAN_pronoun] [circumstance_group] [HUMAN_possessive]e wahre Liebe zu [ANIMAL_nameIndefDat] realisiert</li>
+    <li>tale_noun->eine Bindung zwischen [HUMAN_nameDefDat] und [ANIMAL_nameDefDat] zustande kam</li>
+    <li>image->[HUMAN_nameFullIndefDat], wie [HUMAN_pronoun] [circumstance_group] eine Bindung mit [ANIMAL_nameFullIndefDat] eingeht</li>
+    <li>image->[HUMAN_nameFullIndefDat], wie [HUMAN_pronoun] [circumstance_group] eine tiefe Bindung mit [ANIMAL_nameFullIndefDat] eingeht</li>
+    <li>image->[HUMAN_nameFullIndefDat], wie [HUMAN_pronoun] [circumstance_group] [HUMAN_possessive]e wahre Liebe zu [ANIMAL_nameFullIndefDat] realisiert</li>
     <li>circumstance_phrase->, während andere Tiere zuschauen,</li>
     <li>circumstance_phrase->, während [HUMAN_pronoun] in die Augen des Tieres schaut,</li>
     <li>circumstance_phrase->zufrieden</li>
-    <li>desc_sentence->[ANIMAL_nameDef] kuschelt sich an [HUMAN_nameDef].</li>
+    <li>desc_sentence->[ANIMAL_nameDef] kuschelt sich an [HUMAN_nameDefAcc].</li>
     <li>desc_sentence->[ANIMAL_nameDef] sieht schläfrig und benebelt von der Liebe aus.</li>
     <li>desc_sentence->[ANIMAL_nameDef] richtet sich majestätisch auf.</li>
     <li>desc_sentence->[ANIMAL_nameDef] reagiert positiv.</li>
+    <li>ANIMAL_nameFullIndefDat->{replace: [ANIMAL_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
     <li>ANIMAL_nameDefDat->{replace: [ANIMAL_nameDef]; ">der "-">dem "; ">die "-">der "; ">das "-">dem "}</li>
-    <li>ANIMAL_nameIndefDat->{replace: [ANIMAL_nameDef]; ">der "-">einem "; ">die "-">einer "; ">das "-">einem "}</li>
+    <li>HUMAN_nameFullIndefDat->{replace: [HUMAN_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
+    <li>HUMAN_nameDefDat->{replace: [HUMAN_nameDef]; ">der "-">dem "; ">die "-">der "; ">das "-">dem "}</li>
+    <li>HUMAN_nameDefAcc->{replace: [HUMAN_nameDef]; ">der "-">den "}</li>
   </BondedWithAnimal.rulePack.rulesStrings>
   
   <!-- EN: breakup -->
@@ -89,19 +96,24 @@
   -->
   <Breakup.rulePack.rulesStrings>
     <li>tale_noun->[DUMPER_nameDef] und [REJECTED_nameDef] sich trennten</li>
-    <li>image->[DUMPER_nameFull], wie [DUMPER_pronoun] sich [circumstance_group] mit [REJECTED_nameFull] zusammensetzt, um ein unangenehmes Gespräch zu führen</li>
-    <li>image->[DUMPER_nameFull], wie [DUMPER_pronoun] sich [circumstance_group] von [REJECTED_nameFull] distanziert</li>
-    <li>image->[DUMPER_nameFull], wie [DUMPER_pronoun] [circumstance_group] [REJECTED_nameFull] aus dem Bett wirft</li>
-    <li>image->[DUMPER_nameFull], wie [DUMPER_pronoun] [circumstance_group] eine Umarmung von [REJECTED_nameFull] verweigert</li>
+    <li>image->[DUMPER_nameFullIndefDat], wie [DUMPER_pronoun] sich [circumstance_group] mit [REJECTED_nameFullIndefDat] zusammensetzt, um ein unangenehmes Gespräch zu führen</li>
+    <li>image->[DUMPER_nameFullIndefDat], wie [DUMPER_pronoun] sich [circumstance_group] von [REJECTED_nameFullIndefDat] distanziert</li>
+    <li>image->[DUMPER_nameFullIndefDat], wie [DUMPER_pronoun] [circumstance_group] [REJECTED_nameIndefAcc] aus dem Bett wirft</li>
+    <li>image->[DUMPER_nameFullIndefDat], wie [DUMPER_pronoun] [circumstance_group] eine Umarmung von [REJECTED_nameFullIndefDat] verweigert</li>
     <li>circumstance_phrase->in einem Moment großer Trauer</li>
     <li>circumstance_phrase->, während andere unbehaglich wegsehen,</li>
     <li>circumstance_phrase->, während andere zusehen,</li>
     <li>desc_sentence->[REJECTED_nameDef] weint heftig.</li>
     <li>desc_sentence->[REJECTED_nameDef] schaut gleichzeitig herablassend und weinend.</li>
     <li>desc_sentence->[REJECTED_nameDef] sitzt vor Schock wie versteinert da.</li>
-    <li>desc_sentence->[DUMPER_nameDef] ist stilistisch getrennt von [REJECTED_nameDef].</li>
+    <li>desc_sentence->[DUMPER_nameDef] ist stilistisch getrennt von [REJECTED_nameDefDat].</li>
     <li>desc_sentence->[REJECTED_nameDef] ist in einem wimmernden Haufen auf dem Boden zusammengebrochen.</li>
-    <li>desc_sentence->[REJECTED_nameDef] gestikuliert wütend vor [DUMPER_nameDef].</li>
+    <li>desc_sentence->[REJECTED_nameDef] gestikuliert wütend vor [DUMPER_nameDefDat].</li>
+    <li>DUMPER_nameFullIndefDat->{replace: [DUMPER_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
+    <li>DUMPER_nameDefDat->{replace: [DUMPER_nameIndef]; ">ein "-">dem "; ">eine "-">der "}</li>
+    <li>REJECTED_nameFullIndefDat->{replace: [REJECTED_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
+    <li>REJECTED_nameIndefAcc->{replace: [REJECTED_nameDef]; ">der "-">einen "; ">die "-">eine "; ">das "-">ein "}</li>
+    <li>REJECTED_nameDefDat->{replace: [REJECTED_nameIndef]; ">ein "-">dem "; ">eine "-">der "}</li>
   </Breakup.rulePack.rulesStrings>
   
   <!-- EN: marriage -->
@@ -124,19 +136,24 @@
   -->
   <Marriage.rulePack.rulesStrings>
     <li>tale_noun->[SPOUSE1_nameDef] und [SPOUSE2_nameDef] heirateten</li>
-    <li>image->[SPOUSE1_nameFull], wie [SPOUSE1_pronoun] [SPOUSE2_nameFull] [circumstance_group] heiratet</li>
-    <li>image->[SPOUSE1_nameFull], wie [SPOUSE1_pronoun] [circumstance_group] [SPOUSE1_possessive]en Hochzeitsschwur zu [SPOUSE2_nameFull] spricht</li>
-    <li>image->[SPOUSE1_nameFull], wie [SPOUSE1_pronoun] mit [SPOUSE2_nameFull] [circumstance_group] vor den Traualtar tritt</li>
-    <li>image->[SPOUSE1_nameFull], wie [SPOUSE1_pronoun] [circumstance_group] die Hand von [SPOUSE2_nameFull] hält</li>
+    <li>image->[SPOUSE1_nameFullIndefDat], wie [SPOUSE1_pronoun] [SPOUSE2_nameIndefAcc] [circumstance_group] heiratet</li>
+    <li>image->[SPOUSE1_nameFullIndefDat], wie [SPOUSE1_pronoun] [circumstance_group] [SPOUSE1_possessive]en Hochzeitsschwur zu [SPOUSE2_nameFullIndefDat] spricht</li>
+    <li>image->[SPOUSE1_nameFullIndefDat], wie [SPOUSE1_pronoun] mit [SPOUSE2_nameFullIndefDat] [circumstance_group] vor den Traualtar tritt</li>
+    <li>image->[SPOUSE1_nameFullIndefDat], wie [SPOUSE1_pronoun] [circumstance_group] die Hand von [SPOUSE2_nameFullIndefDat] hält</li>
     <li>circumstance_phrase->in einer würdevollen Zeremonie</li>
     <li>circumstance_phrase->, während beide fröhlich lachen,</li>
     <li>circumstance_phrase->, während andere feierlich zusehen,</li>
-    <li>desc_sentence->[SPOUSE1_nameDef] kuschelt sich an [SPOUSE2_nameDef].</li>
+    <li>desc_sentence->[SPOUSE1_nameDef] kuschelt sich an [SPOUSE2_nameDefAcc].</li>
     <li>desc_sentence->[SPOUSE1_nameDef] und [SPOUSE2_nameDef] schauen sich tief in die Augen.</li>
-    <li>desc_sentence->[SPOUSE1_nameDef] pustet [SPOUSE2_nameDef] leicht ins Ohr.</li>
-    <li>desc_sentence->[SPOUSE1_nameDef] ist stilistisch mit [SPOUSE2_nameDef] verbunden.</li>
-    <li>desc_sentence->[SPOUSE1_nameDef] ist quasi ein Spiegelbild von [SPOUSE2_nameDef].</li>
-    <li>desc_sentence->[SPOUSE1_nameDef] berührt [SPOUSE2_nameDef] forsch.</li>
+    <li>desc_sentence->[SPOUSE1_nameDef] pustet [SPOUSE2_nameDefDat] leicht ins Ohr.</li>
+    <li>desc_sentence->[SPOUSE1_nameDef] ist stilistisch mit [SPOUSE2_nameDefDat] verbunden.</li>
+    <li>desc_sentence->[SPOUSE1_nameDef] ist quasi ein Spiegelbild von [SPOUSE2_nameDefDat].</li>
+    <li>desc_sentence->[SPOUSE1_nameDef] berührt [SPOUSE2_nameDefAcc] forsch.</li>
+    <li>SPOUSE1_nameFullIndefDat->{replace: [SPOUSE1_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
+    <li>SPOUSE2_nameFullIndefDat->{replace: [SPOUSE2_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
+    <li>SPOUSE2_nameIndefAcc->{replace: [SPOUSE2_nameDef]; ">der "-">einen "; ">die "-">eine "; ">das "-">ein "}</li>
+    <li>SPOUSE2_nameDefDat->{replace: [SPOUSE2_nameIndef]; ">ein "-">dem "; ">eine "-">der "}</li>
+    <li>SPOUSE2_nameDefAcc->{replace: [SPOUSE2_nameDef]; ">der "-">den "}</li>
   </Marriage.rulePack.rulesStrings>
   
 </LanguageData>

@@ -43,21 +43,25 @@
   <Downed.rulePack.rulesStrings>
     <li>tale_noun->[KILLER_nameDef] [VICTIM_nameDefAcc] [wound_name_past]</li>
     <li>tale_noun->[KILLER_nameDef] [VICTIM_nameDefAcc] mit [WEAPON_indefiniteDat] [wound_name_past]</li>
-    <li>tale_noun->[VICTIM_nameDef] von [KILLER_nameDefDat] [wound_name_present] wurde</li>
-    <li>tale_noun->[VICTIM_nameDef] von [KILLER_nameDefDat] mit [WEAPON_indefiniteDat] [wound_name_present] wurde</li>
-    <li>tale_noun->[VICTIM_nameDef] [wound_name_present] wurde</li>
-    <li>image->[VICTIM_nameIndefDat], wie [VICTIM_pronoun] von [KILLER_nameIndefDat] [with_weapon_optional] [wound_name_present] wurde</li>
-    <li>image->[KILLER_nameIndefDat], wie [KILLER_pronoun] [VICTIM_nameIndefAcc] [with_weapon_optional] [wound_name_past]</li>
-    <li>image->[KILLER_nameIndefDat], wie [KILLER_pronoun] auf brutale Weise [VICTIM_nameIndefAcc] [with_weapon_optional] [wound_name_past]</li>
-    <li>image->[VICTIM_nameIndefDat], wie [VICTIM_pronoun] [wound_name_present] wurde</li>
+    <li>tale_noun->[VICTIM_nameDef] von [KILLER_nameDefDat] [wound_name_past2] wurde</li>
+    <li>tale_noun->[VICTIM_nameDef] von [KILLER_nameDefDat] mit [WEAPON_indefiniteDat] [wound_name_past2] wurde</li>
+    <li>tale_noun->[VICTIM_nameDef] [wound_name_past2] wurde</li>
+    <li>image->[VICTIM_nameFullIndefDat], wie [VICTIM_pronoun] von [KILLER_nameFullIndefDat] [with_weapon_optional] [wound_name_past2] wird</li>
+    <li>image->[KILLER_nameFullIndefDat], wie [KILLER_pronoun] [VICTIM_nameIndefAcc] [with_weapon_optional] [wound_name_present]</li>
+    <li>image->[KILLER_nameFullIndefDat], wie [KILLER_pronoun] auf brutale Weise [VICTIM_nameIndefAcc] [with_weapon_optional] [wound_name_present]</li>
+    <li>image->[VICTIM_nameFullIndefDat], wie [VICTIM_pronoun] [wound_name_past2] wird</li>
+    <li>wound_name_present->handlungsunfähig macht</li>
+    <li>wound_name_present->lahmlegt</li>
+    <li>wound_name_present->zu Fall bringt</li>
+    <li>wound_name_present->außer Gefecht setzt</li>
     <li>wound_name_past->handlungsunfähig machte</li>
     <li>wound_name_past->lahmlegte</li>
     <li>wound_name_past->zu Fall brachte</li>
     <li>wound_name_past->außer Gefecht setzte</li>
-    <li>wound_name_present->handlungsunfähig gemacht</li>
-    <li>wound_name_present->lahmgelegt</li>
-    <li>wound_name_present->zu Fall gebracht</li>
-    <li>wound_name_present->außer Gefecht gesetzt</li>
+    <li>wound_name_past2->handlungsunfähig gemacht</li>
+    <li>wound_name_past2->lahmgelegt</li>
+    <li>wound_name_past2->zu Fall gebracht</li>
+    <li>wound_name_past2->außer Gefecht gesetzt</li>
     <li>with_weapon_optional->mit [WEAPON_indefiniteDat] [circumstance_group]</li>
     <li>with_weapon_optional->[circumstance_group]</li>
     <li>circumstance_phrase->scheinbar ohne Reue</li>
@@ -79,9 +83,9 @@
     <li>WEAPON_indefiniteDat->[a_dat] [weapon_dat]</li>
     <li>a_dat->{replace: ^[WEAPON_indefinite]; "^ein [WEAPON_label]"-"einem"; "^eine [WEAPON_label]"-"einer"; "^"-""}</li>
     <li>weapon_dat->{replace: [WEAPON_label]; "er "-"en "; "e "-"en "; "es "-"en "}</li>
-    <li>KILLER_nameIndefDat->{replace: [KILLER_nameDef]; ">der "-">einem "; ">die "-">einer "; ">das "-">einem "}</li>
+    <li>KILLER_nameFullIndefDat->{replace: [KILLER_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
     <li>KILLER_nameDefDat->{replace: [KILLER_nameDef]; ">der "-">dem "; ">die "-">der "; ">das "-">dem "}</li>
-    <li>VICTIM_nameIndefDat->{replace: [VICTIM_nameDef]; ">der "-">einem "; ">die "-">einer "; ">das "-">einem "}</li>
+    <li>VICTIM_nameFullIndefDat->{replace: [VICTIM_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
     <li>VICTIM_nameIndefAcc->{replace: [VICTIM_nameDef]; ">der "-">einen "; ">die "-">eine "; ">das "-">ein "}</li>
     <li>VICTIM_nameDefAcc->{replace: [VICTIM_nameDef]; ">der "-">den "}</li>
   </Downed.rulePack.rulesStrings>
@@ -106,23 +110,25 @@
     <li>desc_sentence->The scene takes place inside a newly-built [Community].</li>
   -->
   <Exhausted.rulePack.rulesStrings>
-    <li>tale_noun->[PAWN_nameDef] vor Erschöpfung zusammenbricht</li>
-    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] auf dem Boden zusammenbricht</li>
-    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] auf dem Boden liegt</li>
-    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] im Bett liegt</li>
-    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] auf einem Stuhl zusammenbricht</li>
-    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] einschläft</li>
+    <li>tale_noun->[PAWN_nameDef] vor Erschöpfung zusammenbrach</li>
+    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] auf dem Boden zusammenbricht</li>
+    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] auf dem Boden liegt</li>
+    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] im Bett liegt</li>
+    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] auf einem Stuhl zusammenbricht</li>
+    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] einschläft</li>
     <li>circumstance_phrase->mit geschlossenen Augen</li>
     <li>circumstance_phrase->vollkommen erschöpft</li>
     <li>circumstance_phrase->schweißgebadet</li>
     <li>circumstance_phrase->geschwächt</li>
     <li>desc_sentence->[PAWN_label_s] jüngstes Projekt ist in der Nähe, das [PAWN_pronoun] mit letzter Kraft fertiggestellt hat.</li>
-    <li>desc_sentence->Eine wunderbare Konstruktion umgibt [PAWN_nameDef].</li>
+    <li>desc_sentence->Eine wunderbare Konstruktion umgibt [PAWN_nameDefAcc].</li>
     <li>desc_sentence->[Quantity_adjphrase] [PersonJobs] sind dankbar für [PAWN_label_s] heroischen Einsatz.</li>
     <li>desc_sentence->[Quantity_adjphrase] [PersonJobs] liegen in einem ähnlichen Zustand daneben.</li>
     <li>desc_sentence(p=0.5)->Die Szene spielt in einer frisch gegründeten [CommunityFemDat].</li>
     <li>desc_sentence(p=0.5)->Die Szene spielt in einem frisch gegründeten [CommunityNeuDat].</li>
     <li>PAWN_label_s->{replace: [PAWN_label]s; "s&lt;/color>s"-"s&lt;/color>'"; "ß&lt;/color>s"-"ß&lt;/color>'"; "z&lt;/color>s"-"z&lt;/color>'"; "x&lt;/color>s"-"x&lt;/color>'"; "ce&lt;/color>s"-"ce&lt;/color>'"}</li>
+    <li>PAWN_nameFullIndefDat->{replace: [PAWN_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
+    <li>PAWN_nameDefAcc->{replace: [PAWN_nameDef]; ">der "-">den "}</li>
   </Exhausted.rulePack.rulesStrings>
   
   <!-- EN: gave birth -->
@@ -190,24 +196,26 @@
   <HeatstrokeRevealed.rulePack.rulesStrings>
     <li>tale_noun->[PAWN_nameDef] ein Hitzeschlag bekam</li>
     <li>tale_noun->[PAWN_nameDef] überhitzte</li>
-    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] durch den Sand stapft</li>
-    <li>image(p=0.33)->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] Schutz im Schatten einer [TerrainFeatureFemGen] sucht</li>
-    <li>image(p=0.33)->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] Schutz im Schatten eines [TerrainFeatureMasGen] sucht</li>
-    <li>image(p=0.33)->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] Schutz im Schatten eines [TerrainFeatureNeuGen] sucht</li>
-    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] auf der Suche nach Wasser ist</li>
-    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] auf der Suche nach einem schattigen Platz ist</li>
-    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] durch sonnengetrockneten Staub kriecht</li>
+    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] durch den Sand stapft</li>
+    <li>image(p=0.33)->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] Schutz im Schatten einer [TerrainFeatureFemGen] sucht</li>
+    <li>image(p=0.33)->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] Schutz im Schatten eines [TerrainFeatureMasGen] sucht</li>
+    <li>image(p=0.33)->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] Schutz im Schatten eines [TerrainFeatureNeuGen] sucht</li>
+    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] auf der Suche nach Wasser ist</li>
+    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] auf der Suche nach einem schattigen Platz ist</li>
+    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] durch sonnengetrockneten Staub kriecht</li>
     <li>circumstance_phrase->mit roter, trockener Haut</li>
     <li>circumstance_phrase->schweißgebadet</li>
     <li>circumstance_phrase->mit spröden, trockenen Lippen</li>
     <li>circumstance_phrase->, während [PAWN_pronoun] sich übergibt,</li>
     <li>desc_sentence->[Quantity_adjphrase] skelettierte Kadaver von [AnimalsDat] liegen verstreut im Gebiet herum.</li>
-    <li>desc_sentence->Die Kleidung von [PAWN_nameDef] ist zerfetzt und zerrissen.</li>
+    <li>desc_sentence->Die Kleidung von [PAWN_nameDefDat] ist zerfetzt und zerrissen.</li>
     <li>desc_sentence->Eine gleißende Sonne strahlt am Horizont.</li>
     <li>desc_sentence->Die Szene spielt in einer glühend heißen Wüste.</li>
     <li>desc_sentence->Die Szene scheint sich im Inneren abzuspielen, neben einer Heizung.</li>
     <li>desc_sentence->[Quantity_adjphrase] unbewegliche [Animals] begleiten die Szene.</li>
     <li>desc_sentence->[Quantity_adjphrase] sterbende [Animals] liegen auf dem Boden.</li>
+    <li>PAWN_nameFullIndefDat->{replace: [PAWN_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
+    <li>PAWN_nameDefDat->{replace: [PAWN_nameIndef]; ">ein "-">dem "; ">eine "-">der "}</li>
   </HeatstrokeRevealed.rulePack.rulesStrings>
   
   <!-- EN: hypothermia revealed -->
@@ -233,26 +241,28 @@
   -->
   <HypothermiaRevealed.rulePack.rulesStrings>
     <li>tale_noun->[PAWN_nameDef] eine Hypothermie bekam</li>
-    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] durch den Schnee stapft</li>
-    <li>image(p=0.33)->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] Schutz bei einer [TerrainFeatureFemDat] sucht</li>
-    <li>image(p=0.33)->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] Schutz bei einem [TerrainFeatureMasDat] sucht</li>
-    <li>image(p=0.33)->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] Schutz bei einem [TerrainFeatureNeuDat] sucht</li>
-    <li>image(p=0.33)->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] auf der Suche nach einer warmen [ApparelFemDat] ist</li>
-    <li>image(p=0.33)->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] auf der Suche nach einem warmen [ApparelMasDat] ist</li>
-    <li>image(p=0.33)->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] auf der Suche nach einem warmen [ApparelNeuDat] ist</li>
-    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] neben einem Feuer hockt</li>
-    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] versucht, ein Feuer zu machen</li>
+    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] durch den Schnee stapft</li>
+    <li>image(p=0.33)->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] Schutz bei einer [TerrainFeatureFemDat] sucht</li>
+    <li>image(p=0.33)->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] Schutz bei einem [TerrainFeatureMasDat] sucht</li>
+    <li>image(p=0.33)->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] Schutz bei einem [TerrainFeatureNeuDat] sucht</li>
+    <li>image(p=0.33)->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] auf der Suche nach einer warmen [ApparelFemDat] ist</li>
+    <li>image(p=0.33)->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] auf der Suche nach einem warmen [ApparelMasDat] ist</li>
+    <li>image(p=0.33)->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] auf der Suche nach einem warmen [ApparelNeuDat] ist</li>
+    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] neben einem Feuer hockt</li>
+    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] versucht, ein Feuer zu machen</li>
     <li>circumstance_phrase->, während das Gesicht langsam blau anläuft,</li>
     <li>circumstance_phrase->bibbernd</li>
     <li>circumstance_phrase->fröstelnd</li>
     <li>circumstance_phrase->, während sich Wolken beim Ausatmen bilden,</li>
     <li>desc_sentence->[Quantity_adjphrase] gefrorene Kadaver von [AnimalsDat] liegen verstreut im Gebiet herum.</li>
-    <li>desc_sentence->Die Kleidung von [PAWN_nameDef] ist zerfetzt und zerrissen.</li>
+    <li>desc_sentence->Die Kleidung von [PAWN_nameDefDat] ist zerfetzt und zerrissen.</li>
     <li>desc_sentence->Ein kaltblauer Mond strahlt am Horizont.</li>
     <li>desc_sentence->Die Szene spielt in einem schneebedeckten [TreeType]nwald.</li>
     <li>desc_sentence->Die Szene scheint sich im Inneren eines Kühlraums abzuspielen.</li>
     <li>desc_sentence->[Quantity_adjphrase] zitternde [Animals] begleiten die Szene.</li>
     <li>desc_sentence->[Quantity_adjphrase] sterbende [Animals] liegen auf dem Boden.</li>
+    <li>PAWN_nameFullIndefDat->{replace: [PAWN_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
+    <li>PAWN_nameDefDat->{replace: [PAWN_nameIndef]; ">ein "-">dem "; ">eine "-">der "}</li>
   </HypothermiaRevealed.rulePack.rulesStrings>
   
   <!-- EN: illness revealed -->
@@ -280,12 +290,12 @@
   -->
   <IllnessRevealed.rulePack.rulesStrings>
     <li>tale_noun->[PAWN_nameDef] von [ILLNESS_label] heimgesucht wurde</li>
-    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] durch ein Feld taumelt</li>
-    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] auf dem Boden liegt</li>
-    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] im Bett liegt</li>
-    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] in einem Intensivbett liegt</li>
-    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] auf einem Stuhl zusammenbricht</li>
-    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] neben einem Feuer hockt</li>
+    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] durch ein Feld taumelt</li>
+    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] auf dem Boden liegt</li>
+    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] im Bett liegt</li>
+    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] in einem Intensivbett liegt</li>
+    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] auf einem Stuhl zusammenbricht</li>
+    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] neben einem Feuer hockt</li>
     <li>circumstance_phrase->schweißgebadet</li>
     <li>circumstance_phrase->zitternd</li>
     <li>circumstance_phrase->schweißgebadet und zitternd</li>
@@ -298,6 +308,7 @@
     <li>desc_sentence->[Quantity_adjphrase] [PersonJobs] sind mit derselben Krankheit befallen.</li>
     <li>desc_sentence->Die Szene spielt in einem [TreeType]nwald.</li>
     <li>desc_sentence->[Quantity_adjphrase] sterbende [Animals] liegen auf dem Boden.</li>
+    <li>PAWN_nameFullIndefDat->{replace: [PAWN_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
   </IllnessRevealed.rulePack.rulesStrings>
   
   <!-- EN: killed -->
@@ -336,8 +347,8 @@
   <KilledCapacity.rulePack.rulesStrings>
     <li>tale_noun->[KILLER_nameDef] [VICTIM_nameDefAcc] [wound_name_past]</li>
     <li>tale_noun->[KILLER_nameDef] [VICTIM_nameDefAcc] mit [WEAPON_indefiniteDat] [wound_name_past]</li>
-    <li>image->[KILLER_nameIndefDat], wie [KILLER_pronoun] die Körperfunktion '[CAPACITY_label]' von [VICTIM_nameIndefDat] [with_weapon_optional] [cap_removal]</li>
-    <li>image->[KILLER_nameIndefDat], wie [KILLER_pronoun] [VICTIM_nameIndefAcc] [with_weapon_optional] [wound_name_present], indem [KILLER_pronoun] [VICTIM_possessive]e Körperfunktion '[CAPACITY_label]' [cap_removal]</li>
+    <li>image->[KILLER_nameFullIndefDat], wie [KILLER_pronoun] die Körperfunktion '[CAPACITY_label]' von [VICTIM_nameFullIndefDat] [with_weapon_optional] [cap_removal]</li>
+    <li>image->[KILLER_nameFullIndefDat], wie [KILLER_pronoun] [VICTIM_nameIndefAcc] [with_weapon_optional] [wound_name_present], indem [KILLER_pronoun] [VICTIM_possessive]e Körperfunktion '[CAPACITY_label]' [cap_removal]</li>
     <li>cap_removal->zerstört</li>
     <li>cap_removal->beseitigt</li>
     <li>cap_removal->beendet</li>
@@ -366,8 +377,8 @@
     <li>WEAPON_indefiniteDat->[a_dat] [weapon_dat]</li>
     <li>a_dat->{replace: ^[WEAPON_indefinite]; "^ein [WEAPON_label]"-"einem"; "^eine [WEAPON_label]"-"einer"; "^"-""}</li>
     <li>weapon_dat->{replace: [WEAPON_label]; "er "-"en "; "e "-"en "; "es "-"en "}</li>
-    <li>KILLER_nameIndefDat->{replace: [KILLER_nameDef]; ">der "-">einem "; ">die "-">einer "; ">das "-">einem "}</li>
-    <li>VICTIM_nameIndefDat->{replace: [VICTIM_nameDef]; ">der "-">einem "; ">die "-">einer "; ">das "-">einem "}</li>
+    <li>KILLER_nameFullIndefDat->{replace: [KILLER_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
+    <li>VICTIM_nameFullIndefDat->{replace: [VICTIM_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
     <li>VICTIM_nameIndefAcc->{replace: [VICTIM_nameDef]; ">der "-">einen "; ">die "-">eine "; ">das "-">ein "}</li>
     <li>VICTIM_nameDefAcc->{replace: [VICTIM_nameDef]; ">der "-">den "}</li>
   </KilledCapacity.rulePack.rulesStrings>
@@ -414,9 +425,9 @@
     <li>tale_noun->[KILLER_nameDef] [VICTIM_nameDefAcc] aus extremer Entfernung mit [WEAPON_indefiniteDat] [wound_name_past]</li>
     <li>tale_noun->[VICTIM_nameDef] von [KILLER_nameDefDat] aus großer Entfernung [wound_name_past_2] wurde</li>
     <li>tale_noun->[VICTIM_nameDef] von [KILLER_nameDefDat] aus großer Entfernung mit [WEAPON_indefiniteDat] [wound_name_past_2] wurde</li>
-    <li>image->[KILLER_nameIndefDat], wie [KILLER_pronoun] [with_weapon_optional] auf [VICTIM_nameIndefAcc] zielt</li>
-    <li>image->[KILLER_nameIndefDat], wie [KILLER_pronoun] [VICTIM_nameIndefAcc] [with_weapon_optional] [wound_name_present]</li>
-    <li>image->[KILLER_nameIndefDat], wie [KILLER_pronoun] eiskalt [VICTIM_nameIndefAcc] [with_weapon_optional] [wound_name_present]</li>
+    <li>image->[KILLER_nameFullIndefDat], wie [KILLER_pronoun] [with_weapon_optional] auf [VICTIM_nameIndefAcc] zielt</li>
+    <li>image->[KILLER_nameFullIndefDat], wie [KILLER_pronoun] [VICTIM_nameIndefAcc] [with_weapon_optional] [wound_name_present]</li>
+    <li>image->[KILLER_nameFullIndefDat], wie [KILLER_pronoun] eiskalt [VICTIM_nameIndefAcc] [with_weapon_optional] [wound_name_present]</li>
     <li>wound_name_past->ermordete</li>
     <li>wound_name_past->abschlachtete</li>
     <li>wound_name_past->tötete</li>
@@ -450,7 +461,7 @@
     <li>WEAPON_indefiniteDat->[a_dat] [weapon_dat]</li>
     <li>a_dat->{replace: ^[WEAPON_indefinite]; "^ein [WEAPON_label]"-"einem"; "^eine [WEAPON_label]"-"einer"; "^"-""}</li>
     <li>weapon_dat->{replace: [WEAPON_label]; "er "-"en "; "e "-"en "; "es "-"en "}</li>
-    <li>KILLER_nameIndefDat->{replace: [KILLER_nameDef]; ">der "-">einem "; ">die "-">einer "; ">das "-">einem "}</li>
+    <li>KILLER_nameFullIndefDat->{replace: [KILLER_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
     <li>KILLER_nameDefDat->{replace: [KILLER_nameDef]; ">der "-">dem "; ">die "-">der "; ">das "-">dem "}</li>
     <li>VICTIM_nameIndefAcc->{replace: [VICTIM_nameDef]; ">der "-">einen "; ">die "-">eine "; ">das "-">ein "}</li>
     <li>VICTIM_nameDefAcc->{replace: [VICTIM_nameDef]; ">der "-">den "}</li>
@@ -501,10 +512,10 @@
     <li>tale_noun->[KILLER_nameDef] [VICTIM_nameDefAcc] mit [WEAPON_indefiniteDat] [wound_name_past]</li>
     <li>tale_noun->[VICTIM_nameDef] von [KILLER_nameDefDat] [wound_name_past_2] wurde</li>
     <li>tale_noun->[VICTIM_nameDef] von [KILLER_nameDefDat] mit [WEAPON_indefiniteDat] [wound_name_past_2] wurde</li>
-    <li>image->[VICTIM_nameIndefDat], wie [VICTIM_pronoun] von [KILLER_nameIndefDat] [with_weapon_optional] [wound_name_past_2] wird</li>
-    <li>image->[KILLER_nameIndefDat], wie [KILLER_pronoun] [VICTIM_nameIndefAcc] [with_weapon_optional] [wound_name_present]</li>
-    <li>image->[KILLER_nameIndefDat], wie [KILLER_pronoun] auf brutale Weise [VICTIM_nameIndefAcc] [with_weapon_optional] [wound_name_present]</li>
-    <li>image->[VICTIM_nameIndefDat], wie [VICTIM_pronoun] [with_weapon_optional] [wound_name_past_2] wird</li>
+    <li>image->[VICTIM_nameFullIndefDat], wie [VICTIM_pronoun] von [KILLER_nameFullIndefDat] [with_weapon_optional] [wound_name_past_2] wird</li>
+    <li>image->[KILLER_nameFullIndefDat], wie [KILLER_pronoun] [VICTIM_nameIndefAcc] [with_weapon_optional] [wound_name_present]</li>
+    <li>image->[KILLER_nameFullIndefDat], wie [KILLER_pronoun] auf brutale Weise [VICTIM_nameIndefAcc] [with_weapon_optional] [wound_name_present]</li>
+    <li>image->[VICTIM_nameFullIndefDat], wie [VICTIM_pronoun] [with_weapon_optional] [wound_name_past_2] wird</li>
     <li>wound_name_past->abschlachtete</li>
     <li>wound_name_past->besiegte</li>
     <li>wound_name_past->überwältigte</li>
@@ -541,10 +552,10 @@
     <li>WEAPON_indefiniteDat->[a_dat] [weapon_dat]</li>
     <li>a_dat->{replace: ^[WEAPON_indefinite]; "^ein [WEAPON_label]"-"einem"; "^eine [WEAPON_label]"-"einer"; "^"-""}</li>
     <li>weapon_dat->{replace: [WEAPON_label]; "er "-"en "; "e "-"en "; "es "-"en "}</li>
-    <li>KILLER_nameIndefDat->{replace: [KILLER_nameDef]; ">der "-">einem "; ">die "-">einer "; ">das "-">einem "}</li>
+    <li>KILLER_nameFullIndefDat->{replace: [KILLER_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
     <li>KILLER_nameDefDat->{replace: [KILLER_nameDef]; ">der "-">dem "; ">die "-">der "; ">das "-">dem "}</li>
     <li>KILLER_nameDefAcc->{replace: [KILLER_nameDef]; ">der "-">den "}</li>
-    <li>VICTIM_nameIndefDat->{replace: [VICTIM_nameDef]; ">der "-">einem "; ">die "-">einer "; ">das "-">einem "}</li>
+    <li>VICTIM_nameFullIndefDat->{replace: [VICTIM_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
     <li>VICTIM_nameIndefAcc->{replace: [VICTIM_nameDef]; ">der "-">einen "; ">die "-">eine "; ">das "-">ein "}</li>
     <li>VICTIM_nameDefAcc->{replace: [VICTIM_nameDef]; ">der "-">den "}</li>
   </KilledMajorThreat.rulePack.rulesStrings>
@@ -594,10 +605,10 @@
     <li>tale_noun->[KILLER_nameDef] [VICTIM_nameDefAcc] mit [WEAPON_indefiniteDat] im Nahkampf [wound_name_past]</li>
     <li>tale_noun->[VICTIM_nameDef] von [KILLER_nameDefDat] im Nahkampf [wound_name_past_2] wurde</li>
     <li>tale_noun->[VICTIM_nameDef] von [KILLER_nameDefDat] mit [WEAPON_indefiniteDat] im Nahkampf [wound_name_past_2] wurde</li>
-    <li>image->[VICTIM_nameIndefDat], wie [VICTIM_pronoun] von [KILLER_nameIndefDat] [with_weapon_optional] [wound_name_past_2] wird</li>
-    <li>image->[KILLER_nameIndefDat], wie [KILLER_pronoun] [VICTIM_nameIndefAcc] [with_weapon_optional] [wound_name_present]</li>
-    <li>image->[KILLER_nameIndefDat], wie [KILLER_pronoun] auf brutale Weise [VICTIM_nameIndefAcc] [with_weapon_optional] [wound_name_present]</li>
-    <li>image->[VICTIM_nameIndefDat], wie [VICTIM_pronoun] [with_weapon_optional] [wound_name_past_2] wird</li>
+    <li>image->[VICTIM_nameFullIndefDat], wie [VICTIM_pronoun] von [KILLER_nameFullIndefDat] [with_weapon_optional] [wound_name_past_2] wird</li>
+    <li>image->[KILLER_nameFullIndefDat], wie [KILLER_pronoun] [VICTIM_nameIndefAcc] [with_weapon_optional] [wound_name_present]</li>
+    <li>image->[KILLER_nameFullIndefDat], wie [KILLER_pronoun] auf brutale Weise [VICTIM_nameIndefAcc] [with_weapon_optional] [wound_name_present]</li>
+    <li>image->[VICTIM_nameFullIndefDat], wie [VICTIM_pronoun] [with_weapon_optional] [wound_name_past_2] wird</li>
     <li>wound_name_past->ermordete</li>
     <li>wound_name_past->abschlachtete</li>
     <li>wound_name_past->tötete</li>
@@ -633,9 +644,9 @@
     <li>WEAPON_indefiniteDat->[a_dat] [weapon_dat]</li>
     <li>a_dat->{replace: ^[WEAPON_indefinite]; "^ein [WEAPON_label]"-"einem"; "^eine [WEAPON_label]"-"einer"; "^"-""}</li>
     <li>weapon_dat->{replace: [WEAPON_label]; "er "-"en "; "e "-"en "; "es "-"en "}</li>
-    <li>KILLER_nameIndefDat->{replace: [KILLER_nameDef]; ">der "-">einem "; ">die "-">einer "; ">das "-">einem "}</li>
+    <li>KILLER_nameFullIndefDat->{replace: [KILLER_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
     <li>KILLER_nameDefDat->{replace: [KILLER_nameDef]; ">der "-">dem "; ">die "-">der "; ">das "-">dem "}</li>
-    <li>VICTIM_nameIndefDat->{replace: [VICTIM_nameDef]; ">der "-">einem "; ">die "-">einer "; ">das "-">einem "}</li>
+    <li>VICTIM_nameFullIndefDat->{replace: [VICTIM_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
     <li>VICTIM_nameIndefAcc->{replace: [VICTIM_nameDef]; ">der "-">einen "; ">die "-">eine "; ">das "-">ein "}</li>
     <li>VICTIM_nameDefAcc->{replace: [VICTIM_nameDef]; ">der "-">den "}</li>
   </KilledMelee.rulePack.rulesStrings>
@@ -667,10 +678,10 @@
   <KilledMortar.rulePack.rulesStrings>
     <li>tale_noun->[KILLER_nameDef] [VICTIM_nameDefAcc] mit einem Mörser tötete</li>
     <li>tale_noun->[VICTIM_nameDef] von [KILLER_nameDefDat] zu Tode bombardiert wurde</li>
-    <li>image->[KILLER_nameIndefDat], wie [KILLER_pronoun] vorsichtig ein Feuerrohr justiert, [circumstance_group]</li>
-    <li>image->[KILLER_nameIndefDat], wie [KILLER_pronoun] in die Ferne schaut, [circumstance_group]</li>
-    <li>image->[KILLER_nameIndefDat], wie [KILLER_pronoun] Berechnungen auf dem Papier durchführt, [circumstance_group]</li>
-    <li>image->[KILLER_nameIndefDat], wie [KILLER_pronoun] die Windrichtung prüft, [circumstance_group]</li>
+    <li>image->[KILLER_nameFullIndefDat], wie [KILLER_pronoun] vorsichtig ein Feuerrohr justiert, [circumstance_group]</li>
+    <li>image->[KILLER_nameFullIndefDat], wie [KILLER_pronoun] in die Ferne schaut, [circumstance_group]</li>
+    <li>image->[KILLER_nameFullIndefDat], wie [KILLER_pronoun] Berechnungen auf dem Papier durchführt, [circumstance_group]</li>
+    <li>image->[KILLER_nameFullIndefDat], wie [KILLER_pronoun] die Windrichtung prüft, [circumstance_group]</li>
     <li>circumstance_phrase->während [VICTIM_nameFull] in einer massiven Explosion untergeht</li>
     <li>circumstance_phrase->während sich eine Granate bogenförmig Richtung [VICTIM_label] zubewegt</li>
     <li>circumstance_phrase->während [VICTIM_nameFull] ahnungslos herumläuft</li>
@@ -685,7 +696,7 @@
     <li>desc_sentence->[KILLER_nameDef] scheint Reue zu empfinden.</li>
     <li>desc_sentence->[KILLER_nameDef] scheint zufrieden mit der Situation zu sein.</li>
     <li>desc_sentence->[KILLER_nameDef] freut sich über den Sieg.</li>
-    <li>KILLER_nameIndefDat->{replace: [KILLER_nameDef]; ">der "-">einem "; ">die "-">einer "; ">das "-">einem "}</li>
+    <li>KILLER_nameFullIndefDat->{replace: [KILLER_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
     <li>KILLER_nameDefDat->{replace: [KILLER_nameDef]; ">der "-">dem "; ">die "-">der "; ">das "-">dem "}</li>
     <li>VICTIM_nameDefAcc->{replace: [VICTIM_nameDef]; ">der "-">den "}</li>
   </KilledMortar.rulePack.rulesStrings>
@@ -717,23 +728,25 @@
   <ToxicityRevealed.rulePack.rulesStrings>
     <li>tale_noun->der Körper von [PAWN_nameDef] vergiftet wurde</li>
     <li>tale_noun->[PAWN_nameDef] durch Toxine vergiftet wurde</li>
-    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] durch ein Feld taumelt</li>
-    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] auf dem Boden liegt</li>
-    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] im Bett liegt</li>
-    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] sich [circumstance_group] neben einem Feuer hockt</li>
-    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] [circumstance_group] versucht, ein Feuer zu entzünden</li>
-    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] gedankenverloren und [circumstance_group] [PAWN_possessive]e Kleidung vom Leib reißt</li>
+    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] durch ein Feld taumelt</li>
+    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] auf dem Boden liegt</li>
+    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] im Bett liegt</li>
+    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] sich [circumstance_group] neben einem Feuer hockt</li>
+    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] versucht, ein Feuer zu entzünden</li>
+    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] gedankenverloren und [circumstance_group] [PAWN_possessive]e Kleidung vom Leib reißt</li>
     <li>circumstance_phrase->schweißgebadet</li>
     <li>circumstance_phrase->zitternd</li>
     <li>circumstance_phrase->mit spröden, trockenen Lippen</li>
     <li>circumstance_phrase->beim Erbrechen</li>
     <li>circumstance_phrase->mit einem sichtbaren Ausschlag</li>
     <li>desc_sentence->[Quantity_adjphrase] verdrehte Kadaver von [AnimalsDat] liegen verstreut im Gebiet herum.</li>
-    <li>desc_sentence->Die Kleidung von [PAWN_nameDef] fällt auseinander.</li>
+    <li>desc_sentence->Die Kleidung von [PAWN_nameDefDat] fällt auseinander.</li>
     <li>desc_sentence->Der Himmel ist trüb und [Color].</li>
     <li>desc_sentence->[Quantity_adjphrase] spiralförmige [Color]e [TerrainFeatures] umgeben die Szene.</li>
     <li>desc_sentence->Die Szene spielt in einem verwinkelten [TreeType]nwald.</li>
     <li>desc_sentence->[Quantity_adjphrase] sterbende [Animals] liegen auf dem Boden.</li>
+    <li>PAWN_nameFullIndefDat->{replace: [PAWN_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
+    <li>PAWN_nameDefDat->{replace: [PAWN_nameIndef]; ">ein "-">dem "; ">eine "-">der "}</li>
   </ToxicityRevealed.rulePack.rulesStrings>
   
   <!-- EN: wounded -->
@@ -783,21 +796,25 @@
   <Wounded.rulePack.rulesStrings>
     <li>tale_noun->[KILLER_nameDef] [VICTIM_nameDefAcc] [wound_name_past]</li>
     <li>tale_noun->[KILLER_nameDef] [VICTIM_nameDefAcc] mit [WEAPON_indefiniteDat] [wound_name_past]</li>
-    <li>tale_noun->[VICTIM_nameDef] von [KILLER_nameDefDat] [wound_name_present] wurde</li>
-    <li>tale_noun->[VICTIM_nameDef] von [KILLER_nameDefDat] mit [WEAPON_indefiniteDat] [wound_name_present] wurde</li>
-    <li>tale_noun->[VICTIM_nameDef] [wound_name_present] wurde</li>
-    <li>image->[VICTIM_nameIndefDat], wie [VICTIM_pronoun] von [KILLER_nameIndefDat] [with_weapon_optional] [wound_name_present] wurde</li>
-    <li>image->[KILLER_nameIndefDat], wie [KILLER_pronoun] [VICTIM_nameIndefAcc] [with_weapon_optional] [wound_name_past]</li>
-    <li>image->[KILLER_nameIndefDat], wie [KILLER_pronoun] auf brutale Weise [VICTIM_nameIndefAcc] [with_weapon_optional] [wound_name_past]</li>
-    <li>image->[VICTIM_nameIndefDat], wie [VICTIM_pronoun] [wound_name_present] wurde</li>
+    <li>tale_noun->[VICTIM_nameDef] von [KILLER_nameDefDat] [wound_name_past2] wurde</li>
+    <li>tale_noun->[VICTIM_nameDef] von [KILLER_nameDefDat] mit [WEAPON_indefiniteDat] [wound_name_past2] wurde</li>
+    <li>tale_noun->[VICTIM_nameDef] [wound_name_past2] wurde</li>
+    <li>image->[VICTIM_nameFullIndefDat], wie [VICTIM_pronoun] von [KILLER_nameFullIndefDat] [with_weapon_optional] [wound_name_past2] wird</li>
+    <li>image->[KILLER_nameFullIndefDat], wie [KILLER_pronoun] [VICTIM_nameIndefAcc] [with_weapon_optional] [wound_name_present]</li>
+    <li>image->[KILLER_nameFullIndefDat], wie [KILLER_pronoun] auf brutale Weise [VICTIM_nameIndefAcc] [with_weapon_optional] [wound_name_present]</li>
+    <li>image->[VICTIM_nameFullIndefDat], wie [VICTIM_pronoun] [wound_name_past2] wird</li>
     <li>wound_name_past->verwundete</li>
     <li>wound_name_past->verletzte</li>
     <li>wound_name_past->verletzte</li>
     <li>wound_name_past->angriff</li>
+    <li>wound_name_past2->verwundet</li>
+    <li>wound_name_past2->verletzt</li>
+    <li>wound_name_past2->verletzt</li>
+    <li>wound_name_past2->angegriffen</li>
     <li>wound_name_present->verwundet</li>
     <li>wound_name_present->verletzt</li>
     <li>wound_name_present->verletzt</li>
-    <li>wound_name_present->angegriffen</li>
+    <li>wound_name_present->angreift</li>
     <li>with_weapon_optional->mit [WEAPON_indefiniteDat] [circumstance_group]</li>
     <li>with_weapon_optional->[circumstance_group]</li>
     <li>circumstance_phrase->scheinbar ohne Reue</li>
@@ -812,7 +829,7 @@
     <li>desc_sentence->Eine Blutlache bildet sich um den verletzten Körper von [VICTIM_nameDefDat].</li>
     <li>desc_sentence->[VICTIM_nameDef] ist mit [GoreDat] bedeckt.</li>
     <li>desc_sentence->[VICTIM_nameDef] sieht [AdjectiveAngsty] aus.</li>
-    <li>desc_sentence->[VICTIM_nameDef] windet sich vor Schmerz.</li>
+    <li>desc_sentence->[VICTIM_nameDef] windet sich vor Schmerzen.</li>
     <li>desc_sentence->[VICTIM_nameDef] erleidet höllische Qualen.</li>
     <li>desc_sentence->[KILLER_nameDef] fletscht die Zähne.</li>
     <li>desc_sentence->[KILLER_nameDef] scheint zufrieden zu sein.</li>
@@ -822,9 +839,9 @@
     <li>WEAPON_indefiniteDat->[a_dat] [weapon_dat]</li>
     <li>a_dat->{replace: ^[WEAPON_indefinite]; "^ein [WEAPON_label]"-"einem"; "^eine [WEAPON_label]"-"einer"; "^"-""}</li>
     <li>weapon_dat->{replace: [WEAPON_label]; "er "-"en "; "e "-"en "; "es "-"en "}</li>
-    <li>KILLER_nameIndefDat->{replace: [KILLER_nameDef]; ">der "-">einem "; ">die "-">einer "; ">das "-">einem "}</li>
+    <li>KILLER_nameFullIndefDat->{replace: [KILLER_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
     <li>KILLER_nameDefDat->{replace: [KILLER_nameDef]; ">der "-">dem "; ">die "-">der "; ">das "-">dem "}</li>
-    <li>VICTIM_nameIndefDat->{replace: [VICTIM_nameDef]; ">der "-">einem "; ">die "-">einer "; ">das "-">einem "}</li>
+    <li>VICTIM_nameFullIndefDat->{replace: [VICTIM_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
     <li>VICTIM_nameIndefAcc->{replace: [VICTIM_nameDef]; ">der "-">einen "; ">die "-">eine "; ">das "-">ein "}</li>
     <li>VICTIM_nameDefDat->{replace: [VICTIM_nameDef]; ">der "-">dem "; ">die "-">der "; ">das "-">dem "}</li>
     <li>VICTIM_nameDefAcc->{replace: [VICTIM_nameDef]; ">der "-">den "}</li>
