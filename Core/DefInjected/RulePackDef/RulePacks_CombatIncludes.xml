@@ -143,15 +143,16 @@
     <li>weapon_dat->{replace: [WEAPON_label]; "er "-"en "; "e "-"en "; "es "-"en "}</li>
     <li>tool_dat->{replace: [TOOL_label]; "er "-"en "; "e "-"en "; "es "-"en "}</li>
     <!-- Akkusativ -->
-    <li>implement_acc(IMPLEMENTOWNER_type==weapon,p=1)->[his_acc] [weapon_acc]</li>
-    <li>implement_acc(IMPLEMENTOWNER_type==weapon,p=0.5)->[the_acc] [weapon_acc]</li>
-    <li>implement_acc(IMPLEMENTOWNER_type==bodypart,p=2)->[INITIATOR_possessive]{TOOL_gender ? en : e : } [tool_acc]</li>
-    <li>implement_acc(IMPLEMENTOWNER_type==hediff,p=1)->[his_acc] [weapon_acc]</li>
-    <li>implement_acc(IMPLEMENTOWNER_type==hediff,p=1)->[INITIATOR_possessive]{TOOL_gender ? en : e : } [tool_acc]</li>
+    <li>implement_acc(IMPLEMENTOWNER_type==weapon,p=1)->[his_acc] [weapon_acc_pos]</li>
+    <li>implement_acc(IMPLEMENTOWNER_type==weapon,p=0.5)->[the_acc] [weapon_acc_def]</li>
+    <li>implement_acc(IMPLEMENTOWNER_type==bodypart,p=2)->[INITIATOR_possessive]{TOOL_gender ? en : e : } [tool_acc_pos]</li>
+    <li>implement_acc(IMPLEMENTOWNER_type==hediff,p=1)->[his_acc] [weapon_acc_pos]</li>
+    <li>implement_acc(IMPLEMENTOWNER_type==hediff,p=1)->[INITIATOR_possessive]{TOOL_gender ? en : e : } [tool_acc_pos]</li>
     <li>his_acc->[INITIATOR_possessive]{replace: ^[WEAPON_definite]; "^der [WEAPON_label]"-"en"; "^die [WEAPON_label]"-"e"; "^das [WEAPON_label]"-""; "^"-""}</li>
     <li>the_acc->{replace: ^[WEAPON_definite]; "^der [WEAPON_label]"-"den"; "^die [WEAPON_label]"-"die"; "^das [WEAPON_label]"-"das"; "^"-""}</li>
-    <li>weapon_acc->{replace: [WEAPON_label]; "er "-"en "; "e "-"en "; "es "-"en "}</li>
-    <li>tool_acc->{replace: [TOOL_label]; "er "-"en "; "e "-"en "; "es "-"en "}</li>
+    <li>weapon_acc_pos->{replace: [WEAPON_label]; "er "-"en "}</li>
+    <li>weapon_acc_def->{replace: [WEAPON_label]; "er "-"en "; "es "-"e "}</li>
+    <li>tool_acc_pos->{replace: [TOOL_label]; "er "-"en "}</li>
     <li>adjective_bodypart->hart</li>
     <li>adjective_bodypart->stark</li>
     <li>adjective_bodypart->kraftvoll</li>
@@ -257,7 +258,7 @@
     <li>skillAdv(initiator_flesh==Mechanoid)->directly</li>
   -->
   <Combat_SkillIncludes.rulePack.rulesStrings>
-    <li>skillDescMelee->{INITIATOR_gender ? der : die : das} [his_acc] [weapon_acc] [skillAdv] [wielding]</li>
+    <li>skillDescMelee->{INITIATOR_gender ? der : die : das} [his_acc] [weapon_acc_pos] [skillAdv] [wielding]</li>
     <li>skillDescMelee->{INITIATOR_gender ? der : die : das} [implement_acc] [skillAdv] benutzte</li>
     <li>wielding(p=4)->führte</li>
     <li>wielding(p=3)->benutzte</li>
