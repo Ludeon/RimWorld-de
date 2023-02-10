@@ -57,7 +57,7 @@
   <!-- EN: Add bill -->
   <AddBill>Aufgabe hinzufügen</AddBill>
   <!-- EN: The recipe {0} requires the skills below. None of your colonists have these skills, so nobody will do this bill. -->
-  <RecipeRequiresSkills>Die Aufgabe '{0}' benötigt die unten aufgeführten Fertigkeiten. Keiner deiner Kolonisten hat diese Fertigkeiten, also wird niemand diese Aufgabe durchführen.</RecipeRequiresSkills>
+  <RecipeRequiresSkills>Die Aufgabe '{0}' benötigt die unten genannten Fertigkeiten. Keiner deiner Kolonisten hat diese Fertigkeiten, also kann niemand diese Aufgabe erledigen.</RecipeRequiresSkills>
   <!-- EN: Min skill -->
   <MinimumSkill>Min. Fertigkeit</MinimumSkill>
   <!-- EN: SUSPENDED -->
@@ -95,15 +95,15 @@
   <!-- EN: The faction goodwill you will get from the prisoner's faction if you release them. This is affected by the prisoner's identity, health, and mental condition. -->
   <PrisonerReleaseRelationGainsDesc>Die Rufpunkte, die du von der Fraktion des Gefangenen bekommst, wenn du ihn freilässt. Dieser Wert ist abhängig von der Identität, der Gesundheit und dem Geisteszustand des Gefangenen.</PrisonerReleaseRelationGainsDesc>
   <!-- EN: Prison break interval -->
-  <PrisonBreakMTBDays>Gefängnisausbruchsintervall</PrisonBreakMTBDays>
+  <PrisonBreakMTBDays>Ausbruchsintervall</PrisonBreakMTBDays>
   <!-- EN: The average days awake between prison breaks. This is affected by mood, mobility, the number of prison doors, and time since the last prison break.\n\nNote that this does not include time spent asleep. -->
-  <PrisonBreakMTBDaysDescription>Die durchschnittliche Anzahl von Tagen, die zwischen den Versuchen eines Gefängnisausbruchs liegen (während der Wachphase). Dieser Wert ist abhängig von der Stimmung, der Mobilität, der Anzahl der Gefängnistüren und der Zeit seit dem letzten Gefängnisausbruch.\n\nBeachte, dass hierbei die Schlafzeit nicht mitgezählt wird.</PrisonBreakMTBDaysDescription>
+  <PrisonBreakMTBDaysDescription>Die durchschnittliche Anzahl von Tagen zwischen zwei Ausbruchsversuchen. Es wird nur die Wachzeit berücksichtigt. Dieser Wert ist abhängig von Stimmung, Mobilität, Anzahl der Gefängnistüren und Zeit seit dem letzten Ausbruch.</PrisonBreakMTBDaysDescription>
   <!-- EN: Never -->
   <Never>Nie</Never>
   <!-- EN: Not while asleep -->
   <NotWhileAsleep>Nicht beim Schlafen</NotWhileAsleep>
   <!-- EN: Breaking out now -->
-  <CurrentlyPrisonBreaking>Brechen jetzt aus</CurrentlyPrisonBreaking>
+  <CurrentlyPrisonBreaking>Bricht gerade aus</CurrentlyPrisonBreaking>
   <!-- EN: Multiplier for door count -->
   <FactorForDoorCount>Multiplikator für Anzahl der Türen</FactorForDoorCount>
   <!-- EN: Multiplier for movement -->
@@ -351,11 +351,11 @@
   <!-- EN: Dismiss this quest and move it to the historical tab.\n\nThe quest can be un-dismissed at any time. Its effects and expiry times will proceed as normal. You won't recieve notifications about dismissed quests. -->
   <DismissQuest>Verwirf diese Quest und verschiebe sie in den Historisch-Tab.\n\nDie Quest kann jederzeit wieder aufgenommen werden. Ihre Auswirkungen und Ablaufzeiten verlaufen normal. Du wirst keine Benachrichtigungen über verworfene Quests erhalten.</DismissQuest>
   <!-- EN: Un-dismiss this quest.\n\nThe quest will be returned to the available or active tab, and notifications will be re-enabled. -->
-  <UnDismissQuest>Nimm diese Quest wieder auf.\n\nDie Quest wird in den Verfügbar- oder Aktiv-Tab zurückgeschoben, und die Benachrichtigungen werden wieder aktiviert.</UnDismissQuest>
+  <UnDismissQuest>Nimm diese Quest wieder auf.\n\nDie Quest wird zurück in den Verfügbar- oder Aktiv-Tab verschoben, und die Benachrichtigungen werden wieder aktiviert.</UnDismissQuest>
   <!-- EN: This quest is here because it was dismissed.\n\nYou can un-dismiss it until it expires. -->
   <QuestDismissed>Diese Quest ist hier, weil sie verworfen wurde.\n\nDu kannst sie bis zum Ablauf der Frist wieder aufnehmen.</QuestDismissed>
   <!-- EN: Delete this quest and remove it from the quest list forever. -->
-  <DeleteQuest>Lösche diese Quest und entferne sie unwiderruflich von der Quest-Liste.</DeleteQuest>
+  <DeleteQuest>Lösche diese Quest und entferne sie unwiderruflich aus der Quest-Liste.</DeleteQuest>
 
   <!-- Animal pen food tab -->
   <!-- EN: enclose the pen marker to calculate food information -->
@@ -392,7 +392,7 @@
   <!-- EN: The average nutrition provided by edible plants in this pen. -->
   <PenFoodTab_NaturalNutritionGrowthRateDescription>Der durchschnittliche Nährwert aller essbaren Pflanzen in diesem Gehege.</PenFoodTab_NaturalNutritionGrowthRateDescription>
   <!-- EN: The nutrition needed by animals currently in this pen.\n\nTo get more food, expand the pen to cover more wild plant growth, or deliver stockpiled food like haygrass to the pen. -->
-  <PenFoodTab_NutritionConsumptionDescription>Der Nährwert, den die Tiere derzeit in diesem Gehege benötigen.\n\nWenn du weiteres Futter benötigst, kannst du das Gehege vergrößern, um mehr Wildpflanzen wachsen zu lassen, oder lagerfähiges Futter wie Heugras zum Gehege bringen.</PenFoodTab_NutritionConsumptionDescription>
+  <PenFoodTab_NutritionConsumptionDescription>Der Nährwert, den die Tiere derzeit in diesem Gehege benötigen.\n\nWenn du mehr Futter benötigst, vergrößere das Gehege, um mehr Wildpflanzen wachsen zu lassen, oder bringe lagerfähiges Futter wie Heugras in das Gehege.</PenFoodTab_NutritionConsumptionDescription>
   <!-- EN: Note: Plant growth rate varies due to seasons, weather, theft by wild animals, and other factors. These calculations are approximations. -->
   <PenFoodTab_NaturalNutritionGrowthRateSeasonal>Hinweis: Die Wachstumsrate der Pflanzen variiert je nach Jahreszeit, Wetter, Wildverbiss und andere Faktoren. Die berechneten Werte sind nur Schätzwerte.</PenFoodTab_NaturalNutritionGrowthRateSeasonal>
 
@@ -413,7 +413,7 @@
   <!-- EN: Auto-cut plants in pen -->
   <PenAutoCut_EnabledCheckbox>Pflanzen automatisch entfernen</PenAutoCut_EnabledCheckbox>
   <!-- EN: Automatically mark certain inedible plants to be cut. This makes room for edible plants to grow, which your animals can then eat.\n\nThis auto-designation happens periodically and only applies to certain plants.\n\nThis only works when the pen is enclosed. -->
-  <PenAutoCut_EnabledCheckboxTip>Markiere automatisch ungenießbare Pflanzen, die entfernt werden sollen. Dadurch wird Platz für den Wachstum von essbaren Pflanzen geschaffen, die deine Tiere dann fressen können.\n\nDiese automatische Markierung erfolgt in regelmäßigen Abständen und gilt nur für bestimmte Pflanzen.\n\nDies funktioniert nur, wenn das Gehege umzäunt ist.</PenAutoCut_EnabledCheckboxTip>
+  <PenAutoCut_EnabledCheckboxTip>Ungenießbare Pflanzen automatisch zum Entfernen markieren. Dadurch wird Platz für das Wachstum essbarer Pflanzen geschaffen, die deine Tiere dann fressen können.\n\nDiese automatische Markierung erfolgt in regelmäßigen Abständen und gilt nur für bestimmte Pflanzen.\n\nDas funktioniert nur, wenn das Gehege umzäunt ist.</PenAutoCut_EnabledCheckboxTip>
 
   <!-- EN: Pen is not enclosed -->
   <AutocutUnenclosedPen>Gehege ist nicht umzäunt</AutocutUnenclosedPen>
