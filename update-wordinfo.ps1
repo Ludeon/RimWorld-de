@@ -10,16 +10,17 @@ $main = New-Item "Core/WordInfo/Gender" -ItemType "Directory" -Force
 
 # Paths of the XML files in which the words should be searched
 $paths = @(
-"*\DefInjected\PawnKindDef"
-"*\DefInjected\FactionDef"
-"*\DefInjected\ThingDef"
-"*\DefInjected\WorldObjectDef"
-"*\DefInjected\GameConditionDef"
 "*\DefInjected\BackstoryDef"
-"*\DefInjected\TerrainDef"
 "*\DefInjected\BodyDef"
 "*\DefInjected\BodyPartDef"
+"*\DefInjected\ChemicalDef"
+"*\DefInjected\FactionDef"
+"*\DefInjected\GameConditionDef"
+"*\DefInjected\PawnKindDef"
 "*\DefInjected\RoyalTitleDef"
+"*\DefInjected\TerrainDef"
+"*\DefInjected\ThingDef"
+"*\DefInjected\WorldObjectDef"
 )
 
 # Search words in the XML files

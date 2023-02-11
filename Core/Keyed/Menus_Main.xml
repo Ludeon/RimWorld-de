@@ -63,7 +63,7 @@
 
   <!-- Main menu translations info window -->
   <!-- EN: All translations of RimWorld are fan-made. This fan-made translation was created by the following excellent volunteers:\n\n{0} -->
-  <TranslationThanks>Alle Übersetzungen von RimWorld sind von Fans erstellt worden. An dieser Übersetzung haben sich folgende Freiwillige beteiligt:\n\n{0}\n\nDie aktuellste Übersetzung findest du unter github.com/Ludeon/RimWorld-de</TranslationThanks>
+  <TranslationThanks>Alle Übersetzungen von RimWorld wurden von Fans erstellt. An dieser Übersetzung haben sich folgende Freiwillige beteiligt:\n\n{0}\n\nDie aktuellste Übersetzung findest du auf github.com/Ludeon/RimWorld-de</TranslationThanks>
   <!-- EN: You can contribute too. Click below to learn more (opens web browser). -->
   <TranslationHowToContribute>Auch du kannst mitmachen. Klicke auf die Schaltfläche unten, um mehr zu erfahren (öffnet den Webbrowser).</TranslationHowToContribute>
   <!-- EN: Learn more -->
@@ -71,7 +71,7 @@
 
   <!-- Main menu dev build -->
   <!-- EN: Warning: This is an unstable development build. This means we are running design experiments and doing technical development.\n\nSome things will be temporarily unbalanced on purpose. This is a classic game design method where we deliberately go too far with a balance change in order to better understand balance boundaries. We can then use that information to decide on the final balance points.\n\nThere will also be bugs, including game-breaking ones. Save compatibility may break any time.\n\nIf you're okay with all of this, thanks for testing! If you don't want to be subject to our experiments, please play the latest stable version. -->
-  <DevBuildWarning>Warnung: Dies ist eine instabile Entwickler-Version. Das bedeutet, dass wir Experimente am Design durchführen und technische Entwicklungen vornehmen.\n\nEinige Dinge werden mit Absicht zeitweise unausgeglichen sein. Das ist eine klassische Methode der Spieleentwicklung, bei der wir absichtlich die Grenzen überschreiten, um die Balance besser zu verstehen. Diese Informationen können wir dann nutzen, um die endgültigen Einstellungen festzulegen.\n\nEs wird auch Bugs geben, einschließlich solcher, die das Spiel unspielbar machen. Die Kompatibilität von Speicherständen kann jederzeit verloren gehen.\n\nWenn du mit all dem einverstanden bist, danke fürs Testen! Wenn du nicht Teil unserer Experimente sein willst, dann spiele bitte mit der stabilen Version.</DevBuildWarning>
+  <DevBuildWarning>Warnung: Dies ist eine instabile Entwicklerversion. Das bedeutet, dass wir mit dem Design experimentieren und technische Entwicklungen vornehmen.\n\nEinige Dinge werden mit Absicht zeitweise unausgeglichen sein. Das ist eine klassische Methode der Spieleentwicklung, bei der wir absichtlich die Grenzen überschreiten, um die Balance besser zu verstehen. Mit diesen Informationen können wir dann die endgültigen Einstellungen festlegen.\n\nEs wird auch Bugs geben, einschließlich solcher, die das Spiel unspielbar machen. Die Kompatibilität von Speicherständen kann jederzeit verloren gehen.\n\nWenn du mit all dem einverstanden bist, danke fürs Testen! Wenn du nicht an unseren Experimenten teilnehmen möchtest, spiel bitte mit der stabilen Version.</DevBuildWarning>
 
   <!-- Create/review world -->
   <!-- EN: Review world -->
@@ -113,7 +113,7 @@
   <!-- EN: Randomize seed -->
   <RandomizeSeed>Zufälliger Seed</RandomizeSeed>
   <!-- EN: The planet is always the same diameter, but since it's far larger than needed for play, we don't generate the whole surface because it can take a very long time. This is the percentage of the surface that you want generated. -->
-  <PlanetCoverageTip>Der Planet hat immer dieselbe Größe. Da er aber sehr viel größer ist, als man zum Spielen braucht, generieren wir normalerweise nicht die ganze Oberfläche, da das sehr lange dauern kann. Der hier eingestellte Prozentsatz gibt an, wie viel der Oberfläche des Planeten generiert wird.</PlanetCoverageTip>
+  <PlanetCoverageTip>Der Planet ist immer gleich groß. Da er aber sehr viel größer ist, als man zum Spielen braucht, generieren wir normalerweise nicht die ganze Oberfläche, da das sehr lange dauern kann. Der hier eingestellte Prozentsatz gibt an, wie viel von der Oberfläche des Planeten generiert wird.</PlanetCoverageTip>
   <!-- EN: Factions -->
   <WorldFactionsTab>Fraktionen</WorldFactionsTab>
 
@@ -131,9 +131,9 @@
   <!-- EN: This is the latest version. -->
   <BuildUpToDate>Diese Version ist aktuell.</BuildUpToDate>
   <!-- EN: Error getting version info: {0} -->
-  <ErrorGettingVersionInfo>Beim Versuch, die Version zu überprüfen, ist ein Fehler aufgetreten: {0}</ErrorGettingVersionInfo>
+  <ErrorGettingVersionInfo>Fehler beim Abrufen der Versionsinfo: {0}</ErrorGettingVersionInfo>
   <!-- EN: Loading version info... -->
-  <LoadingVersionInfo>Lade Versions-Info...</LoadingVersionInfo>
+  <LoadingVersionInfo>Lädt Versionsinfo...</LoadingVersionInfo>
 
   <!-- World generator -->
   <!-- EN: Generate world -->
@@ -271,7 +271,7 @@
   <!-- EN: Mod needs properly formatted supported version information in About.xml. Like this: <supportedVersions><li>{0}</li></supportedVersions> - <targetVersion> is deprecated. Check log for further information. -->
   <MessageModNeedsWellFormattedTargetVersion>Mod benötigt korrekt formatierte unterstützte Versionsinformationen in About.xml. Das targetVersion-Tag ist veraltet. Verwende stattdessen das supportedVersions-Tag in Verbindung mit li-Tags. Beispiele dafür findest du in fast jeder aktuellen Mod oder im Internet. Weitere Informationen findest du im Log.</MessageModNeedsWellFormattedTargetVersion>
   <!-- EN: Mod needs a unique, properly formatted packageId in About.xml. It must must meet following requirements:\n\n  - Alphanumeric characters and dot only.\n  - No spaces.\n  - At least one dot.\n  - No repeated dots in a row, or starting or ending with a dot.\n  - 60 characters or less.\n  - Cannot contain word "Ludeon".\n\nFor example:\n<packageId>AuthorName.ModName</packageId>\n<packageId>AuthorName.ModName.Specific</packageId> -->
-  <MessageModNeedsWellFormattedPackageId>Mod benötigt eine eindeutige, korrekt formatierte Paket-ID in About.xml. Die ID muss folgende Anforderungen erfüllen:\n\n  - Nur alphanumerische Zeichen und Punkt.\n  - Keine Leerzeichen.\n  - Mindestens ein Punkt.\n  - Keine sich wiederholenden, direkt angrenzenden Punkte oder kein Punkt am Anfang oder Ende.\n  - 60 Zeichen oder weniger.\n  - Darf das Wort "Ludeon" nicht enthalten.\n\nZum Beispiel:\nAutorName.ModName\nAutorName.ModName.Spezifisch</MessageModNeedsWellFormattedPackageId>
+  <MessageModNeedsWellFormattedPackageId>Mod benötigt eine eindeutige, korrekt formatierte Paket-ID in About.xml. Die ID muss folgende Anforderungen erfüllen:\n\n  - Nur alphanumerische Zeichen und Punkt.\n  - Keine Leerzeichen.\n  - Mindestens ein Punkt.\n  - Keine sich wiederholenden, direkt angrenzenden Punkte oder kein Punkt am Anfang oder Ende.\n  - 60 Zeichen oder weniger.\n  - Darf nicht das Wort "Ludeon" enthalten.\n\nZum Beispiel:\nAutorName.ModName\nAutorName.ModName.Spezifisch</MessageModNeedsWellFormattedPackageId>
   <!-- EN: This mod has issues in LoadFolders.xml, that you need to resolve before uploading: -->
   <ModHadLoadFolderIssues>Diese Mod hat Probleme in LoadFolders.xml, die vor dem Hochladen behoben werden müssen:</ModHadLoadFolderIssues>
   <!-- EN: Folder {0} specified for version {1} doesn't exist. -->
@@ -321,7 +321,7 @@
   <!-- EN: Are you sure you want to upload this to the Steam Workshop?\n\nYou must agree to the Steam Workshop terms of service. Find the full terms here:\n\nhttp://steamcommunity.com/sharedfiles/workshoplegalagreement -->
   <ConfirmSteamWorkshopUpload>Bist du dir sicher, dass du das in den Steam Workshop hochladen willst?\n\nDu musst die Geschäftsbedingungen des Steam Workshops akzeptieren. Die Geschäftsbedingungen findest du hier:\n\nhttp://steamcommunity.com/sharedfiles/workshoplegalagreement</ConfirmSteamWorkshopUpload>
   <!-- EN: Obviously you should only upload content that you created yourself.\n\nDid you create this content yourself? -->
-  <ConfirmContentAuthor>Du solltest nur etwas hochladen, das du auch erstellt hast.\n\nHast du den Inhalt selbst erstellt?</ConfirmContentAuthor>
+  <ConfirmContentAuthor>Du solltest nur Inhalte hochladen, die du selbst erstellt hast.\n\nHast du die Inhalte selbst erstellt?</ConfirmContentAuthor>
   <!-- EN: Incompatible -->
   <Incompatible>Inkompatibel</Incompatible>
   <!-- EN: Tag as translation -->
@@ -337,7 +337,7 @@
   <!-- EN: Choose AI Storyteller -->
   <ChooseAIStoryteller>Erzähler auswählen</ChooseAIStoryteller>
   <!-- EN: The AI Storyteller creates events like pirate raids, resource drops, or animal attacks. Their choices will affect the story of your colony. You can change these settings at any time. -->
-  <HowStorytellersWork>Ein Erzähler generiert Ereignisse, wie z. B. Piratenüberfälle, Rohstoffabwürfe oder Tierangriffe. Seine Entscheidungen werden die Geschichte deiner Kolonie beeinflussen. Du kannst diese Einstellungen jederzeit ändern.</HowStorytellersWork>
+  <HowStorytellersWork>Ein Erzähler generiert Ereignisse, wie z. B. Piratenüberfälle, Rohstoffabwürfe oder Tierangriffe. Seine Entscheidungen beeinflussen die Geschichte deiner Kolonie. Du kannst diese Einstellungen jederzeit ändern.</HowStorytellersWork>
   <!-- EN: Please choose a difficulty setting. -->
   <MustChooseDifficulty>Bitte wähle einen Schwierigkeitsgrad aus.</MustChooseDifficulty>
   <!-- EN: Difficulty -->
@@ -349,9 +349,9 @@
   <!-- EN: Please choose commitment mode or reload anytime mode. -->
   <MustChoosePermadeath>Bitte wähle den Hardcore-Modus oder den Laden-Erlaubt-Modus aus.</MustChoosePermadeath>
   <!-- EN: You can save and load the game at any time.\n\nThis is a good choice if you're still learning the game, if it fits your personal playstyle, if you're using mods that may break your game, or if you intend to self-enforce commitment mode. -->
-  <ReloadAnytimeModeInfo>Du kannst das Spiel jederzeit speichern und laden.\n\nDieser Modus ist in folgenden Fällen empfehlenswert:\n\n- Du bist noch dabei, das Spiel zu lernen\n- Es passt zu deinem Spielstil\n- Du verwendest unsichere Mods\n- Du kannst dir den Hardcore-Modus selbst auferlegen</ReloadAnytimeModeInfo>
+  <ReloadAnytimeModeInfo>Du kannst das Spiel jederzeit speichern und laden.\n\nDieser Modus ist in folgenden Fällen empfehlenswert:\n\n- Du lernst das Spiel gerade erst kennen\n- Er passt zu deinem Spielstil\n- Du verwendest unsichere Mods\n- Du kannst dir den Hardcore-Modus selbst auferlegen</ReloadAnytimeModeInfo>
   <!-- EN: You can only save when quitting the game.\n\nSince RimWorld is a story generator, even losing all but one person is not the end of the game - it's part of the story. The game is designed to allow recovery after losses.\n\nPlaying out these terrible situations makes a story with both tragedy and triumph. It's the way RimWorld was designed to be played.\n\nThere's a reason Luke Skywalker didn't quit and reload when his family got killed - loss and recovery is dramatic. -->
-  <PermadeathModeInfo>Du kannst nur speichern, wenn du das Spiel beendest.\n\nDa RimWorld ein Geschichten-Generator ist, wird man dazu animiert, sich von Verlusten zu erholen. Selbst wenn man bis auf eine Person alle verliert, ist das nicht das Ende des Spiels - Es ist Teil der Geschichte.\n\nDiese schrecklichen Situationen zu meistern, macht die Geschichte aus. Eine Geschichte der Tragödie und des Triumphs. RimWorld wurde für diese Art zu spielen entworfen.\n\nEs gibt einen Grund, warum Luke Skywalker nicht aufgegeben und neu geladen hat, als seine Familie getötet wurde - Verlust und Wiederaufbau ist dramatisch!</PermadeathModeInfo>
+  <PermadeathModeInfo>Du kannst nur speichern, wenn du das Spiel beendest.\n\nRimWorld ist ein Geschichtengenerator. Selbst wenn man alle bis auf eine Person verliert, ist das nicht das Ende des Spiels - es ist Teil der Geschichte.\n\nSich solchen Situationen zu stellen, macht die Geschichte aus. Eine Geschichte von Tragik und Triumph. RimWorld wurde für diese Spielweise entwickelt.\n\nEs hat schon seinen Grund, warum Luke Skywalker nach dem Tod seiner Familie nicht aufgegeben und neu geladen hat - Verlust und Erholung sind Teil des Dramas!</PermadeathModeInfo>
   <!-- EN: Storyteller and playstyle can be changed any time. -->
   <CanChangeStorytellerSettingsDuringPlay>Erzähler und Spielstil können jederzeit geändert werden.</CanChangeStorytellerSettingsDuringPlay>
 
@@ -374,11 +374,11 @@
   <!-- EN: Quest threats -->
   <Difficulty_AllowViolentQuests_Label>Quest-Bedrohungen</Difficulty_AllowViolentQuests_Label>
   <!-- EN: Allow quests to present with violent threats and challenges. If this is disabled, quests will be modified to be non-violent. -->
-  <Difficulty_AllowViolentQuests_Info>Erlaube Quests mit gewaltsamen Bedrohungen und Herausforderungen. Wenn diese Option deaktiviert ist, werden die Quests immer gewaltfrei sein.</Difficulty_AllowViolentQuests_Info>
+  <Difficulty_AllowViolentQuests_Info>Erlaube Quests mit gewaltsamen Bedrohungen und Herausforderungen. Bei Deaktivierung werden die Quests immer gewaltfrei sein.</Difficulty_AllowViolentQuests_Info>
   <!-- EN: Intro threats -->
   <Difficulty_AllowIntroThreats_Label>Intro-Bedrohungen</Difficulty_AllowIntroThreats_Label>
   <!-- EN: Enable the fixed intro threats that appear near game start. -->
-  <Difficulty_AllowIntroThreats_Info>Aktiviere die fixen Intro-Bedrohungen, die unmittelbar nach Spielbeginn erscheinen.</Difficulty_AllowIntroThreats_Info>
+  <Difficulty_AllowIntroThreats_Info>Aktiviere die fixen Intro-Bedrohungen, die beim Start eines Spiels erscheinen.</Difficulty_AllowIntroThreats_Info>
   <!-- EN: Predators hunt humans -->
   <Difficulty_PredatorsHuntHumanlikes_Label>Raubtiere jagen Menschen</Difficulty_PredatorsHuntHumanlikes_Label>
   <!-- EN: Allow wild predators to hunt humans. -->
@@ -397,15 +397,15 @@
   <!-- EN: Harvest yield -->
   <Difficulty_CropYieldFactor_Label>Ernteertrag</Difficulty_CropYieldFactor_Label>
   <!-- EN: Adjust the amount of materials produced when harvesting plants and crops. This includes harvesting plants and cutting trees. -->
-  <Difficulty_CropYieldFactor_Info>Passe die Menge der Materialien an, die bei der Ernte von Pflanzen und Feldfrüchten oder beim Fällen von Bäumen anfallen.</Difficulty_CropYieldFactor_Info>
+  <Difficulty_CropYieldFactor_Info>Passe die Menge an Ressourcen an, die bei der Ernte von Pflanzen und beim Fällen von Bäumen anfällt.</Difficulty_CropYieldFactor_Info>
   <!-- EN: Mining yield -->
   <Difficulty_MineYieldFactor_Label>Gesteinsabbauertrag</Difficulty_MineYieldFactor_Label>
   <!-- EN: Adjust the amount of materials produced when mining. -->
-  <Difficulty_MineYieldFactor_Info>Passe die Menge der Materialien an, die beim Gesteinsabbau anfallen.</Difficulty_MineYieldFactor_Info>
+  <Difficulty_MineYieldFactor_Info>Passe die Menge an Ressourcen an, die beim Gesteinsabbau anfällt.</Difficulty_MineYieldFactor_Info>
   <!-- EN: Butchering yield -->
   <Difficulty_ButcherYieldFactor_Label>Schlachtertrag</Difficulty_ButcherYieldFactor_Label>
   <!-- EN: Adjust the amount of materials produced when butchering. This includes meat, leather, and yield from shredding mechanoids. -->
-  <Difficulty_ButcherYieldFactor_Info>Passe die Menge der Materialien an, die beim Schlachten von Kreaturen oder Zerlegen von Mechanoiden anfallen. Mögliche Erträge sind zum Beispiel Fleisch und Leder.</Difficulty_ButcherYieldFactor_Info>
+  <Difficulty_ButcherYieldFactor_Info>Passe die Menge an Ressourcen an, die beim Schlachten von Kreaturen oder Zerlegen von Mechanoiden anfällt. Mögliche Erträge sind zum Beispiel Fleisch und Leder.</Difficulty_ButcherYieldFactor_Info>
   <!-- EN: Research speed -->
   <Difficulty_ResearchSpeedFactor_Label>Forschungsgeschwindigkeit</Difficulty_ResearchSpeedFactor_Label>
   <!-- EN: Adjust the speed of research. -->
@@ -413,11 +413,11 @@
   <!-- EN: Quest rewards -->
   <Difficulty_QuestRewardValueFactor_Label>Questbelohnungen</Difficulty_QuestRewardValueFactor_Label>
   <!-- EN: Adjust the value of rewards given for quests.\n\nNote: Quest reward value is also automatically scaled to compensate for threat scale. If you adjust this setting, you'll be adding an additional multiplier. -->
-  <Difficulty_QuestRewardValueFactor_Info>Passe den Reichtum der Belohnungen an, die für Quests angeboten werden.\n\nHinweis: Dieser Wert wird zudem automatisch skaliert, um den Bedrohungsausmaß auszugleichen. Wenn du diese Einstellung anpasst, wirst du einen zusätzlichen Multiplikator hinzufügen.</Difficulty_QuestRewardValueFactor_Info>
+  <Difficulty_QuestRewardValueFactor_Info>Passe den Reichtum der Belohnungen an, die für Quests angeboten werden.\n\nHinweis: Dieser Wert wird zudem automatisch skaliert, um das Bedrohungsausmaß zu kompensieren. Wenn du diese Einstellung anpasst, fügst du einen zusätzlichen Multiplikator hinzu.</Difficulty_QuestRewardValueFactor_Info>
   <!-- EN: Raid loot -->
   <Difficulty_RaidLootPointsFactor_Label>Raider-Inventar</Difficulty_RaidLootPointsFactor_Label>
   <!-- EN: Adjust the value of loot carried by raiders.\n\nNote: Raid loot value is also automatically scaled to compensate for threat scale. If you adjust this setting, you'll be adding an additional multiplier. -->
-  <Difficulty_RaidLootPointsFactor_Info>Passe den Reichtum der Gegenstände an, die von Raidern mitgeführt werden.\n\nHinweis: Dieser Wert wird zudem automatisch skaliert, um den Bedrohungsausmaß auszugleichen. Wenn du diese Einstellung anpasst, wirst du einen zusätzlichen Multiplikator hinzufügen.</Difficulty_RaidLootPointsFactor_Info>
+  <Difficulty_RaidLootPointsFactor_Info>Passe den Reichtum der Gegenstände an, die ein Raider mit sich führt.\n\nHinweis: Dieser Wert wird zudem automatisch skaliert, um das Bedrohungsausmaß zu kompensieren. Wenn du diese Einstellung anpasst, fügst du einen zusätzlichen Multiplikator hinzu.</Difficulty_RaidLootPointsFactor_Info>
   <!-- EN: Turret rearm cost -->
   <Difficulty_MaintenanceCostFactor_Label>Neubewaffnungskosten für Geschütztürme</Difficulty_MaintenanceCostFactor_Label>
   <!-- EN: Adjust the cost of rearming turrets. -->
@@ -448,11 +448,11 @@
   <!-- EN: Friendly fire -->
   <Difficulty_FriendlyFireChanceFactor_Label>Friendly Fire</Difficulty_FriendlyFireChanceFactor_Label>
   <!-- EN: Adjust the chance of friendly fire.\n\nNote: This setting only affects direct shots which were going to hit their target. It does not prevent damage from explosions, or from shots which were going to miss their target. -->
-  <Difficulty_FriendlyFireChanceFactor_Info>Passe die Chance an, dass eine Person von einem Verbündeten unbeabsichtigt getroffen wird.\n\nHinweis: Diese Einstellung wirkt sich nur auf direkte Schüsse aus, die ihr Ziel treffen sollten. Sie verhindert keinen Schaden durch Explosionen oder durch Schüsse, die ihr Ziel verfehlen würden.</Difficulty_FriendlyFireChanceFactor_Info>
+  <Difficulty_FriendlyFireChanceFactor_Info>Passe die Chance an, dass eine Person versehentlich von einem Verbündeten getroffen wird.\n\nHinweis: Diese Einstellung wirkt sich nur auf direkte Schüsse aus, die ihr Ziel treffen sollten. Sie verhindert keinen Schaden durch Explosionen oder durch Schüsse, die ihr Ziel verfehlen würden.</Difficulty_FriendlyFireChanceFactor_Info>
   <!-- EN: Colonist instant kills -->
   <Difficulty_AllowInstantKillChance_Label>Sofortiger Tod eines Kolonisten</Difficulty_AllowInstantKillChance_Label>
   <!-- EN: Adjust the chance that a colonist can die instantly due to an attack. The incoming damage is adjusted so it will down the colonist instead.\n\nThis only prevents some kinds of instant kills - colonists can still be downed and bleed to death, die from fire, explosions, disease, and so on. -->
-  <Difficulty_AllowInstantKillChance_Info>Passe die Chance an, dass ein Kolonist aufgrund eines Angriffs sofort sterben kann. Der eingehende Schaden wird so angepasst, dass er stattdessen den Kolonisten zu Fall bringt.\n\nDies verhindert nicht alle Arten sofortigen Todes - Kolonisten können immer noch zu Fall gebracht werden und verbluten, und durch Feuer, Explosionen, Krankheiten usw. sterben.</Difficulty_AllowInstantKillChance_Info>
+  <Difficulty_AllowInstantKillChance_Info>Passe die Chance an, dass ein Kolonist durch einen Angriff sofort stirbt. Der eingehende Schaden wird so angepasst, dass er den Kolonisten stattdessen zu Fall bringt.\n\nDies verhindert nicht alle Arten von sofortigem Tod - Kolonisten können immer noch zu Fall gebracht werden und verbluten, und durch Feuer, Explosionen, Krankheiten usw. sterben.</Difficulty_AllowInstantKillChance_Info>
   <!-- EN: Infection chance -->
   <Difficulty_PlayerPawnInfectionChanceFactor_Label>Infektionschance</Difficulty_PlayerPawnInfectionChanceFactor_Label>
   <!-- EN: Adjust the chance that a wound will become infected. -->
@@ -464,7 +464,7 @@
   <!-- EN: Insect spawning rate -->
   <Difficulty_EnemyReproductionRateFactor_Label>Spawnrate von Insekten</Difficulty_EnemyReproductionRateFactor_Label>
   <!-- EN: Adjust the rate at which existing insect hives spawn new insects. Lower values means more time between spawn events.\n\nThis does not affect whether infestations can occur - only the speed at which active hives produce insects. -->
-  <Difficulty_EnemyReproductionRateFactor_Info>Passe die Rate an, wie häufig vorhandene Insektenkolonien neue Insekten hervorbringen. Je niedriger der Wert, desto länger dauert es, bis neue Insekten gespawnt werden.\n\nDies hat keinen Einfluss darauf, ob Insektenplagen auftreten können - nur auf die Geschwindigkeit, mit der aktive Insektenkolonien Insekten produzieren.</Difficulty_EnemyReproductionRateFactor_Info>
+  <Difficulty_EnemyReproductionRateFactor_Info>Passe die Häufigkeit an, mit der bestehende Insektenkolonien neue Insekten hervorbringen. Je niedriger der Wert, desto länger dauert es, bis neue Insekten gespawnt werden.\n\nDies hat keinen Einfluss darauf, ob Insektenplagen auftreten können - nur auf die Geschwindigkeit, mit der aktive Insektenkolonien Insekten produzieren.</Difficulty_EnemyReproductionRateFactor_Info>
   <!-- EN: Deep drilling infestations -->
   <Difficulty_DeepDrillInfestationChanceFactor_Label>Insektenplagen bei Tiefenbohrung</Difficulty_DeepDrillInfestationChanceFactor_Label>
   <!-- EN: Adjust the chance that deep drilling will trigger an infestation. -->
@@ -480,7 +480,7 @@
   <!-- EN: Add unwavering prisoners -->
   <Difficulty_UnwaveringPrisoners_Label>Unbeugsame Gefangene hinzufügen</Difficulty_UnwaveringPrisoners_Label>
   <!-- EN: This option adds additional capturable prisoners to the game who cannot be recruited due to unwavering loyalty.\n\nUnwavering prisoners are added on top of normal prisoners, so turning this off won't give more recruitable prisoners - it simply removes the unwavering ones.\n\nUnwavering prisoners can still be released for diplomatic gains, sold, enslaved, harvested for organs, or otherwise made use of. In general, they offer more options and resources, and make the game a bit richer and easier. -->
-  <Difficulty_UnwaveringPrisoners_Info>Diese Option erweitert das Spiel um zusätzliche Spielfiguren, die einfangbar, aber aufgrund ihrer absoluten Loyalität nicht rekrutierbar sind.\n\nUnbeugsame Gefangene werden zusätzlich zu den normalen Gefangenen hinzugefügt. Wenn man also diese Option ausschaltet, erhält man nicht mehr rekrutierbare Gefangene - es werden lediglich die Unbeugsamen entfernt.\n\nUnbeugsame Gefangene können immer noch freigelassen, verkauft, versklavt, zur Organentnahme genutzt oder anderweitig verwertet werden. Generell bieten sie mehr Möglichkeiten und Ressourcen und machen das Spiel ein wenig reicher und einfacher.</Difficulty_UnwaveringPrisoners_Info>
+  <Difficulty_UnwaveringPrisoners_Info>Diese Option fügt dem Spiel zusätzliche Charaktere hinzu, die zwar eingefangen, aber aufgrund ihrer absoluten Loyalität nicht rekrutiert werden können.\n\nUnbeugsame Gefangene werden zusätzlich zu den normalen Gefangenen hinzugefügt, d.h. durch das Ausschalten dieser Option erhöht sich nicht die Anzahl rekrutierbarer Gefangener - es werden nur die Unbeugsamen entfernt.\n\nUnbeugsame Gefangene können weiterhin freigelassen, verkauft, versklavt, zur Organentnahme oder anderweitig benutzt werden. Generell bieten sie mehr Möglichkeiten und Ressourcen und machen das Spiel etwas reicher und einfacher.</Difficulty_UnwaveringPrisoners_Info>
 
   <!-- EN: Player tools -->
   <DifficultyPlayerToolsSection>Spielerwerkzeuge</DifficultyPlayerToolsSection>
@@ -491,26 +491,26 @@
   <!-- EN: Player can build turrets -->
   <Difficulty_AllowTurrets_Label>Spieler darf Geschütztürme bauen</Difficulty_AllowTurrets_Label>
   <!-- EN: Player can build static turrets like mini-turrets, autocannon turrets, and uranium slug turrets.\n\nYou can still use captured turrets even if this is disabled. -->
-  <Difficulty_AllowTurrets_Info>Spieler darf stationäre Geschütztürme wie Minigeschütze, Autokanonentürme und Urangeschosstürme bauen.\n\nDu kannst immer noch eingenommene Geschütztürme verwenden, auch wenn diese Einstellung deaktiviert ist.</Difficulty_AllowTurrets_Info>
+  <Difficulty_AllowTurrets_Info>Spieler darf stationäre Geschütztürme wie Minigeschütze, Autokanonentürme und Urangeschosstürme bauen.\n\nEroberte Geschütztürme können immer benutzt werden, unabhängig von dieser Einstellung.</Difficulty_AllowTurrets_Info>
   <!-- EN: Player can build mortars -->
   <Difficulty_AllowMortars_Label>Spieler darf Mörser bauen</Difficulty_AllowMortars_Label>
   <!-- EN: Player can build mortars.\n\nYou can still use captured mortars even if this is disabled. -->
-  <Difficulty_AllowMortars_Info>Spieler darf Mörser bauen.\n\nDu kannst immer noch eingenommene Mörser verwenden, auch wenn diese Einstellung deaktiviert ist.</Difficulty_AllowMortars_Info>
+  <Difficulty_AllowMortars_Info>Spieler darf Mörser bauen.\n\nEroberte Mörser können immer benutzt werden, unabhängig von dieser Einstellung.</Difficulty_AllowMortars_Info>
   <!-- EN: Classic mortars -->
   <Difficulty_ClassicMortars_Label>Klassische Mörser</Difficulty_ClassicMortars_Label>
   <!-- EN: Mortars will not require reinforced barrels to construct or reload, and are balanced for this ease of access. -->
-  <Difficulty_ClassicMortars_Info>Mörser benötigen keine verstärkten Läufe zum Errichten und Nachladen und sie sind entsprechend angepasst.</Difficulty_ClassicMortars_Info>
+  <Difficulty_ClassicMortars_Info>Zum Bauen oder Neubewaffnen von Mörsern werden keine verstärkten Läufe benötigt. Entsprechend sind sie für diese leichte Zugänglichkeit ausbalanciert.</Difficulty_ClassicMortars_Info>
   
   <!-- EN: Adaptation -->
   <DifficultyAdaptationSection>Anpassung</DifficultyAdaptationSection>
   <!-- EN: Adaptation growth rate -->
-  <Difficulty_AdaptationGrowthRateFactorOverZero_Label>Anpassungserhöhungsrate</Difficulty_AdaptationGrowthRateFactorOverZero_Label>
+  <Difficulty_AdaptationGrowthRateFactorOverZero_Label>Anpassungszunahmerate</Difficulty_AdaptationGrowthRateFactorOverZero_Label>
   <!-- EN: Adaptation means the storyteller makes the game more challenging when you're doing well. An adaptation score grows over time, and is knocked down when you take damage.\n\nThis setting adjusts how fast the adaptation score grows over time. -->
-  <Difficulty_AdaptationGrowthRateFactorOverZero_Info>Anpassung bedeutet, dass der Erzähler das Spiel mit der Zeit anspruchsvoller macht, solange du keine Verluste erleidest. Der Anpassungswert wächst mit der Zeit und wird reduziert, wenn du Schaden erleidest.\n\nDiese Einstellung verändert die Wachstumsrate des Anpassungswertes.</Difficulty_AdaptationGrowthRateFactorOverZero_Info>
+  <Difficulty_AdaptationGrowthRateFactorOverZero_Info>Anpassung bedeutet, dass der Erzähler das Spiel mit der Zeit schwieriger macht, solange der Spieler keine Verluste erleidet. Der Anpassungswert steigt mit der Zeit und wird reduziert, wenn der Spieler Schaden erleidet.\n\nMit dieser Einstellung wird festgelegt, wie schnell der Anpassungswert mit der Zeit zunimmt.</Difficulty_AdaptationGrowthRateFactorOverZero_Info>
   <!-- EN: Adaptation impact -->
   <Difficulty_AdaptationEffectFactor_Label>Anpassungsauswirkung</Difficulty_AdaptationEffectFactor_Label>
   <!-- EN: Adaptation means the storyteller makes the game more challenging when you're doing well. An adaptation score grows over time, and is knocked down when you take damage.\n\nThis setting adjusts how much the adaptation score affects the difficulty. -->
-  <Difficulty_AdaptationEffectFactor_Info>Anpassung bedeutet, dass der Erzähler das Spiel mit der Zeit anspruchsvoller macht, solange du keine Verluste erleidest. Der Anpassungswert wächst mit der Zeit und wird reduziert, wenn du Schaden erleidest.\n\nDiese Einstellung passt den Effekt des Anpassungswertes auf die tatsächliche Bedrohung an.</Difficulty_AdaptationEffectFactor_Info>
+  <Difficulty_AdaptationEffectFactor_Info>Anpassung bedeutet, dass der Erzähler das Spiel mit der Zeit schwieriger macht, solange der Spieler keine Verluste erleidet. Der Anpassungswert steigt mit der Zeit und wird reduziert, wenn der Spieler Schaden erleidet.\n\nMit dieser Einstellung wird festgelegt, wie stark der Anpassungswert den Schwierigkeitsgrad beeinflusst.</Difficulty_AdaptationEffectFactor_Info>
   <!-- EN: Wealth-independent progress mode -->
   <Difficulty_FixedWealthMode_Label>Reichtumsunabhängiger Fortschrittsmodus</Difficulty_FixedWealthMode_Label>
   <!-- EN: Play in a wealth-independent progress mode.\n\nIn normal mode, the storyteller scales threats according to colonist count, player wealth, and a variety of other factors. Wealth-independent mode removes the wealth factor and replaces it with a fixed progress curve based on time. The time is counted from the founding of each colony.\n\nThis is only recommended for those looking for a strict skill challenge. In wealth-independent mode, it may be nearly impossible to recover from serious losses unless you found a new settlement. It's also possible to get too far ahead of the curve and find the game too easy. -->
@@ -597,7 +597,7 @@
   <!-- EN: Forageability -->
   <Forageability>Nahrungsverfügbarkeit</Forageability>
   <!-- EN: None of the selected people can do the following jobs:\n\n{0}\n\nThis can make the game more difficult than usual. Are you sure you want to continue? -->
-  <ConfirmRequiredWorkTypeDisabledForEveryone>Von den ausgewählten Personen kann niemand die folgenden Arbeiten erledigen:\n\n{0}\n\nDas kann das Spiel um einiges schwieriger machen. Bist du sicher, dass du fortfahren willst?</ConfirmRequiredWorkTypeDisabledForEveryone>
+  <ConfirmRequiredWorkTypeDisabledForEveryone>Keine der ausgewählten Personen kann die folgenden Arbeiten erledigen:\n\n{0}\n\nDas kann das Spiel um einiges schwieriger machen. Bist du sicher, dass du fortfahren willst?</ConfirmRequiredWorkTypeDisabledForEveryone>
   <!-- EN: temperature -->
   <TemperatureLower>Temperatur</TemperatureLower>
   <!-- EN: light -->
@@ -609,7 +609,7 @@
   <!-- EN: The character's first name.\n\nThis is only displayed in certain menus. -->
   <FirstNameDesc>Der Vorname des Charakters.\n\nDieser Name wird nur in einigen Menüs angezeigt.</FirstNameDesc>
   <!-- EN: The character's short identifier.\n\nThis is displayed at all times. It can be the first or last name, or a completely separate nickname. -->
-  <ShortIdentifierDesc>Der Spitzname des Charakters.\n\nDieser Name wird immer angezeigt. Es kann sowohl der Vor- oder Nach- als auch ein ganz anderer Spitzname sein.</ShortIdentifierDesc>
+  <ShortIdentifierDesc>Die Kurzbezeichnung des Charakters.\n\nDieser Name wird immer angezeigt. Hierbei kann es sich um den Vornamen, den Nachnamen oder einen völlig eigenständigen Spitznamen handeln.</ShortIdentifierDesc>
   <!-- EN: The character's last name.\n\nThis is only displayed in certain menus. -->
   <LastNameDesc>Der Nachname des Charakters.\n\nDieser Name wird nur in einigen Menüs angezeigt.</LastNameDesc>
   <!-- EN: Randomize -->
@@ -699,7 +699,7 @@
   <!-- EN: Each person needs a valid name. -->
   <EveryoneNeedsValidName>Jede Person braucht einen gültigen Namen.</EveryoneNeedsValidName>
   <!-- EN: None of the selected people can do the following jobs -->
-  <RequiredWorkTypeDisabledForEveryone>Von den ausgewählten Personen kann keiner die folgenden Arbeiten erledigen</RequiredWorkTypeDisabledForEveryone>
+  <RequiredWorkTypeDisabledForEveryone>Keine der ausgewählten Personen kann die folgenden Arbeiten erledigen</RequiredWorkTypeDisabledForEveryone>
   <!-- EN: Quit -->
   <Quit>Beenden</Quit>
   <!-- EN: Ignore -->
