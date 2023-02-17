@@ -85,7 +85,7 @@
   <!-- EN: {PAWN_labelShort} will refuse to do these work types -->
   <ChooseRoleListWorkTypeRestrictions>{PAWN_labelShort} wird sich weigern, folgende Arbeiten zu verrichten</ChooseRoleListWorkTypeRestrictions>
   <!-- EN: It can sometimes be better to wait until your colony is more established before you assign roles. -->
-  <ChooseRoleHint>Mitunter kann es besser sein, zu warten, bis deine Kolonie sich etabliert hat, bevor du Rollen zuweist.</ChooseRoleHint>
+  <ChooseRoleHint>Manchmal ist es besser zu warten, bis sich die Kolonie etabliert hat, bevor man Rollen zuweist.</ChooseRoleHint>
   <!-- EN: Unlocked by -->
   <UnlockedByMeme>Freigeschaltet durch</UnlockedByMeme>
   <!-- EN: Unlocked roles -->
@@ -93,7 +93,7 @@
   <!-- EN: Unlocked rituals -->
   <MemeUnlocksRituals>Freigeschaltete Rituale</MemeUnlocksRituals>
   <!-- EN: WARNING: {PAWN_nameDef} is unable to do work that is required for the role of {ROLE_label}. If you choose to give {PAWN_objective} this role, {PAWN_pronoun} may be unable to use the abilities associated with {ROLE_label}. The missing work types are -->
-  <ChooseRoleRequiredWorkTagsDisabled>WARNUNG: {PAWN_nameDef} ist nicht in der Lage, Arbeiten zu erledigen, die für die Rolle '{ROLE_label}' erforderlich sind. Wenn du {PAWN_gender ? ihm : ihr} diese Rolle gibst, kann es sein, dass {PAWN_pronoun} die mit der Rolle verbundenen Fähigkeiten nicht nutzen kann. Die fehlenden Arbeitstypen sind</ChooseRoleRequiredWorkTagsDisabled>
+  <ChooseRoleRequiredWorkTagsDisabled>WARNUNG: {PAWN_nameDef} ist nicht in der Lage, Arbeiten zu erledigen, die für die Rolle '{ROLE_label}' erforderlich sind. Wenn du {PAWN_gender ? ihm : ihr} diese Rolle zuweist, wird {PAWN_pronoun} die Fähigkeiten dieser Rolle eventuell nicht nutzen können. Die fehlenden Arbeitstypen sind</ChooseRoleRequiredWorkTagsDisabled>
   <!-- EN: Leader bonus -->
   <YourLeaderTradeBonus>Anführerbonus</YourLeaderTradeBonus>
   <!-- EN: The meme {MEME} prevents adding apparel requirements to roles. -->
@@ -160,22 +160,22 @@
   <!-- EN: Any slave -->
   <AnySlave>Beliebiger Sklave</AnySlave>
   <!-- EN: {0_nameDef} refuses to sell people into slavery according to {0_possessive} beliefs. -->
-  <NegotiatorWillNotTradeSlaves>{replace: {0_nameDef}s; "s(/Name)s"-"s(/Name)'"; "ß(/Name)s"-"ß(/Name)'"; "z(/Name)s"-"z(/Name)'"; "x(/Name)s"-"x(/Name)'"; "ce(/Name)s"-"ce(/Name)'"} Glaube verbietet es, jemanden als Sklaven zu verkaufen.</NegotiatorWillNotTradeSlaves>
+  <NegotiatorWillNotTradeSlaves>{replace: {0_nameDef}s; "s(/Name)s"-"s(/Name)'"; "ß(/Name)s"-"ß(/Name)'"; "z(/Name)s"-"z(/Name)'"; "x(/Name)s"-"x(/Name)'"; "ce(/Name)s"-"ce(/Name)'"} Glaube verbietet es, jemanden in die Sklaverei zu verkaufen.</NegotiatorWillNotTradeSlaves>
   <!-- EN: The negotiator, {0_nameDef}, will not people into slavery due to {0_possessive} belief in {1}.\n\nNote that {0_nameDef} is willing to ransom someone back to {0_possessive} own faction, but isn't willing to sell someone to a different faction. -->
   <NegotiatorWillNotTradeSlavesTip>{0_gender ? Der Unterhändler : Die Unterhändlerin} {0_nameDef} weigert sich, jemanden in die Sklaverei zu verkaufen, da das {0_possessive}em Glauben an die Ideologie '{1}' widerspricht.\n\nBeachte, dass {0_nameDef} bereit ist, jemanden für {0_possessive}e eigene Fraktion freizukaufen, aber nicht bereit ist, jemanden an eine andere Fraktion zu verkaufen.</NegotiatorWillNotTradeSlavesTip>
 
   <!-- EN: Last human meat -->
   <LastHumanMeat>Menschenfleisch konsumiert</LastHumanMeat>
   <!-- EN: Because of {PAWN_possessive} belief in {IDEO_name}, {PAWN_nameDef} will become unhappy if {PAWN_pronoun} goes more than {DURATION} days without eating human meat. -->
-  <LastHumanMeatDesc>Aufgrund {PAWN_possessive}es Glaubens an die Ideologie {IDEO_name} bekommt {PAWN_nameDef} schlechte Laune, wenn {PAWN_pronoun} mehr als {DURATION} Tage ohne Menschenfleisch auskommen muss.</LastHumanMeatDesc>
+  <LastHumanMeatDesc>Aufgrund {PAWN_possessive}es Glaubens an die Ideologie {IDEO_name} bekommt {PAWN_nameDef} schlechte Laune, wenn {PAWN_pronoun} länger als {DURATION} Tage ohne Menschenfleisch auskommen muss.</LastHumanMeatDesc>
 
   <!-- EN: Executing {PAWN_labelShort} will negatively affect relations with {FACTION_name}. -->
-  <ExectueNeutralFactionSlave>Die Hinrichtung von {PAWN_labelShort} wird die Beziehung zur Fraktion '{FACTION_name}' negativ beeinflussen.</ExectueNeutralFactionSlave>
+  <ExectueNeutralFactionSlave>Die Hinrichtung von {PAWN_labelShort} wird sich negativ auf die Beziehung zur Fraktion '{FACTION_name}' auswirken.</ExectueNeutralFactionSlave>
 
   <!-- EN: You must assign at least one non-slave colonist who can walk. -->
   <CaravanMustHaveAtLeastOneNonSlaveColonist>Du musst mindestens einen Kolonisten zuweisen, der kein Sklave ist und laufen kann.</CaravanMustHaveAtLeastOneNonSlaveColonist>
   <!-- EN: You must leave at least non-slave colonist who can walk. -->
-  <SourceCaravanMustHaveAtLeastOneNonSlaveColonist>Du musst mindestens einen Kolonisten zuweisen, der kein Sklave ist und laufen kann.</SourceCaravanMustHaveAtLeastOneNonSlaveColonist>
+  <SourceCaravanMustHaveAtLeastOneNonSlaveColonist>Du musst mindestens einen Kolonisten zurücklassen, der kein Sklave ist und laufen kann.</SourceCaravanMustHaveAtLeastOneNonSlaveColonist>
 
   <!-- Style -->
   <!-- EN: Style -->
@@ -285,7 +285,7 @@
   <!-- EN: Confirm decisions -->
   <ConfirmDecisionsTitle>Entscheidungen bestätigen</ConfirmDecisionsTitle>
   <!-- EN: The hibernating starship reported by the AI (*Name)Charlon Whitestone(/Name) will fly away by the time the new colony is established. It will no longer be possible to escape the planet by traveling to this ship. -->
-  <ShipEscapeWillEndDescription>Das Raumschiff, von dem die KI (*Name)Charlon Whitestone(/Name) berichtet hat, wird seinen Tiefschlafmodus verlassen und wegfliegen, wenn die neue Kolonie gegründet wird. Es wird nicht mehr möglich sein, mit diesem Schiff zu entkommen.</ShipEscapeWillEndDescription>
+  <ShipEscapeWillEndDescription>Das Raumschiff, von dem die KI (*Name)Charlon Whitestone(/Name) berichtet hat, wird nach der Gründung der neuen Kolonie aus dem Tiefschlafmodus erwachen und wegfliegen. Eine Flucht mit diesem Raumschiff wird nicht mehr möglich sein.</ShipEscapeWillEndDescription>
   <!-- EN: No relic was chosen to be brought to the new colony. -->
   <ArchonexusRelicNotChosen>Es wurde keine Reliquie zur Mitnahme in die neue Kolonie ausgewählt.</ArchonexusRelicNotChosen>
   <!-- EN: {0} out of a possible {1} items were selected to be brought to the new colony. -->
@@ -293,7 +293,7 @@
   <!-- EN: The colony's purchasers will only allow you to take one relic. Any other relics will be left behind (even if equipped by a colonist), including: -->
   <RemoveEquippedRelicsDescription>Die Käufer der Kolonie gestatten dir nur die Mitnahme einer Reliquie. Alle anderen Reliquien werden zurückgelassen (auch solche, die von einem Kolonisten ausgerüstet wurden), einschließlich:</RemoveEquippedRelicsDescription>
   <!-- EN: Would you like to proceed? Past this point, there's no going back. -->
-  <WantToProceed>Möchtest du fortfahren? Danach gibt es keinen Weg zurück.</WantToProceed>
+  <WantToProceed>Möchtest du fortfahren? Danach gibt es kein Zurück mehr.</WantToProceed>
   <!-- EN: Convert -->
   <ConvertToPlayerIdeoligion>Bekehren</ConvertToPlayerIdeoligion>
   <!-- EN: Revert -->

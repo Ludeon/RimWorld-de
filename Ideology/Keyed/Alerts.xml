@@ -4,7 +4,7 @@
   <!-- EN: Need slave beds -->
   <NeedSlaveBeds>Sklavenbetten benötigt</NeedSlaveBeds>
   <!-- EN: You have more slaves than you have slave beds. Someone will lack a place to sleep.\n\nEither make more beds, or change a colonist or prisoner bed to a slave bed.\n\nIf you have no resources, sleeping spots are free and can be placed instantly. -->
-  <NeedSlaveBedsDesc>Du hast mehr Sklaven als Sklavenbetten. Einige haben keinen Platz zum Schlafen.\n\nBaue entweder mehr Betten oder ändere ein Kolonisten- oder Gefangenenbett in ein Sklavenbett.\n\nWenn du keine Ressourcen hast, um neue Betten zu bauen, kannst du immer noch auf Schlafplätze zurückgreifen, die sofort und kostenlos platziert werden können.</NeedSlaveBedsDesc>
+  <NeedSlaveBedsDesc>Du hast nicht genug Betten für deine Sklaven. Jemand wird keinen Platz zum Schlafen haben.\n\nBaue mehr Betten oder wandle ein Kolonisten- oder Gefangenenbett in ein Sklavenbett um.\n\nWenn du mangels Ressourcen keine Betten bauen kannst, greife auf Schlafplätze zurück - sie sind kostenlos und können sofort platziert werden.</NeedSlaveBedsDesc>
 
   <!-- EN: Slave unsuppressed -->
   <SlavesUnsuppressedLabel>Sklave ist nicht unterdrückt</SlavesUnsuppressedLabel>
@@ -15,7 +15,7 @@
   <!-- EN: Slaves unattended -->
   <SlaveUnattendedMultipleLabel>Sklaven ohne Aufsicht</SlaveUnattendedMultipleLabel>
   <!-- EN: Some slaves are alone on a map with no able-bodied colonists around.\n\nSlaves left unattended like this are very likely to rebel within days or hours. -->
-  <SlavesUnattendedDesc>Einige Sklaven sind allein auf einer Karte, ohne handlungsfähige Kolonisten in der Nähe.\n\nSklaven, die auf diese Weise unbeaufsichtigt gelassen werden, rebellieren mit großer Wahrscheinlichkeit innerhalb von Tagen oder Stunden.</SlavesUnattendedDesc>
+  <SlavesUnattendedDesc>Einige Sklaven sind allein auf einer Karte, ohne handlungsfähige Kolonisten in der Nähe.\n\nSklaven, die auf diese Weise unbeaufsichtigt gelassen werden, rebellieren mit hoher Wahrscheinlichkeit innerhalb von Tagen oder Stunden.</SlavesUnattendedDesc>
 
   <!-- EN: {0} opportunity -->
   <RitualOpportunity>{0} möglich</RitualOpportunity>
@@ -50,7 +50,7 @@
   <!-- EN: {0} disrespected -->
   <IdeoBuildingDisrespected>{0} respektlos behandelt</IdeoBuildingDisrespected>
   <!-- EN: {0} requires that {1} be in a dignified room. These room requirements must be met:\n{2}\n\nIf the {1}'s room requirements are not met, these believers will become unhappy:\n{3} -->
-  <IdeoBuildingDisrespectedDesc>Die Ideologie '{0}' verlangt, dass sich das Bauwerk {1} in einem würdevollen Raum befindet. Folgende Raumanforderungen müssen erfüllt sein:\n{2}\n\nWenn die Anforderungen nicht erfüllt sind, bekommen folgende Gläubige schlechte Laune:\n{3}</IdeoBuildingDisrespectedDesc>
+  <IdeoBuildingDisrespectedDesc>Die Ideologie '{0}' verlangt, dass sich das Bauwerk {1} in einem würdigen Raum befindet. Folgende Raumanforderungen müssen erfüllt sein:\n{2}\n\nWenn die Anforderungen nicht erfüllt sind, bekommen folgende Gläubige schlechte Laune:\n{3}</IdeoBuildingDisrespectedDesc>
   
   <!-- EN: Raids arriving in {0} -->
   <QuestPartRaidsDelay>Überfälle starten in {replace: {0}; "Tage"-"Tagen"; "Jahre"-"Jahren"}</QuestPartRaidsDelay>
@@ -74,14 +74,14 @@
   <!-- EN: A ritual opportunity is coming soon for following rituals -->
   <AlertRitualComingDesc>Folgende Rituale können bald durchgeführt werden</AlertRitualComingDesc>
   <!-- EN: Opportunities expire after {0} days, and reoccur on the same day each year. -->
-  <AlertRitualComingExtra>Datumsspezifische Rituale können mit einer Verspätung von maximal (*DateTime){0} Tagen(/DateTime) durchgeführt werden, danach verfällt die Möglichkeit. Solche Rituale finden jedes Jahr am gleichen Tag statt.</AlertRitualComingExtra>
+  <AlertRitualComingExtra>Datumsspezifische Rituale können mit einer Verspätung von maximal (*DateTime){0} Tagen(/DateTime) durchgeführt werden, danach verfällt die Möglichkeit. Solche Rituale finden jedes Jahr am selben Tag statt.</AlertRitualComingExtra>
   <!-- EN: {0} on {1}, {2} before opportunity arises -->
   <AlertRitualComingEntry>{0} am {1}, noch {2}, bevor sich die Gelegenheit ergibt</AlertRitualComingEntry>
 
   <!-- EN: Age reversal demanded -->
   <AlertAgeReversalDemandNear>Altersumkehr verlangt</AlertAgeReversalDemandNear>
   <!-- EN: Because of their beliefs, some of your colonists demand regular age reversal treatments in a biosculpter pod. If they don't get the treatments, they will be displeased.\n\nThe following people demand age reversal treatment -->
-  <AlertAgeReversalDemandDesc>Aufgrund ihrer Überzeugungen verlangen einige deiner Kolonisten regelmäßige Altersumkehrbehandlungen in einer Bioformerkapsel. Wenn sie die Behandlungen nicht bekommen, werden sie unglücklich sein.\n\nDie folgenden Personen verlangen eine Altersumkehrbehandlung</AlertAgeReversalDemandDesc>
+  <AlertAgeReversalDemandDesc>Aufgrund ihrer Überzeugungen verlangen einige deiner Kolonisten regelmäßige Altersumkehrbehandlungen in einer Bioformerkapsel. Bleiben diese Behandlungen aus, bekommen sie schlechte Laune.\n\nDie folgenden Personen verlangen eine Altersumkehrbehandlung</AlertAgeReversalDemandDesc>
   <!-- EN: {PAWN} joined {FACTION} recently, and wants to begin age reversal treatments in {DURATION}. -->
   <AlertAgeReversalDemandDesc_Recruit>{PAWN} ist vor kurzem der Fraktion {FACTION} beigetreten und will in (*DateTime){replace: {DURATION}; "Tage"-"Tagen"; "Jahre"-"Jahren"}(/DateTime) mit Altersumkehrbehandlungen beginnen.</AlertAgeReversalDemandDesc_Recruit>
   <!-- EN: {PAWN} wants their next treatment in {DURATION}. -->
@@ -99,9 +99,9 @@
   <!-- EN: One or more Gauranlen trees do not have their dryad caste set.\n\nSelect the tree and click the '{0}' button to set produced dryad caste. -->
   <AlertGauranlenTreeWithoutDryadTypeDesc>Bei mindestens einem Gauralanbaum ist die zu produzierende Dryadenkaste nicht gesetzt.\n\nWähle den Baum aus und klicke auf '{0}', um die Dryadenkaste zu setzen.</AlertGauranlenTreeWithoutDryadTypeDesc>
   <!-- EN: Connector not assigned to plant cutting -->
-  <AlertConnectedPawnNotAssignedToPlantCuttingLabel>Verbinder nicht für die Waldarbeit eingeteilt</AlertConnectedPawnNotAssignedToPlantCuttingLabel>
+  <AlertConnectedPawnNotAssignedToPlantCuttingLabel>Verbinder nicht für Waldarbeit zugeteilt</AlertConnectedPawnNotAssignedToPlantCuttingLabel>
   <!-- EN: You have Gauranlen trees which are set to be pruned, but their connectors are not assigned to plant cutting.\n\nYou should assign plant cutting work to the following people -->
-  <AlertConnectedPawnNotAssignedToPlantCuttingDesc>Du hast Gauralanbäume, die zum Stutzen vorgesehen sind, aber ihre Verbinder sind nicht für die Waldarbeit eingeteilt.\n\nDu solltest folgenden Personen für die Waldarbeit einteilen</AlertConnectedPawnNotAssignedToPlantCuttingDesc>
+  <AlertConnectedPawnNotAssignedToPlantCuttingDesc>Du hast Gauralanbäume, die zum Stutzen vorgesehen sind, aber ihre Verbinder sind nicht für die Waldarbeit zugeteilt.\n\nDu solltest folgenden Personen für die Waldarbeit zuteilen</AlertConnectedPawnNotAssignedToPlantCuttingDesc>
 
   <!-- EN: Fuel node explodes in {0} -->
   <AlertFuelNodeIgniting>Tankknoten explodiert in {replace: {0}; "Tage"-"Tagen"; "Jahre"-"Jahren"}</AlertFuelNodeIgniting>
@@ -111,7 +111,7 @@
   <!-- EN: Insects arriving in {0} -->
   <AlertInfestationArriving>Insekten kommen in {replace: {0}; "Tage"-"Tagen"; "Jahre"-"Jahren"}</AlertInfestationArriving>
   <!-- EN: Giant insects have sensed your activity and are burrowing up from underground to attack. Infestations are about to begin. -->
-  <AlertInfestationArrivingDesc>Riesige Insekten haben deine Aktivitäten wahrgenommen und graben sich aus dem Untergrund hoch, um dich anzugreifen. Eine Insektenplage wird bald beginnen.</AlertInfestationArrivingDesc>
+  <AlertInfestationArrivingDesc>Riesige Insekten haben deine Aktivitäten bemerkt und graben sich aus dem Untergrund hoch, um dich anzugreifen. Eine Insektenplage steht bevor.</AlertInfestationArrivingDesc>
 
   <!-- EN: {0_pawnsPlural} waking in {1} -->
   <AlertHostilesWakingUp>{0_pawnsPlural} erwachen in {replace: {1}; "Tage"-"Tagen"; "Jahre"-"Jahren"}</AlertHostilesWakingUp>
@@ -121,13 +121,13 @@
   <!-- EN: Cryptosleep caskets opening in {0} -->
   <AlertCasketOpening>Kryptoschlafkapseln öffnen sich in {replace: {0}; "Tage"-"Tagen"; "Jahre"-"Jahren"}</AlertCasketOpening>
   <!-- EN: Cryptosleep caskets containing unknown threats are opening soon. -->
-  <AlertCasketOpeningDesc>Es werden sich bald Kryptoschlafkapseln öffnen, die unbekannte Bedrohungen enthalten.</AlertCasketOpeningDesc>
+  <AlertCasketOpeningDesc>In Kürze öffnen sich Kryptoschlafkapseln, die unbekannte Bedrohungen enthalten.</AlertCasketOpeningDesc>
 
   <!-- EN: Slave rebellion likely -->
   <AlertSlaveRebellionLikely>Sklavenaufstand droht</AlertSlaveRebellionLikely>
   <!-- EN: There are {REBELLIOUSCOUNT} slaves that are likely to initiate a rebellion. -->
-  <AlertSlaveRebellionLikelyRebelliousCount>Es gibt {REBELLIOUSCOUNT} Sklaven, die wahrscheinlich eine Rebellion anzetteln werden.</AlertSlaveRebellionLikelyRebelliousCount>
+  <AlertSlaveRebellionLikelyRebelliousCount>Es gibt {REBELLIOUSCOUNT} Sklaven, die wahrscheinlich einen Aufstand anzetteln werden.</AlertSlaveRebellionLikelyRebelliousCount>
   <!-- EN: A slave rebellion is expected to happen roughly once every {COMBINEDTIME}. Note that each slave's rebellion chance is independent, so if any one of them rebels they can take others with them.\n\n{REBEL_labelShort} is the most rebellious slave and is expected to initiate a rebellion roughly once every {INDIVIDUALTIME}. The following factors are affecting how often they will rebel: -->
-  <AlertSlaveRebellionLikelyMostRebellious>Etwa alle {COMBINEDTIME} ist mit einem Sklavenaufstand zu rechnen. Beachte, dass jeder Sklave eine eigene Chance hat, zu rebellieren; soll heißen, wenn einer von ihnen rebelliert, besteht die Gefahr, dass er andere mitzieht.\n\n{REBEL_labelShort} ist der aufmüpfigste Sklave und wird voraussichtlich etwa alle {INDIVIDUALTIME} eine Rebellion anzetteln. Die folgenden Faktoren haben Einfluss darauf, wie oft sie rebellieren werden:</AlertSlaveRebellionLikelyMostRebellious>
+  <AlertSlaveRebellionLikelyMostRebellious>Etwa alle {COMBINEDTIME} ist mit einem Sklavenaufstand zu rechnen. Beachte, dass jeder Sklave seine eigene Chance hat, zu rebellieren, d.h. wenn einer rebelliert, besteht die Gefahr, dass er andere mitzieht.\n\n{REBEL_labelShort} ist der aufmüpfigste Sklave und wird voraussichtlich etwa alle {INDIVIDUALTIME} einen Aufstand anzetteln. Die folgenden Faktoren haben Einfluss darauf, wie oft sie rebellieren werden:</AlertSlaveRebellionLikelyMostRebellious>
   
 </LanguageData>

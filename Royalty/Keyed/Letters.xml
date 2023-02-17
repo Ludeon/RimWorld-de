@@ -18,7 +18,7 @@
   <LetterRoyalTitleExpectation>{PAWN_possessive}e Erwartungen werden niemals niedriger sein als {1}.</LetterRoyalTitleExpectation>
   
   <!-- EN: Because {PAWN_labelShort} is {1}, {PAWN_pronoun} will demand that this title's privileges be fully respected. {PAWN_pronoun} may refuse to do certain work types, eat low-class food and will issue decrees. -->
-  <LetterRoyalTitleConceitedTrait>Da {PAWN_labelShort} {1} ist, wird {PAWN_pronoun} verlangen, dass die Privilegien dieses Titels in vollem Umfang respektiert werden. {PAWN_pronoun} kann sich weigern, bestimmte Arbeiten zu verrichten und minderwertige Lebensmittel zu essen, und wird königliche Erlasse verkünden.</LetterRoyalTitleConceitedTrait>
+  <LetterRoyalTitleConceitedTrait>Da {PAWN_labelShort} {1} ist, wird {PAWN_pronoun} verlangen, dass die Privilegien dieses Titels in vollem Umfang respektiert werden. {PAWN_pronoun} kann sich weigern, bestimmte Arbeiten zu verrichten oder minderwertige Nahrung zu essen, und wird königliche Erlasse verkünden.</LetterRoyalTitleConceitedTrait>
 
   <!-- EN: {PAWN_labelShort} received the title of {TITLE} from {FACTION_name}! -->
   <LetterGainedRoyalTitle>{PAWN_labelShort} erhielt von der Fraktion {FACTION_name} den Titel {TITLE_gender ? eines : einer} {lookup: {TITLE}; decline; 1}!</LetterGainedRoyalTitle>
@@ -27,11 +27,11 @@
   <!-- EN: Title rewards -->
   <LetterLabelRewardsForNewTitle>Titelbelohnungen</LetterLabelRewardsForNewTitle>
   <!-- EN: To honor {PAWN_labelShort} advancing to the title of {TITLE}, {FACTION_name} has sent {PAWN_objective} the following reward(s): -->
-  <LetterRewardsForNewTitle>Um {TITLE} {PAWN_labelShort} für {PAWN_possessive}en neuen Titel zu würdigen, hat die Fraktion {FACTION_name} {PAWN_gender ? ihm : ihr} folgende Belohnung(en) geschickt:</LetterRewardsForNewTitle>
+  <LetterRewardsForNewTitle>Um {TITLE} {PAWN_labelShort} für {PAWN_possessive}en neuen Titel zu würdigen, hat {PAWN_gender ? ihm : ihr} die Fraktion {FACTION_name} folgende Belohnung(en) zukommen lassen:</LetterRewardsForNewTitle>
   <!-- EN: Rewards have arrived to your colony via transport pods. -->
-  <LetterRewardsForNewTitleDeliveryBase>Belohnungen sind via Transportkapseln in deiner Kolonie eingetroffen.</LetterRewardsForNewTitleDeliveryBase>
+  <LetterRewardsForNewTitleDeliveryBase>Belohnungen sind per Transportkapseln in deiner Kolonie eingetroffen.</LetterRewardsForNewTitleDeliveryBase>
   <!-- EN: Rewards were delivered directly to {PAWN_labelShort}'s inventory. -->
-  <LetterRewardsForNewTitleDeliveryDirect>Belohnungen wurden direkt in das Inventar von {PAWN_labelShort} abgelegt.</LetterRewardsForNewTitleDeliveryDirect>
+  <LetterRewardsForNewTitleDeliveryDirect>Belohnungen wurden direkt in das Inventar von {PAWN_labelShort} gelegt.</LetterRewardsForNewTitleDeliveryDirect>
 
   <!-- EN: {PAWN_pronoun} has these permissions: -->
   <LetterRoyalTitlePermits>{PAWN_pronoun} hat folgende Befugnisse:</LetterRoyalTitlePermits>
@@ -53,16 +53,16 @@
   <!-- EN: The implants must be extracted within a five-day grace period to avoid diplomatic consequences. -->
   <LetterRoyalTitleImplantGracePeriod>Die Implantate müssen innerhalb von fünf Tagen entfernt werden, um diplomatische Konflikte zu vermeiden.</LetterRoyalTitleImplantGracePeriod>
   <!-- EN: {PAWN_pronoun} can now give speeches from the throne. If it goes well, listeners will feel inspired. If it goes poorly, the speech will do social damage. The outcome depends on {PAWN_labelShort}'s social abilities. -->
-  <LetterRoyalTitleSpeechAbilityGained>{PAWN_pronoun} kann nun Reden auf {PAWN_possessive}em Thron halten. Wenn es gut läuft, werden die Zuhörer inspiriert. Bei Misserfolg wird die Rede sozialen Schaden anrichten. Das Ergebnis hängt von {replace: {PAWN_labelShort}s; "s(/Name)s"-"s(/Name)'"; "ß(/Name)s"-"ß(/Name)'"; "z(/Name)s"-"z(/Name)'"; "x(/Name)s"-"x(/Name)'"; "ce(/Name)s"-"ce(/Name)'"} sozialen Fähigkeiten ab.</LetterRoyalTitleSpeechAbilityGained>
+  <LetterRoyalTitleSpeechAbilityGained>{PAWN_pronoun} kann nun auf {PAWN_possessive}em Thron Reden halten. Bei Erfolg fühlen sich die Zuhörer inspiriert und respektieren {PAWN_objective}. Bei Misserfolg richtet die Rede sozialen Schaden an. Das Ergebnis hängt von {replace: {PAWN_labelShort}s; "s(/Name)s"-"s(/Name)'"; "ß(/Name)s"-"ß(/Name)'"; "z(/Name)s"-"z(/Name)'"; "x(/Name)s"-"x(/Name)'"; "ce(/Name)s"-"ce(/Name)'"} sozialen Fertigkeiten ab.</LetterRoyalTitleSpeechAbilityGained>
   <!-- EN: This title requires a throneroom that meets these requirements:{1} -->
   <LetterRoyalTitleThroneroomRequirements>Dieser Titel erfordert einen Thronsaal mit folgenden Anforderungen:{1}</LetterRoyalTitleThroneroomRequirements>
   <!-- EN: This title requires a bedroom that meets these requirements:{1} -->
   <LetterRoyalTitleBedroomRequirements>Dieser Titel erfordert ein Schlafgemach mit folgenden Anforderungen:{1}</LetterRoyalTitleBedroomRequirements>
   <!-- EN: This title says that {PAWN_pronoun} should only eat these foods:{1} -->
-  <LetterRoyalTitleFoodRequirements>Dieser Titel verlangt von {PAWN_gender ? ihm : ihr}, nur folgende Lebensmittel zu konsumieren:{1}</LetterRoyalTitleFoodRequirements>
+  <LetterRoyalTitleFoodRequirements>Dieser Titel verlangt von {PAWN_gender ? ihm : ihr}, nur folgende Nahrung zu konsumieren:{1}</LetterRoyalTitleFoodRequirements>
 
   <!-- EN: {PAWN_pronoun} will receive the following items via transport pod:{1} -->
-  <LetterRoyalTitleRewardGranted>{PAWN_pronoun} wird folgende Waren via Transportkapseln erhalten:{1}</LetterRoyalTitleRewardGranted>
+  <LetterRoyalTitleRewardGranted>{PAWN_pronoun} wird folgende Waren per Transportkapseln erhalten:{1}</LetterRoyalTitleRewardGranted>
   <!-- EN: {PAWN_labelShort} has gained {1} {FACTION_royalFavorLabel} from {FACTION_name}. -->
   <PeaceTalksRoyalFavorGain>{PAWN_labelShort} hat {1} {FACTION_royalFavorLabel} von der Fraktion {FACTION_name} erhalten.</PeaceTalksRoyalFavorGain>
 
@@ -78,7 +78,7 @@
   <!-- EN: Heir lost -->
   <LetterTitleHeirLostLabel>Erbe gestorben</LetterTitleHeirLostLabel>
   <!-- EN: {HEIR_nameFull} has died, leaving {HOLDER_labelShort} with no heir for the title received from {FACTION_name}. You can contact {FACTION_name} through a comms console to designate a new heir. -->
-  <LetterTitleHeirLost>{HEIR_nameFull} ist gestorben und hinterlässt {HOLDER_labelShort} ohne Erben für {HOLDER_possessive}en Titel, den {HOLDER_pronoun} einst von der Fraktion {FACTION_name} erhalten hatte. Du kannst die Fraktion {FACTION_name} über eine Funkanlage kontaktieren, um einen neuen Erben zu bestimmen.</LetterTitleHeirLost>
+  <LetterTitleHeirLost>{HEIR_nameFull} ist gestorben und hinterlässt {HOLDER_labelShort} ohne Erben für {HOLDER_possessive}en Titel, den {HOLDER_pronoun} von der Fraktion {FACTION_name} erhalten hat. Du kannst die Fraktion {FACTION_name} über eine Funkanlage kontaktieren, um einen neuen Erben zu bestimmen.</LetterTitleHeirLost>
   <!-- EN: The title of {TITLE} cannot be inherited. -->
   <LetterRoyalTitleCantBeInherited>Der {TITLE_label}-Titel kann nicht vererbt werden.</LetterRoyalTitleCantBeInherited>
 
@@ -86,13 +86,13 @@
   <!-- EN: Title inheritance -->
   <LetterTitleInheritance>Vererbter Titel</LetterTitleInheritance>
   <!-- EN: Since {PAWN_nameFull} died, {PAWN_possessive} titles will be transferred to {PAWN_possessive} heirs. -->
-  <LetterTitleInheritance_Base>Da {PAWN_nameFull} gestorben ist, werden {PAWN_possessive}e Titel an {PAWN_possessive}e Erben übertragen.</LetterTitleInheritance_Base>
+  <LetterTitleInheritance_Base>Da {PAWN_nameFull} gestorben ist, gehen {PAWN_possessive}e Titel auf {PAWN_possessive}e Erben über.</LetterTitleInheritance_Base>
   <!-- EN: {PAWN_possessive} {TITLE} title was inherited by {HEIR_nameFull}, according to the succession laws of {FACTION_name}. It will replace {HEIR_possessive} {REPLACEDTITLE} title upon completion of a bestowing ceremony. -->
-  <LetterTitleInheritance_AsReplacement>Gemäß den Erbschaftsgesetzen der Fraktion {FACTION_name} wurde {PAWN_possessive} {TITLE}-Titel an {HEIR_nameFull} vererbt. Dieser Titel wird {HEIR_possessive}en derzeitigen {REPLACEDTITLE}-Titel nach Abschluss einer Verleihungszeremonie ersetzen.</LetterTitleInheritance_AsReplacement>
+  <LetterTitleInheritance_AsReplacement>Gemäß den Erbregeln der Fraktion {FACTION_name} wurde {PAWN_possessive} {TITLE}-Titel an {HEIR_nameFull} vererbt. Dieser Titel wird {HEIR_possessive}en derzeitigen {REPLACEDTITLE}-Titel nach Abschluss einer Verleihungszeremonie ersetzen.</LetterTitleInheritance_AsReplacement>
   <!-- EN: {PAWN_possessive} {TITLE} title would have been inherited by {HEIR_nameFull} according to the succession laws of {FACTION_name}, but {HEIR_pronoun} already had a {HIGHERTITLE} title. -->
-  <LetterTitleInheritance_NoEffectHigherTitle>Gemäß den Erbschaftsgesetzen der Fraktion {FACTION_name} wäre {PAWN_possessive} {TITLE}-Titel an {HEIR_nameFull} vererbt worden, aber {HEIR_pronoun} ist bereits {HIGHERTITLE}.</LetterTitleInheritance_NoEffectHigherTitle>
+  <LetterTitleInheritance_NoEffectHigherTitle>Gemäß den Erbregeln der Fraktion {FACTION_name} müsste {PAWN_possessive} {TITLE}-Titel an {HEIR_nameFull} vererbt werden, aber {HEIR_labelShort} ist bereits {HIGHERTITLE}.</LetterTitleInheritance_NoEffectHigherTitle>
   <!-- EN: {PAWN_possessive} {TITLE} title will be inherited by {HEIR_nameFull} upon completion of a bestowing ceremony, according to the succession laws of {FACTION_name}. -->
-  <LetterTitleInheritance_WasInherited>Gemäß den Erbschaftsgesetzen der Fraktion {FACTION_name} wird {PAWN_possessive} {TITLE}-Titel nach Abschluss einer Verleihungszeremonie an {HEIR_nameFull} vererbt.</LetterTitleInheritance_WasInherited>
+  <LetterTitleInheritance_WasInherited>Gemäß den Erbregeln der Fraktion {FACTION_name} wird {PAWN_possessive} {TITLE}-Titel nach Abschluss einer Verleihungszeremonie an {HEIR_nameFull} vererbt.</LetterTitleInheritance_WasInherited>
   <!-- EN: {PAWN_possessive} {TITLE} title was not inherited by anyone, since {PAWN_pronoun} had no designated heir for this title. -->
   <LetterTitleInheritance_NoHeirFound>{PAWN_possessive} {TITLE}-Titel wurde an niemandem vererbt, da kein Erbe für diesen Titel festgelegt wurde.</LetterTitleInheritance_NoHeirFound>
 
@@ -109,7 +109,7 @@
   <LetterLabelRandomDecree>{0_nameIndef} verkündet Erlass</LetterLabelRandomDecree>
   <!-- EN: {0_nameIndef}, in an attempt to release {0_possessive} stress, has issued a wild royal decree and is now demanding that it be carried out.
     \nIf it isn't carried out in good time, {0_nameIndef} will become very unhappy. -->
-  <LetterDecreeMentalBreak>Bei dem Versuch, {0_possessive}en Stress abzubauen, hat {0_nameIndef} einen wilden königlichen Erlass verkündet und fordert nun dessen Umsetzung.\n\nWenn dieser Erlass nicht rechtzeitig erfüllt wird, bekommt {0_nameIndef} sehr schlechte Laune.</LetterDecreeMentalBreak>
+  <LetterDecreeMentalBreak>Um {0_possessive}en Stress abzubauen, hat {0_nameIndef} einen wilden königlichen Erlass verkündet und fordert nun dessen Umsetzung.\n\nWenn dieser Erlass nicht rechtzeitig erfüllt wird, bekommt {0_nameIndef} sehr schlechte Laune.</LetterDecreeMentalBreak>
   <!-- EN: {0_nameIndef}, in order to affirm {0_possessive} title of {0_bestRoyalTitleIndef}, has issued a decree and is now demanding that it be carried out.
     \nIf it isn't carried out in good time, {0_nameIndef} will become very unhappy. -->
   <LetterRandomDecree>Um {0_possessive}em Titel als {0_bestRoyalTitleIndef} gerecht zu werden, hat {0_nameIndef} einen königlichen Erlass verkündet und fordert nun dessen Umsetzung.\n\nWenn dieser Erlass nicht rechtzeitig erfüllt wird, bekommt {0_nameIndef} sehr schlechte Laune.</LetterRandomDecree>
@@ -124,7 +124,7 @@
   <!-- EN: Psylink gained -->
   <LetterLabelPsylinkLevelGained>Psylink erhalten</LetterLabelPsylinkLevelGained>
   <!-- EN: {USER_labelShort} has gained {USER_possessive} first level of psylink! {USER_pronoun} is now a psycaster.\n\nTo use psychic powers, {USER_labelShort} must build up psyfocus through meditation. The effectiveness of this meditation is increased if the person can focus on a specific object while meditating.\n\nDifferent people are able to focus on different objects. This depend on the person's backstories, traits, and titles. For example:\n\n- Psycasters with royal titles meditate on their thrones.\n- Psycasters with tribal childhoods meditate to anima trees and nature shrines.\n- Ascetic psycasters meditate to blank walls.\n- Psychopathic psycasters meditate to graves, ideally with a loved one inside.\n\nYou can see someone's meditation focus types by looking at their info card with the 'i' button. -->
-  <LetterPsylinkLevelGained_First>{USER_labelShort} hat {USER_possessive}e erste Psylinkstufe erhalten! {USER_pronoun} ist nun {USER_gender ? ein Psywirker : eine Psywirkerin}.\n\nBevor {USER_labelShort} mentale Kräfte wirken kann, muss {USER_pronoun} meditieren, um Psyfokus aufzubauen. Die Wirksamkeit dieser Meditation wird erhöht, wenn {USER_pronoun} sich beim Meditieren auf ein bestimmtes Objekt fokussieren kann.\n\nJe nach Vorgeschichte, Merkmalen und Titeln können sich Personen auf unterschiedliche Objekte fokussieren. Zum Beispiel:\n\n- Psywirker mit Adelstiteln meditieren auf ihrem Thron.\n- Psywirker mit indigener Herkunft meditieren an Animabäumen und Naturschreinen.\n- Asketische Psywirker meditieren vor kahlen Wänden.\n- Psychopathische Psywirker meditieren an Gräbern, idealerweise mit einem geliebten Menschen darin.\n\nDu kannst die Meditationsfokustypen einer Person in ihren Statistiken durch Klicken auf 'i' einsehen.</LetterPsylinkLevelGained_First>
+  <LetterPsylinkLevelGained_First>{USER_labelShort} hat {USER_possessive}e erste Psylinkstufe erhalten! {USER_pronoun} ist nun {USER_gender ? ein Psywirker : eine Psywirkerin}.\n\nBevor {USER_labelShort} mentale Kräfte wirken kann, muss {USER_pronoun} meditieren, um Psyfokus aufzubauen. Die Wirksamkeit dieser Meditation wird erhöht, wenn {USER_pronoun} sich beim Meditieren auf ein bestimmtes Objekt fokussieren kann.\n\nJe nach Vorgeschichte, Merkmalen und Titeln können sich Personen auf unterschiedliche Objekte fokussieren. Zum Beispiel:\n\n- Psywirker mit Adelstiteln meditieren auf ihren Thron.\n- Psywirker mit indigener Herkunft meditieren an Animabäumen und Naturschreinen.\n- Asketische Psywirker meditieren vor kahlen Wänden.\n- Psychopathische Psywirker meditieren an Gräbern, idealerweise mit einem geliebten Menschen darin.\n\nDu kannst die Meditationsfokustypen einer Person in ihren Statistiken durch Klicken auf 'i' einsehen.</LetterPsylinkLevelGained_First>
   <!-- EN: {USER_labelShort} has gained a new level of psylink! {USER_pronoun} can now use psychic powers of that higher level, but {USER_pronoun} needs to learn them first. -->
   <LetterPsylinkLevelGained_NotFirst>{USER_labelShort} hat eine neue Psylinkstufe erhalten! {USER_pronoun} kann nun mentale Kräfte entsprechend dieser Stufe wirken, doch zunächst müssen sie erlernt werden, sofern noch nicht geschehen.</LetterPsylinkLevelGained_NotFirst>
   <!-- EN: Upon gaining the new psylink level, {USER_labelShort} automatically learned these psychic powers: {2} -->
@@ -142,10 +142,10 @@
   <!-- EN: {TARGET_definite}'s title changed -->
   <LetterLabelBestowingCeremonyTitleUpdated>Titel von {TARGET_definite} geändert</LetterLabelBestowingCeremonyTitleUpdated>
   <!-- EN: {TARGET_definite} has gained new title since the bestowing ceremony was scheduled. In order for bestowing to match the new title, another ceremony will be scheduled soon.\n\nThe new bestowing ceremony will include the psylink rewards for all titles which were not yet awarded. -->
-  <LetterTextBestowingCeremonyTitleUpdated>{TARGET_definite} hat einen neuen Titel erlangt, bevor die aktuelle Verleihungszeremonie abgeschlossen werden konnte. Damit die Verleihungszeremonie mit dem neuen Titel übereinstimmt, wird demnächst eine neue Zeremonie angesetzt.\n\nDie neue Verleihungszeremonie wird die Psylink-Belohnungen für alle noch nicht verliehenen Titel beinhalten.</LetterTextBestowingCeremonyTitleUpdated>
+  <LetterTextBestowingCeremonyTitleUpdated>{TARGET_definite} hat einen neuen Titel erhalten, bevor die aktuelle Verleihungszeremonie abgeschlossen werden konnte. Um die Verleihungszeremonie an den neuen Titel anzupassen, wird in Kürze eine neue Zeremonie angesetzt.\n\nDie neue Verleihungszeremonie wird die Psylink-Belohnungen für alle noch nicht verliehenen Titel beinhalten.</LetterTextBestowingCeremonyTitleUpdated>
   
   <!-- EN: {PAWN_labelShort} received {1} honor as a sign of respect from {FACTION_name}, for gathering {3} spectators. -->
-  <LetterPartBestowingExtraHonor>{PAWN_labelShort} erhielt von der Fraktion {FACTION_name} {1} Ehre als Zeichen des Respekts, weil {PAWN_pronoun} {3} Zuschauer versammeln konnte.</LetterPartBestowingExtraHonor>
+  <LetterPartBestowingExtraHonor>{PAWN_labelShort} erhielt von der Fraktion {FACTION_name} {1} Ehre als Zeichen des Respekts dafür, dass {PAWN_pronoun} {3} Zuschauer versammeln konnte.</LetterPartBestowingExtraHonor>
   <!-- EN: {PAWN_labelShort} received no extra honor since there weren't many spectators. -->
   <LetterPartNoExtraHonor>{PAWN_labelShort} erhielt keine zusätzliche Ehre, da kaum Zuschauer anwesend waren.</LetterPartNoExtraHonor>
   <!-- EN: All viewers of the ceremony received a mood bonus. -->
