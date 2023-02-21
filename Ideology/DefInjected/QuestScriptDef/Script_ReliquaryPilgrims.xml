@@ -18,12 +18,14 @@
     <li>factionAdj(pilgrimFaction==false)->[faction_pawnSingular]</li>
   -->
   <ReliquaryPilgrims.questContentRules.rulesStrings>
-    <li>pilgrimsArrivedLetterLabel(pilgrimFaction==true)->[faction_pawnsPlural]pilger eingetroffen</li>
-    <li>pilgrimsArrivedLetterLabel(pilgrimFaction==false)->Pilger eingetroffen</li>
+    <li>pilgrimsArrivedLetterLabel(pilgrimCount==1,pilgrimFaction==true)->Pilger eingetroffen</li>
+    <li>pilgrimsArrivedLetterLabel(pilgrimCount==1,pilgrimFaction==false)->Pilger eingetroffen ([faction_pawnSingular])</li>
+    <li>pilgrimsArrivedLetterLabel(pilgrimCount>=2,pilgrimFaction==true)->Pilgergruppe eingetroffen</li>
+    <li>pilgrimsArrivedLetterLabel(pilgrimCount>=2,pilgrimFaction==false)->Pilgergruppe eingetroffen ([faction_pawnsPlural])</li>
     <li>pilgrimsArrivedLetterText->[questDescription]</li>
-    <li>delayedRewardLetterText->[pawns0_nameDef] dankt dir dafür, dass [pawns0_pronoun] [andFollowers] die Reliquie [relic_name] am [venerateDate] verehren [durfte]. Als Belohnung schickt dir [pawns0_nameDef] Folgendes via Transportkapseln (Gesamtwert [rewardsMarketValue_money]):\n\n[rewards].</li>
-    <li>pilgrimsLeavingMessage(pilgrimCount==1)->[pilgrimsLabel] ist mit der Verehrung von [relic_name] fertig und verlässt nun das Gebiet.</li>
-    <li>pilgrimsLeavingMessage(pilgrimCount>=2)->Die [pilgrimsLabelPlural] sind mit der Verehrung von [relic_name] fertig und verlassen nun das Gebiet.</li>
+    <li>delayedRewardLetterText->[pawns0_nameDef] bedankt sich bei dir, dass [pawns0_pronoun] [andFollowers] die Reliquie [relic_name] am [venerateDate] verehren [durfte]. Als Belohnung schickt dir [pawns0_nameDef] Folgendes via Transportkapseln (Gesamtwert [rewardsMarketValue_money]):\n\n[rewards].</li>
+    <li>pilgrimsLeavingMessage(pilgrimCount==1)->[pilgrimsLabel] ist mit der Verehrung der Reliquie '[relic_name]' fertig und verlässt nun das Gebiet.</li>
+    <li>pilgrimsLeavingMessage(pilgrimCount>=2)->Die [pilgrimsLabelPlural] sind mit der Verehrung der Reliquie '[relic_name]' fertig und verlassen nun das Gebiet.</li>
     <li>pilgrimsLeftMessage(pilgrimCount==1)->[pilgrimsLabel] hat das Gebiet verlassen.</li>
     <li>pilgrimsLeftMessage(pilgrimCount>=2)->Die [pilgrimsLabelPlural] haben das Gebiet verlassen.</li>
     <li>andFollowers(pilgrimCount==1)-></li>
@@ -62,8 +64,12 @@
     <li>visitSingularOrPlural(pilgrimCount>=2)->visit</li>
   -->
   <ReliquaryPilgrims.questDescriptionRules.rulesStrings>
-    <li>questDescription(pilgrimCount==1)->[pilgrimsLabel] ist gekommen, um die Reliquie [relic_name] zu verehren.\n\nWenn du für [pawns0_possessive]e Sicherheit sorgst und [pawns0_objective] in Ruhe lässt, während [pawns0_pronoun] die antike Reliquie besucht, wird [pawns0_pronoun] dich vielleicht belohnen.</li>
-    <li>questDescription(pilgrimCount>=2)->Die [pilgrimsLabelPlural] sind gekommen, um die Reliquie [relic_name] zu verehren.\n\nWenn du für ihre Sicherheit sorgst und sie in Ruhe lässt, während sie die antike Reliquie besuchen, werden sie dich vielleicht belohnen.</li>
+    <li>questDescription(pilgrimCount==1)->[pilgrimsLabel] ist eingetroffen, um die Reliquie [relic_name] zu verehren.\n\nWenn du für [pawns0_possessive]e Sicherheit sorgst und [pawns0_objective] in Ruhe lässt, während [pawns0_pronoun] die antike Reliquie besucht, wird [pawns0_pronoun] dich vielleicht belohnen.</li>
+    <li>questDescription(pilgrimCount==1,childCount==1,priority=1)->Ein {pawns0_gender ? Junge : Mädchen} namens [pilgrimsLabel] ist eingetroffen, um die Reliquie [relic_name] zu verehren.\n\nWenn du für [pawns0_possessive]e Sicherheit sorgst und [pawns0_objective] in Ruhe lässt, während [pawns0_pronoun] die antike Reliquie besucht, wird [pawns0_pronoun] dich vielleicht belohnen.</li>
+    <li>questDescription(pilgrimCount>=2)->Mehrere [pilgrimsLabelPlural] sind eingetroffen, um die Reliquie [relic_name] zu verehren.\n\nWenn du für ihre Sicherheit sorgst und sie in Ruhe lässt, während sie die antike Reliquie besuchen, werden sie dich vielleicht belohnen.</li>
+    <li>questDescription(pilgrimCount>=2,childCount==1,priority=1)->Mehrere [pilgrimsLabelPlural], darunter ein Kind, sind eingetroffen, um die Reliquie [relic_name] zu verehren.\n\nWenn du für ihre Sicherheit sorgst und sie in Ruhe lässt, während sie die antike Reliquie besuchen, werden sie dich vielleicht belohnen.</li>
+    <li>questDescription(pilgrimCount>=2,childCount>=2,allChildren==false,priority=1)->Mehrere [pilgrimsLabelPlural], darunter einige Kinder, sind eingetroffen, um die Reliquie [relic_name] zu verehren.\n\nWenn du für ihre Sicherheit sorgst und sie in Ruhe lässt, während sie die antike Reliquie besuchen, werden sie dich vielleicht belohnen.</li>
+    <li>questDescription(pilgrimCount>=2,allChildren==true,priority=1)->Mehrere junge [pilgrimsLabelPlural] sind eingetroffen, um die Reliquie [relic_name] zu verehren.\n\nWenn du für ihre Sicherheit sorgst und sie in Ruhe lässt, während sie die antike Reliquie besuchen, werden sie dich vielleicht belohnen.</li>
   </ReliquaryPilgrims.questDescriptionRules.rulesStrings>
   <!-- EN:
     <li>questName(pilgrimCount==1)->[pilgrimsLabelSingularOrPlural]'s [visitAdj] [visit]</li>

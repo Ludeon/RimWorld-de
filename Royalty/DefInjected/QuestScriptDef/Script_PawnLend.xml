@@ -19,12 +19,12 @@
     <li>pawnListHaveConjugation(colonistsToLendCount>1)->have</li>
   -->
   <PawnLend.questDescriptionRules.rulesStrings>
-    <li>questDescription(asker_factionLeader==True)->[asker_faction_leaderTitle] [asker_nameFull] der Fraktion [asker_faction_name] braucht eine helfende Hand, um [dutyDescription].\n\n[asker_pronoun] bittet dich, {asker_gender ? ihm : ihr} für [lendForDays] Tage [colonistCountToLend] zur Verfügung zu stellen.\n\n[willSendShuttle]</li>
+    <li>questDescription(asker_factionLeader==True)->[asker_faction_leaderTitle] [asker_nameFull] von der Fraktion [asker_faction_name] braucht eine helfende Hand, um [dutyDescription].\n\n[asker_pronoun] bittet dich, {asker_gender ? ihm : ihr} [colonistCountToLend] für [lendForDays] Tage zur Verfügung zu stellen.\n\n[willSendShuttle]</li>
     <li>disease->einer Grippe</li>
     <li>disease->einer Seuche</li>
     <li>disease->von Malaria</li>
     <li>disease->einer Infektion</li>
-    <li>questDescription(asker_royalInCurrentFaction==True)->[asker_royalTitleInCurrentFaction] [asker_nameFull] der Fraktion [asker_faction_name] braucht Leute, die {asker_gender ? ihm : ihr} dabei helfen, [dutyRoyalDescription].\n\n[asker_pronoun] bittet dich, {asker_gender ? ihm : ihr} für [lendForDays] Tage [colonistCountToLend] zur Verfügung zu stellen.\n\n[willSendShuttle]</li>
+    <li>questDescription(asker_royalInCurrentFaction==True)->[asker_royalTitleInCurrentFaction] [asker_nameFull] von der Fraktion [asker_faction_name] braucht Leute, die {asker_gender ? ihm : ihr} dabei helfen, [dutyRoyalDescription].\n\n[asker_pronoun] bittet dich, {asker_gender ? ihm : ihr} [colonistCountToLend] für [lendForDays] Tage zur Verfügung zu stellen.\n\n[willSendShuttle]</li>
     <li>colonistCountToLend(colonistsToLendCount==1)->1 Kolonisten[minAgeOrOlder]</li>
     <li>colonistCountToLend(colonistsToLendCount>1)->[colonistsToLendCount] Kolonisten[minAgeOrOlder]</li>
     <li>willSendShuttle->[asker_pronoun] wird ein Shuttle schicken, um [colonists] abzuholen.</li>
@@ -60,6 +60,7 @@
     <li>questName->[workers]-Outsourcing</li>
     <li>questName->Vertrags[workersLower]</li>
     <li>questName->Hilfs[workersLower]</li>
+    <li>questName->Gastarbeiter</li>
     <li>questName->[workers]verleih</li>
     <li>questName->[workers] ausleihen</li>
     <li>questName->[workers] für [asker_faction_name]</li>
@@ -77,7 +78,7 @@
   <!-- EN: <rulesStrings><li>dutyDescription->gather the harvest</li><li>dutyDescription->fortify a settlement</li><li>dutyDescription->set up a settlement</li><li>dutyDescription->watch for raiders</li><li>dutyDescription->set up a hospital</li><li>dutyDescription->contain an outbreak of [disease]</li></rulesStrings> -->
   <PawnLend.DutyRulesAny.slateRef>
     <rulesStrings>
-      <li>dutyDescription->die Ernte einzufahren</li>
+      <li>dutyDescription->die Ernte einzuholen</li>
       <li>dutyDescription->eine Siedlung zu verstärken</li>
       <li>dutyDescription->eine Siedlung aufzubauen</li>
       <li>dutyDescription->nach Raidern Ausschau zu halten</li>

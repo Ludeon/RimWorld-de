@@ -67,8 +67,8 @@
     <li>healthInfo(lodgersHaveBloodRotAndParalysis==true,priority=1)->\n\n[paralyzedInfo]\n\n[bloodRotInfo]</li>
     <li>healthInfo(lodgersAreParalyzed==true,priority=1)->\n\n[paralyzedInfo]</li>
     <li>healthInfo(lodgersHaveBloodRot==true,priority=1)->\n\n[bloodRotInfo]</li>
-    <li>paralyzedInfo(lodgersCount==1)->[lodgersLabelSingOrPluralDef] leidet an paralytischer Abasie und muss zu Bett gebracht werden.</li>
-    <li>paralyzedInfo(lodgersCount>=2)->[lodgersLabelSingOrPluralDef] leiden an paralytischer Abasie und müssen zu Bett gebracht werden.</li>
+    <li>paralyzedInfo(lodgersCount==1)->[lodgersLabelSingOrPluralDef] leidet an paralytischer Abasie und braucht Bettruhe.</li>
+    <li>paralyzedInfo(lodgersCount>=2)->[lodgersLabelSingOrPluralDef] leiden an paralytischer Abasie und brauchen Bettruhe.</li>
     <li>bloodRotInfo(lodgersCount==1)->[lodgersLabelSingOrPluralDef] ist an Blutfäule erkrankt und muss täglich behandelt werden. Die Erkrankung kann mit hochqualitativer Behandlung und Medizin zwar verlangsamt, aber grundsätzlich nicht ganz geheilt werden. Wenn die Erkrankung schwere Ausmaße annimmt, wird [lodgersLabelSingOrPluralDef] sterben, also vergewissere dich, dass du genügend Medizin vorrätig hast.</li>
     <li>bloodRotInfo(lodgersCount>=2)->[lodgersLabelSingOrPluralDef] sind an Blutfäule erkrankt und müssen täglich behandelt werden. Die Erkrankung kann mit hochqualitativer Behandlung und Medizin zwar verlangsamt, aber grundsätzlich nicht ganz geheilt werden. Wenn die Erkrankung schwere Ausmaße annimmt, werden [lodgersLabelSingOrPluralDef] sterben, also vergewissere dich, dass du genügend Medizin vorrätig hast.</li>
     <li>minMoodInfo-></li>
@@ -96,7 +96,7 @@
     <li>mechViolation->– wie auch immer – eine Maschinen-Persona verärgert</li>
     <li>mechViolation->schlimme Dinge mit einem antiken Supercomputer-Terminal angestellt</li>
     <li>mechViolation->ein menschliches Kind getötet, das einem Archotech sehr viel bedeutet hat</li>
-    <li>mechViolation->versucht, einen Mechanoiden-Kontrollknoten zu hacken</li>
+    <li>mechViolation->versucht, einen mechanoiden Kontrollknoten zu hacken</li>
     <li>mechViolation->versucht, etwas aus einer antiken Lagerstätte zu stehlen</li>
     <li>letterSubject->{SUBJECT_definite}</li>
     <li>lodgersHasHave(lodgersCount==1)->hat</li>

@@ -13,9 +13,9 @@
   -->
   <SanguophageMeetingHost.questContentRules.rulesStrings>
     <li>sanguophagesArriveLetterLabel->Sanguophagen eingetroffen</li>
-    <li>sanguophagesArriveLetterText->Die [sanguophageCount] Sanguophagen nähern sich [map_label] aus verschiedenen Richtungen. Sie werden sich in der Kolonie treffen und dort ihre Diskussion führen.</li>
+    <li>sanguophagesArriveLetterText->Die [sanguophageCount] Sanguophagen nähern sich [map_label] aus verschiedenen Richtungen, um dort ihr Treffen abzuhalten.</li>
     <li>argumentLetterLabel->Sanguophagenstreit</li>
-    <li>argumentLetterText->Die Sanguophagen haben sich so sehr gestritten, dass es in Gewalt ausgeartet ist!</li>
+    <li>argumentLetterText->Ein heftiger Streit unter den Sanguophagen ist in Gewalt ausgeartet!</li>
     <li>successLetterLabel->Treffen beendet</li>
     <li>successLetterText->Die Sanguophagen haben ihr Treffen beendet und werden dir nun deine Belohnung geben.</li>
     <li>raidArrivedLetterLabel->Sanguophagenjäger</li>
@@ -28,10 +28,10 @@
     <li>sanguophageInfo->(*Gray)About sanguophages: Sanguophages are ageless, deathless super-humans powered by archotech-created archites in the bloodstream. They are beautiful and extremely intelligent. They can heal any injury, and never suffer from disease or poison. In combat, they can launch deadly spines and heal injured friends. The price is that sanguophages must consume hemogen derived from human blood to survive, and they must periodically deathrest for long periods. They're easily destroyed by fire, and slowed down by UV light.(/Gray)</li>
   -->
   <SanguophageMeetingHost.questDescriptionRules.rulesStrings>
-    <li>questDescription->{asker_gender ? Ein [asker_kind] : Eine [asker_kind]} namens [asker_nameDef] sucht einen sicheren Ort, um sich heimlich mit [sanguophageSingOrPlural] zu treffen. {asker_gender ? Ihr Anführer : Ihre Anführerin} [asker_nameDef] möchte, dass das Treffen in [map_label] stattfindet.\n\nWenn du zusagst, werden [sanguophageCount] Sanguophagen aus verschiedenen Richtungen in [map_label] eintreffen. Sie werden mehrere Stunden damit verbringen, ihre eigenen geheimen Angelegenheiten zu bereden, bevor sie wieder abreisen. Sie versprechen, vor ihrer Abreise deine Belohnung zu übergeben.\n\nDu kannst die Sanguophagen verraten und angreifen. Am Boden liegende Sanguophagen können gezwungen werden, einen deiner Kolonisten zu einem Sanguophagen zu machen.\n\n[sanguophageInfo]</li>
+    <li>questDescription->{asker_gender ? Ein [asker_kind] : Eine [asker_kind]} namens [asker_nameDef] sucht einen sicheren Ort, um sich heimlich mit [sanguophageSingOrPlural] zu treffen. [asker_nameDef] ist {asker_gender ? der Anführer : die Anführerin} und möchte, dass das Treffen in [map_label] stattfindet.\n\nWenn du zusagst, werden [sanguophageCount] Sanguophagen aus verschiedenen Richtungen in [map_label] eintreffen. Sie werden mehrere Stunden damit verbringen, ihre geheimen Angelegenheiten zu besprechen, bevor sie wieder gehen. Deine Belohnung bekommst du vor ihrer Abreise.\n\nDu kannst die Sanguophagen verraten und angreifen. Am Boden liegende Sanguophagen können gezwungen werden, einen deiner Kolonisten zu einem Sanguophagen zu machen.\n\n[sanguophageInfo]</li>
     <li>sanguophageSingOrPlural(sanguophageCountMinusOne==1)->einem anderen Sanguophagen</li>
     <li>sanguophageSingOrPlural(sanguophageCountMinusOne>=2)->[sanguophageCountMinusOne] anderen Sanguophagen</li>
-    <li>sanguophageInfo->(*Gray)Sanguophagen sind alterslose, unsterbliche Übermenschen, die von Architen im Blutkreislauf angetrieben werden. Sie sind wunderschön und äußerst intelligent. Sie können jede Verletzung heilen, werden nie krank und sind immun gegen Gift. Im Kampf können sie tödliche Stacheln abfeuern und verletzte Verbündete heilen. Dies hat aber einen hohen Preis: Zum einen müssen Sanguophagen das lebenswichtige Hämogen konsumieren, welches aus menschlichem Blut gewonnen wird, und zum anderen ihren Körper regelmäßig für längere Zeit in den sogenannten Todesschlaf versetzen. Sie sind äußerst feueranfällig und werden durch UV-Licht verlangsamt.(/Gray)</li>
+    <li>sanguophageInfo->(*Gray)Sanguophagen sind alterslose, unsterbliche Übermenschen, die von Architen im Blutkreislauf angetrieben werden. Sie sind wunderschön und hochintelligent. Sie können jede Wunde heilen, werden nie krank und sind immun gegen Gifte. Im Kampf können sie tödliche Stacheln abfeuern und verletzte Verbündete heilen. Das hat allerdings einen hohen Preis: Sanguophagen müssen zum einen das lebenswichtige Hämogen konsumieren, welches aus menschlichem Blut gewonnen wird, und zum anderen ihren Körper regelmäßig für längere Zeit in den sogenannten Todesschlaf versetzen. Sie sind äußerst feueranfällig und werden durch UV-Licht verlangsamt.(/Gray)</li>
   </SanguophageMeetingHost.questDescriptionRules.rulesStrings>
   <!-- EN:
     <li>questName->[meetAdjective] [meetNoun]</li>
@@ -55,8 +55,9 @@
     <li>meetNoun->parley</li>
   -->
   <SanguophageMeetingHost.questNameRules.rulesStrings>
-    <li>questName(p=0.7)->[meetAdjective]e [meetNoun]</li>
-    <li>questName(p=0.5)->[meetNoun2]-[meetNoun]</li>
+    <li>questName(p=0.5)->[meetAdjective]e [meetNoun]</li>
+    <li>questName(p=0.7)->[meetNoun2][meetNounLow]</li>
+    <li>meetAdjective->sanguophagisch</li>
     <li>meetNoun2->Sanguophagen</li>
     <li>meetAdjective->blutdurstig</li>
     <li>meetNoun2->Blut</li>
@@ -74,6 +75,14 @@
     <li>meetNoun->Tagung</li>
     <li>meetNoun->Unterredung</li>
     <li>meetNoun->Sitzung</li>
+    <li>meetNounLow->begegnung</li>
+    <li>meetNounLow->versammlung</li>
+    <li>meetNounLow->zusammenkunft</li>
+    <li>meetNounLow->besprechung</li>
+    <li>meetNounLow->konferenz</li>
+    <li>meetNounLow->tagung</li>
+    <li>meetNounLow->unterredung</li>
+    <li>meetNounLow->sitzung</li>
   </SanguophageMeetingHost.questNameRules.rulesStrings>
   
 </LanguageData>

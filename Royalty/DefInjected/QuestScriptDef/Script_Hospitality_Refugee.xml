@@ -55,13 +55,13 @@
     <li>lodgersLabelSingularOrPlural(lodgerCount==1)->[lodgersLabel]</li>
     <li>lodgersLabelSingularOrPlural(lodgerCount>=2)->[lodgersLabelPlural]</li>
     <li>lodgersArriveLetterLabel->[lodgersLabelSingularOrPlural] eingetroffen</li>
-    <li>lodgersArriveLetterText->[lodgersSingularOrPluralDef] [areIs] eingetroffen. [lodgersPronoun] [wirdWerden] [questDurationTicks_duration] lang bei dir bleiben, um sich auszuruhen und neu zu gruppieren.</li>
+    <li>lodgersArriveLetterText->[lodgersSingularOrPluralDef] [areIs] eingetroffen. [lodgersPronoun] [wirdWerden] [questDurationTicks_duration] lang bei dir bleiben, um sich auszuruhen und zu sammeln.</li>
     <li>hasHave(lodgerCount==1)->hat</li>
     <li>hasHave(lodgerCount>=2)->haben</li>
     <li>wirdWerden(lodgerCount==1)->wird</li>
     <li>wirdWerden(lodgerCount>=2)->werden</li>
     <li>appalledButNoAction->{PAWNSALIVECOUNT_multiple ? Die anderen scheinen : Der letzte [lodgersLabel] scheint} darüber entsetzt zu sein, {PAWNSALIVECOUNT_multiple ? ergreifen : ergreift} aber keine Maßnahmen gegen dich.</li>
-    <li>othersWillNotAccept->{PAWNSALIVECOUNT_multiple ? Die anderen sind : Der letzte [lodgersLabel] ist} nicht bereit, dies zu akzeptieren</li>
+    <li>othersWillNotAccept->{PAWNSALIVECOUNT_multiple ? Die anderen sind : Der letzte [lodgersLabel] ist} nicht bereit, das zu akzeptieren</li>
     <li>turnedViolent->[othersWillNotAccept], und {PAWNSALIVECOUNT_multiple ? haben : hat} sich gewaltsam gegen dich aufgelehnt.</li>
     <li>decidedToLeave->[othersWillNotAccept], und {PAWNSALIVECOUNT_multiple ? haben : hat} beschlossen, das Gebiet zu verlassen.</li>
     <!-- <li>whoAskedToStay->who asked to stay with you</li> -->
@@ -93,13 +93,13 @@
     <li>lodgerViolatedLeaveMapLetterLabel->[lodgersLabel] verletzt: Weggang</li>
     <li>lodgerViolatedLeaveMapLetterText->[letterIntroViolated]\n\n[decidedToLeave]</li>
     <li>mutinyLetterLabel->Verrat</li>
-    <li>mutinyLetterText(lodgerCount==1)->[lodgersSingularOrPluralDef], {asker_gender ? der : die : das} bei dir bleiben wollte, hat sich gegen dich gewandt!\n\nEs scheint, dass [asker_pronoun] diesen Verrat die ganze Zeit geplant hatte.</li>
-    <li>mutinyLetterText(lodgerCount>=2)->[lodgersSingularOrPluralDef], die bei dir bleiben wollten, haben sich gegen dich gewandt!\n\nEs scheint, dass sie diesen Verrat die ganze Zeit geplant hatten.</li>
+    <li>mutinyLetterText(lodgerCount==1)->[lodgersSingularOrPluralDef], {asker_gender ? der : die : das} bei dir bleiben wollte, hat sich gegen dich gewandt!\n\nEs scheint, als hätte [asker_pronoun] diesen Verrat von Anfang an geplant.</li>
+    <li>mutinyLetterText(lodgerCount>=2)->[lodgersSingularOrPluralDef], die bei dir bleiben wollten, haben sich gegen dich gewandt!\n\nEs scheint, als hätten sie diesen Verrat von Anfang an geplant.</li>
     <li>areIs(lodgerCount==1)->ist</li>
     <li>areIs(lodgerCount>=2)->sind</li>
     <li>lodgersLeavingLetterLabel(lodgerCount==1)->[lodgersLabelSingularOrPlural] verlässt das Gebiet</li>
     <li>lodgersLeavingLetterLabel(lodgerCount>=2)->[lodgersLabelSingularOrPlural] verlassen das Gebiet</li>
-    <li>lodgersLeavingLetterText->{FACTION_leaderNameDef} dankt dir, dass {FACTION_leaderPronoun} [questDurationTicks_duration] lang in [map_label] bleiben durfte. {FACTION_leaderPronoun} zieht nun mit {FACTION_leaderPossessive}en Leuten weiter.\n\n{FACTION_leaderNameDef} sagt, dass {FACTION_leaderPronoun} nicht vergessen wird, was du getan hast.</li>
+    <li>lodgersLeavingLetterText->{FACTION_leaderNameDef} bedankt sich, dass {FACTION_leaderPronoun} [questDurationTicks_duration] lang in [map_label] bleiben durfte. {FACTION_leaderPronoun} zieht nun mit {FACTION_leaderPossessive}en Leuten weiter.\n\n{FACTION_leaderNameDef} sagt, dass {FACTION_leaderPronoun} nicht vergessen wird, was du getan hast.</li>
   </Hospitality_Refugee.questContentRules.rulesStrings>
   <!-- EN:
     <li>lodgersLabel->refugee</li>
@@ -153,8 +153,6 @@
     <li>lodgersPronoun(lodgerCount>=2)->sie</li>
     <!-- <li>lodgersPreposition(lodgerCount==1)->[asker_objective]self</li> -->
     <!-- <li>lodgersPreposition(lodgerCount>=2)->themselves</li> -->
-    <li>lodgersObjectiveDat(lodgerCount==1)->{asker_gender ? ihm : ihr}</li>
-    <li>lodgersObjectiveDat(lodgerCount>=2)->ihnen</li>
     <li>lodgersObjectiveAcc(lodgerCount==1)->[asker_objective]</li>
     <li>lodgersObjectiveAcc(lodgerCount>=2)->sie</li>
     <li>lodgersPossessive(lodgerCount==1)->[asker_possessive]</li>
@@ -163,7 +161,7 @@
     <li>lodgersSingularOrPluralDef(lodgerCount>=2)->die [lodgersLabelPlural]</li>
     <li>belohnt(lodgerCount==1)->belohnt</li>
     <li>belohnt(lodgerCount>=2)->belohnen</li>
-    <li>questDescription->[approachInfo] [claimInfo] [asker_nameDef] bittet dich um Erlaubnis, [questDurationTicks_duration] lang in [map_label] bleiben zu dürfen, um sich auszuruhen und neu zu gruppieren.\n\nIm Gegenzug [offer] [lodgersPronoun] an, während dieser Zeit kostenlos zu arbeiten und zu kämpfen.\n\n[joinInfo] Vielleicht [belohnt] [lodgersPronoun] dich später auch dafür, dass du [lodgersObjectiveDat] geholfen hast - aber [lodgersPossessive]e wahren Absichten sind nicht bekannt.\n\n[travelerInfo] keiner Fraktion an. Wenn du möchtest, kannst du [lodgersObjectiveAcc] töten, inhaftieren, verkaufen oder [lodgersPossessive]e Organe entnehmen, ohne diplomatische Konsequenzen befürchten zu müssen.</li>
+    <li>questDescription->[approachInfo] [claimInfo] [asker_nameDef] bittet dich um Erlaubnis, [questDurationTicks_duration] lang in [map_label] bleiben zu dürfen, um sich auszuruhen und zu sammeln.\n\nIm Gegenzug [offer] [lodgersPronoun] dir an, in dieser Zeit kostenlos zu arbeiten und zu kämpfen.\n\n[joinInfo] Vielleicht [belohnt] [lodgersPronoun] dich später auch für deine Hilfe - aber [lodgersPossessive]e wahren Absichten bleiben ein Geheimnis.\n\n[travelerInfo] keiner Fraktion an. Du kannst [lodgersObjectiveAcc] töten, inhaftieren, verkaufen oder [lodgersPossessive]e Organe entnehmen, ohne diplomatische Konsequenzen befürchten zu müssen.</li>
     <li>approachInfo(lodgerCount==1)->Ein verzweifelter [faction_pawnSingular] namens [asker_nameDef] nähert sich.</li>
     <li>approachInfo(lodgerCount==2)->[asker_nameDef] und ein anderer verzweifelter [faction_pawnSingular] nähern sich.</li>
     <li>approachInfo(lodgerCount==2,childCount==1,priority=1)->[asker_nameDef] nähert sich mit einem Kind im Schlepptau.</li>
@@ -171,17 +169,17 @@
     <li>approachInfo(lodgerCount>=3,childCount==1,priority=1)->[lodgerCount] verzweifelte [faction_pawnsPlural], darunter ein Kind, nähern sich. Ihr Anführer heißt [asker_nameDef].</li>
     <li>approachInfo(lodgerCount>=3,childCount>=2,priority=1)->[lodgerCount] verzweifelte [faction_pawnsPlural], darunter einige Kinder, nähern sich. Ihr Anführer heißt [asker_nameDef].</li>
     <li>approachInfo(lodgerCount>=3,allButOneChildren==true,priority=2)->[lodgerCount] verzweifelte [faction_pawnsPlural] nähern sich. Die Gruppe besteht aus [asker_nameDef] und [lodgersCountMinusOne] Kindern, die [asker_pronoun] unter [asker_possessive]e Fittiche genommen hat.</li>
-    <li>claimInfo(lodgerCount==1)->[asker_nameDef] behauptet, [asker_possessive]e Heimat bei einem kürzlichen Angriff verloren zu haben.</li>
+    <li>claimInfo(lodgerCount==1)->[asker_nameDef] behauptet, [asker_pronoun] habe bei einem kürzlichen Angriff [asker_possessive]e Heimat verloren.</li>
     <li>claimInfo(lodgerCount==1)->[asker_nameDef] behauptet, mutterseelenallein aus dem Kryptoschlaf aufgewacht zu sein.</li>
     <li>claimInfo(lodgerCount==1)->[asker_nameDef] behauptet, von {asker_gender ? einer rachsüchtigen Ex-Freundin : einem rachsüchtigen Ex-Freund} aus [asker_possessive]er Heimat vertrieben worden zu sein.</li>
-    <li>claimInfo(lodgerCount==1)->[asker_nameDef] behauptet, nach einem Streit mit einem Dorfvorsteher verbannt worden zu sein.</li>
-    <li>claimInfo(lodgerCount>=2)->Sie behaupten, ihre Heimat bei einem kürzlichen Angriff verloren zu haben.</li>
-    <li>claimInfo(lodgerCount>=2)->Sie behaupten, dass sie für eine Organentnahme bestimmt waren, aber letztendlich entkommen sind.</li>
-    <li>claimInfo(lodgerCount>=2)->Sie behaupten, dass sie Sklaven in einer Sklavenkarawane waren, aber letztendlich entkommen sind.</li>
-    <li>claimInfo(lodgerCount>=2)->Sie behaupten, dass sie gezwungen waren, ihr Dorf wegen Ernteausfällen zu verlassen.</li>
+    <li>claimInfo(lodgerCount==1)->[asker_nameDef] behauptet, nach einem Streit mit dem Dorfvorsteher verbannt worden zu sein.</li>
+    <li>claimInfo(lodgerCount>=2)->Sie behaupten, bei einem kürzlichen Angriff ihre Heimat verloren zu haben.</li>
+    <li>claimInfo(lodgerCount>=2)->Sie behaupten, einer Organentnahme entkommen zu sein.</li>
+    <li>claimInfo(lodgerCount>=2)->Sie behaupten, einer Sklavenkarawane entkommen zu sein.</li>
+    <li>claimInfo(lodgerCount>=2)->Sie behaupten, dass sie ihr Dorf wegen Ernteausfällen verlassen mussten.</li>
     <li>claimInfo(lodgerCount>=2)->Sie behaupten, ein gewaltiger Blitzsturm habe ihre Heimat niedergebrannt.</li>
     <li>claimInfo(lodgerCount>=2)->Sie behaupten, ihre Karawane sei in einen Hinterhalt geraten und ausgeraubt worden.</li>
-    <li>claimInfo(lodgerCount>=2)->Sie behaupten, sie seien wegen moralischer Meinungsverschiedenheiten aus ihrer Stadt verbannt worden.</li>
+    <li>claimInfo(lodgerCount>=2)->Sie behaupten, wegen moralischer Meinungsverschiedenheiten aus ihrer Stadt verbannt worden zu sein.</li>
     <li>joinInfo(lodgerCount==1)->Wenn du [asker_objective] zufriedenstellst, könnte [asker_pronoun] gewillt sein, deiner Kolonie beizutreten.</li>
     <li>joinInfo(lodgerCount>=2)->Wenn du sie zufriedenstellst, könnten einige von ihnen gewillt sein, deiner Kolonie beizutreten.</li>
     <li>travelerInfo(lodgerCount==1)->Dieser [faction_pawnSingular] gehört</li>
