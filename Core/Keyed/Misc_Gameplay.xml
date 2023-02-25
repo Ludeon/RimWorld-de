@@ -1603,9 +1603,9 @@
   
   <!-- Healing -->
   <!-- EN: {0_nameDef}'s {1} was cured. -->
-  <HealingCureHediff>{1} von {0_nameDef} wurde geheilt.</HealingCureHediff>
+  <HealingCureHediff>{replace: {0_nameDef}s; "s(/Name)s"-"s(/Name)'"; "ß(/Name)s"-"ß(/Name)'"; "z(/Name)s"-"z(/Name)'"; "x(/Name)s"-"x(/Name)'"; "ce(/Name)s"-"ce(/Name)'"} {1} wurde geheilt.</HealingCureHediff>
   <!-- EN: {0_nameDef}'s {1} was restored. -->
-  <HealingRestoreBodyPart>{1} von {0_nameDef} wurde wiederhergestellt.</HealingRestoreBodyPart>
+  <HealingRestoreBodyPart>{replace: {0_nameDef}s; "s(/Name)s"-"s(/Name)'"; "ß(/Name)s"-"ß(/Name)'"; "z(/Name)s"-"z(/Name)'"; "x(/Name)s"-"x(/Name)'"; "ce(/Name)s"-"ce(/Name)'"} {1} wurde wiederhergestellt.</HealingRestoreBodyPart>
 
   <!-- EN: Caution: Placing a building here will anger {FACTION_name}! -->
   <WarningBuildingCausesHostility>Achtung: Wenn du hier ein Bauwerk platzierst, verärgert das die Fraktion {FACTION_name}!</WarningBuildingCausesHostility>
