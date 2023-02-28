@@ -16,7 +16,7 @@
   -->
   <Util_MaybeGenerateHelpers.questDescriptionRules.rulesStrings>
     <li>helpersParagraph(helpersCount==0)-> </li>
-    <li>helpersParagraph(helpersCount==1)->\n\nDir wird [helperKind_indefinite] unter dein Kommando gestellt. [helpers0_pronoun] wird Nahrung und eine Unterkunft benötigen. Sollte [helpers0_pronoun] im Kampf sterben, musst du keine Konsequenzen befürchten.\n\n</li>
+    <li>helpersParagraph(helpersCount==1)->\n\nDir wird [helperKind_indefinite] unter dein Kommando gestellt. [helperKind_pronoun] wird Nahrung und eine Unterkunft benötigen. Sollte [helperKind_pronoun] im Kampf sterben, musst du keine Konsequenzen befürchten.\n\n</li>
     <li>helpersParagraph(helpersCount>=2)->\n\nDir werden [helpersCount] [helperKind_labelPlural] unter dein Kommando gestellt. Sie werden Nahrung und eine Unterkunft benötigen. Sollten sie im Kampf sterben, musst du keine Konsequenzen befürchten.\n\n</li>
     <li>helpersArrivalLetterEnd(helpersCount==0)-></li>
     <li>helpersArrivalLetterEnd(helpersCount>=1)->\n\n[helpersCount] [helpersLabelSingOrPlural] [helpersWasWere] geschickt, um dir zu helfen.</li>
@@ -40,6 +40,7 @@
     <li>helpersWill(helpersCount>=2)->werden</li>
     <li>helpersLeave(helpersCount==1)->verlässt</li>
     <li>helpersLeave(helpersCount>=2)->verlassen</li>
+    <li>helperKind_pronoun->{replace: [helperKind_definite]; "der [helperKind_label]"-"er"; "die [helperKind_label]"-"sie"; "das [helperKind_label]"-"es"}</li>
   </Util_MaybeGenerateHelpers.questDescriptionRules.rulesStrings>
   <!-- EN: [helpersLabelSingOrPlural] arrived -->
   <Util_MaybeGenerateHelpers.LetterLabelHelpersArrived.value.slateRef>[helpersLabelSingOrPlural] eingetroffen</Util_MaybeGenerateHelpers.LetterLabelHelpersArrived.value.slateRef>

@@ -78,10 +78,10 @@
     <li>workInfo(lodgersWillNotWork==true,lodgersCount>=2,priority=1)->\n\n[lodgersLabelSingOrPluralDef] verweigern jegliche Arbeit.</li>
     <li>commonDescEnding->[helpersParagraph]</li>
     <li>enemyGroupsParagraph->[threatDescriptionParagraph]</li>
-    <li>threatDescriptionParagraph(threatType==Raids,threatCount==1,threatSize==1)->wird (*Threat)ein Überfall(/Threat) in folgender Größenordnung stattfinden:\n\n[threatExample]</li>
-    <li>threatDescriptionParagraph(threatType==Raids,threatCount==1,threatSize>1)->wird (*Threat)ein Überfall(/Threat) mit [threatSize]-facher Stärke und in folgender Größenordnung stattfinden:\n\n[threatExample]</li>
-    <li>threatDescriptionParagraph(threatType==Raids,threatCount>1,threatSize==1)->werden (*Threat)[threatCount] Überfalle(/Threat) in folgender Größenordnung stattfinden:\n\n[threatExample]</li>
-    <li>threatDescriptionParagraph(threatType==Raids,threatCount>1,threatSize>1)->werden (*Threat)[threatCount] Überfalle(/Threat) mit [threatSize]-facher Stärke und in folgender Größenordnung stattfinden:\n\n[threatExample]</li>
+    <li>threatDescriptionParagraph(threatType==Raids,threatCount==1,threatSize==1)->wird (*Threat)ein Überfall(/Threat) in etwa folgender Größe stattfinden:\n\n[threatExample]</li>
+    <li>threatDescriptionParagraph(threatType==Raids,threatCount==1,threatSize>1)->wird (*Threat)ein Überfall(/Threat) mit [threatSize]-facher Stärke in etwa folgender Größe stattfinden:\n\n[threatExample]</li>
+    <li>threatDescriptionParagraph(threatType==Raids,threatCount>1,threatSize==1)->werden (*Threat)[threatCount] Überfalle(/Threat) in jeweils etwa folgender Größe stattfinden:\n\n[threatExample]</li>
+    <li>threatDescriptionParagraph(threatType==Raids,threatCount>1,threatSize>1)->werden (*Threat)[threatCount] Überfalle(/Threat) mit [threatSize]-facher Stärke in jeweils etwa folgender Größe stattfinden:\n\n[threatExample]</li>
     <li>threatDescriptionParagraph(threatType==MechClusters,threatCount==1,threatSize==1)->wird (*Threat)ein Mech-Cluster(/Threat) in der Nähe landen.</li>
     <li>threatDescriptionParagraph(threatType==MechClusters,threatCount==2,threatSize==1)->werden (*Threat)zwei Mech-Cluster(/Threat) in der Nähe landen.</li>
     <li>threatDescriptionParagraph(threatType==MechClusters,threatCount==1,threatSize>1)->wird (*Threat)ein Mech-Cluster(/Threat) von [threatSize]-facher Größe in der Nähe landen.</li>
@@ -112,13 +112,6 @@
     <li>failLetterEndingQuest->Die Quest '[resolvedQuestName]' ist gescheitert.</li>
     <li>failLetterEndingCommon(askerIsNull==true,priority=1)->[failLetterEndingQuest]</li>
     <li>failLetterEndingCommon->[failLetterEndingQuest]\n\nDein Ruf bei der Fraktion [asker_faction_name] hat sich um [goodwillPenalty] Punkte verschlechtert.</li>
-    <li>inappropriate(p=4)-></li>
-    <li>inappropriate->unangemessene </li>
-    <li>inappropriate->ungebührliche </li>
-    <li>inappropriate->verbotene </li>
-    <li>affair->Affäre</li>
-    <li>affair->Liaison</li>
-    <li>affair->Liebschaft</li>
   </QuestHospitalityCommon.rulePack.rulesStrings>
   
 </LanguageData>
