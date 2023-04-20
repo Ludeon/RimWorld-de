@@ -20,6 +20,7 @@ $paths = @(
 "*\DefInjected\RoyalTitleDef"
 "*\DefInjected\TerrainDef"
 "*\DefInjected\ThingDef"
+"*\DefInjected\TraderKindDef"
 "*\DefInjected\WorldObjectDef"
 )
 
