@@ -152,13 +152,14 @@
     <li>desc_sentence->The scene takes place inside a newly-built [Community].</li>
   -->
   <GaveBirth.rulePack.rulesStrings>
-    <li>tale_noun->[MOTHER_nameDef] [CHILD_nameDefAcc] zur Welt brachte</li>
+    <li>tale_noun->[MOTHER_nameDef] [CHILD_nameIndefAcc] zur Welt brachte</li>
     <li>image->[MOTHER_nameFullIndefDat], wie [MOTHER_pronoun] [MOTHER_possessive] [baby], [circumstance_group], zur Welt brachte</li>
     <li>image->[MOTHER_nameFullIndefDat], wie [MOTHER_pronoun] [MOTHER_possessive] [baby], [circumstance_group], hält</li>
     <li>image->[MOTHER_nameFullIndefDat], wie [MOTHER_pronoun] neben [MOTHER_possessive]em [baby], [circumstance_group], im Bett liegt</li>
     <li>image->[MOTHER_nameFullIndefDat], wie [MOTHER_pronoun] sich mit [MOTHER_possessive]em [baby], [circumstance_group], völlig erschöpft hinsetzt</li>
     <li>baby->Kind</li>
     <li>baby->Kind</li>
+    <li>baby->Neugeborenes</li>
     <li>baby->Baby</li>
     <li>circumstance_phrase->das blutverschmiert ist und weint</li>
     <li>circumstance_phrase->das leicht [Color] leuchtet</li>
@@ -170,7 +171,7 @@
     <li>desc_sentence(p=0.5)->Die Szene spielt in einer frisch gegründeten [CommunityFemDat].</li>
     <li>desc_sentence(p=0.5)->Die Szene spielt in einem frisch gegründeten [CommunityNeuDat].</li>
     <li>MOTHER_nameFullIndefDat->{replace: [MOTHER_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
-    <li>CHILD_nameDefAcc->{replace: [CHILD_nameDef]; ">der "-">den "}</li>
+    <li>CHILD_nameIndefAcc->{replace: [CHILD_nameDef]; ">der "-">einen "; ">die "-">eine "; ">das "-">ein "}</li>
   </GaveBirth.rulePack.rulesStrings>
   
   <!-- EN: heatstroke revealed -->
