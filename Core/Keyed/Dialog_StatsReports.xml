@@ -18,6 +18,8 @@
   <StatsReport_RelevantHediffs>Relevante Gesundheitszustände</StatsReport_RelevantHediffs>
   <!-- EN: Life stage -->
   <StatsReport_LifeStage>Altersgruppe</StatsReport_LifeStage>
+  <!-- EN: Shambler crawling -->
+  <StatsReport_ShamblerCrawling>Schlurfer kriecht</StatsReport_ShamblerCrawling>
   <!-- EN: Material -->
   <StatsReport_Material>Material</StatsReport_Material>
   <!-- EN: Character quality -->
@@ -42,6 +44,8 @@
   <StatsReport_ShootingExampleDistances>Die Trefferchancen bei zunehmender Distanz sind</StatsReport_ShootingExampleDistances>
   <!-- EN: Final value -->
   <StatsReport_FinalValue>Endgültiger Wert</StatsReport_FinalValue>
+  <!-- EN: Max value -->
+  <StatsReport_MaxValue>Max Wert</StatsReport_MaxValue>
   <!-- EN: Multiplier for {0} -->
   <StatsReport_MultiplierFor>Multiplikator für {0}</StatsReport_MultiplierFor>
   <!-- EN: Materials and labor -->
@@ -158,6 +162,8 @@
   <!-- EN: Satisfies user's title requirements -->
   <StatsReport_SatisfiesTitle>Erfüllt Titelanforderungen des Benutzers</StatsReport_SatisfiesTitle>
 
+  <!-- EN: Age -->
+  <Stat_Age_Label>Alter</Stat_Age_Label>
   <!-- EN: Different sources of recreation satisfy different recreation types. Colonists become bored of doing the same recreation type repeatedly, so it is important to provide a variety of recreation sources with different recreation types. -->
   <Stat_RecreationType_Desc>Das Bedürfnis nach Entspannung kann auf verschiedene Weise gestillt werden. Kolonisten langweilen sich, wenn sie sich immer wieder auf dieselbe Weise entspannen, daher ist es wichtig, mehrere verschiedene Möglichkeiten zur Entspannung bereitzustellen.</Stat_RecreationType_Desc>
   <!-- EN: All recreation types -->
@@ -200,6 +206,10 @@
   <Stat_Thing_Apparel_CountsAsClothingNudity_Name>Zählt als Kleidung (für Nudist)</Stat_Thing_Apparel_CountsAsClothingNudity_Name>
   <!-- EN: Whether nudists will consider this item to be a piece of clothing. If not, nudists will never be bothered by wearing this. -->
   <Stat_Thing_Apparel_CountsAsClothingNudity_Desc>Ob Nudisten dieses Objekt als Kleidungsstück wahrnehmen. Wenn sie dieses Objekt nicht als solches wahrnehmen, ist es ihnen egal, ob sie es tragen müssen oder nicht.</Stat_Thing_Apparel_CountsAsClothingNudity_Desc>
+  <!-- EN: Gender -->
+  <Stat_Thing_Apparel_Gender>Geschlecht</Stat_Thing_Apparel_Gender>
+  <!-- EN: Certain apparel is generally preferred by one gender. Anyone else may be unhappy wearing it. -->
+  <Stat_Thing_Apparel_Gender_Desc>Bestimmte Kleidung ist normalerweise für das eine oder andere Geschlecht besser geeignet. Jeder andere wird unglücklich, wenn sie getragen werden muss.</Stat_Thing_Apparel_Gender_Desc>
   <!-- EN: Which body parts this covers.\n\nArmor does not protect body parts that it does not cover. -->
   <Stat_Thing_Apparel_Covers_Desc>Welche Körperteile dieses Objekt bedeckt.\n\nEs werden nur Körperteile geschützt, die von einer Rüstung bedeckt sind.</Stat_Thing_Apparel_Covers_Desc>
   <!-- EN: Which apparel layers this fills.\n\nFor a given body part, only one piece of apparel can be worn in each layer. -->
@@ -294,6 +304,8 @@
   <Stat_Hediff_Pain_Desc>Wie viel Schmerz dieser Zustand verursacht.</Stat_Hediff_Pain_Desc>
   <!-- EN: The offset in efficiency applied to body parts affected by this. -->
   <Stat_Hediff_PartEfficiency_Desc>Ein Offset auf die Effizienz bei Körperteilen, die von diesem Zustand betroffen sind.</Stat_Hediff_PartEfficiency_Desc>
+  <!-- EN: How efficiently this functions compared to a natural body part. -->
+  <Stat_Hediff_PartEfficiencyAbsolute_Desc>Wie effektiv es im Vergleich zu einem natürlichen Körperteil funktioniert.</Stat_Hediff_PartEfficiencyAbsolute_Desc>
   <!-- EN: The mental abilities this affects. -->
   <Stat_Hediff_Affects_Desc>Die von diesem Zustand betroffenen geistigen Fähigkeiten.</Stat_Hediff_Affects_Desc>
   <!-- EN: Hunger rate offset -->
@@ -302,7 +314,7 @@
   <Stat_Hediff_HungerRateFactor_Desc>Ein Multiplikator darauf, wie schnell das Ernährungsbedürfnis abnimmt.</Stat_Hediff_HungerRateFactor_Desc>
   <!-- EN: An offset on the rate at which the food need depletes. -->
   <Stat_Hediff_HungerRateOffset_Desc>Ein Offset darauf, wie schnell das Ernährungsbedürfnis abnimmt. Bei negativem Wert wird eine Kreatur langsamer hungrig.</Stat_Hediff_HungerRateOffset_Desc>
-  <!-- EN: Rest fall rate -->
+  <!-- EN: Sleep fall rate -->
   <Stat_Hediff_TirednessOffset_Name>Erhohlungsabnahmerate</Stat_Hediff_TirednessOffset_Name>
   <!-- EN: An offset applied to the rate at which the creature's sleep need falls. -->
   <Stat_Hediff_TirednessOffset_Desc>Ein Offset darauf, wie schnell das Erholungsbedürfnis abnimmt. Bei negativem Wert wird eine Kreatur langsamer müde.</Stat_Hediff_TirednessOffset_Desc>
@@ -376,6 +388,14 @@
   <Stat_Building_PaintColor>Anstrichfarbe</Stat_Building_PaintColor>
   <!-- EN: The color this building was painted. -->
   <Stat_Building_PaintColorDesc>Die Farbe, mit der das Objekt gestrichen wurde.</Stat_Building_PaintColorDesc>
+  <!-- EN: Resources to make -->
+  <Stat_Building_ResourcesToMake>Notwendige Ressourcen</Stat_Building_ResourcesToMake>
+  <!-- EN: The resources required to construct this. -->
+  <Stat_Building_ResourcesToMakeDesc>Die für die Erstellung erforderlichen Ressourcen.</Stat_Building_ResourcesToMakeDesc>
+  <!-- EN: The weapon mounted on this creature. -->
+  <Stat_Thing_TurretDesc>Die an dieser Kreatur befestigte Waffe.</Stat_Thing_TurretDesc>
+  <!-- EN: The ingredients needed to make this. -->
+  <Stat_Thing_Ingredients>Die Zutaten um das herzustellen.</Stat_Thing_Ingredients>
 
   <!-- Drugs -->
   <!-- EN: The active chemical in this.\n\nIn some cases, the same chemical is present in multiple different drugs. These different drugs will satisfy the same addiction in different ways. -->
@@ -526,5 +546,9 @@
   <Stat_Source_OfficialExpansionReport>Dieser Inhalt stammt aus der offiziellen Erweiterung</Stat_Source_OfficialExpansionReport>
   <!-- EN: This content came from the mod -->
   <Stat_Source_ModReport>Dieser Inhalt stammt aus der Mod</Stat_Source_ModReport>
-  
+
+  <!-- EN: Held books -->
+  <HeldBookCount>Bücher enthalten</HeldBookCount>
+  <!-- EN: {0} hits -->
+  <Stat_TrapDamageHitCount>{0} Treffer</Stat_TrapDamageHitCount>
 </LanguageData>

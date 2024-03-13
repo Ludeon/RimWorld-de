@@ -19,20 +19,32 @@
   <!-- EN: The amount of stuff this creature can carry in its hands, mouth, or other manipulators.\n\nThis is separate from the ability to carry cargo on long cross-world trips. -->
   <CarryingCapacity.description>Wie viel diese Kreatur mit den Händen, dem Mund oder sonstigen Greifwerkzeugen tragen kann.\n\nDies hat nichts mit der Fähigkeit zu tun, Waren/Personen auf der Weltkarte zu transportieren.</CarryingCapacity.description>
   
-  <!-- EN: Maximum comfortable temperature -->
-  <ComfyTemperatureMax.label>Höchste Wohlfühltemperatur</ComfyTemperatureMax.label>
+  <!-- EN: max comfortable temperature -->
+  <ComfyTemperatureMax.label>Wohlfühltemperatur max</ComfyTemperatureMax.label>
   <!-- EN: Above this temperature, characters will be unhappy.\n\nSignificantly above this temperature, they will develop heatstroke and eventually die. -->
   <ComfyTemperatureMax.description>Temperaturen über diesem Wert macht die Kreatur unglücklich.\n\nEine signifikante Überschreitung dieser Temperatur führt zu Hitzeschlag und letztendlich zum Tod.</ComfyTemperatureMax.description>
   
-  <!-- EN: Minimum comfortable temperature -->
-  <ComfyTemperatureMin.label>Niedrigste Wohlfühltemperatur</ComfyTemperatureMin.label>
+  <!-- EN: min comfortable temperature -->
+  <ComfyTemperatureMin.label>Wohlfühltemperatur min</ComfyTemperatureMin.label>
   <!-- EN: Below this temperature, characters will be unhappy.\n\nSignificantly below this temperature, they will develop hypothermia and frostbite and eventually die. -->
   <ComfyTemperatureMin.description>Temperaturen unter diesem Wert macht die Kreatur unglücklich.\n\nEine signifikante Unterschreitung dieser Temperatur führt zu Hypothermie, Erfrierungen und letztendlich zum Tod.</ComfyTemperatureMin.description>
+  
+  <!-- EN: crawl speed -->
+  <CrawlSpeed.label>Kriechgeschwindigkeit</CrawlSpeed.label>
+  <!-- EN: Speed of crawling in cells per second. -->
+  <CrawlSpeed.description>Die Kriechgeschwindigkeit in Zellen pro Sekunde.</CrawlSpeed.description>
+  <!-- EN: {0} c/s -->
+  <CrawlSpeed.formatString>{0} Z/s</CrawlSpeed.formatString>
   
   <!-- EN: eating speed -->
   <EatingSpeed.label>Essgeschwindigkeit</EatingSpeed.label>
   <!-- EN: A multiplier on eating speed. -->
   <EatingSpeed.description>Ein Multiplikator auf die Essgeschwindigkeit.</EatingSpeed.description>
+  
+  <!-- EN: EMP resistance -->
+  <EMPResistance.label>EMP-Widerstand</EMPResistance.label>
+  <!-- EN: This mechanoid has special shielding and shock-dissipation filaments that reduce the effect of EMP damage by this percentage. This reduces the duration of stuns caused by EMP. -->
+  <EMPResistance.description>Dieser Mechanoid verfügt über eine spezielle Abschirmung und Schockdissipationsfäden, die die Wirkung von EMP-Schaden um diesen Prozentsatz reduzieren. Dadurch wird die Dauer der durch EMP verursachten Betäubung reduziert.</EMPResistance.description>
   
   <!-- EN: filth rate -->
   <FilthRate.label>Verschmutzungsrate</FilthRate.label>
@@ -59,6 +71,11 @@
   <!-- EN: The multiplier applied to a person's injury healing rate. -->
   <InjuryHealingFactor.description>Ein Multiplikator auf die Wundheilungsrate einer Person.</InjuryHealingFactor.description>
   
+  <!-- EN: recreation fall rate -->
+  <JoyFallRateFactor.label>Erholungsabfallrate</JoyFallRateFactor.label>
+  <!-- EN: A multiplier on the speed that a person's recreation need falls. -->
+  <JoyFallRateFactor.description>Ein Multiplikator auf die Geschwindigkeit, mit der die Erholung einer Person sinkt.</JoyFallRateFactor.description>
+  
   <!-- EN: leather amount -->
   <LeatherAmount.label>Ledermenge</LeatherAmount.label>
   <!-- EN: The amount of leather yielded when butchering this creature. This value is reduced if the creature is not slaughtered cleanly, or if it is wounded when killed. -->
@@ -78,15 +95,6 @@
   <MeatAmount.label>Fleischmenge</MeatAmount.label>
   <!-- EN: The amount of meat yielded when butchering this creature. This value is reduced if the creature is not slaughtered cleanly, or if it is wounded when killed. -->
   <MeatAmount.description>Die Fleischmenge, die beim Schlachten dieser Kreatur anfällt. Dieser Wert ist reduziert, wenn die Kreatur unsauber geschlachtet oder beim Töten verwundet wurde.</MeatAmount.description>
-  
-  <!-- EN: meditation psyfocus gain -->
-  <MeditationFocusGain.label>Meditationspsyfokuszunahme</MeditationFocusGain.label>
-  <!-- EN: The amount of psyfocus a person gains per day of meditation, ignoring bonuses from focus objects. -->
-  <MeditationFocusGain.description>Die Menge an Psyfokus, die eine Person pro Meditationstag gewinnt, unabhängig von Fokusobjektboni.</MeditationFocusGain.description>
-  <!-- EN: {0} / day -->
-  <MeditationFocusGain.formatString>{0} / Tag</MeditationFocusGain.formatString>
-  <!-- EN: {0} / day -->
-  <MeditationFocusGain.formatStringUnfinalized>{0} / Tag</MeditationFocusGain.formatStringUnfinalized>
   
   <!-- EN: mental break threshold -->
   <MentalBreakThreshold.label>Nervenbelastungsgrenze</MentalBreakThreshold.label>
@@ -110,18 +118,6 @@
   <!-- EN: The pain level at which this creature is downed from pain. -->
   <PainShockThreshold.description>Die Höhe des Schmerzes, den man maximal aushalten kann, bevor man zu Boden geht.</PainShockThreshold.description>
   
-  <!-- EN: neural heat limit -->
-  <PsychicEntropyMax.label>Neuralhitzelimit</PsychicEntropyMax.label>
-  <!-- EN: The maximum amount of neural heat individual can tolerate safely. -->
-  <PsychicEntropyMax.description>Die maximale Menge an Neuralhitze, die diese Kreatur gefahrlos verkraften kann.</PsychicEntropyMax.description>
-  
-  <!-- EN: neural heat recovery rate -->
-  <PsychicEntropyRecoveryRate.label>Neuralhitzerückgangsrate</PsychicEntropyRecoveryRate.label>
-  <!-- EN: The rate at which this person reduces neural heat. -->
-  <PsychicEntropyRecoveryRate.description>Wie schnell man die eigene Neuralhitze wieder abbaut.</PsychicEntropyRecoveryRate.description>
-  <!-- EN: {0}/s -->
-  <PsychicEntropyRecoveryRate.formatString>{0}/s</PsychicEntropyRecoveryRate.formatString>
-  
   <!-- EN: psychic sensitivity -->
   <PsychicSensitivity.label>mentale Sensibilität</PsychicSensitivity.label>
   <!-- EN: More sensitive people suffer more from negative psychic effects, and benefit more from positive ones. Higher psychic sensitivity also increases neural heat limit. -->
@@ -139,7 +135,7 @@
   
   <!-- EN: toxic environment resistance -->
   <ToxicEnvironmentResistance.label>Giftresistenz (Umwelt)</ToxicEnvironmentResistance.label>
-  <!-- EN: How resistant this creature is to the effects of environmental toxins. This protects against tox gas, rot stink, toxic fallout, and polluted terrain, but not against direct attacks with venom or injected poison. When this value is higher, exposure to pollution produces proportionally less toxic buildup in the body. -->
+  <!-- EN: How resistant this creature is to the effects of environmental toxins. This protects against toxic fallout and rot stink exposure, but not against direct attacks with venom or injected poison. -->
   <ToxicEnvironmentResistance.description>Wie resistent man gegen die Auswirkungen von Umweltgiften ist. Diese Resistenz schützt vor Giftgas, Verwesungsgeruch, giftigem Fallout und verseuchtem Boden, aber nicht vor direkten Giftangriffen oder Giftinjektionen. Je höher dieser Wert, desto langsamer entwickelt sich proportional eine Vergiftung im Körper bei Kontakt mit Verseuchung.</ToxicEnvironmentResistance.description>
   
   <!-- EN: toxic resistance -->

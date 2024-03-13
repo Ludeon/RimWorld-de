@@ -48,8 +48,14 @@
   <TabFormingCaravan>Karawane</TabFormingCaravan>
   <!-- EN: Contents -->
   <TabTransporterContents>Inhalt</TabTransporterContents>
+  <!-- EN: Travel -->
+  <TabMapPortalContents>Reise</TabMapPortalContents>
   <!-- EN: Contents -->
   <TabCasketContents>Inhalt</TabCasketContents>
+  <!-- EN: Details -->
+  <TabBookContents>Details</TabBookContents>
+  <!-- EN: Study -->
+  <TabStudyNotesContents>Studium</TabStudyNotesContents>
   <!-- EN: Auto-cut -->
   <TabWindTurbineAutoCut>Auto-Entf.</TabWindTurbineAutoCut>
   
@@ -82,6 +88,8 @@
   <PasteBillTip>Einfügen</PasteBillTip>
   <!-- EN: can't add more -->
   <PasteBillTip_LimitReached>keine weiteren möglich</PasteBillTip_LimitReached>
+  <!-- EN: Finishes in -->
+  <FinishesIn>Abgeschlossen in</FinishesIn>
 
   <!-- Guest/prisoner tab -->
   <!-- EN: Resistance -->
@@ -104,9 +112,9 @@
   <NotWhileAsleep>Nicht beim Schlafen</NotWhileAsleep>
   <!-- EN: Breaking out now -->
   <CurrentlyPrisonBreaking>Bricht gerade aus</CurrentlyPrisonBreaking>
-  <!-- EN: Multiplier for door count -->
+  <!-- EN: Door count -->
   <FactorForDoorCount>Multiplikator für Anzahl der Türen</FactorForDoorCount>
-  <!-- EN: Multiplier for movement -->
+  <!-- EN: Movement -->
   <FactorForMovement>Multiplikator für Bewegung</FactorForMovement>
   <!-- EN: Slave price -->
   <SlavePrice>Sklavenpreis</SlavePrice>
@@ -138,6 +146,8 @@
   <NonRecruitableTip>Dieser Gefangene hat seiner Heimat absolute Treue geschworen und wird jegliche Rekrutierungsversuche abschmettern.</NonRecruitableTip>
   <!-- EN: Their loyalty extends to their beliefs and they cannot be converted. -->
   <NonRecruitableTipCannotConvert>Seine Loyalität bezieht sich auch auf seinen Glauben. Er kann nicht bekehrt werden.</NonRecruitableTipCannotConvert>
+  <!-- EN: What type of medicine can be given to this prisoner. -->
+  <MedicineQualityDescriptionPrisoner>Welche Art von Medizin bei diesem Gefangenen verwendet werden darf.</MedicineQualityDescriptionPrisoner>
 
 
 
@@ -213,13 +223,19 @@
   <PainFactor>Schmerz</PainFactor>
   <!-- EN: Prevents infection -->
   <PreventsInfection>Verhindert Infektionen</PreventsInfection>
-  <!-- EN: Self-tend -->
-  <SelfTend>Selbstbehandlung</SelfTend>
+  <!-- EN: Allow self-tend -->
+  <AllowSelfTend>Selbstheilung</AllowSelfTend>
   <!-- EN: {0} with self-tend enabled will automatically tend to themselves on the spot at {1} the normal efficiency. -->
-  <SelfTendTip>{0} mit aktivierter Selbstbehandlung werden sich automatisch an Ort und Stelle selbst behandeln, allerdings nur mit {1} der normalen Effizienz.</SelfTendTip>
+  <AllowSelfTendTip>Mit aktivierter Selbstheilung wird sich {0} automatisch an Ort und Stelle mit {1} der normalen Effizienz behandeln.</AllowSelfTendTip>
   <!-- EN: death in {0} -->
   <DeathIn>Tod in {replace: {0}; "Tage"-"Tagen"; "Jahre"-"Jahren"}</DeathIn>
-  
+  <!-- EN: Allow medicine -->
+  <AllowMedicine>Erl.Medizin</AllowMedicine>
+  <!-- EN: What type of medicine can be given to this person. -->
+  <MedicineQualityDescription>Welche Art von Medizin dieser Person verabreicht werden darf.</MedicineQualityDescription>
+  <!-- EN: What type of food can be given to this person. -->
+  <FoodRestrictionDescription>Welche Art von Nahrung dieser Person verabreicht werden darf.</FoodRestrictionDescription>
+
   <!-- Medical - Body and activities condition -->
   <!-- EN: None -->
   <None>Nichts</None>
@@ -422,5 +438,17 @@
 
   <!-- EN: Auto-cut blocking plants -->
   <WindTurbineAutoCut_EnabledCheckbox>Blockierende Pflanzen auto-entfernen</WindTurbineAutoCut_EnabledCheckbox>
+  
+  <!-- Study tab  -->
+  <!-- EN: Study progress -->
+  <StudyNotesTab_StudyProgress>Fortschritt des Studiums</StudyNotesTab_StudyProgress>
+  <!-- EN: Ongoing -->
+  <StudyNotesTab_StudyProgressOngoing>In Arbeit</StudyNotesTab_StudyProgressOngoing>
+  <!-- EN: Completed -->
+  <StudyNotesTab_StudyProgressCompleted>Abgeschlossen</StudyNotesTab_StudyProgressCompleted>
+  <!-- EN: Toggle study -->
+  <StudyNotesTab_ToggleStudy>Studium umschalten</StudyNotesTab_ToggleStudy>
+  <!-- EN: No discoveries yet -->
+  <StudyNotesTab_NoDiscoveries>Bisher keine neuen Erkenntnisse</StudyNotesTab_NoDiscoveries>
 
 </LanguageData>
