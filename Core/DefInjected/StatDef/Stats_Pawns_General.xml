@@ -96,6 +96,15 @@
   <!-- EN: The amount of meat yielded when butchering this creature. This value is reduced if the creature is not slaughtered cleanly, or if it is wounded when killed. -->
   <MeatAmount.description>Die Fleischmenge, die beim Schlachten dieser Kreatur anfällt. Dieser Wert ist reduziert, wenn die Kreatur unsauber geschlachtet oder beim Töten verwundet wurde.</MeatAmount.description>
   
+  <!-- EN: meditation psyfocus gain -->
+  <MeditationFocusGain.label>TODO</MeditationFocusGain.label>
+  <!-- EN: The amount of psyfocus a person gains per day of meditation, ignoring bonuses from focus objects. -->
+  <MeditationFocusGain.description>TODO</MeditationFocusGain.description>
+  <!-- EN: {0} / day -->
+  <MeditationFocusGain.formatString>{0} / Tag</MeditationFocusGain.formatString>
+  <!-- EN: {0} / day -->
+  <MeditationFocusGain.formatStringUnfinalized>{0} / Tag</MeditationFocusGain.formatStringUnfinalized>
+  
   <!-- EN: mental break threshold -->
   <MentalBreakThreshold.label>Nervenbelastungsgrenze</MentalBreakThreshold.label>
   <!-- EN: As long as someone's mood is below this level, they are in danger of having a mental break.\n\nThe severity of the mental break will depend on how far below the threshold they are. -->
@@ -118,6 +127,18 @@
   <!-- EN: The pain level at which this creature is downed from pain. -->
   <PainShockThreshold.description>Die Höhe des Schmerzes, den man maximal aushalten kann, bevor man zu Boden geht.</PainShockThreshold.description>
   
+  <!-- EN: neural heat limit -->
+  <PsychicEntropyMax.label>TODO</PsychicEntropyMax.label>
+  <!-- EN: The maximum amount of neural heat individual can tolerate safely. -->
+  <PsychicEntropyMax.description>TODO</PsychicEntropyMax.description>
+  
+  <!-- EN: neural heat recovery rate -->
+  <PsychicEntropyRecoveryRate.label>TODO</PsychicEntropyRecoveryRate.label>
+  <!-- EN: The rate at which this person reduces neural heat. -->
+  <PsychicEntropyRecoveryRate.description>TODO</PsychicEntropyRecoveryRate.description>
+  <!-- EN: {0}/s -->
+  <PsychicEntropyRecoveryRate.formatString>{0}/s</PsychicEntropyRecoveryRate.formatString>
+  
   <!-- EN: psychic sensitivity -->
   <PsychicSensitivity.label>mentale Sensibilität</PsychicSensitivity.label>
   <!-- EN: More sensitive people suffer more from negative psychic effects, and benefit more from positive ones. Higher psychic sensitivity also increases neural heat limit. -->
@@ -135,7 +156,7 @@
   
   <!-- EN: toxic environment resistance -->
   <ToxicEnvironmentResistance.label>Giftresistenz (Umwelt)</ToxicEnvironmentResistance.label>
-  <!-- EN: How resistant this creature is to the effects of environmental toxins. This protects against toxic fallout and rot stink exposure, but not against direct attacks with venom or injected poison. -->
+  <!-- EN: How resistant this creature is to the effects of environmental toxins. This protects against tox gas, rot stink, toxic fallout, and polluted terrain, but not against direct attacks with venom or injected poison. When this value is higher, exposure to pollution produces proportionally less toxic buildup in the body. -->
   <ToxicEnvironmentResistance.description>Wie resistent man gegen die Auswirkungen von Umweltgiften ist. Diese Resistenz schützt vor Giftgas, Verwesungsgeruch, giftigem Fallout und verseuchtem Boden, aber nicht vor direkten Giftangriffen oder Giftinjektionen. Je höher dieser Wert, desto langsamer entwickelt sich proportional eine Vergiftung im Körper bei Kontakt mit Verseuchung.</ToxicEnvironmentResistance.description>
   
   <!-- EN: toxic resistance -->
