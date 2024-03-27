@@ -28,7 +28,9 @@
   <!-- EN: Delete custom -->
   <DeleteCustom>Eigene Ideologie löschen</DeleteCustom>
   <!-- EN: Create new -->
-  <CreateNew>Neu</CreateNew>
+  <CreateNew>Neue Ideologie erstellen</CreateNew>
+  <!-- EN: Create fluid -->
+  <CreateFluid>Fluide Ideologie erstellen</CreateFluid>
   <!-- EN: Load existing -->
   <LoadExisting>Ideologie laden</LoadExisting>
   <!-- EN: Create custom ideoligion -->
@@ -92,13 +94,17 @@
   <!-- EN: Chance to have precept -->
   <ChanceToHavePrecept>Chance, dass es folgendes Gebot hat</ChanceToHavePrecept>
   <!-- EN: {PAWN_labelShort}'s favorite color. Having more than {PERCENTAGE} of {PAWN_possessive} apparel in this color{ORIDEO} will make {PAWN_objective} slightly happier.\n\nYou can alter apparel colors at the styling station using tinctoria dye. -->
-  <FavoriteColorTooltip>Die Lieblingsfarbe von {PAWN_labelShort}. Wenn mehr als {PERCENTAGE} {PAWN_possessive}er Kleidung in dieser Farbe{ORIDEO} ist, wird {PAWN_pronoun} etwas glücklicher sein.\n\nDu kannst die Farbe der Kleidung an der Styling-Station ändern, sofern du über genug Tinktoriafarbstoff verfügst.</FavoriteColorTooltip>
+  <FavoriteColorTooltip>Die Lieblingsfarbe von {PAWN_labelShort}. Wenn mehr als {PERCENTAGE} {PAWN_possessive}er Kleidung in dieser Farbe{ORIDEO} ist, bekommt {PAWN_pronoun} einen kleinen Stimmungsbonus.\n\nDu kannst die Farbe der Kleidung an der Styling-Station ändern, sofern du genug Tinktoriafarbstoff hast.</FavoriteColorTooltip>
   <!-- EN: , or the color of {PAWN_possessive} ideoligion, -->
   <OrIdeoColor> oder in der Farbe {PAWN_possessive}er Ideologie</OrIdeoColor>
   <!-- EN: Set ideo color -->
   <SetIdeoColor>Ideologiefarbe verwenden</SetIdeoColor>
   <!-- EN: Set to favorite color -->
   <SetFavoriteColor>Lieblingsfarbe verwenden</SetFavoriteColor>
+  <!-- EN: {PAWN_nameDef}’s favorite color. Having more than 60% of {PAWN_possessive} apparel in this color, or the color of {PAWN_possessive} ideoligion, will make {PAWN_objective} slightly happier. -->
+  <FavoriteColorPickerTip>Die Lieblingsfarbe von {PAWN_labelShort}. Wenn mehr als 60% {PAWN_possessive}er Kleidung in dieser Farbe oder in der Farbe {PAWN_possessive}er Ideologie ist, bekommt {PAWN_pronoun} einen kleinen Stimmungsbonus.</FavoriteColorPickerTip>
+  <!-- EN: {PAWN_nameDef}’s ideoligion color. Having more than 60% of {PAWN_possessive} apparel in this color, or {PAWN_possessive} favorite color, will make {PAWN_objective} slightly happier. -->
+  <IdeoColorPickerTip>Die Ideologiefarbe von {PAWN_labelShort}. Wenn mehr als 60% {PAWN_possessive}er Kleidung in dieser Farbe oder in {PAWN_possessive}er Lieblingsfarbe ist, bekommt {PAWN_pronoun} einen kleinen Stimmungsbonus.</IdeoColorPickerTip>
   <!-- EN: Configure your faction's ideoligion -->
   <ConfigureIdeoligion>Konfiguriere die Ideologie deiner Fraktion</ConfigureIdeoligion>
   <!-- EN: Not enough dye. -->
@@ -388,7 +394,7 @@
 
   <!-- EN: Relic info found -->
   <RelicInfoFound>Infos über Reliquie gefunden</RelicInfoFound>
-  <!-- EN: inactive, requires atleast {0} {1}s (have {2}) -->
+  <!-- EN: inactive, requires at least {0} {1}s (have {2}) -->
   <InactiveRoleRequiresMoreBelievers>inaktiv, benötigt mindestens {0} Anhänger ({1}) (aktuell {2} vorhanden)</InactiveRoleRequiresMoreBelievers>
   
   <!-- EN: certainty -->

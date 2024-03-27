@@ -4,9 +4,11 @@
   <!-- EN: chitchat -->
   <Chitchat.label>Plaudern</Chitchat.label>
   <!-- EN:
-    <li>r_logentry->[INITIATOR_nameDef] and [RECIPIENT_nameDef] [talkedabout] [TalkTopicLight].</li>
-    <li>r_logentry->[INITIATOR_nameDef] [talkedabout] [TalkTopicLight] with [RECIPIENT_nameDef].</li>
-    <li>r_logentry(p=0.8)->[INITIATOR_nameDef] [commentedabout] [TalkTopicLight] to [RECIPIENT_nameDef].</li>
+    <li>r_logentry->[INITIATOR_nameDef] and [RECIPIENT_nameDef] [talkedabout] [subject].</li>
+    <li>r_logentry->[INITIATOR_nameDef] [talkedabout] [subject] with [RECIPIENT_nameDef].</li>
+    <li>r_logentry(p=0.8)->[INITIATOR_nameDef] [commentedabout] [subject] to [RECIPIENT_nameDef].</li>
+    <li>subject(INITIATOR_cubeInterest==false)->[TalkTopicLight]</li>
+    <li>subject(INITIATOR_cubeInterest==true)->[TalkTopicCube]</li>
     <li>talkedabout(p=4)->chatted about</li>
     <li>talkedabout->shared a word about</li>
     <li>talkedabout->spoke about</li>
@@ -21,8 +23,12 @@
     <li>commentedabout->told a joke about</li>
   -->
   <Chitchat.logRulesInitiator.rulesStrings>
-    <li>r_logentry->[INITIATOR_nameDef] und [RECIPIENT_nameDef] [talkedabout] [TalkTopicLightAcc].</li>
-    <li>r_logentry(p=0.8)->[INITIATOR_nameDef] [commentedabout] [TalkTopicLightAcc].</li>
+    <li>r_logentry(INITIATOR_cubeInterest==false,RECIPIENT_cubeInterest==false)->[INITIATOR_nameDef] und [RECIPIENT_nameDef] [talkedabout] [subject_acc].</li>
+    <li>r_logentry(INITIATOR_cubeInterest==true,RECIPIENT_cubeInterest==true)->[INITIATOR_nameDef] und [RECIPIENT_nameDef] [talkedabout] [subject_acc].</li>
+    <li>r_logentry->[INITIATOR_nameDef] [talkedabout2] [subject_acc].</li>
+    <li>r_logentry(p=0.8)->[INITIATOR_nameDef] [commentedabout] [subject_acc].</li>
+    <li>subject_acc(INITIATOR_cubeInterest==false)->[TalkTopicLightAcc]</li>
+    <li>subject_acc(INITIATOR_cubeInterest==true)->[TalkTopicCubeAcc]</li>
     <li>talkedabout(p=4)->unterhielten sich über</li>
     <li>talkedabout->diskutierten über</li>
     <li>talkedabout->sprachen über</li>
@@ -30,6 +36,13 @@
     <li>talkedabout->redeten über</li>
     <li>talkedabout->scherzten über</li>
     <li>talkedabout->witzelten über</li>
+    <li>talkedabout2(p=4)->unterhielt sich mit [RECIPIENT_nameDef] über</li>
+    <li>talkedabout2->diskutierte mit [RECIPIENT_nameDef] über</li>
+    <li>talkedabout2->sprach mit [RECIPIENT_nameDef] über</li>
+    <li>talkedabout2->quatschte mit [RECIPIENT_nameDef] über</li>
+    <li>talkedabout2->redete mit [RECIPIENT_nameDef] über</li>
+    <li>talkedabout2->scherzte mit [RECIPIENT_nameDef] über</li>
+    <li>talkedabout2->witzelte mit [RECIPIENT_nameDef] über</li>
     <li>commentedabout->sagte [RECIPIENT_nameDef] etwas über</li>
     <li>commentedabout->erzählte [RECIPIENT_nameDef] etwas über</li>
     <li>commentedabout->diskutierte mit [RECIPIENT_nameDef] über</li>
@@ -52,28 +65,45 @@
     <li>talkedabout->talked quietly about</li>
     <li>talkedabout->talked deeply about</li>
     <li>talkedabout->connected on the topic of</li>
-    <li>subject->[TalkTopicHeavy]</li>
+    <li>subject(INITIATOR_cubeInterest==false)->[TalkTopicHeavy]</li>
+    <li>subject(INITIATOR_cubeInterest==true)->[TalkTopicCube]</li>
   -->
   <DeepTalk.logRulesInitiator.rulesStrings>
-    <li>r_logentry->[INITIATOR_nameDef] und [RECIPIENT_nameDef] [talkedabout].</li>
-    <li>talkedabout->machten sich Gedanken über [TalkTopicHeavyAcc]</li>
-    <li>talkedabout->tauschten ihre Gedanken über [TalkTopicHeavyAcc] aus</li>
-    <li>talkedabout->tauschten ihre Ideen über [TalkTopicHeavyAcc] aus</li>
-    <li>talkedabout->teilten ihre Ansichten über [TalkTopicHeavyAcc]</li>
-    <li>talkedabout->teilten ihre Überzeugungen über [TalkTopicHeavyAcc]</li>
-    <li>talkedabout->diskutierten über [TalkTopicHeavyAcc]</li>
-    <li>talkedabout->hatten ein inniges Gespräch über [TalkTopicHeavyAcc]</li>
-    <li>talkedabout->sprachen leise über [TalkTopicHeavyAcc]</li>
-    <li>talkedabout->sprachen ausführlich über [TalkTopicHeavyAcc]</li>
-    <li>talkedabout->kamen sich näher, als sie über [TalkTopicHeavyAcc] sprachen</li>
+    <li>r_logentry(INITIATOR_cubeInterest==false,RECIPIENT_cubeInterest==false)->[INITIATOR_nameDef] und [RECIPIENT_nameDef] [talkedabout].</li>
+    <li>r_logentry(INITIATOR_cubeInterest==true,RECIPIENT_cubeInterest==true)->[INITIATOR_nameDef] und [RECIPIENT_nameDef] [talkedabout].</li>
+    <li>r_logentry->[INITIATOR_nameDef] [talkedabout2].</li>
+    <li>talkedabout->machten sich Gedanken über [subject_acc]</li>
+    <li>talkedabout->tauschten ihre Gedanken über [subject_acc] aus</li>
+    <li>talkedabout->tauschten ihre Ideen über [subject_acc] aus</li>
+    <li>talkedabout->teilten ihre Ansichten über [subject_acc]</li>
+    <li>talkedabout->teilten ihre Überzeugungen über [subject_acc]</li>
+    <li>talkedabout->diskutierten über [subject_acc]</li>
+    <li>talkedabout->hatten ein inniges Gespräch über [subject_acc]</li>
+    <li>talkedabout->sprachen leise über [subject_acc]</li>
+    <li>talkedabout->sprachen ausführlich über [subject_acc]</li>
+    <li>talkedabout->kamen sich näher, als sie über [subject_acc] sprachen</li>
+    <li>talkedabout2->tauschte mit [RECIPIENT_nameDef] [INITIATOR_possessive]e Gedanken über [subject_acc] aus</li>
+    <li>talkedabout2->tauschte mit [RECIPIENT_nameDef] [INITIATOR_possessive]e Ideen über [subject_acc] aus</li>
+    <li>talkedabout2->teilte [RECIPIENT_nameDef] [INITIATOR_possessive]e Ansichten über [subject_acc] mit</li>
+    <li>talkedabout2->teilte [RECIPIENT_nameDef] [INITIATOR_possessive]e Überzeugungen über [subject_acc] mit</li>
+    <li>talkedabout2->diskutierte mit [RECIPIENT_nameDef] über [subject_acc]</li>
+    <li>talkedabout2->hatte mit [RECIPIENT_nameDef] ein inniges Gespräch über [subject_acc]</li>
+    <li>talkedabout2->sprach leise mit [RECIPIENT_nameDef] über [subject_acc]</li>
+    <li>talkedabout2->sprach ausführlich mit [RECIPIENT_nameDef] über [subject_acc]</li>
+    <li>talkedabout2->kam [RECIPIENT_nameDef] näher, als [INITIATOR_pronoun] über [subject_acc] sprach</li>
+    <li>subject_acc(INITIATOR_cubeInterest==false)->[TalkTopicHeavyAcc]</li>
+    <li>subject_acc(INITIATOR_cubeInterest==true)->[TalkTopicCubeAcc]</li>
   </DeepTalk.logRulesInitiator.rulesStrings>
   
   <!-- EN: insult -->
   <Insult.label>Beleidigung</Insult.label>
   <!-- EN:
-    <li>r_logentry(p=3)->[INITIATOR_nameDef] [insulted] [target]'s [PersonalCharacteristic].</li>
+    <li>r_logentry(p=3)->[INITIATOR_nameDef] [insulted] [target]'s [characteristic].</li>
     <li>r_logentry->[INITIATOR_nameDef] compared [target] to a [insultcomparison].</li>
     <li>r_logentry->[INITIATOR_nameDef] called [target] a [insultcomparison].</li>
+    <li>r_logentry(INITIATOR_cubeInterest==false,RECIPIENT_cubeInterest==true)->[INITIATOR_nameDef] called [target] a false idol worshipper.</li>
+    <li>characteristic(INITIATOR_cubeInterest==false)->[PersonalCharacteristic]</li>
+    <li>characteristic(INITIATOR_cubeInterest==true)->[PersonalCharacteristicCube]</li>
     <li>target(p=4)->[RECIPIENT_nameDef]</li>
     <li>target->[RECIPIENT_nameDef]'s [PersonFamily]</li>
     <li>insulted(p=3)->insulted</li>
@@ -86,18 +116,23 @@
     <li>insulted->slandered</li>
     <li>insulted->hurled invective about</li>
     <li>insulted->derided</li>
-    <li>insultcomparison(p=2)->[Animal]</li>
-    <li>insultcomparison->[Enemy]</li>
+    <li>insultcomparison(INITIATOR_cubeInterest==false,p=2)->[Animal]</li>
+    <li>insultcomparison(INITIATOR_cubeInterest==false)->[Enemy]</li>
+    <li>insultcomparison(INITIATOR_cubeInterest==true)->sphere</li>
+    <li>insultcomparison(INITIATOR_cubeInterest==true)->non-cubic geometric shape</li>
   -->
   <Insult.logRulesInitiator.rulesStrings>
-    <li>r_logentry->[INITIATOR_nameDef] [insulted] [RECIPIENT_nameDef_s] [PersonalCharacteristic].</li>
-    <li>r_logentry->[INITIATOR_nameDef] [insulted] [RECIPIENT_nameDef_s] [PersonalCharacteristics].</li>
-    <li>r_logentry->[INITIATOR_nameDef] [insulted] die [PersonalCharacteristics] von [targetDat].</li>
-    <li>r_logentry->[INITIATOR_nameDef] [insulted] den [PersonalCharacteristicMas] von [targetDat].</li>
-    <li>r_logentry->[INITIATOR_nameDef] [insulted] die [PersonalCharacteristicFem] von [targetDat].</li>
-    <li>r_logentry->[INITIATOR_nameDef] [insulted] das [PersonalCharacteristicNeu] von [targetDat].</li>
+    <li>r_logentry(INITIATOR_cubeInterest==false)->[INITIATOR_nameDef] [insulted] [RECIPIENT_nameDef_s] [PersonalCharacteristic].</li>
+    <li>r_logentry(INITIATOR_cubeInterest==false)->[INITIATOR_nameDef] [insulted] [RECIPIENT_nameDef_s] [PersonalCharacteristics].</li>
+    <li>r_logentry(INITIATOR_cubeInterest==false)->[INITIATOR_nameDef] [insulted] die [PersonalCharacteristics] von [targetDat].</li>
+    <li>r_logentry(INITIATOR_cubeInterest==false)->[INITIATOR_nameDef] [insulted] den [PersonalCharacteristicMas] von [targetDat].</li>
+    <li>r_logentry(INITIATOR_cubeInterest==false)->[INITIATOR_nameDef] [insulted] die [PersonalCharacteristicFem] von [targetDat].</li>
+    <li>r_logentry(INITIATOR_cubeInterest==false)->[INITIATOR_nameDef] [insulted] das [PersonalCharacteristicNeu] von [targetDat].</li>
+    <li>r_logentry(INITIATOR_cubeInterest==true)->[INITIATOR_nameDef] [insulted] [RECIPIENT_nameDef_s] [PersonalCharacteristicCube].</li>
+    <li>r_logentry(INITIATOR_cubeInterest==true)->[INITIATOR_nameDef] [insulted] [PersonalCharacteristicCube_definite_acc] von [targetDat].</li>
     <li>r_logentry->[INITIATOR_nameDef] verglich [targetAcc] mit [insultcomparison].</li>
     <li>r_logentry->[INITIATOR_nameDef] bezeichnete [targetAcc] als [insult].</li>
+    <li>r_logentry(INITIATOR_cubeInterest==false,RECIPIENT_cubeInterest==true)->[INITIATOR_nameDef] nannte [targetAcc] einen falschen Götzenanbeter.</li>
     <li>targetDat(p=4)->[RECIPIENT_nameDef]</li>
     <li>targetDat->[RECIPIENT_nameDef_s] [PersonFamilyDat]</li>
     <li>targetAcc(p=4)->[RECIPIENT_nameDef]</li>
@@ -111,19 +146,25 @@
     <li>insulted->verleumdete</li>
     <li>insulted->schimpfte hemmungslos über</li>
     <li>insulted->verspottete</li>
-    <li>insultcomparison(p=0.66)->einer [AnimalFemDat]</li>
-    <li>insultcomparison(p=0.66)->einem [AnimalMasDat]</li>
-    <li>insultcomparison(p=0.66)->einem [AnimalNeuDat]</li>
-    <li>insultcomparison->einem [EnemyDat]</li>
-    <li>insult->[AnimalAcc]</li>
-    <li>insult->[EnemyAcc]</li>
+    <li>insultcomparison(INITIATOR_cubeInterest==false,p=0.66)->einer [AnimalFemDat]</li>
+    <li>insultcomparison(INITIATOR_cubeInterest==false,p=0.66)->einem [AnimalMasDat]</li>
+    <li>insultcomparison(INITIATOR_cubeInterest==false,p=0.66)->einem [AnimalNeuDat]</li>
+    <li>insultcomparison(INITIATOR_cubeInterest==false)->einem [EnemyDat]</li>
+    <li>insultcomparison(INITIATOR_cubeInterest==true)->einer Sphäre</li>
+    <li>insultcomparison(INITIATOR_cubeInterest==true)->einer nicht-kubischen geometrischen Form</li>
+    <li>insult(INITIATOR_cubeInterest==false)->[AnimalAcc]</li>
+    <li>insult(INITIATOR_cubeInterest==false)->[EnemyAcc]</li>
+    <li>insult(INITIATOR_cubeInterest==true)->eine Sphäre</li>
+    <li>insult(INITIATOR_cubeInterest==true)->eine nicht-kubische geometrische Form</li>
     <li>RECIPIENT_nameDef_s->{replace: [RECIPIENT_nameDef]s; "s&lt;/color>s"-"s&lt;/color>'"; "ß&lt;/color>s"-"ß&lt;/color>'"; "z&lt;/color>s"-"z&lt;/color>'"; "x&lt;/color>s"-"x&lt;/color>'"; "ce&lt;/color>s"-"ce&lt;/color>'"}</li>
   </Insult.logRulesInitiator.rulesStrings>
   
   <!-- EN: kind words -->
   <KindWords.label>nette Worte</KindWords.label>
   <!-- EN:
-    <li>r_logentry->[INITIATOR_nameDef] [complimented] [RECIPIENT_nameDef]'s [PersonalCharacteristic].</li>
+    <li>r_logentry->[INITIATOR_nameDef] [complimented] [RECIPIENT_nameDef]'s [characteristic].</li>
+    <li>characteristic(INITIATOR_cubeInterest==false)->[PersonalCharacteristic]</li>
+    <li>characteristic(INITIATOR_cubeInterest==true)->[PersonalCharacteristicCube]</li>
     <li>complimented(p=3)->complimented</li>
     <li>complimented->praised</li>
     <li>complimented->commended</li>
@@ -139,12 +180,14 @@
     <li>complimented->said good things about</li>
   -->
   <KindWords.logRulesInitiator.rulesStrings>
-    <li>r_logentry->[INITIATOR_nameDef] [complimented] [RECIPIENT_nameDef_s] [PersonalCharacteristics].</li>
-    <li>r_logentry->[INITIATOR_nameDef] [complimented] [RECIPIENT_nameDef_s] [PersonalCharacteristic].</li>
-    <li>r_logentry->[INITIATOR_nameDef] [complimented] die [PersonalCharacteristics] von [RECIPIENT_nameDef].</li>
-    <li>r_logentry->[INITIATOR_nameDef] [complimented] den [PersonalCharacteristicMas] von [RECIPIENT_nameDef].</li>
-    <li>r_logentry->[INITIATOR_nameDef] [complimented] die [PersonalCharacteristicFem] von [RECIPIENT_nameDef].</li>
-    <li>r_logentry->[INITIATOR_nameDef] [complimented] das [PersonalCharacteristicNeu] von [RECIPIENT_nameDef].</li>
+    <li>r_logentry(INITIATOR_cubeInterest==false)->[INITIATOR_nameDef] [complimented] [RECIPIENT_nameDef_s] [PersonalCharacteristics].</li>
+    <li>r_logentry(INITIATOR_cubeInterest==false)->[INITIATOR_nameDef] [complimented] [RECIPIENT_nameDef_s] [PersonalCharacteristic].</li>
+    <li>r_logentry(INITIATOR_cubeInterest==false)->[INITIATOR_nameDef] [complimented] die [PersonalCharacteristics] von [RECIPIENT_nameDef].</li>
+    <li>r_logentry(INITIATOR_cubeInterest==false)->[INITIATOR_nameDef] [complimented] den [PersonalCharacteristicMas] von [RECIPIENT_nameDef].</li>
+    <li>r_logentry(INITIATOR_cubeInterest==false)->[INITIATOR_nameDef] [complimented] die [PersonalCharacteristicFem] von [RECIPIENT_nameDef].</li>
+    <li>r_logentry(INITIATOR_cubeInterest==false)->[INITIATOR_nameDef] [complimented] das [PersonalCharacteristicNeu] von [RECIPIENT_nameDef].</li>
+    <li>r_logentry(INITIATOR_cubeInterest==true)->[INITIATOR_nameDef] [complimented] [RECIPIENT_nameDef_s] [PersonalCharacteristicCube].</li>
+    <li>r_logentry(INITIATOR_cubeInterest==true)->[INITIATOR_nameDef] [complimented] [PersonalCharacteristicCube_definite_acc] von [RECIPIENT_nameDef].</li>
     <li>complimented(p=3)->lobte</li>
     <li>complimented->bewunderte</li>
     <li>complimented->erwähnte lobend</li>
@@ -162,7 +205,9 @@
   <!-- EN: slight -->
   <Slight.label>Herablassung</Slight.label>
   <!-- EN:
-    <li>r_logentry->[INITIATOR_nameDef] [madefunof] [target]'s [PersonalCharacteristic].</li>
+    <li>r_logentry->[INITIATOR_nameDef] [madefunof] [target]'s [characteristic].</li>
+    <li>characteristic(INITIATOR_cubeInterest==false)->[PersonalCharacteristic]</li>
+    <li>characteristic(INITIATOR_cubeInterest==true)->[PersonalCharacteristicCube]</li>
     <li>target(p=4)->[RECIPIENT_nameDef]</li>
     <li>target->[RECIPIENT_nameDef]'s [PersonFamily]</li>
     <li>madefunof->made fun of</li>
@@ -179,12 +224,14 @@
     <li>madefunof->offered a backhanded compliment about</li>
   -->
   <Slight.logRulesInitiator.rulesStrings>
-    <li>r_logentry->[INITIATOR_nameDef] [madefunof] [RECIPIENT_nameDef_s] [PersonalCharacteristic].</li>
-    <li>r_logentry->[INITIATOR_nameDef] [madefunof] [RECIPIENT_nameDef_s] [PersonalCharacteristics].</li>
-    <li>r_logentry->[INITIATOR_nameDef] [madefunof] die [PersonalCharacteristics] von [targetDat].</li>
-    <li>r_logentry->[INITIATOR_nameDef] [madefunof] den [PersonalCharacteristicMas] von [targetDat].</li>
-    <li>r_logentry->[INITIATOR_nameDef] [madefunof] die [PersonalCharacteristicFem] von [targetDat].</li>
-    <li>r_logentry->[INITIATOR_nameDef] [madefunof] das [PersonalCharacteristicNeu] von [targetDat].</li>
+    <li>r_logentry(INITIATOR_cubeInterest==false)->[INITIATOR_nameDef] [madefunof] [RECIPIENT_nameDef_s] [PersonalCharacteristic].</li>
+    <li>r_logentry(INITIATOR_cubeInterest==false)->[INITIATOR_nameDef] [madefunof] [RECIPIENT_nameDef_s] [PersonalCharacteristics].</li>
+    <li>r_logentry(INITIATOR_cubeInterest==false)->[INITIATOR_nameDef] [madefunof] die [PersonalCharacteristics] von [targetDat].</li>
+    <li>r_logentry(INITIATOR_cubeInterest==false)->[INITIATOR_nameDef] [madefunof] den [PersonalCharacteristicMas] von [targetDat].</li>
+    <li>r_logentry(INITIATOR_cubeInterest==false)->[INITIATOR_nameDef] [madefunof] die [PersonalCharacteristicFem] von [targetDat].</li>
+    <li>r_logentry(INITIATOR_cubeInterest==false)->[INITIATOR_nameDef] [madefunof] das [PersonalCharacteristicNeu] von [targetDat].</li>
+    <li>r_logentry(INITIATOR_cubeInterest==true)->[INITIATOR_nameDef] [madefunof] [RECIPIENT_nameDef_s] [PersonalCharacteristicCube].</li>
+    <li>r_logentry(INITIATOR_cubeInterest==true)->[INITIATOR_nameDef] [madefunof] [PersonalCharacteristicCube_definite_acc] von [targetDat].</li>
     <li>targetDat(p=4)->[RECIPIENT_nameDef]</li>
     <li>targetDat->[RECIPIENT_nameDef_s] [PersonFamilyDat]</li>
     <li>madefunof->machte sich lustig über</li>

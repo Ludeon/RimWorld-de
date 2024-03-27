@@ -22,6 +22,7 @@ $paths = @(
 "*\DefInjected\ThingDef"
 "*\DefInjected\TraderKindDef"
 "*\DefInjected\WorldObjectDef"
+"*\DefInjected\RitualBehaviorDef"
 )
 
 # Search words in the XML files

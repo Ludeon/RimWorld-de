@@ -40,8 +40,15 @@
     <li>lodgerViolatedMemoryThoughtLetterText->[letterIntroViolated]\n\n[appalledButNoAction]</li>
     <li>lodgerViolatedAttackPlayerLetterLabel->[lodgersLabel] violated: Revenge</li>
     <li>lodgerViolatedAttackPlayerLetterText->[letterIntroViolated]\n\n[turnedViolent]</li>
-    <li>lodgerViolatedLeaveMapLetterLabel->[lodgersLabel] arrested: Departure</li>
+    <li>lodgerViolatedLeaveMapLetterLabel->[lodgersLabel] violated: Departure</li>
     <li>lodgerViolatedLeaveMapLetterText->[letterIntroViolated]\n\n[decidedToLeave]</li>
+    <li>letterIntroPsychicRitualTarget->{SUBJECT_definite}, [oneOfThe], was the target of a psychic ritual.</li>
+    <li>lodgerPsychicRitualTargetMemoryThoughtLetterLabel->[lodgersLabel] violated: Anger</li>
+    <li>lodgerPsychicRitualTargetMemoryThoughtLetterText->[letterIntroPsychicRitualTarget]\n\n[appalledButNoAction]</li>
+    <li>lodgerPsychicRitualTargetAttackPlayerLetterLabel->[lodgersLabel] violated: Revenge</li>
+    <li>lodgerPsychicRitualTargetAttackPlayerLetterText->[letterIntroPsychicRitualTarget]\n\n[turnedViolent]</li>
+    <li>lodgerPsychicRitualTargetLeaveMapLetterLabel->[lodgersLabel] violated: Departure</li>
+    <li>lodgerPsychicRitualTargetLeaveMapLetterText->[letterIntroPsychicRitualTarget]\n\n[decidedToLeave]</li>
     <li>mutinyLetterLabel->Betrayal</li>
     <li>mutinyLetterText->[lodgersSingularOrPluralDef] [whoAskedToStay] [areIs] turning against you!\n\nIt seems [lodgersPronoun] had this treachery planned all along.</li>
     <li>areIs(lodgerCount==1)->is</li>
@@ -92,6 +99,13 @@
     <li>lodgerViolatedAttackPlayerLetterText->[letterIntroViolated]\n\n[turnedViolent]</li>
     <li>lodgerViolatedLeaveMapLetterLabel->[lodgersLabel] verletzt: Weggang</li>
     <li>lodgerViolatedLeaveMapLetterText->[letterIntroViolated]\n\n[decidedToLeave]</li>
+    <li>letterIntroPsychicRitualTarget->{SUBJECT_definite}, einer der verzweifelten [faction_pawnsPlural], der bei dir bleiben wollte, war Ziel eines mentalen Rituals.</li>
+    <li>lodgerPsychicRitualTargetMemoryThoughtLetterLabel->[lodgersLabel] verletzt: Wut</li>
+    <li>lodgerPsychicRitualTargetMemoryThoughtLetterText->[letterIntroPsychicRitualTarget]\n\n[appalledButNoAction]</li>
+    <li>lodgerPsychicRitualTargetAttackPlayerLetterLabel->[lodgersLabel] verletzt: Rache</li>
+    <li>lodgerPsychicRitualTargetAttackPlayerLetterText->[letterIntroPsychicRitualTarget]\n\n[turnedViolent]</li>
+    <li>lodgerPsychicRitualTargetLeaveMapLetterLabel->[lodgersLabel] verletzt: Weggang</li>
+    <li>lodgerPsychicRitualTargetLeaveMapLetterText->[letterIntroPsychicRitualTarget]\n\n[decidedToLeave]</li>
     <li>mutinyLetterLabel->Verrat</li>
     <li>mutinyLetterText(lodgerCount==1)->[lodgersSingularOrPluralDef], {asker_gender ? der : die : das} bei dir bleiben wollte, hat sich gegen dich gewandt!\n\nEs scheint, als hätte [asker_pronoun] diesen Verrat von Anfang an geplant.</li>
     <li>mutinyLetterText(lodgerCount>=2)->[lodgersSingularOrPluralDef], die bei dir bleiben wollten, haben sich gegen dich gewandt!\n\nEs scheint, als hätten sie diesen Verrat von Anfang an geplant.</li>

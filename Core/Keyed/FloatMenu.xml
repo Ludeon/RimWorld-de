@@ -23,7 +23,7 @@
   <NotAllowed>Nicht erlaubt</NotAllowed>
   
   <!-- EN: Fire at {1_labelShort} -->
-  <FireAt>Schieße auf {1_label}</FireAt>
+  <FireAt>Schieße auf {1_labelShort}</FireAt>
 
   <!-- EN: out of range -->
   <OutOfRange>außer Reichweite</OutOfRange>
@@ -52,9 +52,9 @@
   <OrderManThing>Bemanne {1_labelShort}</OrderManThing>
   
   <!-- EN: Melee attack {1_labelShort} -->
-  <MeleeAttack>Attackiere {1_label} im Nahkampf</MeleeAttack>
+  <MeleeAttack>Attackiere {1_labelShort} im Nahkampf</MeleeAttack>
   <!-- EN: Melee attack {1_labelShort} to death -->
-  <MeleeAttackToDeath>Töte {1_label} im Nahkampf</MeleeAttackToDeath>
+  <MeleeAttackToDeath>Töte {1_labelShort} im Nahkampf</MeleeAttackToDeath>
   <!-- EN: no path -->
   <NoPath>kein Weg</NoPath>
   <!-- EN: burying -->
@@ -159,7 +159,7 @@
   <!-- EN: incapable of mining -->
   <IncapableOfMining>Bergbau nicht möglich</IncapableOfMining>
   <!-- EN: tree marked for extraction -->
-  <TreeMarkedForExtraction>Baum ist zur Ausgrabung markiert</TreeMarkedForExtraction>
+  <TreeMarkedForExtraction>Baum zum Ausgraben markiert</TreeMarkedForExtraction>
   <!-- EN: angers faction -->
   <AngersFaction>verärgert Fraktion</AngersFaction>
   <!-- EN: no body part -->
@@ -201,16 +201,16 @@
   <!-- EN: Arrest {0} -->
   <Arrest>Inhaftiere {0}</Arrest>
   <!-- EN: Try to arrest {1_labelShort} ({2} chance) -->
-  <TryToArrest>Inhaftiere {1_label} ({2} Chance)</TryToArrest>
+  <TryToArrest>Inhaftiere {1_labelShort} ({2} Chance)</TryToArrest>
   <!-- EN: Cannot arrest -->
   <CannotArrest>Kann nicht inhaftieren</CannotArrest>
   <!-- EN: {0} chance of arrest -->
   <ArrestChance>{0} Inhaftierungschance</ArrestChance>
 
   <!-- EN: Capture {1_labelShort} -->
-  <Capture>Fange {1_label} ein</Capture>
+  <Capture>Fange {1_labelShort} ein</Capture>
   <!-- EN: capture {0_labelShort} -->
-  <CaptureLower>fange {0_labelShort} ein</CaptureLower>
+  <CaptureLower>fange {1_labelShort} ein</CaptureLower>
   <!-- EN: Cannot capture -->
   <CannotCapture>Kann nicht einfangen</CannotCapture>
   <!-- EN: unwaveringly loyal -->
@@ -218,24 +218,24 @@
   <!-- EN: not recruitable -->
   <UnrecruitableNoFaction>nicht rekrutierbar</UnrecruitableNoFaction> 
   <!-- EN: Transfer {0_label} -->
-  <TransferEntity>{0_definite} verlegen</TransferEntity> 
+  <TransferEntity>Transferieren</TransferEntity> 
 
   <!-- EN: Rescue {1_labelShort} -->
-  <Rescue>Rette {1_label}</Rescue>
+  <Rescue>Rette {1_labelShort}</Rescue>
   <!-- EN: Put {1_labelShort} somewhere safe -->
-  <PutSomewhereSafe>Lege {1_label} an einen sicheren Ort</PutSomewhereSafe>
+  <PutSomewhereSafe>Lege {1_labelShort} an einen sicheren Ort</PutSomewhereSafe>
   <!-- EN: Taking {0_labelShort} to bed. -->
   <TakingToBed>Bringt {0_labelShort} ins Bett.</TakingToBed>
   <!-- EN: Cannot rescue -->
   <CannotRescue>Kann nicht retten</CannotRescue>
 
   <!-- EN: Carry {1_labelShort} to cryptosleep casket -->
-  <CarryToCryptosleepCasket>Trage {1_label} zu Kryptoschlafkapsel</CarryToCryptosleepCasket>
+  <CarryToCryptosleepCasket>Trage {1_labelShort} zu Kryptoschlafkapsel</CarryToCryptosleepCasket>
   <!-- EN: Cannot carry to cryptosleep casket -->
   <CannotCarryToCryptosleepCasket>Kann nicht zu Kryptoschlafkapsel tragen</CannotCarryToCryptosleepCasket>
 
   <!-- EN: Carry {0_labelShort} to shuttle -->
-  <CarryToShuttle>Trage {0_label} zu Shuttle</CarryToShuttle>
+  <CarryToShuttle>Trage {0_labelShort} zu Shuttle</CarryToShuttle>
 
   <!-- EN: No available cryptosleep casket. -->
   <NoCryptosleepCasket>Keine Kryptoschlafkapsel verfügbar.</NoCryptosleepCasket>
@@ -248,15 +248,15 @@
   <!-- EN: No reachable, un-reserved, enclosed prisoner-marked bed in safe temperature. -->
   <NoPrisonerBed>Kein Bett für Gefangene verfügbar, das erreichbar, frei und in sicherer Temperatur ist.</NoPrisonerBed>
   <!-- EN: No prisoner bed available. -->
-  <NoPrisonerBedShort>Kein Gefängnisbett verfügbar.</NoPrisonerBedShort>
+  <NoPrisonerBedShort>kein Bett für Gefangene verfügbar</NoPrisonerBedShort>
   <!-- EN: No reachable, un-reserved non-prisoner bed in safe temperature. -->
   <NoNonPrisonerBed>Kein Bett für Kolonisten verfügbar, das erreichbar, frei und in sicherer Temperatur ist.</NoNonPrisonerBed>
   <!-- EN: No reachable, un-reserved animal bed in safe temperature. -->
   <NoAnimalBed>Kein Bett für Tiere verfügbar, das erreichbar, frei und in sicherer Temperatur ist.</NoAnimalBed>
   <!-- EN: No reachable, unforbidden, un-reserved {0} -->
-  <NoItemReservedOrReachable>Kein {0}, das erreichbar, verfügbar und nicht reserviert ist</NoItemReservedOrReachable>
+  <NoItemReservedOrReachable>{0_gender ? Kein : Keine} {0} verfügbar, {0_gender ? der : die : das} erreichbar, erlaubt und unreserviert ist</NoItemReservedOrReachable>
   <!-- EN: No unforbidden, un-reserved {0} -->
-  <NoItemReserved>Kein {0}, das nicht verboten und nicht reserviert ist</NoItemReserved>
+  <NoItemReserved>{0_gender ? Kein : Keine} {0} verfügbar, {0_gender ? der : die : das} erlaubt und unreserviert ist</NoItemReserved>
   <!-- EN: Reserved by someone else. -->
   <Reserved>Reserviert von jemand anderem.</Reserved>
   <!-- EN: Reserved by {1_labelShort} -->
@@ -353,22 +353,22 @@
   <OverweightLower>überladen</OverweightLower>
 
   <!-- EN: Cannot carry {1_labelShort} and leave the area -->
-  <CannotCarryToExit>Kann {1_label} nicht tragen und das Gebiet verlassen</CannotCarryToExit>
+  <CannotCarryToExit>Kann {1_labelShort} nicht tragen und das Gebiet verlassen</CannotCarryToExit>
   <!-- EN: Carry {1_labelShort} and leave the area -->
-  <CarryToExit>Nimm {1_label} und verlasse das Gebiet</CarryToExit>
+  <CarryToExit>Nimm {1_labelShort} und verlasse das Gebiet</CarryToExit>
   <!-- EN: Capture {1_labelShort} and leave the area -->
-  <CarryToExitAndCapture>Entführe {1_label} und verlasse das Gebiet</CarryToExitAndCapture>
+  <CarryToExitAndCapture>Entführe {1_labelShort} und verlasse das Gebiet</CarryToExitAndCapture>
   
   <!-- EN: Strip {1_labelShort} -->
-  <Strip>Entkleide {1_label}</Strip>
+  <Strip>Entkleide {1_labelShort}</Strip>
   <!-- EN: Cannot strip {1_labelShort} -->
-  <CannotStrip>Kann {1_label} nicht entkleiden</CannotStrip>
+  <CannotStrip>Kann {1_labelShort} nicht entkleiden</CannotStrip>
   <!-- EN: Cannot drop {1_labelShort} -->
-  <CannotDrop>Kann {1_label} nicht ablegen</CannotDrop>
+  <CannotDrop>Kann {1_labelShort} nicht ablegen</CannotDrop>
   <!-- EN: Carry {0_labelShort} -->
-  <Carry>Trage {0_label}</Carry>
+  <Carry>Trage {0_labelShort}</Carry>
   <!-- EN: Cannot carry {0_labelShort} -->
-  <CannotCarry>Kann {0_label} nicht tragen</CannotCarry>
+  <CannotCarry>Kann {0_labelShort} nicht tragen</CannotCarry>
   <!-- EN: hostile -->
   <CarriedPawnHostile>feindlich</CarriedPawnHostile>
   <!-- EN: temporary faction member -->
@@ -387,7 +387,7 @@
   <SelfDestructHere>Hier selbstzerstören</SelfDestructHere>
   
   <!-- EN: Drop {1_labelShort} -->
-  <Drop>Lass {1_label} fallen</Drop>
+  <Drop>Lass {1_labelShort} fallen</Drop>
 
   <!-- EN: Rest until healed -->
   <UseMedicalBed>Ruhe dich aus, bis du geheilt bist</UseMedicalBed>
@@ -403,7 +403,7 @@
   <!-- EN: Trade with {0} -->
   <TradeWith>Handle mit {0}</TradeWith>
   <!-- EN: Dismiss trader -->
-  <DismissTrader>Händler wegschicken</DismissTrader>
+  <DismissTrader>Schicke Händler weg</DismissTrader>
   <!-- EN: Cannot trade -->
   <CannotTrade>Kann nicht handeln</CannotTrade>
   <!-- EN: Trader dismissed -->
@@ -436,15 +436,15 @@
   <!-- EN: Enter {0} -->
   <EnterPortal>Betrete {0}</EnterPortal>
   <!-- EN: Entering {0} -->
-  <EnteringPortal>Betrete {0}</EnteringPortal>
+  <EnteringPortal>Betritt {0}</EnteringPortal>
   <!-- EN: Enter {0} -->
-  <CommandEnterPortal>Betrete {0}</CommandEnterPortal>
+  <CommandEnterPortal>{0} betreten</CommandEnterPortal>
   <!-- EN: Select people and items to enter the {0}. -->
-  <CommandEnterPortalDesc>Wähle die Personen und Gegenstände aus, die {0} betreten sollen.</CommandEnterPortalDesc>
+  <CommandEnterPortalDesc>Wähle Personen und Gegenstände aus, mit denen {0_gender ? der : die : das} {lookup: {0}; decline; 4} betreten werden soll.</CommandEnterPortalDesc>
   <!-- EN: Cancel entering -->
   <CommandCancelEnterPortal>Betreten abbrechen</CommandCancelEnterPortal>
   <!-- EN: Cancel loading people or items into this. -->
-  <CommandCancelEnterPortalDesc>Das Beladen von Personen und Gegenständen abbrechen.</CommandCancelEnterPortalDesc>
+  <CommandCancelEnterPortalDesc>Brich das Betreten ab.</CommandCancelEnterPortalDesc>
 
   <!-- Specific thing interactions -->
   <!-- EN: Enter cryptosleep casket -->
@@ -574,11 +574,11 @@
   <AlreadyInvoked>schon beschworen</AlreadyInvoked>
 
   <!-- EN: Tend {0} -->
-  <Tend>Behandle {0_label}</Tend>
+  <Tend>Behandle {0_labelShort}</Tend>
   <!-- EN: Cannot tend {0} -->
-  <CannotTend>Kann {0_label} nicht behandeln</CannotTend>
+  <CannotTend>Kann {0_labelShort} nicht behandeln</CannotTend>
   <!-- EN: {0} does not require tending -->
-  <TendingNotRequired>{0_label} muss nicht behandelt werden</TendingNotRequired>
+  <TendingNotRequired>{0_labelShort} muss nicht behandelt werden</TendingNotRequired>
   <!-- EN: without medicine -->
   <WithoutMedicine>ohne Medizin</WithoutMedicine>
 
@@ -608,7 +608,7 @@
   <FoodNotSuitable>Ungeeignete Nahrung</FoodNotSuitable>
 
   <!-- EN: Unsuitable drug -->
-  <DrugNotSuitable>Unpassende Droge</DrugNotSuitable>
+  <DrugNotSuitable>Ungeeignete Droge</DrugNotSuitable>
   
   <!-- Books -->
   <!-- EN: Assign reading... -->
@@ -619,11 +619,11 @@
   <AssignCannotReadNow>Kann {0} nicht lesen</AssignCannotReadNow>
 
   <!-- EN: Prioritize extinguishing fires -->
-  <ExtinguishFiresNearby>Priorisiere Feuerlöschen</ExtinguishFiresNearby>
+  <ExtinguishFiresNearby>Priorisiere Löschen von Feuer</ExtinguishFiresNearby>
 
   <!-- Analysis -->
   <!-- EN: already analyzed -->
-  <AlreadyAnalyzed>schon analysiert</AlreadyAnalyzed>
+  <AlreadyAnalyzed>bereits analysiert</AlreadyAnalyzed>
   <!-- EN: no reachable, un-reserved research bench available -->
   <NoResearchBench>kein erreichbarer, unbesetzter Forschertisch verfügbar</NoResearchBench>
 </LanguageData>

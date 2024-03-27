@@ -238,7 +238,7 @@
 
   <!-- Trap -->
   <!-- EN: Auto rearm -->
-  <CommandAutoRearm>Autom. Reaktivieren</CommandAutoRearm>
+  <CommandAutoRearm>Autom. reaktivieren</CommandAutoRearm>
   <!-- EN: If this is on, this trap will automatically be replaced after it springs. -->
   <CommandAutoRearmDesc>Bei Aktivierung wird die Falle nach dem Auslösen automatisch wieder scharf gemacht.</CommandAutoRearmDesc>
   
@@ -246,7 +246,7 @@
   <!-- EN: Auto rebuild -->
   <CommandAutoRebuild_Building>Automatisch wiederaufbauen</CommandAutoRebuild_Building>
   <!-- EN: If this is on, {BUILDING_definite} will automatically be replaced after it detonates. -->
-  <CommandAutoRebuild_BuildingDesc>Ist diese Option aktiviert, wird {BUILDING_definite} automatisch ersetzt, nachdem es explodiert ist.</CommandAutoRebuild_BuildingDesc>
+  <CommandAutoRebuild_BuildingDesc>Bei Aktivierung wird dieses Bauwerk automatisch wiederaufgebaut, nachdem es detoniert ist.</CommandAutoRebuild_BuildingDesc>
   
   <!-- Animal control -->
   <!-- EN: Animals attack -->
@@ -320,13 +320,13 @@
 
   <!-- Send caravan -->
   <!-- EN: Send caravan -->
-  <CommandSendCaravan>Karawane senden</CommandSendCaravan>
+  <CommandSendCaravan>Karawane schicken</CommandSendCaravan>
   <!-- EN: Send caravan... -->
-  <CommandSendCaravanMultiple>Sende Karawane...</CommandSendCaravanMultiple>
+  <CommandSendCaravanMultiple>Karawane schicken...</CommandSendCaravanMultiple>
   <!-- EN: Send a caravan to this destination from a selected colony which can reach this location. -->
-  <CommandSendCaravanDesc>Schicke eine Karawane an diesen Ort von einer ausgewählten Kolonie, die diesen Ort erreichen kann.</CommandSendCaravanDesc>
+  <CommandSendCaravanDesc>Schicke eine Karawane von einer Kolonie, die diesen Ort erreichen kann.</CommandSendCaravanDesc>
   <!-- EN: Your settlements have no path to this location. -->
-  <CommandSendCaravanCantReach>Deine Siedlungen haben keinen Weg zu diesem Ort.</CommandSendCaravanCantReach>
+  <CommandSendCaravanCantReach>Keine deiner Kolonien kann diesen Ort erreichen.</CommandSendCaravanCantReach>
 
   <!-- Split caravan -->
   <!-- EN: Split -->
@@ -574,31 +574,31 @@
 
   <!-- Carry -->
   <!-- EN: Drop {0_nameDef} -->
-  <CommandDropPawn>{0_nameDef} ablegen</CommandDropPawn>
+  <CommandDropPawn>{0_labelShort} ablegen</CommandDropPawn>
   <!-- EN: Drop the person being carried. -->
   <CommandDropPawnDesc>Lege die getragene Person auf den Boden.</CommandDropPawnDesc>
   <!-- EN: Select {0_nameDef} -->
-  <CommandSelectCarriedPawn>{0_nameDef} selektieren</CommandSelectCarriedPawn>
+  <CommandSelectCarriedPawn>{0_labelShort} selektieren</CommandSelectCarriedPawn>
   <!-- EN: Select the creature being carried. -->
   <CommandSelectCarriedPawnDesc>Selektiere die getragene Kreatur.</CommandSelectCarriedPawnDesc>
   <!-- EN: Select {0_label} -->
-  <CommandSelectCarriedThing>{0_label} selektieren</CommandSelectCarriedThing>
+  <CommandSelectCarriedThing>{0_labelShort} selektieren</CommandSelectCarriedThing>
   <!-- EN: Select the carried item. -->
   <CommandSelectCarriedThingDesc>Selektiere den getragenen Gegenstand.</CommandSelectCarriedThingDesc>
   <!-- EN: Select {0_label} -->
-  <CommandSelectContainerThing>{0_label} selektieren</CommandSelectContainerThing>
+  <CommandSelectContainerThing>{0_labelShort} selektieren</CommandSelectContainerThing>
   <!-- EN: Select the containing item. -->
   <CommandSelectContainerThingDesc>Selektiere den Behälter.</CommandSelectContainerThingDesc>
   <!-- EN: Select {0_nameDef} -->
-  <CommandSelectCarryingPawn>{0_nameDef} selektieren</CommandSelectCarryingPawn>
+  <CommandSelectCarryingPawn>{0_labelShort} selektieren</CommandSelectCarryingPawn>
   <!-- EN: Select the carrying creature. -->
   <CommandSelectCarryingPawnDesc>Selektiere den Träger.</CommandSelectCarryingPawnDesc>
   <!-- EN: Select {0_nameDef} -->
-  <CommandSelectContainedPawn>{0_nameDef} selektieren</CommandSelectContainedPawn>
+  <CommandSelectContainedPawn>{0_labelShort} selektieren</CommandSelectContainedPawn>
   <!-- EN: Select the contained creature. -->
   <CommandSelectContainedPawnDesc>Selektiere die enthaltene Kreatur.</CommandSelectContainedPawnDesc>
   <!-- EN: Select {0_label} -->
-  <CommandSelectContainedThing>{0_label} selektieren</CommandSelectContainedThing>
+  <CommandSelectContainedThing>{0_labelShort} selektieren</CommandSelectContainedThing>
   <!-- EN: Select the contained item. -->
   <CommandSelectContainedThingDesc>Selektiere den enthaltenen Gegenstand.</CommandSelectContainedThingDesc>
 
@@ -614,16 +614,16 @@
 
   <!-- Rituals -->
   <!-- EN: Leave {RITUAL_label} -->
-  <CommandLeaveRitual>{RITUAL_label} verlassen</CommandLeaveRitual>
+  <CommandLeaveRitual>Ritual verlassen</CommandLeaveRitual>
   <!-- EN: Stop participating in the {RITUAL_labelDef}. The ritual will continue as long as it has at least one participant. -->
-  <CommandLeaveRitualDesc>Beende die Teilnahme am Ritual '{RITUAL_label}'. Das Ritual läuft weiter, solange noch mindestens ein Teilnehmer anwesend ist.</CommandLeaveRitualDesc>
+  <CommandLeaveRitualDesc>Beende die Teilnahme an '{RITUAL_label}'. Das Ritual läuft weiter, solange noch mindestens ein Teilnehmer anwesend ist.</CommandLeaveRitualDesc>
   <!-- EN: This is the last participant in the {RITUAL_labelDef}. -->
   <CommandLeaveLastParticipant>Diese Person ist der letzte Teilnehmer von '{RITUAL_label}'.</CommandLeaveLastParticipant>
 
   <!-- EN: Cancel {RITUAL_label} -->
-  <CommandCancelRitual>{RITUAL_label} abbrechen</CommandCancelRitual>
+  <CommandCancelRitual>Ritual abbrechen</CommandCancelRitual>
   <!-- EN: End the {RITUAL_labelDef} immediately. Ritual obligation will remain. You can restart the ritual later. -->
-  <CommandCancelRitualDesc>Beende '{RITUAL_label}' sofort. Die rituelle Verpflichtung bleibt bestehen. Du kannst das Ritual später erneut starten.</CommandCancelRitualDesc>
+  <CommandCancelRitualDesc>Beende sofort '{RITUAL_label}'. Die rituelle Verpflichtung bleibt bestehen. Du kannst das Ritual später erneut starten.</CommandCancelRitualDesc>
   <!-- EN: Are you sure you want to cancel {RITUAL_labelDef}? -->
   <CommandCancelRitualConfirm>Bist du dir sicher, dass du '{RITUAL_label}' abbrechen willst?</CommandCancelRitualConfirm>
 
@@ -658,12 +658,12 @@
 
   <!-- Study -->
   <!-- EN: Toggle study -->
-  <CommandToggleStudy>Studium umschalten</CommandToggleStudy>
+  <CommandToggleStudy>Studieren</CommandToggleStudy>
   <!-- EN: Determines whether or not wardens will automatically study this. Forbidden things will never be studied. -->
-  <CommandToggleStudyDesc>Legt fest, ob die Aufseher dies automatisch untersuchen oder nicht. Verbotene Gegenstände werden nie untersucht.</CommandToggleStudyDesc>
+  <CommandToggleStudyDesc>Bei Aktivierung werden deine Wärter dies automatisch studieren. Verbotene Dinge werden nie studiert.</CommandToggleStudyDesc>
 
   <!-- Limited use count action -->
   <!-- EN: No uses left. -->
-  <CommandNoUsesLeft>Keine Verwendungen mehr.</CommandNoUsesLeft>
+  <CommandNoUsesLeft>Keine Anwendungen mehr.</CommandNoUsesLeft>
   
 </LanguageData>

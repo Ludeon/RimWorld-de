@@ -393,7 +393,7 @@
   </MentalStateGaveUp.rulePack.rulesStrings>
   
   <!-- EN: read a book -->
-  <ReadBook.label>liest ein Buch</ReadBook.label>
+  <ReadBook.label>ein Buch gelesen</ReadBook.label>
   <!-- EN:
     <li>tale_noun->[PAWN_nameDef] finishing [THING_title]</li>
     <li>image->[PAWN_nameFull] closing [THING_title] for the last time, a satisfied smile gracing [PAWN_possessive] face [circumstance_group]</li>
@@ -408,7 +408,21 @@
     <li>desc_sentence->[PAWN_nameDef] is forever changed by the teachings of [THING_title].</li>
     <li>desc_sentence->There is a sense that some secrets are yet to be uncovered.</li>
   -->
-  <ReadBook.rulePack.rulesStrings>TODO</ReadBook.rulePack.rulesStrings>
+  <ReadBook.rulePack.rulesStrings>
+    <li>tale_noun->[PAWN_nameDef] '[THING_title]' zu Ende las</li>
+    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] mit einem zufriedenen Lächeln '[THING_title]' zum letzten Mal zuklappt, [circumstance_group]</li>
+    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] '[THING_title]' umblättert und das Wissen in sich aufnimmt, [circumstance_group]</li>
+    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] '[THING_title]' zurück ins Regal stellt und ein Gefühl der Vollkommenheit ausstrahlt, [circumstance_group]</li>
+    <li>image->[PAWN_nameFull], wie [PAWN_pronoun] ruhig dasitzt und über die tiefgründigen Wahrheiten von '[THING_title]' nachdenkt, [circumstance_group]</li>
+    <li>circumstance_phrase->während [PAWN_pronoun] sich in [PAWN_possessive]er Lieblingsecke ausruht</li>
+    <li>circumstance_phrase->mit einer Tasse Tee neben sich</li>
+    <li>circumstance_phrase->im sanften Licht einer Leselampe</li>
+    <li>desc_sentence->[PAWN_nameDef] ist umgeben von [PAWN_possessive]en Notizen zu '[THING_title]'.</li>
+    <li>desc_sentence->[PAWN_nameDef_s] Augen funkeln vor neu gewonnener Weisheit.</li>
+    <li>desc_sentence->[PAWN_nameDef] wurde durch den Inhalt von '[THING_title]' für immer verändert.</li>
+    <li>desc_sentence->Man hat das Gefühl, dass einige Geheimnisse noch nicht gelüftet wurden.</li>
+    <li>PAWN_nameDef_s->{replace: [PAWN_label]s; "s&lt;/color>s"-"s&lt;/color>'"; "ß&lt;/color>s"-"ß&lt;/color>'"; "z&lt;/color>s"-"z&lt;/color>'"; "x&lt;/color>s"-"x&lt;/color>'"; "ce&lt;/color>s"-"ce&lt;/color>'"}</li>
+  </ReadBook.rulePack.rulesStrings>
   
   <!-- EN: struck mineable -->
   <StruckMineable.label>auf abbaubares Gestein gestoßen</StruckMineable.label>

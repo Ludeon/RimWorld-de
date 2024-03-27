@@ -77,6 +77,8 @@
   <Groups>Gruppen</Groups>
   <!-- EN: Loading mech gestation resources -->
   <LoadingMechGestator>Belädt Mech-Gestator mit Ressourcen</LoadingMechGestator>
+  <!-- EN: Time left this cycle -->
+  <GestatingInspect>Zyklus endet in</GestatingInspect>
   <!-- EN: Initiating mech gestation cycle -->
   <InitMechGestationCycle>Initiiert Mech-Gestationszyklus</InitMechGestationCycle>
   <!-- EN: Initiating mech birth -->
@@ -153,8 +155,6 @@
   <ConfirmExitDeathrestUnderMinDays>Um den Todesschlaf sicher abzuschließen, braucht man {MINDURATION}, aber {PAWN_nameDef} ist erst seit (*DateTime){replace: {CURDURATION}; "Tage"-"Tagen"; "Jahre"-"Jahren"}(/DateTime) im Todesschlaf.\n\n{PAWN_nameDef} jetzt zu wecken, würde {PAWN_possessive}en Todesschlaf unterbrechen, {PAWN_possessive}en Stoffwechsel aus dem Gleichgewicht bringen und {PAWN_objective} für die nächsten Tage krank machen.\n\nBist du sicher, dass du {PAWN_objective} wecken willst?</ConfirmExitDeathrestUnderMinDays>
   <!-- EN: deathresting -->
   <Deathresting>im Todesschlaf</Deathresting>
-  <!-- EN: complete -->
-  <Complete>fertig</Complete>
   <!-- EN: can wake safely now. -->
   <CanWakeSafely>kann jetzt sicher aufwachen.</CanWakeSafely>
   <!-- EN: Disabled by gene -->
@@ -429,8 +429,6 @@
   <LethalInjuries>Tödliche Verletzungen</LethalInjuries>
   <!-- EN: deathrest -->
   <Deathrest>Todesschlaf</Deathrest>
-  <!-- EN: Buildings -->
-  <Buildings>Bauwerke</Buildings>
   <!-- EN: capacity -->
   <Capacity>Kapazität</Capacity>
   <!-- EN: Non-{GENE} romance chance -->
@@ -446,8 +444,6 @@
 
   <!-- EN: Children want to learn from different activities at different times. -->
   <LearningDesireTooltip>Kinder wollen von verschiedenen Aktivitäten zu unterschiedlichen Zeiten lernen.</LearningDesireTooltip>
-  <!-- EN: {0_nameDef}'s current learning desire: -->
-  <LearningDesireTooltip_CurrentDesire>{replace: {0_nameDef}s; "s(/Name)s"-"s(/Name)'"; "ß(/Name)s"-"ß(/Name)'"; "z(/Name)s"-"z(/Name)'"; "x(/Name)s"-"x(/Name)'"; "ce(/Name)s"-"ce(/Name)'"} aktueller Lernwunsch:</LearningDesireTooltip_CurrentDesire>
   <!-- EN: Development health is the average of a child's learning need since their last birthday.\n\nChildren with higher development health will have more options during growth moments and will gain more passions for skills. -->
   <DevelopmentHealthGizmoTooltip>Entwicklungsstand ist der Durchschnitt des Lerndrangs eines Kindes seit dessen letztem Geburtstag.\n\nKinder mit einem höheren Entwicklungsstand haben mehr Auswahlmöglichkeiten bei Wachstumsmomenten, und werden mehr Hingaben für Fertigkeiten entwickeln.</DevelopmentHealthGizmoTooltip>
 
@@ -485,6 +481,8 @@
   <GestatingMech>Entwickelt {0}</GestatingMech>
   <!-- EN: Gestated {0} -->
   <GestatedMech>{0} entwickelt</GestatedMech>
+  <!-- EN: Requires {PAWN_nameDef} to continue gestating -->
+  <GestatingMechRequiresMechanitor>benötigt {PAWN_nameDef} zum Fortsetzen der Gestation</GestatingMechRequiresMechanitor>
   <!-- EN: Requires {PAWN_nameDef} to complete -->
   <GestatedMechRequiresMechanitor>benötigt {PAWN_nameDef} zum Fertigstellen</GestatedMechRequiresMechanitor>
   <!-- EN: Gestation complete -->

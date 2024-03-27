@@ -14,7 +14,7 @@
   <MessageRaidersStealing>{0} der Fraktion '{1}' haben beschlossen, so viel wie möglich zu stehlen und das Gebiet zu verlassen.</MessageRaidersStealing>
 
   <!-- EN: The mechanoids sense no more targets and are moving on. -->
-  <MechanoidsMovingOn>Die Mechanoiden erfassen keine weiteren Ziele und ziehen weiter.</MechanoidsMovingOn> <!-- text_todo -->
+  <MechanoidsMovingOn>Die Mechanoiden nehmen keine Ziele mehr wahr und ziehen weiter.</MechanoidsMovingOn> <!-- text_todo -->
 
   <!-- EN: {0} from {1} have arrived and are attacking! More are on the way and will arrive in {2}. -->
   <MessageCaravanDetectedRaidArrived>{0} der Fraktion '{1}' sind eingetroffen und greifen an! Weitere sind unterwegs und werden in {replace: {2}; "Tage"-"Tagen"; "Jahre"-"Jahren"} eintreffen.</MessageCaravanDetectedRaidArrived>
@@ -131,7 +131,7 @@
   <!-- EN: Must designate rough stone surfaces. -->
   <MessageMustDesignateSmoothableSurface>Funktioniert nur bei rauen Steinoberflächen.</MessageMustDesignateSmoothableSurface>
   <!-- EN: Must designate rough stone terrain. -->
-  <MessageMustDesignateSmoothableFloor>Funktioniert nur bei rauen Steingelände.</MessageMustDesignateSmoothableFloor>
+  <MessageMustDesignateSmoothableFloor>Funktioniert nur bei rauen Steinböden.</MessageMustDesignateSmoothableFloor>
   <!-- EN: Must designate rough stone wall. -->
   <MessageMustDesignateSmoothableWall>Funktioniert nur bei rauen Steinwänden.</MessageMustDesignateSmoothableWall>
   <!-- EN: Nothing can remove thick roofs. -->
@@ -196,7 +196,7 @@
   <MessageWentOverPsychicEntropyLimit>{PAWN_labelShort} hat das normale Neuralhitzelimit überschritten.</MessageWentOverPsychicEntropyLimit>
 
   <!-- EN: No handler capable of taming {ANIMAL_kindBase} (requires level {1} in {2}, best capable handler {HANDLER_labelShort} has {4}). -->
-  <MessageNoHandlerSkilledEnough>Keiner deiner verfügbaren Tierpfleger kann {ANIMAL_kindBase} zähmen (benötigt Stufe {1} in {2}, bestmöglicher Pfleger {HANDLER_labelShort} hat {4}).</MessageNoHandlerSkilledEnough>
+  <MessageNoHandlerSkilledEnough>Keiner deiner Tierpfleger kann {ANIMAL_kindBasePlural} zähmen (benötigt Stufe {1} in {2}, bester Pfleger ist {HANDLER_labelShort} mit {4}).</MessageNoHandlerSkilledEnough>
   
   <!-- EN: {EATEN_labelShort} has been eaten by {PREDATOR}. -->
   <MessageEatenByPredator>{PREDATOR_kindBaseIndef} hat {EATEN_labelShort} gefressen.</MessageEatenByPredator>
@@ -212,7 +212,7 @@
   <!-- EN: The trade caravan from {0} is leaving. -->
   <MessageTraderCaravanLeaving>Die Handelskarawane der Fraktion '{0}' zieht weiter.</MessageTraderCaravanLeaving>
   <!-- EN: The trade caravan from {0} has been dismissed. -->
-  <MessageTraderCaravanDismissed>Die Handelskarawane der Fraktion '{0}' wurde gebeten zu gehen.</MessageTraderCaravanDismissed>
+  <MessageTraderCaravanDismissed>Die Handelskarawane der Fraktion '{0}' wurde weggeschickt.</MessageTraderCaravanDismissed>
 
   <!-- EN: {1_labelShort} is dead. -->
   <MessageCantSelectDeadPawn>{1_labelShort} ist gestorben.</MessageCantSelectDeadPawn>
@@ -358,7 +358,7 @@
   <!-- EN: Your {1} can't finish loading the transport pods because some items or people became unavailable ({2_labelShort}). -->
   <MessageCantLoadMoreIntoTransporters>Deine {1} können die Transportkapseln nicht fertig beladen, da einige Waren oder Personen nicht mehr verfügbar sind ({2_labelShort}).</MessageCantLoadMoreIntoTransporters>
   <!-- EN: Your {1} can't finish entering the {0} because some items or people became unavailable ({2_labelShort}). -->
-  <MessageCantLoadMoreIntoPortal>Deine {1} können {0} nicht betreten, da einige Waren oder Personen nicht mehr verfügbar sind ({2_labelShort}).</MessageCantLoadMoreIntoPortal>
+  <MessageCantLoadMoreIntoPortal>Deine {1} betreten {0_gender ? den : die : das} {lookup: {0}; decline; 7} nicht mit allen Gegenständen oder Personen, da einige nicht mehr verfügbar sind ({2_labelShort}).</MessageCantLoadMoreIntoPortal>
   
   <!-- EN: Selected destination is invalid. -->
   <MessageTransportPodsDestinationIsInvalid>Gewählter Zielort ist ungültig.</MessageTransportPodsDestinationIsInvalid>
@@ -577,7 +577,7 @@
   <!-- EN: {1}'s "{0}" can no longer count items in deleted stockpile {2}. -->
   <MessageBillValidationIncludeZoneDeleted>{2} wurde gelöscht. Einstellung 'Suche in {2}' für '{0}' ({1}) nicht länger möglich.</MessageBillValidationIncludeZoneDeleted>
   <!-- EN: {1}'s "{0}" can no longer count items in deleted building {2}. -->
-  <MessageBillValidationIncludeBuildingDeleted>{2} wurde entfernt. Einstellung 'Suche in {2}' für '{0}' ({1}) nicht länger möglich.</MessageBillValidationIncludeBuildingDeleted>
+  <MessageBillValidationIncludeBuildingDeleted>{2} existiert nicht mehr. Einstellung 'Suche in {2}' für '{0}' ({1}) nicht länger möglich.</MessageBillValidationIncludeBuildingDeleted>
   <!-- EN: {1}'s "{0}" can no longer count items in deleted storage group {2}. -->
   <MessageBillValidationIncludeStorageGroupDeleted>{2} wurde gelöscht. Einstellung 'Suche in {2}' für '{0}' ({1}) nicht länger möglich.</MessageBillValidationIncludeStorageGroupDeleted>
   <!-- EN: {1}'s "{0}" can no longer count items in unavailable stockpile {2}. -->
@@ -679,9 +679,9 @@
 
   <!-- Lord jobs -->
   <!-- EN: You need {0_indefinite}. -->
-  <MessageLordJobNeedsAtLeastOneRolePawn>Du benötigst {0_indefinite}.</MessageLordJobNeedsAtLeastOneRolePawn>
+  <MessageLordJobNeedsAtLeastOneRolePawn>Du brauchst {0_gender ? einen : eine : ein} {lookup: {0}; decline; 3}.</MessageLordJobNeedsAtLeastOneRolePawn>
   <!-- EN: You need at least {1} {0}. -->
-  <MessageLordJobNeedsAtLeastNumRolePawn>Du benötigst mindestens {1} {0}.</MessageLordJobNeedsAtLeastNumRolePawn>
+  <MessageLordJobNeedsAtLeastNumRolePawn>Du brauchst mindestens {1} {0}.</MessageLordJobNeedsAtLeastNumRolePawn>
 
   <!-- Rituals -->
   <!-- EN: spectate -->
@@ -691,7 +691,7 @@
   <!-- EN: {0} has begun. -->
   <RitualBegun>{0} hat angefangen.</RitualBegun>
   <!-- EN: The maximum number of {0}s is {1}. -->
-  <MaxPawnsPerRole>Die maximale Anzahl an {lookup: {0}; plural; 3} ist {1}.</MaxPawnsPerRole>
+  <MaxPawnsPerRole>Die maximale Anzahl von {lookup: {0}; plural; 3} ist {1}.</MaxPawnsPerRole>
   <!-- EN: Role of {0} is locked. -->
   <RoleIsLocked>Die Rolle '{0}' ist gesperrt.</RoleIsLocked>
   <!-- EN: You need at least one participant. -->
@@ -753,7 +753,7 @@
   <!-- EN: must be colonist for the {0} role. -->
   <MessageRitualRoleMustBeColonist>nur Kolonisten dürfen die Rolle '{0}' ausüben.</MessageRitualRoleMustBeColonist>
   <!-- EN: must not be a prisoner for the {0} role. -->
-  <MessageRitualRoleMustBeFree>Gefangene können die Rolle '{0}' nicht ausüben.</MessageRitualRoleMustBeFree>
+  <MessageRitualRoleMustBeFree>darf kein Gefangener für die Rolle '{0}' sein.</MessageRitualRoleMustBeFree>
   <!-- EN: {0_labelShort} won't attend due to extreme temperature in the ritual area. -->
   <MessageRitualWontAttendExtremeTemperature>{0_labelShort} wird wegen der extremen Temperatur am Veranstaltungsort nicht teilnehmen.</MessageRitualWontAttendExtremeTemperature>
   <!-- EN: must be colonist and not enslaved for the {0} role. -->
@@ -808,20 +808,20 @@
   <!-- EN: Storage settings linked for {0} buildings. -->
   <SettingsLinkedFor>Lagereinstellungen von {0} Bauwerken verknüpft.</SettingsLinkedFor>
   <!-- EN: Storage settings linked for 1 building. -->
-  <SettingsLinkedForSingular>Lagereinstellungen von einem Bauwerk verknüpft.</SettingsLinkedForSingular>
+  <SettingsLinkedForSingular>Lagereinstellungen von 1 Bauwerk verknüpft.</SettingsLinkedForSingular>
   <!-- EN: Storage settings unlinked for {0} buildings. -->
   <SettingsUnlinkedFor>Lagereinstellungen von {0} Bauwerken getrennt.</SettingsUnlinkedFor>
   <!-- EN: Storage settings unlinked for 1 building. -->
-  <SettingsUnlinkedForSingular>Lagereinstellungen von einem Bauwerk getrennt.</SettingsUnlinkedForSingular>
+  <SettingsUnlinkedForSingular>Lagereinstellungen von 1 Bauwerk getrennt.</SettingsUnlinkedForSingular>
   <!-- EN: Storage settings copied to clipboard. -->
   <StorageSettingsCopiedToClipboard>Lagereinstellungen in die Zwischenablage kopiert.</StorageSettingsCopiedToClipboard>
   <!-- EN: Storage settings pasted from clipboard. -->
   <StorageSettingsPastedFromClipboard>Lagereinstellungen aus der Zwischenablage eingefügt.</StorageSettingsPastedFromClipboard>
   
   <!-- EN: {0_label} requires adjacent walls to function. -->
-  <MessageBuildingRequiresAdjacentWalls>{0_label} benötigt zum Funktionieren angrenzende Wände.</MessageBuildingRequiresAdjacentWalls>
+  <MessageBuildingRequiresAdjacentWalls>{0_label} benötigt angrenzende Wände, um zu funktionieren.</MessageBuildingRequiresAdjacentWalls>
 
   <!-- EN: Cannot skip: Refugee -->
-  <MessageLodgersCantFarskip>Kann nicht übersprungen werden: Flüchtling</MessageLodgersCantFarskip>
+  <MessageLodgersCantFarskip>Kann Flüchtling nicht teleportieren</MessageLodgersCantFarskip>
 
 </LanguageData>
