@@ -429,16 +429,18 @@
     <li>title->[maybe_authored_title]</li>
     <li>title(has_subject_secondary==true)->[studiesStart] [subject_primary] in the [subject_secondary] sector</li>
     <li>title->[studiesStart] [subject_primary] following [lifeEvent]</li>
-    <li>title->[studiesStart] [subject_primary]: anecdotes</li>
-    <li>title->[studiesStart] [subject_primary]: a [anomAdj][discussionNoun]</li>
-    <li>title->The [anomAdj][subject_primary] [referenceType]</li>
-    <li>title->The [referenceType] of [anomAdj][subject_primary], Vol. [volNumeral]</li>
-    <li>title->[studiesStart] [anomAdj][subject_primary], Vol. [volNumeral]</li>
-    <li>title->The [referenceType] of [studiesStart] [anomAdj][subject_primary]</li>
+    <li>title->[studiesStart] [subject_primary]: [anecdotes]</li>
+    <li>title->[studiesStart] [subject_primary]: a [randAdjective] [discussionNoun]</li>
+    <li>title->The [randAdjective] [subject_primary] [referenceType]</li>
+    <li>title->The [referenceType] of [randAdjective] [subject_primary], Vol. [volNumeral]</li>
+    <li>title->[studiesStart] [randAdjective] [subject_primary], Vol. [volNumeral]</li>
+    <li>title->The [referenceType] of [studiesStart] [randAdjective] [subject_primary]</li>
     <li>title->The [lifeEvent] [discussionNoun] and [subject_primary]</li>
     <li>title->A [bookCompound] [referenceType]</li>
+    <li>bookCompound(p=2)->[firstHalfEvil][suffixEvil]</li>
+    <li>bookCompound->[firstHalfEvil][connector][suffixEvil]</li>
     <li>studiesStart->Studies in</li>
-    <li>studiesStart->Fundamentals of </li>
+    <li>studiesStart->Fundamentals of</li>
     <li>studiesStart->Managing</li>
     <li>studiesStart->Histories of</li>
     <li>studiesStart->Working in</li>
@@ -512,7 +514,7 @@
     <li>subjectsTuple(has_subject_secondary==true)->[subject_secondary] and [randTheme]</li>
     <li>subjectsTuple->[subject_primary] and [randTheme]</li>
     <li>randAdjective->Basic</li>
-    <li>randAdjective->The Best</li>
+    <li>randAdjective->Best</li>
     <li>randAdjective->Glitterworld</li>
     <li>randAdjective->Medieval</li>
     <li>randAdjective->Archaic</li>
@@ -522,7 +524,7 @@
     <li>randAdjective->Grotesque</li>
     <li>randAdjective->Sepulchral</li>
     <li>randAdjective->Holy</li>
-    <li>randAdjective->The Darkest</li>
+    <li>randAdjective->Darkest</li>
     <li>randAdjective->Subworld</li>
     <li>randAdjective->Primitive</li>
     <li>randAdjective->Survival</li>
@@ -558,13 +560,14 @@
     <li>title(has_subject_secondary==true)->[studiesStart] [subject_primary] und [subject_secondary]</li>
     <li>title->[studiesStart] [subject_primary] nach [lifeEventDat]</li>
     <li>title->[studiesStart] [subject_primary]: [anecdotes]</li>
-    <!-- <li>title->[studiesStart] [subject_primary]: a [anomAdj][discussionNoun]</li>
-    <li>title->The [anomAdj][subject_primary] [referenceType]</li>
-    <li>title->The [referenceType] of [anomAdj][subject_primary], Vol. [volNumeral]</li>
-    <li>title->[studiesStart] [anomAdj][subject_primary], Vol. [volNumeral]</li>
-    <li>title->The [referenceType] of [studiesStart] [anomAdj][subject_primary]</li> -->
+    <li>title->[studiesStart] [subject_primary]: [ARandAdjectiveDiscussionNoun]</li>
+    <li>title->[TheRandAdjectiveReferenceType] über [subject_primary]</li>
+    <li>title->[TheReferenceType] über [randAdjective][subject_primary_with_adj], Bd. [volNumeral]</li>
+    <li>title->[studiesStart] [randAdjective][subject_primary_with_adj], Bd. [volNumeral]</li>
     <li>title->[TheLifeEventDiscussionNoun] und [subject_primary]</li>
-    <!-- <li>title->A [bookCompound] [referenceType]</li> -->
+    <li>title->[TheBookCompoundReferenceType]</li>
+    <li>bookCompound(p=2)->[firstHalfEvil][suffixEvil]</li>
+    <li>bookCompound->[firstHalfEvil][connector][suffixEvil]</li>
     <li>studiesStart->Studien über</li>
     <li>studiesStart->Grundlagen über</li>
     <li>studiesStart->Umgang mit</li>
@@ -576,16 +579,36 @@
     <li>studiesStart->Einsatzgebiete von</li>
     <li>studiesStart->Zukunftsgestaltung mit</li>
     <li>studiesStart->Dokumentation von</li>
-    <!-- <li>referenceType->Encyclopedia</li>
-    <li>referenceType->Dictionary</li>
-    <li>referenceType->Almanac</li>
-    <li>referenceType->Register</li>
-    <li>referenceType->Annal</li>
-    <li>referenceType->Record</li>
-    <li>referenceType->Guidebook</li>
-    <li>referenceType->Chronicle</li>
-    <li>referenceType->Mentor</li>
-    <li>referenceType->Toolbox</li> -->
+    <li>TheRandAdjectiveReferenceType->Die [randAdjective]e Enzyklopädie</li>
+    <li>TheRandAdjectiveReferenceType->Das [randAdjective]e Wörterbuch</li>
+    <li>TheRandAdjectiveReferenceType->Das [randAdjective]e Lexikon</li>
+    <li>TheRandAdjectiveReferenceType->Der [randAdjective]e Almanach</li>
+    <li>TheRandAdjectiveReferenceType->Das [randAdjective]e Register</li>
+    <li>TheRandAdjectiveReferenceType->Die [randAdjective]en Annalen</li>
+    <li>TheRandAdjectiveReferenceType->Die [randAdjective]e Aufzeichnung</li>
+    <li>TheRandAdjectiveReferenceType->Der [randAdjective]e Leitfaden</li>
+    <li>TheRandAdjectiveReferenceType->Die [randAdjective]e Chronik</li>
+    <li>TheRandAdjectiveReferenceType->Der [randAdjective]e Ratgeber</li>
+    <li>TheBookCompoundReferenceType->Die [bookCompound]-Enzyklopädie</li>
+    <li>TheBookCompoundReferenceType->Das [bookCompound]-Wörterbuch</li>
+    <li>TheBookCompoundReferenceType->Das [bookCompound]-Lexikon</li>
+    <li>TheBookCompoundReferenceType->Der [bookCompound]-Almanach</li>
+    <li>TheBookCompoundReferenceType->Das [bookCompound]-Register</li>
+    <li>TheBookCompoundReferenceType->Die [bookCompound]-Annalen</li>
+    <li>TheBookCompoundReferenceType->Die [bookCompound]-Aufzeichnung</li>
+    <li>TheBookCompoundReferenceType->Der [bookCompound]-Leitfaden</li>
+    <li>TheBookCompoundReferenceType->Die [bookCompound]-Chronik</li>
+    <li>TheBookCompoundReferenceType->Der [bookCompound]-Ratgeber</li>
+    <li>TheReferenceType->Die Enzyklopädie</li>
+    <li>TheReferenceType->Das Wörterbuch</li>
+    <li>TheReferenceType->Das Lexikon</li>
+    <li>TheReferenceType->Der Almanach</li>
+    <li>TheReferenceType->Das Register</li>
+    <li>TheReferenceType->Die Annalen</li>
+    <li>TheReferenceType->Die Aufzeichnung</li>
+    <li>TheReferenceType->Der Leitfaden</li>
+    <li>TheReferenceType->Die Chronik</li>
+    <li>TheReferenceType->Der Ratgeber</li>
     <li>anecdotes->Überlegungen</li>
     <li>anecdotes->Anekdoten</li>
     <li>anecdotes->Überlieferungen</li>
@@ -600,6 +623,14 @@
     <li>discussionNoun->Untersuchung</li>
     <li>discussionNoun->Konsultation</li>
     <li>discussionNoun->Kontroverse</li>
+    <li>ARandAdjectiveDiscussionNoun->Eine [randAdjective]e Diskussion</li>
+    <li>ARandAdjectiveDiscussionNoun->Eine [randAdjective]e Debatte</li>
+    <li>ARandAdjectiveDiscussionNoun->Ein [randAdjective]er Diskurs</li>
+    <li>ARandAdjectiveDiscussionNoun->Ein [randAdjective]er Dialog</li>
+    <li>ARandAdjectiveDiscussionNoun->Eine [randAdjective]e Dialektik</li>
+    <li>ARandAdjectiveDiscussionNoun->Eine [randAdjective]e Untersuchung</li>
+    <li>ARandAdjectiveDiscussionNoun->Eine [randAdjective]e Konsultation</li>
+    <li>ARandAdjectiveDiscussionNoun->Eine [randAdjective]e Kontroverse</li>
     <li>TheLifeEventDiscussionNoun->Die [lifeEventCon]diskussion</li>
     <li>TheLifeEventDiscussionNoun->Die [lifeEventCon]debatte</li>
     <li>TheLifeEventDiscussionNoun->Der [lifeEventCon]diskurs</li>
@@ -796,9 +827,6 @@
     <li>titleAuthoredOneSubject->[ANYPAWN_nameIndef]'s Study of [subject_primary]</li>
     <li>titleAuthoredOneSubject->[ANYPAWN_nameIndef]'s Investigation into [subject_primary]</li>
     <li>titleAuthoredOneSubject->[ANYPAWN_nameIndef]'s Research on [subject_primary]</li>
-    <li>titleAuthoredTwoSubjects->[ANYPAWN_nameIndef] on [subjectsTuple]</li>
-    <li>titleAuthoredTwoSubjects->[ANYPAWN_nameIndef]'s Guide to [subjectsTuple]</li>
-    <li>titleAuthoredTwoSubjects->[ANYPAWN_nameIndef]'s Intro to [subjectsTuple]</li>
     <li>titleAuthoredTwoSubjects->[ANYPAWN_nameIndef] on [subjectsTuple]</li>
     <li>titleAuthoredTwoSubjects->[ANYPAWN_nameIndef]'s Guide to [subjectsTuple]</li>
     <li>titleAuthoredTwoSubjects->[ANYPAWN_nameIndef]'s Intro to [subjectsTuple]</li>
