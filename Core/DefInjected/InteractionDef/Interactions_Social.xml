@@ -99,9 +99,11 @@
   <Insult.label>Beleidigung</Insult.label>
   <!-- EN:
     <li>r_logentry(p=3)->[INITIATOR_nameDef] [insulted] [target]'s [characteristic].</li>
-    <li>r_logentry->[INITIATOR_nameDef] compared [target] to a [insultcomparison].</li>
-    <li>r_logentry->[INITIATOR_nameDef] called [target] a [insultcomparison].</li>
+    <li>r_logentry->[INITIATOR_nameDef] compared [target] to [insultcomparison].</li>
+    <li>r_logentry->[INITIATOR_nameDef] called [target] [insultcomparison].</li>
     <li>r_logentry(INITIATOR_cubeInterest==false,RECIPIENT_cubeInterest==true)->[INITIATOR_nameDef] called [target] a false idol worshipper.</li>
+    <li>r_logentry(INITIATOR_cubeInterest==false,RECIPIENT_cubeInterest==true)->[INITIATOR_nameDef] implied that [target] had been driven insane by the golden cube.</li>
+    <li>r_logentry(INITIATOR_cubeInterest==false,RECIPIENT_cubeInterest==true)->[INITIATOR_nameDef] [insulted] the golden cube.</li>
     <li>characteristic(INITIATOR_cubeInterest==false)->[PersonalCharacteristic]</li>
     <li>characteristic(INITIATOR_cubeInterest==true)->[PersonalCharacteristicCube]</li>
     <li>target(p=4)->[RECIPIENT_nameDef]</li>
@@ -116,10 +118,11 @@
     <li>insulted->slandered</li>
     <li>insulted->hurled invective about</li>
     <li>insulted->derided</li>
-    <li>insultcomparison(INITIATOR_cubeInterest==false,p=2)->[Animal]</li>
-    <li>insultcomparison(INITIATOR_cubeInterest==false)->[Enemy]</li>
-    <li>insultcomparison(INITIATOR_cubeInterest==true)->sphere</li>
-    <li>insultcomparison(INITIATOR_cubeInterest==true)->non-cubic geometric shape</li>
+    <li>insultcomparison(INITIATOR_cubeInterest==false,p=2)->a [Animal]</li>
+    <li>insultcomparison(INITIATOR_cubeInterest==false)->a [Enemy]</li>
+    <li>insultcomparison(INITIATOR_cubeInterest==true)->a sphere</li>
+    <li>insultcomparison(INITIATOR_cubeInterest==true)->something totally pointless</li>
+    <li>insultcomparison(INITIATOR_cubeInterest==true)->a non-cubic platonic object</li>
   -->
   <Insult.logRulesInitiator.rulesStrings>
     <li>r_logentry(INITIATOR_cubeInterest==false)->[INITIATOR_nameDef] [insulted] [RECIPIENT_nameDef_s] [PersonalCharacteristic].</li>
@@ -133,6 +136,10 @@
     <li>r_logentry->[INITIATOR_nameDef] verglich [targetAcc] mit [insultcomparison].</li>
     <li>r_logentry->[INITIATOR_nameDef] bezeichnete [targetAcc] als [insult].</li>
     <li>r_logentry(INITIATOR_cubeInterest==false,RECIPIENT_cubeInterest==true)->[INITIATOR_nameDef] nannte [targetAcc] einen falschen Götzenanbeter.</li>
+    <li>r_logentry(INITIATOR_cubeInterest==false,RECIPIENT_cubeInterest==true)->[INITIATOR_nameDef] deutete an, dass [target] durch den Goldwürfel in den Wahnsinn getrieben wurde.</li>
+    <li>r_logentry(INITIATOR_cubeInterest==false,RECIPIENT_cubeInterest==true)->[INITIATOR_nameDef] [insulted] den Goldwürfel.</li>
+    <li>target(p=4)->[RECIPIENT_nameDef]</li>
+    <li>target->[RECIPIENT_nameDef_s] [PersonFamily]</li>
     <li>targetDat(p=4)->[RECIPIENT_nameDef]</li>
     <li>targetDat->[RECIPIENT_nameDef_s] [PersonFamilyDat]</li>
     <li>targetAcc(p=4)->[RECIPIENT_nameDef]</li>
@@ -150,12 +157,14 @@
     <li>insultcomparison(INITIATOR_cubeInterest==false,p=0.66)->einem [AnimalMasDat]</li>
     <li>insultcomparison(INITIATOR_cubeInterest==false,p=0.66)->einem [AnimalNeuDat]</li>
     <li>insultcomparison(INITIATOR_cubeInterest==false)->einem [EnemyDat]</li>
-    <li>insultcomparison(INITIATOR_cubeInterest==true)->einer Sphäre</li>
-    <li>insultcomparison(INITIATOR_cubeInterest==true)->einer nicht-kubischen geometrischen Form</li>
+    <li>insultcomparison(INITIATOR_cubeInterest==true)->einer Kugel</li>
+    <li>insultcomparison(INITIATOR_cubeInterest==true)->etwas völlig Sinnlosem</li>
+    <li>insultcomparison(INITIATOR_cubeInterest==true)->einem nicht-kubischen platonischen Körper</li>
     <li>insult(INITIATOR_cubeInterest==false)->[AnimalAcc]</li>
     <li>insult(INITIATOR_cubeInterest==false)->[EnemyAcc]</li>
-    <li>insult(INITIATOR_cubeInterest==true)->eine Sphäre</li>
-    <li>insult(INITIATOR_cubeInterest==true)->eine nicht-kubische geometrische Form</li>
+    <li>insult(INITIATOR_cubeInterest==true)->eine Kugel</li>
+    <li>insult(INITIATOR_cubeInterest==true)->etwas völlig Sinnloses</li>
+    <li>insult(INITIATOR_cubeInterest==true)->einen nicht-kubischen platonischen Körper</li>
     <li>RECIPIENT_nameDef_s->{replace: [RECIPIENT_nameDef]s; "s&lt;/color>s"-"s&lt;/color>'"; "ß&lt;/color>s"-"ß&lt;/color>'"; "z&lt;/color>s"-"z&lt;/color>'"; "x&lt;/color>s"-"x&lt;/color>'"; "ce&lt;/color>s"-"ce&lt;/color>'"}</li>
   </Insult.logRulesInitiator.rulesStrings>
   
