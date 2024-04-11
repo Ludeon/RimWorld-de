@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: healed me -->
+  <HealedMe.label>mich geheilt</HealedMe.label>
+  
+  <!-- EN: mutated my arm -->
+  <MutatedMyArm.label>mein Arm mutiert</MutatedMyArm.label>
+  
+  <!-- EN: studied an entity -->
+  <StudiedEntity.label>eine Entität studiert</StudiedEntity.label>
+  <!-- EN:
+    <li>tale_noun->[STUDIER_nameDef] studying [ENTITY_nameIndef]</li>
+    <li>image->[STUDIER_nameFull] carefully examining [ENTITY_nameDef] [circumstance_group]</li>
+    <li>image->[STUDIER_nameFull] conducting experiments, seeking to understand the secrets of [ENTITY_nameDef], [circumstance_group]</li>
+    <li>image->[STUDIER_nameFull] striving to comprehend the nature of [ENTITY_nameDef] [circumstance_group]</li>
+    <li>circumstance_phrase->with barely concealed disgust in [STUDIER_possessive] eyes</li>
+    <li>circumstance_phrase->while scribbling in a notebook</li>
+    <li>circumstance_phrase->while consulting an ancient tome</li>
+    <li>desc_sentence->The steady work of bioferrite harvesters can be seen in the background.</li>
+    <li>desc_sentence->The colonist's deep fascination with [ENTITY_nameDef] is evident.</li>
+    <li>desc_sentence->[STUDIER_nameDef] is completely absorbed in [STUDIER_possessive] study of [ENTITY_nameDef], striving to unlock its secrets.</li>
+    <li>desc_sentence->[ENTITY_nameDef] is only just held in the place by the ceaseless work of electro-inhibitors.</li>
+    <li>desc_sentence->[ENTITY_nameDef] does not appear to react to [STUDIER_nameDef]'s efforts.</li>
+  -->
+  <StudiedEntity.rulePack.rulesStrings>
+    <li>tale_noun->[STUDIER_nameDef] [ENTITY_nameDefAcc] studierte</li>
+    <li>image->[STUDIER_nameFull], wie [STUDIER_pronoun] [ENTITY_nameIndefAcc] vorsichtig untersucht, [circumstance_group]</li>
+    <li>image->[STUDIER_nameFull], wie [STUDIER_pronoun] Experimente an [ENTITY_nameIndefAcc] durchführt, um [ENTITY_possessive]e Geheimnisse zu ergründen, [circumstance_group]</li>
+    <li>image->[STUDIER_nameFull], wie [STUDIER_pronoun] danach strebt, die Eigenschaften von [ENTITY_nameIndefDat] zu begreifen, [circumstance_group]</li>
+    <li>circumstance_phrase->mit kaum verhohlenem Abscheu in [STUDIER_possessive]en Augen</li>
+    <li>circumstance_phrase->während [STUDIER_pronoun] in ein Notizbuch kritzelt</li>
+    <li>circumstance_phrase->während [STUDIER_pronoun] einen alten Folianten zurate zieht</li>
+    <li>desc_sentence->Im Hintergrund sind stetig laufende Bioferrit-Sammler zu sehen.</li>
+    <li>desc_sentence->Die tiefe Faszination des Kolonisten für [ENTITY_nameDefAcc] ist offensichtlich.</li>
+    <li>desc_sentence->[STUDIER_nameDef] ist ganz in [STUDIER_possessive] Studium von [ENTITY_nameDefDat] vertieft und bemüht sich, [ENTITY_possessive]e Geheimnisse zu lüften.</li>
+    <li>desc_sentence->[ENTITY_nameDef] wird nur durch den unermüdlichen Einsatz der elektrischen Inhibitoren an Ort und Stelle gehalten.</li>
+    <li>desc_sentence->[ENTITY_nameDef] scheint auf [STUDIER_nameDef_s] Bemühungen nicht zu reagieren.</li>
+    <li>ENTITY_nameDefAcc->{replace: [ENTITY_nameDef]; ">der "-">den "}</li>
+    <li>ENTITY_nameDefDat->{replace: [ENTITY_nameDef]; ">der "-">dem "; ">die "-">der "; ">das "-">dem "}</li>
+    <li>ENTITY_nameIndefAcc->{replace: [ENTITY_nameDef]; ">der "-">einen "; ">die "-">eine "; ">das "-">ein "}</li>
+    <li>ENTITY_nameIndefDat->{replace: [ENTITY_nameDef]; ">der "-">einem "; ">die "-">einer "; ">das "-">einem "}</li>
+    <li>STUDIER_nameDef_s->{replace: [STUDIER_label]s; "s&lt;/color>s"-"s&lt;/color>'"; "ß&lt;/color>s"-"ß&lt;/color>'"; "z&lt;/color>s"-"z&lt;/color>'"; "x&lt;/color>s"-"x&lt;/color>'"; "ce&lt;/color>s"-"ce&lt;/color>'"}</li>
+  </StudiedEntity.rulePack.rulesStrings>
+  
+</LanguageData>

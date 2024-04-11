@@ -11,10 +11,10 @@ Official Translators
 --------------------
 Active:
 - [Ragnar-F](https://github.com/Ragnar-F) (main translator)
-- [TeiXeR](https://github.com/TeiXeR)
 
 Inactive:
 - [HaploX1](https://github.com/HaploX1)
+- [TeiXeR](https://github.com/TeiXeR)
 - [TheEisbaer](https://github.com/TheEisbaer)
 
 Aktuellste Übersetzungsdateien verwenden
@@ -28,6 +28,7 @@ ODER (falls das nicht funktioniert)
 1. Lade dir die [aktuellsten Übersetzungsdateien](https://github.com/Ludeon/RimWorld-de/archive/refs/heads/master.zip) herunter und entpacke die heruntergeladene ZIP-Datei.
 2. Erstelle in jedem der folgenden Ordner einen neuen Ordner namens 'German (Deutsch)'. Sollte der Ordner 'German (Deutsch)' bereits vorhanden sein, ist es ratsam, diesen vorher zu leeren:
     ```
+    <Pfad-zu-RimWorld>\Data\Anomaly\Languages\
     <Pfad-zu-RimWorld>\Data\Biotech\Languages\
     <Pfad-zu-RimWorld>\Data\Core\Languages\
     <Pfad-zu-RimWorld>\Data\Ideology\Languages\

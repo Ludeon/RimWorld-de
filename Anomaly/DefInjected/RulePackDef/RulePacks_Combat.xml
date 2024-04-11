@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN:
+    <li>r_logentry->[INITIATOR_definite] [firedat] [RECIPIENT_definite] with [INITIATOR_possessive] [WEAPON_label].</li>
+    <li>r_logentry->[INITIATOR_definite] [fired] [INITIATOR_possessive] [WEAPON_label] at [RECIPIENT_definite].</li>
+    <li>r_logentry->[INITIATOR_definite] [firedat] [RECIPIENT_definite].</li>
+    <li>r_logentry(RECIPIENT_missing==True)->[INITIATOR_definite] [fired] [INITIATOR_possessive] [WEAPON_label].</li>
+    <li>fired(p=2)->[verb_fired]</li>
+    <li>fired->[skillAdv] [verb_fired]</li>
+    <li>firedat->fired at</li>
+    <li>firedat->fired [skillAdv] at</li>
+    <li>firedat(p=0.5)->aimed and fired at</li>
+    <li>firedat(p=0.5)->[skillAdv] aimed and fired at</li>
+    <li>firedat(p=0.3)->opened fire at</li>
+    <li>verb_fired->fired</li>
+  -->
+  <Combat_RangedFlamethrower.rulePack.rulesStrings>
+    <li>r_logentry->[INITIATOR_definite] [fired] mit [seiner_Waffe] auf [RECIPIENT_nameDefAcc].</li>
+    <li>r_logentry(p=0.3)->[INITIATOR_definite] eröffnete das Feuer auf [RECIPIENT_nameDefAcc].</li>
+    <li>r_logentry->[INITIATOR_definite] [fired] auf [RECIPIENT_nameDefAcc].</li>
+    <li>r_logentry(RECIPIENT_missing==True)->[INITIATOR_definite] [fired] mit [seiner_Waffe].</li>
+    <li>fired(p=2)->[verb_fired]</li>
+    <li>fired->[verb_fired] [skillAdv]</li>
+    <li>fired(p=0.5)->zielte und [verb_fired]</li>
+    <li>fired(p=0.5)->zielte [skillAdv] und [verb_fired]</li>
+    <li>verb_fired->feuerte</li>
+    <li>seiner_Waffe->[INITIATOR_possessive]{replace: ^[WEAPON_indefinite]; "^ein [WEAPON_label]"-"em"; "^eine [WEAPON_label]"-"er"} {replace: [WEAPON_label]; "er "-"en "; "e "-"en "; "es "-"en "}</li>
+  </Combat_RangedFlamethrower.rulePack.rulesStrings>
+  
+</LanguageData>
