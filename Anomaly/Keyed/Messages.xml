@@ -45,13 +45,13 @@
 
   <!-- Containment -->
   <!-- EN: Warning: No rooms have the minimum containment strength for {0}. It may escape soon. -->
-  <MessageNoRoomWithMinimumContainmentStrength>Kein Raum hat die Mindesteindämmungsstärke für {0}. {0_pronoun} könnte bald flüchten.</MessageNoRoomWithMinimumContainmentStrength>
+  <MessageNoRoomWithMinimumContainmentStrength>Warnung: Kein Raum hat die Mindesteindämmungsstärke für {0_gender ? den : die : das} {lookup: {0}; decline; 7}. {0_pronoun} könnte bald flüchten.</MessageNoRoomWithMinimumContainmentStrength>
   <!-- EN: Warning: {0} is below minimum containment strength for {1}. It may escape soon. -->
-  <MessageTargetBelowMinimumContainmentStrength>{0} ist unter der Mindesteindämmungsstärke für {1}. {1_pronoun} könnte bald flüchten.</MessageTargetBelowMinimumContainmentStrength>
+  <MessageTargetBelowMinimumContainmentStrength>Warnung: {0_gender ? Der : Die : Das} {lookup: {0}; decline; 4} ist unter der Mindesteindämmungsstärke für {1_gender ? den : die : das} {lookup: {1}; decline; 7}. {1_pronoun} könnte bald flüchten.</MessageTargetBelowMinimumContainmentStrength>
   <!-- EN: Can't transfer to {0} reserved by someone else. -->
   <MessageHolderReserved>Kann nicht zu {0} transferieren: Reserviert von jemand anderem.</MessageHolderReserved>
   <!-- EN: {EXECUTIONER_labelShort} has executed {VICTIM_kindIndef}. -->
-  <MessageEntityExecuted>{EXECUTIONER_labelShort} hat {VICTIM_genderResolved ? einen : eine : ein} {VICTIM_kind} hingerichtet.</MessageEntityExecuted>
+  <MessageEntityExecuted>{EXECUTIONER_labelShort} hat {VICTIM_genderResolved ? einen : eine : ein} {lookup: {VICTIM_kind}; decline; 3} hingerichtet.</MessageEntityExecuted>
   <!-- EN: Warning: Reinstalling an occupied holding platform will release the entity. Transfer the entity to another platform first. -->
   <MessageOccupiedHoldingPlatformReinstalled>Warnung: Die Versetzung einer belegten Halteplattform führt zur Freilassung der Entität. Transferiere die Entität zuerst auf eine andere Plattform.</MessageOccupiedHoldingPlatformReinstalled>
   <!-- EN: Warning: Uninstalling an occupied holding platform will release the entity. Transfer the entity to another platform first. -->
