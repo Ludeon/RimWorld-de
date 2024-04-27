@@ -3,7 +3,7 @@
 
   <!-- Entities -->
   <!-- EN: {0_definite}'s activity is rising due to taking damage. -->
-  <MessageActivityRisingDamage>{0_definite} wird aktiver, da {0_pronoun} Schaden erleidet.</MessageActivityRisingDamage>
+  <MessageActivityRisingDamage>{0_gender ? Der : Die : Das} {lookup: {0}; decline; 4} wird aktiver, da {0_pronoun} Schaden erleidet.</MessageActivityRisingDamage>
   <!-- EN: {0_definite} has died on a holding platform. -->
   <EntityDiedOnHoldingPlatform>{0_definite} ist auf einer Halteplattform gestorben.</EntityDiedOnHoldingPlatform>
   <!-- EN: New entity discovered -->
@@ -17,7 +17,7 @@
 
   <!-- Self-resurrection -->
   <!-- EN: {0_nameDef} can self-resurrect on command using death refusal. -->
-  <SelfResurrectText>{0_nameDef} kann sich via Todestrotz auf Befehl selbst wiederbeleben.</SelfResurrectText>
+  <SelfResurrectText>{0_nameDef} kann sich via Todestrotz auf Befehl selbst wiedererwecken.</SelfResurrectText>
   <!-- EN: {0_nameDef} is using death refusal to self-resurrect. -->
   <MessageUsingSelfResurrection>{0_nameDef} verwendet Todestrotz, um sich selbst wiederzuerwecken.</MessageUsingSelfResurrection>
 
