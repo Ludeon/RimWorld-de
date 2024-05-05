@@ -128,15 +128,15 @@
   <!-- EN: deathrest capacity -->
   <DeathrestCapacity>Todesschlafkapazität</DeathrestCapacity>
   <!-- EN: This determines how many deathrest buildings a person can connect to while deathresting. Each deathrest building confers a specific benefit, so it's better to be able to connect to more of them.\n\nDeathrest capacity can be increased using deathrest capacity serums. These serums can be purchased from traders. -->
-  <DeathrestCapacityDesc>Diese Kapazität bestimmt, mit wie vielen Todesschlaf-Bauwerken sich eine Person verbinden kann, während sie im Todesschlaf ist. Da jedes dieser Bauwerke einen bestimmten Bonus gewährt, lohnt es sich, wenn man sich mit mehreren verbinden kann.\n\nTodesschlafkapazität kann mit Todesschlafkapazität-Seren erhöht werden. Seren dieser Art können bei Händlern erworben werden.</DeathrestCapacityDesc>
+  <DeathrestCapacityDesc>Diese Kapazität bestimmt, mit wie vielen Todesschlafbauwerken sich eine Person verbinden kann, während sie im Todesschlaf ist. Da jedes dieser Bauwerke einen bestimmten Bonus gewährt, lohnt es sich, wenn man sich mit mehreren verbinden kann.\n\nTodesschlafkapazität kann mit Todesschlafkapazitätsseren erhöht werden. Seren dieser Art können bei Händlern erworben werden.</DeathrestCapacityDesc>
   <!-- EN: {PAWN_nameDef} is connected to {CURRENT} / {MAX} (max) deathrest buildings. -->
-  <PawnIsConnectedToBuildings>{PAWN_nameDef} ist mit {replace: ^{CURRENT} Todesschlaf-Bauwerken; "^1 Todesschlaf-Bauwerken"-"1 Todesschlaf-Bauwerk"; "^"-""} verbunden (von max. {MAX}).</PawnIsConnectedToBuildings>
+  <PawnIsConnectedToBuildings>{PAWN_nameDef} ist mit {replace: ^{CURRENT} Todesschlafbauwerken; "^1 Todesschlafbauwerken"-"1 Todesschlafbauwerk"; "^"-""} verbunden (von max. {MAX}).</PawnIsConnectedToBuildings>
   <!-- EN: wake now -->
   <Wake>sofort aufwachen</Wake>
   <!-- EN: Wake up from deathrest.\n\n{PAWN_nameDef} has been in deathrest for {DURATION}. -->
   <WakeDesc>Wecke {PAWN_nameDef} aus {PAWN_possessive}em Todesschlaf.\n\n{PAWN_pronoun} befindet sich bereits seit (*DateTime){replace: {DURATION}; "Tage"-"Tagen"; "Jahre"-"Jahren"}(/DateTime) im Todesschlaf.</WakeDesc>
   <!-- EN: {PAWN_nameDef} needs to deathrest for at least {TOTAL}. Waking {PAWN_objective} early will make {PAWN_objective} ill, and {PAWN_pronoun} will not benefit from any deathrest buildings. -->
-  <WakeExtraDesc_Exhaustion>{PAWN_nameDef} muss mindestens {TOTAL} lang im Todesschlaf sein. Wenn {PAWN_pronoun} zu früh geweckt wird, hat das zur Folge, dass {PAWN_pronoun} krank wird und keine Boni durch Todesschlaf-Bauwerke erhält.</WakeExtraDesc_Exhaustion>
+  <WakeExtraDesc_Exhaustion>{PAWN_nameDef} muss mindestens {TOTAL} lang im Todesschlaf sein. Wenn {PAWN_pronoun} zu früh geweckt wird, hat das zur Folge, dass {PAWN_pronoun} krank wird und keine Boni durch Todesschlafbauwerke erhält.</WakeExtraDesc_Exhaustion>
   <!-- EN: {PAWN_nameDef} can now wake safely. -->
   <WakeExtraDesc_Safe>{PAWN_nameDef} kann jetzt sicher aufwachen.</WakeExtraDesc_Safe>
   <!-- EN: Cannot wake. Need at least {0} hemogen. -->
@@ -192,7 +192,7 @@
   <!-- EN: Minimum is {0} to apply -->
   <MinimumNeededToApply>Minimum ist {0}, um Bonus zu erhalten</MinimumNeededToApply>
   <!-- EN: Cannot deathrest -->
-  <CannotAssignBedCannotDeathrest>kein Todesschlaf-Gen</CannotAssignBedCannotDeathrest>
+  <CannotAssignBedCannotDeathrest>kein Todesschlafgen</CannotAssignBedCannotDeathrest>
   <!-- EN: Already bound to {0_nameDef} -->
   <CannotAssignAlreadyBound>bereits gebunden an {0_nameDef}</CannotAssignAlreadyBound>
   <!-- EN: Cannot bind to more {BUILDING_labelPlural} -->
@@ -292,7 +292,7 @@
   <!-- EN: How much complexity this adds to the process of gene assembly. -->
   <ComplexityDesc>Wie viel Komplexität dies zur Genkombination beiträgt.</ComplexityDesc>
   <!-- EN: Maximum complexity can be increased by building gene processors near the gene assembler. -->
-  <MaxComplexityDesc>Die maximale Komplexität kann durch den Bau von Gen-Prozessoren in der Nähe des Gen-Kombinators erhöht werden.</MaxComplexityDesc>
+  <MaxComplexityDesc>Die maximale Komplexität kann durch den Bau von Genprozessoren in der Nähe des Genkombinators erhöht werden.</MaxComplexityDesc>
   <!-- EN: Total complexity -->
   <ComplexityTotal>Gesamtkomplexität</ComplexityTotal>
   <!-- EN: The total complexity of all the genes in use. -->
@@ -386,7 +386,7 @@
   <!-- EN: Insert person -->
   <InsertPerson>Person einfügen</InsertPerson>
   <!-- EN: Insert a person into the gene extractor. Their genetic material will be extracted and used to create a genepack containing a random selection of their genes.\n\nGene extraction is painful and will leave the subject weak and drowsy for a number of days. The process is lethal for those whose genes are currently regrowing. -->
-  <InsertPersonGeneExtractorDesc>Füge eine Person in den Gen-Extraktor ein. Ihr Erbgut wird extrahiert und zur Erzeugung eines Genpakets verwendet, das eine zufällige Auswahl ihrer Gene enthält.\n\nDie Genextraktion ist schmerzhaft und macht die Person für einige Tage schwach und schläfrig. Für Personen, deren Gene gerade nachwachsen, ist der Vorgang tödlich.</InsertPersonGeneExtractorDesc>
+  <InsertPersonGeneExtractorDesc>Füge eine Person in den Genextraktor ein. Ihr Erbgut wird extrahiert und zur Erzeugung eines Genpakets verwendet, das eine zufällige Auswahl ihrer Gene enthält.\n\nDie Genextraktion ist schmerzhaft und macht die Person für einige Tage schwach und schläfrig. Für Personen, deren Gene gerade nachwachsen, ist der Vorgang tödlich.</InsertPersonGeneExtractorDesc>
   <!-- EN: Warning: {PAWN_nameDef}'s genes are regrowing. Extracting {PAWN_possessive} genes before they are regrown will kill {PAWN_objective}.\n\nAre you sure you wish to continue? -->
   <ConfirmExtractXenogermWillKill>Warnung: {replace: {PAWN_nameDef}s; "s(/Name)s"-"s(/Name)'"; "ß(/Name)s"-"ß(/Name)'"; "z(/Name)s"-"z(/Name)'"; "x(/Name)s"-"x(/Name)'"; "ce(/Name)s"-"ce(/Name)'"} Gene wachsen gerade nach. Wenn {PAWN_possessive}e Gene extrahiert werden, bevor sie nachgewachsen sind, stirbt {PAWN_nameDef}.\n\nBist du sicher, dass du fortfahren möchtest?</ConfirmExtractXenogermWillKill>
   <!-- EN: Gene extraction complete for {PAWN_nameDef}. Extracted -->
