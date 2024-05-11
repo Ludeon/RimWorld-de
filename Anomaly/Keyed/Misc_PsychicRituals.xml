@@ -8,7 +8,7 @@
   <!-- EN: Select a psychic ritual to perform -->
   <CastPsychicRitualDesc>Wähle ein Psyritual, das durchgeführt werden soll</CastPsychicRitualDesc>
   <!-- EN: {0_labelShort} cannot perform {1} psychic ritual because {2}. -->
-  <CannotCastPsychicRitual>{0_labelShort} kann Psyritual '{1}' nicht durchführen, weil {2}.</CannotCastPsychicRitual>
+  <CannotCastPsychicRitual>{0_labelShort} kann Psyritual '{1}' nicht durchführen. Grund: {2}.</CannotCastPsychicRitual>
   <!-- EN: The {0} psychic ritual has begun. -->
   <PsychicRitualBegun>Das Psyritual '{0}' wurde gestartet.</PsychicRitualBegun>
   <!-- EN: The {0} psychic ritual has been completed. -->
@@ -60,11 +60,11 @@
   <!-- EN: {0_labelShort} left the {1} psychic ritual. -->
   <PsychicRitualLeft>{0_labelShort} hat das Psyritual '{1}' verlassen.</PsychicRitualLeft>
   <!-- EN: {0_labelShort} left the {1} psychic ritual because {2}. -->
-  <PsychicRitualLeftBecause>{0_labelShort} hat das Psyritual '{1}' verlassen, weil {2}.</PsychicRitualLeftBecause>
+  <PsychicRitualLeftBecause>{0_labelShort} hat das Psyritual '{1}' verlassen. Grund: {2}.</PsychicRitualLeftBecause>
   <!-- EN: The {0} psychic ritual has been canceled. -->
   <PsychicRitualCanceled>Das Psyritual '{0}' wurde abgebrochen.</PsychicRitualCanceled>
   <!-- EN: The {0} psychic ritual has been canceled because {1}. -->
-  <PsychicRitualCanceledBecause>Das Psyritual '{0}' wurde abgebrochen, weil {1}.</PsychicRitualCanceledBecause>
+  <PsychicRitualCanceledBecause>Das Psyritual '{0}' wurde abgebrochen. Grund: {1}.</PsychicRitualCanceledBecause>
 
   <!-- EN: {0} is needed but only {1} is available -->
   <PsychicRitualOfferingsInsufficient>{0} benötigt (nur {1} verfügbar oder erreichbar)</PsychicRitualOfferingsInsufficient>
@@ -84,57 +84,57 @@
   <CommandCancelPsychicRitualConfirm>Bist du dir sicher, dass du das Psyritual '{0}' abbrechen willst?</CommandCancelPsychicRitualConfirm>
 
   <!-- EN: {PAWN_labelShort} vanished -->
-  <PsychicRitualLeaveReason_Vanished>{PAWN_labelShort} verschwunden ist</PsychicRitualLeaveReason_Vanished>
+  <PsychicRitualLeaveReason_Vanished>{PAWN_labelShort} ist verschwunden</PsychicRitualLeaveReason_Vanished>
   <!-- EN: {PAWN_labelShort} is incapacitated -->
-  <PsychicRitualLeaveReason_Incapped>{PAWN_labelShort} handlungsunfähig ist</PsychicRitualLeaveReason_Incapped>
+  <PsychicRitualLeaveReason_Incapped>{PAWN_labelShort} ist handlungsunfähig</PsychicRitualLeaveReason_Incapped>
   <!-- EN: {PAWN_labelShort} is dead -->
-  <PsychicRitualLeaveReason_Killed>{PAWN_labelShort} tot ist</PsychicRitualLeaveReason_Killed>
+  <PsychicRitualLeaveReason_Killed>{PAWN_labelShort} ist tot</PsychicRitualLeaveReason_Killed>
   <!-- EN: {PAWN_labelShort} is not part of {FACTION_name} -->
-  <PsychicRitualLeaveReason_WrongFaction>{PAWN_labelShort} nicht zur Fraktion {FACTION_name} gehört</PsychicRitualLeaveReason_WrongFaction>
+  <PsychicRitualLeaveReason_WrongFaction>{PAWN_labelShort} gehört nicht zur Fraktion {FACTION_name}</PsychicRitualLeaveReason_WrongFaction>
   <!-- EN: {PAWN_labelShort} is no longer on the map -->
-  <PsychicRitualLeaveReason_ExitedMap>{PAWN_labelShort} nicht mehr auf der Karte ist</PsychicRitualLeaveReason_ExitedMap>
+  <PsychicRitualLeaveReason_ExitedMap>{PAWN_labelShort} ist nicht mehr auf der Karte</PsychicRitualLeaveReason_ExitedMap>
   <!-- EN: {PAWN_labelShort} had better things to do -->
-  <PsychicRitualLeaveReason_LeftVoluntarily>{PAWN_labelShort} etwas Besseres zu tun hatte</PsychicRitualLeaveReason_LeftVoluntarily>
+  <PsychicRitualLeaveReason_LeftVoluntarily>{PAWN_labelShort} hatte etwas Besseres zu tun</PsychicRitualLeaveReason_LeftVoluntarily>
   <!-- EN: {PAWN_labelShort} is drafted -->
-  <PsychicRitualLeaveReason_Drafted>{PAWN_labelShort} im Kampfmodus ist</PsychicRitualLeaveReason_Drafted>
+  <PsychicRitualLeaveReason_Drafted>{PAWN_labelShort} ist im Kampfmodus</PsychicRitualLeaveReason_Drafted>
   <!-- EN: {PAWN_labelShort} is in a mental state -->
-  <PsychicRitualLeaveReason_InMentalState>{PAWN_labelShort} übergeschnappt ist</PsychicRitualLeaveReason_InMentalState>
+  <PsychicRitualLeaveReason_InMentalState>{PAWN_labelShort} ist übergeschnappt</PsychicRitualLeaveReason_InMentalState>
   <!-- EN: {PAWN_labelShort} is bleeding -->
   <PsychicRitualLeaveReason_Bleeding>{PAWN_labelShort} blutet</PsychicRitualLeaveReason_Bleeding>
   <!-- EN: {PAWN_labelShort} is on fire -->
   <PsychicRitualLeaveReason_Burning>{PAWN_labelShort} brennt</PsychicRitualLeaveReason_Burning>
   <!-- EN: the temperature near the target is not safe for {PAWN_labelShort} -->
-  <PsychicRitualLeaveReason_ExtremeTemperature>die Temperatur in der Nähe des Ziels nicht sicher ist für {PAWN_labelShort}</PsychicRitualLeaveReason_ExtremeTemperature>
+  <PsychicRitualLeaveReason_ExtremeTemperature>die Temperatur in der Nähe des Ziels ist nicht sicher für {PAWN_labelShort}</PsychicRitualLeaveReason_ExtremeTemperature>
   <!-- EN: {PAWN_labelShort} cannot participate from inside {BUILDING} -->
-  <PsychicRitualLeaveReason_InsideBuilding>{PAWN_labelShort} nicht aus '{BUILDING}' heraus teilnehmen kann</PsychicRitualLeaveReason_InsideBuilding>
+  <PsychicRitualLeaveReason_InsideBuilding>{PAWN_labelShort} kann nicht aus '{BUILDING}' heraus teilnehmen</PsychicRitualLeaveReason_InsideBuilding>
   <!-- EN: {PAWN_labelShort} is humanlike -->
-  <PsychicRitualLeaveReason_Humanlike>{PAWN_labelShort} menschlich ist</PsychicRitualLeaveReason_Humanlike>
+  <PsychicRitualLeaveReason_Humanlike>{PAWN_labelShort} ist menschlich</PsychicRitualLeaveReason_Humanlike>
   <!-- EN: {PAWN_labelShort} is not humanlike -->
-  <PsychicRitualLeaveReason_NonHumanlike>{PAWN_labelShort} nicht menschlich ist</PsychicRitualLeaveReason_NonHumanlike>
+  <PsychicRitualLeaveReason_NonHumanlike>{PAWN_labelShort} ist nicht menschlich</PsychicRitualLeaveReason_NonHumanlike>
   <!-- EN: {PAWN_labelShort} is a prisoner -->
-  <PsychicRitualLeaveReason_Prisoner>{PAWN_labelShort} {PAWN_gender ? ein Gefangener : eine Gefangene} ist</PsychicRitualLeaveReason_Prisoner>
+  <PsychicRitualLeaveReason_Prisoner>{PAWN_labelShort} ist {PAWN_gender ? ein Gefangener : eine Gefangene}</PsychicRitualLeaveReason_Prisoner>
   <!-- EN: {PAWN_labelShort} is a slave -->
-  <PsychicRitualLeaveReason_Slave>{PAWN_labelShort} {PAWN_gender ? ein Sklave : eine Sklavin} ist</PsychicRitualLeaveReason_Slave>
+  <PsychicRitualLeaveReason_Slave>{PAWN_labelShort} ist {PAWN_gender ? ein Sklave : eine Sklavin}</PsychicRitualLeaveReason_Slave>
   <!-- EN: {PAWN_labelShort} is free -->
-  <PsychicRitualLeaveReason_Freeman>{PAWN_labelShort} frei ist</PsychicRitualLeaveReason_Freeman>
+  <PsychicRitualLeaveReason_Freeman>{PAWN_labelShort} ist frei</PsychicRitualLeaveReason_Freeman>
   <!-- EN: {PAWN_labelShort} is a {STAGE} -->
-  <PsychicRitualLeaveReason_DevelopmentalStage>{PAWN_labelShort} ein {STAGE} ist</PsychicRitualLeaveReason_DevelopmentalStage>
+  <PsychicRitualLeaveReason_DevelopmentalStage>{PAWN_labelShort} ist ein {STAGE}</PsychicRitualLeaveReason_DevelopmentalStage>
   <!-- EN: {PAWN_labelShort} cannot reach the target location -->
-  <PsychicRitualLeaveReason_CannotReachTarget>{PAWN_labelShort} den Zielort nicht erreichen kann</PsychicRitualLeaveReason_CannotReachTarget>
+  <PsychicRitualLeaveReason_CannotReachTarget>{PAWN_labelShort} kann den Zielort nicht erreichen</PsychicRitualLeaveReason_CannotReachTarget>
   <!-- EN: {PAWN_labelShort} is asleep -->
-  <PsychicRitualLeaveReason_Sleeping>{PAWN_labelShort} gerade schläft</PsychicRitualLeaveReason_Sleeping>
+  <PsychicRitualLeaveReason_Sleeping>{PAWN_labelShort} schläft gerade</PsychicRitualLeaveReason_Sleeping>
   <!-- EN: {PAWN_labelShort} is not a human -->
-  <PsychicRitualLeaveReason_Mutant>{PAWN_labelShort} kein Mensch ist</PsychicRitualLeaveReason_Mutant>
+  <PsychicRitualLeaveReason_Mutant>{PAWN_labelShort} ist kein Mensch</PsychicRitualLeaveReason_Mutant>
   <!-- EN: {PAWN_labelShort}'s belief in {IDEO_name} prevents participation -->
-  <PsychicRitualLeaveReason_IdeoUnwilling>{replace: {PAWN_labelShort}s; "s(/Name)s"-"s(/Name)'"; "ß(/Name)s"-"ß(/Name)'"; "z(/Name)s"-"z(/Name)'"; "x(/Name)s"-"x(/Name)'"; "ce(/Name)s"-"ce(/Name)'"} Glaube an {IDEO_name} die Teilnahme verhindert</PsychicRitualLeaveReason_IdeoUnwilling> 
+  <PsychicRitualLeaveReason_IdeoUnwilling>{replace: {PAWN_labelShort}s; "s(/Name)s"-"s(/Name)'"; "ß(/Name)s"-"ß(/Name)'"; "z(/Name)s"-"z(/Name)'"; "x(/Name)s"-"x(/Name)'"; "ce(/Name)s"-"ce(/Name)'"} Glaube an {IDEO_name} verhindert die Teilnahme</PsychicRitualLeaveReason_IdeoUnwilling> 
   <!-- EN: {PAWN_labelShort} is not psychically sensitive -->
-  <PsychicRitualLeaveReason_NoPsychicSensitivity>{PAWN_labelShort} nicht mental sensibel ist</PsychicRitualLeaveReason_NoPsychicSensitivity>
+  <PsychicRitualLeaveReason_NoPsychicSensitivity>{PAWN_labelShort} ist nicht mental sensibel</PsychicRitualLeaveReason_NoPsychicSensitivity>
   <!-- EN: {PAWN_labelShort} is a temporary faction member -->
-  <PsychicRitualLeaveReason_TemporaryFactionMember>{PAWN_labelShort} ein temporäres Fraktionsmitglied ist</PsychicRitualLeaveReason_TemporaryFactionMember>
+  <PsychicRitualLeaveReason_TemporaryFactionMember>{PAWN_labelShort} ist ein temporäres Fraktionsmitglied</PsychicRitualLeaveReason_TemporaryFactionMember>
   <!-- EN: {PAWN_labelShort} has other duties to attend to -->
-  <PsychicRitualLeaveReason_PawnBusyWithLord>{PAWN_labelShort} andere Pflichten zu erledigen hat</PsychicRitualLeaveReason_PawnBusyWithLord>
+  <PsychicRitualLeaveReason_PawnBusyWithLord>{PAWN_labelShort} hat andere Pflichten zu erledigen</PsychicRitualLeaveReason_PawnBusyWithLord>
   <!-- EN: {PAWN_labelShort} has other duties to attend to -->
-  <PsychicRitualLeaveReason_ForcedByQuest>{PAWN_labelShort} andere Pflichten zu erledigen hat</PsychicRitualLeaveReason_ForcedByQuest>
+  <PsychicRitualLeaveReason_ForcedByQuest>{PAWN_labelShort} hat andere Pflichten zu erledigen</PsychicRitualLeaveReason_ForcedByQuest>
 
   <!-- PsychicRitualToils-->
   <!-- EN: moving into position -->
@@ -143,7 +143,7 @@
   <PsychicRitualToil_Goto_JobReport_Waiting>wartet darauf, dass alle in Position sind</PsychicRitualToil_Goto_JobReport_Waiting>
 
   <!-- EN: {PAWN_labelShort} was unable to find enough {1} -->
-  <PsychicRitualToil_GatherOfferings_OfferingUnavailable>{PAWN_labelShort} nicht genug {1} finden konnte</PsychicRitualToil_GatherOfferings_OfferingUnavailable>
+  <PsychicRitualToil_GatherOfferings_OfferingUnavailable>{PAWN_labelShort} konnte nicht genug {1} finden</PsychicRitualToil_GatherOfferings_OfferingUnavailable>
   <!-- EN: gathering offering -->
   <PsychicRitualToil_GatherOfferings_JobReport>sammelt Opfergaben</PsychicRitualToil_GatherOfferings_JobReport>
 
@@ -154,9 +154,9 @@
   <!-- EN: psychic ritual target -->
   <PsychicRitualToil_InvokeHorax_JobReport_Target>Ziel des Psyrituals</PsychicRitualToil_InvokeHorax_JobReport_Target>
   <!-- EN: {0} doesn't have enough {1} -->
-  <PsychicRitualToil_InvokeHorax_MissingRequiredOffering>{0} nicht genug {1} hat</PsychicRitualToil_InvokeHorax_MissingRequiredOffering>
+  <PsychicRitualToil_InvokeHorax_MissingRequiredOffering>{0} hat nicht genug {1}</PsychicRitualToil_InvokeHorax_MissingRequiredOffering>
   <!-- EN: {PAWN_labelShort} is out of position -->
-  <PsychicRitualToil_InvokeHorax_PawnIsOutOfPosition>{PAWN_labelShort} nicht in der richtigen Position ist</PsychicRitualToil_InvokeHorax_PawnIsOutOfPosition>
+  <PsychicRitualToil_InvokeHorax_PawnIsOutOfPosition>{PAWN_labelShort} ist nicht in der richtigen Position</PsychicRitualToil_InvokeHorax_PawnIsOutOfPosition>
   <!-- EN: defending psychic ritual -->
   <PsychicRitualToil_InvokeHorax_JobReport_Defender>beschützt Psyritual</PsychicRitualToil_InvokeHorax_JobReport_Defender> 
 
@@ -166,12 +166,12 @@
   <PsychicRitualToil_InvokeHorax_Report>beschwört die Leere</PsychicRitualToil_InvokeHorax_Report>
 
   <!-- EN: {TARGET_labelShort} was destroyed -->
-  <PsychicRitualDef_TargetDestroyed>{TARGET_labelShort} zerstört wurde</PsychicRitualDef_TargetDestroyed>
+  <PsychicRitualDef_TargetDestroyed>{TARGET_labelShort} wurde zerstört</PsychicRitualDef_TargetDestroyed>
   <!-- EN: {INVOKER_labelShort} cannot continue the psychic ritual -->
-  <PsychicRitualDef_InvocationCircle_InvokerLost>{INVOKER_labelShort} das Psyritual nicht fortsetzen kann</PsychicRitualDef_InvocationCircle_InvokerLost>
+  <PsychicRitualDef_InvocationCircle_InvokerLost>{INVOKER_labelShort} kann das Psyritual nicht fortsetzen</PsychicRitualDef_InvocationCircle_InvokerLost>
 
   <!-- EN: the area around the target site must be clear of obstructions -->
-  <PsychicRitualDef_InvocationCircle_AreaMustBeClear>der Bereich um den Veranstaltungsort frei von Hindernissen sein muss</PsychicRitualDef_InvocationCircle_AreaMustBeClear>
+  <PsychicRitualDef_InvocationCircle_AreaMustBeClear>der Bereich um den Veranstaltungsort muss frei von Hindernissen sein</PsychicRitualDef_InvocationCircle_AreaMustBeClear>
   <!-- EN: {PAWN_labelShort}'s psychic sensitivity -->
   <PsychicRitualDef_InvocationCircle_QualityFactor_PsychicSensitivity>{replace: {PAWN_labelShort}s; "s(/Name)s"-"s(/Name)'"; "ß(/Name)s"-"ß(/Name)'"; "z(/Name)s"-"z(/Name)'"; "x(/Name)s"-"x(/Name)'"; "ce(/Name)s"-"ce(/Name)'"} mentale Sensibilität</PsychicRitualDef_InvocationCircle_QualityFactor_PsychicSensitivity>
   <!-- EN: How in-tune {PAWN_labelShort} is with psychic phenomena. -->
