@@ -50,7 +50,7 @@
     <li>tv_content->Glitzerweltmode</li>
     <li>tv_content->Docartoons</li>
     <li>tv_content->Fußball</li>
-    <li>subject_story->ein Fernsehdirektor wurde, der für [tv_content] zuständig war</li>
+    <li>subject_story->{ANYPAWN_gender ? ein Fernsehdirektor : eine Fernsehdirektorin} wurde, {ANYPAWN_gender ? der : die} für [tv_content] zuständig war</li>
     <li>subject_gerund->die Herstellung von Flachbildfernsehern</li>
     <li>subject_gerund_acc->die Herstellung von Flachbildfernsehern</li>
     <li>subject_gerund_dat->der Herstellung von Flachbildfernsehern</li>
@@ -95,7 +95,7 @@
   <HeavyTurrets.generalRules.rulesStrings>
     <li>subject->Autokanonentürme</li>
     <li>subject_with_adj->e Autokanonentürme</li>
-    <li>subject_story->einen Angriff der Kultisten allein abwehrte, indem er sich hinter einer Mauer von Geschütztürmen versteckte</li>
+    <li>subject_story->einen Angriff der Kultisten allein abwehrte, indem [ANYPAWN_pronoun] sich hinter einer Mauer von Geschütztürmen versteckte</li>
     <li>subject_story->den Auftrag erhielt, eine Verteidigungslinie aus Sandsäcken und Geschütztürmen für die Einheimischen zu errichten</li>
     <li>subject_story->einen Geschützturm nach dem anderen baute, ohne zu fragen, wer sie kaufen würde</li>
     <li>subject_gerund->der Bau von schweren Autokanonentürmen</li>
@@ -119,7 +119,7 @@
     <li>subject_with_adj->e Intensivbetten</li>
     <li>subject_story->darauf achtete, dass bei einer Revolution die Standards der medizinischen Versorgung eingehalten wurden</li>
     <li>subject_story->das erste öffentliche Krankenhaus im System baute</li>
-    <li>subject_story->sich auf den Profit konzentrierte und seine überlegenen medizinischen Apparate an die Reichen verkaufte</li>
+    <li>subject_story->sich auf den Profit konzentrierte und [ANYPAWN_possessive]e überlegenen medizinischen Apparate an die Reichen verkaufte</li>
     <li>subject_gerund->der Bau von Intensivbetten</li>
     <li>subject_gerund_acc->den Bau von Intensivbetten</li>
     <li>subject_gerund_dat->dem Bau von Intensivbetten</li>
@@ -141,7 +141,7 @@
     <li>subject_with_adj->e Langstreckenscanner</li>
     <li>subject_story->so viele Scanner baute, dass die gesamte Geologie des Planeten enthüllt wurde</li>
     <li>subject_story->mit einem Scanner herausfand, was die anderen Siedlungen förderten, und durch den Handel große Gewinne machte</li>
-    <li>subject_story->die gesamte Jade des Planeten für religiöse Figuren abbaute</li>
+    <li>subject_story->das gesamte Jadevorkommen des Planeten für religiöse Figuren abbaute</li>
     <li>subject_gerund->der Bau von Langstreckenscannern</li>
     <li>subject_gerund_acc->den Bau von Langstreckenscannern</li>
     <li>subject_gerund_dat->dem Bau von Langstreckenscannern</li>
@@ -230,9 +230,9 @@
   <MultibarrelWeapons.generalRules.rulesStrings>
     <li>subject->Miniguns</li>
     <li>subject_with_adj->e Miniguns</li>
-    <li>subject_story->eine einzigartige tragbare Minigun baute, die das einzige war, was nach dem Verschwinden der Truppe gefunden wurde</li>
-    <li>subject_story->massive Magazine baute, damit die Munition für die Minigun nicht ausging</li>
-    <li>subject_story->Waffen baute, die ausdrücklich dazu bestimmt waren, alle Menschen in einem Raum zu töten</li>
+    <li>subject_story->eine spezielle tragbare Minigun baute, die nach dem Verschwinden des Trupps als einziger Gegenstand gefunden wurde</li>
+    <li>subject_story->massive Magazintrichter baute, damit die Munition für die Minigun nicht ausging</li>
+    <li>subject_story->Waffen baute, die ausdrücklich dazu bestimmt waren, einen Raum menschenfrei zu machen</li>
     <li>subject_gerund->die Herstellung von mehrläufigen Waffen</li>
     <li>subject_gerund_acc->die Herstellung von mehrläufigen Waffen</li>
     <li>subject_gerund_dat->der Herstellung von mehrläufigen Waffen</li>
@@ -254,7 +254,7 @@
     <li>subject_with_adj->e Gewehre</li>
     <li>subject_story->die Toleranzen der Gießverfahren verbesserte und so die Herstellung von qualitativ hochwertigen Gewehrläufen ermöglichte</li>
     <li>subject_story->von Neandertalern gejagt wurde, aber ein Scharfschützengewehr baute, um ihren Anführer aus sicherer Entfernung zu töten</li>
-    <li>subject_story->kurzzeitig berühmt wurde, weil er dem Overlord eine Ambrosiafrucht aus der Hand schoss</li>
+    <li>subject_story->kurzzeitig berühmt wurde, weil [ANYPAWN_pronoun] dem Overlord eine Ambrosiafrucht aus der Hand schoss</li>
     <li>subject_gerund->die Herstellung von Gewehren</li>
     <li>subject_gerund_acc->die Herstellung von Gewehren</li>
     <li>subject_gerund_dat->der Herstellung von Gewehren</li>
@@ -274,9 +274,9 @@
   <ShieldBelt.generalRules.rulesStrings>
     <li>subject->Eigenabschirmung</li>
     <li>subject_with_adj->e Eigenabschirmung</li>
-    <li>subject_story->dank eines Prototyp-Schildes ein Attentat überlebte</li>
-    <li>subject_story->sich beim Billard mit einem versteckten Impulsabstoßer abrackerte</li>
-    <li>subject_story->einen Feind tötete, indem er seine Klinge langsam genug vorschob, um dessen Schild zu durchdringen</li>
+    <li>subject_story->dank eines Schildprototyps ein Attentat überlebte</li>
+    <li>subject_story->schummelte beim Billard, indem [ANYPAWN_pronoun] einen versteckten Impulsabstoßer benutzte</li>
+    <li>subject_story->einen Feind tötete, indem [ANYPAWN_pronoun] [ANYPAWN_possessive]e Klinge langsam genug vorschob, um den Schild des Feindes zu durchdringen</li>
     <li>subject_gerund->die Herstellung von persönlichen Schutzschilden</li>
     <li>subject_gerund_acc->die Herstellung von persönlichen Schutzschilden</li>
     <li>subject_gerund_dat->der Herstellung von persönlichen Schutzschilden</li>
@@ -297,7 +297,7 @@
     <li>subject->Transportkapseln</li>
     <li>subject_with_adj->e Transportkapseln</li>
     <li>subject_story->mit einer Kapsel inmitten eines wilden Stammes landete und nur knapp mit dem Leben davonkam</li>
-    <li>subject_story->ein Vermögen ausgab, um dem Objekt seiner Begierde einen Ehering per Transportkapsel zu schicken</li>
+    <li>subject_story->ein Vermögen ausgab, um dem Objekt [ANYPAWN_possessive]er Begierde einen Ehering per Transportkapsel zu schicken</li>
     <li>subject_story->die Hungersnot durch geschickten Einsatz von Kapseln abwendete</li>
     <li>subject_gerund->der Bau von Transportkapseln</li>
     <li>subject_gerund_acc->den Bau von Transportkapseln</li>

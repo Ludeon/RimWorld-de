@@ -94,7 +94,7 @@
     <li>subject_with_adj->es komplexes Schneidern</li>
     <li>subject_story->strapazierfähige Kleidung für das Urbwelt-Stadtvolk schneiderte</li>
     <li>subject_story->sich beim Nähen entspannte und den Dorfkindern Geschichten erzählte</li>
-    <li>subject_story->lernte, Kleidung für die großen Auftritte seines Ensembles herzustellen</li>
+    <li>subject_story->lernte, Kleidung für die großen Auftritte [ANYPAWN_possessive]es Ensembles herzustellen</li>
     <li>subject_gerund->die Herstellung komplexer Kleidung</li>
     <li>subject_gerund_acc->die Herstellung komplexer Kleidung</li>
     <li>subject_gerund_dat->der Herstellung komplexer Kleidung</li>
@@ -138,7 +138,7 @@
     <li>subject_with_adj->er Teufelsgarn-Anbau</li>
     <li>subject_story->Teufelsgarn als natürliche Brandschneise nutzte</li>
     <li>subject_story->die Techniken für den einfachen Anbau von Teufelsgarn entwickelte</li>
-    <li>subject_story->verrückt nach Pilzen wurde und sich selbst zur Prinzessin seines Königreichs ernannte</li>
+    <li>subject_story->verrückt nach Pilzen wurde und sich selbst zur Prinzessin [ANYPAWN_possessive]es Königreichs ernannte</li>
     <li>subject_gerund->der Anbau von Teufelsgarn</li>
     <li>subject_gerund_acc->den Anbau von Teufelsgarn</li>
     <li>subject_gerund_dat->dem Anbau von Teufelsgarn</li>
@@ -164,7 +164,7 @@
     <li>subject_with_adj->e Drogensynthese</li>
     <li>subject_story->in einem Asteroidenlabor am Rande des bewohnten Weltraums arbeitete</li>
     <li>subject_story->lernte, wie man aus recycelten Chemikalien Drogen herstellt, was zu vielen Jahren im Gefängnis führte</li>
-    <li>subject_story->als Chemiker arbeitete, aber nebenbei in den Handel mit illegalen Drogen abrutschte</li>
+    <li>subject_story->als {ANYPAWN_gender ? Chemiker : Chemikerin} arbeitete, aber nebenbei in den Handel mit illegalen Drogen abrutschte</li>
     <li>subject_gerund->der Bau von Drogenlaboren</li>
     <li>subject_gerund_acc->den Bau von Drogenlaboren</li>
     <li>subject_gerund_dat->dem Bau von Drogenlaboren</li>
@@ -231,8 +231,8 @@
   <LongBlades.generalRules.rulesStrings>
     <li>subject->Mittelalterwaffen</li>
     <li>subject_with_adj->e Mittelalterwaffen</li>
-    <li>subject_story->mit Betadukes Fünfter Leichter Kavallerie den Sektor eroberte</li>
-    <li>subject_story->als Waffenschmied unter der Arena auf einem eisenzeitlichen Planeten versklavt wurde</li>
+    <li>subject_story->mit der Fünften Leichten Kavallerie des Betaherzogs ritt, um einen Sektor zu erobern</li>
+    <li>subject_story->versklavt wurde und als {ANYPAWN_gender ? Waffenschmied : Waffenschmiedin} unter der Arena eines eisenzeitlichen Planeten arbeiten musste</li>
     <li>subject_story->die Hopliten auf einer Kriegswelt darin ausbildete, die Reichweite ihrer Waffen zu nutzen</li>
     <li>subject_gerund->das Schmieden von Mittelalterwaffen</li>
     <li>subject_gerund_acc->das Schmieden von Mittelalterwaffen</li>
@@ -301,7 +301,7 @@
     <li>subject->Penoxyzylinherstellung</li>
     <li>subject_with_adj->e Penoxyzylinherstellung</li>
     <li>subject_story->einen Vortrag über Präventivmedizin vor den Vereinigten Planeten hielt</li>
-    <li>subject_story->als Quacksalber aus Dawn Falls vertrieben wurde, weil er eine Medizin verkaufte, die "nichts bringt"</li>
+    <li>subject_story->als {ANYPAWN_gender ? Quacksalber : Quacksalberin} aus Dawn Falls vertrieben wurde, weil [ANYPAWN_pronoun] Medizin verkaufte, die "nichts bringt"</li>
     <li>subject_story->durch sorgfältige Penoxyzylindosierung eine Ausbreitung von Malaria verhinderte</li>
     <li>subject_gerund->die Synthese von Penoxyzylin</li>
     <li>subject_gerund_acc->die Synthese von Penoxyzylin</li>
@@ -322,8 +322,8 @@
   <PlateArmor.generalRules.rulesStrings>
     <li>subject->Plattenrüstung</li>
     <li>subject_with_adj->e Plattenrüstung</li>
-    <li>subject_story->aus Schrott eine Rüstung bastelte, während die Polizei die Hütte seiner Familie umstellte</li>
-    <li>subject_story->als Grüner Schmied bekannt wurde, weil Moos auf der hölzernen Rüstung wuchs</li>
+    <li>subject_story->aus Schrott eine Rüstung bastelte, während die Polizei die Hütte [ANYPAWN_possessive]er Familie umstellte</li>
+    <li>subject_story->als {ANYPAWN_gender ? Grüner Schmied : Grüne Schmiedin} bekannt wurde, weil auf [ANYPAWN_possessive]en hergestellten Holzrüstungen Moos wuchs</li>
     <li>subject_story->das erste Kollektiv von Rüstungsschmieden auf einer Urbwelt gründete</li>
     <li>subject_gerund->das Schmieden von Plattenrüstung</li>
     <li>subject_gerund_acc->das Schmieden von Plattenrüstung</li>
@@ -344,7 +344,7 @@
   <PsychiteRefining.generalRules.rulesStrings>
     <li>subject->Psychitherstellung</li>
     <li>subject_with_adj->e Psychitherstellung</li>
-    <li>subject_story->seinen Job an der Universität als Tarnung für seine Drogengeschäfte nutzte</li>
+    <li>subject_story->[ANYPAWN_possessive]en Job an der Universität als Tarnung für [ANYPAWN_possessive]e Drogengeschäfte nutzte</li>
     <li>subject_story->eine Kommune gründete, wo niedrig dosiertes Flake ins Essen gemischt wurde</li>
     <li>subject_story->sich auf einer benachbarten Urbwelt für die Legalisierung von Yayo einsetzte</li>
     <li>subject_gerund->die Veredelung von Psychit</li>
@@ -391,8 +391,8 @@
     <li>subject_with_adj->er Bogenbau</li>
     <li>subject->Bogenherstellung</li>
     <li>subject_with_adj->e Bogenherstellung</li>
-    <li>subject_story->vier Tage lang eine tollwütige Boomalope verfolgte, bevor er sie mit einem einzigen Pfeil tötete</li>
-    <li>subject_story->sich in der Nähe eines Eibenwaldes niederließ, um sich das ideale Material für seine Bögen zu sichern</li>
+    <li>subject_story->vier Tage lang eine tollwütige Boomalope verfolgte, bevor [ANYPAWN_pronoun] sie mit einem einzigen Pfeil tötete</li>
+    <li>subject_story->sich in der Nähe eines Eibenwaldes niederließ, um sich das ideale Material für [ANYPAWN_possessive]e Bögen zu sichern</li>
     <li>subject_story->die Kinder der Kolonie zu Jägern und Sammlern erzog, von denen jeder ein Meister im Bogenschießen war</li>
     <li>subject_gerund->die Herstellung von Bögen</li>
     <li>subject_gerund_acc->die Herstellung von Bögen</li>
@@ -434,7 +434,7 @@
   <Stonecutting.generalRules.rulesStrings>
     <li>subject->Steinmetzarbeit</li>
     <li>subject_with_adj->e Steinmetzarbeit</li>
-    <li>subject_story->der erste in einer Reihe von Tempelgestaltern war, die alle denselben Namen trugen</li>
+    <li>subject_story->{ANYPAWN_gender ? der : die} erste in einer Reihe von Tempelgestaltern war, die alle denselben Namen trugen</li>
     <li>subject_story->einzigartige Techniken entwickelte, um selbst das härteste Gestein mit einfachen Werkzeugen zu bearbeiten</li>
     <li>subject_story->überall im Palast des Vizekönigs Fliesen verlegte</li>
     <li>subject_gerund->die Steinbearbeitung</li>
@@ -459,7 +459,7 @@
   <TreeSowing.generalRules.rulesStrings>
     <li>subject->Baumpflanzung</li>
     <li>subject_with_adj->e Baumpflanzung</li>
-    <li>subject_story->auf einem toten Planetoiden Bäume pflanzte, wo er nur konnte, um das Leben zurückzubringen</li>
+    <li>subject_story->auf einem toten Planetoiden Bäume pflanzte, wo [ANYPAWN_pronoun] nur konnte, um das Leben zurückzubringen</li>
     <li>subject_story->einen Artikel über die Erhaltung natürlicher Ökosysteme veröffentlichte</li>
     <li>subject_story->in einer Baumschule auf einer Tierwelt arbeitete</li>
     <li>subject_gerund->der Anbau von Bäumen</li>

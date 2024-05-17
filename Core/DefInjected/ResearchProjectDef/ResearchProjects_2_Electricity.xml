@@ -38,7 +38,7 @@
   <Autodoors.generalRules.rulesStrings>
     <li>subject->Automatiktüren</li>
     <li>subject_with_adj->e Automatiktüren</li>
-    <li>subject_story->von einer Sicherheitsfirma für Robotik angeworben wurde, was ihm die Tür zu einer Karriere als Automationstester öffnete</li>
+    <li>subject_story->von einer Sicherheitsfirma für Robotik angeworben wurde, was {ANYPAWN_gender ? ihm : ihr} die Tür zu einer Karriere als {ANYPAWN_gender ? Automationstester : Automationstesterin} öffnete</li>
     <li>subject_story->Prototypen einzigartiger Modelle von Automatiktüren entwickelte</li>
     <li>subject_story->sehr hart daran arbeitete, dass die Türen beim Öffnen und Schließen ein befriedigendes Zischgeräusch machen</li>
     <li>subject_gerund->der Bau von Automatiktüren</li>
@@ -61,8 +61,8 @@
     <li>subject->Batterien</li>
     <li>subject_with_adj->e Batterien</li>
     <li>subject_story->entdeckte, dass ein Säuresee an den bleiernen Ufern einer Todeswelt wie eine natürliche Batterie funktioniert</li>
-    <li>subject_story->für den Erhalt der Lebenserhaltung zuständig war, wenn der Strom in der Kolonie ausfiel</li>
-    <li>subject_story->in den Schrottwelten arbeitete, wo er Maschinen und Batterien reparierte</li>
+    <li>subject_story->für die Lebenserhaltung zuständig war, wenn der Strom in der Kolonie ausfiel</li>
+    <li>subject_story->in den Schrottwelten arbeitete, wo [ANYPAWN_pronoun] Maschinen und Batterien reparierte</li>
     <li>subject_gerund->der Bau von Batterien</li>
     <li>subject_gerund_acc->den Bau von Batterien</li>
     <li>subject_gerund_dat->dem Bau von Batterien</li>
@@ -82,7 +82,7 @@
   <BiofuelRefining.generalRules.rulesStrings>
     <li>subject->Biosprit</li>
     <li>subject_with_adj->er Biosprit</li>
-    <li>subject_story->wegen eines Energieausfalls in einem Generationenschiff festsaß. Er nutzte seine Kenntnisse über Raffination, um aus menschlichen Überresten Biosprit herzustellen und die Triebwerke wieder zum Laufen zu bringen</li>
+    <li>subject_story->wegen eines Energieausfalls in einem Generationenschiff festsaß. [ANYPAWN_pronoun] nutzte [ANYPAWN_possessive]e Kenntnisse über Raffination, um menschliche Überreste zu Biosprit zu verarbeiten und die Triebwerke wieder zum Laufen zu bringen</li>
     <li>subject_story->autonome Bioraffinerien einsetzte, um den langen Terraformingprozess auf einer Eiswelt zu beginnen</li>
     <li>subject_story->eine Brennerei gründete, um Schnaps zu brennen, dann aber feststellte, dass der Schnaps nicht trinkbar war, und ihn stattdessen als Sprit verkaufte</li>
     <li>subject_gerund->das Raffinieren von Biosprit</li>
@@ -182,7 +182,7 @@
     <li>subject->Brandschutzgeräte</li>
     <li>subject_with_adj->e Brandschutzgeräte</li>
     <li>subject_story->eine Agentur leitete, die den Brandschutz für die gesamte Bevölkerung vorantrieb</li>
-    <li>subject_story->ein Feuerwehrmann wurde</li>
+    <li>subject_story->{ANYPAWN_gender ? ein Feuerwehrmann : eine Feuerwehrfrau} wurde</li>
     <li>subject_story->von den Werfern gerettet wurde, als ein Ölbrand außer Kontrolle geriet</li>
     <li>subject_gerund->der Bau von Löschschaumwerfern</li>
     <li>subject_gerund_acc->den Bau von Löschschaumwerfern</li>
@@ -207,8 +207,8 @@
     <li>subject->Schutzrüstung</li>
     <li>subject_with_adj->e Schutzrüstung</li>
     <li>subject_story->die Milizen, die die Städte kontrollierten, mit Schutzrüstungen versorgte</li>
-    <li>subject_story->lernte, Metallplatten in die Kleidung einzunähen, um seine Sippe vor umherziehenden Banden zu schützen</li>
-    <li>subject_story->dank der eingenähten Metallplatte in seiner Brusttasche eine Gewehrkugel überlebte</li>
+    <li>subject_story->lernte, Metallplatten in die Kleidung einzunähen, um [ANYPAWN_possessive]e Sippe vor umherziehenden Banden zu schützen</li>
+    <li>subject_story->dank der eingenähten Metallplatte in [ANYPAWN_possessive]er Brusttasche eine Gewehrkugel überlebte</li>
     <li>subject_gerund->die Herstellung von Schutzrüstung</li>
     <li>subject_gerund_acc->die Herstellung von Schutzrüstung</li>
     <li>subject_gerund_dat->der Herstellung von Schutzrüstung</li>
@@ -234,7 +234,7 @@
     <li>subject_with_adj->e Feuerlöschtürme</li>
     <li>subject_story->die Geschütztürme so umbaute, dass sie Brände nicht mehr verursachten, sondern löschten</li>
     <li>subject_story->Hitzesensoren und Schaumwerfer in ein reguläres Turmgehäuse einbaute</li>
-    <li>subject_story->gelobt wurde, weil er billige Schaumtürme auf öffentlichen Plätzen aufgestellt und damit viele Menschenleben gerettet hatte</li>
+    <li>subject_story->dafür gefeiert wurde, dass [ANYPAWN_pronoun] günstige Schaumtürme auf öffentlichen Plätzen aufgestellt und damit viele Menschenleben gerettet hat</li>
     <li>subject_gerund->der Bau von Feuerlöschtürmen</li>
     <li>subject_gerund_acc->den Bau von Feuerlöschtürmen</li>
     <li>subject_gerund_dat->dem Bau von Feuerlöschtürmen</li>
@@ -311,7 +311,7 @@
     <li>subject_with_adj->e Einzelladerwaffen</li>
     <li>subject_story->einen einzigartigen 12-Schuss-Revolver baute und eine Schießerei nach der anderen gewann</li>
     <li>subject_story->sich auf die Herstellung einfacher Waffen spezialisierte und Schrotflinten und Gewehre für Jäger anfertigte</li>
-    <li>subject_story->sich als Büchsenmacher niederließ und in der ganzen Branche berühmt wurde</li>
+    <li>subject_story->sich als {ANYPAWN_gender ? Büchsenmacher : Büchsenmacherin} niederließ und in der ganzen Branche berühmt wurde</li>
     <li>subject_gerund->die Herstellung von Schusswaffen</li>
     <li>subject_gerund_acc->die Herstellung von Schusswaffen</li>
     <li>subject_gerund_dat->der Herstellung von Schusswaffen</li>
@@ -333,7 +333,7 @@
     <li>subject_with_adj->e Geschütztürme</li>
     <li>subject_story->an den KI-Routinen arbeitete, um die Freund-Feind-Erkennung der Geschütztürme zu optimieren</li>
     <li>subject_story->einen modularen Turm entwarf, auf dem jeder Waffentyp montiert werden kann</li>
-    <li>subject_story->die gegnerischen Geschütztürme ferngesteuert ausschaltete, bevor er zum Angriff blies</li>
+    <li>subject_story->die gegnerischen Geschütztürme ferngesteuert ausschaltete, bevor [ANYPAWN_pronoun] zum Angriff blies</li>
     <li>subject_gerund->der Bau von autonomen Geschütztürmen</li>
     <li>subject_gerund_acc->den Bau von autonomen Geschütztürmen</li>
     <li>subject_gerund_dat->dem Bau von autonomen Geschütztürmen</li>
@@ -354,7 +354,7 @@
   <Hydroponics.generalRules.rulesStrings>
     <li>subject->Hydrokulturen</li>
     <li>subject_with_adj->e Hydrokulturen</li>
-    <li>subject_story->sich als Pflanzenspezialist der Besatzung eines Generationenschiffs anschloss</li>
+    <li>subject_story->sich als {ANYPAWN_gender ? Pflanzenspezialist : Pflanzenspezialistin} der Besatzung eines Generationenschiffs anschloss</li>
     <li>subject_story->eine Hydrokulturanlage gründete, um die Hungernden zu ernähren</li>
     <li>subject_story->umherzog und neuen Kolonisten das künstliche Pflanzenwachstum beibrachte</li>
     <li>subject_gerund->der Bau von Hydrokulturbecken</li>
@@ -380,7 +380,7 @@
     <li>subject->improvisierte Sprengfallen</li>
     <li>subject_with_adj->e improvisierte Sprengfallen</li>
     <li>subject_story->die vom Krieg übrig gebliebenen Granaten entschärfte und sie als Minen an die neue Front schickte</li>
-    <li>subject_story->unter Mörserbeschuss geriet und nur überlebte, weil er aus den vielen Blindgängern des Feindes Fallen baute</li>
+    <li>subject_story->unter Mörserbeschuss geriet und nur überlebte, weil [ANYPAWN_pronoun] aus den vielen Blindgängern des Feindes Fallen baute</li>
     <li>subject_story->sich für die Rechte der kleinen Siedlungen einsetzte, in denen Blindgänger eine ständige Gefahr darstellten</li>
     <li>subject_gerund->der Bau von improvisierten Sprengfallen</li>
     <li>subject_gerund_acc->den Bau von improvisierten Sprengfallen</li>
@@ -404,7 +404,7 @@
     <li>subject_with_adj->er Maschinenbau</li>
     <li>subject_story->die Überreste von toten Mechanoiden einsammelte und sie in nützliche Ressourcen zerlegte</li>
     <li>subject_story->im Keller eines Vorstadthauses heimlich ein Arsenal selbstgebauter Waffen anlegte</li>
-    <li>subject_story->für viele Büchsenmacher Werkbänke baute, obwohl er selbst Pazifist war</li>
+    <li>subject_story->für viele Büchsenmacher Werkbänke baute, obwohl [ANYPAWN_pronoun] selbst {ANYPAWN_gender ? Pazifist : Pazifistin} war</li>
     <li>subject_gerund->die Herstellung von maschineller Ausrüstung</li>
     <li>subject_gerund_acc->die Herstellung von maschineller Ausrüstung</li>
     <li>subject_gerund_dat->der Herstellung von maschineller Ausrüstung</li>
@@ -457,7 +457,7 @@
     <li>subject->Nährpaste</li>
     <li>subject_with_adj->e Nährpaste</li>
     <li>subject_story->in einer Werkskantine arbeitete und Nährpaste entwickelte, um körperliche Arbeit zu vermeiden</li>
-    <li>subject_story->durch eine Krankheit seinen Geruchssinn verlor und eine billige, geschmacklose Nährpaste erfand</li>
+    <li>subject_story->durch eine Krankheit [ANYPAWN_possessive]en Geruchssinn verlor und eine billige, geschmacklose Nährpaste erfand</li>
     <li>subject_story->dafür plädierte, alles organische Material, sogar Leichen, in Nährpaste umzuwandeln</li>
     <li>subject_gerund->der Bau von Nährpastenspendern</li>
     <li>subject_gerund_acc->den Bau von Nährpastenspendern</li>
@@ -526,7 +526,7 @@
   <SmokepopBelt.generalRules.rulesStrings>
     <li>subject->Rauchwand</li>
     <li>subject_with_adj->e Rauchwand</li>
-    <li>subject_story->als Spediteur für Bands arbeitete, die Rauchbomben für Spezialeffekte einsetzten</li>
+    <li>subject_story->als {ANYPAWN_gender ? Spediteur : Spediteurin} für Bands arbeitete, die Rauchbomben für Spezialeffekte einsetzten</li>
     <li>subject_story->einen defensiven Rauchbombengürtel um die lokalen Städte etablierte, um die Wildtiere fernzuhalten</li>
     <li>subject_story->Rauchrucksäcke zur Ausbildung neuer Feuerwehrleute verwendete, ohne die Gefahr eines echten Brandes</li>
     <li>subject_gerund->die Herstellung von Rauchrucksäcken</li>
@@ -577,7 +577,7 @@
   <SterileMaterials.generalRules.rulesStrings>
     <li>subject->sterile Oberflächen</li>
     <li>subject_with_adj->e sterile Oberflächen</li>
-    <li>subject_story->viele Todesfälle verhinderte, indem er auf einer wirksamen und konsequenten Sterilisation aller Geräte bestand</li>
+    <li>subject_story->viele Todesfälle verhinderte, indem [ANYPAWN_pronoun] auf einer wirksamen und konsequenten Sterilisation aller Geräte bestand</li>
     <li>subject_story->eine Trockenfutterküche eröffnete, die dafür bekannt war, frei von Lebensmittelvergiftungen zu sein, was einzigartig in diesem System war</li>
     <li>subject_story->eine Fabrik für dekorative Fliesen gründete, mit einem Nebengeschäft für medizinische Geräte und sterile Fliesen</li>
     <li>subject_gerund->die Sterilisation von Oberflächen</li>
