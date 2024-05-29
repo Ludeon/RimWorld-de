@@ -16,6 +16,7 @@ $paths = @(
 "*\DefInjected\ChemicalDef"
 "*\DefInjected\FactionDef"
 "*\DefInjected\GameConditionDef"
+"*\DefInjected\HediffDef"
 "*\DefInjected\PawnKindDef"
 "*\DefInjected\RoyalTitleDef"
 "*\DefInjected\TerrainDef"
@@ -29,7 +30,7 @@ $paths = @(
 # Search words in the XML files
 foreach ($path in $paths)
 {
-  Get-Content -Path "$path/*" -Filter "*.xml" | Select-String -Pattern "<(.*(\.label|\.labelNoLocation|\.pawnSingular|title|titleFemale|\.chargeNoun|\.customLabel|\.labelMale|\.labelFemale))>(.*?)</\1>" -All | ForEach-Object { $_.matches.groups[3].value.toLower() } >> "$temp/all.txt"
+  Get-Content -Path "$path/*" -Filter "*.xml" | Select-String -Pattern "<(((?!\bstages\b).)*(\.label|\.labelNoLocation|\.pawnSingular|title|titleFemale|\.chargeNoun|\.customLabel|\.labelMale|\.labelFemale))>(.*?)</\1>" -All | ForEach-Object { $_.matches.groups[4].value.toLower() } >> "$temp/all.txt"
 }
 
 # Sort the list of all found words
