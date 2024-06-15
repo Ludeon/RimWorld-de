@@ -195,22 +195,21 @@
     <li>title->[TheBookEvil] [ofTheNounEvilCountable]</li>
     <li>title->[Die] [nounEvilCountablePlural] [inThePlaceEvil]</li>
     <li>title->[TheBookEvil] von [ANYPAWN_nameIndef]</li>
-    <li>title->[theNounEvilAny] [inThePlaceEvil]</li>
+    <li>title(p=0.2)->[theNounEvilAny] [inThePlaceEvil]</li>
     <li>title->[theNounEvilAny] von [ANYPAWN_nameIndef]</li>
     <li>title->[theAdjNounEvilAny]</li>
     <li>title->[ANYPAWN_label_s] [bookEvil]</li>
-    <li>title->[maybeThe] [bookCompound]</li>
-    <li>title->[ANYPAWN_label_s] [bookCompound]</li>
+    <li>title->[bookCompoundFinal]</li>
+    <li>title->[ANYPAWN_label_s] [bookCompoundFinal]</li>
     <li>title(p=0.5)->[firstHalfEvil][connector][nounEvilCountable]</li>
     <li>title(p=0.5)->[firstHalfEvil][connector][nounEvilUncountable]</li>
     <li>title(p=0.5)->[nounEvilCountable]-[suffixEvilCap]</li>
     <li>title(p=0.5)->[nounEvilUncountable]-[suffixEvilCap]</li>
     <li>bookCompound(p=2)->[firstHalfEvilCap][suffixEvil]</li>
     <li>bookCompound->[firstHalfEvilCap][connector][suffixEvilCap]</li>
+    <li>bookCompoundFinal->{replace: [bookCompound]; "Necromantie"-"Nekromantie"; "Necro'Mantie"-"Nekromantie"; "Necro-Mantie"-"Nekromantie"; "Necro'Nomicon"-"Necronomicon"; "Necro-Nomicon"-"Necronomicon"}</li>
     <li>connector->'</li>
     <li>connector->-</li>
-    <!-- <li>maybeThe-></li>
-    <li>maybeThe->The</li> -->
     <li>ANYPAWN_label_s->{replace: [ANYPAWN_label]s; "s&lt;/color>s"-"s&lt;/color>'"; "ß&lt;/color>s"-"ß&lt;/color>'"; "z&lt;/color>s"-"z&lt;/color>'"; "x&lt;/color>s"-"x&lt;/color>'"; "ce&lt;/color>s"-"ce&lt;/color>'"}</li>
     <li>Der->Der</li>
     <li>Der-></li>
@@ -241,7 +240,8 @@
     <li>bookEvil->Fragmente</li>
     <li>bookEvil->Bruchstücke</li>
     <li>TheBookEvil(p=2)->[Das] Buch</li>
-    <li>TheBookEvil(p=2)->[Das] [firstHalfEvilCap][suffixEvil]</li>
+    <li>TheBookEvil(p=1)->Das {replace: [firstHalfEvilCap][suffixEvil]; "mantie"-"nomicon"; "chiffre"-"nomicon"}</li>
+    <li>TheBookEvil(p=1)->{replace: [firstHalfEvilCap][suffixEvil]; "Necromantie"-"Nekromantie"}</li>
     <li>TheBookEvil->[Der] Foliant</li>
     <li>TheBookEvil->[Der] Kodex</li>
     <li>TheBookEvil->[Die] Schriften</li>
@@ -262,14 +262,6 @@
     <li>TheBookEvil->[Das] Testament</li>
     <li>TheBookEvil->[Die] Fragmente</li>
     <li>TheBookEvil->[Die] Bruchstücke</li>
-    <!-- <li>inThe->in the</li> -->
-    <!-- <li>inThe->within the</li> -->
-    <!-- <li>inThe->beneath the</li> -->
-    <!-- <li>inThe->under the</li> -->
-    <!-- <li>inThe->by the</li> -->
-    <!-- <li>inThe->on the</li> -->
-    <!-- <li>inThe->across the</li> -->
-    <!-- <li>adjectiveEvil(p=3)->Void</li> -->
     <li>adjectiveEvil->golden</li>
     <li>adjectiveEvil->unnatürlich</li>
     <li>adjectiveEvil->dunkl</li>
@@ -327,9 +319,6 @@
     <li>nounEvilUncountable->Gold</li>
     <li>theNounEvilUncountable->[Die] Fleischmasse</li>
     <li>theNounEvilUncountable->[Der] Bioferrit</li>
-    <!-- <li>theNounEvilUncountable->Deadlife</li> -->
-    <!-- <li>theNounEvilUncountable->Archotech</li> -->
-    <!-- <li>theNounEvilUncountable->Necrotech</li> -->
     <li>theNounEvilUncountable->[Der] Horax</li>
     <li>theNounEvilUncountable->[Das] Blut</li>
     <li>theNounEvilUncountable->[Die] Untoten</li>
@@ -356,9 +345,6 @@
     <li>theNounEvilUncountable->[Das] Gold</li>
     <li>theAdjNounEvilUncountable->Die [adjectiveEvil]e Fleischmasse</li>
     <li>theAdjNounEvilUncountable->Der [adjectiveEvil]e Bioferrit</li>
-    <!-- <li>theAdjNounEvilUncountable->Deadlife</li> -->
-    <!-- <li>theAdjNounEvilUncountable->Archotech</li> -->
-    <!-- <li>theAdjNounEvilUncountable->Necrotech</li> -->
     <li>theAdjNounEvilUncountable->Der [adjectiveEvil]e Horax</li>
     <li>theAdjNounEvilUncountable->Das [adjectiveEvil]e Blut</li>
     <li>theAdjNounEvilUncountable->Die [adjectiveEvil]en Untoten</li>
@@ -385,9 +371,6 @@
     <li>theAdjNounEvilUncountable->Das [adjectiveEvil]e Gold</li>
     <li>AdjNounEvilUncountable->[adjectiveEvil]e Fleischmasse</li>
     <li>AdjNounEvilUncountable->[adjectiveEvil]er Bioferrit</li>
-    <!-- <li>AdjNounEvilUncountable->Deadlife</li> -->
-    <!-- <li>AdjNounEvilUncountable->Archotech</li> -->
-    <!-- <li>AdjNounEvilUncountable->Necrotech</li> -->
     <li>AdjNounEvilUncountable->[adjectiveEvil]er Horax</li>
     <li>AdjNounEvilUncountable->[adjectiveEvil]es Blut</li>
     <li>AdjNounEvilUncountable->[adjectiveEvil]e Untoten</li>
@@ -414,9 +397,6 @@
     <li>AdjNounEvilUncountable->[adjectiveEvil]es Gold</li>
     <li>ofTheNounEvilUncountable->der Fleischmasse</li>
     <li>ofTheNounEvilUncountable->des Bioferrits</li>
-    <!-- <li>ofTheNounEvilUncountable->Deadlife</li> -->
-    <!-- <li>ofTheNounEvilUncountable->Archotech</li> -->
-    <!-- <li>ofTheNounEvilUncountable->Necrotech</li> -->
     <li>ofTheNounEvilUncountable->von Horax</li>
     <li>ofTheNounEvilUncountable->des Blutes</li>
     <li>ofTheNounEvilUncountable->der Untoten</li>
@@ -655,7 +635,7 @@
     <li>inThePlaceEvil->in den Höhlen</li>
     <li>firstHalfEvil->vibro</li>
     <li>firstHalfEvil->kelno</li>
-    <li>firstHalfEvil->nekro</li>
+    <li>firstHalfEvil->necro</li>
     <li>firstHalfEvil->chrono</li>
     <li>firstHalfEvil->drago</li>
     <li>firstHalfEvil->krimi</li>
@@ -671,7 +651,7 @@
     <li>firstHalfEvil->leva</li>
     <li>firstHalfEvilCap->Vibro</li>
     <li>firstHalfEvilCap->Kelno</li>
-    <li>firstHalfEvilCap->Nekro</li>
+    <li>firstHalfEvilCap->Necro</li>
     <li>firstHalfEvilCap->Chrono</li>
     <li>firstHalfEvilCap->Drago</li>
     <li>firstHalfEvilCap->Krimi</li>
@@ -690,10 +670,10 @@
     <li>suffixEvil->nax</li>
     <li>suffixEvil->novicon</li>
     <li>suffixEvil->vokon</li>
-    <li>suffixEvil->mancy</li>
+    <li>suffixEvil->mantie</li>
     <li>suffixEvil->gorgon</li>
     <li>suffixEvil->morth</li>
-    <li>suffixEvil->cypher</li>
+    <li>suffixEvil->chiffre</li>
     <li>suffixEvil->vex</li>
     <li>suffixEvil->vortex</li>
     <li>suffixEvil->nox</li>
@@ -712,10 +692,10 @@
     <li>suffixEvilCap->Nax</li>
     <li>suffixEvilCap->Novicon</li>
     <li>suffixEvilCap->Vokon</li>
-    <li>suffixEvilCap->Mancy</li>
+    <li>suffixEvilCap->Mantie</li>
     <li>suffixEvilCap->Gorgon</li>
     <li>suffixEvilCap->Morth</li>
-    <li>suffixEvilCap->Cypher</li>
+    <li>suffixEvilCap->Chiffre</li>
     <li>suffixEvilCap->Vex</li>
     <li>suffixEvilCap->Vortex</li>
     <li>suffixEvilCap->Nox</li>
