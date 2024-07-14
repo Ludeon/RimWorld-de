@@ -241,14 +241,14 @@
   <QuestPartMoodBelowThresholdDesc>Die Quest '{0}' erfordert, dass du folgende Personen bei guter Laune hältst. Ihre Laune ist jedoch miserabel. Ergreife Maßnahmen, um ihre Laune zu heben:\n{1}</QuestPartMoodBelowThresholdDesc>
   
   <!-- EN: Shuttle leaving in {0} -->
-  <QuestPartShuttleLeaveDelay>Shuttle verlässt uns in {replace: {0}; "Tage"-"Tagen"; "Jahre"-"Jahren"}</QuestPartShuttleLeaveDelay>
+  <QuestPartShuttleLeaveDelay>Shuttle hebt ab in\n{replace: {0}; "Tage"-"Tagen"; "Jahre"-"Jahren"}</QuestPartShuttleLeaveDelay>
   <!-- EN: The shuttle will leave in {1}. The quest {0} requires you to load the following people or items onto the shuttle before it leaves:\n{2} -->
   <QuestPartShuttleLeaveDelayDesc>Das Shuttle verlässt uns in (*DateTime){replace: {1}; "Tage"-"Tagen"; "Jahre"-"Jahren"}(/DateTime). Die Quest '{0}' erfordert, dass du folgende Personen oder Waren auf das Shuttle lädst, bevor es abfliegt:\n{2}</QuestPartShuttleLeaveDelayDesc>
   <!-- EN: The shuttle will leave in {0}. -->
   <QuestPartShuttleLeaveDelayDescHidden>Das Shuttle verlässt uns in (*DateTime){replace: {0}; "Tage"-"Tagen"; "Jahre"-"Jahren"}(/DateTime).</QuestPartShuttleLeaveDelayDescHidden>
 
   <!-- EN: Shuttle arriving in {0} -->
-  <QuestPartShuttleArriveDelay>Shuttle kommt in {replace: {0}; "Tage"-"Tagen"; "Jahre"-"Jahren"}</QuestPartShuttleArriveDelay>
+  <QuestPartShuttleArriveDelay>Shuttle kommt in\n{replace: {0}; "Tage"-"Tagen"; "Jahre"-"Jahren"}</QuestPartShuttleArriveDelay>
   <!-- EN: A shuttle will arrive in {1}. The quest {0} requires you to load the following people or items onto the shuttle before it leaves:\n{2} -->
   <QuestPartShuttleArriveDelayDesc>Ein Shuttle wird in (*DateTime){replace: {1}; "Tage"-"Tagen"; "Jahre"-"Jahren"}(/DateTime) eintreffen. Die Quest '{0}' erfordert, dass du folgende Personen oder Waren auf das Shuttle lädst, bevor es abfliegt:\n{2}</QuestPartShuttleArriveDelayDesc>
   <!-- EN: A shuttle will arrive in {0}. -->
@@ -260,16 +260,16 @@
   <DisallowedBuildingInsideMonumentDesc>Du hast in einem deiner Denkmäler ein verbotenes Bauwerk gebaut. In (*DateTime){replace: {0}; "Tage"-"Tagen"; "Jahre"-"Jahren"}(/DateTime) wird das Denkmal so behandelt, als wäre es zerstört worden.</DisallowedBuildingInsideMonumentDesc>
 
   <!-- EN: Countdown activator {0} -->
-  <ActivatorCountdown>Countdown-Aktivator beginnt in {replace: {0}; "Tage"-"Tagen"; "Jahre"-"Jahren"}</ActivatorCountdown>
+  <ActivatorCountdown>Countdownaktivator:\n{0}</ActivatorCountdown>
   <!-- EN: There is a countdown activator ticking down, preparing to awaken nearby mechanoids. -->
-  <ActivatorCountdownDesc>Ein Countdown-Aktivator tickt herunter und wird in Kürze nahe Mechanoiden aufwecken.</ActivatorCountdownDesc>
+  <ActivatorCountdownDesc>Ein Countdownaktivator tickt herunter und wird in Kürze nahe Mechanoiden aufwecken.</ActivatorCountdownDesc>
   <!-- EN: {0} countdown activators -->
-  <ActivatorCountdownMultiple>Mehrere Countdown-\nAktivatoren ({0})</ActivatorCountdownMultiple>
+  <ActivatorCountdownMultiple>Countdownaktivator x{0}</ActivatorCountdownMultiple>
   <!-- EN: There are {0} countdown activators ticking down, preparing to awaken nearby mechanoids. -->
-  <ActivatorCountdownDescMultiple>{0} Countdown-Aktivatoren ticken herunter und werden in Kürze nahe Mechanoiden aufwecken.</ActivatorCountdownDescMultiple>
+  <ActivatorCountdownDescMultiple>{0} Countdownaktivatoren ticken herunter und werden in Kürze nahe Mechanoiden aufwecken.</ActivatorCountdownDescMultiple>
 
   <!-- EN: Quest expires in {0} -->
-  <QuestExpiresSoon>Quest läuft in {replace: {0}; "Tage"-"Tagen"; "Jahre"-"Jahren"} ab</QuestExpiresSoon>
+  <QuestExpiresSoon>Questablauf in {replace: {0}; "Stunden"-"Std."; "Stunde"-"Std."; "Tage"-"Tagen"; "Jahre"-"Jahren"}</QuestExpiresSoon>
   <!-- EN: The quest '{0}' will expire in {1}. -->
   <QuestExpiresSoonDesc>Die Quest '{0}' wird in (*DateTime){replace: {1}; "Tage"-"Tagen"; "Jahre"-"Jahren"}(/DateTime) ablaufen.</QuestExpiresSoonDesc>
 
@@ -313,11 +313,11 @@
   <AlertHitchedAnimalHungryNoFoodDesc>Einige Tiere, die an Karawanensammelplätzen angebunden sind, haben Hunger. Möglicherweise ist kein geeignetes Futter in ihrer Reichweite.\n\nBringe ihnen Futter oder entferne den Karawanensammelplatz, damit sie selbstständig auf Futtersuche gehen können.\n\nFolgende angebundene Tiere sind hungrig:\n{0}</AlertHitchedAnimalHungryNoFoodDesc>
 
   <!-- EN: Raids arriving in {0} -->
-  <AlertTimedRaidsArrivingIn>Überfälle starten in {replace: {0}; "Tage"-"Tagen"; "Jahre"-"Jahren"}</AlertTimedRaidsArrivingIn>
+  <AlertTimedRaidsArrivingIn>Überfälle starten in\n{replace: {0}; "Tage"-"Tagen"; "Jahre"-"Jahren"}</AlertTimedRaidsArrivingIn>
   <!-- EN: Enemies have been attracted to the following sites and will start arriving in force soon.\n\n{0} -->
-  <AlertTimedRaidsArrivingInDesc>Feinde wurden von den folgenden Orten angelockt und werden bald in Massen eintreffen.\n\n{0}</AlertTimedRaidsArrivingInDesc>
+  <AlertTimedRaidsArrivingInDesc>Feinde wurden von den folgenden Orten angelockt und werden dort bald in großer Zahl eintreffen.\n\n{0}</AlertTimedRaidsArrivingInDesc>
   <!-- EN: Arriving at {0} in {1} -->
-  <AlertTimedRaidsArrivingAt>Ankunft bei {0} in {replace: {1}; "Tage"-"Tagen"; "Jahre"-"Jahren"}</AlertTimedRaidsArrivingAt>
+  <AlertTimedRaidsArrivingAt>{0} in (*DateTime){replace: {1}; "Tage"-"Tagen"; "Jahre"-"Jahren"}(/DateTime)</AlertTimedRaidsArrivingAt>
 
   <!-- EN: Faction will become hostile if you stay -->
   <FactionWillBecomeHostileIfNotLeavingWithin>Fraktion wird feindlich, wenn du bleibst</FactionWillBecomeHostileIfNotLeavingWithin>
