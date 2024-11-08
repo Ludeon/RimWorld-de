@@ -24,7 +24,7 @@ $paths = @(
 "DefInjected\PsychicRitualRoleDef"
 )
 
-# Enumerate DLC folders
+# Enumerate DLC folders (including Core)
 foreach ($dlc in $dlcs)
 {
   # Create a temporary folder
@@ -40,7 +40,7 @@ foreach ($dlc in $dlcs)
     {
       continue
     }
-    Get-Content -Path "$dlc\$path\*" -Filter "*.xml" | Select-String -Pattern "<(((?!\bstages\b).)*(\.label|\.labelNoLocation|\.pawnSingular|title|titleFemale|\.chargeNoun|\.customLabel|\.labelMale|\.labelFemale))>(.*?)</\1>" -All | ForEach-Object { $_.matches.groups[4].value.toLower() } >> "$temp\all.txt"
+    Get-Content -Path "$dlc\$path\*" -Filter "*.xml" | Select-String -Pattern "<(((?!\b(stages|verbs)\b).)*(\.label|\.labelNoLocation|\.pawnSingular|title|titleFemale|\.chargeNoun|\.customLabel|\.labelMale|\.labelFemale))>(?<value>.*?)</\1>" -All | ForEach-Object { $_.matches[0].groups["value"].value.toLower() } >> "$temp\all.txt"
   }
 
   # Sort the list of all found words
