@@ -90,7 +90,7 @@
   <!-- EN: {RECRUITER_labelShort} successfully tamed {1}. -->
   <MessageTameSuccess>{RECRUITER_labelShort} hat {1} erfolgreich gezähmt.</MessageTameSuccess>
   <!-- EN: {RECRUITER_labelShort} successfully tamed {1}. It is now called {RECRUITEE_nameFull}. -->
-  <MessageTameAndNameSuccess>{RECRUITER_labelShort} hat erfolgreich ein Tier gezähmt. Es ist {RECRUITEE_kindBaseIndef}. Deine Kolonisten nennen es {RECRUITEE_nameFull}.</MessageTameAndNameSuccess>
+  <MessageTameAndNameSuccess>{RECRUITER_labelShort} hat erfolgreich {replace: ^{RECRUITEE_kindDef}; "^der {RECRUITEE_kind}"-"einen {lookup: {RECRUITEE_kind}; decline; 3}"; "^die {RECRUITEE_kind}"-"eine {lookup: {RECRUITEE_kind}; decline; 3}"; "^das {RECRUITEE_kind}"-"ein {lookup: {RECRUITEE_kind}; decline; 3}"} gezähmt. Deine Kolonisten nennen {replace: ^{RECRUITEE_kindDef}; "^der {RECRUITEE_kind}"-"ihn"; "^die {RECRUITEE_kind}"-"sie"; "^das {RECRUITEE_kind}"-"es"} {RECRUITEE_nameFull}.</MessageTameAndNameSuccess>
   <!-- EN: There is no suitable animal pen for {ANIMAL_labelShort}. It will eventually roam away. -->
   <MessageTameNoSuitablePens>Es gibt kein geeignetes Gehege für {ANIMAL_labelShort}. Mit der Zeit wird das Tier weglaufen.</MessageTameNoSuitablePens>
   <!-- EN: {RECRUITEE} has joined your colony. -->

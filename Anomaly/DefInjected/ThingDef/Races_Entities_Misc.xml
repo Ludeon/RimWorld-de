@@ -42,7 +42,7 @@
   <!-- EN: Digesting {PAWN_nameDef}: {SECONDS} seconds left -->
   <Devourer.comps.CompDevourer.digestingInspector>Verdaut {PAWN_labelShort} ({replace: noch {SECONDS} Sekunden; "noch 1 Sekunden"-"noch 1 Sekunde"})</Devourer.comps.CompDevourer.digestingInspector>
   <!-- EN: A devourer swallowed {PAWN_nameDef} whole! Kill the devourer before it digests {PAWN_nameDef}. -->
-  <Devourer.comps.CompDevourer.messageDigested>Ein Verschlinger hat {PAWN_nameDef} verschlungen! Töte ihn, bevor er {PAWN_nameDef} verdaut hat.</Devourer.comps.CompDevourer.messageDigested>
+  <Devourer.comps.CompDevourer.messageDigested>Ein Verschlinger hat {replace: ^{PAWN_nameDef}; "^der {PAWN_labelShort}"-"einen {lookup: {PAWN_labelShort}; decline; 3}"; "^die {PAWN_labelShort}"-"eine {lookup: {PAWN_labelShort}; decline; 3}"; "^das {PAWN_labelShort}"-"ein {lookup: {PAWN_labelShort}; decline; 3}"; "^"-""} verschlungen! Töte ihn, bevor er {replace: ^{PAWN_nameDef}; "^der {PAWN_labelShort}"-"den {lookup: {PAWN_labelShort}; decline; 7}"; "^die {PAWN_labelShort}"-"die {lookup: {PAWN_labelShort}; decline; 7}"; "^das {PAWN_labelShort}"-"das {lookup: {PAWN_labelShort}; decline; 7}"; "^"-""} verdaut hat.</Devourer.comps.CompDevourer.messageDigested>
   <!-- EN: The devourer has regurgitated {PAWN_nameDef}. -->
   <Devourer.comps.CompDevourer.messageDigestionCompleted>Der Verschlinger hat {PAWN_nameDef} ausgespuckt.</Devourer.comps.CompDevourer.messageDigestionCompleted>
   <!-- EN: {PAWN_nameDef} emerged from the devourer. -->
