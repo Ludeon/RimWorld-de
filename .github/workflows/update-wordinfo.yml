@@ -25,7 +25,7 @@ jobs:
 
     - name: Update WordInfo\Gender\*
       shell: powershell # Forces the usage of PowerShell Desktop
-      run: .\update-wordinfo.ps1
+      run: .\update-wordinfo-gender.ps1
 
     - name: Update WordInfo\decline.txt
       shell: powershell
