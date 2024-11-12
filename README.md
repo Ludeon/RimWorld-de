@@ -17,16 +17,26 @@ Inactive:
 - [TeiXeR](https://github.com/TeiXeR)
 - [TheEisbaer](https://github.com/TheEisbaer)
 
-Aktuellste Übersetzungsdateien verwenden
-----------------------------------------
-Die folgenden Schritte beschreiben, wie du die aktuellsten Übersetzungsdateien in dieser Repo für RimWorld verwenden kannst. Dies ist zum Beispiel nützlich, wenn eine neue Erweiterung erschienen ist, aber die neuesten Übersetzungsdateien noch nicht übernommen worden sind.
-1. Lade dir die [aktuellsten Übersetzungsdateien](https://github.com/Ludeon/RimWorld-de/archive/refs/heads/master.zip) herunter und entpacke die heruntergeladene ZIP-Datei.
-2. Führe die Datei 'install.bat' aus.
+Table of Contents
+-----------------
+- [Neueste Übersetzungsdateien verwenden](#neueste-übersetzungsdateien-verwenden)
+- [Grammar Resolving](#grammar-resolving)
+- [Helpful links](#helpful-links)
 
-ODER (falls das nicht funktioniert)
+Neueste Übersetzungsdateien verwenden
+-------------------------------------
+Neue Übersetzungsänderungen sind normalerweise erst mit der nächsten RimWorld-Version verfügbar. Es gibt jedoch Ausnahmefälle, in denen es sinnvoll ist, die neuesten Übersetzungsdateien zu verwenden, z.B. wenn ein neuer DLC erschienen ist, aber die neuesten Übersetzungsdateien noch nicht übernommen wurden.
+Die folgenden Schritte beschreiben, wie man die neuesten Übersetzungsdateien in RimWorld verwenden kann:
 
-1. Lade dir die [aktuellsten Übersetzungsdateien](https://github.com/Ludeon/RimWorld-de/archive/refs/heads/master.zip) herunter und entpacke die heruntergeladene ZIP-Datei.
-2. Erstelle in jedem der folgenden Ordner einen neuen Ordner namens 'German (Deutsch)'. Sollte der Ordner 'German (Deutsch)' bereits vorhanden sein, ist es ratsam, diesen vorher zu leeren:
+Automatische Methode (empfohlen):
+
+1. Ladet die neuesten Übersetzungsdateien als [ZIP-Datei](https://github.com/Ludeon/RimWorld-de/archive/refs/heads/master.zip) herunter und entpackt sie.
+2. Führt die Datei 'install.bat' aus.
+
+Manuelle Methode:
+
+1. Ladet die neuesten Übersetzungsdateien als [ZIP-Datei](https://github.com/Ludeon/RimWorld-de/archive/refs/heads/master.zip) herunter und entpackt sie.
+2. Erstellt in jedem der folgenden Ordner einen neuen Unterordner namens 'German (Deutsch)'. Wenn dieser Unterordner bereits existiert, ist es ratsam, ihn zuerst zu leeren:
     ```
     <Pfad-zu-RimWorld>\Data\Anomaly\Languages\
     <Pfad-zu-RimWorld>\Data\Biotech\Languages\
@@ -36,28 +46,28 @@ ODER (falls das nicht funktioniert)
     ```
     &lt;Pfad-zu-RimWorld&gt; ist standardmäßig ```C:\Programme (x86)\Steam\steamapps\common\RimWorld```
     
-    Beachte, dass einige Ordner fehlen können. Core ist immer vorhanden. Der Rest ist abhängig davon, welche RimWorld-Erweiterungen du gekauft und installiert hast. 
-4. Kopiere den Inhalt vom im ZIP-Archiv enthaltenen Ordner 'Core' in ```<Pfad-zu-RimWorld>\Data\Core\Languages\German (Deutsch)```. Wiederhole das für die restlichen Erweiterungen, sofern nötig.
-5. Lösche in allen oben genannten Pfaden jeweils die Datei 'German (Deutsch).tar', um RimWorld zu zwingen, die Übersetzungsdateien im Ordner 'German (Deutsch)' zu verwenden.
+    Beachtet, dass einige Ordner fehlen können. Core ist immer vorhanden. Der Rest hängt davon ab, welche DLCs ihr gekauft und installiert habt. 
+4. Kopiert den Inhalt des entpackten Ordners 'Core' in den neu erstellten Ordner ```<Pfad-zu-RimWorld>\Data\Core\Languages\German (Deutsch)```. Wiederholt dies für die restlichen DLCs, sofern nötig.
+5. Löscht in jedem oben genannten Pfad die Datei 'German (Deutsch).tar', um RimWorld zu zwingen, die Übersetzungsdateien im Ordner 'German (Deutsch)' zu verwenden.
 
-Um diese Prozedur wieder rückgängig zu machen bzw. RimWorld wieder die standardmäßig bereitgestellten Übersetzungsdateien verwenden zu lassen, sind folgende Schritte notwendig:
+Um dies wieder rückgängig zu machen, sind folgende Schritte notwendig:
 
-1. Lösche in allen oben genannten Pfaden jeweils den Ordner 'German (Deutsch)'.
-2. Rechtsklicke in Steam auf RimWorld und klicke auf 'Eigenschaften'.
-3. Navigiere zu 'Lokale Dateien' und klicke auf 'Spieldateien auf Fehler überprüfen...', um die gelöschten TAR-Dateien wiederherzustellen.
+1. Löscht in jedem oben genannten Pfad den Ordner 'German (Deutsch)'.
+2. Rechtsklickt in Steam auf RimWorld und klickt auf 'Eigenschaften'.
+3. Navigiert zu 'Installierte Dateien' und klickt auf 'Dateien auf Fehler überprüfen', um die gelöschten TAR-Dateien wiederherzustellen.
 
-Grammar Resolving vs update-wordinfo.yml
-----------------------------------------
-To ensure (almost) correct grammar in the game, new labels of items, titles of people etc. have to be added into the text files located in the Core/WordInfo/Gender folder depending on the gender of the word.
+Grammar Resolving
+-----------------
+To ensure proper grammar, labels of pawn types, items, backstory titles, etc. (called nouns) need to be added to the text files located in the WordInfo folder. Core and each DLC have this folder.
+- WordInfo/Gender can be used to specify the gender of a noun. Just add the nouns in lowercase to the appropriate text file (Male, Female, Neuter).
+- decline.txt can be used to specify the different cases of a noun (e.g. genitive or accusative). The file itself contains usage details.
+- plural.txt can be used to specify the plural form of a noun. The file itself contains usage details. This overrides the game's pluralization.
 
-This process is done almost automatically thanks to the GitHub workflow file [update-wordinfo.yml](https://github.com/Ludeon/RimWorld-de/blob/master/.github/workflows/update-wordinfo.yml). The only thing left to do manually is to move the new words (Core/WordInfo/Gender/new_words.txt) into Female.txt, Male.txt, Neuter.txt or Other.txt.
-
-Details:
-
-This workflow is triggered every time a commit is pushed to the master branch. When triggered, it scans XML files located in specific folders for specific tag elements. For the current list of folders being scanned, search for ```$paths```. For the current list of tag elements being parsed to get the words, search for ```.label```. New words are stored in Core/WordInfo/Gender/new_words.txt and must be manually sorted into either Female.txt, Male.txt, Neuter.txt or Other.txt. The words are automatically converted to lowercase and sorted alphabetically within their list.
-
-Note that Other.txt has no function. It rather serves as a storage place for words that are neither feminine, masculine nor neutral. In German language this would be for example plural words.
+This process is done almost automatic, thanks to the GitHub workflow file [update-wordinfo.yml](https://github.com/Ludeon/RimWorld-de/blob/master/.github/workflows/update-wordinfo.yml). The workflow is triggered every time a commit is pushed to the master branch, and runs the following PowerShell files:
+- [update-wordinfo-gender.ps1](https://github.com/Ludeon/RimWorld-de/blob/master/update-wordinfo-gender.ps1) searches for specific labels in specific XML files, converts them to lowercase, and alphabetically assigns them to Male.txt, Female.txt, Neuter.txt, or Other.txt, which are located in WordInfo/Gender (Core and each DLC have these files). If a label cannot be assigned automatically, it will be added to new_words.txt. These labels must be assigned manually. Other.txt is for labels that are neither male, female, nor neuter.
+- [update-wordinfo-decline.ps1](https://github.com/Ludeon/RimWorld-de/blob/master/update-wordinfo-decline.ps1) searches for specific labels in specific XML files and adds them to WordInfo\decline.txt (Core and each DLC have this file).
+- [update-wordinfo-plural.ps1](https://github.com/Ludeon/RimWorld-de/blob/master/update-wordinfo-plural.ps1) searches for specific labels in specific XML files and adds them to WordInfo\plural.txt (Core and each DLC have this file).
 
 Helpful links
 -------------
-[Grammar Resolver (RimWorld Wiki)](https://rimworldwiki.com/wiki/Modding_Tutorials/GrammarResolver)
+- [Grammar Resolver (RimWorld Wiki)](https://rimworldwiki.com/wiki/Modding_Tutorials/GrammarResolver)
