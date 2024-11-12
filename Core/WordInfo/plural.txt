@@ -1,59 +1,188 @@
-KEY;1_NOM;2_GEN;3_DAT;4_ACC;5_NOM_ART;6_GEN_ART;7_DAT_ART;8_ACC_ART
+﻿KEY;1_NOM;2_GEN;3_DAT;4_ACC;5_NOM_ART;6_GEN_ART;7_DAT_ART;8_ACC_ART
 // Plural declension (without and with article)
 // NOTE: Ingame pluralization use this file automatically (always index 1).
-//
 // Usage syntax: {lookup: TEXT; FILE_NO_EXT; INDEX}
 // TEXT is the key to access a row.
 // FILE_NO_EXT is the file in which TEXT should be looked up. Omit the extension.
 // INDEX determines the column to be used. Can be omitted if you need index 1.
 // For example, {lookup: {0}; plural; 2} looks up 2_GEN.
-//
-Droge;Drogen;Drogen;Drogen;Drogen;Drogen;Drogen;Drogen;Drogen
-Granitbrocken;Granitbrocken;Granitbrocken;Granitbrocken;Granitbrocken;Granitbrocken;Granitbrocken;Granitbrocken;Granitbrocken
-Kalksteinbrocken;Kalksteinbrocken;Kalksteinbrocken;Kalksteinbrocken;Kalksteinbrocken;Kalksteinbrocken;Kalksteinbrocken;Kalksteinbrocken;Kalksteinbrocken
-Marmorbrocken;Marmorbrocken;Marmorbrocken;Marmorbrocken;Marmorbrocken;Marmorbrocken;Marmorbrocken;Marmorbrocken;Marmorbrocken
-Medizin;Medizin;Medizin;Medizin;Medizin;Medizin;Medizin;Medizin;Medizin
-Sandsteinbrocken;Sandsteinbrocken;Sandsteinbrocken;Sandsteinbrocken;Sandsteinbrocken;Sandsteinbrocken;Sandsteinbrocken;Sandsteinbrocken;Sandsteinbrocken
-Schieferbrocken;Schieferbrocken;Schieferbrocken;Schieferbrocken;Schieferbrocken;Schieferbrocken;Schieferbrocken;Schieferbrocken;Schieferbrocken
-Stammesmitglied;Stammesmitglieder;Stammesmitglieder;Stammesmitgliedern;Stammesmitglieder;Stammesmitglieder;Stammesmitglieder;Stammesmitgliedern;Stammesmitglieder
-Transportkapsel;Transportkapseln;Transportkapseln;Transportkapseln;Transportkapseln;Transportkapseln;Transportkapseln;Transportkapseln;Transportkapseln
-//
-// pawns
-Ureinwohner;Ureinwohner;Ureinwohner;Ureinwohnern;Ureinwohner;Ureinwohner;Ureinwohner;Ureinwohnern;Ureinwohner
-Außenweltler;Außenweltler;Außenweltler;Außenweltlern;Außenweltler;Außenweltler;Außenweltler;Außenweltlern;Außenweltler
+// ---
+// Core\DefInjected\FactionDef\*
 Antiker;Antiker;Antiker;Antikern;Antiker;Antiker;Antiker;Antikern;Antiker
+Außenweltler;Außenweltler;Außenweltler;Außenweltlern;Außenweltler;Außenweltler;Außenweltler;Außenweltlern;Außenweltler
+feindliche Antiker;
+friedlicher Stamm;friedliche Stämme;friedlicher Stämme;friedlichen Stämmen;friedliche Stämme;friedlichen Stämme;friedlichen Stämme;friedlichen Stämmen;friedlichen Stämme
+grimmiger Stamm;grimmige Stämme;grimmiger Stämme;grimmigen Stämmen;grimmige Stämme;grimmigen Stämme;grimmigen Stämme;grimmigen Stämmen;grimmigen Stämme
+Insekt;Insekten;Insekten;Insekten;Insekten;Insekten;Insekten;Insekten;Insekten
+Insekten-Genlinie;Insekten-Genlinien;Insekten-Genlinien;Insekten-Genlinien;Insekten-Genlinien;Insekten-Genlinien;Insekten-Genlinien;Insekten-Genlinien;Insekten-Genlinien
+Kolonist;Kolonisten;Kolonisten;Kolonisten;Kolonisten;Kolonisten;Kolonisten;Kolonisten;Kolonisten
+Mechanoid;Mechanoiden;Mechanoiden;Mechanoiden;Mechanoiden;Mechanoiden;Mechanoiden;Mechanoiden;Mechanoiden
+Mechanoidennest;Mechanoidennester;Mechanoidennester;Mechanoidennestern;Mechanoidennester;Mechanoidennester;Mechanoidennester;Mechanoidennestern;Mechanoidennester
+Neuankömmlinge;
+Neuer Stamm;Neue Stämme;Neuer Stämme;Neuen Stämmen;Neue Stämme;Neuen Stämme;Neuen Stämme;Neuen Stämmen;Neuen Stämme
+neutrale Antiker;
+Pirat;Piraten;Piraten;Piraten;Piraten;Piraten;Piraten;Piraten;Piraten
+Piratenbande;Piratenbanden;Piratenbanden;Piratenbanden;Piratenbanden;Piratenbanden;Piratenbanden;Piratenbanden;Piratenbanden
+Stammesmitglied;Stammesmitglieder;Stammesmitglieder;Stammesmitgliedern;Stammesmitglieder;Stammesmitglieder;Stammesmitglieder;Stammesmitgliedern;Stammesmitglieder
+Ureinwohner;Ureinwohner;Ureinwohner;Ureinwohnern;Ureinwohner;Ureinwohner;Ureinwohner;Ureinwohnern;Ureinwohner
+wilder Außenweltler-Verbund;wilde Außenweltler-Verbünde;wilder Außenweltler-Verbünde;wilden Außenweltler-Verbünden;wilde Außenweltler-Verbünde;wilden Außenweltler-Verbünde;wilden Außenweltler-Verbünde;wilden Außenweltler-Verbünden;wilden Außenweltler-Verbünde
+wilder Stamm;wilde Stämme;wilder Stämme;wilden Stämmen;wilde Stämme;wilden Stämme;wilden Stämme;wilden Stämmen;wilden Stämme
+ziviler Außenweltler-Verbund;zivile Außenweltler-Verbünde;ziviler Außenweltler-Verbünde;zivilen Außenweltler-Verbünden;zivile Außenweltler-Verbünde;zivilen Außenweltler-Verbünde;zivilen Außenweltler-Verbünde;zivilen Außenweltler-Verbünden;zivilen Außenweltler-Verbünde
+// Core\DefInjected\OrderedTakeGroupDef\*
+Droge;Drogen;Drogen;Drogen;Drogen;Drogen;Drogen;Drogen;Drogen
+Medizin;Medizin;Medizin;Medizin;Medizin;Medizin;Medizin;Medizin;Medizin
+// Core\DefInjected\PawnKindDef\PawnKinds_Tribal.xml
+Berserker;Berserker;Berserker;Berserkern;Berserker;Berserker;Berserker;Berserkern;Berserker
+Berserkerin;Berserkerinnen;Berserkerinnen;Berserkerinnen;Berserkerinnen;Berserkerinnen;Berserkerinnen;Berserkerinnen;Berserkerinnen
+Berserkermeister;Berserkermeister;Berserkermeister;Berserkermeistern;Berserkermeister;Berserkermeister;Berserkermeister;Berserkermeistern;Berserkermeister
+Berserkermeisterin;Berserkermeisterinnen;Berserkermeisterinnen;Berserkermeisterinnen;Berserkermeisterinnen;Berserkermeisterinnen;Berserkermeisterinnen;Berserkermeisterinnen;Berserkermeisterinnen
+Bogenmeister;Bogenmeister;Bogenmeister;Bogenmeistern;Bogenmeister;Bogenmeister;Bogenmeister;Bogenmeistern;Bogenmeister
+Bogenmeisterin;Bogenmeisterinnen;Bogenmeisterinnen;Bogenmeisterinnen;Bogenmeisterinnen;Bogenmeisterinnen;Bogenmeisterinnen;Bogenmeisterinnen;Bogenmeisterinnen
+Bogenschütze;Bogenschützen;Bogenschützen;Bogenschützen;Bogenschützen;Bogenschützen;Bogenschützen;Bogenschützen;Bogenschützen
+Bogenschützin;Bogenschützinnen;Bogenschützinnen;Bogenschützinnen;Bogenschützinnen;Bogenschützinnen;Bogenschützinnen;Bogenschützinnen;Bogenschützinnen
+Büßer;Büßer;Büßer;Büßern;Büßer;Büßer;Büßer;Büßern;Büßer
+Büßerin;Büßerinnen;Büßerinnen;Büßerinnen;Büßerinnen;Büßerinnen;Büßerinnen;Büßerinnen;Büßerinnen
+Händler;Händler;Händler;Händlern;Händler;Händler;Händler;Händlern;Händler
+Händlerin;Händlerinnen;Händlerinnen;Händlerinnen;Händlerinnen;Händlerinnen;Händlerinnen;Händlerinnen;Händlerinnen
+Jäger;Jäger;Jäger;Jägern;Jäger;Jäger;Jäger;Jägern;Jäger
+Jägerin;Jägerinnen;Jägerinnen;Jägerinnen;Jägerinnen;Jägerinnen;Jägerinnen;Jägerinnen;Jägerinnen
+Krieger;Krieger;Krieger;Kriegern;Krieger;Krieger;Krieger;Kriegern;Krieger
+Kriegerin;Kriegerinnen;Kriegerinnen;Kriegerinnen;Kriegerinnen;Kriegerinnen;Kriegerinnen;Kriegerinnen;Kriegerinnen
+schwere Bogenschützin;schwere Bogenschützinnen;schwerer Bogenschützinnen;schweren Bogenschützinnen;schwere Bogenschützinnen;schweren Bogenschützinnen;schweren Bogenschützinnen;schweren Bogenschützinnen;schweren Bogenschützinnen
 schwerer Bogenschütze;schwere Bogenschützen;schwerer Bogenschützen;schweren Bogenschützen;schwere Bogenschützen;schweren Bogenschützen;schweren Bogenschützen;schweren Bogenschützen;schweren Bogenschützen
-//
-// charges/ammo
-Ladung;Ladungen;Ladungen;Ladungen;Ladungen;Ladungen;Ladungen;Ladungen;Ladungen
+// Core\DefInjected\ThingDef\Apparel_Packs.xml
+Löschschaumrucksack;Löschschaumrucksäcke;Löschschaumrucksäcke;Löschschaumrucksäcken;Löschschaumrucksäcke;Löschschaumrucksäcke;Löschschaumrucksäcke;Löschschaumrucksäcken;Löschschaumrucksäcke
 Rauchladung;Rauchladungen;Rauchladungen;Rauchladungen;Rauchladungen;Rauchladungen;Rauchladungen;Rauchladungen;Rauchladungen
+Rauchrucksack;Rauchrucksäcke;Rauchrucksäcke;Rauchrucksäcken;Rauchrucksäcke;Rauchrucksäcke;Rauchrucksäcke;Rauchrucksäcken;Rauchrucksäcke
 Schaumladung;Schaumladungen;Schaumladungen;Schaumladungen;Schaumladungen;Schaumladungen;Schaumladungen;Schaumladungen;Schaumladungen
-//
-// plants
+// Core\DefInjected\ThingDef\Apparel_Utility.xml
+Ladung;Ladungen;Ladungen;Ladungen;Ladungen;Ladungen;Ladungen;Ladungen;Ladungen
+Psycho-Berserker-Lanze;Psycho-Berserker-Lanzen;Psycho-Berserker-Lanzen;Psycho-Berserker-Lanzen;Psycho-Berserker-Lanzen;Psycho-Berserker-Lanzen;Psycho-Berserker-Lanzen;Psycho-Berserker-Lanzen;Psycho-Berserker-Lanzen
+Psycho-Schock-Lanze;Psycho-Schock-Lanzen;Psycho-Schock-Lanzen;Psycho-Schock-Lanzen;Psycho-Schock-Lanzen;Psycho-Schock-Lanzen;Psycho-Schock-Lanzen;Psycho-Schock-Lanzen;Psycho-Schock-Lanzen
+// Core\DefInjected\ThingDef\Apparel_Various.xml
+Hemd;Hemden;Hemden;Hemden;Hemden;Hemden;Hemden;Hemden;Hemden
+Hose;Hosen;Hosen;Hosen;Hosen;Hosen;Hosen;Hosen;Hosen
+Jacke;Jacken;Jacken;Jacken;Jacken;Jacken;Jacken;Jacken;Jacken
+Marinerüstung;Marinerüstungen;Marinerüstungen;Marinerüstungen;Marinerüstungen;Marinerüstungen;Marinerüstungen;Marinerüstungen;Marinerüstungen
+Parka;Parkas;Parkas;Parkas;Parkas;Parkas;Parkas;Parkas;Parkas
+Plattenrüstung;Plattenrüstungen;Plattenrüstungen;Plattenrüstungen;Plattenrüstungen;Plattenrüstungen;Plattenrüstungen;Plattenrüstungen;Plattenrüstungen
+Robe;Roben;Roben;Roben;Roben;Roben;Roben;Roben;Roben
+Schutzhose;Schutzhosen;Schutzhosen;Schutzhosen;Schutzhosen;Schutzhosen;Schutzhosen;Schutzhosen;Schutzhosen
+Schutzjacke;Schutzjacken;Schutzjacken;Schutzjacken;Schutzjacken;Schutzjacken;Schutzjacken;Schutzjacken;Schutzjacken
+Schutzweste;Schutzwesten;Schutzwesten;Schutzwesten;Schutzwesten;Schutzwesten;Schutzwesten;Schutzwesten;Schutzwesten
+Späherrüstung;Späherrüstungen;Späherrüstungen;Späherrüstungen;Späherrüstungen;Späherrüstungen;Späherrüstungen;Späherrüstungen;Späherrüstungen
+Stammeskleidung;Stammeskleidungen;Stammeskleidungen;Stammeskleidungen;Stammeskleidungen;Stammeskleidungen;Stammeskleidungen;Stammeskleidungen;Stammeskleidungen
+Staubmantel;Staubmäntel;Staubmäntel;Staubmänteln;Staubmäntel;Staubmäntel;Staubmäntel;Staubmänteln;Staubmäntel
+T-Shirt;T-Shirts;T-Shirts;T-Shirts;T-Shirts;T-Shirts;T-Shirts;T-Shirts;T-Shirts
+Umhang;Umhänge;Umhänge;Umhängen;Umhänge;Umhänge;Umhänge;Umhängen;Umhänge
+// Core\DefInjected\ThingDef\Buildings_Mech*
+brennende Energiezelle;brennende Energiezellen;brennender Energiezellen;brennenden Energiezellen;brennende Energiezellen;brennenden Energiezellen;brennenden Energiezellen;brennenden Energiezellen;brennenden Energiezellen
+// Core\DefInjected\ThingDef\Buildings_Misc.xml
+antike Kryptoschlafkapsel;antike Kryptoschlafkapseln;antiker Kryptoschlafkapseln;antiken Kryptoschlafkapseln;antike Kryptoschlafkapseln;antiken Kryptoschlafkapseln;antiken Kryptoschlafkapseln;antiken Kryptoschlafkapseln;antiken Kryptoschlafkapseln
+delayed effecter spawner;
+Eierkiste;Eierkisten;Eierkisten;Eierkisten;Eierkisten;Eierkisten;Eierkisten;Eierkisten;Eierkisten
+Entwässerungspumpe;Entwässerungspumpen;Entwässerungspumpen;Entwässerungspumpen;Entwässerungspumpen;Entwässerungspumpen;Entwässerungspumpen;Entwässerungspumpen;Entwässerungspumpen
+Funkanlage;Funkanlagen;Funkanlagen;Funkanlagen;Funkanlagen;Funkanlagen;Funkanlagen;Funkanlagen;Funkanlagen
+Gehegemarkierung;Gehegemarkierungen;Gehegemarkierungen;Gehegemarkierungen;Gehegemarkierungen;Gehegemarkierungen;Gehegemarkierungen;Gehegemarkierungen;Gehegemarkierungen
+Grab;Gräber;Gräber;Gräbern;Gräber;Gräber;Gräber;Gräbern;Gräber
+große Stele;große Stelen;großer Stelen;großen Stelen;große Stelen;großen Stelen;großen Stelen;großen Stelen;großen Stelen
+Hochzeitsplatz;Hochzeitsplätze;Hochzeitsplätze;Hochzeitsplätzen;Hochzeitsplätze;Hochzeitsplätze;Hochzeitsplätze;Hochzeitsplätzen;Hochzeitsplätze
+Karawanensammelplatz;Karawanensammelplätze;Karawanensammelplätze;Karawanensammelplätzen;Karawanensammelplätze;Karawanensammelplätze;Karawanensammelplätze;Karawanensammelplätzen;Karawanensammelplätze
+Kryptoschlafkapsel;Kryptoschlafkapseln;Kryptoschlafkapseln;Kryptoschlafkapseln;Kryptoschlafkapseln;Kryptoschlafkapseln;Kryptoschlafkapseln;Kryptoschlafkapseln;Kryptoschlafkapseln
+lange Stele;lange Stelen;langer Stelen;langen Stelen;lange Stelen;langen Stelen;langen Stelen;langen Stelen;langen Stelen
+Langstreckenscanner;Langstreckenscanner;Langstreckenscanner;Langstreckenscannern;Langstreckenscanner;Langstreckenscanner;Langstreckenscanner;Langstreckenscannern;Langstreckenscanner
+Löschschaumwerfer;Löschschaumwerfer;Löschschaumwerfer;Löschschaumwerfern;Löschschaumwerfer;Löschschaumwerfer;Löschschaumwerfer;Löschschaumwerfern;Löschschaumwerfer
+Multianalysator;Multianalysatoren;Multianalysatoren;Multianalysatoren;Multianalysatoren;Multianalysatoren;Multianalysatoren;Multianalysatoren;Multianalysatoren
+Orbitalhandelsbake;Orbitalhandelsbaken;Orbitalhandelsbaken;Orbitalhandelsbaken;Orbitalhandelsbaken;Orbitalhandelsbaken;Orbitalhandelsbaken;Orbitalhandelsbaken;Orbitalhandelsbaken
+Partyplatz;Partyplätze;Partyplätze;Partyplätzen;Partyplätze;Partyplätze;Partyplätze;Partyplätzen;Partyplätze
+Sarkophag;Sarkophage;Sarkophage;Sarkophagen;Sarkophage;Sarkophage;Sarkophage;Sarkophagen;Sarkophage
+Startrampe;Startrampen;Startrampen;Startrampen;Startrampen;Startrampen;Startrampen;Startrampen;Startrampen
+Tiefenscanner;Tiefenscanner;Tiefenscanner;Tiefenscannern;Tiefenscanner;Tiefenscanner;Tiefenscanner;Tiefenscannern;Tiefenscanner
+Transportkapsel;Transportkapseln;Transportkapseln;Transportkapseln;Transportkapseln;Transportkapseln;Transportkapseln;Transportkapseln;Transportkapseln
+Vitalmonitor;Vitalmonitore;Vitalmonitore;Vitalmonitoren;Vitalmonitore;Vitalmonitore;Vitalmonitore;Vitalmonitoren;Vitalmonitore
+Werkzeugschrank;Werkzeugschränke;Werkzeugschränke;Werkzeugschränken;Werkzeugschränke;Werkzeugschränke;Werkzeugschränke;Werkzeugschränken;Werkzeugschränke
+// Core\DefInjected\ThingDef\Items_Resource_Manufactured.xml
+Bauteil;Bauteile;Bauteile;Bauteilen;Bauteile;Bauteile;Bauteile;Bauteilen;Bauteile
+Glitzerweltmedizin;Glitzerweltmedizin;Glitzerweltmedizin;Glitzerweltmedizin;Glitzerweltmedizin;Glitzerweltmedizin;Glitzerweltmedizin;Glitzerweltmedizin;Glitzerweltmedizin
+Hightech-Bauteil;Hightech-Bauteile;Hightech-Bauteile;Hightech-Bauteilen;Hightech-Bauteile;Hightech-Bauteile;Hightech-Bauteile;Hightech-Bauteilen;Hightech-Bauteile
+Kräutermedizin;Kräutermedizin;Kräutermedizin;Kräutermedizin;Kräutermedizin;Kräutermedizin;Kräutermedizin;Kräutermedizin;Kräutermedizin
+Neutramin;Neutramin;Neutramin;Neutramin;Neutramin;Neutramin;Neutramin;Neutramin;Neutramin
+Sprit;Sprit;Sprit;Sprit;Sprit;Sprit;Sprit;Sprit;Sprit
+verstärkter Lauf;verstärkte Läufe;verstärkter Läufe;verstärkten Läufen;verstärkte Läufe;verstärkten Läufe;verstärkten Läufe;verstärkten Läufen;verstärkten Läufe
+// Core\DefInjected\ThingDef\Plants_*
+Agarilux;Agariluxe;Agariluxe;Agariluxen;Agariluxe;Agariluxe;Agariluxe;Agariluxen;Agariluxe
+Agave;Agaven;Agaven;Agaven;Agaven;Agaven;Agaven;Agaven;Agaven
 Ahorn;Ahorne;Ahorne;Ahornen;Ahorne;Ahorne;Ahorne;Ahornen;Ahorne
+Ambrosiabusch;Ambrosiabüsche;Ambrosiabüsche;Ambrosiabüschen;Ambrosiabüsche;Ambrosiabüsche;Ambrosiabüsche;Ambrosiabüschen;Ambrosiabüsche
 Ameisenbaum;Ameisenbäume;Ameisenbäume;Ameisenbäumen;Ameisenbäume;Ameisenbäume;Ameisenbäume;Ameisenbäumen;Ameisenbäume
 Bambus;Bambusse;Bambusse;Bambussen;Bambusse;Bambusse;Bambusse;Bambussen;Bambusse
+Baumstumpf;Baumstümpfe;Baumstümpfe;Baumstümpfen;Baumstümpfe;Baumstümpfe;Baumstümpfe;Baumstümpfen;Baumstümpfe
 Baumwollpflanze;Baumwollpflanzen;Baumwollpflanzen;Baumwollpflanzen;Baumwollpflanzen;Baumwollpflanzen;Baumwollpflanzen;Baumwollpflanzen;Baumwollpflanzen
+Beerenstrauch;Beerensträucher;Beerensträucher;Beerensträuchern;Beerensträucher;Beerensträucher;Beerensträucher;Beerensträuchern;Beerensträucher
 Birke;Birken;Birken;Birken;Birken;Birken;Birken;Birken;Birken
+Briolux;Brioluxe;Brioluxe;Brioluxen;Brioluxe;Brioluxe;Brioluxe;Brioluxen;Brioluxe
+Busch;Büsche;Büsche;Büschen;Büsche;Büsche;Büsche;Büschen;Büsche
+Dornenstrauch;Dornensträucher;Dornensträucher;Dornensträuchern;Dornensträucher;Dornensträucher;Dornensträucher;Dornensträuchern;Dornensträucher
 Drachenbaum;Drachenbäume;Drachenbäume;Drachenbäumen;Drachenbäume;Drachenbäume;Drachenbäume;Drachenbäumen;Drachenbäume
 Eiche;Eichen;Eichen;Eichen;Eichen;Eichen;Eichen;Eichen;Eichen
 Erdbeerpflanze;Erdbeerpflanzen;Erdbeerpflanzen;Erdbeerpflanzen;Erdbeerpflanzen;Erdbeerpflanzen;Erdbeerpflanzen;Erdbeerpflanzen;Erdbeerpflanzen
+Farbstoff;Farbstoffe;Farbstoffe;Farbstoffen;Farbstoffe;Farbstoffe;Farbstoffe;Farbstoffen;Farbstoffe
+Gras;Gräser;Gräser;Gräsern;Gräser;Gräser;Gräser;Gräsern;Gräser
 Heilwurzel;Heilwurzeln;Heilwurzeln;Heilwurzeln;Heilwurzeln;Heilwurzeln;Heilwurzeln;Heilwurzeln;Heilwurzeln
 Heugras;Heugräser;Heugräser;Heugräsern;Heugräser;Heugräser;Heugräser;Heugräsern;Heugräser
+hohes Gras;hohe Gräser;hoher Gräser;hohen Gräsern;hohe Gräser;hohen Gräser;hohen Gräser;hohen Gräsern;hohen Gräser
 Hopfenpflanze;Hopfenpflanzen;Hopfenpflanzen;Hopfenpflanzen;Hopfenpflanzen;Hopfenpflanzen;Hopfenpflanzen;Hopfenpflanzen;Hopfenpflanzen
 Kakaobaum;Kakaobäume;Kakaobäume;Kakaobäumen;Kakaobäume;Kakaobäume;Kakaobäume;Kakaobäumen;Kakaobäume
 Kartoffelpflanze;Kartoffelpflanzen;Kartoffelpflanzen;Kartoffelpflanzen;Kartoffelpflanzen;Kartoffelpflanzen;Kartoffelpflanzen;Kartoffelpflanzen;Kartoffelpflanzen
 Kiefer;Kiefern;Kiefern;Kiefern;Kiefern;Kiefern;Kiefern;Kiefern;Kiefern
+Klivie;Klivien;Klivien;Klivien;Klivien;Klivien;Klivien;Klivien;Klivien
+Leuchtstuhl;Leuchtstühle;Leuchtstühle;Leuchtstühlen;Leuchtstühle;Leuchtstühle;Leuchtstühle;Leuchtstühlen;Leuchtstühle
 Löwenzahn;Löwenzähne;Löwenzähne;Löwenzähnen;Löwenzähne;Löwenzähne;Löwenzähne;Löwenzähnen;Löwenzähne
 Maispflanze;Maispflanzen;Maispflanzen;Maispflanzen;Maispflanzen;Maispflanzen;Maispflanzen;Maispflanzen;Maispflanzen
+Moos;Moose;Moose;Moosen;Moose;Moose;Moose;Moosen;Moose
+niedriges Gestrüpp;niedrige Gestrüppe;niedriger Gestrüppe;niedrigen Gestrüppen;niedrige Gestrüppe;niedrigen Gestrüppe;niedrigen Gestrüppe;niedrigen Gestrüppen;niedrigen Gestrüppe
 Palme;Palmen;Palmen;Palmen;Palmen;Palmen;Palmen;Palmen;Palmen
 Pappel;Pappeln;Pappeln;Pappeln;Pappeln;Pappeln;Pappeln;Pappeln;Pappeln
+Pfeilblatt;Pfeilblätter;Pfeilblätter;Pfeilblättern;Pfeilblätter;Pfeilblätter;Pfeilblätter;Pfeilblättern;Pfeilblätter
 Psychoidpflanze;Psychoidpflanzen;Psychoidpflanzen;Psychoidpflanzen;Psychoidpflanzen;Psychoidpflanzen;Psychoidpflanzen;Psychoidpflanzen;Psychoidpflanzen
 Rauchblattpflanze;Rauchblattpflanzen;Rauchblattpflanzen;Rauchblattpflanzen;Rauchblattpflanzen;Rauchblattpflanzen;Rauchblattpflanzen;Rauchblattpflanzen;Rauchblattpflanzen
 Reispflanze;Reispflanzen;Reispflanzen;Reispflanzen;Reispflanzen;Reispflanzen;Reispflanzen;Reispflanzen;Reispflanzen
 Riesenkaktus;Riesenkakteen;Riesenkakteen;Riesenkakteen;Riesenkakteen;Riesenkakteen;Riesenkakteen;Riesenkakteen;Riesenkakteen
+Riesenrafflesie;Riesenrafflesien;Riesenrafflesien;Riesenrafflesien;Riesenrafflesien;Riesenrafflesien;Riesenrafflesien;Riesenrafflesien;Riesenrafflesien
+Rose;Rosen;Rosen;Rosen;Rosen;Rosen;Rosen;Rosen;Rosen
+Schlingpflanze;Schlingpflanzen;Schlingpflanzen;Schlingpflanzen;Schlingpflanzen;Schlingpflanzen;Schlingpflanzen;Schlingpflanzen;Schlingpflanzen
+Taglilie;Taglilien;Taglilien;Taglilien;Taglilien;Taglilien;Taglilien;Taglilien;Taglilien
 Teakbaum;Teakbäume;Teakbäume;Teakbäumen;Teakbäume;Teakbäume;Teakbäume;Teakbäumen;Teakbäume
 Teufelsgarnpilz;Teufelsgarnpilze;Teufelsgarnpilze;Teufelsgarnpilzen;Teufelsgarnpilze;Teufelsgarnpilze;Teufelsgarnpilze;Teufelsgarnpilzen;Teufelsgarnpilze
 Tinktoria;Tinktorien;Tinktorien;Tinktorien;Tinktorien;Tinktorien;Tinktorien;Tinktorien;Tinktorien
+Tragant;Traganten;Traganten;Traganten;Traganten;Traganten;Traganten;Traganten;Traganten
+Warzenkaktus;Warzenkakteen;Warzenkakteen;Warzenkakteen;Warzenkakteen;Warzenkakteen;Warzenkakteen;Warzenkakteen;Warzenkakteen
 Weide;Weiden;Weiden;Weiden;Weiden;Weiden;Weiden;Weiden;Weiden
+wilde Heilwurzel;wilde Heilwurzeln;wilde Heilwurzeln;wilden Heilwurzeln;wilde Heilwurzeln;wilden Heilwurzeln;wilden Heilwurzeln;wilden Heilwurzeln;wilden Heilwurzeln
 Zypresse;Zypressen;Zypressen;Zypressen;Zypressen;Zypressen;Zypressen;Zypressen;Zypressen
+// Core\DefInjected\ThingDef\RangedSpecial.xml
+Orbitalbombardierung-Zielgerät;Orbitalbombardierung-Zielgeräte;Orbitalbombardierung-Zielgeräte;Orbitalbombardierung-Zielgeräten;Orbitalbombardierung-Zielgeräte;Orbitalbombardierung-Zielgeräte;Orbitalbombardierung-Zielgeräte;Orbitalbombardierung-Zielgeräten;Orbitalbombardierung-Zielgeräte
+Orbitalenergiestrahl-Zielgerät;Orbitalenergiestrahl-Zielgeräte;Orbitalenergiestrahl-Zielgeräte;Orbitalenergiestrahl-Zielgeräten;Orbitalenergiestrahl-Zielgeräte;Orbitalenergiestrahl-Zielgeräte;Orbitalenergiestrahl-Zielgeräte;Orbitalenergiestrahl-Zielgeräten;Orbitalenergiestrahl-Zielgeräte
+Tornado-Generator;Tornado-Generatoren;Tornado-Generatoren;Tornado-Generatoren;Tornado-Generatoren;Tornado-Generatoren;Tornado-Generatoren;Tornado-Generatoren;Tornado-Generatoren
+// Core\DefInjected\ThingDef\Various_Stone.xml
+geglätteter Granit;
+geglätteter Kalkstein;
+geglätteter Marmor;
+geglätteter Sandstein;
+geglätteter Schiefer;
+Granit;
+Granitblöcke;
+Granitbrocken;Granitbrocken;Granitbrocken;Granitbrocken;Granitbrocken;Granitbrocken;Granitbrocken;Granitbrocken;Granitbrocken
+Kalkstein;
+Kalksteinblöcke;
+Kalksteinbrocken;Kalksteinbrocken;Kalksteinbrocken;Kalksteinbrocken;Kalksteinbrocken;Kalksteinbrocken;Kalksteinbrocken;Kalksteinbrocken;Kalksteinbrocken
+Marmor;
+Marmorblöcke;
+Marmorbrocken;Marmorbrocken;Marmorbrocken;Marmorbrocken;Marmorbrocken;Marmorbrocken;Marmorbrocken;Marmorbrocken;Marmorbrocken
+Sandstein;
+Sandsteinblöcke;
+Sandsteinbrocken;Sandsteinbrocken;Sandsteinbrocken;Sandsteinbrocken;Sandsteinbrocken;Sandsteinbrocken;Sandsteinbrocken;Sandsteinbrocken;Sandsteinbrocken
+Schiefer;
+Schieferblöcke;
+Schieferbrocken;Schieferbrocken;Schieferbrocken;Schieferbrocken;Schieferbrocken;Schieferbrocken;Schieferbrocken;Schieferbrocken;Schieferbrocken
+Stahlschrott;

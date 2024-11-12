@@ -31,6 +31,10 @@ jobs:
       shell: powershell
       run: .\update-wordinfo-decline.ps1
 
+    - name: Update WordInfo\plural.txt
+      shell: powershell
+      run: .\update-wordinfo-plural.ps1
+
     - name: Commit
       run: |
         git config user.name "github-actions[bot]"

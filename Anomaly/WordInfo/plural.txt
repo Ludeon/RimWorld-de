@@ -1,18 +1,84 @@
-KEY;1_NOM;2_GEN;3_DAT;4_ACC;5_NOM_ART;6_GEN_ART;7_DAT_ART;8_ACC_ART
+﻿KEY;1_NOM;2_GEN;3_DAT;4_ACC;5_NOM_ART;6_GEN_ART;7_DAT_ART;8_ACC_ART
 // Plural declension (without and with article)
 // NOTE: Ingame pluralization use this file automatically (always index 1).
-//
 // Usage syntax: {lookup: TEXT; FILE_NO_EXT; INDEX}
 // TEXT is the key to access a row.
 // FILE_NO_EXT is the file in which TEXT should be looked up. Omit the extension.
 // INDEX determines the column to be used. Can be omitted if you need index 1.
 // For example, {lookup: {0}; plural; 2} looks up 2_GEN.
-//
-// charges/ammo
-Brennerladung;Brennerladungen;Brennerladungen;Brennerladungen;Brennerladungen;Brennerladungen;Brennerladungen;Brennerladungen;Brennerladungen
-Fackel;Fackeln;Fackeln;Fackeln;Fackeln;Fackeln;Fackeln;Fackeln;Fackeln
-//
-// ritual roles
-Beschwörer;Beschwörer;Beschwörer;Beschwörern;Beschwörer;Beschwörer;Beschwörer;Beschwörern;Beschwörer
+// ---
+// Anomaly\DefInjected\FactionDef\*
+Entität;Entitäten;Entitäten;Entitäten;Entitäten;Entitäten;Entitäten;Entitäten;Entitäten
+Entitäten;
+Forschungsexpedition;Forschungsexpeditionen;Forschungsexpeditionen;Forschungsexpeditionen;Forschungsexpeditionen;Forschungsexpeditionen;Forschungsexpeditionen;Forschungsexpeditionen;Forschungsexpeditionen
+Horax-Kult;Horax-Kulte;Horax-Kulte;Horax-Kulten;Horax-Kulte;Horax-Kulte;Horax-Kulte;Horax-Kulten;Horax-Kulte
+Kolonist;Kolonisten;Kolonisten;Kolonisten;Kolonisten;Kolonisten;Kolonisten;Kolonisten;Kolonisten
+Mitglied;Mitglieder;Mitglieder;Mitgliedern;Mitglieder;Mitglieder;Mitglieder;Mitgliedern;Mitglieder
+// Anomaly\DefInjected\PsychicRitualRoleDef\*
 Beschützer;Beschützer;Beschützer;Beschützern;Beschützer;Beschützer;Beschützer;Beschützern;Beschützer
+Beschwörer;Beschwörer;Beschwörer;Beschwörern;Beschwörer;Beschwörer;Beschwörer;Beschwörern;Beschwörer
 Sänger;Sänger;Sänger;Sängern;Sänger;Sänger;Sänger;Sängern;Sänger
+Ziel;Ziele;Ziele;Zielen;Ziele;Ziele;Ziele;Zielen;Ziele
+// Anomaly\DefInjected\ThingDef\Apparel_Packs.xml
+Deadlife-Kapsel;Deadlife-Kapseln;Deadlife-Kapseln;Deadlife-Kapseln;Deadlife-Kapseln;Deadlife-Kapseln;Deadlife-Kapseln;Deadlife-Kapseln;Deadlife-Kapseln
+Deadlife-Rucksack;Deadlife-Rucksäcke;Deadlife-Rucksäcke;Deadlife-Rucksäcken;Deadlife-Rucksäcke;Deadlife-Rucksäcke;Deadlife-Rucksäcke;Deadlife-Rucksäcken;Deadlife-Rucksäcke
+Disruptorfackel;Disruptorfackeln;Disruptorfackeln;Disruptorfackeln;Disruptorfackeln;Disruptorfackeln;Disruptorfackeln;Disruptorfackeln;Disruptorfackeln
+Disruptorfackelrucksack;Disruptorfackelrucksäcke;Disruptorfackelrucksäcke;Disruptorfackelrucksäcken;Disruptorfackelrucksäcke;Disruptorfackelrucksäcke;Disruptorfackelrucksäcke;Disruptorfackelrucksäcken;Disruptorfackelrucksäcke
+Fackel;Fackeln;Fackeln;Fackeln;Fackeln;Fackeln;Fackeln;Fackeln;Fackeln
+Ladung;Ladungen;Ladungen;Ladungen;Ladungen;Ladungen;Ladungen;Ladungen;Ladungen
+Turmrucksack;Turmrucksäcke;Turmrucksäcke;Turmrucksäcken;Turmrucksäcke;Turmrucksäcke;Turmrucksäcke;Turmrucksäcken;Turmrucksäcke
+Turmrucksackkapsel;Turmrucksackkapseln;Turmrucksackkapseln;Turmrucksackkapseln;Turmrucksackkapseln;Turmrucksackkapseln;Turmrucksackkapseln;Turmrucksackkapseln;Turmrucksackkapseln
+// Anomaly\DefInjected\ThingDef\Apparel_Utility.xml
+Biomutationslanze;Biomutationslanzen;Biomutationslanzen;Biomutationslanzen;Biomutationslanzen;Biomutationslanzen;Biomutationslanzen;Biomutationslanzen;Biomutationslanzen
+Splitter-Berserker-Lanze;Splitter-Berserker-Lanzen;Splitter-Berserker-Lanzen;Splitter-Berserker-Lanzen;Splitter-Berserker-Lanzen;Splitter-Berserker-Lanzen;Splitter-Berserker-Lanzen;Splitter-Berserker-Lanzen;Splitter-Berserker-Lanzen
+Splitter-Schock-Lanze;Splitter-Schock-Lanzen;Splitter-Schock-Lanzen;Splitter-Schock-Lanzen;Splitter-Schock-Lanzen;Splitter-Schock-Lanzen;Splitter-Schock-Lanzen;Splitter-Schock-Lanzen;Splitter-Schock-Lanzen
+// Anomaly\DefInjected\ThingDef\Apparel_Various.xml
+Laborkittel;Laborkittel;Laborkittel;Laborkitteln;Laborkittel;Laborkittel;Laborkittel;Laborkitteln;Laborkittel
+// Anomaly\DefInjected\ThingDef\Buildings_Misc.xml
+Atmosphärenheizung;Atmosphärenheizungen;Atmosphärenheizungen;Atmosphärenheizungen;Atmosphärenheizungen;Atmosphärenheizungen;Atmosphärenheizungen;Atmosphärenheizungen;Atmosphärenheizungen
+Austrittstelle;Austrittstellen;Austrittstellen;Austrittstellen;Austrittstellen;Austrittstellen;Austrittstellen;Austrittstellen;Austrittstellen
+Bodengravierung;Bodengravierungen;Bodengravierungen;Bodengravierungen;Bodengravierungen;Bodengravierungen;Bodengravierungen;Bodengravierungen;Bodengravierungen
+Deadlife-Falle;Deadlife-Fallen;Deadlife-Fallen;Deadlife-Fallen;Deadlife-Fallen;Deadlife-Fallen;Deadlife-Fallen;Deadlife-Fallen;Deadlife-Fallen
+elektr. Inhibitor;elektr. Inhibitoren;elektr. Inhibitoren;elektr. Inhibitoren;elektr. Inhibitoren;elektr. Inhibitoren;elektr. Inhibitoren;elektr. Inhibitoren;elektr. Inhibitoren
+Endlosgrube;Endlosgruben;Endlosgruben;Endlosgruben;Endlosgruben;Endlosgruben;Endlosgruben;Endlosgruben;Endlosgruben
+graue Kiste;graue Kisten;grauer Kisten;grauen Kisten;graue Kisten;grauen Kisten;grauen Kisten;grauen Kisten;grauen Kisten
+graue Statue;graue Statuen;grauer Statuen;grauen Statuen;graue Statuen;grauen Statuen;grauen Statuen;grauen Statuen;grauen Statuen
+Grubenausgang;Grubenausgänge;Grubenausgänge;Grubenausgängen;Grubenausgänge;Grubenausgänge;Grubenausgänge;Grubenausgängen;Grubenausgänge
+Grubenloch;Grubenlöcher;Grubenlöcher;Grubenlöchern;Grubenlöcher;Grubenlöcher;Grubenlöcher;Grubenlöchern;Grubenlöcher
+Grubentor;Grubentore;Grubentore;Grubentoren;Grubentore;Grubentore;Grubentore;Grubentoren;Grubentore
+Halteplattform;Halteplattformen;Halteplattformen;Halteplattformen;Halteplattformen;Halteplattformen;Halteplattformen;Halteplattformen;Halteplattformen
+Halteplatz;Halteplätze;Halteplätze;Halteplätzen;Halteplätze;Halteplätze;Halteplätze;Halteplätzen;Halteplätze
+Näherungsdetektor;Näherungsdetektoren;Näherungsdetektoren;Näherungsdetektoren;Näherungsdetektoren;Näherungsdetektoren;Näherungsdetektoren;Näherungsdetektoren;Näherungsdetektoren
+Noctolith;Noctolithen;Noctolithen;Noctolithen;Noctolithen;Noctolithen;Noctolithen;Noctolithen;Noctolithen
+Rauschinduktor;Rauschinduktoren;Rauschinduktoren;Rauschinduktoren;Rauschinduktoren;Rauschinduktoren;Rauschinduktoren;Rauschinduktoren;Rauschinduktoren
+Schlafunterdrücker;Schlafunterdrücker;Schlafunterdrücker;Schlafunterdrückern;Schlafunterdrücker;Schlafunterdrücker;Schlafunterdrücker;Schlafunterdrückern;Schlafunterdrücker
+Sicherheitstür;Sicherheitstüren;Sicherheitstüren;Sicherheitstüren;Sicherheitstüren;Sicherheitstüren;Sicherheitstüren;Sicherheitstüren;Sicherheitstüren
+Splitterinhibitor;Splitterinhibitoren;Splitterinhibitoren;Splitterinhibitoren;Splitterinhibitoren;Splitterinhibitoren;Splitterinhibitoren;Splitterinhibitoren;Splitterinhibitoren
+taktischer Geschützturm;taktische Geschütztürme;taktischer Geschütztürme;taktischen Geschütztürmen;taktische Geschütztürme;taktischen Geschütztürme;taktischen Geschütztürme;taktischen Geschütztürmen;taktischen Geschütztürme
+Taktischer-Geschützturm-Kugel;Taktischer-Geschützturm-Kugeln;Taktischer-Geschützturm-Kugeln;Taktischer-Geschützturm-Kugeln;Taktischer-Geschützturm-Kugeln;Taktischer-Geschützturm-Kugeln;Taktischer-Geschützturm-Kugeln;Taktischer-Geschützturm-Kugeln;Taktischer-Geschützturm-Kugeln
+taktisches Geschütz;taktische Geschütze;taktischer Geschütze;taktischen Geschützen;taktische Geschütze;taktischen Geschütze;taktischen Geschütze;taktischen Geschützen;taktischen Geschütze
+Tür;Türen;Türen;Türen;Türen;Türen;Türen;Türen;Türen
+verzögertes Erscheinen des Metallschreckens;
+Wand;Wände;Wände;Wänden;Wände;Wände;Wände;Wänden;Wände
+Würfelskulptur aus Dreck;Würfelskulpturen aus Dreck;Würfelskulpturen aus Dreck;Würfelskulpturen aus Dreck;Würfelskulpturen aus Dreck;Würfelskulpturen aus Dreck;Würfelskulpturen aus Dreck;Würfelskulpturen aus Dreck;Würfelskulpturen aus Dreck
+Würfelskulptur aus Sand;Würfelskulpturen aus Sand;Würfelskulpturen aus Sand;Würfelskulpturen aus Sand;Würfelskulpturen aus Sand;Würfelskulpturen aus Sand;Würfelskulpturen aus Sand;Würfelskulpturen aus Sand;Würfelskulpturen aus Sand
+Würfelskulptur aus Schrott;Würfelskulpturen aus Schrott;Würfelskulpturen aus Schrott;Würfelskulpturen aus Schrott;Würfelskulpturen aus Schrott;Würfelskulpturen aus Schrott;Würfelskulpturen aus Schrott;Würfelskulpturen aus Schrott;Würfelskulpturen aus Schrott
+Würfelskulptur aus Stein;Würfelskulpturen aus Stein;Würfelskulpturen aus Stein;Würfelskulpturen aus Stein;Würfelskulpturen aus Stein;Würfelskulpturen aus Stein;Würfelskulpturen aus Stein;Würfelskulpturen aus Stein;Würfelskulpturen aus Stein
+// Anomaly\DefInjected\ThingDef\Items_Resource_Manufactured.xml
+Deadlife-Granate;Deadlife-Granaten;Deadlife-Granaten;Deadlife-Granaten;Deadlife-Granaten;Deadlife-Granaten;Deadlife-Granaten;Deadlife-Granaten;Deadlife-Granaten
+Gedankenfrostserum;Gedankenfrostseren;Gedankenfrostseren;Gedankenfrostseren;Gedankenfrostseren;Gedankenfrostseren;Gedankenfrostseren;Gedankenfrostseren;Gedankenfrostseren
+Ghulerweckungsserum;Ghulerweckungsseren;Ghulerweckungsseren;Ghulerweckungsseren;Ghulerweckungsseren;Ghulerweckungsseren;Ghulerweckungsseren;Ghulerweckungsseren;Ghulerweckungsseren
+Leerensichtserum;Leerensichtseren;Leerensichtseren;Leerensichtseren;Leerensichtseren;Leerensichtseren;Leerensichtseren;Leerensichtseren;Leerensichtseren
+Metallblutserum;Metallblutseren;Metallblutseren;Metallblutseren;Metallblutseren;Metallblutseren;Metallblutseren;Metallblutseren;Metallblutseren
+Molochserum;Molochseren;Molochseren;Molochseren;Molochseren;Molochseren;Molochseren;Molochseren;Molochseren
+// Anomaly\DefInjected\ThingDef\Plants_*
+Heroldbaum;Heroldbäume;Heroldbäume;Heroldbäumen;Heroldbäume;Heroldbäume;Heroldbäume;Heroldbäumen;Heroldbäume
+Heroldbaumstumpf;Heroldbaumstümpfe;Heroldbaumstümpfe;Heroldbaumstümpfen;Heroldbaumstümpfe;Heroldbaumstümpfe;Heroldbaumstümpfe;Heroldbaumstümpfen;Heroldbaumstümpfe
+Heroldsamen;Heroldsamen;Heroldsamen;Heroldsamen;Heroldsamen;Heroldsamen;Heroldsamen;Heroldsamen;Heroldsamen
+// Anomaly\DefInjected\ThingDef\Weapons_Ranged.xml
+Brennerladung;Brennerladungen;Brennerladungen;Brennerladungen;Brennerladungen;Brennerladungen;Brennerladungen;Brennerladungen;Brennerladungen
+Einäscherer;Einäscherer;Einäscherer;Einäscherern;Einäscherer;Einäscherer;Einäscherer;Einäscherern;Einäscherer
+Höllenfeuergewehr;Höllenfeuergewehre;Höllenfeuergewehre;Höllenfeuergewehren;Höllenfeuergewehre;Höllenfeuergewehre;Höllenfeuergewehre;Höllenfeuergewehren;Höllenfeuergewehre
+Höllenfeuergewehrkugel;Höllenfeuergewehrkugeln;Höllenfeuergewehrkugeln;Höllenfeuergewehrkugeln;Höllenfeuergewehrkugeln;Höllenfeuergewehrkugeln;Höllenfeuergewehrkugeln;Höllenfeuergewehrkugeln;Höllenfeuergewehrkugeln
+Lauf;Läufe;Läufe;Läufen;Läufe;Läufe;Läufe;Läufen;Läufe
+Schaft;Schäfte;Schäfte;Schäften;Schäfte;Schäfte;Schäfte;Schäften;Schäfte
