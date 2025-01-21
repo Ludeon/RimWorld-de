@@ -23,17 +23,9 @@ jobs:
         ref: master
         fetch-depth: 0
 
-    - name: Update WordInfo\Gender\*
+    - name: Update WordInfo
       shell: powershell # Forces the usage of PowerShell Desktop
-      run: .\update-wordinfo-gender.ps1
-
-    - name: Update WordInfo\decline.txt
-      shell: powershell
-      run: .\update-wordinfo-decline.ps1
-
-    - name: Update WordInfo\plural.txt
-      shell: powershell
-      run: .\update-wordinfo-plural.ps1
+      run: .\update-wordinfo.ps1
 
     - name: Commit
       run: |

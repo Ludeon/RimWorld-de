@@ -1,4 +1,4 @@
-# Update WordInfo
+# Update WordInfo\Gender\*
 
 $PSDefaultParameterValues["*:Encoding"] = "UTF8"
 
