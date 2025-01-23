@@ -356,9 +356,9 @@
   <MessageFinishedLoadingTransporterSingle>Shuttle wurde mit den erforderlichen Waren oder Personen beladen und ist startbereit.</MessageFinishedLoadingTransporterSingle>
 
   <!-- EN: Your {1} can't finish loading the transport pods because some items or people became unavailable ({2_labelShort}). -->
-  <MessageCantLoadMoreIntoTransporters>Deine {1} können die Transportkapseln nicht fertig beladen, da einige Waren oder Personen nicht mehr verfügbar sind ({2_labelShort}).</MessageCantLoadMoreIntoTransporters>
+  <MessageCantLoadMoreIntoTransporters>Deine {lookup: {1}; decline_other; 4} können die Transportkapseln nicht fertig beladen, da einige Waren oder Personen nicht mehr verfügbar sind ({2_labelShort}).</MessageCantLoadMoreIntoTransporters>
   <!-- EN: Your {1} can't finish entering the {0} because some items or people became unavailable ({2_labelShort}). -->
-  <MessageCantLoadMoreIntoPortal>Deine {1} betreten {0_gender ? den : die : das} {lookup: {0}; decline; 7} nicht mit allen Gegenständen oder Personen, da einige nicht mehr verfügbar sind ({2_labelShort}).</MessageCantLoadMoreIntoPortal>
+  <MessageCantLoadMoreIntoPortal>Deine {lookup: {1}; decline_other; 4} betreten {0_gender ? den : die : das} {lookup: {0}; decline; 7} nicht mit allen Gegenständen oder Personen, da einige nicht mehr verfügbar sind ({2_labelShort}).</MessageCantLoadMoreIntoPortal>
   
   <!-- EN: Selected destination is invalid. -->
   <MessageTransportPodsDestinationIsInvalid>Gewählter Zielort ist ungültig.</MessageTransportPodsDestinationIsInvalid>
@@ -406,7 +406,7 @@
   <MessageYouHaveToReformCaravanNow>Du musst deine Karawane jetzt neu formieren. Jeder, der zurückgelassen wird, ist für immer verloren.</MessageYouHaveToReformCaravanNow>
   
   <!-- EN: {0} from {1} are attacking your {2}. -->
-  <MessageDefendersAttacking>{0} der Fraktion '{1}' greifen deine {2} an.</MessageDefendersAttacking>
+  <MessageDefendersAttacking>{0} der Fraktion '{1}' greifen deine {lookup: {2}; decline_other; 7} an.</MessageDefendersAttacking>
   <!-- EN: Mechanoids have been assembled and will defend their cluster. -->
   <MessageMechanoidsAssembled>Mechanoiden wurden gebaut und werden ihren Cluster verteidigen.</MessageMechanoidsAssembled>
   <!-- EN: Remaining mechanoids to assemble -->
@@ -634,7 +634,7 @@
   <MessageCantShootInMelee>Kann im Nahkampf nicht schießen.</MessageCantShootInMelee>
 
   <!-- EN: None of your {0} can accept this quest now. -->
-  <MessageNoColonistCanAcceptQuest>Aktuell kann keiner deiner {0} diese Quest annehmen.</MessageNoColonistCanAcceptQuest>
+  <MessageNoColonistCanAcceptQuest>Aktuell kann keiner deiner {lookup: {0}; decline_other; 5} diese Quest annehmen.</MessageNoColonistCanAcceptQuest>
   <!-- EN: Cannot accept this quest. -->
   <MessageCannotAcceptQuest>Kann diese Quest nicht annehmen.</MessageCannotAcceptQuest>
   <!-- EN: {0_definite} has accepted a quest: {1} -->
