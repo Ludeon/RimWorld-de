@@ -6,25 +6,24 @@ $PSDefaultParameterValues["*:Encoding"] = "UTF8"
 $dlcs = Get-ChildItem -Directory | Where-Object { Test-Path -Path (Join-Path -Path $_.FullName -ChildPath "DefInjected") }
 
 # Paths of the XML files in which the words should be searched
-$paths = @(
-"FactionDef\*"
-"OrderedTakeGroupDef\*"
-"PawnKindDef\PawnKinds_Empire.xml"
-"PawnKindDef\PawnKinds_Tribal.xml"
-"PsychicRitualRoleDef\*"
-"RitualBehaviorDef\*"
-"ThingDef\Apparel_Packs.xml"
-"ThingDef\Apparel_Utility.xml"
-"ThingDef\Apparel_Various.xml"
-"ThingDef\Buildings_Mech*"
-"ThingDef\Buildings_Misc.xml"
-"ThingDef\Items_Resource_Manufactured.xml"
-"ThingDef\Plants_*"
-"ThingDef\Races_Mechanoids_Light.xml"
-"ThingDef\RangedSpecial.xml"
-"ThingDef\Various_Stone.xml"
-"ThingDef\Weapons_Ranged.xml"
-)
+# and the regex pattern to match the elements
+$items = [ordered]@{
+"DefInjected\FactionDef\*" = ".+\.pawnSingular"
+"DefInjected\OrderedTakeGroupDef\*" = ".+\.label" # MaxPickUpAllowed
+"DefInjected\PawnKindDef\PawnKinds_Empire.xml" = ".+\.label"
+"DefInjected\PawnKindDef\PawnKinds_Tribal.xml" = ".+\.label"
+"DefInjected\PsychicRitualRoleDef\*" = ".+\.label"
+"DefInjected\RitualBehaviorDef\*" = ".+\.label" # MessageLordJobNeedsAtLeastNumRolePawn
+"DefInjected\ThingDef\Apparel_*.xml, DefInjected\ThingDef\RangedSpecial.xml, DefInjected\ThingDef\Weapons_Ranged.xml" = ".+\.chargeNoun"
+"DefInjected\ThingDef\Buildings_Furniture.xml" = "Blackboard\.label" # StatsReport_Connected
+"DefInjected\ThingDef\Buildings_Mech*" = "\w+\.label"
+"DefInjected\ThingDef\Buildings_Misc.xml" = "TransportPod\.label" # LoadTransporters
+"DefInjected\ThingDef\Items_Resource_Manufactured.xml" = "Wastepack\.label" # CommandAutoLoad, CommandEjectContents, ThingsProduced
+"DefInjected\ThingDef\Plants_*" = ".+\.label" # MessagePlantIncompatibleWithRoof
+"DefInjected\ThingDef\Races_Mechanoids_Light.xml" = "Mech_WarUrchin\.label"
+"DefInjected\ThingDef\Various_Stone.xml" = "Chunk\w+\.label" # DeepDrillExhausted
+"Keyed\FloatMenu.xml" = "Deity" # DeitiesRequired
+}
 
 # Header line for plural.txt
 $header = @(
@@ -52,63 +51,64 @@ $comments = @"
 "@
 
 # Enumerate DLC folders (including Core)
+$tempFile = New-Item "$env:temp\$([GUID]::NewGuid()).txt"
 foreach ($dlc in $dlcs)
 {
-  # Create a temporary folder
-  $temp = New-Item "$env:temp\$([GUID]::NewGuid())" -ItemType "Directory"
-
-  # Create WordInfo folder
-  $WordInfoFolder = New-Item "$dlc\WordInfo" -ItemType "Directory" -Force
-
-  # Create plural.txt file
-  if (!(test-path "$WordInfoFolder\plural.txt"))
-  {
-    New-Item "$WordInfoFolder\plural.txt" -Value "$($header -join ";")`n$comments`n" | Out-Null
-  }
-
-  # Read plural.txt content
-  $pluralFile = Get-Content -Path "$WordInfoFolder\plural.txt"
+  Clear-Content -Path $tempFile
+  Set-Location -Path "$PSScriptRoot\$dlc"
+  $pluralFile = "WordInfo\plural.txt"
 
   # Create a hash table of singular nominative words
   $HashTable = @{}
-  foreach ($r in ($pluralFile | ConvertFrom-Csv -Delimiter ";" -Header $header))
+  $pluralFileLines = @()
+  if (test-path $pluralFile) {
+    $pluralFileLines = Get-Content -Path $pluralFile
+    Remove-Item $pluralFile
+  }
+  foreach ($line in ($pluralFileLines | ConvertFrom-Csv -Delimiter ";" -Header $header))
   {
-    if ($r.KEY.substring(0, 2) -eq "//") { continue } # skip "//" comments
-    $fields = $r.PSObject.Properties.Value -join ";"
+    if ($line.KEY.substring(0, 2) -eq "//") { continue } # skip "//" comments
+    $fields = $line.PSObject.Properties.Value -join ";"
     $fields = $fields -replace "(?<=;);" # remove empty fields for clarity and reducing file size
-    $HashTable[$r.KEY] = $fields
+    $HashTable[$line.KEY] = $fields
   }
 
   # Search words in the XML files and add them to a temp file
-  foreach ($path in $paths)
-  {
-    $path = "$dlc\DefInjected\$path"
-    if (!(test-path "$path")) { continue } # skip non-existing paths
-    $elements = Get-Content -Path "$path" -Filter "*.xml" | Select-String -Pattern "<(((?!\b(stages|verbs)\b).)*(\.label|\.labelNoLocation|\.pawnSingular|\.chargeNoun|\.customLabel|\.labelMale|\.labelFemale|\.monolithLabel))>(?<value>.*?)</\1>" -All
-    "// $path" >> "$temp\all.txt" # categorize plural.txt by paths
+  $items.GetEnumerator() | ForEach-Object {
+    $paths = ($($_.Key) -split ',').Trim()
+    $pattern = $($_.Value)
+    $elements = @()
+    $ps = @()
+    foreach ($path in $paths) {
+      if (!(test-path $path)) { continue } # skip non-existing paths
+      $ps += $path
+      $elements += Get-Content -Path $path -Filter "*.xml" | Select-String -Pattern "<($pattern)>(?<value>.*?)</\1>" -All
+    }
+    if ($elements.Count -eq 0) { return } # skip if no elements found
+    "// $($ps -join ', ') ($pattern)" >> $tempFile # categorize plural.txt by paths
     # enumerate lines
-    $lines = @()
-    foreach ($element in $elements) { $lines += $element.matches[0].groups["value"] }
-    Add-Content -Path "$temp\all.txt" -Value ($lines | Sort-Object)
+    $tempFileLines = @()
+    foreach ($element in $elements) { $tempFileLines += $element.matches[0].groups["value"] }
+    Add-Content -Path $tempFile -Value ($tempFileLines | Sort-Object)
   }
 
   # Merge the temp file with plural.txt
-  $lines = @($header -join ";")
-  $lines += $comments
-  foreach ($line in (Get-Content "$temp\all.txt" | Select-Object -Unique))
+  $tempFileLines = Get-Content $tempFile
+  if ($tempFileLines.Count -eq 0) { continue } # skip if temp file is empty
+  $pluralFileLines = @($header -join ";")
+  $pluralFileLines += $comments
+  foreach ($line in ($tempFileLines | Select-Object -Unique))
   {
     if ($line.substring(0, 2) -eq "//") {
-      $lines += $line
+      $pluralFileLines += $line
     } elseif ($HashTable.ContainsKey($line)) {
-      $lines += $HashTable[$line]
+      $pluralFileLines += $HashTable[$line]
     } else {
-      $lines += $line + ";"
+      $pluralFileLines += $line + ";"
     }
   }
-
-  # Add the merged content to plural.txt
-  Set-Content -Path "$WordInfoFolder\plural.txt" -Value $lines
-
-  # Delete the temporary folder
-  Remove-Item -Recurse $temp
+  New-Item $pluralFile -Force | Out-Null
+  Set-Content -Path $pluralFile -Value $pluralFileLines
 }
+Set-Location -Path $PSScriptRoot
+Remove-Item $tempFile
