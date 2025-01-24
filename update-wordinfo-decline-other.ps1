@@ -7,7 +7,7 @@ $dlcs = Get-ChildItem -Directory | Where-Object { Test-Path -Path (Join-Path -Pa
 
 # Paths of the XML files in which the words should be searched
 # and the regex pattern to match the elements
-$items = @{
+$items = [ordered]@{
 "DefInjected\FactionDef\*" = "\w+\.pawnsPlural"
 }
 
@@ -40,7 +40,8 @@ $tempFile = New-Item "$env:temp\$([GUID]::NewGuid()).txt"
 foreach ($dlc in $dlcs)
 {
   Clear-Content -Path $tempFile
-  $declineFile = "$dlc\WordInfo\decline_other.txt"
+  Set-Location -Path "$PSScriptRoot\$dlc"
+  $declineFile = "WordInfo\decline_other.txt"
 
   # Create a hash table of nominative words
   $HashTable = @{}
@@ -59,13 +60,17 @@ foreach ($dlc in $dlcs)
 
   # Search words in the XML files and add them to a temp file
   $items.GetEnumerator() | ForEach-Object {
-    $path = "$dlc\$($_.Key)"
-    $pattern = "$($_.Value)"
-    if (!(test-path "$path")) { return } # skip non-existing paths
-    $elements = Get-Content -Path "$path" -Filter "*.xml" | Select-String -Pattern "<($pattern)>(?<value>.*?)</\1>" -All
+    $paths = ($($_.Key) -split ',').Trim()
+    $pattern = $($_.Value)
+    $elements = @()
+    $ps = @()
+    foreach ($path in $paths) {
+      if (!(test-path $path)) { continue } # skip non-existing paths
+      $ps += $path
+      $elements += Get-Content -Path $path -Filter "*.xml" | Select-String -Pattern "<($pattern)>(?<value>.*?)</\1>" -All
+    }
     if ($elements.Count -eq 0) { return } # skip if no elements found
-    # "// $path" >> $allFile # categorize decline_other.txt by paths
-    "// $path" >> $tempFile # categorize decline_other.txt by paths
+    "// $($ps -join ', ') ($pattern)" >> $tempFile # categorize decline_other.txt by paths
     # enumerate lines
     $tempFileLines = @()
     foreach ($element in $elements) { $tempFileLines += $element.matches[0].groups["value"] }
@@ -90,4 +95,5 @@ foreach ($dlc in $dlcs)
   New-Item $declineFile -Force | Out-Null
   Set-Content -Path $declineFile -Value $declineFileLines
 }
+Set-Location -Path $PSScriptRoot
 Remove-Item $tempFile
