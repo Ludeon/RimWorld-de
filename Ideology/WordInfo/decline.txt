@@ -6,7 +6,7 @@
 // INDEX determines the column to be used. Can be omitted if you need index 1.
 // For example, {lookup: {0}; decline; 2} looks up 2_DAT.
 // ---
-// Ideology\DefInjected\PreceptDef\Precepts_Role.xml
+// DefInjected\PreceptDef\Precepts_Role.xml (\w+\.label)
 Anführer;Anführers;Anführer;Anführer;Anführer;Anführers;Anführer;Anführer;
 Bergbauspezialist;Bergbauspezialisten;Bergbauspezialisten;Bergbauspezialisten;Bergbauspezialist;Bergbauspezialisten;Bergbauspezialisten;Bergbauspezialisten;
 Fernkampfspezialist;Fernkampfspezialisten;Fernkampfspezialisten;Fernkampfspezialisten;Fernkampfspezialist;Fernkampfspezialisten;Fernkampfspezialisten;Fernkampfspezialisten;
@@ -17,7 +17,7 @@ Nahkampfspezialist;Nahkampfspezialisten;Nahkampfspezialisten;Nahkampfspezialiste
 Pflanzenspezialist;Pflanzenspezialisten;Pflanzenspezialisten;Pflanzenspezialisten;Pflanzenspezialist;Pflanzenspezialisten;Pflanzenspezialisten;Pflanzenspezialisten;
 Produktionsspezialist;Produktionsspezialisten;Produktionsspezialisten;Produktionsspezialisten;Produktionsspezialist;Produktionsspezialisten;Produktionsspezialisten;Produktionsspezialisten;
 Tierspezialist;Tierspezialisten;Tierspezialisten;Tierspezialisten;Tierspezialist;Tierspezialisten;Tierspezialisten;Tierspezialisten;
-// Ideology\DefInjected\PawnKindDef\*
+// DefInjected\PawnKindDef\* (.+\.label(Male|Female)?)
 Beerendryade;
 Bettler;Bettlers;Bettler;Bettler;Bettler;Bettlers;Bettler;Bettler;
 Bettlerin;
@@ -40,8 +40,7 @@ Rindenhautdryade;
 schwerbewaffnete Reisende;schwerbewaffneten Reisenden;schwerbewaffneten Reisenden;schwerbewaffnete Reisende;schwerbewaffnete Reisende;schwerbewaffneten Reisenden;schwerbewaffneten Reisenden;schwerbewaffnete Reisende;
 schwerbewaffneter Reisender;schwerbewaffneten Reisenden;schwerbewaffneten Reisenden;schwerbewaffneten Reisenden;schwerbewaffnete Reisende;schwerbewaffneten Reisenden;schwerbewaffneten Reisenden;schwerbewaffneten Reisenden;
 Trägerdryade;
-// Ideology\DefInjected\ThingDef\*
-Altersumkehr;
+// DefInjected\ThingDef\* (\w+\.label)
 Anhänger;
 animalische Platte (breit);
 animalische Platte (mittel);
@@ -118,7 +117,6 @@ Autoritätsmütze;
 Behälter;
 Bildnis;
 Bioformerkapsel;
-Bioregeneration;
 Bong;
 Bonsai-Baum;
 Bonsai-Topf;
@@ -156,13 +154,10 @@ Kegelhut;
 Kelch;
 Kirchenbank;
 kleiner Altar;
-Kopf;
 Kopftuch;
-Kralle;
 Lade;
 Lautsprecher;
 Lichterkugel;
-linke Kralle;
 luftdichte Kiste;
 Maske;
 mittlerer Altar;
@@ -175,14 +170,12 @@ Nutrifungus;
 Opferflagge;
 Plattenbett;
 Plattendoppelbett;
-rechte Kralle;
 Rednerpult;
 Reliquienschrein;
 riesige Archotech-Struktur;
 Ritualplatz;
 rustikaler Teppich (breit);
 rustikaler Teppich (mittel);
-Sanitäter;
 Schädelspieß;
 Scheiterhaufen;
 Schlafbeschleuniger;
@@ -199,7 +192,6 @@ totemische Platte (mittel);
 Trommel;
 Tunnel;
 Turban;
-Vergnügen;
 verstreute Dokumente;
 Weihnachtsbaum;
 Weihrauchschrein;
@@ -207,13 +199,10 @@ Weltraumdrohne;
 Weltraumdrohne (ankommend);
 Würfel;
 zerlumpte Uniform;
-// Ideology\DefInjected\FactionDef\*
-Kannibalische Piratenbande;
-Kannibalischer Stamm;
-Nudistenstamm;
-Pirat;
+// DefInjected\FactionDef\* (\w+\.pawnSingular)
+Pirat;Piraten;Piraten;Piraten;Pirat;Piraten;Piraten;Piraten;Piraten
 Ureinwohner;
-// Ideology\DefInjected\HediffDef\*
+// DefInjected\HediffDef\* (\w+\.label)
 Abbaubefehl;
 Anbaubefehl;
 Arbeitsfokus;
@@ -229,7 +218,7 @@ Produktionsbefehl;
 Schießbefehl;
 verbundene Augen;
 Ziernarbe;
-// Ideology\DefInjected\SitePartDef\*
+// DefInjected\SitePartDef\* (\w+\.label)
 {THING_label}abbaulager;
 antiker Komplex;antiken Komplexes;antiken Komplex;antiken Komplex;antike Komplex;antiken Komplex;antiken Komplex;antiken Komplex;
 Archonexus;

@@ -6,7 +6,7 @@
 // INDEX determines the column to be used. Can be omitted if you need index 1.
 // For example, {lookup: {0}; decline; 2} looks up 2_DAT.
 // ---
-// Biotech\DefInjected\PawnKindDef\*
+// DefInjected\PawnKindDef\* (.+\.label(Male|Female)?)
 Abfackler;Abfacklers;Abfackler;Abfackler;Abfackler;Abfacklers;Abfackler;Abfackler;
 Agrarhelfer;Agrarhelfers;Agrarhelfer;Agrarhelfer;Agrarhelfer;Agrarhelfers;Agrarhelfer;Agrarhelfer;
 Apokrit;Apokriten;Apokriten;Apokriten;Apokrit;Apokriten;Apokriten;Apokriten;
@@ -81,7 +81,7 @@ Toxalope;
 Toxalopenkalb;Toxalopenkalbs;Toxalopenkalb;Toxalopenkalb;Toxalopenkalb;Toxalopenkalbs;Toxalopenkalb;Toxalopenkalb;
 Tunnelgräber;Tunnelgräbers;Tunnelgräber;Tunnelgräber;Tunnelgräber;Tunnelgräbers;Tunnelgräber;Tunnelgräber;
 Zenturio;Zenturios;Zenturio;Zenturio;Zenturio;Zenturios;Zenturio;Zenturio;
-// Biotech\DefInjected\ThingDef\*
+// DefInjected\ThingDef\* (\w+\.label)
 abgestürztes Mechanitor-Schiff;
 abgestürztes Shuttle;
 Airwire-Headset;
@@ -104,7 +104,6 @@ Baby-Schlafplatz;
 Bandbreitenrucksack;
 Bandknoten;
 Baumstumpf;
-Bein;
 Blutfackel;
 Bodenzeichnung;
 Brandpfeil;
@@ -114,7 +113,6 @@ entflammbare Galle;
 Entgiftungslunge;
 Entgiftungsniere;
 Entseuchungspumpe;
-Faust;
 Fernreparatur-Implantat;
 Fernschild-Implantat;
 Flammenbogen;
@@ -131,7 +129,6 @@ Gifthandgranate;
 Gifthandgranaten;
 Giftkartoffeln;
 Giftkartoffelpflanze;
-Giftladung;
 Giftmüllatomisierer;
 Giftmüllpaket;
 Giftnadel;
@@ -152,7 +149,6 @@ Höhlenkäfer-Kokon;
 Höllensphärenkanone;
 Höllensphärenkanonenschuss;
 Hornstachel;
-Huf;
 Impulsblasterturm;
 Insektenkokon;
 Integrator-Headset;
@@ -162,20 +158,12 @@ Kinderhose;
 Kinderparka;
 Kinderstammeskleidung;
 Kinderstrampler;
-Klinge;
 Kontrollrucksack;
 Kontroll-Sublink (Mittelstufe);
 Kontroll-Sublink (Oberstufe);
-Kopf;
 Kraftschildgerät;
 Kugel;
 Kugelwerfer;
-Lauf;
-linke Faust;
-linke Kralle;
-linke Powerkralle;
-linker Huf;
-linkes Vorderbein;
 Mechanitor-Schiff (abstürzend);
 Mechbandantenne;
 Mechbandschüssel;
@@ -201,20 +189,11 @@ Poluxbaum;
 Poluxbaumstumpf;
 Poluxsamen;
 Powerfokuschip;Powerfokuschips;Powerfokuschip;Powerfokuschip;Powerfokuschip;Powerfokuschips;Powerfokuschip;Powerfokuschip;
-Powerkralle;
 Psychofluidpumpe;
 Rattenpalme;
-rechte Faust;
-rechte Klinge;
-rechte Kralle;
-rechte Powerkralle;
-rechter Huf;
-rechtes Vorderbein;
 Reißdorn;
 Reparatursonde;
-Rumpf;
 Säure;
-Schaft;
 Schärpe;
 Schaum;
 Schrotladung;
@@ -238,21 +217,14 @@ Todesschlafkapazitätsserum;
 Todesschlafsarg;
 unfertiger Subkern;
 Wachstumskapsel;
-Wurfarm;
 Xenokeim;
-// Biotech\DefInjected\FactionDef\*
-grimmiger Neandertaler-Stamm;
+// DefInjected\FactionDef\* (\w+\.pawnSingular)
 Imp;
 Neandertaler;
 Ödländer;
-Ödländer-Piraten;
-Sanguophagen;
 Schweinehaut;
-wilder Impiden-Stamm;
-wilder Schweinehäute-Verbund;
 Yttakin;
-Yttakin-Piraten;
-// Biotech\DefInjected\HediffDef\*
+// DefInjected\HediffDef\* (\w+\.label)
 Bandknoten (abgestimmt);
 Bio-Verhungern;
 Blutsaugerbiss;
@@ -292,9 +264,9 @@ Verseuchungsreiz;
 Wehen (Eröffnung);
 Wehen (Pressen);
 Xenokeimungskoma;
-// Biotech\DefInjected\PawnRelationDef\*
+// DefInjected\PawnRelationDef\* (\w+\.label(Female)?)
 Aufseher;
 leibliche Mutter;
 leiblicher Vater;
-// Biotech\DefInjected\SitePartDef\*
+// DefInjected\SitePartDef\* (\w+\.label)
 antiker Mechanitor-Komplex;antiken Mechanitor-Komplexes;antiken Mechanitor-Komplex;antiken Mechanitor-Komplex;antike Mechanitor-Komplex;antiken Mechanitor-Komplex;antiken Mechanitor-Komplex;antiken Mechanitor-Komplex;

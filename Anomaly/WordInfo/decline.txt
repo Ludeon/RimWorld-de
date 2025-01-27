@@ -6,7 +6,7 @@
 // INDEX determines the column to be used. Can be omitted if you need index 1.
 // For example, {lookup: {0}; decline; 2} looks up 2_DAT.
 // ---
-// Anomaly\DefInjected\PawnKindDef\*
+// DefInjected\PawnKindDef\* (.+\.label(Male|Female)?)
 blinde Heilerin;blinden Heilerin;blinden Heilerin;blinde Heilerin;blinde Heilerin;blinden Heilerin;blinden Heilerin;blinde Heilerin;
 blinder Heiler;blinden Heilers;blinden Heiler;blinden Heiler;blinde Heiler;blinden Heilers;blinden Heiler;blinden Heiler;
 Chimäre;
@@ -45,11 +45,11 @@ Verschlinger;Verschlingers;Verschlinger;Verschlinger;Verschlinger;Verschlingers;
 Wiedergänger;Wiedergängers;Wiedergänger;Wiedergänger;Wiedergänger;Wiedergängers;Wiedergänger;Wiedergänger;
 Zeitlose;Zeitlosen;Zeitlosen;Zeitlose;Zeitlose;Zeitlosen;Zeitlosen;Zeitlose;
 Zeitloser;Zeitlosen;Zeitlosen;Zeitlosen;Zeitlose;Zeitlosen;Zeitlosen;Zeitlosen;
-// Anomaly\DefInjected\MonolithLevelDef\*
+// DefInjected\MonolithLevelDef\* (\w+\.monolithLabel)
 eingestürzter Monolith;eingestürzten Monolithen;eingestürzten Monolithen;eingestürzten Monolithen;eingestürzte Monolith;eingestürzten Monolithen;eingestürzten Monolithen;eingestürzten Monolithen;
 Monolith der Leere;Monolithen der Leere;Monolithen der Leere;Monolithen der Leere;Monolith der Leere;Monolithen der Leere;Monolithen der Leere;Monolithen der Leere;
 zerfallener Monolith;zerfallenen Monolithen;zerfallenen Monolithen;zerfallenen Monolithen;zerfallene Monolith;zerfallenen Monolithen;zerfallenen Monolithen;zerfallenen Monolithen;
-// Anomaly\DefInjected\ThingDef\*
+// DefInjected\ThingDef\* (\w+\.label)
 Adrenalherz;
 Atmosphärenheizung;
 Ätzflüssigkeit;
@@ -61,7 +61,6 @@ Bioferritkollektor;
 Biomutationsimpulsgeber;
 Biomutationslanze;
 Bodengravierung;
-Brennerladung;
 Deadlife-Falle;
 Deadlife-Granate;
 Deadlife-Kapsel;
@@ -77,9 +76,6 @@ Endlosgrube;
 entstellter Archotech-Träger;
 entstellter Obelisk;entstellten Obelisken;entstellten Obelisken;entstellten Obelisken;entstellte Obelisk;entstellten Obelisken;entstellten Obelisken;entstellten Obelisken;
 entstelltes Fleisch;
-Fackel;
-Faust;
-Fleischkeule;
 Fleischknolle;
 Fleischmasse;
 Fleischmassenherz;
@@ -89,20 +85,15 @@ Fleischmassenspucker;
 Fleischsack;
 Fleischschmelzblitz;
 fliegt;
-Flosse;
 Foliant;
-Gebiss;
 Gedankenfrostserum;
 Ghulerweckungsserum;
 Ghulpanzerung;
 Ghulwiderhaken;
 Goldwürfel;
-Goldwürfelstudium abgeschlossen;
-Goldwürfelstudiumfortschritt;
 graue Fleischprobe;
 graue Kiste;
 graue Statue;
-Gräuelmasse entdeckt;
 graues Fleisch;
 graues Material;
 Grubenausgang;
@@ -116,26 +107,14 @@ Heroldsamen;
 Hitzestachelschuss;
 Höllenfeuergewehr;
 Höllenfeuergewehrkugel;
-Klaue;
-Klinge;
 Knoten der Leere;
-Kopf;
 Korrosionsherz;
 korrupter Obelisk;korrupten Obelisken;korrupten Obelisken;korrupten Obelisken;korrupte Obelisk;korrupten Obelisken;korrupten Obelisken;korrupten Obelisken;
 Laborkittel;
-Ladung;
-Lauf;
 Leerenmetallmasse;
 Leerenmetallwand;
 Leerensichtserum;
 Leerenskulptur;
-linke Faust;
-linke Fleischkeule;
-linke Flosse;
-linke Klaue;
-linke Klinge;
-linke Pranke;
-linker Stachel;
 lockerer Boden;
 Mensch;
 Metallblutherz;
@@ -144,8 +123,6 @@ Metallschreckenreste;
 Molochserum;
 Monolith der Leere Anhängsel;
 Monolithfragment;
-Monolithstudium abgeschlossen;
-Monolithstudiumfortschritt;
 Mote;
 Näherungsdetektor;
 Nervbolzen;
@@ -153,25 +130,11 @@ Nervenbündel;
 Nervtöter;
 Noctolith;
 Noctolith (ankommend);
-Noziosphärenstudium abgeschlossen;
-Noziosphärenstudiumfortschritt;
 Obelisk (ankommend);
-Obeliskstudium abgeschlossen;
-Obeliskstudiumfortschritt;
-oberer Stachel;
-Pranke;
 Psyritualplatz;
 Rauschinduktor;
-rechte Faust;
-rechte Fleischkeule;
-rechte Flosse;
-rechte Klaue;
-rechte Klinge;
-rechte Pranke;
-rechter Stachel;
 Ritualmaske;
 Säurespucke;
-Schaft;
 Schlafunterdrücker;
 Schreckleder;
 Serumlabor;
@@ -187,7 +150,6 @@ Struktur der Leere;
 taktischer Geschützturm;
 Taktischer-Geschützturm-Kugel;
 taktisches Geschütz;
-Tentakel;
 Tür;
 Turmrucksack;
 Turmrucksackkapsel;
@@ -200,21 +162,17 @@ Wiedergängerfleischbrocken;
 Wiedergängerspuren;
 Wiedergängerwirbel;
 Wiedergängerwirbelsäule;
-Wurfarm;
 Würfelskulptur aus Dreck;
 Würfelskulptur aus Sand;
 Würfelskulptur aus Schrott;
 Würfelskulptur aus Stein;
 Zeremonienkapuze;
 zerrütteter Boden;
-// Anomaly\DefInjected\FactionDef\*
+// DefInjected\FactionDef\* (\w+\.pawnSingular)
 Entität;
-Entitäten;
-Forschungsexpedition;
-Horax-Kult;
 Kolonist;
 Mitglied;
-// Anomaly\DefInjected\HediffDef\*
+// DefInjected\HediffDef\* (\w+\.label)
 Auferstehung;
 Auferstehungskoma;
 Bioferrit extrahiert;
@@ -271,9 +229,9 @@ Würfelinteresse;
 Würfelkoma;
 Würfelwut;
 wütende Geschwindigkeit;
-// Anomaly\DefInjected\SitePartDef\*
+// DefInjected\SitePartDef\* (\w+\.label)
 Notsignal von {FACTION_name};
-// Anomaly\DefInjected\WeatherDef\*
+// DefInjected\WeatherDef\* (\w+\.label)
 Blutregen;
 grauer Schleier;
 Metallhölle;

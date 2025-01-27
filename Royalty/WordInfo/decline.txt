@@ -6,7 +6,7 @@
 // INDEX determines the column to be used. Can be omitted if you need index 1.
 // For example, {lookup: {0}; decline; 2} looks up 2_DAT.
 // ---
-// Royalty\DefInjected\RoyalTitleDef\*
+// DefInjected\RoyalTitleDef\* (\w+\.label(Female)?)
 Akolyth;Akolyths;Akolyth;Akolyth;Akolyth;Akolyths;Akolyth;Akolyth;
 Akolythin;
 Archon;Archons;Archon;Archon;Archon;Archons;Archon;Archon;
@@ -27,7 +27,7 @@ Prätorin;
 Ritter;Ritters;Ritter;Ritter;Ritter;Ritters;Ritter;Ritter;
 Ritterin;
 Stellarch;Stellarchen;Stellarchen;Stellarchen;Stellarch;Stellarchen;Stellarchen;Stellarchen;
-// Royalty\DefInjected\PawnKindDef\*
+// DefInjected\PawnKindDef\* (.+\.label(Male|Female)?)
 Adlige;Adligen;Adligen;Adlige;Adlige;Adligen;Adligen;Adlige;
 Adliger;Adligen;Adligen;Adligen;Adlige;Adligen;Adligen;Adligen;
 einfacher Soldat;einfachen Soldaten;einfachen Soldaten;einfachen Soldaten;einfache Soldat;einfachen Soldaten;einfachen Soldaten;einfachen Soldaten;
@@ -57,7 +57,7 @@ stellischer Beschützer;stellischen Beschützers;stellischen Beschützer;stellis
 stellischer Wächter;stellischen Wächters;stellischen Wächter;stellischen Wächter;stellische Wächter;stellischen Wächters;stellischen Wächter;stellischen Wächter;
 Titelverleiher;Titelverleihers;Titelverleiher;Titelverleiher;Titelverleiher;Titelverleihers;Titelverleiher;Titelverleiher;
 Titelverleiherin;
-// Royalty\DefInjected\ThingDef\*
+// DefInjected\ThingDef\* (\w+\.label)
 Animabaum;
 Animabaumstumpf;
 Animagras;
@@ -74,7 +74,6 @@ Biorhythmus-Assistent;
 Biorhythmus-Halbierer;
 Blitzsturm;
 Bohrarm;
-Brandbolzen;
 Brandgranate;
 Cembalo;
 Countdownaktivator;
@@ -101,9 +100,7 @@ Gastroanalysator;
 Giftkralle;
 Giftspeier;
 Giftzähne;
-Granate;
 Grenadierrüstung;
-Griff;
 großer Naturschrein;
 Gunlink;
 Handklinge;
@@ -117,15 +114,11 @@ Kataphraktrüstung;
 Klavier;
 kleiner Naturschrein;
 Klimaregulator;
-Klinge;
 Kniestachel;
 Koagulator;
-Kopf;
 Korsett;
 Kriegshammer;
 Krone;
-Ladung;
-Lauf;
 leichter Impulsblaster;
 Lernassistent;
 Libidoverstärker;
@@ -166,25 +159,19 @@ Psycho-Harmonisierer;
 Psycho-Sensibilisierer;
 Psycho-Unterdrücker;
 Rauchgenerator;
-Schaft;
 Schiffslandebake;
-Schild;
 Schildkern;
 Schildrucksack;
-Schneide;
 Shuttle (ankommend);
 Shuttle (wegfliegend);
 solares Nadelloch;
 Sonnenblocker;
-Spitze;
 Splittergranate;
-Sprung;
 Sprungrucksack;
 Sprungschild;
 Steinhautdrüse;
 stellische Krone;
 Sterilisiermagen;
-Stiel;
 unfertiges Klavier;
 verglühender Schild;
 Vorhang;
@@ -192,16 +179,12 @@ Wettermanipulator;
 Zeushammer;
 Zikadenrüstung;
 Zylinder;
-// Royalty\DefInjected\FactionDef\*
-außerweltliche Flüchtlingsgruppe;
+// DefInjected\FactionDef\* (\w+\.pawnSingular)
 Imperialer;Imperialen;Imperialem;Imperialen;Imperiale;Imperialen;Imperialen;Imperialen;Imperialen
-zerrüttetes Imperium;
-// Royalty\DefInjected\HediffDef\*
+// DefInjected\HediffDef\* (\w+\.label)
 Blutfäule;
-Bohrer;
 Entropie-Link;
 Glücksgefühl;
-Knöchel;
 mentale Belastung;
 mentale Betäubung;
 mentale Blindheit;
@@ -215,8 +198,7 @@ mentaler Zusammenbruch;
 mentales Schwindelgefühl;
 Neuralhitze;
 paralytische Abasie;paralytischen Abasie;paralytischer Abasie;paralytische Abasie;paralytische Abasie;paralytischen Abasie;paralytischen Abasie;paralytische Abasie;
-Stachel;
 unterstützende neurale Abkühlung;
-// Royalty\DefInjected\SitePartDef\*
+// DefInjected\SitePartDef\* (\w+\.label)
 Mech-Cluster;
 Raiderstützpunkt;

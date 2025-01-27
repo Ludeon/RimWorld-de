@@ -6,18 +6,19 @@ $PSDefaultParameterValues["*:Encoding"] = "UTF8"
 $dlcs = Get-ChildItem -Directory | Where-Object { Test-Path -Path (Join-Path -Path $_.FullName -ChildPath "DefInjected") }
 
 # Paths of the XML files in which the words should be searched
-$paths = @(
-"RoyalTitleDef\*"
-"PreceptDef\Precepts_Role.xml"
-"PawnKindDef\*"
-"MonolithLevelDef\*"
-"ThingDef\*"
-"FactionDef\*"
-"HediffDef\*"
-"PawnRelationDef\*"
-"SitePartDef\*"
-"WeatherDef\*"
-)
+# and the regex pattern to match the elements
+$items = [ordered]@{
+"DefInjected\RoyalTitleDef\*" = "\w+\.label(Female)?"
+"DefInjected\PreceptDef\Precepts_Role.xml" = "\w+\.label"
+"DefInjected\PawnKindDef\*" = ".+\.label(Male|Female)?"
+"DefInjected\MonolithLevelDef\*" = "\w+\.monolithLabel"
+"DefInjected\ThingDef\*" = "\w+\.label"
+"DefInjected\FactionDef\*" = "\w+\.pawnSingular"
+"DefInjected\HediffDef\*" = "\w+\.label"
+"DefInjected\PawnRelationDef\*" = "\w+\.label(Female)?"
+"DefInjected\SitePartDef\*" = "\w+\.label"
+"DefInjected\WeatherDef\*" = "\w+\.label"
+}
 
 # Header line for decline.txt
 $header = @(
@@ -44,63 +45,64 @@ $comments = @"
 "@
 
 # Enumerate DLC folders (including Core)
+$tempFile = New-Item "$env:temp\$([GUID]::NewGuid()).txt"
 foreach ($dlc in $dlcs)
 {
-  # Create a temporary folder
-  $temp = New-Item "$env:temp\$([GUID]::NewGuid())" -ItemType "Directory"
-
-  # Create WordInfo folder
-  $WordInfoFolder = New-Item "$dlc\WordInfo" -ItemType "Directory" -Force
-
-  # Create decline.txt file
-  if (!(test-path "$WordInfoFolder\decline.txt"))
-  {
-    New-Item "$WordInfoFolder\decline.txt" -Value "$($header -join ";")`n$comments`n" | Out-Null
-  }
-
-  # Read decline.txt content
-  $declineFile = Get-Content -Path "$WordInfoFolder\decline.txt"
+  Clear-Content -Path $tempFile
+  Set-Location -Path "$PSScriptRoot\$dlc"
+  $declineFile = "WordInfo\decline.txt"
 
   # Create a hash table of indefinite nominative words
   $HashTable = @{}
-  foreach ($r in ($declineFile | ConvertFrom-Csv -Delimiter ";" -Header $header))
+  $declineFileLines = @()
+  if (test-path $declineFile) {
+    $declineFileLines = Get-Content -Path $declineFile
+    Remove-Item $declineFile
+  }
+  foreach ($line in ($declineFileLines | ConvertFrom-Csv -Delimiter ";" -Header $header))
   {
-    if ($r.NOM.substring(0, 2) -eq "//") { continue } # skip "//" comments
-    $fields = $r.PSObject.Properties.Value -join ";"
+    if ($line.NOM.substring(0, 2) -eq "//") { continue } # skip "//" comments
+    $fields = $line.PSObject.Properties.Value -join ";"
     $fields = $fields -replace "(?<=;);" # remove empty fields for clarity and reducing file size
-    $HashTable[$r.NOM] = $fields
+    $HashTable[$line.NOM] = $fields
   }
 
   # Search words in the XML files and add them to a temp file
-  foreach ($path in $paths)
-  {
-    $path = "$dlc\DefInjected\$path"
-    if (!(test-path "$path")) { continue } # skip non-existing paths
-    $elements = Get-Content -Path "$path" -Filter "*.xml" | Select-String -Pattern "<(((?!\b(stages|verbs)\b).)*(\.label|\.labelNoLocation|\.pawnSingular|\.chargeNoun|\.customLabel|\.labelMale|\.labelFemale|\.monolithLabel))>(?<value>.*?)</\1>" -All
-    "// $path" >> "$temp\all.txt" # categorize decline.txt by paths
+  $items.GetEnumerator() | ForEach-Object {
+    $paths = ($($_.Key) -split ',').Trim()
+    $pattern = $($_.Value)
+    $elements = @()
+    $ps = @()
+    foreach ($path in $paths) {
+      if (!(test-path $path)) { continue } # skip non-existing paths
+      $ps += $path
+      $elements += Get-Content -Path $path -Filter "*.xml" | Select-String -Pattern "<($pattern)>(?<value>.*?)</\1>" -All
+    }
+    if ($elements.Count -eq 0) { return } # skip if no elements found
+    "// $($ps -join ', ') ($pattern)" >> $tempFile # categorize plural.txt by paths
     # enumerate lines
-    $lines = @()
-    foreach ($element in $elements) { $lines += $element.matches[0].groups["value"] }
-    Add-Content -Path "$temp\all.txt" -Value ($lines | Sort-Object)
+    $tempFileLines = @()
+    foreach ($element in $elements) { $tempFileLines += $element.matches[0].groups["value"] }
+    Add-Content -Path $tempFile -Value ($tempFileLines | Sort-Object)
   }
 
   # Merge the temp file with decline.txt
-  $lines = @($header -join ";")
-  $lines += $comments
-  foreach ($line in (Get-Content "$temp\all.txt" | Select-Object -Unique))
+  $tempFileLines = Get-Content $tempFile
+  if ($tempFileLines.Count -eq 0) { continue } # skip if temp file is empty
+  $declineFileLines = @($header -join ";")
+  $declineFileLines += $comments
+  foreach ($line in ($tempFileLines | Select-Object -Unique))
   {
     if ($line.substring(0, 2) -eq "//") {
-      $lines += $line
+      $declineFileLines += $line
     } elseif ($HashTable.ContainsKey($line)) {
-      $lines += $HashTable[$line]
+      $declineFileLines += $HashTable[$line]
     } else {
-      $lines += $line + ";"
+      $declineFileLines += $line + ";"
     }
   }
-
-  # Add the merged content to decline.txt
-  Set-Content -Path "$WordInfoFolder\decline.txt" -Value $lines
-
-  # Delete the temporary folder
-  Remove-Item -Recurse $temp
+  New-Item $declineFile -Force | Out-Null
+  Set-Content -Path $declineFile -Value $declineFileLines
 }
+Set-Location -Path $PSScriptRoot
+Remove-Item $tempFile
