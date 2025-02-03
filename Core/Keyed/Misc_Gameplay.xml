@@ -944,15 +944,15 @@
 
   <!-- Generated recipes -->
   <!-- EN: make {0} -->
-  <RecipeMake>{0} herstellen</RecipeMake>
+  <RecipeMake>{lookup: {0}; decline; 3} herstellen</RecipeMake>
   <!-- EN: Make {0}. -->
-  <RecipeMakeDescription>Stelle {replace: ^{0}; "^ein "-"1x "; "^eine "-"1x "; ", ein "-", 1x "; ", eine "-", 1x "; " und ein "-" und 1x "; " und eine "-" und 1x "; "^"-""} her.</RecipeMakeDescription>
+  <RecipeMakeDescription>Stelle 1 {lookup: {replace: ^{0}; "^ein "-""; "^eine "-""; ", ein "-", 1 "; ", eine "-", 1 "; " und ein "-" und 1 "; " und eine "-" und 1 "; "^"-""}; decline; 3} her.</RecipeMakeDescription>
   <!-- EN: Making {0}. -->
-  <RecipeMakeJobString>Stellt {0} her.</RecipeMakeJobString>
+  <RecipeMakeJobString>Stellt {lookup: {0}; decline; 3} her.</RecipeMakeJobString>
   <!-- EN: administer {0} -->
-  <RecipeAdminister>{0} verabreichen</RecipeAdminister>
+  <RecipeAdminister>{lookup: {0}; decline; 3} verabreichen</RecipeAdminister>
   <!-- EN: Administering {0}. -->
-  <RecipeAdministerJobString>Verabreicht {0}.</RecipeAdministerJobString>
+  <RecipeAdministerJobString>Verabreicht {lookup: {0}; decline; 3}.</RecipeAdministerJobString>
   <!-- EN: teetotaler will be unhappy -->
   <TeetotalerUnhappy>Abstinenzler wird unglücklich sein</TeetotalerUnhappy>
   <!-- EN: body purist will be unhappy -->
