@@ -891,7 +891,7 @@
     <li>title(length_subject_primary[less_than]20,has_subject_secondary==true,length_subject_secondary[less_than]20,p=4)->[titleBasicTwoSubjects]</li>
     <li>title(length_subject_primary[less_than]20,has_subject_secondary==true,length_subject_secondary[less_than]20,p=4)->[titleAuthoredTwoSubjects]</li>
     <li>titleBasic(p=6)->[randAdjective]{lookup: [subject_primary]; book; 2}</li>
-    <li>titleBasic(p=6)->[randNoun] and [subject_primary]</li>
+    <li>titleBasic(p=6)->[randNoun] und [subject_primary]</li>
     <li>titleBasic->Lektionen über [subject_primary]</li>
     <li>titleBasic->Gedanken über [subject_primary]</li>
     <li>titleBasic->Ein Leitfaden für [subject_primary]</li>
