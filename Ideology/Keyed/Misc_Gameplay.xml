@@ -91,17 +91,17 @@
   <Styles>Stile</Styles>
   <!-- EN: Chance to have precept -->
   <ChanceToHavePrecept>Chance, dass es folgendes Gebot hat</ChanceToHavePrecept>
-  <!-- EN: {PAWN_labelShort}'s favorite color. Having more than {PERCENTAGE} of {PAWN_possessive} apparel in this color{ORIDEO} will make {PAWN_objective} slightly happier.\n\nYou can alter apparel colors at the styling station using tinctoria dye. -->
-  <FavoriteColorTooltip>Die Lieblingsfarbe von {PAWN_labelShort}. Wenn mehr als {PERCENTAGE} {PAWN_possessive}er Kleidung in dieser Farbe{ORIDEO} ist, bekommt {PAWN_pronoun} einen kleinen Stimmungsbonus.\n\nDu kannst die Farbe der Kleidung an der Styling-Station ändern, sofern du genug Tinktoriafarbstoff hast.</FavoriteColorTooltip>
+  <!-- EN: {PAWN_labelShort}'s favorite color: {COLOR}\nHaving more than {PERCENTAGE} of {PAWN_possessive} apparel in this color{ORIDEO} will make {PAWN_objective} slightly happier.\n\nYou can alter apparel colors at the styling station using tinctoria dye. -->
+  <FavoriteColorTooltip>{replace: {PAWN_labelShort}s; "s(/Name)s"-"s(/Name)'"; "ß(/Name)s"-"ß(/Name)'"; "z(/Name)s"-"z(/Name)'"; "x(/Name)s"-"x(/Name)'"; "ce(/Name)s"-"ce(/Name)'"} Lieblingsfarbe: {COLOR}\n\nWenn mehr als {PERCENTAGE} {PAWN_possessive}er Kleidung in dieser Farbe{ORIDEO} ist, bekommt {PAWN_pronoun} einen kleinen Stimmungsbonus.\n\nDu kannst die Farbe der Kleidung an der Styling-Station ändern, sofern du genug Tinktoriafarbstoff hast.</FavoriteColorTooltip>
   <!-- EN: , or the color of {PAWN_possessive} ideoligion, -->
   <OrIdeoColor> oder in der Farbe {PAWN_possessive}er Ideologie</OrIdeoColor>
   <!-- EN: Set ideo color -->
   <SetIdeoColor>Ideologiefarbe verwenden</SetIdeoColor>
   <!-- EN: Set to favorite color -->
   <SetFavoriteColor>Lieblingsfarbe verwenden</SetFavoriteColor>
-  <!-- EN: {PAWN_nameDef}’s favorite color. Having more than 60% of {PAWN_possessive} apparel in this color, or the color of {PAWN_possessive} ideoligion, will make {PAWN_objective} slightly happier. -->
+  <!-- EN: {PAWN_nameDef}'s favorite color. Having more than 60% of {PAWN_possessive} apparel in this color, or the color of {PAWN_possessive} ideoligion, will make {PAWN_objective} slightly happier. -->
   <FavoriteColorPickerTip>Die Lieblingsfarbe von {PAWN_labelShort}. Wenn mehr als 60% {PAWN_possessive}er Kleidung in dieser Farbe oder in der Farbe {PAWN_possessive}er Ideologie ist, bekommt {PAWN_pronoun} einen kleinen Stimmungsbonus.</FavoriteColorPickerTip>
-  <!-- EN: {PAWN_nameDef}’s ideoligion color. Having more than 60% of {PAWN_possessive} apparel in this color, or {PAWN_possessive} favorite color, will make {PAWN_objective} slightly happier. -->
+  <!-- EN: {PAWN_nameDef}'s ideoligion color. Having more than 60% of {PAWN_possessive} apparel in this color, or {PAWN_possessive} favorite color, will make {PAWN_objective} slightly happier. -->
   <IdeoColorPickerTip>Die Farbe der Ideologie von {PAWN_labelShort}. Wenn mehr als 60% {PAWN_possessive}er Kleidung in dieser Farbe oder in {PAWN_possessive}er Lieblingsfarbe ist, bekommt {PAWN_pronoun} einen kleinen Stimmungsbonus.</IdeoColorPickerTip>
   <!-- EN: Configure your faction's ideoligion -->
   <ConfigureIdeoligion>Konfiguriere die Ideologie deiner Fraktion</ConfigureIdeoligion>
@@ -382,18 +382,6 @@
   <!-- EN: Slave -->
   <OutfitSlave>Sklave</OutfitSlave>
 
-  <!-- Hacking -->
-  <!-- EN: Hack progress -->
-  <HackProgress>Hackfortschritt</HackProgress>
-  <!-- EN: hacking speed -->
-  <HackingSpeed>Hackgeschwindigkeit</HackingSpeed>
-  <!-- EN: {0}'s -->
-  <HackingLastUser>{replace: {0}s; "s(/Name)s"-"s(/Name)'"; "ß(/Name)s"-"ß(/Name)'"; "z(/Name)s"-"z(/Name)'"; "x(/Name)s"-"x(/Name)'"; "ce(/Name)s"-"ce(/Name)'"}</HackingLastUser>
-  <!-- EN: hacked -->
-  <Hacked>gehackt</Hacked>
-  <!-- EN: Terminals hacked -->
-  <TerminalsHacked>Terminals gehackt</TerminalsHacked>
-
   <!-- EN: Relic info found -->
   <RelicInfoFound>Infos über Reliquie gefunden</RelicInfoFound>
   <!-- EN: inactive, requires at least {0} {1}s (have {2}) -->
@@ -411,7 +399,7 @@
   <EmancipateCololonistTooltip>Der Sklave wird wieder Kolonist.</EmancipateCololonistTooltip>
 
   <!-- EN: You've stayed in the village too long. The people of {FACTION_name} are attacking! -->
-  <WorshippedTerminalFactionBecameHostileTimed>Du warst zu lange im Dorf. Die Leute der Fraktion {FACTION_name} greifen an!</WorshippedTerminalFactionBecameHostileTimed>
+  <WorshippedTerminalFactionBecameHostileTimed>Du warst zu lange im Dorf. Die Mitglieder der Fraktion {FACTION_name} greifen an!</WorshippedTerminalFactionBecameHostileTimed>
   <!-- EN: Villagers are returning from nearby to protect the venerated terminal! -->
   <WorshippedTerminalRaidIncoming>Dorfbewohner kehren aus dem Umland zurück, um das heilige Terminal zu verteidigen!</WorshippedTerminalRaidIncoming>
 
@@ -666,5 +654,7 @@
   <ChangeStyleDesc>Ändere den Stil, in dem es gebaut werden soll. Dies ist rein optisch und hat keinen Einfluss auf die Spielmechanik.</ChangeStyleDesc>
   <!-- EN: No available styles. -->
   <ChangeStyleDisabledNoCategories>Keine verfügbaren Stile.</ChangeStyleDisabledNoCategories>
+  <!-- EN: Spacedrone self-destructs in {0} -->
+  <SpacedroneSelfDestructsIn>Weltraumdrohne zerstört sich selbst in {replace: {0}; "Tage"-"Tagen"; "Jahre"-"Jahren"}</SpacedroneSelfDestructsIn>
 
 </LanguageData>

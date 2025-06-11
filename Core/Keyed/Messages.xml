@@ -39,6 +39,8 @@
   <MessageVisitorsDangerousTemperature>{0} der Fraktion '{1}' verlassen das Gebiet aufgrund der gefährlichen Temperatur.</MessageVisitorsDangerousTemperature>
   <!-- EN: {0} from {1} are leaving the map because of dangerous weather. -->
   <MessageVisitorsAnomalousWeather>{0} der Fraktion '{1}' verlassen das Gebiet aufgrund des gefährlichen Wetters.</MessageVisitorsAnomalousWeather>
+  <!-- EN: {0} from {1} are leaving the map because of dangerous conditions. -->
+  <MessageVisitorsDangerousConditions>{0} der Fraktion '{1}' verlassen das Gebiet aufgrund gefährlicher Zustände.</MessageVisitorsDangerousConditions>
 
   <!-- EN: {0} worn by {1_nameFull} deteriorated away to nothing. -->
   <MessageWornApparelDeterioratedAway>{replace: {1_labelShort}s; "s(/Name)s"-"s(/Name)'"; "ß(/Name)s"-"ß(/Name)'"; "z(/Name)s"-"z(/Name)'"; "x(/Name)s"-"x(/Name)'"; "ce(/Name)s"-"ce(/Name)'"} {0} ist unwiederbringlich zerfallen.</MessageWornApparelDeterioratedAway>
@@ -60,7 +62,7 @@
   <MessageConditionCauserDespawned>{0} wurde zerstört.</MessageConditionCauserDespawned>
   
   <!-- EN: Bill complete: {0}. -->
-  <MessageBillComplete>Aufgabe erledigt: {0}.</MessageBillComplete>
+  <MessageBillComplete>Auftrag erledigt: {0}.</MessageBillComplete>
 
   <!-- EN: {1_label} is fully healed. -->
   <MessageFullyHealed>{1_label} ist vollständig geheilt.</MessageFullyHealed>
@@ -79,6 +81,10 @@
   <MessageAnimalManhuntsOnTameFailed>Warnung: {ANIMAL_kindBasePlural} können angreifen, wenn die Zähmung scheitert ({1} Chance).</MessageAnimalManhuntsOnTameFailed>
   <!-- EN: Only those with the insect sympathy trait can tame {INSECT_indefinite}. -->
   <MessageInsectTameDesignated>Nur jemand mit dem Merkmal 'Insektenverständnis' kann {INSECT_indefinite} zähmen.</MessageInsectTameDesignated>
+  <!-- EN: No colonists are assigned to hunt. -->
+  <MessageNoHuntersAvailable>Keiner deiner Kolonisten ist als Jäger zugeteilt.</MessageNoHuntersAvailable>
+  <!-- EN: No hunter has a valid hunting weapon. Equip a hunter with a suitable ranged weapon. -->
+  <MessageNoHuntersWithProperWeapon>Keiner deiner Jäger hat eine Jagdwaffe. Rüste einen Jäger mit einer geeigneten Fernkampfwaffe aus.</MessageNoHuntersWithProperWeapon>
 
   <!-- EN: Warning: The {PAWN_labelShort} is hostile and will attack while your colonist tries to tame it. -->
   <MessageInsectsHostileOnTaming>{PAWN_kindBaseDef} ist feindselig und wird bei einem Zähmungsversuch angreifen.</MessageInsectsHostileOnTaming>
@@ -108,6 +114,8 @@
   <MessageMustDesignateHarvestable>Funktioniert nur bei Pflanzen, die geerntet werden können und ausreichend gewachsen sind.</MessageMustDesignateHarvestable>
   <!-- EN: Must designate wood-yielding, sufficiently-grown plants. -->
   <MessageMustDesignateHarvestableWood>Funktioniert nur bei Pflanzen, die Holz liefern und ausreichend gewachsen sind.</MessageMustDesignateHarvestableWood>
+  <!-- EN: Prevent cutting is enabled for this plant. -->
+  <MessageMustPlantCuttingForbidden>Pflanze kann nicht entfernt werden, da 'Nicht entfernen' aktiv ist.</MessageMustPlantCuttingForbidden>
   <!-- EN: Must designate plants. -->
   <MessageMustDesignatePlants>Funktioniert nur bei Pflanzen.</MessageMustDesignatePlants>
   <!-- EN: Must designate haulable items. Some items are always haulable and can't be designated. -->
@@ -149,9 +157,15 @@
   <!-- EN: Must designate forbidden items. -->
   <MessageMustDesignateUnforbiddable>Funktioniert nur bei verbotenen Objekten.</MessageMustDesignateUnforbiddable>
   <!-- EN: Cannot claim {CLAIMABLE_labelShort} while there are combat-capable {THREAT_factionPawnsPlural} nearby. -->
-  <MessageCannotClaimWhenThreatsAreNear>{CLAIMABLE_labelShort} kann nicht in Besitz genommen werden, solange kampffähige {THREAT_factionPawnsPlural} in der Nähe sind.</MessageCannotClaimWhenThreatsAreNear>
+  <MessageCannotClaimWhenPawnThreatsAreNear>{CLAIMABLE_labelShort} kann nicht in Besitz genommen werden, solange kampffähige {THREAT_factionPawnsPlural} in der Nähe sind.</MessageCannotClaimWhenPawnThreatsAreNear>
   <!-- EN: Cannot adopt {CLAIMABLE_labelShort} while there are combat-capable {THREAT_factionPawnsPlural} nearby. -->
-  <MessageCannotAdoptWhileThreatsAreNear>{CLAIMABLE_labelShort} kann nicht adoptiert werden, solange kampffähige {THREAT_factionPawnsPlural} in der Nähe sind.</MessageCannotAdoptWhileThreatsAreNear>
+  <MessageCannotAdoptWhilePawnThreatsAreNear>{CLAIMABLE_labelShort} kann nicht adoptiert werden, solange kampffähige {THREAT_factionPawnsPlural} in der Nähe sind.</MessageCannotAdoptWhilePawnThreatsAreNear>
+  <!-- EN: Cannot claim {CLAIMABLE_labelShort} while there is {THREAT} nearby. -->
+  <MessageCannotClaimWhenThreatsAreNear>{CLAIMABLE_labelShort} kann nicht in Besitz genommen werden, solange {THREAT} in der Nähe ist.</MessageCannotClaimWhenThreatsAreNear>
+  <!-- EN: Cannot adopt {CLAIMABLE_labelShort} while there is {THREAT} nearby. -->
+  <MessageCannotAdoptWhileThreatsAreNear>{CLAIMABLE_labelShort} kann nicht adoptiert werden, solange {THREAT} in der Nähe ist.</MessageCannotAdoptWhileThreatsAreNear>
+  <!-- EN: Cannot remove foundation that supports a building. -->
+  <MessageCannotRemoveSupportingFoundation>Fundament kann nicht entfernt werden, da es ein Bauwerk trägt.</MessageCannotRemoveSupportingFoundation>
 
   <!-- EN: {1_labelShort} has refused to be arrested! -->
   <MessageRefusedArrest>{1_labelShort} hat sich der Inhaftierung widersetzt!</MessageRefusedArrest>
@@ -279,6 +293,8 @@
   <MessagePawnLostWhileFormingCaravan>{0} wurde aus der Karawane entfernt.</MessagePawnLostWhileFormingCaravan>
   <!-- EN: The caravan formation process has been terminated. -->
   <MessagePawnLostWhileFormingCaravan_AllLost>Die Formierung der Karawane wurde abgebrochen.</MessagePawnLostWhileFormingCaravan_AllLost>
+  <!-- EN: No colonist capable of forming caravan. The caravan formation process has been terminated. -->
+  <MessageForceSendingCaravan_AllLost>Niemand kann die Karawane formieren. Die Formierung wurde abgebrochen.</MessageForceSendingCaravan_AllLost> <!-- text_todo -->
   <!-- EN: The caravan formation process will continue when everyone recovers from their mental break. -->
   <MessageCaravanFormationPaused>Die Formierung der Karawane wird fortgesetzt, sobald sich alle von ihrem Nervenzusammenbruch erholt haben.</MessageCaravanFormationPaused>
   <!-- EN: Your colonists will now continue forming a caravan. -->
@@ -334,15 +350,17 @@
   <!-- EN: The loading process has been canceled because one of the transport pods has been destroyed. -->
   <MessageTransportersLoadCanceled_TransporterDestroyed>Der Beladevorgang wurde abgebrochen, da eine der Transportkapseln zerstört wurde.</MessageTransportersLoadCanceled_TransporterDestroyed>
   <!-- EN: The loading process has been canceled because the shuttle has been destroyed. -->
-  <MessageTransporterSingleLoadCanceled_TransporterDestroyed>Der Beladungsvorgang wurde abgebrochen, weil das Shuttle zerstört wurde.</MessageTransporterSingleLoadCanceled_TransporterDestroyed>
+  <MessageTransporterSingleLoadCanceled_TransporterDestroyed>Der Beladungsvorgang wurde abgebrochen, weil die Raumfähre zerstört wurde.</MessageTransporterSingleLoadCanceled_TransporterDestroyed>
   <!-- EN: The loading process has been canceled because one of the pod launchers has been destroyed. -->
   <MessageTransportersLoadCanceled_FuelingPortGiverDeSpawned>Der Beladevorgang wurde abgebrochen, da eine der Startrampen zerstört wurde.</MessageTransportersLoadCanceled_FuelingPortGiverDeSpawned>
   
   <!-- EN: Assigned items and people will now be loaded into the transport pods. -->
   <MessageTransportersLoadingProcessStarted>Zugewiesene Waren und Personen werden jetzt in die Transportkapseln geladen.</MessageTransportersLoadingProcessStarted>
+  <!-- EN: Assigned items and people will now be loaded into the transport pod. -->
+  <MessageTransporterSingleLoadingProcessStarted>Zugewiesene Waren und Personen werden jetzt in die Transportkapsel geladen.</MessageTransporterSingleLoadingProcessStarted>
   <!-- EN: Assigned items and people will now be loaded into the shuttle. -->
-  <MessageTransporterSingleLoadingProcessStarted>Zugewiesene Waren und Personen werden jetzt in das Shuttle geladen.</MessageTransporterSingleLoadingProcessStarted>
-  
+  <MessageShuttleLoadingProcessStarted>Zugewiesene Waren und Personen werden jetzt in die Raumfähre geladen.</MessageShuttleLoadingProcessStarted> <!-- text_todo -->
+
   <!-- EN: Your transport pods have arrived. -->
   <MessageTransportPodsArrived>Deine Transportkapseln sind eingetroffen.</MessageTransportPodsArrived>
   <!-- EN: Your transport pods have arrived, but since there were no colonists inside, the contents are lost. -->
@@ -353,15 +371,23 @@
   <!-- EN: Transport pod loading complete. Launch when ready. -->
   <MessageFinishedLoadingTransporters>Transportkapseln wurden fertig beladen und sind startbereit.</MessageFinishedLoadingTransporters>
   <!-- EN: Shuttle is loaded with required cargo and can launch when ready. -->
-  <MessageFinishedLoadingTransporterSingle>Shuttle wurde mit den erforderlichen Waren oder Personen beladen und ist startbereit.</MessageFinishedLoadingTransporterSingle>
+  <MessageFinishedLoadingShuttle>Raumfähre wurde mit den erforderlichen Waren oder Personen beladen und ist startbereit.</MessageFinishedLoadingShuttle> <!-- text_todo -->
 
   <!-- EN: Your {1} can't finish loading the transport pods because some items or people became unavailable ({2_labelShort}). -->
   <MessageCantLoadMoreIntoTransporters>Deine {lookup: {1}; decline_other; 4} können die Transportkapseln nicht fertig beladen, da einige Waren oder Personen nicht mehr verfügbar sind ({2_labelShort}).</MessageCantLoadMoreIntoTransporters>
+  <!-- EN: Your {1} can't finish loading the shuttle because some items or people became unavailable ({2_labelShort}). -->
+  <MessageCantLoadMoreIntoShuttle>Deine {lookup: {1}; decline_other; 4} können die Raumfähre nicht fertig beladen, da einige Waren oder Personen nicht mehr verfügbar sind ({2_labelShort}).</MessageCantLoadMoreIntoShuttle> <!-- text_todo -->
   <!-- EN: Your {1} can't finish entering the {0} because some items or people became unavailable ({2_labelShort}). -->
   <MessageCantLoadMoreIntoPortal>Deine {lookup: {1}; decline_other; 4} betreten {0_gender ? den : die : das} {lookup: {0}; decline; 7} nicht mit allen Gegenständen oder Personen, da einige nicht mehr verfügbar sind ({2_labelShort}).</MessageCantLoadMoreIntoPortal>
   
   <!-- EN: Selected destination is invalid. -->
   <MessageTransportPodsDestinationIsInvalid>Gewählter Zielort ist ungültig.</MessageTransportPodsDestinationIsInvalid>
+  <!-- EN: Destination is reserved by {0}. -->
+  <MessageTransportPodsDestinationReservedBy>Zielort ist reserviert durch {0}.</MessageTransportPodsDestinationReservedBy> <!-- text_todo -->
+  <!-- EN: Destination is reserved. -->
+  <MessageTransportPodsDestinationReserved>Zielort ist reserviert.</MessageTransportPodsDestinationReserved> <!-- text_todo -->
+  <!-- EN: {OBJECT_labelCap} is not a valid destination. -->
+  <MessageWorldObjectIsInvalid>{OBJECT_labelCap} ist kein gültiger Zielort.</MessageWorldObjectIsInvalid> <!-- text_todo -->
   <!-- EN: Each pod launcher would need at least {0}x chemfuel to send transport pods that far. -->
   <MessageTransportPodsDestinationIsTooFar>Jede Startrampe benötigt mindestens {0}x Sprit, um Transportkapseln über eine so große Entfernung zu befördern.</MessageTransportPodsDestinationIsTooFar>
   
@@ -412,7 +438,7 @@
   <!-- EN: Remaining mechanoids to assemble -->
   <MessageMechanoidsLeftToAssemble>Noch zu bauende Mechanoiden</MessageMechanoidsLeftToAssemble>
   <!-- EN: Mech drop beacon has summoned reinforcements in drop pods nearby. -->
-  <MessageMechanoidsReinforcementsDrop>Eine Mech-Bake hat in der Nähe neue Mechanoiden via Landungskapseln herbeigerufen.</MessageMechanoidsReinforcementsDrop>
+  <MessageMechanoidsReinforcementsDrop>Eine Mech-Bake hat in der Nähe neue Mechanoiden via Landekapseln herbeigerufen.</MessageMechanoidsReinforcementsDrop>
 
   <!-- EN: To self-tend, {1_labelShort} must also be assigned to Doctor work. -->
   <MessageSelfTendUnsatisfied>Für die Selbstbehandlung muss {1_labelShort} als Arzt eingeteilt werden.</MessageSelfTendUnsatisfied>
@@ -549,7 +575,7 @@
   <!-- EN: attacked {0_name} -->
   <GoodwillChangeReason_AttackedFaction>{0_name} angegriffen</GoodwillChangeReason_AttackedFaction>
   <!-- EN: shuttle destroyed -->
-  <GoodwillChangeReason_ShuttleDestroyed>Shuttle wurde zerstört</GoodwillChangeReason_ShuttleDestroyed>
+  <GoodwillChangeReason_ShuttleDestroyed>Raumfähre wurde zerstört</GoodwillChangeReason_ShuttleDestroyed>
   <!-- EN: civilians lost -->
   <GoodwillChangeReason_CiviliansLost>Zivilisten verloren</GoodwillChangeReason_CiviliansLost>
   <!-- EN: commander lost -->
@@ -689,7 +715,7 @@
   <!-- EN: Assign to {0} -->
   <AssignToRole>{0}</AssignToRole>
   <!-- EN: {0} has begun. -->
-  <RitualBegun>{0} hat angefangen.</RitualBegun>
+  <RitualBegun>{0} begonnen.</RitualBegun>
   <!-- EN: The maximum number of {0}s is {1}. -->
   <MaxPawnsPerRole>Die maximale Anzahl von {lookup: {0}; plural; 3} ist {1}.</MaxPawnsPerRole>
   <!-- EN: Role of {0} is locked. -->
@@ -784,6 +810,10 @@
   <CannotPlantThing>Kann {0_labelShort} nicht einpflanzen</CannotPlantThing>
   <!-- EN: Need more fertile terrain. -->
   <MessageWarningNotEnoughFertility>Boden muss fruchtbarer sein.</MessageWarningNotEnoughFertility>
+  <!-- EN: Temperature too extreme. -->
+  <CannotPlantExtremeTemp>Temperatur zu extrem.</CannotPlantExtremeTemp>
+  <!-- EN: Plants cannot grow on this terrain. -->
+  <CannotPlantMissingTerrainTag>Pflanzen können nicht auf diesem Boden wachsen.</CannotPlantMissingTerrainTag>
   <!-- EN: blocked by {0_label}. -->
   <BlockedBy>blockiert durch {0_label}.</BlockedBy>
   <!-- EN: Cannot be planted next to {0_label}. -->
@@ -792,6 +822,8 @@
   <TooCloseToOtherPlant>Zu nah an {0_label}.</TooCloseToOtherPlant>
   <!-- EN: Too close to {0}'s planting location. -->
   <TooCloseToOtherSeedPlantCell>Zu nahe am Pflanzort von {0}.</TooCloseToOtherSeedPlantCell>
+  <!-- EN: Cannot be placed on {0}. -->
+  <MessageCannotBePlacedOn>Kann nicht auf {0} platziert werden.</MessageCannotBePlacedOn>
 
   <!-- EN: Warning: {0} has been marked for cutting. -->
   <MessageWarningCutImportantPlant>Warnung: {0} wurde zum Entfernen markiert.</MessageWarningCutImportantPlant>
@@ -823,5 +855,20 @@
 
   <!-- EN: Cannot skip: Refugee -->
   <MessageLodgersCantFarskip>Kann Flüchtling nicht teleportieren</MessageLodgersCantFarskip>
+  
+  <!-- EN: {HACKER_nameDef}'s hacking has been detected. {HACKER_pronoun} has been locked out for {DURATION}. -->
+  <MessageHackerLockedOut>{replace: {HACKER_nameDef}s; "s(/Name)s"-"s(/Name)'"; "ß(/Name)s"-"ß(/Name)'"; "z(/Name)s"-"z(/Name)'"; "x(/Name)s"-"x(/Name)'"; "ce(/Name)s"-"ce(/Name)'"} Hackversuch wurde entdeckt. {HACKER_pronoun} wurde für {DURATION} ausgesperrt.</MessageHackerLockedOut>
+  <!-- EN: {HACKER_nameDef}'s hacking has been detected. {HACKER_pronoun} has been locked out permanently. -->
+  <MessageHackerLockedOutPermanently>{replace: {HACKER_nameDef}s; "s(/Name)s"-"s(/Name)'"; "ß(/Name)s"-"ß(/Name)'"; "z(/Name)s"-"z(/Name)'"; "x(/Name)s"-"x(/Name)'"; "ce(/Name)s"-"ce(/Name)'"} Hackversuch wurde entdeckt. {HACKER_pronoun} wurde dauerhaft ausgesperrt.</MessageHackerLockedOutPermanently>
+  <!-- EN: {0_labelShort} can be hacked again. -->
+  <MessageHackableUnlocked>{0_labelShort} kann wieder gehackt werden.</MessageHackableUnlocked>
+
+  <!-- EN: Cannot call shuttle -->
+  <CannotCallShuttle>Kann Raumfähre nicht rufen</CannotCallShuttle>
+  <!-- EN: The shuttle has arrived. -->
+  <MessageShuttleArrived>Die Raumfähre ist eingetroffen.</MessageShuttleArrived>
+
+  <!-- EN: Warning: {THING_labelCap} will not function in this biome -->
+  <MessageGroundPenetratingScannerNoBedrock>Warnung: {THING_labelCap} wird in diesem Biom nicht funktionieren</MessageGroundPenetratingScannerNoBedrock> <!-- text_todo -->
 
 </LanguageData>

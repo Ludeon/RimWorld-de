@@ -52,12 +52,12 @@
     <li>letterSubject(priority=1)->{SUBJECT_definite} the [lodgersLabel]</li>
   -->
   <Hospitality_Animals.questDescriptionRules.rulesStrings>
-    <li>threatsInfoMechClustersSingleAnimal->[lodgersPawnKind_definite] geriet aus unerfindlichen Gründen ins Fadenkreuz eines im Orbit befindlichen Mechanoidenschwarms.</li>
-    <li>threatsInfoMechClustersMultiAnimal->Aus unerfindlichen Gründen gerieten die [lodgersLabelPlural] ins Fadenkreuz eines im Orbit befindlichen Mechanoidenschwarms.</li>
-    <li>threatsInfoMechRaidsSingleAnimal->[lodgersPawnKind_definite] geriet aus unerfindlichen Gründen ins Fadenkreuz eines Mechanoidennestes.</li>
-    <li>threatsInfoMechRaidsMultiAnimal->Aus unerfindlichen Gründen gerieten die [lodgersLabelPlural] ins Fadenkreuz eines Mechanoidennestes.</li>
+    <li>threatsInfoMechClustersSingleAnimal->[lodgersPawnKind_definite] geriet aus unerfindlichen Gründen ins Fadenkreuz eines Mechanoidenschwarms im Orbit.</li>
+    <li>threatsInfoMechClustersMultiAnimal->Aus unerfindlichen Gründen gerieten die [lodgersLabelPlural] ins Fadenkreuz eines Mechanoidenschwarms im Orbit.</li>
+    <li>threatsInfoMechRaidsSingleAnimal->[lodgersPawnKind_definite] geriet aus unerfindlichen Gründen ins Fadenkreuz eines Mechanoidennests.</li>
+    <li>threatsInfoMechRaidsMultiAnimal->Aus unerfindlichen Gründen gerieten die [lodgersLabelPlural] ins Fadenkreuz eines Mechanoidennests.</li>
     <li>questDescription(askerIsNull==true,lodgersCount==1)->Eine Tierhilfsorganisation hat festgestellt, dass [lodgersPawnKind_indefinite] namens [lodgers0_nameDef] in Schwierigkeiten steckt. Die Organisation möchte, dass du dich in [map_label] für [shuttleDelayTicks_duration] um das Tier kümmerst. [healthInfo][threatsInfo1][commonDescEnding]</li>
-    <li>threatsInfo1(generateThreats==true,threatType==Raids,enemyFaction!=Mechanoid)->\n\nDie Tieraktivisten haben [lodgers0_nameDef] gestohlen, bevor das Tier in einer Zeremonie der Fraktion [enemyFaction_name] geschlachtet worden wäre. Nun wollen die [enemyFaction_pawnsPlural] Rache. Solltest du [lodgers0_nameDef] bei dir aufnehmen, [enemyGroupsParagraph]</li>
+    <li>threatsInfo1(generateThreats==true,threatType==Raids,enemyFaction!=Mechanoid)->\n\nDie Tieraktivisten haben [lodgers0_nameDef] gestohlen, bevor das Tier in einer Zeremonie der Fraktion [enemyFaction_name] geschlachtet worden wäre. Nun wollen die {lookup: [enemyFaction_pawnsPlural]; decline_other; 4} Rache. Solltest du [lodgers0_nameDef] bei dir aufnehmen, [enemyGroupsParagraph]</li>
     <li>threatsInfo1(generateThreats==true,threatType==Raids,enemyFaction==Mechanoid)->\n\n[threatsInfoMechRaidsSingleAnimal] Es [enemyGroupsParagraph]</li>
     <li>threatsInfo1(generateThreats==true,threatType==MechClusters)->\n\n[threatsInfoMechClustersSingleAnimal] Es [enemyGroupsParagraph]</li>
     <li>threatsInfo1(generateThreats==false)-></li>
@@ -65,9 +65,9 @@
     <li>victim->es Kindes</li>
     <li>victim->er Frau</li>
     <li>victim->es Mannes</li>
-    <li>victim->es [PersonJobGen]</li>
+    <li>victim->es [PersonJobMasGen]</li>
     <li>victim(generateThreats==true,threatType==Raids)->es Freundes vom [enemyFaction_leaderTitle] der Fraktion [enemyFaction_name]</li>
-    <li>threatsInfo2(generateThreats==true,threatType==Raids,enemyFaction!=Mechanoid)->\n\nLeider waren diese [lodgersLabelPlural] kürzlich in den Todesfall ein[victim] verwickelt. Nun werden sie von [enemyFaction_pawnsPlural] der Fraktion [enemyFaction_name] gejagt, um ein Racheritual an ihnen durchzuführen. Solltest du die [lodgersLabelPlural] bei dir aufnehmen, [enemyGroupsParagraph]</li>
+    <li>threatsInfo2(generateThreats==true,threatType==Raids,enemyFaction!=Mechanoid)->\n\nLeider waren diese [lodgersLabelPlural] kürzlich in den Todesfall ein[victim] verwickelt. Nun werden sie von {lookup: [enemyFaction_pawnsPlural]; decline_other; 2} der Fraktion [enemyFaction_name] gejagt, um ein Racheritual an ihnen durchzuführen. Solltest du die [lodgersLabelPlural] bei dir aufnehmen, [enemyGroupsParagraph]</li>
     <li>threatsInfo2(generateThreats==true,threatType==Raids,enemyFaction==Mechanoid)->\n\n[threatsInfoMechRaidsMultiAnimal] Es [enemyGroupsParagraph]</li>
     <li>threatsInfo2(generateThreats==true,threatType==MechClusters)->\n\n[threatsInfoMechClustersMultiAnimal] Es [enemyGroupsParagraph]</li>
     <li>threatsInfo2(generateThreats==false)-></li>
@@ -86,7 +86,7 @@
     <li>threatsInfo5(generateThreats==true,threatType==Raids,enemyFaction==Mechanoid)->\n\n[threatsInfoMechRaidsSingleAnimal] Es [enemyGroupsParagraph]</li>
     <li>threatsInfo5(generateThreats==true,threatType==MechClusters)->\n\n[threatsInfoMechClustersSingleAnimal] Es [enemyGroupsParagraph]</li>
     <li>threatsInfo5(generateThreats==false)-></li>
-    <li>questDescription(asker_royalInCurrentFaction==True,lodgersCount>=2,priority=1)->[asker_nameFull], [asker_royalTitleInCurrentFaction] der Fraktion [asker_faction_name], hat ein dringliches Anliegen. [asker_pronoun] möchte, dass du dich in [map_label] für [shuttleDelayTicks_duration] um [lodgersCount] [lodgersLabelPlural] kümmerst. Die [lodgersLabelPlural] sind [asker_possessive]e Lieblingshaustiere - [asker_nameDef] möchte, dass sie die Welt außerhalb [asker_possessive]es Königshofes kennenlernen. [healthInfo][threatsInfo6][commonDescEnding]</li>
+    <li>questDescription(asker_royalInCurrentFaction==True,lodgersCount>=2,priority=1)->[asker_nameFull], [asker_royalTitleInCurrentFaction] der Fraktion [asker_faction_name], hat ein dringliches Anliegen. [asker_pronoun] möchte, dass du dich in [map_label] für [shuttleDelayTicks_duration] um [lodgersCount] [lodgersLabelPlural] kümmerst. Die [lodgersLabelPlural] sind [asker_possessive]e Lieblingshaustiere – [asker_nameDef] möchte, dass sie die Welt außerhalb [asker_possessive]es Königshofes kennenlernen. [healthInfo][threatsInfo6][commonDescEnding]</li>
     <li>threatsInfo6(generateThreats==true,threatType==Raids,enemyFaction!=Mechanoid)->\n\nLeider macht die Fraktion [enemyFaction_name] Jagd auf die [lodgersLabelPlural], um [asker_nameDef] persönlich zu schaden. Solltest du die [lodgersLabelPlural] bei dir aufnehmen, [enemyGroupsParagraph]</li>
     <li>threatsInfo6(generateThreats==true,threatType==Raids,enemyFaction==Mechanoid)->\n\n[threatsInfoMechRaidsMultiAnimal] Es [enemyGroupsParagraph]</li>
     <li>threatsInfo6(generateThreats==true,threatType==MechClusters)->\n\n[threatsInfoMechClustersMultiAnimal] Es [enemyGroupsParagraph]</li>

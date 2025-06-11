@@ -59,9 +59,10 @@
   <NamerIdeoGlobal.rulePack.rulesStrings>
     <li>r_ideoName->[keyDeity]ismus</li>
     <li>r_ideoName->[hyphenPrefix]-[keyDeity]ismus</li>
-    <li>r_ideoName->{replace: [keyDeity]'s; "s's"-"s'"; "ß's"-"ß'"; "z's"-"z'"; "x's"-"x'"; "ce's"-"ce'"; "'s"-"s"} [creed]</li>
+    <li>r_ideoName->{replace: [keyDeity]'s; "Gott's"-"Gottes"; "s's"-"s'"; "ß's"-"ß'"; "z's"-"z'"; "x's"-"x'"; "ce's"-"ce'"; "'s"-"s"} [creed]</li>
     <li>r_ideoName->[creed] von [keyDeity]</li>
     <li>r_ideoName(p=6)->{replace: [packIdeoName]; "|M|"-""; "|F|"-""; "|N|"-""}</li>
+    <li>r_ideoName(p=2)->{replace: [packIdeoNameStructure]; "|M|"-""; "|F|"-""; "|N|"-""}</li>
     <li>r_ideoName(p=2,forcePrefix==False)->[hyphenPrefix]-{replace: [packIdeoName]; "|M|"-""; "|F|"-""; "|N|"-""}</li>
     <li>r_ideoName(p=2,forcePrefix==False)->[hyphenPrefix]-{replace: [packIdeoNameStructure]; "|M|"-""; "|F|"-""; "|N|"-""}</li>
     <li>r_ideoName(p=2)->[memeAdjective][creedGender]</li>
@@ -90,7 +91,7 @@
     <li>globalHyphenPrefix(p=4)->neo</li>
     <li>globalHyphenPrefix(p=2)->post</li>
     <li>globalHyphenPrefix->nova</li>
-    <li>globalHyphenPrefix->archaeo</li>
+    <li>globalHyphenPrefix->archäo</li>
     <li>globalHyphenPrefix->hyper</li>
   </NamerIdeoGlobal.rulePack.rulesStrings>
   

@@ -3,18 +3,16 @@
 
   <!-- Shuttle landing zones -->
   <!-- EN: Shuttle could not land on pad: {0} -->
-  <ShuttleBlocked>Das Shuttle konnte nicht auf dem Landeplatz landen: {0}</ShuttleBlocked>
-  <!-- EN: The shuttle has arrived. -->
-  <MessageShuttleArrived>Das Shuttle ist eingetroffen.</MessageShuttleArrived>
+  <ShuttleBlocked>Raumfähre konnte nicht auf dem Platz landen: {0}</ShuttleBlocked>
   <!-- EN: The shuttle arrived, but since there were no colonists inside, the contents were lost. -->
-  <MessageShuttleArrivedContentsLost>Das Shuttle ist eingetroffen, aber da keine Kolonisten an Bord waren, ist der Inhalt verloren gegangen.</MessageShuttleArrivedContentsLost>
-  <!-- EN: Cannot call shuttle -->
-  <CannotCallShuttle>Kann Shuttle nicht rufen</CannotCallShuttle>
+  <MessageShuttleArrivedContentsLost>Die Raumfähre ist eingetroffen, aber da keine Kolonisten an Bord waren, ist der Inhalt verloren gegangen.</MessageShuttleArrivedContentsLost>
 
   <!-- EN: Cannot land in undiscovered area. -->
   <ShuttleCannotLand_Fogged>Kann in unerforschtem Gebiet nicht landen.</ShuttleCannotLand_Fogged>
   <!-- EN: Area must be walkable. -->
   <ShuttleCannotLand_Unwalkable>Gebiet muss begehbar sein.</ShuttleCannotLand_Unwalkable>
+  <!-- EN: Terrain does not support {0}. -->
+  <ShuttleCannotLand_Unaffordable>Boden ist ungeeignet für {0}.</ShuttleCannotLand_Unaffordable> <!-- text_todo -->
 
   <!-- EN: Select {BESTOWER_definite} and click 'Begin bestowing ceremony' to commence the ceremony. -->
   <MessageBestowerWaiting>Wähle {BESTOWER_definite} aus und klicke auf 'Starte Verleihungszeremonie', um mit der Zeremonie zu beginnen.</MessageBestowerWaiting>
@@ -36,7 +34,7 @@
   <!-- EN: {PAWN_definite}'s bestowing ceremony has begun. -->
   <MessageBestowingCeremonyStarted>Die Verleihungszeremonie von {PAWN_definite} hat begonnen.</MessageBestowingCeremonyStarted>
   <!-- EN: You defeated the {FACTION_pawnsPlural}! Get back on the shuttle to launch it. -->
-  <MessageMissionGetBackToShuttle>Du hast die {FACTION_pawnsPlural} besiegt! Kehre zum Shuttle zurück und starte es.</MessageMissionGetBackToShuttle>
+  <MessageMissionGetBackToShuttle>Du hast die {lookup: {FACTION_pawnsPlural}; decline_other; 4} besiegt! Kehre zur Raumfähre zurück und starte sie.</MessageMissionGetBackToShuttle>
 
   <!-- EN: {FACTION_name} has dropped resources nearby. -->
   <MessagePermitTransportDrop>Die Fraktion '{FACTION_name}' hat in der Nähe Ressourcen abgeworfen.</MessagePermitTransportDrop>

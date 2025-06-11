@@ -22,6 +22,8 @@ $paths = @(
 "DefInjected\WorldObjectDef"
 "DefInjected\RitualBehaviorDef"
 "DefInjected\PsychicRitualRoleDef"
+"DefInjected\MapGeneratorDef"
+"DefInjected\PlanetLayerDef"
 )
 
 # Enumerate DLC folders (including Core)

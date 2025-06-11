@@ -209,7 +209,7 @@
     <li>bookType->epic poem</li>
   -->
   <Description_Novel.rulePack.rulesStrings>
-    <li>desc(ANYPAWN_gender!=Female)->[ThisAdjBookType] [follows] einem [PersonJobDat], der [storyStruggles]. [writingQualitySentence]. [maybe_date]</li>
+    <li>desc(ANYPAWN_gender!=Female)->[ThisAdjBookType] [follows] einem [PersonJobMasDat], der [storyStruggles]. [writingQualitySentence]. [maybe_date]</li>
     <li>desc(ANYPAWN_gender==Female)->[ThisAdjBookType] [follows] einer [PersonJobFemDat], die [storyStruggles]. [writingQualitySentence]. [maybe_date]</li>
     <li>desc->In [ThisAdjBookTypeDat] [theAuthorTellsAStoryOfHisStorySource]. [writingQualitySentence]. [maybe_date]</li>
     <li>follows->befasst sich mit</li>
@@ -228,7 +228,7 @@
     <li>opponentDat->Angst</li>
     <li>opponentDat(p=0.5)->einem gefährlichen [EnemyDat]</li>
     <li>opponentDat(p=0.5)->einer gefährlichen [EnemyFemDat]</li>
-    <li>opponentDat(p=0.5)->einem rivalisierenden [PersonJobDat]</li>
+    <li>opponentDat(p=0.5)->einem rivalisierenden [PersonJobMasDat]</li>
     <li>opponentDat(p=0.5)->einer rivalisierenden [PersonJobFemDat]</li>
     <li>opponentDat(p=0.33)->der Sinnlosigkeit des [ConceptPositiveMasGen]</li>
     <li>opponentDat(p=0.33)->der Sinnlosigkeit der [ConceptPositiveFemGen]</li>
@@ -240,7 +240,7 @@
     <li>opponentAcc->Angst</li>
     <li>opponentAcc(p=0.5)->einen gefährlichen [EnemyAcc]</li>
     <li>opponentAcc(p=0.5)->eine gefährliche [EnemyFemAcc]</li>
-    <li>opponentAcc(p=0.5)->einen rivalisierenden [PersonJobAcc]</li>
+    <li>opponentAcc(p=0.5)->einen rivalisierenden [PersonJobMasAcc]</li>
     <li>opponentAcc(p=0.5)->eine rivalisierende [PersonJobFemAcc]</li>
     <li>opponentAcc(p=0.33)->die Sinnlosigkeit des [ConceptPositiveMasGen]</li>
     <li>opponentAcc(p=0.33)->die Sinnlosigkeit der [ConceptPositiveFemGen]</li>
@@ -413,7 +413,7 @@
     <li>HisStorySourceGen->[ANYPAWN_possessive]er Träume von Reisen zu den Sternen</li>
     <li>HisStorySourceGen->[ANYPAWN_possessive]er Liebe zu frischen [VegetablesDat]</li>
     <li>HisStorySourceGen(ANYPAWN_gender!=Female)->seiner Zeit als [PersonJob]</li>
-    <li>HisStorySourceGen(ANYPAWN_gender==Female)->ihrer Zeit als [PersonJobFem]</li>
+    <li>HisStorySourceGen(ANYPAWN_gender==Female)->ihrer Zeit als [PersonJobFemNom]</li>
     <li>HisStorySourceGen(p=0.33)->[ANYPAWN_possessive]es bevorzugten [WeaponMasGen]</li>
     <li>HisStorySourceGen(p=0.33)->[ANYPAWN_possessive]er bevorzugten [WeaponFemGen]</li>
     <li>HisStorySourceGen(p=0.33)->[ANYPAWN_possessive]es bevorzugten [WeaponNeuGen]</li>
@@ -434,7 +434,7 @@
     <li>HisStorySourceGen->[ANYPAWN_possessive]er Verbindung zu einer mythischen Kreatur</li>
     <li>HisStorySourceGen->[ANYPAWN_possessive]er Vorliebe für eine bestimmte Landschaft</li>
     <li>HisStorySourceGen(ANYPAWN_gender!=Female)->seines Bestrebens, ein berühmter [PersonJob] zu werden</li>
-    <li>HisStorySourceGen(ANYPAWN_gender==Female)->ihres Bestrebens, eine berühmte [PersonJobFem] zu werden</li>
+    <li>HisStorySourceGen(ANYPAWN_gender==Female)->ihres Bestrebens, eine berühmte [PersonJobFemNom] zu werden</li>
     <li>HisStorySourceGen->[ANYPAWN_possessive]es Ringens mit sozialen Ängsten</li>
     <li>HisStorySourceGen->[ANYPAWN_possessive]er Sehnsucht nach Abenteuern jenseits des Horizonts</li>
     <li>HisStorySourceGen(p=0.5)->[ANYPAWN_possessive]er Beziehung zu einem roboterartigen Begleiter</li>
@@ -458,7 +458,7 @@
     <li>HisStorySourceDat->[ANYPAWN_possessive]en Träumen von Reisen zu den Sternen</li>
     <li>HisStorySourceDat->[ANYPAWN_possessive]er Liebe zu frischen [VegetablesDat]</li>
     <li>HisStorySourceDat(ANYPAWN_gender!=Female)->seiner Zeit als [PersonJob]</li>
-    <li>HisStorySourceDat(ANYPAWN_gender==Female)->ihrer Zeit als [PersonJobFem]</li>
+    <li>HisStorySourceDat(ANYPAWN_gender==Female)->ihrer Zeit als [PersonJobFemNom]</li>
     <li>HisStorySourceDat(p=0.33)->[ANYPAWN_possessive]em bevorzugten [WeaponMasDat]</li>
     <li>HisStorySourceDat(p=0.33)->[ANYPAWN_possessive]er bevorzugten [WeaponFemDat]</li>
     <li>HisStorySourceDat(p=0.33)->[ANYPAWN_possessive]em bevorzugten [WeaponNeuDat]</li>
@@ -479,7 +479,7 @@
     <li>HisStorySourceDat->[ANYPAWN_possessive]er Verbindung zu einer mythischen Kreatur</li>
     <li>HisStorySourceDat->[ANYPAWN_possessive]er Vorliebe für eine bestimmte Landschaft</li>
     <li>HisStorySourceDat(ANYPAWN_gender!=Female)->seinem Bestreben, ein berühmter [PersonJob] zu werden</li>
-    <li>HisStorySourceDat(ANYPAWN_gender==Female)->ihrem Bestreben, eine berühmte [PersonJobFem] zu werden</li>
+    <li>HisStorySourceDat(ANYPAWN_gender==Female)->ihrem Bestreben, eine berühmte [PersonJobFemNom] zu werden</li>
     <li>HisStorySourceDat->[ANYPAWN_possessive]em Ringen mit sozialen Ängsten</li>
     <li>HisStorySourceDat->[ANYPAWN_possessive]er Sehnsucht nach Abenteuern jenseits des Horizonts</li>
     <li>HisStorySourceDat(p=0.5)->[ANYPAWN_possessive]er Beziehung zu einem roboterartigen Begleiter</li>
@@ -503,7 +503,7 @@
     <li>HisStorySourceAcc->[ANYPAWN_possessive]e Träume von Reisen zu den Sternen</li>
     <li>HisStorySourceAcc->[ANYPAWN_possessive]e Liebe zu frischen [VegetablesDat]</li>
     <li>HisStorySourceAcc(ANYPAWN_gender!=Female)->seine Zeit als [PersonJob]</li>
-    <li>HisStorySourceAcc(ANYPAWN_gender==Female)->ihre Zeit als [PersonJobFem]</li>
+    <li>HisStorySourceAcc(ANYPAWN_gender==Female)->ihre Zeit als [PersonJobFemNom]</li>
     <li>HisStorySourceAcc(p=0.33)->[ANYPAWN_possessive]en bevorzugten [WeaponMasAcc]</li>
     <li>HisStorySourceAcc(p=0.33)->[ANYPAWN_possessive]e bevorzugte [WeaponFemAcc]</li>
     <li>HisStorySourceAcc(p=0.33)->[ANYPAWN_possessive] bevorzugtes [WeaponNeuAcc]</li>
@@ -524,7 +524,7 @@
     <li>HisStorySourceAcc->[ANYPAWN_possessive]e Verbindung zu einer mythischen Kreatur</li>
     <li>HisStorySourceAcc->[ANYPAWN_possessive]e Vorliebe für eine bestimmte Landschaft</li>
     <li>HisStorySourceAcc(ANYPAWN_gender!=Female)->sein Bestreben, ein berühmter [PersonJob] zu werden</li>
-    <li>HisStorySourceAcc(ANYPAWN_gender==Female)->ihr Bestreben, eine berühmte [PersonJobFem] zu werden</li>
+    <li>HisStorySourceAcc(ANYPAWN_gender==Female)->ihr Bestreben, eine berühmte [PersonJobFemNom] zu werden</li>
     <li>HisStorySourceAcc->[ANYPAWN_possessive] Ringen mit sozialen Ängsten</li>
     <li>HisStorySourceAcc->[ANYPAWN_possessive]e Sehnsucht nach Abenteuern jenseits des Horizonts</li>
     <li>HisStorySourceAcc(p=0.5)->[ANYPAWN_possessive]e Beziehung zu einem roboterartigen Begleiter</li>
@@ -1285,7 +1285,7 @@
     <li>schematic_desc_first->dies ist nur ein Bruchteil [of_a_full_schematic_synonym] für [subject_primary_gerund_acc]</li>
     <li>schematic_desc_first->[this_schematic_synonym] ist ist an mehreren Stellen [negative_adjective]</li>
     <li>schematic_desc_first->[the_schematic_synonym] für [subject_primary_gerund_acc] ist unvollständig</li>
-    <li>schematic_desc_first->[subject_primary_gerund] mit diesen [schematic_synonyms] wird durch widersprüchliche Notizen erschwert</li>
+    <li>schematic_desc_first->[subject_primary_gerund] mit diesen [schematic_synonyms_acc] wird durch widersprüchliche Notizen erschwert</li>
     <li>schematic_desc_first->das [negative_adjective]e Verständnis [of_the_author] für [subject_primary_gerund_acc] ist durchgehend erkennbar</li>
     <li>schematic_desc_first->ein Stück [of_the_schematic_synonym] wurde abgerissen</li>
     <li>schematic_desc_first->Feuer und Ruß haben das Papier verunreinigt</li>
@@ -1390,10 +1390,10 @@
     <li>learning_story-> wuchs in den äußeren Totenlanden von [ruinworld] auf und lernte [subject], um zu überleben</li>
     <li>calltoadventure-> empfand [ANYPAWN_possessive] Leben als stagnierend. Dann entdeckte [ANYPAWN_pronoun] eines Tages [subject]</li>
     <li>calltoadventure-> wurde mit der Gründung einer neuen Kolonie betraut, allein, mit Fokus auf [subject]</li>
-    <li>calltoadventure-> wurde der Spezialist für [subject] in der Familie, nachdem [ANYPAWN_possessive] älterer Bruder gestorben war</li>
+    <li>calltoadventure-> wurde {ANYPAWN_gender ? Spezialist : Spezialistin} für [subject] in der Familie, nachdem [ANYPAWN_possessive] älterer Bruder gestorben war</li>
     <li>calltoadventure-> erfuhr von einer verlassenen Glitzerwelt-Kolonie, die etwas mit [subject] zu tun hatte</li>
     <li>calltoadventure-> befand sich auf einem Solarkreuzer, als dieser von Piraten der Feudalwelt [feudalworld] gekapert wurde. Da [ANYPAWN_pronoun] {ANYPAWN_gender ? ein Experte : eine Expertin} für [subject] war, verlangten die Piraten ein hohes Lösegeld für [ANYPAWN_objective]</li>
-    <li>calltoadventure-> wurde auf die Todeswelt von [deadworld] geschleudert, wo [ANYPAWN_pronoun] etwas über [subject] lernte</li>
+    <li>calltoadventure-> wurde auf die Totwelt von [deadworld] geschleudert, wo [ANYPAWN_pronoun] etwas über [subject] lernte</li>
     <li>calltoadventure-> entdeckte in einem kaputten Mechanoiden eine Datei über [subject] und lernte daraus</li>
     <li>calltoadventure-> folgte einem Dreckwühler in seine Höhle, wo er {ANYPAWN_gender ? ihm : ihr} [subject] beibrachte</li>
     <li>calltoadventure-> wurde von einem Yttakin-Clan auf [iceworld] aufgezogen, der [subject] liebte</li>
@@ -1434,7 +1434,7 @@
     <li>digression_subject->obszöne Klischees bezüglich der flächendeckenden Verwendung von Libidoverstärkern</li>
     <li>digression_subject->die militärischen Dispositionen der Flotte von [glitterworld] ein Jahrhundert zuvor</li>
     <li>digression_subject->die mysteriösen Beziehungen zwischen Kernwelten und supermassiven schwarzen Löchern</li>
-    <li>digression_subject->die Todeswelt von [deadworld] und Gerüchte über ihr Schicksal</li>
+    <li>digression_subject->die Totwelt von [deadworld] und Gerüchte über ihr Schicksal</li>
     <li>digression_subject->die Artenvielfalt des Dinosaurierplaneten von [dinoworld]</li>
     <li>digression_subject->über [ANYPAWN_possessive]e Erfahrungen mit dem Feudalismus auf [feudalworld]</li>
     <li>digression_subject->den Mangel an Mikroben in den gefallenen Städten von [glassworld]</li>
@@ -1512,7 +1512,7 @@
     <li>positive_physical_statement1->die Seiten bestehen aus einem dünnen Plastahlderivat</li>
     <li>positive_physical_statement1->jede Seite besteht aus einer flexiblen, diamantähnlichen Struktur</li>
     <li>positive_physical_statement1->es fühlt sich warm an</li>
-    <li>positive_physical_statement2->es trägt das Markenzeichen eines angesehenen Kernweltverlags - [coreworld] Schematics</li>
+    <li>positive_physical_statement2->es trägt das Markenzeichen eines angesehenen Kernweltverlags – [coreworld] Schematics</li>
     <li>positive_physical_statement2->die Ränder der Seiten sind noch unbeschnitten</li>
     <li>positive_physical_statement2->halbedle Kunststoffe glitzern auf der Oberfläche</li>
     <li>otherwordly_nonphys_desc->beim Halten des Bauplans [of_the_author] schwimmt der Raum</li>
@@ -2021,6 +2021,13 @@
     <li>schematic_synonyms->Prototypen</li>
     <li>schematic_synonyms->Produktspezifikationen</li>
     <li>schematic_synonyms->Anleitungen</li>
+    <li>schematic_synonyms_acc->Bauplänen</li>
+    <li>schematic_synonyms_acc->Diagrammen</li>
+    <li>schematic_synonyms_acc->Blaupausen</li>
+    <li>schematic_synonyms_acc->Entwürfen</li>
+    <li>schematic_synonyms_acc->Prototypen</li>
+    <li>schematic_synonyms_acc->Produktspezifikationen</li>
+    <li>schematic_synonyms_acc->Anleitungen</li>
     <li>the_schematic_synonym->der Bauplan</li>
     <li>the_schematic_synonym->das Diagramm</li>
     <li>the_schematic_synonym->die Blaupause</li>
@@ -2538,7 +2545,7 @@
     <li>production->Die nützlichen Informationen in [this_textbook_dat] sind zwischen den biografischen Details versteckt</li>
     <li>production->Aus einer handschriftlichen [note] auf [note_location_dat] geht hervor, dass die Druckerei von [worldname] nach den Unruhen geschlossen wurde, weshalb diese späteren Ausgaben selten sind</li>
     <li>production->Aus einer beigefügten [note] geht hervor, dass die meisten Exemplare [this_textbook_gen] während des Vorfalls von [worldname] verloren gegangen sind</li>
-    <li>production->Die [precis_synonym] macht deutlich, dass Leser, die mit Archotech-Methoden der Informationsverbreitung vertraut sind, diese [textbook_con]reihe eher meiden - aus welchem Grund auch immer</li>
+    <li>production->Die [precis_synonym] macht deutlich, dass Leser, die mit Archotech-Methoden der Informationsverbreitung vertraut sind, diese [textbook_con]reihe eher meiden – aus welchem Grund auch immer</li>
     <li>production->Auf [the_note_location_dat] wird deutlich, dass die Proselyten von [worldname] ein Vermögen für den Druck und die Verbreitung dieses Werkes ausgegeben haben</li>
     <li>production->Auf [the_note_location_dat] steht, dass die ersten Exemplare dieses Werkes von [ANYPAWN_label] selbst geschrieben wurden</li>
     <li>production->Die Herzogin von [worldname] sponserte [this_textbook_acc] mit dem Versprechen, es allen Interessierten kostenlos zur Verfügung zu stellen</li>

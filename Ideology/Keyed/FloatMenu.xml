@@ -7,6 +7,8 @@
   <OnlyMembersCanBuild>Kann nur ein {0} bauen</OnlyMembersCanBuild>
   <!-- EN: {0} is already in progress. -->
   <CantStartRitualAlreadyInProgress>{0} ist bereits im Gange.</CantStartRitualAlreadyInProgress>
+  <!-- EN: {RITUAL} cannot be performed {GERUND} {LAYER}. -->
+  <CantStartRitualLayer>{RITUAL} kann nicht {GERUND} {lookup: {replace: ^{LAYER}; "^ein "-""; "^eine "-""; "^"-""}; decline; 6} stattfinden.</CantStartRitualLayer>
   <!-- EN: One or more participants can't join due to extreme temperature. -->
   <CantJoinRitualInExtremeWeather>Min. 1 Teilnehmer kann wegen der extremen Temperatur nicht teilnehmen.</CantJoinRitualInExtremeWeather>
   <!-- EN: {0} is already participating in a ritual. -->
@@ -36,8 +38,6 @@
   <!-- EN: not allowed for faction -->
   <NotAllowedForFaction>für die Fraktion nicht erlaubt</NotAllowedForFaction>
 
-  <!-- EN: Remove -->
-  <Remove>Entfernen</Remove>
   <!-- EN: Remove precept -->
   <RemovePrecept>Entferne Gebot</RemovePrecept>
   <!-- EN: Regenerate -->
@@ -61,7 +61,7 @@
   <!-- EN: can't have more than {0} specialists. -->
   <MaxMultiRolesCount>Mehr als {0} Spezialisten sind nicht möglich.</MaxMultiRolesCount>
   <!-- EN: max {0} -->
-  <MaxPreceptCount>max {0}</MaxPreceptCount>
+  <MaxPreceptCount>max. {0}</MaxPreceptCount>
   <!-- EN: Set gender -->
   <SetTargetGender>Setze Geschlecht auf</SetTargetGender>
   <!-- EN: must be {0} faction -->
@@ -101,17 +101,6 @@
   <IdeoAlreadyHasAltar>kann nur einen Altar/Ideogramm haben</IdeoAlreadyHasAltar>
   <!-- EN: recolor apparel -->
   <RecolorApparel>Kleidung umfärben</RecolorApparel>
-
-  <!-- EN: Hack {0} -->
-  <Hack>Hacke {0}</Hack>
-  <!-- EN: Cannot hack {0} -->
-  <CannotHack>Kann {0} nicht hacken</CannotHack>
-  <!-- EN: Already hacked -->
-  <AlreadyHacked>Bereits gehackt</AlreadyHacked>
-  <!-- EN: Incapable of hacking -->
-  <IncapableOfHacking>Kann nicht hacken</IncapableOfHacking>
-  <!-- EN: to drop supplies -->
-  <ToDropSupplies>das, um Vorräte abzuwerfen</ToDropSupplies>
 
   <!-- EN: Install {0} -->
   <InstallRelic>Platziere {0}</InstallRelic>

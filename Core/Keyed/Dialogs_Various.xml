@@ -23,8 +23,8 @@
   <Disable>Deaktivieren</Disable>
   <!-- EN: Modify -->
   <Modify>Ändern</Modify>
-  <!-- EN: Settle here anyways? -->
-  <ConfirmSettle>Willst du trotzdem hier siedeln?</ConfirmSettle>
+  <!-- EN: Settle here anyway? -->
+  <ConfirmSettle>Trotzdem hier siedeln?</ConfirmSettle>
   <!-- EN: add -->
   <Add>hinzufügen</Add>
   <!-- EN: Cannot shoot -->
@@ -56,7 +56,7 @@
   <!-- EN: An error occurred while loading game assets. See error log for more information. -->
   <ErrorWhileLoadingAssets>Beim Laden von Assets ist ein Fehler aufgetreten. Weitere Informationen findest du im Fehler-Log.</ErrorWhileLoadingAssets>
   <!-- EN: The game is currently running with custom mods - they may or may not cause these problems. -->
-  <ErrorWhileLoadingAssets_ModsInfo>Das Spiel läuft derzeit mit benutzerdefinierten Mods - vielleicht sind diese Mods die Ursache des Problems.</ErrorWhileLoadingAssets_ModsInfo>
+  <ErrorWhileLoadingAssets_ModsInfo>Das Spiel läuft derzeit mit benutzerdefinierten Mods – vielleicht sind diese Mods die Ursache des Problems.</ErrorWhileLoadingAssets_ModsInfo>
   <!-- EN: Error while generating a map -->
   <ErrorWhileGeneratingMapTitle>Fehler beim Generieren der Karte</ErrorWhileGeneratingMapTitle>
   <!-- EN: An error occurred while generating a new map. See error log for more information. -->
@@ -249,8 +249,8 @@
   <SelectedCharactersMustInclude>Muss mit {SUMMARY} starten.</SelectedCharactersMustInclude>
 
   <!-- Advanced game start options -->
-  <!-- EN: Warning: You will be landing in a frozen environment. It may be hard or nearly impossible to survive. If you are not intending to face an extreme challenge, choose a different site or season. -->
-  <MapTemperatureDangerWarning>Warnung: Du wirst in einer eisigen Umgebung landen. Die Chance, dort zu überleben, ist sehr gering, wenn nicht sogar gleich null. Wähle einen anderen Ort oder eine andere Jahreszeit, wenn du dich dieser extremen Herausforderung nicht stellen willst.</MapTemperatureDangerWarning>
+  <!-- EN: Warning: You will be landing in winter. It may be hard or nearly impossible to survive. If you are not intending to face an extreme challenge, choose a different season. -->
+  <MapWinterWarning>Warnung: Du wirst im Winter landen. Deine Überlebenschancen sind sehr gering, wenn nicht sogar gleich null. Wähle eine andere Jahreszeit, wenn du dich dieser extremen Herausforderung nicht stellen willst.</MapWinterWarning>
   <!-- EN: The game is designed to play on medium map sizes. These sizes provide plenty of space!\n\nLarge map sizes don't just degrade performance - they actually break the game design. The AI will make stupid decisions, and game balance will be badly affected in various ways. These sizes are included for tradition and testing reasons only, please do not use them without a specific reason. -->
   <MapSizePerformanceWarning>Das Spiel ist für mittlere Kartengrößen ausgelegt. Diese Größen bieten reichlich Platz!\n\nGrößere Kartengrößen verschlechtern nicht nur die Leistung, sondern gefährden auch die Spielmechanik. Die KI wird dumme Entscheidungen treffen, und die Spielbalance wird in vielerlei Hinsicht negativ beeinträchtigt. Diese Größen sind nur aus traditionellen und testbezogenen Gründen enthalten. Bitte verwende diese Größen nur, wenn du dir absolut sicher bist.</MapSizePerformanceWarning>
   <!-- EN: Map size -->
@@ -383,7 +383,7 @@
   <!-- EN: Charging -->
   <ChargingTime>Lädt sich auf</ChargingTime>
   <!-- EN: Next recharge (for {1}) in: {0}\nCharge cycle: {2} -->
-  <ChargingNext>Nächste Aufladung (für {1}) in: {replace: {0}; "Tage"-"Tagen"; "Jahre"-"Jahren"}\nAufladezyklus: {2}</ChargingNext>
+  <ChargingNext>Nächste Aufladung in: {0} (Aufladedauer {1})\nAufladezyklus: {2}</ChargingNext>
   <!-- EN: Shut down -->
   <ShutDown>Heruntergefahren</ShutDown>
   <!-- EN: Fire rate -->
@@ -469,7 +469,7 @@
   <!-- EN: Wildness -->
   <Wildness>Wildheit</Wildness>
   <!-- EN: Wilder creatures are naturally more difficult to tame, train, and handle. -->
-  <WildnessExplanation>Je wilder ein Tier, desto schwieriger ist es zu zähmen, zu trainieren und zu pflegen.</WildnessExplanation>
+  <WildnessExplanation>Je wilder die Kreatur, desto schwieriger ist sie zu zähmen, zu trainieren und zu pflegen.</WildnessExplanation>
   <!-- EN: Training decay interval -->
   <TrainingDecayInterval>Trainingsverlustintervall</TrainingDecayInterval>
   <!-- EN: Tameness will never decay for animals of very low wildness. -->
@@ -573,7 +573,7 @@
   <!-- EN: How many shots this turret can fire before it has to be rearmed. -->
   <ShotsBeforeRearmExplanation>Wie viele Schüsse dieser Turm abfeuern kann, bevor er neu bewaffnet werden muss.</ShotsBeforeRearmExplanation>
   <!-- EN: Power consumption -->
-  <PowerConsumption>Stromverbrauch</PowerConsumption>
+  <PowerConsumption>Leistungsbedarf</PowerConsumption>
   <!-- EN: Target -->
   <Target>Ziel</Target>
   <!-- EN: The types of targets on which this ability can be used. -->
@@ -595,9 +595,9 @@
   <!-- EN: Unlocks meditation focus types -->
   <MeditationFocusesUnlocked>Schaltet Meditationsfokustypen frei</MeditationFocusesUnlocked>
   <!-- EN: The types of meditation focus this person can use. When meditating, a person can focus on an object to boost their psyfocus gain - but only if that object offers a focus type they can use. Each person's meditation types are determined by their background, traits, social position, and so on. -->
-  <MeditationFocusesPawnDesc>Die Meditationsfokustypen, die diese Person verwenden kann. Beim Meditieren kann sich eine Person auf ein Objekt konzentrieren, um ihren Psyfokusgewinn zu steigern - aber nur, wenn dieses Objekt einen für sie geeigneten Fokustyp bietet. Jede Person kann je nach Vorgeschichte, Merkmalen und Titeln verschiedene Meditationstypen haben.</MeditationFocusesPawnDesc>
+  <MeditationFocusesPawnDesc>Die Meditationsfokustypen, die diese Person verwenden kann. Beim Meditieren kann sich eine Person auf ein Objekt konzentrieren, um ihren Psyfokusgewinn zu steigern – aber nur, wenn dieses Objekt einen für sie geeigneten Fokustyp bietet. Jede Person kann je nach Vorgeschichte, Merkmalen und Titeln verschiedene Meditationstypen haben.</MeditationFocusesPawnDesc>
   <!-- EN: The types of meditation focus this object offers. A meditating person can focus on this object to boost their psyfocus gain, but only if they are able to use one of its meditation types. Each person can use different meditation types depending on their background, traits, social position, and so on. -->
-  <MeditationFocusesDesc>Die Meditationsfokustypen, die dieses Objekt bietet. Eine meditierende Person kann sich auf dieses Objekt konzentrieren, um ihren Psyfokusgewinn zu steigern - aber nur, wenn sie in der Lage ist, einen dieser Meditationstypen zu nutzen. Jede Person kann je nach Vorgeschichte, Merkmalen und Titeln verschiedene Meditationstypen haben.</MeditationFocusesDesc>
+  <MeditationFocusesDesc>Die Meditationsfokustypen, die dieses Objekt bietet. Eine meditierende Person kann sich auf dieses Objekt konzentrieren, um ihren Psyfokusgewinn zu steigern – aber nur, wenn sie in der Lage ist, einen dieser Meditationstypen zu nutzen. Jede Person kann je nach Vorgeschichte, Merkmalen und Titeln verschiedene Meditationstypen haben.</MeditationFocusesDesc>
   <!-- EN: Can use {0} focus type because -->
   <MeditationFocusCanUse>Kann {replace: {0}en Fokustyp; "Leereen Fokustyp"-"Leere-Fokustyp"} verwenden, weil die Person</MeditationFocusCanUse>
   <!-- EN: {0} focus objects -->
@@ -700,6 +700,8 @@
   <TradeModeTip>Zurück zum Handelsmodus.</TradeModeTip>
   <!-- EN: {FACTION_name} is not willing to send a caravan because {NEGOTIATOR_nameDef} lacks the required title of {TITLE}. -->
   <TradeCaravanRequestDeniedDueTitle>Die Fraktion '{FACTION_name}' weigert sich, eine Karawane zu schicken, weil {NEGOTIATOR_nameDef} {NEGOTIATOR_gender ? kein : keine} {TITLE} oder höher ist.</TradeCaravanRequestDeniedDueTitle>
+  <!-- EN: {FACTION_name} is not willing to send an orbital trader because {NEGOTIATOR_nameDef} lacks the required title of {TITLE}. -->
+  <OrbitalTradeRequestDeniedDueTitle>Die Fraktion '{FACTION_name}' weigert sich, einen Orbitalhändler zu schicken, weil {NEGOTIATOR_nameDef} {NEGOTIATOR_gender ? kein : keine} {TITLE} oder höher ist.</OrbitalTradeRequestDeniedDueTitle>
 
   <!-- Sellable items -->
   <!-- EN: Things this trader will buy -->
@@ -727,7 +729,11 @@
   <!-- EN: Send -->
   <Send>Entsenden</Send>
   <!-- EN: Number available to send with the caravan. -->
-  <FormCaravanColonyThingCountTip>Verfügbare Anzahl, die mit der Karawane entsandt werden kann.</FormCaravanColonyThingCountTip>
+  <FormCaravanColonyThingCountTip>Verfügbare Anzahl, die mit der Karawane versandt werden kann.</FormCaravanColonyThingCountTip>
+  <!-- EN: Number available to transport. -->
+  <TransporterColonyThingCountTip>Verfügbare Anzahl, die transportiert werden kann.</TransporterColonyThingCountTip> <!-- text_todo -->
+  <!-- EN: Number available to transfer. -->
+  <TransferMapPortalColonyThingCountTip>Verfügbare Anzahl, die transferiert werden kann.</TransferMapPortalColonyThingCountTip> <!-- text_todo -->
   <!-- EN: People and animals -->
   <PawnsTab>Personen und Tiere</PawnsTab>
   <!-- EN: Items -->
@@ -751,11 +757,11 @@
   <!-- EN: The caravan can't carry that much. -->
   <TooBigCaravanMassUsage>Die Karawane kann nicht so viel mitführen.</TooBigCaravanMassUsage>
   <!-- EN: Includes carried items and equipped items. Carrying less than the maximum gives a speed bonus. -->
-  <CaravanMassUsageTooltip>Umfasst mitgeführte Waren und ausgerüstete Gegenstände. Die Karawane kommt schneller voran, wenn das aktuelle Gewicht kleiner als die Gewichtskapazität ist.</CaravanMassUsageTooltip>
+  <CaravanMassUsageTooltip>Umfasst mitgeführte Waren und ausgerüstete Gegenstände. Je geringer die Nutzlast, desto höher die Reisegeschwindigkeit.</CaravanMassUsageTooltip>
   <!-- EN: Visibility is how easy your caravan is to notice.\n\nIt multiplies the chance that your caravan will be waylaid by enemies.\n\nVisibility does not affect your ability to find things you want.\n\nVisibility is based on the total body size of all people and animals in the caravan. -->
   <CaravanVisibilityTip>Sichtbarkeit gibt an, wie leicht deine Karawane entdeckt wird.\n\nSichtbarkeit vervielfacht die Chance, dass Feinde deiner Karawane auflauern.\n\nSichtbarkeit hat keinen Einfluss auf deine Fähigkeit, bestimmte Dinge zu finden.\n\nSichtbarkeit basiert auf der Gesamtkörpergröße aller Personen und Tiere in der Karawane.</CaravanVisibilityTip>
   <!-- EN: Days of food -->
-  <DaysWorthOfFood>Tagesrationen an Nahrung</DaysWorthOfFood>
+  <DaysWorthOfFood>Nahrungstage</DaysWorthOfFood>
   <!-- EN: rot in {0} -->
   <DaysWorthOfFoodInfoRot>rottet in {0}</DaysWorthOfFoodInfoRot>
   <!-- EN: Unlimited -->
@@ -803,17 +809,17 @@
   <!-- EN: Legend -->
   <Legend>Legende</Legend>
   <!-- EN: Mass carried -->
-  <MassCarriedSimple>Aktuelles Gewicht</MassCarriedSimple>
+  <MassCarriedSimple>Aktuelle Nutzlast</MassCarriedSimple>
   <!-- EN: Mass capacity -->
-  <MassCapacity>Gewichtskapazität</MassCapacity>
+  <MassCapacity>Maximale Nutzlast</MassCapacity>
   <!-- EN: Mass -->
-  <Mass>Gewicht</Mass>
+  <Mass>Nutzlast</Mass>
   <!-- EN: Caravan mass -->
-  <CaravanMass>Gewicht der Karawane</CaravanMass>
+  <CaravanMass>Nutzlast Karawane</CaravanMass>
   <!-- EN: Equipment and apparel mass -->
-  <EquipmentAndApparelMass>Gewicht Kleidung/Ausrüstung</EquipmentAndApparelMass>
+  <EquipmentAndApparelMass>Nutzlast Kleidung/Ausrüstung</EquipmentAndApparelMass>
   <!-- EN: Inventory mass -->
-  <InventoryMass>Gewicht Inventar</InventoryMass>
+  <InventoryMass>Nutzlast Inventar</InventoryMass>
   <!-- EN: Your colonists will now gather the items and leave the area. -->
   <CaravanFormationProcessStarted>Deine Kolonisten sammeln nun die Waren ein und verlassen das Gebiet.</CaravanFormationProcessStarted>
   <!-- EN: Reform caravan -->
@@ -833,7 +839,7 @@
   <!-- EN: Abandon -->
   <AbandonButton>Aufgeben</AbandonButton>
   <!-- EN: Movement speed -->
-  <CaravanMovementSpeed>Reisegeschw.</CaravanMovementSpeed>
+  <CaravanMovementSpeed>Geschwindigkeit</CaravanMovementSpeed>
   <!-- EN: tiles/day -->
   <TilesPerDay>Felder/Tag</TilesPerDay>
   <!-- EN: None - too heavy -->
@@ -841,7 +847,7 @@
   <!-- EN: None -->
   <TilesPerDayImmobileShort>Keine</TilesPerDayImmobileShort>
   <!-- EN: Movement speed depends on carried mass, ridden animals, and terrain movement difficulty. -->
-  <CaravanMovementSpeedTip>Die Reisegeschwindigkeit ist abhängig von Transportgewicht, gerittenen Tieren und Geländebewegungsaufwand.</CaravanMovementSpeedTip>
+  <CaravanMovementSpeedTip>Die Reisegeschwindigkeit ist abhängig von der aktuellen Nutzlast, Reittieren und Unwegsamkeit.</CaravanMovementSpeedTip>
   <!-- EN: Animals will be able to graze -->
   <AnimalsWillBeAbleToGraze>Tiere sind fähig zu grasen</AnimalsWillBeAbleToGraze>
   <!-- EN: Animals can graze -->
@@ -887,23 +893,23 @@
   <!-- EN: The assigned people and items are too heavy for the transport pods. -->
   <TooBigTransportersMassUsage>Die zugewiesenen Personen und Waren sind zu schwer für die Transportkapseln.</TooBigTransportersMassUsage>
   <!-- EN: The assigned people and items are too heavy for the shuttle. -->
-  <TooBigTransporterSingleMassUsage>Die zugewiesenen Personen und Waren sind zu schwer für das Shuttle.</TooBigTransporterSingleMassUsage>
+  <TooBigTransporterSingleMassUsage>Die zugewiesenen Personen und Waren sind zu schwer für die Raumfähre.</TooBigTransporterSingleMassUsage>
   <!-- EN: You can't send empty transport pods. -->
   <CantSendEmptyTransportPods>Du kannst keine leeren Transportkapseln versenden.</CantSendEmptyTransportPods>
   <!-- EN: You can't send empty shuttle. -->
-  <CantSendEmptyTransporterSingle>Du kannst kein leeres Shuttle losschicken.</CantSendEmptyTransporterSingle>
+  <CantSendEmptyTransporterSingle>Du kannst keine leeren Raumfähren losschicken.</CantSendEmptyTransporterSingle>
   <!-- EN: {1_labelShort} can't reach the transport pods. -->
   <PawnCantReachTransporters>{1_labelShort} kann die Transportkapseln nicht erreichen.</PawnCantReachTransporters>
   <!-- EN: {1_labelShort} can't reach the shuttle. -->
-  <PawnCantReachTransporterSingle>{1_labelShort} kann das Shuttle nicht erreichen.</PawnCantReachTransporterSingle>
+  <PawnCantReachTransporterSingle>{1_labelShort} kann die Raumfähre nicht erreichen.</PawnCantReachTransporterSingle>
   <!-- EN: There is no path between the transport pods and the {0}. -->
   <TransporterItemIsUnreachableSingle>Es existiert kein Weg zwischen {0} und den Transportkapseln.</TransporterItemIsUnreachableSingle>
   <!-- EN: There is no path between the shuttle and the {0}. -->
-  <TransporterSingleItemIsUnreachableSingle>Es existiert kein Weg zwischen {0} und dem Shuttle.</TransporterSingleItemIsUnreachableSingle>
+  <TransporterSingleItemIsUnreachableSingle>Es existiert kein Weg zwischen {0} und der Raumfähre.</TransporterSingleItemIsUnreachableSingle>
   <!-- EN: There is no path between the transport pods and {0}x {1}. -->
   <TransporterItemIsUnreachableMulti>Es existiert kein Weg zwischen {0}x {1} und den Transportkapseln.</TransporterItemIsUnreachableMulti>
   <!-- EN: There is no path between the shuttle and {0}x {1}. -->
-  <TransporterSingleItemIsUnreachableMulti>Es existiert kein Weg zwischen {0}x {1} und dem Shuttle.</TransporterSingleItemIsUnreachableMulti>
+  <TransporterSingleItemIsUnreachableMulti>Es existiert kein Weg zwischen {0}x {1} und der Raumfähre.</TransporterSingleItemIsUnreachableMulti>
   <!-- EN: Only {0} colonists maximum allowed. -->
   <TransporterSingleTooManyColonists>Nur {0} Kolonisten maximal erlaubt.</TransporterSingleTooManyColonists>
   
@@ -948,6 +954,8 @@
   <DuplicatePolicyTip>Dupliziere die ausgewählte Richtlinie.</DuplicatePolicyTip>
   <!-- EN: Rename this policy. -->
   <RenamePolicyTip>Benenne diese Richtlinie um.</RenamePolicyTip>
+  <!-- EN: Make this policy the default policy given to new colonists. -->
+  <DefaultPolicyTip>Mache diese Richtlinie zur Standardrichtlinie für neue Kolonisten.</DefaultPolicyTip>
   <!-- EN: Are you sure you want to delete the policy: {0}? -->
   <DeletePolicyConfirm>Bist du sicher, dass du die Richtlinie '{0}' löschen willst?</DeletePolicyConfirm>
   <!-- EN: Delete -->
@@ -1059,6 +1067,8 @@
   <SchematicPolicy>Baupläne</SchematicPolicy>
   <!-- EN: Novels -->
   <NovelPolicy>Romane</NovelPolicy>
+  <!-- EN: Maps -->
+  <MapPolicy>Karten</MapPolicy>
 
   <!-- Medical settings -->
   <!-- EN: Default medicine settings -->
@@ -1138,8 +1148,10 @@
   <ConfirmBanishPawnDialog_IndividualThoughts>Wenn {1_labelShort} verbannt wird, werden die folgenden Personen folgende Gedanken erhalten:</ConfirmBanishPawnDialog_IndividualThoughts>
 
   <!-- Send transport pods which are not completely loaded -->
-  <!-- EN: Pod group isn't completely loaded. {1_labelShort} is missing. Launch anyway? -->
-  <ConfirmSendNotCompletelyLoadedPods>Die Transportkapseln sind noch nicht fertig beladen. {1_labelShort} fehlt noch. Trotzdem starten?</ConfirmSendNotCompletelyLoadedPods>
+  <!-- EN: The following still need to be loaded -->
+  <ConfirmSendNotCompletelyLoadedLaunchable>Folgendes muss noch verladen werden</ConfirmSendNotCompletelyLoadedLaunchable>
+  <!-- EN: Launch anyway? -->
+  <ConfirmSendLaunchAnyway>Trotzdem starten?</ConfirmSendLaunchAnyway>
 
   <!-- Settle near a faction base -->
   <!-- EN: Since this location is within {0} tiles of another faction base, they will feel you are encroaching on their land and relations with those factions will worsen every {1} days. -->
@@ -1410,9 +1422,13 @@
   <CannotShootPawnIsPsychicallyDeaf>{0_labelShort} ist mental taub.</CannotShootPawnIsPsychicallyDeaf>
 
   <!-- EN: Search the current map. -->
-  <SearchTheMap>Durchsuche die aktuelle Karte.</SearchTheMap>
+  <SearchTheMap>Suche etwas auf der aktuellen Karte.</SearchTheMap>
   <!-- EN: Search the current map for items, buildings, people, animals, plants, and more. -->
   <SearchTheMapDesc>Suche auf der aktuellen Karte nach Gegenständen, Bauwerken, Menschen, Tieren, Pflanzen usw.</SearchTheMapDesc>
+  <!-- EN: Search the world -->
+  <SearchTheWorld>Suche etwas auf der Weltkarte.</SearchTheWorld>
+  <!-- EN: Search the world for specific features, landmarks, quests, or settlements. -->
+  <SearchTheWorldDesc>Suche auf der Weltkarte nach geografischen Besonderheiten, Landmarken, Quests oder Siedlungen.</SearchTheWorldDesc>
   <!-- EN: {0} results found -->
   <MapSearchResults>{0} Ergebnisse gefunden</MapSearchResults>
   <!-- EN: 1 result found -->

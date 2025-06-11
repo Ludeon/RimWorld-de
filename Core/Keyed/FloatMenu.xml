@@ -22,8 +22,12 @@
   <!-- EN: Not allowed -->
   <NotAllowed>Nicht erlaubt</NotAllowed>
   
+  <!-- EN: Attack {1_labelShort} -->
+  <Attack>Attackiere {1_labelShort}</Attack>
   <!-- EN: Fire at {1_labelShort} -->
   <FireAt>Schieße auf {1_labelShort}</FireAt>
+  <!-- EN: Remove -->
+  <Remove>Entfernen</Remove>
 
   <!-- EN: out of range -->
   <OutOfRange>außer Reichweite</OutOfRange>
@@ -41,6 +45,8 @@
   <IsNotDraftedLower>{1_labelShort} ist nicht im Kampfmodus</IsNotDraftedLower>
   <!-- EN: cannot order characters you do not control -->
   <CannotOrderNonControlledLower>fremde Charaktere können nicht befehligt werden</CannotOrderNonControlledLower>
+  <!-- EN: cannot attack -->
+  <CannotAttack>kann nicht angreifen</CannotAttack>
   <!-- EN: cannot attack self -->
   <CannotAttackSelf>kann nicht sich selbst angreifen</CannotAttackSelf>
   <!-- EN: cannot attack faction ally -->
@@ -88,6 +94,8 @@
   <AboveAllowedSkill>über erlaubter Stufe {0}</AboveAllowedSkill>
   <!-- EN: no reachable outside cell -->
   <NoReachableOutsideCell>keine Außenzelle erreichbar</NoReachableOutsideCell>
+  <!-- EN: cannot exit map -->
+  <CannotExitMap>kann Karte nicht verlassen</CannotExitMap>
   <!-- EN: missing required skill level -->
   <MissingRequiredSkillLevel>notwendige Fertigkeitsstufe fehlt</MissingRequiredSkillLevel>
   <!-- EN: animal interacted too recently -->
@@ -131,11 +139,11 @@
   <!-- EN: {0} skill too low -->
   <SkillTooLowForConstruction>{0}-Fertigkeit zu niedrig</SkillTooLowForConstruction>
   <!-- EN: need components -->
-  <NoComponentsToRepair>benötige Bauteile</NoComponentsToRepair>
+  <NoComponentsToRepair>brauche Bauteile</NoComponentsToRepair>
   <!-- EN: need {0} -->
-  <NoFuelToRefuel>benötige {0}</NoFuelToRefuel>
+  <NoFuelToRefuel>brauche {0}</NoFuelToRefuel>
   <!-- EN: need wort -->
-  <NoWort>benötige Bierwürze</NoWort>
+  <NoWort>brauche Bierwürze</NoWort>
   <!-- EN: available food is in storage of higher priority -->
   <TheOnlyAvailableFoodIsInStorageOfHigherPriority>verfügbare Nahrung ist auf Lagerplatz mit höherer Priorität</TheOnlyAvailableFoodIsInStorageOfHigherPriority>
   <!-- EN: no suitable food -->
@@ -228,6 +236,8 @@
   <TakingToBed>Bringt {0_labelShort} ins Bett.</TakingToBed>
   <!-- EN: Cannot rescue -->
   <CannotRescue>Kann nicht retten</CannotRescue>
+  <!-- EN: Cannot rescue {PAWN_labelShort} -->
+  <CannotRescuePawn>kann {PAWN_labelShort} nicht retten</CannotRescuePawn>
 
   <!-- EN: Carry {1_labelShort} to cryptosleep casket -->
   <CarryToCryptosleepCasket>Trage {1_labelShort} zu Kryptoschlafkapsel</CarryToCryptosleepCasket>
@@ -235,7 +245,7 @@
   <CannotCarryToCryptosleepCasket>Kann nicht zu Kryptoschlafkapsel tragen</CannotCarryToCryptosleepCasket>
 
   <!-- EN: Carry {0_labelShort} to shuttle -->
-  <CarryToShuttle>Trage {0_labelShort} zu Shuttle</CarryToShuttle>
+  <CarryToShuttle>Trage {0_labelShort} zur Raumfähre</CarryToShuttle>
 
   <!-- EN: No available cryptosleep casket. -->
   <NoCryptosleepCasket>Keine Kryptoschlafkapsel verfügbar.</NoCryptosleepCasket>
@@ -289,12 +299,20 @@
   
   <!-- EN: Force wear {1_labelShort} -->
   <ForceWear>Bekleide dich mit {1_labelShort}</ForceWear>
+  <!-- EN: Force target to wear {1_labelShort}... -->
+  <ForceTargetToWear>Bekleide Ziel mit {1_labelShort}...</ForceTargetToWear>
   <!-- EN: Cannot wear {1_label} -->
   <CannotWear>Kann {1_label} nicht anziehen</CannotWear>
+  <!-- EN: Cannot force target to wear {1_label} -->
+  <CannotForceTargetToWear>Kann Ziel nicht mit {1_label} bekleiden</CannotForceTargetToWear>
   <!-- EN: Force equip {1_labelShort} -->
   <ForceEquipApparel>Rüste {1_labelShort} aus</ForceEquipApparel>
+  <!-- EN: Force target to equip {1_labelShort}... -->
+  <ForceTargetToEquipApparel>Rüste Ziel mit {1_labelShort} aus...</ForceTargetToEquipApparel>
   <!-- EN: Cannot equip {1_label} -->
   <CannotEquipApparel>Kann {1_label} nicht ausrüsten</CannotEquipApparel>
+  <!-- EN: Cannot force target to equip {1_label} -->
+  <CannotForceTargetToEquipApparel>Kann Ziel nicht mit {1_label} ausrüsten</CannotForceTargetToEquipApparel>
   <!-- EN: missing body parts -->
   <CannotWearBecauseOfMissingBodyParts>fehlende Körperteile</CannotWearBecauseOfMissingBodyParts>
   
@@ -397,6 +415,8 @@
   <NoDoctor>kein Arzt</NoDoctor>
   <!-- EN: medical bed not for slaves -->
   <NotForSlaves>dieses Bett ist nicht für Sklaven vorgesehen</NotForSlaves>
+  <!-- EN: Medical care disabled -->
+  <MedicalCareDisabled>Behandlung deaktiviert</MedicalCareDisabled>
   <!-- EN: occupied by {0} -->
   <SomeoneElseSleeping>Belegt von {0}</SomeoneElseSleeping>
   
@@ -432,19 +452,6 @@
   <OfferGifts>Biete Geschenke an</OfferGifts>
   <!-- EN: Trade with {0} -->
   <TradeWithSettlement>Handle mit {lookup: {0}; decline; 2}</TradeWithSettlement>
-  
-  <!-- EN: Enter {0} -->
-  <EnterPortal>Betritt {0}</EnterPortal>
-  <!-- EN: Entering {0} -->
-  <EnteringPortal>Betritt {0}</EnteringPortal>
-  <!-- EN: Enter {0} -->
-  <CommandEnterPortal>{0} betreten</CommandEnterPortal>
-  <!-- EN: Select people and items to enter the {0}. -->
-  <CommandEnterPortalDesc>Wähle Personen und Gegenstände aus, mit denen {0_gender ? der : die : das} {lookup: {0}; decline; 4} betreten werden soll.</CommandEnterPortalDesc>
-  <!-- EN: Cancel entering -->
-  <CommandCancelEnterPortal>Betreten abbrechen</CommandCancelEnterPortal>
-  <!-- EN: Cancel loading people or items into this. -->
-  <CommandCancelEnterPortalDesc>Brich das Betreten ab.</CommandCancelEnterPortalDesc>
 
   <!-- Specific thing interactions -->
   <!-- EN: Enter cryptosleep casket -->
@@ -452,7 +459,7 @@
   <!-- EN: Open cryptosleep casket -->
   <OpenCryptosleepCasket>Öffne Kryptoschlafkapsel</OpenCryptosleepCasket>
   <!-- EN: Get in shuttle -->
-  <EnterShuttle>Betritt Shuttle</EnterShuttle>
+  <EnterShuttle>Betritt Raumfähre</EnterShuttle>
 
   <!-- e.g. Cannot VERB OBJECT, Cannot repair wall, Cannot haul metal, etc. -->
   <!-- EN: Cannot {0} {1} -->
@@ -460,8 +467,8 @@
   <!-- EN: Cannot {0} -->
   <CannotGenericWorkCustom>Kann nicht {0}</CannotGenericWorkCustom>
 
-  <!-- EN: Cannot prioritize: Incapable of {0} -->
-  <CannotMissingHealthActivities>Priorisieren unmöglich: Kann nicht {0}</CannotMissingHealthActivities>
+  <!-- EN: Incapable of {0} -->
+  <CannotMissingHealthActivities>Kann nicht {0}</CannotMissingHealthActivities>
 
   <!-- e.g. Already GERUND OBJECT, Already repairing wall, already hauling metal, etc -->
   <!-- EN: Already {0} {2_labelShort} -->
@@ -469,28 +476,28 @@
   <!-- EN: Already {0} -->
   <CannotGenericAlreadyAmCustom>{replace: {0}^; " im^"-""; "^"-""} erfolgt bereits</CannotGenericAlreadyAmCustom>
 
-  <!-- EN: Cannot prioritize: Will never do {0} -->
-  <CannotPrioritizeWorkTypeDisabled>Priorisieren unmöglich: Verweigert {0}</CannotPrioritizeWorkTypeDisabled>
+  <!-- EN: Will never do {0} -->
+  <CannotPrioritizeWorkTypeDisabled>Verweigert {0}</CannotPrioritizeWorkTypeDisabled>
   <!-- EN: lacking necessary title -->
   <MissingTitleAbility>notwendiger Titel fehlt</MissingTitleAbility>
 
-  <!-- EN: Cannot prioritize: Will never {0} -->
-  <CannotPrioritizeWorkGiverDisabled>Priorisieren unmöglich: Will nicht {0}</CannotPrioritizeWorkGiverDisabled>
+  <!-- EN: Will never {0} -->
+  <CannotPrioritizeWorkGiverDisabled>Will nicht {0}</CannotPrioritizeWorkGiverDisabled>
   <!-- EN: will never {0} -->
   <WillNever>will nicht {0}</WillNever>
 
-  <!-- EN: Cannot prioritize: Not assigned to {0} -->
-  <CannotPrioritizeNotAssignedToWorkType>Priorisieren unmöglich: Nicht für {0} zugeteilt</CannotPrioritizeNotAssignedToWorkType>
+  <!-- EN: Not assigned to {0} -->
+  <CannotPrioritizeNotAssignedToWorkType>Nicht für {0} zugeteilt</CannotPrioritizeNotAssignedToWorkType>
   <!-- EN: not assigned -->
   <NotAssigned>nicht zugeteilt</NotAssigned>
   <!-- EN: not assigned to {0} -->
   <NotAssignedToWorkType>nicht für {0} zugeteilt</NotAssignedToWorkType>
 
-  <!-- EN: Cannot prioritize: Research is a long-term task -->
-  <CannotPrioritizeResearch>Priorisieren unmöglich: Forschen erfolgt langfristig</CannotPrioritizeResearch>
+  <!-- EN: Research is a long-term task -->
+  <CannotPrioritizeResearch>Forschen erfolgt langfristig</CannotPrioritizeResearch>
 
-  <!-- EN: Cannot prioritize: {1_label} is forbidden -->
-  <CannotPrioritizeForbidden>Priorisieren unmöglich: {1_label} ist verboten</CannotPrioritizeForbidden>
+  <!-- EN: {1_label} is forbidden -->
+  <CannotPrioritizeForbidden>{1_label} ist verboten</CannotPrioritizeForbidden>
   <!-- EN: Cannot prioritize: Forbidden -->
   <CannotPrioritizeCellForbidden>Priorisieren unmöglich: Verboten</CannotPrioritizeCellForbidden>
   <!-- EN: Outside allowed area -->
@@ -501,7 +508,13 @@
   <!-- e.g. Prioritize GERUND OBJECT, Prioritize repairing wall, prioritize hauling metal, etc -->
   <!-- EN: Prioritize {0} {1} -->
   <PrioritizeGeneric>Priorisiere {0} {1}</PrioritizeGeneric>
-  
+  <!-- EN: Prioritize {0} -->
+  <PrioritizeGenericSimple>Priorisiere {0}</PrioritizeGenericSimple>
+
+  <!-- EN: Launch to {LOCATION_label} -->
+  <LaunchTo>Fliege nach {LOCATION_label}</LaunchTo>
+  <!-- EN: Are you sure you want to launch? -->
+  <LaunchToConfirmation>Soll der Flug wirklich stattfinden?</LaunchToConfirmation>
   <!-- EN: Drop at edge -->
   <DropAtEdge>Lande am Rand</DropAtEdge>
   <!-- EN: Drop in center -->
@@ -626,4 +639,21 @@
   <AlreadyAnalyzed>bereits analysiert</AlreadyAnalyzed>
   <!-- EN: no reachable, un-reserved research bench available -->
   <NoResearchBench>kein erreichbarer, unbesetzter Forschertisch verfügbar</NoResearchBench>
+
+  <!-- Hacking -->
+  <!-- EN: Hack {0} -->
+  <Hack>Hacke {0}</Hack>
+  <!-- EN: Choose a colonist to hack this. -->
+  <HackDesc>Wähle einen Kolonisten, der dies hacken soll.</HackDesc>
+  <!-- EN: Cannot hack {0} -->
+  <CannotHack>Kann {0} nicht hacken</CannotHack>
+  <!-- EN: Locked out -->
+  <LockedOut>Ausgesperrt</LockedOut>
+  <!-- EN: Already hacked -->
+  <AlreadyHacked>Bereits gehackt</AlreadyHacked>
+  <!-- EN: Incapable of hacking -->
+  <IncapableOfHacking>Kann nicht hacken</IncapableOfHacking>
+  <!-- EN: to drop supplies -->
+  <ToDropSupplies>das, um Vorräte abzuwerfen</ToDropSupplies>
+
 </LanguageData>

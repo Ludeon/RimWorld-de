@@ -22,22 +22,35 @@
     <li>place_foeSoldiers->thugs</li>
   -->
   <AturaStation.placeRules.rulesStrings>
-    <li>place_name->Atura-Station</li>
+    <li>place_name->Atura Station</li>
     <li>place_adjective->aturanisch</li>
+    <li>place_summary->Orbitalwerft</li>
     <li>place_summary_fem->Orbitalwerft</li>
     <li>place_summary_fem_def->Orbitalwerft</li>
     <li>place_summary_fem_acc->Orbitalwerft</li>
     <li>place_summary_fem_dat->Orbitalwerft</li>
     <li>place_summary_fem_gen->Orbitalwerft</li>
-    <li>place_community_neu->Shuttle-Dock</li>
-    <li>place_community_mas->Produktionsring</li>
-    <li>place_community_mas->Wohnring</li>
-    <li>place_community_neu_acc->Shuttle-Dock</li>
-    <li>place_community_mas_acc->Produktionsring</li>
-    <li>place_community_mas_acc->Wohnring</li>
-    <li>place_community_neu_dat->Shuttle-Dock</li>
-    <li>place_community_mas_dat->Produktionsring</li>
-    <li>place_community_mas_dat->Wohnring</li>
+    <li>place_community->Raumfährendock</li>
+    <li>place_community->Produktionsring</li>
+    <li>place_community->Wohnring</li>
+    <li>place_community_neu_nom_indef->Raumfährendock</li>
+    <li>place_community_mas_nom_indef->Produktionsring</li>
+    <li>place_community_mas_nom_indef->Wohnring</li>
+    <li>place_community_neu_acc_indef->Raumfährendock</li>
+    <li>place_community_mas_acc_indef->Produktionsring</li>
+    <li>place_community_mas_acc_indef->Wohnring</li>
+    <li>place_community_neu_dat_indef->Raumfährendock</li>
+    <li>place_community_mas_dat_indef->Produktionsring</li>
+    <li>place_community_mas_dat_indef->Wohnring</li>
+    <li>place_community_neu_nom_def->Raumfährendock</li>
+    <li>place_community_mas_nom_def->Produktionsring</li>
+    <li>place_community_mas_nom_def->Wohnring</li>
+    <li>place_community_neu_acc_def->Raumfährendock</li>
+    <li>place_community_mas_acc_def->Produktionsring</li>
+    <li>place_community_mas_acc_def->Wohnring</li>
+    <li>place_community_neu_dat_def->Raumfährendock</li>
+    <li>place_community_mas_dat_def->Produktionsring</li>
+    <li>place_community_mas_dat_def->Wohnring</li>
     <li>place_powerCenter->Hauptkontrollraum</li>
     <li>place_powerCenter_mas->Hauptkontrollraum</li>
     <li>place_powerCenter_mas_acc->Hauptkontrollraum</li>
@@ -47,16 +60,44 @@
     <li>place_job->Testpilot</li>
     <li>place_job->Handelsvertreter</li>
     <li>place_job->3D-Drucker-Techniker</li>
-    <li>place_job_dat->Baudrohnenoperator</li>
-    <li>place_job_dat->Verwalter</li>
-    <li>place_job_dat->Testpiloten</li>
-    <li>place_job_dat->Handelsvertreter</li>
-    <li>place_job_dat->3D-Drucker-Techniker</li>
-    <li>place_job_gen->Baudrohnenoperators</li>
-    <li>place_job_gen->Verwalters</li>
-    <li>place_job_gen->Testpilots</li>
-    <li>place_job_gen->Handelsvertreters</li>
-    <li>place_job_gen->3D-Drucker-Technikers</li>
+    <li>place_job_mas_nom_indef->[place_job]</li>
+    <li>place_job_mas_nom_def->Baudrohnenoperator</li>
+    <li>place_job_mas_nom_def->Verwalter</li>
+    <li>place_job_mas_nom_def->Testpilot</li>
+    <li>place_job_mas_nom_def->Handelsvertreter</li>
+    <li>place_job_mas_nom_def->3D-Drucker-Techniker</li>
+    <li>place_job_mas_dat_indef->Baudrohnenoperator</li>
+    <li>place_job_mas_dat_indef->Verwalter</li>
+    <li>place_job_mas_dat_indef->Testpiloten</li>
+    <li>place_job_mas_dat_indef->Handelsvertreter</li>
+    <li>place_job_mas_dat_indef->3D-Drucker-Techniker</li>
+    <li>place_job_mas_dat_def->[place_job_mas_dat_indef]</li>
+    <li>place_job_mas_gen_indef->Baudrohnenoperators</li>
+    <li>place_job_mas_gen_indef->Verwalters</li>
+    <li>place_job_mas_gen_indef->Testpilots</li>
+    <li>place_job_mas_gen_indef->Handelsvertreters</li>
+    <li>place_job_mas_gen_indef->3D-Drucker-Technikers</li>
+    <li>place_job_mas_gen_def->[place_job_mas_gen_indef]</li>
+    <li>place_job_mas_acc_indef->[place_job_mas_dat_indef]</li>
+    <li>place_job_mas_acc_def->[place_job_mas_acc_indef]</li>
+    <li>place_job_fem_nom_indef->Baudrohnenoperatorin</li>
+    <li>place_job_fem_nom_indef->Verwalterin</li>
+    <li>place_job_fem_nom_indef->Testpilotin</li>
+    <li>place_job_fem_nom_indef->Handelsvertreterin</li>
+    <li>place_job_fem_nom_indef->3D-Drucker-Technikerin</li>
+    <li>place_job_fem_nom_def->[place_job_fem_nom_indef]</li>
+    <li>place_job_fem_dat_indef->Baudrohnenoperatorin</li>
+    <li>place_job_fem_dat_indef->Verwalterin</li>
+    <li>place_job_fem_dat_indef->Testpilotin</li>
+    <li>place_job_fem_dat_indef->Handelsvertreterin</li>
+    <li>place_job_fem_dat_indef->3D-Drucker-Technikerin</li>
+    <li>place_job_fem_dat_def->[place_job_fem_dat_indef]</li>
+    <li>place_job_fem_gen_indef->[place_job_fem_dat_indef]</li>
+    <li>place_job_fem_gen_def->[place_job_fem_gen_indef]</li>
+    <li>place_job_fem_acc_indef->[place_job_fem_dat_indef]</li>
+    <li>place_job_fem_acc_def->[place_job_fem_acc_indef]</li>
+    <li>place_personalWeapon->Taser</li>
+    <li>place_personalWeapon->Schweißgerät</li>
     <li>place_personalWeapon_mas->Taser</li>
     <li>place_personalWeapon_neu->Schweißgerät</li>
     <li>place_personalWeapons->Taser</li>
@@ -69,13 +110,32 @@
     <li>place_massWeapon->ferngesteuerte Schweißerdrohnen</li>
     <li>place_massWeapon_acc->ferngesteuerte Schweißerdrohnen</li>
     <li>place_massWeapon_dat->ferngesteuerten Schweißerdrohnen</li>
-    <li>place_foeLeader->Verbrecherboss</li>
-    <li>place_foeLeader_def->Verbrecherboss</li>
-    <li>place_foeLeader_dat->Verbrecherboss</li>
-    <li>place_foeLeader_gen->Verbrecherbosses</li>
-    <li>place_foeSoldiers->Verbrecher</li>
-    <li>place_foeSoldiers_def->Verbrecher</li>
-    <li>place_foeSoldiers_dat->Verbrechern</li>
+    <li>place_foeLeader->Mafiaboss</li>
+    <li>place_foeLeader_mas_nom_indef->[place_foeLeader]</li>
+    <li>place_foeLeader_mas_nom_def->Mafiaboss</li>
+    <li>place_foeLeader_mas_dat_indef->Mafiaboss</li>
+    <li>place_foeLeader_mas_dat_def->[place_foeLeader_mas_dat_indef]</li>
+    <li>place_foeLeader_mas_gen_indef->Mafiabosses</li>
+    <li>place_foeLeader_mas_gen_def->[place_foeLeader_mas_gen_indef]</li>
+    <li>place_foeLeader_mas_acc_indef->[place_foeLeader_mas_dat_indef]</li>
+    <li>place_foeLeader_mas_acc_def->[place_foeLeader_mas_acc_indef]</li>
+    <li>place_foeLeader_fem_nom_indef->Mafiabossin</li>
+    <li>place_foeLeader_fem_nom_def->[place_foeLeader_fem_nom_indef]</li>
+    <li>place_foeLeader_fem_dat_indef->Mafiabossin</li>
+    <li>place_foeLeader_fem_dat_def->[place_foeLeader_fem_dat_indef]</li>
+    <li>place_foeLeader_fem_gen_indef->[place_foeLeader_fem_dat_indef]</li>
+    <li>place_foeLeader_fem_gen_def->[place_foeLeader_fem_gen_indef]</li>
+    <li>place_foeLeader_fem_acc_indef->[place_foeLeader_fem_dat_indef]</li>
+    <li>place_foeLeader_fem_acc_def->[place_foeLeader_fem_acc_indef]</li>
+    <li>place_foeSoldiers->Schläger</li>
+    <li>place_foeSoldiers_nom_indef->[place_foeSoldiers]</li>
+    <li>place_foeSoldiers_nom_def->Schläger</li>
+    <li>place_foeSoldiers_gen_indef->Schläger</li>
+    <li>place_foeSoldiers_gen_def->Schläger</li>
+    <li>place_foeSoldiers_dat_indef->Schlägern</li>
+    <li>place_foeSoldiers_dat_def->Schlägern</li>
+    <li>place_foeSoldiers_acc_indef->Schläger</li>
+    <li>place_foeSoldiers_acc_def->Schläger</li>
   </AturaStation.placeRules.rulesStrings>
   
   <!-- EN:
@@ -101,20 +161,33 @@
   <Bagua5.placeRules.rulesStrings>
     <li>place_name->Bagua 5</li>
     <li>place_adjective->bagucinquanisch</li>
+    <li>place_summary->Schrottplanet</li>
     <li>place_summary_mas->Schrottplanet</li>
     <li>place_summary_mas_def->Schrottplanet</li>
     <li>place_summary_mas_acc->Schrottplaneten</li>
     <li>place_summary_mas_dat->Schrottplaneten</li>
     <li>place_summary_mas_gen->Schrottplaneten</li>
-    <li>place_community_mas->befestigter Schrottplatz</li>
-    <li>place_community_fem->Regenwasseraufbereitungsanlage</li>
-    <li>place_community_fem->Schrottstadt</li>
-    <li>place_community_mas_acc->befestigten Schrottplatz</li>
-    <li>place_community_fem_acc->Regenwasseraufbereitungsanlage</li>
-    <li>place_community_fem_acc->Schrottstadt</li>
-    <li>place_community_mas_dat->befestigten Schrottplatz</li>
-    <li>place_community_fem_dat->Regenwasseraufbereitungsanlage</li>
-    <li>place_community_fem_dat->Schrottstadt</li>
+    <li>place_community->befestigter Schrottplatz</li>
+    <li>place_community->Regenwasseraufbereitungsanlage</li>
+    <li>place_community->Schrottstadt</li>
+    <li>place_community_mas_nom_indef->befestigter Schrottplatz</li>
+    <li>place_community_fem_nom_indef->Regenwasseraufbereitungsanlage</li>
+    <li>place_community_fem_nom_indef->Schrottstadt</li>
+    <li>place_community_mas_acc_indef->befestigten Schrottplatz</li>
+    <li>place_community_fem_acc_indef->Regenwasseraufbereitungsanlage</li>
+    <li>place_community_fem_acc_indef->Schrottstadt</li>
+    <li>place_community_mas_dat_indef->befestigten Schrottplatz</li>
+    <li>place_community_fem_dat_indef->Regenwasseraufbereitungsanlage</li>
+    <li>place_community_fem_dat_indef->Schrottstadt</li>
+    <li>place_community_mas_nom_def->befestigte Schrottplatz</li>
+    <li>place_community_fem_nom_def->Regenwasseraufbereitungsanlage</li>
+    <li>place_community_fem_nom_def->Schrottstadt</li>
+    <li>place_community_mas_acc_def->befestigten Schrottplatz</li>
+    <li>place_community_fem_acc_def->Regenwasseraufbereitungsanlage</li>
+    <li>place_community_fem_acc_def->Schrottstadt</li>
+    <li>place_community_mas_dat_def->befestigten Schrottplatz</li>
+    <li>place_community_fem_dat_def->Regenwasseraufbereitungsanlage</li>
+    <li>place_community_fem_dat_def->Schrottstadt</li>
     <li>place_powerCenter->Handelsraumhafen</li>
     <li>place_powerCenter_mas->Handelsraumhafen</li>
     <li>place_powerCenter_mas_acc->Handelsraumhafen</li>
@@ -124,16 +197,44 @@
     <li>place_job->Tüftler</li>
     <li>place_job->Wächter</li>
     <li>place_job->Schrottsammler</li>
-    <li>place_job_dat->Plünderer</li>
-    <li>place_job_dat->Händler</li>
-    <li>place_job_dat->Tüftler</li>
-    <li>place_job_dat->Wächter</li>
-    <li>place_job_dat->Schrottsammler</li>
-    <li>place_job_gen->Plünderers</li>
-    <li>place_job_gen->Händlers</li>
-    <li>place_job_gen->Tüftlers</li>
-    <li>place_job_gen->Wächters</li>
-    <li>place_job_gen->Schrottsammlers</li>
+    <li>place_job_mas_nom_indef->[place_job]</li>
+    <li>place_job_mas_nom_def->Plünderer</li>
+    <li>place_job_mas_nom_def->Händler</li>
+    <li>place_job_mas_nom_def->Tüftler</li>
+    <li>place_job_mas_nom_def->Wächter</li>
+    <li>place_job_mas_nom_def->Schrottsammler</li>
+    <li>place_job_mas_dat_indef->Plünderer</li>
+    <li>place_job_mas_dat_indef->Händler</li>
+    <li>place_job_mas_dat_indef->Tüftler</li>
+    <li>place_job_mas_dat_indef->Wächter</li>
+    <li>place_job_mas_dat_indef->Schrottsammler</li>
+    <li>place_job_mas_dat_def->[place_job_mas_dat_indef]</li>
+    <li>place_job_mas_gen_indef->Plünderers</li>
+    <li>place_job_mas_gen_indef->Händlers</li>
+    <li>place_job_mas_gen_indef->Tüftlers</li>
+    <li>place_job_mas_gen_indef->Wächters</li>
+    <li>place_job_mas_gen_indef->Schrottsammlers</li>
+    <li>place_job_mas_gen_def->[place_job_mas_gen_indef]</li>
+    <li>place_job_mas_acc_indef->[place_job_mas_dat_indef]</li>
+    <li>place_job_mas_acc_def->[place_job_mas_acc_indef]</li>
+    <li>place_job_fem_nom_indef->Plünderin</li>
+    <li>place_job_fem_nom_indef->Händlerin</li>
+    <li>place_job_fem_nom_indef->Tüftlerin</li>
+    <li>place_job_fem_nom_indef->Wächterin</li>
+    <li>place_job_fem_nom_indef->Schrottsammlerin</li>
+    <li>place_job_fem_nom_def->[place_job_fem_nom_indef]</li>
+    <li>place_job_fem_dat_indef->Plünderin</li>
+    <li>place_job_fem_dat_indef->Händlerin</li>
+    <li>place_job_fem_dat_indef->Tüftlerin</li>
+    <li>place_job_fem_dat_indef->Wächterin</li>
+    <li>place_job_fem_dat_indef->Schrottsammlerin</li>
+    <li>place_job_fem_dat_def->[place_job_fem_dat_indef]</li>
+    <li>place_job_fem_gen_indef->[place_job_fem_dat_indef]</li>
+    <li>place_job_fem_gen_def->[place_job_fem_gen_indef]</li>
+    <li>place_job_fem_acc_indef->[place_job_fem_dat_indef]</li>
+    <li>place_job_fem_acc_def->[place_job_fem_acc_indef]</li>
+    <li>place_personalWeapon->Rohrgewehr</li>
+    <li>place_personalWeapon->Schrottschwert</li>
     <li>place_personalWeapon_neu->Rohrgewehr</li>
     <li>place_personalWeapon_neu->Schrottschwert</li>
     <li>place_personalWeapons->Rohrgewehre</li>
@@ -147,12 +248,31 @@
     <li>place_massWeapon_acc->einen Rostvirus</li>
     <li>place_massWeapon_dat->einem Rostvirus</li>
     <li>place_foeLeader->Schrottlord</li>
-    <li>place_foeLeader_def->Schrottlord</li>
-    <li>place_foeLeader_dat->Schrottlord</li>
-    <li>place_foeLeader_gen->Schrottlords</li>
+    <li>place_foeLeader_mas_nom_indef->[place_foeLeader]</li>
+    <li>place_foeLeader_mas_nom_def->Schrottlord</li>
+    <li>place_foeLeader_mas_dat_indef->Schrottlord</li>
+    <li>place_foeLeader_mas_dat_def->[place_foeLeader_mas_dat_indef]</li>
+    <li>place_foeLeader_mas_gen_indef->Schrottlords</li>
+    <li>place_foeLeader_mas_gen_def->[place_foeLeader_mas_gen_indef]</li>
+    <li>place_foeLeader_mas_acc_indef->[place_foeLeader_mas_dat_indef]</li>
+    <li>place_foeLeader_mas_acc_def->[place_foeLeader_mas_acc_indef]</li>
+    <li>place_foeLeader_fem_nom_indef->Schrottlady</li>
+    <li>place_foeLeader_fem_nom_def->[place_foeLeader_fem_nom_indef]</li>
+    <li>place_foeLeader_fem_dat_indef->Schrottlady</li>
+    <li>place_foeLeader_fem_dat_def->[place_foeLeader_fem_dat_indef]</li>
+    <li>place_foeLeader_fem_gen_indef->[place_foeLeader_fem_dat_indef]</li>
+    <li>place_foeLeader_fem_gen_def->[place_foeLeader_fem_gen_indef]</li>
+    <li>place_foeLeader_fem_acc_indef->[place_foeLeader_fem_dat_indef]</li>
+    <li>place_foeLeader_fem_acc_def->[place_foeLeader_fem_acc_indef]</li>
     <li>place_foeSoldiers->Metalheads</li>
-    <li>place_foeSoldiers_def->Metalheads</li>
-    <li>place_foeSoldiers_dat->Metalheads</li>
+    <li>place_foeSoldiers_nom_indef->[place_foeSoldiers]</li>
+    <li>place_foeSoldiers_nom_def->Metalheads</li>
+    <li>place_foeSoldiers_gen_indef->Metalheads</li>
+    <li>place_foeSoldiers_gen_def->Metalheads</li>
+    <li>place_foeSoldiers_dat_indef->Metalheads</li>
+    <li>place_foeSoldiers_dat_def->Metalheads</li>
+    <li>place_foeSoldiers_acc_indef->Metalheads</li>
+    <li>place_foeSoldiers_acc_def->Metalheads</li>
   </Bagua5.placeRules.rulesStrings>
   
   <!-- EN:
@@ -178,20 +298,33 @@
   <Boccocarro.placeRules.rulesStrings>
     <li>place_name->Boccocarro</li>
     <li>place_adjective->boccinisch</li>
+    <li>place_summary->höhlenartige Muschelwelt</li>
     <li>place_summary_fem->höhlenartige Muschelwelt</li>
     <li>place_summary_fem_def->höhlenartige Muschelwelt</li>
     <li>place_summary_fem_acc->höhlenartige Muschelwelt</li>
     <li>place_summary_fem_dat->höhlenartigen Muschelwelt</li>
     <li>place_summary_fem_gen->höhlenartigen Muschelwelt</li>
-    <li>place_community_mas->Oberflächentunnel</li>
-    <li>place_community_fem->Pilzhöhle</li>
-    <li>place_community_fem->Tropfmulde</li>
-    <li>place_community_mas_acc->Oberflächentunnel</li>
-    <li>place_community_fem_acc->Pilzhöhle</li>
-    <li>place_community_fem_acc->Tropfmulde</li>
-    <li>place_community_mas_dat->Oberflächentunnel</li>
-    <li>place_community_fem_dat->Pilzhöhle</li>
-    <li>place_community_fem_dat->Tropfmulde</li>
+    <li>place_community->Oberflächentunnel</li>
+    <li>place_community->Pilzhöhle</li>
+    <li>place_community->Tropfmulde</li>
+    <li>place_community_mas_nom_indef->Oberflächentunnel</li>
+    <li>place_community_fem_nom_indef->Pilzhöhle</li>
+    <li>place_community_fem_nom_indef->Tropfmulde</li>
+    <li>place_community_mas_acc_indef->Oberflächentunnel</li>
+    <li>place_community_fem_acc_indef->Pilzhöhle</li>
+    <li>place_community_fem_acc_indef->Tropfmulde</li>
+    <li>place_community_mas_dat_indef->Oberflächentunnel</li>
+    <li>place_community_fem_dat_indef->Pilzhöhle</li>
+    <li>place_community_fem_dat_indef->Tropfmulde</li>
+    <li>place_community_mas_nom_def->Oberflächentunnel</li>
+    <li>place_community_fem_nom_def->Pilzhöhle</li>
+    <li>place_community_fem_nom_def->Tropfmulde</li>
+    <li>place_community_mas_acc_def->Oberflächentunnel</li>
+    <li>place_community_fem_acc_def->Pilzhöhle</li>
+    <li>place_community_fem_acc_def->Tropfmulde</li>
+    <li>place_community_mas_dat_def->Oberflächentunnel</li>
+    <li>place_community_fem_dat_def->Pilzhöhle</li>
+    <li>place_community_fem_dat_def->Tropfmulde</li>
     <li>place_powerCenter->Sprechsaal</li>
     <li>place_powerCenter_mas->Sprechsaal</li>
     <li>place_powerCenter_mas_acc->Sprechsaal</li>
@@ -201,16 +334,44 @@
     <li>place_job->Oberflächenplünderer</li>
     <li>place_job->Gemeindekoch</li>
     <li>place_job->Froschjäger</li>
-    <li>place_job_dat->Minenarbeiter</li>
-    <li>place_job_dat->Pilzzüchter</li>
-    <li>place_job_dat->Oberflächenplünderer</li>
-    <li>place_job_dat->Gemeindekoch</li>
-    <li>place_job_dat->Froschjäger</li>
-    <li>place_job_gen->Minenarbeiters</li>
-    <li>place_job_gen->Pilzzüchters</li>
-    <li>place_job_gen->Oberflächenplünderers</li>
-    <li>place_job_gen->Gemeindekochs</li>
-    <li>place_job_gen->Froschjägers</li>
+    <li>place_job_mas_nom_indef->[place_job]</li>
+    <li>place_job_mas_nom_def->Minenarbeiter</li>
+    <li>place_job_mas_nom_def->Pilzzüchter</li>
+    <li>place_job_mas_nom_def->Oberflächenplünderer</li>
+    <li>place_job_mas_nom_def->Gemeindekoch</li>
+    <li>place_job_mas_nom_def->Froschjäger</li>
+    <li>place_job_mas_dat_indef->Minenarbeiter</li>
+    <li>place_job_mas_dat_indef->Pilzzüchter</li>
+    <li>place_job_mas_dat_indef->Oberflächenplünderer</li>
+    <li>place_job_mas_dat_indef->Gemeindekoch</li>
+    <li>place_job_mas_dat_indef->Froschjäger</li>
+    <li>place_job_mas_dat_def->[place_job_mas_dat_indef]</li>
+    <li>place_job_mas_gen_indef->Minenarbeiters</li>
+    <li>place_job_mas_gen_indef->Pilzzüchters</li>
+    <li>place_job_mas_gen_indef->Oberflächenplünderers</li>
+    <li>place_job_mas_gen_indef->Gemeindekochs</li>
+    <li>place_job_mas_gen_indef->Froschjägers</li>
+    <li>place_job_mas_gen_def->[place_job_mas_gen_indef]</li>
+    <li>place_job_mas_acc_indef->[place_job_mas_dat_indef]</li>
+    <li>place_job_mas_acc_def->[place_job_mas_acc_indef]</li>
+    <li>place_job_fem_nom_indef->Minenarbeiterin</li>
+    <li>place_job_fem_nom_indef->Pilzzüchterin</li>
+    <li>place_job_fem_nom_indef->Oberflächenplündererin</li>
+    <li>place_job_fem_nom_indef->Gemeindeköchin</li>
+    <li>place_job_fem_nom_indef->Froschjägerin</li>
+    <li>place_job_fem_nom_def->[place_job_fem_nom_indef]</li>
+    <li>place_job_fem_dat_indef->Minenarbeiterin</li>
+    <li>place_job_fem_dat_indef->Pilzzüchterin</li>
+    <li>place_job_fem_dat_indef->Oberflächenplündererin</li>
+    <li>place_job_fem_dat_indef->Gemeindeköchin</li>
+    <li>place_job_fem_dat_indef->Froschjägerin</li>
+    <li>place_job_fem_dat_def->[place_job_fem_dat_indef]</li>
+    <li>place_job_fem_gen_indef->[place_job_fem_dat_indef]</li>
+    <li>place_job_fem_gen_def->[place_job_fem_gen_indef]</li>
+    <li>place_job_fem_acc_indef->[place_job_fem_dat_indef]</li>
+    <li>place_job_fem_acc_def->[place_job_fem_acc_indef]</li>
+    <li>place_personalWeapon->Spitzhacke</li>
+    <li>place_personalWeapon->Hydraulikarmbrust</li>
     <li>place_personalWeapon_fem->Spitzhacke</li>
     <li>place_personalWeapon_fem->Hydraulikarmbrust</li>
     <li>place_personalWeapons->Spitzhacken</li>
@@ -223,13 +384,32 @@
     <li>place_massWeapon->eine Schwarzpulverbombe</li>
     <li>place_massWeapon_acc->eine Schwarzpulverbombe</li>
     <li>place_massWeapon_dat->einer Schwarzpulverbombe</li>
-    <li>place_foeLeader->Minenvorsteher</li>
-    <li>place_foeLeader_def->Minenvorsteher</li>
-    <li>place_foeLeader_dat->Minenvorsteher</li>
-    <li>place_foeLeader_gen->Minenvorstehers</li>
-    <li>place_foeSoldiers->Abyssal-Marines</li>
-    <li>place_foeSoldiers_def->Abyssal-Marines</li>
-    <li>place_foeSoldiers_dat->Abyssal-Marines</li>
+    <li>place_foeLeader->Minen-Hypervisor</li>
+    <li>place_foeLeader_mas_nom_indef->[place_foeLeader]</li>
+    <li>place_foeLeader_mas_nom_def->Minen-Hypervisor</li>
+    <li>place_foeLeader_mas_dat_indef->Minen-Hypervisor</li>
+    <li>place_foeLeader_mas_dat_def->[place_foeLeader_mas_dat_indef]</li>
+    <li>place_foeLeader_mas_gen_indef->Minen-Hypervisors</li>
+    <li>place_foeLeader_mas_gen_def->[place_foeLeader_mas_gen_indef]</li>
+    <li>place_foeLeader_mas_acc_indef->[place_foeLeader_mas_dat_indef]</li>
+    <li>place_foeLeader_mas_acc_def->[place_foeLeader_mas_acc_indef]</li>
+    <li>place_foeLeader_fem_nom_indef->Minen-Hypervisorin</li>
+    <li>place_foeLeader_fem_nom_def->[place_foeLeader_fem_nom_indef]</li>
+    <li>place_foeLeader_fem_dat_indef->Minen-Hypervisorin</li>
+    <li>place_foeLeader_fem_dat_def->[place_foeLeader_fem_dat_indef]</li>
+    <li>place_foeLeader_fem_gen_indef->[place_foeLeader_fem_dat_indef]</li>
+    <li>place_foeLeader_fem_gen_def->[place_foeLeader_fem_gen_indef]</li>
+    <li>place_foeLeader_fem_acc_indef->[place_foeLeader_fem_dat_indef]</li>
+    <li>place_foeLeader_fem_acc_def->[place_foeLeader_fem_acc_indef]</li>
+    <li>place_foeSoldiers->Abyssal Marines</li>
+    <li>place_foeSoldiers_nom_indef->[place_foeSoldiers]</li>
+    <li>place_foeSoldiers_nom_def->Abyssal Marines</li>
+    <li>place_foeSoldiers_gen_indef->Abyssal Marines</li>
+    <li>place_foeSoldiers_gen_def->Abyssal Marines</li>
+    <li>place_foeSoldiers_dat_indef->Abyssal Marines</li>
+    <li>place_foeSoldiers_dat_def->Abyssal Marines</li>
+    <li>place_foeSoldiers_acc_indef->Abyssal Marines</li>
+    <li>place_foeSoldiers_acc_def->Abyssal Marines</li>
   </Boccocarro.placeRules.rulesStrings>
   
   <!-- EN:
@@ -255,20 +435,33 @@
   <Chelis.placeRules.rulesStrings>
     <li>place_name->Chelis</li>
     <li>place_adjective->chelisisch</li>
+    <li>place_summary->trockene Welt</li>
     <li>place_summary_fem->trockene Welt</li>
     <li>place_summary_fem_def->trockene Welt</li>
     <li>place_summary_fem_acc->trockene Welt</li>
     <li>place_summary_fem_dat->trockenen Welt</li>
     <li>place_summary_fem_gen->trockenen Welt</li>
-    <li>place_community_fem->Feuchtfarm</li>
-    <li>place_community_fem->Dörrstadt</li>
-    <li>place_community_neu->Wasserzentrum</li>
-    <li>place_community_fem_acc->Feuchtfarm</li>
-    <li>place_community_fem_acc->Dörrstadt</li>
-    <li>place_community_neu_acc->Wasserzentrum</li>
-    <li>place_community_fem_dat->Feuchtfarm</li>
-    <li>place_community_fem_dat->Dörrstadt</li>
-    <li>place_community_neu_dat->Wasserzentrum</li>
+    <li>place_community->Feuchtfarm</li>
+    <li>place_community->Dörrstadt</li>
+    <li>place_community->Wasserzentrum</li>
+    <li>place_community_fem_nom_indef->Feuchtfarm</li>
+    <li>place_community_fem_nom_indef->Dörrstadt</li>
+    <li>place_community_neu_nom_indef->Wasserzentrum</li>
+    <li>place_community_fem_acc_indef->Feuchtfarm</li>
+    <li>place_community_fem_acc_indef->Dörrstadt</li>
+    <li>place_community_neu_acc_indef->Wasserzentrum</li>
+    <li>place_community_fem_dat_indef->Feuchtfarm</li>
+    <li>place_community_fem_dat_indef->Dörrstadt</li>
+    <li>place_community_neu_dat_indef->Wasserzentrum</li>
+    <li>place_community_fem_nom_def->Feuchtfarm</li>
+    <li>place_community_fem_nom_def->Dörrstadt</li>
+    <li>place_community_neu_nom_def->Wasserzentrum</li>
+    <li>place_community_fem_acc_def->Feuchtfarm</li>
+    <li>place_community_fem_acc_def->Dörrstadt</li>
+    <li>place_community_neu_acc_def->Wasserzentrum</li>
+    <li>place_community_fem_dat_def->Feuchtfarm</li>
+    <li>place_community_fem_dat_def->Dörrstadt</li>
+    <li>place_community_neu_dat_def->Wasserzentrum</li>
     <li>place_powerCenter->große Lebenshalle</li>
     <li>place_powerCenter_fem->große Lebenshalle</li>
     <li>place_powerCenter_fem_acc->große Lebenshalle</li>
@@ -277,36 +470,83 @@
     <li>place_job->Echsenhäuter</li>
     <li>place_job->Oasensucher</li>
     <li>place_job->Kaktussammler</li>
-    <li>place_job->Aasfresserhirte</li>
-    <li>place_job_dat->Wassersammler</li>
-    <li>place_job_dat->Echsenhäuter</li>
-    <li>place_job_dat->Oasensucher</li>
-    <li>place_job_dat->Kaktussammler</li>
-    <li>place_job_dat->Aasfresserhirten</li>
-    <li>place_job_gen->Wassersammlers</li>
-    <li>place_job_gen->Echsenhäuters</li>
-    <li>place_job_gen->Oasensuchers</li>
-    <li>place_job_gen->Kaktussammlers</li>
-    <li>place_job_gen->Aasfresserhirten</li>
+    <li>place_job->Schrotthirte</li>
+    <li>place_job_mas_nom_indef->[place_job]</li>
+    <li>place_job_mas_nom_def->Wassersammler</li>
+    <li>place_job_mas_nom_def->Echsenhäuter</li>
+    <li>place_job_mas_nom_def->Oasensucher</li>
+    <li>place_job_mas_nom_def->Kaktussammler</li>
+    <li>place_job_mas_nom_def->Schrotthirte</li>
+    <li>place_job_mas_dat_indef->Wassersammler</li>
+    <li>place_job_mas_dat_indef->Echsenhäuter</li>
+    <li>place_job_mas_dat_indef->Oasensucher</li>
+    <li>place_job_mas_dat_indef->Kaktussammler</li>
+    <li>place_job_mas_dat_indef->Schrotthirten</li>
+    <li>place_job_mas_dat_def->[place_job_mas_dat_indef]</li>
+    <li>place_job_mas_gen_indef->Wassersammlers</li>
+    <li>place_job_mas_gen_indef->Echsenhäuters</li>
+    <li>place_job_mas_gen_indef->Oasensuchers</li>
+    <li>place_job_mas_gen_indef->Kaktussammlers</li>
+    <li>place_job_mas_gen_indef->Schrotthirten</li>
+    <li>place_job_mas_gen_def->[place_job_mas_gen_indef]</li>
+    <li>place_job_mas_acc_indef->[place_job_mas_dat_indef]</li>
+    <li>place_job_mas_acc_def->[place_job_mas_acc_indef]</li>
+    <li>place_job_fem_nom_indef->Wassersammlerin</li>
+    <li>place_job_fem_nom_indef->Echsenhäuterin</li>
+    <li>place_job_fem_nom_indef->Oasensucherin</li>
+    <li>place_job_fem_nom_indef->Kaktussammlerin</li>
+    <li>place_job_fem_nom_indef->Schrotthirtin</li>
+    <li>place_job_fem_nom_def->[place_job_fem_nom_indef]</li>
+    <li>place_job_fem_dat_indef->Wassersammlerin</li>
+    <li>place_job_fem_dat_indef->Echsenhäuterin</li>
+    <li>place_job_fem_dat_indef->Oasensucherin</li>
+    <li>place_job_fem_dat_indef->Kaktussammlerin</li>
+    <li>place_job_fem_dat_indef->Schrotthirtin</li>
+    <li>place_job_fem_dat_def->[place_job_fem_dat_indef]</li>
+    <li>place_job_fem_gen_indef->[place_job_fem_dat_indef]</li>
+    <li>place_job_fem_gen_def->[place_job_fem_gen_indef]</li>
+    <li>place_job_fem_acc_indef->[place_job_fem_dat_indef]</li>
+    <li>place_job_fem_acc_def->[place_job_fem_acc_indef]</li>
+    <li>place_personalWeapon->Sandpfeil</li>
+    <li>place_personalWeapon->Kaktuskeule</li>
     <li>place_personalWeapon_mas->Sandpfeil</li>
     <li>place_personalWeapon_fem->Kaktuskeule</li>
     <li>place_personalWeapons->Sandpfeile</li>
     <li>place_personalWeapons->Kaktuskeulen</li>
     <li>place_personalWeapons_dat->Sandpfeilen</li>
     <li>place_personalWeapons_dat->Kaktuskeulen</li>
-    <li>place_massWeapon->ein archotechnisch induzierter Sandsturm</li>
-    <li>place_massWeapon_acc->einen archotechnisch induzierten Sandsturm</li>
-    <li>place_massWeapon_dat->einem archotechnisch induzierten Sandsturm</li>
+    <li>place_massWeapon->ein archotech-induzierter Sandsturm</li>
+    <li>place_massWeapon_acc->einen archotech-induzierten Sandsturm</li>
+    <li>place_massWeapon_dat->einem archotech-induzierten Sandsturm</li>
     <li>place_massWeapon->eine Stachelechsen-Stampede</li>
     <li>place_massWeapon_acc->eine Stachelechsen-Stampede</li>
     <li>place_massWeapon_dat->einer Stachelechsen-Stampede</li>
     <li>place_foeLeader->Häuptling</li>
-    <li>place_foeLeader_def->Häuptling</li>
-    <li>place_foeLeader_dat->Häuptling</li>
-    <li>place_foeLeader_gen->Häuptlings</li>
+    <li>place_foeLeader_mas_nom_indef->[place_foeLeader]</li>
+    <li>place_foeLeader_mas_nom_def->Häuptling</li>
+    <li>place_foeLeader_mas_dat_indef->Häuptling</li>
+    <li>place_foeLeader_mas_dat_def->[place_foeLeader_mas_dat_indef]</li>
+    <li>place_foeLeader_mas_gen_indef->Häuptlings</li>
+    <li>place_foeLeader_mas_gen_def->[place_foeLeader_mas_gen_indef]</li>
+    <li>place_foeLeader_mas_acc_indef->[place_foeLeader_mas_dat_indef]</li>
+    <li>place_foeLeader_mas_acc_def->[place_foeLeader_mas_acc_indef]</li>
+    <li>place_foeLeader_fem_nom_indef->Stammesführerin</li>
+    <li>place_foeLeader_fem_nom_def->[place_foeLeader_fem_nom_indef]</li>
+    <li>place_foeLeader_fem_dat_indef->Stammesführerin</li>
+    <li>place_foeLeader_fem_dat_def->[place_foeLeader_fem_dat_indef]</li>
+    <li>place_foeLeader_fem_gen_indef->[place_foeLeader_fem_dat_indef]</li>
+    <li>place_foeLeader_fem_gen_def->[place_foeLeader_fem_gen_indef]</li>
+    <li>place_foeLeader_fem_acc_indef->[place_foeLeader_fem_dat_indef]</li>
+    <li>place_foeLeader_fem_acc_def->[place_foeLeader_fem_acc_indef]</li>
     <li>place_foeSoldiers->Sandkrieger</li>
-    <li>place_foeSoldiers_def->Sandkrieger</li>
-    <li>place_foeSoldiers_dat->Sandkriegern</li>
+    <li>place_foeSoldiers_nom_indef->[place_foeSoldiers]</li>
+    <li>place_foeSoldiers_nom_def->Sandkrieger</li>
+    <li>place_foeSoldiers_gen_indef->Sandkrieger</li>
+    <li>place_foeSoldiers_gen_def->Sandkrieger</li>
+    <li>place_foeSoldiers_dat_indef->Sandkriegern</li>
+    <li>place_foeSoldiers_dat_def->Sandkriegern</li>
+    <li>place_foeSoldiers_acc_indef->Sandkrieger</li>
+    <li>place_foeSoldiers_acc_def->Sandkrieger</li>
   </Chelis.placeRules.rulesStrings>
   
   <!-- EN:
@@ -335,20 +575,33 @@
   <Creticon.placeRules.rulesStrings>
     <li>place_name->Creticon</li>
     <li>place_adjective->creticonisch</li>
+    <li>place_summary->zerbombte Todeswelt</li>
     <li>place_summary_fem->zerbombte Todeswelt</li>
     <li>place_summary_fem_def->zerbombte Todeswelt</li>
     <li>place_summary_fem_acc->zerbombte Todeswelt</li>
     <li>place_summary_fem_dat->zerbombten Todeswelt</li>
     <li>place_summary_fem_gen->zerbombten Todeswelt</li>
-    <li>place_community_mas->Bunker</li>
-    <li>place_community_fem->Höhle</li>
-    <li>place_community_fem->Eiszuflucht</li>
-    <li>place_community_mas_acc->Bunker</li>
-    <li>place_community_fem_acc->Höhle</li>
-    <li>place_community_fem_acc->Eiszuflucht</li>
-    <li>place_community_mas_dat->Bunker</li>
-    <li>place_community_fem_dat->Höhle</li>
-    <li>place_community_fem_dat->Eiszuflucht</li>
+    <li>place_community->Bunker</li>
+    <li>place_community->Höhle</li>
+    <li>place_community->Eiszuflucht</li>
+    <li>place_community_mas_nom_indef->Bunker</li>
+    <li>place_community_fem_nom_indef->Höhle</li>
+    <li>place_community_fem_nom_indef->Eiszuflucht</li>
+    <li>place_community_mas_acc_indef->Bunker</li>
+    <li>place_community_fem_acc_indef->Höhle</li>
+    <li>place_community_fem_acc_indef->Eiszuflucht</li>
+    <li>place_community_mas_dat_indef->Bunker</li>
+    <li>place_community_fem_dat_indef->Höhle</li>
+    <li>place_community_fem_dat_indef->Eiszuflucht</li>
+    <li>place_community_mas_nom_def->Bunker</li>
+    <li>place_community_fem_nom_def->Höhle</li>
+    <li>place_community_fem_nom_def->Eiszuflucht</li>
+    <li>place_community_mas_acc_def->Bunker</li>
+    <li>place_community_fem_acc_def->Höhle</li>
+    <li>place_community_fem_acc_def->Eiszuflucht</li>
+    <li>place_community_mas_dat_def->Bunker</li>
+    <li>place_community_fem_dat_def->Höhle</li>
+    <li>place_community_fem_dat_def->Eiszuflucht</li>
     <li>place_powerCenter->Bunker des Direktors</li>
     <li>place_powerCenter_mas->Bunker des Direktors</li>
     <li>place_powerCenter_mas_acc->Bunker des Direktors</li>
@@ -358,19 +611,50 @@
     <li>place_job->Arzt</li>
     <li>place_job->Lehrer</li>
     <li>place_job->Milizkommandant</li>
-    <li>place_job->Shuttle-Pilot</li>
-    <li>place_job_dat->Wasserrecycler-Reparateur</li>
-    <li>place_job_dat->Algenzüchter</li>
-    <li>place_job_dat->Arzt</li>
-    <li>place_job_dat->Lehrer</li>
-    <li>place_job_dat->Milizkommandanten</li>
-    <li>place_job_dat->Shuttle-Piloten</li>
-    <li>place_job_gen->Wasserrecycler-Reparateurs</li>
-    <li>place_job_gen->Algenzüchters</li>
-    <li>place_job_gen->Arztes</li>
-    <li>place_job_gen->Lehrers</li>
-    <li>place_job_gen->Milizkommandants</li>
-    <li>place_job_gen->Shuttle-Pilots</li>
+    <li>place_job->Raumfährenpilot</li>
+    <li>place_job_mas_nom_indef->[place_job]</li>
+    <li>place_job_mas_nom_def->Wasserrecycler-Reparateur</li>
+    <li>place_job_mas_nom_def->Algenzüchter</li>
+    <li>place_job_mas_nom_def->Arzt</li>
+    <li>place_job_mas_nom_def->Lehrer</li>
+    <li>place_job_mas_nom_def->Milizkommandant</li>
+    <li>place_job_mas_nom_def->Raumfährenpilot</li>
+    <li>place_job_mas_dat_indef->Wasserrecycler-Reparateur</li>
+    <li>place_job_mas_dat_indef->Algenzüchter</li>
+    <li>place_job_mas_dat_indef->Arzt</li>
+    <li>place_job_mas_dat_indef->Lehrer</li>
+    <li>place_job_mas_dat_indef->Milizkommandanten</li>
+    <li>place_job_mas_dat_indef->Raumfährenpiloten</li>
+    <li>place_job_mas_dat_def->[place_job_mas_dat_indef]</li>
+    <li>place_job_mas_gen_indef->Wasserrecycler-Reparateurs</li>
+    <li>place_job_mas_gen_indef->Algenzüchters</li>
+    <li>place_job_mas_gen_indef->Arztes</li>
+    <li>place_job_mas_gen_indef->Lehrers</li>
+    <li>place_job_mas_gen_indef->Milizkommandants</li>
+    <li>place_job_mas_gen_indef->Raumfährenpilots</li>
+    <li>place_job_mas_gen_def->[place_job_mas_gen_indef]</li>
+    <li>place_job_mas_acc_indef->[place_job_mas_dat_indef]</li>
+    <li>place_job_mas_acc_def->[place_job_mas_acc_indef]</li>
+    <li>place_job_fem_nom_indef->Wasserrecycler-Reparateurin</li>
+    <li>place_job_fem_nom_indef->Algenzüchterin</li>
+    <li>place_job_fem_nom_indef->Ärztin</li>
+    <li>place_job_fem_nom_indef->Lehrerin</li>
+    <li>place_job_fem_nom_indef->Milizkommandantin</li>
+    <li>place_job_fem_nom_indef->Raumfährenpilotin</li>
+    <li>place_job_fem_nom_def->[place_job_fem_nom_indef]</li>
+    <li>place_job_fem_dat_indef->Wasserrecycler-Reparateurin</li>
+    <li>place_job_fem_dat_indef->Algenzüchterin</li>
+    <li>place_job_fem_dat_indef->Ärztin</li>
+    <li>place_job_fem_dat_indef->Lehrerin</li>
+    <li>place_job_fem_dat_indef->Milizkommandantin</li>
+    <li>place_job_fem_dat_indef->Raumfährenpilotin</li>
+    <li>place_job_fem_dat_def->[place_job_fem_dat_indef]</li>
+    <li>place_job_fem_gen_indef->[place_job_fem_dat_indef]</li>
+    <li>place_job_fem_gen_def->[place_job_fem_gen_indef]</li>
+    <li>place_job_fem_acc_indef->[place_job_fem_dat_indef]</li>
+    <li>place_job_fem_acc_def->[place_job_fem_acc_indef]</li>
+    <li>place_personalWeapon->Pistole</li>
+    <li>place_personalWeapon->LMG</li>
     <li>place_personalWeapon_fem->Pistole</li>
     <li>place_personalWeapon_neu->LMG</li>
     <li>place_personalWeapons->Pistolen</li>
@@ -389,13 +673,32 @@
     <li>place_massWeapon->gehackte Mechanoiden</li>
     <li>place_massWeapon_acc->gehackte Mechanoiden</li>
     <li>place_massWeapon_dat->gehackten Mechanoiden</li>
-    <li>place_foeLeader->Kriegsherr</li>
-    <li>place_foeLeader_def->Kriegsherr</li>
-    <li>place_foeLeader_dat->Kriegsherrn</li>
-    <li>place_foeLeader_gen->Kriegsherrn</li>
+    <li>place_foeLeader->Warlord</li>
+    <li>place_foeLeader_mas_nom_indef->[place_foeLeader]</li>
+    <li>place_foeLeader_mas_nom_def->Warlord</li>
+    <li>place_foeLeader_mas_dat_indef->Warlord</li>
+    <li>place_foeLeader_mas_dat_def->[place_foeLeader_mas_dat_indef]</li>
+    <li>place_foeLeader_mas_gen_indef->Warlords</li>
+    <li>place_foeLeader_mas_gen_def->[place_foeLeader_mas_gen_indef]</li>
+    <li>place_foeLeader_mas_acc_indef->[place_foeLeader_mas_dat_indef]</li>
+    <li>place_foeLeader_mas_acc_def->[place_foeLeader_mas_acc_indef]</li>
+    <li>place_foeLeader_fem_nom_indef->Warlady</li>
+    <li>place_foeLeader_fem_nom_def->[place_foeLeader_fem_nom_indef]</li>
+    <li>place_foeLeader_fem_dat_indef->Warlady</li>
+    <li>place_foeLeader_fem_dat_def->[place_foeLeader_fem_dat_indef]</li>
+    <li>place_foeLeader_fem_gen_indef->[place_foeLeader_fem_dat_indef]</li>
+    <li>place_foeLeader_fem_gen_def->[place_foeLeader_fem_gen_indef]</li>
+    <li>place_foeLeader_fem_acc_indef->[place_foeLeader_fem_dat_indef]</li>
+    <li>place_foeLeader_fem_acc_def->[place_foeLeader_fem_acc_indef]</li>
     <li>place_foeSoldiers->Söldner</li>
-    <li>place_foeSoldiers_def->Söldner</li>
-    <li>place_foeSoldiers_dat->Söldnern</li>
+    <li>place_foeSoldiers_nom_indef->[place_foeSoldiers]</li>
+    <li>place_foeSoldiers_nom_def->Söldner</li>
+    <li>place_foeSoldiers_gen_indef->Söldner</li>
+    <li>place_foeSoldiers_gen_def->Söldner</li>
+    <li>place_foeSoldiers_dat_indef->Söldnern</li>
+    <li>place_foeSoldiers_dat_def->Söldnern</li>
+    <li>place_foeSoldiers_acc_indef->Söldner</li>
+    <li>place_foeSoldiers_acc_def->Söldner</li>
   </Creticon.placeRules.rulesStrings>
   
   <!-- EN:
@@ -423,23 +726,40 @@
   <Filson.placeRules.rulesStrings>
     <li>place_name->Filson</li>
     <li>place_adjective->Filsonisch</li>
+    <li>place_summary->ländliche Agrarwelt</li>
     <li>place_summary_fem->ländliche Agrarwelt</li>
     <li>place_summary_fem_def->ländliche Agrarwelt</li>
     <li>place_summary_fem_acc->ländliche Agrarwelt</li>
     <li>place_summary_fem_dat->ländlichen Agrarwelt</li>
     <li>place_summary_fem_gen->ländlichen Agrarwelt</li>
-    <li>place_community_neu->Rathaus</li>
-    <li>place_community_fem->Düngeraufbereitungsanlage</li>
-    <li>place_community_mas->Riesengetreidespeicher</li>
-    <li>place_community_fem->Wasserbohrstelle</li>
-    <li>place_community_neu_acc->Rathaus</li>
-    <li>place_community_fem_acc->Düngeraufbereitungsanlage</li>
-    <li>place_community_mas_acc->Riesengetreidespeicher</li>
-    <li>place_community_fem_acc->Wasserbohrstelle</li>
-    <li>place_community_neu_dat->Rathaus</li>
-    <li>place_community_fem_dat->Düngeraufbereitungsanlage</li>
-    <li>place_community_mas_dat->Riesengetreidespeicher</li>
-    <li>place_community_fem_dat->Wasserbohrstelle</li>
+    <li>place_community->Rathaus</li>
+    <li>place_community->Düngeraufbereitungsanlage</li>
+    <li>place_community->Riesengetreidespeicher</li>
+    <li>place_community->Wasserbohrstelle</li>
+    <li>place_community_neu_nom_indef->Rathaus</li>
+    <li>place_community_fem_nom_indef->Düngeraufbereitungsanlage</li>
+    <li>place_community_mas_nom_indef->Riesengetreidespeicher</li>
+    <li>place_community_fem_nom_indef->Wasserbohrstelle</li>
+    <li>place_community_neu_acc_indef->Rathaus</li>
+    <li>place_community_fem_acc_indef->Düngeraufbereitungsanlage</li>
+    <li>place_community_mas_acc_indef->Riesengetreidespeicher</li>
+    <li>place_community_fem_acc_indef->Wasserbohrstelle</li>
+    <li>place_community_neu_dat_indef->Rathaus</li>
+    <li>place_community_fem_dat_indef->Düngeraufbereitungsanlage</li>
+    <li>place_community_mas_dat_indef->Riesengetreidespeicher</li>
+    <li>place_community_fem_dat_indef->Wasserbohrstelle</li>
+    <li>place_community_neu_nom_def->Rathaus</li>
+    <li>place_community_fem_nom_def->Düngeraufbereitungsanlage</li>
+    <li>place_community_mas_nom_def->Riesengetreidespeicher</li>
+    <li>place_community_fem_nom_def->Wasserbohrstelle</li>
+    <li>place_community_neu_acc_def->Rathaus</li>
+    <li>place_community_fem_acc_def->Düngeraufbereitungsanlage</li>
+    <li>place_community_mas_acc_def->Riesengetreidespeicher</li>
+    <li>place_community_fem_acc_def->Wasserbohrstelle</li>
+    <li>place_community_neu_dat_def->Rathaus</li>
+    <li>place_community_fem_dat_def->Düngeraufbereitungsanlage</li>
+    <li>place_community_mas_dat_def->Riesengetreidespeicher</li>
+    <li>place_community_fem_dat_def->Wasserbohrstelle</li>
     <li>place_powerCenter->Rathaus</li>
     <li>place_powerCenter_neu->Rathaus</li>
     <li>place_powerCenter_neu_acc->Rathaus</li>
@@ -449,16 +769,44 @@
     <li>place_job->Transportfahrer</li>
     <li>place_job->Schullehrer</li>
     <li>place_job->Bodeningenieur</li>
-    <li>place_job_dat->Landarbeiter</li>
-    <li>place_job_dat->Obstpflücker</li>
-    <li>place_job_dat->Transportfahrer</li>
-    <li>place_job_dat->Schullehrer</li>
-    <li>place_job_dat->Bodeningenieur</li>
-    <li>place_job_gen->Landarbeiters</li>
-    <li>place_job_gen->Obstpflückers</li>
-    <li>place_job_gen->Transportfahrers</li>
-    <li>place_job_gen->Schullehrers</li>
-    <li>place_job_gen->Bodeningenieurs</li>
+    <li>place_job_mas_nom_indef->[place_job]</li>
+    <li>place_job_mas_nom_def->Landarbeiter</li>
+    <li>place_job_mas_nom_def->Obstpflücker</li>
+    <li>place_job_mas_nom_def->Transportfahrer</li>
+    <li>place_job_mas_nom_def->Schullehrer</li>
+    <li>place_job_mas_nom_def->Bodeningenieur</li>
+    <li>place_job_mas_dat_indef->Landarbeiter</li>
+    <li>place_job_mas_dat_indef->Obstpflücker</li>
+    <li>place_job_mas_dat_indef->Transportfahrer</li>
+    <li>place_job_mas_dat_indef->Schullehrer</li>
+    <li>place_job_mas_dat_indef->Bodeningenieur</li>
+    <li>place_job_mas_dat_def->[place_job_mas_dat_indef]</li>
+    <li>place_job_mas_gen_indef->Landarbeiters</li>
+    <li>place_job_mas_gen_indef->Obstpflückers</li>
+    <li>place_job_mas_gen_indef->Transportfahrers</li>
+    <li>place_job_mas_gen_indef->Schullehrers</li>
+    <li>place_job_mas_gen_indef->Bodeningenieurs</li>
+    <li>place_job_mas_gen_def->[place_job_mas_gen_indef]</li>
+    <li>place_job_mas_acc_indef->[place_job_mas_dat_indef]</li>
+    <li>place_job_mas_acc_def->[place_job_mas_acc_indef]</li>
+    <li>place_job_fem_nom_indef->Landarbeiterin</li>
+    <li>place_job_fem_nom_indef->Obstpflückerin</li>
+    <li>place_job_fem_nom_indef->Transportfahrerin</li>
+    <li>place_job_fem_nom_indef->Schullehrerin</li>
+    <li>place_job_fem_nom_indef->Bodeningenieurin</li>
+    <li>place_job_fem_nom_def->[place_job_fem_nom_indef]</li>
+    <li>place_job_fem_dat_indef->Landarbeiterin</li>
+    <li>place_job_fem_dat_indef->Obstpflückerin</li>
+    <li>place_job_fem_dat_indef->Transportfahrerin</li>
+    <li>place_job_fem_dat_indef->Schullehrerin</li>
+    <li>place_job_fem_dat_indef->Bodeningenieurin</li>
+    <li>place_job_fem_dat_def->[place_job_fem_dat_indef]</li>
+    <li>place_job_fem_gen_indef->[place_job_fem_dat_indef]</li>
+    <li>place_job_fem_gen_def->[place_job_fem_gen_indef]</li>
+    <li>place_job_fem_acc_indef->[place_job_fem_dat_indef]</li>
+    <li>place_job_fem_acc_def->[place_job_fem_acc_indef]</li>
+    <li>place_personalWeapon->Gewehr</li>
+    <li>place_personalWeapon->Sense</li>
     <li>place_personalWeapon_neu->Gewehr</li>
     <li>place_personalWeapon_fem->Sense</li>
     <li>place_personalWeapons->Gewehre</li>
@@ -475,12 +823,31 @@
     <li>place_massWeapon_acc->eine Weltraumlinse</li>
     <li>place_massWeapon_dat->einer Weltraumlinse</li>
     <li>place_foeLeader->Landbesitzer</li>
-    <li>place_foeLeader_def->Landbesitzer</li>
-    <li>place_foeLeader_dat->Landbesitzer</li>
-    <li>place_foeLeader_gen->Landbesitzers</li>
+    <li>place_foeLeader_mas_nom_indef->[place_foeLeader]</li>
+    <li>place_foeLeader_mas_nom_def->Landbesitzer</li>
+    <li>place_foeLeader_mas_dat_indef->Landbesitzer</li>
+    <li>place_foeLeader_mas_dat_def->[place_foeLeader_mas_dat_indef]</li>
+    <li>place_foeLeader_mas_gen_indef->Landbesitzers</li>
+    <li>place_foeLeader_mas_gen_def->[place_foeLeader_mas_gen_indef]</li>
+    <li>place_foeLeader_mas_acc_indef->[place_foeLeader_mas_dat_indef]</li>
+    <li>place_foeLeader_mas_acc_def->[place_foeLeader_mas_acc_indef]</li>
+    <li>place_foeLeader_fem_nom_indef->Landbesitzerin</li>
+    <li>place_foeLeader_fem_nom_def->[place_foeLeader_fem_nom_indef]</li>
+    <li>place_foeLeader_fem_dat_indef->Landbesitzerin</li>
+    <li>place_foeLeader_fem_dat_def->[place_foeLeader_fem_dat_indef]</li>
+    <li>place_foeLeader_fem_gen_indef->[place_foeLeader_fem_dat_indef]</li>
+    <li>place_foeLeader_fem_gen_def->[place_foeLeader_fem_gen_indef]</li>
+    <li>place_foeLeader_fem_acc_indef->[place_foeLeader_fem_dat_indef]</li>
+    <li>place_foeLeader_fem_acc_def->[place_foeLeader_fem_acc_indef]</li>
     <li>place_foeSoldiers->Milizsoldaten</li>
-    <li>place_foeSoldiers_def->Milizsoldaten</li>
-    <li>place_foeSoldiers_dat->Milizsoldaten</li>
+    <li>place_foeSoldiers_nom_indef->[place_foeSoldiers]</li>
+    <li>place_foeSoldiers_nom_def->Milizsoldaten</li>
+    <li>place_foeSoldiers_gen_indef->Milizsoldaten</li>
+    <li>place_foeSoldiers_gen_def->Milizsoldaten</li>
+    <li>place_foeSoldiers_dat_indef->Milizsoldaten</li>
+    <li>place_foeSoldiers_dat_def->Milizsoldaten</li>
+    <li>place_foeSoldiers_acc_indef->Milizsoldaten</li>
+    <li>place_foeSoldiers_acc_def->Milizsoldaten</li>
   </Filson.placeRules.rulesStrings>
   
   <!-- EN:
@@ -506,20 +873,33 @@
   <Ilwaba.placeRules.rulesStrings>
     <li>place_name->Ilwaba</li>
     <li>place_adjective->ilwabanisch</li>
+    <li>place_summary->wiederbelebte Ruinenwelt</li>
     <li>place_summary_fem->wiederbelebte Ruinenwelt</li>
     <li>place_summary_fem_def->wiederbelebte Ruinenwelt</li>
     <li>place_summary_fem_acc->wiederbelebte Ruinenwelt</li>
     <li>place_summary_fem_dat->wiederbelebten Ruinenwelt</li>
     <li>place_summary_fem_gen->wiederbelebten Ruinenwelt</li>
-    <li>place_community_fem->Hochhaussiedlung</li>
-    <li>place_community_fem->Autobahnraststätte</li>
-    <li>place_community_fem->Ödlandoase</li>
-    <li>place_community_fem_acc->Hochhaussiedlung</li>
-    <li>place_community_fem_acc->Autobahnraststätte</li>
-    <li>place_community_fem_acc->Ödlandoase</li>
-    <li>place_community_fem_dat->Hochhaussiedlung</li>
-    <li>place_community_fem_dat->Autobahnraststätte</li>
-    <li>place_community_fem_dat->Ödlandoase</li>
+    <li>place_community->Hochhaussiedlung</li>
+    <li>place_community->Autobahnraststätte</li>
+    <li>place_community->Ödlandoase</li>
+    <li>place_community_fem_nom_indef->Hochhaussiedlung</li>
+    <li>place_community_fem_nom_indef->Autobahnraststätte</li>
+    <li>place_community_fem_nom_indef->Ödlandoase</li>
+    <li>place_community_fem_acc_indef->Hochhaussiedlung</li>
+    <li>place_community_fem_acc_indef->Autobahnraststätte</li>
+    <li>place_community_fem_acc_indef->Ödlandoase</li>
+    <li>place_community_fem_dat_indef->Hochhaussiedlung</li>
+    <li>place_community_fem_dat_indef->Autobahnraststätte</li>
+    <li>place_community_fem_dat_indef->Ödlandoase</li>
+    <li>place_community_fem_nom_def->Hochhaussiedlung</li>
+    <li>place_community_fem_nom_def->Autobahnraststätte</li>
+    <li>place_community_fem_nom_def->Ödlandoase</li>
+    <li>place_community_fem_acc_def->Hochhaussiedlung</li>
+    <li>place_community_fem_acc_def->Autobahnraststätte</li>
+    <li>place_community_fem_acc_def->Ödlandoase</li>
+    <li>place_community_fem_dat_def->Hochhaussiedlung</li>
+    <li>place_community_fem_dat_def->Autobahnraststätte</li>
+    <li>place_community_fem_dat_def->Ödlandoase</li>
     <li>place_powerCenter->Haus der Wiederbelebung</li>
     <li>place_powerCenter_neu->Haus der Wiederbelebung</li>
     <li>place_powerCenter_neu_acc->Haus der Wiederbelebung</li>
@@ -529,16 +909,44 @@
     <li>place_job->Artefaktjäger</li>
     <li>place_job->Tunnelläufer</li>
     <li>place_job->Artefaktrestaurator</li>
-    <li>place_job_dat->Crete-Farmer</li>
-    <li>place_job_dat->Wegbereiter</li>
-    <li>place_job_dat->Artefaktjäger</li>
-    <li>place_job_dat->Tunnelläufer</li>
-    <li>place_job_dat->Artefaktrestaurator</li>
-    <li>place_job_gen->Crete-Farmers</li>
-    <li>place_job_gen->Wegbereiters</li>
-    <li>place_job_gen->Artefaktjägers</li>
-    <li>place_job_gen->Tunnelläufers</li>
-    <li>place_job_gen->Artefaktrestaurators</li>
+    <li>place_job_mas_nom_indef->[place_job]</li>
+    <li>place_job_mas_nom_def->Crete-Farmer</li>
+    <li>place_job_mas_nom_def->Wegbereiter</li>
+    <li>place_job_mas_nom_def->Artefaktjäger</li>
+    <li>place_job_mas_nom_def->Tunnelläufer</li>
+    <li>place_job_mas_nom_def->Artefaktrestaurator</li>
+    <li>place_job_mas_dat_indef->Crete-Farmer</li>
+    <li>place_job_mas_dat_indef->Wegbereiter</li>
+    <li>place_job_mas_dat_indef->Artefaktjäger</li>
+    <li>place_job_mas_dat_indef->Tunnelläufer</li>
+    <li>place_job_mas_dat_indef->Artefaktrestaurator</li>
+    <li>place_job_mas_dat_def->[place_job_mas_dat_indef]</li>
+    <li>place_job_mas_gen_indef->Crete-Farmers</li>
+    <li>place_job_mas_gen_indef->Wegbereiters</li>
+    <li>place_job_mas_gen_indef->Artefaktjägers</li>
+    <li>place_job_mas_gen_indef->Tunnelläufers</li>
+    <li>place_job_mas_gen_indef->Artefaktrestaurators</li>
+    <li>place_job_mas_gen_def->[place_job_mas_gen_indef]</li>
+    <li>place_job_mas_acc_indef->[place_job_mas_dat_indef]</li>
+    <li>place_job_mas_acc_def->[place_job_mas_acc_indef]</li>
+    <li>place_job_fem_nom_indef->Crete-Farmerin</li>
+    <li>place_job_fem_nom_indef->Wegbereiterin</li>
+    <li>place_job_fem_nom_indef->Artefaktjägerin</li>
+    <li>place_job_fem_nom_indef->Tunnelläuferin</li>
+    <li>place_job_fem_nom_indef->Artefaktrestauratorin</li>
+    <li>place_job_fem_nom_def->[place_job_fem_nom_indef]</li>
+    <li>place_job_fem_dat_indef->Crete-Farmerin</li>
+    <li>place_job_fem_dat_indef->Wegbereiterin</li>
+    <li>place_job_fem_dat_indef->Artefaktjägerin</li>
+    <li>place_job_fem_dat_indef->Tunnelläuferin</li>
+    <li>place_job_fem_dat_indef->Artefaktrestauratorin</li>
+    <li>place_job_fem_dat_def->[place_job_fem_dat_indef]</li>
+    <li>place_job_fem_gen_indef->[place_job_fem_dat_indef]</li>
+    <li>place_job_fem_gen_def->[place_job_fem_gen_indef]</li>
+    <li>place_job_fem_acc_indef->[place_job_fem_dat_indef]</li>
+    <li>place_job_fem_acc_def->[place_job_fem_acc_indef]</li>
+    <li>place_personalWeapon->Schrottschwert</li>
+    <li>place_personalWeapon->Zackendolch</li>
     <li>place_personalWeapon_neu->Schrottschwert</li>
     <li>place_personalWeapon_mas->Zackendolch</li>
     <li>place_personalWeapons->Schrottschwerter</li>
@@ -552,12 +960,31 @@
     <li>place_massWeapon_acc->eine antike Giftbombe</li>
     <li>place_massWeapon_dat->einen antiken Giftbombe</li>
     <li>place_foeLeader->Kryptoführer</li>
-    <li>place_foeLeader_def->Kryptoführer</li>
-    <li>place_foeLeader_dat->Kryptoführer</li>
-    <li>place_foeLeader_gen->Kryptoführers</li>
+    <li>place_foeLeader_mas_nom_indef->[place_foeLeader]</li>
+    <li>place_foeLeader_mas_nom_def->Kryptoführer</li>
+    <li>place_foeLeader_mas_dat_indef->Kryptoführer</li>
+    <li>place_foeLeader_mas_dat_def->[place_foeLeader_mas_dat_indef]</li>
+    <li>place_foeLeader_mas_gen_indef->Kryptoführers</li>
+    <li>place_foeLeader_mas_gen_def->[place_foeLeader_mas_gen_indef]</li>
+    <li>place_foeLeader_mas_acc_indef->[place_foeLeader_mas_dat_indef]</li>
+    <li>place_foeLeader_mas_acc_def->[place_foeLeader_mas_acc_indef]</li>
+    <li>place_foeLeader_fem_nom_indef->Kryptoführerin</li>
+    <li>place_foeLeader_fem_nom_def->[place_foeLeader_fem_nom_indef]</li>
+    <li>place_foeLeader_fem_dat_indef->Kryptoführerin</li>
+    <li>place_foeLeader_fem_dat_def->[place_foeLeader_fem_dat_indef]</li>
+    <li>place_foeLeader_fem_gen_indef->[place_foeLeader_fem_dat_indef]</li>
+    <li>place_foeLeader_fem_gen_def->[place_foeLeader_fem_gen_indef]</li>
+    <li>place_foeLeader_fem_acc_indef->[place_foeLeader_fem_dat_indef]</li>
+    <li>place_foeLeader_fem_acc_def->[place_foeLeader_fem_acc_indef]</li>
     <li>place_foeSoldiers->Kryptosoldaten</li>
-    <li>place_foeSoldiers_def->Kryptosoldaten</li>
-    <li>place_foeSoldiers_dat->Kryptosoldaten</li>
+    <li>place_foeSoldiers_nom_indef->[place_foeSoldiers]</li>
+    <li>place_foeSoldiers_nom_def->Kryptosoldaten</li>
+    <li>place_foeSoldiers_gen_indef->Kryptosoldaten</li>
+    <li>place_foeSoldiers_gen_def->Kryptosoldaten</li>
+    <li>place_foeSoldiers_dat_indef->Kryptosoldaten</li>
+    <li>place_foeSoldiers_dat_def->Kryptosoldaten</li>
+    <li>place_foeSoldiers_acc_indef->Kryptosoldaten</li>
+    <li>place_foeSoldiers_acc_def->Kryptosoldaten</li>
   </Ilwaba.placeRules.rulesStrings>
   
   <!-- EN:
@@ -584,20 +1011,33 @@
   <Iwamura.placeRules.rulesStrings>
     <li>place_name->Iwamura</li>
     <li>place_adjective->iwamurisch</li>
+    <li>place_summary->steiniger Asteroid</li>
     <li>place_summary_mas->steiniger Asteroid</li>
     <li>place_summary_mas_def->steinige Asteroid</li>
     <li>place_summary_mas_acc->steinigen Asteroiden</li>
     <li>place_summary_mas_dat->steinigen Asteroiden</li>
     <li>place_summary_mas_gen->steinigen Asteroiden</li>
-    <li>place_community_fem->Marktkapsel</li>
-    <li>place_community_fem->Lagerkapsel</li>
-    <li>place_community_neu->Dock</li>
-    <li>place_community_fem_acc->Marktkapsel</li>
-    <li>place_community_fem_acc->Lagerkapsel</li>
-    <li>place_community_neu_acc->Dock</li>
-    <li>place_community_fem_dat->Marktkapsel</li>
-    <li>place_community_fem_dat->Lagerkapsel</li>
-    <li>place_community_neu_dat->Dock</li>
+    <li>place_community->Marktkapsel</li>
+    <li>place_community->Lagerkapsel</li>
+    <li>place_community->Dock</li>
+    <li>place_community_fem_nom_indef->Marktkapsel</li>
+    <li>place_community_fem_nom_indef->Lagerkapsel</li>
+    <li>place_community_neu_nom_indef->Dock</li>
+    <li>place_community_fem_acc_indef->Marktkapsel</li>
+    <li>place_community_fem_acc_indef->Lagerkapsel</li>
+    <li>place_community_neu_acc_indef->Dock</li>
+    <li>place_community_fem_dat_indef->Marktkapsel</li>
+    <li>place_community_fem_dat_indef->Lagerkapsel</li>
+    <li>place_community_neu_dat_indef->Dock</li>
+    <li>place_community_fem_nom_def->Marktkapsel</li>
+    <li>place_community_fem_nom_def->Lagerkapsel</li>
+    <li>place_community_neu_nom_def->Dock</li>
+    <li>place_community_fem_acc_def->Marktkapsel</li>
+    <li>place_community_fem_acc_def->Lagerkapsel</li>
+    <li>place_community_neu_acc_def->Dock</li>
+    <li>place_community_fem_dat_def->Marktkapsel</li>
+    <li>place_community_fem_dat_def->Lagerkapsel</li>
+    <li>place_community_neu_dat_def->Dock</li>
     <li>place_powerCenter->Stationsbrücke</li>
     <li>place_powerCenter_fem->Stationsbrücke</li>
     <li>place_powerCenter_fem_acc->Stationsbrücke</li>
@@ -607,16 +1047,44 @@
     <li>place_job->Fluglotse</li>
     <li>place_job->Zero-G-Sportler</li>
     <li>place_job->Radiomoderator</li>
-    <li>place_job_dat->Lebenserhaltungsingenieur</li>
-    <li>place_job_dat->Händler</li>
-    <li>place_job_dat->Fluglotsen</li>
-    <li>place_job_dat->Zero-G-Sportler</li>
-    <li>place_job_dat->Radiomoderator</li>
-    <li>place_job_gen->Lebenserhaltungsingenieurs</li>
-    <li>place_job_gen->Händlers</li>
-    <li>place_job_gen->Fluglotsen</li>
-    <li>place_job_gen->Zero-G-Sportlers</li>
-    <li>place_job_gen->Radiomoderators</li>
+    <li>place_job_mas_nom_indef->[place_job]</li>
+    <li>place_job_mas_nom_def->Lebenserhaltungsingenieur</li>
+    <li>place_job_mas_nom_def->Händler</li>
+    <li>place_job_mas_nom_def->Fluglotse</li>
+    <li>place_job_mas_nom_def->Zero-G-Sportler</li>
+    <li>place_job_mas_nom_def->Radiomoderator</li>
+    <li>place_job_mas_dat_indef->Lebenserhaltungsingenieur</li>
+    <li>place_job_mas_dat_indef->Händler</li>
+    <li>place_job_mas_dat_indef->Fluglotsen</li>
+    <li>place_job_mas_dat_indef->Zero-G-Sportler</li>
+    <li>place_job_mas_dat_indef->Radiomoderator</li>
+    <li>place_job_mas_dat_def->[place_job_mas_dat_indef]</li>
+    <li>place_job_mas_gen_indef->Lebenserhaltungsingenieurs</li>
+    <li>place_job_mas_gen_indef->Händlers</li>
+    <li>place_job_mas_gen_indef->Fluglotsen</li>
+    <li>place_job_mas_gen_indef->Zero-G-Sportlers</li>
+    <li>place_job_mas_gen_indef->Radiomoderators</li>
+    <li>place_job_mas_gen_def->[place_job_mas_gen_indef]</li>
+    <li>place_job_mas_acc_indef->[place_job_mas_dat_indef]</li>
+    <li>place_job_mas_acc_def->[place_job_mas_acc_indef]</li>
+    <li>place_job_fem_nom_indef->Lebenserhaltungsingenieurin</li>
+    <li>place_job_fem_nom_indef->Händlerin</li>
+    <li>place_job_fem_nom_indef->Fluglotsin</li>
+    <li>place_job_fem_nom_indef->Zero-G-Sportlerin</li>
+    <li>place_job_fem_nom_indef->Radiomoderatorin</li>
+    <li>place_job_fem_nom_def->[place_job_fem_nom_indef]</li>
+    <li>place_job_fem_dat_indef->Lebenserhaltungsingenieurin</li>
+    <li>place_job_fem_dat_indef->Händlerin</li>
+    <li>place_job_fem_dat_indef->Fluglotsin</li>
+    <li>place_job_fem_dat_indef->Zero-G-Sportlerin</li>
+    <li>place_job_fem_dat_indef->Radiomoderatorin</li>
+    <li>place_job_fem_dat_def->[place_job_fem_dat_indef]</li>
+    <li>place_job_fem_gen_indef->[place_job_fem_dat_indef]</li>
+    <li>place_job_fem_gen_def->[place_job_fem_gen_indef]</li>
+    <li>place_job_fem_acc_indef->[place_job_fem_dat_indef]</li>
+    <li>place_job_fem_acc_def->[place_job_fem_acc_indef]</li>
+    <li>place_personalWeapon->Impulsgewehr</li>
+    <li>place_personalWeapon->Schweißbrenner</li>
     <li>place_personalWeapon_neu->Impulsgewehr</li>
     <li>place_personalWeapon_mas->Schweißbrenner</li>
     <li>place_personalWeapons->Impulsgewehre</li>
@@ -632,13 +1100,32 @@
     <li>place_massWeapon->ein Lebenserhaltungsvirus</li>
     <li>place_massWeapon_acc->einen Lebenserhaltungsvirus</li>
     <li>place_massWeapon_dat->einem Lebenserhaltungsvirus</li>
-    <li>place_foeLeader->Großkonzern-CEO</li>
-    <li>place_foeLeader_def->Großkonzern-CEO</li>
-    <li>place_foeLeader_dat->Großkonzern-CEO</li>
-    <li>place_foeLeader_gen->Großkonzern-CEOs</li>
-    <li>place_foeSoldiers->Mietpolizisten</li>
-    <li>place_foeSoldiers_def->Mietpolizisten</li>
-    <li>place_foeSoldiers_dat->Mietpolizisten</li>
+    <li>place_foeLeader->Megakonzernchef</li>
+    <li>place_foeLeader_mas_nom_indef->[place_foeLeader]</li>
+    <li>place_foeLeader_mas_nom_def->Megakonzernchef</li>
+    <li>place_foeLeader_mas_dat_indef->Megakonzernchef</li>
+    <li>place_foeLeader_mas_dat_def->[place_foeLeader_mas_dat_indef]</li>
+    <li>place_foeLeader_mas_gen_indef->Megakonzernchefs</li>
+    <li>place_foeLeader_mas_gen_def->[place_foeLeader_mas_gen_indef]</li>
+    <li>place_foeLeader_mas_acc_indef->[place_foeLeader_mas_dat_indef]</li>
+    <li>place_foeLeader_mas_acc_def->[place_foeLeader_mas_acc_indef]</li>
+    <li>place_foeLeader_fem_nom_indef->Megakonzernchefin</li>
+    <li>place_foeLeader_fem_nom_def->[place_foeLeader_fem_nom_indef]</li>
+    <li>place_foeLeader_fem_dat_indef->Megakonzernchefin</li>
+    <li>place_foeLeader_fem_dat_def->[place_foeLeader_fem_dat_indef]</li>
+    <li>place_foeLeader_fem_gen_indef->[place_foeLeader_fem_dat_indef]</li>
+    <li>place_foeLeader_fem_gen_def->[place_foeLeader_fem_gen_indef]</li>
+    <li>place_foeLeader_fem_acc_indef->[place_foeLeader_fem_dat_indef]</li>
+    <li>place_foeLeader_fem_acc_def->[place_foeLeader_fem_acc_indef]</li>
+    <li>place_foeSoldiers->Sicherheitskräfte</li>
+    <li>place_foeSoldiers_nom_indef->[place_foeSoldiers]</li>
+    <li>place_foeSoldiers_nom_def->Sicherheitskräfte</li>
+    <li>place_foeSoldiers_gen_indef->Sicherheitskräfte</li>
+    <li>place_foeSoldiers_gen_def->Sicherheitskräfte</li>
+    <li>place_foeSoldiers_dat_indef->Sicherheitskräften</li>
+    <li>place_foeSoldiers_dat_def->Sicherheitskräften</li>
+    <li>place_foeSoldiers_acc_indef->Sicherheitskräfte</li>
+    <li>place_foeSoldiers_acc_def->Sicherheitskräfte</li>
   </Iwamura.placeRules.rulesStrings>
   
   <!-- EN:
@@ -665,20 +1152,33 @@
   <Kemia.placeRules.rulesStrings>
     <li>place_name->Kemia</li>
     <li>place_adjective->kemianisch</li>
+    <li>place_summary->toxische Kriegswelt</li>
     <li>place_summary_fem->toxische Kriegswelt</li>
     <li>place_summary_fem_def->toxische Kriegswelt</li>
     <li>place_summary_fem_acc->toxische Kriegswelt</li>
     <li>place_summary_fem_dat->toxischen Kriegswelt</li>
     <li>place_summary_fem_gen->toxischen Kriegswelt</li>
-    <li>place_community_neu->Elendsviertel</li>
-    <li>place_community_fem->Tunnelkolonie</li>
-    <li>place_community_fem->Unterstadt</li>
-    <li>place_community_neu_acc->Elendsviertel</li>
-    <li>place_community_fem_acc->Tunnelkolonie</li>
-    <li>place_community_fem_acc->Unterstadt</li>
-    <li>place_community_neu_dat->Elendsviertel</li>
-    <li>place_community_fem_dat->Tunnelkolonie</li>
-    <li>place_community_fem_dat->Unterstadt</li>
+    <li>place_community->Elendsviertel</li>
+    <li>place_community->Tunnelkolonie</li>
+    <li>place_community->Unterstadt</li>
+    <li>place_community_neu_nom_indef->Elendsviertel</li>
+    <li>place_community_fem_nom_indef->Tunnelkolonie</li>
+    <li>place_community_fem_nom_indef->Unterstadt</li>
+    <li>place_community_neu_acc_indef->Elendsviertel</li>
+    <li>place_community_fem_acc_indef->Tunnelkolonie</li>
+    <li>place_community_fem_acc_indef->Unterstadt</li>
+    <li>place_community_neu_dat_indef->Elendsviertel</li>
+    <li>place_community_fem_dat_indef->Tunnelkolonie</li>
+    <li>place_community_fem_dat_indef->Unterstadt</li>
+    <li>place_community_neu_nom_def->Elendsviertel</li>
+    <li>place_community_fem_nom_def->Tunnelkolonie</li>
+    <li>place_community_fem_nom_def->Unterstadt</li>
+    <li>place_community_neu_acc_def->Elendsviertel</li>
+    <li>place_community_fem_acc_def->Tunnelkolonie</li>
+    <li>place_community_fem_acc_def->Unterstadt</li>
+    <li>place_community_neu_dat_def->Elendsviertel</li>
+    <li>place_community_fem_dat_def->Tunnelkolonie</li>
+    <li>place_community_fem_dat_def->Unterstadt</li>
     <li>place_powerCenter->Herrenhaus</li>
     <li>place_powerCenter_neu->Herrenhaus</li>
     <li>place_powerCenter_neu_acc->Herrenhaus</li>
@@ -688,16 +1188,44 @@
     <li>place_job->Proteinfarmer</li>
     <li>place_job->Taxifahrer</li>
     <li>place_job->Waffenhersteller</li>
-    <li>place_job_dat->Straßenfeger</li>
-    <li>place_job_dat->Reinigungsingenieur</li>
-    <li>place_job_dat->Proteinfarmer</li>
-    <li>place_job_dat->Taxifahrer</li>
-    <li>place_job_dat->Waffenhersteller</li>
-    <li>place_job_gen->Straßenfegers</li>
-    <li>place_job_gen->Reinigungsingenieurs</li>
-    <li>place_job_gen->Proteinfarmers</li>
-    <li>place_job_gen->Taxifahrers</li>
-    <li>place_job_gen->Waffenherstellers</li>
+    <li>place_job_mas_nom_indef->[place_job]</li>
+    <li>place_job_mas_nom_def->Straßenfeger</li>
+    <li>place_job_mas_nom_def->Reinigungsingenieur</li>
+    <li>place_job_mas_nom_def->Proteinfarmer</li>
+    <li>place_job_mas_nom_def->Taxifahrer</li>
+    <li>place_job_mas_nom_def->Waffenhersteller</li>
+    <li>place_job_mas_dat_indef->Straßenfeger</li>
+    <li>place_job_mas_dat_indef->Reinigungsingenieur</li>
+    <li>place_job_mas_dat_indef->Proteinfarmer</li>
+    <li>place_job_mas_dat_indef->Taxifahrer</li>
+    <li>place_job_mas_dat_indef->Waffenhersteller</li>
+    <li>place_job_mas_dat_def->[place_job_mas_dat_indef]</li>
+    <li>place_job_mas_gen_indef->Straßenfegers</li>
+    <li>place_job_mas_gen_indef->Reinigungsingenieurs</li>
+    <li>place_job_mas_gen_indef->Proteinfarmers</li>
+    <li>place_job_mas_gen_indef->Taxifahrers</li>
+    <li>place_job_mas_gen_indef->Waffenherstellers</li>
+    <li>place_job_mas_gen_def->[place_job_mas_gen_indef]</li>
+    <li>place_job_mas_acc_indef->[place_job_mas_dat_indef]</li>
+    <li>place_job_mas_acc_def->[place_job_mas_acc_indef]</li>
+    <li>place_job_fem_nom_indef->Straßenfegerin</li>
+    <li>place_job_fem_nom_indef->Reinigungsingenieurin</li>
+    <li>place_job_fem_nom_indef->Proteinfarmerin</li>
+    <li>place_job_fem_nom_indef->Taxifahrerin</li>
+    <li>place_job_fem_nom_indef->Waffenherstellerin</li>
+    <li>place_job_fem_nom_def->[place_job_fem_nom_indef]</li>
+    <li>place_job_fem_dat_indef->Straßenfegerin</li>
+    <li>place_job_fem_dat_indef->Reinigungsingenieurin</li>
+    <li>place_job_fem_dat_indef->Proteinfarmerin</li>
+    <li>place_job_fem_dat_indef->Taxifahrerin</li>
+    <li>place_job_fem_dat_indef->Waffenherstellerin</li>
+    <li>place_job_fem_dat_def->[place_job_fem_dat_indef]</li>
+    <li>place_job_fem_gen_indef->[place_job_fem_dat_indef]</li>
+    <li>place_job_fem_gen_def->[place_job_fem_gen_indef]</li>
+    <li>place_job_fem_acc_indef->[place_job_fem_dat_indef]</li>
+    <li>place_job_fem_acc_def->[place_job_fem_acc_indef]</li>
+    <li>place_personalWeapon->Gasbombe</li>
+    <li>place_personalWeapon->Giftwerfer</li>
     <li>place_personalWeapon_fem->Gasbombe</li>
     <li>place_personalWeapon_mas->Giftwerfer</li>
     <li>place_personalWeapons->Gasbomben</li>
@@ -707,19 +1235,38 @@
     <li>place_massWeapon->Atombomben</li>
     <li>place_massWeapon_acc->Atombomben</li>
     <li>place_massWeapon_dat->Atombomben</li>
-    <li>place_massWeapon->eine biotechnisch erzeugte Seuche</li>
-    <li>place_massWeapon_acc->eine biotechnisch erzeugte Seuche</li>
-    <li>place_massWeapon_dat->einer biotechnisch erzeugten Seuche</li>
-    <li>place_massWeapon->penetrierende Giftbomben</li>
-    <li>place_massWeapon_acc->penetrierende Giftbomben</li>
-    <li>place_massWeapon_dat->penetrierenden Giftbomben</li>
+    <li>place_massWeapon->eine genmanipulierte Seuche</li>
+    <li>place_massWeapon_acc->eine genmanipulierte Seuche</li>
+    <li>place_massWeapon_dat->einer genmanipulierten Seuche</li>
+    <li>place_massWeapon->panzerbrechende Giftbomben</li>
+    <li>place_massWeapon_acc->panzerbrechende Giftbomben</li>
+    <li>place_massWeapon_dat->panzerbrechenden Giftbomben</li>
     <li>place_foeLeader->Giftlord</li>
-    <li>place_foeLeader_def->Giftlord</li>
-    <li>place_foeLeader_dat->Giftlord</li>
-    <li>place_foeLeader_gen->Giftlords</li>
+    <li>place_foeLeader_mas_nom_indef->[place_foeLeader]</li>
+    <li>place_foeLeader_mas_nom_def->Giftlord</li>
+    <li>place_foeLeader_mas_dat_indef->Giftlord</li>
+    <li>place_foeLeader_mas_dat_def->[place_foeLeader_mas_dat_indef]</li>
+    <li>place_foeLeader_mas_gen_indef->Giftlords</li>
+    <li>place_foeLeader_mas_gen_def->[place_foeLeader_mas_gen_indef]</li>
+    <li>place_foeLeader_mas_acc_indef->[place_foeLeader_mas_dat_indef]</li>
+    <li>place_foeLeader_mas_acc_def->[place_foeLeader_mas_acc_indef]</li>
+    <li>place_foeLeader_fem_nom_indef->Giftlady</li>
+    <li>place_foeLeader_fem_nom_def->[place_foeLeader_fem_nom_indef]</li>
+    <li>place_foeLeader_fem_dat_indef->Giftlady</li>
+    <li>place_foeLeader_fem_dat_def->[place_foeLeader_fem_dat_indef]</li>
+    <li>place_foeLeader_fem_gen_indef->[place_foeLeader_fem_dat_indef]</li>
+    <li>place_foeLeader_fem_gen_def->[place_foeLeader_fem_gen_indef]</li>
+    <li>place_foeLeader_fem_acc_indef->[place_foeLeader_fem_dat_indef]</li>
+    <li>place_foeLeader_fem_acc_def->[place_foeLeader_fem_acc_indef]</li>
     <li>place_foeSoldiers->Giftsoldaten</li>
-    <li>place_foeSoldiers_def->Giftsoldaten</li>
-    <li>place_foeSoldiers_dat->Giftsoldaten</li>
+    <li>place_foeSoldiers_nom_indef->[place_foeSoldiers]</li>
+    <li>place_foeSoldiers_nom_def->Giftsoldaten</li>
+    <li>place_foeSoldiers_gen_indef->Giftsoldaten</li>
+    <li>place_foeSoldiers_gen_def->Giftsoldaten</li>
+    <li>place_foeSoldiers_dat_indef->Giftsoldaten</li>
+    <li>place_foeSoldiers_dat_def->Giftsoldaten</li>
+    <li>place_foeSoldiers_acc_indef->Giftsoldaten</li>
+    <li>place_foeSoldiers_acc_def->Giftsoldaten</li>
   </Kemia.placeRules.rulesStrings>
   
   <!-- EN:
@@ -745,20 +1292,33 @@
   <Lutuni.placeRules.rulesStrings>
     <li>place_name->Lutuni</li>
     <li>place_adjective->lutunisch</li>
+    <li>place_summary->Regenwaldparadies</li>
     <li>place_summary_neu->Regenwaldparadies</li>
     <li>place_summary_neu_def->Regenwaldparadies</li>
     <li>place_summary_neu_acc->Regenwaldparadies</li>
     <li>place_summary_neu_dat->Regenwaldparadies</li>
     <li>place_summary_neu_gen->Regenwaldparadieses</li>
-    <li>place_community_fem->Augmentierungsklinik</li>
-    <li>place_community_fem->Hyper-Yacht</li>
-    <li>place_community_neu->schwereloses Stadion</li>
-    <li>place_community_fem_acc->Augmentierungsklinik</li>
-    <li>place_community_fem_acc->Hyper-Yacht</li>
-    <li>place_community_neu_acc->schwereloses Stadion</li>
-    <li>place_community_fem_dat->Augmentierungsklinik</li>
-    <li>place_community_fem_dat->Hyper-Yacht</li>
-    <li>place_community_neu_dat->schwerelosen Stadion</li>
+    <li>place_community->Augmentierungsklinik</li>
+    <li>place_community->Hyper-Yacht</li>
+    <li>place_community->schwereloses Stadion</li>
+    <li>place_community_fem_nom_indef->Augmentierungsklinik</li>
+    <li>place_community_fem_nom_indef->Hyper-Yacht</li>
+    <li>place_community_neu_nom_indef->schwereloses Stadion</li>
+    <li>place_community_fem_acc_indef->Augmentierungsklinik</li>
+    <li>place_community_fem_acc_indef->Hyper-Yacht</li>
+    <li>place_community_neu_acc_indef->schwereloses Stadion</li>
+    <li>place_community_fem_dat_indef->Augmentierungsklinik</li>
+    <li>place_community_fem_dat_indef->Hyper-Yacht</li>
+    <li>place_community_neu_dat_indef->schwerelosen Stadion</li>
+    <li>place_community_fem_nom_def->Augmentierungsklinik</li>
+    <li>place_community_fem_nom_def->Hyper-Yacht</li>
+    <li>place_community_neu_nom_def->schwerelose Stadion</li>
+    <li>place_community_fem_acc_def->Augmentierungsklinik</li>
+    <li>place_community_fem_acc_def->Hyper-Yacht</li>
+    <li>place_community_neu_acc_def->schwerelose Stadion</li>
+    <li>place_community_fem_dat_def->Augmentierungsklinik</li>
+    <li>place_community_fem_dat_def->Hyper-Yacht</li>
+    <li>place_community_neu_dat_def->schwerelosen Stadion</li>
     <li>place_powerCenter->Weltraumliftkomplex</li>
     <li>place_powerCenter_mas->Weltraumliftkomplex</li>
     <li>place_powerCenter_mas_acc->Weltraumliftkomplex</li>
@@ -767,17 +1327,45 @@
     <li>place_job->Zero-G-Performer</li>
     <li>place_job->Luziferiumverteiler</li>
     <li>place_job->virtueller Star</li>
-    <li>place_job->Shuttle-Pilot</li>
-    <li>place_job_dat->Fremdenführer</li>
-    <li>place_job_dat->Zero-G-Performer</li>
-    <li>place_job_dat->Luziferiumverteiler</li>
-    <li>place_job_dat->virtuellen Star</li>
-    <li>place_job_dat->Shuttle-Piloten</li>
-    <li>place_job_gen->Fremdenführers</li>
-    <li>place_job_gen->Zero-G-Performers</li>
-    <li>place_job_gen->Luziferiumverteilers</li>
-    <li>place_job_gen->virtuellen Stars</li>
-    <li>place_job_gen->Shuttle-Pilots</li>
+    <li>place_job->Raumfährenpilot</li>
+    <li>place_job_mas_nom_indef->[place_job]</li>
+    <li>place_job_mas_nom_def->Fremdenführer</li>
+    <li>place_job_mas_nom_def->Zero-G-Performer</li>
+    <li>place_job_mas_nom_def->Luziferiumverteiler</li>
+    <li>place_job_mas_nom_def->virtuelle Star</li>
+    <li>place_job_mas_nom_def->Raumfährenpilot</li>
+    <li>place_job_mas_dat_indef->Fremdenführer</li>
+    <li>place_job_mas_dat_indef->Zero-G-Performer</li>
+    <li>place_job_mas_dat_indef->Luziferiumverteiler</li>
+    <li>place_job_mas_dat_indef->virtuellen Star</li>
+    <li>place_job_mas_dat_indef->Raumfährenpiloten</li>
+    <li>place_job_mas_dat_def->[place_job_mas_dat_indef]</li>
+    <li>place_job_mas_gen_indef->Fremdenführers</li>
+    <li>place_job_mas_gen_indef->Zero-G-Performers</li>
+    <li>place_job_mas_gen_indef->Luziferiumverteilers</li>
+    <li>place_job_mas_gen_indef->virtuellen Stars</li>
+    <li>place_job_mas_gen_indef->Raumfährenpilots</li>
+    <li>place_job_mas_gen_def->[place_job_mas_gen_indef]</li>
+    <li>place_job_mas_acc_indef->[place_job_mas_dat_indef]</li>
+    <li>place_job_mas_acc_def->[place_job_mas_acc_indef]</li>
+    <li>place_job_fem_nom_indef->Fremdenführerin</li>
+    <li>place_job_fem_nom_indef->Zero-G-Performerin</li>
+    <li>place_job_fem_nom_indef->Luziferiumverteilerin</li>
+    <li>place_job_fem_nom_indef->virtuelle Diva</li>
+    <li>place_job_fem_nom_indef->Raumfährenpilotin</li>
+    <li>place_job_fem_nom_def->[place_job_fem_nom_indef]</li>
+    <li>place_job_fem_dat_indef->Fremdenführerin</li>
+    <li>place_job_fem_dat_indef->Zero-G-Performerin</li>
+    <li>place_job_fem_dat_indef->Luziferiumverteilerin</li>
+    <li>place_job_fem_dat_indef->virtuellen Diva</li>
+    <li>place_job_fem_dat_indef->Raumfährenpilotin</li>
+    <li>place_job_fem_dat_def->[place_job_fem_dat_indef]</li>
+    <li>place_job_fem_gen_indef->[place_job_fem_dat_indef]</li>
+    <li>place_job_fem_gen_def->[place_job_fem_gen_indef]</li>
+    <li>place_job_fem_acc_indef->[place_job_fem_dat_indef]</li>
+    <li>place_job_fem_acc_def->[place_job_fem_acc_indef]</li>
+    <li>place_personalWeapon->Vibromesser</li>
+    <li>place_personalWeapon->Impulspistole</li>
     <li>place_personalWeapon_neu->Vibromesser</li>
     <li>place_personalWeapon_fem->Impulspistole</li>
     <li>place_personalWeapons->Vibromesser</li>
@@ -790,13 +1378,32 @@
     <li>place_massWeapon->ein geschmuggeltes Orbitalbombardierung-Zielgerät</li>
     <li>place_massWeapon_acc->ein geschmuggeltes Orbitalbombardierung-Zielgerät</li>
     <li>place_massWeapon_dat->einem geschmuggelten Orbitalbombardierung-Zielgerät</li>
-    <li>place_foeLeader->Entertainment-Mogul</li>
-    <li>place_foeLeader_def->Entertainment-Mogul</li>
-    <li>place_foeLeader_dat->Entertainment-Mogul</li>
-    <li>place_foeLeader_gen->Entertainment-Moguls</li>
+    <li>place_foeLeader->Medienmogul</li>
+    <li>place_foeLeader_mas_nom_indef->[place_foeLeader]</li>
+    <li>place_foeLeader_mas_nom_def->Medienmogul</li>
+    <li>place_foeLeader_mas_dat_indef->Medienmogul</li>
+    <li>place_foeLeader_mas_dat_def->[place_foeLeader_mas_dat_indef]</li>
+    <li>place_foeLeader_mas_gen_indef->Medienmoguls</li>
+    <li>place_foeLeader_mas_gen_def->[place_foeLeader_mas_gen_indef]</li>
+    <li>place_foeLeader_mas_acc_indef->[place_foeLeader_mas_dat_indef]</li>
+    <li>place_foeLeader_mas_acc_def->[place_foeLeader_mas_acc_indef]</li>
+    <li>place_foeLeader_fem_nom_indef->Medienmogulin</li>
+    <li>place_foeLeader_fem_nom_def->[place_foeLeader_fem_nom_indef]</li>
+    <li>place_foeLeader_fem_dat_indef->Medienmogulin</li>
+    <li>place_foeLeader_fem_dat_def->[place_foeLeader_fem_dat_indef]</li>
+    <li>place_foeLeader_fem_gen_indef->[place_foeLeader_fem_dat_indef]</li>
+    <li>place_foeLeader_fem_gen_def->[place_foeLeader_fem_gen_indef]</li>
+    <li>place_foeLeader_fem_acc_indef->[place_foeLeader_fem_dat_indef]</li>
+    <li>place_foeLeader_fem_acc_def->[place_foeLeader_fem_acc_indef]</li>
     <li>place_foeSoldiers->Vollstrecker</li>
-    <li>place_foeSoldiers_def->Vollstrecker</li>
-    <li>place_foeSoldiers_dat->Vollstreckern</li>
+    <li>place_foeSoldiers_nom_indef->[place_foeSoldiers]</li>
+    <li>place_foeSoldiers_nom_def->Vollstrecker</li>
+    <li>place_foeSoldiers_gen_indef->Vollstrecker</li>
+    <li>place_foeSoldiers_gen_def->Vollstrecker</li>
+    <li>place_foeSoldiers_dat_indef->Vollstreckern</li>
+    <li>place_foeSoldiers_dat_def->Vollstreckern</li>
+    <li>place_foeSoldiers_acc_indef->Vollstrecker</li>
+    <li>place_foeSoldiers_acc_def->Vollstrecker</li>
   </Lutuni.placeRules.rulesStrings>
   
   <!-- EN:
@@ -824,23 +1431,40 @@
   <Novaroma.placeRules.rulesStrings>
     <li>place_name->Novaroma</li>
     <li>place_adjective->novaromanisch</li>
+    <li>place_summary->Planetoid</li>
     <li>place_summary_mas->Planetoid</li>
     <li>place_summary_mas_def->Planetoid</li>
     <li>place_summary_mas_acc->Planetoiden</li>
     <li>place_summary_mas_dat->Planetoiden</li>
     <li>place_summary_mas_gen->Planetoiden</li>
-    <li>place_community_fem->Zulassungsbehörde</li>
-    <li>place_community_mas->bewachter Vorort</li>
-    <li>place_community_fem->Oberstadt</li>
-    <li>place_community_fem->Unterstadt</li>
-    <li>place_community_fem_acc->Zulassungsbehörde</li>
-    <li>place_community_mas_acc->bewachten Vorort</li>
-    <li>place_community_fem_acc->Oberstadt</li>
-    <li>place_community_fem_acc->Unterstadt</li>
-    <li>place_community_fem_dat->Zulassungsbehörde</li>
-    <li>place_community_mas_dat->bewachten Vorort</li>
-    <li>place_community_fem_dat->Oberstadt</li>
-    <li>place_community_fem_dat->Unterstadt</li>
+    <li>place_community->Zulassungsbehörde</li>
+    <li>place_community->bewachter Vorort</li>
+    <li>place_community->Oberstadt</li>
+    <li>place_community->Unterstadt</li>
+    <li>place_community_fem_nom_indef->Zulassungsbehörde</li>
+    <li>place_community_mas_nom_indef->bewachter Vorort</li>
+    <li>place_community_fem_nom_indef->Oberstadt</li>
+    <li>place_community_fem_nom_indef->Unterstadt</li>
+    <li>place_community_fem_acc_indef->Zulassungsbehörde</li>
+    <li>place_community_mas_acc_indef->bewachten Vorort</li>
+    <li>place_community_fem_acc_indef->Oberstadt</li>
+    <li>place_community_fem_acc_indef->Unterstadt</li>
+    <li>place_community_fem_dat_indef->Zulassungsbehörde</li>
+    <li>place_community_mas_dat_indef->bewachten Vorort</li>
+    <li>place_community_fem_dat_indef->Oberstadt</li>
+    <li>place_community_fem_dat_indef->Unterstadt</li>
+    <li>place_community_fem_nom_def->Zulassungsbehörde</li>
+    <li>place_community_mas_nom_def->bewachter Vorort</li>
+    <li>place_community_fem_nom_def->Oberstadt</li>
+    <li>place_community_fem_nom_def->Unterstadt</li>
+    <li>place_community_fem_acc_def->Zulassungsbehörde</li>
+    <li>place_community_mas_acc_def->bewachten Vorort</li>
+    <li>place_community_fem_acc_def->Oberstadt</li>
+    <li>place_community_fem_acc_def->Unterstadt</li>
+    <li>place_community_fem_dat_def->Zulassungsbehörde</li>
+    <li>place_community_mas_dat_def->bewachten Vorort</li>
+    <li>place_community_fem_dat_def->Oberstadt</li>
+    <li>place_community_fem_dat_def->Unterstadt</li>
     <li>place_powerCenter->Großstadtrathaus</li>
     <li>place_powerCenter_neu->Großstadtrathaus</li>
     <li>place_powerCenter_neu_acc->Großstadtrathaus</li>
@@ -850,16 +1474,44 @@
     <li>place_job->Lebensmittelkurier</li>
     <li>place_job->Taxifahrer</li>
     <li>place_job->Einzelhändler</li>
-    <li>place_job_dat->Sachbearbeiter</li>
-    <li>place_job_dat->Beamten</li>
-    <li>place_job_dat->Lebensmittelkurier</li>
-    <li>place_job_dat->Taxifahrer</li>
-    <li>place_job_dat->Einzelhändler</li>
-    <li>place_job_gen->Sachbearbeiters</li>
-    <li>place_job_gen->Beamten</li>
-    <li>place_job_gen->Lebensmittelkuriers</li>
-    <li>place_job_gen->Taxifahrers</li>
-    <li>place_job_gen->Einzelhändlers</li>
+    <li>place_job_mas_nom_indef->[place_job]</li>
+    <li>place_job_mas_nom_def->Sachbearbeiter</li>
+    <li>place_job_mas_nom_def->Beamte</li>
+    <li>place_job_mas_nom_def->Lebensmittelkurier</li>
+    <li>place_job_mas_nom_def->Taxifahrer</li>
+    <li>place_job_mas_nom_def->Einzelhändler</li>
+    <li>place_job_mas_dat_indef->Sachbearbeiter</li>
+    <li>place_job_mas_dat_indef->Beamten</li>
+    <li>place_job_mas_dat_indef->Lebensmittelkurier</li>
+    <li>place_job_mas_dat_indef->Taxifahrer</li>
+    <li>place_job_mas_dat_indef->Einzelhändler</li>
+    <li>place_job_mas_dat_def->[place_job_mas_dat_indef]</li>
+    <li>place_job_mas_gen_indef->Sachbearbeiters</li>
+    <li>place_job_mas_gen_indef->Beamten</li>
+    <li>place_job_mas_gen_indef->Lebensmittelkuriers</li>
+    <li>place_job_mas_gen_indef->Taxifahrers</li>
+    <li>place_job_mas_gen_indef->Einzelhändlers</li>
+    <li>place_job_mas_gen_def->[place_job_mas_gen_indef]</li>
+    <li>place_job_mas_acc_indef->[place_job_mas_dat_indef]</li>
+    <li>place_job_mas_acc_def->[place_job_mas_acc_indef]</li>
+    <li>place_job_fem_nom_indef->Sachbearbeiterin</li>
+    <li>place_job_fem_nom_indef->Beamtin</li>
+    <li>place_job_fem_nom_indef->Lebensmittelkurierin</li>
+    <li>place_job_fem_nom_indef->Taxifahrerin</li>
+    <li>place_job_fem_nom_indef->Einzelhändlerin</li>
+    <li>place_job_fem_nom_def->[place_job_fem_nom_indef]</li>
+    <li>place_job_fem_dat_indef->Sachbearbeiterin</li>
+    <li>place_job_fem_dat_indef->Beamtin</li>
+    <li>place_job_fem_dat_indef->Lebensmittelkurierin</li>
+    <li>place_job_fem_dat_indef->Taxifahrerin</li>
+    <li>place_job_fem_dat_indef->Einzelhändlerin</li>
+    <li>place_job_fem_dat_def->[place_job_fem_dat_indef]</li>
+    <li>place_job_fem_gen_indef->[place_job_fem_dat_indef]</li>
+    <li>place_job_fem_gen_def->[place_job_fem_gen_indef]</li>
+    <li>place_job_fem_acc_indef->[place_job_fem_dat_indef]</li>
+    <li>place_job_fem_acc_def->[place_job_fem_acc_indef]</li>
+    <li>place_personalWeapon->Revolver</li>
+    <li>place_personalWeapon->Messer</li>
     <li>place_personalWeapon_mas->Revolver</li>
     <li>place_personalWeapon_neu->Messer</li>
     <li>place_personalWeapons->Revolver</li>
@@ -875,13 +1527,32 @@
     <li>place_massWeapon->eine nukleare Kofferbombe</li>
     <li>place_massWeapon_acc->eine nukleare Kofferbombe</li>
     <li>place_massWeapon_dat->einer nuklearen Kofferbombe</li>
-    <li>place_foeLeader->Untergrundlord</li>
-    <li>place_foeLeader_def->Untergrundlord</li>
-    <li>place_foeLeader_dat->Untergrundlord</li>
-    <li>place_foeLeader_gen->Untergrundlords</li>
-    <li>place_foeSoldiers->Untergrundsoldaten</li>
-    <li>place_foeSoldiers_def->Untergrundsoldaten</li>
-    <li>place_foeSoldiers_dat->Untergrundsoldaten</li>
+    <li>place_foeLeader->hoher Unterlord</li>
+    <li>place_foeLeader_mas_nom_indef->[place_foeLeader]</li>
+    <li>place_foeLeader_mas_nom_def->hohe Unterlord</li>
+    <li>place_foeLeader_mas_dat_indef->hohen Unterlord</li>
+    <li>place_foeLeader_mas_dat_def->[place_foeLeader_mas_dat_indef]</li>
+    <li>place_foeLeader_mas_gen_indef->hohen Unterlords</li>
+    <li>place_foeLeader_mas_gen_def->[place_foeLeader_mas_gen_indef]</li>
+    <li>place_foeLeader_mas_acc_indef->[place_foeLeader_mas_dat_indef]</li>
+    <li>place_foeLeader_mas_acc_def->[place_foeLeader_mas_acc_indef]</li>
+    <li>place_foeLeader_fem_nom_indef->hohe Unterlady</li>
+    <li>place_foeLeader_fem_nom_def->[place_foeLeader_fem_nom_indef]</li>
+    <li>place_foeLeader_fem_dat_indef->hohen Unterlady</li>
+    <li>place_foeLeader_fem_dat_def->[place_foeLeader_fem_dat_indef]</li>
+    <li>place_foeLeader_fem_gen_indef->[place_foeLeader_fem_dat_indef]</li>
+    <li>place_foeLeader_fem_gen_def->[place_foeLeader_fem_gen_indef]</li>
+    <li>place_foeLeader_fem_acc_indef->[place_foeLeader_fem_dat_indef]</li>
+    <li>place_foeLeader_fem_acc_def->[place_foeLeader_fem_acc_indef]</li>
+    <li>place_foeSoldiers->Untertruppen</li>
+    <li>place_foeSoldiers_nom_indef->[place_foeSoldiers]</li>
+    <li>place_foeSoldiers_nom_def->Untertruppen</li>
+    <li>place_foeSoldiers_gen_indef->Untertruppen</li>
+    <li>place_foeSoldiers_gen_def->Untertruppen</li>
+    <li>place_foeSoldiers_dat_indef->Untertruppen</li>
+    <li>place_foeSoldiers_dat_def->Untertruppen</li>
+    <li>place_foeSoldiers_acc_indef->Untertruppen</li>
+    <li>place_foeSoldiers_acc_def->Untertruppen</li>
   </Novaroma.placeRules.rulesStrings>
   
   <!-- EN:
@@ -906,20 +1577,33 @@
   <Nuchadus.placeRules.rulesStrings>
     <li>place_name->Nuchadus</li>
     <li>place_adjective->nuchadeanisch</li>
+    <li>place_summary->trübe Vulkanwelt</li>
     <li>place_summary_fem->trübe Vulkanwelt</li>
     <li>place_summary_fem_def->trübe Vulkanwelt</li>
     <li>place_summary_fem_acc->trübe Vulkanwelt</li>
     <li>place_summary_fem_dat->trüben Vulkanwelt</li>
     <li>place_summary_fem_gen->trüben Vulkanwelt</li>
-    <li>place_community_fem->Basaltinsel</li>
-    <li>place_community_fem->Caldera-Seestadt</li>
-    <li>place_community_neu->lenkbares Luftdorf</li>
-    <li>place_community_fem_acc->Basaltinsel</li>
-    <li>place_community_fem_acc->Caldera-Seestadt</li>
-    <li>place_community_neu_acc->lenkbares Luftdorf</li>
-    <li>place_community_fem_dat->Basaltinsel</li>
-    <li>place_community_fem_dat->Caldera-Seestadt</li>
-    <li>place_community_neu_dat->lenkbaren Luftdorf</li>
+    <li>place_community->Basaltinsel</li>
+    <li>place_community->Caldera-Seestadt</li>
+    <li>place_community->lenkbares Luftdorf</li>
+    <li>place_community_fem_nom_indef->Basaltinsel</li>
+    <li>place_community_fem_nom_indef->Caldera-Seestadt</li>
+    <li>place_community_neu_nom_indef->lenkbares Luftdorf</li>
+    <li>place_community_fem_acc_indef->Basaltinsel</li>
+    <li>place_community_fem_acc_indef->Caldera-Seestadt</li>
+    <li>place_community_neu_acc_indef->lenkbares Luftdorf</li>
+    <li>place_community_fem_dat_indef->Basaltinsel</li>
+    <li>place_community_fem_dat_indef->Caldera-Seestadt</li>
+    <li>place_community_neu_dat_indef->lenkbaren Luftdorf</li>
+    <li>place_community_fem_nom_def->Basaltinsel</li>
+    <li>place_community_fem_nom_def->Caldera-Seestadt</li>
+    <li>place_community_neu_nom_def->lenkbares Luftdorf</li>
+    <li>place_community_fem_acc_def->Basaltinsel</li>
+    <li>place_community_fem_acc_def->Caldera-Seestadt</li>
+    <li>place_community_neu_acc_def->lenkbare Luftdorf</li>
+    <li>place_community_fem_dat_def->Basaltinsel</li>
+    <li>place_community_fem_dat_def->Caldera-Seestadt</li>
+    <li>place_community_neu_dat_def->lenkbaren Luftdorf</li>
     <li>place_powerCenter->Thermalfestung</li>
     <li>place_powerCenter_fem->Thermalfestung</li>
     <li>place_powerCenter_fem_acc->Thermalfestung</li>
@@ -928,14 +1612,39 @@
     <li>place_job->Lavaschneckenfarmer</li>
     <li>place_job->Panzerkettenreparateur</li>
     <li>place_job->Fallschirmaufklärer</li>
-    <li>place_job_dat->Seismologen</li>
-    <li>place_job_dat->Lavaschneckenfarmer</li>
-    <li>place_job_dat->Panzerkettenreparateur</li>
-    <li>place_job_dat->Fallschirmaufklärer</li>
-    <li>place_job_gen->Seismologen</li>
-    <li>place_job_gen->Lavaschneckenfarmers</li>
-    <li>place_job_gen->Panzerkettenreparateurs</li>
-    <li>place_job_gen->Fallschirmaufklärers</li>
+    <li>place_job_mas_nom_indef->[place_job]</li>
+    <li>place_job_mas_nom_def->Seismologe</li>
+    <li>place_job_mas_nom_def->Lavaschneckenfarmer</li>
+    <li>place_job_mas_nom_def->Panzerkettenreparateur</li>
+    <li>place_job_mas_nom_def->Fallschirmaufklärer</li>
+    <li>place_job_mas_dat_indef->Seismologen</li>
+    <li>place_job_mas_dat_indef->Lavaschneckenfarmer</li>
+    <li>place_job_mas_dat_indef->Panzerkettenreparateur</li>
+    <li>place_job_mas_dat_indef->Fallschirmaufklärer</li>
+    <li>place_job_mas_dat_def->[place_job_mas_dat_indef]</li>
+    <li>place_job_mas_gen_indef->Seismologen</li>
+    <li>place_job_mas_gen_indef->Lavaschneckenfarmers</li>
+    <li>place_job_mas_gen_indef->Panzerkettenreparateurs</li>
+    <li>place_job_mas_gen_indef->Fallschirmaufklärers</li>
+    <li>place_job_mas_gen_def->[place_job_mas_gen_indef]</li>
+    <li>place_job_mas_acc_indef->[place_job_mas_dat_indef]</li>
+    <li>place_job_mas_acc_def->[place_job_mas_acc_indef]</li>
+    <li>place_job_fem_nom_indef->Seismologin</li>
+    <li>place_job_fem_nom_indef->Lavaschneckenfarmerin</li>
+    <li>place_job_fem_nom_indef->Panzerkettenreparateurin</li>
+    <li>place_job_fem_nom_indef->Fallschirmaufklärerin</li>
+    <li>place_job_fem_nom_def->[place_job_fem_nom_indef]</li>
+    <li>place_job_fem_dat_indef->Seismologin</li>
+    <li>place_job_fem_dat_indef->Lavaschneckenfarmerin</li>
+    <li>place_job_fem_dat_indef->Panzerkettenreparateurin</li>
+    <li>place_job_fem_dat_indef->Fallschirmaufklärerin</li>
+    <li>place_job_fem_dat_def->[place_job_fem_dat_indef]</li>
+    <li>place_job_fem_gen_indef->[place_job_fem_dat_indef]</li>
+    <li>place_job_fem_gen_def->[place_job_fem_gen_indef]</li>
+    <li>place_job_fem_acc_indef->[place_job_fem_dat_indef]</li>
+    <li>place_job_fem_acc_def->[place_job_fem_acc_indef]</li>
+    <li>place_personalWeapon->Obsidiandolch</li>
+    <li>place_personalWeapon->Harpunengewehr</li>
     <li>place_personalWeapon_mas->Obsidiandolch</li>
     <li>place_personalWeapon_neu->Harpunengewehr</li>
     <li>place_personalWeapons->Obsidiandolche</li>
@@ -949,12 +1658,31 @@
     <li>place_massWeapon_acc->eine Chemiewaffenbombe</li>
     <li>place_massWeapon_dat->einer Chemiewaffenbombe</li>
     <li>place_foeLeader->Lavalord</li>
-    <li>place_foeLeader_def->Lavalord</li>
-    <li>place_foeLeader_dat->Lavalord</li>
-    <li>place_foeLeader_gen->Lavalords</li>
-    <li>place_foeSoldiers->stygianische Soldaten</li>
-    <li>place_foeSoldiers_def->stygianischen Soldaten</li>
-    <li>place_foeSoldiers_dat->stygianischen Soldaten</li>
+    <li>place_foeLeader_mas_nom_indef->[place_foeLeader]</li>
+    <li>place_foeLeader_mas_nom_def->Lavalord</li>
+    <li>place_foeLeader_mas_dat_indef->Lavalord</li>
+    <li>place_foeLeader_mas_dat_def->[place_foeLeader_mas_dat_indef]</li>
+    <li>place_foeLeader_mas_gen_indef->Lavalords</li>
+    <li>place_foeLeader_mas_gen_def->[place_foeLeader_mas_gen_indef]</li>
+    <li>place_foeLeader_mas_acc_indef->[place_foeLeader_mas_dat_indef]</li>
+    <li>place_foeLeader_mas_acc_def->[place_foeLeader_mas_acc_indef]</li>
+    <li>place_foeLeader_fem_nom_indef->Lavalady</li>
+    <li>place_foeLeader_fem_nom_def->[place_foeLeader_fem_nom_indef]</li>
+    <li>place_foeLeader_fem_dat_indef->Lavalady</li>
+    <li>place_foeLeader_fem_dat_def->[place_foeLeader_fem_dat_indef]</li>
+    <li>place_foeLeader_fem_gen_indef->[place_foeLeader_fem_dat_indef]</li>
+    <li>place_foeLeader_fem_gen_def->[place_foeLeader_fem_gen_indef]</li>
+    <li>place_foeLeader_fem_acc_indef->[place_foeLeader_fem_dat_indef]</li>
+    <li>place_foeLeader_fem_acc_def->[place_foeLeader_fem_acc_indef]</li>
+    <li>place_foeSoldiers->Styxsoldaten</li>
+    <li>place_foeSoldiers_nom_indef->[place_foeSoldiers]</li>
+    <li>place_foeSoldiers_nom_def->Styxsoldaten</li>
+    <li>place_foeSoldiers_gen_indef->Styxsoldaten</li>
+    <li>place_foeSoldiers_gen_def->Styxsoldaten</li>
+    <li>place_foeSoldiers_dat_indef->Styxsoldaten</li>
+    <li>place_foeSoldiers_dat_def->Styxsoldaten</li>
+    <li>place_foeSoldiers_acc_indef->Styxsoldaten</li>
+    <li>place_foeSoldiers_acc_def->Styxsoldaten</li>
   </Nuchadus.placeRules.rulesStrings>
   
   <!-- EN:
@@ -980,20 +1708,33 @@
   <Oubanyen.placeRules.rulesStrings>
     <li>place_name->Oubanyen</li>
     <li>place_adjective->oubanyenisch</li>
+    <li>place_summary->feuchte Dschungelwelt</li>
     <li>place_summary_fem->feuchte Dschungelwelt</li>
     <li>place_summary_fem_def->feuchte Dschungelwelt</li>
     <li>place_summary_fem_acc->feuchte Dschungelwelt</li>
     <li>place_summary_fem_dat->feuchten Dschungelwelt</li>
     <li>place_summary_fem_gen->feuchten Dschungelwelt</li>
-    <li>place_community_neu->Baumkronendorf</li>
-    <li>place_community_fem->Schamanenhöhle</li>
-    <li>place_community_fem->Hügelzikkurat</li>
-    <li>place_community_neu_acc->Baumkronendorf</li>
-    <li>place_community_fem_acc->Schamanenhöhle</li>
-    <li>place_community_fem_acc->Hügelzikkurat</li>
-    <li>place_community_neu_dat->Baumkronendorf</li>
-    <li>place_community_fem_dat->Schamanenhöhle</li>
-    <li>place_community_fem_dat->Hügelzikkurat</li>
+    <li>place_community->Baumkronendorf</li>
+    <li>place_community->Schamanenhöhle</li>
+    <li>place_community->Hügelzikkurat</li>
+    <li>place_community_neu_nom_indef->Baumkronendorf</li>
+    <li>place_community_fem_nom_indef->Schamanenhöhle</li>
+    <li>place_community_fem_nom_indef->Hügelzikkurat</li>
+    <li>place_community_neu_acc_indef->Baumkronendorf</li>
+    <li>place_community_fem_acc_indef->Schamanenhöhle</li>
+    <li>place_community_fem_acc_indef->Hügelzikkurat</li>
+    <li>place_community_neu_dat_indef->Baumkronendorf</li>
+    <li>place_community_fem_dat_indef->Schamanenhöhle</li>
+    <li>place_community_fem_dat_indef->Hügelzikkurat</li>
+    <li>place_community_neu_nom_def->Baumkronendorf</li>
+    <li>place_community_fem_nom_def->Schamanenhöhle</li>
+    <li>place_community_fem_nom_def->Hügelzikkurat</li>
+    <li>place_community_neu_acc_def->Baumkronendorf</li>
+    <li>place_community_fem_acc_def->Schamanenhöhle</li>
+    <li>place_community_fem_acc_def->Hügelzikkurat</li>
+    <li>place_community_neu_dat_def->Baumkronendorf</li>
+    <li>place_community_fem_dat_def->Schamanenhöhle</li>
+    <li>place_community_fem_dat_def->Hügelzikkurat</li>
     <li>place_powerCenter->Stadttempel</li>
     <li>place_powerCenter_mas->Stadttempel</li>
     <li>place_powerCenter_mas_acc->Stadttempel</li>
@@ -1003,16 +1744,44 @@
     <li>place_job->Fischer</li>
     <li>place_job->Sammler</li>
     <li>place_job->Ziegenhirte</li>
-    <li>place_job_dat->Schamanen</li>
-    <li>place_job_dat->Jäger</li>
-    <li>place_job_dat->Fischer</li>
-    <li>place_job_dat->Sammler</li>
-    <li>place_job_dat->Ziegenhirten</li>
-    <li>place_job_gen->Schamanen</li>
-    <li>place_job_gen->Jägers</li>
-    <li>place_job_gen->Fischers</li>
-    <li>place_job_gen->Sammlers</li>
-    <li>place_job_gen->Ziegenhirten</li>
+    <li>place_job_mas_nom_indef->[place_job]</li>
+    <li>place_job_mas_nom_def->Schamane</li>
+    <li>place_job_mas_nom_def->Jäger</li>
+    <li>place_job_mas_nom_def->Fischer</li>
+    <li>place_job_mas_nom_def->Sammler</li>
+    <li>place_job_mas_nom_def->Ziegenhirte</li>
+    <li>place_job_mas_dat_indef->Schamanen</li>
+    <li>place_job_mas_dat_indef->Jäger</li>
+    <li>place_job_mas_dat_indef->Fischer</li>
+    <li>place_job_mas_dat_indef->Sammler</li>
+    <li>place_job_mas_dat_indef->Ziegenhirten</li>
+    <li>place_job_mas_dat_def->[place_job_mas_dat_indef]</li>
+    <li>place_job_mas_gen_indef->Schamanen</li>
+    <li>place_job_mas_gen_indef->Jägers</li>
+    <li>place_job_mas_gen_indef->Fischers</li>
+    <li>place_job_mas_gen_indef->Sammlers</li>
+    <li>place_job_mas_gen_indef->Ziegenhirten</li>
+    <li>place_job_mas_gen_def->[place_job_mas_gen_indef]</li>
+    <li>place_job_mas_acc_indef->[place_job_mas_dat_indef]</li>
+    <li>place_job_mas_acc_def->[place_job_mas_acc_indef]</li>
+    <li>place_job_fem_nom_indef->Schamanin</li>
+    <li>place_job_fem_nom_indef->Jägerin</li>
+    <li>place_job_fem_nom_indef->Fischerin</li>
+    <li>place_job_fem_nom_indef->Sammlerin</li>
+    <li>place_job_fem_nom_indef->Ziegenhirtin</li>
+    <li>place_job_fem_nom_def->[place_job_fem_nom_indef]</li>
+    <li>place_job_fem_dat_indef->Schamanin</li>
+    <li>place_job_fem_dat_indef->Jägerin</li>
+    <li>place_job_fem_dat_indef->Fischerin</li>
+    <li>place_job_fem_dat_indef->Sammlerin</li>
+    <li>place_job_fem_dat_indef->Ziegenhirtin</li>
+    <li>place_job_fem_dat_def->[place_job_fem_dat_indef]</li>
+    <li>place_job_fem_gen_indef->[place_job_fem_dat_indef]</li>
+    <li>place_job_fem_gen_def->[place_job_fem_gen_indef]</li>
+    <li>place_job_fem_acc_indef->[place_job_fem_dat_indef]</li>
+    <li>place_job_fem_acc_def->[place_job_fem_acc_indef]</li>
+    <li>place_personalWeapon->Pilum</li>
+    <li>place_personalWeapon->Ikwa</li>
     <li>place_personalWeapon_neu->Pilum</li>
     <li>place_personalWeapon_neu->Ikwa</li>
     <li>place_personalWeapons->Pila</li>
@@ -1026,12 +1795,31 @@
     <li>place_massWeapon_acc->eine Neurotoxinbombe</li>
     <li>place_massWeapon_dat->einer Neurotoxinbombe</li>
     <li>place_foeLeader->Holzernter</li>
-    <li>place_foeLeader_def->Holzernter</li>
-    <li>place_foeLeader_dat->Holzernter</li>
-    <li>place_foeLeader_gen->Holzernters</li>
+    <li>place_foeLeader_mas_nom_indef->[place_foeLeader]</li>
+    <li>place_foeLeader_mas_nom_def->Holzernter</li>
+    <li>place_foeLeader_mas_dat_indef->Holzernter</li>
+    <li>place_foeLeader_mas_dat_def->[place_foeLeader_mas_dat_indef]</li>
+    <li>place_foeLeader_mas_gen_indef->Holzernters</li>
+    <li>place_foeLeader_mas_gen_def->[place_foeLeader_mas_gen_indef]</li>
+    <li>place_foeLeader_mas_acc_indef->[place_foeLeader_mas_dat_indef]</li>
+    <li>place_foeLeader_mas_acc_def->[place_foeLeader_mas_acc_indef]</li>
+    <li>place_foeLeader_fem_nom_indef->Holzernterin</li>
+    <li>place_foeLeader_fem_nom_def->[place_foeLeader_fem_nom_indef]</li>
+    <li>place_foeLeader_fem_dat_indef->Holzernterin</li>
+    <li>place_foeLeader_fem_dat_def->[place_foeLeader_fem_dat_indef]</li>
+    <li>place_foeLeader_fem_gen_indef->[place_foeLeader_fem_dat_indef]</li>
+    <li>place_foeLeader_fem_gen_def->[place_foeLeader_fem_gen_indef]</li>
+    <li>place_foeLeader_fem_acc_indef->[place_foeLeader_fem_dat_indef]</li>
+    <li>place_foeLeader_fem_acc_def->[place_foeLeader_fem_acc_indef]</li>
     <li>place_foeSoldiers->Handlanger</li>
-    <li>place_foeSoldiers_def->Handlanger</li>
-    <li>place_foeSoldiers_dat->Handlangern</li>
+    <li>place_foeSoldiers_nom_indef->[place_foeSoldiers]</li>
+    <li>place_foeSoldiers_nom_def->Handlanger</li>
+    <li>place_foeSoldiers_gen_indef->Handlanger</li>
+    <li>place_foeSoldiers_gen_def->Handlanger</li>
+    <li>place_foeSoldiers_dat_indef->Handlangern</li>
+    <li>place_foeSoldiers_dat_def->Handlangern</li>
+    <li>place_foeSoldiers_acc_indef->Handlanger</li>
+    <li>place_foeSoldiers_acc_def->Handlanger</li>
   </Oubanyen.placeRules.rulesStrings>
   
   <!-- EN:
@@ -1057,20 +1845,33 @@
   <Rhydell.placeRules.rulesStrings>
     <li>place_name->Rhydell</li>
     <li>place_adjective->rhydellianisch</li>
+    <li>place_summary->wilder Waldmond</li>
     <li>place_summary_mas->wilder Waldmond</li>
     <li>place_summary_mas_def->wilde Waldmond</li>
     <li>place_summary_mas_acc->wilden Waldmond</li>
     <li>place_summary_mas_dat->wilden Waldmond</li>
     <li>place_summary_mas_gen->wilden Waldmonds</li>
-    <li>place_community_neu->umgebautes Transportschiff</li>
-    <li>place_community_neu->abgeschirmtes Lager</li>
-    <li>place_community_fem->Kommunikationszentrale</li>
-    <li>place_community_neu_acc->umgebautes Transportschiff</li>
-    <li>place_community_neu_acc->abgeschirmtes Lager</li>
-    <li>place_community_fem_acc->Kommunikationszentrale</li>
-    <li>place_community_neu_dat->umgebauten Transportschiff</li>
-    <li>place_community_neu_dat->abgeschirmten Lager</li>
-    <li>place_community_fem_dat->Kommunikationszentrale</li>
+    <li>place_community->umgebautes Transportschiff</li>
+    <li>place_community->abgeschirmtes Lager</li>
+    <li>place_community->Kommunikationszentrale</li>
+    <li>place_community_neu_nom_indef->umgebautes Transportschiff</li>
+    <li>place_community_neu_nom_indef->abgeschirmtes Lager</li>
+    <li>place_community_fem_nom_indef->Kommunikationszentrale</li>
+    <li>place_community_neu_acc_indef->umgebautes Transportschiff</li>
+    <li>place_community_neu_acc_indef->abgeschirmtes Lager</li>
+    <li>place_community_fem_acc_indef->Kommunikationszentrale</li>
+    <li>place_community_neu_dat_indef->umgebauten Transportschiff</li>
+    <li>place_community_neu_dat_indef->abgeschirmten Lager</li>
+    <li>place_community_fem_dat_indef->Kommunikationszentrale</li>
+    <li>place_community_neu_nom_def->umgebaute Transportschiff</li>
+    <li>place_community_neu_nom_def->abgeschirmte Lager</li>
+    <li>place_community_fem_nom_def->Kommunikationszentrale</li>
+    <li>place_community_neu_acc_def->umgebaute Transportschiff</li>
+    <li>place_community_neu_acc_def->abgeschirmte Lager</li>
+    <li>place_community_fem_acc_def->Kommunikationszentrale</li>
+    <li>place_community_neu_dat_def->umgebauten Transportschiff</li>
+    <li>place_community_neu_dat_def->abgeschirmten Lager</li>
+    <li>place_community_fem_dat_def->Kommunikationszentrale</li>
     <li>place_powerCenter->gepanzertes Habitat</li>
     <li>place_powerCenter_neu->gepanzertes Habitat</li>
     <li>place_powerCenter_neu_acc->gepanzerte Habitat</li>
@@ -1080,16 +1881,44 @@
     <li>place_job->Sanitäter</li>
     <li>place_job->Lagerkoch</li>
     <li>place_job->Biolaboringenieur</li>
-    <li>place_job_dat->Grenzbotaniker</li>
-    <li>place_job_dat->Trophäenjäger</li>
-    <li>place_job_dat->Sanitäter</li>
-    <li>place_job_dat->Lagerkoch</li>
-    <li>place_job_dat->Biolaboringenieur</li>
-    <li>place_job_gen->Grenzbotanikers</li>
-    <li>place_job_gen->Trophäenjägers</li>
-    <li>place_job_gen->Sanitäters</li>
-    <li>place_job_gen->Lagerkochs</li>
-    <li>place_job_gen->Biolaboringenieurs</li>
+    <li>place_job_mas_nom_indef->[place_job]</li>
+    <li>place_job_mas_nom_def->Grenzbotaniker</li>
+    <li>place_job_mas_nom_def->Trophäenjäger</li>
+    <li>place_job_mas_nom_def->Sanitäter</li>
+    <li>place_job_mas_nom_def->Lagerkoch</li>
+    <li>place_job_mas_nom_def->Biolaboringenieur</li>
+    <li>place_job_mas_dat_indef->Grenzbotaniker</li>
+    <li>place_job_mas_dat_indef->Trophäenjäger</li>
+    <li>place_job_mas_dat_indef->Sanitäter</li>
+    <li>place_job_mas_dat_indef->Lagerkoch</li>
+    <li>place_job_mas_dat_indef->Biolaboringenieur</li>
+    <li>place_job_mas_dat_def->[place_job_mas_dat_indef]</li>
+    <li>place_job_mas_gen_indef->Grenzbotanikers</li>
+    <li>place_job_mas_gen_indef->Trophäenjägers</li>
+    <li>place_job_mas_gen_indef->Sanitäters</li>
+    <li>place_job_mas_gen_indef->Lagerkochs</li>
+    <li>place_job_mas_gen_indef->Biolaboringenieurs</li>
+    <li>place_job_mas_gen_def->[place_job_mas_gen_indef]</li>
+    <li>place_job_mas_acc_indef->[place_job_mas_dat_indef]</li>
+    <li>place_job_mas_acc_def->[place_job_mas_acc_indef]</li>
+    <li>place_job_fem_nom_indef->Grenzbotanikerin</li>
+    <li>place_job_fem_nom_indef->Trophäenjägerin</li>
+    <li>place_job_fem_nom_indef->Sanitäterin</li>
+    <li>place_job_fem_nom_indef->Lagerköchin</li>
+    <li>place_job_fem_nom_indef->Biolaboringenieurin</li>
+    <li>place_job_fem_nom_def->[place_job_fem_nom_indef]</li>
+    <li>place_job_fem_dat_indef->Grenzbotanikerin</li>
+    <li>place_job_fem_dat_indef->Trophäenjägerin</li>
+    <li>place_job_fem_dat_indef->Sanitäterin</li>
+    <li>place_job_fem_dat_indef->Lagerköchin</li>
+    <li>place_job_fem_dat_indef->Biolaboringenieurin</li>
+    <li>place_job_fem_dat_def->[place_job_fem_dat_indef]</li>
+    <li>place_job_fem_gen_indef->[place_job_fem_dat_indef]</li>
+    <li>place_job_fem_gen_def->[place_job_fem_gen_indef]</li>
+    <li>place_job_fem_acc_indef->[place_job_fem_dat_indef]</li>
+    <li>place_job_fem_acc_def->[place_job_fem_acc_indef]</li>
+    <li>place_personalWeapon->Präzisionsgewehr</li>
+    <li>place_personalWeapon->Machete</li>
     <li>place_personalWeapon_neu->Präzisionsgewehr</li>
     <li>place_personalWeapon_fem->Machete</li>
     <li>place_personalWeapons->Präzisionsgewehre</li>
@@ -1102,13 +1931,32 @@
     <li>place_massWeapon->ein orbitaler Laserangriff</li>
     <li>place_massWeapon_acc->einen orbitalen Laserangriff</li>
     <li>place_massWeapon_dat->einem orbitalen Laserangriff</li>
-    <li>place_foeLeader->Deepcorp-Vorstand</li>
-    <li>place_foeLeader_def->Deepcorp-Vorstand</li>
-    <li>place_foeLeader_dat->Deepcorp-Vorstand</li>
-    <li>place_foeLeader_gen->Deepcorp-Vorstands</li>
+    <li>place_foeLeader->Deepcorp-Manager</li>
+    <li>place_foeLeader_mas_nom_indef->[place_foeLeader]</li>
+    <li>place_foeLeader_mas_nom_def->Deepcorp-Manager</li>
+    <li>place_foeLeader_mas_dat_indef->Deepcorp-Manager</li>
+    <li>place_foeLeader_mas_dat_def->[place_foeLeader_mas_dat_indef]</li>
+    <li>place_foeLeader_mas_gen_indef->Deepcorp-Managers</li>
+    <li>place_foeLeader_mas_gen_def->[place_foeLeader_mas_gen_indef]</li>
+    <li>place_foeLeader_mas_acc_indef->[place_foeLeader_mas_dat_indef]</li>
+    <li>place_foeLeader_mas_acc_def->[place_foeLeader_mas_acc_indef]</li>
+    <li>place_foeLeader_fem_nom_indef->Deepcorp-Managerin</li>
+    <li>place_foeLeader_fem_nom_def->[place_foeLeader_fem_nom_indef]</li>
+    <li>place_foeLeader_fem_dat_indef->Deepcorp-Managerin</li>
+    <li>place_foeLeader_fem_dat_def->[place_foeLeader_fem_dat_indef]</li>
+    <li>place_foeLeader_fem_gen_indef->[place_foeLeader_fem_dat_indef]</li>
+    <li>place_foeLeader_fem_gen_def->[place_foeLeader_fem_gen_indef]</li>
+    <li>place_foeLeader_fem_acc_indef->[place_foeLeader_fem_dat_indef]</li>
+    <li>place_foeLeader_fem_acc_def->[place_foeLeader_fem_acc_indef]</li>
     <li>place_foeSoldiers->Deepcorp-Vollstrecker</li>
-    <li>place_foeSoldiers_def->Deepcorp-Vollstrecker</li>
-    <li>place_foeSoldiers_dat->Deepcorp-Vollstreckern</li>
+    <li>place_foeSoldiers_nom_indef->[place_foeSoldiers]</li>
+    <li>place_foeSoldiers_nom_def->Deepcorp-Vollstrecker</li>
+    <li>place_foeSoldiers_gen_indef->Deepcorp-Vollstrecker</li>
+    <li>place_foeSoldiers_gen_def->Deepcorp-Vollstrecker</li>
+    <li>place_foeSoldiers_dat_indef->Deepcorp-Vollstreckern</li>
+    <li>place_foeSoldiers_dat_def->Deepcorp-Vollstreckern</li>
+    <li>place_foeSoldiers_acc_indef->Deepcorp-Vollstrecker</li>
+    <li>place_foeSoldiers_acc_def->Deepcorp-Vollstrecker</li>
   </Rhydell.placeRules.rulesStrings>
   
   <!-- EN:
@@ -1135,39 +1983,80 @@
   <Rogia.placeRules.rulesStrings>
     <li>place_name->Rogia</li>
     <li>place_adjective->rogianisch</li>
+    <li>place_summary->Glitzerwelt</li>
     <li>place_summary_fem->Glitzerwelt</li>
     <li>place_summary_fem_def->Glitzerwelt</li>
     <li>place_summary_fem_acc->Glitzerwelt</li>
     <li>place_summary_fem_dat->Glitzerwelt</li>
     <li>place_summary_fem_gen->Glitzerwelt</li>
-    <li>place_community_neu->medizinisches Institut</li>
-    <li>place_community_mas->Weltraumlift</li>
-    <li>place_community_fem->Roboterfabrik</li>
-    <li>place_community_neu_acc->medizinisches Institut</li>
-    <li>place_community_mas_acc->Weltraumlift</li>
-    <li>place_community_fem_acc->Roboterfabrik</li>
-    <li>place_community_neu_dat->medizinischen Institut</li>
-    <li>place_community_mas_dat->Weltraumlift</li>
-    <li>place_community_fem_dat->Roboterfabrik</li>
+    <li>place_community->medizinisches Institut</li>
+    <li>place_community->Weltraumlift</li>
+    <li>place_community->Roboterfabrik</li>
+    <li>place_community_neu_nom_indef->medizinisches Institut</li>
+    <li>place_community_mas_nom_indef->Weltraumlift</li>
+    <li>place_community_fem_nom_indef->Roboterfabrik</li>
+    <li>place_community_neu_acc_indef->medizinisches Institut</li>
+    <li>place_community_mas_acc_indef->Weltraumlift</li>
+    <li>place_community_fem_acc_indef->Roboterfabrik</li>
+    <li>place_community_neu_dat_indef->medizinischen Institut</li>
+    <li>place_community_mas_dat_indef->Weltraumlift</li>
+    <li>place_community_fem_dat_indef->Roboterfabrik</li>
+    <li>place_community_neu_nom_def->medizinische Institut</li>
+    <li>place_community_mas_nom_def->Weltraumlift</li>
+    <li>place_community_fem_nom_def->Roboterfabrik</li>
+    <li>place_community_neu_acc_def->medizinische Institut</li>
+    <li>place_community_mas_acc_def->Weltraumlift</li>
+    <li>place_community_fem_acc_def->Roboterfabrik</li>
+    <li>place_community_neu_dat_def->medizinischen Institut</li>
+    <li>place_community_mas_dat_def->Weltraumlift</li>
+    <li>place_community_fem_dat_def->Roboterfabrik</li>
     <li>place_powerCenter->planetarische Hauptstadt</li>
     <li>place_powerCenter_fem->planetarische Hauptstadt</li>
     <li>place_powerCenter_fem_acc->planetarische Hauptstadt</li>
     <li>place_powerCenter_fem_dat->planetarischen Hauptstadt</li>
     <li>place_job->Sternenflottenkadett</li>
-    <li>place_job->Handwerksbauer</li>
-    <li>place_job->Social-Media-Wunderkind</li>
+    <li>place_job->handwerklicher Farmer</li>
+    <li>place_job->Social-Media-Influencer</li>
     <li>place_job->Zero-G-Sportler</li>
     <li>place_job->Glitzerweltschmuggler</li>
-    <li>place_job_dat->Sternenflottenkadett</li>
-    <li>place_job_dat->Handwerksbauer</li>
-    <li>place_job_dat->Social-Media-Wunderkind</li>
-    <li>place_job_dat->Zero-G-Sportler</li>
-    <li>place_job_dat->Glitzerweltschmuggler</li>
-    <li>place_job_gen->Sternenflottenkadetten</li>
-    <li>place_job_gen->Handwerksbauers</li>
-    <li>place_job_gen->Social-Media-Wunderkinds</li>
-    <li>place_job_gen->Zero-G-Sportlers</li>
-    <li>place_job_gen->Glitzerweltschmugglers</li>
+    <li>place_job_mas_nom_indef->[place_job]</li>
+    <li>place_job_mas_nom_def->Sternenflottenkadett</li>
+    <li>place_job_mas_nom_def->handwerkliche Farmer</li>
+    <li>place_job_mas_nom_def->Social-Media-Influencer</li>
+    <li>place_job_mas_nom_def->Zero-G-Sportler</li>
+    <li>place_job_mas_nom_def->Glitzerweltschmuggler</li>
+    <li>place_job_mas_dat_indef->Sternenflottenkadett</li>
+    <li>place_job_mas_dat_indef->handwerklichen Farmer</li>
+    <li>place_job_mas_dat_indef->Social-Media-Influencer</li>
+    <li>place_job_mas_dat_indef->Zero-G-Sportler</li>
+    <li>place_job_mas_dat_indef->Glitzerweltschmuggler</li>
+    <li>place_job_mas_dat_def->[place_job_mas_dat_indef]</li>
+    <li>place_job_mas_gen_indef->Sternenflottenkadetten</li>
+    <li>place_job_mas_gen_indef->handwerklichen Farmers</li>
+    <li>place_job_mas_gen_indef->Social-Media-Influencers</li>
+    <li>place_job_mas_gen_indef->Zero-G-Sportlers</li>
+    <li>place_job_mas_gen_indef->Glitzerweltschmugglers</li>
+    <li>place_job_mas_gen_def->[place_job_mas_gen_indef]</li>
+    <li>place_job_mas_acc_indef->[place_job_mas_dat_indef]</li>
+    <li>place_job_mas_acc_def->[place_job_mas_acc_indef]</li>
+    <li>place_job_fem_nom_indef->Sternenflottenkadettin</li>
+    <li>place_job_fem_nom_indef->handwerkliche Farmerin</li>
+    <li>place_job_fem_nom_indef->Social-Media-Influencerin</li>
+    <li>place_job_fem_nom_indef->Zero-G-Sportlerin</li>
+    <li>place_job_fem_nom_indef->Glitzerweltschmugglerin</li>
+    <li>place_job_fem_nom_def->[place_job_fem_nom_indef]</li>
+    <li>place_job_fem_dat_indef->Sternenflottenkadettin</li>
+    <li>place_job_fem_dat_indef->handwerklichen Farmerin</li>
+    <li>place_job_fem_dat_indef->Social-Media-Influencerin</li>
+    <li>place_job_fem_dat_indef->Zero-G-Sportlerin</li>
+    <li>place_job_fem_dat_indef->Glitzerweltschmugglerin</li>
+    <li>place_job_fem_dat_def->[place_job_fem_dat_indef]</li>
+    <li>place_job_fem_gen_indef->[place_job_fem_dat_indef]</li>
+    <li>place_job_fem_gen_def->[place_job_fem_gen_indef]</li>
+    <li>place_job_fem_acc_indef->[place_job_fem_dat_indef]</li>
+    <li>place_job_fem_acc_def->[place_job_fem_acc_indef]</li>
+    <li>place_personalWeapon->Impulslanze</li>
+    <li>place_personalWeapon->Persona-Monoschwert</li>
     <li>place_personalWeapon_fem->Impulslanze</li>
     <li>place_personalWeapon_neu->Persona-Monoschwert</li>
     <li>place_personalWeapons->Impulslanzen</li>
@@ -1182,14 +2071,33 @@
     <li>place_massWeapon_dat->einem waffenfähigen Computervirus</li>
     <li>place_massWeapon->ferngesteuerte mechanoide Arbeiter</li>
     <li>place_massWeapon_acc->ferngesteuerte mechanoide Arbeiter</li>
-    <li>place_massWeapon_dat->ferngesteuerten mechanoiden Arbeiter</li>
+    <li>place_massWeapon_dat->ferngesteuerten mechanoiden Arbeitern</li>
     <li>place_foeLeader->korrupter Bürokrat</li>
-    <li>place_foeLeader_def->korrupte Bürokrat</li>
-    <li>place_foeLeader_dat->korrupten Bürokraten</li>
-    <li>place_foeLeader_gen->korrupten Bürokraten</li>
-    <li>place_foeSoldiers->bionische Wächter</li>
-    <li>place_foeSoldiers_def->bionischen Wächter</li>
-    <li>place_foeSoldiers_dat->bionischen Wächtern</li>
+    <li>place_foeLeader_mas_nom_indef->[place_foeLeader]</li>
+    <li>place_foeLeader_mas_nom_def->korrupte Bürokrat</li>
+    <li>place_foeLeader_mas_dat_indef->korrupten Bürokraten</li>
+    <li>place_foeLeader_mas_dat_def->[place_foeLeader_mas_dat_indef]</li>
+    <li>place_foeLeader_mas_gen_indef->korrupten Bürokraten</li>
+    <li>place_foeLeader_mas_gen_def->[place_foeLeader_mas_gen_indef]</li>
+    <li>place_foeLeader_mas_acc_indef->[place_foeLeader_mas_dat_indef]</li>
+    <li>place_foeLeader_mas_acc_def->[place_foeLeader_mas_acc_indef]</li>
+    <li>place_foeLeader_fem_nom_indef->korrupte Bürokratin</li>
+    <li>place_foeLeader_fem_nom_def->[place_foeLeader_fem_nom_indef]</li>
+    <li>place_foeLeader_fem_dat_indef->korrupten Bürokratin</li>
+    <li>place_foeLeader_fem_dat_def->[place_foeLeader_fem_dat_indef]</li>
+    <li>place_foeLeader_fem_gen_indef->[place_foeLeader_fem_dat_indef]</li>
+    <li>place_foeLeader_fem_gen_def->[place_foeLeader_fem_gen_indef]</li>
+    <li>place_foeLeader_fem_acc_indef->[place_foeLeader_fem_dat_indef]</li>
+    <li>place_foeLeader_fem_acc_def->[place_foeLeader_fem_acc_indef]</li>
+    <li>place_foeSoldiers->Bionikwachen</li>
+    <li>place_foeSoldiers_nom_indef->[place_foeSoldiers]</li>
+    <li>place_foeSoldiers_nom_def->Bionikwachen</li>
+    <li>place_foeSoldiers_gen_indef->Bionikwachen</li>
+    <li>place_foeSoldiers_gen_def->Bionikwachen</li>
+    <li>place_foeSoldiers_dat_indef->Bionikwachen</li>
+    <li>place_foeSoldiers_dat_def->Bionikwachen</li>
+    <li>place_foeSoldiers_acc_indef->Bionikwachen</li>
+    <li>place_foeSoldiers_acc_def->Bionikwachen</li>
   </Rogia.placeRules.rulesStrings>
   
   <!-- EN:
@@ -1217,20 +2125,33 @@
   <Wavia.placeRules.rulesStrings>
     <li>place_name->Wavia</li>
     <li>place_adjective->wavianisch</li>
+    <li>place_summary->Ozeanplanet</li>
     <li>place_summary_mas->Ozeanplanet</li>
     <li>place_summary_mas_def->Ozeanplanet</li>
     <li>place_summary_mas_acc->Ozeanplaneten</li>
     <li>place_summary_mas_dat->Ozeanplaneten</li>
     <li>place_summary_mas_gen->Ozeanplaneten</li>
-    <li>place_community_neu->Handelsatoll</li>
-    <li>place_community_neu->schwimmendes Dorf</li>
-    <li>place_community_fem->Seegrasraffinerie</li>
-    <li>place_community_neu_acc->Handelsatoll</li>
-    <li>place_community_neu_acc->schwimmendes Dorf</li>
-    <li>place_community_fem_acc->Seegrasraffinerie</li>
-    <li>place_community_neu_dat->Handelsatoll</li>
-    <li>place_community_neu_dat->schwimmenden Dorf</li>
-    <li>place_community_fem_dat->Seegrasraffinerie</li>
+    <li>place_community->Handelsatoll</li>
+    <li>place_community->schwimmendes Dorf</li>
+    <li>place_community->Seegrasraffinerie</li>
+    <li>place_community_neu_nom_indef->Handelsatoll</li>
+    <li>place_community_neu_nom_indef->schwimmendes Dorf</li>
+    <li>place_community_fem_nom_indef->Seegrasraffinerie</li>
+    <li>place_community_neu_acc_indef->Handelsatoll</li>
+    <li>place_community_neu_acc_indef->schwimmendes Dorf</li>
+    <li>place_community_fem_acc_indef->Seegrasraffinerie</li>
+    <li>place_community_neu_dat_indef->Handelsatoll</li>
+    <li>place_community_neu_dat_indef->schwimmenden Dorf</li>
+    <li>place_community_fem_dat_indef->Seegrasraffinerie</li>
+    <li>place_community_neu_nom_def->Handelsatoll</li>
+    <li>place_community_neu_nom_def->schwimmende Dorf</li>
+    <li>place_community_fem_nom_def->Seegrasraffinerie</li>
+    <li>place_community_neu_acc_def->Handelsatoll</li>
+    <li>place_community_neu_acc_def->schwimmende Dorf</li>
+    <li>place_community_fem_acc_def->Seegrasraffinerie</li>
+    <li>place_community_neu_dat_def->Handelsatoll</li>
+    <li>place_community_neu_dat_def->schwimmenden Dorf</li>
+    <li>place_community_fem_dat_def->Seegrasraffinerie</li>
     <li>place_powerCenter->Kapitolbrücke</li>
     <li>place_powerCenter_fem->Kapitolbrücke</li>
     <li>place_powerCenter_fem_acc->Kapitolbrücke</li>
@@ -1240,16 +2161,44 @@
     <li>place_job->Segelmacher</li>
     <li>place_job->Kapitän</li>
     <li>place_job->Seegrassammler</li>
-    <li>place_job_dat->Fischer</li>
-    <li>place_job_dat->Perlentaucher</li>
-    <li>place_job_dat->Segelmacher</li>
-    <li>place_job_dat->Kapitän</li>
-    <li>place_job_dat->Seegrassammler</li>
-    <li>place_job_gen->Fischers</li>
-    <li>place_job_gen->Perlentauchers</li>
-    <li>place_job_gen->Segelmachers</li>
-    <li>place_job_gen->Kapitäns</li>
-    <li>place_job_gen->Seegrassammlers</li>
+    <li>place_job_mas_nom_indef->[place_job]</li>
+    <li>place_job_mas_nom_def->Fischer</li>
+    <li>place_job_mas_nom_def->Perlentaucher</li>
+    <li>place_job_mas_nom_def->Segelmacher</li>
+    <li>place_job_mas_nom_def->Kapitän</li>
+    <li>place_job_mas_nom_def->Seegrassammler</li>
+    <li>place_job_mas_dat_indef->Fischer</li>
+    <li>place_job_mas_dat_indef->Perlentaucher</li>
+    <li>place_job_mas_dat_indef->Segelmacher</li>
+    <li>place_job_mas_dat_indef->Kapitän</li>
+    <li>place_job_mas_dat_indef->Seegrassammler</li>
+    <li>place_job_mas_dat_def->[place_job_mas_dat_indef]</li>
+    <li>place_job_mas_gen_indef->Fischers</li>
+    <li>place_job_mas_gen_indef->Perlentauchers</li>
+    <li>place_job_mas_gen_indef->Segelmachers</li>
+    <li>place_job_mas_gen_indef->Kapitäns</li>
+    <li>place_job_mas_gen_indef->Seegrassammlers</li>
+    <li>place_job_mas_gen_def->[place_job_mas_gen_indef]</li>
+    <li>place_job_mas_acc_indef->[place_job_mas_dat_indef]</li>
+    <li>place_job_mas_acc_def->[place_job_mas_acc_indef]</li>
+    <li>place_job_fem_nom_indef->Fischerin</li>
+    <li>place_job_fem_nom_indef->Perlentaucherin</li>
+    <li>place_job_fem_nom_indef->Segelmacherin</li>
+    <li>place_job_fem_nom_indef->Kapitänin</li>
+    <li>place_job_fem_nom_indef->Seegrassammlerin</li>
+    <li>place_job_fem_nom_def->[place_job_fem_nom_indef]</li>
+    <li>place_job_fem_dat_indef->Fischerin</li>
+    <li>place_job_fem_dat_indef->Perlentaucherin</li>
+    <li>place_job_fem_dat_indef->Segelmacherin</li>
+    <li>place_job_fem_dat_indef->Kapitänin</li>
+    <li>place_job_fem_dat_indef->Seegrassammlerin</li>
+    <li>place_job_fem_dat_def->[place_job_fem_dat_indef]</li>
+    <li>place_job_fem_gen_indef->[place_job_fem_dat_indef]</li>
+    <li>place_job_fem_gen_def->[place_job_fem_gen_indef]</li>
+    <li>place_job_fem_acc_indef->[place_job_fem_dat_indef]</li>
+    <li>place_job_fem_acc_def->[place_job_fem_acc_indef]</li>
+    <li>place_personalWeapon->Harpune</li>
+    <li>place_personalWeapon->Stachelnetz</li>
     <li>place_personalWeapon_fem->Harpune</li>
     <li>place_personalWeapon_neu->Stachelnetz</li>
     <li>place_personalWeapons->Harpunen</li>
@@ -1262,13 +2211,32 @@
     <li>place_massWeapon->ein geköderter [seaBeast]</li>
     <li>place_massWeapon->einen geköderten [seaBeast]</li>
     <li>place_massWeapon->einem geköderten [seaBeast]</li>
-    <li>place_foeLeader->Walfängeradmiral</li>
-    <li>place_foeLeader_def->Walfängeradmiral</li>
-    <li>place_foeLeader_dat->Walfängeradmiral</li>
-    <li>place_foeLeader_gen->Walfängeradmirals</li>
-    <li>place_foeSoldiers->Walfänger-Marines</li>
-    <li>place_foeSoldiers_def->Walfänger-Marines</li>
-    <li>place_foeSoldiers_dat->Walfänger-Marines</li>
+    <li>place_foeLeader->Walfangadmiral</li>
+    <li>place_foeLeader_mas_nom_indef->[place_foeLeader]</li>
+    <li>place_foeLeader_mas_nom_def->Walfangadmiral</li>
+    <li>place_foeLeader_mas_dat_indef->Walfangadmiral</li>
+    <li>place_foeLeader_mas_dat_def->[place_foeLeader_mas_dat_indef]</li>
+    <li>place_foeLeader_mas_gen_indef->Walfangadmirals</li>
+    <li>place_foeLeader_mas_gen_def->[place_foeLeader_mas_gen_indef]</li>
+    <li>place_foeLeader_mas_acc_indef->[place_foeLeader_mas_dat_indef]</li>
+    <li>place_foeLeader_mas_acc_def->[place_foeLeader_mas_acc_indef]</li>
+    <li>place_foeLeader_fem_nom_indef->Walfangadmiralin</li>
+    <li>place_foeLeader_fem_nom_def->[place_foeLeader_fem_nom_indef]</li>
+    <li>place_foeLeader_fem_dat_indef->Walfangadmiralin</li>
+    <li>place_foeLeader_fem_dat_def->[place_foeLeader_fem_dat_indef]</li>
+    <li>place_foeLeader_fem_gen_indef->[place_foeLeader_fem_dat_indef]</li>
+    <li>place_foeLeader_fem_gen_def->[place_foeLeader_fem_gen_indef]</li>
+    <li>place_foeLeader_fem_acc_indef->[place_foeLeader_fem_dat_indef]</li>
+    <li>place_foeLeader_fem_acc_def->[place_foeLeader_fem_acc_indef]</li>
+    <li>place_foeSoldiers->Walfang-Marines</li>
+    <li>place_foeSoldiers_nom_indef->[place_foeSoldiers]</li>
+    <li>place_foeSoldiers_nom_def->Walfang-Marines</li>
+    <li>place_foeSoldiers_gen_indef->Walfang-Marines</li>
+    <li>place_foeSoldiers_gen_def->Walfang-Marines</li>
+    <li>place_foeSoldiers_dat_indef->Walfang-Marines</li>
+    <li>place_foeSoldiers_dat_def->Walfang-Marines</li>
+    <li>place_foeSoldiers_acc_indef->Walfang-Marines</li>
+    <li>place_foeSoldiers_acc_def->Walfang-Marines</li>
     <li>seaBeast->Tiefseekraken</li>
     <li>seaBeast->wavianischer Leviathan</li>
   </Wavia.placeRules.rulesStrings>
@@ -1296,20 +2264,33 @@
   <Xanides.placeRules.rulesStrings>
     <li>place_name->Xanides</li>
     <li>place_adjective->xanidianisch</li>
+    <li>place_summary->ausgebeuteter Mineralplanet</li>
     <li>place_summary_mas->ausgebeuteter Mineralplanet</li>
     <li>place_summary_mas_def->ausgebeutete Mineralplanet</li>
     <li>place_summary_mas_acc->ausgebeuteten Mineralplaneten</li>
     <li>place_summary_mas_dat->ausgebeuteten Mineralplaneten</li>
     <li>place_summary_mas_gen->ausgebeuteten Mineralplaneten</li>
-    <li>place_community_mas->Tagebau</li>
-    <li>place_community_fem->Erzraffinerie</li>
-    <li>place_community_fem->Nährpaste-Cafeteria</li>
-    <li>place_community_mas_acc->Tagebau</li>
-    <li>place_community_fem_acc->Erzraffinerie</li>
-    <li>place_community_fem_acc->Nährpaste-Cafeteria</li>
-    <li>place_community_mas_dat->Tagebau</li>
-    <li>place_community_fem_dat->Erzraffinerie</li>
-    <li>place_community_fem_dat->Nährpaste-Cafeteria</li>
+    <li>place_community->Tagebau</li>
+    <li>place_community->Erzraffinerie</li>
+    <li>place_community->Nährpaste-Cafeteria</li>
+    <li>place_community_mas_nom_indef->Tagebau</li>
+    <li>place_community_fem_nom_indef->Erzraffinerie</li>
+    <li>place_community_fem_nom_indef->Nährpaste-Cafeteria</li>
+    <li>place_community_mas_acc_indef->Tagebau</li>
+    <li>place_community_fem_acc_indef->Erzraffinerie</li>
+    <li>place_community_fem_acc_indef->Nährpaste-Cafeteria</li>
+    <li>place_community_mas_dat_indef->Tagebau</li>
+    <li>place_community_fem_dat_indef->Erzraffinerie</li>
+    <li>place_community_fem_dat_indef->Nährpaste-Cafeteria</li>
+    <li>place_community_mas_nom_def->Tagebau</li>
+    <li>place_community_fem_nom_def->Erzraffinerie</li>
+    <li>place_community_fem_nom_def->Nährpaste-Cafeteria</li>
+    <li>place_community_mas_acc_def->Tagebau</li>
+    <li>place_community_fem_acc_def->Erzraffinerie</li>
+    <li>place_community_fem_acc_def->Nährpaste-Cafeteria</li>
+    <li>place_community_mas_dat_def->Tagebau</li>
+    <li>place_community_fem_dat_def->Erzraffinerie</li>
+    <li>place_community_fem_dat_def->Nährpaste-Cafeteria</li>
     <li>place_powerCenter->Sauerstofflager</li>
     <li>place_powerCenter_neu->Sauerstofflager</li>
     <li>place_powerCenter_neu_acc->Sauerstofflager</li>
@@ -1319,16 +2300,44 @@
     <li>place_job->Techniker</li>
     <li>place_job->Mechaniker</li>
     <li>place_job->Lebenserhaltungsingenieur</li>
-    <li>place_job_dat->Minenarbeiter</li>
-    <li>place_job_dat->Vorgesetzten</li>
-    <li>place_job_dat->Techniker</li>
-    <li>place_job_dat->Mechaniker</li>
-    <li>place_job_dat->Lebenserhaltungsingenieur</li>
-    <li>place_job_gen->Minenarbeiters</li>
-    <li>place_job_gen->Vorgesetzten</li>
-    <li>place_job_gen->Technikers</li>
-    <li>place_job_gen->Mechanikers</li>
-    <li>place_job_gen->Lebenserhaltungsingenieurs</li>
+    <li>place_job_mas_nom_indef->[place_job]</li>
+    <li>place_job_mas_nom_def->Minenarbeiter</li>
+    <li>place_job_mas_nom_def->Vorgesetzte</li>
+    <li>place_job_mas_nom_def->Techniker</li>
+    <li>place_job_mas_nom_def->Mechaniker</li>
+    <li>place_job_mas_nom_def->Lebenserhaltungsingenieur</li>
+    <li>place_job_mas_dat_indef->Minenarbeiter</li>
+    <li>place_job_mas_dat_indef->Vorgesetzten</li>
+    <li>place_job_mas_dat_indef->Techniker</li>
+    <li>place_job_mas_dat_indef->Mechaniker</li>
+    <li>place_job_mas_dat_indef->Lebenserhaltungsingenieur</li>
+    <li>place_job_mas_dat_def->[place_job_mas_dat_indef]</li>
+    <li>place_job_mas_gen_indef->Minenarbeiters</li>
+    <li>place_job_mas_gen_indef->Vorgesetzten</li>
+    <li>place_job_mas_gen_indef->Technikers</li>
+    <li>place_job_mas_gen_indef->Mechanikers</li>
+    <li>place_job_mas_gen_indef->Lebenserhaltungsingenieurs</li>
+    <li>place_job_mas_gen_def->[place_job_mas_gen_indef]</li>
+    <li>place_job_mas_acc_indef->[place_job_mas_dat_indef]</li>
+    <li>place_job_mas_acc_def->[place_job_mas_acc_indef]</li>
+    <li>place_job_fem_nom_indef->Minenarbeiterin</li>
+    <li>place_job_fem_nom_indef->Vorgesetzte</li>
+    <li>place_job_fem_nom_indef->Technikerin</li>
+    <li>place_job_fem_nom_indef->Mechanikerin</li>
+    <li>place_job_fem_nom_indef->Lebenserhaltungsingenieurin</li>
+    <li>place_job_fem_nom_def->[place_job_fem_nom_indef]</li>
+    <li>place_job_fem_dat_indef->Minenarbeiterin</li>
+    <li>place_job_fem_dat_indef->Vorgesetzten</li>
+    <li>place_job_fem_dat_indef->Technikerin</li>
+    <li>place_job_fem_dat_indef->Mechanikerin</li>
+    <li>place_job_fem_dat_indef->Lebenserhaltungsingenieurin</li>
+    <li>place_job_fem_dat_def->[place_job_fem_dat_indef]</li>
+    <li>place_job_fem_gen_indef->[place_job_fem_dat_indef]</li>
+    <li>place_job_fem_gen_def->[place_job_fem_gen_indef]</li>
+    <li>place_job_fem_acc_indef->[place_job_fem_dat_indef]</li>
+    <li>place_job_fem_acc_def->[place_job_fem_acc_indef]</li>
+    <li>place_personalWeapon->Elektroschlagstock</li>
+    <li>place_personalWeapon->Pistole</li>
     <li>place_personalWeapon_mas->Elektroschlagstock</li>
     <li>place_personalWeapon_fem->Pistole</li>
     <li>place_personalWeapons->Elektroschlagstöcke</li>
@@ -1341,13 +2350,32 @@
     <li>place_massWeapon->[anEMPAttack]</li>
     <li>place_massWeapon_acc->[anEMPAttackAcc]</li>
     <li>place_massWeapon_dat->[anEMPAttackDat]</li>
-    <li>place_foeLeader->Mine-Corp-Boss</li>
-    <li>place_foeLeader_def->Mine-Corp-Boss</li>
-    <li>place_foeLeader_dat->Mine-Corp-Boss</li>
-    <li>place_foeLeader_gen->Mine-Corp-Bosses</li>
-    <li>place_foeSoldiers->Mine-Corp-Soldaten</li>
-    <li>place_foeSoldiers_def->Mine-Corp-Soldaten</li>
-    <li>place_foeSoldiers_dat->Mine-Corp-Soldaten</li>
+    <li>place_foeLeader->Bergbaukonzernchef</li>
+    <li>place_foeLeader_mas_nom_indef->[place_foeLeader]</li>
+    <li>place_foeLeader_mas_nom_def->Bergbaukonzernchef</li>
+    <li>place_foeLeader_mas_dat_indef->Bergbaukonzernchef</li>
+    <li>place_foeLeader_mas_dat_def->[place_foeLeader_mas_dat_indef]</li>
+    <li>place_foeLeader_mas_gen_indef->Bergbaukonzernchefs</li>
+    <li>place_foeLeader_mas_gen_def->[place_foeLeader_mas_gen_indef]</li>
+    <li>place_foeLeader_mas_acc_indef->[place_foeLeader_mas_dat_indef]</li>
+    <li>place_foeLeader_mas_acc_def->[place_foeLeader_mas_acc_indef]</li>
+    <li>place_foeLeader_fem_nom_indef->Bergbaukonzernchefin</li>
+    <li>place_foeLeader_fem_nom_def->[place_foeLeader_fem_nom_indef]</li>
+    <li>place_foeLeader_fem_dat_indef->Bergbaukonzernchefin</li>
+    <li>place_foeLeader_fem_dat_def->[place_foeLeader_fem_dat_indef]</li>
+    <li>place_foeLeader_fem_gen_indef->[place_foeLeader_fem_dat_indef]</li>
+    <li>place_foeLeader_fem_gen_def->[place_foeLeader_fem_gen_indef]</li>
+    <li>place_foeLeader_fem_acc_indef->[place_foeLeader_fem_dat_indef]</li>
+    <li>place_foeLeader_fem_acc_def->[place_foeLeader_fem_acc_indef]</li>
+    <li>place_foeSoldiers->Konzerntruppen</li>
+    <li>place_foeSoldiers_nom_indef->[place_foeSoldiers]</li>
+    <li>place_foeSoldiers_nom_def->Konzerntruppen</li>
+    <li>place_foeSoldiers_gen_indef->Konzerntruppen</li>
+    <li>place_foeSoldiers_gen_def->Konzerntruppen</li>
+    <li>place_foeSoldiers_dat_indef->Konzerntruppen</li>
+    <li>place_foeSoldiers_dat_def->Konzerntruppen</li>
+    <li>place_foeSoldiers_acc_indef->Konzerntruppen</li>
+    <li>place_foeSoldiers_acc_def->Konzerntruppen</li>
   </Xanides.placeRules.rulesStrings>
   
   <!-- EN:
@@ -1373,58 +2401,118 @@
   <Yttak.placeRules.rulesStrings>
     <li>place_name->Yttak</li>
     <li>place_adjective->yttakisch</li>
+    <li>place_summary->Eismondgefängnis</li>
     <li>place_summary_neu->Eismondgefängnis</li>
     <li>place_summary_neu_def->Eismondgefängnis</li>
     <li>place_summary_neu_acc->Eismondgefängnis</li>
     <li>place_summary_neu_dat->Eismondgefängnis</li>
     <li>place_summary_neu_gen->Eismondgefängnisses</li>
-    <li>place_community_mas->Speisesaal</li>
-    <li>place_community_fem->Wachkaserne</li>
-    <li>place_community_neu->Gefangenenlager</li>
-    <li>place_community_mas_acc->Speisesaal</li>
-    <li>place_community_fem_acc->Wachkaserne</li>
-    <li>place_community_neu_acc->Gefangenenlager</li>
-    <li>place_community_mas_dat->Speisesaal</li>
-    <li>place_community_fem_dat->Wachkaserne</li>
-    <li>place_community_neu_dat->Gefangenenlager</li>
-    <li>place_powerCenter->Bürokomplex des Aufsehers</li>
-    <li>place_powerCenter_mas->Bürokomplex des Aufsehers</li>
-    <li>place_powerCenter_mas_acc->Bürokomplex des Aufsehers</li>
-    <li>place_powerCenter_mas_dat->Bürokomplex des Aufsehers</li>
+    <li>place_community->Speisesaal</li>
+    <li>place_community->Wachkaserne</li>
+    <li>place_community->Gefangenenlager</li>
+    <li>place_community_mas_nom_indef->Speisesaal</li>
+    <li>place_community_fem_nom_indef->Wachkaserne</li>
+    <li>place_community_neu_nom_indef->Gefangenenlager</li>
+    <li>place_community_mas_acc_indef->Speisesaal</li>
+    <li>place_community_fem_acc_indef->Wachkaserne</li>
+    <li>place_community_neu_acc_indef->Gefangenenlager</li>
+    <li>place_community_mas_dat_indef->Speisesaal</li>
+    <li>place_community_fem_dat_indef->Wachkaserne</li>
+    <li>place_community_neu_dat_indef->Gefangenenlager</li>
+    <li>place_community_mas_nom_def->Speisesaal</li>
+    <li>place_community_fem_nom_def->Wachkaserne</li>
+    <li>place_community_neu_nom_def->Gefangenenlager</li>
+    <li>place_community_mas_acc_def->Speisesaal</li>
+    <li>place_community_fem_acc_def->Wachkaserne</li>
+    <li>place_community_neu_acc_def->Gefangenenlager</li>
+    <li>place_community_mas_dat_def->Speisesaal</li>
+    <li>place_community_fem_dat_def->Wachkaserne</li>
+    <li>place_community_neu_dat_def->Gefangenenlager</li>
+    <li>place_powerCenter->Bürokomplex des Direktors</li>
+    <li>place_powerCenter_mas->Bürokomplex des Direktors</li>
+    <li>place_powerCenter_mas_acc->Bürokomplex des Direktors</li>
+    <li>place_powerCenter_mas_dat->Bürokomplex des Direktors</li>
     <li>place_job->Häftling</li>
     <li>place_job->Wächter</li>
     <li>place_job->Flüchtling</li>
     <li>place_job->Wartungsarbeiter</li>
     <li>place_job->Transportfahrer</li>
-    <li>place_job_dat->Häftling</li>
-    <li>place_job_dat->Wächter</li>
-    <li>place_job_dat->Flüchtling</li>
-    <li>place_job_dat->Wartungsarbeiter</li>
-    <li>place_job_dat->Transportfahrer</li>
-    <li>place_job_gen->Häftlings</li>
-    <li>place_job_gen->Wächters</li>
-    <li>place_job_gen->Flüchtlings</li>
-    <li>place_job_gen->Wartungsarbeiters</li>
-    <li>place_job_gen->Transportfahrers</li>
+    <li>place_job_mas_nom_indef->[place_job]</li>
+    <li>place_job_mas_nom_def->Häftling</li>
+    <li>place_job_mas_nom_def->Wächter</li>
+    <li>place_job_mas_nom_def->Flüchtling</li>
+    <li>place_job_mas_nom_def->Wartungsarbeiter</li>
+    <li>place_job_mas_nom_def->Transportfahrer</li>
+    <li>place_job_mas_dat_indef->Häftling</li>
+    <li>place_job_mas_dat_indef->Wächter</li>
+    <li>place_job_mas_dat_indef->Flüchtling</li>
+    <li>place_job_mas_dat_indef->Wartungsarbeiter</li>
+    <li>place_job_mas_dat_indef->Transportfahrer</li>
+    <li>place_job_mas_dat_def->[place_job_mas_dat_indef]</li>
+    <li>place_job_mas_gen_indef->Häftlings</li>
+    <li>place_job_mas_gen_indef->Wächters</li>
+    <li>place_job_mas_gen_indef->Flüchtlings</li>
+    <li>place_job_mas_gen_indef->Wartungsarbeiters</li>
+    <li>place_job_mas_gen_indef->Transportfahrers</li>
+    <li>place_job_mas_gen_def->[place_job_mas_gen_indef]</li>
+    <li>place_job_mas_acc_indef->[place_job_mas_dat_indef]</li>
+    <li>place_job_mas_acc_def->[place_job_mas_acc_indef]</li>
+    <li>place_job_fem_nom_indef->Gefangene</li>
+    <li>place_job_fem_nom_indef->Wächterin</li>
+    <li>place_job_fem_nom_indef->Flüchtige</li>
+    <li>place_job_fem_nom_indef->Wartungsarbeiterin</li>
+    <li>place_job_fem_nom_indef->Transportfahrerin</li>
+    <li>place_job_fem_nom_def->[place_job_fem_nom_indef]</li>
+    <li>place_job_fem_dat_indef->Gefangenen</li>
+    <li>place_job_fem_dat_indef->Wächterin</li>
+    <li>place_job_fem_dat_indef->Flüchtigen</li>
+    <li>place_job_fem_dat_indef->Wartungsarbeiterin</li>
+    <li>place_job_fem_dat_indef->Transportfahrerin</li>
+    <li>place_job_fem_dat_def->[place_job_fem_dat_indef]</li>
+    <li>place_job_fem_gen_indef->[place_job_fem_dat_indef]</li>
+    <li>place_job_fem_gen_def->[place_job_fem_gen_indef]</li>
+    <li>place_job_fem_acc_indef->[place_job_fem_dat_indef]</li>
+    <li>place_job_fem_acc_def->[place_job_fem_acc_indef]</li>
+    <li>place_personalWeapon->Klappmesser</li>
+    <li>place_personalWeapon->MP</li>
     <li>place_personalWeapon_neu->Klappmesser</li>
-    <li>place_personalWeapon_neu->SMG</li>
+    <li>place_personalWeapon_fem->MP</li>
     <li>place_personalWeapons->Klappmesser</li>
-    <li>place_personalWeapons->SMGs</li>
+    <li>place_personalWeapons->MPs</li>
     <li>place_personalWeapons_dat->Klappmessern</li>
-    <li>place_personalWeapons_dat->SMGs</li>
+    <li>place_personalWeapons_dat->MPs</li>
     <li>place_massWeapon->eine improvisierte chemische Bombe</li>
     <li>place_massWeapon_acc->eine improvisierte chemische Bombe</li>
     <li>place_massWeapon_dat->einer improvisierten chemischen Bombe</li>
     <li>place_massWeapon->ein orbitaler Laserangriff</li>
     <li>place_massWeapon_acc->einen orbitalen Laserangriff</li>
     <li>place_massWeapon_dat->einem orbitalen Laserangriff</li>
-    <li>place_foeLeader->Gefängnisaufseher</li>
-    <li>place_foeLeader_def->Gefängnisaufseher</li>
-    <li>place_foeLeader_dat->Gefängnisaufseher</li>
-    <li>place_foeLeader_gen->Gefängnisaufsehers</li>
+    <li>place_foeLeader->Gefängnisdirektor</li>
+    <li>place_foeLeader_mas_nom_indef->[place_foeLeader]</li>
+    <li>place_foeLeader_mas_nom_def->Gefängnisdirektor</li>
+    <li>place_foeLeader_mas_dat_indef->Gefängnisdirektor</li>
+    <li>place_foeLeader_mas_dat_def->[place_foeLeader_mas_dat_indef]</li>
+    <li>place_foeLeader_mas_gen_indef->Gefängnisdirektors</li>
+    <li>place_foeLeader_mas_gen_def->[place_foeLeader_mas_gen_indef]</li>
+    <li>place_foeLeader_mas_acc_indef->[place_foeLeader_mas_dat_indef]</li>
+    <li>place_foeLeader_mas_acc_def->[place_foeLeader_mas_acc_indef]</li>
+    <li>place_foeLeader_fem_nom_indef->Gefängnisdirektorin</li>
+    <li>place_foeLeader_fem_nom_def->[place_foeLeader_fem_nom_indef]</li>
+    <li>place_foeLeader_fem_dat_indef->Gefängnisdirektorin</li>
+    <li>place_foeLeader_fem_dat_def->[place_foeLeader_fem_dat_indef]</li>
+    <li>place_foeLeader_fem_gen_indef->[place_foeLeader_fem_dat_indef]</li>
+    <li>place_foeLeader_fem_gen_def->[place_foeLeader_fem_gen_indef]</li>
+    <li>place_foeLeader_fem_acc_indef->[place_foeLeader_fem_dat_indef]</li>
+    <li>place_foeLeader_fem_acc_def->[place_foeLeader_fem_acc_indef]</li>
     <li>place_foeSoldiers->korrupte Wachen</li>
-    <li>place_foeSoldiers_def->korrupten Wachen</li>
-    <li>place_foeSoldiers_dat->korrupten Wachen</li>
+    <li>place_foeSoldiers_nom_indef->[place_foeSoldiers]</li>
+    <li>place_foeSoldiers_nom_def->korrupten Wachen</li>
+    <li>place_foeSoldiers_gen_indef->korrupter Wachen</li>
+    <li>place_foeSoldiers_gen_def->korrupten Wachen</li>
+    <li>place_foeSoldiers_dat_indef->korrupten Wachen</li>
+    <li>place_foeSoldiers_dat_def->korrupten Wachen</li>
+    <li>place_foeSoldiers_acc_indef->korrupte Wachen</li>
+    <li>place_foeSoldiers_acc_def->korrupten Wachen</li>
   </Yttak.placeRules.rulesStrings>
   
   <!-- EN:
@@ -1452,20 +2540,33 @@
   <Zoutera.placeRules.rulesStrings>
     <li>place_name->Zoutera</li>
     <li>place_adjective->zoutinisch</li>
+    <li>place_summary->grasbedeckte Dinowelt</li>
     <li>place_summary_fem->grasbedeckte Dinowelt</li>
     <li>place_summary_fem_def->grasbedeckte Dinowelt</li>
     <li>place_summary_fem_acc->grasbedeckte Dinowelt</li>
     <li>place_summary_fem_dat->grasbedeckten Dinowelt</li>
     <li>place_summary_fem_gen->grasbedeckten Dinowelt</li>
-    <li>place_community_mas->Handelsaußenposten</li>
-    <li>place_community_neu->Zeltdorf</li>
-    <li>place_community_mas->Mammutfriedhof</li>
-    <li>place_community_mas_acc->Handelsaußenposten</li>
-    <li>place_community_neu_acc->Zeltdorf</li>
-    <li>place_community_mas_acc->Mammutfriedhof</li>
-    <li>place_community_mas_dat->Handelsaußenposten</li>
-    <li>place_community_neu_dat->Zeltdorf</li>
-    <li>place_community_mas_dat->Mammutfriedhof</li>
+    <li>place_community->Handelsposten</li>
+    <li>place_community->Zeltdorf</li>
+    <li>place_community->Mammutfriedhof</li>
+    <li>place_community_mas_nom_indef->Handelsposten</li>
+    <li>place_community_neu_nom_indef->Zeltdorf</li>
+    <li>place_community_mas_nom_indef->Mammutfriedhof</li>
+    <li>place_community_mas_acc_indef->Handelsposten</li>
+    <li>place_community_neu_acc_indef->Zeltdorf</li>
+    <li>place_community_mas_acc_indef->Mammutfriedhof</li>
+    <li>place_community_mas_dat_indef->Handelsposten</li>
+    <li>place_community_neu_dat_indef->Zeltdorf</li>
+    <li>place_community_mas_dat_indef->Mammutfriedhof</li>
+    <li>place_community_mas_nom_def->Handelsposten</li>
+    <li>place_community_neu_nom_def->Zeltdorf</li>
+    <li>place_community_mas_nom_def->Mammutfriedhof</li>
+    <li>place_community_mas_acc_def->Handelsposten</li>
+    <li>place_community_neu_acc_def->Zeltdorf</li>
+    <li>place_community_mas_acc_def->Mammutfriedhof</li>
+    <li>place_community_mas_dat_def->Handelsposten</li>
+    <li>place_community_neu_dat_def->Zeltdorf</li>
+    <li>place_community_mas_dat_def->Mammutfriedhof</li>
     <li>place_powerCenter->Bergfestung</li>
     <li>place_powerCenter_fem->Bergfestung</li>
     <li>place_powerCenter_fem_acc->Bergfestung</li>
@@ -1474,14 +2575,39 @@
     <li>place_job->Muffalohirte</li>
     <li>place_job->Jäger</li>
     <li>place_job->Hartledermacher</li>
-    <li>place_job_dat->Dinoreiter</li>
-    <li>place_job_dat->Muffalohirten</li>
-    <li>place_job_dat->Jäger</li>
-    <li>place_job_dat->Hartledermacher</li>
-    <li>place_job_gen->Dinoreiters</li>
-    <li>place_job_gen->Muffalohirten</li>
-    <li>place_job_gen->Jägers</li>
-    <li>place_job_gen->Hartledermachers</li>
+    <li>place_job_mas_nom_indef->[place_job]</li>
+    <li>place_job_mas_nom_def->Dinoreiter</li>
+    <li>place_job_mas_nom_def->Muffalohirte</li>
+    <li>place_job_mas_nom_def->Jäger</li>
+    <li>place_job_mas_nom_def->Hartledermacher</li>
+    <li>place_job_mas_dat_indef->Dinoreiter</li>
+    <li>place_job_mas_dat_indef->Muffalohirten</li>
+    <li>place_job_mas_dat_indef->Jäger</li>
+    <li>place_job_mas_dat_indef->Hartledermacher</li>
+    <li>place_job_mas_dat_def->[place_job_mas_dat_indef]</li>
+    <li>place_job_mas_gen_indef->Dinoreiters</li>
+    <li>place_job_mas_gen_indef->Muffalohirten</li>
+    <li>place_job_mas_gen_indef->Jägers</li>
+    <li>place_job_mas_gen_indef->Hartledermachers</li>
+    <li>place_job_mas_gen_def->[place_job_mas_gen_indef]</li>
+    <li>place_job_mas_acc_indef->[place_job_mas_dat_indef]</li>
+    <li>place_job_mas_acc_def->[place_job_mas_acc_indef]</li>
+    <li>place_job_fem_nom_indef->Dinoreiterin</li>
+    <li>place_job_fem_nom_indef->Muffalohirtin</li>
+    <li>place_job_fem_nom_indef->Jägerin</li>
+    <li>place_job_fem_nom_indef->Hartledermacherin</li>
+    <li>place_job_fem_nom_def->[place_job_fem_nom_indef]</li>
+    <li>place_job_fem_dat_indef->Dinoreiterin</li>
+    <li>place_job_fem_dat_indef->Muffalohirtin</li>
+    <li>place_job_fem_dat_indef->Jägerin</li>
+    <li>place_job_fem_dat_indef->Hartledermacherin</li>
+    <li>place_job_fem_dat_def->[place_job_fem_dat_indef]</li>
+    <li>place_job_fem_gen_indef->[place_job_fem_dat_indef]</li>
+    <li>place_job_fem_gen_def->[place_job_fem_gen_indef]</li>
+    <li>place_job_fem_acc_indef->[place_job_fem_dat_indef]</li>
+    <li>place_job_fem_acc_def->[place_job_fem_acc_indef]</li>
+    <li>place_personalWeapon->Bambusstab</li>
+    <li>place_personalWeapon->Jagdsprengpfeil</li>
     <li>place_personalWeapon_mas->Bambusstab</li>
     <li>place_personalWeapon_mas->Jagdsprengpfeil</li>
     <li>place_personalWeapons->Bambusstäbe</li>
@@ -1495,12 +2621,31 @@
     <li>place_massWeapon_acc->eine Düngerbombe</li>
     <li>place_massWeapon_dat->einer Düngerbombe</li>
     <li>place_foeLeader->Stoßzahnkönig</li>
-    <li>place_foeLeader_def->Stoßzahnkönig</li>
-    <li>place_foeLeader_dat->Stoßzahnkönig</li>
-    <li>place_foeLeader_gen->Stoßzahnkönigs</li>
+    <li>place_foeLeader_mas_nom_indef->[place_foeLeader]</li>
+    <li>place_foeLeader_mas_nom_def->Stoßzahnkönig</li>
+    <li>place_foeLeader_mas_dat_indef->Stoßzahnkönig</li>
+    <li>place_foeLeader_mas_dat_def->[place_foeLeader_mas_dat_indef]</li>
+    <li>place_foeLeader_mas_gen_indef->Stoßzahnkönigs</li>
+    <li>place_foeLeader_mas_gen_def->[place_foeLeader_mas_gen_indef]</li>
+    <li>place_foeLeader_mas_acc_indef->[place_foeLeader_mas_dat_indef]</li>
+    <li>place_foeLeader_mas_acc_def->[place_foeLeader_mas_acc_indef]</li>
+    <li>place_foeLeader_fem_nom_indef->Stoßzahnkönigin</li>
+    <li>place_foeLeader_fem_nom_def->[place_foeLeader_fem_nom_indef]</li>
+    <li>place_foeLeader_fem_dat_indef->Stoßzahnkönigin</li>
+    <li>place_foeLeader_fem_dat_def->[place_foeLeader_fem_dat_indef]</li>
+    <li>place_foeLeader_fem_gen_indef->[place_foeLeader_fem_dat_indef]</li>
+    <li>place_foeLeader_fem_gen_def->[place_foeLeader_fem_gen_indef]</li>
+    <li>place_foeLeader_fem_acc_indef->[place_foeLeader_fem_dat_indef]</li>
+    <li>place_foeLeader_fem_acc_def->[place_foeLeader_fem_acc_indef]</li>
     <li>place_foeSoldiers->Stoßzahnkrieger</li>
-    <li>place_foeSoldiers_def->Stoßzahnkrieger</li>
-    <li>place_foeSoldiers_dat->Stoßzahnkriegern</li>
+    <li>place_foeSoldiers_nom_indef->[place_foeSoldiers]</li>
+    <li>place_foeSoldiers_nom_def->Stoßzahnkrieger</li>
+    <li>place_foeSoldiers_gen_indef->Stoßzahnkrieger</li>
+    <li>place_foeSoldiers_gen_def->Stoßzahnkrieger</li>
+    <li>place_foeSoldiers_dat_indef->Stoßzahnkriegern</li>
+    <li>place_foeSoldiers_dat_def->Stoßzahnkriegern</li>
+    <li>place_foeSoldiers_acc_indef->Stoßzahnkrieger</li>
+    <li>place_foeSoldiers_acc_def->Stoßzahnkrieger</li>
     <li>megaFauna->Ankylosauriern</li>
     <li>megaFauna->blauen Mammuts</li>
     <li>megaFauna->Novoraptoren</li>

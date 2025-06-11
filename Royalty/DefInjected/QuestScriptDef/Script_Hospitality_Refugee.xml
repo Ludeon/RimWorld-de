@@ -35,6 +35,11 @@
     <li>lodgerArrestedLeaveMapLetterText->[letterIntroArrested]\n\n[decidedToLeave]</li>
     <li>lodgersAllArrestedLetterLabel->Quest failed</li>
     <li>lodgersAllArrestedLetterText->You arrested {SUBJECT_definite}, the [lastOrNot] desperate [faction_pawnSingular] [whoAskedToStay].\n\n[questOver]</li>
+    <li>letterIntroLeftBehind->{SUBJECT_definite}, [oneOfThe], was left behind.</li>
+    <li>lodgerLeftBehindMemoryThoughtLetterLabel->[lodgersLabel] left behind: Anger</li>
+    <li>lodgerLeftBehindMemoryThoughtLetterText->[letterIntroLeftBehind]\n\n[appalledButNoAction]</li>
+    <li>lodgerLeftBehindLeaveMapLetterLabel->[lodgersLabel] left behind: Departure</li>
+    <li>lodgerLeftBehindLeaveMapLetterText->[letterIntroLeftBehind]\n\n[decidedToLeave]</li>
     <li>letterIntroViolated->{SUBJECT_definite}, [oneOfThe], was violated by surgery.</li>
     <li>lodgerViolatedMemoryThoughtLetterLabel->[lodgersLabel] violated: Anger</li>
     <li>lodgerViolatedMemoryThoughtLetterText->[letterIntroViolated]\n\n[appalledButNoAction]</li>
@@ -74,7 +79,7 @@
     <!-- <li>whoAskedToStay->who asked to stay with you</li> -->
     <!-- <li>oneOfThe->one of the desperate [faction_pawnsPlural] who asked to stay with you</li> -->
     <li>questOver->Die Quest '[resolvedQuestName]' ist beendet.</li>
-    <li>letterIntroDeath->{SUBJECT_definite}, einer der verzweifelten [faction_pawnsPlural], der bei dir bleiben wollte, ist gestorben.</li>
+    <li>letterIntroDeath->{SUBJECT_definite}, einer der verzweifelten {lookup: [faction_pawnsPlural]; decline_other; 5}, der bei dir bleiben wollte, ist gestorben.</li>
     <li>lodgerDiedMemoryThoughtLetterLabel->[lodgersLabel] gestorben: Wut</li>
     <li>lodgerDiedMemoryThoughtLetterText->[letterIntroDeath]\n\n[appalledButNoAction]</li>
     <li>lodgerDiedAttackPlayerLetterLabel->[lodgersLabel] gestorben: Rache</li>
@@ -83,7 +88,7 @@
     <li>lodgerDiedLeaveMapLetterText->[letterIntroDeath]\n\n[decidedToLeave]</li>
     <li>lodgersAllDiedLetterLabel->Quest gescheitert</li>
     <li>lodgersAllDiedLetterText->{SUBJECT_definite}, der [lastOrNot] verzweifelte [faction_pawnSingular], der bei dir bleiben wollte, ist gestorben.\n\n[questOver]</li>
-    <li>letterIntroArrested->Du hast {SUBJECT_definite}, einen der verzweifelten [faction_pawnsPlural], der bei dir bleiben wollte, inhaftiert.</li>
+    <li>letterIntroArrested->Du hast {SUBJECT_definite}, einen der verzweifelten {lookup: [faction_pawnsPlural]; decline_other; 5}, der bei dir bleiben wollte, inhaftiert.</li>
     <li>lodgerArrestedMemoryThoughtLetterLabel->[lodgersLabel] inhaftiert: Wut</li>
     <li>lodgerArrestedMemoryThoughtLetterText->[letterIntroArrested]\n\n[appalledButNoAction]</li>
     <li>lodgerArrestedAttackPlayerLetterLabel->[lodgersLabel] inhaftiert: Rache</li>
@@ -92,14 +97,19 @@
     <li>lodgerArrestedLeaveMapLetterText->[letterIntroArrested]\n\n[decidedToLeave]</li>
     <li>lodgersAllArrestedLetterLabel->Quest gescheitert</li>
     <li>lodgersAllArrestedLetterText->Du hast {SUBJECT_definite}, der [lastOrNot] verzweifelte [faction_pawnSingular], der bei dir bleiben wollte, inhaftiert.\n\n[questOver]</li>
-    <li>letterIntroViolated->{SUBJECT_definite}, einer der verzweifelten [faction_pawnsPlural], der bei dir bleiben wollte, wurde durch einen chirurgischen Eingriff verletzt.</li>
+    <li>letterIntroLeftBehind->{SUBJECT_definite}, einer der verzweifelten {lookup: [faction_pawnsPlural]; decline_other; 5}, der bei dir bleiben wollte, wurde zurückgelassen.</li>
+    <li>lodgerLeftBehindMemoryThoughtLetterLabel->[lodgersLabel] zurückgelassen: Wut</li>
+    <li>lodgerLeftBehindMemoryThoughtLetterText->[letterIntroLeftBehind]\n\n[appalledButNoAction]</li>
+    <li>lodgerLeftBehindLeaveMapLetterLabel->[lodgersLabel] zurückgelassen: Weggang</li>
+    <li>lodgerLeftBehindLeaveMapLetterText->[letterIntroLeftBehind]\n\n[decidedToLeave]</li>
+    <li>letterIntroViolated->{SUBJECT_definite}, einer der verzweifelten {lookup: [faction_pawnsPlural]; decline_other; 5}, der bei dir bleiben wollte, wurde durch einen chirurgischen Eingriff verletzt.</li>
     <li>lodgerViolatedMemoryThoughtLetterLabel->[lodgersLabel] verletzt: Wut</li>
     <li>lodgerViolatedMemoryThoughtLetterText->[letterIntroViolated]\n\n[appalledButNoAction]</li>
     <li>lodgerViolatedAttackPlayerLetterLabel->[lodgersLabel] verletzt: Rache</li>
     <li>lodgerViolatedAttackPlayerLetterText->[letterIntroViolated]\n\n[turnedViolent]</li>
     <li>lodgerViolatedLeaveMapLetterLabel->[lodgersLabel] verletzt: Weggang</li>
     <li>lodgerViolatedLeaveMapLetterText->[letterIntroViolated]\n\n[decidedToLeave]</li>
-    <li>letterIntroPsychicRitualTarget->{SUBJECT_definite}, einer der verzweifelten [faction_pawnsPlural], der bei dir bleiben wollte, war Ziel eines mentalen Rituals.</li>
+    <li>letterIntroPsychicRitualTarget->{SUBJECT_definite}, einer der verzweifelten {lookup: [faction_pawnsPlural]; decline_other; 5}, der bei dir bleiben wollte, war Ziel eines mentalen Rituals.</li>
     <li>lodgerPsychicRitualTargetMemoryThoughtLetterLabel->[lodgersLabel] verletzt: Wut</li>
     <li>lodgerPsychicRitualTargetMemoryThoughtLetterText->[letterIntroPsychicRitualTarget]\n\n[appalledButNoAction]</li>
     <li>lodgerPsychicRitualTargetAttackPlayerLetterLabel->[lodgersLabel] verletzt: Rache</li>
@@ -175,7 +185,7 @@
     <li>lodgersSingularOrPluralDef(lodgerCount>=2)->die [lodgersLabelPlural]</li>
     <li>belohnt(lodgerCount==1)->belohnt</li>
     <li>belohnt(lodgerCount>=2)->belohnen</li>
-    <li>questDescription->[approachInfo] [claimInfo] [asker_nameDef] bittet dich um Erlaubnis, [questDurationTicks_duration] lang in [map_label] bleiben zu dürfen, um sich auszuruhen und zu sammeln.\n\nIm Gegenzug [offer] [lodgersPronoun] dir an, in dieser Zeit kostenlos zu arbeiten und zu kämpfen.\n\n[joinInfo] Vielleicht [belohnt] [lodgersPronoun] dich später auch für deine Hilfe - aber [lodgersPossessive]e wahren Absichten bleiben ein Geheimnis.\n\n[travelerInfo] keiner Fraktion an. Du kannst [lodgersObjectiveAcc] töten, inhaftieren, verkaufen oder [lodgersPossessive]e Organe entnehmen, ohne diplomatische Konsequenzen befürchten zu müssen.</li>
+    <li>questDescription->[approachInfo] [claimInfo] [asker_nameDef] bittet dich um Erlaubnis, [questDurationTicks_duration] lang in [map_label] bleiben zu dürfen, um sich auszuruhen und zu sammeln.\n\nIm Gegenzug [offer] [lodgersPronoun] dir an, in dieser Zeit kostenlos zu arbeiten und zu kämpfen.\n\n[joinInfo] Vielleicht [belohnt] [lodgersPronoun] dich später auch für deine Hilfe – aber [lodgersPossessive]e wahren Absichten bleiben ein Geheimnis.\n\n[travelerInfo] keiner Fraktion an. Du kannst [lodgersObjectiveAcc] töten, inhaftieren, verkaufen oder [lodgersPossessive]e Organe entnehmen, ohne diplomatische Konsequenzen befürchten zu müssen.</li>
     <li>approachInfo(lodgerCount==1)->Ein verzweifelter [faction_pawnSingular] namens [asker_nameDef] nähert sich.</li>
     <li>approachInfo(lodgerCount==2)->[asker_nameDef] und ein anderer verzweifelter [faction_pawnSingular] nähern sich.</li>
     <li>approachInfo(lodgerCount==2,childCount==1,priority=1)->[asker_nameDef] nähert sich mit einem Kind im Schlepptau.</li>
@@ -197,7 +207,7 @@
     <li>joinInfo(lodgerCount==1)->Wenn du [asker_objective] zufriedenstellst, könnte [asker_pronoun] gewillt sein, deiner Kolonie beizutreten.</li>
     <li>joinInfo(lodgerCount>=2)->Wenn du sie zufriedenstellst, könnten einige von ihnen gewillt sein, deiner Kolonie beizutreten.</li>
     <li>travelerInfo(lodgerCount==1)->Dieser [faction_pawnSingular] gehört</li>
-    <li>travelerInfo(lodgerCount>=2)->Diese [faction_pawnsPlural] gehören</li>
+    <li>travelerInfo(lodgerCount>=2)->Diese {lookup: [faction_pawnsPlural]; decline_other; 4} gehören</li>
   </Hospitality_Refugee.questDescriptionRules.rulesStrings>
   <!-- EN:
     <li>questName(lodgerCount==1)->[asker_nameDef] the [lodgerAdj]</li>

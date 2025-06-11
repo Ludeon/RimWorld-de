@@ -44,7 +44,7 @@ foreach ($dlc in $dlcs)
   $declineFile = "WordInfo\decline_other.txt"
 
   # Create a hash table of nominative words
-  $HashTable = @{}
+  $HashTable = new-object System.Collections.Hashtable
   $declineFileLines = @()
   if (test-path $declineFile) {
     $declineFileLines = Get-Content -Path $declineFile

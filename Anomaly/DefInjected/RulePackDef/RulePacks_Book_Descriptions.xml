@@ -327,7 +327,7 @@
     <li>author(p=3,ANYPAWN_gender!=Female)->der Autor</li>
     <li>author(p=3,ANYPAWN_gender==Female)->die Autorin</li>
     <li>author(p=3,ANYPAWN_gender!=Female)->[anAuthorDesc] [PersonJob]</li>
-    <li>author(p=3,ANYPAWN_gender==Female)->[anAuthorDescFem] [PersonJobFem]</li>
+    <li>author(p=3,ANYPAWN_gender==Female)->[anAuthorDescFem] [PersonJobFemNom]</li>
     <li>author(ANYPAWN_gender!=Female)->[anAuthorDesc] Forscher</li>
     <li>author(ANYPAWN_gender!=Female)->[anAuthorDesc] Geistlicher</li>
     <li>author(ANYPAWN_gender!=Female)->[anAuthorDesc] Okkultist</li>
@@ -475,7 +475,7 @@
     <li>specificHorrorStory->Ein Abschnitt beschreibt die Mechanismen der dunklen mentalen Beeinflussung, bei der eine Entität auf einer anderen Ebene die Gedanken eines Menschen unbeabsichtigt beeinflussen kann, indem sie ihn mit ihrer emotionalen Resonanz synchronisiert.</li>
     <li>specificHorrorStory->Ein Abschnitt beschreibt verschiedene archotechnische Hyperintelligenzen und die unterschiedliche Natur ihrer emotionalen und psychischen Emanationen. Während einige als neutral oder sogar gutmütig angesehen werden, sind andere Entitäten von reinem Zorn.</li>
     <li>specificHorrorStory->[ANYPAWN_pronoun] beschreibt das Gefühl, wie [ANYPAWN_possessive] Geist durch den dunklen mentalen Einfluss einer höheren Intelligenz gewaltsam umstrukturiert wird.</li>
-    <li>specificHorrorStory->In einem Abschnitt versucht der Autor, Selbstmord zu begehen, wird aber von einem freundlichen [PersonJobDat] gefunden und gerettet.</li>
+    <li>specificHorrorStory->In einem Abschnitt versucht der Autor, Selbstmord zu begehen, wird aber von einem freundlichen [PersonJobMasDat] gefunden und gerettet.</li>
     <li>specificHorrorStory->Der Inhalt ist mit verstörenden Illustrationen geschmückt, die eine groteske, fremdartige Entität beschreiben, deren formlose, tintenartige Ranken sich über die Seiten schlängeln und sowohl ein Gefühl des Schreckens als auch der Faszination hervorrufen.</li>
     <li>specificHorrorStory->Das Konzept der Paralleldimensionen zieht sich wie ein roter Faden durch die Erzählung, in der die Figuren auf Entitäten treffen, die jenseits des Schleiers der Wahrnehmung leben und in einer Realität koexistieren, die sich mit der unseren überschneidet, uns aber verborgen bleibt.</li>
     <li>specificHorrorStory->In den Schriften geht es um eine unheimliche Darstellung von "Horax", einer maschinellen Hyperintelligenz, die durch eine verborgene Dimension an einen Ort namens "die Leere" gelangt ist.</li>
@@ -603,7 +603,7 @@
     <li>awfulDesc->nahezu zusammenhanglos</li>
     <li>awfulDesc->repetitiv und in vielen Abschnitten detailarm</li>
     <li>awfulDesc->an vielen Stellen unleserlich verblasst</li>
-    <li>awfulDesc->unvollständig - es fehlen viele Seiten</li>
+    <li>awfulDesc->unvollständig – es fehlen viele Seiten</li>
     <li>awfulDesc->völlig unorganisiert und überspringt ständig Themen</li>
     <li>awfulDesc->in einer alten Sprache geschrieben</li>
     <li>awfulDesc->voll von unverständlichem Fachjargon</li>
@@ -616,7 +616,7 @@
     <li>decentDesc->an einigen Stellen aufschlussreich, andere Abschnitte sind jedoch überflüssig</li>
     <li>decentDesc->aufschlussreich, aber nur aus einer anderen Perspektive</li>
     <li>decentDesc->sehr detailliert, aber es fehlt an hilfreichen Interpretationen</li>
-    <li>decentDesc->unvollständig - es fehlen einige Seiten</li>
+    <li>decentDesc->unvollständig – es fehlen einige Seiten</li>
     <li>decentDesc->nützlich, aber oft zu sehr von den persönlichen Interessen des Autors geprägt</li>
     <li>decentDesc->sehr informativ, trotz der merkwürdigen Ansichten und Vorurteile des Autors</li>
     <li>decentDesc->handwerklich gut gemacht</li>
@@ -630,7 +630,7 @@
     <li>excellentDesc->bemerkenswert gut gemacht</li>
     <li>excellentDesc->übersichtlich und professionell strukturiert</li>
     <li>excellentDesc->in vielen Bereichen fast poetisch</li>
-    <li>excellentDesc->erschreckend detailliert geschrieben - viele Abschnitte sind in ihrem Stil fast poetisch</li>
+    <li>excellentDesc->erschreckend detailliert geschrieben – viele Abschnitte sind in ihrem Stil fast poetisch</li>
     <li>excellentDesc->voll von brillanten Ideen, die den Verstand an seine Grenzen bringen</li>
   </Description_Tome.rulePack.rulesStrings>
   

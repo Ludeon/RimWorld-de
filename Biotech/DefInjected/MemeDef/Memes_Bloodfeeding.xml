@@ -30,16 +30,16 @@
   -->
   <Bloodfeeding.descriptionMaker.rules.rulesStrings>
     <li>creation(tag=meme_Bloodfeeding)        ->[deity0_name] trank das Blut der roten Sterne, wodurch sie weiß wurden.</li>
-    <li>episode(uses=1,tag=meme_Bloodfeeding)  ->[deity0_name], {replace: ^[deity0_pronoun] [deity0_type]; "^er Allmächtiger "-"der Allmächtige "; "^sie Allmächtiger "-"die Allmächtige "; "^es Allmächtiger "-"das Allmächtige "; "^er Allgewaltiger "-"der Allgewaltige "; "^sie Allgewaltiger "-"die Allgewaltige "; "^es Allgewaltiger "-"das Allgewaltige "; "^er Omnipotenter "-"der Omnipotente "; "^sie Omnipotenter "-"die Omnipotente "; "^es Omnipotenter "-"das Omnipotente "; "^er Universaler "-"der Universale "; "^sie Universaler "-"die Universale "; "^es Universaler "-"das Universale "; "^er Gott "-"der Gott "; "^sie Gott "-"die Göttin "; "^es Gott "-"der Gott "; "^er "-"der "; "^sie "-"die "; "^es "-"das "}, schenkte [deity0_possessive]en Auserwählten die Gabe des Durstes, damit sie die wahre Stärke erkennen konnten.</li>
+    <li>episode(uses=1,tag=meme_Bloodfeeding)  ->[deity0_name], [der_Gott], schenkte [deity0_possessive]en Auserwählten die Gabe des Durstes, damit sie die wahre Stärke erkennen konnten.</li>
     <li>intro(tag=meme_Bloodfeeding)           ->Auf [place_summary_dat_def] [place_name] gab es einen Menschen namens [deity0_name]. Um [deity0_objective] für [deity0_possessive]e Sünden zu bestrafen, verschmolz [deity0_possessive] Vater die Seele von [deity0_name] mit der [bloodDrinkingAnimalGenIndef].</li>
-    <li>intro(tag=meme_Bloodfeeding)           ->Auf [place_summary_dat_def] [place_name] stieg [deity0_name] während eines Rituals namens [ritualName] in den Tempel hinab und nahm die Gestalt {replace: [bloodDrinkingAnimalGenIndef]; "eines "-"eines riesigen "; "einer "-"einer riesigen "} an. [deity0_name] trank das Blut [deity0_possessive]er [adjective]en Anhänger.</li>
-    <li>conflict(tag=meme_Bloodfeeding)        ->Ein [foeLeader] verkündete, dass alle, die Blut tranken, Abscheulichkeiten seien, und entsandte [foeSoldiers], um die [adjective]en Anhänger zu verfolgen.</li>
-    <li>founderJoin(tag=meme_Bloodfeeding)     ->Ein [place_job] namens [founderName] wurde von einem der [place_foeSoldiers_def] des [place_foeLeader_gen] angegriffen. [founderName] tötete ihn mit [place_personalWeapon_dat_indef] und trank sein Blut, wodurch [founder_pronoun] die Kraft von [deity0_name] erhielt.</li>
-    <li>victory(tag=meme_Bloodfeeding)         ->[founderName] führte eine Gruppe von [adjective]en Anhängern in [place_powerCenter_acc_def], trank das Blut des [place_foeLeader_gen] und verbrannte sein Fleisch. [deity0_name] machte [founderName] zum neuen [place_foeLeader_dat], denn [founderName] hatte [founder_possessive]e Stärke bewiesen.</li>
+    <li>intro(tag=meme_Bloodfeeding)           ->Auf [place_summary_dat_def] [place_name] stieg [deity0_name] während eines Rituals namens [ritualName] in den Tempel hinab und nahm die Gestalt {replace: [bloodDrinkingAnimalGenIndef]; "eines "-"eines riesigen "; "einer "-"einer riesigen "} an. [deity0_name] trank das Blut [deity0_possessive]er [members_gen].</li>
+    <li>conflict(tag=meme_Bloodfeeding)        ->[ein_Anfuehrer] verkündete, dass alle, die Blut tranken, Abscheulichkeiten seien, und entsandte [foeSoldiers_nom_indef], um die [members_acc] zu verfolgen.</li>
+    <li>founderJoin(tag=meme_Bloodfeeding)     ->[ein_Arbeiter] namens [founderName] wurde von einem der [place_foeSoldiers_gen_def] [des_Anfuehrers] angegriffen. [founderName] tötete [foeLeader_objective] mit [place_personalWeapon_dat_indef] und trank [foeLeader_possessive] Blut, wodurch [founder_pronoun] die Kraft von [deity0_name] erhielt.</li>
+    <li>victory(tag=meme_Bloodfeeding)         ->[founderName] führte eine Gruppe von [members_dat] in [place_powerCenter_acc_def], trank das Blut [des_Anfuehrers] und verbrannte [foeLeader_possessive] Fleisch. [deity0_name] machte [founderName] [zum_neuen_Anfuehrer], denn [founderName] hatte [founder_possessive]e Stärke bewiesen.</li>
     <li>setup(tag=meme_Bloodfeeding)           ->[founderName] begehrte die Kontrolle über einen hyperintelligenten Archotech. Aber die Macht des Archotechs war zu groß, und [founder_pronoun] wurde stattdessen transformiert.</li>
     <li>story(uses=1,tag=meme_Bloodfeeding)    ->[founderName] gab [founder_possessive]en Anhängern die Gabe des roten Durstes, auf dass sie stark werden.</li>
     <li>lessonIntro(tag=meme_Bloodfeeding)     ->Als ich das erste Mal Blut trank, kam mir die Erleuchtung. Ich sah, dass</li>
-    <li>lesson(tag=meme_Bloodfeeding)          ->es nur zwei Arten von Menschen gibt - die Schwachen und die Starken</li>
+    <li>lesson(tag=meme_Bloodfeeding)          ->es nur zwei Arten von Menschen gibt – die Schwachen und die Starken</li>
     <li>lessonReinforcement(tag=meme_Bloodfeeding) ->Blut zu trinken bedeutet, stark zu sein, und dies zu wissen macht es deutlich.</li>
     <li>archistBasis(tag=meme_Bloodfeeding)    ->Die archotechnischen Gottesmaschinen schenkten dem Menschen den Durst, auf dass er ihn besser begreife.</li>
     <li>archistFact(tag=meme_Bloodfeeding)     ->Während sich das Bewusstsein eines Archotechs ausdehnt, muss er sein Substrat vergrößern, indem er die Essenz anderer Maschinen trinkt.</li>
@@ -62,6 +62,9 @@
     <li>place_personalWeapon_dat_indef->einem [place_personalWeapon_mas]</li>
     <li>place_personalWeapon_dat_indef->einer [place_personalWeapon_fem]</li>
     <li>place_personalWeapon_dat_indef->einem [place_personalWeapon_neu]</li>
+    <li>zum_neuen_Anfuehrer(foeLeader_gender!=Female)->zum neuen [place_foeLeader_mas_dat_def]</li>
+    <li>zum_neuen_Anfuehrer(foeLeader_gender==Female)->zur neuen [place_foeLeader_fem_dat_def]</li>
+    <li>zum_neuen_Anfuehrer(priority=-1)->zum neuen [foeLeader]</li>
   </Bloodfeeding.descriptionMaker.rules.rulesStrings>
   <!-- EN:
     <li>memeAdjective->blood</li>

@@ -51,14 +51,14 @@
     <li>artextra_clause->the scene takes place on the outskirts of a [Community]</li>
     <li>artextra_clause->the scene takes place inside a [Community] built near a [TerrainFeature]</li>
     <li>artextra_clause->a [Character] [idles] [side_position]</li>
-    <li>artextra_clause->a [PAWN_adj] [Character] [idles] [side_position]</li>
+    <li>artextra_clause->a [pawn_adj] [Character] [idles] [side_position]</li>
     <li>artextra_clause->[Quantity_adjphrase] [Character]s appear [side_position]</li>
-    <li>artextra_clause->[Quantity_adjphrase] [PAWN_adj] [Character]s appear [side_position]</li>
+    <li>artextra_clause->[Quantity_adjphrase] [pawn_adj] [Character]s appear [side_position]</li>
     <li>artextra_clause->a [Animal] [idles] [side_position]</li>
     <li>artextra_clause->if you squint your eyes, the [composition] composition of the image reveals the outline of [subimageany]</li>
-    <li>artextra_clause->the [emotional_expression] head of a [PAWN_adj] [PersonJob] watches over all</li>
-    <li>artextra_clause->a [PAWN_adj] [PersonJob] watches over all while [emotional_expression]</li>
-    <li>artextra_clause->the head of a [PAWN_adj] [PersonJob] watches over all</li>
+    <li>artextra_clause->the [emotional_expression] head of a [pawn_adj] [PersonJob] watches over all</li>
+    <li>artextra_clause->a [pawn_adj] [PersonJob] watches over all while [emotional_expression]</li>
+    <li>artextra_clause->the head of a [pawn_adj] [PersonJob] watches over all</li>
     <li>artextra_clause->the whole image is depicted by the careful arrangement of [subimageplural]</li>
     <li>subimageany->[subimagesingle]</li>
     <li>subimageany->[subimageplural]</li>
@@ -233,19 +233,19 @@
     <li>artextra_clause(p=0.33)->ein [CharacterMas] [idles] [side_position]</li>
     <li>artextra_clause(p=0.33)->eine [CharacterFem] [idles] [side_position]</li>
     <li>artextra_clause(p=0.33)->ein [CharacterNeu] [idles] [side_position]</li>
-    <li>artextra_clause(p=0.33)->ein [PAWN_adj]er [CharacterMas] [idles] [side_position]</li>
-    <li>artextra_clause(p=0.33)->eine [PAWN_adj]e [CharacterFem] [idles] [side_position]</li>
-    <li>artextra_clause(p=0.33)->ein [PAWN_adj]es [CharacterNeu] [idles] [side_position]</li>
+    <li>artextra_clause(p=0.33)->ein [pawn_adj]er [CharacterMas] [idles] [side_position]</li>
+    <li>artextra_clause(p=0.33)->eine [pawn_adj]e [CharacterFem] [idles] [side_position]</li>
+    <li>artextra_clause(p=0.33)->ein [pawn_adj]es [CharacterNeu] [idles] [side_position]</li>
     <li>artextra_clause->[Quantity_adjphrase] [Characters] erscheinen [side_position]</li>
-    <li>artextra_clause->[Quantity_adjphrase] [PAWN_adj]e [Characters] erscheinen [side_position]</li>
+    <li>artextra_clause->[Quantity_adjphrase] [pawn_adj]e [Characters] erscheinen [side_position]</li>
     <li>artextra_clause(p=0.33)->eine [AnimalFem] [idles] [side_position]</li>
     <li>artextra_clause(p=0.33)->ein [AnimalMas] [idles] [side_position]</li>
     <li>artextra_clause(p=0.33)->ein [AnimalNeu] [idles] [side_position]</li>
     <!-- One-offs -->
     <li>artextra_clause->wenn man die Augen zusammenkneift, offenbart die [composition]e Komposition des Bildes die Umrisse von [subimageanyDat]</li>
-    <li>artextra_clause->das [emotional_expression]e Gesicht eines [PAWN_adj]en [PersonJobGen] wacht über allem</li>
-    <li>artextra_clause->ein [PAWN_adj]er [PersonJob] wacht [emotional_expression] über allem</li>
-    <li>artextra_clause->das Gesicht eines [PAWN_adj]en [PersonJobGen] wacht über allem</li>
+    <li>artextra_clause->das [emotional_expression]e Gesicht eines [pawn_adj]en [PersonJobMasGen] wacht über allem</li>
+    <li>artextra_clause->ein [pawn_adj]er [PersonJob] wacht [emotional_expression] über allem</li>
+    <li>artextra_clause->das Gesicht eines [pawn_adj]en [PersonJobMasGen] wacht über allem</li>
     <li>artextra_clause->das Bild bekommt erst durch die geschickte Anordnung von [subimagepluralDat] seine gewollte Aussagekraft</li>
     <li>subimageany->[subimagesingle]</li>
     <li>subimageany->[subimageplural]</li>
@@ -272,9 +272,21 @@
     <li>subimagesingleDat(p=0.5)->einer [CommunityFemDat]</li>
     <li>subimagesingleDat(p=0.5)->einem [CommunityNeuDat]</li>
     <li>subimagesingleDat->einer [TreeType]</li>
-    <li>subimagesingleDat(p=0.5)->einem [VegetableMas]</li>
+    <li>subimagesingleDat(p=0.5)->einem [VegetableMasDat]</li>
     <li>subimagesingleDat(p=0.5)->einer [VegetableFemDat]</li>
     <li>subimagesingleDat->einer [AnimalGroup] von [AnimalsDat]</li>
+    <li>subimagesingleAcc(p=1.33)->einen [CharacterMasAcc]</li>
+    <li>subimagesingleAcc(p=1.33)->eine [CharacterFemAcc]</li>
+    <li>subimagesingleAcc(p=1.33)->ein [CharacterNeuAcc]</li>
+    <li>subimagesingleAcc(p=0.33)->einen [TerrainFeatureMasAcc]</li>
+    <li>subimagesingleAcc(p=0.33)->eine [TerrainFeatureFemAcc]</li>
+    <li>subimagesingleAcc(p=0.33)->ein [TerrainFeatureNeuAcc]</li>
+    <li>subimagesingleAcc(p=0.5)->eine [CommunityFemAcc]</li>
+    <li>subimagesingleAcc(p=0.5)->ein [CommunityNeuAcc]</li>
+    <li>subimagesingleAcc->eine [TreeType]</li>
+    <li>subimagesingleAcc(p=0.5)->einen [VegetableMasAcc]</li>
+    <li>subimagesingleAcc(p=0.5)->eine [VegetableFemAcc]</li>
+    <li>subimagesingleAcc->eine [AnimalGroup] von [AnimalsDat]</li>
     <li>subimageplural(p=3)->[Quantity_adjphrase] [Characters]</li>
     <li>subimageplural->[Quantity_adjphrase] [Vegetables]</li>
     <li>subimageplural->[Quantity_adjphrase] [ShapePlural]</li>
@@ -355,8 +367,14 @@
     <li>symbolizes(p=0.33)->suggeriert das Konzept der [ConceptAnyFemGen]</li>
     <li>symbolizes(p=0.33)->suggeriert das Konzept des [ConceptAnyMasGen]</li>
     <li>symbolizes(p=0.33)->suggeriert das Konzept des [ConceptAnyNeuGen]</li>
-    <li>depicts->handelt</li>
-    <li>depicts->erzählt</li>
+    <li>depicts2->handelt von</li>
+    <li>depicts2->erzählt von</li>
+    <li>depicts->zeigt</li>
+    <li>depicts->porträtiert</li>
+    <li>depicts->erinnert an</li>
+    <li>depicts->illustriert</li>
+    <li>depicts->repräsentiert</li>
+    <li>depicts->veranschaulicht</li>
     <li>depiction->Darstellung</li>
     <li>depiction->Abbildung</li>
     <li>depiction->Gravierung</li>
@@ -385,10 +403,10 @@
     <li>artstyle_adj->impressionistisch</li>
     <li>artstyle_adj->expressionistisch</li>
     <li>artstyle_adj->fotografisch</li>
-    <li>artstyle_adj->barockisch</li>
+    <li>artstyle_adj->barock</li>
     <li>artstyle_adj->dadaistisch</li>
     <li>artstyle_adj->verstörend</li>
-    <li>artstyle_adj->verpixelt</li>
+    <li>artstyle_adj->pixelig</li>
     <li>artstyle_adj->fauvistisch</li>
     <li>artstyle_adj->volkstümlich</li>
     <li>artstyle_adj->bildlich</li>
@@ -405,7 +423,7 @@
     <li>artstyle_adj->rococoistisch</li>
     <li>artstyle_adj->romanisch</li>
     <li>artstyle_adj->romantisch</li>
-    <li>artstyle_adj->Graffiti-ähnlich</li>
+    <li>artstyle_adj->urban</li>
     <li>artstyle_adj->erotisch</li>
     <li>artstyle_adj->sinnlich</li>
     <li>artstyle_adj->herzlich</li>

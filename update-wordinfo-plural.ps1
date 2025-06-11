@@ -59,7 +59,7 @@ foreach ($dlc in $dlcs)
   $pluralFile = "WordInfo\plural.txt"
 
   # Create a hash table of singular nominative words
-  $HashTable = @{}
+  $HashTable = new-object System.Collections.Hashtable
   $pluralFileLines = @()
   if (test-path $pluralFile) {
     $pluralFileLines = Get-Content -Path $pluralFile

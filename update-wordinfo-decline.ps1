@@ -17,6 +17,8 @@ $items = [ordered]@{
 "DefInjected\HediffDef\*" = "\w+\.label"
 "DefInjected\PawnRelationDef\*" = "\w+\.label(Female)?"
 "DefInjected\SitePartDef\*" = "\w+\.label"
+"DefInjected\PlanetLayerDef\*" = "\w+\.label"
+"DefInjected\MapGeneratorDef\*" = "\w+\.label"
 "DefInjected\WeatherDef\*" = "\w+\.label"
 }
 
@@ -53,7 +55,7 @@ foreach ($dlc in $dlcs)
   $declineFile = "WordInfo\decline.txt"
 
   # Create a hash table of indefinite nominative words
-  $HashTable = @{}
+  $HashTable = new-object System.Collections.Hashtable
   $declineFileLines = @()
   if (test-path $declineFile) {
     $declineFileLines = Get-Content -Path $declineFile

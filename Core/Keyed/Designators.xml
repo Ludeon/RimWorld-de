@@ -16,6 +16,11 @@
   <!-- EN: Deconstruct this and reclaim part of its resources. -->
   <DesignatorDeconstructDesc>Reiße dieses Objekt ab und erhalte einen Teil der Ressourcen zurück.</DesignatorDeconstructDesc>
 
+  <!-- EN: Deconstruct conduit -->
+  <DesignatorDeconstructConduit>Stromleitung abreißen</DesignatorDeconstructConduit>
+  <!-- EN: Deconstruct power conduits and reclaim part of their resources. -->
+  <DesignatorDeconstructConduitDesc>Reiße Stromleitungen ab und erhalte einen Teil der Ressourcen zurück.</DesignatorDeconstructConduitDesc>
+
   <!-- EN: Uninstall -->
   <DesignatorUninstall>Demontieren</DesignatorUninstall>
   <!-- EN: Uninstall this so it can be moved, sold, or installed somewhere else. -->
@@ -45,8 +50,8 @@
 
   <!-- EN: Hunt -->
   <DesignatorHunt>Jagen</DesignatorHunt>
-  <!-- EN: Mark animals to be hunted by your hunters. -->
-  <DesignatorHuntDesc>Markiere Tiere, die von deinen Jägern gejagt werden sollen.</DesignatorHuntDesc>
+  <!-- EN: Mark animals to be hunted by your hunters.\n\nOnly hunters with suitable ranged weapons will hunt. -->
+  <DesignatorHuntDesc>Markiere Wildtiere, die von deinen Jägern gejagt werden sollen.\n\nNur Jäger mit geeigneten Fernkampfwaffen können auf die Jagd gehen.</DesignatorHuntDesc>
 
   <!-- EN: Mine -->
   <DesignatorMine>Gestein abbauen</DesignatorMine>
@@ -73,8 +78,8 @@
 
   <!-- EN: Plan -->
   <DesignatorPlan>Planen</DesignatorPlan>
-  <!-- EN: Place planning designations. These don't do anything except help you plan future expansions. -->
-  <DesignatorPlanDesc>Platziere Markierungen, um zukünftige Ausbauten deiner Kolonie zu planen.</DesignatorPlanDesc>
+  <!-- EN: Place planning designations. These don't do anything except help you plan future expansions.\n\nRight-click to hide or unhide all planning zones. -->
+  <DesignatorPlanDesc>Platziere Markierungen, um zukünftige Ausbauten deiner Kolonie zu planen.\n\nRechtsklicke, um alle Planungszonen zu verstecken oder anzuzeigen.</DesignatorPlanDesc>
 
   <!-- EN: Remove plans -->
   <DesignatorPlanRemove>Pläne entfernen</DesignatorPlanRemove>
@@ -168,8 +173,8 @@
 
   <!-- EN: Remove bridge -->
   <DesignatorRemoveBridge>Brücke entfernen</DesignatorRemoveBridge>
-  <!-- EN: Remove bridges to reveal the terrain underneath. -->
-  <DesignatorRemoveBridgeDesc>Entferne Brücken, um den natürlichen Boden freizulegen.</DesignatorRemoveBridgeDesc>
+  <!-- EN: Deconstruct bridges to reclaim partial resources. -->
+  <DesignatorRemoveBridgeDesc>Reiße Brücken ab und erhalte einen Teil der Ressourcen zurück.</DesignatorRemoveBridgeDesc>
 
   <!-- EN: Strip -->
   <DesignatorStrip>Entkleiden</DesignatorStrip>
@@ -181,6 +186,11 @@
   <!-- EN: Open containers. -->
   <DesignatorOpenDesc>Öffne Behälter.</DesignatorOpenDesc>
   
+  <!-- EN: Eject fuel -->
+  <DesignatorEjectFuel>Treib- oder Brennstoff auswerfen</DesignatorEjectFuel>
+  <!-- EN: Eject all contained fuel onto the ground. -->
+  <DesignatorEjectFuelDesc>Wirf sämtlichen Treib- oder Brennstoff auf den Boden.</DesignatorEjectFuelDesc>
+
   <!-- EN: Slaughter -->
   <DesignatorSlaughter>Schlachten</DesignatorSlaughter>
   <!-- EN: Slaughter a tame animal. -->
@@ -190,6 +200,8 @@
   <DesignatorTame>Zähmen</DesignatorTame>
   <!-- EN: Tame a wild animal. -->
   <DesignatorTameDesc>Zähme ein Wildtier.</DesignatorTameDesc>
+  <!-- EN: Scaria infected animals can't be tamed. -->
+  <CantTameScaria>Tiere mit Skaria können nicht gezähmt werden.</CantTameScaria>
 
   <!-- EN: Release to wild -->
   <DesignatorReleaseAnimalToWild>Auswildern</DesignatorReleaseAnimalToWild>
@@ -240,25 +252,39 @@
   <!-- EN: Grabbed color -->
   <GrabbedColor>Kopierte Farbe</GrabbedColor>
 
+  <!-- EN: Expand plan -->
+  <DesignatorExpandPlan>Plan erweitern</DesignatorExpandPlan>
+  <!-- EN: New plan -->
+  <NewPlan>Plan</NewPlan>
+  
+  <!-- EN: Shrink plan -->
+  <DesignatorPlanShrinkSingular>Plan verkleinern</DesignatorPlanShrinkSingular>
+  <!-- EN: Remove plans. -->
+  <DesignatorPlanShrinkDesc>Entferne Pläne.</DesignatorPlanShrinkDesc>
+
   <!-- Failure messages -->
   <!-- EN: Unchosen material -->
   <UnchosenStuff>Nicht ausgewähltes Material</UnchosenStuff>
   <!-- EN: Too close to map edge. -->
   <TooCloseToMapEdge>Zu nah am Kartenrand.</TooCloseToMapEdge>
   <!-- EN: Out of bounds. -->
-  <OutOfBounds>Außerhalb der Begrenzungen.</OutOfBounds>
+  <OutOfBounds>Außerhalb der Karte.</OutOfBounds>
   <!-- EN: Cannot place in undiscovered areas. -->
-  <CannotPlaceInUndiscovered>Platzierung von Objekten in unentdeckten Gebieten nicht möglich.</CannotPlaceInUndiscovered>
+  <CannotPlaceInUndiscovered>Kann nicht in unentdeckten Gebieten platziert werden.</CannotPlaceInUndiscovered>
   <!-- EN: Interaction spot is blocked by {1_labelShort}. -->
   <InteractionSpotBlocked>Interaktionspunkt blockiert durch {1_labelShort}.</InteractionSpotBlocked>
   <!-- EN: Interaction spot is out of bounds. -->
-  <InteractionSpotOutOfBounds>Interaktionspunkt ist außerhalb der Begrenzungen.</InteractionSpotOutOfBounds>
+  <InteractionSpotOutOfBounds>Interaktionspunkt ist außerhalb der Karte.</InteractionSpotOutOfBounds>
   <!-- EN: Interaction spot will be blocked by {1_labelShort}. -->
   <InteractionSpotWillBeBlocked>Interaktionspunkt wird blockiert durch {1_labelShort}.</InteractionSpotWillBeBlocked>
   <!-- EN: {0} would block {1}'s interaction spot. -->
   <WouldBlockInteractionSpot>{0} würde den Interaktionspunkt von {1} blockieren.</WouldBlockInteractionSpot>
   <!-- EN: The terrain here is already {0}. -->
   <TerrainIsAlready>Der Boden hier ist bereits {0}.</TerrainIsAlready>
+  <!-- EN: There is already foundation here. -->
+  <FoundationAlreadyExists>Hier ist bereits Fundament.</FoundationAlreadyExists>
+  <!-- EN: The existing terrain here cannot be removed. -->
+  <TerrainUnremovable>Der Boden hier kann nicht entfernt werden.</TerrainUnremovable>
   <!-- EN: The surface is already marked for smoothing. -->
   <SurfaceBeingSmoothed>Diese Oberfläche ist bereits zum Glätten markiert.</SurfaceBeingSmoothed>
   <!-- EN: Identical thing already exists here. -->
@@ -299,6 +325,11 @@
   <ExpandOrCreateZone>{0} erweitern oder\nNeue {1} erstellen</ExpandOrCreateZone>
   <!-- EN: Create new {0} -->
   <CreateNewZone>Neue {0} erstellen</CreateNewZone>
+  
+  <!-- EN: Expand {0} or\nCreate new plan -->
+  <ExpandOrCreatePlan>{0} erweitern oder\nNeuen Plan erstellen</ExpandOrCreatePlan>
+  <!-- EN: Create new plan -->
+  <CreateNewPlan>Neuen Plan erstellen</CreateNewPlan>
   
   <!-- Desc helpers -->
   <!-- EN: Transmits power -->

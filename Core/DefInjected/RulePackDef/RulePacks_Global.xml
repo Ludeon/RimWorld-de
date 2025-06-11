@@ -44,6 +44,7 @@
   <GlobalUtility.rulePack.rulesFiles>
     <li>RomanNumeral->Words/Misc/Numbers_SmallRoman</li>
     <li>Direction->Words/Adjectives/CompassDirections</li>
+    <li>DirectionEng->Words/Adjectives/CompassDirections_Eng</li>
     <li>Letter->WordParts/CapitalLetters</li>
     <li>SylE->WordParts/Syllables_English</li>
     <li>SylECap->WordParts/Syllables_English_Cap</li>
@@ -54,6 +55,7 @@
     <li>SylP->WordParts/Syllables_Pig</li>
     <li>SylPCap->WordParts/Syllables_Pig_Cap</li>
     <li>Color->Words/Nouns/Colors</li>
+    <li>ColorEng->Words/Nouns/Colors_Eng</li>
     <li>ColorCap->Words/Nouns/Colors_Cap</li>
     <li>ColorBadass->Words/Nouns/Colors_Badass</li>
     <li>ColorBadassCap->Words/Nouns/Colors_Badass_Cap</li>
@@ -69,6 +71,7 @@
     <li>VegetablesDat->Words/Nouns/Vegetables_Plu_Dat</li>
     <li>Game->Words/Nouns/Games</li>
     <li>Animal->Words/Nouns/Animals</li>
+    <li>AnimalEng->Words/Nouns/Animals_Eng</li>
     <li>AnimalDat->Words/Nouns/Animals_Dat</li>
     <li>AnimalAcc->Words/Nouns/Animals_Dat</li>
     <li>AnimalFem->Words/Nouns/Animals_Fem</li>
@@ -88,6 +91,7 @@
     <li>Animals->Words/Nouns/Animals_Plu</li>
     <li>AnimalsDat->Words/Nouns/Animals_Plu_Dat</li>
     <li>AnimalBadass->Words/Nouns/Animals_Badass</li>
+    <li>AnimalBadassEng->Words/Nouns/Animals_Badass_Eng</li>
     <li>AnimalBadassFem->Words/Nouns/Animals_Badass_Fem</li>
     <li>AnimalBadassFemDat->Words/Nouns/Animals_Badass_Fem</li>
     <li>AnimalBadassMas->Words/Nouns/Animals_Badass_Mas</li>
@@ -140,33 +144,49 @@
     <li>TreeType->Words/Nouns/TreeTypes</li>
     <li>TreeTypeCon->Words/Nouns/TreeTypes_Con</li>
     <li>PersonJob->Words/Nouns/People_Jobs</li>
-    <li>PersonJobGen->Words/Nouns/People_Jobs_Gen</li>
-    <li>PersonJobDat->Words/Nouns/People_Jobs_Dat</li>
-    <li>PersonJobAcc->Words/Nouns/People_Jobs_Dat</li>
+    <li>PersonJobMasNom->Words/Nouns/People_Jobs</li>
+    <li>PersonJobMasNomDef->Words/Nouns/People_Jobs</li>
+    <li>PersonJobMasGen->Words/Nouns/People_Jobs_Gen</li>
+    <li>PersonJobMasDat->Words/Nouns/People_Jobs_Dat</li>
+    <li>PersonJobMasAcc->Words/Nouns/People_Jobs_Dat</li>
     <li>PersonJobs->Words/Nouns/People_Jobs_Plu</li>
     <li>PersonJobsDat->Words/Nouns/People_Jobs_Plu_Dat</li>
-    <li>PersonJobFem->Words/Nouns/People_Jobs_Fem</li>
+    <li>PersonJobFemNom->Words/Nouns/People_Jobs_Fem</li>
+    <li>PersonJobFemNomDef->Words/Nouns/People_Jobs_Fem</li>
     <li>PersonJobFemGen->Words/Nouns/People_Jobs_Fem</li>
     <li>PersonJobFemDat->Words/Nouns/People_Jobs_Fem</li>
     <li>PersonJobFemAcc->Words/Nouns/People_Jobs_Fem</li>
     <li>PersonFamily->Words/Nouns/People_Family</li>
     <li>PersonFamilyDat->Words/Nouns/People_Family_Dat</li>
     <li>PersonFamilyAcc->Words/Nouns/People_Family_Dat</li>
-    <li>PersonFamilyFem->Words/Nouns/People_Family_Fem</li>
-    <li>PersonFamilyFemGen->Words/Nouns/People_Family_Fem</li>
-    <li>PersonFamilyFemDat->Words/Nouns/People_Family_Fem</li>
-    <li>PersonFamilyFemAcc->Words/Nouns/People_Family_Fem</li>
-    <li>PersonFamilyMas->Words/Nouns/People_Family_Mas</li>
+    <li>PersonFamilyMasNom->Words/Nouns/People_Family_Mas</li>
+    <li>PersonFamilyMasNomDef->Words/Nouns/People_Family_Mas</li>
     <li>PersonFamilyMasGen->Words/Nouns/People_Family_Mas_Gen</li>
     <li>PersonFamilyMasDat->Words/Nouns/People_Family_Mas_Dat</li>
     <li>PersonFamilyMasAcc->Words/Nouns/People_Family_Mas_Acc</li>
+    <li>PersonFamilyFemNom->Words/Nouns/People_Family_Fem</li>
+    <li>PersonFamilyFemNomDef->Words/Nouns/People_Family_Fem</li>
+    <li>PersonFamilyFemGen->Words/Nouns/People_Family_Fem</li>
+    <li>PersonFamilyFemDat->Words/Nouns/People_Family_Fem</li>
+    <li>PersonFamilyFemAcc->Words/Nouns/People_Family_Fem</li>
     <li>PersonFamilies->Words/Nouns/People_Family_Plu</li>
     <li>PersonAlly->Words/Nouns/People_Allies</li>
     <li>PersonAllyCon->Words/Nouns/People_Allies_Con</li>
+    <li>PersonAllyMasNom->Words/Nouns/People_Allies</li>
+    <li>PersonAllyMasNomDef->Words/Nouns/People_Allies</li>
+    <li>PersonAllyFemNom->Words/Nouns/People_Allies_Fem</li>
+    <li>PersonAllyFemNomDef->Words/Nouns/People_Allies_Fem</li>
     <li>PersonAllies->Words/Nouns/People_Allies_Plu</li>
     <li>PersonBadass->Words/Nouns/People_Badass</li>
     <li>PersonBadassCon->Words/Nouns/People_Badass_Con</li>
-    <li>PersonFemaleBadass->Words/Nouns/PeopleFemale_Badass</li>
+    <li>PersonBadassMasNom->Words/Nouns/People_Badass</li>
+    <li>PersonBadassMasNomDef->Words/Nouns/People_Badass_Def</li>
+    <li>PersonBadassMasGen->Words/Nouns/People_Badass_Gen</li>
+    <li>PersonBadassMasDat->Words/Nouns/People_Badass_Dat</li>
+    <li>PersonBadassFemNom->Words/Nouns/People_Badass_Fem</li>
+    <li>PersonBadassFemNomDef->Words/Nouns/People_Badass_Fem_Def</li>
+    <li>PersonBadassFemGen->Words/Nouns/People_Badass_Fem_Gen</li>
+    <li>PersonBadassFemDat->Words/Nouns/People_Badass_Fem_Gen</li>
     <li>PersonBadasses->Words/Nouns/People_Badass_Plu</li>
     <li>PersonBadassesDef->Words/Nouns/People_Badass_Plu_Def</li>
     <li>Enemy->Words/Nouns/Enemies</li>
@@ -192,15 +212,18 @@
     <li>Apparels->Words/Nouns/Apparel_Plu</li>
     <li>ApparelsDat->Words/Nouns/Apparel_Plu_Dat</li>
     <li>Gore->Words/Nouns/Gore</li>
+    <li>GoreEng->Words/Nouns/Gore_Eng</li>
     <li>GoreDat->Words/Nouns/Gore_Dat</li>
     <li>GoreLow->Words/Nouns/Gore_Low</li>
     <li>Mechanoid->Words/Nouns/Mechanoid</li>
     <li>MechanoidFem->Words/Nouns/Mechanoid_Fem</li>
     <li>MechanoidFemDat->Words/Nouns/Mechanoid_Fem</li>
     <li>MechanoidFemGen->Words/Nouns/Mechanoid_Fem</li>
+    <li>MechanoidFemAcc->Words/Nouns/Mechanoid_Fem</li>
     <li>MechanoidMas->Words/Nouns/Mechanoid_Mas</li>
     <li>MechanoidMasDat->Words/Nouns/Mechanoid_Mas_Dat</li>
     <li>MechanoidMasGen->Words/Nouns/Mechanoid_Mas_Gen</li>
+    <li>MechanoidMasAcc->Words/Nouns/Mechanoid_Mas_Dat</li>
     <li>Mechanoids->Words/Nouns/Mechanoid_Plu</li>
     <li>MechanoidsDat->Words/Nouns/Mechanoid_Plu_Dat</li>
     <li>ConceptPositive->Words/Nouns/Concepts_Positive</li>
@@ -237,6 +260,7 @@
     <li>CommunityNeuDat->Words/Nouns/Communities_Neu</li>
     <li>CommunityNeuAcc->Words/Nouns/Communities_Neu</li>
     <li>BodyPart->Words/Nouns/Bodyparts</li>
+    <li>BodyPartEng->Words/Nouns/Bodyparts_Eng</li>
     <li>BodyPartFem->Words/Nouns/Bodyparts_Fem</li>
     <li>BodyPartFemGen->Words/Nouns/Bodyparts_Fem</li>
     <li>BodyPartFemDat->Words/Nouns/Bodyparts_Fem</li>
@@ -252,11 +276,14 @@
     <li>BodyPartCon->Words/Nouns/Bodyparts_Con</li>
     <li>BodyPartConLow->Words/Nouns/Bodyparts_Con_Low</li>
     <li>AdjectiveLarge->Words/Adjectives/Large</li>
+    <li>AdjectiveLargeEng->Words/Adjectives/Large_Eng</li>
     <li>AdjectiveBadass->Words/Adjectives/Badass</li>
+    <li>AdjectiveBadassEng->Words/Adjectives/Badass_Eng</li>
     <li>AdjectiveAngsty->Words/Adjectives/Angsty</li>
     <li>AdjectiveFriendly->Words/Adjectives/Friendly</li>
     <li>AdjectiveNatural->Words/Adjectives/Natural</li>
     <li>AdjectiveNaturalCap->Words/Adjectives/Natural_Cap</li>
+    <li>AdjectiveNaturalEng->Words/Adjectives/Natural_Eng</li>
     <li>VerbFriendly->Words/Verbs/Friendly</li>
     <li>PersonalCharacteristic->Words/Nouns/PersonalCharacteristic</li>
     <li>PersonalCharacteristicFem->Words/Nouns/PersonalCharacteristic_Fem</li>
@@ -326,7 +353,7 @@
     <li>Character(p=4)->[Animal]</li>
     <li>Character(p=3)->[Enemy]</li>
     <li>Character->[Mechanoid]</li>
-    <li>CharacterFem(p=6)->[PersonJobFem]</li>
+    <li>CharacterFem(p=6)->[PersonJobFemNom]</li>
     <li>CharacterFem(p=4)->[AnimalFem]</li>
     <li>CharacterFem(p=3)->[EnemyFem]</li>
     <li>CharacterFem->[MechanoidFem]</li>
@@ -339,16 +366,25 @@
     <li>CharacterFemDat(p=4)->[AnimalFemDat]</li>
     <li>CharacterFemDat(p=3)->[EnemyFemDat]</li>
     <li>CharacterFemDat->[MechanoidFemDat]</li>
-    <li>CharacterMasDat(p=6)->[PersonJobDat]</li>
+    <li>CharacterMasDat(p=6)->[PersonJobMasDat]</li>
     <li>CharacterMasDat(p=4)->[AnimalMasDat]</li>
     <li>CharacterMasDat(p=3)->[EnemyDat]</li>
     <li>CharacterMasDat->[MechanoidMasDat]</li>
     <li>CharacterNeuDat(p=4)->[AnimalNeuDat]</li>
+    <li>CharacterFemAcc(p=6)->[PersonJobFemAcc]</li>
+    <li>CharacterFemAcc(p=4)->[AnimalFemAcc]</li>
+    <li>CharacterFemAcc(p=3)->[EnemyFemAcc]</li>
+    <li>CharacterFemAcc->[MechanoidFemAcc]</li>
+    <li>CharacterMasAcc(p=6)->[PersonJobMasAcc]</li>
+    <li>CharacterMasAcc(p=4)->[AnimalMasAcc]</li>
+    <li>CharacterMasAcc(p=3)->[EnemyAcc]</li>
+    <li>CharacterMasAcc->[MechanoidMasAcc]</li>
+    <li>CharacterNeuAcc(p=4)->[AnimalNeuAcc]</li>
     <li>CharacterFemGen(p=6)->[PersonJobFemGen]</li>
     <li>CharacterFemGen(p=4)->[AnimalFemGen]</li>
     <li>CharacterFemGen(p=3)->[EnemyFemGen]</li>
     <li>CharacterFemGen->[MechanoidFemGen]</li>
-    <li>CharacterMasGen(p=6)->[PersonJobGen]</li>
+    <li>CharacterMasGen(p=6)->[PersonJobMasGen]</li>
     <li>CharacterMasGen(p=4)->[AnimalMasGen]</li>
     <li>CharacterMasGen(p=3)->[EnemyGen]</li>
     <li>CharacterMasGen->[MechanoidMasGen]</li>
@@ -375,7 +411,6 @@
     <li>Quantity_adjphrase->viele</li>
     <li>Quantity_adjphrase->dutzende</li>
     <li>Quantity_adjphrase->hunderte</li>
-    <li>Quantity_adjphrase->tausend</li>
     <li>Quantity_adjphrase->tausende</li>
     <li>Quantity_adjphrase_Dat->zwei</li>
     <li>Quantity_adjphrase_Dat->drei</li>
@@ -389,10 +424,9 @@
     <li>Quantity_adjphrase_Dat->einigen</li>
     <li>Quantity_adjphrase_Dat->mehreren</li>
     <li>Quantity_adjphrase_Dat->vielen</li>
-    <li>Quantity_adjphrase_Dat->Dutzenden von</li>
-    <li>Quantity_adjphrase_Dat->Hunderten von</li>
-    <li>Quantity_adjphrase_Dat->tausend</li>
-    <li>Quantity_adjphrase_Dat->Tausenden von</li>
+    <li>Quantity_adjphrase_Dat->dutzenden</li>
+    <li>Quantity_adjphrase_Dat->hunderten</li>
+    <li>Quantity_adjphrase_Dat->tausenden</li>
     <li>ShapeNeu->Dreieck</li>
     <li>ShapeNeu->Quadrat</li>
     <li>ShapeNeu->Rechteck</li>

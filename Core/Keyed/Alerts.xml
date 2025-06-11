@@ -63,17 +63,12 @@
   <!-- EN: Need colonist beds -->
   <NeedColonistBeds>Betten benötigt</NeedColonistBeds>
   <!-- EN: You have more colonists than you have colonist beds. Someone will lack a place to sleep.\n\nEither make more beds, or change a prisoner bed to a colonist bed.\n\nIf you have no resources, sleeping spots are free and can be placed instantly. -->
-  <NeedColonistBedsDesc>Du hast nicht genug Betten für deine Kolonisten. Jemand wird keinen Platz zum Schlafen haben.\n\nBaue mehr Betten oder wandle ein Gefangenenbett in ein Kolonistenbett um.\n\nWenn du mangels Ressourcen keine Betten bauen kannst, greife auf Schlafplätze zurück - sie sind kostenlos und können sofort platziert werden.</NeedColonistBedsDesc>
+  <NeedColonistBedsDesc>Du hast nicht genug Betten für deine Kolonisten. Jemand wird keinen Platz zum Schlafen haben.\n\nBaue mehr Betten oder wandle ein Gefängnisbett in ein Kolonistenbett um.\n\nWenn du mangels Ressourcen keine Betten bauen kannst, greife auf Schlafplätze zurück – sie sind kostenlos und können sofort platziert werden.</NeedColonistBedsDesc>
   
   <!-- EN: Colonist left unburied -->
   <AlertColonistLeftUnburied>Kolonist nicht beerdigt</AlertColonistLeftUnburied>
   <!-- EN: A colonist is left unburied.\n\nThis may negatively affect your colonists' mood. -->
   <AlertColonistLeftUnburiedDesc>Ein Kolonist wurde noch nicht beerdigt.\n\nDies kann sich negativ auf die Stimmung deiner Kolonisten auswirken.</AlertColonistLeftUnburiedDesc>
-
-  <!-- EN: Hunter lacks suitable weapon -->
-  <HunterLacksWeapon>Jäger ohne Jagdwaffe</HunterLacksWeapon>
-  <!-- EN: A colonist is assigned to work as a hunter but does not have a ranged weapon appropriate for hunting.\n\nThey will not hunt until they are carrying an appropriate weapon.\n\nThe following colonists are assigned as hunters and need suitable ranged weapons -->
-  <HunterLacksWeaponDesc>Ein Kolonist ist als Jäger zugeteilt, hat aber keine Fernkampfwaffe, die für die Jagd geeignet ist.\n\nDer Kolonist kann erst jagen, wenn er mit einer geeigneten Waffe ausgerüstet ist.\n\nDie folgenden Kolonisten sind als Jäger zugeteilt und benötigen eine geeignete Fernkampfwaffe</HunterLacksWeaponDesc>
 
   <!-- EN: Tattered apparel -->
   <AlertTatteredApparel>Kaputte Kleidung</AlertTatteredApparel>
@@ -152,8 +147,10 @@
   <!-- EN: You have the equipment to do research but have not selected a project.\n\n(Click to open the research menu.) -->
   <NeedResearchProjectDesc>Du hast die Ausrüstung, um zu forschen, aber kein Projekt ausgewählt.\n\n(Klicke zum Öffnen des Forschungsmenüs.)</NeedResearchProjectDesc>
 
+  <!-- EN: 1 colonist idle -->
+  <ColonistIdle>Kolonist untätig</ColonistIdle>
   <!-- EN: {0} colonists idle -->
-  <ColonistsIdle>Kolonist {replace: untätig x{0}$; "untätig x1$"-"untätig"; "$"-""}</ColonistsIdle>
+  <ColonistsIdle>Kolonist untätig x{0}</ColonistsIdle>
   <!-- EN: These colonists are wandering idly:\n{0}\n\nYou should probably find them something productive to do. -->
   <ColonistsIdleDesc>Folgende Kolonisten laufen untätig herum:\n{0}\n\nDu solltest ihnen eine Arbeit zuweisen.</ColonistsIdleDesc>
   
@@ -241,18 +238,18 @@
   <QuestPartMoodBelowThresholdDesc>Die Quest '{0}' erfordert, dass du folgende Personen bei guter Laune hältst. Ihre Laune ist jedoch miserabel. Ergreife Maßnahmen, um ihre Laune zu heben:\n{1}</QuestPartMoodBelowThresholdDesc>
   
   <!-- EN: Shuttle leaving in {0} -->
-  <QuestPartShuttleLeaveDelay>Shuttle hebt ab in\n{replace: {0}; "Tage"-"Tagen"; "Jahre"-"Jahren"}</QuestPartShuttleLeaveDelay>
+  <QuestPartShuttleLeaveDelay>Raumfähre hebt ab in\n{replace: {0}; "Tage"-"Tagen"; "Jahre"-"Jahren"}</QuestPartShuttleLeaveDelay>
   <!-- EN: The shuttle will leave in {1}. The quest {0} requires you to load the following people or items onto the shuttle before it leaves:\n{2} -->
-  <QuestPartShuttleLeaveDelayDesc>Das Shuttle verlässt uns in (*DateTime){replace: {1}; "Tage"-"Tagen"; "Jahre"-"Jahren"}(/DateTime). Die Quest '{0}' erfordert, dass du folgende Personen oder Waren auf das Shuttle lädst, bevor es abfliegt:\n{2}</QuestPartShuttleLeaveDelayDesc>
+  <QuestPartShuttleLeaveDelayDesc>Die Raumfähre verlässt uns in (*DateTime){replace: {1}; "Tage"-"Tagen"; "Jahre"-"Jahren"}(/DateTime). Die Quest '{0}' erfordert, dass du die Raumfähre mit folgenden Personen oder Waren belädst, bevor sie abhebt:\n{2}</QuestPartShuttleLeaveDelayDesc>
   <!-- EN: The shuttle will leave in {0}. -->
-  <QuestPartShuttleLeaveDelayDescHidden>Das Shuttle verlässt uns in (*DateTime){replace: {0}; "Tage"-"Tagen"; "Jahre"-"Jahren"}(/DateTime).</QuestPartShuttleLeaveDelayDescHidden>
+  <QuestPartShuttleLeaveDelayDescHidden>Die Raumfähre verlässt uns in (*DateTime){replace: {0}; "Tage"-"Tagen"; "Jahre"-"Jahren"}(/DateTime).</QuestPartShuttleLeaveDelayDescHidden>
 
   <!-- EN: Shuttle arriving in {0} -->
-  <QuestPartShuttleArriveDelay>Shuttle kommt in\n{replace: {0}; "Tage"-"Tagen"; "Jahre"-"Jahren"}</QuestPartShuttleArriveDelay>
+  <QuestPartShuttleArriveDelay>Raumfähre kommt in\n{replace: {0}; "Tage"-"Tagen"; "Jahre"-"Jahren"}</QuestPartShuttleArriveDelay>
   <!-- EN: A shuttle will arrive in {1}. The quest {0} requires you to load the following people or items onto the shuttle before it leaves:\n{2} -->
-  <QuestPartShuttleArriveDelayDesc>Ein Shuttle wird in (*DateTime){replace: {1}; "Tage"-"Tagen"; "Jahre"-"Jahren"}(/DateTime) eintreffen. Die Quest '{0}' erfordert, dass du folgende Personen oder Waren auf das Shuttle lädst, bevor es abfliegt:\n{2}</QuestPartShuttleArriveDelayDesc>
+  <QuestPartShuttleArriveDelayDesc>Eine Raumfähre wird in (*DateTime){replace: {1}; "Tage"-"Tagen"; "Jahre"-"Jahren"}(/DateTime) eintreffen. Die Quest '{0}' erfordert, dass du die Raumfähre mit folgenden Personen oder Waren belädst, bevor sie abhebt:\n{2}</QuestPartShuttleArriveDelayDesc>
   <!-- EN: A shuttle will arrive in {0}. -->
-  <QuestPartShuttleArriveDelayDescHidden>Ein Shuttle wird in (*DateTime){replace: {0}; "Tage"-"Tagen"; "Jahre"-"Jahren"}(/DateTime) eintreffen.</QuestPartShuttleArriveDelayDescHidden>
+  <QuestPartShuttleArriveDelayDescHidden>Eine Raumfähre wird in (*DateTime){replace: {0}; "Tage"-"Tagen"; "Jahre"-"Jahren"}(/DateTime) eintreffen.</QuestPartShuttleArriveDelayDescHidden>
 
   <!-- EN: Monument will be destroyed -->
   <DisallowedBuildingInsideMonument>Denkmal wird zerstört</DisallowedBuildingInsideMonument>
@@ -290,7 +287,7 @@
   <!-- EN: Pen not enclosed -->
   <AlertAnimalPenNotEnclosed>Gehege nicht umzäunt</AlertAnimalPenNotEnclosed>
   <!-- EN: An animal pen marker is not enclosed.\n\nEnclose the pen using fences, barricades, gates, walls, or doors to prevent animals from wandering out.\n\nIf you have only unenclosed pen markers, your handlers can still lead wandering animals back home - but this must be repeated from time to time when the animals wander away once again. -->
-  <AlertAnimalPenNotEnclosedDesc>Eine Gehegemarkierung ist nicht umzäunt.\n\nUmschließe das Gehege vollständig mit Zäunen, Barrikaden, Toren, Wänden oder Türen, damit die Tiere nicht weglaufen.\n\nDie Gehegemarkierung muss nicht zwingend umzäunt sein. Deine Tierpfleger können weggelaufene Tiere wieder zurückholen - allerdings müssen sie das wiederholen, wenn die Tiere erneut weglaufen.</AlertAnimalPenNotEnclosedDesc>
+  <AlertAnimalPenNotEnclosedDesc>Eine Gehegemarkierung ist nicht umzäunt.\n\nUmschließe das Gehege vollständig mit Zäunen, Barrikaden, Toren, Wänden oder Türen, damit die Tiere nicht weglaufen.\n\nDie Gehegemarkierung muss nicht zwingend umzäunt sein. Deine Tierpfleger können weggelaufene Tiere wieder zurückholen – allerdings müssen sie das wiederholen, wenn die Tiere erneut weglaufen.</AlertAnimalPenNotEnclosedDesc>
 
   <!-- EN: {ANIMAL_labelShort} in animal pen -->
   <AlertPredatorInAnimalPen>{ANIMAL_labelShort} im Gehege</AlertPredatorInAnimalPen>

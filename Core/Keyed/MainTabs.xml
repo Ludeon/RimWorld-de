@@ -87,7 +87,7 @@
   
   <!-- Wildlife tab -->
   <!-- EN: This creature is a predator. When hungry, it will hunt smaller creatures - possibly including people. -->
-  <IsPredator>Diese Kreatur ist ein Raubtier. Wenn es hungrig ist, wird es kleinere Tiere jagen - eventuell auch Menschen.</IsPredator>
+  <IsPredator>Diese Kreatur ist ein Raubtier. Wenn es hungrig ist, wird es kleinere Tiere jagen – eventuell auch Menschen.</IsPredator>
   <!-- EN: This creature is currently in mental state: {0} -->
   <IsInMentalState>Diese Kreatur ist derzeit übergeschnappt wegen: {0}</IsInMentalState>
   
@@ -271,13 +271,13 @@
   <!-- EN: The average mood of {0} over the previous {1} -->
   <QuestAveragePawnMoodTargets>Die durchschnittliche Stimmung von {0} in den letzten {replace: {1}; "Tage"-"Tagen"; "Jahre"-"Jahren"}</QuestAveragePawnMoodTargets>
   <!-- EN: Shuttle arrives in {0} -->
-  <ShuttleArrivesIn>Shuttle kommt in {replace: {0}; "Tage"-"Tagen"; "Jahre"-"Jahren"}</ShuttleArrivesIn>
+  <ShuttleArrivesIn>Raumfähre kommt in {replace: {0}; "Tage"-"Tagen"; "Jahre"-"Jahren"}</ShuttleArrivesIn>
   <!-- EN: Shuttle arrives on {0} -->
-  <ShuttleArrivesOn>Shuttle kommt am {0}</ShuttleArrivesOn>
+  <ShuttleArrivesOn>Raumfähre kommt am {0}</ShuttleArrivesOn>
   <!-- EN: Shuttle departs in {0} -->
-  <ShuttleDepartsIn>Shuttle fliegt in {replace: {0}; "Tage"-"Tagen"; "Jahre"-"Jahren"} ab</ShuttleDepartsIn>
+  <ShuttleDepartsIn>Raumfähre fliegt in {replace: {0}; "Tage"-"Tagen"; "Jahre"-"Jahren"} ab</ShuttleDepartsIn>
   <!-- EN: Shuttle departs on {0} -->
-  <ShuttleDepartsOn>Shuttle fliegt am {0} ab</ShuttleDepartsOn>
+  <ShuttleDepartsOn>Raumfähre fliegt am {0} ab</ShuttleDepartsOn>
   <!-- EN: Guests depart in {0} -->
   <GuestsDepartsIn>Gäste gehen in {replace: {0}; "Tage"-"Tagen"; "Jahre"-"Jahren"}</GuestsDepartsIn>
   <!-- EN: Guests depart on {0} -->
@@ -322,6 +322,8 @@
   <QuestPawnNotOnColonyMap>{PAWN_definite} in deiner Heimatkolonie</QuestPawnNotOnColonyMap>
   <!-- EN: the map clear of enemies of the bestower's faction -->
   <QuestRequiresNoDangerOnMap>eine Kolonie, die frei von Feinden der Fraktion des Titelverleihers ist</QuestRequiresNoDangerOnMap>
+  <!-- EN: that {PROJECT_label} has been researched. -->
+  <QuestRequiresResearch>das Forschungsprojekt '{PROJECT_label}'.</QuestRequiresResearch>
   <!-- EN: to finish the ongoing bestowing ceremony quest -->
   <QuestCanNotStartUntilBestowingCeremonyFinished>den Abschluss der laufenden Verleihungszeremonie</QuestCanNotStartUntilBestowingCeremonyFinished>
   <!-- EN: Reward preferences -->
@@ -358,6 +360,10 @@
   <QuestNeutralTo>eine neutrale Beziehung zur Fraktion '{0}'</QuestNeutralTo>
   <!-- EN: studied {0_labelShort} -->
   <QuestRequiredThingStudied>das Studium des Bauwerks '{0_labelShort}'</QuestRequiredThingStudied>
+  <!-- EN: cannot accept {GERUND} {LAYER} -->
+  <QuestRequiredLayer>kann nicht {GERUND} {lookup: {LAYER}; decline; 6} angenommen werden</QuestRequiredLayer> <!-- text_todo -->
+  <!-- EN: cannot accept in space -->
+  <QuestNotSpace>kann nicht im Weltraum angenommen werden</QuestNotSpace> <!-- text_todo -->
 
   <!-- Health tab -->
   <!-- EN: Creates need -->

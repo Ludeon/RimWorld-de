@@ -27,10 +27,14 @@
   <CaravanMechsCount>{0} Mechs</CaravanMechsCount>
   <!-- EN: {BOSS} with {APPAREL} -->
   <BossWithApparel>{BOSS} mit {APPAREL}</BossWithApparel>
+  <!-- EN: Resulting from gene -->
+  <ComesFromGene>Verursacht durch Gen</ComesFromGene>
 
   <!-- Job reports -->
   <!-- EN: removing {0}. -->
   <ReportRemovingMechlink>Extrahiert {0}.</ReportRemovingMechlink>
+  <!-- EN: from {TEACHER_labelShort} -->
+  <ReportTakingLessonFrom>von {TEACHER_labelShort}</ReportTakingLessonFrom>
 
   <!-- Areas -->
   <!-- EN: Pollution clear -->
@@ -99,6 +103,8 @@
   <ReadyToSummonThreat>{0} herbeirufbar</ReadyToSummonThreat>
   <!-- EN: Summon {0} threat -->
   <Summon>{0} herbeirufen</Summon>
+  <!-- EN: Mechanoids disabled -->
+  <MechsDisabled>Mechanoiden deaktiviert</MechsDisabled> <!-- text_todo -->
   <!-- EN: No reachable {0} -->
   <NoReachableBossgroupCaller>{0_gender ? Kein : Keine} {0_gender ? erreichbarer : erreichbare : erreichbares} {0}</NoReachableBossgroupCaller>
   <!-- EN: No reservable {0} -->
@@ -144,7 +150,7 @@
   <!-- EN: Auto-wake -->
   <AutoWake>Automatisch aufwachen</AutoWake>
   <!-- EN: When on, {PAWN_nameDef} will automatically wake once {PAWN_possessive} deathrest is complete.\n\nWhile off, {PAWN_pronoun} will continue deathresting until you wake {PAWN_objective} manually. -->
-  <AutoWakeDesc>Bei Aktivierung wird {PAWN_nameDef} automatisch aufwachen, sobald {PAWN_pronoun} {PAWN_possessive}en Todesschlaf beendet hat.\n\nBei Deaktivierung bleibt {PAWN_pronoun} so lange im Todesschlaf, bis du {PAWN_objective} manuell weckst.</AutoWakeDesc>
+  <AutoWakeDesc>Wenn aktiviert, wird {PAWN_nameDef} automatisch aufwachen, sobald {PAWN_pronoun} {PAWN_possessive}en Todesschlaf beendet hat.\n\nWenn deaktiviert, wird {PAWN_pronoun} so lange im Todesschlaf bleiben, bis du {PAWN_objective} manuell weckst.</AutoWakeDesc>
   <!-- EN: {PAWN_nameDef} is deathresting. -->
   <IsDeathresting>{PAWN_nameDef} ist im Todesschlaf.</IsDeathresting>
   <!-- EN: cannot deathrest -->
@@ -248,12 +254,6 @@
   <!-- EN: Giving birth. -->
   <GivingBirth>Gebärt.</GivingBirth>
 
-  <!-- Shield comp -->
-  <!-- EN: Shield energy -->
-  <ShieldEnergy>Schildenergie</ShieldEnergy>
-  <!-- EN: Time to recovery -->
-  <ShieldTimeToRecovery>Schild regeneriert</ShieldTimeToRecovery>
-
   <!-- Genes -->
   <!-- EN: genes -->
   <Genes>Gene</Genes>
@@ -280,7 +280,7 @@
   <!-- EN: Auto-load -->
   <GenepackAutoLoad>Automatisch lagern</GenepackAutoLoad>
   <!-- EN: If active, haulers will automatically store this genepack in a gene bank. -->
-  <GenepackAutoLoadDesc>Bei Aktivierung werden deine Träger dieses Genpaket automatisch in einer Genbank lagern.</GenepackAutoLoadDesc>
+  <GenepackAutoLoadDesc>Wenn aktiviert, werden deine Träger dieses Genpaket automatisch in einer Genbank lagern.</GenepackAutoLoadDesc>
   <!-- EN: Forced traits -->
   <ForcedTraits>Erzwungene Merkmale</ForcedTraits>
   <!-- EN: Suppressed traits -->
@@ -316,7 +316,7 @@
   <!-- EN: Archite capsules -->
   <ArchitesRequired>Architkapseln</ArchitesRequired>
   <!-- EN: Archites are archotech mechanites - microscopic devices which can operate directly on cells and molecules, created by superintelligent archotechs. They are capable of unexplainable feats, and some genes only function when supported by the otherworldly machinery of the archotechs. Humans cannot create archites - only find them when an archotech happens to produce some for its own unknowable reason. -->
-  <ArchitesRequiredDesc>Architen sind Archotech-Mechaniten - mikroskopisch kleine, von superintelligenten Archotechs geschaffene Geräte, die direkt auf Zellen und Moleküle einwirken können. Sie sind zu unerklärlichen Leistungen fähig, und manche Gene funktionieren nur, wenn sie von den übernatürlichen Maschinen der Archotechs unterstützt werden. Menschen können keine Architen erschaffen - sie können nur gefunden werden, wenn ein Archotech welche aus unerfindlichen Gründen produziert hat.</ArchitesRequiredDesc>
+  <ArchitesRequiredDesc>Architen sind Archotech-Mechaniten – mikroskopisch kleine, von superintelligenten Archotechs geschaffene Geräte, die direkt auf Zellen und Moleküle einwirken können. Sie sind zu unerklärlichen Leistungen fähig, und manche Gene funktionieren nur, wenn sie von den übernatürlichen Maschinen der Archotechs unterstützt werden. Menschen können keine Architen erschaffen – sie können nur gefunden werden, wenn ein Archotech welche aus unerfindlichen Gründen produziert hat.</ArchitesRequiredDesc>
   <!-- EN: Cancel xenogerm -->
   <CancelXenogerm>Xenokeim abbrechen</CancelXenogerm>
   <!-- EN: Stop all work on the current xenogerm. -->
@@ -654,7 +654,7 @@
   
   <!-- Pollution -->
   <!-- EN: Toggle pollution overlay. This displays which areas of terrain are polluted.\n\nExposure to polluted terrain causes toxic buildup which can lead to death. Most plants cannot live on polluted terrain. -->
-  <ShowPollutionOverlayToggleButton>Verseuchung anzeigen\n\nIm eingeschalteten Zustand werden verseuchte Böden farblich hervorgehoben.\n\nDer Kontakt mit verseuchtem Boden verursacht eine Vergiftung, die immer mehr zunimmt und tödlich endet. Viele Pflanzen können auf verseuchtem Boden nicht gedeihen.</ShowPollutionOverlayToggleButton>
+  <ShowPollutionOverlayToggleButton>Verseuchung anzeigen\n\nWenn aktiviert, werden verseuchte Böden farblich hervorgehoben.\n\nDer Kontakt mit verseuchtem Boden verursacht eine Vergiftung, die immer mehr zunimmt und tödlich endet. Viele Pflanzen können auf verseuchtem Boden nicht gedeihen.</ShowPollutionOverlayToggleButton>
   <!-- EN: None -->
   <TilePollutionNone>Keine</TilePollutionNone>
   <!-- EN: Light -->
@@ -754,10 +754,6 @@
   <IvfPregnancyLetterText>{0} ist durch die Implantation eines Embryos erfolgreich schwanger geworden!</IvfPregnancyLetterText>
   <!-- EN: The baby will have the genetic makeup of {0} and {1}. -->
   <IvfPregnancyLetterParents>Das Baby wird das Erbgut von {0} und {1} haben.</IvfPregnancyLetterParents>
-
-  <!-- Projectile interceptor -->
-  <!-- EN: A low-angle projected shield that will attempt to stop incoming projectiles or shrapnel. It shuts down instantly if hit by an EMP. -->
-  <ProjectileInterceptorTip>Ein bodennaher Schild, der versucht, ankommende Projektile oder Sprengkörper zu stoppen. Er schaltet sich sofort ab, wenn er einem elektromagnetischen Impuls (EMP) ausgesetzt wird.</ProjectileInterceptorTip>
 
   <!-- Remote mech shield -->
   <!-- EN: A remote shield projected by a mechanitor. It will attempt to stop incoming projectiles or shrapnel, but does nothing against melee attacks or heat. It prevents the wearer from firing out, and shuts down instantly if hit by EMP -->

@@ -27,7 +27,7 @@
     <li>questDescription(asker_royalInCurrentFaction==True)->[asker_royalTitleInCurrentFaction] [asker_nameFull] von der Fraktion [asker_faction_name] braucht Leute, die {asker_gender ? ihm : ihr} dabei helfen, [dutyRoyalDescription].\n\n[asker_pronoun] bittet dich, {asker_gender ? ihm : ihr} [colonistCountToLend] für [lendForDays] Tage zur Verfügung zu stellen.\n\n[willSendShuttle]</li>
     <li>colonistCountToLend(colonistsToLendCount==1)->1 Kolonisten[minAgeOrOlder]</li>
     <li>colonistCountToLend(colonistsToLendCount>1)->[colonistsToLendCount] Kolonisten[minAgeOrOlder]</li>
-    <li>willSendShuttle->[asker_pronoun] wird ein Shuttle schicken, um [colonists] abzuholen.</li>
+    <li>willSendShuttle->[asker_pronoun] wird eine Raumfähre schicken, um [colonists] abzuholen.</li>
     <li>colonists(colonistsToLendCount==1)->den Kolonisten</li>
     <li>colonists(colonistsToLendCount>1)->die Kolonisten</li>
     <li>minAgeOrOlder(minAge==0)-></li>
@@ -102,13 +102,17 @@
   <!-- EN: {PAWNS} [pawnListHaveConjugation] returned after helping [asker_royalTitleInCurrentFaction] [asker_nameFull] of [asker_faction_name] to [dutyRoyalDescription]. -->
   <PawnLend.LetterTextReturnAfterRoyalCourt.slateRef>{PAWNS} [colonistHasHave] [asker_royalTitleInCurrentFaction] [asker_nameFull] der Fraktion [asker_faction_name] dabei geholfen, [dutyRoyalDescription], und [colonistIsAre] zurückgekehrt.</PawnLend.LetterTextReturnAfterRoyalCourt.slateRef>
   <!-- EN: Shuttle arrived -->
-  <PawnLend.LetterLabelShuttleArrived.slateRef>Shuttle ist eingetroffen</PawnLend.LetterLabelShuttleArrived.slateRef>
+  <PawnLend.LetterLabelShuttleArrived.slateRef>Raumfähre ist eingetroffen</PawnLend.LetterLabelShuttleArrived.slateRef>
   <!-- EN: The shuttle has arrived to collect [colonistsToLendCount] of your colonists. -->
-  <PawnLend.LetterTextShuttleArrived.slateRef>Das Shuttle ist eingetroffen, um [colonistsToLendCount] deiner Kolonisten mitzunehmen.</PawnLend.LetterTextShuttleArrived.slateRef>
+  <PawnLend.LetterTextShuttleArrived.slateRef>Die Raumfähre ist eingetroffen, um [colonistsToLendCount] deiner Kolonisten mitzunehmen.</PawnLend.LetterTextShuttleArrived.slateRef>
   <!-- EN: Shuttle destroyed -->
-  <PawnLend.LetterLabelShuttleDestroyed.slateRef>Shuttle wurde zerstört</PawnLend.LetterLabelShuttleDestroyed.slateRef>
+  <PawnLend.LetterLabelShuttleDestroyed.slateRef>Raumfähre wurde zerstört</PawnLend.LetterLabelShuttleDestroyed.slateRef>
   <!-- EN: The shuttle sent to collect colonists has been destroyed. -->
-  <PawnLend.LetterTextShuttleDestroyed.slateRef>Das Shuttle, das deine Kolonisten mitnehmen sollte, wurde zerstört.</PawnLend.LetterTextShuttleDestroyed.slateRef>
+  <PawnLend.LetterTextShuttleDestroyed.slateRef>Die Raumfähre, die deine Kolonisten mitnehmen sollte, wurde zerstört.</PawnLend.LetterTextShuttleDestroyed.slateRef>
+  <!-- EN: Shuttle abandoned -->
+  <PawnLend.root.nodes.pickupShipThingLeftBehind.node.nodes.Letter.label.slateRef>Raumfähre wurde zurückgelassen</PawnLend.root.nodes.pickupShipThingLeftBehind.node.nodes.Letter.label.slateRef>
+  <!-- EN: The shuttle sent to collect colonists has been left behind. -->
+  <PawnLend.root.nodes.pickupShipThingLeftBehind.node.nodes.Letter.text.slateRef>Die Raumfähre, die deine Kolonisten mitnehmen sollte, wurde zurückgelassen.</PawnLend.root.nodes.pickupShipThingLeftBehind.node.nodes.Letter.text.slateRef>
   <!-- EN: Colonists returned -->
   <PawnLend.LetterLabelColonistsReturned.slateRef>Kolonisten zurückgekehrt</PawnLend.LetterLabelColonistsReturned.slateRef>
   <!-- EN: $returnLetterText -->
