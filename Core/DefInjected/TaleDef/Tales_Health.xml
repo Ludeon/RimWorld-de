@@ -350,11 +350,10 @@
   <KilledCapacity.rulePack.rulesStrings>
     <li>tale_noun->[KILLER_nameDef] [VICTIM_nameDefAcc] [wound_name_past]</li>
     <li>tale_noun->[KILLER_nameDef] [VICTIM_nameDefAcc] mit [WEAPON_indefiniteDat] [wound_name_past]</li>
-    <li>image->[KILLER_nameFullIndefDat], wie [KILLER_pronoun] die Körperfunktion '[CAPACITY_label]' von [VICTIM_nameFullIndefDat] [with_weapon_optional] [cap_removal]</li>
-    <li>image->[KILLER_nameFullIndefDat], wie [KILLER_pronoun] [VICTIM_nameIndefAcc] [with_weapon_optional] [wound_name_present], indem [KILLER_pronoun] [VICTIM_possessive]e Körperfunktion '[CAPACITY_label]' [cap_removal]</li>
+    <li>image->[KILLER_nameFullIndefDat], wie [KILLER_pronoun] die {lookup: Körperfunktion '[CAPACITY_label]'; capacity} von [VICTIM_nameFullIndefDat] [with_weapon_optional] [cap_removal]</li>
+    <li>image->[KILLER_nameFullIndefDat], wie [KILLER_pronoun] [VICTIM_nameIndefAcc] [with_weapon_optional] [wound_name_present], indem [KILLER_pronoun] [VICTIM_possessive]e {lookup: Körperfunktion '[CAPACITY_label]'; capacity} [cap_removal]</li>
     <li>cap_removal->zerstört</li>
-    <li>cap_removal->beseitigt</li>
-    <li>cap_removal->beendet</li>
+    <li>cap_removal->vernichtet</li>
     <li>wound_name_past->tötete</li>
     <li>wound_name_past->exekutierte</li>
     <li>wound_name_past->ermordete</li>

@@ -1857,7 +1857,7 @@
   <!-- EN: No reachable appropriate place to speak. -->
   <AbilitySpeechDisabledNoSpot>Kein angemessener Platz zum Reden erreichbar.</AbilitySpeechDisabledNoSpot>
   <!-- EN: {0_labelShort} is incapable of {1}. -->
-  <AbilityDisabledNoCapacity>{0_labelShort} kann nicht {1}.</AbilityDisabledNoCapacity>
+  <AbilityDisabledNoCapacity>{0_labelShort} ist {lookup: unfähig für {1}; capacity}.</AbilityDisabledNoCapacity>
   <!-- EN: Everyone participating in the ritual gains {0} mood for {1} days. -->
   <RitualOutcomeExtraDesc_Mood>Jeder, der am Ritual teilgenommen hat, erhält {0} Stimmung für {1} Tage.</RitualOutcomeExtraDesc_Mood>
   <!-- EN: This ritual has no quality offsets, so the best outcome is always expected -->
@@ -2053,7 +2053,7 @@
   <!-- EN: Push to... -->
   <CommandPushTo>Schieben zu...</CommandPushTo>
   <!-- EN: requires {0} -->
-  <RequiredCapacity>benötigt {0}</RequiredCapacity>
+  <RequiredCapacity>{lookup: unfähig für {0}; capacity}</RequiredCapacity>
 
   <!-- Pocket Maps -->
   <!-- EN: Unable to enter {0}, destination is blocked -->
