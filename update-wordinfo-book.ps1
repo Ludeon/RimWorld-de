@@ -11,7 +11,7 @@ $items = [ordered]@{
 "DefInjected\SkillDef\Skills.xml" = "\w+?\.generalRules\.rulesStrings"
 }
 
-# Header line for book.txt
+# Header line for the output file
 $header = @(
 "KEY"       # key, normal subject label
 "1_GEN_ART" # index #1, genetive with article
@@ -36,16 +36,16 @@ foreach ($dlc in $dlcs)
 {
   Clear-Content -Path $tempFile
   Set-Location -Path "$PSScriptRoot\$dlc"
-  $declineFile = "WordInfo\book.txt"
+  $outputFile = "WordInfo\book.txt"
 
   # Create a hash table of nominative words
   $HashTable = new-object System.Collections.Hashtable
-  $declineFileLines = @()
-  if (test-path $declineFile) {
-    $declineFileLines = Get-Content -Path $declineFile
-    Remove-Item $declineFile
+  $outputFileLines = @()
+  if (test-path $outputFile) {
+    $outputFileLines = Get-Content -Path $outputFile
+    Remove-Item $outputFile
   }
-  foreach ($line in ($declineFileLines | ConvertFrom-Csv -Delimiter ";" -Header $header))
+  foreach ($line in ($outputFileLines | ConvertFrom-Csv -Delimiter ";" -Header $header))
   {
     if ($line.KEY.substring(0, 2) -eq "//") { continue } # skip "//" comments
     $fields = $line.PSObject.Properties.Value -join ";"
@@ -66,7 +66,7 @@ foreach ($dlc in $dlcs)
       $elements += $content | Select-String -Pattern "(?s)<($pattern)>(.*?)</\1>" -All | Select -Expand Matches | Select -Expand Value
     }
     if ($elements.Count -eq 0) { return } # skip if no elements found
-    "// $($ps -join ', ') ($pattern)" >> $tempFile # categorize book.txt by paths
+    "// $($ps -join ', ') ($pattern)" >> $tempFile # categorize by paths
     # enumerate lines
     $tempFileLines = @()
     foreach ($element in $elements) {
@@ -75,23 +75,23 @@ foreach ($dlc in $dlcs)
     Add-Content -Path $tempFile -Value ($tempFileLines | Sort-Object)
   }
 
-  # Merge the temp file with book.txt
+  # Merge the temp file with the output file
   $tempFileLines = Get-Content $tempFile
   if ($tempFileLines.Count -eq 0) { continue } # skip if temp file is empty
-  $declineFileLines = @($header -join ";")
-  $declineFileLines += $comments
+  $outputFileLines = @($header -join ";")
+  $outputFileLines += $comments
   foreach ($line in ($tempFileLines | Select-Object -Unique))
   {
     if ($line.substring(0, 2) -eq "//") {
-      $declineFileLines += $line
+      $outputFileLines += $line
     } elseif ($HashTable.ContainsKey($line)) {
-      $declineFileLines += $HashTable[$line]
+      $outputFileLines += $HashTable[$line]
     } else {
-      $declineFileLines += $line + ";"
+      $outputFileLines += $line + ";"
     }
   }
-  New-Item $declineFile -Force | Out-Null
-  Set-Content -Path $declineFile -Value $declineFileLines
+  New-Item $outputFile -Force | Out-Null
+  Set-Content -Path $outputFile -Value $outputFileLines
 }
 Set-Location -Path $PSScriptRoot
 Remove-Item $tempFile

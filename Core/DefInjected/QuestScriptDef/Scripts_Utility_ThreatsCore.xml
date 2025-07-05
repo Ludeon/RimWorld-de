@@ -55,14 +55,14 @@
     <li>numGroupsOf(raidCount>=4)->[raidCount] groups of</li>
   -->
   <Util_RaidDelayRepeatable.questDescriptionRules.rulesStrings>
-    <li>pawnKindsParagraph(raidCount==1)->Die {lookup: [enemyFaction_pawnSingular]; decline; 8}gruppe besteht aus: \n\n[raid0/raidPawnKinds]\n\n[raid0/raidArrivalModeInfo]</li>
-    <li>pawnKindsParagraph(raidCount==2)->Die erste {lookup: [enemyFaction_pawnSingular]; decline; 8}gruppe besteht aus: \n\n[raid0/raidPawnKinds]\n\nKurz darauf wird eine weitere Gruppe in ähnlicher Größe eintreffen.</li>
-    <li>pawnKindsParagraph(raidCount==3)->Die erste {lookup: [enemyFaction_pawnSingular]; decline; 8}gruppe besteht aus: \n\n[raid0/raidPawnKinds]\n\nKurz darauf werden zwei weitere Gruppen in ähnlicher Größe eintreffen.</li>
-    <li>pawnKindsParagraph(raidCount>=4)->Die erste {lookup: [enemyFaction_pawnSingular]; decline; 8}gruppe besteht aus: \n\n[raid0/raidPawnKinds]\n\nKurz darauf werden [raidCountMinusOne] weitere Gruppen in ähnlicher Größe eintreffen.</li>
+    <li>pawnKindsParagraph(raidCount==1)->Die {lookup: [enemyFaction_pawnSingular]; compound}gruppe besteht aus: \n\n[raid0/raidPawnKinds]\n\n[raid0/raidArrivalModeInfo]</li>
+    <li>pawnKindsParagraph(raidCount==2)->Die erste {lookup: [enemyFaction_pawnSingular]; compound}gruppe besteht aus: \n\n[raid0/raidPawnKinds]\n\nKurz darauf wird eine weitere Gruppe in ähnlicher Größe eintreffen.</li>
+    <li>pawnKindsParagraph(raidCount==3)->Die erste {lookup: [enemyFaction_pawnSingular]; compound}gruppe besteht aus: \n\n[raid0/raidPawnKinds]\n\nKurz darauf werden zwei weitere Gruppen in ähnlicher Größe eintreffen.</li>
+    <li>pawnKindsParagraph(raidCount>=4)->Die erste {lookup: [enemyFaction_pawnSingular]; compound}gruppe besteht aus: \n\n[raid0/raidPawnKinds]\n\nKurz darauf werden [raidCountMinusOne] weitere Gruppen in ähnlicher Größe eintreffen.</li>
     <li>numGroupsOf(raidCount==1)->[enemyFaction_pawnsPlural]</li>
-    <li>numGroupsOf(raidCount==2)->zwei {lookup: [enemyFaction_pawnSingular]; decline; 8}gruppen</li>
-    <li>numGroupsOf(raidCount==3)->drei {lookup: [enemyFaction_pawnSingular]; decline; 8}gruppen</li>
-    <li>numGroupsOf(raidCount>=4)->[raidCount] {lookup: [enemyFaction_pawnSingular]; decline; 8}gruppen</li>
+    <li>numGroupsOf(raidCount==2)->zwei {lookup: [enemyFaction_pawnSingular]; compound}gruppen</li>
+    <li>numGroupsOf(raidCount==3)->drei {lookup: [enemyFaction_pawnSingular]; compound}gruppen</li>
+    <li>numGroupsOf(raidCount>=4)->[raidCount] {lookup: [enemyFaction_pawnSingular]; compound}gruppen</li>
   </Util_RaidDelayRepeatable.questDescriptionRules.rulesStrings>
   
 </LanguageData>
