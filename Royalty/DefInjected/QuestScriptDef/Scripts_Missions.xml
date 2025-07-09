@@ -30,7 +30,7 @@
   -->
   <Mission_BanditCamp.questNameRules.rulesStrings>
     <li>questName->[questNameInner]</li>
-    <li>questName->{replace: [asker_nameDef]s; "s&lt;/color>s"-"s&lt;/color>'"; "ß&lt;/color>s"-"ß&lt;/color>'"; "z&lt;/color>s"-"z&lt;/color>'"; "x&lt;/color>s"-"x&lt;/color>'"; "ce&lt;/color>s"-"ce&lt;/color>'"} [questNameInner]</li>
+    <li>questName->[asker_nameDef]'s [questNameInner]</li>
     <li>questNameInner->Luftangriff</li>
     <li>questNameInner(p=0.5)->Angriff auf das [targetNeu]</li>
     <li>questNameInner(p=0.5)->Angriff auf die [targetFem]</li>

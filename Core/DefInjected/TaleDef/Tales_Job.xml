@@ -21,7 +21,7 @@
     <li>desc_sentence->[Quantity_adjphrase] [Animal]s play nearby.</li>
   -->
   <AttendedParty.rulePack.rulesStrings>
-    <li>tale_noun->[ATTENDER_nameDef] an [PAWN_label_s] Party teilnahm</li>
+    <li>tale_noun->[ATTENDER_nameDef] an [PAWN_label]'s Party teilnahm</li>
     <li>tale_noun->[ATTENDER_nameDef] sich mit [ORGANIZER_nameDefDat] auf einer Party entspannte</li>
     <li>image->[ATTENDER_nameFullIndefDat], wie [ATTENDER_pronoun] [circumstance_group] ein Gespräch mit [ORGANIZER_nameFullIndefDat] führt</li>
     <li>image->[ATTENDER_nameFullIndefDat], wie [ATTENDER_pronoun] [circumstance_group] ein Getränk von [ORGANIZER_nameFullIndefDat] spendiert bekommt</li>
@@ -36,7 +36,6 @@
     <li>desc_sentence->[Quantity_adjphrase] [PersonJobs] sind am Gespräch beteiligt.</li>
     <li>desc_sentence->Der Bereich ist mit [Color]er und [Color]er Farbe verziert.</li>
     <li>desc_sentence->[Quantity_adjphrase] [Animals] spielen in der Nähe.</li>
-    <li>PAWN_label_s->{replace: [PAWN_label]s; "s&lt;/color>s"-"s&lt;/color>'"; "ß&lt;/color>s"-"ß&lt;/color>'"; "z&lt;/color>s"-"z&lt;/color>'"; "x&lt;/color>s"-"x&lt;/color>'"; "ce&lt;/color>s"-"ce&lt;/color>'"}</li>
     <li>ATTENDER_nameFullIndefDat->{replace: [ATTENDER_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
     <li>ATTENDER_nameIndefAcc->{replace: [ATTENDER_nameDef]; ">der "-">einen "}</li>
     <li>ORGANIZER_nameFullIndefDat->{replace: [ORGANIZER_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
@@ -529,9 +528,8 @@
     <li>desc_sentence->[Quantity_adjphrase] [PersonJobs] spielen auch mit.</li>
     <li>desc_sentence->[Quantity_adjphrase] [Animals] spielen in der Nähe.</li>
     <li>desc_sentence->[PAWN_nameDef] strahlt in einer [Color]en Aura.</li>
-    <li>desc_sentence->[PAWN_nameDef_s] Merkmale werden übertrieben dargestellt.</li>
+    <li>desc_sentence->[PAWN_label]'s Merkmale werden übertrieben dargestellt.</li>
     <li>desc_sentence->[PAWN_nameDef] ist der Höhepunkt der Szene.</li>
-    <li>PAWN_nameDef_s->{replace: [PAWN_label]s; "s&lt;/color>s"-"s&lt;/color>'"; "ß&lt;/color>s"-"ß&lt;/color>'"; "z&lt;/color>s"-"z&lt;/color>'"; "x&lt;/color>s"-"x&lt;/color>'"; "ce&lt;/color>s"-"ce&lt;/color>'"}</li>
     <li>OBJECT_indefiniteDat->[a_dat] [object_dat]</li>
     <li>a_dat->{replace: ^[OBJECT_indefinite]; "^ein [OBJECT_label]"-"einem"; "^eine [OBJECT_label]"-"einer"; "^"-""}</li>
     <li>object_dat->{replace: [OBJECT_label]; "er "-"en "; "e "-"en "; "es "-"en "}</li>

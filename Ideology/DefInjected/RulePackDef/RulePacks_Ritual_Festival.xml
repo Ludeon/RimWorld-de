@@ -21,7 +21,7 @@
     <li>festivalName(p=2)->[memeAdjective]e [festival]</li>
     <li>festivalName->[festival] [chosenTheme]</li>
     <li>festivalName->[chosenAdjective]e [festival]</li>
-    <li>festivalName->{replace: [keyDeity]'s; "Gott's"-"Gottes"; "s's"-"s'"; "ß's"-"ß'"; "z's"-"z'"; "x's"-"x'"; "ce's"-"ce'"; "'s"-"s"} [festival]</li>
+    <li>festivalName->{replace: [keyDeity]'s; "Gott's"-"Gottes"} [festival]</li>
     <li>festivalName->[festival] von [keyDeity]</li>
     <li>festivalName->[festival] [memeConceptGenDef]</li>
     <li>festivalName->[festival] {replace: des [chosenIdeoName]; "des |M|"-"des "; "des |F|"-"der "; "des |N|"-"des "}</li>

@@ -35,7 +35,7 @@
   <LetterBossgroupCallerUnlocked>Du kannst nun {PARENT_gender ? einen : eine : ein} {lookup: {PARENT_label}; decline; 3} bauen, {PARENT_gender ? den : die : das} ein Mechanitor benutzen kann, um {LEADER_gender ? einen : eine : ein} {lookup: {LEADER_label}; decline; 3} herbeizurufen. Wenn du {LEADER_gender ? den : die : das} {lookup: {LEADER_label}; decline; 7} besiegst, kannst du die folgenden Gegenstände bergen:\n\n{REWARDSLIST}</LetterBossgroupCallerUnlocked>
 
   <!-- EN: {PAWN_nameDef}'s mechlink available -->
-  <LetterLabelMechanitorCasketOpened>{replace: {PAWN_nameDef}s; "s(/Name)s"-"s(/Name)'"; "ß(/Name)s"-"ß(/Name)'"; "z(/Name)s"-"z(/Name)'"; "x(/Name)s"-"x(/Name)'"; "ce(/Name)s"-"ce(/Name)'"} Mechlink verfügbar</LetterLabelMechanitorCasketOpened>
+  <LetterLabelMechanitorCasketOpened>{PAWN_nameDef}'s Mechlink verfügbar</LetterLabelMechanitorCasketOpened>
   <!-- EN: You have found the corpse of an ancient mechanitor!\n\nExtract {PAWN_possessive} mechlink by selecting a colonist and right-clicking the corpse. -->
   <LetterMechanitorCasketOpened>Du hast den Leichnam eines antiken Mechanitors gefunden!\n\nExtrahiere seinen Mechlink, indem du einen Kolonisten auswählst und einen Rechtsklick auf den Leichnam machst.</LetterMechanitorCasketOpened>
   <!-- EN: Mechanitor casket found -->
@@ -77,7 +77,7 @@
   <LetterTextAdopted>Das Baby {BABY_nameDef} wurde von deinen Kolonisten adoptiert. Du kannst Kolonisten den Arbeitstyp 'Kinderpflege' zuweisen, damit sie sich um das Baby kümmern.</LetterTextAdopted>
 
   <!-- EN: {0_nameDef}'s baby prep -->
-  <LetterLabelThirdTrimester>Vorbereitung auf {replace: {0_nameDef}s; "s(/Name)s"-"s(/Name)'"; "ß(/Name)s"-"ß(/Name)'"; "z(/Name)s"-"z(/Name)'"; "x(/Name)s"-"x(/Name)'"; "ce(/Name)s"-"ce(/Name)'"} Baby</LetterLabelThirdTrimester>
+  <LetterLabelThirdTrimester>Vorbereitung auf {0_nameDef}'s Baby</LetterLabelThirdTrimester>
   <!-- EN: {0_nameDef} is due to give birth in less than 6 days. You can prepare for the baby:\n\n- Build a birth room with a clean floor and good bed.\n- Get a skilled doctor ready.\n- In the work tab, assign at least one person to childcare\n- Prepare a food source for the baby. {0_nameDef} can breastfeed the baby, or you can feed them baby food, milk, or insect jelly.\n- Build a crib. High quality cribs will make a baby happy.\n\nYou can make baby food at a stove or campfire. -->
   <LetterTextThirdTrimester>{0_nameDef} wird in weniger als (*DateTime)6 Tagen(/DateTime) entbinden. Du kannst dich auf das Baby vorbereiten:\n\n- Richte einen Geburtsraum mit sauberem Fußboden und einem guten Bett ein.\n- Halte einen fähigen Arzt bereit.\n- Weise im Tab 'Arbeit' mindestens eine Person für die Kinderpflege zu.\n- Bereite eine Nahrungsquelle für das Baby vor. Das Baby kann von {0_nameDef} gestillt oder mit Babynahrung, Milch oder Insektengelee gefüttert werden.\n- Baue ein Babybett. Hochqualitative Babybetten machen ein Baby glücklich.\n\nDu kannst Babynahrung an einem Herd oder Lagerfeuer kochen.</LetterTextThirdTrimester>
 
@@ -181,7 +181,7 @@
   <!-- EN: Regeneration coma -->
   <LetterLabelRegenerationComa>Regenerationskoma</LetterLabelRegenerationComa>
   <!-- EN: {PAWN_nameDef}'s deathless gene has prevented {PAWN_objective} from dying. {HEDIFFINFO} -->
-  <LetterTextInvoluntaryDeathrestOrComa>{replace: {PAWN_nameDef}s; "s(/Name)s"-"s(/Name)'"; "ß(/Name)s"-"ß(/Name)'"; "z(/Name)s"-"z(/Name)'"; "x(/Name)s"-"x(/Name)'"; "ce(/Name)s"-"ce(/Name)'"} genetische Unsterblichkeit hat verhindert, dass {PAWN_pronoun} stirbt. {HEDIFFINFO}</LetterTextInvoluntaryDeathrestOrComa>
+  <LetterTextInvoluntaryDeathrestOrComa>{PAWN_nameDef}'s genetische Unsterblichkeit hat verhindert, dass {PAWN_pronoun} stirbt. {HEDIFFINFO}</LetterTextInvoluntaryDeathrestOrComa>
   <!-- EN: Instead, {PAWN_pronoun} has fallen into a deathrest. -->
   <LetterTextDeathrest>Stattdessen ist {PAWN_pronoun} in den Todesschlaf gefallen.</LetterTextDeathrest>
   <!-- EN: Instead, {PAWN_pronoun} has fallen into a regeneration coma. -->

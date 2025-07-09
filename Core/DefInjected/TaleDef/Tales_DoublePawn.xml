@@ -407,15 +407,13 @@
     <li>desc_sentence->[TRADER_nameDef] zerrt an den Ketten von [PRISONER_nameDefDat].</li>
     <li>desc_sentence->[PRISONER_nameDef] starrt böse auf [SELLER_nameDefAcc] und plant [PRISONER_possessive]e Rache.</li>
     <li>desc_sentence->[PRISONER_nameDef] weint.</li>
-    <li>desc_sentence->[PRISONER_nameDef] spuckt in [SELLER_nameDef_s] Gesicht.</li>
+    <li>desc_sentence->[PRISONER_nameDef] spuckt in [SELLER_label]'s Gesicht.</li>
     <li>desc_sentence->[PRISONER_nameDef] versinkt im Boden.</li>
-    <li>desc_sentence->[SELLER_nameDef] drückt die Ketten von [PRISONER_nameDefDat] in [PRISONER_nameDef_s] Hände.</li>
+    <li>desc_sentence->[SELLER_nameDef] drückt die Ketten von [PRISONER_nameDefDat] in [PRISONER_label]'s Hände.</li>
     <li>desc_sentence->Ein Hauch von Hoffnungslosigkeit prägt das Geschehen.</li>
-    <li>SELLER_nameDef_s->{replace: [SELLER_label]s; "s&lt;/color>s"-"s&lt;/color>'"; "ß&lt;/color>s"-"ß&lt;/color>'"; "z&lt;/color>s"-"z&lt;/color>'"; "x&lt;/color>s"-"x&lt;/color>'"; "ce&lt;/color>s"-"ce&lt;/color>'"}</li>
     <li>SELLER_nameFullIndefDat->{replace: [SELLER_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
     <li>SELLER_nameDefDat->{replace: [SELLER_nameIndef]; ">ein "-">dem "; ">eine "-">der "}</li>
     <li>SELLER_nameDefAcc->{replace: [SELLER_nameDef]; ">der "-">den "}</li>
-    <li>PRISONER_nameDef_s->{replace: [PRISONER_label]s; "s&lt;/color>s"-"s&lt;/color>'"; "ß&lt;/color>s"-"ß&lt;/color>'"; "z&lt;/color>s"-"z&lt;/color>'"; "x&lt;/color>s"-"x&lt;/color>'"; "ce&lt;/color>s"-"ce&lt;/color>'"}</li>
     <li>PRISONER_nameIndefAcc->{replace: [PRISONER_nameDef]; ">der "-">einen "; ">die "-">eine "; ">das "-">ein "}</li>
     <li>PRISONER_nameDefDat->{replace: [PRISONER_nameIndef]; ">ein "-">dem "; ">eine "-">der "}</li>
     <li>PRISONER_nameDefAcc->{replace: [PRISONER_nameDef]; ">der "-">den "}</li>
@@ -488,7 +486,7 @@
     <li>image->[SELLER_nameFullIndefDat], wie [SELLER_pronoun] [circumstance_group] Waren an [BUYER_nameIndefAcc] verkauft</li>
     <li>circumstance_phrase->mit gierigem Blick</li>
     <li>circumstance_phrase->, während beide sich angrinsen,</li>
-    <li>desc_sentence->[BUYER_nameDef] untersucht [SELLER_nameDef_s] Waren.</li>
+    <li>desc_sentence->[BUYER_nameDef] untersucht [SELLER_label]'s Waren.</li>
     <li>desc_sentence->[SELLER_nameDef] betrachtet ein Objekt.</li>
     <li>desc_sentence->[SELLER_nameDef] fängt an zu feilschen.</li>
     <li>desc_sentence->[BUYER_nameDef] diskutiert mit [SELLER_nameDefDat].</li>
@@ -499,7 +497,6 @@
     <li>BUYER_nameFullIndefDat->{replace: [BUYER_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
     <li>BUYER_nameIndefAcc->{replace: [BUYER_nameDef]; ">der "-">einen "; ">die "-">eine "; ">das "-">ein "}</li>
     <li>BUYER_nameDefDat->{replace: [BUYER_nameIndef]; ">ein "-">dem "; ">eine "-">der "}</li>
-    <li>SELLER_nameDef_s->{replace: [SELLER_label]s; "s&lt;/color>s"-"s&lt;/color>'"; "ß&lt;/color>s"-"ß&lt;/color>'"; "z&lt;/color>s"-"z&lt;/color>'"; "x&lt;/color>s"-"x&lt;/color>'"; "ce&lt;/color>s"-"ce&lt;/color>'"}</li>
     <li>SELLER_nameFullIndefDat->{replace: [SELLER_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
     <li>SELLER_nameDefDat->{replace: [SELLER_nameIndef]; ">ein "-">dem "; ">eine "-">der "}</li>
   </TradedWith.rulePack.rulesStrings>

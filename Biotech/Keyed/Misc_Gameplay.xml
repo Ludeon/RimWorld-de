@@ -72,7 +72,7 @@
   <!-- EN: Retune this band node to another mechanitor. Retuning will take {0} to complete. -->
   <BandNodeRetuningDesc>Stimme diesen Bandknoten auf einen anderen Mechanitor um. Die Umstimmung wird {0} dauern.</BandNodeRetuningDesc>
   <!-- EN: Removing {0} will change {1_labelShort}'s bandwidth from {2} to {3}. This will mean the following mechs will no longer be under control -->
-  <DropThingBandwidthApparel>Durch Entfernen von {0} wird sich {replace: {1_labelShort}s; "s(/Name)s"-"s(/Name)'"; "ß(/Name)s"-"ß(/Name)'"; "z(/Name)s"-"z(/Name)'"; "x(/Name)s"-"x(/Name)'"; "ce(/Name)s"-"ce(/Name)'"} Bandbreite von {2} auf {3} ändern. Folgende Mechs wären dann nicht mehr unter Kontrolle</DropThingBandwidthApparel>
+  <DropThingBandwidthApparel>Durch Entfernen von {0} wird sich {1_labelShort}'s Bandbreite von {2} auf {3} ändern. Folgende Mechs wären dann nicht mehr unter Kontrolle</DropThingBandwidthApparel>
   <!-- EN: no mechs -->
   <NoMechs>keine Mechs</NoMechs>
   <!-- EN: Group -->
@@ -360,7 +360,7 @@
   <!-- EN: Implanting a xenogerm will put {PAWN_nameDef} in a coma as the xenogerm integrates itself. On average, this lasts for {COMADURATION}. The length of the coma is dependent on the doctor's medical skill and the quality of your medical facilities. -->
   <ImplantXenogermWarningDesc>Die Implantation eines Xenokeims wird {PAWN_nameDef} in ein Koma versetzen, damit sich der Xenokeim in {PAWN_possessive}em Körper etablieren kann. Im Schnitt dauert das {COMADURATION}. Die Dauer des Komas hängt von den medizinischen Kenntnissen des Arztes und der Qualität deiner medizinischen Ausstattung ab.</ImplantXenogermWarningDesc>
   <!-- EN: Additionally, implanting a xenogerm will overwrite existing xenogenes. {PAWN_nameDef}'s current xenotype is '{XENOTYPE}'. {PAWN_pronoun} has the following xenogenes:\n{XENOGENES} -->
-  <ImplantXenogermWarningOverwriteXenogenes>Außerdem werden durch die Implantation vorhandene Xenogene überschrieben. {replace: {PAWN_nameDef}s; "s(/Name)s"-"s(/Name)'"; "ß(/Name)s"-"ß(/Name)'"; "z(/Name)s"-"z(/Name)'"; "x(/Name)s"-"x(/Name)'"; "ce(/Name)s"-"ce(/Name)'"} aktueller Xenotyp ist '{XENOTYPE}'. {PAWN_pronoun} hat die folgenden Xenogene:\n{XENOGENES}</ImplantXenogermWarningOverwriteXenogenes>
+  <ImplantXenogermWarningOverwriteXenogenes>Außerdem werden durch die Implantation vorhandene Xenogene überschrieben. {PAWN_nameDef}'s aktueller Xenotyp ist '{XENOTYPE}'. {PAWN_pronoun} hat die folgenden Xenogene:\n{XENOGENES}</ImplantXenogermWarningOverwriteXenogenes>
   <!-- EN: After implantation, {PAWN_nameDef} will have a metabolism value of {MET} and a food consumption multiplier of {CONSUMPTION}. -->
   <ImplantXenogermWarningNewMetabolism>Nach der Implantation hat {PAWN_nameDef} einen Stoffwechselwert von {MET} und eine Hungerrate von {CONSUMPTION}.</ImplantXenogermWarningNewMetabolism>
   <!-- EN: Would you like to continue? -->
@@ -388,7 +388,7 @@
   <!-- EN: Insert a person into the gene extractor. Their genetic material will be extracted and used to create a genepack containing a random selection of their genes.\n\nGene extraction is painful and will leave the subject weak and drowsy for a number of days. The process is lethal for those whose genes are currently regrowing. -->
   <InsertPersonGeneExtractorDesc>Füge eine Person in den Genextraktor ein. Ihr Erbgut wird extrahiert und zur Erzeugung eines Genpakets verwendet, das eine zufällige Auswahl ihrer Gene enthält.\n\nDie Genextraktion ist schmerzhaft und macht die Person für einige Tage schwach und schläfrig. Für Personen, deren Gene gerade nachwachsen, ist der Vorgang tödlich.</InsertPersonGeneExtractorDesc>
   <!-- EN: Warning: {PAWN_nameDef}'s genes are regrowing. Extracting {PAWN_possessive} genes before they are regrown will kill {PAWN_objective}.\n\nAre you sure you wish to continue? -->
-  <ConfirmExtractXenogermWillKill>Warnung: {replace: {PAWN_nameDef}s; "s(/Name)s"-"s(/Name)'"; "ß(/Name)s"-"ß(/Name)'"; "z(/Name)s"-"z(/Name)'"; "x(/Name)s"-"x(/Name)'"; "ce(/Name)s"-"ce(/Name)'"} Gene wachsen gerade nach. Wenn {PAWN_possessive}e Gene extrahiert werden, bevor sie nachgewachsen sind, stirbt {PAWN_nameDef}.\n\nBist du sicher, dass du fortfahren möchtest?</ConfirmExtractXenogermWillKill>
+  <ConfirmExtractXenogermWillKill>Warnung: {PAWN_nameDef}'s Gene wachsen gerade nach. Wenn {PAWN_possessive}e Gene extrahiert werden, bevor sie nachgewachsen sind, stirbt {PAWN_nameDef}.\n\nBist du sicher, dass du fortfahren möchtest?</ConfirmExtractXenogermWillKill>
   <!-- EN: Gene extraction complete for {PAWN_nameDef}. Extracted -->
   <GeneExtractionComplete>Genextraktion bei {PAWN_nameDef} abgeschlossen. Extrahiert wurde</GeneExtractionComplete>
   <!-- EN: Insert xenogerm -->

@@ -88,18 +88,18 @@
     <li>r_art_name->[ConceptAny] Nr. [art_name_numeric]</li>
     <li>r_art_name->[art_name_numeric] von [ANYPAWN_nameIndefDat]</li>
     <!-- Person. High probability; if we can use these we want to -->
-    <li>r_art_name(p=6)->[ANYPAWN_label_s] [Artwork]</li>
+    <li>r_art_name(p=6)->[ANYPAWN_label]'s [Artwork]</li>
     <li>r_art_name->Der [ArtworkMas] von [ANYPAWN_nameIndefDat]</li>
     <li>r_art_name->Die [ArtworkFem] von [ANYPAWN_nameIndefDat]</li>
     <li>r_art_name->Das [ArtworkNeu] von [ANYPAWN_nameIndefDat]</li>
     <li>r_art_name->[ANYPAWN_nameIndef] in [ColorCap]</li>
-    <li>r_art_name->[ANYPAWN_label_s] [PersonalCharacteristic]</li>
-    <li>r_art_name->[ANYPAWN_label_s] [PersonalCharacteristics]</li>
+    <li>r_art_name->[ANYPAWN_label]'s [PersonalCharacteristic]</li>
+    <li>r_art_name->[ANYPAWN_label]'s [PersonalCharacteristics]</li>
     <li>r_art_name->Die [PersonalCharacteristics] von [ANYPAWN_nameIndefDat]</li>
     <li>r_art_name->Der [PersonalCharacteristicMas] von [ANYPAWN_nameIndefDat]</li>
     <li>r_art_name->Die [PersonalCharacteristicFem] von [ANYPAWN_nameIndefDat]</li>
     <li>r_art_name->Das [PersonalCharacteristicNeu] von [ANYPAWN_nameIndefDat]</li>
-    <li>r_art_name->[ANYPAWN_label_s] [ConceptAny]</li>
+    <li>r_art_name->[ANYPAWN_label]'s [ConceptAny]</li>
     <li>r_art_name->Der [ConceptAnyMas] von [ANYPAWN_nameIndefDat]</li>
     <li>r_art_name->Die [ConceptAnyFem] von [ANYPAWN_nameIndefDat]</li>
     <li>r_art_name->Das [ConceptAnyNeu] von [ANYPAWN_nameIndefDat]</li>
@@ -133,7 +133,6 @@
     <li>maybe_adjective_Neu(p=2)->[AdjectiveAngsty]es</li>
     <li>maybe_adjective_Neu->[AdjectiveBadass]es</li>
     <li>maybe_adjective_Neu->[Color]es</li>
-    <li>ANYPAWN_label_s->{replace: [ANYPAWN_label]s; "s&lt;/color>s"-"s&lt;/color>'"; "ß&lt;/color>s"-"ß&lt;/color>'"; "z&lt;/color>s"-"z&lt;/color>'"; "x&lt;/color>s"-"x&lt;/color>'"; "ce&lt;/color>s"-"ce&lt;/color>'"}</li>
     <li>ANYPAWN_nameIndefDat->{replace: [ANYPAWN_nameDef]; ">der "-">einem "; ">die "-">einer "; ">das "-">einem "}</li>
   </NamerArtCommon.rulePack.rulesStrings>
   
@@ -167,13 +166,12 @@
     <li>r_art_name(p=0.33)->[ColorBadass]er [ConceptBadassMas]</li>
     <li>r_art_name(p=0.33)->[ColorBadass]es [ConceptBadassNeu]</li>
     <!-- Person. High probability; if we can use these we want to -->
-    <li>r_art_name(p=3)->[ANYPAWN_label_s] [ConceptBadass]</li>
-    <li>r_art_name(p=3)->[ANYPAWN_label_s] [AnimalBadass]</li>
-    <li>r_art_name(p=3)->[ANYPAWN_label_s] [PersonBadass]</li>
-    <li>r_art_name(p=3)->[ANYPAWN_label_s] [PersonAlly]</li>
-    <li>r_art_name(p=3)->[ANYPAWN_label_s] [PersonFamily]</li>
+    <li>r_art_name(p=3)->[ANYPAWN_label]'s [ConceptBadass]</li>
+    <li>r_art_name(p=3)->[ANYPAWN_label]'s [AnimalBadass]</li>
+    <li>r_art_name(p=3)->[ANYPAWN_label]'s [PersonBadass]</li>
+    <li>r_art_name(p=3)->[ANYPAWN_label]'s [PersonAlly]</li>
+    <li>r_art_name(p=3)->[ANYPAWN_label]'s [PersonFamily]</li>
     <li>r_art_name(p=3)->[ConceptBadass] von [ANYPAWN_nameIndefDat]</li>
-    <li>ANYPAWN_label_s->{replace: [ANYPAWN_label]s; "s&lt;/color>s"-"s&lt;/color>'"; "ß&lt;/color>s"-"ß&lt;/color>'"; "z&lt;/color>s"-"z&lt;/color>'"; "x&lt;/color>s"-"x&lt;/color>'"; "ce&lt;/color>s"-"ce&lt;/color>'"}</li>
     <li>ANYPAWN_nameIndefDat->{replace: [ANYPAWN_nameDef]; ">der "-">einem "; ">die "-">einer "; ">das "-">einem "}</li>
   </NamerArtWeapon.rulePack.rulesStrings>
   

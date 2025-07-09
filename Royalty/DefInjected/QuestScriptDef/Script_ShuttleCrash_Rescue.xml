@@ -140,12 +140,12 @@
     <li>questName(p=0.33)->[maybe_asker_nameDef_s] [shuttleFem] [damaged]</li>
     <li>questName(p=0.33)->[maybe_asker_nameDef_s] [shuttleNeu] [damaged]</li>
     <li>questName(p=0.33)->[maybe_asker_nameDef_s] [shuttleMas] [damaged]</li>
-    <li>maybe_asker_nameDef_s->[asker_nameDef_s]</li>
+    <li>maybe_asker_nameDef_s->[asker_nameDef]'s</li>
     <li>maybe_asker_nameDef_s-></li>
     <li>questName->Notlandung</li>
     <li>questName->erzwungene Landung</li>
-    <li>questName->[asker_nameDef_s] Notlandung</li>
-    <li>questName->[asker_nameDef_s] erzwungene Landung</li>
+    <li>questName->[asker_nameDef]'s Notlandung</li>
+    <li>questName->[asker_nameDef]'s erzwungene Landung</li>
     <li>shuttleFem->Raumfähre</li>
     <li>shuttleMas->Transporter</li>
     <li>shuttleNeu->Schiff</li>
@@ -156,7 +156,6 @@
     <li>damaged->kaputt</li>
     <li>damaged->defekt</li>
     <li>damaged->abgestürzt</li>
-    <li>asker_nameDef_s->{replace: [asker_nameDef]s; "s&lt;/color>s"-"s&lt;/color>'"; "ß&lt;/color>s"-"ß&lt;/color>'"; "z&lt;/color>s"-"z&lt;/color>'"; "x&lt;/color>s"-"x&lt;/color>'"; "ce&lt;/color>s"-"ce&lt;/color>'"}</li>
   </ShuttleCrash_Rescue.questNameRules.rulesStrings>
   
 </LanguageData>

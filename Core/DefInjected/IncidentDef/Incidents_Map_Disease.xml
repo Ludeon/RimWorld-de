@@ -57,7 +57,7 @@
   <!-- EN: Organ decay: {PAWN_labelShort} -->
   <Disease_OrganDecay.letterLabel>Organzerfall: {PAWN_labelShort}</Disease_OrganDecay.letterLabel>
   <!-- EN: {PAWN_labelShort} has developed a flesh-eating infection known as organ decay in {PAWN_possessive} {2}!\n\nThe affected organ will slowly lose function over the next {3} days, before dying completely.\n\nIf you want {PAWN_labelShort} to stay healthy, install a replacement {2}. This could be a bionic, or a natural organ taken from a donor. -->
-  <Disease_OrganDecay.letterText>{replace: {PAWN_labelShort}s; "s(/Name)s"-"s(/Name)'"; "ß(/Name)s"-"ß(/Name)'"; "z(/Name)s"-"z(/Name)'"; "x(/Name)s"-"x(/Name)'"; "ce(/Name)s"-"ce(/Name)'"} {2} ist von einer fleischfressenden Infektion befallen.\n\nDas betroffene Organ verliert in den nächsten (*DateTime){3} Tagen(/DateTime) langsam seine Funktion, bevor es ganz abstirbt.\n\nDamit {PAWN_labelShort} gesund bleibt, musst du {PAWN_gender ? ihm : ihr} ein Ersatzorgan implantieren. Das kann ein bionisches Organ oder ein natürliches Organ von einem Spender sein.</Disease_OrganDecay.letterText>
+  <Disease_OrganDecay.letterText>{PAWN_labelShort}'s {2} ist von einer fleischfressenden Infektion befallen.\n\nDas betroffene Organ verliert in den nächsten (*DateTime){3} Tagen(/DateTime) langsam seine Funktion, bevor es ganz abstirbt.\n\nDamit {PAWN_labelShort} gesund bleibt, musst du {PAWN_gender ? ihm : ihr} ein Ersatzorgan implantieren. Das kann ein bionisches Organ oder ein natürliches Organ von einem Spender sein.</Disease_OrganDecay.letterText>
   
   <!-- EN: plague -->
   <Disease_Plague.label>Seuche</Disease_Plague.label>

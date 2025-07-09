@@ -687,15 +687,14 @@
     <li>narrative_with_biom_adj->{replace: [terrain_word_gender_low]; "|M|"-"[biom_adj]er [ColorCap]"; "|F|"-"[biom_adj]e [ColorCap]"; "|N|"-"[biom_adj]es [ColorCap]"}</li>
     <li>narrative_with_biom_adj->{replace: [terrain_word_gender_low]; "|M|"-"[biom_adj]er [Color]er [AnimalCon]"; "|F|"-"[biom_adj]e [Color]e [AnimalCon]"; "|N|"-"[biom_adj]es [Color]es [AnimalCon]"}</li>
     <li>narrative_with_biom_adj->{replace: [terrain_word_gender_low]; "|M|"-"[biom_adj]er [AnimalCon]"; "|F|"-"[biom_adj]e [AnimalCon]"; "|N|"-"[biom_adj]es [AnimalCon]"}</li>
-    <li>story(p=17)->[subject_s] [terrain_word] [story_result]</li>
-    <li>story(p=17)->[subject_s] [story_con][terrain_word_low]</li>
+    <li>story(p=17)->[subject]'s [terrain_word] [story_result]</li>
+    <li>story(p=17)->[subject]'s [story_con][terrain_word_low]</li>
     <li>story(p=17)->{replace: [terrain_word_gender]; "|M|"-"[story_adj]er "; "|F|"-"[story_adj]e "; "|N|"-"[story_adj]es "}</li>
-    <li>story(p=2)->[subject_s] [BodyPartCon][terrain_word_low]</li>
-    <li>story->[subject_s] [Gore]-[terrain_word]</li>
+    <li>story(p=2)->[subject]'s [BodyPartCon][terrain_word_low]</li>
+    <li>story->[subject]'s [Gore]-[terrain_word]</li>
     <li>subject(p=5)->[NamePerson]</li>
     <li>subject->[WordTribal]</li>
     <li>subject->[PlaceOutlander]</li>
-    <li>subject_s->{replace: [subject]'s; "s's"-"s'"; "ß's"-"ß'"; "z's"-"z'"; "x's"-"x'"; "ce's"-"ce'"; "'s"-"s"}</li>
     <li>story_result->der Freude</li>
     <li>story_result->der Furcht</li>
     <li>story_result->der Gefälle</li>

@@ -28,7 +28,7 @@
     <li>tale_noun(p=0.5)->über dem [CommunityNeuDat] von [PAWN_nameDefDat] ein Polarlicht erschien</li>
     <li>tale_noun(p=0.5)->über der [CommunityFemDat] von [PAWN_nameDefDat] Polarlichter zu sehen waren</li>
     <li>tale_noun(p=0.5)->über dem [CommunityNeuDat] von [PAWN_nameDefDat] Polarlichter zu sehen waren</li>
-    <li>tale_noun->[PAWN_label_s] [Community] von einem Polarlicht erhellt wurde</li>
+    <li>tale_noun->[PAWN_label]'s [Community] von einem Polarlicht erhellt wurde</li>
     <li>image->einem Himmel, der in [Color]er und [Color]er Farbe leuchtet [circumstance_phrase]</li>
     <li>image->einem wunderschönen Muster aus [Color]en Farben, das im Himmel erstrahlt [circumstance_phrase]</li>
     <li>image->einem Netzwerk aus [Color]en Farben, das den Himmel beleuchtet [circumstance_phrase]</li>
@@ -50,7 +50,6 @@
     <li>desc_sentence(p=0.33)->[PAWN_nameDef] sitzt neben einem [TerrainFeatureNeuDat] und schaut in den Himmel.</li>
     <li>desc_sentence->[Quantity_adjphrase] [Animals] wandern friedlich umher.</li>
     <li>desc_sentence->Weit und breit ist kein [Enemy] zu sehen.</li>
-    <li>PAWN_label_s->{replace: [PAWN_label]s; "s&lt;/color>s"-"s&lt;/color>'"; "ß&lt;/color>s"-"ß&lt;/color>'"; "z&lt;/color>s"-"z&lt;/color>'"; "x&lt;/color>s"-"x&lt;/color>'"; "ce&lt;/color>s"-"ce&lt;/color>'"}</li>
     <li>PAWN_nameDefDat->{replace: [PAWN_nameIndef]; ">ein "-">dem "; ">eine "-">der "}</li>
   </Aurora.rulePack.rulesStrings>
   
@@ -412,7 +411,7 @@
   <Flashstorm.rulePack.rulesStrings>
     <li>tale_noun(p=0.5)->ein Blitzsturm die [CommunityFem] von [PAWN_nameDefDat] bedrohte</li>
     <li>tale_noun(p=0.5)->ein Blitzsturm das [CommunityNeu] von [PAWN_nameDefDat] bedrohte</li>
-    <li>tale_noun->[PAWN_label_s] [Community] von einem tödlichen Blitzsturm heimgesucht wurde</li>
+    <li>tale_noun->[PAWN_label]'s [Community] von einem tödlichen Blitzsturm heimgesucht wurde</li>
     <li>image->[Quantity_adjphrase_Dat] Blitzschlägen, die [circumstance_phrase_plu]</li>
     <li>image->[behavior] Flammenwand, die [circumstance_phrase]</li>
     <li>image->[behavior] Wand aus [Color]en Flammen, die [circumstance_phrase]</li>
@@ -441,7 +440,6 @@
     <li>desc_sentence->[Quantity_adjphrase] [PersonJobs] bereiten sich schnell darauf vor.</li>
     <li>desc_sentence->[Quantity_adjphrase] [Animals] fliehen aus dem Gebiet.</li>
     <li>desc_sentence->Die gesamte Tierwelt hat das Gebiet verlassen.</li>
-    <li>PAWN_label_s->{replace: [PAWN_label]s; "s&lt;/color>s"-"s&lt;/color>'"; "ß&lt;/color>s"-"ß&lt;/color>'"; "z&lt;/color>s"-"z&lt;/color>'"; "x&lt;/color>s"-"x&lt;/color>'"; "ce&lt;/color>s"-"ce&lt;/color>'"}</li>
     <li>PAWN_nameDefDat->{replace: [PAWN_nameIndef]; ">ein "-">dem "; ">eine "-">der "}</li>
   </Flashstorm.rulePack.rulesStrings>
   
@@ -470,7 +468,7 @@
     <li>desc_sentence->All animal life has left the area.</li>
   -->
   <Infestation.rulePack.rulesStrings>
-    <li>tale_noun->[PAWN_label_s] [Community] von Rieseninsekten befallen wurde</li>
+    <li>tale_noun->[PAWN_label]'s [Community] von Rieseninsekten befallen wurde</li>
     <li>image->einem Schwarm von Käfern, die [circumstance_phrase_plu]</li>
     <li>image->[Quantity_adjphrase_Dat] Megaspinnen, die [circumstance_phrase_plu]</li>
     <li>image->einer überwältigenden Flut von [Color]en Insekten, die [circumstance_phrase_plu]</li>
@@ -505,7 +503,6 @@
     <li>desc_sentence->[Quantity_adjphrase] [PersonJobs] fliehen aus dem Gebiet.</li>
     <li>desc_sentence->[Quantity_adjphrase] [Animals] fliehen aus dem Gebiet.</li>
     <li>desc_sentence->Die gesamte Tierwelt hat das Gebiet verlassen.</li>
-    <li>PAWN_label_s->{replace: [PAWN_label]s; "s&lt;/color>s"-"s&lt;/color>'"; "ß&lt;/color>s"-"ß&lt;/color>'"; "z&lt;/color>s"-"z&lt;/color>'"; "x&lt;/color>s"-"x&lt;/color>'"; "ce&lt;/color>s"-"ce&lt;/color>'"}</li>
   </Infestation.rulePack.rulesStrings>
   
   <!-- EN: manhunter pack -->
@@ -538,8 +535,8 @@
     <li>desc_sentence->[Quantity_adjphrase] [Animal]s flee the area.</li>
   -->
   <ManhunterPack.rulePack.rulesStrings>
-    <li>tale_noun->menschenjagende Biester [PAWN_label_s] [Community] heimsuchten</li>
-    <li>tale_noun->[PAWN_label_s] [Community] von verrückten Tieren angegriffen wurde</li>
+    <li>tale_noun->menschenjagende Biester [PAWN_label]'s [Community] heimsuchten</li>
+    <li>tale_noun->[PAWN_label]'s [Community] von verrückten Tieren angegriffen wurde</li>
     <li>image->einer Herde von [AnimalsDat], die [circumstance_phrase_plu]</li>
     <li>image->[Quantity_adjphrase_Dat] [AnimalsDat], die [circumstance_phrase_plu]</li>
     <li>image(p=0.33)->einem [AdjectiveLarge]en [AnimalMasDat], der [circumstance_phrase]</li>
@@ -581,7 +578,6 @@
     <li>desc_sentence->Der Boden ist mit [GoreDat] überzogen.</li>
     <li>desc_sentence->[Quantity_adjphrase] [PersonJobs] fliehen aus dem Gebiet.</li>
     <li>desc_sentence->[Quantity_adjphrase] [Animals] fliehen aus dem Gebiet.</li>
-    <li>PAWN_label_s->{replace: [PAWN_label]s; "s&lt;/color>s"-"s&lt;/color>'"; "ß&lt;/color>s"-"ß&lt;/color>'"; "z&lt;/color>s"-"z&lt;/color>'"; "x&lt;/color>s"-"x&lt;/color>'"; "ce&lt;/color>s"-"ce&lt;/color>'"}</li>
   </ManhunterPack.rulePack.rulesStrings>
   
   <!-- EN: meteorite impact -->
@@ -842,7 +838,7 @@
   <Tornado.rulePack.rulesStrings>
     <li>tale_noun(p=0.5)->ein Tornado in der Nähe der [CommunityFemGen] von [PAWN_nameDefDat] auftauchte</li>
     <li>tale_noun(p=0.5)->ein Tornado in der Nähe des [CommunityNeuGen] von [PAWN_nameDefDat] auftauchte</li>
-    <li>tale_noun->[PAWN_label_s] [Community] von einem Tornado heimgesucht wurde</li>
+    <li>tale_noun->[PAWN_label]'s [Community] von einem Tornado heimgesucht wurde</li>
     <li>image->[behavior] Kegel umherwirbelnder Luft, der [circumstance_phrase]</li>
     <li>image->[behavior] Tornado, der [circumstance_phrase]</li>
     <li>image->[behavior] Hurrikan, der [circumstance_phrase]</li>
@@ -867,7 +863,6 @@
     <li>desc_sentence->[Quantity_adjphrase] [PersonJobs] bereiten sich schnell darauf vor.</li>
     <li>desc_sentence->[Quantity_adjphrase] [Animals] fliehen aus dem Gebiet.</li>
     <li>desc_sentence->Die gesamte Tierwelt hat das Gebiet verlassen.</li>
-    <li>PAWN_label_s->{replace: [PAWN_label]s; "s&lt;/color>s"-"s&lt;/color>'"; "ß&lt;/color>s"-"ß&lt;/color>'"; "z&lt;/color>s"-"z&lt;/color>'"; "x&lt;/color>s"-"x&lt;/color>'"; "ce&lt;/color>s"-"ce&lt;/color>'"}</li>
     <li>PAWN_nameDefDat->{replace: [PAWN_nameIndef]; ">ein "-">dem "; ">eine "-">der "}</li>
   </Tornado.rulePack.rulesStrings>
   
@@ -900,7 +895,7 @@
   <TornadoFromItem.rulePack.rulesStrings>
     <li>tale_noun(p=0.5)->ein Tornado in der Nähe der [CommunityFemGen] von [COLONIST_nameDef] auftauchte</li>
     <li>tale_noun(p=0.5)->ein Tornado in der Nähe des [CommunityNeuGen] von [COLONIST_nameDef] auftauchte</li>
-    <li>tale_noun->[PAWN_label_s] [Community] von einem Tornado heimgesucht wurde</li>
+    <li>tale_noun->[PAWN_label]'s [Community] von einem Tornado heimgesucht wurde</li>
     <li>image->[behavior] Kegel umherwirbelnder Luft, der [circumstance_phrase]</li>
     <li>image->[behavior] Tornado, der [circumstance_phrase]</li>
     <li>image->[behavior] Hurrikan, der [circumstance_phrase]</li>
@@ -927,7 +922,6 @@
     <li>desc_sentence->[Quantity_adjphrase] [PersonJobs] bereiten sich schnell darauf vor.</li>
     <li>desc_sentence->[Quantity_adjphrase] [Animals] fliehen aus dem Gebiet.</li>
     <li>desc_sentence->Die gesamte Tierwelt hat das Gebiet verlassen.</li>
-    <li>PAWN_label_s->{replace: [PAWN_label]s; "s&lt;/color>s"-"s&lt;/color>'"; "ß&lt;/color>s"-"ß&lt;/color>'"; "z&lt;/color>s"-"z&lt;/color>'"; "x&lt;/color>s"-"x&lt;/color>'"; "ce&lt;/color>s"-"ce&lt;/color>'"}</li>
   </TornadoFromItem.rulePack.rulesStrings>
   
   <!-- EN: toxic fallout -->

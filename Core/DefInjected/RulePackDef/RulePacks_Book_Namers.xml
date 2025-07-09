@@ -191,7 +191,7 @@
   -->
   <Namer_Novel.rulePack.rulesStrings>
     <li>title(p=3)->[titleNaked]</li>
-    <li>title->[ANYPAWN_label_s] [titleNaked]</li>
+    <li>title->[ANYPAWN_label]'s [titleNaked]</li>
     <li>title(p=0.5)->[story] des [CharacterMasGen]</li>
     <li>title(p=0.5)->[story] der [CharacterFemGen]</li>
     <li>title(p=0.1)->[story] des [CharacterNeuGen]</li>
@@ -406,7 +406,6 @@
     <li>story->Gedicht</li>
     <li>story->Band</li>
     <li>story->Laune</li>
-    <li>ANYPAWN_label_s->{replace: [ANYPAWN_label]s; "s&lt;/color>s"-"s&lt;/color>'"; "ß&lt;/color>s"-"ß&lt;/color>'"; "z&lt;/color>s"-"z&lt;/color>'"; "x&lt;/color>s"-"x&lt;/color>'"; "ce&lt;/color>s"-"ce&lt;/color>'"}</li>
   </Namer_Novel.rulePack.rulesStrings>
   
   <!-- EN:
@@ -690,15 +689,15 @@
     <li>titleTwoSubjects->Eine Einführung in [subjectsTuple]</li>
     <li>titleTwoSubjects->Die Analyse zu [subjectsTuple]</li>
     <li>maybe_authored_title->[author_gen]</li>
-    <li>author_gen->[ANYPAWN_label_s] Studien</li>
-    <li>author_gen->[ANYPAWN_label_s] Notizen</li>
-    <li>author_gen->[ANYPAWN_label_s] Seminare</li>
+    <li>author_gen->[ANYPAWN_label]'s Studien</li>
+    <li>author_gen->[ANYPAWN_label]'s Notizen</li>
+    <li>author_gen->[ANYPAWN_label]'s Seminare</li>
     <li>maybe_authored_title(length_subject_primary[less_than]20,p=2)->[authored_title_gen]</li>
     <li>maybe_authored_title(length_subject_primary[less_than]20,has_subject_secondary==true,length_subject_secondary[less_than]20,p=4)->[authored_title_gen_two]</li>
-    <li>authored_title_gen->[ANYPAWN_label_s] Leitfaden für [subject_primary]</li>
-    <li>authored_title_gen->[ANYPAWN_label_s] Einführung in [subject_primary]</li>
-    <li>authored_title_gen_two->[ANYPAWN_label_s] Leitfaden für [subjectsTuple]</li>
-    <li>authored_title_gen_two->[ANYPAWN_label_s] Einführung in [subjectsTuple]</li>
+    <li>authored_title_gen->[ANYPAWN_label]'s Leitfaden für [subject_primary]</li>
+    <li>authored_title_gen->[ANYPAWN_label]'s Einführung in [subject_primary]</li>
+    <li>authored_title_gen_two->[ANYPAWN_label]'s Leitfaden für [subjectsTuple]</li>
+    <li>authored_title_gen_two->[ANYPAWN_label]'s Einführung in [subjectsTuple]</li>
     <li>subjectsTuple(has_subject_secondary==true,p=2)->[subject_primary] und [subject_secondary]</li>
     <li>subjectsTuple(has_subject_secondary==true)->[subject_secondary] und [randTheme]</li>
     <li>subjectsTuple->[subject_primary] und [randTheme]</li>
@@ -731,7 +730,6 @@
     <li>randTheme->Glauben</li>
     <li>randTheme->Rechte</li>
     <li>randTheme->Ethik</li>
-    <li>ANYPAWN_label_s->{replace: [ANYPAWN_label]s; "s&lt;/color>s"-"s&lt;/color>'"; "ß&lt;/color>s"-"ß&lt;/color>'"; "z&lt;/color>s"-"z&lt;/color>'"; "x&lt;/color>s"-"x&lt;/color>'"; "ce&lt;/color>s"-"ce&lt;/color>'"}</li>
   </Namer_Schematic.rulePack.rulesStrings>
   
   <!-- EN:
@@ -918,19 +916,19 @@
     <li>titleBasic->Geheimnisse von [subject_primary]</li>
     <li>titleBasic->Meisterung von [subject_primary]</li>
     <li>titleBasic->Gründliche Studie über [subject_primary]</li>
-    <li>titleAuthoredNoSubject->[ANYPAWN_label_s] Studien</li>
-    <li>titleAuthoredNoSubject->[ANYPAWN_label_s] [randAdjective]e Studien</li>
-    <li>titleAuthoredNoSubject->[ANYPAWN_label_s] Tagebuch</li>
-    <li>titleAuthoredNoSubject->[ANYPAWN_label_s] Chroniken</li>
-    <li>titleAuthoredNoSubject->[ANYPAWN_label_s] Memoiren</li>
-    <li>titleAuthoredNoSubject->[ANYPAWN_label_s] Logbuch</li>
-    <li>titleAuthoredNoSubject->[ANYPAWN_label_s] Gedanken</li>
-    <li>titleAuthoredNoSubject->[ANYPAWN_label_s] Abenteuer</li>
-    <li>titleAuthoredNoSubject->[ANYPAWN_label_s] Überlegungen</li>
-    <li>titleAuthoredNoSubject->[ANYPAWN_label_s] Erkundung</li>
-    <li>titleAuthoredNoSubject->[ANYPAWN_label_s] Aussagen</li>
-    <li>titleAuthoredNoSubject->[ANYPAWN_label_s] Odyssee</li>
-    <li>titleAuthoredNoSubject->[ANYPAWN_label_s] Reise</li>
+    <li>titleAuthoredNoSubject->[ANYPAWN_label]'s Studien</li>
+    <li>titleAuthoredNoSubject->[ANYPAWN_label]'s [randAdjective]e Studien</li>
+    <li>titleAuthoredNoSubject->[ANYPAWN_label]'s Tagebuch</li>
+    <li>titleAuthoredNoSubject->[ANYPAWN_label]'s Chroniken</li>
+    <li>titleAuthoredNoSubject->[ANYPAWN_label]'s Memoiren</li>
+    <li>titleAuthoredNoSubject->[ANYPAWN_label]'s Logbuch</li>
+    <li>titleAuthoredNoSubject->[ANYPAWN_label]'s Gedanken</li>
+    <li>titleAuthoredNoSubject->[ANYPAWN_label]'s Abenteuer</li>
+    <li>titleAuthoredNoSubject->[ANYPAWN_label]'s Überlegungen</li>
+    <li>titleAuthoredNoSubject->[ANYPAWN_label]'s Erkundung</li>
+    <li>titleAuthoredNoSubject->[ANYPAWN_label]'s Aussagen</li>
+    <li>titleAuthoredNoSubject->[ANYPAWN_label]'s Odyssee</li>
+    <li>titleAuthoredNoSubject->[ANYPAWN_label]'s Reise</li>
     <li>titleAuthoredNoSubject->Das Leben von [ANYPAWN_nameIndef]</li>
     <li>titleAuthoredNoSubject->Die Geschichte von [ANYPAWN_nameIndef]</li>
     <li>titleAuthoredNoSubject->Das Vermächtnis von [ANYPAWN_nameIndef]</li>
@@ -942,35 +940,35 @@
     <li>titleAuthoredNoSubject->Die Chroniken von [ANYPAWN_nameIndef]</li>
     <li>titleAuthoredNoSubject->Die Memoiren von [ANYPAWN_nameIndef]</li>
     <li>titleAuthoredOneSubject->[ANYPAWN_nameIndef] über [subject_primary]</li>
-    <li>titleAuthoredOneSubject->[ANYPAWN_label_s] Leitfaden für [subject_primary]</li>
-    <li>titleAuthoredOneSubject->[ANYPAWN_label_s] Einführung in [subject_primary]</li>
+    <li>titleAuthoredOneSubject->[ANYPAWN_label]'s Leitfaden für [subject_primary]</li>
+    <li>titleAuthoredOneSubject->[ANYPAWN_label]'s Einführung in [subject_primary]</li>
     <li>titleAuthoredOneSubject->[ANYPAWN_nameIndef] erforscht [subject_primary]</li>
-    <li>titleAuthoredOneSubject->[ANYPAWN_label_s] Einblicke in [subject_primary]</li>
-    <li>titleAuthoredOneSubject->[ANYPAWN_label_s] Anleitung zu [subject_primary]</li>
-    <li>titleAuthoredOneSubject->[ANYPAWN_label_s] Ansichten zu [subject_primary]</li>
-    <li>titleAuthoredOneSubject->[ANYPAWN_label_s] Handbuch über [subject_primary]</li>
-    <li>titleAuthoredOneSubject->[ANYPAWN_label_s] Analyse von [subject_primary]</li>
-    <li>titleAuthoredOneSubject->[ANYPAWN_label_s] Umgang mit [subject_primary]</li>
-    <li>titleAuthoredOneSubject->[ANYPAWN_label_s] Entdeckungen in [subject_primary]</li>
-    <li>titleAuthoredOneSubject->[ANYPAWN_label_s] Überlegungen zu [subject_primary]</li>
-    <li>titleAuthoredOneSubject->[ANYPAWN_label_s] Studium von [subject_primary]</li>
-    <li>titleAuthoredOneSubject->[ANYPAWN_label_s] Untersuchung über [subject_primary]</li>
-    <li>titleAuthoredOneSubject->[ANYPAWN_label_s] Forschung zu [subject_primary]</li>
+    <li>titleAuthoredOneSubject->[ANYPAWN_label]'s Einblicke in [subject_primary]</li>
+    <li>titleAuthoredOneSubject->[ANYPAWN_label]'s Anleitung zu [subject_primary]</li>
+    <li>titleAuthoredOneSubject->[ANYPAWN_label]'s Ansichten zu [subject_primary]</li>
+    <li>titleAuthoredOneSubject->[ANYPAWN_label]'s Handbuch über [subject_primary]</li>
+    <li>titleAuthoredOneSubject->[ANYPAWN_label]'s Analyse von [subject_primary]</li>
+    <li>titleAuthoredOneSubject->[ANYPAWN_label]'s Umgang mit [subject_primary]</li>
+    <li>titleAuthoredOneSubject->[ANYPAWN_label]'s Entdeckungen in [subject_primary]</li>
+    <li>titleAuthoredOneSubject->[ANYPAWN_label]'s Überlegungen zu [subject_primary]</li>
+    <li>titleAuthoredOneSubject->[ANYPAWN_label]'s Studium von [subject_primary]</li>
+    <li>titleAuthoredOneSubject->[ANYPAWN_label]'s Untersuchung über [subject_primary]</li>
+    <li>titleAuthoredOneSubject->[ANYPAWN_label]'s Forschung zu [subject_primary]</li>
     <li>titleAuthoredTwoSubjects->[ANYPAWN_nameIndef] über [subjectsTuple]</li>
-    <li>titleAuthoredTwoSubjects->[ANYPAWN_label_s] Leitfaden für [subjectsTuple]</li>
-    <li>titleAuthoredTwoSubjects->[ANYPAWN_label_s] Einführung in [subjectsTuple]</li>
+    <li>titleAuthoredTwoSubjects->[ANYPAWN_label]'s Leitfaden für [subjectsTuple]</li>
+    <li>titleAuthoredTwoSubjects->[ANYPAWN_label]'s Einführung in [subjectsTuple]</li>
     <li>titleAuthoredTwoSubjects->[ANYPAWN_nameIndef] erforscht [subjectsTuple]</li>
-    <li>titleAuthoredTwoSubjects->[ANYPAWN_label_s] Einblicke in [subjectsTuple]</li>
-    <li>titleAuthoredTwoSubjects->[ANYPAWN_label_s] Anleitung zu [subjectsTuple]</li>
-    <li>titleAuthoredTwoSubjects->[ANYPAWN_label_s] Ansichten zu [subjectsTuple]</li>
-    <li>titleAuthoredTwoSubjects->[ANYPAWN_label_s] Handbuch über [subjectsTuple]</li>
-    <li>titleAuthoredTwoSubjects->[ANYPAWN_label_s] Analyse von [subjectsTuple]</li>
-    <li>titleAuthoredTwoSubjects->[ANYPAWN_label_s] Umgang mit [subjectsTuple]</li>
-    <li>titleAuthoredTwoSubjects->[ANYPAWN_label_s] Entdeckungen in [subjectsTuple]</li>
-    <li>titleAuthoredTwoSubjects->[ANYPAWN_label_s] Überlegungen zu [subjectsTuple]</li>
-    <li>titleAuthoredTwoSubjects->[ANYPAWN_label_s] Studium von [subjectsTuple]</li>
-    <li>titleAuthoredTwoSubjects->[ANYPAWN_label_s] Untersuchung über [subjectsTuple]</li>
-    <li>titleAuthoredTwoSubjects->[ANYPAWN_label_s] Forschung zu [subjectsTuple]</li>
+    <li>titleAuthoredTwoSubjects->[ANYPAWN_label]'s Einblicke in [subjectsTuple]</li>
+    <li>titleAuthoredTwoSubjects->[ANYPAWN_label]'s Anleitung zu [subjectsTuple]</li>
+    <li>titleAuthoredTwoSubjects->[ANYPAWN_label]'s Ansichten zu [subjectsTuple]</li>
+    <li>titleAuthoredTwoSubjects->[ANYPAWN_label]'s Handbuch über [subjectsTuple]</li>
+    <li>titleAuthoredTwoSubjects->[ANYPAWN_label]'s Analyse von [subjectsTuple]</li>
+    <li>titleAuthoredTwoSubjects->[ANYPAWN_label]'s Umgang mit [subjectsTuple]</li>
+    <li>titleAuthoredTwoSubjects->[ANYPAWN_label]'s Entdeckungen in [subjectsTuple]</li>
+    <li>titleAuthoredTwoSubjects->[ANYPAWN_label]'s Überlegungen zu [subjectsTuple]</li>
+    <li>titleAuthoredTwoSubjects->[ANYPAWN_label]'s Studium von [subjectsTuple]</li>
+    <li>titleAuthoredTwoSubjects->[ANYPAWN_label]'s Untersuchung über [subjectsTuple]</li>
+    <li>titleAuthoredTwoSubjects->[ANYPAWN_label]'s Forschung zu [subjectsTuple]</li>
     <li>titleBasicTwoSubjects->[subjectsTuple]</li>
     <li>titleBasicTwoSubjects->eine Einführung in [subjectsTuple]</li>
     <li>titleBasicTwoSubjects->Das Beste an [subjectsTuple]</li>
@@ -1031,7 +1029,6 @@
     <li>randTheme->Wissen</li>
     <li>randTheme->Weiterbildung</li>
     <li>randTheme->Aufklärung</li>
-    <li>ANYPAWN_label_s->{replace: [ANYPAWN_label]s; "s&lt;/color>s"-"s&lt;/color>'"; "ß&lt;/color>s"-"ß&lt;/color>'"; "z&lt;/color>s"-"z&lt;/color>'"; "x&lt;/color>s"-"x&lt;/color>'"; "ce&lt;/color>s"-"ce&lt;/color>'"}</li>
   </Namer_TextBook.rulePack.rulesStrings>
   
 </LanguageData>

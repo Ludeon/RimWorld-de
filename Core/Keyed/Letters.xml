@@ -72,7 +72,7 @@
   <RecruitFail>{0} konnte {1} nicht rekrutieren ({2} Chance).</RecruitFail>
 
   <!-- EN: {PAWN_nameDef} is {RELATIVE_labelShort}'s {1}. If {PAWN_nameDef} dies, {RELATIVE_labelShort} will suffer from long-lasting grief. However, if you manage to rescue {PAWN_nameDef}, {RELATIVE_labelShort} will be very happy for a long time. -->
-  <RelatedPawnInvolvedInQuest>{PAWN_nameDef} ist {replace: {RELATIVE_labelShort}s; "s(/Name)s"-"s(/Name)'"; "ß(/Name)s"-"ß(/Name)'"; "z(/Name)s"-"z(/Name)'"; "x(/Name)s"-"x(/Name)'"; "ce(/Name)s"-"ce(/Name)'"} {1}. Wenn {PAWN_nameDef} stirbt, wird {RELATIVE_labelShort} sehr lange trauern. Wenn du es aber schaffst, {PAWN_nameDef} zu retten, wird {RELATIVE_labelShort} für lange Zeit sehr glücklich sein.</RelatedPawnInvolvedInQuest>
+  <RelatedPawnInvolvedInQuest>{PAWN_nameDef} ist {RELATIVE_labelShort}'s {1}. Wenn {PAWN_nameDef} stirbt, wird {RELATIVE_labelShort} sehr lange trauern. Wenn du es aber schaffst, {PAWN_nameDef} zu retten, wird {RELATIVE_labelShort} für lange Zeit sehr glücklich sein.</RelatedPawnInvolvedInQuest>
 
   <!-- EN: Birthday -->
   <LetterLabelBirthday>Geburtstag</LetterLabelBirthday>
@@ -88,7 +88,7 @@
   <!-- EN: {PAWN} has gotten sick from {1}.\n\nEnsure you have a medical bed and a doctor. Make sure that {PAWN_definite} gets proper treatment and spends as much time in bed as possible. -->
   <NewDisease>{PAWN} ist an {1} erkrankt.\n\nStelle sicher, dass du ein Krankenbett und einen Arzt hast. Sorge dafür, dass {PAWN_definite} eine vernünftige Behandlung bekommt und so viel Zeit wie möglich im Bett verbringt, um schnell wieder gesund zu werden.</NewDisease>
   <!-- EN: {PAWN} has gotten sick from {3}. The infection is in {PAWN_possessive} {1}.\n\nEnsure you have a medical bed and a doctor. Make sure that {PAWN_definite} gets proper treatment and spends as much time in bed as possible. -->
-  <NewPartDisease>{replace: {PAWN}s; "s(/Name)s"-"s(/Name)'"; "ß(/Name)s"-"ß(/Name)'"; "z(/Name)s"-"z(/Name)'"; "x(/Name)s"-"x(/Name)'"; "ce(/Name)s"-"ce(/Name)'"} {1} hat {3_gender ? einen : eine : ein} {replace: {3}; "er "-"en "}.\n\nStelle sicher, dass du ein Krankenbett und einen Arzt hast. Sorge dafür, dass {PAWN_definite} eine vernünftige Behandlung bekommt und so viel Zeit wie möglich im Bett verbringt, um schnell wieder gesund zu werden.</NewPartDisease>
+  <NewPartDisease>{PAWN}'s {1} hat {3_gender ? einen : eine : ein} {replace: {3}; "er "-"en "}.\n\nStelle sicher, dass du ein Krankenbett und einen Arzt hast. Sorge dafür, dass {PAWN_definite} eine vernünftige Behandlung bekommt und so viel Zeit wie möglich im Bett verbringt, um schnell wieder gesund zu werden.</NewPartDisease>
   <!-- EN: {PAWN_labelShort} has developed an illness: {1} -->
   <NewDiseaseAnimal>{PAWN_labelShort} ist an {1} erkrankt.</NewDiseaseAnimal>
   <!-- EN: {PAWN_labelShort} has developed an illness: {3} in {PAWN_possessive} {1} -->
@@ -196,9 +196,9 @@
   <!-- EN: relationship -->
   <RelationshipAppendedLetterSuffix>Verwandtschaft</RelationshipAppendedLetterSuffix>
   <!-- EN: {PAWN_nameDef} has a relationship with a colonist. {PAWN_pronoun} is {RELATIVE_labelShort}'s {1}. -->
-  <RelationshipAppendedLetterTextColonist>{PAWN_nameDef} ist verwandt mit einem deiner Kolonisten. {PAWN_pronoun} ist {replace: {RELATIVE_labelShort}s; "s(/Name)s"-"s(/Name)'"; "ß(/Name)s"-"ß(/Name)'"; "z(/Name)s"-"z(/Name)'"; "x(/Name)s"-"x(/Name)'"; "ce(/Name)s"-"ce(/Name)'"} {1}.</RelationshipAppendedLetterTextColonist>
+  <RelationshipAppendedLetterTextColonist>{PAWN_nameDef} ist verwandt mit einem deiner Kolonisten. {PAWN_pronoun} ist {RELATIVE_labelShort}'s {1}.</RelationshipAppendedLetterTextColonist>
   <!-- EN: {PAWN_nameDef} has a relationship with one of your prisoners. {PAWN_pronoun} is {RELATIVE_labelShort}'s {1}. -->
-  <RelationshipAppendedLetterTextPrisoner>{PAWN_nameDef} ist verwandt mit einem deiner Gefangenen. {PAWN_pronoun} ist {replace: {RELATIVE_labelShort}s; "s(/Name)s"-"s(/Name)'"; "ß(/Name)s"-"ß(/Name)'"; "z(/Name)s"-"z(/Name)'"; "x(/Name)s"-"x(/Name)'"; "ce(/Name)s"-"ce(/Name)'"} {1}.</RelationshipAppendedLetterTextPrisoner>
+  <RelationshipAppendedLetterTextPrisoner>{PAWN_nameDef} ist verwandt mit einem deiner Gefangenen. {PAWN_pronoun} ist {RELATIVE_labelShort}'s {1}.</RelationshipAppendedLetterTextPrisoner>
 
   <!-- Attempt romance / propose interaction -->
   <!-- EN: Affair -->
@@ -600,7 +600,7 @@
   <!-- EN: Because the speech was interrupted after only {0} completed, it wasn't as effective. -->
   <LetterSpeechInterrupted>Da die Rede nach nur {0} unterbrochen wurde, war sie nicht sehr effektiv.</LetterSpeechInterrupted>
   <!-- EN: {0}'s speech was cancelled before reaching 50% completion. It had no effect. -->
-  <LetterSpeechCancelled>{replace: {0}'s; "s's"-"s'"; "ß's"-"ß'"; "z's"-"z'"; "x's"-"x'"; "ce's"-"ce'"; "'s"-"s"} Rede wurde unterbrochen, bevor diese zu 50% beendet werden konnte. Die Rede hatte keinen Effekt.</LetterSpeechCancelled>
+  <LetterSpeechCancelled>{0}'s Rede wurde unterbrochen, bevor diese zu 50% beendet werden konnte. Die Rede hatte keinen Effekt.</LetterSpeechCancelled>
   <!-- EN: Speech cancelled -->
   <LetterLabelSpeechCancelled>Rede abgebrochen</LetterLabelSpeechCancelled>
 

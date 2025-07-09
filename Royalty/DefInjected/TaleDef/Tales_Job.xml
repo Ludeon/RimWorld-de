@@ -15,8 +15,8 @@
     <li>desc_sentence->[Quantity_adjphrase] [Animal]s listen attentively.</li>
   -->
   <AttendedConcert.rulePack.rulesStrings>
-    <li>tale_noun->[ATTENDER_nameDef] [ORGANIZER_nameDef_s] Konzert beiwohnte</li>
-    <li>tale_noun->[ATTENDER_nameDef] [ORGANIZER_nameDef_s] Auftritt zuhörte</li>
+    <li>tale_noun->[ATTENDER_nameDef] [ORGANIZER_label]'s Konzert beiwohnte</li>
+    <li>tale_noun->[ATTENDER_nameDef] [ORGANIZER_label]'s Auftritt zuhörte</li>
     <li>image->[ATTENDER_nameFullIndefDat], wie [ATTENDER_pronoun] ruhig zuhört [circumstance_group]</li>
     <li>image->[ATTENDER_nameFullIndefDat], wie [ATTENDER_pronoun] den Auftritt von [ORGANIZER_nameFullIndefDat] genießt [circumstance_group]</li>
     <li>image->[ATTENDER_nameFullIndefDat], wie [ATTENDER_pronoun] zu der Musik wippt [circumstance_group]</li>
@@ -25,7 +25,6 @@
     <li>desc_sentence->[Quantity_adjphrase] [PersonJobs] tanzen mit.</li>
     <li>desc_sentence->[Quantity_adjphrase] [Animals] hören aufmerksam zu.</li>
     <li>ATTENDER_nameFullIndefDat->{replace: [ATTENDER_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
-    <li>ORGANIZER_nameDef_s->{replace: [ORGANIZER_label]s; "s&lt;/color>s"-"s&lt;/color>'"; "ß&lt;/color>s"-"ß&lt;/color>'"; "z&lt;/color>s"-"z&lt;/color>'"; "x&lt;/color>s"-"x&lt;/color>'"; "ce&lt;/color>s"-"ce&lt;/color>'"}</li>
     <li>ORGANIZER_nameFullIndefDat->{replace: [ORGANIZER_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
   </AttendedConcert.rulePack.rulesStrings>
   

@@ -92,7 +92,7 @@
     <li>visit->veneration</li>
   -->
   <ReliquaryPilgrims.questNameRules.rulesStrings>
-    <li>questName(pilgrimCount==1)->{replace: [pilgrimsLabelSingularOrPlural]s; "s&lt;/color>s"-"s&lt;/color>'"; "ß&lt;/color>s"-"ß&lt;/color>'"; "z&lt;/color>s"-"z&lt;/color>'"; "x&lt;/color>s"-"x&lt;/color>'"; "ce&lt;/color>s"-"ce&lt;/color>'"} [visitAdj] [visit]</li>
+    <li>questName(pilgrimCount==1)->[pilgrimsLabelSingularOrPlural]'s [visitAdj] [visit]</li>
     <li>questName(pilgrimCount>=2)->Die [visitAdj] [visit] der [pilgrimsLabelSingularOrPlural]</li>
     <li>visitAdj(p=6)-></li>
     <li>visitAdj->heilige</li>

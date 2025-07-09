@@ -43,7 +43,7 @@
   <MessageVisitorsDangerousConditions>{0} der Fraktion '{1}' verlassen das Gebiet aufgrund gefährlicher Zustände.</MessageVisitorsDangerousConditions>
 
   <!-- EN: {0} worn by {1_nameFull} deteriorated away to nothing. -->
-  <MessageWornApparelDeterioratedAway>{replace: {1_labelShort}s; "s(/Name)s"-"s(/Name)'"; "ß(/Name)s"-"ß(/Name)'"; "z(/Name)s"-"z(/Name)'"; "x(/Name)s"-"x(/Name)'"; "ce(/Name)s"-"ce(/Name)'"} {0} ist unwiederbringlich zerfallen.</MessageWornApparelDeterioratedAway>
+  <MessageWornApparelDeterioratedAway>{1_labelShort}'s {0} ist unwiederbringlich zerfallen.</MessageWornApparelDeterioratedAway>
   <!-- EN: {0} has deteriorated away in storage. -->
   <MessageDeterioratedAway>{0} ist im Lager zerfallen.</MessageDeterioratedAway>
 
@@ -175,7 +175,7 @@
   <!-- EN: There are no animal beds available. -->
   <MessageNoAnimalBeds>Es sind keine Tierbetten verfügbar.</MessageNoAnimalBeds>
   <!-- EN: Warning: {PAWN_nameDef}'s medicine restriction ({RESTRICTIONLABEL}) prevents doing this operation. Consider changing {PAWN_possessive} medicine restriction. -->
-  <MessageWarningNoMedicineForRestriction>Warnung: {replace: {PAWN_nameDef}s; "s(/Name)s"-"s(/Name)'"; "ß(/Name)s"-"ß(/Name)'"; "z(/Name)s"-"z(/Name)'"; "x(/Name)s"-"x(/Name)'"; "ce(/Name)s"-"ce(/Name)'"} aktueller Pflegemodus ({RESTRICTIONLABEL}) verhindert diese Operation. Erwäge, {PAWN_possessive}en Pflegemodus zu ändern.</MessageWarningNoMedicineForRestriction>
+  <MessageWarningNoMedicineForRestriction>Warnung: {PAWN_nameDef}'s aktueller Pflegemodus ({RESTRICTIONLABEL}) verhindert diese Operation. Erwäge, {PAWN_possessive}en Pflegemodus zu ändern.</MessageWarningNoMedicineForRestriction>
   
   <!-- EN: {PAWN_labelShort} has died. Cause: {1}. -->
   <PawnDiedBecauseOf>{PAWN_labelShort} ist an {1} gestorben.</PawnDiedBecauseOf>
@@ -260,7 +260,7 @@
   <MessageBondedAnimalsMentalBreak>{0} Tiere haben einen Nervenzusammenbruch, weil {HUMAN_labelShort} gestorben ist.</MessageBondedAnimalsMentalBreak>
   
   <!-- EN: {SURGEON_labelShort} has successfully removed {PATIENT_labelShort}'s {HEDIFF}. -->
-  <MessageSuccessfullyRemovedHediff>{SURGEON_labelShort} hat erfolgreich {replace: {PATIENT_labelShort}s; "s(/Name)s"-"s(/Name)'"; "ß(/Name)s"-"ß(/Name)'"; "z(/Name)s"-"z(/Name)'"; "x(/Name)s"-"x(/Name)'"; "ce(/Name)s"-"ce(/Name)'"} {HEDIFF} entfernt.</MessageSuccessfullyRemovedHediff>
+  <MessageSuccessfullyRemovedHediff>{SURGEON_labelShort} hat erfolgreich {PATIENT_labelShort}'s {HEDIFF} entfernt.</MessageSuccessfullyRemovedHediff>
   
   <!-- EN: Chunks of a spacecraft have impacted nearby. You can deconstruct them to yield resources. -->
   <MessageShipChunkDrop>Teile eines Raumschiffs sind in der Nähe abgestürzt. Du kannst sie abreißen, um Ressourcen zu erhalten.</MessageShipChunkDrop>
@@ -337,7 +337,7 @@
   <MessageSettledInExistingMap>Du hast erfolgreich eine neue Siedlung gegründet.</MessageSettledInExistingMap>
   
   <!-- EN: {PAWN_labelShort}'s {2} has healed. Cause: {0} -->
-  <MessagePermanentWoundHealed>{replace: {PAWN_labelShort}s; "s(/Name)s"-"s(/Name)'"; "ß(/Name)s"-"ß(/Name)'"; "z(/Name)s"-"z(/Name)'"; "x(/Name)s"-"x(/Name)'"; "ce(/Name)s"-"ce(/Name)'"} {2} wurde geheilt. Ursache: {0}</MessagePermanentWoundHealed>
+  <MessagePermanentWoundHealed>{PAWN_labelShort}'s {2} wurde geheilt. Ursache: {0}</MessagePermanentWoundHealed>
   
   <!-- EN: [PAWN_nameDef] has recovered and decided to leave. -->
   <MessageRescueeDidntJoin>[PAWN_nameDef] hat sich erholt und beschlossen zu gehen.</MessageRescueeDidntJoin>
@@ -416,7 +416,7 @@
   <!-- EN: {0} has run out of food. -->
   <MessageCaravanRanOutOfFood>{0} hat keine Nahrung mehr.</MessageCaravanRanOutOfFood>
   <!-- EN: {PAWN_definite}'s corpse has been picked up by the caravan. It is heavy and may immobilize the caravan, but can be left behind in the caravan items tab. -->
-  <MessageCaravanDeathCorpseAddedToInventory>{replace: {PAWN_definite}s; "s(/Name)s"-"s(/Name)'"; "ß(/Name)s"-"ß(/Name)'"; "z(/Name)s"-"z(/Name)'"; "x(/Name)s"-"x(/Name)'"; "ce(/Name)s"-"ce(/Name)'"} Leiche wurde von der Karawane eingesammelt. Sie ist schwer und kann die Karawane lahmlegen, allerdings kann sie im WAREN-Tab der Karawane zurückgelassen werden.</MessageCaravanDeathCorpseAddedToInventory>
+  <MessageCaravanDeathCorpseAddedToInventory>{PAWN_definite}'s Leiche wurde von der Karawane eingesammelt. Sie ist schwer und kann die Karawane lahmlegen, allerdings kann sie im WAREN-Tab der Karawane zurückgelassen werden.</MessageCaravanDeathCorpseAddedToInventory>
 
   <!-- EN: To form a caravan, select your own colony or a site where you have people. -->
   <MessageSelectOwnBaseToFormCaravan>Um eine Karawane zu formieren, selektiere deine eigene Kolonie oder einen Ort, wo sich Kolonisten aufhalten.</MessageSelectOwnBaseToFormCaravan>
@@ -692,7 +692,7 @@
   <MessagePrisonerCannotEquipWeapon>{PAWN_nameDef} ist {PAWN_gender ? ein Gefangener : eine Gefangene}</MessagePrisonerCannotEquipWeapon>
 
   <!-- EN: Warning: {0_nameDef}'s beliefs oppose {1} work. {0_pronoun} may become unhappy. -->
-  <MessageIdeoOpposedWorkTypeSelected>Warnung: {replace: {0_nameDef}s; "s(/Name)s"-"s(/Name)'"; "ß(/Name)s"-"ß(/Name)'"; "z(/Name)s"-"z(/Name)'"; "x(/Name)s"-"x(/Name)'"; "ce(/Name)s"-"ce(/Name)'"} Glaube widerspricht der Arbeit '{1}'. {0_pronoun} würde dadurch schlechte Laune bekommen.</MessageIdeoOpposedWorkTypeSelected>
+  <MessageIdeoOpposedWorkTypeSelected>Warnung: {0_nameDef}'s Glaube widerspricht der Arbeit '{1}'. {0_pronoun} würde dadurch schlechte Laune bekommen.</MessageIdeoOpposedWorkTypeSelected>
 
   <!-- EN: {0} is no longer assigned to {1_nameDef}. -->
   <MessageBedLostAssignment>{0} ist nicht länger für {1_nameDef} reserviert.</MessageBedLostAssignment>
@@ -853,9 +853,9 @@
   <MessageLodgersCantFarskip>Kann Flüchtling nicht teleportieren</MessageLodgersCantFarskip>
   
   <!-- EN: {HACKER_nameDef}'s hacking has been detected. {HACKER_pronoun} has been locked out for {DURATION}. -->
-  <MessageHackerLockedOut>{replace: {HACKER_nameDef}s; "s(/Name)s"-"s(/Name)'"; "ß(/Name)s"-"ß(/Name)'"; "z(/Name)s"-"z(/Name)'"; "x(/Name)s"-"x(/Name)'"; "ce(/Name)s"-"ce(/Name)'"} Hackversuch wurde entdeckt. {HACKER_pronoun} wurde für {DURATION} ausgesperrt.</MessageHackerLockedOut>
+  <MessageHackerLockedOut>{HACKER_nameDef}'s Hackversuch wurde entdeckt. {HACKER_pronoun} wurde für {DURATION} ausgesperrt.</MessageHackerLockedOut>
   <!-- EN: {HACKER_nameDef}'s hacking has been detected. {HACKER_pronoun} has been locked out permanently. -->
-  <MessageHackerLockedOutPermanently>{replace: {HACKER_nameDef}s; "s(/Name)s"-"s(/Name)'"; "ß(/Name)s"-"ß(/Name)'"; "z(/Name)s"-"z(/Name)'"; "x(/Name)s"-"x(/Name)'"; "ce(/Name)s"-"ce(/Name)'"} Hackversuch wurde entdeckt. {HACKER_pronoun} wurde dauerhaft ausgesperrt.</MessageHackerLockedOutPermanently>
+  <MessageHackerLockedOutPermanently>{HACKER_nameDef}'s Hackversuch wurde entdeckt. {HACKER_pronoun} wurde dauerhaft ausgesperrt.</MessageHackerLockedOutPermanently>
   <!-- EN: {0_labelShort} can be hacked again. -->
   <MessageHackableUnlocked>{0_labelShort} kann wieder gehackt werden.</MessageHackableUnlocked>
 

@@ -339,17 +339,17 @@
   <MetalhorrorSurgicalInspectionDetails>Folgende Ärzte waren von Metallschrecken befallen und wurden von diesen kontrolliert, weshalb sie über die Ergebnisse einer chirurgischen Inspektion gelogen haben</MetalhorrorSurgicalInspectionDetails>
   
   <!-- EN: {INFECTED_nameDef}'s metalhorror emerged because it was discovered by {PAWN_nameDef} during a social interaction. -->
-  <MetalhorrorReasonInteraction>{replace: {INFECTED_nameDef}s; "s(/Name)s"-"s(/Name)'"; "ß(/Name)s"-"ß(/Name)'"; "z(/Name)s"-"z(/Name)'"; "x(/Name)s"-"x(/Name)'"; "ce(/Name)s"-"ce(/Name)'"} Metallschrecken ist geschlüpft, da {PAWN_nameDef} diesen bei einer sozialen Interaktion entdeckt hat.</MetalhorrorReasonInteraction>
+  <MetalhorrorReasonInteraction>{INFECTED_nameDef}'s Metallschrecken ist geschlüpft, da {PAWN_nameDef} diesen bei einer sozialen Interaktion entdeckt hat.</MetalhorrorReasonInteraction>
   <!-- EN: {INFECTED_nameDef}'s metalhorror emerged because it was discovered by {PAWN_nameDef} during an interrogation. -->
-  <MetalhorrorReasonInterrogation>{replace: {INFECTED_nameDef}s; "s(/Name)s"-"s(/Name)'"; "ß(/Name)s"-"ß(/Name)'"; "z(/Name)s"-"z(/Name)'"; "x(/Name)s"-"x(/Name)'"; "ce(/Name)s"-"ce(/Name)'"} Metallschrecken ist geschlüpft, da {PAWN_nameDef} diesen bei einem Verhör entdeckt hat.</MetalhorrorReasonInterrogation>
+  <MetalhorrorReasonInterrogation>{INFECTED_nameDef}'s Metallschrecken ist geschlüpft, da {PAWN_nameDef} diesen bei einem Verhör entdeckt hat.</MetalhorrorReasonInterrogation>
   <!-- EN: {INFECTED_nameDef}'s metalhorror emerged because {INFECTED_nameDef} died. -->
-  <MetalhorrorReasonHostDied>{replace: {INFECTED_nameDef}s; "s(/Name)s"-"s(/Name)'"; "ß(/Name)s"-"ß(/Name)'"; "z(/Name)s"-"z(/Name)'"; "x(/Name)s"-"x(/Name)'"; "ce(/Name)s"-"ce(/Name)'"} Metallschrecken ist geschlüpft, da {INFECTED_nameDef} gestorben ist.</MetalhorrorReasonHostDied>
+  <MetalhorrorReasonHostDied>{INFECTED_nameDef}'s Metallschrecken ist geschlüpft, da {INFECTED_nameDef} gestorben ist.</MetalhorrorReasonHostDied>
   <!-- EN: {INFECTED_nameDef}'s metalhorror emerged because it was detected by {PAWN_nameDef} during a surgical inspection. -->
-  <MetalhorrorReasonSurgeryInspected>{replace: {INFECTED_nameDef}s; "s(/Name)s"-"s(/Name)'"; "ß(/Name)s"-"ß(/Name)'"; "z(/Name)s"-"z(/Name)'"; "x(/Name)s"-"x(/Name)'"; "ce(/Name)s"-"ce(/Name)'"} Metallschrecken ist geschlüpft, da {PAWN_nameDef} diesen bei einer Operation entdeckt hat.</MetalhorrorReasonSurgeryInspected>
+  <MetalhorrorReasonSurgeryInspected>{INFECTED_nameDef}'s Metallschrecken ist geschlüpft, da {PAWN_nameDef} diesen bei einer Operation entdeckt hat.</MetalhorrorReasonSurgeryInspected>
   <!-- EN: {INFECTED_nameDef}'s metalhorror emerged for unknown reasons. -->
-  <MetalhorrorReasonRandom>{replace: {INFECTED_nameDef}s; "s(/Name)s"-"s(/Name)'"; "ß(/Name)s"-"ß(/Name)'"; "z(/Name)s"-"z(/Name)'"; "x(/Name)s"-"x(/Name)'"; "ce(/Name)s"-"ce(/Name)'"} Metallschrecken ist aus unbekannten Gründen geschlüpft.</MetalhorrorReasonRandom>
+  <MetalhorrorReasonRandom>{INFECTED_nameDef}'s Metallschrecken ist aus unbekannten Gründen geschlüpft.</MetalhorrorReasonRandom>
   <!-- EN: {INFECTED_nameDef}'s metalhorror emerged upon sensing it was being taken away from the colony. -->
-  <MetalhorrorReasonTriedToLeaveMap>{replace: {INFECTED_nameDef}s; "s(/Name)s"-"s(/Name)'"; "ß(/Name)s"-"ß(/Name)'"; "z(/Name)s"-"z(/Name)'"; "x(/Name)s"-"x(/Name)'"; "ce(/Name)s"-"ce(/Name)'"} Metallschrecken ist geschlüpft, als er bemerkte, dass er von der Kolonie weggebracht wurde.</MetalhorrorReasonTriedToLeaveMap>
+  <MetalhorrorReasonTriedToLeaveMap>{INFECTED_nameDef}'s Metallschrecken ist geschlüpft, als er bemerkte, dass er von der Kolonie weggebracht wurde.</MetalhorrorReasonTriedToLeaveMap>
   
   <!-- EN: Metalhorror detected -->
   <MetalhorrorDetected>Metallschrecken entdeckt</MetalhorrorDetected>
@@ -433,7 +433,7 @@
   <LetterCreeperInviteAppend>{PAWN_pronoun} kann sehr nützlich sein, aber du spürst auch, dass {PAWN_nameDef} dir etwas verschweigt.</LetterCreeperInviteAppend>
   
   <!-- EN: Allow {PAWN_nameDef} to join -->
-  <AcceptCreeper>{replace: {PAWN_nameDef}s; "s(/Name)s"-"s(/Name)'"; "ß(/Name)s"-"ß(/Name)'"; "z(/Name)s"-"z(/Name)'"; "x(/Name)s"-"x(/Name)'"; "ce(/Name)s"-"ce(/Name)'"} Beitritt erlauben</AcceptCreeper>
+  <AcceptCreeper>{PAWN_nameDef}'s Beitritt erlauben</AcceptCreeper>
   <!-- EN: Send {SPEAKER_nameDef} to capture {PAWN_nameDef} -->
   <CaptureCreeper>{PAWN_nameDef} mit {SPEAKER_nameDef} gefangen nehmen</CaptureCreeper>
   <!-- EN: Send {PAWN_nameDef} away -->
@@ -445,7 +445,7 @@
   <!-- EN: {CASTER_nameDef} has finished {CASTER_possessive} psychic healing on {PAWN_nameDef}. -->
   <LetterUnnaturalHealing>{CASTER_nameDef} hat {CASTER_possessive}e unnatürliche Heilung auf {PAWN_nameDef} gewirkt.</LetterUnnaturalHealing>
   <!-- EN: However, something went terribly wrong.\n\n{PAWN_nameDef}'s arm split open as a violent growth emerged from {PAWN_possessive} body. {PAWN_possessive} arm has been replaced by a fleshy tentacle! -->
-  <LetterUnnaturalHealingTentacle>Doch dann ging etwas schrecklich schief.\n\n{replace: {PAWN_nameDef}s; "s(/Name)s"-"s(/Name)'"; "ß(/Name)s"-"ß(/Name)'"; "z(/Name)s"-"z(/Name)'"; "x(/Name)s"-"x(/Name)'"; "ce(/Name)s"-"ce(/Name)'"} Arm platzte auf, als eine heftige Wucherung aus {PAWN_possessive}em Körper wuchs. {PAWN_possessive} Arm wurde durch einen fleischigen Tentakel ersetzt!</LetterUnnaturalHealingTentacle>
+  <LetterUnnaturalHealingTentacle>Doch dann ging etwas schrecklich schief.\n\n{PAWN_nameDef}'s Arm platzte auf, als eine heftige Wucherung aus {PAWN_possessive}em Körper wuchs. {PAWN_possessive} Arm wurde durch einen fleischigen Tentakel ersetzt!</LetterUnnaturalHealingTentacle>
   
   <!-- Transmutation ability -->
   <!-- EN: {PAWN_nameDef} has transmuted {ORIGINAL} into {TRANSMUTED}. -->
@@ -494,7 +494,7 @@
   <!-- EN: Flesh tentacle attack -->
   <LetterLabelFleshTentacleAttack>Fleischtentakel greift an</LetterLabelFleshTentacleAttack>
   <!-- EN: {PAWN_nameDef}'s operation was successful. However, the twisting mass of flesh that was {PAWN_possessive} tentacle has begun to attack! -->
-  <LetterFleshTentacleAttack>{replace: {PAWN_nameDef}s; "s(/Name)s"-"s(/Name)'"; "ß(/Name)s"-"ß(/Name)'"; "z(/Name)s"-"z(/Name)'"; "x(/Name)s"-"x(/Name)'"; "ce(/Name)s"-"ce(/Name)'"} Operation war erfolgreich. Allerdings ist die entstellte Fleischmasse, die {PAWN_possessive} Tentakel war, aggressiv geworden und greift an!</LetterFleshTentacleAttack>
+  <LetterFleshTentacleAttack>{PAWN_nameDef}'s Operation war erfolgreich. Allerdings ist die entstellte Fleischmasse, die {PAWN_possessive} Tentakel war, aggressiv geworden und greift an!</LetterFleshTentacleAttack>
   <!-- EN: Biosignature -->
   <Biosignature>Biosignatur</Biosignature>
   <!-- EN: Bliss lobotomy -->
@@ -543,7 +543,7 @@
   <!-- EN: The awoken corpse is attacking {PAWN_nameDef}! -->
   <MessageAwokenAttacking>Der erwachte Leichnam greift {PAWN_nameDef} an!</MessageAwokenAttacking>
   <!-- EN: The awoken corpse has destroyed {PAWN_nameDef}'s brain. -->
-  <MessageAwokenKilledVictim>Der erwachte Leichnam hat {replace: {PAWN_nameDef}s; "s(/Name)s"-"s(/Name)'"; "ß(/Name)s"-"ß(/Name)'"; "z(/Name)s"-"z(/Name)'"; "x(/Name)s"-"x(/Name)'"; "ce(/Name)s"-"ce(/Name)'"} Gehirn zerstört.</MessageAwokenKilledVictim>
+  <MessageAwokenKilledVictim>Der erwachte Leichnam hat {PAWN_nameDef}'s Gehirn zerstört.</MessageAwokenKilledVictim>
   <!-- EN: The awoken corpse has disappeared. -->
   <MessageAwokenDisappeared>Der erwachte Leichnam ist verschwunden.</MessageAwokenDisappeared>
 
@@ -553,7 +553,7 @@
   <!-- EN: Unnatural corpse study progress -->
   <UnnaturalCorpseStudyLetter>Leichnamstudiumfortschritt</UnnaturalCorpseStudyLetter>
   <!-- EN: Your investigation of the unnatural corpse has revealed more about the body. An archotech shard at its core psychically links it with {VICTIM_nameDef}. It will rebuild itself if destroyed, and teleport any distance to be near {VICTIM_nameDef}. \n\n{RESEARCHER_nameDef} thinks that there may be a way to permanently destroy the corpse but will need to study it further.\n\nStudy the corpse more to learn how to destroy it. -->
-  <UnnaturalCorpseStudyLetterDesc>Deine Untersuchung des unnatürlichen Leichnams hat neue Erkenntnisse über den Körper gebracht. Ein Archotechsplitter in seinem Inneren verlinkt ihn mental mit {VICTIM_nameDef}. Er kann sich selbst wiederherstellen, wenn er zerstört wird, und sich überall hin teleportieren, um in {replace: {VICTIM_nameDef}s; "s(/Name)s"-"s(/Name)'"; "ß(/Name)s"-"ß(/Name)'"; "z(/Name)s"-"z(/Name)'"; "x(/Name)s"-"x(/Name)'"; "ce(/Name)s"-"ce(/Name)'"} Nähe zu sein. \n\n{RESEARCHER_nameDef} glaubt, dass es eine Möglichkeit gibt, den Leichnam endgültig zu zerstören, aber {RESEARCHER_pronoun} muss ihn weiter studieren.\n\nStudiere weiter den Leichnam, um zu erfahren, wie du ihn zerstören kannst.</UnnaturalCorpseStudyLetterDesc>
+  <UnnaturalCorpseStudyLetterDesc>Deine Untersuchung des unnatürlichen Leichnams hat neue Erkenntnisse über den Körper gebracht. Ein Archotechsplitter in seinem Inneren verlinkt ihn mental mit {VICTIM_nameDef}. Er kann sich selbst wiederherstellen, wenn er zerstört wird, und sich überall hin teleportieren, um in {VICTIM_nameDef}'s Nähe zu sein. \n\n{RESEARCHER_nameDef} glaubt, dass es eine Möglichkeit gibt, den Leichnam endgültig zu zerstören, aber {RESEARCHER_pronoun} muss ihn weiter studieren.\n\nStudiere weiter den Leichnam, um zu erfahren, wie du ihn zerstören kannst.</UnnaturalCorpseStudyLetterDesc>
 
   <!-- EN: Unnatural corpse study complete -->
   <UnnaturalCorpseStudyCompletedLetter>Leichnamstudium abgeschlossen</UnnaturalCorpseStudyCompletedLetter>
@@ -601,11 +601,11 @@
 
   <!-- Golden Cube -->
   <!-- EN: {PAWN_labelShort}'s obsession with the golden cube has intensified. -->
-  <MessageGoldenCubeSeverityIncreased>{replace: {PAWN_labelShort}s; "s(/Name)s"-"s(/Name)'"; "ß(/Name)s"-"ß(/Name)'"; "z(/Name)s"-"z(/Name)'"; "x(/Name)s"-"x(/Name)'"; "ce(/Name)s"-"ce(/Name)'"} Besessenheit vom Goldwürfel hat sich verstärkt.</MessageGoldenCubeSeverityIncreased>
+  <MessageGoldenCubeSeverityIncreased>{PAWN_labelShort}'s Besessenheit vom Goldwürfel hat sich verstärkt.</MessageGoldenCubeSeverityIncreased>
   <!-- EN: {PAWN_labelShort} is experiencing cube withdrawal. -->
   <MessageGoldenCubeWithdrawal>{PAWN_labelShort} leidet unter Würfelentzug.</MessageGoldenCubeWithdrawal>
   <!-- EN: {PAWN_labelShort}'s cube withdrawal has worsened. -->
-  <MessageGoldenCubeWithdrawalIncreased>{replace: {PAWN_labelShort}s; "s(/Name)s"-"s(/Name)'"; "ß(/Name)s"-"ß(/Name)'"; "z(/Name)s"-"z(/Name)'"; "x(/Name)s"-"x(/Name)'"; "ce(/Name)s"-"ce(/Name)'"} Würfelentzug hat sich verschlimmert.</MessageGoldenCubeWithdrawalIncreased>
+  <MessageGoldenCubeWithdrawalIncreased>{PAWN_labelShort}'s Würfelentzug hat sich verschlimmert.</MessageGoldenCubeWithdrawalIncreased>
   <!-- EN: {PAWN_labelShort} has become intrigued by the golden cube. -->
   <MessageGoldenCubeInterest>{PAWN_labelShort} wurde vom Goldwürfel in den Bann gezogen.</MessageGoldenCubeInterest>
   <!-- EN: {PAWN_labelShort} is enraged that {PAWN_possessive} cube sculpture was removed. {PAWN_pronoun} might become violent. -->
@@ -617,7 +617,7 @@
   <!-- EN: Cube coma: {PAWN_labelShort} -->
   <LetterLabelGoldenCubeComa>Würfelkoma: {PAWN_labelShort}</LetterLabelGoldenCubeComa>
   <!-- EN: {PAWN_labelShort}'s cube withdrawal has sent {PAWN_objective} into a coma. {PAWN_pronoun} will remain in a coma until the golden cube's psychic link has completely dissipated. -->
-  <LetterGoldenCubeComa>{replace: {PAWN_labelShort}s; "s(/Name)s"-"s(/Name)'"; "ß(/Name)s"-"ß(/Name)'"; "z(/Name)s"-"z(/Name)'"; "x(/Name)s"-"x(/Name)'"; "ce(/Name)s"-"ce(/Name)'"} Würfelentzug hat {PAWN_objective} in ein Koma versetzt. {PAWN_pronoun} wird so lange im Koma bleiben, bis die mentale Bindung zum Goldwürfel vollständig erloschen ist.</LetterGoldenCubeComa>
+  <LetterGoldenCubeComa>{PAWN_labelShort}'s Würfelentzug hat {PAWN_objective} in ein Koma versetzt. {PAWN_pronoun} wird so lange im Koma bleiben, bis die mentale Bindung zum Goldwürfel vollständig erloschen ist.</LetterGoldenCubeComa>
 
   <!-- EN: Deactivating the golden cube will cause any cube-interested people to enter a violent berserk rage. Any cube-interested people in caravans will be permanently lost. -->
   <CubeDeactivationConfirmation>Die Deaktivierung des Goldwürfels hat zur Folge, dass alle Personen, die unter dem Bann des Würfels stehen, vorübergehend in einen Berserkerrausch verfallen. Befinden sie sich in einer Karawane, sind sie für immer verloren.</CubeDeactivationConfirmation>
@@ -697,7 +697,7 @@
   <!-- EN: No available pawns. -->
   <MonolithActivateDisabledPawns>Keine Spielfiguren verfügbar.</MonolithActivateDisabledPawns>
   <!-- EN: The monolith's dark metallic surface is warm to the touch, and {PAWN_nameDef} thinks {PAWN_pronoun} can hear a faint hum emanating from inside. The lines on its dusty surface seem to squirm in unsettling patterns.\n\n{PAWN_nameDef} focuses on the shapes, trying to uncover their meaning.\n\nThe hum strengthens. The shapes begin to flow in {PAWN_nameDef}'s vision, but the surface isn't changing. Power begins to uncoil in the empty space all around. A black shape is forming in {PAWN_possessive} mind.\n\nThe Anomaly is stirring... -->
-  <VoidMonolithInvestigatedText>Die dunkle, metallische Oberfläche des Monolithen fühlt sich warm an, und {PAWN_nameDef} meint, ein schwaches Brummen aus dem Inneren zu hören. Die Linien auf seiner staubigen Oberfläche scheinen sich in unheimlichen Mustern zu winden.\n\n{PAWN_nameDef} konzentriert sich auf die Formen und versucht, ihre Bedeutung zu ergründen.\n\nDas Brummen wird lauter. Die Formen beginnen vor {replace: {PAWN_nameDef}s; "s(/Name)s"-"s(/Name)'"; "ß(/Name)s"-"ß(/Name)'"; "z(/Name)s"-"z(/Name)'"; "x(/Name)s"-"x(/Name)'"; "ce(/Name)s"-"ce(/Name)'"} Augen zu verschwimmen, aber die Oberfläche verändert sich nicht. Um den Monolithen herum beginnt sich eine Energie zu entfalten. Eine schwarze Gestalt formt sich in {PAWN_possessive}em Geist.\n\nDie Anomalie rührt sich...</VoidMonolithInvestigatedText>
+  <VoidMonolithInvestigatedText>Die dunkle, metallische Oberfläche des Monolithen fühlt sich warm an, und {PAWN_nameDef} meint, ein schwaches Brummen aus dem Inneren zu hören. Die Linien auf seiner staubigen Oberfläche scheinen sich in unheimlichen Mustern zu winden.\n\n{PAWN_nameDef} konzentriert sich auf die Formen und versucht, ihre Bedeutung zu ergründen.\n\nDas Brummen wird lauter. Die Formen beginnen vor {PAWN_nameDef}'s Augen zu verschwimmen, aber die Oberfläche verändert sich nicht. Um den Monolithen herum beginnt sich eine Energie zu entfalten. Eine schwarze Gestalt formt sich in {PAWN_possessive}em Geist.\n\nDie Anomalie rührt sich...</VoidMonolithInvestigatedText>
   <!-- EN: Keep focusing on the Anomaly -->
   <VoidMonolithInvestigate>Weiter auf die Anomalie konzentrieren</VoidMonolithInvestigate>
   <!-- EN: Walk away -->
@@ -785,7 +785,7 @@
   <!-- EN: Activate void structures to complete the monolith awakening. -->
   <StructuresActivatedAlertDescription>Aktiviere Strukturen der Leere, um die Erweckung des Monolithen abzuschließen.</StructuresActivatedAlertDescription>
   <!-- EN: {PAWN_nameDef}'s connection to the void monolith has been broken. It must be activated again. -->
-  <GleamingMonolithInterrupted>{replace: {PAWN_nameDef}s; "s(/Name)s"-"s(/Name)'"; "ß(/Name)s"-"ß(/Name)'"; "z(/Name)s"-"z(/Name)'"; "x(/Name)s"-"x(/Name)'"; "ce(/Name)s"-"ce(/Name)'"} Verbindung zum Monolithen der Leere wurde unterbrochen. Der Monolith muss erneut aktiviert werden.</GleamingMonolithInterrupted>
+  <GleamingMonolithInterrupted>{PAWN_nameDef}'s Verbindung zum Monolithen der Leere wurde unterbrochen. Der Monolith muss erneut aktiviert werden.</GleamingMonolithInterrupted>
 
   <!-- HediffComp_GiveLovinMTBFactor -->
   <!-- EN: Increases the chance of lovin` -->
