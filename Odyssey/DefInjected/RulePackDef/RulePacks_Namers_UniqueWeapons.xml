@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN:
+    <li>r_weapon_name(p=2)->[weapon_adjective] [weapon_noun]</li>
+    <li>r_weapon_name(p=0.5)->The [weapon_type] of [badass_concept]</li>
+    <li>r_weapon_name(p=0.5)->The [weapon_adjective] [weapon_type]</li>
+    <li>r_weapon_name(p=0.5)->[badass_concept]'s [weapon_type]</li>
+    <li>r_weapon_name(p=0.3)->[ANYPAWN_nameIndef]'s [weapon_noun]</li>
+    <li>r_weapon_name(p=0.3)->[ANYPAWN_nameIndef]'s [weapon_adjective] [weapon_noun]</li>
+    <li>r_weapon_name(p=0.3)->The [badass_concept] of [ANYPAWN_nameIndef]</li>
+    <li>weapon_noun(p=2)->[weapon_type]</li>
+    <li>weapon_noun->[badass_noun]</li>
+    <li>weapon_noun->[badass_concept]</li>
+    <li>weapon_adjective(p=2)->[trait_adjective]</li>
+    <li>weapon_adjective->[badass_adjective]</li>
+    <li>badass_adjective->grim</li>
+    <li>badass_adjective->eternal</li>
+    <li>badass_adjective->night</li>
+    <li>badass_adjective->grave</li>
+    <li>badass_adjective->exceptional</li>
+    <li>badass_adjective->deadly</li>
+    <li>badass_adjective->infamous</li>
+    <li>badass_adjective->custom</li>
+    <li>badass_adjective->deadly</li>
+    <li>badass_adjective->thunderous</li>
+    <li>badass_adjective->cursed</li>
+    <li>badass_adjective->great</li>
+    <li>badass_noun->reaper</li>
+    <li>badass_noun->end</li>
+    <li>badass_noun->howl</li>
+    <li>badass_noun->tempest</li>
+    <li>badass_noun->phantom</li>
+    <li>badass_noun->widow</li>
+    <li>badass_noun->titan</li>
+    <li>badass_noun->juggernaut</li>
+    <li>badass_noun->serpent</li>
+    <li>badass_noun->anvil</li>
+    <li>badass_noun->killer</li>
+    <li>badass_noun->lover</li>
+    <li>badass_noun->beast</li>
+    <li>badass_noun->fang</li>
+    <li>badass_noun->arm</li>
+    <li>badass_noun->horn</li>
+    <li>badass_concept->justice</li>
+    <li>badass_concept->revenge</li>
+    <li>badass_concept->vengeance</li>
+    <li>badass_concept->pain</li>
+    <li>badass_concept->agony</li>
+    <li>badass_concept->torment</li>
+    <li>badass_concept->legend</li>
+    <li>badass_concept->delight</li>
+    <li>badass_concept->regret</li>
+    <li>badass_concept->pride</li>
+    <li>badass_concept->conceit</li>
+    <li>badass_concept->honor</li>
+    <li>badass_concept->fury</li>
+    <li>badass_concept->reckoning</li>
+    <li>badass_concept->serenity</li>
+    <li>badass_concept->love</li>
+    <li>badass_concept->laughter</li>
+  -->
+  <NamerUniqueWeapon.rulePack.rulesStrings>
+    <li>r_weapon_name(p=2)->[weapon_adjective_weapon_noun]</li>
+    <li>r_weapon_name(p=0.5)->[the_weapon_type_of_badass_concept]</li>
+    <li>r_weapon_name(p=0.5)->[the_weapon_adjective_weapon_noun]</li>
+    <li>r_weapon_name(p=0.5)->[badass_concept_s_weapon_type]</li>
+    <li>r_weapon_name(p=0.3)->[ANYPAWN_nameIndef]'s [weapon_noun_ungendered]</li>
+    <li>r_weapon_name(p=0.3)->[ANYPAWN_nameIndef]'s [weapon_adjective_weapon_noun]</li>
+    <li>r_weapon_name(p=0.3)->[the_badass_concept] von [ANYPAWN_nameIndef]</li>
+    <li>weapon_adjective_weapon_noun->{replace: [weapon_noun]; "|M|"-"[weapon_adjective]er "; "|F|"-"[weapon_adjective]e "; "|N|"-"[weapon_adjective]es "}</li>
+    <li>the_weapon_type_of_badass_concept->{replace: [weapon_noun]; "|M|"-"Der [weapon_adjective]e "; "|F|"-"Die [weapon_adjective]e "; "|N|"-"Das [weapon_adjective]e "}</li>
+    <li>the_weapon_adjective_weapon_noun->{replace: [weapon_type]; "|M|"-"Der "; "|F|"-"Die "; "|N|"-"Das "} [of_the_badass_concept]</li>
+    <li>badass_concept_s_weapon_type->{replace: [weapon_type]; "|M|"-""; "|F|"-""; "|N|"-""} [of_the_badass_concept]</li>
+    <li>the_badass_concept->{replace: [badass_concept]; "|M|"-"Der "; "|F|"-"Die "; "|N|"-"Das "}</li>
+    <li>of_the_badass_concept->{replace: [badass_concept_gender_gen]; "|M|"-"des "; "|F|"-"der "; "|N|"-"des "}</li>
+    <li>weapon_noun_ungendered->{replace: [weapon_noun]; "|M|"-""; "|F|"-""; "|N|"-""}</li>
+    <li>weapon_noun(p=2)->[weapon_type]</li>
+    <li>weapon_noun->[badass_noun_gender]</li>
+    <li>weapon_noun->[badass_concept_gender]</li>
+    <li>weapon_adjective(p=2)->[trait_adjective]</li>
+    <li>weapon_adjective->[badass_adjective]</li>
+    <li>badass_adjective->grimmig</li>
+    <li>badass_adjective->ewig</li>
+    <li>badass_adjective->nächtlich</li>
+    <li>badass_adjective->ernst</li>
+    <li>badass_adjective->einzigartig</li>
+    <li>badass_adjective->tödlich</li>
+    <li>badass_adjective->infam</li>
+    <li>badass_adjective->bösartig</li>
+    <li>badass_adjective->modifiziert</li>
+    <li>badass_adjective->todbringend</li>
+    <li>badass_adjective->mörderisch</li>
+    <li>badass_adjective->donnernd</li>
+    <li>badass_adjective->tosend</li>
+    <li>badass_adjective->verflucht</li>
+    <li>badass_adjective->groß</li>
+    <li>badass_noun->Mäher</li>
+    <li>badass_noun->Ende</li>
+    <li>badass_noun->Heuler</li>
+    <li>badass_noun->Sturm</li>
+    <li>badass_noun->Orkan</li>
+    <li>badass_noun->Phantom</li>
+    <li>badass_noun->Witwe</li>
+    <li>badass_noun->Witwenmacher</li>
+    <li>badass_noun->Titan</li>
+    <li>badass_noun->Moloch</li>
+    <li>badass_noun->Viper</li>
+    <li>badass_noun->Amboss</li>
+    <li>badass_noun->Killer</li>
+    <li>badass_noun->Töter</li>
+    <li>badass_noun->Herzensbrecher</li>
+    <li>badass_noun->Bestie</li>
+    <li>badass_noun->Biest</li>
+    <li>badass_noun->Reißer</li>
+    <li>badass_noun->Horn</li>
+    <li>badass_noun_gender->|M|Mäher</li>
+    <li>badass_noun_gender->|N|Ende</li>
+    <li>badass_noun_gender->|M|Heuler</li>
+    <li>badass_noun_gender->|M|Sturm</li>
+    <li>badass_noun_gender->|M|Orkan</li>
+    <li>badass_noun_gender->|N|Phantom</li>
+    <li>badass_noun_gender->|F|Witwe</li>
+    <li>badass_noun_gender->|M|Witwenmacher</li>
+    <li>badass_noun_gender->|M|Titan</li>
+    <li>badass_noun_gender->|M|Moloch</li>
+    <li>badass_noun_gender->|F|Viper</li>
+    <li>badass_noun_gender->|M|Amboss</li>
+    <li>badass_noun_gender->|M|Killer</li>
+    <li>badass_noun_gender->|M|Töter</li>
+    <li>badass_noun_gender->|M|Herzensbrecher</li>
+    <li>badass_noun_gender->|F|Bestie</li>
+    <li>badass_noun_gender->|N|Biest</li>
+    <li>badass_noun_gender->|M|Reißer</li>
+    <li>badass_noun_gender->|N|Horn</li>
+    <li>badass_concept->Urteil</li>
+    <li>badass_concept->Richter</li>
+    <li>badass_concept->Rache</li>
+    <li>badass_concept->Rächer</li>
+    <li>badass_concept->Vergelter</li>
+    <li>badass_concept->Zorn</li>
+    <li>badass_concept->Schmerz</li>
+    <li>badass_concept->Agonie</li>
+    <li>badass_concept->Tortur</li>
+    <li>badass_concept->Folter</li>
+    <li>badass_concept->Legende</li>
+    <li>badass_concept->Mythos</li>
+    <li>badass_concept->Wonne</li>
+    <li>badass_concept->Reue</li>
+    <li>badass_concept->Stolz</li>
+    <li>badass_concept->Hochmut</li>
+    <li>badass_concept->Ehre</li>
+    <li>badass_concept->Furor</li>
+    <li>badass_concept->Furie</li>
+    <li>badass_concept->Abrechnung</li>
+    <li>badass_concept->Harmonie</li>
+    <li>badass_concept->Lachgewitter</li>
+    <li>badass_concept_gender->|N|Urteil</li>
+    <li>badass_concept_gender->|M|Richter</li>
+    <li>badass_concept_gender->|F|Rache</li>
+    <li>badass_concept_gender->|M|Rächer</li>
+    <li>badass_concept_gender->|M|Vergelter</li>
+    <li>badass_concept_gender->|M|Zorn</li>
+    <li>badass_concept_gender->|M|Schmerz</li>
+    <li>badass_concept_gender->|F|Agonie</li>
+    <li>badass_concept_gender->|F|Tortur</li>
+    <li>badass_concept_gender->|F|Folter</li>
+    <li>badass_concept_gender->|F|Legende</li>
+    <li>badass_concept_gender->|M|Mythos</li>
+    <li>badass_concept_gender->|F|Wonne</li>
+    <li>badass_concept_gender->|F|Reue</li>
+    <li>badass_concept_gender->|M|Stolz</li>
+    <li>badass_concept_gender->|M|Hochmut</li>
+    <li>badass_concept_gender->|F|Ehre</li>
+    <li>badass_concept_gender->|M|Furor</li>
+    <li>badass_concept_gender->|F|Furie</li>
+    <li>badass_concept_gender->|F|Abrechnung</li>
+    <li>badass_concept_gender->|F|Harmonie</li>
+    <li>badass_concept_gender->|N|Lachgewitter</li>
+    <li>badass_concept_gender_gen->|N|Urteils</li>
+    <li>badass_concept_gender_gen->|F|Rache</li>
+    <li>badass_concept_gender_gen->|F|Vergeltung</li>
+    <li>badass_concept_gender_gen->|M|Zorns</li>
+    <li>badass_concept_gender_gen->|F|Schmerzen</li>
+    <li>badass_concept_gender_gen->|F|Agonie</li>
+    <li>badass_concept_gender_gen->|F|Tortur</li>
+    <li>badass_concept_gender_gen->|F|Folter</li>
+    <li>badass_concept_gender_gen->|F|Wonne</li>
+    <li>badass_concept_gender_gen->|F|Reue</li>
+    <li>badass_concept_gender_gen->|M|Stolzes</li>
+    <li>badass_concept_gender_gen->|M|Hochmuts</li>
+    <li>badass_concept_gender_gen->|F|Ehre</li>
+    <li>badass_concept_gender_gen->|F|Raserei</li>
+    <li>badass_concept_gender_gen->|F|Abrechnung</li>
+    <li>badass_concept_gender_gen->|F|Harmonie</li>
+    <li>badass_concept_gender_gen->|N|Lachens</li>
+  </NamerUniqueWeapon.rulePack.rulesStrings>
+  
+</LanguageData>

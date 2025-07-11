@@ -42,6 +42,7 @@ Manuelle Methode:
     <Pfad-zu-RimWorld>\Data\Biotech\Languages\
     <Pfad-zu-RimWorld>\Data\Core\Languages\
     <Pfad-zu-RimWorld>\Data\Ideology\Languages\
+    <Pfad-zu-RimWorld>\Data\Odyssey\Languages\
     <Pfad-zu-RimWorld>\Data\Royalty\Languages\
     ```
     &lt;Pfad-zu-RimWorld&gt; ist standardmäßig ```C:\Programme (x86)\Steam\steamapps\common\RimWorld```

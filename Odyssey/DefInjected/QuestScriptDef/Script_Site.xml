@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN:
+    <li>attackReason->claim the surveying scanner was sent to spy on their secret rituals</li>
+    <li>attackReason->say the surveying site infringes on their territory</li>
+    <li>attackReason->say they were sent to destroy the scanner as payback</li>
+    <li>attackReason->claim the surveying scanner is too close to one of their hidden stashes</li>
+    <li>attackReason->want to scrap the surveying equipment for parts</li>
+    <li>attackReason->claim that the surveying scanner is secretly a weapon and its activation has caused psychic disturbances</li>
+  -->
+  <SurveySite.questContentRules.rulesStrings>
+    <li>attackReason->behaupten, der Vermessungsscanner sei aufgestellt worden, um ihre geheimen Rituale auszuspionieren</li>
+    <li>attackReason->behaupten, dass die Vermessungsstelle ihr Territorium verletzt</li>
+    <li>attackReason->behaupten, sie seien losgeschickt worden, um den Scanner aus Rache zu zerstören</li>
+    <li>attackReason->behaupten, dass sich der Vermessungsscanner zu nahe an einem ihrer Verstecke befindet</li>
+    <li>attackReason->wollen die Vermessungsgeräte ausschlachten, um an nützliche Teile zu gelangen</li>
+    <li>attackReason->behaupten, der Vermessungsscanner sei insgeheim eine Waffe und seine Aktivierung wirke sich auf die Psyche aus</li>
+  </SurveySite.questContentRules.rulesStrings>
+  <!-- EN:
+    <li>questDescription(askerIsNull==true)->An anonymous AI has requested your help defending surveying equipment at a remote site.\n\nThe surveying operation will take ten to fifteen days and will require traveling to a remote destination.\n\nIn exchange for your services, the AI is offering a valuable gravtech device.</li>
+    <li>questDescription(asker_factionLeader==true)->[asker_faction_leaderTitle] [asker_nameFull] of [asker_faction_name] has heard rumors of your gravship. [asker_pronoun] wants to survey a distant region and asks that you protect [asker_possessive] surveying equipment.\n\nThe surveying operation will take ten to fifteen days and will require traveling to a remote destination.\n\nIn exchange for your services, [asker_nameDef] is offering a valuable gravtech device.</li>
+    <li>questDescription(asker_royalInCurrentFaction==true)->[asker_nameFull], a [asker_royalTitleInCurrentFaction] of [asker_faction_name], requests that you protect [asker_possessive] surveying operation. If you do so, [asker_pronoun] will reward you handsomely.\n\nThe surveying operation will take ten to fifteen days and will require traveling to a remote destination.\n\nIn exchange for your services, [asker_nameDef] is offering a valuable gravtech device.</li>
+  -->
+  <SurveySite.questDescriptionRules.rulesStrings>
+    <li>questDescription(askerIsNull==true)->Eine anonyme KI hat dich gebeten, ihr bei der Verteidigung von Vermessungsgeräten an einem abgelegenen Ort zu helfen.\n\nDie Vermessungsarbeiten werden zehn bis fünfzehn Tage dauern und erfordern eine Reise zu einem abgelegenen Ort.\n\nAls Gegenleistung bietet die KI ein wertvolles Gravtech-Gerät an.</li>
+    <li>questDescription(asker_factionLeader==true)->[asker_nameFull], [asker_faction_leaderTitle] der Fraktion [asker_faction_name], hat Gerüchte über dein Gravschiff gehört. [asker_pronoun] möchte ein abgelegenes Gebiet vermessen und bittet dich, [asker_possessive]e Vermessungsgeräte zu schützen.\n\nDie Vermessungsarbeiten werden zehn bis fünfzehn Tage dauern und erfordern eine Reise zu einem abgelegenen Ort.\n\nAls Gegenleistung bietet [asker_nameDef] ein wertvolles Gravtech-Gerät an.</li>
+    <li>questDescription(asker_royalInCurrentFaction==true)->[asker_nameFull], [asker_royalTitleInCurrentFaction] der Fraktion [asker_faction_name], bittet dich, [asker_possessive]e Vermessungsarbeiten zu schützen. Wenn du das tust, wird [asker_pronoun] dich reich belohnen.\n\nDie Vermessungsarbeiten werden zehn bis fünfzehn Tage dauern und erfordern eine Reise zu einem abgelegenen Ort.\n\nAls Gegenleistung bietet [asker_nameDef] ein wertvolles Gravtech-Gerät an.</li>
+  </SurveySite.questDescriptionRules.rulesStrings>
+  <!-- EN:
+    <li>questName->Surveying [site]</li>
+    <li>questName->[remote] Survey</li>
+    <li>questName(p=0.5)->Defending the Scanner</li>
+    <li>questName(p=0.5)->Remote Protection</li>
+    <li>site->Site</li>
+    <li>site->Station</li>
+    <li>site->Defense</li>
+    <li>site->Operation</li>
+    <li>remote->Remote</li>
+    <li>remote->Regional</li>
+    <li>remote->Distant</li>
+  -->
+  <SurveySite.questNameRules.rulesStrings>
+    <li>questName->Vermessungs[site]</li>
+    <li>questName->[remote]e Vermessung</li>
+    <li>questName(p=0.5)->Verteidigung des Scanners</li>
+    <li>questName(p=0.5)->Scanner verteidigen</li>
+    <li>questName(p=0.5)->Scanner beschützen</li>
+    <li>site->stelle</li>
+    <li>site->station</li>
+    <li>site->schutz</li>
+    <li>site->arbeiten</li>
+    <li>remote->weit entfernt</li>
+    <li>remote->regional</li>
+    <li>remote->abgelegen</li>
+  </SurveySite.questNameRules.rulesStrings>
+  <!-- EN: Quest expired: [resolvedQuestName] -->
+  <SurveySite.LetterLabelQuestExpired.slateRef>Quest abgelaufen: [resolvedQuestName]</SurveySite.LetterLabelQuestExpired.slateRef>
+  <!-- EN: The scanner has gone offline. The quest [resolvedQuestName] has expired. -->
+  <SurveySite.LetterTextQuestExpired.slateRef>Der Scanner ist offline gegangen. Die Quest '[resolvedQuestName]' ist abgelaufen.</SurveySite.LetterTextQuestExpired.slateRef>
+  <!-- EN: {BASETEXT}\n\nThe [enemyFaction_pawnsPlural] [attackReason]. -->
+  <SurveySite.root.nodes.Root_SurveyScanner.raidLetterText>{BASETEXT}\n\nDie {lookup: [enemyFaction_pawnsPlural]; decline_other; 4} [attackReason].</SurveySite.root.nodes.Root_SurveyScanner.raidLetterText>
+  <!-- EN: Quest completed -->
+  <SurveySite.root.nodes.AllSignals.node.node.nodes.Letter.label.slateRef>Quest abgeschlossen</SurveySite.root.nodes.AllSignals.node.node.nodes.Letter.label.slateRef>
+  <!-- EN: You have successfully completed the quest '[resolvedQuestName]'! -->
+  <SurveySite.root.nodes.AllSignals.node.node.nodes.Letter.text.slateRef>Du hast die Quest '[resolvedQuestName]' erfolgreich abgeschlossen!</SurveySite.root.nodes.AllSignals.node.node.nodes.Letter.text.slateRef>
+  
+</LanguageData>

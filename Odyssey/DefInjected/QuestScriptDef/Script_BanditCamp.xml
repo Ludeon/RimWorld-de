@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN:
+    <li>questDescription->[discoveryMethod] the location of a camp controlled by [siteFaction_name]. The camp contains hostile [siteFaction_pawnsPlural], but you don't know what defenses they have.</li>
+  -->
+  <OpportunitySite_BanditCamp_Giver.questDescriptionRules.rulesStrings>
+    <li>questDescription->{replace: [discoveryMethod]; "|thing_nom|"-"[thing_nom]"; "|thing_gen|"-"[thing_gen]"; "|thing_dat|"-"[thing_dat]"; "|thing_acc|"-"[thing_acc]"; "|thing_nom_embedded|"-"[thing_nom_embedded]"; "|thing_gen_embedded|"-"[thing_gen_embedded]"; "|thing_dat_embedded|"-"[thing_dat_embedded]"; "|thing_acc_embedded|"-"[thing_acc_embedded]"}. Im Lager befinden sich feindliche [siteFaction_pawnsPlural], aber ihre Verteidigung ist unbekannt.</li>
+    <li>thing_nom->der Standort eines Lagers, das von der Fraktion [siteFaction_name] kontrolliert wird</li>
+    <li>thing_gen->des Standortes eines Lagers, das von der Fraktion [siteFaction_name] kontrolliert wird</li>
+    <li>thing_dat->dem Standort eines Lagers, das von der Fraktion [siteFaction_name] kontrolliert wird</li>
+    <li>thing_acc->den Standort eines Lagers, das von der Fraktion [siteFaction_name] kontrolliert wird</li>
+    <li>thing_nom_embedded->der Standort eines Lagers, das von der Fraktion [siteFaction_name] kontrolliert wird,</li>
+    <li>thing_gen_embedded->des Standortes eines Lagers, das von der Fraktion [siteFaction_name] kontrolliert wird,</li>
+    <li>thing_dat_embedded->dem Standort eines Lagers, das von der Fraktion [siteFaction_name] kontrolliert wird,</li>
+    <li>thing_acc_embedded->den Standort eines Lagers, das von der Fraktion [siteFaction_name] kontrolliert wird,</li>
+  </OpportunitySite_BanditCamp_Giver.questDescriptionRules.rulesStrings>
+  <!-- EN:
+    <li>questName->The [bandit] [camp]</li>
+    <li>questName->[bandit] [camp]</li>
+    <li>questName->[asker_nameDef] and the [camp]</li>
+    <li>camp->Camp</li>
+    <li>camp->Outpost</li>
+    <li>camp->Lair</li>
+    <li>camp->Encampment</li>
+    <li>bandit->Bandit</li>
+    <li>bandit->Raider</li>
+    <li>bandit->Outlaw</li>
+    <li>bandit->Desperado</li>
+    <li>bandit->Fugitive</li>
+    <li>bandit->Marauder</li>
+    <li>bandit->Robber</li>
+    <li>bandit->Brigand</li>
+  -->
+  <OpportunitySite_BanditCamp_Giver.questNameRules.rulesStrings>
+    <li>questName->Der [bandit][camp_mas_low]</li>
+    <li>questName->Das [bandit][camp_neu_low]</li>
+    <li>questName->[bandit][camp_mas_low]</li>
+    <li>questName->[bandit][camp_neu_low]</li>
+    <li>questName->[asker_nameDef] und der [camp_mas]</li>
+    <li>questName->[asker_nameDef] und das [camp_neu]</li>
+    <li>camp_neu->Lager</li>
+    <li>camp_mas->Außenposten</li>
+    <li>camp_mas->Vorposten</li>
+    <li>camp_neu->Versteck</li>
+    <li>camp_neu_low->lager</li>
+    <li>camp_mas_low->außenposten</li>
+    <li>camp_mas_low->vorposten</li>
+    <li>camp_mas_low->posten</li>
+    <li>camp_neu_low->versteck</li>
+    <li>bandit->Banditen</li>
+    <li>bandit->Plünderer</li>
+    <li>bandit->Raider</li>
+    <li>bandit->Gesetzlosen</li>
+    <li>bandit->Schurken</li>
+    <li>bandit->Flüchtlings</li>
+    <li>bandit->Marodeur</li>
+    <li>bandit->Räuber</li>
+    <li>bandit->Gauner</li>
+  </OpportunitySite_BanditCamp_Giver.questNameRules.rulesStrings>
+  <!-- EN:
+    <li>subject->bandit camps</li>
+    <li>subject->outlaws</li>
+    <li>subject->raider sightings</li>
+    <li>questMapFeature->small camp</li>
+    <li>questMapFeature->bandit outpost</li>
+    <li>questMapFeature->raider encampment</li>
+    <li>questMapText->dangerous folk</li>
+    <li>questMapText->camp loot</li>
+    <li>questMapText->trespassers get skinned</li>
+    <li>questMapText->traders beware - outlaws</li>
+  -->
+  <OpportunitySite_BanditCamp_Giver.questSubjectRules.rulesStrings>
+    <li>subject->Banditenlager</li>
+    <li>subject->Gesetzlose</li>
+    <li>subject->Raidersichtungen</li>
+    <li>subject_dat_indef->Banditenlagern</li>
+    <li>subject_dat_indef->Gesetzlosen</li>
+    <li>subject_dat_indef->Raidersichtungen</li>
+    <li>questMapFeature->kleines Lager</li>
+    <li>questMapFeature->Banditenaußenposten</li>
+    <li>questMapFeature->Raiderlager</li>
+    <li>questMapFeatureGenIndef->eines kleinen Lagers</li>
+    <li>questMapFeatureGenIndef->eines Banditenaußenpostens</li>
+    <li>questMapFeatureGenIndef->eines Raiderlagers</li>
+    <li>questMapFeatureDatIndef->einem kleinen Lager</li>
+    <li>questMapFeatureDatIndef->einem Banditenaußenposten</li>
+    <li>questMapFeatureDatIndef->einem Raiderlager</li>
+    <li>questMapText->gefährliche Leute</li>
+    <li>questMapText->Lagerbeute</li>
+    <li>questMapText->Fremde werden gehäutet</li>
+    <li>questMapText->Händler aufgepasst – Gesetzlose</li>
+  </OpportunitySite_BanditCamp_Giver.questSubjectRules.rulesStrings>
+  <!-- EN: Quest expired: [resolvedQuestName] -->
+  <OpportunitySite_BanditCamp_Giver.LetterLabelQuestExpired.slateRef>Quest abgelaufen: [resolvedQuestName]</OpportunitySite_BanditCamp_Giver.LetterLabelQuestExpired.slateRef>
+  <!-- EN: The bandit camp has packed up and moved on. The quest [resolvedQuestName] has expired. -->
+  <OpportunitySite_BanditCamp_Giver.LetterTextQuestExpired.slateRef>Die Banditen haben ihr Lager aufgelöst und sind weitergezogen. Die Quest '[resolvedQuestName]' ist abgelaufen.</OpportunitySite_BanditCamp_Giver.LetterTextQuestExpired.slateRef>
+  <!-- EN: Quest failed: [resolvedQuestName] -->
+  <OpportunitySite_BanditCamp_Giver.LetterLabelQuestFailed.slateRef>Quest gescheitert: [resolvedQuestName]</OpportunitySite_BanditCamp_Giver.LetterLabelQuestFailed.slateRef>
+  <!-- EN: After being discovered, the bandit camp has dispersed. The quest [resolvedQuestName] has ended. -->
+  <OpportunitySite_BanditCamp_Giver.LetterTextQuestFailed.slateRef>Das Banditenlager wurde aufgelöst, nachdem es entdeckt wurde. Die Quest '[resolvedQuestName]' wurde beendet.</OpportunitySite_BanditCamp_Giver.LetterTextQuestFailed.slateRef>
+  
+</LanguageData>

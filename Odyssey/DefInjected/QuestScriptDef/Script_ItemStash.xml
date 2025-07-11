@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN:
+    <li>questDescription->[discoveryMethod] the location of a collection of valuable items worth [itemStashContentsValue]. The collection consists of:\n\n[itemStashContents]\n\nIt seems that [allSitePartsDescriptionsExceptFirst]</li>
+  -->
+  <OpportunitySite_ItemStash_Giver.questDescriptionRules.rulesStrings>
+    <li>questDescription->{replace: [discoveryMethod]; "|thing_nom|"-"[thing_nom]"; "|thing_gen|"-"[thing_gen]"; "|thing_dat|"-"[thing_dat]"; "|thing_acc|"-"[thing_acc]"; "|thing_nom_embedded|"-"[thing_nom_embedded]"; "|thing_gen_embedded|"-"[thing_gen_embedded]"; "|thing_dat_embedded|"-"[thing_dat_embedded]"; "|thing_acc_embedded|"-"[thing_acc_embedded]"}. Die Sammlung besteht aus:\n\n[itemStashContents]\n\nEs scheint, dass dort [allSitePartsDescriptionsExceptFirst]</li>
+    <li>thing_nom->ein Lager mit Wertsachen im Gesamtwert von [itemStashContentsValue]</li>
+    <li>thing_gen->eines Lagers mit Wertsachen im Gesamtwert von [itemStashContentsValue]</li>
+    <li>thing_dat->einem Lager mit Wertsachen im Gesamtwert von [itemStashContentsValue]</li>
+    <li>thing_acc->ein Lager mit Wertsachen im Gesamtwert von [itemStashContentsValue]</li>
+    <li>thing_nom_embedded->ein Lager mit Wertsachen im Gesamtwert von [itemStashContentsValue]</li>
+    <li>thing_gen_embedded->eines Lagers mit Wertsachen im Gesamtwert von [itemStashContentsValue]</li>
+    <li>thing_dat_embedded->einem Lager mit Wertsachen im Gesamtwert von [itemStashContentsValue]</li>
+    <li>thing_acc_embedded->ein Lager mit Wertsachen im Gesamtwert von [itemStashContentsValue]</li>
+  </OpportunitySite_ItemStash_Giver.questDescriptionRules.rulesStrings>
+  <!-- EN:
+    <li>questName->[stash] of [treasure]</li>
+    <li>stash->Stash</li>
+    <li>stash->Cache</li>
+    <li>stash->Collection</li>
+    <li>stash->Shack</li>
+    <li>treasure->Treasure</li>
+    <li>treasure->Valuables</li>
+    <li>treasure->Fortune</li>
+    <li>treasure->Goodies</li>
+    <li>treasure->Supplies</li>
+  -->
+  <OpportunitySite_ItemStash_Giver.questNameRules.rulesStrings>
+    <li>questName(p=4)->[stash] mit [treasure]</li>
+    <li>questName->Warenversteck</li>
+    <li>stash->Versteck</li>
+    <li>stash->Lager</li>
+    <li>stash->Kammer</li>
+    <li>stash->Hütte</li>
+    <li>treasure->Schätzen</li>
+    <li>treasure->Reichtümern</li>
+    <li>treasure->Kostbarkeiten</li>
+    <li>treasure->Wertsachen</li>
+    <li>treasure->Vorräten</li>
+    <li>treasure->Waren</li>
+  </OpportunitySite_ItemStash_Giver.questNameRules.rulesStrings>
+  <!-- EN:
+    <li>subject->loot stashes</li>
+    <li>subject->secret treasures</li>
+    <li>subject->valuables</li>
+    <li>questMapFeature->drawing of a treasure chest</li>
+    <li>questMapFeature->supply shack</li>
+    <li>questMapText->secret item stash</li>
+    <li>questMapText->loot here</li>
+    <li>questMapText->hidden valuables</li>
+  -->
+  <OpportunitySite_ItemStash_Giver.questSubjectRules.rulesStrings>
+    <li>subject->Warenverstecke</li>
+    <li>subject->verborgene Schätze</li>
+    <li>subject->Wertsachen</li>
+    <li>subject_dat_indef->Warenverstecken</li>
+    <li>subject_dat_indef->verborgenen Schätzen</li>
+    <li>subject_dat_indef->Wertsachen</li>
+    <li>questMapFeature->Zeichnung einer Schatztruhe</li>
+    <li>questMapFeature->Vorratshütte</li>
+    <li>questMapFeatureGenIndef->einer Zeichnung einer Schatztruhe</li>
+    <li>questMapFeatureGenIndef->einer Vorratshütte</li>
+    <li>questMapFeatureDatIndef->einer Zeichnung einer Schatztruhe</li>
+    <li>questMapFeatureDatIndef->einer Vorratshütte</li>
+    <li>questMapText->geheimes Warenversteck</li>
+    <li>questMapText->Beute hier</li>
+    <li>questMapText->versteckte Wertsachen</li>
+  </OpportunitySite_ItemStash_Giver.questSubjectRules.rulesStrings>
+  <!-- EN: Quest expired: [resolvedQuestName] -->
+  <OpportunitySite_ItemStash_Giver.LetterLabelQuestExpired.slateRef>Quest abgelaufen: [resolvedQuestName]</OpportunitySite_ItemStash_Giver.LetterLabelQuestExpired.slateRef>
+  <!-- EN: Intercepted communications indicate the item stash has been claimed by others. The quest [resolvedQuestName] has expired. -->
+  <OpportunitySite_ItemStash_Giver.LetterTextQuestExpired.slateRef>Abgefangene Funksprüche deuten darauf hin, dass das Warenversteck von einer anderen Fraktion geplündert wurde. Die Quest '[resolvedQuestName]' ist abgelaufen.</OpportunitySite_ItemStash_Giver.LetterTextQuestExpired.slateRef>
+  
+</LanguageData>

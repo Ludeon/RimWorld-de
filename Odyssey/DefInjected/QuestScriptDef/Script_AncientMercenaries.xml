@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN:
+    <li>questDescription->[discoveryMethod] the location of an infamous company of mercenaries. These ancient soldiers are from a long-forgotten era in the planet's history. They have recently awoken from cryptosleep and are causing trouble in the area.\n\nThe company is led by [LEADER_nameDef], who possesses a unique [WEAPON_quality] weapon. The group contains:\n\n[mercenaryList]\n\nIf you're able to capture or kill the leader, you can take the unique weapon.\n\n[location]</li>
+    <li>location(atLandmark==true)->The soldiers are hiding out in an ancient structure at [landmarkName].</li>
+    <li>location(atLandmark==false)->The soldiers are hiding out in an ancient structure.</li>
+  -->
+  <OpportunitySite_AncientMercenaries.questDescriptionRules.rulesStrings>
+    <li>questDescription->{replace: [discoveryMethod]; "|thing_nom|"-"[thing_nom]"; "|thing_gen|"-"[thing_gen]"; "|thing_dat|"-"[thing_dat]"; "|thing_acc|"-"[thing_acc]"; "|thing_nom_embedded|"-"[thing_nom_embedded]"; "|thing_gen_embedded|"-"[thing_gen_embedded]"; "|thing_dat_embedded|"-"[thing_dat_embedded]"; "|thing_acc_embedded|"-"[thing_acc_embedded]"}. Diese antiken Soldaten stammen aus einer längst vergessenen Epoche der Geschichte des Planeten. Vor kurzem sind sie aus ihrem Kryptoschlaf erwacht und machen die Gegend unsicher.\n\nAngeführt wird die Truppe von [LEADER_nameDef], {LEADER_gender ? der : die} eine einzigartige Waffe von [WEAPON_quality]er Qualität besitzt. Die Truppe besteht aus:\n\n[mercenaryList]\n\nWenn du es schaffst, {LEADER_gender ? den Anführer : die Anführerin} einzufangen oder zu töten, kannst du die einzigartige Waffe an dich nehmen.\n\n[location]</li>
+    <li>location(atLandmark==true)->Die Soldaten verstecken sich in einer antiken Struktur nahe [landmarkName].</li>
+    <li>location(atLandmark==false)->Die Soldaten verstecken sich in einer antiken Struktur.</li>
+    <li>thing_nom->der Aufenthaltsort einer berüchtigten Söldnertruppe</li>
+    <li>thing_gen->des Aufenthaltsortes einer berüchtigten Söldnertruppe</li>
+    <li>thing_dat->dem Aufenthaltsort einer berüchtigten Söldnertruppe</li>
+    <li>thing_acc->den Aufenthaltsort einer berüchtigten Söldnertruppe</li>
+    <li>thing_nom_embedded->der Aufenthaltsort einer berüchtigten Söldnertruppe</li>
+    <li>thing_gen_embedded->des Aufenthaltsortes einer berüchtigten Söldnertruppe</li>
+    <li>thing_dat_embedded->dem Aufenthaltsort einer berüchtigten Söldnertruppe</li>
+    <li>thing_acc_embedded->den Aufenthaltsort einer berüchtigten Söldnertruppe</li>
+  </OpportunitySite_AncientMercenaries.questDescriptionRules.rulesStrings>
+  <!-- EN:
+    <li>questName->The [ancient] [mercenaries]</li>
+    <li>questName->[ancient] [mercenaries]</li>
+    <li>ancient->Ancient</li>
+    <li>ancient->Awoken</li>
+    <li>ancient->Cryptosleep</li>
+    <li>mercenaries->Mercenaries</li>
+    <li>mercenaries->Soldiers</li>
+    <li>mercenaries->Warriors</li>
+    <li>mercenaries->Fighters</li>
+  -->
+  <OpportunitySite_AncientMercenaries.questNameRules.rulesStrings>
+    <li>questName(p=3)->Die [ancient_adj]en [mercenaries]</li>
+    <li>questName(p=3)->[ancient_adj]e [mercenaries]</li>
+    <li>questName->Die [ancient_pre][mercenaries_low]</li>
+    <li>questName->[ancient_pre][mercenaries_low]</li>
+    <li>ancient->uralt</li>
+    <li>ancient->antik</li>
+    <li>ancient->erwacht</li>
+    <li>ancient->Kryptoschlaf</li>
+    <li>ancient_adj->uralt</li>
+    <li>ancient_adj->antik</li>
+    <li>ancient_adj->erwacht</li>
+    <li>ancient_pre->Kryptoschlaf</li>
+    <li>mercenaries->Söldner</li>
+    <li>mercenaries->Soldaten</li>
+    <li>mercenaries->Krieger</li>
+    <li>mercenaries->Kämpfer</li>
+    <li>mercenaries_low->söldner</li>
+    <li>mercenaries_low->soldaten</li>
+    <li>mercenaries_low->krieger</li>
+    <li>mercenaries_low->kämpfer</li>
+  </OpportunitySite_AncientMercenaries.questNameRules.rulesStrings>
+  <!-- EN:
+    <li>subject->ancient mercenaries</li>
+    <li>subject->ancient soldiers</li>
+    <li>subject->ancients</li>
+    <li>questMapFeature->military garrison</li>
+    <li>questMapFeature->drawing of an ancient soldier</li>
+    <li>questMapFeature->sketch of a man from another time</li>
+    <li>questMapText->they're awake</li>
+    <li>questMapText->dangerous ancients</li>
+    <li>questMapText->ancient weapons</li>
+  -->
+  <OpportunitySite_AncientMercenaries.questSubjectRules.rulesStrings>
+    <li>subject->antike Söldner</li>
+    <li>subject->antike Soldaten</li>
+    <li>subject->Antiker</li>
+    <li>subject_dat_indef->antiken Söldnern</li>
+    <li>subject_dat_indef->antiken Soldaten</li>
+    <li>subject_dat_indef->Antikern</li>
+    <li>questMapFeature->Militärgarnison</li>
+    <li>questMapFeature->Zeichnung eines antiken Soldaten</li>
+    <li>questMapFeature->Skizze eines Mannes aus einer anderen Zeit</li>
+    <li>questMapFeatureGenIndef->einer Militärgarnison</li>
+    <li>questMapFeatureGenIndef->einer Zeichnung eines antiken Soldaten</li>
+    <li>questMapFeatureGenIndef->einer Skizze eines Mannes aus einer anderen Zeit</li>
+    <li>questMapFeatureDatIndef->einer Militärgarnison</li>
+    <li>questMapFeatureDatIndef->einer Zeichnung eines antiken Soldaten</li>
+    <li>questMapFeatureDatIndef->einer Skizze eines Mannes aus einer anderen Zeit</li>
+    <li>questMapText->sie sind wach</li>
+    <li>questMapText->gefährliche Antiker</li>
+    <li>questMapText->antike Waffen</li>
+  </OpportunitySite_AncientMercenaries.questSubjectRules.rulesStrings>
+  
+</LanguageData>

@@ -5,7 +5,9 @@ name: Update WordInfo
 on:
   workflow_dispatch:
   push:
-    branches: [ master ]
+    branches: 
+      - master
+      - main
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -20,7 +22,7 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v3
       with:
-        ref: master
+        ref: ${{ github.ref }}
         fetch-depth: 0
 
     - name: Update WordInfo
