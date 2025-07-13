@@ -463,7 +463,7 @@
 
   <!-- e.g. Cannot VERB OBJECT, Cannot repair wall, Cannot haul metal, etc. -->
   <!-- EN: Cannot {0} {1} -->
-  <CannotGenericWork>Kann {1} nicht {0}</CannotGenericWork>
+  <CannotGenericWork>Kann {lookup: {1}; decline; 3} nicht {0}</CannotGenericWork>
   <!-- EN: Cannot {0} -->
   <CannotGenericWorkCustom>Kann nicht {0}</CannotGenericWorkCustom>
 
@@ -642,17 +642,17 @@
 
   <!-- Hacking -->
   <!-- EN: Hack {0} -->
-  <Hack>Hacke {0}</Hack>
+  <Hack>Hacke {lookup: {0}; decline; 3}</Hack>
   <!-- EN: Choose a colonist to hack this. -->
   <HackDesc>Wähle einen Kolonisten, der dies hacken soll.</HackDesc>
   <!-- EN: Cannot hack {0} -->
-  <CannotHack>Kann {0} nicht hacken</CannotHack>
+  <CannotHack>Kann {lookup: {0}; decline; 3} nicht hacken</CannotHack>
   <!-- EN: Locked out -->
   <LockedOut>Ausgesperrt</LockedOut>
   <!-- EN: Already hacked -->
   <AlreadyHacked>Bereits gehackt</AlreadyHacked>
   <!-- EN: Incapable of hacking -->
-  <IncapableOfHacking>Kann nicht hacken</IncapableOfHacking>
+  <IncapableOfHacking>Verweigert Hacken</IncapableOfHacking>
   <!-- EN: to drop supplies -->
   <ToDropSupplies>das, um Vorräte abzuwerfen</ToDropSupplies>
 
