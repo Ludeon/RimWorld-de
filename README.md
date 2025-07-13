@@ -21,7 +21,7 @@ Table of Contents
 -----------------
 - [Neueste Übersetzungsdateien verwenden](#neueste-übersetzungsdateien-verwenden)
 - [Grammar Resolving](#grammar-resolving)
-- [Helpful links](#helpful-links)
+- [Helpful links & mods](#helpful-links--mods)
 
 Neueste Übersetzungsdateien verwenden
 -------------------------------------
@@ -69,6 +69,7 @@ This process is done almost automatic, thanks to the GitHub workflow file [updat
 - [update-wordinfo-decline.ps1](https://github.com/Ludeon/RimWorld-de/blob/master/update-wordinfo-decline.ps1) searches for specific labels in specific XML files and adds them to WordInfo\decline.txt (Core and each DLC have this file).
 - [update-wordinfo-plural.ps1](https://github.com/Ludeon/RimWorld-de/blob/master/update-wordinfo-plural.ps1) searches for specific labels in specific XML files and adds them to WordInfo\plural.txt (Core and each DLC have this file).
 
-Helpful links
--------------
+Helpful links & mods
+--------------------
 - [Grammar Resolver (RimWorld Wiki)](https://rimworldwiki.com/wiki/Modding_Tutorials/GrammarResolver)
+- [Rim Language Hot Reload](https://steamcommunity.com/sharedfiles/filedetails/?id=2569378701)
