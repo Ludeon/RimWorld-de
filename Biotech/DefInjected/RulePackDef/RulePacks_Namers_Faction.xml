@@ -62,6 +62,9 @@
   -->
   <NamerFactionOutlanderPig.rulePack.rulesFiles>
     <li>political_union_outlander->Words/Nouns/PoliticalUnions_Outlander</li>
+    <li>political_union_outlander_mas->Words/Nouns/PoliticalUnions_Outlander_Mas</li>
+    <li>political_union_outlander_fem->Words/Nouns/PoliticalUnions_Outlander_Fem</li>
+    <li>political_union_outlander_neu->Words/Nouns/PoliticalUnions_Outlander_Neu</li>
   </NamerFactionOutlanderPig.rulePack.rulesFiles>
   <!-- EN:
     <li>r_name(p=2)->[nameCore]</li>
@@ -86,8 +89,11 @@
     <li>end->mm</li>
   -->
   <NamerFactionOutlanderPig.rulePack.rulesStrings>
-    <li>r_name(p=2)->[nameCore]</li>
+    <li>r_name->Die [nameCore]</li>
     <li>r_name->[nameCore]-[political_union_outlander]</li>
+    <li>r_name(p=0.33)->Der [nameCore]-[political_union_tribal_mas]</li>
+    <li>r_name(p=0.33)->Die [nameCore]-[political_union_tribal_fem]</li>
+    <li>r_name(p=0.33)->Das [nameCore]-[political_union_tribal_neu]</li>
     <li>r_name->[political_union_outlander] der [nameCore]</li>
     <li>maybeHyphenSylP(p=3)->[SylP]</li>
     <li>maybeHyphenSylP->-[SylPCap]</li>
@@ -147,9 +153,14 @@
     <li>men->trash</li>
   -->
   <NamerFactionPirateWaster.rulePack.rulesStrings>
-    <li>r_name->[poison]-[groupname]</li>
-    <li>r_name->[poison][groupname_low]</li>
-    <li>r_name->[poison]-[men]</li>
+    <li>r_name->Die [poison][groupname_low]</li>
+    <li>r_name->Die [poison][men1_low]</li>
+    <li>r_name->Die [poison][AnimalBadassesLow]</li>
+    <li>r_name->Die [poison][EnemiesDefLow]</li>
+    <li>r_name->Die [men2]</li>
+    <li>r_name->Die [ColorBadass]en [men2]</li>
+    <li>r_name->Die [AdjectiveBadass]en [men2]</li>
+    <li>r_name->[NamePerson]'s [men2]</li>
     <li>men->Menschen</li>
     <li>men->Crew</li>
     <li>men->Gang</li>
@@ -162,6 +173,42 @@
     <li>men->Verderber</li>
     <li>men->Glitscher</li>
     <li>men->Plagen</li>
+    <li>men1->Menschen</li>
+    <li>men1->Crew</li>
+    <li>men1->Gang</li>
+    <li>men1->Psychos</li>
+    <li>men2->Würger</li>
+    <li>men2->Vergifter</li>
+    <li>men2->Verseucher</li>
+    <li>men2->Verpester</li>
+    <li>men2->Verschmutzer</li>
+    <li>men2->Verderber</li>
+    <li>men2->Glitscher</li>
+    <li>men2->Plagen</li>
+    <li>men_low->menschen</li>
+    <li>men_low->crew</li>
+    <li>men_low->gang</li>
+    <li>men_low->psychos</li>
+    <li>men_low->glitscher</li>
+    <li>men_low->plagen</li>
+    <li>men_low->würger</li>
+    <li>men_low->vergifter</li>
+    <li>men_low->verseucher</li>
+    <li>men_low->verpester</li>
+    <li>men_low->verschmutzer</li>
+    <li>men_low->verderber</li>
+    <li>men1_low->menschen</li>
+    <li>men1_low->crew</li>
+    <li>men1_low->gang</li>
+    <li>men1_low->psychos</li>
+    <li>men1_low->glitscher</li>
+    <li>men1_low->plagen</li>
+    <li>men2_low->würger</li>
+    <li>men2_low->vergifter</li>
+    <li>men2_low->verseucher</li>
+    <li>men2_low->verpester</li>
+    <li>men2_low->verschmutzer</li>
+    <li>men2_low->verderber</li>
   </NamerFactionPirateWaster.rulePack.rulesStrings>
   
   <!-- EN:
@@ -178,15 +225,16 @@
     <li>faction->kinroar</li>
   -->
   <NamerFactionPirateYttakin.rulePack.rulesStrings>
-    <li>r_name(p=2)->[placeNameCore]</li>
+    <li>r_name->Die [placeNameCore]</li>
     <li>r_name->[placeNameCore]-[faction]</li>
+    <li>r_name(p=0.5)->Der [placeNameCore]-[faction_mas]</li>
+    <li>r_name(p=0.5)->Die [placeNameCore]-[faction_fem]</li>
     <li>r_name->[faction] der [placeNameCore]</li>
     <li>faction->Brüllsippe</li>
     <li>faction->Brüllclan</li>
     <li>faction->Stamm</li>
     <li>faction->Clan</li>
     <li>faction->Sippe</li>
-    <li>faction->Pack</li>
     <li>faction->Rotte</li>
     <li>faction->Meute</li>
     <li>faction->Familie</li>
@@ -194,6 +242,18 @@
     <li>faction->Pelzsippe</li>
     <li>faction->Fellclan</li>
     <li>faction->Fellsippe</li>
+    <li>faction_fem->Brüllsippe</li>
+    <li>faction_mas->Brüllclan</li>
+    <li>faction_mas->Stamm</li>
+    <li>faction_mas->Clan</li>
+    <li>faction_fem->Sippe</li>
+    <li>faction_fem->Rotte</li>
+    <li>faction_fem->Meute</li>
+    <li>faction_fem->Familie</li>
+    <li>faction_mas->Pelzclan</li>
+    <li>faction_fem->Pelzsippe</li>
+    <li>faction_mas->Fellclan</li>
+    <li>faction_fem->Fellsippe</li>
   </NamerFactionPirateYttakin.rulePack.rulesStrings>
   
   <!-- EN:
@@ -208,8 +268,11 @@
     <li>faction->firehome</li>
   -->
   <NamerFactionTribalImpid.rulePack.rulesStrings>
-    <li>r_name(p=2)->[placeNameCore]</li>
+    <li>r_name->Die [placeNameCore]</li>
     <li>r_name->[placeNameCore]-[faction]</li>
+    <li>r_name(p=0.33)->Der [placeNameCore]-[faction_mas]</li>
+    <li>r_name(p=0.33)->Die [placeNameCore]-[faction_fem]</li>
+    <li>r_name(p=0.33)->Das [placeNameCore]-[faction_neu]</li>
     <li>r_name->[faction] der [placeNameCore]</li>
     <li>faction->Stamm</li>
     <li>faction->Liga</li>
@@ -217,6 +280,12 @@
     <li>faction->Sprintschaft</li>
     <li>faction->Flammenheim</li>
     <li>faction->Feuerheim</li>
+    <li>faction_mas->Stamm</li>
+    <li>faction_fem->Liga</li>
+    <li>faction_fem->Rennschaft</li>
+    <li>faction_fem->Sprintschaft</li>
+    <li>faction_neu->Flammenheim</li>
+    <li>faction_neu->Feuerheim</li>
   </NamerFactionTribalImpid.rulePack.rulesStrings>
   
   <!-- EN:
@@ -224,6 +293,12 @@
   -->
   <NamerFactionTribalNeanderthal.rulePack.rulesFiles>
     <li>political_union_tribal->Words/Nouns/PoliticalUnions_Tribal</li>
+    <li>political_union_tribal_mas->Words/Nouns/PoliticalUnions_Tribal_Mas</li>
+    <li>political_union_tribal_mas_low->Words/Nouns/PoliticalUnions_Tribal_Mas_Low</li>
+    <li>political_union_tribal_fem->Words/Nouns/PoliticalUnions_Tribal_Fem</li>
+    <li>political_union_tribal_fem_low->Words/Nouns/PoliticalUnions_Tribal_Fem_Low</li>
+    <li>political_union_tribal_neu->Words/Nouns/PoliticalUnions_Tribal_Neu</li>
+    <li>political_union_tribal_neu_low->Words/Nouns/PoliticalUnions_Tribal_Neu_Low</li>
   </NamerFactionTribalNeanderthal.rulePack.rulesFiles>
   <!-- EN:
     <li>r_name(p=2)->[placeNameCore]</li>
@@ -231,8 +306,11 @@
     <li>r_name->[political_union_tribal] of [placeNameCore]</li>
   -->
   <NamerFactionTribalNeanderthal.rulePack.rulesStrings>
-    <li>r_name(p=2)->[placeNameCore]</li>
+    <li>r_name->Die [placeNameCore]</li>
     <li>r_name->[placeNameCore]-[political_union_tribal]</li>
+    <li>r_name(p=0.33)->Der [placeNameCore]-[political_union_tribal_mas]</li>
+    <li>r_name(p=0.33)->Die [placeNameCore]-[political_union_tribal_fem]</li>
+    <li>r_name(p=0.33)->Das [placeNameCore]-[political_union_tribal_neu]</li>
     <li>r_name->[political_union_tribal] der [placeNameCore]</li>
   </NamerFactionTribalNeanderthal.rulePack.rulesStrings>
   
@@ -484,17 +562,17 @@
     <li>poison->Toxin</li>
     <li>poison->Tox</li>
     <li>poison->Würg</li>
-    <li>poison->Gas</li>
+    <li>poison->Giftgas</li>
     <li>poison->Psyck</li>
-    <li>poison->Virus</li>
+    <li>poison->Viren</li>
     <li>poison->Karzinom</li>
+    <li>poison->Tumor</li>
     <li>poison->Toxoid</li>
     <li>poison->Verderbnis</li>
     <li>poison->Miasma</li>
     <li>poison->Schmutz</li>
-    <li>poison->Müll</li>
+    <li>poison->Giftmüll</li>
     <li>poison->Fäulnis</li>
-    <li>poison->Abfall</li>
     <li>poison->Pest</li>
     <li>poison->Seuchen</li>
   </WasterUtility.rulePack.rulesStrings>
