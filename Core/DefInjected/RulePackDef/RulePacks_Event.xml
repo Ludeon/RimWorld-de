@@ -5,14 +5,17 @@
     <li>r_logentry->[INITIATOR_definite] used [ABILITY_label] on [SUBJECT_definite].</li>
   -->
   <Event_AbilityUsed.rulePack.rulesStrings>
-    <li>r_logentry->[INITIATOR_definite] hat [ABILITY_label] auf [SUBJECT_definite] angewandt.</li>
+    <li>r_logentry->[INITIATOR_definite] hat '[ABILITY_label]' auf [SUBJECT_nameDefAcc] gewirkt.</li>
+    <li>SUBJECT_nameDefAcc->{replace: [SUBJECT_nameDef]; ">der "-">den "}</li>
   </Event_AbilityUsed.rulePack.rulesStrings>
   
   <!-- EN:
     <li>r_logentry->[INITIATOR_definite] used [ITEM_indefinite] on [SUBJECT_definite].</li>
   -->
   <Event_ItemUsed.rulePack.rulesStrings>
-    <li>r_logentry->[INITIATOR_definite] hat [ITEM_label] auf [SUBJECT_definite] angewandt.</li>
+    <li>r_logentry->[INITIATOR_definite] hat [ITEM_acc_indef] auf [SUBJECT_nameDefAcc] benutzt.</li>
+    <li>ITEM_acc_indef->{replace: ^[ITEM_definite]; "^der [ITEM_label]"-"einen"; "^die [ITEM_label]"-"eine"; "^das [ITEM_label]"-"ein"} {lookup: [ITEM_label]; decline; 3}</li>
+    <li>SUBJECT_nameDefAcc->{replace: [SUBJECT_nameDef]; ">der "-">den "}</li>
   </Event_ItemUsed.rulePack.rulesStrings>
   
   <!-- EN:

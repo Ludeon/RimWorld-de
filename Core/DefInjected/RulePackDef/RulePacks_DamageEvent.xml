@@ -81,10 +81,11 @@
     <li>r_logentry(p=0.1)->[damage_source] [RECIPIENT_nameDef].</li>
   -->
   <DamageEvent_Include.rulePack.rulesStrings>
-    <li>r_logentry->[damage_source] [RECIPIENT_label] und [destroyed_past] [recipient_part_destroyed0_possessive_acc] [destroyed_targets_acc].</li>
-    <li>r_logentry->[damage_source] [RECIPIENT_label] und [destroyed_past] [recipient_part_destroyed0_possessive_acc] [destroyed_targets_acc], und [damaged_past] [recipient_part_damaged0_possessive_acc] [damaged_targets_acc].</li>
-    <li>r_logentry(recipient_part_destroyed_count==0)->[damage_source] [RECIPIENT_label] und [damaged_past] [recipient_part_damaged0_possessive_acc] [damaged_targets_acc].</li>
-    <li>r_logentry(p=0.1)->[damage_source] [RECIPIENT_label].</li>
+    <li>r_logentry->[damage_source] [RECIPIENT_nameDefAcc] und [destroyed_past] [recipient_part_destroyed0_possessive_acc] [destroyed_targets_acc].</li>
+    <li>r_logentry->[damage_source] [RECIPIENT_nameDefAcc] und [destroyed_past] [recipient_part_destroyed0_possessive_acc] [destroyed_targets_acc], und [damaged_past] [recipient_part_damaged0_possessive_acc] [damaged_targets_acc].</li>
+    <li>r_logentry(recipient_part_destroyed_count==0)->[damage_source] [RECIPIENT_nameDefAcc] und [damaged_past] [recipient_part_damaged0_possessive_acc] [damaged_targets_acc].</li>
+    <li>r_logentry(p=0.1)->[damage_source] [RECIPIENT_nameDefAcc].</li>
+    <li>RECIPIENT_nameDefAcc->{replace: [RECIPIENT_nameDef]; ">der "-">den "}</li>
   </DamageEvent_Include.rulePack.rulesStrings>
   
   <!-- EN:
