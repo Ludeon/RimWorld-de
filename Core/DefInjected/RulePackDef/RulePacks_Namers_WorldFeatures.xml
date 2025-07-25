@@ -687,7 +687,7 @@
     <li>narrative_with_biom_adj->{replace: [terrain_word_gender_low]; "|M|"-"[biom_adj]er [ColorCap]"; "|F|"-"[biom_adj]e [ColorCap]"; "|N|"-"[biom_adj]es [ColorCap]"}</li>
     <li>narrative_with_biom_adj->{replace: [terrain_word_gender_low]; "|M|"-"[biom_adj]er [Color]er [AnimalCon]"; "|F|"-"[biom_adj]e [Color]e [AnimalCon]"; "|N|"-"[biom_adj]es [Color]es [AnimalCon]"}</li>
     <li>narrative_with_biom_adj->{replace: [terrain_word_gender_low]; "|M|"-"[biom_adj]er [AnimalCon]"; "|F|"-"[biom_adj]e [AnimalCon]"; "|N|"-"[biom_adj]es [AnimalCon]"}</li>
-    <li>story(p=17)->[subject]'s [terrain_word] [story_result]</li>
+    <li>story(p=17)->[subject]'s [terrain_word] [of_story_result]</li>
     <li>story(p=17)->[subject]'s [story_con][terrain_word_low]</li>
     <li>story(p=17)->{replace: [terrain_word_gender]; "|M|"-"[story_adj]er "; "|F|"-"[story_adj]e "; "|N|"-"[story_adj]es "}</li>
     <li>story(p=2)->[subject]'s [BodyPartCon][terrain_word_low]</li>
@@ -695,41 +695,75 @@
     <li>subject(p=5)->[NamePerson]</li>
     <li>subject->[WordTribal]</li>
     <li>subject->[PlaceOutlander]</li>
-    <li>story_result->der Freude</li>
-    <li>story_result->der Furcht</li>
-    <li>story_result->der Gefälle</li>
-    <li>story_result->des Hasses</li>
-    <li>story_result->der Heuchelei</li>
-    <li>story_result->der Illusion</li>
-    <li>story_result->des Irrsinns</li>
-    <li>story_result->der Könige</li>
-    <li>story_result->des Lebens</li>
-    <li>story_result->der Liebe</li>
-    <li>story_result->der List</li>
-    <li>story_result->der Niederlage</li>
-    <li>story_result->der Ruhe</li>
-    <li>story_result->der Ruinen</li>
-    <li>story_result->der Schätze</li>
-    <li>story_result->des Schreckens</li>
-    <li>story_result->der Schuld</li>
-    <li>story_result->des Sieges</li>
-    <li>story_result->der Sühne</li>
-    <li>story_result->der Täuschung</li>
-    <li>story_result->des Terrors</li>
-    <li>story_result->des Todes</li>
-    <li>story_result->der Torheit</li>
-    <li>story_result->der Träume</li>
-    <li>story_result->der Trophäen</li>
-    <li>story_result->der Tücke</li>
-    <li>story_result->der Unruhe</li>
-    <li>story_result->der Verblendung</li>
-    <li>story_result->der Verderbnis</li>
-    <li>story_result->der Verfehlung</li>
-    <li>story_result->der Vernichtung</li>
-    <li>story_result->der Verrücktheit</li>
-    <li>story_result->der Wiedergeburt</li>
-    <li>story_result->der Wunder</li>
-    <li>story_result->der Zerstörung</li>
+    <li>story_result->Freude</li>
+    <li>story_result->Furcht</li>
+    <li>story_result->Untergang</li>
+    <li>story_result->Hass</li>
+    <li>story_result->Heuchelei</li>
+    <li>story_result->Illusion</li>
+    <li>story_result->Irrsinn</li>
+    <li>story_result->Leben</li>
+    <li>story_result->Liebe</li>
+    <li>story_result->List</li>
+    <li>story_result->Niederlage</li>
+    <li>story_result->Ruhe</li>
+    <li>story_result->Ruin</li>
+    <li>story_result->Schatz</li>
+    <li>story_result->Schrecken</li>
+    <li>story_result->Schuld</li>
+    <li>story_result->Sieg</li>
+    <li>story_result->Sühne</li>
+    <li>story_result->Täuschung</li>
+    <li>story_result->Terror</li>
+    <li>story_result->Tod</li>
+    <li>story_result->Torheit</li>
+    <li>story_result->Traum</li>
+    <li>story_result->Trophäe</li>
+    <li>story_result->Tücke</li>
+    <li>story_result->Unruhe</li>
+    <li>story_result->Verblendung</li>
+    <li>story_result->Verderbnis</li>
+    <li>story_result->Verfehlung</li>
+    <li>story_result->Vernichtung</li>
+    <li>story_result->Verrücktheit</li>
+    <li>story_result->Wiedergeburt</li>
+    <li>story_result->Wunder</li>
+    <li>story_result->Zerstörung</li>
+    <li>of_story_result->der Freude</li>
+    <li>of_story_result->der Furcht</li>
+    <li>of_story_result->des Untergangs</li>
+    <li>of_story_result->des Hasses</li>
+    <li>of_story_result->der Heuchelei</li>
+    <li>of_story_result->der Illusion</li>
+    <li>of_story_result->des Irrsinns</li>
+    <li>of_story_result->der Könige</li>
+    <li>of_story_result->des Lebens</li>
+    <li>of_story_result->der Liebe</li>
+    <li>of_story_result->der List</li>
+    <li>of_story_result->der Niederlage</li>
+    <li>of_story_result->der Ruhe</li>
+    <li>of_story_result->des Ruins</li>
+    <li>of_story_result->der Schätze</li>
+    <li>of_story_result->des Schreckens</li>
+    <li>of_story_result->der Schuld</li>
+    <li>of_story_result->des Sieges</li>
+    <li>of_story_result->der Sühne</li>
+    <li>of_story_result->der Täuschung</li>
+    <li>of_story_result->des Terrors</li>
+    <li>of_story_result->des Todes</li>
+    <li>of_story_result->der Torheit</li>
+    <li>of_story_result->der Träume</li>
+    <li>of_story_result->der Trophäen</li>
+    <li>of_story_result->der Tücke</li>
+    <li>of_story_result->der Unruhe</li>
+    <li>of_story_result->der Verblendung</li>
+    <li>of_story_result->der Verderbnis</li>
+    <li>of_story_result->der Verfehlung</li>
+    <li>of_story_result->der Vernichtung</li>
+    <li>of_story_result->der Verrücktheit</li>
+    <li>of_story_result->der Wiedergeburt</li>
+    <li>of_story_result->der Wunder</li>
+    <li>of_story_result->der Zerstörung</li>
     <li>story_con->Narren</li>
     <li>story_con->Laster</li>
     <li>story_con->Irr</li>
@@ -755,7 +789,7 @@
     <li>story_con->Sturz</li>
     <li>story_con->Trümmer</li>
     <li>story_con->Kataklysmus</li>
-    <li>story_con->Ruinen</li>
+    <li>story_con->Ruin</li>
     <li>story_con->Los</li>
     <li>story_con->Katastrophen</li>
     <li>story_con->Fall</li>
