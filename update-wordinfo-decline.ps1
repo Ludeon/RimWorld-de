@@ -13,6 +13,7 @@ $items = [ordered]@{
 "DefInjected\PawnKindDef\*" = ".+\.label(Male|Female)?"
 "DefInjected\MonolithLevelDef\*" = "\w+\.monolithLabel"
 "DefInjected\ThingDef\*" = "\w+\.label"
+"DefInjected\BodyDef\*, DefInjected\BodyPartDef\*" = ".+\.(label|customLabel)"
 "DefInjected\FactionDef\*" = "\w+\.pawnSingular"
 "DefInjected\HediffDef\*" = "\w+\.label"
 "DefInjected\PawnRelationDef\*" = "\w+\.label(Female)?"
