@@ -50,12 +50,10 @@
     <li>r_logentry(priority=-1)->[RECIPIENT_definite] wurde von einer Explosion erfasst.</li>
     <li>r_logentry(priority=-1)->[RECIPIENT_definite] wurde von einer Explosion getroffen.</li>
     <li>blast->Explosion</li>
-
-    <li>INITIATORPROJECTILE_nameDefNom(INITIATOR_genderResolved!=Male,INITIATOR_genderResolved!=Female,INITIATOR_genderResolved!=None)->{replace: [INITIATOR_definite]'s [projectile]; " [INITIATOR_label]'s [projectile]"-""} {lookup: [INITIATOR_label]; decline; 4}</li> <!-- non-pawn -->
-    <li>INITIATORPROJECTILE_nameDefNom(priority=-1)->[INITIATOR_label]'s [projectile]</li> <!-- pawn -->
-
-    <li>INITIATORWEAPON_nameDefNom(INITIATOR_genderResolved!=Male,INITIATOR_genderResolved!=Female,INITIATOR_genderResolved!=None)->{replace: [INITIATOR_definite]'s [WEAPON_label]; " [INITIATOR_label]'s [WEAPON_label]"-""} {lookup: [INITIATOR_label]; decline; 4}</li> <!-- non-pawn -->
-    <li>INITIATORWEAPON_nameDefNom(priority=-1)->[INITIATOR_label]'s [WEAPON_label]</li> <!-- pawn -->
+    <li>INITIATORPROJECTILE_nameDefNom(INITIATOR_genderResolved!=Male,INITIATOR_genderResolved!=Female,INITIATOR_genderResolved!=None)->{replace: [INITIATOR_definite]'s [projectile]; " [INITIATOR_label]'s [projectile]"-""} {lookup: [INITIATOR_label]; decline; 4}</li>
+    <li>INITIATORPROJECTILE_nameDefNom(priority=-1)->[INITIATOR_label]'s [projectile]</li>
+    <li>INITIATORWEAPON_nameDefNom(INITIATOR_genderResolved!=Male,INITIATOR_genderResolved!=Female,INITIATOR_genderResolved!=None)->{replace: [INITIATOR_definite]'s [WEAPON_label]; " [INITIATOR_label]'s [WEAPON_label]"-""} {lookup: [INITIATOR_label]; decline; 4}</li>
+    <li>INITIATORWEAPON_nameDefNom(priority=-1)->[INITIATOR_label]'s [WEAPON_label]</li>
   </Combat_ExplosionImpact.rulePack.rulesStrings>
   
   <!-- EN:
@@ -83,19 +81,15 @@
     <li>wp_projectile_acc->{lookup: [WEAPON_projectile_label]; decline; 3}</li>
     <li>p_acc->{replace: ^[PROJECTILE_definite]; "^der [PROJECTILE_label]"-"en"; "^die [PROJECTILE_label]"-"e"; "^das [PROJECTILE_label]"-""; "^"-""}</li>
     <li>p_projectile_acc->{lookup: [PROJECTILE_label]; decline; 3}</li>
-
     <li>implement_dat->[weapon_dat_his] [weapon_dat]</li>
     <li>weapon_dat->{lookup: [WEAPON_label]; decline; 6}</li>
     <li>weapon_dat_his->[INITIATOR_possessive]{replace: ^[WEAPON_indefinite]; "^ein [WEAPON_label]"-"em"; "^eine [WEAPON_label]"-"er"; "^"-""}</li>
-
-    <li>ORIGINALTARGET_nameDefAcc(ORIGINALTARGET_genderResolved!=Male,ORIGINALTARGET_genderResolved!=Female,ORIGINALTARGET_genderResolved!=None)->{replace: [ORIGINALTARGET_definite]; "der [ORIGINALTARGET_label]"-"den"; "die [ORIGINALTARGET_label]"-"die"; "das [ORIGINALTARGET_label]"-"das"} {lookup: [ORIGINALTARGET_label]; decline; 7}</li> <!-- non-pawn -->
-    <li>ORIGINALTARGET_nameDefAcc(priority=-1)->{replace: [ORIGINALTARGET_definite]; ">der "-">den "}</li> <!-- pawn -->
-
-    <li>ORIGINALTARGET_nameDefNom(ORIGINALTARGET_genderResolved!=Male,ORIGINALTARGET_genderResolved!=Female,ORIGINALTARGET_genderResolved!=None)->{replace: [ORIGINALTARGET_definite]; " [ORIGINALTARGET_label]"-""} {lookup: [ORIGINALTARGET_label]; decline; 4}</li> <!-- non-pawn -->
-    <li>ORIGINALTARGET_nameDefNom(priority=-1)->[ORIGINALTARGET_definite]</li> <!-- pawn -->
-
-    <li>INITIATOR_nameDefNom(INITIATOR_genderResolved!=Male,INITIATOR_genderResolved!=Female,INITIATOR_genderResolved!=None)->{replace: [INITIATOR_definite]; " [INITIATOR_label]"-""} {lookup: [INITIATOR_label]; decline; 4}</li> <!-- non-pawn -->
-    <li>INITIATOR_nameDefNom(priority=-1)->[INITIATOR_definite]</li> <!-- pawn -->
+    <li>ORIGINALTARGET_nameDefAcc(ORIGINALTARGET_genderResolved!=Male,ORIGINALTARGET_genderResolved!=Female,ORIGINALTARGET_genderResolved!=None)->{replace: [ORIGINALTARGET_definite]; "der [ORIGINALTARGET_label]"-"den"; "die [ORIGINALTARGET_label]"-"die"; "das [ORIGINALTARGET_label]"-"das"} {lookup: [ORIGINALTARGET_label]; decline; 7}</li>
+    <li>ORIGINALTARGET_nameDefAcc(priority=-1)->{replace: [ORIGINALTARGET_definite]; ">der "-">den "}</li>
+    <li>ORIGINALTARGET_nameDefNom(ORIGINALTARGET_genderResolved!=Male,ORIGINALTARGET_genderResolved!=Female,ORIGINALTARGET_genderResolved!=None)->{replace: [ORIGINALTARGET_definite]; " [ORIGINALTARGET_label]"-""} {lookup: [ORIGINALTARGET_label]; decline; 4}</li>
+    <li>ORIGINALTARGET_nameDefNom(priority=-1)->[ORIGINALTARGET_definite]</li>
+    <li>INITIATOR_nameDefNom(INITIATOR_genderResolved!=Male,INITIATOR_genderResolved!=Female,INITIATOR_genderResolved!=None)->{replace: [INITIATOR_definite]; " [INITIATOR_label]"-""} {lookup: [INITIATOR_label]; decline; 4}</li>
+    <li>INITIATOR_nameDefNom(priority=-1)->[INITIATOR_definite]</li>
   </Combat_RangedBase.rulePack.rulesStrings>
   
   <!-- EN:
@@ -136,7 +130,7 @@
     <li>destroyed_suffix->a fine mist</li>
     <li>destroyed_suffix->fragments</li>
     <li>destroyed_suffix(p=0.5)->a holey mess</li>
-    <li>destroyed_suffix(recipient_flesh!=Mechanoid,p=0.2)->ground beef</li>
+    <li>destroyed_suffix(RECIPIENT_flesh!=Mechanoid,p=0.2)->ground beef</li>
     <li>damaged_past->wounded</li>
     <li>damaged_past->injured</li>
     <li>damaged_past->pierced</li>
@@ -148,8 +142,8 @@
     <li>damaged_present->damaging</li>
     <li>damaged_present->shooting</li>
     <li>damaged_suffix->in an ugly fashion</li>
-    <li>damaged_suffix(recipient_flesh!=Mechanoid)->with visible blood</li>
-    <li>damaged_suffix(recipient_flesh!=Mechanoid)->with the flesh visible</li>
+    <li>damaged_suffix(RECIPIENT_flesh!=Mechanoid)->with visible blood</li>
+    <li>damaged_suffix(RECIPIENT_flesh!=Mechanoid)->with the flesh visible</li>
     <li>to->to</li>
     <li>to->into</li>
     <li>missed->missed</li>
@@ -202,12 +196,10 @@
     <li>was_damaged->getroffen</li>
     <li>knapp-></li>
     <li>knapp->knapp</li>
-
-    <li>INITIATORPROJECTILE_nameDefNom(INITIATOR_genderResolved!=Male,INITIATOR_genderResolved!=Female,INITIATOR_genderResolved!=None)->{replace: [INITIATOR_definite]'s [projectile]; " [INITIATOR_label]'s [projectile]"-""} {lookup: [INITIATOR_label]; decline; 4}</li> <!-- non-pawn -->
-    <li>INITIATORPROJECTILE_nameDefNom(priority=-1)->[INITIATOR_label]'s [projectile]</li> <!-- pawn -->
-
-    <li>INITIATORPROJECTILE_nameDefDat(INITIATOR_genderResolved!=Male,INITIATOR_genderResolved!=Female,INITIATOR_genderResolved!=None)->{replace: [INITIATOR_indefinite]'s [projectile]; "ein [INITIATOR_label]'s [projectile]"-"dem"; "eine [INITIATOR_label]'s [projectile]"-"der"} {lookup: [INITIATOR_label]; decline; 6}</li> <!-- non-pawn -->
-    <li>INITIATORPROJECTILE_nameDefDat(priority=-1)->[INITIATOR_label]'s [projectile]</li> <!-- pawn -->
+    <li>INITIATORPROJECTILE_nameDefNom(INITIATOR_genderResolved!=Male,INITIATOR_genderResolved!=Female,INITIATOR_genderResolved!=None)->{replace: [INITIATOR_definite]'s [projectile]; " [INITIATOR_label]'s [projectile]"-""} {lookup: [INITIATOR_label]; decline; 4}</li>
+    <li>INITIATORPROJECTILE_nameDefNom(priority=-1)->[INITIATOR_label]'s [projectile]</li>
+    <li>INITIATORPROJECTILE_nameDefDat(INITIATOR_genderResolved!=Male,INITIATOR_genderResolved!=Female,INITIATOR_genderResolved!=None)->{replace: [INITIATOR_indefinite]'s [projectile]; "ein [INITIATOR_label]'s [projectile]"-"dem"; "eine [INITIATOR_label]'s [projectile]"-"der"} {lookup: [INITIATOR_label]; decline; 6}</li>
+    <li>INITIATORPROJECTILE_nameDefDat(priority=-1)->[INITIATOR_label]'s [projectile]</li>
   </Combat_RangedDamage.rulePack.rulesStrings>
   
   <!-- EN:
@@ -277,12 +269,10 @@
     <li>deflected_consequence->wurde aber [adverb_deflected2_opt] von [RECIPIENT_possessive]er Panzerung gestoppt</li>
     <li>knapp-></li>
     <li>knapp->knapp</li>
-
-    <li>INITIATORPROJECTILE_nameDefNom(INITIATOR_genderResolved!=Male,INITIATOR_genderResolved!=Female,INITIATOR_genderResolved!=None)->{replace: [INITIATOR_definite]'s [projectile]; " [INITIATOR_label]'s [projectile]"-""} {lookup: [INITIATOR_label]; decline; 4}</li> <!-- non-pawn -->
-    <li>INITIATORPROJECTILE_nameDefNom(priority=-1)->[INITIATOR_label]'s [projectile]</li> <!-- pawn -->
-
-    <li>INITIATORPROJECTILE_nameDefDat(INITIATOR_genderResolved!=Male,INITIATOR_genderResolved!=Female,INITIATOR_genderResolved!=None)->{replace: [INITIATOR_indefinite]'s [projectile]; "ein [INITIATOR_label]'s [projectile]"-"dem"; "eine [INITIATOR_label]'s [projectile]"-"der"} {lookup: [INITIATOR_label]; decline; 6}</li> <!-- non-pawn -->
-    <li>INITIATORPROJECTILE_nameDefDat(priority=-1)->[INITIATOR_label]'s [projectile]</li> <!-- pawn -->
+    <li>INITIATORPROJECTILE_nameDefNom(INITIATOR_genderResolved!=Male,INITIATOR_genderResolved!=Female,INITIATOR_genderResolved!=None)->{replace: [INITIATOR_definite]'s [projectile]; " [INITIATOR_label]'s [projectile]"-""} {lookup: [INITIATOR_label]; decline; 4}</li>
+    <li>INITIATORPROJECTILE_nameDefNom(priority=-1)->[INITIATOR_label]'s [projectile]</li>
+    <li>INITIATORPROJECTILE_nameDefDat(INITIATOR_genderResolved!=Male,INITIATOR_genderResolved!=Female,INITIATOR_genderResolved!=None)->{replace: [INITIATOR_indefinite]'s [projectile]; "ein [INITIATOR_label]'s [projectile]"-"dem"; "eine [INITIATOR_label]'s [projectile]"-"der"} {lookup: [INITIATOR_label]; decline; 6}</li>
+    <li>INITIATORPROJECTILE_nameDefDat(priority=-1)->[INITIATOR_label]'s [projectile]</li>
   </Combat_RangedDeflect.rulePack.rulesStrings>
   
   <!-- EN:
@@ -483,9 +473,8 @@
     <li>ducked->kroch</li>
     <li>ducked->bückte sich</li>
     <li>ducked->versteckte sich</li>
-
-    <li>COVER_nameDefDat(ORIGINALTARGET_genderResolved!=Male,ORIGINALTARGET_genderResolved!=Female,ORIGINALTARGET_genderResolved!=None)->{replace: [ORIGINALTARGET_definite]; "der [ORIGINALTARGET_label]"-"dem"; "die [ORIGINALTARGET_label]"-"der"; "das [ORIGINALTARGET_label]"-"dem"} {lookup: [ORIGINALTARGET_label]; decline; 6}</li> <!-- non-pawn -->
-    <li>COVER_nameDefDat(priority=-1)->{replace: [ORIGINALTARGET_definite]; ">der "-">dem "; ">die "-">der "; ">das "-">dem "}</li> <!-- pawn -->
+    <li>COVER_nameDefDat(ORIGINALTARGET_genderResolved!=Male,ORIGINALTARGET_genderResolved!=Female,ORIGINALTARGET_genderResolved!=None)->{replace: [ORIGINALTARGET_definite]; "der [ORIGINALTARGET_label]"-"dem"; "die [ORIGINALTARGET_label]"-"der"; "das [ORIGINALTARGET_label]"-"dem"} {lookup: [ORIGINALTARGET_label]; decline; 6}</li>
+    <li>COVER_nameDefDat(priority=-1)->{replace: [ORIGINALTARGET_definite]; ">der "-">dem "; ">die "-">der "; ">das "-">dem "}</li>
   </Combat_RangedMiss.rulePack.rulesStrings>
   
 </LanguageData>
