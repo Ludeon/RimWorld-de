@@ -32,11 +32,21 @@
     <li>damaged_past->zerdrückte</li>
     <li>damaged_past->zerquetschte</li>
     <li>damaged_past->zerfetzte</li>
+    <li>was_damaged->zerschlagen</li>
+    <li>was_damaged->zerstrümmert</li>
+    <li>was_damaged->zerdrückt</li>
+    <li>was_damaged->zerquetscht</li>
+    <li>was_damaged->zerfetzt</li>
     <li>destroyed_past->zerschmetterte</li>
     <li>destroyed_past->zertrümmerte</li>
     <li>destroyed_past->vernichtete</li>
     <li>destroyed_past->zerstörte</li>
     <li>destroyed_past->zerbrach</li>
+    <li>was_destroyed->zerschmettert</li>
+    <li>was_destroyed->zertrümmert</li>
+    <li>was_destroyed->vernichtet</li>
+    <li>was_destroyed->zerstört</li>
+    <li>was_destroyed->zerbrochen</li>
   </DamageEvent_Ceiling.rulePack.rulesStrings>
   
   <!-- EN:
@@ -57,21 +67,31 @@
     <li>destroyed_present->cremating</li>
   -->
   <DamageEvent_Fire.rulePack.rulesStrings>
-    <li>damage_source->[fire] entzündete</li>
-    <li>fire(p=3)->Feuer</li>
+    <li>damage_source->[fire] fraß sich durch</li>
+    <li>damage_source->[fire] verzehrte</li>
+    <li>damage_source2->[fire] setzte [RECIPIENT_nameDefAcc] in Brand</li>
+    <li>damage_source2->[fire] setzte [RECIPIENT_nameDefAcc] in Flammen</li>
+    <li>damage_source2->[fire] ging auf [RECIPIENT_nameDefAcc] über</li>
+    <li>damage_source2->[fire] brachte [RECIPIENT_nameDefAcc] zum Lodern</li>
     <li>fire(p=3)->ein Feuer</li>
-    <li>fire(p=3)->das Feuer</li>
-    <li>fire->Hitze</li>
     <li>fire->eine Feuersbrunst</li>
     <li>fire->ein Inferno</li>
-    <li>damaged_past->versenkte</li>
+    <li>damaged_past->versengte</li>
     <li>damaged_past->grillte</li>
     <li>damaged_past->verglühte</li>
     <li>damaged_past->verbrannte</li>
+    <li>was_damaged->versengt</li>
+    <li>was_damaged->gegrillt</li>
+    <li>was_damaged->verglüht</li>
+    <li>was_damaged->verbrannt</li>
     <li>destroyed_past->verkohlte</li>
     <li>destroyed_past->röstete</li>
     <li>destroyed_past->kochte</li>
     <li>destroyed_past->vernichtete</li>
+    <li>was_destroyed->verkohlt</li>
+    <li>was_destroyed->geröstet</li>
+    <li>was_destroyed->gekocht</li>
+    <li>was_destroyed->vernichtet</li>
   </DamageEvent_Fire.rulePack.rulesStrings>
   
   <!-- EN:
@@ -81,10 +101,14 @@
     <li>r_logentry(p=0.1)->[damage_source] [RECIPIENT_nameDef].</li>
   -->
   <DamageEvent_Include.rulePack.rulesStrings>
-    <li>r_logentry->[damage_source] [RECIPIENT_nameDefAcc] und [destroyed_past] [recipient_part_destroyed0_possessive_acc] [destroyed_targets_acc].</li>
-    <li>r_logentry->[damage_source] [RECIPIENT_nameDefAcc] und [destroyed_past] [recipient_part_destroyed0_possessive_acc] [destroyed_targets_acc], und [damaged_past] [recipient_part_damaged0_possessive_acc] [damaged_targets_acc].</li>
-    <li>r_logentry(recipient_part_destroyed_count==0)->[damage_source] [RECIPIENT_nameDefAcc] und [damaged_past] [recipient_part_damaged0_possessive_acc] [damaged_targets_acc].</li>
+    <li>r_logentry->[damage_source] [RECIPIENT_nameDefAcc] und [destroyed_past] [destroyed_targets_acc_pron].</li>
+    <li>r_logentry->[damage_source2] und [destroyed_past] [destroyed_targets_acc_pron].</li>
+    <li>r_logentry->[damage_source] [RECIPIENT_nameDefAcc] und [destroyed_past] [destroyed_targets_acc_pron], und [damaged_past] [damaged_targets_acc_pron].</li>
+    <li>r_logentry->[damage_source2] und [destroyed_past] [destroyed_targets_acc_pron], und [damaged_past] [damaged_targets_acc_pron].</li>
+    <li>r_logentry(recipient_part_destroyed_count==0)->[damage_source] [RECIPIENT_nameDefAcc] und [damaged_past] [damaged_targets_acc_pron].</li>
+    <li>r_logentry(recipient_part_destroyed_count==0)->[damage_source2] und [damaged_past] [damaged_targets_acc_pron].</li>
     <li>r_logentry(p=0.1)->[damage_source] [RECIPIENT_nameDefAcc].</li>
+    <li>r_logentry(p=0.1)->[damage_source2].</li>
     <li>RECIPIENT_nameDefAcc->{replace: [RECIPIENT_nameDef]; ">der "-">den "}</li>
   </DamageEvent_Include.rulePack.rulesStrings>
   
@@ -132,6 +156,7 @@
   <DamageEvent_Tornado.rulePack.rulesStrings>
     <li>damage_source->Ein [spiraling] Tornado [enveloped]</li>
     <li>destroyed_past(p=3)->zerriss</li>
+    <li>was_destroyed(p=3)->zerrissen</li>
     <li>spiraling->spiralförmiger</li>
     <li>spiraling->wirbelnder</li>
     <li>spiraling->sich drehender</li>
@@ -172,10 +197,18 @@
     <li>damaged_past->durchspießte</li>
     <li>damaged_past->durchdrang</li>
     <li>damaged_past->zerstach</li>
+    <li>was_damaged->durchlöchert</li>
+    <li>was_damaged->durchspießt</li>
+    <li>was_damaged->durchdrungen</li>
+    <li>was_damaged->zerstochen</li>
     <li>destroyed_past->zerriss</li>
     <li>destroyed_past->zerkleinerte</li>
     <li>destroyed_past->zerfetzte</li>
     <li>destroyed_past->zerbarst</li>
+    <li>was_destroyed->zerrissen</li>
+    <li>was_destroyed->zerkleinert</li>
+    <li>was_destroyed->zerfetzt</li>
+    <li>was_destroyed->zerborsten</li>
   </DamageEvent_TrapSpike.rulePack.rulesStrings>
   
 </LanguageData>

@@ -16,20 +16,29 @@
     <li>died(SUBJECT_flesh==Mechanoid)->lost power</li>
   -->
   <Transition_Died.rulePack.rulesStrings>
-    <li>die(SUBJECT_flesh!=Mechanoid,p=2)->sterben</li>
-    <li>die(SUBJECT_flesh!=Mechanoid)->verenden</li>
-    <li>die(SUBJECT_flesh!=Mechanoid)->das Zeitliche segnen</li>
+    <li>die(SUBJECT_flesh!=Mechanoid,SUBJECT_flesh!=Drone,p=4)->sterben</li>
+    <li>die(SUBJECT_flesh!=Mechanoid,SUBJECT_flesh!=Drone)->verenden</li>
+    <li>die(SUBJECT_flesh!=Mechanoid,SUBJECT_flesh!=Drone)->das Zeitliche segnen</li>
     <li>die(SUBJECT_flesh==Mechanoid)->abschalten</li>
     <li>die(SUBJECT_flesh==Mechanoid)->aufhören zu funktionieren</li>
     <li>die(SUBJECT_flesh==Mechanoid)->ausfallen</li>
-    <li>died(SUBJECT_flesh!=Mechanoid,p=2)->starb</li>
-    <li>died(SUBJECT_flesh!=Mechanoid)->erlag den Verletzungen</li>
-    <li>died(SUBJECT_flesh!=Mechanoid)->verschied</li>
+    <li>die(SUBJECT_flesh==Drone)->abschalten</li>
+    <li>die(SUBJECT_flesh==Drone)->aufhören zu funktionieren</li>
+    <li>die(SUBJECT_flesh==Drone)->ausfallen</li>
+    <li>died(SUBJECT_flesh!=Mechanoid,SUBJECT_flesh!=Drone,p=4)->starb</li>
+    <li>died(SUBJECT_flesh!=Mechanoid,SUBJECT_flesh!=Drone,p=4)->verstarb</li>
+    <li>died(SUBJECT_flesh!=Mechanoid,SUBJECT_flesh!=Drone)->schloss für immer die Augen</li>
+    <li>died(SUBJECT_flesh!=Mechanoid,SUBJECT_flesh!=Drone)->kam ums Leben</li>
+    <li>died(SUBJECT_flesh!=Mechanoid,SUBJECT_flesh!=Drone)->segnete das Zeitliche</li>
+    <li>died(SUBJECT_flesh!=Mechanoid,SUBJECT_flesh!=Drone)->tat [SUBJECT_possessive]en letzten Atemzug</li>
+    <li>died(SUBJECT_flesh!=Mechanoid,SUBJECT_flesh!=Drone)->verschied</li>
+    <li>died(SUBJECT_flesh!=Mechanoid,SUBJECT_flesh!=Drone)->verendete</li>
     <li>died(SUBJECT_flesh==Mechanoid)->schaltete sich ab</li>
     <li>died(SUBJECT_flesh==Mechanoid)->hörte auf zu funktionieren</li>
     <li>died(SUBJECT_flesh==Mechanoid)->fiel aus</li>
-    <li>zumTod(SUBJECT_flesh!=Mechanoid)->zum Tod</li>
-    <li>zumTod(SUBJECT_flesh==Mechanoid)->zur Abschaltung</li>
+    <li>died(SUBJECT_flesh==Drone)->schaltete sich ab</li>
+    <li>died(SUBJECT_flesh==Drone)->hörte auf zu funktionieren</li>
+    <li>died(SUBJECT_flesh==Drone)->fiel aus</li>
   </Transition_Died.rulePack.rulesStrings>
   
   <!-- EN:
@@ -70,10 +79,9 @@
     <li>died->zerbarst [flavor]</li>
     <li>flavor->in tausend [pieces]</li>
     <li>flavor-></li>
-    <li>flavorsuffix(SUBJECT_flesh!=Mechanoid,p=2)->, dabei flogen [Gore] in alle Himmelsrichtungen</li>
-    <li>flavorsuffix(SUBJECT_flesh!=Mechanoid)->, was einen kleinen Haufen voller [Gore] hinterließ</li>
+    <li>flavorsuffix(SUBJECT_flesh!=Mechanoid,SUBJECT_flesh!=Drone,p=2)->, dabei flogen [Gore] in alle Himmelsrichtungen</li>
+    <li>flavorsuffix(SUBJECT_flesh!=Mechanoid,SUBJECT_flesh!=Drone)->, was einen kleinen Haufen voller [Gore] hinterließ</li>
     <li>flavorsuffix->, was einen kleinen Krater hinterließ</li>
-    <li>flavorsuffix(p=4)-></li>
     <li>pieces->Stücke</li>
     <li>pieces->Teile</li>
     <li>pieces->Fragmente</li>
@@ -89,13 +97,17 @@
   -->
   <Transition_DiedInclude.rulePack.rulesStrings>
     <li>r_logentry(p=1.5)->[CULPRITHEDIFF_labelNoun] ließ [SUBJECT_nameDefAcc] [die].</li>
-    <li>r_logentry(p=1.5)->[CULPRITHEDIFF_labelNoun] führte [zumTod] von [SUBJECT_nameDefDat].</li>
+    <li>r_logentry(p=1.5)->[CULPRITHEDIFF_labelNoun] tötete [SUBJECT_nameDefAcc].</li>
+    <li>r_logentry(p=1.5)->[CULPRITHEDIFF_labelNoun] brachte [SUBJECT_nameDefAcc] um.</li>
     <li>r_logentry(p=1.5)->[CULPRITHEDIFF_labelNoun] kostete [SUBJECT_nameDefAcc] das Leben.</li>
     <li>r_logentry(p=1.5)->[CULPRITHEDIFF_labelNounPretty] ließ [SUBJECT_nameDefAcc] [die].</li>
-    <li>r_logentry(p=1.5)->[CULPRITHEDIFF_labelNounPretty] führte [zumTod] von [SUBJECT_nameDefDat].</li>
+    <li>r_logentry(p=1.5)->[CULPRITHEDIFF_labelNounPretty] tötete [SUBJECT_nameDefAcc].</li>
+    <li>r_logentry(p=1.5)->[CULPRITHEDIFF_labelNounPretty] brachte [SUBJECT_nameDefAcc] um.</li>
     <li>r_logentry(p=1.5)->[CULPRITHEDIFF_labelNounPretty] kostete [SUBJECT_nameDefAcc] das Leben.</li>
+    <li>r_logentry->[SUBJECT_definite] [died] [duetoa] {lookup: [CULPRITHEDIFF_labelNoun]; decline_other; 1} [flavorsuffix].</li>
     <li>r_logentry->[SUBJECT_definite] [died].</li>
     <li>r_logentry->[SUBJECT_definite] [died] [flavorsuffix].</li>
+    <li>flavorsuffix(p=4)-></li>
     <li>SUBJECT_nameDefAcc->{replace: [SUBJECT_definite]; ">der "-">den "}</li>
     <li>SUBJECT_nameDefDat->{replace: [SUBJECT_definite]; ">der "-">dem "; ">die "-">der "; ">das "-">dem "}</li>
   </Transition_DiedInclude.rulePack.rulesStrings>
@@ -135,6 +147,7 @@
     <li>r_logentry(p=0.5)->[CULPRITHEDIFF_labelNoun] löste bei [SUBJECT_nameDefDat] einen Kollaps aus.</li>
     <li>r_logentry->[CULPRITHEDIFF_labelNounPretty] ließ [SUBJECT_nameDefAcc] [helplessly] [collapse].</li>
     <li>r_logentry(p=0.5)->[CULPRITHEDIFF_labelNounPretty] löste bei [SUBJECT_nameDefDat] einen Kollaps aus.</li>
+    <li>r_logentry->[SUBJECT_definite] [collapsed] [duetoa] {lookup: [CULPRITHEDIFF_labelNoun]; decline_other; 1}.</li>
     <li>r_logentry(p=0.1)->[SUBJECT_definite] [collapsed].</li>
     <li>collapse->kollabieren</li>
     <li>collapse->zusammenbrechen</li>
@@ -142,17 +155,24 @@
     <li>collapse(SUBJECT_flesh==Mechanoid)->abstürzen</li>
     <li>collapse(SUBJECT_flesh==Mechanoid)->zum Stillstand kommen</li>
     <li>collapse(SUBJECT_flesh==Mechanoid)->außer Betrieb gehen</li>
+    <li>collapse(SUBJECT_flesh==Drone)->abstürzen</li>
+    <li>collapse(SUBJECT_flesh==Drone)->zum Stillstand kommen</li>
+    <li>collapse(SUBJECT_flesh==Drone)->außer Betrieb gehen</li>
     <li>collapsed->kollabierte</li>
     <li>collapsed->brach [helplessly] zusammen</li>
     <li>collapsed->sackte [helplessly] zu Boden</li>
     <li>collapsed(SUBJECT_flesh==Mechanoid)->stürzte [helplessly] ab</li>
     <li>collapsed(SUBJECT_flesh==Mechanoid)->kam [helplessly] zum Stillstand</li>
     <li>collapsed(SUBJECT_flesh==Mechanoid)->ging [helplessly] außer Betrieb</li>
+    <li>collapsed(SUBJECT_flesh==Drone)->stürzte [helplessly] ab</li>
+    <li>collapsed(SUBJECT_flesh==Drone)->kam [helplessly] zum Stillstand</li>
+    <li>collapsed(SUBJECT_flesh==Drone)->ging [helplessly] außer Betrieb</li>
     <li>helplessly(p=1.5)-></li>
     <li>helplessly->hilflos</li>
-    <li>helplessly(SUBJECT_flesh!=Mechanoid)->bewusstlos</li>
-    <li>helplessly(SUBJECT_flesh!=Mechanoid)->kraftlos</li>
+    <li>helplessly(SUBJECT_flesh!=Mechanoid,SUBJECT_flesh!=Drone)->bewusstlos</li>
+    <li>helplessly(SUBJECT_flesh!=Mechanoid,SUBJECT_flesh!=Drone)->kraftlos</li>
     <li>helplessly(SUBJECT_flesh==Mechanoid)->unkontrolliert</li>
+    <li>helplessly(SUBJECT_flesh==Drone)->unkontrolliert</li>
     <li>SUBJECT_nameDefAcc->{replace: [SUBJECT_definite]; ">der "-">den "}</li>
     <li>SUBJECT_nameDefDat->{replace: [SUBJECT_definite]; ">der "-">dem "; ">die "-">der "; ">das "-">dem "}</li>
   </Transition_Downed.rulePack.rulesStrings>
@@ -163,9 +183,9 @@
     <li>duetoa(p=0.5)->thanks to</li>
   -->
   <Transition_Include.rulePack.rulesStrings>
-    <li>duetoa->aufgrund von</li>
+    <li>duetoa->aufgrund</li>
     <li>duetoa(p=0.5)->wegen</li>
-    <li>duetoa(p=0.5)->verursacht durch</li>
+    <li>duetoa(p=0.5)->infolge</li>
   </Transition_Include.rulePack.rulesStrings>
   
 </LanguageData>

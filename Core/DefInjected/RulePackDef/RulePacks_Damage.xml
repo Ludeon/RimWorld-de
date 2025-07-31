@@ -15,17 +15,24 @@
     <li>destroyed_past->detonated</li>
   -->
   <Damage_Bomb.rulePack.rulesStrings>
+    <li>was_damaged(RECIPIENT_flesh!=Mechanoid,RECIPIENT_flesh!=Drone)->verletzt</li>
+    <li>was_damaged(RECIPIENT_flesh!=Mechanoid,RECIPIENT_flesh!=Drone)->verwundet</li>
+    <li>was_damaged(RECIPIENT_flesh==Mechanoid)->beschädigt</li>
+    <li>was_damaged(RECIPIENT_flesh==Drone)->beschädigt</li>
     <li>damaged_past(p=2)->sprengte</li>
-    <li>damaged_past(p=2)->zerfetzte</li>
-    <li>damaged_past->verletzte</li>
-    <li>damaged_past->beschädigte</li>
-    <li>damaged_past->verwundete</li>
-    <li>damaged_past->verletzte</li>
-    <li>destroyed->zertrümmerte</li>
-    <li>destroyed->zerquetschte</li>
-    <li>destroyed->zerstörte</li>
-    <li>destroyed->vernichtete</li>
-    <li>destroyed->sprengte</li>
+    <li>damaged_past(p=2,RECIPIENT_flesh!=Mechanoid,RECIPIENT_flesh!=Drone)->zerfetzte</li>
+    <li>damaged_past(RECIPIENT_flesh!=Mechanoid,RECIPIENT_flesh!=Drone)->verletzte</li>
+    <li>damaged_past(RECIPIENT_flesh!=Mechanoid,RECIPIENT_flesh!=Drone)->verwundete</li>
+    <li>damaged_past(RECIPIENT_flesh==Mechanoid)->beschädigte</li>
+    <li>damaged_past(RECIPIENT_flesh==Drone)->beschädigte</li>
+    <li>was_destroyed(RECIPIENT_flesh!=Mechanoid,RECIPIENT_flesh!=Drone)->zerfetzt</li>
+    <li>was_destroyed->zerstört</li>
+    <li>was_destroyed->vernichtet</li>
+    <li>was_destroyed->gesprengt</li>
+    <li>destroyed_past(RECIPIENT_flesh!=Mechanoid,RECIPIENT_flesh!=Drone)->zerfetzte</li>
+    <li>destroyed_past->zerstörte</li>
+    <li>destroyed_past->vernichtete</li>
+    <li>destroyed_past->sprengte</li>
   </Damage_Bomb.rulePack.rulesStrings>
   
   <!-- EN:
@@ -35,10 +42,14 @@
     <li>destroyed_past->damaged_past</li>
   -->
   <Damage_EMP.rulePack.rulesStrings>
+    <li>was_damaged->elektrisiert</li>
+    <li>was_damaged->geschockt</li>
+    <li>was_damaged->elektrifiziert</li>
     <li>damaged_past->elektrisierte</li>
     <li>damaged_past->schockte</li>
     <li>damaged_past->elektrifizierte</li>
-    <li>destroyed_past->damaged_past</li>
+    <li>was_destroyed->[was_damaged]</li>
+    <li>destroyed_past->[damaged_past]</li>
   </Damage_EMP.rulePack.rulesStrings>
   
   <!-- EN:
@@ -49,11 +60,12 @@
     <li>destroyed_past->damaged_past</li>
   -->
   <Damage_Extinguish.rulePack.rulesStrings>
+    <li>was_damaged->abgelöscht</li>
+    <li>was_damaged->eingeschäumt</li>
     <li>damaged_past->löschte</li>
-    <li>damaged_past->überschwemmte</li>
-    <li>damaged_past->schäumte</li>
-    <li>damaged_past->überflutete</li>
-    <li>destroyed_past->damaged_past</li>
+    <li>damaged_past->beschäumte</li>
+    <li>was_destroyed->[was_damaged]</li>
+    <li>destroyed_past->[damaged_past]</li>
   </Damage_Extinguish.rulePack.rulesStrings>
   
   <!-- EN:
@@ -91,32 +103,30 @@
     <li>destroyed_present->detonating</li>
   -->
   <Damage_Flame.rulePack.rulesStrings>
-    <li>damaged_past(p=2)->verwüstete</li>
+    <li>was_damaged(p=2)->angesengt</li>
+    <li>was_damaged(p=2)->gekocht</li>
+    <li>was_damaged(p=2)->in Brand gesetzt</li>
+    <li>was_damaged(p=2)->in Flammen gesetzt</li>
+    <li>was_damaged(p=2)->gebraten</li>
     <li>damaged_past(p=2)->versengte</li>
     <li>damaged_past(p=2)->verbrannte</li>
     <li>damaged_past(p=2)->kochte</li>
-    <li>damaged_past(p=2)->entzündete</li>
     <li>damaged_past(p=2)->briet</li>
-    <li>damaged_past->verletzte</li>
-    <li>damaged_past->beschädigte</li>
-    <li>damaged_past->verwundete</li>
-    <li>damaged_present(p=2)->verwüstet</li>
     <li>damaged_present(p=2)->versengt</li>
     <li>damaged_present(p=2)->verbrennt</li>
     <li>damaged_present(p=2)->kocht</li>
-    <li>damaged_present(p=2)->entzündet</li>
     <li>damaged_present(p=2)->brät</li>
-    <li>damaged_present->verletzt</li>
-    <li>damaged_present->beschädigt</li>
-    <li>damaged_present->verwundet</li>
+    <li>was_destroyed->eingeäschert</li>
+    <li>was_destroyed->verkohlt</li>
+    <li>was_destroyed->vernichtet</li>
+    <li>was_destroyed->zerstört</li>
+    <li>was_destroyed->abgefackelt</li>
     <li>destroyed_past->vernichtete</li>
     <li>destroyed_past->verkohlte</li>
     <li>destroyed_past->zerstörte</li>
-    <li>destroyed_past->sprengte</li>
     <li>destroyed_present->vernichtet</li>
     <li>destroyed_present->verkohlt</li>
     <li>destroyed_present->zerstört</li>
-    <li>destroyed_present->sprengt</li>
   </Damage_Flame.rulePack.rulesStrings>
   
   <!-- EN:
@@ -126,10 +136,12 @@
     <li>destroyed_past->damaged_past</li>
   -->
   <Damage_Smoke.rulePack.rulesStrings>
-    <li>damaged_past->verrauchte</li>
+    <li>was_damaged->vernebelt</li>
+    <li>was_damaged->eingenebelt</li>
+    <li>was_damaged->umnebelt</li>
     <li>damaged_past->vernebelte</li>
-    <li>damaged_past->bewölkte</li>
-    <li>destroyed_past->damaged_past</li>
+    <li>was_destroyed->[was_damaged]</li>
+    <li>destroyed_past->[damaged_past]</li>
   </Damage_Smoke.rulePack.rulesStrings>
   
   <!-- EN:
@@ -140,11 +152,17 @@
     <li>destroyed_past->damaged_past</li>
   -->
   <Damage_Stun.rulePack.rulesStrings>
+    <li>was_damaged->betäubt</li>
+    <li>was_damaged->lahmgelegt</li>
+    <li>was_damaged->verwirrt</li>
+    <li>was_damaged->gestoppt</li>
+    <li>was_damaged->gelähmt</li>
     <li>damaged_past->betäubte</li>
     <li>damaged_past->verwirrte</li>
     <li>damaged_past->stoppte</li>
-    <li>damaged_past->verdutzte</li>
-    <li>destroyed_past->damaged_past</li>
+    <li>damaged_past->lähmte</li>
+    <li>was_destroyed->[was_damaged]</li>
+    <li>destroyed_past->[damaged_past]</li>
   </Damage_Stun.rulePack.rulesStrings>
   
 </LanguageData>

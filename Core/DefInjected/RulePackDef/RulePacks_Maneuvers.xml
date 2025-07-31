@@ -37,13 +37,14 @@
     <li>damaged_inf->beißen</li>
     <li>damaged_past->biss</li>
     <li>damaged_present->beißt</li>
-    <li>damaged_adj->beißenden</li>
-    <li>damaged_type->Bissangriff</li>
-    <li>flavortext_consequence(RECIPIENT_flesh!=Mechanoid)->das darunterliegende Fleisch freilegte</li>
+    <li>was_damaged->gebissen</li>
+    <li>flavortext_consequence(RECIPIENT_flesh!=Mechanoid,RECIPIENT_flesh!=EntityMechanical,RECIPIENT_flesh!=Drone)->das darunterliegende Fleisch freilegte</li>
     <li>flavortext_consequence(RECIPIENT_flesh==Mechanoid)->die interne Maschinerie freilegte</li>
-    <li>flavortext_consequence(RECIPIENT_flesh!=Mechanoid)->grässliche Spuren in der Haut hinterließ</li>
+    <li>flavortext_consequence(RECIPIENT_flesh==Drone)->die interne Maschinerie freilegte</li>
+    <li>flavortext_consequence(RECIPIENT_flesh!=Mechanoid,RECIPIENT_flesh!=EntityMechanical,RECIPIENT_flesh!=Drone)->grässliche Spuren in der Haut hinterließ</li>
     <li>flavortext_consequence(RECIPIENT_flesh==Mechanoid)->grässliche Spuren im Metall hinterließ</li>
-    <li>flavortext_consequence(RECIPIENT_flesh!=Mechanoid)->eine riesige Bisswunde hinterließ</li>
+    <li>flavortext_consequence(RECIPIENT_flesh==Drone)->grässliche Spuren im Metall hinterließ</li>
+    <li>flavortext_consequence(RECIPIENT_flesh!=Mechanoid,RECIPIENT_flesh!=EntityMechanical,RECIPIENT_flesh!=Drone)->eine riesige Bisswunde hinterließ</li>
     <li>destroyed_past->zerbiss</li>
     <li>destroyed_past->zerkaute</li>
     <li>destroyed_past->zerriss</li>
@@ -58,10 +59,10 @@
     <li>was_destroyed->zerkaut</li>
     <li>was_destroyed->zerrissen</li>
     <li>was_destroyed->zerfressen</li>
-    <li>destroyed_suffix(RECIPIENT_flesh!=Mechanoid)->in Fetzen</li>
-    <li>destroyed_suffix(RECIPIENT_flesh!=Mechanoid)->in Streifen</li>
-    <li>destroyed_suffix(RECIPIENT_flesh!=Mechanoid)->in blutige Streifen</li>
-    <li>destroyed_suffix(RECIPIENT_flesh!=Mechanoid)->bis zur Unkenntlichkeit</li>
+    <li>destroyed_suffix(RECIPIENT_flesh!=Mechanoid,RECIPIENT_flesh!=EntityMechanical,RECIPIENT_flesh!=Drone)->in Fetzen</li>
+    <li>destroyed_suffix(RECIPIENT_flesh!=Mechanoid,RECIPIENT_flesh!=EntityMechanical,RECIPIENT_flesh!=Drone)->in Streifen</li>
+    <li>destroyed_suffix(RECIPIENT_flesh!=Mechanoid,RECIPIENT_flesh!=EntityMechanical,RECIPIENT_flesh!=Drone)->in blutige Streifen</li>
+    <li>destroyed_suffix(RECIPIENT_flesh!=Mechanoid,RECIPIENT_flesh!=EntityMechanical,RECIPIENT_flesh!=Drone)->bis zur Unkenntlichkeit</li>
   </Maneuver_Bite.rulePack.rulesStrings>
   
   <!-- EN:
@@ -69,8 +70,11 @@
     <li>r_logentry->[INITIATOR_definite] tried to kick [TOOL_label] in [RECIPIENT_definite]'s eyes, but [RECIPIENT_definite] blocked it.</li>
   -->
   <Maneuver_KickMaterialInEyes_MeleeDodge.rulePack.rulesStrings>
-    <li>r_logentry->[INITIATOR_definite] versuchte, [TOOL_label] in [RECIPIENT_label]'s Augen zu werfen, aber [RECIPIENT_definite] sprang zur Seite.</li>
-    <li>r_logentry->[INITIATOR_definite] versuchte, [TOOL_label] in [RECIPIENT_label]'s Augen zu werfen, aber [RECIPIENT_definite] konnte es abwehren.</li>
+    <li>r_logentry->[INITIATOR_definite] versuchte, [TOOL_label] in [RECIPIENT_label]'s [eyes] zu werfen, aber [RECIPIENT_definite] wich aus.</li>
+    <li>r_logentry->[INITIATOR_definite] versuchte, [TOOL_label] in [RECIPIENT_label]'s [eyes] zu werfen, aber [RECIPIENT_definite] konnte es abwehren.</li>
+    <li>eyes(RECIPIENT_flesh!=Mechanoid,RECIPIENT_flesh!=Drone)->Augen</li>
+    <li>eyes(RECIPIENT_flesh==Drone)->Optiksensoren</li>
+    <li>eyes(RECIPIENT_flesh==Mechanoid)->Optiksensoren</li>
   </Maneuver_KickMaterialInEyes_MeleeDodge.rulePack.rulesStrings>
   
   <!-- EN:
@@ -78,15 +82,21 @@
     <li>r_logentry(p=0.2)->[INITIATOR_definite] kicked a spray of [TOOL_label] in [RECIPIENT_definite]'s eyes.</li>
   -->
   <Maneuver_KickMaterialInEyes_MeleeHit.rulePack.rulesStrings>
-    <li>r_logentry->[INITIATOR_definite] warf [TOOL_label] in [RECIPIENT_label]'s Augen.</li>
-    <li>r_logentry(p=0.2)->[INITIATOR_definite] warf eine Ladung [TOOL_label] in [RECIPIENT_label]'s Augen.</li>
+    <li>r_logentry->[INITIATOR_definite] warf [TOOL_label] in [RECIPIENT_label]'s [eyes].</li>
+    <li>r_logentry(p=0.2)->[INITIATOR_definite] warf eine Ladung [TOOL_label] in [RECIPIENT_label]'s [eyes].</li>
+    <li>eyes(RECIPIENT_flesh!=Mechanoid,RECIPIENT_flesh!=Drone)->Augen</li>
+    <li>eyes(RECIPIENT_flesh==Drone)->Optiksensoren</li>
+    <li>eyes(RECIPIENT_flesh==Mechanoid)->Optiksensoren</li>
   </Maneuver_KickMaterialInEyes_MeleeHit.rulePack.rulesStrings>
   
   <!-- EN:
     <li>r_logentry->[INITIATOR_definite] tried to kick [TOOL_label] in [RECIPIENT_definite]'s eyes, but missed.</li>
   -->
   <Maneuver_KickMaterialInEyes_MeleeMiss.rulePack.rulesStrings>
-    <li>r_logentry->[INITIATOR_definite] versuchte, [TOOL_label] in [RECIPIENT_label]'s Augen zu werfen, aber verfehlte.</li>
+    <li>r_logentry->[INITIATOR_definite] versuchte, [TOOL_label] in [RECIPIENT_label]'s [eyes] zu werfen, aber verfehlte.</li>
+    <li>eyes(RECIPIENT_flesh!=Mechanoid,RECIPIENT_flesh!=Drone)->Augen</li>
+    <li>eyes(RECIPIENT_flesh==Drone)->Optiksensoren</li>
+    <li>eyes(RECIPIENT_flesh==Mechanoid)->Optiksensoren</li>
   </Maneuver_KickMaterialInEyes_MeleeMiss.rulePack.rulesStrings>
   
   <!-- EN:
@@ -129,9 +139,7 @@
     <li>damaged_past->stieß</li>
     <li>damaged_present->stößt</li>
     <li>was_damaged->gestoßen</li>
-    <li>damaged_adj->stoßend</li>
-    <li>damaged_type->Stoßangriff</li>
-    <li>flavortext_consequence(RECIPIENT_flesh!=Mechanoid)->eine riesige Prellung hinterließ</li>
+    <li>flavortext_consequence(RECIPIENT_flesh!=Mechanoid,RECIPIENT_flesh!=EntityMechanical,RECIPIENT_flesh!=Drone)->eine riesige Prellung hinterließ</li>
     <li>flavortext_consequence->den Bereich sichtlich deformierte</li>
     <li>flavortext_consequence->[RECIPIENT_objective] aus dem Gleichgewicht brachte</li>
     <li>flavortext_consequence->[RECIPIENT_objective] zur Seite stieß</li>
@@ -149,7 +157,7 @@
     <li>was_destroyed->zerbrochen</li>
     <li>destroyed_suffix->in Stücke</li>
     <li>destroyed_suffix->in kleine Teile</li>
-    <li>destroyed_suffix(RECIPIENT_flesh!=Mechanoid)->zu Staub</li>
+    <li>destroyed_suffix->zu Staub</li>
     <li>destroyed_suffix->in Fragmente</li>
   </Maneuver_Poke.rulePack.rulesStrings>
   
@@ -167,15 +175,16 @@
     <li>destroyed_suffix(recipient_flesh!=Mechanoid)->[to] a pile of gore</li>
   -->
   <Maneuver_Scratch.rulePack.rulesStrings>
-    <li>flavortext_consequence(RECIPIENT_flesh!=Mechanoid)->das darunterliegende Fleisch freilegte</li>
+    <li>flavortext_consequence(RECIPIENT_flesh!=Mechanoid,RECIPIENT_flesh!=EntityMechanical,RECIPIENT_flesh!=Drone)->das darunterliegende Fleisch freilegte</li>
     <li>flavortext_consequence(RECIPIENT_flesh==Mechanoid)->die interne Maschinerie freilegte</li>
-    <li>flavortext_consequence(RECIPIENT_flesh!=Mechanoid)->eine blutende Kratzwunde hinterließ</li>
+    <li>flavortext_consequence(RECIPIENT_flesh==Drone)->die interne Maschinerie freilegte</li>
+    <li>flavortext_consequence(RECIPIENT_flesh!=Mechanoid,RECIPIENT_flesh!=EntityMechanical,RECIPIENT_flesh!=Drone)->eine blutende Kratzwunde hinterließ</li>
     <li>destroyed_suffix(RECIPIENT_flesh!=Mechanoid)->in blutige Streifen</li>
     <li>destroyed_suffix->in Streifen</li>
-    <li>destroyed_suffix(RECIPIENT_flesh!=Mechanoid)->in blutige Stücke</li>
+    <li>destroyed_suffix(RECIPIENT_flesh!=Mechanoid,RECIPIENT_flesh!=EntityMechanical,RECIPIENT_flesh!=Drone)->in blutige Stücke</li>
     <li>destroyed_suffix->in Stücke</li>
     <li>destroyed_suffix->in Fragmente</li>
-    <li>destroyed_suffix(RECIPIENT_flesh!=Mechanoid)->zu einem Bluthaufen</li>
+    <li>destroyed_suffix(RECIPIENT_flesh!=Mechanoid,RECIPIENT_flesh!=EntityMechanical,RECIPIENT_flesh!=Drone)->zu einem Bluthaufen</li>
   </Maneuver_Scratch.rulePack.rulesStrings>
   
   <!-- EN:
@@ -203,12 +212,15 @@
     <li>destroyed_present->ripping</li>
   -->
   <Maneuver_Scratch_Damage.rulePack.rulesStrings>
-    <li>damaged_inf->kratzen</li>
-    <li>damaged_past->kratzte</li>
-    <li>damaged_present->kratzt</li>
+    <li>damaged_inf(p=4)->kratzen</li>
+    <li>damaged_inf->ritzen</li>
+    <li>damaged_past(p=4)->kratzte</li>
+    <li>damaged_past->schnitt</li>
+    <li>damaged_past->ritzte</li>
+    <li>damaged_present(p=4)->kratzt</li>
+    <li>damaged_present->schneidet</li>
+    <li>damaged_present->ritzt</li>
     <li>was_damaged->gekratzt</li>
-    <li>damaged_adj->kratzend</li>
-    <li>damaged_type->Kratzangriff</li>
     <li>destroyed_past->verstümmelte</li>
     <li>destroyed_past->zerfleischte</li>
     <li>destroyed_past->zerriss</li>
@@ -270,14 +282,13 @@
     <li>damaged_inf->schlitzen</li>
     <li>damaged_past->schnitt</li>
     <li>damaged_past->schlitzte</li>
-    <li>damaged_present->schnitt</li>
+    <li>damaged_present->schneidet</li>
     <li>damaged_present->schlitzt</li>
-    <li>damaged_adj->schneidend</li>
-    <li>damaged_adj->schlitzend</li>
-    <li>damaged_type->Schnittangriff</li>
-    <li>flavortext_consequence(RECIPIENT_flesh!=Mechanoid)->das darunterliegende Fleisch freilegte</li>
+    <li>was_damaged->geschnitten</li>
+    <li>flavortext_consequence(RECIPIENT_flesh!=Mechanoid,RECIPIENT_flesh!=EntityMechanical,RECIPIENT_flesh!=Drone)->das darunterliegende Fleisch freilegte</li>
     <li>flavortext_consequence(RECIPIENT_flesh==Mechanoid)->die interne Maschinerie freilegte</li>
-    <li>flavortext_consequence(RECIPIENT_flesh!=Mechanoid)->eine riesige Schnittwunde hinterließ</li>
+    <li>flavortext_consequence(RECIPIENT_flesh==Drone)->die interne Maschinerie freilegte</li>
+    <li>flavortext_consequence(RECIPIENT_flesh!=Mechanoid,RECIPIENT_flesh!=EntityMechanical,RECIPIENT_flesh!=Drone)->eine riesige Schnittwunde hinterließ</li>
     <li>destroyed_past->zweiteilte</li>
     <li>destroyed_past->spaltete</li>
     <li>destroyed_past->halbierte</li>
@@ -307,13 +318,13 @@
     <li>destroyed_suffix->[to] fragments</li>
   -->
   <Maneuver_Smash.rulePack.rulesStrings>
-    <li>flavortext_consequence(RECIPIENT_flesh!=Mechanoid)->eine riesige Prellung hinterließ</li>
+    <li>flavortext_consequence(RECIPIENT_flesh!=Mechanoid,RECIPIENT_flesh!=EntityMechanical,RECIPIENT_flesh!=Drone)->eine riesige Prellung hinterließ</li>
     <li>flavortext_consequence->den Bereich sichtlich deformierte</li>
     <li>flavortext_consequence->[RECIPIENT_objective] aus dem Gleichgewicht brachte</li>
     <li>flavortext_consequence->[RECIPIENT_objective] zur Seite stieß</li>
     <li>destroyed_suffix->in Stücke</li>
     <li>destroyed_suffix->in kleine Teile</li>
-    <li>destroyed_suffix(RECIPIENT_flesh!=Mechanoid)->zu Staub</li>
+    <li>destroyed_suffix->zu Staub</li>
     <li>destroyed_suffix->in Fragmente</li>
   </Maneuver_Smash.rulePack.rulesStrings>
   
@@ -343,42 +354,26 @@
   <Maneuver_Smash_Damage.rulePack.rulesStrings>
     <li>damaged_inf(p=3)->schlagen</li>
     <li>damaged_inf->rammen</li>
-    <li>damaged_inf(p=2)->hauen</li>
-    <li>damaged_inf->prügeln</li>
-    <li>damaged_inf->quetschen</li>
+    <li>damaged_inf->hauen</li>
     <li>damaged_past(p=3)->schlug</li>
     <li>damaged_past->rammte</li>
-    <li>damaged_past(p=2)->haute</li>
-    <li>damaged_past->prügelte</li>
-    <li>damaged_past->quetschte</li>
+    <li>damaged_past->haute</li>
     <li>damaged_present(p=3)->schlägt</li>
     <li>damaged_present->rammt</li>
-    <li>damaged_present(p=2)->haut</li>
-    <li>damaged_present->prügelt</li>
-    <li>damaged_present->quetscht</li>
+    <li>damaged_present->haut</li>
     <li>was_damaged(p=3)->geschlagen</li>
     <li>was_damaged->gerammt</li>
-    <li>was_damaged(p=2)->gehauen</li>
-    <li>was_damaged->geprügelt</li>
-    <li>was_damaged->gequetscht</li>
-    <li>damaged_adj->schlagend</li>
-    <li>damaged_type->Schlagangriff</li>
+    <li>was_damaged->gehauen</li>
     <li>destroyed_past->zerquetschte</li>
     <li>destroyed_past->zerschmetterte</li>
-    <li>destroyed_past->zerbrach</li>
-    <li>destroyed_past->zerschlug</li>
     <li>destroyed_past->zertrümmerte</li>
     <li>destroyed_past->zerbarst</li>
     <li>destroyed_present->zerquetscht</li>
     <li>destroyed_present->zerschmettert</li>
-    <li>destroyed_present->zerbricht</li>
-    <li>destroyed_present->zerschlägt</li>
     <li>destroyed_present->zertrümmert</li>
     <li>destroyed_present->zerberstet</li>
     <li>was_destroyed->zerquetscht</li>
     <li>was_destroyed->zerschmettert</li>
-    <li>was_destroyed->zerbrochen</li>
-    <li>was_destroyed->zerschlagen</li>
     <li>was_destroyed->zertrümmert</li>
     <li>was_destroyed->zerborsten</li>
   </Maneuver_Smash_Damage.rulePack.rulesStrings>
@@ -424,11 +419,9 @@
     <li>damaged_present->pikst</li>
     <li>was_damaged(p=4)->gestochen</li>
     <li>was_damaged->gepikst</li>
-    <li>damaged_adj->stechend</li>
-    <li>damaged_type->Stichangriff</li>
-    <li>flavortext_consequence(RECIPIENT_flesh!=Mechanoid)->eine blutige Stichwunde hinterließ</li>
-    <li>flavortext_consequence(RECIPIENT_flesh!=Mechanoid)->eine aufgerissene Stichwunde hinterließ</li>
-    <li>flavortext_consequence(RECIPIENT_flesh!=Mechanoid)->eine blutende Stichwunde hinterließ</li>
+    <li>flavortext_consequence(RECIPIENT_flesh!=Mechanoid,RECIPIENT_flesh!=EntityMechanical,RECIPIENT_flesh!=Drone)->eine blutige Stichwunde hinterließ</li>
+    <li>flavortext_consequence(RECIPIENT_flesh!=Mechanoid,RECIPIENT_flesh!=EntityMechanical,RECIPIENT_flesh!=Drone)->eine aufgerissene Stichwunde hinterließ</li>
+    <li>flavortext_consequence(RECIPIENT_flesh!=Mechanoid,RECIPIENT_flesh!=EntityMechanical,RECIPIENT_flesh!=Drone)->eine blutende Stichwunde hinterließ</li>
     <li>destroyed_past->pfählte</li>
     <li>destroyed_past->durchlöcherte</li>
     <li>destroyed_past->durchbohrte</li>
@@ -443,7 +436,7 @@
     <li>was_destroyed->durchstochen</li>
     <li>destroyed_suffix->wie durch Butter</li>
     <li>destroyed_suffix->, was ein sauberes Loch hinterließ</li>
-    <li>destroyed_suffix(RECIPIENT_flesh!=Mechanoid,target_part_destroyed_count==1)->, was eine blutige Pfütze hinterließ</li>
+    <li>destroyed_suffix(RECIPIENT_flesh!=Mechanoid,RECIPIENT_flesh!=EntityMechanical,RECIPIENT_flesh!=Drone,target_part_destroyed_count==1)->, was eine blutige Pfütze hinterließ</li>
     <li>destroyed_suffix(target_part_destroyed_count==1)->, was unbekannte Flüssigkeiten austreten ließ</li>
   </Maneuver_Stab.rulePack.rulesStrings>
   

@@ -40,25 +40,35 @@
     <li>stumbled->staggered</li>
   -->
   <Event_Stun.rulePack.rulesStrings>
-    <li>r_logentry->[SUBJECT_definite] wurde vom Angriff [stunned].</li>
-    <li>r_logentry->[SUBJECT_definite] wurde von [INITIATOR_label]'s Angriff [stunned].</li>
+    <li>r_logentry->[SUBJECT_definite] wurde [temporary] [stunned].</li>
+    <li>r_logentry->[SUBJECT_definite] wurde durch den Angriff [temporary] [stunned2].</li>
+    <li>r_logentry->[SUBJECT_definite] wurde durch [INITIATOR_label]'s Angriff [temporary] [stunned2].</li>
     <li>stunned(p=3)->betäubt</li>
-    <li>stunned->überrascht</li>
-    <li>stunned->verwirrt</li>
-    <li>stunned->desorientiert</li>
+    <li>stunned->lahmgelegt</li>
+    <li>stunned->gestoppt</li>
+    <li>stunned->gelähmt</li>
+    <li>stunned->außer Gefecht gesetzt</li>
+    <li>stunned->handlungsunfähig gemacht</li>
+    <li>stunned2(p=3)->betäubt</li>
+    <li>stunned2->lahmgelegt</li>
+    <li>stunned2->verwirrt</li>
+    <li>stunned2->gestoppt</li>
+    <li>stunned2->desorientiert</li>
+    <li>stunned2->gelähmt</li>
+    <li>stunned2->außer Gefecht gesetzt</li>
+    <li>stunned2->handlungsunfähig gemacht</li>
+    <li>temporary->temporär</li>
+    <li>temporary->vorübergehend</li>
+    <li>temporary->kurzzeitig</li>
     <li>r_logentry->[SUBJECT_definite] [staggered].</li>
-    <li>r_logentry->[SUBJECT_definite] [staggered] vom Angriff.</li>
-    <li>r_logentry->[SUBJECT_definite] [staggered] von [INITIATOR_label]'s Angriff.</li>
-    <li>staggered(p=3)->strauchelte</li>
-    <li>staggered->stolperte</li>
-    <li>staggered->wankte</li>
-    <li>staggered->schwankte</li>
-    <li>r_logentry->[SUBJECT_definite] [stumbled] betäubt herum.</li>
-    <li>r_logentry->[SUBJECT_definite] [stumbled] verwirrt herum.</li>
-    <li>stumbled(p=3)->strauchelte</li>
-    <li>stumbled->stolperte</li>
-    <li>stumbled->wankte</li>
-    <li>stumbled->schwankte</li>
+    <li>r_logentry->[SUBJECT_definite] [staggered] durch den Angriff.</li>
+    <li>r_logentry->[SUBJECT_definite] [staggered] durch [INITIATOR_label]'s Angriff.</li>
+    <li>staggered(p=3,RECIPIENT_flesh!=Mechanoid,RECIPIENT_flesh!=EntityMechanical,RECIPIENT_flesh!=Drone)->strauchelte</li>
+    <li>staggered(RECIPIENT_flesh!=Mechanoid,RECIPIENT_flesh!=EntityMechanical,RECIPIENT_flesh!=Drone)->stolperte</li>
+    <li>staggered(RECIPIENT_flesh!=Mechanoid,RECIPIENT_flesh!=EntityMechanical,RECIPIENT_flesh!=Drone)->taumelte</li>
+    <li>staggered(RECIPIENT_flesh!=Mechanoid,RECIPIENT_flesh!=EntityMechanical,RECIPIENT_flesh!=Drone)->wankte</li>
+    <li>staggered(RECIPIENT_flesh!=Mechanoid,RECIPIENT_flesh!=EntityMechanical,RECIPIENT_flesh!=Drone)->schwankte</li>
+    <li>staggered->stockte</li>
   </Event_Stun.rulePack.rulesStrings>
   
 </LanguageData>

@@ -9,6 +9,7 @@ $dlcs = Get-ChildItem -Directory | Where-Object { Test-Path -Path (Join-Path -Pa
 # and the regex pattern to match the elements
 $items = [ordered]@{
 "DefInjected\FactionDef\*" = "\w+\.pawnsPlural"
+"DefInjected\HediffDef\*" = "\w+\.labelNoun"
 }
 
 # Header line for the output file

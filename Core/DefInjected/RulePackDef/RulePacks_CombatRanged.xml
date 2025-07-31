@@ -34,34 +34,28 @@
     <li>fromof->of</li>
   -->
   <Combat_ExplosionImpact.rulePack.rulesStrings>
-    <li>prefix->[blast_def] von [INITIATOR_label]'s [projectile]</li>
-    <li>prefix->[blast_def] von [INITIATOR_label]'s [WEAPON_label]</li>
-    <li>prefix->[blast_def] von [INITIATOR_label]'s [projectile]</li>
-    <li>prefix->[blast_def] von [INITIATOR_label]'s [WEAPON_label]</li>
-    <li>prefix->[blast_def] von [INITIATOR_nameDefDat]</li>
-    <li>prefix->[INITIATOR_label]'s [blast]</li>
-    <li>prefix->[INITIATOR_label]'s [blast] via [projectile]</li>
-    <li>prefix->[INITIATOR_label]'s [blast] via [WEAPON_label]</li>
-    <li>prefix->[INITIATOR_label]'s [projectile]</li>
-    <li>prefix->[INITIATOR_label]'s [WEAPON_label]</li>
+    <li>prefix->[INITIATORPROJECTILE_nameDefNom]</li>
+    <li>prefix->[INITIATORWEAPON_nameDefNom]</li>
+    <li>prefix(priority=-1)->[INITIATOR_label]'s [blast]</li>
     <li>r_logentry->[prefix] [destroyed_past] [RECIPIENT_label]'s [destroyed_targets_acc].</li>
     <li>r_logentry->[prefix] [destroyed_past] [strikeAdv] [RECIPIENT_label]'s [destroyed_targets_acc].</li>
-    <li>r_logentry->[prefix] [destroyed_past] [RECIPIENT_label]'s [destroyed_targets_acc], und [damaged_past] [recipient_part_damaged0_possessive_acc] [damaged_targets_acc].</li>
+    <li>r_logentry->[prefix] [destroyed_past] [RECIPIENT_label]'s [destroyed_targets_acc], und [damaged_past] [damaged_targets_acc_pron].</li>
     <li>r_logentry(recipient_part_destroyed_count==0)->[prefix] [damaged_past] [RECIPIENT_label]'s [destroyed_targets_acc].</li>
     <li>r_logentry(recipient_part_destroyed_count==0)->[prefix] [damaged_past] [strikeAdv] [RECIPIENT_label]'s [destroyed_targets_acc].</li>
     <li>r_logentry->[RECIPIENT_definite] wurde von [INITIATOR_nameDefDat] [was_damaged].</li>
     <li>r_logentry->[RECIPIENT_definite] wurde [strikeAdv] von [INITIATOR_nameDefDat] [was_damaged].</li>
+    <li>r_logentry->[prefix] [damaged_past] [RECIPIENT_nameDefAcc].</li>
+    <li>r_logentry->[INITIATOR_definite] [damaged_past] [RECIPIENT_nameDefAcc] mit [implement_dat].</li>
     <li>r_logentry->[RECIPIENT_definite] wurde [was_damaged].</li>
-    <li>r_logentry(p=0.001)->[RECIPIENT_definite] wurde von einer Explosion erfasst.</li>
-    <li>r_logentry(p=0.001)->[RECIPIENT_definite] wurde von einer Explosion getroffen.</li>
-    <li>blast_def->Die Explosion</li>
-    <li>blast_def->Die Detonation</li>
-    <li>blast_def->Die Druckwelle</li>
-    <li>blast_def->Der Einschlag</li>
+    <li>r_logentry(priority=-1)->[RECIPIENT_definite] wurde von einer Explosion erfasst.</li>
+    <li>r_logentry(priority=-1)->[RECIPIENT_definite] wurde von einer Explosion getroffen.</li>
     <li>blast->Explosion</li>
-    <li>blast->Detonation</li>
-    <li>blast->Druckwelle</li>
-    <li>blast->Einschlag</li>
+
+    <li>INITIATORPROJECTILE_nameDefNom(INITIATOR_genderResolved!=Male,INITIATOR_genderResolved!=Female,INITIATOR_genderResolved!=None)->{replace: [INITIATOR_definite]'s [projectile]; " [INITIATOR_label]'s [projectile]"-""} {lookup: [INITIATOR_label]; decline; 4}</li> <!-- non-pawn -->
+    <li>INITIATORPROJECTILE_nameDefNom(priority=-1)->[INITIATOR_label]'s [projectile]</li> <!-- pawn -->
+
+    <li>INITIATORWEAPON_nameDefNom(INITIATOR_genderResolved!=Male,INITIATOR_genderResolved!=Female,INITIATOR_genderResolved!=None)->{replace: [INITIATOR_definite]'s [WEAPON_label]; " [INITIATOR_label]'s [WEAPON_label]"-""} {lookup: [INITIATOR_label]; decline; 4}</li> <!-- non-pawn -->
+    <li>INITIATORWEAPON_nameDefNom(priority=-1)->[INITIATOR_label]'s [WEAPON_label]</li> <!-- pawn -->
   </Combat_ExplosionImpact.rulePack.rulesStrings>
   
   <!-- EN:
@@ -72,20 +66,36 @@
     <!-- Nominativ, unbestimmt -->
     <li>projectile(WEAPON_missing==True, p=3)->[PROJECTILE_label]</li>
     <li>projectile->[WEAPON_projectile_label]</li>
+    <li>projectile_the(WEAPON_missing==True, p=3)->{replace: [PROJECTILE_definite]$; " [PROJECTILE_label]$"-""}</li>
+    <li>projectile_the->{replace: [WEAPON_projectile_definite]$; " [WEAPON_projectile_label]$"-""}</li>
+    <li>projectile_the(priority=-1)->der</li>
     <!-- Dativ (benötigt "ein" oder [X_possessive] davor) -->
     <li>projectile_dat(WEAPON_missing==True, p=3)->[p_dat] [p_projectile_dat]</li>
     <li>projectile_dat->[wp_dat] [wp_projectile_dat]</li>
     <li>wp_dat->{replace: ^[WEAPON_projectile_indefinite]; "^ein [WEAPON_projectile_label]"-"em"; "^eine [WEAPON_projectile_label]"-"er"; "^"-""}</li>
-    <li>wp_projectile_dat->{replace: [WEAPON_projectile_label]; "er "-"en "; "e "-"en "; "es "-"en "}</li>
+    <li>wp_projectile_dat->{lookup: [WEAPON_projectile_label]; decline; 2}</li>
     <li>p_dat->{replace: ^[PROJECTILE_indefinite]; "^ein [PROJECTILE_label]"-"em"; "^eine [PROJECTILE_label]"-"er"; "^"-""}</li>
-    <li>p_projectile_dat->{replace: [PROJECTILE_label]; "er "-"en "; "e "-"en "; "es "-"en "}</li>
+    <li>p_projectile_dat->{lookup: [PROJECTILE_label]; decline; 2}</li>
     <!-- Akkusativ (benötigt "ein" oder [X_possessive] davor) -->
     <li>projectile_acc(WEAPON_missing==True, p=3)->[p_acc] [p_projectile_acc]</li>
     <li>projectile_acc->[wp_acc] [wp_projectile_acc]</li>
     <li>wp_acc->{replace: ^[WEAPON_projectile_definite]; "^der [WEAPON_projectile_label]"-"en"; "^die [WEAPON_projectile_label]"-"e"; "^das [WEAPON_projectile_label]"-""; "^"-""}</li>
-    <li>wp_projectile_acc->{replace: [WEAPON_projectile_label]; "er "-"en "}</li>
+    <li>wp_projectile_acc->{lookup: [WEAPON_projectile_label]; decline; 3}</li>
     <li>p_acc->{replace: ^[PROJECTILE_definite]; "^der [PROJECTILE_label]"-"en"; "^die [PROJECTILE_label]"-"e"; "^das [PROJECTILE_label]"-""; "^"-""}</li>
-    <li>p_projectile_acc->{replace: [PROJECTILE_label]; "er "-"en "}</li>
+    <li>p_projectile_acc->{lookup: [PROJECTILE_label]; decline; 3}</li>
+
+    <li>implement_dat->[weapon_dat_his] [weapon_dat]</li>
+    <li>weapon_dat->{lookup: [WEAPON_label]; decline; 6}</li>
+    <li>weapon_dat_his->[INITIATOR_possessive]{replace: ^[WEAPON_indefinite]; "^ein [WEAPON_label]"-"em"; "^eine [WEAPON_label]"-"er"; "^"-""}</li>
+
+    <li>ORIGINALTARGET_nameDefAcc(ORIGINALTARGET_genderResolved!=Male,ORIGINALTARGET_genderResolved!=Female,ORIGINALTARGET_genderResolved!=None)->{replace: [ORIGINALTARGET_definite]; "der [ORIGINALTARGET_label]"-"den"; "die [ORIGINALTARGET_label]"-"die"; "das [ORIGINALTARGET_label]"-"das"} {lookup: [ORIGINALTARGET_label]; decline; 7}</li> <!-- non-pawn -->
+    <li>ORIGINALTARGET_nameDefAcc(priority=-1)->{replace: [ORIGINALTARGET_definite]; ">der "-">den "}</li> <!-- pawn -->
+
+    <li>ORIGINALTARGET_nameDefNom(ORIGINALTARGET_genderResolved!=Male,ORIGINALTARGET_genderResolved!=Female,ORIGINALTARGET_genderResolved!=None)->{replace: [ORIGINALTARGET_definite]; " [ORIGINALTARGET_label]"-""} {lookup: [ORIGINALTARGET_label]; decline; 4}</li> <!-- non-pawn -->
+    <li>ORIGINALTARGET_nameDefNom(priority=-1)->[ORIGINALTARGET_definite]</li> <!-- pawn -->
+
+    <li>INITIATOR_nameDefNom(INITIATOR_genderResolved!=Male,INITIATOR_genderResolved!=Female,INITIATOR_genderResolved!=None)->{replace: [INITIATOR_definite]; " [INITIATOR_label]"-""} {lookup: [INITIATOR_label]; decline; 4}</li> <!-- non-pawn -->
+    <li>INITIATOR_nameDefNom(priority=-1)->[INITIATOR_definite]</li> <!-- pawn -->
   </Combat_RangedBase.rulePack.rulesStrings>
   
   <!-- EN:
@@ -146,23 +156,23 @@
     <li>missed->narrowly missed</li>
   -->
   <Combat_RangedDamage.rulePack.rulesStrings>
-    <li>r_logentry->[INITIATOR_label]'s [projectile] [destroyed_past] [RECIPIENT_label]'s [destroyed_targets_acc].</li>
-    <li>r_logentry(p=2)->[INITIATOR_label]'s [projectile] verfehlte [ORIGINALTARGET_nameDefAcc] [knapp] und [destroyed_past] stattdessen [RECIPIENT_label]'s [destroyed_targets_acc].</li>
-    <li>r_logentry(recipient_part_destroyed_count==1)->[RECIPIENT_label]'s [destroyed_targets] wurde von [INITIATOR_label]'s [projectile] [was_destroyed].</li>
-    <li>r_logentry(recipient_part_destroyed_count>1)->[RECIPIENT_label]'s [destroyed_targets] wurden von [INITIATOR_label]'s [projectile] [was_destroyed].</li>
-    <li>r_logentry(recipient_part_destroyed_count==0)->[INITIATOR_label]'s [projectile] [damaged_past] [RECIPIENT_label]'s [damaged_targets_acc].</li>
-    <li>r_logentry(recipient_part_destroyed_count==0,p=2)->[INITIATOR_label]'s [projectile] verfehlte [ORIGINALTARGET_nameDefAcc] und [damaged_past] stattdessen [RECIPIENT_label]'s [damaged_targets_acc].</li>
-    <li>r_logentry(recipient_part_destroyed_count==0,recipient_part_damaged_count==1)->[RECIPIENT_label]'s [damaged_targets] wurde von [INITIATOR_label]'s [projectile] [was_damaged].</li>
-    <li>r_logentry(recipient_part_destroyed_count==0,recipient_part_damaged_count>1)->[RECIPIENT_label]'s [damaged_targets] wurden von [INITIATOR_label]'s [projectile] [was_damaged].</li>
-    <li>r_logentry(p=3)->[INITIATOR_label]'s [projectile] [destroyed_past] [RECIPIENT_label]'s [destroyed_targets_acc], und [damaged_past] [recipient_part_damaged0_possessive_acc] [damaged_targets_acc].</li>
-    <li>r_logentry(p=6)->[INITIATOR_label]'s [projectile] verfehlte [ORIGINALTARGET_nameDefAcc] [knapp] und [destroyed_past] stattdessen [RECIPIENT_label]'s [destroyed_targets_acc], und [damaged_past] [recipient_part_damaged0_possessive_acc] [damaged_targets_acc].</li>
-    <li>r_logentry(p=0.2)->[INITIATOR_definite] traf [RECIPIENT_nameDefAcc] mit ein[projectile_dat].</li>
-    <li>r_logentry(p=0.2)->[INITIATOR_label]'s [projectile] traf [RECIPIENT_nameDefAcc].</li>
-    <li>r_logentry(p=0.4)->[INITIATOR_definite] verfehlte [ORIGINALTARGET_nameDefAcc] [knapp] und traf stattdessen [RECIPIENT_nameDefAcc] mit ein[projectile_dat].</li>
-    <li>r_logentry(p=0.4)->[INITIATOR_label]'s [projectile] verfehlte [ORIGINALTARGET_nameDefAcc] [knapp] und traf stattdessen [RECIPIENT_nameDefAcc].</li>
-    <li>r_logentry(p=0.2)->[INITIATOR_definite] traf [RECIPIENT_nameDefAcc] mit ein[projectile_dat], was eigentlich für [ORIGINALTARGET_nameDefAcc] bestimmt war.</li>
-    <li>projectile(p=0.05)->Schuss</li>
-    <li>projectile_dat(p=0.05)->em Schuss</li>
+    <li>r_logentry->[INITIATORPROJECTILE_nameDefNom] [destroyed_past] [RECIPIENT_label]'s [destroyed_targets_acc].</li>
+    <li>r_logentry(p=2)->[INITIATORPROJECTILE_nameDefNom] verfehlte [ORIGINALTARGET_nameDefAcc] [knapp] und [destroyed_past] stattdessen [RECIPIENT_label]'s [destroyed_targets_acc].</li>
+    <li>r_logentry(recipient_part_destroyed_count==1)->[RECIPIENT_label]'s [destroyed_targets] wurde von [INITIATORPROJECTILE_nameDefDat] [was_destroyed].</li>
+    <li>r_logentry(recipient_part_destroyed_count>1)->[RECIPIENT_label]'s [destroyed_targets] wurden von [INITIATORPROJECTILE_nameDefDat] [was_destroyed].</li>
+    <li>r_logentry(recipient_part_destroyed_count==0)->[INITIATORPROJECTILE_nameDefNom] [damaged_past] [RECIPIENT_label]'s [damaged_targets_acc].</li>
+    <li>r_logentry(recipient_part_destroyed_count==0,p=2)->[INITIATORPROJECTILE_nameDefNom] verfehlte [ORIGINALTARGET_nameDefAcc] und [damaged_past] stattdessen [RECIPIENT_label]'s [damaged_targets_acc].</li>
+    <li>r_logentry(recipient_part_destroyed_count==0,recipient_part_damaged_count==1)->[RECIPIENT_label]'s [damaged_targets] wurde von [INITIATORPROJECTILE_nameDefDat] [was_damaged].</li>
+    <li>r_logentry(recipient_part_destroyed_count==0,recipient_part_damaged_count>1)->[RECIPIENT_label]'s [damaged_targets] wurden von [INITIATORPROJECTILE_nameDefDat] [was_damaged].</li>
+    <li>r_logentry(p=3)->[INITIATORPROJECTILE_nameDefNom] [destroyed_past] [RECIPIENT_label]'s [destroyed_targets_acc], und [damaged_past] [damaged_targets_acc_pron].</li>
+    <li>r_logentry(p=6)->[INITIATORPROJECTILE_nameDefNom] verfehlte [ORIGINALTARGET_nameDefAcc] [knapp] und [destroyed_past] stattdessen [RECIPIENT_label]'s [destroyed_targets_acc], und [damaged_past] [damaged_targets_acc_pron].</li>
+    <li>r_logentry(p=0.2)->[INITIATOR_nameDefNom] traf [RECIPIENT_nameDefAcc] mit ein[projectile_dat].</li>
+    <li>r_logentry(p=0.2)->[INITIATORPROJECTILE_nameDefNom] traf [RECIPIENT_nameDefAcc].</li>
+    <li>r_logentry(p=0.4)->[INITIATOR_nameDefNom] verfehlte [ORIGINALTARGET_nameDefAcc] [knapp] und traf stattdessen [RECIPIENT_nameDefAcc] mit ein[projectile_dat].</li>
+    <li>r_logentry(p=0.4)->[INITIATORPROJECTILE_nameDefNom] verfehlte [ORIGINALTARGET_nameDefAcc] [knapp] und traf stattdessen [RECIPIENT_nameDefAcc].</li>
+    <li>r_logentry(p=0.2)->[INITIATOR_nameDefNom] traf [RECIPIENT_nameDefAcc] mit ein[projectile_dat], [projectile_the] eigentlich für [ORIGINALTARGET_nameDefAcc] bestimmt war.</li>
+    <li>projectile(priority=-1)->Schuss</li>
+    <li>projectile_dat(priority=-1)->em Schuss</li>
     <li>destroyed_past->zerstörte</li>
     <li>destroyed_past->vernichtete</li>
     <li>destroyed_past->perforierte</li>
@@ -175,21 +185,29 @@
     <li>was_destroyed->vernichtet</li>
     <li>was_destroyed->perforiert</li>
     <li>was_destroyed->durchlöchert</li>
-    <li>damaged_past->verwundete</li>
-    <li>damaged_past->verletzte</li>
-    <li>damaged_past->beschädigte</li>
+    <li>damaged_past(RECIPIENT_flesh!=Mechanoid,RECIPIENT_flesh!=Drone)->verwundete</li>
+    <li>damaged_past(RECIPIENT_flesh!=Mechanoid,RECIPIENT_flesh!=Drone)->verletzte</li>
+    <li>damaged_past(RECIPIENT_flesh==Mechanoid)->beschädigte</li>
+    <li>damaged_past(RECIPIENT_flesh==Drone)->beschädigte</li>
     <li>damaged_past->traf</li>
-    <li>damaged_present->verwundet</li>
-    <li>damaged_present->verletzt</li>
-    <li>damaged_present->beschädigt</li>
+    <li>damaged_present(RECIPIENT_flesh!=Mechanoid,RECIPIENT_flesh!=Drone)->verwundet</li>
+    <li>damaged_present(RECIPIENT_flesh!=Mechanoid,RECIPIENT_flesh!=Drone)->verletzt</li>
+    <li>damaged_present(RECIPIENT_flesh==Mechanoid)->beschädigt</li>
+    <li>damaged_present(RECIPIENT_flesh==Drone)->beschädigt</li>
     <li>damaged_present->trifft</li>
-    <li>was_damaged->verwundet</li>
-    <li>was_damaged->verletzt</li>
-    <li>was_damaged->beschädigt</li>
+    <li>was_damaged(RECIPIENT_flesh!=Mechanoid,RECIPIENT_flesh!=Drone)->verwundet</li>
+    <li>was_damaged(RECIPIENT_flesh!=Mechanoid,RECIPIENT_flesh!=Drone)->verletzt</li>
+    <li>was_damaged(RECIPIENT_flesh==Mechanoid)->beschädigt</li>
+    <li>was_damaged(RECIPIENT_flesh==Drone)->beschädigt</li>
     <li>was_damaged->getroffen</li>
     <li>knapp-></li>
     <li>knapp->knapp</li>
-    <li>ORIGINALTARGET_nameDefAcc->{replace: ​[ORIGINALTARGET_definite]; ">der "-">den "; "​der "-"den "}</li>
+
+    <li>INITIATORPROJECTILE_nameDefNom(INITIATOR_genderResolved!=Male,INITIATOR_genderResolved!=Female,INITIATOR_genderResolved!=None)->{replace: [INITIATOR_definite]'s [projectile]; " [INITIATOR_label]'s [projectile]"-""} {lookup: [INITIATOR_label]; decline; 4}</li> <!-- non-pawn -->
+    <li>INITIATORPROJECTILE_nameDefNom(priority=-1)->[INITIATOR_label]'s [projectile]</li> <!-- pawn -->
+
+    <li>INITIATORPROJECTILE_nameDefDat(INITIATOR_genderResolved!=Male,INITIATOR_genderResolved!=Female,INITIATOR_genderResolved!=None)->{replace: [INITIATOR_indefinite]'s [projectile]; "ein [INITIATOR_label]'s [projectile]"-"dem"; "eine [INITIATOR_label]'s [projectile]"-"der"} {lookup: [INITIATOR_label]; decline; 6}</li> <!-- non-pawn -->
+    <li>INITIATORPROJECTILE_nameDefDat(priority=-1)->[INITIATOR_label]'s [projectile]</li> <!-- pawn -->
   </Combat_RangedDamage.rulePack.rulesStrings>
   
   <!-- EN:
@@ -218,31 +236,53 @@
     <li>missed->narrowly missed</li>
   -->
   <Combat_RangedDeflect.rulePack.rulesStrings>
-    <li>r_logentry->[INITIATOR_label]'s [projectile] [damaged_past] [damaged_target_possessive_opt_acc] [deflected_result].</li>
-    <li>r_logentry(p=2)->[INITIATOR_label]'s [projectile] verfehlte [ORIGINALTARGET_nameDefAcc] [knapp] und [damaged_past] stattdessen [damaged_target_possessive_opt_acc] [deflected_result].</li>
-    <li>r_logentry->[damaged_target_possessive_opt] wurde von [INITIATOR_label]'s [projectile] [was_damaged] [deflected_result].</li>
-    <li>r_logentry(p=0.2)->[INITIATOR_definite] traf [damaged_target_possessive_opt_acc] mit ein[projectile_dat] [deflected_result].</li>
-    <li>r_logentry(p=0.2)->[INITIATOR_label]'s [projectile] traf [damaged_target_possessive_opt_acc] [deflected_result].</li>
-    <li>r_logentry(p=0.4)->[INITIATOR_definite] verfehlte [ORIGINALTARGET_nameDefAcc] [knapp] und traf stattdessen [damaged_target_possessive_opt_acc] mit ein[projectile_dat] [deflected_result].</li>
-    <li>r_logentry(p=0.4)->[INITIATOR_label]'s [projectile] verfehlte [ORIGINALTARGET_nameDefAcc] [knapp] und traf stattdessen [damaged_target_possessive_opt_acc] [deflected_result].</li>
-    <li>r_logentry(p=0.2)->[INITIATOR_definite] traf [damaged_target_possessive_opt_acc] mit ein[projectile_dat], was eigentlich für [ORIGINALTARGET_nameDefAcc] bestimmt war [deflected_result].</li>
+    <li>r_logentry->[INITIATORPROJECTILE_nameDefNom] [damaged_past] [damaged_target_possessive_opt_acc] [deflected_result].</li>
+    <li>r_logentry(p=2)->[INITIATORPROJECTILE_nameDefNom] verfehlte [ORIGINALTARGET_nameDefAcc] [knapp] und [damaged_past] stattdessen [damaged_target_possessive_opt_acc] [deflected_result].</li>
+    <li>r_logentry->[damaged_target_possessive_opt] wurde von [INITIATORPROJECTILE_nameDefDat] [was_damaged] [deflected_result].</li>
+    <li>r_logentry(p=0.2)->[INITIATOR_nameDefNom] traf [damaged_target_possessive_opt_acc] mit ein[projectile_dat] [deflected_result].</li>
+    <li>r_logentry(p=0.2)->[INITIATORPROJECTILE_nameDefNom] traf [damaged_target_possessive_opt_acc] [deflected_result].</li>
+    <li>r_logentry(p=0.4)->[INITIATOR_nameDefNom] verfehlte [ORIGINALTARGET_nameDefAcc] [knapp] und traf stattdessen [damaged_target_possessive_opt_acc] mit ein[projectile_dat] [deflected_result].</li>
+    <li>r_logentry(p=0.4)->[INITIATORPROJECTILE_nameDefNom] verfehlte [ORIGINALTARGET_nameDefAcc] [knapp] und traf stattdessen [damaged_target_possessive_opt_acc] [deflected_result].</li>
+    <li>r_logentry(p=0.2)->[INITIATOR_nameDefNom] traf [damaged_target_possessive_opt_acc] mit ein[projectile_dat], [projectile_the] eigentlich für [ORIGINALTARGET_nameDefAcc] bestimmt war [deflected_result].</li>
     <!-- fallback, also a little variety -->
-    <li>projectile(p=0.05)->Schuss</li>
-    <li>projectile_dat(p=0.05)->em Schuss</li>
+    <li>projectile(priority=-1)->Schuss</li>
+    <li>projectile_dat(priority=-1)->em Schuss</li>
     <li>damaged_target_possessive_opt->[RECIPIENT_definite]</li>
     <li>damaged_target_possessive_opt(recipient_part_damaged0_outside==True)->[RECIPIENT_label]'s [recipient_part_damaged0_label]</li>
     <li>damaged_target_possessive_opt_acc->[RECIPIENT_nameDefAcc]</li>
-    <li>damaged_target_possessive_opt_acc(recipient_part_damaged0_outside==True)->[RECIPIENT_label]'s {replace: [recipient_part_damaged0_label]; "er "-"en "}</li>
-    <li>deflected_result->, aber [deflected_consequence]</li>
+    <li>damaged_target_possessive_opt_acc(recipient_part_damaged0_outside==True)->[RECIPIENT_label]'s {lookup: [recipient_part_damaged0_label]; decline; 3}</li>
+    <li>deflected_result->, [deflected_consequence] [without_causing_damage_opt]</li>
     <li>adverb_deflected_opt(p=4)-></li>
     <li>adverb_deflected_opt->[adverb_deflected]</li>
-    <li>adverb_deflected->völlig</li>
-    <li>adverb_deflected->mühelos</li>
-    <li>deflected_consequence->prallte [adverb_deflected_opt] von der Rüstung ab</li>
-    <li>deflected_consequence->wurde [adverb_deflected_opt] von [RECIPIENT_possessive]er Rüstung abgewehrt</li>
+    <li>adverb_deflected->harmlos</li>
+    <li>adverb_deflected->vergeblich</li>
+    <li>adverb_deflected->vergebens</li>
+    <li>adverb_deflected->wirkungslos</li>
+    <li>adverb_deflected2_opt(p=4)-></li>
+    <li>adverb_deflected2_opt->[adverb_deflected2]</li>
+    <li>adverb_deflected2->völlig</li>
+    <li>adverb_deflected2->mühelos</li>
+    <li>adverb_deflected2->vollkommen</li>
+    <li>adverb_deflected2->voll</li>
+    <li>without_causing_damage_opt(p=4)-></li>
+    <li>without_causing_damage_opt->[without_causing_damage]</li>
+    <li>without_causing_damage->, ohne Schaden anzurichten</li>
+    <li>deflected_consequence->prallte aber ab</li>
+    <li>deflected_consequence->prallte aber [adverb_deflected_opt] von [RECIPIENT_possessive]er Panzerung ab</li>
+    <li>deflected_consequence->prallte aber [adverb_deflected_opt] an [RECIPIENT_possessive]er Panzerung ab</li>
+    <li>deflected_consequence->prallte aber [adverb_deflected_opt] gegen [RECIPIENT_possessive]e Panzerung</li>
+    <li>deflected_consequence->schrammte aber [adverb_deflected_opt] an [RECIPIENT_possessive]er Panzerung vorbei</li>
+    <li>deflected_consequence->schlitterte aber [adverb_deflected_opt] an [RECIPIENT_possessive]er Panzerung vorbei</li>
+    <li>deflected_consequence->wurde aber [adverb_deflected2_opt] von [RECIPIENT_possessive]er Panzerung abgewehrt</li>
+    <li>deflected_consequence->wurde aber [adverb_deflected2_opt] von [RECIPIENT_possessive]er Panzerung gestoppt</li>
     <li>knapp-></li>
     <li>knapp->knapp</li>
-    <li>ORIGINALTARGET_nameDefAcc->{replace: ​[ORIGINALTARGET_definite]; ">der "-">den "; "​der "-"den "}</li>
+
+    <li>INITIATORPROJECTILE_nameDefNom(INITIATOR_genderResolved!=Male,INITIATOR_genderResolved!=Female,INITIATOR_genderResolved!=None)->{replace: [INITIATOR_definite]'s [projectile]; " [INITIATOR_label]'s [projectile]"-""} {lookup: [INITIATOR_label]; decline; 4}</li> <!-- non-pawn -->
+    <li>INITIATORPROJECTILE_nameDefNom(priority=-1)->[INITIATOR_label]'s [projectile]</li> <!-- pawn -->
+
+    <li>INITIATORPROJECTILE_nameDefDat(INITIATOR_genderResolved!=Male,INITIATOR_genderResolved!=Female,INITIATOR_genderResolved!=None)->{replace: [INITIATOR_indefinite]'s [projectile]; "ein [INITIATOR_label]'s [projectile]"-"dem"; "eine [INITIATOR_label]'s [projectile]"-"der"} {lookup: [INITIATOR_label]; decline; 6}</li> <!-- non-pawn -->
+    <li>INITIATORPROJECTILE_nameDefDat(priority=-1)->[INITIATOR_label]'s [projectile]</li> <!-- pawn -->
   </Combat_RangedDeflect.rulePack.rulesStrings>
   
   <!-- EN:
@@ -275,22 +315,22 @@
     <li>verb_shot(p=0.2)->discharged</li>
   -->
   <Combat_RangedFire.rulePack.rulesStrings>
-    <li>r_logentry->[INITIATOR_definite] [shot] mit [seiner_Waffe] [aburst] auf [RECIPIENT_nameDefAcc].</li>
-    <li>r_logentry->[INITIATOR_definite] [shot] mit [seiner_Waffe] auf [RECIPIENT_nameDefAcc].</li>
-    <li>r_logentry->[INITIATOR_definite] [shot] [aburst] auf [RECIPIENT_nameDefAcc].</li>
-    <li>r_logentry(RECIPIENT_missing==True)->[INITIATOR_definite] feuerte ein[projectile_acc] ab.</li>
-    <li>r_logentry(RECIPIENT_missing==True)->[INITIATOR_definite] [shot] mit [seiner_Waffe].</li>
-    <li>shot(p=2)->[verb_shot]</li>
-    <li>shot->[verb_shot] [skillAdv]</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] [shot] mit [weapon_dat_his] [weapon_dat] [aburst] auf [RECIPIENT_nameDefAcc].</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] [shot] [aburst] auf [RECIPIENT_nameDefAcc] mit [weapon_dat_his] [weapon_dat].</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] [shot] [aburst] auf [RECIPIENT_nameDefAcc].</li>
+    <li>r_logentry(RECIPIENT_missing==True,p=0.5)->[INITIATOR_nameDefNom] feuerte [skillAdvOpt] ein[projectile_acc] ab.</li>
+    <li>r_logentry(RECIPIENT_missing==True,p=0.5)->[INITIATOR_nameDefNom] verschoss [skillAdvOpt] ein[projectile_acc].</li>
+    <li>r_logentry(RECIPIENT_missing==True)->[INITIATOR_nameDefNom] [shot] mit [weapon_dat_his] [weapon_dat].</li>
     <li>aburst-></li>
     <li>aburst(BURST==True,p=3)->eine Salve</li>
-    <li>verb_shot->schoss</li>
-    <li>verb_shot->feuerte</li>
-    <li>verb_shot(p=0.5)->zielte und schoss</li>
-    <li>verb_shot(p=0.5)->zielte [skillAdv] und schoss</li>
-    <li>verb_shot(p=0.5)->zielte und feuerte</li>
-    <li>verb_shot(p=0.5)->zielte [skillAdv] und feuerte</li>
-    <li>seiner_Waffe->[INITIATOR_possessive]{replace: ^[WEAPON_indefinite]; "^ein [WEAPON_label]"-"em"; "^eine [WEAPON_label]"-"er"} {replace: [WEAPON_label]; "er "-"en "; "e "-"en "; "es "-"en "}</li>
+    <li>shot->schoss [skillAdvOpt]</li>
+    <li>shot->feuerte [skillAdvOpt]</li>
+    <li>shot(p=0.25)->zielte und schoss [skillAdvOpt]</li>
+    <li>shot(p=0.25)->zielte und feuerte [skillAdvOpt]</li>
+    <li>shot(p=0.25)->zielte [skillAdvOpt] und schoss</li>
+    <li>shot(p=0.25)->zielte [skillAdvOpt] und feuerte</li>
+    <li>skillAdvOpt(p=2)-></li>
+    <li>skillAdvOpt->[skillAdv]</li>
   </Combat_RangedFire.rulePack.rulesStrings>
   
   <!-- EN:
@@ -319,10 +359,10 @@
     <li>adjective_threw(initiator_flesh!=Mechanoid)->wary</li>
   -->
   <Combat_RangedFire_Thrown.rulePack.rulesStrings>
-    <li>r_logentry->[INITIATOR_definite] [threw] [adverb] [INITIATOR_possessive][projectile_acc] auf [RECIPIENT_nameDefAcc].</li>
-    <li>r_logentry->[INITIATOR_definite] [threw] [adverb] ein[projectile_acc] auf [RECIPIENT_nameDefAcc].</li>
-    <li>r_logentry(RECIPIENT_missing==True)->[INITIATOR_definite] [threw] [adverb] [INITIATOR_possessive][projectile_acc].</li>
-    <li>r_logentry(RECIPIENT_missing==True)->[INITIATOR_definite] [threw] [adverb] ein[projectile_acc].</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] [threw] [adverb] [INITIATOR_possessive][projectile_acc] auf [RECIPIENT_nameDefAcc].</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] [threw] [adverb] ein[projectile_acc] auf [RECIPIENT_nameDefAcc].</li>
+    <li>r_logentry(RECIPIENT_missing==True)->[INITIATOR_nameDefNom] [threw] [adverb] [INITIATOR_possessive][projectile_acc].</li>
+    <li>r_logentry(RECIPIENT_missing==True)->[INITIATOR_nameDefNom] [threw] [adverb] ein[projectile_acc].</li>
     <li>adverb(p=2)-></li>
     <li>adverb->[adverb_threw]</li>
     <li>threw->warf</li>
@@ -332,9 +372,9 @@
     <li>adverb_threw->schnell</li>
     <li>adverb_threw->präzise</li>
     <li>adverb_threw->zielsicher</li>
-    <li>adverb_threw(initiator_flesh!=Mechanoid)->zögerlich</li>
+    <li>adverb_threw(INITIATOR_flesh!=Mechanoid,INITIATOR_flesh!=EntityMechanical,INITIATOR_flesh!=Drone)->zögerlich</li>
     <li>adverb_threw->präzise</li>
-    <li>adverb_threw(initiator_flesh!=Mechanoid)->behutsam</li>
+    <li>adverb_threw(INITIATOR_flesh!=Mechanoid,INITIATOR_flesh!=EntityMechanical,INITIATOR_flesh!=Drone)->behutsam</li>
   </Combat_RangedFire_Thrown.rulePack.rulesStrings>
   
   <!-- EN:
@@ -382,9 +422,15 @@
     <li>ducked->hid</li>
   -->
   <Combat_RangedMiss.rulePack.rulesStrings>
-    <li>r_logentry->[INITIATOR_label]'s [projectile] [missed].</li>
-    <li>r_logentry->[INITIATOR_definite] verfehlte [ORIGINALTARGET_nameDefAcc].</li>
-    <li>r_logentry->[ORIGINALTARGET_definite] [avoidance], wodurch [INITIATOR_label]'s [projectile] [missing].</li>
+    <li>r_logentry(INITIATOR_genderResolved!=Male,INITIATOR_genderResolved!=Female,INITIATOR_genderResolved!=None)->[INITIATOR_nameDefNom] [missed2].</li>
+    <li>r_logentry(INITIATOR_genderResolved==Male)->[INITIATOR_label]'s [projectile] [missed].</li>
+    <li>r_logentry(INITIATOR_genderResolved==Female)->[INITIATOR_label]'s [projectile] [missed].</li>
+    <li>r_logentry(INITIATOR_genderResolved==None)->[INITIATOR_label]'s [projectile] [missed].</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] verfehlte [ORIGINALTARGET_nameDefAcc].</li>
+    <li>r_logentry(INITIATOR_genderResolved!=Male,INITIATOR_genderResolved!=Female,INITIATOR_genderResolved!=None)->[ORIGINALTARGET_nameDefNom] [avoidance], wodurch [INITIATOR_nameDefNom] [missing2].</li>
+    <li>r_logentry(INITIATOR_genderResolved==Male)->[ORIGINALTARGET_nameDefNom] [avoidance], wodurch [INITIATOR_label]'s [projectile] [missing].</li>
+    <li>r_logentry(INITIATOR_genderResolved==Female)->[ORIGINALTARGET_nameDefNom] [avoidance], wodurch [INITIATOR_label]'s [projectile] [missing].</li>
+    <li>r_logentry(INITIATOR_genderResolved==None)->[ORIGINALTARGET_nameDefNom] [avoidance], wodurch [INITIATOR_label]'s [projectile] [missing].</li>
     <li>missed(p=4)->verfehlte</li>
     <li>missed(p=2)->verfehlte knapp</li>
     <li>missed(p=2)->verfehlte deutlich</li>
@@ -398,6 +444,12 @@
     <li>missed->verfehlte [ORIGINALTARGET_nameDefAcc] um einige Zentimeter</li>
     <li>missed->verfehlte [ORIGINALTARGET_nameDefAcc] um einen guten Meter</li>
     <li>missed->wurde vom Kurs abgebracht</li>
+    <li>missed2(p=4)->verfehlte</li>
+    <li>missed2(p=2)->verfehlte knapp</li>
+    <li>missed2(p=2)->verfehlte deutlich</li>
+    <li>missed2(p=0.2)->verfehlte [ORIGINALTARGET_nameDefAcc] um wenige Millimeter</li>
+    <li>missed2->verfehlte [ORIGINALTARGET_nameDefAcc] um einige Zentimeter</li>
+    <li>missed2->verfehlte [ORIGINALTARGET_nameDefAcc] um einen guten Meter</li>
     <li>missing->verfehlte</li>
     <li>missing->knapp verfehlte</li>
     <li>missing->deutlich verfehlte</li>
@@ -411,6 +463,12 @@
     <li>missing->[ORIGINALTARGET_nameDefAcc] um einige Zentimeter verfehlte</li>
     <li>missing->[ORIGINALTARGET_nameDefAcc] um einen guten Meter verfehlte</li>
     <li>missing->vom Kurs abgebracht wurde</li>
+    <li>missing2->verfehlte</li>
+    <li>missing2->knapp verfehlte</li>
+    <li>missing2->deutlich verfehlte</li>
+    <li>missing2(p=0.2)->[ORIGINALTARGET_nameDefAcc] um wenige Millimeter verfehlte</li>
+    <li>missing2->[ORIGINALTARGET_nameDefAcc] um einige Zentimeter verfehlte</li>
+    <li>missing2->[ORIGINALTARGET_nameDefAcc] um einen guten Meter verfehlte</li>
     <li>avoidance(ORIGINALTARGET_mobile==True,p=2)->[moved] [in_the_last_moment] zur Seite</li>
     <li>avoidance(ORIGINALTARGET_mobile==True,p=0.3)->duckte sich hinter [COVER_nameDefDat]</li>
     <li>moved->bewegte sich</li>
@@ -425,8 +483,9 @@
     <li>ducked->kroch</li>
     <li>ducked->bückte sich</li>
     <li>ducked->versteckte sich</li>
-    <li>ORIGINALTARGET_nameDefAcc->{replace: ​[ORIGINALTARGET_definite]; ">der "-">den "; "​der "-"den "}</li>
-    <li>COVER_nameDefDat->{replace: ​[COVER_definite]; ">der "-">dem "; ">die "-">der "; ">das "-">dem "; "​der "-"dem "; "​die "-"der "; "​das "-"dem "}</li>
+
+    <li>COVER_nameDefDat(ORIGINALTARGET_genderResolved!=Male,ORIGINALTARGET_genderResolved!=Female,ORIGINALTARGET_genderResolved!=None)->{replace: [ORIGINALTARGET_definite]; "der [ORIGINALTARGET_label]"-"dem"; "die [ORIGINALTARGET_label]"-"der"; "das [ORIGINALTARGET_label]"-"dem"} {lookup: [ORIGINALTARGET_label]; decline; 6}</li> <!-- non-pawn -->
+    <li>COVER_nameDefDat(priority=-1)->{replace: [ORIGINALTARGET_definite]; ">der "-">dem "; ">die "-">der "; ">das "-">dem "}</li> <!-- pawn -->
   </Combat_RangedMiss.rulePack.rulesStrings>
   
 </LanguageData>
