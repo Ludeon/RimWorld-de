@@ -28,24 +28,22 @@
     <li>maybe_adjective->[AdjectiveBadass]</li>
   -->
   <NamerTraderGeneral.rulePack.rulesStrings>
-    <li>r_name(p=4)->[businessname] [businesstype] [Rechtsform]</li>
-    <li>r_name->[NamePerson] [businesstype] [Rechtsform]</li>
-    <li>r_name->[Animals] [businesstype] [Rechtsform]</li>
-    <li>r_name->[Letter][Letter] [businesstype] [Rechtsform]</li>
-    <li>r_name(p=0.5)->[PersonAllies] [businesstype] [Rechtsform]</li>
-    <li>r_name(p=0.3)->[PersonFamily] [businesstype] [Rechtsform]</li>
-    <li>r_name(p=0.3)->[NaturalObject] [businesstype] [Rechtsform]</li>
-    <li>r_name(p=0.2)->[TreeType]n [businesstype] [Rechtsform]</li>
-    <li>r_name(p=0.2)->[Vegetables] [businesstype] [Rechtsform]</li>
-    <li>r_name(p=0.2)->[Direction] [businesstype] [Rechtsform]</li>
-    <li>r_name(p=0.2)->[Color] [businesstype] [Rechtsform]</li>
-    <li>Rechtsform-></li>
-    <li>Rechtsform->GbR</li>
-    <li>Rechtsform->OHG</li>
-    <li>Rechtsform->KG</li>
-    <li>Rechtsform->GmbH</li>
-    <li>Rechtsform->AG</li>
-    <li>Rechtsform->GmbH &amp; Co KG</li>
+    <li>r_name(p=4)->[businessname] [businesstype]</li>
+    <li>r_name->[NamePerson] [businesstype]</li>
+    <li>r_name->[maybe_adjective] [AnimalEng] [businesstype]</li>
+    <li>r_name->[Letter][Letter] [businesstype]</li>
+    <li>r_name(p=0.5)->[PersonAllyEng] [businesstype]</li>
+    <li>r_name(p=0.5)->[AdjectiveFriendlyEng] [businesstype]</li>
+    <li>r_name(p=0.5)->[AdjectiveBadassEng] [businesstype]</li>
+    <li>r_name(p=0.3)->[PersonFamilyEng] [businesstype]</li>
+    <li>r_name(p=0.3)->[maybe_adjective] [NaturalObjectEng] [businesstype]</li>
+    <li>r_name(p=0.2)->[maybe_adjective] [TreeTypeEng] [businesstype]</li>
+    <li>r_name(p=0.2)->[maybe_adjective] [VegetableEng] [businesstype]</li>
+    <li>r_name(p=0.2)->[DirectionEng] [businesstype]</li>
+    <li>maybe_adjective-></li>
+    <li>maybe_adjective->[ColorEng]</li>
+    <li>maybe_adjective->[AdjectiveFriendlyEng]</li>
+    <li>maybe_adjective->[AdjectiveBadassEng]</li>
   </NamerTraderGeneral.rulePack.rulesStrings>
   
 </LanguageData>
