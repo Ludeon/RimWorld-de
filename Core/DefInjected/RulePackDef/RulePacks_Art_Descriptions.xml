@@ -227,8 +227,8 @@
     <li>artextra_clause(p=0.5)->die Szene spielt inmitten eines [CommunityNeuGen]</li>
     <li>artextra_clause(p=0.5)->die Szene scheint sich außerhalb einer [CommunityFemGen] abzuspielen</li>
     <li>artextra_clause(p=0.5)->die Szene scheint sich außerhalb eines [CommunityNeuGen] abzuspielen</li>
-    <li>artextra_clause(p=0.5)->die Szene spielt sich in einer [CommunityFemDat] ab, die in der Nähe [eines_Gebietes] gebaut wurde</li>
-    <li>artextra_clause(p=0.5)->die Szene spielt sich in einem [CommunityNeuDat] ab, das in der Nähe [eines_Gebietes] gebaut wurde</li>
+    <li>artextra_clause(p=0.5)->die Szene spielt sich in einer [CommunityFemDat] ab, die in der Nähe [TerrainFeature_indefinite_gen] gebaut wurde</li>
+    <li>artextra_clause(p=0.5)->die Szene spielt sich in einem [CommunityNeuDat] ab, das in der Nähe [TerrainFeature_indefinite_gen] gebaut wurde</li>
     <!-- Pawn in side position -->
     <li>artextra_clause(p=0.33)->ein [CharacterMas] [idles] [side_position]</li>
     <li>artextra_clause(p=0.33)->eine [CharacterFem] [idles] [side_position]</li>
@@ -428,9 +428,21 @@
     <li>artstyle_adj->sinnlich</li>
     <li>artstyle_adj->herzlich</li>
     <!-- gender-specific -->
-    <li>eines_Gebietes->eines [TerrainFeatureMasGen]</li>
-    <li>eines_Gebietes->einer [TerrainFeatureFemGen]</li>
-    <li>eines_Gebietes->eines [TerrainFeatureNeuGen]</li>
+    <li>TerrainFeature_indefinite_gen->eines [TerrainFeatureMasGen]</li>
+    <li>TerrainFeature_indefinite_gen->einer [TerrainFeatureFemGen]</li>
+    <li>TerrainFeature_indefinite_gen->eines [TerrainFeatureNeuGen]</li>
+    <li>WEAPON_indefinite_dat->{replace: [WEAPON_indefinite]; "ein [WEAPON_label]"-"einem"; "eine [WEAPON_label]"-"einer"} {lookup: [WEAPON_label]; decline; 6}</li>
+    <li>OBJECT_indefinite_dat->{replace: [OBJECT_indefinite]; "ein [OBJECT_label]"-"einem"; "eine [OBJECT_label]"-"einer"} {lookup: [OBJECT_label]; decline; 2}</li>
+    <li>OBJECT_indefinite_acc->{replace: [OBJECT_definite]; "der [OBJECT_label]"-"einen"; "die [OBJECT_label]"-"eine"; "das [OBJECT_label]"-"ein"} {lookup: [OBJECT_label]; decline; 3}</li>
+    <li>OBJECT_definite_acc->{replace: [OBJECT_definite]; "der [OBJECT_label]"-"den"; "die [OBJECT_label]"-"die"; "das [OBJECT_label]"-"das"} {lookup: [OBJECT_label]; decline; 7}</li>
+    <li>OBJECT_definite_nom->{replace: [OBJECT_definite]; " [OBJECT_label]"-""} {lookup: [OBJECT_label]; decline; 4}</li>
+    <li>THING_indefinite_dat->{replace: [THING_indefinite]; "ein [THING_label]"-"einem"; "eine [THING_label]"-"einer"} {lookup: [THING_label]; decline; 2}</li>
+    <li>THING_indefinite_acc->{replace: [THING_definite]; "der [THING_label]"-"einen"; "die [THING_label]"-"eine"; "das [THING_label]"-"ein"} {lookup: [THING_label]; decline; 3}</li>
+    <li>THING_definite_dat->{replace: [THING_definite]; "der [THING_label]"-"dem"; "die [THING_label]"-"der"; "das [THING_label]"-"dem"} {lookup: [THING_label]; decline; 6}</li>
+    <li>THING_definite_nom->{replace: [THING_definite]; " [THING_label]"-""} {lookup: [THING_label]; decline; 4}</li>
+    <li>PAWN_nameFullIndefDat->{replace: [PAWN_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
+    <li>PAWN_nameDefAcc->{replace: [PAWN_nameDef]; ">der "-">den "}</li>
+    <li>PAWN_nameDefDat->{replace: [PAWN_nameIndef]; ">ein "-">dem "; ">eine "-">der "}</li>
   </ArtDescriptionUtility_Global.rulePack.rulesStrings>
   
 </LanguageData>

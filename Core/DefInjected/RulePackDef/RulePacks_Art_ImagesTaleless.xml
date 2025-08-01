@@ -42,12 +42,12 @@
     <li>image(p=0.33)->einem einsamen [CharacterMasDat], der [desc_pawn]</li>
     <li>image(p=0.33)->einer einsamen [CharacterFemDat], die [desc_pawn]</li>
     <li>image(p=0.33)->einem einsamen [CharacterNeuDat], das [desc_pawn]</li>
-    <li>image(p=0.33)->einem einsamen [CharacterMasDat], der in der Nähe [eines_Gebietes] [desc_pawn]</li>
-    <li>image(p=0.33)->einer einsamen [CharacterFemDat], die in der Nähe [eines_Gebietes] [desc_pawn]</li>
-    <li>image(p=0.33)->einem einsamen [CharacterNeuDat], das in der Nähe [eines_Gebietes] [desc_pawn]</li>
-    <li>image(p=0.33)->einem einsamen [CharacterMasDat], der in der Nähe [eines_Dorfes] [desc_pawn]</li>
-    <li>image(p=0.33)->einer einsamen [CharacterFemDat], die in der Nähe [eines_Dorfes] [desc_pawn]</li>
-    <li>image(p=0.33)->einem einsamen [CharacterNeuDat], das in der Nähe [eines_Dorfes] [desc_pawn]</li>
+    <li>image(p=0.33)->einem einsamen [CharacterMasDat], der in der Nähe [TerrainFeature_indefinite_gen] [desc_pawn]</li>
+    <li>image(p=0.33)->einer einsamen [CharacterFemDat], die in der Nähe [TerrainFeature_indefinite_gen] [desc_pawn]</li>
+    <li>image(p=0.33)->einem einsamen [CharacterNeuDat], das in der Nähe [TerrainFeature_indefinite_gen] [desc_pawn]</li>
+    <li>image(p=0.33)->einem einsamen [CharacterMasDat], der in der Nähe [Community_indefinite_gen] [desc_pawn]</li>
+    <li>image(p=0.33)->einer einsamen [CharacterFemDat], die in der Nähe [Community_indefinite_gen] [desc_pawn]</li>
+    <li>image(p=0.33)->einem einsamen [CharacterNeuDat], das in der Nähe [Community_indefinite_gen] [desc_pawn]</li>
     <li>image(p=0.33)->einem [CharacterMasDat], der [desc_pawn], während er von [CharactersDat] umstellt ist</li>
     <li>image(p=0.33)->einer [CharacterFemDat], die [desc_pawn], während sie von [CharactersDat] umstellt ist</li>
     <li>image(p=0.33)->einem [CharacterNeuDat], das [desc_pawn], während es von [CharactersDat] umstellt ist</li>
@@ -55,17 +55,17 @@
     <li>image(p=0.33)->einem [CharacterMasDat], der [desc_pawn], während er [Game] mit [Quantity_adjphrase_Dat] [CharactersDat] spielt</li>
     <li>image(p=0.33)->einer [CharacterFemDat], die [desc_pawn], während sie [Game] mit [Quantity_adjphrase_Dat] [CharactersDat] spielt</li>
     <li>image(p=0.33)->einem [CharacterNeuDat], das [desc_pawn], während es [Game] mit [Quantity_adjphrase_Dat] [CharactersDat] spielt</li>
-    <li>image(p=0.33)->einem [CharacterMasDat], der [desc_pawn], während er [eine_Waffe] hält</li>
-    <li>image(p=0.33)->einer [CharacterFemDat], die [desc_pawn], während sie [eine_Waffe] hält</li>
-    <li>image(p=0.33)->einem [CharacterNeuDat], das [desc_pawn], während es [eine_Waffe] hält</li>
+    <li>image(p=0.33)->einem [CharacterMasDat], der [desc_pawn], während er [Weapon_indefinite_acc] hält</li>
+    <li>image(p=0.33)->einer [CharacterFemDat], die [desc_pawn], während sie [Weapon_indefinite_acc] hält</li>
+    <li>image(p=0.33)->einem [CharacterNeuDat], das [desc_pawn], während es [Weapon_indefinite_acc] hält</li>
     <li>image(p=0.33)->einem [CharacterMasDat], der [desc_pawn], während er [Vegetables] isst</li>
     <li>image(p=0.33)->einer [CharacterFemDat], die [desc_pawn], während sie [Vegetables] isst</li>
     <li>image(p=0.33)->einem [CharacterNeuDat], das [desc_pawn], während es [Vegetables] isst</li>
     <li>image->[Quantity_adjphrase_Dat] [PersonJobsDat] und [PersonJobsDat], die gemeinsam [Vegetables] essen</li>
     <li>image->der kleinen Berühmtheit namens [NamePerson], die [desc_pawn]</li>
-    <li>image(p=0.33)->einem [CharacterMasDat], der [desc_pawn], während er [eine_Kleidung] trägt</li>
-    <li>image(p=0.33)->einer [CharacterFemDat], die [desc_pawn], während sie [eine_Kleidung] trägt</li>
-    <li>image(p=0.33)->einem [CharacterNeuDat], das [desc_pawn], während es [eine_Kleidung] trägt</li>
+    <li>image(p=0.33)->einem [CharacterMasDat], der [desc_pawn], während er [Apparel_indefinite_acc] trägt</li>
+    <li>image(p=0.33)->einer [CharacterFemDat], die [desc_pawn], während sie [Apparel_indefinite_acc] trägt</li>
+    <li>image(p=0.33)->einem [CharacterNeuDat], das [desc_pawn], während es [Apparel_indefinite_acc] trägt</li>
     <!-- terrain -->
     <li>image(p=0.5)->einer [CommunityFem]</li>
     <li>image(p=0.5)->einem [CommunityNeu]</li>
@@ -107,17 +107,17 @@
     <li>desc_pawn->[AdjectiveAny] aussieht</li>
     <li>desc_pawn->mit [GoreDat] bedeckt ist</li>
     <!-- gender-specific -->
-    <li>eines_Gebietes->eines [TerrainFeatureMasGen]</li>
-    <li>eines_Gebietes->einer [TerrainFeatureFemGen]</li>
-    <li>eines_Gebietes->eines [TerrainFeatureNeuGen]</li>
-    <li>eines_Dorfes->einer [CommunityFemGen]</li>
-    <li>eines_Dorfes->eines [CommunityNeuGen]</li>
-    <li>eine_Waffe->einen [WeaponMas]</li>
-    <li>eine_Waffe->eine [WeaponFem]</li>
-    <li>eine_Waffe->ein [WeaponNeu]</li>
-    <li>eine_Kleidung->einen [ApparelMas]</li>
-    <li>eine_Kleidung->eine [ApparelFem]</li>
-    <li>eine_Kleidung->ein [ApparelNeu]</li>
+    <li>TerrainFeature_indefinite_gen->eines [TerrainFeatureMasGen]</li>
+    <li>TerrainFeature_indefinite_gen->einer [TerrainFeatureFemGen]</li>
+    <li>TerrainFeature_indefinite_gen->eines [TerrainFeatureNeuGen]</li>
+    <li>Community_indefinite_gen->einer [CommunityFemGen]</li>
+    <li>Community_indefinite_gen->eines [CommunityNeuGen]</li>
+    <li>Weapon_indefinite_acc->einen [WeaponMasAcc]</li>
+    <li>Weapon_indefinite_acc->eine [WeaponFemAcc]</li>
+    <li>Weapon_indefinite_acc->ein [WeaponNeuAcc]</li>
+    <li>Apparel_indefinite_acc->einen [ApparelMas]</li>
+    <li>Apparel_indefinite_acc->eine [ApparelFem]</li>
+    <li>Apparel_indefinite_acc->ein [ApparelNeu]</li>
   </TalelessImages.rulePack.rulesStrings>
   
 </LanguageData>

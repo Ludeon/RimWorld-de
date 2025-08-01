@@ -42,9 +42,9 @@
   -->
   <Downed.rulePack.rulesStrings>
     <li>tale_noun->[KILLER_nameDef] [VICTIM_nameDefAcc] [wound_name_past]</li>
-    <li>tale_noun->[KILLER_nameDef] [VICTIM_nameDefAcc] mit [WEAPON_indefiniteDat] [wound_name_past]</li>
+    <li>tale_noun->[KILLER_nameDef] [VICTIM_nameDefAcc] mit [WEAPON_indefinite_dat] [wound_name_past]</li>
     <li>tale_noun->[VICTIM_nameDef] von [KILLER_nameDefDat] [wound_name_past2] wurde</li>
-    <li>tale_noun->[VICTIM_nameDef] von [KILLER_nameDefDat] mit [WEAPON_indefiniteDat] [wound_name_past2] wurde</li>
+    <li>tale_noun->[VICTIM_nameDef] von [KILLER_nameDefDat] mit [WEAPON_indefinite_dat] [wound_name_past2] wurde</li>
     <li>tale_noun->[VICTIM_nameDef] [wound_name_past2] wurde</li>
     <li>image->[VICTIM_nameFullIndefDat], wie [VICTIM_pronoun] von [KILLER_nameFullIndefDat] [with_weapon_optional] [wound_name_past2] wird</li>
     <li>image->[KILLER_nameFullIndefDat], wie [KILLER_pronoun] [VICTIM_nameIndefAcc] [with_weapon_optional] [wound_name_present]</li>
@@ -62,7 +62,7 @@
     <li>wound_name_past2->lahmgelegt</li>
     <li>wound_name_past2->zu Fall gebracht</li>
     <li>wound_name_past2->außer Gefecht gesetzt</li>
-    <li>with_weapon_optional->mit [WEAPON_indefiniteDat] [circumstance_group]</li>
+    <li>with_weapon_optional->mit [WEAPON_indefinite_dat] [circumstance_group]</li>
     <li>with_weapon_optional->[circumstance_group]</li>
     <li>circumstance_phrase->scheinbar ohne Reue</li>
     <li>circumstance_phrase->mit kalter Effizienz</li>
@@ -80,9 +80,6 @@
     <li>desc_sentence->[KILLER_nameDef] scheint Reue zu empfinden.</li>
     <li>desc_sentence->[KILLER_nameDef] scheint zufrieden mit der Situation zu sein.</li>
     <li>desc_sentence->[KILLER_nameDef] freut sich über den Sieg.</li>
-    <li>WEAPON_indefiniteDat->[a_dat] [weapon_dat]</li>
-    <li>a_dat->{replace: ^[WEAPON_indefinite]; "^ein [WEAPON_label]"-"einem"; "^eine [WEAPON_label]"-"einer"; "^"-""}</li>
-    <li>weapon_dat->{replace: [WEAPON_label]; "er "-"en "; "e "-"en "; "es "-"en "}</li>
     <li>KILLER_nameFullIndefDat->{replace: [KILLER_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
     <li>KILLER_nameDefDat->{replace: [KILLER_nameDef]; ">der "-">dem "; ">die "-">der "; ">das "-">dem "}</li>
     <li>VICTIM_nameFullIndefDat->{replace: [VICTIM_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
@@ -126,8 +123,6 @@
     <li>desc_sentence->[Quantity_adjphrase] [PersonJobs] liegen in einem ähnlichen Zustand daneben.</li>
     <li>desc_sentence(p=0.5)->Die Szene spielt in einer frisch gegründeten [CommunityFemDat].</li>
     <li>desc_sentence(p=0.5)->Die Szene spielt in einem frisch gegründeten [CommunityNeuDat].</li>
-    <li>PAWN_nameFullIndefDat->{replace: [PAWN_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
-    <li>PAWN_nameDefAcc->{replace: [PAWN_nameDef]; ">der "-">den "}</li>
   </Exhausted.rulePack.rulesStrings>
   
   <!-- EN: gave birth -->
@@ -216,8 +211,6 @@
     <li>desc_sentence->Die Szene scheint sich im Inneren abzuspielen, neben einer Heizung.</li>
     <li>desc_sentence->[Quantity_adjphrase] unbewegliche [Animals] begleiten die Szene.</li>
     <li>desc_sentence->[Quantity_adjphrase] sterbende [Animals] liegen auf dem Boden.</li>
-    <li>PAWN_nameFullIndefDat->{replace: [PAWN_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
-    <li>PAWN_nameDefDat->{replace: [PAWN_nameIndef]; ">ein "-">dem "; ">eine "-">der "}</li>
   </HeatstrokeRevealed.rulePack.rulesStrings>
   
   <!-- EN: hypothermia revealed -->
@@ -263,8 +256,6 @@
     <li>desc_sentence->Die Szene scheint sich im Inneren eines Kühlraums abzuspielen.</li>
     <li>desc_sentence->[Quantity_adjphrase] zitternde [Animals] begleiten die Szene.</li>
     <li>desc_sentence->[Quantity_adjphrase] sterbende [Animals] liegen auf dem Boden.</li>
-    <li>PAWN_nameFullIndefDat->{replace: [PAWN_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
-    <li>PAWN_nameDefDat->{replace: [PAWN_nameIndef]; ">ein "-">dem "; ">eine "-">der "}</li>
   </HypothermiaRevealed.rulePack.rulesStrings>
   
   <!-- EN: illness revealed -->
@@ -310,7 +301,6 @@
     <li>desc_sentence->[Quantity_adjphrase] [PersonJobs] sind mit derselben Krankheit befallen.</li>
     <li>desc_sentence->Die Szene spielt in einem [TreeType]nwald.</li>
     <li>desc_sentence->[Quantity_adjphrase] sterbende [Animals] liegen auf dem Boden.</li>
-    <li>PAWN_nameFullIndefDat->{replace: [PAWN_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
   </IllnessRevealed.rulePack.rulesStrings>
   
   <!-- EN: killed -->
@@ -348,7 +338,7 @@
   -->
   <KilledCapacity.rulePack.rulesStrings>
     <li>tale_noun->[KILLER_nameDef] [VICTIM_nameDefAcc] [wound_name_past]</li>
-    <li>tale_noun->[KILLER_nameDef] [VICTIM_nameDefAcc] mit [WEAPON_indefiniteDat] [wound_name_past]</li>
+    <li>tale_noun->[KILLER_nameDef] [VICTIM_nameDefAcc] mit [WEAPON_indefinite_dat] [wound_name_past]</li>
     <li>image->[KILLER_nameFullIndefDat], wie [KILLER_pronoun] die {lookup: Körperfunktion '[CAPACITY_label]'; capacity} von [VICTIM_nameFullIndefDat] [with_weapon_optional] [cap_removal]</li>
     <li>image->[KILLER_nameFullIndefDat], wie [KILLER_pronoun] [VICTIM_nameIndefAcc] [with_weapon_optional] [wound_name_present], indem [KILLER_pronoun] [VICTIM_possessive]e {lookup: Körperfunktion '[CAPACITY_label]'; capacity} [cap_removal]</li>
     <li>cap_removal->zerstört</li>
@@ -361,7 +351,7 @@
     <li>wound_name_present->exekutiert</li>
     <li>wound_name_present->ermordet</li>
     <li>wound_name_present->eliminiert</li>
-    <li>with_weapon_optional->mit [WEAPON_indefiniteDat] [circumstance_group]</li>
+    <li>with_weapon_optional->mit [WEAPON_indefinite_dat] [circumstance_group]</li>
     <li>with_weapon_optional->[circumstance_group]</li>
     <li>circumstance_phrase->scheinbar ohne Reue</li>
     <li>circumstance_phrase->mit kalter Effizienz</li>
@@ -375,9 +365,6 @@
     <li>desc_sentence->[KILLER_nameDef] scheint Reue zu empfinden.</li>
     <li>desc_sentence->[KILLER_nameDef] scheint zufrieden mit der Situation zu sein.</li>
     <li>desc_sentence->[KILLER_nameDef] freut sich über den Sieg.</li>
-    <li>WEAPON_indefiniteDat->[a_dat] [weapon_dat]</li>
-    <li>a_dat->{replace: ^[WEAPON_indefinite]; "^ein [WEAPON_label]"-"einem"; "^eine [WEAPON_label]"-"einer"; "^"-""}</li>
-    <li>weapon_dat->{replace: [WEAPON_label]; "er "-"en "; "e "-"en "; "es "-"en "}</li>
     <li>KILLER_nameFullIndefDat->{replace: [KILLER_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
     <li>VICTIM_nameFullIndefDat->{replace: [VICTIM_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
     <li>VICTIM_nameIndefAcc->{replace: [VICTIM_nameDef]; ">der "-">einen "; ">die "-">eine "; ">das "-">ein "}</li>
@@ -423,9 +410,9 @@
   -->
   <KilledLongRange.rulePack.rulesStrings>
     <li>tale_noun->[KILLER_nameDef] [VICTIM_nameDefAcc] aus extremer Entfernung [wound_name_past]</li>
-    <li>tale_noun->[KILLER_nameDef] [VICTIM_nameDefAcc] aus extremer Entfernung mit [WEAPON_indefiniteDat] [wound_name_past]</li>
+    <li>tale_noun->[KILLER_nameDef] [VICTIM_nameDefAcc] aus extremer Entfernung mit [WEAPON_indefinite_dat] [wound_name_past]</li>
     <li>tale_noun->[VICTIM_nameDef] von [KILLER_nameDefDat] aus großer Entfernung [wound_name_past_2] wurde</li>
-    <li>tale_noun->[VICTIM_nameDef] von [KILLER_nameDefDat] aus großer Entfernung mit [WEAPON_indefiniteDat] [wound_name_past_2] wurde</li>
+    <li>tale_noun->[VICTIM_nameDef] von [KILLER_nameDefDat] aus großer Entfernung mit [WEAPON_indefinite_dat] [wound_name_past_2] wurde</li>
     <li>image->[KILLER_nameFullIndefDat], wie [KILLER_pronoun] [with_weapon_optional] auf [VICTIM_nameIndefAcc] zielt</li>
     <li>image->[KILLER_nameFullIndefDat], wie [KILLER_pronoun] [VICTIM_nameIndefAcc] [with_weapon_optional] [wound_name_present]</li>
     <li>image->[KILLER_nameFullIndefDat], wie [KILLER_pronoun] eiskalt [VICTIM_nameIndefAcc] [with_weapon_optional] [wound_name_present]</li>
@@ -441,7 +428,7 @@
     <li>wound_name_present->abschlachtet</li>
     <li>wound_name_present->tötet</li>
     <li>wound_name_present->eliminiert</li>
-    <li>with_weapon_optional->mit [WEAPON_indefiniteDat] [circumstance_group]</li>
+    <li>with_weapon_optional->mit [WEAPON_indefinite_dat] [circumstance_group]</li>
     <li>with_weapon_optional->[circumstance_group]</li>
     <li>circumstance_phrase->scheinbar ohne Reue</li>
     <li>circumstance_phrase->mit kalter Effizienz</li>
@@ -459,9 +446,6 @@
     <li>desc_sentence->[KILLER_nameDef] scheint Reue zu empfinden.</li>
     <li>desc_sentence->[KILLER_nameDef] scheint zufrieden mit der Situation zu sein.</li>
     <li>desc_sentence->[KILLER_nameDef] freut sich über den Sieg.</li>
-    <li>WEAPON_indefiniteDat->[a_dat] [weapon_dat]</li>
-    <li>a_dat->{replace: ^[WEAPON_indefinite]; "^ein [WEAPON_label]"-"einem"; "^eine [WEAPON_label]"-"einer"; "^"-""}</li>
-    <li>weapon_dat->{replace: [WEAPON_label]; "er "-"en "; "e "-"en "; "es "-"en "}</li>
     <li>KILLER_nameFullIndefDat->{replace: [KILLER_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
     <li>KILLER_nameDefDat->{replace: [KILLER_nameDef]; ">der "-">dem "; ">die "-">der "; ">das "-">dem "}</li>
     <li>VICTIM_nameIndefAcc->{replace: [VICTIM_nameDef]; ">der "-">einen "; ">die "-">eine "; ">das "-">ein "}</li>
@@ -510,9 +494,9 @@
   -->
   <KilledMajorThreat.rulePack.rulesStrings>
     <li>tale_noun->[KILLER_nameDef] [VICTIM_nameDefAcc] [wound_name_past]</li>
-    <li>tale_noun->[KILLER_nameDef] [VICTIM_nameDefAcc] mit [WEAPON_indefiniteDat] [wound_name_past]</li>
+    <li>tale_noun->[KILLER_nameDef] [VICTIM_nameDefAcc] mit [WEAPON_indefinite_dat] [wound_name_past]</li>
     <li>tale_noun->[VICTIM_nameDef] von [KILLER_nameDefDat] [wound_name_past_2] wurde</li>
-    <li>tale_noun->[VICTIM_nameDef] von [KILLER_nameDefDat] mit [WEAPON_indefiniteDat] [wound_name_past_2] wurde</li>
+    <li>tale_noun->[VICTIM_nameDef] von [KILLER_nameDefDat] mit [WEAPON_indefinite_dat] [wound_name_past_2] wurde</li>
     <li>image->[VICTIM_nameFullIndefDat], wie [VICTIM_pronoun] von [KILLER_nameFullIndefDat] [with_weapon_optional] [wound_name_past_2] wird</li>
     <li>image->[KILLER_nameFullIndefDat], wie [KILLER_pronoun] [VICTIM_nameIndefAcc] [with_weapon_optional] [wound_name_present]</li>
     <li>image->[KILLER_nameFullIndefDat], wie [KILLER_pronoun] auf brutale Weise [VICTIM_nameIndefAcc] [with_weapon_optional] [wound_name_present]</li>
@@ -526,7 +510,7 @@
     <li>wound_name_present->abschlachtet</li>
     <li>wound_name_present->besiegt</li>
     <li>wound_name_present->überwältigt</li>
-    <li>with_weapon_optional->mit [WEAPON_indefiniteDat] [circumstance_group]</li>
+    <li>with_weapon_optional->mit [WEAPON_indefinite_dat] [circumstance_group]</li>
     <li>with_weapon_optional->[circumstance_group]</li>
     <li>circumstance_phrase->mit kalter Effizienz</li>
     <li>circumstance_phrase->mit schnellen, effizienten Bewegungen</li>
@@ -550,9 +534,6 @@
     <li>desc_sentence->[KILLER_nameDef] freut sich über den Sieg.</li>
     <li>desc_sentence->[KILLER_nameDef] sieht [AdjectiveBadass] aus.</li>
     <li>desc_sentence->[KILLER_nameDef] erstrahlt in einer heroischen Aura.</li>
-    <li>WEAPON_indefiniteDat->[a_dat] [weapon_dat]</li>
-    <li>a_dat->{replace: ^[WEAPON_indefinite]; "^ein [WEAPON_label]"-"einem"; "^eine [WEAPON_label]"-"einer"; "^"-""}</li>
-    <li>weapon_dat->{replace: [WEAPON_label]; "er "-"en "; "e "-"en "; "es "-"en "}</li>
     <li>KILLER_nameFullIndefDat->{replace: [KILLER_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
     <li>KILLER_nameDefDat->{replace: [KILLER_nameDef]; ">der "-">dem "; ">die "-">der "; ">das "-">dem "}</li>
     <li>KILLER_nameDefAcc->{replace: [KILLER_nameDef]; ">der "-">den "}</li>
@@ -603,9 +584,9 @@
   -->
   <KilledMelee.rulePack.rulesStrings>
     <li>tale_noun->[KILLER_nameDef] [VICTIM_nameDefAcc] im Nahkampf [wound_name_past]</li>
-    <li>tale_noun->[KILLER_nameDef] [VICTIM_nameDefAcc] mit [WEAPON_indefiniteDat] im Nahkampf [wound_name_past]</li>
+    <li>tale_noun->[KILLER_nameDef] [VICTIM_nameDefAcc] mit [WEAPON_indefinite_dat] im Nahkampf [wound_name_past]</li>
     <li>tale_noun->[VICTIM_nameDef] von [KILLER_nameDefDat] im Nahkampf [wound_name_past_2] wurde</li>
-    <li>tale_noun->[VICTIM_nameDef] von [KILLER_nameDefDat] mit [WEAPON_indefiniteDat] im Nahkampf [wound_name_past_2] wurde</li>
+    <li>tale_noun->[VICTIM_nameDef] von [KILLER_nameDefDat] mit [WEAPON_indefinite_dat] im Nahkampf [wound_name_past_2] wurde</li>
     <li>image->[VICTIM_nameFullIndefDat], wie [VICTIM_pronoun] von [KILLER_nameFullIndefDat] [with_weapon_optional] [wound_name_past_2] wird</li>
     <li>image->[KILLER_nameFullIndefDat], wie [KILLER_pronoun] [VICTIM_nameIndefAcc] [with_weapon_optional] [wound_name_present]</li>
     <li>image->[KILLER_nameFullIndefDat], wie [KILLER_pronoun] auf brutale Weise [VICTIM_nameIndefAcc] [with_weapon_optional] [wound_name_present]</li>
@@ -622,7 +603,7 @@
     <li>wound_name_present->abschlachtet</li>
     <li>wound_name_present->tötet</li>
     <li>wound_name_present->verstümmelt</li>
-    <li>with_weapon_optional->mit [WEAPON_indefiniteDat] [circumstance_group]</li>
+    <li>with_weapon_optional->mit [WEAPON_indefinite_dat] [circumstance_group]</li>
     <li>with_weapon_optional->[circumstance_group]</li>
     <li>circumstance_phrase->scheinbar ohne Reue</li>
     <li>circumstance_phrase->mit kalter Effizienz</li>
@@ -642,9 +623,6 @@
     <li>desc_sentence->[KILLER_nameDef] scheint zufrieden mit der Situation zu sein.</li>
     <li>desc_sentence->[KILLER_nameDef] freut sich über den Sieg.</li>
     <li>desc_sentence->[KILLER_nameDef] hat einen wilden Ausdruck.</li>
-    <li>WEAPON_indefiniteDat->[a_dat] [weapon_dat]</li>
-    <li>a_dat->{replace: ^[WEAPON_indefinite]; "^ein [WEAPON_label]"-"einem"; "^eine [WEAPON_label]"-"einer"; "^"-""}</li>
-    <li>weapon_dat->{replace: [WEAPON_label]; "er "-"en "; "e "-"en "; "es "-"en "}</li>
     <li>KILLER_nameFullIndefDat->{replace: [KILLER_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
     <li>KILLER_nameDefDat->{replace: [KILLER_nameDef]; ">der "-">dem "; ">die "-">der "; ">das "-">dem "}</li>
     <li>VICTIM_nameFullIndefDat->{replace: [VICTIM_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
@@ -746,8 +724,6 @@
     <li>desc_sentence->[Quantity_adjphrase] spiralförmige [Color]e [TerrainFeatures] umgeben die Szene.</li>
     <li>desc_sentence->Die Szene spielt in einem verwinkelten [TreeType]nwald.</li>
     <li>desc_sentence->[Quantity_adjphrase] sterbende [Animals] liegen auf dem Boden.</li>
-    <li>PAWN_nameFullIndefDat->{replace: [PAWN_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
-    <li>PAWN_nameDefDat->{replace: [PAWN_nameIndef]; ">ein "-">dem "; ">eine "-">der "}</li>
   </ToxicityRevealed.rulePack.rulesStrings>
   
   <!-- EN: wounded -->
@@ -796,9 +772,9 @@
   -->
   <Wounded.rulePack.rulesStrings>
     <li>tale_noun->[KILLER_nameDef] [VICTIM_nameDefAcc] [wound_name_past]</li>
-    <li>tale_noun->[KILLER_nameDef] [VICTIM_nameDefAcc] mit [WEAPON_indefiniteDat] [wound_name_past]</li>
+    <li>tale_noun->[KILLER_nameDef] [VICTIM_nameDefAcc] mit [WEAPON_indefinite_dat] [wound_name_past]</li>
     <li>tale_noun->[VICTIM_nameDef] von [KILLER_nameDefDat] [wound_name_past2] wurde</li>
-    <li>tale_noun->[VICTIM_nameDef] von [KILLER_nameDefDat] mit [WEAPON_indefiniteDat] [wound_name_past2] wurde</li>
+    <li>tale_noun->[VICTIM_nameDef] von [KILLER_nameDefDat] mit [WEAPON_indefinite_dat] [wound_name_past2] wurde</li>
     <li>tale_noun->[VICTIM_nameDef] [wound_name_past2] wurde</li>
     <li>image->[VICTIM_nameFullIndefDat], wie [VICTIM_pronoun] von [KILLER_nameFullIndefDat] [with_weapon_optional] [wound_name_past2] wird</li>
     <li>image->[KILLER_nameFullIndefDat], wie [KILLER_pronoun] [VICTIM_nameIndefAcc] [with_weapon_optional] [wound_name_present]</li>
@@ -816,7 +792,7 @@
     <li>wound_name_present->verletzt</li>
     <li>wound_name_present->verletzt</li>
     <li>wound_name_present->angreift</li>
-    <li>with_weapon_optional->mit [WEAPON_indefiniteDat] [circumstance_group]</li>
+    <li>with_weapon_optional->mit [WEAPON_indefinite_dat] [circumstance_group]</li>
     <li>with_weapon_optional->[circumstance_group]</li>
     <li>circumstance_phrase->scheinbar ohne Reue</li>
     <li>circumstance_phrase->mit kalter Effizienz</li>
@@ -837,9 +813,6 @@
     <li>desc_sentence->[KILLER_nameDef] scheint Reue zu empfinden.</li>
     <li>desc_sentence->[KILLER_nameDef] scheint zufrieden mit der Situation zu sein.</li>
     <li>desc_sentence->[KILLER_nameDef] freut sich über den Sieg.</li>
-    <li>WEAPON_indefiniteDat->[a_dat] [weapon_dat]</li>
-    <li>a_dat->{replace: ^[WEAPON_indefinite]; "^ein [WEAPON_label]"-"einem"; "^eine [WEAPON_label]"-"einer"; "^"-""}</li>
-    <li>weapon_dat->{replace: [WEAPON_label]; "er "-"en "; "e "-"en "; "es "-"en "}</li>
     <li>KILLER_nameFullIndefDat->{replace: [KILLER_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
     <li>KILLER_nameDefDat->{replace: [KILLER_nameDef]; ">der "-">dem "; ">die "-">der "; ">das "-">dem "}</li>
     <li>VICTIM_nameFullIndefDat->{replace: [VICTIM_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>

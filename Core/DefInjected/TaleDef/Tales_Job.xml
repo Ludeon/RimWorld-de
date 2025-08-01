@@ -78,7 +78,6 @@
     <li>desc_sentence(p=0.33)->Ein schneebedeckter [TerrainFeatureMas] ist in der Ferne zu sehen.</li>
     <li>desc_sentence(p=0.33)->Eine schneebedeckte [TerrainFeatureFem] ist in der Ferne zu sehen.</li>
     <li>desc_sentence(p=0.33)->Ein schneebedecktes [TerrainFeatureNeu] ist in der Ferne zu sehen.</li>
-    <li>PAWN_nameFullIndefDat->{replace: [PAWN_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
   </BuiltSnowman.rulePack.rulesStrings>
   
   <!-- EN: buried corpse -->
@@ -153,34 +152,21 @@
     <li>desc_sentence->[Quantity_adjphrase] [PersonJob]s gaze in awe.</li>
   -->
   <CompletedLongConstructionProject.rulePack.rulesStrings>
-    <li>tale_noun->[PAWN_nameDef] [OBJECT_indefiniteAcc] fertigstellte</li>
-    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] [OBJECT_indefiniteAcc] baut</li>
-    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] [OBJECT_indefiniteAcc] zusammenbaut</li>
-    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] die Flächen an [OBJECT_indefiniteDat] poliert</li>
-    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] [PAWN_possessive]en Namen auf [OBJECT_indefiniteAcc] schreibt</li>
+    <li>tale_noun->[PAWN_nameDef] [OBJECT_indefinite_acc] fertigstellte</li>
+    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] [OBJECT_indefinite_acc] baut</li>
+    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] [OBJECT_indefinite_acc] zusammenbaut</li>
+    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] die Flächen an [OBJECT_indefinite_dat] poliert</li>
+    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] [PAWN_possessive]en Namen auf [OBJECT_indefinite_acc] schreibt</li>
     <li>circumstance_phrase->mit glänzenden Augen</li>
     <li>circumstance_phrase->, während [PAWN_pronoun] sich den Schweiß von der Stirn wischt,</li>
     <li>circumstance_phrase->, während [PAWN_pronoun] mit Schmutz bedeckt ist,</li>
     <li>circumstance_phrase->stolz grinsend</li>
     <li>circumstance_phrase->mit einem zufriedenen Gesichtsausdruck</li>
-    <li>desc_sentence->[OBJECT_definiteTrue] scheint sich über [PAWN_nameDefAcc] aufzutürmen.</li>
-    <li>desc_sentence->[OBJECT_definiteTrue] leuchtet leicht in [Color]er Farbe.</li>
-    <li>desc_sentence->[OBJECT_definiteTrue] ist aufwendig gestaltet.</li>
-    <li>desc_sentence->[Quantity_adjphrase] [PersonJobs] bestaunen [OBJECT_definiteAcc].</li>
+    <li>desc_sentence->[OBJECT_definite_nom] scheint sich über [PAWN_nameDefAcc] aufzutürmen.</li>
+    <li>desc_sentence->[OBJECT_definite_nom] leuchtet leicht in [Color]er Farbe.</li>
+    <li>desc_sentence->[OBJECT_definite_nom] ist aufwendig gestaltet.</li>
+    <li>desc_sentence->[Quantity_adjphrase] [PersonJobs] bestaunen [OBJECT_definite_acc].</li>
     <li>desc_sentence->[Quantity_adjphrase] [PersonJobs] starren voller Ehrfurcht.</li>
-    <li>OBJECT_indefiniteDat->[a_dat] [object_dat]</li>
-    <li>OBJECT_indefiniteAcc->[a_acc] [object_acc]</li>
-    <li>OBJECT_definiteAcc->[the_acc] [object_acc]</li>
-    <li>OBJECT_definiteTrue->[the] [object_def]</li>
-    <li>a_dat->{replace: ^[OBJECT_indefinite]; "^ein [OBJECT_label]"-"einem"; "^eine [OBJECT_label]"-"einer"; "^"-""}</li>
-    <li>a_acc->{replace: ^[OBJECT_definite]; "^der [OBJECT_label]"-"einen"; "^die [OBJECT_label]"-"eine"; "^das [OBJECT_label]"-"ein"; "^"-""}</li>
-    <li>the_acc->{replace: ^[OBJECT_definite]; "^der [OBJECT_label]"-"den"; "^die [OBJECT_label]"-"die"; "^das [OBJECT_label]"-"das"; "^"-""}</li>
-    <li>the->{replace: ^[OBJECT_definite]; "^der [OBJECT_label]"-"der"; "^die [OBJECT_label]"-"die"; "^das [OBJECT_label]"-"das"; "^"-""}</li>
-    <li>object_dat->{replace: [OBJECT_label]; "er "-"en "; "e "-"en "; "es "-"en "}</li>
-    <li>object_acc->{replace: [OBJECT_label]; "er "-"en "}</li>
-    <li>object_def->{replace: [OBJECT_label]; "er "-"e "; "es "-"e "}</li>
-    <li>PAWN_nameFullIndefDat->{replace: [PAWN_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
-    <li>PAWN_nameDefAcc->{replace: [PAWN_nameDef]; ">der "-">den "}</li>
   </CompletedLongConstructionProject.rulePack.rulesStrings>
   
   <!-- EN: completed long crafting project -->
@@ -203,33 +189,21 @@
     <li>desc_sentence->[Quantity_adjphrase] [PersonJob]s gaze in awe.</li>
   -->
   <CompletedLongCraftingProject.rulePack.rulesStrings>
-    <li>tale_noun->[PAWN_nameDef] [OBJECT_indefiniteAcc] fertigstellte</li>
-    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] an [OBJECT_indefiniteDat] arbeitet</li>
-    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] die Flächen an [OBJECT_indefiniteDat] poliert</li>
-    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] [OBJECT_indefiniteDat] Verzierungen hinzufügt</li>
-    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] [PAWN_possessive]en Namen auf [OBJECT_indefiniteAcc] schreibt</li>
+    <li>tale_noun->[PAWN_nameDef] [OBJECT_indefinite_acc] fertigstellte</li>
+    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] an [OBJECT_indefinite_dat] arbeitet</li>
+    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] die Flächen an [OBJECT_indefinite_dat] poliert</li>
+    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] [OBJECT_indefinite_dat] Verzierungen hinzufügt</li>
+    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] [PAWN_possessive]en Namen auf [OBJECT_indefinite_acc] schreibt</li>
     <li>circumstance_phrase->mit glänzenden Augen</li>
     <li>circumstance_phrase->, während [PAWN_pronoun] sich den Schweiß von der Stirn wischt,</li>
     <li>circumstance_phrase->, während [PAWN_pronoun] mit Schmutz bedeckt ist,</li>
     <li>circumstance_phrase->stolz grinsend</li>
     <li>circumstance_phrase->mit einem zufriedenen Gesichtsausdruck</li>
-    <li>desc_sentence->[OBJECT_definiteTrue] leuchtet leicht in [Color]er Farbe.</li>
-    <li>desc_sentence->[OBJECT_definiteTrue] ist aufwendig gestaltet.</li>
-    <li>desc_sentence->[PAWN_nameDef] hebt [OBJECT_definiteAcc] scheinbar ohne Aufwand an.</li>
-    <li>desc_sentence->[Quantity_adjphrase] [PersonJobs] bestaunen [OBJECT_definiteAcc].</li>
+    <li>desc_sentence->[OBJECT_definite_nom] leuchtet leicht in [Color]er Farbe.</li>
+    <li>desc_sentence->[OBJECT_definite_nom] ist aufwendig gestaltet.</li>
+    <li>desc_sentence->[PAWN_nameDef] hebt [OBJECT_definite_acc] scheinbar ohne Aufwand an.</li>
+    <li>desc_sentence->[Quantity_adjphrase] [PersonJobs] bestaunen [OBJECT_definite_acc].</li>
     <li>desc_sentence->[Quantity_adjphrase] [PersonJobs] starren voller Ehrfurcht.</li>
-    <li>OBJECT_indefiniteDat->[a_dat] [object_dat]</li>
-    <li>OBJECT_indefiniteAcc->[a_acc] [object_acc]</li>
-    <li>OBJECT_definiteAcc->[the_acc] [object_acc]</li>
-    <li>OBJECT_definiteTrue->[the] [object_def]</li>
-    <li>a_dat->{replace: ^[OBJECT_indefinite]; "^ein [OBJECT_label]"-"einem"; "^eine [OBJECT_label]"-"einer"; "^"-""}</li>
-    <li>a_acc->{replace: ^[OBJECT_definite]; "^der [OBJECT_label]"-"einen"; "^die [OBJECT_label]"-"eine"; "^das [OBJECT_label]"-"ein"; "^"-""}</li>
-    <li>the_acc->{replace: ^[OBJECT_definite]; "^der [OBJECT_label]"-"den"; "^die [OBJECT_label]"-"die"; "^das [OBJECT_label]"-"das"; "^"-""}</li>
-    <li>the->{replace: ^[OBJECT_definite]; "^der [OBJECT_label]"-"der"; "^die [OBJECT_label]"-"die"; "^das [OBJECT_label]"-"das"; "^"-""}</li>
-    <li>object_dat->{replace: [OBJECT_label]; "er "-"en "; "e "-"en "; "es "-"en "}</li>
-    <li>object_acc->{replace: [OBJECT_label]; "er "-"en "}</li>
-    <li>object_def->{replace: [OBJECT_label]; "er "-"e "; "es "-"e "}</li>
-    <li>PAWN_nameFullIndefDat->{replace: [PAWN_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
   </CompletedLongCraftingProject.rulePack.rulesStrings>
   
   <!-- EN: entered cryptosleep -->
@@ -269,7 +243,6 @@
     <li>desc_sentence->[PAWN_nameDef] weist sichtbare Verletzungen auf.</li>
     <li>desc_sentence->Ein [Color]es Polarlicht schimmert am Horizont.</li>
     <li>desc_sentence->[Quantity_adjphrase] volle Kryptoschlafkapseln begleiten die Szene.</li>
-    <li>PAWN_nameFullIndefDat->{replace: [PAWN_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
   </EnteredCryptosleep.rulePack.rulesStrings>
   
   <!-- EN: gained master skill -->
@@ -309,7 +282,6 @@
     <li>desc_sentence->[Quantity_adjphrase] [PersonJobs] schauen erstaunt zu.</li>
     <li>desc_sentence->[Quantity_adjphrase] [Animals] schauen erstaunt zu.</li>
     <li>desc_sentence->[Quantity_adjphrase] ätherische Geister alter Meister schauen von oben zu.</li>
-    <li>PAWN_nameFullIndefDat->{replace: [PAWN_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
   </GainedMasterSkillWithoutPassion.rulePack.rulesStrings>
   
   <!-- EN: gained master skill with passion -->
@@ -353,7 +325,6 @@
     <li>desc_sentence->[Quantity_adjphrase] [PersonJobs] schauen erstaunt zu.</li>
     <li>desc_sentence->[Quantity_adjphrase] [Animals] schauen erstaunt zu.</li>
     <li>desc_sentence->[Quantity_adjphrase] ätherische Geister alter Meister schauen von oben zu.</li>
-    <li>PAWN_nameFullIndefDat->{replace: [PAWN_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
   </GainedMasterSkillWithPassion.rulePack.rulesStrings>
   
   <!-- EN: increased menagerie -->
@@ -430,7 +401,6 @@
     <li>desc_sentence->[PAWN_pronoun] ist von [Quantity_adjphrase_Dat] [AnimalsDat] umgeben.</li>
     <li>desc_sentence->[Quantity_adjphrase] [Animals] rasten friedlich.</li>
     <li>desc_sentence->[Quantity_adjphrase] [Enemies] sind von der Szene in Ehrfurcht erstarrt.</li>
-    <li>PAWN_nameFullIndefDat->{replace: [PAWN_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
   </Meditated.rulePack.rulesStrings>
   
   <!-- EN: mined valuable -->
@@ -474,7 +444,6 @@
     <li>desc_sentence(p=0.33)->Eine [TerrainFeatureFem] ist in der Ferne zu sehen.</li>
     <li>desc_sentence(p=0.33)->Ein [TerrainFeatureNeu] ist in der Ferne zu sehen.</li>
     <li>desc_sentence->[PAWN_nameDef] ist verschwitzt und schmutzig von der Arbeit.</li>
-    <li>PAWN_nameFullIndefDat->{replace: [PAWN_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
   </MinedValuable.rulePack.rulesStrings>
   
   <!-- EN: played game -->
@@ -506,14 +475,14 @@
     <li>desc_sentence->[Quantity_adjphrase] [PersonJob]s are slumped in defeat.</li>
   -->
   <PlayedGame.rulePack.rulesStrings>
-    <li>tale_noun->sich [PAWN_nameDef] beim Spiel an [OBJECT_indefiniteDat] entspannte</li>
-    <li>tale_noun->[PAWN_nameDef] an [OBJECT_indefiniteDat] spielte</li>
-    <li>tale_noun->[PAWN_nameDef] sich beim Spielen an [OBJECT_indefiniteDat] amüsierte</li>
+    <li>tale_noun->sich [PAWN_nameDef] beim Spiel an [OBJECT_indefinite_dat] entspannte</li>
+    <li>tale_noun->[PAWN_nameDef] an [OBJECT_indefinite_dat] spielte</li>
+    <li>tale_noun->[PAWN_nameDef] sich beim Spielen an [OBJECT_indefinite_dat] amüsierte</li>
     <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] auf einem Stuhl wartet</li>
-    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] über [OBJECT_indefiniteDat] verharrt</li>
-    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] an [OBJECT_indefiniteDat] sitzt</li>
-    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] an [OBJECT_indefiniteDat] gewinnt</li>
-    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] an [OBJECT_indefiniteDat] verliert</li>
+    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] über [OBJECT_indefinite_dat] verharrt</li>
+    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] an [OBJECT_indefinite_dat] sitzt</li>
+    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] an [OBJECT_indefinite_dat] gewinnt</li>
+    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] an [OBJECT_indefinite_dat] verliert</li>
     <li>circumstance_phrase->energiegeladen</li>
     <li>circumstance_phrase->entspannt</li>
     <li>circumstance_phrase->, während [PAWN_pronoun] [PAWN_possessive]en nächsten Zug plant,</li>
@@ -530,10 +499,6 @@
     <li>desc_sentence->[PAWN_nameDef] strahlt in einer [Color]en Aura.</li>
     <li>desc_sentence->[PAWN_label]'s Merkmale werden übertrieben dargestellt.</li>
     <li>desc_sentence->[PAWN_nameDef] ist der Höhepunkt der Szene.</li>
-    <li>OBJECT_indefiniteDat->[a_dat] [object_dat]</li>
-    <li>a_dat->{replace: ^[OBJECT_indefinite]; "^ein [OBJECT_label]"-"einem"; "^eine [OBJECT_label]"-"einer"; "^"-""}</li>
-    <li>object_dat->{replace: [OBJECT_label]; "er "-"en "; "e "-"en "; "es "-"en "}</li>
-    <li>PAWN_nameFullIndefDat->{replace: [PAWN_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
   </PlayedGame.rulePack.rulesStrings>
   
   <!-- EN: prayed -->
@@ -571,7 +536,6 @@
     <li>desc_sentence->[PAWN_pronoun] ist von [Quantity_adjphrase_Dat] [AnimalsDat] umgeben.</li>
     <li>desc_sentence->[Quantity_adjphrase] [Animals] rasten friedlich.</li>
     <li>desc_sentence->[Quantity_adjphrase] [Enemies] sind von der Szene in Ehrfurcht erstarrt.</li>
-    <li>PAWN_nameFullIndefDat->{replace: [PAWN_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
   </Prayed.rulePack.rulesStrings>
   
   <!-- EN: put into cryptosleep -->

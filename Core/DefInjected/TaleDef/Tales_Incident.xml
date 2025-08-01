@@ -50,7 +50,6 @@
     <li>desc_sentence(p=0.33)->[PAWN_nameDef] sitzt neben einem [TerrainFeatureNeuDat] und schaut in den Himmel.</li>
     <li>desc_sentence->[Quantity_adjphrase] [Animals] wandern friedlich umher.</li>
     <li>desc_sentence->Weit und breit ist kein [Enemy] zu sehen.</li>
-    <li>PAWN_nameDefDat->{replace: [PAWN_nameIndef]; ">ein "-">dem "; ">eine "-">der "}</li>
   </Aurora.rulePack.rulesStrings>
   
   <!-- EN: caravan ambushed -->
@@ -98,8 +97,6 @@
     <li>desc_sentence->[PAWN_nameDef] wird mit einem [EnemyDat] konfrontiert.</li>
     <li>desc_sentence->[Quantity_adjphrase] [Animals] fliehen panisch aus dem Konfliktbereich.</li>
     <li>desc_sentence->In der Ferne beobachtet ein [PersonJob] das Geschehen.</li>
-    <li>PAWN_nameFullIndefDat->{replace: [PAWN_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
-    <li>PAWN_nameDefDat->{replace: [PAWN_nameIndef]; ">ein "-">dem "; ">eine "-">der "}</li>
   </CaravanAmbushedByHumanlike.rulePack.rulesStrings>
   
   <!-- EN: caravan ambushed by manhunter -->
@@ -143,8 +140,6 @@
     <li>desc_sentence->Der Boden ist übersät mit [GoreDat].</li>
     <li>desc_sentence->[Quantity_adjphrase] [Animals] fliehen panisch aus dem Konfliktbereich.</li>
     <li>desc_sentence->In der Ferne beobachtet ein [PersonJob] das Geschehen.</li>
-    <li>PAWN_nameFullIndefDat->{replace: [PAWN_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
-    <li>PAWN_nameDefDat->{replace: [PAWN_nameIndef]; ">ein "-">dem "; ">eine "-">der "}</li>
   </CaravanAmbushedByManhunter.rulePack.rulesStrings>
   
   <!-- EN: caravan demand -->
@@ -202,9 +197,6 @@
     <li>action->überwachen die Geißeln</li>
     <li>action->warten auf eine Entscheidung</li>
     <li>action->verhöhnen [PAWN_nameDefAcc]</li>
-    <li>PAWN_nameFullIndefDat->{replace: [PAWN_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
-    <li>PAWN_nameDefDat->{replace: [PAWN_nameIndef]; ">ein "-">dem "; ">eine "-">der "}</li>
-    <li>PAWN_nameDefAcc->{replace: [PAWN_nameDef]; ">der "-">den "}</li>
   </CaravanDemand.rulePack.rulesStrings>
   
   <!-- EN: caravan meeting -->
@@ -262,8 +254,6 @@
     <li>event->diskutieren über die jüngsten Ereignisse</li>
     <li>event->erwecken alte Freundschaften wieder zum Leben</li>
     <li>event->reden zögerlich miteinander</li>
-    <li>PAWN_nameFullIndefDat->{replace: [PAWN_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
-    <li>PAWN_nameDefDat->{replace: [PAWN_nameIndef]; ">ein "-">dem "; ">eine "-">der "}</li>
   </CaravanMeeting.rulePack.rulesStrings>
   
   <!-- EN: eclipse -->
@@ -306,7 +296,6 @@
     <li>desc_sentence(p=0.33)->[PAWN_nameDef] sitzt neben einem [TerrainFeatureNeuDat] und schaut in den Himmel.</li>
     <li>desc_sentence->Eine Gruppe von Zuschauern starrt friedlich in den Himmel.</li>
     <li>desc_sentence->Weit und breit ist kein [Enemy] zu sehen.</li>
-    <li>PAWN_nameDefDat->{replace: [PAWN_nameIndef]; ">ein "-">dem "; ">eine "-">der "}</li>
   </Eclipse.rulePack.rulesStrings>
   
   <!-- EN: journey offer -->
@@ -380,8 +369,6 @@
     <li>desc_sentence(p=0.5)->Eine [CommunityFem] ist in der Ferne zu sehen.</li>
     <li>desc_sentence(p=0.5)->Ein [CommunityNeu] ist in der Ferne zu sehen.</li>
     <li>desc_sentence->Ein Raumschiff ist in der Ferne zu sehen.</li>
-    <li>PAWN_nameFullIndefDat->{replace: [PAWN_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
-    <li>PAWN_nameDefDat->{replace: [PAWN_nameIndef]; ">ein "-">dem "; ">eine "-">der "}</li>
   </EndGame_ShipEscape.rulePack.rulesStrings>
   
   <!-- EN: flashstorm -->
@@ -440,7 +427,6 @@
     <li>desc_sentence->[Quantity_adjphrase] [PersonJobs] bereiten sich schnell darauf vor.</li>
     <li>desc_sentence->[Quantity_adjphrase] [Animals] fliehen aus dem Gebiet.</li>
     <li>desc_sentence->Die gesamte Tierwelt hat das Gebiet verlassen.</li>
-    <li>PAWN_nameDefDat->{replace: [PAWN_nameIndef]; ">ein "-">dem "; ">eine "-">der "}</li>
   </Flashstorm.rulePack.rulesStrings>
   
   <!-- EN: infestation -->
@@ -635,7 +621,6 @@
     <li>desc_sentence->[Quantity_adjphrase] Gestalten bereiten Werkzeuge und Ausrüstungen vor.</li>
     <li>desc_sentence->[Quantity_adjphrase] [Animals] laufen unsicher herum.</li>
     <li>desc_sentence->Die Umgebung ist schlicht und langweilig.</li>
-    <li>PAWN_nameDefDat->{replace: [PAWN_nameIndef]; ">ein "-">dem "; ">eine "-">der "}</li>
   </MeteoriteImpact.rulePack.rulesStrings>
   
   <!-- EN: raid -->
@@ -720,7 +705,6 @@
     <li>defender_circumstance->[PAWN_pronoun] [Color] leuchtet</li>
     <li>defender_circumstance->[PAWN_pronoun] trotzig [PAWN_possessive]e Faust erhebt</li>
     <li>defender_circumstance->[PAWN_pronoun] [PAWN_possessive]e Muskeln anspannt</li>
-    <li>PAWN_nameDefDat->{replace: [PAWN_nameIndef]; ">ein "-">dem "; ">eine "-">der "}</li>
   </Raid.rulePack.rulesStrings>
   
   <!-- EN: ship part crash -->
@@ -808,7 +792,6 @@
     <li>defender_circumstance->[PAWN_pronoun] [Color] leuchtet</li>
     <li>defender_circumstance->[PAWN_pronoun] trotzig [PAWN_possessive]e Faust erhebt</li>
     <li>defender_circumstance->[PAWN_pronoun] [PAWN_possessive]e Muskeln anspannt</li>
-    <li>PAWN_nameDefDat->{replace: [PAWN_nameIndef]; ">ein "-">dem "; ">eine "-">der "}</li>
   </ShipPartCrash.rulePack.rulesStrings>
   
   <!-- EN: tornado -->
@@ -863,7 +846,6 @@
     <li>desc_sentence->[Quantity_adjphrase] [PersonJobs] bereiten sich schnell darauf vor.</li>
     <li>desc_sentence->[Quantity_adjphrase] [Animals] fliehen aus dem Gebiet.</li>
     <li>desc_sentence->Die gesamte Tierwelt hat das Gebiet verlassen.</li>
-    <li>PAWN_nameDefDat->{replace: [PAWN_nameIndef]; ">ein "-">dem "; ">eine "-">der "}</li>
   </Tornado.rulePack.rulesStrings>
   
   <!-- EN: tornado -->
@@ -969,7 +951,6 @@
     <li>desc_sentence->[Quantity_adjphrase] tote [Animals] liegen auf dem Boden.</li>
     <li>desc_sentence->[Quantity_adjphrase] sterbende [Animals] liegen auf dem Boden.</li>
     <li>desc_sentence->[Quantity_adjphrase] [Animals] laufen unsicher herum.</li>
-    <li>PAWN_nameDefDat->{replace: [PAWN_nameIndef]; ">ein "-">dem "; ">eine "-">der "}</li>
   </ToxicFallout.rulePack.rulesStrings>
   
   <!-- EN: volcanic winter -->
@@ -1014,7 +995,6 @@
     <li>desc_sentence->[Quantity_adjphrase] zitternde [Animals] begleiten die Szene.</li>
     <li>desc_sentence->[Quantity_adjphrase] sterbende [Animals] liegen auf dem Boden.</li>
     <li>desc_sentence->[Quantity_adjphrase] [Animals] laufen unsicher herum.</li>
-    <li>PAWN_nameDefDat->{replace: [PAWN_nameIndef]; ">ein "-">dem "; ">eine "-">der "}</li>
   </VolcanicWinter.rulePack.rulesStrings>
   
 </LanguageData>

@@ -54,8 +54,6 @@
     <li>desc_sentence->[PAWN_nameDef] schaut mit dunklem Interesse auf jemand anderen in der Nähe.</li>
     <li>desc_sentence->Das Fleisch glitzert und sieht sehr saftig aus.</li>
     <li>desc_sentence->Das Fleisch verteilt sich komplett über den Körper von [PAWN_nameDefDat].</li>
-    <li>PAWN_nameFullIndefDat->{replace: [PAWN_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
-    <li>PAWN_nameDefDat->{replace: [PAWN_nameIndef]; ">ein "-">dem "; ">eine "-">der "}</li>
   </AteRawHumanlikeMeat.rulePack.rulesStrings>
   
   <!-- EN: humanlike corpse butchered -->
@@ -91,10 +89,10 @@
     <li>title_sentence->The title of [THING_definite], [THING_title], hangs in the background</li>
   -->
   <CraftedArt.rulePack.rulesStrings>
-    <li>tale_noun->[PAWN_nameDef] [THING_indefiniteAcc] kreierte</li>
-    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] [THING_indefiniteAcc] kreiert. [quality_sentence]. [title_sentence]</li>
-    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] [THING_indefiniteAcc] fertigstellt. [quality_sentence]. [title_sentence]</li>
-    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] an [THING_indefiniteDat] arbeitet. [quality_sentence]. [title_sentence]</li>
+    <li>tale_noun->[PAWN_nameDef] [THING_indefinite_acc] kreierte</li>
+    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] [THING_indefinite_acc] kreiert. [quality_sentence]. [title_sentence]</li>
+    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] [THING_indefinite_acc] fertigstellt. [quality_sentence]. [title_sentence]</li>
+    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] an [THING_indefinite_dat] arbeitet. [quality_sentence]. [title_sentence]</li>
     <li>circumstance_phrase->voll konzentriert</li>
     <li>circumstance_phrase->mit einem zufriedenen Gesichtsausdruck</li>
     <li>circumstance_phrase->an [PAWN_possessive]em Arbeitstisch</li>
@@ -104,32 +102,17 @@
     <li>desc_sentence->[PAWN_pronoun] ist in Schweiß gebadet.</li>
     <li>desc_sentence->Der Arbeitstisch ist extrem gut organisiert. Alle Werkzeuge liegen am richtigen Platz.</li>
     <li>desc_sentence->[PAWN_pronoun] wird übertrieben dargestellt, um [PAWN_objective] mächtiger wirken zu lassen.</li>
-    <li>desc_sentence->[THING_definiteTrue] wird übertrieben groß dargestellt, um dessen Bedeutung hervorzuheben.</li>
-    <li>desc_sentence->[THING_definiteTrue] kommt mit einem künstlerischen Glanz daher. Es ist nahezu engelsgleich.</li>
+    <li>desc_sentence->[THING_definite_nom] wird übertrieben groß dargestellt, um dessen Bedeutung hervorzuheben.</li>
+    <li>desc_sentence->[THING_definite_nom] kommt mit einem künstlerischen Glanz daher. Es ist nahezu engelsgleich.</li>
     <li>desc_sentence->[PAWN_nameDef] verschwindet in den Hintergrund, um [PAWN_possessive]e neueste Kreation hervorzuheben.</li>
     <li>desc_sentence->[Quantity_adjphrase] Zuschauer stehen um [PAWN_objective] herum.</li>
     <li>desc_sentence->Eine Menschenmenge jubelt im Hintergrund.</li>
-    <li>quality_sentence->[THING_definiteTrue] scheint von [THING_quality]er Qualität zu sein</li>
-    <li>quality_sentence->[THING_definiteTrue] ist von [THING_quality]er Qualität</li>
+    <li>quality_sentence->[THING_definite_nom] scheint von [THING_quality]er Qualität zu sein</li>
+    <li>quality_sentence->[THING_definite_nom] ist von [THING_quality]er Qualität</li>
     <li>quality_sentence->die Arbeit von [PAWN_nameDefDat] ist von [THING_quality]er Qualität</li>
-    <li>title_sentence->[THING_definiteTrue] hat von [PAWN_nameDefDat] den folgenden Titel erhalten: [THING_title]</li>
-    <li>title_sentence->[THING_definiteTrue] ist mit dem folgenden Titel versehen: [THING_title]</li>
-    <li>title_sentence->Der Titel von [THING_definiteDat], [THING_title], hängt im Hintergrund</li>
-    <li>THING_indefiniteDat->[a_dat] [thing_dat]</li>
-    <li>THING_indefiniteAcc->[a_acc] [thing_acc]</li>
-    <li>THING_definiteDat->[the_dat] [thing_dat]</li>
-    <li>THING_definiteAcc->[the_acc] [thing_acc]</li>
-    <li>THING_definiteTrue->[the] [thing_def]</li>
-    <li>a_dat->{replace: ^[THING_indefinite]; "^ein [THING_label]"-"einem"; "^eine [THING_label]"-"einer"; "^"-""}</li>
-    <li>a_acc->{replace: ^[THING_definite]; "^der [THING_label]"-"einen"; "^die [THING_label]"-"eine"; "^das [THING_label]"-"ein"; "^"-""}</li>
-    <li>the_dat->{replace: ^[THING_definite]; "^der [THING_label]"-"dem"; "^die [THING_label]"-"der"; "^das [THING_label]"-"dem"; "^"-""}</li>
-    <li>the_acc->{replace: ^[THING_definite]; "^der [THING_label]"-"den"; "^die [THING_label]"-"die"; "^das [THING_label]"-"das"; "^"-""}</li>
-    <li>the->{replace: ^[THING_definite]; "^der [THING_label]"-"der"; "^die [THING_label]"-"die"; "^das [THING_label]"-"das"; "^"-""}</li>
-    <li>thing_dat->{replace: [THING_label]; "er "-"en "; "e "-"en "; "es "-"en "}</li>
-    <li>thing_acc->{replace: [THING_label]; "er "-"en "}</li>
-    <li>thing_def->{replace: [THING_label]; "er "-"e "; "es "-"e "}</li>
-    <li>PAWN_nameFullIndefDat->{replace: [PAWN_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
-    <li>PAWN_nameDefDat->{replace: [PAWN_nameIndef]; ">ein "-">dem "; ">eine "-">der "}</li>
+    <li>title_sentence->[THING_definite_nom] hat von [PAWN_nameDefDat] den folgenden Titel erhalten: [THING_title]</li>
+    <li>title_sentence->[THING_definite_nom] ist mit dem folgenden Titel versehen: [THING_title]</li>
+    <li>title_sentence->Der Titel von [THING_definite_dat], [THING_title], hängt im Hintergrund</li>
   </CraftedArt.rulePack.rulesStrings>
   
   <!-- EN: drunk -->
@@ -197,7 +180,6 @@
     <li>desc_sentence->Da ist eine weiße Substanz auf [PAWN_possessive]er Hose.</li>
     <li>desc_sentence->[PAWN_pronoun] scheint einen Schuh verloren zu haben.</li>
     <li>desc_sentence->[PAWN_possessive] Haar ist komplett zerzaust.</li>
-    <li>PAWN_nameFullIndefDat->{replace: [PAWN_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
   </Drunk.rulePack.rulesStrings>
   
   <!-- EN: research project finished -->
@@ -229,7 +211,6 @@
     <li>desc_sentence->Die Arbeit scheint extrem komplex zu sein.</li>
     <li>desc_sentence->[PAWN_nameDef] ist vollständig von Werkzeugen und Geräten umgeben.</li>
     <li>desc_sentence->[PAWN_nameDef] begutachtet [PAWN_possessive]e Entdeckung mit einem Ausdruck des Erstaunens.</li>
-    <li>PAWN_nameFullIndefDat->{replace: [PAWN_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
   </FinishedResearchProject.rulePack.rulesStrings>
   
   <!-- EN: landed in pod -->
@@ -287,7 +268,6 @@
     <li>desc_sentence(p=0.33)->Im Hintergrund ist ein [TerrainFeatureMas] zu sehen.</li>
     <li>desc_sentence(p=0.33)->Im Hintergrund ist ein [TerrainFeatureNeu] zu sehen.</li>
     <li>desc_sentence->Ein [PersonJob] beobachtet schweigend das Geschehen aus der Ferne.</li>
-    <li>PAWN_nameFullIndefDat->{replace: [PAWN_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
   </LandedInPod.rulePack.rulesStrings>
   
   <!-- EN: berserk rage -->
@@ -343,7 +323,6 @@
     <li>desc_sentence->[PAWN_possessive] ganzer Körper scheint vor Hass zu beben.</li>
     <li>desc_sentence->[PAWN_possessive] Gesicht ist von einem Ausdruck falscher Gelassenheit geprägt.</li>
     <li>desc_sentence->Eine einzelne Träne läuft über [PAWN_possessive] Gesicht.</li>
-    <li>PAWN_nameFullIndefDat->{replace: [PAWN_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
   </MentalStateBerserk.rulePack.rulesStrings>
   
   <!-- EN: gave up -->
@@ -389,7 +368,6 @@
     <li>desc_sentence->[PAWN_pronoun] hat dunkle Flecken auf [PAWN_possessive]er Kleidung.</li>
     <li>desc_sentence->[PAWN_pronoun] scheint einen Schuh verloren zu haben.</li>
     <li>desc_sentence->[PAWN_possessive]e Haare sind komplett zerzaust.</li>
-    <li>PAWN_nameFullIndefDat->{replace: [PAWN_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
   </MentalStateGaveUp.rulePack.rulesStrings>
   
   <!-- EN: read a book -->
@@ -456,7 +434,6 @@
     <li>desc_sentence->[PAWN_nameDef] lacht unkontrolliert.</li>
     <li>desc_sentence->[PAWN_nameDef] ist dreckig und verschwitzt von der Arbeit.</li>
     <li>desc_sentence->[PAWN_nameDef] ist dreckig und verschwitzt vom Arbeiten.</li>
-    <li>PAWN_nameFullIndefDat->{replace: [PAWN_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
   </StruckMineable.rulePack.rulesStrings>
   
   <!-- EN: vomited -->
@@ -500,7 +477,6 @@
     <li>desc_sentence(p=0.33)->Im Hintergrund frisst ein [AnimalMas] vom Erbrochenen.</li>
     <li>desc_sentence(p=0.33)->Im Hintergrund frisst eine [AnimalFem] vom Erbrochenen.</li>
     <li>desc_sentence(p=0.33)->Im Hintergrund frisst ein [AnimalNeu] vom Erbrochenen.</li>
-    <li>PAWN_nameFullIndefDat->{replace: [PAWN_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
   </Vomited.rulePack.rulesStrings>
   
   <!-- EN: walked naked -->
@@ -553,7 +529,6 @@
     <li>desc_sentence->[PAWN_nameDef] ist mit einer unerklärlichen Flüssigkeit bedeckt.</li>
     <li>desc_sentence->[PAWN_nameDef] atmet schwer, ohne ersichtlichen Grund.</li>
     <li>desc_sentence->[PAWN_nameDef] krault einen Busch.</li>
-    <li>PAWN_nameFullIndefDat->{replace: [PAWN_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
   </WalkedNaked.rulePack.rulesStrings>
   
   <!-- EN: on fire -->
@@ -597,7 +572,6 @@
     <li>desc_sentence->[PAWN_pronoun] scheint den Verstand zu verlieren.</li>
     <li>desc_sentence->Eine Rauchwolke bildet sich über {PAWN_gender ? ihm : ihr}.</li>
     <li>desc_sentence->[PAWN_pronoun] wird kunstvoll als Leiche dargestellt.</li>
-    <li>PAWN_nameFullIndefDat->{replace: [PAWN_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
   </WasOnFire.rulePack.rulesStrings>
   
 </LanguageData>
