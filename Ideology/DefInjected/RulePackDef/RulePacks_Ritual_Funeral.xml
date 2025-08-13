@@ -18,26 +18,40 @@
     <li>funeral->requiem</li>
   -->
   <NamerRitualFuneral.rulePack.rulesStrings>
-    <li>r_ritualName(p=3)->[memeAdjective]e [funeral_fem]</li>
-    <li>r_ritualName->[memeAdjective]es [funeral_neu]</li>
+    <li>r_ritualName->[memeAdjective][funeralAdj]</li>
+    <li>r_ritualName->[memeComPrefix][funeralComSuffix]</li>
+    <li>r_ritualName->[memeHyphenPrefix]-[funeral]</li>
     <li>r_ritualName->[funeral] [chosenTheme]</li>
-    <li>r_ritualName(p=3)->[chosenAdjective]e [funeral_fem]</li>
-    <li>r_ritualName->[chosenAdjective]es [funeral_neu]</li>
+    <li>r_ritualName->[chosenAdjective][funeralAdj]</li>
     <li>r_ritualName->{replace: [keyDeity]'s; "Gott's"-"Gottes"} [funeral]</li>
     <li>r_ritualName->[funeral] von [keyDeity]</li>
     <li>r_ritualName->[funeral] [memeConceptGenDef]</li>
     <li>r_ritualName->[funeral] {replace: des [chosenIdeoName]; "des |M|"-"des "; "des |F|"-"der "; "des |N|"-"des "}</li>
     <li>r_ritualName(p=0.01)->Beerdigung</li>
-    <li>funeral(p=3)->[funeral_fem]</li>
-    <li>funeral->[funeral_neu]</li>
-    <li>funeral_fem->Beerdigung</li>
-    <li>funeral_fem->Bestattung</li>
-    <li>funeral_fem->Beisetzung</li>
-    <li>funeral_fem->Totenmesse</li>
-    <li>funeral_fem->Trauerrede</li>
-    <li>funeral_fem->Grabrede</li>
-    <li>funeral_neu->Begräbnis</li>
-    <li>funeral_neu->Requiem</li>
+    <li>funeral->Beerdigung</li>
+    <li>funeral->Bestattung</li>
+    <li>funeral->Beisetzung</li>
+    <li>funeral->Totenmesse</li>
+    <li>funeral->Trauerrede</li>
+    <li>funeral->Grabrede</li>
+    <li>funeral->Begräbnis</li>
+    <li>funeral->Requiem</li>
+    <li>funeralComSuffix->beerdigung</li>
+    <li>funeralComSuffix->bestattung</li>
+    <li>funeralComSuffix->beisetzung</li>
+    <li>funeralComSuffix->totenmesse</li>
+    <li>funeralComSuffix->trauerrede</li>
+    <li>funeralComSuffix->grabrede</li>
+    <li>funeralComSuffix->begräbnis</li>
+    <li>funeralComSuffix->requiem</li>
+    <li>funeralAdj->e Beerdigung</li>
+    <li>funeralAdj->e Bestattung</li>
+    <li>funeralAdj->e Beisetzung</li>
+    <li>funeralAdj->e Totenmesse</li>
+    <li>funeralAdj->e Trauerrede</li>
+    <li>funeralAdj->e Grabrede</li>
+    <li>funeralAdj->es Begräbnis</li>
+    <li>funeralAdj->es Requiem</li>
     <!-- gender-specific -->
     <li>memeConceptGenDef->des [memeConceptMasGen]</li>
     <li>memeConceptGenDef->der [memeConceptFemGen]</li>

@@ -18,18 +18,42 @@
     <li>festival->fiesta</li>
   -->
   <NamerFestivalGlobal.rulePack.rulesStrings>
-    <li>festivalName(p=2)->[memeAdjective]e [festival]</li>
+    <li>festivalName(p=2)->[memeAdjective][festivalAdj]</li>
+    <li>festivalName(p=2)->[memeComPrefix][festivalComSuffix]</li>
+    <li>festivalName(p=2)->[memeHyphenPrefix]-[festival]</li>
     <li>festivalName->[festival] [chosenTheme]</li>
-    <li>festivalName->[chosenAdjective]e [festival]</li>
+    <li>festivalName->[chosenAdjective][festivalAdj]</li>
     <li>festivalName->{replace: [keyDeity]'s; "Gott's"-"Gottes"} [festival]</li>
     <li>festivalName->[festival] von [keyDeity]</li>
     <li>festivalName->[festival] [memeConceptGenDef]</li>
     <li>festivalName->[festival] {replace: des [chosenIdeoName]; "des |M|"-"des "; "des |F|"-"der "; "des |N|"-"des "}</li>
     <li>festival->Feier</li>
+    <li>festival->Festival</li>
+    <li>festival->Sause</li>
+    <li>festival->Fete</li>
     <li>festival->Party</li>
+    <li>festival->Advent</li>
+    <li>festival->Messe</li>
     <li>festival->Fiesta</li>
-    <li>festival->Festlichkeit</li>
-    <li>festival->Veranstaltung</li>
+    <li>festival->Jubiläum</li>
+    <li>festivalAdj->e Feier</li>
+    <li>festivalAdj->es Festival</li>
+    <li>festivalAdj->e Sause</li>
+    <li>festivalAdj->e Fete</li>
+    <li>festivalAdj->e Party</li>
+    <li>festivalAdj->er Advent</li>
+    <li>festivalAdj->e Messe</li>
+    <li>festivalAdj->e Fiesta</li>
+    <li>festivalAdj->es Jubiläum</li>
+    <li>festivalComSuffix->feier</li>
+    <li>festivalComSuffix->festival</li>
+    <li>festivalComSuffix->sause</li>
+    <li>festivalComSuffix->fete</li>
+    <li>festivalComSuffix->party</li>
+    <li>festivalComSuffix->advent</li>
+    <li>festivalComSuffix->messe</li>
+    <li>festivalComSuffix->fiesta</li>
+    <li>festivalComSuffix->jubiläum</li>
     <!-- gender-specific -->
     <li>memeConceptGenDef->des [memeConceptMasGen]</li>
     <li>memeConceptGenDef->der [memeConceptFemGen]</li>

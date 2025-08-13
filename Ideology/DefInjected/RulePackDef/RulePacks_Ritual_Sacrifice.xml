@@ -16,17 +16,26 @@
     <li>sacrifice->slaughtering</li>
   -->
   <NamerRitualSacrifice.rulePack.rulesStrings>
-    <li>r_ritualName(p=2)->[memeAdjective]e [sacrifice]</li>
+    <li>r_ritualName(p=2)->[memeComPrefix][sacrificeComSuffix]</li>
+    <li>r_ritualName->[memeAdjective][sacrificeAdj]</li>
+    <li>r_ritualName->[memeHyphenPrefix]-[sacrifice]</li>
     <li>r_ritualName->[sacrifice] [chosenTheme]</li>
-    <li>r_ritualName->[chosenAdjective]e [sacrifice]</li>
+    <li>r_ritualName->[chosenAdjective][sacrificeAdj]</li>
     <li>r_ritualName->{replace: [keyDeity]'s; "Gott's"-"Gottes"} [sacrifice]</li>
     <li>r_ritualName->[sacrifice] von [keyDeity]</li>
     <li>r_ritualName->[sacrifice] [memeConceptGenDef]</li>
     <li>r_ritualName->[sacrifice] {replace: des [chosenIdeoName]; "des |M|"-"des "; "des |F|"-"der "; "des |N|"-"des "}</li>
     <li>sacrifice->Opferung</li>
-    <li>sacrifice->Opfergabe</li>
-    <li>sacrifice->Aufopferung</li>
+    <li>sacrifice->Opfer</li>
+    <li>sacrifice->Sakrifizium</li>
     <li>sacrifice->Schlachtung</li>
+    <li>sacrificeComSuffix->opferung</li>
+    <li>sacrificeComSuffix->opfer</li>
+    <li>sacrificeComSuffix->sakrifizium</li>
+    <li>sacrificeAdj->e Opferung</li>
+    <li>sacrificeAdj->es Opfer</li>
+    <li>sacrificeAdj->es Sakrifizium</li>
+    <li>sacrificeAdj->e Schlachtung</li>
     <!-- gender-specific -->
     <li>memeConceptGenDef->des [memeConceptMasGen]</li>
     <li>memeConceptGenDef->der [memeConceptFemGen]</li>

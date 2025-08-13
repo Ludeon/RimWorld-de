@@ -18,6 +18,7 @@
   <NamerRoleAnimalsSpecialist.rulePack.rulesStrings>
     <li>r_roleName->Kreaturisator</li>
     <li>r_roleName->Animalor</li>
+    <li>r_roleName->Faunist</li>
     <li>firstPart->Pelz</li>
     <li>firstPart->Pfoten</li>
     <li>firstPart->Huf</li>
@@ -46,9 +47,11 @@
   -->
   <NamerRoleBrawler.rulePack.rulesStrings>
     <li>r_roleName->Berserker</li>
+    <li>r_roleName->Haudegen</li>
     <li>firstPart->Schlitz</li>
     <li>firstPart->Faust</li>
     <li>firstPart->Quetsch</li>
+    <li>firstPart->Hau</li>
     <li>firstPart->Klingen</li>
     <li>firstPart->Kampf</li>
     <li>firstPart->Knöchel</li>
@@ -71,13 +74,13 @@
     <li>firstPart->clinic</li>
   -->
   <NamerRoleMedicalSpecialist.rulePack.rulesStrings>
-    <li>r_roleName->[firstPart][secondPart]</li>
     <li>firstPart->Lebens</li>
     <li>firstPart->Heilungs</li>
     <li>firstPart->Herz</li>
+    <li>firstPart->Kranken</li>
     <li>firstPart->Medi</li>
     <li>firstPart->Skalpel</li>
-    <li>firstPart->Sanito</li>
+    <li>firstPart->Sani</li>
     <li>firstPart->Chiro</li>
     <li>firstPart->Klinik</li>
   </NamerRoleMedicalSpecialist.rulePack.rulesStrings>
@@ -100,10 +103,12 @@
   -->
   <NamerRoleMiner.rulePack.rulesStrings>
     <li>r_roleName->Höhlenforscher</li>
+    <li>r_roleName->Prospektor</li>
     <li>firstPart->Minen</li>
     <li>firstPart->Bergbau</li>
     <li>firstPart->Tiefen</li>
     <li>firstPart->Felsen</li>
+    <li>firstPart->Gruben</li>
     <li>firstPart->Höhlen</li>
     <li>firstPart->Berg</li>
     <li>firstPart->Bohr</li>
@@ -126,7 +131,9 @@
   -->
   <NamerRoleMoralist.rulePack.rulesStrings>
     <li>r_roleName(p=4)->[memeMoralist]</li>
-    <li>r_roleName(p=2)->[memeAdjective]er [memeMoralist]</li>
+    <li>r_roleName(p=2)->[memeComPrefix][memeMoralistComSuffix]</li>
+    <li>r_roleName->[memeAdjective]er [memeMoralist]</li>
+    <li>r_roleName->[memeHyphenPrefix]-[memeMoralist]</li>
     <li>r_roleName->[memeMoralist] [chosenTheme]</li>
     <li>r_roleName->[memeMoralist] von [keyDeity]</li>
     <li>r_roleName->[memeMoralist] [memeConceptGenDef]</li>
@@ -153,7 +160,9 @@
     <li>r_roleName->Produzent</li>
     <li>r_roleName->Handwerker</li>
     <li>r_roleName->Macher</li>
-    <li>firstPart->Bastler</li>
+    <li>r_roleName->Tüftler</li>
+    <li>r_roleName->Bastler</li>
+    <li>firstPart->Bastel</li>
     <li>firstPart->Handwerks</li>
     <li>firstPart->Bau</li>
     <li>firstPart->Fabrik</li>
@@ -174,15 +183,16 @@
   -->
   <NamerRoleResearcher.rulePack.rulesStrings>
     <li>r_roleName->Intelligenzbestie</li>
+    <li>r_roleName->Schlauberger</li>
+    <li>r_roleName->Besserwisser</li>
+    <li>r_roleName->Superhirn</li>
     <li>r_roleName->Cogitor</li>
     <li>r_roleName->Denker</li>
     <li>r_roleName->Lerner</li>
-    <li>firstPart->Verstands</li>
-    <li>firstPart->Gedanken</li>
+    <li>firstPart->Denk</li>
     <li>firstPart->Fokus</li>
     <li>firstPart->Neuro</li>
     <li>firstPart->Cogito</li>
-    <li>firstPart->Ideen</li>
   </NamerRoleResearcher.rulePack.rulesStrings>
   
   <!-- EN:
@@ -198,6 +208,8 @@
     <li>secondPart(p=4)->slinger</li>
   -->
   <NamerRoleShooter.rulePack.rulesStrings>
+    <li>r_roleName->Revolverheld</li>
+    <li>r_roleName->Ballistiker</li>
     <li>firstPart->Gewehr</li>
     <li>firstPart->Schützen</li>
     <li>firstPart->Patronen</li>
@@ -206,6 +218,7 @@
     <li>firstPart->Scharfschützen</li>
     <li>firstPart->Genauigkeits</li>
     <li>firstPart->Schieß</li>
+    <li>firstPart->Schuss</li>
   </NamerRoleShooter.rulePack.rulesStrings>
   
   <!-- EN:
@@ -226,7 +239,8 @@
     <li>firstPart->root</li>
   -->
   <NamerRoleSower.rulePack.rulesStrings>
-    <li>r_roleName->Fertilisator</li>
+    <li>r_roleName->Dünger</li>
+    <li>r_roleName->Florist</li>
     <li>firstPart->Blatt</li>
     <li>firstPart->Pflanzen</li>
     <li>firstPart->Wald</li>
@@ -237,8 +251,8 @@
     <li>firstPart->Ernte</li>
     <li>firstPart->Farm</li>
     <li>firstPart->Land</li>
-    <li>firstPart->Erde</li>
-    <li>firstPart->Saatgut</li>
+    <li>firstPart->Erd</li>
+    <li>firstPart->Saat</li>
     <li>firstPart->Boden</li>
     <li>firstPart->Wurzel</li>
   </NamerRoleSower.rulePack.rulesStrings>
@@ -273,25 +287,36 @@
   <NamerRoleSpecialistUtility.rulePack.rulesStrings>
     <li>r_roleName(p=7)->[firstPart][secondPart]</li>
     <li>secondPart->meister</li>
-    <li>secondPart->krat</li>
+    <!-- <li>secondPart->krat</li> -->
     <li>secondPart->experte</li>
+    <li>secondPart->kundler</li>
+    <li>secondPart->kenner</li>
+    <li>secondPart->hirn</li>
     <li>secondPart->profi</li>
+    <li>secondPart->spezi</li>
     <li>secondPart->auge</li>
-    <li>secondPart->hand</li>
+    <li>secondPart->helfer</li>
     <li>secondPart->funktionär</li>
+    <li>secondPart->praktiker</li>
     <li>secondPart->halter</li>
     <li>secondPart->bringer</li>
+    <li>secondPart->schwätzer</li>
     <li>secondPart->sprecher</li>
     <li>secondPart->weiser</li>
+    <li>secondPart->wisser</li>
+    <li>secondPart->könner</li>
     <li>secondPart->freund</li>
+    <li>secondPart->künstler</li>
+    <li>secondPart->fan</li>
+    <li>secondPart->freak</li>
     <li>secondPart->nutzer</li>
-    <li>secondPart->perte</li>
-    <li>secondPart->itor</li>
-    <li>secondPart->inor</li>
-    <li>secondPart->alor</li>
-    <li>secondPart->or</li>
-    <li>secondPart->ierer</li>
-    <li>secondPart->iner</li>
+    <!-- <li>secondPart->perte</li> -->
+    <!-- <li>secondPart->itor</li> -->
+    <!-- <li>secondPart->inor</li> -->
+    <!-- <li>secondPart->alor</li> -->
+    <!-- <li>secondPart->or</li> -->
+    <!-- <li>secondPart->ierer</li> -->
+    <!-- <li>secondPart->iner</li> -->
   </NamerRoleSpecialistUtility.rulePack.rulesStrings>
   
 </LanguageData>

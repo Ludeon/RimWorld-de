@@ -66,6 +66,7 @@
     <li>r_ideoName(p=2,forcePrefix==False)->[hyphenPrefix]-{replace: [packIdeoName]; "|M|"-""; "|F|"-""; "|N|"-""}</li>
     <li>r_ideoName(p=2,forcePrefix==False)->[hyphenPrefix]-{replace: [packIdeoNameStructure]; "|M|"-""; "|F|"-""; "|N|"-""}</li>
     <li>r_ideoName(p=2)->[memeAdjective][creedGender]</li>
+    <li>r_ideoName(p=2)->[memeComPrefix][creedComSuffix]</li>
     <li>r_ideoName(p=1)->[creed] [packTheme]</li>
     <li>r_ideoName(p=1)->[place_adjective][creedGender]</li>
     <li>r_ideoName(p=0.25)->{replace: ^[memeCreedGender]; "^er "-"Der "; "^e "-"Die "; "^es "-"Das "; "^"-""}</li>
@@ -76,12 +77,18 @@
     <li>r_ideoAdjective(priority=1)->[packAdjective]</li>
     <li>creed(priority=1)->[memeCreed]</li>
     <li>creed->[genericCreed]</li>
+    <li>creedComSuffix(priority=1)->[memeCreedComSuffix]</li>
+    <li>creedComSuffix->[genericCreedComSuffix]</li>
     <li>creedGender(priority=1)->[memeCreedGender]</li>
     <li>creedGender->[genericCreedGender]</li>
     <li>genericCreed->Kredo</li>
     <li>genericCreed->Doktrin</li>
     <li>genericCreed->Weg</li>
     <li>genericCreed->Pfad</li>
+    <li>genericCreedComSuffix->kredo</li>
+    <li>genericCreedComSuffix->doktrin</li>
+    <li>genericCreedComSuffix->weg</li>
+    <li>genericCreedComSuffix->pfad</li>
     <li>genericCreedGender->es Kredo</li>
     <li>genericCreedGender->e Doktrin</li>
     <li>genericCreedGender->er Weg</li>

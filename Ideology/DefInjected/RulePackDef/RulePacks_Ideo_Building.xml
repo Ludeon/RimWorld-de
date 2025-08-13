@@ -10,6 +10,8 @@
   <NamerAltar.rulePack.rulesStrings>
     <li>buildingName->Altar</li>
     <li>buildingName->Schrein</li>
+    <li>buildingNameComSuffix->altar</li>
+    <li>buildingNameComSuffix->schrein</li>
     <li>buildingNameMas->Altar</li>
     <li>buildingNameMas->Schrein</li>
   </NamerAltar.rulePack.rulesStrings>
@@ -23,6 +25,9 @@
     <li>buildingName->Totem</li>
     <li>buildingName->Bildnis</li>
     <li>buildingName->Scheiterhaufen</li>
+    <li>buildingNameComSuffix->totem</li>
+    <li>buildingNameComSuffix->bildnis</li>
+    <li>buildingNameComSuffix->scheiterhaufen</li>
     <li>buildingNameNeu->Totem</li>
     <li>buildingNameNeu->Bildnis</li>
     <li>buildingNameMas->Scheiterhaufen</li>
@@ -40,6 +45,10 @@
     <li>buildingName->Schmaus</li>
     <li>buildingName->Festmahl</li>
     <li>buildingName->Menschenfilet</li>
+    <li>buildingNameComSuffix->gericht</li>
+    <li>buildingNameComSuffix->platte</li>
+    <li>buildingNameComSuffix->schmaus</li>
+    <li>buildingNameComSuffix->festmahl</li>
     <li>buildingNameNeu->Gericht</li>
     <li>buildingNameFem->Platte</li>
     <li>buildingNameMas->Schmaus</li>
@@ -53,11 +62,11 @@
   -->
   <NamerChristmasTree.rulePack.rulesStrings>
     <li>buildingName->Baum</li>
-    <li>buildingName->Kiefer</li>
-    <li>buildingName->Pinie</li>
+    <li>buildingName->Tanne</li>
+    <li>buildingNameComSuffix->baum</li>
+    <li>buildingNameComSuffix->tanne</li>
     <li>buildingNameMas->Baum</li>
-    <li>buildingNameFem->Kiefer</li>
-    <li>buildingNameFem->Pinie</li>
+    <li>buildingNameFem->Tanne</li>
   </NamerChristmasTree.rulePack.rulesStrings>
   
   <!-- EN:
@@ -71,12 +80,14 @@
   -->
   <NamerIdeoBuilding.rulePack.rulesStrings>
     <li>r_ideoBuildingName(p=2)->[memeAdjective][buildingNameAdj]</li>
+    <li>r_ideoBuildingName(p=2)->[memeComPrefix][buildingNameComSuffix]</li>
     <li>r_ideoBuildingName->[buildingName] [chosenTheme]</li>
     <li>r_ideoBuildingName->[chosenAdjective][buildingNameAdj]</li>
     <li>r_ideoBuildingName->{replace: [keyDeity]'s; "Gott's"-"Gottes"} [buildingName]</li>
     <li>r_ideoBuildingName->[buildingName] von [keyDeity]</li>
     <li>r_ideoBuildingName->[buildingName] [memeConceptGenDef]</li>
     <li>r_ideoBuildingName->[buildingName] {replace: des [chosenIdeoName]; "des |M|"-"des "; "des |F|"-"der "; "des |N|"-"des "}</li>
+    <li>r_ideoBuildingName->[memeHyphenPrefix]-[buildingName]</li>
     <!-- gender-specific -->
     <li>memeConceptGenDef->des [memeConceptMasGen]</li>
     <li>memeConceptGenDef->der [memeConceptFemGen]</li>
@@ -106,6 +117,15 @@
     <li>buildingName->Figur</li>
     <li>buildingName->Abbild</li>
     <li>buildingName->Logo</li>
+    <li>buildingNameComSuffix->ideogramm</li>
+    <li>buildingNameComSuffix->symbol</li>
+    <li>buildingNameComSuffix->zeichen</li>
+    <li>buildingNameComSuffix->mal</li>
+    <li>buildingNameComSuffix->form</li>
+    <li>buildingNameComSuffix->wappen</li>
+    <li>buildingNameComSuffix->figur</li>
+    <li>buildingNameComSuffix->abbild</li>
+    <li>buildingNameComSuffix->logo</li>
     <li>buildingNameNeu->Ideogramm</li>
     <li>buildingNameNeu->Symbol</li>
     <li>buildingNameNeu->Zeichen</li>
@@ -133,6 +153,13 @@
     <li>buildingName->Form</li>
     <li>buildingName->Gestalt</li>
     <li>buildingName->Gebilde</li>
+    <li>buildingNameComSuffix->statue</li>
+    <li>buildingNameComSuffix->skulptur</li>
+    <li>buildingNameComSuffix->schnitzerei</li>
+    <li>buildingNameComSuffix->abbild</li>
+    <li>buildingNameComSuffix->form</li>
+    <li>buildingNameComSuffix->gestalt</li>
+    <li>buildingNameComSuffix->gebilde</li>
     <li>buildingNameFem->Statue</li>
     <li>buildingNameFem->Skulptur</li>
     <li>buildingNameFem->Schnitzerei</li>
@@ -153,6 +180,10 @@
     <li>buildingName->Paffer</li>
     <li>buildingName->Qualmer</li>
     <li>buildingName->Quarzer</li>
+    <li>buildingNameComSuffix->raucher</li>
+    <li>buildingNameComSuffix->paffer</li>
+    <li>buildingNameComSuffix->qualmer</li>
+    <li>buildingNameComSuffix->quarzer</li>
     <li>buildingNameMas->Raucher</li>
     <li>buildingNameMas->Paffer</li>
     <li>buildingNameMas->Qualmer</li>
