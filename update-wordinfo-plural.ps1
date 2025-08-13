@@ -19,6 +19,7 @@ $items = [ordered]@{
 "DefInjected\ThingDef\Buildings_Mech*" = "\w+\.label"
 "DefInjected\ThingDef\Buildings_Natural.xml" = "Mineable\w+\.label" # MineralRich, MineralRichDescription
 "DefInjected\ThingDef\Buildings_Misc.xml" = "TransportPod\.label" # LoadTransporters
+"DefInjected\ThingDef\Buildings_PsychicRituals.xml" = ".+\.label" # psychic ritual dialog
 "DefInjected\ThingDef\Items_Resource_Manufactured.xml" = "Wastepack\.label" # CommandAutoLoad, CommandEjectContents, ThingsProduced
 "DefInjected\ThingDef\Plants_*" = ".+\.label" # MessagePlantIncompatibleWithRoof
 "DefInjected\ThingDef\Races_Mechanoids_Light.xml" = "Mech_WarUrchin\.label"
