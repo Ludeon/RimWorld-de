@@ -60,7 +60,7 @@
     <li>r_ideoName->[keyDeity]ismus</li>
     <li>r_ideoName->[hyphenPrefix]-[keyDeity]ismus</li>
     <li>r_ideoName->{replace: [keyDeity]'s; "Gott's"-"Gottes"} [creed]</li>
-    <li>r_ideoName->[creed] von [keyDeity]</li>
+    <li>r_ideoName->[creed] {replace: von [keyDeity]; "von Gott"-"Gottes"}</li>
     <li>r_ideoName(p=6)->{replace: [packIdeoName]; "|M|"-""; "|F|"-""; "|N|"-""}</li>
     <li>r_ideoName(p=2)->{replace: [packIdeoNameStructure]; "|M|"-""; "|F|"-""; "|N|"-""}</li>
     <li>r_ideoName(p=2,forcePrefix==False)->[hyphenPrefix]-{replace: [packIdeoName]; "|M|"-""; "|F|"-""; "|N|"-""}</li>

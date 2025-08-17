@@ -75,7 +75,7 @@
   -->
   <NamerRoleMedicalSpecialist.rulePack.rulesStrings>
     <li>firstPart->Lebens</li>
-    <li>firstPart->Heilungs</li>
+    <li>firstPart->Heil</li>
     <li>firstPart->Herz</li>
     <li>firstPart->Kranken</li>
     <li>firstPart->Medi</li>
@@ -135,7 +135,7 @@
     <li>r_roleName->[memeAdjective]er [memeMoralist]</li>
     <li>r_roleName->[memeHyphenPrefix]-[memeMoralist]</li>
     <li>r_roleName->[memeMoralist] [chosenTheme]</li>
-    <li>r_roleName->[memeMoralist] von [keyDeity]</li>
+    <li>r_roleName->[memeMoralist] {replace: von [keyDeity]; "von Gott"-"Gottes"}</li>
     <li>r_roleName->[memeMoralist] [memeConceptGenDef]</li>
     <li>r_roleName->[memeMoralist] {replace: des [chosenIdeoName]; "des |M|"-"des "; "des |F|"-"der "; "des |N|"-"des "}</li>
     <li>r_roleName->[chosenAdjective]er [memeMoralist]</li>
@@ -166,7 +166,7 @@
     <li>firstPart->Handwerks</li>
     <li>firstPart->Bau</li>
     <li>firstPart->Fabrik</li>
-    <li>firstPart->Fertigungs</li>
+    <li>firstPart->Produktions</li>
   </NamerRoleProductionSpecialist.rulePack.rulesStrings>
   
   <!-- EN:
@@ -216,7 +216,7 @@
     <li>firstPart->Geschoss</li>
     <li>firstPart->Ziel</li>
     <li>firstPart->Scharfschützen</li>
-    <li>firstPart->Genauigkeits</li>
+    <li>firstPart->Distanz</li>
     <li>firstPart->Schieß</li>
     <li>firstPart->Schuss</li>
   </NamerRoleShooter.rulePack.rulesStrings>
@@ -239,8 +239,8 @@
     <li>firstPart->root</li>
   -->
   <NamerRoleSower.rulePack.rulesStrings>
-    <li>r_roleName->Dünger</li>
     <li>r_roleName->Florist</li>
+    <li>firstPart->Dünger</li>
     <li>firstPart->Blatt</li>
     <li>firstPart->Pflanzen</li>
     <li>firstPart->Wald</li>
@@ -251,6 +251,7 @@
     <li>firstPart->Ernte</li>
     <li>firstPart->Farm</li>
     <li>firstPart->Land</li>
+    <li>firstPart->Feld</li>
     <li>firstPart->Erd</li>
     <li>firstPart->Saat</li>
     <li>firstPart->Boden</li>
@@ -300,14 +301,14 @@
     <li>secondPart->praktiker</li>
     <li>secondPart->halter</li>
     <li>secondPart->bringer</li>
-    <li>secondPart->schwätzer</li>
+    <li>secondPart->flüsterer</li>
     <li>secondPart->sprecher</li>
     <li>secondPart->weiser</li>
     <li>secondPart->wisser</li>
     <li>secondPart->könner</li>
     <li>secondPart->freund</li>
     <li>secondPart->künstler</li>
-    <li>secondPart->fan</li>
+    <li>secondPart->koryphäe</li>
     <li>secondPart->freak</li>
     <li>secondPart->nutzer</li>
     <!-- <li>secondPart->perte</li> -->

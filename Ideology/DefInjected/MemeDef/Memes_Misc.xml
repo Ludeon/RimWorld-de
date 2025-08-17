@@ -748,7 +748,7 @@
     <li>founderJoin(tag=meme_Nudism)        ->[deity0_name_s] treuester Anhänger [founderName] stand vor [place_powerCenter_dat_def], riss sich die Kleider vom Leib und präsentierte sich in [founder_possessive]er vollen Pracht – entgegen jeglicher Anordnung.</li>
     <li>victory(tag=meme_Nudism)            ->[founderName] wandte sich an [deity0_name] und bat [deity0_objective], [place_name] mit einer Hitzewelle zu überziehen. Die [place_foeSoldiers_nom_def] legten ihre Kleider ab, um nicht zu sterben, während [der_Anfuehrer] in Schande floh.</li>
     <li>setup(tag=meme_Nudism)              ->[founderName] war Sklave des Systems, trug eine Uniform und stand wie alle anderen unter Beobachtung. Eines Tages riss [founder_pronoun] sich alle Kleider vom Leib und blieb von da an nackt. Damit war unsere Bewegung geboren.</li>
-    <li>story(uses=1,tag=meme_Nudism)       ->[founderName] setzte eine Nicht-Kleider-Regel durch, damit die Gläubigen sich nicht von materiellen Äußerlichkeiten ablenken lassen, sondern sich auf das Wesentliche konzentrieren konnten.</li>
+    <li>story(uses=1,tag=meme_Nudism)       ->[founderName] setzte eine Anti-Kleider-Regel durch, damit die Gläubigen sich nicht von materiellen Äußerlichkeiten ablenken lassen, sondern sich auf das Wesentliche konzentrieren konnten.</li>
     <li>lessonIntro(tag=meme_Nudism)         ->In den ersten Jahren war es mir peinlich, nackt durch den Park zu stolzieren. Aber später war es echt befreiend. Ich habe von den Passanten ein paar Sachen gelernt. Zum Beispiel, dass</li>
     <li>lesson(tag=meme_Nudism)              ->alle bösen Aktionen in Kleidern stattfinden, während die guten Aktionen nackt stattfinden</li>
     <li>lessonReinforcement(tag=meme_Nudism) ->Bei jemandem, der nur mit Luft und Selbstbewusstsein bekleidet ist, kannst du dir sicher sein, dass er oder sie die Wahrheit akzeptiert hat.</li>
@@ -1040,20 +1040,28 @@
     <li>memeMoralist->converter</li>
   -->
   <Proselytizer.generalRules.rulesStrings>
-    <li>memeAdjective->richtig</li>
-    <li>memeAdjective->wahrhaftig</li>
+    <li>memeAdjective->treu</li>
     <li>memeAdjective->wahr</li>
-    <li>memeAdjective->real</li>
-    <li>memeAdjective->echt</li>
+    <li>memeAdjective->dogmatisch</li>
+    <li>memeAdjective->werbend</li>
+    <li>memeHyphenPrefix->Dogma</li>
     <li>memeConcept->Wahrheit</li>
+    <li>memeConcept->Missionierung</li>
+    <li>memeConcept->Eifer</li>
     <li>memeConceptFem->Wahrheit</li>
+    <li>memeConceptFem->Missionierung</li>
+    <li>memeConceptMas->Eifer</li>
     <li>memeConceptFemGen->Wahrheit</li>
+    <li>memeConceptFemGen->Missionierung</li>
+    <li>memeConceptMasGen->Eifers</li>
     <li>memeLeaderNoun->|M|Sprecher</li>
     <li>memeLeaderNounCon->sprecher</li>
     <li>memeMoralist->Bekehrer</li>
     <li>memeMoralist->Missionar</li>
+    <li>memeMoralist->Verkünder</li>
     <li>memeMoralistComSuffix->bekehrer</li>
     <li>memeMoralistComSuffix->missionar</li>
+    <li>memeMoralistComSuffix->verkünder</li>
   </Proselytizer.generalRules.rulesStrings>
   <!-- EN: truthist -->
   <Proselytizer.symbolPacks.0.adjective>wahristisch</Proselytizer.symbolPacks.0.adjective>
@@ -1064,13 +1072,13 @@
   <!-- EN: truth -->
   <Proselytizer.symbolPacks.0.theme>der Wahrheit</Proselytizer.symbolPacks.0.theme>
   <!-- EN: veritic -->
-  <Proselytizer.symbolPacks.1.adjective>veritisch</Proselytizer.symbolPacks.1.adjective>
+  <Proselytizer.symbolPacks.1.adjective>proselytistisch</Proselytizer.symbolPacks.1.adjective>
   <!-- EN: Verity -->
-  <Proselytizer.symbolPacks.1.ideoName>|M|Veritismus</Proselytizer.symbolPacks.1.ideoName>
+  <Proselytizer.symbolPacks.1.ideoName>|M|Proselytismus</Proselytizer.symbolPacks.1.ideoName>
   <!-- EN: veritist -->
-  <Proselytizer.symbolPacks.1.member>Veritist</Proselytizer.symbolPacks.1.member>
+  <Proselytizer.symbolPacks.1.member>Proselytist</Proselytizer.symbolPacks.1.member>
   <!-- EN: verity -->
-  <Proselytizer.symbolPacks.1.theme>der Verität</Proselytizer.symbolPacks.1.theme>
+  <Proselytizer.symbolPacks.1.theme>des Proselytismus</Proselytizer.symbolPacks.1.theme>
   <!-- EN: realitic -->
   <Proselytizer.symbolPacks.2.adjective>realitisch</Proselytizer.symbolPacks.2.adjective>
   <!-- EN: Reality -->
@@ -1152,17 +1160,17 @@
     <li>memeHyphenPrefix->Outlaw</li>
     <li>memeHyphenPrefix->Raid</li>
     <li>memeConcept->Plündern</li>
-    <li>memeConcept->Rauben</li>
+    <li>memeConcept->Raub</li>
     <li>memeConcept->Piraterie</li>
-    <li>memeConcept->Überfallen</li>
+    <li>memeConcept->Überfall</li>
     <li>memeConceptNeu->Plündern</li>
-    <li>memeConceptNeu->Rauben</li>
+    <li>memeConceptMas->Raub</li>
     <li>memeConceptFem->Piraterie</li>
-    <li>memeConceptNeu->Überfallen</li>
+    <li>memeConceptMas->Überfall</li>
     <li>memeConceptNeuGen->Plünderns</li>
-    <li>memeConceptNeuGen->Raubens</li>
+    <li>memeConceptMasGen->Raubes</li>
     <li>memeConceptFemGen->Piraterie</li>
-    <li>memeConceptNeuGen->Überfallens</li>
+    <li>memeConceptMasGen->Überfalls</li>
     <li>memeLeaderNoun->|M|Boss</li>
     <li>memeLeaderNoun->|M|Captain</li>
     <li>memeLeaderNoun->|M|Chef</li>
@@ -1186,7 +1194,7 @@
   <!-- EN: raidist -->
   <Raider.symbolPacks.0.member>Raidist</Raider.symbolPacks.0.member>
   <!-- EN: raiding -->
-  <Raider.symbolPacks.0.theme>des Überfallens</Raider.symbolPacks.0.theme>
+  <Raider.symbolPacks.0.theme>des Überfalls</Raider.symbolPacks.0.theme>
   <!-- EN: plunderic -->
   <Raider.symbolPacks.1.adjective>plündisch</Raider.symbolPacks.1.adjective>
   <!-- EN: Plunderism -->
@@ -1202,7 +1210,7 @@
   <!-- EN: looter -->
   <Raider.symbolPacks.2.member>Raubist</Raider.symbolPacks.2.member>
   <!-- EN: looting -->
-  <Raider.symbolPacks.2.theme>des Raubens</Raider.symbolPacks.2.theme>
+  <Raider.symbolPacks.2.theme>des Raubes</Raider.symbolPacks.2.theme>
   <!-- EN: kleptic -->
   <Raider.symbolPacks.3.adjective>kleptisch</Raider.symbolPacks.3.adjective>
   <!-- EN: Kleptism -->
@@ -1435,7 +1443,7 @@
     <li>memeHyphenPrefix->Techno</li>
     <li>memeHyphenPrefix->Cyber</li>
     <li>memeHyphenPrefix->Haxor</li>
-    <li>memeHyphenPrefix->Wire</li>
+    <li>memeHyphenPrefix->Matrix</li>
     <li>memeConcept->Technologie</li>
     <li>memeConcept->Silizium</li>
     <li>memeConcept->Technik</li>
