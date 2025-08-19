@@ -73,22 +73,26 @@
     <li>memeConcept->Reue</li>
     <li>memeConcept->Buße</li>
     <li>memeConcept->Schande</li>
-    <li>memeConceptFem->Sünde</li>
-    <li>memeConceptFem->Sühne</li>
-    <li>memeConceptFem->Reue</li>
-    <li>memeConceptFem->Buße</li>
-    <li>memeConceptFem->Schande</li>
-    <li>memeConceptFemGen->Sünde</li>
-    <li>memeConceptFemGen->Sühne</li>
-    <li>memeConceptFemGen->Reue</li>
-    <li>memeConceptFemGen->Buße</li>
-    <li>memeConceptFemGen->Schande</li>
-    <li>memeLeaderNoun->|M|Büßer</li>
-    <li>memeLeaderNoun->|M|Sünder</li>
-    <li>memeLeaderNounCon->büßer</li>
-    <li>memeLeaderNounCon->sünder</li>
+    <li>memeConceptGender->|F|Sünde</li>
+    <li>memeConceptGender->|F|Sühne</li>
+    <li>memeConceptGender->|F|Reue</li>
+    <li>memeConceptGender->|F|Buße</li>
+    <li>memeConceptGender->|F|Schande</li>
+    <li>memeConceptGenGender->|F|Sünde</li>
+    <li>memeConceptGenGender->|F|Sühne</li>
+    <li>memeConceptGenGender->|F|Reue</li>
+    <li>memeConceptGenGender->|F|Buße</li>
+    <li>memeConceptGenGender->|F|Schande</li>
+    <li>memeLeaderNoun->Büßer</li>
+    <li>memeLeaderNoun->Sünder</li>
+    <li>memeLeaderNounGender->|M|Büßer</li>
+    <li>memeLeaderNounGender->|M|Sünder</li>
+    <li>memeLeaderNounComSuffix->büßer</li>
+    <li>memeLeaderNounComSuffix->sünder</li>
     <li>memeMoralist->Apologet</li>
     <li>memeMoralist->Büßer</li>
+    <li>memeMoralistGender->|M|Apologet</li>
+    <li>memeMoralistGender->|M|Büßer</li>
     <li>memeMoralistComSuffix->apologet</li>
     <li>memeMoralistComSuffix->büßer</li>
   </Guilty.generalRules.rulesStrings>
@@ -187,11 +191,12 @@
     <li>memeAdjective->pflichtbewusst</li>
     <li>memeConcept->Familie</li>
     <li>memeConcept->Versprechungen</li>
-    <li>memeConceptFem->Familie</li>
-    <li>memeConceptFem->Versprechungen</li>
-    <li>memeConceptFemGen->Familie</li>
-    <li>memeConceptFemGen->Versprechungen</li>
+    <li>memeConceptGender->|F|Familie</li>
+    <li>memeConceptGender->|F|Versprechungen</li>
+    <li>memeConceptGenGender->|F|Familie</li>
+    <li>memeConceptGenGender->|F|Versprechungen</li>
     <li>memeMoralist->Loyalisierer</li>
+    <li>memeMoralistGender->|M|Loyalisierer</li>
     <li>memeMoralistComSuffix->loyalisierer</li>
   </Loyalist.generalRules.rulesStrings>
   <!-- EN: loyal -->
@@ -304,38 +309,47 @@
     <li>memeCreedComSuffix->armee</li>
     <li>memeCreedComSuffix->legion</li>
     <li>memeCreedComSuffix->heer</li>
-    <li>memeCreedGender->e Armee</li>
-    <li>memeCreedGender->e Legion</li>
-    <li>memeCreedGender->es Heer</li>
+    <li>memeCreedGender->|F|Armee</li>
+    <li>memeCreedGender->|F|Legion</li>
+    <li>memeCreedGender->|N|Heer</li>
     <li>memeHyphenPrefix->über</li>
     <li>memeHyphenPrefix->prime</li>
     <li>memeConcept->Krieg</li>
     <li>memeConcept->Gewalt</li>
     <li>memeConcept->Dominanz</li>
-    <li>memeConceptMas->Krieg</li>
-    <li>memeConceptFem->Gewalt</li>
-    <li>memeConceptFem->Dominanz</li>
-    <li>memeConceptMasGen->Krieges</li>
-    <li>memeConceptFemGen->Gewalt</li>
-    <li>memeConceptFemGen->Dominanz</li>
-    <li>memeLeaderNoun->|M|Kommandeur</li>
-    <li>memeLeaderNoun->|M|Marschall</li>
-    <li>memeLeaderNoun->|F|Faust</li>
-    <li>memeLeaderNoun->|M|Invasor</li>
-    <li>memeLeaderNoun->|M|Herrscher</li>
-    <li>memeLeaderNoun->|M|Diktator</li>
-    <li>memeLeaderNoun->|M|Dominator</li>
-    <li>memeLeaderNoun->|M|Konquistador</li>
-    <li>memeLeaderNoun->|M|Bezwinger</li>
-    <li>memeLeaderNounCon->kommandeur</li>
-    <li>memeLeaderNounCon->marschall</li>
-    <li>memeLeaderNounCon->faust</li>
-    <li>memeLeaderNounCon->invasor</li>
-    <li>memeLeaderNounCon->herrscher</li>
-    <li>memeLeaderNounCon->diktator</li>
-    <li>memeLeaderNounCon->dominator</li>
-    <li>memeLeaderNounCon->konquistador</li>
-    <li>memeLeaderNounCon->bezwinger</li>
+    <li>memeConceptGender->|M|Krieg</li>
+    <li>memeConceptGender->|F|Gewalt</li>
+    <li>memeConceptGender->|F|Dominanz</li>
+    <li>memeConceptGenGender->|M|Krieges</li>
+    <li>memeConceptGenGender->|F|Gewalt</li>
+    <li>memeConceptGenGender->|F|Dominanz</li>
+    <li>memeLeaderNoun->Kommandeur</li>
+    <li>memeLeaderNoun->Marschall</li>
+    <li>memeLeaderNoun->Faust</li>
+    <li>memeLeaderNoun->Invasor</li>
+    <li>memeLeaderNoun->Herrscher</li>
+    <li>memeLeaderNoun->Diktator</li>
+    <li>memeLeaderNoun->Dominator</li>
+    <li>memeLeaderNoun->Konquistador</li>
+    <li>memeLeaderNoun->Bezwinger</li>
+    <li>memeLeaderNounGender->|M|Kommandeur</li>
+    <li>memeLeaderNounGender->|M|Marschall</li>
+    <li>memeLeaderNounGender->|F|Faust</li>
+    <li>memeLeaderNounGender->|M|Invasor</li>
+    <li>memeLeaderNounGender->|M|Herrscher</li>
+    <li>memeLeaderNounGender->|M|Diktator</li>
+    <li>memeLeaderNounGender->|M|Dominator</li>
+    <li>memeLeaderNounGender->|M|Konquistador</li>
+    <li>memeLeaderNounGender->|M|Bezwinger</li>
+    <li>memeLeaderNounComSuffix->kommandeur</li>
+    <li>memeLeaderNounComSuffix->marschall</li>
+    <li>memeLeaderNounComSuffix->faust</li>
+    <li>memeLeaderNounComSuffix->invasor</li>
+    <li>memeLeaderNounComSuffix->herrscher</li>
+    <li>memeLeaderNounComSuffix->diktator</li>
+    <li>memeLeaderNounComSuffix->dominator</li>
+    <li>memeLeaderNounComSuffix->konquistador</li>
+    <li>memeLeaderNounComSuffix->bezwinger</li>
   </Supremacist.generalRules.rulesStrings>
   <!-- EN: dominant -->
   <Supremacist.symbolPacks.0.adjective>dominantisch</Supremacist.symbolPacks.0.adjective>

@@ -84,13 +84,9 @@
     <li>place_foeSoldiers_dat_def(priority=-1)->[place_foeSoldiers]</li>
     <li>place_foeSoldiers_acc_indef(priority=-1)->[place_foeSoldiers]</li>
     <li>place_foeSoldiers_acc_def(priority=-1)->[place_foeSoldiers]</li>
-    <li>memeConceptGenDef->des [memeConceptMasGen]</li>
-    <li>memeConceptGenDef->der [memeConceptFemGen]</li>
-    <li>memeConceptGenDef->des [memeConceptNeuGen]</li>
+    <li>memeConceptGenDef->{replace: [memeConceptGenGender]; "|M|"-"des "; "|F|"-"der "; "|N|"-"des "}</li>
     <li>memeConceptGenDef(priority=-1)->des [memeConcept]</li>
-    <li>memeConceptAccDef->den [memeConceptMas]</li>
-    <li>memeConceptAccDef->die [memeConceptFem]</li>
-    <li>memeConceptAccDef->das [memeConceptNeu]</li>
+    <li>memeConceptAccDef->{replace: [memeConceptGender]; "|M|"-"den "; "|F|"-"die "; "|N|"-"das "}</li>
     <li>memeConceptAccDef(priority=-1)->des [memeConcept]</li>
     <li>TerrainFeatureDatDef->dem [TerrainFeatureMasDat]</li>
     <li>TerrainFeatureDatDef->der [TerrainFeatureFemDat]</li>

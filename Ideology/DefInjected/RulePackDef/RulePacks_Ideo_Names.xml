@@ -10,10 +10,10 @@
     <li>globalHyphenPrefix->stello</li>
   -->
   <CultureSpacer.rulePack.rulesStrings>
-    <li>globalNoun->Raumfahrer</li>
-    <li>globalNoun->Sternen</li>
-    <li>globalNoun->Stellar</li>
-    <li>globalNoun->Interstellar</li>
+    <!-- <li>globalAdjective->Raumfahrer</li> -->
+    <!-- <li>globalAdjective->Sternen</li> -->
+    <li>globalAdjective->stellar</li>
+    <li>globalAdjective->interstellar</li>
     <li>globalHyphenPrefix->astro</li>
     <li>globalHyphenPrefix->stello</li>
   </CultureSpacer.rulePack.rulesStrings>
@@ -22,7 +22,7 @@
     <li>globalAdjective(p=15)->Tribal</li>
   -->
   <NamerIdeoCorunan.rulePack.rulesStrings>
-    <li>globalAdjective(p=15)->Indigen</li>
+    <li>globalAdjective(p=15)->indigen</li>
   </NamerIdeoCorunan.rulePack.rulesStrings>
   
   <!-- EN:
@@ -65,11 +65,11 @@
     <li>r_ideoName(p=2)->{replace: [packIdeoNameStructure]; "|M|"-""; "|F|"-""; "|N|"-""}</li>
     <li>r_ideoName(p=2,forcePrefix==False)->[hyphenPrefix]-{replace: [packIdeoName]; "|M|"-""; "|F|"-""; "|N|"-""}</li>
     <li>r_ideoName(p=2,forcePrefix==False)->[hyphenPrefix]-{replace: [packIdeoNameStructure]; "|M|"-""; "|F|"-""; "|N|"-""}</li>
-    <li>r_ideoName(p=2)->[memeAdjective][creedGender]</li>
+    <li>r_ideoName(p=2)->{replace: [creedGender]; "|M|"-"[memeAdjective]er "; "|F|"-"[memeAdjective]e "; "|N|"-"[memeAdjective]es "}</li>
     <li>r_ideoName(p=2)->[memeComPrefix][creedComSuffix]</li>
     <li>r_ideoName(p=1)->[creed] [packTheme]</li>
-    <li>r_ideoName(p=1)->[place_adjective][creedGender]</li>
-    <li>r_ideoName(p=0.25)->{replace: ^[memeCreedGender]; "^er "-"Der "; "^e "-"Die "; "^es "-"Das "; "^"-""}</li>
+    <li>r_ideoName(p=1)->{replace: [creedGender]; "|M|"-"[place_adjective]er "; "|F|"-"[place_adjective]e "; "|N|"-"[place_adjective]es "}</li>
+    <li>r_ideoName(p=0.25)->{replace: [memeCreedGender]; "|M|"-"Der "; "|F|"-"Die "; "|N|"-"Das "}</li>
     <li>r_memberName->[packMember]</li>
     <li>r_memberName->[keyDeity]ist</li>
     <li>r_memberName->[keyDeity]it</li>
@@ -89,10 +89,10 @@
     <li>genericCreedComSuffix->doktrin</li>
     <li>genericCreedComSuffix->weg</li>
     <li>genericCreedComSuffix->pfad</li>
-    <li>genericCreedGender->es Kredo</li>
-    <li>genericCreedGender->e Doktrin</li>
-    <li>genericCreedGender->er Weg</li>
-    <li>genericCreedGender->er Pfad</li>
+    <li>genericCreedGender->|N|Kredo</li>
+    <li>genericCreedGender->|F|Doktrin</li>
+    <li>genericCreedGender->|M|Weg</li>
+    <li>genericCreedGender->|M|Pfad</li>
     <li>hyphenPrefix->[globalHyphenPrefix]</li>
     <li>hyphenPrefix->[memeHyphenPrefix]</li>
     <li>globalHyphenPrefix(p=4)->neo</li>

@@ -167,7 +167,7 @@
     <li>lessonAttribution->[founder_nameFull], [speech] auf [TerrainFeatureDatDef]</li>
     <li>lessonAttribution->[founder_nameFull], [speech] {replace: in [CommunityDatDef]; "in dem "-"im "}</li>
     <li>attributionSource->[memeConcept]</li>
-    <li>attributionSource->[memeConceptAdj]</li>
+    <li>attributionSource->{replace: [memeConceptGender]; "|M|"-"[memeAdjective]er "; "|F|"-"[memeAdjective]e "; "|N|"-"[memeAdjective]es "}</li>
     <li>attributionSource->Ein [memeAdjective]es Leben</li>
     <li>attributionSource->Überlegungen [attributionJob]</li>
     <li>attributionSource->Memoiren [attributionJob]</li>
@@ -222,9 +222,6 @@
     <li>lessonReinforcement->Mir ist so, als ob sich das direkt in meinen Kopf eingebrannt hat.</li>
     <li>lessonReinforcement->Das werde ich nie vergessen.</li>
     <!-- gender-specific -->
-    <li>memeConceptAdj->[memeAdjective]er [memeConceptMas]</li>
-    <li>memeConceptAdj->[memeAdjective]e [memeConceptFem]</li>
-    <li>memeConceptAdj->[memeAdjective]es [memeConceptNeu]</li>
     <li>einem_Spielzeug_X_der->einem Spielzeug-[place_personalWeapon_mas], der</li>
     <li>einem_Spielzeug_X_der->einer Spielzeug-[place_personalWeapon_fem], die</li>
     <li>einem_Spielzeug_X_der->einem Spielzeug-[place_personalWeapon_neu], das</li>

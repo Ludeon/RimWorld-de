@@ -16,10 +16,11 @@
     <li>r_ritualName->[ritNoun] {replace: von [keyDeity]; "von Gott"-"Gottes"}</li>
     <li>r_ritualName->{replace: [keyDeity]'s; "Gott's"-"Gottes"} [ritNoun]</li>
     <li>r_ritualName->[ritNoun] [chosenTheme]</li>
-    <li>r_ritualName->[ritNoun] [memeConceptGenDef]</li>
-    <li>r_ritualName->[memeAdjective][ritNounAdj]</li>
+    <li>r_ritualName->[ritNoun] {replace: [memeConceptGenGender]; "|M|"-"des "; "|F|"-"der "; "|N|"-"des "}</li>
+    <li>r_ritualName->{replace: [ritNounGender]; "|M|"-"[memeAdjective]er "; "|F|"-"[memeAdjective]e "; "|N|"-"[memeAdjective]es "}</li>
     <li>r_ritualName->[memeComPrefix][ritNounComSuffix]</li>
     <li>r_ritualName->[memeHyphenPrefix]-[ritNoun]</li>
+    <li>r_ritualName(priority=-1)->[ritNoun]</li>
     <li>ritNoun->Kampf</li>
     <li>ritNoun->Duell</li>
     <li>ritNoun->Zweikampf</li>
@@ -32,16 +33,12 @@
     <li>ritNounComSuffix->schlacht</li>
     <li>ritNounComSuffix->rauferei</li>
     <li>ritNounComSuffix->streit</li>
-    <li>ritNounAdj->er Kampf</li>
-    <li>ritNounAdj->es Duell</li>
-    <li>ritNounAdj->e Schlacht</li>
-    <li>ritNounAdj->e Rauferei</li>
-    <li>ritNounAdj->er Wettkampf</li>
-    <li>ritNounAdj->er Wettstreit</li>
-    <!-- gender-specific -->
-    <li>memeConceptGenDef->des [memeConceptMasGen]</li>
-    <li>memeConceptGenDef->der [memeConceptFemGen]</li>
-    <li>memeConceptGenDef->des [memeConceptNeuGen]</li>
+    <li>ritNounGender->|M|Kampf</li>
+    <li>ritNounGender->|N|Duell</li>
+    <li>ritNounGender->|F|Schlacht</li>
+    <li>ritNounGender->|F|Rauferei</li>
+    <li>ritNounGender->|M|Wettkampf</li>
+    <li>ritNounGender->|M|Wettstreit</li>
   </NamerRitualGladiatorDuel.rulePack.rulesStrings>
   
 </LanguageData>

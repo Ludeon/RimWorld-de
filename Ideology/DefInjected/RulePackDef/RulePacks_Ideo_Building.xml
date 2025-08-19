@@ -12,8 +12,8 @@
     <li>buildingName->Schrein</li>
     <li>buildingNameComSuffix->altar</li>
     <li>buildingNameComSuffix->schrein</li>
-    <li>buildingNameMas->Altar</li>
-    <li>buildingNameMas->Schrein</li>
+    <li>buildingNameGender->|M|Altar</li>
+    <li>buildingNameGender->|M|Schrein</li>
   </NamerAltar.rulePack.rulesStrings>
   
   <!-- EN:
@@ -28,9 +28,9 @@
     <li>buildingNameComSuffix->totem</li>
     <li>buildingNameComSuffix->bildnis</li>
     <li>buildingNameComSuffix->scheiterhaufen</li>
-    <li>buildingNameNeu->Totem</li>
-    <li>buildingNameNeu->Bildnis</li>
-    <li>buildingNameMas->Scheiterhaufen</li>
+    <li>buildingNameGender->|N|Totem</li>
+    <li>buildingNameGender->|N|Bildnis</li>
+    <li>buildingNameGender->|M|Scheiterhaufen</li>
   </NamerBurnTarget.rulePack.rulesStrings>
   
   <!-- EN:
@@ -49,11 +49,11 @@
     <li>buildingNameComSuffix->platte</li>
     <li>buildingNameComSuffix->schmaus</li>
     <li>buildingNameComSuffix->festmahl</li>
-    <li>buildingNameNeu->Gericht</li>
-    <li>buildingNameFem->Platte</li>
-    <li>buildingNameMas->Schmaus</li>
-    <li>buildingNameNeu->Festmahl</li>
-    <li>buildingNameNeu->Menschenfilet</li>
+    <li>buildingNameGender->|N|Gericht</li>
+    <li>buildingNameGender->|F|Platte</li>
+    <li>buildingNameGender->|M|Schmaus</li>
+    <li>buildingNameGender->|N|Festmahl</li>
+    <li>buildingNameGender->|N|Menschenfilet</li>
   </NamerCannibalPlatter.rulePack.rulesStrings>
   
   <!-- EN:
@@ -65,8 +65,8 @@
     <li>buildingName->Tanne</li>
     <li>buildingNameComSuffix->baum</li>
     <li>buildingNameComSuffix->tanne</li>
-    <li>buildingNameMas->Baum</li>
-    <li>buildingNameFem->Tanne</li>
+    <li>buildingNameGender->|M|Baum</li>
+    <li>buildingNameGender->|F|Tanne</li>
   </NamerChristmasTree.rulePack.rulesStrings>
   
   <!-- EN:
@@ -79,22 +79,15 @@
     <li>r_ideoBuildingName->[buildingName] of [chosenIdeoName]</li>
   -->
   <NamerIdeoBuilding.rulePack.rulesStrings>
-    <li>r_ideoBuildingName(p=2)->[memeAdjective][buildingNameAdj]</li>
+    <li>r_ideoBuildingName(p=2)->{replace: [buildingNameGender]; "|M|"-"[memeAdjective]er "; "|F|"-"[memeAdjective]e "; "|N|"-"[memeAdjective]es "}</li>
     <li>r_ideoBuildingName(p=2)->[memeComPrefix][buildingNameComSuffix]</li>
     <li>r_ideoBuildingName->[buildingName] [chosenTheme]</li>
-    <li>r_ideoBuildingName->[chosenAdjective][buildingNameAdj]</li>
+    <li>r_ideoBuildingName->{replace: [buildingNameGender]; "|M|"-"[chosenAdjective]er "; "|F|"-"[chosenAdjective]e "; "|N|"-"[chosenAdjective]es "}</li>
     <li>r_ideoBuildingName->{replace: [keyDeity]'s; "Gott's"-"Gottes"} [buildingName]</li>
     <li>r_ideoBuildingName->[buildingName] {replace: von [keyDeity]; "von Gott"-"Gottes"}</li>
-    <li>r_ideoBuildingName->[buildingName] [memeConceptGenDef]</li>
-    <li>r_ideoBuildingName->[buildingName] {replace: des [chosenIdeoName]; "des |M|"-"des "; "des |F|"-"der "; "des |N|"-"des "}</li>
+    <li>r_ideoBuildingName->[buildingName] {replace: [memeConceptGenGender]; "|M|"-"des "; "|F|"-"der "; "|N|"-"des "}</li>
+    <!-- <li>r_ideoBuildingName->[buildingName] {replace: des [chosenIdeoName]; "des |M|"-"des "; "des |F|"-"der "; "des |N|"-"des "}</li> -->
     <li>r_ideoBuildingName->[memeHyphenPrefix]-[buildingName]</li>
-    <!-- gender-specific -->
-    <li>memeConceptGenDef->des [memeConceptMasGen]</li>
-    <li>memeConceptGenDef->der [memeConceptFemGen]</li>
-    <li>memeConceptGenDef->des [memeConceptNeuGen]</li>
-    <li>buildingNameAdj->er [buildingNameMas]</li>
-    <li>buildingNameAdj->e [buildingNameFem]</li>
-    <li>buildingNameAdj->es [buildingNameNeu]</li>
   </NamerIdeoBuilding.rulePack.rulesStrings>
   
   <!-- EN:
@@ -126,15 +119,15 @@
     <li>buildingNameComSuffix->figur</li>
     <li>buildingNameComSuffix->abbild</li>
     <li>buildingNameComSuffix->logo</li>
-    <li>buildingNameNeu->Ideogramm</li>
-    <li>buildingNameNeu->Symbol</li>
-    <li>buildingNameNeu->Zeichen</li>
-    <li>buildingNameFem->Ikone</li>
-    <li>buildingNameFem->Form</li>
-    <li>buildingNameNeu->Wappen</li>
-    <li>buildingNameFem->Figur</li>
-    <li>buildingNameNeu->Abbild</li>
-    <li>buildingNameNeu->Logo</li>
+    <li>buildingNameGender->|N|Ideogramm</li>
+    <li>buildingNameGender->|N|Symbol</li>
+    <li>buildingNameGender->|N|Zeichen</li>
+    <li>buildingNameGender->|F|Ikone</li>
+    <li>buildingNameGender->|F|Form</li>
+    <li>buildingNameGender->|N|Wappen</li>
+    <li>buildingNameGender->|F|Figur</li>
+    <li>buildingNameGender->|N|Abbild</li>
+    <li>buildingNameGender->|N|Logo</li>
   </NamerIdeogram.rulePack.rulesStrings>
   
   <!-- EN:
@@ -160,13 +153,13 @@
     <li>buildingNameComSuffix->form</li>
     <li>buildingNameComSuffix->gestalt</li>
     <li>buildingNameComSuffix->gebilde</li>
-    <li>buildingNameFem->Statue</li>
-    <li>buildingNameFem->Skulptur</li>
-    <li>buildingNameFem->Schnitzerei</li>
-    <li>buildingNameNeu->Abbild</li>
-    <li>buildingNameFem->Form</li>
-    <li>buildingNameFem->Gestalt</li>
-    <li>buildingNameNeu->Gebilde</li>
+    <li>buildingNameGender->|F|Statue</li>
+    <li>buildingNameGender->|F|Skulptur</li>
+    <li>buildingNameGender->|F|Schnitzerei</li>
+    <li>buildingNameGender->|N|Abbild</li>
+    <li>buildingNameGender->|F|Form</li>
+    <li>buildingNameGender->|F|Gestalt</li>
+    <li>buildingNameGender->|N|Gebilde</li>
   </NamerIdeoSculpture.rulePack.rulesStrings>
   
   <!-- EN:
@@ -184,10 +177,10 @@
     <li>buildingNameComSuffix->paffer</li>
     <li>buildingNameComSuffix->qualmer</li>
     <li>buildingNameComSuffix->quarzer</li>
-    <li>buildingNameMas->Raucher</li>
-    <li>buildingNameMas->Paffer</li>
-    <li>buildingNameMas->Qualmer</li>
-    <li>buildingNameMas->Quarzer</li>
+    <li>buildingNameGender->|M|Raucher</li>
+    <li>buildingNameGender->|M|Paffer</li>
+    <li>buildingNameGender->|M|Qualmer</li>
+    <li>buildingNameGender->|M|Quarzer</li>
   </NamerSmoker.rulePack.rulesStrings>
   
 </LanguageData>

@@ -17,10 +17,12 @@
     <li>memeMoralist->elder</li>
   -->
   <Structure_Animist.generalRules.rulesStrings>
-    <li>memeLeaderNoun->|M|Kurator</li>
-    <li>memeLeaderNoun->|M|Sprecher</li>
-    <li>memeLeaderNounCon->kurator</li>
-    <li>memeLeaderNounCon->sprecher</li>
+    <li>memeLeaderNoun->Kurator</li>
+    <li>memeLeaderNoun->Sprecher</li>
+    <li>memeLeaderNounGender->|M|Kurator</li>
+    <li>memeLeaderNounGender->|M|Sprecher</li>
+    <li>memeLeaderNounComSuffix->kurator</li>
+    <li>memeLeaderNounComSuffix->sprecher</li>
     <li>memeLeaderPrefix->Universal</li>
     <li>memeLeaderPrefix->Geister</li>
     <li>memeLeaderPrefix->Anima</li>
@@ -28,6 +30,9 @@
     <li>memeMoralist->Schamane</li>
     <li>memeMoralist->Priester</li>
     <li>memeMoralist->Ältester</li>
+    <li>memeMoralistGender->|M|Schamane</li>
+    <li>memeMoralistGender->|M|Priester</li>
+    <li>memeMoralistGender->|M|Ältester</li>
     <li>memeMoralistComSuffix->schamane</li>
     <li>memeMoralistComSuffix->priester</li>
     <li>memeMoralistComSuffix->ältester</li>
@@ -72,10 +77,12 @@
     <li>memeHyphenPrefix->archo</li>
     <li>memeHyphenPrefix->arch</li>
     <li>memeHyphenPrefix->archotech</li>
-    <li>memeLeaderNoun->|M|Archist</li>
-    <li>memeLeaderNoun->|M|Archonist</li>
-    <li>memeLeaderNounCon->archist</li>
-    <li>memeLeaderNounCon->archonist</li>
+    <li>memeLeaderNoun->Archist</li>
+    <li>memeLeaderNoun->Archonist</li>
+    <li>memeLeaderNounGender->|M|Archist</li>
+    <li>memeLeaderNounGender->|M|Archonist</li>
+    <li>memeLeaderNounGenderComSuffix->archist</li>
+    <li>memeLeaderNounComSuffix->archonist</li>
     <li>memeLeaderAdjective->archistisch</li>
     <li>memeLeaderAdjective->exochrom</li>
     <li>memeLeaderPrefix->Exochrom</li>
@@ -83,6 +90,10 @@
     <li>memeMoralist->Kleriker</li>
     <li>memeMoralist->Rektor</li>
     <li>memeMoralist->Abt</li>
+    <li>memeMoralistGender->|M|Priester</li>
+    <li>memeMoralistGender->|M|Kleriker</li>
+    <li>memeMoralistGender->|M|Rektor</li>
+    <li>memeMoralistGender->|M|Abt</li>
     <li>memeMoralistComSuffix->priester</li>
     <li>memeMoralistComSuffix->kleriker</li>
     <li>memeMoralistComSuffix->rektor</li>
@@ -129,12 +140,15 @@
   -->
   <Structure_Ideological.generalRules.rulesStrings>
     <li>memeHyphenPrefix->ideo</li>
-    <!-- <li>memeLeaderNoun->|M|Verstand</li> -->
-    <li>memeLeaderNoun->|M|Entscheider</li>
-    <li>memeLeaderNoun->|M|Anführer</li>
-    <!-- <li>memeLeaderNounCon->verstand</li> -->
-    <li>memeLeaderNounCon->entscheider</li>
-    <li>memeLeaderNounCon->führer</li>
+    <li>memeLeaderNoun->Haupt</li>
+    <li>memeLeaderNoun->Entscheider</li>
+    <li>memeLeaderNoun->Anführer</li>
+    <li>memeLeaderNounGender->|N|Haupt</li>
+    <li>memeLeaderNounGender->|M|Entscheider</li>
+    <li>memeLeaderNounGender->|M|Anführer</li>
+    <li>memeLeaderNounComSuffix->haupt</li>
+    <li>memeLeaderNounComSuffix->entscheider</li>
+    <li>memeLeaderNounComSuffix->führer</li>
     <li>memeLeaderAdjective->ethisch</li>
     <li>memeLeaderAdjective->moralisch</li>
     <li>memeLeaderAdjective->erwacht</li>
@@ -145,6 +159,13 @@
     <li>memeMoralist->Denker</li>
     <li>memeMoralist->Akademiker</li>
     <li>memeMoralist->Sophist</li>
+    <li>memeMoralistGender->|M|Berater</li>
+    <li>memeMoralistGender->|M|Ethiker</li>
+    <li>memeMoralistGender->|M|Moralist</li>
+    <li>memeMoralistGender->|M|Philosoph</li>
+    <li>memeMoralistGender->|M|Denker</li>
+    <li>memeMoralistGender->|M|Akademiker</li>
+    <li>memeMoralistGender->|M|Sophist</li>
     <li>memeMoralistComSuffix->berater</li>
     <li>memeMoralistComSuffix->ethiker</li>
     <li>memeMoralistComSuffix->moralist</li>
@@ -214,25 +235,29 @@
     <li>memeCreedComSuffix->kult</li>
     <li>memeCreedComSuffix->tempel</li>
     <li>memeCreedComSuffix->glaube</li>
-    <li>memeCreedGender->e Sekte</li>
-    <li>memeCreedGender->er Kult</li>
-    <li>memeCreedGender->er Tempel</li>
-    <li>memeCreedGender->er Glaube</li>
+    <li>memeCreedGender->|F|Sekte</li>
+    <li>memeCreedGender->|M|Kult</li>
+    <li>memeCreedGender->|M|Tempel</li>
+    <li>memeCreedGender->|M|Glaube</li>
     <li>memeHyphenPrefix->theo</li>
     <li>memeConcept->Schöpfung</li>
     <li>memeConcept->Leben</li>
-    <li>memeConceptFem->Schöpfung</li>
-    <li>memeConceptNeu->Leben</li>
-    <li>memeConceptFemGen->Schöpfung</li>
-    <li>memeConceptNeuGen->Lebens</li>
-    <li>memeLeaderNoun->|M|Bischof</li>
-    <li>memeLeaderNoun->|M|Kardinal</li>
-    <li>memeLeaderNoun->|M|Papst</li>
-    <li>memeLeaderNoun->|M|Divus</li>
-    <li>memeLeaderNounCon->bischof</li>
-    <li>memeLeaderNounCon->kardinal</li>
-    <li>memeLeaderNounCon->papst</li>
-    <li>memeLeaderNounCon->divus</li>
+    <li>memeConceptGender->|F|Schöpfung</li>
+    <li>memeConceptGender->|N|Leben</li>
+    <li>memeConceptGenGender->|F|Schöpfung</li>
+    <li>memeConceptGenGender->|N|Lebens</li>
+    <li>memeLeaderNoun->Bischof</li>
+    <li>memeLeaderNoun->Kardinal</li>
+    <li>memeLeaderNoun->Papst</li>
+    <li>memeLeaderNoun->Divus</li>
+    <li>memeLeaderNounGender->|M|Bischof</li>
+    <li>memeLeaderNounGender->|M|Kardinal</li>
+    <li>memeLeaderNounGender->|M|Papst</li>
+    <li>memeLeaderNounGender->|M|Divus</li>
+    <li>memeLeaderNounComSuffix->bischof</li>
+    <li>memeLeaderNounComSuffix->kardinal</li>
+    <li>memeLeaderNounComSuffix->papst</li>
+    <li>memeLeaderNounComSuffix->divus</li>
     <li>memeLeaderAdjective->heilig</li>
     <li>memeLeaderAdjective->göttlich</li>
     <li>memeLeaderPrefix->Gott</li>
@@ -244,6 +269,14 @@
     <li>memeMoralist->Rektor</li>
     <li>memeMoralist->Abt</li>
     <li>memeMoralist->Seelsorger</li>
+    <li>memeMoralistGender->|M|Priester</li>
+    <li>memeMoralistGender->|M|Pastor</li>
+    <li>memeMoralistGender->|M|Pfarrer</li>
+    <li>memeMoralistGender->|M|Kleriker</li>
+    <li>memeMoralistGender->|M|Prediger</li>
+    <li>memeMoralistGender->|M|Rektor</li>
+    <li>memeMoralistGender->|M|Abt</li>
+    <li>memeMoralistGender->|M|Seelsorger</li>
     <li>memeMoralistComSuffix->priester</li>
     <li>memeMoralistComSuffix->pastor</li>
     <li>memeMoralistComSuffix->pfarrer</li>
@@ -314,23 +347,26 @@
     <li>memeCreedComSuffix->kult</li>
     <li>memeCreedComSuffix->tempel</li>
     <li>memeCreedComSuffix->glaube</li>
-    <li>memeCreedGender->e Sekte</li>
-    <li>memeCreedGender->er Kult</li>
-    <li>memeCreedGender->er Tempel</li>
-    <li>memeCreedGender->er Glaube</li>
+    <li>memeCreedGender->|F|Sekte</li>
+    <li>memeCreedGender->|M|Kult</li>
+    <li>memeCreedGender->|M|Tempel</li>
+    <li>memeCreedGender->|M|Glaube</li>
     <li>memeHyphenPrefix->theo</li>
     <li>memeConcept->Schöpfung</li>
     <li>memeConcept->Leben</li>
-    <li>memeConceptFem->Schöpfung</li>
-    <li>memeConceptNeu->Leben</li>
-    <li>memeConceptFemGen->Schöpfung</li>
-    <li>memeConceptNeuGen->Lebens</li>
-    <li>memeLeaderNoun->|M|Templer</li>
-    <li>memeLeaderNounCon->templer</li>
+    <li>memeConceptGender->|F|Schöpfung</li>
+    <li>memeConceptGender->|N|Leben</li>
+    <li>memeConceptGenGender->|F|Schöpfung</li>
+    <li>memeConceptGenGender->|N|Lebens</li>
+    <li>memeLeaderNoun->Templer</li>
+    <li>memeLeaderNounGender->|M|Templer</li>
+    <li>memeLeaderNounComSuffix->templer</li>
     <li>memeLeaderAdjective->göttlich</li>
     <li>memeLeaderPrefix->Gott</li>
     <li>memeMoralist->Priester</li>
     <li>memeMoralist->Kleriker</li>
+    <li>memeMoralistGender->|M|Priester</li>
+    <li>memeMoralistGender->|M|Kleriker</li>
     <li>memeMoralistComSuffix->priester</li>
     <li>memeMoralistComSuffix->kleriker</li>
   </Structure_TheistEmbodied.generalRules.rulesStrings>

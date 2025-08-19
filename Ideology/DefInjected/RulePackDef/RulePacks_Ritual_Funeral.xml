@@ -18,16 +18,16 @@
     <li>funeral->requiem</li>
   -->
   <NamerRitualFuneral.rulePack.rulesStrings>
-    <li>r_ritualName->[memeAdjective][funeralAdj]</li>
-    <li>r_ritualName->[memeComPrefix][funeralComSuffix]</li>
-    <li>r_ritualName->[memeHyphenPrefix]-[funeral]</li>
+    <li>r_ritualName(p=2)->{replace: [funeralGender]; "|M|"-"[memeAdjective]er "; "|F|"-"[memeAdjective]e "; "|N|"-"[memeAdjective]es "}</li>
+    <li>r_ritualName(p=2)->[memeComPrefix][funeralComSuffix]</li>
+    <li>r_ritualName(p=2)->[memeHyphenPrefix]-[funeral]</li>
     <li>r_ritualName->[funeral] [chosenTheme]</li>
-    <li>r_ritualName->[chosenAdjective][funeralAdj]</li>
+    <li>r_ritualName->{replace: [funeralGender]; "|M|"-"[chosenAdjective]er "; "|F|"-"[chosenAdjective]e "; "|N|"-"[chosenAdjective]es "}</li>
     <li>r_ritualName->{replace: [keyDeity]'s; "Gott's"-"Gottes"} [funeral]</li>
     <li>r_ritualName->[funeral] {replace: von [keyDeity]; "von Gott"-"Gottes"}</li>
-    <li>r_ritualName->[funeral] [memeConceptGenDef]</li>
-    <li>r_ritualName->[funeral] {replace: des [chosenIdeoName]; "des |M|"-"des "; "des |F|"-"der "; "des |N|"-"des "}</li>
-    <li>r_ritualName(p=0.01)->Beerdigung</li>
+    <li>r_ritualName->[funeral] {replace: [memeConceptGenGender]; "|M|"-"des "; "|F|"-"der "; "|N|"-"des "}</li>
+    <!-- <li>r_ritualName->[funeral] {replace: des [chosenIdeoName]; "des |M|"-"des "; "des |F|"-"der "; "des |N|"-"des "}</li> -->
+    <li>r_ritualName(priority=-1)->[funeral]</li>
     <li>funeral->Beerdigung</li>
     <li>funeral->Bestattung</li>
     <li>funeral->Beisetzung</li>
@@ -44,18 +44,14 @@
     <li>funeralComSuffix->grabrede</li>
     <li>funeralComSuffix->begräbnis</li>
     <li>funeralComSuffix->requiem</li>
-    <li>funeralAdj->e Beerdigung</li>
-    <li>funeralAdj->e Bestattung</li>
-    <li>funeralAdj->e Beisetzung</li>
-    <li>funeralAdj->e Totenmesse</li>
-    <li>funeralAdj->e Trauerrede</li>
-    <li>funeralAdj->e Grabrede</li>
-    <li>funeralAdj->es Begräbnis</li>
-    <li>funeralAdj->es Requiem</li>
-    <!-- gender-specific -->
-    <li>memeConceptGenDef->des [memeConceptMasGen]</li>
-    <li>memeConceptGenDef->der [memeConceptFemGen]</li>
-    <li>memeConceptGenDef->des [memeConceptNeuGen]</li>
+    <li>funeralGender->|F|Beerdigung</li>
+    <li>funeralGender->|F|Bestattung</li>
+    <li>funeralGender->|F|Beisetzung</li>
+    <li>funeralGender->|F|Totenmesse</li>
+    <li>funeralGender->|F|Trauerrede</li>
+    <li>funeralGender->|F|Grabrede</li>
+    <li>funeralGender->|N|Begräbnis</li>
+    <li>funeralGender->|N|Requiem</li>
   </NamerRitualFuneral.rulePack.rulesStrings>
   
 </LanguageData>

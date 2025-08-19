@@ -18,26 +18,29 @@
     <li>ritNoun->rend</li>
   -->
   <NamerRitualMutilation.rulePack.rulesStrings>
-    <li>r_ritualName->[ritNoun] {replace: von [keyDeity]; "von Gott"-"Gottes"}</li>
-    <li>r_ritualName->{replace: [keyDeity]'s; "Gott's"-"Gottes"} [ritNoun]</li>
+    <li>r_ritualName(p=2)->{replace: [ritNounGender]; "|M|"-"[memeAdjective]er "; "|F|"-"[memeAdjective]e "; "|N|"-"[memeAdjective]es "}</li>
+    <li>r_ritualName(p=2)->[memeComPrefix][ritNounComSuffix]</li>
+    <li>r_ritualName(p=2)->[memeHyphenPrefix]-[ritNoun]</li>
     <li>r_ritualName->[ritNoun] [chosenTheme]</li>
-    <li>r_ritualName->[ritNoun] [memeConceptGenDef]</li>
-    <li>r_ritualName->[memeAdjective]e [ritNoun]</li>
-    <li>r_ritualName->[memeComPrefix][ritNounComSuffix]</li>
-    <li>r_ritualName->[memeHyphenPrefix]-[ritNoun]</li>
+    <li>r_ritualName->{replace: [ritNounGender]; "|M|"-"[chosenAdjective]er "; "|F|"-"[chosenAdjective]e "; "|N|"-"[chosenAdjective]es "}</li>
+    <li>r_ritualName->{replace: [keyDeity]'s; "Gott's"-"Gottes"} [ritNoun]</li>
+    <li>r_ritualName->[ritNoun] {replace: von [keyDeity]; "von Gott"-"Gottes"}</li>
+    <li>r_ritualName->[ritNoun] {replace: [memeConceptGenGender]; "|M|"-"des "; "|F|"-"der "; "|N|"-"des "}</li>
+    <li>r_ritualName(priority=-1)->[ritNoun]</li>
     <li>ritNoun->Verstümmelung</li>
     <li>ritNoun->Beschneidung</li>
     <li>ritNoun->Hautritzung</li>
     <li>ritNoun->Narbenritzung</li>
     <li>ritNoun->Skarifizierung</li>
+    <li>ritNounGender->|F|Verstümmelung</li>
+    <li>ritNounGender->|F|Beschneidung</li>
+    <li>ritNounGender->|F|Hautritzung</li>
+    <li>ritNounGender->|F|Narbenritzung</li>
+    <li>ritNounGender->|F|Skarifizierung</li>
     <li>ritNounComSuffix->verstümmelung</li>
     <li>ritNounComSuffix->beschneidung</li>
     <li>ritNounComSuffix->ritzung</li>
     <li>ritNounComSuffix->skarifizierung</li>
-    <!-- gender-specific -->
-    <li>memeConceptGenDef->des [memeConceptMasGen]</li>
-    <li>memeConceptGenDef->der [memeConceptFemGen]</li>
-    <li>memeConceptGenDef->des [memeConceptNeuGen]</li>
   </NamerRitualMutilation.rulePack.rulesStrings>
   
 </LanguageData>

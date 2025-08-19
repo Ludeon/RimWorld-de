@@ -23,15 +23,19 @@
     <li>memeMoralist->monk</li>
   -->
   <Structure_OriginBuddhist.generalRules.rulesStrings>
-    <li>r_ideoName(p=99)->[globalAdjective]{replace: er [packIdeoName]; "er |M|"-"er "; "er |F|"-"e "; "er |N|"-"es "}</li>
-    <li>r_ideoName(p=99)->[memeAdjective]{replace: er [packIdeoName]; "er |M|"-"er "; "er |F|"-"e "; "er |N|"-"es "}</li>
+    <li>r_ideoName(p=99)->{replace: [packIdeoName]; "|M|"-"[globalAdjective]er "; "|F|"-"[globalAdjective]e "; "|N|"-"[globalAdjective]es "}</li>
+    <li>r_ideoName(p=99)->{replace: [packIdeoName]; "|M|"-"[memeAdjective]er "; "|F|"-"[memeAdjective]e "; "|N|"-"[memeAdjective]es "}</li>
+    <li>r_ideoName(p=99)->{replace: [packIdeoName]; "|M|"-"[packAdjective]er "; "|F|"-"[packAdjective]e "; "|N|"-"[packAdjective]es "}</li>
     <li>r_ideoName(p=99)->{replace: [packIdeoName]; "|M|"-""; "|F|"-""; "|N|"-""}</li>
-    <li>memeLeaderNoun->|M|Bodhisattva</li>
-    <li>memeLeaderNoun->|M|Sattva</li>
-    <li>memeLeaderNoun->|M|Lama</li>
-    <li>memeLeaderNounCon->-Bodhisattva</li>
-    <li>memeLeaderNounCon->-Sattva</li>
-    <li>memeLeaderNounCon->-Lama</li>
+    <li>memeLeaderNoun->Bodhisattva</li>
+    <li>memeLeaderNoun->Sattva</li>
+    <li>memeLeaderNoun->Lama</li>
+    <li>memeLeaderNounGender->|M|Bodhisattva</li>
+    <li>memeLeaderNounGender->|M|Sattva</li>
+    <li>memeLeaderNounGender->|M|Lama</li>
+    <li>memeLeaderNounComSuffix->-Bodhisattva</li>
+    <li>memeLeaderNounComSuffix->-Sattva</li>
+    <li>memeLeaderNounComSuffix->-Lama</li>
     <li>memeLeaderAdjective->erleuchtet</li>
     <li>memeLeaderAdjective->weis</li>
     <li>memeLeaderAdjective->spirituell</li>
@@ -40,6 +44,9 @@
     <li>memeMoralist(p=2)->Bhikkhu</li>
     <li>memeMoralist->Priester</li>
     <li>memeMoralist->Mönch</li>
+    <li>memeMoralistGender(p=2)->|M|Bhikkhu</li>
+    <li>memeMoralistGender->|M|Priester</li>
+    <li>memeMoralistGender->|M|Mönch</li>
     <li>memeMoralistComSuffix(p=2)->-Bhikkhu</li>
     <li>memeMoralistComSuffix->priester</li>
     <li>memeMoralistComSuffix->mönch</li>
@@ -138,23 +145,31 @@
     <li>memeMoralist->abbot</li>
   -->
   <Structure_OriginChristian.generalRules.rulesStrings>
-    <li>r_ideoName(p=99)->[globalAdjective]{replace: er [packIdeoName]; "er |M|"-"er "; "er |F|"-"e "; "er |N|"-"es "}</li>
-    <li>r_ideoName(p=99)->[memeAdjective]{replace: er [packIdeoName]; "er |M|"-"er "; "er |F|"-"e "; "er |N|"-"es "}</li>
+    <li>r_ideoName(p=99)->{replace: [packIdeoName]; "|M|"-"[globalAdjective]er "; "|F|"-"[globalAdjective]e "; "|N|"-"[globalAdjective]es "}</li>
+    <li>r_ideoName(p=99)->{replace: [packIdeoName]; "|M|"-"[memeAdjective]er "; "|F|"-"[memeAdjective]e "; "|N|"-"[memeAdjective]es "}</li>
+    <li>r_ideoName(p=99)->{replace: [packIdeoName]; "|M|"-"[packAdjective]er "; "|F|"-"[packAdjective]e "; "|N|"-"[packAdjective]es "}</li>
     <li>r_ideoName(p=99)->{replace: [packIdeoName]; "|M|"-""; "|F|"-""; "|N|"-""}</li>
-    <li>memeLeaderNoun->|M|Bischof</li>
-    <li>memeLeaderNoun->|M|Kardinal</li>
-    <li>memeLeaderNoun->|M|Papst</li>
-    <li>memeLeaderNoun->|M|Pontifex</li>
-    <li>memeLeaderNoun->|M|Legat</li>
-    <li>memeLeaderNoun->|M|Nuntius</li>
-    <li>memeLeaderNoun->|M|Divus</li>
-    <li>memeLeaderNounCon->bischof</li>
-    <li>memeLeaderNounCon->kardinal</li>
-    <li>memeLeaderNounCon->papst</li>
-    <li>memeLeaderNounCon->-Pontifex</li>
-    <li>memeLeaderNounCon->legat</li>
-    <li>memeLeaderNounCon->nuntius</li>
-    <li>memeLeaderNounCon->divus</li>
+    <li>memeLeaderNoun->Bischof</li>
+    <li>memeLeaderNoun->Kardinal</li>
+    <li>memeLeaderNoun->Papst</li>
+    <li>memeLeaderNoun->Pontifex</li>
+    <li>memeLeaderNoun->Legat</li>
+    <li>memeLeaderNoun->Nuntius</li>
+    <li>memeLeaderNoun->Divus</li>
+    <li>memeLeaderNounGender->|M|Bischof</li>
+    <li>memeLeaderNounGender->|M|Kardinal</li>
+    <li>memeLeaderNounGender->|M|Papst</li>
+    <li>memeLeaderNounGender->|M|Pontifex</li>
+    <li>memeLeaderNounGender->|M|Legat</li>
+    <li>memeLeaderNounGender->|M|Nuntius</li>
+    <li>memeLeaderNounGender->|M|Divus</li>
+    <li>memeLeaderNounComSuffix->bischof</li>
+    <li>memeLeaderNounComSuffix->kardinal</li>
+    <li>memeLeaderNounComSuffix->papst</li>
+    <li>memeLeaderNounComSuffix->-Pontifex</li>
+    <li>memeLeaderNounComSuffix->legat</li>
+    <li>memeLeaderNounComSuffix->nuntius</li>
+    <li>memeLeaderNounComSuffix->divus</li>
     <li>memeLeaderAdjective->heilig</li>
     <li>memeLeaderAdjective->göttlich</li>
     <li>memeLeaderAdjective->christlich</li>
@@ -166,12 +181,21 @@
     <li>memeMoralist->Prediger</li>
     <li>memeMoralist->Rektor</li>
     <li>memeMoralist->Abt</li>
+    <li>memeMoralist->Mönch</li>
+    <li>memeMoralistGender->|M|Priester</li>
+    <li>memeMoralistGender->|M|Pastor</li>
+    <li>memeMoralistGender->|M|Kleriker</li>
+    <li>memeMoralistGender->|M|Prediger</li>
+    <li>memeMoralistGender->|M|Rektor</li>
+    <li>memeMoralistGender->|M|Abt</li>
+    <li>memeMoralistGender->|M|Mönch</li>
     <li>memeMoralistComSuffix->priester</li>
     <li>memeMoralistComSuffix->pastor</li>
     <li>memeMoralistComSuffix->kleriker</li>
     <li>memeMoralistComSuffix->prediger</li>
     <li>memeMoralistComSuffix->rektor</li>
     <li>memeMoralistComSuffix->abt</li>
+    <li>memeMoralistComSuffix->mönch</li>
   </Structure_OriginChristian.generalRules.rulesStrings>
   <!-- EN: Christian -->
   <Structure_OriginChristian.symbolPacks.0.adjective>christlich</Structure_OriginChristian.symbolPacks.0.adjective>
@@ -349,19 +373,25 @@
     <li>memeMoralist->brahmin</li>
   -->
   <Structure_OriginHindu.generalRules.rulesStrings>
-    <li>r_ideoName(p=99)->[globalAdjective]{replace: er [packIdeoName]; "er |M|"-"er "; "er |F|"-"e "; "er |N|"-"es "}</li>
-    <li>r_ideoName(p=99)->[memeAdjective]{replace: er [packIdeoName]; "er |M|"-"er "; "er |F|"-"e "; "er |N|"-"es "}</li>
+    <li>r_ideoName(p=99)->{replace: [packIdeoName]; "|M|"-"[globalAdjective]er "; "|F|"-"[globalAdjective]e "; "|N|"-"[globalAdjective]es "}</li>
+    <li>r_ideoName(p=99)->{replace: [packIdeoName]; "|M|"-"[memeAdjective]er "; "|F|"-"[memeAdjective]e "; "|N|"-"[memeAdjective]es "}</li>
+    <li>r_ideoName(p=99)->{replace: [packIdeoName]; "|M|"-"[packAdjective]er "; "|F|"-"[packAdjective]e "; "|N|"-"[packAdjective]es "}</li>
     <li>r_ideoName(p=99)->{replace: [packIdeoName]; "|M|"-""; "|F|"-""; "|N|"-""}</li>
-    <li>memeLeaderNoun->|M|Mahatma</li>
-    <li>memeLeaderNoun->|M|Ishvara</li>
-    <li>memeLeaderNoun->|M|Yogi</li>
-    <li>memeLeaderNoun->|M|Pandit</li>
-    <li>memeLeaderNoun->|M|Avatar</li>
-    <li>memeLeaderNounCon->-Mahatma</li>
-    <li>memeLeaderNounCon->-Ishvara</li>
-    <li>memeLeaderNounCon->-Yogi</li>
-    <li>memeLeaderNounCon->-Pandit</li>
-    <li>memeLeaderNounCon->avatar</li>
+    <li>memeLeaderNoun->Mahatma</li>
+    <li>memeLeaderNoun->Ishvara</li>
+    <li>memeLeaderNoun->Yogi</li>
+    <li>memeLeaderNoun->Pandit</li>
+    <li>memeLeaderNoun->Avatar</li>
+    <li>memeLeaderNounGender->|M|Mahatma</li>
+    <li>memeLeaderNounGender->|M|Ishvara</li>
+    <li>memeLeaderNounGender->|M|Yogi</li>
+    <li>memeLeaderNounGender->|M|Pandit</li>
+    <li>memeLeaderNounGender->|M|Avatar</li>
+    <li>memeLeaderNounComSuffix->-Mahatma</li>
+    <li>memeLeaderNounComSuffix->-Ishvara</li>
+    <li>memeLeaderNounComSuffix->-Yogi</li>
+    <li>memeLeaderNounComSuffix->-Pandit</li>
+    <li>memeLeaderNounComSuffix->avatar</li>
     <li>memeLeaderAdjective->heilig</li>
     <li>memeLeaderAdjective->hinduistisch</li>
     <li>memeLeaderAdjective->indisch</li>
@@ -371,6 +401,10 @@
     <li>memeMoralist->Purohit</li>
     <li>memeMoralist->Archaka</li>
     <li>memeMoralist->Brahmane</li>
+    <li>memeMoralistGender(p=3)->|M|Pujari</li>
+    <li>memeMoralistGender->|M|Purohit</li>
+    <li>memeMoralistGender->|M|Archaka</li>
+    <li>memeMoralistGender->|M|Brahmane</li>
     <li>memeMoralistComSuffix(p=3)->-Pujari</li>
     <li>memeMoralistComSuffix->-Purohit</li>
     <li>memeMoralistComSuffix->-Archaka</li>
@@ -489,23 +523,31 @@
     <li>memeMoralist->cleric</li>
   -->
   <Structure_OriginIslamic.generalRules.rulesStrings>
-    <li>r_ideoName(p=99)->[globalAdjective]{replace: er [packIdeoName]; "er |M|"-"er "; "er |F|"-"e "; "er |N|"-"es "}</li>
-    <li>r_ideoName(p=99)->[memeAdjective]{replace: er [packIdeoName]; "er |M|"-"er "; "er |F|"-"e "; "er |N|"-"es "}</li>
+    <li>r_ideoName(p=99)->{replace: [packIdeoName]; "|M|"-"[globalAdjective]er "; "|F|"-"[globalAdjective]e "; "|N|"-"[globalAdjective]es "}</li>
+    <li>r_ideoName(p=99)->{replace: [packIdeoName]; "|M|"-"[memeAdjective]er "; "|F|"-"[memeAdjective]e "; "|N|"-"[memeAdjective]es "}</li>
+    <li>r_ideoName(p=99)->{replace: [packIdeoName]; "|M|"-"[packAdjective]er "; "|F|"-"[packAdjective]e "; "|N|"-"[packAdjective]es "}</li>
     <li>r_ideoName(p=99)->{replace: [packIdeoName]; "|M|"-""; "|F|"-""; "|N|"-""}</li>
-    <li>memeLeaderNoun->|M|Mullah</li>
-    <li>memeLeaderNoun->|M|Imam</li>
-    <li>memeLeaderNoun->|M|Kalif</li>
-    <li>memeLeaderNoun->|M|Mufti</li>
-    <li>memeLeaderNoun->|M|Almamy</li>
-    <li>memeLeaderNoun->|M|Kyai</li>
-    <li>memeLeaderNoun->|M|Ajatollah</li>
-    <li>memeLeaderNounCon->-Mullah</li>
-    <li>memeLeaderNounCon->-Imam</li>
-    <li>memeLeaderNounCon->-Kalif</li>
-    <li>memeLeaderNounCon->-Mufti</li>
-    <li>memeLeaderNounCon->-Almamy</li>
-    <li>memeLeaderNounCon->-Kyai</li>
-    <li>memeLeaderNounCon->-Ajatollah</li>
+    <li>memeLeaderNoun->Mullah</li>
+    <li>memeLeaderNoun->Imam</li>
+    <li>memeLeaderNoun->Kalif</li>
+    <li>memeLeaderNoun->Mufti</li>
+    <li>memeLeaderNoun->Almamy</li>
+    <li>memeLeaderNoun->Kyai</li>
+    <li>memeLeaderNoun->Ajatollah</li>
+    <li>memeLeaderNounGender->|M|Mullah</li>
+    <li>memeLeaderNounGender->|M|Imam</li>
+    <li>memeLeaderNounGender->|M|Kalif</li>
+    <li>memeLeaderNounGender->|M|Mufti</li>
+    <li>memeLeaderNounGender->|M|Almamy</li>
+    <li>memeLeaderNounGender->|M|Kyai</li>
+    <li>memeLeaderNounGender->|M|Ajatollah</li>
+    <li>memeLeaderNounComSuffix->-Mullah</li>
+    <li>memeLeaderNounComSuffix->-Imam</li>
+    <li>memeLeaderNounComSuffix->-Kalif</li>
+    <li>memeLeaderNounComSuffix->-Mufti</li>
+    <li>memeLeaderNounComSuffix->-Almamy</li>
+    <li>memeLeaderNounComSuffix->-Kyai</li>
+    <li>memeLeaderNounComSuffix->-Ajatollah</li>
     <li>memeLeaderPrefix->Groß</li>
     <li>memeMoralist(p=4)->Imam</li>
     <li>memeMoralist->Qadi</li>
@@ -514,6 +556,13 @@
     <li>memeMoralist->Muezzin</li>
     <li>memeMoralist->Mudschtahid</li>
     <li>memeMoralist->Kleriker</li>
+    <li>memeMoralistGender(p=4)->|M|Imam</li>
+    <li>memeMoralistGender->|M|Qadi</li>
+    <li>memeMoralistGender->|M|Ulama</li>
+    <li>memeMoralistGender->|M|Allamah</li>
+    <li>memeMoralistGender->|M|Muezzin</li>
+    <li>memeMoralistGender->|M|Mudschtahid</li>
+    <li>memeMoralistGender->|M|Kleriker</li>
     <li>memeMoralistComSuffix(p=4)->-Imam</li>
     <li>memeMoralistComSuffix->-Qadi</li>
     <li>memeMoralistComSuffix->-Ulama</li>
