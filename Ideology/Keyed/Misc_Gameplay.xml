@@ -220,18 +220,18 @@
   <!-- EN: {PAWN_labelShort} is a wimp and will not like being blinded. -->
   <RitualBlindingWarnWimp>{PAWN_labelShort} ist ein Weichei und will nicht geblendet werden.</RitualBlindingWarnWimp>
   <!-- EN: Scarification is expected for {IDEOMEMBERPLURAL} as long as there are fewer than {0} scarified {IDEOMEMBERPLURAL}. -->
-  <RitualScarificationTriggerExtraDesc>{IDEOMEMBER}-Anhänger erwarten eine Skarifizierung, solange es weniger als {0} skarifizierte {IDEOMEMBER}-Anhänger gibt.</RitualScarificationTriggerExtraDesc>
+  <RitualScarificationTriggerExtraDesc>Skarifizierung wird von den {replace: {IDEOMEMBER}$; "Katholik$"-"Katholiken"; "Orthodoxer$"-"Orthodoxen"; "Nestorianer$"-"Nestorianern"; "Anglikaner$"-"Anglikanern"; "Lutheraner$"-"Lutheranern"; "Theonom$"-"Theonomen"; "Mormone$"-"Mormonen"; "Muslim$"-"Muslimen"; "Gelugpa$"-"Gelugpa"; "Hindu$"-"Hindus"; "Indu$"-"Indus"; "Sindu$"-"Sindus"; "Vedi$"-"Vedis"; "Dharmi$"-"Dharmis"; "Tantriker$"-"Tantrikern"; "Vaishnava$"-"Vaishnavas"; "Shaiva$"-"Shaivas"; "Yogi$"-"Yogis"; "Naiyyayika$"-"Naiyyayikas"; "Vaisheshikaya$"-"Vaisheshikayas"; "Mimamsaka$"-"Mimamsakas"; "ist$"-"isten"; "it$"-"iten"; "or$"-"oren"; "ant$"-"anten"; "$"-"-Anhängern"} verlangt, solange weniger als {0} von ihnen skarifiziert sind.</RitualScarificationTriggerExtraDesc>
   <!-- EN: Blinding is expected for each current and joining {IDEOMEMBER} colonist. -->
-  <RitualBlindingTriggerExtraDesc>Jeder aktuelle und neue {IDEOMEMBER}-Kolonist erwartet eine Blendung.</RitualBlindingTriggerExtraDesc>
+  <RitualBlindingTriggerExtraDesc>Blendung wird von allen {replace: {IDEOMEMBER}$; "Katholik$"-"Katholiken"; "Orthodoxer$"-"Orthodoxen"; "Nestorianer$"-"Nestorianern"; "Anglikaner$"-"Anglikanern"; "Lutheraner$"-"Lutheranern"; "Theonom$"-"Theonomen"; "Mormone$"-"Mormonen"; "Muslim$"-"Muslimen"; "Gelugpa$"-"Gelugpa"; "Hindu$"-"Hindus"; "Indu$"-"Indus"; "Sindu$"-"Sindus"; "Vedi$"-"Vedis"; "Dharmi$"-"Dharmis"; "Tantriker$"-"Tantrikern"; "Vaishnava$"-"Vaishnavas"; "Shaiva$"-"Shaivas"; "Yogi$"-"Yogis"; "Naiyyayika$"-"Naiyyayikas"; "Vaisheshikaya$"-"Vaisheshikayas"; "Mimamsaka$"-"Mimamsakas"; "ist$"-"isten"; "it$"-"iten"; "or$"-"oren"; "ant$"-"anten"; "$"-"-Anhängern"} verlangt, die Kolonisten in deiner Fraktion sind – einschließlich jener, die später beitreten.</RitualBlindingTriggerExtraDesc>
   
   <!-- EN: Everyone participating in the ritual gained a one-day work focus buff ({PERCENTAGE} global work speed)! -->
   <RitualOutcomeExtraDesc_DancePartyWorkFocus>Alle Teilnehmer des Rituals erhielten einen eintägigen Arbeitsfokus-Buff ({PERCENTAGE} Geschwindigkeit alle Arbeiten)!</RitualOutcomeExtraDesc_DancePartyWorkFocus>
   <!-- EN: Thanks to a satisfying blinding ritual, {PAWN_labelShort} gained a psylink level! -->
-  <RitualOutcomeExtraDesc_BlindingPsylink>Dank eines befriedigenden Blendungsrituals erhielt {PAWN_labelShort} eine Psylinkstufe!</RitualOutcomeExtraDesc_BlindingPsylink>
+  <RitualOutcomeExtraDesc_BlindingPsylink>Dank des befriedigenden Blendungsrituals hat {PAWN_labelShort} eine Psylinkstufe erhalten!</RitualOutcomeExtraDesc_BlindingPsylink>
   <!-- EN: With a new pyslink level {PAWN_pronoun} gained a {0} psycast. -->
-  <RitualOutcomeExtraDesc_BlindingPsylinkAbility>Dank einer neuen Psylinkstufe erhielt {PAWN_pronoun} die Psykraft '{0}'.</RitualOutcomeExtraDesc_BlindingPsylinkAbility>
+  <RitualOutcomeExtraDesc_BlindingPsylinkAbility>Die neue Psylinkstufe hat {PAWN_gender ? ihm : ihr} die Psykraft '{0}' beschert.</RitualOutcomeExtraDesc_BlindingPsylinkAbility>
   <!-- EN: Thanks to a satisfying {RITUAL}, {PAWN_labelShort} gained {INSPIRATION}! -->
-  <RitualOutcomeExtraDesc_ConsumableInspiration>{PAWN_labelShort} erhielt '{INSPIRATION}' dank des befriedigenden Rituals!</RitualOutcomeExtraDesc_ConsumableInspiration>
+  <RitualOutcomeExtraDesc_ConsumableInspiration>Dank des befriedigenden Rituals hat {PAWN_labelShort} die Inspiration '{INSPIRATION}' erhalten!</RitualOutcomeExtraDesc_ConsumableInspiration>
   <!-- EN: Your skylanterns have attracted some friendly travelers. They will visit and leave a gift. -->
   <RitualOutcomeExtraDesc_SkylanternWanderers>Deine Himmelslaternen haben einige freundliche Reisende angelockt. Sie werden dich besuchen kommen und ein Geschenk dalassen.</RitualOutcomeExtraDesc_SkylanternWanderers>
   <!-- EN: All participating slaves were shaken by the sight of death. Their suppression has been raised to its maximum level. -->
@@ -385,7 +385,7 @@
   <!-- EN: Relic info found -->
   <RelicInfoFound>Infos über Reliquie gefunden</RelicInfoFound>
   <!-- EN: inactive, requires at least {0} {1}s (have {2}) -->
-  <InactiveRoleRequiresMoreBelievers>inaktiv, benötigt mindestens {0} Anhänger ({1}) (aktuell {2} vorhanden)</InactiveRoleRequiresMoreBelievers>
+  <InactiveRoleRequiresMoreBelievers>inaktiv, benötigt min. {0} {replace: {1}$; "Katholik$"-"Katholiken"; "Orthodoxer$"-"Orthodoxen"; "Nestorianer$"-"Nestorianer"; "Anglikaner$"-"Anglikaner"; "Lutheraner$"-"Lutheraner"; "Theonom$"-"Theonomen"; "Mormone$"-"Mormonen"; "Muslim$"-"Muslime"; "Gelugpa$"-"Gelugpa"; "Hindu$"-"Hindus"; "Indu$"-"Indus"; "Sindu$"-"Sindus"; "Vedi$"-"Vedis"; "Dharmi$"-"Dharmis"; "Tantriker$"-"Tantriker"; "Vaishnava$"-"Vaishnavas"; "Shaiva$"-"Shaivas"; "Yogi$"-"Yogis"; "Naiyyayika$"-"Naiyyayikas"; "Vaisheshikaya$"-"Vaisheshikayas"; "Mimamsaka$"-"Mimamsakas"; "ist$"-"isten"; "it$"-"iten"; "or$"-"oren"; "ant$"-"anten"; "$"-"-Anhänger"} (aktuell {2} vorhanden)</InactiveRoleRequiresMoreBelievers>
   
   <!-- EN: certainty -->
   <Certainty>Glaube</Certainty>

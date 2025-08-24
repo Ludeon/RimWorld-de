@@ -71,7 +71,7 @@
     <li>r_ideoRelicName->{replace: [thingLabel]; "Horn"-"[memeAdjective]es Horn"; "Lanze"-"[memeAdjective]e Lanze"; "Pulser"-"[memeAdjective]er Pulser"; "Werfer"-"[memeAdjective]er Werfer"; "Axt"-"[memeAdjective]e Axt"; "Flinte"-"[memeAdjective]e Flinte"; "Bogen"-"[memeAdjective]er Bogen"; "Revolver"-"[memeAdjective]er Revolver"; "Gewehr"-"[memeAdjective]es Gewehr"; "Stoßzahn"-"[memeAdjective]er Stoßzahn"; "Stab"-"[memeAdjective]er Stab"; "Hammer"-"[memeAdjective]er Hammer"; "Schwert"-"[memeAdjective]es Schwert"; "Pistole"-"[memeAdjective]e Pistole"; "Dolch"-"[memeAdjective]er Dolch"; "Büchse"-"[memeAdjective]e Büchse"; "Kanone"-"[memeAdjective]e Kanone"; "Granate"-"[memeAdjective]e Granaten"; "Granate"-"[memeAdjective]e Granate"; "Keule"-"[memeAdjective]e Keule"; "Säbel"-"[memeAdjective]er Säbel"; "Messer"-"[memeAdjective]es Messer"; "Rapier"-"[memeAdjective]es Rapier"; "Klinge"-"[memeAdjective]e Klinge"; "Sense"-"[memeAdjective]e Sense"; "Speer"-"[memeAdjective]er Speer"; "[thingLabel]"-"[first2]-[thingLabel]"}</li>
     <li>r_ideoRelicName->{replace: [thingLabel]; "Horn"-"[memeComPrefix]horn"; "Lanze"-"[memeComPrefix]lanze"; "Pulser"-"[memeComPrefix]pulser"; "Werfer"-"[memeComPrefix]werfer"; "Axt"-"[memeComPrefix]axt"; "Flinte"-"[memeComPrefix]flinte"; "Bogen"-"[memeComPrefix]bogen"; "Revolver"-"[memeComPrefix]revolver"; "Gewehr"-"[memeComPrefix]gewehr"; "Stoßzahn"-"[memeComPrefix]stoßzahn"; "Stab"-"[memeComPrefix]stab"; "Hammer"-"[memeComPrefix]hammer"; "Schwert"-"[memeComPrefix]schwert"; "Pistole"-"[memeComPrefix]pistole"; "Dolch"-"[memeComPrefix]dolch"; "Büchse"-"[memeComPrefix]büchse"; "Kanone"-"[memeComPrefix]kanone"; "Granate"-"[memeComPrefix]granaten"; "Granate"-"[memeComPrefix]granate"; "Keule"-"[memeComPrefix]keule"; "Säbel"-"[memeComPrefix]säbel"; "Messer"-"[memeComPrefix]messer"; "Rapier"-"[memeComPrefix]rapier"; "Klinge"-"[memeComPrefix]klinge"; "Sense"-"[memeComPrefix]sense"; "Speer"-"[memeComPrefix]speer"; "[thingLabel]"-"[first2]-[thingLabel]"}</li>
     <li>r_ideoRelicName->[memeHyphenPrefix]-[thingLabel]</li>
-    <li>r_ideoRelicName->[memeAdjective]es [relic]</li>
+    <li>r_ideoRelicName->{replace: [relicGender]; "|M|"-"[memeAdjective]er "; "|F|"-"[memeAdjective]e "; "|N|"-"[memeAdjective]es "}</li>
     <li>r_ideoRelicName->[memeComPrefix][relicComSuffix]</li>
     <li>r_ideoRelicName->[relic] {replace: [memeConceptGenGender]; "|M|"-"des "; "|F|"-"der "; "|N|"-"des "}</li>
     <li>r_ideoRelicName->[memeHyphenPrefix]-[relic]</li>
@@ -80,13 +80,19 @@
     <li>relic->Reliquie</li>
     <li>relic->Memento</li>
     <li>relic->Fragment</li>
-    <li>relic->Curiosum</li>
+    <li>relic->Kuriosum</li>
+    <li>relicGender->|N|Relikt</li>
+    <li>relicGender->|N|Artefakt</li>
+    <li>relicGender->|F|Reliquie</li>
+    <li>relicGender->|N|Memento</li>
+    <li>relicGender->|N|Fragment</li>
+    <li>relicGender->|N|Kuriosum</li>
     <li>relicComSuffix->relikt</li>
     <li>relicComSuffix->artefakt</li>
     <li>relicComSuffix->reliquie</li>
     <li>relicComSuffix->memento</li>
     <li>relicComSuffix->fragment</li>
-    <li>relicComSuffix->curiosum</li>
+    <li>relicComSuffix->kuriosum</li>
     <li>first(p=5)->[memeHyphenPrefix]</li>
     <li>first->Lang</li>
     <li>first->Himmels</li>

@@ -24,7 +24,7 @@
     <li>festivalName->[festival] [chosenTheme]</li>
     <li>festivalName->{replace: [festivalGender]; "|M|"-"[chosenAdjective]er "; "|F|"-"[chosenAdjective]e "; "|N|"-"[chosenAdjective]es "}</li>
     <li>festivalName->{replace: [keyDeity]'s; "Gott's"-"Gottes"} [festival]</li>
-    <li>festivalName->[festival] {replace: von [keyDeity]; "von Gott"-"Gottes"}</li>
+    <li>festivalName->[festival] {replace: von [keyDeity]; "von Gott"-"Gottes"; "von Christus"-"Christi"; "von Jesus"-"Jesu"}</li>
     <li>festivalName->[festival] {replace: [memeConceptGenGender]; "|M|"-"des "; "|F|"-"der "; "|N|"-"des "}</li>
     <!-- <li>festivalName->[festival] {replace: des [chosenIdeoName]; "des |M|"-"des "; "des |F|"-"der "; "des |N|"-"des "}</li> -->
     <li>festivalName(priority=-1)->[festival]</li>

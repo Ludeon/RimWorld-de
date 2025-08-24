@@ -22,7 +22,7 @@
     <li>r_ritualName->[sacrifice] [chosenTheme]</li>
     <li>r_ritualName->{replace: [sacrificeGender]; "|M|"-"[chosenAdjective]er "; "|F|"-"[chosenAdjective]e "; "|N|"-"[chosenAdjective]es "}</li>
     <li>r_ritualName->{replace: [keyDeity]'s; "Gott's"-"Gottes"} [sacrifice]</li>
-    <li>r_ritualName->[sacrifice] {replace: von [keyDeity]; "von Gott"-"Gottes"}</li>
+    <li>r_ritualName->[sacrifice] {replace: von [keyDeity]; "von Gott"-"Gottes"; "von Christus"-"Christi"; "von Jesus"-"Jesu"}</li>
     <li>r_ritualName->[sacrifice] {replace: [memeConceptGenGender]; "|M|"-"des "; "|F|"-"der "; "|N|"-"des "}</li>
     <!-- <li>r_ritualName->[sacrifice] {replace: des [chosenIdeoName]; "des |M|"-"des "; "des |F|"-"der "; "des |N|"-"des "}</li> -->
     <li>r_ritualName(priority=-1)->[sacrifice]</li>

@@ -24,23 +24,27 @@
     <li>r_ritualName->[ritNoun] [chosenTheme]</li>
     <li>r_ritualName->{replace: [ritNounGender]; "|M|"-"[chosenAdjective]er "; "|F|"-"[chosenAdjective]e "; "|N|"-"[chosenAdjective]es "}</li>
     <li>r_ritualName->{replace: [keyDeity]'s; "Gott's"-"Gottes"} [ritNoun]</li>
-    <li>r_ritualName->[ritNoun] {replace: von [keyDeity]; "von Gott"-"Gottes"}</li>
+    <li>r_ritualName->[ritNoun] {replace: von [keyDeity]; "von Gott"-"Gottes"; "von Christus"-"Christi"; "von Jesus"-"Jesu"}</li>
     <li>r_ritualName->[ritNoun] {replace: [memeConceptGenGender]; "|M|"-"des "; "|F|"-"der "; "|N|"-"des "}</li>
     <li>r_ritualName(priority=-1)->[ritNoun]</li>
     <li>ritNoun->Verstümmelung</li>
-    <li>ritNoun->Beschneidung</li>
-    <li>ritNoun->Hautritzung</li>
-    <li>ritNoun->Narbenritzung</li>
-    <li>ritNoun->Skarifizierung</li>
+    <li>ritNoun->Transformation</li>
+    <li>ritNoun->Deformation</li>
+    <li>ritNoun->Deformierung</li>
+    <li>ritNoun->Disfiguration</li>
+    <li>ritNoun->Mutilation</li>
     <li>ritNounGender->|F|Verstümmelung</li>
-    <li>ritNounGender->|F|Beschneidung</li>
-    <li>ritNounGender->|F|Hautritzung</li>
-    <li>ritNounGender->|F|Narbenritzung</li>
-    <li>ritNounGender->|F|Skarifizierung</li>
+    <li>ritNounGender->|F|Transformation</li>
+    <li>ritNounGender->|F|Deformation</li>
+    <li>ritNounGender->|F|Deformierung</li>
+    <li>ritNounGender->|F|Disfiguration</li>
+    <li>ritNounGender->|F|Mutilation</li>
     <li>ritNounComSuffix->verstümmelung</li>
-    <li>ritNounComSuffix->beschneidung</li>
-    <li>ritNounComSuffix->ritzung</li>
-    <li>ritNounComSuffix->skarifizierung</li>
+    <li>ritNounComSuffix->transformation</li>
+    <li>ritNounComSuffix->deformation</li>
+    <li>ritNounComSuffix->deformierung</li>
+    <li>ritNounComSuffix->disfiguration</li>
+    <li>ritNounComSuffix->mutilation</li>
   </NamerRitualMutilation.rulePack.rulesStrings>
   
 </LanguageData>

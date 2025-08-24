@@ -135,7 +135,7 @@
     <li>r_roleName->{replace: [memeMoralistGender]; "|M|"-"[memeAdjective]er "; "|F|"-"[memeAdjective]e "; "|N|"-"[memeAdjective]es "}</li>
     <li>r_roleName->[memeHyphenPrefix]-[memeMoralist]</li>
     <li>r_roleName->[memeMoralist] [chosenTheme]</li>
-    <li>r_roleName->[memeMoralist] {replace: von [keyDeity]; "von Gott"-"Gottes"}</li>
+    <li>r_roleName->[memeMoralist] {replace: von [keyDeity]; "von Gott"-"Gottes"; "von Christus"-"Christi"; "von Jesus"-"Jesu"}</li>
     <li>r_roleName->[memeMoralist] {replace: [memeConceptGenGender]; "|M|"-"des "; "|F|"-"der "; "|N|"-"des "}</li>
     <!-- <li>r_roleName->[memeMoralist] {replace: des [chosenIdeoName]; "des |M|"-"des "; "des |F|"-"der "; "des |N|"-"des "}</li> -->
     <li>r_roleName->{replace: [memeMoralistGender]; "|M|"-"[chosenAdjective]er "; "|F|"-"[chosenAdjective]e "; "|N|"-"[chosenAdjective]es "}</li>

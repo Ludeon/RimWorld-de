@@ -24,7 +24,7 @@
     <li>r_ritualName->[funeral] [chosenTheme]</li>
     <li>r_ritualName->{replace: [funeralGender]; "|M|"-"[chosenAdjective]er "; "|F|"-"[chosenAdjective]e "; "|N|"-"[chosenAdjective]es "}</li>
     <li>r_ritualName->{replace: [keyDeity]'s; "Gott's"-"Gottes"} [funeral]</li>
-    <li>r_ritualName->[funeral] {replace: von [keyDeity]; "von Gott"-"Gottes"}</li>
+    <li>r_ritualName->[funeral] {replace: von [keyDeity]; "von Gott"-"Gottes"; "von Christus"-"Christi"; "von Jesus"-"Jesu"}</li>
     <li>r_ritualName->[funeral] {replace: [memeConceptGenGender]; "|M|"-"des "; "|F|"-"der "; "|N|"-"des "}</li>
     <!-- <li>r_ritualName->[funeral] {replace: des [chosenIdeoName]; "des |M|"-"des "; "des |F|"-"der "; "des |N|"-"des "}</li> -->
     <li>r_ritualName(priority=-1)->[funeral]</li>

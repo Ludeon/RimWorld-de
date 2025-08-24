@@ -60,7 +60,7 @@
     <li>r_ideoName->[keyDeity]ismus</li>
     <li>r_ideoName->[hyphenPrefix]-[keyDeity]ismus</li>
     <li>r_ideoName->{replace: [keyDeity]'s; "Gott's"-"Gottes"} [creed]</li>
-    <li>r_ideoName->[creed] {replace: von [keyDeity]; "von Gott"-"Gottes"}</li>
+    <li>r_ideoName->[creed] {replace: von [keyDeity]; "von Gott"-"Gottes"; "von Christus"-"Christi"; "von Jesus"-"Jesu"}</li>
     <li>r_ideoName(p=6)->{replace: [packIdeoName]; "|M|"-""; "|F|"-""; "|N|"-""}</li>
     <li>r_ideoName(p=2)->{replace: [packIdeoNameStructure]; "|M|"-""; "|F|"-""; "|N|"-""}</li>
     <li>r_ideoName(p=2,forcePrefix==False)->[hyphenPrefix]-{replace: [packIdeoName]; "|M|"-""; "|F|"-""; "|N|"-""}</li>
@@ -83,14 +83,17 @@
     <li>creedGender->[genericCreedGender]</li>
     <li>genericCreed->Kredo</li>
     <li>genericCreed->Doktrin</li>
+    <li>genericCreed->Lehre</li>
     <li>genericCreed->Weg</li>
     <li>genericCreed->Pfad</li>
     <li>genericCreedComSuffix->kredo</li>
     <li>genericCreedComSuffix->doktrin</li>
+    <li>genericCreedComSuffix->lehre</li>
     <li>genericCreedComSuffix->weg</li>
     <li>genericCreedComSuffix->pfad</li>
     <li>genericCreedGender->|N|Kredo</li>
     <li>genericCreedGender->|F|Doktrin</li>
+    <li>genericCreedGender->|F|Lehre</li>
     <li>genericCreedGender->|M|Weg</li>
     <li>genericCreedGender->|M|Pfad</li>
     <li>hyphenPrefix->[globalHyphenPrefix]</li>
@@ -98,8 +101,11 @@
     <li>globalHyphenPrefix(p=4)->neo</li>
     <li>globalHyphenPrefix(p=2)->post</li>
     <li>globalHyphenPrefix->nova</li>
-    <li>globalHyphenPrefix->archäo</li>
+    <li>globalHyphenPrefix->retro</li>
     <li>globalHyphenPrefix->hyper</li>
+    <li>globalHyphenPrefix->meta</li>
+    <li>globalHyphenPrefix->para</li>
+    <li>globalHyphenPrefix->pseudo</li>
   </NamerIdeoGlobal.rulePack.rulesStrings>
   
 </LanguageData>
