@@ -12,9 +12,10 @@
   -->
   <LeaderTitleMaker_Corunan.rulePack.rulesStrings>
     <li>memeLeaderNoun(priority=1)->[cultureLeaderNoun]</li>
+    <li>memeLeaderNounGender(priority=1)->[cultureLeaderNounGender]</li>
     <li>memeLeaderNounComSuffix(priority=1)->[cultureLeaderNounComSuffix]</li>
     <li>cultureLeaderTitle->{replace: [cultureLeaderNounGender]; "|M|"-"[cultureLeaderAdjective]er "; "|F|"-"[cultureLeaderAdjective]e "; "|N|"-"[cultureLeaderAdjective]es "}</li>
-    <li>cultureLeaderTitle->{replace: [cultureLeaderPrefix][cultureLeaderNounComSuffix]; "Haupthäuptling"-"Häuptling"}</li>
+    <li>cultureLeaderTitle->{replace: [cultureLeaderPrefix][cultureLeaderNounComSuffix]; "Haupthäuptling"-"Großhäuptling"; "Hauptstammeshäuptling"-"Großstammeshäuptling"}</li>
     <li>cultureLeaderAdjective->erst</li>
     <li>cultureLeaderAdjective->oberst</li>
     <li>cultureLeaderPrefix->Premier</li>
@@ -24,11 +25,23 @@
     <li>cultureLeaderPrefix->Haupt</li>
     <li>cultureLeaderPrefix->Ober</li>
     <li>cultureLeaderNoun->Häuptling</li>
-    <li>cultureLeaderNoun->Stammesführer</li>
+    <li>cultureLeaderNoun->Ältester</li>
+    <li>cultureLeaderNoun->Krieger</li>
+    <li>cultureLeaderNoun->Stammeshäuptling</li>
+    <li>cultureLeaderNoun->Stammesältester</li>
+    <li>cultureLeaderNoun->Stammeskrieger</li>
     <li>cultureLeaderNounGender->|M|Häuptling</li>
-    <li>cultureLeaderNounGender->|M|Stammesführer</li>
+    <li>cultureLeaderNounGender->|M|Ältester</li>
+    <li>cultureLeaderNounGender->|M|Krieger</li>
+    <li>cultureLeaderNounGender->|M|Stammeshäuptling</li>
+    <li>cultureLeaderNounGender->|M|Stammesältester</li>
+    <li>cultureLeaderNounGender->|M|Stammeskrieger</li>
     <li>cultureLeaderNounComSuffix->häuptling</li>
-    <li>cultureLeaderNounComSuffix->stammesführer</li>
+    <li>cultureLeaderNounComSuffix->ältester</li>
+    <li>cultureLeaderNounComSuffix->krieger</li>
+    <li>cultureLeaderNounComSuffix->stammeshäuptling</li>
+    <li>cultureLeaderNounComSuffix->stammesältester</li>
+    <li>cultureLeaderNounComSuffix->stammeskrieger</li>
   </LeaderTitleMaker_Corunan.rulePack.rulesStrings>
   
   <!-- EN:
@@ -75,9 +88,9 @@
     <li>r_leaderTitle(p=3)->{replace: [memeLeaderNounGender]; "|M|"-"[memeLeaderAdjective]er "; "|F|"-"[memeLeaderAdjective]e "; "|N|"-"[memeLeaderAdjective]es "}</li>
     <li>r_leaderTitle(p=1.5)->{replace: [memeLeaderNounGender]; "|M|"-"[cultureLeaderAdjective]er "; "|F|"-"[cultureLeaderAdjective]e "; "|N|"-"[cultureLeaderAdjective]es "}</li>
     <li>r_leaderTitle(p=1)->{replace: [cultureLeaderNounGender]; "|M|"-"[memeLeaderAdjective]er "; "|F|"-"[memeLeaderAdjective]e "; "|N|"-"[memeLeaderAdjective]es "}</li>
-    <li>r_leaderTitle(p=6)->{replace: [memeLeaderPrefix][memeLeaderNounComSuffix]; "Blutblut"-"Blut"; "Sternenstern"-"Stern"}</li>
+    <li>r_leaderTitle(p=6)->{replace: [memeLeaderPrefix][memeLeaderNounComSuffix]; "Blutblut"-"Blut"; "Sternenstern"-"Stern"; "Kriegskrieger"-"erster Krieger"}</li>
     <li>r_leaderTitle(p=3)->{replace: [cultureLeaderPrefix][memeLeaderNounComSuffix]; "Haupthaupt"-"Oberhaupt"}</li>
-    <li>r_leaderTitle(p=1)->[memeLeaderPrefix][cultureLeaderNounComSuffix]</li>
+    <li>r_leaderTitle(p=1)->{replace: [memeLeaderPrefix][cultureLeaderNounComSuffix]; "Kriegskrieger"-"erster Krieger"}</li>
     <li>r_leaderTitle(p=1)->[cultureLeaderTitle]</li>
     <li>r_leaderTitle(priority=-1)->[memeLeaderNoun]</li>
     <li>r_leaderTitle(priority=-1)->[cultureLeaderNoun]</li>
@@ -146,21 +159,34 @@
     <li>cultureLeaderNoun->Rat</li>
     <li>cultureLeaderNoun->Anführer</li>
     <li>cultureLeaderNoun->Minister</li>
+    <li>cultureLeaderNoun->Senator</li>
     <li>cultureLeaderNoun->Leiter</li>
     <li>cultureLeaderNoun->Lenker</li>
     <li>cultureLeaderNoun->Navigator</li>
+    <li>cultureLeaderNoun->Koordinator</li>
+    <li>cultureLeaderNoun->Kanzler</li>
+    <li>cultureLeaderNoun->Supervisor</li>
+    <li>cultureLeaderNoun->Vorsteher</li>
     <li>cultureLeaderNounGender->|M|Rat</li>
     <li>cultureLeaderNounGender->|M|Anführer</li>
     <li>cultureLeaderNounGender->|M|Minister</li>
+    <li>cultureLeaderNounGender->|M|Senator</li>
     <li>cultureLeaderNounGender->|M|Leiter</li>
     <li>cultureLeaderNounGender->|M|Lenker</li>
     <li>cultureLeaderNounGender->|M|Navigator</li>
-    <li>cultureLeaderNounComSuffix->rat</li>
+    <li>cultureLeaderNounGender->|M|Koordinator</li>
+    <li>cultureLeaderNounGender->|M|Kanzler</li>
+    <li>cultureLeaderNounGender->|M|Supervisor</li>
+    <li>cultureLeaderNounGender->|M|Vorsteher</li>
     <li>cultureLeaderNounComSuffix->führer</li>
     <li>cultureLeaderNounComSuffix->minister</li>
-    <li>cultureLeaderNounComSuffix->leiter</li>
+    <li>cultureLeaderNounComSuffix->senator</li>
     <li>cultureLeaderNounComSuffix->lenker</li>
     <li>cultureLeaderNounComSuffix->navigator</li>
+    <li>cultureLeaderNounComSuffix->koordinator</li>
+    <li>cultureLeaderNounComSuffix->kanzler</li>
+    <li>cultureLeaderNounComSuffix->visor</li>
+    <li>cultureLeaderNounComSuffix->vorsteher</li>
   </LeaderTitleMaker_Rustican.rulePack.rulesStrings>
   
   <!-- EN:
