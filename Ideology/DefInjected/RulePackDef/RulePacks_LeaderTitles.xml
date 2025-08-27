@@ -18,6 +18,8 @@
     <li>cultureLeaderTitle->{replace: [cultureLeaderPrefix][cultureLeaderNounComSuffix]; "Haupthäuptling"-"Großhäuptling"; "Hauptstammeshäuptling"-"Großstammeshäuptling"}</li>
     <li>cultureLeaderAdjective->erst</li>
     <li>cultureLeaderAdjective->oberst</li>
+    <li>cultureLeaderAdjective->groß</li>
+    <li>cultureLeaderAdjective->allmächtig</li>
     <li>cultureLeaderPrefix->Premier</li>
     <li>cultureLeaderPrefix->Groß</li>
     <li>cultureLeaderPrefix->Hoch</li>
@@ -57,6 +59,8 @@
   <LeaderTitleMaker_GenericContent.rulePack.rulesStrings>
     <li>cultureLeaderAdjective->erst</li>
     <li>cultureLeaderAdjective->oberst</li>
+    <li>cultureLeaderAdjective->groß</li>
+    <li>cultureLeaderAdjective->allmächtig</li>
     <li>cultureLeaderPrefix->Premier</li>
     <li>cultureLeaderPrefix->Groß</li>
     <li>cultureLeaderPrefix->Hoch</li>
@@ -68,14 +72,31 @@
     <li>cultureLeaderNoun->Direktor</li>
     <li>cultureLeaderNoun->Gouverneur</li>
     <li>cultureLeaderNoun->Anführer</li>
+    <li>cultureLeaderNoun->Oberhaupt</li>
+    <li>cultureLeaderNoun->Herrscher</li>
+    <li>cultureLeaderNoun->Regent</li>
+    <li>cultureLeaderNoun->Potentat</li>
+    <li>cultureLeaderNoun->Tribun</li>
+    <li>cultureLeaderNoun->Präfekt</li>
     <li>cultureLeaderNounGender->|M|Präsident</li>
     <li>cultureLeaderNounGender->|M|Direktor</li>
     <li>cultureLeaderNounGender->|M|Gouverneur</li>
     <li>cultureLeaderNounGender->|M|Anführer</li>
+    <li>cultureLeaderNounGender->|N|Oberhaupt</li>
+    <li>cultureLeaderNounGender->|M|Herrscher</li>
+    <li>cultureLeaderNounGender->|M|Regent</li>
+    <li>cultureLeaderNounGender->|M|Potentat</li>
+    <li>cultureLeaderNounGender->|M|Tribun</li>
+    <li>cultureLeaderNounGender->|M|Präfekt</li>
     <li>cultureLeaderNounComSuffix->präsident</li>
     <li>cultureLeaderNounComSuffix->direktor</li>
     <li>cultureLeaderNounComSuffix->gouverneur</li>
     <li>cultureLeaderNounComSuffix->führer</li>
+    <li>cultureLeaderNounComSuffix->herrscher</li>
+    <li>cultureLeaderNounComSuffix->regent</li>
+    <li>cultureLeaderNounComSuffix->potentat</li>
+    <li>cultureLeaderNounComSuffix->tribun</li>
+    <li>cultureLeaderNounComSuffix->präfekt</li>
   </LeaderTitleMaker_GenericContent.rulePack.rulesStrings>
   
   <!-- EN:
@@ -85,13 +106,13 @@
     <li>r_leaderTitle(p=1)->[cultureLeaderTitle]</li>
   -->
   <LeaderTitleMaker_GlobalStructure.rulePack.rulesStrings>
-    <li>r_leaderTitle(p=3)->{replace: [memeLeaderNounGender]; "|M|"-"[memeLeaderAdjective]er "; "|F|"-"[memeLeaderAdjective]e "; "|N|"-"[memeLeaderAdjective]es "}</li>
-    <li>r_leaderTitle(p=1.5)->{replace: [memeLeaderNounGender]; "|M|"-"[cultureLeaderAdjective]er "; "|F|"-"[cultureLeaderAdjective]e "; "|N|"-"[cultureLeaderAdjective]es "}</li>
-    <li>r_leaderTitle(p=1)->{replace: [cultureLeaderNounGender]; "|M|"-"[memeLeaderAdjective]er "; "|F|"-"[memeLeaderAdjective]e "; "|N|"-"[memeLeaderAdjective]es "}</li>
-    <li>r_leaderTitle(p=6)->{replace: [memeLeaderPrefix][memeLeaderNounComSuffix]; "Blutblut"-"Blut"; "Sternenstern"-"Stern"; "Kriegskrieger"-"erster Krieger"}</li>
-    <li>r_leaderTitle(p=3)->{replace: [cultureLeaderPrefix][memeLeaderNounComSuffix]; "Haupthaupt"-"Oberhaupt"}</li>
-    <li>r_leaderTitle(p=1)->{replace: [memeLeaderPrefix][cultureLeaderNounComSuffix]; "Kriegskrieger"-"erster Krieger"}</li>
-    <li>r_leaderTitle(p=1)->[cultureLeaderTitle]</li>
+    <li>r_leaderTitle(p=0.25)->{replace: [memeLeaderNounGender]; "|M|"-"[memeLeaderAdjective]er "; "|F|"-"[memeLeaderAdjective]e "; "|N|"-"[memeLeaderAdjective]es "}</li>
+    <li>r_leaderTitle(p=3)->{replace: [memeLeaderNounGender]; "|M|"-"[cultureLeaderAdjective]er "; "|F|"-"[cultureLeaderAdjective]e "; "|N|"-"[cultureLeaderAdjective]es "}</li>
+    <li>r_leaderTitle(p=1.5)->{replace: [cultureLeaderNounGender]; "|M|"-"[memeLeaderAdjective]er "; "|F|"-"[memeLeaderAdjective]e "; "|N|"-"[memeLeaderAdjective]es "}</li>
+    <li>r_leaderTitle(p=0.5)->{replace: [memeLeaderPrefix][memeLeaderNounComSuffix]; "Blutblut"-"Blut"; "Sternenstern"-"Stern"; "Kriegskrieger"-"erster Krieger"}</li>
+    <li>r_leaderTitle(p=6)->{replace: [cultureLeaderPrefix][memeLeaderNounComSuffix]; "Haupthäuptling"-"Großhäuptling"; "Hauptstammeshäuptling"-"Großstammeshäuptling"}</li>
+    <li>r_leaderTitle(p=3)->{replace: [memeLeaderPrefix][cultureLeaderNounComSuffix]; "Kriegskrieger"-"erster Krieger"}</li>
+    <li>r_leaderTitle(p=3)->[cultureLeaderTitle]</li>
     <li>r_leaderTitle(priority=-1)->[memeLeaderNoun]</li>
     <li>r_leaderTitle(priority=-1)->[cultureLeaderNoun]</li>
   </LeaderTitleMaker_GlobalStructure.rulePack.rulesStrings>
@@ -115,22 +136,29 @@
     <li>cultureLeaderTitle->[cultureLeaderPrefix][cultureLeaderNounComSuffix]</li>
     <li>cultureLeaderAdjective->erst</li>
     <li>cultureLeaderAdjective->oberst</li>
+    <li>cultureLeaderAdjective->eisern</li>
+    <li>cultureLeaderAdjective->groß</li>
+    <li>cultureLeaderAdjective->allmächtig</li>
     <li>cultureLeaderPrefix->General</li>
     <li>cultureLeaderPrefix->Groß</li>
     <li>cultureLeaderPrefix->Erz</li>
     <li>cultureLeaderPrefix->Haupt</li>
     <li>cultureLeaderPrefix->Ober</li>
     <li>cultureLeaderNoun->Boss</li>
-    <li>cultureLeaderNoun->Schurke</li>
     <li>cultureLeaderNoun->Babo</li>
     <li>cultureLeaderNoun->Chef</li>
+    <li>cultureLeaderNoun->Obermotz</li>
+    <li>cultureLeaderNoun->Obermacker</li>
     <li>cultureLeaderNounGender->|M|Boss</li>
-    <li>cultureLeaderNounGender->|M|Schurke</li>
     <li>cultureLeaderNounGender->|M|Babo</li>
     <li>cultureLeaderNounGender->|M|Chef</li>
+    <li>cultureLeaderNounGender->|M|Obermotz</li>
+    <li>cultureLeaderNounGender->|M|Obermacker</li>
     <li>cultureLeaderNounComSuffix->boss</li>
-    <li>cultureLeaderNounComSuffix->schurke</li>
-    <li>cultureLeaderNounComSuffix->-Babo</li>
+    <li>cultureLeaderNounComSuffix(p=0.2)->schurke</li>
+    <li>cultureLeaderNounComSuffix(p=0.2)->halunke</li>
+    <li>cultureLeaderNounComSuffix(p=0.2)->ganove</li>
+    <li>cultureLeaderNounComSuffix->babo</li>
     <li>cultureLeaderNounComSuffix->chef</li>
   </LeaderTitleMaker_Kriminul.rulePack.rulesStrings>
   
@@ -149,6 +177,8 @@
     <li>cultureLeaderTitle->[cultureLeaderPrefix][cultureLeaderNounComSuffix]</li>
     <li>cultureLeaderAdjective->oberst</li>
     <li>cultureLeaderAdjective->erst</li>
+    <li>cultureLeaderAdjective->groß</li>
+    <li>cultureLeaderAdjective->allmächtig</li>
     <li>cultureLeaderPrefix->Premier</li>
     <li>cultureLeaderPrefix->Groß</li>
     <li>cultureLeaderPrefix->Hoch</li>
@@ -167,6 +197,8 @@
     <li>cultureLeaderNoun->Kanzler</li>
     <li>cultureLeaderNoun->Supervisor</li>
     <li>cultureLeaderNoun->Vorsteher</li>
+    <li>cultureLeaderNoun->Regent</li>
+    <li>cultureLeaderNoun->Potentat</li>
     <li>cultureLeaderNounGender->|M|Rat</li>
     <li>cultureLeaderNounGender->|M|Anführer</li>
     <li>cultureLeaderNounGender->|M|Minister</li>
@@ -178,6 +210,8 @@
     <li>cultureLeaderNounGender->|M|Kanzler</li>
     <li>cultureLeaderNounGender->|M|Supervisor</li>
     <li>cultureLeaderNounGender->|M|Vorsteher</li>
+    <li>cultureLeaderNounGender->|M|Regent</li>
+    <li>cultureLeaderNounGender->|M|Potentat</li>
     <li>cultureLeaderNounComSuffix->führer</li>
     <li>cultureLeaderNounComSuffix->minister</li>
     <li>cultureLeaderNounComSuffix->senator</li>
@@ -187,6 +221,8 @@
     <li>cultureLeaderNounComSuffix->kanzler</li>
     <li>cultureLeaderNounComSuffix->visor</li>
     <li>cultureLeaderNounComSuffix->vorsteher</li>
+    <li>cultureLeaderNounComSuffix->regent</li>
+    <li>cultureLeaderNounComSuffix->potentat</li>
   </LeaderTitleMaker_Rustican.rulePack.rulesStrings>
   
   <!-- EN:
