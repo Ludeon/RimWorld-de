@@ -106,6 +106,11 @@
     <li>memeCreedGender->|F|Schar</li>
     <li>memeCreedGender->|F|Rotte</li>
     <li>memeCreedGender->|F|Meute</li>
+    <li>memeCreedGenderComSuffix->|N|rudel</li>
+    <li>memeCreedGenderComSuffix->|F|herde</li>
+    <li>memeCreedGenderComSuffix->|F|schar</li>
+    <li>memeCreedGenderComSuffix->|F|rotte</li>
+    <li>memeCreedGenderComSuffix->|F|meute</li>
     <li>memeConcept->Tiere</li>
     <li>memeConceptGender->|F|Tiere</li>
     <li>memeConceptGenGender->|F|Tiere</li>
@@ -220,6 +225,8 @@
     <li>memeCreedComSuffix->kult</li>
     <li>memeCreedGender->|F|Sicht</li>
     <li>memeCreedGender->|M|Kult</li>
+    <li>memeCreedGenderComSuffix->|F|sicht</li>
+    <li>memeCreedGenderComSuffix->|M|kult</li>
     <li>memeConcept->Blindheit</li>
     <li>memeConcept->Sehen</li>
     <li>memeConcept->Sicht</li>
@@ -331,6 +338,9 @@
     <li>memeCreedGender->|F|Zähne</li>
     <li>memeCreedGender->|N|Schlachthaus</li>
     <li>memeCreedGender->|M|Kult</li>
+    <li>memeCreedGenderComSuffix->|F|fresser</li>
+    <li>memeCreedGenderComSuffix->|F|zähne</li>
+    <li>memeCreedGenderComSuffix->|M|kult</li>
     <li>memeHyphenPrefix->phago</li>
     <li>memeHyphenPrefix->andro</li>
     <li>memeHyphenPrefix->hämo</li>
@@ -675,6 +685,8 @@
     <li>memeCreedComSuffix->feier</li>
     <li>memeCreedGender->|F|Party</li>
     <li>memeCreedGender->|F|Feier</li>
+    <li>memeCreedGenderComSuffix->|F|party</li>
+    <li>memeCreedGenderComSuffix->|F|feier</li>
     <li>memeAdjective->angeheitert</li>
     <li>memeAdjective->berauscht</li>
     <li>memeAdjective->bekifft</li>
@@ -963,6 +975,10 @@
     <li>memeCreedGender->|F|Kammer</li>
     <li>memeCreedGender->|N|Verlies</li>
     <li>memeCreedGender->|M|Kerker</li>
+    <li>memeCreedGenderComSuffix->|N|haus</li>
+    <li>memeCreedGenderComSuffix->|F|kammer</li>
+    <li>memeCreedGenderComSuffix->|N|verlies</li>
+    <li>memeCreedGenderComSuffix->|M|kerker</li>
     <li>memeHyphenPrefix->nozio</li>
     <li>memeHyphenPrefix->algo</li>
     <li>memeHyphenPrefix->patho</li>
@@ -1544,6 +1560,10 @@
     <li>memeCreedGender->|F|Akademie</li>
     <li>memeCreedGender->|F|Universität</li>
     <li>memeCreedGender->|F|Philosophie</li>
+    <li>memeCreedGenderComSuffix->|F|schule</li>
+    <li>memeCreedGenderComSuffix->|F|akademie</li>
+    <li>memeCreedGenderComSuffix->|F|universität</li>
+    <li>memeCreedGenderComSuffix->|F|philosophie</li>
     <li>memeHyphenPrefix->techno</li>
     <li>memeHyphenPrefix->tech</li>
     <li>memeHyphenPrefix->cyber</li>
@@ -1683,7 +1703,7 @@
     <li>episode(uses=1,tag=meme_TreeConnection)  ->[deity0_name_s] Wälder erneuern die Luft für die Gläubigen, liefern das Holz für den Bau ihrer Häuser und bieten reichlich Nahrung.</li>
     <li>intro(tag=meme_TreeConnection)           ->Als die ursprünglichen Arboristen [place_summary_acc_def] [place_name] besiedelten, schufen sie einen heiligen [TreeTypeCon]hain, den sie nutzten, um [deity0_name] – auch [deity0_type] genannt – zu verehren.</li>
     <li>conflict(tag=meme_TreeConnection)        ->[ein_gieriger_Anfuehrer] rodete zahlreiche Wälder, um Platz für [foeLeader_possessive]e Farmen und Fabriken zu schaffen. Die [members_nom] weinten um die ermordeten Bäume.</li>
-    <li>founderJoin(tag=meme_TreeConnection)     ->[der_Prophet] [founderName] wurde wie durch ein Wunder in einem Baum auf [place_name] geboren und später von [founder_possessive]en Eltern in den Ästen einer alten [TreeType] entdeckt.</li>
+    <li>founderJoin(tag=meme_TreeConnection)     ->[der_Prophet] [founderName] wurde wie durch ein Wunder in einem Baum auf [place_name] geboren und später von [founder_possessive]en Eltern in den Ästen [eines_alten_Baumes] entdeckt.</li>
     <li>victory(tag=meme_TreeConnection)         ->[founderName] fand [den_Anfuehrer] schlafend in [place_powerCenter_dat_def] und legte eine Eichel auf [foeLeader_possessive]e Brust. Mit der wilden Kraft von [deity0_name] begann sie zu keimen. Ihre Wurzeln schlängelten sich durch den Körper des Baummörders, um Rache zu üben.</li>
     <li>setup(tag=meme_TreeConnection)           ->In einer Welt, der es an Tiefe und Bedeutung fehlte, meditierte [founderName] in einem Wald, stellte eine Verbindung zu den Ästen, Wurzeln und Blättern her und gründete unsere Bewegung.</li>
     <li>story(uses=1,tag=meme_TreeConnection)    ->[founderName] brachte die Erschöpften in den Wald, damit sie sich im Schatten ausruhen, die frische Luft einatmen und sich erholen konnten.</li>
@@ -1703,6 +1723,8 @@
     <li>ein_gieriger_Anfuehrer(priority=-1)->ein gieriger [foeLeader]</li>
     <li>der_Prophet(founder_gender!=Female)->der Prophet</li>
     <li>der_Prophet(founder_gender==Female)->die Prophetin</li>
+    <li>eines_alten_Baumes(p=0.3)->eines alten [TreeTypeMasGen]</li>
+    <li>eines_alten_Baumes(p=0.7)->einer alten [TreeTypeFemGen]</li>
   </TreeConnection.descriptionMaker.rules.rulesStrings>
   <!-- EN:
     <li>memeCreed->root</li>
@@ -1728,36 +1750,51 @@
   <TreeConnection.generalRules.rulesStrings>
     <li>memeCreed->Wurzel</li>
     <li>memeCreed->Blatt</li>
-    <li>memeCreed->Liane</li>
+    <li>memeCreed->Zweig</li>
     <li>memeCreed->Lichtung</li>
     <li>memeCreed->Wald</li>
+    <li>memeCreed->Hain</li>
     <li>memeCreedComSuffix->wurzel</li>
-    <li>memeCreedComSuffix->blatt</li>
-    <li>memeCreedComSuffix->liane</li>
+    <li>memeCreedComSuffix->zweig</li>
     <li>memeCreedComSuffix->lichtung</li>
     <li>memeCreedComSuffix->wald</li>
+    <li>memeCreedComSuffix->hain</li>
     <li>memeCreedGender->|F|Wurzel</li>
     <li>memeCreedGender->|N|Blatt</li>
-    <li>memeCreedGender->|F|Liane</li>
+    <li>memeCreedGender->|M|Zweig</li>
     <li>memeCreedGender->|F|Lichtung</li>
     <li>memeCreedGender->|M|Wald</li>
+    <li>memeCreedGender->|M|Hain</li>
+    <li>memeCreedGenderComSuffix->|F|wurzel</li>
+    <li>memeCreedGenderComSuffix->|M|zweig</li>
+    <li>memeCreedGenderComSuffix->|F|lichtung</li>
+    <li>memeCreedGenderComSuffix->|M|wald</li>
+    <li>memeCreedGenderComSuffix->|M|hain</li>
     <li>memeConcept->Bäume</li>
+    <li>memeConcept->[TreeTypes]</li>
     <li>memeConcept->Wälder</li>
     <li>memeConceptGender->|F|Bäume</li>
+    <li>memeConceptGender->|F|[TreeTypes]</li>
     <li>memeConceptGender->|F|Wälder</li>
     <li>memeConceptGenGender->|F|Bäume</li>
+    <li>memeConceptGenGender->|F|[TreeTypes]</li>
     <li>memeConceptGenGender->|F|Wälder</li>
-    <li>memeAdjective->stämmig</li>
-    <li>memeAdjective->rau</li>
+    <li>memeAdjective->blättrig</li>
+    <li>memeAdjective->blühend</li>
+    <li>memeAdjective->knorrig</li>
+    <li>memeAdjective->grün</li>
+    <li>memeComPrefix->[TreeTypeCon]</li>
     <li>memeHyphenPrefix->silva</li>
     <li>memeHyphenPrefix->arbo</li>
     <li>memeHyphenPrefix->xylo</li>
     <li>memeHyphenPrefix->dendro</li>
     <li>memeLeaderNoun->Baum[keeper]</li>
+    <li>memeLeaderNoun->[TreeTypeCon][keeper]</li>
     <li>memeLeaderNoun->Hain[keeper]</li>
     <li>memeLeaderNoun->Arborist</li>
     <li>memeLeaderNoun->Druide</li>
     <li>memeLeaderNounGender->|M|Baum[keeper]</li>
+    <li>memeLeaderNounGender->|M|[TreeTypeCon][keeper]</li>
     <li>memeLeaderNounGender->|M|Hain[keeper]</li>
     <li>memeLeaderNounGender->|M|Arborist</li>
     <li>memeLeaderNounGender->|M|Druide</li>
@@ -1767,7 +1804,11 @@
     <li>memeLeaderNounComSuffix->druide</li>
     <li>memeLeaderAdjective->grün</li>
     <li>memeLeaderPrefix->Wurzel</li>
-    <li>memeLeaderPrefix->Kronen</li>
+    <li>memeLeaderPrefix->Wipfel</li>
+    <li>memeLeaderPrefix->Baum</li>
+    <li>memeLeaderPrefix->Wald</li>
+    <li>memeLeaderPrefix->Hain</li>
+    <li>memeLeaderPrefix->[TreeTypeCon]</li>
     <li>memeMoralist->Baumsprecher</li>
     <li>memeMoralistGender->|M|Baumsprecher</li>
     <li>keeper->wächter</li>
@@ -1860,6 +1901,9 @@
     <li>memeCreedGender->|F|Höhle</li>
     <li>memeCreedGender->|M|Bunker</li>
     <li>memeCreedGender->|M|Schacht</li>
+    <li>memeCreedGenderComSuffix->|F|höhle</li>
+    <li>memeCreedGenderComSuffix->|M|bunker</li>
+    <li>memeCreedGenderComSuffix->|M|schacht</li>
     <li>memeAdjective->tief</li>
     <li>memeAdjective->unterirdisch</li>
     <li>memeComPrefix->Tiefen</li>

@@ -141,8 +141,8 @@
     <li>victory(tag=meme_NaturePrimacy)         ->[founderName] marschierte {replace: zu [place_powerCenter_dat_def]; "zu dem "-"zum "; "zu der "-"zur "}, mit den [members_dat] zu [founder_possessive]er Rechten und wilden Tieren zu [founder_possessive]er Linken. Gemeinsam kämpften sie gegen [den_Anfuehrer] und [foeLeader_possessive]e [place_foeSoldiers_nom_def] – und siegten.</li>
     <li>setup(tag=meme_NaturePrimacy)           ->In einem dunklen Land fällten böse Menschen die Bäume und gruben den Boden um, um ihre Gier zu befriedigen. [founderName] gründete eine rechtschaffene Bewegung, um die Maschinen zu zerstören und im Einklang mit der Natur zu leben.</li>
     <li>story(uses=1,tag=meme_NaturePrimacy)    ->Wir haben gelernt, dass das ewige Wachstum der Menschheit ein Pfad zur Hölle ist; wir müssen in der Natur leben, anstatt sie auszubeuten.</li>
-    <li>lessonIntro(tag=meme_NaturePrimacy)         ->Niemand kann einen Sonnenaufgang erleben, in die Augen [eines_Tieres] schauen oder unter einer mächtigen [TreeType] stehen und nicht erkennen, dass</li>
-    <li>lesson(tag=meme_NaturePrimacy)              ->die Tiere und Pflanzen dieses Universum schon lange vor uns besessen haben – wir sind nur auf der Durchreise</li>
+    <li>lessonIntro(tag=meme_NaturePrimacy)         ->Niemand kann einen Sonnenaufgang erleben, in die Augen [eines_Tieres] schauen oder unter [einem_maechtigen_Baum] stehen und nicht erkennen, dass</li>
+    <li>lesson(tag=meme_NaturePrimacy)              ->dieses Universum schon lange vor unserer Zeit den Tieren und Pflanzen gehörte – wir sind nur auf der Durchreise</li>
     <li>lessonReinforcement(tag=meme_NaturePrimacy) ->Alle Tiere, mit denen ich gesprochen habe, scheinen das zu verstehen.</li>
     <li>archistBasis(tag=meme_NaturePrimacy)    ->Archotechs sind zwar aus unseren Maschinen entstanden, aber im eigentlichen Sinne sind sie natürliche Entitäten, die wir nicht künstlich erschaffen können.</li>
     <li>archistFact(tag=meme_NaturePrimacy)     ->Archotechs repräsentieren den jüngsten Versuch des Universums, sich selbst zu verstehen. Die Natur ist Teil dieses Prozesses.</li>
@@ -155,6 +155,8 @@
     <li>ein_gieriger_Anfuehrer(foeLeader_gender!=Female)->ein gieriger [place_foeLeader_mas_nom_indef]</li>
     <li>ein_gieriger_Anfuehrer(foeLeader_gender==Female)->eine gierige [place_foeLeader_fem_nom_indef]</li>
     <li>ein_gieriger_Anfuehrer(priority=-1)->ein gieriger [foeLeader]</li>
+    <li>einem_maechtigen_Baum(p=0.3)->einem mächtigen [TreeTypeMasDat]</li>
+    <li>einem_maechtigen_Baum(p=0.7)->einer mächtigen [TreeTypeFemDat]</li>
   </NaturePrimacy.descriptionMaker.rules.rulesStrings>
   <!-- EN:
     <li>memeAdjective->natural</li>
@@ -183,6 +185,9 @@
     <li>memeCreedGender->|M|Bau</li>
     <li>memeCreedGender->|M|Garten</li>
     <li>memeCreedGender->|F|Wiese</li>
+    <li>memeCreedGenderComSuffix->|M|bau</li>
+    <li>memeCreedGenderComSuffix->|M|garten</li>
+    <li>memeCreedGenderComSuffix->|F|wiese</li>
     <li>memeConcept->Natur</li>
     <li>memeConceptGender->|F|Natur</li>
     <li>memeConceptGenGender->|F|Natur</li>

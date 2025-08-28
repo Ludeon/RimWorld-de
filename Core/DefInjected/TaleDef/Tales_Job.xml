@@ -388,7 +388,7 @@
   -->
   <Meditated.rulePack.rulesStrings>
     <li>tale_noun->[PAWN_nameDef] meditierte</li>
-    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] unter einer [TreeType] sitzt [circumstance_group]</li>
+    <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] unter [TreeTypeDat_indef] sitzt [circumstance_group]</li>
     <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] still da sitzt [circumstance_group]</li>
     <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] in die Ferne blickt [circumstance_group]</li>
     <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [PAWN_possessive]e Augen schließt [circumstance_group]</li>
@@ -401,6 +401,9 @@
     <li>desc_sentence->[PAWN_pronoun] ist von [Quantity_adjphrase_Dat] [AnimalsDat] umgeben.</li>
     <li>desc_sentence->[Quantity_adjphrase] [Animals] rasten friedlich.</li>
     <li>desc_sentence->[Quantity_adjphrase] [Enemies] sind von der Szene in Ehrfurcht erstarrt.</li>
+    <!-- gender-specific -->
+    <li>TreeTypeDat_indef(p=0.3)->einem [TreeTypeMasDat]</li>
+    <li>TreeTypeDat_indef(p=0.7)->einer [TreeTypeFemDat]</li>
   </Meditated.rulePack.rulesStrings>
   
   <!-- EN: mined valuable -->

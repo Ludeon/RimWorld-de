@@ -146,7 +146,9 @@
     <li>romantic_noun_Fem->Sonne</li>
     <li>romantic_noun_Fem->Sternschnuppe</li>
     <li>romantic_noun_Fem->Oase</li>
-    <li>romantic_noun_Fem->[TreeType]</li>
+    <li>romantic_noun_Fem->[TreeTypeFemDat]</li>
+    <li>romantic_noun_Fem->[TerrainFeatureFemDat]</li>
+    <li>romantic_noun_Fem->[NaturalObjectFemDat]</li>
     <li>romantic_noun_Mas_Neu->Polarlicht</li>
     <li>romantic_noun_Mas_Neu->Frühling</li>
     <li>romantic_noun_Mas_Neu->Fluss</li>
@@ -154,8 +156,11 @@
     <li>romantic_noun_Mas_Neu->Mond</li>
     <li>romantic_noun_Mas_Neu->Haus</li>
     <li>romantic_noun_Mas_Neu->Engel</li>
-    <li>romantic_noun->[TerrainFeature]</li>
-    <li>romantic_noun->[NaturalObject]</li>
+    <li>romantic_noun_Mas_Neu->[TreeTypeMasDat]</li>
+    <li>romantic_noun_Mas_Neu(p=0.5)->[TerrainFeatureMasDat]</li>
+    <li>romantic_noun_Mas_Neu(p=0.5)->[TerrainFeatureNeuDat]</li>
+    <li>romantic_noun_Mas_Neu(p=0.5)->[NaturalObjectMasDat]</li>
+    <li>romantic_noun_Mas_Neu(p=0.5)->[NaturalObjectNeuDat]</li>
     <!-- gender-specific -->
     <li>en_Dingen->en [PersonalCharacteristicsDat]</li>
     <li>en_Dingen->em [PersonalCharacteristicMas]</li>

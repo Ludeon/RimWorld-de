@@ -66,10 +66,11 @@
     <li>r_ideoName(p=2,forcePrefix==False)->[hyphenPrefix]-{replace: [packIdeoName]; "|M|"-""; "|F|"-""; "|N|"-""}</li>
     <li>r_ideoName(p=2,forcePrefix==False)->[hyphenPrefix]-{replace: [packIdeoNameStructure]; "|M|"-""; "|F|"-""; "|N|"-""}</li>
     <li>r_ideoName(p=2)->{replace: [creedGender]; "|M|"-"[memeAdjective]er "; "|F|"-"[memeAdjective]e "; "|N|"-"[memeAdjective]es "}</li>
-    <li>r_ideoName(p=2)->[memeComPrefix][creedComSuffix]</li>
+    <li>r_ideoName(p=2)->{replace: [memeComPrefix][creedComSuffix]; "Buchenwald"-"Eichenwald"}</li>
     <li>r_ideoName(p=1)->[creed] [packTheme]</li>
     <li>r_ideoName(p=1)->{replace: [creedGender]; "|M|"-"[place_adjective]er "; "|F|"-"[place_adjective]e "; "|N|"-"[place_adjective]es "}</li>
     <li>r_ideoName(p=0.25)->{replace: [memeCreedGender]; "|M|"-"Der "; "|F|"-"Die "; "|N|"-"Das "}</li>
+    <li>r_ideoName(p=0.25)->{replace: [memeCreedGenderComSuffix]; "|M|"-"Der [memeComPrefix]"; "|F|"-"Die [memeComPrefix]"; "|N|"-"Das [memeComPrefix]"}</li>
     <li>r_memberName->[packMember]</li>
     <li>r_memberName->[keyDeity]ist</li>
     <li>r_memberName->[keyDeity]it</li>
