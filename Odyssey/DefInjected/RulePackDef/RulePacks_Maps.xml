@@ -316,7 +316,7 @@
     <li>physicalDescription3->wurde auf vergilbtem Pergament gezeichnet</li>
     <li>mapContentsAcc->Hunderte von kleinen Zeichnungen [mapSubjectAdj]er [mapSubjectGenIndef]</li>
     <li>mapContentsAcc->Skizzen von [mapSubjectAdj]en [mapSubjectDatIndef]</li>
-    <li>mapContentsAcc->Listen von nennenswerten [mapSubjectDatIndef]. Die längste Liste trägt den Titel '[AdjectiveBadass]!' und ist mit roter Tinte eingekreist</li>
+    <li>mapContentsAcc->Listen von nennenswerten [mapSubjectDatIndef]. Die längste Liste trägt den Titel '[AdjectiveBadass]‼' und ist mit roter Tinte eingekreist</li>
     <li>mapContentsAcc->verbrannte Ränder und verwischte Linien. Die Mitte der Karte zeigt [mapSubjectAdj]e [mapSubjectAccIndef], aber die Linien sind durch [stain_con]flecken verdeckt</li>
     <li>mapContentsAcc->auf jeder Seite neue Diagramme. Einige Diagramme gehen sehr detailliert auf [mapSubjectAccIndef] ein, von denen das größte zweifellos [mapSubjectAdj] ist</li>
     <li>mapContentsAcc->eine Mischung aus fantastischen [mapSubjectDatIndef] und historischen [mapSubjectDatIndef]</li>
@@ -344,7 +344,7 @@
     <li>mapContentsAcc(p=0.33)->[Quantity_adjphrase] [mapSubjectAccIndef] in einem [artstyle_adj]en Stil. Darunter ist jeweils ein [AdjectiveAny]es [AnimalNeu] zu sehen</li>
     <li>mapContentsDat->Hunderten von kleinen Zeichnungen [mapSubjectAdj]er [mapSubjectGenIndef]</li>
     <li>mapContentsDat->Skizzen von [mapSubjectAdj]en [mapSubjectDatIndef]</li>
-    <li>mapContentsDat->Listen von nennenswerten [mapSubjectDatIndef]. Die längste Liste trägt den Titel '[AdjectiveBadass]!' und ist mit roter Tinte eingekreist</li>
+    <li>mapContentsDat->Listen von nennenswerten [mapSubjectDatIndef]. Die längste Liste trägt den Titel '[AdjectiveBadass]‼' und ist mit roter Tinte eingekreist</li>
     <li>mapContentsDat->verbrannten Rändern und verwischten Linien. Die Mitte der Karte zeigt [mapSubjectAdj]e [mapSubjectAccIndef], aber die Linien sind durch [stain_con]flecken verdeckt</li>
     <li>mapContentsDat->neuen Diagrammen auf jeder Seite. Einige Diagramme gehen sehr detailliert auf [mapSubjectAccIndef] ein, von denen das größte zweifellos [mapSubjectAdj] ist</li>
     <li>mapContentsDat->einer Mischung aus fantastischen [mapSubjectDatIndef] und historischen [mapSubjectDatIndef]</li>
@@ -420,7 +420,7 @@
     <li>maybe_questInfo-></li>
     <li>maybe_questInfo(p=3)->[questInfo]</li>
     <li>questInfo->Auf der Karte ist ein Gebiet eingekreist und beschriftet: '[mapText]!'.</li>
-    <li>questInfo->Auf einem beigefügten Zettel ist '[mapText]?' vermerkt.</li>
+    <li>questInfo->Auf einem beigefügten Zettel ist '[mapText]⁇' vermerkt.</li>
     <li>questInfo->[noteLocation] wurde mit verblasster Tinte '[mapText]' hingekritzelt.</li>
     <li>questInfo->Eine Notiz [noteLocation] lautet: '[mapText]'.</li>
     <li>questInfo->Auf einem hastig geschriebenen Zettel [noteLocation] steht '[mapText]!'.</li>
@@ -488,7 +488,7 @@
     <li>smell_dat->Bleiche</li>
     <li>smell_dat->[AnimalCon]fäkalien</li>
     <li>conditionStains->Kratzer und [stain] verdecken einige Details und erschweren das Lesen.</li>
-    <li>conditionStains->[stain_con]flecken und Brandspuren deuten auf einen regelmäßigen Gebrauch unter harten Bedingungen hin.</li>
+    <li>conditionStains->[stain_con]flecke und Brandspuren deuten auf einen regelmäßigen Gebrauch unter harten Bedingungen hin.</li>
     <li>conditionStains->Die Diagramme sind mit etwas bedeckt, das wie [stain] aussieht.</li>
     <li>conditionStains->Die Karte ist unvollständig und mit [stain] besudelt.</li>
     <li>conditionTouch->[stain_con]flecken und ausgefranste Ränder verleihen der Karte ein abgenutztes, zweckmäßiges Aussehen.</li>
@@ -519,8 +519,8 @@
     <li>maybe_authorInfo->\n\n[authorInfo]</li>
     <li>authorInfo->Es ist unklar, wer die Karte entworfen hat.</li>
     <li>authorInfo->Die Karte wurde von [ANYPAWN_nameFull] entworfen, einem namhaften Mitglied der Fraktion '[ANYPAWN_factionName]'.</li>
-    <li>authorInfo(ANYPAWN_gender!=Female)->[noteLocation] hat [ANYPAWN_nameIndef] der [PersonJobMasNom] unterschrieben.</li>
-    <li>authorInfo(ANYPAWN_gender==Female)->[noteLocation] hat [ANYPAWN_nameIndef] die [PersonJobFemNom] unterschrieben.</li>
+    <li>authorInfo(ANYPAWN_gender!=Female)->[noteLocation] hat jemand mit '[ANYPAWN_nameIndef] der [PersonJobMasNom]' unterschrieben.</li>
+    <li>authorInfo(ANYPAWN_gender==Female)->[noteLocation] hat jemand mit '[ANYPAWN_nameIndef] die [PersonJobFemNom]' unterschrieben.</li>
     <li>authorInfo->Der Karte ist eine Kurzbiographie des Verfassers beigefügt. Der Verfasser heißt [ANYPAWN_nameIndef].</li>
     <li>authorInfo->Der Vorbesitzer der Karte war offenbar {ANYPAWN_gender ? ein Mann : eine Frau} namens [ANYPAWN_nameIndef].</li>
     <li>authorInfo->Der Vorbesitzer der Karte ist unbekannt, allerdings lassen die Markierungen vermuten, dass er oder sie Mitglied der Fraktion '[ANYPAWN_factionName]' war.</li>
@@ -591,7 +591,7 @@
     <li>mapText->es ist hier</li>
     <li>mapText->hier ruht [ANYPAWN_nameIndef]</li>
     <li>mapText->[ANYPAWN_nameIndef]'s Grab</li>
-    <li>mapText->Eigentum der Fraktion [ANYPAWN_factionName]</li>
+    <li>mapText->Eigentum von [ANYPAWN_factionName]</li>
     <li>mapFeature(p=8)->[questMapFeature]</li>
     <li>mapFeature->Fluss</li>
     <li>mapFeature->Flussmündung</li>
@@ -843,12 +843,12 @@
     <li>mapSubjectAdj->skurril</li>
     <li>mapSubjectAdj->merkwürdig</li>
     <li>mapSubjectAdj->seltsam</li>
-    <li>mapSubjectAdj->wunderbar</li>
+    <li>mapSubjectAdj->wundersam</li>
     <li>mapSubjectAdj->lohnenswert</li>
     <li>mapSubjectAdj->kostbar</li>
     <li>mapSubjectAdj->märchenhaft</li>
     <li>mapSubjectAdj->prächtig</li>
-    <li>mapSubjectAdj->haarsträubend</li>
+    <li>mapSubjectAdj->entsetzlich</li>
     <li>mapSubjectAdj->wild</li>
     <li>mapSubjectAdj->groß</li>
     <li>mapSubjectAdj->riesig</li>
@@ -859,6 +859,7 @@
     <li>mapSubjectAdj->mystisch</li>
     <li>mapSubjectAdj->heilig</li>
     <li>mapSubjectAdj->lokal</li>
+    <li>mapSubjectAdj->hiesig</li>
     <li>mapSubjectAdj->regional</li>
     <li>mapSubjectAdj->heimisch</li>
     <li>mapSubjectAdj->nah</li>
@@ -869,6 +870,7 @@
     <li>mapSubjectAdj->exklusiv</li>
     <li>mapSubjectAdj->einzigartig</li>
     <li>mapSubjectAdj->wichtig</li>
+    <li>mapSubjectAdj->divers</li>
     <li>direction->Nord</li>
     <li>direction->Ost</li>
     <li>direction->Süd</li>
@@ -879,74 +881,84 @@
     <li>directionAdj->östlich</li>
     <li>directionAdj->südlich</li>
     <li>directionAdj->westlich</li>
-    <li>mapSubject->Straßen</li>
-    <li>mapSubject->Wege</li>
-    <li>mapSubject->Pfade</li>
-    <li>mapSubject->Höhlen</li>
-    <li>mapSubject->Hügel</li>
-    <li>mapSubject->Berge</li>
-    <li>mapSubject->Flüsse</li>
-    <li>mapSubject->Wälder</li>
-    <li>mapSubject->Sümpfe</li>
-    <li>mapSubject->Wüsten</li>
-    <li>mapSubject->Landmarken</li>
-    <li>mapSubject->Einzugsgebiete</li>
-    <li>mapSubject->Seen</li>
-    <li>mapSubject->Täler</li>
-    <li>mapSubject->Plätze</li>
-    <li>mapSubject->Legenden</li>
-    <li>mapSubject->Mysterien</li>
-    <li>mapSubject->Grenzen</li>
-    <li>mapSubject->Grenzgebiete</li>
-    <li>mapSubject->Orte</li>
-    <li>mapSubject->Ressourcen</li>
-    <li>mapSubject->Artefakte</li>
-    <li>mapSubject->Relikte</li>
-    <li>mapSubject->Städte</li>
-    <li>mapSubject->Siedlungen</li>
-    <li>mapSubject->Festungen</li>
-    <li>mapSubject->Ruinen</li>
-    <li>mapSubject->Clans</li>
-    <li>mapSubject->Völker</li>
-    <li>mapSubject->Historien</li>
-    <li>mapSubject->Territorien</li>
-    <li>mapSubject->Landflächen</li>
+    <li>mapSubject(p=3)->[mapSubjectMisc]</li>
+    <li>mapSubject->[TerrainFeatures]</li>
+    <li>mapSubjectMisc->Straßen</li>
+    <li>mapSubjectMisc->Wege</li>
+    <li>mapSubjectMisc->Pfade</li>
+    <li>mapSubjectMisc->Höhlen</li>
+    <li>mapSubjectMisc->Hügel</li>
+    <li>mapSubjectMisc->Berge</li>
+    <li>mapSubjectMisc->Flüsse</li>
+    <li>mapSubjectMisc->Wälder</li>
+    <li>mapSubjectMisc->Sümpfe</li>
+    <li>mapSubjectMisc->Wüsten</li>
+    <li>mapSubjectMisc->Landmarken</li>
+    <li>mapSubjectMisc->Flussgebiete</li>
+    <li>mapSubjectMisc->Seen</li>
+    <li>mapSubjectMisc->Täler</li>
+    <li>mapSubjectMisc->Plätze</li>
+    <li>mapSubjectMisc->Legenden</li>
+    <li>mapSubjectMisc->Mysterien</li>
+    <li>mapSubjectMisc->Grenzgebiete</li>
+    <li>mapSubjectMisc->Orte</li>
+    <li>mapSubjectMisc->Ressourcen</li>
+    <li>mapSubjectMisc->Artefakte</li>
+    <li>mapSubjectMisc->Relikte</li>
+    <li>mapSubjectMisc->Städte</li>
+    <li>mapSubjectMisc->Siedlungen</li>
+    <li>mapSubjectMisc->Festungen</li>
+    <li>mapSubjectMisc->Ruinen</li>
+    <li>mapSubjectMisc->Clans</li>
+    <li>mapSubjectMisc->Völker</li>
+    <li>mapSubjectMisc->Denkmäler</li>
+    <li>mapSubjectMisc->Territorien</li>
+    <li>mapSubjectMisc->Gebiete</li>
+    <li>mapSubjectMisc->Kontinente</li>
+    <li>mapSubjectMisc->[TreeTypeCon]wälder</li>
+    <li>mapSubjectMisc->[TreeTypes]</li>
+    <li>mapSubjectMisc->[AnimalCon]-Lebensräume</li>
     <li>mapSubjectNomIndef->[mapSubject]</li>
     <li>mapSubjectNomDef->[mapSubjectNomIndef]</li>
     <li>mapSubjectGenIndef->[mapSubjectNomIndef]</li>
     <li>mapSubjectGenDef->[mapSubjectNomDef]</li>
-    <li>mapSubjectDatIndef->Straßen</li>
-    <li>mapSubjectDatIndef->Wegen</li>
-    <li>mapSubjectDatIndef->Pfaden</li>
-    <li>mapSubjectDatIndef->Höhlen</li>
-    <li>mapSubjectDatIndef->Hügeln</li>
-    <li>mapSubjectDatIndef->Bergen</li>
-    <li>mapSubjectDatIndef->Flüssen</li>
-    <li>mapSubjectDatIndef->Wäldern</li>
-    <li>mapSubjectDatIndef->Sümpfen</li>
-    <li>mapSubjectDatIndef->Wüsten</li>
-    <li>mapSubjectDatIndef->Landmarken</li>
-    <li>mapSubjectDatIndef->Einzugsgebieten</li>
-    <li>mapSubjectDatIndef->Seen</li>
-    <li>mapSubjectDatIndef->Tälern</li>
-    <li>mapSubjectDatIndef->Plätzen</li>
-    <li>mapSubjectDatIndef->Legenden</li>
-    <li>mapSubjectDatIndef->Mysterien</li>
-    <li>mapSubjectDatIndef->Grenzen</li>
-    <li>mapSubjectDatIndef->Grenzgebieten</li>
-    <li>mapSubjectDatIndef->Orten</li>
-    <li>mapSubjectDatIndef->Ressourcen</li>
-    <li>mapSubjectDatIndef->Artefakten</li>
-    <li>mapSubjectDatIndef->Relikten</li>
-    <li>mapSubjectDatIndef->Städten</li>
-    <li>mapSubjectDatIndef->Siedlungen</li>
-    <li>mapSubjectDatIndef->Festungen</li>
-    <li>mapSubjectDatIndef->Ruinen</li>
-    <li>mapSubjectDatIndef->Clans</li>
-    <li>mapSubjectDatIndef->Völkern</li>
-    <li>mapSubjectDatIndef->Historien</li>
-    <li>mapSubjectDatIndef->Territorien</li>
-    <li>mapSubjectDatIndef->Landflächen</li>
+    <li>mapSubjectDatIndef(p=3)->[mapSubjectMiscDatIndef]</li>
+    <li>mapSubjectDatIndef->[TerrainFeaturesDat]</li>
+    <li>mapSubjectMiscDatIndef->Straßen</li>
+    <li>mapSubjectMiscDatIndef->Wegen</li>
+    <li>mapSubjectMiscDatIndef->Pfaden</li>
+    <li>mapSubjectMiscDatIndef->Höhlen</li>
+    <li>mapSubjectMiscDatIndef->Hügeln</li>
+    <li>mapSubjectMiscDatIndef->Bergen</li>
+    <li>mapSubjectMiscDatIndef->Flüssen</li>
+    <li>mapSubjectMiscDatIndef->Wäldern</li>
+    <li>mapSubjectMiscDatIndef->Sümpfen</li>
+    <li>mapSubjectMiscDatIndef->Wüsten</li>
+    <li>mapSubjectMiscDatIndef->Landmarken</li>
+    <li>mapSubjectMiscDatIndef->Flussgebieten</li>
+    <li>mapSubjectMiscDatIndef->Seen</li>
+    <li>mapSubjectMiscDatIndef->Tälern</li>
+    <li>mapSubjectMiscDatIndef->Plätzen</li>
+    <li>mapSubjectMiscDatIndef->Legenden</li>
+    <li>mapSubjectMiscDatIndef->Mysterien</li>
+    <li>mapSubjectMiscDatIndef->Grenzgebieten</li>
+    <li>mapSubjectMiscDatIndef->Orten</li>
+    <li>mapSubjectMiscDatIndef->Ressourcen</li>
+    <li>mapSubjectMiscDatIndef->Artefakten</li>
+    <li>mapSubjectMiscDatIndef->Relikten</li>
+    <li>mapSubjectMiscDatIndef->Städten</li>
+    <li>mapSubjectMiscDatIndef->Siedlungen</li>
+    <li>mapSubjectMiscDatIndef->Festungen</li>
+    <li>mapSubjectMiscDatIndef->Ruinen</li>
+    <li>mapSubjectMiscDatIndef->Clans</li>
+    <li>mapSubjectMiscDatIndef->Völkern</li>
+    <li>mapSubjectMiscDatIndef->Denkmälern</li>
+    <li>mapSubjectMiscDatIndef->Territorien</li>
+    <li>mapSubjectMiscDatIndef->Gebieten</li>
+    <li>mapSubjectMiscDatIndef->Kontinenten</li>
+    <li>mapSubjectMiscDatIndef->[TreeTypeCon]wäldern</li>
+    <li>mapSubjectMiscDatIndef->[TreeTypes]</li>
+    <li>mapSubjectMiscDatIndef->[AnimalCon]-Lebensräumen</li>
     <li>mapSubjectDatDef->[mapSubjectDatIndef]</li>
     <li>mapSubjectAccIndef->[mapSubjectNomIndef]</li>
     <li>mapSubjectAccDef->[mapSubjectNomDef]</li>
@@ -1093,87 +1105,71 @@
     <li>mapType->holographic</li>
   -->
   <Namer_Map.rulePack.rulesStrings>
-    <li>title(p=2)->[mapType_mapNoun] [mit] [subject_dat_indef]</li>
-    <li>title(p=2)->[maybeThe_mapType_mapNoun][extra]</li>
-    <li>title(p=2)->[ANYPAWN_nameIndef]'s [maybeAdjective_mapNoun][extra]</li>
-    <li>title->[mapType_mapNoun]: [subject]</li>
-    <li>title->[mapNoun] der [mapSubjectAdj]en [mapSubjectGenDef]</li>
-    <li>title->[maybeThe_AdjectiveAny_mapNoun][extra]</li>
-    <li>title(p=0.5)->[place]-[mapNoun]</li>
-    <li>mit->mit</li>
+    <li>title->[map] [mit] [subject_dat_indef]</li>
+    <li>title(p=2)->[map] [subject_gen_indef]</li>
+    <li>title(p=2)->[map]: [subject]</li>
+    <li>title(p=2)->[map] von [place]</li>
+    <li>title(p=0.5)->[map] [mit] [mapSubjectAdj]en [mapSubjectDatIndef]</li>
+    <li>title(p=0.5)->[map] [mit] [mapSubjectDatIndef]</li>
+    <li>title->[map] [mapSubjectAdj]er [mapSubjectGenIndef]</li>
+    <li>title->[map]: [mapSubjectAdj]e [mapSubjectNomIndef]</li>
+    <li>title->[map]: [mapSubjectNomIndef]</li>
+    <li>title(p=0.5)->[place]-[mapNounMaybePrefixed]</li>
+    <li>title(p=0.5)->[mapTypeAdj_place_mapNounMaybePrefixed]</li>
+    <li>mit(p=3)->mit</li>
     <li>mit->von</li>
-    <li>adjective->[AdjectiveAny]</li>
-    <li>adjective->[Color]</li>
-    <li>adjective->[AdjectiveLarge]</li>
-    <li>extra-></li>
-    <li>extra(p=2)-> von [place]</li>
-    <li>extra-> der [mapSubjectGenDef]</li>
-    <li>extra-> der [mapSubjectAdj]en [mapSubjectGenDef]</li>
-    <li>extra-> [mapSubjectAdj]er [mapSubjectGenIndef]</li>
+    <li>map->[mapTypeAdj_mapNounMaybePrefixed]</li>
+    <li>map->[ANYPAWN_nameIndef]'s [mapNounMaybePrefixed]</li>
+    <li>map->[mapNounMaybePrefixed]</li>
     <li>mapNoun(p=5)->Karte</li>
     <li>mapNoun(p=2)->Atlas</li>
-    <li>mapNoun->Almanach</li>
-    <li>mapNoun->Studie</li>
     <li>mapNoun->Broschüre</li>
-    <li>mapTypePre(p=2)->[AnimalCon]</li>
-    <li>mapTypePre(p=2)->[TreeTypeCon]</li>
-    <li>mapTypePre->Umriss</li>
-    <li>mapTypeAdj->topografisch</li>
-    <li>mapTypePre->Relief</li>
-    <li>mapTypePre->Bevölkerungs</li>
-    <li>mapTypePre->Schatz</li>
-    <li>mapTypeAdj->kommentiert</li>
-    <li>mapTypeAdj->illustriert</li>
-    <li>mapTypePre->Konföderations</li>
-    <li>mapTypePre->Koalitions</li>
-    <li>mapTypePre->Föderations</li>
+    <li>mapNounGender(p=5)->|F|Karte</li>
+    <li>mapNounGender(p=2)->|M|Atlas</li>
+    <li>mapNounGender->|F|Broschüre</li>
+    <li>mapNounPrefixed(p=5)->[mapTypePre]karte</li>
+    <li>mapNounPrefixed(p=2)->[mapTypePre]atlas</li>
+    <li>mapNounGenderPrefixed(p=5)->|F|[mapTypePre]karte</li>
+    <li>mapNounGenderPrefixed(p=2)->|M|[mapTypePre]atlas</li>
+    <li>mapNounMaybePrefixed->[mapNoun]</li>
+    <li>mapNounMaybePrefixed->[mapNounPrefixed]</li>
+    <li>mapNounGenderMaybePrefixed->[mapNounGender]</li>
+    <li>mapNounGenderMaybePrefixed->[mapNounGenderPrefixed]</li>
+    <li>mapTypeAdj(p=3)->[Color]</li>
+    <li>mapTypeAdj->lebhaft</li>
+    <li>mapTypeAdj->bedeutsam</li>
+    <li>mapTypeAdj->einfach</li>
+    <li>mapTypeAdj->authentisch</li>
+    <li>mapTypeAdj->spannend</li>
+    <li>mapTypeAdj->seltsam</li>
+    <li>mapTypeAdj->allgemein</li>
+    <li>mapTypeAdj->groß</li>
+    <li>mapTypeAdj->klein</li>
+    <li>mapTypeAdj->alt</li>
+    <li>mapTypeAdj->antik</li>
     <li>mapTypeAdj->historisch</li>
-    <li>mapTypePre->Papier</li>
-    <li>mapTypePre->Leder</li>
-    <li>mapTypePre->Schweinehaut</li>
-    <li>mapTypeAdj->laminiert</li>
     <li>mapTypeAdj->holografisch</li>
-    <li>mapType_mapNoun(p=5)->[mapTypePre]karte</li>
-    <li>mapType_mapNoun(p=5)->[mapTypeAdj]e Karte</li>
-    <li>mapType_mapNoun(p=2)->[mapTypePre]atlas</li>
-    <li>mapType_mapNoun(p=2)->[mapTypeAdj]er Atlas</li>
-    <li>mapType_mapNoun->[mapTypePre]almanach</li>
-    <li>mapType_mapNoun->[mapTypeAdj]er Almanach</li>
-    <li>mapType_mapNoun->[mapTypePre]studie</li>
-    <li>mapType_mapNoun->[mapTypeAdj]e Studie</li>
-    <li>mapType_mapNoun->[mapTypePre]broschüre</li>
-    <li>mapType_mapNoun->[mapTypeAdj]e Broschüre</li>
-    <li>the_mapType_mapNoun(p=5)->die [mapTypePre]karte</li>
-    <li>the_mapType_mapNoun(p=5)->die [mapTypeAdj]e Karte</li>
-    <li>the_mapType_mapNoun(p=2)->der [mapTypePre]atlas</li>
-    <li>the_mapType_mapNoun(p=2)->der [mapTypeAdj]e Atlas</li>
-    <li>the_mapType_mapNoun->der [mapTypePre]almanach</li>
-    <li>the_mapType_mapNoun->der [mapTypeAdj]e Almanach</li>
-    <li>the_mapType_mapNoun->die [mapTypePre]studie</li>
-    <li>the_mapType_mapNoun->die [mapTypeAdj]e Studie</li>
-    <li>the_mapType_mapNoun->die [mapTypePre]broschüre</li>
-    <li>the_mapType_mapNoun->die [mapTypeAdj]e Broschüre</li>
-    <li>maybeThe_mapType_mapNoun->[mapType_mapNoun]</li>
-    <li>maybeThe_mapType_mapNoun->[the_mapType_mapNoun]</li>
-    <li>adjective_mapNoun(p=5)->[adjective]e Karte</li>
-    <li>adjective_mapNoun(p=2)->[adjective]er Atlas</li>
-    <li>adjective_mapNoun->[adjective]er Almanach</li>
-    <li>adjective_mapNoun->[adjective]e Studie</li>
-    <li>adjective_mapNoun->[adjective]e Broschüre</li>
-    <li>maybeAdjective_mapNoun->[mapNoun]</li>
-    <li>maybeAdjective_mapNoun->[adjective_mapNoun]</li>
-    <li>AdjectiveAny_mapNoun(p=5)->[AdjectiveAny]e Karte</li>
-    <li>AdjectiveAny_mapNoun(p=2)->[AdjectiveAny]er Atlas</li>
-    <li>AdjectiveAny_mapNoun->[AdjectiveAny]er Almanach</li>
-    <li>AdjectiveAny_mapNoun->[AdjectiveAny]e Studie</li>
-    <li>AdjectiveAny_mapNoun->[AdjectiveAny]e Broschüre</li>
-    <li>the_AdjectiveAny_mapNoun(p=5)->die [AdjectiveAny]e Karte</li>
-    <li>the_AdjectiveAny_mapNoun(p=2)->der [AdjectiveAny]e Atlas</li>
-    <li>the_AdjectiveAny_mapNoun->der [AdjectiveAny]e Almanach</li>
-    <li>the_AdjectiveAny_mapNoun->die [AdjectiveAny]e Studie</li>
-    <li>the_AdjectiveAny_mapNoun->die [AdjectiveAny]e Broschüre</li>
-    <li>maybeThe_AdjectiveAny_mapNoun->[AdjectiveAny_mapNoun]</li>
-    <li>maybeThe_AdjectiveAny_mapNoun->[the_AdjectiveAny_mapNoun]</li>
+    <li>mapTypeAdj->illustriert</li>
+    <li>mapTypeAdj->kommentiert</li>
+    <li>mapTypeAdj->laminiert</li>
+    <li>mapTypeAdj->topografisch</li>
+    <li>mapTypeAdj->uralt</li>
+    <li>mapTypePre->Geheim</li>
+    <li>mapTypePre->Land</li>
+    <li>mapTypePre->Leder</li>
+    <li>mapTypePre->Papier</li>
+    <li>mapTypePre->Pergament</li>
+    <li>mapTypePre->Post</li>
+    <li>mapTypePre->Regional</li>
+    <li>mapTypePre->Relief</li>
+    <li>mapTypePre->Schatz</li>
+    <li>mapTypePre->Spezial</li>
+    <li>mapTypePre->Stoff</li>
+    <li>mapTypePre->Taschen</li>
+    <li>mapTypePre->Umriss</li>
+    <li>mapTypePre->Holo</li>
+    <li>mapTypeAdj_mapNounMaybePrefixed->{replace: [mapNounGenderMaybePrefixed]; "|M|"-"[mapTypeAdj]er "; "|F|"-"[mapTypeAdj]e "; "|N|"-"[mapTypeAdj]es "}</li>
+    <li>mapTypeAdj_place_mapNounMaybePrefixed->{replace: [mapNounGenderMaybePrefixed]; "|M|"-"[mapTypeAdj]er [place]-"; "|F|"-"[mapTypeAdj]e [place]-"; "|N|"-"[mapTypeAdj]es [place]-"}</li>
   </Namer_Map.rulePack.rulesStrings>
   
 </LanguageData>
