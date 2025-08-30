@@ -45,31 +45,47 @@
     <li>shipNoun->wreck</li>
   -->
   <SanguophageShip.questNameRules.rulesStrings>
-    <li>questName(p=0.2)->[shipAdjective]er [shipNounMas]</li>
-    <li>questName(p=0.2)->[shipAdjective]e [shipNounFem]</li>
-    <li>questName(p=0.7)->[shipAdjective]es [shipNounNeu]</li>
-    <li>questName(p=0.35)->[shipNoun2][shipNounLow]</li>
-    <li>questName(p=0.35)->[shipNoun2]-[shipNoun]</li>
-    <li>shipAdjective->sanguophagisch</li>
-    <li>shipNoun2->Sanguophagen</li>
-    <li>shipAdjective->blutdurstig</li>
-    <li>shipNoun2->Blut</li>
+    <li>questName->{replace: [shipNounGender]; "|M|"-"[shipAdjective]er "; "|F|"-"[shipAdjective]e "; "|N|"-"[shipAdjective]es "}</li>
+    <li>questName->{replace: [shipNounGender]; "|M|"-"Der [shipAdjective]e "; "|F|"-"Die [shipAdjective]e "; "|N|"-"Das [shipAdjective]e "}</li>
+    <li>questName->{replace: [shipNounGenderComSuffix]; "|M|"-"[shipComPrefix]"; "|F|"-"[shipComPrefix]"; "|N|"-"[shipComPrefix]"}</li>
+    <li>questName->{replace: [shipNounGenderComSuffix]; "|M|"-"Der [shipComPrefix]"; "|F|"-"Die [shipComPrefix]"; "|N|"-"Das [shipComPrefix]"}</li>
+    <li>questName->{replace: [shipNounGender]; "|M|"-"Der "; "|F|"-"Die "; "|N|"-"Das "} [shipSuffix]</li>
+    <li>questName->[shipNoun] [shipSuffix]</li>
+    <li>shipAdjective->blutdürstig</li>
     <li>shipAdjective->blutig</li>
-    <li>shipNoun2->Schatten</li>
-    <li>shipAdjective->dunkl</li>
     <li>shipAdjective->blutrot</li>
+    <li>shipAdjective->dunkl</li>
+    <li>shipAdjective->düster</li>
+    <li>shipAdjective->finster</li>
     <li>shipAdjective->rot</li>
+    <li>shipAdjective->sanguophagisch</li>
     <li>shipAdjective->unheilig</li>
-    <li>shipNounNeu->Schiff</li>
-    <li>shipNounNeu->Raumschiff</li>
-    <li>shipNounFem->Raumfähre</li>
-    <li>shipNounMas->Absturz</li>
-    <li>shipNounNeu->Wrack</li>
-    <li>shipNounLow->schiff</li>
+    <li>shipAdjective->verflucht</li>
+    <li>shipAdjective->verdorben</li>
+    <li>shipComPrefix->Blut</li>
+    <li>shipComPrefix->Sanguophagen</li>
+    <li>shipComPrefix->Blutsauger</li>
+    <li>shipComPrefix->Schatten</li>
+    <li>shipSuffix->des Blutes</li>
+    <li>shipSuffix->der Sanguophagen</li>
+    <li>shipSuffix->der Blutsauger</li>
+    <li>shipSuffix->der Schatten</li>
+    <li>shipNoun->Schiff</li>
     <li>shipNoun->Raumschiff</li>
     <li>shipNoun->Raumfähre</li>
-    <li>shipNounLow->absturz</li>
-    <li>shipNounLow->wrack</li>
+    <li>shipNoun->Absturz</li>
+    <li>shipNoun->Wrack</li>
+    <li>shipNoun->Bruchlandung</li>
+    <li>shipNounGender->|N|Schiff</li>
+    <li>shipNounGender->|N|Raumschiff</li>
+    <li>shipNounGender->|F|Raumfähre</li>
+    <li>shipNounGender->|M|Absturz</li>
+    <li>shipNounGender->|N|Wrack</li>
+    <li>shipNounGender->|F|Bruchlandung</li>
+    <li>shipNounGenderComSuffix->|N|schiff</li>
+    <li>shipNounGenderComSuffix->|F|fähre</li>
+    <li>shipNounGenderComSuffix->|M|absturz</li>
+    <li>shipNounGenderComSuffix->|N|wrack</li>
   </SanguophageShip.questNameRules.rulesStrings>
   
 </LanguageData>

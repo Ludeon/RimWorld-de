@@ -24,7 +24,7 @@
     <li>sanguophageInfo->(*Gray)About sanguophages: Sanguophages are ageless, deathless super-humans powered by archotech-created archites in the bloodstream. They are beautiful and extremely intelligent. They can heal any injury, and never suffer from disease or poison. In combat, they can launch deadly spines and heal injured friends. The price is that sanguophages must consume hemogen derived from human blood to survive, and they must periodically deathrest for long periods. They're easily destroyed by fire, and slowed down by UV light.(/Gray)</li>
   -->
   <SanguophageMeetingHost.questDescriptionRules.rulesStrings>
-    <li>questDescription->{asker_gender ? Ein [asker_kind] : Eine [asker_kind]} namens [asker_nameDef] sucht einen sicheren Ort, um sich heimlich mit [sanguophageSingOrPlural] zu treffen. [asker_nameDef] ist {asker_gender ? der Anführer : die Anführerin} und möchte, dass das Treffen in [map_label] stattfindet.\n\nWenn du zusagst, werden [sanguophageCount] Sanguophagen aus verschiedenen Richtungen in [map_label] eintreffen. Sie werden mehrere Stunden damit verbringen, ihre geheimen Angelegenheiten zu besprechen, bevor sie wieder gehen. Deine Belohnung bekommst du vor ihrer Abreise.\n\nDu kannst die Sanguophagen verraten und angreifen. Am Boden liegende Sanguophagen können gezwungen werden, einen deiner Kolonisten zu einem Sanguophagen zu machen.\n\n[sanguophageInfo]</li>
+    <li>questDescription->{asker_gender ? Ein Sanguophage : Eine Sanguophagin} namens [asker_nameDef] sucht einen sicheren Ort, um sich heimlich mit [sanguophageSingOrPlural] zu treffen. [asker_nameDef] ist {asker_gender ? der Anführer : die Anführerin} und möchte, dass das Treffen in [map_label] stattfindet.\n\nWenn du zusagst, werden [sanguophageCount] Sanguophagen aus verschiedenen Richtungen in [map_label] eintreffen. Sie werden mehrere Stunden damit verbringen, ihre geheimen Angelegenheiten zu besprechen, bevor sie wieder gehen. Deine Belohnung bekommst du vor ihrer Abreise.\n\nDu kannst die Sanguophagen verraten und angreifen. Am Boden liegende Sanguophagen können gezwungen werden, einen deiner Kolonisten zu einem Sanguophagen zu machen.\n\n[sanguophageInfo]</li>
     <li>sanguophageSingOrPlural(sanguophageCountMinusOne==1)->einem anderen Sanguophagen</li>
     <li>sanguophageSingOrPlural(sanguophageCountMinusOne>=2)->[sanguophageCountMinusOne] anderen Sanguophagen</li>
     <li>sanguophageInfo->(*Gray)Sanguophagen sind alterslose, unsterbliche Übermenschen, die von Architen im Blutkreislauf angetrieben werden. Sie sind wunderschön und hochintelligent. Sie können jede Wunde heilen, werden nie krank und sind immun gegen Gifte. Im Kampf können sie tödliche Stacheln abfeuern und verletzte Verbündete heilen. Das hat allerdings einen hohen Preis: Sanguophagen müssen zum einen das lebenswichtige Hämogen konsumieren, welches aus menschlichem Blut gewonnen wird, und zum anderen ihren Körper regelmäßig für längere Zeit in den sogenannten Todesschlaf versetzen. Sie sind äußerst feueranfällig und werden durch UV-Licht verlangsamt.(/Gray)</li>
@@ -51,18 +51,33 @@
     <li>meetNoun->parley</li>
   -->
   <SanguophageMeetingHost.questNameRules.rulesStrings>
-    <li>questName(p=0.5)->[meetAdjective]e [meetNoun]</li>
-    <li>questName(p=0.7)->[meetNoun2][meetNounLow]</li>
-    <li>meetAdjective->sanguophagisch</li>
-    <li>meetNoun2->Sanguophagen</li>
-    <li>meetAdjective->blutdurstig</li>
-    <li>meetNoun2->Blut</li>
+    <li>questName->{replace: [meetNounGender]; "|M|"-"[meetAdjective]er "; "|F|"-"[meetAdjective]e "; "|N|"-"[meetAdjective]es "}</li>
+    <li>questName->{replace: [meetNounGender]; "|M|"-"Der [meetAdjective]e "; "|F|"-"Die [meetAdjective]e "; "|N|"-"Das [meetAdjective]e "}</li>
+    <li>questName->{replace: [meetNounGenderComSuffix]; "|M|"-"[meetComPrefix]"; "|F|"-"[meetComPrefix]"; "|N|"-"[meetComPrefix]"}</li>
+    <li>questName->{replace: [meetNounGenderComSuffix]; "|M|"-"Der [meetComPrefix]"; "|F|"-"Die [meetComPrefix]"; "|N|"-"Das [meetComPrefix]"}</li>
+    <li>questName->{replace: [meetNounGender]; "|M|"-"Der "; "|F|"-"Die "; "|N|"-"Das "} [meetSuffix]</li>
+    <li>questName->[meetNoun] [meetSuffix]</li>
+    <li>meetAdjective->blutdürstig</li>
     <li>meetAdjective->blutig</li>
-    <li>meetNoun2->Schatten</li>
-    <li>meetAdjective->dunkl</li>
     <li>meetAdjective->blutrot</li>
+    <li>meetAdjective->dunkl</li>
+    <li>meetAdjective->düster</li>
+    <li>meetAdjective->finster</li>
     <li>meetAdjective->rot</li>
+    <li>meetAdjective->sanguophagisch</li>
     <li>meetAdjective->unheilig</li>
+    <li>meetAdjective->verflucht</li>
+    <li>meetAdjective->verdorben</li>
+    <li>meetAdjective->geheim</li>
+    <li>meetComPrefix->Blut</li>
+    <li>meetComPrefix->Sanguophagen</li>
+    <li>meetComPrefix->Blutsauger</li>
+    <li>meetComPrefix->Schatten</li>
+    <li>meetComPrefix->Geheim</li>
+    <li>meetSuffix->des Blutes</li>
+    <li>meetSuffix->der Sanguophagen</li>
+    <li>meetSuffix->der Blutsauger</li>
+    <li>meetSuffix->der Schatten</li>
     <li>meetNoun->Begegnung</li>
     <li>meetNoun->Versammlung</li>
     <li>meetNoun->Zusammenkunft</li>
@@ -71,14 +86,40 @@
     <li>meetNoun->Tagung</li>
     <li>meetNoun->Unterredung</li>
     <li>meetNoun->Sitzung</li>
-    <li>meetNounLow->begegnung</li>
-    <li>meetNounLow->versammlung</li>
-    <li>meetNounLow->zusammenkunft</li>
-    <li>meetNounLow->besprechung</li>
-    <li>meetNounLow->konferenz</li>
-    <li>meetNounLow->tagung</li>
-    <li>meetNounLow->unterredung</li>
-    <li>meetNounLow->sitzung</li>
+    <li>meetNoun->Konvent</li>
+    <li>meetNoun->Konklave</li>
+    <li>meetNoun->Konzil</li>
+    <li>meetNoun->Gremium</li>
+    <li>meetNoun->Kommission</li>
+    <li>meetNoun->Symposium</li>
+    <li>meetNounGender->|F|Begegnung</li>
+    <li>meetNounGender->|F|Versammlung</li>
+    <li>meetNounGender->|F|Zusammenkunft</li>
+    <li>meetNounGender->|F|Besprechung</li>
+    <li>meetNounGender->|F|Konferenz</li>
+    <li>meetNounGender->|F|Tagung</li>
+    <li>meetNounGender->|F|Unterredung</li>
+    <li>meetNounGender->|F|Sitzung</li>
+    <li>meetNounGender->|M|Konvent</li>
+    <li>meetNounGender->|N|Konklave</li>
+    <li>meetNounGender->|N|Konzil</li>
+    <li>meetNounGender->|N|Gremium</li>
+    <li>meetNounGender->|F|Kommission</li>
+    <li>meetNounGender->|N|Symposium</li>
+    <li>meetNounGenderComSuffix->|F|begegnung</li>
+    <li>meetNounGenderComSuffix->|F|versammlung</li>
+    <li>meetNounGenderComSuffix->|F|zusammenkunft</li>
+    <li>meetNounGenderComSuffix->|F|besprechung</li>
+    <li>meetNounGenderComSuffix->|F|konferenz</li>
+    <li>meetNounGenderComSuffix->|F|tagung</li>
+    <li>meetNounGenderComSuffix->|F|unterredung</li>
+    <li>meetNounGenderComSuffix->|F|sitzung</li>
+    <li>meetNounGenderComSuffix->|M|konvent</li>
+    <li>meetNounGenderComSuffix->|N|konklave</li>
+    <li>meetNounGenderComSuffix->|N|konzil</li>
+    <li>meetNounGenderComSuffix->|N|gremium</li>
+    <li>meetNounGenderComSuffix->|F|kommission</li>
+    <li>meetNounGenderComSuffix->|N|symposium</li>
   </SanguophageMeetingHost.questNameRules.rulesStrings>
   
 </LanguageData>
