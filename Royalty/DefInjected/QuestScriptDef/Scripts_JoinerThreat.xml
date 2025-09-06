@@ -215,7 +215,7 @@
     <li>joinersEnemies->[joiner_possessive] enemies</li>
   -->
   <ThreatReward_SiteThreat_Joiner.questDescriptionRules.rulesStrings>
-    <li>questDescription->[introduction] namens [joiner_nameFull] kontaktiert dich aus der Nähe. [joiner_pronoun] versteckt sich vor [threat]. [joiner_pronoun] will fliehen und sich dir in [map_label] anschließen.[joiner_relationInfo]\n\nWenn du [joiner_objective] aufnimmst, [joinersEnemies] ein Lager in der Nähe errichten, um dich zu schikanieren. [joiner_pronoun] berichtet, dass dort [site/allSitePartsDescriptions]\n\nDie Bedrohung bleibt so lange bestehen, bis du das Lager zerstört hast.</li>
+    <li>questDescription->[introduction] namens [joiner_nameFull] kontaktiert dich aus der Nähe. [joiner_pronoun] versteckt sich vor [threat]. [joiner_pronoun] will fliehen und sich dir in [map_label] anschließen.[joiner_relationInfo]\n\nWenn du [joiner_objective] bei dir aufnimmst, [joinersEnemies] ein Lager in der Nähe errichten, um dich zu schikanieren. [joiner_pronoun] berichtet, dass dort [site/allSitePartsDescriptions]\n\nDie Bedrohung bleibt so lange bestehen, bis du das Lager zerstört hast.</li>
     <li>introduction(childCount==1,priority=1)->Ein [joiner_age]-jähriges Kind</li>
     <li>introduction->[A_N_year_old_joiner]</li>
     <li>threat(priority=1,site/Outpost_exists==True)->{lookup: [site/enemyFaction_pawnsPlural]; decline_other; 2} der Fraktion [site/enemyFaction_name]</li>
