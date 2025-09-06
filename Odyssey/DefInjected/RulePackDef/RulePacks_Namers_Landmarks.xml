@@ -256,11 +256,13 @@
     <li>terrain_word(p=2)->Raffinerie</li>
     <li>terrain_word->Fabrik</li>
     <li>terrain_word->Chemiefabrik</li>
+    <li>terrain_word->Spritraffinerie</li>
     <li>terrain_word_low(p=2)->raffinerie</li>
     <li>terrain_word_low->fabrik</li>
     <li>terrain_word_gender(p=2)->|F|Raffinerie</li>
     <li>terrain_word_gender->|F|Fabrik</li>
     <li>terrain_word_gender->|F|Chemiefabrik</li>
+    <li>terrain_word_gender->|F|Spritraffinerie</li>
     <li>terrain_word_gender_low(p=2)->|F|raffinerie</li>
     <li>terrain_word_gender_low->|F|fabrik</li>
   </NamerLandmark_ChemfuelRefinery.rulePack.rulesStrings>
@@ -559,8 +561,10 @@
     <li>fallen->infested</li>
   -->
   <NamerLandmark_InfestedSettlement.rulePack.rulesStrings>
-    <li>r_name(p=18)->befallenes [townname_wordgen]</li>
+    <li>r_name(p=18)->[infested]es [townname_wordgen]</li>
     <li>r_name(p=18)->[townname_wordgen]-Insektenkolonien</li>
+    <li>infested->befallen</li>
+    <li>infested->insektenverseucht</li>
   </NamerLandmark_InfestedSettlement.rulePack.rulesStrings>
   
   <!-- EN:
@@ -591,10 +595,12 @@
     <li>terrain_word->Raumhafen</li>
     <li>terrain_word(p=0.3)->Weltraumbahnhof</li>
     <li>terrain_word->Startrampen</li>
+    <li>terrain_word->Kosmodrom</li>
     <li>terrain_word_gender(p=2)->|M|Startplatz</li>
     <li>terrain_word_gender->|M|Raumhafen</li>
     <li>terrain_word_gender(p=0.3)->|M|Weltraumbahnhof</li>
     <li>terrain_word_gender->|F|Startrampen</li>
+    <li>terrain_word_gender->|N|Kosmodrom</li>
   </NamerLandmark_LaunchSite.rulePack.rulesStrings>
   
   <!-- EN:
