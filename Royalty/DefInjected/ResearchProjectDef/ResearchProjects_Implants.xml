@@ -14,17 +14,43 @@
     <li>subject_gerund->crafting artificial guts</li>
   -->
   <ArtificialMetabolism.generalRules.rulesStrings>
-    <li>subject->künstlicher Metabolismus</li>
-    <li>subject_with_adj->er künstlicher Metabolismus</li>
     <li>subject_story->einen so starken Hunger entwickelte, dass nur noch ein künstlicher Magen helfen konnte</li>
     <li>subject_story->der Königin nichts von der Implantation des Sterilisiermagens erzählte, aber trotzdem als {ANYPAWN_gender ? ihr Vorkoster : ihre Vorkosterin} weitermachte</li>
     <li>subject_story->eine Abneigung gegen das Essen entwickelte. Ein Nuklearmagen reduzierte zwar erheblich [ANYPAWN_possessive]e Nahrungsaufnahme, aber die Radioaktivität war ein Ärgernis</li>
     <li>subject_gerund->die Herstellung von bionischen Verdauungsorganen</li>
+    <li>subject_gerund_with_of->der Herstellung von bionischen Verdauungsorganen</li>
+    <li>subject_gerund_with_to->zur Herstellung von bionischen Verdauungsorganen</li>
     <li>subject_gerund_acc->die Herstellung von bionischen Verdauungsorganen</li>
     <li>subject_gerund_dat->der Herstellung von bionischen Verdauungsorganen</li>
     <li>subject_gerund->die Herstellung von künstlichen Eingeweiden</li>
+    <li>subject_gerund_with_of->der Herstellung von künstlichen Eingeweiden</li>
+    <li>subject_gerund_with_to->zur Herstellung von künstlichen Eingeweiden</li>
     <li>subject_gerund_acc->die Herstellung von künstlichen Eingeweiden</li>
     <li>subject_gerund_dat->der Herstellung von künstlichen Eingeweiden</li>
+    <!-- nominative indefinite zero article -->
+    <li>subject->künstlicher Metabolismus</li>
+    <!-- gender nominative indefinite -->
+    <li>subject_gender_nom_indef->|M|künstlicher Metabolismus</li>
+    <!-- of + genitive definite -->
+    <li>subject_with_of->des künstlichen Metabolismus</li>
+    <!-- of + adj + genitive definite -->
+    <li>subject_with_of_and_adj->des |adj|en künstlichen Metabolismus</li>
+    <!-- to + dative definite -->
+    <li>subject_with_to->zum künstlichen Metabolismus</li>
+    <!-- to + adj + dative definite -->
+    <li>subject_with_to_and_adj->zum |adj|en künstlichen Metabolismus</li>
+    <!-- the + dative definite -->
+    <li>subject_with_the_dat->dem künstlichen Metabolismus</li>
+    <!-- the + adj + dative definite -->
+    <li>subject_with_the_and_adj_dat->dem |adj|en künstlichen Metabolismus</li>
+    <!-- the + accusative definite -->
+    <li>subject_with_the_acc->den künstlichen Metabolismus</li>
+    <!-- the + adj + accusative definite -->
+    <li>subject_with_the_and_adj_acc->den |adj|en künstlichen Metabolismus</li>
+    <!-- dative indefinite zero article -->
+    <li>subject_dat_indef_zero->künstlichem Metabolismus</li>
+    <!-- accusative indefinite zero article -->
+    <li>subject_acc_indef_zero->künstlichen Metabolismus</li>
   </ArtificialMetabolism.generalRules.rulesStrings>
   
   <!-- EN: brain wiring -->
@@ -39,20 +65,44 @@
     <li>subject_gerund->crafting brain implants</li>
   -->
   <BrainWiring.generalRules.rulesStrings>
-    <li>subject->Hirnimplantate</li>
-    <li>subject_with_adj->e Hirnimplantate</li>
     <li>subject_story->eine Abhandlung über die Verwendung von Nervennägeln in masochistischen Kulten zur Verbesserung ihrer Moral schrieb</li>
     <li>subject_story->einem Angriffstrupp Schmerzstopper implantierte. Sie konnten einen viel größeren Trupp eliminieren, wurden aber alle tödlich verwundet oder getötet</li>
     <li>subject_story->ein Joywire-Implantat implantiert bekam und, obwohl [ANYPAWN_pronoun] danach glücklich war, durchs Leben stolperte</li>
     <li>subject_gerund->die Herstellung von Hirnimplantaten</li>
+    <li>subject_gerund_with_of->der Herstellung von Hirnimplantaten</li>
+    <li>subject_gerund_with_to->zur Herstellung von Hirnimplantaten</li>
     <li>subject_gerund_acc->die Herstellung von Hirnimplantaten</li>
     <li>subject_gerund_dat->der Herstellung von Hirnimplantaten</li>
+    <!-- nominative indefinite zero article -->
+    <li>subject->Hirnimplantate</li>
+    <!-- gender nominative indefinite -->
+    <li>subject_gender_nom_indef->|F|Hirnimplantate</li>
+    <!-- of + genitive definite -->
+    <li>subject_with_of->der Hirnimplantate</li>
+    <!-- of + adj + genitive definite -->
+    <li>subject_with_of_and_adj->der |adj|en Hirnimplantate</li>
+    <!-- to + dative definite -->
+    <li>subject_with_to->zu Hirnimplantaten</li>
+    <!-- to + adj + dative definite -->
+    <li>subject_with_to_and_adj->zu |adj|en Hirnimplantaten</li>
+    <!-- the + dative definite -->
+    <li>subject_with_the_dat->Hirnimplantaten</li>
+    <!-- the + adj + dative definite -->
+    <li>subject_with_the_and_adj_dat->|adj|en Hirnimplantaten</li>
+    <!-- the + accusative definite -->
+    <li>subject_with_the_acc->Hirnimplantate</li>
+    <!-- the + adj + accusative definite -->
+    <li>subject_with_the_and_adj_acc->|adj|e Hirnimplantate</li>
+    <!-- dative indefinite zero article -->
+    <li>subject_dat_indef_zero->Hirnimplantaten</li>
+    <!-- accusative indefinite zero article -->
+    <li>subject_acc_indef_zero->Hirnimplantate</li>
   </BrainWiring.generalRules.rulesStrings>
   
   <!-- EN: circadian influence -->
   <CircadianInfluence.label>biorhythmische Anpassung</CircadianInfluence.label>
   <!-- EN: Craft brain implants that chemically manipulate the circadian rhythm, reducing or altering the need to sleep. -->
-  <CircadianInfluence.description>Stelle Implantate her, die den Biorhythmus chemisch manipulieren, um den Schlafbedarf zu reduzieren oder zu verändern.</CircadianInfluence.description>
+  <CircadianInfluence.description>Stelle Hirnimplantate her, die den Biorhythmus chemisch manipulieren, um den Schlafbedarf zu reduzieren oder zu verändern.</CircadianInfluence.description>
   <!-- EN:
     <li>subject->sleep reduction implant</li>
     <li>subject_story->studied unihemispheric sleep patterns in cetaceans and proposed a new form of circadian half-cycler</li>
@@ -61,14 +111,38 @@
     <li>subject_gerund->crafting sleep reduction implants</li>
   -->
   <CircadianInfluence.generalRules.rulesStrings>
-    <li>subject->Schlafreduktionsimplantat</li>
-    <li>subject_with_adj->er Schlafreduktionsimplantat</li>
     <li>subject_story->unihemisphärische Schlafmuster bei Walen studierte und eine neue Form des Biorhythmus-Halbierers vorschlug</li>
     <li>subject_story->allen Bewerbern für die Stadtwache einen Biorhythmus-Halbierer aufzwang, damit sie notfalls unbefristet auf ihrem Posten bleiben konnten</li>
     <li>subject_story->Ochsenfrösche und Giraffen studierte, um herauszufinden, welche Xenokeime für eine Biorhythmus-Assistent-Drüse notwendig sind</li>
     <li>subject_gerund->die Herstellung von Implantaten zur Schlafreduzierung</li>
+    <li>subject_gerund_with_of->der Herstellung von Implantaten zur Schlafreduzierung</li>
+    <li>subject_gerund_with_to->zur Herstellung von Implantaten zur Schlafreduzierung</li>
     <li>subject_gerund_acc->die Herstellung von Implantaten zur Schlafreduzierung</li>
     <li>subject_gerund_dat->der Herstellung von Implantaten zur Schlafreduzierung</li>
+    <!-- nominative indefinite zero article -->
+    <li>subject->Schlafreduktionsimplantate</li>
+    <!-- gender nominative indefinite -->
+    <li>subject_gender_nom_indef->|F|Schlafreduktionsimplantate</li>
+    <!-- of + genitive definite -->
+    <li>subject_with_of->der Schlafreduktionsimplantate</li>
+    <!-- of + adj + genitive definite -->
+    <li>subject_with_of_and_adj->der |adj|en Schlafreduktionsimplantate</li>
+    <!-- to + dative definite -->
+    <li>subject_with_to->zu Schlafreduktionsimplantaten</li>
+    <!-- to + adj + dative definite -->
+    <li>subject_with_to_and_adj->zu |adj|en Schlafreduktionsimplantaten</li>
+    <!-- the + dative definite -->
+    <li>subject_with_the_dat->Schlafreduktionsimplantaten</li>
+    <!-- the + adj + dative definite -->
+    <li>subject_with_the_and_adj_dat->|adj|en Schlafreduktionsimplantaten</li>
+    <!-- the + accusative definite -->
+    <li>subject_with_the_acc->Schlafreduktionsimplantate</li>
+    <!-- the + adj + accusative definite -->
+    <li>subject_with_the_and_adj_acc->|adj|e Schlafreduktionsimplantate</li>
+    <!-- dative indefinite zero article -->
+    <li>subject_dat_indef_zero->Schlafreduktionsimplantaten</li>
+    <!-- accusative indefinite zero article -->
+    <li>subject_acc_indef_zero->Schlafreduktionsimplantate</li>
   </CircadianInfluence.generalRules.rulesStrings>
   
   <!-- EN: compact weaponry -->
@@ -83,14 +157,38 @@
     <li>subject_gerund->crafting compact bionic weapons</li>
   -->
   <CompactWeaponry.generalRules.rulesStrings>
-    <li>subject->kompakte Waffen</li>
-    <li>subject_with_adj->e kompakte Waffen</li>
     <li>subject_story->als {ANYPAWN_gender ? Detektiv : Detektivin} tätig war und mehr als einmal durch den versteckten Kniestachel gerettet wurde</li>
     <li>subject_story->sich einen Sommer lang erholen musste, weil [ANYPAWN_pronoun] von der Handkralle eines entflohenen Sklaven aufgeschlitzt worden war</li>
     <li>subject_story->beim Sicherheitsdienst arbeitete und die Besucher des Rathauses scannte, als ein Cyborg versuchte, in das Rathaus einzudringen</li>
     <li>subject_gerund->die Herstellung von kompakten bionischen Waffen</li>
+    <li>subject_gerund_with_of->der Herstellung von kompakten bionischen Waffen</li>
+    <li>subject_gerund_with_to->zur Herstellung von kompakten bionischen Waffen</li>
     <li>subject_gerund_acc->die Herstellung von kompakten bionischen Waffen</li>
     <li>subject_gerund_dat->der Herstellung von kompakten bionischen Waffen</li>
+    <!-- nominative indefinite zero article -->
+    <li>subject->kompakte Waffen</li>
+    <!-- gender nominative indefinite -->
+    <li>subject_gender_nom_indef->|F|kompakte Waffen</li>
+    <!-- of + genitive definite -->
+    <li>subject_with_of->der kompakten Waffen</li>
+    <!-- of + adj + genitive definite -->
+    <li>subject_with_of_and_adj->der |adj|en kompakten Waffen</li>
+    <!-- to + dative definite -->
+    <li>subject_with_to->zu kompakten Waffen</li>
+    <!-- to + adj + dative definite -->
+    <li>subject_with_to_and_adj->zu |adj|en kompakten Waffen</li>
+    <!-- the + dative definite -->
+    <li>subject_with_the_dat->kompakten Waffen</li>
+    <!-- the + adj + dative definite -->
+    <li>subject_with_the_and_adj_dat->|adj|en kompakten Waffen</li>
+    <!-- the + accusative definite -->
+    <li>subject_with_the_acc->kompakte Waffen</li>
+    <!-- the + adj + accusative definite -->
+    <li>subject_with_the_and_adj_acc->|adj|e kompakte Waffen</li>
+    <!-- dative indefinite zero article -->
+    <li>subject_dat_indef_zero->kompakten Waffen</li>
+    <!-- accusative indefinite zero article -->
+    <li>subject_acc_indef_zero->kompakte Waffen</li>
   </CompactWeaponry.generalRules.rulesStrings>
   
   <!-- EN: flesh shaping -->
@@ -105,14 +203,38 @@
     <li>subject_gerund->crafting aesthetic bionics</li>
   -->
   <FleshShaping.generalRules.rulesStrings>
-    <li>subject->Schönheitschirurgie</li>
-    <li>subject_with_adj->e Schönheitschirurgie</li>
     <li>subject_story->den Einwohnerschwund in einer Urbwelt aufhielt, indem [ANYPAWN_pronoun] kostenlose Libidoverstärker und Drogen verteilte</li>
     <li>subject_story->als {ANYPAWN_gender ? leitender Fleischformer : leitende Fleischformerin} in einer Schönheitsklinik angestellt wurde und [ANYPAWN_possessive]e Tage damit verbrachte, schöne Gliedmaßen zu formen</li>
     <li>subject_story->die Kinder der Glitzerwelt um das Lagerfeuer versammelte und ihnen Gruselgeschichten erzählte, wie sie ihre unästhetischen Nasen zurückbekamen</li>
     <li>subject_gerund->die Herstellung von ästhetischen Körperteilen</li>
+    <li>subject_gerund_with_of->der Herstellung von ästhetischen Körperteilen</li>
+    <li>subject_gerund_with_to->zur Herstellung von ästhetischen Körperteilen</li>
     <li>subject_gerund_acc->die Herstellung von ästhetischen Körperteilen</li>
     <li>subject_gerund_dat->der Herstellung von ästhetischen Körperteilen</li>
+    <!-- nominative indefinite zero article -->
+    <li>subject->Schönheitschirurgie</li>
+    <!-- gender nominative indefinite -->
+    <li>subject_gender_nom_indef->|F|Schönheitschirurgie</li>
+    <!-- of + genitive definite -->
+    <li>subject_with_of->der Schönheitschirurgie</li>
+    <!-- of + adj + genitive definite -->
+    <li>subject_with_of_and_adj->der |adj|en Schönheitschirurgie</li>
+    <!-- to + dative definite -->
+    <li>subject_with_to->zur Schönheitschirurgie</li>
+    <!-- to + adj + dative definite -->
+    <li>subject_with_to_and_adj->zur |adj|en Schönheitschirurgie</li>
+    <!-- the + dative definite -->
+    <li>subject_with_the_dat->der Schönheitschirurgie</li>
+    <!-- the + adj + dative definite -->
+    <li>subject_with_the_and_adj_dat->der |adj|en Schönheitschirurgie</li>
+    <!-- the + accusative definite -->
+    <li>subject_with_the_acc->die Schönheitschirurgie</li>
+    <!-- the + adj + accusative definite -->
+    <li>subject_with_the_and_adj_acc->die |adj|e Schönheitschirurgie</li>
+    <!-- dative indefinite zero article -->
+    <li>subject_dat_indef_zero->Schönheitschirurgie</li>
+    <!-- accusative indefinite zero article -->
+    <li>subject_acc_indef_zero->Schönheitschirurgie</li>
   </FleshShaping.generalRules.rulesStrings>
   
   <!-- EN: healing factors -->
@@ -127,14 +249,38 @@
     <li>subject_gerund->crafting regeneration bionics</li>
   -->
   <HealingFactors.generalRules.rulesStrings>
-    <li>subject->Heilungsfaktoren</li>
-    <li>subject_with_adj->er Heilungsfaktoren</li>
     <li>subject_story->die imperialen Mitglieder des Königshauses auf blaues Blut untersuchte. Sie hatten keins, aber es gerann unglaublich schnell</li>
     <li>subject_story->dafür sorgte, dass alle Grubenkämpfer mit Heilungsverstärkern und entsprechenden Xenokeimen ausgestattet wurden, damit sie öfter kämpfen konnten</li>
     <li>subject_story->uralte Leichen, die [ANYPAWN_pronoun] in einem Kryptoschlafschrein gefunden hatte, studierte und ihnen ihre Schnellheilungsimplantate entnahm</li>
     <li>subject_gerund->die Herstellung von regenerativen Implantaten</li>
+    <li>subject_gerund_with_of->der Herstellung von regenerativen Implantaten</li>
+    <li>subject_gerund_with_to->zur Herstellung von regenerativen Implantaten</li>
     <li>subject_gerund_acc->die Herstellung von regenerativen Implantaten</li>
     <li>subject_gerund_dat->der Herstellung von regenerativen Implantaten</li>
+    <!-- nominative indefinite zero article -->
+    <li>subject->Heilungsfaktoren</li>
+    <!-- gender nominative indefinite -->
+    <li>subject_gender_nom_indef->|F|Heilungsfaktoren</li>
+    <!-- of + genitive definite -->
+    <li>subject_with_of->der Heilungsfaktoren</li>
+    <!-- of + adj + genitive definite -->
+    <li>subject_with_of_and_adj->der |adj|en Heilungsfaktoren</li>
+    <!-- to + dative definite -->
+    <li>subject_with_to->zu Heilungsfaktoren</li>
+    <!-- to + adj + dative definite -->
+    <li>subject_with_to_and_adj->zu |adj|en Heilungsfaktoren</li>
+    <!-- the + dative definite -->
+    <li>subject_with_the_dat->Heilungsfaktoren</li>
+    <!-- the + adj + dative definite -->
+    <li>subject_with_the_and_adj_dat->|adj|en Heilungsfaktoren</li>
+    <!-- the + accusative definite -->
+    <li>subject_with_the_acc->Heilungsfaktoren</li>
+    <!-- the + adj + accusative definite -->
+    <li>subject_with_the_and_adj_acc->|adj|e Heilungsfaktoren</li>
+    <!-- dative indefinite zero article -->
+    <li>subject_dat_indef_zero->Heilungsfaktoren</li>
+    <!-- accusative indefinite zero article -->
+    <li>subject_acc_indef_zero->Heilungsfaktoren</li>
   </HealingFactors.generalRules.rulesStrings>
   
   <!-- EN: molecular analysis -->
@@ -149,20 +295,44 @@
     <li>subject_gerund->crafting molecular analysis bionics</li>
   -->
   <MolecularAnalysis.generalRules.rulesStrings>
-    <li>subject->Molekularanalyse</li>
-    <li>subject_with_adj->e Molekularanalyse</li>
     <li>subject_story->den Köchen in der Kochschule erklärte, dass sie niemals ästhetische Nasen haben dürfen, damit ihre Gastroanalysatoren nicht versagen</li>
     <li>subject_story->einen Immunisierverstärker implantiert bekam und sich so in der Isolationskolonie frei bewegen konnte</li>
     <li>subject_story->über die möglichen Hardwarekonflikte zwischen bionischen Teilen und Implantaten der Molekularanalyse referierte</li>
     <li>subject_gerund->die Herstellung von Implantaten der Molekularanalyse</li>
+    <li>subject_gerund_with_of->der Herstellung von Implantaten der Molekularanalyse</li>
+    <li>subject_gerund_with_to->zur Herstellung von Implantaten der Molekularanalyse</li>
     <li>subject_gerund_acc->die Herstellung von Implantaten der Molekularanalyse</li>
     <li>subject_gerund_dat->der Herstellung von Implantaten der Molekularanalyse</li>
+    <!-- nominative indefinite zero article -->
+    <li>subject->Molekularanalyse</li>
+    <!-- gender nominative indefinite -->
+    <li>subject_gender_nom_indef->|F|Molekularanalyse</li>
+    <!-- of + genitive definite -->
+    <li>subject_with_of->der Molekularanalyse</li>
+    <!-- of + adj + genitive definite -->
+    <li>subject_with_of_and_adj->der |adj|en Molekularanalyse</li>
+    <!-- to + dative definite -->
+    <li>subject_with_to->zur Molekularanalyse</li>
+    <!-- to + adj + dative definite -->
+    <li>subject_with_to_and_adj->zur |adj|en Molekularanalyse</li>
+    <!-- the + dative definite -->
+    <li>subject_with_the_dat->der Molekularanalyse</li>
+    <!-- the + adj + dative definite -->
+    <li>subject_with_the_and_adj_dat->der |adj|en Molekularanalyse</li>
+    <!-- the + accusative definite -->
+    <li>subject_with_the_acc->die Molekularanalyse</li>
+    <!-- the + adj + accusative definite -->
+    <li>subject_with_the_and_adj_acc->die |adj|e Molekularanalyse</li>
+    <!-- dative indefinite zero article -->
+    <li>subject_dat_indef_zero->Molekularanalyse</li>
+    <!-- accusative indefinite zero article -->
+    <li>subject_acc_indef_zero->Molekularanalyse</li>
   </MolecularAnalysis.generalRules.rulesStrings>
   
   <!-- EN: neural computation -->
   <NeuralComputation.label>neurale Berechnungen</NeuralComputation.label>
   <!-- EN: Craft brain implants that assist thought and learning by use of a direct, shallow brain-computer interface. -->
-  <NeuralComputation.description>Stelle Gehirnimplantate her, die mithilfe einer linearen oberflächlichen Gehirn-Computer-Schnittstelle das Denken und Lernen unterstützen.</NeuralComputation.description>
+  <NeuralComputation.description>Stelle Hirnimplantate her, die mithilfe einer linearen, seichten Hirn-Computer-Schnittstelle das Denken und Lernen unterstützen.</NeuralComputation.description>
   <!-- EN:
     <li>subject->brain implants</li>
     <li>subject->neural computation</li>
@@ -172,16 +342,38 @@
     <li>subject_gerund->crafting brain implants</li>
   -->
   <NeuralComputation.generalRules.rulesStrings>
-    <li>subject->Hirnimplantate</li>
-    <li>subject_with_adj->e Hirnimplantate</li>
-    <li>subject->neurale Berechnungen</li>
-    <li>subject_with_adj->e neurale Berechnungen</li>
     <li>subject_story->genau wusste, wie [ANYPAWN_pronoun] den Gefängniswärter außer Gefecht setzen und Zeit für die Befreiung der Gefangenen gewinnen konnte: Mit einem EMP-Angriff auf seinen Lernassistenten, um einen Hirnschock auszulösen</li>
     <li>subject_story->die Implantation von Lernassistenten oder Neurorechnern in der gesamten Fakultät anordnete</li>
     <li>subject_story->einen Lernassistenten implantiert bekam. Dies erwies sich später als problematisch, als [ANYPAWN_pronoun] von Piraten gefangen genommen wurde, die jeden [ANYPAWN_possessive]er Fluchtversuche mit einem EMP-Angriff vereitelten</li>
     <li>subject_gerund->die Herstellung von Hirnimplantaten</li>
+    <li>subject_gerund_with_of->der Herstellung von Hirnimplantaten</li>
+    <li>subject_gerund_with_to->zur Herstellung von Hirnimplantaten</li>
     <li>subject_gerund_acc->die Herstellung von Hirnimplantaten</li>
     <li>subject_gerund_dat->der Herstellung von Hirnimplantaten</li>
+    <!-- nominative indefinite zero article -->
+    <li>subject->neurale Berechnungen</li>
+    <!-- gender nominative indefinite -->
+    <li>subject_gender_nom_indef->|F|neurale Berechnungen</li>
+    <!-- of + genitive definite -->
+    <li>subject_with_of->der neuralen Berechnungen</li>
+    <!-- of + adj + genitive definite -->
+    <li>subject_with_of_and_adj->der |adj|en neuralen Berechnungen</li>
+    <!-- to + dative definite -->
+    <li>subject_with_to->zu neuralen Berechnungen</li>
+    <!-- to + adj + dative definite -->
+    <li>subject_with_to_and_adj->zu |adj|en neuralen Berechnungen</li>
+    <!-- the + dative definite -->
+    <li>subject_with_the_dat->neuralen Berechnungen</li>
+    <!-- the + adj + dative definite -->
+    <li>subject_with_the_and_adj_dat->|adj|en neuralen Berechnungen</li>
+    <!-- the + accusative definite -->
+    <li>subject_with_the_acc->neurale Berechnungen</li>
+    <!-- the + adj + accusative definite -->
+    <li>subject_with_the_and_adj_acc->|adj|e neurale Berechnungen</li>
+    <!-- dative indefinite zero article -->
+    <li>subject_dat_indef_zero->neuralen Berechnungen</li>
+    <!-- accusative indefinite zero article -->
+    <li>subject_acc_indef_zero->neurale Berechnungen</li>
   </NeuralComputation.generalRules.rulesStrings>
   
   <!-- EN: skin hardening -->
@@ -196,14 +388,38 @@
     <li>subject_gerund->crafting subdermal armor implants</li>
   -->
   <SkinHardening.generalRules.rulesStrings>
-    <li>subject->subdermale Implantate</li>
-    <li>subject_with_adj->e subdermale Implantate</li>
     <li>subject_story->die Drüsen der Rindenhautdryaden untersuchte und zu dem Schluss kam, dass sie für den Menschen angepasst und nutzbar gemacht werden könnten</li>
     <li>subject_story->mit den Steinhautbändigern der Dinowelt umherzog und ihre dicken Keratinplatten studierte, mit denen sie bedeckt waren</li>
     <li>subject_story->mit Nanomaschinendrüsen arbeitete, um die menschliche Epidermis zu verdicken, auf Kosten des traditionellen Schönheitsideals</li>
     <li>subject_gerund->die Herstellung von subdermalen Implantaten</li>
+    <li>subject_gerund_with_of->der Herstellung von subdermalen Implantaten</li>
+    <li>subject_gerund_with_to->zur Herstellung von subdermalen Implantaten</li>
     <li>subject_gerund_acc->die Herstellung von subdermalen Implantaten</li>
     <li>subject_gerund_dat->der Herstellung von subdermalen Implantaten</li>
+    <!-- nominative indefinite zero article -->
+    <li>subject->subdermale Implantate</li>
+    <!-- gender nominative indefinite -->
+    <li>subject_gender_nom_indef->|F|subdermale Implantate</li>
+    <!-- of + genitive definite -->
+    <li>subject_with_of->der subdermalen Implantate</li>
+    <!-- of + adj + genitive definite -->
+    <li>subject_with_of_and_adj->der |adj|en subdermalen Implantate</li>
+    <!-- to + dative definite -->
+    <li>subject_with_to->zu subdermalen Implantaten</li>
+    <!-- to + adj + dative definite -->
+    <li>subject_with_to_and_adj->zu |adj|en subdermalen Implantaten</li>
+    <!-- the + dative definite -->
+    <li>subject_with_the_dat->subdermalen Implantaten</li>
+    <!-- the + adj + dative definite -->
+    <li>subject_with_the_and_adj_dat->|adj|en subdermalen Implantaten</li>
+    <!-- the + accusative definite -->
+    <li>subject_with_the_acc->subdermale Implantate</li>
+    <!-- the + adj + accusative definite -->
+    <li>subject_with_the_and_adj_acc->|adj|e subdermale Implantate</li>
+    <!-- dative indefinite zero article -->
+    <li>subject_dat_indef_zero->subdermalen Implantaten</li>
+    <!-- accusative indefinite zero article -->
+    <li>subject_acc_indef_zero->subdermale Implantate</li>
   </SkinHardening.generalRules.rulesStrings>
   
   <!-- EN: specialized limbs -->
@@ -218,14 +434,38 @@
     <li>subject_gerund->crafting specialized bionic arms</li>
   -->
   <SpecializedLimbs.generalRules.rulesStrings>
-    <li>subject->Spezialprothesen</li>
-    <li>subject_with_adj->e Spezialprothesen</li>
     <li>subject_story->die Vertragsbauern einer feudalen Welt interviewte, vor und nach dem Anbringen einer Feldhand</li>
     <li>subject_story->einen Zweikampf zwischen einem Grubenkämpfer mit einer Powerklaue und einem Minenarbeiter mit zwei Bohrarmen beobachtete</li>
     <li>subject_story->als {ANYPAWN_gender ? Chirurg : Chirurgin} auf einer Randwelt arbeitete und fehlende Arme durch alles Mögliche ersetzte, von einer Holzhand bis zu einer Powerklaue</li>
     <li>subject_gerund->die Herstellung von Spezialgliedmaßen</li>
+    <li>subject_gerund_with_of->der Herstellung von Spezialgliedmaßen</li>
+    <li>subject_gerund_with_to->zur Herstellung von Spezialgliedmaßen</li>
     <li>subject_gerund_acc->die Herstellung von Spezialgliedmaßen</li>
     <li>subject_gerund_dat->der Herstellung von Spezialgliedmaßen</li>
+    <!-- nominative indefinite zero article -->
+    <li>subject->Spezialprothesen</li>
+    <!-- gender nominative indefinite -->
+    <li>subject_gender_nom_indef->|F|Spezialprothesen</li>
+    <!-- of + genitive definite -->
+    <li>subject_with_of->der Spezialprothesen</li>
+    <!-- of + adj + genitive definite -->
+    <li>subject_with_of_and_adj->der |adj|en Spezialprothesen</li>
+    <!-- to + dative definite -->
+    <li>subject_with_to->zu Spezialprothesen</li>
+    <!-- to + adj + dative definite -->
+    <li>subject_with_to_and_adj->zu |adj|en Spezialprothesen</li>
+    <!-- the + dative definite -->
+    <li>subject_with_the_dat->Spezialprothesen</li>
+    <!-- the + adj + dative definite -->
+    <li>subject_with_the_and_adj_dat->|adj|en Spezialprothesen</li>
+    <!-- the + accusative definite -->
+    <li>subject_with_the_acc->Spezialprothesen</li>
+    <!-- the + adj + accusative definite -->
+    <li>subject_with_the_and_adj_acc->|adj|e Spezialprothesen</li>
+    <!-- dative indefinite zero article -->
+    <li>subject_dat_indef_zero->Spezialprothesen</li>
+    <!-- accusative indefinite zero article -->
+    <li>subject_acc_indef_zero->Spezialprothesen</li>
   </SpecializedLimbs.generalRules.rulesStrings>
   
   <!-- EN: poison synthesis -->
@@ -240,14 +480,38 @@
     <li>subject_gerund->crafting poisonous bionic weapons</li>
   -->
   <VenomSynthesis.generalRules.rulesStrings>
-    <li>subject->Giftsynthese</li>
-    <li>subject_with_adj->e Giftsynthese</li>
     <li>subject_story->an chemischen Reaktoren in kleinem Maßstab arbeitete, die verkleinert und in einem Körper verstaut werden konnten</li>
     <li>subject_story->die Giftratten einer Müllwelt studierte und eine Abhandlung über die einzigartigen Giftbisse schrieb</li>
     <li>subject_story->kleine scharfe Klingen lieben lernte, die mit einem einzigen Stich töten konnten</li>
     <li>subject_gerund->die Herstellung von bionischen Giftwaffen</li>
+    <li>subject_gerund_with_of->der Herstellung von bionischen Giftwaffen</li>
+    <li>subject_gerund_with_to->zur Herstellung von bionischen Giftwaffen</li>
     <li>subject_gerund_acc->die Herstellung von bionischen Giftwaffen</li>
     <li>subject_gerund_dat->der Herstellung von bionischen Giftwaffen</li>
+    <!-- nominative indefinite zero article -->
+    <li>subject->Giftsynthese</li>
+    <!-- gender nominative indefinite -->
+    <li>subject_gender_nom_indef->|F|Giftsynthese</li>
+    <!-- of + genitive definite -->
+    <li>subject_with_of->der Giftsynthese</li>
+    <!-- of + adj + genitive definite -->
+    <li>subject_with_of_and_adj->der |adj|en Giftsynthese</li>
+    <!-- to + dative definite -->
+    <li>subject_with_to->zur Giftsynthese</li>
+    <!-- to + adj + dative definite -->
+    <li>subject_with_to_and_adj->zur |adj|en Giftsynthese</li>
+    <!-- the + dative definite -->
+    <li>subject_with_the_dat->der Giftsynthese</li>
+    <!-- the + adj + dative definite -->
+    <li>subject_with_the_and_adj_dat->der |adj|en Giftsynthese</li>
+    <!-- the + accusative definite -->
+    <li>subject_with_the_acc->die Giftsynthese</li>
+    <!-- the + adj + accusative definite -->
+    <li>subject_with_the_and_adj_acc->die |adj|e Giftsynthese</li>
+    <!-- dative indefinite zero article -->
+    <li>subject_dat_indef_zero->Giftsynthese</li>
+    <!-- accusative indefinite zero article -->
+    <li>subject_acc_indef_zero->Giftsynthese</li>
   </VenomSynthesis.generalRules.rulesStrings>
   
 </LanguageData>

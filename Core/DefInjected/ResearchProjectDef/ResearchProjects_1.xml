@@ -14,17 +14,43 @@
     <li>subject_gerund->brewing beer</li>
   -->
   <Brewing.generalRules.rulesStrings>
-    <li>subject->Brauen</li>
-    <li>subject_with_adj->es Brauen</li>
     <li>subject_story->ein einzigartiges Starkbier braute, das im ganzen System berühmt wurde</li>
     <li>subject_story->sich zurückzog, um ein Wirtshaus auf einer Tierwelt zu betreiben</li>
     <li>subject_story->sich auf klimatisierte Gärungstechniken spezialisierte</li>
     <li>subject_gerund->der Bau von Brauereien</li>
+    <li>subject_gerund_with_of->des Baus von Brauereien</li>
+    <li>subject_gerund_with_to->zum Bau von Brauereien</li>
     <li>subject_gerund_acc->den Bau von Brauereien</li>
     <li>subject_gerund_dat->dem Bau von Brauereien</li>
-    <li>subject_gerund->das Brauen von Bier</li>
-    <li>subject_gerund_acc->das Brauen von Bier</li>
-    <li>subject_gerund_dat->dem Brauen von Bier</li>
+    <li>subject_gerund->das Bierbrauen</li>
+    <li>subject_gerund_with_of->des Bierbrauens</li>
+    <li>subject_gerund_with_to->zum Bierbrauen</li>
+    <li>subject_gerund_acc->das Bierbrauen</li>
+    <li>subject_gerund_dat->dem Bierbrauen</li>
+    <!-- nominative indefinite zero article -->
+    <li>subject->Brauen</li>
+    <!-- gender nominative indefinite -->
+    <li>subject_gender_nom_indef->|N|Brauen</li>
+    <!-- of + genitive definite  -->
+    <li>subject_with_of->des Brauens</li>
+    <!-- of + adj + genitive definite -->
+    <li>subject_with_of_and_adj->des |adj|en Brauens</li>
+    <!-- to + dative definite -->
+    <li>subject_with_to->zum Brauen</li>
+    <!-- to + adj + dative definite -->
+    <li>subject_with_to_and_adj->zum |adj|en Brauen</li>
+    <!-- the + dative definite -->
+    <li>subject_with_the_dat->dem Brauen</li>
+    <!-- the + adj + dative definite -->
+    <li>subject_with_the_and_adj_dat->dem |adj|en Brauen</li>
+    <!-- the + accusative definite -->
+    <li>subject_with_the_acc->das Brauen</li>
+    <!-- the + adj + accusative definite -->
+    <li>subject_with_the_and_adj_acc->das |adj|e Brauen</li>
+    <!-- dative indefinite zero article -->
+    <li>subject_dat_indef_zero->Brauen</li>
+    <!-- accusative indefinite zero article -->
+    <li>subject_acc_indef_zero->Brauen</li>
   </Brewing.generalRules.rulesStrings>
   
   <!-- EN: carpet-making -->
@@ -39,14 +65,38 @@
     <li>subject_gerund->weaving carpets</li>
   -->
   <CarpetMaking.generalRules.rulesStrings>
-    <li>subject->Teppichherstellung</li>
-    <li>subject_with_adj->e Teppichherstellung</li>
-    <li>subject_story->lernte, Teppiche aus Haaren zu weben, für einen fernen Kaiser</li>
+    <li>subject_story->lernte, Teppiche aus Haaren für einen fernen Kaiser zu weben</li>
     <li>subject_story->eine beispiellose Sammlung von Teppichen und Wandbehängen hinterließ</li>
     <li>subject_story->sich auf einem mittelalterlichen Mond niederließ, wo die Teppichherstellung wirklich geschätzt wurde</li>
     <li>subject_gerund->die Herstellung von Teppichen</li>
+    <li>subject_gerund_with_of->der Herstellung von Teppichen</li>
+    <li>subject_gerund_with_to->zur Herstellung von Teppichen</li>
     <li>subject_gerund_acc->die Herstellung von Teppichen</li>
     <li>subject_gerund_dat->der Herstellung von Teppichen</li>
+    <!-- nominative indefinite zero article -->
+    <li>subject->Teppichherstellung</li>
+    <!-- gender nominative indefinite -->
+    <li>subject_gender_nom_indef->|F|Teppichherstellung</li>
+    <!-- of + genitive definite  -->
+    <li>subject_with_of->der Teppichherstellung</li>
+    <!-- of + adj + genitive definite -->
+    <li>subject_with_of_and_adj->der |adj|en Teppichherstellung</li>
+    <!-- to + dative definite -->
+    <li>subject_with_to->zur Teppichherstellung</li>
+    <!-- to + adj + dative definite -->
+    <li>subject_with_to_and_adj->zur |adj|en Teppichherstellung</li>
+    <!-- the + dative definite -->
+    <li>subject_with_the_dat->der Teppichherstellung</li>
+    <!-- the + adj + dative definite -->
+    <li>subject_with_the_and_adj_dat->der |adj|en Teppichherstellung</li>
+    <!-- the + accusative definite -->
+    <li>subject_with_the_acc->die Teppichherstellung</li>
+    <!-- the + adj + accusative definite -->
+    <li>subject_with_the_and_adj_acc->die |adj|e Teppichherstellung</li>
+    <!-- dative indefinite zero article -->
+    <li>subject_dat_indef_zero->Teppichherstellung</li>
+    <!-- accusative indefinite zero article -->
+    <li>subject_acc_indef_zero->Teppichherstellung</li>
   </CarpetMaking.generalRules.rulesStrings>
   
   <!-- EN: cocoa -->
@@ -63,19 +113,55 @@
     <li>subject_gerund->cultivating cocoa</li>
   -->
   <Cocoa.generalRules.rulesStrings>
-    <li>subject->Kakao</li>
-    <li>subject_with_adj->er Kakao</li>
-    <li>subject->Schokolade</li>
-    <li>subject_with_adj->e Schokolade</li>
     <li>subject_story->süchtig nach Schokolade wurde und gebremst werden musste</li>
-    <li>subject_story->im Rahmen einer Diplomarbeit den Gärprozess von Kakao studierte</li>
+    <li>subject_story->im Rahmen [ANYPAWN_possessive]er Diplomarbeit den Gärprozess von Kakao studierte</li>
     <li>subject_story->den besten Pralinenladen in der Branche eröffnete</li>
     <li>subject_gerund->die Herstellung von Schokolade</li>
+    <li>subject_gerund_with_of->der Herstellung von Schokolade</li>
+    <li>subject_gerund_with_to->zur Herstellung von Schokolade</li>
     <li>subject_gerund_acc->die Herstellung von Schokolade</li>
     <li>subject_gerund_dat->der Herstellung von Schokolade</li>
-    <li>subject_gerund->der Anbau von Kakao</li>
-    <li>subject_gerund_acc->den Anbau von Kakao</li>
-    <li>subject_gerund_dat->dem Anbau von Kakao</li>
+    <li>subject_gerund->der Kakaoanbau</li>
+    <li>subject_gerund_with_of->des Kakaoanbaus</li>
+    <li>subject_gerund_with_to->zum Kakaoanbau</li>
+    <li>subject_gerund_acc->den Kakaoanbau</li>
+    <li>subject_gerund_dat->dem Kakaoanbau</li>
+    <!-- nominative indefinite zero article -->
+    <li>subject->Kakao</li>
+    <li>subject->Schokolade</li>
+    <!-- gender nominative indefinite -->
+    <li>subject_gender_nom_indef->|M|Kakao</li>
+    <li>subject_gender_nom_indef->|F|Schokolade</li>
+    <!-- of + genitive definite -->
+    <li>subject_with_of->des Kakaos</li>
+    <li>subject_with_of->der Schokolade</li>
+    <!-- of + adj + genitive definite -->
+    <li>subject_with_of_and_adj->des |adj|en Kakaos</li>
+    <li>subject_with_of_and_adj->der |adj|en Schokolade</li>
+    <!-- to + dative definite -->
+    <li>subject_with_to->zum Kakao</li>
+    <li>subject_with_to->zur Schokolade</li>
+    <!-- to + adj + dative definite -->
+    <li>subject_with_to_and_adj->zum |adj|en Kakao</li>
+    <li>subject_with_to_and_adj->zur |adj|en Schokolade</li>
+    <!-- the + dative definite -->
+    <li>subject_with_the_dat->dem Kakao</li>
+    <li>subject_with_the_dat->der Schokolade</li>
+    <!-- the + adj + dative definite -->
+    <li>subject_with_the_and_adj_dat->dem |adj|en Kakao</li>
+    <li>subject_with_the_and_adj_dat->der |adj|en Schokolade</li>
+    <!-- the + accusative definite -->
+    <li>subject_with_the_acc->den Kakao</li>
+    <li>subject_with_the_acc->die Schokolade</li>
+    <!-- the + adj + accusative definite -->
+    <li>subject_with_the_and_adj_acc->den |adj|en Kakao</li>
+    <li>subject_with_the_and_adj_acc->die |adj|e Schokolade</li>
+    <!-- dative indefinite zero article -->
+    <li>subject_dat_indef_zero->Kakao</li>
+    <li>subject_dat_indef_zero->Schokolade</li>
+    <!-- accusative indefinite zero article -->
+    <li>subject_acc_indef_zero->Kakao</li>
+    <li>subject_acc_indef_zero->Schokolade</li>
   </Cocoa.generalRules.rulesStrings>
   
   <!-- EN: complex clothing -->
@@ -90,14 +176,38 @@
     <li>subject_gerund->tailoring complex clothes</li>
   -->
   <ComplexClothing.generalRules.rulesStrings>
-    <li>subject->komplexes Schneidern</li>
-    <li>subject_with_adj->es komplexes Schneidern</li>
-    <li>subject_story->strapazierfähige Kleidung für das Urbwelt-Stadtvolk schneiderte</li>
-    <li>subject_story->sich beim Nähen entspannte und den Dorfkindern Geschichten erzählte</li>
-    <li>subject_story->lernte, Kleidung für die großen Auftritte [ANYPAWN_possessive]es Ensembles herzustellen</li>
+    <li>subject_story->strapazierfähige Kleidung für das urbweltliche Stadtvolk schneiderte</li>
+    <li>subject_story->sich den Dorfkindern beim Nähen entspannt Geschichten erzählte</li>
+    <li>subject_story->begann, Kleidung für die großen Auftritte [ANYPAWN_possessive]es Ensembles herzustellen</li>
     <li>subject_gerund->die Herstellung komplexer Kleidung</li>
+    <li>subject_gerund_with_of->der Herstellung komplexer Kleidung</li>
+    <li>subject_gerund_with_to->zur Herstellung komplexer Kleidung</li>
     <li>subject_gerund_acc->die Herstellung komplexer Kleidung</li>
     <li>subject_gerund_dat->der Herstellung komplexer Kleidung</li>
+    <!-- nominative indefinite zero article -->
+    <li>subject->komplexes Schneidern</li>
+    <!-- gender nominative indefinite -->
+    <li>subject_gender_nom_indef->|N|komplexes Schneidern</li>
+    <!-- of + genitive definite -->
+    <li>subject_with_of->des komplexen Schneiderns</li>
+    <!-- of + adj + genitive definite -->
+    <li>subject_with_of_and_adj->des |adj|en komplexen Schneiderns</li>
+    <!-- to + dative definite -->
+    <li>subject_with_to->zum komplexen Schneidern</li>
+    <!-- to + adj + dative definite -->
+    <li>subject_with_to_and_adj->zum |adj|en komplexen Schneidern</li>
+    <!-- the + dative definite -->
+    <li>subject_with_the_dat->komplexen Schneidern</li>
+    <!-- the + adj + dative definite -->
+    <li>subject_with_the_and_adj_dat->|adj|em komplexen Schneidern</li>
+    <!-- the + accusative definite -->
+    <li>subject_with_the_acc->komplexes Schneidern</li>
+    <!-- the + adj + accusative definite -->
+    <li>subject_with_the_and_adj_acc->|adj|es komplexes Schneidern</li>
+    <!-- dative indefinite zero article -->
+    <li>subject_dat_indef_zero->komplexem Schneidern</li>
+    <!-- accusative indefinite zero article -->
+    <li>subject_acc_indef_zero->komplexes Schneidern</li>
   </ComplexClothing.generalRules.rulesStrings>
   
   <!-- EN: complex furniture -->
@@ -112,14 +222,38 @@
     <li>subject_gerund->building complex furniture</li>
   -->
   <ComplexFurniture.generalRules.rulesStrings>
-    <li>subject->Zimmerei</li>
-    <li>subject_with_adj->e Zimmerei</li>
     <li>subject_story->bei einem Tischlermeister das Holzschnitzen lernte</li>
-    <li>subject_story->im Alleingang eine Stadt aus Blockhütten baute</li>
+    <li>subject_story->im Alleingang eine Stadt aus Blockhütten errichtete</li>
     <li>subject_story->eine Fabrik gründete und hochwertige Möbel an vorbeiziehende Händler verkaufte</li>
     <li>subject_gerund->der Bau von komplexen Möbeln</li>
+    <li>subject_gerund_with_of->des Baus von komplexen Möbeln</li>
+    <li>subject_gerund_with_to->zum Bau von komplexen Möbeln</li>
     <li>subject_gerund_acc->den Bau von komplexen Möbeln</li>
     <li>subject_gerund_dat->dem Bau von komplexen Möbeln</li>
+    <!-- nominative indefinite zero article -->
+    <li>subject->Zimmerei</li>
+    <!-- gender nominative indefinite -->
+    <li>subject_gender_nom_indef->|F|Zimmerei</li>
+    <!-- of + genitive definite -->
+    <li>subject_with_of->der Zimmerei</li>
+    <!-- of + adj + genitive definite -->
+    <li>subject_with_of_and_adj->der |adj|en Zimmerei</li>
+    <!-- to + dative definite -->
+    <li>subject_with_to->zur Zimmerei</li>
+    <!-- to + adj + dative definite -->
+    <li>subject_with_to_and_adj->zur |adj|en Zimmerei</li>
+    <!-- the + dative definite -->
+    <li>subject_with_the_dat->der Zimmerei</li>
+    <!-- the + adj + dative definite -->
+    <li>subject_with_the_and_adj_dat->der |adj|en Zimmerei</li>
+    <!-- the + accusative definite -->
+    <li>subject_with_the_acc->die Zimmerei</li>
+    <!-- the + adj + accusative definite -->
+    <li>subject_with_the_and_adj_acc->die |adj|e Zimmerei</li>
+    <!-- dative indefinite zero article -->
+    <li>subject_dat_indef_zero->Zimmerei</li>
+    <!-- accusative indefinite zero article -->
+    <li>subject_acc_indef_zero->Zimmerei</li>
   </ComplexFurniture.generalRules.rulesStrings>
   
   <!-- EN: devilstrand -->
@@ -134,14 +268,38 @@
     <li>subject_gerund->cultivating devilstrand</li>
   -->
   <Devilstrand.generalRules.rulesStrings>
-    <li>subject->Teufelsgarn-Anbau</li>
-    <li>subject_with_adj->er Teufelsgarn-Anbau</li>
-    <li>subject_story->Teufelsgarn als natürliche Brandschneise nutzte</li>
-    <li>subject_story->die Techniken für den einfachen Anbau von Teufelsgarn entwickelte</li>
-    <li>subject_story->verrückt nach Pilzen wurde und sich selbst zur Prinzessin [ANYPAWN_possessive]es Königreichs ernannte</li>
-    <li>subject_gerund->der Anbau von Teufelsgarn</li>
-    <li>subject_gerund_acc->den Anbau von Teufelsgarn</li>
-    <li>subject_gerund_dat->dem Anbau von Teufelsgarn</li>
+    <li>subject_story->Teufelsgarnpilze als natürliche Brandschneise nutzte</li>
+    <li>subject_story->die Techniken für den einfachen Anbau von Teufelsgarnpilzen entwickelte</li>
+    <li>subject_story->eine Obsession für Pilze entwickelte und sich selbst zur Prinzessin [ANYPAWN_possessive]es Königreichs ernannte</li>
+    <li>subject_gerund->der Anbau von Teufelsgarnpilzen</li>
+    <li>subject_gerund_with_of->des Anbaus von Teufelsgarnpilzen</li>
+    <li>subject_gerund_with_to->zum Anbau von Teufelsgarnpilzen</li>
+    <li>subject_gerund_acc->den Anbau von Teufelsgarnpilzen</li>
+    <li>subject_gerund_dat->dem Anbau von Teufelsgarnpilzen</li>
+    <!-- nominative indefinite zero article -->
+    <li>subject->Anbau von Teufelsgarnpilzen</li>
+    <!-- gender nominative indefinite -->
+    <li>subject_gender_nom_indef->|M|Anbau von Teufelsgarnpilzen</li>
+    <!-- of + genitive definite -->
+    <li>subject_with_of->des Anbaus von Teufelsgarnpilzen</li>
+    <!-- of + adj + genitive definite -->
+    <li>subject_with_of_and_adj->des |adj|en Anbaus von Teufelsgarnpilzen</li>
+    <!-- to + dative definite -->
+    <li>subject_with_to->zum Anbau von Teufelsgarnpilzen</li>
+    <!-- to + adj + dative definite -->
+    <li>subject_with_to_and_adj->zum |adj|en Anbau von Teufelsgarnpilzen</li>
+    <!-- the + dative definite -->
+    <li>subject_with_the_dat->dem Anbau von Teufelsgarnpilzen</li>
+    <!-- the + adj + dative definite -->
+    <li>subject_with_the_and_adj_dat->dem |adj|en Anbau von Teufelsgarnpilzen</li>
+    <!-- the + accusative definite -->
+    <li>subject_with_the_acc->den Anbau von Teufelsgarnpilzen</li>
+    <!-- the + adj + accusative definite -->
+    <li>subject_with_the_and_adj_acc->den |adj|en Anbau von Teufelsgarnpilzen</li>
+    <!-- dative indefinite zero article -->
+    <li>subject_dat_indef_zero->Anbau von Teufelsgarnpilzen</li>
+    <!-- accusative indefinite zero article -->
+    <li>subject_acc_indef_zero->Anbau von Teufelsgarnpilzen</li>
   </Devilstrand.generalRules.rulesStrings>
   
   <!-- EN: drug production -->
@@ -158,19 +316,55 @@
     <li>subject_gerund->producing drugs</li>
   -->
   <DrugProduction.generalRules.rulesStrings>
-    <li>subject->Drogenherstellung</li>
-    <li>subject_with_adj->e Drogenherstellung</li>
-    <li>subject->Drogensynthese</li>
-    <li>subject_with_adj->e Drogensynthese</li>
     <li>subject_story->in einem Asteroidenlabor am Rande des bewohnten Weltraums arbeitete</li>
     <li>subject_story->lernte, wie man aus recycelten Chemikalien Drogen herstellt, was zu vielen Jahren im Gefängnis führte</li>
     <li>subject_story->als {ANYPAWN_gender ? Chemiker : Chemikerin} arbeitete, aber nebenbei in den Handel mit illegalen Drogen abrutschte</li>
     <li>subject_gerund->der Bau von Drogenlaboren</li>
+    <li>subject_gerund_with_of->des Baus von Drogenlaboren</li>
+    <li>subject_gerund_with_to->zum Bau von Drogenlaboren</li>
     <li>subject_gerund_acc->den Bau von Drogenlaboren</li>
     <li>subject_gerund_dat->dem Bau von Drogenlaboren</li>
     <li>subject_gerund->die Herstellung von Drogen</li>
+    <li>subject_gerund_with_of->der Herstellung von Drogen</li>
+    <li>subject_gerund_with_to->zur Herstellung von Drogen</li>
     <li>subject_gerund_acc->die Herstellung von Drogen</li>
     <li>subject_gerund_dat->der Herstellung von Drogen</li>
+    <!-- nominative indefinite zero article -->
+    <li>subject->Drogenherstellung</li>
+    <li>subject->Drogensynthese</li>
+    <!-- gender nominative indefinite -->
+    <li>subject_gender_nom_indef->|F|Drogenherstellung</li>
+    <li>subject_gender_nom_indef->|F|Drogensynthese</li>
+    <!-- of + genitive definite -->
+    <li>subject_with_of->der Drogenherstellung</li>
+    <li>subject_with_of->der Drogensynthese</li>
+    <!-- of + adj + genitive definite -->
+    <li>subject_with_of_and_adj->der |adj|en Drogenherstellung</li>
+    <li>subject_with_of_and_adj->der |adj|en Drogensynthese</li>
+    <!-- to + dative definite -->
+    <li>subject_with_to->zur Drogenherstellung</li>
+    <li>subject_with_to->zur Drogensynthese</li>
+    <!-- to + adj + dative definite -->
+    <li>subject_with_to_and_adj->zur |adj|en Drogenherstellung</li>
+    <li>subject_with_to_and_adj->zur |adj|en Drogensynthese</li>
+    <!-- the + dative definite -->
+    <li>subject_with_the_dat->der Drogenherstellung</li>
+    <li>subject_with_the_dat->der Drogensynthese</li>
+    <!-- the + adj + dative definite -->
+    <li>subject_with_the_and_adj_dat->der |adj|en Drogenherstellung</li>
+    <li>subject_with_the_and_adj_dat->der |adj|en Drogensynthese</li>
+    <!-- the + accusative definite -->
+    <li>subject_with_the_acc->die Drogenherstellung</li>
+    <li>subject_with_the_acc->die Drogensynthese</li>
+    <!-- the + adj + accusative definite -->
+    <li>subject_with_the_and_adj_acc->die |adj|e Drogenherstellung</li>
+    <li>subject_with_the_and_adj_acc->die |adj|e Drogensynthese</li>
+    <!-- dative indefinite zero article -->
+    <li>subject_dat_indef_zero->Drogenherstellung</li>
+    <li>subject_dat_indef_zero->Drogensynthese</li>
+    <!-- accusative indefinite zero article -->
+    <li>subject_acc_indef_zero->Drogenherstellung</li>
+    <li>subject_acc_indef_zero->Drogensynthese</li>
   </DrugProduction.generalRules.rulesStrings>
   
   <!-- EN: go-juice production -->
@@ -185,14 +379,38 @@
     <li>subject_gerund->synthesizing go-juice</li>
   -->
   <GoJuiceProduction.generalRules.rulesStrings>
-    <li>subject->Go-Juice-Herstellung</li>
-    <li>subject_with_adj->e Go-Juice-Herstellung</li>
     <li>subject_story->wegen der Einnahme von Go-Juice bei Mannschaftsspielen ausgeschlossen wurde</li>
     <li>subject_story->feststellte, dass Go-Juice die Produktivität in Minen und Holzfällereien massiv steigerte</li>
     <li>subject_story->nie ohne Go-Juice und Molochserum auf Mission ging</li>
     <li>subject_gerund->die Synthese von Go-Juice</li>
+    <li>subject_gerund_with_of->der Synthese von Go-Juice</li>
+    <li>subject_gerund_with_to->zur Synthese von Go-Juice</li>
     <li>subject_gerund_acc->die Synthese von Go-Juice</li>
     <li>subject_gerund_dat->der Synthese von Go-Juice</li>
+    <!-- nominative indefinite zero article -->
+    <li>subject->Go-Juice-Herstellung</li>
+    <!-- gender nominative indefinite -->
+    <li>subject_gender_nom_indef->|F|Go-Juice-Herstellung</li>
+    <!-- of + genitive definite -->
+    <li>subject_with_of->der Go-Juice-Herstellung</li>
+    <!-- of + adj + genitive definite -->
+    <li>subject_with_of_and_adj->der |adj|en Go-Juice-Herstellung</li>
+    <!-- to + dative definite -->
+    <li>subject_with_to->zur Go-Juice-Herstellung</li>
+    <!-- to + adj + dative definite -->
+    <li>subject_with_to_and_adj->zur |adj|en Go-Juice-Herstellung</li>
+    <!-- the + dative definite -->
+    <li>subject_with_the_dat->der Go-Juice-Herstellung</li>
+    <!-- the + adj + dative definite -->
+    <li>subject_with_the_and_adj_dat->der |adj|en Go-Juice-Herstellung</li>
+    <!-- the + accusative definite -->
+    <li>subject_with_the_acc->die Go-Juice-Herstellung</li>
+    <!-- the + adj + accusative definite -->
+    <li>subject_with_the_and_adj_acc->die |adj|e Go-Juice-Herstellung</li>
+    <!-- dative indefinite zero article -->
+    <li>subject_dat_indef_zero->Go-Juice-Herstellung</li>
+    <!-- accusative indefinite zero article -->
+    <li>subject_acc_indef_zero->Go-Juice-Herstellung</li>
   </GoJuiceProduction.generalRules.rulesStrings>
   
   <!-- EN: greatbow -->
@@ -207,14 +425,38 @@
     <li>subject_gerund->crafting greatbows</li>
   -->
   <Greatbow.generalRules.rulesStrings>
-    <li>subject->Großbögen</li>
-    <li>subject_with_adj->e Großbögen</li>
     <li>subject_story->einen Pfeil direkt durch den Eisenhelm eines feudalen Königs schoss</li>
     <li>subject_story->in einer wilden Welt Muffalos wegen ihres Fells jagte</li>
-    <li>subject_story->allein im Grünwald lebte und jeden, der sich dem Wald auf eine Meile näherte, mit einem Pfeilhagel begrüßte</li>
+    <li>subject_story->fortan allein im Grünwald lebte und jeden, der sich dem Wald innerhalb einer Meile näherte, mit einem Pfeilhagel empfing</li>
     <li>subject_gerund->die Herstellung von Großbögen</li>
+    <li>subject_gerund_with_of->der Herstellung von Großbögen</li>
+    <li>subject_gerund_with_to->zur Herstellung von Großbögen</li>
     <li>subject_gerund_acc->die Herstellung von Großbögen</li>
     <li>subject_gerund_dat->der Herstellung von Großbögen</li>
+    <!-- nominative indefinite zero article -->
+    <li>subject->Großbögen</li>
+    <!-- gender nominative indefinite -->
+    <li>subject_gender_nom_indef->|F|Großbögen</li>
+    <!-- of + genitive definite -->
+    <li>subject_with_of->der Großbögen</li>
+    <!-- of + adj + genitive definite -->
+    <li>subject_with_of_and_adj->der |adj|en Großbögen</li>
+    <!-- to + dative definite -->
+    <li>subject_with_to->zu Großbögen</li>
+    <!-- to + adj + dative definite -->
+    <li>subject_with_to_and_adj->zu |adj|en Großbögen</li>
+    <!-- the + dative definite -->
+    <li>subject_with_the_dat->Großbögen</li>
+    <!-- the + adj + dative definite -->
+    <li>subject_with_the_and_adj_dat->|adj|en Großbögen</li>
+    <!-- the + accusative definite -->
+    <li>subject_with_the_acc->Großbögen</li>
+    <!-- the + adj + accusative definite -->
+    <li>subject_with_the_and_adj_acc->|adj|e Großbögen</li>
+    <!-- dative indefinite zero article -->
+    <li>subject_dat_indef_zero->Großbögen</li>
+    <!-- accusative indefinite zero article -->
+    <li>subject_acc_indef_zero->Großbögen</li>
   </Greatbow.generalRules.rulesStrings>
   
   <!-- EN: long blades -->
@@ -229,14 +471,38 @@
     <li>subject_gerund->smithing medieval weapons</li>
   -->
   <LongBlades.generalRules.rulesStrings>
-    <li>subject->Mittelalterwaffen</li>
-    <li>subject_with_adj->e Mittelalterwaffen</li>
-    <li>subject_story->mit der Fünften Leichten Kavallerie des Betaherzogs ritt, um einen Sektor zu erobern</li>
-    <li>subject_story->versklavt wurde und als {ANYPAWN_gender ? Waffenschmied : Waffenschmiedin} unter der Arena eines eisenzeitlichen Planeten arbeiten musste</li>
+    <li>subject_story->gemeinsam mit der Fünften Leichten Kavallerie des Betaherzogs einen Sektor eroberte</li>
+    <li>subject_story->versklavt wurde und als {ANYPAWN_gender ? Waffenschmied : Waffenschmiedin} im Untergrund einer Arena auf einem Planeten eines eisenzeitlichen Planeten arbeiten musste</li>
     <li>subject_story->die Hopliten auf einer Kriegswelt darin ausbildete, die Reichweite ihrer Waffen zu nutzen</li>
     <li>subject_gerund->das Schmieden von Mittelalterwaffen</li>
+    <li>subject_gerund_with_of->des Schmiedens von Mittelalterwaffen</li>
+    <li>subject_gerund_with_to->zum Schmieden von Mittelalterwaffen</li>
     <li>subject_gerund_acc->das Schmieden von Mittelalterwaffen</li>
     <li>subject_gerund_dat->dem Schmieden von Mittelalterwaffen</li>
+    <!-- nominative indefinite zero article -->
+    <li>subject->Mittelalterwaffen</li>
+    <!-- gender nominative indefinite -->
+    <li>subject_gender_nom_indef->|F|Mittelalterwaffen</li>
+    <!-- of + genitive definite -->
+    <li>subject_with_of->der Mittelalterwaffen</li>
+    <!-- of + adj + genitive definite -->
+    <li>subject_with_of_and_adj->der |adj|en Mittelalterwaffen</li>
+    <!-- to + dative definite -->
+    <li>subject_with_to->zu Mittelalterwaffen</li>
+    <!-- to + adj + dative definite -->
+    <li>subject_with_to_and_adj->zu |adj|en Mittelalterwaffen</li>
+    <!-- the + dative definite -->
+    <li>subject_with_the_dat->Mittelalterwaffen</li>
+    <!-- the + adj + dative definite -->
+    <li>subject_with_the_and_adj_dat->|adj|en Mittelalterwaffen</li>
+    <!-- the + accusative definite -->
+    <li>subject_with_the_acc->Mittelalterwaffen</li>
+    <!-- the + adj + accusative definite -->
+    <li>subject_with_the_and_adj_acc->|adj|e Mittelalterwaffen</li>
+    <!-- dative indefinite zero article -->
+    <li>subject_dat_indef_zero->Mittelalterwaffen</li>
+    <!-- accusative indefinite zero article -->
+    <li>subject_acc_indef_zero->Mittelalterwaffen</li>
   </LongBlades.generalRules.rulesStrings>
   
   <!-- EN: passive cooler -->
@@ -252,16 +518,50 @@
     <li>subject_gerund->building passive coolers</li>
   -->
   <PassiveCooler.generalRules.rulesStrings>
-    <li>subject->Verdunstung</li>
-    <li>subject_with_adj->e Verdunstung</li>
-    <li>subject->passive Kühler</li>
-    <li>subject_with_adj->e passive Kühler</li>
-    <li>subject_story->in eine schwüle tropische Welt zog und einzigartige Techniken entwickelte, um kühl zu bleiben</li>
-    <li>subject_story->primitive Techniken zur Kühlung von Räumen in den komfortablen Bibliotheken einer Kernwelt erforschte</li>
-    <li>subject_story->an den Küsten eines Ozeanplaneten feststellte, dass es dort kühler war, wo sich die Gischt absetzte</li>
+    <li>subject_story->in eine schwüle, tropische Welt zog und einzigartige Techniken entwickelte, um einen kühlen Kopf zu bewahren</li>
+    <li>subject_story->sich mit primitiven Techniken zur Kühlung von Räumen in den komfortablen Bibliotheken einer Kernwelt befasste</li>
+    <li>subject_story->feststellte, dass bestimmte Küstenregionen des Ozeanplaneten durch die Gischt erfrischend kühl blieben</li>
     <li>subject_gerund->der Bau von passiven Kühlern</li>
+    <li>subject_gerund_with_of->des Baus von passiven Kühlern</li>
+    <li>subject_gerund_with_to->zum Bau von passiven Kühlern</li>
     <li>subject_gerund_acc->den Bau von passiven Kühlern</li>
     <li>subject_gerund_dat->dem Bau von passiven Kühlern</li>
+    <!-- nominative indefinite zero article -->
+    <li>subject->Verdunstung</li>
+    <li>subject->passive Kühler</li>
+    <!-- gender nominative indefinite -->
+    <li>subject_gender_nom_indef->|F|Verdunstung</li>
+    <li>subject_gender_nom_indef->|F|passive Kühler</li>
+    <!-- of + genitive definite -->
+    <li>subject_with_of->der Verdunstung</li>
+    <li>subject_with_of->der passiven Kühler</li>
+    <!-- of + adj + genitive definite -->
+    <li>subject_with_of_and_adj->der |adj|en Verdunstung</li>
+    <li>subject_with_of_and_adj->der |adj|en passiven Kühler</li>
+    <!-- to + dative definite -->
+    <li>subject_with_to->zur Verdunstung</li>
+    <li>subject_with_to->zu passiven Kühlern</li>
+    <!-- to + adj + dative definite -->
+    <li>subject_with_to_and_adj->zur |adj|en Verdunstung</li>
+    <li>subject_with_to_and_adj->zu |adj|en passiven Kühlern</li>
+    <!-- the + dative definite -->
+    <li>subject_with_the_dat->der Verdunstung</li>
+    <li>subject_with_the_dat->passiven Kühlern</li>
+    <!-- the + adj + dative definite -->
+    <li>subject_with_the_and_adj_dat->der |adj|en Verdunstung</li>
+    <li>subject_with_the_and_adj_dat->|adj|en passiven Kühlern</li>
+    <!-- the + accusative definite -->
+    <li>subject_with_the_acc->die Verdunstung</li>
+    <li>subject_with_the_acc->passive Kühler</li>
+    <!-- the + adj + accusative definite -->
+    <li>subject_with_the_and_adj_acc->die |adj|e Verdunstung</li>
+    <li>subject_with_the_and_adj_acc->|adj|e passive Kühler</li>
+    <!-- dative indefinite zero article -->
+    <li>subject_dat_indef_zero->Verdunstung</li>
+    <li>subject_dat_indef_zero->passiven Kühlern</li>
+    <!-- accusative indefinite zero article -->
+    <li>subject_acc_indef_zero->Verdunstung</li>
+    <li>subject_acc_indef_zero->passive Kühler</li>
   </PassiveCooler.generalRules.rulesStrings>
   
   <!-- EN: pemmican -->
@@ -276,14 +576,38 @@
     <li>subject_gerund->making pemmican</li>
   -->
   <Pemmican.generalRules.rulesStrings>
-    <li>subject->Pemmikanzubereitung</li>
-    <li>subject_with_adj->e Pemmikanzubereitung</li>
     <li>subject_story->während einer langen Pilgerreise zum Planeten Spire die Zubereitung von Pemmikan perfektionierte</li>
-    <li>subject_story->den Absturz eines Passagierschiffes auf eine Glaswelt nur mit Pemmikan überlebte</li>
+    <li>subject_story->den Absturz eines Passagierschiffes auf eine Glaswelt dank Pemmikan überlebte</li>
     <li>subject_story->den wilden Stämmen die Zubereitung von Pemmikan beibrachte</li>
     <li>subject_gerund->die Zubereitung von Pemmikan</li>
+    <li>subject_gerund_with_of->der Zubereitung von Pemmikan</li>
+    <li>subject_gerund_with_to->zur Zubereitung von Pemmikan</li>
     <li>subject_gerund_acc->die Zubereitung von Pemmikan</li>
     <li>subject_gerund_dat->der Zubereitung von Pemmikan</li>
+    <!-- nominative indefinite zero article -->
+    <li>subject->Pemmikanzubereitung</li>
+    <!-- gender nominative indefinite -->
+    <li>subject_gender_nom_indef->|F|Pemmikanzubereitung</li>
+    <!-- of + genitive definite -->
+    <li>subject_with_of->der Pemmikanzubereitung</li>
+    <!-- of + adj + genitive definite -->
+    <li>subject_with_of_and_adj->der |adj|en Pemmikanzubereitung</li>
+    <!-- to + dative definite -->
+    <li>subject_with_to->zur Pemmikanzubereitung</li>
+    <!-- to + adj + dative definite -->
+    <li>subject_with_to_and_adj->zur |adj|en Pemmikanzubereitung</li>
+    <!-- the + dative definite -->
+    <li>subject_with_the_dat->der Pemmikanzubereitung</li>
+    <!-- the + adj + dative definite -->
+    <li>subject_with_the_and_adj_dat->der |adj|en Pemmikanzubereitung</li>
+    <!-- the + accusative definite -->
+    <li>subject_with_the_acc->die Pemmikanzubereitung</li>
+    <!-- the + adj + accusative definite -->
+    <li>subject_with_the_and_adj_acc->die |adj|e Pemmikanzubereitung</li>
+    <!-- dative indefinite zero article -->
+    <li>subject_dat_indef_zero->Pemmikanzubereitung</li>
+    <!-- accusative indefinite zero article -->
+    <li>subject_acc_indef_zero->Pemmikanzubereitung</li>
   </Pemmican.generalRules.rulesStrings>
   
   <!-- EN: penoxycyline production -->
@@ -298,14 +622,38 @@
     <li>subject_gerund->synthesizing penoxycyline</li>
   -->
   <PenoxycylineProduction.generalRules.rulesStrings>
-    <li>subject->Penoxyzylinherstellung</li>
-    <li>subject_with_adj->e Penoxyzylinherstellung</li>
     <li>subject_story->einen Vortrag über Präventivmedizin vor den Vereinigten Planeten hielt</li>
-    <li>subject_story->als {ANYPAWN_gender ? Quacksalber : Quacksalberin} aus Dawn Falls vertrieben wurde, weil [ANYPAWN_pronoun] Medizin verkaufte, die "nichts bringt"</li>
-    <li>subject_story->durch sorgfältige Penoxyzylindosierung eine Ausbreitung von Malaria verhinderte</li>
+    <li>subject_story->aus Dawn Falls vertrieben wurde, weil [ANYPAWN_pronoun] als {ANYPAWN_gender ? Quacksalber : Quacksalberin} Medizin verkaufte, die "nichts bringt"</li>
+    <li>subject_story->durch eine sorgfältige Dosierung von Penoxyzylin eine Malaria-Ausbreitung verhindern konnte</li>
     <li>subject_gerund->die Synthese von Penoxyzylin</li>
+    <li>subject_gerund_with_of->der Synthese von Penoxyzylin</li>
+    <li>subject_gerund_with_to->zur Synthese von Penoxyzylin</li>
     <li>subject_gerund_acc->die Synthese von Penoxyzylin</li>
     <li>subject_gerund_dat->der Synthese von Penoxyzylin</li>
+    <!-- nominative indefinite zero article -->
+    <li>subject->Penoxyzylinherstellung</li>
+    <!-- gender nominative indefinite -->
+    <li>subject_gender_nom_indef->|F|Penoxyzylinherstellung</li>
+    <!-- of + genitive definite -->
+    <li>subject_with_of->der Penoxyzylinherstellung</li>
+    <!-- of + adj + genitive definite -->
+    <li>subject_with_of_and_adj->der |adj|en Penoxyzylinherstellung</li>
+    <!-- to + dative definite -->
+    <li>subject_with_to->zur Penoxyzylinherstellung</li>
+    <!-- to + adj + dative definite -->
+    <li>subject_with_to_and_adj->zur |adj|en Penoxyzylinherstellung</li>
+    <!-- the + dative definite -->
+    <li>subject_with_the_dat->der Penoxyzylinherstellung</li>
+    <!-- the + adj + dative definite -->
+    <li>subject_with_the_and_adj_dat->der |adj|en Penoxyzylinherstellung</li>
+    <!-- the + accusative definite -->
+    <li>subject_with_the_acc->die Penoxyzylinherstellung</li>
+    <!-- the + adj + accusative definite -->
+    <li>subject_with_the_and_adj_acc->die |adj|e Penoxyzylinherstellung</li>
+    <!-- dative indefinite zero article -->
+    <li>subject_dat_indef_zero->Penoxyzylinherstellung</li>
+    <!-- accusative indefinite zero article -->
+    <li>subject_acc_indef_zero->Penoxyzylinherstellung</li>
   </PenoxycylineProduction.generalRules.rulesStrings>
   
   <!-- EN: plate armor -->
@@ -320,14 +668,38 @@
     <li>subject_gerund->smithing plate armor</li>
   -->
   <PlateArmor.generalRules.rulesStrings>
-    <li>subject->Plattenrüstung</li>
-    <li>subject_with_adj->e Plattenrüstung</li>
     <li>subject_story->aus Schrott eine Rüstung bastelte, während die Polizei die Hütte [ANYPAWN_possessive]er Familie umstellte</li>
     <li>subject_story->als {ANYPAWN_gender ? Grüner Schmied : Grüne Schmiedin} bekannt wurde, weil auf [ANYPAWN_possessive]en hergestellten Holzrüstungen Moos wuchs</li>
     <li>subject_story->das erste Kollektiv von Rüstungsschmieden auf einer Urbwelt gründete</li>
-    <li>subject_gerund->das Schmieden von Plattenrüstung</li>
-    <li>subject_gerund_acc->das Schmieden von Plattenrüstung</li>
-    <li>subject_gerund_dat->dem Schmieden von Plattenrüstung</li>
+    <li>subject_gerund->das Schmieden von Plattenrüstungen</li>
+    <li>subject_gerund_with_of->des Schmiedens von Plattenrüstungen</li>
+    <li>subject_gerund_with_to->zum Schmieden von Plattenrüstungen</li>
+    <li>subject_gerund_acc->das Schmieden von Plattenrüstungen</li>
+    <li>subject_gerund_dat->dem Schmieden von Plattenrüstungen</li>
+    <!-- nominative indefinite zero article -->
+    <li>subject->Plattenrüstungen</li>
+    <!-- gender nominative indefinite -->
+    <li>subject_gender_nom_indef->|F|Plattenrüstungen</li>
+    <!-- of + genitive definite -->
+    <li>subject_with_of->der Plattenrüstungen</li>
+    <!-- of + adj + genitive definite -->
+    <li>subject_with_of_and_adj->der |adj|en Plattenrüstungen</li>
+    <!-- to + dative definite -->
+    <li>subject_with_to->zu Plattenrüstungen</li>
+    <!-- to + adj + dative definite -->
+    <li>subject_with_to_and_adj->zu |adj|en Plattenrüstungen</li>
+    <!-- the + dative definite -->
+    <li>subject_with_the_dat->Plattenrüstungen</li>
+    <!-- the + adj + dative definite -->
+    <li>subject_with_the_and_adj_dat->|adj|en Plattenrüstungen</li>
+    <!-- the + accusative definite -->
+    <li>subject_with_the_acc->Plattenrüstungen</li>
+    <!-- the + adj + accusative definite -->
+    <li>subject_with_the_and_adj_acc->|adj|e Plattenrüstungen</li>
+    <!-- dative indefinite zero article -->
+    <li>subject_dat_indef_zero->Plattenrüstungen</li>
+    <!-- accusative indefinite zero article -->
+    <li>subject_acc_indef_zero->Plattenrüstungen</li>
   </PlateArmor.generalRules.rulesStrings>
   
   <!-- EN: psychite refining -->
@@ -342,14 +714,38 @@
     <li>subject_gerund->refining psychite</li>
   -->
   <PsychiteRefining.generalRules.rulesStrings>
-    <li>subject->Psychitherstellung</li>
-    <li>subject_with_adj->e Psychitherstellung</li>
     <li>subject_story->[ANYPAWN_possessive]en Job an der Universität als Tarnung für [ANYPAWN_possessive]e Drogengeschäfte nutzte</li>
-    <li>subject_story->eine Kommune gründete, wo niedrig dosiertes Flake ins Essen gemischt wurde</li>
+    <li>subject_story->eine Kommune gründete, in der niedrig dosiertes Flake ins Essen gemischt wurde</li>
     <li>subject_story->sich auf einer benachbarten Urbwelt für die Legalisierung von Yayo einsetzte</li>
     <li>subject_gerund->die Veredelung von Psychit</li>
+    <li>subject_gerund_with_of->der Veredelung von Psychit</li>
+    <li>subject_gerund_with_to->zur Veredelung von Psychit</li>
     <li>subject_gerund_acc->die Veredelung von Psychit</li>
     <li>subject_gerund_dat->der Veredelung von Psychit</li>
+    <!-- nominative indefinite zero article -->
+    <li>subject->Psychitherstellung</li>
+    <!-- gender nominative indefinite -->
+    <li>subject_gender_nom_indef->|F|Psychitherstellung</li>
+    <!-- of + genitive definite -->
+    <li>subject_with_of->der Psychitherstellung</li>
+    <!-- of + adj + genitive definite -->
+    <li>subject_with_of_and_adj->der |adj|en Psychitherstellung</li>
+    <!-- to + dative definite -->
+    <li>subject_with_to->zur Psychitherstellung</li>
+    <!-- to + adj + dative definite -->
+    <li>subject_with_to_and_adj->zur |adj|en Psychitherstellung</li>
+    <!-- the + dative definite -->
+    <li>subject_with_the_dat->der Psychitherstellung</li>
+    <!-- the + adj + dative definite -->
+    <li>subject_with_the_and_adj_dat->der |adj|en Psychitherstellung</li>
+    <!-- the + accusative definite -->
+    <li>subject_with_the_acc->die Psychitherstellung</li>
+    <!-- the + adj + accusative definite -->
+    <li>subject_with_the_and_adj_acc->die |adj|e Psychitherstellung</li>
+    <!-- dative indefinite zero article -->
+    <li>subject_dat_indef_zero->Psychitherstellung</li>
+    <!-- accusative indefinite zero article -->
+    <li>subject_acc_indef_zero->Psychitherstellung</li>
   </PsychiteRefining.generalRules.rulesStrings>
   
   <!-- EN: psychoid brewing -->
@@ -364,14 +760,38 @@
     <li>subject_gerund->brewing psychoid</li>
   -->
   <PsychoidBrewing.generalRules.rulesStrings>
-    <li>subject->Psychoid</li>
-    <li>subject_with_adj->es Psychoid</li>
     <li>subject_story->sich einer kurzlebigen Psychoidkommune auf einer Kultwelt anschloss</li>
     <li>subject_story->mit Psychoid experimentierte, um traumatisierten Soldaten zu helfen</li>
-    <li>subject_story->die Macht besaß, Psychoid für die Massenproduktion in mehreren Kernwelten zu legalisieren</li>
+    <li>subject_story->Psychoid für die Massenproduktion in mehreren Kernwelten legalisierte</li>
     <li>subject_gerund->das Brauen von Psychoid</li>
+    <li>subject_gerund_with_of->des Brauens von Psychoid</li>
+    <li>subject_gerund_with_to->zum Brauen von Psychoid</li>
     <li>subject_gerund_acc->das Brauen von Psychoid</li>
     <li>subject_gerund_dat->dem Brauen von Psychoid</li>
+    <!-- nominative indefinite zero article -->
+    <li>subject->Psychoid</li>
+    <!-- gender nominative indefinite -->
+    <li>subject_gender_nom_indef->|N|Psychoid</li>
+    <!-- of + genitive definite -->
+    <li>subject_with_of->des Psychoids</li>
+    <!-- of + adj + genitive definite -->
+    <li>subject_with_of_and_adj->des |adj|en Psychoids</li>
+    <!-- to + dative definite -->
+    <li>subject_with_to->zu Psychoid</li>
+    <!-- to + adj + dative definite -->
+    <li>subject_with_to_and_adj->zu |adj|en Psychoid</li>
+    <!-- the + dative definite -->
+    <li>subject_with_the_dat->Psychoid</li>
+    <!-- the + adj + dative definite -->
+    <li>subject_with_the_and_adj_dat->|adj|em Psychoid</li>
+    <!-- the + accusative definite -->
+    <li>subject_with_the_acc->Psychoid</li>
+    <!-- the + adj + accusative definite -->
+    <li>subject_with_the_and_adj_acc->|adj|es Psychoid</li>
+    <!-- dative indefinite zero article -->
+    <li>subject_dat_indef_zero->Psychoid</li>
+    <!-- accusative indefinite zero article -->
+    <li>subject_acc_indef_zero->Psychoid</li>
   </PsychoidBrewing.generalRules.rulesStrings>
   
   <!-- EN: recurve bow -->
@@ -387,16 +807,50 @@
     <li>subject_gerund->crafting bows</li>
   -->
   <RecurveBow.generalRules.rulesStrings>
-    <li>subject->Bogenbau</li>
-    <li>subject_with_adj->er Bogenbau</li>
-    <li>subject->Bogenherstellung</li>
-    <li>subject_with_adj->e Bogenherstellung</li>
-    <li>subject_story->vier Tage lang eine tollwütige Boomalope verfolgte, bevor [ANYPAWN_pronoun] sie mit einem einzigen Pfeil tötete</li>
+    <li>subject_story->eine tollwütige Boomalope mit einem einzigen Pfeil tötete, nachdem [ANYPAWN_pronoun] sie vier Tage lang verfolgt hatte</li>
     <li>subject_story->sich in der Nähe eines Eibenwaldes niederließ, um sich das ideale Material für [ANYPAWN_possessive]e Bögen zu sichern</li>
     <li>subject_story->die Kinder der Kolonie zu Jägern und Sammlern erzog, von denen jeder ein Meister im Bogenschießen war</li>
     <li>subject_gerund->die Herstellung von Bögen</li>
+    <li>subject_gerund_with_of->der Herstellung von Bögen</li>
+    <li>subject_gerund_with_to->zur Herstellung von Bögen</li>
     <li>subject_gerund_acc->die Herstellung von Bögen</li>
     <li>subject_gerund_dat->der Herstellung von Bögen</li>
+    <!-- nominative indefinite zero article -->
+    <li>subject->Bogenbau</li>
+    <li>subject->Bogenherstellung</li>
+    <!-- gender nominative indefinite -->
+    <li>subject_gender_nom_indef->|M|Bogenbau</li>
+    <li>subject_gender_nom_indef->|F|Bogenherstellung</li>
+    <!-- of + genitive definite -->
+    <li>subject_with_of->des Bogenbaus</li>
+    <li>subject_with_of->der Bogenherstellung</li>
+    <!-- of + adj + genitive definite -->
+    <li>subject_with_of_and_adj->des |adj|en Bogenbaus</li>
+    <li>subject_with_of_and_adj->der |adj|en Bogenherstellung</li>
+    <!-- to + dative definite -->
+    <li>subject_with_to->zum Bogenbau</li>
+    <li>subject_with_to->zur Bogenherstellung</li>
+    <!-- to + adj + dative definite -->
+    <li>subject_with_to_and_adj->zum |adj|en Bogenbau</li>
+    <li>subject_with_to_and_adj->zur |adj|en Bogenherstellung</li>
+    <!-- the + dative definite -->
+    <li>subject_with_the_dat->dem Bogenbau</li>
+    <li>subject_with_the_dat->der Bogenherstellung</li>
+    <!-- the + adj + dative definite -->
+    <li>subject_with_the_and_adj_dat->dem |adj|en Bogenbau</li>
+    <li>subject_with_the_and_adj_dat->der |adj|en Bogenherstellung</li>
+    <!-- the + accusative definite -->
+    <li>subject_with_the_acc->den Bogenbau</li>
+    <li>subject_with_the_acc->die Bogenherstellung</li>
+    <!-- the + adj + accusative definite -->
+    <li>subject_with_the_and_adj_acc->den |adj|en Bogenbau</li>
+    <li>subject_with_the_and_adj_acc->die |adj|e Bogenherstellung</li>
+    <!-- dative indefinite zero article -->
+    <li>subject_dat_indef_zero->Bogenbau</li>
+    <li>subject_dat_indef_zero->Bogenherstellung</li>
+    <!-- accusative indefinite zero article -->
+    <li>subject_acc_indef_zero->Bogenbau</li>
+    <li>subject_acc_indef_zero->Bogenherstellung</li>
   </RecurveBow.generalRules.rulesStrings>
   
   <!-- EN: smithing -->
@@ -410,13 +864,37 @@
     <li>subject_gerund->smithing</li>
   -->
   <Smithing.generalRules.rulesStrings>
-    <li>subject->Schmiedekunst</li>
-    <li>subject_with_adj->e Schmiedekunst</li>
-    <li>subject_story->sich in einem mittelalterlichen Dörfchen niederließ und das einfache Metallhandwerk nachging</li>
+    <li>subject_story->sich in einem mittelalterlichen Dörfchen niederließ und dem einfachen Metallhandwerk nachging</li>
     <li>subject_story->die Glitzerweltschmieden für Gilden baute, die die Renaissance nachstellen</li>
     <li>subject_gerund->das Schmieden</li>
+    <li>subject_gerund_with_of->des Schmiedens</li>
+    <li>subject_gerund_with_to->zum Schmieden</li>
     <li>subject_gerund_acc->das Schmieden</li>
     <li>subject_gerund_dat->dem Schmieden</li>
+    <!-- nominative indefinite zero article -->
+    <li>subject->Schmiedekunst</li>
+    <!-- gender nominative indefinite -->
+    <li>subject_gender_nom_indef->|F|Schmiedekunst</li>
+    <!-- of + genitive definite -->
+    <li>subject_with_of->der Schmiedekunst</li>
+    <!-- of + adj + genitive definite -->
+    <li>subject_with_of_and_adj->der |adj|en Schmiedekunst</li>
+    <!-- to + dative definite -->
+    <li>subject_with_to->zur Schmiedekunst</li>
+    <!-- to + adj + dative definite -->
+    <li>subject_with_to_and_adj->zur |adj|en Schmiedekunst</li>
+    <!-- the + dative definite -->
+    <li>subject_with_the_dat->der Schmiedekunst</li>
+    <!-- the + adj + dative definite -->
+    <li>subject_with_the_and_adj_dat->der |adj|en Schmiedekunst</li>
+    <!-- the + accusative definite -->
+    <li>subject_with_the_acc->die Schmiedekunst</li>
+    <!-- the + adj + accusative definite -->
+    <li>subject_with_the_and_adj_acc->die |adj|e Schmiedekunst</li>
+    <!-- dative indefinite zero article -->
+    <li>subject_dat_indef_zero->Schmiedekunst</li>
+    <!-- accusative indefinite zero article -->
+    <li>subject_acc_indef_zero->Schmiedekunst</li>
   </Smithing.generalRules.rulesStrings>
   
   <!-- EN: stonecutting -->
@@ -432,17 +910,38 @@
     <li>subject_gerund->cutting stones</li>
   -->
   <Stonecutting.generalRules.rulesStrings>
-    <li>subject->Steinmetzarbeit</li>
-    <li>subject_with_adj->e Steinmetzarbeit</li>
     <li>subject_story->{ANYPAWN_gender ? der : die} erste in einer Reihe von Tempelgestaltern war, die alle denselben Namen trugen</li>
     <li>subject_story->einzigartige Techniken entwickelte, um selbst das härteste Gestein mit einfachen Werkzeugen zu bearbeiten</li>
-    <li>subject_story->überall im Palast des Vizekönigs Fliesen verlegte</li>
+    <li>subject_story->die Fliesen im Palast des Vizekönigs verlegte</li>
     <li>subject_gerund->die Steinbearbeitung</li>
+    <li>subject_gerund_with_of->der Steinbearbeitung</li>
+    <li>subject_gerund_with_to->zur Steinbearbeitung</li>
     <li>subject_gerund_acc->die Steinbearbeitung</li>
     <li>subject_gerund_dat->der Steinbearbeitung</li>
-    <li>subject_gerund->die Bearbeitung von Stein</li>
-    <li>subject_gerund_acc->die Bearbeitung von Stein</li>
-    <li>subject_gerund_dat->der Bearbeitung von Stein</li>
+    <!-- nominative indefinite zero article -->
+    <li>subject->Steinmetzarbeit</li>
+    <!-- gender nominative indefinite -->
+    <li>subject_gender_nom_indef->|F|Steinmetzarbeit</li>
+    <!-- of + genitive definite -->
+    <li>subject_with_of->der Steinmetzarbeit</li>
+    <!-- of + adj + genitive definite -->
+    <li>subject_with_of_and_adj->der |adj|en Steinmetzarbeit</li>
+    <!-- to + dative definite -->
+    <li>subject_with_to->zur Steinmetzarbeit</li>
+    <!-- to + adj + dative definite -->
+    <li>subject_with_to_and_adj->zur |adj|en Steinmetzarbeit</li>
+    <!-- the + dative definite -->
+    <li>subject_with_the_dat->der Steinmetzarbeit</li>
+    <!-- the + adj + dative definite -->
+    <li>subject_with_the_and_adj_dat->der |adj|en Steinmetzarbeit</li>
+    <!-- the + accusative definite -->
+    <li>subject_with_the_acc->die Steinmetzarbeit</li>
+    <!-- the + adj + accusative definite -->
+    <li>subject_with_the_and_adj_acc->die |adj|e Steinmetzarbeit</li>
+    <!-- dative indefinite zero article -->
+    <li>subject_dat_indef_zero->Steinmetzarbeit</li>
+    <!-- accusative indefinite zero article -->
+    <li>subject_acc_indef_zero->Steinmetzarbeit</li>
   </Stonecutting.generalRules.rulesStrings>
   
   <!-- EN: tree sowing -->
@@ -457,14 +956,38 @@
     <li>subject_gerund->sowing trees</li>
   -->
   <TreeSowing.generalRules.rulesStrings>
-    <li>subject->Baumpflanzung</li>
-    <li>subject_with_adj->e Baumpflanzung</li>
     <li>subject_story->auf einem toten Planetoiden Bäume pflanzte, wo [ANYPAWN_pronoun] nur konnte, um das Leben zurückzubringen</li>
-    <li>subject_story->einen Artikel über die Erhaltung natürlicher Ökosysteme veröffentlichte</li>
+    <li>subject_story->einen Artikel über den Erhalt natürlicher Ökosysteme veröffentlichte</li>
     <li>subject_story->in einer Baumschule auf einer Tierwelt arbeitete</li>
     <li>subject_gerund->der Anbau von Bäumen</li>
+    <li>subject_gerund_with_of->des Anbaus von Bäumen</li>
+    <li>subject_gerund_with_to->zum Anbau von Bäumen</li>
     <li>subject_gerund_acc->den Anbau von Bäumen</li>
     <li>subject_gerund_dat->dem Anbau von Bäumen</li>
+    <!-- nominative indefinite zero article -->
+    <li>subject->Baumpflanzung</li>
+    <!-- gender nominative indefinite -->
+    <li>subject_gender_nom_indef->|F|Baumpflanzung</li>
+    <!-- of + genitive definite -->
+    <li>subject_with_of->der Baumpflanzung</li>
+    <!-- of + adj + genitive definite -->
+    <li>subject_with_of_and_adj->der |adj|en Baumpflanzung</li>
+    <!-- to + dative definite -->
+    <li>subject_with_to->zur Baumpflanzung</li>
+    <!-- to + adj + dative definite -->
+    <li>subject_with_to_and_adj->zur |adj|en Baumpflanzung</li>
+    <!-- the + dative definite -->
+    <li>subject_with_the_dat->der Baumpflanzung</li>
+    <!-- the + adj + dative definite -->
+    <li>subject_with_the_and_adj_dat->der |adj|en Baumpflanzung</li>
+    <!-- the + accusative definite -->
+    <li>subject_with_the_acc->die Baumpflanzung</li>
+    <!-- the + adj + accusative definite -->
+    <li>subject_with_the_and_adj_acc->die |adj|e Baumpflanzung</li>
+    <!-- dative indefinite zero article -->
+    <li>subject_dat_indef_zero->Baumpflanzung</li>
+    <!-- accusative indefinite zero article -->
+    <li>subject_acc_indef_zero->Baumpflanzung</li>
   </TreeSowing.generalRules.rulesStrings>
   
   <!-- EN: wake-up production -->
@@ -479,14 +1002,38 @@
     <li>subject_gerund->synthesizing wake-up</li>
   -->
   <WakeUpProduction.generalRules.rulesStrings>
-    <li>subject->Muntermacherherstellung</li>
-    <li>subject_with_adj->e Muntermacherherstellung</li>
-    <li>subject_story->versuchte, die Koffeinsucht durch die Einnahme von Muntermacher zu überwinden</li>
+    <li>subject_story->versuchte, [ANYPAWN_possessive]e Koffeinsucht mithilfe von Muntermachern zu überwinden</li>
     <li>subject_story->Narkoleptiker und Schlafwandler mit zeitlich genau abgestimmten Muntermacherdosen behandelte</li>
-    <li>subject_story->alle auf die dunkle Seite eines Asteroiden brachte und Muntermacher nutzte, um ihren Biorhythmus stabil zu halten</li>
-    <li>subject_gerund->die Synthese von Muntermacher</li>
-    <li>subject_gerund_acc->die Synthese von Muntermacher</li>
-    <li>subject_gerund_dat->der Synthese von Muntermacher</li>
+    <li>subject_story->alle auf die dunkle Seite eines Asteroiden brachte und mithilfe von Muntermachern ihren Biorhythmus stabil hielt</li>
+    <li>subject_gerund->die Synthese von Muntermachern</li>
+    <li>subject_gerund_with_of->der Synthese von Muntermachern</li>
+    <li>subject_gerund_with_to->zur Synthese von Muntermachern</li>
+    <li>subject_gerund_acc->die Synthese von Muntermachern</li>
+    <li>subject_gerund_dat->der Synthese von Muntermachern</li>
+    <!-- nominative indefinite zero article -->
+    <li>subject->Herstellung von Muntermachern</li>
+    <!-- gender nominative indefinite -->
+    <li>subject_gender_nom_indef->|F|Herstellung von Muntermachern</li>
+    <!-- of + genitive definite -->
+    <li>subject_with_of->der Herstellung von Muntermachern</li>
+    <!-- of + adj + genitive definite -->
+    <li>subject_with_of_and_adj->der |adj|en Herstellung von Muntermachern</li>
+    <!-- to + dative definite -->
+    <li>subject_with_to->zur Herstellung von Muntermachern</li>
+    <!-- to + adj + dative definite -->
+    <li>subject_with_to_and_adj->zur |adj|en Herstellung von Muntermachern</li>
+    <!-- the + dative definite -->
+    <li>subject_with_the_dat->der Herstellung von Muntermachern</li>
+    <!-- the + adj + dative definite -->
+    <li>subject_with_the_and_adj_dat->der |adj|en Herstellung von Muntermachern</li>
+    <!-- the + accusative definite -->
+    <li>subject_with_the_acc->die Herstellung von Muntermachern</li>
+    <!-- the + adj + accusative definite -->
+    <li>subject_with_the_and_adj_acc->die |adj|e Herstellung von Muntermachern</li>
+    <!-- dative indefinite zero article -->
+    <li>subject_dat_indef_zero->Herstellung von Muntermachern</li>
+    <!-- accusative indefinite zero article -->
+    <li>subject_acc_indef_zero->Herstellung von Muntermachern</li>
   </WakeUpProduction.generalRules.rulesStrings>
   
 </LanguageData>

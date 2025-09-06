@@ -2,7 +2,7 @@
 <LanguageData>
   
   <!-- EN: advanced fabrication -->
-  <AdvancedFabrication.label>erweiterte Fabrikation</AdvancedFabrication.label>
+  <AdvancedFabrication.label>Hightech-Fabrikation</AdvancedFabrication.label>
   <!-- EN: Fabricate advanced components from standard components and other materials. -->
   <AdvancedFabrication.description>Stelle Hightech-Bauteile aus normalen Bauteilen und anderen Materialien her.</AdvancedFabrication.description>
   <!-- EN:
@@ -13,14 +13,50 @@
     <li>subject_gerund->fabricating advanced components</li>
   -->
   <AdvancedFabrication.generalRules.rulesStrings>
-    <li>subject->Hightech-Bauteil-Fabrikation</li>
-    <li>subject_with_adj->e Hightech-Bauteil-Fabrikation</li>
     <li>subject_story->Hightech-Bauteile an verzweifelte Randweltler verkaufte</li>
     <li>subject_story->das Geheimnis der Herstellung von Hightech-Bauteilen erfuhr und starb, ohne es weiterzugeben</li>
-    <li>subject_story->die extremen Kosten für die Herstellung von Hightech-Bauteilen scheute und sich für einen einfacheren Lebensstil entschied</li>
+    <li>subject_story->die hohen Kosten für die Herstellung von Hightech-Bauteilen scheute und sich stattdessen für einen einfacheren Lebensstil entschied</li>
     <li>subject_gerund->die Herstellung von Hightech-Bauteilen</li>
+    <li>subject_gerund_with_of->der Herstellung von Hightech-Bauteilen</li>
+    <li>subject_gerund_with_to->zur Herstellung von Hightech-Bauteilen</li>
     <li>subject_gerund_acc->die Herstellung von Hightech-Bauteilen</li>
     <li>subject_gerund_dat->der Herstellung von Hightech-Bauteilen</li>
+    <!-- nominative indefinite zero article -->
+    <li>subject->Hightech-Fabrikation</li>
+    <li>subject->Hightech-Bauteile</li>
+    <!-- gender nominative indefinite -->
+    <li>subject_gender_nom_indef->|F|Hightech-Fabrikation</li>
+    <li>subject_gender_nom_indef->|F|Hightech-Bauteile</li>
+    <!-- of + genitive definite -->
+    <li>subject_with_of->der Hightech-Fabrikation</li>
+    <li>subject_with_of->der Hightech-Bauteile</li>
+    <!-- of + adj + genitive definite -->
+    <li>subject_with_of_and_adj->der |adj|en Hightech-Fabrikation</li>
+    <li>subject_with_of_and_adj->der |adj|en Hightech-Bauteile</li>
+    <!-- to + dative definite -->
+    <li>subject_with_to->zur Hightech-Fabrikation</li>
+    <li>subject_with_to->zu Hightech-Bauteilen</li>
+    <!-- to + adj + dative definite -->
+    <li>subject_with_to_and_adj->zur |adj|en Hightech-Fabrikation</li>
+    <li>subject_with_to_and_adj->zu |adj|en Hightech-Bauteilen</li>
+    <!-- the + dative definite -->
+    <li>subject_with_the_dat->der Hightech-Fabrikation</li>
+    <li>subject_with_the_dat->Hightech-Bauteilen</li>
+    <!-- the + adj + dative definite -->
+    <li>subject_with_the_and_adj_dat->der |adj|en Hightech-Fabrikation</li>
+    <li>subject_with_the_and_adj_dat->|adj|en Hightech-Bauteilen</li>
+    <!-- the + accusative definite -->
+    <li>subject_with_the_acc->die Hightech-Fabrikation</li>
+    <li>subject_with_the_acc->Hightech-Bauteile</li>
+    <!-- the + adj + accusative definite -->
+    <li>subject_with_the_and_adj_acc->die |adj|e Hightech-Fabrikation</li>
+    <li>subject_with_the_and_adj_acc->|adj|e Hightech-Bauteile</li>
+    <!-- dative indefinite zero article -->
+    <li>subject_dat_indef_zero->Hightech-Fabrikation</li>
+    <li>subject_dat_indef_zero->Hightech-Bauteilen</li>
+    <!-- accusative indefinite zero article -->
+    <li>subject_acc_indef_zero->Hightech-Fabrikation</li>
+    <li>subject_acc_indef_zero->Hightech-Bauteile</li>
   </AdvancedFabrication.generalRules.rulesStrings>
   
   <!-- EN: bionic replacements -->
@@ -36,21 +72,47 @@
     <li>subject_gerund->utilizing bionic body parts</li>
   -->
   <Bionics.generalRules.rulesStrings>
-    <li>subject->bionische Prothetik</li>
-    <li>subject_with_adj->e bionische Prothetik</li>
-    <li>subject_story->vor allem mit Kriegsversehrten arbeitete und maßgefertigte bionische Gesichtsprothesen herstellte, damit sie zu ihren Familien zurückkehren konnten</li>
-    <li>subject_story->Videos von menschlichen Bewegungen in Zeitlupe studierte, um die Herstellung von bionischen Prothesen zu verbessern</li>
-    <li>subject_story->sich freiwillig die verschiedenen bionischen Prototypen implantieren ließ und am Ende mehr Maschine als Mensch war</li>
+    <li>subject_story->Kriegsversehrten maßgefertigte bionische Gesichtsprothesen anfertigte, damit diese in Würde zu ihren Familien zurückkehren konnten</li>
+    <li>subject_story->Videos von menschlichen Bewegungen in Zeitlupe studierte, um die Herstellung von bionischen Prothesen zu optimieren</li>
+    <li>subject_story->sich freiwillig verschiedene bionische Prototypen implantieren ließ. Am Ende war [ANYPAWN_pronoun] mehr Maschine als Mensch</li>
     <li>subject_gerund->die Herstellung von bionischen Prothesen</li>
+    <li>subject_gerund_with_of->der Herstellung von bionischen Prothesen</li>
+    <li>subject_gerund_with_to->zur Herstellung von bionischen Prothesen</li>
     <li>subject_gerund_acc->die Herstellung von bionischen Prothesen</li>
     <li>subject_gerund_dat->der Herstellung von bionischen Prothesen</li>
-    <li>subject_gerund->die Verwendung von bionischen Körperteilen</li>
-    <li>subject_gerund_acc->die Verwendung von bionischen Körperteilen</li>
-    <li>subject_gerund_dat->der Verwendung von bionischen Körperteilen</li>
+    <li>subject_gerund->die Verwendung bionischer Körperteile</li>
+    <li>subject_gerund_with_of->der Verwendung bionischer Körperteile</li>
+    <li>subject_gerund_with_to->zur Verwendung bionischer Körperteile</li>
+    <li>subject_gerund_acc->die Verwendung bionischer Körperteile</li>
+    <li>subject_gerund_dat->der Verwendung bionischer Körperteile</li>
+    <!-- nominative indefinite zero article -->
+    <li>subject->bionische Prothesen</li>
+    <!-- gender nominative indefinite -->
+    <li>subject_gender_nom_indef->|F|bionische Prothesen</li>
+    <!-- of + genitive definite -->
+    <li>subject_with_of->der bionischen Prothesen</li>
+    <!-- of + adj + genitive definite -->
+    <li>subject_with_of_and_adj->der |adj|en bionischen Prothesen</li>
+    <!-- to + dative definite -->
+    <li>subject_with_to->zu bionischen Prothesen</li>
+    <!-- to + adj + dative definite -->
+    <li>subject_with_to_and_adj->zu |adj|en bionischen Prothesen</li>
+    <!-- the + dative definite -->
+    <li>subject_with_the_dat->bionischen Prothesen</li>
+    <!-- the + adj + dative definite -->
+    <li>subject_with_the_and_adj_dat->|adj|en bionischen Prothesen</li>
+    <!-- the + accusative definite -->
+    <li>subject_with_the_acc->bionische Prothesen</li>
+    <!-- the + adj + accusative definite -->
+    <li>subject_with_the_and_adj_acc->|adj|e bionische Prothesen</li>
+    <!-- dative indefinite zero article -->
+    <li>subject_dat_indef_zero->bionischen Prothesen</li>
+    <!-- accusative indefinite zero article -->
+    <li>subject_acc_indef_zero->bionische Prothesen</li>
   </Bionics.generalRules.rulesStrings>
   
   <!-- EN: pulse-charged munitions -->
-  <ChargedShot.label>impulsgeladene Munition</ChargedShot.label>
+  <ChargedShot.label>Impulsmunition</ChargedShot.label>
   <!-- EN: Build weapons which fire pulse-charged munitions for extra damage. Note that these also require advanced components. -->
   <ChargedShot.description>Stelle Schusswaffen her, die impulsgeladene Munition verschießen, um zusätzlichen Schaden anzurichten. Für die Herstellung werden Hightech-Bauteile benötigt.</ChargedShot.description>
   <!-- EN:
@@ -62,17 +124,43 @@
     <li>subject_gerund->utilising pulse munitions</li>
   -->
   <ChargedShot.generalRules.rulesStrings>
-    <li>subject->Impulsmunition</li>
-    <li>subject_with_adj->e Impulsmunition</li>
     <li>subject_story->Glitzerwelt-Monorails studierte und die Technologie für Waffen modifizierte</li>
-    <li>subject_story->einen mechanischen Kriecher mit einer Impulslanze tötete, aber immer auf sicherer Distanz blieb</li>
-    <li>subject_story->lernte, Gewehrmunition mit Impuls zu laden, was ihre Tödlichkeit erheblich steigert</li>
+    <li>subject_story->einen mechanischen Kriecher mit einer Impulslanze tötete, dabei aber stets auf sicherer Distanz blieb</li>
+    <li>subject_story->lernte, Gewehrmunition mit Impuls zu laden. Das steigerte ihre Tödlichkeit erheblich</li>
     <li>subject_gerund->die Herstellung von Impulsmunition</li>
+    <li>subject_gerund_with_of->der Herstellung von Impulsmunition</li>
+    <li>subject_gerund_with_to->zur Herstellung von Impulsmunition</li>
     <li>subject_gerund_acc->die Herstellung von Impulsmunition</li>
     <li>subject_gerund_dat->der Herstellung von Impulsmunition</li>
     <li>subject_gerund->die Verwendung von Impulsmunition</li>
+    <li>subject_gerund_with_of->der Verwendung von Impulsmunition</li>
+    <li>subject_gerund_with_to->zur Verwendung von Impulsmunition</li>
     <li>subject_gerund_acc->die Verwendung von Impulsmunition</li>
     <li>subject_gerund_dat->der Verwendung von Impulsmunition</li>
+    <!-- nominative indefinite zero article -->
+    <li>subject->Impulsmunition</li>
+    <!-- gender nominative indefinite -->
+    <li>subject_gender_nom_indef->|F|Impulsmunition</li>
+    <!-- of + genitive definite -->
+    <li>subject_with_of->der Impulsmunition</li>
+    <!-- of + adj + genitive definite -->
+    <li>subject_with_of_and_adj->der |adj|en Impulsmunition</li>
+    <!-- to + dative definite -->
+    <li>subject_with_to->zur Impulsmunition</li>
+    <!-- to + adj + dative definite -->
+    <li>subject_with_to_and_adj->zur |adj|en Impulsmunition</li>
+    <!-- the + dative definite -->
+    <li>subject_with_the_dat->der Impulsmunition</li>
+    <!-- the + adj + dative definite -->
+    <li>subject_with_the_and_adj_dat->der |adj|en Impulsmunition</li>
+    <!-- the + accusative definite -->
+    <li>subject_with_the_acc->die Impulsmunition</li>
+    <!-- the + adj + accusative definite -->
+    <li>subject_with_the_and_adj_acc->die |adj|e Impulsmunition</li>
+    <!-- dative indefinite zero article -->
+    <li>subject_dat_indef_zero->Impulsmunition</li>
+    <!-- accusative indefinite zero article -->
+    <li>subject_acc_indef_zero->Impulsmunition</li>
   </ChargedShot.generalRules.rulesStrings>
   
   <!-- EN: cryptosleep casket -->
@@ -88,17 +176,43 @@
     <li>subject_gerund->inducing cryptosleep</li>
   -->
   <Cryptosleep.generalRules.rulesStrings>
-    <li>subject->Kryptoschlaf</li>
-    <li>subject_with_adj->er Kryptoschlaf</li>
-    <li>subject_story->einen Prototyp einer Kryptoschlafkapsel testen wollte und eine Generation später allein aufwachte</li>
+    <li>subject_story->eine experimentelle Kryptoschlafkapsel testete. Eine Generation später erwachte sie – mutterseelenallein</li>
     <li>subject_story->den schlimmsten Verbrecher des Systems nicht zum Tode, sondern zum Kryptoschlaf auf unbestimmte Zeit verurteilte</li>
-    <li>subject_story->Kryptoschlafkapseln benutzte, um Sterbenskranke in einen künstlichen Winterschlaf zu versetzen, damit sie ihre Kinder sehen können, sobald diese erwachsen sind</li>
+    <li>subject_story->Kryptoschlafkapseln einsetzte, um Sterbenskranke in einen künstlichen Winterschlaf zu versetzen und ihnen so zu ermöglichen, ihre Kinder als Erwachsene zu erleben</li>
     <li>subject_gerund->der Bau von Kryptoschlafkapseln</li>
+    <li>subject_gerund_with_of->des Baus von Kryptoschlafkapseln</li>
+    <li>subject_gerund_with_to->zum Bau von Kryptoschlafkapseln</li>
     <li>subject_gerund_acc->den Bau von Kryptoschlafkapseln</li>
     <li>subject_gerund_dat->dem Bau von Kryptoschlafkapseln</li>
     <li>subject_gerund->das Kryptoschlafen</li>
+    <li>subject_gerund_with_of->des Kryptoschlafens</li>
+    <li>subject_gerund_with_to->zum Kryptoschlafen</li>
     <li>subject_gerund_acc->das Kryptoschlafen</li>
     <li>subject_gerund_dat->dem Kryptoschlafen</li>
+    <!-- nominative indefinite zero article -->
+    <li>subject->Kryptoschlaf</li>
+    <!-- gender nominative indefinite -->
+    <li>subject_gender_nom_indef->|M|Kryptoschlaf</li>
+    <!-- of + genitive definite -->
+    <li>subject_with_of->des Kryptoschlafs</li>
+    <!-- of + adj + genitive definite -->
+    <li>subject_with_of_and_adj->des |adj|en Kryptoschlafs</li>
+    <!-- to + dative definite -->
+    <li>subject_with_to->zum Kryptoschlaf</li>
+    <!-- to + adj + dative definite -->
+    <li>subject_with_to_and_adj->zum |adj|en Kryptoschlaf</li>
+    <!-- the + dative definite -->
+    <li>subject_with_the_dat->dem Kryptoschlaf</li>
+    <!-- the + adj + dative definite -->
+    <li>subject_with_the_and_adj_dat->dem |adj|en Kryptoschlaf</li>
+    <!-- the + accusative definite -->
+    <li>subject_with_the_acc->den Kryptoschlaf</li>
+    <!-- the + adj + accusative definite -->
+    <li>subject_with_the_and_adj_acc->den |adj|en Kryptoschlaf</li>
+    <!-- dative indefinite zero article -->
+    <li>subject_dat_indef_zero->Kryptoschlaf</li>
+    <!-- accusative indefinite zero article -->
+    <li>subject_acc_indef_zero->Kryptoschlaf</li>
   </Cryptosleep.generalRules.rulesStrings>
   
   <!-- EN: fabrication -->
@@ -118,17 +232,67 @@
     <li>subject_gerund->building high-tech fabrication stations</li>
   -->
   <Fabrication.generalRules.rulesStrings>
-    <li>subject->Hightech-Fabrikationstische</li>
-    <li>subject_with_adj->e Hightech-Fabrikationstische</li>
     <li>subject_story->viele Jahre damit verbrachte, Hightech-Bauteile herzustellen, um Fabrikationstische für die Herstellung von noch mehr Hightech-Bauteilen zu bauen</li>
     <li>subject_story->alles eintauschte, um einen einzigen Fabrikationstisch zu bauen</li>
     <li>subject_story->technologische Wunder fertigte, die von den wilden Dorfbewohnern als Zauberei aufgefasst und verehrt wurden</li>
-    <li>subject_gerund->die Herstellung von Hightech-Produkten</li>
-    <li>subject_gerund_acc->die Herstellung von Hightech-Produkten</li>
-    <li>subject_gerund_dat->der Herstellung von Hightech-Produkten</li>
+    <li>subject_gerund->die Herstellung von Bauteilen</li>
+    <li>subject_gerund_with_of->der Herstellung von Bauteilen</li>
+    <li>subject_gerund_with_to->zur Herstellung von Bauteilen</li>
+    <li>subject_gerund_acc->die Herstellung von Bauteilen</li>
+    <li>subject_gerund_dat->der Herstellung von Bauteilen</li>
     <li>subject_gerund->der Bau von Fabrikationstischen</li>
+    <li>subject_gerund_with_of->des Baus von Fabrikationstischen</li>
+    <li>subject_gerund_with_to->zum Bau von Fabrikationstischen</li>
     <li>subject_gerund_acc->den Bau von Fabrikationstischen</li>
     <li>subject_gerund_dat->dem Bau von Fabrikationstischen</li>
+    <!-- nominative indefinite zero article -->
+    <li>subject->Fabrikation</li>
+    <li>subject->Fabrikationstische</li>
+    <li>subject->Bauteile</li>
+    <!-- gender nominative indefinite -->
+    <li>subject_gender_nom_indef->|F|Fabrikation</li>
+    <li>subject_gender_nom_indef->|F|Fabrikationstische</li>
+    <li>subject_gender_nom_indef->|F|Bauteile</li>
+    <!-- of + genitive definite -->
+    <li>subject_with_of->der Fabrikation</li>
+    <li>subject_with_of->der Fabrikationstische</li>
+    <li>subject_with_of->der Bauteile</li>
+    <!-- of + adj + genitive definite -->
+    <li>subject_with_of_and_adj->der |adj|en Fabrikation</li>
+    <li>subject_with_of_and_adj->der |adj|en Fabrikationstische</li>
+    <li>subject_with_of_and_adj->der |adj|en Bauteile</li>
+    <!-- to + dative definite -->
+    <li>subject_with_to->zur Fabrikation</li>
+    <li>subject_with_to->zu Fabrikationstischen</li>
+    <li>subject_with_to->zu Bauteilen</li>
+    <!-- to + adj + dative definite -->
+    <li>subject_with_to_and_adj->zur |adj|en Fabrikation</li>
+    <li>subject_with_to_and_adj->zu |adj|en Fabrikationstischen</li>
+    <li>subject_with_to_and_adj->zu |adj|en Bauteilen</li>
+    <!-- the + dative definite -->
+    <li>subject_with_the_dat->der Fabrikation</li>
+    <li>subject_with_the_dat->Fabrikationstischen</li>
+    <li>subject_with_the_dat->Bauteilen</li>
+    <!-- the + adj + dative definite -->
+    <li>subject_with_the_and_adj_dat->der |adj|en Fabrikation</li>
+    <li>subject_with_the_and_adj_dat->|adj|en Fabrikationstischen</li>
+    <li>subject_with_the_and_adj_dat->|adj|en Bauteilen</li>
+    <!-- the + accusative definite -->
+    <li>subject_with_the_acc->die Fabrikation</li>
+    <li>subject_with_the_acc->Fabrikationstische</li>
+    <li>subject_with_the_acc->Bauteile</li>
+    <!-- the + adj + accusative definite -->
+    <li>subject_with_the_and_adj_acc->die |adj|e Fabrikation</li>
+    <li>subject_with_the_and_adj_acc->|adj|e Fabrikationstische</li>
+    <li>subject_with_the_and_adj_acc->|adj|e Bauteile</li>
+    <!-- dative indefinite zero article -->
+    <li>subject_dat_indef_zero->Fabrikation</li>
+    <li>subject_dat_indef_zero->Fabrikationstischen</li>
+    <li>subject_dat_indef_zero->Bauteilen</li>
+    <!-- accusative indefinite zero article -->
+    <li>subject_acc_indef_zero->Fabrikation</li>
+    <li>subject_acc_indef_zero->Fabrikationstische</li>
+    <li>subject_acc_indef_zero->Bauteile</li>
   </Fabrication.generalRules.rulesStrings>
   
   <!-- EN: multi-analyzer -->
@@ -143,14 +307,38 @@
     <li>subject_gerund->constructing multi-analyzers</li>
   -->
   <MultiAnalyzer.generalRules.rulesStrings>
-    <li>subject->Multianalyse</li>
-    <li>subject_with_adj->e Multianalyse</li>
     <li>subject_story->ein Forschungslabor automatisierte</li>
     <li>subject_story->die transspektralen Geheimnisse des Universums lüftete</li>
     <li>subject_story->half, neue stabile Isotope zu identifizieren</li>
     <li>subject_gerund->der Bau von Multianalysatoren</li>
+    <li>subject_gerund_with_of->des Baus von Multianalysatoren</li>
+    <li>subject_gerund_with_to->zum Bau von Multianalysatoren</li>
     <li>subject_gerund_acc->den Bau von Multianalysatoren</li>
     <li>subject_gerund_dat->dem Bau von Multianalysatoren</li>
+    <!-- nominative indefinite zero article -->
+    <li>subject->Multianalyse</li>
+    <!-- gender nominative indefinite -->
+    <li>subject_gender_nom_indef->|F|Multianalyse</li>
+    <!-- of + genitive definite -->
+    <li>subject_with_of->der Multianalyse</li>
+    <!-- of + adj + genitive definite -->
+    <li>subject_with_of_and_adj->der |adj|en Multianalyse</li>
+    <!-- to + dative definite -->
+    <li>subject_with_to->zur Multianalyse</li>
+    <!-- to + adj + dative definite -->
+    <li>subject_with_to_and_adj->zur |adj|en Multianalyse</li>
+    <!-- the + dative definite -->
+    <li>subject_with_the_dat->der Multianalyse</li>
+    <!-- the + adj + dative definite -->
+    <li>subject_with_the_and_adj_dat->der |adj|en Multianalyse</li>
+    <!-- the + accusative definite -->
+    <li>subject_with_the_acc->die Multianalyse</li>
+    <!-- the + adj + accusative definite -->
+    <li>subject_with_the_and_adj_acc->die |adj|e Multianalyse</li>
+    <!-- dative indefinite zero article -->
+    <li>subject_dat_indef_zero->Multianalyse</li>
+    <!-- accusative indefinite zero article -->
+    <li>subject_acc_indef_zero->Multianalyse</li>
   </MultiAnalyzer.generalRules.rulesStrings>
   
   <!-- EN: marine armor -->
@@ -167,20 +355,48 @@
     <li>subject_gerund->constructing general-use advanced armor</li>
   -->
   <PoweredArmor.generalRules.rulesStrings>
-    <li>subject->Marinerüstung</li>
-    <li>subject_with_adj->e Marinerüstung</li>
-    <li>subject_story->von den Sturmtruppen angeheuert wurde, um ihre Rüstungen instand zu halten</li>
-    <li>subject_story->die Rüstung testete, indem [ANYPAWN_pronoun] unbewaffnet durch ein feindliches Stammesdorf lief, ohne einen Kratzer zu erleiden</li>
-    <li>subject_story->die Rüstung eigentlich zum Schutz gegen das feindliche Wetter des Planeten entworfen hatte, aber sie funktionierte auch gut gegen Piraten</li>
-    <li>subject_gerund->die Herstellung von Sturmtruppenrüstung</li>
-    <li>subject_gerund_acc->die Herstellung von Sturmtruppenrüstung</li>
-    <li>subject_gerund_dat->der Herstellung von Sturmtruppenrüstung</li>
-    <li>subject_gerund->die Herstellung von Marinerüstung</li>
-    <li>subject_gerund_acc->die Herstellung von Marinerüstung</li>
-    <li>subject_gerund_dat->der Herstellung von Marinerüstung</li>
-    <li>subject_gerund->die Herstellung von Powerrüstung</li>
-    <li>subject_gerund_acc->die Herstellung von Powerrüstung</li>
-    <li>subject_gerund_dat->der Herstellung von Powerrüstung</li>
+    <li>subject_story->von den Sturmtruppen der Space Marines angeheuert wurde, um ihre Rüstungen instand zu halten</li>
+    <li>subject_story->die Rüstungen testete, indem [ANYPAWN_pronoun] unbewaffnet durch ein feindliches Stammesdorf lief, ohne einen einzigen Kratzer zu erleiden</li>
+    <li>subject_story->die Rüstungen gegen die Piraten einsetzte, obwohl sie ursprünglich als Schutz gegen die lebensfeindlichen Wetterbedingungen des Planeten gedacht waren</li>
+    <li>subject_gerund->die Herstellung von Rüstungen für die Sturmtruppen der Space Marines</li>
+    <li>subject_gerund_with_of->der Herstellung von Rüstungen für die Sturmtruppen der Space Marines</li>
+    <li>subject_gerund_with_to->zur Herstellung von Rüstungen für die Sturmtruppen der Space Marines</li>
+    <li>subject_gerund_acc->die Herstellung von Rüstungen für die Sturmtruppen der Space Marines</li>
+    <li>subject_gerund_dat->der Herstellung von Rüstungen für die Sturmtruppen der Space Marines</li>
+    <li>subject_gerund->die Herstellung von Marinerüstungen</li>
+    <li>subject_gerund_with_of->der Herstellung von Marinerüstungen</li>
+    <li>subject_gerund_with_to->zur Herstellung von Marinerüstungen</li>
+    <li>subject_gerund_acc->die Herstellung von Marinerüstungen</li>
+    <li>subject_gerund_dat->der Herstellung von Marinerüstungen</li>
+    <li>subject_gerund->die Herstellung von Powerrüstungen</li>
+    <li>subject_gerund_with_of->der Herstellung von Powerrüstungen</li>
+    <li>subject_gerund_with_to->zur Herstellung von Powerrüstungen</li>
+    <li>subject_gerund_acc->die Herstellung von Powerrüstungen</li>
+    <li>subject_gerund_dat->der Herstellung von Powerrüstungen</li>
+    <!-- nominative indefinite zero article -->
+    <li>subject->Marinerüstungen</li>
+    <!-- gender nominative indefinite -->
+    <li>subject_gender_nom_indef->|F|Marinerüstungen</li>
+    <!-- of + genitive definite -->
+    <li>subject_with_of->der Marinerüstungen</li>
+    <!-- of + adj + genitive definite -->
+    <li>subject_with_of_and_adj->der |adj|en Marinerüstungen</li>
+    <!-- to + dative definite -->
+    <li>subject_with_to->zu Marinerüstungen</li>
+    <!-- to + adj + dative definite -->
+    <li>subject_with_to_and_adj->zu |adj|en Marinerüstungen</li>
+    <!-- the + dative definite -->
+    <li>subject_with_the_dat->Marinerüstungen</li>
+    <!-- the + adj + dative definite -->
+    <li>subject_with_the_and_adj_dat->|adj|en Marinerüstungen</li>
+    <!-- the + accusative definite -->
+    <li>subject_with_the_acc->Marinerüstungen</li>
+    <!-- the + adj + accusative definite -->
+    <li>subject_with_the_and_adj_acc->|adj|e Marinerüstungen</li>
+    <!-- dative indefinite zero article -->
+    <li>subject_dat_indef_zero->Marinerüstungen</li>
+    <!-- accusative indefinite zero article -->
+    <li>subject_acc_indef_zero->Marinerüstungen</li>
   </PoweredArmor.generalRules.rulesStrings>
   
   <!-- EN: recon armor -->
@@ -196,17 +412,43 @@
     <li>subject_gerund->reducing armor weight</li>
   -->
   <ReconArmor.generalRules.rulesStrings>
-    <li>subject->Späherrüstung</li>
-    <li>subject_with_adj->e Späherrüstung</li>
     <li>subject_story->die Späher der Rebellen gegen die imperialen Streitkräfte anführte, bis sie gefangen genommen wurden</li>
     <li>subject_story->eine leichte und widerstandsfähige Powerrüstung herstellte, damit die Hammerträger schnell in den Nahkampf gehen konnten</li>
-    <li>subject_story->die Späherrüstung eher für Jäger als für Soldaten entwickelte. Trotzdem verkaufte sie sich gut</li>
-    <li>subject_gerund->die Herstellung von Späherrüstung</li>
-    <li>subject_gerund_acc->die Herstellung von Späherrüstung</li>
-    <li>subject_gerund_dat->der Herstellung von Späherrüstung</li>
+    <li>subject_story->die Späherrüstungen eher für Jäger als für Soldaten entwickelte. Trotzdem verkauften sie sich gut</li>
+    <li>subject_gerund->die Herstellung von Späherrüstungen</li>
+    <li>subject_gerund_with_of->der Herstellung von Späherrüstungen</li>
+    <li>subject_gerund_with_to->zur Herstellung von Späherrüstungen</li>
+    <li>subject_gerund_acc->die Herstellung von Späherrüstungen</li>
+    <li>subject_gerund_dat->der Herstellung von Späherrüstungen</li>
     <li>subject_gerund->die Reduktion des Rüstungsgewichts</li>
+    <li>subject_gerund_with_of->der Reduktion des Rüstungsgewichts</li>
+    <li>subject_gerund_with_to->zur Reduktion des Rüstungsgewichts</li>
     <li>subject_gerund_acc->die Reduktion des Rüstungsgewichts</li>
     <li>subject_gerund_dat->der Reduktion des Rüstungsgewichts</li>
+    <!-- nominative indefinite zero article -->
+    <li>subject->Späherrüstungen</li>
+    <!-- gender nominative indefinite -->
+    <li>subject_gender_nom_indef->|F|Späherrüstungen</li>
+    <!-- of + genitive definite -->
+    <li>subject_with_of->der Späherrüstungen</li>
+    <!-- of + adj + genitive definite -->
+    <li>subject_with_of_and_adj->der |adj|en Späherrüstungen</li>
+    <!-- to + dative definite -->
+    <li>subject_with_to->zu Späherrüstungen</li>
+    <!-- to + adj + dative definite -->
+    <li>subject_with_to_and_adj->zu |adj|en Späherrüstungen</li>
+    <!-- the + dative definite -->
+    <li>subject_with_the_dat->Späherrüstungen</li>
+    <!-- the + adj + dative definite -->
+    <li>subject_with_the_and_adj_dat->|adj|en Späherrüstungen</li>
+    <!-- the + accusative definite -->
+    <li>subject_with_the_acc->Späherrüstungen</li>
+    <!-- the + adj + accusative definite -->
+    <li>subject_with_the_and_adj_acc->|adj|e Späherrüstungen</li>
+    <!-- dative indefinite zero article -->
+    <li>subject_dat_indef_zero->Späherrüstungen</li>
+    <!-- accusative indefinite zero article -->
+    <li>subject_acc_indef_zero->Späherrüstungen</li>
   </ReconArmor.generalRules.rulesStrings>
   
   <!-- EN: rocketswarm launcher -->
@@ -221,14 +463,38 @@
     <li>subject_gerund->constructing rocket turrets</li>
   -->
   <RocketswarmLauncher.generalRules.rulesStrings>
-    <li>subject->Raketentürme</li>
-    <li>subject_with_adj->e Raketentürme</li>
     <li>subject_story->als {ANYPAWN_gender ? Zeuge : Zeugin} über den Einsatz von Raketenwerfern gegen zivile Ziele aussagte</li>
-    <li>subject_story->eine ultimative Verteidigung mit Fallen und Raketenwerfern baute, für den Fall, dass die Siedlung jemals bedroht wird</li>
-    <li>subject_story->anfing, primitive Raketen zu bauen, um in den Weltraum zu gelangen, aber die hohe Misserfolgsrate führte dazu, dass sie zu Waffen umfunktioniert wurden</li>
+    <li>subject_story->eine ultimative Verteidigungsanlage mit Fallen und Raketenwerfern baute – für den Fall, dass die Siedlung jemals bedroht werden sollte</li>
+    <li>subject_story->anfing, primitive Raketen zu bauen, um in den Weltraum zu gelangen. Aufgrund der hohen Misserfolgsrate wurden diese jedoch zu Waffen umfunktioniert</li>
     <li>subject_gerund->der Bau von Raketentürmen</li>
+    <li>subject_gerund_with_of->des Baus von Raketentürmen</li>
+    <li>subject_gerund_with_to->zum Bau von Raketentürmen</li>
     <li>subject_gerund_acc->den Bau von Raketentürmen</li>
     <li>subject_gerund_dat->dem Bau von Raketentürmen</li>
+    <!-- nominative indefinite zero article -->
+    <li>subject->Raketentürme</li>
+    <!-- gender nominative indefinite -->
+    <li>subject_gender_nom_indef->|F|Raketentürme</li>
+    <!-- of + genitive definite -->
+    <li>subject_with_of->der Raketentürme</li>
+    <!-- of + adj + genitive definite -->
+    <li>subject_with_of_and_adj->der |adj|en Raketentürme</li>
+    <!-- to + dative definite -->
+    <li>subject_with_to->zu Raketentürmen</li>
+    <!-- to + adj + dative definite -->
+    <li>subject_with_to_and_adj->zu |adj|en Raketentürmen</li>
+    <!-- the + dative definite -->
+    <li>subject_with_the_dat->Raketentürmen</li>
+    <!-- the + adj + dative definite -->
+    <li>subject_with_the_and_adj_dat->|adj|en Raketentürmen</li>
+    <!-- the + accusative definite -->
+    <li>subject_with_the_acc->Raketentürme</li>
+    <!-- the + adj + accusative definite -->
+    <li>subject_with_the_and_adj_acc->|adj|e Raketentürme</li>
+    <!-- dative indefinite zero article -->
+    <li>subject_dat_indef_zero->Raketentürmen</li>
+    <!-- accusative indefinite zero article -->
+    <li>subject_acc_indef_zero->Raketentürme</li>
   </RocketswarmLauncher.generalRules.rulesStrings>
   
   <!-- EN: uranium slug turret -->
@@ -243,14 +509,38 @@
     <li>subject_gerund->constructing sniper turrets</li>
   -->
   <SniperTurret.generalRules.rulesStrings>
-    <li>subject->Scharfschützentürme</li>
-    <li>subject_with_adj->e Scharfschützentürme</li>
     <li>subject_story->nach dem Krieg die Aufräumarbeiten leitete, bei denen radioaktive Urangeschosse von der Frontlinie eingesammelt wurden</li>
-    <li>subject_story->sah, wie ein Geschützturm direkt durch einen offensiven Mechanoiden schoss und [ANYPAWN_pronoun] verstehen musste, wie das möglich war</li>
+    <li>subject_story->sah, wie das Geschoss eines Geschützturms einen offensiven Mechanoiden problemlos durchdrang. [ANYPAWN_pronoun] musste verstehen, wie das möglich war</li>
     <li>subject_story->die Auswirkungen von Munitionsdichte auf Panzerungen untersuchte</li>
-    <li>subject_gerund->der Bau von Scharfschützentürmen</li>
-    <li>subject_gerund_acc->den Bau von Scharfschützentürmen</li>
-    <li>subject_gerund_dat->dem Bau von Scharfschützentürmen</li>
+    <li>subject_gerund->der Bau von Urangeschosstürmen</li>
+    <li>subject_gerund_with_of->des Baus von Urangeschosstürmen</li>
+    <li>subject_gerund_with_to->zum Bau von Urangeschosstürmen</li>
+    <li>subject_gerund_acc->den Bau von Urangeschosstürmen</li>
+    <li>subject_gerund_dat->dem Bau von Urangeschosstürmen</li>
+    <!-- nominative indefinite zero article -->
+    <li>subject->Urangeschosstürme</li>
+    <!-- gender nominative indefinite -->
+    <li>subject_gender_nom_indef->|F|Urangeschosstürme</li>
+    <!-- of + genitive definite -->
+    <li>subject_with_of->der Urangeschosstürme</li>
+    <!-- of + adj + genitive definite -->
+    <li>subject_with_of_and_adj->der |adj|en Urangeschosstürme</li>
+    <!-- to + dative definite -->
+    <li>subject_with_to->zu Urangeschosstürmen</li>
+    <!-- to + adj + dative definite -->
+    <li>subject_with_to_and_adj->zu |adj|en Urangeschosstürmen</li>
+    <!-- the + dative definite -->
+    <li>subject_with_the_dat->Urangeschosstürmen</li>
+    <!-- the + adj + dative definite -->
+    <li>subject_with_the_and_adj_dat->|adj|en Urangeschosstürmen</li>
+    <!-- the + accusative definite -->
+    <li>subject_with_the_acc->Urangeschosstürme</li>
+    <!-- the + adj + accusative definite -->
+    <li>subject_with_the_and_adj_acc->|adj|e Urangeschosstürme</li>
+    <!-- dative indefinite zero article -->
+    <li>subject_dat_indef_zero->Urangeschosstürmen</li>
+    <!-- accusative indefinite zero article -->
+    <li>subject_acc_indef_zero->Urangeschosstürme</li>
   </SniperTurret.generalRules.rulesStrings>
   
   <!-- EN: vitals monitor -->
@@ -266,17 +556,43 @@
     <li>subject_gerund->constructing vital signs monitors</li>
   -->
   <VitalsMonitor.generalRules.rulesStrings>
-    <li>subject->Vitalüberwachung</li>
-    <li>subject_with_adj->e Vitalüberwachung</li>
-    <li>subject_story->sich in einem überfüllten Krankenhaus abmühte und schwor, etwas daran zu ändern</li>
+    <li>subject_story->in einem Krankenhaus arbeitete. Doch die überfüllten Flure und katastrophalen Zustände trieben [ANYPAWN_objective] an, etwas zu verändern</li>
     <li>subject_story->einen Glaswelt-Überlebenden wieder gesund pflegte</li>
-    <li>subject_story->die Isolierstation fernüberwachte und Mechanoiden zur Behandlung schickte</li>
-    <li>subject_gerund->die Überwachung der Vitalwerte</li>
-    <li>subject_gerund_acc->die Überwachung der Vitalwerte</li>
-    <li>subject_gerund_dat->der Überwachung der Vitalwerte</li>
+    <li>subject_story->die Isolierstation fernüberwachte und Mechanoiden zur Behandlung dorthin schickte</li>
+    <li>subject_gerund->die Überwachung von Vitalwerten</li>
+    <li>subject_gerund_with_of->der Überwachung von Vitalwerten</li>
+    <li>subject_gerund_with_to->zur Überwachung von Vitalwerten</li>
+    <li>subject_gerund_acc->die Überwachung von Vitalwerten</li>
+    <li>subject_gerund_dat->der Überwachung von Vitalwerten</li>
     <li>subject_gerund->der Bau von Vitalmonitoren</li>
+    <li>subject_gerund_with_of->des Baus von Vitalmonitoren</li>
+    <li>subject_gerund_with_to->zum Bau von Vitalmonitoren</li>
     <li>subject_gerund_acc->den Bau von Vitalmonitoren</li>
     <li>subject_gerund_dat->dem Bau von Vitalmonitoren</li>
+    <!-- nominative indefinite zero article -->
+    <li>subject->Vitalüberwachung</li>
+    <!-- gender nominative indefinite -->
+    <li>subject_gender_nom_indef->|F|Vitalüberwachung</li>
+    <!-- of + genitive definite -->
+    <li>subject_with_of->der Vitalüberwachung</li>
+    <!-- of + adj + genitive definite -->
+    <li>subject_with_of_and_adj->der |adj|en Vitalüberwachung</li>
+    <!-- to + dative definite -->
+    <li>subject_with_to->zur Vitalüberwachung</li>
+    <!-- to + adj + dative definite -->
+    <li>subject_with_to_and_adj->zur |adj|en Vitalüberwachung</li>
+    <!-- the + dative definite -->
+    <li>subject_with_the_dat->der Vitalüberwachung</li>
+    <!-- the + adj + dative definite -->
+    <li>subject_with_the_and_adj_dat->der |adj|en Vitalüberwachung</li>
+    <!-- the + accusative definite -->
+    <li>subject_with_the_acc->die Vitalüberwachung</li>
+    <!-- the + adj + accusative definite -->
+    <li>subject_with_the_and_adj_acc->die |adj|e Vitalüberwachung</li>
+    <!-- dative indefinite zero article -->
+    <li>subject_dat_indef_zero->Vitalüberwachung</li>
+    <!-- accusative indefinite zero article -->
+    <li>subject_acc_indef_zero->Vitalüberwachung</li>
   </VitalsMonitor.generalRules.rulesStrings>
   
 </LanguageData>

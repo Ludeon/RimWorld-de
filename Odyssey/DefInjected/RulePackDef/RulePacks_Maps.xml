@@ -1105,8 +1105,8 @@
     <li>mapType->holographic</li>
   -->
   <Namer_Map.rulePack.rulesStrings>
-    <li>title->[map] [mit] [subject_dat_indef]</li>
-    <li>title(p=2)->[map] [subject_gen_indef]</li>
+    <li>title->[map] [mit] [subject_dat_indef_zero]</li>
+    <li>title(p=2)->[map] [subject_with_of]</li>
     <li>title(p=2)->[map]: [subject]</li>
     <li>title(p=2)->[map] von [place]</li>
     <li>title(p=0.5)->[map] [mit] [mapSubjectAdj]en [mapSubjectDatIndef]</li>
@@ -1170,6 +1170,9 @@
     <li>mapTypePre->Holo</li>
     <li>mapTypeAdj_mapNounMaybePrefixed->{replace: [mapNounGenderMaybePrefixed]; "|M|"-"[mapTypeAdj]er "; "|F|"-"[mapTypeAdj]e "; "|N|"-"[mapTypeAdj]es "}</li>
     <li>mapTypeAdj_place_mapNounMaybePrefixed->{replace: [mapNounGenderMaybePrefixed]; "|M|"-"[mapTypeAdj]er [place]-"; "|F|"-"[mapTypeAdj]e [place]-"; "|N|"-"[mapTypeAdj]es [place]-"}</li>
+    <!-- fallbacks -->
+    <li>subject_dat_indef_zero(priority=-1)->[subject]</li>
+    <li>subject_with_of(priority=-1)->von [subject]</li>
   </Namer_Map.rulePack.rulesStrings>
   
 </LanguageData>

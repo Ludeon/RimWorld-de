@@ -1257,6 +1257,42 @@
   -->
   <Description_Schematic.rulePack.rulesStrings>
     <li>subject->[subject_primary]</li>
+    <li>subject_with_of->[subject_primary_with_of]</li>
+    <li>subject_with_of(priority=-1)->von [subject]</li>
+    <li>subject_with_of_and_adj->[subject_primary_with_of_and_adj]</li>
+    <li>subject_with_of_and_adj(priority=-1)->von [subject]</li>
+    <li>subject_with_to->[subject_primary_with_to]</li>
+    <li>subject_with_to(priority=-1)->zu [subject]</li>
+    <li>subject_with_to_and_adj->[subject_primary_with_to_and_adj]</li>
+    <li>subject_with_to_and_adj(priority=-1)->zu [subject]</li>
+    <li>subject_with_the_dat->[subject_primary_with_the_dat]</li>
+    <li>subject_with_the_dat(priority=-1)->[subject]</li>
+    <li>subject_with_the_and_adj_dat->[subject_primary_with_the_and_adj_dat]</li>
+    <li>subject_with_the_and_adj_dat(priority=-1)->[subject]</li>
+    <li>subject_with_the_acc->[subject_primary_with_the_acc]</li>
+    <li>subject_with_the_acc(priority=-1)->[subject]</li>
+    <li>subject_with_the_and_adj_acc->[subject_primary_with_the_and_adj_acc]</li>
+    <li>subject_with_the_and_adj_acc(priority=-1)->[subject]</li>
+    <li>subject_gender_nom_indef->[subject_primary_gender_nom_indef]</li>
+    <li>subject_gender_nom_indef(priority=-1)->|N|[subject]</li>
+    <li>subject_dat_indef_zero->[subject_primary_dat_indef_zero]</li>
+    <li>subject_dat_indef_zero(priority=-1)->[subject]</li>
+    <li>subject_acc_indef_zero->[subject_primary_acc_indef_zero]</li>
+    <li>subject_acc_indef_zero(priority=-1)->[subject]</li>
+    <li>subject_primary_gerund_acc(priority=-1)->[subject_primary_gerund]</li>
+    <li>subject_primary_gerund_dat(priority=-1)->[subject_primary_gerund]</li>
+    <li>subject_primary_gerund_with_of(priority=-1)->von [subject_primary_gerund]</li>
+    <li>subject_primary_gerund_with_to(priority=-1)->zu [subject_primary_gerund]</li>
+    <li>subject_secondary_gerund_acc(priority=-1)->[subject_secondary_gerund]</li>
+    <li>subject_secondary_gerund_dat(priority=-1)->[subject_secondary_gerund]</li>
+    <li>subject_secondary_gerund_with_of(priority=-1)->von [subject_secondary_gerund]</li>
+    <li>subject_secondary_gerund_with_to(priority=-1)->zu [subject_secondary_gerund]</li>
+    <li>subject_tertiary_gerund_acc(priority=-1)->[subject_tertiary_gerund]</li>
+    <li>subject_tertiary_gerund_dat(priority=-1)->[subject_tertiary_gerund]</li>
+    <li>subject_tertiary_gerund_with_of(priority=-1)->von [subject_tertiary_gerund]</li>
+    <li>subject_tertiary_gerund_with_to(priority=-1)->zu [subject_tertiary_gerund]</li>
+    <li>subject_secondary_with_the_dat(priority=-1)->[subject_secondary]</li>
+    <li>subject_secondary_with_the_acc(priority=-1)->[subject_secondary]</li>
     <li>desc(p=3)->[maybe_intro][schematic_desc].</li>
     <li>desc->[maybe_intro][schematic_desc].\n\n[maybe_medium][author_story]. [linkage][subject_consequence].</li>
     <li>desc(p=2)->[maybe_medium][author_story]. [linkage][subject_primary_story]. [maybe_outro]</li>
@@ -1273,70 +1309,95 @@
     <li>maybe_outro->[appearance]. </li>
     <li>maybe_date(p=3)-></li>
     <li>maybe_date->[dates]</li>
-    <li>subject_intro->[the_schematic_synonym] [shows_synonym_verb] [a_state_adjective_diagram_type_acc] über [subject]</li>
-    <li>subject_intro->in [this_schematic_synonym_dat] [shows_synonym_verb] [the_author] [his_theory_synonym_acc] von [subject]</li>
-    <li>subject_intro->[this_physical_adjective_schematic_synonym] [contain_verb] [schematic_synonyms] mit Schwerpunkt auf [subject]</li>
-    <li>subject_intro->[the_author] hat [notable_adjective]e [image_types] verwendet, um [his_theory_synonym_acc] von [subject] zu vermitteln</li>
-    <li>subject_intro->[device_synonyms], die etwas mit [subject_primary] zu tun haben, sind in [this_maybe_physical_adjective_schematic_synonym_dat] [shows_synonym_verb2]</li>
-    <li>subject_intro->[the_schematic_synonym] [shows_synonym_verb] [a_state_adjective_diagram_type_acc] über [subject_primary] und [subject_secondary]</li>
-    <li>subject_intro->[device_synonyms], die etwas mit [subject_primary] und [subject_secondary] zu tun haben, sind in [this_maybe_physical_adjective_schematic_synonym_dat] [shows_synonym_verb2]</li>
+    <li>subject_intro->[the_schematic_synonym] [shows_synonym_verb] [a_state_adjective_diagram_type_acc] über [subject_with_the_acc]</li>
+    <li>subject_intro->in [this_schematic_synonym_dat] [shows_synonym_verb1] [the_author] [his_theory_synonym_acc] zum Thema '[subject]'</li>
+    <li>subject_intro->[this_physical_adjective_schematic_synonym] [contain_verb] [schematic_synonyms] über [subject_with_the_acc]</li>
+    <li>subject_intro->[the_author] verwendete [notable_adjective]e [image_types], um [his_theory_synonym_acc] zum Thema '[subject]' zu vermitteln</li>
+    <li>subject_intro->in [this_maybe_physical_adjective_schematic_synonym_dat] sind [device_synonyms] im Zusammenhang mit [subject_with_the_dat] [shows_synonym_verb2]</li>
+    <li>subject_intro->[the_schematic_synonym] [shows_synonym_verb] [a_state_adjective_diagram_type_acc] über [subject_with_the_acc] und [subject_secondary_with_the_acc]</li>
+    <li>subject_intro->in [this_maybe_physical_adjective_schematic_synonym_dat] sind [device_synonyms] im Zusammenhang mit [subject_with_the_dat] und [subject_secondary_with_the_dat] [shows_synonym_verb2]</li>
     <li>schematic_desc->[schematic_desc_first][schematic_desc_second]</li>
-    <li>schematic_desc_first->die hier beschriebene uralte Technologie für [subject_primary_gerund_acc] ist [negative_adjective] im Vergleich zu heutigen Systemen</li>
-    <li>schematic_desc_first->dies ist nur ein Bruchteil [of_a_full_schematic_synonym] für [subject_primary_gerund_acc]</li>
-    <li>schematic_desc_first->[this_schematic_synonym] ist ist an mehreren Stellen [negative_adjective]</li>
-    <li>schematic_desc_first->[the_schematic_synonym] für [subject_primary_gerund_acc] ist unvollständig</li>
-    <li>schematic_desc_first->[subject_primary_gerund] mit diesen [schematic_synonyms_acc] wird durch widersprüchliche Notizen erschwert</li>
-    <li>schematic_desc_first->das [negative_adjective]e Verständnis [of_the_author] für [subject_primary_gerund_acc] ist durchgehend erkennbar</li>
-    <li>schematic_desc_first->ein Stück [of_the_schematic_synonym] wurde abgerissen</li>
+    <li>schematic_desc_first->die hier beschriebene uralte Technologie [subject_primary_gerund_with_to] ist [negative_adjective] im Vergleich zu heutigen Systemen</li>
+    <li>schematic_desc_first->es handelt sich lediglich um einen Auszug aus [a_full_schematic_synonym_dat] [subject_primary_gerund_with_to]</li>
+    <li>schematic_desc_first->[this_schematic_synonym] ist an mehreren Stellen [negative_adjective] gehalten</li>
+    <li>schematic_desc_first->[the_schematic_synonym] [subject_primary_gerund_with_to] ist unvollständig</li>
+    <li>schematic_desc_first->[subject_primary_gerund] auf Basis dieser [schematic_synonyms] wird durch widersprüchliche Notizen erschwert</li>
+    <li>schematic_desc_first->das eher [negative_adjective]e Verständnis [of_the_author] für [subject_primary_gerund_acc] zieht sich wie ein roter Faden durch [the_schematic_synonym_acc]</li>
+    <li>schematic_desc_first->ein Teil [of_the_schematic_synonym] wurde herausgerissen</li>
     <li>schematic_desc_first->Feuer und Ruß haben das Papier verunreinigt</li>
-    <li>schematic_desc_first->[the_schematic_synonym] für [subject_primary_gerund_acc] ist zu [negative_adjective]</li>
-    <li>schematic_desc_first->[the_limited_other_subject] für [subject_primary_gerund_acc] hat [this_schematic_synonym_acc] kompromittiert</li>
-    <li>schematic_desc_first->ungenaue Angaben über [subject_primary_gerund_acc] erschweren die Umsetzung [of_this_schematic_synonym]</li>
-    <li>schematic_desc_first->[this_negative_adjective_schematic_synonym] führt manchmal zu Fehlern bei [subject_primary_gerund_dat]</li>
-    <li>schematic_desc_first->[this_schematic_synonym] für [subject_primary_gerund_acc] ist ästhetisch misslungen</li>
-    <li>schematic_desc_first->mangelnde Vorstellungskraft in Bezug auf [subject_primary_gerund_acc] schränkt den Nutzen [of_this_schematic_synonym] ein</li>
-    <li>schematic_desc_first->[this_schematic_container] enthält viele widersprüchliche Spezifikationen für [subject_primary_gerund_acc]</li>
-    <li>schematic_desc_first->Unstimmigkeiten über [the_other_subject_acc] haben zu Unklarheiten in [this_schematic_synonym_dat] für [subject_primary_gerund_acc] geführt</li>
+    <li>schematic_desc_first->[the_schematic_synonym] [subject_primary_gerund_with_to] ist zu [negative_adjective]</li>
+    <li>schematic_desc_first->[other_subject_com_prefix]mangel {replace: bei [subject_primary_gerund_dat]; "bei dem "-"beim "} hinterließ negative Spuren in [this_schematic_synonym_dat]</li>
+    <li>schematic_desc_first->ungenaue Angaben [subject_primary_gerund_with_to] erschweren die Umsetzung [of_this_schematic_synonym]</li>
+    <li>schematic_desc_first->[this_negative_adjective_schematic_synonym] kann {replace: bei [subject_primary_gerund_dat]; "bei dem "-"beim "} zu Fehlern führen</li>
+    <li>schematic_desc_first->[this_schematic_synonym] [subject_primary_gerund_with_to] ist aus ästhetischer Sicht misslungen</li>
+    <li>schematic_desc_first->mangelnde Vorstellungskraft hinsichtlich [subject_primary_gerund_with_of] schmälert den Nutzen [of_this_schematic_synonym]</li>
+    <li>schematic_desc_first->[this_schematic_container] enthält zahlreiche widersprüchliche Spezifikationen [subject_primary_gerund_with_to]</li>
+    <li>schematic_desc_first->Unstimmigkeiten bezüglich [other_subject_with_of] haben zu Unklarheiten in [this_schematic_synonym_dat] [subject_primary_gerund_with_to] geführt</li>
     <li>schematic_desc_first->die schlampige Ausarbeitung untergräbt die sorgfältige Planung [of_the_author] für [subject_primary_gerund_acc]</li>
-    <li>schematic_desc_first->Sorgen über [the_other_subject_acc] für [subject_primary_gerund_acc] schränkt den Nutzen [of_this_schematic_synonym] ein</li>
-    <li>schematic_desc_first->[this_schematic_synonym] für [subject_primary_gerund_acc] wurde mehrfach kopiert, wodurch der Inhalt kaum noch lesbar ist</li>
-    <li>schematic_desc_first->[this_schematic_synonym] stellt keinen wirklichen Zusammenhang zwischen [subject_primary_gerund_dat] und [subject_secondary_gerund_dat] her</li>
-    <li>schematic_desc_first->[subject_primary_gerund] und [subject_secondary_gerund] lassen sich nicht ohne weiteres kombinieren</li>
-    <li>schematic_desc_first->[this_schematic_container] enthält [schematic_synonyms] für [subject_primary_gerund_acc] und [subject_secondary_gerund_acc]</li>
-    <li>schematic_desc_first->[this_schematic_container] enthält [schematic_synonyms] für [subject_tertiary_gerund_acc] und [subject_secondary_gerund_acc]</li>
-    <li>schematic_desc_first->[this_schematic_container] enthält [schematic_synonyms] für [subject_primary_gerund_acc] und [subject_tertiary_gerund_acc]</li>
-    <li>schematic_desc_first->[this_schematic_container] enthält [schematic_synonyms] für [subject_primary_gerund_acc], [subject_secondary_gerund_acc] und [subject_tertiary_gerund_acc]</li>
-    <li>schematic_desc_second(quality[less_than]2)->. Das ist frustrierend für alle, die sich mit dem Thema befassen wollen</li>
-    <li>schematic_desc_second(quality[less_than]2)->, was es für die meisten Zwecke wertlos macht</li>
-    <li>schematic_desc_second(quality[less_than]2)->, wodurch die Lehren, die es vermittelt, untergraben werden</li>
+    <li>schematic_desc_first->[other_subject_com_prefix]probleme {replace: bei [subject_primary_gerund_dat]; "bei dem "-"beim "} schmälern den Nutzen [of_this_schematic_synonym]</li>
+    <li>schematic_desc_first->da [this_schematic_synonym] [subject_primary_gerund_with_to] mehrfach kopiert wurde, ist der Inhalt kaum noch lesbar</li>
+    <li>schematic_desc_first(p=0.5)->[this_schematic_synonym] stellt keinen wirklichen Zusammenhang zwischen {replace: [subject_primary_gerund_dat] und [subject_secondary_gerund_dat]; "[subject_primary_gerund_dat] und [subject_primary_gerund_dat]"-"[fallback_duplicate_dat]"; "[subject_secondary_gerund_dat] und [subject_secondary_gerund_dat]"-"[fallback_duplicate_dat]"} her</li>
+    <li>schematic_desc_first(p=0.5)->[this_schematic_synonym] stellt keinen wirklichen Zusammenhang zwischen [fallback_duplicate_dat] her</li>
+    <li>schematic_desc_first(p=0.5)->{replace: [subject_primary_gerund] und [subject_secondary_gerund]; "[subject_primary_gerund] und [subject_primary_gerund]"-"[fallback_duplicate]"; "[subject_secondary_gerund] und [subject_secondary_gerund]"-"[fallback_duplicate]"} lassen sich nicht ohne Weiteres kombinieren</li>
+    <li>schematic_desc_first(p=0.5)->[fallback_duplicate] lassen sich nicht ohne Weiteres kombinieren</li>
+    <li>schematic_desc_first(p=0.5)->[this_schematic_container] enthält [schematic_synonyms] {replace: [subject_primary_gerund_with_to] und [subject_secondary_gerund_with_to]; "[subject_primary_gerund_with_to] und [subject_primary_gerund_with_to]"-"[fallback_duplicate_dat_with_to]"; "[subject_secondary_gerund_with_to] und [subject_secondary_gerund_with_to]"-"[fallback_duplicate_dat_with_to]"}</li>
+    <li>schematic_desc_first(p=0.5)->[this_schematic_container] enthält [schematic_synonyms] [fallback_duplicate_dat_with_to]</li>
+    <li>schematic_desc_first(p=0.5)->[this_schematic_container] enthält [schematic_synonyms] {replace: [subject_tertiary_gerund_with_to] und [subject_secondary_gerund_with_to]; "[subject_tertiary_gerund_with_to] und [subject_tertiary_gerund_with_to]"-"[fallback_duplicate_dat_with_to]"; "[subject_secondary_gerund_with_to] und [subject_secondary_gerund_with_to]"-"[fallback_duplicate_dat_with_to]"}</li>
+    <li>schematic_desc_first(p=0.5)->[this_schematic_container] enthält [schematic_synonyms] [fallback_duplicate_dat_with_to]</li>
+    <li>schematic_desc_first(p=0.5)->[this_schematic_container] enthält [schematic_synonyms] {replace: [subject_primary_gerund_with_to] und [subject_tertiary_gerund_with_to]; "[subject_primary_gerund_with_to] und [subject_primary_gerund_with_to]"-"[fallback_duplicate_dat_with_to]"; "[subject_tertiary_gerund_with_to] und [subject_tertiary_gerund_with_to]"-"[fallback_duplicate_dat_with_to]"}</li>
+    <li>schematic_desc_first(p=0.5)->[this_schematic_container] enthält [schematic_synonyms] [fallback_duplicate_dat_with_to]</li>
+    <!-- <li>schematic_desc_first->[this_schematic_container] enthält [schematic_synonyms] [subject_primary_gerund_with_to], [subject_secondary_gerund_with_to] und [subject_tertiary_gerund_with_to]</li> -->
+    <li>fallback_duplicate->[TalkTopicAnyCustom] und [subject_primary_gerund]</li>
+    <li>fallback_duplicate->[TalkTopicAnyCustom] und [subject_secondary_gerund]</li>
+    <li>fallback_duplicate->[TalkTopicAnyCustom] und [subject_tertiary_gerund]</li>
+    <li>fallback_duplicate_dat->[TalkTopicAnyCustomDat] und [subject_primary_gerund_dat]</li>
+    <li>fallback_duplicate_dat->[TalkTopicAnyCustomDat] und [subject_secondary_gerund_dat]</li>
+    <li>fallback_duplicate_dat->[TalkTopicAnyCustomDat] und [subject_tertiary_gerund_dat]</li>
+    <li>fallback_duplicate_dat_with_to->[subject_primary_gerund_with_to] und Details [TalkTopicAnyCustomDat_with_to]</li>
+    <li>fallback_duplicate_dat_with_to->[subject_secondary_gerund_with_to] und Details [TalkTopicAnyCustomDat_with_to]</li>
+    <li>fallback_duplicate_dat_with_to->[subject_tertiary_gerund_with_to] und Details [TalkTopicAnyCustomDat_with_to]</li>
+    <li>fallback_duplicate_acc->[TalkTopicAnyCustomAcc] und [subject_primary_gerund_acc]</li>
+    <li>fallback_duplicate_acc->[TalkTopicAnyCustomAcc] und [subject_secondary_gerund_acc]</li>
+    <li>fallback_duplicate_acc->[TalkTopicAnyCustomAcc] und [subject_tertiary_gerund_acc]</li>
+    <li>TalkTopicAnyCustom->[TalkTopicLight]</li>
+    <li>TalkTopicAnyCustom->[talktopicheavyfile]</li>
+    <li>TalkTopicAnyCustomDat->[TalkTopicLightDat]</li>
+    <li>TalkTopicAnyCustomDat->[talktopicheavyfileDat]</li>
+    <li>TalkTopicAnyCustomDat_with_to->[TalkTopicLightDat_with_to]</li>
+    <li>TalkTopicAnyCustomDat_with_to->[talktopicheavyfileDat_with_to]</li>
+    <li>TalkTopicAnyCustomAcc->[TalkTopicLightAcc]</li>
+    <li>TalkTopicAnyCustomAcc->[talktopicheavyfileAcc]</li>
+    <li>schematic_desc_second(quality[less_than]2)->. Das ist für alle, die sich damit befassen möchten, äußerst frustrierend</li>
+    <li>schematic_desc_second(quality[less_than]2)->, was die Lektüre für die meisten Zwecke wertlos macht</li>
+    <li>schematic_desc_second(quality[less_than]2)->, was wiederum die damit verbundenen Lehren untergräbt</li>
     <li>schematic_desc_second(quality[less_than]2)->. Nur Anfänger werden von den Lektionen profitieren</li>
-    <li>schematic_desc_second(quality[less_than]2)->. Ein irreführender Bauplan ist besser als nichts</li>
-    <li>schematic_desc_second(quality[less_than]2)->, weshalb es von zweifelhaftem Nutzen ist</li>
-    <li>schematic_desc_second(quality[less_than]5,quality[greater_than]1)->, aber die Grundlagen sind vorhanden</li>
-    <li>schematic_desc_second(quality[less_than]5,quality[greater_than]1)->, [contain_verb] aber noch genügend Daten, um einen Überblick zu geben</li>
-    <li>schematic_desc_second(quality[less_than]5,quality[greater_than]1)->. Dies schmälert jedoch nicht den Nutzen für versierte Fachleute</li>
-    <li>schematic_desc_second(quality[less_than]5,quality[greater_than]1)->, obwohl es für die meisten Schüler noch einen gewissen Wert hat</li>
-    <li>schematic_desc_second(quality[less_than]5,quality[greater_than]1)->. Anfänger werden noch von den Lektionen profitieren</li>
+    <li>schematic_desc_second(quality[less_than]2)->. Trotz dieser Mängel lohnt es sich, einen Blick hineinzuwerfen</li>
+    <li>schematic_desc_second(quality[less_than]2)->, weshalb die Lektüre nur bedingt nützlich ist</li>
+    <li>schematic_desc_second(quality[less_than]5,quality[greater_than]1)->. An Grundlagen mangelt es jedoch nicht</li>
+    <li>schematic_desc_second(quality[less_than]5,quality[greater_than]1)->, aber es sind noch genügend Daten enthalten, um einen guten Überblick zu verschaffen</li>
+    <li>schematic_desc_second(quality[less_than]5,quality[greater_than]1)->. Für versierte Fachleute bleibt der Nutzen davon jedoch unberührt</li>
+    <li>schematic_desc_second(quality[less_than]5,quality[greater_than]1)->, wenngleich die Lektüre für die meisten Leser noch einen gewissen Wert hat</li>
+    <li>schematic_desc_second(quality[less_than]5,quality[greater_than]1)->. Dennoch können Anfänger von den Lektionen profitieren</li>
     <li>schematic_desc_second(quality[less_than]5,quality[greater_than]1)->. Allerdings werden nur Experten die Mängel bemerken</li>
     <li>schematic_desc_second(quality[greater_than]4)->. Dennoch ist der Inhalt für die damalige Zeit außergewöhnlich</li>
-    <li>schematic_desc_second(quality[greater_than]4)->, vermittelt aber problemlos fortgeschrittene Konzepte</li>
-    <li>schematic_desc_second(quality[greater_than]4)->, ist aber dennoch voller Weisheit für alle Lernwilligen</li>
-    <li>schematic_desc_second(quality[greater_than]4)->. Dennoch wird jeder Schüler, unabhängig von seiner Erfahrung, von der Lektüre des Buches profitieren</li>
-    <li>schematic_desc_second(quality[greater_than]4)->, aber die Probleme sind gering im Vergleich zu dem Reichtum an Wissen, der darin enthalten ist</li>
-    <li>schematic_desc_second(quality[greater_than]4)->. Die Lektionen, die es lehrt, sind jedoch zeitlos</li>
+    <li>schematic_desc_second(quality[greater_than]4)->. Dennoch werden darin auch fortgeschrittene Konzepte vermittelt</li>
+    <li>schematic_desc_second(quality[greater_than]4)->. Dennoch enthält die Lektüre wertvolle Erkenntnisse für alle Lernwilligen</li>
+    <li>schematic_desc_second(quality[greater_than]4)->. Dennoch wird jeder Leser, egal wie erfahren, von dieser Lektüre profitieren</li>
+    <li>schematic_desc_second(quality[greater_than]4)->. Die Probleme sind jedoch gering im Vergleich zu dem darin enthaltenen Wissen</li>
+    <li>schematic_desc_second(quality[greater_than]4)->. Die darin vermittelten Lektionen sind jedoch zeitlos</li>
     <li>medium->Ein integriertes Sensorsystem [tells_verb] den Zuhörern [schematic_origin]</li>
-    <li>medium->Im Innern befindet sich ein zusammengerolltes Bündel persönlicher Papiere, die [schematic_origin] [tells_verb2]</li>
-    <li>medium->Ein Aufkleber [tells_verb] begrenzte Informationen über [schematic_origin]</li>
+    <li>medium->Im Inneren befindet sich ein zusammengerolltes Bündel persönlicher Papiere, die [schematic_origin_embedded] [tells_verb2]</li>
+    <li>medium->Ein Aufkleber verrät einige Details über [schematic_origin]</li>
     <li>medium->Eine beigefügte Broschüre [tells_verb] [schematic_origin]</li>
-    <li>medium->Lose Blätter aus Pergament [tells_verb2] [schematic_origin]</li>
+    <li>medium->Lose Pergamentblätter [tells_verb2] [schematic_origin]</li>
     <li>medium->Ein zweites Blatt Papier [tells_verb] [schematic_origin]</li>
     <li>medium->Eingearbeitete Steintäfelchen erzählen [schematic_origin]</li>
     <li>medium->[a_schematic_container] aus Plastahl enthält Inschriften über [schematic_origin]</li>
-    <li>medium->Ein bekritzelter Zettel fällt heraus, der [schematic_origin] [tells_verb]</li>
+    <li>medium->Ein bekritzelter Zettel fällt heraus, auf dem [schematic_origin_embedded] [tells_verb3] wird</li>
     <li>medium->Die Rückseite des Dokuments [tells_verb] mehr über [schematic_origin]</li>
-    <li>medium->Es wird eine Aufnahme abgespielt, die [schematic_origin] [tells_verb]</li>
-    <li>medium->[schematic_origin] wäre nur Spekulation, gäbe es nicht die Vermerke auf dem Dokument</li>
-    <li>medium->[schematic_origin] ist bekannt, wird aber in den Notizen des Dokuments nochmals erwähnt</li>
+    <li>medium->Es wird eine Aufnahme abgespielt, die [schematic_origin_embedded] [tells_verb]</li>
+    <li>medium->[schematic_origin_embedded] wäre reine Spekulation, gäbe es nicht die Vermerke auf dem Dokument</li>
+    <li>medium->[schematic_origin_embedded] ist zwar bekannt, wird aber in den Notizen des Dokuments noch einmal erwähnt</li>
     <li>medium->Ein beigefügtes Tagebuch [tells_verb] [schematic_origin]</li>
     <li>medium->Ein archaischer Mechanismus [tells_verb] [schematic_origin]</li>
     <li>medium->Ein kleiner Mechanoid erwacht zum Leben und [tells_verb] [schematic_origin]</li>
@@ -1346,86 +1407,98 @@
     <li>tells_verb2->erzählen</li>
     <li>tells_verb2->vermitteln</li>
     <li>tells_verb2->schildern</li>
-    <li>schematic_origin->die [notable_adjective]e Geschichte der Entstehung des Bauplans</li>
-    <li>schematic_origin->die Geschichte, wie {ANYPAWN_gender ? den Autor : die Autorin} dazu kam, den Bauplan zu entwerfen</li>
+    <li>tells_verb3->erzählt</li>
+    <li>tells_verb3->vermittelt</li>
+    <li>tells_verb3->geschildert</li>
+    <li>schematic_origin->die [notable_adjective]e Entstehungsgeschichte des Bauplans</li>
+    <li>schematic_origin->die Geschichte, wie {ANYPAWN_gender ? der Autor : die Autorin} zu dem Bauplan kam</li>
     <li>schematic_origin->das [notable_adjective]e Leben {ANYPAWN_gender ? des Autors : der Autorin} dieses Bauplans</li>
-    <li>schematic_origin->eine Geschichte über die Entstehung dieses Bauplans</li>
-    <li>schematic_origin->den Ursprung dieses [notable_adjective]en Diagramms</li>
+    <li>schematic_origin->die Entstehungsgeschichte dieses Bauplans</li>
+    <li>schematic_origin->die Geschichte dieses [notable_adjective]en Diagramms</li>
     <li>schematic_origin->eine [notable_adjective]e Geschichte aus dem Leben {ANYPAWN_gender ? des Autors : der Autorin}</li>
-    <li>schematic_origin->ein Gerücht darüber, warum dieses [notable_adjective]e Dokument auf dieser Randwelt gelandet ist und wer es geschrieben hat</li>
+    <li>schematic_origin->das Gerücht, wie dieses [notable_adjective]e Dokument auf dieser Randwelt gelandet ist und von wem es verfasst wurde</li>
+    <li>schematic_origin_embedded->die [notable_adjective]e Entstehungsgeschichte des Bauplans</li>
+    <li>schematic_origin_embedded->die Geschichte, wie {ANYPAWN_gender ? der Autor : die Autorin} zu dem Bauplan kam,</li>
+    <li>schematic_origin_embedded->das [notable_adjective]e Leben {ANYPAWN_gender ? des Autors : der Autorin} dieses Bauplans</li>
+    <li>schematic_origin_embedded->die Entstehungsgeschichte dieses Bauplans</li>
+    <li>schematic_origin_embedded->die Geschichte dieses [notable_adjective]en Diagramms</li>
+    <li>schematic_origin_embedded->eine [notable_adjective]e Geschichte aus dem Leben {ANYPAWN_gender ? des Autors : der Autorin}</li>
+    <li>schematic_origin_embedded->das Gerücht, wie dieses [notable_adjective]e Dokument auf dieser Randwelt gelandet ist und wer es geschrieben hat,</li>
     <li>author_story->[author_storyname][author_intent]</li>
     <li>author_story->[author_storyname][learning_story]</li>
     <li>author_story->[author_storyname][calltoadventure]</li>
     <li>author_storyname(p=3)->[ANYPAWN_nameFull]</li>
     <li>author_storyname->[theUnnamedAuthor]</li>
-    <li>author_intent-> war schon in jungen Jahren wissensdurstig und befragte jeden in [ANYPAWN_possessive]er Heimatstadt zum Thema [subject]</li>
-    <li>author_intent-> träumte davon, [subject] zu reformieren und eine wissenschaftliche Revolution auf Kuhn[worldname] anzuführen</li>
-    <li>author_intent-> machte [subject] zu [ANYPAWN_possessive]em Lebensinhalt</li>
-    <li>author_intent-> hat [ANYPAWN_possessive]e Ansichten über [subject] in einem [physical_adjective]en Buch festgehalten, das [ANYPAWN_pronoun] [written_when] verfasst hat</li>
-    <li>author_intent-> kannte keine schönere Berufung als das Studium von [subject] und entwarf [written_when] diesen Bauplan</li>
-    <li>author_intent-> stieß im Arbeitszimmer [ANYPAWN_possessive]er Mutter auf die Geheimnisse von [subject]</li>
-    <li>author_intent-> war als Kind schwer krank und nutzte die Zeit, um [subject] zu studieren</li>
-    <li>author_intent-> wollte [subject] weltweit bekannt machen und entwarf [written_when] diesen Bauplan</li>
-    <li>author_intent-> brauchte die Galaxie, um [subject] zu verstehen</li>
-    <li>author_intent-> entdeckte [ANYPAWN_possessive]e Liebe zu [subject] durch eine Kinderbuchreihe</li>
-    <li>author_intent-> hasste [subject], musste es aber dennoch studieren</li>
-    <li>author_intent-> empfand [subject] als [ANYPAWN_possessive]e Berufung</li>
-    <li>learning_story-> ist viel gereist, um sich Wissen über [subject] anzueignen</li>
-    <li>learning_story-> studierte tagtäglich [subject] in den zyklischen Städten von [midworld]</li>
-    <li>learning_story-> besuchte eine Armenschule in [urbworld], die von [subject] geprägt war</li>
-    <li>learning_story-> hat [ANYPAWN_possessive] Studium in [subject] an der Akademie von [worldname] mit Auszeichnung abgeschlossen</li>
-    <li>learning_story-> hat sich [subject] in der wilden Welt von [animalworld] selbst beigebracht</li>
-    <li>learning_story-> entdeckte in den Ruinen von [ruinworld] verschollene Baupläne über [subject]</li>
-    <li>learning_story-> durchquerte die geschwärzten Straßen von [steamworld], auf der Suche nach [subject] inmitten des Rußregens</li>
-    <li>learning_story-> überlebte irgendwie die Giftsümpfe von [toxicworld], wo sich Gerüchte über Experten in [subject] verbreiteten</li>
-    <li>learning_story-> durchstreifte die geschmolzenen Außenbezirke der gläsernen Welt von [glassworld] auf der Suche nach Wissen über [subject]</li>
-    <li>learning_story-> umkreiste die transzendente Sphäre von [transcendentworld] und lernte [subject] durch Abhören des Funkverkehrs</li>
-    <li>learning_story-> reiste mit Maultieren in die Tiefen von [mineworld], wo [ANYPAWN_pronoun] von alten Bergleuten in die Geheimnisse von [subject] eingeweiht wurde</li>
-    <li>learning_story-> war ein Zwangsexperte für [subject] in der Kernwelt von [coreworld]</li>
-    <li>learning_story-> besaß die Fabriken in der Indwelt von [indworld] und frönte [ANYPAWN_possessive]er Liebe zu [subject], während [ANYPAWN_possessive]e Arbeiter schufteten</li>
-    <li>learning_story-> hat [subject] während [ANYPAWN_possessive]er Haft in Cellcity V auf [prisonworld] studiert und stets [ANYPAWN_possessive]e Unschuld beteuert</li>
-    <li>learning_story-> fügte diesen Bauplan für [subject] in den Schwarmhalden der Müllwelt [trashworld] zusammen, indem [ANYPAWN_pronoun] Fragmente sammelte, die von trägen Bürgern der Glitzerwelt weggeworfen wurden</li>
-    <li>learning_story-> züchtete geklonte Apatovoren auf [dinoworld] und tauschte ihr Fleisch gegen Wissen über [subject]</li>
-    <li>learning_story-> lebte in den Himmelsreißern von [urbworld], wo das Wissen um [subject] weit verbreitet war</li>
-    <li>learning_story-> wuchs in den äußeren Totenlanden von [ruinworld] auf und lernte [subject], um zu überleben</li>
-    <li>calltoadventure-> empfand [ANYPAWN_possessive] Leben als stagnierend. Dann entdeckte [ANYPAWN_pronoun] eines Tages [subject]</li>
-    <li>calltoadventure-> wurde mit der Gründung einer neuen Kolonie betraut, allein, mit Fokus auf [subject]</li>
-    <li>calltoadventure-> wurde {ANYPAWN_gender ? Spezialist : Spezialistin} für [subject] in der Familie, nachdem [ANYPAWN_possessive] älterer Bruder gestorben war</li>
-    <li>calltoadventure-> erfuhr von einer verlassenen Glitzerwelt-Kolonie, die etwas mit [subject] zu tun hatte</li>
-    <li>calltoadventure-> befand sich auf einem Solarkreuzer, als dieser von Piraten der Feudalwelt [feudalworld] gekapert wurde. Da [ANYPAWN_pronoun] {ANYPAWN_gender ? ein Experte : eine Expertin} für [subject] war, verlangten die Piraten ein hohes Lösegeld für [ANYPAWN_objective]</li>
-    <li>calltoadventure-> wurde auf die Totwelt von [deadworld] geschleudert, wo [ANYPAWN_pronoun] etwas über [subject] lernte</li>
-    <li>calltoadventure-> entdeckte in einem kaputten Mechanoiden eine Datei über [subject] und lernte daraus</li>
-    <li>calltoadventure-> folgte einem Dreckwühler in seine Höhle, wo er {ANYPAWN_gender ? ihm : ihr} [subject] beibrachte</li>
-    <li>calltoadventure-> wurde von einem Yttakin-Clan auf [iceworld] aufgezogen, der [subject] liebte</li>
-    <li>calltoadventure-> wurde von Sanguophagenklonern erschaffen und fand Gefallen an [subject]</li>
-    <li>calltoadventure-> wuchs auf [warworld] auf und floh in einer gestohlenen Frachtkapsel. [ANYPAWN_pronoun] las monatelang nichts anderes als ein Handbuch über [subject]</li>
-    <li>calltoadventure-> verbrachte [ANYPAWN_possessive] ganzes Leben damit, durch die Schichten der Hüllenwelt [shellworld] zu reisen und einen defekten Mechanoiden zu jagen, der Kenntnisse über [subject] hatte</li>
-    <li>calltoadventure-> entkam der Knechtschaft in den Weilern von [medievalworld], indem [ANYPAWN_pronoun] sich als blinder Passagier auf das Raumschiff eines Händlers schlich, der ein Experte für [subject] war</li>
-    <li>calltoadventure-> reiste zur Randwelt und zurück und lernte [subject] auf [rimworld]</li>
-    <li>calltoadventure-> segelte durch die Meere von [oceanicworld] und behauptete, die lebenden Ozeane selbst hätten {ANYPAWN_gender ? ihm : ihr} die Geheimnisse von [subject] beigebracht</li>
-    <li>calltoadventure-> war {ANYPAWN_gender ? ein Zero-G-Plünderer : eine Zero-G-Plünderin} im Asteroidengürtel von [worldname] und entdeckte die Geheimnisse von [subject] auf [asteroid] A3 und [asteroid] 7DD</li>
+    <li>author_intent-> war schon in jungen Jahren sehr wissbegierig. In [ANYPAWN_possessive]er Heimatstadt befragte [ANYPAWN_pronoun] alle Menschen zum Thema '[subject]'</li>
+    <li>author_intent-> träumte davon, [subject_with_the_acc] zu erforschen und damit eine wissenschaftliche Revolution auf dem Planeten Kuhn'[worldname] auszulösen</li>
+    <li>author_intent-> machte [subject_with_the_acc] zu [ANYPAWN_possessive]em Lebensinhalt</li>
+    <li>author_intent-> hielt [ANYPAWN_possessive]e Ansichten [subject_with_to] in einem [physical_adjective]en Buch fest, das [ANYPAWN_pronoun] [written_when] verfasste</li>
+    <li>author_intent-> befasste sich am liebsten mit [subject_with_the_dat] und entwarf diesen Bauplan [written_when] </li>
+    <li>author_intent-> entdeckte im Arbeitszimmer [ANYPAWN_possessive]er Mutter die Geheimnisse [subject_with_of]</li>
+    <li>author_intent-> war als Kind schwer krank. [ANYPAWN_pronoun] nutzte die Zeit, um [ANYPAWN_possessive] Wissen über [subject_with_the_acc] zu erweitern</li>
+    <li>author_intent-> wollte [subject_with_the_acc] weltweit bekannt machen und entwarf diesen Bauplan [written_when]</li>
+    <li>author_intent-> benötigte die gesamte Galaxie, um [subject_with_the_acc] zu verstehen</li>
+    <li>author_intent-> verdankte [ANYPAWN_possessive]e Liebe [subject_with_to] einer Kinderbuchreihe</li>
+    <li>author_intent-> fand nie Gefallen am Studium [subject_with_of], aber [ANYPAWN_pronoun] musste es tun</li>
+    <li>author_intent-> empfand [subject_with_the_acc] als [ANYPAWN_possessive]e Berufung</li>
+    <li>learning_story-> reiste viel, um [ANYPAWN_possessive] Wissen über [subject_with_the_acc] zu erweitern</li>
+    <li>learning_story-> studierte tagtäglich [subject_with_the_acc] in den zyklischen Städten von [midworld]</li>
+    <li>learning_story-> besuchte in [urbworld] eine {replace: von [subject_with_the_dat]; "von dem "-"vom "} geprägte Armenschule</li>
+    <li>learning_story-> schloss [ANYPAWN_possessive] Studium [subject_with_of] an der {replace: Akademie von [worldname]; "Akademie von Erde"-"Erdakademie"} mit Auszeichnung ab</li>
+    <li>learning_story-> hat sich [ANYPAWN_possessive] Wissen über [subject_with_the_acc] in der wilden Welt von [animalworld] selbst angeeignet</li>
+    <li>learning_story-> fand in den Ruinen {replace: von [ruinworld]; "von Erde"-"der Erde"} verschollene Baupläne [subject_with_to]</li>
+    <li>learning_story-> durchquerte die von Rußregen geschwärzten Straßen von [steamworld], um [ANYPAWN_possessive] Wissen über [subject_with_the_acc] zu erweitern</li>
+    <li>learning_story-> überlebte irgendwie die Giftsümpfe von [toxicworld], wo sich Gerüchte über Experten [subject_with_of] verbreiteten</li>
+    <li>learning_story-> durchstreifte die geschmolzenen Außenbezirke der gläsernen Welt von [glassworld], um [ANYPAWN_possessive] Wissen über [subject_with_the_acc] zu erweitern</li>
+    <li>learning_story-> umkreiste die transzendente Sphäre von [transcendentworld], um den Funkverkehr abzuhören und mehr über [subject_with_the_acc] zu erfahren</li>
+    <li>learning_story-> reiste mit Maultieren in die Tiefen von [mineworld], wo [ANYPAWN_pronoun] von alten Bergleuten in die Geheimnisse [subject_with_of] eingeweiht wurde</li>
+    <li>learning_story-> war {ANYPAWN_gender ? ein Zwangsexperte : eine Zwangsexpertin} für [subject_acc_indef_zero] in der Kernwelt von [coreworld]</li>
+    <li>learning_story-> besaß Fabriken in der Indwelt von [indworld], wo [ANYPAWN_pronoun] [ANYPAWN_possessive]er Liebe [subject_with_to] frönte, während [ANYPAWN_possessive]e Arbeiter schuften mussten</li>
+    <li>learning_story-> studierte [subject_with_the_acc] während [ANYPAWN_possessive]er Haft in Cellcity V auf [prisonworld] und beteuerte dabei stets [ANYPAWN_possessive]e Unschuld</li>
+    <li>learning_story-> entwarf diesen Bauplan [subject_with_to], als [ANYPAWN_pronoun] in den Schwarmhalden der Müllwelt [trashworld] lebte. [ANYPAWN_pronoun] nutzte dafür Fragmente, die unachtsame Bürger einer Glitzerwelt weggeworfen hatten</li>
+    <li>learning_story-> klonte Apatovoren auf [dinoworld] und tauschte deren Fleisch gegen Wissen über [subject_with_the_acc]</li>
+    <li>learning_story-> lebte in den Himmelsreißern von [urbworld], wo das Wissen um [subject_with_the_acc] weit verbreitet war</li>
+    <li>learning_story-> wuchs in den unwirtlichen Außenbezirken {replace: von [ruinworld]; "von Erde"-"der Erde"} auf. Um zu überleben, lernte [ANYPAWN_pronoun] alles über [subject_with_the_acc]</li>
+    <li>calltoadventure-> empfand [ANYPAWN_possessive] Leben als stagnierend. Dann, eines Tages, erfuhr [ANYPAWN_pronoun] von der Existenz [subject_with_of]</li>
+    <li>calltoadventure-> wurde mit der Gründung einer neuen Kolonie betraut – mutterseelenallein, mit Fokus auf [subject_with_the_acc]</li>
+    <li>calltoadventure-> verlor [older_sibling], weshalb [ANYPAWN_pronoun] fortan {ANYPAWN_gender ? der Spezialist : die Spezialistin} für [subject_acc_indef_zero] in der Familie war</li>
+    <li>older_sibling->[ANYPAWN_possessive]en älteren Bruder</li>
+    <li>older_sibling->[ANYPAWN_possessive]e ältere Schwester</li>
+    <li>calltoadventure-> erfuhr von einer verlassenen Glitzerwelt-Kolonie, die mit [subject_with_the_dat] in Verbindung stand</li>
+    <li>calltoadventure-> befand sich an Bord eines Solarkreuzers, als dieser von Piraten aus der Feudalwelt [feudalworld] gekapert wurde. Da [ANYPAWN_pronoun] {ANYPAWN_gender ? Experte : Expertin} für [subject_acc_indef_zero] war, verlangten die Piraten ein hohes Lösegeld für [ANYPAWN_objective]</li>
+    <li>calltoadventure-> wurde auf die Totwelt von [deadworld] geschleudert, wo [ANYPAWN_pronoun] alles über [subject_with_the_acc] lernte</li>
+    <li>calltoadventure-> fand in den Überresten eines zerstörten Mechanoiden eine Datei über [subject_with_the_acc] – Wissen, das [ANYPAWN_pronoun] sich sofort zu eigen machte</li>
+    <li>calltoadventure-> folgte einem Dreckwühler in dessen Höhle, um Wissen über [subject_with_the_acc] zu erlangen</li>
+    <li>calltoadventure-> wurde von einem Yttakin-Clan auf [iceworld] großgezogen, der eine Vorliebe für [subject_acc_indef_zero] hatte</li>
+    <li>calltoadventure-> wurde von Sanguophagenklonern erschaffen und entwickelte eine Vorliebe für [subject_with_the_acc]</li>
+    <li>calltoadventure-> verbrachte [ANYPAWN_possessive]e Kindheit auf [warworld] und floh in einer gestohlenen Frachtkapsel. Monatelang las [ANYPAWN_pronoun] nichts anderes als ein Handbuch über [subject_with_the_acc]</li>
+    <li>calltoadventure-> verbrachte [ANYPAWN_possessive] ganzes Leben damit, durch die Schichten der Hüllenwelt [shellworld] zu reisen und einem defekten Mechanoiden hinterherzujagen, der Kenntnisse über [subject_with_the_acc] besaß</li>
+    <li>calltoadventure-> entkam der Knechtschaft auf [medievalworld] und schmuggelte sich als blinder Passagier an Bord des Raumschiffs eines Händlers, der ein Experte für [subject_acc_indef_zero] war</li>
+    <li>calltoadventure-> bereiste die Randwelten und erwarb in [rimworld] Kenntnisse über [subject_with_the_acc]</li>
+    <li>calltoadventure-> segelte durch die Meere von [oceanicworld] und behauptete, die lebenden Ozeane selbst hätten {ANYPAWN_gender ? ihm : ihr} die Geheimnisse [subject_with_of] beigebracht</li>
+    <li>calltoadventure-> durchstreifte als {ANYPAWN_gender ? Zero-G-Plünderer : Zero-G-Plünderin} den Asteroidengürtel {replace: von [worldname]; "von Erde"-"der Erde"}, um die Geheimnisse [subject_with_of] auf [asteroid] A3 oder [asteroid] 7DD zu finden</li>
     <li>written_when->in der Nacht vor [ANYPAWN_possessive]er Hinrichtung</li>
     <li>written_when->in [ANYPAWN_possessive]en frühen Jahren</li>
-    <li>written_when->während der Blauen Periode von [worldname]</li>
+    <li>written_when->während der Blauen Periode {replace: auf dem Planeten [worldname]; "auf dem Planeten Erde"-"auf der Erde"}</li>
     <li>written_when->im Rahmen [ANYPAWN_possessive]er Habilitationsschrift</li>
-    <li>written_when->auf [ANYPAWN_possessive]en Wanderungen über die Randwelt</li>
-    <li>written_when->in den Klonanlagen von Ur-[worldname]</li>
-    <li>written_when->als Schlussteil des [notable_adjective]en Ka'[worldname]-Rituals</li>
-    <li>written_when->spontan auf die Rückseite eines Briefs von [ANYPAWN_possessive]en Eltern</li>
+    <li>written_when->während [ANYPAWN_possessive]er Wanderungen durch die Randwelt</li>
+    <li>written_when->in den Klonanlagen {replace: von Ur-[worldname]; "von Ur-Erde"-"der alten Erde"}</li>
+    <li>written_when->im Rahmen des [notable_adjective]en {replace: Ka'[worldname]; " "-"-"}-Rituals</li>
+    <li>written_when->spontan auf der Rückseite eines Briefs [ANYPAWN_possessive]er Eltern</li>
     <li>written_when->nach vielen Jahren des Nachdenkens</li>
-    <li>written_when->in [ANYPAWN_possessive]em hohen Alter</li>
-    <li>written_when->zur späten Abendstunde</li>
+    <li>written_when->im hohen Alter</li>
+    <li>written_when->in einer späten Abendstunde</li>
     <li>written_when->ohne Rücksicht auf [ANYPAWN_possessive]e Kinder</li>
     <li>written_when->eilig auf dem Weg zur Front</li>
     <li>written_when->in aller Ruhe bei einem gekühlten Getränk auf [ANYPAWN_possessive]er Veranda</li>
-    <li>written_when->allein in jungen Jahren, während [ANYPAWN_possessive]e Altersgenossen spielten,</li>
+    <li>written_when->bereits in jungen Jahren</li>
     <li>subject_consequence(p=18)->[subject_primary_story]</li>
     <!-- <li>subject_consequence->[digression]</li> -->
     <li>digression->An einer Stelle kippt die Geschichte in eine verwirrende Diskussion über [digression_subject]</li>
     <li>digression->Die Erzählung des Bauplans verliert sich hier und schweift ab in [digression_subject]</li>
     <li>digression->[the_author] hat hier eine Fußnote eingefügt, über [digression_subject]</li>
     <li>digression->Es ist unklar, warum die Geschichte plötzlich umschwenkt auf [digression_subject]</li>
-    <li>digression->Überraschenderweise [contain_verb] der Bauplan Informationen über [digression_subject]</li>
+    <li>digression->Überraschenderweise [contain_verb] der Bauplan Details über [digression_subject]</li>
     <li>digression->Der Abschnitt über [digression_subject] ist irrelevant</li>
     <li>digression_subject->Liebe und Krieg</li>
     <li>digression_subject->endlose und zunehmend sinnlose politische Unterscheidungen</li>
@@ -1439,33 +1512,38 @@
     <li>digression_subject->über [ANYPAWN_possessive]e Erfahrungen mit dem Feudalismus auf [feudalworld]</li>
     <li>digression_subject->den Mangel an Mikroben in den gefallenen Städten von [glassworld]</li>
     <li>digression_subject->kurze Leben der Armen von [indworld]</li>
-    <li>digression_subject->die Anpassungen der Hi-Ruinen-Plünderer in den Urbwelten nach dem Krieg von [worldname]</li>
+    <li>digression_subject->die Anpassungen der Hi-Ruinen-Plünderer in den Urbwelten nach dem {replace: Krieg von [worldname]; "Krieg von Erde"-"Krieg auf der Erde"}</li>
     <li>digression_subject->den Neutroaminhandel in den reichen Himmelsreißern von [coreworld]</li>
-    <li>aftermath->Die Seiten verraten nichts mehr über die Geschichte [of_the_author]</li>
-    <li>aftermath->Andererseits gibt es eine Notiz, dass [the_author] zuletzt auf dem Weg nach [deathworld] gesehen wurde</li>
+    <li>aftermath->Die Seiten verraten nichts Weiteres über die Geschichte [of_the_author]</li>
+    <li>aftermath->Eine Notiz in anderer Handschrift besagt, dass [the_author] zuletzt auf dem Weg nach [deathworld] gesehen wurde</li>
     <li>aftermath->Einige Seiten sind herausgerissen</li>
     <li>aftermath->Die Blätter sind mit braunen Flecken übersät</li>
     <li>aftermath->Trotz [ANYPAWN_possessive]er Abenteuer gelang es {ANYPAWN_gender ? ihm : ihr}, diesen Bauplan zu entwerfen</li>
     <li>aftermath->[ANYPAWN_pronoun] widmete [ANYPAWN_possessive]e letzten Jahre diesem Bauplan</li>
-    <li>aftermath->In dieser Arbeit fand [ANYPAWN_pronoun] später seinen Frieden. [subject_chat]</li>
-    <li>aftermath->[ANYPAWN_possessive]e Geschichte endet hier mit einer technischen Beschreibung [ANYPAWN_possessive]er Arbeit auf [worldname]. [subject_chat]</li>
-    <li>subject_chat->die Arbeit [of_the_author] beweist, dass [ANYPAWN_pronoun] in Sachen [subject] sehr kompetent ist</li>
-    <li>subject_chat->nur wenige bestreiten die Schlussfolgerungen dieses Dokuments über [subject]</li>
-    <li>subject_chat->dieses Dokument ist eine Quelle der Inspiration für alle, die sich für [subject] interessieren</li>
-    <li>subject_chat->auch wenn die Diagramme verblasst sind, die Lektionen [of_the_author] über [subject] sind wertvoll</li>
+    <li>aftermath->In dieser Arbeit fand [ANYPAWN_pronoun] später [ANYPAWN_possessive]en Frieden. [subject_chat]</li>
+    <li>aftermath->[ANYPAWN_possessive]e Geschichte endet hier mit einer technischen Beschreibung [ANYPAWN_possessive]er Arbeit {replace: auf [worldname]; "auf Erde"-"auf der Erde"}. [subject_chat]</li>
+    <li>subject_chat->die Arbeit [of_the_author] beweist [ANYPAWN_possessive]e Kompetenz in Sachen [subject]</li>
+    <li>subject_chat->nur wenige bestreiten die Schlussfolgerungen dieses Dokuments über [subject_with_the_acc]</li>
+    <li>subject_chat->dieses Dokument ist eine wertvolle Inspirationsquelle für alle, die sich für [subject_with_the_acc] interessieren</li>
+    <li>subject_chat->auch wenn die Diagramme verblasst sind, sind die Lektionen [of_the_author] über [subject_with_the_acc] von unschätzbarem Wert</li>
     <li>theUnnamedAuthor(ANYPAWN_gender!=Female)->der unbekannte Autor</li>
     <li>theUnnamedAuthor(ANYPAWN_gender==Female)->die unbekannte Autorin</li>
     <li>theUnnamedAuthor(ANYPAWN_gender!=Female)->der unbekannte Schriftgelehrte</li>
     <li>theUnnamedAuthor(ANYPAWN_gender==Female)->die unbekannte Schriftgelehrte</li>
     <li>theUnnamedAuthor(ANYPAWN_gender!=Female)->der unbekannte Schriftsteller</li>
     <li>theUnnamedAuthor(ANYPAWN_gender==Female)->die unbekannte Schriftstellerin</li>
-    <li>linkage->dies inspirierte [ANYPAWN_objective], so dass [ANYPAWN_pronoun] </li>
-    <li>linkage->dies erwies sich später als nützlich, als [ANYPAWN_pronoun] </li>
+    <li>linkage->[ANYPAWN_pronoun] war davon so sehr inspiriert, dass [ANYPAWN_pronoun] </li>
+    <li>linkage->dies sollte sich später als nützlich erweisen, als [ANYPAWN_pronoun] </li>
     <li>linkage->dies führte dazu, dass [ANYPAWN_pronoun] </li>
-    <li>linkage->[ANYPAWN_pronoun] fand es nützlich, als [ANYPAWN_pronoun] </li>
+    <li>linkage->dies war der Auslöser dafür, dass [ANYPAWN_pronoun] </li>
+    <li>linkage->so kam es, dass [ANYPAWN_pronoun] </li>
     <li>linkage->dies war der Grund, warum [ANYPAWN_pronoun] </li>
-    <li>linkage->Auf [worldname] nutzte [ANYPAWN_pronoun] [ANYPAWN_possessive]e Einsicht, indem [ANYPAWN_pronoun] </li>
-    <li>linkage->um dies zu meistern, reiste [ANYPAWN_pronoun] nach [worldname], wo [ANYPAWN_pronoun] </li>
+    <li>linkage->{replace: auf [worldname]; "auf Erde"-"auf der Erde"} setzte [ANYPAWN_pronoun] diese Einsicht in die Praxis um, indem [ANYPAWN_pronoun] </li>
+    <li>linkage->[for_this_purpose] reiste [ANYPAWN_pronoun] {replace: nach [worldname]; "nach Erde"-"zur Erde"}, wo [ANYPAWN_pronoun] </li>
+    <li>for_this_purpose->zu diesem Zweck</li>
+    <li>for_this_purpose->um dies zu verstehen,</li>
+    <li>for_this_purpose->im Rahmen dessen</li>
+    <li>for_this_purpose->Anschließend</li>
     <li>notable_adjective->berühmt</li>
     <li>notable_adjective->obskur</li>
     <li>notable_adjective->ikonisch</li>
@@ -1473,56 +1551,65 @@
     <li>notable_adjective->gewöhnlich</li>
     <li>notable_adjective->bekannt</li>
     <li>negative_adjective->rudimentär</li>
-    <li>negative_adjective->simplifiziert</li>
-    <li>negative_adjective->primiv</li>
-    <li>negative_adjective->mittelmäßig</li>
+    <li>negative_adjective->unausgereift</li>
+    <li>negative_adjective->primitiv</li>
+    <li>negative_adjective->oberflächlich</li>
     <li>negative_adjective->ungenau</li>
-    <li>negative_adjective->mangelhaft</li>
+    <li>negative_adjective->schlicht</li>
     <li>appearance(p=3)->[phys_desc]</li>
     <li>appearance->[nonphys_desc]</li>
     <li>phys_desc(quality[less_than]5,quality[greater_than]1)->[physical_yet_statement]</li>
-    <li>phys_desc(quality[less_than]4)->[negative_physical_statement1]</li>
-    <li>phys_desc(quality[greater_than]3)->[positive_physical_statement1]</li>
+    <li>phys_desc(quality[less_than]4)->[negative_physical_statement]</li>
+    <li>phys_desc(quality[greater_than]3)->[positive_physical_statement]</li>
     <li>phys_desc(p=2)->[physical_yet_statement]</li>
     <li>phys_desc(quality[less_than]3)->dieses Dokument [badsmells] [stink]</li>
     <li>phys_desc(quality[greater_than]4)->dieses Dokument [smells] [scent]</li>
     <li>nonphys_desc->[otherwordly_nonphys_desc]</li>
     <li>nonphys_desc->[technical_nonphys_desc]</li>
     <li>nonphys_desc->[academic_nonphys_desc]</li>
-    <li>physical_yet_statement(quality[less_than]5,quality[greater_than]1)->[negative_physical_statement1], aber [positive_physical_statement2]</li>
-    <li>physical_yet_statement(quality[less_than]5,quality[greater_than]1)->[positive_physical_statement1], aber [negative_physical_statement2]</li>
-    <li>physical_yet_statement(quality[greater_than]4)->[positive_physical_statement1] und [positive_physical_statement2]</li>
-    <li>physical_yet_statement(quality[less_than]2)->[negative_physical_statement1]. Außerdem [negative_physical_statement2_v2]</li>
+    <li>physical_yet_statement(quality[less_than]5,quality[greater_than]1)->[negative_physical_statement1], doch [positive_physical_statement2]</li>
+    <li>physical_yet_statement(quality[less_than]5,quality[greater_than]1)->[positive_physical_statement1], doch [negative_physical_statement2]</li>
+    <li>physical_yet_statement(quality[greater_than]4)->[positive_physical_statement1]. [also] [positive_physical_statement2_v2]</li>
+    <li>physical_yet_statement(quality[less_than]2)->[negative_physical_statement1]. [also] [negative_physical_statement2_v2]</li>
+    <li>also->außerdem</li>
+    <li>also->zudem</li>
+    <li>also->darüber hinaus</li>
+    <li>also->obendrein</li>
+    <li>also->überdies</li>
+    <li>also->ferner</li>
     <li>negative_physical_statement->[negative_physical_statement1]</li>
     <li>negative_physical_statement->[negative_physical_statement2]</li>
-    <li>negative_physical_statement1->gezackte Risse verunstalten den Kalbsledereinband</li>
-    <li>negative_physical_statement1->einer der Schüler [the_author_gen] hat das Titelblatt unterzeichnet</li>
-    <li>negative_physical_statement1->ein säuerlich schmeckender, eitriger Schleim überzieht es</li>
-    <li>negative_physical_statement2->der verrottete Einband klebt an den Händen des Lesers</li>
-    <li>negative_physical_statement2->Maden haben sich unter dem Buchdeckel eingenistet und Fliegen schwirren heraus, wenn man das Buch öffnet</li>
-    <li>negative_physical_statement2->die Seiten scheinen brüchiges Pergament zu sein</li>
+    <li>negative_physical_statement1->Tiefe, unregelmäßige Risse durchziehen den Kalbsledereinband</li>
+    <li>negative_physical_statement1->einer der Schüler [of_the_author] hat das Titelblatt signiert</li>
+    <li>negative_physical_statement1->ein säuerlich schmeckender, eitriger Schleim überzieht die Lektüre</li>
+    <li>negative_physical_statement2->der verrottete Einband klebt dem Leser buchstäblich an den Händen</li>
+    <li>negative_physical_statement2->unter dem Frontdeckel haben sich Maden eingenistet, und beim Aufklappen des Deckels schwirren Fliegen heraus</li>
+    <li>negative_physical_statement2->die Seiten scheinen aus brüchigem Pergament zu sein</li>
     <li>negative_physical_statement2->die Seiten sind mit roter Tinte durchtränkt</li>
-    <li>negative_physical_statement2_v2->klebt der verrottete Einband an den Händen des Lesers</li>
-    <li>negative_physical_statement2_v2->haben Maden sich unter dem Buchdeckel eingenistet und Fliegen schwirren heraus, wenn man das Buch öffnet</li>
-    <li>negative_physical_statement2_v2->scheinen die Seiten brüchiges Pergament zu sein</li>
+    <li>negative_physical_statement2_v2->klebt der verrottete Einband dem Leser buchstäblich an den Händen</li>
+    <li>negative_physical_statement2_v2->haben sich unter dem Frontdeckel Maden eingenistet, und wenn man den Deckel aufklappt, schwirren Fliegen heraus</li>
+    <li>negative_physical_statement2_v2->scheinen die Seiten aus brüchigem Pergament zu sein</li>
     <li>negative_physical_statement2_v2->sind die Seiten mit roter Tinte durchtränkt</li>
     <li>positive_physical_statement->[positive_physical_statement1]</li>
     <li>positive_physical_statement->[positive_physical_statement2]</li>
-    <li>positive_physical_statement1->innen sind die Seiten makellos</li>
+    <li>positive_physical_statement1->die Innenseiten sind makellos</li>
     <li>positive_physical_statement1->die Seiten bestehen aus einem dünnen Plastahlderivat</li>
     <li>positive_physical_statement1->jede Seite besteht aus einer flexiblen, diamantähnlichen Struktur</li>
     <li>positive_physical_statement1->es fühlt sich warm an</li>
-    <li>positive_physical_statement2->es trägt das Markenzeichen eines angesehenen Kernweltverlags – [coreworld] Schematics</li>
-    <li>positive_physical_statement2->die Ränder der Seiten sind noch unbeschnitten</li>
-    <li>positive_physical_statement2->halbedle Kunststoffe glitzern auf der Oberfläche</li>
-    <li>otherwordly_nonphys_desc->beim Halten des Bauplans [of_the_author] schwimmt der Raum</li>
-    <li>otherwordly_nonphys_desc->allein der Anblick des Bauplans bereitet dem Leser Kopfzerbrechen</li>
-    <li>otherwordly_nonphys_desc->beim Betrachten des Bauplans scheinen sich die Runen im Augenwinkel des Lesers zu bewegen</li>
-    <li>otherwordly_nonphys_desc->[the_author] hört ein Flüstern beim Betrachten des Bauplans</li>
-    <li>otherwordly_nonphys_desc->der Bauplan [of_the_author] trägt den psychischen Abdruck von etwas unvorstellbar Altem</li>
-    <li>technical_nonphys_desc->die Komplexität des Bauplans übersteigt den durchschnittlichen Leser</li>
-    <li>technical_nonphys_desc->die Schreibweise ist ungewöhnlich und geht auf einen veralteten Impid-Dialekt zurück</li>
-    <li>technical_nonphys_desc->Kabel durchziehen die Seiten des Bauplans, obwohl das Gerät fast unbrauchbar ist</li>
+    <li>positive_physical_statement2->das Werk trägt das Markenzeichen des renommierten Kernweltverlags [coreworld] Schematics</li>
+    <li>positive_physical_statement2->die Seitenränder sind noch unbeschnitten</li>
+    <li>positive_physical_statement2->auf der Oberfläche glitzern halbedle Kunststoffe</li>
+    <li>positive_physical_statement2_v2->trägt das Werk das Markenzeichen des renommierten Kernweltverlags [coreworld] Schematics</li>
+    <li>positive_physical_statement2_v2->sind die Seitenränder noch unbeschnitten</li>
+    <li>positive_physical_statement2_v2->glitzern halbedle Kunststoffe auf der Oberfläche</li>
+    <li>otherwordly_nonphys_desc->kaum richtet man den Blick auf den Bauplan, scheint die Welt um ihn herum zu verschwimmen</li>
+    <li>otherwordly_nonphys_desc->schon der Anblick des Bauplans bereitet dem Leser Kopfzerbrechen</li>
+    <li>otherwordly_nonphys_desc->im Augenwinkel scheinen sich die Runen auf dem Bauplan zu bewegen</li>
+    <li>otherwordly_nonphys_desc->beim Betrachten des Bauplans ist ein Flüstern zu hören</li>
+    <li>otherwordly_nonphys_desc->dem Bauplan haftet ein mentales Echo von etwas unermesslich Altem an</li>
+    <li>technical_nonphys_desc->die Komplexität des Bauplans übersteigt den Kenntnisstand des gewöhnlichen Lesers</li>
+    <li>technical_nonphys_desc->die Rhetorik ist ungewöhnlich und geht auf einen veralteten Impid-Dialekt zurück</li>
+    <li>technical_nonphys_desc->Drähte durchziehen die Seiten des Bauplans, doch das Gerät ist nahezu unbrauchbar</li>
     <li>technical_nonphys_desc->derselbe Mechanismus wird [by_the_author] in drei verschiedenen Sprachen erklärt</li>
     <li>academic_nonphys_desc(p=0.5)->dieser Bauplan ist einem Dschinn-Mentor gewidmet, der [the_author_acc] inspiriert hat</li>
     <li>academic_nonphys_desc(p=0.5)->dieser Bauplan ist einer Dschinn-Mentorin gewidmet, die [the_author_acc] inspiriert hat</li>
@@ -1539,7 +1626,7 @@
     <li>stink->Ödländer-Mundgeruch</li>
     <li>stink->einem Husaren-Umkleideraum</li>
     <li>smells->verströmt den berauschenden Duft von</li>
-    <li>smells->richt nach</li>
+    <li>smells->riecht nach</li>
     <li>smells->duftet nach</li>
     <li>scent->Most, wie der Boden eines Traubenfasses</li>
     <li>scent->Überpartner-Pheromonen</li>
@@ -1548,6 +1635,7 @@
     <li>scent->süßem Boomrattensaft</li>
     <li>scent->Glitzerweltgewürz</li>
     <li>scent->frischen Gauralansamen</li>
+    <!-- unused -->
     <!-- <li>conjunction->and </li>
     <li>conjunction->but </li>
     <li>conjunction->yet </li>
@@ -1684,6 +1772,7 @@
     <li>of_the_author(ANYPAWN_gender==Female)->der Technikerin</li>
     <li>of_the_author(ANYPAWN_gender==Female)->der Expertin</li>
     <li>of_the_author(ANYPAWN_gender==Female)->der Handwerkerin</li>
+    <!-- unused -->
     <!-- <li>anAuthorDesc(p=2)->a</li>
     <li>anAuthorDesc->a young</li>
     <li>anAuthorDesc->an old</li>
@@ -1908,40 +1997,43 @@
     <li>warworld->Barkitos</li>
     <li>schematic_container->Handbuch</li>
     <li>schematic_container->Kompendium</li>
-    <li>schematic_container->Einband</li>
+    <li>schematic_container->Sammelband</li>
     <li>schematic_container->Ordner</li>
-    <li>schematic_container->Broschüre</li>
-    <li>schematic_container->Umschlag</li>
+    <li>schematic_container->Mappe</li>
+    <li>schematic_container->A4-Umschlag</li>
     <li>schematic_container->Bündel</li>
     <li>schematic_container->Dossier</li>
     <li>schematic_container->Akte</li>
-    <li>schematic_container->Paket</li>
-    <li>schematic_container->Koffer</li>
-    <li>schematic_container->Behälter</li>
+    <li>schematic_container->Sammlung</li>
+    <li>schematic_container->Dokumentation</li>
+    <li>schematic_container->Portefeuille</li>
+    <li>schematic_container->Kodex</li>
     <li>a_schematic_container->ein Handbuch</li>
     <li>a_schematic_container->ein Kompendium</li>
-    <li>a_schematic_container->ein Einband</li>
+    <li>a_schematic_container->ein Sammelband</li>
     <li>a_schematic_container->ein Ordner</li>
-    <li>a_schematic_container->eine Broschüre</li>
-    <li>a_schematic_container->ein Umschlag</li>
+    <li>a_schematic_container->eine Mappe</li>
+    <li>a_schematic_container->ein A4-Umschlag</li>
     <li>a_schematic_container->ein Bündel</li>
     <li>a_schematic_container->ein Dossier</li>
     <li>a_schematic_container->eine Akte</li>
-    <li>a_schematic_container->ein Paket</li>
-    <li>a_schematic_container->ein Koffer</li>
-    <li>a_schematic_container->ein Behälter</li>
+    <li>a_schematic_container->eine Sammlung</li>
+    <li>a_schematic_container->eine Dokumentation</li>
+    <li>a_schematic_container->ein Portefeuille</li>
+    <li>a_schematic_container->ein Kodex</li>
     <li>this_schematic_container->dieses Handbuch</li>
     <li>this_schematic_container->dieses Kompendium</li>
-    <li>this_schematic_container->dieser Einband</li>
+    <li>this_schematic_container->dieser Sammelband</li>
     <li>this_schematic_container->dieser Ordner</li>
-    <li>this_schematic_container->diese Broschüre</li>
-    <li>this_schematic_container->dieser Umschlag</li>
+    <li>this_schematic_container->diese Mappe</li>
+    <li>this_schematic_container->dieser A4-Umschlag</li>
     <li>this_schematic_container->dieses Bündel</li>
     <li>this_schematic_container->dieses Dossier</li>
-    <li>this_schematic_container->dieses Akte</li>
-    <li>this_schematic_container->dieses Paket</li>
-    <li>this_schematic_container->dieser Koffer</li>
-    <li>this_schematic_container->dieser Behälter</li>
+    <li>this_schematic_container->diese Akte</li>
+    <li>this_schematic_container->diese Sammlung</li>
+    <li>this_schematic_container->diese Dokumentation</li>
+    <li>this_schematic_container->dieses Portefeuille</li>
+    <li>this_schematic_container->dieser Kodex</li>
     <li>physical_adjective->schmuddelig</li>
     <li>physical_adjective->winzig</li>
     <li>physical_adjective->grob</li>
@@ -1956,7 +2048,7 @@
     <li>physical_adjective->abgenutzt</li>
     <li>physical_adjective->verworren</li>
     <li>physical_adjective->archaisch</li>
-    <li>physical_adjective->fettig</li>
+    <li>physical_adjective->ölverschmiert</li>
     <li>physical_adjective->warm</li>
     <li>physical_adjective->plump</li>
     <li>physical_adjective->hölzern</li>
@@ -1969,20 +2061,16 @@
     <li>physical_adjective->rätselhaft</li>
     <li>physical_adjective->kostbar</li>
     <li>shows_synonym_verb->[shows_synonym_verb1]</li>
-    <li>shows_synonym_verb1->enthält</li>
+    <li>shows_synonym_verb->[contain_verb]</li>
     <li>shows_synonym_verb1->illustriert</li>
     <li>shows_synonym_verb1->präsentiert</li>
     <li>shows_synonym_verb1->veranschaulicht</li>
-    <li>shows_synonym_verb1->beinhaltet</li>
     <li>shows_synonym_verb1->zeigt</li>
     <li>shows_synonym_verb1->skizziert</li>
     <li>shows_synonym_verb1->beschreibt</li>
     <li>shows_synonym_verb2->enthalten</li>
     <li>shows_synonym_verb2->illustriert</li>
-    <li>shows_synonym_verb2->präsentiert</li>
-    <li>shows_synonym_verb2->veranschaulicht</li>
     <li>shows_synonym_verb2->zu sehen</li>
-    <li>shows_synonym_verb2->skizziert</li>
     <li>shows_synonym_verb2->beschrieben</li>
     <li>contain_verb->enthält</li>
     <li>contain_verb->beinhaltet</li>
@@ -1990,91 +2078,100 @@
     <li>schematic_synonym->Diagramm</li>
     <li>schematic_synonym->Blaupause</li>
     <li>schematic_synonym->Entwurf</li>
-    <li>schematic_synonym->Prototyp</li>
+    <li>schematic_synonym->Vorabexemplar</li>
     <li>schematic_synonym->Produktspezifikation</li>
     <li>schematic_synonym->Anleitung</li>
+    <li>the_schematic_synonym_acc->den Bauplan</li>
+    <li>the_schematic_synonym_acc->das Diagramm</li>
+    <li>the_schematic_synonym_acc->die Blaupause</li>
+    <li>the_schematic_synonym_acc->den Entwurf</li>
+    <li>the_schematic_synonym_acc->das Vorabexemplar</li>
+    <li>the_schematic_synonym_acc->die Produktspezifikation</li>
+    <li>the_schematic_synonym_acc->die Anleitung</li>
     <li>of_the_schematic_synonym->des Bauplans</li>
     <li>of_the_schematic_synonym->des Diagramms</li>
     <li>of_the_schematic_synonym->der Blaupause</li>
     <li>of_the_schematic_synonym->des Entwurfs</li>
-    <li>of_the_schematic_synonym->des Prototyps</li>
+    <li>of_the_schematic_synonym->des Vorabexemplars</li>
     <li>of_the_schematic_synonym->der Produktspezifikation</li>
     <li>of_the_schematic_synonym->der Anleitung</li>
     <li>of_this_schematic_synonym->dieses Bauplans</li>
     <li>of_this_schematic_synonym->dieses Diagramms</li>
     <li>of_this_schematic_synonym->dieser Blaupause</li>
     <li>of_this_schematic_synonym->dieses Entwurfs</li>
-    <li>of_this_schematic_synonym->dieses Prototyps</li>
+    <li>of_this_schematic_synonym->dieses Vorabexemplars</li>
     <li>of_this_schematic_synonym->dieser Produktspezifikation</li>
     <li>of_this_schematic_synonym->dieser Anleitung</li>
-    <li>of_a_full_schematic_synonym->eines vollständigen Bauplans</li>
-    <li>of_a_full_schematic_synonym->eines vollständigen Diagramms</li>
-    <li>of_a_full_schematic_synonym->einer vollständigen Blaupause</li>
-    <li>of_a_full_schematic_synonym->eines vollständigen Entwurfs</li>
-    <li>of_a_full_schematic_synonym->eines vollständigen Prototyps</li>
-    <li>of_a_full_schematic_synonym->einer vollständigen Produktspezifikation</li>
-    <li>of_a_full_schematic_synonym->einer vollständigen Anleitung</li>
+    <li>a_full_schematic_synonym_dat->einem vollständigen Bauplan</li>
+    <li>a_full_schematic_synonym_dat->einem vollständigen Diagramm</li>
+    <li>a_full_schematic_synonym_dat->einer vollständigen Blaupause</li>
+    <li>a_full_schematic_synonym_dat->einem vollständigen Entwurf</li>
+    <li>a_full_schematic_synonym_dat->einem vollständigen Vorabexemplar</li>
+    <li>a_full_schematic_synonym_dat->einer vollständigen Produktspezifikation</li>
+    <li>a_full_schematic_synonym_dat->einer vollständigen Anleitung</li>
     <li>schematic_synonyms->Baupläne</li>
     <li>schematic_synonyms->Diagramme</li>
     <li>schematic_synonyms->Blaupausen</li>
     <li>schematic_synonyms->Entwürfe</li>
-    <li>schematic_synonyms->Prototypen</li>
+    <li>schematic_synonyms->Vorabexemplare</li>
     <li>schematic_synonyms->Produktspezifikationen</li>
     <li>schematic_synonyms->Anleitungen</li>
+    <li>schematic_synonyms->Unterlagen</li>
     <li>schematic_synonyms_acc->Bauplänen</li>
     <li>schematic_synonyms_acc->Diagrammen</li>
     <li>schematic_synonyms_acc->Blaupausen</li>
     <li>schematic_synonyms_acc->Entwürfen</li>
-    <li>schematic_synonyms_acc->Prototypen</li>
+    <li>schematic_synonyms_acc->Vorabexemplare</li>
     <li>schematic_synonyms_acc->Produktspezifikationen</li>
     <li>schematic_synonyms_acc->Anleitungen</li>
+    <li>schematic_synonyms_acc->Unterlagen</li>
     <li>the_schematic_synonym->der Bauplan</li>
     <li>the_schematic_synonym->das Diagramm</li>
     <li>the_schematic_synonym->die Blaupause</li>
     <li>the_schematic_synonym->der Entwurf</li>
-    <li>the_schematic_synonym->der Prototyp</li>
+    <li>the_schematic_synonym->das Vorabexemplar</li>
     <li>the_schematic_synonym->die Produktspezifikation</li>
     <li>the_schematic_synonym->die Anleitung</li>
     <li>this_schematic_synonym->dieser Bauplan</li>
     <li>this_schematic_synonym->dieses Diagramm</li>
     <li>this_schematic_synonym->diese Blaupause</li>
     <li>this_schematic_synonym->dieser Entwurf</li>
-    <li>this_schematic_synonym->dieser Prototyp</li>
+    <li>this_schematic_synonym->dieses Vorabexemplar</li>
     <li>this_schematic_synonym->diese Produktspezifikation</li>
     <li>this_schematic_synonym->diese Anleitung</li>
     <li>this_schematic_synonym_dat->diesem Bauplan</li>
     <li>this_schematic_synonym_dat->diesem Diagramm</li>
     <li>this_schematic_synonym_dat->dieser Blaupause</li>
     <li>this_schematic_synonym_dat->diesem Entwurf</li>
-    <li>this_schematic_synonym_dat->diesem Prototyp</li>
+    <li>this_schematic_synonym_dat->diesem Vorabexemplar</li>
     <li>this_schematic_synonym_dat->dieser Produktspezifikation</li>
     <li>this_schematic_synonym_dat->dieser Anleitung</li>
     <li>this_schematic_synonym_acc->diesen Bauplan</li>
     <li>this_schematic_synonym_acc->dieses Diagramm</li>
     <li>this_schematic_synonym_acc->diese Blaupause</li>
     <li>this_schematic_synonym_acc->diesen Entwurf</li>
-    <li>this_schematic_synonym_acc->diesen Prototyp</li>
+    <li>this_schematic_synonym_acc->dieses Vorabexemplar</li>
     <li>this_schematic_synonym_acc->diese Produktspezifikation</li>
     <li>this_schematic_synonym_acc->diese Anleitung</li>
     <li>this_physical_adjective_schematic_synonym->dieser [physical_adjective]e Bauplan</li>
     <li>this_physical_adjective_schematic_synonym->dieses [physical_adjective]e Diagramm</li>
     <li>this_physical_adjective_schematic_synonym->diese [physical_adjective]e Blaupause</li>
     <li>this_physical_adjective_schematic_synonym->dieser [physical_adjective]e Entwurf</li>
-    <li>this_physical_adjective_schematic_synonym->dieser [physical_adjective]e Prototyp</li>
+    <li>this_physical_adjective_schematic_synonym->dieses [physical_adjective]e Vorabexemplar</li>
     <li>this_physical_adjective_schematic_synonym->diese [physical_adjective]e Produktspezifikation</li>
     <li>this_physical_adjective_schematic_synonym->diese [physical_adjective]e Anleitung</li>
     <li>this_negative_adjective_schematic_synonym->dieser [negative_adjective]e Bauplan</li>
     <li>this_negative_adjective_schematic_synonym->dieses [negative_adjective]e Diagramm</li>
     <li>this_negative_adjective_schematic_synonym->diese [negative_adjective]e Blaupause</li>
     <li>this_negative_adjective_schematic_synonym->dieser [negative_adjective]e Entwurf</li>
-    <li>this_negative_adjective_schematic_synonym->dieser [negative_adjective]e Prototyp</li>
+    <li>this_negative_adjective_schematic_synonym->dieses [negative_adjective]e Vorabexemplar</li>
     <li>this_negative_adjective_schematic_synonym->diese [negative_adjective]e Produktspezifikation</li>
     <li>this_negative_adjective_schematic_synonym->diese [negative_adjective]e Anleitung</li>
     <li>this_physical_adjective_schematic_synonym_dat->diesem [physical_adjective]en Bauplan</li>
     <li>this_physical_adjective_schematic_synonym_dat->diesem [physical_adjective]en Diagramm</li>
     <li>this_physical_adjective_schematic_synonym_dat->dieser [physical_adjective]en Blaupause</li>
     <li>this_physical_adjective_schematic_synonym_dat->diesem [physical_adjective]en Entwurf</li>
-    <li>this_physical_adjective_schematic_synonym_dat->diesem [physical_adjective]en Prototyp</li>
+    <li>this_physical_adjective_schematic_synonym_dat->diesem [physical_adjective]en Vorabexemplar</li>
     <li>this_physical_adjective_schematic_synonym_dat->dieser [physical_adjective]en Produktspezifikation</li>
     <li>this_physical_adjective_schematic_synonym_dat->dieser [physical_adjective]en Anleitung</li>
     <li>this_maybe_physical_adjective_schematic_synonym_dat->[this_schematic_synonym_dat]</li>
@@ -2130,30 +2227,31 @@
     <li>image_types->Fotos</li>
     <li>image_types->Zeichnungen</li>
     <li>image_types->Gravuren</li>
-    <li>image_types->Aquarelle</li>
+    <li>image_types->Malereien</li>
+    <li>image_types->Aufzeichnungen</li>
     <li>image_types->Blaupausen</li>
     <li>image_types->Skizzen</li>
     <li>image_types->Karikaturen</li>
-    <li>other_subject->Infrastruktur</li>
+    <li>other_subject->Platz</li>
     <li>other_subject->Personal</li>
     <li>other_subject->Kommunikation</li>
-    <li>other_subject->Spielraum</li>
+    <li>other_subject->Zeit</li>
     <li>other_subject->Budget</li>
     <li>other_subject->Ressourcen</li>
-    <li>the_other_subject_acc->die Infrastruktur</li>
-    <li>the_other_subject_acc->das Personal</li>
-    <li>the_other_subject_acc->die Kommunikation</li>
-    <li>the_other_subject_acc->den Spielraum</li>
-    <li>the_other_subject_acc->das Budget</li>
-    <li>the_other_subject_acc->die Ressourcen</li>
-    <li>the_limited_other_subject->die mangelnde Infrastruktur</li>
-    <li>the_limited_other_subject->der Personalmangel</li>
-    <li>the_limited_other_subject->die mangelnde Kommunikation</li>
-    <li>the_limited_other_subject->der mangelnde Spielraum</li>
-    <li>the_limited_other_subject->das knappe Budget</li>
-    <li>the_limited_other_subject->der Ressourcenmangel</li>
+    <li>other_subject_com_prefix->Platz</li>
+    <li>other_subject_com_prefix->Personal</li>
+    <li>other_subject_com_prefix->Kommunikations</li>
+    <li>other_subject_com_prefix->Zeit</li>
+    <li>other_subject_com_prefix->Budget</li>
+    <li>other_subject_com_prefix->Ressourcen</li>
+    <li>other_subject_with_of->der Arbeitsteilung</li>
+    <li>other_subject_with_of->des Personals</li>
+    <li>other_subject_with_of->der Kommunikation</li>
+    <li>other_subject_with_of->der Zeitplanung</li>
+    <li>other_subject_with_of->des Budgets</li>
+    <li>other_subject_with_of->der Ressourcen</li>
     <li>dates->Der Bauplan wurde [date_form] veröffentlicht</li>
-    <li>dates->Die Erstfassung wurde [date_form] gedruckt</li>
+    <li>dates->Die Erstfassung [ANYPAWN_possessive]es Werkes wurde [date_form] gedruckt</li>
     <li>dates->Das genaue Entstehungsdatum ist nicht bekannt</li>
     <li>date_form->kürzlich</li>
     <li>date_form->vor vielen Jahrhunderten</li>
@@ -2518,59 +2616,73 @@
   -->
   <Description_SkillBook.rulePack.rulesStrings>
     <li>subject->[subject_primary]</li>
-    <li>subject_with_article_gen->{lookup: [subject]; book; 1}</li>
+    <li>subject_with_of->[subject_primary_with_of]</li>
+    <li>subject_with_of(priority=-1)->von [subject]</li>
+    <li>subject_with_to->[subject_primary_with_to]</li>
+    <li>subject_with_to(priority=-1)->zu [subject]</li>
+    <li>subject_with_the_dat->[subject_primary_with_the_dat]</li>
+    <li>subject_with_the_dat(priority=-1)->[subject]</li>
+    <li>subject_with_the_acc->[subject_primary_with_the_acc]</li>
+    <li>subject_with_the_acc(priority=-1)->[subject]</li>
+    <li>subject_gender_nom_indef->[subject_primary_gender_nom_indef]</li>
+    <li>subject_gender_nom_indef(priority=-1)->|N|[subject]</li>
+    <li>subject_dat_indef_zero->[subject_primary_dat_indef_zero]</li>
+    <li>subject_dat_indef_zero(priority=-1)->[subject]</li>
+    <li>subject_acc_indef_zero->[subject_primary_acc_indef_zero]</li>
+    <li>subject_acc_indef_zero(priority=-1)->[subject]</li>
     <li>desc->[discussion].\n\n[anecdote]. [production].\n\n[quality_statement].</li>
-    <li>discussion->[this_textbook] enthält [useful_information_about] [subject][detail]</li>
-    <li>discussion->[this_textbook] untermauert die Kompetenz [the_author_gen] auf dem Gebiet [subject_with_article_gen][detail]</li>
+    <li>discussion->[this_textbook] enthält [useful_information_about_subject][detail]</li>
+    <li>discussion->[this_textbook] untermauert die Kompetenz [of_the_author] auf dem Gebiet [subject_with_of][detail]</li>
     <li>discussion->[Those_seeking_knowledge_of_subject], sollte [this_famous_textbook] lesen[detail]</li>
-    <li>discussion->[a_standardized_textbook] über [subject][detail]</li>
-    <li>discussion->Eine frühe Ausgabe über [subject][detail]</li>
+    <li>discussion->[a_standardized_textbook] über [subject_with_the_acc][detail]</li>
+    <li>discussion->Eine frühe Ausgabe über [subject_with_the_acc][detail]</li>
     <li>detail->. Die [precis_synonym] konzentriert sich auf die fachlichen Aspekte des Themas</li>
-    <li>detail->. Es ist eine knappe [precis_synonym] eines komplexen Themas</li>
-    <li>detail->. In der [precis_synonym] heißt es, dass das Werk zum Zeitpunkt, als [ANYPAWN_label] es schrieb, auf dem neuesten Stand der Wissenschaft war</li>
-    <li>detail->. Ein Zitat auf [the_note_location_dat] lautet: "Echte [students] von [subject] können [ANYPAWN_label]'s Werk nicht ignorieren"</li>
+    <li>detail->. Es handelt sich um eine knappe [precis_synonym] dieses komplexen Themas</li>
+    <li>detail->. In der [precis_synonym] steht, dass das Werk zum Zeitpunkt, als [ANYPAWN_label] es schrieb, auf dem neuesten Stand der Wissenschaft war</li>
+    <li>detail->. Ein Zitat auf [the_note_location_dat] lautet: "Ein unverzichtbares Werk für wahre [students] [subject_with_of]"</li>
     <li>students->Studenten</li>
     <li>students->Schüler</li>
     <li>students->Kenner</li>
     <li>students->Liebhaber</li>
+    <li>students->Jünger</li>
     <li>detail->. Es führt den Leser Schritt für Schritt durch das Thema</li>
-    <li>detail(quality[less_than]4)->, auch wenn [the_author] durch das Thema hetzt</li>
+    <li>detail(quality[less_than]4)->, auch wenn [the_author] das Thema recht oberflächlich behandelt</li>
     <li>detail(quality[greater_than]3)->. Das Thema wird umfassend behandelt</li>
-    <li>detail->. [the_author] behauptet in [ANYPAWN_possessive]er [precis_synonym], dass es gefälschte Exemplare dieses Werkes gibt, aber dieses keine Fälschung sei</li>
-    <li>detail(quality[less_than]4)->, obwohl der Versuch, die Thematik durch einen imaginären Dialog zu vermitteln, vielleicht ein Fehler war</li>
-    <li>detail->. Die Rhetorik [the_author_gen] in der [precis_synonym] lenkt nicht von den Kernaussagen ab</li>
-    <li>production->In der [precis_synonym] heißt es, dass dieses Werk handschriftlich auf [worldname] verfasst wurde</li>
-    <li>production->In der [precis_synonym] heißt es, dass die Universität von [worldname] dieses Werk zu einer Pflichtlektüre gemacht hat</li>
-    <li>production->In der [precis_synonym] heißt es, dass diese Notizen, obwohl sie für [ANYPAWN_label]'s persönlichen Gebrauch bestimmt waren, in großem Umfang veröffentlicht wurden</li>
-    <li>production->Die nützlichen Informationen in [this_textbook_dat] sind zwischen den biografischen Details versteckt</li>
-    <li>production->Aus einer handschriftlichen [note] auf [note_location_dat] geht hervor, dass die Druckerei von [worldname] nach den Unruhen geschlossen wurde, weshalb diese späteren Ausgaben selten sind</li>
-    <li>production->Aus einer beigefügten [note] geht hervor, dass die meisten Exemplare [this_textbook_gen] während des Vorfalls von [worldname] verloren gegangen sind</li>
+    <li>detail->. [the_author] behauptet in [ANYPAWN_possessive]er [precis_synonym], dass zwar Fälschungen dieses Titels im Umlauf sind, dieses Exemplar jedoch echt ist</li>
+    <li>detail(quality[less_than]4)->, wobei es vielleicht ein Fehler war, die eigenen Ideen in Form eines fiktiven Dialogs zu vermitteln</li>
+    <li>detail->. Der Schreibstil [of_the_author] in der [precis_synonym] lenkt nicht von den Kernaussagen ab</li>
+    <li>production->In der [precis_synonym] steht, dass dieses Werk handschriftlich {replace: auf [worldname]; "auf Erde"-"auf der Erde"} verfasst wurde</li>
+    <li>production->In der [precis_synonym] steht, dass die {replace: Universität von [worldname]; "Universität von Erde"-"Erduniversität"} dieses Werk zu einer Pflichtlektüre gemacht hat</li>
+    <li>production->In der [precis_synonym] steht, dass diese Notizen, die eigentlich für [ANYPAWN_label]'s persönlichen Gebrauch bestimmt waren, in großem Umfang veröffentlicht wurden</li>
+    <li>production->Die nützlichen Infos in [this_textbook_dat] sind zwischen den biografischen Details versteckt</li>
+    <li>production->Aus einer handschriftlichen [note] auf [the_note_location_dat] geht hervor, dass die {replace: Druckerei von [worldname]; "Druckerei von Erde"-"irdische Druckerei"} nach den Unruhen geschlossen wurde, weshalb diese späteren Ausgaben selten sind</li>
+    <li>production->Aus einer beigefügten [note] geht hervor, dass die meisten Exemplare [this_textbook_gen] bei einer Katastrophe {replace: auf [worldname]; "auf Erde"-"auf der Erde"} verloren gingen</li>
     <li>production->Die [precis_synonym] macht deutlich, dass Leser, die mit Archotech-Methoden der Informationsverbreitung vertraut sind, diese [textbook_con]reihe eher meiden – aus welchem Grund auch immer</li>
-    <li>production->Auf [the_note_location_dat] wird deutlich, dass die Proselyten von [worldname] ein Vermögen für den Druck und die Verbreitung dieses Werkes ausgegeben haben</li>
-    <li>production->Auf [the_note_location_dat] steht, dass die ersten Exemplare dieses Werkes von [ANYPAWN_label] selbst geschrieben wurden</li>
-    <li>production->Die Herzogin von [worldname] sponserte [this_textbook_acc] mit dem Versprechen, es allen Interessierten kostenlos zur Verfügung zu stellen</li>
-    <li>production->Aus einer Notiz geht hervor, dass eine Spende der Buchhändler von [coreworld] die erste Ausgabe [this_textbook_gen] ermöglichte</li>
+    <li>production->Auf [the_note_location_dat] wird deutlich, dass die {replace: Proselyten von [worldname]; "Proselyten von Erde"-"irdischen Proselyten"} ein Vermögen für den Druck und die Verbreitung dieses Werkes investiert haben</li>
+    <li>production->Auf [the_note_location_dat] steht, dass [ANYPAWN_label] die ersten Exemplare dieses Werkes selbst schrieb</li>
+    <li>production->Die {replace: Herzogin von [worldname]; "Herzogin von Erde"-"irdische Herzogin"} sponserte [this_textbook_acc] mit dem Versprechen, es allen Interessierten kostenlos zur Verfügung zu stellen</li>
+    <li>production->Aus einer Notiz geht hervor, dass die erste Ausgabe [this_textbook_gen] durch eine Spende der Buchhändler von [coreworld] ermöglicht wurde</li>
     <li>production->Auf der Rückseite des Werkes wirbt der Verlag für eine größere Buchreihe, in der alle Themen behandelt werden, die für das Überleben auf einer Randwelt notwendig sind</li>
     <li>production->Angesichts der schlampigen Grammatik hätten die Herausgeber ihre redaktionellen Pflichten vielleicht etwas sorgfältiger wahrnehmen sollen</li>
     <li>quality_statement->[exterior_quality] [page_quality]</li>
-    <li>anecdote->Angesichts der großen Zeitspanne zwischen [ANYPAWN_label]'s Geburtsjahr und dem Erscheinungsdatum dieses Werkes ist es unwahrscheinlich, dass [ANYPAWN_pronoun] die Veröffentlichung erlebt hat</li>
+    <li>anecdote->Angesichts der großen Zeitspanne zwischen [ANYPAWN_label]'s Geburtsjahr und dem Erscheinungsdatum dieses Werkes ist es unwahrscheinlich, dass [ANYPAWN_pronoun] dessen Veröffentlichung miterlebt hat</li>
     <li>anecdote->Auf [the_note_location_dat] hat jemand eine vernichtende Rezension geklebt</li>
-    <li>anecdote->Aus der [precis_synonym] geht hervor, dass dieses Werk durch das öffentliche Bibliothekssystem von [urbworld] lief</li>
+    <li>anecdote->Aus der [precis_synonym] geht hervor, dass dieses Werk im öffentlichen Bibliothekssystem von [urbworld] im Umlauf war</li>
     <li>anecdote->[the_note_location_dat] zufolge war [ANYPAWN_nameFull] {ANYPAWN_gender ? ein Meister : eine Meisterin} auf vielen Gebieten</li>
-    <li>anecdote->[the_note_location_dat] zufolge sprechen die Bewohner von [worldname] noch heute von [ANYPAWN_nameFull] und erinnern sich an [ANYPAWN_possessive]e Liebe zu [subject]</li>
-    <li>anecdote->[the_note_location_dat] zufolge kam [the_author] [ANYPAWN_nameFull] kurz nach der Veröffentlichung bei einem verrückten Unfall ums Leben, als [ANYPAWN_pronoun] sich in etwas verhedderte</li>
+    <li>anecdote->[the_note_location_dat] zufolge sprechen die {replace: Bewohner von [worldname]; "Bewohner von Erde"-"Erdbewohner"} noch heute von [ANYPAWN_nameFull] und erinnern sich an [ANYPAWN_possessive]e Liebe [subject_with_to]</li>
+    <li>anecdote->[the_note_location_dat] zufolge kam [the_author] [ANYPAWN_nameFull] kurz nach der Veröffentlichung bei einem bizzaren Unfall ums Leben</li>
     <li>anecdote->Aus der [precis_synonym] geht hervor, dass [ANYPAWN_nameFull] [ANYPAWN_possessive]e Tage als {ANYPAWN_gender ? Dozent : Dozentin} an der Akademie auf [coreworld] verbrachte. Dieses Werk ist aus [ANYPAWN_possessive]en Vorlesungen hervorgegangen</li>
-    <li>anecdote->Aus der [precis_synonym] geht hervor, dass [ANYPAWN_label]'s Wissen über [subject] so bekannt war, dass [ANYPAWN_objective] die Leute auf der Straße ansprachen und danach fragten</li>
+    <li>anecdote->Aus der [precis_synonym] geht hervor, dass [ANYPAWN_label]'s Wissen über [subject_with_the_acc] so bekannt war, dass [ANYPAWN_objective] die Leute auf der Straße ansprachen und danach fragten</li>
     <li>anecdote->[the_note_location_dat] zufolge war [ANYPAWN_nameFull] verarmt und verkaufte die Rechte an dieser Buchreihe für sehr wenig Geld</li>
-    <li>anecdote->[the_note_location_dat] zufolge war [ANYPAWN_nameFull] von Geburt an blind und hat [ANYPAWN_possessive] Werk daher nie gesehen</li>
-    <li>anecdote->[the_note_location_dat] zufolge enthielt der erste Entwurf von [ANYPAWN_label]'s Werk fünfzig Seiten abschweifende Texte. Es wurde für die zweite Auflage gekürzt</li>
+    <li>anecdote->[the_note_location_dat] zufolge war [ANYPAWN_nameFull] von Geburt an blind und konnte [ANYPAWN_possessive] Werk daher nie sehen</li>
+    <li>anecdote->[the_note_location_dat] zufolge umfasste der erste Entwurf von [ANYPAWN_label]'s Werk fünfzig Seiten mit abschweifenden Texten. Es wurde für die zweite Auflage gekürzt</li>
     <li>anecdote->[the_note_location_dat] zufolge war [ANYPAWN_label]'s Ruf so schlecht, dass [ANYPAWN_pronoun] dieses Werk unter einem Pseudonym veröffentlichte</li>
     <li>anecdote->[the_note_location_dat] zufolge war [ANYPAWN_nameFull] als Kind so faul, dass [ANYPAWN_possessive]e Eltern verzweifelten. Dieses Werk ist eine Rechtfertigung für [ANYPAWN_possessive] Können</li>
-    <li>anecdote->Der [precis_synonym] zufolge kam [ANYPAWN_nameFull] während [ANYPAWN_possessive]er vierten Ehe auf die Idee, ein Fachbuch zum Thema [subject] zu schreiben (dies führte zu [ANYPAWN_possessive]er vierten Scheidung)</li>
+    <li>anecdote->Der [precis_synonym] zufolge kam [ANYPAWN_nameFull] während [ANYPAWN_possessive]er vierten Ehe auf die Idee, ein Fachbuch über [subject_with_the_acc] zu schreiben (dies führte zu [ANYPAWN_possessive]er vierten Scheidung)</li>
     <li>the_author(ANYPAWN_gender!=Female)->der Autor</li>
     <li>the_author(ANYPAWN_gender==Female)->die Autorin</li>
-    <li>the_author_gen(ANYPAWN_gender!=Female)->des Autors</li>
-    <li>the_author_gen(ANYPAWN_gender==Female)->der Autorin</li>
+    <li>of_the_author(ANYPAWN_gender!=Female)->des Autors</li>
+    <li>of_the_author(ANYPAWN_gender==Female)->der Autorin</li>
     <li>textbook_con->Fibel</li>
     <li>textbook_con->Anleitungs</li>
     <li>textbook_con->Lehrbuch</li>
@@ -2709,26 +2821,26 @@
     <li>the_note_location_dat->den Rändern</li>
     <li>the_note_location_dat->der Titelseite</li>
     <li>the_note_location_dat->der Fußnote</li>
-    <li>the_note_location_dat->der Biographie [the_author_gen]</li>
+    <li>the_note_location_dat->der Biographie [of_the_author]</li>
     <li>the_note_location_dat->dem Versandetikett</li>
     <li>note->Notiz</li>
     <li>note->Anmerkung</li>
     <li>note->Mitteilung</li>
     <li>note->Ergänzung</li>
     <li>note->Nachschrift</li>
-    <li>useful_information_about->nützliche Infos über</li>
-    <li>useful_information_about->nützliche Informationen über</li>
-    <li>useful_information_about->interessante Fakten über</li>
-    <li>useful_information_about->wertvolle Erkenntnisse über</li>
-    <li>useful_information_about->praktische Anregungen zu</li>
-    <li>useful_information_about->hilfreiche Tipps zu</li>
-    <li>useful_information_about->informative Details über</li>
-    <li>Those_seeking_knowledge_of_subject->Wer sich über [subject] informieren möchte</li>
-    <li>Those_seeking_knowledge_of_subject->Wer sich zum Thema [subject] weiterbilden will</li>
-    <li>Those_seeking_knowledge_of_subject->Wer [subject] verstehen will</li>
-    <li>Those_seeking_knowledge_of_subject->Wer ein Stipendium zum Thema [subject] sucht</li>
-    <li>Those_seeking_knowledge_of_subject->Wer Bildung zum Thema [subject] sucht</li>
-    <li>Those_seeking_knowledge_of_subject->Wer Fachwissen über [subject] sucht</li>
+    <li>useful_information_about_subject->nützliche Infos über [subject_with_the_acc]</li>
+    <li>useful_information_about_subject->nützliche Details über [subject_with_the_acc]</li>
+    <li>useful_information_about_subject->interessante Fakten über [subject_with_the_acc]</li>
+    <li>useful_information_about_subject->wertvolle Erkenntnisse über [subject_with_the_acc]</li>
+    <li>useful_information_about_subject->praktische Anregungen [subject_with_to]</li>
+    <li>useful_information_about_subject->hilfreiche Tipps über [subject_with_the_acc]</li>
+    <li>useful_information_about_subject->informative Details über [subject_with_the_acc]</li>
+    <li>Those_seeking_knowledge_of_subject->Wer sich über [subject_with_the_acc] informieren möchte</li>
+    <li>Those_seeking_knowledge_of_subject->Wer sich zum Thema '[subject]' weiterbilden will</li>
+    <li>Those_seeking_knowledge_of_subject->Wer [subject_with_the_acc] verstehen will</li>
+    <li>Those_seeking_knowledge_of_subject->Wer ein Stipendium für [subject_with_the_acc] sucht</li>
+    <li>Those_seeking_knowledge_of_subject->Wer Bildung zum Thema '[subject]' sucht</li>
+    <li>Those_seeking_knowledge_of_subject->Wer Fachwissen über [subject_with_the_acc] sucht</li>
     <!-- <li>Those_seeking_knowledge_of_subject->a philosophy of</li> -->
     <!-- <li>Those_seeking_knowledge_of_subject->the ethics of</li> -->
     <li>notable_adjective->berühmt</li>
@@ -2738,7 +2850,7 @@
     <li>notable_adjective->gewöhnlich</li>
     <li>notable_adjective->vertraut</li>
     <li>notable_adjective->zeitlos</li>
-    <li>notable_adjective->schief</li>
+    <li>notable_adjective->faktenbasiert</li>
     <li>notable_adjective->stimmig</li>
     <li>notable_adjective->elegant</li>
     <li>notable_adjective->einfach</li>
@@ -2748,16 +2860,16 @@
     <li>notable_adjective->primitiv</li>
     <li>notable_adjective->dekorativ</li>
     <li>exterior_quality(quality[greater_than]4)->Das Äußere dieses Buches ist fein gebunden und</li>
-    <li>exterior_quality(quality[greater_than]4)->Ein Meisterwerk der Druckkunst, dieses Werk glänzt und</li>
-    <li>exterior_quality(quality[greater_than]4)->Der Ledereinband ist rau, aber</li>
-    <li>exterior_quality(quality[greater_than]4)->Der Einband ist zwar sehr schlicht, aber</li>
-    <li>exterior_quality(quality[less_than]5,quality[greater_than]1)->Dieses Werk hat schon bessere Tage gesehen, aber</li>
+    <li>exterior_quality(quality[greater_than]4)->Dieses Meisterwerk der Druckkunst glänzt und</li>
+    <li>exterior_quality(quality[greater_than]4)->Der Ledereinband ist rau, doch</li>
+    <li>exterior_quality(quality[greater_than]4)->Der Einband ist zwar sehr schlicht, doch</li>
+    <li>exterior_quality(quality[less_than]5,quality[greater_than]1)->Dieses Werk hat schon bessere Tage gesehen, doch</li>
     <li>exterior_quality(quality[less_than]5,quality[greater_than]1)->Auch wenn es sich um ein gebrauchtes Schulbuch handelt:</li>
-    <li>exterior_quality(quality[less_than]5,quality[greater_than]1)->Dieses Buch hat viele Besitzer gewechselt, aber</li>
-    <li>exterior_quality(quality[less_than]2)->Die Vorderseite dieses Buches sieht ansprechend aus, aber</li>
+    <li>exterior_quality(quality[less_than]5,quality[greater_than]1)->Dieses Buch hat viele Besitzer gewechselt, doch</li>
+    <li>exterior_quality(quality[less_than]2)->Die Vorderseite dieses Buches sieht ansprechend aus, doch</li>
     <li>exterior_quality(quality[less_than]2)->Jemand hat das erste Drittel des Buches herausgerissen und</li>
     <li>exterior_quality(quality[less_than]2)->Der Einband ist mit einer stark riechenden Flüssigkeit getränkt und</li>
-    <li>exterior_quality(quality[less_than]2)->Auf den ersten Blick ist an dem Buch nichts auszusetzen, aber</li>
+    <li>exterior_quality(quality[less_than]2)->Auf den ersten Blick ist an dem Buch nichts auszusetzen, doch</li>
     <li>page_quality->die Seiten [page_condition]</li>
     <li>page_condition(quality[greater_than]4)->[page_excellent]</li>
     <li>page_condition(quality[less_than]5,quality[greater_than]1)->[page_decent]</li>
@@ -2775,7 +2887,7 @@
     <li>page_awful->sind stark beschädigt</li>
     <li>page_awful->sind mit einer dunklen Substanz befleckt</li>
     <li>page_awful->sind unleserlich</li>
-    <li>page_awful->sind mit einer unleserlichen Handschrift beschrieben</li>
+    <li>page_awful->sind in unleserlicher Handschrift geschrieben</li>
     <li>worldname->[glitterworld]</li>
     <li>worldname->[urbworld]</li>
     <li>worldname->[deadworld]</li>

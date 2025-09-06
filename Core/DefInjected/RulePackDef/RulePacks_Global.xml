@@ -527,8 +527,11 @@
   <TalkTopicsUtility.rulePack.rulesFiles>
     <li>talktopicheavyfile->Words/Nouns/TalkTopics_Heavy</li>
     <li>talktopicheavyfileDat->Words/Nouns/TalkTopics_Heavy_Dat</li>
+    <li>talktopicheavyfileDat_with_to->Words/Nouns/TalkTopics_Heavy_Dat_with_to</li>
     <li>talktopicheavyfileAcc->Words/Nouns/TalkTopics_Heavy_Acc</li>
     <li>talktopiclightfile->Words/Nouns/TalkTopics_Light</li>
+    <li>talktopiclightfileDat->Words/Nouns/TalkTopics_Light_Dat</li>
+    <li>talktopiclightfileDat_with_to->Words/Nouns/TalkTopics_Light_Dat_with_to</li>
     <li>talktopiclightfileAcc->Words/Nouns/TalkTopics_Light_Acc</li>
   </TalkTopicsUtility.rulePack.rulesFiles>
   <!-- EN:
@@ -573,12 +576,24 @@
   <TalkTopicsUtility.rulePack.rulesStrings>
     <li>TalkTopicAny->[TalkTopicLight]</li>
     <li>TalkTopicAny->[TalkTopicHeavy]</li>
-    <li>TalkTopicHeavy->[talktopicheavyfile]</li>
-    <li>TalkTopicHeavy(p=0.08)->Zusammenhänge zwischen [talktopicheavyfileDat] und [talktopicheavyfileDat]</li>
-    <li>TalkTopicHeavy(p=0.08)->Unterschiede zwischen [talktopicheavyfileDat] und [talktopicheavyfileDat]</li>
-    <li>TalkTopicHeavy(p=0.08)->das Verhältnis zwischen [talktopicheavyfileDat] und [talktopicheavyfileDat]</li>
+    <li>TalkTopicAnyDat->[TalkTopicLightDat]</li>
+    <li>TalkTopicAnyDat->[TalkTopicHeavyDat]</li>
+    <li>TalkTopicAnyDat_with_to->[TalkTopicLightDat_with_to]</li>
+    <li>TalkTopicAnyDat_with_to->[TalkTopicHeavyDat_with_to]</li>
     <li>TalkTopicAnyAcc->[TalkTopicLightAcc]</li>
     <li>TalkTopicAnyAcc->[TalkTopicHeavyAcc]</li>
+    <li>TalkTopicHeavy->[talktopicheavyfile]</li>
+    <li>TalkTopicHeavy(p=0.08)->der Zusammenhang zwischen [talktopicheavyfileDat] und [talktopicheavyfileDat]</li>
+    <li>TalkTopicHeavy(p=0.08)->der Unterschied zwischen [talktopicheavyfileDat] und [talktopicheavyfileDat]</li>
+    <li>TalkTopicHeavy(p=0.08)->das Verhältnis zwischen [talktopicheavyfileDat] und [talktopicheavyfileDat]</li>
+    <li>TalkTopicHeavyDat->[talktopicheavyfileDat]</li>
+    <li>TalkTopicHeavyDat(p=0.08)->dem Zusammenhang zwischen [talktopicheavyfileDat] und [talktopicheavyfileDat]</li>
+    <li>TalkTopicHeavyDat(p=0.08)->dem Unterschied zwischen [talktopicheavyfileDat] und [talktopicheavyfileDat]</li>
+    <li>TalkTopicHeavyDat(p=0.08)->dem Verhältnis zwischen [talktopicheavyfileDat] und [talktopicheavyfileDat]</li>
+    <li>TalkTopicHeavyDat_with_to->[talktopicheavyfileDat_with_to]</li>
+    <li>TalkTopicHeavyDat_with_to(p=0.08)->zum Zusammenhang zwischen [talktopicheavyfileDat] und [talktopicheavyfileDat]</li>
+    <li>TalkTopicHeavyDat_with_to(p=0.08)->zum Unterschied zwischen [talktopicheavyfileDat] und [talktopicheavyfileDat]</li>
+    <li>TalkTopicHeavyDat_with_to(p=0.08)->zum Verhältnis zwischen [talktopicheavyfileDat] und [talktopicheavyfileDat]</li>
     <li>TalkTopicHeavyAcc->[talktopicheavyfileAcc]</li>
     <li>TalkTopicHeavyAcc(p=0.08)->den Zusammenhang zwischen [talktopicheavyfileDat] und [talktopicheavyfileDat]</li>
     <li>TalkTopicHeavyAcc(p=0.08)->den Unterschied zwischen [talktopicheavyfileDat] und [talktopicheavyfileDat]</li>
@@ -608,6 +623,56 @@
     <li>TalkTopicLight->[Apparels]</li>
     <li>TalkTopicLight->das Tragen von [ApparelsDat]</li>
     <li>TalkTopicLight->die Herstellung von [ApparelsDat]</li>
+    <li>TalkTopicLightDat(p=25)->[talktopiclightfileDat]</li>
+    <li>TalkTopicLightDat->[VegetablesDat]</li>
+    <li>TalkTopicLightDat->dem Verzehr von [VegetablesDat]</li>
+    <li>TalkTopicLightDat->der Zubereitung von [VegetablesDat]</li>
+    <li>TalkTopicLightDat->[Game]</li>
+    <li>TalkTopicLightDat->dem [Game]spielen</li>
+    <li>TalkTopicLightDat->[AnimalsDat]</li>
+    <li>TalkTopicLightDat->dem Trainieren von [AnimalsDat]</li>
+    <li>TalkTopicLightDat->dem Zähmen von [AnimalsDat]</li>
+    <li>TalkTopicLightDat->dem Kämpfen gegen [Animals]</li>
+    <li>TalkTopicLightDat->verrückten [AnimalsDat]</li>
+    <li>TalkTopicLightDat->[WeaponsDat]</li>
+    <li>TalkTopicLightDat->der Nutzung von [WeaponsDat]</li>
+    <li>TalkTopicLightDat->dem Trainieren mit [WeaponsDat]</li>
+    <li>TalkTopicLightDat->[TerrainFeaturesDat]</li>
+    <li>TalkTopicLightDat->[NaturalObjectsDat]</li>
+    <li>TalkTopicLightDat->[TreeTypes]</li>
+    <li>TalkTopicLightDat->[PersonJobsDat]</li>
+    <li>TalkTopicLightDat->freundlichen [PersonJobsDat]</li>
+    <li>TalkTopicLightDat->feindlichen [PersonJobsDat]</li>
+    <li>TalkTopicLightDat->[EnemiesDat]</li>
+    <li>TalkTopicLightDat->dem Kämpfen gegen [Enemies]</li>
+    <li>TalkTopicLightDat->[ApparelsDat]</li>
+    <li>TalkTopicLightDat->dem Tragen von [ApparelsDat]</li>
+    <li>TalkTopicLightDat->der Herstellung von [ApparelsDat]</li>
+    <li>TalkTopicLightDat_with_to(p=25)->[talktopiclightfileDat_with_to]</li>
+    <li>TalkTopicLightDat_with_to->zu [VegetablesDat]</li>
+    <li>TalkTopicLightDat_with_to->zum Verzehr von [VegetablesDat]</li>
+    <li>TalkTopicLightDat_with_to->zur Zubereitung von [VegetablesDat]</li>
+    <li>TalkTopicLightDat_with_to->zum [Game]</li>
+    <li>TalkTopicLightDat_with_to->zum [Game]spielen</li>
+    <li>TalkTopicLightDat_with_to->zu [AnimalsDat]</li>
+    <li>TalkTopicLightDat_with_to->zum Trainieren von [AnimalsDat]</li>
+    <li>TalkTopicLightDat_with_to->zum Zähmen von [AnimalsDat]</li>
+    <li>TalkTopicLightDat_with_to->zum Kämpfen gegen [Animals]</li>
+    <li>TalkTopicLightDat_with_to->zu verrückten [AnimalsDat]</li>
+    <li>TalkTopicLightDat_with_to->zu [WeaponsDat]</li>
+    <li>TalkTopicLightDat_with_to->zur Nutzung von [WeaponsDat]</li>
+    <li>TalkTopicLightDat_with_to->zum Trainieren mit [WeaponsDat]</li>
+    <li>TalkTopicLightDat_with_to->zu [TerrainFeaturesDat]</li>
+    <li>TalkTopicLightDat_with_to->zu [NaturalObjectsDat]</li>
+    <li>TalkTopicLightDat_with_to->zu [TreeTypes]</li>
+    <li>TalkTopicLightDat_with_to->zu [PersonJobsDat]</li>
+    <li>TalkTopicLightDat_with_to->zu freundlichen [PersonJobsDat]</li>
+    <li>TalkTopicLightDat_with_to->zu feindlichen [PersonJobsDat]</li>
+    <li>TalkTopicLightDat_with_to->zu [EnemiesDat]</li>
+    <li>TalkTopicLightDat_with_to->zum Kämpfen gegen [Enemies]</li>
+    <li>TalkTopicLightDat_with_to->zu [ApparelsDat]</li>
+    <li>TalkTopicLightDat_with_to->zum Tragen von [ApparelsDat]</li>
+    <li>TalkTopicLightDat_with_to->zur Herstellung von [ApparelsDat]</li>
     <li>TalkTopicLightAcc(p=25)->[talktopiclightfileAcc]</li>
     <li>TalkTopicLightAcc->[Vegetables]</li>
     <li>TalkTopicLightAcc->den Verzehr von [VegetablesDat]</li>

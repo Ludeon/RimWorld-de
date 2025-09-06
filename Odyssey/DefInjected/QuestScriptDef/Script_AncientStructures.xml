@@ -31,9 +31,13 @@
     <li>questName->[structureName] entdeckt</li>
     <li>questName->Entdeckung einer [structureNameGen]</li>
     <li>ancient(p=2)->antik</li>
-    <li>ancient->verloren</li>
-    <li>structureName->befallene Siedlung</li>
-    <li>structureNameGen->befallenen Siedlung</li>
+    <li>ancient(p=2)->uralt</li>
+    <li>ancient->vergessen</li>
+    <li>ancient->aufgegeben</li>
+    <li>structureName->[infested]e Siedlung</li>
+    <li>structureNameGen->[infested]en Siedlung</li>
+    <li>infested->befallen</li>
+    <li>infested->insektenverseucht</li>
   </Opportunity_AncientInfestedSettlement.questNameRules.rulesStrings>
   <!-- EN:
     <li>subject->ancient buildings</li>
@@ -51,15 +55,6 @@
     <li>questMapText->insects everywhere</li>
   -->
   <Opportunity_AncientInfestedSettlement.questSubjectRules.rulesStrings>
-    <li>subject->antike Gebäude</li>
-    <li>subject->verlorene Landmarken</li>
-    <li>subject->antike Strukturen</li>
-    <li>subject_gen_indef->antiker Gebäude</li>
-    <li>subject_gen_indef->verlorener Landmarken</li>
-    <li>subject_gen_indef->antiker Strukturen</li>
-    <li>subject_dat_indef->antiken Gebäuden</li>
-    <li>subject_dat_indef->verlorenen Landmarken</li>
-    <li>subject_dat_indef->antiken Strukturen</li>
     <li>questMapFeature->Zeichnung eines alten Gebäudes</li>
     <li>questMapFeatureGenIndef->einer Zeichnung eines alten Gebäudes</li>
     <li>questMapFeatureDatIndef->einer Zeichnung eines alten Gebäudes</li>
@@ -67,10 +62,6 @@
     <li>questMapText->Ort zum Erkunden</li>
     <li>questMapText->gefährliche antike Struktur</li>
     <li>questMapText->Achtung Fallen</li>
-    <li>subject->Insektenkolonien</li>
-    <li>subject->Insektenplagen</li>
-    <li>subject_dat_indef->Insektenkolonien</li>
-    <li>subject_dat_indef->Insektenplagen</li>
     <li>questMapFeature->Insektenkolonie</li>
     <li>questMapFeature->anatomische Zeichnung einer Megaspinne</li>
     <li>questMapFeatureGenIndef->einer Insektenkolonie</li>
@@ -78,6 +69,80 @@
     <li>questMapFeatureDatIndef->einer Insektenkolonie</li>
     <li>questMapFeatureDatIndef->einer anatomischen Zeichnung einer Megaspinne</li>
     <li>questMapText->überall Insekten</li>
+    <li>ancient->antik</li>
+    <li>ancient->uralt</li>
+    <!-- nominative indefinite zero article -->
+    <li>subject->[ancient]e Gebäude</li>
+    <li>subject->vergessene Landmarken</li>
+    <li>subject->[ancient]e Strukturen</li>
+    <li>subject->Insektenkolonien</li>
+    <li>subject->Insektenplagen</li>
+    <!-- gender nominative indefinite -->
+    <li>subject_gender_nom_indef->|F|[ancient]e Gebäude</li>
+    <li>subject_gender_nom_indef->|F|vergessene Landmarken</li>
+    <li>subject_gender_nom_indef->|F|[ancient]e Strukturen</li>
+    <li>subject_gender_nom_indef->|F|Insektenkolonien</li>
+    <li>subject_gender_nom_indef->|F|Insektenplagen</li>
+    <!-- of + genitive definite  -->
+    <li>subject_with_of->[ancient]er Gebäude</li>
+    <li>subject_with_of->vergessener Landmarken</li>
+    <li>subject_with_of->[ancient]er Strukturen</li>
+    <li>subject_with_of->der Insektenkolonien</li>
+    <li>subject_with_of->der Insektenplagen</li>
+    <!-- of + adj + genitive definite -->
+    <li>subject_with_of_and_adj->|adj|er [ancient]er Gebäude</li>
+    <li>subject_with_of_and_adj->|adj|er vergessener Landmarken</li>
+    <li>subject_with_of_and_adj->|adj|er [ancient]er Strukturen</li>
+    <li>subject_with_of_and_adj->der |adj|en Insektenkolonien</li>
+    <li>subject_with_of_and_adj->der |adj|en Insektenplagen</li>
+    <!-- to + dative definite -->
+    <li>subject_with_to->zu [ancient]en Gebäuden</li>
+    <li>subject_with_to->zu vergessenen Landmarken</li>
+    <li>subject_with_to->zu [ancient]en Strukturen</li>
+    <li>subject_with_to->zu Insektenkolonien</li>
+    <li>subject_with_to->zu Insektenplagen</li>
+    <!-- to + adj + dative definite -->
+    <li>subject_with_to_and_adj->zu |adj|en [ancient]en Gebäuden</li>
+    <li>subject_with_to_and_adj->zu |adj|en vergessenen Landmarken</li>
+    <li>subject_with_to_and_adj->zu |adj|en [ancient]en Strukturen</li>
+    <li>subject_with_to_and_adj->zu |adj|en Insektenkolonien</li>
+    <li>subject_with_to_and_adj->zu |adj|en Insektenplagen</li>
+    <!-- the + dative definite -->
+    <li>subject_with_the_dat->[ancient]en Gebäuden</li>
+    <li>subject_with_the_dat->vergessenen Landmarken</li>
+    <li>subject_with_the_dat->[ancient]en Strukturen</li>
+    <li>subject_with_the_dat->Insektenkolonien</li>
+    <li>subject_with_the_dat->Insektenplagen</li>
+    <!-- the + adj + dative definite -->
+    <li>subject_with_the_and_adj_dat->|adj|en [ancient]en Gebäuden</li>
+    <li>subject_with_the_and_adj_dat->|adj|en vergessenen Landmarken</li>
+    <li>subject_with_the_and_adj_dat->|adj|en [ancient]en Strukturen</li>
+    <li>subject_with_the_and_adj_dat->|adj|en Insektenkolonien</li>
+    <li>subject_with_the_and_adj_dat->|adj|en Insektenplagen</li>
+    <!-- the + accusative definite -->
+    <li>subject_with_the_acc->[ancient]e Gebäude</li>
+    <li>subject_with_the_acc->vergessene Landmarken</li>
+    <li>subject_with_the_acc->[ancient]e Strukturen</li>
+    <li>subject_with_the_acc->Insektenkolonien</li>
+    <li>subject_with_the_acc->Insektenplagen</li>
+    <!-- the + adj + accusative definite -->
+    <li>subject_with_the_and_adj_acc->|adj|e [ancient]e Gebäude</li>
+    <li>subject_with_the_and_adj_acc->|adj|e vergessene Landmarken</li>
+    <li>subject_with_the_and_adj_acc->|adj|e [ancient]e Strukturen</li>
+    <li>subject_with_the_and_adj_acc->|adj|e Insektenkolonien</li>
+    <li>subject_with_the_and_adj_acc->|adj|e Insektenplagen</li>
+    <!-- dative indefinite zero article -->
+    <li>subject_dat_indef_zero->[ancient]en Gebäuden</li>
+    <li>subject_dat_indef_zero->vergessenen Landmarken</li>
+    <li>subject_dat_indef_zero->[ancient]en Strukturen</li>
+    <li>subject_dat_indef_zero->Insektenkolonien</li>
+    <li>subject_dat_indef_zero->Insektenplagen</li>
+    <!-- accusative indefinite zero article -->
+    <li>subject_acc_indef_zero->[ancient]e Gebäude</li>
+    <li>subject_acc_indef_zero->vergessene Landmarken</li>
+    <li>subject_acc_indef_zero->[ancient]e Strukturen</li>
+    <li>subject_acc_indef_zero->Insektenkolonien</li>
+    <li>subject_acc_indef_zero->Insektenplagen</li>
   </Opportunity_AncientInfestedSettlement.questSubjectRules.rulesStrings>
   
   <!-- EN:
@@ -110,7 +175,10 @@
     <li>questName->[structureName] entdeckt</li>
     <li>questName->Entdeckung einer [structureNameGen]</li>
     <li>ancient(p=2)->antik</li>
-    <li>ancient->verloren</li>
+    <li>ancient(p=2)->uralt</li>
+    <li>ancient->vergessen</li>
+    <li>ancient->aufgegeben</li>
+    <li>ancient->stillgelegt</li>
     <li>structureName->Spritraffinerie</li>
     <li>structureNameGen->Spritraffinerie</li>
   </Opportunity_AncientStructureChemfuelRefinery.questNameRules.rulesStrings>
@@ -132,15 +200,6 @@
     <li>questMapText->chemfuel here</li>
   -->
   <Opportunity_AncientStructureChemfuelRefinery.questSubjectRules.rulesStrings>
-    <li>subject->antike Gebäude</li>
-    <li>subject->verlorene Landmarken</li>
-    <li>subject->antike Strukturen</li>
-    <li>subject_gen_indef->antiker Gebäude</li>
-    <li>subject_gen_indef->verlorener Landmarken</li>
-    <li>subject_gen_indef->antiker Strukturen</li>
-    <li>subject_dat_indef->antiken Gebäuden</li>
-    <li>subject_dat_indef->verlorenen Landmarken</li>
-    <li>subject_dat_indef->antiken Strukturen</li>
     <li>questMapFeature->Zeichnung eines alten Gebäudes</li>
     <li>questMapFeatureGenIndef->einer Zeichnung eines alten Gebäudes</li>
     <li>questMapFeatureDatIndef->einer Zeichnung eines alten Gebäudes</li>
@@ -148,11 +207,6 @@
     <li>questMapText->Ort zum Erkunden</li>
     <li>questMapText->gefährliche antike Struktur</li>
     <li>questMapText->Achtung Fallen</li>
-    <li>subject->antike Raffinerien</li>
-    <li>subject->Chemiefabriken</li>
-    <li>subject_gen_indef->antiker Raffinerien</li>
-    <li>subject_dat_indef->antiken Raffinerien</li>
-    <li>subject_dat_indef->Chemiefabriken</li>
     <li>questMapFeature->Spritraffinerie</li>
     <li>questMapFeature->Bild eines Treibstofftanks</li>
     <li>questMapFeature->Skizze von Raffineriegeräten</li>
@@ -164,6 +218,92 @@
     <li>questMapFeatureDatIndef->einer Skizze von Raffineriegeräten</li>
     <li>questMapText->Treibstoffdepot</li>
     <li>questMapText->Sprit hier</li>
+    <li>ancient->antik</li>
+    <li>ancient->uralt</li>
+    <!-- nominative indefinite zero article -->
+    <li>subject->[ancient]e Gebäude</li>
+    <li>subject->vergessene Landmarken</li>
+    <li>subject->[ancient]e Strukturen</li>
+    <li>subject->[ancient]e Raffinerien</li>
+    <li>subject->Spritraffinerien</li>
+    <li>subject->Chemiefabriken</li>
+    <!-- gender nominative indefinite -->
+    <li>subject_gender_nom_indef->|F|[ancient]e Gebäude</li>
+    <li>subject_gender_nom_indef->|F|vergessene Landmarken</li>
+    <li>subject_gender_nom_indef->|F|[ancient]e Strukturen</li>
+    <li>subject_gender_nom_indef->|F|[ancient]e Raffinerien</li>
+    <li>subject_gender_nom_indef->|F|Spritraffinerien</li>
+    <li>subject_gender_nom_indef->|F|Chemiefabriken</li>
+    <!-- of + genitive definite  -->
+    <li>subject_with_of->[ancient]er Gebäude</li>
+    <li>subject_with_of->vergessener Landmarken</li>
+    <li>subject_with_of->[ancient]er Strukturen</li>
+    <li>subject_with_of->[ancient]er Raffinerien</li>
+    <li>subject_with_of->der Spritraffinerien</li>
+    <li>subject_with_of->der Chemiefabriken</li>
+    <!-- of + adj + genitive definite -->
+    <li>subject_with_of_and_adj->|adj|er [ancient]er Gebäude</li>
+    <li>subject_with_of_and_adj->|adj|er vergessener Landmarken</li>
+    <li>subject_with_of_and_adj->|adj|er [ancient]er Strukturen</li>
+    <li>subject_with_of_and_adj->|adj|er [ancient]er Raffinerien</li>
+    <li>subject_with_of_and_adj->der |adj|en Spritraffinerien</li>
+    <li>subject_with_of_and_adj->der |adj|en Chemiefabriken</li>
+    <!-- to + dative definite -->
+    <li>subject_with_to->zu [ancient]en Gebäuden</li>
+    <li>subject_with_to->zu vergessenen Landmarken</li>
+    <li>subject_with_to->zu [ancient]en Strukturen</li>
+    <li>subject_with_to->zu [ancient]en Raffinerien</li>
+    <li>subject_with_to->zu Spritraffinerien</li>
+    <li>subject_with_to->zu Chemiefabriken</li>
+    <!-- to + adj + dative definite -->
+    <li>subject_with_to_and_adj->zu |adj|en [ancient]en Gebäuden</li>
+    <li>subject_with_to_and_adj->zu |adj|en vergessenen Landmarken</li>
+    <li>subject_with_to_and_adj->zu |adj|en [ancient]en Strukturen</li>
+    <li>subject_with_to_and_adj->zu |adj|en [ancient]en Raffinerien</li>
+    <li>subject_with_to_and_adj->zu |adj|en Spritraffinerien</li>
+    <li>subject_with_to_and_adj->zu |adj|en Chemiefabriken</li>
+    <!-- the + dative definite -->
+    <li>subject_with_the_dat->[ancient]en Gebäuden</li>
+    <li>subject_with_the_dat->vergessenen Landmarken</li>
+    <li>subject_with_the_dat->[ancient]en Strukturen</li>
+    <li>subject_with_the_dat->[ancient]en Raffinerien</li>
+    <li>subject_with_the_dat->Spritraffinerien</li>
+    <li>subject_with_the_dat->Chemiefabriken</li>
+    <!-- the + adj + dative definite -->
+    <li>subject_with_the_and_adj_dat->|adj|en [ancient]en Gebäuden</li>
+    <li>subject_with_the_and_adj_dat->|adj|en vergessenen Landmarken</li>
+    <li>subject_with_the_and_adj_dat->|adj|en [ancient]en Strukturen</li>
+    <li>subject_with_the_and_adj_dat->|adj|en [ancient]en Raffinerien</li>
+    <li>subject_with_the_and_adj_dat->|adj|en Spritraffinerien</li>
+    <li>subject_with_the_and_adj_dat->|adj|en Chemiefabriken</li>
+    <!-- the + accusative definite -->
+    <li>subject_with_the_acc->[ancient]e Gebäude</li>
+    <li>subject_with_the_acc->vergessene Landmarken</li>
+    <li>subject_with_the_acc->[ancient]e Strukturen</li>
+    <li>subject_with_the_acc->[ancient]e Raffinerien</li>
+    <li>subject_with_the_acc->Spritraffinerien</li>
+    <li>subject_with_the_acc->Chemiefabriken</li>
+    <!-- the + adj + accusative definite -->
+    <li>subject_with_the_and_adj_acc->|adj|e [ancient]e Gebäude</li>
+    <li>subject_with_the_and_adj_acc->|adj|e vergessene Landmarken</li>
+    <li>subject_with_the_and_adj_acc->|adj|e [ancient]e Strukturen</li>
+    <li>subject_with_the_and_adj_acc->|adj|e [ancient]e Raffinerien</li>
+    <li>subject_with_the_and_adj_acc->|adj|e Spritraffinerien</li>
+    <li>subject_with_the_and_adj_acc->|adj|e Chemiefabriken</li>
+    <!-- dative indefinite zero article -->
+    <li>subject_dat_indef_zero->[ancient]en Gebäuden</li>
+    <li>subject_dat_indef_zero->vergessenen Landmarken</li>
+    <li>subject_dat_indef_zero->[ancient]en Strukturen</li>
+    <li>subject_dat_indef_zero->[ancient]en Raffinerien</li>
+    <li>subject_dat_indef_zero->Spritraffinerien</li>
+    <li>subject_dat_indef_zero->Chemiefabriken</li>
+    <!-- accusative indefinite zero article -->
+    <li>subject_acc_indef_zero->[ancient]e Gebäude</li>
+    <li>subject_acc_indef_zero->vergessene Landmarken</li>
+    <li>subject_acc_indef_zero->[ancient]e Strukturen</li>
+    <li>subject_acc_indef_zero->[ancient]e Raffinerien</li>
+    <li>subject_acc_indef_zero->Spritraffinerien</li>
+    <li>subject_acc_indef_zero->Chemiefabriken</li>
   </Opportunity_AncientStructureChemfuelRefinery.questSubjectRules.rulesStrings>
   
   <!-- EN:
@@ -196,7 +336,10 @@
     <li>questName->[structureName] entdeckt</li>
     <li>questName->Entdeckung einer [structureNameGen]</li>
     <li>ancient(p=2)->antik</li>
-    <li>ancient->verloren</li>
+    <li>ancient(p=2)->uralt</li>
+    <li>ancient->vergessen</li>
+    <li>ancient->aufgegeben</li>
+    <li>ancient->stillgelegt</li>
     <li>structureName->Garnison</li>
     <li>structureNameGen->Garnison</li>
   </Opportunity_AncientStructureGarrison.questNameRules.rulesStrings>
@@ -219,15 +362,6 @@
     <li>questMapText->lots of military equipment</li>
   -->
   <Opportunity_AncientStructureGarrison.questSubjectRules.rulesStrings>
-    <li>subject->antike Gebäude</li>
-    <li>subject->verlorene Landmarken</li>
-    <li>subject->antike Strukturen</li>
-    <li>subject_gen_indef->antiker Gebäude</li>
-    <li>subject_gen_indef->verlorener Landmarken</li>
-    <li>subject_gen_indef->antiker Strukturen</li>
-    <li>subject_dat_indef->antiken Gebäuden</li>
-    <li>subject_dat_indef->verlorenen Landmarken</li>
-    <li>subject_dat_indef->antiken Strukturen</li>
     <li>questMapFeature->Zeichnung eines alten Gebäudes</li>
     <li>questMapFeatureGenIndef->einer Zeichnung eines alten Gebäudes</li>
     <li>questMapFeatureDatIndef->einer Zeichnung eines alten Gebäudes</li>
@@ -235,12 +369,6 @@
     <li>questMapText->Ort zum Erkunden</li>
     <li>questMapText->gefährliche antike Struktur</li>
     <li>questMapText->Achtung Fallen</li>
-    <li>subject->antike Militäranlagen</li>
-    <li>subject->antike Garnisonen</li>
-    <li>subject_gen_indef->antiker Militäranlagen</li>
-    <li>subject_gen_indef->antiker Garnisonen</li>
-    <li>subject_dat_indef->antiken Militäranlagen</li>
-    <li>subject_dat_indef->antiken Garnisonen</li>
     <li>questMapFeature->Garnison</li>
     <li>questMapFeature->Bild von Waffenständern</li>
     <li>questMapFeature->Kohleskizze eines Sturmgewehrs</li>
@@ -253,6 +381,80 @@
     <li>questMapText->Waffenfabrik</li>
     <li>questMapText->antike Waffenkammer</li>
     <li>questMapText->jede Menge militärische Ausrüstung</li>
+    <li>ancient->antik</li>
+    <li>ancient->uralt</li>
+    <!-- nominative indefinite zero article -->
+    <li>subject->[ancient]e Gebäude</li>
+    <li>subject->vergessene Landmarken</li>
+    <li>subject->[ancient]e Strukturen</li>
+    <li>subject->[ancient]e Militäranlagen</li>
+    <li>subject->[ancient]e Garnisonen</li>
+    <!-- gender nominative indefinite -->
+    <li>subject_gender_nom_indef->|F|[ancient]e Gebäude</li>
+    <li>subject_gender_nom_indef->|F|vergessene Landmarken</li>
+    <li>subject_gender_nom_indef->|F|[ancient]e Strukturen</li>
+    <li>subject_gender_nom_indef->|F|[ancient]e Militäranlagen</li>
+    <li>subject_gender_nom_indef->|F|[ancient]e Garnisonen</li>
+    <!-- of + genitive definite  -->
+    <li>subject_with_of->[ancient]er Gebäude</li>
+    <li>subject_with_of->vergessener Landmarken</li>
+    <li>subject_with_of->[ancient]er Strukturen</li>
+    <li>subject_with_of->[ancient]er Militäranlagen</li>
+    <li>subject_with_of->[ancient]er Garnisonen</li>
+    <!-- of + adj + genitive definite -->
+    <li>subject_with_of_and_adj->|adj|er [ancient]er Gebäude</li>
+    <li>subject_with_of_and_adj->|adj|er vergessener Landmarken</li>
+    <li>subject_with_of_and_adj->|adj|er [ancient]er Strukturen</li>
+    <li>subject_with_of_and_adj->|adj|er [ancient]er Militäranlagen</li>
+    <li>subject_with_of_and_adj->|adj|er [ancient]er Garnisonen</li>
+    <!-- to + dative definite -->
+    <li>subject_with_to->zu [ancient]en Gebäuden</li>
+    <li>subject_with_to->zu vergessenen Landmarken</li>
+    <li>subject_with_to->zu [ancient]en Strukturen</li>
+    <li>subject_with_to->zu [ancient]en Militäranlagen</li>
+    <li>subject_with_to->zu [ancient]en Garnisonen</li>
+    <!-- to + adj + dative definite -->
+    <li>subject_with_to_and_adj->zu |adj|en [ancient]en Gebäuden</li>
+    <li>subject_with_to_and_adj->zu |adj|en vergessenen Landmarken</li>
+    <li>subject_with_to_and_adj->zu |adj|en [ancient]en Strukturen</li>
+    <li>subject_with_to_and_adj->zu |adj|en [ancient]en Militäranlagen</li>
+    <li>subject_with_to_and_adj->zu |adj|en [ancient]en Garnisonen</li>
+    <!-- the + dative definite -->
+    <li>subject_with_the_dat->[ancient]en Gebäuden</li>
+    <li>subject_with_the_dat->vergessenen Landmarken</li>
+    <li>subject_with_the_dat->[ancient]en Strukturen</li>
+    <li>subject_with_the_dat->[ancient]en Militäranlagen</li>
+    <li>subject_with_the_dat->[ancient]en Garnisonen</li>
+    <!-- the + adj + dative definite -->
+    <li>subject_with_the_and_adj_dat->|adj|en [ancient]en Gebäuden</li>
+    <li>subject_with_the_and_adj_dat->|adj|en vergessenen Landmarken</li>
+    <li>subject_with_the_and_adj_dat->|adj|en [ancient]en Strukturen</li>
+    <li>subject_with_the_and_adj_dat->|adj|en [ancient]en Militäranlagen</li>
+    <li>subject_with_the_and_adj_dat->|adj|en [ancient]en Garnisonen</li>
+    <!-- the + accusative definite -->
+    <li>subject_with_the_acc->[ancient]e Gebäude</li>
+    <li>subject_with_the_acc->vergessene Landmarken</li>
+    <li>subject_with_the_acc->[ancient]e Strukturen</li>
+    <li>subject_with_the_acc->[ancient]e Militäranlagen</li>
+    <li>subject_with_the_acc->[ancient]e Garnisonen</li>
+    <!-- the + adj + accusative definite -->
+    <li>subject_with_the_and_adj_acc->|adj|e [ancient]e Gebäude</li>
+    <li>subject_with_the_and_adj_acc->|adj|e vergessene Landmarken</li>
+    <li>subject_with_the_and_adj_acc->|adj|e [ancient]e Strukturen</li>
+    <li>subject_with_the_and_adj_acc->|adj|e [ancient]e Militäranlagen</li>
+    <li>subject_with_the_and_adj_acc->|adj|e [ancient]e Garnisonen</li>
+    <!-- dative indefinite zero article -->
+    <li>subject_dat_indef_zero->[ancient]en Gebäuden</li>
+    <li>subject_dat_indef_zero->vergessenen Landmarken</li>
+    <li>subject_dat_indef_zero->[ancient]en Strukturen</li>
+    <li>subject_dat_indef_zero->[ancient]en Militäranlagen</li>
+    <li>subject_dat_indef_zero->[ancient]en Garnisonen</li>
+    <!-- accusative indefinite zero article -->
+    <li>subject_acc_indef_zero->[ancient]e Gebäude</li>
+    <li>subject_acc_indef_zero->vergessene Landmarken</li>
+    <li>subject_acc_indef_zero->[ancient]e Strukturen</li>
+    <li>subject_acc_indef_zero->[ancient]e Militäranlagen</li>
+    <li>subject_acc_indef_zero->[ancient]e Garnisonen</li>
   </Opportunity_AncientStructureGarrison.questSubjectRules.rulesStrings>
   
   <!-- EN:
@@ -285,7 +487,10 @@
     <li>questName->[structureName] entdeckt</li>
     <li>questName->Entdeckung eines [structureNameGen]</li>
     <li>ancient(p=2)->antik</li>
-    <li>ancient->verloren</li>
+    <li>ancient(p=2)->uralt</li>
+    <li>ancient->vergessen</li>
+    <li>ancient->aufgegeben</li>
+    <li>ancient->stillgelegt</li>
     <li>structureName->Startplatz</li>
     <li>structureNameGen->Startplatzes</li>
   </Opportunity_AncientStructureLaunchSite.questNameRules.rulesStrings>
@@ -306,15 +511,6 @@
     <li>questMapText->they have fuel</li>
   -->
   <Opportunity_AncientStructureLaunchSite.questSubjectRules.rulesStrings>
-    <li>subject->antike Gebäude</li>
-    <li>subject->verlorene Landmarken</li>
-    <li>subject->antike Strukturen</li>
-    <li>subject_gen_indef->antiker Gebäude</li>
-    <li>subject_gen_indef->verlorener Landmarken</li>
-    <li>subject_gen_indef->antiker Strukturen</li>
-    <li>subject_dat_indef->antiken Gebäuden</li>
-    <li>subject_dat_indef->verlorenen Landmarken</li>
-    <li>subject_dat_indef->antiken Strukturen</li>
     <li>questMapFeature->Zeichnung eines alten Gebäudes</li>
     <li>questMapFeatureGenIndef->einer Zeichnung eines alten Gebäudes</li>
     <li>questMapFeatureDatIndef->einer Zeichnung eines alten Gebäudes</li>
@@ -322,13 +518,6 @@
     <li>questMapText->Ort zum Erkunden</li>
     <li>questMapText->gefährliche antike Struktur</li>
     <li>questMapText->Achtung Fallen</li>
-    <li>subject->antike Startplätze</li>
-    <li>subject->Raumhäfen</li>
-    <li>subject->Weltraumbahnhöfe</li>
-    <li>subject_gen_indef->antiker Startplätze</li>
-    <li>subject_dat_indef->antiken Startplätzen</li>
-    <li>subject_dat_indef->Raumhäfen</li>
-    <li>subject_dat_indef->Weltraumbahnhöfen</li>
     <li>questMapFeature->Startplatz</li>
     <li>questMapFeature->Diagramm einer Tankanlage für Raumfähren</li>
     <li>questMapFeature->Skizze von Schätzen, die in Transportkapseln verladen werden,</li>
@@ -339,6 +528,92 @@
     <li>questMapFeatureDatIndef->einem Diagramm einer Tankanlage für Raumfähren</li>
     <li>questMapFeatureDatIndef->einer Skizze von Schätzen, die in Transportkapseln verladen werden,</li>
     <li>questMapText->dort gibt's Sprit</li>
+    <li>ancient->antik</li>
+    <li>ancient->uralt</li>
+    <!-- nominative indefinite zero article -->
+    <li>subject->[ancient]e Gebäude</li>
+    <li>subject->vergessene Landmarken</li>
+    <li>subject->[ancient]e Strukturen</li>
+    <li>subject->[ancient]e Startplätze</li>
+    <li>subject->Raumhäfen</li>
+    <li>subject->Weltraumbahnhöfe</li>
+    <!-- gender nominative indefinite -->
+    <li>subject_gender_nom_indef->|F|[ancient]e Gebäude</li>
+    <li>subject_gender_nom_indef->|F|vergessene Landmarken</li>
+    <li>subject_gender_nom_indef->|F|[ancient]e Strukturen</li>
+    <li>subject_gender_nom_indef->|F|[ancient]e Startplätze</li>
+    <li>subject_gender_nom_indef->|F|Raumhäfen</li>
+    <li>subject_gender_nom_indef->|F|Weltraumbahnhöfe</li>
+    <!-- of + genitive definite  -->
+    <li>subject_with_of->[ancient]er Gebäude</li>
+    <li>subject_with_of->vergessener Landmarken</li>
+    <li>subject_with_of->[ancient]er Strukturen</li>
+    <li>subject_with_of->[ancient]er Startplätze</li>
+    <li>subject_with_of->der Raumhäfen</li>
+    <li>subject_with_of->der Weltraumbahnhöfe</li>
+    <!-- of + adj + genitive definite -->
+    <li>subject_with_of_and_adj->|adj|er [ancient]er Gebäude</li>
+    <li>subject_with_of_and_adj->|adj|er vergessener Landmarken</li>
+    <li>subject_with_of_and_adj->|adj|er [ancient]er Strukturen</li>
+    <li>subject_with_of_and_adj->|adj|er [ancient]er Startplätze</li>
+    <li>subject_with_of_and_adj->der |adj|en Raumhäfen</li>
+    <li>subject_with_of_and_adj->der |adj|en Weltraumbahnhöfe</li>
+    <!-- to + dative definite -->
+    <li>subject_with_to->zu [ancient]en Gebäuden</li>
+    <li>subject_with_to->zu vergessenen Landmarken</li>
+    <li>subject_with_to->zu [ancient]en Strukturen</li>
+    <li>subject_with_to->zu [ancient]en Startplätzen</li>
+    <li>subject_with_to->zu Raumhäfen</li>
+    <li>subject_with_to->zu Weltraumbahnhöfen</li>
+    <!-- to + adj + dative definite -->
+    <li>subject_with_to_and_adj->zu |adj|en [ancient]en Gebäuden</li>
+    <li>subject_with_to_and_adj->zu |adj|en vergessenen Landmarken</li>
+    <li>subject_with_to_and_adj->zu |adj|en [ancient]en Strukturen</li>
+    <li>subject_with_to_and_adj->zu |adj|en [ancient]en Startplätzen</li>
+    <li>subject_with_to_and_adj->zu |adj|en Raumhäfen</li>
+    <li>subject_with_to_and_adj->zu |adj|en Weltraumbahnhöfen</li>
+    <!-- the + dative definite -->
+    <li>subject_with_the_dat->[ancient]en Gebäuden</li>
+    <li>subject_with_the_dat->vergessenen Landmarken</li>
+    <li>subject_with_the_dat->[ancient]en Strukturen</li>
+    <li>subject_with_the_dat->[ancient]en Startplätzen</li>
+    <li>subject_with_the_dat->Raumhäfen</li>
+    <li>subject_with_the_dat->Weltraumbahnhöfen</li>
+    <!-- the + adj + dative definite -->
+    <li>subject_with_the_and_adj_dat->|adj|en [ancient]en Gebäuden</li>
+    <li>subject_with_the_and_adj_dat->|adj|en vergessenen Landmarken</li>
+    <li>subject_with_the_and_adj_dat->|adj|en [ancient]en Strukturen</li>
+    <li>subject_with_the_and_adj_dat->|adj|en [ancient]en Startplätzen</li>
+    <li>subject_with_the_and_adj_dat->|adj|en Raumhäfen</li>
+    <li>subject_with_the_and_adj_dat->|adj|en Weltraumbahnhöfen</li>
+    <!-- the + accusative definite -->
+    <li>subject_with_the_acc->[ancient]e Gebäude</li>
+    <li>subject_with_the_acc->vergessene Landmarken</li>
+    <li>subject_with_the_acc->[ancient]e Strukturen</li>
+    <li>subject_with_the_acc->[ancient]e Startplätze</li>
+    <li>subject_with_the_acc->Raumhäfen</li>
+    <li>subject_with_the_acc->Weltraumbahnhöfe</li>
+    <!-- the + adj + accusative definite -->
+    <li>subject_with_the_and_adj_acc->|adj|e [ancient]e Gebäude</li>
+    <li>subject_with_the_and_adj_acc->|adj|e vergessene Landmarken</li>
+    <li>subject_with_the_and_adj_acc->|adj|e [ancient]e Strukturen</li>
+    <li>subject_with_the_and_adj_acc->|adj|e [ancient]e Startplätze</li>
+    <li>subject_with_the_and_adj_acc->|adj|e Raumhäfen</li>
+    <li>subject_with_the_and_adj_acc->|adj|e Weltraumbahnhöfe</li>
+    <!-- dative indefinite zero article -->
+    <li>subject_dat_indef_zero->[ancient]en Gebäuden</li>
+    <li>subject_dat_indef_zero->vergessenen Landmarken</li>
+    <li>subject_dat_indef_zero->[ancient]en Strukturen</li>
+    <li>subject_dat_indef_zero->[ancient]en Startplätzen</li>
+    <li>subject_dat_indef_zero->Raumhäfen</li>
+    <li>subject_dat_indef_zero->Weltraumbahnhöfen</li>
+    <!-- accusative indefinite zero article -->
+    <li>subject_acc_indef_zero->[ancient]e Gebäude</li>
+    <li>subject_acc_indef_zero->vergessene Landmarken</li>
+    <li>subject_acc_indef_zero->[ancient]e Strukturen</li>
+    <li>subject_acc_indef_zero->[ancient]e Startplätze</li>
+    <li>subject_acc_indef_zero->Raumhäfen</li>
+    <li>subject_acc_indef_zero->Weltraumbahnhöfe</li>
   </Opportunity_AncientStructureLaunchSite.questSubjectRules.rulesStrings>
   
   <!-- EN:
@@ -371,7 +646,10 @@
     <li>questName->[structureName] entdeckt</li>
     <li>questName->Entdeckung einer [structureNameGen]</li>
     <li>ancient(p=2)->antik</li>
-    <li>ancient->verloren</li>
+    <li>ancient(p=2)->uralt</li>
+    <li>ancient->vergessen</li>
+    <li>ancient->aufgegeben</li>
+    <li>ancient->stillgelegt</li>
     <li>structureName->Lagerhalle</li>
     <li>structureNameGen->Lagerhalle</li>
   </Opportunity_AncientStructureWarehouse.questNameRules.rulesStrings>
@@ -392,15 +670,6 @@
     <li>questMapText->massive ancient building</li>
   -->
   <Opportunity_AncientStructureWarehouse.questSubjectRules.rulesStrings>
-    <li>subject->antike Gebäude</li>
-    <li>subject->verlorene Landmarken</li>
-    <li>subject->antike Strukturen</li>
-    <li>subject_gen_indef->antiker Gebäude</li>
-    <li>subject_gen_indef->verlorener Landmarken</li>
-    <li>subject_gen_indef->antiker Strukturen</li>
-    <li>subject_dat_indef->antiken Gebäuden</li>
-    <li>subject_dat_indef->verlorenen Landmarken</li>
-    <li>subject_dat_indef->antiken Strukturen</li>
     <li>questMapFeature->Zeichnung eines alten Gebäudes</li>
     <li>questMapFeatureGenIndef->einer Zeichnung eines alten Gebäudes</li>
     <li>questMapFeatureDatIndef->einer Zeichnung eines alten Gebäudes</li>
@@ -408,11 +677,6 @@
     <li>questMapText->Ort zum Erkunden</li>
     <li>questMapText->gefährliche antike Struktur</li>
     <li>questMapText->Achtung Fallen</li>
-    <li>subject->antike Lagerhäuser</li>
-    <li>subject->Lagerhallen</li>
-    <li>subject_gen_indef->antiker Lagerhäuser</li>
-    <li>subject_dat_indef->antiken Lagerhäusern</li>
-    <li>subject_dat_indef->Lagerhallen</li>
     <li>questMapFeature->Lagerhalle</li>
     <li>questMapFeature->Diagramm von Regalen, die mit Kisten gefüllt sind,</li>
     <li>questMapFeature->Skizze eines Gabelstaplers</li>
@@ -423,6 +687,80 @@
     <li>questMapFeatureDatIndef->einem Diagramm von Regalen, die mit Kisten gefüllt sind,</li>
     <li>questMapFeatureDatIndef->einer Skizze eines Gabelstaplers</li>
     <li>questMapText->massives antikes Gebäude</li>
+    <li>ancient->antik</li>
+    <li>ancient->uralt</li>
+    <!-- nominative indefinite zero article -->
+    <li>subject->[ancient]e Gebäude</li>
+    <li>subject->vergessene Landmarken</li>
+    <li>subject->[ancient]e Strukturen</li>
+    <li>subject->[ancient]e Lagerhäuser</li>
+    <li>subject->Lagerhallen</li>
+    <!-- gender nominative indefinite -->
+    <li>subject_gender_nom_indef->|F|[ancient]e Gebäude</li>
+    <li>subject_gender_nom_indef->|F|vergessene Landmarken</li>
+    <li>subject_gender_nom_indef->|F|[ancient]e Strukturen</li>
+    <li>subject_gender_nom_indef->|F|[ancient]e Lagerhäuser</li>
+    <li>subject_gender_nom_indef->|F|Lagerhallen</li>
+    <!-- of + genitive definite  -->
+    <li>subject_with_of->[ancient]er Gebäude</li>
+    <li>subject_with_of->vergessener Landmarken</li>
+    <li>subject_with_of->[ancient]er Strukturen</li>
+    <li>subject_with_of->[ancient]er Lagerhäuser</li>
+    <li>subject_with_of->der Lagerhallen</li>
+    <!-- of + adj + genitive definite -->
+    <li>subject_with_of_and_adj->|adj|er [ancient]er Gebäude</li>
+    <li>subject_with_of_and_adj->|adj|er vergessener Landmarken</li>
+    <li>subject_with_of_and_adj->|adj|er [ancient]er Strukturen</li>
+    <li>subject_with_of_and_adj->|adj|er [ancient]er Lagerhäuser</li>
+    <li>subject_with_of_and_adj->der |adj|en Lagerhallen</li>
+    <!-- to + dative definite -->
+    <li>subject_with_to->zu [ancient]en Gebäuden</li>
+    <li>subject_with_to->zu vergessenen Landmarken</li>
+    <li>subject_with_to->zu [ancient]en Strukturen</li>
+    <li>subject_with_to->zu [ancient]en Lagerhäusern</li>
+    <li>subject_with_to->zu Lagerhallen</li>
+    <!-- to + adj + dative definite -->
+    <li>subject_with_to_and_adj->zu |adj|en [ancient]en Gebäuden</li>
+    <li>subject_with_to_and_adj->zu |adj|en vergessenen Landmarken</li>
+    <li>subject_with_to_and_adj->zu |adj|en [ancient]en Strukturen</li>
+    <li>subject_with_to_and_adj->zu |adj|en [ancient]en Lagerhäusern</li>
+    <li>subject_with_to_and_adj->zu |adj|en Lagerhallen</li>
+    <!-- the + dative definite -->
+    <li>subject_with_the_dat->[ancient]en Gebäuden</li>
+    <li>subject_with_the_dat->vergessenen Landmarken</li>
+    <li>subject_with_the_dat->[ancient]en Strukturen</li>
+    <li>subject_with_the_dat->[ancient]en Lagerhäusern</li>
+    <li>subject_with_the_dat->Lagerhallen</li>
+    <!-- the + adj + dative definite -->
+    <li>subject_with_the_and_adj_dat->|adj|en [ancient]en Gebäuden</li>
+    <li>subject_with_the_and_adj_dat->|adj|en vergessenen Landmarken</li>
+    <li>subject_with_the_and_adj_dat->|adj|en [ancient]en Strukturen</li>
+    <li>subject_with_the_and_adj_dat->|adj|en [ancient]en Lagerhäusern</li>
+    <li>subject_with_the_and_adj_dat->|adj|en Lagerhallen</li>
+    <!-- the + accusative definite -->
+    <li>subject_with_the_acc->[ancient]e Gebäude</li>
+    <li>subject_with_the_acc->vergessene Landmarken</li>
+    <li>subject_with_the_acc->[ancient]e Strukturen</li>
+    <li>subject_with_the_acc->[ancient]e Lagerhäuser</li>
+    <li>subject_with_the_acc->Lagerhallen</li>
+    <!-- the + adj + accusative definite -->
+    <li>subject_with_the_and_adj_acc->|adj|e [ancient]e Gebäude</li>
+    <li>subject_with_the_and_adj_acc->|adj|e vergessene Landmarken</li>
+    <li>subject_with_the_and_adj_acc->|adj|e [ancient]e Strukturen</li>
+    <li>subject_with_the_and_adj_acc->|adj|e [ancient]e Lagerhäuser</li>
+    <li>subject_with_the_and_adj_acc->|adj|e Lagerhallen</li>
+    <!-- dative indefinite zero article -->
+    <li>subject_dat_indef_zero->[ancient]en Gebäuden</li>
+    <li>subject_dat_indef_zero->vergessenen Landmarken</li>
+    <li>subject_dat_indef_zero->[ancient]en Strukturen</li>
+    <li>subject_dat_indef_zero->[ancient]en Lagerhäusern</li>
+    <li>subject_dat_indef_zero->Lagerhallen</li>
+    <!-- accusative indefinite zero article -->
+    <li>subject_acc_indef_zero->[ancient]e Gebäude</li>
+    <li>subject_acc_indef_zero->vergessene Landmarken</li>
+    <li>subject_acc_indef_zero->[ancient]e Strukturen</li>
+    <li>subject_acc_indef_zero->[ancient]e Lagerhäuser</li>
+    <li>subject_acc_indef_zero->Lagerhallen</li>
   </Opportunity_AncientStructureWarehouse.questSubjectRules.rulesStrings>
   
 </LanguageData>

@@ -536,38 +536,62 @@
     <li>randTheme->ethics</li>
   -->
   <Namer_Schematic.rulePack.rulesStrings>
-    <li>title->Die Konzeption von [subject_primary]</li>
-    <li>title->Anmerkungen zu [subject_primary]</li>
-    <li>title->Ein Durchbruch in [subject_primary]</li>
-    <li>title->Eine Studie über [subject_primary]</li>
-    <li>title->Neue Anwendungen für [subject_primary]</li>
-    <li>title->Die Erklärung von [subject_primary]</li>
-    <li>title->Grundsätze von [subject_primary]</li>
-    <li>title->Die Grundlagen von [subject_primary]</li>
+    <li>title->Die Konzeption [subject_primary_with_of]</li>
+    <li>title->Anmerkungen [subject_primary_with_to]</li>
+    <li>title->Der Durchbruch in [subject_dat_indef_zero]</li>
+    <li>title->Eine Studie über [subject_primary_with_the_acc]</li>
+    <li>title->Neue Anwendungen für [subject_primary_with_the_acc]</li>
+    <li>title->[subject_primary] einfach erklärt</li>
+    <li>title->Grundsätze [subject_primary_with_of]</li>
+    <li>title->Die Grundlagen [subject_primary_with_of]</li>
+    <li>title->[subject_primary] für Einsteiger</li>
+    <li>title->[subject_primary] für Fortgeschrittene</li>
     <li>title->[subject_primary]: Teil [volNumeral]</li>
     <li>title->[subject_primary] Bd. [volNumeral]</li>
-    <li>title->[randAdjective][subject_primary_with_adj]</li>
-    <li>title->[randAdjective][subject_primary_with_adj] Bd. [volNumeral]</li>
+    <li>title->{replace: [subject_primary_gender_nom_indef]; "|M|"-"[randAdjective]er "; "|F|"-"[randAdjective]e "; "|N|"-"[randAdjective]es "}</li>
+    <li>title->{replace: [subject_primary_gender_nom_indef]; "|M|"-"[randAdjective]er "; "|F|"-"[randAdjective]e "; "|N|"-"[randAdjective]es "} Bd. [volNumeral]</li>
     <li>title->[maybe_authored_title]</li>
-    <li>title(has_subject_secondary==true)->[studiesStart] [subject_primary] und [subject_secondary]</li>
-    <li>title->[studiesStart] [subject_primary] nach [lifeEventDat]</li>
-    <li>title->[studiesStart] [subject_primary]: [anecdotes]</li>
-    <li>title->[studiesStart] [subject_primary]: [ARandAdjectiveDiscussionNoun]</li>
-    <li>title->[TheRandAdjectiveReferenceType] über [subject_primary]</li>
-    <li>title->[TheReferenceType] über [randAdjective][subject_primary_with_adj], Bd. [volNumeral]</li>
-    <li>title->[studiesStart] [randAdjective][subject_primary_with_adj], Bd. [volNumeral]</li>
-    <li>title->[TheLifeEventDiscussionNoun] und [subject_primary]</li>
-    <li>studiesStart->Studien über</li>
-    <li>studiesStart->Grundlagen über</li>
-    <li>studiesStart->Umgang mit</li>
-    <li>studiesStart->Geschichten von</li>
-    <li>studiesStart->Arbeiten mit</li>
-    <li>studiesStart->Darstellung von</li>
-    <li>studiesStart->Überleben mit</li>
-    <li>studiesStart->Fortschritte in</li>
-    <li>studiesStart->Einsatzgebiete von</li>
-    <li>studiesStart->Zukunftsgestaltung mit</li>
-    <li>studiesStart->Dokumentation von</li>
+    <li>title(has_subject_secondary==true)->{replace: [studiesStartMulti]; "|dat|"-"[subject_primary_dat_indef_zero] [und] [subject_secondary_dat_indef_zero]"; "|acc|"-"[subject_primary_acc_indef_zero] [und] [subject_secondary_acc_indef_zero]"}</li>
+    <li>title->{replace: [studiesStartMulti]; "|dat|"-"[subject_primary_dat_indef_zero] [und] [subject_secondary_dat_indef_zero]"; "|acc|"-"[subject_primary_acc_indef_zero] [und] [subject_secondary_acc_indef_zero]"} nach [lifeEventDat]</li>
+    <li>title->[studiesStart_subject]: [anecdotes]</li>
+    <li>title->[studiesStart_subject]: [ARandAdjectiveDiscussionNoun]</li>
+    <li>title->[TheRandAdjectiveReferenceType] über [subject_primary_with_the_acc]</li>
+    <li>title->[TheReferenceType] über {replace: [subject_primary_with_the_and_adj_acc]; "|adj|"-"[randAdjective]"}, Bd. [volNumeral]</li>
+    <li>title->{replace: [studiesStart_adj_subject]; "|adj|"-"[randAdjective]"}, Bd. [volNumeral]</li>
+    <li>title->[TheLifeEventDiscussionNoun] [und] [subject_primary]</li>
+    <li>studiesStartMulti->Studien über |acc|</li>
+    <li>studiesStartMulti->Grundlagen über |acc|</li>
+    <li>studiesStartMulti->Umgang mit |dat|</li>
+    <li>studiesStartMulti->Geschichten von |dat|</li>
+    <li>studiesStartMulti->Arbeiten mit |dat|</li>
+    <li>studiesStartMulti->Beschreibung von |dat|</li>
+    <li>studiesStartMulti->Überleben mit |dat|</li>
+    <li>studiesStartMulti->Fortschritte in |dat|</li>
+    <li>studiesStartMulti->Einsatzgebiete von |dat|</li>
+    <li>studiesStartMulti->Zukunftsgestaltung mit |dat|</li>
+    <li>studiesStartMulti->Dokumentation von |dat|</li>
+    <li>studiesStart_subject->Studien über [subject_primary_with_the_acc]</li>
+    <li>studiesStart_subject->Grundlagen über [subject_primary_with_the_acc]</li>
+    <li>studiesStart_subject->Umgang mit [subject_primary_with_the_dat]</li>
+    <li>studiesStart_subject->Geschichten [subject_primary_with_of]</li>
+    <li>studiesStart_subject->Arbeiten mit [subject_primary_with_the_dat]</li>
+    <li>studiesStart_subject->Beschreibung [subject_primary_with_of]</li>
+    <li>studiesStart_subject->Überleben mit [subject_primary_with_the_dat]</li>
+    <li>studiesStart_subject->Fortschritte in [subject_primary_with_the_dat]</li>
+    <li>studiesStart_subject->Einsatzgebiete [subject_primary_with_of]</li>
+    <li>studiesStart_subject->Zukunftsgestaltung mit [subject_primary_with_the_dat]</li>
+    <li>studiesStart_subject->Dokumentation [subject_primary_with_of]</li>
+    <li>studiesStart_adj_subject->Studien über [subject_primary_with_the_and_adj_acc]</li>
+    <li>studiesStart_adj_subject->Grundlagen über [subject_primary_with_the_and_adj_acc]</li>
+    <li>studiesStart_adj_subject->Umgang mit [subject_primary_with_the_and_adj_dat]</li>
+    <li>studiesStart_adj_subject->Geschichten [subject_primary_with_of_and_adj]</li>
+    <li>studiesStart_adj_subject->Arbeiten mit [subject_primary_with_the_and_adj_dat]</li>
+    <li>studiesStart_adj_subject->Beschreibung [subject_primary_with_of_and_adj]</li>
+    <li>studiesStart_adj_subject->Überleben mit [subject_primary_with_the_and_adj_dat]</li>
+    <li>studiesStart_adj_subject->Fortschritte in [subject_primary_with_the_and_adj_dat]</li>
+    <li>studiesStart_adj_subject->Einsatzgebiete [subject_primary_with_of_and_adj]</li>
+    <li>studiesStart_adj_subject->Zukunftsgestaltung mit [subject_primary_with_the_dat]</li>
+    <li>studiesStart_adj_subject->Dokumentation [subject_primary_with_of_and_adj]</li>
     <li>TheRandAdjectiveReferenceType->Die [randAdjective]e Enzyklopädie</li>
     <li>TheRandAdjectiveReferenceType->Das [randAdjective]e Wörterbuch</li>
     <li>TheRandAdjectiveReferenceType->Das [randAdjective]e Lexikon</li>
@@ -686,23 +710,29 @@
     <li>volNumeral->IV</li>
     <li>volNumeral->V</li>
     <li>title(length_subject_primary[less_than]20,has_subject_secondary==true,length_subject_secondary[less_than]20,p=2)->[titleTwoSubjects]</li>
-    <li>titleTwoSubjects->Eine Einführung in [subjectsTuple]</li>
-    <li>titleTwoSubjects->Die Analyse zu [subjectsTuple]</li>
+    <li>titleTwoSubjects->Eine Einführung in [subjectsTupleAcc]</li>
+    <li>titleTwoSubjects->Die Untersuchungen zu [subjectsTupleDat]</li>
     <li>maybe_authored_title->[author_gen]</li>
     <li>author_gen->[ANYPAWN_label]'s Studien</li>
     <li>author_gen->[ANYPAWN_label]'s Notizen</li>
     <li>author_gen->[ANYPAWN_label]'s Seminare</li>
     <li>maybe_authored_title(length_subject_primary[less_than]20,p=2)->[authored_title_gen]</li>
     <li>maybe_authored_title(length_subject_primary[less_than]20,has_subject_secondary==true,length_subject_secondary[less_than]20,p=4)->[authored_title_gen_two]</li>
-    <li>authored_title_gen->[ANYPAWN_label]'s Leitfaden für [subject_primary]</li>
-    <li>authored_title_gen->[ANYPAWN_label]'s Einführung in [subject_primary]</li>
-    <li>authored_title_gen_two->[ANYPAWN_label]'s Leitfaden für [subjectsTuple]</li>
-    <li>authored_title_gen_two->[ANYPAWN_label]'s Einführung in [subjectsTuple]</li>
-    <li>subjectsTuple(has_subject_secondary==true,p=2)->[subject_primary] und [subject_secondary]</li>
-    <li>subjectsTuple(has_subject_secondary==true)->[subject_secondary] und [randTheme]</li>
-    <li>subjectsTuple->[subject_primary] und [randTheme]</li>
-    <li>randAdjective->grundlegend</li>
-    <li>randAdjective->best</li>
+    <li>authored_title_gen->[ANYPAWN_label]'s Leitfaden für [subject_primary_with_the_acc]</li>
+    <li>authored_title_gen->[ANYPAWN_label]'s Einführung in [subject_primary_with_the_acc]</li>
+    <li>authored_title_gen_two->[ANYPAWN_label]'s Leitfaden für [subjectsTupleAcc]</li>
+    <li>authored_title_gen_two->[ANYPAWN_label]'s Einführung in [subjectsTupleAcc]</li>
+    <li>subjectsTuple(has_subject_secondary==true,p=2)->[subject_primary] [und] [subject_secondary]</li>
+    <li>subjectsTuple(has_subject_secondary==true)->[subject_secondary] [und] [randTheme]</li>
+    <li>subjectsTuple->[subject_primary] [und] [randTheme]</li>
+    <li>subjectsTupleDat(has_subject_secondary==true,p=2)->[subject_primary_dat_indef_zero] [und] [subject_secondary_dat_indef_zero]</li>
+    <li>subjectsTupleDat(has_subject_secondary==true)->[subject_secondary_dat_indef_zero] [und] [randThemeDat]</li>
+    <li>subjectsTupleDat->[subject_primary_dat_indef_zero] [und] [randThemeDat]</li>
+    <li>subjectsTupleAcc(has_subject_secondary==true,p=2)->[subject_primary_acc_indef_zero] [und] [subject_secondary_acc_indef_zero]</li>
+    <li>subjectsTupleAcc(has_subject_secondary==true)->[subject_secondary_acc_indef_zero] [und] [randThemeDat]</li>
+    <li>subjectsTupleAcc->[subject_primary_acc_indef_zero] [und] [randThemeDat]</li>
+    <li>randAdjective->elementar</li>
+    <li>randAdjective->erstklassig</li>
     <li>randAdjective->glitzerweltlich</li>
     <li>randAdjective->feudal</li>
     <li>randAdjective->archaisch</li>
@@ -712,7 +742,7 @@
     <li>randAdjective->grotesk</li>
     <li>randAdjective->düster</li>
     <li>randAdjective->heilig</li>
-    <li>randAdjective->dunkelst</li>
+    <li>randAdjective->unheilig</li>
     <li>randAdjective->unterweltlich</li>
     <li>randAdjective->primitiv</li>
     <!-- <li>randAdjective->Survival</li> -->
@@ -728,8 +758,34 @@
     <li>randTheme->die Randwelten</li>
     <li>randTheme->Autophagie</li>
     <li>randTheme->Glauben</li>
-    <li>randTheme->Rechte</li>
+    <li>randTheme->Verbote</li>
     <li>randTheme->Ethik</li>
+    <li>randThemeDat->Technik</li>
+    <li>randThemeDat->Überlieferungen</li>
+    <li>randThemeDat->Science-Fiction</li>
+    <li>randThemeDat->Überlebenstipps</li>
+    <li>randThemeDat->den Randwelten</li>
+    <li>randThemeDat->Autophagie</li>
+    <li>randThemeDat->Glauben</li>
+    <li>randThemeDat->Verboten</li>
+    <li>randThemeDat->Ethik</li>
+    <li>randThemeAcc->[randTheme]</li>
+    <li>und->und</li>
+    <li>und->&amp;</li>
+    <!-- fallbacks -->
+    <li>subject_primary_gender_nom_indef(priority=-1)->|N|[subject_primary]</li>
+    <li>subject_primary_with_of(priority=-1)->von [subject_primary]</li>
+    <li>subject_primary_with_of_and_adj(priority=-1)->von [subject_primary]</li>
+    <li>subject_primary_with_to(priority=-1)->zu [subject_primary]</li>
+    <li>subject_primary_with_to_and_adj(priority=-1)->zu [subject_primary]</li>
+    <li>subject_primary_with_the_dat(priority=-1)->[subject_primary]</li>
+    <li>subject_primary_with_the_and_adj_dat(priority=-1)->[subject_primary]</li>
+    <li>subject_primary_with_the_acc(priority=-1)->[subject_primary]</li>
+    <li>subject_primary_with_the_and_adj_acc(priority=-1)->[subject_primary]</li>
+    <li>subject_primary_dat_indef_zero(priority=-1)->[subject_primary]</li>
+    <li>subject_primary_acc_indef_zero(priority=-1)->[subject_primary]</li>
+    <li>subject_secondary_dat_indef_zero(priority=-1)->[subject_secondary]</li>
+    <li>subject_secondary_acc_indef_zero(priority=-1)->[subject_secondary]</li>
   </Namer_Schematic.rulePack.rulesStrings>
   
   <!-- EN:
@@ -888,34 +944,39 @@
     <li>title(length_subject_primary[less_than]20,p=4)->[titleAuthoredOneSubject]</li>
     <li>title(length_subject_primary[less_than]20,has_subject_secondary==true,length_subject_secondary[less_than]20,p=4)->[titleBasicTwoSubjects]</li>
     <li>title(length_subject_primary[less_than]20,has_subject_secondary==true,length_subject_secondary[less_than]20,p=4)->[titleAuthoredTwoSubjects]</li>
-    <li>titleBasic(p=6)->[randAdjective]{lookup: [subject_primary]; book; 2}</li>
-    <li>titleBasic(p=6)->[randNoun] und [subject_primary]</li>
-    <li>titleBasic->Lektionen über [subject_primary]</li>
-    <li>titleBasic->Gedanken über [subject_primary]</li>
-    <li>titleBasic->Ein Leitfaden für [subject_primary]</li>
-    <li>titleBasic->Einführung in [subject_primary]</li>
-    <li>titleBasic->Eine Fibel über [subject_primary]</li>
-    <li>titleBasic->Grundlegendes über [subject_primary]</li>
-    <li>titleBasic->Beherrschung von [subject_primary]</li>
-    <li>titleBasic->Die Grundlagen von [subject_primary]</li>
-    <li>titleBasic->Umgang mit [subject_primary]</li>
-    <li>titleBasic->Schlüsselkonzepte in [subject_primary]</li>
-    <li>titleBasic->Die Kunst von [subject_primary]</li>
+    <li>titleBasic(p=6)->{replace: [subject_primary_gender_nom_indef]; "|M|"-"er [randAdjective]"; "|F|"-"e [randAdjective]"; "|N|"-"es [randAdjective]"}</li>
+    <li>titleBasic(p=6)->[randNoun] [und] [subject_primary]</li>
+    <li>titleBasic->Lektionen über [subject_primary_with_the_acc]</li>
+    <li>titleBasic->Gedanken über [subject_primary_with_the_acc]</li>
+    <li>titleBasic->Ein Leitfaden für [subject_primary_with_the_acc]</li>
+    <li>titleBasic->Einführung in [subject_primary_with_the_acc]</li>
+    <li>titleBasic->Einführung in die Welt [subject_primary_with_of]</li>
+    <li>titleBasic->Eine Fibel für [subject_primary_with_the_acc]</li>
+    <li>titleBasic->Grundlegendes über [subject_primary_with_the_acc]</li>
+    <li>titleBasic->Beherrschung [subject_primary_with_of]</li>
+    <li>titleBasic->Die Grundlagen über [subject_primary_with_the_acc]</li>
+    <li>titleBasic->Umgang mit [subject_primary_with_the_dat]</li>
+    <li>titleBasic->Wichtiges über [subject_primary_with_the_acc]</li>
+    <li>titleBasic->Die Kunst [subject_primary_with_of]</li>
     <li>titleBasic->Masterclass: [subject_primary]</li>
-    <li>titleBasic->Aufschlüsselung von [subject_primary]</li>
-    <li>titleBasic->Fortgeschrittene Techniken in [subject_primary]</li>
-    <li>titleBasic->Erschließung von [subject_primary]</li>
-    <li>titleBasic->Praktischer Leitfaden für [subject_primary]</li>
-    <li>titleBasic->Erforschung von [subject_primary]</li>
+    <li>titleBasic->[subject_primary] im Detail</li>
+    <li>titleBasic->Fortgeschrittene Techniken [subject_primary_with_of]</li>
+    <li>titleBasic->Erschließung [subject_primary_with_of]</li>
+    <li>titleBasic->Praktischer Leitfaden für [subject_primary_with_the_acc]</li>
+    <li>titleBasic->Erforschung [subject_primary_with_of]</li>
     <li>titleBasic->Profi-Tipps: [subject_primary]</li>
-    <li>titleBasic->Erklärung von [subject_primary]</li>
-    <li>titleBasic->Eine Reise durch die Welt von [subject_primary]</li>
-    <li>titleBasic->Der Weg von [subject_primary]</li>
-    <li>titleBasic->Einblicke in [subject_primary]</li>
-    <li>titleBasic->Entwirrung von [subject_primary]</li>
-    <li>titleBasic->Geheimnisse von [subject_primary]</li>
-    <li>titleBasic->Meisterung von [subject_primary]</li>
-    <li>titleBasic->Gründliche Studie über [subject_primary]</li>
+    <li>titleBasic->[subject_primary] einfach erklärt</li>
+    <li>titleBasic->Eine Reise durch die Welt [subject_primary_with_of]</li>
+    <li>titleBasic->Der Weg [subject_primary_with_of]</li>
+    <li>titleBasic->Einblicke in [subject_primary_with_the_acc]</li>
+    <li>titleBasic->Einblicke in die Welt [subject_primary_with_of]</li>
+    <li>titleBasic->Mythen [und] Fakten [subject_primary_with_of]</li>
+    <li>titleBasic->Geheimnisse [subject_primary_with_of]</li>
+    <li>titleBasic->[subject_primary] für Fortgeschrittene</li>
+    <li>titleBasic->Umfassende Studie über [subject_primary_with_the_acc]</li>
+    <li>titleBasic->[subject_primary] für Einsteiger</li>
+    <li>titleBasic->[subject_primary] – Eine Einführung</li>
+    <li>titleBasic->[subject_primary] – Wissen [und] Anwendung</li>
     <li>titleAuthoredNoSubject->[ANYPAWN_label]'s Studien</li>
     <li>titleAuthoredNoSubject->[ANYPAWN_label]'s [randAdjective]e Studien</li>
     <li>titleAuthoredNoSubject->[ANYPAWN_label]'s Tagebuch</li>
@@ -926,6 +987,7 @@
     <li>titleAuthoredNoSubject->[ANYPAWN_label]'s Abenteuer</li>
     <li>titleAuthoredNoSubject->[ANYPAWN_label]'s Überlegungen</li>
     <li>titleAuthoredNoSubject->[ANYPAWN_label]'s Erkundung</li>
+    <li>titleAuthoredNoSubject->[ANYPAWN_label]'s Expedition</li>
     <li>titleAuthoredNoSubject->[ANYPAWN_label]'s Aussagen</li>
     <li>titleAuthoredNoSubject->[ANYPAWN_label]'s Odyssee</li>
     <li>titleAuthoredNoSubject->[ANYPAWN_label]'s Reise</li>
@@ -939,69 +1001,76 @@
     <li>titleAuthoredNoSubject->Die Aussagen von [ANYPAWN_nameIndef]</li>
     <li>titleAuthoredNoSubject->Die Chroniken von [ANYPAWN_nameIndef]</li>
     <li>titleAuthoredNoSubject->Die Memoiren von [ANYPAWN_nameIndef]</li>
-    <li>titleAuthoredOneSubject->[ANYPAWN_nameIndef] über [subject_primary]</li>
-    <li>titleAuthoredOneSubject->[ANYPAWN_label]'s Leitfaden für [subject_primary]</li>
-    <li>titleAuthoredOneSubject->[ANYPAWN_label]'s Einführung in [subject_primary]</li>
-    <li>titleAuthoredOneSubject->[ANYPAWN_nameIndef] erforscht [subject_primary]</li>
-    <li>titleAuthoredOneSubject->[ANYPAWN_label]'s Einblicke in [subject_primary]</li>
-    <li>titleAuthoredOneSubject->[ANYPAWN_label]'s Anleitung zu [subject_primary]</li>
-    <li>titleAuthoredOneSubject->[ANYPAWN_label]'s Ansichten zu [subject_primary]</li>
-    <li>titleAuthoredOneSubject->[ANYPAWN_label]'s Handbuch über [subject_primary]</li>
-    <li>titleAuthoredOneSubject->[ANYPAWN_label]'s Analyse von [subject_primary]</li>
-    <li>titleAuthoredOneSubject->[ANYPAWN_label]'s Umgang mit [subject_primary]</li>
-    <li>titleAuthoredOneSubject->[ANYPAWN_label]'s Entdeckungen in [subject_primary]</li>
-    <li>titleAuthoredOneSubject->[ANYPAWN_label]'s Überlegungen zu [subject_primary]</li>
-    <li>titleAuthoredOneSubject->[ANYPAWN_label]'s Studium von [subject_primary]</li>
-    <li>titleAuthoredOneSubject->[ANYPAWN_label]'s Untersuchung über [subject_primary]</li>
-    <li>titleAuthoredOneSubject->[ANYPAWN_label]'s Forschung zu [subject_primary]</li>
+    <li>titleAuthoredOneSubject->[ANYPAWN_nameIndef] über [subject_primary_with_the_acc]</li>
+    <li>titleAuthoredOneSubject->[ANYPAWN_label]'s Leitfaden für [subject_primary_with_the_acc]</li>
+    <li>titleAuthoredOneSubject->[ANYPAWN_label]'s Einführung in [subject_primary_with_the_acc]</li>
+    <li>titleAuthoredOneSubject->[ANYPAWN_label]'s Einblicke in [subject_primary_with_the_acc]</li>
+    <li>titleAuthoredOneSubject->[ANYPAWN_label]'s Welt [subject_primary_with_of]</li>
+    <li>titleAuthoredOneSubject->[ANYPAWN_label]'s Anleitung [subject_primary_with_to]</li>
+    <li>titleAuthoredOneSubject->[ANYPAWN_label]'s Blick auf [subject_primary_with_the_acc]</li>
+    <li>titleAuthoredOneSubject->[ANYPAWN_label]'s Handbuch über [subject_primary_with_the_acc]</li>
+    <li>titleAuthoredOneSubject->[ANYPAWN_label]'s Fibel [subject_primary_with_of]</li>
+    <li>titleAuthoredOneSubject->[ANYPAWN_label]'s Umgang mit [subject_primary_with_the_dat]</li>
+    <li>titleAuthoredOneSubject->[ANYPAWN_label]'s Reise durch [subject_primary_with_the_acc]</li>
+    <li>titleAuthoredOneSubject->[ANYPAWN_label]'s Erfahrungen mit [subject_primary_with_the_dat]</li>
+    <li>titleAuthoredOneSubject->[ANYPAWN_label]'s Studium [subject_primary_with_of]</li>
+    <li>titleAuthoredOneSubject->[ANYPAWN_label]'s Untersuchung über [subject_primary_with_the_acc]</li>
+    <li>titleAuthoredOneSubject->[ANYPAWN_label]'s Forschung [subject_primary_with_of]</li>
     <li>titleAuthoredTwoSubjects->[ANYPAWN_nameIndef] über [subjectsTuple]</li>
-    <li>titleAuthoredTwoSubjects->[ANYPAWN_label]'s Leitfaden für [subjectsTuple]</li>
-    <li>titleAuthoredTwoSubjects->[ANYPAWN_label]'s Einführung in [subjectsTuple]</li>
-    <li>titleAuthoredTwoSubjects->[ANYPAWN_nameIndef] erforscht [subjectsTuple]</li>
-    <li>titleAuthoredTwoSubjects->[ANYPAWN_label]'s Einblicke in [subjectsTuple]</li>
-    <li>titleAuthoredTwoSubjects->[ANYPAWN_label]'s Anleitung zu [subjectsTuple]</li>
-    <li>titleAuthoredTwoSubjects->[ANYPAWN_label]'s Ansichten zu [subjectsTuple]</li>
-    <li>titleAuthoredTwoSubjects->[ANYPAWN_label]'s Handbuch über [subjectsTuple]</li>
-    <li>titleAuthoredTwoSubjects->[ANYPAWN_label]'s Analyse von [subjectsTuple]</li>
-    <li>titleAuthoredTwoSubjects->[ANYPAWN_label]'s Umgang mit [subjectsTuple]</li>
-    <li>titleAuthoredTwoSubjects->[ANYPAWN_label]'s Entdeckungen in [subjectsTuple]</li>
-    <li>titleAuthoredTwoSubjects->[ANYPAWN_label]'s Überlegungen zu [subjectsTuple]</li>
-    <li>titleAuthoredTwoSubjects->[ANYPAWN_label]'s Studium von [subjectsTuple]</li>
-    <li>titleAuthoredTwoSubjects->[ANYPAWN_label]'s Untersuchung über [subjectsTuple]</li>
-    <li>titleAuthoredTwoSubjects->[ANYPAWN_label]'s Forschung zu [subjectsTuple]</li>
+    <li>titleAuthoredTwoSubjects->[ANYPAWN_label]'s Leitfaden für [subjectsTupleAcc]</li>
+    <li>titleAuthoredTwoSubjects->[ANYPAWN_label]'s Einführung in [subjectsTupleAcc]</li>
+    <li>titleAuthoredTwoSubjects->[ANYPAWN_label]'s Einblicke in [subjectsTupleAcc]</li>
+    <li>titleAuthoredTwoSubjects->[ANYPAWN_label]'s Anleitungen zu [subjectsTupleAcc]</li>
+    <li>titleAuthoredTwoSubjects->[ANYPAWN_label]'s Ansichten zu [subjectsTupleAcc]</li>
+    <li>titleAuthoredTwoSubjects->[ANYPAWN_label]'s Handbuch über [subjectsTupleAcc]</li>
+    <li>titleAuthoredTwoSubjects->[ANYPAWN_label]'s Fibel für [subjectsTupleAcc]</li>
+    <li>titleAuthoredTwoSubjects->[ANYPAWN_label]'s Umgang mit [subjectsTupleDat]</li>
+    <li>titleAuthoredTwoSubjects->[ANYPAWN_label]'s Entdeckungen in [subjectsTupleDat]</li>
+    <li>titleAuthoredTwoSubjects->[ANYPAWN_label]'s Überlegungen zu [subjectsTupleAcc]</li>
+    <li>titleAuthoredTwoSubjects->[ANYPAWN_label]'s Studium von [subjectsTupleDat]</li>
+    <li>titleAuthoredTwoSubjects->[ANYPAWN_label]'s Untersuchungen zu [subjectsTupleDat]</li>
+    <li>titleAuthoredTwoSubjects->[ANYPAWN_label]'s Forschung von [subjectsTupleDat]</li>
     <li>titleBasicTwoSubjects->[subjectsTuple]</li>
-    <li>titleBasicTwoSubjects->eine Einführung in [subjectsTuple]</li>
-    <li>titleBasicTwoSubjects->Das Beste an [subjectsTuple]</li>
-    <li>titleBasicTwoSubjects->Kombination von [subjectsTuple]</li>
-    <li>titleBasicTwoSubjects->Lektionen über [subjectsTuple]</li>
-    <li>titleBasicTwoSubjects->Gedanken über [subjectsTuple]</li>
-    <li>titleBasicTwoSubjects->Ein Leitfaden für [subjectsTuple]</li>
-    <li>titleBasicTwoSubjects->Einführung in [subjectsTuple]</li>
-    <li>titleBasicTwoSubjects->Eine Fibel über [subjectsTuple]</li>
-    <li>titleBasicTwoSubjects->Grundlegendes über [subjectsTuple]</li>
-    <li>titleBasicTwoSubjects->Beherrschung von [subjectsTuple]</li>
-    <li>titleBasicTwoSubjects->Die Grundlagen von [subjectsTuple]</li>
-    <li>titleBasicTwoSubjects->Umgang mit [subjectsTuple]</li>
-    <li>titleBasicTwoSubjects->Schlüsselkonzepte in [subjectsTuple]</li>
-    <li>titleBasicTwoSubjects->Die Kunst von [subjectsTuple]</li>
+    <li>titleBasicTwoSubjects->Das Beste von [subjectsTupleDat]</li>
+    <li>titleBasicTwoSubjects->Kombination von [subjectsTupleDat]</li>
+    <li>titleBasicTwoSubjects->Lektionen über [subjectsTupleAcc]</li>
+    <li>titleBasicTwoSubjects->Gedanken über [subjectsTupleAcc]</li>
+    <li>titleBasicTwoSubjects->Ein Leitfaden für [subjectsTupleAcc]</li>
+    <li>titleBasicTwoSubjects->Einführung in [subjectsTupleAcc]</li>
+    <li>titleBasicTwoSubjects->Eine Fibel für [subjectsTupleAcc]</li>
+    <li>titleBasicTwoSubjects->Grundlegendes über [subjectsTupleAcc]</li>
+    <li>titleBasicTwoSubjects->Beherrschung von [subjectsTupleDat]</li>
+    <li>titleBasicTwoSubjects->Die Grundlagen über [subjectsTupleAcc]</li>
+    <li>titleBasicTwoSubjects->Umgang mit [subjectsTupleDat]</li>
+    <li>titleBasicTwoSubjects->Wichtiges über [subjectsTupleAcc]</li>
+    <li>titleBasicTwoSubjects->Die Kunst von [subjectsTupleDat]</li>
     <li>titleBasicTwoSubjects->Masterclass: [subjectsTuple]</li>
-    <li>titleBasicTwoSubjects->Aufschlüsselung von [subjectsTuple]</li>
-    <li>titleBasicTwoSubjects->Fortgeschrittene Techniken in [subjectsTuple]</li>
-    <li>titleBasicTwoSubjects->Erschließung von [subjectsTuple]</li>
-    <li>titleBasicTwoSubjects->Praktischer Leitfaden für [subjectsTuple]</li>
-    <li>titleBasicTwoSubjects->Erforschung von [subjectsTuple]</li>
+    <li>titleBasicTwoSubjects->[subjectsTuple] im Detail</li>
+    <li>titleBasicTwoSubjects->Fortgeschrittene Techniken in [subjectsTupleDat]</li>
+    <li>titleBasicTwoSubjects->Erschließung von [subjectsTupleDat]</li>
+    <li>titleBasicTwoSubjects->Praktischer Leitfaden für [subjectsTupleAcc]</li>
+    <li>titleBasicTwoSubjects->Erforschung von [subjectsTupleDat]</li>
     <li>titleBasicTwoSubjects->Profi-Tipps: [subjectsTuple]</li>
-    <li>titleBasicTwoSubjects->Erklärung von [subjectsTuple]</li>
-    <li>titleBasicTwoSubjects->Eine Reise durch die Welt von [subjectsTuple]</li>
-    <li>titleBasicTwoSubjects->Der Weg von [subjectsTuple]</li>
-    <li>titleBasicTwoSubjects->Einblicke in [subjectsTuple]</li>
-    <li>titleBasicTwoSubjects->Entwirrung von [subjectsTuple]</li>
-    <li>titleBasicTwoSubjects->Geheimnisse von [subjectsTuple]</li>
-    <li>titleBasicTwoSubjects->Meisterung von [subjectsTuple]</li>
-    <li>titleBasicTwoSubjects->Gründliche Studie über [subjectsTuple]</li>
-    <li>subjectsTuple(has_subject_secondary==true,p=6)->[subject_primary] und [subject_secondary]</li>
-    <li>subjectsTuple->[subject_secondary], [subject_primary] und [randTheme]</li>
-    <li>subjectsTuple->[subject_primary] und [randTheme]</li>
+    <li>titleBasicTwoSubjects->[subjectsTuple] einfach erklärt</li>
+    <li>titleBasicTwoSubjects->Eine Reise durch die Welt von [subjectsTupleDat]</li>
+    <li>titleBasicTwoSubjects->Der Weg von [subjectsTupleDat]</li>
+    <li>titleBasicTwoSubjects->Einblicke in [subjectsTupleAcc]</li>
+    <li>titleBasicTwoSubjects->Mythen [und] Fakten von [subjectsTupleDat]</li>
+    <li>titleBasicTwoSubjects->Geheimnisse von [subjectsTupleDat]</li>
+    <li>titleBasicTwoSubjects->[subjectsTuple] für Fortgeschrittene</li>
+    <li>titleBasicTwoSubjects->Umfassende Studie über [subjectsTupleAcc]</li>
+    <li>titleBasic->[subjectsTuple] für Einsteiger</li>
+    <li>titleBasic->[subjectsTuple] – Eine Einführung</li>
+    <li>titleBasic->[subjectsTuple] – Wissen [und] Anwendung</li>
+    <li>subjectsTuple(has_subject_secondary==true,p=6)->[subject_primary] [und] [subject_secondary]</li>
+    <li>subjectsTuple->[subject_secondary], [subject_primary] [und] [randTheme]</li>
+    <li>subjectsTuple->[subject_primary] [und] [randTheme]</li>
+    <li>subjectsTupleDat(has_subject_secondary==true,p=6)->[subject_primary_dat_indef_zero] [und] [subject_secondary_dat_indef_zero]</li>
+    <li>subjectsTupleDat->[subject_secondary_dat_indef_zero], [subject_primary_dat_indef_zero] [und] [randThemeDat]</li>
+    <li>subjectsTupleDat->[subject_primary_dat_indef_zero] [und] [randThemeDat]</li>
+    <li>subjectsTupleAcc(has_subject_secondary==true,p=6)->[subject_primary_acc_indef_zero] [und] [subject_secondary_acc_indef_zero]</li>
+    <li>subjectsTupleAcc->[subject_secondary_acc_indef_zero], [subject_primary_acc_indef_zero] [und] [randThemeAcc]</li>
+    <li>subjectsTupleAcc->[subject_primary_acc_indef_zero] [und] [randThemeAcc]</li>
     <li>randNoun->Tod</li>
     <li>randNoun->Leben</li>
     <li>randNoun->Liebe</li>
@@ -1029,6 +1098,20 @@
     <li>randTheme->Wissen</li>
     <li>randTheme->Weiterbildung</li>
     <li>randTheme->Aufklärung</li>
+    <li>randThemeDat->[randTheme]</li>
+    <li>randThemeAcc->[randTheme]</li>
+    <li>und->und</li>
+    <li>und->&amp;</li>
+    <!-- fallbacks -->
+    <li>subject_primary_gender_nom_indef(priority=-1)->|N|[subject_primary]</li>
+    <li>subject_primary_with_of(priority=-1)->von [subject_primary]</li>
+    <li>subject_primary_with_to(priority=-1)->zu [subject_primary]</li>
+    <li>subject_primary_with_the_dat(priority=-1)->[subject_primary]</li>
+    <li>subject_primary_with_the_acc(priority=-1)->[subject_primary]</li>
+    <li>subject_primary_dat_indef_zero(priority=-1)->[subject_primary]</li>
+    <li>subject_primary_acc_indef_zero(priority=-1)->[subject_primary]</li>
+    <li>subject_secondary_dat_indef_zero(priority=-1)->[subject_secondary]</li>
+    <li>subject_secondary_acc_indef_zero(priority=-1)->[subject_secondary]</li>
   </Namer_TextBook.rulePack.rulesStrings>
   
 </LanguageData>
