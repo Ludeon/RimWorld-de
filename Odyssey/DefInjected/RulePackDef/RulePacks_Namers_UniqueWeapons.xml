@@ -68,9 +68,11 @@
     <li>r_weapon_name(p=0.3)->[ANYPAWN_nameIndef]'s [weapon_noun_ungendered]</li>
     <li>r_weapon_name(p=0.3)->[ANYPAWN_nameIndef]'s [weapon_adjective_weapon_noun]</li>
     <li>r_weapon_name(p=0.3)->[the_badass_concept] von [ANYPAWN_nameIndef]</li>
+    <li>r_weapon_name(p=0.2)->[the_weapon_special]</li>
     <li>weapon_adjective_weapon_noun->{replace: [weapon_noun]; "|M|"-"[weapon_adjective]er "; "|F|"-"[weapon_adjective]e "; "|N|"-"[weapon_adjective]es "}</li>
-    <li>the_weapon_type_of_badass_concept->{replace: [weapon_noun]; "|M|"-"Der [weapon_adjective]e "; "|F|"-"Die [weapon_adjective]e "; "|N|"-"Das [weapon_adjective]e "}</li>
-    <li>the_weapon_adjective_weapon_noun->{replace: [weapon_type]; "|M|"-"Der "; "|F|"-"Die "; "|N|"-"Das "} [of_the_badass_concept]</li>
+    <li>the_weapon_type_of_badass_concept->{replace: [weapon_type]; "|M|"-"Der "; "|F|"-"Die "; "|N|"-"Das "} [of_the_badass_concept]</li>
+    <li>the_weapon_adjective_weapon_noun->{replace: [weapon_noun]; "|M|"-"Der [weapon_adjective]e "; "|F|"-"Die [weapon_adjective]e "; "|N|"-"Das [weapon_adjective]e "}</li>
+    <li>the_weapon_special->{replace: [weapon_type]; "|F|Minigun"-"Ol' Painless"; "|F|Gatling"-"Lux"; "|M|Revolver"-"Peacemaker"; "|N|Schießeisen"-"The Samaritan"; "|F|Handkanone"-"Tackleberry"; "|M|Sechsschüsser"-"Liberty Hammer"; "|F|Schrotflinte"-"Boomstick"; "|N|LMG"-"The Pig"; "|N|Sturmgewehr"-"Vera"; "|N|Präzisionsgewehr"-"Kate"; "|M|"-"Der [weapon_adjective]e "; "|F|"-"Die [weapon_adjective]e "; "|N|"-"Das [weapon_adjective]e "}</li>
     <li>badass_concept_s_weapon_type->{replace: [weapon_type]; "|M|"-""; "|F|"-""; "|N|"-""} [of_the_badass_concept]</li>
     <li>the_badass_concept->{replace: [badass_concept]; "|M|"-"Der "; "|F|"-"Die "; "|N|"-"Das "}</li>
     <li>of_the_badass_concept->{replace: [badass_concept_gender_gen]; "|M|"-"des "; "|F|"-"der "; "|N|"-"des "}</li>
