@@ -209,23 +209,28 @@
     <li>bookType->epic poem</li>
   -->
   <Description_Novel.rulePack.rulesStrings>
-    <li>desc(ANYPAWN_gender!=Female)->[ThisAdjBookType] [follows] einem [PersonJobMasDat], der [storyStruggles]. [writingQualitySentence]. [maybe_date]</li>
-    <li>desc(ANYPAWN_gender==Female)->[ThisAdjBookType] [follows] einer [PersonJobFemDat], die [storyStruggles]. [writingQualitySentence]. [maybe_date]</li>
+    <li>desc->[ThisAdjBookType] [follows] {ANYPAWN_gender ? einem [PersonJobMasDat] : einer [PersonJobFemDat]}, {ANYPAWN_gender ? der : die} [storyStruggles]. [writingQualitySentence]. [maybe_date]</li>
+    <li>desc(p=0.5)->In [ThisAdjBookTypeDat] [is_about] {ANYPAWN_gender ? einen [PersonJobMasAcc] : eine [PersonJobFemAcc]}, {ANYPAWN_gender ? der : die} [storyStruggles]. [writingQualitySentence]. [maybe_date]</li>
     <li>desc->In [ThisAdjBookTypeDat] [theAuthorTellsAStoryOfHisStorySource]. [writingQualitySentence]. [maybe_date]</li>
     <li>follows->befasst sich mit</li>
     <li>follows->handelt von</li>
     <li>follows->erzählt von</li>
     <li>follows->berichtet von</li>
+    <li>is_about->geht es um</li>
+    <li>is_about->dreht sich alles um</li>
     <li>protagHe->[ANYPAWN_pronoun]</li>
     <li>protagHis->[ANYPAWN_possessive]</li>
     <!-- <li>protagHim->ihn</li> -->
     <li>storyStruggles->[struggles]</li>
     <li>storyStruggles->[seeks]</li>
     <li>struggles->sich mit [opponentDat] auseinandersetzt</li>
+    <li>struggles->sich [opponentDat] entgegenstellt</li>
     <li>struggles->gegen [opponentAcc] kämpft</li>
     <li>struggles->sich gegen [opponentAcc] wehrt</li>
-    <li>opponentDat->Ungerechtigkeit</li>
-    <li>opponentDat->Angst</li>
+    <li>struggles->sich gegen [opponentAcc] zur Wehr setzt</li>
+    <li>struggles->sich gegen [opponentAcc] auflehnt</li>
+    <li>opponentDat->der Ungerechtigkeit</li>
+    <li>opponentDat->[protagHis]en Ängsten</li>
     <li>opponentDat(p=0.5)->einem gefährlichen [EnemyDat]</li>
     <li>opponentDat(p=0.5)->einer gefährlichen [EnemyFemDat]</li>
     <li>opponentDat(p=0.5)->einem rivalisierenden [PersonJobMasDat]</li>
@@ -236,8 +241,8 @@
     <li>opponentDat(p=0.5)->[protagHis]em bösen [PersonFamilyMasDat]</li>
     <li>opponentDat(p=0.5)->[protagHis]er bösen [PersonFamilyFemDat]</li>
     <li>opponentDat->den sozialen Normen [protagHis]er Gemeinschaft</li>
-    <li>opponentAcc->Ungerechtigkeit</li>
-    <li>opponentAcc->Angst</li>
+    <li>opponentAcc->die Ungerechtigkeit</li>
+    <li>opponentAcc->[protagHis]e Ängste</li>
     <li>opponentAcc(p=0.5)->einen gefährlichen [EnemyAcc]</li>
     <li>opponentAcc(p=0.5)->eine gefährliche [EnemyFemAcc]</li>
     <li>opponentAcc(p=0.5)->einen rivalisierenden [PersonJobMasAcc]</li>
@@ -251,21 +256,21 @@
     <li>seeks->auf der Suche nach [seekObjectiveDat] ist</li>
     <li>seeks->das Universum nach [seekObjectiveDat] absucht</li>
     <li>seeks->versucht, [seekObjectiveAcc] zu finden</li>
-    <li>seeks->in sich selbst und überall auf der Welt nach [seekObjectiveDat] sucht</li>
+    <li>seeks->die ganze Welt bereist, um [seekObjectiveAcc] zu finden</li>
     <li>seeks->verzweifelt nach [seekObjectiveDat] sucht</li>
     <li>seeks->sich bemüht, [seekObjectiveAcc] zu finden</li>
     <li>seeks->das Land durchkämmt, um [seekObjectiveAcc] zu finden</li>
     <li>seeks->[seekObjectiveDat] hinterherjagt</li>
     <li>seeks->[seekObjectiveDat] nachjagt</li>
     <li>seeks->alles daransetzt, [seekObjectiveAcc] zu finden</li>
-    <li>seeks->hartnäckig [seekObjectiveDat] nachjagt</li>
+    <li>seeks->[seekObjectiveDat] hartnäckig nachjagt</li>
     <li>seeks->nichts unversucht lässt, um [seekObjectiveAcc] zu finden</li>
     <li>seeks->[seekObjectiveAcc] sucht</li>
     <li>seeks->bei der Suche nach [seekObjectiveDat] [protagHis] Leben aufs Spiel setzt</li>
-    <li>seeks->danach strebt, [seekObjectiveAcc] ausfindig zu machen</li>
+    <li>seeks->[seekObjectiveAcc] ausfindig machen möchte</li>
     <li>seeks->sich auf die Suche nach [seekObjectiveDat] begibt</li>
     <li>seeks->sich auf die Wanderschaft begibt, um [seekObjectiveAcc] zu finden</li>
-    <li>seeks->auf eine Mission geht, um [seekObjectiveAcc] zu finden</li>
+    <li>seeks->sich auf eine Mission begibt, um [seekObjectiveAcc] zu finden</li>
     <li>seekObjectiveDat->einem mysteriösen Goldwürfel</li>
     <li>seekObjectiveDat->einem Dämon in [protagHis]em Kopf</li>
     <li>seekObjectiveDat(p=0.5)->dem leckersten [VegetableMasDat] des Universums</li>
@@ -276,37 +281,37 @@
     <li>seekObjectiveDat(p=0.33)->[protagHis]em verlorenen Haustier, einem [AnimalMasDat],</li>
     <li>seekObjectiveDat(p=0.33)->[protagHis]em verlorenen Haustier, einer [AnimalFemDat],</li>
     <li>seekObjectiveDat(p=0.33)->[protagHis]em verlorenen Haustier, einem [AnimalNeuDat],</li>
-    <li>seekObjectiveDat(p=0.5)->Teilen für den Wiederaufbau eines zerstörten [MechanoidMasGen]</li>
-    <li>seekObjectiveDat(p=0.5)->Teilen für den Wiederaufbau einer zerstörten [MechanoidFemGen]</li>
+    <li>seekObjectiveDat(p=0.5)->Bauteilen für den Wiederaufbau eines zerstörten [MechanoidMasGen]</li>
+    <li>seekObjectiveDat(p=0.5)->Bauteilen für den Wiederaufbau einer zerstörten [MechanoidFemGen]</li>
     <li>seekObjectiveDat(p=0.33)->einem [TerrainFeatureMasDat], den [protagHe] in einem Traum gesehen hat,</li>
     <li>seekObjectiveDat(p=0.33)->einer [TerrainFeatureFemDat], die [protagHe] in einem Traum gesehen hat,</li>
     <li>seekObjectiveDat(p=0.33)->einem [TerrainFeatureNeuDat], das [protagHe] in einem Traum gesehen hat,</li>
     <li>seekObjectiveDat->einer alten Liebe</li>
     <li>seekObjectiveDat->sexueller Befriedigung</li>
-    <li>seekObjectiveDat->einer neuen Niere als Ersatz für [protagHis]e eigene kranke Niere</li>
+    <li>seekObjectiveDat->einer passenden Spenderniere für [protagHis]e kranke Niere</li>
     <li>seekObjectiveDat->Nahrung in einem riesigen Ödland</li>
     <li>seekObjectiveDat->Wärme und Geborgenheit eines Zuhauses</li>
-    <li>seekObjectiveDat->Liebe in einer Welt voller Hass</li>
-    <li>seekObjectiveDat->einem lang verschollenen Familienrezept</li>
+    <li>seekObjectiveDat->Liebe in einer von Hass geprägten Welt</li>
+    <li>seekObjectiveDat->einem seit Langem verschollenen Familienrezept</li>
     <li>seekObjectiveDat->einem zurückgelassenen Kinderspielzeug</li>
     <li>seekObjectiveDat->einem gestohlenen Familienerbstück</li>
-    <li>seekObjectiveDat->dem verlorenen Tagebuch eines Mentors</li>
+    <li>seekObjectiveDat->dem verlorenen Tagebuch [protagHis]es Mentors</li>
     <li>seekObjectiveDat->einem seltenen Sammlerstück aus [protagHis]er Lieblingsserie</li>
     <li>seekObjectiveDat->dem perfekten Ort für ein Picknick</li>
     <li>seekObjectiveDat->einem fehlenden Stück aus einer wertvollen Sammlung</li>
     <li>seekObjectiveDat->einer Entschuldigung für frühere Verfehlungen</li>
-    <!-- <li>seekObjectiveDat->Beendigung einer vergangenen Beziehung</li> -->
-    <li>seekObjectiveDat->einer verlorenen Schatzkarte aus der Kindheit</li>
+    <li>seekObjectiveDat->einem Ausweg aus [protagHis]er früheren Beziehung</li>
+    <li>seekObjectiveDat->einer verlorenen Schatzkarte aus [protagHis]er Kindheit</li>
     <li>seekObjectiveDat->einem wertvollen Andenken an einen geliebten Verstorbenen</li>
     <li>seekObjectiveDat->einem Rezept für ein Heilmittel gegen eine Krankheit</li>
     <li>seekObjectiveDat->einer seltenen Pflanze für den eigenen Garten</li>
     <li>seekObjectiveDat->einem geschriebenen, aber nie abgeschickten Brief</li>
-    <li>seekObjectiveDat->einer schwierigen Antwort auf eine philosophische Frage</li>
-    <li>seekObjectiveDat->einem ruhigen Moment abseits des Chaos</li>
-    <li>seekObjectiveDat(p=0.5)->einem alten Freund in einer neuen Stadt</li>
-    <li>seekObjectiveDat(p=0.5)->einer alten Freundin in einer neuen Stadt</li>
+    <li>seekObjectiveDat->einer Antwort auf eine schwierige philosophische Frage</li>
+    <li>seekObjectiveDat->einem Moment der Ruhe abseits des Chaos</li>
+    <li>seekObjectiveDat(p=0.5)->einem alten Freund in einer fremden Stadt</li>
+    <li>seekObjectiveDat(p=0.5)->einer alten Freundin in einer fremden Stadt</li>
     <li>seekObjectiveDat->dem Nervenkitzel eines verkannten Hobbys</li>
-    <li>seekObjectiveDat->einem kurzen Moment puren Glücks</li>
+    <li>seekObjectiveDat->einem kurzen Moment des puren Glücks</li>
     <li>seekObjectiveAcc->einen mysteriösen Goldwürfel</li>
     <li>seekObjectiveAcc->einen Dämon in [protagHis]em Kopf</li>
     <li>seekObjectiveAcc(p=0.5)->den leckersten [VegetableMasAcc] des Universums</li>
@@ -317,62 +322,60 @@
     <li>seekObjectiveAcc(p=0.33)->[protagHis] verlorenes Haustier, einen [AnimalMasAcc],</li>
     <li>seekObjectiveAcc(p=0.33)->[protagHis] verlorenes Haustier, eine [AnimalFemAcc],</li>
     <li>seekObjectiveAcc(p=0.33)->[protagHis] verlorenes Haustier, ein [AnimalNeuAcc],</li>
-    <li>seekObjectiveAcc(p=0.5)->Teile für den Wiederaufbau eines zerstörten [MechanoidMasGen]</li>
-    <li>seekObjectiveAcc(p=0.5)->Teile für den Wiederaufbau einer zerstörten [MechanoidFemGen]</li>
-    <li>seekObjectiveAcc(p=0.33)->einen [TerrainFeatureMasDatAcc], den [protagHe] in einem Traum gesehen hat,</li>
-    <li>seekObjectiveAcc(p=0.33)->eine [TerrainFeatureFemDatAcc], die [protagHe] in einem Traum gesehen hat,</li>
-    <li>seekObjectiveAcc(p=0.33)->ein [TerrainFeatureNeuDatAcc], das [protagHe] in einem Traum gesehen hat,</li>
+    <li>seekObjectiveAcc(p=0.5)->Bauteile für den Wiederaufbau eines zerstörten [MechanoidMasGen]</li>
+    <li>seekObjectiveAcc(p=0.5)->Bauteile für den Wiederaufbau einer zerstörten [MechanoidFemGen]</li>
+    <li>seekObjectiveAcc(p=0.33)->einen [TerrainFeatureMasAcc], den [protagHe] in einem Traum gesehen hat,</li>
+    <li>seekObjectiveAcc(p=0.33)->eine [TerrainFeatureFemAcc], die [protagHe] in einem Traum gesehen hat,</li>
+    <li>seekObjectiveAcc(p=0.33)->ein [TerrainFeatureNeuAcc], das [protagHe] in einem Traum gesehen hat,</li>
     <li>seekObjectiveAcc->eine alte Liebe</li>
     <li>seekObjectiveAcc->sexuelle Befriedigung</li>
-    <li>seekObjectiveAcc->eine neue Niere als Ersatz für [protagHis]e eigene kranke Niere</li>
+    <li>seekObjectiveAcc->eine passende Spenderniere für [protagHis]e kranke Niere</li>
     <li>seekObjectiveAcc->Nahrung in einem riesigen Ödland</li>
     <li>seekObjectiveAcc->Wärme und Geborgenheit eines Zuhauses</li>
-    <li>seekObjectiveAcc->Liebe in einer Welt voller Hass</li>
-    <li>seekObjectiveAcc->ein lang verschollenes Familienrezept</li>
+    <li>seekObjectiveAcc->in einer von Hass geprägten Welt der Liebe</li>
+    <li>seekObjectiveAcc->ein seit Langem verschollenes Familienrezept</li>
     <li>seekObjectiveAcc->ein zurückgelassenes Kinderspielzeug</li>
     <li>seekObjectiveAcc->ein gestohlenes Familienerbstück</li>
-    <li>seekObjectiveAcc->das verlorene Tagebuch eines Mentors</li>
+    <li>seekObjectiveAcc->das verlorene Tagebuch [protagHis]es Mentors</li>
     <li>seekObjectiveAcc->ein seltenes Sammlerstück aus [protagHis]er Lieblingsserie</li>
     <li>seekObjectiveAcc->den perfekten Ort für ein Picknick</li>
     <li>seekObjectiveAcc->ein fehlendes Stück aus einer wertvollen Sammlung</li>
     <li>seekObjectiveAcc->eine Entschuldigung für frühere Verfehlungen</li>
-    <!-- <li>seekObjectiveAcc->Beendigung einer vergangenen Beziehung</li> -->
-    <li>seekObjectiveAcc->eine verlorene Schatzkarte aus der Kindheit</li>
+    <li>seekObjectiveAcc->einen Ausweg aus [protagHis]er früheren Beziehung</li>
+    <li>seekObjectiveAcc->eine verlorene Schatzkarte aus [protagHis]er Kindheit</li>
     <li>seekObjectiveAcc->ein wertvolles Andenken an einen geliebten Verstorbenen</li>
     <li>seekObjectiveAcc->ein Rezept für ein Heilmittel gegen eine Krankheit</li>
     <li>seekObjectiveAcc->eine seltene Pflanze für den eigenen Garten</li>
     <li>seekObjectiveAcc->einen geschriebenen, aber nie abgeschickten Brief</li>
-    <li>seekObjectiveAcc->eine schwierige Antwort auf eine philosophische Frage</li>
-    <li>seekObjectiveAcc->einen ruhigen Moment abseits des Chaos</li>
-    <li>seekObjectiveAcc(p=0.5)->einen alten Freund in einer neuen Stadt</li>
-    <li>seekObjectiveAcc(p=0.5)->eine alte Freundin in einer neuen Stadt</li>
+    <li>seekObjectiveAcc->eine Antwort auf eine schwierige philosophische Frage</li>
+    <li>seekObjectiveAcc->einen Moment der Ruhe abseits des Chaos</li>
+    <li>seekObjectiveAcc(p=0.5)->einen alten Freund in einer fremden Stadt</li>
+    <li>seekObjectiveAcc(p=0.5)->eine alte Freundin in einer fremden Stadt</li>
     <li>seekObjectiveAcc->den Nervenkitzel eines verkannten Hobbys</li>
-    <li>seekObjectiveAcc->einen kurzen Moment puren Glücks</li>
+    <li>seekObjectiveAcc->einen kurzen Moment des puren Glücks</li>
     <li>theAuthorTellsAStoryOfHisStorySource->erzählt [author] ein Märchen über [HisStorySourceAcc]</li>
     <li>theAuthorTellsAStoryOfHisStorySource->beschreibt [author] ausführlich [HisStorySourceAcc]</li>
-    <li>theAuthorTellsAStoryOfHisStorySource->untersucht [author] eine Geschichte über [HisStorySourceAcc]</li>
+    <li>theAuthorTellsAStoryOfHisStorySource->verarbeitet [author] die Geschichte [HisStorySourceGen]</li>
     <li>theAuthorTellsAStoryOfHisStorySource->erzählt [author] eine Geschichte über [HisStorySourceAcc]</li>
     <li>theAuthorTellsAStoryOfHisStorySource->erfindet [author] eine Erzählung über [HisStorySourceAcc]</li>
-    <li>theAuthorTellsAStoryOfHisStorySource->malt [author] ein Bild von [HisStorySourceDat]</li>
+    <li>theAuthorTellsAStoryOfHisStorySource->veranschaulicht [author] [HisStorySourceAcc]</li>
     <li>theAuthorTellsAStoryOfHisStorySource->beschäftigt sich [author] eingehend mit [HisStorySourceDat]</li>
     <li>theAuthorTellsAStoryOfHisStorySource->entwirrt [author] die Geschichte [HisStorySourceGen]</li>
-    <li>theAuthorTellsAStoryOfHisStorySource->beschreibt [author] die Reise [HisStorySourceGen]</li>
+    <li>theAuthorTellsAStoryOfHisStorySource->beschreibt [author] den Verlauf [HisStorySourceGen]</li>
     <li>theAuthorTellsAStoryOfHisStorySource->erfasst [author] die Essenz [HisStorySourceGen]</li>
     <li>theAuthorTellsAStoryOfHisStorySource->beleuchtet [author] [HisStorySourceAcc]</li>
-    <li>theAuthorTellsAStoryOfHisStorySource->schildert [author] die Erfahrungen [HisStorySourceGen]</li>
+    <li>theAuthorTellsAStoryOfHisStorySource->schildert [author] [ANYPAWN_possessive]e Erfahrungen bezüglich [HisStorySourceGen]</li>
     <li>theAuthorTellsAStoryOfHisStorySource->beginnt [author] mit der Erzählung [HisStorySourceGen]</li>
     <li>theAuthorTellsAStoryOfHisStorySource->schildert [author] die Geschichte [HisStorySourceGen]</li>
-    <li>theAuthorTellsAStoryOfHisStorySource->behandelt [author] das Märchen [HisStorySourceGen]</li>
+    <li>theAuthorTellsAStoryOfHisStorySource->behandelt [author] das Märchen über [HisStorySourceAcc]</li>
     <li>theAuthorTellsAStoryOfHisStorySource->präsentiert [author] die Geschichte [HisStorySourceGen]</li>
-    <li>theAuthorTellsAStoryOfHisStorySource->schildert [author] die Reise [HisStorySourceGen]</li>
+    <li>theAuthorTellsAStoryOfHisStorySource->schildert [author] den Fortschritt [HisStorySourceGen]</li>
     <li>theAuthorTellsAStoryOfHisStorySource->widmet sich [author] der Geschichte [HisStorySourceGen]</li>
     <li>theAuthorTellsAStoryOfHisStorySource->beleuchtet [author] die Erzählung [HisStorySourceGen]</li>
     <li>theAuthorTellsAStoryOfHisStorySource->erzählt [author] die Saga [HisStorySourceGen]</li>
-    <li>theAuthorTellsAStoryOfHisStorySource->malt [author] ein lebendiges Bild [HisStorySourceGen]</li>
-    <li>theAuthorTellsAStoryOfHisStorySource->webt [author] den Wandteppich [HisStorySourceGen]</li>
+    <li>theAuthorTellsAStoryOfHisStorySource->veranschaulicht [author] lebhaft [HisStorySourceAcc]</li>
+    <li>theAuthorTellsAStoryOfHisStorySource->visualisiert [author] [HisStorySourceAcc]</li>
     <li>theAuthorTellsAStoryOfHisStorySource->erforscht [author] die Chronik [HisStorySourceGen]</li>
-    <li>the_author(ANYPAWN_gender!=Female)->der Autor</li>
-    <li>the_author(ANYPAWN_gender==Female)->die Autorin</li>
     <li>author(ANYPAWN_gender!=Female)->der Autor</li>
     <li>author(ANYPAWN_gender==Female)->die Autorin</li>
     <li>author->[theTitle] [ANYPAWN_nameIndef]</li>
@@ -424,15 +427,15 @@
     <li>HisStorySourceGen(p=0.33)->[ANYPAWN_possessive]er riesigen [BodyPartFemGen]</li>
     <li>HisStorySourceGen(p=0.33)->[ANYPAWN_possessive]es riesigen [BodyPartNeuGen]</li>
     <li>HisStorySourceGen(p=0.5)->[ANYPAWN_possessive]er Erinnerungen an einen verlorenen Freund</li>
-    <li>HisStorySourceGen(p=0.5)->[ANYPAWN_possessive]er Erinnerungen an einer verlorenen Freundin</li>
+    <li>HisStorySourceGen(p=0.5)->[ANYPAWN_possessive]er Erinnerungen an eine verlorene Freundin</li>
     <li>HisStorySourceGen->[ANYPAWN_possessive]er Leidenschaft für Musik</li>
-    <li>HisStorySourceGen->[ANYPAWN_possessive]er Neugier auf antike Ruinen</li>
-    <li>HisStorySourceGen->[ANYPAWN_possessive]er Verbundenheit mit einem Familienerbstück</li>
+    <li>HisStorySourceGen->[ANYPAWN_possessive]er Neugier für antike Ruinen</li>
+    <li>HisStorySourceGen->[ANYPAWN_possessive]er Verbundenheit zu einem Familienerbstück</li>
     <li>HisStorySourceGen->[ANYPAWN_possessive]er Faszination für eine mysteriöse Gestalt</li>
-    <li>HisStorySourceGen->[ANYPAWN_possessive]er Bemühungen um den Erhalt einer vom Aussterben bedrohten Sprache</li>
+    <li>HisStorySourceGen->[ANYPAWN_possessive]er Bemühungen, eine vom Aussterben bedrohte Sprache zu erhalten</li>
     <li>HisStorySourceGen->[ANYPAWN_possessive]er Träume, etwas Bahnbrechendes zu erfinden</li>
-    <li>HisStorySourceGen->[ANYPAWN_possessive]er Verbindung zu einer mythischen Kreatur</li>
-    <li>HisStorySourceGen->[ANYPAWN_possessive]er Vorliebe für eine bestimmte Landschaft</li>
+    <li>HisStorySourceGen->[ANYPAWN_possessive]er Verbindung zu ungewöhnlichen [AnimalsDat]</li>
+    <li>HisStorySourceGen->[ANYPAWN_possessive]er Vorliebe für [TerrainFeatures]</li>
     <li>HisStorySourceGen(ANYPAWN_gender!=Female)->seines Bestrebens, ein berühmter [PersonJob] zu werden</li>
     <li>HisStorySourceGen(ANYPAWN_gender==Female)->ihres Bestrebens, eine berühmte [PersonJobFemNom] zu werden</li>
     <li>HisStorySourceGen->[ANYPAWN_possessive]es Ringens mit sozialen Ängsten</li>
@@ -442,8 +445,8 @@
     <li>HisStorySourceGen(ANYPAWN_gender!=Female)->seiner früheren Abenteuer als Pirat</li>
     <li>HisStorySourceGen(ANYPAWN_gender==Female)->ihrer früheren Abenteuer als Piratin</li>
     <li>HisStorySourceGen->[ANYPAWN_possessive]es engen Verhältnisses zu einem Geheimbund</li>
-    <li>HisStorySourceGen(ANYPAWN_gender!=Female)->seiner Zeit als Nomade</li>
-    <li>HisStorySourceGen(ANYPAWN_gender==Female)->ihrer Zeit als Nomadin</li>
+    <li>HisStorySourceGen(ANYPAWN_gender!=Female)->von seiner Zeit als Nomade</li>
+    <li>HisStorySourceGen(ANYPAWN_gender==Female)->von ihrer Zeit als Nomadin</li>
     <li>HisStorySourceGen->[ANYPAWN_possessive]er Faszination für Zeitreisen</li>
     <li>HisStorySourceGen->[ANYPAWN_possessive]er Verbindung zu einem legendären Artefakt</li>
     <li>HisStorySourceDat->[ANYPAWN_possessive]en persönlichen Erfahrungen</li>
@@ -469,15 +472,15 @@
     <li>HisStorySourceDat(p=0.33)->[ANYPAWN_possessive]er riesigen [BodyPartFemDat]</li>
     <li>HisStorySourceDat(p=0.33)->[ANYPAWN_possessive]em riesigen [BodyPartNeuDat]</li>
     <li>HisStorySourceDat(p=0.5)->[ANYPAWN_possessive]en Erinnerungen an einen verlorenen Freund</li>
-    <li>HisStorySourceDat(p=0.5)->[ANYPAWN_possessive]en Erinnerungen an einer verlorenen Freundin</li>
+    <li>HisStorySourceDat(p=0.5)->[ANYPAWN_possessive]en Erinnerungen an eine verlorene Freundin</li>
     <li>HisStorySourceDat->[ANYPAWN_possessive]er Leidenschaft für Musik</li>
-    <li>HisStorySourceDat->[ANYPAWN_possessive]er Neugier auf antike Ruinen</li>
-    <li>HisStorySourceDat->[ANYPAWN_possessive]er Verbundenheit mit einem Familienerbstück</li>
+    <li>HisStorySourceDat->[ANYPAWN_possessive]er Neugier für antike Ruinen</li>
+    <li>HisStorySourceDat->[ANYPAWN_possessive]er Verbundenheit zu einem Familienerbstück</li>
     <li>HisStorySourceDat->[ANYPAWN_possessive]er Faszination für eine mysteriöse Gestalt</li>
-    <li>HisStorySourceDat->[ANYPAWN_possessive]en Bemühungen um den Erhalt einer vom Aussterben bedrohten Sprache</li>
+    <li>HisStorySourceDat->[ANYPAWN_possessive]en Bemühungen, eine vom Aussterben bedrohte Sprache zu erhalten</li>
     <li>HisStorySourceDat->[ANYPAWN_possessive]en Träumen, etwas Bahnbrechendes zu erfinden</li>
-    <li>HisStorySourceDat->[ANYPAWN_possessive]er Verbindung zu einer mythischen Kreatur</li>
-    <li>HisStorySourceDat->[ANYPAWN_possessive]er Vorliebe für eine bestimmte Landschaft</li>
+    <li>HisStorySourceDat->[ANYPAWN_possessive]er Verbindung zu ungewöhnlichen [AnimalsDat]</li>
+    <li>HisStorySourceDat->[ANYPAWN_possessive]er Vorliebe für [TerrainFeatures]</li>
     <li>HisStorySourceDat(ANYPAWN_gender!=Female)->seinem Bestreben, ein berühmter [PersonJob] zu werden</li>
     <li>HisStorySourceDat(ANYPAWN_gender==Female)->ihrem Bestreben, eine berühmte [PersonJobFemNom] zu werden</li>
     <li>HisStorySourceDat->[ANYPAWN_possessive]em Ringen mit sozialen Ängsten</li>
@@ -514,15 +517,15 @@
     <li>HisStorySourceAcc(p=0.33)->[ANYPAWN_possessive]e riesige [BodyPartFemAcc]</li>
     <li>HisStorySourceAcc(p=0.33)->[ANYPAWN_possessive] riesiges [BodyPartNeuAcc]</li>
     <li>HisStorySourceAcc(p=0.5)->[ANYPAWN_possessive]e Erinnerungen an einen verlorenen Freund</li>
-    <li>HisStorySourceAcc(p=0.5)->[ANYPAWN_possessive]e Erinnerungen an einer verlorenen Freundin</li>
+    <li>HisStorySourceAcc(p=0.5)->[ANYPAWN_possessive]e Erinnerungen an eine verlorene Freundin</li>
     <li>HisStorySourceAcc->[ANYPAWN_possessive]e Leidenschaft für Musik</li>
-    <li>HisStorySourceAcc->[ANYPAWN_possessive]e Neugier auf antike Ruinen</li>
-    <li>HisStorySourceAcc->[ANYPAWN_possessive]e Verbundenheit mit einem Familienerbstück</li>
+    <li>HisStorySourceAcc->[ANYPAWN_possessive]e Neugier für antike Ruinen</li>
+    <li>HisStorySourceAcc->[ANYPAWN_possessive]e Verbundenheit zu einem Familienerbstück</li>
     <li>HisStorySourceAcc->[ANYPAWN_possessive]e Faszination für eine mysteriöse Gestalt</li>
-    <li>HisStorySourceAcc->[ANYPAWN_possessive]e Bemühungen um den Erhalt einer vom Aussterben bedrohten Sprache</li>
+    <li>HisStorySourceAcc->[ANYPAWN_possessive]e Bemühungen, eine vom Aussterben bedrohte Sprache zu erhalten</li>
     <li>HisStorySourceAcc->[ANYPAWN_possessive]e Träume, etwas Bahnbrechendes zu erfinden</li>
-    <li>HisStorySourceAcc->[ANYPAWN_possessive]e Verbindung zu einer mythischen Kreatur</li>
-    <li>HisStorySourceAcc->[ANYPAWN_possessive]e Vorliebe für eine bestimmte Landschaft</li>
+    <li>HisStorySourceAcc->[ANYPAWN_possessive]e Verbindung zu ungewöhnlichen [AnimalsDat]</li>
+    <li>HisStorySourceAcc->[ANYPAWN_possessive]e Vorliebe für [TerrainFeatures]</li>
     <li>HisStorySourceAcc(ANYPAWN_gender!=Female)->sein Bestreben, ein berühmter [PersonJob] zu werden</li>
     <li>HisStorySourceAcc(ANYPAWN_gender==Female)->ihr Bestreben, eine berühmte [PersonJobFemNom] zu werden</li>
     <li>HisStorySourceAcc->[ANYPAWN_possessive] Ringen mit sozialen Ängsten</li>
@@ -547,54 +550,53 @@
     <li>writingQualityAdjective(quality==0)->zusammenhanglos</li>
     <li>writingQualitySentence(quality[greater_than]4)->Das Werk [excellentDesc] [excellentExtra]</li>
     <li>writingQualitySentence(quality[less_than]5,quality[greater_than]1)->Das Werk [decentDesc], [decentExtra]</li>
-    <li>writingQualitySentence(quality[less_than]2)->Das Werk [awfulDesc], [awfulExtra]</li>
+    <li>writingQualitySentence(quality[less_than]2)->Das Werk [awfulDesc] [awfulExtra]</li>
     <li>excellentDesc->ist eine herzzerreißende Geschichte voller Spannung</li>
     <li>excellentDesc->ist eine bedächtige Erkundung des menschlichen Geistes</li>
-    <li>excellentDesc->ist ein tiefgründiger Einblick in die Komplexität der Welt</li>
+    <li>excellentDesc->bietet einen tiefgründigen Einblick in die Komplexität der Welt</li>
     <li>excellentDesc->ist spannend geschrieben und reich an Emotionen</li>
     <li>excellentDesc->ist kreativ und originell</li>
     <li>excellentDesc->ist äußerst originell und bemerkenswert gut geschrieben</li>
     <li>excellentDesc->ist voller authentischem Humor</li>
-    <li>excellentExtra->. Jeder Handlungsstrang geht natürlich in den nächsten über</li>
+    <li>excellentExtra->. Jeder Handlungsstrang geht nahtlos in den nächsten über</li>
     <li>excellentExtra->. Es ist ein spannendes Werk, das man nur schwer aus der Hand legen kann</li>
     <li>excellentExtra->. Der Leser wird mindestens dreimal zum Staunen gebracht</li>
-    <li>excellentExtra->. Die Wendungen sind zwar überraschend, fühlen sich aber auch unausweichlich an</li>
+    <li>excellentExtra->. Die Wendungen der Handlung sind unvorhersehbar und dennoch unausweichlich</li>
     <li>excellentExtra->. Die Protagonisten wirken wie echte Menschen</li>
     <li>decentDesc->ist inhaltlich solide</li>
-    <li>decentDesc->ist interessant und fesselnd</li>
+    <li>decentDesc->ist grundsätzlich interessant und fesselnd</li>
     <li>decentDesc->basiert auf einer interessanten Idee</li>
-    <li>decentDesc->ist gelegentlich amüsant</li>
-    <li>decentDesc->ist an manchen Stellen fesselnd</li>
+    <li>decentDesc->ist stellenweise amüsant</li>
+    <li>decentDesc->ist stellenweise fesselnd</li>
     <li>decentDesc->ist originell und schrullig</li>
-    <li>decentDesc->richtet sich an einen bestimmten Lesertyp</li>
-    <li>decentExtra-> hat aber einige eklatante Handlungslücken</li>
-    <li>decentExtra-> aber oft schwer zu verstehen</li>
-    <li>decentExtra-> aber mit vielen Logikfehlern behaftet</li>
-    <li>decentExtra-> lässt aber tiefe Gefühle vermissen</li>
-    <li>decentExtra-> aber die Protagonisten sind trivial und cartoonhaft</li>
-    <li>decentExtra-> aber [the_author] verwendet ständig unpassende Wörter, um klug zu klingen</li>
-    <li>decentExtra-> aber die Welt ist unoriginell und langweilig</li>
-    <li>decentExtra-> aber der Schreibstil ist zu blumig</li>
-    <li>decentExtra-> aber viele Erzählstränge sind unnötig und bringen die Handlung nicht voran</li>
+    <li>decentDesc->richtet sich an einen bestimmten Leserkreis</li>
+    <li>decentExtra-> weist jedoch einige eklatante Handlungslücken auf</li>
+    <li>decentExtra-> jedoch oft schwer verständlich</li>
+    <li>decentExtra-> leidet jedoch unter zahlreichen Logikfehlern</li>
+    <li>decentExtra-> lässt jedoch tiefere Gefühle vermissen</li>
+    <li>decentExtra-> doch die Protagonisten sind trivial und wirken cartoonhaft</li>
+    <li>decentExtra-> allerdings verwendet {ANYPAWN_gender ? der Autor : die Autorin} ständig unpassende Wörter, um klug zu wirken</li>
+    <li>decentExtra-> doch die beschriebene Welt wirkt unoriginell und langweilig</li>
+    <li>decentExtra-> allerdings ist der Schreibstil etwas zu blumig</li>
+    <li>decentExtra-> enthält jedoch viele unnötige Erzählstränge, die die Handlung nicht vorantreiben</li>
     <li>awfulDesc->ist sehr schlecht geschrieben</li>
     <li>awfulDesc->ist eine Katastrophe</li>
-    <li>awfulDesc->ist schwer zu lesen</li>
     <li>awfulDesc->ist schwer zu verstehen</li>
     <li>awfulDesc->ist künstlerisch nicht sehr anspruchsvoll</li>
-    <li>awfulDesc->ist voll von Handlungslücken und generischen Charakteren</li>
-    <li>awfulDesc->handelt hauptsächlich von einer Figur, die [the_author] selbst ist</li>
-    <li>awfulDesc->ist bizarr sowie unoriginell</li>
-    <li>awfulDesc->ist viel, viel zu lang</li>
+    <li>awfulDesc->ist voller Handlungslücken und generischer Charaktere,</li>
+    <li>awfulDesc->ist vorherrschend von einer Figur geprägt, die {ANYPAWN_gender ? den Autor : die Autorin} selbst verkörpert,</li>
+    <li>awfulDesc->ist bizarr, unoriginell</li>
+    <li>awfulDesc->ist viel zu lang</li>
     <li>awfulExtra-> und der Schreibstil ist nahezu inkohärent</li>
-    <li>awfulExtra-> und ist extrem schwer zu lesen</li>
+    <li>awfulExtra-> und extrem schwer zu lesen</li>
     <li>awfulExtra-> und schafft es nicht, eine kohärente Handlung aufzubauen</li>
-    <li>awfulExtra-> dessen Thema und Bedeutung völlig unklar sind</li>
-    <li>awfulExtra-> und bietet überhaupt keine interessanten Ideen</li>
-    <li>awfulExtra-> und jede Figur ist langweilig</li>
-    <li>awfulExtra-> und es ist zu keiner Zeit erkennbar, wer der Protagonist ist</li>
+    <li>awfulExtra-> und hat weder ein erkennbares Thema noch eine tiefere Bedeutung</li>
+    <li>awfulExtra-> und bietet keinerlei interessante Ideen</li>
+    <li>awfulExtra-> und alle Figuren sind langweilig</li>
+    <li>awfulExtra-> und bis zum Schluss bleibt unklar, wer der Protagonist ist</li>
     <li>maybe_date-></li>
     <li>maybe_date->Das Werk wurde [date_form] veröffentlicht.</li>
-    <li>maybe_date->Die Erstfassung wurde [date_form] gedruckt.</li>
+    <li>maybe_date->Die Erstausgabe wurde [date_form] gedruckt.</li>
     <li>maybe_date->Das genaue Entstehungsdatum ist nicht bekannt.</li>
     <li>date_form->kürzlich</li>
     <li>date_form->vor vielen Jahrhunderten</li>
@@ -2633,7 +2635,7 @@
     <li>desc->[discussion].\n\n[anecdote]. [production].\n\n[quality_statement].</li>
     <li>discussion->[this_textbook] enthält [useful_information_about_subject][detail]</li>
     <li>discussion->[this_textbook] untermauert die Kompetenz [of_the_author] auf dem Gebiet [subject_with_of][detail]</li>
-    <li>discussion->[Those_seeking_knowledge_of_subject], sollte [this_famous_textbook] lesen[detail]</li>
+    <li>discussion->[Those_seeking_knowledge_of_subject], [head_to_this_notable_textbook][detail]</li>
     <li>discussion->[a_standardized_textbook] über [subject_with_the_acc][detail]</li>
     <li>discussion->Eine frühe Ausgabe über [subject_with_the_acc][detail]</li>
     <li>detail->. Die [precis_synonym] konzentriert sich auf die fachlichen Aspekte des Themas</li>
@@ -2773,24 +2775,8 @@
     <li>this_textbook_acc->dieses Handbuch</li>
     <li>this_textbook_acc->dieses Handelsbuch</li>
     <li>this_textbook_acc->dieses Werk</li>
-    <li>this_famous_textbook->diese [notable_adjective]e Fibel</li>
-    <li>this_famous_textbook->diese [notable_adjective]e Anleitung</li>
-    <li>this_famous_textbook->dieses [notable_adjective]e Lehrbuch</li>
-    <li>this_famous_textbook->dieses [notable_adjective]e Fachbuch</li>
-    <li>this_famous_textbook(p=6)->dieses [notable_adjective]e Buch</li>
-    <li>this_famous_textbook->dieses [notable_adjective]e Arbeitsheft</li>
-    <li>this_famous_textbook->dieses [notable_adjective]e Nachschlagewerk</li>
-    <li>this_famous_textbook->dieses [notable_adjective]e Kompendium</li>
-    <li>this_famous_textbook->diesen [notable_adjective]en Ratgeber</li>
-    <li>this_famous_textbook->diese [notable_adjective]e Broschüre</li>
-    <li>this_famous_textbook->diesen [notable_adjective]en Lehrplan</li>
-    <li>this_famous_textbook->dieses [notable_adjective]e Kursbuch</li>
-    <li>this_famous_textbook->dieses [notable_adjective]e Schulbuch</li>
-    <li>this_famous_textbook->diese [notable_adjective]e Enzyklopädie</li>
-    <li>this_famous_textbook->dieses [notable_adjective]e Lexikon</li>
-    <li>this_famous_textbook->dieses [notable_adjective]e Handbuch</li>
-    <li>this_famous_textbook->dieses [notable_adjective]e Handelsbuch</li>
-    <li>this_famous_textbook->dieses [notable_adjective]e Werk</li>
+    <li>this_notable_textbook_acc->{replace: [this_textbook_acc]; "diesen "-"diesen [notable_adjective]en "; "diese "-"diese [notable_adjective]e "; "dieses "-"dieses [notable_adjective]e "}</li>
+    <li>this_notable_textbook_dat->{replace: [this_textbook_dat]; "diesem "-"diesem [notable_adjective]en "; "dieser "-"dieser [notable_adjective]en "}</li>
     <li>a_standardized_textbook->eine genormte Fibel</li>
     <li>a_standardized_textbook->eine genormte Anleitung</li>
     <li>a_standardized_textbook->ein genormtes Lehrbuch</li>
@@ -2835,14 +2821,22 @@
     <li>useful_information_about_subject->praktische Anregungen [subject_with_to]</li>
     <li>useful_information_about_subject->hilfreiche Tipps über [subject_with_the_acc]</li>
     <li>useful_information_about_subject->informative Details über [subject_with_the_acc]</li>
-    <li>Those_seeking_knowledge_of_subject->Wer sich über [subject_with_the_acc] informieren möchte</li>
-    <li>Those_seeking_knowledge_of_subject->Wer sich zum Thema '[subject]' weiterbilden will</li>
-    <li>Those_seeking_knowledge_of_subject->Wer [subject_with_the_acc] verstehen will</li>
-    <li>Those_seeking_knowledge_of_subject->Wer ein Stipendium für [subject_with_the_acc] sucht</li>
-    <li>Those_seeking_knowledge_of_subject->Wer Bildung zum Thema '[subject]' sucht</li>
-    <li>Those_seeking_knowledge_of_subject->Wer Fachwissen über [subject_with_the_acc] sucht</li>
-    <!-- <li>Those_seeking_knowledge_of_subject->a philosophy of</li> -->
-    <!-- <li>Those_seeking_knowledge_of_subject->the ethics of</li> -->
+    <li>Those_seeking_knowledge_of_subject->[Those] sich über [subject_with_the_acc] informieren möchte</li>
+    <li>Those_seeking_knowledge_of_subject->[Those] sich zum Thema '[subject]' weiterbilden will</li>
+    <li>Those_seeking_knowledge_of_subject->[Those] [subject_with_the_acc] verstehen will</li>
+    <li>Those_seeking_knowledge_of_subject->[Those] ein Stipendium für [subject_with_the_acc] sucht</li>
+    <li>Those_seeking_knowledge_of_subject->[Those] Bildung zum Thema '[subject]' sucht</li>
+    <li>Those_seeking_knowledge_of_subject->[Those] Fachwissen über [subject_with_the_acc] sucht</li>
+    <li>Those_seeking_knowledge_of_subject->[Those] sich mit der Philosophie [subject_with_of] befassen möchte</li>
+    <li>Those_seeking_knowledge_of_subject->[Those] sich für die Ethik [subject_with_of] interessiert</li>
+    <li>head_to_this_notable_textbook->sollte [this_notable_textbook_acc] lesen</li>
+    <li>head_to_this_notable_textbook->sollte [this_notable_textbook_acc] studieren</li>
+    <li>head_to_this_notable_textbook->wird in [this_notable_textbook_dat] fündig</li>
+    <li>head_to_this_notable_textbook->greift zu [this_notable_textbook_dat]</li>
+    <li>head_to_this_notable_textbook->ist mit [this_notable_textbook_dat] gut beraten</li>
+    <li>head_to_this_notable_textbook->kommt an [this_notable_textbook_dat] nicht vorbei</li>
+    <li>Those->Wer</li>
+    <li>Those->Jeder, der</li>
     <li>notable_adjective->berühmt</li>
     <li>notable_adjective->obskur</li>
     <li>notable_adjective->ikonisch</li>
@@ -2874,7 +2868,7 @@
     <li>page_condition(quality[greater_than]4)->[page_excellent]</li>
     <li>page_condition(quality[less_than]5,quality[greater_than]1)->[page_decent]</li>
     <li>page_condition(quality[less_than]2)->[page_awful]</li>
-    <li>page_excellent->sind in einem erstaunlich guten Zustand, als ob sie nie berührt worden wären</li>
+    <li>page_excellent->sind in einem erstaunlich guten Zustand, als wären sie nie berührt worden</li>
     <li>page_excellent->sind in sehr gutem Zustand</li>
     <li>page_excellent->sind makellos</li>
     <li>page_excellent->sind hell und sauber</li>

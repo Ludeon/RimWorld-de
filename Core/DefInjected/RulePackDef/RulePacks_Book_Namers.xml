@@ -190,23 +190,21 @@
     <li>story->Whimsy</li>
   -->
   <Namer_Novel.rulePack.rulesStrings>
-    <li>title(p=3)->[titleNaked]</li>
+    <li>title(p=3)->[titleNakedArt]</li>
     <li>title->[ANYPAWN_label]'s [titleNaked]</li>
-    <li>title(p=0.5)->[story] des [CharacterMasGen]</li>
-    <li>title(p=0.5)->[story] der [CharacterFemGen]</li>
-    <li>title(p=0.1)->[story] des [CharacterNeuGen]</li>
-    <li>title(p=0.5)->[objectAny] des [CharacterMasGen]</li>
-    <li>title(p=0.5)->[objectAny] der [CharacterFemGen]</li>
-    <li>title(p=0.1)->[objectAny] des [CharacterNeuGen]</li>
-    <li>title(p=0.33)->[Character] [linkagePlaceMas] [placeMas]</li>
-    <li>title(p=0.33)->[Character] [linkagePlaceFem] [placeFem]</li>
-    <li>title(p=0.33)->[Character] [linkagePlaceNeu] [placeNeu]</li>
-    <li>title(p=0.5)->Der [adjective]e [CharacterMas]</li>
-    <li>title(p=0.5)->Die [adjective]e [CharacterFem]</li>
-    <li>title(p=0.1)->Das [adjective]e [CharacterNeu]</li>
-    <li>title(p=0.33)->Der [adjective]e [objectAnyMas]</li>
-    <li>title(p=0.33)->Die [adjective]e [objectAnyFem]</li>
-    <li>title(p=0.33)->Das [adjective]e [objectAnyNeu]</li>
+    <li>title(p=0.5)->{replace: [story_gender]; "|M|"-"Der "; "|F|"-"Die "; "|N|"-"Das "} {replace: [Character_gender_gen]; "|M|"-"[des] "; "|F|"-"[der] "; "|N|"-"[des] "}</li>
+    <li>title(p=0.5)->{replace: [story_gender]; "|M|"-"Der "; "|F|"-"Die "; "|N|"-"Das "} der [CharactersDef]</li>
+    <li>title(p=0.5)->{replace: [objectAny_gender]; "|M|"-"Der "; "|F|"-"Die "; "|N|"-"Das "} {replace: [Character_gender_gen]; "|M|"-"[des] "; "|F|"-"[der] "; "|N|"-"[des] "}</li>
+    <li>title(p=0.5)->Die [objectsAny] der [CharactersDef]</li>
+    <li>title(p=0.01)->Das [Game]spiel der [CharactersDef]</li>
+    <li>title(p=0.5)->{replace: [Character_gender_nom_def]; "|M|"-"Der "; "|F|"-"Die "; "|N|"-"Das "} und {replace: [objectAny_gender]; "|M|"-"der "; "|F|"-"die "; "|N|"-"das "}</li>
+    <li>title(p=0.5)->{replace: [objectAny_gender]; "|M|"-"Der "; "|F|"-"Die "; "|N|"-"Das "} und {replace: [Character_gender_nom_def]; "|M|"-"der "; "|F|"-"die "; "|N|"-"das "}</li>
+    <li>title(p=0.5)->{replace: [Character_gender_nom_def]; "|M|"-"Der "; "|F|"-"Die "; "|N|"-"Das "} {replace: [place_gender_dat]; "|M|"-"im "; "|F|"-"in der "; "|N|"-"im "}</li>
+    <li>title(p=0.5)->{replace: [Character_gender_nom_def]; "|M|"-"Der "; "|F|"-"Die "; "|N|"-"Das "} {replace: [place_gender_dat]; "|M|"-"am "; "|F|"-"an der "; "|N|"-"am "}</li>
+    <li>title(p=0.5)->{replace: [Character_gender_nom_def]; "|M|"-"Der [adjective]e "; "|F|"-"Die [adjective]e "; "|N|"-"Das [adjective]e "}</li>
+    <li>title(p=0.5)->Die [adjective]en [CharactersDef]</li>
+    <li>title(p=0.5)->{replace: [objectAny_gender]; "|M|"-"Der [adjective]e "; "|F|"-"Die [adjective]e "; "|N|"-"Das [adjective]e "}</li>
+    <li>title(p=0.5)->Die [adjective]en [objectsAny]</li>
     <li>titleNaked->[ConceptAny]</li>
     <li>titleNaked(p=0.33)->[adjective]er [ConceptAnyMas]</li>
     <li>titleNaked(p=0.33)->[adjective]e [ConceptAnyFem]</li>
@@ -215,111 +213,227 @@
     <li>titleNaked(p=0.33)->[ConceptAny] der [ConceptAnyFemGen]</li>
     <li>titleNaked(p=0.33)->[ConceptAny] des [ConceptAnyNeuGen]</li>
     <li>titleNaked->[ConceptAny] [linkage] [ConceptAny]</li>
-    <li>titleNaked(p=0.33)->[ConceptAny] [linkagePlaceMas] [placeMas]</li>
-    <li>titleNaked(p=0.33)->[ConceptAny] [linkagePlaceFem] [placeFem]</li>
-    <li>titleNaked(p=0.33)->[ConceptAny] [linkagePlaceNeu] [placeNeu]</li>
-    <li>titleNaked->[objectAny] [linkage] [ConceptAny]</li>
+    <li>titleNaked(p=0.5)->[ConceptAny] {replace: [place_gender_dat]; "|M|"-"im "; "|F|"-"in der "; "|N|"-"im "}</li>
+    <li>titleNaked(p=0.5)->[ConceptAny] {replace: [place_gender_dat]; "|M|"-"am "; "|F|"-"an der "; "|N|"-"am "}</li>
+    <li>titleNaked(p=0.17)->[objectAny] des [ConceptAnyMasGen]</li>
+    <li>titleNaked(p=0.17)->[objectAny] der [ConceptAnyFemGen]</li>
+    <li>titleNaked(p=0.17)->[objectAny] des [ConceptAnyNeuGen]</li>
+    <li>titleNaked(p=0.17)->[objectsAny] des [ConceptAnyMasGen]</li>
+    <li>titleNaked(p=0.17)->[objectsAny] der [ConceptAnyFemGen]</li>
+    <li>titleNaked(p=0.17)->[objectsAny] des [ConceptAnyNeuGen]</li>
+    <li>titleNakedArt(p=0.33)->Der [ConceptAnyMas]</li>
+    <li>titleNakedArt(p=0.33)->Die [ConceptAnyFem]</li>
+    <li>titleNakedArt(p=0.33)->Das [ConceptAnyNeu]</li>
+    <li>titleNakedArt(p=0.33)->Der [adjective]e [ConceptAnyMas]</li>
+    <li>titleNakedArt(p=0.33)->Die [adjective]e [ConceptAnyFem]</li>
+    <li>titleNakedArt(p=0.33)->Das [adjective]e [ConceptAnyNeu]</li>
+    <li>titleNakedArt(p=0.11)->Der [ConceptAnyMas] des [ConceptAnyMasGen]</li>
+    <li>titleNakedArt(p=0.11)->Der [ConceptAnyMas] der [ConceptAnyFemGen]</li>
+    <li>titleNakedArt(p=0.11)->Der [ConceptAnyMas] des [ConceptAnyNeuGen]</li>
+    <li>titleNakedArt(p=0.11)->Die [ConceptAnyFem] des [ConceptAnyMasGen]</li>
+    <li>titleNakedArt(p=0.11)->Die [ConceptAnyFem] der [ConceptAnyFemGen]</li>
+    <li>titleNakedArt(p=0.11)->Die [ConceptAnyFem] des [ConceptAnyNeuGen]</li>
+    <li>titleNakedArt(p=0.11)->Das [ConceptAnyNeu] des [ConceptAnyMasGen]</li>
+    <li>titleNakedArt(p=0.11)->Das [ConceptAnyNeu] der [ConceptAnyFemGen]</li>
+    <li>titleNakedArt(p=0.11)->Das [ConceptAnyNeu] des [ConceptAnyNeuGen]</li>
+    <li>titleNakedArt(p=0.33)->Der [ConceptAnyMas] [linkage] [ConceptAny]</li>
+    <li>titleNakedArt(p=0.33)->Die [ConceptAnyFem] [linkage] [ConceptAny]</li>
+    <li>titleNakedArt(p=0.33)->Das [ConceptAnyNeu] [linkage] [ConceptAny]</li>
+    <li>titleNakedArt(p=0.17)->Der [ConceptAnyMas] {replace: [place_gender_dat]; "|M|"-"im "; "|F|"-"in der "; "|N|"-"im "}</li>
+    <li>titleNakedArt(p=0.17)->Die [ConceptAnyFem] {replace: [place_gender_dat]; "|M|"-"im "; "|F|"-"in der "; "|N|"-"im "}</li>
+    <li>titleNakedArt(p=0.17)->Das [ConceptAnyNeu] {replace: [place_gender_dat]; "|M|"-"im "; "|F|"-"in der "; "|N|"-"im "}</li>
+    <li>titleNakedArt(p=0.17)->Der [ConceptAnyMas] {replace: [place_gender_dat]; "|M|"-"am "; "|F|"-"an der "; "|N|"-"am "}</li>
+    <li>titleNakedArt(p=0.17)->Die [ConceptAnyFem] {replace: [place_gender_dat]; "|M|"-"am "; "|F|"-"an der "; "|N|"-"am "}</li>
+    <li>titleNakedArt(p=0.17)->Das [ConceptAnyNeu] {replace: [place_gender_dat]; "|M|"-"am "; "|F|"-"an der "; "|N|"-"am "}</li>
+    <li>titleNakedArt(p=0.17)->{replace: [objectAny_gender]; "|M|"-"Der "; "|F|"-"Die "; "|N|"-"Das "} des [ConceptAnyMasGen]</li>
+    <li>titleNakedArt(p=0.17)->{replace: [objectAny_gender]; "|M|"-"Der "; "|F|"-"Die "; "|N|"-"Das "} der [ConceptAnyFemGen]</li>
+    <li>titleNakedArt(p=0.17)->{replace: [objectAny_gender]; "|M|"-"Der "; "|F|"-"Die "; "|N|"-"Das "} des [ConceptAnyNeuGen]</li>
+    <li>titleNakedArt(p=0.17)->Die [objectsAny] des [ConceptAnyMasGen]</li>
+    <li>titleNakedArt(p=0.17)->Die [objectsAny] der [ConceptAnyFemGen]</li>
+    <li>titleNakedArt(p=0.17)->Die [objectsAny] des [ConceptAnyNeuGen]</li>
     <li>objectAny->[Game]</li>
     <li>objectAny->[Weapon]</li>
-    <li>objectAnyMas->[WeaponMas]</li>
-    <li>objectAnyFem->[WeaponFem]</li>
-    <li>objectAnyNeu->[Game]</li>
-    <li>objectAnyNeu->[WeaponNeu]</li>
-    <li>linkage->durch</li>
-    <li>linkage->für</li>
+    <li>objectAny->[Vegetable]</li>
+    <li>objectAny->[TreeType]</li>
+    <li>objectsAny->[Weapons]</li>
+    <li>objectsAny->[Vegetables]</li>
+    <li>objectsAny->[TreeTypes]</li>
+    <li>objectAny_gender(p=0.3)->|M|[WeaponMas]</li>
+    <li>objectAny_gender(p=0.5)->|F|[WeaponFem]</li>
+    <li>objectAny_gender(p=0.2)->|N|[WeaponNeu]</li>
+    <li>objectAny_gender(p=0.3)->|M|[VegetableMas]</li>
+    <li>objectAny_gender(p=0.7)->|F|[VegetableFem]</li>
+    <li>objectAny_gender(p=0.3)->|M|[TreeTypeMasNom]</li>
+    <li>objectAny_gender(p=0.7)->|F|[TreeTypeFemNom]</li>
+    <li>linkage(p=3)->durch</li>
     <li>linkage->ohne</li>
-    <li>linkage->mit</li>
-    <li>linkagePlaceMas->im</li>
-    <li>linkagePlaceFem->in der</li>
-    <li>linkagePlaceNeu->im</li>
-    <li>linkagePlaceMas->am</li>
-    <li>linkagePlaceFem->an der</li>
-    <li>linkagePlaceNeu->am</li>
     <li>adjective->[AdjectiveAny]</li>
-    <li>placeMas(p=25)->[TerrainFeatureMasDat]</li>
-    <li>placeMas->Abgrund</li>
-    <li>placeMas->Aquädukt</li>
-    <li>placeMas->Außenposten</li>
-    <li>placeMas->Berg</li>
-    <li>placeMas->Bunker</li>
-    <li>placeMas->Dschungel</li>
-    <li>placeMas->Fahrstuhl</li>
-    <li>placeMas->Friedhof</li>
-    <li>placeMas->Graben</li>
-    <li>placeMas->Hafen</li>
-    <li>placeMas->Hain</li>
-    <li>placeMas->Kirchturm</li>
-    <li>placeMas->Leuchtturm</li>
-    <li>placeMas->Marktplatz</li>
-    <li>placeMas->Nexus</li>
-    <li>placeMas->Obstgarten</li>
-    <li>placeMas->Palast</li>
-    <li>placeMas->Raumhafen</li>
-    <li>placeMas->Sumpf</li>
-    <li>placeMas->Tempel</li>
-    <li>placeMas->Vulkan</li>
-    <li>placeMas->Zoo</li>
-    <li>placeFem(p=25)->[TerrainFeatureFemDat]</li>
-    <li>placeFem->Arena</li>
-    <li>placeFem->Barracken</li>
-    <li>placeFem->Basis</li>
-    <li>placeFem->Bibliothek</li>
-    <li>placeFem->Burg</li>
-    <li>placeFem->Fabrik</li>
-    <li>placeFem->Festung</li>
-    <li>placeFem->Hochebene</li>
-    <li>placeFem->Höhle</li>
-    <li>placeFem->Hütte</li>
-    <li>placeFem->Insel</li>
-    <li>placeFem->Kathedrale</li>
-    <li>placeFem->Kolonie</li>
-    <li>placeFem->Lichtung</li>
-    <li>placeFem->Mine</li>
-    <li>placeFem->Oase</li>
-    <li>placeFem->Raffinerie</li>
-    <li>placeFem->Raumstation</li>
-    <li>placeFem->Ruinen</li>
-    <li>placeFem->Schule</li>
-    <li>placeFem->Seele</li>
-    <li>placeFem->Siedlung</li>
-    <li>placeFem->Stadt</li>
-    <li>placeFem->Startrampe</li>
-    <li>placeFem->Sternwarte</li>
-    <li>placeFem->Taverne</li>
-    <li>placeFem->Tiefen</li>
-    <li>placeFem->Tundra</li>
-    <li>placeFem->Universität</li>
-    <li>placeFem->Villa</li>
-    <li>placeFem->Wildnis</li>
-    <li>placeFem->Wüste</li>
-    <li>placeFem->Zitadelle</li>
-    <li>placeFem->Zuflucht</li>
-    <li>placeNeu(p=25)->[TerrainFeatureNeuDat]</li>
-    <li>placeNeu->Amphitheater</li>
-    <li>placeNeu->Anwesen</li>
-    <li>placeNeu->Aquarium</li>
-    <li>placeNeu->Arbeitslager</li>
-    <li>placeNeu->Dorf</li>
-    <li>placeNeu->Fest</li>
-    <li>placeNeu->Gefängnis</li>
-    <li>placeNeu->Gewächshaus</li>
-    <li>placeNeu->Heiligtum</li>
-    <li>placeNeu->Herrenhaus</li>
-    <li>placeNeu->Herz</li>
-    <li>placeNeu->Irrenhaus</li>
-    <li>placeNeu->Kloster</li>
-    <li>placeNeu->Kolosseum</li>
-    <li>placeNeu->Krankenhaus</li>
-    <li>placeNeu->Labor</li>
-    <li>placeNeu->Labyrinth</li>
-    <li>placeNeu->Lager</li>
-    <li>placeNeu->Lagerhaus</li>
-    <li>placeNeu->Observatorium</li>
-    <li>placeNeu->Ödland</li>
-    <li>placeNeu->Sanktuarium</li>
-    <li>placeNeu->Schiff</li>
-    <li>placeNeu->Schloss</li>
-    <li>placeNeu->Zentrum</li>
+    <li>place(p=25)->[TerrainFeature]</li>
+    <li>place->Abgrund</li>
+    <li>place->Amphitheater</li>
+    <li>place->Aquarium</li>
+    <li>place->Aquädukt</li>
+    <li>place->Arena</li>
+    <li>place->Irrenhaus</li>
+    <li>place->Barracken</li>
+    <li>place->Basis</li>
+    <li>place->Bunker</li>
+    <li>place->Hütte</li>
+    <li>place->Lager</li>
+    <li>place->Burg</li>
+    <li>place->Schloss</li>
+    <li>place->Kathedrale</li>
+    <li>place->Höhle</li>
+    <li>place->Zitadelle</li>
+    <li>place->Stadt</li>
+    <li>place->Kolosseum</li>
+    <li>place->Kolonie</li>
+    <li>place->Tiefen</li>
+    <li>place->Wüste</li>
+    <li>place->Fahrstuhl</li>
+    <li>place->Fabrik</li>
+    <li>place->Fest</li>
+    <li>place->Festung</li>
+    <li>place->Lichtung</li>
+    <li>place->Friedhof</li>
+    <li>place->Gewächshaus</li>
+    <li>place->Hain</li>
+    <li>place->Hafen</li>
+    <li>place->Herz</li>
+    <li>place->Krankenhaus</li>
+    <li>place->Insel</li>
+    <li>place->Dschungel</li>
+    <li>place->Arbeitslager</li>
+    <li>place->Labor</li>
+    <li>place->Labyrinth</li>
+    <li>place->Startrampe</li>
+    <li>place->Bibliothek</li>
+    <li>place->Leuchtturm</li>
+    <li>place->Anwesen</li>
+    <li>place->Villa</li>
+    <li>place->Herrenhaus</li>
+    <li>place->Marktplatz</li>
+    <li>place->Mine</li>
+    <li>place->Kloster</li>
+    <li>place->Berg</li>
+    <li>place->Nexus</li>
+    <li>place->Zentrum</li>
+    <li>place->Oase</li>
+    <li>place->Observatorium</li>
+    <li>place->Sternwarte</li>
+    <li>place->Obstgarten</li>
+    <li>place->Außenposten</li>
+    <li>place->Palast</li>
+    <li>place->Hochebene</li>
+    <li>place->Gefängnis</li>
+    <li>place->Raffinerie</li>
+    <li>place->Graben</li>
+    <li>place->Ruinen</li>
+    <li>place->Zuflucht</li>
+    <li>place->Sanktuarium</li>
+    <li>place->Heiligtum</li>
+    <li>place->Schule</li>
+    <li>place->Siedlung</li>
+    <li>place->Schiff</li>
+    <li>place->Seele</li>
+    <li>place->Raumstation</li>
+    <li>place->Raumhafen</li>
+    <li>place->Kirchturm</li>
+    <li>place->Sumpf</li>
+    <li>place->Taverne</li>
+    <li>place->Tempel</li>
+    <li>place->Tundra</li>
+    <li>place->Universität</li>
+    <li>place->Dorf</li>
+    <li>place->Vulkan</li>
+    <li>place->Lagerhaus</li>
+    <li>place->Ödland</li>
+    <li>place->Wildnis</li>
+    <li>place->Zoo</li>
+    <li>place_gender_dat(p=25)->|M|[TerrainFeatureMasDat]</li>
+    <li>place_gender_dat(p=25)->|F|[TerrainFeatureFemDat]</li>
+    <li>place_gender_dat(p=25)->|N|[TerrainFeatureNeuDat]</li>
+    <li>place_gender_dat->|M|Abgrund</li>
+    <li>place_gender_dat->|N|Amphitheater</li>
+    <li>place_gender_dat->|N|Aquarium</li>
+    <li>place_gender_dat->|M|Aquädukt</li>
+    <li>place_gender_dat->|F|Arena</li>
+    <li>place_gender_dat->|N|Irrenhaus</li>
+    <li>place_gender_dat->|F|Barracken</li>
+    <li>place_gender_dat->|F|Basis</li>
+    <li>place_gender_dat->|M|Bunker</li>
+    <li>place_gender_dat->|F|Hütte</li>
+    <li>place_gender_dat->|N|Lager</li>
+    <li>place_gender_dat->|F|Burg</li>
+    <li>place_gender_dat->|N|Schloss</li>
+    <li>place_gender_dat->|F|Kathedrale</li>
+    <li>place_gender_dat->|F|Höhle</li>
+    <li>place_gender_dat->|F|Zitadelle</li>
+    <li>place_gender_dat->|F|Stadt</li>
+    <li>place_gender_dat->|N|Kolosseum</li>
+    <li>place_gender_dat->|F|Kolonie</li>
+    <li>place_gender_dat->|F|Tiefen</li>
+    <li>place_gender_dat->|F|Wüste</li>
+    <li>place_gender_dat->|M|Fahrstuhl</li>
+    <li>place_gender_dat->|F|Fabrik</li>
+    <li>place_gender_dat->|N|Fest</li>
+    <li>place_gender_dat->|F|Festung</li>
+    <li>place_gender_dat->|F|Lichtung</li>
+    <li>place_gender_dat->|M|Friedhof</li>
+    <li>place_gender_dat->|N|Gewächshaus</li>
+    <li>place_gender_dat->|M|Hain</li>
+    <li>place_gender_dat->|M|Hafen</li>
+    <li>place_gender_dat->|N|Herz</li>
+    <li>place_gender_dat->|N|Krankenhaus</li>
+    <li>place_gender_dat->|F|Insel</li>
+    <li>place_gender_dat->|M|Dschungel</li>
+    <li>place_gender_dat->|N|Arbeitslager</li>
+    <li>place_gender_dat->|N|Labor</li>
+    <li>place_gender_dat->|N|Labyrinth</li>
+    <li>place_gender_dat->|F|Startrampe</li>
+    <li>place_gender_dat->|F|Bibliothek</li>
+    <li>place_gender_dat->|M|Leuchtturm</li>
+    <li>place_gender_dat->|N|Anwesen</li>
+    <li>place_gender_dat->|F|Villa</li>
+    <li>place_gender_dat->|N|Herrenhaus</li>
+    <li>place_gender_dat->|M|Marktplatz</li>
+    <li>place_gender_dat->|F|Mine</li>
+    <li>place_gender_dat->|N|Kloster</li>
+    <li>place_gender_dat->|M|Berg</li>
+    <li>place_gender_dat->|M|Nexus</li>
+    <li>place_gender_dat->|N|Zentrum</li>
+    <li>place_gender_dat->|F|Oase</li>
+    <li>place_gender_dat->|N|Observatorium</li>
+    <li>place_gender_dat->|F|Sternwarte</li>
+    <li>place_gender_dat->|M|Obstgarten</li>
+    <li>place_gender_dat->|M|Außenposten</li>
+    <li>place_gender_dat->|M|Palast</li>
+    <li>place_gender_dat->|F|Hochebene</li>
+    <li>place_gender_dat->|N|Gefängnis</li>
+    <li>place_gender_dat->|F|Raffinerie</li>
+    <li>place_gender_dat->|M|Graben</li>
+    <li>place_gender_dat->|F|Ruinen</li>
+    <li>place_gender_dat->|F|Zuflucht</li>
+    <li>place_gender_dat->|N|Sanktuarium</li>
+    <li>place_gender_dat->|N|Heiligtum</li>
+    <li>place_gender_dat->|F|Schule</li>
+    <li>place_gender_dat->|F|Siedlung</li>
+    <li>place_gender_dat->|N|Schiff</li>
+    <li>place_gender_dat->|F|Seele</li>
+    <li>place_gender_dat->|F|Raumstation</li>
+    <li>place_gender_dat->|M|Raumhafen</li>
+    <li>place_gender_dat->|M|Kirchturm</li>
+    <li>place_gender_dat->|M|Sumpf</li>
+    <li>place_gender_dat->|F|Taverne</li>
+    <li>place_gender_dat->|M|Tempel</li>
+    <li>place_gender_dat->|F|Tundra</li>
+    <li>place_gender_dat->|F|Universität</li>
+    <li>place_gender_dat->|N|Dorf</li>
+    <li>place_gender_dat->|M|Vulkan</li>
+    <li>place_gender_dat->|N|Lagerhaus</li>
+    <li>place_gender_dat->|N|Ödland</li>
+    <li>place_gender_dat->|F|Wildnis</li>
+    <li>place_gender_dat->|M|Zoo</li>
     <li>story->Abenteuer</li>
     <li>story->Erlebnisse</li>
     <li>story->Allegorie</li>
@@ -406,6 +520,124 @@
     <li>story->Gedicht</li>
     <li>story->Band</li>
     <li>story->Laune</li>
+    <li>story_gender->|N|Abenteuer</li>
+    <li>story_gender->|F|Erlebnisse</li>
+    <li>story_gender->|F|Allegorie</li>
+    <li>story_gender->|F|Anekdote</li>
+    <li>story_gender->|F|Annalen</li>
+    <li>story_gender->|F|Ballade</li>
+    <li>story_gender->|F|Biografie</li>
+    <li>story_gender->|N|Kapitel</li>
+    <li>story_gender->|F|Chronik</li>
+    <li>story_gender->|F|Chroniken</li>
+    <li>story_gender->|F|Chronologie</li>
+    <li>story_gender->|F|Komödie</li>
+    <li>story_gender->|N|Kompendium</li>
+    <li>story_gender->|F|Sammlung</li>
+    <li>story_gender->|F|Dialoge</li>
+    <li>story_gender->|N|Tagebuch</li>
+    <li>story_gender->|M|Diskurs</li>
+    <li>story_gender->|N|Drama</li>
+    <li>story_gender->|M|Traum</li>
+    <li>story_gender->|N|Rätsel</li>
+    <li>story_gender->|N|Epos</li>
+    <li>story_gender->|F|Epiphanie</li>
+    <li>story_gender->|F|Offenbarung</li>
+    <li>story_gender->|F|Epistel</li>
+    <li>story_gender->|F|Fabel</li>
+    <li>story_gender->|F|Fabeln</li>
+    <li>story_gender->|N|Märchen</li>
+    <li>story_gender->|F|Fantasia</li>
+    <li>story_gender->|F|Fantasie</li>
+    <li>story_gender->|F|Fiktion</li>
+    <li>story_gender->|F|Überlieferung</li>
+    <li>story_gender->|F|Historie</li>
+    <li>story_gender->|F|Einbildungen</li>
+    <li>story_gender->|M|Einblick</li>
+    <li>story_gender->|F|Notizen</li>
+    <li>story_gender->|N|Journal</li>
+    <li>story_gender->|F|Reise</li>
+    <li>story_gender->|N|Vermächtnis</li>
+    <li>story_gender->|N|Erbe</li>
+    <li>story_gender->|F|Legende</li>
+    <li>story_gender->|F|Legenden</li>
+    <li>story_gender->|F|Literatur</li>
+    <li>story_gender->|N|Protokoll</li>
+    <li>story_gender->|F|Memoiren</li>
+    <li>story_gender->|N|Andenken</li>
+    <li>story_gender->|F|Erinnerungen</li>
+    <li>story_gender->|F|Meinung</li>
+    <li>story_gender->|N|Musical</li>
+    <li>story_gender->|F|Träumereien</li>
+    <li>story_gender->|F|Mythen</li>
+    <li>story_gender->|F|Mythologie</li>
+    <li>story_gender->|M|Mythos</li>
+    <li>story_gender->|F|Erzählung</li>
+    <li>story_gender->|M|Bericht</li>
+    <li>story_gender->|M|Roman</li>
+    <li>story_gender->|F|Beobachtungen</li>
+    <li>story_gender->|F|Ode</li>
+    <li>story_gender->|F|Seiten</li>
+    <li>story_gender->|F|Papiere</li>
+    <li>story_gender->|F|Parabel</li>
+    <li>story_gender->|F|Prosa</li>
+    <li>story_gender->|F|Rückblicke</li>
+    <li>story_gender->|F|Nacherzählung</li>
+    <li>story_gender->|F|Überlegung</li>
+    <li>story_gender->|F|Überlegungen</li>
+    <li>story_gender->|F|Reminiszenzen</li>
+    <li>story_gender->|F|Enthüllung</li>
+    <li>story_gender->|F|Rhapsodie</li>
+    <li>story_gender->|F|Saga</li>
+    <li>story_gender->|F|Sage</li>
+    <li>story_gender->|F|Kritzeleien</li>
+    <li>story_gender->|N|Skript</li>
+    <li>story_gender->|N|Manuskript</li>
+    <li>story_gender->|F|Skizze</li>
+    <li>story_gender->|F|Skizzen</li>
+    <li>story_gender->|F|Geschichte</li>
+    <li>story_gender->|F|Geschichten</li>
+    <li>story_gender->|N|Testament</li>
+    <li>story_gender->|N|Zeugnis</li>
+    <li>story_gender->|F|Tragödie</li>
+    <li>story_gender->|M|Tribut</li>
+    <li>story_gender->|F|Verse</li>
+    <li>story_gender->|F|Strophe</li>
+    <li>story_gender->|N|Gedicht</li>
+    <li>story_gender->|M|Band</li>
+    <li>story_gender->|F|Laune</li>
+    <li>CharactersDef->[PersonBadassesDef]</li>
+    <li>CharactersDef->[PersonFamiliesDef]</li>
+    <li>CharactersDef->[PersonAlliesDef]</li>
+    <li>CharactersDef->[AnimalBadassesDef]</li>
+    <li>Character_gender_nom_def(p=2)->|M|[CharacterMasNomDef]</li>
+    <li>Character_gender_nom_def(p=2)->|F|[CharacterFemNomDef]</li>
+    <li>Character_gender_nom_def(p=0.4)->|N|[CharacterNeuNomDef]</li>
+    <li>Character_gender_nom_def(p=0.5)->|M|[PersonBadassMasNomDef]</li>
+    <li>Character_gender_nom_def(p=0.5)->|F|[PersonBadassFemNomDef]</li>
+    <li>Character_gender_nom_def(p=0.5)->|M|[PersonFamilyMasNomDef]</li>
+    <li>Character_gender_nom_def(p=0.5)->|F|[PersonFamilyFemNomDef]</li>
+    <li>Character_gender_nom_def(p=0.5)->|M|[PersonAllyMasNomDef]</li>
+    <li>Character_gender_nom_def(p=0.5)->|F|[PersonAllyFemNomDef]</li>
+    <li>Character_gender_nom_def(p=0.5)->|M|[AnimalBadassMasNomDef]</li>
+    <li>Character_gender_nom_def(p=0.3)->|F|[AnimalBadassFemNomDef]</li>
+    <li>Character_gender_nom_def(p=0.2)->|N|[AnimalBadassNeuNomDef]</li>
+    <li>Character_gender_gen(p=2)->|M|[CharacterMasGen]</li>
+    <li>Character_gender_gen(p=2)->|F|[CharacterFemGen]</li>
+    <li>Character_gender_gen(p=0.4)->|N|[CharacterNeuGen]</li>
+    <li>Character_gender_gen(p=0.5)->|M|[PersonBadassMasGen]</li>
+    <li>Character_gender_gen(p=0.5)->|F|[PersonBadassFemGen]</li>
+    <li>Character_gender_gen(p=0.5)->|M|[PersonFamilyMasGen]</li>
+    <li>Character_gender_gen(p=0.5)->|F|[PersonFamilyFemGen]</li>
+    <li>Character_gender_gen(p=0.5)->|M|[PersonAllyMasGen]</li>
+    <li>Character_gender_gen(p=0.5)->|F|[PersonAllyFemGen]</li>
+    <li>Character_gender_gen(p=0.5)->|M|[AnimalBadassMasGen]</li>
+    <li>Character_gender_gen(p=0.3)->|F|[AnimalBadassFemGen]</li>
+    <li>Character_gender_gen(p=0.2)->|N|[AnimalBadassNeuGen]</li>
+    <li>des->des</li>
+    <li>des->eines</li>
+    <li>der->der</li>
+    <li>der->einer</li>
   </Namer_Novel.rulePack.rulesStrings>
   
   <!-- EN:
