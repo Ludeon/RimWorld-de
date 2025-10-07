@@ -52,21 +52,17 @@
     <li>terrain_word(p=2)->Plateau</li>
     <li>terrain_word->Einöde</li>
     <li>terrain_word->Ödland</li>
-    <li>terrain_word_low(p=4)->strauchland</li>
-    <li>terrain_word_low(p=4)->buschland</li>
     <li>terrain_word_low(p=2)->plateau</li>
     <li>terrain_word_low->einöde</li>
-    <li>terrain_word_low->ödland</li>
+    <li>terrain_word_low->ödnis</li>
     <li>terrain_word_gender(p=4)->|N|Strauchland</li>
     <li>terrain_word_gender(p=4)->|N|Buschland</li>
     <li>terrain_word_gender(p=2)->|N|Plateau</li>
     <li>terrain_word_gender->|F|Einöde</li>
     <li>terrain_word_gender->|N|Ödland</li>
-    <li>terrain_word_gender_low(p=4)->|N|strauchland</li>
-    <li>terrain_word_gender_low(p=4)->|N|buschland</li>
     <li>terrain_word_gender_low(p=2)->|N|plateau</li>
     <li>terrain_word_gender_low->|F|einöde</li>
-    <li>terrain_word_gender_low->|N|ödland</li>
+    <li>terrain_word_gender_low->|F|ödnis</li>
   </NamerAridShrubland.rulePack.rulesStrings>
   
   <!-- EN:
@@ -84,14 +80,12 @@
     <li>terrain_word->Golf</li>
     <li>terrain_word->Ankerplatz</li>
     <li>terrain_word_low(p=6)->bucht</li>
-    <li>terrain_word_low->meerbusen</li>
     <li>terrain_word_low->golf</li>
     <li>terrain_word_gender(p=6)->|F|Bucht</li>
     <li>terrain_word_gender->|M|Meerbusen</li>
     <li>terrain_word_gender->|M|Golf</li>
     <li>terrain_word_gender->|M|Ankerplatz</li>
     <li>terrain_word_gender_low(p=6)->|F|bucht</li>
-    <li>terrain_word_gender_low->|M|meerbusen</li>
     <li>terrain_word_gender_low->|M|golf</li>
   </NamerBay.rulePack.rulesStrings>
   
@@ -111,9 +105,7 @@
     <li>terrain_word->Wälder</li>
     <li>terrain_word->Wald</li>
     <li>terrain_word->Dickicht</li>
-    <li>terrain_word_low(p=6)->nadelwald</li>
     <li>terrain_word_low->hain</li>
-    <li>terrain_word_low->waldland</li>
     <li>terrain_word_low->wälder</li>
     <li>terrain_word_low->wald</li>
     <li>terrain_word_low->dickicht</li>
@@ -123,9 +115,7 @@
     <li>terrain_word_gender->|F|Wälder</li>
     <li>terrain_word_gender->|M|Wald</li>
     <li>terrain_word_gender->|N|Dickicht</li>
-    <li>terrain_word_gender_low(p=6)->|M|nadelwald</li>
     <li>terrain_word_gender_low->|M|hain</li>
-    <li>terrain_word_gender_low->|N|waldland</li>
     <li>terrain_word_gender_low->|F|wälder</li>
     <li>terrain_word_gender_low->|M|wald</li>
     <li>terrain_word_gender_low->|N|dickicht</li>
@@ -158,15 +148,15 @@
   <NamerDesert.rulePack.rulesStrings>
     <li>r_name(p=0.4)->[narrative_with_biom_adj]</li>
     <li>desert_adjective->flach</li>
-    <li>desert_adjective->weiß</li>
+    <li>desert_adjective->hell</li>
     <li>desert_adjective->endlos</li>
     <li>desert_adjective->trostlos</li>
     <li>desert_adjective->trocken</li>
-    <li>desert_adjective->groß</li>
+    <li>desert_adjective->ewig</li>
     <li>desert_adjective->sonnig</li>
     <li>desert_adjective->grell</li>
     <li>desert_adjective->heiß</li>
-    <li>desert_adjective->schweißtreibend</li>
+    <li>desert_adjective->glühend</li>
     <li>desert_adjective->staubig</li>
     <li>desert_adjective->felsig</li>
     <li>biom_adj->[desert_adjective]</li>
@@ -177,13 +167,11 @@
     <li>terrain_word->Ödland</li>
     <li>terrain_word->Einöde</li>
     <li>terrain_word->Brachland</li>
-    <li>terrain_word_low(p=6)->sandwüste</li>
+    <li>terrain_word_low(p=6)->wüste</li>
     <li>terrain_word_low->plateau</li>
     <li>terrain_word_low->ebenen</li>
-    <li>terrain_word_low->talbecken</li>
-    <li>terrain_word_low->ödland</li>
+    <li>terrain_word_low->ödnis</li>
     <li>terrain_word_low->einöde</li>
-    <li>terrain_word_low->brachland</li>
     <li>terrain_word_gender(p=6)->|F|Sandwüste</li>
     <li>terrain_word_gender->|N|Plateau</li>
     <li>terrain_word_gender->|F|Ebenen</li>
@@ -191,13 +179,11 @@
     <li>terrain_word_gender->|N|Ödland</li>
     <li>terrain_word_gender->|F|Einöde</li>
     <li>terrain_word_gender->|N|Brachland</li>
-    <li>terrain_word_gender_low(p=6)->|F|sandwüste</li>
+    <li>terrain_word_gender_low(p=6)->|F|wüste</li>
     <li>terrain_word_gender_low->|N|plateau</li>
     <li>terrain_word_gender_low->|F|ebenen</li>
-    <li>terrain_word_gender_low->|N|talbecken</li>
-    <li>terrain_word_gender_low->|N|ödland</li>
+    <li>terrain_word_gender_low->|F|ödnis</li>
     <li>terrain_word_gender_low->|F|einöde</li>
-    <li>terrain_word_gender_low->|N|brachland</li>
   </NamerDesert.rulePack.rulesStrings>
   
   <!-- EN:
@@ -211,17 +197,15 @@
     <li>terrain_word->Hain</li>
     <li>terrain_word->Waldland</li>
     <li>terrain_word->Dickicht</li>
-    <li>terrain_word_low(p=6)->laubwald</li>
+    <li>terrain_word_low(p=6)->wald</li>
     <li>terrain_word_low->hain</li>
-    <li>terrain_word_low->waldland</li>
     <li>terrain_word_low->dickicht</li>
     <li>terrain_word_gender(p=6)->|M|Laubwald</li>
     <li>terrain_word_gender->|M|Hain</li>
     <li>terrain_word_gender->|N|Waldland</li>
     <li>terrain_word_gender->|N|Dickicht</li>
-    <li>terrain_word_gender_low(p=6)->|M|laubwald</li>
+    <li>terrain_word_gender_low(p=6)->|M|wald</li>
     <li>terrain_word_gender_low->|M|hain</li>
-    <li>terrain_word_gender_low->|N|waldland</li>
     <li>terrain_word_gender_low->|N|dickicht</li>
   </NamerForest.rulePack.rulesStrings>
   
@@ -241,21 +225,21 @@
     <li>terrain_word(p=0.3)->Eisfläche</li>
     <li>terrain_word(p=0.3)->Eisfeld</li>
     <li>terrain_word(p=0.3)->Eisgebiet</li>
-    <li>terrain_word_low->eiswüste</li>
-    <li>terrain_word_low(p=0.5)->eisdecke</li>
-    <li>terrain_word_low(p=0.3)->eisfläche</li>
-    <li>terrain_word_low(p=0.3)->eisfeld</li>
-    <li>terrain_word_low(p=0.3)->eisgebiet</li>
+    <li>terrain_word_low->wüste</li>
+    <li>terrain_word_low(p=0.5)->decke</li>
+    <li>terrain_word_low(p=0.3)->fläche</li>
+    <li>terrain_word_low(p=0.3)->feld</li>
+    <li>terrain_word_low(p=0.3)->gebiet</li>
     <li>terrain_word_gender->|F|Eiswüste</li>
     <li>terrain_word_gender(p=0.5)->|F|Eisdecke</li>
     <li>terrain_word_gender(p=0.3)->|F|Eisfläche</li>
     <li>terrain_word_gender(p=0.3)->|N|Eisfeld</li>
     <li>terrain_word_gender(p=0.3)->|N|Eisgebiet</li>
-    <li>terrain_word_gender_low->|F|eiswüste</li>
-    <li>terrain_word_gender_low(p=0.5)->|F|eisdecke</li>
-    <li>terrain_word_gender_low(p=0.3)->|F|eisfläche</li>
-    <li>terrain_word_gender_low(p=0.3)->|N|eisfeld</li>
-    <li>terrain_word_gender_low(p=0.3)->|N|eisgebiet</li>
+    <li>terrain_word_gender_low->|F|wüste</li>
+    <li>terrain_word_gender_low(p=0.5)->|F|decke</li>
+    <li>terrain_word_gender_low(p=0.3)->|F|fläche</li>
+    <li>terrain_word_gender_low(p=0.3)->|N|feld</li>
+    <li>terrain_word_gender_low(p=0.3)->|N|gebiet</li>
   </NamerIceSheet.rulePack.rulesStrings>
   
   <!-- EN:
@@ -275,7 +259,6 @@
     <li>terrain_word->Atoll</li>
     <li>terrain_word->Inselchen</li>
     <li>terrain_word_low(p=4)->insel</li>
-    <li>terrain_word_low(p=2)->eiland</li>
     <li>terrain_word_low->riff</li>
     <li>terrain_word_low->atoll</li>
     <li>terrain_word_gender(p=4)->|F|Insel</li>
@@ -284,7 +267,6 @@
     <li>terrain_word_gender->|N|Atoll</li>
     <li>terrain_word_gender->|N|Inselchen</li>
     <li>terrain_word_gender_low(p=4)->|F|insel</li>
-    <li>terrain_word_gender_low(p=2)->|N|eiland</li>
     <li>terrain_word_gender_low->|N|riff</li>
     <li>terrain_word_gender_low->|N|atoll</li>
   </NamerIsland.rulePack.rulesStrings>
@@ -343,7 +325,6 @@
     <li>terrain_word_low->höhen</li>
     <li>terrain_word_low->hügel</li>
     <li>terrain_word_low->massiv</li>
-    <li>terrain_word_low->bergland</li>
     <li>terrain_word_gender(p=5)->|N|Gebirge</li>
     <li>terrain_word_gender(p=2)->|F|Berge</li>
     <li>terrain_word_gender->|F|Höhen</li>
@@ -355,7 +336,6 @@
     <li>terrain_word_gender_low->|F|höhen</li>
     <li>terrain_word_gender_low->|F|hügel</li>
     <li>terrain_word_gender_low->|N|massiv</li>
-    <li>terrain_word_gender_low->|N|bergland</li>
   </NamerMountainRange.rulePack.rulesStrings>
   
   <!-- EN:
@@ -379,13 +359,13 @@
   -->
   <NamerOcean.rulePack.rulesStrings>
     <li>r_name(p=0.4)->[narrative_with_biom_adj]</li>
-    <li>ocean_adjective->blau</li>
-    <li>ocean_adjective->weiß</li>
+    <li>ocean_adjective->tief</li>
+    <li>ocean_adjective->unendlich</li>
     <li>ocean_adjective->klar</li>
     <li>ocean_adjective->windig</li>
     <li>ocean_adjective->stürmisch</li>
     <li>ocean_adjective->ruhig</li>
-    <li>ocean_adjective->groß</li>
+    <li>ocean_adjective->tosend</li>
     <li>ocean_adjective->endlos</li>
     <li>ocean_adjective->flach</li>
     <li>ocean_adjective->still</li>
@@ -417,14 +397,10 @@
     <li>terrain_word(p=2)->Landspitze</li>
     <li>terrain_word->Odde</li>
     <li>terrain_word->Huk</li>
-    <li>terrain_word_low(p=5)->halbinsel</li>
-    <li>terrain_word_low(p=2)->landspitze</li>
     <li>terrain_word_gender(p=5)->|F|Halbinsel</li>
     <li>terrain_word_gender(p=2)->|F|Landspitze</li>
     <li>terrain_word_gender->|F|Odde</li>
     <li>terrain_word_gender->|F|Huk</li>
-    <li>terrain_word_gender_low(p=5)->|F|halbinsel</li>
-    <li>terrain_word_gender_low(p=2)->|F|landspitze</li>
   </NamerPeninsula.rulePack.rulesStrings>
   
   <!-- EN:
@@ -485,11 +461,8 @@
     <li>terrain_word->Feuchtgebiete</li>
     <li>terrain_word->Marschland</li>
     <li>terrain_word_low(p=6)->sumpf</li>
-    <li>terrain_word_low->moorland</li>
     <li>terrain_word_low->moor</li>
     <li>terrain_word_low->morast</li>
-    <li>terrain_word_low->feuchtgebiete</li>
-    <li>terrain_word_low->marschland</li>
     <li>terrain_word_gender(p=6)->|M|Sumpf</li>
     <li>terrain_word_gender->|N|Moorland</li>
     <li>terrain_word_gender->|N|Moor</li>
@@ -497,11 +470,8 @@
     <li>terrain_word_gender->|F|Feuchtgebiete</li>
     <li>terrain_word_gender->|N|Marschland</li>
     <li>terrain_word_gender_low(p=6)->|M|sumpf</li>
-    <li>terrain_word_gender_low->|N|moorland</li>
     <li>terrain_word_gender_low->|N|moor</li>
     <li>terrain_word_gender_low->|M|morast</li>
-    <li>terrain_word_gender_low->|F|feuchtgebiete</li>
-    <li>terrain_word_gender_low->|N|marschland</li>
   </NamerSwamp.rulePack.rulesStrings>
   
   <!-- EN:
@@ -535,11 +505,9 @@
     <li>terrain_word->Hain</li>
     <li>terrain_word->Waldland</li>
     <li>terrain_word->Dickicht</li>
-    <li>terrain_word_low(p=6)->regenwald</li>
+    <li>terrain_word_low(p=6)->wald</li>
     <li>terrain_word_low(p=3)->dschungel</li>
-    <li>terrain_word_low->wald</li>
     <li>terrain_word_low->hain</li>
-    <li>terrain_word_low->waldland</li>
     <li>terrain_word_low->dickicht</li>
     <li>terrain_word_gender(p=6)->|M|Regenwald</li>
     <li>terrain_word_gender(p=3)->|M|Dschungel</li>
@@ -547,11 +515,9 @@
     <li>terrain_word_gender->|M|Hain</li>
     <li>terrain_word_gender->|N|Waldland</li>
     <li>terrain_word_gender->|N|Dickicht</li>
-    <li>terrain_word_gender_low(p=6)->|M|regenwald</li>
+    <li>terrain_word_gender_low(p=6)->|M|wald</li>
     <li>terrain_word_gender_low(p=3)->|M|dschungel</li>
-    <li>terrain_word_gender_low->|M|wald</li>
     <li>terrain_word_gender_low->|M|hain</li>
-    <li>terrain_word_gender_low->|N|waldland</li>
     <li>terrain_word_gender_low->|N|dickicht</li>
   </NamerTropicalRainforest.rulePack.rulesStrings>
   
@@ -578,7 +544,7 @@
     <li>terrain_word->Prärie</li>
     <li>terrain_word->Ebenen</li>
     <li>terrain_word_low(p=4)->steppe</li>
-    <li>terrain_word_low(p=4)->ödland</li>
+    <li>terrain_word_low(p=4)->ödnis</li>
     <li>terrain_word_low(p=2)->plateau</li>
     <li>terrain_word_low->einöde</li>
     <li>terrain_word_low->prärie</li>
@@ -591,7 +557,7 @@
     <li>terrain_word_gender->|F|Prärie</li>
     <li>terrain_word_gender->|F|Ebenen</li>
     <li>terrain_word_gender_low(p=4)->|F|steppe</li>
-    <li>terrain_word_gender_low(p=4)->|N|ödland</li>
+    <li>terrain_word_gender_low(p=4)->|F|ödnis</li>
     <li>terrain_word_gender_low(p=2)->|N|plateau</li>
     <li>terrain_word_gender_low->|F|einöde</li>
     <li>terrain_word_gender_low->|F|prärie</li>
@@ -663,35 +629,38 @@
     <li>r_name->[narrative]</li>
     <li>r_name(p=0.05)->[story]</li>
     <li>r_name(priority=-1)->[narrative_name]-[terrain_word]</li>
-    <li>narrative(p=12)->{replace: [terrain_word_gender]; "|M|"-"[WordTribal]-"; "|F|"-"[WordTribal]-"; "|N|"-"[WordTribal]-"}</li>
-    <li>narrative(p=12)->{replace: [terrain_word_gender]; "|M|"-"[PlaceOutlander]-"; "|F|"-"[PlaceOutlander]-"; "|N|"-"[PlaceOutlander]-"}</li>
-    <li>narrative->{replace: [terrain_word_gender]; "|M|"-"[ColorCap][NaturalObjectConLow]-"; "|F|"-"[ColorCap][NaturalObjectConLow]-"; "|N|"-"[ColorCap][NaturalObjectConLow]-"}</li>
-    <li>narrative->{replace: [terrain_word_gender]; "|M|"-"[AdjectiveNaturalCap][BodyPartConLow]-"; "|F|"-"[AdjectiveNaturalCap][BodyPartConLow]-"; "|N|"-"[AdjectiveNaturalCap][BodyPartConLow]-"}</li>
-    <li>narrative->{replace: [terrain_word_gender]; "|M|"-"[AnimalCon]-"; "|F|"-"[AnimalCon]-"; "|N|"-"[AnimalCon]-"}</li>
-    <li>narrative->{replace: [terrain_word_gender]; "|M|"-"[ColorCap][AnimalConLow]-"; "|F|"-"[ColorCap][AnimalConLow]-"; "|N|"-"[ColorCap][AnimalConLow]-"}</li>
-    <li>narrative->{replace: [terrain_word_gender]; "|M|"-"[AdjectiveNaturalCap][AnimalConLow]-"; "|F|"-"[AdjectiveNaturalCap][AnimalConLow]-"; "|N|"-"[AdjectiveNaturalCap][AnimalConLow]-"}</li>
-    <li>narrative->{replace: [terrain_word_gender]; "|M|"-"[AnimalCon][BodyPartConLow]-"; "|F|"-"[AnimalCon][BodyPartConLow]-"; "|N|"-"[AnimalCon][BodyPartConLow]-"}</li>
-    <li>narrative->{replace: [terrain_word_gender]; "|M|"-"[Color]er "; "|F|"-"[Color]e "; "|N|"-"[Color]es "}</li>
-    <li>narrative->{replace: [terrain_word_gender_low]; "|M|"-"[ColorCap]"; "|F|"-"[ColorCap]"; "|N|"-"[ColorCap]"}</li>
-    <li>narrative->{replace: [terrain_word_gender_low]; "|M|"-"[Color]er [AnimalCon]"; "|F|"-"[Color]e [AnimalCon]"; "|N|"-"[Color]es [AnimalCon]"}</li>
-    <li>narrative->{replace: [terrain_word_gender_low]; "|M|"-"[AnimalCon]"; "|F|"-"[AnimalCon]"; "|N|"-"[AnimalCon]"}</li>
-    <li>narrative_with_biom_adj(p=12)->{replace: [terrain_word_gender]; "|M|"-"[biom_adj]er [WordTribal]-"; "|F|"-"[biom_adj]e [WordTribal]-"; "|N|"-"[biom_adj]es [WordTribal]-"}</li>
-    <li>narrative_with_biom_adj(p=12)->{replace: [terrain_word_gender]; "|M|"-"[biom_adj]er [PlaceOutlander]-"; "|F|"-"[biom_adj]e [PlaceOutlander]-"; "|N|"-"[biom_adj]es [PlaceOutlander]-"}</li>
-    <li>narrative_with_biom_adj->{replace: [terrain_word_gender]; "|M|"-"[biom_adj]er [ColorCap][NaturalObjectConLow]-"; "|F|"-"[biom_adj]e [ColorCap][NaturalObjectConLow]-"; "|N|"-"[biom_adj]es [ColorCap][NaturalObjectConLow]-"}</li>
-    <li>narrative_with_biom_adj->{replace: [terrain_word_gender]; "|M|"-"[biom_adj]er [AdjectiveNaturalCap][BodyPartConLow]-"; "|F|"-"[biom_adj]e [AdjectiveNaturalCap][BodyPartConLow]-"; "|N|"-"[biom_adj]es [AdjectiveNaturalCap][BodyPartConLow]-"}</li>
-    <li>narrative_with_biom_adj->{replace: [terrain_word_gender]; "|M|"-"[biom_adj]er [AnimalCon]-"; "|F|"-"[biom_adj]e [AnimalCon]-"; "|N|"-"[biom_adj]es [AnimalCon]-"}</li>
-    <li>narrative_with_biom_adj->{replace: [terrain_word_gender]; "|M|"-"[biom_adj]er [ColorCap][AnimalConLow]-"; "|F|"-"[biom_adj]e [ColorCap][AnimalConLow]-"; "|N|"-"[biom_adj]es [ColorCap][AnimalConLow]-"}</li>
-    <li>narrative_with_biom_adj->{replace: [terrain_word_gender]; "|M|"-"[biom_adj]er [AdjectiveNaturalCap][AnimalConLow]-"; "|F|"-"[biom_adj]e [AdjectiveNaturalCap][AnimalConLow]-"; "|N|"-"[biom_adj]es [AdjectiveNaturalCap][AnimalConLow]-"}</li>
-    <li>narrative_with_biom_adj->{replace: [terrain_word_gender]; "|M|"-"[biom_adj]er [AnimalCon][BodyPartConLow]-"; "|F|"-"[biom_adj]e [AnimalCon][BodyPartConLow]-"; "|N|"-"[biom_adj]es [AnimalCon][BodyPartConLow]-"}</li>
-    <li>narrative_with_biom_adj->{replace: [terrain_word_gender]; "|M|"-"[biom_adj]er [Color]er "; "|F|"-"[biom_adj]e [Color]e "; "|N|"-"[biom_adj]es [Color]es "}</li>
-    <li>narrative_with_biom_adj->{replace: [terrain_word_gender_low]; "|M|"-"[biom_adj]er [ColorCap]"; "|F|"-"[biom_adj]e [ColorCap]"; "|N|"-"[biom_adj]es [ColorCap]"}</li>
-    <li>narrative_with_biom_adj->{replace: [terrain_word_gender_low]; "|M|"-"[biom_adj]er [Color]er [AnimalCon]"; "|F|"-"[biom_adj]e [Color]e [AnimalCon]"; "|N|"-"[biom_adj]es [Color]es [AnimalCon]"}</li>
+    <li>narrative(p=12)->[WordTribal]-[terrain_word]</li>
+    <li>narrative(p=12)->[PlaceOutlander]-[terrain_word]</li>
+    <li>narrative->[ColorCap][NaturalObjectConLow][terrain_word_low]</li>
+    <li>narrative->[AdjectiveNaturalCon][BodyPartConLow][terrain_word_low]</li>
+    <li>narrative->[AnimalCon][terrain_word_low]</li>
+    <li>narrative(p=0.5)->[ColorCap][terrain_word_low]</li>
+    <li>narrative(p=0.5)->{replace: [terrain_word_gender]; "|M|"-"[Color]er "; "|F|"-"[Color]e "; "|N|"-"[Color]es "}</li>
+    <li>narrative->[ColorCap][AnimalConLow][terrain_word_low]</li>
+    <li>narrative->[AdjectiveNaturalCon][AnimalConLow][terrain_word_low]</li>
+    <li>narrative->[AnimalCon][BodyPartConLow][terrain_word_low]</li>
+    <li>narrative(p=0.5)->{replace: [terrain_word_gender_low]; "|M|"-"[Color]er [AnimalCon]"; "|F|"-"[Color]e [AnimalCon]"; "|N|"-"[Color]es [AnimalCon]"}</li>
+    <li>narrative(p=0.5)->[terrain_word] der [ColorCap]en [Animals]</li>
+    <li>narrative(p=0.5)->{replace: [terrain_word_gender_low]; "|M|"-"[AdjectiveNatural]er [AnimalCon]"; "|F|"-"[AdjectiveNatural]e [AnimalCon]"; "|N|"-"[AdjectiveNatural]es [AnimalCon]"}</li>
+    <li>narrative(p=0.5)->[terrain_word] der [AdjectiveNaturalCap]en [Animals]</li>
+    <li>narrative_with_biom_adj(p=12)->{replace: [terrain_word_gender]; "|M|"-"[biom_adj]er "; "|F|"-"[biom_adj]e "; "|N|"-"[biom_adj]es "} von [WordTribal]</li>
+    <li>narrative_with_biom_adj(p=12)->{replace: [terrain_word_gender]; "|M|"-"[biom_adj]er "; "|F|"-"[biom_adj]e "; "|N|"-"[biom_adj]es "} von [PlaceOutlander]</li>
+    <li>narrative_with_biom_adj->{replace: [terrain_word_gender_low]; "|M|"-"[biom_adj]er [ColorCap][NaturalObjectConLow]"; "|F|"-"[biom_adj]e [ColorCap][NaturalObjectConLow]"; "|N|"-"[biom_adj]es [ColorCap][NaturalObjectConLow]"}</li>
+    <li>narrative_with_biom_adj->{replace: [terrain_word_gender_low]; "|M|"-"[biom_adj]er [AdjectiveNaturalCon][BodyPartConLow]"; "|F|"-"[biom_adj]e [AdjectiveNaturalCon][BodyPartConLow]"; "|N|"-"[biom_adj]es [AdjectiveNaturalCon][BodyPartConLow]"}</li>
     <li>narrative_with_biom_adj->{replace: [terrain_word_gender_low]; "|M|"-"[biom_adj]er [AnimalCon]"; "|F|"-"[biom_adj]e [AnimalCon]"; "|N|"-"[biom_adj]es [AnimalCon]"}</li>
-    <li>story(p=17)->[subject]'s [terrain_word] [of_story_result]</li>
-    <li>story(p=17)->[subject]'s [story_con][terrain_word_low]</li>
-    <li>story(p=17)->{replace: [terrain_word_gender]; "|M|"-"[story_adj]er "; "|F|"-"[story_adj]e "; "|N|"-"[story_adj]es "}</li>
-    <li>story(p=2)->[subject]'s [BodyPartCon][terrain_word_low]</li>
-    <li>story->[subject]'s [Gore]-[terrain_word]</li>
+    <li>narrative_with_biom_adj(p=0.5)->{replace: [terrain_word_gender_low]; "|M|"-"[biom_adj]er [ColorCap]"; "|F|"-"[biom_adj]e [ColorCap]"; "|N|"-"[biom_adj]es [ColorCap]"}</li>
+    <li>narrative_with_biom_adj(p=0.5)->{replace: [terrain_word_gender]; "|M|"-"[biom_adj]er [Color]er "; "|F|"-"[biom_adj]e [Color]e "; "|N|"-"[biom_adj]es [Color]es "}</li>
+    <li>narrative_with_biom_adj->{replace: [terrain_word_gender_low]; "|M|"-"[biom_adj]er [ColorCap][AnimalConLow]"; "|F|"-"[biom_adj]e [ColorCap][AnimalConLow]"; "|N|"-"[biom_adj]es [ColorCap][AnimalConLow]"}</li>
+    <li>narrative_with_biom_adj->{replace: [terrain_word_gender_low]; "|M|"-"[biom_adj]er [AdjectiveNaturalCon][AnimalConLow]"; "|F|"-"[biom_adj]e [AdjectiveNaturalCon][AnimalConLow]"; "|N|"-"[biom_adj]es [AdjectiveNaturalCon][AnimalConLow]"}</li>
+    <li>narrative_with_biom_adj->{replace: [terrain_word_gender_low]; "|M|"-"[biom_adj]er [AnimalCon][BodyPartConLow]"; "|F|"-"[biom_adj]e [AnimalCon][BodyPartConLow]"; "|N|"-"[biom_adj]es [AnimalCon][BodyPartConLow]"}</li>
+    <li>narrative_with_biom_adj(p=0.5)->{replace: [terrain_word_gender_low]; "|M|"-"[biom_adj]er [Color]er [AnimalCon]"; "|F|"-"[biom_adj]e [Color]e [AnimalCon]"; "|N|"-"[biom_adj]es [Color]es [AnimalCon]"}</li>
+    <li>narrative_with_biom_adj(p=0.5)->{replace: [terrain_word_gender]; "|M|"-"[biom_adj]er "; "|F|"-"[biom_adj]e "; "|N|"-"[biom_adj]es "} der [ColorCap]en [Animals]</li>
+    <li>narrative_with_biom_adj(p=0.5)->{replace: [terrain_word_gender_low]; "|M|"-"[biom_adj]er [AdjectiveNatural]er [AnimalCon]"; "|F|"-"[biom_adj]e [AdjectiveNatural]e [AnimalCon]"; "|N|"-"[biom_adj]es [AdjectiveNatural]es [AnimalCon]"}</li>
+    <li>narrative_with_biom_adj(p=0.5)->{replace: [terrain_word_gender]; "|M|"-"[biom_adj]er "; "|F|"-"[biom_adj]e "; "|N|"-"[biom_adj]es "} der [AdjectiveNaturalCap]en [Animals]</li>
+    <li>story(p=25)->[subject]'s [terrain_word] [of_story_result]</li>
+    <li>story(p=25)->[subject]'s [story_result]</li>
+    <li>story(p=2)->[subject]'s [BodyPart]</li>
+    <li>story->[subject]'s [Gore]</li>
     <li>subject(p=5)->[NamePerson]</li>
     <li>subject->[WordTribal]</li>
     <li>subject->[PlaceOutlander]</li>
@@ -764,72 +733,6 @@
     <li>of_story_result->der Wiedergeburt</li>
     <li>of_story_result->der Wunder</li>
     <li>of_story_result->der Zerstörung</li>
-    <li>story_con->Narren</li>
-    <li>story_con->Laster</li>
-    <li>story_con->Irr</li>
-    <li>story_con->Fehl</li>
-    <li>story_con->Stör</li>
-    <li>story_con->Wahn</li>
-    <li>story_con->Trug</li>
-    <li>story_con->Freuden</li>
-    <li>story_con->Wonne</li>
-    <li>story_con->Wunder</li>
-    <li>story_con->Stolz</li>
-    <li>story_con->Juwel</li>
-    <li>story_con->Preis</li>
-    <li>story_con->Prämien</li>
-    <li>story_con->Ehren</li>
-    <li>story_con->Pokal</li>
-    <li>story_con->Trophäen</li>
-    <li>story_con->Dünkel</li>
-    <li>story_con->Eitel</li>
-    <li>story_con->Stand</li>
-    <li>story_con->Schwund</li>
-    <li>story_con->Schulden</li>
-    <li>story_con->Sturz</li>
-    <li>story_con->Trümmer</li>
-    <li>story_con->Kataklysmus</li>
-    <li>story_con->Ruin</li>
-    <li>story_con->Los</li>
-    <li>story_con->Katastrophen</li>
-    <li>story_con->Fall</li>
-    <li>story_con->End</li>
-    <li>story_con->Still</li>
-    <li>story_con->Erfolgs</li>
-    <li>story_con->Final</li>
-    <li>story_con->Steil</li>
-    <li>story_con->Finten</li>
-    <li>story_con->Schleier</li>
-    <li>story_con->Fassaden</li>
-    <li>story_con->Schwindel</li>
-    <li>story_adj->töricht</li>
-    <li>story_adj->lasterhaft</li>
-    <li>story_adj->wahnsinnig</li>
-    <li>story_adj->irrwitzig</li>
-    <li>story_adj->instabil</li>
-    <li>story_adj->trügerisch</li>
-    <li>story_adj->freudig</li>
-    <li>story_adj->wonnig</li>
-    <li>story_adj->wunderhaft</li>
-    <li>story_adj->stolz</li>
-    <li>story_adj->glitzernd</li>
-    <li>story_adj->preiswürdig</li>
-    <li>story_adj->ehrenhaft</li>
-    <li>story_adj->eitl</li>
-    <li>story_adj->arrogant</li>
-    <li>story_adj->stehend</li>
-    <li>story_adj->verloren</li>
-    <li>story_adj->kollabierend</li>
-    <li>story_adj->zerstörerisch</li>
-    <li>story_adj->kataklysmisch</li>
-    <li>story_adj->katastrophal</li>
-    <li>story_adj->endlich</li>
-    <li>story_adj->ruhend</li>
-    <li>story_adj->erfolgreich</li>
-    <li>story_adj->final</li>
-    <li>story_adj->verblüffend</li>
-    <li>story_adj->listig</li>
-    <li>story_adj->täuschend</li>
   </WorldFeatureNamerCommon.rulePack.rulesStrings>
   
 </LanguageData>

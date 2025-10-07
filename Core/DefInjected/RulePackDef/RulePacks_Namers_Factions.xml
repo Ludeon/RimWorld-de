@@ -301,7 +301,7 @@
   <NamerSettlementOutlander.rulePack.rulesStrings>
     <li>r_name(p=12)->[townname_wordgen]</li>
     <li>r_name(p=6)->[townname_fixed]</li>
-    <li>r_name(p=4)->[townname_combo]</li>
+    <li>r_name(p=0.05)->[townname_combo]</li>
     <li>r_name->[townname_near]</li>
     <li>topicalnoun->[VegetableCon]</li>
     <li>topicalnoun->[Game]</li>
@@ -317,15 +317,14 @@
     <li>townname_wordgen(p=2)->[SylECap][SylE][SylE]</li>
     <li>townname_wordgen(p=2)->[SylECap][townend]</li>
     <li>townname_wordgen(p=2)->[SylECap][SylE][townend]</li>
-    <li>townname_wordgen->[TerrainFeatureCon][townend]</li>
-    <li>townname_wordgen->[ConceptPositiveCon][townend]</li>
-    <li>townname_wordgen->[topicalnoun][townend]</li>
+    <li>townname_wordgen->[TerrainFeatureConTown][townend]</li>
+    <li>townname_wordgen->[ConceptPositiveConTown][townend]</li>
+    <li>townname_wordgen(p=0.05)->[topicalnoun][townend]</li>
     <li>townend->burg</li>
-    <li>townend->bach</li>
     <li>townend->grad</li>
     <li>townend->büttel</li>
     <li>townend->damm</li>
-    <li>townend->ingen</li>
+    <li>townend->lingen</li>
     <li>townend->furt</li>
     <li>townend->hagen</li>
     <li>townend->hain</li>
@@ -339,9 +338,9 @@
     <li>townend->stedt</li>
     <li>townend->loch</li>
     <li>townend->rode</li>
-    <li>townend->berg</li>
     <li>townend->werder</li>
     <li>townend->nest</li>
+    <li>townend->ruh</li>
   </NamerSettlementOutlander.rulePack.rulesStrings>
   
   <!-- EN:
