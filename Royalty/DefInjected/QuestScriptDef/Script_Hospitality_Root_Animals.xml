@@ -119,13 +119,13 @@
     <li>questName(lodgersCount==1)->{replace: ^[lodgersPawnKind_definite]; "^der "-"Der [animalAdj]e "; "^die "-"Die [animalAdj]e "; "^das "-"Das [animalAdj]e "; "^"-""}</li>
     <li>questName(lodgersCount==1)->{replace: ^[lodgersPawnKind_definite]; "^der "-"Ein [animalAdj]er "; "^die "-"Eine [animalAdj]e "; "^das "-"Ein [animalAdj]es "; "^"-""}</li>
     <li>questName(lodgersCount==1)->[animalAdj]{replace: ^[lodgersPawnKind_definite]; "^der "-"er "; "^die "-"e "; "^das "-"es "; "^"-""}</li>
-    <li>questName(lodgersCount==1)->[lodgersLabel]-Betreuung</li>
+    <li>questName(lodgersCount==1)->{lookup: [lodgersLabel]; compound}betreuung</li>
     <li>questName(lodgersCount==1)->Ein Zuhause für [lodgers0_nameDef]</li>
     <li>questName(lodgersCount==1)->Ein Herz für [lodgers0_nameDef]</li>
     <li>questName(lodgersCount==1)->{lodgers0_gender ? Armer kleiner : Arme kleine} [lodgers0_nameDef]</li>
     <li>questName(lodgersCount>=2)->Die [animalAdj]en [lodgersLabelPlural]</li>
     <li>questName(lodgersCount>=2)->[animalAdj]e [lodgersLabelPlural]</li>
-    <li>questName(lodgersCount>=2)->Mehrere [lodgersLabelPlural] betreuen</li>
+    <li>questName(lodgersCount>=2)->{lookup: [lodgersLabel]; compound}betreuung</li>
     <li>questName(lodgersCount>=2)->Ein Zuhause für [lodgersLabelPlural]</li>
     <li>questName(lodgersCount>=2)->Ein Herz für [lodgersLabelPlural]</li>
     <li>animalAdj->süß</li>

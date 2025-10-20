@@ -10,6 +10,7 @@ $dlcs = Get-ChildItem -Directory | Where-Object { Test-Path -Path (Join-Path -Pa
 $items = [ordered]@{
 "DefInjected\FactionDef\*" = "\w+\.pawnSingular"
 "DefInjected\ThingDef\Plants_*" = "\w+\.label"
+"DefInjected\*\Races_*" = "\w+\.label" # Hospitality_Animals, MeatLabel
 }
 
 # Header line for the output file
