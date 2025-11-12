@@ -473,7 +473,7 @@
     <li>r_statue_name(SUBJECT_gender==Female)->[statueAdj]e [subjectNounGenderedFemNom]</li>
     <li>r_statue_name(p=0.25)->[statueAdj]e [subjectNounUngenderedFemNom]</li>
     <li>r_statue_name(p=0.25)->[statueAdj]es [subjectNounUngenderedNeuNom]</li>
-    <li>r_statue_name(p=0.33)->Figur des [statueIdeaMasGen]</li>
+    <li>r_statue_name(p=0.33)->Figur {replace: des [statueIdeaMasGen]; "des Gottes"-"Gottes"}</li>
     <li>r_statue_name(p=0.33)->Figur der [statueIdeaFemGen]</li>
     <li>r_statue_name(p=0.33)->Figur des [statueIdeaNeuGen]</li>
     <li>r_statue_name(SUBJECT_gender!=Female)->[statueIdea] und der [subjectNounGenderedMasNomDef]</li>
@@ -489,10 +489,10 @@
     <li>r_statue_name(SUBJECT_gender==Female)->Die [subjectNounGenderedFemNomDef]</li>
     <li>r_statue_name(p=0.25)->Die [subjectNounUngenderedFemNomDef]</li>
     <li>r_statue_name(p=0.25)->Das [subjectNounUngenderedNeuNomDef]</li>
-    <li>r_statue_name(p=0.33)->[subjectNounGenderedNom] des [statueIdeaMasGen]</li>
+    <li>r_statue_name(p=0.33)->[subjectNounGenderedNom] {replace: des [statueIdeaMasGen]; "des Gottes"-"Gottes"}</li>
     <li>r_statue_name(p=0.33)->[subjectNounGenderedNom] der [statueIdeaFemGen]</li>
     <li>r_statue_name(p=0.33)->[subjectNounGenderedNom] des [statueIdeaNeuGen]</li>
-    <li>r_statue_name(p=0.10)->[subjectNounUngenderedNom] des [statueIdeaMasGen]</li>
+    <li>r_statue_name(p=0.10)->[subjectNounUngenderedNom] {replace: des [statueIdeaMasGen]; "des Gottes"-"Gottes"}</li>
     <li>r_statue_name(p=0.10)->[subjectNounUngenderedNom] der [statueIdeaFemGen]</li>
     <li>r_statue_name(p=0.10)->[subjectNounUngenderedNom] des [statueIdeaNeuGen]</li>
     <li>r_statue_name->[SUBJECT_indefinite] und [talktopicheavyfile]</li>

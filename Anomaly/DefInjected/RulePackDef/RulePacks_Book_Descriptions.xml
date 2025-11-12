@@ -333,10 +333,10 @@
     <li>author(ANYPAWN_gender!=Female)->[anAuthorDesc] Okkultist</li>
     <li>author(ANYPAWN_gender!=Female)->[anAuthorDesc] Kultist</li>
     <li>author(ANYPAWN_gender!=Female)->[anAuthorDesc] Kultanhänger</li>
-    <li>author(ANYPAWN_gender!=Female)->[anAuthorDesc] Kultaussteiger</li>
+    <li>author(ANYPAWN_gender!=Female)->[anAuthorDesc] Ex-Kultist</li>
     <li>author(ANYPAWN_gender!=Female)->[anAuthorDesc] Antiquitätenhändler</li>
     <li>author(ANYPAWN_gender!=Female)->[anAuthorDesc] Totengräber</li>
-    <li>author(ANYPAWN_gender!=Female)->[anAuthorDesc] Leere-Forscher</li>
+    <li>author(ANYPAWN_gender!=Female)->[anAuthorDesc] Forscher der Leere</li>
     <li>author(ANYPAWN_gender!=Female)->[anAuthorDesc] Wanderer</li>
     <li>author(ANYPAWN_gender!=Female)->[anAuthorDesc] Skeptiker</li>
     <li>author(ANYPAWN_gender!=Female)->[anAuthorDesc] Gelehrter</li>
@@ -359,10 +359,10 @@
     <li>author(ANYPAWN_gender==Female)->[anAuthorDescFem] Okkultistin</li>
     <li>author(ANYPAWN_gender==Female)->[anAuthorDescFem] Kultistin</li>
     <li>author(ANYPAWN_gender==Female)->[anAuthorDescFem] Kultanhängerin</li>
-    <li>author(ANYPAWN_gender==Female)->[anAuthorDescFem] Kultaussteigerin</li>
+    <li>author(ANYPAWN_gender==Female)->[anAuthorDescFem] Ex-Kultistin</li>
     <li>author(ANYPAWN_gender==Female)->[anAuthorDescFem] Antiquitätenhändlerin</li>
     <li>author(ANYPAWN_gender==Female)->[anAuthorDescFem] Totengräberin</li>
-    <li>author(ANYPAWN_gender==Female)->[anAuthorDescFem] Leere-Forscherin</li>
+    <li>author(ANYPAWN_gender==Female)->[anAuthorDescFem] Forscherin der Leere</li>
     <li>author(ANYPAWN_gender==Female)->[anAuthorDescFem] Wanderin</li>
     <li>author(ANYPAWN_gender==Female)->[anAuthorDescFem] Skeptikerin</li>
     <li>author(ANYPAWN_gender==Female)->[anAuthorDescFem] Gelehrte</li>
@@ -426,16 +426,15 @@
     <li>tellsAStoryOf->beschreibt [author]</li>
     <li>tellsAStoryOf->schildert [author]</li>
     <li>tellsAStoryOf->erläutert [author]</li>
-    <!-- <li>tellsAStoryOf->erzählt [author]</li> -->
     <li>tellsAStoryOf->erklärt [author]</li>
-    <li>tellsAStoryOf->berichtet [author]</li>
+    <li>tellsAStoryOf->schreibt [author] über</li>
     <li>tellsAStoryOf->dokumentiert [author]</li>
-    <li>tellsAStoryOf->erforscht [author]</li>
-    <li>tellsAStoryOf->entdeckt [author]</li>
+    <li>tellsAStoryOf->debattiert [author] über</li>
+    <li>tellsAStoryOf->redet [author] über</li>
     <li>authorExperiencesWithMonsters->[tellsAStoryOf] [ANYPAWN_possessive]e Erfahrungen mit [entitiesDat]</li>
-    <li>authorExperiencesWithMonsters(p=0.33)->[tellsAStoryOf] die Erforschung eines geheimen Kults mit einer Basis unter einem abgelegenen [TerrainFeatureMasDat]</li>
-    <li>authorExperiencesWithMonsters(p=0.33)->[tellsAStoryOf] die Erforschung eines geheimen Kults mit einer Basis unter einer abgelegenen [TerrainFeatureFemDat]</li>
-    <li>authorExperiencesWithMonsters(p=0.33)->[tellsAStoryOf] die Erforschung eines geheimen Kults mit einer Basis unter einem abgelegenen [TerrainFeatureNeuDat]</li>
+    <li>authorExperiencesWithMonsters(p=0.33)->[tellsAStoryOf] die Erforschung eines geheimen Kults, der in den Tiefen eines abgelegenen [TerrainFeatureMasGen] verborgen ist</li>
+    <li>authorExperiencesWithMonsters(p=0.33)->[tellsAStoryOf] die Erforschung eines geheimen Kults, der in den Tiefen einer abgelegenen [TerrainFeatureFemGen] verborgen ist</li>
+    <li>authorExperiencesWithMonsters(p=0.33)->[tellsAStoryOf] die Erforschung eines geheimen Kults, der in den Tiefen eines abgelegenen [TerrainFeatureNeuGen] verborgen ist</li>
     <li>authorExperiencesWithMonsters->[tellsAStoryOf] die Jagd nach einem mysteriösen Goldwürfel</li>
     <li>authorExperiencesWithMonsters->[tellsAStoryOf] tiefe Meditationen, die von einem Oberthrall eines Archistenkults geleitet werden</li>
     <li>authorExperiencesWithMonsters->[tellsAStoryOf] den Zerfall [ANYPAWN_possessive]er Existenz unter dem psychischen Einfluss von etwas namens Horax</li>
@@ -443,7 +442,7 @@
     <li>authorExperiencesWithMonsters->[tellsAStoryOf] einen Stamm, der irgendwie korrumpiert wurde, um dem dunklen Gott eines blutigen Lustkults zu dienen</li>
     <li>authorExperiencesWithMonsters->versucht [author], einen Stamm zu beschreiben, der die Tradition hat, Verstümmelungsrituale mit rostigen Klingen im Feuerschein durchzuführen</li>
     <li>authorExperiencesWithMonsters->[tellsAStoryOf] einen Lehrer und eine Schülerin, die tödliche Wahrheiten aussprach, die sie unmöglich wissen konnte</li>
-    <li>authorExperiencesWithMonsters->[tellsAStoryOf] einen Wissenschaftler, der versucht, seine verstorbene Frau mit uralten archotechnischen Mitteln wiederzubeleben</li>
+    <li>authorExperiencesWithMonsters->[tellsAStoryOf] einen Wissenschaftler, der versucht, seine verstorbene Frau mit uralter Archotechnik wiederzubeleben</li>
     <li>authorExperiencesWithMonsters->[tellsAStoryOf] einen Erkundungstrupp der Außenweltler, der blutige Regenfälle und einen Himmel überlebte, der versuchte, sie mit tiefster Schwärze zu erdrücken</li>
     <li>authorExperiencesWithMonsters->[tellsAStoryOf] ein Team, das eine uralte Grube voller schrecklicher fleischiger Kreaturen untersucht</li>
     <li>authorExperiencesWithMonsters->[tellsAStoryOf] einen Stammesschamanen, der versucht, einen Weg zu finden, die nächtlichen Angriffe auf sein Dorf zu stoppen, die von reanimierten toten [AnimalsDat] verübt werden</li>

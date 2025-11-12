@@ -118,21 +118,19 @@
     <li>beasts->animals</li>
   -->
   <ThreatReward_Manhunters_ItemPod.questNameRules.rulesStrings>
-    <li>questName(animalCount==1)->[beastThe] der [ConceptBadass]</li>
-    <li>questName(animalCount==1)->[beastA] der [ConceptBadass]</li>
-    <li>questName(animalCount==1)->Das [AdjectiveBadass]e [beast]</li>
-    <li>questName(animalCount==1)->Ein [AdjectiveBadass]es [beast]</li>
+    <li>questName(animalCount==1,p=2)->{replace: [animalKindDef_definite]; "der [animalKind_label]"-"der"; "die [animalKind_label]"-"die"; "das [animalKind_label]"-"das"} [AdjectiveBadass]e {lookup: [animalKind_label]; decline; 4}</li>
+    <li>questName(animalCount==1,p=0.17)->Das [AdjectiveBadass]e Biest</li>
+    <li>questName(animalCount==1,p=0.17)->Das [AdjectiveBadass]e Tier</li>
+    <li>questName(animalCount==1,p=0.17)->Die [AdjectiveBadass]e Bestie</li>
+    <li>questName(animalCount==1,p=2)->{replace: ^[animalKindDef_definite]; "^der "-"ein [AdjectiveBadass]er "; "^die "-"eine [AdjectiveBadass]e "; "^das "-"ein [AdjectiveBadass]es "}</li>
+    <li>questName(animalCount==1,p=0.17)->Ein [AdjectiveBadass]es Biest</li>
+    <li>questName(animalCount==1,p=0.17)->Ein [AdjectiveBadass]es Tier</li>
+    <li>questName(animalCount==1,p=0.17)->Eine [AdjectiveBadass]e Bestie</li>
     <li>questName(animalCount>=2)->Die [AdjectiveBadass]en [beasts]</li>
-    <li>beast->Biest</li>
-    <li>beast->Tier</li>
-    <li>beastThe(p=2)->[animalKindDef_definite]</li>
-    <li>beastThe->Das Biest</li>
-    <li>beastThe->Das Tier</li>
-    <li>beastA(p=2)->[animalKindDef_indefinite]</li>
-    <li>beastA->Ein Biest</li>
-    <li>beastA->Ein Tier</li>
+    <li>questName(animalCount>=2)->[AdjectiveBadass]e [beasts]</li>
     <li>beasts(p=4)->[animalKind_labelPlural]</li>
     <li>beasts->Bestien</li>
+    <li>beasts->Biester</li>
     <li>beasts->Tiere</li>
   </ThreatReward_Manhunters_ItemPod.questNameRules.rulesStrings>
   <!-- EN: {BASETEXT}\n\n[manhunterArrivalLetterEnd] -->
