@@ -113,12 +113,12 @@
     <li>secretInfo->die Waffenforschung</li>
     <li>secretInfo->die Gefangenenlager</li>
     <li>secretInfo->den Anführer</li>
-    <li>questDescription(asker_royalInCurrentFaction==True,lodgersCount==1)->[asker_nameFull], [asker_royalTitleInCurrentFaction] der Fraktion [asker_faction_name], flieht vor einer gefährlichen politischen Situation und möchte sich [shuttleDelayTicks_duration] lang in [map_label] verstecken. [threatsInfo5][allLodgerInfo][goodwillForMood][commonDescEnding]\n\n[joinerEnding]</li>
+    <li>questDescription(asker_royalInCurrentFaction==True,lodgersCount==1)->[asker_nameFull], [asker_royalTitleInCurrentFactionIndef] der Fraktion [asker_faction_name], flieht vor einer gefährlichen politischen Situation und möchte sich [shuttleDelayTicks_duration] lang in [map_label] verstecken. [threatsInfo5][allLodgerInfo][goodwillForMood][commonDescEnding]\n\n[joinerEnding]</li>
     <li>threatsInfo5(generateThreats==true,threatType==Raids,enemyFaction!=Mechanoid)->\n\nDie Rivalen von [asker_nameDef] haben die Fraktion [enemyFaction_name] angeheuert, um [asker_objective] zu jagen. Es [enemyGroupsParagraph]</li>
     <li>threatsInfo5(generateThreats==true,threatType==Raids,enemyFaction==Mechanoid)->\n\nDie Rivalen von [asker_nameDef] haben Mechanoiden provoziert, [asker_objective] zu jagen. Es [enemyGroupsParagraph]</li>
     <li>threatsInfo5(generateThreats==true,threatType==MechClusters)->\n\nDie Rivalen von [asker_nameDef] haben es irgendwie geschafft, Mechanoiden zu provozieren, [asker_objective] zu jagen. Es [enemyGroupsParagraph]</li>
     <li>threatsInfo5(generateThreats==false)-></li>
-    <li>questDescription(asker_royalInCurrentFaction==True,lodgersCount>=2)->[asker_nameFull], [asker_royalTitleInCurrentFaction] der Fraktion [asker_faction_name], möchte mit [lodgersCountMinusOne] höfischen [allyAllies] [shuttleDelayTicks_duration] lang in [map_label] bleiben. [threatsInfo6][allLodgerInfo][goodwillForMood][commonDescEnding]\n\n[joinerEnding]</li>
+    <li>questDescription(asker_royalInCurrentFaction==True,lodgersCount>=2)->[asker_nameFull], [asker_royalTitleInCurrentFactionIndef] der Fraktion [asker_faction_name], möchte mit [lodgersCountMinusOne] höfischen [allyAllies] [shuttleDelayTicks_duration] lang in [map_label] bleiben. [threatsInfo6][allLodgerInfo][goodwillForMood][commonDescEnding]\n\n[joinerEnding]</li>
     <li>threatsInfo6(generateThreats==true,threatType==Raids,enemyFaction!=Mechanoid)->\n\n[asker_nameDef] und [hisHerallyAllies] wurden zum Tode verurteilt und brauchen eine sichere Bleibe, bis sich die Chance ergibt, die Verräter am Hofe zu beseitigen. Allerdings haben die Rivalen von [asker_nameDef] die Fraktion [enemyFaction_name] angeheuert, um [asker_objective] zu jagen. Es [enemyGroupsParagraph]</li>
     <li>threatsInfo6(generateThreats==true,threatType==Raids,enemyFaction==Mechanoid)->\n\n[asker_nameDef] und [hisHerallyAllies] wurden zum Tode verurteilt und brauchen eine sichere Bleibe, bis sich die Chance ergibt, die Verräter am Hofe zu beseitigen. Allerdings haben [asker_nameDef]'s Rivalen das [enemyFaction_name] provoziert, [asker_objective] zu jagen. Es [enemyGroupsParagraph]</li>
     <li>threatsInfo6(generateThreats==true,threatType==MechClusters)->\n\n[asker_nameDef] und [hisHerallyAllies] wurden zum Tode verurteilt und brauchen eine sichere Bleibe, bis sich die Chance ergibt, die Verräter am Hofe zu beseitigen. Allerdings ist es den Rivalen von [asker_nameDef] gelungen, Mechanoiden auf [asker_objective] zu hetzen. Es [enemyGroupsParagraph]</li>
@@ -177,35 +177,36 @@
     <li>questName(generateThreats==true,priority=1)->Schutz für [lodgerIndef_Acc]</li>
     <li>questName(generateThreats==true,priority=1)->[lodgerIndef] in Schwierigkeiten</li>
     <li>questName(generateThreats==true,priority=1)->[lodgerIndef] in Gefahr</li>
+    <li>questName(generateThreats==true,priority=1)->[lodgerIndef] in Not</li>
     <li>questName(generateThreats==true,priority=1)->[lodgerIndef] unter Feindbeschuss</li>
     <li>questName(generateThreats==true,priority=1)->[lodgerIndef] im Fadenkreuz</li>
     <li>lodgerIndef(askerIsNull==true,lodgersCount==1)->[lodgers0_label]</li>
-    <li>lodgerIndef(askerIsNull==true,lodgersCount==1)->{lodgers0_gender ? Ein : Eine} [lodgers0_title]</li>
+    <li>lodgerIndef(askerIsNull==true,lodgersCount==1)->[lodgers0_titleIndef]</li>
     <li>lodgerIndef(askerIsNull==true,lodgersCount>=2)->Reisende</li>
     <li>lodgerIndef(asker_factionLeader==True,lodgersCount==1)->[lodgers0_label]</li>
-    <li>lodgerIndef(asker_factionLeader==True,lodgersCount==1)->{lodgers0_gender ? Ein : Eine} [lodgers0_title]</li>
-    <li>lodgerIndef(asker_factionLeader==True,lodgersCount==1)->{lodgers0_gender ? Ein Freund : Eine Freundin}</li>
-    <li>lodgerIndef(asker_factionLeader==True,lodgersCount==1)->{lodgers0_gender ? Ein Verbündeter : Eine Verbündete}</li>
+    <li>lodgerIndef(asker_factionLeader==True,lodgersCount==1)->[lodgers0_titleIndef]</li>
+    <li>lodgerIndef(asker_factionLeader==True,lodgersCount==1)->{lodgers0_gender ? ein Freund : eine Freundin}</li>
+    <li>lodgerIndef(asker_factionLeader==True,lodgersCount==1)->{lodgers0_gender ? ein Verbündeter : eine Verbündete}</li>
     <li>lodgerIndef(asker_factionLeader==True,lodgersCount>=2)->Freunde</li>
     <li>lodgerIndef(asker_factionLeader==True,lodgersCount>=2)->Verbündete</li>
-    <li>lodgerIndef(asker_royalInCurrentFaction==True,lodgersCount==1,p=3)->{asker_gender ? Ein : Eine} [asker_royalTitleInCurrentFaction]</li>
+    <li>lodgerIndef(asker_royalInCurrentFaction==True,lodgersCount==1,p=3)->[asker_royalTitleInCurrentFactionIndef]</li>
     <li>lodgerIndef(asker_royalInCurrentFaction==True,lodgersCount==1)->[asker_label]</li>
-    <li>lodgerIndef(asker_royalInCurrentFaction==True,lodgersCount==1)->{asker_gender ? Ein Fürstlicher : Eine Fürstliche}</li>
-    <li>lodgerIndef(asker_royalInCurrentFaction==True,lodgersCount==1)->{asker_gender ? Ein Adliger : Eine Adlige}</li>
-    <li>lodgerIndef(asker_royalInCurrentFaction==True,lodgersCount==1)->{asker_gender ? Ein Aristokrat : Eine Aristokratin}</li>
+    <li>lodgerIndef(asker_royalInCurrentFaction==True,lodgersCount==1)->{asker_gender ? ein Fürstlicher : eine Fürstliche}</li>
+    <li>lodgerIndef(asker_royalInCurrentFaction==True,lodgersCount==1)->{asker_gender ? ein Adliger : eine Adlige}</li>
+    <li>lodgerIndef(asker_royalInCurrentFaction==True,lodgersCount==1)->{asker_gender ? ein Aristokrat : eine Aristokratin}</li>
     <li>lodgerIndef(asker_royalInCurrentFaction==True,lodgersCount>=2)->Fürstliche</li>
     <li>lodgerIndef(asker_royalInCurrentFaction==True,lodgersCount>=2)->Adlige</li>
     <li>lodgerIndef(asker_royalInCurrentFaction==True,lodgersCount>=2)->Aristokraten</li>
     <li>lodgerIndef_Acc(askerIsNull==true,lodgersCount==1)->[lodgers0_label]</li>
-    <li>lodgerIndef_Acc(askerIsNull==true,lodgersCount==1)->{lodgers0_gender ? einen : eine} [lodgers0_title]</li>
+    <li>lodgerIndef_Acc(askerIsNull==true,lodgersCount==1)->{replace: [lodgers0_titleDef]; "der [lodgers0_title]"-"einen"; "die [lodgers0_title]"-"eine"; "das [lodgers0_title]"-"ein"} {lookup: [lodgers0_title]; decline; 3}</li>
     <li>lodgerIndef_Acc(askerIsNull==true,lodgersCount>=2)->Reisende</li>
     <li>lodgerIndef_Acc(asker_factionLeader==True,lodgersCount==1)->[lodgers0_label]</li>
-    <li>lodgerIndef_Acc(asker_factionLeader==True,lodgersCount==1)->{lodgers0_gender ? einen : eine} [lodgers0_title]</li>
+    <li>lodgerIndef_Acc(asker_factionLeader==True,lodgersCount==1)->{replace: [lodgers0_titleDef]; "der [lodgers0_title]"-"einen"; "die [lodgers0_title]"-"eine"; "das [lodgers0_title]"-"ein"} {lookup: [lodgers0_title]; decline; 3}</li>
     <li>lodgerIndef_Acc(asker_factionLeader==True,lodgersCount==1)->{lodgers0_gender ? einen Freund : eine Freundin}</li>
     <li>lodgerIndef_Acc(asker_factionLeader==True,lodgersCount==1)->{lodgers0_gender ? einen Verbündeten : eine Verbündete}</li>
     <li>lodgerIndef_Acc(asker_factionLeader==True,lodgersCount>=2)->Freunde</li>
     <li>lodgerIndef_Acc(asker_factionLeader==True,lodgersCount>=2)->Verbündete</li>
-    <li>lodgerIndef_Acc(asker_royalInCurrentFaction==True,lodgersCount==1,p=3)->{asker_gender ? einen : eine} [asker_royalTitleInCurrentFaction]</li>
+    <li>lodgerIndef_Acc(asker_royalInCurrentFaction==True,lodgersCount==1,p=3)->{replace: [asker_royalTitleInCurrentFactionDef]; "der [asker_royalTitleInCurrentFaction]"-"einen"; "die [asker_royalTitleInCurrentFaction]"-"eine"; "das [asker_royalTitleInCurrentFaction]"-"ein"} {lookup: [asker_royalTitleInCurrentFaction]; decline; 3}</li>
     <li>lodgerIndef_Acc(asker_royalInCurrentFaction==True,lodgersCount==1)->[asker_label]</li>
     <li>lodgerIndef_Acc(asker_royalInCurrentFaction==True,lodgersCount==1)->{asker_gender ? einen Fürstlichen : eine Fürstliche}</li>
     <li>lodgerIndef_Acc(asker_royalInCurrentFaction==True,lodgersCount==1)->{asker_gender ? einen Adligen : eine Adlige}</li>

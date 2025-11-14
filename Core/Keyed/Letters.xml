@@ -16,7 +16,7 @@
   <!-- EN: Summer -->
   <LetterLabelFirstSummerWarning>Sommer</LetterLabelFirstSummerWarning>
   <!-- EN: Summer has begun! But winter is coming.\n\nYour food crops won't grow in the winter cold. Be sure to store enough food to survive. You can build a walk-in refrigerator to prevent food from spoiling.\n\nTo prepare for winter, buy, steal, or make some parkas, or you'll freeze when you step outside. -->
-  <FirstSummerWarning>Der Sommer hat begonnen! Aber der Winter naht.\n\nDeine Ernte wird der Winterkälte nicht lange standhalten können. Stelle sicher, dass du genug Nahrungsmittel hast.\n\nDu kannst einen begehbaren Kühlraum bauen, um die Haltbarkeit der Nahrung zu erhöhen.\n\nFür deine Kolonisten kannst du dicke Kleidung, wie z.B. Parkas, kaufen, stehlen oder herstellen, um sie vor der Kälte zu schützen.</FirstSummerWarning>
+  <FirstSummerWarning>Der Sommer hat begonnen! Aber der Winter naht.\n\nDeine Ernte wird der Winterkälte nicht lange standhalten können. Stell sicher, dass du genügend Nahrung vorrätig hast.\n\nDu kannst einen begehbaren Kühlraum bauen, um die Haltbarkeit der Nahrung zu erhöhen.\n\nFür deine Kolonisten kannst du dicke Kleidung, wie z.B. Parkas, kaufen, stehlen oder herstellen, um sie vor der Kälte zu schützen.</FirstSummerWarning>
 
   <!-- EN: Relations with {0} have broken down completely. They are now hostile to you. -->
   <LetterRelationsChange_Hostile>Die Beziehung zur Fraktion {0} ist komplett zusammengebrochen. Sie ist jetzt dein Feind.</LetterRelationsChange_Hostile>  
@@ -88,13 +88,13 @@
   <!-- EN: Disease -->
   <LetterLabelNewDisease>Krankheit</LetterLabelNewDisease>
   <!-- EN: {PAWN} has gotten sick from {1}.\n\nEnsure you have a medical bed and a doctor. Make sure that {PAWN_definite} gets proper treatment and spends as much time in bed as possible. -->
-  <NewDisease>{PAWN} ist an {1} erkrankt.\n\nStelle sicher, dass du ein Krankenbett und einen Arzt hast. Sorge dafür, dass {PAWN_definite} eine vernünftige Behandlung bekommt und so viel Zeit wie möglich im Bett verbringt, um schnell wieder gesund zu werden.</NewDisease>
+  <NewDisease>{PAWN} hat {1_gender ? einen : eine : ein} {lookup: {1}; decline; 3}.\n\nStell sicher, dass du ein Krankenbett und einen Arzt hast. Sorge dafür, dass {PAWN_definite} vernünftig behandelt wird und möglichst viel Zeit im Bett verbringt.</NewDisease>
   <!-- EN: {PAWN} has gotten sick from {3}. The infection is in {PAWN_possessive} {1}.\n\nEnsure you have a medical bed and a doctor. Make sure that {PAWN_definite} gets proper treatment and spends as much time in bed as possible. -->
-  <NewPartDisease>{PAWN}'s {1} hat {3_gender ? einen : eine : ein} {replace: {3}; "er "-"en "}.\n\nStelle sicher, dass du ein Krankenbett und einen Arzt hast. Sorge dafür, dass {PAWN_definite} eine vernünftige Behandlung bekommt und so viel Zeit wie möglich im Bett verbringt, um schnell wieder gesund zu werden.</NewPartDisease>
+  <NewPartDisease>{PAWN} hat {3_gender ? einen : eine : ein} {lookup: {3}; decline; 3} {1_gender ? am : an der} {lookup: {1}; decline; 6}.\n\nStell sicher, dass du ein Krankenbett und einen Arzt hast. Sorge dafür, dass {PAWN_definite} vernünftig behandelt wird und möglichst viel Zeit im Bett verbringt.</NewPartDisease>
   <!-- EN: {PAWN_labelShort} has developed an illness: {1} -->
-  <NewDiseaseAnimal>{PAWN_labelShort} ist an {1} erkrankt.</NewDiseaseAnimal>
+  <NewDiseaseAnimal>{PAWN_labelShort} ist erkrankt: {1}</NewDiseaseAnimal>
   <!-- EN: {PAWN_labelShort} has developed an illness: {3} in {PAWN_possessive} {1} -->
-  <NewPartDiseaseAnimal>{PAWN_labelShort} ist an {3} erkrankt. Körperteil: {1}</NewPartDiseaseAnimal>
+  <NewPartDiseaseAnimal>{PAWN_labelShort} ist erkrankt: {3} {1_gender ? am : an der} {lookup: {1}; decline; 6}</NewPartDiseaseAnimal>
 
   <!-- EN: {0} was formerly part of your faction. -->
   <PawnWasFormerlyColonist>{0} ist ein ehemaliges Mitglied deiner Fraktion.</PawnWasFormerlyColonist>
@@ -434,7 +434,7 @@
   <!-- EN: Disease: {0} -->
   <LetterLabelTraitDisease>Krankheit: {0}</LetterLabelTraitDisease>
   <!-- EN: {PAWN_label} has gotten sick from {1}.\n\nEnsure you have a medical bed and a doctor. Make sure that {PAWN_pronoun} gets proper treatment and spends as much time in bed as possible. -->
-  <LetterTraitDisease>{PAWN_label} ist an {1} erkrankt.\n\nStelle sicher, dass du ein Krankenbett und einen Arzt hast. Sorge dafür, dass {PAWN_pronoun} eine vernünftige Behandlung bekommt und so viel Zeit wie möglich im Bett verbringt, um schnell wieder gesund zu werden.</LetterTraitDisease>
+  <LetterTraitDisease>{PAWN_label} ist an {1} erkrankt.\n\nStell sicher, dass du ein Krankenbett und einen Arzt hast. Sorge dafür, dass {PAWN_pronoun} vernünftig behandelt wird und möglichst viel Zeit im Bett verbringt.</LetterTraitDisease>
 
   <!-- Quests -->
   <!-- EN: Quest available: {0} -->
@@ -572,7 +572,7 @@
 
   <!-- Lung rot -->
   <!-- EN: {PAWN} has gotten sick from {1} due to long-term exposure to rot stink gas (which is given off by rotting corpses).\n\nEnsure you have a medical bed and a doctor. Make sure that {PAWN_definite} gets proper treatment. -->
-  <LetterTextLungRot>{PAWN} ist an {1} erkrankt, weil {PAWN_pronoun} über einen längeren Zeitraum stinkendem Verwesungsgeruch ausgesetzt war (der von verrottenden Leichen abgegeben wird).\n\nStelle sicher, dass du ein Krankenbett und einen Arzt hast. Sorge dafür, dass {PAWN_definite} eine vernünftige Behandlung bekommt, um schnell wieder gesund zu werden.</LetterTextLungRot>
+  <LetterTextLungRot>{PAWN} ist an {1} erkrankt, weil {PAWN_pronoun} über einen längeren Zeitraum stinkendem Verwesungsgeruch ausgesetzt war (der von verrottenden Leichen abgegeben wird).\n\nStell sicher, dass du ein Krankenbett und einen Arzt hast. Sorge dafür, dass {PAWN_definite} vernünftig behandelt wird.</LetterTextLungRot>
 
   <!-- Join Offer -->
   <!-- EN: Join offer: {PAWN_nameDef} -->

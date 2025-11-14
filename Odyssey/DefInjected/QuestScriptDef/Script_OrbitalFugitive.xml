@@ -28,14 +28,14 @@
   <OrbitalFugitive.questDescriptionRules.rulesStrings>
     <li>questDescription(askerIsNull==true)->Eine anonyme KI hat dich um Hilfe bei der Suche nach {fugitive_gender ? einem : einer} Gesetzlosen namens [fugitive_nameDef] gebeten. Die KI behauptet, dass [fugitive_nameDef] gesucht wird, weil [fugitive_pronoun] [reason_AI].\n\n[fugitive_nameDef] hat eine Transportkapsel gestohlen und ist zu einer verlassenen Orbitalplattform geflohen.\n\nDie KI hat Gerüchte über dein Gravschiff gehört und bittet dich deshalb, zu der verlassenen Plattform zu fliegen und [fugitive_nameDef] zu töten. Im Gegenzug wird sie dich mit einem Gravtech-Gerät belohnen.\n\nDie KI warnt dich, dass [fugitive_nameDef] möglicherweise von feindlichen Piraten begleitet wird.</li>
     <li>questDescription(asker_factionLeader==true)->[asker_nameFull], [asker_faction_leaderTitle] der Fraktion [asker_faction_name], hat uns eine Botschaft geschickt. {fugitive_gender ? Ein Flüchtiger : Eine Flüchtige} namens [fugitive_nameDef] ist aus dem Gefängnis ausgebrochen und mit einer Transportkapsel zu einer verlassenen Orbitalplattform geflohen. [fugitive_nameDef] wurde verhaftet, weil [fugitive_pronoun] [reason].\n\n[asker_nameDef] hat Gerüchte über dein Gravschiff gehört und bittet dich deshalb, zu der verlassenen Plattform zu fliegen und [fugitive_nameDef] zu töten. Wenn du das tust, wird [asker_pronoun] dich mit einem Gravtech-Gerät belohnen.\n\n[asker_nameDef] warnt dich, dass [fugitive_nameDef] möglicherweise von feindlichen Piraten begleitet wird.</li>
-    <li>questDescription(asker_royalInCurrentFaction==true)->[asker_nameFull], [asker_royalTitleInCurrentFaction] der Fraktion [asker_faction_name], bittet dich, {fugitive_gender ? einen gefährlichen Flüchtigen : eine gefährliche Flüchtige} namens [fugitive_nameDef] aufzuspüren und zu töten. {fugitive_gender ? Der : Die} Flüchtige wird gesucht, weil [fugitive_pronoun] [reason_royal].\n\n[fugitive_nameDef] versteckt sich auf einer verlassenen Orbitalplattform und wird möglicherweise von Piraten bewacht. Wenn du {fugitive_gender ? den Flüchtigen : die Flüchtige} tötest, belohnt dich [asker_nameDef] mit einem Gravtech-Gerät.</li>
+    <li>questDescription(asker_royalInCurrentFaction==true)->[asker_nameFull], [asker_royalTitleInCurrentFactionIndef] der Fraktion [asker_faction_name], bittet dich, {fugitive_gender ? einen gefährlichen Flüchtigen : eine gefährliche Flüchtige} namens [fugitive_nameDef] aufzuspüren und zu töten. {fugitive_gender ? Der : Die} Flüchtige wird gesucht, weil [fugitive_pronoun] [reason_royal].\n\n[fugitive_nameDef] versteckt sich auf einer verlassenen Orbitalplattform und wird möglicherweise von Piraten bewacht. Wenn du {fugitive_gender ? den Flüchtigen : die Flüchtige} tötest, belohnt dich [asker_nameDef] mit einem Gravtech-Gerät.</li>
     <li>reason_AI->mehrere hochstufige Subpersona-Kerne zerstört hat</li>
     <li>reason_AI->einen KI-Satelliten aus dem Orbit gebracht hat</li>
     <li>reason_AI->auf vielen fernen Planeten Verbrechen begangen hat</li>
     <li>reason_AI->ohne Lizenz mit übersinnlichen Artefakten im Orbit gehandelt hat</li>
     <li>reason_AI->[reason]</li>
-    <li>reason_royal->betrunken in einer Hochzeitsrede [den_Adelstitel] beleidigt hat</li>
-    <li>reason_royal->[den_Adelstitel] ermorden wollte</li>
+    <li>reason_royal->betrunken [asker_royalTitleInCurrentFactionDefAcc] in einer Hochzeitsrede beleidigt hat</li>
+    <li>reason_royal->[asker_royalTitleInCurrentFactionDefAcc] ermorden wollte</li>
     <li>reason_royal->in einer imperialen Raumfähre versehentlich einen Löschschaumrucksack gezündet hat</li>
     <li>reason_royal->in der Nähe einer imperialen Siedlung einen Tornadogenerator mutwillig benutzt hat</li>
     <li>reason_royal->eine Rebellion anzetteln wollte</li>
@@ -49,8 +49,7 @@
     <li>reason->betrunken ein Friedensritual entweiht hat</li>
     <li>reason->ein orbitales Handelsschiff zerstört hat</li>
     <!-- gender-specific -->
-    <li>den_Adelstitel(asker_royalTitleInCurrentFaction==Archon)->den Archon</li>
-    <li>den_Adelstitel(asker_royalTitleInCurrentFaction!=Archon)->{asker_gender ? den : die : das} {lookup: [asker_royalTitleInCurrentFaction]; decline; 7}</li>
+    <li>asker_royalTitleInCurrentFactionDefAcc->{replace: [asker_royalTitleInCurrentFactionDef]; "der [asker_royalTitleInCurrentFaction]"-"den"; "die [asker_royalTitleInCurrentFaction]"-"die"; "das [asker_royalTitleInCurrentFaction]"-"das"} {lookup: [asker_royalTitleInCurrentFaction]; decline; 7}</li>
   </OrbitalFugitive.questDescriptionRules.rulesStrings>
   <!-- EN:
     <li>questName->The Hunt for [fugitive_nameDef]</li>

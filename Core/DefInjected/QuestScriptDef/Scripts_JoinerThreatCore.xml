@@ -28,21 +28,35 @@
     <li>runnerIndef(childCount==1,priority=1)->a child</li>
   -->
   <ThreatReward_Raid_Joiner.questNameRules.rulesStrings>
-    <li>questName->Rette den Flüchtling</li>
-    <li>questName->Rette [joiner_nameIndef]</li>
-    <li>questName->Flüchtlingsrettung</li>
-    <li>questName->[joiner_nameIndef]s Rettung</li>
-    <li>questName->Hilf dem Flüchtling</li>
-    <li>questName->Hilf [joiner_nameIndef]</li>
-    <li>questName->Befreie den Flüchtling</li>
-    <li>questName->Befreie [joiner_nameIndef]</li>
+    <li>questName(p=0.5)->Die Rettung [runnerIndef_Gen]</li>
+    <li>questName(p=0.5)->Rettung [runnerIndef_Gen]</li>
+    <li>questName->[joiner_nameIndef]'s Rettung</li>
+    <li>questName->Hilfe für [runnerIndef_Acc]</li>
+    <li>questName->Zuflucht für [runnerIndef_Acc]</li>
+    <li>questName->[enemyFaction_pawnsPlural] jagen [runnerIndef_Acc]</li>
+    <li>questName->[enemyFaction_pawnsPlural] verfolgen [runnerIndef_Acc]</li>
+    <li>questName->[enemyFaction_pawnsPlural] auf Flüchtlingsjagd</li>
     <li>questName->[runnerIndef] auf der Flucht</li>
+    <li>questName->[runnerIndef] auf der Flucht vor {lookup: [enemyFaction_pawnsPlural]; decline_other; 2}</li>
+    <li>questName->[runnerIndef] im Visier</li>
+    <li>questName->[runnerIndef] im Visier von {lookup: [enemyFaction_pawnsPlural]; decline_other; 2}</li>
     <li>questName->[runnerIndef] sucht ein Zuhause</li>
-    <li>questName->[runnerIndef] vs. [enemyFaction_pawnsPlural]</li>
-    <li>runnerIndef->[joiner_titleIndef]</li>
+    <li>runnerIndef->[joiner_title]</li>
     <li>runnerIndef->[joiner_nameIndef]</li>
-    <li>runnerIndef->Ein Flüchtling</li>
-    <li>runnerIndef(childCount==1,priority=1)->Ein Kind</li>
+    <li>runnerIndef->ein Flüchtling</li>
+    <li>runnerIndef(childCount==1,priority=1)->ein Kind</li>
+    <li>runnerIndef_Gen->{replace: [joiner_titleDef]; "der [joiner_title]"-"eines"; "die [joiner_title]"-"einer"; "das [joiner_title]"-"eines"} {lookup: [joiner_title]; decline; 1}</li>
+    <li>runnerIndef_Gen->von [joiner_nameIndef]</li>
+    <li>runnerIndef_Gen->eines Flüchtlings</li>
+    <li>runnerIndef_Gen(childCount==1,priority=1)->eines Kindes</li>
+    <li>runnerIndef_Dat->{replace: [joiner_titleDef]; "der [joiner_title]"-"einem"; "die [joiner_title]"-"einer"; "das [joiner_title]"-"einem"} {lookup: [joiner_title]; decline; 2}</li>
+    <li>runnerIndef_Dat->[joiner_nameIndef]</li>
+    <li>runnerIndef_Dat->einem Flüchtling</li>
+    <li>runnerIndef_Dat(childCount==1,priority=1)->einem Kind</li>
+    <li>runnerIndef_Acc->{replace: [joiner_titleDef]; "der [joiner_title]"-"einen"; "die [joiner_title]"-"eine"; "das [joiner_title]"-"ein"} {lookup: [joiner_title]; decline; 3}</li>
+    <li>runnerIndef_Acc->[joiner_nameIndef]</li>
+    <li>runnerIndef_Acc->einen Flüchtling</li>
+    <li>runnerIndef_Acc(childCount==1,priority=1)->ein Kind</li>
   </ThreatReward_Raid_Joiner.questNameRules.rulesStrings>
   <!-- EN: {BASELABEL} chasing [../joiner_nameDef] -->
   <ThreatReward_Raid_Joiner.LetterLabelChasing.value.slateRef>{BASELABEL} verfolgen [../joiner_nameDef]</ThreatReward_Raid_Joiner.LetterLabelChasing.value.slateRef>

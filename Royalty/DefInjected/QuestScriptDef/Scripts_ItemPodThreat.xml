@@ -9,7 +9,7 @@
   <ThreatReward_GameCondition_ItemPod.questDescriptionRules.rulesStrings>
     <li>questDescription(askerIsNull==true)->Eine Maschinenpersona befindet sich im Orbit und möchte planetare Experimente durchführen. Wenn sie damit beginnt, wird [gameConditionDescriptionFuture].\n\nSie befürchtet, in Konflikt mit der Ethikkommission zu geraten, und bittet daher um deine Zustimmung.</li>
     <li>questDescription(asker_factionLeader==True)->Eine rachsüchtige Maschinenpersona bedroht die {lookup: [asker_faction_pawnsPlural]; decline_other; 4} der Fraktion [asker_faction_name]. Ihr [asker_faction_leaderTitle] [asker_nameFull] bittet dich, der Persona eine Nachricht zu schicken, dass du die Verantwortung für ihre Sünden übernimmst.\n\nWenn du das tust, wird die Persona ihre Wut gegen dich richten. Es wird [gameConditionDescriptionFuture].</li>
-    <li>questDescription(asker_royalInCurrentFaction==True)->[asker_nameFull], [asker_royalTitleInCurrentFaction] der Fraktion [asker_faction_name], möchte eine der Flächenangriffswaffen [asker_possessive]es Schiffes auf niedriger Stufe testen. Wenn [asker_pronoun] damit beginnt, wird [gameConditionDescriptionFuture].\n\nDa du ein hiesiger Landbesitzer nach imperialem Recht bist, benötigt [asker_nameDef] deine ehrenvolle Erlaubnis, um fortzufahren.</li>
+    <li>questDescription(asker_royalInCurrentFaction==True)->[asker_nameFull], [asker_royalTitleInCurrentFactionIndef] der Fraktion [asker_faction_name], möchte eine der Flächenangriffswaffen [asker_possessive]es Schiffes auf niedriger Stufe testen. Wenn [asker_pronoun] damit beginnt, wird [gameConditionDescriptionFuture].\n\nDa du ein hiesiger Landbesitzer nach imperialem Recht bist, benötigt [asker_nameDef] deine ehrenvolle Erlaubnis, um fortzufahren.</li>
   </ThreatReward_GameCondition_ItemPod.questDescriptionRules.rulesStrings>
   <!-- EN:
     <li>questName->[asker_nameDef]'s [gameCondition_label]</li>
@@ -20,14 +20,7 @@
   <ThreatReward_GameCondition_ItemPod.questNameRules.rulesStrings>
     <li>questName->[asker_nameDef]'s [gameCondition_label]</li>
     <li>questName->[gameCondition_indefinite] für [asker_nameDef]</li>
-    <li>questName(gameCondition==VolcanicWinter)->Bezahlter [gameCondition_label]</li>
-    <li>questName(gameCondition==ToxicFallout)->Bezahlter [gameCondition_label]</li>
-    <li>questName(gameCondition==HeatWave)->Bezahlte [gameCondition_label]</li>
-    <li>questName(gameCondition==ColdSnap)->Bezahlte [gameCondition_label]</li>
-    <li>questName(gameCondition==PsychicSuppression)->Bezahlte [gameCondition_label]</li>
-    <li>questName(gameCondition==WeatherController)->Bezahltes [gameCondition_label]</li>
-    <li>questName(gameCondition==EMIField)->Bezahltes [gameCondition_label]</li>
-    <li>questName(gameCondition==PsychicDrone)->Bezahltes [gameCondition_label]</li>
+    <li>questName->{replace: [gameCondition_definite]; "der [gameCondition_label]"-"Bezahlter"; "die [gameCondition_label]"-"Bezahlte"; "das [gameCondition_label]"-"Bezahltes"} [gameCondition_label]</li>
     <li>questName->[gameCondition_label] gegen Bezahlung</li>
   </ThreatReward_GameCondition_ItemPod.questNameRules.rulesStrings>
   
@@ -44,8 +37,8 @@
     <li>infestationArrivalLetterText(askerIsNull==true)->Die Insektenkolonien wurden durch ein Pheromon angelockt, das von einem Forschungsschiff im Orbit des Planeten freigesetzt wurde.</li>
     <li>questDescription(asker_factionLeader==True)->[asker_nameFull], [asker_faction_leaderTitle] der Fraktion [asker_faction_name], hat vermehrt mit Insektenplagen in [asker_possessive]en Lagern nahe [map_label] zu kämpfen. [asker_pronoun] möchte (*Threat)eine Plage von [hivesCount] Insektenkolonien(/Threat) in deine Richtung locken, um eines [asker_possessive]er Lager vor dem sicheren Untergang zu retten.[helpersParagraph]</li>
     <li>infestationArrivalLetterText(asker_factionLeader==True)->Die Insektenkolonien befielen ursprünglich nahegelegene Lager, die zu [asker_nameFull] von der Fraktion [asker_faction_name] gehörten.</li>
-    <li>questDescription(asker_royalInCurrentFaction==True)->[asker_nameFull], [asker_royalTitleInCurrentFaction] der Fraktion [asker_faction_name], hat Schwierigkeiten, in der Nähe von [map_label] zu landen, weil [asker_pronoun] ständig von Insektenplagen angegriffen wird. [asker_pronoun] möchte (*Threat)eine Plage von [hivesCount] Insektenkolonien(/Threat) in deine Richtung locken, damit du dich darum kümmerst.[helpersParagraph]</li>
-    <li>infestationArrivalLetterText(asker_royalInCurrentFaction==True)->Die Insektenplage wurde von [asker_nameFull], [asker_royalTitleInCurrentFaction] der Fraktion [asker_faction_name], in deine Richtung gelockt.</li>
+    <li>questDescription(asker_royalInCurrentFaction==True)->[asker_nameFull], [asker_royalTitleInCurrentFactionIndef] der Fraktion [asker_faction_name], hat Schwierigkeiten, in der Nähe von [map_label] zu landen, weil [asker_pronoun] ständig von Insektenplagen angegriffen wird. [asker_pronoun] möchte (*Threat)eine Plage von [hivesCount] Insektenkolonien(/Threat) in deine Richtung locken, damit du dich darum kümmerst.[helpersParagraph]</li>
+    <li>infestationArrivalLetterText(asker_royalInCurrentFaction==True)->Die Insektenplage wurde von [asker_nameFull], {replace: [asker_royalTitleInCurrentFactionDef]; "der [asker_royalTitleInCurrentFaction]"-"einem"; "die [asker_royalTitleInCurrentFaction]"-"einer"; "das [asker_royalTitleInCurrentFaction]"-"einem"} {lookup: [asker_royalTitleInCurrentFaction]; decline; 2} der Fraktion [asker_faction_name], in deine Richtung gelockt.</li>
   </ThreatReward_Infestation_ItemPod.questDescriptionRules.rulesStrings>
   <!-- EN:
     <li>questName->Pods and [insects]</li>
@@ -99,10 +92,10 @@
     <li>questDescription(asker_factionLeader==True,animalCount>=2)->Karawanen der Fraktion [asker_faction_name] kontaktieren dich und bitten um Hilfe. (*Threat)[animalCount] [animalKind_labelPlural](/Threat) haben menschliches Fleisch gewittert und belästigen die Reisenden. [asker_faction_leaderTitle] [asker_nameFull] braucht deine Hilfe, um die menschenjagenden Bestien von den Karawanen wegzulocken.[endSection]</li>
     <li>manhunterArrivalLetterEnd(asker_factionLeader==True,animalCount==1)->[animalKindDef_definite] war gerade dabei, Karawanen der Fraktion [asker_faction_name] zu belästigen.</li>
     <li>manhunterArrivalLetterEnd(asker_factionLeader==True,animalCount>=2)->Die [animalKind_labelPlural] waren gerade dabei, Karawanen der Fraktion [asker_faction_name] zu belästigen.</li>
-    <li>questDescription(asker_royalInCurrentFaction==True,animalCount==1)->[asker_nameFull], [asker_royalTitleInCurrentFaction] der Fraktion [asker_faction_name], berichtet, dass (*Threat)[animalKind_indefinite](/Threat) einen [asker_possessive]er Kundschafter gefressen hat. [asker_pronoun] möchte die menschenjagende Bestie in deine Richtung locken, damit du sie tötest und so [asker_possessive]e Ehre wiederherstellst.[endSection]</li>
-    <li>manhunterArrivalLetterEnd(asker_royalInCurrentFaction==True,animalCount==1)->[animalKindDef_definite] ist eingetroffen. Diese Bestie war für den Tod des Kundschafters verantwortlich, der unter der Obhut von [asker_royalTitleInCurrentFaction] [asker_nameFull] von der Fraktion [asker_faction_name] stand.</li>
-    <li>questDescription(asker_royalInCurrentFaction==True,animalCount>=2)->[asker_nameFull], [asker_royalTitleInCurrentFaction] der Fraktion [asker_faction_name], berichtet, dass (*Threat)[animalCount] [animalKind_labelPlural](/Threat) [asker_possessive]en Spähtrupp komplett ausgelöscht haben. [asker_pronoun] möchte die menschenjagenden Bestien in deine Richtung locken, damit du sie tötest und so [asker_possessive]e Ehre wiederherstellst.[endSection]</li>
-    <li>manhunterArrivalLetterEnd(asker_royalInCurrentFaction==True,animalCount>=2)->Die [animalKind_labelPlural] sind eingetroffen. Diese Bestien waren für den Tod des Spähtrupps verantwortlich, der unter der Führung von [asker_royalTitleInCurrentFaction] [asker_nameFull] der Fraktion [asker_faction_name] stand.</li>
+    <li>questDescription(asker_royalInCurrentFaction==True,animalCount==1)->[asker_nameFull], [asker_royalTitleInCurrentFactionIndef] der Fraktion [asker_faction_name], berichtet, dass (*Threat)[animalKind_indefinite](/Threat) einen [asker_possessive]er Kundschafter gefressen hat. [asker_pronoun] möchte die menschenjagende Bestie in deine Richtung locken, damit du sie tötest und so [asker_possessive]e Ehre wiederherstellst.[endSection]</li>
+    <li>manhunterArrivalLetterEnd(asker_royalInCurrentFaction==True,animalCount==1)->Diese Bestie war für den Tod des Kundschafters verantwortlich, der unter der Obhut {replace: [asker_royalTitleInCurrentFactionDef]; "der [asker_royalTitleInCurrentFaction]"-"des"; "die [asker_royalTitleInCurrentFaction]"-"der"; "das [asker_royalTitleInCurrentFaction]"-"des"} {lookup: [asker_royalTitleInCurrentFaction]; decline; 5} [asker_nameFull] der Fraktion [asker_faction_name] stand.</li>
+    <li>questDescription(asker_royalInCurrentFaction==True,animalCount>=2)->[asker_nameFull], [asker_royalTitleInCurrentFactionIndef] der Fraktion [asker_faction_name], berichtet, dass (*Threat)[animalCount] [animalKind_labelPlural](/Threat) [asker_possessive]en Spähtrupp komplett ausgelöscht haben. [asker_pronoun] möchte die menschenjagenden Bestien in deine Richtung locken, damit du sie tötest und so [asker_possessive]e Ehre wiederherstellst.[endSection]</li>
+    <li>manhunterArrivalLetterEnd(asker_royalInCurrentFaction==True,animalCount>=2)->Diese Bestien waren für die komplette Auslöschung des Spähtrupps verantwortlich, der unter der Obhut {replace: [asker_royalTitleInCurrentFactionDef]; "der [asker_royalTitleInCurrentFaction]"-"des"; "die [asker_royalTitleInCurrentFaction]"-"der"; "das [asker_royalTitleInCurrentFaction]"-"des"} {lookup: [asker_royalTitleInCurrentFaction]; decline; 5} [asker_nameFull] der Fraktion [asker_faction_name] stand.</li>
   </ThreatReward_Manhunters_ItemPod.questDescriptionRules.rulesStrings>
   <!-- EN:
     <li>questName(animalCount==1)->The [AdjectiveBadass] [beast]</li>
@@ -154,7 +147,7 @@
   <ThreatReward_SiteThreat_ItemPod.questDescriptionRules.rulesStrings>
     <li>questDescription(askerIsNull==true)->Ein Händler kontaktiert dich aus der Nähe. [threat] sind hinter ihm her! Er möchte, dass du ihnen ein Signal sendest, um sie in Richtung [map_label] zu locken, damit er die Flucht ergreifen kann.\n\nWenn du das Signal sendest, [askerEnemies] ein Lager in der Nähe errichten, um dich zu schikanieren. Er berichtet, dass dort [site/allSitePartsDescriptions]\n\nDie Bedrohung bleibt so lange bestehen, bis du das Lager zerstört hast.</li>
     <li>questDescription(asker_factionLeader==True)->[asker_nameFull], [asker_faction_leaderTitle] der Fraktion [asker_faction_name], bittet um deine Hilfe. [threat] belästigen [asker_possessive]e Siedlungen. [asker_pronoun] möchte, dass du ihnen ein Signal sendest, um sie in Richtung [map_label] zu locken.\n\nWenn du das Signal sendest, [askerEnemies] ein Lager in der Nähe errichten, um dich zu schikanieren. [asker_pronoun] berichtet, dass dort [site/allSitePartsDescriptions]\n\nDie Bedrohung bleibt so lange bestehen, bis du das Lager zerstört hast.</li>
-    <li>questDescription(asker_royalInCurrentFaction==True)->[asker_nameFull], [asker_royalTitleInCurrentFaction] der Fraktion [asker_faction_name], befindet sich auf der Durchreise nahe [map_label]. [threat] machen Jagd auf [asker_objective]! [asker_pronoun] möchte, dass du ihnen ein Signal sendest, um sie in Richtung [map_label] zu locken.\n\nWenn du das Signal sendest, [askerEnemies] ein Lager in der Nähe errichten, um dich zu schikanieren. [asker_pronoun] berichtet, dass dort [site/allSitePartsDescriptions]\n\nDie Bedrohung bleibt so lange bestehen, bis du das Lager zerstört hast.</li>
+    <li>questDescription(asker_royalInCurrentFaction==True)->[asker_nameFull], [asker_royalTitleInCurrentFactionIndef] der Fraktion [asker_faction_name], befindet sich auf der Durchreise nahe [map_label]. [threat] machen Jagd auf [asker_objective]! [asker_pronoun] möchte, dass du ihnen ein Signal sendest, um sie in Richtung [map_label] zu locken.\n\nWenn du das Signal sendest, [askerEnemies] ein Lager in der Nähe errichten, um dich zu schikanieren. [asker_pronoun] berichtet, dass dort [site/allSitePartsDescriptions]\n\nDie Bedrohung bleibt so lange bestehen, bis du das Lager zerstört hast.</li>
     <li>threat(priority=1,site/Outpost_exists==True)->[site/enemyFaction_pawnsPlural] der Fraktion [site/enemyFaction_name]</li>
     <li>threat(priority=1,site/MechCluster_exists==True)->Mechanoiden</li>
     <li>threat(priority=1,site/SleepingMechanoids_exists==True)->Mechanoiden</li>
@@ -174,7 +167,8 @@
   -->
   <ThreatReward_SiteThreat_ItemPod.questNameRules.rulesStrings>
     <li>questName->[asker_nameDef]'s [site/site_label]</li>
-    <li>questName->[site/site_label] für [asker_nameDef]</li>
+    <li>questName->[site/indefinite] für [asker_nameDef]</li>
+    <li>questName->{replace: [site/definite]; "der [site/label]"-"Bezahlter"; "die [site/label]"-"Bezahlte"; "das [site/label]"-"Bezahltes"} [site/label]</li>
     <li>questName->[site/site_label] gegen Bezahlung</li>
   </ThreatReward_SiteThreat_ItemPod.questNameRules.rulesStrings>
   <!-- EN: [defaultSiteAppearedLetterText]\n\nThis site was set up as a response to your insulting signals. -->

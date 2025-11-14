@@ -21,6 +21,8 @@ $items = [ordered]@{
 "DefInjected\PlanetLayerDef\*" = "\w+\.label"
 "DefInjected\MapGeneratorDef\*" = "\w+\.label"
 "DefInjected\WeatherDef\*" = "\w+\.label"
+"DefInjected\BackstoryDef\*" = "\w+\.title(Female)?"
+"DefInjected\GameConditionDef\*" = "\w+\.label"
 }
 
 # Header line for the output file

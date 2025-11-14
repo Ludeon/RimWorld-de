@@ -5,7 +5,7 @@
     <li>questDescription->[asker_nameFull], a [asker_royalTitleInCurrentFaction] of [asker_faction_name] is calling from nearby. [asker_possessive] guards were killed in an ambush. [asker_pronoun] escaped, but is now being followed by (*Threat)a manhunting [animalKindDef_label](/Threat).\n\n[asker_nameDef] wants you to keep [asker_objective] safe at [map_definite] for a few hours until [asker_possessive] shuttle can come pick [asker_objective] up.\n\n[asker_pronoun] will bestow [royalFavorReward] [asker_faction_royalFavorLabel] on whoever accepts this quest. This is enough [asker_faction_royalFavorLabel] to receive the royal title of Novice, and all benefits that come with it - including the first level of psychic powers.</li>
   -->
   <Intro_Wimp.questDescriptionRules.rulesStrings>
-    <li>questDescription->[asker_nameFull], [asker_royalTitleInCurrentFaction] der Fraktion [asker_faction_name], kontaktiert dich aus der Nähe. [asker_possessive]e Leibwächter kamen bei einem Hinterhalt ums Leben. [asker_pronoun] konnte zwar entkommen, aber (*Threat)[animalKindDef_indefinite](/Threat) verfolgt [asker_objective] nun auf Schritt und Tritt!\n\n[asker_nameDef] möchte, dass du [asker_objective] für ein paar Stunden in [map_label] beschützt, bis [asker_possessive]e Raumfähre kommt und [asker_objective] abholt.\n\n[asker_pronoun] wird demjenigen, der diese Quest annimmt, [royalFavorReward] [asker_faction_royalFavorLabel] gewähren. Das ist genug [asker_faction_royalFavorLabel], um den Adelstitel eines Novizen und alle damit verbundenen Privilegien zu erhalten – einschließlich mentaler Kräfte der ersten Stufe.</li>
+    <li>questDescription->[asker_nameFull], [asker_royalTitleInCurrentFactionIndef] der Fraktion [asker_faction_name], kontaktiert dich aus der Nähe. [asker_possessive]e Leibwächter kamen bei einem Hinterhalt ums Leben. [asker_pronoun] konnte zwar entkommen, aber (*Threat)[animalKindDef_indefinite](/Threat) verfolgt [asker_objective] nun auf Schritt und Tritt!\n\n[asker_nameDef] möchte, dass du [asker_objective] für ein paar Stunden in [map_label] beschützt, bis [asker_possessive]e Raumfähre kommt und [asker_objective] abholt.\n\n[asker_pronoun] wird demjenigen, der diese Quest annimmt, [royalFavorReward] [asker_faction_royalFavorLabel] gewähren. Das ist genug [asker_faction_royalFavorLabel], um den Adelstitel eines Novizen und alle damit verbundenen Privilegien zu erhalten – einschließlich mentaler Kräfte der ersten Stufe.</li>
   </Intro_Wimp.questDescriptionRules.rulesStrings>
   <!-- EN:
     <li>questName->the [adjAny] [asker_royalTitleInCurrentFaction]</li>
@@ -15,7 +15,7 @@
     <li>adjAny->ambushed</li>
   -->
   <Intro_Wimp.questNameRules.rulesStrings>
-    <li>questName->{asker_gender ? Der : Die} [adjAny]e [asker_royalTitleInCurrentFaction]</li>
+    <li>questName->{replace: [asker_royalTitleInCurrentFactionDef]; "der [asker_royalTitleInCurrentFaction]"-"der"; "die [asker_royalTitleInCurrentFaction]"-"die"; "das [asker_royalTitleInCurrentFaction]"-"das"} [adjAny]e {lookup: [asker_royalTitleInCurrentFaction]; decline; 4}</li>
     <li>adjAny->gejagt</li>
     <li>adjAny->fliehend</li>
     <li>adjAny->einsam</li>
