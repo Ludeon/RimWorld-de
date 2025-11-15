@@ -76,8 +76,6 @@
     <li>othersWillNotAccept->{PAWNSALIVECOUNT_multiple ? Die anderen sind : Der letzte [lodgersLabel] ist} nicht bereit, das zu akzeptieren</li>
     <li>turnedViolent->[othersWillNotAccept], und {PAWNSALIVECOUNT_multiple ? haben : hat} sich gewaltsam gegen dich aufgelehnt.</li>
     <li>decidedToLeave->[othersWillNotAccept], und {PAWNSALIVECOUNT_multiple ? haben : hat} beschlossen, das Gebiet zu verlassen.</li>
-    <!-- <li>whoAskedToStay->who asked to stay with you</li> -->
-    <!-- <li>oneOfThe->one of the desperate [faction_pawnsPlural] who asked to stay with you</li> -->
     <li>questOver->Die Quest '[resolvedQuestName]' ist beendet.</li>
     <li>letterIntroDeath->{SUBJECT_definite}, einer der verzweifelten {lookup: [faction_pawnsPlural]; decline_other; 5}, der bei dir bleiben wollte, ist gestorben.</li>
     <li>lodgerDiedMemoryThoughtLetterLabel->[lodgersLabel] gestorben: Wut</li>
@@ -175,8 +173,6 @@
     <li>offer(lodgerCount>=2)->bieten</li>
     <li>lodgersPronoun(lodgerCount==1)->[asker_pronoun]</li>
     <li>lodgersPronoun(lodgerCount>=2)->sie</li>
-    <!-- <li>lodgersPreposition(lodgerCount==1)->[asker_objective]self</li> -->
-    <!-- <li>lodgersPreposition(lodgerCount>=2)->themselves</li> -->
     <li>lodgersObjectiveAcc(lodgerCount==1)->[asker_objective]</li>
     <li>lodgersObjectiveAcc(lodgerCount>=2)->sie</li>
     <li>lodgersPossessive(lodgerCount==1)->[asker_possessive]</li>
@@ -185,7 +181,7 @@
     <li>lodgersSingularOrPluralDef(lodgerCount>=2)->die [lodgersLabelPlural]</li>
     <li>belohnt(lodgerCount==1)->belohnt</li>
     <li>belohnt(lodgerCount>=2)->belohnen</li>
-    <li>questDescription->[approachInfo] [claimInfo] [asker_nameDef] bittet dich um Erlaubnis, [questDurationTicks_duration] lang in [map_label] bleiben zu dürfen, um sich auszuruhen und zu sammeln.\n\nIm Gegenzug [offer] [lodgersPronoun] dir an, in dieser Zeit kostenlos zu arbeiten und zu kämpfen.\n\n[joinInfo] Vielleicht [belohnt] [lodgersPronoun] dich später auch für deine Hilfe – aber [lodgersPossessive]e wahren Absichten bleiben ein Geheimnis.\n\n[travelerInfo] keiner Fraktion an. Du kannst [lodgersObjectiveAcc] töten, inhaftieren, verkaufen oder [lodgersPossessive]e Organe entnehmen, ohne diplomatische Konsequenzen befürchten zu müssen.</li>
+    <li>questDescription->[approachInfo] [claimInfo] [asker_nameDef] bittet dich um Erlaubnis, [questDurationTicks_duration] lang in [map_label] bleiben zu dürfen, um sich auszuruhen und zu sammeln.\n\nIm Gegenzug [offer] [lodgersPronoun] dir an, in dieser Zeit kostenlos zu arbeiten und zu kämpfen.\n\n[joinInfo] Vielleicht [belohnt] [lodgersPronoun] dich später auch für deine Hilfe – aber [lodgersPossessive]e wahren Absichten bleiben ein Geheimnis.\n\n[travelerInfo] fraktionslos. Du kannst [lodgersObjectiveAcc] töten, inhaftieren, verkaufen oder [lodgersPossessive]e Organe entnehmen, ohne diplomatische Konsequenzen befürchten zu müssen.</li>
     <li>approachInfo(lodgerCount==1)->Ein verzweifelter [faction_pawnSingular] namens [asker_nameDef] nähert sich.</li>
     <li>approachInfo(lodgerCount==2)->[asker_nameDef] und ein anderer verzweifelter [faction_pawnSingular] nähern sich.</li>
     <li>approachInfo(lodgerCount==2,childCount==1,priority=1)->[asker_nameDef] nähert sich mit einem Kind im Schlepptau.</li>
@@ -206,8 +202,8 @@
     <li>claimInfo(lodgerCount>=2)->Sie behaupten, wegen moralischer Meinungsverschiedenheiten aus ihrer Stadt verbannt worden zu sein.</li>
     <li>joinInfo(lodgerCount==1)->Wenn du [asker_objective] zufriedenstellst, könnte [asker_pronoun] gewillt sein, deiner Kolonie beizutreten.</li>
     <li>joinInfo(lodgerCount>=2)->Wenn du sie zufriedenstellst, könnten einige von ihnen gewillt sein, deiner Kolonie beizutreten.</li>
-    <li>travelerInfo(lodgerCount==1)->Dieser [faction_pawnSingular] gehört</li>
-    <li>travelerInfo(lodgerCount>=2)->Diese {lookup: [faction_pawnsPlural]; decline_other; 4} gehören</li>
+    <li>travelerInfo(lodgerCount==1)->Dieser [faction_pawnSingular] ist</li>
+    <li>travelerInfo(lodgerCount>=2)->Diese {lookup: [faction_pawnsPlural]; decline_other; 4} sind</li>
   </Hospitality_Refugee.questDescriptionRules.rulesStrings>
   <!-- EN:
     <li>questName(lodgerCount==1)->[asker_nameDef] the [lodgerAdj]</li>
@@ -341,7 +337,7 @@
     <li>areIs(lodgerCount>=2)->are</li>
   -->
   <RefugeeBetrayal.questDescriptionRules.rulesStrings>
-    <li>questDescription->[factionOpponent_nameDef], [factionOpponent_kind] der Fraktion [factionOpponent_faction_name], hat erfahren, dass [asker_nameDef] [otherLodgers] in [map_label] zu Gast [areIs]. [factionOpponent_pronoun] ist mit [asker_nameDef] verfeindet und will [asker_objective] tot sehen.\n\n[factionOpponent_pronoun] wird dir folgende Belohnung schicken, wenn du alle Mitglieder der Fraktion [faction_name] tötest (Gesamtwert [betrayalRewardMarketValue_money]):\n\n[betrayalRewards]</li>
+    <li>questDescription->[factionOpponent_nameDef], [factionOpponent_faction_pawnSingularIndef] der Fraktion [factionOpponent_faction_name], hat erfahren, dass [asker_nameDef] [otherLodgers] in [map_label] zu Gast [areIs]. [factionOpponent_pronoun] ist mit [asker_nameDef] verfeindet und will [asker_objective] tot sehen.\n\n[factionOpponent_pronoun] wird dir folgende Belohnung schicken, wenn du alle Mitglieder der Fraktion [faction_name] tötest (Gesamtwert [betrayalRewardMarketValue_money]):\n\n[betrayalRewards]</li>
     <li>lodgersLabelSingularOrPlural(lodgerCount==1)->[lodgersLabel]</li>
     <li>lodgersLabelSingularOrPlural(lodgerCount>=2)->[lodgersLabelPlural]</li>
     <li>otherLodgers(lodgerCount==1)-></li>

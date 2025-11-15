@@ -42,12 +42,12 @@
     <li>threatsInfo6(generateThreats==false)-></li>
   -->
   <Hospitality_Prisoners.questDescriptionRules.rulesStrings>
-    <li>questDescription(askerIsNull==true,lodgersCount==1)->Der Kapitän eines Schiffes im Orbit möchte, dass du in [map_label] für [shuttleDelayTicks_duration] auf {lodgers0_gender ? einen Gefangenen : eine Gefangene} namens [lodgers0_nameFull] aufpasst. [allLodgerInfo][threatsInfo1][commonDescEnding]</li>
+    <li>questDescription(askerIsNull==true,lodgersCount==1)->Der Kapitän eines orbitalen Schiffes möchte, dass du in [map_label] für [shuttleDelayTicks_duration] auf {lodgers0_gender ? einen Gefangenen : eine Gefangene} namens [lodgers0_nameFull] aufpasst. [allLodgerInfo][threatsInfo1][commonDescEnding]</li>
     <li>threatsInfo1(generateThreats==true,threatType==Raids,enemyFaction!=Mechanoid)->\n\n[lodgers0_nameDef] hat kürzlich auf das Lieblingskind von [enemyFaction_leader_nameFull], [enemyFaction_leaderTitle] der Fraktion [enemyFaction_name] gespuckt. [enemyFaction_leader_nameDef] wird [enemyFaction_pawnsPlural] aussenden, um Rache an denen zu üben, die es wagen, {lodgers0_gender ? den Gefangenen : die Gefangene} zu beschützen. Es [enemyGroupsParagraph]</li>
     <li>threatsInfo1(generateThreats==true,threatType==Raids,enemyFaction==Mechanoid)->\n\n[threatsInfoMechRaidsSingleHuman] Es [enemyGroupsParagraph]</li>
     <li>threatsInfo1(generateThreats==true,threatType==MechClusters)->\n\n[threatsInfoMechClustersSingleHuman] Es [enemyGroupsParagraph]</li>
     <li>threatsInfo1(generateThreats==false)-></li>
-    <li>questDescription(askerIsNull==true,lodgersCount>=2)->Der Kapitän eines Schiffes im Orbit möchte, dass du in [map_label] für [shuttleDelayTicks_duration] auf [lodgersCount] Gefangene aufpasst. [allLodgerInfo][threatsInfo2][commonDescEnding]</li>
+    <li>questDescription(askerIsNull==true,lodgersCount>=2)->Der Kapitän eines orbitalen Schiffes möchte, dass du in [map_label] für [shuttleDelayTicks_duration] auf [lodgersCount] Gefangene aufpasst. [allLodgerInfo][threatsInfo2][commonDescEnding]</li>
     <li>threatsInfo2(generateThreats==true,threatType==Raids,enemyFaction!=Mechanoid)->\n\nDie Gefangenen haben massenhaft Mitglieder der Fraktion [enemyFaction_name] getötet. Die Familien der Opfer werden [enemyFaction_pawnsPlural] aussenden, um Rache an ihnen zu üben. Es [enemyGroupsParagraph]</li>
     <li>threatsInfo2(generateThreats==true,threatType==Raids,enemyFaction==Mechanoid)->\n\nDie Gefangenen haben [recently] [mechViolation], und sind nun im Fadenkreuz eines Mechanoidennests. Es [enemyGroupsParagraph]</li>
     <li>threatsInfo2(generateThreats==true,threatType==MechClusters)->\n\n[threatsInfoMechClustersMultiPrisoners] Es [enemyGroupsParagraph]</li>

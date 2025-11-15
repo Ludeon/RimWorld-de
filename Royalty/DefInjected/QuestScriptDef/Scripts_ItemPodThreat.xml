@@ -83,15 +83,15 @@
   -->
   <ThreatReward_Manhunters_ItemPod.questDescriptionRules.rulesStrings>
     <li>endSection(animalCount==1)->[helpersParagraph][animalKindDef_definite] wird [manhuntersDelayTicks_duration], nachdem du die Quest angenommen hast, in [map_label] eintreffen.</li>
-    <li>endSection(animalCount>=2)->[helpersParagraph]Die [animalKind_labelPlural] werden [manhuntersDelayTicks_duration], nachdem du die Quest angenommen hast, in [map_label] eintreffen.</li>
+    <li>endSection(animalCount>=2)->[helpersParagraph]Die {lookup: [animalKind_labelPlural]; decline_other; 4} werden [manhuntersDelayTicks_duration], nachdem du die Quest angenommen hast, in [map_label] eintreffen.</li>
     <li>questDescription(askerIsNull==true,animalCount==1)->Ein Händler kontaktiert dich und bittet um Hilfe. (*Threat)[animalKindDef_indefinite](/Threat) hat menschliches Fleisch gewittert und macht Jagd auf ihn! Du sollst ihm dabei helfen, die menschenjagende Bestie wegzulocken.[endSection]</li>
     <li>manhunterArrivalLetterEnd(askerIsNull==true,animalCount==1)->[animalKindDef_definite] war gerade dabei, einen Händler in der Nähe zu jagen.</li>
     <li>questDescription(askerIsNull==true,animalCount>=2)->Ein Händler kontaktiert dich und bittet um Hilfe. (*Threat)[animalCount] [animalKind_labelPlural](/Threat) haben menschliches Fleisch gewittert und machen Jagd auf ihn! Du sollst ihm dabei helfen, die menschenjagenden Bestien wegzulocken.[endSection]</li>
-    <li>manhunterArrivalLetterEnd(askerIsNull==true,animalCount>=2)->Die [animalKind_labelPlural] waren gerade dabei, einen Händler in der Nähe zu jagen.</li>
+    <li>manhunterArrivalLetterEnd(askerIsNull==true,animalCount>=2)->Die {lookup: [animalKind_labelPlural]; decline_other; 4} waren gerade dabei, einen Händler in der Nähe zu jagen.</li>
     <li>questDescription(asker_factionLeader==True,animalCount==1)->Karawanen der Fraktion [asker_faction_name] kontaktieren dich und bitten um Hilfe. (*Threat)[animalKindDef_indefinite](/Threat) hat menschliches Fleisch gewittert und belästigt die Reisenden. [asker_faction_leaderTitle] [asker_nameFull] braucht deine Hilfe, um die menschenjagende Bestie von den Karawanen wegzulocken.[endSection]</li>
     <li>questDescription(asker_factionLeader==True,animalCount>=2)->Karawanen der Fraktion [asker_faction_name] kontaktieren dich und bitten um Hilfe. (*Threat)[animalCount] [animalKind_labelPlural](/Threat) haben menschliches Fleisch gewittert und belästigen die Reisenden. [asker_faction_leaderTitle] [asker_nameFull] braucht deine Hilfe, um die menschenjagenden Bestien von den Karawanen wegzulocken.[endSection]</li>
     <li>manhunterArrivalLetterEnd(asker_factionLeader==True,animalCount==1)->[animalKindDef_definite] war gerade dabei, Karawanen der Fraktion [asker_faction_name] zu belästigen.</li>
-    <li>manhunterArrivalLetterEnd(asker_factionLeader==True,animalCount>=2)->Die [animalKind_labelPlural] waren gerade dabei, Karawanen der Fraktion [asker_faction_name] zu belästigen.</li>
+    <li>manhunterArrivalLetterEnd(asker_factionLeader==True,animalCount>=2)->Die {lookup: [animalKind_labelPlural]; decline_other; 4} waren gerade dabei, Karawanen der Fraktion [asker_faction_name] zu belästigen.</li>
     <li>questDescription(asker_royalInCurrentFaction==True,animalCount==1)->[asker_nameFull], [asker_royalTitleInCurrentFactionIndef] der Fraktion [asker_faction_name], berichtet, dass (*Threat)[animalKind_indefinite](/Threat) einen [asker_possessive]er Kundschafter gefressen hat. [asker_pronoun] möchte die menschenjagende Bestie in deine Richtung locken, damit du sie tötest und so [asker_possessive]e Ehre wiederherstellst.[endSection]</li>
     <li>manhunterArrivalLetterEnd(asker_royalInCurrentFaction==True,animalCount==1)->Diese Bestie war für den Tod des Kundschafters verantwortlich, der unter der Obhut {replace: [asker_royalTitleInCurrentFactionDef]; "der [asker_royalTitleInCurrentFaction]"-"des"; "die [asker_royalTitleInCurrentFaction]"-"der"; "das [asker_royalTitleInCurrentFaction]"-"des"} {lookup: [asker_royalTitleInCurrentFaction]; decline; 5} [asker_nameFull] der Fraktion [asker_faction_name] stand.</li>
     <li>questDescription(asker_royalInCurrentFaction==True,animalCount>=2)->[asker_nameFull], [asker_royalTitleInCurrentFactionIndef] der Fraktion [asker_faction_name], berichtet, dass (*Threat)[animalCount] [animalKind_labelPlural](/Threat) [asker_possessive]en Spähtrupp komplett ausgelöscht haben. [asker_pronoun] möchte die menschenjagenden Bestien in deine Richtung locken, damit du sie tötest und so [asker_possessive]e Ehre wiederherstellst.[endSection]</li>
@@ -119,7 +119,7 @@
     <li>questName(animalCount==1,p=0.17)->Ein [AdjectiveBadass]es Biest</li>
     <li>questName(animalCount==1,p=0.17)->Ein [AdjectiveBadass]es Tier</li>
     <li>questName(animalCount==1,p=0.17)->Eine [AdjectiveBadass]e Bestie</li>
-    <li>questName(animalCount>=2)->Die [AdjectiveBadass]en [beasts]</li>
+    <li>questName(animalCount>=2)->Die [AdjectiveBadass]en {lookup: [beasts]; decline_other; 4}</li>
     <li>questName(animalCount>=2)->[AdjectiveBadass]e [beasts]</li>
     <li>beasts(p=4)->[animalKind_labelPlural]</li>
     <li>beasts->Bestien</li>

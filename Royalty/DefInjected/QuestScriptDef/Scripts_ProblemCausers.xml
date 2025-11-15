@@ -14,12 +14,12 @@
     <li>questName(siteFaction==Mechanoid)->Mech cluster with a [problemCauserLabel]</li>
   -->
   <ProblemCauser.questNameRules.rulesStrings>
-    <li>questName(siteFaction==Pirate)->Piraten mit [problemCauserLabel]</li>
-    <li>questName(siteFaction==Mechanoid)->Mech-Cluster mit [problemCauserLabel]</li>
+    <li>questName(siteFaction==Pirate)->Piraten mit {replace: [definite]; "der [label]"-"einem"; "die [label]"-"einer"; "das [label]"-"einem"} {lookup: [problemCauserLabel]; decline; 2}</li>
+    <li>questName(siteFaction==Mechanoid)->Mech-Cluster mit {replace: [definite]; "der [label]"-"einem"; "die [label]"-"einer"; "das [label]"-"einem"} {lookup: [problemCauserLabel]; decline; 2}</li>
   </ProblemCauser.questNameRules.rulesStrings>
   <!-- EN: [problemCauserLabel] destroyed -->
   <ProblemCauser.LetterLabelSuccess.slateRef>[problemCauserLabel] zerstört</ProblemCauser.LetterLabelSuccess.slateRef>
   <!-- EN: You have destroyed the [problemCauserLabel] that was affecting [map_definite]! -->
-  <ProblemCauser.LetterTextSuccess.slateRef>Du hast {SUBJECT_gender ? den : die : das} [problemCauserLabel] zerstört, {SUBJECT_gender ? der : welche : welches} [map_label] bedroht hat!</ProblemCauser.LetterTextSuccess.slateRef>
+  <ProblemCauser.LetterTextSuccess.slateRef>Du hast {replace: [definite]; "der [label]"-"den"; "die [label]"-"die"; "das [label]"-"das"} {lookup: [problemCauserLabel]; decline; 7} zerstört, {replace: [definite]; "der [label]"-"der"; "die [label]"-"die"; "das [label]"-"das"} [map_label] beeinträchtigt hat!</ProblemCauser.LetterTextSuccess.slateRef>
   
 </LanguageData>

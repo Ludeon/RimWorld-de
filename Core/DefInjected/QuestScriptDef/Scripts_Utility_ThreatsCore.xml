@@ -12,11 +12,11 @@
       <li>root(priority=1,sitePart==SunBlocker)->(*Threat)ein Sonnenblocker(/Threat) ist, der die ganze Region mit einem Schatten überdeckt,</li>
       <li>root(priority=1,sitePart==EMIDynamo)->(*Threat)ein EMI-Generator(/Threat) ist, der in der ganzen Region elektrische Geräte lahmlegt,</li>
       <li>root(priority=1,sitePart==ToxicSpewer)->(*Threat)ein Giftspeier(/Threat) ist, der die ganze Region mit Gift besprüht,</li>
-      <li>root(priority=1,sitePart==RaidSource)->ein militärischer Stützpunkt ist, der von (*Threat)[enemiesCount] {lookup: [enemiesLabel]; plural; 3}(/Threat) bewacht wird, die deine Kolonie alle [mtbDays] überfallen werden,</li>
-      <li>root(priority=1,sitePart==Outpost,enemiesCount==1)->ein gegnerischer Außenposten ist, der von (*Threat)[enemiesCount] {lookup: [enemiesLabel]; plural; 3}(/Threat) bewacht wird,</li>
-      <li>root(priority=1,sitePart==Outpost,enemiesCount>1)->ein gegnerischer Außenposten ist, der von (*Threat)[enemiesCount] {lookup: [enemiesLabel]; plural; 3}(/Threat) bewacht wird,</li>
-      <li>root(priority=1,sitePart==BanditCamp,enemiesCount==1)->ein Banditenlager ist, das von (*Threat)[enemiesCount] {lookup: [enemiesLabel]; plural; 3}(/Threat) bewacht wird,</li>
-      <li>root(priority=1,sitePart==BanditCamp,enemiesCount>1)->ein Banditenlager ist, das von (*Threat)[enemiesCount] {lookup: [enemiesLabel]; plural; 3}(/Threat) bewacht wird,</li>
+      <li>root(priority=1,sitePart==RaidSource)->ein militärischer Stützpunkt ist, der von (*Threat)[enemiesCount] {lookup: [enemiesLabel]; decline_other; 2}(/Threat) bewacht wird, die deine Kolonie alle [mtbDays] überfallen werden,</li>
+      <li>root(priority=1,sitePart==Outpost,enemiesCount==1)->ein gegnerischer Außenposten ist, der von (*Threat)[enemiesCount] {lookup: [enemiesLabel]; decline_other; 2}(/Threat) bewacht wird,</li>
+      <li>root(priority=1,sitePart==Outpost,enemiesCount>1)->ein gegnerischer Außenposten ist, der von (*Threat)[enemiesCount] {lookup: [enemiesLabel]; decline_other; 2}(/Threat) bewacht wird,</li>
+      <li>root(priority=1,sitePart==BanditCamp,enemiesCount==1)->ein Banditenlager ist, das von (*Threat)[enemiesCount] {lookup: [enemiesLabel]; decline_other; 2}(/Threat) bewacht wird,</li>
+      <li>root(priority=1,sitePart==BanditCamp,enemiesCount>1)->ein Banditenlager ist, das von (*Threat)[enemiesCount] {lookup: [enemiesLabel]; decline_other; 2}(/Threat) bewacht wird,</li>
       <li>root(priority=1,sitePart==Manhunters,count==1)->(*Threat)[count] [kindLabel](/Threat) jeden Menschen in Sichtweite angreifen wird</li>
       <li>root(priority=1,sitePart==Manhunters,count>1)->(*Threat)[count] verrückte [kindLabel](/Threat) sind</li>
       <li>root(priority=1,sitePart==SleepingMechanoids,count==1)->(*Threat)ein schlafender Mechanoid(/Threat) in der Nähe ist</li>

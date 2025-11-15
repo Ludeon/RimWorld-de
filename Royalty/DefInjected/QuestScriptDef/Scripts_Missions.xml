@@ -7,7 +7,7 @@
     <li>soldiers(requiredPawnCount==1)->[requiredPawnCount] soldier</li>
   -->
   <Mission_BanditCamp.questDescriptionRules.rulesStrings>
-    <li>questDescription->[enemiesCount] [enemiesLabel] haben ein Lager errichtet und bedrohen die Karawanen der Fraktion [asker_faction_name]. [asker_nameDef] plant einen Luftangriff auf das Lager. [asker_pronoun] möchte, dass du {asker_gender ? ihm : ihr} [soldiers] zur Verfügung stellst, um den Angriff durchzuführen.\n\n[asker_pronoun] wird eine Raumfähre schicken, die deine Soldaten abholt, zu dem Angriffsort fliegt und sie anschließend wieder nach Hause bringt. Unterwegs bekommen sie Nahrung und werden medizinisch versorgt.\n\nSobald der Angriff beginnt, hast du [timeoutTicks_duration] Zeit, um alle Feinde und Geschütztürme zu besiegen.</li>
+    <li>questDescription->[enemiesLabel] haben ein Lager errichtet und bedrohen die Karawanen der Fraktion [asker_faction_name]. [asker_nameDef] plant einen Luftangriff auf das Lager, das von [enemiesCount] {lookup: [enemiesLabel]; decline_other; 2} bewacht wird. [asker_pronoun] möchte, dass du {asker_gender ? ihm : ihr} [soldiers] zur Verfügung stellst, um den Angriff durchzuführen.\n\n[asker_pronoun] wird eine Raumfähre schicken, die deine Soldaten abholt, zu dem Angriffsort fliegt und sie anschließend wieder nach Hause bringt. Unterwegs bekommen sie Nahrung und werden medizinisch versorgt.\n\nSobald der Angriff beginnt, hast du [timeoutTicks_duration] Zeit, um alle Feinde und Geschütztürme zu besiegen.</li>
     <li>soldiers(requiredPawnCount>1)->[requiredPawnCount] Soldaten</li>
     <li>soldiers(requiredPawnCount==1)->einen Soldaten</li>
   </Mission_BanditCamp.questDescriptionRules.rulesStrings>
