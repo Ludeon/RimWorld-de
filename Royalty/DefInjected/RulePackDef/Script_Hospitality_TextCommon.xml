@@ -57,9 +57,9 @@
     <li>lodgersLabelSingOrPlural(lodgersCount==1)->[lodgers0_nameDef]</li>
     <li>lodgersLabelSingOrPlural(lodgersCount>=2)->[lodgersLabelPlural]</li>
     <li>lodgersLabelSingOrPluralDef(lodgersCount==1)->[lodgers0_nameDef]</li>
-    <li>lodgersLabelSingOrPluralDef(lodgersCount>=2)->die {lookup: [lodgersLabelPlural]; decline_other; 4}</li>
+    <li>lodgersLabelSingOrPluralDef(lodgersCount>=2)->die {lookup: [lodgersLabelPlural]; plural_decline; 4}</li>
     <li>lodgersLabelSingOrPluralDefGen(lodgersCount==1)->von [lodgers0_nameDef]</li>
-    <li>lodgersLabelSingOrPluralDefGen(lodgersCount>=2)->der {lookup: [lodgersLabelPlural]; decline_other; 5}</li>
+    <li>lodgersLabelSingOrPluralDefGen(lodgersCount>=2)->der {lookup: [lodgersLabelPlural]; plural_decline; 5}</li>
     <li>includesChildren(priority=-999)-></li>
     <li>includesChildren(childCount==1)->\n\nEiner [lodgersLabelSingOrPluralDefGen] ist ein Kind.</li>
     <li>includesChildren(childCount>=2)->\n\nEinige [lodgersLabelSingOrPluralDefGen] sind Kinder.</li>
@@ -108,7 +108,7 @@
     <li>lodgersWill(lodgersCount==1)->wird</li>
     <li>lodgersWill(lodgersCount>=2)->werden</li>
     <li>remainingWillNowLeave(lodgersCount==1)-></li>
-    <li>remainingWillNowLeave(lodgersCount>=2)->Alle verbliebenen [lodgersLabelPlural] werden dich nun verlassen. </li>
+    <li>remainingWillNowLeave(lodgersCount>=2)->Alle verbliebenen {lookup: [lodgersLabelPlural]; plural_decline; 4} werden dich nun verlassen. </li>
     <li>failLetterEndingQuest->Die Quest '[resolvedQuestName]' ist gescheitert.</li>
     <li>failLetterEndingCommon(askerIsNull==true,priority=1)->[failLetterEndingQuest]</li>
     <li>failLetterEndingCommon->[failLetterEndingQuest]\n\nDein Ruf bei der Fraktion [asker_faction_name] hat sich um [goodwillPenalty] Punkte verschlechtert.</li>

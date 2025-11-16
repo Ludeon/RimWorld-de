@@ -374,11 +374,11 @@
   <MessageFinishedLoadingShuttle>{SHUTTLE_label} wurde mit der erforderlichen Fracht beladen und ist startbereit.</MessageFinishedLoadingShuttle>
 
   <!-- EN: Your {1} can't finish loading the transport pods because some items or people became unavailable ({2_labelShort}). -->
-  <MessageCantLoadMoreIntoTransporters>Deine {lookup: {1}; decline_other; 4} können die Transportkapseln nicht fertig beladen, da ein Teil der Fracht nicht mehr verfügbar ist ({2_labelShort}).</MessageCantLoadMoreIntoTransporters>
+  <MessageCantLoadMoreIntoTransporters>Deine {lookup: {1}; plural_decline; 4} können die Transportkapseln nicht fertig beladen, da ein Teil der Fracht nicht mehr verfügbar ist ({2_labelShort}).</MessageCantLoadMoreIntoTransporters>
   <!-- EN: Your {1} can't finish loading the shuttle because some items or people became unavailable ({2_labelShort}). -->
-  <MessageCantLoadMoreIntoShuttle>Deine {lookup: {1}; decline_other; 4} können die Raumfähre nicht fertig beladen, da ein Teil der Fracht nicht mehr verfügbar ist ({2_labelShort}).</MessageCantLoadMoreIntoShuttle>
+  <MessageCantLoadMoreIntoShuttle>Deine {lookup: {1}; plural_decline; 4} können die Raumfähre nicht fertig beladen, da ein Teil der Fracht nicht mehr verfügbar ist ({2_labelShort}).</MessageCantLoadMoreIntoShuttle>
   <!-- EN: Your {1} can't finish entering the {0} because some items or people became unavailable ({2_labelShort}). -->
-  <MessageCantLoadMoreIntoPortal>Deine {lookup: {1}; decline_other; 4} betreten {0_gender ? den : die : das} {lookup: {0}; decline; 7} nicht mit allen Gegenständen oder Personen, da einige davon nicht mehr verfügbar sind ({2_labelShort}).</MessageCantLoadMoreIntoPortal>
+  <MessageCantLoadMoreIntoPortal>Deine {lookup: {1}; plural_decline; 4} betreten {0_gender ? den : die : das} {lookup: {0}; decline; 7} nicht mit allen Gegenständen oder Personen, da einige davon nicht mehr verfügbar sind ({2_labelShort}).</MessageCantLoadMoreIntoPortal>
   
   <!-- EN: Selected destination is invalid. -->
   <MessageTransportPodsDestinationIsInvalid>Gewählter Zielort ist ungültig.</MessageTransportPodsDestinationIsInvalid>
@@ -428,7 +428,7 @@
   <MessageYouHaveToReformCaravanNow>Du musst deine Karawane jetzt neu formieren. Jeder, der zurückgelassen wird, ist für immer verloren.</MessageYouHaveToReformCaravanNow>
   
   <!-- EN: {0} from {1} are attacking your {2}. -->
-  <MessageDefendersAttacking>{0} der Fraktion '{1}' greifen deine {lookup: {2}; decline_other; 7} an.</MessageDefendersAttacking>
+  <MessageDefendersAttacking>{0} der Fraktion '{1}' greifen deine {lookup: {2}; plural_decline; 7} an.</MessageDefendersAttacking>
   <!-- EN: Mechanoids have been gestated and will defend their cluster. -->
   <MessageMechanoidsAssembled>Mechanoiden wurden entwickelt und werden ihren Cluster verteidigen.</MessageMechanoidsAssembled>
   <!-- EN: Remaining mechanoids to gestate -->
@@ -656,7 +656,7 @@
   <MessageCantShootInMelee>Kann im Nahkampf nicht schießen.</MessageCantShootInMelee>
 
   <!-- EN: None of your {0} can accept this quest now. -->
-  <MessageNoColonistCanAcceptQuest>Aktuell kann keiner deiner {lookup: {0}; decline_other; 5} diese Quest annehmen.</MessageNoColonistCanAcceptQuest>
+  <MessageNoColonistCanAcceptQuest>Aktuell kann keiner deiner {lookup: {0}; plural_decline; 5} diese Quest annehmen.</MessageNoColonistCanAcceptQuest>
   <!-- EN: Cannot accept this quest. -->
   <MessageCannotAcceptQuest>Kann diese Quest nicht annehmen.</MessageCannotAcceptQuest>
   <!-- EN: {0_definite} has accepted a quest: {1} -->
@@ -713,7 +713,7 @@
   <!-- EN: {0} has begun. -->
   <RitualBegun>{0} begonnen.</RitualBegun>
   <!-- EN: The maximum number of {0}s is {1}. -->
-  <MaxPawnsPerRole>Die maximale Anzahl von {lookup: {0}; plural; 3} ist {1}.</MaxPawnsPerRole>
+  <MaxPawnsPerRole>Die maximale Anzahl von {lookup: {lookup: {0}; plural}; plural_decline; 2} ist {1}.</MaxPawnsPerRole>
   <!-- EN: Role of {0} is locked. -->
   <RoleIsLocked>Die Rolle '{0}' ist gesperrt.</RoleIsLocked>
   <!-- EN: You need at least one participant. -->

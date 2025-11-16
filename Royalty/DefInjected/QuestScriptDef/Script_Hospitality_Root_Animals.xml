@@ -11,7 +11,7 @@
     <li>lodgersLabelIndefAcc->{replace: [lodgersPawnKind_definite]; "der [lodgersPawnKind_label]"-"einen"; "die [lodgersPawnKind_label]"-"eine"; "das [lodgersPawnKind_label]"-"ein"} {lookup: [lodgersPawnKind_label]; decline; 3}</li>
     <li>lodgersLabelDef->{replace: [lodgersPawnKind_definite]; "der [lodgersPawnKind_label]"-"der"; "die [lodgersPawnKind_label]"-"die"; "das [lodgersPawnKind_label]"-"das"} {lookup: [lodgersPawnKind_label]; decline; 4}</li>
     <li>lodgersLabelPlural->[lodgersPawnKind_labelPlural]</li>
-    <li>lodgersLabelPluralDef->die {lookup: [lodgersPawnKind_labelPlural]; decline_other; 4}</li>
+    <li>lodgersLabelPluralDef->die {lookup: [lodgersPawnKind_labelPlural]; plural_decline; 4}</li>
   </Hospitality_Animals.questDescriptionAndNameRules.rulesStrings>
   <!-- EN:
     <li>threatsInfoMechClustersSingleAnimal->For unknown reasons, the [lodgersLabel] has been targeted by an orbiting mechanoid swarm.</li>
@@ -61,7 +61,7 @@
     <li>threatsInfoMechRaidsSingleAnimal->[lodgersLabelDef] geriet aus unerfindlichen Gründen ins Fadenkreuz eines Mechanoidennests.</li>
     <li>threatsInfoMechRaidsMultiAnimal->Aus unerfindlichen Gründen gerieten [lodgersLabelPluralDef] ins Fadenkreuz eines Mechanoidennests.</li>
     <li>questDescription(askerIsNull==true,lodgersCount==1)->Eine Tierhilfsorganisation möchte, dass du dich [shuttleDelayTicks_duration] lang in [map_label] um [lodgersLabelIndefAcc] namens [lodgers0_nameDef] kümmerst. [healthInfo][threatsInfo1][commonDescEnding]</li>
-    <li>threatsInfo1(generateThreats==true,threatType==Raids,enemyFaction!=Mechanoid)->\n\nDie Tieraktivisten haben [lodgers0_nameDef] gestohlen, bevor das Tier in einer Zeremonie der Fraktion [enemyFaction_name] geschlachtet worden wäre. Nun wollen die {lookup: [enemyFaction_pawnsPlural]; decline_other; 4} Rache. Solltest du [lodgers0_nameDef] bei dir aufnehmen, [enemyGroupsParagraph]</li>
+    <li>threatsInfo1(generateThreats==true,threatType==Raids,enemyFaction!=Mechanoid)->\n\nDie Tieraktivisten haben [lodgers0_nameDef] gestohlen, bevor das Tier in einer Zeremonie der Fraktion [enemyFaction_name] geschlachtet worden wäre. Nun wollen die {lookup: [enemyFaction_pawnsPlural]; plural_decline; 4} Rache. Solltest du [lodgers0_nameDef] bei dir aufnehmen, [enemyGroupsParagraph]</li>
     <li>threatsInfo1(generateThreats==true,threatType==Raids,enemyFaction==Mechanoid)->\n\n[threatsInfoMechRaidsSingleAnimal] Es [enemyGroupsParagraph]</li>
     <li>threatsInfo1(generateThreats==true,threatType==MechClusters)->\n\n[threatsInfoMechClustersSingleAnimal] Es [enemyGroupsParagraph]</li>
     <li>threatsInfo1(generateThreats==false)-></li>
@@ -78,7 +78,7 @@
     <li>victimIndefGen(p=0.5)->eines [PersonJobMasGen]</li>
     <li>victimIndefGen(p=0.5)->einer [PersonJobFemGen]</li>
     <li>victimIndefGen(generateThreats==true,threatType==Raids)->eines Freundes von [enemyFaction_leader_nameDef], [enemyFaction_leaderTitle] der Fraktion [enemyFaction_name],</li>
-    <li>threatsInfo2(generateThreats==true,threatType==Raids,enemyFaction!=Mechanoid)->\n\nLeider waren diese {lookup: [lodgersLabelPlural]; decline_other; 4} kürzlich in den Todesfall [victimIndefGen] verwickelt. Nun werden sie von {lookup: [enemyFaction_pawnsPlural]; decline_other; 2} der Fraktion [enemyFaction_name] gejagt, um ein Racheritual an ihnen durchzuführen. Solltest du [lodgersLabelPluralDef] bei dir aufnehmen, [enemyGroupsParagraph]</li>
+    <li>threatsInfo2(generateThreats==true,threatType==Raids,enemyFaction!=Mechanoid)->\n\nLeider waren diese {lookup: [lodgersLabelPlural]; plural_decline; 4} kürzlich in den Todesfall [victimIndefGen] verwickelt. Nun werden sie von {lookup: [enemyFaction_pawnsPlural]; plural_decline; 2} der Fraktion [enemyFaction_name] gejagt, um ein Racheritual an ihnen durchzuführen. Solltest du [lodgersLabelPluralDef] bei dir aufnehmen, [enemyGroupsParagraph]</li>
     <li>threatsInfo2(generateThreats==true,threatType==Raids,enemyFaction==Mechanoid)->\n\n[threatsInfoMechRaidsMultiAnimal] Es [enemyGroupsParagraph]</li>
     <li>threatsInfo2(generateThreats==true,threatType==MechClusters)->\n\n[threatsInfoMechClustersMultiAnimal] Es [enemyGroupsParagraph]</li>
     <li>threatsInfo2(generateThreats==false)-></li>
@@ -134,7 +134,7 @@
     <li>questName(lodgersCount==1)->Ein Zuhause für [lodgers0_nameDef]</li>
     <li>questName(lodgersCount==1)->Ein Herz für [lodgers0_nameDef]</li>
     <li>questName(lodgersCount==1)->{lodgers0_gender ? Armer kleiner : Arme kleine} [lodgers0_nameDef]</li>
-    <li>questName(lodgersCount>=2)->Die [animalAdj]en {lookup: [lodgersLabelPlural]; decline_other; 4}</li>
+    <li>questName(lodgersCount>=2)->Die [animalAdj]en {lookup: [lodgersLabelPlural]; plural_decline; 4}</li>
     <li>questName(lodgersCount>=2)->[animalAdj]e [lodgersLabelPlural]</li>
     <li>questName(lodgersCount>=2)->{lookup: [lodgersLabel]; compound}betreuung</li>
     <li>questName(lodgersCount>=2)->Ein Zuhause für [lodgersLabelPlural]</li>

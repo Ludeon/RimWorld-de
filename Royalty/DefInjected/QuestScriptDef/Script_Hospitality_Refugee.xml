@@ -77,7 +77,7 @@
     <li>turnedViolent->[othersWillNotAccept], und {PAWNSALIVECOUNT_multiple ? haben : hat} sich gewaltsam gegen dich aufgelehnt.</li>
     <li>decidedToLeave->[othersWillNotAccept], und {PAWNSALIVECOUNT_multiple ? haben : hat} beschlossen, das Gebiet zu verlassen.</li>
     <li>questOver->Die Quest '[resolvedQuestName]' ist beendet.</li>
-    <li>letterIntroDeath->{SUBJECT_definite}, einer der verzweifelten {lookup: [faction_pawnsPlural]; decline_other; 5}, der bei dir bleiben wollte, ist gestorben.</li>
+    <li>letterIntroDeath->{SUBJECT_definite}, einer der verzweifelten {lookup: [faction_pawnsPlural]; plural_decline; 5}, der bei dir bleiben wollte, ist gestorben.</li>
     <li>lodgerDiedMemoryThoughtLetterLabel->[lodgersLabel] gestorben: Wut</li>
     <li>lodgerDiedMemoryThoughtLetterText->[letterIntroDeath]\n\n[appalledButNoAction]</li>
     <li>lodgerDiedAttackPlayerLetterLabel->[lodgersLabel] gestorben: Rache</li>
@@ -86,7 +86,7 @@
     <li>lodgerDiedLeaveMapLetterText->[letterIntroDeath]\n\n[decidedToLeave]</li>
     <li>lodgersAllDiedLetterLabel->Quest gescheitert</li>
     <li>lodgersAllDiedLetterText->{SUBJECT_definite}, der [lastOrNot] verzweifelte [faction_pawnSingular], der bei dir bleiben wollte, ist gestorben.\n\n[questOver]</li>
-    <li>letterIntroArrested->Du hast {SUBJECT_definite}, einen der verzweifelten {lookup: [faction_pawnsPlural]; decline_other; 5}, der bei dir bleiben wollte, inhaftiert.</li>
+    <li>letterIntroArrested->Du hast {SUBJECT_definite}, einen der verzweifelten {lookup: [faction_pawnsPlural]; plural_decline; 5}, der bei dir bleiben wollte, inhaftiert.</li>
     <li>lodgerArrestedMemoryThoughtLetterLabel->[lodgersLabel] inhaftiert: Wut</li>
     <li>lodgerArrestedMemoryThoughtLetterText->[letterIntroArrested]\n\n[appalledButNoAction]</li>
     <li>lodgerArrestedAttackPlayerLetterLabel->[lodgersLabel] inhaftiert: Rache</li>
@@ -95,19 +95,19 @@
     <li>lodgerArrestedLeaveMapLetterText->[letterIntroArrested]\n\n[decidedToLeave]</li>
     <li>lodgersAllArrestedLetterLabel->Quest gescheitert</li>
     <li>lodgersAllArrestedLetterText->Du hast {SUBJECT_definite}, der [lastOrNot] verzweifelte [faction_pawnSingular], der bei dir bleiben wollte, inhaftiert.\n\n[questOver]</li>
-    <li>letterIntroLeftBehind->{SUBJECT_definite}, einer der verzweifelten {lookup: [faction_pawnsPlural]; decline_other; 5}, der bei dir bleiben wollte, wurde zurückgelassen.</li>
+    <li>letterIntroLeftBehind->{SUBJECT_definite}, einer der verzweifelten {lookup: [faction_pawnsPlural]; plural_decline; 5}, der bei dir bleiben wollte, wurde zurückgelassen.</li>
     <li>lodgerLeftBehindMemoryThoughtLetterLabel->[lodgersLabel] zurückgelassen: Wut</li>
     <li>lodgerLeftBehindMemoryThoughtLetterText->[letterIntroLeftBehind]\n\n[appalledButNoAction]</li>
     <li>lodgerLeftBehindLeaveMapLetterLabel->[lodgersLabel] zurückgelassen: Weggang</li>
     <li>lodgerLeftBehindLeaveMapLetterText->[letterIntroLeftBehind]\n\n[decidedToLeave]</li>
-    <li>letterIntroViolated->{SUBJECT_definite}, einer der verzweifelten {lookup: [faction_pawnsPlural]; decline_other; 5}, der bei dir bleiben wollte, wurde durch einen chirurgischen Eingriff verletzt.</li>
+    <li>letterIntroViolated->{SUBJECT_definite}, einer der verzweifelten {lookup: [faction_pawnsPlural]; plural_decline; 5}, der bei dir bleiben wollte, wurde durch einen chirurgischen Eingriff verletzt.</li>
     <li>lodgerViolatedMemoryThoughtLetterLabel->[lodgersLabel] verletzt: Wut</li>
     <li>lodgerViolatedMemoryThoughtLetterText->[letterIntroViolated]\n\n[appalledButNoAction]</li>
     <li>lodgerViolatedAttackPlayerLetterLabel->[lodgersLabel] verletzt: Rache</li>
     <li>lodgerViolatedAttackPlayerLetterText->[letterIntroViolated]\n\n[turnedViolent]</li>
     <li>lodgerViolatedLeaveMapLetterLabel->[lodgersLabel] verletzt: Weggang</li>
     <li>lodgerViolatedLeaveMapLetterText->[letterIntroViolated]\n\n[decidedToLeave]</li>
-    <li>letterIntroPsychicRitualTarget->{SUBJECT_definite}, einer der verzweifelten {lookup: [faction_pawnsPlural]; decline_other; 5}, der bei dir bleiben wollte, war Ziel eines mentalen Rituals.</li>
+    <li>letterIntroPsychicRitualTarget->{SUBJECT_definite}, einer der verzweifelten {lookup: [faction_pawnsPlural]; plural_decline; 5}, der bei dir bleiben wollte, war Ziel eines mentalen Rituals.</li>
     <li>lodgerPsychicRitualTargetMemoryThoughtLetterLabel->[lodgersLabel] verletzt: Wut</li>
     <li>lodgerPsychicRitualTargetMemoryThoughtLetterText->[letterIntroPsychicRitualTarget]\n\n[appalledButNoAction]</li>
     <li>lodgerPsychicRitualTargetAttackPlayerLetterLabel->[lodgersLabel] verletzt: Rache</li>
@@ -203,7 +203,7 @@
     <li>joinInfo(lodgerCount==1)->Wenn du [asker_objective] zufriedenstellst, könnte [asker_pronoun] gewillt sein, deiner Kolonie beizutreten.</li>
     <li>joinInfo(lodgerCount>=2)->Wenn du sie zufriedenstellst, könnten einige von ihnen gewillt sein, deiner Kolonie beizutreten.</li>
     <li>travelerInfo(lodgerCount==1)->Dieser [faction_pawnSingular] ist</li>
-    <li>travelerInfo(lodgerCount>=2)->Diese {lookup: [faction_pawnsPlural]; decline_other; 4} sind</li>
+    <li>travelerInfo(lodgerCount>=2)->Diese {lookup: [faction_pawnsPlural]; plural_decline; 4} sind</li>
   </Hospitality_Refugee.questDescriptionRules.rulesStrings>
   <!-- EN:
     <li>questName(lodgerCount==1)->[asker_nameDef] the [lodgerAdj]</li>

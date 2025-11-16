@@ -98,7 +98,7 @@
     <li>questDescription(animalCount==1)->[introduction] namens [joiner_nameDef] kontaktiert dich aus der Nähe. [joiner_pronoun] sagt, dass (*Threat)[animalKindDef_indefinite](/Threat) menschliches Fleisch gewittert hat und hinter {joiner_gender ? ihm : ihr} her ist!\n\n[joiner_pronoun] fleht um Hilfe und bietet an, sich dir in [map_label] anzuschließen.[joiner_relationInfo]\n\nWenn du [joiner_nameDef] bei dir aufnimmst, wird das Tier in {replace: [manhuntersDelayTicks_duration]; "Tage"-"Tagen"; "Jahre"-"Jahren"} eintreffen und jeden Menschen in Sichtweite angreifen.\n\n[joiner_nameDef] ist zu aufgeregt, um mehr Informationen preiszugeben.</li>
     <li>manhunterArrivalLetterEnd(animalCount==1)->[animalKindDef_definite] macht Jagd auf [joiner_nameDef].</li>
     <li>questDescription(animalCount>=2)->[introduction] namens [joiner_nameDef] kontaktiert dich aus der Nähe. [joiner_pronoun] sagt, dass (*Threat)[animalCount] [animalKind_labelPlural](/Threat) menschliches Fleisch gewittert haben und hinter {joiner_gender ? ihm : ihr} her sind!\n\n[joiner_pronoun] fleht um Hilfe und bietet an, sich dir in [map_label] anzuschließen.[joiner_relationInfo]\n\nWenn du [joiner_nameDef] bei dir aufnimmst, werden die Tiere in {replace: [manhuntersDelayTicks_duration]; "Tage"-"Tagen"; "Jahre"-"Jahren"} eintreffen und jeden Menschen in Sichtweite angreifen.\n\n[joiner_nameDef] ist zu aufgeregt, um mehr Informationen preiszugeben.</li>
-    <li>manhunterArrivalLetterEnd(animalCount>=2)->Die {lookup: [animalKind_labelPlural]; decline_other; 4} machen Jagd auf [joiner_nameDef].</li>
+    <li>manhunterArrivalLetterEnd(animalCount>=2)->Die {lookup: [animalKind_labelPlural]; plural_decline; 4} machen Jagd auf [joiner_nameDef].</li>
     <li>introduction(childCount==1,priority=1)->Ein [joiner_age]-jähriges Kind</li>
     <li>introduction->[A_N_year_old_joiner]</li>
     <li>A_N_year_old_joiner->{replace: ^[joiner_titleDef]; "^der "-"Ein [joiner_age]-jähriger "; "^die "-"Eine [joiner_age]-jährige "; "^das "-"Ein [joiner_age]-jähriges "; "^"-""}</li>
@@ -117,8 +117,8 @@
     <li>questName(animalCount==1)->[joiner_nameDef] und [animalKindDef_definite]</li>
     <li>questName(animalCount==1)->[animalKindDef_definite] und [joiner_nameDef]</li>
     <li>questName(animalCount>=2)->[joiner_nameDef]'s [animalKind_labelPlural]</li>
-    <li>questName(animalCount>=2)->[joiner_nameDef] und die {lookup: [animalKind_labelPlural]; decline_other; 4}</li>
-    <li>questName(animalCount>=2)->Die {lookup: [animalKind_labelPlural]; decline_other; 4} und [joiner_nameDef]</li>
+    <li>questName(animalCount>=2)->[joiner_nameDef] und die {lookup: [animalKind_labelPlural]; plural_decline; 4}</li>
+    <li>questName(animalCount>=2)->Die {lookup: [animalKind_labelPlural]; plural_decline; 4} und [joiner_nameDef]</li>
   </ThreatReward_Manhunters_Joiner.questNameRules.rulesStrings>
   <!-- EN: {BASELABEL}: Chasing [joiner_nameDef] -->
   <ThreatReward_Manhunters_Joiner.LetterLabelChasing.slateRef>{BASELABEL}: Jagd auf [joiner_nameDef]</ThreatReward_Manhunters_Joiner.LetterLabelChasing.slateRef>
@@ -170,7 +170,7 @@
   <!-- EN: {BASELABEL}: Chasing [joiner_nameDef] -->
   <ThreatReward_MysteryThreat_Joiner.LetterLabelChasingManhunter.slateRef>{BASELABEL}: Jagd auf [joiner_nameDef]</ThreatReward_MysteryThreat_Joiner.LetterLabelChasingManhunter.slateRef>
   <!-- EN: [joiner_nameDef] has admitted what [joiner_pronoun] was fleeing from.\n    \n[joiner_nameDef] was traveling when [joiner_pronoun] came upon a lost group of [animalKind_labelPlural]. [joiner_pronoun], in a bad mood, goaded the [animalKind_labelPlural]. Unexpectedly, they attacked [joiner_objective]. And they have followed [joiner_objective] a long distance.\n    \n{BASETEXT} -->
-  <ThreatReward_MysteryThreat_Joiner.LetterTextChasingManhunter.slateRef>[joiner_nameDef] hat zugegeben, wovor [joiner_pronoun] geflohen ist.\n    \n[joiner_nameDef] war auf der Durchreise, als [joiner_pronoun] auf mehrere verirrte [animalKind_labelPlural] traf. Mies gelaunt begann [joiner_pronoun], die {lookup: [animalKind_labelPlural]; decline_other; 4} zu reizen. Plötzlich griffen sie [joiner_objective] an und verfolgen [joiner_objective] seitdem überallhin.\n    \n{BASETEXT}</ThreatReward_MysteryThreat_Joiner.LetterTextChasingManhunter.slateRef>
+  <ThreatReward_MysteryThreat_Joiner.LetterTextChasingManhunter.slateRef>[joiner_nameDef] hat zugegeben, wovor [joiner_pronoun] geflohen ist.\n    \n[joiner_nameDef] war auf der Durchreise, als [joiner_pronoun] auf mehrere verirrte [animalKind_labelPlural] traf. Mies gelaunt begann [joiner_pronoun], die {lookup: [animalKind_labelPlural]; plural_decline; 4} zu reizen. Plötzlich griffen sie [joiner_objective] an und verfolgen [joiner_objective] seitdem überallhin.\n    \n{BASETEXT}</ThreatReward_MysteryThreat_Joiner.LetterTextChasingManhunter.slateRef>
   
   <!-- EN:
     <li>questDescription->[introduction] named [joiner_nameDef] is calling from nearby. [joiner_pronoun] admits [joiner_pronoun] profaned a peace ritual between [raid1/enemyFaction_name] and [raid2/enemyFaction_name]. Now they are both chasing [joiner_objective]!\n\n[joiner_pronoun] begs for safety and offers to join you at [map_definite].[joiner_relationInfo]\n\nIf you accept [joiner_nameDef], both [raid1/enemyFaction_name] and [raid2/enemyFaction_name] will raid you in [raidDelayTicks_duration].\n\n[joiner_nameDef] is too frantic to offer more information.</li>
@@ -194,11 +194,11 @@
   <!-- EN: {BASELABEL} chasing [../joiner_nameDef] -->
   <ThreatReward_RaidMultiFaction_Joiner.LetterLabelChasingRaid1.value.slateRef>{BASELABEL}: Jagd auf [../joiner_nameDef]</ThreatReward_RaidMultiFaction_Joiner.LetterLabelChasingRaid1.value.slateRef>
   <!-- EN: {BASETEXT}\n                  \nThe [enemyFaction_pawnsPlural] are coming for [../joiner_nameFull]. -->
-  <ThreatReward_RaidMultiFaction_Joiner.LetterTextChasingRaid1.value.slateRef>{BASETEXT}\n                  \nDie {lookup: [enemyFaction_pawnsPlural]; decline_other; 4} kommen, um sich [../joiner_nameFull] zu holen.</ThreatReward_RaidMultiFaction_Joiner.LetterTextChasingRaid1.value.slateRef>
+  <ThreatReward_RaidMultiFaction_Joiner.LetterTextChasingRaid1.value.slateRef>{BASETEXT}\n                  \nDie {lookup: [enemyFaction_pawnsPlural]; plural_decline; 4} kommen, um sich [../joiner_nameFull] zu holen.</ThreatReward_RaidMultiFaction_Joiner.LetterTextChasingRaid1.value.slateRef>
   <!-- EN: {BASELABEL} chasing [../joiner_nameDef] -->
   <ThreatReward_RaidMultiFaction_Joiner.LetterLabelChasingRaid2.value.slateRef>{BASELABEL}: Jagd auf [../joiner_nameDef]</ThreatReward_RaidMultiFaction_Joiner.LetterLabelChasingRaid2.value.slateRef>
   <!-- EN: {BASETEXT}\n                        \nThe [enemyFaction_pawnsPlural] are coming for [../joiner_nameFull]. -->
-  <ThreatReward_RaidMultiFaction_Joiner.LetterTextChasingRaid2.value.slateRef>{BASETEXT}\n                        \nDie {lookup: [enemyFaction_pawnsPlural]; decline_other; 4} kommen, um sich [../joiner_nameFull] zu holen.</ThreatReward_RaidMultiFaction_Joiner.LetterTextChasingRaid2.value.slateRef>
+  <ThreatReward_RaidMultiFaction_Joiner.LetterTextChasingRaid2.value.slateRef>{BASETEXT}\n                        \nDie {lookup: [enemyFaction_pawnsPlural]; plural_decline; 4} kommen, um sich [../joiner_nameFull] zu holen.</ThreatReward_RaidMultiFaction_Joiner.LetterTextChasingRaid2.value.slateRef>
   
   <!-- EN:
     <li>questDescription->[introduction] named [joiner_nameFull] is calling from nearby. [joiner_pronoun] is hiding from [threat]. [joiner_pronoun] wants to flee [joiner_possessive] hiding spot and join you at [map_definite].[joiner_relationInfo]\n\nIf you accept [joiner_objective], [joinersEnemies] will set up a site nearby to harass you. [site/allSitePartsDescriptions]\n\nThe threat will remain until you go to destroy it.</li>
@@ -217,7 +217,7 @@
     <li>questDescription->[introduction] namens [joiner_nameFull] kontaktiert dich aus der Nähe. [joiner_pronoun] versteckt sich vor [threat]. [joiner_pronoun] will fliehen und sich dir in [map_label] anschließen.[joiner_relationInfo]\n\nWenn du [joiner_objective] bei dir aufnimmst, [joinersEnemies] ein Lager in der Nähe errichten, um dich zu schikanieren. [joiner_pronoun] berichtet, dass dort [site/allSitePartsDescriptions]\n\nDie Bedrohung bleibt so lange bestehen, bis du das Lager zerstört hast.</li>
     <li>introduction(childCount==1,priority=1)->Ein [joiner_age]-jähriges Kind</li>
     <li>introduction->[A_N_year_old_joiner]</li>
-    <li>threat(priority=1,site/Outpost_exists==True)->{lookup: [site/enemyFaction_pawnsPlural]; decline_other; 2} der Fraktion [site/enemyFaction_name]</li>
+    <li>threat(priority=1,site/Outpost_exists==True)->{lookup: [site/enemyFaction_pawnsPlural]; plural_decline; 2} der Fraktion [site/enemyFaction_name]</li>
     <li>threat(priority=1,site/MechCluster_exists==True)->Mechanoiden</li>
     <li>threat(priority=1,site/SleepingMechanoids_exists==True)->Mechanoiden</li>
     <li>threat->[joiner_possessive]en Feinden</li>

@@ -25,9 +25,9 @@
     <li>pilgrimsArrivedLetterText->[questDescription]</li>
     <li>delayedRewardLetterText->[pawns0_nameDef] bedankt sich bei dir, dass [pawns0_pronoun] [andFollowers] die Reliquie [relic_name] am [venerateDate] verehren [durfte]. Als Belohnung schickt dir [pawns0_nameDef] Folgendes via Transportkapseln (Gesamtwert [rewardsMarketValue_money]):\n\n[rewards].</li>
     <li>pilgrimsLeavingMessage(pilgrimCount==1)->[pilgrimsLabel] ist mit der Verehrung der Reliquie '[relic_name]' fertig und verlässt nun das Gebiet.</li>
-    <li>pilgrimsLeavingMessage(pilgrimCount>=2)->Die {lookup: [pilgrimsLabelPlural]; decline_other; 4} sind mit der Verehrung der Reliquie '[relic_name]' fertig und verlassen nun das Gebiet.</li>
+    <li>pilgrimsLeavingMessage(pilgrimCount>=2)->Die {lookup: [pilgrimsLabelPlural]; plural_decline; 4} sind mit der Verehrung der Reliquie '[relic_name]' fertig und verlassen nun das Gebiet.</li>
     <li>pilgrimsLeftMessage(pilgrimCount==1)->[pilgrimsLabel] hat das Gebiet verlassen.</li>
-    <li>pilgrimsLeftMessage(pilgrimCount>=2)->Die {lookup: [pilgrimsLabelPlural]; decline_other; 4} haben das Gebiet verlassen.</li>
+    <li>pilgrimsLeftMessage(pilgrimCount>=2)->Die {lookup: [pilgrimsLabelPlural]; plural_decline; 4} haben das Gebiet verlassen.</li>
     <li>andFollowers(pilgrimCount==1)-></li>
     <li>andFollowers(pilgrimCount==2)->und der andere [faction_pawnSingular]</li>
     <li>andFollowers(pilgrimCount>=3)->und die anderen {lookup: [faction_pawnsPlural]; 4}</li>
@@ -93,7 +93,7 @@
   -->
   <ReliquaryPilgrims.questNameRules.rulesStrings>
     <li>questName(pilgrimCount==1)->[pilgrimsLabelSingularOrPlural]'s [visitAdj] [visit]</li>
-    <li>questName(pilgrimCount>=2)->Die [visitAdj] [visit] der [pilgrimsLabelSingularOrPlural]</li>
+    <li>questName(pilgrimCount>=2)->Die [visitAdj] [visit] der {lookup: [pilgrimsLabelSingularOrPlural]; plural_decline; 5}</li>
     <li>visitAdj(p=6)-></li>
     <li>visitAdj->heilige</li>
     <li>visitAdj->ehrwürdige</li>

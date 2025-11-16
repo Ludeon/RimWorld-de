@@ -14,7 +14,7 @@
   <LetterLabelCropBlight>Fäulnis: {PLANTDEF_labelPlural}</LetterLabelCropBlight>
   <!-- EN: Blight has been discovered on the {PLANTDEF_labelPlural}!
 \nYou should cut or burn the affected plants before the blight spreads. -->
-  <LetterCropBlight>Es wurde eine Fäulnis bei den {lookup: {PLANTDEF_label}; plural; 7} entdeckt!\n\nDu solltest die befallenen Pflanzen entfernen oder verbrennen, bevor die Fäulnis weitere Pflanzen befällt.</LetterCropBlight>
+  <LetterCropBlight>Es wurde eine Fäulnis bei den {lookup: {PLANTDEF_labelPlural}; plural_decline; 6} entdeckt!\n\nDu solltest die befallenen Pflanzen entfernen oder verbrennen, bevor die Fäulnis weitere Pflanzen befällt.</LetterCropBlight>
 
   <!-- EN: Miracle -->
   <LetterLabelMiracleHeal>Wunder</LetterLabelMiracleHeal>
@@ -23,11 +23,11 @@
 
   <!-- Enemy raids -->
   <!-- EN: One of the {LEADER_factionPawnsPlural} - {LEADER_labelShort}, is the leader of the faction. -->
-  <EnemyRaidLeaderPresent>Einer der {lookup: {LEADER_factionPawnsPlural}; decline_other; 5}, {LEADER_labelShort}, ist der Anführer der Fraktion.</EnemyRaidLeaderPresent>
+  <EnemyRaidLeaderPresent>Einer der {lookup: {LEADER_factionPawnsPlural}; plural_decline; 5}, {LEADER_labelShort}, ist der Anführer der Fraktion.</EnemyRaidLeaderPresent>
 
   <!-- Friendly raids -->
   <!-- EN: One of the {LEADER_factionPawnsPlural} - {LEADER_labelShort}, is the leader of the faction. -->
-  <FriendlyRaidLeaderPresent>Einer der {lookup: {LEADER_factionPawnsPlural}; decline_other; 5}, {LEADER_labelShort}, ist der Anführer der Fraktion.</FriendlyRaidLeaderPresent>
+  <FriendlyRaidLeaderPresent>Einer der {lookup: {LEADER_factionPawnsPlural}; plural_decline; 5}, {LEADER_labelShort}, ist der Anführer der Fraktion.</FriendlyRaidLeaderPresent>
 
   <!-- EN: Transport pod crash -->
   <LetterLabelRefugeePodCrash>Transportkapselabsturz</LetterLabelRefugeePodCrash>
@@ -211,7 +211,7 @@
   <!-- EN: Caravan demand by {0} -->
   <CaravanDemandTitle>Karawanenforderung von {0}</CaravanDemandTitle>
   <!-- EN: {0} has been ambushed by a group of {2} {4} from {1}. They will attack unless you give them:\n\n{3} -->
-  <CaravanDemand>{0} wurde von einer {2}-köpfigen Gruppe {lookup: {4}; decline_other; 1} der Fraktion {1} aufgelauert. Sie werden angreifen, es sei denn, du gibst ihnen:\n\n{3}</CaravanDemand>
+  <CaravanDemand>{0} wurde von einer {2}-köpfigen Gruppe {lookup: {4}; plural_decline; 1} der Fraktion {1} aufgelauert. Sie werden angreifen, es sei denn, du gibst ihnen:\n\n{3}</CaravanDemand>
   <!-- EN: Give and pass -->
   <CaravanDemand_Give>Geben und weiterziehen</CaravanDemand_Give>
   <!-- EN: Refuse and fight -->
