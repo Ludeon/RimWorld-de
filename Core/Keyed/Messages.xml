@@ -96,7 +96,7 @@
   <!-- EN: {RECRUITER_labelShort} successfully tamed {1}. -->
   <MessageTameSuccess>{RECRUITER_labelShort} hat {1} erfolgreich gezähmt.</MessageTameSuccess>
   <!-- EN: {RECRUITER_labelShort} successfully tamed {1}. It is now called {RECRUITEE_nameFull}. -->
-  <MessageTameAndNameSuccess>{RECRUITER_labelShort} hat erfolgreich {replace: ^{RECRUITEE_kindDef}; "^der {RECRUITEE_kind}"-"einen {lookup: {RECRUITEE_kind}; decline; 3}"; "^die {RECRUITEE_kind}"-"eine {lookup: {RECRUITEE_kind}; decline; 3}"; "^das {RECRUITEE_kind}"-"ein {lookup: {RECRUITEE_kind}; decline; 3}"} gezähmt. Deine Kolonisten nennen {replace: ^{RECRUITEE_kindDef}; "^der {RECRUITEE_kind}"-"ihn"; "^die {RECRUITEE_kind}"-"sie"; "^das {RECRUITEE_kind}"-"es"} {RECRUITEE_nameFull}.</MessageTameAndNameSuccess>
+  <MessageTameAndNameSuccess>{RECRUITER_labelShort} hat erfolgreich {replace: {RECRUITEE_kindDef}; "der {RECRUITEE_kind}"-"einen {lookup: {RECRUITEE_kind}; decline; 3}"; "die {RECRUITEE_kind}"-"eine {lookup: {RECRUITEE_kind}; decline; 3}"; "das {RECRUITEE_kind}"-"ein {lookup: {RECRUITEE_kind}; decline; 3}"} gezähmt. Deine Kolonisten nennen {replace: {RECRUITEE_kindDef}; "der {RECRUITEE_kind}"-"ihn"; "die {RECRUITEE_kind}"-"sie"; "das {RECRUITEE_kind}"-"es"} {RECRUITEE_nameFull}.</MessageTameAndNameSuccess>
   <!-- EN: There is no suitable animal pen for {ANIMAL_labelShort}. It will eventually roam away. -->
   <MessageTameNoSuitablePens>Es gibt kein geeignetes Gehege für {ANIMAL_labelShort}. Mit der Zeit wird das Tier weglaufen.</MessageTameNoSuitablePens>
   <!-- EN: {RECRUITEE} has joined your colony. -->
@@ -250,7 +250,7 @@
   <!-- EN: {HUMAN_labelShort} and {ANIMAL_labelShort} have formed a bond. -->
   <MessageNewBondRelation>{HUMAN_labelShort} und {ANIMAL_labelShort} haben ein individuelles Band geknüpft.</MessageNewBondRelation>
   <!-- EN: {HUMAN_labelShort} and {1} have formed a bond. {HUMAN_labelShort} has named {ANIMAL_objective} {ANIMAL_nameFull}. -->
-  <MessageNewBondRelationNewName>{HUMAN_labelShort} und {1} haben ein individuelles Band geknüpft. {HUMAN_pronoun} nennt es {ANIMAL_nameFull}.</MessageNewBondRelationNewName>
+  <MessageNewBondRelationNewName>{HUMAN_labelShort} und {1} haben ein individuelles Band geknüpft. {HUMAN_labelShort} nennt {ANIMAL_objective} {ANIMAL_nameFull}.</MessageNewBondRelationNewName>
   
   <!-- EN: {ANIMAL} has had a mental break because of {HUMAN_labelShort}'s death. -->
   <MessageBondedAnimalMentalBreak>{ANIMAL_kindBaseIndef} hat einen Nervenzusammenbruch, weil {HUMAN_labelShort} gestorben ist.</MessageBondedAnimalMentalBreak>
