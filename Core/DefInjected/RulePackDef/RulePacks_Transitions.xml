@@ -82,6 +82,7 @@
     <li>flavorsuffix(SUBJECT_flesh!=Mechanoid,SUBJECT_flesh!=Drone,p=2)->, dabei flogen [Gore] in alle Himmelsrichtungen</li>
     <li>flavorsuffix(SUBJECT_flesh!=Mechanoid,SUBJECT_flesh!=Drone)->, was einen kleinen Haufen voller [Gore] hinterließ</li>
     <li>flavorsuffix->, was einen kleinen Krater hinterließ</li>
+    <li>flavorsuffix(p=4)-></li>
     <li>pieces->Stücke</li>
     <li>pieces->Teile</li>
     <li>pieces->Fragmente</li>
@@ -104,10 +105,9 @@
     <li>r_logentry(p=1.5)->[CULPRITHEDIFF_labelNounPretty] tötete [SUBJECT_nameDefAcc].</li>
     <li>r_logentry(p=1.5)->[CULPRITHEDIFF_labelNounPretty] brachte [SUBJECT_nameDefAcc] um.</li>
     <li>r_logentry(p=1.5)->[CULPRITHEDIFF_labelNounPretty] kostete [SUBJECT_nameDefAcc] das Leben.</li>
-    <li>r_logentry->[SUBJECT_definite] [died] [duetoa] {lookup: [CULPRITHEDIFF_labelNoun]; decline_other; 1} [flavorsuffix].</li>
+    <li>r_logentry->[SUBJECT_definite] [died] [duetoa] [CULPRITHEDIFF_labelNounGen] [flavorsuffix].</li>
     <li>r_logentry->[SUBJECT_definite] [died].</li>
     <li>r_logentry->[SUBJECT_definite] [died] [flavorsuffix].</li>
-    <li>flavorsuffix(p=4)-></li>
     <li>SUBJECT_nameDefAcc->{replace: [SUBJECT_definite]; ">der "-">den "}</li>
     <li>SUBJECT_nameDefDat->{replace: [SUBJECT_definite]; ">der "-">dem "; ">die "-">der "; ">das "-">dem "}</li>
   </Transition_DiedInclude.rulePack.rulesStrings>
@@ -147,7 +147,7 @@
     <li>r_logentry(p=0.5)->[CULPRITHEDIFF_labelNoun] löste bei [SUBJECT_nameDefDat] einen Kollaps aus.</li>
     <li>r_logentry->[CULPRITHEDIFF_labelNounPretty] ließ [SUBJECT_nameDefAcc] [helplessly] [collapse].</li>
     <li>r_logentry(p=0.5)->[CULPRITHEDIFF_labelNounPretty] löste bei [SUBJECT_nameDefDat] einen Kollaps aus.</li>
-    <li>r_logentry->[SUBJECT_definite] [collapsed] [duetoa] {lookup: [CULPRITHEDIFF_labelNoun]; decline_other; 1}.</li>
+    <li>r_logentry->[SUBJECT_definite] [collapsed] [duetoa] [CULPRITHEDIFF_labelNounGen].</li>
     <li>r_logentry(p=0.1)->[SUBJECT_definite] [collapsed].</li>
     <li>collapse->kollabieren</li>
     <li>collapse->zusammenbrechen</li>
@@ -184,8 +184,8 @@
   -->
   <Transition_Include.rulePack.rulesStrings>
     <li>duetoa->aufgrund</li>
-    <li>duetoa(p=0.5)->wegen</li>
     <li>duetoa(p=0.5)->infolge</li>
+    <li>CULPRITHEDIFF_labelNounGen->{lookup: von [CULPRITHEDIFF_labelNoun]; hediff}</li>
   </Transition_Include.rulePack.rulesStrings>
   
 </LanguageData>

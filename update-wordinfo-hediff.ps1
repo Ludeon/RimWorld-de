@@ -1,4 +1,4 @@
-# Update WordInfo\decline_other.txt
+# Update WordInfo\hediff.txt
 
 $PSDefaultParameterValues["*:Encoding"] = "UTF8"
 
@@ -8,19 +8,18 @@ $dlcs = Get-ChildItem -Directory | Where-Object { Test-Path -Path (Join-Path -Pa
 # Paths of the XML files in which the words should be searched
 # and the regex pattern to match the elements
 $items = [ordered]@{
-"DefInjected\HediffDef\*" = "\w+\.labelNoun" # Transition_DiedInclude, Transition_Downed
+"DefInjected\HediffDef\*" = "\w+\.labelNoun"
 }
+
+# Formats
+$formats =  @(
+"von {0}" # Transition_DiedInclude, Transition_Downed
+)
 
 # Header line for the output file
 $header = @(
-"NOM"       # key, indefinite nominative case
-"1_GEN"     # index #1, indefinite genitive case
-"2_DAT"     # index #2, indefinite dative case
-"3_ACC"     # index #3, indefinite accusative case
-"4_NOM_DEF" # index #4, definite nominative case
-"5_GEN_DEF" # index #5, definite genitive case
-"6_DAT_DEF" # index #6, definite dative case
-"7_ACC_DEF" # index #7, definite accusative case
+"KEY"       # key
+"1_OUT"     # index #1, other outcome
 )
 
 # Usage description. Using comment flag "//" instead of the recommended "#" as RW doesn't support it.
@@ -31,7 +30,7 @@ $comments = @"
 // TEXT is the key to access a row.
 // FILE_NO_EXT is the file in which TEXT should be looked up. Omit the extension.
 // INDEX determines the column to be used. Can be omitted if you need index 1.
-// For example, {lookup: {0}; decline_other; 2} looks up 2_DAT.
+// For example, {lookup: {0}; hediff; 1} looks up 1_OUT.
 // ---
 "@
 
@@ -41,7 +40,7 @@ foreach ($dlc in $dlcs)
 {
   Clear-Content -Path $tempFile
   Set-Location -Path "$PSScriptRoot\$dlc"
-  $outputFile = "WordInfo\decline_other.txt"
+  $outputFile = "WordInfo\hediff.txt"
 
   # Create a hash table of nominative words
   $HashTable = new-object System.Collections.Hashtable
@@ -52,10 +51,10 @@ foreach ($dlc in $dlcs)
   }
   foreach ($line in ($outputFileLines | ConvertFrom-Csv -Delimiter ";" -Header $header))
   {
-    if ($line.NOM.substring(0, 2) -eq "//") { continue } # skip "//" comments
+    if ($line.KEY.substring(0, 2) -eq "//") { continue } # skip "//" comments
     $fields = $line.PSObject.Properties.Value -join ";"
     $fields = $fields -replace "(?<=;);" # remove empty fields for clarity and reducing file size
-    $HashTable[$line.NOM] = $fields
+    $HashTable[$line.KEY] = $fields
   }
 
   # Search words in the XML files and add them to a temp file
@@ -73,7 +72,12 @@ foreach ($dlc in $dlcs)
     "// $($ps -join ', ') ($pattern)" >> $tempFile # categorize by paths
     # enumerate lines
     $tempFileLines = @()
-    foreach ($element in $elements) { $tempFileLines += $element.matches[0].groups["value"] }
+    foreach ($format in $formats) {
+      foreach ($element in $elements) {
+        $element_value = $element.matches[0].groups["value"]
+        $tempFileLines += $format -f $element_value
+      }
+    }
     Add-Content -Path $tempFile -Value ($tempFileLines | Sort-Object)
   }
 
