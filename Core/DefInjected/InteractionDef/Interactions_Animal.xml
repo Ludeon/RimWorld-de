@@ -84,31 +84,34 @@
   -->
   <Nuzzle.logRulesInitiator.rulesStrings>
     <li>r_logentry(p=3)->[INITIATOR_nameDef] [nuzzled] [RECIPIENT_nameDef] [nuzzleadverb].</li>
-    <li>r_logentry(p=0.5)->[INITIATOR_nameDef] [nuzzled] [nuzzleadverb] [rubbedpart] von [RECIPIENT_nameDef].</li>
-    <li>r_logentry(p=0.5)->[INITIATOR_nameDef] [nuzzled] [nuzzleadverb] [RECIPIENT_nameDef]'s [rubbedpart].</li>
+    <li>r_logentry->[INITIATOR_nameDef] [nuzzled] [nuzzleadverb] [RECIPIENT_nameDef]'s [rubbedpart].</li>
     <li>r_logentry->[INITIATOR_nameDef] schmiegte sich [nuzzleadverb] an [RECIPIENT_nameDef].</li>
     <li>nuzzled->berührte</li>
+    <li>nuzzled->streifte</li>
+    <li>nuzzled(p=0.1)->touchierte</li>
+    <li>nuzzled->beschnupperte</li>
     <li>nuzzleadverb(p=4)-></li>
     <li>nuzzleadverb->sanft</li>
     <li>nuzzleadverb->zärtlich</li>
     <li>nuzzleadverb->ermutigend</li>
     <li>nuzzleadverb->glücklich</li>
-    <li>nuzzleadverb->sanft</li>
+    <li>nuzzleadverb->behutsam</li>
+    <li>nuzzleadverb->zart</li>
+    <li>nuzzleadverb->tröstend</li>
     <li>nuzzleadverb->leicht</li>
     <li>nuzzleadverb->neugierig</li>
-    <li>nuzzleadverb->wärmend</li>
+    <li>nuzzleadverb->fürsorglich</li>
     <li>nuzzleadverb->traurig</li>
     <li>nuzzleadverb->liebevoll</li>
-    <li>nuzzleadverb->schmeichelnd</li>
-    <li>rubbedpart->das Bein</li>
-    <li>rubbedpart->das Knie</li>
-    <li>rubbedpart->den Fuß</li>
-    <li>rubbedpart->den Ellbogen</li>
-    <li>rubbedpart->die Hüfte</li>
-    <li>rubbedpart->die Schulter</li>
-    <li>rubbedpart->die Hand</li>
-    <li>rubbedpart->die Seite</li>
-    <li>rubbedpart->den Arm</li>
+    <li>rubbedpart->Bein</li>
+    <li>rubbedpart->Knie</li>
+    <li>rubbedpart->Fuß</li>
+    <li>rubbedpart->Ellbogen</li>
+    <li>rubbedpart->Hüfte</li>
+    <li>rubbedpart->Schulter</li>
+    <li>rubbedpart->Hand</li>
+    <li>rubbedpart->Seite</li>
+    <li>rubbedpart->Arm</li>
   </Nuzzle.logRulesInitiator.rulesStrings>
   
   <!-- EN: release to the wild -->
