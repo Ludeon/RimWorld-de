@@ -80,21 +80,20 @@ foreach ($dlc in $dlcs)
   }
 
   # Add plural.txt words
-  "// $pluralFile" >> $tempFile
-  $pluralFileLines = @()
   if (test-path $pluralFile) {
+    "// $pluralFile" >> $tempFile
     $pluralFileLines = Get-Content -Path $pluralFile
-  }
-  foreach ($line in ($pluralFileLines | ConvertFrom-Csv -Delimiter ";" -Header @("s", "p")))
-  {
-    if ($line.s.substring(0, 2) -eq "//") { continue } # skip "//" comments
-    if ($line.p) {
-      $tempFileLines += $line.p
-    } else {
-      $tempFileLines += $line.s
+    foreach ($line in ($pluralFileLines | ConvertFrom-Csv -Delimiter ";" -Header @("s", "p")))
+    {
+      if ($line.s.substring(0, 2) -eq "//") { continue } # skip "//" comments
+      if ($line.p) {
+        $tempFileLines += $line.p
+      } else {
+        $tempFileLines += $line.s
+      }
     }
+    Add-Content -Path $tempFile -Value ($tempFileLines | Sort-Object)
   }
-  Add-Content -Path $tempFile -Value ($tempFileLines | Sort-Object)
 
   # Merge the temp file with the output file
   $tempFileLines = Get-Content $tempFile
