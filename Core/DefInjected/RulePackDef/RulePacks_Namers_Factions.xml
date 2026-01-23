@@ -26,7 +26,7 @@
     <li>msyl->lite</li>
   -->
   <NamerFactionMechanoid.rulePack.rulesStrings>
-    <li>r_name->[msyl_cap][msyl]-[mechhive]</li>
+    <li>r_name->[mechhive] [msyl_cap][msyl]</li>
     <li>mechhive->Mechnest</li>
     <li>msyl->nyar</li>
     <li>msyl->alg</li>
@@ -93,10 +93,11 @@
   <NamerFactionOutlander.rulePack.rulesStrings>
     <li>r_name(p=3)->[nearnameinitial]</li>
     <li>r_name->[nearnameinitial]-[political_union_outlander]</li>
+    <li>r_name(p=2)->[political_union_outlander] [nearnameinitial]</li>
     <li>r_name(p=0.33)->[political_adjective]er [nearnameinitial]-[political_union_outlander_mas]</li>
     <li>r_name(p=0.33)->[political_adjective]e [nearnameinitial]-[political_union_outlander_fem]</li>
     <li>r_name(p=0.33)->[political_adjective]es [nearnameinitial]-[political_union_outlander_neu]</li>
-    <li>r_name->[political_union_outlander] der [nearnameinitial]</li>
+    <li>r_name(p=0.5)->[political_union_outlander] der [nearnameinitial]</li>
     <li>r_name(p=0.33)->[political_adjective]er [political_union_outlander_mas] der [nearnameinitial]</li>
     <li>r_name(p=0.33)->[political_adjective]e [political_union_outlander_fem] der [nearnameinitial]</li>
     <li>r_name(p=0.33)->[political_adjective]es [political_union_outlander_neu] der [nearnameinitial]</li>
@@ -202,7 +203,8 @@
     <li>r_name(p=0.33)->Der [TerrainFeatureCon][political_union_tribal_mas_low]</li>
     <li>r_name(p=0.33)->Die [TerrainFeatureCon][political_union_tribal_fem_low]</li>
     <li>r_name(p=0.33)->Das [TerrainFeatureCon][political_union_tribal_neu_low]</li>
-    <li>r_name->[political_union_tribal] der [WordTribal]</li>
+    <li>r_name(p=0.5)->[political_union_tribal] der [WordTribal]</li>
+    <li>r_name(p=2)->[political_union_tribal] [WordTribal]</li>
     <li>r_name->Die [ColorCap][AnimalConLow]-[WordTribal]</li>
     <li>r_name(p=0.11)->Der [political_union_tribal_mas] des [Color]en [AnimalMasGen]</li>
     <li>r_name(p=0.11)->Die [political_union_tribal_fem] des [Color]en [AnimalMasGen]</li>

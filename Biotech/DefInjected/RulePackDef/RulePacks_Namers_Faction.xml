@@ -94,7 +94,8 @@
     <li>r_name(p=0.33)->Der [nameCore]-[political_union_tribal_mas]</li>
     <li>r_name(p=0.33)->Die [nameCore]-[political_union_tribal_fem]</li>
     <li>r_name(p=0.33)->Das [nameCore]-[political_union_tribal_neu]</li>
-    <li>r_name->[political_union_outlander] der [nameCore]</li>
+    <li>r_name(p=0.5)->[political_union_outlander] der [nameCore]</li>
+    <li>r_name(p=2)->[political_union_outlander] [nameCore]</li>
     <li>maybeHyphenSylP(p=3)->[SylP]</li>
     <li>maybeHyphenSylP->-[SylPCap]</li>
     <li>maybeHyphenEnd(p=3)->[end]</li>
@@ -229,31 +230,32 @@
     <li>r_name->[placeNameCore]-[faction]</li>
     <li>r_name(p=0.5)->Der [placeNameCore]-[faction_mas]</li>
     <li>r_name(p=0.5)->Die [placeNameCore]-[faction_fem]</li>
-    <li>r_name->[faction] der [placeNameCore]</li>
-    <li>faction->Brüllsippe</li>
-    <li>faction->Brüllclan</li>
+    <li>r_name(p=0.5)->[faction] der [placeNameCore]</li>
+    <li>r_name(p=2)->[faction] [placeNameCore]</li>
+    <li>faction(p=0.5)->Brüllsippe</li>
+    <li>faction(p=0.5)->Brüllclan</li>
     <li>faction->Stamm</li>
     <li>faction->Clan</li>
     <li>faction->Sippe</li>
     <li>faction->Rotte</li>
     <li>faction->Meute</li>
     <li>faction->Familie</li>
-    <li>faction->Pelzclan</li>
-    <li>faction->Pelzsippe</li>
-    <li>faction->Fellclan</li>
-    <li>faction->Fellsippe</li>
-    <li>faction_fem->Brüllsippe</li>
-    <li>faction_mas->Brüllclan</li>
+    <li>faction(p=0.5)->Pelzclan</li>
+    <li>faction(p=0.5)->Pelzsippe</li>
+    <li>faction(p=0.5)->Fellclan</li>
+    <li>faction(p=0.5)->Fellsippe</li>
+    <li>faction_fem(p=0.5)->Brüllsippe</li>
+    <li>faction_mas(p=0.5)->Brüllclan</li>
     <li>faction_mas->Stamm</li>
     <li>faction_mas->Clan</li>
     <li>faction_fem->Sippe</li>
     <li>faction_fem->Rotte</li>
     <li>faction_fem->Meute</li>
     <li>faction_fem->Familie</li>
-    <li>faction_mas->Pelzclan</li>
-    <li>faction_fem->Pelzsippe</li>
-    <li>faction_mas->Fellclan</li>
-    <li>faction_fem->Fellsippe</li>
+    <li>faction_mas(p=0.5)->Pelzclan</li>
+    <li>faction_fem(p=0.5)->Pelzsippe</li>
+    <li>faction_mas(p=0.5)->Fellclan</li>
+    <li>faction_fem(p=0.5)->Fellsippe</li>
   </NamerFactionPirateYttakin.rulePack.rulesStrings>
   
   <!-- EN:
@@ -273,7 +275,8 @@
     <li>r_name(p=0.33)->Der [placeNameCore]-[faction_mas]</li>
     <li>r_name(p=0.33)->Die [placeNameCore]-[faction_fem]</li>
     <li>r_name(p=0.33)->Das [placeNameCore]-[faction_neu]</li>
-    <li>r_name->[faction] der [placeNameCore]</li>
+    <li>r_name(p=0.5)->[faction] der [placeNameCore]</li>
+    <li>r_name(p=2)->[faction] [placeNameCore]</li>
     <li>faction->Stamm</li>
     <li>faction->Liga</li>
     <li>faction->Rennschaft</li>
@@ -311,7 +314,8 @@
     <li>r_name(p=0.33)->Der [placeNameCore]-[political_union_tribal_mas]</li>
     <li>r_name(p=0.33)->Die [placeNameCore]-[political_union_tribal_fem]</li>
     <li>r_name(p=0.33)->Das [placeNameCore]-[political_union_tribal_neu]</li>
-    <li>r_name->[political_union_tribal] der [placeNameCore]</li>
+    <li>r_name(p=0.5)->[political_union_tribal] der [placeNameCore]</li>
+    <li>r_name(p=2)->[political_union_tribal] [placeNameCore]</li>
   </NamerFactionTribalNeanderthal.rulePack.rulesStrings>
   
   <!-- EN:
