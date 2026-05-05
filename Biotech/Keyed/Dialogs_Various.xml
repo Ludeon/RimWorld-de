@@ -5,7 +5,7 @@
   <!-- EN: Any mechanitor -->
   <AnyMechanitor>Beliebiger Mechanitor</AnyMechanitor>
   <!-- EN: Summoning the {LEADERKIND_label} threat will summon the following hostile mechanoids:\n\n{PAWNS}\n\nThe mechanoids will arrive in the next few hours or days. Are you ready to fight? -->
-  <BossgroupWarningDialog>Wenn du {LEADERKIND_gender ? den : die : das} {LEADERKIND_label} herbeirufst, werden die folgenden feindlichen Mechs eintreffen:\n\n{PAWNS}\n\nDie Mechanoiden werden in den nächsten Stunden oder Tagen eintreffen. Bist du bereit für den Kampf?</BossgroupWarningDialog>
+  <BossgroupWarningDialog>Wenn du {LEADERKIND_gender ? den : die : das} {lookup: {LEADERKIND_label}; decline; 7} herbeirufst, erscheinen die folgenden feindlichen Mechs:\n\n{PAWNS}\n\nDie Mechanoiden werden in den nächsten Stunden oder Tagen eintreffen. Bist du bereit für den Kampf?</BossgroupWarningDialog>
   <!-- EN: {PAWN_labelShort} is downed. -->
   <MechControllerDowned>{PAWN_labelShort} liegt am Boden.</MechControllerDowned>
   <!-- EN: {PAWN_labelShort} is a prisoner. -->
