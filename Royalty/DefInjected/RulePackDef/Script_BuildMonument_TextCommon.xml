@@ -34,16 +34,16 @@
     <li>asker2(askerIsNull==true)->der Archotech</li>
     <li>asker2(asker_factionLeader==True)->[asker_nameDef]</li>
     <li>asker2(asker_royalInCurrentFaction==True)->[asker_royalTitleInCurrentFactionDef]</li>
-    <li>buildReason(p=0.5)->um [den_Dingen] [asker_possessive]es [PersonFamilyMasGen] [to_honor]</li>
-    <li>buildReason(p=0.5)->um [den_Dingen] [asker_possessive]er [PersonFamilyFemGen] [to_honor]</li>
-    <li>buildReason(p=0.25)->um [asker_possessive]en eigenen [PersonalCharacteristicsDat] [to_honor]</li>
-    <li>buildReason(p=0.25)->um [asker_possessive]em eigenen [PersonalCharacteristicMas] [to_honor]</li>
-    <li>buildReason(p=0.25)->um [asker_possessive]er eigenen [PersonalCharacteristicFem] [to_honor]</li>
-    <li>buildReason(p=0.25)->um [asker_possessive]em eigenen [PersonalCharacteristicNeu] [to_honor]</li>
-    <li>buildReason(p=0.25)->um die [PersonalCharacteristics] [asker_possessive]es Erzfeindes [to_insult]</li>
-    <li>buildReason(p=0.25)->um den [PersonalCharacteristicMas] [asker_possessive]es Erzfeindes [to_insult]</li>
-    <li>buildReason(p=0.25)->um die [PersonalCharacteristicFem] [asker_possessive]es Erzfeindes [to_insult]</li>
-    <li>buildReason(p=0.25)->um das [PersonalCharacteristicNeu] [asker_possessive]es Erzfeindes [to_insult]</li>
+    <li>buildReason(p=0.5)->um [the_PersonalCharacteristic_dat] [asker_possessive]es [PersonFamilyMasGen] [to_honor]</li>
+    <li>buildReason(p=0.5)->um [the_PersonalCharacteristic_dat] [asker_possessive]er [PersonFamilyFemGen] [to_honor]</li>
+    <li>buildReason(p=0.25)->um [asker_possessive]en eigenen [PersonalCharacteristicsDatDef] [to_honor]</li>
+    <li>buildReason(p=0.25)->um [asker_possessive]em eigenen [PersonalCharacteristicMasDatDef] [to_honor]</li>
+    <li>buildReason(p=0.25)->um [asker_possessive]er eigenen [PersonalCharacteristicFemDatDef] [to_honor]</li>
+    <li>buildReason(p=0.25)->um [asker_possessive]em eigenen [PersonalCharacteristicNeuDatDef] [to_honor]</li>
+    <li>buildReason(p=0.25)->um die [PersonalCharacteristicsAccDef] [asker_possessive]es Erzfeindes [to_insult]</li>
+    <li>buildReason(p=0.25)->um den [PersonalCharacteristicMasAccDef] [asker_possessive]es Erzfeindes [to_insult]</li>
+    <li>buildReason(p=0.25)->um die [PersonalCharacteristicFemAccDef] [asker_possessive]es Erzfeindes [to_insult]</li>
+    <li>buildReason(p=0.25)->um das [PersonalCharacteristicNeuAccDef] [asker_possessive]es Erzfeindes [to_insult]</li>
     <li>buildReason->um den Leuten die Angst vor [der_Angst] zu nehmen</li>
     <li>buildReason->um der Welt zu zeigen, wie [AdjectiveBadass] [asker_pronoun] ist</li>
     <li>buildReason->um [asker_possessive]e {lookup: [asker_faction_pawnsPlural]; plural_decline; 7} zu ehren, die im Kampf gefallen sind</li>
@@ -65,10 +65,10 @@
     <li>failLetterEndingCommon(askerIsNull==true,priority=1)->Die Quest '[resolvedQuestName]' ist gescheitert.</li>
     <li>failLetterEndingCommon->Die Quest '[resolvedQuestName]' ist gescheitert.\n\nDein Ruf bei der Fraktion [asker_faction_name] hat sich um [goodwillPenalty] Punkte verschlechtert.</li>
     <!-- gender-specific -->
-    <li>den_Dingen->den [PersonalCharacteristicsDat]</li>
-    <li>den_Dingen->dem [PersonalCharacteristicMas]</li>
-    <li>den_Dingen->der [PersonalCharacteristicFem]</li>
-    <li>den_Dingen->dem [PersonalCharacteristicNeu]</li>
+    <li>the_PersonalCharacteristic_dat->den [PersonalCharacteristicsDatDef]</li>
+    <li>the_PersonalCharacteristic_dat->dem [PersonalCharacteristicMasDatDef]</li>
+    <li>the_PersonalCharacteristic_dat->der [PersonalCharacteristicFemDatDef]</li>
+    <li>the_PersonalCharacteristic_dat->dem [PersonalCharacteristicNeuDatDef]</li>
     <li>der_Angst->dem [ConceptAngstyMas]</li>
     <li>der_Angst->der [ConceptAngstyFem]</li>
     <li>der_Angst->dem [ConceptAngstyNeu]</li>

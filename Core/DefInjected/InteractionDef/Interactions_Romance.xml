@@ -107,26 +107,24 @@
     <li>wootactic->indem [INITIATOR_pronoun] eine Fabel über [TalkTopicAnyAcc] erzählte</li>
     <li>wootactic->indem [INITIATOR_pronoun] Witze über [TalkTopicAnyAcc] erzählte</li>
     <li>wootactic->indem [INITIATOR_pronoun] eine gewagte Theorie über [TalkTopicAnyAcc] aufstellte</li>
-    <li>wootactic(p=0.5)->indem [INITIATOR_pronoun] [RECIPIENT_objective] mit einer [romantic_adj]en [romantic_noun_Fem] verglich</li>
-    <li>wootactic(p=0.5)->indem [INITIATOR_pronoun] [RECIPIENT_objective] mit einem [romantic_adj]en [romantic_noun_Mas_Neu] verglich</li>
-    <li>wootactic(p=0.5)->indem [INITIATOR_pronoun] [RECIPIENT_objective] mit einer [romantic_adj]en [romantic_noun_Fem] gleichsetzte</li>
-    <li>wootactic(p=0.5)->indem [INITIATOR_pronoun] [RECIPIENT_objective] mit einem [romantic_adj]en [romantic_noun_Mas_Neu] gleichsetzte</li>
+    <li>wootactic->indem [INITIATOR_pronoun] [RECIPIENT_objective] mit [romantic_adj_romantic_noun] verglich</li>
+    <li>wootactic->indem [INITIATOR_pronoun] [RECIPIENT_objective] mit [romantic_adj_romantic_noun] gleichsetzte</li>
     <li>wootactic(p=2)->[boasting]</li>
     <li>wootactic(p=4)->[complimenting]</li>
-    <li>boasting->indem [INITIATOR_pronoun] mit [INITIATOR_possessive][en_Dingen] prahlte</li>
-    <li>boasting->indem [INITIATOR_pronoun] [INITIATOR_possessive][e_Dinge] positiv erwähnte</li>
-    <li>boasting->indem [INITIATOR_pronoun] mit [INITIATOR_possessive][en_Dingen] angab</li>
-    <li>boasting->indem [INITIATOR_pronoun] über [INITIATOR_possessive][e_Dinge] redete</li>
-    <li>boasting->indem [INITIATOR_pronoun] [RECIPIENT_possessive]e Aufmerksamkeit auf [INITIATOR_possessive][e_Dinge] lenkte</li>
-    <li>complimenting(p=3)->indem [INITIATOR_pronoun] Komplimente über [RECIPIENT_possessive][e_Dinge] machte</li>
-    <li>complimenting->indem [INITIATOR_pronoun] subtile Komplimente über [RECIPIENT_possessive][e_Dinge] machte</li>
-    <li>complimenting->indem [INITIATOR_pronoun] [RECIPIENT_possessive][e_Dinge] lobte</li>
-    <li>complimenting->indem [INITIATOR_pronoun] positiv [RECIPIENT_possessive][e_Dinge] kommentierte</li>
-    <li>complimenting->indem [INITIATOR_pronoun] positiv [RECIPIENT_possessive][e_Dinge] erwähnte</li>
-    <li>complimenting->indem [INITIATOR_pronoun] [RECIPIENT_objective] scherzhaft wegen [RECIPIENT_possessive][es_Dings] neckte</li>
-    <li>complimenting->indem [INITIATOR_pronoun] eine scherzhafte Anspielung auf [RECIPIENT_possessive][e_Dinge] machte</li>
-    <li>complimenting->indem [INITIATOR_pronoun] schelmisch nach [RECIPIENT_possessive][en_Dingen] fragte</li>
-    <li>complimenting->indem [INITIATOR_pronoun] einen vergnügten Scherz über [RECIPIENT_possessive][e_Dinge] machte</li>
+    <li>boasting->indem [INITIATOR_pronoun] mit [INITIATOR_possessive_PersonalCharacteristic_dat] prahlte</li>
+    <li>boasting->indem [INITIATOR_pronoun] [INITIATOR_possessive_PersonalCharacteristic_acc] positiv erwähnte</li>
+    <li>boasting->indem [INITIATOR_pronoun] mit [INITIATOR_possessive_PersonalCharacteristic_dat] angab</li>
+    <li>boasting->indem [INITIATOR_pronoun] über [INITIATOR_possessive_PersonalCharacteristic_acc] redete</li>
+    <li>boasting->indem [INITIATOR_pronoun] [RECIPIENT_possessive]e Aufmerksamkeit auf [INITIATOR_possessive_PersonalCharacteristic_acc] lenkte</li>
+    <li>complimenting(p=3)->indem [INITIATOR_pronoun] Komplimente über [RECIPIENT_possessive_PersonalCharacteristic_acc] machte</li>
+    <li>complimenting->indem [INITIATOR_pronoun] subtile Komplimente über [RECIPIENT_possessive_PersonalCharacteristic_acc] machte</li>
+    <li>complimenting->indem [INITIATOR_pronoun] [RECIPIENT_possessive_PersonalCharacteristic_acc] lobte</li>
+    <li>complimenting->indem [INITIATOR_pronoun] positiv [RECIPIENT_possessive_PersonalCharacteristic_acc] kommentierte</li>
+    <li>complimenting->indem [INITIATOR_pronoun] positiv [RECIPIENT_possessive_PersonalCharacteristic_acc] erwähnte</li>
+    <li>complimenting->indem [INITIATOR_pronoun] [RECIPIENT_objective] scherzhaft wegen [RECIPIENT_possessive_PersonalCharacteristic_gen] neckte</li>
+    <li>complimenting->indem [INITIATOR_pronoun] eine scherzhafte Anspielung auf [RECIPIENT_possessive_PersonalCharacteristic_acc] machte</li>
+    <li>complimenting->indem [INITIATOR_pronoun] schelmisch nach [RECIPIENT_possessive_PersonalCharacteristic_dat] fragte</li>
+    <li>complimenting->indem [INITIATOR_pronoun] einen vergnügten Scherz über [RECIPIENT_possessive_PersonalCharacteristic_acc] machte</li>
     <li>romantic_adj->wunderschön</li>
     <li>romantic_adj->leuchtend</li>
     <li>romantic_adj->glühend</li>
@@ -142,6 +140,21 @@
     <li>romantic_adj->lieblich</li>
     <li>romantic_adj->wunderbar</li>
     <li>romantic_adj(p=3)->[AdjectiveBadass]</li>
+    <li>romantic_noun->Blume</li>
+    <li>romantic_noun->Frühling</li>
+    <li>romantic_noun->Fluss</li>
+    <li>romantic_noun->Stern</li>
+    <li>romantic_noun->Mond</li>
+    <li>romantic_noun->Sonne</li>
+    <li>romantic_noun->Haus</li>
+    <li>romantic_noun->Polarlicht</li>
+    <li>romantic_noun->Sternschnuppe</li>
+    <li>romantic_noun->Oase</li>
+    <li>romantic_noun->Engel</li>
+    <li>romantic_noun->[TreeType]</li>
+    <li>romantic_noun(p=2)->[TerrainFeature]</li>
+    <li>romantic_noun(p=2)->[NaturalObject]</li>
+    <!-- gender-specific -->
     <li>romantic_noun_Fem->Blume</li>
     <li>romantic_noun_Fem->Sonne</li>
     <li>romantic_noun_Fem->Sternschnuppe</li>
@@ -161,19 +174,32 @@
     <li>romantic_noun_Mas_Neu(p=0.5)->[TerrainFeatureNeuDat]</li>
     <li>romantic_noun_Mas_Neu(p=0.5)->[NaturalObjectMasDat]</li>
     <li>romantic_noun_Mas_Neu(p=0.5)->[NaturalObjectNeuDat]</li>
-    <!-- gender-specific -->
-    <li>en_Dingen->en [PersonalCharacteristicsDat]</li>
-    <li>en_Dingen->em [PersonalCharacteristicMas]</li>
-    <li>en_Dingen->er [PersonalCharacteristicFem]</li>
-    <li>en_Dingen->em [PersonalCharacteristicNeu]</li>
-    <li>e_Dinge->e [PersonalCharacteristics]</li>
-    <li>e_Dinge->en [PersonalCharacteristicMas]</li>
-    <li>e_Dinge->e [PersonalCharacteristicFem]</li>
-    <li>e_Dinge-> [PersonalCharacteristicNeu]</li>
-    <li>es_Dings->er [PersonalCharacteristicsGen]</li>
-    <li>es_Dings->es [PersonalCharacteristicMasGen]</li>
-    <li>es_Dings->er [PersonalCharacteristicFemGen]</li>
-    <li>es_Dings->es [PersonalCharacteristicNeuGen]</li>
+    <li>romantic_adj_romantic_noun->einer [romantic_adj]en [romantic_noun_Fem]</li>
+    <li>romantic_adj_romantic_noun->einem [romantic_adj]en [romantic_noun_Mas_Neu]</li>
+    <li>INITIATOR_possessive_PersonalCharacteristic_gen->[INITIATOR_possessive]er [PersonalCharacteristicsGenDef]</li>
+    <li>INITIATOR_possessive_PersonalCharacteristic_gen->[INITIATOR_possessive]es [PersonalCharacteristicMasGenDef]</li>
+    <li>INITIATOR_possessive_PersonalCharacteristic_gen->[INITIATOR_possessive]er [PersonalCharacteristicFemGenDef]</li>
+    <li>INITIATOR_possessive_PersonalCharacteristic_gen->[INITIATOR_possessive]es [PersonalCharacteristicNeuGenDef]</li>
+    <li>INITIATOR_possessive_PersonalCharacteristic_dat->[INITIATOR_possessive]en [PersonalCharacteristicsDatDef]</li>
+    <li>INITIATOR_possessive_PersonalCharacteristic_dat->[INITIATOR_possessive]em [PersonalCharacteristicMasDatDef]</li>
+    <li>INITIATOR_possessive_PersonalCharacteristic_dat->[INITIATOR_possessive]er [PersonalCharacteristicFemDatDef]</li>
+    <li>INITIATOR_possessive_PersonalCharacteristic_dat->[INITIATOR_possessive]em [PersonalCharacteristicNeuDatDef]</li>
+    <li>INITIATOR_possessive_PersonalCharacteristic_acc->[INITIATOR_possessive]e [PersonalCharacteristicsAccDef]</li>
+    <li>INITIATOR_possessive_PersonalCharacteristic_acc->[INITIATOR_possessive]en [PersonalCharacteristicMasAccDef]</li>
+    <li>INITIATOR_possessive_PersonalCharacteristic_acc->[INITIATOR_possessive]e [PersonalCharacteristicFemAccDef]</li>
+    <li>INITIATOR_possessive_PersonalCharacteristic_acc->[INITIATOR_possessive] [PersonalCharacteristicNeuAccDef]</li>
+    <li>RECIPIENT_possessive_PersonalCharacteristic_gen->[RECIPIENT_possessive]er [PersonalCharacteristicsGenDef]</li>
+    <li>RECIPIENT_possessive_PersonalCharacteristic_gen->[RECIPIENT_possessive]es [PersonalCharacteristicMasGenDef]</li>
+    <li>RECIPIENT_possessive_PersonalCharacteristic_gen->[RECIPIENT_possessive]er [PersonalCharacteristicFemGenDef]</li>
+    <li>RECIPIENT_possessive_PersonalCharacteristic_gen->[RECIPIENT_possessive]es [PersonalCharacteristicNeuGenDef]</li>
+    <li>RECIPIENT_possessive_PersonalCharacteristic_dat->[RECIPIENT_possessive]en [PersonalCharacteristicsDatDef]</li>
+    <li>RECIPIENT_possessive_PersonalCharacteristic_dat->[RECIPIENT_possessive]em [PersonalCharacteristicMasDatDef]</li>
+    <li>RECIPIENT_possessive_PersonalCharacteristic_dat->[RECIPIENT_possessive]er [PersonalCharacteristicFemDatDef]</li>
+    <li>RECIPIENT_possessive_PersonalCharacteristic_dat->[RECIPIENT_possessive]em [PersonalCharacteristicNeuDatDef]</li>
+    <li>RECIPIENT_possessive_PersonalCharacteristic_acc->[RECIPIENT_possessive]e [PersonalCharacteristicsAccDef]</li>
+    <li>RECIPIENT_possessive_PersonalCharacteristic_acc->[RECIPIENT_possessive]en [PersonalCharacteristicMasAccDef]</li>
+    <li>RECIPIENT_possessive_PersonalCharacteristic_acc->[RECIPIENT_possessive]e [PersonalCharacteristicFemAccDef]</li>
+    <li>RECIPIENT_possessive_PersonalCharacteristic_acc->[RECIPIENT_possessive] [PersonalCharacteristicNeuAccDef]</li>
   </RomanceAttempt.logRulesInitiator.rulesStrings>
   
 </LanguageData>
