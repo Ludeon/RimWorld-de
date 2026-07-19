@@ -204,7 +204,7 @@
   <GoHere>Gehe hier hin</GoHere>
 
   <!-- EN: Clean {0} -->
-  <CleanRoom>Reinige {0}</CleanRoom>
+  <CleanRoom>Reinige komplett {0}</CleanRoom>
   
   <!-- EN: Arrest {0} -->
   <Arrest>Inhaftiere {0}</Arrest>
@@ -463,7 +463,7 @@
 
   <!-- e.g. Cannot VERB OBJECT, Cannot repair wall, Cannot haul metal, etc. -->
   <!-- EN: Cannot {0} {1} -->
-  <CannotGenericWork>Kann {lookup: {1}; decline; 3} nicht {0}</CannotGenericWork>
+  <CannotGenericWork>Kann {replace: {lookup: {1}; decline; 3} nicht {0}; "{lookup: {1}; decline; 3} nicht reinigen"-"nicht reinigen ({lookup: {1}; decline; 3})"}</CannotGenericWork>
   <!-- EN: Cannot {0} -->
   <CannotGenericWorkCustom>Kann nicht {0}</CannotGenericWorkCustom>
 
@@ -472,7 +472,7 @@
 
   <!-- e.g. Already GERUND OBJECT, Already repairing wall, already hauling metal, etc -->
   <!-- EN: Already {0} {2_labelShort} -->
-  <CannotGenericAlreadyAm>{0} {2_labelShort} erfolgt bereits</CannotGenericAlreadyAm>
+  <CannotGenericAlreadyAm>{replace: {0} {2_labelShort}; "Reinigen von {2_labelShort}"-"Reinigen ({2_labelShort})"} erfolgt bereits</CannotGenericAlreadyAm>
   <!-- EN: Already {0} -->
   <CannotGenericAlreadyAmCustom>{replace: {0}^; " im^"-""; "^"-""} erfolgt bereits</CannotGenericAlreadyAmCustom>
 
@@ -507,7 +507,7 @@
 
   <!-- e.g. Prioritize GERUND OBJECT, Prioritize repairing wall, prioritize hauling metal, etc -->
   <!-- EN: Prioritize {0} {1} -->
-  <PrioritizeGeneric>Priorisiere {0} {1}</PrioritizeGeneric>
+  <PrioritizeGeneric>Priorisiere {replace: {0} {1}; "Reinigen von {1}"-"Reinigen ({1})"}</PrioritizeGeneric>
   <!-- EN: Prioritize {0} -->
   <PrioritizeGenericSimple>Priorisiere {0}</PrioritizeGenericSimple>
 
