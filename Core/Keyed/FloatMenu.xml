@@ -463,7 +463,7 @@
 
   <!-- e.g. Cannot VERB OBJECT, Cannot repair wall, Cannot haul metal, etc. -->
   <!-- EN: Cannot {0} {1} -->
-  <CannotGenericWork>Kann {replace: {lookup: {1}; decline; 3} nicht {0}; "{lookup: {1}; decline; 3} nicht reinigen"-"nicht reinigen ({lookup: {1}; decline; 3})"}</CannotGenericWork>
+  <CannotGenericWork>Kann {replace: {lookup: {1}; decline; 3} nicht {0}; "{lookup: {1}; decline; 3} nicht reinigen"-"nicht reinigen ({1})"; "Gebiet nicht überdachen"-"Dach nicht bauen"; "Gebiet nicht schneefrei machen"-"Schnee nicht räumen"; "Gebiet nicht bodenfrei machen"-"Böden nicht entfernen"; "Gebiet nicht fundamentfrei machen"-"Fundamente nicht entfernen"; "Gebiet nicht glätten (Böden)"-"Böden nicht glätten"; "Gebiet nicht glätten (Wände)"-"Wände nicht glätten"; "Gebiet nicht ernten"-"Pflanzen nicht ernten"; "Gebiet nicht anbauen"-"Pflanzen nicht anbauen"; "Gebiet nicht färben"-"Böden nicht färben"; "Gebiet nicht von Farbe befreien"-"Farbe auf Böden nicht entfernen"; "{lookup: {1}; decline; 3} nicht von Farbe befreien"-"Farbe auf {1} nicht entfernen"; "Gebiet nicht dachfrei machen"-"Dach nicht abreißen"; "Gebiet nicht sandfrei machen"-"Sand nicht räumen"}</CannotGenericWork>
   <!-- EN: Cannot {0} -->
   <CannotGenericWorkCustom>Kann nicht {0}</CannotGenericWorkCustom>
 
@@ -472,9 +472,9 @@
 
   <!-- e.g. Already GERUND OBJECT, Already repairing wall, already hauling metal, etc -->
   <!-- EN: Already {0} {2_labelShort} -->
-  <CannotGenericAlreadyAm>{replace: {0} {2_labelShort}; "Reinigen von {2_labelShort}"-"Reinigen ({2_labelShort})"} erfolgt bereits</CannotGenericAlreadyAm>
+  <CannotGenericAlreadyAm>{replace: {0} {2_labelShort}$$; "Reinigen von {2_labelShort}$$"-"Reinigen ({2_labelShort})"; " Gebiet$$"-""; "$$"-""} erfolgt bereits</CannotGenericAlreadyAm>
   <!-- EN: Already {0} -->
-  <CannotGenericAlreadyAmCustom>{replace: {0}^; " im^"-""; "^"-""} erfolgt bereits</CannotGenericAlreadyAmCustom>
+  <CannotGenericAlreadyAmCustom>{0} erfolgt bereits</CannotGenericAlreadyAmCustom>
 
   <!-- EN: Will never do {0} -->
   <CannotPrioritizeWorkTypeDisabled>Verweigert {0}</CannotPrioritizeWorkTypeDisabled>
@@ -507,7 +507,7 @@
 
   <!-- e.g. Prioritize GERUND OBJECT, Prioritize repairing wall, prioritize hauling metal, etc -->
   <!-- EN: Prioritize {0} {1} -->
-  <PrioritizeGeneric>Priorisiere {replace: {0} {1}; "Reinigen von {1}"-"Reinigen ({1})"}</PrioritizeGeneric>
+  <PrioritizeGeneric>Priorisiere {replace: {0} {1}$$; "Reinigen von {1}$$"-"Reinigen ({1})"; " Gebiet$$"-""; "$$"-""}</PrioritizeGeneric>
   <!-- EN: Prioritize {0} -->
   <PrioritizeGenericSimple>Priorisiere {0}</PrioritizeGenericSimple>
 
