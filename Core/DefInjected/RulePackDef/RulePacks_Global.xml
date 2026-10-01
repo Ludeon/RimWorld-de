@@ -625,17 +625,17 @@
     <li>PersonalCharacteristicFemDatDef(p=0.15)->Sexualerfahrung</li>
     <li>PersonalCharacteristicFemAccDef(p=0.15)->Sexualerfahrung</li>
     <li>INITIATOR_nameIndefDat(INITIATOR_genderResolved!=Male,INITIATOR_genderResolved!=Female,INITIATOR_genderResolved!=None)->{replace: [INITIATOR_definite]; "der [INITIATOR_label]"-"einem"; "die [INITIATOR_label]"-"einer"; "das [INITIATOR_label]"-"einem"} {lookup: [INITIATOR_label]; decline; 2}</li>
-    <li>INITIATOR_nameIndefDat(priority=-1)->{replace: [INITIATOR_definite]; ">der "-">einem "; ">die "-">einer "; ">das "-">einem "}</li>
+    <li>INITIATOR_nameIndefDat(priority=-1)->{replace: [INITIATOR_definite]; ">der Affe"-">einem Affen"; ">der Elefant"-">einem Elefanten"; ">der Eisbär"-">einem Eisbären"; ">der Grizzlybär"-">einem Grizzlybären"; ">der Hase"-">einem Hasen"; ">der Schneehase"-">einem Schneehasen"; ">der Seelöwe"-">einem Seelöwen"; ">der "-">einem "; ">die "-">einer "; ">das "-">einem "}</li>
     <li>INITIATOR_nameDefDat(INITIATOR_genderResolved!=Male,INITIATOR_genderResolved!=Female,INITIATOR_genderResolved!=None)->{replace: [INITIATOR_definite]; "der [INITIATOR_label]"-"dem"; "die [INITIATOR_label]"-"der"; "das [INITIATOR_label]"-"dem"} {lookup: [INITIATOR_label]; decline; 6}</li>
-    <li>INITIATOR_nameDefDat(priority=-1)->{replace: [INITIATOR_definite]; ">der "-">dem "; ">die "-">der "; ">das "-">dem "}</li>
+    <li>INITIATOR_nameDefDat(priority=-1)->{replace: [INITIATOR_definite]; ">der Affe"-">dem Affen"; ">der Elefant"-">dem Elefanten"; ">der Eisbär"-">dem Eisbären"; ">der Grizzlybär"-">dem Grizzlybären"; ">der Hase"-">dem Hasen"; ">der Schneehase"-">dem Schneehasen"; ">der Seelöwe"-">dem Seelöwen"; ">der "-">dem "; ">die "-">der "; ">das "-">dem "}</li>
     <li>INITIATOR_nameIndefAcc(INITIATOR_genderResolved!=Male,INITIATOR_genderResolved!=Female,INITIATOR_genderResolved!=None)->{replace: [INITIATOR_definite]; "der [INITIATOR_label]"-"einen"; "die [INITIATOR_label]"-"eine"; "das [INITIATOR_label]"-"ein"} {lookup: [INITIATOR_label]; decline; 3}</li>
-    <li>INITIATOR_nameIndefAcc(priority=-1)->{replace: [INITIATOR_definite]; ">der "-">einen "; ">die "-">eine "; ">das "-">ein "}</li>
+    <li>INITIATOR_nameIndefAcc(priority=-1)->{replace: [INITIATOR_definite]; ">der Affe"-">einen Affen"; ">der Elefant"-">einen Elefanten"; ">der Eisbär"-">einen Eisbären"; ">der Grizzlybär"-">einen Grizzlybären"; ">der Hase"-">einen Hasen"; ">der Schneehase"-">einen Schneehasen"; ">der Seelöwe"-">einen Seelöwen"; ">der "-">einen "; ">die "-">eine "; ">das "-">ein "}</li>
     <li>RECIPIENT_nameIndefAcc(RECIPIENT_genderResolved!=Male,RECIPIENT_genderResolved!=Female,RECIPIENT_genderResolved!=None)->{replace: [RECIPIENT_definite]; "der [RECIPIENT_label]"-"einen"; "die [RECIPIENT_label]"-"eine"; "das [RECIPIENT_label]"-"ein"} {lookup: [RECIPIENT_label]; decline; 3}</li>
     <li>RECIPIENT_nameIndefAcc(priority=-1)->{replace: [RECIPIENT_definite]; ">der "-">einen "; ">die "-">eine "; ">das "-">ein "}</li>
     <li>RECIPIENT_nameDefDat(RECIPIENT_genderResolved!=Male,RECIPIENT_genderResolved!=Female,RECIPIENT_genderResolved!=None)->{replace: [RECIPIENT_definite]; "der [RECIPIENT_label]"-"dem"; "die [RECIPIENT_label]"-"der"; "das [RECIPIENT_label]"-"dem"} {lookup: [RECIPIENT_label]; decline; 6}</li>
-    <li>RECIPIENT_nameDefDat(priority=-1)->{replace: [RECIPIENT_definite]; ">der "-">dem "; ">die "-">der "; ">das "-">dem "}</li>
+    <li>RECIPIENT_nameDefDat(priority=-1)->{replace: [RECIPIENT_definite]; ">der Affe"-">dem Affen"; ">der Elefant"-">dem Elefanten"; ">der Eisbär"-">dem Eisbären"; ">der Grizzlybär"-">dem Grizzlybären"; ">der Hase"-">dem Hasen"; ">der Schneehase"-">dem Schneehasen"; ">der Seelöwe"-">dem Seelöwen"; ">der "-">dem "; ">die "-">der "; ">das "-">dem "}</li>
     <li>RECIPIENT_nameDefAcc(RECIPIENT_genderResolved!=Male,RECIPIENT_genderResolved!=Female,RECIPIENT_genderResolved!=None)->{replace: [RECIPIENT_definite]; "der [RECIPIENT_label]"-"den"; "die [RECIPIENT_label]"-"die"; "das [RECIPIENT_label]"-"das"} {lookup: [RECIPIENT_label]; decline; 7}</li>
-    <li>RECIPIENT_nameDefAcc(priority=-1)->{replace: [RECIPIENT_definite]; ">der "-">den "}</li>
+    <li>RECIPIENT_nameDefAcc(priority=-1)->{replace: [RECIPIENT_definite]; ">der Affe"-">den Affen"; ">der Elefant"-">den Elefanten"; ">der Eisbär"-">den Eisbären"; ">der Grizzlybär"-">den Grizzlybären"; ">der Hase"-">den Hasen"; ">der Schneehase"-">den Schneehasen"; ">der Seelöwe"-">den Seelöwen"; ">der "-">den "}</li>
   </GlobalUtility.rulePack.rulesStrings>
   
   <!-- EN:

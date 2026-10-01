@@ -85,7 +85,7 @@
     <li>weapon_dat->{lookup: [WEAPON_label]; decline; 6}</li>
     <li>weapon_dat_his->[INITIATOR_possessive]{replace: ^[WEAPON_indefinite]; "^ein [WEAPON_label]"-"em"; "^eine [WEAPON_label]"-"er"; "^"-""}</li>
     <li>ORIGINALTARGET_nameDefAcc(ORIGINALTARGET_genderResolved!=Male,ORIGINALTARGET_genderResolved!=Female,ORIGINALTARGET_genderResolved!=None)->{replace: [ORIGINALTARGET_definite]; "der [ORIGINALTARGET_label]"-"den"; "die [ORIGINALTARGET_label]"-"die"; "das [ORIGINALTARGET_label]"-"das"} {lookup: [ORIGINALTARGET_label]; decline; 7}</li>
-    <li>ORIGINALTARGET_nameDefAcc(priority=-1)->{replace: [ORIGINALTARGET_definite]; ">der "-">den "}</li>
+    <li>ORIGINALTARGET_nameDefAcc(priority=-1)->{replace: [ORIGINALTARGET_definite]; ">der Affe"-">den Affen"; ">der Elefant"-">den Elefanten"; ">der Eisbär"-">den Eisbären"; ">der Grizzlybär"-">den Grizzlybären"; ">der Hase"-">den Hasen"; ">der Schneehase"-">den Schneehasen"; ">der Seelöwe"-">den Seelöwen"; ">der "-">den "}</li>
     <li>ORIGINALTARGET_nameDefNom(ORIGINALTARGET_genderResolved!=Male,ORIGINALTARGET_genderResolved!=Female,ORIGINALTARGET_genderResolved!=None)->{replace: [ORIGINALTARGET_definite]; " [ORIGINALTARGET_label]"-""} {lookup: [ORIGINALTARGET_label]; decline; 4}</li>
     <li>ORIGINALTARGET_nameDefNom(priority=-1)->[ORIGINALTARGET_definite]</li>
     <li>INITIATOR_nameDefNom(INITIATOR_genderResolved!=Male,INITIATOR_genderResolved!=Female,INITIATOR_genderResolved!=None)->{replace: [INITIATOR_definite]; " [INITIATOR_label]"-""} {lookup: [INITIATOR_label]; decline; 4}</li>
