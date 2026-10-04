@@ -443,9 +443,9 @@
     <li>THING_indefinite_acc->{replace: [THING_definite]; "der [THING_label]"-"einen"; "die [THING_label]"-"eine"; "das [THING_label]"-"ein"} {lookup: [THING_label]; decline; 3}</li>
     <li>THING_definite_dat->{replace: [THING_definite]; "der [THING_label]"-"dem"; "die [THING_label]"-"der"; "das [THING_label]"-"dem"} {lookup: [THING_label]; decline; 6}</li>
     <li>THING_definite_nom->{replace: [THING_definite]; " [THING_label]"-""} {lookup: [THING_label]; decline; 4}</li>
-    <li>PAWN_nameFullIndefDat->{replace: [PAWN_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
-    <li>PAWN_nameDefAcc->{replace: [PAWN_nameDef]; ">der Affe"-">den Affen"; ">der Apokrit"-">den Apokriten"; ">der Elefant"-">den Elefanten"; ">der Eisbär"-">den Eisbären"; ">der Grizzlybär"-">den Grizzlybären"; ">der Hase"-">den Hasen"; ">der Konstruktoid"-">den Konstruktoiden"; ">der Moschusochse"-">den Moschusochsen"; ">der Schneehase"-">den Schneehasen"; ">der Seelöwe"-">den Seelöwen"; ">der Stachelgigant"-">den Stachelgiganten"; ">der Waschbär"-">den Waschbären"; ">der Zyklop"-">den Zyklopen"; ">der "-">den "}</li>
-    <li>PAWN_nameDefDat->{replace: [PAWN_nameIndef]; ">ein Affe"-">dem Affen"; ">ein Apokrit"-">dem Apokriten"; ">ein Elefant"-">dem Elefanten"; ">ein Eisbär"-">dem Eisbären"; ">ein Grizzlybär"-">dem Grizzlybären"; ">ein Hase"-">dem Hasen"; ">ein Konstruktoid"-">dem Konstruktoiden"; ">ein Moschusochse"-">dem Moschusochsen"; ">ein Schneehase"-">dem Schneehasen"; ">ein Seelöwe"-">dem Seelöwen"; ">ein Stachelgigant"-">dem Stachelgiganten"; ">ein Waschbär"-">dem Waschbären"; ">ein Zyklop"-">dem Zyklopen"; ">ein "-">dem "; ">eine "-">der "}</li>
+    <li>PAWN_nameFullIndefDat->{lookup: [PAWN_nameFull]; decline_tagged; 3}</li>
+    <li>PAWN_nameDefAcc->{lookup: [PAWN_nameDef]; decline_tagged; 4}</li>
+    <li>PAWN_nameDefDat->{lookup: [PAWN_nameDef]; decline_tagged; 3}</li>
   </ArtDescriptionUtility_Global.rulePack.rulesStrings>
   
 </LanguageData>

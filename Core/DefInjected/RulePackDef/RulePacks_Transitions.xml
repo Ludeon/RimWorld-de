@@ -108,8 +108,8 @@
     <li>r_logentry->[SUBJECT_definite] [died] [duetoa] [CULPRITHEDIFF_labelNounGen] [flavorsuffix].</li>
     <li>r_logentry->[SUBJECT_definite] [died].</li>
     <li>r_logentry->[SUBJECT_definite] [died] [flavorsuffix].</li>
-    <li>SUBJECT_nameDefAcc->{replace: [SUBJECT_definite]; ">der Affe"-">den Affen"; ">der Apokrit"-">den Apokriten"; ">der Elefant"-">den Elefanten"; ">der Eisbär"-">den Eisbären"; ">der Grizzlybär"-">den Grizzlybären"; ">der Hase"-">den Hasen"; ">der Konstruktoid"-">den Konstruktoiden"; ">der Moschusochse"-">den Moschusochsen"; ">der Schneehase"-">den Schneehasen"; ">der Seelöwe"-">den Seelöwen"; ">der Stachelgigant"-">den Stachelgiganten"; ">der Waschbär"-">den Waschbären"; ">der Zyklop"-">den Zyklopen"; ">der "-">den "}</li>
-    <li>SUBJECT_nameDefDat->{replace: [SUBJECT_definite]; ">der Affe"-">dem Affen"; ">der Apokrit"-">dem Apokriten"; ">der Elefant"-">dem Elefanten"; ">der Eisbär"-">dem Eisbären"; ">der Grizzlybär"-">dem Grizzlybären"; ">der Hase"-">dem Hasen"; ">der Konstruktoid"-">dem Konstruktoiden"; ">der Moschusochse"-">dem Moschusochsen"; ">der Schneehase"-">dem Schneehasen"; ">der Seelöwe"-">dem Seelöwen"; ">der Stachelgigant"-">dem Stachelgiganten"; ">der Waschbär"-">dem Waschbären"; ">der Zyklop"-">dem Zyklopen"; ">der "-">dem "; ">die "-">der "; ">das "-">dem "}</li>
+    <li>SUBJECT_nameDefAcc->{lookup: [SUBJECT_definite]; decline_tagged; 4}</li>
+    <li>SUBJECT_nameDefDat->{lookup: [SUBJECT_definite]; decline_tagged; 3}</li>
   </Transition_DiedInclude.rulePack.rulesStrings>
   
   <!-- EN:
@@ -173,8 +173,8 @@
     <li>helplessly(SUBJECT_flesh!=Mechanoid,SUBJECT_flesh!=Drone)->kraftlos</li>
     <li>helplessly(SUBJECT_flesh==Mechanoid)->unkontrolliert</li>
     <li>helplessly(SUBJECT_flesh==Drone)->unkontrolliert</li>
-    <li>SUBJECT_nameDefAcc->{replace: [SUBJECT_definite]; ">der Affe"-">den Affen"; ">der Apokrit"-">den Apokriten"; ">der Elefant"-">den Elefanten"; ">der Eisbär"-">den Eisbären"; ">der Grizzlybär"-">den Grizzlybären"; ">der Hase"-">den Hasen"; ">der Konstruktoid"-">den Konstruktoiden"; ">der Moschusochse"-">den Moschusochsen"; ">der Schneehase"-">den Schneehasen"; ">der Seelöwe"-">den Seelöwen"; ">der Stachelgigant"-">den Stachelgiganten"; ">der Waschbär"-">den Waschbären"; ">der Zyklop"-">den Zyklopen"; ">der "-">den "}</li>
-    <li>SUBJECT_nameDefDat->{replace: [SUBJECT_definite]; ">der Affe"-">dem Affen"; ">der Apokrit"-">dem Apokriten"; ">der Elefant"-">dem Elefanten"; ">der Eisbär"-">dem Eisbären"; ">der Grizzlybär"-">dem Grizzlybären"; ">der Hase"-">dem Hasen"; ">der Konstruktoid"-">dem Konstruktoiden"; ">der Moschusochse"-">dem Moschusochsen"; ">der Schneehase"-">dem Schneehasen"; ">der Seelöwe"-">dem Seelöwen"; ">der Stachelgigant"-">dem Stachelgiganten"; ">der Waschbär"-">dem Waschbären"; ">der Zyklop"-">dem Zyklopen"; ">der "-">dem "; ">die "-">der "; ">das "-">dem "}</li>
+    <li>SUBJECT_nameDefAcc->{lookup: [SUBJECT_definite]; decline_tagged; 4}</li>
+    <li>SUBJECT_nameDefDat->{lookup: [SUBJECT_definite]; decline_tagged; 3}</li>
   </Transition_Downed.rulePack.rulesStrings>
   
   <!-- EN:

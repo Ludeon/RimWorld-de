@@ -109,7 +109,7 @@
     <li>r_logentry(recipient_part_destroyed_count==0)->[damage_source2] und [damaged_past] [damaged_targets_acc_pron].</li>
     <li>r_logentry(p=0.1)->[damage_source] [RECIPIENT_nameDefAcc].</li>
     <li>r_logentry(p=0.1)->[damage_source2].</li>
-    <li>RECIPIENT_nameDefAcc->{replace: [RECIPIENT_nameDef]; ">der Affe"-">den Affen"; ">der Apokrit"-">den Apokriten"; ">der Elefant"-">den Elefanten"; ">der Eisbär"-">den Eisbären"; ">der Grizzlybär"-">den Grizzlybären"; ">der Hase"-">den Hasen"; ">der Konstruktoid"-">den Konstruktoiden"; ">der Moschusochse"-">den Moschusochsen"; ">der Schneehase"-">den Schneehasen"; ">der Seelöwe"-">den Seelöwen"; ">der Stachelgigant"-">den Stachelgiganten"; ">der Waschbär"-">den Waschbären"; ">der Zyklop"-">den Zyklopen"; ">der "-">den "}</li>
+    <li>RECIPIENT_nameDefAcc->{lookup: [RECIPIENT_nameDef]; decline_tagged; 4}</li>
   </DamageEvent_Include.rulePack.rulesStrings>
   
   <!-- EN:

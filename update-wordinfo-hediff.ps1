@@ -30,6 +30,6 @@ $CommentBlock = New-CommentBlock `
 Update-OutputFile `
   -OutputFile $OutputFile `
   -ScanRules $ScanRules `
-  -Formats $Formats `
   -ColNames $ColNames `
-  -CommentBlock $CommentBlock
+  -CommentBlock $CommentBlock `
+  -PostProcCallback { Format-Lines $args[0] $Formats }

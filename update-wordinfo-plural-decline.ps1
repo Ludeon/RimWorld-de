@@ -30,7 +30,7 @@ $CommentBlock = New-CommentBlock `
   -ExampleFile ([IO.Path]::GetFileNameWithoutExtension($OutputFile)) `
   -ExampleColName $ColNames[1]
 
-$ExtraLinesProvider = {
+function Add-PluralWords {
   $PluralFile = "WordInfo\plural.txt"
   if (!(Test-Path $PluralFile)) { return }
   $PluralWords = @()
@@ -43,7 +43,7 @@ $ExtraLinesProvider = {
       $PluralWords += $Line.SINGULAR
     }
   }
-  return @("// $PluralFile") + ($PluralWords | Sort-Object)
+  return $args[0] + @("// $PluralFile") + ($PluralWords | Sort-Object)
 }
 
 Update-OutputFile `
@@ -51,4 +51,4 @@ Update-OutputFile `
   -ScanRules $ScanRules `
   -ColNames $ColNames `
   -CommentBlock $CommentBlock `
-  -ExtraLinesProvider $ExtraLinesProvider
+  -PostProcCallback Add-PluralWords

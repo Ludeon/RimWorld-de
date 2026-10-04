@@ -20,24 +20,18 @@ function New-CommentBlock {
 }
 
 function New-HashTable {
-  param($OutputFile, $ColNames)
+  param($Lines)
   $HashTable = New-Object System.Collections.Hashtable
-  $OutputFileLines = @()
-  if (Test-Path $OutputFile) {
-    $OutputFileLines = Get-Content -Path $OutputFile
-    Remove-Item $OutputFile
-  }
-  foreach ($Line in ($OutputFileLines | ConvertFrom-Csv -Delimiter ";" -Header $ColNames)) {
-    if (Test-Comment $Line.$($ColNames[0])) { continue }
-    $Fields = $Line.PSObject.Properties.Value -Join ";"
-    $Fields = $Fields -Replace "(?<=;);" # Remove empty fields for clarity and reducing file size
-    $HashTable[$Line.$($ColNames[0])] = $Fields
+  foreach ($Line in $Lines) {
+    $Fields = $Line -Split ";"
+    if (Test-Comment $Fields[0]) { continue }
+    $HashTable[$Fields[0]] = $Fields
   }
   return $HashTable
 }
 
 function Scan-XML {
-  param($Rules, $Formats)
+  param($Rules)
   $TempFileLines = @()
   $Rules.GetEnumerator() | ForEach-Object {
     $Paths = ($_.Key -Split ',').Trim()
@@ -55,14 +49,7 @@ function Scan-XML {
     $CategoryLines = @()
     foreach ($Element in $Elements) {
       $Value = $Element.Matches[0].Groups["value"].Value
-      if ($Formats) {
-        foreach ($Format in $Formats) {
-          $CategoryLines += ($Format -f $Value)
-        }
-      }
-      else {
-        $CategoryLines += $Value
-      }
+      $CategoryLines += $Value
     }
     $TempFileLines += ($CategoryLines | Sort-Object)
   }
@@ -75,46 +62,65 @@ function Test-Comment {
 }
 
 function Merge-Output {
-  param($TempLines, $HashTable, $ColNames, $CommentBlock)
-  $OutputFileLines = @()
-  if ($ColNames) {
-    $OutputFileLines += $ColNames -Join ";"
-  }
-  $OutputFileLines += $CommentBlock
+  param($TempLines, $OutputFileLines, $ColNames, $CommentBlock)
+  $HashTable = New-HashTable -Lines $OutputFileLines
+  $FieldsCountTotal = $ColNames.Count
+  $OutputFileLinesNew = @()
+  $OutputFileLinesNew += $ColNames -Join ";"
+  $OutputFileLinesNew += $CommentBlock
   foreach ($Line in ($TempLines | Select-Object -Unique)) {
     if (Test-Comment $Line) {
-      $OutputFileLines += $Line
+      $OutputFileLinesNew += $Line
     } elseif ($HashTable.ContainsKey($Line)) {
-      $OutputFileLines += $HashTable[$Line]
+      $OutputFileLinesNew += $HashTable[$Line] -Join ";" -Replace "(?<=;);"
+      # The replacement removes empty fields for clarity and reducing file size
     } else {
-      $OutputFileLines += $Line + ";"
+      $FieldsCountCurrent = ($Line -Split ";").Count
+      if ($FieldsCountCurrent -lt $FieldsCountTotal) {
+        $OutputFileLinesNew += $Line + ";"
+      } else {
+        $OutputFileLinesNew += $Line
+      }
     }
   }
-  return $OutputFileLines
+  return $OutputFileLinesNew
 }
 
 function Update-OutputFile {
-  param($OutputFile, $ScanRules, $Formats, $ColNames, $CommentBlock, $ExtraLinesProvider)
+  param($OutputFile, $ScanRules, $ColNames, $CommentBlock, $PostProcCallback)
   foreach ($DLC in Get-DLCs) { # Enumerate DLC folders (including Core)
     Set-Location -Path "$PSScriptRoot\$DLC"
-    # Create a hash table of keys
-    $HashTable = New-HashTable -OutputFile $OutputFile -ColNames $ColNames
-    # Scan for words in the XML files and add them to the temp file
-    $TempLines = Scan-XML -Rules $ScanRules -Formats $Formats
-    if ($TempLines.Count -eq 0) { continue }
-    if ($ExtraLinesProvider) {
-      $ExtraLines = & $ExtraLinesProvider
-      if ($ExtraLines -and $ExtraLines.Count -gt 0) {
-        $TempLines += $ExtraLines
-      }
+    $OutputFileLines = @()
+    if (Test-Path $OutputFile) {
+      $OutputFileLines = Get-Content -Path $OutputFile
+      Remove-Item $OutputFile
     }
+    # Scan for words in the XML files and add them to the temp file
+    $TempLines = Scan-XML -Rules $ScanRules
+    if ($TempLines.Count -eq 0) { continue }
+    if ($PostProcCallback) { $TempLines = & $PostProcCallback $TempLines }
     # Merge the temp file with the output file
-    $OutputFileLines = Merge-Output `
+    $OutputFileLinesNew = Merge-Output `
       -TempLines $TempLines `
-      -HashTable $HashTable `
+      -OutputFileLines $OutputFileLines `
       -ColNames $ColNames `
       -CommentBlock $CommentBlock
-    Set-Content -Path $OutputFile -Value $OutputFileLines
+    Set-Content -Path $OutputFile -Value $OutputFileLinesNew
   }
   Set-Location -Path $PSScriptRoot
+}
+
+function Format-Lines {
+  param($Lines, $Formats)
+  $FormattedLines = @()
+  foreach ($Line in $Lines) {
+    if (Test-Comment $Line) {
+      $FormattedLines += $Line
+    } else {
+      foreach ($Format in $Formats) {
+        $FormattedLines += ($Format -f $Line)
+      }
+    }
+  }
+  return $FormattedLines
 }

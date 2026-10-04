@@ -52,12 +52,12 @@
     <li>desc_sentence->[CAPTURER_nameDef] spuckt in das Gesicht von [PRISONER_nameDefDat].</li>
     <li>desc_sentence->[CAPTURER_nameDef] lacht, während [PRISONER_nameDefDat] die Tränen kommen.</li>
     <li>desc_sentence->[CAPTURER_nameDef] tritt [PRISONER_nameDefAcc] ohne ersichtlichen Grund.</li>
-    <li>CAPTURER_nameFullIndefDat->{replace: [CAPTURER_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
-    <li>CAPTURER_nameDefDat->{replace: [CAPTURER_nameIndef]; ">ein "-">dem "; ">eine "-">der "}</li>
-    <li>PRISONER_nameFullIndefDat->{replace: [PRISONER_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
-    <li>PRISONER_nameIndefAcc->{replace: [PRISONER_nameDef]; ">der "-">einen "; ">die "-">eine "; ">das "-">ein "}</li>
-    <li>PRISONER_nameDefDat->{replace: [PRISONER_nameIndef]; ">ein "-">dem "; ">eine "-">der "}</li>
-    <li>PRISONER_nameDefAcc->{replace: [PRISONER_nameDef]; ">der "-">den "}</li>
+    <li>CAPTURER_nameFullIndefDat->{lookup: [CAPTURER_nameFull]; decline_tagged; 3}</li>
+    <li>CAPTURER_nameDefDat->{lookup: [CAPTURER_nameDef]; decline_tagged; 3}</li>
+    <li>PRISONER_nameFullIndefDat->{lookup: [PRISONER_nameFull]; decline_tagged; 3}</li>
+    <li>PRISONER_nameIndefAcc->{lookup: [PRISONER_nameIndef]; decline_tagged; 4}</li>
+    <li>PRISONER_nameDefDat->{lookup: [PRISONER_nameDef]; decline_tagged; 3}</li>
+    <li>PRISONER_nameDefAcc->{lookup: [PRISONER_nameDef]; decline_tagged; 4}</li>
   </Captured.rulePack.rulesStrings>
   
   <!-- EN: defeated hostile leader -->
@@ -96,11 +96,11 @@
     <li>desc_sentence->[SURGEON_nameDef] scheint sich sehr auf seine Arbeit zu konzentrieren.</li>
     <li>desc_sentence->[SURGEON_nameDef] hat Blut in [SURGEON_possessive]em Gesicht.</li>
     <li>desc_sentence->[PATIENT_nameDef] zittert und windet sich.</li>
-    <li>SURGEON_nameFullIndefDat->{replace: [SURGEON_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
-    <li>PATIENT_nameDefDat->{replace: [PATIENT_nameDef]; ">der "-">dem "; ">die "-">der "; ">das "-">dem "}</li>
-    <li>PATIENT_nameDefAcc->{replace: [PATIENT_nameDef]; ">der "-">den "}</li>
-    <li>PATIENT_nameFullIndefDat->{replace: [PATIENT_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
-    <li>PATIENT_nameIndefAcc->{replace: [PATIENT_nameDef]; ">der "-">einen "; ">die "-">eine "; ">das "-">ein "}</li>
+    <li>SURGEON_nameFullIndefDat->{lookup: [SURGEON_nameFull]; decline_tagged; 3}</li>
+    <li>PATIENT_nameDefDat->{lookup: [PATIENT_nameDef]; decline_tagged; 3}</li>
+    <li>PATIENT_nameDefAcc->{lookup: [PATIENT_nameDef]; decline_tagged; 4}</li>
+    <li>PATIENT_nameFullIndefDat->{lookup: [PATIENT_nameFull]; decline_tagged; 3}</li>
+    <li>PATIENT_nameIndefAcc->{lookup: [PATIENT_nameIndef]; decline_tagged; 4}</li>
   </DidSurgery.rulePack.rulesStrings>
   
   <!-- EN: prisoner executed -->
@@ -162,11 +162,11 @@
     <li>desc_sentence->[PRISONER_nameDef] scheint endgültig aufgegeben zu haben.</li>
     <li>desc_sentence->[PRISONER_nameDef] hat [PRISONER_possessive]e Augen geschlossen und scheint zu einer höheren Macht zu beten.</li>
     <li>desc_sentence->[PRISONER_nameDef] schaut [PRISONER_possessive]en Henker trotzig an.</li>
-    <li>EXECUTIONER_nameFullIndefDat->{replace: [EXECUTIONER_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
-    <li>EXECUTIONER_nameDefDat->{replace: [EXECUTIONER_nameIndef]; ">ein "-">dem "; ">eine "-">der "}</li>
-    <li>PRISONER_nameFullIndefDat->{replace: [PRISONER_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
-    <li>PRISONER_nameIndefAcc->{replace: [PRISONER_nameDef]; ">der "-">einen "; ">die "-">eine "; ">das "-">ein "}</li>
-    <li>PRISONER_nameDefAcc->{replace: [PRISONER_nameDef]; ">der "-">den "}</li>
+    <li>EXECUTIONER_nameFullIndefDat->{lookup: [EXECUTIONER_nameFull]; decline_tagged; 3}</li>
+    <li>EXECUTIONER_nameDefDat->{lookup: [EXECUTIONER_nameDef]; decline_tagged; 3}</li>
+    <li>PRISONER_nameFullIndefDat->{lookup: [PRISONER_nameFull]; decline_tagged; 3}</li>
+    <li>PRISONER_nameIndefAcc->{lookup: [PRISONER_nameIndef]; decline_tagged; 4}</li>
+    <li>PRISONER_nameDefAcc->{lookup: [PRISONER_nameDef]; decline_tagged; 4}</li>
   </ExecutedPrisoner.rulePack.rulesStrings>
   
   <!-- EN: animal hunted -->
@@ -198,11 +198,11 @@
     <li>desc_sentence->[PREY_nameDef] scheint nichts zu bemerken.</li>
     <li>desc_sentence->[HUNTER_nameDef] hält [HUNTER_possessive]e Waffe fest umklammert.</li>
     <li>desc_sentence->[PREY_nameDef] sieht sich ängstlich um, als ob [PREY_pronoun] spürt, dass etwas nicht stimmt.</li>
-    <li>HUNTER_nameFullIndefDat->{replace: [HUNTER_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
-    <li>HUNTER_nameDefDat->{replace: [HUNTER_nameIndef]; ">ein "-">dem "; ">eine "-">der "}</li>
-    <li>PREY_nameFullIndefDat->{replace: [PREY_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
-    <li>PREY_nameIndefAcc->{replace: [PREY_nameDef]; ">der Affe"-">einen Affen"; ">der Apokrit"-">einen Apokriten"; ">der Elefant"-">einen Elefanten"; ">der Eisbär"-">einen Eisbären"; ">der Grizzlybär"-">einen Grizzlybären"; ">der Hase"-">einen Hasen"; ">der Konstruktoid"-">einen Konstruktoiden"; ">der Moschusochse"-">einen Moschusochsen"; ">der Schneehase"-">einen Schneehasen"; ">der Seelöwe"-">einen Seelöwen"; ">der Stachelgigant"-">einen Stachelgiganten"; ">der Waschbär"-">einen Waschbären"; ">der Zyklop"-">einen Zyklopen"; ">der "-">einen "; ">die "-">eine "; ">das "-">ein "}</li>
-    <li>PREY_nameDefAcc->{replace: [PREY_nameDef]; ">der Affe"-">den Affen"; ">der Apokrit"-">den Apokriten"; ">der Elefant"-">den Elefanten"; ">der Eisbär"-">den Eisbären"; ">der Grizzlybär"-">den Grizzlybären"; ">der Hase"-">den Hasen"; ">der Konstruktoid"-">den Konstruktoiden"; ">der Moschusochse"-">den Moschusochsen"; ">der Schneehase"-">den Schneehasen"; ">der Seelöwe"-">den Seelöwen"; ">der Stachelgigant"-">den Stachelgiganten"; ">der Waschbär"-">den Waschbären"; ">der Zyklop"-">den Zyklopen"; ">der "-">den "}</li>
+    <li>HUNTER_nameFullIndefDat->{lookup: [HUNTER_nameFull]; decline_tagged; 3}</li>
+    <li>HUNTER_nameDefDat->{lookup: [HUNTER_nameDef]; decline_tagged; 3}</li>
+    <li>PREY_nameFullIndefDat->{lookup: [PREY_nameFull]; decline_tagged; 3}</li>
+    <li>PREY_nameIndefAcc->{lookup: [PREY_nameIndef]; decline_tagged; 4}</li>
+    <li>PREY_nameDefAcc->{lookup: [PREY_nameDef]; decline_tagged; 4}</li>
   </Hunted.rulePack.rulesStrings>
   
   <!-- EN: colonist kidnapped -->
@@ -248,10 +248,10 @@
     <li>desc_sentence->[VICTIM_nameDef] schreit vor Wut und Angst.</li>
     <li>desc_sentence->[VICTIM_nameDef] sieht erschöpft und gebrochen aus.</li>
     <li>desc_sentence->[VICTIM_nameDef] scheint schwer verletzt zu sein.</li>
-    <li>KIDNAPPER_nameFullIndefDat->{replace: [KIDNAPPER_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
-    <li>KIDNAPPER_nameDefDat->{replace: [KIDNAPPER_nameIndef]; ">ein "-">dem "; ">eine "-">der "}</li>
-    <li>VICTIM_nameIndefAcc->{replace: [VICTIM_nameDef]; ">der "-">einen "; ">die "-">eine "; ">das "-">ein "}</li>
-    <li>VICTIM_nameDefAcc->{replace: [VICTIM_nameDef]; ">der "-">den "}</li>
+    <li>KIDNAPPER_nameFullIndefDat->{lookup: [KIDNAPPER_nameFull]; decline_tagged; 3}</li>
+    <li>KIDNAPPER_nameDefDat->{lookup: [KIDNAPPER_nameDef]; decline_tagged; 3}</li>
+    <li>VICTIM_nameIndefAcc->{lookup: [VICTIM_nameIndef]; decline_tagged; 4}</li>
+    <li>VICTIM_nameDefAcc->{lookup: [VICTIM_nameDef]; decline_tagged; 4}</li>
   </KidnappedColonist.rulePack.rulesStrings>
   
   <!-- EN: death -->
@@ -311,12 +311,12 @@
     <li>desc_sentence->[KILLER_nameDef] sieht verzweifelt aus.</li>
     <li>desc_sentence->[KILLER_nameDef] scheint zufrieden mit der Situation zu sein.</li>
     <li>desc_sentence->[KILLER_nameDef] freut sich über den Sieg.</li>
-    <li>KILLER_nameFullIndefDat->{replace: [KILLER_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
-    <li>KILLER_nameDefDat->{replace: [KILLER_nameDef]; ">der "-">dem "; ">die "-">der "; ">das "-">dem "}</li>
-    <li>VICTIM_nameFullIndefDat->{replace: [VICTIM_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
-    <li>VICTIM_nameIndefAcc->{replace: [VICTIM_nameDef]; ">der "-">einen "; ">die "-">eine "; ">das "-">ein "}</li>
-    <li>VICTIM_nameDefDat->{replace: [VICTIM_nameDef]; ">der "-">dem "; ">die "-">der "; ">das "-">dem "}</li>
-    <li>VICTIM_nameDefAcc->{replace: [VICTIM_nameDef]; ">der "-">den "}</li>
+    <li>KILLER_nameFullIndefDat->{lookup: [KILLER_nameFull]; decline_tagged; 3}</li>
+    <li>KILLER_nameDefDat->{lookup: [KILLER_nameDef]; decline_tagged; 3}</li>
+    <li>VICTIM_nameFullIndefDat->{lookup: [VICTIM_nameFull]; decline_tagged; 3}</li>
+    <li>VICTIM_nameIndefAcc->{lookup: [VICTIM_nameIndef]; decline_tagged; 4}</li>
+    <li>VICTIM_nameDefDat->{lookup: [VICTIM_nameDef]; decline_tagged; 3}</li>
+    <li>VICTIM_nameDefAcc->{lookup: [VICTIM_nameDef]; decline_tagged; 4}</li>
   </KilledBy.rulePack.rulesStrings>
   
   <!-- EN: colonist killed -->
@@ -360,10 +360,10 @@
     <li>desc_sentence->[JOINER_nameDef] lächelt und schaut erwartungsvoll auf.</li>
     <li>desc_sentence->[JOINER_nameDef] sieht erleichtert aus.</li>
     <li>desc_sentence->[JOINER_nameDef] sieht hoffnungsvoll aus.</li>
-    <li>RECRUITER_nameFullIndefDat->{replace: [RECRUITER_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
-    <li>RECRUITER_nameDefDat->{replace: [RECRUITER_nameIndef]; ">ein "-">dem "; ">eine "-">der "}</li>
-    <li>JOINER_nameIndefAcc->{replace: [JOINER_nameDef]; ">der "-">einen "; ">die "-">eine "; ">das "-">ein "}</li>
-    <li>JOINER_nameDefAcc->{replace: [JOINER_nameDef]; ">der "-">den "}</li>
+    <li>RECRUITER_nameFullIndefDat->{lookup: [RECRUITER_nameFull]; decline_tagged; 3}</li>
+    <li>RECRUITER_nameDefDat->{lookup: [RECRUITER_nameDef]; decline_tagged; 3}</li>
+    <li>JOINER_nameIndefAcc->{lookup: [JOINER_nameIndef]; decline_tagged; 4}</li>
+    <li>JOINER_nameDefAcc->{lookup: [JOINER_nameDef]; decline_tagged; 4}</li>
   </Recruited.rulePack.rulesStrings>
   
   <!-- EN: prisoner sold -->
@@ -411,14 +411,14 @@
     <li>desc_sentence->[PRISONER_nameDef] versinkt im Boden.</li>
     <li>desc_sentence->[SELLER_nameDef] drückt die Ketten von [PRISONER_nameDefDat] in [PRISONER_label]'s Hände.</li>
     <li>desc_sentence->Ein Hauch von Hoffnungslosigkeit prägt das Geschehen.</li>
-    <li>SELLER_nameFullIndefDat->{replace: [SELLER_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
-    <li>SELLER_nameDefDat->{replace: [SELLER_nameIndef]; ">ein "-">dem "; ">eine "-">der "}</li>
-    <li>SELLER_nameDefAcc->{replace: [SELLER_nameDef]; ">der "-">den "}</li>
-    <li>PRISONER_nameIndefAcc->{replace: [PRISONER_nameDef]; ">der "-">einen "; ">die "-">eine "; ">das "-">ein "}</li>
-    <li>PRISONER_nameDefDat->{replace: [PRISONER_nameIndef]; ">ein "-">dem "; ">eine "-">der "}</li>
-    <li>PRISONER_nameDefAcc->{replace: [PRISONER_nameDef]; ">der "-">den "}</li>
-    <li>TRADER_nameFullIndefDat->{replace: [TRADER_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
-    <li>TRADER_nameIndefAcc->{replace: [TRADER_nameDef]; ">der "-">einen "; ">die "-">eine "; ">das "-">ein "}</li>
+    <li>SELLER_nameFullIndefDat->{lookup: [SELLER_nameFull]; decline_tagged; 3}</li>
+    <li>SELLER_nameDefDat->{lookup: [SELLER_nameDef]; decline_tagged; 3}</li>
+    <li>SELLER_nameDefAcc->{lookup: [SELLER_nameDef]; decline_tagged; 4}</li>
+    <li>PRISONER_nameIndefAcc->{lookup: [PRISONER_nameIndef]; decline_tagged; 4}</li>
+    <li>PRISONER_nameDefDat->{lookup: [PRISONER_nameDef]; decline_tagged; 3}</li>
+    <li>PRISONER_nameDefAcc->{lookup: [PRISONER_nameDef]; decline_tagged; 4}</li>
+    <li>TRADER_nameFullIndefDat->{lookup: [TRADER_nameFull]; decline_tagged; 3}</li>
+    <li>TRADER_nameIndefAcc->{lookup: [TRADER_nameIndef]; decline_tagged; 4}</li>
   </SoldPrisoner.rulePack.rulesStrings>
   
   <!-- EN: animal tamed -->
@@ -456,11 +456,11 @@
     <li>desc_sentence->[ANIMAL_nameDef] schaut erschrocken auf, aber zeigt Interesse.</li>
     <li>desc_sentence->[ANIMAL_nameDef] scheint fasziniert zu sein.</li>
     <li>desc_sentence->[TAMER_nameDef] projiziert ein starkes Gefühl der Liebe auf [ANIMAL_nameDefAcc].</li>
-    <li>TAMER_nameFullIndefDat->{replace: [TAMER_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
-    <li>TAMER_nameDefDat->{replace: [TAMER_nameIndef]; ">ein "-">dem "; ">eine "-">der "}</li>
-    <li>ANIMAL_nameDefAcc->{replace: [ANIMAL_nameDef]; ">der "-">den "}</li>
-    <li>ANIMAL_nameFullIndefDat->{replace: [ANIMAL_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
-    <li>ANIMAL_nameIndefAcc->{replace: [ANIMAL_nameDef]; ">der "-">einen "; ">die "-">eine "; ">das "-">ein "}</li>
+    <li>TAMER_nameFullIndefDat->{lookup: [TAMER_nameFull]; decline_tagged; 3}</li>
+    <li>TAMER_nameDefDat->{lookup: [TAMER_nameDef]; decline_tagged; 3}</li>
+    <li>ANIMAL_nameDefAcc->{lookup: [ANIMAL_nameDef]; decline_tagged; 4}</li>
+    <li>ANIMAL_nameFullIndefDat->{lookup: [ANIMAL_nameFull]; decline_tagged; 3}</li>
+    <li>ANIMAL_nameIndefAcc->{lookup: [ANIMAL_nameIndef]; decline_tagged; 4}</li>
   </TamedAnimal.rulePack.rulesStrings>
   
   <!-- EN: traded with someone -->
@@ -494,11 +494,11 @@
     <li>desc_sentence->[BUYER_nameDef] bezahlt für ein Objekt.</li>
     <li>desc_sentence->[SELLER_nameDef] zählt [SELLER_possessive] Geld.</li>
     <li>desc_sentence->[BUYER_nameDef] nimmt [BUYER_possessive]e Waren.</li>
-    <li>BUYER_nameFullIndefDat->{replace: [BUYER_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
-    <li>BUYER_nameIndefAcc->{replace: [BUYER_nameDef]; ">der "-">einen "; ">die "-">eine "; ">das "-">ein "}</li>
-    <li>BUYER_nameDefDat->{replace: [BUYER_nameIndef]; ">ein "-">dem "; ">eine "-">der "}</li>
-    <li>SELLER_nameFullIndefDat->{replace: [SELLER_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
-    <li>SELLER_nameDefDat->{replace: [SELLER_nameIndef]; ">ein "-">dem "; ">eine "-">der "}</li>
+    <li>BUYER_nameFullIndefDat->{lookup: [BUYER_nameFull]; decline_tagged; 3}</li>
+    <li>BUYER_nameIndefAcc->{lookup: [BUYER_nameIndef]; decline_tagged; 4}</li>
+    <li>BUYER_nameDefDat->{lookup: [BUYER_nameDef]; decline_tagged; 3}</li>
+    <li>SELLER_nameFullIndefDat->{lookup: [SELLER_nameFull]; decline_tagged; 3}</li>
+    <li>SELLER_nameDefDat->{lookup: [SELLER_nameDef]; decline_tagged; 3}</li>
   </TradedWith.rulePack.rulesStrings>
   
   <!-- EN: animal trained -->
@@ -571,10 +571,10 @@
     <li>desc_sentence->[ANIMAL_nameDef] ist mit Schuppen bedeckt.</li>
     <li>desc_sentence->[TRAINER_nameDef] wird mit [Quantity_adjphrase_Dat] Armen dargestellt.</li>
     <li>desc_sentence->[TRAINER_nameDef] verwandelt sich in [ANIMAL_nameDefAcc].</li>
-    <li>TRAINER_nameFullIndefDat->{replace: [TRAINER_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
-    <li>TRAINER_nameDefDat->{replace: [TRAINER_nameIndef]; ">ein "-">dem "; ">eine "-">der "}</li>
-    <li>ANIMAL_nameDefAcc->{replace: [ANIMAL_nameDef]; ">der Affe"-">den Affen"; ">der Apokrit"-">den Apokriten"; ">der Elefant"-">den Elefanten"; ">der Eisbär"-">den Eisbären"; ">der Grizzlybär"-">den Grizzlybären"; ">der Hase"-">den Hasen"; ">der Konstruktoid"-">den Konstruktoiden"; ">der Moschusochse"-">den Moschusochsen"; ">der Schneehase"-">den Schneehasen"; ">der Seelöwe"-">den Seelöwen"; ">der Stachelgigant"-">den Stachelgiganten"; ">der Waschbär"-">den Waschbären"; ">der Zyklop"-">den Zyklopen"; ">der "-">den "}</li>
-    <li>ANIMAL_nameFullIndefDat->{replace: [ANIMAL_nameFull]; ">ein Affe"-">einem Affen"; ">ein Apokrit"-">einem Apokriten"; ">ein Elefant"-">einem Elefanten"; ">ein Eisbär"-">einem Eisbären"; ">ein Grizzlybär"-">einem Grizzlybären"; ">ein Hase"-">einem Hasen"; ">ein Konstruktoid"-">einem Konstruktoiden"; ">ein Moschusochse"-">einem Moschusochsen"; ">ein Schneehase"-">einem Schneehasen"; ">ein Seelöwe"-">einem Seelöwen"; ">ein Stachelgigant"-">einem Stachelgiganten"; ">ein Waschbär"-">einem Waschbären"; ">ein Zyklop"-">einem Zyklopen"; ">ein "-">einem "; ">eine "-">einer "}</li>
+    <li>TRAINER_nameFullIndefDat->{lookup: [TRAINER_nameFull]; decline_tagged; 3}</li>
+    <li>TRAINER_nameDefDat->{lookup: [TRAINER_nameDef]; decline_tagged; 3}</li>
+    <li>ANIMAL_nameDefAcc->{lookup: [ANIMAL_nameDef]; decline_tagged; 4}</li>
+    <li>ANIMAL_nameFullIndefDat->{lookup: [ANIMAL_nameFull]; decline_tagged; 3}</li>
   </TrainedAnimal.rulePack.rulesStrings>
   
 </LanguageData>

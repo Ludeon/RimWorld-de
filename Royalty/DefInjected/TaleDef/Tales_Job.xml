@@ -24,8 +24,8 @@
     <li>circumstance_phrase->, während [ATTENDER_pronoun] klatscht</li>
     <li>desc_sentence->[Quantity_adjphrase] [PersonJobs] tanzen mit.</li>
     <li>desc_sentence->[Quantity_adjphrase] [Animals] hören aufmerksam zu.</li>
-    <li>ATTENDER_nameFullIndefDat->{replace: [ATTENDER_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
-    <li>ORGANIZER_nameFullIndefDat->{replace: [ORGANIZER_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
+    <li>ATTENDER_nameFullIndefDat->{lookup: [ATTENDER_nameFull]; decline_tagged; 3}</li>
+    <li>ORGANIZER_nameFullIndefDat->{lookup: [ORGANIZER_nameFull]; decline_tagged; 3}</li>
   </AttendedConcert.rulePack.rulesStrings>
   
   <!-- EN: held concert -->
@@ -51,7 +51,7 @@
     <li>circumstance_phrase->leidenschaftlich</li>
     <li>desc_sentence->[Quantity_adjphrase] [PersonJobs] verfolgen gebannt den Auftritt.</li>
     <li>desc_sentence->[Quantity_adjphrase] [Animals] hören aufmerksam zu.</li>
-    <li>ORGANIZER_nameFullIndefDat->{replace: [ORGANIZER_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
+    <li>ORGANIZER_nameFullIndefDat->{lookup: [ORGANIZER_nameFull]; decline_tagged; 3}</li>
   </HeldConcert.rulePack.rulesStrings>
   
 </LanguageData>

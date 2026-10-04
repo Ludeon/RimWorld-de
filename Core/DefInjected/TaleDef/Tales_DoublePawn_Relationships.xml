@@ -36,10 +36,10 @@
     <li>desc_sentence->[PURSUER_nameDef] ist stilistisch mit [ACCEPTER_nameDefDat] verbunden.</li>
     <li>desc_sentence->[PURSUER_nameDef] ist quasi ein Spiegelbild von [ACCEPTER_nameDefDat].</li>
     <li>desc_sentence->[PURSUER_nameDef] berührt [ACCEPTER_nameDefAcc] forsch.</li>
-    <li>PURSUER_nameFullIndefDat->{replace: [PURSUER_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
-    <li>ACCEPTER_nameFullIndefDat->{replace: [ACCEPTER_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
-    <li>ACCEPTER_nameDefDat->{replace: [ACCEPTER_nameIndef]; ">ein "-">dem "; ">eine "-">der "}</li>
-    <li>ACCEPTER_nameDefAcc->{replace: [ACCEPTER_nameDef]; ">der "-">den "}</li>
+    <li>PURSUER_nameFullIndefDat->{lookup: [PURSUER_nameFull]; decline_tagged; 3}</li>
+    <li>ACCEPTER_nameFullIndefDat->{lookup: [ACCEPTER_nameFull]; decline_tagged; 3}</li>
+    <li>ACCEPTER_nameDefDat->{lookup: [ACCEPTER_nameDef]; decline_tagged; 3}</li>
+    <li>ACCEPTER_nameDefAcc->{lookup: [ACCEPTER_nameDef]; decline_tagged; 4}</li>
   </BecameLover.rulePack.rulesStrings>
   
   <!-- EN: bond developed -->
@@ -69,11 +69,11 @@
     <li>desc_sentence->[ANIMAL_nameDef] sieht schläfrig und benebelt von der Liebe aus.</li>
     <li>desc_sentence->[ANIMAL_nameDef] richtet sich majestätisch auf.</li>
     <li>desc_sentence->[ANIMAL_nameDef] reagiert positiv.</li>
-    <li>ANIMAL_nameFullIndefDat->{replace: [ANIMAL_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
-    <li>ANIMAL_nameDefDat->{replace: [ANIMAL_nameDef]; ">der "-">dem "; ">die "-">der "; ">das "-">dem "}</li>
-    <li>HUMAN_nameFullIndefDat->{replace: [HUMAN_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
-    <li>HUMAN_nameDefDat->{replace: [HUMAN_nameDef]; ">der "-">dem "; ">die "-">der "; ">das "-">dem "}</li>
-    <li>HUMAN_nameDefAcc->{replace: [HUMAN_nameDef]; ">der "-">den "}</li>
+    <li>ANIMAL_nameFullIndefDat->{lookup: [ANIMAL_nameFull]; decline_tagged; 3}</li>
+    <li>ANIMAL_nameDefDat->{lookup: [ANIMAL_nameDef]; decline_tagged; 3}</li>
+    <li>HUMAN_nameFullIndefDat->{lookup: [HUMAN_nameFull]; decline_tagged; 3}</li>
+    <li>HUMAN_nameDefDat->{lookup: [HUMAN_nameDef]; decline_tagged; 3}</li>
+    <li>HUMAN_nameDefAcc->{lookup: [HUMAN_nameDef]; decline_tagged; 4}</li>
   </BondedWithAnimal.rulePack.rulesStrings>
   
   <!-- EN: breakup -->
@@ -109,11 +109,11 @@
     <li>desc_sentence->[DUMPER_nameDef] ist stilistisch getrennt von [REJECTED_nameDefDat].</li>
     <li>desc_sentence->[REJECTED_nameDef] ist in einem wimmernden Haufen auf dem Boden zusammengebrochen.</li>
     <li>desc_sentence->[REJECTED_nameDef] gestikuliert wütend vor [DUMPER_nameDefDat].</li>
-    <li>DUMPER_nameFullIndefDat->{replace: [DUMPER_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
-    <li>DUMPER_nameDefDat->{replace: [DUMPER_nameIndef]; ">ein "-">dem "; ">eine "-">der "}</li>
-    <li>REJECTED_nameFullIndefDat->{replace: [REJECTED_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
-    <li>REJECTED_nameIndefAcc->{replace: [REJECTED_nameDef]; ">der "-">einen "; ">die "-">eine "; ">das "-">ein "}</li>
-    <li>REJECTED_nameDefDat->{replace: [REJECTED_nameIndef]; ">ein "-">dem "; ">eine "-">der "}</li>
+    <li>DUMPER_nameFullIndefDat->{lookup: [DUMPER_nameFull]; decline_tagged; 3}</li>
+    <li>DUMPER_nameDefDat->{lookup: [DUMPER_nameDef]; decline_tagged; 3}</li>
+    <li>REJECTED_nameFullIndefDat->{lookup: [REJECTED_nameFull]; decline_tagged; 3}</li>
+    <li>REJECTED_nameIndefAcc->{lookup: [REJECTED_nameIndef]; decline_tagged; 4}</li>
+    <li>REJECTED_nameDefDat->{lookup: [REJECTED_nameDef]; decline_tagged; 3}</li>
   </Breakup.rulePack.rulesStrings>
   
   <!-- EN: marriage -->
@@ -149,11 +149,11 @@
     <li>desc_sentence->[SPOUSE1_nameDef] ist stilistisch mit [SPOUSE2_nameDefDat] verbunden.</li>
     <li>desc_sentence->[SPOUSE1_nameDef] ist quasi ein Spiegelbild von [SPOUSE2_nameDefDat].</li>
     <li>desc_sentence->[SPOUSE1_nameDef] berührt [SPOUSE2_nameDefAcc] forsch.</li>
-    <li>SPOUSE1_nameFullIndefDat->{replace: [SPOUSE1_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
-    <li>SPOUSE2_nameFullIndefDat->{replace: [SPOUSE2_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
-    <li>SPOUSE2_nameIndefAcc->{replace: [SPOUSE2_nameDef]; ">der "-">einen "; ">die "-">eine "; ">das "-">ein "}</li>
-    <li>SPOUSE2_nameDefDat->{replace: [SPOUSE2_nameIndef]; ">ein "-">dem "; ">eine "-">der "}</li>
-    <li>SPOUSE2_nameDefAcc->{replace: [SPOUSE2_nameDef]; ">der "-">den "}</li>
+    <li>SPOUSE1_nameFullIndefDat->{lookup: [SPOUSE1_nameFull]; decline_tagged; 3}</li>
+    <li>SPOUSE2_nameFullIndefDat->{lookup: [SPOUSE2_nameFull]; decline_tagged; 3}</li>
+    <li>SPOUSE2_nameIndefAcc->{lookup: [SPOUSE2_nameIndef]; decline_tagged; 4}</li>
+    <li>SPOUSE2_nameDefDat->{lookup: [SPOUSE2_nameDef]; decline_tagged; 3}</li>
+    <li>SPOUSE2_nameDefAcc->{lookup: [SPOUSE2_nameDef]; decline_tagged; 4}</li>
   </Marriage.rulePack.rulesStrings>
   
 </LanguageData>

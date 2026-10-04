@@ -50,8 +50,8 @@
     <li>tamed->zeigte sich entspannt gegenüber [RECIPIENT_nameDefDat]</li>
     <li>tamed->saß geduldig neben [RECIPIENT_nameDefDat]</li>
     <li>tamed->flüsterte [RECIPIENT_nameDefDat] eine Geschichte über [TalkTopicAnyAcc] zu</li>
-    <li>RECIPIENT_nameDefDat->{replace: [RECIPIENT_nameDef]; ">der Affe"-">dem Affen"; ">der Apokrit"-">dem Apokriten"; ">der Elefant"-">dem Elefanten"; ">der Eisbär"-">dem Eisbären"; ">der Grizzlybär"-">dem Grizzlybären"; ">der Hase"-">dem Hasen"; ">der Konstruktoid"-">dem Konstruktoiden"; ">der Moschusochse"-">dem Moschusochsen"; ">der Schneehase"-">dem Schneehasen"; ">der Seelöwe"-">dem Seelöwen"; ">der Stachelgigant"-">dem Stachelgiganten"; ">der Waschbär"-">dem Waschbären"; ">der Zyklop"-">dem Zyklopen"; ">der "-">dem "; ">die "-">der "; ">das "-">dem "}</li>
-    <li>RECIPIENT_nameDefAcc->{replace: [RECIPIENT_nameDef]; ">der Affe"-">den Affen"; ">der Apokrit"-">den Apokriten"; ">der Elefant"-">den Elefanten"; ">der Eisbär"-">den Eisbären"; ">der Grizzlybär"-">den Grizzlybären"; ">der Hase"-">den Hasen"; ">der Konstruktoid"-">den Konstruktoiden"; ">der Moschusochse"-">den Moschusochsen"; ">der Schneehase"-">den Schneehasen"; ">der Seelöwe"-">den Seelöwen"; ">der Stachelgigant"-">den Stachelgiganten"; ">der Waschbär"-">den Waschbären"; ">der Zyklop"-">den Zyklopen"; ">der "-">den "}</li>
+    <li>RECIPIENT_nameDefDat->{lookup: [RECIPIENT_nameDef]; decline_tagged; 3}</li>
+    <li>RECIPIENT_nameDefAcc->{lookup: [RECIPIENT_nameDef]; decline_tagged; 4}</li>
   </AnimalChat.logRulesInitiator.rulesStrings>
   
   <!-- EN: nuzzle -->
@@ -178,8 +178,8 @@
     <li>r_logentry->[INITIATOR_nameDef] berührte einen empfindlichen Körperteil von [RECIPIENT_nameDefDat] und verlangte Gehorsam.</li>
     <li>r_logentry->[INITIATOR_nameDef] zeigte auf den Boden und forderte [RECIPIENT_nameDefAcc] auf, zu kommen.</li>
     <li>r_logentry->[INITIATOR_nameDef] erteilte [RECIPIENT_nameDefDat] das erste Mal einen Befehl.</li>
-    <li>RECIPIENT_nameDefDat->{replace: [RECIPIENT_nameDef]; ">der Affe"-">dem Affen"; ">der Apokrit"-">dem Apokriten"; ">der Elefant"-">dem Elefanten"; ">der Eisbär"-">dem Eisbären"; ">der Grizzlybär"-">dem Grizzlybären"; ">der Hase"-">dem Hasen"; ">der Konstruktoid"-">dem Konstruktoiden"; ">der Moschusochse"-">dem Moschusochsen"; ">der Schneehase"-">dem Schneehasen"; ">der Seelöwe"-">dem Seelöwen"; ">der Stachelgigant"-">dem Stachelgiganten"; ">der Waschbär"-">dem Waschbären"; ">der Zyklop"-">dem Zyklopen"; ">der "-">dem "; ">die "-">der "; ">das "-">dem "}</li>
-    <li>RECIPIENT_nameDefAcc->{replace: [RECIPIENT_nameDef]; ">der Affe"-">den Affen"; ">der Apokrit"-">den Apokriten"; ">der Elefant"-">den Elefanten"; ">der Eisbär"-">den Eisbären"; ">der Grizzlybär"-">den Grizzlybären"; ">der Hase"-">den Hasen"; ">der Konstruktoid"-">den Konstruktoiden"; ">der Moschusochse"-">den Moschusochsen"; ">der Schneehase"-">den Schneehasen"; ">der Seelöwe"-">den Seelöwen"; ">der Stachelgigant"-">den Stachelgiganten"; ">der Waschbär"-">den Waschbären"; ">der Zyklop"-">den Zyklopen"; ">der "-">den "}</li>
+    <li>RECIPIENT_nameDefDat->{lookup: [RECIPIENT_nameDef]; decline_tagged; 3}</li>
+    <li>RECIPIENT_nameDefAcc->{lookup: [RECIPIENT_nameDef]; decline_tagged; 4}</li>
   </TameAttempt.logRulesInitiator.rulesStrings>
   
   <!-- EN: train attempt -->

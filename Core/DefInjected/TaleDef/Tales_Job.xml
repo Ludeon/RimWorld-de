@@ -36,10 +36,10 @@
     <li>desc_sentence->[Quantity_adjphrase] [PersonJobs] sind am Gespräch beteiligt.</li>
     <li>desc_sentence->Der Bereich ist mit [Color]er und [Color]er Farbe verziert.</li>
     <li>desc_sentence->[Quantity_adjphrase] [Animals] spielen in der Nähe.</li>
-    <li>ATTENDER_nameFullIndefDat->{replace: [ATTENDER_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
-    <li>ATTENDER_nameIndefAcc->{replace: [ATTENDER_nameDef]; ">der Affe"-">einen Affen"; ">der Apokrit"-">einen Apokriten"; ">der Elefant"-">einen Elefanten"; ">der Eisbär"-">einen Eisbären"; ">der Grizzlybär"-">einen Grizzlybären"; ">der Hase"-">einen Hasen"; ">der Konstruktoid"-">einen Konstruktoiden"; ">der Moschusochse"-">einen Moschusochsen"; ">der Schneehase"-">einen Schneehasen"; ">der Seelöwe"-">einen Seelöwen"; ">der Stachelgigant"-">einen Stachelgiganten"; ">der Waschbär"-">einen Waschbären"; ">der Zyklop"-">einen Zyklopen"; ">der "-">einen "; ">die "-">eine "; ">das "-">ein "}</li>
-    <li>ORGANIZER_nameFullIndefDat->{replace: [ORGANIZER_nameFull]; ">ein Affe"-">einem Affen"; ">ein Apokrit"-">einem Apokriten"; ">ein Elefant"-">einem Elefanten"; ">ein Eisbär"-">einem Eisbären"; ">ein Grizzlybär"-">einem Grizzlybären"; ">ein Hase"-">einem Hasen"; ">ein Konstruktoid"-">einem Konstruktoiden"; ">ein Moschusochse"-">einem Moschusochsen"; ">ein Schneehase"-">einem Schneehasen"; ">ein Seelöwe"-">einem Seelöwen"; ">ein Stachelgigant"-">einem Stachelgiganten"; ">ein Waschbär"-">einem Waschbären"; ">ein Zyklop"-">einem Zyklopen"; ">ein "-">einem "; ">eine "-">einer "}</li>
-    <li>ORGANIZER_nameDefDat->{replace: [ORGANIZER_nameIndef]; ">ein Affe"-">dem Affen"; ">ein Apokrit"-">dem Apokriten"; ">ein Elefant"-">dem Elefanten"; ">ein Eisbär"-">dem Eisbären"; ">ein Grizzlybär"-">dem Grizzlybären"; ">ein Hase"-">dem Hasen"; ">ein Konstruktoid"-">dem Konstruktoiden"; ">ein Moschusochse"-">dem Moschusochsen"; ">ein Schneehase"-">dem Schneehasen"; ">ein Seelöwe"-">dem Seelöwen"; ">ein Stachelgigant"-">dem Stachelgiganten"; ">ein Waschbär"-">dem Waschbären"; ">ein Zyklop"-">dem Zyklopen"; ">ein "-">dem "; ">eine "-">der "}</li>
+    <li>ATTENDER_nameFullIndefDat->{lookup: [ATTENDER_nameFull]; decline_tagged; 3}</li>
+    <li>ATTENDER_nameIndefAcc->{lookup: [ATTENDER_nameIndef]; decline_tagged; 4}</li>
+    <li>ORGANIZER_nameFullIndefDat->{lookup: [ORGANIZER_nameFull]; decline_tagged; 3}</li>
+    <li>ORGANIZER_nameDefDat->{lookup: [ORGANIZER_nameDef]; decline_tagged; 3}</li>
   </AttendedParty.rulePack.rulesStrings>
   
   <!-- EN: built snowman -->
@@ -126,10 +126,10 @@
     <li>desc_sentence->Eine Geistererscheinung von [CORPSE_nameDefDat] steht neben [DIGGER_nameDefDat], mit einem [AdjectiveAngsty]en Ausdruck.</li>
     <li>desc_sentence->Eine Geistererscheinung von [CORPSE_nameDefDat] steht neben [DIGGER_nameDefDat], mit einem [AdjectiveFriendly]en Ausdruck.</li>
     <li>desc_sentence->[Quantity_adjphrase] [Animals] rasten in der Nähe der Szene.</li>
-    <li>CORPSE_nameDefDat->{replace: [CORPSE_nameDef]; ">der "-">dem "; ">die "-">der "; ">das "-">dem "}</li>
-    <li>CORPSE_nameFullIndefDat->{replace: [CORPSE_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
-    <li>DIGGER_nameFullIndefDat->{replace: [DIGGER_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
-    <li>DIGGER_nameDefDat->{replace: [DIGGER_nameIndef]; ">ein "-">dem "; ">eine "-">der "}</li>
+    <li>CORPSE_nameDefDat->{lookup: [CORPSE_nameDef]; decline_tagged; 3}</li>
+    <li>CORPSE_nameFullIndefDat->{lookup: [CORPSE_nameFull]; decline_tagged; 3}</li>
+    <li>DIGGER_nameFullIndefDat->{lookup: [DIGGER_nameFull]; decline_tagged; 3}</li>
+    <li>DIGGER_nameDefDat->{lookup: [DIGGER_nameDef]; decline_tagged; 3}</li>
   </BuriedCorpse.rulePack.rulesStrings>
   
   <!-- EN: completed long construction project -->
@@ -361,11 +361,11 @@
     <li>desc_sentence->[ANIMAL_nameDef] zieht weiter, um sich einer [AnimalGroup] von Artgenossen anzuschließen.</li>
     <li>desc_sentence->Die Szene ist gefüllt mit [AnimalsDat] und [AnimalsDat].</li>
     <li>desc_sentence->Eine Reihe von unzähligen [AnimalsDat] wartet darauf, von [HUMAN_nameDefDat] gezähmt zu werden.</li>
-    <li>ANIMAL_nameDefAcc->{replace: [ANIMAL_nameDef]; ">der Affe"-">den Affen"; ">der Apokrit"-">den Apokriten"; ">der Elefant"-">den Elefanten"; ">der Eisbär"-">den Eisbären"; ">der Grizzlybär"-">den Grizzlybären"; ">der Hase"-">den Hasen"; ">der Konstruktoid"-">den Konstruktoiden"; ">der Moschusochse"-">den Moschusochsen"; ">der Schneehase"-">den Schneehasen"; ">der Seelöwe"-">den Seelöwen"; ">der Stachelgigant"-">den Stachelgiganten"; ">der Waschbär"-">den Waschbären"; ">der Zyklop"-">den Zyklopen"; ">der "-">den "}</li>
-    <li>ANIMAL_nameFullIndefDat->{replace: [ANIMAL_nameFull]; ">ein Affe"-">einem Affen"; ">ein Apokrit"-">einem Apokriten"; ">ein Elefant"-">einem Elefanten"; ">ein Eisbär"-">einem Eisbären"; ">ein Grizzlybär"-">einem Grizzlybären"; ">ein Hase"-">einem Hasen"; ">ein Konstruktoid"-">einem Konstruktoiden"; ">ein Moschusochse"-">einem Moschusochsen"; ">ein Schneehase"-">einem Schneehasen"; ">ein Seelöwe"-">einem Seelöwen"; ">ein Stachelgigant"-">einem Stachelgiganten"; ">ein Waschbär"-">einem Waschbären"; ">ein Zyklop"-">einem Zyklopen"; ">ein "-">einem "; ">eine "-">einer "}</li>
-    <li>ANIMAL_nameIndefAcc->{replace: [ANIMAL_nameDef]; ">der Affe"-">einen Affen"; ">der Apokrit"-">einen Apokriten"; ">der Elefant"-">einen Elefanten"; ">der Eisbär"-">einen Eisbären"; ">der Grizzlybär"-">einen Grizzlybären"; ">der Hase"-">einen Hasen"; ">der Konstruktoid"-">einen Konstruktoiden"; ">der Moschusochse"-">einen Moschusochsen"; ">der Schneehase"-">einen Schneehasen"; ">der Seelöwe"-">einen Seelöwen"; ">der Stachelgigant"-">einen Stachelgiganten"; ">der Waschbär"-">einen Waschbären"; ">der Zyklop"-">einen Zyklopen"; ">der "-">einen "; ">die "-">eine "; ">das "-">ein "}</li>
-    <li>HUMAN_nameFullIndefDat->{replace: [HUMAN_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
-    <li>HUMAN_nameDefDat->{replace: [HUMAN_nameIndef]; ">ein "-">dem "; ">eine "-">der "}</li>
+    <li>ANIMAL_nameDefAcc->{lookup: [ANIMAL_nameDef]; decline_tagged; 4}</li>
+    <li>ANIMAL_nameFullIndefDat->{lookup: [ANIMAL_nameFull]; decline_tagged; 3}</li>
+    <li>ANIMAL_nameIndefAcc->{lookup: [ANIMAL_nameIndef]; decline_tagged; 4}</li>
+    <li>HUMAN_nameFullIndefDat->{lookup: [HUMAN_nameFull]; decline_tagged; 3}</li>
+    <li>HUMAN_nameDefDat->{lookup: [HUMAN_nameDef]; decline_tagged; 3}</li>
   </IncreasedMenagerie.rulePack.rulesStrings>
   
   <!-- EN: meditated -->
@@ -578,9 +578,9 @@
     <li>desc_sentence->[SLEEPER_nameDef] weist sichtbare Verletzungen auf.</li>
     <li>desc_sentence->[SLEEPER_nameDef] sieht erschöpft aus.</li>
     <li>desc_sentence->[Quantity_adjphrase] volle Kryptoschlafkapseln begleiten die Szene.</li>
-    <li>SLEEPER_nameDefAcc->{replace: [SLEEPER_nameDef]; ">der "-">den "}</li>
-    <li>SLEEPER_nameIndefAcc->{replace: [SLEEPER_nameDef]; ">der "-">einen "; ">die "-">eine "; ">das "-">ein "}</li>
-    <li>CARRIER_nameFullIndefDat->{replace: [CARRIER_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
+    <li>SLEEPER_nameDefAcc->{lookup: [SLEEPER_nameDef]; decline_tagged; 4}</li>
+    <li>SLEEPER_nameIndefAcc->{lookup: [SLEEPER_nameIndef]; decline_tagged; 4}</li>
+    <li>CARRIER_nameFullIndefDat->{lookup: [CARRIER_nameFull]; decline_tagged; 3}</li>
   </PutIntoCryptosleep.rulePack.rulesStrings>
   
   <!-- EN: stripped -->
@@ -618,10 +618,10 @@
     <li>desc_sentence->[STRIPPED_nameDef] atmet schwer, ohne ersichtlichen Grund.</li>
     <li>desc_sentence->[STRIPPED_nameDef] krault einen Busch.</li>
     <li>desc_sentence->[STRIPPED_nameDef] hat nur einen [AdjectiveAngsty]en Ausdruck.</li>
-    <li>TAKER_nameFullIndefDat->{replace: [TAKER_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
-    <li>STRIPPED_nameFullIndefDat->{replace: [STRIPPED_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
-    <li>STRIPPED_nameIndefAcc->{replace: [STRIPPED_nameDef]; ">der "-">einen "; ">die "-">eine "; ">das "-">ein "}</li>
-    <li>STRIPPED_nameDefAcc->{replace: [STRIPPED_nameDef]; ">der "-">den "}</li>
+    <li>TAKER_nameFullIndefDat->{lookup: [TAKER_nameFull]; decline_tagged; 3}</li>
+    <li>STRIPPED_nameFullIndefDat->{lookup: [STRIPPED_nameFull]; decline_tagged; 3}</li>
+    <li>STRIPPED_nameIndefAcc->{lookup: [STRIPPED_nameIndef]; decline_tagged; 4}</li>
+    <li>STRIPPED_nameDefAcc->{lookup: [STRIPPED_nameDef]; decline_tagged; 4}</li>
     <li>der(STRIPPED_genderResolved==Male)->der</li>
     <li>der(STRIPPED_genderResolved==Female)->die</li>
     <li>der(STRIPPED_genderResolved==Neuter)->das</li>
@@ -671,10 +671,10 @@
     <li>desc_sentence->Eine Geistererscheinung von [CORPSE_nameDefDat] beobachtet die Szene mit einem [AdjectiveAngsty]en Ausdruck.</li>
     <li>desc_sentence->Eine Geistererscheinung von [CORPSE_nameDefDat] steht neben [VISITOR_nameDefDat], mit einem [AdjectiveAngsty]en Ausdruck.</li>
     <li>desc_sentence->[Quantity_adjphrase] [Animals] rasten in der Nähe der Szene.</li>
-    <li>CORPSE_nameDefDat->{replace: [CORPSE_nameDef]; ">der "-">dem "; ">die "-">der "; ">das "-">dem "}</li>
-    <li>CORPSE_nameFullIndefDat->{replace: [CORPSE_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
-    <li>VISITOR_nameFullIndefDat->{replace: [VISITOR_nameFull]; ">ein "-">einem "; ">eine "-">einer "}</li>
-    <li>VISITOR_nameDefDat->{replace: [VISITOR_nameIndef]; ">ein "-">dem "; ">eine "-">der "}</li>
+    <li>CORPSE_nameDefDat->{lookup: [CORPSE_nameDef]; decline_tagged; 3}</li>
+    <li>CORPSE_nameFullIndefDat->{lookup: [CORPSE_nameFull]; decline_tagged; 3}</li>
+    <li>VISITOR_nameFullIndefDat->{lookup: [VISITOR_nameFull]; decline_tagged; 3}</li>
+    <li>VISITOR_nameDefDat->{lookup: [VISITOR_nameDef]; decline_tagged; 3}</li>
   </VisitedGrave.rulePack.rulesStrings>
   
 </LanguageData>
