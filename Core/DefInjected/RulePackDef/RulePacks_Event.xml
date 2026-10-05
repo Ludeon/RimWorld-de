@@ -5,17 +5,15 @@
     <li>r_logentry->[INITIATOR_definite] used [ABILITY_label] on [SUBJECT_definite].</li>
   -->
   <Event_AbilityUsed.rulePack.rulesStrings>
-    <li>r_logentry->[INITIATOR_definite] hat '[ABILITY_label]' auf [SUBJECT_nameDefAcc] gewirkt.</li>
-    <li>SUBJECT_nameDefAcc->{lookup: [SUBJECT_nameDef]; decline_tagged; 4}</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] wirkte die Fähigkeit '[ABILITY_label]' auf [SUBJECT_nameDefAcc].</li>
   </Event_AbilityUsed.rulePack.rulesStrings>
   
   <!-- EN:
     <li>r_logentry->[INITIATOR_definite] used [ITEM_indefinite] on [SUBJECT_definite].</li>
   -->
   <Event_ItemUsed.rulePack.rulesStrings>
-    <li>r_logentry->[INITIATOR_definite] hat [ITEM_acc_indef] auf [SUBJECT_nameDefAcc] benutzt.</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] benutzte [ITEM_acc_indef] auf [SUBJECT_nameDefAcc].</li>
     <li>ITEM_acc_indef->{replace: ^[ITEM_definite]; "^der [ITEM_label]"-"einen"; "^die [ITEM_label]"-"eine"; "^das [ITEM_label]"-"ein"} {lookup: [ITEM_label]; decline; 3}</li>
-    <li>SUBJECT_nameDefAcc->{lookup: [SUBJECT_nameDef]; decline_tagged; 4}</li>
   </Event_ItemUsed.rulePack.rulesStrings>
   
   <!-- EN:
@@ -40,9 +38,9 @@
     <li>stumbled->staggered</li>
   -->
   <Event_Stun.rulePack.rulesStrings>
-    <li>r_logentry->[SUBJECT_definite] wurde [temporary] [stunned].</li>
-    <li>r_logentry->[SUBJECT_definite] wurde durch den Angriff [temporary] [stunned2].</li>
-    <li>r_logentry->[SUBJECT_definite] wurde durch [INITIATOR_label]'s Angriff [temporary] [stunned2].</li>
+    <li>r_logentry->[SUBJECT_nameDefNom] wurde [temporary] [stunned].</li>
+    <li>r_logentry->[SUBJECT_nameDefNom] wurde durch den Angriff [temporary] [stunned2].</li>
+    <li>r_logentry->[SUBJECT_nameDefNom] wurde durch [INITIATOR_label]'s Angriff [temporary] [stunned2].</li>
     <li>stunned(p=3)->betäubt</li>
     <li>stunned->lahmgelegt</li>
     <li>stunned->gestoppt</li>
@@ -60,9 +58,9 @@
     <li>temporary->temporär</li>
     <li>temporary->vorübergehend</li>
     <li>temporary->kurzzeitig</li>
-    <li>r_logentry->[SUBJECT_definite] [staggered].</li>
-    <li>r_logentry->[SUBJECT_definite] [staggered] durch den Angriff.</li>
-    <li>r_logentry->[SUBJECT_definite] [staggered] durch [INITIATOR_label]'s Angriff.</li>
+    <li>r_logentry->[SUBJECT_nameDefNom] [staggered].</li>
+    <li>r_logentry->[SUBJECT_nameDefNom] [staggered] durch den Angriff.</li>
+    <li>r_logentry->[SUBJECT_nameDefNom] [staggered] durch [INITIATOR_label]'s Angriff.</li>
     <li>staggered(p=3,RECIPIENT_flesh!=Mechanoid,RECIPIENT_flesh!=EntityMechanical,RECIPIENT_flesh!=Drone)->strauchelte</li>
     <li>staggered(RECIPIENT_flesh!=Mechanoid,RECIPIENT_flesh!=EntityMechanical,RECIPIENT_flesh!=Drone)->stolperte</li>
     <li>staggered(RECIPIENT_flesh!=Mechanoid,RECIPIENT_flesh!=EntityMechanical,RECIPIENT_flesh!=Drone)->taumelte</li>

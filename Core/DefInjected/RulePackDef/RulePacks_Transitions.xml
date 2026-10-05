@@ -105,11 +105,9 @@
     <li>r_logentry(p=1.5)->[CULPRITHEDIFF_labelNounPretty] tötete [SUBJECT_nameDefAcc].</li>
     <li>r_logentry(p=1.5)->[CULPRITHEDIFF_labelNounPretty] brachte [SUBJECT_nameDefAcc] um.</li>
     <li>r_logentry(p=1.5)->[CULPRITHEDIFF_labelNounPretty] kostete [SUBJECT_nameDefAcc] das Leben.</li>
-    <li>r_logentry->[SUBJECT_definite] [died] [duetoa] [CULPRITHEDIFF_labelNounGen] [flavorsuffix].</li>
-    <li>r_logentry->[SUBJECT_definite] [died].</li>
-    <li>r_logentry->[SUBJECT_definite] [died] [flavorsuffix].</li>
-    <li>SUBJECT_nameDefAcc->{lookup: [SUBJECT_definite]; decline_tagged; 4}</li>
-    <li>SUBJECT_nameDefDat->{lookup: [SUBJECT_definite]; decline_tagged; 3}</li>
+    <li>r_logentry->[SUBJECT_nameDefNom] [died] [duetoa] [CULPRITHEDIFF_labelNounGen] [flavorsuffix].</li>
+    <li>r_logentry->[SUBJECT_nameDefNom] [died].</li>
+    <li>r_logentry->[SUBJECT_nameDefNom] [died] [flavorsuffix].</li>
   </Transition_DiedInclude.rulePack.rulesStrings>
   
   <!-- EN:
@@ -147,8 +145,8 @@
     <li>r_logentry(p=0.5)->[CULPRITHEDIFF_labelNoun] löste bei [SUBJECT_nameDefDat] einen Kollaps aus.</li>
     <li>r_logentry->[CULPRITHEDIFF_labelNounPretty] ließ [SUBJECT_nameDefAcc] [helplessly] [collapse].</li>
     <li>r_logentry(p=0.5)->[CULPRITHEDIFF_labelNounPretty] löste bei [SUBJECT_nameDefDat] einen Kollaps aus.</li>
-    <li>r_logentry->[SUBJECT_definite] [collapsed] [duetoa] [CULPRITHEDIFF_labelNounGen].</li>
-    <li>r_logentry(p=0.1)->[SUBJECT_definite] [collapsed].</li>
+    <li>r_logentry->[SUBJECT_nameDefNom] [collapsed] [duetoa] [CULPRITHEDIFF_labelNounGen].</li>
+    <li>r_logentry(p=0.1)->[SUBJECT_nameDefNom] [collapsed].</li>
     <li>collapse->kollabieren</li>
     <li>collapse->zusammenbrechen</li>
     <li>collapse->zu Boden sacken</li>
@@ -173,8 +171,6 @@
     <li>helplessly(SUBJECT_flesh!=Mechanoid,SUBJECT_flesh!=Drone)->kraftlos</li>
     <li>helplessly(SUBJECT_flesh==Mechanoid)->unkontrolliert</li>
     <li>helplessly(SUBJECT_flesh==Drone)->unkontrolliert</li>
-    <li>SUBJECT_nameDefAcc->{lookup: [SUBJECT_definite]; decline_tagged; 4}</li>
-    <li>SUBJECT_nameDefDat->{lookup: [SUBJECT_definite]; decline_tagged; 3}</li>
   </Transition_Downed.rulePack.rulesStrings>
   
   <!-- EN:

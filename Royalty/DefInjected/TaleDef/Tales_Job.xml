@@ -15,8 +15,8 @@
     <li>desc_sentence->[Quantity_adjphrase] [Animal]s listen attentively.</li>
   -->
   <AttendedConcert.rulePack.rulesStrings>
-    <li>tale_noun->[ATTENDER_nameDef] [ORGANIZER_label]'s Konzert beiwohnte</li>
-    <li>tale_noun->[ATTENDER_nameDef] [ORGANIZER_label]'s Auftritt zuhörte</li>
+    <li>tale_noun->[ATTENDER_nameDefNom] [ORGANIZER_label]'s Konzert beiwohnte</li>
+    <li>tale_noun->[ATTENDER_nameDefNom] [ORGANIZER_label]'s Auftritt zuhörte</li>
     <li>image->[ATTENDER_nameFullIndefDat], wie [ATTENDER_pronoun] ruhig zuhört [circumstance_group]</li>
     <li>image->[ATTENDER_nameFullIndefDat], wie [ATTENDER_pronoun] den Auftritt von [ORGANIZER_nameFullIndefDat] genießt [circumstance_group]</li>
     <li>image->[ATTENDER_nameFullIndefDat], wie [ATTENDER_pronoun] zu der Musik wippt [circumstance_group]</li>
@@ -25,6 +25,7 @@
     <li>desc_sentence->[Quantity_adjphrase] [PersonJobs] tanzen mit.</li>
     <li>desc_sentence->[Quantity_adjphrase] [Animals] hören aufmerksam zu.</li>
     <li>ATTENDER_nameFullIndefDat->{lookup: [ATTENDER_nameFull]; decline_tagged; 3}</li>
+    <li>ATTENDER_nameDefNom->{lookup: [ATTENDER_nameDef]; decline_tagged; 1}</li>
     <li>ORGANIZER_nameFullIndefDat->{lookup: [ORGANIZER_nameFull]; decline_tagged; 3}</li>
   </AttendedConcert.rulePack.rulesStrings>
   
@@ -41,7 +42,7 @@
     <li>desc_sentence->[Quantity_adjphrase] [Animal]s listen nearby.</li>
   -->
   <HeldConcert.rulePack.rulesStrings>
-    <li>tale_noun->[ORGANIZER_nameDef] ein Konzert abhielt</li>
+    <li>tale_noun->[ORGANIZER_nameDefNom] ein Konzert abhielt</li>
     <li>image->[ORGANIZER_nameFullIndefDat], wie [ORGANIZER_pronoun] [circumstance_group] [ORGANIZER_possessive] berühmtes Lied spielt</li>
     <li>image->[ORGANIZER_nameFullIndefDat], wie [ORGANIZER_pronoun] die Menge zum Mitsingen einlädt</li>
     <li>image->[ORGANIZER_nameFullIndefDat], wie [ORGANIZER_pronoun] ein inspirierendes Lied spielt</li>
@@ -52,6 +53,7 @@
     <li>desc_sentence->[Quantity_adjphrase] [PersonJobs] verfolgen gebannt den Auftritt.</li>
     <li>desc_sentence->[Quantity_adjphrase] [Animals] hören aufmerksam zu.</li>
     <li>ORGANIZER_nameFullIndefDat->{lookup: [ORGANIZER_nameFull]; decline_tagged; 3}</li>
+    <li>ORGANIZER_nameDefNom->{lookup: [ORGANIZER_nameDef]; decline_tagged; 1}</li>
   </HeldConcert.rulePack.rulesStrings>
   
 </LanguageData>

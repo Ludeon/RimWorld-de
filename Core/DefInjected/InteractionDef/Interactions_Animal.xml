@@ -28,10 +28,10 @@
     <li>tamed->whispered a story about [TalkTopicAny] to</li>
   -->
   <AnimalChat.logRulesInitiator.rulesStrings>
-    <li>r_logentry(p=5)->[INITIATOR_nameDef] [tamed].</li>
-    <li>r_logentry->[INITIATOR_nameDef] saß bei [RECIPIENT_nameDefDat] und redete mit sich selbst über [TalkTopicAnyAcc].</li>
-    <li>r_logentry->[INITIATOR_nameDef] näherte sich [RECIPIENT_nameDefDat] und sprach leise mit sich selbst über [TalkTopicAnyAcc].</li>
-    <li>r_logentry->[INITIATOR_nameDef] kam [RECIPIENT_nameDefDat] näher, während [INITIATOR_pronoun] mit sich selbst über [TalkTopicAnyAcc] redete.</li>
+    <li>r_logentry(p=5)->[INITIATOR_nameDefNom] [tamed].</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] saß bei [RECIPIENT_nameDefDat] und redete mit sich selbst über [TalkTopicAnyAcc].</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] näherte sich [RECIPIENT_nameDefDat] und sprach leise mit sich selbst über [TalkTopicAnyAcc].</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] kam [RECIPIENT_nameDefDat] näher, während [INITIATOR_pronoun] mit sich selbst über [TalkTopicAnyAcc] redete.</li>
     <li>tamed->machte beruhigende Laute in der Nähe von [RECIPIENT_nameDefDat]</li>
     <li>tamed->machte langsame, freundliche Gesten zu [RECIPIENT_nameDefDat]</li>
     <li>tamed->machte beruhigende Geräusche zu [RECIPIENT_nameDefDat]</li>
@@ -50,6 +50,7 @@
     <li>tamed->zeigte sich entspannt gegenüber [RECIPIENT_nameDefDat]</li>
     <li>tamed->saß geduldig neben [RECIPIENT_nameDefDat]</li>
     <li>tamed->flüsterte [RECIPIENT_nameDefDat] eine Geschichte über [TalkTopicAnyAcc] zu</li>
+    <li>INITIATOR_nameDefNom->{lookup: [INITIATOR_nameDef]; decline_tagged; 1}</li>
     <li>RECIPIENT_nameDefDat->{lookup: [RECIPIENT_nameDef]; decline_tagged; 3}</li>
     <li>RECIPIENT_nameDefAcc->{lookup: [RECIPIENT_nameDef]; decline_tagged; 4}</li>
   </AnimalChat.logRulesInitiator.rulesStrings>
@@ -83,9 +84,9 @@
     <li>rubbedpart->arm</li>
   -->
   <Nuzzle.logRulesInitiator.rulesStrings>
-    <li>r_logentry(p=3)->[INITIATOR_nameDef] [nuzzled] [RECIPIENT_nameDef] [nuzzleadverb].</li>
-    <li>r_logentry->[INITIATOR_nameDef] [nuzzled] [nuzzleadverb] [RECIPIENT_nameDef]'s [rubbedpart].</li>
-    <li>r_logentry->[INITIATOR_nameDef] schmiegte sich [nuzzleadverb] an [RECIPIENT_nameDef].</li>
+    <li>r_logentry(p=3)->[INITIATOR_nameDefNom] [nuzzled] [RECIPIENT_nameDefAcc] [nuzzleadverb].</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] [nuzzled] [nuzzleadverb] [RECIPIENT_label]'s [rubbedpart].</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] schmiegte sich [nuzzleadverb] an [RECIPIENT_nameDefDat].</li>
     <li>nuzzled->berührte</li>
     <li>nuzzled->streifte</li>
     <li>nuzzled(p=0.1)->touchierte</li>
@@ -112,6 +113,9 @@
     <li>rubbedpart->Hand</li>
     <li>rubbedpart->Seite</li>
     <li>rubbedpart->Arm</li>
+    <li>INITIATOR_nameDefNom->{lookup: [INITIATOR_nameDef]; decline_tagged; 1}</li>
+    <li>RECIPIENT_nameDefDat->{lookup: [RECIPIENT_nameDef]; decline_tagged; 3}</li>
+    <li>RECIPIENT_nameDefAcc->{lookup: [RECIPIENT_nameDef]; decline_tagged; 4}</li>
   </Nuzzle.logRulesInitiator.rulesStrings>
   
   <!-- EN: release to the wild -->
@@ -130,17 +134,20 @@
     <li>released->before letting [RECIPIENT_objective] go to live in freedom.</li>
   -->
   <ReleaseToWild.logRulesInitiator.rulesStrings>
-    <li>r_logentry->[farewell] [released]</li>
-    <li>farewell->[INITIATOR_nameDef] streichelte [RECIPIENT_nameDef] ein letztes Mal sanft</li>
-    <li>farewell->[INITIATOR_nameDef] sagte ein paar einfühlsame Worte zu [RECIPIENT_nameDef]</li>
-    <li>farewell->[INITIATOR_nameDef] nahm das Halsband von [RECIPIENT_nameDef] ab</li>
-    <li>farewell->[INITIATOR_nameDef] erinnerte sich an die gute Zeit, die [INITIATOR_pronoun] mit [RECIPIENT_nameDef] hatte</li>
-    <li>released->und entließ es in die Wildnis.</li>
-    <li>released->und ließ es frei.</li>
-    <li>released->und schickte es weg.</li>
-    <li>released->und ließ es gehen.</li>
-    <li>released->, dann wandte [INITIATOR_pronoun] sich ab und überließ das Tier seinem Schicksal.</li>
-    <li>released->, bevor [INITIATOR_pronoun] es in die Freiheit entließ.</li>
+    <li>r_logentry->[farewell], bevor [INITIATOR_pronoun] [released]</li>
+    <li>farewell->[INITIATOR_nameDefNom] streichelte [RECIPIENT_nameDefAcc] ein letztes Mal sanft</li>
+    <li>farewell->[INITIATOR_nameDefNom] sagte ein paar einfühlsame Worte zu [RECIPIENT_nameDefDat]</li>
+    <li>farewell->[INITIATOR_nameDefNom] nahm das Halsband von [RECIPIENT_nameDefDat] ab</li>
+    <li>farewell->[INITIATOR_nameDefNom] erinnerte sich an die gute Zeit, die [INITIATOR_pronoun] mit [RECIPIENT_nameDefDat] hatte</li>
+    <li>released->[RECIPIENT_objective] in die Wildnis entließ.</li>
+    <li>released->[RECIPIENT_objective] freiließ.</li>
+    <li>released->[RECIPIENT_objective] wegschickte.</li>
+    <li>released->[RECIPIENT_objective] gehen ließ.</li>
+    <li>released->sich abwandte, um [RECIPIENT_objective] [RECIPIENT_possessive]em Schicksal zu überlassen.</li>
+    <li>released->[RECIPIENT_objective] in die Freiheit entließ.</li>
+    <li>INITIATOR_nameDefNom->{lookup: [INITIATOR_nameDef]; decline_tagged; 1}</li>
+    <li>RECIPIENT_nameDefDat->{lookup: [RECIPIENT_nameDef]; decline_tagged; 3}</li>
+    <li>RECIPIENT_nameDefAcc->{lookup: [RECIPIENT_nameDef]; decline_tagged; 4}</li>
   </ReleaseToWild.logRulesInitiator.rulesStrings>
   
   <!-- EN: tame attempt -->
@@ -163,21 +170,23 @@
     <li>r_logentry->[INITIATOR_nameDef] gave [RECIPIENT_nameDef] a first command.</li>
   -->
   <TameAttempt.logRulesInitiator.rulesStrings>
-    <li>r_logentry->[INITIATOR_nameDef] versuchte, [RECIPIENT_nameDefAcc] zu zähmen.</li>
-    <li>r_logentry->[INITIATOR_nameDef] versuchte, [RECIPIENT_nameDefAcc] unter Kontrolle zu bringen.</li>
-    <li>r_logentry->[INITIATOR_nameDef] versuchte, [RECIPIENT_nameDefDat] ein Halsband anzulegen.</li>
-    <li>r_logentry->[INITIATOR_nameDef] forderte Gehorsam von [RECIPIENT_nameDefDat].</li>
-    <li>r_logentry->[INITIATOR_nameDef] rief [RECIPIENT_nameDefDat] zu sich.</li>
-    <li>r_logentry->[INITIATOR_nameDef] versuchte zu erreichen, dass [RECIPIENT_nameDef] stillhält.</li>
-    <li>r_logentry->[INITIATOR_nameDef] ergriff [RECIPIENT_nameDefAcc] und brüllte ein Kommando.</li>
-    <li>r_logentry->[INITIATOR_nameDef] versuchte, [RECIPIENT_nameDefAcc] ruhig zu halten.</li>
-    <li>r_logentry->[INITIATOR_nameDef] rief [RECIPIENT_nameDefDat] einen Befehl zu.</li>
-    <li>r_logentry->[INITIATOR_nameDef] schlug [RECIPIENT_nameDefAcc], um Dominanz zu zeigen.</li>
-    <li>r_logentry->[INITIATOR_nameDef] führte [RECIPIENT_nameDefAcc] zurück zur Gemeinschaft.</li>
-    <li>r_logentry->[INITIATOR_nameDef] forderte [RECIPIENT_nameDefDat] auf, zurück nach Hause zu kommen.</li>
-    <li>r_logentry->[INITIATOR_nameDef] berührte einen empfindlichen Körperteil von [RECIPIENT_nameDefDat] und verlangte Gehorsam.</li>
-    <li>r_logentry->[INITIATOR_nameDef] zeigte auf den Boden und forderte [RECIPIENT_nameDefAcc] auf, zu kommen.</li>
-    <li>r_logentry->[INITIATOR_nameDef] erteilte [RECIPIENT_nameDefDat] das erste Mal einen Befehl.</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] versuchte, [RECIPIENT_nameDefAcc] zu zähmen.</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] versuchte, [RECIPIENT_nameDefAcc] unter Kontrolle zu bringen.</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] versuchte, [RECIPIENT_nameDefDat] ein Halsband anzulegen.</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] forderte Gehorsam von [RECIPIENT_nameDefDat].</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] rief [RECIPIENT_nameDefDat] zu sich.</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] versuchte zu erreichen, dass [RECIPIENT_nameDefNom] stillhält.</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] ergriff [RECIPIENT_nameDefAcc] und brüllte ein Kommando.</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] versuchte, [RECIPIENT_nameDefAcc] ruhig zu halten.</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] rief [RECIPIENT_nameDefDat] einen Befehl zu.</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] schlug [RECIPIENT_nameDefAcc], um Dominanz zu zeigen.</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] führte [RECIPIENT_nameDefAcc] zurück zur Gemeinschaft.</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] forderte [RECIPIENT_nameDefDat] auf, zurück nach Hause zu kommen.</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] berührte einen empfindlichen Körperteil von [RECIPIENT_nameDefDat] und verlangte Gehorsam.</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] zeigte auf den Boden und forderte [RECIPIENT_nameDefAcc] auf, zu kommen.</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] erteilte [RECIPIENT_nameDefDat] das erste Mal einen Befehl.</li>
+    <li>INITIATOR_nameDefNom->{lookup: [INITIATOR_nameDef]; decline_tagged; 1}</li>
+    <li>RECIPIENT_nameDefNom->{lookup: [RECIPIENT_nameDef]; decline_tagged; 1}</li>
     <li>RECIPIENT_nameDefDat->{lookup: [RECIPIENT_nameDef]; decline_tagged; 3}</li>
     <li>RECIPIENT_nameDefAcc->{lookup: [RECIPIENT_nameDef]; decline_tagged; 4}</li>
   </TameAttempt.logRulesInitiator.rulesStrings>
@@ -197,16 +206,19 @@
     <li>tried->attempted</li>
   -->
   <TrainAttempt.logRulesInitiator.rulesStrings>
-    <li>r_logentry->[INITIATOR_nameDef] [trained].</li>
-    <li>trained(p=2)->[tried] [RECIPIENT_nameDef] zu trainieren</li>
-    <li>trained->[tried] [RECIPIENT_nameDef] einen neuen Trick beizubringen</li>
-    <li>trained->[tried] [RECIPIENT_nameDef] zu disziplinieren</li>
-    <li>trained->[tried] [RECIPIENT_nameDef] zu instruieren</li>
-    <li>trained->[tried] [RECIPIENT_nameDef] dazu zu bringen, eine neue Fertigkeit zu lernen</li>
-    <li>trained->demonstrierte eine neue Fertigkeit für [RECIPIENT_nameDef]</li>
-    <li>trained->ermutigte [RECIPIENT_nameDef] eine neue Reaktion zu erlernen</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] [trained].</li>
+    <li>trained(p=2)->[tried], [RECIPIENT_nameDefAcc] zu trainieren</li>
+    <li>trained->[tried], [RECIPIENT_nameDefDat] einen neuen Trick vorzuführen</li>
+    <li>trained->[tried], [RECIPIENT_nameDefAcc] zu disziplinieren</li>
+    <li>trained->[tried], [RECIPIENT_nameDefAcc] zu dressieren</li>
+    <li>trained->[tried], [RECIPIENT_nameDefDat] etwas Neues beizubringen</li>
+    <li>trained->ermutigte [RECIPIENT_nameDefAcc] zu einer neuen Reaktion</li>
     <li>tried->probierte</li>
     <li>tried->versuchte</li>
+    <li>tried->unternahm den Versuch</li>
+    <li>INITIATOR_nameDefNom->{lookup: [INITIATOR_nameDef]; decline_tagged; 1}</li>
+    <li>RECIPIENT_nameDefDat->{lookup: [RECIPIENT_nameDef]; decline_tagged; 3}</li>
+    <li>RECIPIENT_nameDefAcc->{lookup: [RECIPIENT_nameDef]; decline_tagged; 4}</li>
   </TrainAttempt.logRulesInitiator.rulesStrings>
   
 </LanguageData>

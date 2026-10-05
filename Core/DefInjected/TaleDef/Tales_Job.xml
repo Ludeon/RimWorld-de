@@ -21,8 +21,8 @@
     <li>desc_sentence->[Quantity_adjphrase] [Animal]s play nearby.</li>
   -->
   <AttendedParty.rulePack.rulesStrings>
-    <li>tale_noun->[ATTENDER_nameDef] an [PAWN_label]'s Party teilnahm</li>
-    <li>tale_noun->[ATTENDER_nameDef] sich mit [ORGANIZER_nameDefDat] auf einer Party entspannte</li>
+    <li>tale_noun->[ATTENDER_nameDefNom] an [PAWN_label]'s Party teilnahm</li>
+    <li>tale_noun->[ATTENDER_nameDefNom] sich mit [ORGANIZER_nameDefDat] auf einer Party entspannte</li>
     <li>image->[ATTENDER_nameFullIndefDat], wie [ATTENDER_pronoun] [circumstance_group] ein Gespräch mit [ORGANIZER_nameFullIndefDat] führt</li>
     <li>image->[ATTENDER_nameFullIndefDat], wie [ATTENDER_pronoun] [circumstance_group] ein Getränk von [ORGANIZER_nameFullIndefDat] spendiert bekommt</li>
     <li>image->[ATTENDER_nameFullIndefDat], wie [ATTENDER_pronoun] [circumstance_group] ein lockeres Gespräch mit [ORGANIZER_nameFullIndefDat] führt</li>
@@ -38,6 +38,7 @@
     <li>desc_sentence->[Quantity_adjphrase] [Animals] spielen in der Nähe.</li>
     <li>ATTENDER_nameFullIndefDat->{lookup: [ATTENDER_nameFull]; decline_tagged; 3}</li>
     <li>ATTENDER_nameIndefAcc->{lookup: [ATTENDER_nameIndef]; decline_tagged; 4}</li>
+    <li>ATTENDER_nameDefNom->{lookup: [ATTENDER_nameDef]; decline_tagged; 1}</li>
     <li>ORGANIZER_nameFullIndefDat->{lookup: [ORGANIZER_nameFull]; decline_tagged; 3}</li>
     <li>ORGANIZER_nameDefDat->{lookup: [ORGANIZER_nameDef]; decline_tagged; 3}</li>
   </AttendedParty.rulePack.rulesStrings>
@@ -61,8 +62,8 @@
     <li>desc_sentence->A snow-covered [TerrainFeature] can be seen far away.</li>
   -->
   <BuiltSnowman.rulePack.rulesStrings>
-    <li>tale_noun->[PAWN_nameDef] einen Schneemann baute</li>
-    <li>tale_noun->[PAWN_nameDef] im Schnee spielte</li>
+    <li>tale_noun->[PAWN_nameDefNom] einen Schneemann baute</li>
+    <li>tale_noun->[PAWN_nameDefNom] im Schnee spielte</li>
     <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] einen Schneeball formt, [circumstance_group]</li>
     <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] einen riesigen Ball aus Schnee auf dem Boden rollt, [circumstance_group]</li>
     <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [Vegetables] zu einem menschlichen Gesicht formt, [circumstance_group]</li>
@@ -104,8 +105,8 @@
     <li>desc_sentence->[Quantity_adjphrase] [Animal]s rest near the scene.</li>
   -->
   <BuriedCorpse.rulePack.rulesStrings>
-    <li>tale_noun->[DIGGER_nameDef] die Leiche von [CORPSE_nameDefDat] begrub</li>
-    <li>tale_noun->[DIGGER_nameDef] die Leiche von [CORPSE_nameDefDat] beerdigte</li>
+    <li>tale_noun->[DIGGER_nameDefNom] die Leiche von [CORPSE_nameDefDat] begrub</li>
+    <li>tale_noun->[DIGGER_nameDefNom] die Leiche von [CORPSE_nameDefDat] beerdigte</li>
     <li>image->[DIGGER_nameFullIndefDat], wie [DIGGER_pronoun] neben dem Grabstein von [CORPSE_nameFullIndefDat] steht [circumstance_group]</li>
     <li>image->[DIGGER_nameFullIndefDat], wie [DIGGER_pronoun] neben dem Grabstein von [CORPSE_nameFullIndefDat] sitzt [circumstance_group]</li>
     <li>image->[DIGGER_nameFullIndefDat], wie [DIGGER_pronoun] sich an den Grabstein von [CORPSE_nameFullIndefDat] lehnt [circumstance_group]</li>
@@ -129,6 +130,7 @@
     <li>CORPSE_nameDefDat->{lookup: [CORPSE_nameDef]; decline_tagged; 3}</li>
     <li>CORPSE_nameFullIndefDat->{lookup: [CORPSE_nameFull]; decline_tagged; 3}</li>
     <li>DIGGER_nameFullIndefDat->{lookup: [DIGGER_nameFull]; decline_tagged; 3}</li>
+    <li>DIGGER_nameDefNom->{lookup: [DIGGER_nameDef]; decline_tagged; 1}</li>
     <li>DIGGER_nameDefDat->{lookup: [DIGGER_nameDef]; decline_tagged; 3}</li>
   </BuriedCorpse.rulePack.rulesStrings>
   
@@ -152,7 +154,7 @@
     <li>desc_sentence->[Quantity_adjphrase] [PersonJob]s gaze in awe.</li>
   -->
   <CompletedLongConstructionProject.rulePack.rulesStrings>
-    <li>tale_noun->[PAWN_nameDef] [OBJECT_indefinite_acc] fertigstellte</li>
+    <li>tale_noun->[PAWN_nameDefNom] [OBJECT_indefinite_acc] fertigstellte</li>
     <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] [OBJECT_indefinite_acc] baut</li>
     <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] [OBJECT_indefinite_acc] zusammenbaut</li>
     <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] die Flächen an [OBJECT_indefinite_dat] poliert</li>
@@ -189,7 +191,7 @@
     <li>desc_sentence->[Quantity_adjphrase] [PersonJob]s gaze in awe.</li>
   -->
   <CompletedLongCraftingProject.rulePack.rulesStrings>
-    <li>tale_noun->[PAWN_nameDef] [OBJECT_indefinite_acc] fertigstellte</li>
+    <li>tale_noun->[PAWN_nameDefNom] [OBJECT_indefinite_acc] fertigstellte</li>
     <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] an [OBJECT_indefinite_dat] arbeitet</li>
     <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] die Flächen an [OBJECT_indefinite_dat] poliert</li>
     <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] [OBJECT_indefinite_dat] Verzierungen hinzufügt</li>
@@ -201,7 +203,7 @@
     <li>circumstance_phrase->mit einem zufriedenen Gesichtsausdruck</li>
     <li>desc_sentence->[OBJECT_definite_nom] leuchtet leicht in [Color]er Farbe.</li>
     <li>desc_sentence->[OBJECT_definite_nom] ist aufwendig gestaltet.</li>
-    <li>desc_sentence->[PAWN_nameDef] hebt [OBJECT_definite_acc] scheinbar ohne Aufwand an.</li>
+    <li>desc_sentence->[PAWN_nameDefNom] hebt [OBJECT_definite_acc] scheinbar ohne Aufwand an.</li>
     <li>desc_sentence->[Quantity_adjphrase] [PersonJobs] bestaunen [OBJECT_definite_acc].</li>
     <li>desc_sentence->[Quantity_adjphrase] [PersonJobs] starren voller Ehrfurcht.</li>
   </CompletedLongCraftingProject.rulePack.rulesStrings>
@@ -226,7 +228,7 @@
     <li>desc_sentence->[Quantity_adjphrase] filled cryptosleep caskets surround the scene.</li>
   -->
   <EnteredCryptosleep.rulePack.rulesStrings>
-    <li>tale_noun->[PAWN_nameDef] eine Kryptoschlafkapsel betrat</li>
+    <li>tale_noun->[PAWN_nameDefNom] eine Kryptoschlafkapsel betrat</li>
     <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] sich in eine Kryptoschlafkapsel legt [circumstance_group]</li>
     <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] eine leere Kryptoschlafkapsel öffnet [circumstance_group]</li>
     <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] sich selbst in einer Kryptoschlafkapsel versiegelt [circumstance_group]</li>
@@ -239,8 +241,8 @@
     <li>circumstance_phrase->, während [PAWN_pronoun] leise mit sich selbst spricht</li>
     <li>desc_sentence->[Quantity_adjphrase] [Animals] rasten in der Nähe der Szene.</li>
     <li>desc_sentence->[Quantity_adjphrase] [Enemies] nähern sich dem Gebiet.</li>
-    <li>desc_sentence->[PAWN_nameDef] strahlt Entschlossenheit aus.</li>
-    <li>desc_sentence->[PAWN_nameDef] weist sichtbare Verletzungen auf.</li>
+    <li>desc_sentence->[PAWN_nameDefNom] strahlt Entschlossenheit aus.</li>
+    <li>desc_sentence->[PAWN_nameDefNom] weist sichtbare Verletzungen auf.</li>
     <li>desc_sentence->Ein [Color]es Polarlicht schimmert am Horizont.</li>
     <li>desc_sentence->[Quantity_adjphrase] volle Kryptoschlafkapseln begleiten die Szene.</li>
   </EnteredCryptosleep.rulePack.rulesStrings>
@@ -266,7 +268,7 @@
     <li>desc_sentence->[Quantity_adjphrase] ethereal spirits of ancient masters watch from above.</li>
   -->
   <GainedMasterSkillWithoutPassion.rulePack.rulesStrings>
-    <li>tale_noun->[PAWN_nameDef] die Meisterstufe der [SKILL_label]-Fertigkeit erlangte</li>
+    <li>tale_noun->[PAWN_nameDefNom] die Meisterstufe der [SKILL_label]-Fertigkeit erlangte</li>
     <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] die [SKILL_label]-Fertigkeit ausübt</li>
     <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] ein Buch über die [SKILL_label]-Fertigkeit liest</li>
     <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] eine Ausbildung in der [SKILL_label]-Fertigkeit erhält</li>
@@ -307,7 +309,7 @@
     <li>desc_sentence->[Quantity_adjphrase] ethereal spirits of ancient masters watch from above.</li>
   -->
   <GainedMasterSkillWithPassion.rulePack.rulesStrings>
-    <li>tale_noun->[PAWN_nameDef] die Meisterstufe der [SKILL_label]-Fertigkeit erlangte</li>
+    <li>tale_noun->[PAWN_nameDefNom] die Meisterstufe der [SKILL_label]-Fertigkeit erlangte</li>
     <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] die [SKILL_label]-Fertigkeit ausübt</li>
     <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] ein Buch über die [SKILL_label]-Fertigkeit liest</li>
     <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] eine Ausbildung in der [SKILL_label]-Fertigkeit erhält</li>
@@ -347,8 +349,8 @@
     <li>desc_sentence->A line of uncountable [Animal]s waits to be tamed by [HUMAN_nameDef].</li>
   -->
   <IncreasedMenagerie.rulePack.rulesStrings>
-    <li>tale_noun(p=3)->[HUMAN_nameDef] ein weiteres Tier für [HUMAN_possessive]e wachsende [AnimalGroup] rekrutierte</li>
-    <li>tale_noun->[HUMAN_nameDef] [ANIMAL_nameDefAcc] zähmte</li>
+    <li>tale_noun(p=3)->[HUMAN_nameDefNom] ein weiteres Tier für [HUMAN_possessive]e wachsende [AnimalGroup] rekrutierte</li>
+    <li>tale_noun->[HUMAN_nameDefNom] [ANIMAL_nameDefAcc] zähmte</li>
     <li>image->[HUMAN_nameFullIndefDat], wie [HUMAN_pronoun] [circumstance_group] [ANIMAL_nameIndefAcc] zähmt</li>
     <li>image->[HUMAN_nameFullIndefDat], wie [HUMAN_pronoun] [circumstance_group] [ANIMAL_nameFullIndefDat] etwas zu fressen anbietet</li>
     <li>image->[HUMAN_nameFullIndefDat], wie [HUMAN_pronoun] [circumstance_group] {replace: [ANIMAL_objective]; "ihn"-"einem"; "sie"-"einer"; "es"-"einem"} scheuen [ANIMAL_label] etwas zuflüstert</li>
@@ -357,14 +359,16 @@
     <li>circumstance_phrase->lächelnd</li>
     <li>circumstance_phrase->erschöpft aber glücklich</li>
     <li>circumstance_phrase->mit einer [AnimalGroup] im Hintergrund</li>
-    <li>desc_sentence->[HUMAN_nameDef] ist von unzähligen [AnimalsDat] umgeben.</li>
-    <li>desc_sentence->[ANIMAL_nameDef] zieht weiter, um sich einer [AnimalGroup] von Artgenossen anzuschließen.</li>
+    <li>desc_sentence->[HUMAN_nameDefNom] ist von unzähligen [AnimalsDat] umgeben.</li>
+    <li>desc_sentence->[ANIMAL_nameDefNom] zieht weiter, um sich einer [AnimalGroup] von Artgenossen anzuschließen.</li>
     <li>desc_sentence->Die Szene ist gefüllt mit [AnimalsDat] und [AnimalsDat].</li>
     <li>desc_sentence->Eine Reihe von unzähligen [AnimalsDat] wartet darauf, von [HUMAN_nameDefDat] gezähmt zu werden.</li>
+    <li>ANIMAL_nameDefNom->{lookup: [ANIMAL_nameDef]; decline_tagged; 1}</li>
     <li>ANIMAL_nameDefAcc->{lookup: [ANIMAL_nameDef]; decline_tagged; 4}</li>
     <li>ANIMAL_nameFullIndefDat->{lookup: [ANIMAL_nameFull]; decline_tagged; 3}</li>
     <li>ANIMAL_nameIndefAcc->{lookup: [ANIMAL_nameIndef]; decline_tagged; 4}</li>
     <li>HUMAN_nameFullIndefDat->{lookup: [HUMAN_nameFull]; decline_tagged; 3}</li>
+    <li>HUMAN_nameDefNom->{lookup: [HUMAN_nameDef]; decline_tagged; 1}</li>
     <li>HUMAN_nameDefDat->{lookup: [HUMAN_nameDef]; decline_tagged; 3}</li>
   </IncreasedMenagerie.rulePack.rulesStrings>
   
@@ -387,7 +391,7 @@
     <li>desc_sentence->[Quantity_adjphrase] [Enemy]s are awestruck by the scene.</li>
   -->
   <Meditated.rulePack.rulesStrings>
-    <li>tale_noun->[PAWN_nameDef] meditierte</li>
+    <li>tale_noun->[PAWN_nameDefNom] meditierte</li>
     <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] unter [TreeTypeDat_indef] sitzt [circumstance_group]</li>
     <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] still dasitzt [circumstance_group]</li>
     <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] in die Ferne blickt [circumstance_group]</li>
@@ -428,7 +432,7 @@
     <li>desc_sentence->[PAWN_nameDef] is sweaty and dirty from work.</li>
   -->
   <MinedValuable.rulePack.rulesStrings>
-    <li>tale_noun->[PAWN_nameDef] eine reiche [MATERIAL_label]ader abbaute</li>
+    <li>tale_noun->[PAWN_nameDefNom] eine reiche [MATERIAL_label]ader abbaute</li>
     <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] [MATERIAL_label]gestein mit Bergbauwerkzeugen bearbeitet</li>
     <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] einen [MATERIAL_label]brocken in der Hand hält</li>
     <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] sich [circumstance_group] an einer Wand aus [MATERIAL_label] lehnt</li>
@@ -446,7 +450,7 @@
     <li>desc_sentence(p=0.33)->Ein [TerrainFeatureMas] ist in der Ferne zu sehen.</li>
     <li>desc_sentence(p=0.33)->Eine [TerrainFeatureFem] ist in der Ferne zu sehen.</li>
     <li>desc_sentence(p=0.33)->Ein [TerrainFeatureNeu] ist in der Ferne zu sehen.</li>
-    <li>desc_sentence->[PAWN_nameDef] ist verschwitzt und schmutzig von der Arbeit.</li>
+    <li>desc_sentence->[PAWN_nameDefNom] ist verschwitzt und schmutzig von der Arbeit.</li>
   </MinedValuable.rulePack.rulesStrings>
   
   <!-- EN: played game -->
@@ -478,9 +482,9 @@
     <li>desc_sentence->[Quantity_adjphrase] [PersonJob]s are slumped in defeat.</li>
   -->
   <PlayedGame.rulePack.rulesStrings>
-    <li>tale_noun->sich [PAWN_nameDef] beim Spiel an [OBJECT_indefinite_dat] entspannte</li>
-    <li>tale_noun->[PAWN_nameDef] an [OBJECT_indefinite_dat] spielte</li>
-    <li>tale_noun->[PAWN_nameDef] sich beim Spielen an [OBJECT_indefinite_dat] amüsierte</li>
+    <li>tale_noun->sich [PAWN_nameDefNom] beim Spiel an [OBJECT_indefinite_dat] entspannte</li>
+    <li>tale_noun->[PAWN_nameDefNom] an [OBJECT_indefinite_dat] spielte</li>
+    <li>tale_noun->[PAWN_nameDefNom] sich beim Spielen an [OBJECT_indefinite_dat] amüsierte</li>
     <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] auf einem Stuhl wartet</li>
     <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] über [OBJECT_indefinite_dat] verharrt</li>
     <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] an [OBJECT_indefinite_dat] sitzt</li>
@@ -499,9 +503,9 @@
     <li>desc_sentence(p=0.33)->In der Ferne ist ein [TerrainFeatureNeu] zu sehen.</li>
     <li>desc_sentence->[Quantity_adjphrase] [PersonJobs] spielen auch mit.</li>
     <li>desc_sentence->[Quantity_adjphrase] [Animals] spielen in der Nähe.</li>
-    <li>desc_sentence->[PAWN_nameDef] strahlt in einer [Color]en Aura.</li>
+    <li>desc_sentence->[PAWN_nameDefNom] strahlt in einer [Color]en Aura.</li>
     <li>desc_sentence->[PAWN_label]'s Merkmale werden übertrieben dargestellt.</li>
-    <li>desc_sentence->[PAWN_nameDef] ist der Höhepunkt der Szene.</li>
+    <li>desc_sentence->[PAWN_nameDefNom] ist der Höhepunkt der Szene.</li>
   </PlayedGame.rulePack.rulesStrings>
   
   <!-- EN: prayed -->
@@ -524,8 +528,8 @@
     <li>desc_sentence->[Quantity_adjphrase] [Enemy]s are awestruck by the scene.</li>
   -->
   <Prayed.rulePack.rulesStrings>
-    <li>tale_noun->[PAWN_nameDef] betete</li>
-    <li>tale_noun->[PAWN_nameDef] zu einer höheren Macht betete</li>
+    <li>tale_noun->[PAWN_nameDefNom] betete</li>
+    <li>tale_noun->[PAWN_nameDefNom] zu einer höheren Macht betete</li>
     <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] in die Ferne blickt [circumstance_group]</li>
     <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [PAWN_possessive]e Augen schließt [circumstance_group]</li>
     <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [PAWN_possessive]e Hände zusammenfaltet [circumstance_group]</li>
@@ -561,7 +565,7 @@
     <li>desc_sentence->[Quantity_adjphrase] filled cryptosleep caskets surround the scene.</li>
   -->
   <PutIntoCryptosleep.rulePack.rulesStrings>
-    <li>tale_noun->[CARRIER_nameDef] [SLEEPER_nameDefAcc] in den Kryptoschlaf versetzte</li>
+    <li>tale_noun->[CARRIER_nameDefNom] [SLEEPER_nameDefAcc] in den Kryptoschlaf versetzte</li>
     <li>image->[CARRIER_nameFullIndefDat], wie [CARRIER_pronoun] [SLEEPER_nameIndefAcc] in eine Kryptoschlafkapsel steckt [circumstance_group]</li>
     <li>image->[CARRIER_nameFullIndefDat], wie [CARRIER_pronoun] eine leere Kryptoschlafkapsel für [SLEEPER_nameIndefAcc] öffnet [circumstance_group]</li>
     <li>image->[CARRIER_nameFullIndefDat], wie [CARRIER_pronoun] [SLEEPER_nameIndefAcc] in einer Kryptoschlafkapsel versiegelt [circumstance_group]</li>
@@ -574,13 +578,15 @@
     <li>circumstance_phrase->, mit sichtbarer Spannung zwischen den beiden</li>
     <li>desc_sentence->[Quantity_adjphrase] [Animals] rasten in der Nähe der Szene.</li>
     <li>desc_sentence->[Quantity_adjphrase] [Enemies] nähern sich dem Gebiet.</li>
-    <li>desc_sentence->[CARRIER_nameDef] strahlt Entschlossenheit aus.</li>
-    <li>desc_sentence->[SLEEPER_nameDef] weist sichtbare Verletzungen auf.</li>
-    <li>desc_sentence->[SLEEPER_nameDef] sieht erschöpft aus.</li>
+    <li>desc_sentence->[CARRIER_nameDefNom] strahlt Entschlossenheit aus.</li>
+    <li>desc_sentence->[SLEEPER_nameDefNom] weist sichtbare Verletzungen auf.</li>
+    <li>desc_sentence->[SLEEPER_nameDefNom] sieht erschöpft aus.</li>
     <li>desc_sentence->[Quantity_adjphrase] volle Kryptoschlafkapseln begleiten die Szene.</li>
+    <li>SLEEPER_nameDefNom->{lookup: [SLEEPER_nameDef]; decline_tagged; 1}</li>
     <li>SLEEPER_nameDefAcc->{lookup: [SLEEPER_nameDef]; decline_tagged; 4}</li>
     <li>SLEEPER_nameIndefAcc->{lookup: [SLEEPER_nameIndef]; decline_tagged; 4}</li>
     <li>CARRIER_nameFullIndefDat->{lookup: [CARRIER_nameFull]; decline_tagged; 3}</li>
+    <li>CARRIER_nameDefNom->{lookup: [CARRIER_nameDef]; decline_tagged; 1}</li>
   </PutIntoCryptosleep.rulePack.rulesStrings>
   
   <!-- EN: stripped -->
@@ -603,7 +609,7 @@
     <li>desc_sentence->[STRIPPED_nameDef] wears only a [AdjectiveAngsty] expression.</li>
   -->
   <Stripped.rulePack.rulesStrings>
-    <li>tale_noun->[TAKER_nameDef] [STRIPPED_nameDefAcc] entkleidete</li>
+    <li>tale_noun->[TAKER_nameDefNom] [STRIPPED_nameDefAcc] entkleidete</li>
     <li>image->[TAKER_nameFullIndefDat], wie [TAKER_pronoun] [circumstance_group] [STRIPPED_nameIndefAcc] öffentlich entkleidet</li>
     <li>image->[TAKER_nameFullIndefDat], wie [TAKER_pronoun] [circumstance_group] die Kleidung von [STRIPPED_nameFullIndefDat] auszieht</li>
     <li>image->[TAKER_nameFullIndefDat], wie [TAKER_pronoun] mehrere [Apparels] in den Händen hält, während [TAKER_pronoun] neben [STRIPPED_nameFullIndefDat] steht, [der] [circumstance_group] komplett nackt ist</li>
@@ -613,14 +619,16 @@
     <li>circumstance_phrase->, obwohl andere zusehen,</li>
     <li>circumstance_phrase->ohne ersichtlichen Grund</li>
     <li>circumstance_phrase->in Gesellschaft von verwirrten Tieren</li>
-    <li>desc_sentence->[STRIPPED_nameDef] ist sichtlich erregt.</li>
-    <li>desc_sentence->[STRIPPED_nameDef] ist mit unerklärlicher Nässe bedeckt.</li>
-    <li>desc_sentence->[STRIPPED_nameDef] atmet schwer, ohne ersichtlichen Grund.</li>
-    <li>desc_sentence->[STRIPPED_nameDef] krault einen Busch.</li>
-    <li>desc_sentence->[STRIPPED_nameDef] hat nur einen [AdjectiveAngsty]en Ausdruck.</li>
+    <li>desc_sentence->[STRIPPED_nameDefNom] ist sichtlich erregt.</li>
+    <li>desc_sentence->[STRIPPED_nameDefNom] ist mit unerklärlicher Nässe bedeckt.</li>
+    <li>desc_sentence->[STRIPPED_nameDefNom] atmet schwer, ohne ersichtlichen Grund.</li>
+    <li>desc_sentence->[STRIPPED_nameDefNom] krault einen Busch.</li>
+    <li>desc_sentence->[STRIPPED_nameDefNom] hat nur einen [AdjectiveAngsty]en Ausdruck.</li>
     <li>TAKER_nameFullIndefDat->{lookup: [TAKER_nameFull]; decline_tagged; 3}</li>
+    <li>TAKER_nameDefNom->{lookup: [TAKER_nameDef]; decline_tagged; 1}</li>
     <li>STRIPPED_nameFullIndefDat->{lookup: [STRIPPED_nameFull]; decline_tagged; 3}</li>
     <li>STRIPPED_nameIndefAcc->{lookup: [STRIPPED_nameIndef]; decline_tagged; 4}</li>
+    <li>STRIPPED_nameDefNom->{lookup: [STRIPPED_nameDef]; decline_tagged; 1}</li>
     <li>STRIPPED_nameDefAcc->{lookup: [STRIPPED_nameDef]; decline_tagged; 4}</li>
     <li>der(STRIPPED_genderResolved==Male)->der</li>
     <li>der(STRIPPED_genderResolved==Female)->die</li>
@@ -650,8 +658,8 @@
     <li>desc_sentence->[Quantity_adjphrase] [Animal]s rest near the scene.</li>
   -->
   <VisitedGrave.rulePack.rulesStrings>
-    <li>tale_noun->[VISITOR_nameDef] den Grabstein von [CORPSE_nameDefDat] besuchte</li>
-    <li>tale_noun->[VISITOR_nameDef] dem Grabstein von [CORPSE_nameDefDat] einen Besuch abstattete</li>
+    <li>tale_noun->[VISITOR_nameDefNom] den Grabstein von [CORPSE_nameDefDat] besuchte</li>
+    <li>tale_noun->[VISITOR_nameDefNom] dem Grabstein von [CORPSE_nameDefDat] einen Besuch abstattete</li>
     <li>image->[VISITOR_nameFullIndefDat], wie [VISITOR_pronoun] neben den Grabstein von [CORPSE_nameFullIndefDat] steht [circumstance_group]</li>
     <li>image->[VISITOR_nameFullIndefDat], wie [VISITOR_pronoun] neben den Grabstein von [CORPSE_nameFullIndefDat] sitzt [circumstance_group]</li>
     <li>image->[VISITOR_nameFullIndefDat], wie [VISITOR_pronoun] sich an den Grabstein von [CORPSE_nameFullIndefDat] lehnt [circumstance_group]</li>
@@ -674,6 +682,7 @@
     <li>CORPSE_nameDefDat->{lookup: [CORPSE_nameDef]; decline_tagged; 3}</li>
     <li>CORPSE_nameFullIndefDat->{lookup: [CORPSE_nameFull]; decline_tagged; 3}</li>
     <li>VISITOR_nameFullIndefDat->{lookup: [VISITOR_nameFull]; decline_tagged; 3}</li>
+    <li>VISITOR_nameDefNom->{lookup: [VISITOR_nameDef]; decline_tagged; 1}</li>
     <li>VISITOR_nameDefDat->{lookup: [VISITOR_nameDef]; decline_tagged; 3}</li>
   </VisitedGrave.rulePack.rulesStrings>
   

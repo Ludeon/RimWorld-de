@@ -40,18 +40,18 @@
     <li>subject(p=8)->[TalkTopicLight]</li>
   -->
   <BuildRapport.logRulesInitiator.rulesStrings>
-    <li>r_logentry->[INITIATOR_nameDef] erzählte [RECIPIENT_nameDef] [toldastoryabout] [subject].</li>
-    <li>r_logentry->[INITIATOR_nameDef] ermunterte [RECIPIENT_nameDef], [talkabout].</li>
-    <li>r_logentry->[INITIATOR_nameDef] gab [RECIPIENT_nameDef] eine Chance, [talkabout].</li>
-    <li>r_logentry->[INITIATOR_nameDef] zeigte Interesse an [RECIPIENT_nameDef]'s [PersonalCharacteristicsDatDef].</li>
-    <li>r_logentry(p=0.25)->[INITIATOR_nameDef] zeigte Interesse an den [PersonalCharacteristicsDatDef] von [RECIPIENT_nameDef].</li>
-    <li>r_logentry(p=0.25)->[INITIATOR_nameDef] zeigte Interesse am [PersonalCharacteristicMasDatDef] von [RECIPIENT_nameDef].</li>
-    <li>r_logentry(p=0.25)->[INITIATOR_nameDef] zeigte Interesse an der [PersonalCharacteristicFemDatDef] von [RECIPIENT_nameDef].</li>
-    <li>r_logentry(p=0.25)->[INITIATOR_nameDef] zeigte Interesse am [PersonalCharacteristicNeuDatDef] von [RECIPIENT_nameDef].</li>
-    <li>r_logentry(p=0.25)->[INITIATOR_nameDef] fragte [RECIPIENT_nameDef] über [RECIPIENT_possessive]e [PersonalCharacteristicsAccDef] aus.</li>
-    <li>r_logentry(p=0.25)->[INITIATOR_nameDef] fragte [RECIPIENT_nameDef] über [RECIPIENT_possessive]en [PersonalCharacteristicMasAccDef] aus.</li>
-    <li>r_logentry(p=0.25)->[INITIATOR_nameDef] fragte [RECIPIENT_nameDef] über [RECIPIENT_possessive]e [PersonalCharacteristicFemAccDef] aus.</li>
-    <li>r_logentry(p=0.25)->[INITIATOR_nameDef] fragte [RECIPIENT_nameDef] über [RECIPIENT_possessive] [PersonalCharacteristicNeuAccDef] aus.</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] erzählte [RECIPIENT_nameDefDat] [toldastoryabout] [subject].</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] ermunterte [RECIPIENT_nameDefAcc], [talkabout].</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] gab [RECIPIENT_nameDefDat] eine Chance, [talkabout].</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] zeigte Interesse an [RECIPIENT_label]'s [PersonalCharacteristicsDatDef].</li>
+    <li>r_logentry(p=0.25)->[INITIATOR_nameDefNom] zeigte Interesse an den [PersonalCharacteristicsDatDef] von [RECIPIENT_nameDefDat].</li>
+    <li>r_logentry(p=0.25)->[INITIATOR_nameDefNom] zeigte Interesse am [PersonalCharacteristicMasDatDef] von [RECIPIENT_nameDefDat].</li>
+    <li>r_logentry(p=0.25)->[INITIATOR_nameDefNom] zeigte Interesse an der [PersonalCharacteristicFemDatDef] von [RECIPIENT_nameDefDat].</li>
+    <li>r_logentry(p=0.25)->[INITIATOR_nameDefNom] zeigte Interesse am [PersonalCharacteristicNeuDatDef] von [RECIPIENT_nameDefDat].</li>
+    <li>r_logentry(p=0.25)->[INITIATOR_nameDefNom] fragte [RECIPIENT_nameDefAcc] über [RECIPIENT_possessive]e [PersonalCharacteristicsAccDef] aus.</li>
+    <li>r_logentry(p=0.25)->[INITIATOR_nameDefNom] fragte [RECIPIENT_nameDefAcc] über [RECIPIENT_possessive]en [PersonalCharacteristicMasAccDef] aus.</li>
+    <li>r_logentry(p=0.25)->[INITIATOR_nameDefNom] fragte [RECIPIENT_nameDefAcc] über [RECIPIENT_possessive]e [PersonalCharacteristicFemAccDef] aus.</li>
+    <li>r_logentry(p=0.25)->[INITIATOR_nameDefNom] fragte [RECIPIENT_nameDefAcc] über [RECIPIENT_possessive] [PersonalCharacteristicNeuAccDef] aus.</li>
     <li>toldastoryabout(p=4)->etwas über</li>
     <li>toldastoryabout(p=2)->eine Geschichte über</li>
     <li>toldastoryabout->eine witzige Geschichte über</li>
@@ -77,6 +77,9 @@
     <li>subject(p=0.5)->[INITIATOR_possessive]e [PersonalCharacteristicFemAccDef]</li>
     <li>subject(p=0.5)->[INITIATOR_possessive] [PersonalCharacteristicNeuAccDef]</li>
     <li>subject(p=8)->[TalkTopicLightAcc]</li>
+    <li>INITIATOR_nameDefNom->{lookup: [INITIATOR_nameDef]; decline_tagged; 1}</li>
+    <li>RECIPIENT_nameDefDat->{lookup: [RECIPIENT_nameDef]; decline_tagged; 3}</li>
+    <li>RECIPIENT_nameDefAcc->{lookup: [RECIPIENT_nameDef]; decline_tagged; 4}</li>
   </BuildRapport.logRulesInitiator.rulesStrings>
   
   <!-- EN: recruit attempt -->
@@ -88,15 +91,18 @@
     <li>goodthing->free, fresh [Vegetable]s</li>
   -->
   <RecruitAttempt.logRulesInitiator.rulesStrings>
-    <li>r_logentry->[INITIATOR_nameDef] versuchte, [RECIPIENT_nameDef] zu rekrutieren.</li>
-    <li>r_logentry->[INITIATOR_nameDef] versuchte, [RECIPIENT_nameDef] für die Kolonie zu gewinnen.</li>
-    <li>r_logentry(p=2)->[INITIATOR_nameDef] versprach [RECIPIENT_nameDef] [goodthing] und fragte, ob [RECIPIENT_pronoun] der Kolonie beitreten will.</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] versuchte, [RECIPIENT_nameDefAcc] zu rekrutieren.</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] versuchte, [RECIPIENT_nameDefAcc] für die Kolonie zu gewinnen.</li>
+    <li>r_logentry(p=2)->[INITIATOR_nameDefNom] versprach [RECIPIENT_nameDefDat] [goodthing] und fragte, ob [RECIPIENT_pronoun] der Kolonie beitreten will.</li>
     <li>goodthing(p=10)->[ConceptPositive]</li>
     <li>goodthing->frische, kostenlose [Vegetables]</li>
     <li>goodthing->alles, was [RECIPIENT_pronoun] begehrt,</li>
     <li>goodthing->das Blaue vom Himmel</li>
     <li>goodthing->den Himmel auf Erden</li>
     <li>goodthing->eine tolle Zeit</li>
+    <li>INITIATOR_nameDefNom->{lookup: [INITIATOR_nameDef]; decline_tagged; 1}</li>
+    <li>RECIPIENT_nameDefDat->{lookup: [RECIPIENT_nameDef]; decline_tagged; 3}</li>
+    <li>RECIPIENT_nameDefAcc->{lookup: [RECIPIENT_nameDef]; decline_tagged; 4}</li>
   </RecruitAttempt.logRulesInitiator.rulesStrings>
   
   <!-- EN: spark jailbreak -->
@@ -112,16 +118,18 @@
     <li>freedom->self-determination</li>
   -->
   <SparkJailbreak.logRulesInitiator.rulesStrings>
-    <li>r_logentry->[INITIATOR_nameDef] sprach über die Vorzüge von [freedom] und zeigte eine Möglichkeit zur Flucht auf.</li>
-    <li>r_logentry(p=0.33)->[INITIATOR_nameDef] sprach darüber, wie schön der [TerrainFeatureMas] ist, und bot {RECIPIENT_gender ? ihm : ihr} Freiheit an.</li>
-    <li>r_logentry(p=0.33)->[INITIATOR_nameDef] sprach darüber, wie schön die [TerrainFeatureFem] ist, und bot {RECIPIENT_gender ? ihm : ihr} Freiheit an.</li>
-    <li>r_logentry(p=0.33)->[INITIATOR_nameDef] sprach darüber, wie schön das [TerrainFeatureNeu] ist, und bot {RECIPIENT_gender ? ihm : ihr} Freiheit an.</li>
-    <li>r_logentry->[INITIATOR_nameDef] zeigte [RECIPIENT_nameDef] einen Fluchtweg und versprach {RECIPIENT_gender ? ihm : ihr} [freedom].</li>
-    <li>r_logentry->[INITIATOR_nameDef] erklärte [RECIPIENT_nameDef], dass die Sicherheitsvorkehrungen lasch sind, und ermutigte [RECIPIENT_objective] zur Flucht.</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] sprach über die Vorzüge von [freedom] und zeigte eine Möglichkeit zur Flucht auf.</li>
+    <li>r_logentry(p=0.33)->[INITIATOR_nameDefNom] sprach darüber, wie schön der [TerrainFeatureMas] ist, und bot {RECIPIENT_gender ? ihm : ihr} Freiheit an.</li>
+    <li>r_logentry(p=0.33)->[INITIATOR_nameDefNom] sprach darüber, wie schön die [TerrainFeatureFem] ist, und bot {RECIPIENT_gender ? ihm : ihr} Freiheit an.</li>
+    <li>r_logentry(p=0.33)->[INITIATOR_nameDefNom] sprach darüber, wie schön das [TerrainFeatureNeu] ist, und bot {RECIPIENT_gender ? ihm : ihr} Freiheit an.</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] zeigte [RECIPIENT_nameDefDat] einen Fluchtweg und versprach {RECIPIENT_gender ? ihm : ihr} [freedom].</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] erklärte [RECIPIENT_nameDefDat], dass die Sicherheitsvorkehrungen lasch sind, und ermutigte [RECIPIENT_objective] zur Flucht.</li>
     <li>freedom->Freiheit</li>
     <li>freedom->Chancen</li>
     <li>freedom->Heimkehr</li>
     <li>freedom->Selbstbestimmung</li>
+    <li>INITIATOR_nameDefNom->{lookup: [INITIATOR_nameDef]; decline_tagged; 1}</li>
+    <li>RECIPIENT_nameDefDat->{lookup: [RECIPIENT_nameDef]; decline_tagged; 3}</li>
   </SparkJailbreak.logRulesInitiator.rulesStrings>
   
 </LanguageData>

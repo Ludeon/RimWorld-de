@@ -5,28 +5,32 @@
     <li>sent->[RECIPIENT_nameDef] was not convinced.</li>
   -->
   <Sentence_ConvertIdeoAttemptFail.rulePack.rulesStrings>
-    <li>sent->[RECIPIENT_nameDef] wurde nicht überzeugt.</li>
+    <li>sent->[RECIPIENT_nameDefNom] wurde nicht überzeugt.</li>
+    <li>RECIPIENT_nameDefNom->{lookup: [RECIPIENT_nameDef]; decline_tagged; 1}</li>
   </Sentence_ConvertIdeoAttemptFail.rulePack.rulesStrings>
   
   <!-- EN:
     <li>sent->[RECIPIENT_nameDef] was not convinced and resented the attempt.</li>
   -->
   <Sentence_ConvertIdeoAttemptFailResentment.rulePack.rulesStrings>
-    <li>sent->[RECIPIENT_nameDef] wurde nicht überzeugt und nahm den Versuch übel.</li>
+    <li>sent->[RECIPIENT_nameDefNom] wurde nicht überzeugt und nahm den Versuch übel.</li>
+    <li>RECIPIENT_nameDefNom->{lookup: [RECIPIENT_nameDef]; decline_tagged; 1}</li>
   </Sentence_ConvertIdeoAttemptFailResentment.rulePack.rulesStrings>
   
   <!-- EN:
     <li>sent->[RECIPIENT_nameDef] reacted in anger and started a social fight.</li>
   -->
   <Sentence_ConvertIdeoAttemptFailSocialFight.rulePack.rulesStrings>
-    <li>sent->[RECIPIENT_nameDef] reagierte verärgert und begann eine Prügelei.</li>
+    <li>sent->[RECIPIENT_nameDefNom] reagierte verärgert und begann eine Prügelei.</li>
+    <li>RECIPIENT_nameDefNom->{lookup: [RECIPIENT_nameDef]; decline_tagged; 1}</li>
   </Sentence_ConvertIdeoAttemptFailSocialFight.rulePack.rulesStrings>
   
   <!-- EN:
     <li>sent->[RECIPIENT_nameDef] was convinced and changed [RECIPIENT_possessive] ideoligion.</li>
   -->
   <Sentence_ConvertIdeoAttemptSuccess.rulePack.rulesStrings>
-    <li>sent->[RECIPIENT_nameDef] wurde überzeugt und änderte [RECIPIENT_possessive]e Ideologie.</li>
+    <li>sent->[RECIPIENT_nameDefNom] wurde überzeugt und änderte [RECIPIENT_possessive]e Ideologie.</li>
+    <li>RECIPIENT_nameDefNom->{lookup: [RECIPIENT_nameDef]; decline_tagged; 1}</li>
   </Sentence_ConvertIdeoAttemptSuccess.rulePack.rulesStrings>
   
 </LanguageData>

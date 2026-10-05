@@ -24,22 +24,25 @@
     <li>desc_sentence->[ENTITY_nameDef] does not appear to react to [STUDIER_nameDef]'s efforts.</li>
   -->
   <StudiedEntity.rulePack.rulesStrings>
-    <li>tale_noun->[STUDIER_nameDef] [ENTITY_nameDefAcc] studierte</li>
-    <li>image->[STUDIER_nameFull], wie [STUDIER_pronoun] [ENTITY_nameIndefAcc] vorsichtig untersucht, [circumstance_group]</li>
-    <li>image->[STUDIER_nameFull], wie [STUDIER_pronoun] Experimente an [ENTITY_nameIndefDat] durchführt, um [ENTITY_possessive]e Geheimnisse zu ergründen, [circumstance_group]</li>
-    <li>image->[STUDIER_nameFull], wie [STUDIER_pronoun] danach strebt, die Eigenschaften von [ENTITY_nameIndefDat] zu begreifen, [circumstance_group]</li>
+    <li>tale_noun->[STUDIER_nameDefNom] [ENTITY_nameDefAcc] studierte</li>
+    <li>image->[STUDIER_nameFullIndefDat], wie [STUDIER_pronoun] [ENTITY_nameIndefAcc] vorsichtig untersucht, [circumstance_group]</li>
+    <li>image->[STUDIER_nameFullIndefDat], wie [STUDIER_pronoun] Experimente an [ENTITY_nameIndefDat] durchführt, um [ENTITY_possessive]e Geheimnisse zu ergründen, [circumstance_group]</li>
+    <li>image->[STUDIER_nameFullIndefDat], wie [STUDIER_pronoun] danach strebt, die Eigenschaften von [ENTITY_nameIndefDat] zu begreifen, [circumstance_group]</li>
     <li>circumstance_phrase->mit kaum verhohlenem Abscheu in [STUDIER_possessive]en Augen</li>
     <li>circumstance_phrase->während [STUDIER_pronoun] in ein Notizbuch kritzelt</li>
     <li>circumstance_phrase->während [STUDIER_pronoun] einen alten Folianten zurate zieht</li>
     <li>desc_sentence->Im Hintergrund sind stetig laufende Bioferritkollektoren zu sehen.</li>
     <li>desc_sentence->Die tiefe Faszination des Kolonisten für [ENTITY_nameDefAcc] ist offensichtlich.</li>
-    <li>desc_sentence->[STUDIER_nameDef] ist ganz in [STUDIER_possessive] Studium von [ENTITY_nameDefDat] vertieft und bemüht sich, [ENTITY_possessive]e Geheimnisse zu lüften.</li>
-    <li>desc_sentence->[ENTITY_nameDef] wird nur durch den unermüdlichen Einsatz der elektrischen Inhibitoren an Ort und Stelle gehalten.</li>
-    <li>desc_sentence->[ENTITY_nameDef] scheint auf [STUDIER_label]'s Bemühungen nicht zu reagieren.</li>
-    <li>ENTITY_nameDefAcc->{lookup: [ENTITY_nameDef]; decline_tagged; 4}</li>
+    <li>desc_sentence->[STUDIER_nameDefNom] ist ganz in [STUDIER_possessive] Studium von [ENTITY_nameDefDat] vertieft und bemüht sich, [ENTITY_possessive]e Geheimnisse zu lüften.</li>
+    <li>desc_sentence->[ENTITY_nameDefNom] wird nur durch den unermüdlichen Einsatz der elektrischen Inhibitoren an Ort und Stelle gehalten.</li>
+    <li>desc_sentence->[ENTITY_nameDefNom] scheint auf [STUDIER_label]'s Bemühungen nicht zu reagieren.</li>
+    <li>STUDIER_nameDefNom->{lookup: [STUDIER_nameDef]; decline_tagged; 1}</li>
+    <li>STUDIER_nameFullIndefDat->{lookup: [STUDIER_nameFull]; decline_tagged; 3}</li>
+    <li>ENTITY_nameDefNom->{lookup: [ENTITY_nameDef]; decline_tagged; 1}</li>
     <li>ENTITY_nameDefDat->{lookup: [ENTITY_nameDef]; decline_tagged; 3}</li>
-    <li>ENTITY_nameIndefAcc->{lookup: [ENTITY_nameIndef]; decline_tagged; 4}</li>
+    <li>ENTITY_nameDefAcc->{lookup: [ENTITY_nameDef]; decline_tagged; 4}</li>
     <li>ENTITY_nameIndefDat->{lookup: [ENTITY_nameIndef]; decline_tagged; 3}</li>
+    <li>ENTITY_nameIndefAcc->{lookup: [ENTITY_nameIndef]; decline_tagged; 4}</li>
   </StudiedEntity.rulePack.rulesStrings>
   
 </LanguageData>

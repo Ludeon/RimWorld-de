@@ -36,10 +36,9 @@
     <li>babyGame->fingerpuppets</li>
   -->
   <BabyPlay.logRulesInitiator.rulesStrings>
-    <li>r_logentry->[INITIATOR_nameDef] brachte [RECIPIENT_nameDef] [reaction].</li>
-    <li>r_logentry->[INITIATOR_nameDef] [interaction] [RECIPIENT_nameDef].</li>
-    <li>r_logentry->[INITIATOR_nameDef] [interaction2].</li>
-    <li>r_logentry->[INITIATOR_nameDef] spielte [babyGame] mit [RECIPIENT_nameDef].</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] brachte [RECIPIENT_nameDefAcc] [reaction].</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] [interaction].</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] spielte [babyGame] mit [RECIPIENT_nameDefDat].</li>
     <li>reaction->zum Kichern</li>
     <li>reaction->zum Lächeln</li>
     <li>reaction->dazu, sich vor Freude zu winden</li>
@@ -49,24 +48,27 @@
     <li>reaction->zum Quieken</li>
     <li>reaction->zum Rülpsen</li>
     <li>reaction->dazu, [INITIATOR_objective] fasziniert anzustarren</li>
-    <li>interaction->erfreute</li>
-    <li>interaction->spielte mit</li>
-    <li>interaction->unterhielt</li>
-    <li>interaction->amüsierte</li>
-    <li>interaction->kitzelte</li>
-    <li>interaction->kuschelte mit</li>
-    <li>interaction->schnüffelte an</li>
-    <li>interaction->knuddelte</li>
-    <li>interaction2->warf [RECIPIENT_nameDef] nach oben</li>
-    <li>interaction2->sang [RECIPIENT_nameDef] etwas vor</li>
-    <li>interaction2->erzählte [RECIPIENT_nameDef] eine Geschichte</li>
-    <li>interaction2->zeigte [RECIPIENT_nameDef] einen Zaubertrick</li>
+    <li>interaction->erfreute [RECIPIENT_nameDefAcc]</li>
+    <li>interaction->spielte mit [RECIPIENT_nameDefDat]</li>
+    <li>interaction->unterhielt [RECIPIENT_nameDefAcc]</li>
+    <li>interaction->amüsierte [RECIPIENT_nameDefAcc]</li>
+    <li>interaction->kitzelte [RECIPIENT_nameDefAcc]</li>
+    <li>interaction->kuschelte mit [RECIPIENT_nameDefDat]</li>
+    <li>interaction->schnüffelte an [RECIPIENT_nameDefDat]</li>
+    <li>interaction->knuddelte [RECIPIENT_nameDefAcc]</li>
+    <li>interaction->warf [RECIPIENT_nameDefAcc] nach oben</li>
+    <li>interaction->sang [RECIPIENT_nameDefDat] etwas vor</li>
+    <li>interaction->erzählte [RECIPIENT_nameDefDat] eine Geschichte</li>
+    <li>interaction->zeigte [RECIPIENT_nameDefDat] einen Zaubertrick</li>
     <li>babyGame->Verstecken</li>
     <li>babyGame->Kuckuck</li>
     <li>babyGame->Fingersuchen</li>
     <li>babyGame->Nachmachen</li>
     <li>babyGame->Raten</li>
     <li>babyGame->Fingerpuppen</li>
+    <li>INITIATOR_nameDefNom->{lookup: [INITIATOR_nameDef]; decline_tagged; 1}</li>
+    <li>RECIPIENT_nameDefDat->{lookup: [RECIPIENT_nameDef]; decline_tagged; 3}</li>
+    <li>RECIPIENT_nameDefAcc->{lookup: [RECIPIENT_nameDef]; decline_tagged; 4}</li>
   </BabyPlay.logRulesInitiator.rulesStrings>
   
   <!-- EN: animal lesson -->
@@ -100,7 +102,7 @@
     <li>subject->kibble</li>
   -->
   <LessonAnimals.logRulesInitiator.rulesStrings>
-    <li>r_logentry(p=4)->[INITIATOR_nameDef] [teach_verb] [RECIPIENT_nameDef], wie man [article_animal] [animal_verb].</li>
+    <li>r_logentry(p=4)->[INITIATOR_nameDefNom] [teach_verb] [RECIPIENT_nameDefDat], wie man [article_animal] [animal_verb].</li>
     <li>article_animal->ein Megafaultier</li>
     <li>article_animal->eine Megaspinne</li>
     <li>article_animal->einen Thrumbo</li>
@@ -126,6 +128,8 @@
     <li>subject->die Reptilien</li>
     <li>subject->die Skaria-Krankheit</li>
     <li>subject->das Trockenfutter</li>
+    <li>INITIATOR_nameDefNom->{lookup: [INITIATOR_nameDef]; decline_tagged; 1}</li>
+    <li>RECIPIENT_nameDefDat->{lookup: [RECIPIENT_nameDef]; decline_tagged; 3}</li>
   </LessonAnimals.logRulesInitiator.rulesStrings>
   
   <!-- EN: art lesson -->
@@ -342,7 +346,9 @@
     <li>r_logentry->[INITIATOR_nameDef] taught a lesson to [RECIPIENT_nameDef]</li>
   -->
   <LessonGeneric.logRulesInitiator.rulesStrings>
-    <li>r_logentry->[INITIATOR_nameDef] brachte [RECIPIENT_nameDef] etwas bei.</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] brachte [RECIPIENT_nameDefDat] etwas bei.</li>
+    <li>INITIATOR_nameDefNom->{lookup: [INITIATOR_nameDef]; decline_tagged; 1}</li>
+    <li>RECIPIENT_nameDefDat->{lookup: [RECIPIENT_nameDef]; decline_tagged; 3}</li>
   </LessonGeneric.logRulesInitiator.rulesStrings>
   
   <!-- EN: intellectual lesson -->
@@ -413,7 +419,7 @@
     <li>subject->sterilization methods</li>
   -->
   <LessonMedicine.logRulesInitiator.rulesStrings>
-    <li>r_logentry(p=5)->[INITIATOR_nameDef] [teach_verb] [RECIPIENT_nameDef], wie man [hediff] [medical_verb].</li>
+    <li>r_logentry(p=5)->[INITIATOR_nameDefNom] [teach_verb] [RECIPIENT_nameDefDat], wie man [hediff] [medical_verb].</li>
     <li>article_tool_acc->einen Medizinkasten</li>
     <li>article_tool_acc->einen Verband</li>
     <li>article_tool_acc->eine Spritze</li>
@@ -452,6 +458,8 @@
     <li>subject->chirurgische Eingriffe</li>
     <li>subject->das Einfühlungsvermögen gegenüber Patienten</li>
     <li>subject->Sterilisationsmethoden</li>
+    <li>INITIATOR_nameDefNom->{lookup: [INITIATOR_nameDef]; decline_tagged; 1}</li>
+    <li>RECIPIENT_nameDefDat->{lookup: [RECIPIENT_nameDef]; decline_tagged; 3}</li>
   </LessonMedicine.logRulesInitiator.rulesStrings>
   
   <!-- EN: melee lesson -->
@@ -769,25 +777,25 @@
     <li>planType->enjoying endless life</li>
   -->
   <SanguophageChat.logRulesInitiator.rulesStrings>
-    <li>r_logentry->[INITIATOR_nameDef] und [RECIPIENT_nameDef] sprachen über [subject].</li>
-    <li>r_logentry->[INITIATOR_nameDef] sprach mit [RECIPIENT_nameDef] über [subject].</li>
-    <li>r_logentry->[INITIATOR_nameDef] und [RECIPIENT_nameDef] unterhielten sich über [subject].</li>
-    <li>r_logentry->[INITIATOR_nameDef] unterhielt sich mit [RECIPIENT_nameDef] über [subject].</li>
-    <li>r_logentry->[INITIATOR_nameDef] und [RECIPIENT_nameDef] flüsterten über [subject].</li>
-    <li>r_logentry->[INITIATOR_nameDef] flüsterte mit [RECIPIENT_nameDef] über [subject].</li>
-    <li>r_logentry(p=0.5)->[INITIATOR_nameDef] und [RECIPIENT_nameDef] sprachen [adverb] über [subject].</li>
-    <li>r_logentry(p=0.5)->[INITIATOR_nameDef] sprach [adverb] mit [RECIPIENT_nameDef] über [subject].</li>
-    <li>r_logentry(p=0.5)->[INITIATOR_nameDef] und [RECIPIENT_nameDef] unterhielten sich [adverb] über [subject].</li>
-    <li>r_logentry(p=0.5)->[INITIATOR_nameDef] unterhielt sich [adverb] mit [RECIPIENT_nameDef] über [subject].</li>
-    <li>r_logentry(p=0.5)->[INITIATOR_nameDef] und [RECIPIENT_nameDef] flüsterten [adverb] über [subject].</li>
-    <li>r_logentry(p=0.5)->[INITIATOR_nameDef] flüsterte [adverb] mit [RECIPIENT_nameDef] über [subject].</li>
-    <li>r_logentry->[INITIATOR_nameDef] und [RECIPIENT_nameDef] zeigten ein gemeinsames Interesse an [subject].</li>
-    <li>r_logentry->[INITIATOR_nameDef] und [RECIPIENT_nameDef] diskutierten über [subject].</li>
-    <li>r_logentry->[INITIATOR_nameDef] diskutierte mit [RECIPIENT_nameDef] über [subject].</li>
-    <li>r_logentry->[INITIATOR_nameDef] und [RECIPIENT_nameDef] stritten sich über [subject].</li>
-    <li>r_logentry->[INITIATOR_nameDef] stritt sich mit [RECIPIENT_nameDef] über [subject].</li>
-    <li>r_logentry->[INITIATOR_nameDef] und [RECIPIENT_nameDef] erzählten Geschichten über [subject].</li>
-    <li>r_logentry->[INITIATOR_nameDef] erzählte [RECIPIENT_nameDef] eine Geschichte über [subject].</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] und [RECIPIENT_nameDefNom] sprachen über [subject].</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] sprach mit [RECIPIENT_nameDefDat] über [subject].</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] und [RECIPIENT_nameDefNom] unterhielten sich über [subject].</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] unterhielt sich mit [RECIPIENT_nameDefDat] über [subject].</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] und [RECIPIENT_nameDefNom] flüsterten über [subject].</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] flüsterte mit [RECIPIENT_nameDefDat] über [subject].</li>
+    <li>r_logentry(p=0.5)->[INITIATOR_nameDefNom] und [RECIPIENT_nameDefNom] sprachen [adverb] über [subject].</li>
+    <li>r_logentry(p=0.5)->[INITIATOR_nameDefNom] sprach [adverb] mit [RECIPIENT_nameDefDat] über [subject].</li>
+    <li>r_logentry(p=0.5)->[INITIATOR_nameDefNom] und [RECIPIENT_nameDefNom] unterhielten sich [adverb] über [subject].</li>
+    <li>r_logentry(p=0.5)->[INITIATOR_nameDefNom] unterhielt sich [adverb] mit [RECIPIENT_nameDefDat] über [subject].</li>
+    <li>r_logentry(p=0.5)->[INITIATOR_nameDefNom] und [RECIPIENT_nameDefNom] flüsterten [adverb] über [subject].</li>
+    <li>r_logentry(p=0.5)->[INITIATOR_nameDefNom] flüsterte [adverb] mit [RECIPIENT_nameDefDat] über [subject].</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] und [RECIPIENT_nameDefNom] zeigten ein gemeinsames Interesse an [subject].</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] und [RECIPIENT_nameDefNom] diskutierten über [subject].</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] diskutierte mit [RECIPIENT_nameDefDat] über [subject].</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] und [RECIPIENT_nameDefNom] stritten sich über [subject].</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] stritt sich mit [RECIPIENT_nameDefDat] über [subject].</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] und [RECIPIENT_nameDefNom] erzählten Geschichten über [subject].</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] erzählte [RECIPIENT_nameDefDat] eine Geschichte über [subject].</li>
     <li>adverb->freundlich</li>
     <li>adverb->leise</li>
     <li>adverb->sanft</li>
@@ -843,6 +851,9 @@
     <li>planType->, andere Menschen zu manipulieren</li>
     <li>planType-> zur Vernichtung von Sanguophagen-Jägern</li>
     <li>planType->, das endlose Leben zu genießen</li>
+    <li>INITIATOR_nameDefNom->{lookup: [INITIATOR_nameDef]; decline_tagged; 1}</li>
+    <li>RECIPIENT_nameDefNom->{lookup: [RECIPIENT_nameDef]; decline_tagged; 1}</li>
+    <li>RECIPIENT_nameDefDat->{lookup: [RECIPIENT_nameDef]; decline_tagged; 3}</li>
   </SanguophageChat.logRulesInitiator.rulesStrings>
   
 </LanguageData>

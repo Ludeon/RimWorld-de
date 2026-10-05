@@ -8,8 +8,8 @@
     <li>r_logentry->[INITIATOR_nameDef] [rambled] [darkSpeechAdverb] about [subjectInsane].</li>
   -->
   <CreepyWords.logRulesInitiator.rulesStrings>
-    <li>r_logentry->[INITIATOR_nameDef] [rambled] über [subjectInsane].</li>
-    <li>r_logentry->[INITIATOR_nameDef] [rambled] [darkSpeechAdverb] über [subjectInsane].</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] [rambled] über [subjectInsane].</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] [rambled] [darkSpeechAdverb] über [subjectInsane].</li>
   </CreepyWords.logRulesInitiator.rulesStrings>
   
   <!-- EN: strange chat -->
@@ -47,8 +47,8 @@
     <li>talkingAbout->going into detail about</li>
   -->
   <DisturbingChat.logRulesInitiator.rulesStrings>
-    <li>r_logentry->[INITIATOR_nameDef] [disturbed] [RECIPIENT_nameDef], als [INITIATOR_pronoun] [talkingAboutSubject].</li>
-    <li>r_logentry->[INITIATOR_nameDef] [spokeTo] [RECIPIENT_nameDef] über [subjectDisturbing].</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] [disturbed] [RECIPIENT_nameDefAcc], als [INITIATOR_pronoun] [talkingAboutSubject].</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] [spokeTo] [RECIPIENT_nameDefDat] über [subjectDisturbing].</li>
     <li>spokeTo->sprach [darkSpeechAdverb] mit</li>
     <li>spokeTo->murmelte [darkSpeechAdverb] zu</li>
     <li>spokeTo->stammelte [darkSpeechAdverb] zu</li>
@@ -86,8 +86,8 @@
     <li>r_logentry->[INITIATOR_nameDef] [rambled] [darkSpeechAdverb] about [subjectInsane].</li>
   -->
   <InhumanRambling.logRulesInitiator.rulesStrings>
-    <li>r_logentry->[INITIATOR_nameDef] [rambled] über [subjectInsane].</li>
-    <li>r_logentry->[INITIATOR_nameDef] [rambled] [darkSpeechAdverb] über [subjectInsane].</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] [rambled] über [subjectInsane].</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] [rambled] [darkSpeechAdverb] über [subjectInsane].</li>
   </InhumanRambling.logRulesInitiator.rulesStrings>
   
   <!-- EN: interrogate identity -->
@@ -134,19 +134,19 @@
     <li>r_logentry->[INITIATOR_nameDef] [askedAbout] [identityTopic].</li>
   -->
   <InterrogateIdentity.logRulesInitiator.rulesStrings>
-    <li>askedAbout->befragte [RECIPIENT_nameDef] über</li>
-    <li>askedAbout->verhörte [RECIPIENT_nameDef] über</li>
-    <li>askedAbout->drängte [RECIPIENT_nameDef] zu Details über</li>
-    <li>askedAbout->erkundigte sich bei [RECIPIENT_nameDef] über</li>
-    <li>askedAbout->nahm [RECIPIENT_nameDef] in die Mangel und befragte [RECIPIENT_objective] über</li>
-    <li>askedAbout->forderte von [RECIPIENT_nameDef] Antworten über</li>
-    <li>askedAbout->stellte [RECIPIENT_nameDef] knifflige Fragen über</li>
-    <li>askedAbout->überrumpelte [RECIPIENT_nameDef] mit Fragen über</li>
-    <li>askedAbout->schrie [RECIPIENT_nameDef] an und verlangte Informationen über</li>
-    <li>askedAbout->bombardierte [RECIPIENT_nameDef] mit Fragen über</li>
-    <li>askedAbout->setzte [RECIPIENT_nameDef] arg zu und befragte [RECIPIENT_objective] über</li>
-    <li>askedAbout->nahm [RECIPIENT_nameDef] in die Zange und befragte [RECIPIENT_objective] über</li>
-    <li>askedAbout->machte [RECIPIENT_nameDef] die Hölle heiß und verlangte Informationen über</li>
+    <li>askedAbout->befragte [RECIPIENT_nameDefAcc] über</li>
+    <li>askedAbout->verhörte [RECIPIENT_nameDefAcc] über</li>
+    <li>askedAbout->drängte [RECIPIENT_nameDefAcc] zu Details über</li>
+    <li>askedAbout->erkundigte sich bei [RECIPIENT_nameDefDat] über</li>
+    <li>askedAbout->nahm [RECIPIENT_nameDefAcc] in die Mangel und befragte [RECIPIENT_objective] über</li>
+    <li>askedAbout->forderte von [RECIPIENT_nameDefDat] Antworten über</li>
+    <li>askedAbout->stellte [RECIPIENT_nameDefAcc] knifflige Fragen über</li>
+    <li>askedAbout->überrumpelte [RECIPIENT_nameDefAcc] mit Fragen über</li>
+    <li>askedAbout->schrie [RECIPIENT_nameDefAcc] an und verlangte Informationen über</li>
+    <li>askedAbout->bombardierte [RECIPIENT_nameDefAcc] mit Fragen über</li>
+    <li>askedAbout->setzte [RECIPIENT_nameDefDat] arg zu und befragte [RECIPIENT_objective] über</li>
+    <li>askedAbout->nahm [RECIPIENT_nameDefAcc] in die Zange und befragte [RECIPIENT_objective] über</li>
+    <li>askedAbout->machte [RECIPIENT_nameDefDat] die Hölle heiß und verlangte Informationen über</li>
     <li>identityTopic->[RECIPIENT_possessive]e frühere Arbeit</li>
     <li>identityTopic->[RECIPIENT_possessive]e bisherigen Beziehungen zu anderen Fraktionen</li>
     <li>identityTopic->[RECIPIENT_possessive]e Geburt</li>
@@ -172,7 +172,7 @@
     <li>identityTopic->[RECIPIENT_possessive]e Kindheitserlebnisse</li>
     <li>identityTopic->[RECIPIENT_possessive]e Erfahrungen in der Schule</li>
     <li>identityTopic->kulturelle Erfahrungen</li>
-    <li>r_logentry->[INITIATOR_nameDef] [askedAbout] [identityTopic].</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] [askedAbout] [identityTopic].</li>
   </InterrogateIdentity.logRulesInitiator.rulesStrings>
   
   <!-- EN: occult teaching -->
@@ -185,11 +185,11 @@
     <li>r_logentry->[INITIATOR_nameDef] taught a lesson on [subjectDarkStudy].</li>
   -->
   <OccultTeaching.logRulesInitiator.rulesStrings>
-    <li>r_logentry->[INITIATOR_nameDef] erklärte [RECIPIENT_nameDef] [INITIATOR_possessive]e Theorien über [subjectDarkStudy].</li>
-    <li>r_logentry->[INITIATOR_nameDef] teilte [INITIATOR_possessive]e Ideen über [subjectDarkStudy] mit [RECIPIENT_nameDef].</li>
-    <li>r_logentry->[INITIATOR_nameDef] sprach über [subjectDarkStudy].</li>
-    <li>r_logentry->[INITIATOR_nameDef] lehrte [INITIATOR_possessive]e Theorien über [subjectDarkStudy].</li>
-    <li>r_logentry->[INITIATOR_nameDef] hielt eine Lektion über [subjectDarkStudy].</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] erklärte [RECIPIENT_nameDefDat] [INITIATOR_possessive]e Theorien über [subjectDarkStudy].</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] teilte [INITIATOR_possessive]e Ideen über [subjectDarkStudy] mit [RECIPIENT_nameDefDat].</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] sprach über [subjectDarkStudy].</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] lehrte [INITIATOR_possessive]e Theorien über [subjectDarkStudy].</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] hielt eine Lektion über [subjectDarkStudy].</li>
   </OccultTeaching.logRulesInitiator.rulesStrings>
   
   <!-- EN: prisoner study -->
@@ -200,9 +200,9 @@
     <li>r_logentry->[RECIPIENT_nameDef] mumbled about [subjectInsane].</li>
   -->
   <PrisonerStudyAnomaly.logRulesInitiator.rulesStrings>
-    <li>r_logentry->[INITIATOR_nameDef] befragte [RECIPIENT_nameDef] über [subjectDarkStudy].</li>
-    <li>r_logentry->[INITIATOR_nameDef] erkundigte sich über [subjectDarkStudy].</li>
-    <li>r_logentry->[RECIPIENT_nameDef] murmelte etwas über [subjectInsane].</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] befragte [RECIPIENT_nameDefAcc] über [subjectDarkStudy].</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] erkundigte sich über [subjectDarkStudy].</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] murmelte etwas über [subjectInsane].</li>
   </PrisonerStudyAnomaly.logRulesInitiator.rulesStrings>
   
 </LanguageData>

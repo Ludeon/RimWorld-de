@@ -41,11 +41,11 @@
     <li>desc_sentence->[KILLER_nameDef] looks triumphant.</li>
   -->
   <Downed.rulePack.rulesStrings>
-    <li>tale_noun->[KILLER_nameDef] [VICTIM_nameDefAcc] [wound_name_past]</li>
-    <li>tale_noun->[KILLER_nameDef] [VICTIM_nameDefAcc] mit [WEAPON_indefinite_dat] [wound_name_past]</li>
-    <li>tale_noun->[VICTIM_nameDef] von [KILLER_nameDefDat] [wound_name_past2] wurde</li>
-    <li>tale_noun->[VICTIM_nameDef] von [KILLER_nameDefDat] mit [WEAPON_indefinite_dat] [wound_name_past2] wurde</li>
-    <li>tale_noun->[VICTIM_nameDef] [wound_name_past2] wurde</li>
+    <li>tale_noun->[KILLER_nameDefNom] [VICTIM_nameDefAcc] [wound_name_past]</li>
+    <li>tale_noun->[KILLER_nameDefNom] [VICTIM_nameDefAcc] mit [WEAPON_indefinite_dat] [wound_name_past]</li>
+    <li>tale_noun->[VICTIM_nameDefNom] von [KILLER_nameDefDat] [wound_name_past2] wurde</li>
+    <li>tale_noun->[VICTIM_nameDefNom] von [KILLER_nameDefDat] mit [WEAPON_indefinite_dat] [wound_name_past2] wurde</li>
+    <li>tale_noun->[VICTIM_nameDefNom] [wound_name_past2] wurde</li>
     <li>image->[VICTIM_nameFullIndefDat], wie [VICTIM_pronoun] von [KILLER_nameFullIndefDat] [with_weapon_optional] [wound_name_past2] wird</li>
     <li>image->[KILLER_nameFullIndefDat], wie [KILLER_pronoun] [VICTIM_nameIndefAcc] [with_weapon_optional] [wound_name_present]</li>
     <li>image->[KILLER_nameFullIndefDat], wie [KILLER_pronoun] auf brutale Weise [VICTIM_nameIndefAcc] [with_weapon_optional] [wound_name_present]</li>
@@ -73,17 +73,19 @@
     <li>circumstance_phrase->auf feige, halbherzige Weise</li>
     <li>desc_sentence->[Quantity_adjphrase] [Animals] schauen zu.</li>
     <li>desc_sentence->Ein [PersonJob] [side_position] schaut stillschweigend zu.</li>
-    <li>desc_sentence->[VICTIM_nameDef] sieht [AdjectiveAngsty] aus.</li>
-    <li>desc_sentence->[VICTIM_nameDef] hat die Augen geschlossen.</li>
-    <li>desc_sentence->[KILLER_nameDef] fletscht die Zähne.</li>
-    <li>desc_sentence->[KILLER_nameDef] scheint zufrieden zu sein.</li>
-    <li>desc_sentence->[KILLER_nameDef] scheint Reue zu empfinden.</li>
-    <li>desc_sentence->[KILLER_nameDef] scheint zufrieden mit der Situation zu sein.</li>
-    <li>desc_sentence->[KILLER_nameDef] freut sich über den Sieg.</li>
+    <li>desc_sentence->[VICTIM_nameDefNom] sieht [AdjectiveAngsty] aus.</li>
+    <li>desc_sentence->[VICTIM_nameDefNom] hat die Augen geschlossen.</li>
+    <li>desc_sentence->[KILLER_nameDefNom] fletscht die Zähne.</li>
+    <li>desc_sentence->[KILLER_nameDefNom] scheint zufrieden zu sein.</li>
+    <li>desc_sentence->[KILLER_nameDefNom] scheint Reue zu empfinden.</li>
+    <li>desc_sentence->[KILLER_nameDefNom] scheint zufrieden mit der Situation zu sein.</li>
+    <li>desc_sentence->[KILLER_nameDefNom] freut sich über den Sieg.</li>
     <li>KILLER_nameFullIndefDat->{lookup: [KILLER_nameFull]; decline_tagged; 3}</li>
+    <li>KILLER_nameDefNom->{lookup: [KILLER_nameDef]; decline_tagged; 1}</li>
     <li>KILLER_nameDefDat->{lookup: [KILLER_nameDef]; decline_tagged; 3}</li>
     <li>VICTIM_nameFullIndefDat->{lookup: [VICTIM_nameFull]; decline_tagged; 3}</li>
     <li>VICTIM_nameIndefAcc->{lookup: [VICTIM_nameIndef]; decline_tagged; 4}</li>
+    <li>VICTIM_nameDefNom->{lookup: [VICTIM_nameDef]; decline_tagged; 1}</li>
     <li>VICTIM_nameDefAcc->{lookup: [VICTIM_nameDef]; decline_tagged; 4}</li>
   </Downed.rulePack.rulesStrings>
   
@@ -107,7 +109,7 @@
     <li>desc_sentence->The scene takes place inside a newly-built [Community].</li>
   -->
   <Exhausted.rulePack.rulesStrings>
-    <li>tale_noun->[PAWN_nameDef] vor Erschöpfung zusammenbrach</li>
+    <li>tale_noun->[PAWN_nameDefNom] vor Erschöpfung zusammenbrach</li>
     <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] auf dem Boden zusammenbricht</li>
     <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] auf dem Boden liegt</li>
     <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] im Bett liegt</li>
@@ -146,7 +148,7 @@
     <li>desc_sentence->The scene takes place inside a newly-built [Community].</li>
   -->
   <GaveBirth.rulePack.rulesStrings>
-    <li>tale_noun->[MOTHER_nameDef] [CHILD_nameIndefAcc] zur Welt brachte</li>
+    <li>tale_noun->[MOTHER_nameDefNom] [CHILD_nameIndefAcc] zur Welt brachte</li>
     <li>image->[MOTHER_nameFullIndefDat], wie [MOTHER_pronoun] [MOTHER_possessive] [baby], [circumstance_group], zur Welt brachte</li>
     <li>image->[MOTHER_nameFullIndefDat], wie [MOTHER_pronoun] [MOTHER_possessive] [baby], [circumstance_group], hält</li>
     <li>image->[MOTHER_nameFullIndefDat], wie [MOTHER_pronoun] neben [MOTHER_possessive]em [baby], [circumstance_group], im Bett liegt</li>
@@ -165,6 +167,7 @@
     <li>desc_sentence(p=0.5)->Die Szene spielt in einer frisch gegründeten [CommunityFemDat].</li>
     <li>desc_sentence(p=0.5)->Die Szene spielt in einem frisch gegründeten [CommunityNeuDat].</li>
     <li>MOTHER_nameFullIndefDat->{lookup: [MOTHER_nameFull]; decline_tagged; 3}</li>
+    <li>MOTHER_nameDefNom->{lookup: [MOTHER_nameDef]; decline_tagged; 1}</li>
     <li>CHILD_nameIndefAcc->{lookup: [CHILD_nameIndef]; decline_tagged; 4}</li>
   </GaveBirth.rulePack.rulesStrings>
   
@@ -191,8 +194,8 @@
     <li>desc_sentence->[Quantity_adjphrase] dying [Animal]s lay on the ground.</li>
   -->
   <HeatstrokeRevealed.rulePack.rulesStrings>
-    <li>tale_noun->[PAWN_nameDef] ein Hitzeschlag bekam</li>
-    <li>tale_noun->[PAWN_nameDef] überhitzte</li>
+    <li>tale_noun->[PAWN_nameDefNom] ein Hitzeschlag bekam</li>
+    <li>tale_noun->[PAWN_nameDefNom] überhitzte</li>
     <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] durch den Sand stapft</li>
     <li>image(p=0.33)->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] Schutz im Schatten einer [TerrainFeatureFemGen] sucht</li>
     <li>image(p=0.33)->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] Schutz im Schatten eines [TerrainFeatureMasGen] sucht</li>
@@ -235,7 +238,7 @@
     <li>desc_sentence->[Quantity_adjphrase] dying [Animal]s lay on the ground.</li>
   -->
   <HypothermiaRevealed.rulePack.rulesStrings>
-    <li>tale_noun->[PAWN_nameDef] eine Hypothermie bekam</li>
+    <li>tale_noun->[PAWN_nameDefNom] eine Hypothermie bekam</li>
     <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] durch den Schnee stapft</li>
     <li>image(p=0.33)->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] Schutz bei einer [TerrainFeatureFemDat] sucht</li>
     <li>image(p=0.33)->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] Schutz bei einem [TerrainFeatureMasDat] sucht</li>
@@ -282,7 +285,7 @@
     <li>desc_sentence->[Quantity_adjphrase] dying [Animal]s lay on the ground.</li>
   -->
   <IllnessRevealed.rulePack.rulesStrings>
-    <li>tale_noun->[PAWN_nameDef] von [ILLNESS_label] heimgesucht wurde</li>
+    <li>tale_noun->[PAWN_nameDefNom] von [ILLNESS_label] heimgesucht wurde</li>
     <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] durch ein Feld taumelt</li>
     <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] auf dem Boden liegt</li>
     <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] im Bett liegt</li>
@@ -337,8 +340,8 @@
     <li>desc_sentence->[KILLER_nameDef] looks triumphant.</li>
   -->
   <KilledCapacity.rulePack.rulesStrings>
-    <li>tale_noun->[KILLER_nameDef] [VICTIM_nameDefAcc] [wound_name_past]</li>
-    <li>tale_noun->[KILLER_nameDef] [VICTIM_nameDefAcc] mit [WEAPON_indefinite_dat] [wound_name_past]</li>
+    <li>tale_noun->[KILLER_nameDefNom] [VICTIM_nameDefAcc] [wound_name_past]</li>
+    <li>tale_noun->[KILLER_nameDefNom] [VICTIM_nameDefAcc] mit [WEAPON_indefinite_dat] [wound_name_past]</li>
     <li>image->[KILLER_nameFullIndefDat], wie [KILLER_pronoun] die {lookup: Körperfunktion '[CAPACITY_label]'; capacity} von [VICTIM_nameFullIndefDat] [with_weapon_optional] [cap_removal]</li>
     <li>image->[KILLER_nameFullIndefDat], wie [KILLER_pronoun] [VICTIM_nameIndefAcc] [with_weapon_optional] [wound_name_present], indem [KILLER_pronoun] [VICTIM_possessive]e {lookup: Körperfunktion '[CAPACITY_label]'; capacity} [cap_removal]</li>
     <li>cap_removal->zerstört</li>
@@ -359,15 +362,17 @@
     <li>circumstance_phrase->ohne Emotion und Ausdruck</li>
     <li>desc_sentence->[Quantity_adjphrase] [Animals] schauen zu.</li>
     <li>desc_sentence->Ein [PersonJob] [side_position] schaut stillschweigend zu.</li>
-    <li>desc_sentence->[VICTIM_nameDef] sieht [AdjectiveAngsty] aus.</li>
-    <li>desc_sentence->[VICTIM_nameDef] hat die Augen geschlossen.</li>
-    <li>desc_sentence->[KILLER_nameDef] scheint zufrieden zu sein.</li>
-    <li>desc_sentence->[KILLER_nameDef] scheint Reue zu empfinden.</li>
-    <li>desc_sentence->[KILLER_nameDef] scheint zufrieden mit der Situation zu sein.</li>
-    <li>desc_sentence->[KILLER_nameDef] freut sich über den Sieg.</li>
+    <li>desc_sentence->[VICTIM_nameDefNom] sieht [AdjectiveAngsty] aus.</li>
+    <li>desc_sentence->[VICTIM_nameDefNom] hat die Augen geschlossen.</li>
+    <li>desc_sentence->[KILLER_nameDefNom] scheint zufrieden zu sein.</li>
+    <li>desc_sentence->[KILLER_nameDefNom] scheint Reue zu empfinden.</li>
+    <li>desc_sentence->[KILLER_nameDefNom] scheint zufrieden mit der Situation zu sein.</li>
+    <li>desc_sentence->[KILLER_nameDefNom] freut sich über den Sieg.</li>
     <li>KILLER_nameFullIndefDat->{lookup: [KILLER_nameFull]; decline_tagged; 3}</li>
+    <li>KILLER_nameDefNom->{lookup: [KILLER_nameDef]; decline_tagged; 1}</li>
     <li>VICTIM_nameFullIndefDat->{lookup: [VICTIM_nameFull]; decline_tagged; 3}</li>
     <li>VICTIM_nameIndefAcc->{lookup: [VICTIM_nameIndef]; decline_tagged; 4}</li>
+    <li>VICTIM_nameDefNom->{lookup: [VICTIM_nameDef]; decline_tagged; 1}</li>
     <li>VICTIM_nameDefAcc->{lookup: [VICTIM_nameDef]; decline_tagged; 4}</li>
   </KilledCapacity.rulePack.rulesStrings>
   
@@ -409,10 +414,10 @@
     <li>desc_sentence->[KILLER_nameDef] looks triumphant.</li>
   -->
   <KilledLongRange.rulePack.rulesStrings>
-    <li>tale_noun->[KILLER_nameDef] [VICTIM_nameDefAcc] aus extremer Entfernung [wound_name_past]</li>
-    <li>tale_noun->[KILLER_nameDef] [VICTIM_nameDefAcc] aus extremer Entfernung mit [WEAPON_indefinite_dat] [wound_name_past]</li>
-    <li>tale_noun->[VICTIM_nameDef] von [KILLER_nameDefDat] aus großer Entfernung [wound_name_past_2] wurde</li>
-    <li>tale_noun->[VICTIM_nameDef] von [KILLER_nameDefDat] aus großer Entfernung mit [WEAPON_indefinite_dat] [wound_name_past_2] wurde</li>
+    <li>tale_noun->[KILLER_nameDefNom] [VICTIM_nameDefAcc] aus extremer Entfernung [wound_name_past]</li>
+    <li>tale_noun->[KILLER_nameDefNom] [VICTIM_nameDefAcc] aus extremer Entfernung mit [WEAPON_indefinite_dat] [wound_name_past]</li>
+    <li>tale_noun->[VICTIM_nameDefNom] von [KILLER_nameDefDat] aus großer Entfernung [wound_name_past_2] wurde</li>
+    <li>tale_noun->[VICTIM_nameDefNom] von [KILLER_nameDefDat] aus großer Entfernung mit [WEAPON_indefinite_dat] [wound_name_past_2] wurde</li>
     <li>image->[KILLER_nameFullIndefDat], wie [KILLER_pronoun] [with_weapon_optional] auf [VICTIM_nameIndefAcc] zielt</li>
     <li>image->[KILLER_nameFullIndefDat], wie [KILLER_pronoun] [VICTIM_nameIndefAcc] [with_weapon_optional] [wound_name_present]</li>
     <li>image->[KILLER_nameFullIndefDat], wie [KILLER_pronoun] eiskalt [VICTIM_nameIndefAcc] [with_weapon_optional] [wound_name_present]</li>
@@ -438,17 +443,19 @@
     <li>circumstance_phrase->auf feige, halbherzige Weise</li>
     <li>desc_sentence->[Quantity_adjphrase] [Animals] schauen zu.</li>
     <li>desc_sentence->Ein [PersonJob] [side_position] schaut stillschweigend zu.</li>
-    <li>desc_sentence->[VICTIM_nameDef] sieht [AdjectiveAngsty] aus.</li>
-    <li>desc_sentence->[VICTIM_nameDef] hat die Augen geschlossen.</li>
-    <li>desc_sentence->[VICTIM_nameDef] ist mit [GoreDat] bedeckt.</li>
-    <li>desc_sentence->[KILLER_nameDef] fletscht die Zähne.</li>
-    <li>desc_sentence->[KILLER_nameDef] scheint zufrieden zu sein.</li>
-    <li>desc_sentence->[KILLER_nameDef] scheint Reue zu empfinden.</li>
-    <li>desc_sentence->[KILLER_nameDef] scheint zufrieden mit der Situation zu sein.</li>
-    <li>desc_sentence->[KILLER_nameDef] freut sich über den Sieg.</li>
+    <li>desc_sentence->[VICTIM_nameDefNom] sieht [AdjectiveAngsty] aus.</li>
+    <li>desc_sentence->[VICTIM_nameDefNom] hat die Augen geschlossen.</li>
+    <li>desc_sentence->[VICTIM_nameDefNom] ist mit [GoreDat] bedeckt.</li>
+    <li>desc_sentence->[KILLER_nameDefNom] fletscht die Zähne.</li>
+    <li>desc_sentence->[KILLER_nameDefNom] scheint zufrieden zu sein.</li>
+    <li>desc_sentence->[KILLER_nameDefNom] scheint Reue zu empfinden.</li>
+    <li>desc_sentence->[KILLER_nameDefNom] scheint zufrieden mit der Situation zu sein.</li>
+    <li>desc_sentence->[KILLER_nameDefNom] freut sich über den Sieg.</li>
     <li>KILLER_nameFullIndefDat->{lookup: [KILLER_nameFull]; decline_tagged; 3}</li>
+    <li>KILLER_nameDefNom->{lookup: [KILLER_nameDef]; decline_tagged; 1}</li>
     <li>KILLER_nameDefDat->{lookup: [KILLER_nameDef]; decline_tagged; 3}</li>
     <li>VICTIM_nameIndefAcc->{lookup: [VICTIM_nameIndef]; decline_tagged; 4}</li>
+    <li>VICTIM_nameDefNom->{lookup: [VICTIM_nameDef]; decline_tagged; 1}</li>
     <li>VICTIM_nameDefAcc->{lookup: [VICTIM_nameDef]; decline_tagged; 4}</li>
   </KilledLongRange.rulePack.rulesStrings>
   
@@ -493,10 +500,10 @@
     <li>desc_sentence->[KILLER_nameDef] is glowing with a heroic aura.</li>
   -->
   <KilledMajorThreat.rulePack.rulesStrings>
-    <li>tale_noun->[KILLER_nameDef] [VICTIM_nameDefAcc] [wound_name_past]</li>
-    <li>tale_noun->[KILLER_nameDef] [VICTIM_nameDefAcc] mit [WEAPON_indefinite_dat] [wound_name_past]</li>
-    <li>tale_noun->[VICTIM_nameDef] von [KILLER_nameDefDat] [wound_name_past_2] wurde</li>
-    <li>tale_noun->[VICTIM_nameDef] von [KILLER_nameDefDat] mit [WEAPON_indefinite_dat] [wound_name_past_2] wurde</li>
+    <li>tale_noun->[KILLER_nameDefNom] [VICTIM_nameDefAcc] [wound_name_past]</li>
+    <li>tale_noun->[KILLER_nameDefNom] [VICTIM_nameDefAcc] mit [WEAPON_indefinite_dat] [wound_name_past]</li>
+    <li>tale_noun->[VICTIM_nameDefNom] von [KILLER_nameDefDat] [wound_name_past_2] wurde</li>
+    <li>tale_noun->[VICTIM_nameDefNom] von [KILLER_nameDefDat] mit [WEAPON_indefinite_dat] [wound_name_past_2] wurde</li>
     <li>image->[VICTIM_nameFullIndefDat], wie [VICTIM_pronoun] von [KILLER_nameFullIndefDat] [with_weapon_optional] [wound_name_past_2] wird</li>
     <li>image->[KILLER_nameFullIndefDat], wie [KILLER_pronoun] [VICTIM_nameIndefAcc] [with_weapon_optional] [wound_name_present]</li>
     <li>image->[KILLER_nameFullIndefDat], wie [KILLER_pronoun] auf brutale Weise [VICTIM_nameIndefAcc] [with_weapon_optional] [wound_name_present]</li>
@@ -519,26 +526,28 @@
     <li>circumstance_phrase->mit unglaublicher Stärke</li>
     <li>desc_sentence->[Quantity_adjphrase] [Animals] schauen zu.</li>
     <li>desc_sentence->Ein [PersonJob] [side_position] schaut stillschweigend zu.</li>
-    <li>desc_sentence->[VICTIM_nameDef] sieht [AdjectiveAngsty] aus.</li>
-    <li>desc_sentence->[VICTIM_nameDef] hat die Augen geschlossen.</li>
-    <li>desc_sentence->[VICTIM_nameDef] ist mit [GoreDat] bedeckt.</li>
-    <li>desc_sentence->[VICTIM_nameDef] und [KILLER_nameDef] sind mit [GoreDat] bedeckt.</li>
+    <li>desc_sentence->[VICTIM_nameDefNom] sieht [AdjectiveAngsty] aus.</li>
+    <li>desc_sentence->[VICTIM_nameDefNom] hat die Augen geschlossen.</li>
+    <li>desc_sentence->[VICTIM_nameDefNom] ist mit [GoreDat] bedeckt.</li>
+    <li>desc_sentence->[VICTIM_nameDefNom] und [KILLER_nameDefNom] sind mit [GoreDat] bedeckt.</li>
     <li>desc_sentence->Der Kadaver überragt [KILLER_nameDefAcc].</li>
     <li>desc_sentence(p=0.33)->Der massive Kadaver überdeckt eine [TerrainFeatureFem].</li>
     <li>desc_sentence(p=0.33)->Der massive Kadaver überdeckt einen [TerrainFeatureMas].</li>
     <li>desc_sentence(p=0.33)->Der massive Kadaver überdeckt ein [TerrainFeatureNeu].</li>
-    <li>desc_sentence->[VICTIM_nameDef] hat glühend [Color]e Augen.</li>
-    <li>desc_sentence->[KILLER_nameDef] ist mit [GoreDat] bedeckt.</li>
-    <li>desc_sentence->[KILLER_nameDef] fletscht die Zähne.</li>
-    <li>desc_sentence->[KILLER_nameDef] scheint zufrieden zu sein.</li>
-    <li>desc_sentence->[KILLER_nameDef] freut sich über den Sieg.</li>
-    <li>desc_sentence->[KILLER_nameDef] sieht [AdjectiveBadass] aus.</li>
-    <li>desc_sentence->[KILLER_nameDef] erstrahlt in einer heroischen Aura.</li>
+    <li>desc_sentence->[VICTIM_nameDefNom] hat glühend [Color]e Augen.</li>
+    <li>desc_sentence->[KILLER_nameDefNom] ist mit [GoreDat] bedeckt.</li>
+    <li>desc_sentence->[KILLER_nameDefNom] fletscht die Zähne.</li>
+    <li>desc_sentence->[KILLER_nameDefNom] scheint zufrieden zu sein.</li>
+    <li>desc_sentence->[KILLER_nameDefNom] freut sich über den Sieg.</li>
+    <li>desc_sentence->[KILLER_nameDefNom] sieht [AdjectiveBadass] aus.</li>
+    <li>desc_sentence->[KILLER_nameDefNom] erstrahlt in einer heroischen Aura.</li>
     <li>KILLER_nameFullIndefDat->{lookup: [KILLER_nameFull]; decline_tagged; 3}</li>
+    <li>KILLER_nameDefNom->{lookup: [KILLER_nameDef]; decline_tagged; 1}</li>
     <li>KILLER_nameDefDat->{lookup: [KILLER_nameDef]; decline_tagged; 3}</li>
     <li>KILLER_nameDefAcc->{lookup: [KILLER_nameDef]; decline_tagged; 4}</li>
     <li>VICTIM_nameFullIndefDat->{lookup: [VICTIM_nameFull]; decline_tagged; 3}</li>
     <li>VICTIM_nameIndefAcc->{lookup: [VICTIM_nameIndef]; decline_tagged; 4}</li>
+    <li>VICTIM_nameDefNom->{lookup: [VICTIM_nameDef]; decline_tagged; 1}</li>
     <li>VICTIM_nameDefAcc->{lookup: [VICTIM_nameDef]; decline_tagged; 4}</li>
   </KilledMajorThreat.rulePack.rulesStrings>
   
@@ -583,10 +592,10 @@
     <li>desc_sentence->[KILLER_nameDef] wears a feral expression.</li>
   -->
   <KilledMelee.rulePack.rulesStrings>
-    <li>tale_noun->[KILLER_nameDef] [VICTIM_nameDefAcc] im Nahkampf [wound_name_past]</li>
-    <li>tale_noun->[KILLER_nameDef] [VICTIM_nameDefAcc] mit [WEAPON_indefinite_dat] im Nahkampf [wound_name_past]</li>
-    <li>tale_noun->[VICTIM_nameDef] von [KILLER_nameDefDat] im Nahkampf [wound_name_past_2] wurde</li>
-    <li>tale_noun->[VICTIM_nameDef] von [KILLER_nameDefDat] mit [WEAPON_indefinite_dat] im Nahkampf [wound_name_past_2] wurde</li>
+    <li>tale_noun->[KILLER_nameDefNom] [VICTIM_nameDefAcc] im Nahkampf [wound_name_past]</li>
+    <li>tale_noun->[KILLER_nameDefNom] [VICTIM_nameDefAcc] mit [WEAPON_indefinite_dat] im Nahkampf [wound_name_past]</li>
+    <li>tale_noun->[VICTIM_nameDefNom] von [KILLER_nameDefDat] im Nahkampf [wound_name_past_2] wurde</li>
+    <li>tale_noun->[VICTIM_nameDefNom] von [KILLER_nameDefDat] mit [WEAPON_indefinite_dat] im Nahkampf [wound_name_past_2] wurde</li>
     <li>image->[VICTIM_nameFullIndefDat], wie [VICTIM_pronoun] von [KILLER_nameFullIndefDat] [with_weapon_optional] [wound_name_past_2] wird</li>
     <li>image->[KILLER_nameFullIndefDat], wie [KILLER_pronoun] [VICTIM_nameIndefAcc] [with_weapon_optional] [wound_name_present]</li>
     <li>image->[KILLER_nameFullIndefDat], wie [KILLER_pronoun] auf brutale Weise [VICTIM_nameIndefAcc] [with_weapon_optional] [wound_name_present]</li>
@@ -612,21 +621,23 @@
     <li>circumstance_phrase->auf feige, halbherzige Weise</li>
     <li>desc_sentence->[Quantity_adjphrase] [Animals] schauen zu.</li>
     <li>desc_sentence->Ein [PersonJob] [side_position] schaut stillschweigend zu.</li>
-    <li>desc_sentence->[VICTIM_nameDef] sieht [AdjectiveAngsty] aus.</li>
-    <li>desc_sentence->[VICTIM_nameDef] hat die Augen geschlossen.</li>
-    <li>desc_sentence->[VICTIM_nameDef] ist mit [GoreDat] bedeckt.</li>
-    <li>desc_sentence->[VICTIM_nameDef] und [KILLER_nameDef] sind mit [GoreDat] bedeckt.</li>
-    <li>desc_sentence->[KILLER_nameDef] ist mit [GoreDat] bedeckt.</li>
-    <li>desc_sentence->[KILLER_nameDef] fletscht die Zähne.</li>
-    <li>desc_sentence->[KILLER_nameDef] scheint zufrieden zu sein.</li>
-    <li>desc_sentence->[KILLER_nameDef] scheint Reue zu empfinden.</li>
-    <li>desc_sentence->[KILLER_nameDef] scheint zufrieden mit der Situation zu sein.</li>
-    <li>desc_sentence->[KILLER_nameDef] freut sich über den Sieg.</li>
-    <li>desc_sentence->[KILLER_nameDef] hat einen wilden Ausdruck.</li>
+    <li>desc_sentence->[VICTIM_nameDefNom] sieht [AdjectiveAngsty] aus.</li>
+    <li>desc_sentence->[VICTIM_nameDefNom] hat die Augen geschlossen.</li>
+    <li>desc_sentence->[VICTIM_nameDefNom] ist mit [GoreDat] bedeckt.</li>
+    <li>desc_sentence->[VICTIM_nameDefNom] und [KILLER_nameDefNom] sind mit [GoreDat] bedeckt.</li>
+    <li>desc_sentence->[KILLER_nameDefNom] ist mit [GoreDat] bedeckt.</li>
+    <li>desc_sentence->[KILLER_nameDefNom] fletscht die Zähne.</li>
+    <li>desc_sentence->[KILLER_nameDefNom] scheint zufrieden zu sein.</li>
+    <li>desc_sentence->[KILLER_nameDefNom] scheint Reue zu empfinden.</li>
+    <li>desc_sentence->[KILLER_nameDefNom] scheint zufrieden mit der Situation zu sein.</li>
+    <li>desc_sentence->[KILLER_nameDefNom] freut sich über den Sieg.</li>
+    <li>desc_sentence->[KILLER_nameDefNom] hat einen wilden Ausdruck.</li>
     <li>KILLER_nameFullIndefDat->{lookup: [KILLER_nameFull]; decline_tagged; 3}</li>
+    <li>KILLER_nameDefNom->{lookup: [KILLER_nameDef]; decline_tagged; 1}</li>
     <li>KILLER_nameDefDat->{lookup: [KILLER_nameDef]; decline_tagged; 3}</li>
     <li>VICTIM_nameFullIndefDat->{lookup: [VICTIM_nameFull]; decline_tagged; 3}</li>
     <li>VICTIM_nameIndefAcc->{lookup: [VICTIM_nameIndef]; decline_tagged; 4}</li>
+    <li>VICTIM_nameDefNom->{lookup: [VICTIM_nameDef]; decline_tagged; 1}</li>
     <li>VICTIM_nameDefAcc->{lookup: [VICTIM_nameDef]; decline_tagged; 4}</li>
   </KilledMelee.rulePack.rulesStrings>
   
@@ -655,8 +666,8 @@
     <li>desc_sentence->[KILLER_nameDef] looks triumphant.</li>
   -->
   <KilledMortar.rulePack.rulesStrings>
-    <li>tale_noun->[KILLER_nameDef] [VICTIM_nameDefAcc] mit einem Mörser tötete</li>
-    <li>tale_noun->[VICTIM_nameDef] von [KILLER_nameDefDat] zu Tode bombardiert wurde</li>
+    <li>tale_noun->[KILLER_nameDefNom] [VICTIM_nameDefAcc] mit einem Mörser tötete</li>
+    <li>tale_noun->[VICTIM_nameDefNom] von [KILLER_nameDefDat] zu Tode bombardiert wurde</li>
     <li>image->[KILLER_nameFullIndefDat], wie [KILLER_pronoun] vorsichtig ein Feuerrohr justiert, [circumstance_group]</li>
     <li>image->[KILLER_nameFullIndefDat], wie [KILLER_pronoun] in die Ferne schaut, [circumstance_group]</li>
     <li>image->[KILLER_nameFullIndefDat], wie [KILLER_pronoun] Berechnungen auf dem Papier durchführt, [circumstance_group]</li>
@@ -667,16 +678,18 @@
     <li>circumstance_phrase->während [VICTIM_nameFull] davon rennt</li>
     <li>desc_sentence->[Quantity_adjphrase] [Animals] schauen zu.</li>
     <li>desc_sentence->Ein [PersonJob] [side_position] schaut stillschweigend zu.</li>
-    <li>desc_sentence->[VICTIM_nameDef] sieht [AdjectiveAngsty] aus.</li>
-    <li>desc_sentence->[VICTIM_nameDef] ist mit [GoreDat] bedeckt.</li>
-    <li>desc_sentence->[VICTIM_nameDef] ist von Explosionen umgeben.</li>
-    <li>desc_sentence->[VICTIM_nameDef] ist von Kratern umgeben.</li>
-    <li>desc_sentence->[KILLER_nameDef] scheint zufrieden zu sein.</li>
-    <li>desc_sentence->[KILLER_nameDef] scheint Reue zu empfinden.</li>
-    <li>desc_sentence->[KILLER_nameDef] scheint zufrieden mit der Situation zu sein.</li>
-    <li>desc_sentence->[KILLER_nameDef] freut sich über den Sieg.</li>
+    <li>desc_sentence->[VICTIM_nameDefNom] sieht [AdjectiveAngsty] aus.</li>
+    <li>desc_sentence->[VICTIM_nameDefNom] ist mit [GoreDat] bedeckt.</li>
+    <li>desc_sentence->[VICTIM_nameDefNom] ist von Explosionen umgeben.</li>
+    <li>desc_sentence->[VICTIM_nameDefNom] ist von Kratern umgeben.</li>
+    <li>desc_sentence->[KILLER_nameDefNom] scheint zufrieden zu sein.</li>
+    <li>desc_sentence->[KILLER_nameDefNom] scheint Reue zu empfinden.</li>
+    <li>desc_sentence->[KILLER_nameDefNom] scheint zufrieden mit der Situation zu sein.</li>
+    <li>desc_sentence->[KILLER_nameDefNom] freut sich über den Sieg.</li>
     <li>KILLER_nameFullIndefDat->{lookup: [KILLER_nameFull]; decline_tagged; 3}</li>
+    <li>KILLER_nameDefNom->{lookup: [KILLER_nameDef]; decline_tagged; 1}</li>
     <li>KILLER_nameDefDat->{lookup: [KILLER_nameDef]; decline_tagged; 3}</li>
+    <li>VICTIM_nameDefNom->{lookup: [VICTIM_nameDef]; decline_tagged; 1}</li>
     <li>VICTIM_nameDefAcc->{lookup: [VICTIM_nameDef]; decline_tagged; 4}</li>
   </KilledMortar.rulePack.rulesStrings>
   
@@ -706,7 +719,7 @@
   -->
   <ToxicityRevealed.rulePack.rulesStrings>
     <li>tale_noun->der Körper von [PAWN_nameDefDat] vergiftet wurde</li>
-    <li>tale_noun->[PAWN_nameDef] durch Toxine vergiftet wurde</li>
+    <li>tale_noun->[PAWN_nameDefNom] durch Toxine vergiftet wurde</li>
     <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] durch ein Feld taumelt</li>
     <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] auf dem Boden liegt</li>
     <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] im Bett liegt</li>
@@ -771,11 +784,11 @@
     <li>desc_sentence->[KILLER_nameDef] looks triumphant.</li>
   -->
   <Wounded.rulePack.rulesStrings>
-    <li>tale_noun->[KILLER_nameDef] [VICTIM_nameDefAcc] [wound_name_past]</li>
-    <li>tale_noun->[KILLER_nameDef] [VICTIM_nameDefAcc] mit [WEAPON_indefinite_dat] [wound_name_past]</li>
-    <li>tale_noun->[VICTIM_nameDef] von [KILLER_nameDefDat] [wound_name_past2] wurde</li>
-    <li>tale_noun->[VICTIM_nameDef] von [KILLER_nameDefDat] mit [WEAPON_indefinite_dat] [wound_name_past2] wurde</li>
-    <li>tale_noun->[VICTIM_nameDef] [wound_name_past2] wurde</li>
+    <li>tale_noun->[KILLER_nameDefNom] [VICTIM_nameDefAcc] [wound_name_past]</li>
+    <li>tale_noun->[KILLER_nameDefNom] [VICTIM_nameDefAcc] mit [WEAPON_indefinite_dat] [wound_name_past]</li>
+    <li>tale_noun->[VICTIM_nameDefNom] von [KILLER_nameDefDat] [wound_name_past2] wurde</li>
+    <li>tale_noun->[VICTIM_nameDefNom] von [KILLER_nameDefDat] mit [WEAPON_indefinite_dat] [wound_name_past2] wurde</li>
+    <li>tale_noun->[VICTIM_nameDefNom] [wound_name_past2] wurde</li>
     <li>image->[VICTIM_nameFullIndefDat], wie [VICTIM_pronoun] von [KILLER_nameFullIndefDat] [with_weapon_optional] [wound_name_past2] wird</li>
     <li>image->[KILLER_nameFullIndefDat], wie [KILLER_pronoun] [VICTIM_nameIndefAcc] [with_weapon_optional] [wound_name_present]</li>
     <li>image->[KILLER_nameFullIndefDat], wie [KILLER_pronoun] auf brutale Weise [VICTIM_nameIndefAcc] [with_weapon_optional] [wound_name_present]</li>
@@ -804,19 +817,21 @@
     <li>desc_sentence->[Quantity_adjphrase] [Animals] schauen zu.</li>
     <li>desc_sentence->Ein [PersonJob] [side_position] schaut stillschweigend zu.</li>
     <li>desc_sentence->Eine Blutlache bildet sich um den verletzten Körper von [VICTIM_nameDefDat].</li>
-    <li>desc_sentence->[VICTIM_nameDef] ist mit [GoreDat] bedeckt.</li>
-    <li>desc_sentence->[VICTIM_nameDef] sieht [AdjectiveAngsty] aus.</li>
-    <li>desc_sentence->[VICTIM_nameDef] windet sich vor Schmerzen.</li>
-    <li>desc_sentence->[VICTIM_nameDef] erleidet höllische Qualen.</li>
-    <li>desc_sentence->[KILLER_nameDef] fletscht die Zähne.</li>
-    <li>desc_sentence->[KILLER_nameDef] scheint zufrieden zu sein.</li>
-    <li>desc_sentence->[KILLER_nameDef] scheint Reue zu empfinden.</li>
-    <li>desc_sentence->[KILLER_nameDef] scheint zufrieden mit der Situation zu sein.</li>
-    <li>desc_sentence->[KILLER_nameDef] freut sich über den Sieg.</li>
+    <li>desc_sentence->[VICTIM_nameDefNom] ist mit [GoreDat] bedeckt.</li>
+    <li>desc_sentence->[VICTIM_nameDefNom] sieht [AdjectiveAngsty] aus.</li>
+    <li>desc_sentence->[VICTIM_nameDefNom] windet sich vor Schmerzen.</li>
+    <li>desc_sentence->[VICTIM_nameDefNom] erleidet höllische Qualen.</li>
+    <li>desc_sentence->[KILLER_nameDefNom] fletscht die Zähne.</li>
+    <li>desc_sentence->[KILLER_nameDefNom] scheint zufrieden zu sein.</li>
+    <li>desc_sentence->[KILLER_nameDefNom] scheint Reue zu empfinden.</li>
+    <li>desc_sentence->[KILLER_nameDefNom] scheint zufrieden mit der Situation zu sein.</li>
+    <li>desc_sentence->[KILLER_nameDefNom] freut sich über den Sieg.</li>
     <li>KILLER_nameFullIndefDat->{lookup: [KILLER_nameFull]; decline_tagged; 3}</li>
+    <li>KILLER_nameDefNom->{lookup: [KILLER_nameDef]; decline_tagged; 1}</li>
     <li>KILLER_nameDefDat->{lookup: [KILLER_nameDef]; decline_tagged; 3}</li>
     <li>VICTIM_nameFullIndefDat->{lookup: [VICTIM_nameFull]; decline_tagged; 3}</li>
     <li>VICTIM_nameIndefAcc->{lookup: [VICTIM_nameIndef]; decline_tagged; 4}</li>
+    <li>VICTIM_nameDefNom->{lookup: [VICTIM_nameDef]; decline_tagged; 1}</li>
     <li>VICTIM_nameDefDat->{lookup: [VICTIM_nameDef]; decline_tagged; 3}</li>
     <li>VICTIM_nameDefAcc->{lookup: [VICTIM_nameDef]; decline_tagged; 4}</li>
   </Wounded.rulePack.rulesStrings>

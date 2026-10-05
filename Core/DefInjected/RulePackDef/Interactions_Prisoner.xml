@@ -5,14 +5,16 @@
     <li>sent->[RECIPIENT_nameDef] has accepted and joined [INITIATOR_nameDef]'s community.</li>
   -->
   <Sentence_RecruitAttemptAccepted.rulePack.rulesStrings>
-    <li>sent->[RECIPIENT_nameDef] hat angenommen und tritt [INITIATOR_nameDef]'s Gemeinschaft bei.</li>
+    <li>sent->[RECIPIENT_nameDefNom] nahm das Angebot an und ist nun Mitglied der Gemeinschaft.</li>
+    <li>RECIPIENT_nameDefNom->{lookup: [RECIPIENT_nameDef]; decline_tagged; 1}</li>
   </Sentence_RecruitAttemptAccepted.rulePack.rulesStrings>
   
   <!-- EN:
     <li>sent->[RECIPIENT_nameDef] refused.</li>
   -->
   <Sentence_RecruitAttemptRejected.rulePack.rulesStrings>
-    <li>sent->[RECIPIENT_nameDef] lehnte ab.</li>
+    <li>sent->[RECIPIENT_nameDefNom] lehnte das Angebot ab.</li>
+    <li>RECIPIENT_nameDefNom->{lookup: [RECIPIENT_nameDef]; decline_tagged; 1}</li>
   </Sentence_RecruitAttemptRejected.rulePack.rulesStrings>
   
 </LanguageData>

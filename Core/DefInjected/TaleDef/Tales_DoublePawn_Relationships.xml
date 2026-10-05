@@ -21,23 +21,25 @@
     <li>desc_sentence->[PURSUER_nameDef] is touching [ACCEPTER_nameDef] aggressively.</li>
   -->
   <BecameLover.rulePack.rulesStrings>
-    <li>tale_noun->[PURSUER_nameDef] und [ACCEPTER_nameDef] ein Liebespaar wurden</li>
+    <li>tale_noun->[PURSUER_nameDefNom] und [ACCEPTER_nameDefNom] ein Liebespaar wurden</li>
     <li>image->[PURSUER_nameFullIndefDat], wie [PURSUER_pronoun] [circumstance_group] süße Nichtigkeiten in das Ohr von [ACCEPTER_nameFullIndefDat] flüstert</li>
     <li>image->[PURSUER_nameFullIndefDat], wie [PURSUER_pronoun] [circumstance_group] Händchen mit [ACCEPTER_nameFullIndefDat] hält</li>
-    <li>image->[PURSUER_nameFullIndefDat], wie [PURSUER_pronoun] [circumstance_group] mit [ACCEPTER_nameFullIndefDat] herumlungert</li>
+    <li>image->[PURSUER_nameFullIndefDat], wie [PURSUER_pronoun] sich [circumstance_group] mit [ACCEPTER_nameFullIndefDat] vergnügt</li>
     <li>image->[PURSUER_nameFullIndefDat], wie [PURSUER_pronoun] sich [circumstance_group] mit [ACCEPTER_nameFullIndefDat] leidenschaftlich küsst</li>
     <li>circumstance_phrase->in einem unrealistisch großem Bett</li>
     <li>circumstance_phrase->unter der Bettdecke</li>
     <li>circumstance_phrase->mit nur wenigen sichtbaren Kleidungsstücken</li>
     <li>circumstance_phrase->schweißgebadet</li>
-    <li>desc_sentence->[PURSUER_nameDef] kuschelt sich an [ACCEPTER_nameDefAcc].</li>
-    <li>desc_sentence->[PURSUER_nameDef] und [ACCEPTER_nameDef] schauen sich tief in die Augen.</li>
-    <li>desc_sentence->[PURSUER_nameDef] pustet [ACCEPTER_nameDefDat] leicht ins Ohr.</li>
-    <li>desc_sentence->[PURSUER_nameDef] ist stilistisch mit [ACCEPTER_nameDefDat] verbunden.</li>
-    <li>desc_sentence->[PURSUER_nameDef] ist quasi ein Spiegelbild von [ACCEPTER_nameDefDat].</li>
-    <li>desc_sentence->[PURSUER_nameDef] berührt [ACCEPTER_nameDefAcc] forsch.</li>
+    <li>desc_sentence->[PURSUER_nameDefNom] kuschelt sich an [ACCEPTER_nameDefAcc].</li>
+    <li>desc_sentence->[PURSUER_nameDefNom] und [ACCEPTER_nameDefNom] schauen sich tief in die Augen.</li>
+    <li>desc_sentence->[PURSUER_nameDefNom] pustet [ACCEPTER_nameDefDat] sanft ins Ohr.</li>
+    <li>desc_sentence->[PURSUER_nameDefNom] ist stilistisch mit [ACCEPTER_nameDefDat] verbunden.</li>
+    <li>desc_sentence->[PURSUER_nameDefNom] ist quasi ein Spiegelbild von [ACCEPTER_nameDefDat].</li>
+    <li>desc_sentence->[PURSUER_nameDefNom] berührt [ACCEPTER_nameDefAcc] forsch.</li>
     <li>PURSUER_nameFullIndefDat->{lookup: [PURSUER_nameFull]; decline_tagged; 3}</li>
+    <li>PURSUER_nameDefNom->{lookup: [PURSUER_nameDef]; decline_tagged; 1}</li>
     <li>ACCEPTER_nameFullIndefDat->{lookup: [ACCEPTER_nameFull]; decline_tagged; 3}</li>
+    <li>ACCEPTER_nameDefNom->{lookup: [ACCEPTER_nameDef]; decline_tagged; 1}</li>
     <li>ACCEPTER_nameDefDat->{lookup: [ACCEPTER_nameDef]; decline_tagged; 3}</li>
     <li>ACCEPTER_nameDefAcc->{lookup: [ACCEPTER_nameDef]; decline_tagged; 4}</li>
   </BecameLover.rulePack.rulesStrings>
@@ -65,11 +67,12 @@
     <li>circumstance_phrase->, während andere Tiere zuschauen,</li>
     <li>circumstance_phrase->, während [HUMAN_pronoun] in die Augen des Tieres schaut,</li>
     <li>circumstance_phrase->zufrieden</li>
-    <li>desc_sentence->[ANIMAL_nameDef] kuschelt sich an [HUMAN_nameDefAcc].</li>
-    <li>desc_sentence->[ANIMAL_nameDef] sieht schläfrig und benebelt von der Liebe aus.</li>
-    <li>desc_sentence->[ANIMAL_nameDef] richtet sich majestätisch auf.</li>
-    <li>desc_sentence->[ANIMAL_nameDef] reagiert positiv.</li>
+    <li>desc_sentence->[ANIMAL_nameDefNom] kuschelt sich an [HUMAN_nameDefAcc].</li>
+    <li>desc_sentence->[ANIMAL_nameDefNom] sieht schläfrig und benebelt von der Liebe aus.</li>
+    <li>desc_sentence->[ANIMAL_nameDefNom] richtet sich majestätisch auf.</li>
+    <li>desc_sentence->[ANIMAL_nameDefNom] reagiert positiv.</li>
     <li>ANIMAL_nameFullIndefDat->{lookup: [ANIMAL_nameFull]; decline_tagged; 3}</li>
+    <li>ANIMAL_nameDefNom->{lookup: [ANIMAL_nameDef]; decline_tagged; 1}</li>
     <li>ANIMAL_nameDefDat->{lookup: [ANIMAL_nameDef]; decline_tagged; 3}</li>
     <li>HUMAN_nameFullIndefDat->{lookup: [HUMAN_nameFull]; decline_tagged; 3}</li>
     <li>HUMAN_nameDefDat->{lookup: [HUMAN_nameDef]; decline_tagged; 3}</li>
@@ -95,7 +98,7 @@
     <li>desc_sentence->[REJECTED_nameDef] is gesticulating angrily at [DUMPER_nameDef].</li>
   -->
   <Breakup.rulePack.rulesStrings>
-    <li>tale_noun->[DUMPER_nameDef] und [REJECTED_nameDef] sich trennten</li>
+    <li>tale_noun->[DUMPER_nameDefNom] und [REJECTED_nameDefNom] sich trennten</li>
     <li>image->[DUMPER_nameFullIndefDat], wie [DUMPER_pronoun] sich [circumstance_group] mit [REJECTED_nameFullIndefDat] zusammensetzt, um ein unangenehmes Gespräch zu führen</li>
     <li>image->[DUMPER_nameFullIndefDat], wie [DUMPER_pronoun] sich [circumstance_group] von [REJECTED_nameFullIndefDat] distanziert</li>
     <li>image->[DUMPER_nameFullIndefDat], wie [DUMPER_pronoun] [circumstance_group] [REJECTED_nameIndefAcc] aus dem Bett wirft</li>
@@ -103,16 +106,18 @@
     <li>circumstance_phrase->in einem Moment großer Trauer</li>
     <li>circumstance_phrase->, während andere unbehaglich wegsehen,</li>
     <li>circumstance_phrase->, während andere zusehen,</li>
-    <li>desc_sentence->[REJECTED_nameDef] weint heftig.</li>
-    <li>desc_sentence->[REJECTED_nameDef] schaut gleichzeitig herablassend und weinend.</li>
-    <li>desc_sentence->[REJECTED_nameDef] sitzt vor Schock wie versteinert da.</li>
-    <li>desc_sentence->[DUMPER_nameDef] ist stilistisch getrennt von [REJECTED_nameDefDat].</li>
-    <li>desc_sentence->[REJECTED_nameDef] ist in einem wimmernden Haufen auf dem Boden zusammengebrochen.</li>
-    <li>desc_sentence->[REJECTED_nameDef] gestikuliert wütend vor [DUMPER_nameDefDat].</li>
+    <li>desc_sentence->[REJECTED_nameDefNom] weint heftig.</li>
+    <li>desc_sentence->[REJECTED_nameDefNom] schaut gleichzeitig herablassend und weinend.</li>
+    <li>desc_sentence->[REJECTED_nameDefNom] sitzt vor Schock wie versteinert da.</li>
+    <li>desc_sentence->[DUMPER_nameDefNom] ist stilistisch getrennt von [REJECTED_nameDefDat].</li>
+    <li>desc_sentence->[REJECTED_nameDefNom] ist in einem wimmernden Haufen auf dem Boden zusammengebrochen.</li>
+    <li>desc_sentence->[REJECTED_nameDefNom] gestikuliert wütend vor [DUMPER_nameDefDat].</li>
     <li>DUMPER_nameFullIndefDat->{lookup: [DUMPER_nameFull]; decline_tagged; 3}</li>
+    <li>DUMPER_nameDefNom->{lookup: [DUMPER_nameDef]; decline_tagged; 1}</li>
     <li>DUMPER_nameDefDat->{lookup: [DUMPER_nameDef]; decline_tagged; 3}</li>
     <li>REJECTED_nameFullIndefDat->{lookup: [REJECTED_nameFull]; decline_tagged; 3}</li>
     <li>REJECTED_nameIndefAcc->{lookup: [REJECTED_nameIndef]; decline_tagged; 4}</li>
+    <li>REJECTED_nameDefNom->{lookup: [REJECTED_nameDef]; decline_tagged; 1}</li>
     <li>REJECTED_nameDefDat->{lookup: [REJECTED_nameDef]; decline_tagged; 3}</li>
   </Breakup.rulePack.rulesStrings>
   
@@ -135,7 +140,7 @@
     <li>desc_sentence->[SPOUSE1_nameDef] is touching [SPOUSE2_nameDef] aggressively.</li>
   -->
   <Marriage.rulePack.rulesStrings>
-    <li>tale_noun->[SPOUSE1_nameDef] und [SPOUSE2_nameDef] heirateten</li>
+    <li>tale_noun->[SPOUSE1_nameDefNom] und [SPOUSE2_nameDefNom] heirateten</li>
     <li>image->[SPOUSE1_nameFullIndefDat], wie [SPOUSE1_pronoun] [SPOUSE2_nameIndefAcc] [circumstance_group] heiratet</li>
     <li>image->[SPOUSE1_nameFullIndefDat], wie [SPOUSE1_pronoun] [circumstance_group] [SPOUSE1_possessive]en Hochzeitsschwur zu [SPOUSE2_nameFullIndefDat] spricht</li>
     <li>image->[SPOUSE1_nameFullIndefDat], wie [SPOUSE1_pronoun] mit [SPOUSE2_nameFullIndefDat] [circumstance_group] vor den Traualtar tritt</li>
@@ -143,15 +148,17 @@
     <li>circumstance_phrase->in einer würdevollen Zeremonie</li>
     <li>circumstance_phrase->, während beide fröhlich lachen,</li>
     <li>circumstance_phrase->, während andere feierlich zusehen,</li>
-    <li>desc_sentence->[SPOUSE1_nameDef] kuschelt sich an [SPOUSE2_nameDefAcc].</li>
-    <li>desc_sentence->[SPOUSE1_nameDef] und [SPOUSE2_nameDef] schauen sich tief in die Augen.</li>
-    <li>desc_sentence->[SPOUSE1_nameDef] pustet [SPOUSE2_nameDefDat] leicht ins Ohr.</li>
-    <li>desc_sentence->[SPOUSE1_nameDef] ist stilistisch mit [SPOUSE2_nameDefDat] verbunden.</li>
-    <li>desc_sentence->[SPOUSE1_nameDef] ist quasi ein Spiegelbild von [SPOUSE2_nameDefDat].</li>
-    <li>desc_sentence->[SPOUSE1_nameDef] berührt [SPOUSE2_nameDefAcc] forsch.</li>
+    <li>desc_sentence->[SPOUSE1_nameDefNom] kuschelt sich an [SPOUSE2_nameDefAcc].</li>
+    <li>desc_sentence->[SPOUSE1_nameDefNom] und [SPOUSE2_nameDefNom] schauen sich tief in die Augen.</li>
+    <li>desc_sentence->[SPOUSE1_nameDefNom] pustet [SPOUSE2_nameDefDat] sanft ins Ohr.</li>
+    <li>desc_sentence->[SPOUSE1_nameDefNom] ist stilistisch mit [SPOUSE2_nameDefDat] verbunden.</li>
+    <li>desc_sentence->[SPOUSE1_nameDefNom] ist quasi ein Spiegelbild von [SPOUSE2_nameDefDat].</li>
+    <li>desc_sentence->[SPOUSE1_nameDefNom] berührt [SPOUSE2_nameDefAcc] forsch.</li>
     <li>SPOUSE1_nameFullIndefDat->{lookup: [SPOUSE1_nameFull]; decline_tagged; 3}</li>
+    <li>SPOUSE1_nameDefNom->{lookup: [SPOUSE1_nameDef]; decline_tagged; 1}</li>
     <li>SPOUSE2_nameFullIndefDat->{lookup: [SPOUSE2_nameFull]; decline_tagged; 3}</li>
     <li>SPOUSE2_nameIndefAcc->{lookup: [SPOUSE2_nameIndef]; decline_tagged; 4}</li>
+    <li>SPOUSE2_nameDefNom->{lookup: [SPOUSE2_nameDef]; decline_tagged; 1}</li>
     <li>SPOUSE2_nameDefDat->{lookup: [SPOUSE2_nameDef]; decline_tagged; 3}</li>
     <li>SPOUSE2_nameDefAcc->{lookup: [SPOUSE2_nameDef]; decline_tagged; 4}</li>
   </Marriage.rulePack.rulesStrings>

@@ -21,10 +21,12 @@
     <li>r_logentry->[INITIATOR_nameDef] [teach_verb] how to [action] [article_tool] to [RECIPIENT_nameDef].</li>
   -->
   <LessonInteractionHowTo.rulePack.rulesStrings>
-    <li>r_logentry(p=0.5)->[INITIATOR_nameDef] [teach_verb] [RECIPIENT_nameDef] [teach_adverb], wie man [article_tool_acc] [action].</li>
-    <li>r_logentry(p=0.5)->[INITIATOR_nameDef] [teach_verb] [RECIPIENT_nameDef] [teach_adverb], wie man mit [article_tool_dat] [action_with].</li>
-    <li>r_logentry->[INITIATOR_nameDef] [teach_verb] [RECIPIENT_nameDef], wie man [article_tool_acc] [action].</li>
-    <li>r_logentry->[INITIATOR_nameDef] [teach_verb] [RECIPIENT_nameDef], wie man mit [article_tool_dat] [action_with].</li>
+    <li>r_logentry(p=0.5)->[INITIATOR_nameDefNom] [teach_verb] [RECIPIENT_nameDefDat] [teach_adverb], wie man [article_tool_acc] [action].</li>
+    <li>r_logentry(p=0.5)->[INITIATOR_nameDefNom] [teach_verb] [RECIPIENT_nameDefDat] [teach_adverb], wie man mit [article_tool_dat] [action_with].</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] [teach_verb] [RECIPIENT_nameDefDat], wie man [article_tool_acc] [action].</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] [teach_verb] [RECIPIENT_nameDefDat], wie man mit [article_tool_dat] [action_with].</li>
+    <li>INITIATOR_nameDefNom->{lookup: [INITIATOR_nameDef]; decline_tagged; 1}</li>
+    <li>RECIPIENT_nameDefDat->{lookup: [RECIPIENT_nameDef]; decline_tagged; 3}</li>
   </LessonInteractionHowTo.rulePack.rulesStrings>
   
   <!-- EN:
@@ -35,14 +37,16 @@
     <li>teach_test->cross-examined</li>
   -->
   <LessonInteractionQuiz.rulePack.rulesStrings>
-    <li>r_logentry(p=0.5)->[INITIATOR_nameDef] [teach_test] [RECIPIENT_nameDef] zum Thema, wie man [situation] [article_tool_acc] [action].</li>
-    <li>r_logentry(p=0.5)->[INITIATOR_nameDef] [teach_test] [RECIPIENT_nameDef] zum Thema, wie man [situation] mit [article_tool_dat] [action_with].</li>
+    <li>r_logentry(p=0.5)->[INITIATOR_nameDefNom] [teach_test] [RECIPIENT_nameDefAcc] zum Thema, wie man [situation] [article_tool_acc] [action].</li>
+    <li>r_logentry(p=0.5)->[INITIATOR_nameDefNom] [teach_test] [RECIPIENT_nameDefAcc] zum Thema, wie man [situation] mit [article_tool_dat] [action_with].</li>
     <li>teach_test->befragte</li>
     <li>teach_test->testete</li>
     <li>teach_test->prüfte</li>
     <li>teach_test->fragte</li>
     <li>teach_test->verhörte</li>
     <li>teach_test->kontrollierte</li>
+    <li>INITIATOR_nameDefNom->{lookup: [INITIATOR_nameDef]; decline_tagged; 1}</li>
+    <li>RECIPIENT_nameDefAcc->{lookup: [RECIPIENT_nameDef]; decline_tagged; 4}</li>
   </LessonInteractionQuiz.rulePack.rulesStrings>
   
   <!-- EN:
@@ -54,14 +58,16 @@
     <li>study_verb->studied</li>
   -->
   <LessonInteractionStudySubjectWith.rulePack.rulesStrings>
-    <li>r_logentry(p=0.25)->[INITIATOR_nameDef] besprach mit [RECIPIENT_nameDef] [teach_adverb] [subject].</li>
-    <li>r_logentry(p=0.25)->[INITIATOR_nameDef] ging mit [RECIPIENT_nameDef] [teach_adverb] [subject] durch.</li>
-    <li>r_logentry(p=0.25)->[INITIATOR_nameDef] nahm mit [RECIPIENT_nameDef] [teach_adverb] [subject] unter die Lupe.</li>
-    <li>r_logentry(p=0.25)->[INITIATOR_nameDef] studierte [teach_adverb] mit [RECIPIENT_nameDef] [subject].</li>
-    <li>r_logentry(p=0.5)->[INITIATOR_nameDef] besprach mit [RECIPIENT_nameDef] [subject].</li>
-    <li>r_logentry(p=0.5)->[INITIATOR_nameDef] ging mit [RECIPIENT_nameDef] [subject] durch.</li>
-    <li>r_logentry(p=0.5)->[INITIATOR_nameDef] nahm mit [RECIPIENT_nameDef] [subject] unter die Lupe.</li>
-    <li>r_logentry(p=0.5)->[INITIATOR_nameDef] studierte mit [RECIPIENT_nameDef] [subject].</li>
+    <li>r_logentry(p=0.25)->[INITIATOR_nameDefNom] besprach mit [RECIPIENT_nameDefDat] [teach_adverb] [subject].</li>
+    <li>r_logentry(p=0.25)->[INITIATOR_nameDefNom] ging mit [RECIPIENT_nameDefDat] [teach_adverb] [subject] durch.</li>
+    <li>r_logentry(p=0.25)->[INITIATOR_nameDefNom] nahm mit [RECIPIENT_nameDefDat] [teach_adverb] [subject] unter die Lupe.</li>
+    <li>r_logentry(p=0.25)->[INITIATOR_nameDefNom] studierte [teach_adverb] mit [RECIPIENT_nameDefDat] [subject].</li>
+    <li>r_logentry(p=0.5)->[INITIATOR_nameDefNom] besprach mit [RECIPIENT_nameDefDat] [subject].</li>
+    <li>r_logentry(p=0.5)->[INITIATOR_nameDefNom] ging mit [RECIPIENT_nameDefDat] [subject] durch.</li>
+    <li>r_logentry(p=0.5)->[INITIATOR_nameDefNom] nahm mit [RECIPIENT_nameDefDat] [subject] unter die Lupe.</li>
+    <li>r_logentry(p=0.5)->[INITIATOR_nameDefNom] studierte mit [RECIPIENT_nameDefDat] [subject].</li>
+    <li>INITIATOR_nameDefNom->{lookup: [INITIATOR_nameDef]; decline_tagged; 1}</li>
+    <li>RECIPIENT_nameDefDat->{lookup: [RECIPIENT_nameDef]; decline_tagged; 3}</li>
   </LessonInteractionStudySubjectWith.rulePack.rulesStrings>
   
   <!-- EN:
@@ -88,7 +94,7 @@
     <li>teach_verb->taught</li>
   -->
   <LessonInteractionTeachingVerbs.rulePack.rulesStrings>
-    <li>teach_verb->unterrichtete</li>
+    <li>teach_verb->erzählte</li>
     <li>teach_verb->erklärte</li>
     <li>teach_verb->zeigte</li>
     <li>teach_verb->lehrte</li>
@@ -103,14 +109,17 @@
     <li>talk_verb->lectured about</li>
   -->
   <LessonInteractionTeachSubjectTo.rulePack.rulesStrings>
-    <li>r_logentry(p=0.25)->[INITIATOR_nameDef] belehrte [RECIPIENT_nameDef] [teach_adverb] über [subject].</li>
-    <li>r_logentry(p=0.25)->[INITIATOR_nameDef] gab [RECIPIENT_nameDef] [teach_adverb] einen Überblick über [subject].</li>
-    <li>r_logentry(p=0.25)->[INITIATOR_nameDef] gab [RECIPIENT_nameDef] [teach_adverb] eine Zusammenfassung über [subject].</li>
-    <li>r_logentry(p=0.25)->[INITIATOR_nameDef] hielt [RECIPIENT_nameDef] [teach_adverb] einen Vortrag über [subject].</li>
-    <li>r_logentry(p=0.5)->[INITIATOR_nameDef] belehrte [RECIPIENT_nameDef] über [subject].</li>
-    <li>r_logentry(p=0.5)->[INITIATOR_nameDef] gab [RECIPIENT_nameDef] einen Überblick über [subject].</li>
-    <li>r_logentry(p=0.5)->[INITIATOR_nameDef] gab [RECIPIENT_nameDef] eine Zusammenfassung über [subject].</li>
-    <li>r_logentry(p=0.5)->[INITIATOR_nameDef] hielt [RECIPIENT_nameDef] einen Vortrag über [subject].</li>
+    <li>r_logentry(p=0.25)->[INITIATOR_nameDefNom] belehrte [RECIPIENT_nameDefAcc] [teach_adverb] über [subject].</li>
+    <li>r_logentry(p=0.25)->[INITIATOR_nameDefNom] gab [RECIPIENT_nameDefDat] [teach_adverb] einen Überblick über [subject].</li>
+    <li>r_logentry(p=0.25)->[INITIATOR_nameDefNom] gab [RECIPIENT_nameDefDat] [teach_adverb] eine Zusammenfassung über [subject].</li>
+    <li>r_logentry(p=0.25)->[INITIATOR_nameDefNom] hielt [RECIPIENT_nameDefDat] [teach_adverb] einen Vortrag über [subject].</li>
+    <li>r_logentry(p=0.5)->[INITIATOR_nameDefNom] belehrte [RECIPIENT_nameDefAcc] über [subject].</li>
+    <li>r_logentry(p=0.5)->[INITIATOR_nameDefNom] gab [RECIPIENT_nameDefDat] einen Überblick über [subject].</li>
+    <li>r_logentry(p=0.5)->[INITIATOR_nameDefNom] gab [RECIPIENT_nameDefDat] eine Zusammenfassung über [subject].</li>
+    <li>r_logentry(p=0.5)->[INITIATOR_nameDefNom] hielt [RECIPIENT_nameDefDat] einen Vortrag über [subject].</li>
+    <li>INITIATOR_nameDefNom->{lookup: [INITIATOR_nameDef]; decline_tagged; 1}</li>
+    <li>RECIPIENT_nameDefDat->{lookup: [RECIPIENT_nameDef]; decline_tagged; 3}</li>
+    <li>RECIPIENT_nameDefAcc->{lookup: [RECIPIENT_nameDef]; decline_tagged; 4}</li>
   </LessonInteractionTeachSubjectTo.rulePack.rulesStrings>
   
 </LanguageData>

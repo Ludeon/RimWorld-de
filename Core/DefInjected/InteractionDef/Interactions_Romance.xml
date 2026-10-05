@@ -10,10 +10,13 @@
     <li>r_logentry->[INITIATOR_nameDef] told [RECIPIENT_nameDef] that it would be best to see other people.</li>
   -->
   <Breakup.logRulesInitiator.rulesStrings>
-    <li>r_logentry->[INITIATOR_nameDef] fragte [RECIPIENT_nameDef] nach einer Auszeit.</li>
-    <li>r_logentry->[INITIATOR_nameDef] erklärte [RECIPIENT_nameDef], dass etwas Abstand notwendig ist.</li>
-    <li>r_logentry->[INITIATOR_nameDef] sagte [RECIPIENT_nameDef], dass es zwischen ihnen nicht mehr funktioniert.</li>
-    <li>r_logentry->[INITIATOR_nameDef] sagte [RECIPIENT_nameDef], dass es wohl besser wäre, wenn sie sich nach anderen umsehen.</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] fragte [RECIPIENT_nameDefAcc] nach einer Auszeit.</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] erklärte [RECIPIENT_nameDefDat], dass etwas Abstand notwendig ist.</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] sagte [RECIPIENT_nameDefDat], dass es zwischen ihnen nicht mehr funktioniert.</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] sagte [RECIPIENT_nameDefDat], dass es wohl besser wäre, wenn sie sich nach anderen umsehen.</li>
+    <li>INITIATOR_nameDefNom->{lookup: [INITIATOR_nameDef]; decline_tagged; 1}</li>
+    <li>RECIPIENT_nameDefDat->{lookup: [RECIPIENT_nameDef]; decline_tagged; 3}</li>
+    <li>RECIPIENT_nameDefAcc->{lookup: [RECIPIENT_nameDef]; decline_tagged; 4}</li>
   </Breakup.logRulesInitiator.rulesStrings>
   
   <!-- EN: marriage proposal -->
@@ -24,9 +27,11 @@
     <li>r_logentry->[INITIATOR_nameDef] told [RECIPIENT_nameDef] that [INITIATOR_pronoun] wants to spend [INITIATOR_possessive] life with [RECIPIENT_objective].</li>
   -->
   <MarriageProposal.logRulesInitiator.rulesStrings>
-    <li>r_logentry->[INITIATOR_nameDef] machte [RECIPIENT_nameDef] einen Heiratsantrag.</li>
-    <li>r_logentry->[INITIATOR_nameDef] schwor [RECIPIENT_nameDef] die lebenslange Treue.</li>
-    <li>r_logentry->[INITIATOR_nameDef] kniete nieder und erklärte [RECIPIENT_nameDef], dass [RECIPIENT_pronoun] {RECIPIENT_gender ? der Mann ist, mit dem : die Frau ist, mit der} [INITIATOR_pronoun] den Rest [INITIATOR_possessive]es Lebens verbringen will.</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] machte [RECIPIENT_nameDefDat] einen Heiratsantrag.</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] schwor [RECIPIENT_nameDefDat] die lebenslange Treue.</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] kniete nieder und erklärte [RECIPIENT_nameDefDat], dass [RECIPIENT_pronoun] {RECIPIENT_gender ? der Mann ist, mit dem : die Frau ist, mit der} [INITIATOR_pronoun] den Rest [INITIATOR_possessive]es Lebens verbringen will.</li>
+    <li>INITIATOR_nameDefNom->{lookup: [INITIATOR_nameDef]; decline_tagged; 1}</li>
+    <li>RECIPIENT_nameDefDat->{lookup: [RECIPIENT_nameDef]; decline_tagged; 3}</li>
   </MarriageProposal.logRulesInitiator.rulesStrings>
   
   <!-- EN: romance attempt -->
@@ -94,15 +99,15 @@
     <li>romantic_noun(p=2)->[NaturalObject]</li>
   -->
   <RomanceAttempt.logRulesInitiator.rulesStrings>
-    <li>r_logentry->[INITIATOR_nameDef] [wooed], [wootactic].</li>
-    <li>wooed->flirtete mit [RECIPIENT_nameDef]</li>
-    <li>wooed->versuchte [RECIPIENT_nameDef] zu verführen</li>
-    <li>wooed->versuchte die Gunst von [RECIPIENT_nameDef] zu erlangen</li>
-    <li>wooed->versuchte [RECIPIENT_nameDef] zu verzücken</li>
-    <li>wooed->versuchte [RECIPIENT_nameDef] zu bezaubern</li>
-    <li>wooed->umwarb [RECIPIENT_nameDef]</li>
-    <li>wooed->umgarnte [RECIPIENT_nameDef]</li>
-    <li>wooed->machte [RECIPIENT_nameDef] den Hof</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] [wooed], [wootactic].</li>
+    <li>wooed->flirtete mit [RECIPIENT_nameDefDat]</li>
+    <li>wooed->versuchte, [RECIPIENT_nameDefAcc] zu verführen</li>
+    <li>wooed->versuchte, die Gunst von [RECIPIENT_nameDefDat] zu erlangen</li>
+    <li>wooed->versuchte, [RECIPIENT_nameDefAcc] zu verzücken</li>
+    <li>wooed->versuchte, [RECIPIENT_nameDefAcc] zu bezaubern</li>
+    <li>wooed->umwarb [RECIPIENT_nameDefAcc]</li>
+    <li>wooed->umgarnte [RECIPIENT_nameDefAcc]</li>
+    <li>wooed->machte [RECIPIENT_nameDefDat] den Hof</li>
     <li>wootactic->indem [INITIATOR_pronoun] eine Geschichte über [TalkTopicAnyAcc] erzählte</li>
     <li>wootactic->indem [INITIATOR_pronoun] eine Fabel über [TalkTopicAnyAcc] erzählte</li>
     <li>wootactic->indem [INITIATOR_pronoun] Witze über [TalkTopicAnyAcc] erzählte</li>
@@ -200,6 +205,9 @@
     <li>RECIPIENT_possessive_PersonalCharacteristic_acc->[RECIPIENT_possessive]en [PersonalCharacteristicMasAccDef]</li>
     <li>RECIPIENT_possessive_PersonalCharacteristic_acc->[RECIPIENT_possessive]e [PersonalCharacteristicFemAccDef]</li>
     <li>RECIPIENT_possessive_PersonalCharacteristic_acc->[RECIPIENT_possessive] [PersonalCharacteristicNeuAccDef]</li>
+    <li>INITIATOR_nameDefNom->{lookup: [INITIATOR_nameDef]; decline_tagged; 1}</li>
+    <li>RECIPIENT_nameDefDat->{lookup: [RECIPIENT_nameDef]; decline_tagged; 3}</li>
+    <li>RECIPIENT_nameDefAcc->{lookup: [RECIPIENT_nameDef]; decline_tagged; 4}</li>
   </RomanceAttempt.logRulesInitiator.rulesStrings>
   
 </LanguageData>

@@ -5,45 +5,42 @@
     <li>r_logentry->[INITIATOR_definite] leaped onto [SUBJECT_definite] and began digesting [SUBJECT_objective].</li>
   -->
   <Event_DevourerConsumeLeap.rulePack.rulesStrings>
-    <li>r_logentry->[INITIATOR_definite] stürzte sich auf [SUBJECT_nameDefAcc] und begann [SUBJECT_objective] zu verdauen.</li>
-    <li>SUBJECT_nameDefAcc->{lookup: [SUBJECT_nameDef]; decline_tagged; 4}</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] stürzte sich auf [SUBJECT_nameDefAcc] und begann [SUBJECT_objective] zu verdauen.</li>
   </Event_DevourerConsumeLeap.rulePack.rulesStrings>
   
   <!-- EN:
     <li>r_logentry->[INITIATOR_definite] vomited [SUBJECT_definite] up.</li>
   -->
   <Event_DevourerDigestionAborted.rulePack.rulesStrings>
-    <li>r_logentry->[INITIATOR_definite] spuckte [SUBJECT_nameDefAcc] aus.</li>
-    <li>SUBJECT_nameDefAcc->{lookup: [SUBJECT_nameDef]; decline_tagged; 4}</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] spuckte [SUBJECT_nameDefAcc] aus.</li>
   </Event_DevourerDigestionAborted.rulePack.rulesStrings>
   
   <!-- EN:
     <li>r_logentry->[INITIATOR_definite] digested [SUBJECT_definite].</li>
   -->
   <Event_DevourerDigestionCompleted.rulePack.rulesStrings>
-    <li>r_logentry->[INITIATOR_definite] verdaute [SUBJECT_nameDefAcc].</li>
-    <li>SUBJECT_nameDefAcc->{lookup: [SUBJECT_nameDef]; decline_tagged; 4}</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] verdaute [SUBJECT_nameDefAcc].</li>
   </Event_DevourerDigestionCompleted.rulePack.rulesStrings>
   
   <!-- EN:
     <li>r_logentry->[INITIATOR_definite] put [SUBJECT_definite] into a trance.</li>
   -->
   <Event_Hypnotized.rulePack.rulesStrings>
-    <li>r_logentry->[INITIATOR_definite] versetzte [SUBJECT_definite] in Trance.</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] versetzte [SUBJECT_nameDefAcc] in Trance.</li>
   </Event_Hypnotized.rulePack.rulesStrings>
   
   <!-- EN:
     <li>r_logentry->[INITIATOR_definite] emerged from [SUBJECT_definite].</li>
   -->
   <Event_MetalhorrorEmerged.rulePack.rulesStrings>
-    <li>r_logentry->[INITIATOR_definite] schlüpfte aus [SUBJECT_definite].</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] schlüpfte aus [SUBJECT_nameDefDat].</li>
   </Event_MetalhorrorEmerged.rulePack.rulesStrings>
   
   <!-- EN:
     <li>r_logentry->[INITIATOR_definite] psychically incinerated [SUBJECT_definite]'s brain.</li>
   -->
   <Event_UnnaturalCorpseAttack.rulePack.rulesStrings>
-    <li>r_logentry->[INITIATOR_definite] hat das Gehirn von [SUBJECT_definite] mental verbrannt.</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] hat das Gehirn von [SUBJECT_nameDefDat] mental verbrannt.</li>
   </Event_UnnaturalCorpseAttack.rulePack.rulesStrings>
   
   <!-- EN:

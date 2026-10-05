@@ -19,8 +19,8 @@
     <li>desc_sentence->[PAWN_pronoun] has lost [PAWN_possessive] balance.</li>
   -->
   <CollapseDodged.rulePack.rulesStrings>
-    <li>tale_noun->[PAWN_nameDef] einen Höhleneinsturz überlebte</li>
-    <li>tale_noun->[PAWN_nameDef] fast von herabfallenden Trümmern zerquetscht wurde</li>
+    <li>tale_noun->[PAWN_nameDefNom] einen Höhleneinsturz überlebte</li>
+    <li>tale_noun->[PAWN_nameDefNom] fast von herabfallenden Trümmern zerquetscht wurde</li>
     <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] herabfallenden Trümmern ausweicht [circumstance_group]</li>
     <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] knapp einem Höhleneinsturz entkommt [circumstance_group]</li>
     <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] knapp einem herabfallenden Dach entkommt [circumstance_group]</li>
@@ -60,8 +60,8 @@
     <li>desc_sentence->A [PersonJob] watches silently from afar.</li>
   -->
   <LaunchedShip.rulePack.rulesStrings>
-    <li>tale_noun->[PAWN_nameDef] vom Planeten entkam</li>
-    <li>tale_noun->[PAWN_nameDef] mit einem Raumschiff davonflog</li>
+    <li>tale_noun->[PAWN_nameDefNom] vom Planeten entkam</li>
+    <li>tale_noun->[PAWN_nameDefNom] mit einem Raumschiff davonflog</li>
     <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] zu den Sternen gebracht wird</li>
     <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] zum Himmel rast</li>
     <li>image->[PAWN_nameFullIndefDat], wie [PAWN_pronoun] [circumstance_group] beschleunigt, um die Fluchtgeschwindigkeit zu erreichen</li>
@@ -127,28 +127,28 @@
     <li>target->[RESPONDER_nameDef]</li>
   -->
   <SocialFight.rulePack.rulesStrings>
-    <li>tale_noun->[INITIATOR_nameDef] [RESPONDER_nameDef] [fight_name_present]</li>
-    <li>tale_noun->[INITIATOR_nameDef] gegen [RESPONDER_nameDef] kämpfte</li>
-    <li>image->[INITIATOR_nameFull], wie [INITIATOR_pronoun] [RESPONDER_nameFull] beleidigt, [circumstance_group]</li>
-    <li>image->[INITIATOR_nameFull], wie [INITIATOR_pronoun] [RESPONDER_nameFull] provoziert, [circumstance_group]</li>
-    <li>image->[INITIATOR_nameFull], wie [INITIATOR_pronoun] [RESPONDER_nameFull] bedroht, [circumstance_group]</li>
-    <li>image->[INITIATOR_nameFull], wie [INITIATOR_pronoun] [RESPONDER_nameFull] einschüchtert, [circumstance_group]</li>
-    <li>image->[INITIATOR_nameFull], wie [INITIATOR_pronoun] [RESPONDER_nameFull] attackiert, [circumstance_group]</li>
-    <li>image->[INITIATOR_nameFull], wie [INITIATOR_pronoun] [RESPONDER_nameFull] angreift, [circumstance_group]</li>
-    <li>image->[INITIATOR_nameFull], wie [INITIATOR_pronoun] [RESPONDER_nameFull] schlägt, [circumstance_group]</li>
-    <li>image->[INITIATOR_nameFull], wie [INITIATOR_pronoun] [RESPONDER_nameFull] tritt, [circumstance_group]</li>
-    <li>image->[INITIATOR_nameFull], wie [INITIATOR_pronoun] sich von [RESPONDER_nameFull] wegduckt, [circumstance_group]</li>
-    <li>fight_name_present->angriff</li>
-    <li>fight_name_present->attackierte</li>
-    <li>circumstance_phrase->während [INITIATOR_pronoun] von [RESPONDER_nameDef] beleidigt wird</li>
-    <li>circumstance_phrase->während [INITIATOR_pronoun] von [RESPONDER_nameDef] provoziert wird</li>
-    <li>circumstance_phrase->während [INITIATOR_pronoun] von [RESPONDER_nameDef] bedroht wird</li>
-    <li>circumstance_phrase->während [INITIATOR_pronoun] von [RESPONDER_nameDef] eingeschüchtert wird</li>
-    <li>circumstance_phrase->während [INITIATOR_pronoun] von [RESPONDER_nameDef] angegriffen wird</li>
-    <li>circumstance_phrase->während [INITIATOR_pronoun] von [RESPONDER_nameDef] überfallen wird</li>
-    <li>circumstance_phrase->während [INITIATOR_pronoun] von [RESPONDER_nameDef] geschlagen wird</li>
-    <li>circumstance_phrase->während [INITIATOR_pronoun] von [RESPONDER_nameDef] getreten wird</li>
-    <li>circumstance_phrase->während [RESPONDER_nameDef] sich wegduckt</li>
+    <li>tale_noun->[RESPONDER_nameDefNom] von [INITIATOR_nameDefDat] [angegriffen] wurde</li>
+    <li>tale_noun->[INITIATOR_nameDefNom] gegen [RESPONDER_nameDefAcc] kämpfte</li>
+    <li>image->[INITIATOR_nameFullIndefDat], wie [INITIATOR_pronoun] [RESPONDER_nameFullIndefAcc] beleidigt, [circumstance_group]</li>
+    <li>image->[INITIATOR_nameFullIndefDat], wie [INITIATOR_pronoun] [RESPONDER_nameFullIndefAcc] provoziert, [circumstance_group]</li>
+    <li>image->[INITIATOR_nameFullIndefDat], wie [INITIATOR_pronoun] [RESPONDER_nameFullIndefAcc] bedroht, [circumstance_group]</li>
+    <li>image->[INITIATOR_nameFullIndefDat], wie [INITIATOR_pronoun] [RESPONDER_nameFullIndefAcc] einschüchtert, [circumstance_group]</li>
+    <li>image->[INITIATOR_nameFullIndefDat], wie [INITIATOR_pronoun] [RESPONDER_nameFullIndefAcc] attackiert, [circumstance_group]</li>
+    <li>image->[INITIATOR_nameFullIndefDat], wie [INITIATOR_pronoun] [RESPONDER_nameFullIndefAcc] angreift, [circumstance_group]</li>
+    <li>image->[INITIATOR_nameFullIndefDat], wie [INITIATOR_pronoun] [RESPONDER_nameFullIndefAcc] schlägt, [circumstance_group]</li>
+    <li>image->[INITIATOR_nameFullIndefDat], wie [INITIATOR_pronoun] [RESPONDER_nameFullIndefAcc] tritt, [circumstance_group]</li>
+    <li>image->[INITIATOR_nameFullIndefDat], wie [INITIATOR_pronoun] sich von [RESPONDER_nameFullIndefDat] wegduckt, [circumstance_group]</li>
+    <li>angegriffen->angegriffen</li>
+    <li>angegriffen->attackiert</li>
+    <li>circumstance_phrase->während [RESPONDER_nameDefNom] [INITIATOR_objective] beleidigt</li>
+    <li>circumstance_phrase->während [RESPONDER_nameDefNom] [INITIATOR_objective] provoziert</li>
+    <li>circumstance_phrase->während [RESPONDER_nameDefNom] [INITIATOR_objective] bedroht</li>
+    <li>circumstance_phrase->während [RESPONDER_nameDefNom] [INITIATOR_objective] einschüchtert</li>
+    <li>circumstance_phrase->während [RESPONDER_nameDefNom] [INITIATOR_objective] attackiert</li>
+    <li>circumstance_phrase->während [RESPONDER_nameDefNom] [INITIATOR_objective] angreift</li>
+    <li>circumstance_phrase->während [RESPONDER_nameDefNom] [INITIATOR_objective] schlägt</li>
+    <li>circumstance_phrase->während [RESPONDER_nameDefNom] [INITIATOR_objective] tritt</li>
+    <li>circumstance_phrase->während [RESPONDER_nameDefNom] sich wegduckt</li>
     <li>desc_sentence->[target] scheint keine Reue zu empfinden.</li>
     <li>desc_sentence->[target] ist von leidenschaftlicher Raserei erfüllt.</li>
     <li>desc_sentence->[target] zeigt keine Emotionen.</li>
@@ -156,8 +156,15 @@
     <li>desc_sentence->[target] schreit wütend.</li>
     <li>desc_sentence->[target] weist sichtbare Verletzungen auf.</li>
     <li>desc_sentence->Die Augen von [target] leuchten [Color].</li>
-    <li>target->[INITIATOR_nameDef]</li>
-    <li>target->[RESPONDER_nameDef]</li>
+    <li>target->[INITIATOR_nameDefNom]</li>
+    <li>target->[RESPONDER_nameDefNom]</li>
+    <li>INITIATOR_nameFullIndefDat->{lookup: [INITIATOR_nameFull]; decline_tagged; 3}</li>
+    <li>INITIATOR_nameDefNom->{lookup: [INITIATOR_nameDef]; decline_tagged; 1}</li>
+    <li>INITIATOR_nameDefDat->{lookup: [INITIATOR_nameDef]; decline_tagged; 3}</li>
+    <li>RESPONDER_nameFullIndefDat->{lookup: [RESPONDER_nameFull]; decline_tagged; 3}</li>
+    <li>RESPONDER_nameFullIndefAcc->{lookup: [RESPONDER_nameFull]; decline_tagged; 4}</li>
+    <li>RESPONDER_nameDefNom->{lookup: [RESPONDER_nameDef]; decline_tagged; 1}</li>
+    <li>RESPONDER_nameDefAcc->{lookup: [RESPONDER_nameDef]; decline_tagged; 4}</li>
   </SocialFight.rulePack.rulesStrings>
   
 </LanguageData>

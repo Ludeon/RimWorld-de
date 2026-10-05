@@ -5,21 +5,23 @@
     <li>sent->[RECIPIENT_nameDef] agreed and the two are now engaged.</li>
   -->
   <Sentence_MarriageProposalAccepted.rulePack.rulesStrings>
-    <li>sent->[RECIPIENT_nameDef] willigte ein und die beiden sind jetzt verlobt.</li>
+    <li>sent->[RECIPIENT_nameDefNom] willigte ein. Die beiden sind nun verlobt.</li>
+    <li>RECIPIENT_nameDefNom->{lookup: [RECIPIENT_nameDef]; decline_tagged; 1}</li>
   </Sentence_MarriageProposalAccepted.rulePack.rulesStrings>
   
   <!-- EN:
     <li>sent->[RECIPIENT_nameDef] rejected the proposal.</li>
   -->
   <Sentence_MarriageProposalRejected.rulePack.rulesStrings>
-    <li>sent->[RECIPIENT_nameDef] lehnte den Heiratsantrag ab.</li>
+    <li>sent->[RECIPIENT_nameDefNom] lehnte den Heiratsantrag ab.</li>
+    <li>RECIPIENT_nameDefNom->{lookup: [RECIPIENT_nameDef]; decline_tagged; 1}</li>
   </Sentence_MarriageProposalRejected.rulePack.rulesStrings>
   
   <!-- EN:
     <li>sent->It was too much for the relationship to continue, and the two have now broken up.</li>
   -->
   <Sentence_MarriageProposalRejectedBrokeUp.rulePack.rulesStrings>
-    <li>sent->Das war zu viel für die Beziehung, und sie haben sich getrennt.</li>
+    <li>sent->Das war zu viel für die Beziehung! Die beiden haben sich getrennt.</li>
   </Sentence_MarriageProposalRejectedBrokeUp.rulePack.rulesStrings>
   
   <!-- EN:
@@ -28,9 +30,12 @@
     <li>sent->[RECIPIENT_nameDef] became aroused and agreed to become [INITIATOR_nameDef]'s lover.</li>
   -->
   <Sentence_RomanceAttemptAccepted.rulePack.rulesStrings>
-    <li>sent->[RECIPIENT_nameDef] ließ sich verführen und ist jetzt mit [INITIATOR_nameDef] zusammen.</li>
-    <li>sent->[RECIPIENT_nameDef] reagierte positiv und ist jetzt mit [INITIATOR_nameDef] zusammen.</li>
-    <li>sent->[RECIPIENT_nameDef] war ergriffen und ist jetzt mit [INITIATOR_nameDef] zusammen.</li>
+    <li>sent->[RECIPIENT_nameDefNom] ließ sich verführen und ist nun [INITIATOR_label]'s [lover].</li>
+    <li>sent->[RECIPIENT_nameDefNom] reagierte positiv und ist nun [INITIATOR_label]'s [lover].</li>
+    <li>sent->[RECIPIENT_nameDefNom] war ergriffen und willigte ein, [INITIATOR_label]'s [lover] zu werden.</li>
+    <li>lover(RECIPIENT_gender!=Female)->Geliebter</li>
+    <li>lover(RECIPIENT_gender==Female)->Geliebte</li>
+    <li>RECIPIENT_nameDefNom->{lookup: [RECIPIENT_nameDef]; decline_tagged; 1}</li>
   </Sentence_RomanceAttemptAccepted.rulePack.rulesStrings>
   
   <!-- EN:
@@ -43,16 +48,17 @@
     <li>sent->[RECIPIENT_nameDef] turned [INITIATOR_objective] down.</li>
   -->
   <Sentence_RomanceAttemptRejected.rulePack.rulesStrings>
-    <li>sent->[RECIPIENT_nameDef] wies [INITIATOR_objective] ab.</li>
-    <li>sent->[RECIPIENT_nameDef] wies den Annäherungsversuch zurück.</li>
-    <li>sent->[RECIPIENT_nameDef] ignorierte den Annäherungsversuch.</li>
-    <li>sent->[RECIPIENT_nameDef] zeigte [INITIATOR_nameDef] die kalte Schulter.</li>
-    <li>sent->[RECIPIENT_nameDef] wandte [INITIATOR_nameDef] den Rücken zu.</li>
-    <li>sent->[RECIPIENT_nameDef] drehte sich weg.</li>
-    <li>sent->[RECIPIENT_nameDef] reagierte kaum.</li>
-    <li>sent->[RECIPIENT_nameDef] antwortete nicht.</li>
-    <li>sent->[RECIPIENT_nameDef] schenkte [INITIATOR_nameDef] keinerlei Beachtung.</li>
-    <li>sent->[RECIPIENT_nameDef] gab [INITIATOR_nameDef] einen Korb.</li>
+    <li>sent->[RECIPIENT_nameDefNom] wies [INITIATOR_objective] ab.</li>
+    <li>sent->[RECIPIENT_nameDefNom] wies den Annäherungsversuch zurück.</li>
+    <li>sent->[RECIPIENT_nameDefNom] ignorierte den Annäherungsversuch.</li>
+    <li>sent->[RECIPIENT_nameDefNom] zeigte {INITIATOR_gender ? ihm : ihr} die kalte Schulter.</li>
+    <li>sent->[RECIPIENT_nameDefNom] wandte {INITIATOR_gender ? ihm : ihr} den Rücken zu.</li>
+    <li>sent->[RECIPIENT_nameDefNom] drehte sich weg.</li>
+    <li>sent->[RECIPIENT_nameDefNom] reagierte kaum.</li>
+    <li>sent->[RECIPIENT_nameDefNom] antwortete nicht.</li>
+    <li>sent->[RECIPIENT_nameDefNom] schenkte {INITIATOR_gender ? ihm : ihr} keinerlei Beachtung.</li>
+    <li>sent->[RECIPIENT_nameDefNom] gab {INITIATOR_gender ? ihm : ihr} einen Korb.</li>
+    <li>RECIPIENT_nameDefNom->{lookup: [RECIPIENT_nameDef]; decline_tagged; 1}</li>
   </Sentence_RomanceAttemptRejected.rulePack.rulesStrings>
   
 </LanguageData>

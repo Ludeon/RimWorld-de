@@ -626,16 +626,26 @@
     <li>PersonalCharacteristicFemAccDef(p=0.15)->Sexualerfahrung</li>
     <li>INITIATOR_nameIndefDat(INITIATOR_genderResolved!=Male,INITIATOR_genderResolved!=Female,INITIATOR_genderResolved!=None)->{replace: [INITIATOR_definite]; "der [INITIATOR_label]"-"einem"; "die [INITIATOR_label]"-"einer"; "das [INITIATOR_label]"-"einem"} {lookup: [INITIATOR_label]; decline; 2}</li>
     <li>INITIATOR_nameIndefDat(priority=-1)->{lookup: [INITIATOR_indefinite]; decline_tagged; 3}</li>
+    <li>INITIATOR_nameDefNom(INITIATOR_genderResolved!=Male,INITIATOR_genderResolved!=Female,INITIATOR_genderResolved!=None)->{replace: [INITIATOR_definite]; "der [INITIATOR_label]"-"der"; "die [INITIATOR_label]"-"die"; "das [INITIATOR_label]"-"das"} {lookup: [INITIATOR_label]; decline; 4}</li>
+    <li>INITIATOR_nameDefNom(priority=-1)->{lookup: [INITIATOR_definite]; decline_tagged; 1}</li>
     <li>INITIATOR_nameDefDat(INITIATOR_genderResolved!=Male,INITIATOR_genderResolved!=Female,INITIATOR_genderResolved!=None)->{replace: [INITIATOR_definite]; "der [INITIATOR_label]"-"dem"; "die [INITIATOR_label]"-"der"; "das [INITIATOR_label]"-"dem"} {lookup: [INITIATOR_label]; decline; 6}</li>
     <li>INITIATOR_nameDefDat(priority=-1)->{lookup: [INITIATOR_definite]; decline_tagged; 3}</li>
     <li>INITIATOR_nameIndefAcc(INITIATOR_genderResolved!=Male,INITIATOR_genderResolved!=Female,INITIATOR_genderResolved!=None)->{replace: [INITIATOR_definite]; "der [INITIATOR_label]"-"einen"; "die [INITIATOR_label]"-"eine"; "das [INITIATOR_label]"-"ein"} {lookup: [INITIATOR_label]; decline; 3}</li>
     <li>INITIATOR_nameIndefAcc(priority=-1)->{lookup: [INITIATOR_indefinite]; decline_tagged; 4}</li>
     <li>RECIPIENT_nameIndefAcc(RECIPIENT_genderResolved!=Male,RECIPIENT_genderResolved!=Female,RECIPIENT_genderResolved!=None)->{replace: [RECIPIENT_definite]; "der [RECIPIENT_label]"-"einen"; "die [RECIPIENT_label]"-"eine"; "das [RECIPIENT_label]"-"ein"} {lookup: [RECIPIENT_label]; decline; 3}</li>
     <li>RECIPIENT_nameIndefAcc(priority=-1)->{lookup: [RECIPIENT_indefinite]; decline_tagged; 4}</li>
+    <li>RECIPIENT_nameDefNom(RECIPIENT_genderResolved!=Male,RECIPIENT_genderResolved!=Female,RECIPIENT_genderResolved!=None)->{replace: [RECIPIENT_definite]; "der [RECIPIENT_label]"-"der"; "die [RECIPIENT_label]"-"die"; "das [RECIPIENT_label]"-"das"} {lookup: [RECIPIENT_label]; decline; 4}</li>
+    <li>RECIPIENT_nameDefNom(priority=-1)->{lookup: [RECIPIENT_definite]; decline_tagged; 1}</li>
     <li>RECIPIENT_nameDefDat(RECIPIENT_genderResolved!=Male,RECIPIENT_genderResolved!=Female,RECIPIENT_genderResolved!=None)->{replace: [RECIPIENT_definite]; "der [RECIPIENT_label]"-"dem"; "die [RECIPIENT_label]"-"der"; "das [RECIPIENT_label]"-"dem"} {lookup: [RECIPIENT_label]; decline; 6}</li>
     <li>RECIPIENT_nameDefDat(priority=-1)->{lookup: [RECIPIENT_definite]; decline_tagged; 3}</li>
     <li>RECIPIENT_nameDefAcc(RECIPIENT_genderResolved!=Male,RECIPIENT_genderResolved!=Female,RECIPIENT_genderResolved!=None)->{replace: [RECIPIENT_definite]; "der [RECIPIENT_label]"-"den"; "die [RECIPIENT_label]"-"die"; "das [RECIPIENT_label]"-"das"} {lookup: [RECIPIENT_label]; decline; 7}</li>
     <li>RECIPIENT_nameDefAcc(priority=-1)->{lookup: [RECIPIENT_definite]; decline_tagged; 4}</li>
+    <li>SUBJECT_nameDefNom(SUBJECT_genderResolved!=Male,SUBJECT_genderResolved!=Female,SUBJECT_genderResolved!=None)->{replace: [SUBJECT_definite]; "der [SUBJECT_label]"-"der"; "die [SUBJECT_label]"-"die"; "das [SUBJECT_label]"-"das"} {lookup: [SUBJECT_label]; decline; 4}</li>
+    <li>SUBJECT_nameDefNom(priority=-1)->{lookup: [SUBJECT_definite]; decline_tagged; 1}</li>
+    <li>SUBJECT_nameDefDat(SUBJECT_genderResolved!=Male,SUBJECT_genderResolved!=Female,SUBJECT_genderResolved!=None)->{replace: [SUBJECT_definite]; "der [SUBJECT_label]"-"dem"; "die [SUBJECT_label]"-"der"; "das [SUBJECT_label]"-"dem"} {lookup: [SUBJECT_label]; decline; 6}</li>
+    <li>SUBJECT_nameDefDat(priority=-1)->{lookup: [SUBJECT_definite]; decline_tagged; 3}</li>
+    <li>SUBJECT_nameDefAcc(SUBJECT_genderResolved!=Male,SUBJECT_genderResolved!=Female,SUBJECT_genderResolved!=None)->{replace: [SUBJECT_definite]; "der [SUBJECT_label]"-"den"; "die [SUBJECT_label]"-"die"; "das [SUBJECT_label]"-"das"} {lookup: [SUBJECT_label]; decline; 7}</li>
+    <li>SUBJECT_nameDefAcc(priority=-1)->{lookup: [SUBJECT_definite]; decline_tagged; 4}</li>
   </GlobalUtility.rulePack.rulesStrings>
   
   <!-- EN:

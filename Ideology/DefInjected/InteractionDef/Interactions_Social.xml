@@ -7,7 +7,9 @@
     <li>r_logentry->[INITIATOR_nameDef] tried to convert [RECIPIENT_nameDef], but failed.</li>
   -->
   <Convert_Failure.logRulesInitiator.rulesStrings>
-    <li>r_logentry->[INITIATOR_nameDef] versuchte [RECIPIENT_nameDef] zu bekehren, scheiterte aber.</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] versuchte, [RECIPIENT_nameDefAcc] zu bekehren, scheiterte aber.</li>
+    <li>INITIATOR_nameDefNom->{lookup: [INITIATOR_nameDef]; decline_tagged; 1}</li>
+    <li>RECIPIENT_nameDefAcc->{lookup: [RECIPIENT_nameDef]; decline_tagged; 4}</li>
   </Convert_Failure.logRulesInitiator.rulesStrings>
   
   <!-- EN: successful conversion -->
@@ -16,7 +18,9 @@
     <li>r_logentry->[INITIATOR_nameDef] tried to convert [RECIPIENT_nameDef] and succeeded.</li>
   -->
   <Convert_Success.logRulesInitiator.rulesStrings>
-    <li>r_logentry->[INITIATOR_nameDef] versuchte [RECIPIENT_nameDef] zu bekehren und hatte Erfolg.</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] versuchte, [RECIPIENT_nameDefAcc] zu bekehren, und hatte dabei Erfolg.</li>
+    <li>INITIATOR_nameDefNom->{lookup: [INITIATOR_nameDef]; decline_tagged; 1}</li>
+    <li>RECIPIENT_nameDefAcc->{lookup: [RECIPIENT_nameDef]; decline_tagged; 4}</li>
   </Convert_Success.logRulesInitiator.rulesStrings>
   
   <!-- EN: convert ideoligion attempt -->
@@ -25,7 +29,9 @@
     <li>r_logentry->[INITIATOR_nameDef] tried to convert [RECIPIENT_nameDef] to [INITIATOR_possessive] own ideoligion.</li>
   -->
   <ConvertIdeoAttempt.logRulesInitiator.rulesStrings>
-    <li>r_logentry->[INITIATOR_nameDef] versuchte, [RECIPIENT_nameDef] zu [INITIATOR_possessive]er eigenen Ideologie zu bekehren.</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] versuchte, [RECIPIENT_nameDefAcc] zu [INITIATOR_possessive]er eigenen Ideologie zu bekehren.</li>
+    <li>INITIATOR_nameDefNom->{lookup: [INITIATOR_nameDef]; decline_tagged; 1}</li>
+    <li>RECIPIENT_nameDefAcc->{lookup: [RECIPIENT_nameDef]; decline_tagged; 4}</li>
   </ConvertIdeoAttempt.logRulesInitiator.rulesStrings>
   
   <!-- EN: failed counsel -->
@@ -34,7 +40,9 @@
     <li>r_logentry->[INITIATOR_nameDef] tried to counsel [RECIPIENT_nameDef], but botched the attempt and made things worse.</li>
   -->
   <Counsel_Failure.logRulesInitiator.rulesStrings>
-    <li>r_logentry->[INITIATOR_nameDef] versuchte [RECIPIENT_nameDef] zu beraten, vermasselte es aber und machte alles nur noch schlimmer.</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] versuchte, [RECIPIENT_nameDefAcc] zu beraten, vermasselte es aber und machte alles nur noch schlimmer.</li>
+    <li>INITIATOR_nameDefNom->{lookup: [INITIATOR_nameDef]; decline_tagged; 1}</li>
+    <li>RECIPIENT_nameDefAcc->{lookup: [RECIPIENT_nameDef]; decline_tagged; 4}</li>
   </Counsel_Failure.logRulesInitiator.rulesStrings>
   
   <!-- EN: successful counsel -->
@@ -49,13 +57,16 @@
     <li>problems->recent difficulties</li>
   -->
   <Counsel_Success.logRulesInitiator.rulesStrings>
-    <li>r_logentry->[INITIATOR_nameDef] beriet den [RECIPIENT_nameDef] über [problems].</li>
-    <li>r_logentry->[INITIATOR_nameDef] half [RECIPIENT_nameDef], [problems] zu durchdenken.</li>
-    <li>r_logentry->[INITIATOR_nameDef] gab [RECIPIENT_nameDef] aufmunternde Ratschläge.</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] beriet [RECIPIENT_nameDefAcc] über [problems].</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] half [RECIPIENT_nameDefDat], [problems] zu durchdenken.</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] gab [RECIPIENT_nameDefDat] aufmunternde Ratschläge.</li>
     <li>problems->[RECIPIENT_possessive]e Probleme</li>
     <li>problems->[RECIPIENT_possessive]e Sorgen</li>
     <li>problems->[RECIPIENT_possessive]e schmerzhaften Gefühle</li>
     <li>problems->die jüngsten Schwierigkeiten</li>
+    <li>INITIATOR_nameDefNom->{lookup: [INITIATOR_nameDef]; decline_tagged; 1}</li>
+    <li>RECIPIENT_nameDefDat->{lookup: [RECIPIENT_nameDef]; decline_tagged; 3}</li>
+    <li>RECIPIENT_nameDefAcc->{lookup: [RECIPIENT_nameDef]; decline_tagged; 4}</li>
   </Counsel_Success.logRulesInitiator.rulesStrings>
   
   <!-- EN: preached health -->
@@ -67,19 +78,21 @@
     <li>preaching_topic->[RECIPIENT_possessive] purpose of existence</li>
   -->
   <PreachHealth.logRulesInitiator.rulesStrings>
-    <li>r_logentry->[INITIATOR_nameDef] stärkte [RECIPIENT_nameDef]'s Gesundheit, indem [INITIATOR_pronoun] über [preaching_topic] predigte.</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] stärkte [RECIPIENT_label]'s Gesundheit, indem [INITIATOR_pronoun] über [preaching_topic] predigte.</li>
     <li>preaching_topic->den Sinn des Lebens</li>
     <li>preaching_topic->höhere ideologische Ziele</li>
     <li>preaching_topic->[RECIPIENT_possessive]en Daseinszweck</li>
+    <li>INITIATOR_nameDefNom->{lookup: [INITIATOR_nameDef]; decline_tagged; 1}</li>
   </PreachHealth.logRulesInitiator.rulesStrings>
   
   <!-- EN: reassurance -->
-  <Reassure.label>Bestärkung</Reassure.label>
+  <Reassure.label>Glaube festigen</Reassure.label>
   <!-- EN:
     <li>r_logentry->[INITIATOR_nameDef] reinforced [RECIPIENT_nameDef]'s beliefs.</li>
   -->
   <Reassure.logRulesInitiator.rulesStrings>
-    <li>r_logentry->[INITIATOR_nameDef] bestärkte [RECIPIENT_nameDef] in [RECIPIENT_possessive]em Glauben.</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] festigte [RECIPIENT_label]'s Glauben.</li>
+    <li>INITIATOR_nameDefNom->{lookup: [INITIATOR_nameDef]; decline_tagged; 1}</li>
   </Reassure.logRulesInitiator.rulesStrings>
   
   <!-- EN: accuse -->
@@ -103,9 +116,9 @@
     <li>wrongdoing->disloyalty</li>
   -->
   <Trial_Accuse.logRulesInitiator.rulesStrings>
-    <li>r_logentry->[INITIATOR_nameDef] legte einige Beweise vor.</li>
-    <li>r_logentry->[INITIATOR_nameDef] appellierte an die Emotionen der Zuschauer.</li>
-    <li>r_logentry->[INITIATOR_nameDef] beschuldigte [RECIPIENT_nameDef][wrongdoing].</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] legte einige Beweise vor.</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] appellierte an die Emotionen der Zuschauer.</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] beschuldigte [RECIPIENT_nameDefAcc][wrongdoing].</li>
     <li>wrongdoing->, die Kolonie zu sabotieren</li>
     <li>wrongdoing->, faul zu sein</li>
     <li>wrongdoing->, zu viel zu essen</li>
@@ -119,6 +132,8 @@
     <li>wrongdoing-> des Hochverrats</li>
     <li>wrongdoing-> der Gehässigkeit</li>
     <li>wrongdoing-> der Untreue</li>
+    <li>INITIATOR_nameDefNom->{lookup: [INITIATOR_nameDef]; decline_tagged; 1}</li>
+    <li>RECIPIENT_nameDefAcc->{lookup: [RECIPIENT_nameDef]; decline_tagged; 4}</li>
   </Trial_Accuse.logRulesInitiator.rulesStrings>
   
   <!-- EN: defend -->
@@ -133,13 +148,14 @@
     <li>r_logentry->[INITIATOR_nameDef] called the trial a sham.</li>
   -->
   <Trial_Defend.logRulesInitiator.rulesStrings>
-    <li>r_logentry->[INITIATOR_nameDef] wies die Anschuldigung zurück.</li>
-    <li>r_logentry->[INITIATOR_nameDef] präsentierte eine andere Auslegung.</li>
-    <li>r_logentry->[INITIATOR_nameDef] plädierte auf die Geschworenen.</li>
-    <li>r_logentry->[INITIATOR_nameDef] flehte um Gnade.</li>
-    <li>r_logentry->[INITIATOR_nameDef] verzögerte das Verfahren.</li>
-    <li>r_logentry->[INITIATOR_nameDef] wies die Vorwürfe zurück.</li>
-    <li>r_logentry->[INITIATOR_nameDef] hielt das Verfahren für einen Schwindel.</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] wies die Anschuldigung zurück.</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] präsentierte eine andere Auslegung.</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] plädierte auf die Geschworenen.</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] flehte um Gnade.</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] verzögerte das Verfahren.</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] wies die Vorwürfe zurück.</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] hielt das Verfahren für einen Schwindel.</li>
+    <li>INITIATOR_nameDefNom->{lookup: [INITIATOR_nameDef]; decline_tagged; 1}</li>
   </Trial_Defend.logRulesInitiator.rulesStrings>
   
   <!-- EN: work drive -->
@@ -148,7 +164,9 @@
     <li>r_logentry->[INITIATOR_nameDef] called upon [RECIPIENT_nameDef] to work extra hard for the good of the colony.</li>
   -->
   <WorkDrive.logRulesInitiator.rulesStrings>
-    <li>r_logentry->[INITIATOR_nameDef] forderte [RECIPIENT_nameDef] auf, besonders hart für das Wohl der Kolonie zu arbeiten.</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] forderte [RECIPIENT_nameDefAcc] auf, besonders hart für das Wohl der Kolonie zu arbeiten.</li>
+    <li>INITIATOR_nameDefNom->{lookup: [INITIATOR_nameDef]; decline_tagged; 1}</li>
+    <li>RECIPIENT_nameDefAcc->{lookup: [RECIPIENT_nameDef]; decline_tagged; 4}</li>
   </WorkDrive.logRulesInitiator.rulesStrings>
   
 </LanguageData>

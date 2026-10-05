@@ -11,11 +11,13 @@
     <li>r_logentry->[INITIATOR_nameDef] whispered that security was lax and now would be a good time to escape.</li>
   -->
   <SparkSlaveRebellion.logRulesInitiator.rulesStrings>
-    <li>r_logentry->[INITIATOR_nameDef] schlug vor, dass sie sich aus dem Staub machen sollten.</li>
-    <li>r_logentry->[INITIATOR_nameDef] ermutigte [RECIPIENT_nameDef], [RECIPIENT_possessive]e Freiheit zurückzuholen.</li>
-    <li>r_logentry->[INITIATOR_nameDef] sprach davon, ihre Versklavung zu beenden und sich aus dem Staub zu machen.</li>
-    <li>r_logentry->[INITIATOR_nameDef] sprach von einem Leben jenseits der Knechtschaft und ermutigte [RECIPIENT_nameDef] zur Flucht.</li>
-    <li>r_logentry->[INITIATOR_nameDef] flüsterte, dass die Sicherheitsvorkehrungen zu lasch seien und jetzt ein guter Zeitpunkt wäre, zu fliehen.</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] schlug vor, dass sie sich aus dem Staub machen sollten.</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] ermutigte [RECIPIENT_nameDefAcc], [RECIPIENT_possessive]e Freiheit zurückzuholen.</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] sprach davon, ihre Versklavung zu beenden und sich aus dem Staub zu machen.</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] sprach von einem Leben jenseits der Knechtschaft und ermutigte [RECIPIENT_nameDefAcc] zur Flucht.</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] flüsterte, dass die Sicherheitsvorkehrungen zu lasch seien und jetzt ein guter Zeitpunkt wäre, zu fliehen.</li>
+    <li>INITIATOR_nameDefNom->{lookup: [INITIATOR_nameDef]; decline_tagged; 1}</li>
+    <li>RECIPIENT_nameDefAcc->{lookup: [RECIPIENT_nameDef]; decline_tagged; 4}</li>
   </SparkSlaveRebellion.logRulesInitiator.rulesStrings>
   
   <!-- EN: suppress -->
@@ -27,10 +29,13 @@
     <li>r_logentry->[INITIATOR_nameDef] suggested that [RECIPIENT_nameDef] follow orders and not ask questions.</li>
   -->
   <Suppress.logRulesInitiator.rulesStrings>
-    <li>r_logentry->[INITIATOR_nameDef] sagte [RECIPIENT_nameDef], dass Rebellion Strafen nach sich ziehen würde.</li>
-    <li>r_logentry->[INITIATOR_nameDef] warnte [RECIPIENT_nameDef], dass Ungehorsam bestraft werden würde.</li>
-    <li>r_logentry->[INITIATOR_nameDef] warnte [RECIPIENT_nameDef] vor Verstößen jeglicher Art.</li>
-    <li>r_logentry->[INITIATOR_nameDef] schlug [RECIPIENT_nameDef] vor, Befehle zu befolgen und keine Fragen zu stellen.</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] sagte [RECIPIENT_nameDefDat], dass Rebellion Strafen nach sich ziehen würde.</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] warnte [RECIPIENT_nameDefAcc], dass Ungehorsam bestraft werden würde.</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] warnte [RECIPIENT_nameDefAcc] vor Verstößen jeglicher Art.</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] schlug [RECIPIENT_nameDefDat] vor, Befehle zu befolgen und keine Fragen zu stellen.</li>
+    <li>INITIATOR_nameDefNom->{lookup: [INITIATOR_nameDef]; decline_tagged; 1}</li>
+    <li>RECIPIENT_nameDefDat->{lookup: [RECIPIENT_nameDef]; decline_tagged; 3}</li>
+    <li>RECIPIENT_nameDefAcc->{lookup: [RECIPIENT_nameDef]; decline_tagged; 4}</li>
   </Suppress.logRulesInitiator.rulesStrings>
   
 </LanguageData>

@@ -10,10 +10,13 @@
     <li>r_logentry->[INITIATOR_nameDef] explained to [RECIPIENT_nameDef] that [RECIPIENT_pronoun] must work or face punishment.</li>
   -->
   <EnslaveAttempt.logRulesInitiator.rulesStrings>
-    <li>r_logentry->[INITIATOR_nameDef] erzählte [RECIPIENT_nameDef], dass [RECIPIENT_pronoun] für die Kolonie arbeiten muss.</li>
-    <li>r_logentry->[INITIATOR_nameDef] informierte [RECIPIENT_nameDef], dass [RECIPIENT_pronoun] den Befehlen gehorchen und arbeiten muss.</li>
-    <li>r_logentry->[INITIATOR_nameDef] wies [RECIPIENT_nameDef] an, sich auf ein Leben als Zwangsarbeiter vorzubereiten.</li>
-    <li>r_logentry->[INITIATOR_nameDef] erklärte [RECIPIENT_nameDef], dass [RECIPIENT_pronoun] arbeiten muss, oder entsprechend bestraft wird.</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] erzählte [RECIPIENT_nameDefDat], dass [RECIPIENT_pronoun] für die Kolonie arbeiten muss.</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] informierte [RECIPIENT_nameDefAcc], dass [RECIPIENT_pronoun] den Befehlen gehorchen und arbeiten muss.</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] wies [RECIPIENT_nameDefAcc] an, sich auf ein Leben als Zwangsarbeiter vorzubereiten.</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] erklärte [RECIPIENT_nameDefDat], dass [RECIPIENT_pronoun] arbeiten muss, oder entsprechend bestraft wird.</li>
+    <li>INITIATOR_nameDefNom->{lookup: [INITIATOR_nameDef]; decline_tagged; 1}</li>
+    <li>RECIPIENT_nameDefDat->{lookup: [RECIPIENT_nameDef]; decline_tagged; 3}</li>
+    <li>RECIPIENT_nameDefAcc->{lookup: [RECIPIENT_nameDef]; decline_tagged; 4}</li>
   </EnslaveAttempt.logRulesInitiator.rulesStrings>
   
   <!-- EN: try to reduce will -->
@@ -62,11 +65,11 @@
     <li>givein->yield [RECIPIENT_objective]self</li>
   -->
   <ReduceWill.logRulesInitiator.rulesStrings>
-    <li>r_logentry->[INITIATOR_nameDef] erzählte [RECIPIENT_nameDef], dass [RECIPIENT_pronoun] [negative].</li>
-    <li>r_logentry->[INITIATOR_nameDef] erklärte [RECIPIENT_nameDef], dass [RECIPIENT_pronoun] [negative].</li>
-    <li>r_logentry->[INITIATOR_nameDef] drohte [RECIPIENT_nameDef] mit [threat], wenn [RECIPIENT_pronoun] [refused].</li>
-    <li>r_logentry->[INITIATOR_nameDef] informierte [RECIPIENT_nameDef], dass [RECIPIENT_pronoun] [disillusionment].</li>
-    <li>r_logentry->[INITIATOR_nameDef] verlangte, dass [RECIPIENT_nameDef] sich der Kolonie [givein].</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] erzählte [RECIPIENT_nameDefDat], dass [RECIPIENT_pronoun] [negative].</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] erklärte [RECIPIENT_nameDefDat], dass [RECIPIENT_pronoun] [negative].</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] drohte [RECIPIENT_nameDefDat] mit [threat], sollte [RECIPIENT_pronoun] [refused].</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] informierte [RECIPIENT_nameDefAcc], dass [RECIPIENT_pronoun] [disillusionment].</li>
+    <li>r_logentry->[INITIATOR_nameDefNom] forderte [RECIPIENT_nameDefAcc] auf, sich der Kolonie [givein].</li>
     <li>negative->keine Zukunft hat</li>
     <li>negative->keine Chance hat, zu entkommen</li>
     <li>negative->abseits der Kolonie keine Zukunft hat</li>
@@ -78,7 +81,7 @@
     <li>threat->Bestrafung</li>
     <li>threat->Verstümmelung</li>
     <li>threat->dem Hungertod</li>
-    <li>threat->lebenslanger Inhaftierung</li>
+    <li>threat->lebenslanger Haft</li>
     <li>threat->dem Tod</li>
     <li>threat->Isolation</li>
     <li>threat->Amputation</li>
@@ -87,22 +90,25 @@
     <li>threat->Kannibalismus</li>
     <li>threat->Organentnahme</li>
     <li>threat->langer Haftzeit</li>
-    <li>refused->versucht zu fliehen</li>
-    <li>refused->die Kolonie beleidigt</li>
-    <li>refused->nicht arbeitet</li>
-    <li>refused->einen Befehl verweigert</li>
-    <li>refused->sich nicht unterwirft</li>
-    <li>refused->sich weigert zu gehorchen</li>
-    <li>refused->unverschämt benimmt</li>
+    <li>refused->versuchen zu fliehen</li>
+    <li>refused->die Kolonie beleidigen</li>
+    <li>refused->nicht arbeiten</li>
+    <li>refused->einen Befehl verweigern</li>
+    <li>refused->sich nicht unterwerfen</li>
+    <li>refused->sich weigern zu gehorchen</li>
+    <li>refused->unverschämt benehmen</li>
     <li>disillusionment->mit der jetzigen Situation leben sollte</li>
     <li>disillusionment->sich keine Hoffnung machen sollte, das sich etwas ändern wird</li>
     <li>disillusionment->sich besser fügen sollte</li>
     <li>disillusionment->alleine nicht überleben wird</li>
     <li>disillusionment->keine andere Wahl hätte, als sich zu fügen</li>
-    <li>givein->fügt</li>
-    <li>givein->unterwirft</li>
-    <li>givein->unterordnet</li>
-    <li>givein->beugt</li>
+    <li>givein->zu fügen</li>
+    <li>givein->zu unterwerfen</li>
+    <li>givein->hinzugeben</li>
+    <li>givein->unterzuordnen</li>
+    <li>INITIATOR_nameDefNom->{lookup: [INITIATOR_nameDef]; decline_tagged; 1}</li>
+    <li>RECIPIENT_nameDefDat->{lookup: [RECIPIENT_nameDef]; decline_tagged; 3}</li>
+    <li>RECIPIENT_nameDefAcc->{lookup: [RECIPIENT_nameDef]; decline_tagged; 4}</li>
   </ReduceWill.logRulesInitiator.rulesStrings>
   
 </LanguageData>
