@@ -442,11 +442,13 @@
     <li>THING_indefinite_dat->{replace: [THING_indefinite]; "ein [THING_label]"-"einem"; "eine [THING_label]"-"einer"} {lookup: [THING_label]; decline; 2}</li>
     <li>THING_indefinite_acc->{replace: [THING_definite]; "der [THING_label]"-"einen"; "die [THING_label]"-"eine"; "das [THING_label]"-"ein"} {lookup: [THING_label]; decline; 3}</li>
     <li>THING_definite_dat->{replace: [THING_definite]; "der [THING_label]"-"dem"; "die [THING_label]"-"der"; "das [THING_label]"-"dem"} {lookup: [THING_label]; decline; 6}</li>
+    <li>THING_definite_gen->{replace: [THING_definite]; "der [THING_label]"-"des"; "die [THING_label]"-"der"; "das [THING_label]"-"des"} {lookup: [THING_label]; decline; 5}</li>
     <li>THING_definite_nom->{replace: [THING_definite]; " [THING_label]"-""} {lookup: [THING_label]; decline; 4}</li>
-    <li>PAWN_nameFullIndefDat->{lookup: [PAWN_nameFull]; decline_tagged; 3}</li>
-    <li>PAWN_nameDefNom->{lookup: [PAWN_nameDef]; decline_tagged; 1}</li>
-    <li>PAWN_nameDefDat->{lookup: [PAWN_nameDef]; decline_tagged; 3}</li>
-    <li>PAWN_nameDefAcc->{lookup: [PAWN_nameDef]; decline_tagged; 4}</li>
+    <li>PAWN_nameFullIndefDat->{lookup: [PAWN_nameFull]; decline_tagged_dat}</li>
+    <li>PAWN_nameDefNom->{lookup: [PAWN_nameDef]; decline_tagged_nom}</li>
+    <li>PAWN_nameDefGen->{lookup: von [PAWN_nameDef]; decline_tagged_gen}</li>
+    <li>PAWN_nameDefDat->{lookup: [PAWN_nameDef]; decline_tagged_dat}</li>
+    <li>PAWN_nameDefAcc->{lookup: [PAWN_nameDef]; decline_tagged_acc}</li>
   </ArtDescriptionUtility_Global.rulePack.rulesStrings>
   
 </LanguageData>

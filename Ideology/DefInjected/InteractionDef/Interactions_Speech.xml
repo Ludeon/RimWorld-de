@@ -60,7 +60,7 @@
     <li>INITIATOR_possessive_PersonalCharacteristic->[INITIATOR_possessive] [PersonalCharacteristicMasNomDef]</li>
     <li>INITIATOR_possessive_PersonalCharacteristic->[INITIATOR_possessive]e [PersonalCharacteristicFemNomDef]</li>
     <li>INITIATOR_possessive_PersonalCharacteristic->[INITIATOR_possessive] [PersonalCharacteristicNeuNomDef]</li>
-    <li>INITIATOR_nameDefNom->{lookup: [INITIATOR_nameDef]; decline_tagged; 1}</li>
+    <li>INITIATOR_nameDefNom->{lookup: [INITIATOR_nameDef]; decline_tagged_nom}</li>
   </Speech_AcceptRole.logRulesInitiator.rulesStrings>
   
   <!-- EN: blinding speech -->
@@ -95,7 +95,7 @@
     <li>r_logentry->[INITIATOR_nameDefNom] [spokeof2], wie man sich bewegt, ohne zu sehen.</li>
     <li>r_logentry->[INITIATOR_nameDefNom] [spokeof] die wahren Schichten der Realität unter dem Sichtbaren.</li>
     <li>r_logentry->[INITIATOR_nameDefNom] [spokeof] geistige Verbindungen.</li>
-    <li>INITIATOR_nameDefNom->{lookup: [INITIATOR_nameDef]; decline_tagged; 1}</li>
+    <li>INITIATOR_nameDefNom->{lookup: [INITIATOR_nameDef]; decline_tagged_nom}</li>
   </Speech_Blinding.logRulesInitiator.rulesStrings>
   
   <!-- EN: conversion speech -->
@@ -133,7 +133,7 @@
     <li>r_logentry->[INITIATOR_nameDefNom] [spokeof] Verbundenheit und Zugehörigkeit.</li>
     <li>r_logentry->[INITIATOR_nameDefNom] [spokeof] falsche Glaubenssätze.</li>
     <li>r_logentry->[INITIATOR_nameDefNom] [spokeof] den Fortschritt in Richtung Zukunft.</li>
-    <li>INITIATOR_nameDefNom->{lookup: [INITIATOR_nameDef]; decline_tagged; 1}</li>
+    <li>INITIATOR_nameDefNom->{lookup: [INITIATOR_nameDef]; decline_tagged_nom}</li>
   </Speech_Conversion.logRulesInitiator.rulesStrings>
   
   <!-- EN: celebration speech -->
@@ -158,7 +158,7 @@
     <li>r_logentry->[INITIATOR_nameDefNom] [praised] das Zusammensein.</li>
     <li>r_logentry->[INITIATOR_nameDefNom] [praised] den Austausch von Ideen.</li>
     <li>r_logentry->[INITIATOR_nameDefNom] [praised] [INITIATOR_possessive]e eigene Gruppe.</li>
-    <li>INITIATOR_nameDefNom->{lookup: [INITIATOR_nameDef]; decline_tagged; 1}</li>
+    <li>INITIATOR_nameDefNom->{lookup: [INITIATOR_nameDef]; decline_tagged_nom}</li>
   </Speech_DateRitual.logRulesInitiator.rulesStrings>
   
   <!-- EN: duel speech -->
@@ -197,7 +197,7 @@
     <li>r_logentry->[INITIATOR_nameDefNom] [praised] Leben und Drama.</li>
     <li>r_logentry->[INITIATOR_nameDefNom] [praised] Wut und Hoffnung.</li>
     <li>r_logentry->[INITIATOR_nameDefNom] [praised] Zorn und Stärke.</li>
-    <li>INITIATOR_nameDefNom->{lookup: [INITIATOR_nameDef]; decline_tagged; 1}</li>
+    <li>INITIATOR_nameDefNom->{lookup: [INITIATOR_nameDef]; decline_tagged_nom}</li>
   </Speech_Duel.logRulesInitiator.rulesStrings>
   
   <!-- EN: execution speech -->
@@ -224,7 +224,7 @@
     <li>r_logentry->[INITIATOR_nameDefNom] [spokeof] die Symbolik des Todes.</li>
     <li>r_logentry->[INITIATOR_nameDefNom] [spokeof] die Todesstrafe und ihre Geschichte.</li>
     <li>r_logentry->[INITIATOR_nameDefNom] [spokeof] die Gründe für die Hinrichtung.</li>
-    <li>INITIATOR_nameDefNom->{lookup: [INITIATOR_nameDef]; decline_tagged; 1}</li>
+    <li>INITIATOR_nameDefNom->{lookup: [INITIATOR_nameDef]; decline_tagged_nom}</li>
   </Speech_Execution.logRulesInitiator.rulesStrings>
   
   <!-- EN: funeral speech -->
@@ -257,7 +257,7 @@
     <li>r_logentry->[INITIATOR_nameDefNom] [spokeof] verlorene Freunde.</li>
     <li>r_logentry->[INITIATOR_nameDefNom] [spokeof] Leben und Glück.</li>
     <li>r_logentry->[INITIATOR_nameDefNom] [spokeof2], unvollendete Arbeiten fortzusetzen.</li>
-    <li>INITIATOR_nameDefNom->{lookup: [INITIATOR_nameDef]; decline_tagged; 1}</li>
+    <li>INITIATOR_nameDefNom->{lookup: [INITIATOR_nameDef]; decline_tagged_nom}</li>
   </Speech_Funeral.logRulesInitiator.rulesStrings>
   
   <!-- EN: leader speech -->
@@ -342,7 +342,7 @@
     <li>r_logentry->[INITIATOR_nameDefNom] [spokeof] den Tod als Motivator.</li>
     <li>r_logentry->[INITIATOR_nameDefNom] [spokeof] starke Hände und Herzen.</li>
     <li>r_logentry->[INITIATOR_nameDefNom] [spokeof] das Recht zu überleben.</li>
-    <li>INITIATOR_nameDefNom->{lookup: [INITIATOR_nameDef]; decline_tagged; 1}</li>
+    <li>INITIATOR_nameDefNom->{lookup: [INITIATOR_nameDef]; decline_tagged_nom}</li>
   </Speech_Leader.logRulesInitiator.rulesStrings>
   
   <!-- EN: role removal speech -->
@@ -390,7 +390,7 @@
     <li>r_logentry->[INITIATOR_nameDefNom] [spokeof] die soziale Struktur der Gemeinschaft.</li>
     <li>r_logentry->[INITIATOR_nameDefNom] [spokeof] bessere Kandidaten.</li>
     <li>r_logentry->[INITIATOR_nameDefNom] [spokeof2], die Ziele der Gemeinschaft über die eigenen Ambitionen zu stellen.</li>
-    <li>INITIATOR_nameDefNom->{lookup: [INITIATOR_nameDef]; decline_tagged; 1}</li>
+    <li>INITIATOR_nameDefNom->{lookup: [INITIATOR_nameDef]; decline_tagged_nom}</li>
   </Speech_RemoveRole.logRulesInitiator.rulesStrings>
   
   <!-- EN: sacrifice speech -->
@@ -439,7 +439,7 @@
     <li>crazy->kicherte</li>
     <li>crazy->fuchtelte mit einer Klinge</li>
     <li>crazy->murmelte ständig vor sich hin</li>
-    <li>INITIATOR_nameDefNom->{lookup: [INITIATOR_nameDef]; decline_tagged; 1}</li>
+    <li>INITIATOR_nameDefNom->{lookup: [INITIATOR_nameDef]; decline_tagged_nom}</li>
   </Speech_Sacrifice.logRulesInitiator.rulesStrings>
   
   <!-- EN: scarification speech -->
@@ -484,7 +484,7 @@
     <li>crazy->kicherte</li>
     <li>crazy->fuchtelte mit einer Klinge</li>
     <li>crazy->murmelte ständig vor sich hin</li>
-    <li>INITIATOR_nameDefNom->{lookup: [INITIATOR_nameDef]; decline_tagged; 1}</li>
+    <li>INITIATOR_nameDefNom->{lookup: [INITIATOR_nameDef]; decline_tagged_nom}</li>
   </Speech_Scarification.logRulesInitiator.rulesStrings>
   
   <!-- EN: tree connection speech -->
@@ -517,7 +517,7 @@
     <li>r_logentry->[INITIATOR_nameDefNom] [spokeof] die Rolle der Menschheit unter den Bäumen.</li>
     <li>r_logentry->[INITIATOR_nameDefNom] [spokeof] die Pflanzenwelt und die Ewigkeit.</li>
     <li>r_logentry->[INITIATOR_nameDefNom] [spokeof] die Verbindung mit der Natur.</li>
-    <li>INITIATOR_nameDefNom->{lookup: [INITIATOR_nameDef]; decline_tagged; 1}</li>
+    <li>INITIATOR_nameDefNom->{lookup: [INITIATOR_nameDef]; decline_tagged_nom}</li>
   </Speech_TreeConnection.logRulesInitiator.rulesStrings>
   
 </LanguageData>

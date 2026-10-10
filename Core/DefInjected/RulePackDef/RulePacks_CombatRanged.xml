@@ -85,9 +85,9 @@
     <li>weapon_dat->{lookup: [WEAPON_label]; decline; 6}</li>
     <li>weapon_dat_his->[INITIATOR_possessive]{replace: ^[WEAPON_indefinite]; "^ein [WEAPON_label]"-"em"; "^eine [WEAPON_label]"-"er"; "^"-""}</li>
     <li>ORIGINALTARGET_nameDefAcc(ORIGINALTARGET_genderResolved!=Male,ORIGINALTARGET_genderResolved!=Female,ORIGINALTARGET_genderResolved!=None)->{replace: [ORIGINALTARGET_definite]; "der [ORIGINALTARGET_label]"-"den"; "die [ORIGINALTARGET_label]"-"die"; "das [ORIGINALTARGET_label]"-"das"} {lookup: [ORIGINALTARGET_label]; decline; 7}</li>
-    <li>ORIGINALTARGET_nameDefAcc(priority=-1)->{lookup: [ORIGINALTARGET_definite]; decline_tagged; 4}</li>
+    <li>ORIGINALTARGET_nameDefAcc(priority=-1)->{lookup: [ORIGINALTARGET_definite]; decline_tagged_acc}</li>
     <li>ORIGINALTARGET_nameDefNom(ORIGINALTARGET_genderResolved!=Male,ORIGINALTARGET_genderResolved!=Female,ORIGINALTARGET_genderResolved!=None)->{replace: [ORIGINALTARGET_definite]; " [ORIGINALTARGET_label]"-""} {lookup: [ORIGINALTARGET_label]; decline; 4}</li>
-    <li>ORIGINALTARGET_nameDefNom(priority=-1)->{lookup: [ORIGINALTARGET_definite]; decline_tagged; 1}</li>
+    <li>ORIGINALTARGET_nameDefNom(priority=-1)->{lookup: [ORIGINALTARGET_definite]; decline_tagged_nom}</li>
   </Combat_RangedBase.rulePack.rulesStrings>
   
   <!-- EN:
@@ -472,7 +472,7 @@
     <li>ducked->bückte sich</li>
     <li>ducked->versteckte sich</li>
     <li>COVER_nameDefDat(ORIGINALTARGET_genderResolved!=Male,ORIGINALTARGET_genderResolved!=Female,ORIGINALTARGET_genderResolved!=None)->{replace: [ORIGINALTARGET_definite]; "der [ORIGINALTARGET_label]"-"dem"; "die [ORIGINALTARGET_label]"-"der"; "das [ORIGINALTARGET_label]"-"dem"} {lookup: [ORIGINALTARGET_label]; decline; 6}</li>
-    <li>COVER_nameDefDat(priority=-1)->{lookup: [ORIGINALTARGET_definite]; decline_tagged; 3}</li>
+    <li>COVER_nameDefDat(priority=-1)->{lookup: [ORIGINALTARGET_definite]; decline_tagged_dat}</li>
   </Combat_RangedMiss.rulePack.rulesStrings>
   
 </LanguageData>

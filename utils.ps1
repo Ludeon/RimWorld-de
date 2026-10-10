@@ -98,7 +98,9 @@ function Update-OutputFile {
     # Scan for words in the XML files and add them to the temp file
     $TempLines = Scan-XML -Rules $ScanRules
     if ($TempLines.Count -eq 0) { continue }
-    if ($PostProcCallback) { $TempLines = & $PostProcCallback $TempLines }
+    if ($PostProcCallback) {
+      $TempLines = & $PostProcCallback $TempLines $DLC.ToString()
+    }
     # Merge the temp file with the output file
     $OutputFileLinesNew = Merge-Output `
       -TempLines $TempLines `

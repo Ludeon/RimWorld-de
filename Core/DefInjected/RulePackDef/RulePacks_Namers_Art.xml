@@ -86,23 +86,23 @@
     <li>r_art_name->[art_name_numeric]</li>
     <li>r_art_name->[Artwork] [art_name_numeric]</li>
     <li>r_art_name->[ConceptAny] Nr. [art_name_numeric]</li>
-    <li>r_art_name->[art_name_numeric] von [ANYPAWN_nameIndefDat]</li>
+    <li>r_art_name->[art_name_numeric] [ANYPAWN_nameIndefGen]</li>
     <!-- Person. High probability; if we can use these we want to -->
     <li>r_art_name(p=6)->[ANYPAWN_label]'s [Artwork]</li>
-    <li>r_art_name->Der [ArtworkMas] von [ANYPAWN_nameIndefDat]</li>
-    <li>r_art_name->Die [ArtworkFem] von [ANYPAWN_nameIndefDat]</li>
-    <li>r_art_name->Das [ArtworkNeu] von [ANYPAWN_nameIndefDat]</li>
+    <li>r_art_name->Der [ArtworkMas] [ANYPAWN_nameIndefGen]</li>
+    <li>r_art_name->Die [ArtworkFem] [ANYPAWN_nameIndefGen]</li>
+    <li>r_art_name->Das [ArtworkNeu] [ANYPAWN_nameIndefGen]</li>
     <li>r_art_name->[ANYPAWN_nameIndef] in [ColorCap]</li>
     <li>r_art_name->[ANYPAWN_label]'s [PersonalCharacteristicNom]</li>
     <li>r_art_name->[ANYPAWN_label]'s [PersonalCharacteristicsNomIndef]</li>
-    <li>r_art_name->Die [PersonalCharacteristicsNomDef] von [ANYPAWN_nameIndefDat]</li>
-    <li>r_art_name->Der [PersonalCharacteristicMasNomDef] von [ANYPAWN_nameIndefDat]</li>
-    <li>r_art_name->Die [PersonalCharacteristicFemNomDef] von [ANYPAWN_nameIndefDat]</li>
-    <li>r_art_name->Das [PersonalCharacteristicNeuNomDef] von [ANYPAWN_nameIndefDat]</li>
+    <li>r_art_name->Die [PersonalCharacteristicsNomDef] [ANYPAWN_nameIndefGen]</li>
+    <li>r_art_name->Der [PersonalCharacteristicMasNomDef] [ANYPAWN_nameIndefGen]</li>
+    <li>r_art_name->Die [PersonalCharacteristicFemNomDef] [ANYPAWN_nameIndefGen]</li>
+    <li>r_art_name->Das [PersonalCharacteristicNeuNomDef] [ANYPAWN_nameIndefGen]</li>
     <li>r_art_name->[ANYPAWN_label]'s [ConceptAny]</li>
-    <li>r_art_name->Der [ConceptAnyMas] von [ANYPAWN_nameIndefDat]</li>
-    <li>r_art_name->Die [ConceptAnyFem] von [ANYPAWN_nameIndefDat]</li>
-    <li>r_art_name->Das [ConceptAnyNeu] von [ANYPAWN_nameIndefDat]</li>
+    <li>r_art_name->Der [ConceptAnyMas] [ANYPAWN_nameIndefGen]</li>
+    <li>r_art_name->Die [ConceptAnyFem] [ANYPAWN_nameIndefGen]</li>
+    <li>r_art_name->Das [ConceptAnyNeu] [ANYPAWN_nameIndefGen]</li>
     <li>art_name_numeric->[maybe_letter][Digit][maybe_letter]</li>
     <li>art_name_numeric->[maybe_letter][Digit][Digit][maybe_letter]</li>
     <li>art_name_numeric->[maybe_letter][Digit][Digit][Digit][maybe_letter]</li>
@@ -133,7 +133,7 @@
     <li>maybe_adjective_Neu(p=2)->[AdjectiveAngsty]es</li>
     <li>maybe_adjective_Neu->[AdjectiveBadass]es</li>
     <li>maybe_adjective_Neu->[Color]es</li>
-    <li>ANYPAWN_nameIndefDat->{lookup: [ANYPAWN_nameIndef]; decline_tagged; 3}</li>
+    <li>ANYPAWN_nameIndefGen->{lookup: von [ANYPAWN_nameIndef]; decline_tagged_gen}</li>
   </NamerArtCommon.rulePack.rulesStrings>
   
   <!-- EN:
@@ -171,8 +171,8 @@
     <li>r_art_name(p=3)->[ANYPAWN_label]'s [PersonBadass]</li>
     <li>r_art_name(p=3)->[ANYPAWN_label]'s [PersonAlly]</li>
     <li>r_art_name(p=3)->[ANYPAWN_label]'s [PersonFamily]</li>
-    <li>r_art_name(p=3)->[ConceptBadass] von [ANYPAWN_nameIndefDat]</li>
-    <li>ANYPAWN_nameIndefDat->{lookup: [ANYPAWN_nameIndef]; decline_tagged; 3}</li>
+    <li>r_art_name(p=3)->[ConceptBadass] [ANYPAWN_nameIndefGen]</li>
+    <li>ANYPAWN_nameIndefGen->{lookup: von [ANYPAWN_nameIndef]; decline_tagged_gen}</li>
   </NamerArtWeapon.rulePack.rulesStrings>
   
 </LanguageData>

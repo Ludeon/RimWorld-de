@@ -14,9 +14,9 @@
     <li>r_logentry->[INITIATOR_nameDefNom] informierte [RECIPIENT_nameDefAcc], dass [RECIPIENT_pronoun] den Befehlen gehorchen und arbeiten muss.</li>
     <li>r_logentry->[INITIATOR_nameDefNom] wies [RECIPIENT_nameDefAcc] an, sich auf ein Leben als Zwangsarbeiter vorzubereiten.</li>
     <li>r_logentry->[INITIATOR_nameDefNom] erklärte [RECIPIENT_nameDefDat], dass [RECIPIENT_pronoun] arbeiten muss, oder entsprechend bestraft wird.</li>
-    <li>INITIATOR_nameDefNom->{lookup: [INITIATOR_nameDef]; decline_tagged; 1}</li>
-    <li>RECIPIENT_nameDefDat->{lookup: [RECIPIENT_nameDef]; decline_tagged; 3}</li>
-    <li>RECIPIENT_nameDefAcc->{lookup: [RECIPIENT_nameDef]; decline_tagged; 4}</li>
+    <li>INITIATOR_nameDefNom->{lookup: [INITIATOR_nameDef]; decline_tagged_nom}</li>
+    <li>RECIPIENT_nameDefDat->{lookup: [RECIPIENT_nameDef]; decline_tagged_dat}</li>
+    <li>RECIPIENT_nameDefAcc->{lookup: [RECIPIENT_nameDef]; decline_tagged_acc}</li>
   </EnslaveAttempt.logRulesInitiator.rulesStrings>
   
   <!-- EN: try to reduce will -->
@@ -106,9 +106,9 @@
     <li>givein->zu unterwerfen</li>
     <li>givein->hinzugeben</li>
     <li>givein->unterzuordnen</li>
-    <li>INITIATOR_nameDefNom->{lookup: [INITIATOR_nameDef]; decline_tagged; 1}</li>
-    <li>RECIPIENT_nameDefDat->{lookup: [RECIPIENT_nameDef]; decline_tagged; 3}</li>
-    <li>RECIPIENT_nameDefAcc->{lookup: [RECIPIENT_nameDef]; decline_tagged; 4}</li>
+    <li>INITIATOR_nameDefNom->{lookup: [INITIATOR_nameDef]; decline_tagged_nom}</li>
+    <li>RECIPIENT_nameDefDat->{lookup: [RECIPIENT_nameDef]; decline_tagged_dat}</li>
+    <li>RECIPIENT_nameDefAcc->{lookup: [RECIPIENT_nameDef]; decline_tagged_acc}</li>
   </ReduceWill.logRulesInitiator.rulesStrings>
   
 </LanguageData>

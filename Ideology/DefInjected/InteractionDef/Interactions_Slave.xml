@@ -16,8 +16,8 @@
     <li>r_logentry->[INITIATOR_nameDefNom] sprach davon, ihre Versklavung zu beenden und sich aus dem Staub zu machen.</li>
     <li>r_logentry->[INITIATOR_nameDefNom] sprach von einem Leben jenseits der Knechtschaft und ermutigte [RECIPIENT_nameDefAcc] zur Flucht.</li>
     <li>r_logentry->[INITIATOR_nameDefNom] flüsterte, dass die Sicherheitsvorkehrungen zu lasch seien und jetzt ein guter Zeitpunkt wäre, zu fliehen.</li>
-    <li>INITIATOR_nameDefNom->{lookup: [INITIATOR_nameDef]; decline_tagged; 1}</li>
-    <li>RECIPIENT_nameDefAcc->{lookup: [RECIPIENT_nameDef]; decline_tagged; 4}</li>
+    <li>INITIATOR_nameDefNom->{lookup: [INITIATOR_nameDef]; decline_tagged_nom}</li>
+    <li>RECIPIENT_nameDefAcc->{lookup: [RECIPIENT_nameDef]; decline_tagged_acc}</li>
   </SparkSlaveRebellion.logRulesInitiator.rulesStrings>
   
   <!-- EN: suppress -->
@@ -33,9 +33,9 @@
     <li>r_logentry->[INITIATOR_nameDefNom] warnte [RECIPIENT_nameDefAcc], dass Ungehorsam bestraft werden würde.</li>
     <li>r_logentry->[INITIATOR_nameDefNom] warnte [RECIPIENT_nameDefAcc] vor Verstößen jeglicher Art.</li>
     <li>r_logentry->[INITIATOR_nameDefNom] schlug [RECIPIENT_nameDefDat] vor, Befehle zu befolgen und keine Fragen zu stellen.</li>
-    <li>INITIATOR_nameDefNom->{lookup: [INITIATOR_nameDef]; decline_tagged; 1}</li>
-    <li>RECIPIENT_nameDefDat->{lookup: [RECIPIENT_nameDef]; decline_tagged; 3}</li>
-    <li>RECIPIENT_nameDefAcc->{lookup: [RECIPIENT_nameDef]; decline_tagged; 4}</li>
+    <li>INITIATOR_nameDefNom->{lookup: [INITIATOR_nameDef]; decline_tagged_nom}</li>
+    <li>RECIPIENT_nameDefDat->{lookup: [RECIPIENT_nameDef]; decline_tagged_dat}</li>
+    <li>RECIPIENT_nameDefAcc->{lookup: [RECIPIENT_nameDef]; decline_tagged_acc}</li>
   </Suppress.logRulesInitiator.rulesStrings>
   
 </LanguageData>

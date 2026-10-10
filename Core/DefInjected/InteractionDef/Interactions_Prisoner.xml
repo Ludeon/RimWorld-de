@@ -44,10 +44,10 @@
     <li>r_logentry->[INITIATOR_nameDefNom] ermunterte [RECIPIENT_nameDefAcc], [talkabout].</li>
     <li>r_logentry->[INITIATOR_nameDefNom] gab [RECIPIENT_nameDefDat] eine Chance, [talkabout].</li>
     <li>r_logentry->[INITIATOR_nameDefNom] zeigte Interesse an [RECIPIENT_label]'s [PersonalCharacteristicsDatDef].</li>
-    <li>r_logentry(p=0.25)->[INITIATOR_nameDefNom] zeigte Interesse an den [PersonalCharacteristicsDatDef] von [RECIPIENT_nameDefDat].</li>
-    <li>r_logentry(p=0.25)->[INITIATOR_nameDefNom] zeigte Interesse am [PersonalCharacteristicMasDatDef] von [RECIPIENT_nameDefDat].</li>
-    <li>r_logentry(p=0.25)->[INITIATOR_nameDefNom] zeigte Interesse an der [PersonalCharacteristicFemDatDef] von [RECIPIENT_nameDefDat].</li>
-    <li>r_logentry(p=0.25)->[INITIATOR_nameDefNom] zeigte Interesse am [PersonalCharacteristicNeuDatDef] von [RECIPIENT_nameDefDat].</li>
+    <li>r_logentry(p=0.25)->[INITIATOR_nameDefNom] zeigte Interesse an den [PersonalCharacteristicsDatDef] [RECIPIENT_nameDefGen].</li>
+    <li>r_logentry(p=0.25)->[INITIATOR_nameDefNom] zeigte Interesse am [PersonalCharacteristicMasDatDef] [RECIPIENT_nameDefGen].</li>
+    <li>r_logentry(p=0.25)->[INITIATOR_nameDefNom] zeigte Interesse an der [PersonalCharacteristicFemDatDef] [RECIPIENT_nameDefGen].</li>
+    <li>r_logentry(p=0.25)->[INITIATOR_nameDefNom] zeigte Interesse am [PersonalCharacteristicNeuDatDef] [RECIPIENT_nameDefGen].</li>
     <li>r_logentry(p=0.25)->[INITIATOR_nameDefNom] fragte [RECIPIENT_nameDefAcc] über [RECIPIENT_possessive]e [PersonalCharacteristicsAccDef] aus.</li>
     <li>r_logentry(p=0.25)->[INITIATOR_nameDefNom] fragte [RECIPIENT_nameDefAcc] über [RECIPIENT_possessive]en [PersonalCharacteristicMasAccDef] aus.</li>
     <li>r_logentry(p=0.25)->[INITIATOR_nameDefNom] fragte [RECIPIENT_nameDefAcc] über [RECIPIENT_possessive]e [PersonalCharacteristicFemAccDef] aus.</li>
@@ -77,9 +77,10 @@
     <li>subject(p=0.5)->[INITIATOR_possessive]e [PersonalCharacteristicFemAccDef]</li>
     <li>subject(p=0.5)->[INITIATOR_possessive] [PersonalCharacteristicNeuAccDef]</li>
     <li>subject(p=8)->[TalkTopicLightAcc]</li>
-    <li>INITIATOR_nameDefNom->{lookup: [INITIATOR_nameDef]; decline_tagged; 1}</li>
-    <li>RECIPIENT_nameDefDat->{lookup: [RECIPIENT_nameDef]; decline_tagged; 3}</li>
-    <li>RECIPIENT_nameDefAcc->{lookup: [RECIPIENT_nameDef]; decline_tagged; 4}</li>
+    <li>INITIATOR_nameDefNom->{lookup: [INITIATOR_nameDef]; decline_tagged_nom}</li>
+    <li>RECIPIENT_nameDefGen->{lookup: von [RECIPIENT_nameDef]; decline_tagged_gen}</li>
+    <li>RECIPIENT_nameDefDat->{lookup: [RECIPIENT_nameDef]; decline_tagged_dat}</li>
+    <li>RECIPIENT_nameDefAcc->{lookup: [RECIPIENT_nameDef]; decline_tagged_acc}</li>
   </BuildRapport.logRulesInitiator.rulesStrings>
   
   <!-- EN: recruit attempt -->
@@ -100,9 +101,9 @@
     <li>goodthing->das Blaue vom Himmel</li>
     <li>goodthing->den Himmel auf Erden</li>
     <li>goodthing->eine tolle Zeit</li>
-    <li>INITIATOR_nameDefNom->{lookup: [INITIATOR_nameDef]; decline_tagged; 1}</li>
-    <li>RECIPIENT_nameDefDat->{lookup: [RECIPIENT_nameDef]; decline_tagged; 3}</li>
-    <li>RECIPIENT_nameDefAcc->{lookup: [RECIPIENT_nameDef]; decline_tagged; 4}</li>
+    <li>INITIATOR_nameDefNom->{lookup: [INITIATOR_nameDef]; decline_tagged_nom}</li>
+    <li>RECIPIENT_nameDefDat->{lookup: [RECIPIENT_nameDef]; decline_tagged_dat}</li>
+    <li>RECIPIENT_nameDefAcc->{lookup: [RECIPIENT_nameDef]; decline_tagged_acc}</li>
   </RecruitAttempt.logRulesInitiator.rulesStrings>
   
   <!-- EN: spark jailbreak -->
@@ -128,8 +129,8 @@
     <li>freedom->Chancen</li>
     <li>freedom->Heimkehr</li>
     <li>freedom->Selbstbestimmung</li>
-    <li>INITIATOR_nameDefNom->{lookup: [INITIATOR_nameDef]; decline_tagged; 1}</li>
-    <li>RECIPIENT_nameDefDat->{lookup: [RECIPIENT_nameDef]; decline_tagged; 3}</li>
+    <li>INITIATOR_nameDefNom->{lookup: [INITIATOR_nameDef]; decline_tagged_nom}</li>
+    <li>RECIPIENT_nameDefDat->{lookup: [RECIPIENT_nameDef]; decline_tagged_dat}</li>
   </SparkJailbreak.logRulesInitiator.rulesStrings>
   
 </LanguageData>

@@ -18,15 +18,15 @@
     <li>tale_noun->[ATTENDER_nameDefNom] [ORGANIZER_label]'s Konzert beiwohnte</li>
     <li>tale_noun->[ATTENDER_nameDefNom] [ORGANIZER_label]'s Auftritt zuhörte</li>
     <li>image->[ATTENDER_nameFullIndefDat], wie [ATTENDER_pronoun] ruhig zuhört [circumstance_group]</li>
-    <li>image->[ATTENDER_nameFullIndefDat], wie [ATTENDER_pronoun] den Auftritt von [ORGANIZER_nameFullIndefDat] genießt [circumstance_group]</li>
+    <li>image->[ATTENDER_nameFullIndefDat], wie [ATTENDER_pronoun] den Auftritt [ORGANIZER_nameFullIndefGen] genießt [circumstance_group]</li>
     <li>image->[ATTENDER_nameFullIndefDat], wie [ATTENDER_pronoun] zu der Musik wippt [circumstance_group]</li>
     <li>image->[ATTENDER_nameFullIndefDat], wie [ATTENDER_pronoun] sich in der Musik verliert [circumstance_group]</li>
     <li>circumstance_phrase->, während [ATTENDER_pronoun] klatscht</li>
     <li>desc_sentence->[Quantity_adjphrase] [PersonJobs] tanzen mit.</li>
     <li>desc_sentence->[Quantity_adjphrase] [Animals] hören aufmerksam zu.</li>
-    <li>ATTENDER_nameFullIndefDat->{lookup: [ATTENDER_nameFull]; decline_tagged; 3}</li>
-    <li>ATTENDER_nameDefNom->{lookup: [ATTENDER_nameDef]; decline_tagged; 1}</li>
-    <li>ORGANIZER_nameFullIndefDat->{lookup: [ORGANIZER_nameFull]; decline_tagged; 3}</li>
+    <li>ATTENDER_nameFullIndefDat->{lookup: [ATTENDER_nameFull]; decline_tagged_dat}</li>
+    <li>ATTENDER_nameDefNom->{lookup: [ATTENDER_nameDef]; decline_tagged_nom}</li>
+    <li>ORGANIZER_nameFullIndefGen->{lookup: von [ORGANIZER_nameFull]; decline_tagged_gen}</li>
   </AttendedConcert.rulePack.rulesStrings>
   
   <!-- EN: held concert -->
@@ -52,8 +52,8 @@
     <li>circumstance_phrase->leidenschaftlich</li>
     <li>desc_sentence->[Quantity_adjphrase] [PersonJobs] verfolgen gebannt den Auftritt.</li>
     <li>desc_sentence->[Quantity_adjphrase] [Animals] hören aufmerksam zu.</li>
-    <li>ORGANIZER_nameFullIndefDat->{lookup: [ORGANIZER_nameFull]; decline_tagged; 3}</li>
-    <li>ORGANIZER_nameDefNom->{lookup: [ORGANIZER_nameDef]; decline_tagged; 1}</li>
+    <li>ORGANIZER_nameFullIndefDat->{lookup: [ORGANIZER_nameFull]; decline_tagged_dat}</li>
+    <li>ORGANIZER_nameDefNom->{lookup: [ORGANIZER_nameDef]; decline_tagged_nom}</li>
   </HeldConcert.rulePack.rulesStrings>
   
 </LanguageData>

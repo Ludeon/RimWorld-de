@@ -32,9 +32,9 @@
     <li>tale_noun->[CAPTURER_nameDefNom] [PRISONER_nameDefAcc] einfing</li>
     <li>tale_noun->[PRISONER_nameDefNom] von [CAPTURER_nameDefDat] eingefangen wurde</li>
     <li>tale_noun->[PRISONER_nameDefNom] eingefangen wurde</li>
-    <li>image->[CAPTURER_nameFullIndefDat], wie [CAPTURER_pronoun] [PRISONER_nameIndefAcc] [circumstance_group] einfängt</li>
-    <li>image->[CAPTURER_nameFullIndefDat], wie [CAPTURER_pronoun] die Hände von [PRISONER_nameFullIndefDat] [circumstance_group] fesselt</li>
-    <li>image->[CAPTURER_nameFullIndefDat], wie [CAPTURER_pronoun] [PRISONER_nameIndefAcc] [circumstance_group] schlägt und [PRISONER_objective] einfängt</li>
+    <li>image->[CAPTURER_nameFullIndefDat], wie [CAPTURER_pronoun] [PRISONER_nameFullIndefAcc] [circumstance_group] einfängt</li>
+    <li>image->[CAPTURER_nameFullIndefDat], wie [CAPTURER_pronoun] die Hände [PRISONER_nameFullIndefGen] [circumstance_group] fesselt</li>
+    <li>image->[CAPTURER_nameFullIndefDat], wie [CAPTURER_pronoun] [PRISONER_nameFullIndefAcc] [circumstance_group] schlägt und [PRISONER_objective] einfängt</li>
     <li>circumstance_phrase->, während [PRISONER_pronoun] sich auf dem Boden wälzt,</li>
     <li>circumstance_phrase->, während [PRISONER_pronoun] sich vor Schmerz krümmt,</li>
     <li>circumstance_phrase->mit professioneller Effizienz</li>
@@ -47,19 +47,20 @@
     <li>desc_sentence->[PRISONER_nameDefNom] sieht [PRISONER_possessive]em Schicksal resigniert entgegen.</li>
     <li>desc_sentence->[PRISONER_nameDefNom] knurrt wütend wegen der Niederlage.</li>
     <li>desc_sentence->[CAPTURER_nameDefNom] schlägt [PRISONER_nameDefAcc], um [PRISONER_objective] zu bändigen.</li>
-    <li>desc_sentence->[CAPTURER_nameDefNom] verdreht das Ohr von [PRISONER_nameDefDat].</li>
+    <li>desc_sentence->[CAPTURER_nameDefNom] verdreht das Ohr [PRISONER_nameDefGen].</li>
     <li>desc_sentence->[CAPTURER_nameDefNom] hält [PRISONER_nameDefAcc] im Würgegriff.</li>
-    <li>desc_sentence->[CAPTURER_nameDefNom] spuckt in das Gesicht von [PRISONER_nameDefDat].</li>
+    <li>desc_sentence->[CAPTURER_nameDefNom] spuckt in das Gesicht [PRISONER_nameDefGen].</li>
     <li>desc_sentence->[CAPTURER_nameDefNom] lacht, während [PRISONER_nameDefDat] die Tränen kommen.</li>
     <li>desc_sentence->[CAPTURER_nameDefNom] tritt [PRISONER_nameDefAcc] ohne ersichtlichen Grund.</li>
-    <li>CAPTURER_nameFullIndefDat->{lookup: [CAPTURER_nameFull]; decline_tagged; 3}</li>
-    <li>CAPTURER_nameDefNom->{lookup: [CAPTURER_nameDef]; decline_tagged; 1}</li>
-    <li>CAPTURER_nameDefDat->{lookup: [CAPTURER_nameDef]; decline_tagged; 3}</li>
-    <li>PRISONER_nameFullIndefDat->{lookup: [PRISONER_nameFull]; decline_tagged; 3}</li>
-    <li>PRISONER_nameIndefAcc->{lookup: [PRISONER_nameIndef]; decline_tagged; 4}</li>
-    <li>PRISONER_nameDefNom->{lookup: [PRISONER_nameDef]; decline_tagged; 1}</li>
-    <li>PRISONER_nameDefDat->{lookup: [PRISONER_nameDef]; decline_tagged; 3}</li>
-    <li>PRISONER_nameDefAcc->{lookup: [PRISONER_nameDef]; decline_tagged; 4}</li>
+    <li>CAPTURER_nameFullIndefDat->{lookup: [CAPTURER_nameFull]; decline_tagged_dat}</li>
+    <li>CAPTURER_nameDefNom->{lookup: [CAPTURER_nameDef]; decline_tagged_nom}</li>
+    <li>CAPTURER_nameDefDat->{lookup: [CAPTURER_nameDef]; decline_tagged_dat}</li>
+    <li>PRISONER_nameFullIndefGen->{lookup: von [PRISONER_nameFull]; decline_tagged_gen}</li>
+    <li>PRISONER_nameFullIndefAcc->{lookup: [PRISONER_nameFull]; decline_tagged_acc}</li>
+    <li>PRISONER_nameDefNom->{lookup: [PRISONER_nameDef]; decline_tagged_nom}</li>
+    <li>PRISONER_nameDefGen->{lookup: von [PRISONER_nameDef]; decline_tagged_gen}</li>
+    <li>PRISONER_nameDefDat->{lookup: [PRISONER_nameDef]; decline_tagged_dat}</li>
+    <li>PRISONER_nameDefAcc->{lookup: [PRISONER_nameDef]; decline_tagged_acc}</li>
   </Captured.rulePack.rulesStrings>
   
   <!-- EN: defeated hostile leader -->
@@ -87,8 +88,8 @@
     <li>tale_noun->[SURGEON_nameDefNom] [PATIENT_nameDefAcc] operierte</li>
     <li>tale_noun->[SURGEON_nameDefNom] eine medizinische Operation an [PATIENT_nameDefDat] durchführte</li>
     <li>tale_noun->[PATIENT_nameDefNom] operiert wurde</li>
-    <li>image->[SURGEON_nameFullIndefDat], wie [SURGEON_pronoun] [PATIENT_nameIndefAcc] [circumstance_group] in Narkose versetzt</li>
-    <li>image->[SURGEON_nameFullIndefDat], wie [SURGEON_pronoun] in [PATIENT_nameIndefAcc] [circumstance_group] ellenbogentief eindringt</li>
+    <li>image->[SURGEON_nameFullIndefDat], wie [SURGEON_pronoun] [PATIENT_nameFullIndefAcc] [circumstance_group] in Narkose versetzt</li>
+    <li>image->[SURGEON_nameFullIndefDat], wie [SURGEON_pronoun] in [PATIENT_nameFullIndefAcc] [circumstance_group] ellenbogentief eindringt</li>
     <li>image->[SURGEON_nameFullIndefDat], wie [SURGEON_pronoun] an [PATIENT_nameFullIndefDat] [circumstance_group] herumschneidet</li>
     <li>circumstance_phrase->, während [PATIENT_pronoun] vor Angst zittert,</li>
     <li>circumstance_phrase->, während sich das Blut zu [SURGEON_possessive]en Füßen sammelt,</li>
@@ -98,13 +99,13 @@
     <li>desc_sentence->[SURGEON_nameDefNom] scheint sich sehr auf seine Arbeit zu konzentrieren.</li>
     <li>desc_sentence->[SURGEON_nameDefNom] hat Blut in [SURGEON_possessive]em Gesicht.</li>
     <li>desc_sentence->[PATIENT_nameDefNom] zittert und windet sich.</li>
-    <li>SURGEON_nameFullIndefDat->{lookup: [SURGEON_nameFull]; decline_tagged; 3}</li>
-    <li>SURGEON_nameDefNom->{lookup: [SURGEON_nameDef]; decline_tagged; 1}</li>
-    <li>PATIENT_nameDefNom->{lookup: [PATIENT_nameDef]; decline_tagged; 1}</li>
-    <li>PATIENT_nameDefDat->{lookup: [PATIENT_nameDef]; decline_tagged; 3}</li>
-    <li>PATIENT_nameDefAcc->{lookup: [PATIENT_nameDef]; decline_tagged; 4}</li>
-    <li>PATIENT_nameFullIndefDat->{lookup: [PATIENT_nameFull]; decline_tagged; 3}</li>
-    <li>PATIENT_nameIndefAcc->{lookup: [PATIENT_nameIndef]; decline_tagged; 4}</li>
+    <li>SURGEON_nameFullIndefDat->{lookup: [SURGEON_nameFull]; decline_tagged_dat}</li>
+    <li>SURGEON_nameDefNom->{lookup: [SURGEON_nameDef]; decline_tagged_nom}</li>
+    <li>PATIENT_nameDefNom->{lookup: [PATIENT_nameDef]; decline_tagged_nom}</li>
+    <li>PATIENT_nameDefDat->{lookup: [PATIENT_nameDef]; decline_tagged_dat}</li>
+    <li>PATIENT_nameDefAcc->{lookup: [PATIENT_nameDef]; decline_tagged_acc}</li>
+    <li>PATIENT_nameFullIndefDat->{lookup: [PATIENT_nameFull]; decline_tagged_dat}</li>
+    <li>PATIENT_nameFullIndefAcc->{lookup: [PATIENT_nameFull]; decline_tagged_acc}</li>
   </DidSurgery.rulePack.rulesStrings>
   
   <!-- EN: prisoner executed -->
@@ -142,10 +143,10 @@
     <li>tale_noun->[EXECUTIONER_nameDefNom] [PRISONER_nameDefAcc] exekutierte</li>
     <li>tale_noun->[PRISONER_nameDefNom] von [EXECUTIONER_nameDefDat] exekutiert wurde</li>
     <li>tale_noun->[PRISONER_nameDefNom] hingerichtet wurde</li>
-    <li>image->[EXECUTIONER_nameFullIndefDat], wie [EXECUTIONER_pronoun] [PRISONER_nameIndefAcc] [circumstance_group] hinrichtet</li>
-    <li>image->[EXECUTIONER_nameFullIndefDat], wie [EXECUTIONER_pronoun] [PRISONER_nameIndefAcc] [circumstance_group] tötet</li>
-    <li>image->[EXECUTIONER_nameFullIndefDat], wie [EXECUTIONER_pronoun] sich auf die Exekution von [PRISONER_nameFullIndefDat] [circumstance_group] vorbereitet</li>
-    <li>image->[EXECUTIONER_nameFullIndefDat], wie [EXECUTIONER_pronoun] eine Gefängniszelle betritt, um [PRISONER_nameIndefAcc] [circumstance_group] hinzurichten</li>
+    <li>image->[EXECUTIONER_nameFullIndefDat], wie [EXECUTIONER_pronoun] [PRISONER_nameFullIndefAcc] [circumstance_group] hinrichtet</li>
+    <li>image->[EXECUTIONER_nameFullIndefDat], wie [EXECUTIONER_pronoun] [PRISONER_nameFullIndefAcc] [circumstance_group] tötet</li>
+    <li>image->[EXECUTIONER_nameFullIndefDat], wie [EXECUTIONER_pronoun] sich auf die Exekution [PRISONER_nameFullIndefGen] [circumstance_group] vorbereitet</li>
+    <li>image->[EXECUTIONER_nameFullIndefDat], wie [EXECUTIONER_pronoun] eine Gefängniszelle betritt, um [PRISONER_nameFullIndefAcc] [circumstance_group] hinzurichten</li>
     <li>circumstance_phrase->, während [PRISONER_pronoun] sich auf dem Boden windet,</li>
     <li>circumstance_phrase->, während [PRISONER_pronoun] sich vor Schmerzen krümmt,</li>
     <li>circumstance_phrase->, während [PRISONER_pronoun] vor Angst schreit,</li>
@@ -166,13 +167,13 @@
     <li>desc_sentence->[PRISONER_nameDefNom] scheint endgültig aufgegeben zu haben.</li>
     <li>desc_sentence->[PRISONER_nameDefNom] hat [PRISONER_possessive]e Augen geschlossen und scheint zu einer höheren Macht zu beten.</li>
     <li>desc_sentence->[PRISONER_nameDefNom] schaut [PRISONER_possessive]en Henker trotzig an.</li>
-    <li>EXECUTIONER_nameFullIndefDat->{lookup: [EXECUTIONER_nameFull]; decline_tagged; 3}</li>
-    <li>EXECUTIONER_nameDefNom->{lookup: [EXECUTIONER_nameDef]; decline_tagged; 1}</li>
-    <li>EXECUTIONER_nameDefDat->{lookup: [EXECUTIONER_nameDef]; decline_tagged; 3}</li>
-    <li>PRISONER_nameFullIndefDat->{lookup: [PRISONER_nameFull]; decline_tagged; 3}</li>
-    <li>PRISONER_nameIndefAcc->{lookup: [PRISONER_nameIndef]; decline_tagged; 4}</li>
-    <li>PRISONER_nameDefNom->{lookup: [PRISONER_nameDef]; decline_tagged; 1}</li>
-    <li>PRISONER_nameDefAcc->{lookup: [PRISONER_nameDef]; decline_tagged; 4}</li>
+    <li>EXECUTIONER_nameFullIndefDat->{lookup: [EXECUTIONER_nameFull]; decline_tagged_dat}</li>
+    <li>EXECUTIONER_nameDefNom->{lookup: [EXECUTIONER_nameDef]; decline_tagged_nom}</li>
+    <li>EXECUTIONER_nameDefDat->{lookup: [EXECUTIONER_nameDef]; decline_tagged_dat}</li>
+    <li>PRISONER_nameFullIndefGen->{lookup: von [PRISONER_nameFull]; decline_tagged_gen}</li>
+    <li>PRISONER_nameFullIndefAcc->{lookup: [PRISONER_nameFull]; decline_tagged_acc}</li>
+    <li>PRISONER_nameDefNom->{lookup: [PRISONER_nameDef]; decline_tagged_nom}</li>
+    <li>PRISONER_nameDefAcc->{lookup: [PRISONER_nameDef]; decline_tagged_acc}</li>
   </ExecutedPrisoner.rulePack.rulesStrings>
   
   <!-- EN: animal hunted -->
@@ -196,21 +197,21 @@
     <li>tale_noun->[PREY_nameDefNom] von [HUNTER_nameDefDat] gejagt wurde</li>
     <li>tale_noun->[HUNTER_nameDefNom] erfolgreich auf Jagd war</li>
     <li>image->[PREY_nameFullIndefDat], wie [PREY_pronoun] von [HUNTER_nameFullIndefDat] gejagt wird, [circumstance_group]</li>
-    <li>image->[HUNTER_nameFullIndefDat], wie [HUNTER_pronoun] sich langsam an [PREY_nameIndefAcc] heranpirscht, [circumstance_group]</li>
-    <li>image->[HUNTER_nameFullIndefDat], wie [HUNTER_pronoun] Jagd auf [PREY_nameIndefAcc] macht, [circumstance_group]</li>
+    <li>image->[HUNTER_nameFullIndefDat], wie [HUNTER_pronoun] sich langsam an [PREY_nameFullIndefAcc] heranpirscht, [circumstance_group]</li>
+    <li>image->[HUNTER_nameFullIndefDat], wie [HUNTER_pronoun] Jagd auf [PREY_nameFullIndefAcc] macht, [circumstance_group]</li>
     <li>circumstance_phrase->während [PREY_nameDefNom] ruhig und entspannt ist</li>
     <li>circumstance_phrase->während [PREY_nameDefNom] umherwandert</li>
     <li>circumstance_phrase->während [PREY_nameDefNom] etwas frisst</li>
     <li>desc_sentence->[PREY_nameDefNom] scheint nichts zu bemerken.</li>
     <li>desc_sentence->[HUNTER_nameDefNom] hält [HUNTER_possessive]e Waffe fest umklammert.</li>
     <li>desc_sentence->[PREY_nameDefNom] sieht sich ängstlich um, als ob [PREY_pronoun] spürt, dass etwas nicht stimmt.</li>
-    <li>HUNTER_nameFullIndefDat->{lookup: [HUNTER_nameFull]; decline_tagged; 3}</li>
-    <li>HUNTER_nameDefNom->{lookup: [HUNTER_nameDef]; decline_tagged; 1}</li>
-    <li>HUNTER_nameDefDat->{lookup: [HUNTER_nameDef]; decline_tagged; 3}</li>
-    <li>PREY_nameFullIndefDat->{lookup: [PREY_nameFull]; decline_tagged; 3}</li>
-    <li>PREY_nameIndefAcc->{lookup: [PREY_nameIndef]; decline_tagged; 4}</li>
-    <li>PREY_nameDefNom->{lookup: [PREY_nameDef]; decline_tagged; 1}</li>
-    <li>PREY_nameDefAcc->{lookup: [PREY_nameDef]; decline_tagged; 4}</li>
+    <li>HUNTER_nameFullIndefDat->{lookup: [HUNTER_nameFull]; decline_tagged_dat}</li>
+    <li>HUNTER_nameDefNom->{lookup: [HUNTER_nameDef]; decline_tagged_nom}</li>
+    <li>HUNTER_nameDefDat->{lookup: [HUNTER_nameDef]; decline_tagged_dat}</li>
+    <li>PREY_nameFullIndefDat->{lookup: [PREY_nameFull]; decline_tagged_dat}</li>
+    <li>PREY_nameFullIndefAcc->{lookup: [PREY_nameFull]; decline_tagged_acc}</li>
+    <li>PREY_nameDefNom->{lookup: [PREY_nameDef]; decline_tagged_nom}</li>
+    <li>PREY_nameDefAcc->{lookup: [PREY_nameDef]; decline_tagged_acc}</li>
   </Hunted.rulePack.rulesStrings>
   
   <!-- EN: colonist kidnapped -->
@@ -240,9 +241,9 @@
     <li>tale_noun->[KIDNAPPER_nameDefNom] [VICTIM_nameDefAcc] entführte</li>
     <li>tale_noun->[VICTIM_nameDefNom] von [KIDNAPPER_nameDefDat] entführt wurde</li>
     <li>tale_noun->[VICTIM_nameDefNom] entführt wurde</li>
-    <li>image->[KIDNAPPER_nameFullIndefDat], wie [KIDNAPPER_pronoun] [VICTIM_nameIndefAcc] [circumstance_group] zur Fraktion '[KIDNAPPER_factionName]' trägt</li>
-    <li>image->[KIDNAPPER_nameFullIndefDat] aus der Fraktion '[KIDNAPPER_factionName]', wie [KIDNAPPER_pronoun] [VICTIM_nameIndefAcc] [circumstance_group] entführt</li>
-    <li>image->[KIDNAPPER_nameFullIndefDat], wie [KIDNAPPER_pronoun] [VICTIM_nameIndefAcc] [circumstance_group] entführt</li>
+    <li>image->[KIDNAPPER_nameFullIndefDat], wie [KIDNAPPER_pronoun] [VICTIM_nameFullIndefAcc] [circumstance_group] zur Fraktion '[KIDNAPPER_factionName]' trägt</li>
+    <li>image->[KIDNAPPER_nameFullIndefDat] aus der Fraktion '[KIDNAPPER_factionName]', wie [KIDNAPPER_pronoun] [VICTIM_nameFullIndefAcc] [circumstance_group] entführt</li>
+    <li>image->[KIDNAPPER_nameFullIndefDat], wie [KIDNAPPER_pronoun] [VICTIM_nameFullIndefAcc] [circumstance_group] entführt</li>
     <li>circumstance_phrase->, während [VICTIM_pronoun] sich vor Schmerz windet,</li>
     <li>circumstance_phrase->sehr professionell</li>
     <li>circumstance_phrase->ruppig und amateurhaft</li>
@@ -256,12 +257,12 @@
     <li>desc_sentence->[VICTIM_nameDefNom] schreit vor Wut und Angst.</li>
     <li>desc_sentence->[VICTIM_nameDefNom] sieht erschöpft und gebrochen aus.</li>
     <li>desc_sentence->[VICTIM_nameDefNom] scheint schwer verletzt zu sein.</li>
-    <li>KIDNAPPER_nameFullIndefDat->{lookup: [KIDNAPPER_nameFull]; decline_tagged; 3}</li>
-    <li>KIDNAPPER_nameDefNom->{lookup: [KIDNAPPER_nameDef]; decline_tagged; 1}</li>
-    <li>KIDNAPPER_nameDefDat->{lookup: [KIDNAPPER_nameDef]; decline_tagged; 3}</li>
-    <li>VICTIM_nameIndefAcc->{lookup: [VICTIM_nameIndef]; decline_tagged; 4}</li>
-    <li>VICTIM_nameDefNom->{lookup: [VICTIM_nameDef]; decline_tagged; 1}</li>
-    <li>VICTIM_nameDefAcc->{lookup: [VICTIM_nameDef]; decline_tagged; 4}</li>
+    <li>KIDNAPPER_nameFullIndefDat->{lookup: [KIDNAPPER_nameFull]; decline_tagged_dat}</li>
+    <li>KIDNAPPER_nameDefNom->{lookup: [KIDNAPPER_nameDef]; decline_tagged_nom}</li>
+    <li>KIDNAPPER_nameDefDat->{lookup: [KIDNAPPER_nameDef]; decline_tagged_dat}</li>
+    <li>VICTIM_nameFullIndefAcc->{lookup: [VICTIM_nameFull]; decline_tagged_acc}</li>
+    <li>VICTIM_nameDefNom->{lookup: [VICTIM_nameDef]; decline_tagged_nom}</li>
+    <li>VICTIM_nameDefAcc->{lookup: [VICTIM_nameDef]; decline_tagged_acc}</li>
   </KidnappedColonist.rulePack.rulesStrings>
   
   <!-- EN: death -->
@@ -300,9 +301,9 @@
     <li>tale_noun->[KILLER_nameDefNom] [VICTIM_nameDefAcc] ermordete</li>
     <li>tale_noun->[VICTIM_nameDefNom] getötet wurde</li>
     <li>image->[VICTIM_nameFullIndefDat], wie [VICTIM_pronoun] von [KILLER_nameFullIndefDat] [circumstance_group] getötet wird</li>
-    <li>image->[KILLER_nameFullIndefDat], wie [KILLER_pronoun] [circumstance_group] [VICTIM_nameIndefAcc] tötet</li>
-    <li>image->[KILLER_nameFullIndefDat], wie [KILLER_pronoun] [circumstance_group] das Leben von [VICTIM_nameFullIndefDat] beendet</li>
-    <li>image->[KILLER_nameFullIndefDat], wie [KILLER_pronoun] [circumstance_group] [VICTIM_nameIndefAcc] brutal ermordet</li>
+    <li>image->[KILLER_nameFullIndefDat], wie [KILLER_pronoun] [circumstance_group] [VICTIM_nameFullIndefAcc] tötet</li>
+    <li>image->[KILLER_nameFullIndefDat], wie [KILLER_pronoun] [circumstance_group] das Leben [VICTIM_nameFullIndefGen] beendet</li>
+    <li>image->[KILLER_nameFullIndefDat], wie [KILLER_pronoun] [circumstance_group] [VICTIM_nameFullIndefAcc] brutal ermordet</li>
     <li>image->[VICTIM_nameFullIndefDat], wie [VICTIM_pronoun] [circumstance_group] getötet wird</li>
     <li>circumstance_phrase->scheinbar ohne Reue</li>
     <li>circumstance_phrase->mit kalter Effizienz</li>
@@ -314,21 +315,22 @@
     <li>desc_sentence->Die Sonne geht hinter ihnen unter, als symbolisches Echo des Geschehens.</li>
     <li>desc_sentence->[Quantity_adjphrase] [Animals] schauen zu.</li>
     <li>desc_sentence->Ein [PersonJob] [side_position] schaut stillschweigend zu.</li>
-    <li>desc_sentence->Eine Blutlache bildet sich um den toten Körper von [VICTIM_nameDefDat].</li>
-    <li>desc_sentence->Die leblosen Augen von [VICTIM_nameDefDat] sind realistisch dargestellt.</li>
+    <li>desc_sentence->Eine Blutlache bildet sich um den toten Körper [VICTIM_nameDefGen].</li>
+    <li>desc_sentence->Die leblosen Augen [VICTIM_nameDefGen] sind realistisch dargestellt.</li>
     <li>desc_sentence->[KILLER_nameDefNom] fletscht die Zähne.</li>
     <li>desc_sentence->[KILLER_nameDefNom] scheint zufrieden zu sein.</li>
     <li>desc_sentence->[KILLER_nameDefNom] sieht verzweifelt aus.</li>
     <li>desc_sentence->[KILLER_nameDefNom] scheint zufrieden mit der Situation zu sein.</li>
     <li>desc_sentence->[KILLER_nameDefNom] freut sich über den Sieg.</li>
-    <li>KILLER_nameFullIndefDat->{lookup: [KILLER_nameFull]; decline_tagged; 3}</li>
-    <li>KILLER_nameDefNom->{lookup: [KILLER_nameDef]; decline_tagged; 1}</li>
-    <li>KILLER_nameDefDat->{lookup: [KILLER_nameDef]; decline_tagged; 3}</li>
-    <li>VICTIM_nameFullIndefDat->{lookup: [VICTIM_nameFull]; decline_tagged; 3}</li>
-    <li>VICTIM_nameIndefAcc->{lookup: [VICTIM_nameIndef]; decline_tagged; 4}</li>
-    <li>VICTIM_nameDefNom->{lookup: [VICTIM_nameDef]; decline_tagged; 1}</li>
-    <li>VICTIM_nameDefDat->{lookup: [VICTIM_nameDef]; decline_tagged; 3}</li>
-    <li>VICTIM_nameDefAcc->{lookup: [VICTIM_nameDef]; decline_tagged; 4}</li>
+    <li>KILLER_nameFullIndefDat->{lookup: [KILLER_nameFull]; decline_tagged_dat}</li>
+    <li>KILLER_nameDefNom->{lookup: [KILLER_nameDef]; decline_tagged_nom}</li>
+    <li>KILLER_nameDefDat->{lookup: [KILLER_nameDef]; decline_tagged_dat}</li>
+    <li>VICTIM_nameFullIndefGen->{lookup: von [VICTIM_nameFull]; decline_tagged_gen}</li>
+    <li>VICTIM_nameFullIndefDat->{lookup: [VICTIM_nameFull]; decline_tagged_dat}</li>
+    <li>VICTIM_nameFullIndefAcc->{lookup: [VICTIM_nameFull]; decline_tagged_acc}</li>
+    <li>VICTIM_nameDefNom->{lookup: [VICTIM_nameDef]; decline_tagged_nom}</li>
+    <li>VICTIM_nameDefGen->{lookup: von [VICTIM_nameDef]; decline_tagged_gen}</li>
+    <li>VICTIM_nameDefAcc->{lookup: [VICTIM_nameDef]; decline_tagged_acc}</li>
   </KilledBy.rulePack.rulesStrings>
   
   <!-- EN: colonist killed -->
@@ -360,9 +362,9 @@
     <li>tale_noun->[RECRUITER_nameDefNom] [JOINER_nameDefAcc] rekrutierte</li>
     <li>tale_noun->[JOINER_nameDefNom] von [RECRUITER_nameDefDat] rekrutiert wurde</li>
     <li>tale_noun->[JOINER_nameDefNom] rekrutiert wurde</li>
-    <li>image->[RECRUITER_nameFullIndefDat], wie [RECRUITER_pronoun] [circumstance_group] [JOINER_nameIndefAcc] rekrutiert</li>
-    <li>image->[RECRUITER_nameFullIndefDat], wie [RECRUITER_pronoun] [circumstance_group] [JOINER_nameIndefAcc] als neuen Kolonisten willkommen heißt</li>
-    <li>image->[RECRUITER_nameFullIndefDat], wie [RECRUITER_pronoun] [circumstance_group] [JOINER_nameIndefAcc] überzeugt, der Kolonie beizutreten</li>
+    <li>image->[RECRUITER_nameFullIndefDat], wie [RECRUITER_pronoun] [circumstance_group] [JOINER_nameFullIndefAcc] rekrutiert</li>
+    <li>image->[RECRUITER_nameFullIndefDat], wie [RECRUITER_pronoun] [circumstance_group] [JOINER_nameFullIndefAcc] als neuen Kolonisten willkommen heißt</li>
+    <li>image->[RECRUITER_nameFullIndefDat], wie [RECRUITER_pronoun] [circumstance_group] [JOINER_nameFullIndefAcc] überzeugt, der Kolonie beizutreten</li>
     <li>circumstance_phrase->mit offensichtlichem Wohlwollen</li>
     <li>circumstance_phrase->mit einem herzhaften Handschlag</li>
     <li>circumstance_phrase->mit einem Lächeln auf den Lippen</li>
@@ -372,12 +374,12 @@
     <li>desc_sentence->[JOINER_nameDefNom] lächelt und schaut erwartungsvoll auf.</li>
     <li>desc_sentence->[JOINER_nameDefNom] sieht erleichtert aus.</li>
     <li>desc_sentence->[JOINER_nameDefNom] sieht hoffnungsvoll aus.</li>
-    <li>RECRUITER_nameFullIndefDat->{lookup: [RECRUITER_nameFull]; decline_tagged; 3}</li>
-    <li>RECRUITER_nameDefNom->{lookup: [RECRUITER_nameDef]; decline_tagged; 1}</li>
-    <li>RECRUITER_nameDefDat->{lookup: [RECRUITER_nameDef]; decline_tagged; 3}</li>
-    <li>JOINER_nameIndefAcc->{lookup: [JOINER_nameIndef]; decline_tagged; 4}</li>
-    <li>JOINER_nameDefNom->{lookup: [JOINER_nameDef]; decline_tagged; 1}</li>
-    <li>JOINER_nameDefAcc->{lookup: [JOINER_nameDef]; decline_tagged; 4}</li>
+    <li>RECRUITER_nameFullIndefDat->{lookup: [RECRUITER_nameFull]; decline_tagged_dat}</li>
+    <li>RECRUITER_nameDefNom->{lookup: [RECRUITER_nameDef]; decline_tagged_nom}</li>
+    <li>RECRUITER_nameDefDat->{lookup: [RECRUITER_nameDef]; decline_tagged_dat}</li>
+    <li>JOINER_nameFullIndefAcc->{lookup: [JOINER_nameFull]; decline_tagged_acc}</li>
+    <li>JOINER_nameDefNom->{lookup: [JOINER_nameDef]; decline_tagged_nom}</li>
+    <li>JOINER_nameDefAcc->{lookup: [JOINER_nameDef]; decline_tagged_acc}</li>
   </Recruited.rulePack.rulesStrings>
   
   <!-- EN: prisoner sold -->
@@ -408,8 +410,8 @@
     <li>tale_noun->[PRISONER_nameDefNom] an einen Händler verkauft wurde</li>
     <li>tale_noun->[SELLER_nameDefNom] [PRISONER_nameDefAcc] in die Slaverei verkaufte</li>
     <li>tale_noun->[PRISONER_nameDefNom] von [SELLER_nameDefDat] in die Slaverei verkauft wurde</li>
-    <li>image->[TRADER_nameFullIndefDat], wie [TRADER_pronoun] [PRISONER_nameIndefAcc] von [SELLER_nameFullIndefDat] abkauft, [circumstance_group]</li>
-    <li>image->[SELLER_nameFullIndefDat], wie [SELLER_pronoun] [PRISONER_nameIndefAcc] an [TRADER_nameIndefAcc] verkauft, [circumstance_group]</li>
+    <li>image->[TRADER_nameFullIndefDat], wie [TRADER_pronoun] [PRISONER_nameFullIndefAcc] von [SELLER_nameFullIndefDat] abkauft, [circumstance_group]</li>
+    <li>image->[SELLER_nameFullIndefDat], wie [SELLER_pronoun] [PRISONER_nameFullIndefAcc] an [TRADER_nameFullIndefAcc] verkauft, [circumstance_group]</li>
     <li>circumstance_phrase->während die anderen Kolonisten missbilligend zuschauen</li>
     <li>circumstance_phrase->während [SELLER_nameDefNom] das Geld zählt</li>
     <li>circumstance_phrase->während [PRISONER_nameDefNom] klagend stöhnt</li>
@@ -418,24 +420,24 @@
     <li>desc_sentence->[SELLER_nameDefNom] lacht gehässig.</li>
     <li>desc_sentence->[SELLER_nameDefNom] überreicht widerwillig [PRISONER_nameDefAcc] an den Händler.</li>
     <li>desc_sentence->[PRISONER_nameDefNom] starrt trotzig auf [PRISONER_possessive]en neuen Meister.</li>
-    <li>desc_sentence->[TRADER_nameDefNom] zerrt an den Ketten von [PRISONER_nameDefDat].</li>
+    <li>desc_sentence->[TRADER_nameDefNom] zerrt an den Ketten [PRISONER_nameDefGen].</li>
     <li>desc_sentence->[PRISONER_nameDefNom] starrt böse auf [SELLER_nameDefAcc] und plant [PRISONER_possessive]e Rache.</li>
     <li>desc_sentence->[PRISONER_nameDefNom] weint.</li>
     <li>desc_sentence->[PRISONER_nameDefNom] spuckt in [SELLER_label]'s Gesicht.</li>
     <li>desc_sentence->[PRISONER_nameDefNom] versinkt im Boden.</li>
-    <li>desc_sentence->[SELLER_nameDefNom] drückt die Ketten von [PRISONER_nameDefDat] in [PRISONER_label]'s Hände.</li>
+    <li>desc_sentence->[SELLER_nameDefNom] drückt die Ketten [PRISONER_nameDefGen] in [PRISONER_label]'s Hände.</li>
     <li>desc_sentence->Ein Hauch von Hoffnungslosigkeit prägt das Geschehen.</li>
-    <li>SELLER_nameFullIndefDat->{lookup: [SELLER_nameFull]; decline_tagged; 3}</li>
-    <li>SELLER_nameDefNom->{lookup: [SELLER_nameDef]; decline_tagged; 1}</li>
-    <li>SELLER_nameDefDat->{lookup: [SELLER_nameDef]; decline_tagged; 3}</li>
-    <li>SELLER_nameDefAcc->{lookup: [SELLER_nameDef]; decline_tagged; 4}</li>
-    <li>PRISONER_nameIndefAcc->{lookup: [PRISONER_nameIndef]; decline_tagged; 4}</li>
-    <li>PRISONER_nameDefNom->{lookup: [PRISONER_nameDef]; decline_tagged; 1}</li>
-    <li>PRISONER_nameDefDat->{lookup: [PRISONER_nameDef]; decline_tagged; 3}</li>
-    <li>PRISONER_nameDefAcc->{lookup: [PRISONER_nameDef]; decline_tagged; 4}</li>
-    <li>TRADER_nameFullIndefDat->{lookup: [TRADER_nameFull]; decline_tagged; 3}</li>
-    <li>TRADER_nameDefNom->{lookup: [TRADER_nameDef]; decline_tagged; 1}</li>
-    <li>TRADER_nameIndefAcc->{lookup: [TRADER_nameIndef]; decline_tagged; 4}</li>
+    <li>SELLER_nameFullIndefDat->{lookup: [SELLER_nameFull]; decline_tagged_dat}</li>
+    <li>SELLER_nameDefNom->{lookup: [SELLER_nameDef]; decline_tagged_nom}</li>
+    <li>SELLER_nameDefDat->{lookup: [SELLER_nameDef]; decline_tagged_dat}</li>
+    <li>SELLER_nameDefAcc->{lookup: [SELLER_nameDef]; decline_tagged_acc}</li>
+    <li>PRISONER_nameFullIndefAcc->{lookup: [PRISONER_nameFull]; decline_tagged_acc}</li>
+    <li>PRISONER_nameDefNom->{lookup: [PRISONER_nameDef]; decline_tagged_nom}</li>
+    <li>PRISONER_nameDefGen->{lookup: von [PRISONER_nameDef]; decline_tagged_gen}</li>
+    <li>PRISONER_nameDefAcc->{lookup: [PRISONER_nameDef]; decline_tagged_acc}</li>
+    <li>TRADER_nameFullIndefDat->{lookup: [TRADER_nameFull]; decline_tagged_dat}</li>
+    <li>TRADER_nameFullIndefAcc->{lookup: [TRADER_nameIndef]; decline_tagged_acc}</li>
+    <li>TRADER_nameDefNom->{lookup: [TRADER_nameDef]; decline_tagged_nom}</li>
   </SoldPrisoner.rulePack.rulesStrings>
   
   <!-- EN: animal tamed -->
@@ -460,10 +462,10 @@
   <TamedAnimal.rulePack.rulesStrings>
     <li>tale_noun->[ANIMAL_nameDefNom] von [TAMER_nameDefDat] gezähmt wurde</li>
     <li>tale_noun->[TAMER_nameDefNom] [ANIMAL_nameDefAcc] zähmte</li>
-    <li>image->[TAMER_nameFullIndefDat], wie [TAMER_pronoun] [circumstance_group] [ANIMAL_nameIndefAcc] zähmt</li>
+    <li>image->[TAMER_nameFullIndefDat], wie [TAMER_pronoun] [circumstance_group] [ANIMAL_nameFullIndefAcc] zähmt</li>
     <li>image->[TAMER_nameFullIndefDat], wie [TAMER_pronoun] [circumstance_group] [ANIMAL_nameFullIndefDat] etwas zu fressen anbietet</li>
-    <li>image->[TAMER_nameFullIndefDat], wie [TAMER_pronoun] [circumstance_group] {replace: [ANIMAL_objective]; "ihn"-"einem"; "sie"-"einer"; "es"-"einem"} scheuen [ANIMAL_label] etwas zuflüstert</li>
-    <li>image->[TAMER_nameFullIndefDat], wie [TAMER_pronoun] [circumstance_group] {replace: [ANIMAL_objective]; "ihn"-"einen wilden"; "sie"-"eine wilde"; "es"-"ein wildes"} [ANIMAL_label] beruhigt</li>
+    <li>image->[TAMER_nameFullIndefDat], wie [TAMER_pronoun] [circumstance_group] {replace: [ANIMAL_objective]; "ihn"-"einem"; "sie"-"einer"; "es"-"einem"} scheuen [ANIMAL_labelDat] etwas zuflüstert</li>
+    <li>image->[TAMER_nameFullIndefDat], wie [TAMER_pronoun] [circumstance_group] {replace: [ANIMAL_objective]; "ihn"-"einen wilden"; "sie"-"eine wilde"; "es"-"ein wildes"} [ANIMAL_labelAcc] beruhigt</li>
     <li>circumstance_phrase->vorsichtig</li>
     <li>circumstance_phrase->lächelnd</li>
     <li>circumstance_phrase->erschöpft aber glücklich</li>
@@ -473,13 +475,15 @@
     <li>desc_sentence->[ANIMAL_nameDefNom] schaut erschrocken auf, aber zeigt Interesse.</li>
     <li>desc_sentence->[ANIMAL_nameDefNom] scheint fasziniert zu sein.</li>
     <li>desc_sentence->[TAMER_nameDefNom] projiziert ein starkes Gefühl der Liebe auf [ANIMAL_nameDefAcc].</li>
-    <li>TAMER_nameFullIndefDat->{lookup: [TAMER_nameFull]; decline_tagged; 3}</li>
-    <li>TAMER_nameDefNom->{lookup: [TAMER_nameDef]; decline_tagged; 1}</li>
-    <li>TAMER_nameDefDat->{lookup: [TAMER_nameDef]; decline_tagged; 3}</li>
-    <li>ANIMAL_nameDefAcc->{lookup: [ANIMAL_nameDef]; decline_tagged; 4}</li>
-    <li>ANIMAL_nameFullIndefDat->{lookup: [ANIMAL_nameFull]; decline_tagged; 3}</li>
-    <li>ANIMAL_nameDefNom->{lookup: [ANIMAL_nameDef]; decline_tagged; 1}</li>
-    <li>ANIMAL_nameIndefAcc->{lookup: [ANIMAL_nameIndef]; decline_tagged; 4}</li>
+    <li>TAMER_nameFullIndefDat->{lookup: [TAMER_nameFull]; decline_tagged_dat}</li>
+    <li>TAMER_nameDefNom->{lookup: [TAMER_nameDef]; decline_tagged_nom}</li>
+    <li>TAMER_nameDefDat->{lookup: [TAMER_nameDef]; decline_tagged_dat}</li>
+    <li>ANIMAL_nameDefAcc->{lookup: [ANIMAL_nameDef]; decline_tagged_acc}</li>
+    <li>ANIMAL_nameFullIndefDat->{lookup: [ANIMAL_nameFull]; decline_tagged_dat}</li>
+    <li>ANIMAL_nameFullIndefAcc->{lookup: [ANIMAL_nameFull]; decline_tagged_acc}</li>
+    <li>ANIMAL_nameDefNom->{lookup: [ANIMAL_nameDef]; decline_tagged_nom}</li>
+    <li>ANIMAL_labelDat->{lookup: [ANIMAL_label]; decline_tagged_dat}</li>
+    <li>ANIMAL_labelAcc->{lookup: [ANIMAL_label]; decline_tagged_acc}</li>
   </TamedAnimal.rulePack.rulesStrings>
   
   <!-- EN: traded with someone -->
@@ -501,25 +505,26 @@
   -->
   <TradedWith.rulePack.rulesStrings>
     <li>tale_noun->ein Handel zwischen [SELLER_nameDefDat] und [BUYER_nameDefDat] stattfand</li>
-    <li>image->[BUYER_nameFullIndefDat], wie [BUYER_pronoun] [circumstance_group] Waren von [SELLER_nameFullIndefDat] kauft</li>
-    <li>image->[SELLER_nameFullIndefDat], wie [SELLER_pronoun] [circumstance_group] Waren an [BUYER_nameIndefAcc] verkauft</li>
-    <li>circumstance_phrase->mit gierigem Blick</li>
-    <li>circumstance_phrase->, während beide sich angrinsen,</li>
+    <li>image->[BUYER_nameFullIndefDat], wie [BUYER_pronoun] [circumstance_group] Waren [SELLER_nameFullIndefGen] kauft</li>
+    <li>image->[SELLER_nameFullIndefDat], wie [SELLER_pronoun] [circumstance_group] Waren an [BUYER_nameFullIndefAcc] verkauft</li>
+    <li>circumstance_phrase->begierig</li>
+    <li>circumstance_phrase->grinsend</li>
     <li>desc_sentence->[BUYER_nameDefNom] untersucht [SELLER_label]'s Waren.</li>
-    <li>desc_sentence->[SELLER_nameDefNom] betrachtet ein Objekt.</li>
+    <li>desc_sentence->[SELLER_nameDefNom] begutachtet einen Gegenstand.</li>
     <li>desc_sentence->[SELLER_nameDefNom] fängt an zu feilschen.</li>
     <li>desc_sentence->[BUYER_nameDefNom] diskutiert mit [SELLER_nameDefDat].</li>
     <li>desc_sentence->[SELLER_nameDefNom] und [BUYER_nameDefNom] einigen sich auf einen Preis.</li>
-    <li>desc_sentence->[BUYER_nameDefNom] bezahlt für ein Objekt.</li>
+    <li>desc_sentence->[BUYER_nameDefNom] zahlt für einen Gegenstand.</li>
     <li>desc_sentence->[SELLER_nameDefNom] zählt [SELLER_possessive] Geld.</li>
-    <li>desc_sentence->[BUYER_nameDefNom] nimmt [BUYER_possessive]e Waren.</li>
-    <li>BUYER_nameFullIndefDat->{lookup: [BUYER_nameFull]; decline_tagged; 3}</li>
-    <li>BUYER_nameIndefAcc->{lookup: [BUYER_nameIndef]; decline_tagged; 4}</li>
-    <li>BUYER_nameDefNom->{lookup: [BUYER_nameDef]; decline_tagged; 1}</li>
-    <li>BUYER_nameDefDat->{lookup: [BUYER_nameDef]; decline_tagged; 3}</li>
-    <li>SELLER_nameFullIndefDat->{lookup: [SELLER_nameFull]; decline_tagged; 3}</li>
-    <li>SELLER_nameDefNom->{lookup: [SELLER_nameDef]; decline_tagged; 1}</li>
-    <li>SELLER_nameDefDat->{lookup: [SELLER_nameDef]; decline_tagged; 3}</li>
+    <li>desc_sentence->[BUYER_nameDefNom] nimmt [BUYER_possessive]e Waren entgegen.</li>
+    <li>BUYER_nameFullIndefDat->{lookup: [BUYER_nameFull]; decline_tagged_dat}</li>
+    <li>BUYER_nameFullIndefAcc->{lookup: [BUYER_nameFull]; decline_tagged_acc}</li>
+    <li>BUYER_nameDefNom->{lookup: [BUYER_nameDef]; decline_tagged_nom}</li>
+    <li>BUYER_nameDefDat->{lookup: [BUYER_nameDef]; decline_tagged_dat}</li>
+    <li>SELLER_nameFullIndefGen->{lookup: von [SELLER_nameFull]; decline_tagged_gen}</li>
+    <li>SELLER_nameFullIndefDat->{lookup: [SELLER_nameFull]; decline_tagged_dat}</li>
+    <li>SELLER_nameDefNom->{lookup: [SELLER_nameDef]; decline_tagged_nom}</li>
+    <li>SELLER_nameDefDat->{lookup: [SELLER_nameDef]; decline_tagged_dat}</li>
   </TradedWith.rulePack.rulesStrings>
   
   <!-- EN: animal trained -->
@@ -592,12 +597,12 @@
     <li>desc_sentence->[ANIMAL_nameDefNom] ist mit Schuppen bedeckt.</li>
     <li>desc_sentence->[TRAINER_nameDefNom] wird mit [Quantity_adjphrase_Dat] Armen dargestellt.</li>
     <li>desc_sentence->[TRAINER_nameDefNom] verwandelt sich in [ANIMAL_nameDefAcc].</li>
-    <li>TRAINER_nameFullIndefDat->{lookup: [TRAINER_nameFull]; decline_tagged; 3}</li>
-    <li>TRAINER_nameDefNom->{lookup: [TRAINER_nameDef]; decline_tagged; 1}</li>
-    <li>TRAINER_nameDefDat->{lookup: [TRAINER_nameDef]; decline_tagged; 3}</li>
-    <li>ANIMAL_nameDefNom->{lookup: [ANIMAL_nameDef]; decline_tagged; 1}</li>
-    <li>ANIMAL_nameDefAcc->{lookup: [ANIMAL_nameDef]; decline_tagged; 4}</li>
-    <li>ANIMAL_nameFullIndefDat->{lookup: [ANIMAL_nameFull]; decline_tagged; 3}</li>
+    <li>TRAINER_nameFullIndefDat->{lookup: [TRAINER_nameFull]; decline_tagged_dat}</li>
+    <li>TRAINER_nameDefNom->{lookup: [TRAINER_nameDef]; decline_tagged_nom}</li>
+    <li>TRAINER_nameDefDat->{lookup: [TRAINER_nameDef]; decline_tagged_dat}</li>
+    <li>ANIMAL_nameDefNom->{lookup: [ANIMAL_nameDef]; decline_tagged_nom}</li>
+    <li>ANIMAL_nameDefAcc->{lookup: [ANIMAL_nameDef]; decline_tagged_acc}</li>
+    <li>ANIMAL_nameFullIndefDat->{lookup: [ANIMAL_nameFull]; decline_tagged_dat}</li>
   </TrainedAnimal.rulePack.rulesStrings>
   
 </LanguageData>

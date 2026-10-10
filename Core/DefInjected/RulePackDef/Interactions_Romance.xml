@@ -6,7 +6,7 @@
   -->
   <Sentence_MarriageProposalAccepted.rulePack.rulesStrings>
     <li>sent->[RECIPIENT_nameDefNom] willigte ein. Die beiden sind nun verlobt.</li>
-    <li>RECIPIENT_nameDefNom->{lookup: [RECIPIENT_nameDef]; decline_tagged; 1}</li>
+    <li>RECIPIENT_nameDefNom->{lookup: [RECIPIENT_nameDef]; decline_tagged_nom}</li>
   </Sentence_MarriageProposalAccepted.rulePack.rulesStrings>
   
   <!-- EN:
@@ -14,7 +14,7 @@
   -->
   <Sentence_MarriageProposalRejected.rulePack.rulesStrings>
     <li>sent->[RECIPIENT_nameDefNom] lehnte den Heiratsantrag ab.</li>
-    <li>RECIPIENT_nameDefNom->{lookup: [RECIPIENT_nameDef]; decline_tagged; 1}</li>
+    <li>RECIPIENT_nameDefNom->{lookup: [RECIPIENT_nameDef]; decline_tagged_nom}</li>
   </Sentence_MarriageProposalRejected.rulePack.rulesStrings>
   
   <!-- EN:
@@ -35,7 +35,7 @@
     <li>sent->[RECIPIENT_nameDefNom] war ergriffen und willigte ein, [INITIATOR_label]'s [lover] zu werden.</li>
     <li>lover(RECIPIENT_gender!=Female)->Geliebter</li>
     <li>lover(RECIPIENT_gender==Female)->Geliebte</li>
-    <li>RECIPIENT_nameDefNom->{lookup: [RECIPIENT_nameDef]; decline_tagged; 1}</li>
+    <li>RECIPIENT_nameDefNom->{lookup: [RECIPIENT_nameDef]; decline_tagged_nom}</li>
   </Sentence_RomanceAttemptAccepted.rulePack.rulesStrings>
   
   <!-- EN:
@@ -58,7 +58,7 @@
     <li>sent->[RECIPIENT_nameDefNom] antwortete nicht.</li>
     <li>sent->[RECIPIENT_nameDefNom] schenkte {INITIATOR_gender ? ihm : ihr} keinerlei Beachtung.</li>
     <li>sent->[RECIPIENT_nameDefNom] gab {INITIATOR_gender ? ihm : ihr} einen Korb.</li>
-    <li>RECIPIENT_nameDefNom->{lookup: [RECIPIENT_nameDef]; decline_tagged; 1}</li>
+    <li>RECIPIENT_nameDefNom->{lookup: [RECIPIENT_nameDef]; decline_tagged_nom}</li>
   </Sentence_RomanceAttemptRejected.rulePack.rulesStrings>
   
 </LanguageData>

@@ -6,7 +6,7 @@
   -->
   <Sentence_RecruitAttemptAccepted.rulePack.rulesStrings>
     <li>sent->[RECIPIENT_nameDefNom] nahm das Angebot an und ist nun Mitglied der Gemeinschaft.</li>
-    <li>RECIPIENT_nameDefNom->{lookup: [RECIPIENT_nameDef]; decline_tagged; 1}</li>
+    <li>RECIPIENT_nameDefNom->{lookup: [RECIPIENT_nameDef]; decline_tagged_nom}</li>
   </Sentence_RecruitAttemptAccepted.rulePack.rulesStrings>
   
   <!-- EN:
@@ -14,7 +14,7 @@
   -->
   <Sentence_RecruitAttemptRejected.rulePack.rulesStrings>
     <li>sent->[RECIPIENT_nameDefNom] lehnte das Angebot ab.</li>
-    <li>RECIPIENT_nameDefNom->{lookup: [RECIPIENT_nameDef]; decline_tagged; 1}</li>
+    <li>RECIPIENT_nameDefNom->{lookup: [RECIPIENT_nameDef]; decline_tagged_nom}</li>
   </Sentence_RecruitAttemptRejected.rulePack.rulesStrings>
   
 </LanguageData>

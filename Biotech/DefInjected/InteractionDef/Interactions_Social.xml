@@ -66,9 +66,9 @@
     <li>babyGame->Nachmachen</li>
     <li>babyGame->Raten</li>
     <li>babyGame->Fingerpuppen</li>
-    <li>INITIATOR_nameDefNom->{lookup: [INITIATOR_nameDef]; decline_tagged; 1}</li>
-    <li>RECIPIENT_nameDefDat->{lookup: [RECIPIENT_nameDef]; decline_tagged; 3}</li>
-    <li>RECIPIENT_nameDefAcc->{lookup: [RECIPIENT_nameDef]; decline_tagged; 4}</li>
+    <li>INITIATOR_nameDefNom->{lookup: [INITIATOR_nameDef]; decline_tagged_nom}</li>
+    <li>RECIPIENT_nameDefDat->{lookup: [RECIPIENT_nameDef]; decline_tagged_dat}</li>
+    <li>RECIPIENT_nameDefAcc->{lookup: [RECIPIENT_nameDef]; decline_tagged_acc}</li>
   </BabyPlay.logRulesInitiator.rulesStrings>
   
   <!-- EN: animal lesson -->
@@ -128,8 +128,8 @@
     <li>subject->die Reptilien</li>
     <li>subject->die Skaria-Krankheit</li>
     <li>subject->das Trockenfutter</li>
-    <li>INITIATOR_nameDefNom->{lookup: [INITIATOR_nameDef]; decline_tagged; 1}</li>
-    <li>RECIPIENT_nameDefDat->{lookup: [RECIPIENT_nameDef]; decline_tagged; 3}</li>
+    <li>INITIATOR_nameDefNom->{lookup: [INITIATOR_nameDef]; decline_tagged_nom}</li>
+    <li>RECIPIENT_nameDefDat->{lookup: [RECIPIENT_nameDef]; decline_tagged_dat}</li>
   </LessonAnimals.logRulesInitiator.rulesStrings>
   
   <!-- EN: art lesson -->
@@ -347,8 +347,8 @@
   -->
   <LessonGeneric.logRulesInitiator.rulesStrings>
     <li>r_logentry->[INITIATOR_nameDefNom] brachte [RECIPIENT_nameDefDat] etwas bei.</li>
-    <li>INITIATOR_nameDefNom->{lookup: [INITIATOR_nameDef]; decline_tagged; 1}</li>
-    <li>RECIPIENT_nameDefDat->{lookup: [RECIPIENT_nameDef]; decline_tagged; 3}</li>
+    <li>INITIATOR_nameDefNom->{lookup: [INITIATOR_nameDef]; decline_tagged_nom}</li>
+    <li>RECIPIENT_nameDefDat->{lookup: [RECIPIENT_nameDef]; decline_tagged_dat}</li>
   </LessonGeneric.logRulesInitiator.rulesStrings>
   
   <!-- EN: intellectual lesson -->
@@ -458,8 +458,8 @@
     <li>subject->chirurgische Eingriffe</li>
     <li>subject->das Einfühlungsvermögen gegenüber Patienten</li>
     <li>subject->Sterilisationsmethoden</li>
-    <li>INITIATOR_nameDefNom->{lookup: [INITIATOR_nameDef]; decline_tagged; 1}</li>
-    <li>RECIPIENT_nameDefDat->{lookup: [RECIPIENT_nameDef]; decline_tagged; 3}</li>
+    <li>INITIATOR_nameDefNom->{lookup: [INITIATOR_nameDef]; decline_tagged_nom}</li>
+    <li>RECIPIENT_nameDefDat->{lookup: [RECIPIENT_nameDef]; decline_tagged_dat}</li>
   </LessonMedicine.logRulesInitiator.rulesStrings>
   
   <!-- EN: melee lesson -->
@@ -851,9 +851,9 @@
     <li>planType->, andere Menschen zu manipulieren</li>
     <li>planType-> zur Vernichtung von Sanguophagen-Jägern</li>
     <li>planType->, das endlose Leben zu genießen</li>
-    <li>INITIATOR_nameDefNom->{lookup: [INITIATOR_nameDef]; decline_tagged; 1}</li>
-    <li>RECIPIENT_nameDefNom->{lookup: [RECIPIENT_nameDef]; decline_tagged; 1}</li>
-    <li>RECIPIENT_nameDefDat->{lookup: [RECIPIENT_nameDef]; decline_tagged; 3}</li>
+    <li>INITIATOR_nameDefNom->{lookup: [INITIATOR_nameDef]; decline_tagged_nom}</li>
+    <li>RECIPIENT_nameDefNom->{lookup: [RECIPIENT_nameDef]; decline_tagged_nom}</li>
+    <li>RECIPIENT_nameDefDat->{lookup: [RECIPIENT_nameDef]; decline_tagged_dat}</li>
   </SanguophageChat.logRulesInitiator.rulesStrings>
   
 </LanguageData>

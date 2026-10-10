@@ -80,13 +80,13 @@
     <li>desc_sentence->[KILLER_nameDefNom] scheint Reue zu empfinden.</li>
     <li>desc_sentence->[KILLER_nameDefNom] scheint zufrieden mit der Situation zu sein.</li>
     <li>desc_sentence->[KILLER_nameDefNom] freut sich über den Sieg.</li>
-    <li>KILLER_nameFullIndefDat->{lookup: [KILLER_nameFull]; decline_tagged; 3}</li>
-    <li>KILLER_nameDefNom->{lookup: [KILLER_nameDef]; decline_tagged; 1}</li>
-    <li>KILLER_nameDefDat->{lookup: [KILLER_nameDef]; decline_tagged; 3}</li>
-    <li>VICTIM_nameFullIndefDat->{lookup: [VICTIM_nameFull]; decline_tagged; 3}</li>
-    <li>VICTIM_nameIndefAcc->{lookup: [VICTIM_nameIndef]; decline_tagged; 4}</li>
-    <li>VICTIM_nameDefNom->{lookup: [VICTIM_nameDef]; decline_tagged; 1}</li>
-    <li>VICTIM_nameDefAcc->{lookup: [VICTIM_nameDef]; decline_tagged; 4}</li>
+    <li>KILLER_nameFullIndefDat->{lookup: [KILLER_nameFull]; decline_tagged_dat}</li>
+    <li>KILLER_nameDefNom->{lookup: [KILLER_nameDef]; decline_tagged_nom}</li>
+    <li>KILLER_nameDefDat->{lookup: [KILLER_nameDef]; decline_tagged_dat}</li>
+    <li>VICTIM_nameFullIndefDat->{lookup: [VICTIM_nameFull]; decline_tagged_dat}</li>
+    <li>VICTIM_nameIndefAcc->{lookup: [VICTIM_nameIndef]; decline_tagged_acc}</li>
+    <li>VICTIM_nameDefNom->{lookup: [VICTIM_nameDef]; decline_tagged_nom}</li>
+    <li>VICTIM_nameDefAcc->{lookup: [VICTIM_nameDef]; decline_tagged_acc}</li>
   </Downed.rulePack.rulesStrings>
   
   <!-- EN: exhausted -->
@@ -166,9 +166,9 @@
     <li>desc_sentence->Ein [PersonJob] schaut aus der Ferne zu.</li>
     <li>desc_sentence(p=0.5)->Die Szene spielt in einer frisch gegründeten [CommunityFemDat].</li>
     <li>desc_sentence(p=0.5)->Die Szene spielt in einem frisch gegründeten [CommunityNeuDat].</li>
-    <li>MOTHER_nameFullIndefDat->{lookup: [MOTHER_nameFull]; decline_tagged; 3}</li>
-    <li>MOTHER_nameDefNom->{lookup: [MOTHER_nameDef]; decline_tagged; 1}</li>
-    <li>CHILD_nameIndefAcc->{lookup: [CHILD_nameIndef]; decline_tagged; 4}</li>
+    <li>MOTHER_nameFullIndefDat->{lookup: [MOTHER_nameFull]; decline_tagged_dat}</li>
+    <li>MOTHER_nameDefNom->{lookup: [MOTHER_nameDef]; decline_tagged_nom}</li>
+    <li>CHILD_nameIndefAcc->{lookup: [CHILD_nameIndef]; decline_tagged_acc}</li>
   </GaveBirth.rulePack.rulesStrings>
   
   <!-- EN: heatstroke revealed -->
@@ -208,7 +208,7 @@
     <li>circumstance_phrase->mit spröden, trockenen Lippen</li>
     <li>circumstance_phrase->, während [PAWN_pronoun] sich übergibt,</li>
     <li>desc_sentence->[Quantity_adjphrase] skelettierte Kadaver von [AnimalsDat] liegen verstreut im Gebiet herum.</li>
-    <li>desc_sentence->Die Kleidung von [PAWN_nameDefDat] ist zerfetzt und zerrissen.</li>
+    <li>desc_sentence->Die Kleidung [PAWN_nameDefGen] ist zerfetzt und zerrissen.</li>
     <li>desc_sentence->Eine gleißende Sonne strahlt am Horizont.</li>
     <li>desc_sentence->Die Szene spielt in einer glühend heißen Wüste.</li>
     <li>desc_sentence->Die Szene scheint sich im Inneren abzuspielen, neben einer Heizung.</li>
@@ -253,7 +253,7 @@
     <li>circumstance_phrase->fröstelnd</li>
     <li>circumstance_phrase->, während sich Wolken beim Ausatmen bilden,</li>
     <li>desc_sentence->[Quantity_adjphrase] gefrorene Kadaver von [AnimalsDat] liegen verstreut im Gebiet herum.</li>
-    <li>desc_sentence->Die Kleidung von [PAWN_nameDefDat] ist zerfetzt und zerrissen.</li>
+    <li>desc_sentence->Die Kleidung [PAWN_nameDefGen] ist zerfetzt und zerrissen.</li>
     <li>desc_sentence->Ein kaltblauer Mond strahlt am Horizont.</li>
     <li>desc_sentence->Die Szene spielt in einem schneebedeckten [TreeTypeCon]wald.</li>
     <li>desc_sentence->Die Szene scheint sich im Inneren eines Kühlraums abzuspielen.</li>
@@ -342,7 +342,7 @@
   <KilledCapacity.rulePack.rulesStrings>
     <li>tale_noun->[KILLER_nameDefNom] [VICTIM_nameDefAcc] [wound_name_past]</li>
     <li>tale_noun->[KILLER_nameDefNom] [VICTIM_nameDefAcc] mit [WEAPON_indefinite_dat] [wound_name_past]</li>
-    <li>image->[KILLER_nameFullIndefDat], wie [KILLER_pronoun] die {lookup: Körperfunktion '[CAPACITY_label]'; capacity} von [VICTIM_nameFullIndefDat] [with_weapon_optional] [cap_removal]</li>
+    <li>image->[KILLER_nameFullIndefDat], wie [KILLER_pronoun] die {lookup: Körperfunktion '[CAPACITY_label]'; capacity} [VICTIM_nameFullIndefGen] [with_weapon_optional] [cap_removal]</li>
     <li>image->[KILLER_nameFullIndefDat], wie [KILLER_pronoun] [VICTIM_nameIndefAcc] [with_weapon_optional] [wound_name_present], indem [KILLER_pronoun] [VICTIM_possessive]e {lookup: Körperfunktion '[CAPACITY_label]'; capacity} [cap_removal]</li>
     <li>cap_removal->zerstört</li>
     <li>cap_removal->vernichtet</li>
@@ -368,12 +368,12 @@
     <li>desc_sentence->[KILLER_nameDefNom] scheint Reue zu empfinden.</li>
     <li>desc_sentence->[KILLER_nameDefNom] scheint zufrieden mit der Situation zu sein.</li>
     <li>desc_sentence->[KILLER_nameDefNom] freut sich über den Sieg.</li>
-    <li>KILLER_nameFullIndefDat->{lookup: [KILLER_nameFull]; decline_tagged; 3}</li>
-    <li>KILLER_nameDefNom->{lookup: [KILLER_nameDef]; decline_tagged; 1}</li>
-    <li>VICTIM_nameFullIndefDat->{lookup: [VICTIM_nameFull]; decline_tagged; 3}</li>
-    <li>VICTIM_nameIndefAcc->{lookup: [VICTIM_nameIndef]; decline_tagged; 4}</li>
-    <li>VICTIM_nameDefNom->{lookup: [VICTIM_nameDef]; decline_tagged; 1}</li>
-    <li>VICTIM_nameDefAcc->{lookup: [VICTIM_nameDef]; decline_tagged; 4}</li>
+    <li>KILLER_nameFullIndefDat->{lookup: [KILLER_nameFull]; decline_tagged_dat}</li>
+    <li>KILLER_nameDefNom->{lookup: [KILLER_nameDef]; decline_tagged_nom}</li>
+    <li>VICTIM_nameFullIndefGen->{lookup: von [VICTIM_nameFull]; decline_tagged_gen}</li>
+    <li>VICTIM_nameIndefAcc->{lookup: [VICTIM_nameIndef]; decline_tagged_acc}</li>
+    <li>VICTIM_nameDefNom->{lookup: [VICTIM_nameDef]; decline_tagged_nom}</li>
+    <li>VICTIM_nameDefAcc->{lookup: [VICTIM_nameDef]; decline_tagged_acc}</li>
   </KilledCapacity.rulePack.rulesStrings>
   
   <!-- EN: killed at distance -->
@@ -451,12 +451,12 @@
     <li>desc_sentence->[KILLER_nameDefNom] scheint Reue zu empfinden.</li>
     <li>desc_sentence->[KILLER_nameDefNom] scheint zufrieden mit der Situation zu sein.</li>
     <li>desc_sentence->[KILLER_nameDefNom] freut sich über den Sieg.</li>
-    <li>KILLER_nameFullIndefDat->{lookup: [KILLER_nameFull]; decline_tagged; 3}</li>
-    <li>KILLER_nameDefNom->{lookup: [KILLER_nameDef]; decline_tagged; 1}</li>
-    <li>KILLER_nameDefDat->{lookup: [KILLER_nameDef]; decline_tagged; 3}</li>
-    <li>VICTIM_nameIndefAcc->{lookup: [VICTIM_nameIndef]; decline_tagged; 4}</li>
-    <li>VICTIM_nameDefNom->{lookup: [VICTIM_nameDef]; decline_tagged; 1}</li>
-    <li>VICTIM_nameDefAcc->{lookup: [VICTIM_nameDef]; decline_tagged; 4}</li>
+    <li>KILLER_nameFullIndefDat->{lookup: [KILLER_nameFull]; decline_tagged_dat}</li>
+    <li>KILLER_nameDefNom->{lookup: [KILLER_nameDef]; decline_tagged_nom}</li>
+    <li>KILLER_nameDefDat->{lookup: [KILLER_nameDef]; decline_tagged_dat}</li>
+    <li>VICTIM_nameIndefAcc->{lookup: [VICTIM_nameIndef]; decline_tagged_acc}</li>
+    <li>VICTIM_nameDefNom->{lookup: [VICTIM_nameDef]; decline_tagged_nom}</li>
+    <li>VICTIM_nameDefAcc->{lookup: [VICTIM_nameDef]; decline_tagged_acc}</li>
   </KilledLongRange.rulePack.rulesStrings>
   
   <!-- EN: killed major threat -->
@@ -541,14 +541,14 @@
     <li>desc_sentence->[KILLER_nameDefNom] freut sich über den Sieg.</li>
     <li>desc_sentence->[KILLER_nameDefNom] sieht [AdjectiveBadass] aus.</li>
     <li>desc_sentence->[KILLER_nameDefNom] erstrahlt in einer heroischen Aura.</li>
-    <li>KILLER_nameFullIndefDat->{lookup: [KILLER_nameFull]; decline_tagged; 3}</li>
-    <li>KILLER_nameDefNom->{lookup: [KILLER_nameDef]; decline_tagged; 1}</li>
-    <li>KILLER_nameDefDat->{lookup: [KILLER_nameDef]; decline_tagged; 3}</li>
-    <li>KILLER_nameDefAcc->{lookup: [KILLER_nameDef]; decline_tagged; 4}</li>
-    <li>VICTIM_nameFullIndefDat->{lookup: [VICTIM_nameFull]; decline_tagged; 3}</li>
-    <li>VICTIM_nameIndefAcc->{lookup: [VICTIM_nameIndef]; decline_tagged; 4}</li>
-    <li>VICTIM_nameDefNom->{lookup: [VICTIM_nameDef]; decline_tagged; 1}</li>
-    <li>VICTIM_nameDefAcc->{lookup: [VICTIM_nameDef]; decline_tagged; 4}</li>
+    <li>KILLER_nameFullIndefDat->{lookup: [KILLER_nameFull]; decline_tagged_dat}</li>
+    <li>KILLER_nameDefNom->{lookup: [KILLER_nameDef]; decline_tagged_nom}</li>
+    <li>KILLER_nameDefDat->{lookup: [KILLER_nameDef]; decline_tagged_dat}</li>
+    <li>KILLER_nameDefAcc->{lookup: [KILLER_nameDef]; decline_tagged_acc}</li>
+    <li>VICTIM_nameFullIndefDat->{lookup: [VICTIM_nameFull]; decline_tagged_dat}</li>
+    <li>VICTIM_nameIndefAcc->{lookup: [VICTIM_nameIndef]; decline_tagged_acc}</li>
+    <li>VICTIM_nameDefNom->{lookup: [VICTIM_nameDef]; decline_tagged_nom}</li>
+    <li>VICTIM_nameDefAcc->{lookup: [VICTIM_nameDef]; decline_tagged_acc}</li>
   </KilledMajorThreat.rulePack.rulesStrings>
   
   <!-- EN: killed in melee -->
@@ -632,13 +632,13 @@
     <li>desc_sentence->[KILLER_nameDefNom] scheint zufrieden mit der Situation zu sein.</li>
     <li>desc_sentence->[KILLER_nameDefNom] freut sich über den Sieg.</li>
     <li>desc_sentence->[KILLER_nameDefNom] hat einen wilden Ausdruck.</li>
-    <li>KILLER_nameFullIndefDat->{lookup: [KILLER_nameFull]; decline_tagged; 3}</li>
-    <li>KILLER_nameDefNom->{lookup: [KILLER_nameDef]; decline_tagged; 1}</li>
-    <li>KILLER_nameDefDat->{lookup: [KILLER_nameDef]; decline_tagged; 3}</li>
-    <li>VICTIM_nameFullIndefDat->{lookup: [VICTIM_nameFull]; decline_tagged; 3}</li>
-    <li>VICTIM_nameIndefAcc->{lookup: [VICTIM_nameIndef]; decline_tagged; 4}</li>
-    <li>VICTIM_nameDefNom->{lookup: [VICTIM_nameDef]; decline_tagged; 1}</li>
-    <li>VICTIM_nameDefAcc->{lookup: [VICTIM_nameDef]; decline_tagged; 4}</li>
+    <li>KILLER_nameFullIndefDat->{lookup: [KILLER_nameFull]; decline_tagged_dat}</li>
+    <li>KILLER_nameDefNom->{lookup: [KILLER_nameDef]; decline_tagged_nom}</li>
+    <li>KILLER_nameDefDat->{lookup: [KILLER_nameDef]; decline_tagged_dat}</li>
+    <li>VICTIM_nameFullIndefDat->{lookup: [VICTIM_nameFull]; decline_tagged_dat}</li>
+    <li>VICTIM_nameIndefAcc->{lookup: [VICTIM_nameIndef]; decline_tagged_acc}</li>
+    <li>VICTIM_nameDefNom->{lookup: [VICTIM_nameDef]; decline_tagged_nom}</li>
+    <li>VICTIM_nameDefAcc->{lookup: [VICTIM_nameDef]; decline_tagged_acc}</li>
   </KilledMelee.rulePack.rulesStrings>
   
   <!-- EN: killed with mortar -->
@@ -686,11 +686,11 @@
     <li>desc_sentence->[KILLER_nameDefNom] scheint Reue zu empfinden.</li>
     <li>desc_sentence->[KILLER_nameDefNom] scheint zufrieden mit der Situation zu sein.</li>
     <li>desc_sentence->[KILLER_nameDefNom] freut sich über den Sieg.</li>
-    <li>KILLER_nameFullIndefDat->{lookup: [KILLER_nameFull]; decline_tagged; 3}</li>
-    <li>KILLER_nameDefNom->{lookup: [KILLER_nameDef]; decline_tagged; 1}</li>
-    <li>KILLER_nameDefDat->{lookup: [KILLER_nameDef]; decline_tagged; 3}</li>
-    <li>VICTIM_nameDefNom->{lookup: [VICTIM_nameDef]; decline_tagged; 1}</li>
-    <li>VICTIM_nameDefAcc->{lookup: [VICTIM_nameDef]; decline_tagged; 4}</li>
+    <li>KILLER_nameFullIndefDat->{lookup: [KILLER_nameFull]; decline_tagged_dat}</li>
+    <li>KILLER_nameDefNom->{lookup: [KILLER_nameDef]; decline_tagged_nom}</li>
+    <li>KILLER_nameDefDat->{lookup: [KILLER_nameDef]; decline_tagged_dat}</li>
+    <li>VICTIM_nameDefNom->{lookup: [VICTIM_nameDef]; decline_tagged_nom}</li>
+    <li>VICTIM_nameDefAcc->{lookup: [VICTIM_nameDef]; decline_tagged_acc}</li>
   </KilledMortar.rulePack.rulesStrings>
   
   <!-- EN: toxicity revealed -->
@@ -732,7 +732,7 @@
     <li>circumstance_phrase->beim Erbrechen</li>
     <li>circumstance_phrase->mit einem sichtbaren Ausschlag</li>
     <li>desc_sentence->[Quantity_adjphrase] verdrehte Kadaver von [AnimalsDat] liegen verstreut im Gebiet herum.</li>
-    <li>desc_sentence->Die Kleidung von [PAWN_nameDefDat] fällt auseinander.</li>
+    <li>desc_sentence->Die Kleidung [PAWN_nameDefGen] fällt auseinander.</li>
     <li>desc_sentence->Der Himmel ist trüb und [Color].</li>
     <li>desc_sentence->[Quantity_adjphrase] spiralförmige [Color]e [TerrainFeatures] umgeben die Szene.</li>
     <li>desc_sentence->Die Szene spielt in einem verkümmerten [TreeTypeCon]wald.</li>
@@ -816,7 +816,7 @@
     <li>circumstance_phrase->auf feige, halbherzige Weise</li>
     <li>desc_sentence->[Quantity_adjphrase] [Animals] schauen zu.</li>
     <li>desc_sentence->Ein [PersonJob] [side_position] schaut stillschweigend zu.</li>
-    <li>desc_sentence->Eine Blutlache bildet sich um den verletzten Körper von [VICTIM_nameDefDat].</li>
+    <li>desc_sentence->Eine Blutlache bildet sich um den verletzten Körper [VICTIM_nameDefGen].</li>
     <li>desc_sentence->[VICTIM_nameDefNom] ist mit [GoreDat] bedeckt.</li>
     <li>desc_sentence->[VICTIM_nameDefNom] sieht [AdjectiveAngsty] aus.</li>
     <li>desc_sentence->[VICTIM_nameDefNom] windet sich vor Schmerzen.</li>
@@ -826,14 +826,14 @@
     <li>desc_sentence->[KILLER_nameDefNom] scheint Reue zu empfinden.</li>
     <li>desc_sentence->[KILLER_nameDefNom] scheint zufrieden mit der Situation zu sein.</li>
     <li>desc_sentence->[KILLER_nameDefNom] freut sich über den Sieg.</li>
-    <li>KILLER_nameFullIndefDat->{lookup: [KILLER_nameFull]; decline_tagged; 3}</li>
-    <li>KILLER_nameDefNom->{lookup: [KILLER_nameDef]; decline_tagged; 1}</li>
-    <li>KILLER_nameDefDat->{lookup: [KILLER_nameDef]; decline_tagged; 3}</li>
-    <li>VICTIM_nameFullIndefDat->{lookup: [VICTIM_nameFull]; decline_tagged; 3}</li>
-    <li>VICTIM_nameIndefAcc->{lookup: [VICTIM_nameIndef]; decline_tagged; 4}</li>
-    <li>VICTIM_nameDefNom->{lookup: [VICTIM_nameDef]; decline_tagged; 1}</li>
-    <li>VICTIM_nameDefDat->{lookup: [VICTIM_nameDef]; decline_tagged; 3}</li>
-    <li>VICTIM_nameDefAcc->{lookup: [VICTIM_nameDef]; decline_tagged; 4}</li>
+    <li>KILLER_nameFullIndefDat->{lookup: [KILLER_nameFull]; decline_tagged_dat}</li>
+    <li>KILLER_nameDefNom->{lookup: [KILLER_nameDef]; decline_tagged_nom}</li>
+    <li>KILLER_nameDefDat->{lookup: [KILLER_nameDef]; decline_tagged_dat}</li>
+    <li>VICTIM_nameFullIndefDat->{lookup: [VICTIM_nameFull]; decline_tagged_dat}</li>
+    <li>VICTIM_nameIndefAcc->{lookup: [VICTIM_nameIndef]; decline_tagged_acc}</li>
+    <li>VICTIM_nameDefNom->{lookup: [VICTIM_nameDef]; decline_tagged_nom}</li>
+    <li>VICTIM_nameDefGen->{lookup: von [VICTIM_nameDef]; decline_tagged_gen}</li>
+    <li>VICTIM_nameDefAcc->{lookup: [VICTIM_nameDef]; decline_tagged_acc}</li>
   </Wounded.rulePack.rulesStrings>
   
 </LanguageData>

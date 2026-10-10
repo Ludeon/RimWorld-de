@@ -36,11 +36,11 @@
     <li>desc_sentence->[Quantity_adjphrase] [PersonJobs] sind am Gespräch beteiligt.</li>
     <li>desc_sentence->Der Bereich ist mit [Color]er und [Color]er Farbe verziert.</li>
     <li>desc_sentence->[Quantity_adjphrase] [Animals] spielen in der Nähe.</li>
-    <li>ATTENDER_nameFullIndefDat->{lookup: [ATTENDER_nameFull]; decline_tagged; 3}</li>
-    <li>ATTENDER_nameIndefAcc->{lookup: [ATTENDER_nameIndef]; decline_tagged; 4}</li>
-    <li>ATTENDER_nameDefNom->{lookup: [ATTENDER_nameDef]; decline_tagged; 1}</li>
-    <li>ORGANIZER_nameFullIndefDat->{lookup: [ORGANIZER_nameFull]; decline_tagged; 3}</li>
-    <li>ORGANIZER_nameDefDat->{lookup: [ORGANIZER_nameDef]; decline_tagged; 3}</li>
+    <li>ATTENDER_nameFullIndefDat->{lookup: [ATTENDER_nameFull]; decline_tagged_dat}</li>
+    <li>ATTENDER_nameIndefAcc->{lookup: [ATTENDER_nameIndef]; decline_tagged_acc}</li>
+    <li>ATTENDER_nameDefNom->{lookup: [ATTENDER_nameDef]; decline_tagged_nom}</li>
+    <li>ORGANIZER_nameFullIndefDat->{lookup: [ORGANIZER_nameFull]; decline_tagged_dat}</li>
+    <li>ORGANIZER_nameDefDat->{lookup: [ORGANIZER_nameDef]; decline_tagged_dat}</li>
   </AttendedParty.rulePack.rulesStrings>
   
   <!-- EN: built snowman -->
@@ -105,14 +105,14 @@
     <li>desc_sentence->[Quantity_adjphrase] [Animal]s rest near the scene.</li>
   -->
   <BuriedCorpse.rulePack.rulesStrings>
-    <li>tale_noun->[DIGGER_nameDefNom] die Leiche von [CORPSE_nameDefDat] begrub</li>
-    <li>tale_noun->[DIGGER_nameDefNom] die Leiche von [CORPSE_nameDefDat] beerdigte</li>
-    <li>image->[DIGGER_nameFullIndefDat], wie [DIGGER_pronoun] neben dem Grabstein von [CORPSE_nameFullIndefDat] steht [circumstance_group]</li>
-    <li>image->[DIGGER_nameFullIndefDat], wie [DIGGER_pronoun] neben dem Grabstein von [CORPSE_nameFullIndefDat] sitzt [circumstance_group]</li>
-    <li>image->[DIGGER_nameFullIndefDat], wie [DIGGER_pronoun] sich an den Grabstein von [CORPSE_nameFullIndefDat] lehnt [circumstance_group]</li>
-    <li>image->[DIGGER_nameFullIndefDat], wie [DIGGER_pronoun] den Grabstein von [CORPSE_nameFullIndefDat] beschriftet [circumstance_group]</li>
-    <li>image->[DIGGER_nameFullIndefDat], wie [DIGGER_pronoun] ein Kunstwerk auf den Grabstein von [CORPSE_nameFullIndefDat] zeichnet [circumstance_group]</li>
-    <li>image->[DIGGER_nameFullIndefDat], wie [DIGGER_pronoun] die Leiche von [CORPSE_nameFullIndefDat] beerdigt [circumstance_group]</li>
+    <li>tale_noun->[DIGGER_nameDefNom] die Leiche [CORPSE_nameDefGen] begrub</li>
+    <li>tale_noun->[DIGGER_nameDefNom] die Leiche [CORPSE_nameDefGen] beerdigte</li>
+    <li>image->[DIGGER_nameFullIndefDat], wie [DIGGER_pronoun] neben dem Grabstein [CORPSE_nameFullIndefGen] steht [circumstance_group]</li>
+    <li>image->[DIGGER_nameFullIndefDat], wie [DIGGER_pronoun] neben dem Grabstein [CORPSE_nameFullIndefGen] sitzt [circumstance_group]</li>
+    <li>image->[DIGGER_nameFullIndefDat], wie [DIGGER_pronoun] sich an den Grabstein [CORPSE_nameFullIndefGen] lehnt [circumstance_group]</li>
+    <li>image->[DIGGER_nameFullIndefDat], wie [DIGGER_pronoun] den Grabstein [CORPSE_nameFullIndefGen] beschriftet [circumstance_group]</li>
+    <li>image->[DIGGER_nameFullIndefDat], wie [DIGGER_pronoun] ein Kunstwerk auf den Grabstein [CORPSE_nameFullIndefGen] zeichnet [circumstance_group]</li>
+    <li>image->[DIGGER_nameFullIndefDat], wie [DIGGER_pronoun] die Leiche [CORPSE_nameFullIndefGen] beerdigt [circumstance_group]</li>
     <li>circumstance_phrase->, mit einem [AdjectiveAngsty]en Gesichtsausdruck</li>
     <li>circumstance_phrase->und in Gedanken versunken ist</li>
     <li>circumstance_phrase(p=0.33)->, während [DIGGER_pronoun] auf einen weit entfernten [TerrainFeatureMas] schaut</li>
@@ -122,16 +122,16 @@
     <li>desc_sentence->Ein [Color]es Polarlicht schimmert am Horizont.</li>
     <li>desc_sentence(p=0.5)->In der Ferne ist eine schneebedeckte [CommunityFem] zu sehen.</li>
     <li>desc_sentence(p=0.5)->In der Ferne ist ein schneebedecktes [CommunityNeu] zu sehen.</li>
-    <li>desc_sentence->Eine Geistererscheinung von [CORPSE_nameDefDat] beobachtet die Szene mit einem [AdjectiveFriendly]en Ausdruck.</li>
-    <li>desc_sentence->Eine Geistererscheinung von [CORPSE_nameDefDat] beobachtet die Szene mit einem [AdjectiveAngsty]en Ausdruck.</li>
-    <li>desc_sentence->Eine Geistererscheinung von [CORPSE_nameDefDat] steht neben [DIGGER_nameDefDat], mit einem [AdjectiveAngsty]en Ausdruck.</li>
-    <li>desc_sentence->Eine Geistererscheinung von [CORPSE_nameDefDat] steht neben [DIGGER_nameDefDat], mit einem [AdjectiveFriendly]en Ausdruck.</li>
+    <li>desc_sentence->Eine Geistererscheinung [CORPSE_nameDefGen] beobachtet die Szene mit einem [AdjectiveFriendly]en Ausdruck.</li>
+    <li>desc_sentence->Eine Geistererscheinung [CORPSE_nameDefGen] beobachtet die Szene mit einem [AdjectiveAngsty]en Ausdruck.</li>
+    <li>desc_sentence->Eine Geistererscheinung [CORPSE_nameDefGen] steht neben [DIGGER_nameDefDat], mit einem [AdjectiveAngsty]en Ausdruck.</li>
+    <li>desc_sentence->Eine Geistererscheinung [CORPSE_nameDefGen] steht neben [DIGGER_nameDefDat], mit einem [AdjectiveFriendly]en Ausdruck.</li>
     <li>desc_sentence->[Quantity_adjphrase] [Animals] rasten in der Nähe der Szene.</li>
-    <li>CORPSE_nameDefDat->{lookup: [CORPSE_nameDef]; decline_tagged; 3}</li>
-    <li>CORPSE_nameFullIndefDat->{lookup: [CORPSE_nameFull]; decline_tagged; 3}</li>
-    <li>DIGGER_nameFullIndefDat->{lookup: [DIGGER_nameFull]; decline_tagged; 3}</li>
-    <li>DIGGER_nameDefNom->{lookup: [DIGGER_nameDef]; decline_tagged; 1}</li>
-    <li>DIGGER_nameDefDat->{lookup: [DIGGER_nameDef]; decline_tagged; 3}</li>
+    <li>CORPSE_nameDefGen->{lookup: von [CORPSE_nameDef]; decline_tagged_gen}</li>
+    <li>CORPSE_nameFullIndefGen->{lookup: von [CORPSE_nameFull]; decline_tagged_gen}</li>
+    <li>DIGGER_nameFullIndefDat->{lookup: [DIGGER_nameFull]; decline_tagged_dat}</li>
+    <li>DIGGER_nameDefNom->{lookup: [DIGGER_nameDef]; decline_tagged_nom}</li>
+    <li>DIGGER_nameDefDat->{lookup: [DIGGER_nameDef]; decline_tagged_dat}</li>
   </BuriedCorpse.rulePack.rulesStrings>
   
   <!-- EN: completed long construction project -->
@@ -363,13 +363,13 @@
     <li>desc_sentence->[ANIMAL_nameDefNom] zieht weiter, um sich einer [AnimalGroup] von Artgenossen anzuschließen.</li>
     <li>desc_sentence->Die Szene ist gefüllt mit [AnimalsDat] und [AnimalsDat].</li>
     <li>desc_sentence->Eine Reihe von unzähligen [AnimalsDat] wartet darauf, von [HUMAN_nameDefDat] gezähmt zu werden.</li>
-    <li>ANIMAL_nameDefNom->{lookup: [ANIMAL_nameDef]; decline_tagged; 1}</li>
-    <li>ANIMAL_nameDefAcc->{lookup: [ANIMAL_nameDef]; decline_tagged; 4}</li>
-    <li>ANIMAL_nameFullIndefDat->{lookup: [ANIMAL_nameFull]; decline_tagged; 3}</li>
-    <li>ANIMAL_nameIndefAcc->{lookup: [ANIMAL_nameIndef]; decline_tagged; 4}</li>
-    <li>HUMAN_nameFullIndefDat->{lookup: [HUMAN_nameFull]; decline_tagged; 3}</li>
-    <li>HUMAN_nameDefNom->{lookup: [HUMAN_nameDef]; decline_tagged; 1}</li>
-    <li>HUMAN_nameDefDat->{lookup: [HUMAN_nameDef]; decline_tagged; 3}</li>
+    <li>ANIMAL_nameDefNom->{lookup: [ANIMAL_nameDef]; decline_tagged_nom}</li>
+    <li>ANIMAL_nameDefAcc->{lookup: [ANIMAL_nameDef]; decline_tagged_acc}</li>
+    <li>ANIMAL_nameFullIndefDat->{lookup: [ANIMAL_nameFull]; decline_tagged_dat}</li>
+    <li>ANIMAL_nameIndefAcc->{lookup: [ANIMAL_nameIndef]; decline_tagged_acc}</li>
+    <li>HUMAN_nameFullIndefDat->{lookup: [HUMAN_nameFull]; decline_tagged_dat}</li>
+    <li>HUMAN_nameDefNom->{lookup: [HUMAN_nameDef]; decline_tagged_nom}</li>
+    <li>HUMAN_nameDefDat->{lookup: [HUMAN_nameDef]; decline_tagged_dat}</li>
   </IncreasedMenagerie.rulePack.rulesStrings>
   
   <!-- EN: meditated -->
@@ -582,11 +582,11 @@
     <li>desc_sentence->[SLEEPER_nameDefNom] weist sichtbare Verletzungen auf.</li>
     <li>desc_sentence->[SLEEPER_nameDefNom] sieht erschöpft aus.</li>
     <li>desc_sentence->[Quantity_adjphrase] volle Kryptoschlafkapseln begleiten die Szene.</li>
-    <li>SLEEPER_nameDefNom->{lookup: [SLEEPER_nameDef]; decline_tagged; 1}</li>
-    <li>SLEEPER_nameDefAcc->{lookup: [SLEEPER_nameDef]; decline_tagged; 4}</li>
-    <li>SLEEPER_nameIndefAcc->{lookup: [SLEEPER_nameIndef]; decline_tagged; 4}</li>
-    <li>CARRIER_nameFullIndefDat->{lookup: [CARRIER_nameFull]; decline_tagged; 3}</li>
-    <li>CARRIER_nameDefNom->{lookup: [CARRIER_nameDef]; decline_tagged; 1}</li>
+    <li>SLEEPER_nameDefNom->{lookup: [SLEEPER_nameDef]; decline_tagged_nom}</li>
+    <li>SLEEPER_nameDefAcc->{lookup: [SLEEPER_nameDef]; decline_tagged_acc}</li>
+    <li>SLEEPER_nameIndefAcc->{lookup: [SLEEPER_nameIndef]; decline_tagged_acc}</li>
+    <li>CARRIER_nameFullIndefDat->{lookup: [CARRIER_nameFull]; decline_tagged_dat}</li>
+    <li>CARRIER_nameDefNom->{lookup: [CARRIER_nameDef]; decline_tagged_nom}</li>
   </PutIntoCryptosleep.rulePack.rulesStrings>
   
   <!-- EN: stripped -->
@@ -611,7 +611,7 @@
   <Stripped.rulePack.rulesStrings>
     <li>tale_noun->[TAKER_nameDefNom] [STRIPPED_nameDefAcc] entkleidete</li>
     <li>image->[TAKER_nameFullIndefDat], wie [TAKER_pronoun] [circumstance_group] [STRIPPED_nameIndefAcc] öffentlich entkleidet</li>
-    <li>image->[TAKER_nameFullIndefDat], wie [TAKER_pronoun] [circumstance_group] die Kleidung von [STRIPPED_nameFullIndefDat] auszieht</li>
+    <li>image->[TAKER_nameFullIndefDat], wie [TAKER_pronoun] [circumstance_group] die Kleidung [STRIPPED_nameFullIndefGen] auszieht</li>
     <li>image->[TAKER_nameFullIndefDat], wie [TAKER_pronoun] mehrere [Apparels] in den Händen hält, während [TAKER_pronoun] neben [STRIPPED_nameFullIndefDat] steht, [der] [circumstance_group] komplett nackt ist</li>
     <li>image->[TAKER_nameFullIndefDat], wie [TAKER_pronoun] geduldig wartet, während [STRIPPED_nameFull] [circumstance_group] [STRIPPED_possessive]e Kleidung auszieht</li>
     <li>circumstance_phrase->absichtlich</li>
@@ -624,12 +624,13 @@
     <li>desc_sentence->[STRIPPED_nameDefNom] atmet schwer, ohne ersichtlichen Grund.</li>
     <li>desc_sentence->[STRIPPED_nameDefNom] krault einen Busch.</li>
     <li>desc_sentence->[STRIPPED_nameDefNom] hat nur einen [AdjectiveAngsty]en Ausdruck.</li>
-    <li>TAKER_nameFullIndefDat->{lookup: [TAKER_nameFull]; decline_tagged; 3}</li>
-    <li>TAKER_nameDefNom->{lookup: [TAKER_nameDef]; decline_tagged; 1}</li>
-    <li>STRIPPED_nameFullIndefDat->{lookup: [STRIPPED_nameFull]; decline_tagged; 3}</li>
-    <li>STRIPPED_nameIndefAcc->{lookup: [STRIPPED_nameIndef]; decline_tagged; 4}</li>
-    <li>STRIPPED_nameDefNom->{lookup: [STRIPPED_nameDef]; decline_tagged; 1}</li>
-    <li>STRIPPED_nameDefAcc->{lookup: [STRIPPED_nameDef]; decline_tagged; 4}</li>
+    <li>TAKER_nameFullIndefDat->{lookup: [TAKER_nameFull]; decline_tagged_dat}</li>
+    <li>TAKER_nameDefNom->{lookup: [TAKER_nameDef]; decline_tagged_nom}</li>
+    <li>STRIPPED_nameFullIndefGen->{lookup: von [STRIPPED_nameFull]; decline_tagged_gen}</li>
+    <li>STRIPPED_nameFullIndefDat->{lookup: [STRIPPED_nameFull]; decline_tagged_dat}</li>
+    <li>STRIPPED_nameIndefAcc->{lookup: [STRIPPED_nameIndef]; decline_tagged_acc}</li>
+    <li>STRIPPED_nameDefNom->{lookup: [STRIPPED_nameDef]; decline_tagged_nom}</li>
+    <li>STRIPPED_nameDefAcc->{lookup: [STRIPPED_nameDef]; decline_tagged_acc}</li>
     <li>der(STRIPPED_genderResolved==Male)->der</li>
     <li>der(STRIPPED_genderResolved==Female)->die</li>
     <li>der(STRIPPED_genderResolved==Neuter)->das</li>
@@ -658,13 +659,13 @@
     <li>desc_sentence->[Quantity_adjphrase] [Animal]s rest near the scene.</li>
   -->
   <VisitedGrave.rulePack.rulesStrings>
-    <li>tale_noun->[VISITOR_nameDefNom] den Grabstein von [CORPSE_nameDefDat] besuchte</li>
-    <li>tale_noun->[VISITOR_nameDefNom] dem Grabstein von [CORPSE_nameDefDat] einen Besuch abstattete</li>
-    <li>image->[VISITOR_nameFullIndefDat], wie [VISITOR_pronoun] neben den Grabstein von [CORPSE_nameFullIndefDat] steht [circumstance_group]</li>
-    <li>image->[VISITOR_nameFullIndefDat], wie [VISITOR_pronoun] neben den Grabstein von [CORPSE_nameFullIndefDat] sitzt [circumstance_group]</li>
-    <li>image->[VISITOR_nameFullIndefDat], wie [VISITOR_pronoun] sich an den Grabstein von [CORPSE_nameFullIndefDat] lehnt [circumstance_group]</li>
-    <li>image->[VISITOR_nameFullIndefDat], wie [VISITOR_pronoun] die Beschriftung auf dem Grabstein von [CORPSE_nameFullIndefDat] liest [circumstance_group]</li>
-    <li>image->[VISITOR_nameFullIndefDat], wie [VISITOR_pronoun] sich das Kunstwerk auf dem Grabstein von [CORPSE_nameFullIndefDat] anschaut [circumstance_group]</li>
+    <li>tale_noun->[VISITOR_nameDefNom] den Grabstein [CORPSE_nameDefGen] besuchte</li>
+    <li>tale_noun->[VISITOR_nameDefNom] dem Grabstein [CORPSE_nameDefGen] einen Besuch abstattete</li>
+    <li>image->[VISITOR_nameFullIndefDat], wie [VISITOR_pronoun] neben den Grabstein [CORPSE_nameFullIndefGen] steht [circumstance_group]</li>
+    <li>image->[VISITOR_nameFullIndefDat], wie [VISITOR_pronoun] neben den Grabstein [CORPSE_nameFullIndefGen] sitzt [circumstance_group]</li>
+    <li>image->[VISITOR_nameFullIndefDat], wie [VISITOR_pronoun] sich an den Grabstein [CORPSE_nameFullIndefGen] lehnt [circumstance_group]</li>
+    <li>image->[VISITOR_nameFullIndefDat], wie [VISITOR_pronoun] die Beschriftung auf dem Grabstein [CORPSE_nameFullIndefGen] liest [circumstance_group]</li>
+    <li>image->[VISITOR_nameFullIndefDat], wie [VISITOR_pronoun] sich das Kunstwerk auf dem Grabstein [CORPSE_nameFullIndefGen] anschaut [circumstance_group]</li>
     <li>circumstance_phrase->und einen [AdjectiveAngsty]en Ausdruck hat</li>
     <li>circumstance_phrase->und in Gedanken versunken ist</li>
     <li>circumstance_phrase(p=0.33)->, während [VISITOR_pronoun] auf einen weit entfernten [TerrainFeatureMas] schaut</li>
@@ -674,16 +675,16 @@
     <li>desc_sentence->Ein [Color]es Polarlicht schimmert am Horizont.</li>
     <li>desc_sentence(p=0.5)->In der Ferne ist eine schneebedeckte [CommunityFem] zu sehen.</li>
     <li>desc_sentence(p=0.5)->In der Ferne ist ein schneebedecktes [CommunityNeu] zu sehen.</li>
-    <li>desc_sentence->Eine Geistererscheinung von [CORPSE_nameDefDat] beobachtet die Szene mit einem [AdjectiveFriendly]en Ausdruck.</li>
-    <li>desc_sentence->Eine Geistererscheinung von [CORPSE_nameDefDat] steht neben [VISITOR_nameDefDat], mit einem [AdjectiveFriendly]en Ausdruck.</li>
-    <li>desc_sentence->Eine Geistererscheinung von [CORPSE_nameDefDat] beobachtet die Szene mit einem [AdjectiveAngsty]en Ausdruck.</li>
-    <li>desc_sentence->Eine Geistererscheinung von [CORPSE_nameDefDat] steht neben [VISITOR_nameDefDat], mit einem [AdjectiveAngsty]en Ausdruck.</li>
+    <li>desc_sentence->Eine Geistererscheinung [CORPSE_nameDefGen] beobachtet die Szene mit einem [AdjectiveFriendly]en Ausdruck.</li>
+    <li>desc_sentence->Eine Geistererscheinung [CORPSE_nameDefGen] steht neben [VISITOR_nameDefDat], mit einem [AdjectiveFriendly]en Ausdruck.</li>
+    <li>desc_sentence->Eine Geistererscheinung [CORPSE_nameDefGen] beobachtet die Szene mit einem [AdjectiveAngsty]en Ausdruck.</li>
+    <li>desc_sentence->Eine Geistererscheinung [CORPSE_nameDefGen] steht neben [VISITOR_nameDefDat], mit einem [AdjectiveAngsty]en Ausdruck.</li>
     <li>desc_sentence->[Quantity_adjphrase] [Animals] rasten in der Nähe der Szene.</li>
-    <li>CORPSE_nameDefDat->{lookup: [CORPSE_nameDef]; decline_tagged; 3}</li>
-    <li>CORPSE_nameFullIndefDat->{lookup: [CORPSE_nameFull]; decline_tagged; 3}</li>
-    <li>VISITOR_nameFullIndefDat->{lookup: [VISITOR_nameFull]; decline_tagged; 3}</li>
-    <li>VISITOR_nameDefNom->{lookup: [VISITOR_nameDef]; decline_tagged; 1}</li>
-    <li>VISITOR_nameDefDat->{lookup: [VISITOR_nameDef]; decline_tagged; 3}</li>
+    <li>CORPSE_nameDefGen->{lookup: von [CORPSE_nameDef]; decline_tagged_gen}</li>
+    <li>CORPSE_nameFullIndefGen->{lookup: von [CORPSE_nameFull]; decline_tagged_gen}</li>
+    <li>VISITOR_nameFullIndefDat->{lookup: [VISITOR_nameFull]; decline_tagged_dat}</li>
+    <li>VISITOR_nameDefNom->{lookup: [VISITOR_nameDef]; decline_tagged_nom}</li>
+    <li>VISITOR_nameDefDat->{lookup: [VISITOR_nameDef]; decline_tagged_dat}</li>
   </VisitedGrave.rulePack.rulesStrings>
   
 </LanguageData>
