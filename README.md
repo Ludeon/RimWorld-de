@@ -74,3 +74,4 @@ Helpful links & mods
 - [Grammar Resolver (RimWorld Wiki)](https://rimworldwiki.com/wiki/Modding_Tutorials/GrammarResolver)
 - [Rim Language Hot Reload](https://steamcommunity.com/sharedfiles/filedetails/?id=2569378701)
 - [RimLiveTongue](https://steamcommunity.com/sharedfiles/filedetails/?id=3757122710)
+- [Glossaries](https://rw-t9n.github.io/glossaries/)
